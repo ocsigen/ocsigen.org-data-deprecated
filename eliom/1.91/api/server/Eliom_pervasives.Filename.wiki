@@ -1,4 +1,0 @@
-=Module <<a_api_type subproject="server" | module Eliom_pervasives.Filename >> =
-<<div class="code"|<<span class="keyword"|module>> Filename: <<span class='code'|sig>><<a_api subproject="server" text=".." | module Eliom_pervasives.Filename >><<span class='code'|end>>>>
-----
-<<div class="code"|<<span class="keyword"|include>> Filename>>

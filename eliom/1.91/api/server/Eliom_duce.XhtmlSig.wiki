@@ -1,5 +1,0 @@
-=Module type <<a_api_type subproject="server" | module type Eliom_duce.XhtmlSig >> =
-<<div class="code"|<<span class="keyword"|module type>> XhtmlSig = <<span class='code'|sig>><<a_api subproject="server" text=".." | module type Eliom_duce.XhtmlSig >><<span class='code'|end>>>>
-----
-<<div class="code"|<<span class="keyword"|include>> <<a_api subproject="server" | module type Eliom_mkreg.ELIOMREGSIG >>>>
-<<div class="code"|<<span class="keyword"|include>> <<a_api subproject="server" | module type Eliom_duce.XhtmlFormsSig >>>>

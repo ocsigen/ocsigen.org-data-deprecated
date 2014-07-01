@@ -1,5 +1,0 @@
-=Module <<a_api_type | module Eliom_output.Xhtml5compact >> =
-<<div class="code"|<<span class="keyword"|module>> Xhtml5compact: <<span class='code'|sig>><<a_api text=".." | module Eliom_output.Xhtml5compact >><<span class='code'|end>>>>
-----
-<<div class="code"|<<span class="keyword"|include>> <<a_api | module type Eliom_mkreg.ELIOMREGSIG >>>>
-<<div class="code"|<<span class="keyword"|include>> <<a_api | module type Eliom_output.XHTML5FORMSSIG >>>>

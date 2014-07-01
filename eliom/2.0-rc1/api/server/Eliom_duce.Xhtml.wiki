@@ -1,6 +1,0 @@
-=Module <<a_api_type subproject="server" | module Eliom_duce.Xhtml >> =
-<<div class="code"|<<span class="keyword"|module>> Xhtml: <<span class='code'|sig>><<a_api subproject="server" text=".." | module Eliom_duce.Xhtml >><<span class='code'|end>>>>~Register service and create form for ~Xhtml\\
-
-----
-<<div class="code"|<<span class="keyword"|include>> XHTML_REGISTRATION>>
-<<div class="code"|<<span class="keyword"|include>> XHTML_FORMS>>

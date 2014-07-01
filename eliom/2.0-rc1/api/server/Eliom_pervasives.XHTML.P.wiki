@@ -1,3 +1,0 @@
-=Module <<a_api_type subproject="server" | module Eliom_pervasives.XHTML.P >> =
-<<div class="code"|<<span class="keyword"|module>> P: \\{{{   }}}<<span class="code type"|XML_sigs.TypedSimplePrinter>><<span class="code type"|{{{  }}}\\{{{   }}}             with type 'a elt := 'a M.elt\\{{{   }}}	      and type doc := M.doc>>>>
-----

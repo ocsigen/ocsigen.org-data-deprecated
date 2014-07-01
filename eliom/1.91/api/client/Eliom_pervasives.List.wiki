@@ -1,5 +1,0 @@
-=Module <<a_api_type subproject="client" | module Eliom_pervasives.List >> =
-<<div class="code"|<<span class="keyword"|module>> List: <<span class='code'|sig>><<a_api subproject="client" text=".." | module Eliom_pervasives.List >><<span class='code'|end>>>>
-----
-<<div class="code"|<<span class="keyword"|include>> List>>
-<<div id="VALis_prefix_skip_end_slash" class="code"|<<span class="keyword"|val>> is~_prefix~_skip~_end~_slash : <<span class="code type"|string list -> string list -> bool>>>>

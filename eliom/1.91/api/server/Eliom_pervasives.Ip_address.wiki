@@ -1,8 +1,0 @@
-=Module <<a_api_type subproject="server" | module Eliom_pervasives.Ip_address >> =
-<<div class="code"|<<span class="keyword"|module>> Ip_address: <<span class='code'|sig>><<a_api subproject="server" text=".." | module Eliom_pervasives.Ip_address >><<span class='code'|end>>>>
-----
-<<div class="code" id="TYPEt"|<<span class="keyword"|type>> t = <<span class="code type"|Ocsigen_pervasives.Ip_address.t>>  = 
-|@@class="typetable"@ @class="lefttop"@@<<span class="keyword"|{{{|}}}>>|@@class="lefttop"@@<<span class="constructor"|IPv4>> <<span class="keyword"|of>> <<span class="code type"|int32>>|
-|@@class="lefttop"@@<<span class="keyword"|{{{|}}}>>|@@class="lefttop"@@<<span class="constructor"|IPv6>> <<span class="keyword"|of>> <<span class="code type"|int64 * int64>>|>>
-
-<<div id="VALparse" class="code"|<<span class="keyword"|val>> parse : <<span class="code type"|\\{{{   }}}string ->\\{{{   }}}  <<a_api subproject="server" text="t" | type Eliom_pervasives.Ip_address.t >> * <<a_api subproject="server" text="t" | type Eliom_pervasives.Ip_address.t >> option>>>><<div id="VALnetwork_of_ip" class="code"|<<span class="keyword"|val>> network~_of~_ip : <<span class="code type"|\\{{{   }}}<<a_api subproject="server" text="t" | type Eliom_pervasives.Ip_address.t >> ->\\{{{   }}}  int32 -> int64 * int64 -> <<a_api subproject="server" text="t" | type Eliom_pervasives.Ip_address.t >>>>>><<div id="VALinet6_addr_loopback" class="code"|<<span class="keyword"|val>> inet~6~_addr~_loopback : <<span class="code type"|<<a_api subproject="server" text="t" | type Eliom_pervasives.Ip_address.t >>>>>>

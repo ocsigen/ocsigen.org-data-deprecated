@@ -1,6 +1,0 @@
-=Module type <<a_api_type subproject="server" | module type Eliom_output.ELIOMSIG >> =
-<<div class="code"|<<span class="keyword"|module type>> ELIOMSIG = <<span class='code'|sig>><<a_api subproject="server" text=".." | module type Eliom_output.ELIOMSIG >><<span class='code'|end>>>>~The signature of such modules~.\\
-
-----
-<<div class="code"|<<span class="keyword"|include>> <<a_api subproject="server" | module type Eliom_mkreg.ELIOMREGSIG >>>>
-<<div class="code"|<<span class="keyword"|include>> <<a_api subproject="server" | module type Eliom_mkforms.ELIOMFORMSIG >>>>

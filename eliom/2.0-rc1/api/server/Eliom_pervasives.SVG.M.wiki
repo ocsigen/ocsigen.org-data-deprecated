@@ -1,6 +1,0 @@
-=Module <<a_api_type subproject="server" | module Eliom_pervasives.SVG.M >> =
-<<div class="code"|<<span class="keyword"|module>> M: <<span class='code'|sig>><<a_api subproject="server" text=".." | module Eliom_pervasives.SVG.M >><<span class='code'|end>>>>~Type safe ~S~V~G creation~.\\
-
-----
-<<div class="code"|<<span class="keyword"|include>> SVG_sigs.T>>
-<<div id="VALunique" class="code"|<<span class="keyword"|val>> unique : <<span class="code type"|?copy:'a elt -> 'a elt -> 'a elt>>>>

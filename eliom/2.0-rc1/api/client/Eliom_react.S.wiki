@@ -1,4 +1,0 @@
-=Module <<a_api_type subproject="client" | module Eliom_react.S >> =
-<<div class="code"|<<span class="keyword"|module>> S: <<span class='code'|sig>><<a_api subproject="client" text=".." | module Eliom_react.S >><<span class='code'|end>>>>
-----
-<<div class="code"|<<span class="keyword"|module>> <<a_api subproject="client" text="Down" | module Eliom_react.S.Down >>: <<span class='code'|sig>><<a_api subproject="client" text=".." | module Eliom_react.S.Down >><<span class='code'|end>>>>

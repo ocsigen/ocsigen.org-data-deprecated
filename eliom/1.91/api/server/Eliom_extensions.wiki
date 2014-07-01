@@ -1,7 +1,0 @@
-=Module <<a_api_type subproject="server" | module Eliom_extensions >> =
-<<div class="code"|<<span class="keyword"|module>> Eliom_extensions: <<span class='code'|sig>><<a_api subproject="server" text=".." | module Eliom_extensions >><<span class='code'|end>>>>~Type of the function that must be registered to declare an eliom extension\\
-
-----
-<<div class="code" id="TYPEeliom_extension_sig"|<<span class="keyword"|type>> eliom~_extension~_sig = <<span class="code type"|unit -> Ocsigen_extensions.answer Lwt.t>> >>
-
-<<div id="VALregister_eliom_extension" class="code"|<<span class="keyword"|val>> register~_eliom~_extension : <<span class="code type"|<<a_api subproject="server" text="eliom_extension_sig" | type Eliom_extensions.eliom_extension_sig >> -> unit>>>>

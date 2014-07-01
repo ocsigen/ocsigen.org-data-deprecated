@@ -1,6 +1,0 @@
-=Module <<a_api_type subproject="server" | module Eliom_pervasives.XHTML >> =
-<<div class="code"|<<span class="keyword"|module>> XHTML: <<span class='code'|sig>><<a_api subproject="server" text=".." | module Eliom_pervasives.XHTML >><<span class='code'|end>>>>
-----
-<<div class="code"|<<span class="keyword"|module>> <<a_api subproject="server" text="M" | module Eliom_pervasives.XHTML.M >>: <<span class="code type"|XHTML_sigs.XHTML(XML.M).T>><<span class="code type"|{{{  }}}>>>><<div class="info"|~Type safe ~X~H~T~M~L creation~.
->>
-<<div class="code"|<<span class="keyword"|module>> <<a_api subproject="server" text="M_01_01" | module Eliom_pervasives.XHTML.M_01_01 >>: <<span class="code type"|XHTML_sigs.XHTML(XML.M).T>><<span class="code type"|{{{  }}}>>>><<div class="code"|<<span class="keyword"|module>> <<a_api subproject="server" text="M_01_00" | module Eliom_pervasives.XHTML.M_01_00 >>: <<span class="code type"|XHTML_sigs.XHTML(XML.M).T>><<span class="code type"|{{{  }}}>>>><<div class="code"|<<span class="keyword"|module>> <<a_api subproject="server" text="P" | module Eliom_pervasives.XHTML.P >>: <<span class="code type"|XML_sigs.TypedSimplePrinter(XML.M)(M).T>><<span class="code type"|{{{  }}}>>>>

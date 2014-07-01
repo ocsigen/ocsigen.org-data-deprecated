@@ -1,4 +1,0 @@
-=Module <<a_api_type subproject="server" | module Eliommod_cli >> =
-<<div class="code"|<<span class="keyword"|module>> Eliommod_cli: <<span class='code'|sig>><<a_api subproject="server" text=".." | module Eliommod_cli >><<span class='code'|end>>>>~/~*\\
-
-----

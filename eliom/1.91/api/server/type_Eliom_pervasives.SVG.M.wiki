@@ -1,1 +1,0 @@
-<<code language="ocaml" | SVG_sigs.SVG(XML.M).T >>

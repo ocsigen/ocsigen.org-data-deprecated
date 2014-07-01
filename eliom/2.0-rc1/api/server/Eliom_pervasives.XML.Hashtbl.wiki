@@ -1,3 +1,0 @@
-=Module <<a_api_type subproject="server" | module Eliom_pervasives.XML.Hashtbl >> =
-<<div class="code"|<<span class="keyword"|module>> Hashtbl: <<span class="code type"|Hashtbl.S>><<span class="code type"|{{{  }}} with type key = elt>>>>
-----

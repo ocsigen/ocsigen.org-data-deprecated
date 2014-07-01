@@ -1,1 +1,0 @@
-<<code language="ocaml" | HTML5_sigs.HTML5(XML.M)(SVG.M).T >>

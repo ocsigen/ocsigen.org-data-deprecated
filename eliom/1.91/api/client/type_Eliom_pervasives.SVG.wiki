@@ -1,1 +1,0 @@
-<<code language="ocaml" | sig module M : SVG_sigs.SVG(XML.M).T end >>

@@ -1,5 +1,0 @@
-=Module type <<a_api_type subproject="client" | module type Eliom_output.Base >> =
-<<div class="code"|<<span class="keyword"|module type>> Base = <<span class='code'|sig>><<a_api subproject="client" text=".." | module type Eliom_output.Base >><<span class='code'|end>>>>
-----
-<<div class="code" id="TYPEreturn"|<<span class="keyword"|type>> return = <<span class="code type"|<<a_api subproject="client" text="Eliom_services.http" | type Eliom_services.http >>>> >>
-

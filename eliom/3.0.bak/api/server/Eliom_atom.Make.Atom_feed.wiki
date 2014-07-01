@@ -1,3 +1,0 @@
-=Module <<a_api_type subproject="server" | module Eliom_atom.Make.Atom_feed >> =
-<<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module>> <<span class="ocsforge_color_uid"|<<span class="ocsforge_color_uid"|Atom_feed>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|module type of <<a_api subproject="server" text="Atom_feed.Make" | module Atom_feed.Make >>(Xml)>>>>
-----

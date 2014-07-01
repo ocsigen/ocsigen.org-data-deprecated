@@ -1,6 +1,0 @@
-<<code language="ocaml" | sig
-  type 'a t
-  val stream : 'a Eliom_bus.t -> 'a Lwt_stream.t
-  val write : 'a Eliom_bus.t -> 'a -> unit Lwt.t
-  val close : 'a Eliom_bus.t -> unit
-end >>

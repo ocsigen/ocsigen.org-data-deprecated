@@ -1,7 +1,0 @@
-=Module <<a_api_type subproject="client" | module Eliom_output >> =
-<<div class="code"|<<span class="keyword"|module>> Eliom_output: <<span class='code'|sig>><<a_api subproject="client" text=".." | module Eliom_output >><<span class='code'|end>>>>~Forms creation\\
-
-----
-<<div class="code"|<<span class="keyword"|include>> <<a_api subproject="client" | module Eliom_output_base >>>>
-<<div class="code"|<<span class="keyword"|module type>> <<a_api subproject="client" text="Base" | module type Eliom_output.Base >> = <<span class='code'|sig>><<a_api subproject="client" text=".." | module type Eliom_output.Base >><<span class='code'|end>>>><<div class="code"|<<span class="keyword"|module>> <<a_api subproject="client" text="Html5" | module Eliom_output.Html5 >>: <<span class='code'|sig>><<a_api subproject="client" text=".." | module Eliom_output.Html5 >><<span class='code'|end>>>><<div class="info"|~Forms creation
->>

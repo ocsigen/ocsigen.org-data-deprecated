@@ -1,4 +1,0 @@
-=Module <<a_api_type subproject="server" | module Eliom_pervasives.SVG.M >> =
-<<div class="code"|<<span class="keyword"|module>> M: <<span class="code type"|SVG_sigs.SVG(XML.M).T>><<span class="code type"|{{{  }}}>>>>~Type safe ~S~V~G creation~.\\
-
-----

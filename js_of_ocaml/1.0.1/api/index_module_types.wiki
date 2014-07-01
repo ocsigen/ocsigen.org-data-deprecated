@@ -1,8 +1,0 @@
-=Index of module types=
-
-|@@ @style="tet-align: left;"@@\\O|
-|@@class="odocwiki_index"@ @@<<a_api text="OPT"| module type Js.OPT >> ~[<<a_api | module Js >>~]|<<div class="odocwiki_info"|~Signatures of a set of standard functions for manipulating
-    optional values~.
->>
-|
-\\

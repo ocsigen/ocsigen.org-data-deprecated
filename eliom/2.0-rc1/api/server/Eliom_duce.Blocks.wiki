@@ -1,6 +1,0 @@
-=Module <<a_api_type subproject="server" | module Eliom_duce.Blocks >> =
-<<div class="code"|<<span class="keyword"|module>> Blocks: <<span class='code'|sig>><<a_api subproject="server" text=".." | module Eliom_duce.Blocks >><<span class='code'|end>>>>~Register and create form for list of <<span class='code'|blocks>> ~(subtype of xhtml~)\\
-
-----
-<<div class="code"|<<span class="keyword"|include>> BLOCKS_REGISTRATION>>
-<<div class="code"|<<span class="keyword"|include>> XHTML_FORMS>>
