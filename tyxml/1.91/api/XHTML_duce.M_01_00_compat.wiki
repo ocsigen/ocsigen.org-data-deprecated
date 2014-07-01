@@ -1,7 +1,0 @@
-=Module <<a_api_type | module XHTML_duce.M_01_00_compat >> =
-<<div class="code"|<<span class="keyword"|module>> M_01_00_compat: <<span class="code type"|<<a_api text="T" | module XHTML_duce.T >>>><<span class="code type"|{{{  }}}>>>>
-----
-<<div class="code"|<<span class="keyword"|module>> <<a_api text="Info" | module XML_sigs_duce.TypedXML.Info >>: <<span class="code type"|<<a_api text="XML_sigs.Info" | module XML_sigs.Info >>>><<span class="code type"|{{{  }}}>>>><<div class="code" id="TYPEelt"|<<span class="keyword"|type>> elt>>
-
-<<div class="code" id="TYPEdoc"|<<span class="keyword"|type>> doc>>
-

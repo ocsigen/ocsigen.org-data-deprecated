@@ -1,1 +1,0 @@
-<<code language="ocaml" | functor (XML : XML_sigs.T) -> SVG_sigs.SVG(XML).T >>

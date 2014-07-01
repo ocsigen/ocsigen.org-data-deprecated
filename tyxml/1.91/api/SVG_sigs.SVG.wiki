@@ -1,7 +1,0 @@
-=Functor <<a_api_type | module SVG_sigs.SVG >> =
-<<div class="code"|<<span class="keyword"|module>> SVG: <<div class="sig_block"|<<span class='code'|functor ~(>><<span class='code'|~X~M~L>><<span class='code'| ~: >><<span class="code type"|<<a_api text="XML_sigs.T" | module XML_sigs.T >>>><<span class='code'|~) ~-~> >><<span class='code'|sig>><<a_api text=".." | module SVG_sigs.SVG >><<span class='code'|end>>>>>><<div class="module_param_list" | <<span class="param_title" |Parameters :>><<div|
-|@@class="paramstable"@ @class="centertop fifteen code"@@{{{XML}}}|@@class="centertop"@@:|<<span class="code type"|<<a_api text="XML_sigs.T" | module XML_sigs.T >>>>|
->>>>
-
-----
-<<div class="code"|<<span class="keyword"|module type>> <<a_api text="T" | module type SVG_sigs.SVG.T >> = <<span class='code'|sig>><<a_api text=".." | module type SVG_sigs.SVG.T >><<span class='code'|end>>>>

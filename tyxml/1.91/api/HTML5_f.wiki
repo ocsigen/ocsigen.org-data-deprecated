@@ -1,5 +1,0 @@
-=Module <<a_api_type | module HTML5_f >> =
-<<div class="code"|<<span class="keyword"|module>> HTML5_f: <<span class='code'|sig>><<a_api text=".." | module HTML5_f >><<span class='code'|end>>>>~Typesafe constructors for ~H~T~M~L~5 documents ~(~Functorial interface~)\\
-
-----
-<<div class="code"|<<span class="keyword"|module>> <<a_api text="Make" | module HTML5_f.Make >>: <<div class="sig_block"|<<span class='code'|functor ~(>><<span class='code'|~X~M~L>><<span class='code'| ~: >><<span class="code type"|<<a_api text="XML_sigs.T" | module XML_sigs.T >>>><<span class='code'|~) ~-~> >><<div class="sig_block"|<<span class='code'|functor ~(>><<span class='code'|~S~V~G>><<span class='code'| ~: >><<span class="code type"|<<a_api text="SVG_sigs.SVG" | module SVG_sigs.SVG >>(XML).T>><<span class='code'|~) ~-~> >><<span class="code type"|<<a_api text="HTML5_sigs.HTML5" | module HTML5_sigs.HTML5 >>(XML)(SVG).T>><<span class="code type"|{{{  }}}>>>>>>>>

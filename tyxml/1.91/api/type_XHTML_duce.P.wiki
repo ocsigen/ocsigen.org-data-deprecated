@@ -1,1 +1,0 @@
-<<code language="ocaml" | XML_sigs_duce.TypedPrinter(M).T >>

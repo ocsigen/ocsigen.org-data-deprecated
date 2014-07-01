@@ -1,7 +1,0 @@
-=Module type <<a_api_type | module type XML_sigs_duce.TypedXML >> =
-<<div class="code"|<<span class="keyword"|module type>> TypedXML = <<span class='code'|sig>><<a_api text=".." | module type XML_sigs_duce.TypedXML >><<span class='code'|end>>>>
-----
-<<div class="code"|<<span class="keyword"|module>> <<a_api text="Info" | module XML_sigs_duce.TypedXML.Info >>: <<span class="code type"|<<a_api text="XML_sigs.Info" | module XML_sigs.Info >>>><<span class="code type"|{{{  }}}>>>><<div class="code" id="TYPEelt"|<<span class="keyword"|type>> elt>>
-
-<<div class="code" id="TYPEdoc"|<<span class="keyword"|type>> doc>>
-

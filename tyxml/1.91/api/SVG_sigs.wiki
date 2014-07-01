@@ -1,6 +1,0 @@
-=Module <<a_api_type | module SVG_sigs >> =
-<<div class="code"|<<span class="keyword"|module>> SVG_sigs: <<span class='code'|sig>><<a_api text=".." | module SVG_sigs >><<span class='code'|end>>>>~Signatures of typesafe constructors for ~S~V~G documents~.\\
-**See also** [[http://www.w3.org/TR/svg/|~W~3~C ~Recommendation]]\\
-
-----
-<<div class="code"|<<span class="keyword"|module>> <<a_api text="SVG" | module SVG_sigs.SVG >>: <<div class="sig_block"|<<span class='code'|functor ~(>><<span class='code'|~X~M~L>><<span class='code'| ~: >><<span class="code type"|<<a_api text="XML_sigs.T" | module XML_sigs.T >>>><<span class='code'|~) ~-~> >><<span class='code'|sig>><<a_api text=".." | module SVG_sigs.SVG >><<span class='code'|end>>>>>>

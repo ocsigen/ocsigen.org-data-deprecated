@@ -1,7 +1,0 @@
-<<code language="ocaml" | sig
-  module type T = HTML5_sigs.HTML5(XML.M)(SVG.M).T
-  module M : T
-  module P : XML_sigs.TypedSimplePrinter(XML.M)(M).T
-  module MakePrinter :
-    functor (O : XML_sigs.Output) -> XML_sigs.TypedPrinter(XML.M)(M)(O).T
-end >>

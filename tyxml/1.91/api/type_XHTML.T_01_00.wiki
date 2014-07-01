@@ -1,1 +1,0 @@
-<<code language="ocaml" | XHTML_sigs.XHTML(XML.M).T_01_00 >>

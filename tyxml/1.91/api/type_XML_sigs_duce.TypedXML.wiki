@@ -1,1 +1,0 @@
-<<code language="ocaml" | sig module Info : XML_sigs.Info type elt type doc end >>

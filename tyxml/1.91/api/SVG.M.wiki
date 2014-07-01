@@ -1,4 +1,0 @@
-=Module <<a_api_type | module SVG.M >> =
-<<div class="code"|<<span class="keyword"|module>> M: <<span class="code type"|<<a_api text="T" | module SVG.T >>>><<span class="code type"|{{{  }}}>>>>~Concrete implementation of ~S~V~G typesafe constructors\\
-
-----

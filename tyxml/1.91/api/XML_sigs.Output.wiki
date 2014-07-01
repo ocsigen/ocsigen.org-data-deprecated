@@ -1,8 +1,0 @@
-=Module type <<a_api_type | module type XML_sigs.Output >> =
-<<div class="code"|<<span class="keyword"|module type>> Output = <<span class='code'|sig>><<a_api text=".." | module type XML_sigs.Output >><<span class='code'|end>>>>
-----
-<<div class="code" id="TYPEout"|<<span class="keyword"|type>> out>>
-
-<<div class="code" id="TYPEm"|<<span class="keyword"|type>> m>>
-
-<<div id="VALempty" class="code"|<<span class="keyword"|val>> empty : <<span class="code type"|<<a_api text="m" | type XML_sigs.Output.m >>>>>><<div id="VALconcat" class="code"|<<span class="keyword"|val>> concat : <<span class="code type"|<<a_api text="m" | type XML_sigs.Output.m >> -> <<a_api text="m" | type XML_sigs.Output.m >> -> <<a_api text="m" | type XML_sigs.Output.m >>>>>><<div id="VALput" class="code"|<<span class="keyword"|val>> put : <<span class="code type"|string -> <<a_api text="m" | type XML_sigs.Output.m >>>>>><<div id="VALmake" class="code"|<<span class="keyword"|val>> make : <<span class="code type"|<<a_api text="m" | type XML_sigs.Output.m >> -> <<a_api text="out" | type XML_sigs.Output.out >>>>>>

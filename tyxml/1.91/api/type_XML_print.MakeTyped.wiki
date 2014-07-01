@@ -1,4 +1,0 @@
-<<code language="ocaml" | functor (XML : XML_sigs.Iterable) ->
-  functor (TypedXML : XML_sigs.TypedXML(XML).T) ->
-    functor (O : XML_sigs.Output) ->
-      XML_sigs.TypedPrinter(XML)(TypedXML)(O).T >>

@@ -1,7 +1,0 @@
-<<code language="ocaml" | sig
-  module Info : Info
-  type 'a elt
-  type doc
-  val toelt : 'a XML_sigs.TypedXML.T.elt -> XML.elt
-  val doc_toelt : XML_sigs.TypedXML.T.doc -> XML.elt
-end >>

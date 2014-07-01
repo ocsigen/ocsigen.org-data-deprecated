@@ -1,7 +1,0 @@
-=Functor <<a_api_type | module XML_print.MakeTypedSimple >> =
-<<div class="code"|<<span class="keyword"|module>> MakeTypedSimple: <<div class="sig_block"|<<span class='code'|functor ~(>><<span class='code'|~X~M~L>><<span class='code'| ~: >><<span class="code type"|<<a_api text="XML_sigs.Iterable" | module XML_sigs.Iterable >>>><<span class='code'|~) ~-~> >><<div class="sig_block"|<<span class='code'|functor ~(>><<span class='code'|~Typed~X~M~L>><<span class='code'| ~: >><<span class="code type"|<<a_api text="XML_sigs.TypedXML" | module XML_sigs.TypedXML >>(XML).T>><<span class='code'|~) ~-~> >><<span class="code type"|<<a_api text="XML_sigs.TypedSimplePrinter" | module XML_sigs.TypedSimplePrinter >>(XML)(TypedXML).T>><<span class="code type"|{{{  }}}>>>>>>>><<div class="module_param_list" | <<span class="param_title" |Parameters :>><<div|
-|@@class="paramstable"@ @class="centertop fifteen code"@@{{{XML}}}|@@class="centertop"@@:|<<span class="code type"|<<a_api text="XML_sigs.Iterable" | module XML_sigs.Iterable >>>>|
-|@@class="centertop fifteen code"@@{{{TypedXML}}}|@@class="centertop"@@:|<<span class="code type"|<<a_api text="XML_sigs.TypedXML" | module XML_sigs.TypedXML >>(XML).T>>|
->>>>
-
-----

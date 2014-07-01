@@ -1,3 +1,0 @@
-<<code language="ocaml" | functor (XML : XML_sigs.Iterable) ->
-  functor (I : sig val emptytags : string list end) ->
-    functor (O : XML_sigs.Output) -> XML_sigs.Printer(XML)(O).T >>

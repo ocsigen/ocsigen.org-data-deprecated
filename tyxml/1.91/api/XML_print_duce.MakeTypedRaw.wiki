@@ -1,7 +1,0 @@
-=Functor <<a_api_type | module XML_print_duce.MakeTypedRaw >> =
-<<div class="code"|<<span class="keyword"|module>> MakeTypedRaw: <<div class="sig_block"|<<span class='code'|functor ~(>><<span class='code'|~Typed~X~M~L>><<span class='code'| ~: >><<span class="code type"|<<a_api text="XML_sigs_duce.TypedXML" | module XML_sigs_duce.TypedXML >>>><<span class='code'|~) ~-~> >><<span class="code type"|<<a_api text="XML_sigs_duce.RawTypedPrinter" | module XML_sigs_duce.RawTypedPrinter >>>><<span class="code type"|{{{  }}}>>>>>><<div class="module_param_list" | <<span class="param_title" |Parameters :>><<div|
-|@@class="paramstable"@ @class="centertop fifteen code"@@{{{TypedXML}}}|@@class="centertop"@@:|<<span class="code type"|<<a_api text="XML_sigs_duce.TypedXML" | module XML_sigs_duce.TypedXML >>>>|
->>>>
-
-----
-<<div id="VALprint_list" class="code"|<<span class="keyword"|val>> print~_list : <<span class="code type"|\\{{{   }}}output:(string -> unit) ->\\{{{   }}}  ?encode:(string -> string) -> {{Ocamlduce.Load.anyxml}} list -> unit>>>><<div id="VALprint" class="code"|<<span class="keyword"|val>> print : <<span class="code type"|\\{{{   }}}output:(string -> unit) ->\\{{{   }}}  ?encode:(string -> string) ->\\{{{   }}}  ?advert:string -> {{Ocamlduce.Load.anyxml}} -> unit>>>>

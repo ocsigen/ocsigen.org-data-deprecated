@@ -1,8 +1,0 @@
-=Module type <<a_api_type | module type XML_sigs_duce.TypedPrinter.T >> =
-<<div class="code"|<<span class="keyword"|module type>> T = <<span class='code'|sig>><<a_api text=".." | module type XML_sigs_duce.TypedPrinter.T >><<span class='code'|end>>>>
-----
-<<div class="code" id="TYPEelt"|<<span class="keyword"|type>> elt = <<span class="code type"|<<a_api text="XML_sigs_duce.TypedXML.elt" | type XML_sigs_duce.TypedXML.elt >>>> >>
-
-<<div class="code" id="TYPEdoc"|<<span class="keyword"|type>> doc = <<span class="code type"|<<a_api text="XML_sigs_duce.TypedXML.doc" | type XML_sigs_duce.TypedXML.doc >>>> >>
-
-<<div id="VALprint_list" class="code"|<<span class="keyword"|val>> print~_list : <<span class="code type"|\\{{{   }}}output:(string -> unit) ->\\{{{   }}}  ?encode:(string -> string) -> <<a_api text="elt" | type XML_sigs_duce.TypedPrinter.T.elt >> list -> unit>>>><<div id="VALprint" class="code"|<<span class="keyword"|val>> print : <<span class="code type"|\\{{{   }}}output:(string -> unit) ->\\{{{   }}}  ?encode:(string -> string) ->\\{{{   }}}  ?advert:string -> <<a_api text="doc" | type XML_sigs_duce.TypedPrinter.T.doc >> -> unit>>>>

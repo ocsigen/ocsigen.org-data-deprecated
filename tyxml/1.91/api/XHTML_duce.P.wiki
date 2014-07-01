@@ -1,3 +1,0 @@
-=Module <<a_api_type | module XHTML_duce.P >> =
-<<div class="code"|<<span class="keyword"|module>> P: <<span class="code type"|<<a_api text="XML_sigs_duce.TypedPrinter" | module XML_sigs_duce.TypedPrinter >>(M).T>><<span class="code type"|{{{  }}}>>>>
-----

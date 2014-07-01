@@ -1,1 +1,0 @@
-<<code language="ocaml" | functor (O : XML_sigs.Output) -> XML_sigs.TypedPrinter(XML.M)(M)(O).T >>
