@@ -1,9 +1,0 @@
-<<code language="ocaml" | sig
-  type 'a t
-  val of_react :
-    ?throttling:float ->
-    ?name:string -> 'a React.E.t -> 'a Eliom_react.Down.t
-  val wrap :
-    'a Eliom_react.Down.t ->
-    'a Eliom_common_comet.chan_id Eliom_client_types.data_key
-end >>

@@ -1,5 +1,0 @@
-=Module <<a_api_type | module Ocsigen_pervasives.Printexc >> =
-<<div class="code"|<<span class="keyword"|module>> Printexc: <<span class='code'|sig>><<a_api text=".." | module Ocsigen_pervasives.Printexc >><<span class='code'|end>>>>
-----
-<<div class="code"|<<span class="keyword"|include>> Printexc>>
-<<div id="VALregister_exn_printer" class="code"|<<span class="keyword"|val>> register~_exn~_printer : <<span class="code type"|((exn -> string) -> exn -> string) -> unit>>>>

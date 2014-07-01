@@ -1,9 +1,0 @@
-<<code language="ocaml" | functor (S : HiddenServiceInfo) ->
-  sig
-    val authenticate :
-      mode:string ->
-      ext:'a Eliom_openid.extension ->
-      handler:('a Eliom_openid.authentication_result ->
-               Eliom_output.Any.page Lwt.t) ->
-      discovery:string * string option -> XHTML.M.uri Lwt.t
-  end >>

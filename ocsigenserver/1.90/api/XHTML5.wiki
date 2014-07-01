@@ -1,8 +1,0 @@
-=Module <<a_api_type | module XHTML5 >> =
-<<div class="code"|<<span class="keyword"|module>> XHTML5: <<span class='code'|sig>><<a_api text=".." | module XHTML5 >><<span class='code'|end>>>>~Typesafe constructors for ~H~T~M~L~5 documents~.\\
-**See also** [[http://www.w3.org/TR/html5/|~W~3~C ~Recommendation]]\\
-
-----
-<<div class="code"|<<span class="keyword"|module type>> <<a_api text="T" | module type XHTML5.T >> = <<span class='code'|sig>><<a_api text=".." | module type XHTML5.T >><<span class='code'|end>>>><<div class="code"|<<span class="keyword"|module type>> <<a_api text="T_05_00" | module type XHTML5.T_05_00 >> = <<span class="code type"|<<a_api text="T" | module XHTML5.T >>>>>><<div class="info"|~An alias for ~X~H~T~M~L~5~:
->>
-<<div class="code"|<<span class="keyword"|module>> <<a_api text="M" | module XHTML5.M >>: <<span class="code type"|<<a_api text="T" | module XHTML5.T >>>><<span class="code type"|{{{  }}}>>>><<div class="code"|<<span class="keyword"|module>> <<a_api text="M_05_00" | module XHTML5.M_05_00 >>: <<span class="code type"|<<a_api text="T_05_00" | module XHTML5.T_05_00 >>>><<span class="code type"|{{{  }}}>>>>

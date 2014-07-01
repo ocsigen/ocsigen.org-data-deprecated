@@ -1,9 +1,0 @@
-<<code language="ocaml" | functor (XML : XML_sigs.Iterable) ->
-  functor (TypedXML : XML_sigs.TypedXML(XML).T) ->
-    sig
-      type t = TypedXML.doc
-      type options
-      val result_of_content :
-        ?options:options -> t -> Ocsigen_http_frame.result Lwt.t
-      val get_etag : ?options:options -> t -> Ocsigen_http_frame.etag option
-    end >>

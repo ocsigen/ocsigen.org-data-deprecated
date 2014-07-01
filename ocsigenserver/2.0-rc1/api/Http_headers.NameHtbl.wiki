@@ -1,3 +1,0 @@
-=Module <<a_api_type | module Http_headers.NameHtbl >> =
-<<div class="code"|<<span class="keyword"|module>> NameHtbl: <<span class="code type"|Hashtbl.S>><<span class="code type"|{{{  }}} with type key = name>>>>
-----

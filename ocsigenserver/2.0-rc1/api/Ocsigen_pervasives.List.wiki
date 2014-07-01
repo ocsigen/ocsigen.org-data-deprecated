@@ -1,5 +1,0 @@
-=Module <<a_api_type | module Ocsigen_pervasives.List >> =
-<<div class="code"|<<span class="keyword"|module>> List: <<span class='code'|sig>><<a_api text=".." | module Ocsigen_pervasives.List >><<span class='code'|end>>>>
-----
-<<div class="code"|<<span class="keyword"|include>> List>>
-<<div id="VALlast" class="code"|<<span class="keyword"|val>> last : <<span class="code type"|'a list -> 'a>>>><<div id="VALassoc_remove" class="code"|<<span class="keyword"|val>> assoc~_remove : <<span class="code type"|'a -> ('a * 'b) list -> 'b * ('a * 'b) list>>>>

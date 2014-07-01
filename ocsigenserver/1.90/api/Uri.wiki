@@ -1,8 +1,0 @@
-=Module <<a_api_type | module Uri >> =
-<<div class="code"|<<span class="keyword"|module>> Uri: <<span class='code'|sig>><<a_api text=".." | module Uri >><<span class='code'|end>>>>
-----
-<<div class="code" id="TYPEuri"|<<span class="keyword"|type>> uri = <<span class="code type"|string>> >>
-
-<<div class="code" id="TYPEuris"|<<span class="keyword"|type>> uris = <<span class="code type"|<<a_api text="uri" | type Uri.uri >>>> >>
-
-<<div id="VALstring_of_uri" class="code"|<<span class="keyword"|val>> string~_of~_uri : <<span class="code type"|<<a_api text="uri" | type Uri.uri >> -> string>>>><<div id="VALuri_of_string" class="code"|<<span class="keyword"|val>> uri~_of~_string : <<span class="code type"|string -> <<a_api text="uri" | type Uri.uri >>>>>>

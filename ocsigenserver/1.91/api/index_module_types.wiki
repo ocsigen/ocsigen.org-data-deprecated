@@ -1,5 +1,0 @@
-=Index of module types=
-
-|@@ @class="alignleft"@@\\H|
-|<<a_api text="HTTP_CONTENT"| module type Ocsigen_http_frame.HTTP_CONTENT >> ~[<<a_api | module Ocsigen_http_frame >>~]||
-\\
