@@ -1,0 +1,4 @@
+=Module type <<a_api_type subproject="server" | module type Eliom_output.APPL_PARAMS >> =
+<<div class="code"|<<span class="keyword"|module type>> APPL_PARAMS = <<span class='code'|sig>><<a_api subproject="server" text=".." | module type Eliom_output.APPL_PARAMS >><<span class='code'|end>>>>
+----
+<<div id="VALapplication_name" class="code"|<<span class="keyword"|val>> application~_name : <<span class="code type"|string>>>>

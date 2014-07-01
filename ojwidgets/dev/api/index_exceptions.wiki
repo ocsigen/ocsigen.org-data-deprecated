@@ -1,0 +1,8 @@
+=Index of exceptions=
+
+|@@ @style="tet-align: left;"@@\\C|
+|@@class="odocwiki_index"@ @@<<a_api text="Close_button_not_in_alert"| exception Ojw_alert_sigs.T.Close_button_not_in_alert >> ~[<<a_api | module Ojw_alert_sigs.T >>~]|<<div class="odocwiki_info"|~Exception thrown if a <<span class="odocwiki_inlinecode"|closeable>> button do not find his parent~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="Close_button_not_in_popup"| exception Ojw_popup_f.Make.Close_button_not_in_popup >> ~[<<a_api | module Ojw_popup_f.Make >>~]||
+\\

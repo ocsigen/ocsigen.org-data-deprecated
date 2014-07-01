@@ -1,0 +1,112 @@
+=Module <<a_api_type | module Eliom_output >> =
+<<div class="code"|<<span class="keyword"|module>> Eliom_output: <<span class='code'|sig>><<a_api text=".." | module Eliom_output >><<span class='code'|end>>>>~This modules contains predefined modules for generating forms and
+   registering handlers~, for several types of pages~:
+   ~X~H~T~M~L pages typed with polymorphic variants~,
+   untyped ~(text~) pages~, actions~, redirections~, files ~.~.~.\\
+
+----
+<<div class="code"|<<span class="keyword"|module type>> <<a_api text="ELIOMSIG" | module type Eliom_output.ELIOMSIG >> = <<span class='code'|sig>><<a_api text=".." | module type Eliom_output.ELIOMSIG >><<span class='code'|end>>>><<div class="info"|~The signature of such modules~.
+>>
+\\
+
+==@@id="2_ModuleforregisteringXhtmlpagestypedwithpolymorphicvariantsusingXHTMLM"@@~Module for registering ~Xhtml pages typed with polymorphic variants using <<a_api | module XHTML.M >>==
+\\
+\\
+
+===@@id="3_CreatinglinksandformswithXHTMLM"@@~Creating links and forms with ~X~H~T~M~L~.~M===
+\\
+<<div class="code"|<<span class="keyword"|module type>> <<a_api text="XHTMLFORMSSIG" | module type Eliom_output.XHTMLFORMSSIG >> = <<span class='code'|sig>><<a_api text=".." | module type Eliom_output.XHTMLFORMSSIG >><<span class='code'|end>>>>\\
+
+===@@id="3_Formsandregistrationfunctions"@@~Forms and registration functions===
+\\
+<<div class="code"|<<span class="keyword"|module>> <<a_api text="Xhtml" | module Eliom_output.Xhtml >>: <<span class='code'|sig>><<a_api text=".." | module Eliom_output.Xhtml >><<span class='code'|end>>>><<div class="info"|~Eliom forms and service registration functions for ~X~H~T~M~L
+>>
+<<div class="code"|<<span class="keyword"|module>> <<a_api text="Xhtmlforms" | module Eliom_output.Xhtmlforms >>: <<span class="code type"|<<a_api text="XHTMLFORMSSIG" | module Eliom_output.XHTMLFORMSSIG >>>><<span class="code type"|{{{  }}}>>>><<div class="code"|<<span class="keyword"|module>> <<a_api text="Xhtmlreg" | module Eliom_output.Xhtmlreg >>: \\{{{   }}}<<span class="code type"|<<a_api text="Eliom_mkreg.ELIOMREGSIG" | module Eliom_mkreg.ELIOMREGSIG >>>><<span class="code type"|{{{  }}} with type page = Xhtmltypes.xhtml <<a_api text="XHTML.M" | module XHTML.M >>.elt \\{{{   }}}                                  and type options = <<a_api text="XHTML.M" | module XHTML.M >>.doctypes\\{{{   }}}                                  and type return = Eliom_services.http>>>><<div class="code"|<<span class="keyword"|module>> <<a_api text="Xhtmlreg_" | module Eliom_output.Xhtmlreg_ >>: <<div class="sig_block"|<<span class='code'|functor ~(>><<span class='code'|~Xhtml~_content>><<span class='code'| ~: >>\\{{{   }}}<<span class="code type"|<<a_api text="Ocsigen_http_frame.HTTP_CONTENT" | module Ocsigen_http_frame.HTTP_CONTENT >>>><<span class="code type"|{{{  }}} with type t = [ `Html ] <<a_api text="XHTML.M" | module XHTML.M >>.elt\\{{{   }}}                                            and type options = <<a_api text="XHTML.M" | module XHTML.M >>.doctypes>><<span class='code'|~) ~-~> >>\\{{{   }}}<<span class="code type"|<<a_api text="Eliom_mkreg.REGCREATE" | module Eliom_mkreg.REGCREATE >>>><<span class="code type"|{{{  }}} with type page =  Xhtml_content.t\\{{{   }}}                                    and type options = <<a_api text="XHTML.M" | module XHTML.M >>.doctypes\\{{{   }}}                                    and type return = Eliom_services.http>>>>>><<div class="code"|<<span class="keyword"|module>> <<a_api text="Xhtmlcompact" | module Eliom_output.Xhtmlcompact >>: <<span class='code'|sig>><<a_api text=".." | module Eliom_output.Xhtmlcompact >><<span class='code'|end>>>><<div class="info"|~Eliom forms and service registration functions for ~X~H~T~M~L~, with
+          compact markup ~(i~.e~.~, without pretty~-printing~)~.
+>>
+\\
+
+==@@id="2_Sameforhtml5"@@~Same for html ~5==
+\\
+<<div class="code"|<<span class="keyword"|module type>> <<a_api text="XHTML5FORMSSIG" | module type Eliom_output.XHTML5FORMSSIG >> = <<span class="code type"|<<a_api text="Eliom_output_cli.XHTML5FORMSSIG" | module Eliom_output_cli.XHTML5FORMSSIG >>>>>><<div class="code"|<<span class="keyword"|module>> <<a_api text="Xhtml5" | module Eliom_output.Xhtml5 >>: <<span class='code'|sig>><<a_api text=".." | module Eliom_output.Xhtml5 >><<span class='code'|end>>>><<div class="code"|<<span class="keyword"|module>> <<a_api text="Xhtml5compact" | module Eliom_output.Xhtml5compact >>: <<span class='code'|sig>><<a_api text=".." | module Eliom_output.Xhtml5compact >><<span class='code'|end>>>>\\
+
+===@@id="3_Eliomclientserverapplications"@@~Eliom client~/server applications===
+\\
+<<div class="code" id="TYPEappl_service_params"|<<span class="keyword"|type>> appl~_service~_params = { 
+|@@class="typetable"@ @class="lefttop"@@{{{   }}}|@@class="lefttop"@@ap_doctype : <<span class="code type"|XHTML5.M.doctypes>>;|
+|@@class="lefttop"@@{{{   }}}|@@class="lefttop"@@ap_title : <<span class="code type"|string>>;|
+|@@class="lefttop"@@{{{   }}}|@@class="lefttop"@@ap_container : <<span class="code type"|\\{{{   }}}'a.\\{{{   }}}    (([< <<a_api text="Xhtml5types.common" | type Xhtml5types.common >> ] as 'a) XHTML5.M.attrib list option *\\{{{   }}}     (<<a_api text="Xhtml5types.body_content" | type Xhtml5types.body_content >> XHTML5.M.elt ->\\{{{   }}}      <<a_api text="Xhtml5types.body_content" | type Xhtml5types.body_content >> XHTML5.M.elt list))\\{{{   }}}    option>>;|
+|@@class="lefttop"@@{{{   }}}|@@class="lefttop"@@ap_body_attributes : <<span class="code type"|'b. ([< <<a_api text="Xhtml5types.common" | type Xhtml5types.common >> ] as 'b) XHTML5.M.attrib list option>>;|
+|@@class="lefttop"@@{{{   }}}|@@class="lefttop"@@ap_headers_before : <<span class="code type"|<<a_api text="Xhtml5types.head_content_fun" | type Xhtml5types.head_content_fun >> XHTML5.M.elt list>>;|@@class="typefieldcomment lefttop startcom"@@{{{(*}}}|@@class="typefieldcomment lefttop"@@~Headers to be added before loading the main program|@@class="typefieldcomment leftbottom endcom"@@{{{*)}}}|
+|@@class="lefttop"@@{{{   }}}|@@class="lefttop"@@ap_headers_after : <<span class="code type"|<<a_api text="Xhtml5types.head_content_fun" | type Xhtml5types.head_content_fun >> XHTML5.M.elt list>>;|@@class="typefieldcomment lefttop startcom"@@{{{(*}}}|@@class="typefieldcomment lefttop"@@~Headers to be added after loading the main program|@@class="typefieldcomment leftbottom endcom"@@{{{*)}}}|
+
+}
+>>
+<<div class="info"|~Parameters for an ~Eliom application\\
+>>
+
+<<div id="VALdefault_appl_params" class="code"|<<span class="keyword"|val>> default~_appl~_params : <<span class="code type"|<<a_api text="appl_service_params" | type Eliom_output.appl_service_params >>>>>><<div class="code"|<<span class="keyword"|module type>> <<a_api text="APPL_PARAMS" | module type Eliom_output.APPL_PARAMS >> = <<span class='code'|sig>><<a_api text=".." | module type Eliom_output.APPL_PARAMS >><<span class='code'|end>>>><<div class="code" id="TYPEappl_service_options"|<<span class="keyword"|type>> appl~_service~_options = { 
+|@@class="typetable"@ @class="lefttop"@@{{{   }}}|@@class="lefttop"@@do_not_launch : <<span class="code type"|bool>>;|@@class="typefieldcomment lefttop startcom"@@{{{(*}}}|@@class="typefieldcomment lefttop"@@~Do not launch the client side program
+                                if it is not already launched~.
+                                ~Default~: <<span class='code'|false>>~.|@@class="typefieldcomment leftbottom endcom"@@{{{*)}}}|
+
+}
+>>
+<<div class="info"|~Parameters for an ~Eliom application service\\
+
+~If you set do~_not~_launch to <<span class='code'|true>> for a service~, it will send the page
+    without launching the client side program if it is not already launched~.
+    ~Use this if some of your pages are not using the client side program~,
+    and you want to make them load faster ~(for example the main page~)~.\\
+>>
+
+<<div id="VALdefault_appl_service_options" class="code"|<<span class="keyword"|val>> default~_appl~_service~_options : <<span class="code type"|<<a_api text="appl_service_options" | type Eliom_output.appl_service_options >>>>>><<div class="code"|<<span class="keyword"|module>> <<a_api text="Eliom_appl" | module Eliom_output.Eliom_appl >>: <<div class="sig_block"|<<span class='code'|functor ~(>><<span class='code'|~Appl~_params>><<span class='code'| ~: >><<span class="code type"|<<a_api text="APPL_PARAMS" | module Eliom_output.APPL_PARAMS >>>><<span class='code'|~) ~-~> >><<span class='code'|sig>><<a_api text=".." | module Eliom_output.Eliom_appl >><<span class='code'|end>>>>>><<div class="code"|<<span class="keyword"|module>> <<a_api text="Xhtmlcompactreg" | module Eliom_output.Xhtmlcompactreg >>: \\{{{   }}}<<span class="code type"|<<a_api text="Eliom_mkreg.ELIOMREGSIG" | module Eliom_mkreg.ELIOMREGSIG >>>><<span class="code type"|{{{  }}} \\{{{   }}}  with type page = Xhtmltypes.xhtml <<a_api text="XHTML.M" | module XHTML.M >>.elt\\{{{   }}}  and type options = <<a_api text="XHTML.M" | module XHTML.M >>.doctypes\\{{{   }}}  and type return = Eliom_services.http>>>>\\
+
+===@@id="3_Moduletoregistersubpagesoftypeblock"@@~Module to register subpages of type <<span class='code'|block>>===
+\\
+<<div class="code"|<<span class="keyword"|module>> <<a_api text="Blocks" | module Eliom_output.Blocks >>: <<span class='code'|sig>><<a_api text=".." | module Eliom_output.Blocks >><<span class='code'|end>>>><<div class="info"|~For ~X~H~T~M~L
+>>
+<<div class="code"|<<span class="keyword"|module>> <<a_api text="Blocks5" | module Eliom_output.Blocks5 >>: <<span class='code'|sig>><<a_api text=".." | module Eliom_output.Blocks5 >><<span class='code'|end>>>><<div class="info"|~For ~X~H~T~M~L~5
+>>
+\\
+
+===@@id="3_FunctortocreatemodulestoregistersubpagesforothersubtypesofXHTML"@@~Functor to create modules to register subpages for other subtypes of ~X~H~T~M~L===
+\\
+<<div class="code"|<<span class="keyword"|module>> <<a_api text="SubXhtml" | module Eliom_output.SubXhtml >>: <<div class="sig_block"|<<span class='code'|functor ~(>><<span class='code'|~Format>><<span class='code'| ~: >><<span class='code'|sig>><<div class="sig_block"|<<div class="code" id="TYPEdoctypes"|<<span class="keyword"|type>> doctypes>>
+
+<<div class="code" id="TYPEcontent"|<<span class="keyword"|type>> content>>
+
+<<div class="code" id="TYPEelt"|<<span class="keyword"|type>> <<span class="code type"|'a>> elt>>
+
+<<div id="VALxhtml_list_stream" class="code"|<<span class="keyword"|val>> xhtml~_list~_stream : <<span class="code type"|\\{{{   }}}?version:doctypes ->\\{{{   }}}  ?width:int ->\\{{{   }}}  ?encode:(string -> string) ->\\{{{   }}}  ?html_compat:bool ->\\{{{   }}}  content elt list ->\\{{{   }}}  string <<a_api text="Ocsigen_stream.t" | type Ocsigen_stream.t >>>>>>>><<span class='code'|end>><<span class='code'|~) ~-~> >><<span class='code'|sig>><<a_api text=".." | module Eliom_output.SubXhtml >><<span class='code'|end>>>>>>\\
+
+==@@id="2_Untypedpages"@@~Untyped pages==
+\\
+<<div class="code"|<<span class="keyword"|module>> <<a_api text="HtmlText" | module Eliom_output.HtmlText >>: \\{{{   }}}<<span class="code type"|<<a_api text="ELIOMSIG" | module Eliom_output.ELIOMSIG >>>><<span class="code type"|{{{  }}} with\\{{{   }}}type page = string\\{{{   }}}and type form_content_elt = string\\{{{   }}}and type form_content_elt_list = string\\{{{   }}}and type form_elt = string\\{{{   }}}and type 'a a_content_elt = string\\{{{   }}}and type 'a a_content_elt_list = string\\{{{   }}}and type 'a a_elt = string\\{{{   }}}and type 'a a_elt_list = string\\{{{   }}}and type div_content_elt = string\\{{{   }}}and type div_content_elt_list = string\\{{{   }}}and type uri = string\\{{{   }}}and type link_elt = string\\{{{   }}}and type script_elt = string\\{{{   }}}and type textarea_elt = string\\{{{   }}}and type select_elt = string\\{{{   }}}and type input_elt = string\\{{{   }}}and type pcdata_elt = string\\{{{   }}}and type a_attrib_t = string\\{{{   }}}and type form_attrib_t = string\\{{{   }}}and type input_attrib_t = string\\{{{   }}}and type textarea_attrib_t = string\\{{{   }}}and type select_attrib_t = string\\{{{   }}}and type link_attrib_t = string\\{{{   }}}and type script_attrib_t = string\\{{{   }}}and type input_type_t = string>>>><<div class="info"|~Module to create forms and register untyped ~H~T~M~L pages
+>>
+<<div class="code"|<<span class="keyword"|module>> <<a_api text="CssText" | module Eliom_output.CssText >>: \\{{{   }}}<<span class="code type"|<<a_api text="Eliom_mkreg.ELIOMREGSIG" | module Eliom_mkreg.ELIOMREGSIG >>>><<span class="code type"|{{{  }}} with\\{{{   }}}  type page = string\\{{{   }}}  and type return = Eliom_services.http>>>><<div class="info"|~Module to register untyped ~C~S~S pages
+>>
+<<div class="code"|<<span class="keyword"|module>> <<a_api text="Text" | module Eliom_output.Text >>: \\{{{   }}}<<span class="code type"|<<a_api text="Eliom_mkreg.ELIOMREGSIG" | module Eliom_mkreg.ELIOMREGSIG >>>><<span class="code type"|{{{  }}} with\\{{{   }}}  type page = string * string\\{{{   }}}  and type return = Eliom_services.http>>>><<div class="info"|~Module to register untyped text pages
+>>
+\\
+
+==@@id="2_Otherkindsofservices"@@~Other kinds of services==
+\\
+<<div class="code"|<<span class="keyword"|module>> <<a_api text="Action" | module Eliom_output.Action >>: \\{{{   }}}<<span class="code type"|<<a_api text="Eliom_mkreg.ELIOMREGSIG" | module Eliom_mkreg.ELIOMREGSIG >>>><<span class="code type"|{{{  }}} \\{{{   }}}  with\\{{{   }}}    type page = unit\\{{{   }}}  and type options = [ `Reload | `NoReload ]\\{{{   }}}  and type return = Eliom_services.http>>>><<div class="info"|~Actions do not generate any page~.
+>>
+<<div class="code"|<<span class="keyword"|module>> <<a_api text="Unit" | module Eliom_output.Unit >>: \\{{{   }}}<<span class="code type"|<<a_api text="Eliom_mkreg.ELIOMREGSIG" | module Eliom_mkreg.ELIOMREGSIG >>>><<span class="code type"|{{{  }}} with\\{{{   }}}  type page = unit\\{{{   }}}  and type return = Eliom_services.http>>>><<div class="info"|~Like actions~, but the page is not reloaded~.
+>>
+<<div class="code"|<<span class="keyword"|module>> <<a_api text="Redirection" | module Eliom_output.Redirection >>: \\{{{   }}}<<span class="code type"|<<a_api text="Eliom_mkreg.ELIOMREGSIG" | module Eliom_mkreg.ELIOMREGSIG >>>><<span class="code type"|{{{  }}} with\\{{{   }}}  type page =\\{{{   }}}  (unit, unit, Eliom_services.get_service_kind,\\{{{   }}}   [ `WithoutSuffix ],\\{{{   }}}   unit, unit, Eliom_services.registrable, Eliom_services.http)\\{{{   }}}    Eliom_services.service\\{{{   }}}  and type options = [ `Temporary | `Permanent ]\\{{{   }}}  and type return = Eliom_services.http>>>><<div class="code"|<<span class="keyword"|module>> <<a_api text="String_redirection" | module Eliom_output.String_redirection >>: \\{{{   }}}<<span class="code type"|<<a_api text="Eliom_mkreg.ELIOMREGSIG" | module Eliom_mkreg.ELIOMREGSIG >>>><<span class="code type"|{{{  }}} with\\{{{   }}}  type page = Xhtmltypes.uri\\{{{   }}}  and type options = [ `Temporary | `Permanent ]\\{{{   }}}  and type return = Eliom_services.http>>>><<div class="info"|~Allows to create redirections towards other ~U~R~Ls~.
+>>
+<<div class="code"|<<span class="keyword"|module>> <<a_api text="Files" | module Eliom_output.Files >>: \\{{{   }}}<<span class="code type"|<<a_api text="Eliom_mkreg.ELIOMREGSIG" | module Eliom_mkreg.ELIOMREGSIG >>>><<span class="code type"|{{{  }}} with\\{{{   }}}  type page = string\\{{{   }}}  and type return = Eliom_services.http>>>><<div class="info"|~Allows to send files~.
+>>
+<<div class="code"|<<span class="keyword"|module>> <<a_api text="Any" | module Eliom_output.Any >>: \\{{{   }}}<<span class="code type"|<<a_api text="Eliom_mkreg.ELIOMREGSIG" | module Eliom_mkreg.ELIOMREGSIG >>>><<span class="code type"|{{{  }}} with\\{{{   }}}  type page = Ocsigen_http_frame.result\\{{{   }}}  and type return = Eliom_services.http>>>><<div class="info"|~Allows to create services that choose dynamically what they want
+   to send~.
+>>
+<<div class="code"|<<span class="keyword"|module>> <<a_api text="Streamlist" | module Eliom_output.Streamlist >>: \\{{{   }}}<<span class="code type"|<<a_api text="Eliom_mkreg.ELIOMREGSIG" | module Eliom_mkreg.ELIOMREGSIG >>>><<span class="code type"|{{{  }}} with\\{{{   }}}  type page = (((unit -> string Ocsigen_stream.t Lwt.t) list) *\\{{{   }}}                 string)\\{{{   }}}  and type return = Eliom_services.http>>>><<div class="info"|~Allows to send raw data using ~Ocsigen~'s streams~.
+>>
+<<div class="code"|<<span class="keyword"|module>> <<a_api text="Caml" | module Eliom_output.Caml >>: <<span class='code'|sig>><<a_api text=".." | module Eliom_output.Caml >><<span class='code'|end>>>><<div class="info"|~Allows to register services that send caml values~.
+>>
+<<div class="code"|<<span class="keyword"|module>> <<a_api text="Customize" | module Eliom_output.Customize >>: <<div class="sig_block"|<<span class='code'|functor ~(>><<span class='code'|~R>><<span class='code'| ~: >><<span class="code type"|<<a_api text="Eliom_mkreg.ELIOMREGSIG" | module Eliom_mkreg.ELIOMREGSIG >>>><<span class='code'|~) ~-~> >><<div class="sig_block"|<<span class='code'|functor ~(>><<span class='code'|~T>><<span class='code'| ~: >><<span class='code'|sig>><<div class="sig_block"|<<div class="code" id="TYPEpage"|<<span class="keyword"|type>> page>>
+
+<<div id="VALtranslate" class="code"|<<span class="keyword"|val>> translate : <<span class="code type"|page -> R.page Lwt.t>>>>>><<span class='code'|end>><<span class='code'|~) ~-~> >>\\{{{   }}}<<span class="code type"|<<a_api text="Eliom_mkreg.ELIOMREGSIG" | module Eliom_mkreg.ELIOMREGSIG >>>><<span class="code type"|{{{  }}} with type page = T.page\\{{{   }}}                            and type options = R.options\\{{{   }}}                            and type return = R.return>>>>>>>>

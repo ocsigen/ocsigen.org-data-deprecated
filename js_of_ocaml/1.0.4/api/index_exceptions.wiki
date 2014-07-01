@@ -1,0 +1,5 @@
+=Index of exceptions=
+
+|@@ @style="tet-align: left;"@@\\C|
+|@@class="odocwiki_index"@ @@<<a_api text="Canvas_not_available"| exception Dom_html.Canvas_not_available >> ~[<<a_api | module Dom_html >>~]||
+\\

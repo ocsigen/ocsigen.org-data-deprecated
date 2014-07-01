@@ -1,0 +1,6 @@
+<<code language="ocaml" | sig
+  type 'a t
+  val of_react :
+    ?throttling:float ->
+    ?name:string -> 'a React.E.t -> 'a Eliom_react.Down.t
+end >>

@@ -1,0 +1,4 @@
+<<code language="ocaml" | sig
+  module State :
+    sig type t = NOT_CHECKED | PARTIALLY_CHECKED | FULLY_CHECKED end
+end >>

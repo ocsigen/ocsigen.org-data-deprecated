@@ -1,0 +1,94 @@
+=Module <<a_api_type subproject="client" | module Eliom_services >> =
+<<div class="code"|<<span class="keyword"|module>> Eliom_services: <<span class='code'|sig>><<a_api subproject="client" text=".." | module Eliom_services >><<span class='code'|end>>>>~Functions to add non localised parameters to services and
+    client side declaration of void coservices~. ~Void coservices are the only ones
+    defined on client side~.\\
+
+----
+<<div class="code" id="TYPEsuff"|<<span class="keyword"|type>> suff = <<span class="code type"|[ `WithSuffix | `WithoutSuffix ]>> >>
+<<div class="info"|
+==@@id="2_Typesofservices"@@~Types of services==
+\\
+>>
+
+<<div class="code" id="TYPEservcoserv"|<<span class="keyword"|type>> servcoserv = <<span class="code type"|[ `Coservice | `Service ]>> >>
+
+<<div class="code" id="TYPEgetpost"|<<span class="keyword"|type>> getpost = <<span class="code type"|[ `Get | `Post ]>> >>
+
+<<div class="code" id="TYPEattached_service_kind"|<<span class="keyword"|type>> attached~_service~_kind = <<span class="code type"|[ `External | `Internal of <<a_api subproject="client" text="servcoserv" | type Eliom_services.servcoserv >> ]>> >>
+
+<<div class="code" id="TYPEinternal"|<<span class="keyword"|type>> internal = <<span class="code type"|[ `Internal of <<a_api subproject="client" text="servcoserv" | type Eliom_services.servcoserv >> ]>> >>
+
+<<div class="code" id="TYPEregistrable"|<<span class="keyword"|type>> registrable = <<span class="code type"|[ `Registrable | `Unregistrable ]>> >>
+
+<<div class="code" id="TYPEa_s"|<<span class="keyword"|type>> <<span class="code type"|(+'a, +'b)>> a~_s>>
+<<div class="info"|~You can call register function only on registrable services\\
+>>
+
+<<div class="code" id="TYPEna_s"|<<span class="keyword"|type>> <<span class="code type"|+'a>> na~_s>>
+
+<<div class="code" id="TYPEservice_kind"|<<span class="keyword"|type>> service~_kind = <<span class="code type"|\\{{{   }}}[ `Attached of\\{{{   }}}      (<<a_api subproject="client" text="attached_service_kind" | type Eliom_services.attached_service_kind >>, <<a_api subproject="client" text="getpost" | type Eliom_services.getpost >>)\\{{{   }}}      <<a_api subproject="client" text="a_s" | type Eliom_services.a_s >>\\{{{   }}}  | `Nonattached of <<a_api subproject="client" text="getpost" | type Eliom_services.getpost >> <<a_api subproject="client" text="na_s" | type Eliom_services.na_s >> ]>> >>
+
+<<div class="code" id="TYPEinternal_service_kind"|<<span class="keyword"|type>> internal~_service~_kind = <<span class="code type"|\\{{{   }}}[ `Attached of\\{{{   }}}      (<<a_api subproject="client" text="internal" | type Eliom_services.internal >>, <<a_api subproject="client" text="getpost" | type Eliom_services.getpost >>) <<a_api subproject="client" text="a_s" | type Eliom_services.a_s >>\\{{{   }}}  | `Nonattached of <<a_api subproject="client" text="getpost" | type Eliom_services.getpost >> <<a_api subproject="client" text="na_s" | type Eliom_services.na_s >> ]>> >>
+
+<<div class="code" id="TYPEget_service_kind"|<<span class="keyword"|type>> get~_service~_kind = <<span class="code type"|\\{{{   }}}[ `Attached of\\{{{   }}}      (<<a_api subproject="client" text="attached_service_kind" | type Eliom_services.attached_service_kind >>, [ `Get ]) <<a_api subproject="client" text="a_s" | type Eliom_services.a_s >>\\{{{   }}}  | `Nonattached of [ `Get ] <<a_api subproject="client" text="na_s" | type Eliom_services.na_s >> ]>> >>
+
+<<div class="code" id="TYPEpost_service_kind"|<<span class="keyword"|type>> post~_service~_kind = <<span class="code type"|\\{{{   }}}[ `Attached of\\{{{   }}}      (<<a_api subproject="client" text="attached_service_kind" | type Eliom_services.attached_service_kind >>, [ `Post ]) <<a_api subproject="client" text="a_s" | type Eliom_services.a_s >>\\{{{   }}}  | `Nonattached of [ `Post ] <<a_api subproject="client" text="na_s" | type Eliom_services.na_s >> ]>> >>
+
+<<div class="code" id="TYPEattached"|<<span class="keyword"|type>> attached = <<span class="code type"|\\{{{   }}}[ `Attached of\\{{{   }}}      (<<a_api subproject="client" text="attached_service_kind" | type Eliom_services.attached_service_kind >>, <<a_api subproject="client" text="getpost" | type Eliom_services.getpost >>)\\{{{   }}}      <<a_api subproject="client" text="a_s" | type Eliom_services.a_s >> ]>> >>
+
+<<div class="code" id="TYPEnonattached"|<<span class="keyword"|type>> nonattached = <<span class="code type"|[ `Nonattached of <<a_api subproject="client" text="getpost" | type Eliom_services.getpost >> <<a_api subproject="client" text="na_s" | type Eliom_services.na_s >> ]>> >>
+
+<<div class="code" id="TYPEhttp"|<<span class="keyword"|type>> http>>
+
+<<div class="code" id="TYPEappl_service"|<<span class="keyword"|type>> appl~_service>>
+<<div class="info"|default return type for services\\
+>>
+
+<<div class="code" id="TYPEservice"|<<span class="keyword"|type>> <<span class="code type"|('a, 'b, +'c, +'d, +'e, +'f, +'g, +'h)>> service>>
+<<div class="info"|return type for service that are entry points for an
+                      application\\
+>>
+
+\\
+~Type of services~.* <<span class='code'| ~'get>> is the type of ~G~E~T parameters
+* <<span class='code'| ~'post>> is the type of ~P~O~S~T parameters
+* <<span class='code'| ~'kind>> is a subtype of <<a_api subproject="client" | type Eliom_services.service_kind >>
+    ~(attached or non~-attached
+    service~, internal or external~, ~G~E~T only or with ~P~O~S~T parameters~)
+* <<span class='code'| ~'tipo>> is a phantom type stating the kind of parameters it uses
+    ~(suffix or not~)
+* <<span class='code'| ~'getnames>> is the type of ~G~E~T parameters names
+* <<span class='code'| ~'postnames>> is the type of ~P~O~S~T parameters names
+* <<span class='code'| ~'registrable>> is a phantom type~,
+    subtype of <<a_api subproject="client" | type Eliom_services.registrable >>~,
+    telling if it is possible to register a handler on this service~.
+* <<span class='code'| ~'return >> is an information on what the service returns
+
+\\
+<<div id="VALvoid_coservice'" class="code"|<<span class="keyword"|val>> void~_coservice~' : <<span class="code type"|\\{{{   }}}(unit, unit, [> `Nonattached of 'a <<a_api subproject="client" text="na_s" | type Eliom_services.na_s >> ], [ `WithoutSuffix ],\\{{{   }}}   unit, unit, [> `Unregistrable ], 'b)\\{{{   }}}  <<a_api subproject="client" text="service" | type Eliom_services.service >>>>>><<div class="info"|
+===@@id="3_Voidnonattachedcoservices"@@~Void non~-attached coservices===
+\\
+>>
+<<div id="VALhttps_void_coservice'" class="code"|<<span class="keyword"|val>> https~_void~_coservice~' : <<span class="code type"|\\{{{   }}}(unit, unit, [> `Nonattached of 'a <<a_api subproject="client" text="na_s" | type Eliom_services.na_s >> ], [ `WithoutSuffix ],\\{{{   }}}   unit, unit, [> `Unregistrable ], 'b)\\{{{   }}}  <<a_api subproject="client" text="service" | type Eliom_services.service >>>>>><<div class="info"|~A predefined non~-attached action with special behaviour~:
+    it has no parameter at all~, even non~-attached parameters~.
+    ~Use it if you want to make a link to the current page without non~-attached
+    parameters~.
+    ~It is almost equivalent to a ~P~O~S~T non~-attached service without ~P~O~S~T
+    parameters~, on which you register an action that does nothing~,
+    but you can use it with ~<a~> links~, not only forms~.
+    ~It does not keep non attached ~G~E~T parameters~.\\
+>>
+<<div id="VALvoid_hidden_coservice'" class="code"|<<span class="keyword"|val>> void~_hidden~_coservice~' : <<span class="code type"|\\{{{   }}}(unit, unit, [> `Nonattached of 'a <<a_api subproject="client" text="na_s" | type Eliom_services.na_s >> ], [ `WithoutSuffix ],\\{{{   }}}   unit, unit, [> `Unregistrable ], 'b)\\{{{   }}}  <<a_api subproject="client" text="service" | type Eliom_services.service >>>>>><<div class="info"|~The same~, but forcing https~.\\
+>>
+<<div id="VALhttps_void_hidden_coservice'" class="code"|<<span class="keyword"|val>> https~_void~_hidden~_coservice~' : <<span class="code type"|\\{{{   }}}(unit, unit, [> `Nonattached of 'a <<a_api subproject="client" text="na_s" | type Eliom_services.na_s >> ], [ `WithoutSuffix ],\\{{{   }}}   unit, unit, [> `Unregistrable ], 'b)\\{{{   }}}  <<a_api subproject="client" text="service" | type Eliom_services.service >>>>>><<div class="info"|~Same as <<span class='code'|void~_coservice~'>> but keeps non attached ~G~E~T parameters~.\\
+>>
+\\
+~The same~, but forcing https~.\\
+<<div id="VALadd_non_localized_get_parameters" class="code"|<<span class="keyword"|val>> add~_non~_localized~_get~_parameters : <<span class="code type"|\\{{{   }}}params:('a, [ `WithoutSuffix ], 'b) Eliom_parameters.non_localized_params ->\\{{{   }}}  service:('c, 'd, 'e, 'f, 'g, 'h, 'i, 'j) <<a_api subproject="client" text="service" | type Eliom_services.service >> ->\\{{{   }}}  ('c * 'a, 'd, 'e, 'f, 'g * 'b, 'h, 'i, 'j) <<a_api subproject="client" text="service" | type Eliom_services.service >>>>>><<div class="info"|
+==@@id="2_Miscellaneous"@@~Miscellaneous==
+\\
+>>
+<<div id="VALadd_non_localized_post_parameters" class="code"|<<span class="keyword"|val>> add~_non~_localized~_post~_parameters : <<span class="code type"|\\{{{   }}}params:('a, [ `WithoutSuffix ], 'b) Eliom_parameters.non_localized_params ->\\{{{   }}}  service:('c, 'd, 'e, 'f, 'g, 'h, 'i, 'j) <<a_api subproject="client" text="service" | type Eliom_services.service >> ->\\{{{   }}}  ('c, 'd * 'a, 'e, 'f, 'g, 'h * 'b, 'i, 'j) <<a_api subproject="client" text="service" | type Eliom_services.service >>>>>><<div class="info"|~Adds non localized ~G~E~T parameters to a service\\
+>>
+\\
+~Adds non localized ~P~O~S~T parameters to a service\\

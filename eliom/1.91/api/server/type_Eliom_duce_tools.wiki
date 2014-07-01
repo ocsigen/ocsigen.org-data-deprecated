@@ -1,0 +1,601 @@
+<<code language="ocaml" | sig
+  val menu :
+    ?classe:string list ->
+    ?id:string ->
+    ([< Eliom_services.get_service_kind ] as 'a,
+     [< Eliom_services.registrable ] as 'b)
+    Eliom_tools_common.one_page * 'c Eliom_duce.Blocks.a_content_elt_list ->
+    (('a, 'b) Eliom_tools_common.one_page *
+     'c Eliom_duce.Blocks.a_content_elt_list)
+    list ->
+    ?service:('a, 'b) Eliom_tools_common.one_page ->
+    unit -> XHTML_types_duce.ul
+  val hierarchical_menu_depth_first :
+    ?classe:string list ->
+    ?id:string ->
+    ?whole_tree:bool ->
+    ([< Eliom_services.get_service_kind ] as 'a,
+     [< Eliom_services.registrable ] as 'b,
+     'c Eliom_duce.Blocks.a_content_elt_list)
+    Eliom_tools_common.hierarchical_site ->
+    ?service:('a, 'b) Eliom_tools_common.one_page ->
+    unit ->
+    {{[ <ul (X1)>X33* ] where
+  X1 = { xml:lang=?String lang=?String class=?String onmouseup=?String
+       onclick=?String onkeyup=?String onkeypress=?String id=?String 
+       dir=?X2 style=?String onmousedown=?String onmousemove=?String
+       onmouseover=?String title=?String onmouseout=?String onkeydown=?String
+       ondblclick=?String } and
+  X2 = [ 'rtl' | 'ltr' ] and
+  X3 = [ (<script (X5)>String | <del (X4)>X3 | <ins (X4)>X3 |
+         <noscript (X1)>X6 | <sup (X1)>X7 | <sub (X1)>X7 | <acronym (X1)>X7 |
+         <abbr (X1)>X7 | <cite (X1)>X7 | <var (X1)>X7 | <kbd (X1)>X7 |
+         <samp (X1)>X7 | <q (X8)>X7 | <code (X1)>X7 | <dfn (X1)>X7 |
+         <strong (X1)>X7 | <em (X1)>X7 | <small (X1)>X7 | <big (X1)>X7 |
+         <b (X1)>X7 | <i (X1)>X7 | <tt (X1)>X7 | <img (X9)>[  ] |
+         <button (X10)>X11 | <label (X17)>X7 | <textarea (X18)>String |
+         <select (X19)>X20 | <input (X21)>[  ] | <object (X13)>X14 |
+         <map (X22)>X23 | <bdo (X24)>X7 | <span (X1)>X7 | <br (X25)>[  ] |
+         <a (X30)>X31 | <form (X26)>X27 | <table (X28)>X29 |
+         <fieldset (X1)>X32 | <address (X1)>X7 | <blockquote (X8)>X6 |
+         <hr (X1)>[  ] | <pre (X1)>X34 | <dl (X1)>X35 | <ol (X1)>X33 |
+         <ul (X1)>X33 | <div (X1)>X3 | <h6 (X1)>X7 | <h5 (X1)>X7 |
+         <h4 (X1)>X7 | <h3 (X1)>X7 | <h2 (X1)>X7 | <h1 (X1)>X7 | <p (X1)>X7 |
+         Char)* ] and
+  X4 = { cite=?String xml:lang=?String lang=?String class=?String
+       onmouseup=?String onclick=?String onkeyup=?String datetime=?String
+       onkeypress=?String id=?String dir=?X2 style=?String
+       onmousedown=?String onmousemove=?String onmouseover=?String
+       title=?String onmouseout=?String onkeydown=?String
+       ondblclick=?String } and
+  X5 = { type=String charset=?String defer=?[ 'defer' ] id=?String
+       src=?String } and
+  X6 = [ X15* ] and
+  X7 = [ (<script (X5)>String | <del (X4)>X3 | <ins (X4)>X3 | <sup (X1)>X7 |
+         <sub (X1)>X7 | <acronym (X1)>X7 | <abbr (X1)>X7 | <cite (X1)>X7 |
+         <var (X1)>X7 | <kbd (X1)>X7 | <samp (X1)>X7 | <q (X8)>X7 |
+         <code (X1)>X7 | <dfn (X1)>X7 | <strong (X1)>X7 | <em (X1)>X7 |
+         <small (X1)>X7 | <big (X1)>X7 | <b (X1)>X7 | <i (X1)>X7 |
+         <tt (X1)>X7 | <img (X9)>[  ] | <button (X10)>X11 | <label (X17)>X7 |
+         <textarea (X18)>String | <select (X19)>X20 | <input (X21)>[  ] |
+         <object (X13)>X14 | <map (X22)>X23 | <bdo (X24)>X7 | <span (X1)>X7 |
+         <br (X25)>[  ] | <a (X30)>X31 | Char)* ] and
+  X8 = { cite=?String xml:lang=?String lang=?String class=?String
+       onmouseup=?String onclick=?String onkeyup=?String onkeypress=?String
+       id=?String dir=?X2 style=?String onmousedown=?String
+       onmousemove=?String onmouseover=?String title=?String
+       onmouseout=?String onkeydown=?String ondblclick=?String } and
+  X9 = { ismap=?[ 'ismap' ] usemap=?String xml:lang=?String lang=?String
+       class=?String width=?String onmouseup=?String onclick=?String
+       onkeyup=?String onkeypress=?String id=?String alt=String dir=?X2
+       src=String height=?String style=?String onmousedown=?String
+       onmousemove=?String onmouseover=?String title=?String
+       onmouseout=?String longdesc=?String onkeydown=?String
+       ondblclick=?String } and
+  X10 = { xml:lang=?String lang=?String class=?String name=?String
+        onmouseup=?String onclick=?String
+        type=?[ 'reset' | 'submit' | 'button' ] onkeyup=?String
+        onblur=?String disabled=?[ 'disabled' ] onkeypress=?String id=?String
+        dir=?X2 style=?String onmousedown=?String accesskey=?String
+        onfocus=?String onmousemove=?String onmouseover=?String title=?String
+        tabindex=?String onmouseout=?String value=?String onkeydown=?String
+        ondblclick=?String } and
+  X11 = [ (<script (X5)>String | <del (X4)>X3 | <ins (X4)>X3 |
+          <noscript (X1)>X6 | <sup (X1)>X7 | <sub (X1)>X7 |
+          <acronym (X1)>X7 | <abbr (X1)>X7 | <cite (X1)>X7 | <var (X1)>X7 |
+          <kbd (X1)>X7 | <samp (X1)>X7 | <q (X8)>X7 | <code (X1)>X7 |
+          <dfn (X1)>X7 | <strong (X1)>X7 | <em (X1)>X7 | <small (X1)>X7 |
+          <big (X1)>X7 | <b (X1)>X7 | <i (X1)>X7 | <tt (X1)>X7 |
+          <img (X9)>[  ] | <object (X13)>X14 | <map (X22)>X23 |
+          <bdo (X24)>X7 | <span (X1)>X7 | <br (X25)>[  ] | <table (X28)>X29 |
+          <address (X1)>X7 | <blockquote (X8)>X6 | <hr (X1)>[  ] |
+          <pre (X1)>X34 | <dl (X1)>X35 | <ol (X1)>X33 | <ul (X1)>X33 |
+          <div (X1)>X3 | <h6 (X1)>X7 | <h5 (X1)>X7 | <h4 (X1)>X7 |
+          <h3 (X1)>X7 | <h2 (X1)>X7 | <h1 (X1)>X7 | <p (X1)>X7 | Char)* ] and
+  X12 = { xml:lang=?String lang=?String class=?String onmouseup=?String
+        onclick=?String onkeyup=?String label=?String
+        disabled=?[ 'disabled' ] onkeypress=?String id=?String dir=?X2
+        style=?String onmousedown=?String onmousemove=?String
+        onmouseover=?String title=?String onmouseout=?String
+        selected=?[ 'selected' ] value=?String onkeydown=?String
+        ondblclick=?String } and
+  X13 = { usemap=?String data=?String xml:lang=?String lang=?String
+        class=?String name=?String width=?String onmouseup=?String
+        onclick=?String type=?String onkeyup=?String declare=?[ 'declare' ]
+        classid=?String onkeypress=?String id=?String dir=?X2 height=?String
+        style=?String onmousedown=?String onmousemove=?String
+        codebase=?String onmouseover=?String title=?String codetype=?String
+        tabindex=?String archive=?String onmouseout=?String standby=?String
+        onkeydown=?String ondblclick=?String } and
+  X14 = [ (<script (X5)>String | <del (X4)>X3 | <ins (X4)>X3 |
+          <noscript (X1)>X6 | <sup (X1)>X7 | <sub (X1)>X7 |
+          <acronym (X1)>X7 | <abbr (X1)>X7 | <cite (X1)>X7 | <var (X1)>X7 |
+          <kbd (X1)>X7 | <samp (X1)>X7 | <q (X8)>X7 | <code (X1)>X7 |
+          <dfn (X1)>X7 | <strong (X1)>X7 | <em (X1)>X7 | <small (X1)>X7 |
+          <big (X1)>X7 | <b (X1)>X7 | <i (X1)>X7 | <tt (X1)>X7 |
+          <img (X9)>[  ] | <button (X10)>X11 | <label (X17)>X7 |
+          <textarea (X18)>String | <select (X19)>X20 | <input (X21)>[  ] |
+          <object (X13)>X14 | <map (X22)>X23 | <bdo (X24)>X7 |
+          <span (X1)>X7 | <br (X25)>[  ] | <a (X30)>X31 | <form (X26)>X27 |
+          <table (X28)>X29 | <fieldset (X1)>X32 | <address (X1)>X7 |
+          <blockquote (X8)>X6 | <hr (X1)>[  ] | <pre (X1)>X34 |
+          <dl (X1)>X35 | <ol (X1)>X33 | <ul (X1)>X33 | <div (X1)>X3 |
+          <h6 (X1)>X7 | <h5 (X1)>X7 | <h4 (X1)>X7 | <h3 (X1)>X7 |
+          <h2 (X1)>X7 | <h1 (X1)>X7 | <p (X1)>X7 | <param name=?String
+          type=?String id=?String valuetype=?[ 'data' | 'ref' | 'object' ]
+          value=?String>[  ] | Char)* ] and
+  X15 = <script (X5)>String | <del (X4)>X3 | <ins (X4)>X3 |
+        <noscript (X1)>X6 | <form (X26)>X27 | <table (X28)>X29 |
+        <fieldset (X1)>X32 | <address (X1)>X7 | <blockquote (X8)>X6 |
+        <hr (X1)>[  ] | <pre (X1)>X34 | <dl (X1)>X35 | <ol (X1)>X33 |
+        <ul (X1)>X33 | <div (X1)>X3 | <h6 (X1)>X7 | <h5 (X1)>X7 |
+        <h4 (X1)>X7 | <h3 (X1)>X7 | <h2 (X1)>X7 | <h1 (X1)>X7 | <p (X1)>X7 and
+  X16 = [ 'default' | 'rect' | 'poly' | 'circle' ] and
+  X17 = { xml:lang=?String lang=?String class=?String onmouseup=?String
+        onclick=?String onkeyup=?String onblur=?String onkeypress=?String
+        id=?String dir=?X2 for=?String style=?String onmousedown=?String
+        accesskey=?String onfocus=?String onmousemove=?String
+        onmouseover=?String title=?String onmouseout=?String
+        onkeydown=?String ondblclick=?String } and
+  X18 = { cols=String xml:lang=?String lang=?String class=?String
+        name=?String onmouseup=?String onclick=?String rows=String
+        onkeyup=?String onchange=?String onblur=?String
+        disabled=?[ 'disabled' ] onkeypress=?String id=?String dir=?X2
+        style=?String onmousedown=?String accesskey=?String
+        readonly=?[ 'readonly' ] onfocus=?String onmousemove=?String
+        onmouseover=?String title=?String onselect=?String tabindex=?String
+        onmouseout=?String onkeydown=?String ondblclick=?String } and
+  X19 = { xml:lang=?String lang=?String class=?String name=?String
+        onmouseup=?String onclick=?String size=?String onkeyup=?String
+        onchange=?String onblur=?String disabled=?[ 'disabled' ]
+        onkeypress=?String id=?String dir=?X2 style=?String
+        onmousedown=?String onfocus=?String onmousemove=?String
+        onmouseover=?String title=?String tabindex=?String
+        multiple=?[ 'multiple' ] onmouseout=?String onkeydown=?String
+        ondblclick=?String } and
+  X20 = [ (<option (X12)>String | <optgroup xml:lang=?String lang=?String
+          class=?String onmouseup=?String onclick=?String onkeyup=?String
+          label=String disabled=?[ 'disabled' ] onkeypress=?String id=?String
+          dir=?X2 style=?String onmousedown=?String onmousemove=?String
+          onmouseover=?String title=?String onmouseout=?String
+          onkeydown=?String ondblclick=?String>[ <option (X12)>String+ ])+ ] and
+  X21 = { usemap=?String xml:lang=?String lang=?String class=?String
+        name=?String onmouseup=?String onclick=?String size=?String
+        type=?[ 'file' | 'reset' | 'radio' | 'text' | 'image' | 'submit' |
+              'password' | 'button' | 'checkbox' | 'hidden' ]
+        onkeyup=?String onchange=?String onblur=?String
+        disabled=?[ 'disabled' ] onkeypress=?String id=?String alt=?String
+        dir=?X2 src=?String style=?String onmousedown=?String
+        accesskey=?String readonly=?[ 'readonly' ] onfocus=?String
+        onmousemove=?String accept=?String onmouseover=?String title=?String
+        checked=?[ 'checked' ] onselect=?String tabindex=?String
+        maxlength=?String onmouseout=?String value=?String onkeydown=?String
+        ondblclick=?String } and
+  X22 = { xml:lang=?String lang=?String class=?String name=?String
+        onmouseup=?String onclick=?String onkeyup=?String onkeypress=?String
+        id=String dir=?X2 style=?String onmousedown=?String
+        onmousemove=?String onmouseover=?String title=?String
+        onmouseout=?String onkeydown=?String ondblclick=?String } and
+  X23 = [ X15+ |
+        <area href=?String xml:lang=?String lang=?String class=?String
+        coords=?String onmouseup=?String onclick=?String onkeyup=?String
+        onblur=?String shape=?X16 onkeypress=?String id=?String alt=String
+        dir=?X2 style=?String onmousedown=?String accesskey=?String
+        onfocus=?String onmousemove=?String onmouseover=?String title=?String
+        tabindex=?String onmouseout=?String nohref=?[ 'nohref' ]
+        onkeydown=?String ondblclick=?String>[  ]+ ] and
+  X24 = { xml:lang=?String lang=?String class=?String onmouseup=?String
+        onclick=?String onkeyup=?String onkeypress=?String id=?String 
+        dir=X2 style=?String onmousedown=?String onmousemove=?String
+        onmouseover=?String title=?String onmouseout=?String
+        onkeydown=?String ondblclick=?String } and
+  X25 = { class=?String id=?String style=?String title=?String } and
+  X26 = { onsubmit=?String xml:lang=?String lang=?String class=?String
+        onmouseup=?String onclick=?String onkeyup=?String onreset=?String
+        onkeypress=?String id=?String dir=?X2 style=?String
+        onmousedown=?String method=?[ 'post' | 'get' ] onmousemove=?String
+        accept=?String onmouseover=?String title=?String
+        accept-charset=?String action=String onmouseout=?String
+        enctype=?String onkeydown=?String ondblclick=?String } and
+  X27 = [ (<script (X5)>String | <del (X4)>X3 | <ins (X4)>X3 |
+          <noscript (X1)>X6 | <table (X28)>X29 | <fieldset (X1)>X32 |
+          <address (X1)>X7 | <blockquote (X8)>X6 | <hr (X1)>[  ] |
+          <pre (X1)>X34 | <dl (X1)>X35 | <ol (X1)>X33 | <ul (X1)>X33 |
+          <div (X1)>X3 | <h6 (X1)>X7 | <h5 (X1)>X7 | <h4 (X1)>X7 |
+          <h3 (X1)>X7 | <h2 (X1)>X7 | <h1 (X1)>X7 | <p (X1)>X7)* ] and
+  X28 = { xml:lang=?String lang=?String class=?String width=?String
+        onmouseup=?String onclick=?String onkeyup=?String border=?String
+        cellspacing=?String
+        rules=?[ 'rows' | 'all' | 'none' | 'cols' | 'groups' ]
+        onkeypress=?String id=?String dir=?X2 summary=?String style=?String
+        onmousedown=?String
+        frame=?[ 'above' | 'below' | 'border' | 'box' | 'hsides' |
+               ('l' | 'r') 'hs' | 'vsides' | 'void' ]
+        onmousemove=?String onmouseover=?String title=?String
+        cellpadding=?String onmouseout=?String onkeydown=?String
+        ondblclick=?String } and
+  X29 = [ X42? X43 X44? X41+ | X42? X43 X44? X45+ | X42? X44 X41+ | X42? X44
+        X45+ | X42? X46+ X43 X44? X41+ | X42? X46+ X43 X44? X45+ | X42? 
+        X46+ X44 X41+ | X42? X46+ X44 X45+ | X42? X46+ X41+ | X42? X46+
+        X45+ | X42? X48+ X43 X44? X41+ | X42? X48+ X43 X44? X45+ | X42? 
+        X48+ X44 X41+ | X42? X48+ X44 X45+ | X42? X48+ X41+ | X42? X48+
+        X45+ | X42? X41+ | X42? X45+ ] and
+  X30 = { href=?String xml:lang=?String lang=?String class=?String
+        coords=?String name=?String onmouseup=?String onclick=?String
+        type=?String charset=?String onkeyup=?String onblur=?String
+        shape=?X16 onkeypress=?String id=?String dir=?X2 rel=?String
+        rev=?String style=?String onmousedown=?String accesskey=?String
+        onfocus=?String onmousemove=?String onmouseover=?String title=?String
+        tabindex=?String hreflang=?String onmouseout=?String
+        onkeydown=?String ondblclick=?String } and
+  X31 = [ (<script (X5)>String | <del (X4)>X3 | <ins (X4)>X3 | <sup (X1)>X7 |
+          <sub (X1)>X7 | <acronym (X1)>X7 | <abbr (X1)>X7 | <cite (X1)>X7 |
+          <var (X1)>X7 | <kbd (X1)>X7 | <samp (X1)>X7 | <q (X8)>X7 |
+          <code (X1)>X7 | <dfn (X1)>X7 | <strong (X1)>X7 | <em (X1)>X7 |
+          <small (X1)>X7 | <big (X1)>X7 | <b (X1)>X7 | <i (X1)>X7 |
+          <tt (X1)>X7 | <img (X9)>[  ] | <button (X10)>X11 |
+          <label (X17)>X7 | <textarea (X18)>String | <select (X19)>X20 |
+          <input (X21)>[  ] | <object (X13)>X14 | <map (X22)>X23 |
+          <bdo (X24)>X7 | <span (X1)>X7 | <br (X25)>[  ] | Char)* ] and
+  X32 = [ (<script (X5)>String | <del (X4)>X3 | <ins (X4)>X3 |
+          <noscript (X1)>X6 | <sup (X1)>X7 | <sub (X1)>X7 |
+          <acronym (X1)>X7 | <abbr (X1)>X7 | <cite (X1)>X7 | <var (X1)>X7 |
+          <kbd (X1)>X7 | <samp (X1)>X7 | <q (X8)>X7 | <code (X1)>X7 |
+          <dfn (X1)>X7 | <strong (X1)>X7 | <em (X1)>X7 | <small (X1)>X7 |
+          <big (X1)>X7 | <b (X1)>X7 | <i (X1)>X7 | <tt (X1)>X7 |
+          <img (X9)>[  ] | <button (X10)>X11 | <label (X17)>X7 |
+          <textarea (X18)>String | <select (X19)>X20 | <input (X21)>[  ] |
+          <object (X13)>X14 | <map (X22)>X23 | <bdo (X24)>X7 |
+          <span (X1)>X7 | <br (X25)>[  ] | <a (X30)>X31 | <form (X26)>X27 |
+          <table (X28)>X29 | <fieldset (X1)>X32 | <address (X1)>X7 |
+          <blockquote (X8)>X6 | <hr (X1)>[  ] | <pre (X1)>X34 |
+          <dl (X1)>X35 | <ol (X1)>X33 | <ul (X1)>X33 | <div (X1)>X3 |
+          <h6 (X1)>X7 | <h5 (X1)>X7 | <h4 (X1)>X7 | <h3 (X1)>X7 |
+          <h2 (X1)>X7 | <h1 (X1)>X7 | <p (X1)>X7 | <legend xml:lang=?String
+          lang=?String class=?String onmouseup=?String onclick=?String
+          onkeyup=?String onkeypress=?String id=?String dir=?X2 style=?String
+          onmousedown=?String accesskey=?String onmousemove=?String
+          onmouseover=?String title=?String onmouseout=?String
+          onkeydown=?String ondblclick=?String>X7 | Char)* ] and
+  X33 = [ <li (X1)>X3+ ] and
+  X34 = [ (<script (X5)>String | <del (X4)>X3 | <ins (X4)>X3 | <sup (X1)>X7 |
+          <sub (X1)>X7 | <acronym (X1)>X7 | <abbr (X1)>X7 | <cite (X1)>X7 |
+          <var (X1)>X7 | <kbd (X1)>X7 | <samp (X1)>X7 | <q (X8)>X7 |
+          <code (X1)>X7 | <dfn (X1)>X7 | <strong (X1)>X7 | <em (X1)>X7 |
+          <small (X1)>X7 | <big (X1)>X7 | <b (X1)>X7 | <i (X1)>X7 |
+          <tt (X1)>X7 | <button (X10)>X11 | <label (X17)>X7 |
+          <textarea (X18)>String | <select (X19)>X20 | <input (X21)>[  ] |
+          <map (X22)>X23 | <bdo (X24)>X7 | <span (X1)>X7 | <br (X25)>
+          [  ] | <a (X30)>X31 | Char)* ] and
+  X35 = [ (<dd (X1)>X3 | <dt (X1)>X7)+ ] and
+  X36 = { char=?String xml:lang=?String lang=?String class=?String
+        onmouseup=?String onclick=?String charoff=?String valign=?X37
+        onkeyup=?String onkeypress=?String id=?String dir=?X2 style=?String
+        onmousedown=?String onmousemove=?String onmouseover=?String
+        title=?String align=?X38 onmouseout=?String onkeydown=?String
+        ondblclick=?String } and
+  X37 = [ 'top' | 'middle' | 'baseline' | 'bottom' ] and
+  X38 = [ 'right' | 'left' | 'center' | 'char' | 'justify' ] and
+  X39 = { abbr=?String axis=?String char=?String xml:lang=?String
+        lang=?String class=?String onmouseup=?String onclick=?String
+        charoff=?String valign=?X37 onkeyup=?String headers=?String
+        colspan=?String scope=?[ 'row' | 'rowgroup' | 'col' | 'colgroup' ]
+        onkeypress=?String id=?String dir=?X2 style=?String
+        onmousedown=?String onmousemove=?String onmouseover=?String
+        title=?String align=?X38 onmouseout=?String rowspan=?String
+        onkeydown=?String ondblclick=?String } and
+  X40 = [ X41+ ] and
+  X41 = <tr (X36)>[ (<td (X39)>X3 | <th (X39)>X3)+ ] and
+  X42 = <caption (X1)>X7 and
+  X43 = <thead (X36)>X40 and
+  X44 = <tfoot (X36)>X40 and
+  X45 = <tbody (X36)>X40 and
+  X46 = <col (X47)>[  ] and
+  X47 = { char=?String xml:lang=?String lang=?String class=?String
+        width=?String onmouseup=?String onclick=?String span=?String
+        charoff=?String valign=?X37 onkeyup=?String onkeypress=?String
+        id=?String dir=?X2 style=?String onmousedown=?String
+        onmousemove=?String onmouseover=?String title=?String align=?X38
+        onmouseout=?String onkeydown=?String ondblclick=?String } and
+  X48 = <colgroup (X47)>[ X46* ]}}
+  val hierarchical_menu_breadth_first :
+    ?classe:string list ->
+    ?id:string ->
+    ([< Eliom_services.get_service_kind ] as 'a,
+     [< Eliom_services.registrable ] as 'b,
+     'c Eliom_duce.Blocks.a_content_elt_list)
+    Eliom_tools_common.hierarchical_site ->
+    ?service:('a, 'b) Eliom_tools_common.one_page ->
+    unit ->
+    {{[ <ul (X1)>X33* ] where
+  X1 = { xml:lang=?String lang=?String class=?String onmouseup=?String
+       onclick=?String onkeyup=?String onkeypress=?String id=?String 
+       dir=?X2 style=?String onmousedown=?String onmousemove=?String
+       onmouseover=?String title=?String onmouseout=?String onkeydown=?String
+       ondblclick=?String } and
+  X2 = [ 'rtl' | 'ltr' ] and
+  X3 = [ (<script (X5)>String | <del (X4)>X3 | <ins (X4)>X3 |
+         <noscript (X1)>X6 | <sup (X1)>X7 | <sub (X1)>X7 | <acronym (X1)>X7 |
+         <abbr (X1)>X7 | <cite (X1)>X7 | <var (X1)>X7 | <kbd (X1)>X7 |
+         <samp (X1)>X7 | <q (X8)>X7 | <code (X1)>X7 | <dfn (X1)>X7 |
+         <strong (X1)>X7 | <em (X1)>X7 | <small (X1)>X7 | <big (X1)>X7 |
+         <b (X1)>X7 | <i (X1)>X7 | <tt (X1)>X7 | <img (X9)>[  ] |
+         <button (X10)>X11 | <label (X17)>X7 | <textarea (X18)>String |
+         <select (X19)>X20 | <input (X21)>[  ] | <object (X13)>X14 |
+         <map (X22)>X23 | <bdo (X24)>X7 | <span (X1)>X7 | <br (X25)>[  ] |
+         <a (X30)>X31 | <form (X26)>X27 | <table (X28)>X29 |
+         <fieldset (X1)>X32 | <address (X1)>X7 | <blockquote (X8)>X6 |
+         <hr (X1)>[  ] | <pre (X1)>X34 | <dl (X1)>X35 | <ol (X1)>X33 |
+         <ul (X1)>X33 | <div (X1)>X3 | <h6 (X1)>X7 | <h5 (X1)>X7 |
+         <h4 (X1)>X7 | <h3 (X1)>X7 | <h2 (X1)>X7 | <h1 (X1)>X7 | <p (X1)>X7 |
+         Char)* ] and
+  X4 = { cite=?String xml:lang=?String lang=?String class=?String
+       onmouseup=?String onclick=?String onkeyup=?String datetime=?String
+       onkeypress=?String id=?String dir=?X2 style=?String
+       onmousedown=?String onmousemove=?String onmouseover=?String
+       title=?String onmouseout=?String onkeydown=?String
+       ondblclick=?String } and
+  X5 = { type=String charset=?String defer=?[ 'defer' ] id=?String
+       src=?String } and
+  X6 = [ X15* ] and
+  X7 = [ (<script (X5)>String | <del (X4)>X3 | <ins (X4)>X3 | <sup (X1)>X7 |
+         <sub (X1)>X7 | <acronym (X1)>X7 | <abbr (X1)>X7 | <cite (X1)>X7 |
+         <var (X1)>X7 | <kbd (X1)>X7 | <samp (X1)>X7 | <q (X8)>X7 |
+         <code (X1)>X7 | <dfn (X1)>X7 | <strong (X1)>X7 | <em (X1)>X7 |
+         <small (X1)>X7 | <big (X1)>X7 | <b (X1)>X7 | <i (X1)>X7 |
+         <tt (X1)>X7 | <img (X9)>[  ] | <button (X10)>X11 | <label (X17)>X7 |
+         <textarea (X18)>String | <select (X19)>X20 | <input (X21)>[  ] |
+         <object (X13)>X14 | <map (X22)>X23 | <bdo (X24)>X7 | <span (X1)>X7 |
+         <br (X25)>[  ] | <a (X30)>X31 | Char)* ] and
+  X8 = { cite=?String xml:lang=?String lang=?String class=?String
+       onmouseup=?String onclick=?String onkeyup=?String onkeypress=?String
+       id=?String dir=?X2 style=?String onmousedown=?String
+       onmousemove=?String onmouseover=?String title=?String
+       onmouseout=?String onkeydown=?String ondblclick=?String } and
+  X9 = { ismap=?[ 'ismap' ] usemap=?String xml:lang=?String lang=?String
+       class=?String width=?String onmouseup=?String onclick=?String
+       onkeyup=?String onkeypress=?String id=?String alt=String dir=?X2
+       src=String height=?String style=?String onmousedown=?String
+       onmousemove=?String onmouseover=?String title=?String
+       onmouseout=?String longdesc=?String onkeydown=?String
+       ondblclick=?String } and
+  X10 = { xml:lang=?String lang=?String class=?String name=?String
+        onmouseup=?String onclick=?String
+        type=?[ 'reset' | 'submit' | 'button' ] onkeyup=?String
+        onblur=?String disabled=?[ 'disabled' ] onkeypress=?String id=?String
+        dir=?X2 style=?String onmousedown=?String accesskey=?String
+        onfocus=?String onmousemove=?String onmouseover=?String title=?String
+        tabindex=?String onmouseout=?String value=?String onkeydown=?String
+        ondblclick=?String } and
+  X11 = [ (<script (X5)>String | <del (X4)>X3 | <ins (X4)>X3 |
+          <noscript (X1)>X6 | <sup (X1)>X7 | <sub (X1)>X7 |
+          <acronym (X1)>X7 | <abbr (X1)>X7 | <cite (X1)>X7 | <var (X1)>X7 |
+          <kbd (X1)>X7 | <samp (X1)>X7 | <q (X8)>X7 | <code (X1)>X7 |
+          <dfn (X1)>X7 | <strong (X1)>X7 | <em (X1)>X7 | <small (X1)>X7 |
+          <big (X1)>X7 | <b (X1)>X7 | <i (X1)>X7 | <tt (X1)>X7 |
+          <img (X9)>[  ] | <object (X13)>X14 | <map (X22)>X23 |
+          <bdo (X24)>X7 | <span (X1)>X7 | <br (X25)>[  ] | <table (X28)>X29 |
+          <address (X1)>X7 | <blockquote (X8)>X6 | <hr (X1)>[  ] |
+          <pre (X1)>X34 | <dl (X1)>X35 | <ol (X1)>X33 | <ul (X1)>X33 |
+          <div (X1)>X3 | <h6 (X1)>X7 | <h5 (X1)>X7 | <h4 (X1)>X7 |
+          <h3 (X1)>X7 | <h2 (X1)>X7 | <h1 (X1)>X7 | <p (X1)>X7 | Char)* ] and
+  X12 = { xml:lang=?String lang=?String class=?String onmouseup=?String
+        onclick=?String onkeyup=?String label=?String
+        disabled=?[ 'disabled' ] onkeypress=?String id=?String dir=?X2
+        style=?String onmousedown=?String onmousemove=?String
+        onmouseover=?String title=?String onmouseout=?String
+        selected=?[ 'selected' ] value=?String onkeydown=?String
+        ondblclick=?String } and
+  X13 = { usemap=?String data=?String xml:lang=?String lang=?String
+        class=?String name=?String width=?String onmouseup=?String
+        onclick=?String type=?String onkeyup=?String declare=?[ 'declare' ]
+        classid=?String onkeypress=?String id=?String dir=?X2 height=?String
+        style=?String onmousedown=?String onmousemove=?String
+        codebase=?String onmouseover=?String title=?String codetype=?String
+        tabindex=?String archive=?String onmouseout=?String standby=?String
+        onkeydown=?String ondblclick=?String } and
+  X14 = [ (<script (X5)>String | <del (X4)>X3 | <ins (X4)>X3 |
+          <noscript (X1)>X6 | <sup (X1)>X7 | <sub (X1)>X7 |
+          <acronym (X1)>X7 | <abbr (X1)>X7 | <cite (X1)>X7 | <var (X1)>X7 |
+          <kbd (X1)>X7 | <samp (X1)>X7 | <q (X8)>X7 | <code (X1)>X7 |
+          <dfn (X1)>X7 | <strong (X1)>X7 | <em (X1)>X7 | <small (X1)>X7 |
+          <big (X1)>X7 | <b (X1)>X7 | <i (X1)>X7 | <tt (X1)>X7 |
+          <img (X9)>[  ] | <button (X10)>X11 | <label (X17)>X7 |
+          <textarea (X18)>String | <select (X19)>X20 | <input (X21)>[  ] |
+          <object (X13)>X14 | <map (X22)>X23 | <bdo (X24)>X7 |
+          <span (X1)>X7 | <br (X25)>[  ] | <a (X30)>X31 | <form (X26)>X27 |
+          <table (X28)>X29 | <fieldset (X1)>X32 | <address (X1)>X7 |
+          <blockquote (X8)>X6 | <hr (X1)>[  ] | <pre (X1)>X34 |
+          <dl (X1)>X35 | <ol (X1)>X33 | <ul (X1)>X33 | <div (X1)>X3 |
+          <h6 (X1)>X7 | <h5 (X1)>X7 | <h4 (X1)>X7 | <h3 (X1)>X7 |
+          <h2 (X1)>X7 | <h1 (X1)>X7 | <p (X1)>X7 | <param name=?String
+          type=?String id=?String valuetype=?[ 'data' | 'ref' | 'object' ]
+          value=?String>[  ] | Char)* ] and
+  X15 = <script (X5)>String | <del (X4)>X3 | <ins (X4)>X3 |
+        <noscript (X1)>X6 | <form (X26)>X27 | <table (X28)>X29 |
+        <fieldset (X1)>X32 | <address (X1)>X7 | <blockquote (X8)>X6 |
+        <hr (X1)>[  ] | <pre (X1)>X34 | <dl (X1)>X35 | <ol (X1)>X33 |
+        <ul (X1)>X33 | <div (X1)>X3 | <h6 (X1)>X7 | <h5 (X1)>X7 |
+        <h4 (X1)>X7 | <h3 (X1)>X7 | <h2 (X1)>X7 | <h1 (X1)>X7 | <p (X1)>X7 and
+  X16 = [ 'default' | 'rect' | 'poly' | 'circle' ] and
+  X17 = { xml:lang=?String lang=?String class=?String onmouseup=?String
+        onclick=?String onkeyup=?String onblur=?String onkeypress=?String
+        id=?String dir=?X2 for=?String style=?String onmousedown=?String
+        accesskey=?String onfocus=?String onmousemove=?String
+        onmouseover=?String title=?String onmouseout=?String
+        onkeydown=?String ondblclick=?String } and
+  X18 = { cols=String xml:lang=?String lang=?String class=?String
+        name=?String onmouseup=?String onclick=?String rows=String
+        onkeyup=?String onchange=?String onblur=?String
+        disabled=?[ 'disabled' ] onkeypress=?String id=?String dir=?X2
+        style=?String onmousedown=?String accesskey=?String
+        readonly=?[ 'readonly' ] onfocus=?String onmousemove=?String
+        onmouseover=?String title=?String onselect=?String tabindex=?String
+        onmouseout=?String onkeydown=?String ondblclick=?String } and
+  X19 = { xml:lang=?String lang=?String class=?String name=?String
+        onmouseup=?String onclick=?String size=?String onkeyup=?String
+        onchange=?String onblur=?String disabled=?[ 'disabled' ]
+        onkeypress=?String id=?String dir=?X2 style=?String
+        onmousedown=?String onfocus=?String onmousemove=?String
+        onmouseover=?String title=?String tabindex=?String
+        multiple=?[ 'multiple' ] onmouseout=?String onkeydown=?String
+        ondblclick=?String } and
+  X20 = [ (<option (X12)>String | <optgroup xml:lang=?String lang=?String
+          class=?String onmouseup=?String onclick=?String onkeyup=?String
+          label=String disabled=?[ 'disabled' ] onkeypress=?String id=?String
+          dir=?X2 style=?String onmousedown=?String onmousemove=?String
+          onmouseover=?String title=?String onmouseout=?String
+          onkeydown=?String ondblclick=?String>[ <option (X12)>String+ ])+ ] and
+  X21 = { usemap=?String xml:lang=?String lang=?String class=?String
+        name=?String onmouseup=?String onclick=?String size=?String
+        type=?[ 'file' | 'reset' | 'radio' | 'text' | 'image' | 'submit' |
+              'password' | 'button' | 'checkbox' | 'hidden' ]
+        onkeyup=?String onchange=?String onblur=?String
+        disabled=?[ 'disabled' ] onkeypress=?String id=?String alt=?String
+        dir=?X2 src=?String style=?String onmousedown=?String
+        accesskey=?String readonly=?[ 'readonly' ] onfocus=?String
+        onmousemove=?String accept=?String onmouseover=?String title=?String
+        checked=?[ 'checked' ] onselect=?String tabindex=?String
+        maxlength=?String onmouseout=?String value=?String onkeydown=?String
+        ondblclick=?String } and
+  X22 = { xml:lang=?String lang=?String class=?String name=?String
+        onmouseup=?String onclick=?String onkeyup=?String onkeypress=?String
+        id=String dir=?X2 style=?String onmousedown=?String
+        onmousemove=?String onmouseover=?String title=?String
+        onmouseout=?String onkeydown=?String ondblclick=?String } and
+  X23 = [ X15+ |
+        <area href=?String xml:lang=?String lang=?String class=?String
+        coords=?String onmouseup=?String onclick=?String onkeyup=?String
+        onblur=?String shape=?X16 onkeypress=?String id=?String alt=String
+        dir=?X2 style=?String onmousedown=?String accesskey=?String
+        onfocus=?String onmousemove=?String onmouseover=?String title=?String
+        tabindex=?String onmouseout=?String nohref=?[ 'nohref' ]
+        onkeydown=?String ondblclick=?String>[  ]+ ] and
+  X24 = { xml:lang=?String lang=?String class=?String onmouseup=?String
+        onclick=?String onkeyup=?String onkeypress=?String id=?String 
+        dir=X2 style=?String onmousedown=?String onmousemove=?String
+        onmouseover=?String title=?String onmouseout=?String
+        onkeydown=?String ondblclick=?String } and
+  X25 = { class=?String id=?String style=?String title=?String } and
+  X26 = { onsubmit=?String xml:lang=?String lang=?String class=?String
+        onmouseup=?String onclick=?String onkeyup=?String onreset=?String
+        onkeypress=?String id=?String dir=?X2 style=?String
+        onmousedown=?String method=?[ 'post' | 'get' ] onmousemove=?String
+        accept=?String onmouseover=?String title=?String
+        accept-charset=?String action=String onmouseout=?String
+        enctype=?String onkeydown=?String ondblclick=?String } and
+  X27 = [ (<script (X5)>String | <del (X4)>X3 | <ins (X4)>X3 |
+          <noscript (X1)>X6 | <table (X28)>X29 | <fieldset (X1)>X32 |
+          <address (X1)>X7 | <blockquote (X8)>X6 | <hr (X1)>[  ] |
+          <pre (X1)>X34 | <dl (X1)>X35 | <ol (X1)>X33 | <ul (X1)>X33 |
+          <div (X1)>X3 | <h6 (X1)>X7 | <h5 (X1)>X7 | <h4 (X1)>X7 |
+          <h3 (X1)>X7 | <h2 (X1)>X7 | <h1 (X1)>X7 | <p (X1)>X7)* ] and
+  X28 = { xml:lang=?String lang=?String class=?String width=?String
+        onmouseup=?String onclick=?String onkeyup=?String border=?String
+        cellspacing=?String
+        rules=?[ 'rows' | 'all' | 'none' | 'cols' | 'groups' ]
+        onkeypress=?String id=?String dir=?X2 summary=?String style=?String
+        onmousedown=?String
+        frame=?[ 'above' | 'below' | 'border' | 'box' | 'hsides' |
+               ('l' | 'r') 'hs' | 'vsides' | 'void' ]
+        onmousemove=?String onmouseover=?String title=?String
+        cellpadding=?String onmouseout=?String onkeydown=?String
+        ondblclick=?String } and
+  X29 = [ X42? X43 X44? X41+ | X42? X43 X44? X45+ | X42? X44 X41+ | X42? X44
+        X45+ | X42? X46+ X43 X44? X41+ | X42? X46+ X43 X44? X45+ | X42? 
+        X46+ X44 X41+ | X42? X46+ X44 X45+ | X42? X46+ X41+ | X42? X46+
+        X45+ | X42? X48+ X43 X44? X41+ | X42? X48+ X43 X44? X45+ | X42? 
+        X48+ X44 X41+ | X42? X48+ X44 X45+ | X42? X48+ X41+ | X42? X48+
+        X45+ | X42? X41+ | X42? X45+ ] and
+  X30 = { href=?String xml:lang=?String lang=?String class=?String
+        coords=?String name=?String onmouseup=?String onclick=?String
+        type=?String charset=?String onkeyup=?String onblur=?String
+        shape=?X16 onkeypress=?String id=?String dir=?X2 rel=?String
+        rev=?String style=?String onmousedown=?String accesskey=?String
+        onfocus=?String onmousemove=?String onmouseover=?String title=?String
+        tabindex=?String hreflang=?String onmouseout=?String
+        onkeydown=?String ondblclick=?String } and
+  X31 = [ (<script (X5)>String | <del (X4)>X3 | <ins (X4)>X3 | <sup (X1)>X7 |
+          <sub (X1)>X7 | <acronym (X1)>X7 | <abbr (X1)>X7 | <cite (X1)>X7 |
+          <var (X1)>X7 | <kbd (X1)>X7 | <samp (X1)>X7 | <q (X8)>X7 |
+          <code (X1)>X7 | <dfn (X1)>X7 | <strong (X1)>X7 | <em (X1)>X7 |
+          <small (X1)>X7 | <big (X1)>X7 | <b (X1)>X7 | <i (X1)>X7 |
+          <tt (X1)>X7 | <img (X9)>[  ] | <button (X10)>X11 |
+          <label (X17)>X7 | <textarea (X18)>String | <select (X19)>X20 |
+          <input (X21)>[  ] | <object (X13)>X14 | <map (X22)>X23 |
+          <bdo (X24)>X7 | <span (X1)>X7 | <br (X25)>[  ] | Char)* ] and
+  X32 = [ (<script (X5)>String | <del (X4)>X3 | <ins (X4)>X3 |
+          <noscript (X1)>X6 | <sup (X1)>X7 | <sub (X1)>X7 |
+          <acronym (X1)>X7 | <abbr (X1)>X7 | <cite (X1)>X7 | <var (X1)>X7 |
+          <kbd (X1)>X7 | <samp (X1)>X7 | <q (X8)>X7 | <code (X1)>X7 |
+          <dfn (X1)>X7 | <strong (X1)>X7 | <em (X1)>X7 | <small (X1)>X7 |
+          <big (X1)>X7 | <b (X1)>X7 | <i (X1)>X7 | <tt (X1)>X7 |
+          <img (X9)>[  ] | <button (X10)>X11 | <label (X17)>X7 |
+          <textarea (X18)>String | <select (X19)>X20 | <input (X21)>[  ] |
+          <object (X13)>X14 | <map (X22)>X23 | <bdo (X24)>X7 |
+          <span (X1)>X7 | <br (X25)>[  ] | <a (X30)>X31 | <form (X26)>X27 |
+          <table (X28)>X29 | <fieldset (X1)>X32 | <address (X1)>X7 |
+          <blockquote (X8)>X6 | <hr (X1)>[  ] | <pre (X1)>X34 |
+          <dl (X1)>X35 | <ol (X1)>X33 | <ul (X1)>X33 | <div (X1)>X3 |
+          <h6 (X1)>X7 | <h5 (X1)>X7 | <h4 (X1)>X7 | <h3 (X1)>X7 |
+          <h2 (X1)>X7 | <h1 (X1)>X7 | <p (X1)>X7 | <legend xml:lang=?String
+          lang=?String class=?String onmouseup=?String onclick=?String
+          onkeyup=?String onkeypress=?String id=?String dir=?X2 style=?String
+          onmousedown=?String accesskey=?String onmousemove=?String
+          onmouseover=?String title=?String onmouseout=?String
+          onkeydown=?String ondblclick=?String>X7 | Char)* ] and
+  X33 = [ <li (X1)>X3+ ] and
+  X34 = [ (<script (X5)>String | <del (X4)>X3 | <ins (X4)>X3 | <sup (X1)>X7 |
+          <sub (X1)>X7 | <acronym (X1)>X7 | <abbr (X1)>X7 | <cite (X1)>X7 |
+          <var (X1)>X7 | <kbd (X1)>X7 | <samp (X1)>X7 | <q (X8)>X7 |
+          <code (X1)>X7 | <dfn (X1)>X7 | <strong (X1)>X7 | <em (X1)>X7 |
+          <small (X1)>X7 | <big (X1)>X7 | <b (X1)>X7 | <i (X1)>X7 |
+          <tt (X1)>X7 | <button (X10)>X11 | <label (X17)>X7 |
+          <textarea (X18)>String | <select (X19)>X20 | <input (X21)>[  ] |
+          <map (X22)>X23 | <bdo (X24)>X7 | <span (X1)>X7 | <br (X25)>
+          [  ] | <a (X30)>X31 | Char)* ] and
+  X35 = [ (<dd (X1)>X3 | <dt (X1)>X7)+ ] and
+  X36 = { char=?String xml:lang=?String lang=?String class=?String
+        onmouseup=?String onclick=?String charoff=?String valign=?X37
+        onkeyup=?String onkeypress=?String id=?String dir=?X2 style=?String
+        onmousedown=?String onmousemove=?String onmouseover=?String
+        title=?String align=?X38 onmouseout=?String onkeydown=?String
+        ondblclick=?String } and
+  X37 = [ 'top' | 'middle' | 'baseline' | 'bottom' ] and
+  X38 = [ 'right' | 'left' | 'center' | 'char' | 'justify' ] and
+  X39 = { abbr=?String axis=?String char=?String xml:lang=?String
+        lang=?String class=?String onmouseup=?String onclick=?String
+        charoff=?String valign=?X37 onkeyup=?String headers=?String
+        colspan=?String scope=?[ 'row' | 'rowgroup' | 'col' | 'colgroup' ]
+        onkeypress=?String id=?String dir=?X2 style=?String
+        onmousedown=?String onmousemove=?String onmouseover=?String
+        title=?String align=?X38 onmouseout=?String rowspan=?String
+        onkeydown=?String ondblclick=?String } and
+  X40 = [ X41+ ] and
+  X41 = <tr (X36)>[ (<td (X39)>X3 | <th (X39)>X3)+ ] and
+  X42 = <caption (X1)>X7 and
+  X43 = <thead (X36)>X40 and
+  X44 = <tfoot (X36)>X40 and
+  X45 = <tbody (X36)>X40 and
+  X46 = <col (X47)>[  ] and
+  X47 = { char=?String xml:lang=?String lang=?String class=?String
+        width=?String onmouseup=?String onclick=?String span=?String
+        charoff=?String valign=?X37 onkeyup=?String onkeypress=?String
+        id=?String dir=?X2 style=?String onmousedown=?String
+        onmousemove=?String onmouseover=?String title=?String align=?X38
+        onmouseout=?String onkeydown=?String ondblclick=?String } and
+  X48 = <colgroup (X47)>[ X46* ]}}
+  val structure_links :
+    ([< Eliom_services.get_service_kind ] as 'a,
+     [< Eliom_services.registrable ] as 'b,
+     'c Eliom_duce.Blocks.a_content_elt_list)
+    Eliom_tools_common.hierarchical_site ->
+    ?service:('a, 'b) Eliom_tools_common.one_page ->
+    unit ->
+    {{[ <link href=?String xml:lang=?String lang=?String class=?String
+    onmouseup=?String onclick=?String type=?String charset=?String
+    onkeyup=?String onkeypress=?String id=?String dir=?[ 'ltr' | 'rtl' ]
+    rel=?String rev=?String style=?String onmousedown=?String media=?String
+    onmousemove=?String onmouseover=?String title=?String hreflang=?String
+    onmouseout=?String onkeydown=?String ondblclick=?String>[  ]* ]}}
+end >>

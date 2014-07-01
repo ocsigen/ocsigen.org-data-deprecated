@@ -1,0 +1,4 @@
+<<code language="ocaml" | sig
+  val path : string list
+  val f : (string * string) list -> unit -> Eliom_output.Any.page Lwt.t
+end >>

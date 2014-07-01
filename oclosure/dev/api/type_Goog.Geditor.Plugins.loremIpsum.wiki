@@ -1,0 +1,31 @@
+<<code language="ocaml" | object
+  method activeOnUneditableFields : bool Js.t Js.meth
+  method addEventListener :
+    Js.js_string Js.t ->
+    (unit -> bool Js.t) Js.callback -> bool Js.t Js.opt -> unit Js.meth
+  method disable : field Js.t -> unit Js.meth
+  method dispatchEvent :
+    (Js.js_string Js.t, Events.event Js.t) Tools.Union.t -> bool Js.t Js.meth
+  method dispose : unit Js.meth
+  method disposeInternal : unit Js.meth
+  method enable : field Js.t -> unit Js.meth
+  method execCommand : Js.js_string Js.t -> bool Js.t -> unit Js.meth
+  method getDisposed : bool Js.t Js.meth
+  method getFieldDomHelper : Gdom.domHelper Js.t Js.opt Js.meth
+  method getParentEventTarget : Events.eventTarget Js.t Js.meth
+  method getTrogClassId : Js.js_string Js.t Js.meth
+  method isAutoDispose : bool Js.t Js.meth
+  method isDisposed : bool Js.t Js.meth
+  method isEnabled : field Js.t -> bool Js.t Js.meth
+  method isSilentCommand : Js.js_string Js.t -> bool Js.t Js.meth
+  method isSupportedCommand : Js.js_string Js.t -> bool Js.t Js.meth
+  method queryCommandValue : Js.js_string Js.t -> bool Js.t Js.meth
+  method registerFieldObject : field Js.t -> unit Js.meth
+  method removeEventListener :
+    Js.js_string Js.t ->
+    (unit -> bool Js.t) Js.callback -> bool Js.t Js.opt -> unit Js.meth
+  method setAutoDispose : bool Js.t -> unit Js.meth
+  method setParentEventTarget :
+    Events.eventTarget Js.t Js.opt -> unit Js.meth
+  method unregisterFieldObject : field Js.t -> unit Js.meth
+end >>

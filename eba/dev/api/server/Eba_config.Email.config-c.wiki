@@ -1,0 +1,9 @@
+=Class type <<a_api_type subproject="server" | class type Eba_config.Email.config >> =
+<<pre class="ocsforge_color odocwiki_code"|<<span id="TYPEconfig"|<<span class="ocsforge_color_keyword"|class type>> <<span class="ocsforge_color_name"|config>>>> <<span class="ocsforge_color_delimiter"|~=>> <<span class="ocsforge_color_keyword"|object>><<a_api subproject="server" text=".." | class type Eba_config.Email.config >><<span class="ocsforge_color_keyword"|end>>>>~The config class
+
+----
+<<pre class="ocsforge_color odocwiki_code"|<<span id="METHODfrom_addr"|<<span class="ocsforge_color_keyword"|method>> <<span class="odocwiki_name"|from_addr>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|string * string>>>><<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|from~_addr>> is email address used to send mail
+
+<<span class="odocwiki_inlinecode"|mailer>> corresponds to your binary <<span class="odocwiki_inlinecode"|sendmail>> on your system
+>>
+<<pre class="ocsforge_color odocwiki_code"|<<span id="METHODmailer"|<<span class="ocsforge_color_keyword"|method>> <<span class="odocwiki_name"|mailer>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|string>>>>

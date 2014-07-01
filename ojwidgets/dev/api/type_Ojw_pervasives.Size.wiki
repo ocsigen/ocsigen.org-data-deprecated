@@ -1,0 +1,20 @@
+<<code language="ocaml" | sig
+  val get_full_width :
+    ?with_width:bool ->
+    ?with_padding:bool ->
+    ?with_border:bool -> Dom_html.cssStyleDeclaration Js.t -> int
+  val get_full_height :
+    ?with_height:bool ->
+    ?with_padding:bool ->
+    ?with_border:bool -> Dom_html.cssStyleDeclaration Js.t -> int
+  val width_height : (int * int) React.signal
+  val width : int React.signal
+  val height : int React.signal
+  val set_adaptative_width : Dom_html.element Js.t -> (int -> int) -> unit
+  val set_adaptative_height : Dom_html.element Js.t -> (int -> int) -> unit
+  val height_to_bottom : int -> Dom_html.element Js.t -> int
+  val client_top : Dom_html.element Js.t -> int
+  val client_bottom : Dom_html.element Js.t -> int
+  val client_left : Dom_html.element Js.t -> int
+  val client_right : Dom_html.element Js.t -> int
+end >>

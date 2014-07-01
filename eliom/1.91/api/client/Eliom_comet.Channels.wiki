@@ -1,0 +1,5 @@
+=Module <<a_api_type subproject="client" | module Eliom_comet.Channels >> =
+<<div class="code"|<<span class="keyword"|module>> Channels: <<span class='code'|sig>><<a_api subproject="client" text=".." | module Eliom_comet.Channels >><<span class='code'|end>>>>
+----
+<<div class="code" id="TYPEt"|<<span class="keyword"|type>> <<span class="code type"|'a>> t = <<span class="code type"|'a Lwt_stream.t>> >>
+

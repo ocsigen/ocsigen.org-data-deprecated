@@ -1,0 +1,16 @@
+=Class type <<a_api_type | class type Goog.Geditor.Plugins.emoticons >> =
+<<pre class="ocsforge_color odocwiki_code"|<<span id="TYPEemoticons"|<<span class="ocsforge_color_keyword"|class type>> <<span class="ocsforge_color_name"|emoticons>>>> <<span class="ocsforge_color_delimiter"|~=>> <<span class="ocsforge_color_keyword"|object>><<a_api text=".." | class type Goog.Geditor.Plugins.emoticons >><<span class="ocsforge_color_keyword"|end>>>>**~Inherits**
+* <<a_api | class Goog.Geditor.plugin >>
+
+----
+
+==@@id="2_Insertsanemoticonintotheeditoratthecursorlocation"@@ ~Inserts an emoticon into the editor at the cursor location~. ~Places the
+ cursor to the right of the inserted emoticon~.
+==
+<<pre class="ocsforge_color odocwiki_code"|<<span id="METHODgetTrogClassId"|<<span class="ocsforge_color_keyword"|method>> <<span class="odocwiki_name"|getTrogClassId>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|js_string>> <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>> <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|meth>>>>>><<div class="odocwiki_info"|**Returns** ~The ~I~D unique to this plugin class~. ~Note that different
+     instances off the plugin share the same class~Id~.\\
+>>
+<<pre class="ocsforge_color odocwiki_code"|<<span id="METHODisSupportedCommand"|<<span class="ocsforge_color_keyword"|method>> <<span class="odocwiki_name"|isSupportedCommand>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|js_string>> <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>> <<span class="ocsforge_color_delimiter"| -> >> bool <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>> <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|meth>>>>>><<div class="odocwiki_info"| ~Whether the string corresponds to a command this plugin handles~.
+
+**Returns** ~Whether the plugin handles this type of command~.\\
+>>

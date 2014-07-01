@@ -1,0 +1,1 @@
+<<code language="ocaml" | sig type t = NOT_CHECKED | PARTIALLY_CHECKED | FULLY_CHECKED end >>

@@ -1,0 +1,5 @@
+=Module <<a_api_type subproject="client" | module Eliom_react.Down >> =
+<<div class="code"|<<span class="keyword"|module>> Down: <<span class='code'|sig>><<a_api subproject="client" text=".." | module Eliom_react.Down >><<span class='code'|end>>>>
+----
+<<div class="code" id="TYPEt"|<<span class="keyword"|type>> <<span class="code type"|'a>> t = <<span class="code type"|'a React.E.t>> >>
+

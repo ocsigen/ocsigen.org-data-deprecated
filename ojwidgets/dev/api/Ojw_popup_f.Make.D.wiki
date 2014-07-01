@@ -1,0 +1,3 @@
+=Module <<a_api_type | module Ojw_popup_f.Make.D >> =
+<<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module>> <<span class="ocsforge_color_uid"|<<span class="ocsforge_color_uid"|D>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|D>>>>
+----

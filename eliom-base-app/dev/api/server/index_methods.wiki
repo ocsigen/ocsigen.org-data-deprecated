@@ -1,0 +1,77 @@
+=Index of class methods=
+
+|@@ @style="tet-align: left;"@@\\C|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="clear"| method Eba_sigs.Reqm.reqm#clear >> ~[<<a_api subproject="server" | module Eba_sigs.Reqm >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="clear"| method Eba_reqm.reqm#clear >> ~[<<a_api subproject="server" | module Eba_reqm >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="css"| method Eba_config.Page.config#css >> ~[<<a_api subproject="server" | module Eba_config.Page >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|other~_head>> is a list of custom elements to add in the head section~,
+ it can be used to add "meta" elements~, for example~.
+>>
+|
+|@@ @style="tet-align: left;"@@\\D|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="default_connected_error_page"| method Eba_config.Page.config#default_connected_error_page >> ~[<<a_api subproject="server" | module Eba_config.Page >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|default~_predicate>> ~See ~N~O~T~E ~(above~)
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="default_connected_predicate"| method Eba_config.Page.config#default_connected_predicate >> ~[<<a_api subproject="server" | module Eba_config.Page >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="default_error_page"| method Eba_config.Page.config#default_error_page >> ~[<<a_api subproject="server" | module Eba_config.Page >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|default~_connected~_error~_page>> ~See ~N~O~T~E ~(above~)
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="default_predicate"| method Eba_config.Page.config#default_predicate >> ~[<<a_api subproject="server" | module Eba_config.Page >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|default~_connected~_error~_page>> ~See ~N~O~T~E ~(above~)
+>>
+|
+|@@ @style="tet-align: left;"@@\\F|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="from_addr"| method Eba_config.Email.config#from_addr >> ~[<<a_api subproject="server" | module Eba_config.Email >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|from~_addr>> is email address used to send mail
+>>
+|
+|@@ @style="tet-align: left;"@@\\G|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="get"| method Eba_sigs.Reqm.reqm#get >> ~[<<a_api subproject="server" | module Eba_sigs.Reqm >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="get"| method Eba_reqm.reqm#get >> ~[<<a_api subproject="server" | module Eba_reqm >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="get_opt"| method Eba_sigs.Reqm.reqm#get_opt >> ~[<<a_api subproject="server" | module Eba_sigs.Reqm >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="get_opt"| method Eba_reqm.reqm#get_opt >> ~[<<a_api subproject="server" | module Eba_reqm >>~]||
+|@@ @style="tet-align: left;"@@\\H|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="has"| method Eba_sigs.Reqm.reqm#has >> ~[<<a_api subproject="server" | module Eba_sigs.Reqm >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="has"| method Eba_reqm.reqm#has >> ~[<<a_api subproject="server" | module Eba_reqm >>~]||
+|@@ @style="tet-align: left;"@@\\J|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="js"| method Eba_config.Page.config#js >> ~[<<a_api subproject="server" | module Eba_config.Page >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|css>> ~(same as <<span class="odocwiki_inlinecode"|js>> but for style files~)~, it will automatically prepend
+ the suffix "css~/" as directory~.
+>>
+|
+|@@ @style="tet-align: left;"@@\\M|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="mailer"| method Eba_config.Email.config#mailer >> ~[<<a_api subproject="server" | module Eba_config.Email >>~]||
+|@@ @style="tet-align: left;"@@\\O|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="on_close_session"| method Eba_config.Session.config#on_close_session >> ~[<<a_api subproject="server" | module Eba_config.Session >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|on~_start~_process>> is called when a new process is executed ~(a
+ process corresponds to a tab into your browser~)
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="on_connected_request"| method Eba_config.Session.config#on_connected_request >> ~[<<a_api subproject="server" | module Eba_config.Session >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|on~_open~_session>> is called when a user connects
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="on_denied_request"| method Eba_config.Session.config#on_denied_request >> ~[<<a_api subproject="server" | module Eba_config.Session >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|on~_connected~_request>> is called during each connected requests
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="on_open_session"| method Eba_config.Session.config#on_open_session >> ~[<<a_api subproject="server" | module Eba_config.Session >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|on~_close~_session>> is called when a user disconnects
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="on_request"| method Eba_config.Session.config#on_request >> ~[<<a_api subproject="server" | module Eba_config.Session >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|on~_request>> is called during each requests
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="on_start_connected_process"| method Eba_config.Session.config#on_start_connected_process >> ~[<<a_api subproject="server" | module Eba_config.Session >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="on_start_process"| method Eba_config.Session.config#on_start_process >> ~[<<a_api subproject="server" | module Eba_config.Session >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|on~_start~_connected~_process>> is the same as above~, but it is only
+ called when a user is connected
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="other_head"| method Eba_config.Page.config#other_head >> ~[<<a_api subproject="server" | module Eba_config.Page >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|default~_error~_page>> ~See ~N~O~T~E ~(above~)
+>>
+|
+|@@ @style="tet-align: left;"@@\\S|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="set"| method Eba_sigs.Reqm.reqm#set >> ~[<<a_api subproject="server" | module Eba_sigs.Reqm >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="set"| method Eba_reqm.reqm#set >> ~[<<a_api subproject="server" | module Eba_reqm >>~]||
+|@@ @style="tet-align: left;"@@\\T|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="title"| method Eba_config.Page.config#title >> ~[<<a_api subproject="server" | module Eba_config.Page >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|title>> corresponds to the html tag ~<title~>~, it will be inserted on all
+ your pages~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="to_html"| method Eba_sigs.Reqm.reqm#to_html >> ~[<<a_api subproject="server" | module Eba_sigs.Reqm >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="to_html"| method Eba_sigs.Reqm.reqm_base#to_html >> ~[<<a_api subproject="server" | module Eba_sigs.Reqm >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="to_html"| method Eba_reqm.reqm#to_html >> ~[<<a_api subproject="server" | module Eba_reqm >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="to_html"| method Eba_reqm.reqm_base#to_html >> ~[<<a_api subproject="server" | module Eba_reqm >>~]||
+\\

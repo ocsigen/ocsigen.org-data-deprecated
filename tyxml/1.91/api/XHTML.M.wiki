@@ -1,0 +1,4 @@
+=Module <<a_api_type | module XHTML.M >> =
+<<div class="code"|<<span class="keyword"|module>> M: <<span class="code type"|<<a_api text="T" | module XHTML.T >>>><<span class="code type"|{{{  }}}>>>>~Concrete implementation of ~X~H~T~M~L typesafe constructors\\
+
+----

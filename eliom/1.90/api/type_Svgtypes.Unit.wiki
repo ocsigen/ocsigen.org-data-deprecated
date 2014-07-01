@@ -1,0 +1,29 @@
+<<code language="ocaml" | sig
+  type 'a quantity = float * 'a option
+  type angle = [ `Deg | `Grad | `Rad ] Svgtypes.Unit.quantity
+  type length =
+      [ `Cm | `Em | `Ex | `In | `Mm | `Pc | `Percent | `Pt | `Px ]
+      Svgtypes.Unit.quantity
+  type time = [ `Ms | `S ] Svgtypes.Unit.quantity
+  type frequency = [ `Hz | `KHz ] Svgtypes.Unit.quantity
+  val rel : float -> 'a Svgtypes.Unit.quantity
+  val deg : float -> Svgtypes.Unit.angle
+  val grad : float -> Svgtypes.Unit.angle
+  val rad : float -> Svgtypes.Unit.angle
+  val s : float -> Svgtypes.Unit.time
+  val ms : float -> Svgtypes.Unit.time
+  val em : float -> Svgtypes.Unit.length
+  val ex : float -> Svgtypes.Unit.length
+  val px : float -> Svgtypes.Unit.length
+  val in_ : float -> Svgtypes.Unit.length
+  val cm : float -> Svgtypes.Unit.length
+  val mm : float -> Svgtypes.Unit.length
+  val pt : float -> Svgtypes.Unit.length
+  val pc : float -> Svgtypes.Unit.length
+  val hz : float -> Svgtypes.Unit.frequency
+  val khz : float -> Svgtypes.Unit.frequency
+  val string_of_angle : Svgtypes.Unit.angle -> string
+  val string_of_time : Svgtypes.Unit.time -> string
+  val string_of_length : Svgtypes.Unit.length -> string
+  val string_of_freq : Svgtypes.Unit.frequency -> string
+end >>

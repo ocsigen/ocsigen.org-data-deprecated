@@ -1,0 +1,13 @@
+=Functor <<a_api_type | module Eliom_output.Eliom_appl >> =
+<<div class="code"|<<span class="keyword"|module>> Eliom_appl: <<div class="sig_block"|<<span class='code'|functor ~(>><<span class='code'|~Appl~_params>><<span class='code'| ~: >><<span class="code type"|<<a_api text="APPL_PARAMS" | module Eliom_output.APPL_PARAMS >>>><<span class='code'|~) ~-~> >><<span class='code'|sig>><<a_api text=".." | module Eliom_output.Eliom_appl >><<span class='code'|end>>>>>><<div class="module_param_list" | <<span class="param_title" |Parameters :>><<div|
+|@@class="paramstable"@ @class="centertop fifteen code"@@{{{Appl_params}}}|@@class="centertop"@@:|<<span class="code type"|<<a_api text="APPL_PARAMS" | module Eliom_output.APPL_PARAMS >>>>|
+>>
+
+----
+<<div class="code"|<<span class="keyword"|include>> <<a_api | module type Eliom_mkreg.ELIOMREGSIG >>>>
+<<div class="code"|<<span class="keyword"|include>> <<a_api | module type Eliom_output.XHTML5FORMSSIG >>>>
+<<div id="VALapplication_name" class="code"|<<span class="keyword"|val>> application~_name : <<span class="code type"|string>>>><<div class="info"|~Unique identifier for this application~.
+      ~It is the application name~.
+      ~Warning~: do not mix up with the "application instance id"~,
+      that is unique for each instance of the application~.\\
+>>

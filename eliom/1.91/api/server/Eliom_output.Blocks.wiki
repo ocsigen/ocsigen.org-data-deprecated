@@ -1,0 +1,6 @@
+=Module <<a_api_type subproject="server" | module Eliom_output.Blocks >> =
+<<div class="code"|<<span class="keyword"|module>> Blocks: <<span class='code'|sig>><<a_api subproject="server" text=".." | module Eliom_output.Blocks >><<span class='code'|end>>>>~For ~X~H~T~M~L\\
+
+----
+<<div class="code"|<<span class="keyword"|include>> <<a_api subproject="server" | module type Eliom_mkreg.ELIOMREGSIG >>>>
+<<div class="code"|<<span class="keyword"|include>> <<a_api subproject="server" | module type Eliom_output.XHTMLFORMSSIG >>>>

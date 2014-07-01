@@ -1,0 +1,14 @@
+=Module <<a_api_type | module SVG >> =
+<<div class="code"|<<span class="keyword"|module>> SVG: <<span class='code'|sig>><<a_api text=".." | module SVG >><<span class='code'|end>>>>~Type instantiations for ~S~V~G\\
+
+----
+\\
+~This module defines basic data types for data~, attributes
+    and element occuring in ~S~V~G documents~.
+    ~It is based on the specification available at http~:~/~/www~.w~3~.org~/~T~R~/~S~V~G~/~.\\
+
+
+    ~This module is experimental~, it may lack of some attributes~,
+    and the interface is very low level and do not take deeply into account
+    the needs of ~S~V~G elements~.\\
+<<div class="code"|<<span class="keyword"|module>> <<a_api text="M" | module SVG.M >>: <<span class='code'|sig>><<a_api text=".." | module SVG.M >><<span class='code'|end>>>>

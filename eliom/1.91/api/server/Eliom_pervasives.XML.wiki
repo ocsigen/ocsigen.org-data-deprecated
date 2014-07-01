@@ -1,0 +1,5 @@
+=Module <<a_api_type subproject="server" | module Eliom_pervasives.XML >> =
+<<div class="code"|<<span class="keyword"|module>> XML: <<span class='code'|sig>><<a_api subproject="server" text=".." | module Eliom_pervasives.XML >><<span class='code'|end>>>>~X~M~L building and deconstructing~.\\
+
+----
+<<div class="code"|<<span class="keyword"|module>> <<a_api subproject="server" text="M" | module Eliom_pervasives.XML.M >>: <<span class='code'|sig>><<a_api subproject="server" text=".." | module Eliom_pervasives.XML.M >><<span class='code'|end>>>>

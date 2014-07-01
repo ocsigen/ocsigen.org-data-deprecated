@@ -1,0 +1,56 @@
+=Module type <<a_api_type | module type Ojw_completion_sigs.T >> =
+<<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module type>> <<span class="ocsforge_color_uid"|T>> <<span class="ocsforge_color_delimiter"|~=>> <<span class="ocsforge_color_keyword"|sig>><<a_api text=".." | module type Ojw_completion_sigs.T >><<span class="ocsforge_color_keyword"|end>>>>
+----
+
+~A completion widget to complete on string value~.
+<<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module>> <<a_api text="D" | module Ojw_completion_sigs.T.D >> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<a_api text="Ojw_dom_sigs.T" | module Ojw_dom_sigs.T >>>><<span class="odocwiki_type"|>>>><<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module>> <<a_api text="Dropdown" | module Ojw_completion_sigs.T.Dropdown >> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<a_api text="Ojw_dropdown_sigs.T" | module Ojw_dropdown_sigs.T >>>><<span class="odocwiki_type"|>>>><<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module>> <<a_api text="Tr" | module Ojw_completion_sigs.T.Tr >> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<a_api text="Ojw_traversable_sigs.T" | module Ojw_traversable_sigs.T >>>><<span class="odocwiki_type"|>>>><<pre class="ocsforge_color odocwiki_code"|<<span id="TYPEcompletion"|<<span class="ocsforge_color_keyword"|class type>> <<a_api text="completion" | class type Ojw_completion_sigs.T.completion >>>> <<span class="ocsforge_color_delimiter"|~=>> <<span class="ocsforge_color_keyword"|object>><<a_api text=".." | class type Ojw_completion_sigs.T.completion >><<span class="ocsforge_color_keyword"|end>>>><<div class="odocwiki_info"|~A <<span class="odocwiki_inlinecode"|completion>> widget is <<span class="odocwiki_inlinecode"|dropdown>> widget~.
+>>
+<<pre id="VALcompletion__" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|completion~_~_>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|\\  <<span class="ocsforge_color_label"| refresh: >><<span class="ocsforge_color_delimiter"| ( >>int <<span class="ocsforge_color_delimiter"| -> >>\\           string <<span class="ocsforge_color_delimiter"| -> >>\\           <<span class="ocsforge_color_uid"|Dropdown>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_uid"|Traversable>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_uid"|Content>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|element>>\\           <<span class="ocsforge_color_uid"|Dropdown>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_uid"|Traversable>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_uid"|Content>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|elt>> list <<span class="ocsforge_color_uid"|Lwt>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>><<span class="ocsforge_color_delimiter"| ) >> <<span class="ocsforge_color_delimiter"| -> >>\\  <<span class="ocsforge_color_label"| ?limit: >>int <<span class="ocsforge_color_delimiter"| -> >>\\  <<span class="ocsforge_color_label"| ?accents: >>bool <<span class="ocsforge_color_delimiter"| -> >>\\  <<span class="ocsforge_color_label"| ?from_start: >>bool <<span class="ocsforge_color_delimiter"| -> >>\\  <<span class="ocsforge_color_label"| ?force_refresh: >>bool <<span class="ocsforge_color_delimiter"| -> >>\\  <<span class="ocsforge_color_label"| ?sensitive: >>bool <<span class="ocsforge_color_delimiter"| -> >>\\  <<span class="ocsforge_color_label"| ?adaptive: >>bool <<span class="ocsforge_color_delimiter"| -> >>\\  <<span class="ocsforge_color_label"| ?auto_match: >>bool <<span class="ocsforge_color_delimiter"| -> >>\\  <<span class="ocsforge_color_label"| ?clear_input_on_confirm: >>bool <<span class="ocsforge_color_delimiter"| -> >>\\  <<span class="ocsforge_color_label"| ?move_with_tab: >>bool <<span class="ocsforge_color_delimiter"| -> >>\\  <<span class="ocsforge_color_label"| ?on_confirm: >><<span class="ocsforge_color_delimiter"| ( >>string <<span class="ocsforge_color_delimiter"| -> >> unit <<span class="ocsforge_color_uid"|Lwt>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>><<span class="ocsforge_color_delimiter"| ) >> <<span class="ocsforge_color_delimiter"| -> >>\\  <<span class="ocsforge_color_uid"|D>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|element>> <<span class="ocsforge_color_uid"|D>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|elt>> <<span class="ocsforge_color_delimiter"| -> >>\\  <<span class="ocsforge_color_uid"|Dropdown>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_uid"|Traversable>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_uid"|D>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|element>> <<span class="ocsforge_color_uid"|Dropdown>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_uid"|Traversable>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_uid"|D>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|elt>> <<span class="ocsforge_color_delimiter"| -> >>\\  <<span class="ocsforge_color_uid"|Dropdown>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_uid"|D>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|element>> <<span class="ocsforge_color_uid"|Dropdown>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_uid"|D>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|elt>> *\\  <<span class="ocsforge_color_uid"|Dropdown>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_uid"|Traversable>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_uid"|D>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|element>> <<span class="ocsforge_color_uid"|Dropdown>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_uid"|Traversable>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_uid"|D>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|elt>>>>>><<div class="odocwiki_info"|~Provides behaviours of a completion widget~.
+    ~*
+    ~* ~The main purpose of this widget is to complete on string value~.
+    ~* <<span class="odocwiki_inlinecode"|completion>> uses <<span class="odocwiki_inlinecode"|dropdown>> to display matched values~. ~Each item of the
+    ~* <<span class="odocwiki_inlinecode"|dropdown>> **~M~U~S~T ~H~A~V~E** an attribute **data~-value**~. ~The value of this
+    ~* attribute will be used during comparaison with the input value~.
+    ~*
+    ~* <<span class="odocwiki_inlinecode"|refresh limit pattern>> must return the list of the different values~.
+    ~* ~The <<span class="odocwiki_inlinecode"|pattern>> correspond to the current input value~, and <<span class="odocwiki_inlinecode"|limit>> is the
+    ~* number of items which will be displayed by the widgets~.
+    ~*
+    ~* ~If you don~'t want to do the comparaison with the value by yourself~, you
+    ~* can use <<span class="odocwiki_inlinecode"|auto~_match>> which will filter the list of elements returned by
+    ~* <<span class="odocwiki_inlinecode"|refresh>> function~. ~Element which doesn~'t match the input value~, will be
+    ~* ignored and won~'t be displayed with the <<span class="odocwiki_inlinecode"|dropdown>>~.
+    ~*
+    ~* <<span class="odocwiki_inlinecode"|accents>> indicates if the widget has to take care of accents in the
+    ~* **data~-value** attribute and input value~.  <<span class="odocwiki_inlinecode"|sensitive>> indicates the case
+    ~* has to be insensitive or not~.
+    ~*
+    ~* ~If you want to begin the completion from the start of input value~, you
+    ~* can set <<span class="odocwiki_inlinecode"|from~_start>> to <<span class="odocwiki_inlinecode"|true>>~. ~Otherwise~, it will try to match the value
+    ~* anywhere in the  string~.
+    ~*
+    ~* <<span class="odocwiki_inlinecode"|force~_refresh>> will automatically force the call to the <<span class="odocwiki_inlinecode"|refresh>>
+    ~* function on each actions of the widget~. ~If this option is enabled~, the
+    ~* rendering could blink~.
+    ~*
+    ~* <<span class="odocwiki_inlinecode"|clear~_input~_on~_confirm>> will clear the input when method <<span class="odocwiki_inlinecode"|confirm>> is
+    ~* called~.
+    ~*
+    ~* ~Because <<span class="odocwiki_inlinecode"|completion>> is a <<span class="odocwiki_inlinecode"|dropdown>>~, and a <<span class="odocwiki_inlinecode"|dropdown>> is composed by
+    ~* <<span class="odocwiki_inlinecode"|traversable>> widget~, you can navigate through matched values using
+    ~* arrow keys~. ~You can also iterate through them using tab key~, if the
+    ~* option <<span class="odocwiki_inlinecode"|move~_with~_tab>> is set to <<span class="odocwiki_inlinecode"|true>>
+    ~*
+    ~* ~If <<span class="odocwiki_inlinecode"|adaptive>> is enabled~, so the input value will be automatically set
+    ~* to the **data~-value** of current active matched element ~(when navigating
+    ~* using arrow keys~)~.
+    ~*
+    ~* ~The function <<span class="odocwiki_inlinecode"|on~_confirm>> is called each time the input value is
+    ~* confirmed ~(using <<span class="odocwiki_inlinecode"|confirm>> method or using enter key~)~.
+    ~*
+    ~* ~The widget need an **input** element as first parameter~. ~The second
+    ~* parameter is the container on which the matched values will be
+    ~* automatically inserted~, it must be a **ul** element~.
+    ~*
+    ~*
+>>

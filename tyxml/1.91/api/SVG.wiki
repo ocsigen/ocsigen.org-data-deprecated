@@ -1,0 +1,13 @@
+=Module <<a_api_type | module SVG >> =
+<<div class="code"|<<span class="keyword"|module>> SVG: <<span class='code'|sig>><<a_api text=".." | module SVG >><<span class='code'|end>>>>~Typesafe constructors and printers for ~S~V~G documents~.\\
+**See also** [[http://www.w3.org/TR/SVG|~W~3~C ~Recommendation]]\\
+
+----
+<<div class="code"|<<span class="keyword"|module type>> <<a_api text="T" | module type SVG.T >> = <<span class="code type"|<<a_api text="SVG_sigs.SVG" | module SVG_sigs.SVG >>(<<a_api text="XML.M" | module XML.M >>).T>>>><<div class="info"|~Type signature of ~S~V~G typesafe constructors
+>>
+<<div class="code"|<<span class="keyword"|module>> <<a_api text="M" | module SVG.M >>: <<span class="code type"|<<a_api text="T" | module SVG.T >>>><<span class="code type"|{{{  }}}>>>><<div class="info"|~Concrete implementation of ~S~V~G typesafe constructors
+>>
+<<div class="code"|<<span class="keyword"|module>> <<a_api text="P" | module SVG.P >>: <<span class="code type"|<<a_api text="XML_sigs.TypedSimplePrinter" | module XML_sigs.TypedSimplePrinter >>(<<a_api text="XML.M" | module XML.M >>)(M).T>><<span class="code type"|{{{  }}}>>>><<div class="info"|~Simple printer for ~S~V~G documents
+>>
+<<div class="code"|<<span class="keyword"|module>> <<a_api text="MakePrinter" | module SVG.MakePrinter >>: <<div class="sig_block"|<<span class='code'|functor ~(>><<span class='code'|~O>><<span class='code'| ~: >><<span class="code type"|<<a_api text="XML_sigs.Output" | module XML_sigs.Output >>>><<span class='code'|~) ~-~> >><<span class="code type"|<<a_api text="XML_sigs.TypedPrinter" | module XML_sigs.TypedPrinter >>(<<a_api text="XML.M" | module XML.M >>)(M)(O).T>><<span class="code type"|{{{  }}}>>>>>><<div class="info"|~Parametrized stream printer for ~S~V~G documents
+>>

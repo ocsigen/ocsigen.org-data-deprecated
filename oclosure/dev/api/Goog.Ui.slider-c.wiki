@@ -1,0 +1,6 @@
+=Class type <<a_api_type | class type Goog.Ui.slider >> =
+<<pre class="ocsforge_color odocwiki_code"|<<span id="TYPEslider"|<<span class="ocsforge_color_keyword"|class type>> <<span class="ocsforge_color_name"|slider>>>> <<span class="ocsforge_color_delimiter"|~=>> <<span class="ocsforge_color_keyword"|object>><<a_api text=".." | class type Goog.Ui.slider >><<span class="ocsforge_color_keyword"|end>>>>**~Inherits**
+* <<a_api | class Goog.Ui.sliderBase >>
+
+----
+<<pre class="ocsforge_color odocwiki_code"|<<span id="METHODcreateThumbs"|<<span class="ocsforge_color_keyword"|method>> <<span class="odocwiki_name"|createThumbs>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|unit <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|meth>>>>>><<div class="odocwiki_info"|>>

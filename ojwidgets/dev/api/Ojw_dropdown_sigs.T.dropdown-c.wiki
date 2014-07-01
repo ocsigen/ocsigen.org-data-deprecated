@@ -1,0 +1,12 @@
+=Class type <<a_api_type | class type Ojw_dropdown_sigs.T.dropdown >> =
+<<pre class="ocsforge_color odocwiki_code"|<<span id="TYPEdropdown"|<<span class="ocsforge_color_keyword"|class type>> <<span class="ocsforge_color_name"|dropdown>>>> <<span class="ocsforge_color_delimiter"|~=>> <<span class="ocsforge_color_keyword"|object>><<a_api text=".." | class type Ojw_dropdown_sigs.T.dropdown >><<span class="ocsforge_color_keyword"|end>>>>~A <<span class="odocwiki_inlinecode"|dropdown>> is a kind of <<span class="odocwiki_inlinecode"|button>> which triggers the menu when clicking
+    ~* on it ~(you can also use it with hover events~, see below~)~. ~It also uses
+    ~* a <<span class="odocwiki_inlinecode"|traversable>> element to simulate the menu ~(and the interactions with
+    ~* the keys~)~.
+    ~*
+**~Inherits**
+* <<span class="odocwiki_inlinecode"|~Button~.button>>
+
+----
+<<pre class="ocsforge_color odocwiki_code"|<<span id="METHODtraversable"|<<span class="ocsforge_color_keyword"|method>> <<span class="odocwiki_name"|traversable>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<span class="ocsforge_color_uid"|Traversable>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|traversable>> <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>> <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|readonly_prop>>>>>><<div class="odocwiki_info"|~Returns the <<span class="odocwiki_inlinecode"|traversable>> element of the <<span class="odocwiki_inlinecode"|dropdown>>~.
+>>

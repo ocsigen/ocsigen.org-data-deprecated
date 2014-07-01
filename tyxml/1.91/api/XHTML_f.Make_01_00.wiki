@@ -1,0 +1,6 @@
+=Functor <<a_api_type | module XHTML_f.Make_01_00 >> =
+<<div class="code"|<<span class="keyword"|module>> Make_01_00: <<div class="sig_block"|<<span class='code'|functor ~(>><<span class='code'|~X~M~L>><<span class='code'| ~: >><<span class="code type"|<<a_api text="XML_sigs.T" | module XML_sigs.T >>>><<span class='code'|~) ~-~> >><<span class="code type"|<<a_api text="XHTML_sigs.XHTML" | module XHTML_sigs.XHTML >>(XML).T_01_00>><<span class="code type"|{{{  }}}>>>>>><<div class="module_param_list" | <<span class="param_title" |Parameters :>><<div|
+|@@class="paramstable"@ @class="centertop fifteen code"@@{{{XML}}}|@@class="centertop"@@:|<<span class="code type"|<<a_api text="XML_sigs.T" | module XML_sigs.T >>>>|
+>>>>
+
+----

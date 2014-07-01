@@ -1,0 +1,5 @@
+=Module <<a_api_type | module Ocsigen_pervasives.Filename >> =
+<<div class="code"|<<span class="keyword"|module>> Filename: <<span class='code'|sig>><<a_api text=".." | module Ocsigen_pervasives.Filename >><<span class='code'|end>>>>
+----
+<<div class="code"|<<span class="keyword"|include>> Filename>>
+<<div id="VALextension_no_directory" class="code"|<<span class="keyword"|val>> extension~_no~_directory : <<span class="code type"|string -> string>>>>

@@ -1,0 +1,131 @@
+<<code language="ocaml" | object
+  method addChild : #control Js.t -> bool Js.t Js.opt -> unit Js.meth
+  method addChildAt : control Js.t -> int -> bool Js.t Js.opt -> unit Js.meth
+  method addEventListener :
+    Js.js_string Js.t ->
+    (unit -> bool Js.t) Js.callback -> bool Js.t Js.opt -> unit Js.meth
+  method addItem :
+    (#menuItem Js.t, #menuSeparator Js.t) Tools.Union.t -> unit Js.meth
+  method addItemAt :
+    (#menuItem Js.t, #menuSeparator Js.t) Tools.Union.t ->
+    int -> unit Js.meth
+  method canDecorate : #Dom_html.element Js.t -> bool Js.t Js.meth
+  method canHighlightItem : #control Js.t -> bool Js.t Js.meth
+  method containsElement : #Dom_html.element Js.t -> bool Js.t Js.meth
+  method createDom : unit Js.meth
+  method decorate : #Dom_html.element Js.t -> unit Js.meth
+  method decorateInternal : #Dom_html.element Js.t -> unit Js.meth
+  method dispatchEvent :
+    (Js.js_string Js.t, Events.event Js.t) Tools.Union.t -> bool Js.t Js.meth
+  method dispose : unit Js.meth
+  method disposeInternal : unit Js.meth
+  method enterDocument : unit Js.meth
+  method exitDocument : unit Js.meth
+  method getAllowAutoFocus : bool Js.t Js.meth
+  method getAllowHighlightDisabled : bool Js.t Js.meth
+  method getAllowMultiple : bool Js.t Js.meth
+  method getChild : Js.js_string Js.t -> component Js.t Js.opt Js.meth
+  method getChildAt : int -> component Js.t Js.opt Js.meth
+  method getChildCount : int Js.meth
+  method getChildIds : Js.js_string Js.t Js.js_array Js.t Js.meth
+  method getContentElement : Dom_html.element Js.t Js.meth
+  method getCssClass : Js.js_string Js.t Js.meth
+  method getDisposed : bool Js.t Js.meth
+  method getDomHelper : Gdom.domHelper Js.t Js.meth
+  method getElement : Dom_html.element Js.t Js.meth
+  method getElementByFragment :
+    Js.js_string Js.t -> Dom_html.element Js.t Js.meth
+  method getEnteredItems : Js.js_string Js.t Js.js_array Js.t Js.meth
+  method getFilter : Js.js_string Js.t Js.meth
+  method getFilterFromIndex : int Js.meth
+  method getFilterInputElement : Dom_html.element Js.t Js.meth
+  method getFilterLabel : Js.js_string Js.t Js.meth
+  method getFragmentFromId : Js.js_string Js.t -> Js.js_string Js.t Js.meth
+  method getHighlighted : control Js.t Js.meth
+  method getHighlightedIndex : int Js.meth
+  method getId : Js.js_string Js.t Js.meth
+  method getItemAt :
+    int -> (menuItem Js.t, menuSeparator Js.t) Tools.Union.t Js.opt Js.meth
+  method getItemCount : int Js.meth
+  method getItems : menuItem Js.t Js.js_array Js.t Js.meth
+  method getKeyEventTarget : Dom_html.element Js.t Js.meth
+  method getKeyHandler : Events.keyHandler Js.t Js.meth
+  method getOrientation : Container.orientation_pre Js.opt Js.meth
+  method getOwnerControl :
+    #Dom.node Js.t -> #control Js.t Js.opt -> unit Js.meth
+  method getParent : component Js.t Js.opt Js.meth
+  method getParentEventTarget : Events.eventTarget Js.t Js.meth
+  method getPosition : Math.coordinate Js.t Js.opt Js.meth
+  method handleBlur : #Events.browserEvent Js.t -> unit Js.meth
+  method handleChildMouseEvents : #Events.browserEvent Js.t -> unit Js.meth
+  method handleCloseItem : #Events.event -> unit Js.meth
+  method handleDocumentMouseUp : #Events.browserEvent Js.t -> unit Js.meth
+  method handleEnterItem : Events.event Js.t -> bool Js.t Js.meth
+  method handleFilterEvent : Goog.Events.browserEvent Js.t -> unit Js.meth
+  method handleFocus : #Events.event Js.t -> unit Js.meth
+  method handleHighlightItem : #Events.event Js.t -> unit Js.meth
+  method handleKeyEvent : Goog.Events.keyEvent Js.t -> bool Js.t Js.meth
+  method handleKeyEventInternal : Events.keyEvent Js.t -> bool Js.t Js.meth
+  method handleMouseDown : #Events.browserEvent Js.t -> unit Js.meth
+  method handleOpenItem : #Events.event Js.t -> unit Js.meth
+  method handleUnHighlightItem : #Events.event Js.t -> unit Js.meth
+  method hasChildren : bool Js.t Js.meth
+  method hasPersistentVisibility :
+    #Goog.Ui.component Js.t -> bool Js.t Js.meth
+  method highlightFirst : unit Js.meth
+  method highlightHelper :
+    (int -> int -> int) Js.callback -> int -> bool Js.t Js.meth
+  method highlightLast : unit Js.meth
+  method highlightNext : unit Js.meth
+  method highlightNextPrefix : Js.js_string Js.t -> bool Js.t Js.meth
+  method highlightPrevious : unit Js.meth
+  method indexOfChild : component Js.t Js.opt -> int Js.meth
+  method isDisposed : bool Js.t Js.meth
+  method isEnabled : bool Js.t Js.meth
+  method isFocusable : bool Js.t Js.meth
+  method isFocusableChildrenAllowed : bool Js.t Js.meth
+  method isInDocument : bool Js.t Js.meth
+  method isMouseButtonPressed : bool Js.t Js.meth
+  method isRightToLeft : bool Js.t Js.meth
+  method isVisible : bool Js.t Js.meth
+  method makeId : Js.js_string Js.t -> Js.js_string Js.t Js.meth
+  method removeChild :
+    (Js.js_string Js.t, #control Js.t) Tools.Union.t ->
+    bool Js.t Js.opt -> control Js.t Js.meth
+  method removeChildAt : int -> bool Js.t Js.opt -> component Js.t Js.meth
+  method removeChildren : bool Js.t Js.opt -> unit Js.meth
+  method removeEventListener :
+    Js.js_string Js.t ->
+    (unit -> bool Js.t) Js.callback -> bool Js.t Js.opt -> unit Js.meth
+  method removeItem :
+    (#menuItem Js.t, #menuSeparator Js.t) Tools.Union.t -> unit Js.meth
+  method removeItemAt : int -> unit Js.meth
+  method render : #Dom_html.element Js.t Js.opt -> unit Js.meth
+  method renderBefore : #Dom_html.element Js.t -> unit Js.meth
+  method setAllowAutoFocus : bool Js.t -> unit Js.meth
+  method setAllowHighlightDisabled : bool Js.t -> unit Js.meth
+  method setAllowMultiple : bool Js.t -> unit Js.meth
+  method setEnabled : bool Js.t -> unit Js.meth
+  method setFilter : Js.js_string Js.t Js.opt -> unit Js.meth
+  method setFilterFromIndex : int -> unit Js.meth
+  method setFilterLabel : Js.js_string Js.t Js.opt -> unit Js.meth
+  method setFocusable : bool Js.t -> unit Js.meth
+  method setFocusableChildrenAllowed : bool Js.t -> unit Js.meth
+  method setHighlighted : #control Js.t -> unit Js.meth
+  method setHighlightedIndex : int -> unit Js.meth
+  method setHighlightedIndexFromKeyEvent : int -> unit Js.meth
+  method setId : Js.js_string Js.t -> unit Js.meth
+  method setKeyEventTarget : #Dom_html.element Js.t Js.optdef -> unit Js.meth
+  method setMouseButtonPressed : bool Js.t -> unit Js.meth
+  method setOrientation : Container.orientation_pre -> unit Js.meth
+  method setParent : component Js.t -> unit Js.meth
+  method setParentEventTarget :
+    Events.eventTarget Js.t Js.opt -> unit Js.meth
+  method setPersistentVisibility :
+    #Goog.Ui.menuItem Js.t -> bool Js.t -> unit Js.meth
+  method setPosition :
+    (int, Math.coordinate Js.t) Tools.Union.t -> int Js.opt -> unit Js.meth
+  method setRightToLeft : bool Js.t -> unit Js.meth
+  method setVisible : bool Js.t -> bool Js.t Js.opt -> bool Js.t Js.meth
+  method wasDecorated : bool Js.t Js.meth
+end >>

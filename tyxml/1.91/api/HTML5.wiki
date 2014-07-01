@@ -1,0 +1,13 @@
+=Module <<a_api_type | module HTML5 >> =
+<<div class="code"|<<span class="keyword"|module>> HTML5: <<span class='code'|sig>><<a_api text=".." | module HTML5 >><<span class='code'|end>>>>~Typesafe constructors and printers for ~H~T~M~L~5 documents~.\\
+**See also** [[http://www.w3.org/TR/html5/|~W~3~C ~Recommendation]]\\
+
+----
+<<div class="code"|<<span class="keyword"|module type>> <<a_api text="T" | module type HTML5.T >> = <<span class="code type"|<<a_api text="HTML5_sigs.HTML5" | module HTML5_sigs.HTML5 >>(<<a_api text="XML.M" | module XML.M >>)(<<a_api text="SVG.M" | module SVG.M >>).T>>>><<div class="info"|~Type signature of ~H~T~M~L~5 typesafe constructors
+>>
+<<div class="code"|<<span class="keyword"|module>> <<a_api text="M" | module HTML5.M >>: <<span class="code type"|<<a_api text="T" | module HTML5.T >>>><<span class="code type"|{{{  }}}>>>><<div class="info"|~Concrete implementation of ~H~T~M~L~5 typesafe constructors
+>>
+<<div class="code"|<<span class="keyword"|module>> <<a_api text="P" | module HTML5.P >>: <<span class="code type"|<<a_api text="XML_sigs.TypedSimplePrinter" | module XML_sigs.TypedSimplePrinter >>(<<a_api text="XML.M" | module XML.M >>)(M).T>><<span class="code type"|{{{  }}}>>>><<div class="info"|~Simple printer for ~H~T~M~L~5 documents
+>>
+<<div class="code"|<<span class="keyword"|module>> <<a_api text="MakePrinter" | module HTML5.MakePrinter >>: <<div class="sig_block"|<<span class='code'|functor ~(>><<span class='code'|~O>><<span class='code'| ~: >><<span class="code type"|<<a_api text="XML_sigs.Output" | module XML_sigs.Output >>>><<span class='code'|~) ~-~> >><<span class="code type"|<<a_api text="XML_sigs.TypedPrinter" | module XML_sigs.TypedPrinter >>(<<a_api text="XML.M" | module XML.M >>)(M)(O).T>><<span class="code type"|{{{  }}}>>>>>><<div class="info"|~Parametrized stream printer for ~H~T~M~L~5 documents
+>>

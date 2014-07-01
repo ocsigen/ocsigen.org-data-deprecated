@@ -1,0 +1,63 @@
+=Module <<a_api_type | module Ojw_dropdown_sigs.T.Traversable >> =
+<<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module>> <<span class="ocsforge_color_uid"|<<span class="ocsforge_color_uid"|Traversable>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<a_api text="Ojw_traversable_sigs.T" | module Ojw_traversable_sigs.T >>>><<span class="odocwiki_type"|>>>>
+----
+
+~A traversable element can iterate through their children~.
+<<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module>> <<a_api text="D" | module Ojw_traversable_sigs.T.D >> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<a_api text="Ojw_dom_sigs.T" | module Ojw_dom_sigs.T >>>><<span class="odocwiki_type"|>>>><<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module>> <<a_api text="Content" | module Ojw_traversable_sigs.T.Content >> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<a_api text="Ojw_dom_sigs.T" | module Ojw_dom_sigs.T >>>><<span class="odocwiki_type"|>>>>
+
+==@@id="2_Specificeventsforalerts"@@~Specific events for alerts==
+
+<<pre class="ocsforge_color odocwiki_code" id="TYPEby"|<<span class="ocsforge_color_keyword"|type>> <<span class="odocwiki_name"|by>> <<span class="ocsforge_color_delimiter"|~=>> <<span class="odocwiki_type"|[ `Click | `Explicit | `Key of int ]>> >><<div class="odocwiki_info"|~A type which defines which interaction have been used to trigger
+    ~* action on the <<span class="odocwiki_inlinecode"|traversable>> element~.
+>>
+<<pre class="ocsforge_color odocwiki_code"|<<span id="TYPEtraversable_detail_event"|<<span class="ocsforge_color_keyword"|class type>> <<a_api text="traversable_detail_event" | class type Ojw_traversable_sigs.T.traversable_detail_event >>>> <<span class="ocsforge_color_delimiter"|~=>> <<span class="ocsforge_color_keyword"|object>><<a_api text=".." | class type Ojw_traversable_sigs.T.traversable_detail_event >><<span class="ocsforge_color_keyword"|end>>>><<div class="odocwiki_info"|~The <<span class="odocwiki_inlinecode"|detail>> of events of <<span class="odocwiki_inlinecode"|traversable>> element~.
+>>
+<<pre class="ocsforge_color odocwiki_code"|<<span id="TYPEtraversable_event"|<<span class="ocsforge_color_keyword"|class type>> <<a_api text="traversable_event" | class type Ojw_traversable_sigs.T.traversable_event >>>> <<span class="ocsforge_color_delimiter"|~=>> <<span class="odocwiki_type"|[<<a_api text="traversable_detail_event" | class type Ojw_traversable_sigs.T.traversable_detail_event >>]>> <<span class="odocwiki_type"|<<a_api text="Ojw_event.customEvent" | class type Ojw_event.customEvent >>>>>><<div class="odocwiki_info"|~Traversable~'s event type~.
+>>
+<<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module>> <<a_api text="Event" | module Ojw_traversable_sigs.T.Event >> <<span class="ocsforge_color_delimiter"|~:>> <<span class="ocsforge_color_keyword"|sig>><<a_api text=".." | module Ojw_traversable_sigs.T.Event >><<span class="ocsforge_color_keyword"|end>>>><<pre id="VALactive" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|active>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|\\  <<span class="ocsforge_color_label"| ?use_capture: >>bool <<span class="ocsforge_color_delimiter"| -> >>\\  ~#<<span class="ocsforge_color_uid"|Dom_html>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|eventTarget>> <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>> <<span class="ocsforge_color_delimiter"| -> >>\\  <<a_api text="traversable_event" | class type Ojw_traversable_sigs.T.traversable_event >> <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>> <<span class="ocsforge_color_uid"|Lwt>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>>>>>><<pre id="VALactives" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|actives>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|\\  <<span class="ocsforge_color_label"| ?cancel_handler: >>bool <<span class="ocsforge_color_delimiter"| -> >>\\  <<span class="ocsforge_color_label"| ?use_capture: >>bool <<span class="ocsforge_color_delimiter"| -> >>\\  <<span class="ocsforge_color_uid"|D>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|element>> <<span class="ocsforge_color_uid"|D>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|elt>> <<span class="ocsforge_color_delimiter"| -> >>\\  <<span class="ocsforge_color_delimiter"| ( >><<a_api text="traversable_event" | class type Ojw_traversable_sigs.T.traversable_event >> <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>> <<span class="ocsforge_color_delimiter"| -> >>\\   unit <<span class="ocsforge_color_uid"|Lwt>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>> <<span class="ocsforge_color_delimiter"| -> >> unit <<span class="ocsforge_color_uid"|Lwt>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>><<span class="ocsforge_color_delimiter"| ) >> <<span class="ocsforge_color_delimiter"| -> >>\\  unit <<span class="ocsforge_color_uid"|Lwt>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>>>>>><<div class="odocwiki_info"|~This event is triggered when an element is to active~. ~Some informations
+    ~* are available in the <<span class="odocwiki_inlinecode"|traversable~_event>> ~(see above~)~.
+>>
+
+
+==@@id="2_Typesfortraversable"@@~Types for traversable==
+
+<<pre class="ocsforge_color odocwiki_code"|<<span id="TYPEtraversable"|<<span class="ocsforge_color_keyword"|class type>> <<a_api text="traversable" | class type Ojw_traversable_sigs.T.traversable >>>> <<span class="ocsforge_color_delimiter"|~=>> <<span class="ocsforge_color_keyword"|object>><<a_api text=".." | class type Ojw_traversable_sigs.T.traversable >><<span class="ocsforge_color_keyword"|end>>>><<div class="odocwiki_info"|~A <<span class="odocwiki_inlinecode"|traversable>> element can use keys to navigate through their
+    ~* children ~(only one level of children~)~.
+>>
+<<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module>> <<a_api text="Style" | module Ojw_traversable_sigs.T.Style >> <<span class="ocsforge_color_delimiter"|~:>> <<span class="ocsforge_color_keyword"|sig>><<a_api text=".." | module Ojw_traversable_sigs.T.Style >><<span class="ocsforge_color_keyword"|end>>>>
+
+==@@id="2_Constructionfunctions"@@~Construction functions==
+
+<<pre id="VALtraversable" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|traversable>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|\\  <<span class="ocsforge_color_label"| ?enable_link: >>bool <<span class="ocsforge_color_delimiter"| -> >>\\  <<span class="ocsforge_color_label"| ?focus: >>bool <<span class="ocsforge_color_delimiter"| -> >>\\  <<span class="ocsforge_color_label"| ?is_traversable: >><<span class="ocsforge_color_delimiter"| ( >>~#<<a_api text="traversable" | class type Ojw_traversable_sigs.T.traversable >> <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>> <<span class="ocsforge_color_delimiter"| -> >> bool<<span class="ocsforge_color_delimiter"| ) >> <<span class="ocsforge_color_delimiter"| -> >>\\  <<span class="ocsforge_color_label"| ?on_keydown: >><<span class="ocsforge_color_delimiter"| ( >><<span class="ocsforge_color_uid"|Dom_html>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|keyboardEvent>> <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>> <<span class="ocsforge_color_delimiter"| -> >> bool <<span class="ocsforge_color_uid"|Lwt>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>><<span class="ocsforge_color_delimiter"| ) >> <<span class="ocsforge_color_delimiter"| -> >>\\  <<span class="ocsforge_color_uid"|D>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|element>> <<span class="ocsforge_color_uid"|D>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|elt>> <<span class="ocsforge_color_delimiter"| -> >> <<span class="ocsforge_color_uid"|D>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|element>> <<span class="ocsforge_color_uid"|D>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|elt>>>>>><<div class="odocwiki_info"|~Provides the behaviour of listening keys when the element is traversable~.
+    ~*
+    ~* ~Keys up and down arrows are used for navigating through children~. ~You can
+    ~* also click an a child to set it to active~.
+    ~*
+    ~* ~When an element is active~, the css class **"selected"** is added to the
+    ~* **li** element~.
+    ~*
+    ~* <<span class="odocwiki_inlinecode"|enable~_link>> allows you to keep the default behaviour for the children
+    ~* which are links~. ~If it is set to <<span class="odocwiki_inlinecode"|false>>~, the link won~'t be interpreted~.
+    ~*
+    ~* <<span class="odocwiki_inlinecode"|focus>> set the document~'s focus to the current active element~. ~Beware~,
+    ~* no checks are done when giving the focus~, if you use element without
+    ~* focus interactions~, you will probably run into a javascript error~.
+    ~*
+    ~* <<span class="odocwiki_inlinecode"|is~_traversable>> indicates whether or not the <<span class="odocwiki_inlinecode"|traversable>> element can
+    ~* listen to keys events~. ~If <<span class="odocwiki_inlinecode"|false>> is returned~, keys events won~'t be
+    ~* interpreted~. ~This function is called each time an keydown event occurs~.
+    ~*
+    ~* <<span class="odocwiki_inlinecode"|on~_keydown>> is a helper function which is called each time a keydown
+    ~* event is triggered~. ~The return value indicates if the event must be
+    ~* prevented or not ~(<<span class="odocwiki_inlinecode"|~Dom~.prevent~Default>> and <<span class="odocwiki_inlinecode"|~Dom~_html~.stop~Propagation>>~)~.
+    ~* ~Use this function instead of adding an event listener for keydowns on
+    ~* the <<span class="odocwiki_inlinecode"|traversable>> element~.
+    ~*
+    ~*
+>>
+
+
+==@@id="2_Conversionfunctions"@@~Conversion functions==
+
+<<pre id="VALto_traversable" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|to~_traversable>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<span class="ocsforge_color_uid"|D>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|element>> <<span class="ocsforge_color_uid"|D>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|elt>> <<span class="ocsforge_color_delimiter"| -> >> <<a_api text="traversable" | class type Ojw_traversable_sigs.T.traversable >> <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>>>>>><<div class="odocwiki_info"|~Check if the given element is an instance of a <<span class="odocwiki_inlinecode"|traversable>> widget~.
+>>

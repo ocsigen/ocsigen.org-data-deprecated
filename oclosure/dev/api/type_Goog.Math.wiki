@@ -1,0 +1,53 @@
+<<code language="ocaml" | sig
+  class type box =
+    object
+      method clone : Goog.Math.box Js.t Js.meth
+      method contains : Goog.Math.box Js.t -> bool Js.t Js.meth
+      method expand :
+        int ->
+        int Js.opt -> int Js.opt -> int Js.opt -> Goog.Math.box Js.t Js.meth
+      method toString : Js.js_string Js.t Js.meth
+    end
+  val box : (int -> int -> int -> int -> Goog.Math.box Js.t) Js.constr
+  class type coordinate =
+    object
+      method clone : Goog.Math.coordinate Js.t Js.meth
+      method difference :
+        Goog.Math.coordinate Js.t ->
+        Goog.Math.coordinate Js.t -> Goog.Math.coordinate Js.t Js.meth
+      method distance :
+        Goog.Math.coordinate Js.t ->
+        Goog.Math.coordinate Js.t -> float Js.meth
+      method equals :
+        Goog.Math.coordinate Js.t ->
+        Goog.Math.coordinate Js.t -> bool Js.meth
+      method squaredDistance :
+        Goog.Math.coordinate Js.t ->
+        Goog.Math.coordinate Js.t -> float Js.t Js.meth
+      method sum :
+        Goog.Math.coordinate Js.t ->
+        Goog.Math.coordinate Js.t -> Goog.Math.coordinate Js.t Js.meth
+      method toString : Js.js_string Js.t Js.meth
+    end
+  val coordinate :
+    (float Js.opt -> float Js.opt -> Goog.Math.coordinate Js.t) Js.constr
+  class type size =
+    object method height : int Js.prop method width : int Js.prop end
+  val size : (int -> int -> Goog.Math.size Js.t) Js.constr
+  class type rect =
+    object
+      method boundingRect : Goog.Math.rect Js.t -> unit Js.meth
+      method clone : Goog.Math.rect Js.t Js.meth
+      method contains :
+        (Goog.Math.rect Js.t, Goog.Math.coordinate Js.t) Goog.Tools.Union.t ->
+        bool Js.t Js.meth
+      method difference :
+        Goog.Math.rect Js.t -> Goog.Math.rect Js.t Js.js_array Js.t Js.meth
+      method getSize : Goog.Math.size Js.t Js.meth
+      method intersection : Goog.Math.rect Js.t -> bool Js.t Js.meth
+      method intersects : Goog.Math.rect Js.t -> bool Js.t Js.meth
+      method toBox : Goog.Math.box Js.t Js.meth
+      method toString : Js.js_string Js.t Js.meth
+    end
+  val rect : (int -> int -> int -> int -> Goog.Math.rect Js.t) Js.constr
+end >>

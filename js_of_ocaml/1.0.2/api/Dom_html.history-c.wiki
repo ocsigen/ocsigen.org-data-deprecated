@@ -1,0 +1,4 @@
+=Class type <<a_api_type | class type Dom_html.history >> =
+<<pre class="ocsforge_color odocwiki_code"|<<span id="TYPEhistory"|<<span class="ocsforge_color_keyword"|class type>> <<span class="ocsforge_color_name"|history>>>> <<span class="ocsforge_color_delimiter"|~=>> <<span class="ocsforge_color_keyword"|object>><<a_api text=".." | class type Dom_html.history >><<span class="ocsforge_color_keyword"|end>>>>~Browser history information\\
+
+----

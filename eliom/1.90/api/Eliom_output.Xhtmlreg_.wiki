@@ -1,0 +1,22 @@
+=Functor <<a_api_type | module Eliom_output.Xhtmlreg_ >> =
+<<div class="code"|<<span class="keyword"|module>> Xhtmlreg_: <<div class="sig_block"|<<span class='code'|functor ~(>><<span class='code'|~Xhtml~_content>><<span class='code'| ~: >>\\{{{   }}}<<span class="code type"|<<a_api text="Ocsigen_http_frame.HTTP_CONTENT" | module Ocsigen_http_frame.HTTP_CONTENT >>>><<span class="code type"|{{{  }}} with type t = [ `Html ] <<a_api text="XHTML.M" | module XHTML.M >>.elt\\{{{   }}}                                            and type options = <<a_api text="XHTML.M" | module XHTML.M >>.doctypes>><<span class='code'|~) ~-~> >>\\{{{   }}}<<span class="code type"|<<a_api text="Eliom_mkreg.REGCREATE" | module Eliom_mkreg.REGCREATE >>>><<span class="code type"|{{{  }}} with type page =  Xhtml_content.t\\{{{   }}}                                    and type options = <<a_api text="XHTML.M" | module XHTML.M >>.doctypes\\{{{   }}}                                    and type return = Eliom_services.http>>>>>><<div class="module_param_list" | <<span class="param_title" |Parameters :>><<div|
+|@@class="paramstable"@ @class="centertop fifteen code"@@{{{Xhtml_content}}}|@@class="centertop"@@:|<<span class="code type"|<<a_api text="Ocsigen_http_frame.HTTP_CONTENT" | module Ocsigen_http_frame.HTTP_CONTENT >> with type t = [ `Html ] <<a_api text="XHTML.M" | module XHTML.M >>.elt
+                                            and type options = <<a_api text="XHTML.M" | module XHTML.M >>.doctypes>>|
+>>
+
+----
+<<div class="code" id="TYPEpage"|<<span class="keyword"|type>> page>>
+
+<<div class="code" id="TYPEoptions"|<<span class="keyword"|type>> options>>
+
+<<div class="code" id="TYPEreturn"|<<span class="keyword"|type>> return>>
+
+<<div id="VALsend" class="code"|<<span class="keyword"|val>> send : <<span class="code type"|\\{{{   }}}?options:<<a_api text="options" | type Eliom_mkreg.REGCREATE.options >> ->\\{{{   }}}  ?charset:string ->\\{{{   }}}  ?code:int ->\\{{{   }}}  ?content_type:string ->\\{{{   }}}  ?headers:<<a_api text="Http_headers.t" | type Http_headers.t >> ->\\{{{   }}}  <<a_api text="page" | type Eliom_mkreg.REGCREATE.page >> -> <<a_api text="Ocsigen_http_frame.result" | type Ocsigen_http_frame.result >> Lwt.t>>>><<div id="VALpre_service" class="code"|<<span class="keyword"|val>> pre~_service : <<span class="code type"|?options:<<a_api text="options" | type Eliom_mkreg.REGCREATE.options >> -> unit -> unit Lwt.t>>>><<div class="info"|~This function is executed just before the service
+        when we know exactly which service will answer
+        ~(and after decoding parameters~)~.
+        ~Usually it does nothing~.\\
+>>
+<<div id="VALdo_appl_xhr" class="code"|<<span class="keyword"|val>> do~_appl~_xhr : <<span class="code type"|Eliom_services.do_appl_xhr>>>><<div class="info"|~The following field is usually <<span class='code'|~Eliom~_services~.~X~Never>>~. 
+        ~This value is recorded inside each service just after registration~.
+        ~(~Use in <<span class='code'|~Eliom~_output~.~Eliom~_appl>>~)\\
+>>

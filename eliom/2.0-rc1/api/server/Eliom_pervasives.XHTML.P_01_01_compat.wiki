@@ -1,0 +1,3 @@
+=Module <<a_api_type subproject="server" | module Eliom_pervasives.XHTML.P_01_01_compat >> =
+<<div class="code"|<<span class="keyword"|module>> P_01_01_compat: \\{{{   }}}<<span class="code type"|XML_sigs.TypedSimplePrinter>><<span class="code type"|{{{  }}}\\{{{   }}}                   with type 'a elt := 'a M_01_01.elt\\{{{   }}}		    and type doc := M_01_01.doc>>>>
+----

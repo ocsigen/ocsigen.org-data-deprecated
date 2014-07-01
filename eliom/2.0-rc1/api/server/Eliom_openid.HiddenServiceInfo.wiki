@@ -1,0 +1,6 @@
+=Module type <<a_api_type subproject="server" | module type Eliom_openid.HiddenServiceInfo >> =
+<<div class="code"|<<span class="keyword"|module type>> HiddenServiceInfo = <<span class='code'|sig>><<a_api subproject="server" text=".." | module type Eliom_openid.HiddenServiceInfo >><<span class='code'|end>>>>~Information about the hidden service\\
+
+----
+<<div id="VALpath" class="code"|<<span class="keyword"|val>> path : <<span class="code type"|string list>>>><<div id="VALf" class="code"|<<span class="keyword"|val>> f : <<span class="code type"|\\{{{   }}}(string * string) list ->\\{{{   }}}  unit ->\\{{{   }}}  (<<a_api subproject="server" text="Eliom_output.browser_content" | type Eliom_output.browser_content >>, <<a_api subproject="server" text="Eliom_output.http_service" | type Eliom_output.http_service >>) <<a_api subproject="server" text="Eliom_output.kind" | type Eliom_output.kind >>\\{{{   }}}  Lwt.t>>>><<div class="info"|~The path of the hidden service\\
+>>

@@ -1,0 +1,3 @@
+=Module <<a_api_type subproject="server" | module Eliom_pervasives.Int.Table >> =
+<<div class="code"|<<span class="keyword"|module>> Table: <<span class="code type"|Map.S>><<span class="code type"|{{{  }}} with type key = int>>>>
+----

@@ -1,0 +1,5 @@
+<<code language="ocaml" | sig
+  class type config =
+    object method from_addr : string * string method mailer : string end
+  val config : Eba_config.Email.config
+end >>

@@ -1,0 +1,1 @@
+<<code language="ocaml" | sig val createTimeZone : int -> Goog.I18n.timeZone Js.t end >>

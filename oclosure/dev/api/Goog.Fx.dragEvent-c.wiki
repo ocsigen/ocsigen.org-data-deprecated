@@ -1,0 +1,5 @@
+=Class type <<a_api_type | class type Goog.Fx.dragEvent >> =
+<<pre class="ocsforge_color odocwiki_code"|<<span id="TYPEdragEvent"|<<span class="ocsforge_color_keyword"|class type>> <<span class="ocsforge_color_name"|dragEvent>>>> <<span class="ocsforge_color_delimiter"|~=>> <<span class="ocsforge_color_keyword"|object>><<a_api text=".." | class type Goog.Fx.dragEvent >><<span class="ocsforge_color_keyword"|end>>>>**~Inherits**
+* <<a_api | class Goog.Events.event >>
+
+----

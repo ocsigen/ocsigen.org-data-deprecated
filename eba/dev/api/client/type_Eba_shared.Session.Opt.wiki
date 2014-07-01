@@ -1,0 +1,1 @@
+<<code language="ocaml" | sig val get_current_userid : unit -> int64 option end >>

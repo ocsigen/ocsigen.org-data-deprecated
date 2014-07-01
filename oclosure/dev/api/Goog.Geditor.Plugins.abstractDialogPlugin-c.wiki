@@ -1,0 +1,13 @@
+=Class type <<a_api_type | class type Goog.Geditor.Plugins.abstractDialogPlugin >> =
+<<pre class="ocsforge_color odocwiki_code"|<<span id="TYPEabstractDialogPlugin"|<<span class="ocsforge_color_keyword"|class type>> <<span class="ocsforge_color_name"|abstractDialogPlugin>>>> <<span class="ocsforge_color_delimiter"|~=>> <<span class="ocsforge_color_keyword"|object>><<a_api text=".." | class type Goog.Geditor.Plugins.abstractDialogPlugin >><<span class="ocsforge_color_keyword"|end>>>>**~Inherits**
+* <<a_api | class Goog.Geditor.plugin >>
+
+----
+<<pre class="ocsforge_color odocwiki_code"|<<span id="METHODdisposeInternal"|<<span class="ocsforge_color_keyword"|method>> <<span class="odocwiki_name"|disposeInternal>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|unit <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|meth>>>>>><<div class="odocwiki_info"|>>
+
+==@@id="2_HandlesexecCommand"@@ ~Handles exec~Command~. ~Dialog plugins don~'t make any changes when they open a
+ dialog~, just when the dialog closes ~(because only modal dialogs are
+ supported~)~. ~Hence this method does not dispatch the change events that the
+ superclass method does~.
+==
+<<pre class="ocsforge_color odocwiki_code"|<<span id="METHODisSupportedCommand"|<<span class="ocsforge_color_keyword"|method>> <<span class="odocwiki_name"|isSupportedCommand>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|js_string>> <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>> <<span class="ocsforge_color_delimiter"| -> >> bool <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>> <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|meth>>>>>><<div class="odocwiki_info"|>>

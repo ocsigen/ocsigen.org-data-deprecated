@@ -1,0 +1,1 @@
+<<code language="ocaml" | sig val email_pattern : string val is_valid : string -> bool end >>

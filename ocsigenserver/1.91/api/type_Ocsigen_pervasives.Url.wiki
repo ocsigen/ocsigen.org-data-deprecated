@@ -1,0 +1,28 @@
+<<code language="ocaml" | sig
+  type t = string
+  type uri = string
+  val make_absolute_url :
+    https:bool ->
+    host:string ->
+    port:int -> Ocsigen_pervasives.Url.uri -> Ocsigen_pervasives.Url.t
+  type path = string list
+  val remove_dotdot :
+    Ocsigen_pervasives.Url.path -> Ocsigen_pervasives.Url.path
+  val remove_end_slash : string -> string
+  val add_end_slash_if_missing :
+    Ocsigen_pervasives.Url.path -> Ocsigen_pervasives.Url.path
+  val remove_slash_at_end :
+    Ocsigen_pervasives.Url.path -> Ocsigen_pervasives.Url.path
+  val remove_slash_at_beginning :
+    Ocsigen_pervasives.Url.path -> Ocsigen_pervasives.Url.path
+  val is_prefix_skip_end_slash : string list -> string list -> bool
+  val string_of_url_path :
+    encode:bool -> Ocsigen_pervasives.Url.path -> Ocsigen_pervasives.Url.uri
+  val fixup_url_string : Ocsigen_pervasives.Url.t -> Ocsigen_pervasives.Url.t
+  val parse :
+    Ocsigen_pervasives.Url.t ->
+    bool option * string option * int option * string * string list *
+    string option * (string * string) list Lazy.t
+  val encode : ?plus:bool -> string -> string
+  val decode : ?plus:bool -> string -> string
+end >>

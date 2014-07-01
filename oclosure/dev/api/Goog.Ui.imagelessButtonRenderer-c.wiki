@@ -1,0 +1,38 @@
+=Class type <<a_api_type | class type Goog.Ui.imagelessButtonRenderer >> =
+<<pre class="ocsforge_color odocwiki_code"|<<span id="TYPEimagelessButtonRenderer"|<<span class="ocsforge_color_keyword"|class type>> <<span class="odocwiki_type"|[#<<a_api text="button" | class type Goog.Ui.button >>]>><<span class="ocsforge_color_name"|imagelessButtonRenderer>>>> <<span class="ocsforge_color_delimiter"|~=>> <<span class="ocsforge_color_keyword"|object>><<a_api text=".." | class type Goog.Ui.imagelessButtonRenderer >><<span class="ocsforge_color_keyword"|end>>>>**~Inherits**
+* <<a_api | class Goog.Ui.customButtonRenderer >>
+
+----
+<<pre class="ocsforge_color odocwiki_code"|<<span id="METHODcreateButton"|<<span class="ocsforge_color_keyword"|method>> <<span class="odocwiki_name"|createButton>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|\\<<a_api text="controlContent" | type Goog.Ui.controlContent >> <<span class="ocsforge_color_delimiter"| -> >>\\<<a_api text="Goog.Gdom.domHelper" | class type Goog.Gdom.domHelper >> <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>> <<span class="ocsforge_color_delimiter"| -> >> <<span class="ocsforge_color_uid"|Dom_html>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|element>> <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>> <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|meth>>>>>><<div class="odocwiki_info"|~Takes a text caption or existing ~D~O~M structure~, and returns the content
+   wrapped in a pseudo~-rounded~-corner box~.  ~Creates the following ~D~O~M structure~:
+    ~<div class~="goog~-inline~-block goog~-imageless~-button~-outer~-box"~>
+      ~<div class~="goog~-inline~-block goog~-imageless~-button~-inner~-box"~>
+        ~<div class~="goog~-imageless~-button~-pos"~>
+          ~<div class~="goog~-imageless~-button~-top~-shadow"~>~&nbsp~;~<~/div~>
+          ~<div class~="goog~-imageless~-button~-content"~>~Contents~.~.~.~<~/div~>
+        ~<~/div~>
+      ~<~/div~>
+    ~<~/div~>
+   ~Used by both ~#create~Dom and ~#decorate~.  ~To be overridden
+   by subclasses~.
+**Returns** ~Pseudo~-rounded~-corner box containing the content~.\\
+>>
+<<pre class="ocsforge_color odocwiki_code"|<<span id="METHODcreateDom"|<<span class="ocsforge_color_keyword"|method>> <<span class="odocwiki_name"|createDom>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<span class="ocsforge_color_delimiter"| ( >>~#<<a_api text="button" | class type Goog.Ui.button >> as 'a<<span class="ocsforge_color_delimiter"| ) >> <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>> <<span class="ocsforge_color_delimiter"| -> >> <<span class="ocsforge_color_uid"|Dom_html>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|element>> <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>> <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|meth>>>>>><<div class="odocwiki_info"|~Returns the button~'s contents wrapped in the following ~D~O~M structure~:
+      ~<div class~="goog~-inline~-block goog~-imageless~-button"~>
+        ~<div class~="goog~-inline~-block goog~-imageless~-button~-outer~-box"~>
+          ~<div class~="goog~-imageless~-button~-inner~-box"~>
+            ~<div class~="goog~-imageless~-button~-pos~-box"~>
+              ~<div class~="goog~-imageless~-button~-top~-shadow"~>~&nbsp~;~<~/div~>
+              ~<div class~="goog~-imageless~-button~-content"~>~Contents~.~.~.~<~/div~>
+            ~<~/div~>
+          ~<~/div~>
+        ~<~/div~>
+      ~<~/div~>
+   ~Overrides goog~.ui~.~Button~Renderer~#create~Dom~.
+**Returns** ~Root element for the button~.\\
+>>
+<<pre class="ocsforge_color odocwiki_code"|<<span id="METHODgetContentElement"|<<span class="ocsforge_color_keyword"|method>> <<span class="odocwiki_name"|getContentElement>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|\\'b. <<span class="ocsforge_color_delimiter"| ( >>~#<<span class="ocsforge_color_uid"|Dom_html>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|element>> as 'b<<span class="ocsforge_color_delimiter"| ) >> <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>> <<span class="ocsforge_color_delimiter"| -> >> <<span class="ocsforge_color_uid"|Dom_html>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|element>> <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>> <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|meth>>>>>><<div class="odocwiki_info"|>>
+<<pre class="ocsforge_color odocwiki_code"|<<span id="METHODgetCssClass"|<<span class="ocsforge_color_keyword"|method>> <<span class="odocwiki_name"|getCssClass>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|js_string>> <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>> <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|meth>>>>>><<div class="odocwiki_info"|~Returns the ~C~S~S class to be applied to the root element of components
+   rendered using this renderer~.
+**Returns** ~Renderer~-specific ~C~S~S class~.\\
+>>

@@ -1,0 +1,24 @@
+=Class type <<a_api_type subproject="server" | class type Eba_config.Session.config >> =
+<<pre class="ocsforge_color odocwiki_code"|<<span id="TYPEconfig"|<<span class="ocsforge_color_keyword"|class type>> <<span class="ocsforge_color_name"|config>>>> <<span class="ocsforge_color_delimiter"|~=>> <<span class="ocsforge_color_keyword"|object>><<a_api subproject="server" text=".." | class type Eba_config.Session.config >><<span class="ocsforge_color_keyword"|end>>>>
+----
+
+==@@id="2_Theconfigclass"@@~The config class==
+<<pre class="ocsforge_color odocwiki_code"|<<span id="METHODon_request"|<<span class="ocsforge_color_keyword"|method>> <<span class="odocwiki_name"|on_request>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|unit <<span class="ocsforge_color_uid"|Lwt>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>>>>>><<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|on~_request>> is called during each requests
+
+<<span class="odocwiki_inlinecode"|on~_denied~_request>> is called when a user can~'t access to a page
+ ~(<<span class="odocwiki_inlinecode"|allows>> and <<span class="odocwiki_inlinecode"|deny>> parameter of the connected <<span class="odocwiki_inlinecode"|functions>>~, see
+ module ~Page and ~Session for informations~.
+>>
+<<pre class="ocsforge_color odocwiki_code"|<<span id="METHODon_denied_request"|<<span class="ocsforge_color_keyword"|method>> <<span class="odocwiki_name"|on_denied_request>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|int64 <<span class="ocsforge_color_delimiter"| -> >> unit <<span class="ocsforge_color_uid"|Lwt>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>>>>>><<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|on~_connected~_request>> is called during each connected requests
+>>
+<<pre class="ocsforge_color odocwiki_code"|<<span id="METHODon_connected_request"|<<span class="ocsforge_color_keyword"|method>> <<span class="odocwiki_name"|on_connected_request>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|int64 <<span class="ocsforge_color_delimiter"| -> >> unit <<span class="ocsforge_color_uid"|Lwt>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>>>>>><<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|on~_open~_session>> is called when a user connects
+>>
+<<pre class="ocsforge_color odocwiki_code"|<<span id="METHODon_open_session"|<<span class="ocsforge_color_keyword"|method>> <<span class="odocwiki_name"|on_open_session>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|int64 <<span class="ocsforge_color_delimiter"| -> >> unit <<span class="ocsforge_color_uid"|Lwt>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>>>>>><<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|on~_close~_session>> is called when a user disconnects
+>>
+<<pre class="ocsforge_color odocwiki_code"|<<span id="METHODon_close_session"|<<span class="ocsforge_color_keyword"|method>> <<span class="odocwiki_name"|on_close_session>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|unit <<span class="ocsforge_color_uid"|Lwt>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>>>>>><<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|on~_start~_process>> is called when a new process is executed ~(a
+ process corresponds to a tab into your browser~)
+>>
+<<pre class="ocsforge_color odocwiki_code"|<<span id="METHODon_start_process"|<<span class="ocsforge_color_keyword"|method>> <<span class="odocwiki_name"|on_start_process>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|unit <<span class="ocsforge_color_uid"|Lwt>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>>>>>><<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|on~_start~_connected~_process>> is the same as above~, but it is only
+ called when a user is connected
+>>
+<<pre class="ocsforge_color odocwiki_code"|<<span id="METHODon_start_connected_process"|<<span class="ocsforge_color_keyword"|method>> <<span class="odocwiki_name"|on_start_connected_process>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|int64 <<span class="ocsforge_color_delimiter"| -> >> unit <<span class="ocsforge_color_uid"|Lwt>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>>>>>>

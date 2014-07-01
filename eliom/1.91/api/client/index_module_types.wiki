@@ -1,0 +1,11 @@
+=Index of module types=
+
+|@@ @class="alignleft"@@\\B|
+|<<a_api subproject="client" text="Base"| module type Eliom_output.Base >> ~[<<a_api subproject="client" | module Eliom_output >>~]||
+|@@ @class="alignleft"@@\\E|
+|<<a_api subproject="client" text="ELIOMFORMSIG"| module type Eliom_mkforms.ELIOMFORMSIG >> ~[<<a_api subproject="client" | module Eliom_mkforms >>~]||
+|@@ @class="alignleft"@@\\F|
+|<<a_api subproject="client" text="FORMCREATE"| module type Eliom_mkforms.FORMCREATE >> ~[<<a_api subproject="client" | module Eliom_mkforms >>~]||
+|@@ @class="alignleft"@@\\H|
+|<<a_api subproject="client" text="HTML5FORMSSIG"| module type Eliom_output_base.HTML5FORMSSIG >> ~[<<a_api subproject="client" | module Eliom_output_base >>~]||
+\\

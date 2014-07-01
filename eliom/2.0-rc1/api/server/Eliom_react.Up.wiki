@@ -1,0 +1,16 @@
+=Module <<a_api_type subproject="server" | module Eliom_react.Up >> =
+<<div class="code"|<<span class="keyword"|module>> Up: <<span class='code'|sig>><<a_api subproject="server" text=".." | module Eliom_react.Up >><<span class='code'|end>>>><<span class='code'|of~_react ~?scope ~?throttling ~?name e>> create an
+      asynchronous edge originating from <<span class='code'|e>>~. ~The parameters are~: <<span class='code'|throttling>>
+      for the limit to event propagation rate~, <<span class='code'|name>> for named edges~. <<span class='code'|scope>>
+      tell which kind of channel this rely on ~(~See <<span class='code'|~Eliom~_comet~.create>>~)~.\\
+
+----
+<<div class="code" id="TYPEt"|<<span class="keyword"|type>> <<span class="code type"|'a>> t>>
+
+<<div id="VALto_react" class="code"|<<span class="keyword"|val>> to~_react : <<span class="code type"|'a <<a_api subproject="server" text="t" | type Eliom_react.Up.t >> -> 'a React.E.t>>>><<div class="info"|~The type of events that~, while being "on the server"~, are triggered by
+      clients~. ~On the server such an event is ~/primitive~/ ~(hence the <<span class='code'|create>>
+      function~) whereas it is ~/effect~-full~/ on the client~.\\
+>>
+<<div id="VALcreate" class="code"|<<span class="keyword"|val>> create : <<span class="code type"|\\{{{   }}}?scope:<<a_api subproject="server" text="Eliom_common.scope" | type Eliom_common.scope >> ->\\{{{   }}}  ?name:string ->\\{{{   }}}  ('a, [ `WithoutSuffix ],\\{{{   }}}   [ `One of 'a <<a_api subproject="server" text="Eliom_parameters.caml" | type Eliom_parameters.caml >> ] <<a_api subproject="server" text="Eliom_parameters.param_name" | type Eliom_parameters.param_name >>)\\{{{   }}}  <<a_api subproject="server" text="Eliom_parameters.params_type" | type Eliom_parameters.params_type >> -> 'a <<a_api subproject="server" text="t" | type Eliom_react.Up.t >>>>>><<div class="info"|<<span class='code'|to~_react e>> injects the up events <<span class='code'|e>> into react events so that it can
+      be manipulated as a standard event~.\\
+>>

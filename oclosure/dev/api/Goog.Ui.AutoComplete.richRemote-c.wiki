@@ -1,0 +1,7 @@
+=Class type <<a_api_type | class type Goog.Ui.AutoComplete.richRemote >> =
+<<pre class="ocsforge_color odocwiki_code"|<<span id="TYPErichRemote"|<<span class="ocsforge_color_keyword"|class type>> <<span class="ocsforge_color_name"|richRemote>>>> <<span class="ocsforge_color_delimiter"|~=>> <<span class="ocsforge_color_keyword"|object>><<a_api text=".." | class type Goog.Ui.AutoComplete.richRemote >><<span class="ocsforge_color_keyword"|end>>>>~Class goog~.ui~.~Auto~Complete~.~Remote
+**~Inherits**
+* <<a_api | class Goog.Ui.autoComplete >>~Set the filter that is called before the array matches are returned~.
+
+----
+<<pre class="ocsforge_color odocwiki_code"|<<span id="METHODsetRowFilter"|<<span class="ocsforge_color_keyword"|method>> <<span class="odocwiki_name"|setRowFilter>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<span class="ocsforge_color_delimiter"| ( >>unit <<span class="ocsforge_color_delimiter"| -> >> unit<<span class="ocsforge_color_delimiter"| ) >> <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|callback>> <<span class="ocsforge_color_delimiter"| -> >> unit <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|meth>>>>>>

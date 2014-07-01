@@ -1,0 +1,5 @@
+=Module <<a_api_type subproject="client" | module Eliom_pervasives.String >> =
+<<div class="code"|<<span class="keyword"|module>> String: <<span class='code'|sig>><<a_api subproject="client" text=".." | module Eliom_pervasives.String >><<span class='code'|end>>>>
+----
+<<div class="code"|<<span class="keyword"|include>> String>>
+<<div id="VALsplit" class="code"|<<span class="keyword"|val>> split : <<span class="code type"|?multisep:bool -> char -> string -> string list>>>><<div id="VALmay_concat" class="code"|<<span class="keyword"|val>> may~_concat : <<span class="code type"|string -> sep:string -> string -> string>>>><<div class="code"|<<span class="keyword"|module>> <<a_api subproject="client" text="Table" | module Eliom_pervasives.String.Table >>: <<span class="code type"|Map.S>><<span class="code type"|{{{  }}} with type key = string>>>><<div class="code"|<<span class="keyword"|module>> <<a_api subproject="client" text="Set" | module Eliom_pervasives.String.Set >>: <<span class="code type"|Set.S>><<span class="code type"|{{{  }}} with type elt = string>>>>

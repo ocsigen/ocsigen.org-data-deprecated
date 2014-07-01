@@ -1,0 +1,11 @@
+=Module <<a_api_type | module Eliom_output_cli >> =
+<<div class="code"|<<span class="keyword"|module>> Eliom_output_cli: <<span class='code'|sig>><<a_api text=".." | module Eliom_output_cli >><<span class='code'|end>>>>
+===@@id="3_CreatinglinksandformswithXHTML5M"@@~Creating links and forms with ~X~H~T~M~L~5~.~M===
+\\
+
+----
+\\
+
+===@@id="3_CreatinglinksandformswithXHTML5M"@@~Creating links and forms with ~X~H~T~M~L~5~.~M===
+\\
+<<div class="code"|<<span class="keyword"|module type>> <<a_api text="XHTML5FORMSSIG" | module type Eliom_output_cli.XHTML5FORMSSIG >> = <<span class='code'|sig>><<a_api text=".." | module type Eliom_output_cli.XHTML5FORMSSIG >><<span class='code'|end>>>><<div class="code"|<<span class="keyword"|module>> <<a_api text="Xhtml5forms" | module Eliom_output_cli.Xhtml5forms >>: <<span class="code type"|<<a_api text="XHTML5FORMSSIG" | module Eliom_output_cli.XHTML5FORMSSIG >>>><<span class="code type"|{{{  }}}>>>>

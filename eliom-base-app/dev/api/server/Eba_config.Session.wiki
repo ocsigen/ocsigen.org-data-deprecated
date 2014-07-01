@@ -1,0 +1,13 @@
+=Module type <<a_api_type subproject="server" | module type Eba_config.Session >> =
+<<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module type>> <<span class="ocsforge_color_uid"|Session>> <<span class="ocsforge_color_delimiter"|~=>> <<span class="ocsforge_color_keyword"|sig>><<a_api subproject="server" text=".." | module type Eba_config.Session >><<span class="ocsforge_color_keyword"|end>>>>~The config module the module ~Session of ~E~B~A~:
+
+
+ ~You can define some hooks which will be called at specific moment
+ of a request~:
+
+
+
+
+----
+<<pre class="ocsforge_color odocwiki_code"|<<span id="TYPEconfig"|<<span class="ocsforge_color_keyword"|class type>> <<a_api subproject="server" text="config" | class type Eba_config.Session.config >>>> <<span class="ocsforge_color_delimiter"|~=>> <<span class="ocsforge_color_keyword"|object>><<a_api subproject="server" text=".." | class type Eba_config.Session.config >><<span class="ocsforge_color_keyword"|end>>>><<pre id="VALconfig" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|config>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<a_api subproject="server" text="config" | class type Eba_config.Session.config >>>>>><<div class="odocwiki_info"|~The configuration class of the module~.
+>>

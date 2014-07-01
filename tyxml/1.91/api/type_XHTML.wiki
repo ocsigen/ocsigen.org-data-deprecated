@@ -1,0 +1,29 @@
+<<code language="ocaml" | sig
+  module type T = XHTML_sigs.XHTML(XML.M).T
+  module M : T
+  module P : XML_sigs.TypedSimplePrinter(XML.M)(M).T
+  module MakePrinter :
+    functor (O : XML_sigs.Output) -> XML_sigs.TypedPrinter(XML.M)(M)(O).T
+  module type T_01_01 = XHTML_sigs.XHTML(XML.M).T_01_01
+  module M_01_01 : T_01_01
+  module P_01_01 : XML_sigs.TypedSimplePrinter(XML.M)(M_01_01).T
+  module P_01_01_compat : XML_sigs.TypedSimplePrinter(XML.M)(M_01_01).T
+  module MakePrinter_01_01 :
+    functor (O : XML_sigs.Output) ->
+      XML_sigs.TypedPrinter(XML.M)(M_01_01)(O).T
+  module MakePrinter_01_01_compat :
+    functor (O : XML_sigs.Output) ->
+      XML_sigs.TypedPrinter(XML.M)(M_01_01)(O).T
+  module type T_01_00 = XHTML_sigs.XHTML(XML.M).T_01_00
+  module M_01_00 : T_01_00
+  module P_01_00 : XML_sigs.TypedSimplePrinter(XML.M)(M_01_00).T
+  module P_01_00_compat : XML_sigs.TypedSimplePrinter(XML.M)(M_01_00).T
+  module MakePrinter_01_00 :
+    functor (O : XML_sigs.Output) ->
+      XML_sigs.TypedPrinter(XML.M)(M_01_00)(O).T
+  module MakePrinter_01_00_compat :
+    functor (O : XML_sigs.Output) ->
+      XML_sigs.TypedPrinter(XML.M)(M_01_00)(O).T
+  module M_01_00_compat : T_01_00
+  module M_01_01_compat : T_01_01
+end >>

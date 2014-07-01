@@ -1,0 +1,15 @@
+<<code language="ocaml" | object
+  method draw : unit Js.meth
+  method getBackgroundColor : Js.js_string Js.t Js.meth
+  method getBorderColor : Js.js_string Js.t Js.meth
+  method getHeight : int Js.meth
+  method getLineWidth : int Js.meth
+  method getRadius : int Js.meth
+  method getWidth : int Js.meth
+  method setBakcgroundColor : Js.js_string Js.t -> unit Js.meth
+  method setBorderColor : Js.js_string Js.t -> unit Js.meth
+  method setHeight : int -> unit Js.meth
+  method setLineWidth : int -> unit Js.meth
+  method setRadius : int -> unit Js.meth
+  method setWidth : int -> unit Js.meth
+end >>

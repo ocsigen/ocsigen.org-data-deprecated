@@ -1,0 +1,4 @@
+=Module <<a_api_type | module HTML5.M >> =
+<<div class="code"|<<span class="keyword"|module>> M: <<span class="code type"|<<a_api text="T" | module HTML5.T >>>><<span class="code type"|{{{  }}}>>>>~Concrete implementation of ~H~T~M~L~5 typesafe constructors\\
+
+----

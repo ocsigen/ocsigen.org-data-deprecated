@@ -1,0 +1,11 @@
+=Class type <<a_api_type | class type Goog.Ui.option >> =
+<<pre class="ocsforge_color odocwiki_code"|<<span id="TYPEoption"|<<span class="ocsforge_color_keyword"|class type>> <<span class="ocsforge_color_name"|option>>>> <<span class="ocsforge_color_delimiter"|~=>> <<span class="ocsforge_color_keyword"|object>><<a_api text=".." | class type Goog.Ui.option >><<span class="ocsforge_color_keyword"|end>>>>**~Inherits**
+* <<a_api | class Goog.Ui.menuItem >>
+
+----
+<<pre class="ocsforge_color odocwiki_code"|<<span id="METHODperformActionInternal"|<<span class="ocsforge_color_keyword"|method>> <<span class="odocwiki_name"|performActionInternal>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<a_api text="Goog.Events.event" | class type Goog.Events.event >> <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>> <<span class="ocsforge_color_delimiter"| -> >> bool <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>> <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|meth>>>>>><<div class="odocwiki_info"|~Performs the appropriate action when the option is activated by the user~.
+   ~Overrides the superclass implementation by not changing the selection state
+   of the option and not dispatching any ~S~E~L~E~C~T~E~D events~, for backwards
+   compatibility with existing uses of this class~.
+**Returns** ~True if the action was allowed to proceed~, false otherwise~.\\
+>>

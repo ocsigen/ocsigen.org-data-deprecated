@@ -1,0 +1,5 @@
+=Class type <<a_api_type | class type Goog.Ui.toggleButton >> =
+<<pre class="ocsforge_color odocwiki_code"|<<span id="TYPEtoggleButton"|<<span class="ocsforge_color_keyword"|class type>> <<span class="ocsforge_color_name"|toggleButton>>>> <<span class="ocsforge_color_delimiter"|~=>> <<span class="ocsforge_color_keyword"|object>><<a_api text=".." | class type Goog.Ui.toggleButton >><<span class="ocsforge_color_keyword"|end>>>>**~Inherits**
+* <<a_api | class Goog.Ui.button >>
+
+----

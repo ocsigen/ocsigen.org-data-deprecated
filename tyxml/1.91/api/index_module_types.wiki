@@ -1,0 +1,47 @@
+=Index of module types=
+
+|@@ @class="alignleft"@@\\I|
+|<<a_api text="Info"| module type XML_sigs.Info >> ~[<<a_api | module XML_sigs >>~]||
+|<<a_api text="Iterable"| module type XML_sigs.Iterable >> ~[<<a_api | module XML_sigs >>~]||
+|@@ @class="alignleft"@@\\O|
+|<<a_api text="Output"| module type XML_sigs.Output >> ~[<<a_api | module XML_sigs >>~]||
+|@@ @class="alignleft"@@\\P|
+|<<a_api text="Printer"| module type XML_sigs_duce.Printer >> ~[<<a_api | module XML_sigs_duce >>~]||
+|@@ @class="alignleft"@@\\R|
+|<<a_api text="RawTypedPrinter"| module type XML_sigs_duce.RawTypedPrinter >> ~[<<a_api | module XML_sigs_duce >>~]||
+|@@ @class="alignleft"@@\\T|
+|<<a_api text="T"| module type XML_sigs_duce.TypedPrinter.T >> ~[<<a_api | module XML_sigs_duce.TypedPrinter >>~]||
+|<<a_api text="T"| module type XHTML_duce.T >> ~[<<a_api | module XHTML_duce >>~]||
+|<<a_api text="T"| module type HTML5_sigs.HTML5.T >> ~[<<a_api | module HTML5_sigs.HTML5 >>~]||
+|<<a_api text="T"| module type SVG_sigs.SVG.T >> ~[<<a_api | module SVG_sigs.SVG >>~]||
+|<<a_api text="T"| module type XHTML_sigs.XHTML.T >> ~[<<a_api | module XHTML_sigs.XHTML >>~]||
+|<<a_api text="T"| module type XML_sigs.T >> ~[<<a_api | module XML_sigs >>~]||
+|<<a_api text="T"| module type XML_sigs.TypedSimplePrinter.T >> ~[<<a_api | module XML_sigs.TypedSimplePrinter >>~]||
+|<<a_api text="T"| module type XML_sigs.TypedPrinter.T >> ~[<<a_api | module XML_sigs.TypedPrinter >>~]||
+|<<a_api text="T"| module type XML_sigs.TypedXML.T >> ~[<<a_api | module XML_sigs.TypedXML >>~]||
+|<<a_api text="T"| module type XML_sigs.SimplePrinter.T >> ~[<<a_api | module XML_sigs.SimplePrinter >>~]||
+|<<a_api text="T"| module type XML_sigs.Printer.T >> ~[<<a_api | module XML_sigs.Printer >>~]||
+|<<a_api text="T"| module type HTML5.T >> ~[<<a_api | module HTML5 >>~]|<<div class="info"|~Type signature of ~H~T~M~L~5 typesafe constructors
+>>
+|
+|<<a_api text="T"| module type SVG.T >> ~[<<a_api | module SVG >>~]|<<div class="info"|~Type signature of ~S~V~G typesafe constructors
+>>
+|
+|<<a_api text="T"| module type XHTML.T >> ~[<<a_api | module XHTML >>~]|<<div class="info"|~Type signature of ~X~H~T~M~L typesafe constructors
+>>
+|
+|<<a_api text="T_01_00"| module type XHTML_sigs.XHTML.T_01_00 >> ~[<<a_api | module XHTML_sigs.XHTML >>~]|<<div class="info"|~X~H~T~M~L ~1~.~0 includes some deprecated features that since
+    have been removed from ~X~H~T~M~L ~1~.~1~:
+>>
+|
+|<<a_api text="T_01_00"| module type XHTML.T_01_00 >> ~[<<a_api | module XHTML >>~]|<<div class="info"|~Type signature of ~X~H~T~M~L ~1~.~0 typesafe constructors
+>>
+|
+|<<a_api text="T_01_01"| module type XHTML_sigs.XHTML.T_01_01 >> ~[<<a_api | module XHTML_sigs.XHTML >>~]|<<div class="info"|~An alias for ~X~H~T~M~L ~1~.~1 ~(for symmetry~)~:
+>>
+|
+|<<a_api text="T_01_01"| module type XHTML.T_01_01 >> ~[<<a_api | module XHTML >>~]|<<div class="info"|~Type signature of ~X~H~T~M~L ~1~.~1 typesafe constructors
+>>
+|
+|<<a_api text="TypedXML"| module type XML_sigs_duce.TypedXML >> ~[<<a_api | module XML_sigs_duce >>~]||
+\\

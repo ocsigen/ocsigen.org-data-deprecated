@@ -1,0 +1,8 @@
+=Class type <<a_api_type | class type Goog.Ui.separator >> =
+<<pre class="ocsforge_color odocwiki_code"|<<span id="TYPEseparator"|<<span class="ocsforge_color_keyword"|class type>> <<span class="ocsforge_color_name"|separator>>>> <<span class="ocsforge_color_delimiter"|~=>> <<span class="ocsforge_color_keyword"|object>><<a_api text=".." | class type Goog.Ui.separator >><<span class="ocsforge_color_keyword"|end>>>>**~Inherits**
+* <<a_api | class Goog.Ui.control >>~Configures the component after its ~D~O~M has been rendered~.  ~Overrides
+   goog~.ui~.~Control~#enter~Document by making sure no event handler
+   is allocated~.
+
+----
+<<pre class="ocsforge_color odocwiki_code"|<<span id="METHODenterDocument"|<<span class="ocsforge_color_keyword"|method>> <<span class="odocwiki_name"|enterDocument>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|unit <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|meth>>>>>>

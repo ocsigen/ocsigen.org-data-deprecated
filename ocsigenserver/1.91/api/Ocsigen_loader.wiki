@@ -1,0 +1,55 @@
+=Module <<a_api_type | module Ocsigen_loader >> =
+<<div class="code"|<<span class="keyword"|module>> Ocsigen_loader: <<span class='code'|sig>><<a_api text=".." | module Ocsigen_loader >><<span class='code'|end>>>>~Module <<span class='code'|~Ocsigen~_loader>>~: ~Dynamic loading for ~Ocsigen~.\\
+
+----
+\\
+~Notes about ~Findlib usage~:* ~Findlib is called with predicates "plugin"~, "mt"~. ~Moreover~, the
+      predicate "native" or "byte" is added~, depending on whether
+      ~Ocsigen is running in native or bytecode mode~.
+* ~In native mode~, ~.cmx~/~.cmxa extensions provided by ~M~E~T~A files are
+      replaced by ~.cmxs~.
+* ~The ~O~C~A~M~L~P~A~T~H environment variable is ignored altogether~.
+
+\\
+<<div  id="EXCEPTIONDynlink_error" class="code"|<<span class="keyword"|exception>> Dynlink_error <<span class="keyword"|of>> <<span class="code type"|string * exn>>>>
+<<div  id="EXCEPTIONFindlib_error" class="code"|<<span class="keyword"|exception>> Findlib_error <<span class="keyword"|of>> <<span class="code type"|string * exn>>>>
+<<div id="VALtranslate" class="code"|<<span class="keyword"|val>> translate : <<span class="code type"|string -> string>>>><<div class="info"|<<span class='code'|translate filename>> translate ~.cmo~/~.cma extensions to ~.cmxs in
+      native mode~, and ~.cmxs to ~.cmo ~(~.cma if it exists~) in bytecode
+      mode~.\\
+>>
+<<div id="VALset_init_on_load" class="code"|<<span class="keyword"|val>> set~_init~_on~_load : <<span class="code type"|bool -> unit>>>><<div class="info"|~If set to <<span class='code'|true>>~, the module initialization functions passed to
+      <<span class='code'|set~_module~_init~_function>> will be executed directly~. ~Otherwise~,
+      they will have to be invoked using <<span class='code'|init~_module>> at some later stage~.\\
+>>
+<<div id="VALloadfile" class="code"|<<span class="keyword"|val>> loadfile : <<span class="code type"|(unit -> unit) -> (unit -> unit) -> bool -> string -> unit>>>><<div class="info"|<<span class='code'|loadfile pre post force file>> ~(dynamically~) loads <<span class='code'|file>>~. ~If
+      <<span class='code'|force>> is <<span class='code'|false>>~, remember <<span class='code'|file>> so that it isn~'t loaded
+      twice~. ~If the loading effectively occurs~, <<span class='code'|pre>> ~(resp~. <<span class='code'|post>>~)
+      is called before ~(resp~. after~) the loading~. <<span class='code'|post>> will be
+      called even if the loading fails~.\\
+>>
+<<div id="VALloadfiles" class="code"|<<span class="keyword"|val>> loadfiles : <<span class="code type"|(unit -> unit) -> (unit -> unit) -> bool -> string list -> unit>>>><<div class="info"|<<span class='code'|loadfiles pre post force file>> loads all the <<span class='code'|files>>~, using
+      <<span class='code'|loadfile ~(fun ~(~) ~-~> ~(~)~) ~(fun ~(~) ~-~> ~(~)~) false>> for all the files
+      but the last one~, and <<span class='code'|loadfile pre post force>> for the last one
+      ~(if any~)~.\\
+>>
+<<div id="VALset_module_init_function" class="code"|<<span class="keyword"|val>> set~_module~_init~_function : <<span class="code type"|string -> (unit -> unit) -> unit>>>><<div class="info"|<<span class='code'|set~_module~_init~_function name f>> registers the function <<span class='code'|f>>~, which will
+      be used to initialize the module when <<span class='code'|init~_module name>> is called~.\\
+>>
+<<div id="VALinit_module" class="code"|<<span class="keyword"|val>> init~_module : <<span class="code type"|(unit -> unit) -> (unit -> unit) -> bool -> string -> unit>>>><<div class="info"|<<span class='code'|init~_module pre post force name>> runs the init function for the module
+      <<span class='code'|name>>~. ~If <<span class='code'|force>> is <<span class='code'|false>>~, remember <<span class='code'|name>> so that the init function
+      isn~'t executed twice~. ~If the function is executed~, <<span class='code'|pre>> ~(resp~. <<span class='code'|post>>~)
+      is called before ~(resp~. after~) the loading~. <<span class='code'|post>> will be
+      called even if the loading fails~.\\
+>>
+<<div id="VALget_ocamlpath" class="code"|<<span class="keyword"|val>> get~_ocamlpath : <<span class="code type"|unit -> string list>>>><<div class="info"|~Returns the current ~Findlib library search path~.\\
+>>
+<<div id="VALset_ocamlpath" class="code"|<<span class="keyword"|val>> set~_ocamlpath : <<span class="code type"|string list -> unit>>>><<div class="info"|~Sets the current ~Findlib library search path~. ~The ~O~Caml standard
+      library path and some site~-specific paths are always implicitly
+      added~.\\
+>>
+<<div id="VALadd_ocamlpath" class="code"|<<span class="keyword"|val>> add~_ocamlpath : <<span class="code type"|string -> unit>>>><<div class="info"|~Adds a path to the ~Findlib library search path~.\\
+>>
+<<div id="VALfindfiles" class="code"|<<span class="keyword"|val>> findfiles : <<span class="code type"|string -> string list>>>><<div class="info"|<<span class='code'|findfiles pkg>> returns the list of files needed to load ~Findlib
+      package <<span class='code'|pkg>>~, including dependencies~. ~The archive files of
+      <<span class='code'|pkg>> will appear last in the returned result~.\\
+>>

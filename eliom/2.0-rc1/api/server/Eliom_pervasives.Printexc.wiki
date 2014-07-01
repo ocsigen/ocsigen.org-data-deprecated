@@ -1,0 +1,4 @@
+=Module <<a_api_type subproject="server" | module Eliom_pervasives.Printexc >> =
+<<div class="code"|<<span class="keyword"|module>> Printexc: <<span class='code'|sig>><<a_api subproject="server" text=".." | module Eliom_pervasives.Printexc >><<span class='code'|end>>>>
+----
+<<div class="code"|<<span class="keyword"|include>> Printexc>>

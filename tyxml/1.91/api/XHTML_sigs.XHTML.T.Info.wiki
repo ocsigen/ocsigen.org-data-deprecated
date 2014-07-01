@@ -1,0 +1,4 @@
+=Module <<a_api_type | module XHTML_sigs.XHTML.T.Info >> =
+<<div class="code"|<<span class="keyword"|module>> Info: <<span class="code type"|<<a_api text="XML_sigs.Info" | module XML_sigs.Info >>>><<span class="code type"|{{{  }}}>>>>
+----
+<<div id="VALcontent_type" class="code"|<<span class="keyword"|val>> content~_type : <<span class="code type"|string>>>><<div id="VALversion" class="code"|<<span class="keyword"|val>> version : <<span class="code type"|string>>>><<div id="VALstandard" class="code"|<<span class="keyword"|val>> standard : <<span class="code type"|<<a_api text="Uri.uri" | type Uri.uri >>>>>><<div id="VALdoctype" class="code"|<<span class="keyword"|val>> doctype : <<span class="code type"|string>>>><<div id="VALemptytags" class="code"|<<span class="keyword"|val>> emptytags : <<span class="code type"|string list>>>>

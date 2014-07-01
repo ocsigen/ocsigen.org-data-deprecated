@@ -1,0 +1,4 @@
+=Module type <<a_api_type | module type XML_sigs.Printer.T >> =
+<<div class="code"|<<span class="keyword"|module type>> T = <<span class='code'|sig>><<a_api text=".." | module type XML_sigs.Printer.T >><<span class='code'|end>>>>
+----
+<<div id="VALprint_list" class="code"|<<span class="keyword"|val>> print~_list : <<span class="code type"|?encode:(string -> string) -> <<a_api text="XML.elt" | type XML.elt >> list -> O.out>>>>

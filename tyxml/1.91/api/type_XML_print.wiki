@@ -1,0 +1,23 @@
+<<code language="ocaml" | sig
+  val encode_unsafe_char : string -> string
+  val encode_unsafe_char_and_at : string -> string
+  val compose_decl : ?version:string -> ?encoding:string -> unit -> string
+  val compose_doctype : string -> string list -> string
+  module Make :
+    functor (XML : XML_sigs.Iterable) ->
+      functor (I : sig val emptytags : string list end) ->
+        functor (O : XML_sigs.Output) -> XML_sigs.Printer(XML)(O).T
+  module MakeTyped :
+    functor (XML : XML_sigs.Iterable) ->
+      functor (TypedXML : XML_sigs.TypedXML(XML).T) ->
+        functor (O : XML_sigs.Output) ->
+          XML_sigs.TypedPrinter(XML)(TypedXML)(O).T
+  module MakeSimple :
+    functor (XML : XML_sigs.Iterable) ->
+      functor (F : sig val emptytags : string list end) ->
+        XML_sigs.SimplePrinter(XML).T
+  module MakeTypedSimple :
+    functor (XML : XML_sigs.Iterable) ->
+      functor (TypedXML : XML_sigs.TypedXML(XML).T) ->
+        XML_sigs.TypedSimplePrinter(XML)(TypedXML).T
+end >>

@@ -1,0 +1,7 @@
+<<code language="ocaml" | sig
+  val _HILITE : Js.js_string Js.t
+  val _SELECT : Js.js_string Js.t
+  val _DISMISS : Js.js_string Js.t
+  val _CANCEL_DISMISS : Js.js_string Js.t
+  val _UPDATE : Js.js_string Js.t
+end >>

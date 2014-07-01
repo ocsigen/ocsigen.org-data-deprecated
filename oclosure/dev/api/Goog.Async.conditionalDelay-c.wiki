@@ -1,0 +1,26 @@
+=Class type <<a_api_type | class type Goog.Async.conditionalDelay >> =
+<<pre class="ocsforge_color odocwiki_code"|<<span id="TYPEconditionalDelay"|<<span class="ocsforge_color_keyword"|class type>> <<span class="ocsforge_color_name"|conditionalDelay>>>> <<span class="ocsforge_color_delimiter"|~=>> <<span class="ocsforge_color_keyword"|object>><<a_api text=".." | class type Goog.Async.conditionalDelay >><<span class="ocsforge_color_keyword"|end>>>>**~Inherits**
+* <<a_api | class Goog.Disposable.disposable >>
+
+----
+<<pre class="ocsforge_color odocwiki_code"|<<span id="METHODisActive"|<<span class="ocsforge_color_keyword"|method>> <<span class="odocwiki_name"|isActive>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|bool <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>> <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|meth>>>>>><<pre class="ocsforge_color odocwiki_code"|<<span id="METHODisDone"|<<span class="ocsforge_color_keyword"|method>> <<span class="odocwiki_name"|isDone>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|bool <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>> <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|meth>>>>>><<pre class="ocsforge_color odocwiki_code"|<<span id="METHODonFailure"|<<span class="ocsforge_color_keyword"|method>> <<span class="odocwiki_name"|onFailure>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|unit <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|meth>>>>>><<div class="odocwiki_info"|~Called when this delayed call is cancelled because the timeout has been
+   exceeded~, and the listener has never returned true~.
+   ~Designed for inheritance~, should be overridden by subclasses or on the
+   instances if they care~.
+
+
+   ~Do nothing by default
+>>
+<<pre class="ocsforge_color odocwiki_code"|<<span id="METHODonSuccess"|<<span class="ocsforge_color_keyword"|method>> <<span class="odocwiki_name"|onSuccess>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|unit <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|meth>>>>>><<div class="odocwiki_info"|~Called when the listener has been successfully executed and returned
+   true~. ~The is~Done method should return true by now~.
+   ~Designed for inheritance~, should be overridden by subclasses or on the
+   instances if they care~.
+>>
+<<pre class="ocsforge_color odocwiki_code"|<<span id="METHODstart"|<<span class="ocsforge_color_keyword"|method>> <<span class="odocwiki_name"|start>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|number>> <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>> <<span class="ocsforge_color_delimiter"| -> >> <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|number>> <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>> <<span class="ocsforge_color_delimiter"| -> >> unit <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|meth>>>>>><<div class="odocwiki_info"|~Starts the delay timer~. ~The provided listener function will be called
+   repeatedly after the specified interval until the function returns
+   <<span class="odocwiki_inlinecode"|true>> or the timeout is exceeded~. ~Calling start on an active timer
+   will stop the timer first~.
+>>
+<<pre class="ocsforge_color odocwiki_code"|<<span id="METHODstop"|<<span class="ocsforge_color_keyword"|method>> <<span class="odocwiki_name"|stop>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|unit <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|meth>>>>>><<div class="odocwiki_info"|~Stops the delay timer if it is active~. ~No action is taken if the timer is not
+   in use~.
+>>

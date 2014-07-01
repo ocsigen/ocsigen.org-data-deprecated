@@ -1,0 +1,16 @@
+<<code language="ocaml" | sig
+  type state =
+      ALL
+    | DISABLED
+    | HOVER
+    | ACTIVE
+    | SELECTED
+    | CHECKED
+    | FOCUSED
+    | OPENED
+  type state_pre
+  val state_of_state_pre :
+    Goog.Ui.Component.State.state_pre -> Goog.Ui.Component.State.state
+  val state_pre_of_state :
+    Goog.Ui.Component.State.state -> Goog.Ui.Component.State.state_pre
+end >>

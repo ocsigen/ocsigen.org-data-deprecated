@@ -1,0 +1,4 @@
+<<code language="ocaml" | sig
+  module Corner :
+    sig type corner = TOP_LEFT | BOTTOM_LEFT | TOP_RIGHT | BOTTOM_RIGHT end
+end >>

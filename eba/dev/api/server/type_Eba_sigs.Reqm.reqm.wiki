@@ -1,0 +1,8 @@
+<<code language="ocaml" | object
+  method clear : unit
+  method get : 'a
+  method get_opt : 'a option
+  method has : bool
+  method set : 'a -> unit
+  method to_html : Eba_sigs.Reqm.html
+end >>

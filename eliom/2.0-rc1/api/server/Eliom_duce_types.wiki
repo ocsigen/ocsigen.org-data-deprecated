@@ -1,0 +1,77 @@
+=Module <<a_api_type subproject="server" | module Eliom_duce_types >> =
+<<div class="code"|<<span class="keyword"|module>> Eliom_duce_types: <<span class='code'|sig>><<a_api subproject="server" text=".." | module Eliom_duce_types >><<span class='code'|end>>>>
+----
+<<div class="code" id="TYPEuri"|<<span class="keyword"|type>> uri = <<span class="code type"|string>> >>
+
+<<div class="code" id="TYPEpcdata_elt"|<<span class="keyword"|type>> pcdata~_elt = <<span class="code type"|{{String}}>> >>
+
+<<div class="code" id="TYPEform_elt"|<<span class="keyword"|type>> form~_elt = <<span class="code type"|XHTML_types_duce.form>> >>
+
+<<div class="code" id="TYPEform_content_elt"|<<span class="keyword"|type>> form~_content~_elt = <<span class="code type"|XHTML_types_duce.form_content>> >>
+
+<<div class="code" id="TYPEform_content_elt_list"|<<span class="keyword"|type>> form~_content~_elt~_list = <<span class="code type"|{{form_content_elt_list}}>> >>
+
+<<div class="code" id="TYPEform_attrib_t"|<<span class="keyword"|type>> form~_attrib~_t = <<span class="code type"|{{form_attrib_t}}>> >>
+
+<<div class="code" id="TYPEa_elt"|<<span class="keyword"|type>> <<span class="code type"|'a>> a~_elt = <<span class="code type"|XHTML_types_duce.a>> >>
+
+<<div class="code" id="TYPEa_elt_list"|<<span class="keyword"|type>> <<span class="code type"|'a>> a~_elt~_list = <<span class="code type"|{{a_elt_list}}>> >>
+
+<<div class="code" id="TYPEa_content_elt"|<<span class="keyword"|type>> <<span class="code type"|'a>> a~_content~_elt = <<span class="code type"|XHTML_types_duce.a_content>> >>
+
+<<div class="code" id="TYPEa_content_elt_list"|<<span class="keyword"|type>> <<span class="code type"|'a>> a~_content~_elt~_list = <<span class="code type"|{{a_content_elt_list}}>> >>
+
+<<div class="code" id="TYPEa_attrib_t"|<<span class="keyword"|type>> a~_attrib~_t = <<span class="code type"|XHTML_types_duce.a_attrs>> >>
+
+<<div class="code" id="TYPElink_elt"|<<span class="keyword"|type>> link~_elt = <<span class="code type"|XHTML_types_duce.link>> >>
+
+<<div class="code" id="TYPElink_attrib_t"|<<span class="keyword"|type>> link~_attrib~_t = <<span class="code type"|XHTML_types_duce.link_attrs>> >>
+
+<<div class="code" id="TYPEscript_elt"|<<span class="keyword"|type>> script~_elt = <<span class="code type"|XHTML_types_duce.script>> >>
+
+<<div class="code" id="TYPEscript_attrib_t"|<<span class="keyword"|type>> script~_attrib~_t = <<span class="code type"|{{script_attrib_t}}>> >>
+
+<<div class="code" id="TYPEtextarea_elt"|<<span class="keyword"|type>> textarea~_elt = <<span class="code type"|XHTML_types_duce.textarea>> >>
+
+<<div class="code" id="TYPEtextarea_attrib_t"|<<span class="keyword"|type>> textarea~_attrib~_t = <<span class="code type"|{{textarea_attrib_t}}>> >>
+
+<<div class="code" id="TYPEinput_elt"|<<span class="keyword"|type>> input~_elt = <<span class="code type"|XHTML_types_duce.input>> >>
+
+<<div class="code" id="TYPEinput_attrib_t"|<<span class="keyword"|type>> input~_attrib~_t = <<span class="code type"|XHTML_types_duce.input_attrs>> >>
+
+<<div class="code" id="TYPEselect_elt"|<<span class="keyword"|type>> select~_elt = <<span class="code type"|XHTML_types_duce.select>> >>
+
+<<div class="code" id="TYPEselect_content_elt"|<<span class="keyword"|type>> select~_content~_elt = <<span class="code type"|XHTML_types_duce.select_content>> >>
+
+<<div class="code" id="TYPEselect_content_elt_list"|<<span class="keyword"|type>> select~_content~_elt~_list = <<span class="code type"|{{select_content_elt_list}}>> >>
+
+<<div class="code" id="TYPEselect_attrib_t"|<<span class="keyword"|type>> select~_attrib~_t = <<span class="code type"|XHTML_types_duce.select_attrs>> >>
+
+<<div class="code" id="TYPEbutton_elt"|<<span class="keyword"|type>> button~_elt = <<span class="code type"|XHTML_types_duce.button>> >>
+
+<<div class="code" id="TYPEbutton_content_elt"|<<span class="keyword"|type>> button~_content~_elt = <<span class="code type"|XHTML_types_duce.button_content>> >>
+
+<<div class="code" id="TYPEbutton_content_elt_list"|<<span class="keyword"|type>> button~_content~_elt~_list = <<span class="code type"|{{button_content_elt_list}}>> >>
+
+<<div class="code" id="TYPEbutton_attrib_t"|<<span class="keyword"|type>> button~_attrib~_t = <<span class="code type"|XHTML_types_duce.button_attrs>> >>
+
+<<div class="code" id="TYPEoption_elt"|<<span class="keyword"|type>> option~_elt = <<span class="code type"|XHTML_types_duce.option>> >>
+
+<<div class="code" id="TYPEoption_elt_list"|<<span class="keyword"|type>> option~_elt~_list = <<span class="code type"|{{option_elt_list}}>> >>
+
+<<div class="code" id="TYPEoptgroup_attrib_t"|<<span class="keyword"|type>> optgroup~_attrib~_t = <<span class="code type"|{{optgroup_attrib_t}}>> >>
+
+<<div class="code" id="TYPEoption_attrib_t"|<<span class="keyword"|type>> option~_attrib~_t = <<span class="code type"|XHTML_types_duce.option_attrs>> >>
+
+<<div class="code" id="TYPEinput_type_t"|<<span class="keyword"|type>> input~_type~_t = <<span class="code type"|XHTML_types_duce.input_type_values>> >>
+
+<<div class="code" id="TYPEraw_input_type_t"|<<span class="keyword"|type>> raw~_input~_type~_t = <<span class="code type"|XHTML_types_duce.input_type_values>> >>
+
+<<div class="code" id="TYPEbutton_type_t"|<<span class="keyword"|type>> button~_type~_t = <<span class="code type"|XHTML_types_duce.button_type_values>> >>
+
+<<div class="code" id="TYPEhtml"|<<span class="keyword"|type>> html = <<span class="code type"|XHTML_types_duce.html>> >>
+
+<<div class="code" id="TYPEanyxml"|<<span class="keyword"|type>> anyxml = <<span class="code type"|Ocamlduce.Load.anyxml>> >>
+
+<<div class="code" id="TYPEblocks"|<<span class="keyword"|type>> blocks = <<span class="code type"|XHTML_duce.M.elt list>> >>
+

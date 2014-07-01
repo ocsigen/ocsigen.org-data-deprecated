@@ -1,0 +1,46 @@
+=Module <<a_api_type | module Goog.Ui.Component >> =
+<<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module>> <<span class="ocsforge_color_uid"|<<span class="ocsforge_color_uid"|Component>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="ocsforge_color_keyword"|sig>><<a_api text=".." | module Goog.Ui.Component >><<span class="ocsforge_color_keyword"|end>>>>
+----
+<<pre id="VALaddChild" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|add~Child>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|\\  ~#<<a_api text="Goog.Ui.component" | class type Goog.Ui.component >> <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>> <<span class="ocsforge_color_delimiter"| -> >>\\  ~#<<a_api text="Goog.Ui.component" | class type Goog.Ui.component >> <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>> <<span class="ocsforge_color_delimiter"| -> >> bool <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>> <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|opt>> <<span class="ocsforge_color_delimiter"| -> >> unit>>>><<pre id="VALaddChildAt" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|add~Child~At>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|\\  ~#<<a_api text="Goog.Ui.component" | class type Goog.Ui.component >> <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>> <<span class="ocsforge_color_delimiter"| -> >>\\  ~#<<a_api text="Goog.Ui.component" | class type Goog.Ui.component >> <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>> <<span class="ocsforge_color_delimiter"| -> >> int <<span class="ocsforge_color_delimiter"| -> >> bool <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>> <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|opt>> <<span class="ocsforge_color_delimiter"| -> >> unit>>>><<div class="odocwiki_info"|~Adds the specified component as a child of this component at the given
+      ~0~-based index~.
+
+
+      ~Both <<span class="odocwiki_inlinecode"|add~Child>> and <<span class="odocwiki_inlinecode"|add~Child~At>> assume the following contract
+      between parent and child components~:
+* the child component~'s element must be a descendant of the parent
+      component~'s element~, and
+* the ~D~O~M state of the child component must be consistent with the ~D~O~M
+      state of the parent component ~(see <<span class="odocwiki_inlinecode"|is~In~Document>>~)~.
+
+      ~In particular~, <<span class="odocwiki_inlinecode"|parent~.add~Child~(child~)>> will throw an error if the
+      child component is already in the document~, but the parent isn~'t~.
+
+
+      ~Clients of this ~A~P~I may call <<span class="odocwiki_inlinecode"|add~Child>> and <<span class="odocwiki_inlinecode"|add~Child~At>> with
+      <<span class="odocwiki_inlinecode"|opt~_render>> set to true~.  ~If <<span class="odocwiki_inlinecode"|opt~_render>> is true~, calling these
+      methods will automatically render the child component~'s element into the
+      parent component~'s element~.  ~However~, <<span class="odocwiki_inlinecode"|parent~.add~Child~(child~, true~)>>
+      will throw an error if~:
+* the parent component has no ~D~O~M ~(i~.e~. <<span class="odocwiki_inlinecode"|parent~.get~Element~(~)>> is
+      null~)~, or
+* the child component is already in the document~, regardless of the
+      parent~'s ~D~O~M state~.
+
+      ~Finally~, this method also throws an error if the new child already has a
+      different parent~, or the given index is out of bounds~.
+**Returns** \\
+>>
+<<pre id="VALremoveChild" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|remove~Child>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|\\  ~#<<a_api text="Goog.Ui.component" | class type Goog.Ui.component >> <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>> <<span class="ocsforge_color_delimiter"| -> >>\\  ~#<<a_api text="Goog.Ui.component" | class type Goog.Ui.component >> <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>> <<span class="ocsforge_color_delimiter"| -> >>\\  bool <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>> <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|opt>> <<span class="ocsforge_color_delimiter"| -> >> <<a_api text="Goog.Ui.component" | class type Goog.Ui.component >> <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>> <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|meth>>>>>><<div class="odocwiki_info"|~Removes the given child from this component~, and returns it~.  ~Throws an error
+     if the argument is invalid or if the specified child isn~'t found in the
+     parent component~.  ~The argument can either be a string ~(interpreted as the
+     ~I~D of the child component to remove~) or the child component itself~.
+
+
+     ~If <<span class="odocwiki_inlinecode"|opt~_unrender>> is true~, calls goog~.ui~.component~#exit~Document
+     on the removed child~, and subsequently detaches the child~'s ~D~O~M from the
+     document~.  ~Otherwise it is the caller~'s responsibility to clean up the child
+     component~'s ~D~O~M~.
+**Returns** ~The removed component~, if any~.\\
+>>
+<<pre id="VALremoveChild_id" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|remove~Child~_id>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|\\  ~#<<a_api text="Goog.Ui.component" | class type Goog.Ui.component >> <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>> <<span class="ocsforge_color_delimiter"| -> >>\\  <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|js_string>> <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>> <<span class="ocsforge_color_delimiter"| -> >>\\  bool <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>> <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|opt>> <<span class="ocsforge_color_delimiter"| -> >> <<a_api text="Goog.Ui.component" | class type Goog.Ui.component >> <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>> <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|meth>>>>>><<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module>> <<a_api text="State" | module Goog.Ui.Component.State >> <<span class="ocsforge_color_delimiter"|~:>> <<span class="ocsforge_color_keyword"|sig>><<a_api text=".." | module Goog.Ui.Component.State >><<span class="ocsforge_color_keyword"|end>>>><<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module>> <<a_api text="EventType" | module Goog.Ui.Component.EventType >> <<span class="ocsforge_color_delimiter"|~:>> <<span class="ocsforge_color_keyword"|sig>><<a_api text=".." | module Goog.Ui.Component.EventType >><<span class="ocsforge_color_keyword"|end>>>><<div class="odocwiki_info"|~Common events fired by components so that event propagation is useful~.
+>>

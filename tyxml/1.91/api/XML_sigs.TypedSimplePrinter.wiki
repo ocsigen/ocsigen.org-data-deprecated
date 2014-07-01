@@ -1,0 +1,8 @@
+=Functor <<a_api_type | module XML_sigs.TypedSimplePrinter >> =
+<<div class="code"|<<span class="keyword"|module>> TypedSimplePrinter: <<div class="sig_block"|<<span class='code'|functor ~(>><<span class='code'|~X~M~L>><<span class='code'| ~: >><<span class="code type"|<<a_api text="T" | module XML_sigs.T >>>><<span class='code'|~) ~-~> >><<div class="sig_block"|<<span class='code'|functor ~(>><<span class='code'|~Typed~X~M~L>><<span class='code'| ~: >><<span class="code type"|TypedXML(XML).T>><<span class='code'|~) ~-~> >><<span class='code'|sig>><<a_api text=".." | module XML_sigs.TypedSimplePrinter >><<span class='code'|end>>>>>>>><<div class="module_param_list" | <<span class="param_title" |Parameters :>><<div|
+|@@class="paramstable"@ @class="centertop fifteen code"@@{{{XML}}}|@@class="centertop"@@:|<<span class="code type"|<<a_api text="T" | module XML_sigs.T >>>>|
+|@@class="centertop fifteen code"@@{{{TypedXML}}}|@@class="centertop"@@:|<<span class="code type"|TypedXML(XML).T>>|
+>>>>
+
+----
+<<div class="code"|<<span class="keyword"|module type>> <<a_api text="T" | module type XML_sigs.TypedSimplePrinter.T >> = <<span class='code'|sig>><<a_api text=".." | module type XML_sigs.TypedSimplePrinter.T >><<span class='code'|end>>>>

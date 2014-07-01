@@ -1,0 +1,6 @@
+<<code language="ocaml" | sig
+  val _CHANGE : Js.js_string Js.t
+  val _HIGHLIGHT_CHANGE : Js.js_string Js.t
+  val _HIGHLIGHT : Js.js_string Js.t
+  val _UNHIGHLIGHT : Js.js_string Js.t
+end >>

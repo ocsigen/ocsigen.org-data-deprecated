@@ -1,0 +1,23 @@
+=Class type <<a_api_type | class type Goog.Ui.Editor.toolbarController >> =
+<<pre class="ocsforge_color odocwiki_code"|<<span id="TYPEtoolbarController"|<<span class="ocsforge_color_keyword"|class type>> <<span class="ocsforge_color_name"|toolbarController>>>> <<span class="ocsforge_color_delimiter"|~=>> <<span class="ocsforge_color_keyword"|object>><<a_api text=".." | class type Goog.Ui.Editor.toolbarController >><<span class="ocsforge_color_keyword"|end>>>>**~Inherits**
+* <<a_api | class Goog.Events.eventTarget >>
+
+----
+<<pre class="ocsforge_color odocwiki_code"|<<span id="METHODblur"|<<span class="ocsforge_color_keyword"|method>> <<span class="odocwiki_name"|blur>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|unit <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|meth>>>>>><<div class="odocwiki_info"| ~Programmatically blurs the editor toolbar~, un~-highlighting the currently
+ highlighted item~, and closing the currently open menu ~(if any~)~.
+>>
+<<pre class="ocsforge_color odocwiki_code"|<<span id="METHODdisposeInternal"|<<span class="ocsforge_color_keyword"|method>> <<span class="odocwiki_name"|disposeInternal>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|unit <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|meth>>>>>><<pre class="ocsforge_color odocwiki_code"|<<span id="METHODgetToolbar"|<<span class="ocsforge_color_keyword"|method>> <<span class="odocwiki_name"|getToolbar>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<a_api text="Goog.Ui.toolbar" | class type Goog.Ui.toolbar >> <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>> <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|meth>>>>>><<div class="odocwiki_info"| ~Returns the toolbar  component that manages the editor~.  ~Useful for
+ classes that extend <<span class="odocwiki_inlinecode"|goog~.ui~.editor~.~Toolbar~Controller>>~.
+
+**Returns** ~The toolbar  component~.\\
+>>
+<<pre class="ocsforge_color odocwiki_code"|<<span id="METHODisEnabled"|<<span class="ocsforge_color_keyword"|method>> <<span class="odocwiki_name"|isEnabled>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|bool <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>> <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|meth>>>>>><<div class="odocwiki_info"|**Returns** ~Whether the toolbar is enabled~.\\
+>>
+<<pre class="ocsforge_color odocwiki_code"|<<span id="METHODisVisible"|<<span class="ocsforge_color_keyword"|method>> <<span class="odocwiki_name"|isVisible>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|bool <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>> <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|meth>>>>>><<div class="odocwiki_info"|**Returns** ~Whether the toolbar is visible~.\\
+>>
+<<pre class="ocsforge_color odocwiki_code"|<<span id="METHODsetEnabled"|<<span class="ocsforge_color_keyword"|method>> <<span class="odocwiki_name"|setEnabled>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|bool <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>> <<span class="ocsforge_color_delimiter"| -> >> unit <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|meth>>>>>><<div class="odocwiki_info"| ~Enables or disables the toolbar~.
+
+>>
+<<pre class="ocsforge_color odocwiki_code"|<<span id="METHODsetVisible"|<<span class="ocsforge_color_keyword"|method>> <<span class="odocwiki_name"|setVisible>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|bool <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>> <<span class="ocsforge_color_delimiter"| -> >> unit <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|meth>>>>>><<div class="odocwiki_info"| ~Shows or hides the toolbar~.
+
+>>

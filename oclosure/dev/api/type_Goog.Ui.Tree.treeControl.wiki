@@ -1,0 +1,75 @@
+<<code language="ocaml" | object
+  method add :
+    'a baseNode Js.t -> 'a baseNode Js.t Js.opt -> 'a baseNode Js.t Js.meth
+  method addEventListener :
+    Js.js_string Js.t ->
+    (unit -> bool Js.t) Js.callback -> bool Js.t Js.opt -> unit Js.meth
+  method canDecorate : #Dom_html.element Js.t -> bool Js.t Js.meth
+  method collapse : unit Js.meth
+  method collapseAll : unit Js.meth
+  method contains : 'a baseNode Js.t -> bool Js.t Js.meth
+  method createDom : unit Js.meth
+  method createNode :
+    Js.js_string Js.t -> 'a Goog.Ui.Tree.treeNode Js.t Js.meth
+  method decorate : #Dom_html.element Js.t -> unit Js.meth
+  method deselect : unit Js.meth
+  method dispatchEvent :
+    (Js.js_string Js.t, Events.event Js.t) Tools.Union.t -> bool Js.t Js.meth
+  method dispose : unit Js.meth
+  method disposeInternal : unit Js.meth
+  method enterDocument : unit Js.meth
+  method exitDocument : unit Js.meth
+  method expand : unit Js.meth
+  method expandAll : unit Js.meth
+  method expandChildren : unit Js.meth
+  method getAfterLabelElement : Dom_html.element Js.t Js.meth
+  method getAfterLabelHtml : Js.js_string Js.t Js.meth
+  method getChild : Js.js_string Js.t -> component Js.t Js.opt Js.meth
+  method getChildAt : int -> component Js.t Js.opt Js.meth
+  method getChildCount : int Js.meth
+  method getChildIds : Js.js_string Js.t Js.js_array Js.t Js.meth
+  method getChildren : 'a baseNode Js.t Js.js_array Js.t Js.meth
+  method getChildrenElement : Dom_html.element Js.t Js.meth
+  method getClientData : 'a Js.opt Js.meth
+  method getConfig : config Js.meth
+  method getContentElement : Dom_html.element Js.t Js.meth
+  method getDepth : Js.number Js.t Js.meth
+  method getDisposed : bool Js.t Js.meth
+  method getDomHelper : Gdom.domHelper Js.t Js.meth
+  method getElement : Dom_html.element Js.t Js.meth
+  method getElementByFragment :
+    Js.js_string Js.t -> Dom_html.element Js.t Js.meth
+  method getExpandIconClass : Js.js_string Js.t Js.meth
+  method getExpandIconElement : Dom_html.element Js.t Js.meth
+  method getExpandIconHtml : Js.js_string Js.t Js.meth
+  method getExpanded : bool Js.t Js.meth
+  method getExpandedIconClass : Js.js_string Js.t Js.meth
+  method getFirstChild : 'a baseNode Js.t Js.opt Js.meth
+  method getFragmentFromId : Js.js_string Js.t -> Js.js_string Js.t Js.meth
+  method getHtml : Js.js_string Js.t Js.meth
+  method getIconClass : Js.js_string Js.t Js.meth
+  method getId : Js.js_string Js.t Js.meth
+  method getParent : component Js.t Js.opt Js.meth
+  method getParentEventTarget : Events.eventTarget Js.t Js.meth
+  method getTree : 'a Goog.Ui.Tree.treeControl Js.t Js.meth
+  method hasChildren : bool Js.t Js.meth
+  method indexOfChild : component Js.t Js.opt -> int Js.meth
+  method isDisposed : bool Js.t Js.meth
+  method isInDocument : bool Js.t Js.meth
+  method isRightToLeft : bool Js.t Js.meth
+  method makeId : Js.js_string Js.t -> Js.js_string Js.t Js.meth
+  method removeChildAt : int -> bool Js.t Js.opt -> component Js.t Js.meth
+  method removeChildren : bool Js.t Js.opt -> unit Js.meth
+  method removeEventListener :
+    Js.js_string Js.t ->
+    (unit -> bool Js.t) Js.callback -> bool Js.t Js.opt -> unit Js.meth
+  method render : #Dom_html.element Js.t Js.opt -> unit Js.meth
+  method renderBefore : #Dom_html.element Js.t -> unit Js.meth
+  method setClientData : 'a Js.opt -> unit Js.meth
+  method setId : Js.js_string Js.t -> unit Js.meth
+  method setParent : component Js.t -> unit Js.meth
+  method setParentEventTarget :
+    Events.eventTarget Js.t Js.opt -> unit Js.meth
+  method setRightToLeft : bool Js.t -> unit Js.meth
+  method wasDecorated : bool Js.t Js.meth
+end >>

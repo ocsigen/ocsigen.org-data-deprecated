@@ -1,0 +1,17 @@
+=~Eliom~-widgets server ~A~P~I
+==[[server/Ew_accents|Ew_accents]]
+==[[server/Ew_dropdown|Ew_dropdown]]
+==[[server/Ew_editable|Ew_editable]]
+==[[server/Ew_slider|Ew_slider]]
+==[[server/Ew_button|Ew_button]]
+==[[server/Ew_dyn_upload|Ew_dyn_upload]]
+==[[server/Ew_editable|Ew_editable]]
+==[[server/Ew_completion|Ew_completion]]
+==[[server/Ew_dyn_upload|Ew_dyn_upload]]
+==[[server/Ew_table_color_picker|Ew_table_color_picker]]
+==[[server/Ew_slider|Ew_slider]]
+==~Index
+=== <<a_api subproject="server" text="Index of types" | index types >>
+=== <<a_api subproject="server" text="Index of exceptions" | index exceptions >>
+=== <<a_api subproject="server" text="Index of values" | index values >>
+=== <<a_api subproject="server" text="Index of modules" | index modules >>

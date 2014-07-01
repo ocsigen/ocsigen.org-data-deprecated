@@ -1,0 +1,42 @@
+<<code language="ocaml" | sig
+  module Make :
+    functor (D : Ojw_dom_sigs.T) ->
+      sig
+        module D :
+          sig
+            type 'a elt = 'a D.elt
+            type element = D.element
+            val to_dom_elt : element elt -> Dom_html.element Js.t
+            val of_dom_elt : Dom_html.element Js.t -> element elt
+          end
+        type scroll_t =
+            Bottom
+          | First
+          | Int of int
+          | Last
+          | Left
+          | Right
+          | Top
+        val add_scrollbar :
+          ?height:(Dom_html.element Js.t -> int) ->
+          ?scroll:scroll_t ->
+          ?inertia:int ->
+          ?mouse_wheel_pixels:int ->
+          ?on_scroll_callback:(unit -> unit) ->
+          ?on_scroll_start_callback:(unit -> unit) ->
+          ?on_total_scroll_callback:(unit -> unit) ->
+          ?on_total_scroll_back_callback:(unit -> unit) ->
+          ?while_scrolling_callback:(unit -> unit) ->
+          ?on_total_scroll_offset:int ->
+          ?on_total_scroll_back_offset:int -> D.element D.elt -> unit Lwt.t
+        val get_dragger_pos : D.element D.elt -> int
+        val get_dragger_pct : D.element D.elt -> int
+        val lwt_scroll_to :
+          ?inertia:bool -> ?scroll:scroll_t -> D.element D.elt -> unit Lwt.t
+        val update :
+          ?height:(Dom_html.element Js.t -> int) ->
+          ?scroll:scroll_t -> D.element D.elt -> unit Lwt.t
+        val scroll_starts : (unit -> unit) -> D.element D.elt -> 'a Lwt.t
+        val scrolls : (unit -> unit) -> D.element D.elt -> 'a Lwt.t
+      end
+end >>

@@ -1,0 +1,6 @@
+<<code language="ocaml" | sig
+  val print_list :
+    ?encode:(string -> string) -> 'a TypedXML.elt list -> O.out
+  val print :
+    ?encode:(string -> string) -> ?advert:string -> TypedXML.doc -> O.out
+end >>

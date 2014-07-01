@@ -1,0 +1,12 @@
+=Module <<a_api_type subproject="server" | module Eliom_react >> =
+<<div class="code"|<<span class="keyword"|module>> Eliom_react: <<span class='code'|sig>><<a_api subproject="server" text=".." | module Eliom_react >><<span class='code'|end>>>>~Propagate events
+    occurrences from the server to the client and the other way
+    around~. ~It is to be noted that occurrence propagation is done
+    asynchronously~.\\
+
+
+    ~The use of this module is pretty much useless without it~'s client counter
+    part~.\\
+
+----
+<<div class="code"|<<span class="keyword"|module>> <<a_api subproject="server" text="Down" | module Eliom_react.Down >>: <<span class='code'|sig>><<a_api subproject="server" text=".." | module Eliom_react.Down >><<span class='code'|end>>>><<div class="code"|<<span class="keyword"|module>> <<a_api subproject="server" text="Up" | module Eliom_react.Up >>: <<span class='code'|sig>><<a_api subproject="server" text=".." | module Eliom_react.Up >><<span class='code'|end>>>>

@@ -1,0 +1,1067 @@
+=Index of values=
+
+|@@ @style="tet-align: left;"@@\\|
+|@@class="odocwiki_index"@ @@<<a_api text="_end"| value Ojquery._end >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~End the most recent filtering operation in the current chain and return the
+    set of matched elements to its previous state~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="_not"| value Ojquery._not >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Remove elements from the set of matched elements~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="_not_func"| value Ojquery._not_func >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Remove elements from the set of matched elements~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="_not_jq"| value Ojquery._not_jq >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Remove elements from the set of matched elements~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="_not_selector"| value Ojquery._not_selector >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Remove elements from the set of matched elements~.
+>>
+|
+|@@ @style="tet-align: left;"@@\\A|
+|@@class="odocwiki_index"@ @@<<a_api text="add_back"| value Ojquery.add_back >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Add the previous set of elements on the stack to the current set~, optionally
+    filtered by a selector~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="add_class"| value Ojquery.add_class >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Adds the specified class~(es~) to each of the set of matched elements~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="add_class_with_func"| value Ojquery.add_class_with_func >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Adds the specified class~(es~) to each of the set of matched elements~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="add_elts"| value Ojquery.add_elts >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Add elements to the set of matched elements~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="add_html"| value Ojquery.add_html >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Add elements to the set of matched elements~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="add_jq_elt"| value Ojquery.add_jq_elt >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Add elements to the set of matched elements~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="add_selector"| value Ojquery.add_selector >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Add elements to the set of matched elements~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="add_selector_context"| value Ojquery.add_selector_context >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Add elements to the set of matched elements~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="after"| value Ojquery.after >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Insert content~, specified by the parameter~, after each element in the set of
+    matched elements~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="after_elt"| value Ojquery.after_elt >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Insert content~, specified by the parameter~, after each element in the set of
+    matched elements~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="after_html"| value Ojquery.after_html >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Insert content~, specified by the parameter~, after each element in the set of
+    matched elements~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="after_jqelt"| value Ojquery.after_jqelt >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Insert content~, specified by the parameter~, after each element in the set of
+    matched elements~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="and_self"| value Ojquery.and_self >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Add the previous set of elements on the stack to the current set~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="animate_js_obj"| value Ojquery.animate_js_obj >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="append"| value Ojquery.append >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Insert content~, specified by the parameter~, to the end of each element in the
+    set of matched elements~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="append_elt"| value Ojquery.append_elt >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Insert content~, specified by the parameter~, to the end of each element in the
+    set of matched elements~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="append_html"| value Ojquery.append_html >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Insert content~, specified by the parameter~, to the end of each element in the
+    set of matched elements~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="append_jqelt"| value Ojquery.append_jqelt >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Insert content~, specified by the parameter~, to the end of each element in the
+    set of matched elements~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="append_to_elt"| value Ojquery.append_to_elt >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Insert every element in the set of matched elements to the end of the target~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="append_to_html"| value Ojquery.append_to_html >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Insert every element in the set of matched elements to the end of the target~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="append_to_jq"| value Ojquery.append_to_jq >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Insert every element in the set of matched elements to the end of the target~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="attr"| value Ojquery.attr >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Get the value of an attribute for the first element in the set of matched
+    elements~.
+>>
+|
+|@@ @style="tet-align: left;"@@\\B|
+|@@class="odocwiki_index"@ @@<<a_api text="before"| value Ojquery.before >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Insert content~, specified by the parameter~, before each element in the set of
+    matched elements~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="before_elt"| value Ojquery.before_elt >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Insert content~, specified by the parameter~, before each element in the set of
+    matched elements~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="before_html"| value Ojquery.before_html >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Insert content~, specified by the parameter~, before each element in the set of
+    matched elements~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="before_jq"| value Ojquery.before_jq >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Insert content~, specified by the parameter~, before each element in the set of
+    matched elements~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="bind"| value Ojquery.bind >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Attach a handler to an event for the elements~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="bind_events"| value Ojquery.bind_events >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Attach a handler to an event for the elements~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="bind_prevent_bubble"| value Ojquery.bind_prevent_bubble >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Attach a handler to an event for the elements~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="blur"| value Ojquery.blur >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Bind an event handler to the "blur" ~Java~Script event~, or trigger that event
+    on an element~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="blur_with_data"| value Ojquery.blur_with_data >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Bind an event handler to the "blur" ~Java~Script event~, or trigger that event
+    on an element~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="blur_with_handler"| value Ojquery.blur_with_handler >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|>>
+|
+|@@ @style="tet-align: left;"@@\\C|
+|@@class="odocwiki_index"@ @@<<a_api text="change"| value Ojquery.change >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Bind an event handler to the "change" ~Java~Script event~, or trigger that event
+    on an element~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="change_with_data"| value Ojquery.change_with_data >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Bind an event handler to the "change" ~Java~Script event~, or trigger that event
+    on an element~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="change_with_event"| value Ojquery.change_with_event >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Bind an event handler to the "change" ~Java~Script event~, or trigger that event
+    on an element~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="children"| value Ojquery.children >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Get the children of each element in the set of matched elements~, optionally
+    filtered by a selector~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="clear_queue"| value Ojquery.clear_queue >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Remove from the queue all items that have not yet been run~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="click"| value Ojquery.click >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Bind an event handler to the "click" ~Java~Script event~, or trigger that event
+    on an element~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="click_with_data"| value Ojquery.click_with_data >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Bind an event handler to the "click" ~Java~Script event~, or trigger that event
+    on an element~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="click_with_event"| value Ojquery.click_with_event >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Bind an event handler to the "click" ~Java~Script event~, or trigger that event
+    on an element~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="clone"| value Ojquery.clone >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Create a deep copy of the set of matched elements~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="closest_elt"| value Ojquery.closest_elt >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~For each element in the set~, get the first element that matches the selector
+    by testing the element itself and traversing up through its ancestors in the
+    ~D~O~M tree~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="closest_jq"| value Ojquery.closest_jq >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~For each element in the set~, get the first element that matches the selector
+    by testing the element itself and traversing up through its ancestors in the
+    ~D~O~M tree~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="closest_selector"| value Ojquery.closest_selector >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~For each element in the set~, get the first element that matches the selector
+    by testing the element itself and traversing up through its ancestors in the
+    ~D~O~M tree~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="closest_selector_context"| value Ojquery.closest_selector_context >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~For each element in the set~, get the first element that matches the selector
+    by testing the element itself and traversing up through its ancestors in the
+    ~D~O~M tree~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="contents"| value Ojquery.contents >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Get the children of each element in the set of matched elements~, including
+    text and comment nodes~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="css"| value Ojquery.css >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Get the value of style properties for the first element in the set of matched
+    elements~.
+>>
+|
+|@@ @style="tet-align: left;"@@\\D|
+|@@class="odocwiki_index"@ @@<<a_api text="data"| value Ojquery.data >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Store arbitrary data associated with the matched elements~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="data_keyval"| value Ojquery.data_keyval >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Store arbitrary data associated with the matched elements~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="dblclick"| value Ojquery.dblclick >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Bind an event handler to the "dblclick" ~Java~Script event~, or trigger that
+    event on an element~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="dblclick_with_data"| value Ojquery.dblclick_with_data >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Bind an event handler to the "dblclick" ~Java~Script event~, or trigger that
+    event on an element~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="dblclick_with_handler"| value Ojquery.dblclick_with_handler >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Bind an event handler to the "dblclick" ~Java~Script event~, or trigger that
+    event on an element~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="delay"| value Ojquery.delay >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Set a timer to delay execution of subsequent items in the queue~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="delegate"| value Ojquery.delegate >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Attach a handler to one or more events for all elements that match the
+    selector~, now or in the future~, based on a specific set of root elements~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="delegate_with_data"| value Ojquery.delegate_with_data >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Attach a handler to one or more events for all elements that match the
+    selector~, now or in the future~, based on a specific set of root elements~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="delegate_with_handler"| value Ojquery.delegate_with_handler >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Attach a handler to one or more events for all elements that match the
+    selector~, now or in the future~, based on a specific set of root elements~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="dequeue"| value Ojquery.dequeue >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Execute the next function on the queue for the matched elements~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="detach"| value Ojquery.detach >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Remove the set of matched elements from the ~D~O~M~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="die"| value Ojquery.die >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Remove event handlers previously attached using ~.live~(~) from the elements~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="die_with_events"| value Ojquery.die_with_events >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Remove event handlers previously attached using ~.live~(~) from the elements~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="die_with_handler"| value Ojquery.die_with_handler >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Remove event handlers previously attached using ~.live~(~) from the elements~.
+>>
+|
+|@@ @style="tet-align: left;"@@\\E|
+|@@class="odocwiki_index"@ @@<<a_api text="each"| value Ojquery.each >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Iterate over a j~Query object~, executing a function for each matched element~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="empty"| value Ojquery.empty >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Remove all child nodes of the set of matched elements from the ~D~O~M~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="eq"| value Ojquery.eq >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Reduce the set of matched elements to the one at the specified index~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="error"| value Ojquery.error >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="error_with_data"| value Ojquery.error_with_data >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Bind an event handler to the "error" ~Java~Script event
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="event_dotcurrent_target"| value Ojquery.event_dotcurrent_target >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~The current ~D~O~M element within the event bubbling phase~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="event_dotdata"| value Ojquery.event_dotdata >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~An optional object of data passed to an event method when the current
+    executing handler is bound~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="event_dotdelegate_target"| value Ojquery.event_dotdelegate_target >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~The element where the currently~-called j~Query event handler was attached~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="event_dotis_default_prevented"| value Ojquery.event_dotis_default_prevented >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Returns whether
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="event_dotis_immediate_propagation_stopped"| value Ojquery.event_dotis_immediate_propagation_stopped >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Returns whether event~.stop~Immediate~Propagation~(~) was ever called on this
+    event object~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="event_dotis_propagation_stopped"| value Ojquery.event_dotis_propagation_stopped >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Returns whether
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="event_dotmeta_key"| value Ojquery.event_dotmeta_key >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Indicates whether the ~M~E~T~A key was pressed when the event fired~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="event_dotnamespace"| value Ojquery.event_dotnamespace >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~The namespace specified when the event was triggered~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="event_dotpage_x"| value Ojquery.event_dotpage_x >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~The mouse position relative to the left edge of the document~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="event_dotpage_y"| value Ojquery.event_dotpage_y >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~The mouse position relative to the top edge of the document~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="event_dotrelated_target"| value Ojquery.event_dotrelated_target >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~The other ~D~O~M element involved in the event~, if any~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="event_dotresult"| value Ojquery.event_dotresult >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~The last value returned by an event handler that was triggered by this event~,
+    unless the value was
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="event_dotstop_immediate_propagation"| value Ojquery.event_dotstop_immediate_propagation >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Keeps the rest of the handlers from being executed and prevents the event
+    from bubbling up the ~D~O~M tree~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="event_dotstop_propagation"| value Ojquery.event_dotstop_propagation >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Prevents the event from bubbling up the ~D~O~M tree~, preventing any parent
+    handlers from being notified of the event~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="event_dottarget"| value Ojquery.event_dottarget >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~The ~D~O~M element that initiated the event~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="event_dottime_stamp"| value Ojquery.event_dottime_stamp >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~The difference in milliseconds between the time the browser created the event
+    and ~January ~1~, ~1~9~7~0~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="event_dottype"| value Ojquery.event_dottype >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Describes the nature of the event~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="event_dotwhich"| value Ojquery.event_dotwhich >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~For key or mouse events~, this property indicates the specific key or button
+    that was pressed~.
+>>
+|
+|@@ @style="tet-align: left;"@@\\F|
+|@@class="odocwiki_index"@ @@<<a_api text="fade_in"| value Ojquery.fade_in >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Display the matched elements by fading them to opaque~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="fade_out"| value Ojquery.fade_out >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="fade_to"| value Ojquery.fade_to >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="fade_toggle"| value Ojquery.fade_toggle >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="filter_elt"| value Ojquery.filter_elt >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Reduce the set of matched elements to those that match the selector or pass
+    the function~'s test~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="filter_fun"| value Ojquery.filter_fun >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Reduce the set of matched elements to those that match the selector or pass
+    the function~'s test~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="filter_jq"| value Ojquery.filter_jq >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Reduce the set of matched elements to those that match the selector or pass
+    the function~'s test~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="filter_selector"| value Ojquery.filter_selector >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Reduce the set of matched elements to those that match the selector or pass
+    the function~'s test~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="find_elt"| value Ojquery.find_elt >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Get the descendants of each element in the current set of matched elements~,
+    filtered by a selector~, j~Query object~, or element~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="find_jq"| value Ojquery.find_jq >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Get the descendants of each element in the current set of matched elements~,
+    filtered by a selector~, j~Query object~, or element~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="find_selector"| value Ojquery.find_selector >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Get the descendants of each element in the current set of matched elements~,
+    filtered by a selector~, j~Query object~, or element~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="finish"| value Ojquery.finish >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="first"| value Ojquery.first >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Reduce the set of matched elements to the first in the set~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="focus"| value Ojquery.focus >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Bind an event handler to the "focus" ~Java~Script event~, or trigger that event
+    on an element~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="focus_with_data"| value Ojquery.focus_with_data >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Bind an event handler to the "focus" ~Java~Script event~, or trigger that event
+    on an element~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="focus_with_handler"| value Ojquery.focus_with_handler >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Bind an event handler to the "focus" ~Java~Script event~, or trigger that event
+    on an element~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="focusin_with_data"| value Ojquery.focusin_with_data >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Bind an event handler to the "focusin" event~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="focusin_with_handler"| value Ojquery.focusin_with_handler >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Bind an event handler to the "focusin" event~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="focusout_with_data"| value Ojquery.focusout_with_data >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Bind an event handler to the "focusout" event~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="focusout_with_handler"| value Ojquery.focusout_with_handler >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Bind an event handler to the "focusout" event~.
+>>
+|
+|@@ @style="tet-align: left;"@@\\G|
+|@@class="odocwiki_index"@ @@<<a_api text="get"| value Ojquery.get >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Retrieve one of the ~D~O~M elements matched by the j~Query object~.
+>>
+|
+|@@ @style="tet-align: left;"@@\\H|
+|@@class="odocwiki_index"@ @@<<a_api text="has_class"| value Ojquery.has_class >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Determine whether any of the matched elements are assigned the given class~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="has_elt"| value Ojquery.has_elt >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Reduce the set of matched elements to those that have a descendant that
+    matches the selector or ~D~O~M element~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="has_selector"| value Ojquery.has_selector >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Reduce the set of matched elements to those that have a descendant that
+    matches the selector or ~D~O~M element~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="height"| value Ojquery.height >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Get the current computed height for the first element in the set of matched
+    elements~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="hide"| value Ojquery.hide >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Hide the matched elements~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="hover"| value Ojquery.hover >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Bind one or two handlers to the matched elements~, to be executed when the
+    mouse pointer enters and leaves the elements~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="html"| value Ojquery.html >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Get the ~H~T~M~L contents of the first element in the set of matched elements~.
+>>
+|
+|@@ @style="tet-align: left;"@@\\I|
+|@@class="odocwiki_index"@ @@<<a_api text="index"| value Ojquery.index >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Search for a given element from among the matched elements~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="index_elt"| value Ojquery.index_elt >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Search for a given element from among the matched elements~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="index_jq"| value Ojquery.index_jq >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Search for a given element from among the matched elements~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="inner_height"| value Ojquery.inner_height >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Get the current computed height for the first element in the set of matched
+    elements~, including padding but not border~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="inner_width"| value Ojquery.inner_width >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Get the current computed width for the first element in the set of matched
+    elements~, including padding but not border~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="insert_after_elt"| value Ojquery.insert_after_elt >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Insert every element in the set of matched elements after the target~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="insert_after_jq"| value Ojquery.insert_after_jq >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Insert every element in the set of matched elements after the target~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="insert_after_selector"| value Ojquery.insert_after_selector >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Insert every element in the set of matched elements after the target~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="insert_before_elt"| value Ojquery.insert_before_elt >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Insert every element in the set of matched elements before the target~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="insert_before_jq"| value Ojquery.insert_before_jq >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Insert every element in the set of matched elements before the target~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="insert_before_selector"| value Ojquery.insert_before_selector >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Insert every element in the set of matched elements before the target~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="is_elt"| value Ojquery.is_elt >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Check the current matched set of elements against a selector~, element~, or
+    j~Query object and return
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="is_js_obj"| value Ojquery.is_js_obj >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Check the current matched set of elements against a selector~, element~, or
+    j~Query object and return
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="is_selector"| value Ojquery.is_selector >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Check the current matched set of elements against a selector~, element~, or
+    j~Query object and return
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="is_with_func"| value Ojquery.is_with_func >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Check the current matched set of elements against a selector~, element~, or
+    j~Query object and return
+>>
+|
+|@@ @style="tet-align: left;"@@\\J|
+|@@class="odocwiki_index"@ @@<<a_api text="jQ"| value Ojquery.jQ >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Easy way to call the j~Query object j~Q "~#foo" ~<~=~> ~$~("~#foo"~) ~*
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="jQ_elt"| value Ojquery.jQ_elt >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Accepts a string containing a ~C~S~S selector which is then used to match a set
+    of elements~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="jQ_jq"| value Ojquery.jQ_jq >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Accepts a string containing a ~C~S~S selector which is then used to match a set
+    of elements~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="jQ_js"| value Ojquery.jQ_js >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Accepts a string containing a ~C~S~S selector which is then used to match a set
+    of elements~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="jQ_selector"| value Ojquery.jQ_selector >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Accepts a string containing a ~C~S~S selector which is then used to match a set
+    of elements~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="jQelt"| value Ojquery.jQelt >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Easy way to call the j~Query object j~Q "~#foo" ~<~=~> ~$~("~#foo"~) ~*
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="j_query_dotbrowser"| value Ojquery.j_query_dotbrowser >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Contains flags for the useragent~, read from navigator~.user~Agent~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="j_query_dotcontains"| value Ojquery.j_query_dotcontains >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Check to see if a ~D~O~M element is a descendant of another ~D~O~M element~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="j_query_dotcss_hooks"| value Ojquery.j_query_dotcss_hooks >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Hook directly into j~Query to override how particular ~C~S~S properties are
+    retrieved or set~, normalize ~C~S~S property naming~, or create custom properties~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="j_query_dotdata"| value Ojquery.j_query_dotdata >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Store arbitrary data associated with the specified element~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="j_query_dotdequeue"| value Ojquery.j_query_dotdequeue >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Execute the next function on the queue for the matched element~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="j_query_doteach"| value Ojquery.j_query_doteach >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~A generic iterator function~, which can be used to seamlessly iterate over
+    both objects and arrays~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="j_query_doterror"| value Ojquery.j_query_doterror >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Takes a string and throws an exception containing it~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="j_query_dotextend"| value Ojquery.j_query_dotextend >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Merge the contents of two or more objects together into the first object~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="j_query_dotfn_dotextend"| value Ojquery.j_query_dotfn_dotextend >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Merge the contents of an object onto the j~Query prototype to provide new
+    j~Query instance methods~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="j_query_dotfx_dotinterval"| value Ojquery.j_query_dotfx_dotinterval >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="j_query_dotfx_dotoff"| value Ojquery.j_query_dotfx_dotoff >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="j_query_dotglobal_eval"| value Ojquery.j_query_dotglobal_eval >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Execute some ~Java~Script code globally~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="j_query_dothas_data"| value Ojquery.j_query_dothas_data >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Determine whether an element has any j~Query data associated with it~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="j_query_dothold_ready"| value Ojquery.j_query_dothold_ready >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="j_query_dotis_array"| value Ojquery.j_query_dotis_array >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Determine whether the argument is an array~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="j_query_dotis_empty_object"| value Ojquery.j_query_dotis_empty_object >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Check to see if an object is empty ~(contains no enumerable properties~)~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="j_query_dotis_function"| value Ojquery.j_query_dotis_function >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Determine if the argument passed is a ~Javascript function object~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="j_query_dotis_numeric"| value Ojquery.j_query_dotis_numeric >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="j_query_dotis_plain_object"| value Ojquery.j_query_dotis_plain_object >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Check to see if an object is a plain object ~(created using brackets or "new
+    ~Object"~)~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="j_query_dotis_window"| value Ojquery.j_query_dotis_window >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Determine whether the argument is a window~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="j_query_dotis_xmldoc"| value Ojquery.j_query_dotis_xmldoc >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Check to see if a ~D~O~M node is within an ~X~M~L document ~(or is an ~X~M~L document~)~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="j_query_dotno_conflict"| value Ojquery.j_query_dotno_conflict >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Relinquish j~Query~'s control of the
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="j_query_dotnow"| value Ojquery.j_query_dotnow >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Return a number representing the current time~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="j_query_dotparse_json"| value Ojquery.j_query_dotparse_json >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Takes a well~-formed ~J~S~O~N string and returns the resulting ~Java~Script object~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="j_query_dotparse_xml"| value Ojquery.j_query_dotparse_xml >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="j_query_dotremove_data"| value Ojquery.j_query_dotremove_data >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Remove a previously~-stored piece of data~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="j_query_dotsub"| value Ojquery.j_query_dotsub >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Creates a new copy of j~Query whose properties and methods can be modified
+    without affecting the original j~Query object~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="j_query_dotsupport"| value Ojquery.j_query_dotsupport >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~A collection of properties that represent the presence of different browser
+    features or bugs~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="j_query_dottrim"| value Ojquery.j_query_dottrim >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Remove the whitespace from the beginning and end of a string~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="j_query_dottype"| value Ojquery.j_query_dottype >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Determine the internal ~Java~Script <<span class="odocwiki_inlinecode"|~[~Class~]>> of an object~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="jquery"| value Ojquery.jquery >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~A string containing the j~Query version number~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="js_jQ"| value Ojquery.js_jQ >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Easy way to call the j~Query object j~Q "~#foo" ~<~=~> ~$~("~#foo"~) ~*
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="js_jQelt"| value Ojquery.js_jQelt >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Easy way to call the j~Query object j~Q "~#foo" ~<~=~> ~$~("~#foo"~) ~*
+>>
+|
+|@@ @style="tet-align: left;"@@\\K|
+|@@class="odocwiki_index"@ @@<<a_api text="keydown"| value Ojquery.keydown >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Bind an event handler to the "keydown" ~Java~Script event~, or trigger that
+    event on an element~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="keydown_with_data"| value Ojquery.keydown_with_data >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Bind an event handler to the "keydown" ~Java~Script event~, or trigger that
+    event on an element~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="keydown_with_handler"| value Ojquery.keydown_with_handler >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Bind an event handler to the "keydown" ~Java~Script event~, or trigger that
+    event on an element~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="keypress"| value Ojquery.keypress >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Bind an event handler to the "keypress" ~Java~Script event~, or trigger that
+    event on an element~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="keypress_with_data"| value Ojquery.keypress_with_data >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Bind an event handler to the "keypress" ~Java~Script event~, or trigger that
+    event on an element~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="keypress_with_handler"| value Ojquery.keypress_with_handler >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Bind an event handler to the "keypress" ~Java~Script event~, or trigger that
+    event on an element~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="keyup"| value Ojquery.keyup >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Bind an event handler to the "keyup" ~Java~Script event~, or trigger that event
+    on an element~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="keyup_with_data"| value Ojquery.keyup_with_data >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Bind an event handler to the "keyup" ~Java~Script event~, or trigger that event
+    on an element~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="keyup_with_handler"| value Ojquery.keyup_with_handler >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Bind an event handler to the "keyup" ~Java~Script event~, or trigger that event
+    on an element~.
+>>
+|
+|@@ @style="tet-align: left;"@@\\L|
+|@@class="odocwiki_index"@ @@<<a_api text="last"| value Ojquery.last >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Reduce the set of matched elements to the final one in the set~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="length"| value Ojquery.length >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~The number of elements in the j~Query object~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="live"| value Ojquery.live >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="live_with_data"| value Ojquery.live_with_data >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="live_with_handler"| value Ojquery.live_with_handler >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="load_with_data"| value Ojquery.load_with_data >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="load_with_handler"| value Ojquery.load_with_handler >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|>>
+|
+|@@ @style="tet-align: left;"@@\\M|
+|@@class="odocwiki_index"@ @@<<a_api text="map"| value Ojquery.map >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Pass each element in the current matched set through a function~, producing a
+    new j~Query object containing the return values~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="mousedown"| value Ojquery.mousedown >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Bind an event handler to the "mousedown" ~Java~Script event~, or trigger that
+    event on an element~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="mousedown_with_data"| value Ojquery.mousedown_with_data >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Bind an event handler to the "mousedown" ~Java~Script event~, or trigger that
+    event on an element~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="mousedown_with_handler"| value Ojquery.mousedown_with_handler >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Bind an event handler to the "mousedown" ~Java~Script event~, or trigger that
+    event on an element~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="mouseenter"| value Ojquery.mouseenter >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Bind an event handler to be fired when the mouse enters an element~, or
+    trigger that handler on an element~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="mouseenter_with_data"| value Ojquery.mouseenter_with_data >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Bind an event handler to be fired when the mouse enters an element~, or
+    trigger that handler on an element~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="mouseenter_with_handler"| value Ojquery.mouseenter_with_handler >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Bind an event handler to be fired when the mouse enters an element~, or
+    trigger that handler on an element~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="mouseleave"| value Ojquery.mouseleave >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Bind an event handler to be fired when the mouse leaves an element~, or
+    trigger that handler on an element~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="mouseleave_with_data"| value Ojquery.mouseleave_with_data >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Bind an event handler to be fired when the mouse leaves an element~, or
+    trigger that handler on an element~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="mouseleave_with_handler"| value Ojquery.mouseleave_with_handler >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Bind an event handler to be fired when the mouse leaves an element~, or
+    trigger that handler on an element~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="mousemove"| value Ojquery.mousemove >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Bind an event handler to be fired when the mouse leaves an element~, or
+    trigger that handler on an element~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="mousemove_with_data"| value Ojquery.mousemove_with_data >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Bind an event handler to the "mousemove" ~Java~Script event~, or trigger that
+    event on an element~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="mousemove_with_handler"| value Ojquery.mousemove_with_handler >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Bind an event handler to the "mousemove" ~Java~Script event~, or trigger that
+    event on an element~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="mouseout"| value Ojquery.mouseout >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Bind an event handler to the "mouseout" ~Java~Script event~, or trigger that
+    event on an element~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="mouseout_with_data"| value Ojquery.mouseout_with_data >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Bind an event handler to the "mouseout" ~Java~Script event~, or trigger that
+    event on an element~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="mouseout_with_handler"| value Ojquery.mouseout_with_handler >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Bind an event handler to the "mouseout" ~Java~Script event~, or trigger that
+    event on an element~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="mouseover"| value Ojquery.mouseover >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Bind an event handler to the "mouseover" ~Java~Script event~, or trigger that
+    event on an element~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="mouseover_handler"| value Ojquery.mouseover_handler >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Bind an event handler to the "mouseover" ~Java~Script event~, or trigger that
+    event on an element~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="mouseover_with_data"| value Ojquery.mouseover_with_data >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Bind an event handler to the "mouseover" ~Java~Script event~, or trigger that
+    event on an element~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="mouseup"| value Ojquery.mouseup >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Bind an event handler to the "mouseup" ~Java~Script event~, or trigger that
+    event on an element~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="mouseup_with_data"| value Ojquery.mouseup_with_data >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Bind an event handler to the "mouseup" ~Java~Script event~, or trigger that
+    event on an element~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="mouseup_with_handler"| value Ojquery.mouseup_with_handler >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Bind an event handler to the "mouseup" ~Java~Script event~, or trigger that
+    event on an element~.
+>>
+|
+|@@ @style="tet-align: left;"@@\\N|
+|@@class="odocwiki_index"@ @@<<a_api text="next"| value Ojquery.next >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Get the immediately following sibling of each element in the set of matched
+    elements~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="next_all"| value Ojquery.next_all >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Get all following siblings of each element in the set of matched elements~,
+    optionally filtered by a selector~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="next_until"| value Ojquery.next_until >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Get all following siblings of each element up to but not including the
+    element matched by the selector~, ~D~O~M node~, or j~Query object passed~.
+>>
+|
+|@@ @style="tet-align: left;"@@\\O|
+|@@class="odocwiki_index"@ @@<<a_api text="off"| value Ojquery.off >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="off_with_handler"| value Ojquery.off_with_handler >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="offset"| value Ojquery.offset >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Get the current coordinates of the first element in the set of matched
+    elements~, relative to the document~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="offset_parent"| value Ojquery.offset_parent >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Get the closest ancestor element that is positioned~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="one"| value Ojquery.one >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Attach a handler to an event for the elements~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="outer_height"| value Ojquery.outer_height >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Get the current computed height for the first element in the set of matched
+    elements~, including padding~, border~, and optionally margin~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="outer_width"| value Ojquery.outer_width >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Get the current computed width for the first element in the set of matched
+    elements~, including padding and border~.
+>>
+|
+|@@ @style="tet-align: left;"@@\\P|
+|@@class="odocwiki_index"@ @@<<a_api text="parent"| value Ojquery.parent >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Get the parent of each element in the current set of matched elements~,
+    optionally filtered by a selector~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="parents"| value Ojquery.parents >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Get the ancestors of each element in the current set of matched elements~,
+    optionally filtered by a selector~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="parents_until"| value Ojquery.parents_until >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Get the ancestors of each element in the current set of matched elements~, up
+    to but not including the element matched by the selector~, ~D~O~M node~, or j~Query
+    object~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="position"| value Ojquery.position >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Get the current coordinates of the first element in the set of matched
+    elements~, relative to the offset parent~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="prepend_html"| value Ojquery.prepend_html >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Insert content~, specified by the parameter~, to the beginning of each element
+    in the set of matched elements~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="prepend_jq"| value Ojquery.prepend_jq >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Insert content~, specified by the parameter~, to the beginning of each element
+    in the set of matched elements~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="prepend_to_elt"| value Ojquery.prepend_to_elt >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Insert every element in the set of matched elements to the beginning of the
+    target~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="prepend_to_html"| value Ojquery.prepend_to_html >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Insert every element in the set of matched elements to the beginning of the
+    target~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="prepend_to_jQ"| value Ojquery.prepend_to_jQ >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Insert every element in the set of matched elements to the beginning of the
+    target~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="prev"| value Ojquery.prev >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Get the immediately preceding sibling of each element in the set of matched
+    elements~, optionally filtered by a selector~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="prev_all"| value Ojquery.prev_all >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Get all preceding siblings of each element in the set of matched elements~,
+    optionally filtered by a selector~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="prev_until_elt"| value Ojquery.prev_until_elt >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Get all preceding siblings of each element up to but not including the
+    element matched by the selector~, ~D~O~M node~, or j~Query object~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="prev_until_jq"| value Ojquery.prev_until_jq >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Get all preceding siblings of each element up to but not including the
+    element matched by the selector~, ~D~O~M node~, or j~Query object~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="prev_until_selector"| value Ojquery.prev_until_selector >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Get all preceding siblings of each element up to but not including the
+    element matched by the selector~, ~D~O~M node~, or j~Query object~.
+>>
+|
+|@@ @style="tet-align: left;"@@\\R|
+|@@class="odocwiki_index"@ @@<<a_api text="ready"| value Ojquery.ready >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Specify a function to execute when the ~D~O~M is fully loaded~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="remove"| value Ojquery.remove >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Remove the set of matched elements from the ~D~O~M~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="remove_attr"| value Ojquery.remove_attr >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Remove an attribute from each element in the set of matched elements~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="remove_class"| value Ojquery.remove_class >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Remove a single class~, multiple classes~, or all classes from each element in
+    the set of matched elements~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="remove_class_func"| value Ojquery.remove_class_func >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Remove a single class~, multiple classes~, or all classes from each element in
+    the set of matched elements~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="remove_data"| value Ojquery.remove_data >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Remove a previously~-stored piece of data~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="remove_prop"| value Ojquery.remove_prop >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Remove a property for the set of matched elements~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="replace_all_elt"| value Ojquery.replace_all_elt >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Replace each target element with the set of matched elements~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="replace_all_jq"| value Ojquery.replace_all_jq >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Replace each target element with the set of matched elements~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="replace_all_selector"| value Ojquery.replace_all_selector >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Replace each target element with the set of matched elements~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="replace_with_elt"| value Ojquery.replace_with_elt >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Replace each element in the set of matched elements with the provided new
+    content and return the set of elements that was removed~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="replace_with_html"| value Ojquery.replace_with_html >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Replace each element in the set of matched elements with the provided new
+    content and return the set of elements that was removed~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="replace_with_jq"| value Ojquery.replace_with_jq >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Replace each element in the set of matched elements with the provided new
+    content and return the set of elements that was removed~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="resize"| value Ojquery.resize >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Bind an event handler to the "resize" ~Java~Script event~, or trigger that event
+    on an element~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="resize_with_data"| value Ojquery.resize_with_data >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Bind an event handler to the "resize" ~Java~Script event~, or trigger that event
+    on an element~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="resize_with_event"| value Ojquery.resize_with_event >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Bind an event handler to the "resize" ~Java~Script event~, or trigger that event
+    on an element~.
+>>
+|
+|@@ @style="tet-align: left;"@@\\S|
+|@@class="odocwiki_index"@ @@<<a_api text="scroll"| value Ojquery.scroll >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Bind an event handler to the "scroll" ~Java~Script event~, or trigger that event
+    on an element~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="scroll_left"| value Ojquery.scroll_left >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Get the current horizontal position of the scroll bar for the first element
+    in the set of matched elements~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="scroll_top"| value Ojquery.scroll_top >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Get the current vertical position of the scroll bar for the first element in
+    the set of matched elements or set the vertical position of the scroll bar
+    for every matched element~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="scroll_with_data"| value Ojquery.scroll_with_data >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Bind an event handler to the "scroll" ~Java~Script event~, or trigger that event
+    on an element~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="scroll_with_handler"| value Ojquery.scroll_with_handler >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Bind an event handler to the "scroll" ~Java~Script event~, or trigger that event
+    on an element~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="select"| value Ojquery.select >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Bind an event handler to the "select" ~Java~Script event~, or trigger that event
+    on an element~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="select_with_data"| value Ojquery.select_with_data >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Bind an event handler to the "select" ~Java~Script event~, or trigger that event
+    on an element~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="select_with_handler"| value Ojquery.select_with_handler >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Bind an event handler to the "select" ~Java~Script event~, or trigger that event
+    on an element~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="serialize"| value Ojquery.serialize >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Encode a set of form elements as a string for submission~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="show"| value Ojquery.show >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Display the matched elements~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="show_with_easing"| value Ojquery.show_with_easing >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Display the matched elements~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="siblings"| value Ojquery.siblings >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Get the siblings of each element in the set of matched elements~, optionally
+    filtered by a selector~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="size"| value Ojquery.size >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Return the number of elements in the j~Query object~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="slice"| value Ojquery.slice >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Reduce the set of matched elements to a subset specified by a range of
+    indices~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="slide_down"| value Ojquery.slide_down >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Display the matched elements with a sliding motion~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="slide_toggle"| value Ojquery.slide_toggle >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Display or hide the matched elements with a sliding motion~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="slide_up"| value Ojquery.slide_up >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Hide the matched elements with a sliding motion~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="stop"| value Ojquery.stop >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Stop the currently~-running animation on the matched elements~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="stop_named_queue"| value Ojquery.stop_named_queue >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Stop the currently~-running animation on the matched elements~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="submit"| value Ojquery.submit >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Bind an event handler to the "submit" ~Java~Script event~, or trigger that event
+    on an element~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="submit_with_data"| value Ojquery.submit_with_data >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Bind an event handler to the "submit" ~Java~Script event~, or trigger that event
+    on an element~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="submit_with_handler"| value Ojquery.submit_with_handler >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Bind an event handler to the "submit" ~Java~Script event~, or trigger that event
+    on an element~.
+>>
+|
+|@@ @style="tet-align: left;"@@\\T|
+|@@class="odocwiki_index"@ @@<<a_api text="text"| value Ojquery.text >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Get the combined text contents of each element in the set of matched
+    elements~, including their descendants~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="text_set"| value Ojquery.text_set >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Set the content of each element in the set of matched elements to the
+    specified text~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="text_set_func"| value Ojquery.text_set_func >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Set the content of each element in the set of matched elements to the
+    specified text~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="toggle"| value Ojquery.toggle >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Display or hide the matched elements~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="toggle_class"| value Ojquery.toggle_class >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Add or remove one or more classes from each element in the set of matched
+    elements~, depending on either the class~'s presence or the value of the switch
+    argument~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="toggle_wih_easing"| value Ojquery.toggle_wih_easing >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Display or hide the matched elements~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="toggle_with_bool"| value Ojquery.toggle_with_bool >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Display or hide the matched elements~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="toggle_with_handler"| value Ojquery.toggle_with_handler >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Display or hide the matched elements~.
+>>
+|
+|@@ @style="tet-align: left;"@@\\U|
+|@@class="odocwiki_index"@ @@<<a_api text="unbind_return_false"| value Ojquery.unbind_return_false >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Remove a previously~-attached event handler from the elements~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="unbind_with_event"| value Ojquery.unbind_with_event >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Remove a previously~-attached event handler from the elements~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="unbind_with_handler"| value Ojquery.unbind_with_handler >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Remove a previously~-attached event handler from the elements~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="undelegate"| value Ojquery.undelegate >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Remove a handler from the event for all elements which match the current
+    selector~, based upon a specific set of root elements~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="undelegate_events"| value Ojquery.undelegate_events >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Remove a handler from the event for all elements which match the current
+    selector~, based upon a specific set of root elements~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="undelegate_handler"| value Ojquery.undelegate_handler >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Remove a handler from the event for all elements which match the current
+    selector~, based upon a specific set of root elements~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="undelegate_namespace"| value Ojquery.undelegate_namespace >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Remove a handler from the event for all elements which match the current
+    selector~, based upon a specific set of root elements~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="undelegate_selector"| value Ojquery.undelegate_selector >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Remove a handler from the event for all elements which match the current
+    selector~, based upon a specific set of root elements~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="unload_with_data"| value Ojquery.unload_with_data >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Bind an event handler to the "unload" ~Java~Script event~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="unload_with_handler"| value Ojquery.unload_with_handler >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Bind an event handler to the "unload" ~Java~Script event~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="unwrap"| value Ojquery.unwrap >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Remove the parents of the set of matched elements from the ~D~O~M~, leaving the
+    matched elements in their place~.
+>>
+|
+|@@ @style="tet-align: left;"@@\\W|
+|@@class="odocwiki_index"@ @@<<a_api text="width"| value Ojquery.width >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Get the current computed width for the first element in the set of matched
+    elements~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="wrap"| value Ojquery.wrap >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Wrap an ~H~T~M~L structure around each element in the set of matched elements~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="wrap_all_elt"| value Ojquery.wrap_all_elt >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Wrap an ~H~T~M~L structure around all elements in the set of matched elements~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="wrap_all_html"| value Ojquery.wrap_all_html >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Wrap an ~H~T~M~L structure around all elements in the set of matched elements~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="wrap_all_jq"| value Ojquery.wrap_all_jq >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Wrap an ~H~T~M~L structure around all elements in the set of matched elements~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="wrap_elt"| value Ojquery.wrap_elt >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Wrap an ~H~T~M~L structure around each element in the set of matched elements~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="wrap_html"| value Ojquery.wrap_html >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Wrap an ~H~T~M~L structure around each element in the set of matched elements~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="wrap_inner"| value Ojquery.wrap_inner >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Wrap an ~H~T~M~L structure around the content of each element in the set of
+    matched elements~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="wrap_jq"| value Ojquery.wrap_jq >> ~[<<a_api | module Ojquery >>~]|<<div class="odocwiki_info"|~Wrap an ~H~T~M~L structure around each element in the set of matched elements~.
+>>
+|
+\\

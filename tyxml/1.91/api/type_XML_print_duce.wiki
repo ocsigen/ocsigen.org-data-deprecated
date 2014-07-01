@@ -1,0 +1,11 @@
+<<code language="ocaml" | sig
+  module Make :
+    functor (I : sig val emptytags : string list end) ->
+      XML_sigs_duce.Printer
+  module MakeTypedRaw :
+    functor (TypedXML : XML_sigs_duce.TypedXML) ->
+      XML_sigs_duce.RawTypedPrinter
+  val print :
+    output:(string -> unit) ->
+    ?encode:(string -> string) -> Ocamlduce.Load.anyxml -> unit
+end >>

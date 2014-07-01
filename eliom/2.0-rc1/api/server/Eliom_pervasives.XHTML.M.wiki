@@ -1,0 +1,4 @@
+=Module <<a_api_type subproject="server" | module Eliom_pervasives.XHTML.M >> =
+<<div class="code"|<<span class="keyword"|module>> M: <<span class="code type"|XHTML_sigs.T>><<span class="code type"|{{{  }}} with module XML := XML>>>>~Type safe ~X~H~T~M~L creation~.\\
+
+----

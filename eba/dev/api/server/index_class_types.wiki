@@ -1,0 +1,24 @@
+=Index of class types=
+
+|@@ @style="tet-align: left;"@@\\C|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="config"| class type Eba_config.Email.config >> ~[<<a_api subproject="server" | module Eba_config.Email >>~]|<<div class="odocwiki_info"|~The config class
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="config"| class type Eba_config.Session.config >> ~[<<a_api subproject="server" | module Eba_config.Session >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="config"| class type Eba_config.Page.config >> ~[<<a_api subproject="server" | module Eba_config.Page >>~]|<<div class="odocwiki_info"|~The config class
+>>
+|
+|@@ @style="tet-align: left;"@@\\R|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="reqm"| class type Eba_sigs.Reqm.reqm >> ~[<<a_api subproject="server" | module Eba_sigs.Reqm >>~]|<<div class="odocwiki_info"|~The type of a request message~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="reqm"| class type Eba_reqm.reqm >> ~[<<a_api subproject="server" | module Eba_reqm >>~]|<<div class="odocwiki_info"|~The type of a request message~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="reqm_base"| class type Eba_sigs.Reqm.reqm_base >> ~[<<a_api subproject="server" | module Eba_sigs.Reqm >>~]|<<div class="odocwiki_info"|~The type of a basic request message~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="reqm_base"| class type Eba_reqm.reqm_base >> ~[<<a_api subproject="server" | module Eba_reqm >>~]|<<div class="odocwiki_info"|~The type of a basic request message~.
+>>
+|
+\\

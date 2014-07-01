@@ -1,0 +1,15 @@
+=Module <<a_api_type | module Ocsigen_stream.StringStream >> =
+<<div class="code"|<<span class="keyword"|module>> StringStream: <<span class='code'|sig>><<a_api text=".." | module Ocsigen_stream.StringStream >><<span class='code'|end>>>>
+----
+<<div class="code" id="TYPEout"|<<span class="keyword"|type>> out = <<span class="code type"|string <<a_api text="Ocsigen_stream.t" | type Ocsigen_stream.t >>>> >>
+<<div class="info"|~Interface for stream creation ~(for tyxml~)\\
+>>
+
+<<div class="code" id="TYPEm"|<<span class="keyword"|type>> m>>
+
+<<div id="VALmake" class="code"|<<span class="keyword"|val>> make : <<span class="code type"|<<a_api text="m" | type Ocsigen_stream.StringStream.m >> -> <<a_api text="out" | type Ocsigen_stream.StringStream.out >>>>>><<div id="VALempty" class="code"|<<span class="keyword"|val>> empty : <<span class="code type"|<<a_api text="m" | type Ocsigen_stream.StringStream.m >>>>>><<div class="info"|~Create an empty stream\\
+>>
+<<div id="VALput" class="code"|<<span class="keyword"|val>> put : <<span class="code type"|string -> <<a_api text="m" | type Ocsigen_stream.StringStream.m >>>>>><<div class="info"|~Create a stream with one element\\
+>>
+<<div id="VALconcat" class="code"|<<span class="keyword"|val>> concat : <<span class="code type"|\\{{{   }}}<<a_api text="m" | type Ocsigen_stream.StringStream.m >> ->\\{{{   }}}  <<a_api text="m" | type Ocsigen_stream.StringStream.m >> -> <<a_api text="m" | type Ocsigen_stream.StringStream.m >>>>>><<div class="info"|~Concatenate two stream\\
+>>

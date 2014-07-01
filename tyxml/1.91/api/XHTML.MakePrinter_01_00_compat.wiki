@@ -1,0 +1,7 @@
+=Functor <<a_api_type | module XHTML.MakePrinter_01_00_compat >> =
+<<div class="code"|<<span class="keyword"|module>> MakePrinter_01_00_compat: <<div class="sig_block"|<<span class='code'|functor ~(>><<span class='code'|~O>><<span class='code'| ~: >><<span class="code type"|<<a_api text="XML_sigs.Output" | module XML_sigs.Output >>>><<span class='code'|~) ~-~> >><<span class="code type"|<<a_api text="XML_sigs.TypedPrinter" | module XML_sigs.TypedPrinter >>(<<a_api text="XML.M" | module XML.M >>)(M_01_00)(O).T>><<span class="code type"|{{{  }}}>>>>>>~Parametrized stream printer for ~X~H~T~M~L ~1~.~0 documents ~(~H~T~M~L compatible printer~)\\
+<<div class="module_param_list" | <<span class="param_title" |Parameters :>><<div|
+|@@class="paramstable"@ @class="centertop fifteen code"@@{{{O}}}|@@class="centertop"@@:|<<span class="code type"|<<a_api text="XML_sigs.Output" | module XML_sigs.Output >>>>|
+>>>>
+
+----

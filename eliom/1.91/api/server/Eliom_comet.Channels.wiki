@@ -1,0 +1,31 @@
+=Module <<a_api_type subproject="server" | module Eliom_comet.Channels >> =
+<<div class="code"|<<span class="keyword"|module>> Channels: <<span class='code'|sig>><<a_api subproject="server" text=".." | module Eliom_comet.Channels >><<span class='code'|end>>>>
+----
+<<div class="code" id="TYPEt"|<<span class="keyword"|type>> <<span class="code type"|'a>> t>>
+<<div class="info"|<<span class='code'|v t>> is the type of server~-to~-client communication channels
+      transporting data of type <<span class='code'|v>>\\
+>>
+
+<<div id="VALcreate" class="code"|<<span class="keyword"|val>> create : <<span class="code type"|?name:string -> ?size:int -> 'a Lwt_stream.t -> 'a <<a_api subproject="server" text="t" | type Eliom_comet.Channels.t >>>>>><<div class="info"|<<span class='code'|create s>> returns a channel sending values from <<span class='code'|s>>~. ~This
+      function can only be used when client application datas are
+      available~. ~The eliom service created to communicate with the
+      client is only available in the scope of the client process~. ~A
+      channel can be used only one time on client side~. ~To be able to
+      receive the same data multiples times on client side~, use
+      <<span class='code'|create ~(~Lwt~_stream~.clone s~)>> each time~.
+      ~To avoid memory leak when the client do not read the sent datas~,
+      the channel has a limited <<span class='code'|size>>~. ~When a channel is full~, no data
+      can be read from it anymore~.
+      ~Note that to enforce this limit the data are read into the channel as soon as possible~:
+      ~If you want a channel that read data to the stream only when the
+      client request it~, use <<span class='code'|create~_unlimited>> instead~, but be carefull
+      to memory leaks~.\\
+>>
+<<div id="VALcreate_unlimited" class="code"|<<span class="keyword"|val>> create~_unlimited : <<span class="code type"|?name:string -> 'a Lwt_stream.t -> 'a <<a_api subproject="server" text="t" | type Eliom_comet.Channels.t >>>>>><<div class="info"|<<span class='code'|create~_unlimited s>> creates a channel wich does not read
+      immediately on the stream it is read only when the client
+      request it~: use it if the data you send depends on the time of
+      the request ~( for instance the number of unread mails ~)~. ~Be
+      carefull the size of this stream is not limited~: if the size of
+      the stream increase and your clients don~'t read it~, you may have
+      memory leaks~.\\
+>>

@@ -1,0 +1,27 @@
+=Module <<a_api_type subproject="server" | module Eliom_bus >> =
+<<div class="code"|<<span class="keyword"|module>> Eliom_bus: <<span class='code'|sig>><<a_api subproject="server" text=".." | module Eliom_bus >><<span class='code'|end>>>>~Broadcasting facilities between clients and server\\
+
+----
+<<div class="code" id="TYPEt"|<<span class="keyword"|type>> <<span class="code type"|'a>> t>>
+<<div class="info"|~The type of bus~'s carrying values of type <<span class='code'|~'a>>~. ~Bus~'s are values
+    that can be easily shared among clients~. ~Each of these clients
+    along with the server can send a value on the bus~. ~Values can be
+    received by each of the participants as a stream~. ~Note that no
+    effort is put to order message receptions on the different
+    participants~.\\
+>>
+
+<<div id="VALcreate" class="code"|<<span class="keyword"|val>> create : <<span class="code type"|\\{{{   }}}?scope:<<a_api subproject="server" text="Eliom_common.scope" | type Eliom_common.scope >> ->\\{{{   }}}  ?name:string -> ?size:int -> 'a Deriving_Json.t -> 'a <<a_api subproject="server" text="t" | type Eliom_bus.t >>>>>><<div class="info"|<<span class='code'|create ~?scope ~?name>> makes a fresh bus~. ~The <<span class='code'|name>> optional
+    parameter can be used to make persistent ~(as in server restart
+    persistent~) bus~'s~. ~The <<span class='code'|scope>> argument is passed to the
+    underlying service creation function~. ~The <<span class='code'|~?name>> argument allow
+    one to make bus~'s persistent over server restart~.\\
+>>
+<<div id="VALstream" class="code"|<<span class="keyword"|val>> stream : <<span class="code type"|'a <<a_api subproject="server" text="t" | type Eliom_bus.t >> -> 'a Lwt_stream.t>>>><<div class="info"|<<span class='code'|stream b>> returns the stream of datas sent to bus <<span class='code'|b>>~. ~Notice you
+    sould not use that function multiple times on the same bus~, it will
+    return the same stream~. ~If you want to receive mutiple times the
+    same datas~, you sould copy the stream with <<span class='code'|~Lwt~_stream~.clone>>\\
+>>
+<<div id="VALwrite" class="code"|<<span class="keyword"|val>> write : <<span class="code type"|'a <<a_api subproject="server" text="t" | type Eliom_bus.t >> -> 'a -> unit>>>><<div class="info"|<<span class='code'|write b x>> sends the value <<span class='code'|x>> on the bus <<span class='code'|b>>~. ~Every participant~,
+    including the server~, will receive <<span class='code'|x>>~.\\
+>>

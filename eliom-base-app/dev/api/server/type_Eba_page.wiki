@@ -1,0 +1,54 @@
+<<code language="ocaml" | sig
+  module Make :
+    functor (C : Eba_config.Page) ->
+      functor (Session : Eba_sigs.Session) ->
+        sig
+          module Session :
+            sig
+              type group = Session.group
+              exception Permission_denied
+              exception Not_connected
+              val connect : int64 -> unit Lwt.t
+              val disconnect : unit -> unit Lwt.t
+              val connected_fun :
+                ?allow:group list ->
+                ?deny:group list ->
+                (int64 -> 'a -> 'b -> 'c Lwt.t) -> 'a -> 'b -> 'c Lwt.t
+              val connected_rpc :
+                ?allow:group list ->
+                ?deny:group list ->
+                (int64 -> 'a -> 'b Lwt.t) -> 'a -> 'b Lwt.t
+              val get_current_userid : unit -> int64
+              module Opt :
+                sig
+                  val connected_fun :
+                    ?allow:group list ->
+                    ?deny:group list ->
+                    (int64 option -> 'a -> 'b -> 'c Lwt.t) ->
+                    'a -> 'b -> 'c Lwt.t
+                  val connected_rpc :
+                    ?allow:group list ->
+                    ?deny:group list ->
+                    (int64 option -> 'a -> 'b Lwt.t) -> 'a -> 'b Lwt.t
+                  val get_current_userid : unit -> int64 option
+                end
+            end
+          exception Predicate_failed of exn option
+          exception Permission_denied
+          exception Not_connected
+          type page = Html5_types.html Eliom_content.Html5.elt
+          type page_content =
+              Html5_types.body_content Eliom_content.Html5.elt list
+          val page :
+            ?predicate:('a -> 'b -> bool Lwt.t) ->
+            ?fallback:('a -> 'b -> exn -> page_content Lwt.t) ->
+            ('a -> 'b -> page_content Lwt.t) -> 'a -> 'b -> page Lwt.t
+          val connected_page :
+            ?allow:Session.group list ->
+            ?deny:Session.group list ->
+            ?predicate:(int64 -> 'a -> 'b -> bool Lwt.t) ->
+            ?fallback:(int64 option -> 'a -> 'b -> exn -> page_content Lwt.t) ->
+            (int64 -> 'a -> 'b -> page_content Lwt.t) ->
+            'a -> 'b -> page Lwt.t
+        end
+end >>

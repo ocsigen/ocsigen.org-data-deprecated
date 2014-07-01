@@ -1,0 +1,13 @@
+<<code language="ocaml" | sig
+  val _COMMAND_VALUE_CHANGE : Js.js_string Js.t
+  val _LOAD : Js.js_string Js.t
+  val _UNLOAD : Js.js_string Js.t
+  val _BEFORECHANGE : Js.js_string Js.t
+  val _CHANGE : Js.js_string Js.t
+  val _DELAYEDCHANGE : Js.js_string Js.t
+  val _BEFOREFOCUS : Js.js_string Js.t
+  val _FOCUS : Js.js_string Js.t
+  val _BLUR : Js.js_string Js.t
+  val _BEFORETAB : Js.js_string Js.t
+  val _SELECTIONCHANGE : Js.js_string Js.t
+end >>

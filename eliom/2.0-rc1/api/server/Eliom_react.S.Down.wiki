@@ -1,0 +1,7 @@
+=Module <<a_api_type subproject="server" | module Eliom_react.S.Down >> =
+<<div class="code"|<<span class="keyword"|module>> Down: <<span class='code'|sig>><<a_api subproject="server" text=".." | module Eliom_react.S.Down >><<span class='code'|end>>>>
+----
+<<div class="code" id="TYPEt"|<<span class="keyword"|type>> <<span class="code type"|'a>> t>>
+
+<<div id="VALof_react" class="code"|<<span class="keyword"|val>> of~_react : <<span class="code type"|\\{{{   }}}?scope:[< <<a_api subproject="server" text="Eliom_comet.Channels.comet_scope" | type Eliom_comet.Channels.comet_scope >> ] ->\\{{{   }}}  ?throttling:float -> ?name:string -> 'a React.S.t -> 'a <<a_api subproject="server" text="t" | type Eliom_react.S.Down.t >>>>>><<div class="info"|~The abstract type of down signals~.\\
+>>

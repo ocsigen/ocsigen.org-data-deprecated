@@ -1,0 +1,186 @@
+=Index of modules=
+
+|@@ @class="alignleft"@@\\B|
+|<<a_api text="BASE"| module XHTML_types.BASE >> ~[<<a_api | module XHTML_types >>~]||
+|<<a_api text="Basic_Forms"| module XHTML_sigs.XHTML.T.Basic_Forms >> ~[<<a_api | module XHTML_sigs.XHTML.T >>~]||
+|<<a_api text="Basic_Tables"| module XHTML_sigs.XHTML.T.Basic_Tables >> ~[<<a_api | module XHTML_sigs.XHTML.T >>~]||
+|@@ @class="alignleft"@@\\F|
+|<<a_api text="FORMS"| module XHTML_types.FORMS >> ~[<<a_api | module XHTML_types >>~]||
+|@@ @class="alignleft"@@\\H|
+|<<a_api text="HTML5"| module HTML5_sigs.HTML5 >> ~[<<a_api | module HTML5_sigs >>~]||
+|<<a_api text="HTML5"| module HTML5 >> |<<div class="info"|~Typesafe constructors and printers for ~H~T~M~L~5 documents~.
+>>
+|
+|<<a_api text="HTML5_f"| module HTML5_f >> |<<div class="info"|~Typesafe constructors for ~H~T~M~L~5 documents ~(~Functorial interface~)
+>>
+|
+|<<a_api text="HTML5_sigs"| module HTML5_sigs >> |<<div class="info"|~Signatures of typesafe constructors for ~H~T~M~L~5 documents~.
+>>
+|
+|<<a_api text="HTML5_types"| module HTML5_types >> |<<div class="info"|~H~T~M~L~5 types with variants~.
+>>
+|
+|<<a_api text="HYPERTEXT"| module XHTML_types.HYPERTEXT >> ~[<<a_api | module XHTML_types >>~]||
+|@@ @class="alignleft"@@\\I|
+|<<a_api text="Info"| module XML_sigs_duce.TypedXML.Info >> ~[<<a_api | module XML_sigs_duce.TypedXML >>~]||
+|<<a_api text="Info"| module HTML5_sigs.HTML5.T.Info >> ~[<<a_api | module HTML5_sigs.HTML5.T >>~]||
+|<<a_api text="Info"| module SVG_sigs.SVG.T.Info >> ~[<<a_api | module SVG_sigs.SVG.T >>~]||
+|<<a_api text="Info"| module XHTML_sigs.XHTML.T.Info >> ~[<<a_api | module XHTML_sigs.XHTML.T >>~]||
+|<<a_api text="Info"| module XML_sigs.TypedXML.T.Info >> ~[<<a_api | module XML_sigs.TypedXML.T >>~]||
+|@@ @class="alignleft"@@\\L|
+|<<a_api text="LINK"| module XHTML_types.LINK >> ~[<<a_api | module XHTML_types >>~]||
+|<<a_api text="LIST"| module XHTML_types.LIST >> ~[<<a_api | module XHTML_types >>~]||
+|@@ @class="alignleft"@@\\M|
+|<<a_api text="M"| module XHTML_duce.M >> ~[<<a_api | module XHTML_duce >>~]||
+|<<a_api text="M"| module HTML5.M >> ~[<<a_api | module HTML5 >>~]|<<div class="info"|~Concrete implementation of ~H~T~M~L~5 typesafe constructors
+>>
+|
+|<<a_api text="M"| module SVG.M >> ~[<<a_api | module SVG >>~]|<<div class="info"|~Concrete implementation of ~S~V~G typesafe constructors
+>>
+|
+|<<a_api text="M"| module XHTML.M >> ~[<<a_api | module XHTML >>~]|<<div class="info"|~Concrete implementation of ~X~H~T~M~L typesafe constructors
+>>
+|
+|<<a_api text="M"| module XML.M >> ~[<<a_api | module XML >>~]||
+|<<a_api text="M_01_00"| module XHTML_duce.M_01_00 >> ~[<<a_api | module XHTML_duce >>~]||
+|<<a_api text="M_01_00"| module XHTML.M_01_00 >> ~[<<a_api | module XHTML >>~]|<<div class="info"|~Concrete implementation of ~X~H~T~M~L ~1~.~0 typesafe constructors
+>>
+|
+|<<a_api text="M_01_00_compat"| module XHTML_duce.M_01_00_compat >> ~[<<a_api | module XHTML_duce >>~]||
+|<<a_api text="M_01_01"| module XHTML.M_01_01 >> ~[<<a_api | module XHTML >>~]|<<div class="info"|~Concrete implementation of ~X~H~T~M~L ~1~.~1 typesafe constructors
+>>
+|
+|<<a_api text="Make"| module XML_print_duce.Make >> ~[<<a_api | module XML_print_duce >>~]||
+|<<a_api text="Make"| module HTML5_f.Make >> ~[<<a_api | module HTML5_f >>~]||
+|<<a_api text="Make"| module SVG_f.Make >> ~[<<a_api | module SVG_f >>~]||
+|<<a_api text="Make"| module XHTML_f.Make >> ~[<<a_api | module XHTML_f >>~]||
+|<<a_api text="Make"| module XML_iter.Make >> ~[<<a_api | module XML_iter >>~]||
+|<<a_api text="Make"| module XML_print.Make >> ~[<<a_api | module XML_print >>~]||
+|<<a_api text="MakePrinter"| module HTML5.MakePrinter >> ~[<<a_api | module HTML5 >>~]|<<div class="info"|~Parametrized stream printer for ~H~T~M~L~5 documents
+>>
+|
+|<<a_api text="MakePrinter"| module SVG.MakePrinter >> ~[<<a_api | module SVG >>~]|<<div class="info"|~Parametrized stream printer for ~S~V~G documents
+>>
+|
+|<<a_api text="MakePrinter"| module XHTML.MakePrinter >> ~[<<a_api | module XHTML >>~]|<<div class="info"|~Parametrized stream printer for ~X~H~T~M~L documents ~(~H~T~M~L compatible printer~)
+>>
+|
+|<<a_api text="MakePrinter_01_00"| module XHTML.MakePrinter_01_00 >> ~[<<a_api | module XHTML >>~]|<<div class="info"|~Parametrized stream printer for ~X~H~T~M~L ~1~.~0 documents
+>>
+|
+|<<a_api text="MakePrinter_01_00_compat"| module XHTML.MakePrinter_01_00_compat >> ~[<<a_api | module XHTML >>~]|<<div class="info"|~Parametrized stream printer for ~X~H~T~M~L ~1~.~0 documents ~(~H~T~M~L compatible printer~)
+>>
+|
+|<<a_api text="MakePrinter_01_01"| module XHTML.MakePrinter_01_01 >> ~[<<a_api | module XHTML >>~]|<<div class="info"|~Parametrized stream printer for ~X~H~T~M~L ~1~.~1 documents
+>>
+|
+|<<a_api text="MakePrinter_01_01_compat"| module XHTML.MakePrinter_01_01_compat >> ~[<<a_api | module XHTML >>~]|<<div class="info"|~Parametrized stream printer for ~X~H~T~M~L ~1~.~1 documents ~(~H~T~M~L compatible printer~)
+>>
+|
+|<<a_api text="MakeSimple"| module XML_print.MakeSimple >> ~[<<a_api | module XML_print >>~]||
+|<<a_api text="MakeTyped"| module XML_print.MakeTyped >> ~[<<a_api | module XML_print >>~]||
+|<<a_api text="MakeTypedRaw"| module XML_print_duce.MakeTypedRaw >> ~[<<a_api | module XML_print_duce >>~]||
+|<<a_api text="MakeTypedSimple"| module XML_print.MakeTypedSimple >> ~[<<a_api | module XML_print >>~]||
+|<<a_api text="Make_01_00"| module XHTML_f.Make_01_00 >> ~[<<a_api | module XHTML_f >>~]||
+|<<a_api text="Make_01_00_compat"| module XHTML_f.Make_01_00_compat >> ~[<<a_api | module XHTML_f >>~]||
+|<<a_api text="Make_01_01"| module XHTML_f.Make_01_01 >> ~[<<a_api | module XHTML_f >>~]||
+|<<a_api text="Make_01_01_compat"| module XHTML_f.Make_01_01_compat >> ~[<<a_api | module XHTML_f >>~]||
+|@@ @class="alignleft"@@\\P|
+|<<a_api text="P"| module XHTML_duce.P >> ~[<<a_api | module XHTML_duce >>~]||
+|<<a_api text="P"| module HTML5.P >> ~[<<a_api | module HTML5 >>~]|<<div class="info"|~Simple printer for ~H~T~M~L~5 documents
+>>
+|
+|<<a_api text="P"| module SVG.P >> ~[<<a_api | module SVG >>~]|<<div class="info"|~Simple printer for ~S~V~G documents
+>>
+|
+|<<a_api text="P"| module XHTML.P >> ~[<<a_api | module XHTML >>~]|<<div class="info"|~Simple printer for ~X~H~T~M~L documents ~(~H~T~M~L compatible printer~)
+>>
+|
+|<<a_api text="PRESENTATION"| module XHTML_types.PRESENTATION >> ~[<<a_api | module XHTML_types >>~]||
+|<<a_api text="P_01_00"| module XHTML_duce.P_01_00 >> ~[<<a_api | module XHTML_duce >>~]||
+|<<a_api text="P_01_00"| module XHTML.P_01_00 >> ~[<<a_api | module XHTML >>~]|<<div class="info"|~Simple printer for ~X~H~T~M~L ~1~.~0 documents
+>>
+|
+|<<a_api text="P_01_00_compat"| module XHTML_duce.P_01_00_compat >> ~[<<a_api | module XHTML_duce >>~]||
+|<<a_api text="P_01_00_compat"| module XHTML.P_01_00_compat >> ~[<<a_api | module XHTML >>~]|<<div class="info"|~Simple printer for ~X~H~T~M~L ~1~.~0 documents ~(~H~T~M~L compatible printer~)
+>>
+|
+|<<a_api text="P_01_01"| module XHTML.P_01_01 >> ~[<<a_api | module XHTML >>~]|<<div class="info"|~Simple printer for ~X~H~T~M~L ~1~.~1 documents
+>>
+|
+|<<a_api text="P_01_01_compat"| module XHTML.P_01_01_compat >> ~[<<a_api | module XHTML >>~]|<<div class="info"|~Simple printer for ~X~H~T~M~L ~1~.~1 documents ~(~H~T~M~L compatible printer~)
+>>
+|
+|<<a_api text="Pa_tyxml"| module Pa_tyxml >> |<<div class="info"|~Syntax extension for ~H~T~M~L~5~, ~X~H~T~M~L or ~S~V~G tree creation~.
+>>
+|
+|<<a_api text="Printer"| module XML_sigs.Printer >> ~[<<a_api | module XML_sigs >>~]||
+|@@ @class="alignleft"@@\\R|
+|<<a_api text="RUBY"| module XHTML_types.RUBY >> ~[<<a_api | module XHTML_types >>~]||
+|@@ @class="alignleft"@@\\S|
+|<<a_api text="SPECIAL"| module XHTML_types.SPECIAL >> ~[<<a_api | module XHTML_types >>~]||
+|<<a_api text="STYLE_SHEET"| module XHTML_types.STYLE_SHEET >> ~[<<a_api | module XHTML_types >>~]||
+|<<a_api text="SVG"| module SVG_sigs.SVG >> ~[<<a_api | module SVG_sigs >>~]||
+|<<a_api text="SVG"| module SVG >> |<<div class="info"|~Typesafe constructors and printers for ~S~V~G documents~.
+>>
+|
+|<<a_api text="SVG_f"| module SVG_f >> |<<div class="info"|~Typesafe constructors for ~S~V~G documents ~(~Functorial interface~)
+>>
+|
+|<<a_api text="SVG_sigs"| module SVG_sigs >> |<<div class="info"|~Signatures of typesafe constructors for ~S~V~G documents~.
+>>
+|
+|<<a_api text="SVG_types"| module SVG_types >> |<<div class="info"|~S~V~G types with variants~.
+>>
+|
+|<<a_api text="SimplePrinter"| module XML_sigs.SimplePrinter >> ~[<<a_api | module XML_sigs >>~]||
+|<<a_api text="Simplexmlparser"| module Simplexmlparser >> |<<div class="info"|~Basic camlp~4 parser for xml
+>>
+|
+|@@ @class="alignleft"@@\\T|
+|<<a_api text="TABLES"| module XHTML_types.TABLES >> ~[<<a_api | module XHTML_types >>~]||
+|<<a_api text="TEXT"| module XHTML_types.TEXT >> ~[<<a_api | module XHTML_types >>~]||
+|<<a_api text="TypedPrinter"| module XML_sigs_duce.TypedPrinter >> ~[<<a_api | module XML_sigs_duce >>~]||
+|<<a_api text="TypedPrinter"| module XML_sigs.TypedPrinter >> ~[<<a_api | module XML_sigs >>~]||
+|<<a_api text="TypedSimplePrinter"| module XML_sigs.TypedSimplePrinter >> ~[<<a_api | module XML_sigs >>~]||
+|<<a_api text="TypedXML"| module XML_sigs.TypedXML >> ~[<<a_api | module XML_sigs >>~]||
+|@@ @class="alignleft"@@\\U|
+|<<a_api text="Unit"| module SVG_types.Unit >> ~[<<a_api | module SVG_types >>~]|<<div class="info"|~S~V~G defines several units to measure time~, length~, angles~.
+>>
+|
+|<<a_api text="Uri"| module Uri >> ||
+|@@ @class="alignleft"@@\\X|
+|<<a_api text="XHTML"| module XHTML_sigs.XHTML >> ~[<<a_api | module XHTML_sigs >>~]||
+|<<a_api text="XHTML"| module XHTML >> |<<div class="info"|~Typesafe constructors and printers for ~X~H~T~M~L ~1~.~0 and ~1~.~1 documents
+>>
+|
+|<<a_api text="XHTML_duce"| module XHTML_duce >> |<<div class="info"|~O~Camlduce printers for ~X~H~T~M~L ~1~.~0 and ~1~.~1 documents~.
+>>
+|
+|<<a_api text="XHTML_f"| module XHTML_f >> |<<div class="info"|~Typesafe constructors for ~X~H~T~M~L documents ~(~Functorial interface~)
+>>
+|
+|<<a_api text="XHTML_sigs"| module XHTML_sigs >> |<<div class="info"|~Signatures of typesafe constructors for ~X~H~T~M~L ~1~.~1 documents~.
+>>
+|
+|<<a_api text="XHTML_types"| module XHTML_types >> |<<div class="info"|~X~H~T~M~L types with variants~.
+>>
+|
+|<<a_api text="XHTML_types_duce"| module XHTML_types_duce >> |<<div class="info"|~This interface corresponds to the ~X~H~T~M~L ~1~.~0 ~Strict ~D~T~D~, for ~Ocamlduce~.
+>>
+|
+|<<a_api text="XML"| module XML >> |<<div class="info"|~Basic functions for construction and manipulation of ~X~M~L tree~.
+>>
+|
+|<<a_api text="XML_iter"| module XML_iter >> |<<div class="info"|~Basic iterators over ~X~M~L tree ~(functorial interface~)~.
+>>
+|
+|<<a_api text="XML_print"| module XML_print >> |<<div class="info"|~Printer for ~X~M~L~.
+>>
+|
+|<<a_api text="XML_print_duce"| module XML_print_duce >> |<<div class="info"|~Printer for ~X~H~T~M~L with ~Ocamlduce that handles browser specificities properly~.
+>>
+|
+|<<a_api text="XML_sigs"| module XML_sigs >> ||
+|<<a_api text="XML_sigs_duce"| module XML_sigs_duce >> ||
+\\

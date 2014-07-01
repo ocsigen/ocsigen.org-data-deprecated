@@ -1,0 +1,8 @@
+=Module <<a_api_type | module Eliom_output.Blocks5 >> =
+<<div class="code"|<<span class="keyword"|module>> Blocks5: <<span class='code'|sig>><<a_api text=".." | module Eliom_output.Blocks5 >><<span class='code'|end>>>>~For ~X~H~T~M~L~5\\
+
+~Use this module for example for ~X~M~L~Http~Requests for block tags ~(e~.g~. ~<div~>~)\\
+
+----
+<<div class="code"|<<span class="keyword"|include>> <<a_api | module type Eliom_mkreg.ELIOMREGSIG >>>>
+<<div class="code"|<<span class="keyword"|include>> <<a_api | module type Eliom_output.XHTMLFORMSSIG >>>>

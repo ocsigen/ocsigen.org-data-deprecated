@@ -1,0 +1,9 @@
+=Module type <<a_api_type subproject="server" | module type Eba_sigs.Groups >> =
+<<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module type>> <<span class="ocsforge_color_uid"|Groups>> <<span class="ocsforge_color_delimiter"|~=>> <<span class="ocsforge_color_keyword"|sig>><<a_api subproject="server" text=".." | module type Eba_sigs.Groups >><<span class="ocsforge_color_keyword"|end>>>>~Groups module needed by ~E~B~A to implement permissions on connected pages
+ and connected fun ~(module <<span class="odocwiki_inlinecode"|~Session>> and <<span class="odocwiki_inlinecode"|~Page>>~)~.
+
+----
+<<pre class="ocsforge_color odocwiki_code" id="TYPEt"|<<span class="ocsforge_color_keyword"|type>> <<span class="odocwiki_name"|t>>>><<div class="odocwiki_info"|~The type of a group~.
+>>
+<<pre id="VALin_group" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|in~_group>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<span class="ocsforge_color_label"| group: >><<a_api subproject="server" text="t" | type Eba_sigs.Groups.t >> <<span class="ocsforge_color_delimiter"| -> >> <<span class="ocsforge_color_label"| userid: >>int64 <<span class="ocsforge_color_delimiter"| -> >> bool <<span class="ocsforge_color_uid"|Lwt>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>>>>>><<div class="odocwiki_info"|~Determin if a userid belongs or not~, to a group~.
+>>

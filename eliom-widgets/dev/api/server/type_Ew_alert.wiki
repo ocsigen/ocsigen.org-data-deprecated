@@ -1,0 +1,22 @@
+<<code language="ocaml" | sig
+  type content' = Html5_types.body_content
+  type element' = Html5_types.body_content
+  type 'a elt' = 'a Eliom_content.Html5.elt
+  type dyn_alert_fun' =
+      Ew_alert.element' Ew_alert.elt' ->
+      Ew_alert.content' Ew_alert.elt' list Lwt.t
+  val closeable_by_click :
+    Ew_alert.element' Ew_alert.elt' -> Ew_alert.element' Ew_alert.elt'
+  val alert :
+    ?allow_outer_clicks:bool ->
+    ?before:(Ew_alert.element' Ew_alert.elt' -> unit) ->
+    ?after:(Ew_alert.element' Ew_alert.elt' -> unit) ->
+    Ew_alert.element' Ew_alert.elt' -> Ew_alert.element' Ew_alert.elt'
+  val dyn_alert :
+    ?allow_outer_clicks:bool ->
+    ?before:(Ew_alert.element' Ew_alert.elt' -> unit Lwt.t) ->
+    ?after:(Ew_alert.element' Ew_alert.elt' -> unit Lwt.t) ->
+    Ew_alert.element' Ew_alert.elt' ->
+    Ew_alert.dyn_alert_fun' Eliom_pervasives.client_value ->
+    Ew_alert.element' Ew_alert.elt'
+end >>

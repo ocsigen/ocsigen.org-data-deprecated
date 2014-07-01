@@ -1,0 +1,320 @@
+=Functor <<a_api_type subproject="server" | module Eliom_output.Customize >> =
+<<div class="code"|<<span class="keyword"|module>> Customize: <<div class="sig_block"|<<span class='code'|functor ~(>><<span class='code'|~B>><<span class='code'| ~: >><<span class='code'|sig>><<div class="sig_block"|<<div class="code" id="TYPEoptions"|<<span class="keyword"|type>> options>>
+
+<<div class="code" id="TYPEreturn"|<<span class="keyword"|type>> return>>
+
+<<div class="code" id="TYPEpage"|<<span class="keyword"|type>> page>>
+
+<<div class="code" id="TYPEresult"|<<span class="keyword"|type>> result>>
+
+>><<span class='code'|end>><<span class='code'|~) ~-~> >><<div class="sig_block"|<<span class='code'|functor ~(>><<span class='code'|~R>><<span class='code'| ~: >><<span class='code'|sig>><<div class="sig_block"|<<div class="code" id="TYPEpage"|<<span class="keyword"|type>> page = <<span class="code type"|B.page>> >>
+
+<<div class="code" id="TYPEoptions"|<<span class="keyword"|type>> options = <<span class="code type"|B.options>> >>
+
+<<div class="code" id="TYPEreturn"|<<span class="keyword"|type>> return = <<span class="code type"|B.return>> >>
+
+<<div class="code" id="TYPEresult"|<<span class="keyword"|type>> result = <<span class="code type"|B.result>> >>
+
+<<div id="VALsend" class="code"|<<span class="keyword"|val>> send : <<span class="code type"|\\{{{   }}}?options:B.options ->\\{{{   }}}  ?charset:string ->\\{{{   }}}  ?code:int ->\\{{{   }}}  ?content_type:string -> ?headers:Http_headers.t -> B.page -> B.result Lwt.t>>>><<div id="VALregister" class="code"|<<span class="keyword"|val>> register : <<span class="code type"|\\{{{   }}}?scope:[< <<a_api subproject="server" text="Eliom_common.scope" | type Eliom_common.scope >> ] ->\\{{{   }}}  ?options:B.options ->\\{{{   }}}  ?charset:string ->\\{{{   }}}  ?code:int ->\\{{{   }}}  ?content_type:string ->\\{{{   }}}  ?headers:Http_headers.t ->\\{{{   }}}  ?secure_session:bool ->\\{{{   }}}  service:('a, 'b, [< <<a_api subproject="server" text="Eliom_services.internal_service_kind" | type Eliom_services.internal_service_kind >> ],\\{{{   }}}           [< <<a_api subproject="server" text="Eliom_services.suff" | type Eliom_services.suff >> ], 'c, 'd, [ `Registrable ], B.return)\\{{{   }}}          <<a_api subproject="server" text="Eliom_services.service" | type Eliom_services.service >> ->\\{{{   }}}  ?error_handler:((string * exn) list -> B.page Lwt.t) ->\\{{{   }}}  ('a -> 'b -> B.page Lwt.t) -> unit>>>><<div id="VALregister_service" class="code"|<<span class="keyword"|val>> register~_service : <<span class="code type"|\\{{{   }}}?scope:[< <<a_api subproject="server" text="Eliom_common.scope" | type Eliom_common.scope >> ] ->\\{{{   }}}  ?options:B.options ->\\{{{   }}}  ?charset:string ->\\{{{   }}}  ?code:int ->\\{{{   }}}  ?content_type:string ->\\{{{   }}}  ?headers:Http_headers.t ->\\{{{   }}}  ?secure_session:bool ->\\{{{   }}}  ?https:bool ->\\{{{   }}}  ?priority:int ->\\{{{   }}}  path:<<a_api subproject="server" text="Eliom_pervasives.Url.path" | type Eliom_pervasives.Url.path >> ->\\{{{   }}}  get_params:('a, [< <<a_api subproject="server" text="Eliom_services.suff" | type Eliom_services.suff >> ] as 'b, 'c)\\{{{   }}}             <<a_api subproject="server" text="Eliom_parameters.params_type" | type Eliom_parameters.params_type >> ->\\{{{   }}}  ?error_handler:((string * exn) list -> B.page Lwt.t) ->\\{{{   }}}  ('a -> unit -> B.page Lwt.t) ->\\{{{   }}}  ('a, unit,\\{{{   }}}   [> `Attached of\\{{{   }}}        ([> `Internal of [> `Service ] ], [> `Get ]) <<a_api subproject="server" text="Eliom_services.a_s" | type Eliom_services.a_s >> ],\\{{{   }}}   'b, 'c, unit, [> `Registrable ], B.return)\\{{{   }}}  <<a_api subproject="server" text="Eliom_services.service" | type Eliom_services.service >>>>>><<div id="VALregister_coservice" class="code"|<<span class="keyword"|val>> register~_coservice : <<span class="code type"|\\{{{   }}}?scope:[< <<a_api subproject="server" text="Eliom_common.scope" | type Eliom_common.scope >> ] ->\\{{{   }}}  ?options:B.options ->\\{{{   }}}  ?charset:string ->\\{{{   }}}  ?code:int ->\\{{{   }}}  ?content_type:string ->\\{{{   }}}  ?headers:Http_headers.t ->\\{{{   }}}  ?secure_session:bool ->\\{{{   }}}  ?name:string ->\\{{{   }}}  ?csrf_safe:bool ->\\{{{   }}}  ?csrf_scope:[< <<a_api subproject="server" text="Eliom_common.user_scope" | type Eliom_common.user_scope >> ] ->\\{{{   }}}  ?csrf_secure:bool ->\\{{{   }}}  ?max_use:int ->\\{{{   }}}  ?timeout:float ->\\{{{   }}}  ?https:bool ->\\{{{   }}}  fallback:(unit, unit,\\{{{   }}}            [ `Attached of\\{{{   }}}                ([ `Internal of [ `Service ] ], [ `Get ]) <<a_api subproject="server" text="Eliom_services.a_s" | type Eliom_services.a_s >> ],\\{{{   }}}            [ `WithoutSuffix ], unit, unit, [< <<a_api subproject="server" text="Eliom_services.registrable" | type Eliom_services.registrable >> ],\\{{{   }}}            B.return)\\{{{   }}}           <<a_api subproject="server" text="Eliom_services.service" | type Eliom_services.service >> ->\\{{{   }}}  get_params:('a, [ `WithoutSuffix ], 'b) <<a_api subproject="server" text="Eliom_parameters.params_type" | type Eliom_parameters.params_type >> ->\\{{{   }}}  ?error_handler:((string * exn) list -> B.page Lwt.t) ->\\{{{   }}}  ('a -> unit -> B.page Lwt.t) ->\\{{{   }}}  ('a, unit,\\{{{   }}}   [> `Attached of\\{{{   }}}        ([> `Internal of [> `Coservice ] ], [> `Get ]) <<a_api subproject="server" text="Eliom_services.a_s" | type Eliom_services.a_s >> ],\\{{{   }}}   [ `WithoutSuffix ], 'b, unit, [> `Registrable ], B.return)\\{{{   }}}  <<a_api subproject="server" text="Eliom_services.service" | type Eliom_services.service >>>>>><<div id="VALregister_coservice'" class="code"|<<span class="keyword"|val>> register~_coservice~' : <<span class="code type"|\\{{{   }}}?scope:[< <<a_api subproject="server" text="Eliom_common.scope" | type Eliom_common.scope >> ] ->\\{{{   }}}  ?options:B.options ->\\{{{   }}}  ?charset:string ->\\{{{   }}}  ?code:int ->\\{{{   }}}  ?content_type:string ->\\{{{   }}}  ?headers:Http_headers.t ->\\{{{   }}}  ?secure_session:bool ->\\{{{   }}}  ?name:string ->\\{{{   }}}  ?csrf_safe:bool ->\\{{{   }}}  ?csrf_scope:[< <<a_api subproject="server" text="Eliom_common.user_scope" | type Eliom_common.user_scope >> ] ->\\{{{   }}}  ?csrf_secure:bool ->\\{{{   }}}  ?max_use:int ->\\{{{   }}}  ?timeout:float ->\\{{{   }}}  ?https:bool ->\\{{{   }}}  get_params:('a, [ `WithoutSuffix ], 'b) <<a_api subproject="server" text="Eliom_parameters.params_type" | type Eliom_parameters.params_type >> ->\\{{{   }}}  ?error_handler:((string * exn) list -> B.page Lwt.t) ->\\{{{   }}}  ('a -> unit -> B.page Lwt.t) ->\\{{{   }}}  ('a, unit, [> `Nonattached of [> `Get ] <<a_api subproject="server" text="Eliom_services.na_s" | type Eliom_services.na_s >> ],\\{{{   }}}   [ `WithoutSuffix ], 'b, unit, [> `Registrable ], B.return)\\{{{   }}}  <<a_api subproject="server" text="Eliom_services.service" | type Eliom_services.service >>>>>><<div id="VALregister_post_service" class="code"|<<span class="keyword"|val>> register~_post~_service : <<span class="code type"|\\{{{   }}}?scope:[< <<a_api subproject="server" text="Eliom_common.scope" | type Eliom_common.scope >> ] ->\\{{{   }}}  ?options:B.options ->\\{{{   }}}  ?charset:string ->\\{{{   }}}  ?code:int ->\\{{{   }}}  ?content_type:string ->\\{{{   }}}  ?headers:Http_headers.t ->\\{{{   }}}  ?secure_session:bool ->\\{{{   }}}  ?https:bool ->\\{{{   }}}  ?priority:int ->\\{{{   }}}  fallback:('a, unit,\\{{{   }}}            [ `Attached of\\{{{   }}}                ([ `Internal of [ `Coservice | `Service ] ], [ `Get ])\\{{{   }}}                <<a_api subproject="server" text="Eliom_services.a_s" | type Eliom_services.a_s >> ],\\{{{   }}}            [< <<a_api subproject="server" text="Eliom_services.suff" | type Eliom_services.suff >> ] as 'b, 'c, unit, [< `Registrable ], 'd)\\{{{   }}}           <<a_api subproject="server" text="Eliom_services.service" | type Eliom_services.service >> ->\\{{{   }}}  post_params:('e, [ `WithoutSuffix ], 'f) <<a_api subproject="server" text="Eliom_parameters.params_type" | type Eliom_parameters.params_type >> ->\\{{{   }}}  ?error_handler:((string * exn) list -> B.page Lwt.t) ->\\{{{   }}}  ('a -> 'e -> B.page Lwt.t) ->\\{{{   }}}  ('a, 'e,\\{{{   }}}   [> `Attached of\\{{{   }}}        ([> `Internal of [ `Coservice | `Service ] ], [> `Post ])\\{{{   }}}        <<a_api subproject="server" text="Eliom_services.a_s" | type Eliom_services.a_s >> ],\\{{{   }}}   'b, 'c, 'f, [> `Registrable ], B.return)\\{{{   }}}  <<a_api subproject="server" text="Eliom_services.service" | type Eliom_services.service >>>>>><<div id="VALregister_post_coservice" class="code"|<<span class="keyword"|val>> register~_post~_coservice : <<span class="code type"|\\{{{   }}}?scope:[< <<a_api subproject="server" text="Eliom_common.scope" | type Eliom_common.scope >> ] ->\\{{{   }}}  ?options:B.options ->\\{{{   }}}  ?charset:string ->\\{{{   }}}  ?code:int ->\\{{{   }}}  ?content_type:string ->\\{{{   }}}  ?headers:Http_headers.t ->\\{{{   }}}  ?secure_session:bool ->\\{{{   }}}  ?name:string ->\\{{{   }}}  ?csrf_safe:bool ->\\{{{   }}}  ?csrf_scope:[< <<a_api subproject="server" text="Eliom_common.user_scope" | type Eliom_common.user_scope >> ] ->\\{{{   }}}  ?csrf_secure:bool ->\\{{{   }}}  ?max_use:int ->\\{{{   }}}  ?timeout:float ->\\{{{   }}}  ?https:bool ->\\{{{   }}}  fallback:('a, unit,\\{{{   }}}            [ `Attached of\\{{{   }}}                ([ `Internal of [< `Coservice | `Service ] ], [ `Get ])\\{{{   }}}                <<a_api subproject="server" text="Eliom_services.a_s" | type Eliom_services.a_s >> ],\\{{{   }}}            [< <<a_api subproject="server" text="Eliom_services.suff" | type Eliom_services.suff >> ] as 'b, 'c, unit, [< `Registrable ],\\{{{   }}}            B.return)\\{{{   }}}           <<a_api subproject="server" text="Eliom_services.service" | type Eliom_services.service >> ->\\{{{   }}}  post_params:('d, [ `WithoutSuffix ], 'e) <<a_api subproject="server" text="Eliom_parameters.params_type" | type Eliom_parameters.params_type >> ->\\{{{   }}}  ?error_handler:((string * exn) list -> B.page Lwt.t) ->\\{{{   }}}  ('a -> 'd -> B.page Lwt.t) ->\\{{{   }}}  ('a, 'd,\\{{{   }}}   [> `Attached of\\{{{   }}}        ([> `Internal of [> `Coservice ] ], [> `Post ]) <<a_api subproject="server" text="Eliom_services.a_s" | type Eliom_services.a_s >> ],\\{{{   }}}   'b, 'c, 'e, [> `Registrable ], B.return)\\{{{   }}}  <<a_api subproject="server" text="Eliom_services.service" | type Eliom_services.service >>>>>><<div id="VALregister_post_coservice'" class="code"|<<span class="keyword"|val>> register~_post~_coservice~' : <<span class="code type"|\\{{{   }}}?scope:[< <<a_api subproject="server" text="Eliom_common.scope" | type Eliom_common.scope >> ] ->\\{{{   }}}  ?options:B.options ->\\{{{   }}}  ?charset:string ->\\{{{   }}}  ?code:int ->\\{{{   }}}  ?content_type:string ->\\{{{   }}}  ?headers:Http_headers.t ->\\{{{   }}}  ?secure_session:bool ->\\{{{   }}}  ?name:string ->\\{{{   }}}  ?csrf_safe:bool ->\\{{{   }}}  ?csrf_scope:[< <<a_api subproject="server" text="Eliom_common.user_scope" | type Eliom_common.user_scope >> ] ->\\{{{   }}}  ?csrf_secure:bool ->\\{{{   }}}  ?max_use:int ->\\{{{   }}}  ?timeout:float ->\\{{{   }}}  ?keep_get_na_params:bool ->\\{{{   }}}  ?https:bool ->\\{{{   }}}  post_params:('a, [ `WithoutSuffix ], 'b) <<a_api subproject="server" text="Eliom_parameters.params_type" | type Eliom_parameters.params_type >> ->\\{{{   }}}  ?error_handler:((string * exn) list -> B.page Lwt.t) ->\\{{{   }}}  (unit -> 'a -> B.page Lwt.t) ->\\{{{   }}}  (unit, 'a, [> `Nonattached of [> `Post ] <<a_api subproject="server" text="Eliom_services.na_s" | type Eliom_services.na_s >> ],\\{{{   }}}   [ `WithoutSuffix ], unit, 'b, [> `Registrable ], B.return)\\{{{   }}}  <<a_api subproject="server" text="Eliom_services.service" | type Eliom_services.service >>>>>>>><<span class='code'|end>><<span class='code'|~) ~-~> >><<div class="sig_block"|<<span class='code'|functor ~(>><<span class='code'|~T>><<span class='code'| ~: >><<span class='code'|sig>><<div class="sig_block"|<<div class="code" id="TYPEpage"|<<span class="keyword"|type>> page>>
+
+<<div id="VALtranslate" class="code"|<<span class="keyword"|val>> translate : <<span class="code type"|<<a_api subproject="server" text="page" | type Eliom_output.Customize.page >> -> B.page Lwt.t>>>>>><<span class='code'|end>><<span class='code'|~) ~-~> >><<span class='code'|sig>><<a_api subproject="server" text=".." | module Eliom_output.Customize >><<span class='code'|end>>>>>>>>>><<div class="module_param_list" | <<span class="param_title" |Parameters :>><<div|
+|@@class="paramstable"@ @class="centertop fifteen code"@@{{{B}}}|@@class="centertop"@@:|<<span class="code type"|sig type options
+            type return
+             type page
+              type result
+               end>>|
+|@@class="centertop fifteen code"@@{{{R}}}|@@class="centertop"@@:|<<span class="code type"|sig
+      type page = B.page
+      
+      type options = B.options
+      
+      type return = B.return
+      
+      type result = B.result
+      
+      open Eliom_pervasives
+        
+      open Eliom_services
+        
+      open Eliom_parameters
+        
+      val send :
+        ?options: B.options ->
+          ?charset: string ->
+            ?code: int ->
+              ?content_type: string ->
+                ?headers: Http_headers.t -> B.page -> B.result Lwt.t
+        
+      val register :
+        ?scope: [< | Eliom_common.scope] ->
+          ?options: B.options ->
+            ?charset: string ->
+              ?code: int ->
+                ?content_type: string ->
+                  ?headers: Http_headers.t ->
+                    ?secure_session: bool ->
+                      service:
+                        (('get, 'post, [< | internal_service_kind], [< | suff
+                           ], 'gn, 'pn, [ | `Registrable ], B.return) service)
+                        ->
+                        ?error_handler: ((string * exn) list -> B.page Lwt.t)
+                          -> ('get -> 'post -> B.page Lwt.t) -> unit
+        
+      val register_service :
+        ?scope: [< | Eliom_common.scope] ->
+          ?options: B.options ->
+            ?charset: string ->
+              ?code: int ->
+                ?content_type: string ->
+                  ?headers: Http_headers.t ->
+                    ?secure_session: bool ->
+                      ?https: bool ->
+                        ?priority: int ->
+                          path: Url.path ->
+                            get_params:
+                              (('get, [< | suff] as 'tipo, 'gn) params_type)
+                              ->
+                              ?error_handler:
+                                ((string * exn) list -> B.page Lwt.t) ->
+                                ('get -> unit -> B.page Lwt.t) ->
+                                  ('get, unit,
+                                    [>
+                                      | `Attached of
+                                                     ([>
+                                                        | `Internal of
+                                                                    [>
+                                                                    | `Service
+                                                                    ]
+                                                       ], [> | `Get]) a_s
+                                    ], 'tipo, 'gn, unit, [> | `Registrable],
+                                    B.return) service
+        
+      val register_coservice :
+        ?scope: [< | Eliom_common.scope] ->
+          ?options: B.options ->
+            ?charset: string ->
+              ?code: int ->
+                ?content_type: string ->
+                  ?headers: Http_headers.t ->
+                    ?secure_session: bool ->
+                      ?name: string ->
+                        ?csrf_safe: bool ->
+                          ?csrf_scope: [< | Eliom_common.user_scope] ->
+                            ?csrf_secure: bool ->
+                              ?max_use: int ->
+                                ?timeout: float ->
+                                  ?https: bool ->
+                                    fallback:
+                                      ((unit, unit,
+                                         [
+                                           | `Attached of
+                                                          ([
+                                                             | `Internal of
+                                                                    [
+                                                                    | `Service
+                                                                    ]
+                                                            ], [ | `Get ])
+                                                            a_s
+                                         ], [ | `WithoutSuffix ] as 'tipo,
+                                         unit, unit, [< | registrable], B.
+                                         return) service)
+                                      ->
+                                      get_params:
+                                        (('get, [ | `WithoutSuffix ], 'gn)
+                                           params_type)
+                                        ->
+                                        ?error_handler:
+                                          ((string * exn) list ->
+                                             B.page Lwt.t)
+                                          ->
+                                          ('get -> unit -> B.page Lwt.t) ->
+                                            ('get, unit,
+                                              [>
+                                                | `Attached of
+                                                               ([>
+                                                                  | `Internal of
+                                                                    [>
+                                                                    | `Coservice
+                                                                    ]
+                                                                 ], [> | `Get
+                                                                 ]) a_s
+                                              ], 'tipo, 'gn, unit,
+                                              [> | `Registrable], B.return)
+                                              service
+        
+      val register_coservice' :
+        ?scope: [< | Eliom_common.scope] ->
+          ?options: B.options ->
+            ?charset: string ->
+              ?code: int ->
+                ?content_type: string ->
+                  ?headers: Http_headers.t ->
+                    ?secure_session: bool ->
+                      ?name: string ->
+                        ?csrf_safe: bool ->
+                          ?csrf_scope: [< | Eliom_common.user_scope] ->
+                            ?csrf_secure: bool ->
+                              ?max_use: int ->
+                                ?timeout: float ->
+                                  ?https: bool ->
+                                    get_params:
+                                      (('get, [ | `WithoutSuffix ] as 'tipo,
+                                         'gn) params_type)
+                                      ->
+                                      ?error_handler:
+                                        ((string * exn) list -> B.page Lwt.t)
+                                        ->
+                                        ('get -> unit -> B.page Lwt.t) ->
+                                          ('get, unit,
+                                            [>
+                                              | `Nonattached of
+                                                                [> | `Get]
+                                                                  na_s
+                                            ], 'tipo, 'gn, unit,
+                                            [> | `Registrable], B.return)
+                                            service
+        
+      val register_post_service :
+        ?scope: [< | Eliom_common.scope] ->
+          ?options: B.options ->
+            ?charset: string ->
+              ?code: int ->
+                ?content_type: string ->
+                  ?headers: Http_headers.t ->
+                    ?secure_session: bool ->
+                      ?https: bool ->
+                        ?priority: int ->
+                          fallback:
+                            (('get, unit,
+                               [
+                                 | `Attached of
+                                                ([
+                                                   | `Internal of
+                                                                  [
+                                                                    | `Service
+                                                                    | `Coservice
+                                                                    ] as
+                                                                    'kind
+                                                  ], [ | `Get ]) a_s
+                               ], [< | suff] as 'tipo, 'gn, unit,
+                               [< | `Registrable], 'return2) service)
+                            ->
+                            post_params:
+                              (('post, [ | `WithoutSuffix ], 'pn) params_type)
+                              ->
+                              ?error_handler:
+                                ((string * exn) list -> B.page Lwt.t) ->
+                                ('get -> 'post -> B.page Lwt.t) ->
+                                  ('get, 'post,
+                                    [>
+                                      | `Attached of
+                                                     ([> | `Internal of 'kind
+                                                       ], [> | `Post]) a_s
+                                    ], 'tipo, 'gn, 'pn, [> | `Registrable],
+                                    B.return) service
+        
+      val register_post_coservice :
+        ?scope: [< | Eliom_common.scope] ->
+          ?options: B.options ->
+            ?charset: string ->
+              ?code: int ->
+                ?content_type: string ->
+                  ?headers: Http_headers.t ->
+                    ?secure_session: bool ->
+                      ?name: string ->
+                        ?csrf_safe: bool ->
+                          ?csrf_scope: [< | Eliom_common.user_scope] ->
+                            ?csrf_secure: bool ->
+                              ?max_use: int ->
+                                ?timeout: float ->
+                                  ?https: bool ->
+                                    fallback:
+                                      (('get, unit,
+                                         [
+                                           | `Attached of
+                                                          ([
+                                                             | `Internal of
+                                                                    [<
+                                                                    | `Service
+                                                                    | `Coservice
+                                                                    ]
+                                                            ], [ | `Get ])
+                                                            a_s
+                                         ], [< | suff] as 'tipo, 'gn, unit,
+                                         [< | `Registrable], B.return)
+                                         service)
+                                      ->
+                                      post_params:
+                                        (('post, [ | `WithoutSuffix ], 'pn)
+                                           params_type)
+                                        ->
+                                        ?error_handler:
+                                          ((string * exn) list ->
+                                             B.page Lwt.t)
+                                          ->
+                                          ('get -> 'post -> B.page Lwt.t) ->
+                                            ('get, 'post,
+                                              [>
+                                                | `Attached of
+                                                               ([>
+                                                                  | `Internal of
+                                                                    [>
+                                                                    | `Coservice
+                                                                    ]
+                                                                 ],
+                                                                 [> | `Post])
+                                                                 a_s
+                                              ], 'tipo, 'gn, 'pn,
+                                              [> | `Registrable], B.return)
+                                              service
+        
+      val register_post_coservice' :
+        ?scope: [< | Eliom_common.scope] ->
+          ?options: B.options ->
+            ?charset: string ->
+              ?code: int ->
+                ?content_type: string ->
+                  ?headers: Http_headers.t ->
+                    ?secure_session: bool ->
+                      ?name: string ->
+                        ?csrf_safe: bool ->
+                          ?csrf_scope: [< | Eliom_common.user_scope] ->
+                            ?csrf_secure: bool ->
+                              ?max_use: int ->
+                                ?timeout: float ->
+                                  ?keep_get_na_params: bool ->
+                                    ?https: bool ->
+                                      post_params:
+                                        (('post, [ | `WithoutSuffix ], 'pn)
+                                           params_type)
+                                        ->
+                                        ?error_handler:
+                                          ((string * exn) list ->
+                                             B.page Lwt.t)
+                                          ->
+                                          (unit -> 'post -> B.page Lwt.t) ->
+                                            (unit, 'post,
+                                              [>
+                                                | `Nonattached of
+                                                                  [> | `Post]
+                                                                    na_s
+                                              ], [ | `WithoutSuffix ], unit,
+                                              'pn, [> | `Registrable], B.
+                                              return) service
+        
+    end>>|
+|@@class="centertop fifteen code"@@{{{T}}}|@@class="centertop"@@:|<<span class="code type"|sig type page
+            val translate : page -> B.page Lwt.t
+               end>>|
+>>>>
+
+----
+<<div class="code" id="TYPEpage"|<<span class="keyword"|type>> page = <<span class="code type"|T.page>> >>
+
+<<div class="code" id="TYPEoptions"|<<span class="keyword"|type>> options = <<span class="code type"|B.options>> >>
+
+<<div class="code" id="TYPEreturn"|<<span class="keyword"|type>> return = <<span class="code type"|B.return>> >>
+
+<<div class="code" id="TYPEresult"|<<span class="keyword"|type>> result = <<span class="code type"|B.result>> >>
+
+<<div id="VALsend" class="code"|<<span class="keyword"|val>> send : <<span class="code type"|\\{{{   }}}?options:B.options ->\\{{{   }}}  ?charset:string ->\\{{{   }}}  ?code:int ->\\{{{   }}}  ?content_type:string -> ?headers:Http_headers.t -> T.page -> B.result Lwt.t>>>><<div id="VALregister" class="code"|<<span class="keyword"|val>> register : <<span class="code type"|\\{{{   }}}?scope:[< <<a_api subproject="server" text="Eliom_common.scope" | type Eliom_common.scope >> ] ->\\{{{   }}}  ?options:B.options ->\\{{{   }}}  ?charset:string ->\\{{{   }}}  ?code:int ->\\{{{   }}}  ?content_type:string ->\\{{{   }}}  ?headers:Http_headers.t ->\\{{{   }}}  ?secure_session:bool ->\\{{{   }}}  service:('a, 'b, [< <<a_api subproject="server" text="Eliom_services.internal_service_kind" | type Eliom_services.internal_service_kind >> ],\\{{{   }}}           [< <<a_api subproject="server" text="Eliom_services.suff" | type Eliom_services.suff >> ], 'c, 'd, [ `Registrable ], B.return)\\{{{   }}}          <<a_api subproject="server" text="Eliom_services.service" | type Eliom_services.service >> ->\\{{{   }}}  ?error_handler:((string * exn) list -> T.page Lwt.t) ->\\{{{   }}}  ('a -> 'b -> T.page Lwt.t) -> unit>>>><<div id="VALregister_service" class="code"|<<span class="keyword"|val>> register~_service : <<span class="code type"|\\{{{   }}}?scope:[< <<a_api subproject="server" text="Eliom_common.scope" | type Eliom_common.scope >> ] ->\\{{{   }}}  ?options:B.options ->\\{{{   }}}  ?charset:string ->\\{{{   }}}  ?code:int ->\\{{{   }}}  ?content_type:string ->\\{{{   }}}  ?headers:Http_headers.t ->\\{{{   }}}  ?secure_session:bool ->\\{{{   }}}  ?https:bool ->\\{{{   }}}  ?priority:int ->\\{{{   }}}  path:<<a_api subproject="server" text="Eliom_pervasives.Url.path" | type Eliom_pervasives.Url.path >> ->\\{{{   }}}  get_params:('a, [< <<a_api subproject="server" text="Eliom_services.suff" | type Eliom_services.suff >> ] as 'b, 'c)\\{{{   }}}             <<a_api subproject="server" text="Eliom_parameters.params_type" | type Eliom_parameters.params_type >> ->\\{{{   }}}  ?error_handler:((string * exn) list -> T.page Lwt.t) ->\\{{{   }}}  ('a -> unit -> T.page Lwt.t) ->\\{{{   }}}  ('a, unit,\\{{{   }}}   [> `Attached of\\{{{   }}}        ([> `Internal of [> `Service ] ], [> `Get ]) <<a_api subproject="server" text="Eliom_services.a_s" | type Eliom_services.a_s >> ],\\{{{   }}}   'b, 'c, unit, [> `Registrable ], B.return)\\{{{   }}}  <<a_api subproject="server" text="Eliom_services.service" | type Eliom_services.service >>>>>><<div id="VALregister_coservice" class="code"|<<span class="keyword"|val>> register~_coservice : <<span class="code type"|\\{{{   }}}?scope:[< <<a_api subproject="server" text="Eliom_common.scope" | type Eliom_common.scope >> ] ->\\{{{   }}}  ?options:B.options ->\\{{{   }}}  ?charset:string ->\\{{{   }}}  ?code:int ->\\{{{   }}}  ?content_type:string ->\\{{{   }}}  ?headers:Http_headers.t ->\\{{{   }}}  ?secure_session:bool ->\\{{{   }}}  ?name:string ->\\{{{   }}}  ?csrf_safe:bool ->\\{{{   }}}  ?csrf_scope:[< <<a_api subproject="server" text="Eliom_common.user_scope" | type Eliom_common.user_scope >> ] ->\\{{{   }}}  ?csrf_secure:bool ->\\{{{   }}}  ?max_use:int ->\\{{{   }}}  ?timeout:float ->\\{{{   }}}  ?https:bool ->\\{{{   }}}  fallback:(unit, unit,\\{{{   }}}            [ `Attached of\\{{{   }}}                ([ `Internal of [ `Service ] ], [ `Get ]) <<a_api subproject="server" text="Eliom_services.a_s" | type Eliom_services.a_s >> ],\\{{{   }}}            [ `WithoutSuffix ], unit, unit, [< <<a_api subproject="server" text="Eliom_services.registrable" | type Eliom_services.registrable >> ],\\{{{   }}}            B.return)\\{{{   }}}           <<a_api subproject="server" text="Eliom_services.service" | type Eliom_services.service >> ->\\{{{   }}}  get_params:('a, [ `WithoutSuffix ], 'b) <<a_api subproject="server" text="Eliom_parameters.params_type" | type Eliom_parameters.params_type >> ->\\{{{   }}}  ?error_handler:((string * exn) list -> T.page Lwt.t) ->\\{{{   }}}  ('a -> unit -> T.page Lwt.t) ->\\{{{   }}}  ('a, unit,\\{{{   }}}   [> `Attached of\\{{{   }}}        ([> `Internal of [> `Coservice ] ], [> `Get ]) <<a_api subproject="server" text="Eliom_services.a_s" | type Eliom_services.a_s >> ],\\{{{   }}}   [ `WithoutSuffix ], 'b, unit, [> `Registrable ], B.return)\\{{{   }}}  <<a_api subproject="server" text="Eliom_services.service" | type Eliom_services.service >>>>>><<div id="VALregister_coservice'" class="code"|<<span class="keyword"|val>> register~_coservice~' : <<span class="code type"|\\{{{   }}}?scope:[< <<a_api subproject="server" text="Eliom_common.scope" | type Eliom_common.scope >> ] ->\\{{{   }}}  ?options:B.options ->\\{{{   }}}  ?charset:string ->\\{{{   }}}  ?code:int ->\\{{{   }}}  ?content_type:string ->\\{{{   }}}  ?headers:Http_headers.t ->\\{{{   }}}  ?secure_session:bool ->\\{{{   }}}  ?name:string ->\\{{{   }}}  ?csrf_safe:bool ->\\{{{   }}}  ?csrf_scope:[< <<a_api subproject="server" text="Eliom_common.user_scope" | type Eliom_common.user_scope >> ] ->\\{{{   }}}  ?csrf_secure:bool ->\\{{{   }}}  ?max_use:int ->\\{{{   }}}  ?timeout:float ->\\{{{   }}}  ?https:bool ->\\{{{   }}}  get_params:('a, [ `WithoutSuffix ], 'b) <<a_api subproject="server" text="Eliom_parameters.params_type" | type Eliom_parameters.params_type >> ->\\{{{   }}}  ?error_handler:((string * exn) list -> T.page Lwt.t) ->\\{{{   }}}  ('a -> unit -> T.page Lwt.t) ->\\{{{   }}}  ('a, unit, [> `Nonattached of [> `Get ] <<a_api subproject="server" text="Eliom_services.na_s" | type Eliom_services.na_s >> ],\\{{{   }}}   [ `WithoutSuffix ], 'b, unit, [> `Registrable ], B.return)\\{{{   }}}  <<a_api subproject="server" text="Eliom_services.service" | type Eliom_services.service >>>>>><<div id="VALregister_post_service" class="code"|<<span class="keyword"|val>> register~_post~_service : <<span class="code type"|\\{{{   }}}?scope:[< <<a_api subproject="server" text="Eliom_common.scope" | type Eliom_common.scope >> ] ->\\{{{   }}}  ?options:B.options ->\\{{{   }}}  ?charset:string ->\\{{{   }}}  ?code:int ->\\{{{   }}}  ?content_type:string ->\\{{{   }}}  ?headers:Http_headers.t ->\\{{{   }}}  ?secure_session:bool ->\\{{{   }}}  ?https:bool ->\\{{{   }}}  ?priority:int ->\\{{{   }}}  fallback:('a, unit,\\{{{   }}}            [ `Attached of\\{{{   }}}                ([ `Internal of [ `Coservice | `Service ] ], [ `Get ])\\{{{   }}}                <<a_api subproject="server" text="Eliom_services.a_s" | type Eliom_services.a_s >> ],\\{{{   }}}            [< <<a_api subproject="server" text="Eliom_services.suff" | type Eliom_services.suff >> ] as 'b, 'c, unit, [< `Registrable ], 'd)\\{{{   }}}           <<a_api subproject="server" text="Eliom_services.service" | type Eliom_services.service >> ->\\{{{   }}}  post_params:('e, [ `WithoutSuffix ], 'f) <<a_api subproject="server" text="Eliom_parameters.params_type" | type Eliom_parameters.params_type >> ->\\{{{   }}}  ?error_handler:((string * exn) list -> T.page Lwt.t) ->\\{{{   }}}  ('a -> 'e -> T.page Lwt.t) ->\\{{{   }}}  ('a, 'e,\\{{{   }}}   [> `Attached of\\{{{   }}}        ([> `Internal of [ `Coservice | `Service ] ], [> `Post ])\\{{{   }}}        <<a_api subproject="server" text="Eliom_services.a_s" | type Eliom_services.a_s >> ],\\{{{   }}}   'b, 'c, 'f, [> `Registrable ], B.return)\\{{{   }}}  <<a_api subproject="server" text="Eliom_services.service" | type Eliom_services.service >>>>>><<div id="VALregister_post_coservice" class="code"|<<span class="keyword"|val>> register~_post~_coservice : <<span class="code type"|\\{{{   }}}?scope:[< <<a_api subproject="server" text="Eliom_common.scope" | type Eliom_common.scope >> ] ->\\{{{   }}}  ?options:B.options ->\\{{{   }}}  ?charset:string ->\\{{{   }}}  ?code:int ->\\{{{   }}}  ?content_type:string ->\\{{{   }}}  ?headers:Http_headers.t ->\\{{{   }}}  ?secure_session:bool ->\\{{{   }}}  ?name:string ->\\{{{   }}}  ?csrf_safe:bool ->\\{{{   }}}  ?csrf_scope:[< <<a_api subproject="server" text="Eliom_common.user_scope" | type Eliom_common.user_scope >> ] ->\\{{{   }}}  ?csrf_secure:bool ->\\{{{   }}}  ?max_use:int ->\\{{{   }}}  ?timeout:float ->\\{{{   }}}  ?https:bool ->\\{{{   }}}  fallback:('a, unit,\\{{{   }}}            [ `Attached of\\{{{   }}}                ([ `Internal of [< `Coservice | `Service ] ], [ `Get ])\\{{{   }}}                <<a_api subproject="server" text="Eliom_services.a_s" | type Eliom_services.a_s >> ],\\{{{   }}}            [< <<a_api subproject="server" text="Eliom_services.suff" | type Eliom_services.suff >> ] as 'b, 'c, unit, [< `Registrable ],\\{{{   }}}            B.return)\\{{{   }}}           <<a_api subproject="server" text="Eliom_services.service" | type Eliom_services.service >> ->\\{{{   }}}  post_params:('d, [ `WithoutSuffix ], 'e) <<a_api subproject="server" text="Eliom_parameters.params_type" | type Eliom_parameters.params_type >> ->\\{{{   }}}  ?error_handler:((string * exn) list -> T.page Lwt.t) ->\\{{{   }}}  ('a -> 'd -> T.page Lwt.t) ->\\{{{   }}}  ('a, 'd,\\{{{   }}}   [> `Attached of\\{{{   }}}        ([> `Internal of [> `Coservice ] ], [> `Post ]) <<a_api subproject="server" text="Eliom_services.a_s" | type Eliom_services.a_s >> ],\\{{{   }}}   'b, 'c, 'e, [> `Registrable ], B.return)\\{{{   }}}  <<a_api subproject="server" text="Eliom_services.service" | type Eliom_services.service >>>>>><<div id="VALregister_post_coservice'" class="code"|<<span class="keyword"|val>> register~_post~_coservice~' : <<span class="code type"|\\{{{   }}}?scope:[< <<a_api subproject="server" text="Eliom_common.scope" | type Eliom_common.scope >> ] ->\\{{{   }}}  ?options:B.options ->\\{{{   }}}  ?charset:string ->\\{{{   }}}  ?code:int ->\\{{{   }}}  ?content_type:string ->\\{{{   }}}  ?headers:Http_headers.t ->\\{{{   }}}  ?secure_session:bool ->\\{{{   }}}  ?name:string ->\\{{{   }}}  ?csrf_safe:bool ->\\{{{   }}}  ?csrf_scope:[< <<a_api subproject="server" text="Eliom_common.user_scope" | type Eliom_common.user_scope >> ] ->\\{{{   }}}  ?csrf_secure:bool ->\\{{{   }}}  ?max_use:int ->\\{{{   }}}  ?timeout:float ->\\{{{   }}}  ?keep_get_na_params:bool ->\\{{{   }}}  ?https:bool ->\\{{{   }}}  post_params:('a, [ `WithoutSuffix ], 'b) <<a_api subproject="server" text="Eliom_parameters.params_type" | type Eliom_parameters.params_type >> ->\\{{{   }}}  ?error_handler:((string * exn) list -> T.page Lwt.t) ->\\{{{   }}}  (unit -> 'a -> T.page Lwt.t) ->\\{{{   }}}  (unit, 'a, [> `Nonattached of [> `Post ] <<a_api subproject="server" text="Eliom_services.na_s" | type Eliom_services.na_s >> ],\\{{{   }}}   [ `WithoutSuffix ], unit, 'b, [> `Registrable ], B.return)\\{{{   }}}  <<a_api subproject="server" text="Eliom_services.service" | type Eliom_services.service >>>>>>

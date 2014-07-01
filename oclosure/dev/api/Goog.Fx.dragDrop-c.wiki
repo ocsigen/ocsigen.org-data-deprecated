@@ -1,0 +1,5 @@
+=Class type <<a_api_type | class type Goog.Fx.dragDrop >> =
+<<pre class="ocsforge_color odocwiki_code"|<<span id="TYPEdragDrop"|<<span class="ocsforge_color_keyword"|class type>> <<span class="ocsforge_color_name"|dragDrop>>>> <<span class="ocsforge_color_delimiter"|~=>> <<span class="ocsforge_color_keyword"|object>><<a_api text=".." | class type Goog.Fx.dragDrop >><<span class="ocsforge_color_keyword"|end>>>>**~Inherits**
+* <<a_api | class Goog.Fx.abstractDragDrop >>
+
+----

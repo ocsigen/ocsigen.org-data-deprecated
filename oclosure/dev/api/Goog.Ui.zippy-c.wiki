@@ -1,0 +1,19 @@
+=Class type <<a_api_type | class type Goog.Ui.zippy >> =
+<<pre class="ocsforge_color odocwiki_code"|<<span id="TYPEzippy"|<<span class="ocsforge_color_keyword"|class type>> <<span class="ocsforge_color_name"|zippy>>>> <<span class="ocsforge_color_delimiter"|~=>> <<span class="ocsforge_color_keyword"|object>><<a_api text=".." | class type Goog.Ui.zippy >><<span class="ocsforge_color_keyword"|end>>>>**~Inherits**
+* <<a_api | class Goog.Events.eventTarget >>
+
+----
+<<pre class="ocsforge_color odocwiki_code"|<<span id="METHODcollapse"|<<span class="ocsforge_color_keyword"|method>> <<span class="odocwiki_name"|collapse>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|unit <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|meth>>>>>><<div class="odocwiki_info"|~Collapses content pane~.
+>>
+<<pre class="ocsforge_color odocwiki_code"|<<span id="METHODdisposeInternal"|<<span class="ocsforge_color_keyword"|method>> <<span class="odocwiki_name"|disposeInternal>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|unit <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|meth>>>>>><<div class="odocwiki_info"|~Destroys widget and removes all event listeners~.
+>>
+<<pre class="ocsforge_color odocwiki_code"|<<span id="METHODexpand"|<<span class="ocsforge_color_keyword"|method>> <<span class="odocwiki_name"|expand>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|unit <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|meth>>>>>><<div class="odocwiki_info"|~Expands content pane~.
+>>
+<<pre class="ocsforge_color odocwiki_code"|<<span id="METHODisBusy"|<<span class="ocsforge_color_keyword"|method>> <<span class="odocwiki_name"|isBusy>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|bool <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>> <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|meth>>>>>><<div class="odocwiki_info"|~Whether the zippy is in the process of being expanded or collapsed~.
+>>
+<<pre class="ocsforge_color odocwiki_code"|<<span id="METHODisExpanded"|<<span class="ocsforge_color_keyword"|method>> <<span class="odocwiki_name"|isExpanded>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|bool <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>> <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|meth>>>>>><<div class="odocwiki_info"|~Whether the zippy is expanded~.
+>>
+<<pre class="ocsforge_color odocwiki_code"|<<span id="METHODsetExpanded"|<<span class="ocsforge_color_keyword"|method>> <<span class="odocwiki_name"|setExpanded>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|bool <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>> <<span class="ocsforge_color_delimiter"| -> >> unit <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|meth>>>>>><<div class="odocwiki_info"|~Sets expanded state~.
+>>
+<<pre class="ocsforge_color odocwiki_code"|<<span id="METHODtoggle"|<<span class="ocsforge_color_keyword"|method>> <<span class="odocwiki_name"|toggle>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|unit <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|meth>>>>>><<div class="odocwiki_info"|~Toggles expanded state~.
+>>

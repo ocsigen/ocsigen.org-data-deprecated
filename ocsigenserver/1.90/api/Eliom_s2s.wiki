@@ -1,0 +1,30 @@
+=Module <<a_api_type | module Eliom_s2s >> =
+<<div class="code"|<<span class="keyword"|module>> Eliom_s2s: <<span class='code'|sig>><<a_api text=".." | module Eliom_s2s >><<span class='code'|end>>>>~Server~-to~-~Server communication module~.
+    ~Provides general function to communicate to other servers using
+    post or get request~.\\
+
+----
+<<div id="VALformat_url" class="code"|<<span class="keyword"|val>> format~_url : <<span class="code type"|string -> (string * string) list -> string>>>><<div class="info"|~Format a url with a base and ~G~E~T parameters\\
+
+~Do a get request towards a given url\\
+>>
+<<div id="VALdo_get_request" class="code"|<<span class="keyword"|val>> do~_get~_request : <<span class="code type"|?params:(string * string) list -> string -> <<a_api text="Ocsigen_http_frame.t" | type Ocsigen_http_frame.t >> Lwt.t>>>><<div id="VALpush_ns" class="code"|<<span class="keyword"|val>> push~_ns : <<span class="code type"|\\{{{   }}}?sep:string ->\\{{{   }}}  ?namespace_param:string * 'a ->\\{{{   }}}  string -> (string * 'a) list -> (string * 'a) list>>>><<div class="info"|~Given a list of <<span class='code'|~(param~, value~)>> to be sent to the remote server~,
+    push a namespace at the beginning of the parameters\\
+>>
+<<div id="VALfind_in_ns" class="code"|<<span class="keyword"|val>> find~_in~_ns : <<span class="code type"|\\{{{   }}}?namespace_param:string ->\\{{{   }}}  ?default_namespace:string -> 'a -> (string * 'a) list -> (string * 'a) list>>>><<div class="info"|~Finds some parameters in a namespace~, identified by its url~.
+    ~You can specify a default namespace~, so <<span class='code'|find~_in~_ns>> do not fail
+    when the url is not found~.\\
+>>
+<<div id="VALstrip_ns" class="code"|<<span class="keyword"|val>> strip~_ns : <<span class="code type"|string -> (string * string) list -> (string * string) list>>>><<div class="info"|~Retrieves parameters beginning with the specified namespace and
+    strips it~.\\
+
+~Parse an answer in the ~Key~-~Value form ~:
+
+{{{foo:bar
+foobar:value
+}}}
+\\
+>>
+<<div id="VALparse_key_pairs" class="code"|<<span class="keyword"|val>> parse~_key~_pairs : <<span class="code type"|string -> (string * string) list>>>><<div id="VALdirect_request" class="code"|<<span class="keyword"|val>> direct~_request : <<span class="code type"|(string * string) list -> string -> (string * string) list Lwt.t>>>><<div class="info"|~Perform a direct ~(~P~O~S~T~) request towards a server~,
+    and parse the result as key~-value data\\
+>>

@@ -1,0 +1,5 @@
+<<code language="ocaml" | sig
+  type t
+  val states : (Eba_config.State.t * string * string option) list
+  val default : unit -> Eba_config.State.t
+end >>

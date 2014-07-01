@@ -1,0 +1,136 @@
+=Index of class methods=
+
+|@@ @style="tet-align: left;"@@\\|
+|@@class="odocwiki_index"@ @@<<a_api text="_disable"| method Ojw_active_set.T.item'#_disable >> ~[<<a_api | module Ojw_active_set.T >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="_enable"| method Ojw_active_set.T.item'#_enable >> ~[<<a_api | module Ojw_active_set.T >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="_t"| method Ojw_base_widget.widget'#_t >> ~[<<a_api | module Ojw_base_widget >>~]||
+|@@ @style="tet-align: left;"@@\\A|
+|@@class="odocwiki_index"@ @@<<a_api text="auto"| method Ojw_swipejs.options#auto >> ~[<<a_api | module Ojw_swipejs >>~]||
+|@@ @style="tet-align: left;"@@\\B|
+|@@class="odocwiki_index"@ @@<<a_api text="bubbles"| method Ojw_event.customEventInit#bubbles >> ~[<<a_api | module Ojw_event >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="by"| method Ojw_traversable_sigs.T.traversable_detail_event#by >> ~[<<a_api | module Ojw_traversable_sigs.T >>~]||
+|@@ @style="tet-align: left;"@@\\C|
+|@@class="odocwiki_index"@ @@<<a_api text="callback"| method Ojw_swipejs.options#callback >> ~[<<a_api | module Ojw_swipejs >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="cancelable"| method Ojw_event.customEventInit#cancelable >> ~[<<a_api | module Ojw_event >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="clear"| method Ojw_completion_sigs.T.completion#clear >> ~[<<a_api | module Ojw_completion_sigs.T >>~]|<<div class="odocwiki_info"|~Clear the list of the possible values~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="confirm"| method Ojw_completion_sigs.T.completion#confirm >> ~[<<a_api | module Ojw_completion_sigs.T >>~]|<<div class="odocwiki_info"|~Explicitly confirm with the current value of the input~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="continous"| method Ojw_swipejs.options#continous >> ~[<<a_api | module Ojw_swipejs >>~]||
+|@@ @style="tet-align: left;"@@\\D|
+|@@class="odocwiki_index"@ @@<<a_api text="detail"| method Ojw_event.customEventInit#detail >> ~[<<a_api | module Ojw_event >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="disable"| method Ojw_active_set.T.item#disable >> ~[<<a_api | module Ojw_active_set.T >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="disableScroll"| method Ojw_swipejs.options#disableScroll >> ~[<<a_api | module Ojw_swipejs >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="dynamic"| method Ojw_hookjs.options#dynamic >> ~[<<a_api | module Ojw_hookjs >>~]||
+|@@ @style="tet-align: left;"@@\\E|
+|@@class="odocwiki_index"@ @@<<a_api text="enable"| method Ojw_active_set.T.item#enable >> ~[<<a_api | module Ojw_active_set.T >>~]||
+|@@ @style="tet-align: left;"@@\\G|
+|@@class="odocwiki_index"@ @@<<a_api text="getActive"| method Ojw_traversable_sigs.T.traversable#getActive >> ~[<<a_api | module Ojw_traversable_sigs.T >>~]|<<div class="odocwiki_info"|~Get the current active element~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="getContainer"| method Ojw_traversable_sigs.T.traversable#getContainer >> ~[<<a_api | module Ojw_traversable_sigs.T >>~]|<<div class="odocwiki_info"|~Get the original version of the container used as <<span class="odocwiki_inlinecode"|traversable>>
+      ~* element ~(without conversion~)~.
+>>
+|
+|@@ @style="tet-align: left;"@@\\H|
+|@@class="odocwiki_index"@ @@<<a_api text="h"| method Ojw_jcrop.param#h >> ~[<<a_api | module Ojw_jcrop >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="hide"| method Ojw_alert_sigs.T.dyn_alert#hide >> ~[<<a_api | module Ojw_alert_sigs.T >>~]|<<div class="odocwiki_info"|~Refresh the content of the <<span class="odocwiki_inlinecode"|alert>> if it is visible~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="hide"| method Ojw_alert_sigs.T.alert#hide >> ~[<<a_api | module Ojw_alert_sigs.T >>~]||
+|@@ @style="tet-align: left;"@@\\I|
+|@@class="odocwiki_index"@ @@<<a_api text="isTraversable"| method Ojw_traversable_sigs.T.traversable#isTraversable >> ~[<<a_api | module Ojw_traversable_sigs.T >>~]|<<div class="odocwiki_info"|~Returns true if the <<span class="odocwiki_inlinecode"|traversable>> element can listen keys and
+      ~* interpret them~.
+>>
+|
+|@@ @style="tet-align: left;"@@\\L|
+|@@class="odocwiki_index"@ @@<<a_api text="loaderClass"| method Ojw_hookjs.options#loaderClass >> ~[<<a_api | module Ojw_hookjs >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="loaderText"| method Ojw_hookjs.options#loaderText >> ~[<<a_api | module Ojw_hookjs >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="loaderTextClass"| method Ojw_hookjs.options#loaderTextClass >> ~[<<a_api | module Ojw_hookjs >>~]||
+|@@ @style="tet-align: left;"@@\\N|
+|@@class="odocwiki_index"@ @@<<a_api text="next"| method Ojw_traversable_sigs.T.traversable#next >> ~[<<a_api | module Ojw_traversable_sigs.T >>~]|<<div class="odocwiki_info"|~Explicitly set active the next element of the <<span class="odocwiki_inlinecode"|traversable>>
+      ~* element~.
+>>
+|
+|@@ @style="tet-align: left;"@@\\P|
+|@@class="odocwiki_index"@ @@<<a_api text="press"| method Ojw_button_sigs.T.button#press >> ~[<<a_api | module Ojw_button_sigs.T >>~]|<<div class="odocwiki_info"|~Explicitly press the <<span class="odocwiki_inlinecode"|button>>~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="pressed"| method Ojw_button_sigs.T.button#pressed >> ~[<<a_api | module Ojw_button_sigs.T >>~]|<<div class="odocwiki_info"|~Indicates whether the <<span class="odocwiki_inlinecode"|button>> is pressed or not~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="prev"| method Ojw_traversable_sigs.T.traversable#prev >> ~[<<a_api | module Ojw_traversable_sigs.T >>~]|<<div class="odocwiki_info"|~Explicitly set active the previous element of the <<span class="odocwiki_inlinecode"|traversable>>
+      ~* element~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="prevent"| method Ojw_button_sigs.T.button#prevent >> ~[<<a_api | module Ojw_button_sigs.T >>~]|<<div class="odocwiki_info"|**~E~X~P~E~R~I~M~E~N~T~A~L**~: try to prevents a button from beeing <<span class="odocwiki_inlinecode"|pressed>>~.
+>>
+|
+|@@ @style="tet-align: left;"@@\\R|
+|@@class="odocwiki_index"@ @@<<a_api text="refresh"| method Ojw_completion_sigs.T.completion#refresh >> ~[<<a_api | module Ojw_completion_sigs.T >>~]|<<div class="odocwiki_info"|~Explicitly refresh the content of the widget ~(using the given
+     ~* function <<span class="odocwiki_inlinecode"|refresh>> on the construction of the widget~)~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="reloadEl"| method Ojw_hookjs.options#reloadEl >> ~[<<a_api | module Ojw_hookjs >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="reloadPage"| method Ojw_hookjs.options#reloadPage >> ~[<<a_api | module Ojw_hookjs >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="resetActive"| method Ojw_traversable_sigs.T.traversable#resetActive >> ~[<<a_api | module Ojw_traversable_sigs.T >>~]|<<div class="odocwiki_info"|~Make inactive the current active element~.
+>>
+|
+|@@ @style="tet-align: left;"@@\\S|
+|@@class="odocwiki_index"@ @@<<a_api text="setActive"| method Ojw_traversable_sigs.T.traversable#setActive >> ~[<<a_api | module Ojw_traversable_sigs.T >>~]|<<div class="odocwiki_info"|~Explicitly set to active state a <<span class="odocwiki_inlinecode"|traversable>>~'s child~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="show"| method Ojw_alert_sigs.T.dyn_alert#show >> ~[<<a_api | module Ojw_alert_sigs.T >>~]|<<div class="odocwiki_info"|~Hide the content of the <<span class="odocwiki_inlinecode"|alert>>~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="show"| method Ojw_alert_sigs.T.alert#show >> ~[<<a_api | module Ojw_alert_sigs.T >>~]|<<div class="odocwiki_info"|~Hide the content of the <<span class="odocwiki_inlinecode"|alert>>~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="spinnerClass"| method Ojw_hookjs.options#spinnerClass >> ~[<<a_api | module Ojw_hookjs >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="startSlide"| method Ojw_swipejs.options#startSlide >> ~[<<a_api | module Ojw_swipejs >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="stopPropagation"| method Ojw_swipejs.options#stopPropagation >> ~[<<a_api | module Ojw_swipejs >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="swipeDistance"| method Ojw_hookjs.options#swipeDistance >> ~[<<a_api | module Ojw_hookjs >>~]||
+|@@ @style="tet-align: left;"@@\\T|
+|@@class="odocwiki_index"@ @@<<a_api text="t"| method Ojw_base_widget.widget#t >> ~[<<a_api | module Ojw_base_widget >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="textRequired"| method Ojw_hookjs.options#textRequired >> ~[<<a_api | module Ojw_hookjs >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="toggle"| method Ojw_button_sigs.T.button#toggle >> ~[<<a_api | module Ojw_button_sigs.T >>~]|<<div class="odocwiki_info"|~Presses the <<span class="odocwiki_inlinecode"|button>> if it is unpressed~, and unpress the <<span class="odocwiki_inlinecode"|button>> if
+      ~* it is pressed~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="transitionEnd"| method Ojw_swipejs.options#transitionEnd >> ~[<<a_api | module Ojw_swipejs >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="traversable"| method Ojw_dropdown_sigs.T.dropdown#traversable >> ~[<<a_api | module Ojw_dropdown_sigs.T >>~]|<<div class="odocwiki_info"|~Returns the <<span class="odocwiki_inlinecode"|traversable>> element of the <<span class="odocwiki_inlinecode"|dropdown>>~.
+>>
+|
+|@@ @style="tet-align: left;"@@\\U|
+|@@class="odocwiki_index"@ @@<<a_api text="unpress"| method Ojw_button_sigs.T.button#unpress >> ~[<<a_api | module Ojw_button_sigs.T >>~]|<<div class="odocwiki_info"|~Explicitly unpress the <<span class="odocwiki_inlinecode"|button>>~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="update"| method Ojw_button_sigs.T.button_dyn_alert#update >> ~[<<a_api | module Ojw_button_sigs.T >>~]|<<div class="odocwiki_info"|~Wrapper around <<span class="odocwiki_inlinecode"|update>> method from <<span class="odocwiki_inlinecode"|dyn~_alert>> from the
+      ~* module <<span class="odocwiki_inlinecode"|~Ojw~_alert>>~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="update"| method Ojw_alert_sigs.T.dyn_alert#update >> ~[<<a_api | module Ojw_alert_sigs.T >>~]||
+|@@ @style="tet-align: left;"@@\\V|
+|@@class="odocwiki_index"@ @@<<a_api text="value"| method Ojw_completion_sigs.T.completion#value >> ~[<<a_api | module Ojw_completion_sigs.T >>~]|<<div class="odocwiki_info"|~You can retrieve the value of the <<span class="odocwiki_inlinecode"|completion>> widget or even
+      ~* change it ~(you need to <<span class="odocwiki_inlinecode"|refresh>> explicitly the widget~)~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="visible"| method Ojw_alert_sigs.T.dyn_alert#visible >> ~[<<a_api | module Ojw_alert_sigs.T >>~]|<<div class="odocwiki_info"|~This method returns <<span class="odocwiki_inlinecode"|true>> if the content of the <<span class="odocwiki_inlinecode"|alert>> is currently
+      ~* shown~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="visible"| method Ojw_alert_sigs.T.alert#visible >> ~[<<a_api | module Ojw_alert_sigs.T >>~]|<<div class="odocwiki_info"|~This method returns <<span class="odocwiki_inlinecode"|true>> if the content of the <<span class="odocwiki_inlinecode"|alert>> is currently
+      ~* shown~.
+>>
+|
+|@@ @style="tet-align: left;"@@\\W|
+|@@class="odocwiki_index"@ @@<<a_api text="w"| method Ojw_jcrop.param#w >> ~[<<a_api | module Ojw_jcrop >>~]||
+|@@ @style="tet-align: left;"@@\\X|
+|@@class="odocwiki_index"@ @@<<a_api text="x"| method Ojw_jcrop.param#x >> ~[<<a_api | module Ojw_jcrop >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="x2"| method Ojw_jcrop.param#x2 >> ~[<<a_api | module Ojw_jcrop >>~]||
+|@@ @style="tet-align: left;"@@\\Y|
+|@@class="odocwiki_index"@ @@<<a_api text="y"| method Ojw_jcrop.param#y >> ~[<<a_api | module Ojw_jcrop >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="y2"| method Ojw_jcrop.param#y2 >> ~[<<a_api | module Ojw_jcrop >>~]||
+\\

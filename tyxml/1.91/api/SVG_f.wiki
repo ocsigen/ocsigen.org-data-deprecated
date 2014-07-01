@@ -1,0 +1,14 @@
+=Module <<a_api_type | module SVG_f >> =
+<<div class="code"|<<span class="keyword"|module>> SVG_f: <<span class='code'|sig>><<a_api text=".." | module SVG_f >><<span class='code'|end>>>>~Typesafe constructors for ~S~V~G documents ~(~Functorial interface~)\\
+
+----
+\\
+~This module defines basic data types for data~, attributes
+    and element occuring in ~S~V~G documents~.
+    ~It is based on the specification available at http~:~/~/www~.w~3~.org~/~T~R~/~S~V~G~/~.\\
+
+
+    ~This module is experimental~, it may lack of some attributes~,
+    and the interface is very low level and do not take deeply into account
+    the needs of ~S~V~G elements~.\\
+<<div class="code"|<<span class="keyword"|module>> <<a_api text="Make" | module SVG_f.Make >>: <<div class="sig_block"|<<span class='code'|functor ~(>><<span class='code'|~X~M~L>><<span class='code'| ~: >><<span class="code type"|<<a_api text="XML_sigs.T" | module XML_sigs.T >>>><<span class='code'|~) ~-~> >><<span class="code type"|<<a_api text="SVG_sigs.SVG" | module SVG_sigs.SVG >>(XML).T>><<span class="code type"|{{{  }}}>>>>>>

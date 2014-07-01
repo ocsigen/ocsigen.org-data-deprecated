@@ -1,0 +1,4 @@
+<<code language="ocaml" | sig
+  val application_name : string
+  val params : Eliom_output.appl_service_params
+end >>

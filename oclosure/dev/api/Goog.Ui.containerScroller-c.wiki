@@ -1,0 +1,6 @@
+=Class type <<a_api_type | class type Goog.Ui.containerScroller >> =
+<<pre class="ocsforge_color odocwiki_code"|<<span id="TYPEcontainerScroller"|<<span class="ocsforge_color_keyword"|class type>> <<span class="ocsforge_color_name"|containerScroller>>>> <<span class="ocsforge_color_delimiter"|~=>> <<span class="ocsforge_color_keyword"|object>><<a_api text=".." | class type Goog.Ui.containerScroller >><<span class="ocsforge_color_keyword"|end>>>>**~Inherits**
+* <<a_api | class Goog.Disposable.disposable >>
+
+----
+<<pre class="ocsforge_color odocwiki_code"|<<span id="METHODdisposeInternal"|<<span class="ocsforge_color_keyword"|method>> <<span class="odocwiki_name"|disposeInternal>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|unit <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|meth>>>>>>

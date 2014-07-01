@@ -1,0 +1,1 @@
+<<code language="ocaml" | functor (TypedXML : XML_sigs_duce.TypedXML) -> XML_sigs_duce.RawTypedPrinter >>

@@ -1,0 +1,40 @@
+<<code language="ocaml" | sig
+  type 'a elt' = 'a Eliom_content.Html5.elt
+  type element' = Html5_types.body_content
+  type button_dyn_alert_fun' =
+      Ew_button.element' Ew_button.elt' ->
+      Ew_alert.element' Ew_alert.elt' ->
+      Ew_alert.content' Ew_alert.elt' list Lwt.t
+  val closeable_by_click :
+    Ew_button.element' Ew_button.elt' -> Ew_button.element' Ew_button.elt'
+  val button :
+    ?set:Ew_active_set.t' Eliom_pervasives.client_value ->
+    ?pressed:bool ->
+    ?predicate:(unit -> bool Lwt.t) ->
+    Ew_button.element' Ew_button.elt' -> Ew_button.element' Ew_button.elt'
+  val button_alert :
+    ?set:Ew_active_set.t' Eliom_pervasives.client_value ->
+    ?pressed:bool ->
+    ?predicate:(unit -> bool Lwt.t) ->
+    ?allow_outer_clicks:bool ->
+    ?before:(Ew_alert.element' Ew_alert.elt' ->
+             Ew_alert.element' Ew_alert.elt' -> unit) ->
+    ?after:(Ew_alert.element' Ew_alert.elt' ->
+            Ew_alert.element' Ew_alert.elt' -> unit) ->
+    Ew_alert.element' Ew_alert.elt' ->
+    Ew_alert.element' Ew_alert.elt' ->
+    Ew_alert.element' Ew_alert.elt' * Ew_alert.element' Ew_alert.elt'
+  val button_dyn_alert :
+    ?set:Ew_active_set.t' Eliom_pervasives.client_value ->
+    ?pressed:bool ->
+    ?predicate:(unit -> bool Lwt.t) ->
+    ?allow_outer_clicks:bool ->
+    ?before:(Ew_alert.element' Ew_alert.elt' ->
+             Ew_alert.element' Ew_alert.elt' -> unit Lwt.t) ->
+    ?after:(Ew_alert.element' Ew_alert.elt' ->
+            Ew_alert.element' Ew_alert.elt' -> unit Lwt.t) ->
+    Ew_alert.element' Ew_alert.elt' ->
+    Ew_alert.element' Ew_alert.elt' ->
+    Ew_button.button_dyn_alert_fun' Eliom_pervasives.client_value ->
+    Ew_alert.element' Ew_alert.elt' * Ew_alert.element' Ew_alert.elt'
+end >>

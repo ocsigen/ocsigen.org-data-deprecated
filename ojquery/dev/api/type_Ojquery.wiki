@@ -1,0 +1,384 @@
+<<code language="ocaml" | sig
+  type t
+  val jQelt : < .. > Js.t -> Ojquery.t
+  val js_jQ : string -> < .. > Js.t
+  val js_jQelt : < .. > Js.t -> < .. > Js.t
+  val add_elts : Ojquery.t -> Dom_html.element Js.t -> Ojquery.t
+  val add_html : Ojquery.t -> string -> Ojquery.t
+  val add_jq_elt : Ojquery.t -> Ojquery.t -> Ojquery.t
+  val add_selector : Ojquery.t -> string -> Ojquery.t
+  val add_selector_context :
+    Ojquery.t -> string -> Dom_html.element Js.t -> Ojquery.t
+  val add_back : Ojquery.t -> string -> Ojquery.t
+  val add_class : Ojquery.t -> string -> Ojquery.t
+  val add_class_with_func : Ojquery.t -> (int -> string -> unit) -> Ojquery.t
+  val after_html : Ojquery.t -> string -> Ojquery.t
+  val after_elt : Ojquery.t -> Dom_html.element Js.t -> Ojquery.t
+  val after_jqelt : Ojquery.t -> Ojquery.t -> Ojquery.t
+  val after : Ojquery.t -> (int -> Ojquery.t) -> Ojquery.t
+  val and_self : Ojquery.t -> Ojquery.t
+  val animate_js_obj : Ojquery.t -> < .. > Js.t -> Ojquery.t
+  val append_html : Ojquery.t -> string -> Ojquery.t
+  val append_elt : Ojquery.t -> Dom_html.element Js.t -> Ojquery.t
+  val append_jqelt : Ojquery.t -> Ojquery.t -> Ojquery.t
+  val append : Ojquery.t -> (int -> string -> Ojquery.t) -> Ojquery.t
+  val append_to_html : Ojquery.t -> string -> Ojquery.t
+  val append_to_elt : Ojquery.t -> Dom_html.element Js.t -> Ojquery.t
+  val append_to_jq : Ojquery.t -> Ojquery.t -> Ojquery.t
+  val attr : Ojquery.t -> string -> string
+  val before_html : Ojquery.t -> string -> Ojquery.t
+  val before_elt : Ojquery.t -> Dom_html.element Js.t -> Ojquery.t
+  val before_jq : Ojquery.t -> Ojquery.t -> Ojquery.t
+  val before : Ojquery.t -> (unit -> string) -> Ojquery.t
+  val bind :
+    Ojquery.t -> string -> < .. > Js.t -> (unit -> unit) -> Ojquery.t
+  val bind_prevent_bubble :
+    Ojquery.t -> string -> < .. > Js.t -> bool -> Ojquery.t
+  val bind_events : Ojquery.t -> < .. > Js.t -> Ojquery.t
+  val blur : Ojquery.t -> Ojquery.t
+  val blur_with_data :
+    Ojquery.t -> < .. > Js.t -> (unit -> unit) -> Ojquery.t
+  val blur_with_handler : Ojquery.t -> (unit -> unit) -> Ojquery.t
+  val change : Ojquery.t -> Ojquery.t
+  val change_with_data :
+    Ojquery.t -> < .. > Js.t -> (unit -> unit) -> Ojquery.t
+  val change_with_event : Ojquery.t -> (unit -> unit) -> Ojquery.t
+  val children : Ojquery.t -> ?selector:string -> unit -> Ojquery.t
+  val clear_queue : Ojquery.t -> ?queue_name:string -> unit -> Ojquery.t
+  val click : Ojquery.t -> Ojquery.t
+  val click_with_data :
+    Ojquery.t -> < .. > Js.t -> (unit -> unit) -> Ojquery.t
+  val click_with_event : Ojquery.t -> (unit -> unit) -> Ojquery.t
+  val clone :
+    Ojquery.t ->
+    ?with_data_and_events:bool ->
+    ?deep_with_data_and_events:bool -> unit -> Ojquery.t
+  val closest_elt : Ojquery.t -> Dom_html.element Js.t -> Ojquery.t
+  val closest_jq : Ojquery.t -> Ojquery.t -> Ojquery.t
+  val closest_selector : Ojquery.t -> string -> Ojquery.t
+  val closest_selector_context :
+    Ojquery.t -> ?context:Dom_html.element Js.t -> string -> Ojquery.t
+  val contents : Ojquery.t -> Ojquery.t
+  val css : Ojquery.t -> string -> string
+  val data : Ojquery.t -> string -> < .. > Js.t -> Ojquery.t
+  val data_keyval : Ojquery.t -> < .. > Js.t -> Ojquery.t
+  val dblclick : Ojquery.t -> Ojquery.t
+  val dblclick_with_data :
+    Ojquery.t -> < .. > Js.t -> (unit -> unit) -> Ojquery.t
+  val dblclick_with_handler : Ojquery.t -> (unit -> unit) -> Ojquery.t
+  val delay : Ojquery.t -> ?queue_name:string -> int -> Ojquery.t
+  val delegate_with_data :
+    Ojquery.t ->
+    string -> string -> < .. > Js.t -> (unit -> unit) -> Ojquery.t
+  val delegate_with_handler :
+    Ojquery.t -> string -> string -> (unit -> unit) -> Ojquery.t
+  val delegate : Ojquery.t -> string -> < .. > Js.t -> Ojquery.t
+  val dequeue : Ojquery.t -> ?queue_name:string -> unit -> Ojquery.t
+  val detach : Ojquery.t -> ?selector:string -> unit -> Ojquery.t
+  val die : Ojquery.t -> Ojquery.t
+  val die_with_handler :
+    Ojquery.t -> ?handler:(unit -> unit) -> string -> Ojquery.t
+  val die_with_events : Ojquery.t -> < .. > Js.t -> Ojquery.t
+  val each : Ojquery.t -> (int -> Ojquery.t -> unit) -> Ojquery.t
+  val empty : Ojquery.t -> Ojquery.t
+  val _end : Ojquery.t -> Ojquery.t
+  val eq : Ojquery.t -> int -> Ojquery.t
+  val error_with_data :
+    Ojquery.t -> < .. > Js.t -> (unit -> unit) -> Ojquery.t
+  val error : Ojquery.t -> (unit -> unit) -> Ojquery.t
+  val event_dotcurrent_target : Ojquery.t -> Dom_html.element Js.t
+  val event_dotdata : Ojquery.t -> < .. > Js.t
+  val event_dotdelegate_target : Ojquery.t -> Dom_html.element Js.t
+  val event_dotis_default_prevented : Ojquery.t -> bool
+  val event_dotis_immediate_propagation_stopped : Ojquery.t -> bool
+  val event_dotis_propagation_stopped : Ojquery.t -> bool
+  val event_dotmeta_key : Ojquery.t -> bool
+  val event_dotnamespace : Ojquery.t -> string
+  val event_dotpage_x : Ojquery.t -> float
+  val event_dotpage_y : Ojquery.t -> float
+  val event_dotrelated_target : Ojquery.t -> Dom_html.element Js.t
+  val event_dotresult : Ojquery.t -> < .. > Js.t
+  val event_dotstop_immediate_propagation : Ojquery.t -> unit
+  val event_dotstop_propagation : Ojquery.t -> unit
+  val event_dottarget : Ojquery.t -> Dom_html.element Js.t
+  val event_dottime_stamp : Ojquery.t -> float
+  val event_dottype : Ojquery.t -> string
+  val event_dotwhich : Ojquery.t -> float
+  val fade_in :
+    Ojquery.t ->
+    ?duration:string -> ?complete:(unit -> unit) -> unit -> Ojquery.t
+  val fade_out :
+    Ojquery.t ->
+    ?duration:string -> ?complete:(unit -> unit) -> unit -> Ojquery.t
+  val fade_to :
+    Ojquery.t -> string -> float -> string -> (unit -> unit) -> Ojquery.t
+  val fade_toggle :
+    Ojquery.t ->
+    ?duration:string -> ?complete:(unit -> unit) -> unit -> Ojquery.t
+  val filter_elt : Ojquery.t -> Dom_html.element Js.t -> Ojquery.t
+  val filter_fun : Ojquery.t -> (int -> bool) -> Ojquery.t
+  val filter_jq : Ojquery.t -> < .. > Js.t -> Ojquery.t
+  val filter_selector : Ojquery.t -> string -> Ojquery.t
+  val find_elt : Ojquery.t -> Dom_html.element Js.t -> Ojquery.t
+  val find_jq : Ojquery.t -> < .. > Js.t -> Ojquery.t
+  val find_selector : Ojquery.t -> string -> Ojquery.t
+  val finish : Ojquery.t -> string -> Ojquery.t
+  val first : Ojquery.t -> Ojquery.t
+  val focus : Ojquery.t -> Ojquery.t
+  val focus_with_data :
+    Ojquery.t -> < .. > Js.t -> (unit -> unit) -> Ojquery.t
+  val focus_with_handler : Ojquery.t -> (unit -> unit) -> Ojquery.t
+  val focusin_with_data :
+    Ojquery.t -> < .. > Js.t -> (unit -> unit) -> Ojquery.t
+  val focusin_with_handler : Ojquery.t -> (unit -> unit) -> Ojquery.t
+  val focusout_with_data :
+    Ojquery.t -> < .. > Js.t -> (unit -> unit) -> Ojquery.t
+  val focusout_with_handler : Ojquery.t -> (unit -> unit) -> Ojquery.t
+  val get : Ojquery.t -> int -> Dom_html.element Js.t
+  val has_elt : Ojquery.t -> Dom_html.element Js.t -> Ojquery.t
+  val has_selector : Ojquery.t -> string -> Ojquery.t
+  val has_class : Ojquery.t -> string -> bool
+  val height : Ojquery.t -> int
+  val hide :
+    Ojquery.t ->
+    ?duration:string ->
+    ?easing:string -> ?complete:(unit -> unit) -> unit -> Ojquery.t
+  val hover : Ojquery.t -> (unit -> unit) -> (unit -> unit) -> Ojquery.t
+  val html : Ojquery.t -> string
+  val index_elt : Ojquery.t -> Dom_html.element Js.t -> int
+  val index_jq : Ojquery.t -> Ojquery.t -> int
+  val index : Ojquery.t -> string -> int
+  val inner_height : Ojquery.t -> int
+  val inner_width : Ojquery.t -> int
+  val insert_after_selector : Ojquery.t -> string -> Ojquery.t
+  val insert_after_elt : Ojquery.t -> Dom_html.element Js.t -> Ojquery.t
+  val insert_after_jq : Ojquery.t -> Ojquery.t -> Ojquery.t
+  val insert_before_selector : Ojquery.t -> string -> Ojquery.t
+  val insert_before_elt : Ojquery.t -> Dom_html.element Js.t -> Ojquery.t
+  val insert_before_jq : Ojquery.t -> Ojquery.t -> Ojquery.t
+  val is_elt : Ojquery.t -> Dom_html.element Js.t -> bool
+  val is_with_func : Ojquery.t -> (int -> bool) -> bool
+  val is_js_obj : Ojquery.t -> < .. > Js.t -> bool
+  val is_selector : Ojquery.t -> string -> bool
+  val jQ : Ojquery.t -> Ojquery.t
+  val jQ_elt : Ojquery.t -> Dom_html.element Js.t -> Ojquery.t
+  val jQ_jq : Ojquery.t -> < .. > Js.t -> Ojquery.t
+  val jQ_js : Ojquery.t -> < .. > Js.t -> Ojquery.t
+  val jQ_selector : Ojquery.t -> string -> Ojquery.t
+  val j_query_dotbrowser : Ojquery.t -> < .. > Js.t
+  val j_query_dotcontains :
+    Ojquery.t -> Dom_html.element Js.t -> Dom_html.element Js.t -> bool
+  val j_query_dotcss_hooks : Ojquery.t -> < .. > Js.t
+  val j_query_dotdata :
+    Ojquery.t ->
+    Dom_html.element Js.t -> string -> < .. > Js.t -> < .. > Js.t
+  val j_query_dotdequeue :
+    Ojquery.t -> ?queue_name:string -> Dom_html.element Js.t -> unit
+  val j_query_doteach :
+    Ojquery.t -> < .. > Js.t -> (unit -> unit) -> < .. > Js.t
+  val j_query_doterror : Ojquery.t -> string -> unit
+  val j_query_dotextend :
+    Ojquery.t -> ?deep:bool -> < .. > Js.t -> < .. > Js.t -> < .. > Js.t
+  val j_query_dotfn_dotextend : Ojquery.t -> < .. > Js.t -> < .. > Js.t
+  val j_query_dotfx_dotinterval : Ojquery.t -> float
+  val j_query_dotfx_dotoff : Ojquery.t -> bool
+  val j_query_dotglobal_eval : Ojquery.t -> string -> unit
+  val j_query_dothas_data : Ojquery.t -> Dom_html.element Js.t -> bool
+  val j_query_dothold_ready : Ojquery.t -> bool -> unit
+  val j_query_dotis_array : Ojquery.t -> < .. > Js.t -> bool
+  val j_query_dotis_empty_object : Ojquery.t -> < .. > Js.t -> bool
+  val j_query_dotis_function : Ojquery.t -> < .. > Js.t -> bool
+  val j_query_dotis_numeric : Ojquery.t -> < .. > Js.t -> bool
+  val j_query_dotis_plain_object : Ojquery.t -> < .. > Js.t -> bool
+  val j_query_dotis_window : Ojquery.t -> < .. > Js.t -> bool
+  val j_query_dotis_xmldoc : Ojquery.t -> Dom_html.element Js.t -> bool
+  val j_query_dotno_conflict : Ojquery.t -> bool -> < .. > Js.t
+  val j_query_dotnow : Ojquery.t -> float
+  val j_query_dotparse_json : Ojquery.t -> string -> < .. > Js.t
+  val j_query_dotparse_xml : Ojquery.t -> string -> Dom.element Js.t
+  val j_query_dotremove_data :
+    Ojquery.t -> Dom_html.element Js.t -> string -> Ojquery.t
+  val j_query_dotsub : Ojquery.t -> Ojquery.t
+  val j_query_dotsupport : Ojquery.t -> < .. > Js.t
+  val j_query_dottrim : Ojquery.t -> string -> string
+  val j_query_dottype : Ojquery.t -> < .. > Js.t -> string
+  val jquery : Ojquery.t -> string
+  val keydown : Ojquery.t -> Ojquery.t
+  val keydown_with_data :
+    Ojquery.t -> < .. > Js.t -> (unit -> unit) -> Ojquery.t
+  val keydown_with_handler : Ojquery.t -> (unit -> unit) -> Ojquery.t
+  val keypress : Ojquery.t -> Ojquery.t
+  val keypress_with_data :
+    Ojquery.t -> < .. > Js.t -> (unit -> unit) -> Ojquery.t
+  val keypress_with_handler : Ojquery.t -> (unit -> unit) -> Ojquery.t
+  val keyup : Ojquery.t -> Ojquery.t
+  val keyup_with_data :
+    Ojquery.t -> < .. > Js.t -> (unit -> unit) -> Ojquery.t
+  val keyup_with_handler : Ojquery.t -> (unit -> unit) -> Ojquery.t
+  val last : Ojquery.t -> Ojquery.t
+  val length : Ojquery.t -> int
+  val live_with_data :
+    Ojquery.t -> string -> < .. > Js.t -> (unit -> unit) -> Ojquery.t
+  val live_with_handler : Ojquery.t -> string -> (unit -> unit) -> Ojquery.t
+  val live : Ojquery.t -> < .. > Js.t -> Ojquery.t
+  val load_with_data :
+    Ojquery.t -> < .. > Js.t -> (unit -> unit) -> Ojquery.t
+  val load_with_handler : Ojquery.t -> (unit -> unit) -> Ojquery.t
+  val map :
+    Ojquery.t -> (int -> Dom_html.element -> Dom_html.element) -> Ojquery.t
+  val mousedown : Ojquery.t -> Ojquery.t
+  val mousedown_with_data :
+    Ojquery.t -> < .. > Js.t -> (unit -> unit) -> Ojquery.t
+  val mousedown_with_handler : Ojquery.t -> (unit -> unit) -> Ojquery.t
+  val mouseenter : Ojquery.t -> Ojquery.t
+  val mouseenter_with_data :
+    Ojquery.t -> < .. > Js.t -> (unit -> unit) -> Ojquery.t
+  val mouseenter_with_handler : Ojquery.t -> (unit -> unit) -> Ojquery.t
+  val mouseleave : Ojquery.t -> Ojquery.t
+  val mouseleave_with_data :
+    Ojquery.t -> < .. > Js.t -> (unit -> unit) -> Ojquery.t
+  val mouseleave_with_handler : Ojquery.t -> (unit -> unit) -> Ojquery.t
+  val mousemove : Ojquery.t -> Ojquery.t
+  val mousemove_with_data :
+    Ojquery.t -> < .. > Js.t -> (unit -> unit) -> Ojquery.t
+  val mousemove_with_handler : Ojquery.t -> (unit -> unit) -> Ojquery.t
+  val mouseout : Ojquery.t -> Ojquery.t
+  val mouseout_with_data :
+    Ojquery.t -> < .. > Js.t -> (unit -> unit) -> Ojquery.t
+  val mouseout_with_handler : Ojquery.t -> (unit -> unit) -> Ojquery.t
+  val mouseover : Ojquery.t -> Ojquery.t
+  val mouseover_with_data :
+    Ojquery.t -> < .. > Js.t -> (unit -> unit) -> Ojquery.t
+  val mouseover_handler : Ojquery.t -> (unit -> unit) -> Ojquery.t
+  val mouseup : Ojquery.t -> Ojquery.t
+  val mouseup_with_data :
+    Ojquery.t -> < .. > Js.t -> (unit -> unit) -> Ojquery.t
+  val mouseup_with_handler : Ojquery.t -> (unit -> unit) -> Ojquery.t
+  val next : Ojquery.t -> ?selector:string -> unit -> Ojquery.t
+  val next_all : Ojquery.t -> ?selector:string -> unit -> Ojquery.t
+  val next_until :
+    Ojquery.t -> ?selector:string -> ?filter:string -> unit -> Ojquery.t
+  val _not : Ojquery.t -> Dom_html.element Js.t -> Ojquery.t
+  val _not_func : Ojquery.t -> (int -> bool) -> Ojquery.t
+  val _not_jq : Ojquery.t -> Ojquery.t -> Ojquery.t
+  val _not_selector : Ojquery.t -> string -> Ojquery.t
+  val off_with_handler :
+    Ojquery.t -> string -> string -> (unit -> unit) -> Ojquery.t
+  val off : Ojquery.t -> < .. > Js.t -> string -> Ojquery.t
+  val offset : Ojquery.t -> < .. > Js.t
+  val offset_parent : Ojquery.t -> Ojquery.t
+  val one : Ojquery.t -> string -> < .. > Js.t -> (unit -> unit) -> Ojquery.t
+  val outer_height : Ojquery.t -> ?include_margin:bool -> unit -> int
+  val outer_width : Ojquery.t -> ?include_margin:bool -> unit -> int
+  val parent : Ojquery.t -> ?selector:string -> unit -> Ojquery.t
+  val parents : Ojquery.t -> ?selector:string -> unit -> Ojquery.t
+  val parents_until :
+    Ojquery.t -> ?selector:string -> ?filter:string -> unit -> Ojquery.t
+  val position : Ojquery.t -> < .. > Js.t
+  val prepend_jq : Ojquery.t -> Ojquery.t -> Ojquery.t
+  val prepend_html : Ojquery.t -> string -> Ojquery.t
+  val prepend_to_html : Ojquery.t -> string -> Ojquery.t
+  val prepend_to_jQ : Ojquery.t -> Ojquery.t -> Ojquery.t
+  val prepend_to_elt : Ojquery.t -> Dom_html.element Js.t -> Ojquery.t
+  val prev : Ojquery.t -> ?selector:string -> unit -> Ojquery.t
+  val prev_all : Ojquery.t -> ?selector:string -> unit -> Ojquery.t
+  val prev_until_jq :
+    Ojquery.t -> ?element:Ojquery.t -> ?filter:string -> unit -> Ojquery.t
+  val prev_until_elt :
+    Ojquery.t ->
+    ?element:Dom_html.element Js.t -> ?filter:string -> unit -> Ojquery.t
+  val prev_until_selector :
+    Ojquery.t -> ?selector:string -> ?filter:string -> unit -> Ojquery.t
+  val ready : Ojquery.t -> (unit -> unit) -> Ojquery.t
+  val remove : Ojquery.t -> ?selector:string -> unit -> Ojquery.t
+  val remove_attr : Ojquery.t -> string -> Ojquery.t
+  val remove_class : Ojquery.t -> ?class_name:string -> unit -> Ojquery.t
+  val remove_class_func :
+    Ojquery.t -> (int -> < .. > Js.t -> unit) -> Ojquery.t
+  val remove_data : Ojquery.t -> string -> Ojquery.t
+  val remove_prop : Ojquery.t -> string -> Ojquery.t
+  val replace_all_selector : Ojquery.t -> string -> Ojquery.t
+  val replace_all_jq : Ojquery.t -> Ojquery.t -> Ojquery.t
+  val replace_all_elt : Ojquery.t -> Dom_html.element Js.t -> Ojquery.t
+  val replace_with_jq : Ojquery.t -> Ojquery.t -> Ojquery.t
+  val replace_with_html : Ojquery.t -> string -> Ojquery.t
+  val replace_with_elt : Ojquery.t -> Dom_html.element Js.t -> Ojquery.t
+  val resize : Ojquery.t -> Ojquery.t
+  val resize_with_data :
+    Ojquery.t -> < .. > Js.t -> (unit -> unit) -> Ojquery.t
+  val resize_with_event : Ojquery.t -> (unit -> unit) -> Ojquery.t
+  val scroll : Ojquery.t -> Ojquery.t
+  val scroll_with_data :
+    Ojquery.t -> < .. > Js.t -> (unit -> unit) -> Ojquery.t
+  val scroll_with_handler : Ojquery.t -> (unit -> unit) -> Ojquery.t
+  val scroll_left : Ojquery.t -> int
+  val scroll_top : Ojquery.t -> int
+  val select : Ojquery.t -> Ojquery.t
+  val select_with_data :
+    Ojquery.t -> < .. > Js.t -> (unit -> unit) -> Ojquery.t
+  val select_with_handler : Ojquery.t -> (unit -> unit) -> Ojquery.t
+  val serialize : Ojquery.t -> string
+  val show :
+    Ojquery.t ->
+    ?duration:string -> ?complete:(unit -> unit) -> unit -> Ojquery.t
+  val show_with_easing :
+    Ojquery.t -> ?complete:(unit -> unit) -> string -> string -> Ojquery.t
+  val siblings : Ojquery.t -> ?selector:string -> unit -> Ojquery.t
+  val size : Ojquery.t -> int
+  val slice : Ojquery.t -> ?_end:int -> int -> Ojquery.t
+  val slide_down :
+    Ojquery.t ->
+    ?duration:string ->
+    ?easing:string -> ?complete:(unit -> unit) -> unit -> Ojquery.t
+  val slide_toggle :
+    Ojquery.t ->
+    ?duration:string ->
+    ?easing:string -> ?complete:(unit -> unit) -> unit -> Ojquery.t
+  val slide_up :
+    Ojquery.t ->
+    ?duration:string ->
+    ?easing:string -> ?complete:(unit -> unit) -> unit -> Ojquery.t
+  val stop : Ojquery.t -> bool -> bool -> Ojquery.t
+  val stop_named_queue : Ojquery.t -> string -> bool -> bool -> Ojquery.t
+  val submit : Ojquery.t -> Ojquery.t
+  val submit_with_data :
+    Ojquery.t -> < .. > Js.t -> (unit -> unit) -> Ojquery.t
+  val submit_with_handler : Ojquery.t -> (unit -> unit) -> Ojquery.t
+  val text : Ojquery.t -> string
+  val text_set : Ojquery.t -> string -> Ojquery.t
+  val text_set_func : Ojquery.t -> (int -> string -> string) -> Ojquery.t
+  val toggle :
+    Ojquery.t ->
+    ?duration:string -> ?complete:(unit -> unit) -> unit -> Ojquery.t
+  val toggle_wih_easing :
+    Ojquery.t -> ?complete:(unit -> unit) -> string -> string -> Ojquery.t
+  val toggle_with_handler :
+    Ojquery.t ->
+    ?additionnal_handler_event_object_:(unit -> unit) ->
+    (unit -> unit) -> (unit -> unit) -> Ojquery.t
+  val toggle_with_bool : Ojquery.t -> bool -> Ojquery.t
+  val toggle_class : Ojquery.t -> ?switch:bool -> unit -> Ojquery.t
+  val unbind_with_event : Ojquery.t -> < .. > Js.t -> Ojquery.t
+  val unbind_return_false : Ojquery.t -> string -> Ojquery.t
+  val unbind_with_handler :
+    Ojquery.t -> string -> (unit -> unit) -> Ojquery.t
+  val undelegate : Ojquery.t -> Ojquery.t
+  val undelegate_namespace : Ojquery.t -> string -> Ojquery.t
+  val undelegate_selector : Ojquery.t -> string -> string -> Ojquery.t
+  val undelegate_handler :
+    Ojquery.t -> string -> string -> (unit -> unit) -> Ojquery.t
+  val undelegate_events : Ojquery.t -> string -> < .. > Js.t -> Ojquery.t
+  val unload_with_data :
+    Ojquery.t -> < .. > Js.t -> (unit -> unit) -> Ojquery.t
+  val unload_with_handler : Ojquery.t -> (unit -> unit) -> Ojquery.t
+  val unwrap : Ojquery.t -> Ojquery.t
+  val width : Ojquery.t -> int
+  val wrap : Ojquery.t -> (int -> Ojquery.t) -> Ojquery.t
+  val wrap_html : Ojquery.t -> string -> Ojquery.t
+  val wrap_jq : Ojquery.t -> Ojquery.t -> Ojquery.t
+  val wrap_elt : Ojquery.t -> Dom_html.element Js.t -> Ojquery.t
+  val wrap_all_html : Ojquery.t -> string -> Ojquery.t
+  val wrap_all_jq : Ojquery.t -> Ojquery.t -> Ojquery.t
+  val wrap_all_elt : Ojquery.t -> Dom_html.element Js.t -> Ojquery.t
+  val wrap_inner : Ojquery.t -> string -> Ojquery.t
+end >>

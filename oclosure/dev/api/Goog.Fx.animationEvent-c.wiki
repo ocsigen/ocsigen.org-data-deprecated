@@ -1,0 +1,9 @@
+=Class type <<a_api_type | class type Goog.Fx.animationEvent >> =
+<<pre class="ocsforge_color odocwiki_code"|<<span id="TYPEanimationEvent"|<<span class="ocsforge_color_keyword"|class type>> <<span class="ocsforge_color_name"|animationEvent>>>> <<span class="ocsforge_color_delimiter"|~=>> <<span class="ocsforge_color_keyword"|object>><<a_api text=".." | class type Goog.Fx.animationEvent >><<span class="ocsforge_color_keyword"|end>>>>**~Inherits**
+* <<a_api | class Goog.Events.event >>
+
+----
+<<pre class="ocsforge_color odocwiki_code"|<<span id="METHODcoordAsInts"|<<span class="ocsforge_color_keyword"|method>> <<span class="odocwiki_name"|coordAsInts>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|int <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|js_array>> <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>> <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|meth>>>>>><<div class="odocwiki_info"|~Returns the coordinates as integers ~(rounded to nearest integer~)~.
+**Returns** ~An array of the coordinates rounded to
+   the nearest integer~.\\
+>>

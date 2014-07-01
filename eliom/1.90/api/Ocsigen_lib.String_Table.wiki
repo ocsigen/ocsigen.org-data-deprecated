@@ -1,0 +1,3 @@
+=Module <<a_api_type | module Ocsigen_lib.String_Table >> =
+<<div class="code"|<<span class="keyword"|module>> String_Table: <<span class="code type"|Deriving_Json_stdlib.Map.S>><<span class="code type"|{{{  }}} with type key = string>>>>
+----

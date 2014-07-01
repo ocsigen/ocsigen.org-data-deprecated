@@ -1,0 +1,47 @@
+<<code language="ocaml" | sig
+  module DefaultToolbar :
+    sig
+      val addDefaultFontSizes : #Goog.Ui.select Js.t -> unit
+      val addDefaultFonts : #Goog.Ui.select Js.t -> unit
+      val addDefaultFormatOptions : #Goog.Ui.select Js.t -> unit
+      val makeBuiltInToolbarButton :
+        Js.js_string Js.t ->
+        Goog.Gdom.domHelper Js.t Js.opt -> #Goog.Ui.button Js.t
+      val makeDefaultToolbar :
+        #Dom_html.element Js.t -> bool Js.t Js.opt -> Goog.Ui.toolbar Js.t
+      val makeToolbar :
+        (Js.js_string Js.t, Goog.Ui.control Js.t) Goog.Tools.Union.t
+        Js.js_array Js.t ->
+        #Dom_html.element Js.t -> bool Js.t Js.opt -> Goog.Ui.toolbar Js.t
+      val setLocale : Js.js_string Js.t -> unit
+    end
+  class type toolbarController =
+    object
+      method addEventListener :
+        Js.js_string Js.t ->
+        (unit -> bool Js.t) Js.callback -> bool Js.t Js.opt -> unit Js.meth
+      method blur : unit Js.meth
+      method dispatchEvent :
+        (Js.js_string Js.t, Events.event Js.t) Tools.Union.t ->
+        bool Js.t Js.meth
+      method dispose : unit Js.meth
+      method disposeInternal : unit Js.meth
+      method getDisposed : bool Js.t Js.meth
+      method getParentEventTarget : Events.eventTarget Js.t Js.meth
+      method getToolbar : Goog.Ui.toolbar Js.t Js.meth
+      method isDisposed : bool Js.t Js.meth
+      method isEnabled : bool Js.t Js.meth
+      method isVisible : bool Js.t Js.meth
+      method removeEventListener :
+        Js.js_string Js.t ->
+        (unit -> bool Js.t) Js.callback -> bool Js.t Js.opt -> unit Js.meth
+      method setEnabled : bool Js.t -> unit Js.meth
+      method setParentEventTarget :
+        Events.eventTarget Js.t Js.opt -> unit Js.meth
+      method setVisible : bool Js.t -> unit Js.meth
+    end
+  val toolbarController :
+    (Goog.Geditor.field Js.t ->
+     Goog.Ui.toolbar Js.t -> Goog.Ui.Editor.toolbarController Js.t)
+    Js.constr
+end >>

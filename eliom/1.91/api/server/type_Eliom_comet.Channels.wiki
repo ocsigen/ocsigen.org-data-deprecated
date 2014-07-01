@@ -1,0 +1,12 @@
+<<code language="ocaml" | sig
+  type 'a t
+  val create :
+    ?name:string -> ?size:int -> 'a Lwt_stream.t -> 'a Eliom_comet.Channels.t
+  val create_unlimited :
+    ?name:string -> 'a Lwt_stream.t -> 'a Eliom_comet.Channels.t
+  val get_id : 'a Eliom_comet.Channels.t -> 'a Eliom_comet_base.chan_id
+  val wrap :
+    'a Eliom_comet.Channels.t ->
+    ('a Eliom_comet_base.chan_id * Eliom_common.unwrapper)
+    Eliom_types.data_key
+end >>

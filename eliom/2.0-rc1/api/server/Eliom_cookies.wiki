@@ -1,0 +1,32 @@
+=Module <<a_api_type subproject="server" | module Eliom_cookies >> =
+<<div class="code"|<<span class="keyword"|module>> Eliom_cookies: <<span class='code'|sig>><<a_api subproject="server" text=".." | module Eliom_cookies >><<span class='code'|end>>>>~This table is to store cookie values for each path~.
+    ~The key has type ~Url~.path option~:
+    it is for the path ~(default~: root of the site~)~,\\
+
+----
+<<div class="code"|<<span class="keyword"|module>> <<a_api subproject="server" text="Cookies" | module Eliom_cookies.Cookies >>: <<span class="code type"|Map.S>><<span class="code type"|{{{  }}} with type key = Url.path>>>><<div class="info"|~This table is to store cookie values for each path~.
+>>
+<<div class="code" id="TYPEcookie"|<<span class="keyword"|type>> cookie = 
+|@@class="typetable"@ @class="lefttop"@@<<span class="keyword"|{{{|}}}>>|@@class="lefttop"@@<<span class="constructor"|OSet>> <<span class="keyword"|of>> <<span class="code type"|float option * string * bool>>|
+|@@class="lefttop"@@<<span class="keyword"|{{{|}}}>>|@@class="lefttop"@@<<span class="constructor"|OUnset>>|>>
+<<div class="info"|~Type used for cookies to set~.
+    ~The float option is the timestamp for the expiration date~.
+    ~The string is the value~.
+    ~If the bool is true and the protocol is https~, the cookie will be secure
+    ~(will ask the browser to send it only through secure connections~)~.\\
+>>
+
+<<div class="code" id="TYPEcookieset"|<<span class="keyword"|type>> cookieset = <<span class="code type"|<<a_api subproject="server" text="cookie" | type Eliom_cookies.cookie >> Eliom_pervasives.String.Table.t Cookies.t>> >>
+
+<<div id="VALempty_cookieset" class="code"|<<span class="keyword"|val>> empty~_cookieset : <<span class="code type"|'a Eliom_pervasives.String.Table.t Cookies.t>>>><<div id="VALadd_cookie" class="code"|<<span class="keyword"|val>> add~_cookie : <<span class="code type"|\\{{{   }}}<<a_api subproject="server" text="Eliom_pervasives.Url.path" | type Eliom_pervasives.Url.path >> ->\\{{{   }}}  string ->\\{{{   }}}  'a ->\\{{{   }}}  'a Eliom_pervasives.String.Table.t Cookies.t ->\\{{{   }}}  'a Eliom_pervasives.String.Table.t Cookies.t>>>><<div class="info"|<<span class='code'|add~_cookie path c v cookie~_table>>
+    adds the cookie <<span class='code'|c>> to the table <<span class='code'|cookie~_table>>~.
+    ~If the cookie is already bound~, the previous binding disappear~.\\
+>>
+<<div id="VALremove_cookie" class="code"|<<span class="keyword"|val>> remove~_cookie : <<span class="code type"|\\{{{   }}}<<a_api subproject="server" text="Eliom_pervasives.Url.path" | type Eliom_pervasives.Url.path >> ->\\{{{   }}}  string ->\\{{{   }}}  'a Eliom_pervasives.String.Table.t Cookies.t ->\\{{{   }}}  'a Eliom_pervasives.String.Table.t Cookies.t>>>><<div class="info"|<<span class='code'|remove~_cookie c cookie~_table>> removes the cookie <<span class='code'|c>>
+    from the table <<span class='code'|cookie~_table>>~.
+    ~Warning~: it is not equivalent to <<span class='code'|add~_cookie ~.~.~. ~O~Unset ~.~.~.>>~)~.\\
+>>
+<<div id="VALadd_cookies" class="code"|<<span class="keyword"|val>> add~_cookies : <<span class="code type"|\\{{{   }}}<<a_api subproject="server" text="cookie" | type Eliom_cookies.cookie >> Eliom_pervasives.String.Table.t Cookies.t ->\\{{{   }}}  <<a_api subproject="server" text="cookie" | type Eliom_cookies.cookie >> Eliom_pervasives.String.Table.t Cookies.t ->\\{{{   }}}  <<a_api subproject="server" text="cookie" | type Eliom_cookies.cookie >> Eliom_pervasives.String.Table.t Cookies.t>>>><<div class="info"|<<span class='code'|add~_cookies newcookies oldcookies>> adds the cookies from <<span class='code'|newcookies>>
+   to <<span class='code'|oldcookies>>~. ~If cookies are already bound in oldcookies~,
+   the previous binding disappear~.\\
+>>

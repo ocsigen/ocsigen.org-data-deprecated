@@ -1,0 +1,20 @@
+=Class type <<a_api_type | class type Goog.Timer.timer >> =
+<<pre class="ocsforge_color odocwiki_code"|<<span id="TYPEtimer"|<<span class="ocsforge_color_keyword"|class type>> <<span class="ocsforge_color_name"|timer>>>> <<span class="ocsforge_color_delimiter"|~=>> <<span class="ocsforge_color_keyword"|object>><<a_api text=".." | class type Goog.Timer.timer >><<span class="ocsforge_color_keyword"|end>>>>**~Inherits**
+* <<a_api | class Goog.Events.eventTarget >>
+
+----
+<<pre class="ocsforge_color odocwiki_code"|<<span id="METHODgetInterval"|<<span class="ocsforge_color_keyword"|method>> <<span class="odocwiki_name"|getInterval>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|int <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|meth>>>>>><<div class="odocwiki_info"|~Gets the interval of the timer~.
+**Returns** interval ~Number of ms between ticks~.\\
+>>
+<<pre class="ocsforge_color odocwiki_code"|<<span id="METHODsetInterval"|<<span class="ocsforge_color_keyword"|method>> <<span class="odocwiki_name"|setInterval>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|int <<span class="ocsforge_color_delimiter"| -> >> unit <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|meth>>>>>><<div class="odocwiki_info"|~Sets the interval of the timer~.
+>>
+<<pre class="ocsforge_color odocwiki_code"|<<span id="METHODdispatchTick"|<<span class="ocsforge_color_keyword"|method>> <<span class="odocwiki_name"|dispatchTick>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|unit <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|meth>>>>>><<div class="odocwiki_info"|~Dispatches the ~T~I~C~K event~. ~This is its own method so subclasses can override~.
+>>
+<<pre class="ocsforge_color odocwiki_code"|<<span id="METHODstart"|<<span class="ocsforge_color_keyword"|method>> <<span class="odocwiki_name"|start>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|unit <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|meth>>>>>><<div class="odocwiki_info"|~Starts the timer~.
+>>
+<<pre class="ocsforge_color odocwiki_code"|<<span id="METHODstop"|<<span class="ocsforge_color_keyword"|method>> <<span class="odocwiki_name"|stop>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|unit <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|meth>>>>>><<div class="odocwiki_info"|~Stops the timer~.
+>>
+<<pre class="ocsforge_color odocwiki_code"|<<span id="METHODdisposeInternal"|<<span class="ocsforge_color_keyword"|method>> <<span class="odocwiki_name"|disposeInternal>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|unit <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|meth>>>>>><<div class="odocwiki_info"|~Disposes of the timer~.
+>>
+<<pre class="ocsforge_color odocwiki_code"|<<span id="METHODclear"|<<span class="ocsforge_color_keyword"|method>> <<span class="odocwiki_name"|clear>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|int <<span class="ocsforge_color_delimiter"| -> >> unit <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|meth>>>>>><<div class="odocwiki_info"|~Clears a timeout initiated by call~Once
+>>

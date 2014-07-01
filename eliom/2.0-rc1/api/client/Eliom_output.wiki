@@ -1,0 +1,16 @@
+=Module <<a_api_type subproject="client" | module Eliom_output >> =
+<<div class="code"|<<span class="keyword"|module>> Eliom_output: <<span class='code'|sig>><<a_api subproject="client" text=".." | module Eliom_output >><<span class='code'|end>>>>
+==@@id="2_CreatinglinksandformswithHTML5M"@@~Creating links and forms with <<span class='code'|~H~T~M~L~5~.~M>>==
+\\
+
+----
+<<div class="code" id="TYPEappl_service"|<<span class="keyword"|type>> appl~_service = <<span class="code type"|[ `Appl ]>> >>
+
+<<div class="code" id="TYPEhttp_service"|<<span class="keyword"|type>> http~_service = <<span class="code type"|[ `Http ]>> >>
+
+<<div class="code" id="TYPEnon_caml_service"|<<span class="keyword"|type>> non~_caml~_service = <<span class="code type"|[ `Appl | `Http ]>> >>
+
+<<div class="code"|<<span class="keyword"|module>> <<a_api subproject="client" text="Html5" | module Eliom_output.Html5 >>: <<span class='code'|sig>><<a_api subproject="client" text=".." | module Eliom_output.Html5 >><<span class='code'|end>>>><<div class="info"|~Eliom service registration and forms creation for ~H~T~M~L~5 page
+>>
+<<div class="code"|<<span class="keyword"|module>> <<a_api subproject="client" text="Html5_forms" | module Eliom_output.Html5_forms >>: <<span class='code'|sig>><<a_api subproject="client" text=".." | module Eliom_output.Html5_forms >><<span class='code'|end>>>><<div class="info"|~Eliom forms creation for ~H~T~M~L~5
+>>

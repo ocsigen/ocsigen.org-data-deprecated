@@ -1,0 +1,3 @@
+=Module <<a_api_type | module Ocsigen_pervasives.String.Map >> =
+<<div class="code"|<<span class="keyword"|module>> Map: <<span class="code type"|Map.S>><<span class="code type"|{{{  }}} with type key = string>>>>
+----

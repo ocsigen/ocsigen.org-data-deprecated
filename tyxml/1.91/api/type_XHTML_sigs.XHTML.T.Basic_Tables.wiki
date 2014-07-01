@@ -1,0 +1,28 @@
+<<code language="ocaml" | sig
+  val a_align :
+    [< `Center | `Left | `Right ] -> [> `Align ] XHTML_sigs.XHTML.T.attrib
+  val a_scope : [< `Col | `Row ] -> [> `Scope ] XHTML_sigs.XHTML.T.attrib
+  val a_valign :
+    [< `Bottom | `Middle | `Top ] -> [> `Valign ] XHTML_sigs.XHTML.T.attrib
+  val caption :
+    ([< XHTML_types.caption_attrib ], [< XHTML_types.caption_content ],
+     [> XHTML_types.caption ])
+    XHTML_sigs.XHTML.T.star
+  val table :
+    ?caption:[< `Caption ] XHTML_sigs.XHTML.T.elt ->
+    ([< XHTML_types.table_attrib ], [< XHTML_types.table_content ],
+     [> XHTML_types.table ])
+    XHTML_sigs.XHTML.T.plus
+  val td :
+    ([< XHTML_types.td_attrib ], [< XHTML_types.td_content ],
+     [> XHTML_types.td ])
+    XHTML_sigs.XHTML.T.star
+  val th :
+    ([< XHTML_types.th_attrib ], [< XHTML_types.th_content ],
+     [> XHTML_types.th ])
+    XHTML_sigs.XHTML.T.star
+  val tr :
+    ([< XHTML_types.tr_attrib ], [< XHTML_types.tr_content ],
+     [> XHTML_types.tr ])
+    XHTML_sigs.XHTML.T.plus
+end >>

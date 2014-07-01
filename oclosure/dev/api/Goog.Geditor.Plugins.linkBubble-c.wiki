@@ -1,0 +1,42 @@
+=Class type <<a_api_type | class type Goog.Geditor.Plugins.linkBubble >> =
+<<pre class="ocsforge_color odocwiki_code"|<<span id="TYPElinkBubble"|<<span class="ocsforge_color_keyword"|class type>> <<span class="ocsforge_color_name"|linkBubble>>>> <<span class="ocsforge_color_delimiter"|~=>> <<span class="ocsforge_color_keyword"|object>><<a_api text=".." | class type Goog.Geditor.Plugins.linkBubble >><<span class="ocsforge_color_keyword"|end>>>>**~Inherits**
+* <<a_api | class Goog.Geditor.Plugins.abstractBubblePlugin >>
+
+----
+<<pre class="ocsforge_color odocwiki_code"|<<span id="METHODcreateBubbleContents"|<<span class="ocsforge_color_keyword"|method>> <<span class="odocwiki_name"|createBubbleContents>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|\\'a. <<span class="ocsforge_color_delimiter"| ( >>~#<<span class="ocsforge_color_uid"|Dom_html>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|element>> as 'a<<span class="ocsforge_color_delimiter"| ) >> <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>> <<span class="ocsforge_color_delimiter"| -> >> unit <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|meth>>>>>><<div class="odocwiki_info"| ~Should be overriden by subclasses to add the type specific contents to the
+     bubble~.
+
+>>
+<<pre class="ocsforge_color odocwiki_code"|<<span id="METHODgetBubbleTargetFromSelection"|<<span class="ocsforge_color_keyword"|method>> <<span class="odocwiki_name"|getBubbleTargetFromSelection>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|\\'b. <<span class="ocsforge_color_delimiter"| ( >>~#<<span class="ocsforge_color_uid"|Dom_html>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|element>> as 'b<<span class="ocsforge_color_delimiter"| ) >> <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>> <<span class="ocsforge_color_delimiter"| -> >> <<span class="ocsforge_color_uid"|Dom_html>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|element>> <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>> <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|opt>> <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|meth>>>>>><<div class="odocwiki_info"| ~Should be overriden by subclasses to return the bubble target element or
+ null if an element of their required type isn~'t found~.
+
+**Returns** ~The ~H~T~M~L bubble target element or null if no element of
+     the required type is not found~.\\
+>>
+<<pre class="ocsforge_color odocwiki_code"|<<span id="METHODgetBubbleTitle"|<<span class="ocsforge_color_keyword"|method>> <<span class="odocwiki_name"|getBubbleTitle>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|js_string>> <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>> <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|meth>>>>>><<div class="odocwiki_info"|**Returns** ~The title for bubble shown by this plugin~.  ~Defaults to no
+     title~.  ~Should be overridden by subclasses~.\\
+>>
+<<pre class="ocsforge_color odocwiki_code"|<<span id="METHODgetBubbleType"|<<span class="ocsforge_color_keyword"|method>> <<span class="odocwiki_name"|getBubbleType>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|js_string>> <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>> <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|meth>>>>>><<div class="odocwiki_info"|**Returns** ~The type of bubble shown by this plugin~.  ~Usually the tag
+     name of the element this bubble targets~.\\
+>>
+<<pre class="ocsforge_color odocwiki_code"|<<span id="METHODgetTrogClassId"|<<span class="ocsforge_color_keyword"|method>> <<span class="odocwiki_name"|getTrogClassId>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|js_string>> <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>> <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|meth>>>>>><<div class="odocwiki_info"|**Returns** ~The ~I~D unique to this plugin class~. ~Note that different
+     instances off the plugin share the same class~Id~.\\
+>>
+<<pre class="ocsforge_color odocwiki_code"|<<span id="METHODisInvalidUrl"|<<span class="ocsforge_color_keyword"|method>> <<span class="odocwiki_name"|isInvalidUrl>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|bool <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>> <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|meth>>>>>><<div class="odocwiki_info"| ~Returns whether the ~U~R~L should be considered invalid~.  ~This always returns
+ false in the base class~, and should be overridden by subclasses that wish
+ to impose validity rules on ~U~R~Ls~.
+
+**Returns** ~Whether the ~U~R~L should be considered invalid~.\\
+>>
+<<pre class="ocsforge_color odocwiki_code"|<<span id="METHODsetTestLinkUrlFn"|<<span class="ocsforge_color_keyword"|method>> <<span class="odocwiki_name"|setTestLinkUrlFn>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|\\<<span class="ocsforge_color_delimiter"| ( >><<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|js_string>> <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>> <<span class="ocsforge_color_delimiter"| -> >> <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|js_string>> <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>><<span class="ocsforge_color_delimiter"| ) >> <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|callback>> <<span class="ocsforge_color_delimiter"| -> >> unit <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|meth>>>>>><<div class="odocwiki_info"| ~Set the optional function for getting the "test" link of a url~.
+
+>>
+<<pre class="ocsforge_color odocwiki_code"|<<span id="METHODstopReferrerLeaks"|<<span class="ocsforge_color_keyword"|method>> <<span class="odocwiki_name"|stopReferrerLeaks>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|unit <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|meth>>>>>><<div class="odocwiki_info"| ~Tells the plugin to stop leaking the page~'s url via the referrer header when
+ the link text link is clicked~. ~When the user clicks on a link~, the
+ browser makes a request for the link url~, passing the url of the current page
+ in the request headers~. ~If the user wants the current url to be kept secret
+ ~(e~.g~. an unpublished document~)~, the owner of the url that was clicked will
+ see the secret url in the request headers~, and it will no longer be a secret~.
+ ~Calling this method will not send a referrer header in the request~, just as
+ if the user had opened a blank window and typed the url in themselves~.
+>>

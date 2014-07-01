@@ -1,0 +1,11 @@
+<<code language="ocaml" | object
+  method dispose : unit Js.meth
+  method disposeInternal : unit Js.meth
+  method getBrowserEvent : Dom_html.event Js.t Js.meth
+  method getDisposed : bool Js.t Js.meth
+  method init : #Dom_html.event Js.t -> #Dom.node Js.t Js.opt -> unit Js.meth
+  method isButton : Goog.Events.BrowserEvent.mouseButton -> bool Js.t Js.meth
+  method isDisposed : bool Js.t Js.meth
+  method preventDefault : unit Js.meth
+  method stopPropagation : unit Js.meth
+end >>

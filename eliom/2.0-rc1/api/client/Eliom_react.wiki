@@ -1,0 +1,6 @@
+=Module <<a_api_type subproject="client" | module Eliom_react >> =
+<<div class="code"|<<span class="keyword"|module>> Eliom_react: <<span class='code'|sig>><<a_api subproject="client" text=".." | module Eliom_react >><<span class='code'|end>>>>~Client side type declarations for ~React event propagation~. ~This
+    module must be linked for events to work properly~.\\
+
+----
+<<div class="code"|<<span class="keyword"|module>> <<a_api subproject="client" text="Down" | module Eliom_react.Down >>: <<span class='code'|sig>><<a_api subproject="client" text=".." | module Eliom_react.Down >><<span class='code'|end>>>><<div class="code"|<<span class="keyword"|module>> <<a_api subproject="client" text="Up" | module Eliom_react.Up >>: <<span class='code'|sig>><<a_api subproject="client" text=".." | module Eliom_react.Up >><<span class='code'|end>>>><<div class="code"|<<span class="keyword"|module>> <<a_api subproject="client" text="S" | module Eliom_react.S >>: <<span class='code'|sig>><<a_api subproject="client" text=".." | module Eliom_react.S >><<span class='code'|end>>>>

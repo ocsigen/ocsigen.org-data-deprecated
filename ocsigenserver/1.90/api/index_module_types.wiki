@@ -1,0 +1,41 @@
+=Index of module types=
+
+|@@ @class="alignleft"@@\\A|
+|<<a_api text="APPL_PARAMS"| module type Eliom_output.APPL_PARAMS >> ~[<<a_api | module Eliom_output >>~]||
+|@@ @class="alignleft"@@\\E|
+|<<a_api text="ELIOMFORMSIG"| module type Eliom_mkforms.ELIOMFORMSIG >> ~[<<a_api | module Eliom_mkforms >>~]||
+|<<a_api text="ELIOMREGSIG"| module type Eliom_mkreg.ELIOMREGSIG >> ~[<<a_api | module Eliom_mkreg >>~]||
+|<<a_api text="ELIOMSIG"| module type Eliom_output.ELIOMSIG >> ~[<<a_api | module Eliom_output >>~]|<<div class="info"|~The signature of such modules~.
+>>
+|
+|@@ @class="alignleft"@@\\F|
+|<<a_api text="FORMCREATE"| module type Eliom_mkforms.FORMCREATE >> ~[<<a_api | module Eliom_mkforms >>~]||
+|@@ @class="alignleft"@@\\H|
+|<<a_api text="HTTP_CONTENT"| module type Ocsigen_http_frame.HTTP_CONTENT >> ~[<<a_api | module Ocsigen_http_frame >>~]||
+|<<a_api text="HiddenServiceInfo"| module type Eliom_openid.HiddenServiceInfo >> ~[<<a_api | module Eliom_openid >>~]|<<div class="info"|~Information about the hidden service
+>>
+|
+|@@ @class="alignleft"@@\\R|
+|<<a_api text="REGCREATE"| module type Eliom_mkreg.REGCREATE >> ~[<<a_api | module Eliom_mkreg >>~]|<<div class="info"|~Creating modules to register services for one type of pages
+>>
+|
+|@@ @class="alignleft"@@\\T|
+|<<a_api text="T"| module type XHTML5.T >> ~[<<a_api | module XHTML5 >>~]||
+|<<a_api text="T"| module type XHTML.T >> ~[<<a_api | module XHTML >>~]||
+|<<a_api text="T_01_00"| module type XHTML.T_01_00 >> ~[<<a_api | module XHTML >>~]|<<div class="info"|~X~H~T~M~L ~1~.~0 includes some deprecated features that since
+    have been removed from ~X~H~T~M~L ~1~.~1~:
+>>
+|
+|<<a_api text="T_01_01"| module type XHTML.T_01_01 >> ~[<<a_api | module XHTML >>~]|<<div class="info"|~An alias for ~X~H~T~M~L ~1~.~1 ~(for symmetry~)~:
+>>
+|
+|<<a_api text="T_05_00"| module type XHTML5.T_05_00 >> ~[<<a_api | module XHTML5 >>~]|<<div class="info"|~An alias for ~X~H~T~M~L~5~:
+>>
+|
+|@@ @class="alignleft"@@\\X|
+|<<a_api text="XHTML5FORMSSIG"| module type Eliom_output_cli.XHTML5FORMSSIG >> ~[<<a_api | module Eliom_output_cli >>~]||
+|<<a_api text="XHTML5FORMSSIG"| module type Eliom_output.XHTML5FORMSSIG >> ~[<<a_api | module Eliom_output >>~]||
+|<<a_api text="XHTMLFORMSSIG"| module type Eliom_output.XHTMLFORMSSIG >> ~[<<a_api | module Eliom_output >>~]||
+|<<a_api text="XhtmlFormsSig"| module type Eliom_duce.XhtmlFormsSig >> ~[<<a_api | module Eliom_duce >>~]||
+|<<a_api text="XhtmlSig"| module type Eliom_duce.XhtmlSig >> ~[<<a_api | module Eliom_duce >>~]||
+\\

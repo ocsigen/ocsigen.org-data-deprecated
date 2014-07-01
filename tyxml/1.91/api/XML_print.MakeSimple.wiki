@@ -1,0 +1,7 @@
+=Functor <<a_api_type | module XML_print.MakeSimple >> =
+<<div class="code"|<<span class="keyword"|module>> MakeSimple: <<div class="sig_block"|<<span class='code'|functor ~(>><<span class='code'|~X~M~L>><<span class='code'| ~: >><<span class="code type"|<<a_api text="XML_sigs.Iterable" | module XML_sigs.Iterable >>>><<span class='code'|~) ~-~> >><<div class="sig_block"|<<span class='code'|functor ~(>><<span class='code'|~F>><<span class='code'| ~: >><<span class='code'|sig>><<div class="sig_block"|<<div id="VALemptytags" class="code"|<<span class="keyword"|val>> emptytags : <<span class="code type"|string list>>>>>><<span class='code'|end>><<span class='code'|~) ~-~> >><<span class="code type"|<<a_api text="XML_sigs.SimplePrinter" | module XML_sigs.SimplePrinter >>(XML).T>><<span class="code type"|{{{  }}}>>>>>>>><<div class="module_param_list" | <<span class="param_title" |Parameters :>><<div|
+|@@class="paramstable"@ @class="centertop fifteen code"@@{{{XML}}}|@@class="centertop"@@:|<<span class="code type"|<<a_api text="XML_sigs.Iterable" | module XML_sigs.Iterable >>>>|
+|@@class="centertop fifteen code"@@{{{F}}}|@@class="centertop"@@:|<<span class="code type"|sig val emptytags : string list end>>|
+>>>>
+
+----

@@ -1,0 +1,12 @@
+=Module <<a_api_type | module Ojw_log >> =
+<<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module>> <<span class="ocsforge_color_uid"|<<span class="ocsforge_color_uid"|Ojw_log>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="ocsforge_color_keyword"|sig>><<a_api text=".." | module Ojw_log >><<span class="ocsforge_color_keyword"|end>>>>~Client debugging functions~.
+
+----
+<<pre id="VALalert" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|alert>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|string <<span class="ocsforge_color_delimiter"| -> >> unit>>>><<div class="odocwiki_info"|~Create a ~J~S alert message~.
+>>
+<<pre id="VALalert_int" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|alert~_int>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|int <<span class="ocsforge_color_delimiter"| -> >> unit>>>><<div class="odocwiki_info"|~Create a ~J~S alert message with an int~.
+>>
+<<pre id="VALlog" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|log>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|string <<span class="ocsforge_color_delimiter"| -> >> unit>>>><<div class="odocwiki_info"|~Log a message in the firebug console~.
+>>
+<<pre id="VALlog_int" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|log~_int>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|int <<span class="ocsforge_color_delimiter"| -> >> unit>>>><<div class="odocwiki_info"|~Log an int in the firebug console~.
+>>

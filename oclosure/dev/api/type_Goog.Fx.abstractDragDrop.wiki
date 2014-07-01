@@ -1,0 +1,42 @@
+<<code language="ocaml" | object
+  method addEventListener :
+    Js.js_string Js.t ->
+    (unit -> bool Js.t) Js.callback -> bool Js.t Js.opt -> unit Js.meth
+  method addItem : Goog.Fx.dragDropItem Js.t -> unit Js.meth
+  method addScrollableContainer : #Dom_html.element Js.t -> unit Js.meth
+  method addTarget : Goog.Fx.abstractDragDrop Js.t -> unit Js.meth
+  method createDragElement :
+    #Dom_html.element Js.t -> Dom_html.element Js.t Js.meth
+  method dispatchEvent :
+    (Js.js_string Js.t, Events.event Js.t) Tools.Union.t -> bool Js.t Js.meth
+  method dispose : unit Js.meth
+  method disposeInternal : unit Js.meth
+  method endDrag : Goog.Fx.dragEvent Js.t -> unit Js.meth
+  method getDisposed : bool Js.t Js.meth
+  method getDragElementPosition :
+    #Dom_html.element Js.t ->
+    #Dom_html.element Js.t ->
+    Goog.Events.browserEvent Js.t -> Goog.Math.coordinate Js.t Js.meth
+  method getDragger : Goog.Fx.dragger Js.t Js.meth
+  method getParentEventTarget : Events.eventTarget Js.t Js.meth
+  method init : unit Js.meth
+  method isDisposed : bool Js.t Js.meth
+  method isInitialized : bool Js.t Js.meth
+  method maybeStartDrag :
+    Goog.Events.browserEvent Js.t ->
+    Goog.Fx.dragDropItem Js.t -> unit Js.meth
+  method recalculateDragTargets : unit Js.meth
+  method removeEventListener :
+    Js.js_string Js.t ->
+    (unit -> bool Js.t) Js.callback -> bool Js.t Js.opt -> unit Js.meth
+  method removeItems : unit Js.meth
+  method setDragClass : Js.js_string Js.t -> unit Js.meth
+  method setParentEventTarget :
+    Events.eventTarget Js.t Js.opt -> unit Js.meth
+  method setScrollTarget : #Dom_html.eventTarget Js.t -> unit Js.meth
+  method setSourceClass : Js.js_string Js.t -> unit Js.meth
+  method setTargetClass : Js.js_string Js.t -> unit Js.meth
+  method startDrag :
+    Goog.Events.browserEvent Js.t ->
+    Goog.Fx.dragDropItem Js.t -> unit Js.meth
+end >>

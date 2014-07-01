@@ -1,0 +1,511 @@
+=Module <<a_api_type subproject="server" | module Eliom_state >> =
+<<div class="code"|<<span class="keyword"|module>> Eliom_state: <<span class='code'|sig>><<a_api subproject="server" text=".." | module Eliom_state >><<span class='code'|end>>>>~This module contains the functions you need to manage 
+the server~-side state ~(and also some client~-side state~)~:
+~* closing sessions~, knowing whether a state has expired~,
+setting cookies manually ~(client~-side state~)
+~* ~Managing session groups~: putting a session in a group~,
+limitating the number of sessions in a group etc ~.~.~.
+~* ~Setting timeouts on states and expiration dates
+~* ~Administrating states ~(iteration on all states~, etc~.~)
+~* ~Some low~-level or deprecated functions\\
+
+----
+\\
+
+==@@id="2_Managingthestateofanapplication"@@~Managing the state of an application==
+\\
+\\
+
+===@@id="3_Closingsessionsremovingstatedataandservices"@@~Closing sessions~, removing state data and services===
+\\
+<<div id="VALdiscard" class="code"|<<span class="keyword"|val>> discard : <<span class="code type"|\\{{{   }}}?state_name:string ->\\{{{   }}}  ?scope:<<a_api subproject="server" text="Eliom_common.user_scope" | type Eliom_common.user_scope >> -> ?secure:bool -> unit -> unit Lwt.t>>>><<div class="info"|~Delete server~-side state data and services for a session~,
+    a group of sessions or a client process~. ~Default scope~: <<span class='code'|`~Session>>~.\\
+
+
+    ~Use that function to close a session ~(using scope <<span class='code'|`~Session>>~)~.\\
+
+
+    ~Closing a group of sessions will close all sessions in the group~.\\
+
+
+    ~By default will remove both secure and unsecure data and services~, but
+    if <<span class='code'|~~secure>> is present~.\\
+
+
+    //~Warning~: you may also want to unset some request~-scoped ~Eliom references
+    when discarding a state~.//\\
+>>
+<<div id="VALclose_session" class="code"|<<span class="keyword"|val>> close~_session : <<span class="code type"|?state_name:string -> ?secure:bool -> unit -> unit Lwt.t>>>><<div class="info"|close~_session is a synonymous for <<span class='code'|discard ~~scope~:`~Session>>\\
+>>
+<<div id="VALclose_group" class="code"|<<span class="keyword"|val>> close~_group : <<span class="code type"|?state_name:string -> ?secure:bool -> unit -> unit Lwt.t>>>><<div class="info"|close~_group is a synonymous for <<span class='code'|discard ~~scope~:`~Session~_group>>\\
+>>
+<<div id="VALdiscard_data" class="code"|<<span class="keyword"|val>> discard~_data : <<span class="code type"|\\{{{   }}}?persistent:bool ->\\{{{   }}}  ?state_name:string ->\\{{{   }}}  ?scope:<<a_api subproject="server" text="Eliom_common.user_scope" | type Eliom_common.user_scope >> -> ?secure:bool -> unit -> unit Lwt.t>>>><<div class="info"|~Remove current state data~.\\
+
+
+    ~If the optional parameter <<span class='code'|~?persistent>> is not present~, will
+    remove both volatile and persistent data~. ~Otherwise only volatile
+    or persistent data~.\\
+>>
+<<div id="VALdiscard_services" class="code"|<<span class="keyword"|val>> discard~_services : <<span class="code type"|\\{{{   }}}?state_name:string ->\\{{{   }}}  ?scope:<<a_api subproject="server" text="Eliom_common.user_scope" | type Eliom_common.user_scope >> -> ?secure:bool -> unit -> unit>>>><<div class="info"|~Remove all services registered for the given scope ~(the default beeing
+    <<span class='code'|`~Session>>~)~.\\
+>>
+\\
+
+===@@id="3_Statestatus"@@~State status===
+\\
+\\
+~The following functions return the current state of the state for a given
+    scope~:* <<span class='code'|~Alive~_state>> means that data has been recorded for this scope
+* <<span class='code'|~Empty~_state>> means that there is no data for this scope
+* <<span class='code'|~Expired~_state>> means that data for this scope has been removed
+    because the timeout has been reached~.
+
+
+    ~The default scope is <<span class='code'|`~Session>>~.\\
+<<div class="code" id="TYPEstate_status"|<<span class="keyword"|type>> state~_status = 
+|@@class="typetable"@ @class="lefttop"@@<<span class="keyword"|{{{|}}}>>|@@class="lefttop"@@<<span class="constructor"|Alive_state>>|
+|@@class="lefttop"@@<<span class="keyword"|{{{|}}}>>|@@class="lefttop"@@<<span class="constructor"|Empty_state>>|
+|@@class="lefttop"@@<<span class="keyword"|{{{|}}}>>|@@class="lefttop"@@<<span class="constructor"|Expired_state>>|>>
+
+<<div id="VALservice_state_status" class="code"|<<span class="keyword"|val>> service~_state~_status : <<span class="code type"|\\{{{   }}}?state_name:string ->\\{{{   }}}  ?cookie_scope:<<a_api subproject="server" text="Eliom_common.cookie_scope" | type Eliom_common.cookie_scope >> ->\\{{{   }}}  ?secure:bool -> unit -> <<a_api subproject="server" text="state_status" | type Eliom_state.state_status >>>>>><<div id="VALvolatile_data_state_status" class="code"|<<span class="keyword"|val>> volatile~_data~_state~_status : <<span class="code type"|\\{{{   }}}?state_name:string ->\\{{{   }}}  ?cookie_scope:<<a_api subproject="server" text="Eliom_common.cookie_scope" | type Eliom_common.cookie_scope >> ->\\{{{   }}}  ?secure:bool -> unit -> <<a_api subproject="server" text="state_status" | type Eliom_state.state_status >>>>>><<div id="VALpersistent_data_state_status" class="code"|<<span class="keyword"|val>> persistent~_data~_state~_status : <<span class="code type"|\\{{{   }}}?state_name:string ->\\{{{   }}}  ?cookie_scope:<<a_api subproject="server" text="Eliom_common.cookie_scope" | type Eliom_common.cookie_scope >> ->\\{{{   }}}  ?secure:bool -> unit -> <<a_api subproject="server" text="state_status" | type Eliom_state.state_status >> Lwt.t>>>>\\
+
+===@@id="3_Usercookies"@@~User cookies===
+ \\
+
+
+    ~If you want to store a client~-side state~, and ask the browser to
+    send it back with each request~, you can set manually your own cookies~.
+    ~Usual cookies correspond to scope <<span class='code'|`~Session>> ~(that is~, one browser~)~.
+    ~The browser send them with each request to the same ~Web site~.
+    ~But ~Eliom also implements client~-side process cookies
+    ~(scope <<span class='code'|`~Client~_process>>~)~, that behave in the same way~,
+    but for one instance of the client~-side ~Eliom program ~(if there is one~)~.\\
+
+
+    ~Cookies can be limited to a subsite using the <<span class='code'|~?path>> optional
+    parameter~. ~This path is relative to the main path of your ~Web site~.
+    ~(~It is not possible to set a cookie for a subsite larger than your current
+    ~Web site~)~.\\
+
+
+    ~Cookies can have an expiration date~, specified ~(in seconds
+    since the ~1st of ~January ~1~9~7~0~) in the optional parameter <<span class='code'|~?exp>>~.
+    ~If the parameter is not set~,
+    the expiration date will be when the browser is closed~.\\
+
+
+    ~Secure cookies are sent by the browser only with ~H~T~T~P~S ~(default~: <<span class='code'|false>>~)~.\\
+<<div id="VALset_cookie" class="code"|<<span class="keyword"|val>> set~_cookie : <<span class="code type"|\\{{{   }}}?cookie_scope:<<a_api subproject="server" text="Eliom_common.cookie_scope" | type Eliom_common.cookie_scope >> ->\\{{{   }}}  ?path:string list ->\\{{{   }}}  ?exp:float -> ?secure:bool -> name:string -> value:string -> unit -> unit>>>><<div class="info"|~Ask the browser to record a cookie~.\\
+>>
+<<div id="VALunset_cookie" class="code"|<<span class="keyword"|val>> unset~_cookie : <<span class="code type"|\\{{{   }}}?cookie_scope:<<a_api subproject="server" text="Eliom_common.cookie_scope" | type Eliom_common.cookie_scope >> ->\\{{{   }}}  ?path:string list -> name:string -> unit -> unit>>>><<div class="info"|~Ask the browser to remove a cookie~.\\
+>>
+\\
+
+==@@id="2_Sessiongroups"@@~Session groups==
+\\
+\\
+~If your ~Web site has users~,
+    it is a good idea to group together all the sessions for one user~.
+    ~Otherwise~, you may want to group sessions according to another
+    criterion~.\\
+
+
+    ~Session groups may be used for example to limit
+    the number of sessions one user can open at the same time~, or to implement
+    a "close all your sessions" feature~.
+    ~Usually~, the group is the user name~.\\
+\\
+
+===@@id="3_Puttingasessioninagroupremovingasessionfromagroup"@@~Putting a session in a group~, removing a session from a group===
+\\
+<<div id="VALset_service_session_group" class="code"|<<span class="keyword"|val>> set~_service~_session~_group : <<span class="code type"|?set_max:int -> ?state_name:string -> ?secure:bool -> string -> unit>>>><<div class="info"|sets the group to which belong the service session~.\\
+
+
+    ~If the optional <<span class='code'|~?set~_max>> parameter is present~, also sets the maximum
+    number of sessions in the group~.
+    ~Default~: follow current configuration for the group
+    or default configuration if the group does not exist~.\\
+
+
+    ~If <<span class='code'|~~secure>> is false when the protocol is https~, it will affect
+    the unsecure session~. ~Otherwise~, il will affect the secure session in 
+    https~, the unsecure one in http~.\\
+>>
+<<div id="VALunset_service_session_group" class="code"|<<span class="keyword"|val>> unset~_service~_session~_group : <<span class="code type"|?set_max:int -> ?state_name:string -> ?secure:bool -> unit -> unit>>>><<div class="info"|~Remove the session from its group\\
+>>
+<<div id="VALget_service_session_group" class="code"|<<span class="keyword"|val>> get~_service~_session~_group : <<span class="code type"|?state_name:string -> ?secure:bool -> unit -> string option>>>><<div class="info"|returns the group to which belong the service session~.
+    ~If the session does not belong to any group~,
+    or if no session is opened~, return <<span class='code'|~None>>~.\\
+>>
+<<div id="VALset_volatile_data_session_group" class="code"|<<span class="keyword"|val>> set~_volatile~_data~_session~_group : <<span class="code type"|?set_max:int -> ?state_name:string -> ?secure:bool -> string -> unit>>>><<div class="info"|sets the group to which belong the volatile data session~.\\
+
+
+    ~If the optional <<span class='code'|~?set~_max>> parameter is present~, also sets the maximum
+    number of sessions in the group~.
+    ~Default~: follow current configuration for the group
+    or default configuration if the group does not exist~.\\
+>>
+<<div id="VALunset_volatile_data_session_group" class="code"|<<span class="keyword"|val>> unset~_volatile~_data~_session~_group : <<span class="code type"|?set_max:int -> ?state_name:string -> ?secure:bool -> unit -> unit>>>><<div class="info"|~Remove the session from its group\\
+>>
+<<div id="VALget_volatile_data_session_group" class="code"|<<span class="keyword"|val>> get~_volatile~_data~_session~_group : <<span class="code type"|?state_name:string -> ?secure:bool -> unit -> string option>>>><<div class="info"|returns the group to which belong the data session~.
+    ~If the session does not belong to any group~, or if no session is opened~,
+    return <<span class='code'|~None>>~.\\
+>>
+<<div id="VALset_persistent_data_session_group" class="code"|<<span class="keyword"|val>> set~_persistent~_data~_session~_group : <<span class="code type"|\\{{{   }}}?set_max:int option ->\\{{{   }}}  ?state_name:string -> ?secure:bool -> string -> unit Lwt.t>>>><<div class="info"|sets the group to which belong the persistent session~.\\
+
+
+    ~If the optional <<span class='code'|~?set~_max>> parameter is present~, also sets the maximum
+    number of sessions in the group~.
+    ~Default~: follow current configuration for the group
+    or default configuration if the group does not exist~.\\
+>>
+<<div id="VALunset_persistent_data_session_group" class="code"|<<span class="keyword"|val>> unset~_persistent~_data~_session~_group : <<span class="code type"|?state_name:string -> ?secure:bool -> unit -> unit Lwt.t>>>><<div class="info"|~Remove the session from its group~.\\
+>>
+<<div id="VALget_persistent_data_session_group" class="code"|<<span class="keyword"|val>> get~_persistent~_data~_session~_group : <<span class="code type"|?state_name:string -> ?secure:bool -> unit -> string option Lwt.t>>>><<div class="info"|returns the group to which belong the persistent session~.
+    ~If the session does not belong to any group~, or if no session is opened~,
+    return <<span class='code'|~None>>~.\\
+>>
+\\
+
+===@@id="3_Maximumgroupsize"@@~Maximum group size===
+\\
+\\
+~The following functions of this section set the maximum number of
+    sessions in a session group~, for the different kinds of session~.
+    ~This won~'t modify existing groups~.
+    ~That value will be used only as default value if you do not specify the
+    optional parameter <<span class='code'|~?set~_max>> of function
+    <<a_api subproject="server" | val Eliom_state.set_volatile_data_session_group >>~.\\
+
+
+    ~If there is no group~, the number of sessions is limitated by sub network
+    ~(which can be a problem for example if the server is behind a
+    reverse proxy~)~.
+    ~It is highly recommended to use session groups!\\
+
+* ~Default number of sessions in a group~: ~5
+* ~Default number of sessions in a sub network~: ~1~0~0~0~0~0~0
+* ~Default ~I~P~V~4 sub network~: ~/~1~6
+* ~Default ~I~P~V~6 sub network~: ~/~5~6
+
+
+    ~These default can be changed from configuration file and~/or
+    using these functions~.\\
+
+
+    ~If <<span class='code'|~~override~_configfile>> is <<span class='code'|true>> ~(default ~(<<span class='code'|false>>~)~,
+    then the function will set the value even if it has been
+    modified in the configuration file~.
+    ~It means that by default~, these functions have no effect
+    if there is a value in the configuration file~.
+    ~This gives the ability to override the values choosen by the module
+    in the configuration file~.
+    ~Use <<span class='code'|~~override~_configfile~:true>> for example if your
+    ~Eliom module wants to change the values afterwards
+    ~(for example in the site configuration ~Web interface~)~.\\
+<<div id="VALset_default_max_service_sessions_per_group" class="code"|<<span class="keyword"|val>> set~_default~_max~_service~_sessions~_per~_group : <<span class="code type"|?override_configfile:bool -> int -> unit>>>><<div class="info"|~Sets the maximum number of service sessions in a session group
+    ~(see above~)~.\\
+>>
+<<div id="VALset_default_max_volatile_data_sessions_per_group" class="code"|<<span class="keyword"|val>> set~_default~_max~_volatile~_data~_sessions~_per~_group : <<span class="code type"|?override_configfile:bool -> int -> unit>>>><<div class="info"|~Sets the maximum number of volatile data sessions in a session
+    group ~(see above~)~.\\
+>>
+<<div id="VALset_default_max_persistent_data_sessions_per_group" class="code"|<<span class="keyword"|val>> set~_default~_max~_persistent~_data~_sessions~_per~_group : <<span class="code type"|?override_configfile:bool -> int option -> unit>>>><<div class="info"|~Sets the maximum number of persistent data sessions in a session
+    group ~(see above~)~. <<span class='code'|~None>> means "no limitation"~.\\
+>>
+<<div id="VALset_default_max_volatile_sessions_per_group" class="code"|<<span class="keyword"|val>> set~_default~_max~_volatile~_sessions~_per~_group : <<span class="code type"|?override_configfile:bool -> int -> unit>>>><<div class="info"|~Sets the maximum number of volatile sessions ~(data and service~) in a session
+    group ~(see above~)~.\\
+>>
+<<div id="VALset_default_max_service_sessions_per_subnet" class="code"|<<span class="keyword"|val>> set~_default~_max~_service~_sessions~_per~_subnet : <<span class="code type"|?override_configfile:bool -> int -> unit>>>><<div class="info"|~Sets the maximum number of service sessions in a subnet ~(see above~)~.\\
+>>
+<<div id="VALset_default_max_volatile_data_sessions_per_subnet" class="code"|<<span class="keyword"|val>> set~_default~_max~_volatile~_data~_sessions~_per~_subnet : <<span class="code type"|?override_configfile:bool -> int -> unit>>>><<div class="info"|~Sets the maximum number of volatile data sessions in a subnet ~(see above~)~.\\
+>>
+<<div id="VALset_default_max_volatile_sessions_per_subnet" class="code"|<<span class="keyword"|val>> set~_default~_max~_volatile~_sessions~_per~_subnet : <<span class="code type"|?override_configfile:bool -> int -> unit>>>><<div class="info"|~Sets the maximum number of volatile sessions ~(data and service~) 
+    in a subnet ~(see above~)~.\\
+>>
+<<div id="VALset_default_max_service_tab_sessions_per_group" class="code"|<<span class="keyword"|val>> set~_default~_max~_service~_tab~_sessions~_per~_group : <<span class="code type"|?override_configfile:bool -> int -> unit>>>><<div class="info"|~Sets the maximum number of tab service sessions in a session group
+    ~(see above~)~.\\
+>>
+<<div id="VALset_default_max_volatile_data_tab_sessions_per_group" class="code"|<<span class="keyword"|val>> set~_default~_max~_volatile~_data~_tab~_sessions~_per~_group : <<span class="code type"|?override_configfile:bool -> int -> unit>>>><<div class="info"|~Sets the maximum number of volatile data tab sessions in a session
+    group ~(see above~)~.\\
+>>
+<<div id="VALset_default_max_persistent_data_tab_sessions_per_group" class="code"|<<span class="keyword"|val>> set~_default~_max~_persistent~_data~_tab~_sessions~_per~_group : <<span class="code type"|?override_configfile:bool -> int option -> unit>>>><<div class="info"|~Sets the maximum number of persistent data tab sessions in a session
+    group ~(see above~)~.\\
+>>
+<<div id="VALset_default_max_volatile_tab_sessions_per_group" class="code"|<<span class="keyword"|val>> set~_default~_max~_volatile~_tab~_sessions~_per~_group : <<span class="code type"|?override_configfile:bool -> int -> unit>>>><<div class="info"|~Sets the maximum number of volatile tab sessions ~(data and service~)
+    in a session group ~(see above~)~.\\
+>>
+<<div id="VALset_ipv4_subnet_mask" class="code"|<<span class="keyword"|val>> set~_ipv~4~_subnet~_mask : <<span class="code type"|?override_configfile:bool -> int32 -> unit>>>><<div class="info"|~Sets the mask for subnet ~(~I~P~V~4~)~.\\
+>>
+<<div id="VALset_ipv6_subnet_mask" class="code"|<<span class="keyword"|val>> set~_ipv~6~_subnet~_mask : <<span class="code type"|?override_configfile:bool -> int64 * int64 -> unit>>>><<div class="info"|~Sets the mask for subnet ~(~I~P~V~6~)~.\\
+>>
+<<div id="VALset_max_service_states_for_group_or_subnet" class="code"|<<span class="keyword"|val>> set~_max~_service~_states~_for~_group~_or~_subnet : <<span class="code type"|\\{{{   }}}?state_name:string ->\\{{{   }}}  ?scope:<<a_api subproject="server" text="Eliom_common.user_scope" | type Eliom_common.user_scope >> -> ?secure:bool -> int -> unit>>>><<div class="info"|~Sets the maximum number of service sessions in the current session
+    group ~(or for the client sub network~, if there is no group~)~.\\
+>>
+<<div id="VALset_max_volatile_data_states_for_group_or_subnet" class="code"|<<span class="keyword"|val>> set~_max~_volatile~_data~_states~_for~_group~_or~_subnet : <<span class="code type"|\\{{{   }}}?state_name:string ->\\{{{   }}}  ?scope:<<a_api subproject="server" text="Eliom_common.user_scope" | type Eliom_common.user_scope >> -> ?secure:bool -> int -> unit>>>><<div class="info"|~Sets the maximum number of volatile data sessions in the current session
+    group ~(or for the client sub network~, if there is no group~)~.\\
+>>
+<<div id="VALset_max_volatile_states_for_group_or_subnet" class="code"|<<span class="keyword"|val>> set~_max~_volatile~_states~_for~_group~_or~_subnet : <<span class="code type"|\\{{{   }}}?state_name:string ->\\{{{   }}}  ?scope:<<a_api subproject="server" text="Eliom_common.user_scope" | type Eliom_common.user_scope >> -> ?secure:bool -> int -> unit>>>><<div class="info"|~Sets the maximum number of volatile sessions 
+    ~(both data and service sessions~) in the current 
+    group ~(or for the client sub network~, if there is no group~)~.\\
+>>
+\\
+
+==@@id="2_Expirationofcookiesandtimeouts"@@~Expiration of cookies and timeouts==
+\\
+\\
+
+===@@id="3_Cookieexpiration"@@~Cookie expiration===
+\\
+\\
+~The functions in this section ask the browser to set the state cookie
+    expiration date~, for the different kinds of session~, in seconds~,
+    since the ~1st of ~January ~1~9~7~0~. <<span class='code'|~None>> means the cookie will expire
+    when the browser is closed~. ~Note~: there is no way to set cookies
+    for an infinite time on browsers~. \\
+
+
+    ~By default~, it will affect regular browser cookies ~(sessions~)~.
+    ~But if you set <<span class='code'|~~cookie~_scope~:`~Client~_process>>~,
+    it will only affect the client~-side ~Eliom process ~(if there is one~)~,
+    which simulates some kind of "tab cookies"~.\\
+<<div id="VALset_service_cookie_exp_date" class="code"|<<span class="keyword"|val>> set~_service~_cookie~_exp~_date : <<span class="code type"|\\{{{   }}}?state_name:string ->\\{{{   }}}  ?cookie_scope:<<a_api subproject="server" text="Eliom_common.cookie_scope" | type Eliom_common.cookie_scope >> ->\\{{{   }}}  ?secure:bool -> float option -> unit>>>><<div class="info"|~Sets the cookie expiration date for the current service state
+    ~(see above~)~.\\
+>>
+<<div id="VALset_volatile_data_cookie_exp_date" class="code"|<<span class="keyword"|val>> set~_volatile~_data~_cookie~_exp~_date : <<span class="code type"|\\{{{   }}}?state_name:string ->\\{{{   }}}  ?cookie_scope:<<a_api subproject="server" text="Eliom_common.cookie_scope" | type Eliom_common.cookie_scope >> ->\\{{{   }}}  ?secure:bool -> float option -> unit>>>><<div class="info"|~Sets the cookie expiration date for the current data state ~(see
+    above~)~.\\
+>>
+<<div id="VALset_persistent_data_cookie_exp_date" class="code"|<<span class="keyword"|val>> set~_persistent~_data~_cookie~_exp~_date : <<span class="code type"|\\{{{   }}}?state_name:string ->\\{{{   }}}  ?cookie_scope:<<a_api subproject="server" text="Eliom_common.cookie_scope" | type Eliom_common.cookie_scope >> ->\\{{{   }}}  ?secure:bool -> float option -> unit Lwt.t>>>><<div class="info"|~Sets the cookie expiration date for the persistent state ~(see
+    above~)~.\\
+>>
+\\
+
+===@@id="3_Globalconfigurationofsessiontimeouts"@@~Global configuration of session timeouts===
+\\
+\\
+~The following functions set the timeout for sessions~, for the
+    different kinds of session~.  ~The sessions will be closed after
+    this amount of time of inactivity from the user~. <<span class='code'|~None>> means no
+    timeout~.\\
+
+
+    ~The optional parameter <<span class='code'|~?recompute~_expdates>> is <<span class='code'|false>> by
+    default~.  ~If you set it to <<span class='code'|true>>~, the expiration dates for all
+    sessions in the table will be recomputed with the new timeout~.
+    ~That is~, the difference between the new timeout and the old one
+    will be added to their expiration dates ~(asynchronously~,
+    by another ~Lwt thread~, as this can take a long time~)~.
+    ~Sessions whose timeout has been set individually with
+    functions like
+    <<a_api subproject="server" | val Eliom_state.set_volatile_data_state_timeout >> won~'t be affected~.\\
+
+
+    ~If <<span class='code'|~~state~_name>> is not present~, it is the default for all session names~,
+    and in that case <<span class='code'|recompute~_expdates>> is ignored~. <<span class='code'|~~state~_name~:~None>>
+    means the default state name~.\\
+
+
+    ~If <<span class='code'|~~override~_configfile>> is <<span class='code'|true>> ~(default ~(<<span class='code'|false>>~)~,
+    then the function will set the timeout even if it has been
+    modified in the configuration file~.
+    ~It means that by default~, these functions have no effect
+    if there is a value in the configuration file~.
+    ~This gives the ability to override the values choosen by the module
+    in the configuration file~.
+    ~Use <<span class='code'|~~override~_configfile~:true>> for example if your
+    ~Eliom module wants to change the values afterwards
+    ~(for example in the site configuration ~Web interface~)~.\\
+<<div id="VALset_global_volatile_state_timeout" class="code"|<<span class="keyword"|val>> set~_global~_volatile~_state~_timeout : <<span class="code type"|\\{{{   }}}?state_name:string option ->\\{{{   }}}  ?cookie_scope:<<a_api subproject="server" text="Eliom_common.cookie_scope" | type Eliom_common.cookie_scope >> ->\\{{{   }}}  ?recompute_expdates:bool -> ?override_configfile:bool -> float option -> unit>>>><<div class="info"|~Sets the ~(server side~) timeout for volatile ~(~= "in memory"~) sessions ~(both
+    service session and volatile data session~)~.\\
+>>
+<<div id="VALset_global_service_state_timeout" class="code"|<<span class="keyword"|val>> set~_global~_service~_state~_timeout : <<span class="code type"|\\{{{   }}}?state_name:string option ->\\{{{   }}}  ?cookie_scope:<<a_api subproject="server" text="Eliom_common.cookie_scope" | type Eliom_common.cookie_scope >> ->\\{{{   }}}  ?recompute_expdates:bool -> ?override_configfile:bool -> float option -> unit>>>><<div class="info"|~Sets the ~(server side~) timeout for service states~.\\
+>>
+<<div id="VALset_global_volatile_data_state_timeout" class="code"|<<span class="keyword"|val>> set~_global~_volatile~_data~_state~_timeout : <<span class="code type"|\\{{{   }}}?state_name:string option ->\\{{{   }}}  ?cookie_scope:<<a_api subproject="server" text="Eliom_common.cookie_scope" | type Eliom_common.cookie_scope >> ->\\{{{   }}}  ?recompute_expdates:bool -> ?override_configfile:bool -> float option -> unit>>>><<div class="info"|~Sets the ~(server side~) timeout for volatile ~(~= "in memory"~) data states~.\\
+>>
+<<div id="VALset_global_persistent_data_state_timeout" class="code"|<<span class="keyword"|val>> set~_global~_persistent~_data~_state~_timeout : <<span class="code type"|\\{{{   }}}?state_name:string option ->\\{{{   }}}  ?cookie_scope:<<a_api subproject="server" text="Eliom_common.cookie_scope" | type Eliom_common.cookie_scope >> ->\\{{{   }}}  ?recompute_expdates:bool -> ?override_configfile:bool -> float option -> unit>>>><<div class="info"|~Sets the ~(server side~) timeout for persistent states~.\\
+>>
+<<div id="VALget_global_service_state_timeout" class="code"|<<span class="keyword"|val>> get~_global~_service~_state~_timeout : <<span class="code type"|\\{{{   }}}?state_name:string ->\\{{{   }}}  ?cookie_scope:<<a_api subproject="server" text="Eliom_common.cookie_scope" | type Eliom_common.cookie_scope >> -> unit -> float option>>>><<div class="info"|~Returns the ~(server side~) timeout for service states~.\\
+>>
+<<div id="VALget_global_volatile_data_state_timeout" class="code"|<<span class="keyword"|val>> get~_global~_volatile~_data~_state~_timeout : <<span class="code type"|\\{{{   }}}?state_name:string ->\\{{{   }}}  ?cookie_scope:<<a_api subproject="server" text="Eliom_common.cookie_scope" | type Eliom_common.cookie_scope >> -> unit -> float option>>>><<div class="info"|~Returns the ~(server side~) timeout for "volatile data" states~.\\
+>>
+<<div id="VALget_global_persistent_data_state_timeout" class="code"|<<span class="keyword"|val>> get~_global~_persistent~_data~_state~_timeout : <<span class="code type"|\\{{{   }}}?state_name:string ->\\{{{   }}}  ?cookie_scope:<<a_api subproject="server" text="Eliom_common.cookie_scope" | type Eliom_common.cookie_scope >> -> unit -> float option>>>><<div class="info"|~Returns the ~(server side~) timeout for persistent states~.\\
+>>
+\\
+
+===@@id="3_Personalizingtimeoutsforcurrentstate"@@~Personalizing timeouts for current state===
+\\
+<<div id="VALset_service_state_timeout" class="code"|<<span class="keyword"|val>> set~_service~_state~_timeout : <<span class="code type"|\\{{{   }}}?state_name:string ->\\{{{   }}}  ?cookie_scope:<<a_api subproject="server" text="Eliom_common.cookie_scope" | type Eliom_common.cookie_scope >> ->\\{{{   }}}  ?secure:bool -> float option -> unit>>>><<div class="info"|sets the timeout for service state ~(server side~) for current user~,
+   in seconds~. <<span class='code'|~None>> ~= no timeout\\
+>>
+<<div id="VALunset_service_state_timeout" class="code"|<<span class="keyword"|val>> unset~_service~_state~_timeout : <<span class="code type"|\\{{{   }}}?state_name:string ->\\{{{   }}}  ?cookie_scope:<<a_api subproject="server" text="Eliom_common.cookie_scope" | type Eliom_common.cookie_scope >> -> ?secure:bool -> unit -> unit>>>><<div class="info"|remove the service state timeout for current user
+   ~(and turn back to the default~)~.\\
+>>
+<<div id="VALget_service_state_timeout" class="code"|<<span class="keyword"|val>> get~_service~_state~_timeout : <<span class="code type"|\\{{{   }}}?state_name:string ->\\{{{   }}}  ?cookie_scope:<<a_api subproject="server" text="Eliom_common.cookie_scope" | type Eliom_common.cookie_scope >> ->\\{{{   }}}  ?secure:bool -> unit -> float option>>>><<div class="info"|returns the timeout for current service state~.
+    <<span class='code'|~None>> ~= no timeout\\
+>>
+<<div id="VALset_volatile_data_state_timeout" class="code"|<<span class="keyword"|val>> set~_volatile~_data~_state~_timeout : <<span class="code type"|\\{{{   }}}?state_name:string ->\\{{{   }}}  ?cookie_scope:<<a_api subproject="server" text="Eliom_common.cookie_scope" | type Eliom_common.cookie_scope >> ->\\{{{   }}}  ?secure:bool -> float option -> unit>>>><<div class="info"|sets the ~(server side~) timeout for volatile data state for current user~,
+   in seconds~. <<span class='code'|~None>> ~= no timeout\\
+>>
+<<div id="VALunset_volatile_data_state_timeout" class="code"|<<span class="keyword"|val>> unset~_volatile~_data~_state~_timeout : <<span class="code type"|\\{{{   }}}?state_name:string ->\\{{{   }}}  ?cookie_scope:<<a_api subproject="server" text="Eliom_common.cookie_scope" | type Eliom_common.cookie_scope >> -> ?secure:bool -> unit -> unit>>>><<div class="info"|remove the "volatile data" state timeout for current user
+   ~(and turn back to the default~)~.\\
+>>
+<<div id="VALget_volatile_data_state_timeout" class="code"|<<span class="keyword"|val>> get~_volatile~_data~_state~_timeout : <<span class="code type"|\\{{{   }}}?state_name:string ->\\{{{   }}}  ?cookie_scope:<<a_api subproject="server" text="Eliom_common.cookie_scope" | type Eliom_common.cookie_scope >> ->\\{{{   }}}  ?secure:bool -> unit -> float option>>>><<div class="info"|returns the timeout for current volatile data state~.
+    <<span class='code'|~None>> ~= no timeout\\
+>>
+<<div id="VALset_persistent_data_state_timeout" class="code"|<<span class="keyword"|val>> set~_persistent~_data~_state~_timeout : <<span class="code type"|\\{{{   }}}?state_name:string ->\\{{{   }}}  ?cookie_scope:<<a_api subproject="server" text="Eliom_common.cookie_scope" | type Eliom_common.cookie_scope >> ->\\{{{   }}}  ?secure:bool -> float option -> unit Lwt.t>>>><<div class="info"|sets the ~(server side~) timeout for persistent state for current user~,
+   in seconds~. <<span class='code'|~None>> ~= no timeout\\
+>>
+<<div id="VALunset_persistent_data_state_timeout" class="code"|<<span class="keyword"|val>> unset~_persistent~_data~_state~_timeout : <<span class="code type"|\\{{{   }}}?state_name:string ->\\{{{   }}}  ?cookie_scope:<<a_api subproject="server" text="Eliom_common.cookie_scope" | type Eliom_common.cookie_scope >> -> ?secure:bool -> unit -> unit Lwt.t>>>><<div class="info"|remove the persistent state timeout for current user
+   ~(and turn back to the default~)~.\\
+>>
+<<div id="VALget_persistent_data_state_timeout" class="code"|<<span class="keyword"|val>> get~_persistent~_data~_state~_timeout : <<span class="code type"|\\{{{   }}}?state_name:string ->\\{{{   }}}  ?cookie_scope:<<a_api subproject="server" text="Eliom_common.cookie_scope" | type Eliom_common.cookie_scope >> ->\\{{{   }}}  ?secure:bool -> unit -> float option Lwt.t>>>><<div class="info"|returns the persistent state timeout for current user~.
+    <<span class='code'|~None>> ~= no timeout\\
+>>
+\\
+
+==@@id="2_Administratingserversidestate"@@~Administrating server side state==
+\\
+\\
+//~Warning~: ~Most these functions must be called when the site
+    information is available~, that is~, either
+    during a request or during the initialisation phase of the site~.
+    ~Otherwise~, it will raise the exception
+    <<a_api subproject="server" | exception Eliom_common.Eliom_site_information_not_available >>~.
+    ~If you are using static linking~, you must delay the call to this function
+    until the configuration file is read~, using
+    <<a_api subproject="server" | val Eliom_services.register_eliom_module >>~. ~Otherwise you will also get 
+    this exception~.//\\
+<<div class="code" id="TYPEvolatile_table"|<<span class="keyword"|type>> <<span class="code type"|'a>> volatile~_table>>
+<<div class="info"|~The type of ~(volatile~) session data tables~.\\
+
+~The type of persistent session data tables~.\\
+>>
+
+<<div class="code" id="TYPEpersistent_table"|<<span class="keyword"|type>> <<span class="code type"|'a>> persistent~_table>>
+
+<<div id="VALdiscard_all" class="code"|<<span class="keyword"|val>> discard~_all : <<span class="code type"|\\{{{   }}}?state_name:string ->\\{{{   }}}  ?cookie_scope:<<a_api subproject="server" text="Eliom_common.cookie_scope" | type Eliom_common.cookie_scope >> -> unit -> unit Lwt.t>>>><<div class="info"|~Discard all services and persistent and volatile data for one state name~.
+    ~If the optional parameter <<span class='code'|~?state~_name>> is not present~,
+    the default name will be used~.\\
+>>
+<<div id="VALdiscard_all_data" class="code"|<<span class="keyword"|val>> discard~_all~_data : <<span class="code type"|\\{{{   }}}?persistent:bool ->\\{{{   }}}  ?state_name:string ->\\{{{   }}}  ?cookie_scope:<<a_api subproject="server" text="Eliom_common.cookie_scope" | type Eliom_common.cookie_scope >> -> unit -> unit Lwt.t>>>><<div class="info"|~Discard server side data for all clients~, for the given state name
+    and scope~.
+    ~If the optional parameter <<span class='code'|~?state~_name>> is not present~,
+    the default name will be used~.\\
+
+
+    ~If the optional parameter <<span class='code'|~?persistent>> is not present~,
+    both the persistent and volatile data will be removed~.\\
+>>
+<<div id="VALdiscard_all_services" class="code"|<<span class="keyword"|val>> discard~_all~_services : <<span class="code type"|\\{{{   }}}?state_name:string ->\\{{{   }}}  ?cookie_scope:<<a_api subproject="server" text="Eliom_common.cookie_scope" | type Eliom_common.cookie_scope >> -> unit -> unit Lwt.t>>>><<div class="info"|~Remove all services registered for clients for the given state name
+    and scope~.
+    ~If the optional parameter <<span class='code'|~?state~_name>> is not present~,
+    the default name is used~.\\
+>>
+<<div class="code"|<<span class="keyword"|module>> <<a_api subproject="server" text="Session_admin" | module Eliom_state.Session_admin >>: <<span class='code'|sig>><<a_api subproject="server" text=".." | module Eliom_state.Session_admin >><<span class='code'|end>>>>\\
+
+==@@id="2_Miscellaneouslowerlevelordeprecatedfunctions"@@~Miscellaneous lower level or deprecated functions==
+\\
+\\
+
+===@@id="3_GettinginformationabouttheURLoftheclientsideprocesscsp"@@~Getting information about the ~U~R~L of the client side process ~(csp~)===
+\\
+
+
+    ~Warning~: it is different from the ~U~R~L to which the request has been made~.
+    ~To get information about the current request~, see module
+    <<a_api subproject="server" | module Eliom_request_info >>~.\\
+<<div id="VALget_csp_original_full_path" class="code"|<<span class="keyword"|val>> get~_csp~_original~_full~_path : <<span class="code type"|unit -> <<a_api subproject="server" text="Eliom_pervasives.Url.path" | type Eliom_pervasives.Url.path >>>>>><<div class="info"|returns the full path of the ~U~R~L where the client~-side process is running~.
+    ~If there is no client side process~, same as
+    <<a_api subproject="server" | val Eliom_request_info.get_original_full_path >>~.\\
+>>
+<<div id="VALget_csp_hostname" class="code"|<<span class="keyword"|val>> get~_csp~_hostname : <<span class="code type"|unit -> string>>>><<div class="info"|returns the hostname used for absolute links~, computed
+    when launching the client side process for the first time~.
+    ~If there is no client side process~,
+    same as <<a_api subproject="server" | val Eliom_request_info.get_hostname >>~.\\
+
+
+    ~It is either the <<span class='code'|~Host>> header sent by the browser or the default hostname
+    set in the configuration file~, depending on server configuration
+    ~(<<span class='code'|~<usedefaulthostname~/~>>> option~)~.\\
+>>
+<<div id="VALget_csp_server_port" class="code"|<<span class="keyword"|val>> get~_csp~_server~_port : <<span class="code type"|unit -> int>>>><<div class="info"|returns the port of the server~, used when launching the client side process
+    ~(not the current request~)~. ~It corresponds to the port in the ~U~R~L of 
+    the browser~.
+    ~If there is no client side process~, same as
+    <<a_api subproject="server" | val Eliom_request_info.get_server_port >>~.\\
+>>
+<<div id="VALget_csp_ssl" class="code"|<<span class="keyword"|val>> get~_csp~_ssl : <<span class="code type"|unit -> bool>>>><<div class="info"|returns true if https is used in the ~U~R~L of the browser~, false if http~.
+    ~If there is no client side process~, same as <<a_api subproject="server" | val Eliom_request_info.get_ssl >>~.\\
+>>
+\\
+
+===@@id="3_Sessiondatadeprecatedinterface"@@~Session data ~(deprecated interface~)===
+\\
+\\
+~This interface is deprecated~. ~Now use ~Eliom references~.\\
+<<div class="code" id="TYPEstate_data"|<<span class="keyword"|type>> <<span class="code type"|'a>> state~_data = 
+|@@class="typetable"@ @class="lefttop"@@<<span class="keyword"|{{{|}}}>>|@@class="lefttop"@@<<span class="constructor"|No_data>>|
+|@@class="lefttop"@@<<span class="keyword"|{{{|}}}>>|@@class="lefttop"@@<<span class="constructor"|Data_session_expired>>|
+|@@class="lefttop"@@<<span class="keyword"|{{{|}}}>>|@@class="lefttop"@@<<span class="constructor"|Data>> <<span class="keyword"|of>> <<span class="code type"|'a>>|>>
+<<div class="info"|~The type used for getting data from a state~.\\
+>>
+
+\\
+
+====@@id="4_Inmemorystatedata"@@~In memory state data====
+\\
+<<div id="VALcreate_volatile_table" class="code"|<<span class="keyword"|val>> create~_volatile~_table : <<span class="code type"|\\{{{   }}}?state_name:string ->\\{{{   }}}  ?scope:<<a_api subproject="server" text="Eliom_common.user_scope" | type Eliom_common.user_scope >> ->\\{{{   }}}  ?secure:bool -> unit -> 'a <<a_api subproject="server" text="volatile_table" | type Eliom_state.volatile_table >>>>>><<div class="info"|creates a table in memory where you can store the session data for
+    all users~. ~(deprecated~)\\
+
+
+    //~Warning~: ~This functions must be called when the site
+    information is available~, that is~, either
+    during a request or during the initialisation phase of the site~.
+    ~Otherwise~, it will raise the exception
+    <<a_api subproject="server" | exception Eliom_common.Eliom_site_information_not_available >>~.
+    ~If you are using static linking~, you must delay the call to this function
+    until the configuration file is read~, using
+    <<a_api subproject="server" | val Eliom_services.register_eliom_module >>~. ~Otherwise you will also get 
+    this exception~.//\\
+>>
+<<div id="VALget_volatile_data" class="code"|<<span class="keyword"|val>> get~_volatile~_data : <<span class="code type"|table:'a <<a_api subproject="server" text="volatile_table" | type Eliom_state.volatile_table >> -> unit -> 'a <<a_api subproject="server" text="state_data" | type Eliom_state.state_data >>>>>><<div class="info"|gets session data for the current session ~(if any~)~.  ~(deprecated~)\\
+>>
+<<div id="VALset_volatile_data" class="code"|<<span class="keyword"|val>> set~_volatile~_data : <<span class="code type"|table:'a <<a_api subproject="server" text="volatile_table" | type Eliom_state.volatile_table >> -> 'a -> unit>>>><<div class="info"|sets session data for the current session~.  ~(deprecated~)\\
+>>
+<<div id="VALremove_volatile_data" class="code"|<<span class="keyword"|val>> remove~_volatile~_data : <<span class="code type"|table:'a <<a_api subproject="server" text="volatile_table" | type Eliom_state.volatile_table >> -> unit -> unit>>>><<div class="info"|removes session data for the current session
+    ~(but does not close the session~)~.
+    ~If the session does not exist~, does nothing~.
+    ~(deprecated~)\\
+>>
+\\
+
+====@@id="4_Persistentstatedata"@@~Persistent state data====
+\\
+<<div id="VALcreate_persistent_table" class="code"|<<span class="keyword"|val>> create~_persistent~_table : <<span class="code type"|\\{{{   }}}?state_name:string ->\\{{{   }}}  ?scope:<<a_api subproject="server" text="Eliom_common.user_scope" | type Eliom_common.user_scope >> ->\\{{{   }}}  ?secure:bool -> string -> 'a <<a_api subproject="server" text="persistent_table" | type Eliom_state.persistent_table >>>>>><<div class="info"|creates a table on hard disk where you can store the session data for
+    all users~. ~It uses <<span class='code'|~Ocsipersist>>~.  ~(deprecated~)\\
+>>
+<<div id="VALget_persistent_data" class="code"|<<span class="keyword"|val>> get~_persistent~_data : <<span class="code type"|\\{{{   }}}table:'a <<a_api subproject="server" text="persistent_table" | type Eliom_state.persistent_table >> ->\\{{{   }}}  unit -> 'a <<a_api subproject="server" text="state_data" | type Eliom_state.state_data >> Lwt.t>>>><<div class="info"|gets persistent session data for the current persistent session ~(if any~)~.
+    ~(deprecated~)\\
+>>
+<<div id="VALset_persistent_data" class="code"|<<span class="keyword"|val>> set~_persistent~_data : <<span class="code type"|table:'a <<a_api subproject="server" text="persistent_table" | type Eliom_state.persistent_table >> -> 'a -> unit Lwt.t>>>><<div class="info"|sets persistent session data for the current persistent session~.
+    ~(deprecated~)\\
+>>
+<<div id="VALremove_persistent_data" class="code"|<<span class="keyword"|val>> remove~_persistent~_data : <<span class="code type"|table:'a <<a_api subproject="server" text="persistent_table" | type Eliom_state.persistent_table >> -> unit -> unit Lwt.t>>>><<div class="info"|removes session data for the current persistent session
+    ~(but does not close the session~)~.
+    ~If the session does not exist~, does nothing~.
+    ~(deprecated~)\\
+>>
+\\
+
+===@@id="3_Otherlowlevelfunctions"@@~Other low level functions===
+\\
+\\
+~You probably don~'t need these functions~.\\
+<<div id="VALget_persistent_data_cookie" class="code"|<<span class="keyword"|val>> get~_persistent~_data~_cookie : <<span class="code type"|\\{{{   }}}?state_name:string ->\\{{{   }}}  ?cookie_scope:<<a_api subproject="server" text="Eliom_common.cookie_scope" | type Eliom_common.cookie_scope >> ->\\{{{   }}}  ?secure:bool -> unit -> string option Lwt.t>>>><<div class="info"|returns the value of the ~Eliom~'s cookies for one persistent session~.
+    ~Returns <<span class='code'|~None>> is no session is active~.\\
+>>
+<<div id="VALget_service_cookie" class="code"|<<span class="keyword"|val>> get~_service~_cookie : <<span class="code type"|\\{{{   }}}?state_name:string ->\\{{{   }}}  ?cookie_scope:<<a_api subproject="server" text="Eliom_common.cookie_scope" | type Eliom_common.cookie_scope >> ->\\{{{   }}}  ?secure:bool -> unit -> string option>>>><<div class="info"|returns the value of ~Eliom~'s cookies for one service session~.
+    ~Returns <<span class='code'|~None>> is no session is active~.\\
+>>
+<<div id="VALget_volatile_data_cookie" class="code"|<<span class="keyword"|val>> get~_volatile~_data~_cookie : <<span class="code type"|\\{{{   }}}?state_name:string ->\\{{{   }}}  ?cookie_scope:<<a_api subproject="server" text="Eliom_common.cookie_scope" | type Eliom_common.cookie_scope >> ->\\{{{   }}}  ?secure:bool -> unit -> string option>>>><<div class="info"|returns the value of ~Eliom~'s cookies for one "volatile data" session~.
+    ~Returns <<span class='code'|~None>> is no session is active~.\\
+>>

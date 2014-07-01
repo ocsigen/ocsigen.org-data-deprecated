@@ -1,0 +1,8 @@
+<<code language="ocaml" | object
+  method getPrefixMatches :
+    Js.js_string Js.t -> int -> Js.js_string Js.t array
+  method getSimilarRows : Js.js_string Js.t -> int -> Js.js_string Js.t array
+  method requestMatchingRows :
+    Js.js_string Js.t ->
+    int -> (unit -> unit) -> Js.js_string Js.opt -> unit Js.meth
+end >>

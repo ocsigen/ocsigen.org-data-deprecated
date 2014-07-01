@@ -1,0 +1,137 @@
+=Index of modules=
+
+|@@ @class="alignleft"@@\\A|
+|<<a_api text="Accesscontrol"| module Accesscontrol >> ||
+|<<a_api text="Authbasic"| module Authbasic >> |<<div class="info"|~Module <<span class='code'|~Authbasic>>~: ~Basic ~H~T~T~P ~Authentication~.
+>>
+|
+|@@ @class="alignleft"@@\\C|
+|<<a_api text="Channels"| module Ocsigen_comet.Channels >> ~[<<a_api | module Ocsigen_comet >>~]||
+|<<a_api text="Clist"| module Ocsigen_pervasives.Clist >> ~[<<a_api | module Ocsigen_pervasives >>~]||
+|<<a_api text="Cookies"| module Ocsigen_cookies.Cookies >> ~[<<a_api | module Ocsigen_cookies >>~]|<<div class="info"|~This table is to store cookie values for each path~.
+>>
+|
+|<<a_api text="CookiesTable"| module Ocsigen_cookies.CookiesTable >> ~[<<a_api | module Ocsigen_cookies >>~]||
+|@@ @class="alignleft"@@\\D|
+|<<a_api text="Directory_content"| module Ocsigen_senders.Directory_content >> ~[<<a_api | module Ocsigen_senders >>~]|<<div class="info"|directory name and corresponding ~U~R~L path
+>>
+|
+|<<a_api text="Dlist"| module Ocsigen_cache.Dlist >> ~[<<a_api | module Ocsigen_cache >>~]|<<div class="info"|~Doubly~-linked lists with maximum number of entries and limited lifespan for
+    entries~.
+>>
+|
+|@@ @class="alignleft"@@\\E|
+|<<a_api text="Empty_content"| module Ocsigen_senders.Empty_content >> ~[<<a_api | module Ocsigen_senders >>~]||
+|<<a_api text="Error_content"| module Ocsigen_senders.Error_content >> ~[<<a_api | module Ocsigen_senders >>~]|<<div class="info"|error code and~/or exception
+>>
+|
+|@@ @class="alignleft"@@\\F|
+|<<a_api text="File_content"| module Ocsigen_senders.File_content >> ~[<<a_api | module Ocsigen_senders >>~]||
+|<<a_api text="Filename"| module Ocsigen_pervasives.Filename >> ~[<<a_api | module Ocsigen_pervasives >>~]||
+|<<a_api text="Framepp"| module Framepp >> ||
+|@@ @class="alignleft"@@\\H|
+|<<a_api text="Html5_content"| module Ocsigen_senders.Html5_content >> ~[<<a_api | module Ocsigen_senders >>~]||
+|<<a_api text="Http_error"| module Ocsigen_http_frame.Http_error >> ~[<<a_api | module Ocsigen_http_frame >>~]||
+|<<a_api text="Http_header"| module Ocsigen_http_frame.Http_header >> ~[<<a_api | module Ocsigen_http_frame >>~]||
+|<<a_api text="Http_headers"| module Http_headers >> |<<div class="info"|returns an empty set of ~H~T~T~P headers
+>>
+|
+|@@ @class="alignleft"@@\\I|
+|<<a_api text="Ip_address"| module Ocsigen_pervasives.Ip_address >> ~[<<a_api | module Ocsigen_pervasives >>~]||
+|@@ @class="alignleft"@@\\L|
+|<<a_api text="List"| module Ocsigen_pervasives.List >> ~[<<a_api | module Ocsigen_pervasives >>~]||
+|@@ @class="alignleft"@@\\M|
+|<<a_api text="Make"| module Ocsigen_cache.Make >> ~[<<a_api | module Ocsigen_cache >>~]||
+|<<a_api text="Make_XML_Content"| module Ocsigen_senders.Make_XML_Content >> ~[<<a_api | module Ocsigen_senders >>~]||
+|<<a_api text="Map"| module Ocsigen_pervasives.String.Map >> ~[<<a_api | module Ocsigen_pervasives.String >>~]||
+|@@ @class="alignleft"@@\\N|
+|<<a_api text="NameHtbl"| module Http_headers.NameHtbl >> ~[<<a_api | module Http_headers >>~]||
+|@@ @class="alignleft"@@\\O|
+|<<a_api text="Ocsigen_cache"| module Ocsigen_cache >> |<<div class="info"|~Cache~.
+>>
+|
+|<<a_api text="Ocsigen_charset_mime"| module Ocsigen_charset_mime >> |<<div class="info"|~Charset
+>>
+|
+|<<a_api text="Ocsigen_comet"| module Ocsigen_comet >> |<<div class="info"|~Ocsigen~_comet server extension ~: provides low~-level server to client communication
+    scheme~.
+>>
+|
+|<<a_api text="Ocsigen_config"| module Ocsigen_config >> |<<div class="info"|~/~*
+>>
+|
+|<<a_api text="Ocsigen_cookies"| module Ocsigen_cookies >> |<<div class="info"|~This table is to store cookie values for each path~.
+>>
+|
+|<<a_api text="Ocsigen_extensions"| module Ocsigen_extensions >> |<<div class="info"|~Writing extensions for ~Ocsigen
+>>
+|
+|<<a_api text="Ocsigen_getcommandline"| module Ocsigen_getcommandline >> |<<div class="info"|~Contains the command line that will be parsed by the server
+    when ~Ocsigen~_commandline is linked
+>>
+|
+|<<a_api text="Ocsigen_headers"| module Ocsigen_headers >> |<<div class="info"|~Getting informations from ~H~T~T~P header~.
+>>
+|
+|<<a_api text="Ocsigen_http_client"| module Ocsigen_http_client >> |<<div class="info"|~Using ~Ocsigen as a ~H~T~T~P client
+>>
+|
+|<<a_api text="Ocsigen_http_com"| module Ocsigen_http_com >> |<<div class="info"|~Sending and receiving ~H~T~T~P frames
+>>
+|
+|<<a_api text="Ocsigen_http_frame"| module Ocsigen_http_frame >> |<<div class="info"|<<span class='code'|compute~_new~_ri~_cookies now path ri~_cookies cookies~_to~_set>>
+   adds the cookies from <<span class='code'|cookies~_to~_set>>
+   to <<span class='code'|ri~_cookies>>~, as if the cookies
+   had been send to the browser and the browser
+   was doing a new request to the url <<span class='code'|path>>~.
+>>
+|
+|<<a_api text="Ocsigen_loader"| module Ocsigen_loader >> |<<div class="info"|~Module <<span class='code'|~Ocsigen~_loader>>~: ~Dynamic loading for ~Ocsigen~.
+>>
+|
+|<<a_api text="Ocsigen_local_files"| module Ocsigen_local_files >> |<<div class="info"|~The requested file does not exists
+>>
+|
+|<<a_api text="Ocsigen_messages"| module Ocsigen_messages >> |<<div class="info"|~Writing messages in the logs
+>>
+|
+|<<a_api text="Ocsigen_parseconfig"| module Ocsigen_parseconfig >> |<<div class="info"|~Config file parsing
+>>
+|
+|<<a_api text="Ocsigen_pervasives"| module Ocsigen_pervasives >> ||
+|<<a_api text="Ocsigen_senders"| module Ocsigen_senders >> |<<div class="info"|~Functions to create results for various kinds of documents
+>>
+|
+|<<a_api text="Ocsigen_server"| module Ocsigen_server >> |<<div class="info"|~Reload the configuration of the server~.
+>>
+|
+|<<a_api text="Ocsigen_stream"| module Ocsigen_stream >> |<<div class="info"|~Streams are a means to read data block by block
+>>
+|
+|<<a_api text="Ocsipersist"| module Ocsipersist >> |<<div class="info"|~Persistent data on hard disk~.
+>>
+|
+|@@ @class="alignleft"@@\\P|
+|<<a_api text="Polytables"| module Polytables >> |<<div class="info"|~Polymorphic tables ~(using ~Map~)
+>>
+|
+|<<a_api text="Printexc"| module Ocsigen_pervasives.Printexc >> ~[<<a_api | module Ocsigen_pervasives >>~]||
+|@@ @class="alignleft"@@\\S|
+|<<a_api text="Security"| module Ocsigen_comet.Security >> ~[<<a_api | module Ocsigen_comet >>~]||
+|<<a_api text="Set"| module Ocsigen_pervasives.String.Set >> ~[<<a_api | module Ocsigen_pervasives.String >>~]||
+|<<a_api text="Stream_content"| module Ocsigen_senders.Stream_content >> ~[<<a_api | module Ocsigen_senders >>~]||
+|<<a_api text="Streamlist_content"| module Ocsigen_senders.Streamlist_content >> ~[<<a_api | module Ocsigen_senders >>~]|<<div class="info"|streams and content~-type
+>>
+|
+|<<a_api text="String"| module Ocsigen_pervasives.String >> ~[<<a_api | module Ocsigen_pervasives >>~]||
+|<<a_api text="StringStream"| module Ocsigen_stream.StringStream >> ~[<<a_api | module Ocsigen_stream >>~]||
+|@@ @class="alignleft"@@\\T|
+|<<a_api text="Table"| module Ocsigen_pervasives.String.Table >> ~[<<a_api | module Ocsigen_pervasives.String >>~]||
+|<<a_api text="Text_content"| module Ocsigen_senders.Text_content >> ~[<<a_api | module Ocsigen_senders >>~]|<<div class="info"|content ~* content~-type
+>>
+|
+|@@ @class="alignleft"@@\\U|
+|<<a_api text="Url"| module Ocsigen_pervasives.Url >> ~[<<a_api | module Ocsigen_pervasives >>~]||
+|@@ @class="alignleft"@@\\X|
+|<<a_api text="Xhtml_content"| module Ocsigen_senders.Xhtml_content >> ~[<<a_api | module Ocsigen_senders >>~]||
+\\

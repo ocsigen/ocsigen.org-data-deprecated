@@ -1,0 +1,5 @@
+=Module <<a_api_type | module Ojw_completion_sigs >> =
+<<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module>> <<span class="ocsforge_color_uid"|<<span class="ocsforge_color_uid"|Ojw_completion_sigs>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="ocsforge_color_keyword"|sig>><<a_api text=".." | module Ojw_completion_sigs >><<span class="ocsforge_color_keyword"|end>>>>~A completion widget to complete on string value~.
+
+----
+<<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module type>> <<a_api text="T" | module type Ojw_completion_sigs.T >> <<span class="ocsforge_color_delimiter"|~=>> <<span class="ocsforge_color_keyword"|sig>><<a_api text=".." | module type Ojw_completion_sigs.T >><<span class="ocsforge_color_keyword"|end>>>>

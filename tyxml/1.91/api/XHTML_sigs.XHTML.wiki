@@ -1,0 +1,11 @@
+=Functor <<a_api_type | module XHTML_sigs.XHTML >> =
+<<div class="code"|<<span class="keyword"|module>> XHTML: <<div class="sig_block"|<<span class='code'|functor ~(>><<span class='code'|~X~M~L>><<span class='code'| ~: >><<span class="code type"|<<a_api text="XML_sigs.T" | module XML_sigs.T >>>><<span class='code'|~) ~-~> >><<span class='code'|sig>><<a_api text=".." | module XHTML_sigs.XHTML >><<span class='code'|end>>>>>><<div class="module_param_list" | <<span class="param_title" |Parameters :>><<div|
+|@@class="paramstable"@ @class="centertop fifteen code"@@{{{XML}}}|@@class="centertop"@@:|<<span class="code type"|<<a_api text="XML_sigs.T" | module XML_sigs.T >>>>|
+>>>>
+
+----
+<<div class="code"|<<span class="keyword"|module type>> <<a_api text="T" | module type XHTML_sigs.XHTML.T >> = <<span class='code'|sig>><<a_api text=".." | module type XHTML_sigs.XHTML.T >><<span class='code'|end>>>><<div class="code"|<<span class="keyword"|module type>> <<a_api text="T_01_01" | module type XHTML_sigs.XHTML.T_01_01 >> = <<span class="code type"|<<a_api text="T" | module XHTML_sigs.XHTML.T >>>>>><<div class="info"|~An alias for ~X~H~T~M~L ~1~.~1 ~(for symmetry~)~:
+>>
+<<div class="code"|<<span class="keyword"|module type>> <<a_api text="T_01_00" | module type XHTML_sigs.XHTML.T_01_00 >> = <<span class='code'|sig>><<a_api text=".." | module type XHTML_sigs.XHTML.T_01_00 >><<span class='code'|end>>>><<div class="info"|~X~H~T~M~L ~1~.~0 includes some deprecated features that since
+    have been removed from ~X~H~T~M~L ~1~.~1~:
+>>

@@ -1,0 +1,14 @@
+=Module <<a_api_type | module Ojw_scrollbar_sigs >> =
+<<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module>> <<span class="ocsforge_color_uid"|<<span class="ocsforge_color_uid"|Ojw_scrollbar_sigs>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="ocsforge_color_keyword"|sig>><<a_api text=".." | module Ojw_scrollbar_sigs >><<span class="ocsforge_color_keyword"|end>>>>~Scrollbar module~.
+
+
+      ~Allow to add customizable scrollbars to your pages~.
+      ~To use it~, you must include the original js file~, and j~Query to your page~.
+
+
+      ~Binding of the ~J~S custom scrollbar by ~Manos ~Malihutsakis
+**Author(s):** Christophe Lecointe\\
+**See also** [[ http://manos.malihu.gr/jquery-custom-content-scroller/ |~Scrollbar of ~Manos ~Malihutsakis]]\\
+
+----
+<<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module type>> <<a_api text="T" | module type Ojw_scrollbar_sigs.T >> <<span class="ocsforge_color_delimiter"|~=>> <<span class="ocsforge_color_keyword"|sig>><<a_api text=".." | module type Ojw_scrollbar_sigs.T >><<span class="ocsforge_color_keyword"|end>>>>

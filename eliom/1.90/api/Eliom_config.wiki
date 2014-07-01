@@ -1,0 +1,26 @@
+=Module <<a_api_type | module Eliom_config >> =
+<<div class="code"|<<span class="keyword"|module>> Eliom_config: <<span class='code'|sig>><<a_api text=".." | module Eliom_config >><<span class='code'|end>>>>returns the hostname declared in the config file 
+    ~(<<span class='code'|~<host defaulthostname~="~.~.~."~>>>~)~.\\
+
+----
+<<div id="VALget_default_hostname" class="code"|<<span class="keyword"|val>> get~_default~_hostname : <<span class="code type"|unit -> string>>>><<div id="VALget_default_port" class="code"|<<span class="keyword"|val>> get~_default~_port : <<span class="code type"|unit -> int>>>><<div class="info"|returns the port number declared in the config file ~(<<span class='code'|~<host defaulthttpport~="~.~.~."~>>>~)~.\\
+>>
+<<div id="VALget_default_sslport" class="code"|<<span class="keyword"|val>> get~_default~_sslport : <<span class="code type"|unit -> int>>>><<div class="info"|returns the https port number declared in the config file ~(<<span class='code'|~<host defaulthttpsport~="~.~.~."~>>>~)~.\\
+>>
+<<div id="VALget_config_default_charset" class="code"|<<span class="keyword"|val>> get~_config~_default~_charset : <<span class="code type"|unit -> string>>>><<div class="info"|returns the default charset for this site\\
+>>
+<<div id="VALget_config" class="code"|<<span class="keyword"|val>> get~_config : <<span class="code type"|unit -> <<a_api text="Simplexmlparser.xml" | type Simplexmlparser.xml >> list>>>><<div class="info"|returns the information of the configuration file concerning that site
+   ~(between <<span class='code'|~<site~>>> and <<span class='code'|~<~/site~>>>~)~.\\
+
+
+   //~Warning~: ~You must call that function during the initialisation of
+   your module ~(not during a ~Lwt thread or a service~)
+   otherwise it will raise the exception
+   <<a_api | exception Eliom_common.Eliom_site_information_not_available >>~.
+   ~If you want to build a statically linkable module~, you must call this
+   function inside the initialisation function given to
+   <<a_api | val Eliom_services.register_eliom_module >>~.//\\
+>>
+<<div id="VALget_config_info" class="code"|<<span class="keyword"|val>> get~_config~_info : <<span class="code type"|unit -> <<a_api text="Ocsigen_extensions.config_info" | type Ocsigen_extensions.config_info >>>>>><<div class="info"|returns the information concerning the request
+    from the configuration files~.\\
+>>

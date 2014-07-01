@@ -1,0 +1,8 @@
+=Functor <<a_api_type | module XML_sigs.Printer >> =
+<<div class="code"|<<span class="keyword"|module>> Printer: <<div class="sig_block"|<<span class='code'|functor ~(>><<span class='code'|~X~M~L>><<span class='code'| ~: >><<span class="code type"|<<a_api text="T" | module XML_sigs.T >>>><<span class='code'|~) ~-~> >><<div class="sig_block"|<<span class='code'|functor ~(>><<span class='code'|~O>><<span class='code'| ~: >><<span class="code type"|<<a_api text="Output" | module XML_sigs.Output >>>><<span class='code'|~) ~-~> >><<span class='code'|sig>><<a_api text=".." | module XML_sigs.Printer >><<span class='code'|end>>>>>>>><<div class="module_param_list" | <<span class="param_title" |Parameters :>><<div|
+|@@class="paramstable"@ @class="centertop fifteen code"@@{{{XML}}}|@@class="centertop"@@:|<<span class="code type"|<<a_api text="T" | module XML_sigs.T >>>>|
+|@@class="centertop fifteen code"@@{{{O}}}|@@class="centertop"@@:|<<span class="code type"|<<a_api text="Output" | module XML_sigs.Output >>>>|
+>>>>
+
+----
+<<div class="code"|<<span class="keyword"|module type>> <<a_api text="T" | module type XML_sigs.Printer.T >> = <<span class='code'|sig>><<a_api text=".." | module type XML_sigs.Printer.T >><<span class='code'|end>>>>

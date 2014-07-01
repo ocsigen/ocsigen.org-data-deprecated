@@ -1,0 +1,4 @@
+<<code language="ocaml" | sig
+  module M : HTML5_sigs.HTML5(XML.M)(SVG.M).T
+  module P : XML_sigs.TypedSimplePrinter(XML.M)(M).T
+end >>

@@ -1,0 +1,4 @@
+=Module <<a_api_type | module Accesscontrol >> =
+<<div class="code"|<<span class="keyword"|module>> Accesscontrol: <<span class='code'|sig>><<a_api text=".." | module Accesscontrol >><<span class='code'|end>>>>
+----
+<<div id="VALparse_condition" class="code"|<<span class="keyword"|val>> parse~_condition : <<span class="code type"|<<a_api text="Simplexmlparser.xml" | type Simplexmlparser.xml >> -> <<a_api text="Ocsigen_extensions.request_info" | type Ocsigen_extensions.request_info >> -> bool>>>>

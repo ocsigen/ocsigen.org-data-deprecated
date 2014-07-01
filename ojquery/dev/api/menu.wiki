@@ -1,0 +1,5 @@
+=~Ojquery
+==[[Ojquery|Ojquery]]
+== <<a_api text="Index of types" | index types >>
+== <<a_api text="Index of values" | index values >>
+== <<a_api text="Index of modules" | index modules >>

@@ -1,0 +1,5 @@
+<<code language="ocaml" | object
+  method bubbles : bool Js.t Js.prop
+  method cancelable : bool Js.t Js.prop
+  method detail : 'a Js.t Js.opt Js.prop
+end >>

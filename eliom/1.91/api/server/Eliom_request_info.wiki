@@ -1,0 +1,158 @@
+=Module <<a_api_type subproject="server" | module Eliom_request_info >> =
+<<div class="code"|<<span class="keyword"|module>> Eliom_request_info: <<span class='code'|sig>><<a_api subproject="server" text=".." | module Eliom_request_info >><<span class='code'|end>>>>~This module contains the functions you need to get ~(or set~)
+    information about current request~.\\
+
+----
+\\
+
+==@@id="2_Gettinginformationabouttherequest"@@~Getting information about the request==
+\\
+<<div id="VALget_user_agent" class="code"|<<span class="keyword"|val>> get~_user~_agent : <<span class="code type"|unit -> string>>>><<div class="info"|returns the name of the user agent that did the request
+   ~(usually the name of the browser~)~.\\
+>>
+<<div id="VALget_full_url" class="code"|<<span class="keyword"|val>> get~_full~_url : <<span class="code type"|unit -> string>>>><<div class="info"|returns the full ~U~R~L as a string\\
+>>
+<<div id="VALget_remote_ip" class="code"|<<span class="keyword"|val>> get~_remote~_ip : <<span class="code type"|unit -> string>>>><<div class="info"|returns the internet address of the client as a string\\
+>>
+<<div id="VALget_remote_inet_addr" class="code"|<<span class="keyword"|val>> get~_remote~_inet~_addr : <<span class="code type"|unit -> Unix.inet_addr>>>><<div class="info"|returns the internet address of the client~,
+   using the type <<span class='code'|~Unix~.inet~_addr>> ~(defined in ~O~Caml~'s standard library~)~.\\
+>>
+<<div id="VALget_current_full_path_string" class="code"|<<span class="keyword"|val>> get~_current~_full~_path~_string : <<span class="code type"|unit -> string>>>><<div class="info"|returns the full path of the ~U~R~L as a string~.\\
+>>
+<<div id="VALget_current_full_path" class="code"|<<span class="keyword"|val>> get~_current~_full~_path : <<span class="code type"|unit -> <<a_api subproject="server" text="Eliom_pervasives.Url.path" | type Eliom_pervasives.Url.path >>>>>><<div class="info"|returns the full path of the ~U~R~L using the type <<span class='code'|~Url~.path>>\\
+>>
+<<div id="VALget_original_full_path_string" class="code"|<<span class="keyword"|val>> get~_original~_full~_path~_string : <<span class="code type"|unit -> string>>>><<div class="info"|returns the full path of the ~U~R~L as first sent by the browser
+    ~(not changed by previous extensions like rewritemod~)\\
+>>
+<<div id="VALget_original_full_path" class="code"|<<span class="keyword"|val>> get~_original~_full~_path : <<span class="code type"|unit -> <<a_api subproject="server" text="Eliom_pervasives.Url.path" | type Eliom_pervasives.Url.path >>>>>><<div class="info"|returns the full path of the ~U~R~L as first sent by the browser
+    ~(not changed by previous extensions like rewritemod~)\\
+>>
+<<div id="VALget_current_sub_path_string" class="code"|<<span class="keyword"|val>> get~_current~_sub~_path~_string : <<span class="code type"|unit -> string>>>><<div class="info"|returns the sub path of the ~U~R~L as a string~.
+    ~The sub~-path is the full path without the path of the site ~(set in the
+    configuration file~)~.\\
+>>
+<<div id="VALget_current_sub_path" class="code"|<<span class="keyword"|val>> get~_current~_sub~_path : <<span class="code type"|unit -> <<a_api subproject="server" text="Eliom_pervasives.Url.path" | type Eliom_pervasives.Url.path >>>>>><<div class="info"|returns the sub path of the ~U~R~L using the type <<span class='code'|~Url~.path>>~.
+    ~The sub~-path is the full path without the path of the site ~(set in the
+    configuration file~)~.\\
+>>
+<<div id="VALget_header_hostname" class="code"|<<span class="keyword"|val>> get~_header~_hostname : <<span class="code type"|unit -> string option>>>><<div class="info"|returns the hostname that has been sent by the user agent~.
+    ~For ~H~T~T~P~/~1~.~0~, the ~Host field is not mandatory in the request~.\\
+>>
+<<div id="VALget_hostname" class="code"|<<span class="keyword"|val>> get~_hostname : <<span class="code type"|unit -> string>>>><<div class="info"|returns the hostname used for absolute links~.
+    ~It is either the <<span class='code'|~Host>> header sent by the browser or the default hostname
+    set in the configuration file~, depending on server configuration
+    ~(<<span class='code'|~<usedefaulthostname~/~>>> option~)~.\\
+>>
+<<div id="VALget_server_port" class="code"|<<span class="keyword"|val>> get~_server~_port : <<span class="code type"|unit -> int>>>><<div class="info"|returns the port of the server~. 
+    ~It is either the default port in the configuration file
+    ~(if <<span class='code'|~<usedefaulthostname~/~>>> is present is the configuration file~)~,
+    or the port in the ~Host header of the request ~(if present~)~,
+    or the port on which the request has been done ~(otherwise~)~.\\
+>>
+<<div id="VALget_ssl" class="code"|<<span class="keyword"|val>> get~_ssl : <<span class="code type"|unit -> bool>>>><<div class="info"|returns true if https is used~, false if http~.\\
+>>
+<<div id="VALget_suffix" class="code"|<<span class="keyword"|val>> get~_suffix : <<span class="code type"|unit -> <<a_api subproject="server" text="Eliom_pervasives.Url.path" | type Eliom_pervasives.Url.path >> option>>>><<div class="info"|returns the suffix of the current ~U~R~L\\
+>>
+<<div id="VALget_cookies" class="code"|<<span class="keyword"|val>> get~_cookies : <<span class="code type"|\\{{{   }}}?cookie_scope:<<a_api subproject="server" text="Eliom_common.cookie_scope" | type Eliom_common.cookie_scope >> ->\\{{{   }}}  unit -> string Ocsigen_cookies.CookiesTable.t>>>><<div class="info"|returns the cookies sent by the browser\\
+>>
+<<div id="VALget_timeofday" class="code"|<<span class="keyword"|val>> get~_timeofday : <<span class="code type"|unit -> float>>>><<div class="info"|returns an ~Unix timestamp associated to the request\\
+>>
+<<div id="VALget_request_id" class="code"|<<span class="keyword"|val>> get~_request~_id : <<span class="code type"|unit -> int64>>>><<div class="info"|returns an unique id associated to the request\\
+>>
+\\
+
+===@@id="3_Exceptionsandfallbacks"@@~Exceptions and fallbacks===
+\\
+<<div id="VALget_request_cache" class="code"|<<span class="keyword"|val>> get~_request~_cache : <<span class="code type"|unit -> Polytables.t>>>><<div class="info"|returns a table in which you can store all the data you want during a
+    request~. ~It can also be used to send information after an action~.
+    ~Keep an eye on this information to know what
+    succeeded before the current service was called
+    ~(failed connection~, timeout ~.~.~.~)
+    ~The table is created at the beginning of the request~.\\
+>>
+<<div id="VALclean_request_cache" class="code"|<<span class="keyword"|val>> clean~_request~_cache : <<span class="code type"|unit -> unit>>>><<div class="info"|~Remove all data from the request cache\\
+>>
+<<div id="VALget_link_too_old" class="code"|<<span class="keyword"|val>> get~_link~_too~_old : <<span class="code type"|unit -> bool>>>><<div class="info"|returns <<span class='code'|true>> if the coservice called has not been found~.
+    ~In that case~, the current service is the fallback~.\\
+>>
+<<div id="VALget_expired_service_sessions" class="code"|<<span class="keyword"|val>> get~_expired~_service~_sessions : <<span class="code type"|unit -> <<a_api subproject="server" text="Eliom_common.fullsessionname" | type Eliom_common.fullsessionname >> list * <<a_api subproject="server" text="Eliom_common.fullsessionname" | type Eliom_common.fullsessionname >> list>>>><<div class="info"|returns the list of names of service sessions expired for the current 
+    request~, for browser sessions and tab sessions~.\\
+>>
+<<div id="VALget_previous_extension_error_code" class="code"|<<span class="keyword"|val>> get~_previous~_extension~_error~_code : <<span class="code type"|unit -> int>>>><<div class="info"|returns the ~H~T~T~P error code sent by the ~Ocsigen extension
+   that tried to answer to the request before ~Eliom~.
+   ~It is ~4~0~4 by default~.\\
+>>
+\\
+
+==@@id="2_Gettinginformationaboutfilesuploaded"@@~Getting information about files uploaded==
+\\
+\\
+~Warning~: ~The files uploaded are automatically erased by ~Ocsigen
+   just after the request has been fulfilled~.
+   ~If you want to keep them~, create a new hard link yourself during
+   the service ~(or make a copy~)~.\\
+<<div id="VALget_tmp_filename" class="code"|<<span class="keyword"|val>> get~_tmp~_filename : <<span class="code type"|Ocsigen_extensions.file_info -> string>>>><<div class="info"|returns the filename used by ~Ocsigen for the uploaded file~.\\
+>>
+<<div id="VALget_filesize" class="code"|<<span class="keyword"|val>> get~_filesize : <<span class="code type"|Ocsigen_extensions.file_info -> int64>>>><<div class="info"|returns the size of the file~.\\
+>>
+<<div id="VALget_original_filename" class="code"|<<span class="keyword"|val>> get~_original~_filename : <<span class="code type"|Ocsigen_extensions.file_info -> string>>>><<div class="info"|returns the name the file had on the client when it has been sent~.\\
+>>
+<<div id="VALget_site_dir" class="code"|<<span class="keyword"|val>> get~_site~_dir : <<span class="code type"|unit -> <<a_api subproject="server" text="Eliom_pervasives.Url.path" | type Eliom_pervasives.Url.path >>>>>><<div class="info"|returns the root of the site~.\\
+>>
+\\
+
+==@@id="2_Gettingparameterslowlevel"@@~Getting parameters ~(low level~)==
+\\
+\\
+~The usual way to get parameters with ~Eliom is to use the second
+   and third parameters of the service handlers~.
+   ~These are low level functions you may need for more advanced use~.\\
+<<div id="VALget_get_params" class="code"|<<span class="keyword"|val>> get~_get~_params : <<span class="code type"|unit -> (string * string) list>>>><<div class="info"|returns the parameters of the ~U~R~L ~(~G~E~T parameters~)
+   that concern the running service~.
+   ~For example in the case of a non~-attached coservice called from
+   a page with ~G~E~T parameters~, only the parameters of that non~-attached
+   coservice are returned ~(even if the other are still in the ~U~R~L~)~.\\
+>>
+<<div id="VALget_all_current_get_params" class="code"|<<span class="keyword"|val>> get~_all~_current~_get~_params : <<span class="code type"|unit -> (string * string) list>>>><<div class="info"|returns current parameters of the ~U~R~L ~(~G~E~T parameters~)
+   ~(even those that are for subsequent services~, but not previous actions~)\\
+>>
+<<div id="VALget_initial_get_params" class="code"|<<span class="keyword"|val>> get~_initial~_get~_params : <<span class="code type"|unit -> (string * string) list>>>><<div class="info"|returns all parameters of the ~U~R~L ~(~G~E~T parameters~)
+    as sent initially by the browser\\
+>>
+<<div id="VALget_other_get_params" class="code"|<<span class="keyword"|val>> get~_other~_get~_params : <<span class="code type"|unit -> (string * string) list>>>><<div class="info"|returns the parameters of the ~U~R~L ~(~G~E~T parameters~)
+   that do not concern the running service~.\\
+>>
+<<div id="VALget_nl_get_params" class="code"|<<span class="keyword"|val>> get~_nl~_get~_params : <<span class="code type"|unit -> (string * string) list Eliom_pervasives.String.Table.t>>>><<div class="info"|returns non localized parameters in the ~U~R~L~.\\
+>>
+<<div id="VALget_persistent_nl_get_params" class="code"|<<span class="keyword"|val>> get~_persistent~_nl~_get~_params : <<span class="code type"|unit -> (string * string) list Eliom_pervasives.String.Table.t>>>><<div class="info"|returns persistent non localized parameters in the ~U~R~L~.\\
+>>
+<<div id="VALget_nl_post_params" class="code"|<<span class="keyword"|val>> get~_nl~_post~_params : <<span class="code type"|unit -> (string * string) list Eliom_pervasives.String.Table.t>>>><<div class="info"|returns non localized ~P~O~S~T parameters~.\\
+>>
+<<div id="VALget_post_params" class="code"|<<span class="keyword"|val>> get~_post~_params : <<span class="code type"|unit -> (string * string) list Lwt.t option>>>><<div class="info"|returns the parameters in the body of the ~H~T~T~P request ~(~P~O~S~T parameters~)
+    that concern the running service~. ~None means that ~P~O~S~T data where
+    neither urlencoded form data or multipart data~.\\
+>>
+<<div id="VALget_all_post_params" class="code"|<<span class="keyword"|val>> get~_all~_post~_params : <<span class="code type"|unit -> (string * string) list option>>>><<div class="info"|returns all parameters in the body of the ~H~T~T~P request ~(~P~O~S~T parameters~)
+   ~(even those that are for another service~)\\
+>>
+\\
+
+==@@id="2_Otherlowlevelfunctions"@@~Other low level functions==
+\\
+\\
+~You probably don~'t need these functions~.\\
+<<div id="VALget_ri" class="code"|<<span class="keyword"|val>> get~_ri : <<span class="code type"|unit -> Ocsigen_extensions.request_info>>>><<div class="info"|returns all the information about the request~.\\
+>>
+<<div id="VALget_request" class="code"|<<span class="keyword"|val>> get~_request : <<span class="code type"|unit -> Ocsigen_extensions.request>>>><<div class="info"|returns all the information about the request and config~.\\
+>>
+<<div id="VALget_state_name" class="code"|<<span class="keyword"|val>> get~_state~_name : <<span class="code type"|unit -> <<a_api subproject="server" text="Eliom_common.fullsessionname" | type Eliom_common.fullsessionname >> option>>>><<div class="info"|returns the name of the sessions to which belongs the running service
+    ~(<<span class='code'|~None>> if it is not a session service~)\\
+>>
+<<div id="VALget_persistent_cookies" class="code"|<<span class="keyword"|val>> get~_persistent~_cookies : <<span class="code type"|unit -> string Eliom_common.Fullsessionname_Table.t>>>><<div class="info"|returns the values of the ~Eliom~'s cookies for persistent sessions
+   sent by the browser~.\\
+>>
+<<div id="VALget_data_cookies" class="code"|<<span class="keyword"|val>> get~_data~_cookies : <<span class="code type"|unit -> string Eliom_common.Fullsessionname_Table.t>>>><<div class="info"|returns the values of ~Eliom~'s cookies for non persistent sessions
+   sent by the browser~.\\
+>>
+<<div id="VALget_previous_extension_error_code" class="code"|<<span class="keyword"|val>> get~_previous~_extension~_error~_code : <<span class="code type"|unit -> int>>>><<div class="info"|~Returns the http error code of the request before ~Eliom was called\\
+>>

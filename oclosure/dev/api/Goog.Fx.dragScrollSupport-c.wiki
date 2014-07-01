@@ -1,0 +1,14 @@
+=Class type <<a_api_type | class type Goog.Fx.dragScrollSupport >> =
+<<pre class="ocsforge_color odocwiki_code"|<<span id="TYPEdragScrollSupport"|<<span class="ocsforge_color_keyword"|class type>> <<span class="ocsforge_color_name"|dragScrollSupport>>>> <<span class="ocsforge_color_delimiter"|~=>> <<span class="ocsforge_color_keyword"|object>><<a_api text=".." | class type Goog.Fx.dragScrollSupport >><<span class="ocsforge_color_keyword"|end>>>>**~Inherits**
+* <<a_api | class Goog.Disposable.disposable >>
+
+----
+<<pre class="ocsforge_color odocwiki_code"|<<span id="METHODdisposeInternal"|<<span class="ocsforge_color_keyword"|method>> <<span class="odocwiki_name"|disposeInternal>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|unit <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|meth>>>>>><<div class="odocwiki_info"|~Clean up listeners~.
+>>
+<<pre class="ocsforge_color odocwiki_code"|<<span id="METHODonMouseMove"|<<span class="ocsforge_color_keyword"|method>> <<span class="odocwiki_name"|onMouseMove>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|'a. <<span class="ocsforge_color_delimiter"| ( >>~#<<a_api text="Goog.Events.event" | class type Goog.Events.event >> as 'a<<span class="ocsforge_color_delimiter"| ) >> <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>> <<span class="ocsforge_color_delimiter"| -> >> unit <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|meth>>>>>><<div class="odocwiki_info"|~Handler for mouse moves events~.
+>>
+<<pre class="ocsforge_color odocwiki_code"|<<span id="METHODsetConstrainScroll"|<<span class="ocsforge_color_keyword"|method>> <<span class="odocwiki_name"|setConstrainScroll>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|bool <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>> <<span class="ocsforge_color_delimiter"| -> >> unit <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|meth>>>>>><<div class="odocwiki_info"|~Sets whether scrolling should be constrained to happen only when the cursor
+   is inside the container node~.
+   ~N~O~T~E~: ~If a vertical margin is not set~, then it does not make sense to
+   contain the scroll~, because in that case scroll will never be triggered~.
+>>

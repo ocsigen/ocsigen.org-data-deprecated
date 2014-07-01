@@ -1,0 +1,81 @@
+=Index of values=
+
+|@@ @style="tet-align: left;"@@\\A|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="add_square_color"| value Ew_table_color_picker.add_square_color >> ~[<<a_api subproject="client" | module Ew_table_color_picker >>~]|<<div class="odocwiki_info"|~It allow to add square color and append directly in block
+    ~It have to be made before start
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="add_square_color_and_start"| value Ew_table_color_picker.add_square_color_and_start >> ~[<<a_api subproject="client" | module Ew_table_color_picker >>~]|<<div class="odocwiki_info"|~It allow to add square color after start
+    ~It have not to be used before start ~*
+>>
+|
+|@@ @style="tet-align: left;"@@\\C|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="change_click_callback"| value Ew_slider.change_click_callback >> ~[<<a_api subproject="client" | module Ew_slider >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="change_end_slide_callback"| value Ew_slider.change_end_slide_callback >> ~[<<a_api subproject="client" | module Ew_slider >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="change_move_slide_callback"| value Ew_slider.change_move_slide_callback >> ~[<<a_api subproject="client" | module Ew_slider >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="change_start_slide_callback"| value Ew_slider.change_start_slide_callback >> ~[<<a_api subproject="client" | module Ew_slider >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="create"| value Ew_table_color_picker.create >> ~[<<a_api subproject="client" | module Ew_table_color_picker >>~]|<<div class="odocwiki_info"|~*~* ~Take one list ~(tables~) of list ~(columns~) of list ~(lines~) of color ~(string~)
+~*~* and build table list with it~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="create"| value Ew_slider.create >> ~[<<a_api subproject="client" | module Ew_slider >>~]|<<div class="odocwiki_info"|initial~_value is at ~0~.~5 by default
+   ~It have to by between ~0~.
+>>
+|
+|@@ @style="tet-align: left;"@@\\D|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="dyn_upload"| value Ew_dyn_upload.dyn_upload >> ~[<<a_api subproject="client" | module Ew_dyn_upload >>~]|<<div class="odocwiki_info"|~Retrieve the associated file ~(on the server~)
+ of <<span class="odocwiki_inlinecode"|file>>~.
+>>
+|
+|@@ @style="tet-align: left;"@@\\E|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="editable_name"| value Ew_editable.editable_name >> ~[<<a_api subproject="client" | module Ew_editable >>~]||
+|@@ @style="tet-align: left;"@@\\F|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="fusion"| value Ew_table_color_picker.fusion >> ~[<<a_api subproject="client" | module Ew_table_color_picker >>~]|<<div class="odocwiki_info"|~Get two color~_picker to fusion in single
+    ~This new color~_picker use color squares of both
+    ~It use color~_div of first color~_picker given in argument
+    ~It also keep referend on first color~_picker~'s block to future append color
+>>
+|
+|@@ @style="tet-align: left;"@@\\G|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="genere_lll_color"| value Ew_table_color_picker.genere_lll_color >> ~[<<a_api subproject="client" | module Ew_table_color_picker >>~]|<<div class="odocwiki_info"|~The agrument is the divisor of ~2~5~5
+~*~* ~It have to be greater than ~1 ~*
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="get_color"| value Ew_table_color_picker.get_color >> ~[<<a_api subproject="client" | module Ew_table_color_picker >>~]|<<div class="odocwiki_info"|~It is not disturbe by fusion or add square ~*
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="get_square_color_div_list"| value Ew_table_color_picker.get_square_color_div_list >> ~[<<a_api subproject="client" | module Ew_table_color_picker >>~]|<<div class="odocwiki_info"|get all square color div element
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="get_value"| value Ew_slider.get_value >> ~[<<a_api subproject="client" | module Ew_slider >>~]|<<div class="odocwiki_info"|return value between ~0~.
+>>
+|
+|@@ @style="tet-align: left;"@@\\L|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="li"| value Ew_traversable.li >> ~[<<a_api subproject="client" | module Ew_traversable >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="li"| value Ew_dropdown.li >> ~[<<a_api subproject="client" | module Ew_dropdown >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="li"| value Ew_completion.li >> ~[<<a_api subproject="client" | module Ew_completion >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="lll_color_10"| value Ew_table_color_picker.lll_color_10 >> ~[<<a_api subproject="client" | module Ew_table_color_picker >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="lll_color_6"| value Ew_table_color_picker.lll_color_6 >> ~[<<a_api subproject="client" | module Ew_table_color_picker >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="lll_color_p2"| value Ew_table_color_picker.lll_color_p2 >> ~[<<a_api subproject="client" | module Ew_table_color_picker >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="lll_color_p3"| value Ew_table_color_picker.lll_color_p3 >> ~[<<a_api subproject="client" | module Ew_table_color_picker >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="lll_color_p4"| value Ew_table_color_picker.lll_color_p4 >> ~[<<a_api subproject="client" | module Ew_table_color_picker >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="lll_color_p5"| value Ew_table_color_picker.lll_color_p5 >> ~[<<a_api subproject="client" | module Ew_table_color_picker >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="lll_color_p6"| value Ew_table_color_picker.lll_color_p6 >> ~[<<a_api subproject="client" | module Ew_table_color_picker >>~]||
+|@@ @style="tet-align: left;"@@\\O|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="of_server_set"| value Ew_active_set.of_server_set >> ~[<<a_api subproject="client" | module Ew_active_set >>~]||
+|@@ @style="tet-align: left;"@@\\R|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="remove_click_callback"| value Ew_slider.remove_click_callback >> ~[<<a_api subproject="client" | module Ew_slider >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="remove_end_slide_callback"| value Ew_slider.remove_end_slide_callback >> ~[<<a_api subproject="client" | module Ew_slider >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="remove_move_slide_callback"| value Ew_slider.remove_move_slide_callback >> ~[<<a_api subproject="client" | module Ew_slider >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="remove_start_slide_callback"| value Ew_slider.remove_start_slide_callback >> ~[<<a_api subproject="client" | module Ew_slider >>~]||
+|@@ @style="tet-align: left;"@@\\S|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="set"| value Ew_active_set.set >> ~[<<a_api subproject="client" | module Ew_active_set >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="start"| value Ew_table_color_picker.start >> ~[<<a_api subproject="client" | module Ew_table_color_picker >>~]|<<div class="odocwiki_info"|~Launch listeners
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="start"| value Ew_slider.start >> ~[<<a_api subproject="client" | module Ew_slider >>~]|<<div class="odocwiki_info"|launch click callback at start with initialize value
+>>
+|
+|@@ @style="tet-align: left;"@@\\T|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="to_server_set"| value Ew_active_set.to_server_set >> ~[<<a_api subproject="client" | module Ew_active_set >>~]||
+\\

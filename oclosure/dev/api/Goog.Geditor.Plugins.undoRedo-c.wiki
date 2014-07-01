@@ -1,0 +1,81 @@
+=Class type <<a_api_type | class type Goog.Geditor.Plugins.undoRedo >> =
+<<pre class="ocsforge_color odocwiki_code"|<<span id="TYPEundoRedo"|<<span class="ocsforge_color_keyword"|class type>> <<span class="ocsforge_color_name"|undoRedo>>>> <<span class="ocsforge_color_delimiter"|~=>> <<span class="ocsforge_color_keyword"|object>><<a_api text=".." | class type Goog.Geditor.Plugins.undoRedo >><<span class="ocsforge_color_keyword"|end>>>>**~Inherits**
+* <<a_api | class Goog.Geditor.plugin >>
+
+----
+<<pre class="ocsforge_color odocwiki_code"|<<span id="METHODclearHistory"|<<span class="ocsforge_color_keyword"|method>> <<span class="odocwiki_name"|clearHistory>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|unit <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|meth>>>>>><<div class="odocwiki_info"| ~Clear the undo~/redo stack~.
+>>
+<<pre class="ocsforge_color odocwiki_code"|<<span id="METHODdisable"|<<span class="ocsforge_color_keyword"|method>> <<span class="odocwiki_name"|disable>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<a_api text="Goog.Geditor.field" | class type Goog.Geditor.field >> <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>> <<span class="ocsforge_color_delimiter"| -> >> unit <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|meth>>>>>><<div class="odocwiki_info"| ~Disables this plugin for the specified~, registered field object~.
+
+>>
+<<pre class="ocsforge_color odocwiki_code"|<<span id="METHODdisposeInternal"|<<span class="ocsforge_color_keyword"|method>> <<span class="odocwiki_name"|disposeInternal>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|unit <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|meth>>>>>><<pre class="ocsforge_color odocwiki_code"|<<span id="METHODenable"|<<span class="ocsforge_color_keyword"|method>> <<span class="odocwiki_name"|enable>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<a_api text="Goog.Geditor.field" | class type Goog.Geditor.field >> <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>> <<span class="ocsforge_color_delimiter"| -> >> unit <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|meth>>>>>><<div class="odocwiki_info"| ~Enables this plugin for the specified~, registered field object~. ~A field
+ object should only be enabled when it is loaded~.
+
+>>
+<<pre class="ocsforge_color odocwiki_code"|<<span id="METHODgetCurrentEventTarget"|<<span class="ocsforge_color_keyword"|method>> <<span class="odocwiki_name"|getCurrentEventTarget>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<a_api text="Goog.Geditor.field" | class type Goog.Geditor.field >> <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>> <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|meth>>>>>><<div class="odocwiki_info"| ~This is so subclasses can deal with multifield undo~-redo~.
+
+**Returns** ~Target for ~C~O~M~M~A~N~D~_~V~A~L~U~E~_~C~H~A~N~G~E events~.\\
+>>
+<<pre class="ocsforge_color odocwiki_code"|<<span id="METHODgetCurrentFieldObject"|<<span class="ocsforge_color_keyword"|method>> <<span class="odocwiki_name"|getCurrentFieldObject>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<a_api text="Goog.Geditor.field" | class type Goog.Geditor.field >> <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>> <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|meth>>>>>><<div class="odocwiki_info"| ~This is so subclasses can deal with multifield undo~-redo~.
+
+**Returns** ~The active field object for this field~. ~This is
+     the one registered field object for the single~-plugin case and the
+     focused field for the multi~-field plugin case~.\\
+>>
+<<pre class="ocsforge_color odocwiki_code"|<<span id="METHODgetFieldObject"|<<span class="ocsforge_color_keyword"|method>> <<span class="odocwiki_name"|getFieldObject>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|\\<<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|js_string>> <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>> <<span class="ocsforge_color_delimiter"| -> >> <<a_api text="Goog.Geditor.field" | class type Goog.Geditor.field >> <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>> <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|meth>>>>>><<div class="odocwiki_info"| ~This is so subclasses can deal with multifield undo~-redo~.
+
+**Returns** ~The field object with the hashcode~.\\
+>>
+<<pre class="ocsforge_color odocwiki_code"|<<span id="METHODgetTrogClassId"|<<span class="ocsforge_color_keyword"|method>> <<span class="odocwiki_name"|getTrogClassId>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|js_string>> <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>> <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|meth>>>>>><<div class="odocwiki_info"|**Returns** ~The ~I~D unique to this plugin class~. ~Note that different
+     instances off the plugin share the same class~Id~.\\
+>>
+<<pre class="ocsforge_color odocwiki_code"|<<span id="METHODhandleKeyboardShortcut"|<<span class="ocsforge_color_keyword"|method>> <<span class="odocwiki_name"|handleKeyboardShortcut>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|\\'a.\\  <<span class="ocsforge_color_delimiter"| ( >>~#<<a_api text="Goog.Events.browserEvent" | class type Goog.Events.browserEvent >> as 'a<<span class="ocsforge_color_delimiter"| ) >> <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>> <<span class="ocsforge_color_delimiter"| -> >>\\  <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|js_string>> <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>> <<span class="ocsforge_color_delimiter"| -> >> bool <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>> <<span class="ocsforge_color_delimiter"| -> >> bool <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>> <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|meth>>>>>><<div class="odocwiki_info"| ~Handles keyboard shortcuts~.  ~Preferred to using handle~Key~* as it will use
+ the proper event based on browser and will be more performant~. ~If
+ handle~Key~Press~/handle~Key~Down returns true~, this will not be called~. ~If the
+ plugin handles the shortcut~, it is responsible for dispatching appropriate
+ events ~(change~, selection change at the time of this comment~)~. ~If the plugin
+ calls exec~Command on the editable field~, then exec~Command already takes care
+ of dispatching events~.
+ ~N~O~T~E~: ~For performance reasons this is only called when any key is pressed
+ in conjunction with ctrl~/meta keys ~O~R when a small subset of keys ~(defined
+ in goog~.editor~.~Field~.~P~O~T~E~N~T~I~A~L~_~S~H~O~R~T~C~U~T~_~K~E~Y~C~O~D~E~S~_~) are pressed without
+ ctrl~/meta keys~. ~We specifically don~'t invoke it when alt~Key is pressed since
+ alt key is used in many i~8n ~U~Is to enter certain characters~.
+
+**Returns** ~Whether the event was handled and thus should ~*not~* be
+     propagated to other plugins~. ~We also call prevent~Default on the event if
+     the return value is true~.\\
+>>
+<<pre class="ocsforge_color odocwiki_code"|<<span id="METHODisEnabled"|<<span class="ocsforge_color_keyword"|method>> <<span class="odocwiki_name"|isEnabled>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<a_api text="Goog.Geditor.field" | class type Goog.Geditor.field >> <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>> <<span class="ocsforge_color_delimiter"| -> >> bool <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>> <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|meth>>>>>><<div class="odocwiki_info"| ~Returns whether this plugin is enabled for the field object~.
+
+
+
+**Returns** ~Whether this plugin is enabled for the field object~.\\
+>>
+<<pre class="ocsforge_color odocwiki_code"|<<span id="METHODisSupportedCommand"|<<span class="ocsforge_color_keyword"|method>> <<span class="odocwiki_name"|isSupportedCommand>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|js_string>> <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>> <<span class="ocsforge_color_delimiter"| -> >> bool <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>> <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|meth>>>>>><<div class="odocwiki_info"| ~Whether the string corresponds to a command this plugin handles~.
+
+**Returns** ~Whether the string corresponds to a command
+     this plugin handles~.\\
+>>
+<<pre class="ocsforge_color odocwiki_code"|<<span id="METHODrefreshCurrentState"|<<span class="ocsforge_color_keyword"|method>> <<span class="odocwiki_name"|refreshCurrentState>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<a_api text="Goog.Geditor.field" | class type Goog.Geditor.field >> <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>> <<span class="ocsforge_color_delimiter"| -> >> unit <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|meth>>>>>><<div class="odocwiki_info"| ~Refreshes the current state of the editable field as maintained by undo~-redo~,
+ without adding any undo~-redo states to the stack~.
+
+>>
+<<pre class="ocsforge_color odocwiki_code"|<<span id="METHODregisterFieldObject"|<<span class="ocsforge_color_keyword"|method>> <<span class="odocwiki_name"|registerFieldObject>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<a_api text="Goog.Geditor.field" | class type Goog.Geditor.field >> <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>> <<span class="ocsforge_color_delimiter"| -> >> unit <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|meth>>>>>><<div class="odocwiki_info"| ~Registers the field object for use with this plugin~.
+
+>>
+<<pre class="ocsforge_color odocwiki_code"|<<span id="METHODsetMaxUndoDepth"|<<span class="ocsforge_color_keyword"|method>> <<span class="odocwiki_name"|setMaxUndoDepth>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|int <<span class="ocsforge_color_delimiter"| -> >> unit <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|meth>>>>>><<div class="odocwiki_info"| ~Set the max undo stack depth ~(not the real memory usage~)~.
+
+>>
+<<pre class="ocsforge_color odocwiki_code"|<<span id="METHODsetUndoRedoManager"|<<span class="ocsforge_color_keyword"|method>> <<span class="odocwiki_name"|setUndoRedoManager>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<a_api text="undoRedoManager" | class type Goog.Geditor.Plugins.undoRedoManager >> <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>> <<span class="ocsforge_color_delimiter"| -> >> unit <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|meth>>>>>><<div class="odocwiki_info"| ~Set the undo~-redo manager used by this plugin~. ~Any state on a previous
+ undo~-redo manager is lost~.
+
+>>
+<<pre class="ocsforge_color odocwiki_code"|<<span id="METHODunregisterFieldObject"|<<span class="ocsforge_color_keyword"|method>> <<span class="odocwiki_name"|unregisterFieldObject>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<a_api text="Goog.Geditor.field" | class type Goog.Geditor.field >> <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>> <<span class="ocsforge_color_delimiter"| -> >> unit <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|meth>>>>>><<div class="odocwiki_info"| ~Unregisters and disables the field~Object with this plugin~. ~Thie does ~*not~*
+ clobber the undo stack for the field~Object though~.
+ ~T~O~D~O~(user~)~: ~For the multifield version~, we really should add a way to
+ ignore undo actions on field~'s that have been made uneditable~.
+ ~This is probably as simple as skipping over entries in the undo stack
+ that have a hashcode of an uneditable field~.
+
+>>

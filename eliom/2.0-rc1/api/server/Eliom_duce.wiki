@@ -1,0 +1,16 @@
+=Module <<a_api_type subproject="server" | module Eliom_duce >> =
+<<div class="code"|<<span class="keyword"|module>> Eliom_duce: <<span class='code'|sig>><<a_api subproject="server" text=".." | module Eliom_duce >><<span class='code'|end>>>>~Using ~O~Camlduce for page generation~.\\
+
+----
+<<div class="code"|<<span class="keyword"|module>> <<a_api subproject="server" text="Xhtml" | module Eliom_duce.Xhtml >>: <<span class='code'|sig>><<a_api subproject="server" text=".." | module Eliom_duce.Xhtml >><<span class='code'|end>>>><<div class="info"|~Register service and create form for ~Xhtml
+>>
+<<div class="code"|<<span class="keyword"|module>> <<a_api subproject="server" text="Xhtml_registration" | module Eliom_duce.Xhtml_registration >>: <<span class="code type"|<<a_api subproject="server" text="Eliom_duce_sigs.XHTML_REGISTRATION" | module Eliom_duce_sigs.XHTML_REGISTRATION >>>><<span class="code type"|{{{  }}}>>>><<div class="info"|~Register service for ~Xhtml
+>>
+<<div class="code"|<<span class="keyword"|module>> <<a_api subproject="server" text="Xhtml_forms" | module Eliom_duce.Xhtml_forms >>: <<span class="code type"|<<a_api subproject="server" text="Eliom_duce_sigs.XHTML_FORMS" | module Eliom_duce_sigs.XHTML_FORMS >>>><<span class="code type"|{{{  }}}>>>><<div class="info"|~Create form for ~Xhtml
+>>
+\\
+~Register and create form for any ~X~M~L data type\\
+\\
+~Register and create form for list of ~X~M~L data type\\
+<<div class="code"|<<span class="keyword"|module>> <<a_api subproject="server" text="Blocks" | module Eliom_duce.Blocks >>: <<span class='code'|sig>><<a_api subproject="server" text=".." | module Eliom_duce.Blocks >><<span class='code'|end>>>><<div class="info"|~Register and create form for list of <<span class='code'|blocks>> ~(subtype of xhtml~)
+>>

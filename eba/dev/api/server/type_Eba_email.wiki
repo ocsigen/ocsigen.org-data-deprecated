@@ -1,0 +1,1 @@
+<<code language="ocaml" | sig module Make : functor (C : Eba_config.Email) -> Eba_sigs.Email end >>

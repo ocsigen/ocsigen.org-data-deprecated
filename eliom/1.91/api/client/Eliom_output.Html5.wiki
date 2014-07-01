@@ -1,0 +1,6 @@
+=Module <<a_api_type subproject="client" | module Eliom_output.Html5 >> =
+<<div class="code"|<<span class="keyword"|module>> Html5: <<span class='code'|sig>><<a_api subproject="client" text=".." | module Eliom_output.Html5 >><<span class='code'|end>>>>~Forms creation\\
+
+----
+<<div class="code"|<<span class="keyword"|include>> HTML5FORMSSIG>>
+<<div class="code"|<<span class="keyword"|include>> <<a_api subproject="client" | module type Eliom_output.Base >>>>

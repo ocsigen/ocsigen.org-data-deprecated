@@ -1,0 +1,3 @@
+=Class type <<a_api_type | class type Goog.Ggraphics.fill >> =
+<<pre class="ocsforge_color odocwiki_code"|<<span id="TYPEfill"|<<span class="ocsforge_color_keyword"|class type>> <<span class="ocsforge_color_name"|fill>>>> <<span class="ocsforge_color_delimiter"|~=>> <<span class="ocsforge_color_keyword"|object>><<a_api text=".." | class type Goog.Ggraphics.fill >><<span class="ocsforge_color_keyword"|end>>>>
+----

@@ -1,0 +1,4 @@
+=Module type <<a_api_type | module type HTML5.T >> =
+<<div class="code"|<<span class="keyword"|module type>> T = <<span class="code type"|<<a_api text="HTML5_sigs.HTML5" | module HTML5_sigs.HTML5 >>(<<a_api text="XML.M" | module XML.M >>)(<<a_api text="SVG.M" | module SVG.M >>).T>>>>~Type signature of ~H~T~M~L~5 typesafe constructors\\
+
+----

@@ -1,0 +1,13 @@
+=Module <<a_api_type | module Eliom_react.Down >> =
+<<div class="code"|<<span class="keyword"|module>> Down: <<span class='code'|sig>><<a_api text=".." | module Eliom_react.Down >><<span class='code'|end>>>>
+----
+<<div class="code" id="TYPEt"|<<span class="keyword"|type>> <<span class="code type"|'a>> t>>
+<<div class="info"|~The abstract type of down events~.\\
+>>
+
+<<div id="VALof_react" class="code"|<<span class="keyword"|val>> of~_react : <<span class="code type"|?throttling:float -> ?name:string -> 'a React.E.t -> 'a <<a_api text="t" | type Eliom_react.Down.t >>>>>><<div class="info"|<<span class='code'|of~_react ~?throttling ~?name e>> create an
+      asynchronous edge originating from <<span class='code'|e>>~. ~The parameters are~: <<span class='code'|throttling>>
+      for the limit to event propagation rate~, <<span class='code'|name>> for named edges~.\\
+>>
+<<div id="VALwrap" class="code"|<<span class="keyword"|val>> wrap : <<span class="code type"|\\{{{   }}}'a <<a_api text="t" | type Eliom_react.Down.t >> ->\\{{{   }}}  'a Eliom_common_comet.chan_id <<a_api text="Eliom_client_types.data_key" | type Eliom_client_types.data_key >>>>>><<div class="info"|<<span class='code'|wrap e>> wraps the event <<span class='code'|e>> so that it can be handed to the client~.\\
+>>

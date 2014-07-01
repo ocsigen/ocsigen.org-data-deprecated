@@ -1,0 +1,16 @@
+=Module <<a_api_type | module Eliom_client_types >> =
+<<div class="code"|<<span class="keyword"|module>> Eliom_client_types: <<span class='code'|sig>><<a_api text=".." | module Eliom_client_types >><<span class='code'|end>>>>~/~*\\
+
+----
+<<div class="code" id="TYPEsitedata"|<<span class="keyword"|type>> sitedata = { 
+|@@class="typetable"@ @class="lefttop"@@{{{   }}}|@@class="lefttop"@@site_dir : <<span class="code type"|<<a_api text="Ocsigen_lib.url_path" | type Ocsigen_lib.url_path >>>>;|
+|@@class="lefttop"@@{{{   }}}|@@class="lefttop"@@site_dir_string : <<span class="code type"|string>>;|
+
+}
+>>
+
+<<div class="code" id="TYPEserver_params"|<<span class="keyword"|type>> server~_params>>
+
+<<div id="VALsp" class="code"|<<span class="keyword"|val>> sp : <<span class="code type"|<<a_api text="server_params" | type Eliom_client_types.server_params >>>>>><<div class="code" id="TYPEdata_key"|<<span class="keyword"|type>> <<span class="code type"|'a>> data~_key>>
+
+<<div id="VALto_data_key_" class="code"|<<span class="keyword"|val>> to~_data~_key~_ : <<span class="code type"|int64 * int -> 'a <<a_api text="data_key" | type Eliom_client_types.data_key >>>>>><<div id="VALof_data_key_" class="code"|<<span class="keyword"|val>> of~_data~_key~_ : <<span class="code type"|'a <<a_api text="data_key" | type Eliom_client_types.data_key >> -> int64 * int>>>><<div id="VALjsmarshal" class="code"|<<span class="keyword"|val>> jsmarshal : <<span class="code type"|'a -> string>>>><<div id="VALstring_escape" class="code"|<<span class="keyword"|val>> string~_escape : <<span class="code type"|string -> string>>>>

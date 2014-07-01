@@ -1,0 +1,5 @@
+=Module <<a_api_type | module XML_iter >> =
+<<div class="code"|<<span class="keyword"|module>> XML_iter: <<span class='code'|sig>><<a_api text=".." | module XML_iter >><<span class='code'|end>>>>~Basic iterators over ~X~M~L tree ~(functorial interface~)~.\\
+
+----
+<<div class="code"|<<span class="keyword"|module>> <<a_api text="Make" | module XML_iter.Make >>: <<div class="sig_block"|<<span class='code'|functor ~(>><<span class='code'|~X~M~L>><<span class='code'| ~: >><<span class="code type"|<<a_api text="XML_sigs.Iterable" | module XML_sigs.Iterable >>>><<span class='code'|~) ~-~> >><<span class='code'|sig>><<a_api text=".." | module XML_iter.Make >><<span class='code'|end>>>>>>

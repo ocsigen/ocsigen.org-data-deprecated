@@ -1,0 +1,3 @@
+=Module <<a_api_type | module Eliom_common.Fullsessionname_Table >> =
+<<div class="code"|<<span class="keyword"|module>> Fullsessionname_Table: <<span class="code type"|Map.S>><<span class="code type"|{{{  }}} with type key = fullsessionname>>>>
+----

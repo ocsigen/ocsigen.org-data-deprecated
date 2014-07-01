@@ -1,0 +1,4 @@
+=Module type <<a_api_type | module type XHTML.T_01_01 >> =
+<<div class="code"|<<span class="keyword"|module type>> T_01_01 = <<span class="code type"|<<a_api text="XHTML_sigs.XHTML" | module XHTML_sigs.XHTML >>(<<a_api text="XML.M" | module XML.M >>).T_01_01>>>>~Type signature of ~X~H~T~M~L ~1~.~1 typesafe constructors\\
+
+----

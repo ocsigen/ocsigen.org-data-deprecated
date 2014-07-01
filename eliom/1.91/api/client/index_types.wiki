@@ -1,0 +1,143 @@
+=Index of types=
+
+|@@ @class="alignleft"@@\\A|
+|<<a_api subproject="client" text="a_attrib_t"| type Eliom_mkforms.FORMCREATE.a_attrib_t >> ~[<<a_api subproject="client" | module Eliom_mkforms.FORMCREATE >>~]||
+|<<a_api subproject="client" text="a_attrib_t"| type Eliom_mkforms.ELIOMFORMSIG.a_attrib_t >> ~[<<a_api subproject="client" | module Eliom_mkforms.ELIOMFORMSIG >>~]||
+|<<a_api subproject="client" text="a_content_elt"| type Eliom_mkforms.FORMCREATE.a_content_elt >> ~[<<a_api subproject="client" | module Eliom_mkforms.FORMCREATE >>~]||
+|<<a_api subproject="client" text="a_content_elt"| type Eliom_mkforms.ELIOMFORMSIG.a_content_elt >> ~[<<a_api subproject="client" | module Eliom_mkforms.ELIOMFORMSIG >>~]||
+|<<a_api subproject="client" text="a_content_elt_list"| type Eliom_mkforms.FORMCREATE.a_content_elt_list >> ~[<<a_api subproject="client" | module Eliom_mkforms.FORMCREATE >>~]||
+|<<a_api subproject="client" text="a_content_elt_list"| type Eliom_mkforms.ELIOMFORMSIG.a_content_elt_list >> ~[<<a_api subproject="client" | module Eliom_mkforms.ELIOMFORMSIG >>~]||
+|<<a_api subproject="client" text="a_elt"| type Eliom_mkforms.FORMCREATE.a_elt >> ~[<<a_api subproject="client" | module Eliom_mkforms.FORMCREATE >>~]||
+|<<a_api subproject="client" text="a_elt"| type Eliom_mkforms.ELIOMFORMSIG.a_elt >> ~[<<a_api subproject="client" | module Eliom_mkforms.ELIOMFORMSIG >>~]||
+|<<a_api subproject="client" text="a_elt_list"| type Eliom_mkforms.FORMCREATE.a_elt_list >> ~[<<a_api subproject="client" | module Eliom_mkforms.FORMCREATE >>~]||
+|<<a_api subproject="client" text="a_elt_list"| type Eliom_mkforms.ELIOMFORMSIG.a_elt_list >> ~[<<a_api subproject="client" | module Eliom_mkforms.ELIOMFORMSIG >>~]||
+|<<a_api subproject="client" text="a_s"| type Eliom_services.a_s >> ~[<<a_api subproject="client" | module Eliom_services >>~]||
+|<<a_api subproject="client" text="aname"| type Eliom_pervasives.XML.M.aname >> ~[<<a_api subproject="client" | module Eliom_pervasives.XML.M >>~]||
+|<<a_api subproject="client" text="appl_service"| type Eliom_services.appl_service >> ~[<<a_api subproject="client" | module Eliom_services >>~]|<<div class="info"|return type for service that are entry points for an
+                      application
+>>
+|
+|<<a_api subproject="client" text="attached"| type Eliom_services.attached >> ~[<<a_api subproject="client" | module Eliom_services >>~]||
+|<<a_api subproject="client" text="attached_service_kind"| type Eliom_services.attached_service_kind >> ~[<<a_api subproject="client" | module Eliom_services >>~]||
+|<<a_api subproject="client" text="attrib"| type Eliom_pervasives.XML.M.attrib >> ~[<<a_api subproject="client" | module Eliom_pervasives.XML.M >>~]||
+|<<a_api subproject="client" text="attribs"| type Eliom_pervasives.XML.M.attribs >> ~[<<a_api subproject="client" | module Eliom_pervasives.XML.M >>~]||
+|@@ @class="alignleft"@@\\B|
+|<<a_api subproject="client" text="basic_input_type"| type Eliom_output_base.HTML5FORMSSIG.basic_input_type >> ~[<<a_api subproject="client" | module Eliom_output_base.HTML5FORMSSIG >>~]||
+|<<a_api subproject="client" text="button_attrib_t"| type Eliom_mkforms.FORMCREATE.button_attrib_t >> ~[<<a_api subproject="client" | module Eliom_mkforms.FORMCREATE >>~]||
+|<<a_api subproject="client" text="button_attrib_t"| type Eliom_mkforms.ELIOMFORMSIG.button_attrib_t >> ~[<<a_api subproject="client" | module Eliom_mkforms.ELIOMFORMSIG >>~]||
+|<<a_api subproject="client" text="button_content_elt"| type Eliom_mkforms.FORMCREATE.button_content_elt >> ~[<<a_api subproject="client" | module Eliom_mkforms.FORMCREATE >>~]||
+|<<a_api subproject="client" text="button_content_elt"| type Eliom_mkforms.ELIOMFORMSIG.button_content_elt >> ~[<<a_api subproject="client" | module Eliom_mkforms.ELIOMFORMSIG >>~]||
+|<<a_api subproject="client" text="button_content_elt_list"| type Eliom_mkforms.FORMCREATE.button_content_elt_list >> ~[<<a_api subproject="client" | module Eliom_mkforms.FORMCREATE >>~]||
+|<<a_api subproject="client" text="button_content_elt_list"| type Eliom_mkforms.ELIOMFORMSIG.button_content_elt_list >> ~[<<a_api subproject="client" | module Eliom_mkforms.ELIOMFORMSIG >>~]||
+|<<a_api subproject="client" text="button_elt"| type Eliom_mkforms.FORMCREATE.button_elt >> ~[<<a_api subproject="client" | module Eliom_mkforms.FORMCREATE >>~]||
+|<<a_api subproject="client" text="button_elt"| type Eliom_mkforms.ELIOMFORMSIG.button_elt >> ~[<<a_api subproject="client" | module Eliom_mkforms.ELIOMFORMSIG >>~]||
+|<<a_api subproject="client" text="button_type"| type Eliom_output_base.HTML5FORMSSIG.button_type >> ~[<<a_api subproject="client" | module Eliom_output_base.HTML5FORMSSIG >>~]||
+|<<a_api subproject="client" text="button_type_t"| type Eliom_mkforms.FORMCREATE.button_type_t >> ~[<<a_api subproject="client" | module Eliom_mkforms.FORMCREATE >>~]||
+|<<a_api subproject="client" text="button_type_t"| type Eliom_mkforms.ELIOMFORMSIG.button_type_t >> ~[<<a_api subproject="client" | module Eliom_mkforms.ELIOMFORMSIG >>~]||
+|@@ @class="alignleft"@@\\D|
+|<<a_api subproject="client" text="data_key"| type Eliom_types_base.data_key >> ~[<<a_api subproject="client" | module Eliom_types_base >>~]||
+|<<a_api subproject="client" text="div_content_elt"| type Eliom_mkforms.FORMCREATE.div_content_elt >> ~[<<a_api subproject="client" | module Eliom_mkforms.FORMCREATE >>~]||
+|<<a_api subproject="client" text="div_content_elt"| type Eliom_mkforms.ELIOMFORMSIG.div_content_elt >> ~[<<a_api subproject="client" | module Eliom_mkforms.ELIOMFORMSIG >>~]||
+|<<a_api subproject="client" text="div_content_elt_list"| type Eliom_mkforms.FORMCREATE.div_content_elt_list >> ~[<<a_api subproject="client" | module Eliom_mkforms.FORMCREATE >>~]||
+|<<a_api subproject="client" text="div_content_elt_list"| type Eliom_mkforms.ELIOMFORMSIG.div_content_elt_list >> ~[<<a_api subproject="client" | module Eliom_mkforms.ELIOMFORMSIG >>~]||
+|@@ @class="alignleft"@@\\E|
+|<<a_api subproject="client" text="elt"| type Eliom_pervasives.XML.M.elt >> ~[<<a_api subproject="client" | module Eliom_pervasives.XML.M >>~]||
+|<<a_api subproject="client" text="ename"| type Eliom_pervasives.XML.M.ename >> ~[<<a_api subproject="client" | module Eliom_pervasives.XML.M >>~]||
+|<<a_api subproject="client" text="event"| type Eliom_pervasives.XML.M.event >> ~[<<a_api subproject="client" | module Eliom_pervasives.XML.M >>~]||
+|@@ @class="alignleft"@@\\F|
+|<<a_api subproject="client" text="flag"| type Eliom_pervasives.Regexp.flag >> ~[<<a_api subproject="client" | module Eliom_pervasives.Regexp >>~]||
+|<<a_api subproject="client" text="form_attrib_t"| type Eliom_mkforms.FORMCREATE.form_attrib_t >> ~[<<a_api subproject="client" | module Eliom_mkforms.FORMCREATE >>~]||
+|<<a_api subproject="client" text="form_attrib_t"| type Eliom_mkforms.ELIOMFORMSIG.form_attrib_t >> ~[<<a_api subproject="client" | module Eliom_mkforms.ELIOMFORMSIG >>~]||
+|<<a_api subproject="client" text="form_content_elt"| type Eliom_mkforms.FORMCREATE.form_content_elt >> ~[<<a_api subproject="client" | module Eliom_mkforms.FORMCREATE >>~]||
+|<<a_api subproject="client" text="form_content_elt"| type Eliom_mkforms.ELIOMFORMSIG.form_content_elt >> ~[<<a_api subproject="client" | module Eliom_mkforms.ELIOMFORMSIG >>~]||
+|<<a_api subproject="client" text="form_content_elt_list"| type Eliom_mkforms.FORMCREATE.form_content_elt_list >> ~[<<a_api subproject="client" | module Eliom_mkforms.FORMCREATE >>~]||
+|<<a_api subproject="client" text="form_content_elt_list"| type Eliom_mkforms.ELIOMFORMSIG.form_content_elt_list >> ~[<<a_api subproject="client" | module Eliom_mkforms.ELIOMFORMSIG >>~]||
+|<<a_api subproject="client" text="form_elt"| type Eliom_mkforms.FORMCREATE.form_elt >> ~[<<a_api subproject="client" | module Eliom_mkforms.FORMCREATE >>~]||
+|<<a_api subproject="client" text="form_elt"| type Eliom_mkforms.ELIOMFORMSIG.form_elt >> ~[<<a_api subproject="client" | module Eliom_mkforms.ELIOMFORMSIG >>~]||
+|@@ @class="alignleft"@@\\G|
+|<<a_api subproject="client" text="get_service_kind"| type Eliom_services.get_service_kind >> ~[<<a_api subproject="client" | module Eliom_services >>~]||
+|<<a_api subproject="client" text="getpost"| type Eliom_services.getpost >> ~[<<a_api subproject="client" | module Eliom_services >>~]||
+|@@ @class="alignleft"@@\\H|
+|<<a_api subproject="client" text="http"| type Eliom_services.http >> ~[<<a_api subproject="client" | module Eliom_services >>~]|<<div class="info"|default return type for services
+>>
+|
+|@@ @class="alignleft"@@\\I|
+|<<a_api subproject="client" text="input_attrib_t"| type Eliom_mkforms.FORMCREATE.input_attrib_t >> ~[<<a_api subproject="client" | module Eliom_mkforms.FORMCREATE >>~]||
+|<<a_api subproject="client" text="input_attrib_t"| type Eliom_mkforms.ELIOMFORMSIG.input_attrib_t >> ~[<<a_api subproject="client" | module Eliom_mkforms.ELIOMFORMSIG >>~]||
+|<<a_api subproject="client" text="input_elt"| type Eliom_mkforms.FORMCREATE.input_elt >> ~[<<a_api subproject="client" | module Eliom_mkforms.FORMCREATE >>~]||
+|<<a_api subproject="client" text="input_elt"| type Eliom_mkforms.ELIOMFORMSIG.input_elt >> ~[<<a_api subproject="client" | module Eliom_mkforms.ELIOMFORMSIG >>~]||
+|<<a_api subproject="client" text="input_type_t"| type Eliom_mkforms.FORMCREATE.input_type_t >> ~[<<a_api subproject="client" | module Eliom_mkforms.FORMCREATE >>~]||
+|<<a_api subproject="client" text="input_type_t"| type Eliom_mkforms.ELIOMFORMSIG.input_type_t >> ~[<<a_api subproject="client" | module Eliom_mkforms.ELIOMFORMSIG >>~]||
+|<<a_api subproject="client" text="internal"| type Eliom_services.internal >> ~[<<a_api subproject="client" | module Eliom_services >>~]||
+|<<a_api subproject="client" text="internal_service_kind"| type Eliom_services.internal_service_kind >> ~[<<a_api subproject="client" | module Eliom_services >>~]||
+|@@ @class="alignleft"@@\\L|
+|<<a_api subproject="client" text="leftright"| type Eliom_pervasives.leftright >> ~[<<a_api subproject="client" | module Eliom_pervasives >>~]||
+|<<a_api subproject="client" text="link_attrib_t"| type Eliom_mkforms.FORMCREATE.link_attrib_t >> ~[<<a_api subproject="client" | module Eliom_mkforms.FORMCREATE >>~]||
+|<<a_api subproject="client" text="link_attrib_t"| type Eliom_mkforms.ELIOMFORMSIG.link_attrib_t >> ~[<<a_api subproject="client" | module Eliom_mkforms.ELIOMFORMSIG >>~]||
+|<<a_api subproject="client" text="link_elt"| type Eliom_mkforms.FORMCREATE.link_elt >> ~[<<a_api subproject="client" | module Eliom_mkforms.FORMCREATE >>~]||
+|<<a_api subproject="client" text="link_elt"| type Eliom_mkforms.ELIOMFORMSIG.link_elt >> ~[<<a_api subproject="client" | module Eliom_mkforms.ELIOMFORMSIG >>~]||
+|@@ @class="alignleft"@@\\N|
+|<<a_api subproject="client" text="na_s"| type Eliom_services.na_s >> ~[<<a_api subproject="client" | module Eliom_services >>~]||
+|<<a_api subproject="client" text="nonattached"| type Eliom_services.nonattached >> ~[<<a_api subproject="client" | module Eliom_services >>~]||
+|@@ @class="alignleft"@@\\O|
+|<<a_api subproject="client" text="optgroup_attrib_t"| type Eliom_mkforms.FORMCREATE.optgroup_attrib_t >> ~[<<a_api subproject="client" | module Eliom_mkforms.FORMCREATE >>~]||
+|<<a_api subproject="client" text="optgroup_attrib_t"| type Eliom_mkforms.ELIOMFORMSIG.optgroup_attrib_t >> ~[<<a_api subproject="client" | module Eliom_mkforms.ELIOMFORMSIG >>~]||
+|<<a_api subproject="client" text="option_attrib_t"| type Eliom_mkforms.FORMCREATE.option_attrib_t >> ~[<<a_api subproject="client" | module Eliom_mkforms.FORMCREATE >>~]||
+|<<a_api subproject="client" text="option_attrib_t"| type Eliom_mkforms.ELIOMFORMSIG.option_attrib_t >> ~[<<a_api subproject="client" | module Eliom_mkforms.ELIOMFORMSIG >>~]||
+|<<a_api subproject="client" text="option_elt"| type Eliom_mkforms.FORMCREATE.option_elt >> ~[<<a_api subproject="client" | module Eliom_mkforms.FORMCREATE >>~]||
+|<<a_api subproject="client" text="option_elt"| type Eliom_mkforms.ELIOMFORMSIG.option_elt >> ~[<<a_api subproject="client" | module Eliom_mkforms.ELIOMFORMSIG >>~]||
+|<<a_api subproject="client" text="option_elt_list"| type Eliom_mkforms.FORMCREATE.option_elt_list >> ~[<<a_api subproject="client" | module Eliom_mkforms.FORMCREATE >>~]||
+|<<a_api subproject="client" text="option_elt_list"| type Eliom_mkforms.ELIOMFORMSIG.option_elt_list >> ~[<<a_api subproject="client" | module Eliom_mkforms.ELIOMFORMSIG >>~]||
+|@@ @class="alignleft"@@\\P|
+|<<a_api subproject="client" text="path"| type Eliom_pervasives.Url.path >> ~[<<a_api subproject="client" | module Eliom_pervasives.Url >>~]||
+|<<a_api subproject="client" text="pcdata_elt"| type Eliom_mkforms.FORMCREATE.pcdata_elt >> ~[<<a_api subproject="client" | module Eliom_mkforms.FORMCREATE >>~]||
+|<<a_api subproject="client" text="pcdata_elt"| type Eliom_mkforms.ELIOMFORMSIG.pcdata_elt >> ~[<<a_api subproject="client" | module Eliom_mkforms.ELIOMFORMSIG >>~]||
+|<<a_api subproject="client" text="post_service_kind"| type Eliom_services.post_service_kind >> ~[<<a_api subproject="client" | module Eliom_services >>~]||
+|@@ @class="alignleft"@@\\R|
+|<<a_api subproject="client" text="ref_tree"| type Eliom_pervasives.XML.M.ref_tree >> ~[<<a_api subproject="client" | module Eliom_pervasives.XML.M >>~]||
+|<<a_api subproject="client" text="registrable"| type Eliom_services.registrable >> ~[<<a_api subproject="client" | module Eliom_services >>~]|<<div class="info"|~You can call register function only on registrable services
+>>
+|
+|<<a_api subproject="client" text="return"| type Eliom_output.Base.return >> ~[<<a_api subproject="client" | module Eliom_output.Base >>~]||
+|@@ @class="alignleft"@@\\S|
+|<<a_api subproject="client" text="script_attrib_t"| type Eliom_mkforms.FORMCREATE.script_attrib_t >> ~[<<a_api subproject="client" | module Eliom_mkforms.FORMCREATE >>~]||
+|<<a_api subproject="client" text="script_attrib_t"| type Eliom_mkforms.ELIOMFORMSIG.script_attrib_t >> ~[<<a_api subproject="client" | module Eliom_mkforms.ELIOMFORMSIG >>~]||
+|<<a_api subproject="client" text="script_elt"| type Eliom_mkforms.FORMCREATE.script_elt >> ~[<<a_api subproject="client" | module Eliom_mkforms.FORMCREATE >>~]||
+|<<a_api subproject="client" text="script_elt"| type Eliom_mkforms.ELIOMFORMSIG.script_elt >> ~[<<a_api subproject="client" | module Eliom_mkforms.ELIOMFORMSIG >>~]||
+|<<a_api subproject="client" text="select_attrib_t"| type Eliom_mkforms.FORMCREATE.select_attrib_t >> ~[<<a_api subproject="client" | module Eliom_mkforms.FORMCREATE >>~]||
+|<<a_api subproject="client" text="select_attrib_t"| type Eliom_mkforms.ELIOMFORMSIG.select_attrib_t >> ~[<<a_api subproject="client" | module Eliom_mkforms.ELIOMFORMSIG >>~]||
+|<<a_api subproject="client" text="select_content_elt"| type Eliom_mkforms.FORMCREATE.select_content_elt >> ~[<<a_api subproject="client" | module Eliom_mkforms.FORMCREATE >>~]||
+|<<a_api subproject="client" text="select_content_elt"| type Eliom_mkforms.ELIOMFORMSIG.select_content_elt >> ~[<<a_api subproject="client" | module Eliom_mkforms.ELIOMFORMSIG >>~]||
+|<<a_api subproject="client" text="select_content_elt_list"| type Eliom_mkforms.FORMCREATE.select_content_elt_list >> ~[<<a_api subproject="client" | module Eliom_mkforms.FORMCREATE >>~]||
+|<<a_api subproject="client" text="select_content_elt_list"| type Eliom_mkforms.ELIOMFORMSIG.select_content_elt_list >> ~[<<a_api subproject="client" | module Eliom_mkforms.ELIOMFORMSIG >>~]||
+|<<a_api subproject="client" text="select_elt"| type Eliom_mkforms.FORMCREATE.select_elt >> ~[<<a_api subproject="client" | module Eliom_mkforms.FORMCREATE >>~]||
+|<<a_api subproject="client" text="select_elt"| type Eliom_mkforms.ELIOMFORMSIG.select_elt >> ~[<<a_api subproject="client" | module Eliom_mkforms.ELIOMFORMSIG >>~]||
+|<<a_api subproject="client" text="select_opt"| type Eliom_output_base.HTML5FORMSSIG.select_opt >> ~[<<a_api subproject="client" | module Eliom_output_base.HTML5FORMSSIG >>~]||
+|<<a_api subproject="client" text="select_opt"| type Eliom_mkforms.ELIOMFORMSIG.select_opt >> ~[<<a_api subproject="client" | module Eliom_mkforms.ELIOMFORMSIG >>~]||
+|<<a_api subproject="client" text="servcoserv"| type Eliom_services.servcoserv >> ~[<<a_api subproject="client" | module Eliom_services >>~]||
+|<<a_api subproject="client" text="server_params"| type Eliom_types_base.server_params >> ~[<<a_api subproject="client" | module Eliom_types_base >>~]||
+|<<a_api subproject="client" text="service"| type Eliom_services.service >> ~[<<a_api subproject="client" | module Eliom_services >>~]|<<div class="info"|~Type of services~.
+>>
+|
+|<<a_api subproject="client" text="service_kind"| type Eliom_services.service_kind >> ~[<<a_api subproject="client" | module Eliom_services >>~]||
+|<<a_api subproject="client" text="sitedata"| type Eliom_types_base.sitedata >> ~[<<a_api subproject="client" | module Eliom_types_base >>~]||
+|<<a_api subproject="client" text="soption"| type Eliom_output_base.HTML5FORMSSIG.soption >> ~[<<a_api subproject="client" | module Eliom_output_base.HTML5FORMSSIG >>~]||
+|<<a_api subproject="client" text="soption"| type Eliom_mkforms.ELIOMFORMSIG.soption >> ~[<<a_api subproject="client" | module Eliom_mkforms.ELIOMFORMSIG >>~]||
+|<<a_api subproject="client" text="suff"| type Eliom_services.suff >> ~[<<a_api subproject="client" | module Eliom_services >>~]||
+|@@ @class="alignleft"@@\\T|
+|<<a_api subproject="client" text="t"| type Eliom_bus.t >> ~[<<a_api subproject="client" | module Eliom_bus >>~]||
+|<<a_api subproject="client" text="t"| type Eliom_react.Up.t >> ~[<<a_api subproject="client" | module Eliom_react.Up >>~]||
+|<<a_api subproject="client" text="t"| type Eliom_react.Down.t >> ~[<<a_api subproject="client" | module Eliom_react.Down >>~]||
+|<<a_api subproject="client" text="t"| type Eliom_comet.Channels.t >> ~[<<a_api subproject="client" | module Eliom_comet.Channels >>~]||
+|<<a_api subproject="client" text="t"| type Eliom_comet.Configuration.t >> ~[<<a_api subproject="client" | module Eliom_comet.Configuration >>~]||
+|<<a_api subproject="client" text="t"| type Eliom_pervasives.Regexp.t >> ~[<<a_api subproject="client" | module Eliom_pervasives.Regexp >>~]||
+|<<a_api subproject="client" text="t"| type Eliom_pervasives.Url.t >> ~[<<a_api subproject="client" | module Eliom_pervasives.Url >>~]||
+|<<a_api subproject="client" text="textarea_attrib_t"| type Eliom_mkforms.FORMCREATE.textarea_attrib_t >> ~[<<a_api subproject="client" | module Eliom_mkforms.FORMCREATE >>~]||
+|<<a_api subproject="client" text="textarea_attrib_t"| type Eliom_mkforms.ELIOMFORMSIG.textarea_attrib_t >> ~[<<a_api subproject="client" | module Eliom_mkforms.ELIOMFORMSIG >>~]||
+|<<a_api subproject="client" text="textarea_elt"| type Eliom_mkforms.FORMCREATE.textarea_elt >> ~[<<a_api subproject="client" | module Eliom_mkforms.FORMCREATE >>~]||
+|<<a_api subproject="client" text="textarea_elt"| type Eliom_mkforms.ELIOMFORMSIG.textarea_elt >> ~[<<a_api subproject="client" | module Eliom_mkforms.ELIOMFORMSIG >>~]||
+|@@ @class="alignleft"@@\\U|
+|<<a_api subproject="client" text="unwrap_id"| type Eliom_unwrap.unwrap_id >> ~[<<a_api subproject="client" | module Eliom_unwrap >>~]||
+|<<a_api subproject="client" text="uri"| type Eliom_mkforms.FORMCREATE.uri >> ~[<<a_api subproject="client" | module Eliom_mkforms.FORMCREATE >>~]||
+|<<a_api subproject="client" text="uri"| type Eliom_mkforms.ELIOMFORMSIG.uri >> ~[<<a_api subproject="client" | module Eliom_mkforms.ELIOMFORMSIG >>~]||
+\\

@@ -1,0 +1,46 @@
+==
+
+=@@id="1_EliomwidgetsclientAPI"@@~Eliom~-widgets client ~A~P~I=
+
+
+
+
+|Ew_accents||
+|<<a_api subproject="client" | module Ew_dropdown >>||
+|<<a_api subproject="client" | module Ew_editable >>||
+|<<a_api subproject="client" | module Ew_slider >>|<<div class="odocwiki_info"|initial~_value is at ~0~.~5 by default
+   ~It have to by between ~0~.
+>>
+|
+|<<a_api subproject="client" | module Ew_button >>||
+|<<a_api subproject="client" | module Ew_dyn_upload >>|<<div class="odocwiki_info"|~Type of a dynamic service~.
+>>
+|
+|<<a_api subproject="client" | module Ew_editable >>||
+|<<a_api subproject="client" | module Ew_completion >>||
+|<<a_api subproject="client" | module Ew_dyn_upload >>|<<div class="odocwiki_info"|~Type of a dynamic service~.
+>>
+|
+|<<a_api subproject="client" | module Ew_table_color_picker >>|<<div class="odocwiki_info"|~The agrument is the divisor of ~2~5~5
+~*~* ~It have to be greater than ~1 ~*
+>>
+|
+|<<a_api subproject="client" | module Ew_slider >>|<<div class="odocwiki_info"|initial~_value is at ~0~.~5 by default
+   ~It have to by between ~0~.
+>>
+|
+
+
+
+
+
+==@@id="2_Index"@@~Index==
+
+
+
+* <<a_api subproject="client" text="Index of types" | index types >>
+* <<a_api subproject="client" text="Index of exceptions" | index exceptions >>
+* <<a_api subproject="client" text="Index of values" | index values >>
+* <<a_api subproject="client" text="Index of modules" | index modules >>
+* <<a_api subproject="client" text="Index of module types" | index module types >>
+

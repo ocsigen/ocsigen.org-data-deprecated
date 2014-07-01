@@ -1,0 +1,12 @@
+=Functor <<a_api_type subproject="server" | module Eliom_output.SubXhtml >> =
+<<div class="code"|<<span class="keyword"|module>> SubXhtml: <<div class="sig_block"|<<span class='code'|functor ~(>><<span class='code'|~X~M~L>><<span class='code'| ~: >><<span class="code type"|XML_sigs.Iterable>><<span class='code'|~) ~-~> >><<div class="sig_block"|<<span class='code'|functor ~(>><<span class='code'|~Typed~X~M~L>><<span class='code'| ~: >><<span class="code type"|XML_sigs.TypedXML(XML).T>><<span class='code'|~) ~-~> >><<div class="sig_block"|<<span class='code'|functor ~(>><<span class='code'|~E>><<span class='code'| ~: >><<span class='code'|sig>><<div class="sig_block"|<<div class="code" id="TYPEcontent"|<<span class="keyword"|type>> content>>
+
+>><<span class='code'|end>><<span class='code'|~) ~-~> >><<span class='code'|sig>><<a_api subproject="server" text=".." | module Eliom_output.SubXhtml >><<span class='code'|end>>>>>>>>>><<div class="module_param_list" | <<span class="param_title" |Parameters :>><<div|
+|@@class="paramstable"@ @class="centertop fifteen code"@@{{{XML}}}|@@class="centertop"@@:|<<span class="code type"|XML_sigs.Iterable>>|
+|@@class="centertop fifteen code"@@{{{TypedXML}}}|@@class="centertop"@@:|<<span class="code type"|XML_sigs.TypedXML(XML).T>>|
+|@@class="centertop fifteen code"@@{{{E}}}|@@class="centertop"@@:|<<span class="code type"|sig type content end>>|
+>>>>
+
+----
+<<div class="code"|<<span class="keyword"|include>> <<a_api subproject="server" | module type Eliom_mkreg.ELIOMREGSIG >>>>
+<<div class="code"|<<span class="keyword"|include>> <<a_api subproject="server" | module type Eliom_output.XHTMLFORMSSIG >>>>

@@ -1,0 +1,6 @@
+<<code language="ocaml" | sig
+  type 'a elt = Dom_html.element Js.t
+  type element = Dom_html.element
+  val to_dom_elt : element elt -> Dom_html.element Js.t
+  val of_dom_elt : Dom_html.element Js.t -> element elt
+end >>

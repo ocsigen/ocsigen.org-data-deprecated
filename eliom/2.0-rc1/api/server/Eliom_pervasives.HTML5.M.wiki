@@ -1,0 +1,6 @@
+=Module <<a_api_type subproject="server" | module Eliom_pervasives.HTML5.M >> =
+<<div class="code"|<<span class="keyword"|module>> M: <<span class='code'|sig>><<a_api subproject="server" text=".." | module Eliom_pervasives.HTML5.M >><<span class='code'|end>>>>~Type safe ~H~T~M~L~5 creation~.\\
+
+----
+<<div class="code"|<<span class="keyword"|include>> HTML5_sigs.T>>
+<<div id="VALunique" class="code"|<<span class="keyword"|val>> unique : <<span class="code type"|?copy:'a elt -> 'a elt -> 'a elt>>>>

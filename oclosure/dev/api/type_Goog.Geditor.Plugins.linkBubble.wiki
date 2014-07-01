@@ -1,0 +1,48 @@
+<<code language="ocaml" | object
+  method activeOnUneditableFields : bool Js.t Js.meth
+  method addEventListener :
+    Js.js_string Js.t ->
+    (unit -> bool Js.t) Js.callback -> bool Js.t Js.opt -> unit Js.meth
+  method closeBubble : unit Js.meth
+  method createBubble : #Dom_html.element Js.t -> unit Js.meth
+  method createBubbleContents : #Dom_html.element Js.t -> unit Js.meth
+  method disable : field Js.t -> unit Js.meth
+  method dispatchEvent :
+    (Js.js_string Js.t, Events.event Js.t) Tools.Union.t -> bool Js.t Js.meth
+  method dispose : unit Js.meth
+  method disposeInternal : unit Js.meth
+  method enable : field Js.t -> unit Js.meth
+  method getBubbleDom : Gdom.domHelper Js.t Js.meth
+  method getBubbleTargetFromSelection :
+    #Dom_html.element Js.t -> Dom_html.element Js.t Js.opt Js.meth
+  method getBubbleTitle : Js.js_string Js.t Js.meth
+  method getBubbleType : Js.js_string Js.t Js.meth
+  method getDisposed : bool Js.t Js.meth
+  method getFieldDomHelper : Gdom.domHelper Js.t Js.opt Js.meth
+  method getParentEventTarget : Events.eventTarget Js.t Js.meth
+  method getTargetElement : Dom_html.element Js.t Js.meth
+  method getTrogClassId : Js.js_string Js.t Js.meth
+  method handleKeyUp : Events.browserEvent Js.t -> bool Js.t Js.meth
+  method handleSelectionChange :
+    Events.event Js.t Js.opt -> bool Js.t Js.meth
+  method isAutoDispose : bool Js.t Js.meth
+  method isDisposed : bool Js.t Js.meth
+  method isEnabled : field Js.t -> bool Js.t Js.meth
+  method isInvalidUrl : bool Js.t Js.meth
+  method isSilentCommand : Js.js_string Js.t -> bool Js.t Js.meth
+  method isSupportedCommand : Js.js_string Js.t -> bool Js.t Js.meth
+  method isVisible : bool Js.t Js.meth
+  method registerFieldObject : field Js.t -> unit Js.meth
+  method removeEventListener :
+    Js.js_string Js.t ->
+    (unit -> bool Js.t) Js.callback -> bool Js.t Js.opt -> unit Js.meth
+  method reposition : unit Js.meth
+  method setAutoDispose : bool Js.t -> unit Js.meth
+  method setBubbleParent : #Dom_html.element Js.t -> unit Js.meth
+  method setParentEventTarget :
+    Events.eventTarget Js.t Js.opt -> unit Js.meth
+  method setTestLinkUrlFn :
+    (Js.js_string Js.t -> Js.js_string Js.t) Js.callback -> unit Js.meth
+  method stopReferrerLeaks : unit Js.meth
+  method unregisterFieldObject : field Js.t -> unit Js.meth
+end >>

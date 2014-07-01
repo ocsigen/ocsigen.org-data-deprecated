@@ -1,0 +1,9 @@
+<<code language="ocaml" | functor (XML : T) ->
+  functor (O : Output) ->
+    sig
+      module type T =
+        sig
+          val print_list :
+            ?encode:(string -> string) -> XML.elt list -> O.out
+        end
+    end >>

@@ -1,0 +1,142 @@
+=Module <<a_api_type | module Atom_feed >> =
+<<div class="code"|<<span class="keyword"|module>> Atom_feed: <<span class='code'|sig>><<a_api text=".." | module Atom_feed >><<span class='code'|end>>>>~Everything we need to make an atom feed~.\\
+
+----
+<<div class="code" id="TYPEuri"|<<span class="keyword"|type>> uri = <<span class="code type"|<<a_api text="Uri.uri" | type Uri.uri >>>> >>
+
+<<div class="code" id="TYPElang"|<<span class="keyword"|type>> lang = <<span class="code type"|string>> >>
+
+<<div class="code" id="TYPEbase"|<<span class="keyword"|type>> base = <<span class="code type"|<<a_api text="uri" | type Atom_feed.uri >>>> >>
+
+<<div class="code" id="TYPEncname"|<<span class="keyword"|type>> ncname = <<span class="code type"|string>> >>
+
+<<div class="code" id="TYPEdateConstruct"|<<span class="keyword"|type>> date~Construct = <<span class="code type"|string>> >>
+
+<<div class="code" id="TYPEemailAddress"|<<span class="keyword"|type>> email~Address = <<span class="code type"|string>> >>
+
+<<div class="code" id="TYPEmediaType"|<<span class="keyword"|type>> media~Type = <<span class="code type"|string>> >>
+
+<<div class="code" id="TYPElength"|<<span class="keyword"|type>> length = <<span class="code type"|int>> >>
+
+<<div class="code" id="TYPEhref"|<<span class="keyword"|type>> href = <<span class="code type"|string>> >>
+
+<<div class="code" id="TYPEhrefLang"|<<span class="keyword"|type>> href~Lang = <<span class="code type"|string>> >>
+
+<<div class="code" id="TYPErel"|<<span class="keyword"|type>> rel = <<span class="code type"|string>> >>
+
+<<div class="code" id="TYPEltitle"|<<span class="keyword"|type>> ltitle = <<span class="code type"|string>> >>
+
+<<div class="code" id="TYPEscheme"|<<span class="keyword"|type>> scheme = <<span class="code type"|string>> >>
+
+<<div class="code" id="TYPElabel"|<<span class="keyword"|type>> label = <<span class="code type"|string>> >>
+
+<<div class="code" id="TYPEterm"|<<span class="keyword"|type>> term = <<span class="code type"|string>> >>
+
+<<div class="code" id="TYPEmetaAttr"|<<span class="keyword"|type>> meta~Attr = <<span class="code type"|[ `Base of <<a_api text="base" | type Atom_feed.base >> | `Lang of <<a_api text="lang" | type Atom_feed.lang >> ]>> >>
+<<div class="info"|~Common optional attributes\\
+>>
+
+<<div class="code" id="TYPEpersonConstruct"|<<span class="keyword"|type>> person~Construct = <<span class="code type"|[ `Email of <<a_api text="emailAddress" | type Atom_feed.emailAddress >> | `Uri of <<a_api text="uri" | type Atom_feed.uri >> ]>> >>
+<<div class="info"|~Children tags allowed for the author and contributor tags\\
+>>
+
+<<div class="code" id="TYPEauthor"|<<span class="keyword"|type>> author>>
+
+<<div class="code" id="TYPEcontributor"|<<span class="keyword"|type>> contributor>>
+
+<<div class="code" id="TYPEgenerator"|<<span class="keyword"|type>> generator>>
+
+<<div class="code" id="TYPEid"|<<span class="keyword"|type>> id>>
+
+<<div class="code" id="TYPEicon"|<<span class="keyword"|type>> icon>>
+
+<<div class="code" id="TYPEcategory"|<<span class="keyword"|type>> category>>
+
+<<div class="code" id="TYPElink"|<<span class="keyword"|type>> link>>
+
+<<div class="code" id="TYPElogo"|<<span class="keyword"|type>> logo>>
+
+<<div class="code" id="TYPEpublished"|<<span class="keyword"|type>> published>>
+
+<<div class="code" id="TYPEupdated"|<<span class="keyword"|type>> updated>>
+
+<<div class="code" id="TYPEsource"|<<span class="keyword"|type>> source>>
+
+<<div class="code" id="TYPEentry"|<<span class="keyword"|type>> entry>>
+
+<<div class="code" id="TYPEfeed"|<<span class="keyword"|type>> feed>>
+
+<<div class="code" id="TYPEcontent"|<<span class="keyword"|type>> content>>
+
+<<div class="code" id="TYPEtextConstruct"|<<span class="keyword"|type>> text~Construct>>
+
+<<div class="code" id="TYPElinkOAttr"|<<span class="keyword"|type>> link~O~Attr = <<span class="code type"|\\{{{   }}}[ `Base of <<a_api text="base" | type Atom_feed.base >>\\{{{   }}}  | `Hrefl of <<a_api text="hrefLang" | type Atom_feed.hrefLang >>\\{{{   }}}  | `Lang of <<a_api text="lang" | type Atom_feed.lang >>\\{{{   }}}  | `Length of <<a_api text="length" | type Atom_feed.length >>\\{{{   }}}  | `Medtype of <<a_api text="mediaType" | type Atom_feed.mediaType >>\\{{{   }}}  | `Rel of <<a_api text="rel" | type Atom_feed.rel >>\\{{{   }}}  | `Title of <<a_api text="ltitle" | type Atom_feed.ltitle >>\\{{{   }}}  | `Type of string ]>> >>
+<<div class="info"|~Children tags allowed for the link tag\\
+>>
+
+<<div class="code" id="TYPEsourceOAttr"|<<span class="keyword"|type>> source~O~Attr = <<span class="code type"|\\{{{   }}}[ `Authors of <<a_api text="author" | type Atom_feed.author >> list\\{{{   }}}  | `Base of <<a_api text="base" | type Atom_feed.base >>\\{{{   }}}  | `Cats of <<a_api text="category" | type Atom_feed.category >> list\\{{{   }}}  | `Contribs of <<a_api text="contributor" | type Atom_feed.contributor >> list\\{{{   }}}  | `Gen of <<a_api text="generator" | type Atom_feed.generator >>\\{{{   }}}  | `Icon of <<a_api text="icon" | type Atom_feed.icon >>\\{{{   }}}  | `Lang of <<a_api text="lang" | type Atom_feed.lang >>\\{{{   }}}  | `Links of <<a_api text="link" | type Atom_feed.link >> list\\{{{   }}}  | `Logo of <<a_api text="logo" | type Atom_feed.logo >>\\{{{   }}}  | `Rights of <<a_api text="textConstruct" | type Atom_feed.textConstruct >>\\{{{   }}}  | `Sub of <<a_api text="textConstruct" | type Atom_feed.textConstruct >> ]>> >>
+<<div class="info"|~Children tags allowed for the source tag\\
+>>
+
+<<div class="code" id="TYPEentryOAttr"|<<span class="keyword"|type>> entry~O~Attr = <<span class="code type"|\\{{{   }}}[ `Authors of <<a_api text="author" | type Atom_feed.author >> list\\{{{   }}}  | `Base of <<a_api text="base" | type Atom_feed.base >>\\{{{   }}}  | `Cats of <<a_api text="category" | type Atom_feed.category >> list\\{{{   }}}  | `Content of <<a_api text="content" | type Atom_feed.content >>\\{{{   }}}  | `Contribs of <<a_api text="contributor" | type Atom_feed.contributor >> list\\{{{   }}}  | `Lang of <<a_api text="lang" | type Atom_feed.lang >>\\{{{   }}}  | `Links of <<a_api text="link" | type Atom_feed.link >> list\\{{{   }}}  | `Pub of <<a_api text="published" | type Atom_feed.published >>\\{{{   }}}  | `Rights of <<a_api text="textConstruct" | type Atom_feed.textConstruct >>\\{{{   }}}  | `Source of <<a_api text="source" | type Atom_feed.source >>\\{{{   }}}  | `Sum of <<a_api text="textConstruct" | type Atom_feed.textConstruct >> ]>> >>
+<<div class="info"|~Children tags allowed for the entry tag\\
+>>
+
+<<div class="code" id="TYPEfeedOAttr"|<<span class="keyword"|type>> feed~O~Attr = <<span class="code type"|\\{{{   }}}[ `Authors of <<a_api text="author" | type Atom_feed.author >> list\\{{{   }}}  | `Base of <<a_api text="base" | type Atom_feed.base >>\\{{{   }}}  | `Cats of <<a_api text="category" | type Atom_feed.category >> list\\{{{   }}}  | `Contribs of <<a_api text="contributor" | type Atom_feed.contributor >> list\\{{{   }}}  | `Gen of <<a_api text="generator" | type Atom_feed.generator >>\\{{{   }}}  | `Icon of <<a_api text="icon" | type Atom_feed.icon >>\\{{{   }}}  | `Lang of <<a_api text="lang" | type Atom_feed.lang >>\\{{{   }}}  | `Links of <<a_api text="link" | type Atom_feed.link >> list\\{{{   }}}  | `Logo of <<a_api text="logo" | type Atom_feed.logo >>\\{{{   }}}  | `Rights of <<a_api text="textConstruct" | type Atom_feed.textConstruct >>\\{{{   }}}  | `Sub of <<a_api text="textConstruct" | type Atom_feed.textConstruct >> ]>> >>
+<<div class="info"|~Children tags allowed for the feed tag\\
+>>
+
+<<div id="VALxml_of_feed" class="code"|<<span class="keyword"|val>> xml~_of~_feed : <<span class="code type"|<<a_api text="feed" | type Atom_feed.feed >> -> <<a_api text="XML.elt" | type XML.elt >>>>>><<div id="VALinlineC" class="code"|<<span class="keyword"|val>> inline~C : <<span class="code type"|\\{{{   }}}?meta:[> <<a_api text="metaAttr" | type Atom_feed.metaAttr >> ] list ->\\{{{   }}}  ?html:bool -> string list -> [> `Content of <<a_api text="content" | type Atom_feed.content >> ]>>>><<div class="info"|~An inline text or html content\\
+>>
+<<div id="VALxhtmlC" class="code"|<<span class="keyword"|val>> xhtml~C : <<span class="code type"|\\{{{   }}}?meta:[> <<a_api text="metaAttr" | type Atom_feed.metaAttr >> ] list ->\\{{{   }}}  [ `A\\{{{   }}}  | `Abbr\\{{{   }}}  | `Acronym\\{{{   }}}  | `Address\\{{{   }}}  | `B\\{{{   }}}  | `Bdo\\{{{   }}}  | `Big\\{{{   }}}  | `Blockquote\\{{{   }}}  | `Br\\{{{   }}}  | `Button\\{{{   }}}  | `Cite\\{{{   }}}  | `Code\\{{{   }}}  | `Del\\{{{   }}}  | `Dfn\\{{{   }}}  | `Div\\{{{   }}}  | `Dl\\{{{   }}}  | `Em\\{{{   }}}  | `Fieldset\\{{{   }}}  | `Form\\{{{   }}}  | `H1\\{{{   }}}  | `H2\\{{{   }}}  | `H3\\{{{   }}}  | `H4\\{{{   }}}  | `H5\\{{{   }}}  | `H6\\{{{   }}}  | `Hr\\{{{   }}}  | `I\\{{{   }}}  | `Img\\{{{   }}}  | `Input\\{{{   }}}  | `Ins\\{{{   }}}  | `Kbd\\{{{   }}}  | `Label\\{{{   }}}  | `Map\\{{{   }}}  | `Noscript\\{{{   }}}  | `Object\\{{{   }}}  | `Ol\\{{{   }}}  | `P\\{{{   }}}  | `PCDATA\\{{{   }}}  | `Pre\\{{{   }}}  | `Q\\{{{   }}}  | `Ruby_complex\\{{{   }}}  | `Ruby_simple1\\{{{   }}}  | `Ruby_simple2\\{{{   }}}  | `Samp\\{{{   }}}  | `Script\\{{{   }}}  | `Select\\{{{   }}}  | `Small\\{{{   }}}  | `Span\\{{{   }}}  | `Strong\\{{{   }}}  | `Sub\\{{{   }}}  | `Sup\\{{{   }}}  | `Table\\{{{   }}}  | `Textarea\\{{{   }}}  | `Tt\\{{{   }}}  | `Ul\\{{{   }}}  | `Var ] XHTML.M.elt list -> [> `Content of <<a_api text="content" | type Atom_feed.content >> ]>>>><<div class="info"|~An xhtml content~, embedded in a div\\
+>>
+<<div id="VALinlineOtherC" class="code"|<<span class="keyword"|val>> inline~Other~C : <<span class="code type"|\\{{{   }}}?meta:[> <<a_api text="metaAttr" | type Atom_feed.metaAttr >> ] list ->\\{{{   }}}  string * <<a_api text="XML.elt" | type XML.elt >> list -> [> `Content of <<a_api text="content" | type Atom_feed.content >> ]>>>><<div class="info"|~Inline content from another kind\\
+>>
+<<div id="VALoutOfLineC" class="code"|<<span class="keyword"|val>> out~Of~Line~C : <<span class="code type"|\\{{{   }}}?meta:[> <<a_api text="metaAttr" | type Atom_feed.metaAttr >> ] list ->\\{{{   }}}  string * <<a_api text="uri" | type Atom_feed.uri >> -> [> `Content of <<a_api text="content" | type Atom_feed.content >> ]>>>><<div class="info"|~Every other content\\
+>>
+<<div id="VALplain" class="code"|<<span class="keyword"|val>> plain : <<span class="code type"|\\{{{   }}}?meta:[> <<a_api text="metaAttr" | type Atom_feed.metaAttr >> ] list ->\\{{{   }}}  ?html:bool -> string -> <<a_api text="textConstruct" | type Atom_feed.textConstruct >>>>>><<div class="info"|~Plain text construct\\
+>>
+<<div id="VALxhtml" class="code"|<<span class="keyword"|val>> xhtml : <<span class="code type"|\\{{{   }}}?meta:[> <<a_api text="metaAttr" | type Atom_feed.metaAttr >> ] list ->\\{{{   }}}  [ `A\\{{{   }}}  | `Abbr\\{{{   }}}  | `Acronym\\{{{   }}}  | `Address\\{{{   }}}  | `B\\{{{   }}}  | `Bdo\\{{{   }}}  | `Big\\{{{   }}}  | `Blockquote\\{{{   }}}  | `Br\\{{{   }}}  | `Button\\{{{   }}}  | `Cite\\{{{   }}}  | `Code\\{{{   }}}  | `Del\\{{{   }}}  | `Dfn\\{{{   }}}  | `Div\\{{{   }}}  | `Dl\\{{{   }}}  | `Em\\{{{   }}}  | `Fieldset\\{{{   }}}  | `Form\\{{{   }}}  | `H1\\{{{   }}}  | `H2\\{{{   }}}  | `H3\\{{{   }}}  | `H4\\{{{   }}}  | `H5\\{{{   }}}  | `H6\\{{{   }}}  | `Hr\\{{{   }}}  | `I\\{{{   }}}  | `Img\\{{{   }}}  | `Input\\{{{   }}}  | `Ins\\{{{   }}}  | `Kbd\\{{{   }}}  | `Label\\{{{   }}}  | `Map\\{{{   }}}  | `Noscript\\{{{   }}}  | `Object\\{{{   }}}  | `Ol\\{{{   }}}  | `P\\{{{   }}}  | `PCDATA\\{{{   }}}  | `Pre\\{{{   }}}  | `Q\\{{{   }}}  | `Ruby_complex\\{{{   }}}  | `Ruby_simple1\\{{{   }}}  | `Ruby_simple2\\{{{   }}}  | `Samp\\{{{   }}}  | `Script\\{{{   }}}  | `Select\\{{{   }}}  | `Small\\{{{   }}}  | `Span\\{{{   }}}  | `Strong\\{{{   }}}  | `Sub\\{{{   }}}  | `Sup\\{{{   }}}  | `Table\\{{{   }}}  | `Textarea\\{{{   }}}  | `Tt\\{{{   }}}  | `Ul\\{{{   }}}  | `Var ] XHTML.M.elt list -> <<a_api text="textConstruct" | type Atom_feed.textConstruct >>>>>><<div class="info"|~X~H~T~M~L text construct\\
+>>
+<<div id="VALrights" class="code"|<<span class="keyword"|val>> rights : <<span class="code type"|<<a_api text="textConstruct" | type Atom_feed.textConstruct >> -> [> `Rights of <<a_api text="textConstruct" | type Atom_feed.textConstruct >> ]>>>><<div class="info"|~Rights tag\\
+>>
+<<div id="VALsubtitle" class="code"|<<span class="keyword"|val>> subtitle : <<span class="code type"|<<a_api text="textConstruct" | type Atom_feed.textConstruct >> -> [> `Sub of <<a_api text="textConstruct" | type Atom_feed.textConstruct >> ]>>>><<div class="info"|~Subtitle tag\\
+>>
+<<div id="VALsummary" class="code"|<<span class="keyword"|val>> summary : <<span class="code type"|<<a_api text="textConstruct" | type Atom_feed.textConstruct >> -> [> `Sum of <<a_api text="textConstruct" | type Atom_feed.textConstruct >> ]>>>><<div class="info"|~Summary tag\\
+>>
+<<div id="VALfeed" class="code"|<<span class="keyword"|val>> feed : <<span class="code type"|\\{{{   }}}updated:CalendarLib.Calendar.t ->\\{{{   }}}  id:<<a_api text="uri" | type Atom_feed.uri >> ->\\{{{   }}}  title:<<a_api text="textConstruct" | type Atom_feed.textConstruct >> ->\\{{{   }}}  ?fields:[> <<a_api text="feedOAttr" | type Atom_feed.feedOAttr >> ] list ->\\{{{   }}}  <<a_api text="entry" | type Atom_feed.entry >> list -> <<a_api text="feed" | type Atom_feed.feed >>>>>><<div class="info"|~Feed tag\\
+>>
+<<div id="VALentry" class="code"|<<span class="keyword"|val>> entry : <<span class="code type"|\\{{{   }}}updated:CalendarLib.Calendar.t ->\\{{{   }}}  id:<<a_api text="uri" | type Atom_feed.uri >> ->\\{{{   }}}  title:<<a_api text="textConstruct" | type Atom_feed.textConstruct >> ->\\{{{   }}}  [> <<a_api text="entryOAttr" | type Atom_feed.entryOAttr >> ] list -> <<a_api text="entry" | type Atom_feed.entry >>>>>><<div class="info"|~Entry tag\\
+>>
+<<div id="VALsource" class="code"|<<span class="keyword"|val>> source : <<span class="code type"|\\{{{   }}}updated:CalendarLib.Calendar.t ->\\{{{   }}}  id:<<a_api text="uri" | type Atom_feed.uri >> ->\\{{{   }}}  title:<<a_api text="textConstruct" | type Atom_feed.textConstruct >> ->\\{{{   }}}  [> <<a_api text="sourceOAttr" | type Atom_feed.sourceOAttr >> ] list -> [> `Source of <<a_api text="source" | type Atom_feed.source >> ]>>>><<div class="info"|~Source tag\\
+>>
+<<div id="VALlink" class="code"|<<span class="keyword"|val>> link : <<span class="code type"|?elt:[> <<a_api text="linkOAttr" | type Atom_feed.linkOAttr >> ] list -> <<a_api text="href" | type Atom_feed.href >> -> <<a_api text="link" | type Atom_feed.link >>>>>><<div class="info"|~Link tag\\
+>>
+<<div id="VALlinks" class="code"|<<span class="keyword"|val>> links : <<span class="code type"|<<a_api text="link" | type Atom_feed.link >> list -> [> `Links of <<a_api text="link" | type Atom_feed.link >> list ]>>>><<div class="info"|~We need a list of links~, this is only a converter from link list to `~Links\\
+>>
+<<div id="VALemail" class="code"|<<span class="keyword"|val>> email : <<span class="code type"|string -> [> `Email of string ]>>>><<div class="info"|email tag\\
+>>
+<<div id="VALuri" class="code"|<<span class="keyword"|val>> uri : <<span class="code type"|<<a_api text="uri" | type Atom_feed.uri >> -> [> `Uri of <<a_api text="uri" | type Atom_feed.uri >> ]>>>><<div class="info"|uri tag~, basically~, simply a converter\\
+>>
+<<div id="VALauthor" class="code"|<<span class="keyword"|val>> author : <<span class="code type"|?elt:[> <<a_api text="personConstruct" | type Atom_feed.personConstruct >> ] list -> string -> <<a_api text="author" | type Atom_feed.author >>>>>><<div class="info"|author tag\\
+>>
+<<div id="VALauthors" class="code"|<<span class="keyword"|val>> authors : <<span class="code type"|<<a_api text="author" | type Atom_feed.author >> list -> [> `Authors of <<a_api text="author" | type Atom_feed.author >> list ]>>>><<div class="info"|~We need a list of authors~, this is only a converter from author list to 
+ `~Authors\\
+>>
+<<div id="VALcontributor" class="code"|<<span class="keyword"|val>> contributor : <<span class="code type"|?elt:[> <<a_api text="personConstruct" | type Atom_feed.personConstruct >> ] list -> string -> <<a_api text="contributor" | type Atom_feed.contributor >>>>>><<div class="info"|contributor tag\\
+>>
+<<div id="VALcontributors" class="code"|<<span class="keyword"|val>> contributors : <<span class="code type"|<<a_api text="contributor" | type Atom_feed.contributor >> list -> [> `Contribs of <<a_api text="contributor" | type Atom_feed.contributor >> list ]>>>><<div class="info"|~We need a list of contributors~, this is only a converter from contributor
+ list to `~Contributors\\
+>>
+<<div id="VALicon" class="code"|<<span class="keyword"|val>> icon : <<span class="code type"|<<a_api text="uri" | type Atom_feed.uri >> -> [> `Icon of <<a_api text="icon" | type Atom_feed.icon >> ]>>>><<div class="info"|icon tag~, basically~, simply a converter\\
+>>
+<<div id="VALlogo" class="code"|<<span class="keyword"|val>> logo : <<span class="code type"|<<a_api text="uri" | type Atom_feed.uri >> -> [> `Logo of <<a_api text="logo" | type Atom_feed.logo >> ]>>>><<div class="info"|logo tag~, basically~, simply a converter\\
+>>
+<<div id="VALcategory" class="code"|<<span class="keyword"|val>> category : <<span class="code type"|\\{{{   }}}?meta:[> <<a_api text="metaAttr" | type Atom_feed.metaAttr >> ] list ->\\{{{   }}}  ?scheme:<<a_api text="scheme" | type Atom_feed.scheme >> ->\\{{{   }}}  ?label:<<a_api text="label" | type Atom_feed.label >> ->\\{{{   }}}  <<a_api text="term" | type Atom_feed.term >> -> <<a_api text="XML.elt" | type XML.elt >> list -> <<a_api text="category" | type Atom_feed.category >>>>>><<div class="info"|category tag\\
+>>
+<<div id="VALcategories" class="code"|<<span class="keyword"|val>> categories : <<span class="code type"|<<a_api text="category" | type Atom_feed.category >> list -> [> `Cats of <<a_api text="category" | type Atom_feed.category >> list ]>>>><<div class="info"|~We need a list of categories~, this is only a converter from category list
+ to `~Categories\\
+>>
+<<div id="VALpublished" class="code"|<<span class="keyword"|val>> published : <<span class="code type"|CalendarLib.Calendar.t -> [> `Pub of <<a_api text="published" | type Atom_feed.published >> ]>>>><<div id="VALinsert_hub_links" class="code"|<<span class="keyword"|val>> insert~_hub~_links : <<span class="code type"|<<a_api text="Uri.uri" | type Uri.uri >> list -> <<a_api text="feed" | type Atom_feed.feed >> -> <<a_api text="feed" | type Atom_feed.feed >>>>>><<div class="info"|~Technically not used elsewhere than in eliom~_feed~.ml~, since the links tags 
+ related to each hub are added when registering the feed~.\\
+>>

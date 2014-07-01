@@ -1,0 +1,3 @@
+=Class type <<a_api_type | class type Goog.Geditor.Plugins.LinkBubble.action >> =
+<<pre class="ocsforge_color odocwiki_code"|<<span id="TYPEaction"|<<span class="ocsforge_color_keyword"|class type>> <<span class="ocsforge_color_name"|action>>>> <<span class="ocsforge_color_delimiter"|~=>> <<span class="ocsforge_color_keyword"|object>><<a_api text=".." | class type Goog.Geditor.Plugins.LinkBubble.action >><<span class="ocsforge_color_keyword"|end>>>>
+----

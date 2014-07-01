@@ -1,0 +1,5 @@
+=Module <<a_api_type subproject="client" | module Eliom_pervasives.SVG >> =
+<<div class="code"|<<span class="keyword"|module>> SVG: <<span class='code'|sig>><<a_api subproject="client" text=".." | module Eliom_pervasives.SVG >><<span class='code'|end>>>>
+----
+<<div class="code"|<<span class="keyword"|module>> <<a_api subproject="client" text="M" | module Eliom_pervasives.SVG.M >>: <<span class='code'|sig>><<a_api subproject="client" text=".." | module Eliom_pervasives.SVG.M >><<span class='code'|end>>>><<div class="info"|type safe ~S~V~G creation~.
+>>

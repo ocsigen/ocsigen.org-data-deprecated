@@ -1,0 +1,8 @@
+=Functor <<a_api_type | module XML_print.MakeTyped >> =
+<<div class="code"|<<span class="keyword"|module>> MakeTyped: <<div class="sig_block"|<<span class='code'|functor ~(>><<span class='code'|~X~M~L>><<span class='code'| ~: >><<span class="code type"|<<a_api text="XML_sigs.Iterable" | module XML_sigs.Iterable >>>><<span class='code'|~) ~-~> >><<div class="sig_block"|<<span class='code'|functor ~(>><<span class='code'|~Typed~X~M~L>><<span class='code'| ~: >><<span class="code type"|<<a_api text="XML_sigs.TypedXML" | module XML_sigs.TypedXML >>(XML).T>><<span class='code'|~) ~-~> >><<div class="sig_block"|<<span class='code'|functor ~(>><<span class='code'|~O>><<span class='code'| ~: >><<span class="code type"|<<a_api text="XML_sigs.Output" | module XML_sigs.Output >>>><<span class='code'|~) ~-~> >><<span class="code type"|<<a_api text="XML_sigs.TypedPrinter" | module XML_sigs.TypedPrinter >>(XML)(TypedXML)(O).T>><<span class="code type"|{{{  }}}>>>>>>>>>><<div class="module_param_list" | <<span class="param_title" |Parameters :>><<div|
+|@@class="paramstable"@ @class="centertop fifteen code"@@{{{XML}}}|@@class="centertop"@@:|<<span class="code type"|<<a_api text="XML_sigs.Iterable" | module XML_sigs.Iterable >>>>|
+|@@class="centertop fifteen code"@@{{{TypedXML}}}|@@class="centertop"@@:|<<span class="code type"|<<a_api text="XML_sigs.TypedXML" | module XML_sigs.TypedXML >>(XML).T>>|
+|@@class="centertop fifteen code"@@{{{O}}}|@@class="centertop"@@:|<<span class="code type"|<<a_api text="XML_sigs.Output" | module XML_sigs.Output >>>>|
+>>>>
+
+----

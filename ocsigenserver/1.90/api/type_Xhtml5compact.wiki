@@ -1,0 +1,13 @@
+<<code language="ocaml" | sig
+  val xhtml_print :
+    ?header:string ->
+    ?version:XHTML5.M.doctypes ->
+    ?encode:(string -> string) ->
+    ?html_compat:bool -> [ `Html ] XHTML5.M.elt -> string
+  val xhtml_list_print :
+    ?header:string ->
+    ?version:XHTML5.M.doctypes ->
+    ?encode:(string -> string) ->
+    ?html_compat:bool -> 'a XHTML5.M.elt list -> string
+  val emptytags : string list
+end >>

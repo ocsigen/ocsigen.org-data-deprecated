@@ -1,0 +1,7 @@
+<<code language="ocaml" | object
+  method add : Goog.Date.interval Js.t -> unit Js.meth
+  method clone : Goog.Date.interval Js.t Js.meth
+  method equals : Goog.Date.interval Js.t -> bool Js.t Js.meth
+  method getInverse : Goog.Date.interval Js.t Js.meth
+  method toIsoString : bool Js.t Js.opt -> Js.js_string Js.t Js.opt Js.meth
+end >>

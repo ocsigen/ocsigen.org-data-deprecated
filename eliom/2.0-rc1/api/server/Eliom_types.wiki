@@ -1,0 +1,14 @@
+=Module <<a_api_type subproject="server" | module Eliom_types >> =
+<<div class="code"|<<span class="keyword"|module>> Eliom_types: <<span class='code'|sig>><<a_api subproject="server" text=".." | module Eliom_types >><<span class='code'|end>>>>~Types shared by client and server~.\\
+
+----
+<<div class="code" id="TYPEsitedata"|<<span class="keyword"|type>> sitedata = { 
+|@@class="typetable"@ @class="lefttop"@@{{{   }}}|@@class="lefttop"@@site_dir : <<span class="code type"|string list>>;|
+|@@class="lefttop"@@{{{   }}}|@@class="lefttop"@@site_dir_string : <<span class="code type"|string>>;|
+
+}
+>>
+
+<<div class="code" id="TYPEserver_params"|<<span class="keyword"|type>> server~_params>>
+
+<<div id="VALsp" class="code"|<<span class="keyword"|val>> sp : <<span class="code type"|<<a_api subproject="server" text="server_params" | type Eliom_types.server_params >>>>>><<div id="VALjsmarshal" class="code"|<<span class="keyword"|val>> jsmarshal : <<span class="code type"|'a -> string>>>><<div id="VALstring_escape" class="code"|<<span class="keyword"|val>> string~_escape : <<span class="code type"|string -> string>>>>

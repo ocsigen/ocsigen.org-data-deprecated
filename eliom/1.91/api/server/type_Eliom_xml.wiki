@@ -1,0 +1,11 @@
+<<code language="ocaml" | sig
+  val make_ref_tree_list :
+    Eliom_pervasives.XML.M.elt list ->
+    (int * Eliom_pervasives.XML.M.ref_tree) list
+  val make_ref_tree :
+    Eliom_pervasives.XML.M.elt -> Eliom_pervasives.XML.M.ref_tree
+  val make_node_id : Eliom_pervasives.XML.M.elt -> int
+  val contents_to_send : unit -> Eliom_types.elt list
+  val mark_sent : Eliom_pervasives.XML.M.elt -> unit
+  val client_process_node_table_size : unit -> int
+end >>

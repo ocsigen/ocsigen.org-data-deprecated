@@ -1,0 +1,10 @@
+=Module <<a_api_type subproject="server" | module Eliom_react.S >> =
+<<div class="code"|<<span class="keyword"|module>> S: <<span class='code'|sig>><<a_api subproject="server" text=".." | module Eliom_react.S >><<span class='code'|end>>>><<span class='code'|create param>> creates an ~Up event~.
+      ~If <<span class='code'|~~name>> is present~, the coservice used to transmit the event will
+      always have the same name~, even if the server is restarted~.
+      <<span class='code'|~~scope>> describes the visibility of the event~. ~By default~, it is
+      <<span class='code'|`~Global>> if it is called during initialisation~,
+      <<span class='code'|`~Client~_process>> otherwise~.\\
+
+----
+<<div class="code"|<<span class="keyword"|module>> <<a_api subproject="server" text="Down" | module Eliom_react.S.Down >>: <<span class='code'|sig>><<a_api subproject="server" text=".." | module Eliom_react.S.Down >><<span class='code'|end>>>>

@@ -1,0 +1,240 @@
+=Index of modules=
+
+|@@ @class="alignleft"@@\\A|
+|<<a_api subproject="server" text="Action"| module Eliom_output.Action >> ~[<<a_api subproject="server" | module Eliom_output >>~]|<<div class="info"|~Actions do not generate any page~.
+>>
+|
+|<<a_api subproject="server" text="Any"| module Eliom_output.Any >> ~[<<a_api subproject="server" | module Eliom_output >>~]|<<div class="info"|~Allows to create services that choose dynamically what they want
+   to send~.
+>>
+|
+|<<a_api subproject="server" text="Atom_feed"| module Atom_feed >> |<<div class="info"|~Everything we need to make an atom feed~.
+>>
+|
+|@@ @class="alignleft"@@\\B|
+|<<a_api subproject="server" text="Blocks"| module Eliom_duce.Blocks >> ~[<<a_api subproject="server" | module Eliom_duce >>~]|<<div class="info"|~Register and create form for list of <<span class='code'|blocks>> ~(subtype of xhtml~)
+>>
+|
+|<<a_api subproject="server" text="Blocks"| module Eliom_output.Blocks >> ~[<<a_api subproject="server" | module Eliom_output >>~]|<<div class="info"|~For ~X~H~T~M~L
+>>
+|
+|<<a_api subproject="server" text="Blocks5"| module Eliom_output.Blocks5 >> ~[<<a_api subproject="server" | module Eliom_output >>~]|<<div class="info"|~For ~H~T~M~L~5
+>>
+|
+|@@ @class="alignleft"@@\\C|
+|<<a_api subproject="server" text="Caml"| module Eliom_output.Caml >> ~[<<a_api subproject="server" | module Eliom_output >>~]|<<div class="info"|~Allows to register services that send caml values~.
+>>
+|
+|<<a_api subproject="server" text="Channels"| module Eliom_comet.Channels >> ~[<<a_api subproject="server" | module Eliom_comet >>~]||
+|<<a_api subproject="server" text="Cookies"| module Eliom_cookies.Cookies >> ~[<<a_api subproject="server" | module Eliom_cookies >>~]|<<div class="info"|~This table is to store cookie values for each path~.
+>>
+|
+|<<a_api subproject="server" text="CssText"| module Eliom_output.CssText >> ~[<<a_api subproject="server" | module Eliom_output >>~]|<<div class="info"|~Module to register untyped ~C~S~S pages
+>>
+|
+|<<a_api subproject="server" text="Customize"| module Eliom_output.Customize >> ~[<<a_api subproject="server" | module Eliom_output >>~]||
+|@@ @class="alignleft"@@\\D|
+|<<a_api subproject="server" text="Down"| module Eliom_react.Down >> ~[<<a_api subproject="server" | module Eliom_react >>~]||
+|@@ @class="alignleft"@@\\E|
+|<<a_api subproject="server" text="Eliom_appl"| module Eliom_output.Eliom_appl >> ~[<<a_api subproject="server" | module Eliom_output >>~]||
+|<<a_api subproject="server" text="Eliom_atom"| module Eliom_atom >> |<<div class="info"|~Register an atom feed
+>>
+|
+|<<a_api subproject="server" text="Eliom_bus"| module Eliom_bus >> |<<div class="info"|~Broadcasting facilities between clients and server
+>>
+|
+|<<a_api subproject="server" text="Eliom_comet"| module Eliom_comet >> |<<div class="info"|~Primitives to push data to the client~, without explicit request~.
+>>
+|
+|<<a_api subproject="server" text="Eliom_common"| module Eliom_common >> |<<div class="info"|~Low level functions for ~Eliom~, exceptions and types~.
+>>
+|
+|<<a_api subproject="server" text="Eliom_config"| module Eliom_config >> |<<div class="info"|returns the hostname declared in the config file 
+    ~(<<span class='code'|~<host defaulthostname~="~.~.~."~>>>~)~.
+>>
+|
+|<<a_api subproject="server" text="Eliom_cookies"| module Eliom_cookies >> |<<div class="info"|~This table is to store cookie values for each path~.
+>>
+|
+|<<a_api subproject="server" text="Eliom_duce"| module Eliom_duce >> |<<div class="info"|~A module to generate pages using ~O~Camlduce
+>>
+|
+|<<a_api subproject="server" text="Eliom_duce_tools"| module Eliom_duce_tools >> |<<div class="info"|~Predefined boxes for ~Eliom
+>>
+|
+|<<a_api subproject="server" text="Eliom_extensions"| module Eliom_extensions >> |<<div class="info"|~Type of the function that must be registered to declare an eliom extension
+>>
+|
+|<<a_api subproject="server" text="Eliom_mkforms"| module Eliom_mkforms >> |<<div class="info"|~This module defines the functor to use to creates modules
+   generating form widgets for your own types of pages~.
+>>
+|
+|<<a_api subproject="server" text="Eliom_mkreg"| module Eliom_mkreg >> |<<div class="info"|~This module defines the functor to use to creates modules
+   generating functions to register services for your own types of pages~.
+>>
+|
+|<<a_api subproject="server" text="Eliom_openid"| module Eliom_openid >> |<<div class="info"|~Open~I~D identification
+>>
+|
+|<<a_api subproject="server" text="Eliom_output"| module Eliom_output >> |<<div class="info"|~Predefined modules for generating forms and
+    registering handlers~, for several types of pages~:
+    ~Applications~, ~H~T~M~L pages typed with polymorphic variants~,
+    untyped ~(text~) pages~, actions~, redirections~, files ~.~.~.
+>>
+|
+|<<a_api subproject="server" text="Eliom_output_base"| module Eliom_output_base >> |<<div class="info"|~Creating links and forms with ~X~H~T~M~L~5~.~M
+>>
+|
+|<<a_api subproject="server" text="Eliom_parameters"| module Eliom_parameters >> |<<div class="info"|~Values used to declare the type of service parameters~.
+>>
+|
+|<<a_api subproject="server" text="Eliom_pervasives"| module Eliom_pervasives >> |<<div class="info"|~Pervasives module for ~Eliom extending stdlib~, should always be opened~.
+>>
+|
+|<<a_api subproject="server" text="Eliom_react"| module Eliom_react >> |<<div class="info"|~Propagate events
+    occurrences from the server to the client and the other way
+    around~.
+>>
+|
+|<<a_api subproject="server" text="Eliom_references"| module Eliom_references >> |<<div class="info"|~Server side state data~: ~Eliom references
+>>
+|
+|<<a_api subproject="server" text="Eliom_request_info"| module Eliom_request_info >> |<<div class="info"|~This module contains the functions you need to get ~(or set~)
+    information about current request~.
+>>
+|
+|<<a_api subproject="server" text="Eliom_s2s"| module Eliom_s2s >> |<<div class="info"|~Server~-to~-~Server communication module~.
+>>
+|
+|<<a_api subproject="server" text="Eliom_services"| module Eliom_services >> |<<div class="info"|~Types~, creation and manipulation of ~Eliom services~.
+>>
+|
+|<<a_api subproject="server" text="Eliom_state"| module Eliom_state >> |<<div class="info"|~This module contains the functions you need to manage 
+the server~-side state ~(and also some client~-side state~)~:
+~* closing sessions~, knowing whether a state has expired~,
+setting cookies manually ~(client~-side state~)
+~* ~Managing session groups~: putting a session in a group~,
+limitating the number of sessions in a group etc ~.~.~.
+>>
+|
+|<<a_api subproject="server" text="Eliom_tools"| module Eliom_tools >> |<<div class="info"|~Predefined boxes for ~Eliom
+>>
+|
+|<<a_api subproject="server" text="Eliom_tools_common"| module Eliom_tools_common >> |<<div class="info"|~Menus 
+>>
+|
+|<<a_api subproject="server" text="Eliom_types"| module Eliom_types >> |<<div class="info"|~Types shared by client and server~.
+>>
+|
+|<<a_api subproject="server" text="Eliom_types_base"| module Eliom_types_base >> |<<div class="info"|~/~*
+>>
+|
+|<<a_api subproject="server" text="Eliom_uri"| module Eliom_uri >> |<<div class="info"|~/~*
+>>
+|
+|<<a_api subproject="server" text="Eliom_wrap"| module Eliom_wrap >> |<<div class="info"|<<span class='code'|~'a wrapper>> is the type of values to include into a value of type ~'a for
+   it to be wraped specificaly
+>>
+|
+|<<a_api subproject="server" text="Eliom_xml"| module Eliom_xml >> |<<div class="info"|~This module contains functions to track the ~X~M~L nodes sent to a
+    the browser side of a client process~.
+>>
+|
+|<<a_api subproject="server" text="Eliommod_cli"| module Eliommod_cli >> |<<div class="info"|~/~*
+>>
+|
+|@@ @class="alignleft"@@\\F|
+|<<a_api subproject="server" text="Filename"| module Eliom_pervasives.Filename >> ~[<<a_api subproject="server" | module Eliom_pervasives >>~]||
+|<<a_api subproject="server" text="Files"| module Eliom_output.Files >> ~[<<a_api subproject="server" | module Eliom_output >>~]|<<div class="info"|~Allows to send files~.
+>>
+|
+|<<a_api subproject="server" text="Fullsessionname_Table"| module Eliom_common.Fullsessionname_Table >> ~[<<a_api subproject="server" | module Eliom_common >>~]||
+|@@ @class="alignleft"@@\\H|
+|<<a_api subproject="server" text="HTML5"| module Eliom_pervasives.HTML5 >> ~[<<a_api subproject="server" | module Eliom_pervasives >>~]||
+|<<a_api subproject="server" text="Html5"| module Eliom_tools.Html5 >> ~[<<a_api subproject="server" | module Eliom_tools >>~]|<<div class="info"|~Same functions as above~, but with ~X~H~T~M~L~5 elements
+>>
+|
+|<<a_api subproject="server" text="Html5"| module Eliom_output.Html5 >> ~[<<a_api subproject="server" | module Eliom_output >>~]||
+|<<a_api subproject="server" text="Html5forms"| module Eliom_output_base.Html5forms >> ~[<<a_api subproject="server" | module Eliom_output_base >>~]||
+|<<a_api subproject="server" text="HtmlText"| module Eliom_output.HtmlText >> ~[<<a_api subproject="server" | module Eliom_output >>~]|<<div class="info"|~Module to create forms and register untyped ~H~T~M~L pages
+>>
+|
+|@@ @class="alignleft"@@\\I|
+|<<a_api subproject="server" text="Int"| module Eliom_pervasives.Int >> ~[<<a_api subproject="server" | module Eliom_pervasives >>~]||
+|<<a_api subproject="server" text="Ip_address"| module Eliom_pervasives.Ip_address >> ~[<<a_api subproject="server" | module Eliom_pervasives >>~]||
+|@@ @class="alignleft"@@\\L|
+|<<a_api subproject="server" text="List"| module Eliom_pervasives.List >> ~[<<a_api subproject="server" | module Eliom_pervasives >>~]||
+|@@ @class="alignleft"@@\\M|
+|<<a_api subproject="server" text="M"| module Eliom_pervasives.XHTML.M >> ~[<<a_api subproject="server" | module Eliom_pervasives.XHTML >>~]|<<div class="info"|~Type safe ~X~H~T~M~L creation~.
+>>
+|
+|<<a_api subproject="server" text="M"| module Eliom_pervasives.HTML5.M >> ~[<<a_api subproject="server" | module Eliom_pervasives.HTML5 >>~]|<<div class="info"|~Type safe ~H~T~M~L~5 creation~.
+>>
+|
+|<<a_api subproject="server" text="M"| module Eliom_pervasives.SVG.M >> ~[<<a_api subproject="server" | module Eliom_pervasives.SVG >>~]|<<div class="info"|~Type safe ~S~V~G creation~.
+>>
+|
+|<<a_api subproject="server" text="M"| module Eliom_pervasives.XML.M >> ~[<<a_api subproject="server" | module Eliom_pervasives.XML >>~]||
+|<<a_api subproject="server" text="M_01_00"| module Eliom_pervasives.XHTML.M_01_00 >> ~[<<a_api subproject="server" | module Eliom_pervasives.XHTML >>~]||
+|<<a_api subproject="server" text="M_01_01"| module Eliom_pervasives.XHTML.M_01_01 >> ~[<<a_api subproject="server" | module Eliom_pervasives.XHTML >>~]||
+|<<a_api subproject="server" text="Make"| module Eliom_openid.Make >> ~[<<a_api subproject="server" | module Eliom_openid >>~]||
+|<<a_api subproject="server" text="MakeForms"| module Eliom_mkforms.MakeForms >> ~[<<a_api subproject="server" | module Eliom_mkforms >>~]||
+|<<a_api subproject="server" text="MakeRegister"| module Eliom_mkreg.MakeRegister >> ~[<<a_api subproject="server" | module Eliom_mkreg >>~]||
+|@@ @class="alignleft"@@\\P|
+|<<a_api subproject="server" text="P"| module Eliom_pervasives.XHTML.P >> ~[<<a_api subproject="server" | module Eliom_pervasives.XHTML >>~]||
+|<<a_api subproject="server" text="P"| module Eliom_pervasives.HTML5.P >> ~[<<a_api subproject="server" | module Eliom_pervasives.HTML5 >>~]||
+|<<a_api subproject="server" text="P"| module Eliom_pervasives.SVG.P >> ~[<<a_api subproject="server" | module Eliom_pervasives.SVG >>~]||
+|<<a_api subproject="server" text="Printexc"| module Eliom_pervasives.Printexc >> ~[<<a_api subproject="server" | module Eliom_pervasives >>~]||
+|@@ @class="alignleft"@@\\R|
+|<<a_api subproject="server" text="Redirection"| module Eliom_output.Redirection >> ~[<<a_api subproject="server" | module Eliom_output >>~]||
+|<<a_api subproject="server" text="Reg"| module Eliom_atom.Reg >> ~[<<a_api subproject="server" | module Eliom_atom >>~]||
+|@@ @class="alignleft"@@\\S|
+|<<a_api subproject="server" text="SVG"| module Eliom_pervasives.SVG >> ~[<<a_api subproject="server" | module Eliom_pervasives >>~]||
+|<<a_api subproject="server" text="Session_admin"| module Eliom_state.Session_admin >> ~[<<a_api subproject="server" | module Eliom_state >>~]||
+|<<a_api subproject="server" text="Streamlist"| module Eliom_output.Streamlist >> ~[<<a_api subproject="server" | module Eliom_output >>~]|<<div class="info"|~Allows to send raw data using ~Ocsigen~'s streams~.
+>>
+|
+|<<a_api subproject="server" text="String"| module Eliom_pervasives.String >> ~[<<a_api subproject="server" | module Eliom_pervasives >>~]||
+|<<a_api subproject="server" text="String_redirection"| module Eliom_output.String_redirection >> ~[<<a_api subproject="server" | module Eliom_output >>~]|<<div class="info"|~Allows to create redirections towards other ~U~R~Ls~.
+>>
+|
+|<<a_api subproject="server" text="SubXhtml"| module Eliom_duce.SubXhtml >> ~[<<a_api subproject="server" | module Eliom_duce >>~]||
+|<<a_api subproject="server" text="SubXhtml"| module Eliom_output.SubXhtml >> ~[<<a_api subproject="server" | module Eliom_output >>~]||
+|@@ @class="alignleft"@@\\T|
+|<<a_api subproject="server" text="Table"| module Eliom_pervasives.Int.Table >> ~[<<a_api subproject="server" | module Eliom_pervasives.Int >>~]||
+|<<a_api subproject="server" text="Table"| module Eliom_pervasives.String.Table >> ~[<<a_api subproject="server" | module Eliom_pervasives.String >>~]||
+|<<a_api subproject="server" text="Text"| module Eliom_output.Text >> ~[<<a_api subproject="server" | module Eliom_output >>~]|<<div class="info"|~Module to register untyped text pages
+>>
+|
+|@@ @class="alignleft"@@\\U|
+|<<a_api subproject="server" text="Unit"| module Eliom_output.Unit >> ~[<<a_api subproject="server" | module Eliom_output >>~]|<<div class="info"|~Like actions~, but the page is not reloaded~.
+>>
+|
+|<<a_api subproject="server" text="Up"| module Eliom_react.Up >> ~[<<a_api subproject="server" | module Eliom_react >>~]||
+|<<a_api subproject="server" text="Url"| module Eliom_pervasives.Url >> ~[<<a_api subproject="server" | module Eliom_pervasives >>~]||
+|@@ @class="alignleft"@@\\X|
+|<<a_api subproject="server" text="XHTML"| module Eliom_pervasives.XHTML >> ~[<<a_api subproject="server" | module Eliom_pervasives >>~]||
+|<<a_api subproject="server" text="XML"| module Eliom_pervasives.XML >> ~[<<a_api subproject="server" | module Eliom_pervasives >>~]|<<div class="info"|~X~M~L building and deconstructing~.
+>>
+|
+|<<a_api subproject="server" text="Xhtml"| module Eliom_duce.Xhtml >> ~[<<a_api subproject="server" | module Eliom_duce >>~]|<<div class="info"|~Register and create form for ~Xhtml
+>>
+|
+|<<a_api subproject="server" text="Xhtml"| module Eliom_tools.Xhtml >> ~[<<a_api subproject="server" | module Eliom_tools >>~]|<<div class="info"|~X~H~T~M~L tools
+>>
+|
+|<<a_api subproject="server" text="Xhtml"| module Eliom_output.Xhtml >> ~[<<a_api subproject="server" | module Eliom_output >>~]|<<div class="info"|~Eliom forms and service registration functions for ~X~H~T~M~L
+>>
+|
+|<<a_api subproject="server" text="Xhtmlforms"| module Eliom_duce.Xhtmlforms >> ~[<<a_api subproject="server" | module Eliom_duce >>~]|<<div class="info"|~Register and create form for ~Xhtml
+>>
+|
+|<<a_api subproject="server" text="Xhtmlforms"| module Eliom_output.Xhtmlforms >> ~[<<a_api subproject="server" | module Eliom_output >>~]||
+|<<a_api subproject="server" text="Xhtmlreg"| module Eliom_output.Xhtmlreg >> ~[<<a_api subproject="server" | module Eliom_output >>~]||
+|<<a_api subproject="server" text="Xml"| module Eliom_duce.Xml >> ~[<<a_api subproject="server" | module Eliom_duce >>~]|<<div class="info"|~Register and create form for any ~X~M~L data type
+>>
+|
+|<<a_api subproject="server" text="Xmllist"| module Eliom_duce.Xmllist >> ~[<<a_api subproject="server" | module Eliom_duce >>~]|<<div class="info"|~Register and create form for list of ~X~M~L data type
+>>
+|
+\\

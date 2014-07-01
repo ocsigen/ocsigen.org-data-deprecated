@@ -1,0 +1,23 @@
+=Module <<a_api_type subproject="server" | module Eliom_xml >> =
+<<div class="code"|<<span class="keyword"|module>> Eliom_xml: <<span class='code'|sig>><<a_api subproject="server" text=".." | module Eliom_xml >><<span class='code'|end>>>>~This module contains functions to track the ~X~M~L nodes sent to a
+    the browser side of a client process~. ~Each node is associated to
+    an id used to reference the node on client side~.\\
+
+----
+\\
+~The functions in this module can only be called inside the
+    function answering to a client application request\\
+<<div id="VALmake_ref_tree_list" class="code"|<<span class="keyword"|val>> make~_ref~_tree~_list : <<span class="code type"|\\{{{   }}}<<a_api subproject="server" text="Eliom_pervasives.XML.M.elt" | type Eliom_pervasives.XML.M.elt >> list ->\\{{{   }}}  (int * <<a_api subproject="server" text="Eliom_pervasives.XML.M.ref_tree" | type Eliom_pervasives.XML.M.ref_tree >>) list>>>><<div id="VALmake_ref_tree" class="code"|<<span class="keyword"|val>> make~_ref~_tree : <<span class="code type"|<<a_api subproject="server" text="Eliom_pervasives.XML.M.elt" | type Eliom_pervasives.XML.M.elt >> -> <<a_api subproject="server" text="Eliom_pervasives.XML.M.ref_tree" | type Eliom_pervasives.XML.M.ref_tree >>>>>><<div class="info"|~Those functions returns the structures of an ~X~M~L~.~M~.tree containing
+    only the nodes with an id\\
+>>
+<<div id="VALmake_node_id" class="code"|<<span class="keyword"|val>> make~_node~_id : <<span class="code type"|<<a_api subproject="server" text="Eliom_pervasives.XML.M.elt" | type Eliom_pervasives.XML.M.elt >> -> int>>>><<div class="info"|<<span class='code'|make~_node~_id node>> generate an id for a node and returns it~.  ~It
+    also mark the node and its sons as ~'node to send to the client~'\\
+>>
+<<div id="VALcontents_to_send" class="code"|<<span class="keyword"|val>> contents~_to~_send : <<span class="code type"|unit -> Eliom_types.elt list>>>><<div class="info"|<<span class='code'|contents~_to~_send ~(~)>> returns the nodes that were marked by
+    make~_node~_id and not already sent~. ~Those nodes are marked as sent\\
+>>
+<<div id="VALmark_sent" class="code"|<<span class="keyword"|val>> mark~_sent : <<span class="code type"|<<a_api subproject="server" text="Eliom_pervasives.XML.M.elt" | type Eliom_pervasives.XML.M.elt >> -> unit>>>><<div class="info"|<<span class='code'|mark~_sent node>> is used to tell that <<span class='code'|node>> has already been sent
+    to the client by another mean without calling <<span class='code'|contents~_to~_send>>~:
+    ~The part of a page that is sent as plain ~X~M~L~.~M~.~( in text ~) in the
+    answer of the request~.\\
+>>

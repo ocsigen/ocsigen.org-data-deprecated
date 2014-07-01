@@ -1,0 +1,25 @@
+=Module <<a_api_type subproject="server" | module Eliom_wrap >> =
+<<div class="code"|<<span class="keyword"|module>> Eliom_wrap: <<span class='code'|sig>><<a_api subproject="server" text=".." | module Eliom_wrap >><<span class='code'|end>>>><<span class='code'|~'a wrapper>> is the type of values to include into a value of type ~'a for
+   it to be wraped specificaly\\
+
+----
+<<div class="code" id="TYPEwrapper"|<<span class="keyword"|type>> <<span class="code type"|+'a>> wrapper>>
+
+<<div id="VALcreate_wrapper" class="code"|<<span class="keyword"|val>> create~_wrapper : <<span class="code type"|('a -> 'b) -> 'a <<a_api subproject="server" text="wrapper" | type Eliom_wrap.wrapper >>>>>><<div class="info"|<<span class='code'|~'a wrapper>> is the type of values to include into a value of type ~'a for
+   it to be wraped specificaly\\
+>>
+<<div id="VALwrap" class="code"|<<span class="keyword"|val>> wrap : <<span class="code type"|'a -> 'a <<a_api subproject="server" text="Eliom_pervasives.wrapped_value" | type Eliom_pervasives.wrapped_value >>>>>><<div class="info"|<<span class='code'|create f>> create a new tag that can be included into a value~.  if
+    <<span class='code'|wrap>> is called on a father of a value <<span class='code'|v>> containing a tag~, the
+    value <<span class='code'|v>> will be replaced by <<span class='code'|f v>> before marshaling~.\\
+>>
+<<div id="VALempty_wrapper" class="code"|<<span class="keyword"|val>> empty~_wrapper : <<span class="code type"|'a <<a_api subproject="server" text="wrapper" | type Eliom_wrap.wrapper >>>>>><<div class="info"|marshal a value~, taking into account the tags\\
+>>
+\\
+a wrapper that do not change the value\\
+<<div class="code" id="TYPEunwrap_id"|<<span class="keyword"|type>> unwrap~_id>>
+<<div class="info"|unwrap ~*\\
+>>
+
+<<div class="code" id="TYPEunwrapper"|<<span class="keyword"|type>> unwrapper>>
+
+<<div id="VALcreate_unwrapper" class="code"|<<span class="keyword"|val>> create~_unwrapper : <<span class="code type"|<<a_api subproject="server" text="unwrap_id" | type Eliom_wrap.unwrap_id >> -> <<a_api subproject="server" text="unwrapper" | type Eliom_wrap.unwrapper >>>>>><<div id="VALempty_unwrapper" class="code"|<<span class="keyword"|val>> empty~_unwrapper : <<span class="code type"|<<a_api subproject="server" text="unwrapper" | type Eliom_wrap.unwrapper >>>>>><<div id="VALid_of_int" class="code"|<<span class="keyword"|val>> id~_of~_int : <<span class="code type"|int -> <<a_api subproject="server" text="unwrap_id" | type Eliom_wrap.unwrap_id >>>>>>

@@ -1,0 +1,17 @@
+=Module <<a_api_type | module Eliom_comet.Channels >> =
+<<div class="code"|<<span class="keyword"|module>> Channels: <<span class='code'|sig>><<a_api text=".." | module Eliom_comet.Channels >><<span class='code'|end>>>>
+----
+<<div class="code" id="TYPEt"|<<span class="keyword"|type>> <<span class="code type"|'a>> t>>
+<<div class="info"|<<span class='code'|v t>> is the type of server~-to~-client communication channels
+      transporting data of type <<span class='code'|v>>\\
+>>
+
+<<div id="VALcreate" class="code"|<<span class="keyword"|val>> create : <<span class="code type"|?name:string -> 'a Lwt_stream.t -> 'a <<a_api text="t" | type Eliom_comet.Channels.t >>>>>><<div class="info"|<<span class='code'|create s>> returns a channel sending values from <<span class='code'|s>>~. ~This
+      function can only be used when client application datas are
+      available~. ~The eliom service created to communicate with the
+      client is only available in the scope of the client process~. ~A
+      channel can be used only one time on client side~. ~To be able to
+      receive the same data multiples times on client side~, use
+      <<span class='code'|create ~(~Lwt~_stream~.clone s~)>> each time~.\\
+>>
+<<div id="VALget_id" class="code"|<<span class="keyword"|val>> get~_id : <<span class="code type"|'a <<a_api text="t" | type Eliom_comet.Channels.t >> -> 'a Eliom_common_comet.chan_id>>>><<div id="VALwrap" class="code"|<<span class="keyword"|val>> wrap : <<span class="code type"|\\{{{   }}}'a <<a_api text="t" | type Eliom_comet.Channels.t >> ->\\{{{   }}}  'a Eliom_common_comet.chan_id <<a_api text="Eliom_client_types.data_key" | type Eliom_client_types.data_key >>>>>>

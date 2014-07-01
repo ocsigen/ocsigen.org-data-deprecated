@@ -1,0 +1,146 @@
+<<code language="ocaml" | sig
+  class type interval =
+    object
+      method add : Goog.Date.interval Js.t -> unit Js.meth
+      method clone : Goog.Date.interval Js.t Js.meth
+      method equals : Goog.Date.interval Js.t -> bool Js.t Js.meth
+      method getInverse : Goog.Date.interval Js.t Js.meth
+      method toIsoString :
+        bool Js.t Js.opt -> Js.js_string Js.t Js.opt Js.meth
+    end
+  val interval :
+    ((int, Js.js_string Js.t) Goog.Tools.Union.t Js.opt ->
+     int Js.opt ->
+     int Js.opt ->
+     int Js.opt -> int Js.opt -> int Js.opt -> Goog.Date.interval Js.t)
+    Js.constr
+  class type date =
+    object ('a)
+      method add : Goog.Date.interval Js.t -> unit Js.meth
+      method clone : 'a Js.t Js.meth
+      method equals : 'a Js.t -> bool Js.t Js.meth
+      method getDate : int Js.meth
+      method getDay : int Js.meth
+      method getDayOfYear : int Js.meth
+      method getFirstDayOfWeek : int Js.meth
+      method getFirstWeekCutOffDay : int Js.meth
+      method getFullYear : int Js.meth
+      method getIsoWeekday : int Js.meth
+      method getMonth : int Js.meth
+      method getNumberOfDaysInMonth : int Js.meth
+      method getTime : float Js.t Js.meth
+      method getTimezoneOffset : int Js.meth
+      method getTimezoneOffsetString : Js.js_string Js.t Js.meth
+      method getUTCDate : int Js.meth
+      method getUTCDay : int Js.meth
+      method getUTCFullYear : int Js.meth
+      method getUTCHours : int Js.meth
+      method getUTCIsoWeekday : int Js.meth
+      method getUTCMinutes : int Js.meth
+      method getUTCMonth : int Js.meth
+      method getUTCWeekday : int Js.meth
+      method getWeekNumber : int Js.meth
+      method getWeekday : int Js.meth
+      method getYear : int Js.meth
+      method set : Goog.Date.date Js.t -> unit Js.meth
+      method setDate : int -> float Js.t Js.meth
+      method setFirstDayOfWeek : int -> unit Js.meth
+      method setFirstWeekCutOffDay : int -> unit Js.meth
+      method setFullYear : int -> float Js.t Js.meth
+      method setMonth : int -> float Js.t Js.meth
+      method setTime : float -> float Js.t Js.meth
+      method setUTCDate : int -> float Js.t Js.meth
+      method setUTCFullYear : int -> float Js.t Js.meth
+      method setUTCMonth : int -> float Js.t Js.meth
+      method setYear : int -> unit Js.meth
+      method toIsoString :
+        bool Js.t Js.opt -> bool Js.t Js.opt -> Js.js_string Js.t Js.meth
+      method toString : Js.js_string Js.t Js.meth
+      method toUTCIsoString :
+        bool Js.t Js.opt -> bool Js.t Js.opt -> Js.js_string Js.t Js.meth
+      method valueOf : float Js.t Js.meth
+    end
+  val date :
+    (int Js.opt -> int Js.opt -> int Js.opt -> Goog.Date.date Js.t) Js.constr
+  class type dateTime =
+    object ('a)
+      method add : Goog.Date.interval Js.t -> unit Js.meth
+      method clone : 'a Js.t Js.meth
+      method equals : 'a Js.t -> bool Js.t Js.meth
+      method getDate : int Js.meth
+      method getDay : int Js.meth
+      method getDayOfYear : int Js.meth
+      method getFirstDayOfWeek : int Js.meth
+      method getFirstWeekCutOffDay : int Js.meth
+      method getFullYear : int Js.meth
+      method getHours : int Js.meth
+      method getIsoWeekday : int Js.meth
+      method getMilliseconds : int Js.meth
+      method getMinutes : int Js.meth
+      method getMonth : int Js.meth
+      method getNumberOfDaysInMonth : int Js.meth
+      method getSeconds : int Js.meth
+      method getTime : float Js.t Js.meth
+      method getTimezoneOffset : int Js.meth
+      method getTimezoneOffsetString : Js.js_string Js.t Js.meth
+      method getUTCDate : int Js.meth
+      method getUTCDay : int Js.meth
+      method getUTCFullYear : int Js.meth
+      method getUTCHours : int Js.meth
+      method getUTCIsoWeekday : int Js.meth
+      method getUTCMilliseconds : int Js.meth
+      method getUTCMinutes : int Js.meth
+      method getUTCMonth : int Js.meth
+      method getUTCSeconds : int Js.meth
+      method getUTCWeekday : int Js.meth
+      method getWeekNumber : int Js.meth
+      method getWeekday : int Js.meth
+      method getYear : int Js.meth
+      method set : date Js.t -> unit Js.meth
+      method setDate : int -> float Js.t Js.meth
+      method setFirstDayOfWeek : int -> unit Js.meth
+      method setFirstWeekCutOffDay : int -> unit Js.meth
+      method setFullYear : int -> float Js.t Js.meth
+      method setHours : int -> float Js.t Js.meth
+      method setMilliseconds : int -> float Js.t Js.meth
+      method setMinutes : int -> float Js.t Js.meth
+      method setMonth : int -> float Js.t Js.meth
+      method setSeconds : int -> float Js.t Js.meth
+      method setTime : float -> float Js.t Js.meth
+      method setUTCDate : int -> float Js.t Js.meth
+      method setUTCFullYear : int -> float Js.t Js.meth
+      method setUTCHours : int -> float Js.t Js.meth
+      method setUTCMilliseconds : int -> float Js.t Js.meth
+      method setUTCMinutes : int -> float Js.t Js.meth
+      method setUTCMonth : int -> float Js.t Js.meth
+      method setUTCSeconds : int -> float Js.t Js.meth
+      method setYear : int -> unit Js.meth
+      method toIsoString :
+        bool Js.t Js.opt -> bool Js.t Js.opt -> Js.js_string Js.t Js.meth
+      method toIsoTimeString : bool Js.t Js.opt -> Js.js_string Js.t Js.meth
+      method toString : Js.js_string Js.t Js.meth
+      method toUTCIsoString :
+        bool Js.t Js.opt -> bool Js.t Js.opt -> Js.js_string Js.t Js.meth
+      method toUsTimeString :
+        bool Js.t Js.opt ->
+        bool Js.t Js.opt -> bool Js.t Js.opt -> Js.js_string Js.t Js.meth
+      method toXmlDateTime : bool Js.t Js.opt -> Js.js_string Js.t Js.meth
+      method valueOf : float Js.t Js.meth
+    end
+  val dateTime :
+    (int Js.opt ->
+     int Js.opt ->
+     int Js.opt ->
+     int Js.opt ->
+     int Js.opt -> int Js.opt -> int Js.opt -> Goog.Date.dateTime Js.t)
+    Js.constr
+  class type dateRange =
+    object
+      method getEndDate : Goog.Date.date Js.t Js.meth
+      method getStartDate : Goog.Date.date Js.t Js.meth
+    end
+  val dateRange :
+    (Js.date Js.t -> Js.date Js.t -> Goog.Date.dateRange Js.t) Js.constr
+  class type standardDateRangeKeys = object  end
+  val standardDateRangeKeys : Goog.Date.standardDateRangeKeys Js.t Js.constr
+end >>

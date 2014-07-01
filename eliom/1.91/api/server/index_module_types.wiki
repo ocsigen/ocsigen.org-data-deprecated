@@ -1,0 +1,27 @@
+=Index of module types=
+
+|@@ @class="alignleft"@@\\A|
+|<<a_api subproject="server" text="APPL_PARAMS"| module type Eliom_output.APPL_PARAMS >> ~[<<a_api subproject="server" | module Eliom_output >>~]||
+|@@ @class="alignleft"@@\\E|
+|<<a_api subproject="server" text="ELIOMFORMSIG"| module type Eliom_mkforms.ELIOMFORMSIG >> ~[<<a_api subproject="server" | module Eliom_mkforms >>~]||
+|<<a_api subproject="server" text="ELIOMREGSIG"| module type Eliom_mkreg.ELIOMREGSIG >> ~[<<a_api subproject="server" | module Eliom_mkreg >>~]||
+|<<a_api subproject="server" text="ELIOMSIG"| module type Eliom_output.ELIOMSIG >> ~[<<a_api subproject="server" | module Eliom_output >>~]|<<div class="info"|~The signature of such modules~.
+>>
+|
+|@@ @class="alignleft"@@\\F|
+|<<a_api subproject="server" text="FORMCREATE"| module type Eliom_mkforms.FORMCREATE >> ~[<<a_api subproject="server" | module Eliom_mkforms >>~]||
+|@@ @class="alignleft"@@\\H|
+|<<a_api subproject="server" text="HTML5FORMSSIG"| module type Eliom_output_base.HTML5FORMSSIG >> ~[<<a_api subproject="server" | module Eliom_output_base >>~]||
+|<<a_api subproject="server" text="HTML5FORMSSIG"| module type Eliom_output.HTML5FORMSSIG >> ~[<<a_api subproject="server" | module Eliom_output >>~]||
+|<<a_api subproject="server" text="HiddenServiceInfo"| module type Eliom_openid.HiddenServiceInfo >> ~[<<a_api subproject="server" | module Eliom_openid >>~]|<<div class="info"|~Information about the hidden service
+>>
+|
+|@@ @class="alignleft"@@\\R|
+|<<a_api subproject="server" text="REGCREATE"| module type Eliom_mkreg.REGCREATE >> ~[<<a_api subproject="server" | module Eliom_mkreg >>~]|<<div class="info"|~Creating modules to register services for one type of pages
+>>
+|
+|@@ @class="alignleft"@@\\X|
+|<<a_api subproject="server" text="XHTMLFORMSSIG"| module type Eliom_output.XHTMLFORMSSIG >> ~[<<a_api subproject="server" | module Eliom_output >>~]||
+|<<a_api subproject="server" text="XhtmlFormsSig"| module type Eliom_duce.XhtmlFormsSig >> ~[<<a_api subproject="server" | module Eliom_duce >>~]||
+|<<a_api subproject="server" text="XhtmlSig"| module type Eliom_duce.XhtmlSig >> ~[<<a_api subproject="server" | module Eliom_duce >>~]||
+\\

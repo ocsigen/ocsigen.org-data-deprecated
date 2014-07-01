@@ -1,0 +1,8 @@
+=Module type <<a_api_type | module type XML_sigs.TypedXML.T >> =
+<<div class="code"|<<span class="keyword"|module type>> T = <<span class='code'|sig>><<a_api text=".." | module type XML_sigs.TypedXML.T >><<span class='code'|end>>>>
+----
+<<div class="code"|<<span class="keyword"|module>> <<a_api text="Info" | module XML_sigs.TypedXML.T.Info >>: <<span class="code type"|<<a_api text="XML_sigs.Info" | module XML_sigs.Info >>>><<span class="code type"|{{{  }}}>>>><<div class="code" id="TYPEelt"|<<span class="keyword"|type>> <<span class="code type"|'a>> elt>>
+
+<<div class="code" id="TYPEdoc"|<<span class="keyword"|type>> doc>>
+
+<<div id="VALtoelt" class="code"|<<span class="keyword"|val>> toelt : <<span class="code type"|'a <<a_api text="elt" | type XML_sigs.TypedXML.T.elt >> -> <<a_api text="XML.elt" | type XML.elt >>>>>><<div id="VALdoc_toelt" class="code"|<<span class="keyword"|val>> doc~_toelt : <<span class="code type"|<<a_api text="doc" | type XML_sigs.TypedXML.T.doc >> -> <<a_api text="XML.elt" | type XML.elt >>>>>>

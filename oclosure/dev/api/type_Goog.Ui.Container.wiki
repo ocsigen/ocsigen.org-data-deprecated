@@ -1,0 +1,8 @@
+<<code language="ocaml" | sig
+  type orientation = HORIZONTAL | VERTICAL
+  type orientation_pre
+  val orientation_pre_of_orientation :
+    Goog.Ui.Container.orientation -> Goog.Ui.Container.orientation_pre
+  val orientation_of_orientation_pre :
+    Goog.Ui.Container.orientation_pre -> Goog.Ui.Container.orientation
+end >>

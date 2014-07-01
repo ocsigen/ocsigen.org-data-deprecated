@@ -1,0 +1,29 @@
+<<code language="ocaml" | object
+  method attachAutoComplete : Goog.Ui.autoComplete Js.t -> unit Js.meth
+  method attachInput : #Dom_html.element Js.t -> unit Js.meth
+  method detachInput : #Dom_html.element Js.t -> unit Js.meth
+  method dispose : unit Js.meth
+  method disposeInternal : unit Js.meth
+  method getActiveElement : Dom_html.element Js.t Js.meth
+  method getAutoComplete : Goog.Ui.autoComplete Js.t Js.meth
+  method getCursorPosition : int Js.meth
+  method getDisposed : bool Js.t Js.meth
+  method getThrottleTime : int Js.meth
+  method getUpdateDuringTyping : bool Js.t Js.meth
+  method getValue : Js.js_string Js.t Js.meth
+  method isDisposed : bool Js.t Js.meth
+  method setCursorPosition : int -> unit Js.meth
+  method setGenerateNewTokenOnLiteral : bool Js.t -> unit Js.meth
+  method setPreventDefaultOnTab : bool Js.t -> unit Js.meth
+  method setRowJustSelected : bool Js.t -> unit Js.meth
+  method setSeparatorCompletes : bool Js.t -> unit Js.meth
+  method setSeparatorSelects : bool Js.t -> unit Js.meth
+  method setSeparators : Js.js_string Js.t -> unit Js.meth
+  method setThrottleTime : int -> unit Js.meth
+  method setTrimmingRegExp : Js.regExp Js.t -> unit Js.meth
+  method setUpdateDuringTyping : bool Js.t -> unit Js.meth
+  method setUpsideDown : bool Js.t -> unit Js.meth
+  method setValue : int -> unit Js.meth
+  method setWhitespaceWrapEntries : bool Js.t -> unit Js.meth
+  method update : bool Js.t Js.opt -> unit Js.meth
+end >>

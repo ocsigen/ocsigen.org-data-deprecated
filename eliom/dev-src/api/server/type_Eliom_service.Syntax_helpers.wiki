@@ -1,0 +1,8 @@
+<<code language="ocaml" | sig
+  val client_value : int64 -> 'args -> 'a Eliom_lib.client_value
+  val set_global : bool -> unit
+  val close_server_section : string -> unit
+  val close_client_section :
+    string -> (string * (unit -> Eliom_lib.poly)) list -> unit
+  val escaped_value : 'a -> Eliom_lib.escaped_value
+end >>

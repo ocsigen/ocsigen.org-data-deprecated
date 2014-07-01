@@ -1,0 +1,1827 @@
+<<code language="ocaml" | sig
+  module type T =
+    sig
+      type uri = Uri.uri
+      type uris = Uri.uris
+      val string_of_uri : XHTML5.T.uri -> string
+      val uri_of_string : string -> XHTML5.T.uri
+      type +'a attrib
+      type +'a attribs
+      val to_xmlattribs : 'a XHTML5.T.attrib list -> XML.attrib list
+      val a_autocomplete :
+        [< `Off | `On ] -> [> `Autocomplete ] XHTML5.T.attrib
+      val a_async : [< `Async ] -> [> `Async ] XHTML5.T.attrib
+      val a_autofocus : [< `Autofocus ] -> [> `Autofocus ] XHTML5.T.attrib
+      val a_autoplay : [< `Autoplay ] -> [> `Autoplay ] XHTML5.T.attrib
+      val a_challenge : Xhtml5types.text -> [> `Challenge ] XHTML5.T.attrib
+      val a_contenteditable :
+        [< `False | `True ] -> [> `Contexteditable ] XHTML5.T.attrib
+      val a_contextmenu :
+        Xhtml5types.idref -> [> `Contextmenu ] XHTML5.T.attrib
+      val a_controls : [< `Controls ] -> [> `Controls ] XHTML5.T.attrib
+      val a_dir : [< `Ltr | `Rtl ] -> [> `Dir ] XHTML5.T.attrib
+      val a_draggable :
+        [< `False | `True ] -> [> `Draggable ] XHTML5.T.attrib
+      val a_form : Xhtml5types.idref -> [> `Form ] XHTML5.T.attrib
+      val a_formaction : XHTML5.T.uri -> [> `Formaction ] XHTML5.T.attrib
+      val a_formenctype :
+        Xhtml5types.contenttype -> [> `Formenctype ] XHTML5.T.attrib
+      val a_formmethod :
+        [< `Delete | `Get | `Post | `Put ] ->
+        [> `Formmethod ] XHTML5.T.attrib
+      val a_formnovalidate :
+        [< `Formnovalidate ] -> [> `Formnovalidate ] XHTML5.T.attrib
+      val a_formtarget : Xhtml5types.text -> [> `Formtarget ] XHTML5.T.attrib
+      val a_hidden : [< `Hidden ] -> [> `Hidden ] XHTML5.T.attrib
+      val a_high : Xhtml5types.float_number -> [> `High ] XHTML5.T.attrib
+      val a_icon : XHTML5.T.uri -> [> `Icon ] XHTML5.T.attrib
+      val a_ismap : [< `Ismap ] -> [> `Ismap ] XHTML5.T.attrib
+      val a_keytype : Xhtml5types.text -> [> `Keytype ] XHTML5.T.attrib
+      val a_list : Xhtml5types.idref -> [> `List ] XHTML5.T.attrib
+      val a_loop : [< `Loop ] -> [> `Loop ] XHTML5.T.attrib
+      val a_low : Xhtml5types.float_number -> [> `High ] XHTML5.T.attrib
+      val a_max : Xhtml5types.float_number -> [> `Max ] XHTML5.T.attrib
+      val a_input_max : Xhtml5types.number -> [> `Max ] XHTML5.T.attrib
+      val a_min : Xhtml5types.float_number -> [> `Min ] XHTML5.T.attrib
+      val a_input_min : Xhtml5types.number -> [> `Min ] XHTML5.T.attrib
+      val a_novalidate : [< `Novalidate ] -> [> `Novalidate ] XHTML5.T.attrib
+      val a_open : [< `Open ] -> [> `Open ] XHTML5.T.attrib
+      val a_optimum :
+        Xhtml5types.float_number -> [> `Optimum ] XHTML5.T.attrib
+      val a_pattern : Xhtml5types.text -> [> `Pattern ] XHTML5.T.attrib
+      val a_placeholder :
+        Xhtml5types.text -> [> `Placeholder ] XHTML5.T.attrib
+      val a_poster : XHTML5.T.uri -> [> `Poster ] XHTML5.T.attrib
+      val a_preload :
+        [< `Audio | `Metadata | `None ] -> [> `Preload ] XHTML5.T.attrib
+      val a_pubdate : [< `Pubdate ] -> [> `Pubdate ] XHTML5.T.attrib
+      val a_radiogroup : Xhtml5types.text -> [> `Radiogroup ] XHTML5.T.attrib
+      val a_required : [< `Required ] -> [> `Required ] XHTML5.T.attrib
+      val a_reversed : [< `Reversed ] -> [> `Reversed ] XHTML5.T.attrib
+      val a_sandbox :
+        [< `AllowForms | `AllowSameOrigin | `AllowScript ] list ->
+        [> `Sandbox ] XHTML5.T.attrib
+      val a_spellcheck :
+        [< `False | `True ] -> [> `Spellcheck ] XHTML5.T.attrib
+      val a_scoped : [< `Scoped ] -> [> `Scoped ] XHTML5.T.attrib
+      val a_seamless : [< `Seamless ] -> [> `Seamless ] XHTML5.T.attrib
+      val a_sizes : Xhtml5types.numbers -> [> `Sizes ] XHTML5.T.attrib
+      val a_span : Xhtml5types.number -> [> `Span ] XHTML5.T.attrib
+      val a_srclang : Xhtml5types.nmtoken -> [> `XML_lang ] XHTML5.T.attrib
+      val a_start : Xhtml5types.number -> [> `Start ] XHTML5.T.attrib
+      val a_step : Xhtml5types.float_number -> [> `Step ] XHTML5.T.attrib
+      val a_wrap : [< `Hard | `Soft ] -> [> `Wrap ] XHTML5.T.attrib
+      val a_class : Xhtml5types.nmtokens -> [> `Class ] XHTML5.T.attrib
+      val a_user_data :
+        Xhtml5types.nmtoken ->
+        Xhtml5types.text -> [> `User_data ] XHTML5.T.attrib
+      val a_id : Xhtml5types.text -> [> `Id ] XHTML5.T.attrib
+      val a_title : Xhtml5types.text -> [> `Title ] XHTML5.T.attrib
+      val a_xml_lang : Xhtml5types.nmtoken -> [> `XML_lang ] XHTML5.T.attrib
+      val a_onabort : XML.event -> [> `OnAbort ] XHTML5.T.attrib
+      val a_onafterprint : XML.event -> [> `OnAfterPrint ] XHTML5.T.attrib
+      val a_onbeforeprint : XML.event -> [> `OnBeforePrint ] XHTML5.T.attrib
+      val a_onbeforeunload :
+        XML.event -> [> `OnBeforeUnload ] XHTML5.T.attrib
+      val a_onblur : XML.event -> [> `OnBlur ] XHTML5.T.attrib
+      val a_oncanplay : XML.event -> [> `OnCanPlay ] XHTML5.T.attrib
+      val a_oncanplaythrough :
+        XML.event -> [> `OnCanPlayThrough ] XHTML5.T.attrib
+      val a_onchange : XML.event -> [> `OnChange ] XHTML5.T.attrib
+      val a_onclick : XML.event -> [> `OnClick ] XHTML5.T.attrib
+      val a_oncontextmenu : XML.event -> [> `OnContextMenu ] XHTML5.T.attrib
+      val a_ondblclick : XML.event -> [> `OnDblClick ] XHTML5.T.attrib
+      val a_ondrag : XML.event -> [> `OnDrag ] XHTML5.T.attrib
+      val a_ondragend : XML.event -> [> `OnDragEnd ] XHTML5.T.attrib
+      val a_ondragenter : XML.event -> [> `OnDragEnter ] XHTML5.T.attrib
+      val a_ondragleave : XML.event -> [> `OnDragLeave ] XHTML5.T.attrib
+      val a_ondragover : XML.event -> [> `OnDragOver ] XHTML5.T.attrib
+      val a_ondragstart : XML.event -> [> `OnDragStart ] XHTML5.T.attrib
+      val a_ondrop : XML.event -> [> `OnDrop ] XHTML5.T.attrib
+      val a_ondurationchange :
+        XML.event -> [> `OnDurationChange ] XHTML5.T.attrib
+      val a_onemptied : XML.event -> [> `OnEmptied ] XHTML5.T.attrib
+      val a_onended : XML.event -> [> `OnEnded ] XHTML5.T.attrib
+      val a_onerror : XML.event -> [> `OnError ] XHTML5.T.attrib
+      val a_onfocus : XML.event -> [> `OnFocus ] XHTML5.T.attrib
+      val a_onformchange : XML.event -> [> `OnFormChange ] XHTML5.T.attrib
+      val a_onforminput : XML.event -> [> `OnFormInput ] XHTML5.T.attrib
+      val a_onhashchange : XML.event -> [> `OnHashChange ] XHTML5.T.attrib
+      val a_oninput : XML.event -> [> `OnInput ] XHTML5.T.attrib
+      val a_oninvalid : XML.event -> [> `OnInvalid ] XHTML5.T.attrib
+      val a_onmousedown : XML.event -> [> `OnMouseDown ] XHTML5.T.attrib
+      val a_onmouseup : XML.event -> [> `OnMouseUp ] XHTML5.T.attrib
+      val a_onmouseover : XML.event -> [> `OnMouseOver ] XHTML5.T.attrib
+      val a_onmousemove : XML.event -> [> `OnMouseMove ] XHTML5.T.attrib
+      val a_onmouseout : XML.event -> [> `OnMouseOut ] XHTML5.T.attrib
+      val a_onmousewheel : XML.event -> [> `OnMouseWheel ] XHTML5.T.attrib
+      val a_onoffline : XML.event -> [> `OnOffLine ] XHTML5.T.attrib
+      val a_ononline : XML.event -> [> `OnOnLine ] XHTML5.T.attrib
+      val a_onpause : XML.event -> [> `OnPause ] XHTML5.T.attrib
+      val a_onplay : XML.event -> [> `OnPlay ] XHTML5.T.attrib
+      val a_onplaying : XML.event -> [> `OnPlaying ] XHTML5.T.attrib
+      val a_onpagehide : XML.event -> [> `OnPageHide ] XHTML5.T.attrib
+      val a_onpageshow : XML.event -> [> `OnPageShow ] XHTML5.T.attrib
+      val a_onpopstate : XML.event -> [> `OnPopState ] XHTML5.T.attrib
+      val a_onprogress : XML.event -> [> `OnProgress ] XHTML5.T.attrib
+      val a_onratechange : XML.event -> [> `OnRateChange ] XHTML5.T.attrib
+      val a_onreadystatechange :
+        XML.event -> [> `OnReadyStateChange ] XHTML5.T.attrib
+      val a_onredo : XML.event -> [> `OnRedo ] XHTML5.T.attrib
+      val a_onresize : XML.event -> [> `OnResize ] XHTML5.T.attrib
+      val a_onscroll : XML.event -> [> `OnScroll ] XHTML5.T.attrib
+      val a_onseeked : XML.event -> [> `OnSeeked ] XHTML5.T.attrib
+      val a_onseeking : XML.event -> [> `OnSeeking ] XHTML5.T.attrib
+      val a_onselect : XML.event -> [> `OnSelect ] XHTML5.T.attrib
+      val a_onshow : XML.event -> [> `OnShow ] XHTML5.T.attrib
+      val a_onstalled : XML.event -> [> `OnStalled ] XHTML5.T.attrib
+      val a_onstorage : XML.event -> [> `OnStorage ] XHTML5.T.attrib
+      val a_onsubmit : XML.event -> [> `OnSubmit ] XHTML5.T.attrib
+      val a_onsuspend : XML.event -> [> `OnSuspend ] XHTML5.T.attrib
+      val a_ontimeupdate : XML.event -> [> `OnTimeUpdate ] XHTML5.T.attrib
+      val a_onundo : XML.event -> [> `OnUndo ] XHTML5.T.attrib
+      val a_onunload : XML.event -> [> `OnUnload ] XHTML5.T.attrib
+      val a_onvolumechange :
+        XML.event -> [> `OnVolumeChange ] XHTML5.T.attrib
+      val a_onwaiting : XML.event -> [> `OnWaiting ] XHTML5.T.attrib
+      val a_onkeypress : XML.event -> [> `OnKeyPress ] XHTML5.T.attrib
+      val a_onkeydown : XML.event -> [> `OnKeyDown ] XHTML5.T.attrib
+      val a_onkeyup : XML.event -> [> `OnKeyUp ] XHTML5.T.attrib
+      val a_onload : XML.event -> [> `OnLoad ] XHTML5.T.attrib
+      val a_onloadeddata : XML.event -> [> `OnLoadedData ] XHTML5.T.attrib
+      val a_onloadedmetadata :
+        XML.event -> [> `OnLoadedMetaData ] XHTML5.T.attrib
+      val a_onloadstart : XML.event -> [> `OnLoadStart ] XHTML5.T.attrib
+      val a_onmessage : XML.event -> [> `OnMessage ] XHTML5.T.attrib
+      val a_version : Xhtml5types.cdata -> [> `Version ] XHTML5.T.attrib
+      val a_xmlns : [< `W3_org_1999_xhtml ] -> [> `XMLns ] XHTML5.T.attrib
+      val a_manifest : XHTML5.T.uri -> [> `Manifest ] XHTML5.T.attrib
+      val a_cite : XHTML5.T.uri -> [> `Cite ] XHTML5.T.attrib
+      val a_xml_space : [< `Preserve ] -> [> `XML_space ] XHTML5.T.attrib
+      val a_accesskey :
+        Xhtml5types.character -> [> `Accesskey ] XHTML5.T.attrib
+      val a_charset : Xhtml5types.charset -> [> `Charset ] XHTML5.T.attrib
+      val a_accept_charset :
+        Xhtml5types.charsets -> [> `Accept_charset ] XHTML5.T.attrib
+      val a_accept : Xhtml5types.contenttypes -> [> `Accept ] XHTML5.T.attrib
+      val a_href : XHTML5.T.uri -> [> `Href ] XHTML5.T.attrib
+      val a_hreflang :
+        Xhtml5types.languagecode -> [> `Hreflang ] XHTML5.T.attrib
+      val a_rel : Xhtml5types.linktypes -> [> `Rel ] XHTML5.T.attrib
+      val a_tabindex : Xhtml5types.number -> [> `Tabindex ] XHTML5.T.attrib
+      val a_mime_type :
+        Xhtml5types.contenttype -> [> `Mime_type ] XHTML5.T.attrib
+      val a_datetime : Xhtml5types.cdata -> [> `Datetime ] XHTML5.T.attrib
+      val a_action : XHTML5.T.uri -> [> `Action ] XHTML5.T.attrib
+      val a_checked : [< `Checked ] -> [> `Checked ] XHTML5.T.attrib
+      val a_cols : Xhtml5types.number -> [> `Cols ] XHTML5.T.attrib
+      val a_enctype :
+        Xhtml5types.contenttype -> [> `Enctype ] XHTML5.T.attrib
+      val a_for : Xhtml5types.idref -> [> `For ] XHTML5.T.attrib
+      val a_for_list : Xhtml5types.idrefs -> [> `For_List ] XHTML5.T.attrib
+      val a_maxlength : Xhtml5types.number -> [> `Maxlength ] XHTML5.T.attrib
+      val a_method :
+        [< `Delete | `Get | `Post | `Put ] -> [> `Method ] XHTML5.T.attrib
+      val a_multiple : [< `Multiple ] -> [> `Multiple ] XHTML5.T.attrib
+      val a_name : Xhtml5types.text -> [> `Name ] XHTML5.T.attrib
+      val a_rows : Xhtml5types.number -> [> `Rows ] XHTML5.T.attrib
+      val a_selected : [< `Selected ] -> [> `Selected ] XHTML5.T.attrib
+      val a_size : Xhtml5types.number -> [> `Size ] XHTML5.T.attrib
+      val a_src : XHTML5.T.uri -> [> `Src ] XHTML5.T.attrib
+      val a_input_type :
+        [< `Button
+         | `Checkbox
+         | `Color
+         | `Date
+         | `Datetime
+         | `Datetime_local
+         | `Email
+         | `File
+         | `Hidden
+         | `Image
+         | `Month
+         | `Number
+         | `Password
+         | `Radio
+         | `Range
+         | `Reset
+         | `Search
+         | `Submit
+         | `Tel
+         | `Text
+         | `Time
+         | `Url
+         | `Week ] ->
+        [> `Input_Type ] XHTML5.T.attrib
+      val a_text_value : Xhtml5types.text -> [> `Text_Value ] XHTML5.T.attrib
+      val a_int_value : Xhtml5types.number -> [> `Int_Value ] XHTML5.T.attrib
+      val a_value : Xhtml5types.cdata -> [> `Value ] XHTML5.T.attrib
+      val a_float_value :
+        Xhtml5types.float_number -> [> `Float_Value ] XHTML5.T.attrib
+      val a_disabled : [< `Disabled ] -> [> `Disabled ] XHTML5.T.attrib
+      val a_readonly : [< `Readonly ] -> [> `Readonly ] XHTML5.T.attrib
+      val a_button_type :
+        [< `Button | `Reset | `Submit ] -> [> `Button_Type ] XHTML5.T.attrib
+      val a_command_type :
+        [< `Checkbox | `Command | `Radio ] ->
+        [> `Command_Type ] XHTML5.T.attrib
+      val a_menu_type :
+        [< `Context | `Toolbar ] -> [> `Menu_Type ] XHTML5.T.attrib
+      val a_label : Xhtml5types.text -> [> `Label ] XHTML5.T.attrib
+      val a_align :
+        [< `Char | `Justify | `Left | `Right ] -> [> `Align ] XHTML5.T.attrib
+      val a_axis : Xhtml5types.cdata -> [> `Axis ] XHTML5.T.attrib
+      val a_colspan : Xhtml5types.number -> [> `Colspan ] XHTML5.T.attrib
+      val a_headers : Xhtml5types.idrefs -> [> `Headers ] XHTML5.T.attrib
+      val a_rowspan : Xhtml5types.number -> [> `Rowspan ] XHTML5.T.attrib
+      val a_scope :
+        [< `Col | `Colgroup | `Row | `Rowgroup ] ->
+        [> `Scope ] XHTML5.T.attrib
+      val a_summary : Xhtml5types.text -> [> `Summary ] XHTML5.T.attrib
+      val a_border : Xhtml5types.pixels -> [> `Border ] XHTML5.T.attrib
+      val a_cellpadding :
+        Xhtml5types.length -> [> `Cellpadding ] XHTML5.T.attrib
+      val a_cellspacing :
+        Xhtml5types.length -> [> `Cellspacing ] XHTML5.T.attrib
+      val a_datapagesize :
+        Xhtml5types.cdata -> [> `Datapagesize ] XHTML5.T.attrib
+      val a_rules :
+        [< `All | `Cols | `Groups | `None | `Rows ] ->
+        [> `Rules ] XHTML5.T.attrib
+      val a_char : Xhtml5types.character -> [> `Char ] XHTML5.T.attrib
+      val a_charoff : Xhtml5types.length -> [> `Charoff ] XHTML5.T.attrib
+      val a_alt : Xhtml5types.text -> [> `Alt ] XHTML5.T.attrib
+      val a_height : Xhtml5types.number -> [> `Height ] XHTML5.T.attrib
+      val a_width : Xhtml5types.number -> [> `Width ] XHTML5.T.attrib
+      type shape = [ `Circle | `Default | `Poly | `Rect ]
+      val a_shape : XHTML5.T.shape -> [> `Shape ] XHTML5.T.attrib
+      val a_coords : Xhtml5types.numbers -> [> `Coords ] XHTML5.T.attrib
+      val a_usemap : Xhtml5types.idref -> [> `Usemap ] XHTML5.T.attrib
+      val a_data : XHTML5.T.uri -> [> `Data ] XHTML5.T.attrib
+      val a_codetype :
+        Xhtml5types.contenttype -> [> `Codetype ] XHTML5.T.attrib
+      val a_fs_rows :
+        Xhtml5types.multilengths -> [> `FS_Rows ] XHTML5.T.attrib
+      val a_fs_cols :
+        Xhtml5types.multilengths -> [> `FS_Cols ] XHTML5.T.attrib
+      val a_frameborder :
+        [< `One | `Zero ] -> [> `Frameborder ] XHTML5.T.attrib
+      val a_marginheight :
+        Xhtml5types.pixels -> [> `Marginheight ] XHTML5.T.attrib
+      val a_marginwidth :
+        Xhtml5types.pixels -> [> `Marginwidth ] XHTML5.T.attrib
+      val a_scrolling :
+        [< `Auto | `No | `Yes ] -> [> `Scrolling ] XHTML5.T.attrib
+      val a_target : Xhtml5types.frametarget -> [> `Target ] XHTML5.T.attrib
+      val a_content : Xhtml5types.text -> [> `Content ] XHTML5.T.attrib
+      val a_http_equiv : Xhtml5types.text -> [> `Http_equiv ] XHTML5.T.attrib
+      val a_defer : [< `Defer ] -> [> `Defer ] XHTML5.T.attrib
+      val a_media : Xhtml5types.mediadesc -> [> `Media ] XHTML5.T.attrib
+      val a_style : string -> [> `Style_Attr ] XHTML5.T.attrib
+      type +'a elt
+      type ('a, 'b) nullary =
+          ?a:'a XHTML5.T.attrib list -> unit -> 'b XHTML5.T.elt
+      type ('a, 'b, 'c) unary =
+          ?a:'a XHTML5.T.attrib list -> 'b XHTML5.T.elt -> 'c XHTML5.T.elt
+      type ('a, 'b, 'c, 'd) binary =
+          ?a:'a XHTML5.T.attrib list ->
+          'b XHTML5.T.elt -> 'c XHTML5.T.elt -> 'd XHTML5.T.elt
+      type ('a, 'b, 'c, 'd) tri =
+          'a XHTML5.T.elt ->
+          'b XHTML5.T.elt -> 'c XHTML5.T.elt -> 'd XHTML5.T.elt
+      type ('a, 'b, 'c) star =
+          ?a:'a XHTML5.T.attrib list ->
+          'b XHTML5.T.elt list -> 'c XHTML5.T.elt
+      type ('a, 'b, 'c) plus =
+          ?a:'a XHTML5.T.attrib list ->
+          'b XHTML5.T.elt -> 'b XHTML5.T.elt list -> 'c XHTML5.T.elt
+      type html = [ `Html ] XHTML5.T.elt
+      type rt =
+          [ `Rpt of
+              [ `Rp ] XHTML5.T.elt * [ `Rt ] XHTML5.T.elt *
+              [ `Rp ] XHTML5.T.elt
+          | `Rt of [ `Rt ] XHTML5.T.elt ]
+      type ruby_content =
+          Xhtml5types.phrasing XHTML5.T.elt list * XHTML5.T.rt
+      type rp =
+          Xhtml5types.common XHTML5.T.attrib list *
+          Xhtml5types.phrasing XHTML5.T.elt list
+      val html :
+        ?a:Xhtml5types.html_attrib XHTML5.T.attrib list ->
+        [< `Head ] XHTML5.T.elt ->
+        [< `Body ] XHTML5.T.elt -> [> `Html ] XHTML5.T.elt
+      val head :
+        ?a:Xhtml5types.head_attrib XHTML5.T.attrib list ->
+        [< `Title ] XHTML5.T.elt ->
+        Xhtml5types.head_content_fun XHTML5.T.elt list ->
+        [> Xhtml5types.head ] XHTML5.T.elt
+      val base :
+        ([< Xhtml5types.base_attrib ], [> Xhtml5types.base ])
+        XHTML5.T.nullary
+      val title :
+        (Xhtml5types.title_attrib, [< Xhtml5types.title_content_fun ],
+         [> Xhtml5types.title ])
+        XHTML5.T.unary
+      val body :
+        ([< Xhtml5types.body_attrib ], [< Xhtml5types.body_content_fun ],
+         [> Xhtml5types.body ])
+        XHTML5.T.star
+      val svg :
+        ?xmlns:string ->
+        ?a:[< Xhtml5types.svg_attrib ] SVG.M.attrib list ->
+        [< Xhtml5types.svg_content ] SVG.M.elt list ->
+        [> Xhtml5types.svg ] XHTML5.T.elt
+      val footer :
+        ([< Xhtml5types.common ],
+         [< Xhtml5types.flow5_without_header_footer ], [> `Footer ])
+        XHTML5.T.star
+      val header :
+        ([< Xhtml5types.common ],
+         [< Xhtml5types.flow5_without_header_footer ], [> `Header ])
+        XHTML5.T.star
+      val section :
+        ([< Xhtml5types.section_attrib ],
+         [< Xhtml5types.section_content_fun ], [> Xhtml5types.section ])
+        XHTML5.T.star
+      val nav :
+        ([< Xhtml5types.nav_attrib ], [< Xhtml5types.nav_content_fun ],
+         [> Xhtml5types.nav ])
+        XHTML5.T.star
+      val h1 :
+        ([< Xhtml5types.h1_attrib ], [< Xhtml5types.h1_content_fun ],
+         [> Xhtml5types.h1 ])
+        XHTML5.T.star
+      val h2 :
+        ([< Xhtml5types.h2_attrib ], [< Xhtml5types.h2_content_fun ],
+         [> Xhtml5types.h2 ])
+        XHTML5.T.star
+      val h3 :
+        ([< Xhtml5types.h3_attrib ], [< Xhtml5types.h3_content_fun ],
+         [> Xhtml5types.h3 ])
+        XHTML5.T.star
+      val h4 :
+        ([< Xhtml5types.h4_attrib ], [< Xhtml5types.h4_content_fun ],
+         [> Xhtml5types.h4 ])
+        XHTML5.T.star
+      val h5 :
+        ([< Xhtml5types.h5_attrib ], [< Xhtml5types.h5_content_fun ],
+         [> Xhtml5types.h5 ])
+        XHTML5.T.star
+      val h6 :
+        ([< Xhtml5types.h6_attrib ], [< Xhtml5types.h6_content_fun ],
+         [> Xhtml5types.h6 ])
+        XHTML5.T.star
+      val hgroup :
+        ([< Xhtml5types.hgroup_attrib ], [< Xhtml5types.hgroup_content_fun ],
+         [> Xhtml5types.hgroup ])
+        XHTML5.T.plus
+      val address :
+        ([< Xhtml5types.address_attrib ],
+         [< Xhtml5types.address_content_fun ], [> Xhtml5types.address ])
+        XHTML5.T.star
+      val article :
+        ([< Xhtml5types.article_attrib ],
+         [< Xhtml5types.article_content_fun ], [> Xhtml5types.article ])
+        XHTML5.T.star
+      val aside :
+        ([< Xhtml5types.aside_attrib ], [< Xhtml5types.aside_content_fun ],
+         [> Xhtml5types.aside ])
+        XHTML5.T.star
+      val p :
+        ([< Xhtml5types.p_attrib ], [< Xhtml5types.p_content_fun ],
+         [> Xhtml5types.p ])
+        XHTML5.T.star
+      val pre :
+        ([< Xhtml5types.pre_attrib ], [< Xhtml5types.pre_content_fun ],
+         [> Xhtml5types.pre ])
+        XHTML5.T.star
+      val blockquote :
+        ([< Xhtml5types.blockquote_attrib ],
+         [< Xhtml5types.blockquote_content_fun ],
+         [> Xhtml5types.blockquote ])
+        XHTML5.T.star
+      val div :
+        ([< Xhtml5types.div_attrib ], [< Xhtml5types.div_content_fun ],
+         [> Xhtml5types.div ])
+        XHTML5.T.star
+      val dl :
+        ?a:[< Xhtml5types.common ] XHTML5.T.attrib list ->
+        (([< `Dt ] XHTML5.T.elt * [< `Dt ] XHTML5.T.elt list) *
+         ([< `Dd ] XHTML5.T.elt * [< `Dd ] XHTML5.T.elt list))
+        list -> [> `Dl ] XHTML5.T.elt
+      val ol :
+        ([< Xhtml5types.ol_attrib ], [< Xhtml5types.ol_content_fun ],
+         [> Xhtml5types.ol ])
+        XHTML5.T.star
+      val ul :
+        ([< Xhtml5types.ul_attrib ], [< Xhtml5types.ul_content_fun ],
+         [> Xhtml5types.ul ])
+        XHTML5.T.star
+      val dd :
+        ([< Xhtml5types.dd_attrib ], [< Xhtml5types.dd_content_fun ],
+         [> Xhtml5types.dd ])
+        XHTML5.T.star
+      val dt :
+        ([< Xhtml5types.dt_attrib ], [< Xhtml5types.dt_content_fun ],
+         [> Xhtml5types.dt ])
+        XHTML5.T.star
+      val li :
+        ([< Xhtml5types.li_attrib ], [< Xhtml5types.li_content_fun ],
+         [> Xhtml5types.li ])
+        XHTML5.T.star
+      val figcaption :
+        ([< Xhtml5types.figcaption_attrib ],
+         [< Xhtml5types.figcaption_content_fun ],
+         [> Xhtml5types.figcaption ])
+        XHTML5.T.star
+      val figure :
+        ?figcaption:[< `Figcaption ] XHTML5.T.elt ->
+        ([< Xhtml5types.common ], [< Xhtml5types.flow5 ], [> `Figure ])
+        XHTML5.T.star
+      val hr :
+        ([< Xhtml5types.hr_attrib ], [> Xhtml5types.hr ]) XHTML5.T.nullary
+      val rt :
+        ?rp:XHTML5.T.rp * XHTML5.T.rp ->
+        ?a:[< Xhtml5types.common ] XHTML5.T.attrib list ->
+        [< Xhtml5types.phrasing ] XHTML5.T.elt list -> XHTML5.T.rt
+      val rp :
+        ?a:[< Xhtml5types.common ] XHTML5.T.attrib list ->
+        [< Xhtml5types.phrasing ] XHTML5.T.elt list -> XHTML5.T.rp
+      val ruby :
+        ?a:[< Xhtml5types.common ] XHTML5.T.attrib list ->
+        XHTML5.T.ruby_content ->
+        XHTML5.T.ruby_content list -> [> `Ruby ] XHTML5.T.elt
+      val b :
+        ([< Xhtml5types.b_attrib ], [< Xhtml5types.b_content_fun ],
+         [> Xhtml5types.b ])
+        XHTML5.T.star
+      val i :
+        ([< Xhtml5types.i_attrib ], [< Xhtml5types.i_content_fun ],
+         [> Xhtml5types.i ])
+        XHTML5.T.star
+      val small :
+        ([< Xhtml5types.small_attrib ], [< Xhtml5types.small_content_fun ],
+         [> Xhtml5types.small ])
+        XHTML5.T.star
+      val sub :
+        ([< Xhtml5types.sub_attrib ], [< Xhtml5types.sub_content_fun ],
+         [> Xhtml5types.sub ])
+        XHTML5.T.star
+      val sup :
+        ([< Xhtml5types.sup_attrib ], [< Xhtml5types.sup_content_fun ],
+         [> Xhtml5types.sup ])
+        XHTML5.T.star
+      val mark :
+        ([< Xhtml5types.mark_attrib ], [< Xhtml5types.mark_content_fun ],
+         [> Xhtml5types.mark ])
+        XHTML5.T.star
+      val wbr :
+        ([< Xhtml5types.wbr_attrib ], [> Xhtml5types.wbr ]) XHTML5.T.nullary
+      val bdo :
+        dir:[< `Ltr | `Rtl ] ->
+        ([< Xhtml5types.common ], [< Xhtml5types.phrasing ], [> `Bdo ])
+        XHTML5.T.star
+      val abbr :
+        ([< Xhtml5types.abbr_attrib ], [< Xhtml5types.abbr_content_fun ],
+         [> Xhtml5types.abbr ])
+        XHTML5.T.star
+      val br :
+        ([< Xhtml5types.br_attrib ], [> Xhtml5types.br ]) XHTML5.T.nullary
+      val cite :
+        ([< Xhtml5types.cite_attrib ], [< Xhtml5types.cite_content_fun ],
+         [> Xhtml5types.cite ])
+        XHTML5.T.star
+      val code :
+        ([< Xhtml5types.code_attrib ], [< Xhtml5types.code_content_fun ],
+         [> Xhtml5types.code ])
+        XHTML5.T.star
+      val dfn :
+        ([< Xhtml5types.dfn_attrib ], [< Xhtml5types.dfn_content_fun ],
+         [> Xhtml5types.dfn ])
+        XHTML5.T.star
+      val em :
+        ([< Xhtml5types.em_attrib ], [< Xhtml5types.em_content_fun ],
+         [> Xhtml5types.em ])
+        XHTML5.T.star
+      val kbd :
+        ([< Xhtml5types.kbd_attrib ], [< Xhtml5types.kbd_content_fun ],
+         [> Xhtml5types.kbd ])
+        XHTML5.T.star
+      val q :
+        ([< Xhtml5types.q_attrib ], [< Xhtml5types.q_content_fun ],
+         [> Xhtml5types.q ])
+        XHTML5.T.star
+      val samp :
+        ([< Xhtml5types.samp_attrib ], [< Xhtml5types.samp_content_fun ],
+         [> Xhtml5types.samp ])
+        XHTML5.T.star
+      val span :
+        ([< Xhtml5types.span_attrib ], [< Xhtml5types.span_content_fun ],
+         [> Xhtml5types.span ])
+        XHTML5.T.star
+      val strong :
+        ([< Xhtml5types.strong_attrib ], [< Xhtml5types.strong_content_fun ],
+         [> Xhtml5types.strong ])
+        XHTML5.T.star
+      val time :
+        ([< Xhtml5types.time_attrib ], [< Xhtml5types.time_content_fun ],
+         [> Xhtml5types.time ])
+        XHTML5.T.star
+      val var :
+        ([< Xhtml5types.var_attrib ], [< Xhtml5types.var_content_fun ],
+         [> Xhtml5types.var ])
+        XHTML5.T.star
+      val a : ([< Xhtml5types.a_attrib ], 'a, [> `A of 'a ]) XHTML5.T.star
+      val del :
+        ([< Xhtml5types.del_attrib ], 'a, [> `Del of 'a ]) XHTML5.T.star
+      val ins :
+        ([< Xhtml5types.ins_attrib ], 'a, [> `Ins of 'a ]) XHTML5.T.star
+      val img :
+        src:XHTML5.T.uri ->
+        alt:Xhtml5types.text ->
+        ([< `Accesskey
+          | `Class
+          | `Contenteditable
+          | `Contextmenu
+          | `Dir
+          | `Draggable
+          | `Height
+          | `Hidden
+          | `Id
+          | `Ismap
+          | `OnAbort
+          | `OnBlur
+          | `OnCanPlay
+          | `OnCanPlayThrough
+          | `OnChange
+          | `OnClick
+          | `OnContextMenu
+          | `OnDblClick
+          | `OnDrag
+          | `OnDragEnd
+          | `OnDragEnter
+          | `OnDragLeave
+          | `OnDragOver
+          | `OnDragStart
+          | `OnDrop
+          | `OnDurationChange
+          | `OnEmptied
+          | `OnEnded
+          | `OnError
+          | `OnFocus
+          | `OnFormChange
+          | `OnFormInput
+          | `OnInput
+          | `OnInvalid
+          | `OnKeyDown
+          | `OnKeyPress
+          | `OnKeyUp
+          | `OnLoad
+          | `OnLoadStart
+          | `OnLoadedData
+          | `OnLoadedMetaData
+          | `OnMouseDown
+          | `OnMouseMove
+          | `OnMouseOut
+          | `OnMouseOver
+          | `OnMouseUp
+          | `OnMouseWheel
+          | `OnPause
+          | `OnPlay
+          | `OnPlaying
+          | `OnProgress
+          | `OnRateChange
+          | `OnReadyStateChange
+          | `OnScroll
+          | `OnSeeked
+          | `OnSeeking
+          | `OnSelect
+          | `OnShow
+          | `OnStalled
+          | `OnSubmit
+          | `OnSuspend
+          | `OnTimeUpdate
+          | `OnVolumeChange
+          | `OnWaiting
+          | `Spellcheck
+          | `Style_Attr
+          | `Tabindex
+          | `Title
+          | `User_data
+          | `Width
+          | `XML_lang ],
+         [> `Img ])
+        XHTML5.T.nullary
+      val iframe :
+        ([< `Accesskey
+          | `Class
+          | `Contenteditable
+          | `Contextmenu
+          | `Dir
+          | `Draggable
+          | `Height
+          | `Hidden
+          | `Id
+          | `Name
+          | `OnAbort
+          | `OnBlur
+          | `OnCanPlay
+          | `OnCanPlayThrough
+          | `OnChange
+          | `OnClick
+          | `OnContextMenu
+          | `OnDblClick
+          | `OnDrag
+          | `OnDragEnd
+          | `OnDragEnter
+          | `OnDragLeave
+          | `OnDragOver
+          | `OnDragStart
+          | `OnDrop
+          | `OnDurationChange
+          | `OnEmptied
+          | `OnEnded
+          | `OnError
+          | `OnFocus
+          | `OnFormChange
+          | `OnFormInput
+          | `OnInput
+          | `OnInvalid
+          | `OnKeyDown
+          | `OnKeyPress
+          | `OnKeyUp
+          | `OnLoad
+          | `OnLoadStart
+          | `OnLoadedData
+          | `OnLoadedMetaData
+          | `OnMouseDown
+          | `OnMouseMove
+          | `OnMouseOut
+          | `OnMouseOver
+          | `OnMouseUp
+          | `OnMouseWheel
+          | `OnPause
+          | `OnPlay
+          | `OnPlaying
+          | `OnProgress
+          | `OnRateChange
+          | `OnReadyStateChange
+          | `OnScroll
+          | `OnSeeked
+          | `OnSeeking
+          | `OnSelect
+          | `OnShow
+          | `OnStalled
+          | `OnSubmit
+          | `OnSuspend
+          | `OnTimeUpdate
+          | `OnVolumeChange
+          | `OnWaiting
+          | `Sandbox
+          | `Seamless
+          | `Spellcheck
+          | `Src
+          | `Style_Attr
+          | `Tabindex
+          | `Title
+          | `User_data
+          | `Width
+          | `XML_lang ],
+         [< `PCDATA ], [> `Iframe ])
+        XHTML5.T.star
+      val object_ :
+        ?params:[< `Param ] XHTML5.T.elt list ->
+        ([< `Accesskey
+          | `Class
+          | `Contenteditable
+          | `Contextmenu
+          | `Data
+          | `Dir
+          | `Draggable
+          | `Form
+          | `Height
+          | `Hidden
+          | `Id
+          | `Mime_type
+          | `Name
+          | `OnAbort
+          | `OnBlur
+          | `OnCanPlay
+          | `OnCanPlayThrough
+          | `OnChange
+          | `OnClick
+          | `OnContextMenu
+          | `OnDblClick
+          | `OnDrag
+          | `OnDragEnd
+          | `OnDragEnter
+          | `OnDragLeave
+          | `OnDragOver
+          | `OnDragStart
+          | `OnDrop
+          | `OnDurationChange
+          | `OnEmptied
+          | `OnEnded
+          | `OnError
+          | `OnFocus
+          | `OnFormChange
+          | `OnFormInput
+          | `OnInput
+          | `OnInvalid
+          | `OnKeyDown
+          | `OnKeyPress
+          | `OnKeyUp
+          | `OnLoad
+          | `OnLoadStart
+          | `OnLoadedData
+          | `OnLoadedMetaData
+          | `OnMouseDown
+          | `OnMouseMove
+          | `OnMouseOut
+          | `OnMouseOver
+          | `OnMouseUp
+          | `OnMouseWheel
+          | `OnPause
+          | `OnPlay
+          | `OnPlaying
+          | `OnProgress
+          | `OnRateChange
+          | `OnReadyStateChange
+          | `OnScroll
+          | `OnSeeked
+          | `OnSeeking
+          | `OnSelect
+          | `OnShow
+          | `OnStalled
+          | `OnSubmit
+          | `OnSuspend
+          | `OnTimeUpdate
+          | `OnVolumeChange
+          | `OnWaiting
+          | `Spellcheck
+          | `Style_Attr
+          | `Tabindex
+          | `Title
+          | `Usemap
+          | `User_data
+          | `Width
+          | `XML_lang ],
+         'a, [> `Object of 'a ])
+        XHTML5.T.star
+      val param :
+        ([< Xhtml5types.param_attrib ], [> Xhtml5types.param ])
+        XHTML5.T.nullary
+      val embed :
+        ([< `Accesskey
+          | `Class
+          | `Contenteditable
+          | `Contextmenu
+          | `Dir
+          | `Draggable
+          | `Height
+          | `Hidden
+          | `Id
+          | `Mime_type
+          | `OnAbort
+          | `OnBlur
+          | `OnCanPlay
+          | `OnCanPlayThrough
+          | `OnChange
+          | `OnClick
+          | `OnContextMenu
+          | `OnDblClick
+          | `OnDrag
+          | `OnDragEnd
+          | `OnDragEnter
+          | `OnDragLeave
+          | `OnDragOver
+          | `OnDragStart
+          | `OnDrop
+          | `OnDurationChange
+          | `OnEmptied
+          | `OnEnded
+          | `OnError
+          | `OnFocus
+          | `OnFormChange
+          | `OnFormInput
+          | `OnInput
+          | `OnInvalid
+          | `OnKeyDown
+          | `OnKeyPress
+          | `OnKeyUp
+          | `OnLoad
+          | `OnLoadStart
+          | `OnLoadedData
+          | `OnLoadedMetaData
+          | `OnMouseDown
+          | `OnMouseMove
+          | `OnMouseOut
+          | `OnMouseOver
+          | `OnMouseUp
+          | `OnMouseWheel
+          | `OnPause
+          | `OnPlay
+          | `OnPlaying
+          | `OnProgress
+          | `OnRateChange
+          | `OnReadyStateChange
+          | `OnScroll
+          | `OnSeeked
+          | `OnSeeking
+          | `OnSelect
+          | `OnShow
+          | `OnStalled
+          | `OnSubmit
+          | `OnSuspend
+          | `OnTimeUpdate
+          | `OnVolumeChange
+          | `OnWaiting
+          | `Spellcheck
+          | `Src
+          | `Style_Attr
+          | `Tabindex
+          | `Title
+          | `User_data
+          | `Width
+          | `XML_lang ],
+         [> `Embed ])
+        XHTML5.T.nullary
+      val audio :
+        ?srcs:XHTML5.T.uri * [< `Source ] XHTML5.T.elt list ->
+        ([< `Accesskey
+          | `Autoplay
+          | `Class
+          | `Contenteditable
+          | `Contextmenu
+          | `Controls
+          | `Dir
+          | `Draggable
+          | `Hidden
+          | `Id
+          | `Loop
+          | `OnAbort
+          | `OnBlur
+          | `OnCanPlay
+          | `OnCanPlayThrough
+          | `OnChange
+          | `OnClick
+          | `OnContextMenu
+          | `OnDblClick
+          | `OnDrag
+          | `OnDragEnd
+          | `OnDragEnter
+          | `OnDragLeave
+          | `OnDragOver
+          | `OnDragStart
+          | `OnDrop
+          | `OnDurationChange
+          | `OnEmptied
+          | `OnEnded
+          | `OnError
+          | `OnFocus
+          | `OnFormChange
+          | `OnFormInput
+          | `OnInput
+          | `OnInvalid
+          | `OnKeyDown
+          | `OnKeyPress
+          | `OnKeyUp
+          | `OnLoad
+          | `OnLoadStart
+          | `OnLoadedData
+          | `OnLoadedMetaData
+          | `OnMouseDown
+          | `OnMouseMove
+          | `OnMouseOut
+          | `OnMouseOver
+          | `OnMouseUp
+          | `OnMouseWheel
+          | `OnPause
+          | `OnPlay
+          | `OnPlaying
+          | `OnProgress
+          | `OnRateChange
+          | `OnReadyStateChange
+          | `OnScroll
+          | `OnSeeked
+          | `OnSeeking
+          | `OnSelect
+          | `OnShow
+          | `OnStalled
+          | `OnSubmit
+          | `OnSuspend
+          | `OnTimeUpdate
+          | `OnVolumeChange
+          | `OnWaiting
+          | `Preload
+          | `Spellcheck
+          | `Style_Attr
+          | `Tabindex
+          | `Title
+          | `User_data
+          | `XML_lang ],
+         'a, [> `Audio of 'a ])
+        XHTML5.T.star
+      val video :
+        ?srcs:XHTML5.T.uri * [< `Source ] XHTML5.T.elt list ->
+        ([< `Accesskey
+          | `Autoplay
+          | `Class
+          | `Contenteditable
+          | `Contextmenu
+          | `Controls
+          | `Dir
+          | `Draggable
+          | `Height
+          | `Hidden
+          | `Id
+          | `Loop
+          | `OnAbort
+          | `OnBlur
+          | `OnCanPlay
+          | `OnCanPlayThrough
+          | `OnChange
+          | `OnClick
+          | `OnContextMenu
+          | `OnDblClick
+          | `OnDrag
+          | `OnDragEnd
+          | `OnDragEnter
+          | `OnDragLeave
+          | `OnDragOver
+          | `OnDragStart
+          | `OnDrop
+          | `OnDurationChange
+          | `OnEmptied
+          | `OnEnded
+          | `OnError
+          | `OnFocus
+          | `OnFormChange
+          | `OnFormInput
+          | `OnInput
+          | `OnInvalid
+          | `OnKeyDown
+          | `OnKeyPress
+          | `OnKeyUp
+          | `OnLoad
+          | `OnLoadStart
+          | `OnLoadedData
+          | `OnLoadedMetaData
+          | `OnMouseDown
+          | `OnMouseMove
+          | `OnMouseOut
+          | `OnMouseOver
+          | `OnMouseUp
+          | `OnMouseWheel
+          | `OnPause
+          | `OnPlay
+          | `OnPlaying
+          | `OnProgress
+          | `OnRateChange
+          | `OnReadyStateChange
+          | `OnScroll
+          | `OnSeeked
+          | `OnSeeking
+          | `OnSelect
+          | `OnShow
+          | `OnStalled
+          | `OnSubmit
+          | `OnSuspend
+          | `OnTimeUpdate
+          | `OnVolumeChange
+          | `OnWaiting
+          | `Poster
+          | `Preload
+          | `Spellcheck
+          | `Style_Attr
+          | `Tabindex
+          | `Title
+          | `User_data
+          | `Width
+          | `XML_lang ],
+         'a, [> `Video of 'a ])
+        XHTML5.T.star
+      val canvas :
+        ([< Xhtml5types.canvas_attrib ], 'a, [> `Canvas of 'a ])
+        XHTML5.T.star
+      val source :
+        ([< Xhtml5types.source_attrib ], [> Xhtml5types.source ])
+        XHTML5.T.nullary
+      val area :
+        alt:Xhtml5types.text ->
+        ([< `Accesskey
+          | `Alt
+          | `Class
+          | `Contenteditable
+          | `Contextmenu
+          | `Coords
+          | `Dir
+          | `Draggable
+          | `Hidden
+          | `Hreflang
+          | `Id
+          | `Media
+          | `Mime_type
+          | `OnAbort
+          | `OnBlur
+          | `OnCanPlay
+          | `OnCanPlayThrough
+          | `OnChange
+          | `OnClick
+          | `OnContextMenu
+          | `OnDblClick
+          | `OnDrag
+          | `OnDragEnd
+          | `OnDragEnter
+          | `OnDragLeave
+          | `OnDragOver
+          | `OnDragStart
+          | `OnDrop
+          | `OnDurationChange
+          | `OnEmptied
+          | `OnEnded
+          | `OnError
+          | `OnFocus
+          | `OnFormChange
+          | `OnFormInput
+          | `OnInput
+          | `OnInvalid
+          | `OnKeyDown
+          | `OnKeyPress
+          | `OnKeyUp
+          | `OnLoad
+          | `OnLoadStart
+          | `OnLoadedData
+          | `OnLoadedMetaData
+          | `OnMouseDown
+          | `OnMouseMove
+          | `OnMouseOut
+          | `OnMouseOver
+          | `OnMouseUp
+          | `OnMouseWheel
+          | `OnPause
+          | `OnPlay
+          | `OnPlaying
+          | `OnProgress
+          | `OnRateChange
+          | `OnReadyStateChange
+          | `OnScroll
+          | `OnSeeked
+          | `OnSeeking
+          | `OnSelect
+          | `OnShow
+          | `OnStalled
+          | `OnSubmit
+          | `OnSuspend
+          | `OnTimeUpdate
+          | `OnVolumeChange
+          | `OnWaiting
+          | `Rel
+          | `Shape
+          | `Spellcheck
+          | `Style_Attr
+          | `Tabindex
+          | `Target
+          | `Title
+          | `User_data
+          | `XML_lang ],
+         [> `Area ])
+        XHTML5.T.nullary
+      val map :
+        ([< Xhtml5types.map_attrib ], 'a, [> `A of 'a ]) XHTML5.T.plus
+      val caption :
+        ([< Xhtml5types.caption_attrib ],
+         [< Xhtml5types.caption_content_fun ], [> Xhtml5types.caption ])
+        XHTML5.T.star
+      val table :
+        ?caption:[< `Caption ] XHTML5.T.elt ->
+        ?columns:[< `Colgroup ] XHTML5.T.elt list ->
+        ?thead:[< `Thead ] XHTML5.T.elt ->
+        ?tfoot:[< `Tfoot ] XHTML5.T.elt ->
+        ([< `Accesskey
+          | `Class
+          | `Contenteditable
+          | `Contextmenu
+          | `Dir
+          | `Draggable
+          | `Hidden
+          | `Id
+          | `OnAbort
+          | `OnBlur
+          | `OnCanPlay
+          | `OnCanPlayThrough
+          | `OnChange
+          | `OnClick
+          | `OnContextMenu
+          | `OnDblClick
+          | `OnDrag
+          | `OnDragEnd
+          | `OnDragEnter
+          | `OnDragLeave
+          | `OnDragOver
+          | `OnDragStart
+          | `OnDrop
+          | `OnDurationChange
+          | `OnEmptied
+          | `OnEnded
+          | `OnError
+          | `OnFocus
+          | `OnFormChange
+          | `OnFormInput
+          | `OnInput
+          | `OnInvalid
+          | `OnKeyDown
+          | `OnKeyPress
+          | `OnKeyUp
+          | `OnLoad
+          | `OnLoadStart
+          | `OnLoadedData
+          | `OnLoadedMetaData
+          | `OnMouseDown
+          | `OnMouseMove
+          | `OnMouseOut
+          | `OnMouseOver
+          | `OnMouseUp
+          | `OnMouseWheel
+          | `OnPause
+          | `OnPlay
+          | `OnPlaying
+          | `OnProgress
+          | `OnRateChange
+          | `OnReadyStateChange
+          | `OnScroll
+          | `OnSeeked
+          | `OnSeeking
+          | `OnSelect
+          | `OnShow
+          | `OnStalled
+          | `OnSubmit
+          | `OnSuspend
+          | `OnTimeUpdate
+          | `OnVolumeChange
+          | `OnWaiting
+          | `Spellcheck
+          | `Style_Attr
+          | `Summary
+          | `Tabindex
+          | `Title
+          | `User_data
+          | `XML_lang ],
+         [< `Tr ], [> `Table ])
+        XHTML5.T.plus
+      val tablex :
+        ?caption:[< `Caption ] XHTML5.T.elt ->
+        ?columns:[< `Colgroup ] XHTML5.T.elt list ->
+        ?thead:[< `Thead ] XHTML5.T.elt ->
+        ?tfoot:[< `Tfoot ] XHTML5.T.elt ->
+        ([< `Accesskey
+          | `Class
+          | `Contenteditable
+          | `Contextmenu
+          | `Dir
+          | `Draggable
+          | `Hidden
+          | `Id
+          | `OnAbort
+          | `OnBlur
+          | `OnCanPlay
+          | `OnCanPlayThrough
+          | `OnChange
+          | `OnClick
+          | `OnContextMenu
+          | `OnDblClick
+          | `OnDrag
+          | `OnDragEnd
+          | `OnDragEnter
+          | `OnDragLeave
+          | `OnDragOver
+          | `OnDragStart
+          | `OnDrop
+          | `OnDurationChange
+          | `OnEmptied
+          | `OnEnded
+          | `OnError
+          | `OnFocus
+          | `OnFormChange
+          | `OnFormInput
+          | `OnInput
+          | `OnInvalid
+          | `OnKeyDown
+          | `OnKeyPress
+          | `OnKeyUp
+          | `OnLoad
+          | `OnLoadStart
+          | `OnLoadedData
+          | `OnLoadedMetaData
+          | `OnMouseDown
+          | `OnMouseMove
+          | `OnMouseOut
+          | `OnMouseOver
+          | `OnMouseUp
+          | `OnMouseWheel
+          | `OnPause
+          | `OnPlay
+          | `OnPlaying
+          | `OnProgress
+          | `OnRateChange
+          | `OnReadyStateChange
+          | `OnScroll
+          | `OnSeeked
+          | `OnSeeking
+          | `OnSelect
+          | `OnShow
+          | `OnStalled
+          | `OnSubmit
+          | `OnSuspend
+          | `OnTimeUpdate
+          | `OnVolumeChange
+          | `OnWaiting
+          | `Spellcheck
+          | `Style_Attr
+          | `Summary
+          | `Tabindex
+          | `Title
+          | `User_data
+          | `XML_lang ],
+         [< `Tbody ], [> `Table ])
+        XHTML5.T.star
+      val colgroup :
+        ([< Xhtml5types.colgroup_attrib ],
+         [< Xhtml5types.colgroup_content_fun ], [> Xhtml5types.colgroup ])
+        XHTML5.T.star
+      val col :
+        ([< Xhtml5types.col_attrib ], [> Xhtml5types.col ]) XHTML5.T.nullary
+      val thead :
+        ([< Xhtml5types.thead_attrib ], [< Xhtml5types.thead_content_fun ],
+         [> Xhtml5types.thead ])
+        XHTML5.T.star
+      val tbody :
+        ([< Xhtml5types.tbody_attrib ], [< Xhtml5types.tbody_content_fun ],
+         [> Xhtml5types.tbody ])
+        XHTML5.T.star
+      val tfoot :
+        ([< Xhtml5types.tfoot_attrib ], [< Xhtml5types.tfoot_content_fun ],
+         [> Xhtml5types.tfoot ])
+        XHTML5.T.star
+      val td :
+        ([< Xhtml5types.td_attrib ], [< Xhtml5types.td_content_fun ],
+         [> Xhtml5types.td ])
+        XHTML5.T.star
+      val th :
+        ([< Xhtml5types.th_attrib ], [< Xhtml5types.th_content_fun ],
+         [> Xhtml5types.th ])
+        XHTML5.T.star
+      val tr :
+        ([< Xhtml5types.tr_attrib ], [< Xhtml5types.tr_content_fun ],
+         [> Xhtml5types.tr ])
+        XHTML5.T.star
+      val form :
+        ([< Xhtml5types.form_attrib ], [< Xhtml5types.form_content_fun ],
+         [> Xhtml5types.form ])
+        XHTML5.T.plus
+      val fieldset :
+        ?legend:[ `Legend ] XHTML5.T.elt ->
+        ([< `Accesskey
+          | `Class
+          | `Contenteditable
+          | `Contextmenu
+          | `Dir
+          | `Disabled
+          | `Draggable
+          | `Form
+          | `Hidden
+          | `Id
+          | `Name
+          | `OnAbort
+          | `OnBlur
+          | `OnCanPlay
+          | `OnCanPlayThrough
+          | `OnChange
+          | `OnClick
+          | `OnContextMenu
+          | `OnDblClick
+          | `OnDrag
+          | `OnDragEnd
+          | `OnDragEnter
+          | `OnDragLeave
+          | `OnDragOver
+          | `OnDragStart
+          | `OnDrop
+          | `OnDurationChange
+          | `OnEmptied
+          | `OnEnded
+          | `OnError
+          | `OnFocus
+          | `OnFormChange
+          | `OnFormInput
+          | `OnInput
+          | `OnInvalid
+          | `OnKeyDown
+          | `OnKeyPress
+          | `OnKeyUp
+          | `OnLoad
+          | `OnLoadStart
+          | `OnLoadedData
+          | `OnLoadedMetaData
+          | `OnMouseDown
+          | `OnMouseMove
+          | `OnMouseOut
+          | `OnMouseOver
+          | `OnMouseUp
+          | `OnMouseWheel
+          | `OnPause
+          | `OnPlay
+          | `OnPlaying
+          | `OnProgress
+          | `OnRateChange
+          | `OnReadyStateChange
+          | `OnScroll
+          | `OnSeeked
+          | `OnSeeking
+          | `OnSelect
+          | `OnShow
+          | `OnStalled
+          | `OnSubmit
+          | `OnSuspend
+          | `OnTimeUpdate
+          | `OnVolumeChange
+          | `OnWaiting
+          | `Spellcheck
+          | `Style_Attr
+          | `Tabindex
+          | `Title
+          | `User_data
+          | `XML_lang ],
+         [< Xhtml5types.flow5 ], [> `Fieldset ])
+        XHTML5.T.star
+      val legend :
+        ([< Xhtml5types.legend_attrib ], [< Xhtml5types.legend_content_fun ],
+         [> Xhtml5types.legend ])
+        XHTML5.T.star
+      val label :
+        ([< Xhtml5types.label_attrib ], [< Xhtml5types.label_content_fun ],
+         [> Xhtml5types.label ])
+        XHTML5.T.star
+      val input :
+        ([< Xhtml5types.input_attrib ], [> Xhtml5types.input ])
+        XHTML5.T.nullary
+      val button :
+        ([< Xhtml5types.button_attrib ], [< Xhtml5types.button_content_fun ],
+         [> Xhtml5types.button ])
+        XHTML5.T.star
+      val select :
+        ([< Xhtml5types.select_attrib ], [< Xhtml5types.select_content_fun ],
+         [> Xhtml5types.select ])
+        XHTML5.T.star
+      val datalist :
+        ?children:[< `Options of [< `Option ] XHTML5.T.elt list
+                   | `Phras of [< Xhtml5types.phrasing ] XHTML5.T.elt list ] ->
+        ([< Xhtml5types.common ], [> `Datalist ]) XHTML5.T.nullary
+      val optgroup :
+        label:Xhtml5types.text ->
+        ([< `Accesskey
+          | `Class
+          | `Contenteditable
+          | `Contextmenu
+          | `Dir
+          | `Disabled
+          | `Draggable
+          | `Hidden
+          | `Id
+          | `Label
+          | `OnAbort
+          | `OnBlur
+          | `OnCanPlay
+          | `OnCanPlayThrough
+          | `OnChange
+          | `OnClick
+          | `OnContextMenu
+          | `OnDblClick
+          | `OnDrag
+          | `OnDragEnd
+          | `OnDragEnter
+          | `OnDragLeave
+          | `OnDragOver
+          | `OnDragStart
+          | `OnDrop
+          | `OnDurationChange
+          | `OnEmptied
+          | `OnEnded
+          | `OnError
+          | `OnFocus
+          | `OnFormChange
+          | `OnFormInput
+          | `OnInput
+          | `OnInvalid
+          | `OnKeyDown
+          | `OnKeyPress
+          | `OnKeyUp
+          | `OnLoad
+          | `OnLoadStart
+          | `OnLoadedData
+          | `OnLoadedMetaData
+          | `OnMouseDown
+          | `OnMouseMove
+          | `OnMouseOut
+          | `OnMouseOver
+          | `OnMouseUp
+          | `OnMouseWheel
+          | `OnPause
+          | `OnPlay
+          | `OnPlaying
+          | `OnProgress
+          | `OnRateChange
+          | `OnReadyStateChange
+          | `OnScroll
+          | `OnSeeked
+          | `OnSeeking
+          | `OnSelect
+          | `OnShow
+          | `OnStalled
+          | `OnSubmit
+          | `OnSuspend
+          | `OnTimeUpdate
+          | `OnVolumeChange
+          | `OnWaiting
+          | `Spellcheck
+          | `Style_Attr
+          | `Tabindex
+          | `Title
+          | `User_data
+          | `XML_lang ],
+         [< `Option ], [> `Optgroup ])
+        XHTML5.T.star
+      val option :
+        ([< Xhtml5types.option_attrib ], [< Xhtml5types.option_content_fun ],
+         [> Xhtml5types.selectoption ])
+        XHTML5.T.unary
+      val textarea :
+        ([< Xhtml5types.textarea_attrib ],
+         [< Xhtml5types.textarea_content_fun ], [> Xhtml5types.textarea ])
+        XHTML5.T.unary
+      val keygen :
+        ([< Xhtml5types.keygen_attrib ], [> Xhtml5types.keygen ])
+        XHTML5.T.nullary
+      val progress :
+        ([< Xhtml5types.progress_attrib ],
+         [< Xhtml5types.progress_content_fun ], [> Xhtml5types.progress ])
+        XHTML5.T.star
+      val meter :
+        ([< Xhtml5types.meter_attrib ], [< Xhtml5types.meter_content_fun ],
+         [> Xhtml5types.meter ])
+        XHTML5.T.star
+      val output_elt :
+        ([< Xhtml5types.output_elt_attrib ],
+         [< Xhtml5types.output_elt_content_fun ],
+         [> Xhtml5types.output_elt ])
+        XHTML5.T.star
+      val pcdata : string -> [> `PCDATA ] XHTML5.T.elt
+      val entity : string -> [> `PCDATA ] XHTML5.T.elt
+      val space : unit -> [> `PCDATA ] XHTML5.T.elt
+      val cdata : string -> [> `PCDATA ] XHTML5.T.elt
+      val cdata_script : string -> [> `PCDATA ] XHTML5.T.elt
+      val cdata_style : string -> [> `PCDATA ] XHTML5.T.elt
+      val unsafe_data : string -> 'a XHTML5.T.elt
+      val details :
+        [< `Summary ] XHTML5.T.elt ->
+        ([< `Accesskey
+          | `Class
+          | `Contenteditable
+          | `Contextmenu
+          | `Dir
+          | `Draggable
+          | `Hidden
+          | `Id
+          | `OnAbort
+          | `OnBlur
+          | `OnCanPlay
+          | `OnCanPlayThrough
+          | `OnChange
+          | `OnClick
+          | `OnContextMenu
+          | `OnDblClick
+          | `OnDrag
+          | `OnDragEnd
+          | `OnDragEnter
+          | `OnDragLeave
+          | `OnDragOver
+          | `OnDragStart
+          | `OnDrop
+          | `OnDurationChange
+          | `OnEmptied
+          | `OnEnded
+          | `OnError
+          | `OnFocus
+          | `OnFormChange
+          | `OnFormInput
+          | `OnInput
+          | `OnInvalid
+          | `OnKeyDown
+          | `OnKeyPress
+          | `OnKeyUp
+          | `OnLoad
+          | `OnLoadStart
+          | `OnLoadedData
+          | `OnLoadedMetaData
+          | `OnMouseDown
+          | `OnMouseMove
+          | `OnMouseOut
+          | `OnMouseOver
+          | `OnMouseUp
+          | `OnMouseWheel
+          | `OnPause
+          | `OnPlay
+          | `OnPlaying
+          | `OnProgress
+          | `OnRateChange
+          | `OnReadyStateChange
+          | `OnScroll
+          | `OnSeeked
+          | `OnSeeking
+          | `OnSelect
+          | `OnShow
+          | `OnStalled
+          | `OnSubmit
+          | `OnSuspend
+          | `OnTimeUpdate
+          | `OnVolumeChange
+          | `OnWaiting
+          | `Open
+          | `Spellcheck
+          | `Style_Attr
+          | `Tabindex
+          | `Title
+          | `User_data
+          | `XML_lang ],
+         [< Xhtml5types.flow5 ] XHTML5.T.elt, [> `Details ])
+        XHTML5.T.star
+      val summary :
+        ([< Xhtml5types.summary_attrib ],
+         [< Xhtml5types.summary_content_fun ], [> Xhtml5types.summary ])
+        XHTML5.T.star
+      val command :
+        label:Xhtml5types.text ->
+        ([< `Accesskey
+          | `Checked
+          | `Class
+          | `Command_Type
+          | `Contenteditable
+          | `Contextmenu
+          | `Dir
+          | `Disabled
+          | `Draggable
+          | `Hidden
+          | `Icon
+          | `Id
+          | `OnAbort
+          | `OnBlur
+          | `OnCanPlay
+          | `OnCanPlayThrough
+          | `OnChange
+          | `OnClick
+          | `OnContextMenu
+          | `OnDblClick
+          | `OnDrag
+          | `OnDragEnd
+          | `OnDragEnter
+          | `OnDragLeave
+          | `OnDragOver
+          | `OnDragStart
+          | `OnDrop
+          | `OnDurationChange
+          | `OnEmptied
+          | `OnEnded
+          | `OnError
+          | `OnFocus
+          | `OnFormChange
+          | `OnFormInput
+          | `OnInput
+          | `OnInvalid
+          | `OnKeyDown
+          | `OnKeyPress
+          | `OnKeyUp
+          | `OnLoad
+          | `OnLoadStart
+          | `OnLoadedData
+          | `OnLoadedMetaData
+          | `OnMouseDown
+          | `OnMouseMove
+          | `OnMouseOut
+          | `OnMouseOver
+          | `OnMouseUp
+          | `OnMouseWheel
+          | `OnPause
+          | `OnPlay
+          | `OnPlaying
+          | `OnProgress
+          | `OnRateChange
+          | `OnReadyStateChange
+          | `OnScroll
+          | `OnSeeked
+          | `OnSeeking
+          | `OnSelect
+          | `OnShow
+          | `OnStalled
+          | `OnSubmit
+          | `OnSuspend
+          | `OnTimeUpdate
+          | `OnVolumeChange
+          | `OnWaiting
+          | `Radiogroup
+          | `Spellcheck
+          | `Style_Attr
+          | `Tabindex
+          | `Title
+          | `User_data
+          | `XML_lang ],
+         [> `Command ])
+        XHTML5.T.nullary
+      val menu :
+        ?child:[< `Flows of [< Xhtml5types.flow5 ] XHTML5.T.elt list
+                | `Lis of
+                    [< `Li of [< Xhtml5types.common ] ] XHTML5.T.elt list ] ->
+        ([< `Accesskey
+          | `Class
+          | `Contenteditable
+          | `Contextmenu
+          | `Dir
+          | `Draggable
+          | `Hidden
+          | `Id
+          | `Label
+          | `Menu_Type
+          | `OnAbort
+          | `OnBlur
+          | `OnCanPlay
+          | `OnCanPlayThrough
+          | `OnChange
+          | `OnClick
+          | `OnContextMenu
+          | `OnDblClick
+          | `OnDrag
+          | `OnDragEnd
+          | `OnDragEnter
+          | `OnDragLeave
+          | `OnDragOver
+          | `OnDragStart
+          | `OnDrop
+          | `OnDurationChange
+          | `OnEmptied
+          | `OnEnded
+          | `OnError
+          | `OnFocus
+          | `OnFormChange
+          | `OnFormInput
+          | `OnInput
+          | `OnInvalid
+          | `OnKeyDown
+          | `OnKeyPress
+          | `OnKeyUp
+          | `OnLoad
+          | `OnLoadStart
+          | `OnLoadedData
+          | `OnLoadedMetaData
+          | `OnMouseDown
+          | `OnMouseMove
+          | `OnMouseOut
+          | `OnMouseOver
+          | `OnMouseUp
+          | `OnMouseWheel
+          | `OnPause
+          | `OnPlay
+          | `OnPlaying
+          | `OnProgress
+          | `OnRateChange
+          | `OnReadyStateChange
+          | `OnScroll
+          | `OnSeeked
+          | `OnSeeking
+          | `OnSelect
+          | `OnShow
+          | `OnStalled
+          | `OnSubmit
+          | `OnSuspend
+          | `OnTimeUpdate
+          | `OnVolumeChange
+          | `OnWaiting
+          | `Spellcheck
+          | `Style_Attr
+          | `Tabindex
+          | `Title
+          | `User_data
+          | `XML_lang ],
+         [> `Menu ])
+        XHTML5.T.nullary
+      val script :
+        ([< Xhtml5types.script_attrib ], [< Xhtml5types.script_content_fun ],
+         [> Xhtml5types.script ])
+        XHTML5.T.unary
+      val noscript :
+        ([< Xhtml5types.noscript_attrib ],
+         [< Xhtml5types.noscript_content_fun ], [> Xhtml5types.noscript ])
+        XHTML5.T.plus
+      val meta :
+        ([< Xhtml5types.meta_attrib ], [> Xhtml5types.meta ])
+        XHTML5.T.nullary
+      val style :
+        ([< Xhtml5types.style_attrib ], [< Xhtml5types.style_content_fun ],
+         [> Xhtml5types.style ])
+        XHTML5.T.star
+      val link :
+        rel:Xhtml5types.linktypes ->
+        href:XHTML5.T.uri ->
+        ([< `Accesskey
+          | `Class
+          | `Contenteditable
+          | `Contextmenu
+          | `Dir
+          | `Draggable
+          | `Hidden
+          | `Href
+          | `Hreflang
+          | `Id
+          | `Media
+          | `Mime_type
+          | `OnAbort
+          | `OnBlur
+          | `OnCanPlay
+          | `OnCanPlayThrough
+          | `OnChange
+          | `OnClick
+          | `OnContextMenu
+          | `OnDblClick
+          | `OnDrag
+          | `OnDragEnd
+          | `OnDragEnter
+          | `OnDragLeave
+          | `OnDragOver
+          | `OnDragStart
+          | `OnDrop
+          | `OnDurationChange
+          | `OnEmptied
+          | `OnEnded
+          | `OnError
+          | `OnFocus
+          | `OnFormChange
+          | `OnFormInput
+          | `OnInput
+          | `OnInvalid
+          | `OnKeyDown
+          | `OnKeyPress
+          | `OnKeyUp
+          | `OnLoad
+          | `OnLoadStart
+          | `OnLoadedData
+          | `OnLoadedMetaData
+          | `OnMouseDown
+          | `OnMouseMove
+          | `OnMouseOut
+          | `OnMouseOver
+          | `OnMouseUp
+          | `OnMouseWheel
+          | `OnPause
+          | `OnPlay
+          | `OnPlaying
+          | `OnProgress
+          | `OnRateChange
+          | `OnReadyStateChange
+          | `OnScroll
+          | `OnSeeked
+          | `OnSeeking
+          | `OnSelect
+          | `OnShow
+          | `OnStalled
+          | `OnSubmit
+          | `OnSuspend
+          | `OnTimeUpdate
+          | `OnVolumeChange
+          | `OnWaiting
+          | `Rel
+          | `Sizes
+          | `Spellcheck
+          | `Style_Attr
+          | `Tabindex
+          | `Title
+          | `User_data
+          | `XML_lang ],
+         [> `Link ])
+        XHTML5.T.nullary
+      type doctypes =
+          [ `Doctype of string
+          | `HTML_v03_02
+          | `HTML_v04_01
+          | `XHTML_01_00
+          | `XHTML_01_01
+          | `XHTML_05_00 ]
+      val doctype : [< XHTML5.T.doctypes ] -> string
+      val version : string
+      val standard : XHTML5.T.uri
+      val tot : XML.elt -> 'a XHTML5.T.elt
+      val totl : XML.elt list -> 'a XHTML5.T.elt list
+      val toelt : 'a XHTML5.T.elt -> XML.elt
+      val toeltl : 'a XHTML5.T.elt list -> XML.elt list
+    end
+  module type T_05_00 = T
+  module M : T
+  module M_05_00 : T_05_00
+end >>

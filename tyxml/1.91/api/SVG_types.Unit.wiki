@@ -1,0 +1,14 @@
+=Module <<a_api_type | module SVG_types.Unit >> =
+<<div class="code"|<<span class="keyword"|module>> Unit: <<span class='code'|sig>><<a_api text=".." | module SVG_types.Unit >><<span class='code'|end>>>>~S~V~G defines several units to measure time~, length~, angles~.\\
+
+----
+<<div class="code" id="TYPEquantity"|<<span class="keyword"|type>> <<span class="code type"|'a>> quantity = <<span class="code type"|float * 'a option>> >>
+
+<<div class="code" id="TYPEangle"|<<span class="keyword"|type>> angle = <<span class="code type"|[ `Deg | `Grad | `Rad ] <<a_api text="quantity" | type SVG_types.Unit.quantity >>>> >>
+
+<<div class="code" id="TYPElength"|<<span class="keyword"|type>> length = <<span class="code type"|\\{{{   }}}[ `Cm | `Em | `Ex | `In | `Mm | `Pc | `Percent | `Pt | `Px ]\\{{{   }}}  <<a_api text="quantity" | type SVG_types.Unit.quantity >>>> >>
+
+<<div class="code" id="TYPEtime"|<<span class="keyword"|type>> time = <<span class="code type"|[ `Ms | `S ] <<a_api text="quantity" | type SVG_types.Unit.quantity >>>> >>
+
+<<div class="code" id="TYPEfrequency"|<<span class="keyword"|type>> frequency = <<span class="code type"|[ `Hz | `KHz ] <<a_api text="quantity" | type SVG_types.Unit.quantity >>>> >>
+

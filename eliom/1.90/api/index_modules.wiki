@@ -1,0 +1,379 @@
+=Index of modules=
+
+|@@ @class="alignleft"@@\\A|
+|<<a_api text="Accesscontrol"| module Accesscontrol >> ||
+|<<a_api text="Action"| module Eliom_output.Action >> ~[<<a_api | module Eliom_output >>~]|<<div class="info"|~Actions do not generate any page~.
+>>
+|
+|<<a_api text="Any"| module Eliom_output.Any >> ~[<<a_api | module Eliom_output >>~]|<<div class="info"|~Allows to create services that choose dynamically what they want
+   to send~.
+>>
+|
+|<<a_api text="Atom_feed"| module Atom_feed >> |<<div class="info"|~Everything we need to make an atom feed~.
+>>
+|
+|<<a_api text="Authbasic"| module Authbasic >> |<<div class="info"|~Module <<span class='code'|~Authbasic>>~: ~Basic ~H~T~T~P ~Authentication~.
+>>
+|
+|@@ @class="alignleft"@@\\B|
+|<<a_api text="Basic_Forms"| module XHTML.T.Basic_Forms >> ~[<<a_api | module XHTML.T >>~]||
+|<<a_api text="Basic_Tables"| module XHTML.T.Basic_Tables >> ~[<<a_api | module XHTML.T >>~]||
+|<<a_api text="Blocks"| module Eliom_duce.Blocks >> ~[<<a_api | module Eliom_duce >>~]|<<div class="info"|~Register and create form for list of <<span class='code'|blocks>> ~(subtype of xhtml~)
+>>
+|
+|<<a_api text="Blocks"| module Eliom_output.Blocks >> ~[<<a_api | module Eliom_output >>~]|<<div class="info"|~For ~X~H~T~M~L
+>>
+|
+|<<a_api text="Blocks5"| module Eliom_output.Blocks5 >> ~[<<a_api | module Eliom_output >>~]|<<div class="info"|~For ~X~H~T~M~L~5
+>>
+|
+|@@ @class="alignleft"@@\\C|
+|<<a_api text="Caml"| module Eliom_output.Caml >> ~[<<a_api | module Eliom_output >>~]|<<div class="info"|~Allows to register services that send caml values~.
+>>
+|
+|<<a_api text="Channels"| module Ocsigen_comet.Channels >> ~[<<a_api | module Ocsigen_comet >>~]||
+|<<a_api text="Channels"| module Eliom_comet.Channels >> ~[<<a_api | module Eliom_comet >>~]||
+|<<a_api text="Clist"| module Ocsigen_lib.Clist >> ~[<<a_api | module Ocsigen_lib >>~]||
+|<<a_api text="CssText"| module Eliom_output.CssText >> ~[<<a_api | module Eliom_output >>~]|<<div class="info"|~Module to register untyped ~C~S~S pages
+>>
+|
+|<<a_api text="Customize"| module Eliom_output.Customize >> ~[<<a_api | module Eliom_output >>~]||
+|@@ @class="alignleft"@@\\D|
+|<<a_api text="Directory_content"| module Ocsigen_senders.Directory_content >> ~[<<a_api | module Ocsigen_senders >>~]|<<div class="info"|directory name and corresponding ~U~R~L path
+>>
+|
+|<<a_api text="Dlist"| module Ocsigen_cache.Dlist >> ~[<<a_api | module Ocsigen_cache >>~]|<<div class="info"|~Doubly~-linked lists with maximum number of entries and limited lifespan for
+    entries~.
+>>
+|
+|<<a_api text="Down"| module Eliom_react.Down >> ~[<<a_api | module Eliom_react >>~]||
+|@@ @class="alignleft"@@\\E|
+|<<a_api text="Eliom_appl"| module Eliom_output.Eliom_appl >> ~[<<a_api | module Eliom_output >>~]||
+|<<a_api text="Eliom_atom"| module Eliom_atom >> |<<div class="info"|~Register an atom feed
+>>
+|
+|<<a_api text="Eliom_bus"| module Eliom_bus >> |<<div class="info"|~The type of bus~'s carrying values of type <<span class='code'|~'a>>~.
+>>
+|
+|<<a_api text="Eliom_client"| module Eliom_client >> |<<div class="info"|~Call a server side service and change the current page~.
+>>
+|
+|<<a_api text="Eliom_client_types"| module Eliom_client_types >> |<<div class="info"|~/~*
+>>
+|
+|<<a_api text="Eliom_comet"| module Eliom_comet >> |<<div class="info"|~A module with all the base primitive needed for server push~.
+>>
+|
+|<<a_api text="Eliom_common"| module Eliom_common >> |<<div class="info"|~Low level functions for ~Eliom~, exceptions and types~.
+>>
+|
+|<<a_api text="Eliom_config"| module Eliom_config >> |<<div class="info"|returns the hostname declared in the config file 
+    ~(<<span class='code'|~<host defaulthostname~="~.~.~."~>>>~)~.
+>>
+|
+|<<a_api text="Eliom_duce"| module Eliom_duce >> |<<div class="info"|~A module to generate pages using ~O~Camlduce
+>>
+|
+|<<a_api text="Eliom_duce_tools"| module Eliom_duce_tools >> |<<div class="info"|~Predefined boxes for ~Eliom
+>>
+|
+|<<a_api text="Eliom_extensions"| module Eliom_extensions >> |<<div class="info"|~Type of the function that must be registered to declare an eliom extension
+>>
+|
+|<<a_api text="Eliom_mkforms"| module Eliom_mkforms >> |<<div class="info"|~This module defines the functor to use to creates modules
+   generating form widgets for your own types of pages~.
+>>
+|
+|<<a_api text="Eliom_mkreg"| module Eliom_mkreg >> |<<div class="info"|~This module defines the functor to use to creates modules
+   generating functions to register services for your own types of pages~.
+>>
+|
+|<<a_api text="Eliom_openid"| module Eliom_openid >> |<<div class="info"|~Module to provide ~Open~I~D identification
+>>
+|
+|<<a_api text="Eliom_output"| module Eliom_output >> |<<div class="info"|~This modules contains predefined modules for generating forms and
+   registering handlers~, for several types of pages~:
+   ~X~H~T~M~L pages typed with polymorphic variants~,
+   untyped ~(text~) pages~, actions~, redirections~, files ~.~.~.
+>>
+|
+|<<a_api text="Eliom_output_cli"| module Eliom_output_cli >> |<<div class="info"|~Creating links and forms with ~X~H~T~M~L~5~.~M
+>>
+|
+|<<a_api text="Eliom_parameters"| module Eliom_parameters >> |<<div class="info"|~This module defines the values used to declare the type of service
+   parameters~.
+>>
+|
+|<<a_api text="Eliom_react"| module Eliom_react >> |<<div class="info"|<<span class='code'|~Eliom~_event>> is a module that allow one to use propagate events occurrences
+    from the server to the client and the other way around~.
+>>
+|
+|<<a_api text="Eliom_references"| module Eliom_references >> |<<div class="info"|~Server side state data~: ~Eliom references
+>>
+|
+|<<a_api text="Eliom_request_info"| module Eliom_request_info >> |<<div class="info"|~This module contains the functions you need to get ~(or set~)
+    information about current request~.
+>>
+|
+|<<a_api text="Eliom_s2s"| module Eliom_s2s >> |<<div class="info"|~Server~-to~-~Server communication module~.
+>>
+|
+|<<a_api text="Eliom_services"| module Eliom_services >> |<<div class="info"|~This module allows to define services~.
+>>
+|
+|<<a_api text="Eliom_state"| module Eliom_state >> |<<div class="info"|~This module contains the functions you need to manage 
+the server~-side state ~(and also some client~-side state~)~:
+~* closing sessions~, knowing whether a state has expired~,
+setting cookies manually ~(client~-side state~)
+~* ~Managing session groups~: putting a session in a group~,
+limitating the number of sessions in a group etc ~.~.~.
+>>
+|
+|<<a_api text="Eliom_tools"| module Eliom_tools >> |<<div class="info"|~Predefined boxes for ~Eliom
+>>
+|
+|<<a_api text="Eliom_tools_common"| module Eliom_tools_common >> |<<div class="info"|~Menus 
+>>
+|
+|<<a_api text="Eliom_uri"| module Eliom_uri >> |<<div class="info"|~/~*
+>>
+|
+|<<a_api text="Eliommod_cli"| module Eliommod_cli >> |<<div class="info"|~/~*
+>>
+|
+|<<a_api text="Empty_content"| module Ocsigen_senders.Empty_content >> ~[<<a_api | module Ocsigen_senders >>~]||
+|<<a_api text="Error_content"| module Ocsigen_senders.Error_content >> ~[<<a_api | module Ocsigen_senders >>~]|<<div class="info"|error code and~/or exception
+>>
+|
+|@@ @class="alignleft"@@\\F|
+|<<a_api text="FORMS"| module Xhtmltypes.FORMS >> ~[<<a_api | module Xhtmltypes >>~]||
+|<<a_api text="File_content"| module Ocsigen_senders.File_content >> ~[<<a_api | module Ocsigen_senders >>~]||
+|<<a_api text="Files"| module Eliom_output.Files >> ~[<<a_api | module Eliom_output >>~]|<<div class="info"|~Allows to send files~.
+>>
+|
+|<<a_api text="Framepp"| module Framepp >> ||
+|<<a_api text="Fullsessionname_Table"| module Eliom_common.Fullsessionname_Table >> ~[<<a_api | module Eliom_common >>~]||
+|@@ @class="alignleft"@@\\H|
+|<<a_api text="HYPERTEXT"| module Xhtmltypes.HYPERTEXT >> ~[<<a_api | module Xhtmltypes >>~]||
+|<<a_api text="HtmlText"| module Eliom_output.HtmlText >> ~[<<a_api | module Eliom_output >>~]|<<div class="info"|~Module to create forms and register untyped ~H~T~M~L pages
+>>
+|
+|<<a_api text="Http_error"| module Ocsigen_http_frame.Http_error >> ~[<<a_api | module Ocsigen_http_frame >>~]||
+|<<a_api text="Http_header"| module Ocsigen_http_frame.Http_header >> ~[<<a_api | module Ocsigen_http_frame >>~]||
+|<<a_api text="Http_headers"| module Http_headers >> |<<div class="info"|returns an empty set of ~H~T~T~P headers
+>>
+|
+|@@ @class="alignleft"@@\\I|
+|<<a_api text="Int_Table"| module Ocsigen_lib.Int_Table >> ~[<<a_api | module Ocsigen_lib >>~]||
+|@@ @class="alignleft"@@\\L|
+|<<a_api text="LIST"| module Xhtmltypes.LIST >> ~[<<a_api | module Xhtmltypes >>~]||
+|@@ @class="alignleft"@@\\M|
+|<<a_api text="M"| module SVG.M >> ~[<<a_api | module SVG >>~]||
+|<<a_api text="M"| module XHTML5.M >> ~[<<a_api | module XHTML5 >>~]||
+|<<a_api text="M"| module XHTML.M >> ~[<<a_api | module XHTML >>~]||
+|<<a_api text="M_01_00"| module XHTML.M_01_00 >> ~[<<a_api | module XHTML >>~]||
+|<<a_api text="M_01_01"| module XHTML.M_01_01 >> ~[<<a_api | module XHTML >>~]||
+|<<a_api text="M_05_00"| module XHTML5.M_05_00 >> ~[<<a_api | module XHTML5 >>~]||
+|<<a_api text="Make"| module Eliom_openid.Make >> ~[<<a_api | module Eliom_openid >>~]||
+|<<a_api text="Make"| module Ocsigen_cache.Make >> ~[<<a_api | module Ocsigen_cache >>~]||
+|<<a_api text="MakeForms"| module Eliom_mkforms.MakeForms >> ~[<<a_api | module Eliom_mkforms >>~]||
+|<<a_api text="MakeRegister"| module Eliom_mkreg.MakeRegister >> ~[<<a_api | module Eliom_mkreg >>~]||
+|@@ @class="alignleft"@@\\N|
+|<<a_api text="NameHtbl"| module Http_headers.NameHtbl >> ~[<<a_api | module Http_headers >>~]||
+|@@ @class="alignleft"@@\\O|
+|<<a_api text="Ocsigen_LocalFiles"| module Ocsigen_LocalFiles >> |<<div class="info"|~The requested file does not exists
+>>
+|
+|<<a_api text="Ocsigen_cache"| module Ocsigen_cache >> |<<div class="info"|~Cache~.
+>>
+|
+|<<a_api text="Ocsigen_charset_mime"| module Ocsigen_charset_mime >> |<<div class="info"|~Charset
+>>
+|
+|<<a_api text="Ocsigen_comet"| module Ocsigen_comet >> |<<div class="info"|~Ocsigen~_comet server extension ~: provides low~-level server to client communication
+    scheme~.
+>>
+|
+|<<a_api text="Ocsigen_config"| module Ocsigen_config >> |<<div class="info"|~/~*
+>>
+|
+|<<a_api text="Ocsigen_extensions"| module Ocsigen_extensions >> |<<div class="info"|~Writing extensions for ~Ocsigen
+>>
+|
+|<<a_api text="Ocsigen_getcommandline"| module Ocsigen_getcommandline >> |<<div class="info"|~Contains the command line that will be parsed by the server
+    when ~Ocsigen~_commandline is linked
+>>
+|
+|<<a_api text="Ocsigen_headers"| module Ocsigen_headers >> |<<div class="info"|~Getting informations from ~H~T~T~P header~.
+>>
+|
+|<<a_api text="Ocsigen_http_client"| module Ocsigen_http_client >> |<<div class="info"|~Using ~Ocsigen as a ~H~T~T~P client
+>>
+|
+|<<a_api text="Ocsigen_http_com"| module Ocsigen_http_com >> |<<div class="info"|~Sending and receiving ~H~T~T~P frames
+>>
+|
+|<<a_api text="Ocsigen_http_frame"| module Ocsigen_http_frame >> |<<div class="info"|<<span class='code'|compute~_new~_ri~_cookies now path ri~_cookies cookies~_to~_set>>
+   adds the cookies from <<span class='code'|cookies~_to~_set>>
+   to <<span class='code'|ri~_cookies>>~, as if the cookies
+   had been send to the browser and the browser
+   was doing a new request to the url <<span class='code'|path>>~.
+>>
+|
+|<<a_api text="Ocsigen_lib"| module Ocsigen_lib >> |<<div class="info"|~Remove the slash at beginning but if it is also at the end
+>>
+|
+|<<a_api text="Ocsigen_messages"| module Ocsigen_messages >> |<<div class="info"|~Writing messages in the logs
+>>
+|
+|<<a_api text="Ocsigen_parseconfig"| module Ocsigen_parseconfig >> |<<div class="info"|~Config file parsing
+>>
+|
+|<<a_api text="Ocsigen_senders"| module Ocsigen_senders >> |<<div class="info"|~Functions to create results for various kinds of documents
+>>
+|
+|<<a_api text="Ocsigen_server"| module Ocsigen_server >> |<<div class="info"|~Reload the configuration of the server~.
+>>
+|
+|<<a_api text="Ocsigen_stream"| module Ocsigen_stream >> |<<div class="info"|~Streams are a means to read data block by block
+>>
+|
+|<<a_api text="Ocsipersist"| module Ocsipersist >> |<<div class="info"|~Persistent data on hard disk~.
+>>
+|
+|@@ @class="alignleft"@@\\P|
+|<<a_api text="PRESENTATION"| module Xhtmltypes.PRESENTATION >> ~[<<a_api | module Xhtmltypes >>~]||
+|<<a_api text="Polytables"| module Polytables >> |<<div class="info"|~Polymorphic tables ~(using ~Map~)
+>>
+|
+|@@ @class="alignleft"@@\\R|
+|<<a_api text="RUBY"| module Xhtmltypes.RUBY >> ~[<<a_api | module Xhtmltypes >>~]||
+|<<a_api text="Redirection"| module Eliom_output.Redirection >> ~[<<a_api | module Eliom_output >>~]||
+|<<a_api text="Reg"| module Eliom_atom.Reg >> ~[<<a_api | module Eliom_atom >>~]||
+|@@ @class="alignleft"@@\\S|
+|<<a_api text="SPECIAL"| module Xhtmltypes.SPECIAL >> ~[<<a_api | module Xhtmltypes >>~]||
+|<<a_api text="SVG"| module SVG >> |<<div class="info"|~Type instantiations for ~S~V~G
+>>
+|
+|<<a_api text="Security"| module Ocsigen_comet.Security >> ~[<<a_api | module Ocsigen_comet >>~]||
+|<<a_api text="Session_admin"| module Eliom_state.Session_admin >> ~[<<a_api | module Eliom_state >>~]||
+|<<a_api text="Simplexmlparser"| module Simplexmlparser >> |<<div class="info"|~Basic camlp~4 parser for xml
+>>
+|
+|<<a_api text="Stream_content"| module Ocsigen_senders.Stream_content >> ~[<<a_api | module Ocsigen_senders >>~]||
+|<<a_api text="Streamlist"| module Eliom_output.Streamlist >> ~[<<a_api | module Eliom_output >>~]|<<div class="info"|~Allows to send raw data using ~Ocsigen~'s streams~.
+>>
+|
+|<<a_api text="Streamlist_content"| module Ocsigen_senders.Streamlist_content >> ~[<<a_api | module Ocsigen_senders >>~]|<<div class="info"|streams and content~-type
+>>
+|
+|<<a_api text="StringSet"| module Ocsigen_lib.StringSet >> ~[<<a_api | module Ocsigen_lib >>~]||
+|<<a_api text="String_Table"| module Ocsigen_lib.String_Table >> ~[<<a_api | module Ocsigen_lib >>~]||
+|<<a_api text="String_redirection"| module Eliom_output.String_redirection >> ~[<<a_api | module Eliom_output >>~]|<<div class="info"|~Allows to create redirections towards other ~U~R~Ls~.
+>>
+|
+|<<a_api text="SubXhtml"| module Eliom_duce.SubXhtml >> ~[<<a_api | module Eliom_duce >>~]||
+|<<a_api text="SubXhtml"| module Eliom_output.SubXhtml >> ~[<<a_api | module Eliom_output >>~]||
+|<<a_api text="Svgtypes"| module Svgtypes >> |<<div class="info"|~Type definitions for ~S~V~G
+>>
+|
+|@@ @class="alignleft"@@\\T|
+|<<a_api text="TABLES"| module Xhtmltypes.TABLES >> ~[<<a_api | module Xhtmltypes >>~]||
+|<<a_api text="TEXT"| module Xhtmltypes.TEXT >> ~[<<a_api | module Xhtmltypes >>~]||
+|<<a_api text="Text"| module Eliom_output.Text >> ~[<<a_api | module Eliom_output >>~]|<<div class="info"|~Module to register untyped text pages
+>>
+|
+|<<a_api text="Text_content"| module Ocsigen_senders.Text_content >> ~[<<a_api | module Ocsigen_senders >>~]|<<div class="info"|content ~* content~-type
+>>
+|
+|@@ @class="alignleft"@@\\U|
+|<<a_api text="Unit"| module Eliom_output.Unit >> ~[<<a_api | module Eliom_output >>~]|<<div class="info"|~Like actions~, but the page is not reloaded~.
+>>
+|
+|<<a_api text="Unit"| module Svgtypes.Unit >> ~[<<a_api | module Svgtypes >>~]||
+|<<a_api text="Up"| module Eliom_react.Up >> ~[<<a_api | module Eliom_react >>~]||
+|<<a_api text="Uri"| module Uri >> ||
+|@@ @class="alignleft"@@\\X|
+|<<a_api text="XHTML"| module XHTML >> |<<div class="info"|~Typesafe constructors for ~X~H~T~M~L ~1~.~1 documents~.
+>>
+|
+|<<a_api text="XHTML5"| module XHTML5 >> |<<div class="info"|~Typesafe constructors for ~H~T~M~L~5 documents~.
+>>
+|
+|<<a_api text="XML"| module XML >> |<<div class="info"|~Neither <<span class='code'|comment>>~, <<span class='code'|pcdata>> nor <<span class='code'|entity>> check their argument for invalid
+    characters~.
+>>
+|
+|<<a_api text="Xhtml"| module Eliom_duce.Xhtml >> ~[<<a_api | module Eliom_duce >>~]|<<div class="info"|~Register and create form for ~Xhtml
+>>
+|
+|<<a_api text="Xhtml"| module Eliom_tools.Xhtml >> ~[<<a_api | module Eliom_tools >>~]|<<div class="info"|~X~H~T~M~L tools
+>>
+|
+|<<a_api text="Xhtml"| module Eliom_output.Xhtml >> ~[<<a_api | module Eliom_output >>~]|<<div class="info"|~Eliom forms and service registration functions for ~X~H~T~M~L
+>>
+|
+|<<a_api text="Xhtml5"| module Eliom_tools.Xhtml5 >> ~[<<a_api | module Eliom_tools >>~]|<<div class="info"|~Same functions as above~, but with ~X~H~T~M~L~5 elements
+>>
+|
+|<<a_api text="Xhtml5"| module Eliom_output.Xhtml5 >> ~[<<a_api | module Eliom_output >>~]||
+|<<a_api text="Xhtml5_content"| module Ocsigen_senders.Xhtml5_content >> ~[<<a_api | module Ocsigen_senders >>~]||
+|<<a_api text="Xhtml5compact"| module Eliom_output.Xhtml5compact >> ~[<<a_api | module Eliom_output >>~]||
+|<<a_api text="Xhtml5compact"| module Xhtml5compact >> |<<div class="info"|~X~H~T~M~L "compact printing" ~(no pretty printing~, no line breaks added~)
+>>
+|
+|<<a_api text="Xhtml5compact_content"| module Ocsigen_senders.Xhtml5compact_content >> ~[<<a_api | module Ocsigen_senders >>~]||
+|<<a_api text="Xhtml5compact_streams"| module Xhtml5compact_streams >> |<<div class="info"|~X~H~T~M~L "compact printing" ~(no pretty printing~, no line breaks added~)
+>>
+|
+|<<a_api text="Xhtml5forms"| module Eliom_output_cli.Xhtml5forms >> ~[<<a_api | module Eliom_output_cli >>~]||
+|<<a_api text="Xhtml5pretty"| module Xhtml5pretty >> |<<div class="info"|~X~H~T~M~L pretty printing
+>>
+|
+|<<a_api text="Xhtml5pretty_content"| module Ocsigen_senders.Xhtml5pretty_content >> ~[<<a_api | module Ocsigen_senders >>~]||
+|<<a_api text="Xhtml5pretty_streams"| module Xhtml5pretty_streams >> |<<div class="info"|~X~H~T~M~L pretty printing
+>>
+|
+|<<a_api text="Xhtml5types"| module Xhtml5types >> |<<div class="info"|~This file contains type definition for the
+    markup language ~X~H~T~M~L~5~.
+>>
+|
+|<<a_api text="Xhtml_content"| module Ocsigen_senders.Xhtml_content >> ~[<<a_api | module Ocsigen_senders >>~]||
+|<<a_api text="Xhtmlcompact"| module Eliom_output.Xhtmlcompact >> ~[<<a_api | module Eliom_output >>~]|<<div class="info"|~Eliom forms and service registration functions for ~X~H~T~M~L~, with
+          compact markup ~(i~.e~.~, without pretty~-printing~)~.
+>>
+|
+|<<a_api text="Xhtmlcompact"| module Xhtmlcompact >> |<<div class="info"|~X~H~T~M~L "compact printing" ~(no pretty printing~, no line breaks added~)
+>>
+|
+|<<a_api text="Xhtmlcompact_content"| module Ocsigen_senders.Xhtmlcompact_content >> ~[<<a_api | module Ocsigen_senders >>~]||
+|<<a_api text="Xhtmlcompact_streams"| module Xhtmlcompact_streams >> |<<div class="info"|~X~H~T~M~L "compact printing" ~(no pretty printing~, no line breaks added~)
+>>
+|
+|<<a_api text="Xhtmlcompactreg"| module Eliom_output.Xhtmlcompactreg >> ~[<<a_api | module Eliom_output >>~]||
+|<<a_api text="Xhtmlforms"| module Eliom_duce.Xhtmlforms >> ~[<<a_api | module Eliom_duce >>~]|<<div class="info"|~Register and create form for ~Xhtml
+>>
+|
+|<<a_api text="Xhtmlforms"| module Eliom_output.Xhtmlforms >> ~[<<a_api | module Eliom_output >>~]||
+|<<a_api text="Xhtmlpretty"| module Xhtmlpretty >> |<<div class="info"|~X~H~T~M~L pretty printing
+>>
+|
+|<<a_api text="Xhtmlpretty_content"| module Ocsigen_senders.Xhtmlpretty_content >> ~[<<a_api | module Ocsigen_senders >>~]||
+|<<a_api text="Xhtmlpretty_streams"| module Xhtmlpretty_streams >> |<<div class="info"|~X~H~T~M~L pretty printing
+>>
+|
+|<<a_api text="Xhtmlreg"| module Eliom_output.Xhtmlreg >> ~[<<a_api | module Eliom_output >>~]||
+|<<a_api text="Xhtmlreg_"| module Eliom_output.Xhtmlreg_ >> ~[<<a_api | module Eliom_output >>~]||
+|<<a_api text="Xhtmltypes"| module Xhtmltypes >> |<<div class="info"|~X~H~T~M~L types with variants~.
+>>
+|
+|<<a_api text="Xhtmltypes_duce"| module Xhtmltypes_duce >> |<<div class="info"|~This interface corresponds to the ~X~H~T~M~L ~1~.~0 ~Strict ~D~T~D~, for ~Ocamlduce~.
+>>
+|
+|<<a_api text="Xml"| module Eliom_duce.Xml >> ~[<<a_api | module Eliom_duce >>~]|<<div class="info"|~Register and create form for any ~X~M~L data type
+>>
+|
+|<<a_api text="Xmllist"| module Eliom_duce.Xmllist >> ~[<<a_api | module Eliom_duce >>~]|<<div class="info"|~Register and create form for list of ~X~M~L data type
+>>
+|
+\\

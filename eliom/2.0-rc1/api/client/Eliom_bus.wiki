@@ -1,0 +1,30 @@
+=Module <<a_api_type subproject="client" | module Eliom_bus >> =
+<<div class="code"|<<span class="keyword"|module>> Eliom_bus: <<span class='code'|sig>><<a_api subproject="client" text=".." | module Eliom_bus >><<span class='code'|end>>>>~Broadcasting facilities between clients and server\\
+
+----
+<<div class="code" id="TYPEt"|<<span class="keyword"|type>> <<span class="code type"|'a>> t>>
+
+<<div id="VALstream" class="code"|<<span class="keyword"|val>> stream : <<span class="code type"|'a <<a_api subproject="client" text="t" | type Eliom_bus.t >> -> 'a Lwt_stream.t>>>><<div id="VALwrite" class="code"|<<span class="keyword"|val>> write : <<span class="code type"|'a <<a_api subproject="client" text="t" | type Eliom_bus.t >> -> 'a -> unit Lwt.t>>>><<div class="info"|<<span class='code'|stream b>> returns the stream of datas sent to bus <<span class='code'|b>>~. ~Notice you
+    sould not use that function multiple times on the same bus in the
+    same client process~, it will return the same stream~. ~If you want
+    to receive mutiple times the same datas~, you sould copy the stream
+    with <<span class='code'|~Lwt~_stream~.clone>>\\
+>>
+<<div id="VALclose" class="code"|<<span class="keyword"|val>> close : <<span class="code type"|'a <<a_api subproject="client" text="t" | type Eliom_bus.t >> -> unit>>>><<div class="info"|<<span class='code'|write b v>> send <<span class='code'|v>> to the bus <<span class='code'|b>>~. ~Every participant of the bus
+    will receive <<span class='code'|v>>~, including the sender~.\\
+>>
+<<div id="VALset_queue_size" class="code"|<<span class="keyword"|val>> set~_queue~_size : <<span class="code type"|'a <<a_api subproject="client" text="t" | type Eliom_bus.t >> -> int -> unit>>>><<div class="info"|after <<span class='code'|close b>>~, <<span class='code'|stream b>> stops receiving new messages from the
+    bus~, but it is still possible to write to the bus~. ~It is also
+    possible to close the bus by canceling a thread reading on the
+    stream~.\\
+>>
+<<div id="VALset_time_before_flush" class="code"|<<span class="keyword"|val>> set~_time~_before~_flush : <<span class="code type"|'a <<a_api subproject="client" text="t" | type Eliom_bus.t >> -> float -> unit>>>><<div class="info"|~To reduce traffic from the client busses try to send messages by
+    group~. <<span class='code'|set~_queue~_size bus size>> set the maximum number of
+    messages that are accumulated before forcing a flush~.
+    default is ~2~0\\
+>>
+\\
+<<span class='code'|set~_time~_before~_flush bus time>> set the maximum time to wait for
+    a new message to enqueue before flushing~. ~Set this to a small
+    value to make your app more responsive~, but remember that it will
+    consume more bandwidth~. default is ~0~.~0~5 second~.\\

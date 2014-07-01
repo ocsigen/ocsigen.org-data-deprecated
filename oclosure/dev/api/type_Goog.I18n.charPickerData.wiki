@@ -1,0 +1,7 @@
+<<code language="ocaml" | object
+  method categories : Js.js_string Js.t Js.js_array Js.t Js.prop
+  method charList :
+    Js.js_string Js.t Js.js_array Js.t Js.js_array Js.t Js.prop
+  method subcategories :
+    Js.js_string Js.t Js.js_array Js.t Js.js_array Js.t Js.prop
+end >>

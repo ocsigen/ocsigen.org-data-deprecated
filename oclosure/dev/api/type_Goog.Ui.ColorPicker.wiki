@@ -1,0 +1,6 @@
+<<code language="ocaml" | sig
+  val createSimpleColorGrid :
+    Goog.Gdom.domHelper Js.t Js.opt -> Goog.Ui.colorPicker Js.t
+  val _SIMPLE_GRID_COLORS : Js.js_string Js.t Js.js_array Js.t
+  module EventType : sig val _CHANGE : Js.js_string Js.t end
+end >>

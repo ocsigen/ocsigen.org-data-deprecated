@@ -1,0 +1,4 @@
+=Module <<a_api_type | module Ojw_alert_sigs.T.Event.S >> =
+<<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module>> <<span class="ocsforge_color_uid"|<<span class="ocsforge_color_uid"|S>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="ocsforge_color_keyword"|sig>><<a_api text=".." | module Ojw_alert_sigs.T.Event.S >><<span class="ocsforge_color_keyword"|end>>>>
+----
+<<pre id="VALshow" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|show>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|string>>>><<pre id="VALhide" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|hide>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|string>>>>

@@ -1,0 +1,35 @@
+=Class type <<a_api_type | class type Goog.Geditor.Plugins.undoRedoManager >> =
+<<pre class="ocsforge_color odocwiki_code"|<<span id="TYPEundoRedoManager"|<<span class="ocsforge_color_keyword"|class type>> <<span class="ocsforge_color_name"|undoRedoManager>>>> <<span class="ocsforge_color_delimiter"|~=>> <<span class="ocsforge_color_keyword"|object>><<a_api text=".." | class type Goog.Geditor.Plugins.undoRedoManager >><<span class="ocsforge_color_keyword"|end>>>>**~Inherits**
+* <<a_api | class Goog.Events.eventTarget >>
+
+----
+<<pre class="ocsforge_color odocwiki_code"|<<span id="METHODaddState"|<<span class="ocsforge_color_keyword"|method>> <<span class="odocwiki_name"|addState>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<a_api text="undoRedoState" | class type Goog.Geditor.Plugins.undoRedoState >> <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>> <<span class="ocsforge_color_delimiter"| -> >> unit <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|meth>>>>>><<div class="odocwiki_info"| ~Add state to the undo stack~. ~This clears the redo stack~.
+
+
+
+>>
+<<pre class="ocsforge_color odocwiki_code"|<<span id="METHODclearHistory"|<<span class="ocsforge_color_keyword"|method>> <<span class="odocwiki_name"|clearHistory>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|unit <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|meth>>>>>><<div class="odocwiki_info"| ~Clear the undo~/redo stack~.
+>>
+<<pre class="ocsforge_color odocwiki_code"|<<span id="METHODhasRedoState"|<<span class="ocsforge_color_keyword"|method>> <<span class="odocwiki_name"|hasRedoState>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|bool <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>> <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|meth>>>>>><<div class="odocwiki_info"|**Returns** ~Wether the redo stack has items on it~, i~.e~.~, if it is
+     possible to perform a redo operation~.\\
+>>
+<<pre class="ocsforge_color odocwiki_code"|<<span id="METHODhasUndoState"|<<span class="ocsforge_color_keyword"|method>> <<span class="odocwiki_name"|hasUndoState>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|bool <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>> <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|meth>>>>>><<div class="odocwiki_info"|**Returns** ~Wether the undo stack has items on it~, i~.e~.~, if it is
+     possible to perform an undo operation~.\\
+>>
+<<pre class="ocsforge_color odocwiki_code"|<<span id="METHODredo"|<<span class="ocsforge_color_keyword"|method>> <<span class="odocwiki_name"|redo>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|unit <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|meth>>>>>><<div class="odocwiki_info"| ~Performs the redo operation of the state at the top of the redo stack~, moving
+ that state to the top of the undo stack~. ~If redo undo stack is empty~, does
+ nothing~.
+>>
+<<pre class="ocsforge_color odocwiki_code"|<<span id="METHODredoPeek"|<<span class="ocsforge_color_keyword"|method>> <<span class="odocwiki_name"|redoPeek>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<a_api text="undoRedoState" | class type Goog.Geditor.Plugins.undoRedoState >> <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>> <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|optdef>> <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|meth>>>>>><<div class="odocwiki_info"|**Returns** ~The state at the top of
+     the redo stack without removing it from the stack~.\\
+>>
+<<pre class="ocsforge_color odocwiki_code"|<<span id="METHODsetMaxUndoDepth"|<<span class="ocsforge_color_keyword"|method>> <<span class="odocwiki_name"|setMaxUndoDepth>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|int <<span class="ocsforge_color_delimiter"| -> >> unit <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|meth>>>>>><<div class="odocwiki_info"| ~Set the max undo stack depth ~(not the real memory usage~)~.
+
+>>
+<<pre class="ocsforge_color odocwiki_code"|<<span id="METHODundo"|<<span class="ocsforge_color_keyword"|method>> <<span class="odocwiki_name"|undo>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|unit <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|meth>>>>>><<div class="odocwiki_info"| ~Performs the undo operation of the state at the top of the undo stack~, moving
+ that state to the top of the redo stack~. ~If the undo stack is empty~, does
+ nothing~.
+>>
+<<pre class="ocsforge_color odocwiki_code"|<<span id="METHODundoPeek"|<<span class="ocsforge_color_keyword"|method>> <<span class="odocwiki_name"|undoPeek>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<a_api text="undoRedoState" | class type Goog.Geditor.Plugins.undoRedoState >> <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>> <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|optdef>> <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|meth>>>>>><<div class="odocwiki_info"|**Returns** ~The state at the top of
+     the undo stack without removing it from the stack~.\\
+>>

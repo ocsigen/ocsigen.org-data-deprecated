@@ -1,0 +1,7 @@
+=Functor <<a_api_type | module XML_sigs_duce.TypedPrinter >> =
+<<div class="code"|<<span class="keyword"|module>> TypedPrinter: <<div class="sig_block"|<<span class='code'|functor ~(>><<span class='code'|~Typed~X~M~L>><<span class='code'| ~: >><<span class="code type"|<<a_api text="TypedXML" | module XML_sigs_duce.TypedXML >>>><<span class='code'|~) ~-~> >><<span class='code'|sig>><<a_api text=".." | module XML_sigs_duce.TypedPrinter >><<span class='code'|end>>>>>><<div class="module_param_list" | <<span class="param_title" |Parameters :>><<div|
+|@@class="paramstable"@ @class="centertop fifteen code"@@{{{TypedXML}}}|@@class="centertop"@@:|<<span class="code type"|<<a_api text="TypedXML" | module XML_sigs_duce.TypedXML >>>>|
+>>>>
+
+----
+<<div class="code"|<<span class="keyword"|module type>> <<a_api text="T" | module type XML_sigs_duce.TypedPrinter.T >> = <<span class='code'|sig>><<a_api text=".." | module type XML_sigs_duce.TypedPrinter.T >><<span class='code'|end>>>>

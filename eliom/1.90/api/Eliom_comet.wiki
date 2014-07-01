@@ -1,0 +1,5 @@
+=Module <<a_api_type | module Eliom_comet >> =
+<<div class="code"|<<span class="keyword"|module>> Eliom_comet: <<span class='code'|sig>><<a_api text=".." | module Eliom_comet >><<span class='code'|end>>>>~A module with all the base primitive needed for server push~.\\
+
+----
+<<div class="code"|<<span class="keyword"|module>> <<a_api text="Channels" | module Eliom_comet.Channels >>: <<span class='code'|sig>><<a_api text=".." | module Eliom_comet.Channels >><<span class='code'|end>>>>

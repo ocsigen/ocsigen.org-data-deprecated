@@ -1,0 +1,16 @@
+<<code language="ocaml" | object
+  method applyMask : unit Js.meth
+  method dispose : unit Js.meth
+  method disposeInternal : unit Js.meth
+  method getDisposed : bool Js.t Js.meth
+  method hideMask : unit Js.meth
+  method isDisposed : bool Js.t Js.meth
+  method listenOnTarget :
+    #Goog.Events.eventTarget Js.t ->
+    Js.js_string Js.t ->
+    Js.js_string Js.t -> #Dom_html.element Js.t -> unit Js.meth
+  method removeHandlers : unit Js.meth
+  method setOpacity : float -> unit Js.meth
+  method setSnapElement : #Dom_html.element Js.t -> unit Js.meth
+  method setZIndex : int -> unit Js.meth
+end >>

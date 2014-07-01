@@ -1,0 +1,10 @@
+=Module <<a_api_type | module Goog.I18n.TimeZone >> =
+<<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module>> <<span class="ocsforge_color_uid"|<<span class="ocsforge_color_uid"|TimeZone>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="ocsforge_color_keyword"|sig>><<a_api text=".." | module Goog.I18n.TimeZone >><<span class="ocsforge_color_keyword"|end>>>>
+----
+<<pre id="VALcreateTimeZone" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|create~Time~Zone>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|int <<span class="ocsforge_color_delimiter"| -> >> <<a_api text="Goog.I18n.timeZone" | class type Goog.I18n.timeZone >> <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>>>>>><<div class="odocwiki_info"|~This factory method creates a time zone instance~.  ~It takes either an object
+   containing complete time zone information~, or a single number representing a
+   constant time zone offset~.  ~If the latter form is used~, ~D~S~T functionality is
+   not available~.
+**Returns** ~A goog~.i~1~8n~.~Time~Zone object for the given
+       time zone data~.\\
+>>

@@ -1,0 +1,28 @@
+<<code language="ocaml" | sig
+  type position = [ `absolute | `fixed ]
+  type common_orientation = [ `center ]
+  type h_orientation = [ `center | `left | `right ]
+  type v_orientation = [ `bottom | `center | `top ]
+  val relative_coord :
+    ?h:Ojw_position.h_orientation ->
+    ?v:Ojw_position.v_orientation ->
+    ?scroll:bool ->
+    relative:#Dom_html.element Js.t -> #Dom_html.element Js.t -> int * int
+  val relative_move :
+    ?h:Ojw_position.h_orientation ->
+    ?v:Ojw_position.v_orientation ->
+    ?scroll:bool ->
+    ?position:Ojw_position.position ->
+    relative:#Dom_html.element Js.t -> #Dom_html.element Js.t -> unit
+  val absolute_coord :
+    ?h:Ojw_position.h_orientation ->
+    ?v:Ojw_position.v_orientation ->
+    ?scroll:bool ->
+    relative:#Dom_html.element Js.t -> #Dom_html.element Js.t -> int * int
+  val absolute_move :
+    ?h:Ojw_position.h_orientation ->
+    ?v:Ojw_position.v_orientation ->
+    ?scroll:bool ->
+    ?position:Ojw_position.position ->
+    relative:#Dom_html.element Js.t -> #Dom_html.element Js.t -> unit
+end >>

@@ -1,0 +1,5 @@
+<<code language="ocaml" | object
+  method dispose : unit Js.meth
+  method getDisposed : bool Js.t Js.meth
+  method isDisposed : bool Js.t Js.meth
+end >>

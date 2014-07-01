@@ -1,0 +1,9 @@
+=Module type <<a_api_type subproject="server" | module type Eliom_output.APPL_PARAMS >> =
+<<div class="code"|<<span class="keyword"|module type>> APPL_PARAMS = <<span class='code'|sig>><<a_api subproject="server" text=".." | module type Eliom_output.APPL_PARAMS >><<span class='code'|end>>>>
+----
+<<div id="VALapplication_name" class="code"|<<span class="keyword"|val>> application~_name : <<span class="code type"|string>>>><<div class="info"|~Name of the application~. 
+      ~The name of the client side program must be the this name plus
+      "~.uue" suffix~.
+      ~Two distincts applications must have distincts names~.\\
+>>
+<<div id="VALparams" class="code"|<<span class="keyword"|val>> params : <<span class="code type"|<<a_api subproject="server" text="Eliom_output.appl_service_params" | type Eliom_output.appl_service_params >>>>>>

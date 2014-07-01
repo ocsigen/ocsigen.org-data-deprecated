@@ -1,0 +1,8 @@
+<<code language="ocaml" | object
+  method dispose : unit Js.meth
+  method disposeInternal : unit Js.meth
+  method getDisposed : bool Js.t Js.meth
+  method isDisposed : bool Js.t Js.meth
+  method onMouseMove : #Goog.Events.event Js.t -> unit Js.meth
+  method setConstrainScroll : bool Js.t -> unit Js.meth
+end >>

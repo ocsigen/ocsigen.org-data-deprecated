@@ -1,0 +1,27 @@
+==
+
+=@@id="1_ServerAPI"@@~Server ~A~P~I=
+
+
+
+
+|<<a_api subproject="server" | module Eba_sigs >>|<<div class="odocwiki_info"|~This module defines all functor application module signatures~.
+>>
+|
+
+
+
+
+
+==@@id="2_Index"@@~Index==
+
+
+
+* <<a_api subproject="server" text="Index of types" | index types >>
+* <<a_api subproject="server" text="Index of exceptions" | index exceptions >>
+* <<a_api subproject="server" text="Index of values" | index values >>
+* <<a_api subproject="server" text="Index of class methods" | index methods >>
+* <<a_api subproject="server" text="Index of class types" | index class types >>
+* <<a_api subproject="server" text="Index of modules" | index modules >>
+* <<a_api subproject="server" text="Index of module types" | index module types >>
+

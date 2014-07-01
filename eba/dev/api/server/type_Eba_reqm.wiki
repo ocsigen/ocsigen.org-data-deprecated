@@ -1,0 +1,34 @@
+<<code language="ocaml" | sig
+  val doc_start : unit
+  exception No_value
+  type html = Html5_types.div Eliom_content.Html5.elt
+  class type virtual reqm_base =
+    object method virtual to_html : Eba_reqm.html end
+  class type ['a] reqm =
+    object
+      method clear : unit
+      method get : 'a
+      method get_opt : 'a option
+      method has : bool
+      method set : 'a -> unit
+      method to_html : Eba_reqm.html
+    end
+  type set
+  type 'a cons
+  val cons : 'a Eba_reqm.cons
+  val create_set : string -> Eba_reqm.set
+  val create :
+    ?cons:'a Eba_reqm.cons ->
+    ?set:Eba_reqm.set ->
+    ?default:(unit -> 'a) ->
+    to_html:('a -> Eba_reqm.html) -> unit -> 'a Eba_reqm.reqm
+  val to_html : #Eba_reqm.reqm_base -> Eba_reqm.html
+  val set : 'a Eba_reqm.reqm -> 'a -> unit
+  val push : 'a list Eba_reqm.reqm -> 'a -> unit
+  val get : 'a Eba_reqm.reqm -> 'a
+  val get_opt : 'a Eba_reqm.reqm -> 'a option
+  val has : 'a Eba_reqm.reqm -> bool
+  val clear : 'a Eba_reqm.reqm -> unit
+  val name_of_set : Eba_reqm.set -> string
+  val to_list : Eba_reqm.set -> Eba_reqm.reqm_base list
+end >>

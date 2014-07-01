@@ -1,0 +1,31 @@
+=Module <<a_api_type subproject="client" | module Eliom_comet.Configuration >> =
+<<div class="code"|<<span class="keyword"|module>> Configuration: <<span class='code'|sig>><<a_api subproject="client" text=".." | module Eliom_comet.Configuration >><<span class='code'|end>>>>~Change the reactivity of channels~. ~Multiples configurations ~( of
+    type <<span class='code'|t>> ~) can be created~. ~The resulting behaviour is the minimal
+    ~( in the meaning of maximal reactivity ~) between all
+    configurations\\
+
+----
+<<div class="code" id="TYPEt"|<<span class="keyword"|type>> t>>
+
+<<div id="VALnew_configuration" class="code"|<<span class="keyword"|val>> new~_configuration : <<span class="code type"|unit -> <<a_api subproject="client" text="t" | type Eliom_comet.Configuration.t >>>>>><<div class="info"|~Creates a new configuration with default value~. ~It modifies the
+      current behaviour immediately\\
+>>
+<<div id="VALdrop_configuration" class="code"|<<span class="keyword"|val>> drop~_configuration : <<span class="code type"|<<a_api subproject="client" text="t" | type Eliom_comet.Configuration.t >> -> unit>>>><<div class="info"|<<span class='code'|drop~_configuration t>> restores the behaviour to the minimum of
+      configuration without <<span class='code'|t>>~. ~If there is no other configuration
+      than <<span class='code'|t>>~, it is restored to the defaults~.\\
+>>
+<<div id="VALset_always_active" class="code"|<<span class="keyword"|val>> set~_always~_active : <<span class="code type"|<<a_api subproject="client" text="t" | type Eliom_comet.Configuration.t >> -> bool -> unit>>>><<div class="info"|<<span class='code'|set~_always~_active c true>> tells the client to always stay active~.
+      ~Default value is false~.\\
+>>
+<<div id="VALset_active_until_timeout" class="code"|<<span class="keyword"|val>> set~_active~_until~_timeout : <<span class="code type"|<<a_api subproject="client" text="t" | type Eliom_comet.Configuration.t >> -> bool -> unit>>>><<div class="info"|<<span class='code'|set~_active~_until~_timeout c v>> sets the activity changing
+      behaviour~. if <<span class='code'|v>> is <<span class='code'|true>> the page is kept active even if not
+      focused until the client receive a timeout message from the
+      server~. ~It implies that if the server keeps sending datas to the
+      client~, the comet connection will never be closed~.
+      ~Default value is false~.\\
+>>
+<<div id="VALset_time_between_request" class="code"|<<span class="keyword"|val>> set~_time~_between~_request : <<span class="code type"|<<a_api subproject="client" text="t" | type Eliom_comet.Configuration.t >> -> float -> unit>>>><<div class="info"|after <<span class='code'|set~_time~_between~_request t v>>~, the main loop will wait for
+      <<span class='code'|v>> seconds between two requests~. ~It is taken into account
+      immediately~.
+      ~Default value is ~0~.\\
+>>

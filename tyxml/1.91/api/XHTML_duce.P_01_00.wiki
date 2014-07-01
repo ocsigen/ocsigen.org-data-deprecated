@@ -1,0 +1,3 @@
+=Module <<a_api_type | module XHTML_duce.P_01_00 >> =
+<<div class="code"|<<span class="keyword"|module>> P_01_00: <<span class="code type"|<<a_api text="XML_sigs_duce.TypedPrinter" | module XML_sigs_duce.TypedPrinter >>(M_01_00).T>><<span class="code type"|{{{  }}}>>>>
+----

@@ -1,0 +1,19 @@
+=Index of module types=
+
+|@@ @style="tet-align: left;"@@\\J|
+|@@class="odocwiki_index"@ @@<<a_api text="JSSTORAGE"| module type Ojw_jsstorage.JSSTORAGE >> ~[<<a_api | module Ojw_jsstorage >>~]|<<div class="odocwiki_info"|~Generic signature for storage on the client side~.
+>>
+|
+|@@ @style="tet-align: left;"@@\\P|
+|@@class="odocwiki_index"@ @@<<a_api text="Parent"| module type Ojw_dom_sigs.Parent >> ~[<<a_api | module Ojw_dom_sigs >>~]||
+|@@ @style="tet-align: left;"@@\\T|
+|@@class="odocwiki_index"@ @@<<a_api text="T"| module type Ojw_popup_sigs.T >> ~[<<a_api | module Ojw_popup_sigs >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="T"| module type Ojw_scrollbar_sigs.T >> ~[<<a_api | module Ojw_scrollbar_sigs >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="T"| module type Ojw_completion_sigs.T >> ~[<<a_api | module Ojw_completion_sigs >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="T"| module type Ojw_traversable_sigs.T >> ~[<<a_api | module Ojw_traversable_sigs >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="T"| module type Ojw_dropdown_sigs.T >> ~[<<a_api | module Ojw_dropdown_sigs >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="T"| module type Ojw_button_sigs.T >> ~[<<a_api | module Ojw_button_sigs >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="T"| module type Ojw_alert_sigs.T >> ~[<<a_api | module Ojw_alert_sigs >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="T"| module type Ojw_dom_sigs.T >> ~[<<a_api | module Ojw_dom_sigs >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="T"| module type Ojw_active_set.T >> ~[<<a_api | module Ojw_active_set >>~]||
+\\

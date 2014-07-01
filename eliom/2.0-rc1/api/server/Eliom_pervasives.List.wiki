@@ -1,0 +1,5 @@
+=Module <<a_api_type subproject="server" | module Eliom_pervasives.List >> =
+<<div class="code"|<<span class="keyword"|module>> List: <<span class='code'|sig>><<a_api subproject="server" text=".." | module Eliom_pervasives.List >><<span class='code'|end>>>>
+----
+<<div class="code"|<<span class="keyword"|include>> List>>
+<<div id="VALassoc_remove" class="code"|<<span class="keyword"|val>> assoc~_remove : <<span class="code type"|'a -> ('a * 'b) list -> 'b * ('a * 'b) list>>>><<div id="VALremove_all_assoc" class="code"|<<span class="keyword"|val>> remove~_all~_assoc : <<span class="code type"|'a -> ('a * 'b) list -> ('a * 'b) list>>>><<div id="VALremove_first_if_any" class="code"|<<span class="keyword"|val>> remove~_first~_if~_any : <<span class="code type"|'a -> 'a list -> 'a list>>>><<div id="VALremove_first_if_any_q" class="code"|<<span class="keyword"|val>> remove~_first~_if~_any~_q : <<span class="code type"|'a -> 'a list -> 'a list>>>>

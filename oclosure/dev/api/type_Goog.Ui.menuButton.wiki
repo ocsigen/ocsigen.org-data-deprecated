@@ -1,0 +1,131 @@
+<<code language="ocaml" | object
+  method addClassName : Js.js_string Js.t -> unit Js.meth
+  method addEventListener :
+    Js.js_string Js.t ->
+    (unit -> bool Js.t) Js.callback -> bool Js.t Js.opt -> unit Js.meth
+  method addItem : #Goog.Ui.control Js.t -> unit Js.meth
+  method addItemAt :
+    (#Goog.Ui.menuItem Js.t, #Goog.Ui.menuSeparator Js.t) Goog.Tools.Union.t ->
+    int -> unit Js.meth
+  method canDecorate : #Dom_html.element Js.t -> bool Js.t Js.meth
+  method containsElement : #Dom_html.element Js.t -> bool Js.t Js.meth
+  method createDom : unit Js.meth
+  method decorate : #Dom_html.element Js.t -> unit Js.meth
+  method dispatchEvent :
+    (Js.js_string Js.t, Events.event Js.t) Tools.Union.t -> bool Js.t Js.meth
+  method dispose : unit Js.meth
+  method disposeInternal : unit Js.meth
+  method enableClassName : Js.js_string Js.t -> bool Js.t -> unit Js.meth
+  method enterDocument : unit Js.meth
+  method exitDocument : unit Js.meth
+  method getCaption : Js.js_string Js.t Js.opt Js.meth
+  method getChild : Js.js_string Js.t -> component Js.t Js.opt Js.meth
+  method getChildAt : int -> component Js.t Js.opt Js.meth
+  method getChildCount : int Js.meth
+  method getChildIds : Js.js_string Js.t Js.js_array Js.t Js.meth
+  method getContent : controlContent Js.meth
+  method getContentElement : Dom_html.element Js.t Js.meth
+  method getDisposed : bool Js.t Js.meth
+  method getDomHelper : Gdom.domHelper Js.t Js.meth
+  method getElement : Dom_html.element Js.t Js.meth
+  method getElementByFragment :
+    Js.js_string Js.t -> Dom_html.element Js.t Js.meth
+  method getExtraClassNames :
+    Js.js_string Js.t Js.js_array Js.t Js.opt Js.meth
+  method getFragmentFromId : Js.js_string Js.t -> Js.js_string Js.t Js.meth
+  method getId : Js.js_string Js.t Js.meth
+  method getItemAt : int -> Goog.Ui.menuItem Js.t Js.meth
+  method getItemCount : int Js.meth
+  method getKeyEventTarget : Dom_html.element Js.t Js.meth
+  method getMenu : Goog.Ui.menu Js.t Js.meth
+  method getParent : component Js.t Js.opt Js.meth
+  method getParentEventTarget : Events.eventTarget Js.t Js.meth
+  method getState : Component.State.state_pre Js.meth
+  method getTooltip : Js.js_string Js.t Js.optdef Js.meth
+  method getValue : Js.js_string Js.t Js.optdef Js.meth
+  method handleBlur : #Events.event Js.t -> unit Js.meth
+  method handleBur : #Goog.Events.event Js.t -> unit Js.meth
+  method handleDblClick : #Events.event Js.t -> unit Js.meth
+  method handleFocus : #Events.event Js.t -> unit Js.meth
+  method handleHighlightItem : #Goog.Events.event Js.t -> unit Js.meth
+  method handleKeyEvent : #Events.event Js.t -> bool Js.t Js.meth
+  method handleKeyEventInternal :
+    #Goog.Events.event Js.t -> bool Js.t Js.meth
+  method handleMenuAction : #Goog.Events.event Js.t -> unit Js.meth
+  method handleMenuBlur : #Goog.Events.event Js.t -> unit Js.meth
+  method handleMouseDown : #Goog.Events.event Js.t -> unit Js.meth
+  method handleMouseOut : #Events.event Js.t -> unit Js.meth
+  method handleMouseOver : #Events.event Js.t -> unit Js.meth
+  method handleMouseUp : #Goog.Events.event Js.t -> unit Js.meth
+  method handleUnHighlightItem : #Goog.Events.event Js.t -> unit Js.meth
+  method hasChildren : bool Js.t Js.meth
+  method hasState : Component.State.state_pre -> bool Js.t Js.meth
+  method hideMenu : unit Js.meth
+  method indexOfChild : component Js.t Js.opt -> int Js.meth
+  method isActive : bool Js.t Js.meth
+  method isAlignMenuToStart : bool Js.t Js.meth
+  method isAllowTextSelection : bool Js.t Js.meth
+  method isAutoState : Component.State.state_pre -> bool Js.t Js.meth
+  method isChecked : bool Js.t Js.meth
+  method isDispatchTransitionEvents :
+    Component.State.state_pre -> bool Js.t Js.meth
+  method isDisposed : bool Js.t Js.meth
+  method isEnabled : bool Js.t Js.meth
+  method isFocusablePopupMenu : bool Js.t Js.meth
+  method isFocused : bool Js.t Js.meth
+  method isHandleMouseEvents : bool Js.t Js.meth
+  method isHighlighted : bool Js.t Js.meth
+  method isInDocument : bool Js.t Js.meth
+  method isOpen : bool Js.t Js.meth
+  method isRightToLeft : bool Js.t Js.meth
+  method isScrollOnOverflow : bool Js.t Js.meth
+  method isSelected : bool Js.t Js.meth
+  method isSupportedState : Component.State.state_pre -> bool Js.t Js.meth
+  method isVisible : bool Js.t Js.meth
+  method makeId : Js.js_string Js.t -> Js.js_string Js.t Js.meth
+  method performActionInternal : #Goog.Events.event Js.t -> bool Js.t Js.meth
+  method positionMenu : unit Js.meth
+  method removeChildAt : int -> bool Js.t Js.opt -> component Js.t Js.meth
+  method removeChildren : bool Js.t Js.opt -> unit Js.meth
+  method removeClassName : Js.js_string Js.t -> unit Js.meth
+  method removeEventListener :
+    Js.js_string Js.t ->
+    (unit -> bool Js.t) Js.callback -> bool Js.t Js.opt -> unit Js.meth
+  method removeItem : Goog.Ui.menuItem Js.t -> unit Js.meth
+  method removeItemAt : int -> unit Js.meth
+  method render : #Dom_html.element Js.t Js.opt -> unit Js.meth
+  method renderBefore : #Dom_html.element Js.t -> unit Js.meth
+  method setActive : bool Js.t -> unit Js.meth
+  method setAlignMenuToStart : bool Js.t -> unit Js.meth
+  method setAllowTextSelection : bool Js.t -> unit Js.meth
+  method setAutoStates :
+    Component.State.state_pre -> bool Js.t -> unit Js.meth
+  method setCaption : Js.js_string Js.t -> unit Js.meth
+  method setChecked : bool Js.t -> unit Js.meth
+  method setCollapsed : Side.side -> unit Js.meth
+  method setContent : controlContent -> unit Js.meth
+  method setDispatchTransitionEvents :
+    Component.State.state_pre -> bool Js.t -> unit Js.meth
+  method setEnabled : bool Js.t -> unit Js.meth
+  method setFocusablePopupMenu : bool Js.t -> unit Js.meth
+  method setFocused : bool Js.t -> unit Js.meth
+  method setHandleMouseEvents : bool Js.t -> unit Js.meth
+  method setHighlighted : bool Js.t -> unit Js.meth
+  method setId : Js.js_string Js.t -> unit Js.meth
+  method setMenu : Goog.Ui.menu Js.t -> Goog.Ui.menu Js.t Js.optdef Js.meth
+  method setOpen : bool Js.t -> unit Js.meth
+  method setParent : component Js.t -> unit Js.meth
+  method setParentEventTarget :
+    Events.eventTarget Js.t Js.opt -> unit Js.meth
+  method setRightToLeft : bool Js.t -> unit Js.meth
+  method setScrollOnOverflow : bool Js.t -> unit Js.meth
+  method setSelected : bool Js.t -> unit Js.meth
+  method setState : Component.State.state_pre -> bool Js.t -> unit Js.meth
+  method setSupportedState :
+    Component.State.state_pre -> bool Js.t -> unit Js.meth
+  method setTooltip : Js.js_string Js.t -> unit Js.meth
+  method setValue : Js.js_string Js.t Js.opt -> unit Js.meth
+  method setVisible : bool Js.t -> bool Js.t Js.opt -> bool Js.t Js.meth
+  method showMenu : unit Js.meth
+  method wasDecorated : bool Js.t Js.meth
+end >>

@@ -1,0 +1,5 @@
+=Class type <<a_api_type | class type Goog.Ui.toolbarSelect >> =
+<<pre class="ocsforge_color odocwiki_code"|<<span id="TYPEtoolbarSelect"|<<span class="ocsforge_color_keyword"|class type>> <<span class="ocsforge_color_name"|toolbarSelect>>>> <<span class="ocsforge_color_delimiter"|~=>> <<span class="ocsforge_color_keyword"|object>><<a_api text=".." | class type Goog.Ui.toolbarSelect >><<span class="ocsforge_color_keyword"|end>>>>**~Inherits**
+* <<a_api | class Goog.Ui.select >>
+
+----

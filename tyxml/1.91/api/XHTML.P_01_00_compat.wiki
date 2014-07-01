@@ -1,0 +1,4 @@
+=Module <<a_api_type | module XHTML.P_01_00_compat >> =
+<<div class="code"|<<span class="keyword"|module>> P_01_00_compat: <<span class="code type"|<<a_api text="XML_sigs.TypedSimplePrinter" | module XML_sigs.TypedSimplePrinter >>(<<a_api text="XML.M" | module XML.M >>)(M_01_00).T>><<span class="code type"|{{{  }}}>>>>~Simple printer for ~X~H~T~M~L ~1~.~0 documents ~(~H~T~M~L compatible printer~)\\
+
+----

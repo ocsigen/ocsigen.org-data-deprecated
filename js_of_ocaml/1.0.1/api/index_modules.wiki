@@ -1,0 +1,59 @@
+=Index of modules=
+
+|@@ @style="tet-align: left;"@@\\C|
+|@@class="odocwiki_index"@ @@<<a_api text="CoerceTo"| module Dom_html.CoerceTo >> ~[<<a_api | module Dom_html >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="Current"| module Url.Current >> ~[<<a_api | module Url >>~]||
+|@@ @style="tet-align: left;"@@\\D|
+|@@class="odocwiki_index"@ @@<<a_api text="Dom"| module Dom >> |<<div class="odocwiki_info"|~D~O~M binding
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="Dom_events"| module Dom_events >> |<<div class="odocwiki_info"|~Javascript events
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="Dom_html"| module Dom_html >> |<<div class="odocwiki_info"|~D~O~M ~H~T~M~L binding
+>>
+|
+|@@ @style="tet-align: left;"@@\\E|
+|@@class="odocwiki_index"@ @@<<a_api text="Event"| module Dom_html.Event >> ~[<<a_api | module Dom_html >>~]|<<div class="odocwiki_info"|~Event types~: <<span class="odocwiki_inlinecode"|mousedown>>~, <<span class="odocwiki_inlinecode"|keypress>>~, ~.~.~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="Event_arrows"| module Event_arrows >> |<<div class="odocwiki_info"|~W~A~R~N~I~N~G~: ~E~X~P~E~R~I~M~E~N~T~A~L
+>>
+|
+|@@ @style="tet-align: left;"@@\\F|
+|@@class="odocwiki_index"@ @@<<a_api text="Firebug"| module Firebug >> |<<div class="odocwiki_info"|~Firebug ~A~P~I ~(debugging console~)~.
+>>
+|
+|@@ @style="tet-align: left;"@@\\J|
+|@@class="odocwiki_index"@ @@<<a_api text="Js"| module Js >> |<<div class="odocwiki_info"|~Javascript binding
+>>
+|
+|@@ @style="tet-align: left;"@@\\L|
+|@@class="odocwiki_index"@ @@<<a_api text="Lwt_js"| module Lwt_js >> |<<div class="odocwiki_info"|~Javascript specific ~Lwt functions~.
+>>
+|
+|@@ @style="tet-align: left;"@@\\O|
+|@@class="odocwiki_index"@ @@<<a_api text="Opt"| module Js.Opt >> ~[<<a_api | module Js >>~]|<<div class="odocwiki_info"|~Standard functions for manipulating possibly null values~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="Optdef"| module Js.Optdef >> ~[<<a_api | module Js >>~]|<<div class="odocwiki_info"|~Standard functions for manipulating possibly undefined values~.
+>>
+|
+|@@ @style="tet-align: left;"@@\\R|
+|@@class="odocwiki_index"@ @@<<a_api text="Regexp"| module Regexp >> |<<div class="odocwiki_info"|~Types for regexps
+>>
+|
+|@@ @style="tet-align: left;"@@\\T|
+|@@class="odocwiki_index"@ @@<<a_api text="Typ"| module Dom_events.Typ >> ~[<<a_api | module Dom_events >>~]||
+|@@ @style="tet-align: left;"@@\\U|
+|@@class="odocwiki_index"@ @@<<a_api text="Unsafe"| module Js.Unsafe >> ~[<<a_api | module Js >>~]|<<div class="odocwiki_info"|~Unsafe ~Javascript operations
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="Url"| module Url >> |<<div class="odocwiki_info"|~This module provides functions for tampering with ~Url~.
+>>
+|
+|@@ @style="tet-align: left;"@@\\X|
+|@@class="odocwiki_index"@ @@<<a_api text="XmlHttpRequest"| module XmlHttpRequest >> |<<div class="odocwiki_info"|~Xml~Http~Request object~.
+>>
+|
+\\

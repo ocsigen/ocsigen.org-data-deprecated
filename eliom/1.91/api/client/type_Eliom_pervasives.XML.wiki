@@ -1,0 +1,57 @@
+<<code language="ocaml" | sig
+  module M :
+    sig
+      type aname = string
+      type attrib = string * Js.Unsafe.any
+      type attribs = Eliom_pervasives.XML.M.attrib list
+      type event = unit -> unit
+      val attrib_name :
+        Eliom_pervasives.XML.M.attrib -> Eliom_pervasives.XML.M.aname
+      val float_attrib :
+        Eliom_pervasives.XML.M.aname ->
+        float -> Eliom_pervasives.XML.M.attrib
+      val int_attrib :
+        Eliom_pervasives.XML.M.aname -> int -> Eliom_pervasives.XML.M.attrib
+      val string_attrib :
+        Eliom_pervasives.XML.M.aname ->
+        string -> Eliom_pervasives.XML.M.attrib
+      val space_sep_attrib :
+        Eliom_pervasives.XML.M.aname ->
+        string list -> Eliom_pervasives.XML.M.attrib
+      val comma_sep_attrib :
+        Eliom_pervasives.XML.M.aname ->
+        string list -> Eliom_pervasives.XML.M.attrib
+      val event_attrib :
+        Eliom_pervasives.XML.M.aname ->
+        Eliom_pervasives.XML.M.event -> Eliom_pervasives.XML.M.attrib
+      type ename = string
+      type elt = Dom.node Js.t
+      val pcdata : string -> Eliom_pervasives.XML.M.elt
+      val encodedpcdata : string -> Eliom_pervasives.XML.M.elt
+      val entity : string -> Eliom_pervasives.XML.M.elt
+      val empty : unit -> Eliom_pervasives.XML.M.elt
+      val comment : string -> Eliom_pervasives.XML.M.elt
+      val leaf :
+        ?a:Eliom_pervasives.XML.M.attrib list ->
+        Eliom_pervasives.XML.M.ename -> Eliom_pervasives.XML.M.elt
+      val node :
+        ?a:Eliom_pervasives.XML.M.attrib list ->
+        Eliom_pervasives.XML.M.ename ->
+        Eliom_pervasives.XML.M.elt list -> Eliom_pervasives.XML.M.elt
+      val cdata : string -> Eliom_pervasives.XML.M.elt
+      val cdata_script : string -> Eliom_pervasives.XML.M.elt
+      val cdata_style : string -> Eliom_pervasives.XML.M.elt
+      val lwt_register_event :
+        ?keep_default:bool ->
+        Eliom_pervasives.XML.M.elt ->
+        Eliom_pervasives.XML.M.ename -> ('a -> 'b Lwt.t) -> 'a -> unit
+      val register_event :
+        ?keep_default:bool ->
+        Eliom_pervasives.XML.M.elt ->
+        Eliom_pervasives.XML.M.ename -> ('a -> 'b) -> 'a -> unit
+      val ref_node : Eliom_pervasives.XML.M.elt -> int
+      type ref_tree =
+          Ref_tree of int option *
+            (int * Eliom_pervasives.XML.M.ref_tree) list
+    end
+end >>

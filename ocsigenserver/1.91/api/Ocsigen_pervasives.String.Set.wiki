@@ -1,0 +1,3 @@
+=Module <<a_api_type | module Ocsigen_pervasives.String.Set >> =
+<<div class="code"|<<span class="keyword"|module>> Set: <<span class="code type"|Set.S>><<span class="code type"|{{{  }}} with type elt = string>>>>
+----

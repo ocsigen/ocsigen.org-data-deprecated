@@ -1,0 +1,23 @@
+<<code language="ocaml" | sig
+  val _RED : Js.js_string Js.t
+  val _GREEN : Js.js_string Js.t
+  val _YELLOW : Js.js_string Js.t
+  val _FACTOR_RADIUS_FROM_SIZE : float
+  val _FACTOR_MAIN_AREA : float
+  val _FACTOR_COLOR_RADIUS : float
+  val _FACTOR_MAJOR_TICKS : float
+  val _FACTOR_MINOR_TICKS : float
+  val _FACTOR_NEEDLE_FRONT : float
+  val _FACTOR_NEEDLE_BACK : float
+  val _FACTOR_NEEDLE_WIDTH : float
+  val _FACTOR_NEEDLE_HINGE : float
+  val _FACTOR_TITLE_FONT_SIZE : float
+  val _FACTOR_TITLE_OFFSET : float
+  val _FACTOR_VALUE_FONT_SIZE : float
+  val _FACTOR_TICK_LABEL_FONT_SIZE : float
+  val _FACTOR_VALUE_OFFSET : float
+  val _TITLE_FONT_NAME : Js.js_string Js.t
+  val _NEEDLE_MOVE_MAX_STEP : float
+  val _NEEDLE_MOVE_TIME : int
+  val _MAX_EXCEED_POSITION_POSITION : float
+end >>
