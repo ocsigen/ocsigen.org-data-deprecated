@@ -20,7 +20,9 @@
         ?content_type:string ->
         ?headers:Http_headers.t ->
         ?secure_session:bool ->
-        service:('get, 'post, [< Eliom_service.internal_service_kind ],
+        service:('get, 'post, [< Eliom_service.service_method ],
+                 [< Eliom_service.attached ],
+                 [< Eliom_service.internal_service_kind ],
                  [< Eliom_service.suff ], 'gn, 'pn, [ `Registrable ],
                  [< Eliom_service.non_ocaml_service ])
                 Eliom_service.service ->
@@ -44,10 +46,10 @@
         ?error_handler:((string * exn) list ->
                         Html5_types.html Eliom_content.Html5.elt Lwt.t) ->
         ('get -> unit -> Html5_types.html Eliom_content.Html5.elt Lwt.t) ->
-        ('get, unit,
-         [> `Attached of
-              ([> `Internal of [> `Service ] ], [> `Get ]) Eliom_service.a_s ],
-         'a, 'gn, unit, [< Eliom_service.registrable > `Registrable ],
+        ('get, unit, [< Eliom_service.service_method > `Get ],
+         [< Eliom_service.attached > `Attached ],
+         [< Eliom_service.service_kind > `Service ], 'a, 'gn, unit,
+         [< Eliom_service.registrable > `Registrable ],
          [> Eliom_service.appl_service ])
         Eliom_service.service
       val register_coservice :
@@ -65,11 +67,8 @@
         ?max_use:int ->
         ?timeout:float ->
         ?https:bool ->
-        fallback:(unit, unit,
-                  [ `Attached of
-                      ([ `Internal of [ `Service ] ], [ `Get ])
-                      Eliom_service.a_s ],
-                  [ `WithoutSuffix ], unit, unit,
+        fallback:(unit, unit, [ `Get ], Eliom_service.attached_kind,
+                  [ `Service ], [ `WithoutSuffix ], unit, unit,
                   [< Eliom_service.registrable ],
                   [< Eliom_service.non_ocaml_service ])
                  Eliom_service.service ->
@@ -78,10 +77,9 @@
         ?error_handler:((string * exn) list ->
                         Html5_types.html Eliom_content.Html5.elt Lwt.t) ->
         ('get -> unit -> Html5_types.html Eliom_content.Html5.elt Lwt.t) ->
-        ('get, unit,
-         [> `Attached of
-              ([> `Internal of [> `Coservice ] ], [> `Get ])
-              Eliom_service.a_s ],
+        ('get, unit, [< Eliom_service.service_method > `Get ],
+         [< Eliom_service.attached > `Attached ],
+         [< Eliom_service.service_kind > `AttachedCoservice ],
          [ `WithoutSuffix ], 'gn, unit,
          [< Eliom_service.registrable > `Registrable ],
          [> Eliom_service.appl_service ])
@@ -106,7 +104,9 @@
         ?error_handler:((string * exn) list ->
                         Html5_types.html Eliom_content.Html5.elt Lwt.t) ->
         ('get -> unit -> Html5_types.html Eliom_content.Html5.elt Lwt.t) ->
-        ('get, unit, [> `Nonattached of [> `Get ] Eliom_service.na_s ],
+        ('get, unit, [< Eliom_service.service_method > `Get ],
+         [< Eliom_service.attached > `Nonattached ],
+         [< Eliom_service.service_kind > `NonattachedCoservice ],
          [ `WithoutSuffix ], 'gn, unit,
          [< Eliom_service.registrable > `Registrable ],
          [> Eliom_service.appl_service ])
@@ -121,10 +121,8 @@
         ?secure_session:bool ->
         ?https:bool ->
         ?priority:int ->
-        fallback:('get, unit,
-                  [ `Attached of
-                      ([ `Internal of [ `Coservice | `Service ] ], [ `Get ])
-                      Eliom_service.a_s ],
+        fallback:('get, unit, [ `Get ], Eliom_service.attached_kind,
+                  [ `AttachedCoservice | `Service ],
                   [< Eliom_service.suff ] as 'a, 'gn, unit,
                   [< `Registrable ], [< Eliom_service.non_ocaml_service ])
                  Eliom_service.service ->
@@ -133,11 +131,10 @@
         ?error_handler:((string * exn) list ->
                         Html5_types.html Eliom_content.Html5.elt Lwt.t) ->
         ('get -> 'post -> Html5_types.html Eliom_content.Html5.elt Lwt.t) ->
-        ('get, 'post,
-         [> `Attached of
-              ([> `Internal of [ `Coservice | `Service ] ], [> `Post ])
-              Eliom_service.a_s ],
-         'a, 'gn, 'pn, [< Eliom_service.registrable > `Registrable ],
+        ('get, 'post, [< Eliom_service.service_method > `Post ],
+         [< Eliom_service.attached > `Attached ],
+         [ `AttachedCoservice | `Service ], 'a, 'gn, 'pn,
+         [< Eliom_service.registrable > `Registrable ],
          [> Eliom_service.appl_service ])
         Eliom_service.service
       val register_post_coservice :
@@ -155,10 +152,8 @@
         ?max_use:int ->
         ?timeout:float ->
         ?https:bool ->
-        fallback:('get, unit,
-                  [ `Attached of
-                      ([ `Internal of [< `Coservice | `Service ] ], [ `Get ])
-                      Eliom_service.a_s ],
+        fallback:('get, unit, [< `Get ], [< Eliom_service.attached_kind ],
+                  [< `AttachedCoservice | `Service ],
                   [< Eliom_service.suff ] as 'a, 'gn, unit,
                   [< `Registrable ], [< Eliom_service.non_ocaml_service ])
                  Eliom_service.service ->
@@ -167,11 +162,10 @@
         ?error_handler:((string * exn) list ->
                         Html5_types.html Eliom_content.Html5.elt Lwt.t) ->
         ('get -> 'post -> Html5_types.html Eliom_content.Html5.elt Lwt.t) ->
-        ('get, 'post,
-         [> `Attached of
-              ([> `Internal of [> `Coservice ] ], [> `Post ])
-              Eliom_service.a_s ],
-         'a, 'gn, 'pn, [< Eliom_service.registrable > `Registrable ],
+        ('get, 'post, [< Eliom_service.service_method > `Post ],
+         [< Eliom_service.attached > `Attached ],
+         [< Eliom_service.service_kind > `AttachedCoservice ], 'a, 'gn, 'pn,
+         [< Eliom_service.registrable > `Registrable ],
          [> Eliom_service.appl_service ])
         Eliom_service.service
       val register_post_coservice' :
@@ -195,7 +189,9 @@
         ?error_handler:((string * exn) list ->
                         Html5_types.html Eliom_content.Html5.elt Lwt.t) ->
         (unit -> 'post -> Html5_types.html Eliom_content.Html5.elt Lwt.t) ->
-        (unit, 'post, [> `Nonattached of [> `Post ] Eliom_service.na_s ],
+        (unit, 'post, [< Eliom_service.service_method > `Post ],
+         [< Eliom_service.attached > `Nonattached ],
+         [< Eliom_service.service_kind > `NonattachedCoservice ],
          [ `WithoutSuffix ], unit, 'pn,
          [< Eliom_service.registrable > `Registrable ],
          [> Eliom_service.appl_service ])
@@ -219,9 +215,10 @@
          Eliom_parameter.raw_post_data ->
          Html5_types.html Eliom_content.Html5.elt Lwt.t) ->
         ('get, Eliom_parameter.raw_post_data,
-         [> `Attached of
-              ([> `Internal of [> `Service ] ], [> `Put ]) Eliom_service.a_s ],
-         'a, 'gn, Eliom_parameter.no_param_name,
+         [< Eliom_service.service_method > `Put ],
+         [< Eliom_service.attached > `Attached ],
+         [< Eliom_service.service_kind > `Service ], 'a, 'gn,
+         Eliom_parameter.no_param_name,
          [< Eliom_service.registrable > `Registrable ],
          [> Eliom_service.appl_service ])
         Eliom_service.service
@@ -240,10 +237,8 @@
         ?max_use:int ->
         ?timeout:float ->
         ?https:bool ->
-        fallback:(unit, Eliom_parameter.raw_post_data,
-                  [ `Attached of
-                      ([ `Internal of [ `Service ] ], [ `Put ])
-                      Eliom_service.a_s ],
+        fallback:(unit, Eliom_parameter.raw_post_data, [ `Put ],
+                  Eliom_service.attached_kind, [ `Service ],
                   [ `WithoutSuffix ], unit, Eliom_parameter.no_param_name,
                   [< Eliom_service.registrable ],
                   [< Eliom_service.non_ocaml_service ])
@@ -256,9 +251,9 @@
          Eliom_parameter.raw_post_data ->
          Html5_types.html Eliom_content.Html5.elt Lwt.t) ->
         ('get, Eliom_parameter.raw_post_data,
-         [> `Attached of
-              ([> `Internal of [> `Coservice ] ], [> `Put ])
-              Eliom_service.a_s ],
+         [< Eliom_service.service_method > `Put ],
+         [< Eliom_service.attached > `Attached ],
+         [< Eliom_service.service_kind > `AttachedCoservice ],
          [ `WithoutSuffix ], 'gn, Eliom_parameter.no_param_name,
          [< Eliom_service.registrable > `Registrable ],
          [> Eliom_service.appl_service ])
@@ -286,7 +281,9 @@
          Eliom_parameter.raw_post_data ->
          Html5_types.html Eliom_content.Html5.elt Lwt.t) ->
         ('get, Eliom_parameter.raw_post_data,
-         [> `Nonattached of [> `Put ] Eliom_service.na_s ],
+         [< Eliom_service.service_method > `Put ],
+         [< Eliom_service.attached > `Nonattached ],
+         [< Eliom_service.service_kind > `NonattachedCoservice ],
          [ `WithoutSuffix ], 'gn, Eliom_parameter.no_param_name,
          [< Eliom_service.registrable > `Registrable ],
          [> Eliom_service.appl_service ])
@@ -310,10 +307,10 @@
          Eliom_parameter.raw_post_data ->
          Html5_types.html Eliom_content.Html5.elt Lwt.t) ->
         ('get, Eliom_parameter.raw_post_data,
-         [> `Attached of
-              ([> `Internal of [> `Service ] ], [> `Delete ])
-              Eliom_service.a_s ],
-         'a, 'gn, Eliom_parameter.no_param_name,
+         [< Eliom_service.service_method > `Delete ],
+         [< Eliom_service.attached > `Attached ],
+         [< Eliom_service.service_kind > `Service ], 'a, 'gn,
+         Eliom_parameter.no_param_name,
          [< Eliom_service.registrable > `Registrable ],
          [> Eliom_service.appl_service ])
         Eliom_service.service
@@ -332,10 +329,8 @@
         ?max_use:int ->
         ?timeout:float ->
         ?https:bool ->
-        fallback:(unit, Eliom_parameter.raw_post_data,
-                  [ `Attached of
-                      ([ `Internal of [ `Service ] ], [ `Delete ])
-                      Eliom_service.a_s ],
+        fallback:(unit, Eliom_parameter.raw_post_data, [ `Delete ],
+                  Eliom_service.attached_kind, [ `Service ],
                   [ `WithoutSuffix ], unit, Eliom_parameter.no_param_name,
                   [< Eliom_service.registrable ],
                   [< Eliom_service.non_ocaml_service ])
@@ -348,9 +343,9 @@
          Eliom_parameter.raw_post_data ->
          Html5_types.html Eliom_content.Html5.elt Lwt.t) ->
         ('get, Eliom_parameter.raw_post_data,
-         [> `Attached of
-              ([> `Internal of [> `Coservice ] ], [> `Delete ])
-              Eliom_service.a_s ],
+         [< Eliom_service.service_method > `Delete ],
+         [< Eliom_service.attached > `Attached ],
+         [< Eliom_service.service_kind > `AttachedCoservice ],
          [ `WithoutSuffix ], 'gn, Eliom_parameter.no_param_name,
          [< Eliom_service.registrable > `Registrable ],
          [> Eliom_service.appl_service ])
@@ -378,7 +373,9 @@
          Eliom_parameter.raw_post_data ->
          Html5_types.html Eliom_content.Html5.elt Lwt.t) ->
         ('get, Eliom_parameter.raw_post_data,
-         [> `Nonattached of [> `Delete ] Eliom_service.na_s ],
+         [< Eliom_service.service_method > `Delete ],
+         [< Eliom_service.attached > `Nonattached ],
+         [< Eliom_service.service_kind > `NonattachedCoservice ],
          [ `WithoutSuffix ], 'gn, Eliom_parameter.no_param_name,
          [< Eliom_service.registrable > `Registrable ],
          [> Eliom_service.appl_service ])
