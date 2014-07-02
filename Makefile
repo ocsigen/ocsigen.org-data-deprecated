@@ -31,7 +31,7 @@ all-%:
 copy-js_of_ocaml:
 	$(MAKE) -C $(REPO_PATH)/doc clean
 	$(MAKE) -C $(REPO_PATH)/doc doc
-	$(MAKE) -C $(REPO_PATH)/doc docwiki
+	$(MAKE) -C $(REPO_PATH)/doc wikidoc
 	cp -Rf $(REPO_PATH)/doc/manual/* $(MANUAL_DIR)/
 	cp -Rf $(REPO_PATH)/doc/api/wiki/* $(API_DIR)/
 
@@ -58,7 +58,7 @@ copy-lwt:
 copy-ocsigenserver:
 	$(MAKE) -C $(REPO_PATH)/doc clean
 	$(MAKE) -C $(REPO_PATH)/doc doc
-	$(MAKE) -C $(REPO_PATH)/doc docwiki
+	$(MAKE) -C $(REPO_PATH)/doc wikidoc
 	cp -Rf $(REPO_PATH)/doc/api-wiki/* $(API_DIR)
 	cp -Rf $(REPO_PATH)/doc/manual-wiki/*.wiki $(MANUAL_SRC_DIR)/
 
