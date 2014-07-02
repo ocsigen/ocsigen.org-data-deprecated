@@ -58,5 +58,5 @@ copy-lwt:
 copy-eliom-base-app:
 	$(MAKE) -C $(REPO_PATH) doc
 	mkdir -p $(API_DIR)/server $(API_DIR)/client
-	cp -Rf $(REPO_PATH)/doc/client/wiki $(API_DIR)/client
-	cp -Rf $(REPO_PATH)/doc/server/wiki $(API_DIR)/server
+	cp -Rf $(REPO_PATH)/doc/client/wiki/* $(API_DIR)/client
+	cp -Rf $(REPO_PATH)/doc/server/wiki/* $(API_DIR)/server

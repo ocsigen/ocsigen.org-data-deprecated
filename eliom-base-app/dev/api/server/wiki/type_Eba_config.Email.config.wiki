@@ -1,1 +1,0 @@
-<<code language="ocaml" | object method from_addr : string * string method mailer : string end >>

@@ -1,4 +1,0 @@
-<<code language="ocaml" | sig
-  type t
-  val in_group : group:Eba_sigs.Groups.t -> userid:int64 -> bool Lwt.t
-end >>
