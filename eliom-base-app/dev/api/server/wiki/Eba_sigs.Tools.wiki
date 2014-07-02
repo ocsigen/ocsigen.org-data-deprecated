@@ -1,0 +1,4 @@
+=Module type <<a_api_type subproject="server" | module type Eba_sigs.Tools >> =
+<<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module type>> <<span class="ocsforge_color_uid"|Tools>> <<span class="ocsforge_color_delimiter"|~=>> <<span class="ocsforge_color_keyword"|sig>><<a_api subproject="server" text=".." | module type Eba_sigs.Tools >><<span class="ocsforge_color_keyword"|end>>>>
+----
+<<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module>> <<a_api subproject="server" text="Cache_f" | module Eba_sigs.Tools.Cache_f >> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<a_api subproject="server" text="Cache_f" | module Eba_sigs.Tools.Cache_f >>>><<span class="odocwiki_type"|>>>>

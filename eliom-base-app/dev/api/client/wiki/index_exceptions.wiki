@@ -1,0 +1,5 @@
+=Index of exceptions=
+
+|@@ @style="tet-align: left;"@@\\N|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Not_connected"| exception Eba_shared.Session.Not_connected >> ~[<<a_api subproject="client" | module Eba_shared.Session >>~]||
+\\
