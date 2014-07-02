@@ -47,3 +47,10 @@ copy-tyxml:
 	$(MAKE) -C $(REPO_PATH) wikidoc
 	cp -Rf $(REPO_PATH)/doc/manual-wiki/* $(MANUAL_SRC_DIR)
 	cp -Rf $(REPO_PATH)/_build/tyxml-api.wikidocdir/* $(API_DIR)
+
+copy-lwt:
+	cd $(REPO_PATH) \
+	&& rm -rf _build/lwt-api.wikidocdir \
+	&& ocamlbuild lwt-api.wikidocdir/index.wiki
+	cp -Rf $(REPO_PATH)/manual/*.wiki $(MANUAL_SRC_DIR)
+	cp -Rf $(REPO_PATH)/_build/lwt-api.wikidocdir/* $(API_DIR)
