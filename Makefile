@@ -37,7 +37,7 @@ copy-js_of_ocaml:
 
 copy-eliom:
 	$(MAKE) -C $(REPO_PATH) wikidoc
-	cp -Rf $(REPO_PATH)/doc/manual-wiki/* $(MANUAL_SRC_DIR)
+	cp -Rf $(REPO_PATH)/doc/manual-wiki/*.wiki $(MANUAL_SRC_DIR)
 	mkdir -p $(API_DIR)/server $(API_DIR)/client
 	cp -Rf $(REPO_PATH)/_build/src/lib/server/api.wikidocdir/* $(API_DIR)/server/
 	cp -Rf $(REPO_PATH)/_build/src/lib/client/api.wikidocdir/* $(API_DIR)/client/
@@ -45,7 +45,7 @@ copy-eliom:
 
 copy-tyxml:
 	$(MAKE) -C $(REPO_PATH) wikidoc
-	cp -Rf $(REPO_PATH)/doc/manual-wiki/* $(MANUAL_SRC_DIR)
+	cp -Rf $(REPO_PATH)/doc/manual-wiki/*.wiki $(MANUAL_SRC_DIR)
 	cp -Rf $(REPO_PATH)/_build/tyxml-api.wikidocdir/* $(API_DIR)
 
 copy-lwt:
@@ -55,14 +55,38 @@ copy-lwt:
 	cp -Rf $(REPO_PATH)/manual/*.wiki $(MANUAL_SRC_DIR)
 	cp -Rf $(REPO_PATH)/_build/lwt-api.wikidocdir/* $(API_DIR)
 
+copy-ocsigenserver:
+	$(MAKE) -C $(REPO_PATH)/doc clean
+	$(MAKE) -C $(REPO_PATH)/doc doc
+	$(MAKE) -C $(REPO_PATH)/doc docwiki
+	cp -Rf $(REPO_PATH)/doc/api-wiki/* $(API_DIR)
+	cp -Rf $(REPO_PATH)/doc/manual-wiki/*.wiki $(MANUAL_SRC_DIR)/
+
 copy-eliom-base-app:
 	$(MAKE) -C $(REPO_PATH) doc
 	mkdir -p $(API_DIR)/server $(API_DIR)/client
 	cp -Rf $(REPO_PATH)/doc/client/wiki/* $(API_DIR)/client
 	cp -Rf $(REPO_PATH)/doc/server/wiki/* $(API_DIR)/server
+	cp -Rf $(REPO_PATH)/doc/manual-wiki/*.wiki $(MANUAL_SRC_DIR)/
 
 copy-eliom-widgets:
 	$(MAKE) -C $(REPO_PATH) doc
 	mkdir -p $(API_DIR)/server $(API_DIR)/client
 	cp -Rf $(REPO_PATH)/doc/client/wiki/* $(API_DIR)/client
 	cp -Rf $(REPO_PATH)/doc/server/wiki/* $(API_DIR)/server
+	cp -Rf $(REPO_PATH)/doc/manual-wiki/*.wiki $(MANUAL_SRC_DIR)/
+
+copy-ocsimore:
+	rm -rf $(REPO_PATH)/_build/api.wikidocdir
+	make -C $(REPO_PATH) wiki-api
+	cp -Rf $(REPO_PATH)/_build/api.wikidocdir/* $(API_DIR)
+	cp -Rf $(REPO_PATH)/doc/manual-wiki/*.wiki $(MANUAL_SRC_DIR)/
+
+copy-ojquery:
+	$(MAKE) -C $(REPO_PATH) wikidoc
+	cp -Rf $(REPO_PATH)/_build/ojquery-api.wikidocdir/* $(API_DIR)
+
+copy-ojwidgets:
+	$(MAKE) -C $(REPO_PATH) wikidoc
+	cp -Rf $(REPO_PATH)/_build/ojwidgets-api.wikidocdir/* $(API_DIR)
+	cp -Rf $(REPO_PATH)/doc/manual-wiki/*.wiki $(MANUAL_SRC_DIR)/
