@@ -29,6 +29,8 @@ all-%:
 ##############
 
 copy-js_of_ocaml:
+	$(MAKE) -C $(REPO_PATH)/doc clean
+	$(MAKE) -C $(REPO_PATH)/doc doc
 	$(MAKE) -C $(REPO_PATH)/doc docwiki
 	cp -Rf $(REPO_PATH)/doc/manual/* $(MANUAL_DIR)/
 	cp -Rf $(REPO_PATH)/doc/api/wiki/* $(API_DIR)/
