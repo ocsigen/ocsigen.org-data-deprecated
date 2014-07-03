@@ -55,6 +55,13 @@ copy-lwt:
 	cp -Rf $(REPO_PATH)/manual/*.wiki $(MANUAL_SRC_DIR)
 	cp -Rf $(REPO_PATH)/_build/lwt-api.wikidocdir/*.wiki $(API_DIR)
 
+copy-deriving:
+	cd $(REPO_PATH) \
+	&& rm -rf _build/deriving-api.wikidocdir \
+	&& ocamlbuild deriving-api.wikidocdir/index.wiki
+	cp -Rf $(REPO_PATH)/doc/manual-wiki/*.wiki $(MANUAL_SRC_DIR)
+	cp -Rf $(REPO_PATH)/_build/deriving-api.wikidocdir/*.wiki $(API_DIR)
+
 copy-ocsigenserver:
 	$(MAKE) -C $(REPO_PATH)/doc clean
 	$(MAKE) -C $(REPO_PATH)/doc doc
