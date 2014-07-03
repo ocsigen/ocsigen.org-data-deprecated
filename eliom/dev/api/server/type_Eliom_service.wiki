@@ -1479,11 +1479,14 @@
   val get_request_data : unit -> Eliom_lib.request_data
   module Syntax_helpers :
     sig
-      val client_value : int64 -> 'args -> 'a Eliom_lib.client_value
+      val client_value :
+        ?pos:Eliom_lib.pos -> int64 -> 'args -> 'a Eliom_lib.client_value
       val set_global : bool -> unit
       val close_server_section : string -> unit
       val close_client_section :
-        string -> (string * (unit -> Eliom_lib.poly)) list -> unit
+        string ->
+        (string * (unit -> Eliom_lib.poly) * Eliom_lib.pos * string option)
+        list -> unit
       val escaped_value : 'a -> Eliom_lib.escaped_value
     end
 end >>

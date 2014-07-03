@@ -110,7 +110,7 @@
     (Dom_html.element Js.t, Dom_html.event Js.t) Dom_html.event_listener
   module Syntax_helpers :
     sig
-      val get_injection : string -> 'a
+      val get_injection : ?ident:string -> ?pos:Eliom_lib.pos -> string -> 'a
       val register_client_closure : int64 -> ('args -> 'res) -> unit
       val close_server_section : string -> unit
       val open_client_section : string -> unit
