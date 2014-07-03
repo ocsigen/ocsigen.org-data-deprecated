@@ -3,6 +3,8 @@
 
 ----
 
+~This module is automatically open by {{{eliomc}}} and {{{js_of_eliom}}}~.
+
 
 ==@@id="2_Clientvalues"@@~Client values==
 

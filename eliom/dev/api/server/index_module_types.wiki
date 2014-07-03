@@ -7,7 +7,10 @@
 |@@ @style="tet-align: left;"@@\\E|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="ELIOM_APPL"| module type Eliom_registration.ELIOM_APPL >> ~[<<a_api subproject="server" | module Eliom_registration >>~]||
 |@@ @style="tet-align: left;"@@\\F|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="FORMS_PARAM"| module type Eliom_mkforms.FORMS_PARAM >> ~[<<a_api subproject="server" | module Eliom_mkforms >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="FORMS_PARAM"| module type Eliom_mkforms.FORMS_PARAM >> ~[<<a_api subproject="server" | module Eliom_mkforms >>~]|<<div class="odocwiki_info"|~This module defines the functor to use to creates modules
+   generating form widgets for your own types of pages~.
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Forms"| module type Eliom_content.Forms >> ~[<<a_api subproject="server" | module Eliom_content >>~]|<<div class="odocwiki_info"|~Abstract signature for links and forms creation functions~, for
     concrete instances see <<a_api subproject="server" | module Eliom_content.Html5 >>~, or <<a_api subproject="server" | module Eliom_content.Html_text >>~.
 >>
