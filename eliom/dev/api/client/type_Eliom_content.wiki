@@ -12796,6 +12796,9 @@
           val node :
             'a Eliom_content.Html5.elt React.signal
             Eliom_pervasives.client_value -> 'a Eliom_content.Html5.elt
+          val filter_attrib :
+            'a Eliom_content.Html5.attrib ->
+            bool React.signal -> 'a Eliom_content.Html5.attrib
           module Raw :
             sig
               module Xml :

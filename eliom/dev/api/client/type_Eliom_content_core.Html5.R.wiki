@@ -2,6 +2,9 @@
   val node :
     'a Eliom_content_core.Html5.elt React.signal ->
     'a Eliom_content_core.Html5.elt
+  val filter_attrib :
+    'a Eliom_content_core.Html5.attrib ->
+    bool React.signal -> 'a Eliom_content_core.Html5.attrib
   module Raw :
     sig
       module Xml :

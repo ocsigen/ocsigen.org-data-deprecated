@@ -498,6 +498,12 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="file_input"| value Eliom_content.Html5.F.file_input >> ~[<<a_api subproject="client" | module Eliom_content.Html5.F >>~]|<<div class="odocwiki_info"|~Creates an <<span class="odocwiki_inlinecode"|~<input~>>> tag for sending a file
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="filter_attrib"| value Eliom_content_core.Html5.R.filter_attrib >> ~[<<a_api subproject="client" | module Eliom_content_core.Html5.R >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="filter_attrib"| value Eliom_content.Html5.R.filter_attrib >> ~[<<a_api subproject="client" | module Eliom_content.Html5.R >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|filter~_attrib att on>> returns an attrib that
+        behave like <<span class="odocwiki_inlinecode"|att>> when <<span class="odocwiki_inlinecode"|on>> is <<span class="odocwiki_inlinecode"|true>>
+        and behave like if there was no attribute when <<span class="odocwiki_inlinecode"|on>> is <<span class="odocwiki_inlinecode"|false>>
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="float"| value Eliom_parameter.float >> ~[<<a_api subproject="client" | module Eliom_parameter >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="float_button"| value Eliom_mkforms.MakeForms.float_button >> ~[<<a_api subproject="client" | module Eliom_mkforms.MakeForms >>~]|<<div class="odocwiki_info"|~Creates a <<span class="odocwiki_inlinecode"|~<button~>>> tag with float content
 >>
