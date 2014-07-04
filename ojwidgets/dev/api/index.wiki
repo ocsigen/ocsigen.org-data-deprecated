@@ -1,4 +1,7 @@
 =~Ojwidgets user guide=
+
+=@@id="1_OjwidgetsAPIReference"@@~Ojwidgets ~- ~A~P~I ~Reference=
+
 ~Ojwidgets is a library of web widget for ~O~Caml and [[http://ocsigen.org/js_of_ocaml/|js~_of~_ocaml]]~.
 ~It contains widgets~, useful functions when developing web interface in ~O~Caml and bindings to some ~Javascript widgets~.
 
