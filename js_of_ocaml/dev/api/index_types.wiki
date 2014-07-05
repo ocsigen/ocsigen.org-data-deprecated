@@ -5,6 +5,8 @@
 |@@class="odocwiki_index"@ @@<<a_api text="a"| type Deriving_Json.Json_min'.a >> ~[<<a_api | module Deriving_Json.Json_min' >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="a"| type Deriving_Json.Json_min.a >> ~[<<a_api | module Deriving_Json.Json_min >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="a"| type Deriving_Json.Json.a >> ~[<<a_api | module Deriving_Json.Json >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="alignmentType"| type Dom_svg.alignmentType >> ~[<<a_api | module Dom_svg >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="angleUnitType"| type Dom_svg.angleUnitType >> ~[<<a_api | module Dom_svg >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="any"| type Js.Unsafe.any >> ~[<<a_api | module Js.Unsafe >>~]|<<div class="odocwiki_info"|~Top type~.
 >>
 |
@@ -26,6 +28,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="canvasPattern"| type Dom_html.canvasPattern >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="clampf"| type WebGL.clampf >> ~[<<a_api | module WebGL >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="clearBufferMask"| type WebGL.clearBufferMask >> ~[<<a_api | module WebGL >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="colorType"| type Dom_svg.colorType >> ~[<<a_api | module Dom_svg >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="colorspaceConversion"| type WebGL.colorspaceConversion >> ~[<<a_api | module WebGL >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="constr"| type Js.constr >> ~[<<a_api | module Js >>~]|<<div class="odocwiki_info"|~A value of type <<span class="odocwiki_inlinecode"|~(t~1 ~-~> ~.~.~. ~-~> tn ~-~> t ~Js~.t~) ~Js~.constr>> is a
       ~Javascript constructor expecting //n// arguments of types <<span class="odocwiki_inlinecode"|t~1>>
@@ -45,6 +48,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="elt"| type Tyxml_cast_sigs.TO.elt >> ~[<<a_api | module Tyxml_cast_sigs.TO >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="enableCap"| type WebGL.enableCap >> ~[<<a_api | module WebGL >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="errorCode"| type WebGL.errorCode >> ~[<<a_api | module WebGL >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="error_code"| type Dom_svg.error_code >> ~[<<a_api | module Dom_svg >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="event_listener"| type Dom_html.event_listener >> ~[<<a_api | module Dom_html >>~]|<<div class="odocwiki_info"|~The type of event listener functions~.
 >>
 |
@@ -88,6 +92,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="int16Array"| type Typed_array.int16Array >> ~[<<a_api | module Typed_array >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="int32Array"| type Typed_array.int32Array >> ~[<<a_api | module Typed_array >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="int8Array"| type Typed_array.int8Array >> ~[<<a_api | module Typed_array >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="intentType"| type Dom_svg.intentType >> ~[<<a_api | module Dom_svg >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="interval_id"| type Dom_html.interval_id >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="intptr"| type WebGL.intptr >> ~[<<a_api | module WebGL >>~]||
 |@@ @style="tet-align: left;"@@\\J|
@@ -99,12 +104,15 @@
 >>
 |
 |@@ @style="tet-align: left;"@@\\L|
+|@@class="odocwiki_index"@ @@<<a_api text="lengthAdjust"| type Dom_svg.lengthAdjust >> ~[<<a_api | module Dom_svg >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="lengthUnitType"| type Dom_svg.lengthUnitType >> ~[<<a_api | module Dom_svg >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="lexbuf"| type Deriving_Json_lexer.lexbuf >> ~[<<a_api | module Deriving_Json_lexer >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="listener"| type Dom_events.listener >> ~[<<a_api | module Dom_events >>~]||
 |@@ @style="tet-align: left;"@@\\M|
 |@@class="odocwiki_index"@ @@<<a_api text="match_result_handle"| type Js.match_result_handle >> ~[<<a_api | module Js >>~]|<<div class="odocwiki_info"|~A handle to a match result~.
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api text="meetOrSliceType"| type Dom_svg.meetOrSliceType >> ~[<<a_api | module Dom_svg >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="meth"| type Js.meth >> ~[<<a_api | module Js >>~]|<<div class="odocwiki_info"|~Type used to specify method types~:
       a ~Javascript object
         <<span class="odocwiki_inlinecode"|~<m ~: t~1 ~-~> t~2 ~-~> ~.~.~. ~-~> tn ~-~> t ~Js~.meth~> ~Js~.t>>
@@ -139,6 +147,7 @@
 |
 |@@ @style="tet-align: left;"@@\\P|
 |@@class="odocwiki_index"@ @@<<a_api text="parameter"| type WebGL.parameter >> ~[<<a_api | module WebGL >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="pathSegmentType"| type Dom_svg.pathSegmentType >> ~[<<a_api | module Dom_svg >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="pixelFormat"| type WebGL.pixelFormat >> ~[<<a_api | module WebGL >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="pixelStoreParam"| type WebGL.pixelStoreParam >> ~[<<a_api | module WebGL >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="pixelType"| type WebGL.pixelType >> ~[<<a_api | module WebGL >>~]||
@@ -179,10 +188,12 @@
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="sizeiptr"| type WebGL.sizeiptr >> ~[<<a_api | module WebGL >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="spreadMethodType"| type Dom_svg.spreadMethodType >> ~[<<a_api | module Dom_svg >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="stencilOp"| type WebGL.stencilOp >> ~[<<a_api | module WebGL >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="string_array"| type Js.string_array >> ~[<<a_api | module Js >>~]|<<div class="odocwiki_info"|~Opaque type for string arrays~.
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api text="suspendHandleID"| type Dom_svg.suspendHandleID >> ~[<<a_api | module Dom_svg >>~]||
 |@@ @style="tet-align: left;"@@\\T|
 |@@class="odocwiki_index"@ @@<<a_api text="t"| type Deriving_Json.t >> ~[<<a_api | module Deriving_Json >>~]|<<div class="odocwiki_info"|~The type of ~J~S~O~N parser~/printer for value of type <<span class="odocwiki_inlinecode"|~'a>>~.
 >>
@@ -204,10 +215,13 @@
 |@@class="odocwiki_index"@ @@<<a_api text="texFilter"| type WebGL.texFilter >> ~[<<a_api | module WebGL >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="texParam"| type WebGL.texParam >> ~[<<a_api | module WebGL >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="texTarget"| type WebGL.texTarget >> ~[<<a_api | module WebGL >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="textPathMethodType"| type Dom_svg.textPathMethodType >> ~[<<a_api | module Dom_svg >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="textPathSpacingType"| type Dom_svg.textPathSpacingType >> ~[<<a_api | module Dom_svg >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="texture"| type WebGL.texture >> ~[<<a_api | module WebGL >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="textureFilter"| type WebGL.textureFilter >> ~[<<a_api | module WebGL >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="textureUnit"| type WebGL.textureUnit >> ~[<<a_api | module WebGL >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="timeout_id"| type Dom_html.timeout_id >> ~[<<a_api | module Dom_html >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="transformType"| type Dom_svg.transformType >> ~[<<a_api | module Dom_svg >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="typ"| type XmlHttpRequest.Event.typ >> ~[<<a_api | module XmlHttpRequest.Event >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="typ"| type File.ReaderEvent.typ >> ~[<<a_api | module File.ReaderEvent >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="typ"| type Dom_html.Event.typ >> ~[<<a_api | module Dom_html.Event >>~]||
@@ -219,6 +233,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="uint8Array"| type Typed_array.uint8Array >> ~[<<a_api | module Typed_array >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="uniformLocation"| type WebGL.uniformLocation >> ~[<<a_api | module WebGL >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="uniformType"| type WebGL.uniformType >> ~[<<a_api | module WebGL >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="unitType"| type Dom_svg.unitType >> ~[<<a_api | module Dom_svg >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="url"| type Url.url >> ~[<<a_api | module Url >>~]|<<div class="odocwiki_info"|~The type for urls~.
 >>
 |
@@ -234,4 +249,6 @@
       has a write~-only property <<span class="odocwiki_inlinecode"|p>> of type <<span class="odocwiki_inlinecode"|t>>~.
 >>
 |
+|@@ @style="tet-align: left;"@@\\Z|
+|@@class="odocwiki_index"@ @@<<a_api text="zoomAndPanType"| type Dom_svg.zoomAndPanType >> ~[<<a_api | module Dom_svg >>~]||
 \\

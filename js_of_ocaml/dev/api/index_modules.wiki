@@ -8,6 +8,9 @@
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="CoerceTo"| module File.CoerceTo >> ~[<<a_api | module File >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="CoerceTo"| module Dom_svg.CoerceTo >> ~[<<a_api | module Dom_svg >>~]|<<div class="odocwiki_info"|~Coercion functions
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api text="CoerceTo"| module Dom_html.CoerceTo >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="CoerceTo"| module Dom.CoerceTo >> ~[<<a_api | module Dom >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="Color"| module CSS.Color >> ~[<<a_api | module CSS >>~]||
@@ -32,6 +35,9 @@
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="Dom_html"| module Dom_html >> |<<div class="odocwiki_info"|~D~O~M ~H~T~M~L binding
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="Dom_svg"| module Dom_svg >> |<<div class="odocwiki_info"|~D~O~M ~S~V~G binding
 >>
 |
 |@@ @style="tet-align: left;"@@\\E|

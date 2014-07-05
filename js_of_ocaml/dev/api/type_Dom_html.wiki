@@ -82,6 +82,7 @@
       method paddingTop : Js.js_string Js.t Js.prop
       method pageBreakAfter : Js.js_string Js.t Js.prop
       method pageBreakBefore : Js.js_string Js.t Js.prop
+      method pointerEvents : Js.js_string Js.t Js.prop
       method position : Js.js_string Js.t Js.prop
       method right : Js.js_string Js.t Js.prop
       method tableLayout : Js.js_string Js.t Js.prop
