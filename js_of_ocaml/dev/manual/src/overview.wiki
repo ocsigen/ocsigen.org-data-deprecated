@@ -1,7 +1,5 @@
 = Js_of_ocaml =
 
-it just works
-
 == Overview ==
 
 Js_of_ocaml is a compiler from OCaml bytecode programs to JavaScript.
