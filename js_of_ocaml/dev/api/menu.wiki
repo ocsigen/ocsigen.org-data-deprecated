@@ -2,6 +2,7 @@
 ==[[Js|Js]]
 ==[[Dom|Dom]]
 ==[[Dom_html|Dom_html]]
+==[[Dom_svg|Dom_svg]]
 ==[[Dom_events|Dom_events]]
 ==[[CSS|CSS]]
 ==[[Lwt_js|Lwt_js]]
