@@ -1301,6 +1301,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="onselect"| method Dom_html.inputElement#onselect >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="onsubmit"| method Dom_html.formElement#onsubmit >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="ontimeout"| method XmlHttpRequest.xmlHttpRequest#ontimeout >> ~[<<a_api | module XmlHttpRequest >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="onunload"| method Dom_html.window#onunload >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="onupdateready"| method Dom_html.applicationCache#onupdateready >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="opacity"| method Dom_html.cssStyleDeclaration#opacity >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="open_"| method Dom_html.window#open_ >> ~[<<a_api | module Dom_html >>~]||

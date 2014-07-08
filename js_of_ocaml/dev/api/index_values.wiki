@@ -1015,6 +1015,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="onpopstates"| value Lwt_js_events.onpopstates >> ~[<<a_api | module Lwt_js_events >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="onresize"| value Lwt_js_events.onresize >> ~[<<a_api | module Lwt_js_events >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="onresizes"| value Lwt_js_events.onresizes >> ~[<<a_api | module Lwt_js_events >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="onunload"| value Lwt_js_events.onunload >> ~[<<a_api | module Lwt_js_events >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="open_canvas"| value Graphics_js.open_canvas >> ~[<<a_api | module Graphics_js >>~]|<<div class="odocwiki_info"|use a canvas to setup the current context
 >>
 |
@@ -1374,6 +1375,7 @@
       replaced by the corresponding ~U~T~F~-~1~6 code point~.
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api text="unload"| value Dom_html.Event.unload >> ~[<<a_api | module Dom_html.Event >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="unsafe_get"| value Typed_array.unsafe_get >> ~[<<a_api | module Typed_array >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="unsafe_input"| value Json.unsafe_input >> ~[<<a_api | module Json >>~]|<<div class="odocwiki_info"|~Unmarshal a string in ~J~S~O~N format as an ~O~Caml value ~(unsafe but
     fast !~)~.

@@ -31,6 +31,7 @@
   val focus : Dom_html.event Js.t Dom_html.Event.typ
   val blur : Dom_html.event Js.t Dom_html.Event.typ
   val load : Dom_html.event Js.t Dom_html.Event.typ
+  val unload : Dom_html.event Js.t Dom_html.Event.typ
   val beforeunload : Dom_html.event Js.t Dom_html.Event.typ
   val resize : Dom_html.event Js.t Dom_html.Event.typ
   val orientationchange : Dom_html.event Js.t Dom_html.Event.typ
