@@ -188,6 +188,7 @@
                          Dom_html.cssStyleDeclaration Js.t Js.prop
                        method t : Js.js_string Js.t Js.readonly_prop
                        method tagName : Js.js_string Js.t Js.readonly_prop
+                       method textContent : Js.js_string Js.t Js.opt Js.prop
                        method title : Js.js_string Js.t Js.prop
                        method visible : bool Js.meth
                      end
@@ -324,6 +325,7 @@
                          Dom_html.cssStyleDeclaration Js.t Js.prop
                        method t : Js.js_string Js.t Js.readonly_prop
                        method tagName : Js.js_string Js.t Js.readonly_prop
+                       method textContent : Js.js_string Js.t Js.opt Js.prop
                        method title : Js.js_string Js.t Js.prop
                        method update : unit Lwt.t Js.meth
                        method visible : bool Js.meth
@@ -541,6 +543,7 @@
                   method style : Dom_html.cssStyleDeclaration Js.t Js.prop
                   method t : Js.js_string Js.t Js.readonly_prop
                   method tagName : Js.js_string Js.t Js.readonly_prop
+                  method textContent : Js.js_string Js.t Js.opt Js.prop
                   method title : Js.js_string Js.t Js.prop
                   method visible : bool Js.meth
                 end
@@ -668,6 +671,7 @@
                   method style : Dom_html.cssStyleDeclaration Js.t Js.prop
                   method t : Js.js_string Js.t Js.readonly_prop
                   method tagName : Js.js_string Js.t Js.readonly_prop
+                  method textContent : Js.js_string Js.t Js.opt Js.prop
                   method title : Js.js_string Js.t Js.prop
                   method update : unit Lwt.t Js.meth
                   method visible : bool Js.meth
@@ -878,6 +882,7 @@
               method style : Dom_html.cssStyleDeclaration Js.t Js.prop
               method t : Js.js_string Js.t Js.readonly_prop
               method tagName : Js.js_string Js.t Js.readonly_prop
+              method textContent : Js.js_string Js.t Js.opt Js.prop
               method title : Js.js_string Js.t Js.prop
               method toggle : unit Js.meth
               method unpress : unit Js.meth
@@ -1003,6 +1008,7 @@
               method style : Dom_html.cssStyleDeclaration Js.t Js.prop
               method t : Js.js_string Js.t Js.readonly_prop
               method tagName : Js.js_string Js.t Js.readonly_prop
+              method textContent : Js.js_string Js.t Js.opt Js.prop
               method title : Js.js_string Js.t Js.prop
               method toggle : unit Js.meth
               method unpress : unit Js.meth
@@ -1128,6 +1134,7 @@
               method style : Dom_html.cssStyleDeclaration Js.t Js.prop
               method t : Js.js_string Js.t Js.readonly_prop
               method tagName : Js.js_string Js.t Js.readonly_prop
+              method textContent : Js.js_string Js.t Js.opt Js.prop
               method title : Js.js_string Js.t Js.prop
               method toggle : unit Js.meth
               method unpress : unit Js.meth

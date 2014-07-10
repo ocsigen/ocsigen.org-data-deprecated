@@ -112,6 +112,7 @@
         Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
       method style : Dom_html.cssStyleDeclaration Js.t Js.prop
       method tagName : Js.js_string Js.t Js.readonly_prop
+      method textContent : Js.js_string Js.t Js.opt Js.prop
       method title : Js.js_string Js.t Js.prop
     end
   class type item' =
@@ -231,6 +232,7 @@
         Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
       method style : Dom_html.cssStyleDeclaration Js.t Js.prop
       method tagName : Js.js_string Js.t Js.readonly_prop
+      method textContent : Js.js_string Js.t Js.opt Js.prop
       method title : Js.js_string Js.t Js.prop
     end
   type t
