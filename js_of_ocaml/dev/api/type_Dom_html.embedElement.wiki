@@ -88,6 +88,7 @@
   method src : Js.js_string Js.t Js.prop
   method style : cssStyleDeclaration Js.t Js.prop
   method tagName : Js.js_string Js.t Js.readonly_prop
+  method textContent : Js.js_string Js.t Js.opt Js.prop
   method title : Js.js_string Js.t Js.prop
   method width : Js.js_string Js.t Js.prop
 end >>

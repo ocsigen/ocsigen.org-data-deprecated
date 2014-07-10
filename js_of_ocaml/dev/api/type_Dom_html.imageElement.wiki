@@ -119,6 +119,7 @@
   method src : Js.js_string Js.t Js.prop
   method style : Dom_html.cssStyleDeclaration Js.t Js.prop
   method tagName : Js.js_string Js.t Js.readonly_prop
+  method textContent : Js.js_string Js.t Js.opt Js.prop
   method title : Js.js_string Js.t Js.prop
   method useMap : Js.js_string Js.t Js.prop
   method width : int Js.prop

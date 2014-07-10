@@ -1701,6 +1701,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="textAlign"| method Dom_html.canvasRenderingContext2D#textAlign >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="textAlign"| method Dom_html.cssStyleDeclaration#textAlign >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="textBaseline"| method Dom_html.canvasRenderingContext2D#textBaseline >> ~[<<a_api | module Dom_html >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="textContent"| method Dom_html.element#textContent >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="textDecoration"| method Dom_html.cssStyleDeclaration#textDecoration >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="textIndent"| method Dom_html.cssStyleDeclaration#textIndent >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="textLength"| method Dom_svg.textContentElement#textLength >> ~[<<a_api | module Dom_svg >>~]||
