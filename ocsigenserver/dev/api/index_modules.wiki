@@ -109,7 +109,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="Ocsigen_messages"| module Ocsigen_messages >> |<<div class="odocwiki_info"|~Writing messages in the logs
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api text="Ocsigen_parseconfig"| module Ocsigen_parseconfig >> |<<div class="odocwiki_info"|~Config file parsing
+|@@class="odocwiki_index"@ @@<<a_api text="Ocsigen_parseconfig"| module Ocsigen_parseconfig >> |<<div class="odocwiki_info"|~Config file parsing~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="Ocsigen_request_info"| module Ocsigen_extensions.Ocsigen_request_info >> ~[<<a_api | module Ocsigen_extensions >>~]||

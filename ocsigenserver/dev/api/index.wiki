@@ -14,7 +14,7 @@
 |<<a_api | module Ocsigen_messages >>|<<div class="odocwiki_info"|~Writing messages in the logs
 >>
 |
-|<<a_api | module Ocsigen_parseconfig >>|<<div class="odocwiki_info"|~Config file parsing
+|<<a_api | module Ocsigen_parseconfig >>|<<div class="odocwiki_info"|~Config file parsing~.
 >>
 |
 |<<a_api | module Polytables >>|<<div class="odocwiki_info"|~Polymorphic tables ~(using ~Map~)
