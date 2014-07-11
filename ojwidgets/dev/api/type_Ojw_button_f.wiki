@@ -160,6 +160,7 @@
                        method onscroll :
                          ('a Js.t, Dom_html.event Js.t)
                          Dom_html.event_listener Js.writeonly_prop
+                       method outerHTML : Js.js_string Js.t Js.prop
                        method parentNode : Dom.node Js.t Js.opt Js.prop
                        method previousSibling : Dom.node Js.t Js.opt Js.prop
                        method querySelector :
@@ -297,6 +298,7 @@
                        method onscroll :
                          ('a Js.t, Dom_html.event Js.t)
                          Dom_html.event_listener Js.writeonly_prop
+                       method outerHTML : Js.js_string Js.t Js.prop
                        method parentNode : Dom.node Js.t Js.opt Js.prop
                        method previousSibling : Dom.node Js.t Js.opt Js.prop
                        method querySelector :
@@ -521,6 +523,7 @@
                   method onscroll :
                     ('a Js.t, Dom_html.event Js.t) Dom_html.event_listener
                     Js.writeonly_prop
+                  method outerHTML : Js.js_string Js.t Js.prop
                   method parentNode : Dom.node Js.t Js.opt Js.prop
                   method previousSibling : Dom.node Js.t Js.opt Js.prop
                   method querySelector :
@@ -649,6 +652,7 @@
                   method onscroll :
                     ('a Js.t, Dom_html.event Js.t) Dom_html.event_listener
                     Js.writeonly_prop
+                  method outerHTML : Js.js_string Js.t Js.prop
                   method parentNode : Dom.node Js.t Js.opt Js.prop
                   method previousSibling : Dom.node Js.t Js.opt Js.prop
                   method querySelector :
@@ -858,6 +862,7 @@
               method onscroll :
                 ('a Js.t, Dom_html.event Js.t) Dom_html.event_listener
                 Js.writeonly_prop
+              method outerHTML : Js.js_string Js.t Js.prop
               method parentNode : Dom.node Js.t Js.opt Js.prop
               method press : unit Js.meth
               method pressed : bool Js.t Js.readonly_prop
@@ -984,6 +989,7 @@
               method onscroll :
                 ('a Js.t, Dom_html.event Js.t) Dom_html.event_listener
                 Js.writeonly_prop
+              method outerHTML : Js.js_string Js.t Js.prop
               method parentNode : Dom.node Js.t Js.opt Js.prop
               method press : unit Js.meth
               method pressed : bool Js.t Js.readonly_prop
@@ -1110,6 +1116,7 @@
               method onscroll :
                 ('a Js.t, Dom_html.event Js.t) Dom_html.event_listener
                 Js.writeonly_prop
+              method outerHTML : Js.js_string Js.t Js.prop
               method parentNode : Dom.node Js.t Js.opt Js.prop
               method press : unit Js.meth
               method pressed : bool Js.t Js.readonly_prop
