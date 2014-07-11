@@ -1307,6 +1307,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="open_"| method Dom_html.window#open_ >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="open_"| method Dom_html.document#open_ >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="options"| method Dom_html.selectElement#options >> ~[<<a_api | module Dom_html >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="outerHTML"| method Dom_html.element#outerHTML >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="outerHeight"| method Dom_html.window#outerHeight >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="outerWidth"| method Dom_html.window#outerWidth >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="outline"| method Dom_html.cssStyleDeclaration#outline >> ~[<<a_api | module Dom_html >>~]||

@@ -104,6 +104,7 @@
     ('a Js.t, Dom_html.event Js.t) Dom_html.event_listener Js.writeonly_prop
   method options :
     Dom_html.optionElement Dom_html.collection Js.t Js.readonly_prop
+  method outerHTML : Js.js_string Js.t Js.prop
   method parentNode : Dom.node Js.t Js.opt Js.prop
   method previousSibling : Dom.node Js.t Js.opt Js.prop
   method querySelector :

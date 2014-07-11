@@ -67,6 +67,7 @@
   method onmouseup :
     ('a Js.t, mouseEvent Js.t) event_listener Js.writeonly_prop
   method onscroll : ('a Js.t, event Js.t) event_listener Js.writeonly_prop
+  method outerHTML : Js.js_string Js.t Js.prop
   method parentNode : Dom.node Js.t Js.opt Js.prop
   method previousSibling : Dom.node Js.t Js.opt Js.prop
   method profile : Js.js_string Js.t Js.prop
