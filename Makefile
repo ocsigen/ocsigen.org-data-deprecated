@@ -10,8 +10,9 @@ commit-%:
 	git add $(MANUAL_SRC_DIR) \
 	  && ($(IGNORE_FILES) || git add $(MANUAL_FILES_DIR)) \
 	  && git add $(API_DIR) \
-	  && ( (git commit -m `git log -n 1 --format=$*-%h` && git push) \
-                || echo "nothing to update" )
+	  && ( ( git commit -m `git log -n 1 --format=$*-%h` \
+	         && git pull && git push ) \
+	       || echo "nothing to update" )
 
 all-aux-%:
 	$(MAKE) prepare-$*
