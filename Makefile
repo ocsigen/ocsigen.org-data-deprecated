@@ -8,23 +8,24 @@ prepare-%:
 
 commit-%:
 	git add $(MANUAL_SRC_DIR) \
-	&& ($(IGNORE_FILES) || git add $(MANUAL_FILES_DIR)) \
-	&& git add $(API_DIR) \
-	&& ( (git commit -m `git log -n 1 --format=$*-%h` && git push) || echo "nothing to update" )
+	  && ($(IGNORE_FILES) || git add $(MANUAL_FILES_DIR)) \
+	  && git add $(API_DIR) \
+	  && ( (git commit -m `git log -n 1 --format=$*-%h` && git push) \
+                || echo "nothing to update" )
 
 all-aux-%:
 	$(MAKE) prepare-$*
 	$(MAKE) copy-$*
-	$(MAKE) commit-$*
+	[ "$(JENKINS_COMMIT_DOC)" != "yes" ] || $(MAKE) commit-$*
 
 all-%:
-	ls $* && ls $(REPO_PATH)
+	[ -d $* ] && [ -d $(REPO_PATH) ]
 	$(MAKE) \
-	API_DIR=$*/$(VERSION)/api \
-	MANUAL_DIR=$*/$(VERSION)/manual \
-	MANUAL_SRC_DIR=$*/$(VERSION)/manual/src \
-	MANUAL_FILES_DIR=$*/$(VERSION)/manual/files \
-	all-aux-$*
+	  API_DIR=$*/$(VERSION)/api \
+	  MANUAL_DIR=$*/$(VERSION)/manual \
+	  MANUAL_SRC_DIR=$*/$(VERSION)/manual/src \
+	  MANUAL_FILES_DIR=$*/$(VERSION)/manual/files \
+	  all-aux-$*
 
 ##############
 
