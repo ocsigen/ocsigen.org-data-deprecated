@@ -248,6 +248,7 @@
           val max_elt : t -> elt
           val choose : t -> elt
           val split : elt -> t -> t * bool * t
+          val find : elt -> t -> elt
         end
       module Map :
         sig
@@ -308,9 +309,13 @@
       val record_backtrace : bool -> unit
       val backtrace_status : unit -> bool
       val register_printer : (exn -> string option) -> unit
+      type raw_backtrace
+      val get_raw_backtrace : unit -> raw_backtrace
+      val print_raw_backtrace : out_channel -> raw_backtrace -> unit
+      val raw_backtrace_to_string : raw_backtrace -> string
+      val get_callstack : int -> raw_backtrace
       val register_exn_printer : ((exn -> string) -> exn -> string) -> unit
     end
-  exception Eliom_Internal_Error of string
   module Lwt_ops :
     sig
       val ( >>= ) : 'a Lwt.t -> ('a -> 'b Lwt.t) -> 'b Lwt.t
@@ -796,6 +801,7 @@
           val max_elt : t -> elt
           val choose : t -> elt
           val split : elt -> t -> t * bool * t
+          val find : elt -> t -> elt
         end
       module Map :
         sig
