@@ -11,7 +11,8 @@ commit-%:
 	  && ($(IGNORE_FILES) || git add $(MANUAL_FILES_DIR)) \
 	  && git add $(API_DIR) \
 	  && ( ( git commit -m `git log -n 1 --format=$*-%h` \
-	         && git pull && git push ) \
+	         && git pull \
+	         && git push 'git@github.com:ocsigen/ocsigen.org-data' ) \
 	       || echo "nothing to update" )
 
 all-aux-%:
