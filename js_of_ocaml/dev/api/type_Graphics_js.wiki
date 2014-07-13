@@ -65,6 +65,7 @@
   }
   type event = Button_down | Button_up | Key_pressed | Mouse_motion | Poll
   external wait_next_event : event list -> status = "caml_gr_wait_event"
+  val loop_at_exit : event list -> (status -> unit) -> unit
   val key_pressed : unit -> bool
   external sound : int -> int -> unit = "caml_gr_sound"
   val auto_synchronize : bool -> unit
