@@ -7,7 +7,7 @@
     ?absolute:bool ->
     ?absolute_path:bool ->
     ?https:bool ->
-    service:('a, 'b, [< Eliom_service.service_method > `Get `Post ],
+    service:('a, 'b, [< Eliom_service.service_method ],
              [< Eliom_service.attached ], [< Eliom_service.service_kind ],
              [< Eliom_service.suff ], 'd, 'e, [< Eliom_service.registrable ],
              [< Eliom_registration.non_ocaml_service ])
@@ -22,7 +22,7 @@
     ?absolute:bool ->
     ?absolute_path:bool ->
     ?https:bool ->
-    service:('a, 'b, [< Eliom_service.service_method > `Get `Post ],
+    service:('a, 'b, [< Eliom_service.service_method ],
              [< Eliom_service.attached ], [< Eliom_service.service_kind ],
              [< Eliom_service.suff ], 'd, 'e, [< Eliom_service.registrable ],
              'return Eliom_service.ocaml_service)
@@ -37,7 +37,7 @@
     ?absolute:bool ->
     ?absolute_path:bool ->
     ?https:bool ->
-    service:('a, 'b, [< Eliom_service.service_method > `Get `Post ],
+    service:('a, 'b, [< Eliom_service.service_method ],
              [< Eliom_service.attached ], [< Eliom_service.service_kind ],
              [< Eliom_service.suff ], 'd, 'e, [< Eliom_service.registrable ],
              [< Eliom_registration.non_ocaml_service ])
@@ -83,7 +83,7 @@
     ?absolute:bool ->
     ?absolute_path:bool ->
     ?https:bool ->
-    service:('a, 'b, [< Eliom_service.service_method > `Get `Post ],
+    service:('a, 'b, [< Eliom_service.service_method ],
              [< Eliom_service.attached ], [< Eliom_service.service_kind ],
              [< Eliom_service.suff ], 'd, 'e, [< Eliom_service.registrable ],
              'return)
