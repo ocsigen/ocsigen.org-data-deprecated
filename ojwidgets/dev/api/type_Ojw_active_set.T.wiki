@@ -93,7 +93,6 @@
       method onscroll :
         ('a Js.t, Dom_html.event Js.t) Dom_html.event_listener
         Js.writeonly_prop
-      method outerHTML : Js.js_string Js.t Js.prop
       method parentNode : Dom.node Js.t Js.opt Js.prop
       method previousSibling : Dom.node Js.t Js.opt Js.prop
       method querySelector :
@@ -113,7 +112,6 @@
         Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
       method style : Dom_html.cssStyleDeclaration Js.t Js.prop
       method tagName : Js.js_string Js.t Js.readonly_prop
-      method textContent : Js.js_string Js.t Js.opt Js.prop
       method title : Js.js_string Js.t Js.prop
     end
   class type item' =
@@ -214,7 +212,6 @@
       method onscroll :
         ('a Js.t, Dom_html.event Js.t) Dom_html.event_listener
         Js.writeonly_prop
-      method outerHTML : Js.js_string Js.t Js.prop
       method parentNode : Dom.node Js.t Js.opt Js.prop
       method previousSibling : Dom.node Js.t Js.opt Js.prop
       method querySelector :
@@ -234,7 +231,6 @@
         Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
       method style : Dom_html.cssStyleDeclaration Js.t Js.prop
       method tagName : Js.js_string Js.t Js.readonly_prop
-      method textContent : Js.js_string Js.t Js.opt Js.prop
       method title : Js.js_string Js.t Js.prop
     end
   type t
