@@ -1,7 +1,0 @@
-<<code language="ocaml" | sig
-  val get_injection : string -> 'a
-  val register_client_closure : int64 -> ('args -> 'res) -> unit
-  val close_server_section : string -> unit
-  val open_client_section : string -> unit
-  val get_escaped_value : Eliom_lib.escaped_value -> 'a
-end >>
