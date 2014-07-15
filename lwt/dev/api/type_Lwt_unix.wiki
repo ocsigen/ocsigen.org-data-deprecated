@@ -59,6 +59,7 @@
     | O_SYNC
     | O_RSYNC
     | O_SHARE_DELETE
+    | O_CLOEXEC
   val openfile :
     string ->
     Lwt_unix.open_flag list ->
