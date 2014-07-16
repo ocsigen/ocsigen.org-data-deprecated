@@ -45,7 +45,7 @@
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="add_cookies"| value Ocsigen_cookies.add_cookies >> ~[<<a_api | module Ocsigen_cookies >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|add~_cookies newcookies oldcookies>> adds the cookies from <<span class="odocwiki_inlinecode"|newcookies>>
-   to <<span class="odocwiki_inlinecode"|oldcookies>>~.
+    to <<span class="odocwiki_inlinecode"|oldcookies>>~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="add_end_slash_if_missing"| value Ocsigen_lib_base.Url_base.add_end_slash_if_missing >> ~[<<a_api | module Ocsigen_lib_base.Url_base >>~]||
@@ -102,10 +102,10 @@
 |@@class="odocwiki_index"@ @@<<a_api text="commandline"| value Ocsigen_getcommandline.commandline >> ~[<<a_api | module Ocsigen_getcommandline >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="comp"| value Ocsigen_lib_base.comp >> ~[<<a_api | module Ocsigen_lib_base >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="compute_new_ri_cookies"| value Ocsigen_http_frame.compute_new_ri_cookies >> ~[<<a_api | module Ocsigen_http_frame >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|compute~_new~_ri~_cookies now path ri~_cookies cookies~_to~_set>>
-   adds the cookies from <<span class="odocwiki_inlinecode"|cookies~_to~_set>>
-   to <<span class="odocwiki_inlinecode"|ri~_cookies>>~, as if the cookies
-   had been send to the browser and the browser
-   was doing a new request to the url <<span class="odocwiki_inlinecode"|path>>~.
+    adds the cookies from <<span class="odocwiki_inlinecode"|cookies~_to~_set>>
+    to <<span class="odocwiki_inlinecode"|ri~_cookies>>~, as if the cookies
+    had been send to the browser and the browser
+    was doing a new request to the url <<span class="odocwiki_inlinecode"|path>>~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="concat"| value Ocsigen_stream.StringStream.concat >> ~[<<a_api | module Ocsigen_stream.StringStream >>~]|<<div class="odocwiki_info"|~Concatenate two stream
@@ -258,7 +258,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="find_mime"| value Ocsigen_charset_mime.find_mime >> ~[<<a_api | module Ocsigen_charset_mime >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="find_redirection"| value Ocsigen_extensions.find_redirection >> ~[<<a_api | module Ocsigen_extensions >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="findfiles"| value Ocsigen_loader.findfiles >> ~[<<a_api | module Ocsigen_loader >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|findfiles pkg>> returns the list of files needed to load ~Findlib
-      package <<span class="odocwiki_inlinecode"|pkg>>~, including dependencies~.
+    package <<span class="odocwiki_inlinecode"|pkg>>~, including dependencies~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="first_diff"| value Ocsigen_lib_base.String_base.first_diff >> ~[<<a_api | module Ocsigen_lib_base.String_base >>~]||
@@ -307,7 +307,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="get_access_control_request_headers"| value Ocsigen_headers.get_access_control_request_headers >> ~[<<a_api | module Ocsigen_headers >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="get_access_control_request_method"| value Ocsigen_headers.get_access_control_request_method >> ~[<<a_api | module Ocsigen_headers >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="get_basic_authentication_method"| value Authbasic.get_basic_authentication_method >> ~[<<a_api | module Authbasic >>~]|<<div class="odocwiki_info"|~This function combines all the parsers registered with
-      <<span class="odocwiki_inlinecode"|register~_basic~_authentication~_method>>~.
+    <<span class="odocwiki_inlinecode"|register~_basic~_authentication~_method>>~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="get_bindir"| value Ocsigen_config.get_bindir >> ~[<<a_api | module Ocsigen_config >>~]||
@@ -406,7 +406,7 @@
 |
 |@@class="odocwiki_index"@ @@<<a_api text="in_list"| value Ocsigen_lib_base.Clist.in_list >> ~[<<a_api | module Ocsigen_lib_base.Clist >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="init_module"| value Ocsigen_loader.init_module >> ~[<<a_api | module Ocsigen_loader >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|init~_module pre post force name>> runs the init function for the module
-      <<span class="odocwiki_inlinecode"|name>>~.
+    <<span class="odocwiki_inlinecode"|name>>~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="init_preempt"| value Ocsigen_config.init_preempt >> ~[<<a_api | module Ocsigen_config >>~]||
@@ -448,9 +448,9 @@
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="loadfiles"| value Ocsigen_loader.loadfiles >> ~[<<a_api | module Ocsigen_loader >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|loadfiles pre post force file>> loads all the <<span class="odocwiki_inlinecode"|files>>~, using
-      <<span class="odocwiki_inlinecode"|loadfile ~(fun ~(~) ~-~> ~(~)~) ~(fun ~(~) ~-~> ~(~)~) false>> for all the files
-      but the last one~, and <<span class="odocwiki_inlinecode"|loadfile pre post force>> for the last one
-      ~(if any~)~.
+    <<span class="odocwiki_inlinecode"|loadfile ~(fun ~(~) ~-~> ~(~)~) ~(fun ~(~) ~-~> ~(~)~) false>> for all the files
+    but the last one~, and <<span class="odocwiki_inlinecode"|loadfile pre post force>> for the last one
+    ~(if any~)~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="location"| value Ocsigen_http_frame.Result.location >> ~[<<a_api | module Ocsigen_http_frame.Result >>~]||
@@ -579,7 +579,7 @@
 |
 |@@class="odocwiki_index"@ @@<<a_api text="referer"| value Http_headers.referer >> ~[<<a_api | module Http_headers >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="register_basic_authentication_method"| value Authbasic.register_basic_authentication_method >> ~[<<a_api | module Authbasic >>~]|<<div class="odocwiki_info"|~This function registers an authentication plugin~: it adds a new
-      parser to the list of available authentication schemes~.
+    parser to the list of available authentication schemes~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="register_command_function"| value Ocsigen_extensions.register_command_function >> ~[<<a_api | module Ocsigen_extensions >>~]|<<div class="odocwiki_info"|~Use a prefix for all your commands when you want to create
@@ -588,31 +588,31 @@
 |
 |@@class="odocwiki_index"@ @@<<a_api text="register_exn_printer"| value Ocsigen_lib_base.Printexc.register_exn_printer >> ~[<<a_api | module Ocsigen_lib_base.Printexc >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="register_extension"| value Ocsigen_extensions.register_extension >> ~[<<a_api | module Ocsigen_extensions >>~]|<<div class="odocwiki_info"|~For each extension generating pages~, we register its name and six functions~: a function <<span class="odocwiki_inlinecode"|fun~_site>> of type <<span class="odocwiki_inlinecode"|parse~_config>>~. ~This function
-will be responsible for handling the options of the configuration
-files that are recognized by the extension~, and potentially generating
-a page~.~, a function <<span class="odocwiki_inlinecode"|user~_fun~_site>> of type <<span class="odocwiki_inlinecode"|parse~_user~_config>> which has the
-same role as <<span class="odocwiki_inlinecode"|fun~_site>>~, but inside userconf files~. ~Specify nothing
-if your extension is disallowed in userconf files~. ~Otherwise~, compared
-to <<span class="odocwiki_inlinecode"|fun~_site>>~, you can selectively disallow some options~,
-as <<span class="odocwiki_inlinecode"|user~_fun~_site>> must define only safe options ~(for example it is not
-safe to allow such options to load a cmo specified by a user~, or to
-execute a program~, as this program will be executed by ocsigen~'s user~)~.
-~Note that <<span class="odocwiki_inlinecode"|user~_fun~_site>> will be called for every request~, whereas the
-<<span class="odocwiki_inlinecode"|fun~_site>> is called only when starting or reloading the server~.~, a function <<span class="odocwiki_inlinecode"|begin~_init>> that will be called at the beginning
-of the initialisation phase of each site~, and each time the config file is
-reloaded~.~, a function <<span class="odocwiki_inlinecode"|end~_init>> that will be called at the end of the initialisation
-phase of each site~, a function <<span class="odocwiki_inlinecode"|init~_fun>> that will be called just before registering the
-extension~, taking as parameter the configuration options between
-<<span class="odocwiki_inlinecode"|~<extension~>>> and <<span class="odocwiki_inlinecode"|~<~/extension~>>>~. ~This allows to give configuration options
-to extensions~. ~If no function is supplied~, the extension is supposed to
-accept no option ~(and loading will fail if an option is supplied~)
-~See ~<~<a~_api module~="~Ocsigen~_extensions~.~Configuration" ~| val process~_elements ~>~> for
-the easy construction of such a function~.~, a function <<span class="odocwiki_inlinecode"|exn~_handler>> that will create an error message from the
-exceptions that may be raised during the initialisation phase~, and raise again
-all other exceptions
-~Moreover~, if the optional parameter <<span class="odocwiki_inlinecode"|~?respect~_pipeline>> is <<span class="odocwiki_inlinecode"|true>>~,
-the extension will ask the server to respect the order of the
-pipeline~.
+    will be responsible for handling the options of the configuration
+    files that are recognized by the extension~, and potentially generating
+    a page~.~, a function <<span class="odocwiki_inlinecode"|user~_fun~_site>> of type <<span class="odocwiki_inlinecode"|parse~_user~_config>> which has the
+    same role as <<span class="odocwiki_inlinecode"|fun~_site>>~, but inside userconf files~. ~Specify nothing
+    if your extension is disallowed in userconf files~. ~Otherwise~, compared
+    to <<span class="odocwiki_inlinecode"|fun~_site>>~, you can selectively disallow some options~,
+    as <<span class="odocwiki_inlinecode"|user~_fun~_site>> must define only safe options ~(for example it is not
+    safe to allow such options to load a cmo specified by a user~, or to
+    execute a program~, as this program will be executed by ocsigen~'s user~)~.
+    ~Note that <<span class="odocwiki_inlinecode"|user~_fun~_site>> will be called for every request~, whereas the
+    <<span class="odocwiki_inlinecode"|fun~_site>> is called only when starting or reloading the server~.~, a function <<span class="odocwiki_inlinecode"|begin~_init>> that will be called at the beginning
+    of the initialisation phase of each site~, and each time the config file is
+    reloaded~.~, a function <<span class="odocwiki_inlinecode"|end~_init>> that will be called at the end of the initialisation
+    phase of each site~, a function <<span class="odocwiki_inlinecode"|init~_fun>> that will be called just before registering the
+    extension~, taking as parameter the configuration options between
+    <<span class="odocwiki_inlinecode"|~<extension~>>> and <<span class="odocwiki_inlinecode"|~<~/extension~>>>~. ~This allows to give configuration options
+    to extensions~. ~If no function is supplied~, the extension is supposed to
+    accept no option ~(and loading will fail if an option is supplied~)
+    ~See ~<~<a~_api module~="~Ocsigen~_extensions~.~Configuration" ~| val process~_elements ~>~> for
+    the easy construction of such a function~.~, a function <<span class="odocwiki_inlinecode"|exn~_handler>> that will create an error message from the
+    exceptions that may be raised during the initialisation phase~, and raise again
+    all other exceptions
+    ~Moreover~, if the optional parameter <<span class="odocwiki_inlinecode"|~?respect~_pipeline>> is <<span class="odocwiki_inlinecode"|true>>~,
+    the extension will ask the server to respect the order of the
+    pipeline~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="register_section"| value Ocsigen_messages.register_section >> ~[<<a_api | module Ocsigen_messages >>~]|<<div class="odocwiki_info"|~Register sections ~(so as to be able to dynamically change their level~)
@@ -660,7 +660,7 @@ pipeline~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="replace_if_exists"| value Ocsipersist.replace_if_exists >> ~[<<a_api | module Ocsipersist >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|replace~_if~_exists table key value>>
-   associates <<span class="odocwiki_inlinecode"|value>> to <<span class="odocwiki_inlinecode"|key>> only if <<span class="odocwiki_inlinecode"|key>> is already bound~.
+    associates <<span class="odocwiki_inlinecode"|value>> to <<span class="odocwiki_inlinecode"|key>> only if <<span class="odocwiki_inlinecode"|key>> is already bound~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="replace_opt"| value Http_headers.replace_opt >> ~[<<a_api | module Http_headers >>~]|<<div class="odocwiki_info"|replace or remove a header~.
@@ -727,7 +727,7 @@ pipeline~.
 |
 |@@class="odocwiki_index"@ @@<<a_api text="set_group"| value Ocsigen_config.set_group >> ~[<<a_api | module Ocsigen_config >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="set_init_on_load"| value Ocsigen_loader.set_init_on_load >> ~[<<a_api | module Ocsigen_loader >>~]|<<div class="odocwiki_info"|~If set to <<span class="odocwiki_inlinecode"|true>>~, the module initialization functions passed to
-      <<span class="odocwiki_inlinecode"|set~_module~_init~_function>> will be executed directly~.
+    <<span class="odocwiki_inlinecode"|set~_module~_init~_function>> will be executed directly~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="set_logdir"| value Ocsigen_config.set_logdir >> ~[<<a_api | module Ocsigen_config >>~]||
@@ -744,7 +744,7 @@ pipeline~.
 |@@class="odocwiki_index"@ @@<<a_api text="set_mimefile"| value Ocsigen_config.set_mimefile >> ~[<<a_api | module Ocsigen_config >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="set_minthreads"| value Ocsigen_config.set_minthreads >> ~[<<a_api | module Ocsigen_config >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="set_module_init_function"| value Ocsigen_loader.set_module_init_function >> ~[<<a_api | module Ocsigen_loader >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|set~_module~_init~_function name f>> registers the function <<span class="odocwiki_inlinecode"|f>>~, which will
-      be used to initialize the module when <<span class="odocwiki_inlinecode"|init~_module name>> is called~.
+    be used to initialize the module when <<span class="odocwiki_inlinecode"|init~_module name>> is called~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="set_netbuffersize"| value Ocsigen_config.set_netbuffersize >> ~[<<a_api | module Ocsigen_config >>~]||
@@ -809,14 +809,14 @@ pipeline~.
 |@@class="odocwiki_index"@ @@<<a_api text="to_poly"| value Ocsigen_lib_base.to_poly >> ~[<<a_api | module Ocsigen_lib_base >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="transfer_encoding"| value Http_headers.transfer_encoding >> ~[<<a_api | module Http_headers >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="translate"| value Ocsigen_loader.translate >> ~[<<a_api | module Ocsigen_loader >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|translate filename>> translate ~.cmo~/~.cma extensions to ~.cmxs in
-      native mode~, and ~.cmxs to ~.cmo ~(~.cma if it exists~) in bytecode
-      mode~.
+    native mode~, and ~.cmxs to ~.cmo ~(~.cma if it exists~) in bytecode
+    mode~.
 >>
 |
 |@@ @style="tet-align: left;"@@\\U|
 |@@class="odocwiki_index"@ @@<<a_api text="uncurry"| value Ocsigen_lib_base.uncurry >> ~[<<a_api | module Ocsigen_lib_base >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="unexpected_exception"| value Ocsigen_messages.unexpected_exception >> ~[<<a_api | module Ocsigen_messages >>~]|<<div class="odocwiki_info"|~Use that function for all impossible cases in exception handlers
-   ~(<<span class="odocwiki_inlinecode"|try ~.~.~. with ~.~.~. ~| e ~-~> unexpected~_exception ~.~.~.>> or <<span class="odocwiki_inlinecode"|~Lwt~.catch ~.~.~.>>~)~.
+    ~(<<span class="odocwiki_inlinecode"|try ~.~.~. with ~.~.~. ~| e ~-~> unexpected~_exception ~.~.~.>> or <<span class="odocwiki_inlinecode"|~Lwt~.catch ~.~.~.>>~)~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="unlock_receiver"| value Ocsigen_http_com.unlock_receiver >> ~[<<a_api | module Ocsigen_http_com >>~]||
@@ -851,7 +851,7 @@ pipeline~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="write_stream"| value Ocsigen_http_com.write_stream >> ~[<<a_api | module Ocsigen_http_com >>~]|<<div class="odocwiki_info"|~This function may return any ~I~/~O error from the channel~, or a
-interrupted stream exception~.
+   interrupted stream exception~.
 >>
 |
 |@@ @style="tet-align: left;"@@\\X|

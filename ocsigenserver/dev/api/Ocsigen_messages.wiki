@@ -21,10 +21,10 @@
 <<pre id="VALconsole2" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|console~2>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|string <<span class="ocsforge_color_delimiter"| -> >> unit>>>><<div class="odocwiki_info"|~Write a message in the console ~(if not called in silent mode~)
 >>
 <<pre id="VALunexpected_exception" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|unexpected~_exception>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|exn <<span class="ocsforge_color_delimiter"| -> >> string <<span class="ocsforge_color_delimiter"| -> >> unit>>>><<div class="odocwiki_info"|~Use that function for all impossible cases in exception handlers
-   ~(<<span class="odocwiki_inlinecode"|try ~.~.~. with ~.~.~. ~| e ~-~> unexpected~_exception ~.~.~.>> or <<span class="odocwiki_inlinecode"|~Lwt~.catch ~.~.~.>>~)~.
-   ~A message will be written in <<span class="odocwiki_inlinecode"|warnings~.log>>~.
-   ~Put something in the string to help locating the problem ~(usually the name
-   of the function where is has been called~)~.
+    ~(<<span class="odocwiki_inlinecode"|try ~.~.~. with ~.~.~. ~| e ~-~> unexpected~_exception ~.~.~.>> or <<span class="odocwiki_inlinecode"|~Lwt~.catch ~.~.~.>>~)~.
+    ~A message will be written in <<span class="odocwiki_inlinecode"|warnings~.log>>~.
+    ~Put something in the string to help locating the problem ~(usually the name
+    of the function where is has been called~)~.
 >>
 <<pre id="VALerror_log_path" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|error~_log~_path>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|unit <<span class="ocsforge_color_delimiter"| -> >> string>>>><<div class="odocwiki_info"|~Path to the error log file
 >>

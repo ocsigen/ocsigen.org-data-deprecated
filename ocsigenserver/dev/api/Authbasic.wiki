@@ -16,26 +16,26 @@
     very naive one ~(authentication with a single user~/password~, given
     in the configuration file~) is provided~.
 <<pre id="VALregister_basic_authentication_method" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|register~_basic~_authentication~_method>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|\\  <<span class="ocsforge_color_delimiter"| ( >><<span class="ocsforge_color_uid"|Simplexmlparser>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|xml>> <<span class="ocsforge_color_delimiter"| -> >> string <<span class="ocsforge_color_delimiter"| -> >> string <<span class="ocsforge_color_delimiter"| -> >> bool <<span class="ocsforge_color_uid"|Lwt>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>><<span class="ocsforge_color_delimiter"| ) >> <<span class="ocsforge_color_delimiter"| -> >> unit>>>><<div class="odocwiki_info"|~This function registers an authentication plugin~: it adds a new
-      parser to the list of available authentication schemes~.
+    parser to the list of available authentication schemes~.
 
 
-      ~A parser takes as argument an ~X~M~L tree ~(corresponding to the
-      first son of an ~<authbasic~> element in the configuration
-      file~) and returns an authentication function <<span class="odocwiki_inlinecode"|f>>~. <<span class="odocwiki_inlinecode"|f>> will be
-      called for each request with the supplied user and password and
-      should return ~(cooperatively~) a boolean telling whether access
-      is granted or not~. ~Exceptions are handled the same way as for
-      extension parsers~.
+    ~A parser takes as argument an ~X~M~L tree ~(corresponding to the
+    first son of an ~<authbasic~> element in the configuration
+    file~) and returns an authentication function <<span class="odocwiki_inlinecode"|f>>~. <<span class="odocwiki_inlinecode"|f>> will be
+    called for each request with the supplied user and password and
+    should return ~(cooperatively~) a boolean telling whether access
+    is granted or not~. ~Exceptions are handled the same way as for
+    extension parsers~.
 
 
-      ~The ~<authbasic~> element must have a //realm// attribute~,
-      giving some identifier to the resource which is protected
-      ~(several resources on the same hostname can share the same
-      realm~)~. ~This gives a general customization scheme "for free"
-      from the point of view of plugin developers and is totally
-      transparent to the plugin~.
+    ~The ~<authbasic~> element must have a //realm// attribute~,
+    giving some identifier to the resource which is protected
+    ~(several resources on the same hostname can share the same
+    realm~)~. ~This gives a general customization scheme "for free"
+    from the point of view of plugin developers and is totally
+    transparent to the plugin~.
 >>
 <<pre id="VALget_basic_authentication_method" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|get~_basic~_authentication~_method>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|\\  <<span class="ocsforge_color_uid"|Simplexmlparser>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|xml>> <<span class="ocsforge_color_delimiter"| -> >> string <<span class="ocsforge_color_delimiter"| -> >> string <<span class="ocsforge_color_delimiter"| -> >> bool <<span class="ocsforge_color_uid"|Lwt>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>>>>>><<div class="odocwiki_info"|~This function combines all the parsers registered with
-      <<span class="odocwiki_inlinecode"|register~_basic~_authentication~_method>>~. ~It might be useful for
-      other extensions~. ~Not for the casual user~.
+    <<span class="odocwiki_inlinecode"|register~_basic~_authentication~_method>>~. ~It might be useful for
+    other extensions~. ~Not for the casual user~.
 >>

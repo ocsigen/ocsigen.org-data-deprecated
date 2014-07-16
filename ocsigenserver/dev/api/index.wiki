@@ -50,10 +50,10 @@
 >>
 |
 |<<a_api | module Ocsigen_http_frame >>|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|compute~_new~_ri~_cookies now path ri~_cookies cookies~_to~_set>>
-   adds the cookies from <<span class="odocwiki_inlinecode"|cookies~_to~_set>>
-   to <<span class="odocwiki_inlinecode"|ri~_cookies>>~, as if the cookies
-   had been send to the browser and the browser
-   was doing a new request to the url <<span class="odocwiki_inlinecode"|path>>~.
+    adds the cookies from <<span class="odocwiki_inlinecode"|cookies~_to~_set>>
+    to <<span class="odocwiki_inlinecode"|ri~_cookies>>~, as if the cookies
+    had been send to the browser and the browser
+    was doing a new request to the url <<span class="odocwiki_inlinecode"|path>>~.
 >>
 |
 |<<a_api | module Ocsigen_http_client >>|<<div class="odocwiki_info"|~Using ~Ocsigen as a ~H~T~T~P client

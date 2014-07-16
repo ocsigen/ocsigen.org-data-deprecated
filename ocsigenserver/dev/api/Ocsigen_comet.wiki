@@ -7,19 +7,19 @@
 ~Usage~:
 
 
-  ~On the server side ~:
+    ~On the server side ~:
     ~1~) create needed channels
     ~2~) transmit their identifiers to clients
     ~3~) write when appropriate ~(using the outcome mechanism if necessary
 
 
-  ~On the client ~:
+    ~On the client ~:
     ~1~) make a ~Xml~Http~Request ~(~X~H~R~) with a list of channel identifiers~.
     ~2~) wait for the reply
     ~3~) ~G~O~T~O ~1
 
 
-  ~Encoding for client~-to~-server requests~:
+    ~Encoding for client~-to~-server requests~:
     ~* ~The content type header should be set to <<span class="odocwiki_inlinecode"|application~/x~-ocsigen~-comet>>
       ~(without quotes~)
     ~* ~A ~P~O~S~T parameter is required~. ~Its name should be <<span class="odocwiki_inlinecode"|registration>> and its
@@ -29,7 +29,7 @@
       the <<span class="odocwiki_inlinecode"|escape>> ~Java~Script primitive
 
 
-  ~Encoding for server~-to~-client answer~:
+    ~Encoding for server~-to~-client answer~:
     ~* ~The server answer is either empty ~(when no channel was written upon before
       timeout~) or a list of pairs of channel identifiers and message content~.
       ~The pairs are separated by <<span class="odocwiki_inlinecode"|~:>> ~(colon~) while the list elements are

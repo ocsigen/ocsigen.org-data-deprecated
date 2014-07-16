@@ -6,7 +6,7 @@
 ~This module uses the lowel level module ~Ocsigen~_http~_frame~.~Http~_header~.
      ~It is very basic and must be completed for exhaustiveness~.
 <<pre id="VALfind" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|find>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|string <<span class="ocsforge_color_delimiter"| -> >> <<a_api text="Ocsigen_http_frame.t" | type Ocsigen_http_frame.t >> <<span class="ocsforge_color_delimiter"| -> >> string>>>><<div class="odocwiki_info"|find one of the values bound to <<span class="odocwiki_inlinecode"|name>> in the ~H~T~T~P headers of the frame~.
-   ~Raise <<span class="odocwiki_inlinecode"|~Not~_found>> if it is not bound~.
+    ~Raise <<span class="odocwiki_inlinecode"|~Not~_found>> if it is not bound~.
 >>
 <<pre id="VALfind_all" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|find~_all>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|string <<span class="ocsforge_color_delimiter"| -> >> <<a_api text="Ocsigen_http_frame.t" | type Ocsigen_http_frame.t >> <<span class="ocsforge_color_delimiter"| -> >> string list>>>><<div class="odocwiki_info"|find all the values bound to <<span class="odocwiki_inlinecode"|name>> in the ~H~T~T~P headers of the frame~.
     ~Raise <<span class="odocwiki_inlinecode"|~Not~_found>> if it is not bound~.

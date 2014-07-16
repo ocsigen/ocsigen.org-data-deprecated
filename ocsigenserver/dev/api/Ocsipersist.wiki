@@ -16,7 +16,7 @@
 <<pre class="ocsforge_color odocwiki_code" id="TYPEt"|<<span class="ocsforge_color_keyword"|type>> <<span class="odocwiki_type"|'a>> <<span class="odocwiki_name"|t>>>><<div class="odocwiki_info"|~Type of persistent data
 >>
 <<pre class="ocsforge_color odocwiki_code" id="TYPEstore"|<<span class="ocsforge_color_keyword"|type>> <<span class="odocwiki_name"|store>>>><<div class="odocwiki_info"|~Data are divided into stores~.
-   ~Create one store for your project~, where you will save all your data~.
+    ~Create one store for your project~, where you will save all your data~.
 >>
 <<pre id="VALopen_store" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|open~_store>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|string <<span class="ocsforge_color_delimiter"| -> >> <<a_api text="store" | type Ocsipersist.store >>>>>><<div class="odocwiki_info"|~Open a store ~(and create it if it does not exist~)
 >>
@@ -45,16 +45,16 @@
 <<pre id="VALopen_table" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|open~_table>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|string <<span class="ocsforge_color_delimiter"| -> >> 'value <<a_api text="table" | type Ocsipersist.table >>>>>><<div class="odocwiki_info"|~Open a table ~(and create it if it does not exist~)
 >>
 <<pre id="VALfind" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|find>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|'value <<a_api text="table" | type Ocsipersist.table >> <<span class="ocsforge_color_delimiter"| -> >> string <<span class="ocsforge_color_delimiter"| -> >> 'value <<span class="ocsforge_color_uid"|Lwt>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>>>>>><<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|find table key>> gives the value associated to <<span class="odocwiki_inlinecode"|key>>~.
-  ~Fails with <<span class="odocwiki_inlinecode"|~Not~_found>> if not found~.
+    ~Fails with <<span class="odocwiki_inlinecode"|~Not~_found>> if not found~.
 >>
 <<pre id="VALadd" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|add>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|'value <<a_api text="table" | type Ocsipersist.table >> <<span class="ocsforge_color_delimiter"| -> >> string <<span class="ocsforge_color_delimiter"| -> >> 'value <<span class="ocsforge_color_delimiter"| -> >> unit <<span class="ocsforge_color_uid"|Lwt>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>>>>>><<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|add table key value>> associates <<span class="odocwiki_inlinecode"|value>> to <<span class="odocwiki_inlinecode"|key>>~.
-   ~If the database already contains data associated with <<span class="odocwiki_inlinecode"|key>>~,
-   that data is discarded and silently replaced by the new data~.
+    ~If the database already contains data associated with <<span class="odocwiki_inlinecode"|key>>~,
+    that data is discarded and silently replaced by the new data~.
 >>
 <<pre id="VALreplace_if_exists" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|replace~_if~_exists>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|'value <<a_api text="table" | type Ocsipersist.table >> <<span class="ocsforge_color_delimiter"| -> >> string <<span class="ocsforge_color_delimiter"| -> >> 'value <<span class="ocsforge_color_delimiter"| -> >> unit <<span class="ocsforge_color_uid"|Lwt>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>>>>>><<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|replace~_if~_exists table key value>>
-   associates <<span class="odocwiki_inlinecode"|value>> to <<span class="odocwiki_inlinecode"|key>> only if <<span class="odocwiki_inlinecode"|key>> is already bound~.
-   ~If the database does not contain any data associated with <<span class="odocwiki_inlinecode"|key>>~,
-   fails with <<span class="odocwiki_inlinecode"|~Not~_found>>~.
+    associates <<span class="odocwiki_inlinecode"|value>> to <<span class="odocwiki_inlinecode"|key>> only if <<span class="odocwiki_inlinecode"|key>> is already bound~.
+    ~If the database does not contain any data associated with <<span class="odocwiki_inlinecode"|key>>~,
+    fails with <<span class="odocwiki_inlinecode"|~Not~_found>>~.
 >>
 <<pre id="VALremove" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|remove>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|'value <<a_api text="table" | type Ocsipersist.table >> <<span class="ocsforge_color_delimiter"| -> >> string <<span class="ocsforge_color_delimiter"| -> >> unit <<span class="ocsforge_color_uid"|Lwt>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>>>>>><<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|remove table key>> removes the entry in the table if it exists
 >>
