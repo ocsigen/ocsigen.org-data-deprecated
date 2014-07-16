@@ -573,7 +573,7 @@ f=hM;else{f=l[c[e]];c[e]++}d=a.lex_check[g+f]==d?a.lex_trans[g+f]:a.lex_default[
 return c[h]}else
 if(f==hM)c[k]=0}}function
 caml_sys_get_argv(){var
-a=joo_global_object,e="a.out",b=[];if(a.process&&a.process.argv&&a.process.argv.length>0){e=a.process.argv[0];b=a.process.argv.slice(1)}var
+a=joo_global_object,e="a.out",b=[];if(a.process&&a.process.argv&&a.process.argv.length>0){e=a.process.argv[1];b=a.process.argv.slice(2)}var
 f=new
 MlWrappedString(e),d=[0,f];for(var
 c=0;c<b.length;c++)d.push(new
