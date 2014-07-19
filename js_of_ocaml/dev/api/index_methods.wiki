@@ -1640,12 +1640,14 @@
 |@@class="odocwiki_index"@ @@<<a_api text="storageArea"| method Dom_html.storageEvent#storageArea >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="stringifier"| method Dom_html.tokenList#stringifier >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="stroke"| method Dom_html.canvasRenderingContext2D#stroke >> ~[<<a_api | module Dom_html >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="stroke"| method Dom_html.cssStyleDeclaration#stroke >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="strokeRect"| method Dom_html.canvasRenderingContext2D#strokeRect >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="strokeStyle"| method Dom_html.canvasRenderingContext2D#strokeStyle >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="strokeStyle_gradient"| method Dom_html.canvasRenderingContext2D#strokeStyle_gradient >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="strokeStyle_pattern"| method Dom_html.canvasRenderingContext2D#strokeStyle_pattern >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="strokeText"| method Dom_html.canvasRenderingContext2D#strokeText >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="strokeText_withWidth"| method Dom_html.canvasRenderingContext2D#strokeText_withWidth >> ~[<<a_api | module Dom_html >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="strokeWidth"| method Dom_html.cssStyleDeclaration#strokeWidth >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="style"| method Dom_svg.stylable#style >> ~[<<a_api | module Dom_svg >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="style"| method Dom_html.element#style >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="subarray"| method Typed_array.typedArray#subarray >> ~[<<a_api | module Typed_array >>~]||

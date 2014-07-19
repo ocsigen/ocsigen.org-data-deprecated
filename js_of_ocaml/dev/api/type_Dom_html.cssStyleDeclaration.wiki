@@ -83,6 +83,8 @@
   method pointerEvents : Js.js_string Js.t Js.prop
   method position : Js.js_string Js.t Js.prop
   method right : Js.js_string Js.t Js.prop
+  method stroke : Js.js_string Js.t Js.prop
+  method strokeWidth : Js.js_string Js.t Js.prop
   method tableLayout : Js.js_string Js.t Js.prop
   method textAlign : Js.js_string Js.t Js.prop
   method textDecoration : Js.js_string Js.t Js.prop
