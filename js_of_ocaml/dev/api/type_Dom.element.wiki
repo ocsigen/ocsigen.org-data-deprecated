@@ -3,7 +3,7 @@
   method attributes : Dom.attr Dom.namedNodeMap Js.t Js.readonly_prop
   method childNodes : node nodeList Js.t Js.prop
   method cloneNode : bool Js.t -> node Js.t Js.meth
-  method compareDocumentPosition : node Js.t -> int Js.meth
+  method compareDocumentPosition : node Js.t -> DocumentPosition.t Js.meth
   method firstChild : node Js.t Js.opt Js.prop
   method getAttribute : Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
   method getElementsByTagName :

@@ -14,7 +14,8 @@
   method code : Js.js_string Js.t Js.prop
   method codeBase : Js.js_string Js.t Js.prop
   method codeType : Js.js_string Js.t Js.prop
-  method compareDocumentPosition : Dom.node Js.t -> int Js.meth
+  method compareDocumentPosition :
+    Dom.node Js.t -> Dom.DocumentPosition.t Js.meth
   method data : Js.js_string Js.t Js.prop
   method declare : bool Js.t Js.prop
   method dir : Js.js_string Js.t Js.prop

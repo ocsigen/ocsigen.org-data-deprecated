@@ -206,9 +206,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="navigator"| class type Dom_html.navigator >> ~[<<a_api | module Dom_html >>~]|<<div class="odocwiki_info"|~Navigator information
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api text="node"| class type Dom.node >> ~[<<a_api | module Dom >>~]|<<div class="odocwiki_info"|~Specification of <<span class="odocwiki_inlinecode"|~Node>> objects~.
->>
-|
+|@@class="odocwiki_index"@ @@<<a_api text="node"| class type Dom.node >> ~[<<a_api | module Dom >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="nodeList"| class type Dom.nodeList >> ~[<<a_api | module Dom >>~]|<<div class="odocwiki_info"|~Specification of <<span class="odocwiki_inlinecode"|~Node~List>> objects~.
 >>
 |

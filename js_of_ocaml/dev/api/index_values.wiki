@@ -1,6 +1,7 @@
 =Index of values=
 
 |@@ @style="tet-align: left;"@@\\|
+|@@class="odocwiki_index"@ @@<<a_api text="(+)"| value Dom.DocumentPosition.(+) >> ~[<<a_api | module Dom.DocumentPosition >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="_2d_"| value Dom_html._2d_ >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="_DOMMouseScroll"| value Dom_html.Event._DOMMouseScroll >> ~[<<a_api | module Dom_html.Event >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="_end"| value Keycode._end >> ~[<<a_api | module Keycode >>~]||
@@ -23,6 +24,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="abort"| value Lwt_js_events.abort >> ~[<<a_api | module Lwt_js_events >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="abort"| value File.ReaderEvent.abort >> ~[<<a_api | module File.ReaderEvent >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="abort"| value Dom_html.Event.abort >> ~[<<a_api | module Dom_html.Event >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="add"| value Dom.DocumentPosition.add >> ~[<<a_api | module Dom.DocumentPosition >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="addEventListener"| value File.addEventListener >> ~[<<a_api | module File >>~]|<<div class="odocwiki_info"|~Add an event listener~.
 >>
 |
@@ -159,6 +161,8 @@
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="console"| value Firebug.console >> ~[<<a_api | module Firebug >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="contained_by"| value Dom.DocumentPosition.contained_by >> ~[<<a_api | module Dom.DocumentPosition >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="contains"| value Dom.DocumentPosition.contains >> ~[<<a_api | module Dom.DocumentPosition >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="create"| value XmlHttpRequest.create >> ~[<<a_api | module XmlHttpRequest >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="createA"| value Dom_svg.createA >> ~[<<a_api | module Dom_svg >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="createA"| value Dom_html.createA >> ~[<<a_api | module Dom_html >>~]||
@@ -381,6 +385,7 @@
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="desc"| value Dom_svg.CoerceTo.desc >> ~[<<a_api | module Dom_svg.CoerceTo >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="disconnected"| value Dom.DocumentPosition.disconnected >> ~[<<a_api | module Dom.DocumentPosition >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="dispatcher"| value Ocamlbuild_js_of_ocaml.dispatcher >> ~[<<a_api | module Ocamlbuild_js_of_ocaml >>~]|<<div class="odocwiki_info"|~The main dispatcher
 >>
 |
@@ -389,12 +394,6 @@
 |@@class="odocwiki_index"@ @@<<a_api text="document"| value Dom_html.document >> ~[<<a_api | module Dom_html >>~]|<<div class="odocwiki_info"|~The current document
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api text="document_position_contained_by"| value Dom.document_position_contained_by >> ~[<<a_api | module Dom >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="document_position_contains"| value Dom.document_position_contains >> ~[<<a_api | module Dom >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="document_position_disconnected"| value Dom.document_position_disconnected >> ~[<<a_api | module Dom >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="document_position_following"| value Dom.document_position_following >> ~[<<a_api | module Dom >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="document_position_implementation_specific"| value Dom.document_position_implementation_specific >> ~[<<a_api | module Dom >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="document_position_preceding"| value Dom.document_position_preceding >> ~[<<a_api | module Dom >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="down"| value Keycode.down >> ~[<<a_api | module Keycode >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="downloading"| value Dom_html.Event.downloading >> ~[<<a_api | module Dom_html.Event >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="drag"| value Lwt_js_events.drag >> ~[<<a_api | module Lwt_js_events >>~]||
@@ -525,6 +524,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="focus"| value Lwt_js_events.focus >> ~[<<a_api | module Lwt_js_events >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="focus"| value Dom_html.Event.focus >> ~[<<a_api | module Dom_html.Event >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="focuses"| value Lwt_js_events.focuses >> ~[<<a_api | module Lwt_js_events >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="following"| value Dom.DocumentPosition.following >> ~[<<a_api | module Dom.DocumentPosition >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="font"| value Dom_svg.CoerceTo.font >> ~[<<a_api | module Dom_svg.CoerceTo >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="fontFace"| value Dom_svg.CoerceTo.fontFace >> ~[<<a_api | module Dom_svg.CoerceTo >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="fontFaceFormat"| value Dom_svg.CoerceTo.fontFaceFormat >> ~[<<a_api | module Dom_svg.CoerceTo >>~]||
@@ -613,6 +613,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="handler"| value Dom.handler >> ~[<<a_api | module Dom >>~]|<<div class="odocwiki_info"|~Create an event handler that invokes the provided function~.
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api text="has"| value Dom.DocumentPosition.has >> ~[<<a_api | module Dom.DocumentPosition >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="hashchange"| value Dom_html.Event.hashchange >> ~[<<a_api | module Dom_html.Event >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="head"| value Dom_html.CoerceTo.head >> ~[<<a_api | module Dom_html.CoerceTo >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="hkern"| value Dom_svg.CoerceTo.hkern >> ~[<<a_api | module Dom_svg.CoerceTo >>~]||
@@ -647,6 +648,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="ign_warning_f"| value Lwt_log_js.ign_warning_f >> ~[<<a_api | module Lwt_log_js >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="image"| value Dom_svg.CoerceTo.image >> ~[<<a_api | module Dom_svg.CoerceTo >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="img"| value Dom_html.CoerceTo.img >> ~[<<a_api | module Dom_html.CoerceTo >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="implementation_specific"| value Dom.DocumentPosition.implementation_specific >> ~[<<a_api | module Dom.DocumentPosition >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="info"| value Lwt_log_js.info >> ~[<<a_api | module Lwt_log_js >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="info_f"| value Lwt_log_js.info_f >> ~[<<a_api | module Lwt_log_js >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="init_lexer"| value Deriving_Json_lexer.init_lexer >> ~[<<a_api | module Deriving_Json_lexer >>~]|<<div class="odocwiki_info"|~Create a fresh lexbuf record~.
@@ -1076,6 +1078,7 @@
 |
 |@@class="odocwiki_index"@ @@<<a_api text="post_form_contents"| value Form.post_form_contents >> ~[<<a_api | module Form >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="pre"| value Dom_html.CoerceTo.pre >> ~[<<a_api | module Dom_html.CoerceTo >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="preceding"| value Dom.DocumentPosition.preceding >> ~[<<a_api | module Dom.DocumentPosition >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="preventDefault"| value Dom.preventDefault >> ~[<<a_api | module Dom >>~]|<<div class="odocwiki_info"|~Call this to prevent the default handler for the event~.
 >>
 |

@@ -3,7 +3,7 @@
   method appendData : Js.js_string Js.t -> unit Js.meth
   method childNodes : node nodeList Js.t Js.prop
   method cloneNode : bool Js.t -> node Js.t Js.meth
-  method compareDocumentPosition : node Js.t -> int Js.meth
+  method compareDocumentPosition : node Js.t -> DocumentPosition.t Js.meth
   method data : Js.js_string Js.t Js.prop
   method deleteData : int -> int -> unit Js.meth
   method firstChild : node Js.t Js.opt Js.prop

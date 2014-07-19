@@ -402,7 +402,8 @@
       method clientTop : int Js.readonly_prop
       method clientWidth : int Js.readonly_prop
       method cloneNode : bool Js.t -> Dom.node Js.t Js.meth
-      method compareDocumentPosition : Dom.node Js.t -> int Js.meth
+      method compareDocumentPosition :
+        Dom.node Js.t -> Dom.DocumentPosition.t Js.meth
       method dir : Js.js_string Js.t Js.prop
       method firstChild : Dom.node Js.t Js.opt Js.prop
       method getAttribute :
@@ -523,7 +524,8 @@
       method clientTop : int Js.readonly_prop
       method clientWidth : int Js.readonly_prop
       method cloneNode : bool Js.t -> Dom.node Js.t Js.meth
-      method compareDocumentPosition : Dom.node Js.t -> int Js.meth
+      method compareDocumentPosition :
+        Dom.node Js.t -> Dom.DocumentPosition.t Js.meth
       method dir : Js.js_string Js.t Js.prop
       method firstChild : Dom.node Js.t Js.opt Js.prop
       method getAttribute :
@@ -622,7 +624,8 @@
       method clientTop : int Js.readonly_prop
       method clientWidth : int Js.readonly_prop
       method cloneNode : bool Js.t -> Dom.node Js.t Js.meth
-      method compareDocumentPosition : Dom.node Js.t -> int Js.meth
+      method compareDocumentPosition :
+        Dom.node Js.t -> Dom.DocumentPosition.t Js.meth
       method dir : Js.js_string Js.t Js.prop
       method disabled : bool Js.t Js.prop
       method firstChild : Dom.node Js.t Js.opt Js.prop
@@ -725,7 +728,8 @@
       method clientTop : int Js.readonly_prop
       method clientWidth : int Js.readonly_prop
       method cloneNode : bool Js.t -> Dom.node Js.t Js.meth
-      method compareDocumentPosition : Dom.node Js.t -> int Js.meth
+      method compareDocumentPosition :
+        Dom.node Js.t -> Dom.DocumentPosition.t Js.meth
       method dir : Js.js_string Js.t Js.prop
       method firstChild : Dom.node Js.t Js.opt Js.prop
       method getAttribute :
@@ -822,7 +826,8 @@
       method clientTop : int Js.readonly_prop
       method clientWidth : int Js.readonly_prop
       method cloneNode : bool Js.t -> Dom.node Js.t Js.meth
-      method compareDocumentPosition : Dom.node Js.t -> int Js.meth
+      method compareDocumentPosition :
+        Dom.node Js.t -> Dom.DocumentPosition.t Js.meth
       method content : Js.js_string Js.t Js.prop
       method dir : Js.js_string Js.t Js.prop
       method firstChild : Dom.node Js.t Js.opt Js.prop
@@ -922,7 +927,8 @@
       method clientTop : int Js.readonly_prop
       method clientWidth : int Js.readonly_prop
       method cloneNode : bool Js.t -> Dom.node Js.t Js.meth
-      method compareDocumentPosition : Dom.node Js.t -> int Js.meth
+      method compareDocumentPosition :
+        Dom.node Js.t -> Dom.DocumentPosition.t Js.meth
       method dir : Js.js_string Js.t Js.prop
       method firstChild : Dom.node Js.t Js.opt Js.prop
       method getAttribute :
@@ -1021,7 +1027,8 @@
       method clientTop : int Js.readonly_prop
       method clientWidth : int Js.readonly_prop
       method cloneNode : bool Js.t -> Dom.node Js.t Js.meth
-      method compareDocumentPosition : Dom.node Js.t -> int Js.meth
+      method compareDocumentPosition :
+        Dom.node Js.t -> Dom.DocumentPosition.t Js.meth
       method dir : Js.js_string Js.t Js.prop
       method disabled : bool Js.t Js.prop
       method firstChild : Dom.node Js.t Js.opt Js.prop
@@ -1123,7 +1130,8 @@
       method clientTop : int Js.readonly_prop
       method clientWidth : int Js.readonly_prop
       method cloneNode : bool Js.t -> Dom.node Js.t Js.meth
-      method compareDocumentPosition : Dom.node Js.t -> int Js.meth
+      method compareDocumentPosition :
+        Dom.node Js.t -> Dom.DocumentPosition.t Js.meth
       method dir : Js.js_string Js.t Js.prop
       method elements :
         Dom_html.element Dom_html.collection Js.t Js.readonly_prop
@@ -1229,7 +1237,8 @@
       method clientTop : int Js.readonly_prop
       method clientWidth : int Js.readonly_prop
       method cloneNode : bool Js.t -> Dom.node Js.t Js.meth
-      method compareDocumentPosition : Dom.node Js.t -> int Js.meth
+      method compareDocumentPosition :
+        Dom.node Js.t -> Dom.DocumentPosition.t Js.meth
       method dir : Js.js_string Js.t Js.prop
       method disabled : bool Js.t Js.prop
       method firstChild : Dom.node Js.t Js.opt Js.prop
@@ -1327,7 +1336,8 @@
       method clientTop : int Js.readonly_prop
       method clientWidth : int Js.readonly_prop
       method cloneNode : bool Js.t -> Dom.node Js.t Js.meth
-      method compareDocumentPosition : Dom.node Js.t -> int Js.meth
+      method compareDocumentPosition :
+        Dom.node Js.t -> Dom.DocumentPosition.t Js.meth
       method defaultSelected : bool Js.t Js.prop
       method dir : Js.js_string Js.t Js.prop
       method disabled : bool Js.t Js.prop
@@ -1436,7 +1446,8 @@
       method clientTop : int Js.readonly_prop
       method clientWidth : int Js.readonly_prop
       method cloneNode : bool Js.t -> Dom.node Js.t Js.meth
-      method compareDocumentPosition : Dom.node Js.t -> int Js.meth
+      method compareDocumentPosition :
+        Dom.node Js.t -> Dom.DocumentPosition.t Js.meth
       method dir : Js.js_string Js.t Js.prop
       method disabled : bool Js.t Js.prop
       method firstChild : Dom.node Js.t Js.opt Js.prop
@@ -1577,7 +1588,8 @@
       method clientTop : int Js.readonly_prop
       method clientWidth : int Js.readonly_prop
       method cloneNode : bool Js.t -> Dom.node Js.t Js.meth
-      method compareDocumentPosition : Dom.node Js.t -> int Js.meth
+      method compareDocumentPosition :
+        Dom.node Js.t -> Dom.DocumentPosition.t Js.meth
       method defaultChecked : Js.js_string Js.t Js.prop
       method defaultValue : Js.js_string Js.t Js.prop
       method dir : Js.js_string Js.t Js.prop
@@ -1723,7 +1735,8 @@
       method clientWidth : int Js.readonly_prop
       method cloneNode : bool Js.t -> Dom.node Js.t Js.meth
       method cols : int Js.prop
-      method compareDocumentPosition : Dom.node Js.t -> int Js.meth
+      method compareDocumentPosition :
+        Dom.node Js.t -> Dom.DocumentPosition.t Js.meth
       method defaultValue : Js.js_string Js.t Js.prop
       method dir : Js.js_string Js.t Js.prop
       method disabled : bool Js.t Js.prop
@@ -1862,7 +1875,8 @@
       method clientTop : int Js.readonly_prop
       method clientWidth : int Js.readonly_prop
       method cloneNode : bool Js.t -> Dom.node Js.t Js.meth
-      method compareDocumentPosition : Dom.node Js.t -> int Js.meth
+      method compareDocumentPosition :
+        Dom.node Js.t -> Dom.DocumentPosition.t Js.meth
       method dir : Js.js_string Js.t Js.prop
       method disabled : bool Js.t Js.prop
       method firstChild : Dom.node Js.t Js.opt Js.prop
@@ -1964,7 +1978,8 @@
       method clientTop : int Js.readonly_prop
       method clientWidth : int Js.readonly_prop
       method cloneNode : bool Js.t -> Dom.node Js.t Js.meth
-      method compareDocumentPosition : Dom.node Js.t -> int Js.meth
+      method compareDocumentPosition :
+        Dom.node Js.t -> Dom.DocumentPosition.t Js.meth
       method dir : Js.js_string Js.t Js.prop
       method firstChild : Dom.node Js.t Js.opt Js.prop
       method form : Dom_html.formElement Js.t Js.opt Js.readonly_prop
@@ -2062,7 +2077,8 @@
       method clientTop : int Js.readonly_prop
       method clientWidth : int Js.readonly_prop
       method cloneNode : bool Js.t -> Dom.node Js.t Js.meth
-      method compareDocumentPosition : Dom.node Js.t -> int Js.meth
+      method compareDocumentPosition :
+        Dom.node Js.t -> Dom.DocumentPosition.t Js.meth
       method dir : Js.js_string Js.t Js.prop
       method firstChild : Dom.node Js.t Js.opt Js.prop
       method form : Dom_html.formElement Js.t Js.opt Js.readonly_prop
@@ -2160,7 +2176,8 @@
       method clientTop : int Js.readonly_prop
       method clientWidth : int Js.readonly_prop
       method cloneNode : bool Js.t -> Dom.node Js.t Js.meth
-      method compareDocumentPosition : Dom.node Js.t -> int Js.meth
+      method compareDocumentPosition :
+        Dom.node Js.t -> Dom.DocumentPosition.t Js.meth
       method dir : Js.js_string Js.t Js.prop
       method firstChild : Dom.node Js.t Js.opt Js.prop
       method form : Dom_html.formElement Js.t Js.opt Js.readonly_prop
@@ -2265,7 +2282,8 @@
       method clientTop : int Js.readonly_prop
       method clientWidth : int Js.readonly_prop
       method cloneNode : bool Js.t -> Dom.node Js.t Js.meth
-      method compareDocumentPosition : Dom.node Js.t -> int Js.meth
+      method compareDocumentPosition :
+        Dom.node Js.t -> Dom.DocumentPosition.t Js.meth
       method dir : Js.js_string Js.t Js.prop
       method firstChild : Dom.node Js.t Js.opt Js.prop
       method getAttribute :
@@ -2365,7 +2383,8 @@
       method clientTop : int Js.readonly_prop
       method clientWidth : int Js.readonly_prop
       method cloneNode : bool Js.t -> Dom.node Js.t Js.meth
-      method compareDocumentPosition : Dom.node Js.t -> int Js.meth
+      method compareDocumentPosition :
+        Dom.node Js.t -> Dom.DocumentPosition.t Js.meth
       method dateTime : Js.js_string Js.t Js.prop
       method dir : Js.js_string Js.t Js.prop
       method firstChild : Dom.node Js.t Js.opt Js.prop
@@ -2466,7 +2485,8 @@
       method clientTop : int Js.readonly_prop
       method clientWidth : int Js.readonly_prop
       method cloneNode : bool Js.t -> Dom.node Js.t Js.meth
-      method compareDocumentPosition : Dom.node Js.t -> int Js.meth
+      method compareDocumentPosition :
+        Dom.node Js.t -> Dom.DocumentPosition.t Js.meth
       method coords : Js.js_string Js.t Js.prop
       method dir : Js.js_string Js.t Js.prop
       method firstChild : Dom.node Js.t Js.opt Js.prop
@@ -2573,7 +2593,8 @@
       method clientTop : int Js.readonly_prop
       method clientWidth : int Js.readonly_prop
       method cloneNode : bool Js.t -> Dom.node Js.t Js.meth
-      method compareDocumentPosition : Dom.node Js.t -> int Js.meth
+      method compareDocumentPosition :
+        Dom.node Js.t -> Dom.DocumentPosition.t Js.meth
       method complete : bool Js.t Js.prop
       method dir : Js.js_string Js.t Js.prop
       method firstChild : Dom.node Js.t Js.opt Js.prop
@@ -2707,7 +2728,8 @@
       method code : Js.js_string Js.t Js.prop
       method codeBase : Js.js_string Js.t Js.prop
       method codeType : Js.js_string Js.t Js.prop
-      method compareDocumentPosition : Dom.node Js.t -> int Js.meth
+      method compareDocumentPosition :
+        Dom.node Js.t -> Dom.DocumentPosition.t Js.meth
       method data : Js.js_string Js.t Js.prop
       method declare : bool Js.t Js.prop
       method dir : Js.js_string Js.t Js.prop
@@ -2814,7 +2836,8 @@
       method clientTop : int Js.readonly_prop
       method clientWidth : int Js.readonly_prop
       method cloneNode : bool Js.t -> Dom.node Js.t Js.meth
-      method compareDocumentPosition : Dom.node Js.t -> int Js.meth
+      method compareDocumentPosition :
+        Dom.node Js.t -> Dom.DocumentPosition.t Js.meth
       method dir : Js.js_string Js.t Js.prop
       method firstChild : Dom.node Js.t Js.opt Js.prop
       method getAttribute :
@@ -2915,7 +2938,8 @@
       method clientTop : int Js.readonly_prop
       method clientWidth : int Js.readonly_prop
       method cloneNode : bool Js.t -> Dom.node Js.t Js.meth
-      method compareDocumentPosition : Dom.node Js.t -> int Js.meth
+      method compareDocumentPosition :
+        Dom.node Js.t -> Dom.DocumentPosition.t Js.meth
       method coords : Js.js_string Js.t Js.prop
       method dir : Js.js_string Js.t Js.prop
       method firstChild : Dom.node Js.t Js.opt Js.prop
@@ -3019,7 +3043,8 @@
       method clientTop : int Js.readonly_prop
       method clientWidth : int Js.readonly_prop
       method cloneNode : bool Js.t -> Dom.node Js.t Js.meth
-      method compareDocumentPosition : Dom.node Js.t -> int Js.meth
+      method compareDocumentPosition :
+        Dom.node Js.t -> Dom.DocumentPosition.t Js.meth
       method dir : Js.js_string Js.t Js.prop
       method firstChild : Dom.node Js.t Js.opt Js.prop
       method getAttribute :
@@ -3119,7 +3144,8 @@
       method clientTop : int Js.readonly_prop
       method clientWidth : int Js.readonly_prop
       method cloneNode : bool Js.t -> Dom.node Js.t Js.meth
-      method compareDocumentPosition : Dom.node Js.t -> int Js.meth
+      method compareDocumentPosition :
+        Dom.node Js.t -> Dom.DocumentPosition.t Js.meth
       method defer : bool Js.t Js.prop
       method dir : Js.js_string Js.t Js.prop
       method firstChild : Dom.node Js.t Js.opt Js.prop
@@ -3219,7 +3245,8 @@
       method clientTop : int Js.readonly_prop
       method clientWidth : int Js.readonly_prop
       method cloneNode : bool Js.t -> Dom.node Js.t Js.meth
-      method compareDocumentPosition : Dom.node Js.t -> int Js.meth
+      method compareDocumentPosition :
+        Dom.node Js.t -> Dom.DocumentPosition.t Js.meth
       method dir : Js.js_string Js.t Js.prop
       method firstChild : Dom.node Js.t Js.opt Js.prop
       method getAttribute :
@@ -3325,7 +3352,8 @@
       method clientWidth : int Js.readonly_prop
       method cloneNode : bool Js.t -> Dom.node Js.t Js.meth
       method colSpan : int Js.prop
-      method compareDocumentPosition : Dom.node Js.t -> int Js.meth
+      method compareDocumentPosition :
+        Dom.node Js.t -> Dom.DocumentPosition.t Js.meth
       method dir : Js.js_string Js.t Js.prop
       method firstChild : Dom.node Js.t Js.opt Js.prop
       method getAttribute :
@@ -3430,7 +3458,8 @@
       method clientTop : int Js.readonly_prop
       method clientWidth : int Js.readonly_prop
       method cloneNode : bool Js.t -> Dom.node Js.t Js.meth
-      method compareDocumentPosition : Dom.node Js.t -> int Js.meth
+      method compareDocumentPosition :
+        Dom.node Js.t -> Dom.DocumentPosition.t Js.meth
       method deleteCell : int -> unit Js.meth
       method dir : Js.js_string Js.t Js.prop
       method firstChild : Dom.node Js.t Js.opt Js.prop
@@ -3534,7 +3563,8 @@
       method clientTop : int Js.readonly_prop
       method clientWidth : int Js.readonly_prop
       method cloneNode : bool Js.t -> Dom.node Js.t Js.meth
-      method compareDocumentPosition : Dom.node Js.t -> int Js.meth
+      method compareDocumentPosition :
+        Dom.node Js.t -> Dom.DocumentPosition.t Js.meth
       method dir : Js.js_string Js.t Js.prop
       method firstChild : Dom.node Js.t Js.opt Js.prop
       method getAttribute :
@@ -3636,7 +3666,8 @@
       method clientTop : int Js.readonly_prop
       method clientWidth : int Js.readonly_prop
       method cloneNode : bool Js.t -> Dom.node Js.t Js.meth
-      method compareDocumentPosition : Dom.node Js.t -> int Js.meth
+      method compareDocumentPosition :
+        Dom.node Js.t -> Dom.DocumentPosition.t Js.meth
       method deleteRow : int -> unit Js.meth
       method dir : Js.js_string Js.t Js.prop
       method firstChild : Dom.node Js.t Js.opt Js.prop
@@ -3743,7 +3774,8 @@
       method clientTop : int Js.readonly_prop
       method clientWidth : int Js.readonly_prop
       method cloneNode : bool Js.t -> Dom.node Js.t Js.meth
-      method compareDocumentPosition : Dom.node Js.t -> int Js.meth
+      method compareDocumentPosition :
+        Dom.node Js.t -> Dom.DocumentPosition.t Js.meth
       method createCaption : Dom_html.tableCaptionElement Js.t Js.meth
       method createTFoot : Dom_html.tableSectionElement Js.t Js.meth
       method createTHead : Dom_html.tableSectionElement Js.t Js.meth
@@ -3878,7 +3910,8 @@
       method clientTop : int Js.readonly_prop
       method clientWidth : int Js.readonly_prop
       method cloneNode : bool Js.t -> Dom.node Js.t Js.meth
-      method compareDocumentPosition : Dom.node Js.t -> int Js.meth
+      method compareDocumentPosition :
+        Dom.node Js.t -> Dom.DocumentPosition.t Js.meth
       method controls : bool Js.t Js.prop
       method currentSrc : Js.js_string Js.t Js.readonly_prop
       method currentTime : float Js.prop
@@ -4000,7 +4033,8 @@
       method clientTop : int Js.readonly_prop
       method clientWidth : int Js.readonly_prop
       method cloneNode : bool Js.t -> Dom.node Js.t Js.meth
-      method compareDocumentPosition : Dom.node Js.t -> int Js.meth
+      method compareDocumentPosition :
+        Dom.node Js.t -> Dom.DocumentPosition.t Js.meth
       method controls : bool Js.t Js.prop
       method currentSrc : Js.js_string Js.t Js.readonly_prop
       method currentTime : float Js.prop
@@ -4122,7 +4156,8 @@
       method clientTop : int Js.readonly_prop
       method clientWidth : int Js.readonly_prop
       method cloneNode : bool Js.t -> Dom.node Js.t Js.meth
-      method compareDocumentPosition : Dom.node Js.t -> int Js.meth
+      method compareDocumentPosition :
+        Dom.node Js.t -> Dom.DocumentPosition.t Js.meth
       method controls : bool Js.t Js.prop
       method currentSrc : Js.js_string Js.t Js.readonly_prop
       method currentTime : float Js.prop
@@ -4244,7 +4279,8 @@
       method clientTop : int Js.readonly_prop
       method clientWidth : int Js.readonly_prop
       method cloneNode : bool Js.t -> Dom.node Js.t Js.meth
-      method compareDocumentPosition : Dom.node Js.t -> int Js.meth
+      method compareDocumentPosition :
+        Dom.node Js.t -> Dom.DocumentPosition.t Js.meth
       method dir : Js.js_string Js.t Js.prop
       method firstChild : Dom.node Js.t Js.opt Js.prop
       method getAttribute :
@@ -4530,7 +4566,8 @@
       method childNodes : Dom.node Dom.nodeList Js.t Js.prop
       method cloneNode : bool Js.t -> Dom.node Js.t Js.meth
       method close : unit Js.meth
-      method compareDocumentPosition : Dom.node Js.t -> int Js.meth
+      method compareDocumentPosition :
+        Dom.node Js.t -> Dom.DocumentPosition.t Js.meth
       method cookie : Js.js_string Js.t Js.prop
       method createAttribute : Js.js_string Js.t -> Dom.attr Js.t Js.meth
       method createComment : Js.js_string Js.t -> Dom.comment Js.t Js.meth
@@ -4865,7 +4902,8 @@
       method clientWidth : int Js.readonly_prop
       method cloneNode : bool Js.t -> Dom.node Js.t Js.meth
       method cols : Js.js_string Js.t Js.prop
-      method compareDocumentPosition : Dom.node Js.t -> int Js.meth
+      method compareDocumentPosition :
+        Dom.node Js.t -> Dom.DocumentPosition.t Js.meth
       method dir : Js.js_string Js.t Js.prop
       method firstChild : Dom.node Js.t Js.opt Js.prop
       method getAttribute :
@@ -4962,7 +5000,8 @@
       method clientTop : int Js.readonly_prop
       method clientWidth : int Js.readonly_prop
       method cloneNode : bool Js.t -> Dom.node Js.t Js.meth
-      method compareDocumentPosition : Dom.node Js.t -> int Js.meth
+      method compareDocumentPosition :
+        Dom.node Js.t -> Dom.DocumentPosition.t Js.meth
       method contentDocument : Dom_html.document Js.t Js.opt Js.readonly_prop
       method dir : Js.js_string Js.t Js.prop
       method firstChild : Dom.node Js.t Js.opt Js.prop
@@ -5067,7 +5106,8 @@
       method clientTop : int Js.readonly_prop
       method clientWidth : int Js.readonly_prop
       method cloneNode : bool Js.t -> Dom.node Js.t Js.meth
-      method compareDocumentPosition : Dom.node Js.t -> int Js.meth
+      method compareDocumentPosition :
+        Dom.node Js.t -> Dom.DocumentPosition.t Js.meth
       method contentDocument : Dom_html.document Js.t Js.opt Js.readonly_prop
       method contentWindow : Dom_html.window Js.t Js.readonly_prop
       method dir : Js.js_string Js.t Js.prop

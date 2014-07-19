@@ -3,7 +3,7 @@
   method appendChild : node Js.t -> node Js.t Js.meth
   method childNodes : node nodeList Js.t Js.prop
   method cloneNode : bool Js.t -> node Js.t Js.meth
-  method compareDocumentPosition : node Js.t -> int Js.meth
+  method compareDocumentPosition : node Js.t -> DocumentPosition.t Js.meth
   method createAttribute : Js.js_string Js.t -> Dom.attr Js.t Js.meth
   method createComment : Js.js_string Js.t -> Dom.comment Js.t Js.meth
   method createDocumentFragment : Dom.documentFragment Js.t Js.meth

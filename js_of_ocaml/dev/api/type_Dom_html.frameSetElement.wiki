@@ -10,7 +10,8 @@
   method clientWidth : int Js.readonly_prop
   method cloneNode : bool Js.t -> Dom.node Js.t Js.meth
   method cols : Js.js_string Js.t Js.prop
-  method compareDocumentPosition : Dom.node Js.t -> int Js.meth
+  method compareDocumentPosition :
+    Dom.node Js.t -> Dom.DocumentPosition.t Js.meth
   method dir : Js.js_string Js.t Js.prop
   method firstChild : Dom.node Js.t Js.opt Js.prop
   method getAttribute : Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth

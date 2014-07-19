@@ -8,7 +8,8 @@
   method childNodes : Dom.node Dom.nodeList Js.t Js.prop
   method cloneNode : bool Js.t -> Dom.node Js.t Js.meth
   method close : unit Js.meth
-  method compareDocumentPosition : Dom.node Js.t -> int Js.meth
+  method compareDocumentPosition :
+    Dom.node Js.t -> Dom.DocumentPosition.t Js.meth
   method cookie : Js.js_string Js.t Js.prop
   method createAttribute : Js.js_string Js.t -> Dom.attr Js.t Js.meth
   method createComment : Js.js_string Js.t -> Dom.comment Js.t Js.meth

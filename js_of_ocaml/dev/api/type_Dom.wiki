@@ -18,18 +18,31 @@
     | DOCUMENT_TYPE
     | DOCUMENT_FRAGMENT
     | NOTATION
-  val document_position_disconnected : int
-  val document_position_preceding : int
-  val document_position_following : int
-  val document_position_contains : int
-  val document_position_contained_by : int
-  val document_position_implementation_specific : int
+  module DocumentPosition :
+    sig
+      type t = private int
+      type mask = private int
+      val disconnected : Dom.DocumentPosition.mask
+      val preceding : Dom.DocumentPosition.mask
+      val following : Dom.DocumentPosition.mask
+      val contains : Dom.DocumentPosition.mask
+      val contained_by : Dom.DocumentPosition.mask
+      val implementation_specific : Dom.DocumentPosition.mask
+      val has : Dom.DocumentPosition.t -> Dom.DocumentPosition.mask -> bool
+      val add :
+        Dom.DocumentPosition.mask ->
+        Dom.DocumentPosition.mask -> Dom.DocumentPosition.mask
+      val ( + ) :
+        Dom.DocumentPosition.mask ->
+        Dom.DocumentPosition.mask -> Dom.DocumentPosition.mask
+    end
   class type node =
     object
       method appendChild : Dom.node Js.t -> Dom.node Js.t Js.meth
       method childNodes : Dom.node Dom.nodeList Js.t Js.prop
       method cloneNode : bool Js.t -> Dom.node Js.t Js.meth
-      method compareDocumentPosition : Dom.node Js.t -> int Js.meth
+      method compareDocumentPosition :
+        Dom.node Js.t -> Dom.DocumentPosition.t Js.meth
       method firstChild : Dom.node Js.t Js.opt Js.prop
       method hasChildNodes : bool Js.t Js.meth
       method insertBefore :
@@ -50,7 +63,8 @@
       method appendChild : node Js.t -> node Js.t Js.meth
       method childNodes : node nodeList Js.t Js.prop
       method cloneNode : bool Js.t -> node Js.t Js.meth
-      method compareDocumentPosition : node Js.t -> int Js.meth
+      method compareDocumentPosition :
+        node Js.t -> DocumentPosition.t Js.meth
       method firstChild : node Js.t Js.opt Js.prop
       method hasChildNodes : bool Js.t Js.meth
       method insertBefore :
@@ -84,7 +98,8 @@
       method attributes : Dom.attr Dom.namedNodeMap Js.t Js.readonly_prop
       method childNodes : node nodeList Js.t Js.prop
       method cloneNode : bool Js.t -> node Js.t Js.meth
-      method compareDocumentPosition : node Js.t -> int Js.meth
+      method compareDocumentPosition :
+        node Js.t -> DocumentPosition.t Js.meth
       method firstChild : node Js.t Js.opt Js.prop
       method getAttribute :
         Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
@@ -114,7 +129,8 @@
       method appendData : Js.js_string Js.t -> unit Js.meth
       method childNodes : node nodeList Js.t Js.prop
       method cloneNode : bool Js.t -> node Js.t Js.meth
-      method compareDocumentPosition : node Js.t -> int Js.meth
+      method compareDocumentPosition :
+        node Js.t -> DocumentPosition.t Js.meth
       method data : Js.js_string Js.t Js.prop
       method deleteData : int -> int -> unit Js.meth
       method firstChild : node Js.t Js.opt Js.prop
@@ -144,7 +160,8 @@
       method appendChild : node Js.t -> node Js.t Js.meth
       method childNodes : node nodeList Js.t Js.prop
       method cloneNode : bool Js.t -> node Js.t Js.meth
-      method compareDocumentPosition : node Js.t -> int Js.meth
+      method compareDocumentPosition :
+        node Js.t -> DocumentPosition.t Js.meth
       method createAttribute : Js.js_string Js.t -> Dom.attr Js.t Js.meth
       method createComment : Js.js_string Js.t -> Dom.comment Js.t Js.meth
       method createDocumentFragment : Dom.documentFragment Js.t Js.meth
