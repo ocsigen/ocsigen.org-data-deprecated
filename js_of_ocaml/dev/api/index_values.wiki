@@ -120,7 +120,13 @@
 |
 |@@ @style="tet-align: left;"@@\\C|
 |@@class="odocwiki_index"@ @@<<a_api text="cached"| value Dom_html.Event.cached >> ~[<<a_api | module Dom_html.Event >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="call"| value Jsonp.call >> ~[<<a_api | module Jsonp >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|call ~~timeout ~~param url>> do a jsonp call using <<span class="odocwiki_inlinecode"|url>>~.
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api text="call"| value Js.Unsafe.call >> ~[<<a_api | module Js.Unsafe >>~]|<<div class="odocwiki_info"|~Performs a ~Javascript function call~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="call_custom_url"| value Jsonp.call_custom_url >> ~[<<a_api | module Jsonp >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|call~_custom~_url ~~timeout make~_url>>~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="canvas"| value Dom_html.CoerceTo.canvas >> ~[<<a_api | module Dom_html.CoerceTo >>~]||

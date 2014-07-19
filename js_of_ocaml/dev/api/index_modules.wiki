@@ -84,6 +84,9 @@
 |@@class="odocwiki_index"@ @@<<a_api text="Json_ref"| module Deriving_Json.Json_ref >> ~[<<a_api | module Deriving_Json >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="Json_string"| module Deriving_Json.Json_string >> ~[<<a_api | module Deriving_Json >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="Json_unit"| module Deriving_Json.Json_unit >> ~[<<a_api | module Deriving_Json >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="Jsonp"| module Jsonp >> |<<div class="odocwiki_info"|~This module provides helpers to perform ~J~S~O~N~P calls
+>>
+|
 |@@ @style="tet-align: left;"@@\\K|
 |@@class="odocwiki_index"@ @@<<a_api text="Keycode"| module Keycode >> ||
 |@@ @style="tet-align: left;"@@\\L|
