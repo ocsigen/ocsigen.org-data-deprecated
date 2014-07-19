@@ -821,6 +821,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="files"| method Dom_html.inputElement#files >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="files"| method Dom_html.dataTransfer#files >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="fill"| method Dom_html.canvasRenderingContext2D#fill >> ~[<<a_api | module Dom_html >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="fill"| method Dom_html.cssStyleDeclaration#fill >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="fillRect"| method Dom_html.canvasRenderingContext2D#fillRect >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="fillStyle"| method Dom_html.canvasRenderingContext2D#fillStyle >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="fillStyle_gradient"| method Dom_html.canvasRenderingContext2D#fillStyle_gradient >> ~[<<a_api | module Dom_html >>~]||

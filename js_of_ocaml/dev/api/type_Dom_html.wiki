@@ -43,6 +43,7 @@
       method direction : Js.js_string Js.t Js.prop
       method display : Js.js_string Js.t Js.prop
       method emptyCells : Js.js_string Js.t Js.prop
+      method fill : Js.js_string Js.t Js.prop
       method font : Js.js_string Js.t Js.prop
       method fontFamily : Js.js_string Js.t Js.prop
       method fontSize : Js.js_string Js.t Js.prop
