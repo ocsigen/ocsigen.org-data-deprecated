@@ -12,7 +12,11 @@
 |@@class="odocwiki_index"@ @@<<a_api text="Simple_printer"| module type Xml_sigs.Simple_printer >> ~[<<a_api | module Xml_sigs >>~]||
 |@@ @style="tet-align: left;"@@\\T|
 |@@class="odocwiki_index"@ @@<<a_api text="T"| module type Html5_sigs.T >> ~[<<a_api | module Html5_sigs >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="T"| module type Html5_sigs.Make.T >> ~[<<a_api | module Html5_sigs.Make >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="T"| module type Html5_sigs.MakeWrapped.T >> ~[<<a_api | module Html5_sigs.MakeWrapped >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="T"| module type Svg_sigs.T >> ~[<<a_api | module Svg_sigs >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="T"| module type Svg_sigs.Make.T >> ~[<<a_api | module Svg_sigs.Make >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="T"| module type Svg_sigs.MakeWrapped.T >> ~[<<a_api | module Svg_sigs.MakeWrapped >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="T"| module type Xml_wrap.T >> ~[<<a_api | module Xml_wrap >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="T"| module type Xml_sigs.T >> ~[<<a_api | module Xml_sigs >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="Typed_printer"| module type Xml_sigs.Typed_printer >> ~[<<a_api | module Xml_sigs >>~]||

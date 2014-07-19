@@ -601,10 +601,10 @@
 |@@class="odocwiki_index"@ @@<<a_api text="dfn"| value Html5_sigs.T.dfn >> ~[<<a_api | module Html5_sigs.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="div"| value Html5_sigs.T.div >> ~[<<a_api | module Html5_sigs.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="dl"| value Html5_sigs.T.dl >> ~[<<a_api | module Html5_sigs.T >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="doc_toelt"| value Xml_sigs.Iterable_typed_xml.doc_toelt >> ~[<<a_api | module Xml_sigs.Iterable_typed_xml >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="doc_toelt"| value Xml_sigs.Typed_xml.doc_toelt >> ~[<<a_api | module Xml_sigs.Typed_xml >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="doc_toelt"| value Html5_sigs.T.doc_toelt >> ~[<<a_api | module Html5_sigs.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="doc_toelt"| value Svg_sigs.T.doc_toelt >> ~[<<a_api | module Svg_sigs.T >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="doc_toelt"| value Xml_sigs.Iterable_typed_xml.doc_toelt >> ~[<<a_api | module Xml_sigs.Iterable_typed_xml >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="doc_toelt"| value Xml_sigs.Typed_xml.doc_toelt >> ~[<<a_api | module Xml_sigs.Typed_xml >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="doctype"| value Xml_sigs.Info.doctype >> ~[<<a_api | module Xml_sigs.Info >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="dt"| value Html5_sigs.T.dt >> ~[<<a_api | module Html5_sigs.T >>~]||
 |@@ @style="tet-align: left;"@@\\E|
@@ -749,8 +749,8 @@
 |@@class="odocwiki_index"@ @@<<a_api text="link"| value Html5_sigs.T.link >> ~[<<a_api | module Html5_sigs.T >>~]||
 |@@ @style="tet-align: left;"@@\\M|
 |@@class="odocwiki_index"@ @@<<a_api text="make"| value Xml_sigs.Output.make >> ~[<<a_api | module Xml_sigs.Output >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="map"| value Xml_wrap.T.map >> ~[<<a_api | module Xml_wrap.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="map"| value Html5_sigs.T.map >> ~[<<a_api | module Html5_sigs.T >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="map"| value Xml_wrap.T.map >> ~[<<a_api | module Xml_wrap.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="map_float_attrib"| value Xml_iter.Make.map_float_attrib >> ~[<<a_api | module Xml_iter.Make >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="map_int_attrib"| value Xml_iter.Make.map_int_attrib >> ~[<<a_api | module Xml_iter.Make >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="map_int_attrib"| value Xml.map_int_attrib >> ~[<<a_api | module Xml >>~]||
@@ -793,8 +793,8 @@
 |@@class="odocwiki_index"@ @@<<a_api text="path"| value Svg_sigs.T.path >> ~[<<a_api | module Svg_sigs.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="pattern"| value Svg_sigs.T.pattern >> ~[<<a_api | module Svg_sigs.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="pcdata"| value Html5_sigs.T.pcdata >> ~[<<a_api | module Html5_sigs.T >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="pcdata"| value Xml_sigs.Wrapped.pcdata >> ~[<<a_api | module Xml_sigs.Wrapped >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="pcdata"| value Svg_sigs.T.pcdata >> ~[<<a_api | module Svg_sigs.T >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="pcdata"| value Xml_sigs.Wrapped.pcdata >> ~[<<a_api | module Xml_sigs.Wrapped >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="pcdata"| value Xml.pcdata >> ~[<<a_api | module Xml >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="polygon"| value Svg_sigs.T.polygon >> ~[<<a_api | module Svg_sigs.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="polyline"| value Svg_sigs.T.polyline >> ~[<<a_api | module Svg_sigs.T >>~]||
@@ -856,8 +856,8 @@
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="string_of_uri"| value Html5_sigs.T.string_of_uri >> ~[<<a_api | module Html5_sigs.T >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="string_of_uri"| value Xml_sigs.Wrapped.string_of_uri >> ~[<<a_api | module Xml_sigs.Wrapped >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="string_of_uri"| value Svg_sigs.T.string_of_uri >> ~[<<a_api | module Svg_sigs.T >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="string_of_uri"| value Xml_sigs.Wrapped.string_of_uri >> ~[<<a_api | module Xml_sigs.Wrapped >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="string_of_uri"| value Xml.string_of_uri >> ~[<<a_api | module Xml >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="strong"| value Html5_sigs.T.strong >> ~[<<a_api | module Html5_sigs.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="style"| value Html5_sigs.T.style >> ~[<<a_api | module Html5_sigs.T >>~]||
@@ -887,10 +887,10 @@
 |@@class="odocwiki_index"@ @@<<a_api text="to_attrib"| value Svg_sigs.T.to_attrib >> ~[<<a_api | module Svg_sigs.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="to_xmlattribs"| value Html5_sigs.T.to_xmlattribs >> ~[<<a_api | module Html5_sigs.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="to_xmlattribs"| value Svg_sigs.T.to_xmlattribs >> ~[<<a_api | module Svg_sigs.T >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="toelt"| value Xml_sigs.Iterable_typed_xml.toelt >> ~[<<a_api | module Xml_sigs.Iterable_typed_xml >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="toelt"| value Xml_sigs.Typed_xml.toelt >> ~[<<a_api | module Xml_sigs.Typed_xml >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="toelt"| value Html5_sigs.T.toelt >> ~[<<a_api | module Html5_sigs.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="toelt"| value Svg_sigs.T.toelt >> ~[<<a_api | module Svg_sigs.T >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="toelt"| value Xml_sigs.Iterable_typed_xml.toelt >> ~[<<a_api | module Xml_sigs.Iterable_typed_xml >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="toelt"| value Xml_sigs.Typed_xml.toelt >> ~[<<a_api | module Xml_sigs.Typed_xml >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="toeltl"| value Html5_sigs.T.toeltl >> ~[<<a_api | module Html5_sigs.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="toeltl"| value Svg_sigs.T.toeltl >> ~[<<a_api | module Svg_sigs.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="tot"| value Html5_sigs.T.tot >> ~[<<a_api | module Html5_sigs.T >>~]||
@@ -914,8 +914,8 @@
 |@@class="odocwiki_index"@ @@<<a_api text="uri_attrib"| value Xml_sigs.Wrapped.uri_attrib >> ~[<<a_api | module Xml_sigs.Wrapped >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="uri_attrib"| value Xml.uri_attrib >> ~[<<a_api | module Xml >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="uri_of_string"| value Html5_sigs.T.uri_of_string >> ~[<<a_api | module Html5_sigs.T >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="uri_of_string"| value Xml_sigs.Wrapped.uri_of_string >> ~[<<a_api | module Xml_sigs.Wrapped >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="uri_of_string"| value Svg_sigs.T.uri_of_string >> ~[<<a_api | module Svg_sigs.T >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="uri_of_string"| value Xml_sigs.Wrapped.uri_of_string >> ~[<<a_api | module Xml_sigs.Wrapped >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="uri_of_string"| value Xml.uri_of_string >> ~[<<a_api | module Xml >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="uris_attrib"| value Xml_sigs.Wrapped.uris_attrib >> ~[<<a_api | module Xml_sigs.Wrapped >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="uris_attrib"| value Xml.uris_attrib >> ~[<<a_api | module Xml >>~]||

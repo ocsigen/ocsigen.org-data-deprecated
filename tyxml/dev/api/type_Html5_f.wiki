@@ -7,11 +7,10 @@
                  type uri = Xml.uri
                  val string_of_uri : uri -> string
                  val uri_of_string : string -> uri
-                 type 'a attrib
+                 type +'a attrib
                  type 'a wrap
                  type 'a list_wrap
                  type +'a elt
-                 type +'a elts
                  type ('a, 'b) nullary = ?a:'a attrib list -> unit -> 'b elt
                  type ('a, 'b, 'c) unary =
                      ?a:'a attrib list -> 'b elt wrap -> 'c elt
@@ -792,8 +791,8 @@
         sig
           module Xml :
             sig
-              type 'a wrap = 'a
-              type 'a list_wrap = 'a list
+              type 'a wrap = 'a Xml_wrap.NoWrap.t
+              type 'a list_wrap = 'a Xml_wrap.NoWrap.tlist
               type uri = Xml.uri
               val string_of_uri : uri -> string
               val uri_of_string : string -> uri
@@ -828,8 +827,8 @@
               val cdata_style : string -> elt
             end
           module Info : Xml_sigs.Info
-          type 'a wrap = 'a
-          type 'a list_wrap = 'a list
+          type 'a wrap = 'a Xml_wrap.NoWrap.t
+          type 'a list_wrap = 'a Xml_wrap.NoWrap.tlist
           type uri = Xml.uri
           val string_of_uri : uri -> string
           val uri_of_string : string -> uri
@@ -2353,11 +2352,10 @@
                    type uri = Xml.uri
                    val string_of_uri : uri -> string
                    val uri_of_string : string -> uri
-                   type 'a attrib
+                   type +'a attrib
                    type 'a wrap
                    type 'a list_wrap
                    type +'a elt
-                   type +'a elts
                    type ('a, 'b) nullary =
                        ?a:'a attrib list -> unit -> 'b elt
                    type ('a, 'b, 'c) unary =

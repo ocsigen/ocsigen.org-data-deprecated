@@ -14,10 +14,10 @@
 >>
 |
 |@@ @style="tet-align: left;"@@\\I|
-|@@class="odocwiki_index"@ @@<<a_api text="Info"| module Xml_sigs.Iterable_typed_xml.Info >> ~[<<a_api | module Xml_sigs.Iterable_typed_xml >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="Info"| module Xml_sigs.Typed_xml.Info >> ~[<<a_api | module Xml_sigs.Typed_xml >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="Info"| module Html5_sigs.T.Info >> ~[<<a_api | module Html5_sigs.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="Info"| module Svg_sigs.T.Info >> ~[<<a_api | module Svg_sigs.T >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="Info"| module Xml_sigs.Iterable_typed_xml.Info >> ~[<<a_api | module Xml_sigs.Iterable_typed_xml >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="Info"| module Xml_sigs.Typed_xml.Info >> ~[<<a_api | module Xml_sigs.Typed_xml >>~]||
 |@@ @style="tet-align: left;"@@\\M|
 |@@class="odocwiki_index"@ @@<<a_api text="M"| module Html5.M >> ~[<<a_api | module Html5 >>~]|<<div class="odocwiki_info"|~Concrete implementation of ~H~T~M~L~5 typesafe constructors
 >>
@@ -26,15 +26,19 @@
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="Make"| module Html5_f.Make >> ~[<<a_api | module Html5_f >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="Make"| module Html5_sigs.Make >> ~[<<a_api | module Html5_sigs >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="Make"| module Svg_f.Make >> ~[<<a_api | module Svg_f >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="Make"| module Svg_sigs.Make >> ~[<<a_api | module Svg_sigs >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="Make"| module Xml_print.Make >> ~[<<a_api | module Xml_print >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="Make"| module Xml_iter.Make >> ~[<<a_api | module Xml_iter >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="MakeWrapped"| module Html5_f.MakeWrapped >> ~[<<a_api | module Html5_f >>~]|<<div class="odocwiki_info"|~Like the <<a_api | module Html5_f.Make >> functor~, but allows to wrap elements inside a monad described by <<a_api | module type Xml_wrap.T >>~.
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api text="MakeWrapped"| module Html5_sigs.MakeWrapped >> ~[<<a_api | module Html5_sigs >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="MakeWrapped"| module Svg_f.MakeWrapped >> ~[<<a_api | module Svg_f >>~]|<<div class="odocwiki_info"|~Like the <<a_api | module Svg_f.Make >> functor~, but allows to wrap elements inside a monad described by <<a_api | module type Xml_wrap.T >>~.
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api text="MakeWrapped"| module Svg_sigs.MakeWrapped >> ~[<<a_api | module Svg_sigs >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="Make_printer"| module Html5.Make_printer >> ~[<<a_api | module Html5 >>~]|<<div class="odocwiki_info"|~Parametrized stream printer for ~H~T~M~L~5 documents
 >>
 |
@@ -80,10 +84,10 @@
 |@@class="odocwiki_index"@ @@<<a_api text="Unsafe"| module Html5_sigs.T.Unsafe >> ~[<<a_api | module Html5_sigs.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="Unsafe"| module Svg_sigs.T.Unsafe >> ~[<<a_api | module Svg_sigs.T >>~]||
 |@@ @style="tet-align: left;"@@\\X|
-|@@class="odocwiki_index"@ @@<<a_api text="Xml"| module Xml_sigs.Iterable_typed_xml.Xml >> ~[<<a_api | module Xml_sigs.Iterable_typed_xml >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="Xml"| module Xml_sigs.Typed_xml.Xml >> ~[<<a_api | module Xml_sigs.Typed_xml >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="Xml"| module Html5_sigs.T.Xml >> ~[<<a_api | module Html5_sigs.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="Xml"| module Svg_sigs.T.Xml >> ~[<<a_api | module Svg_sigs.T >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="Xml"| module Xml_sigs.Iterable_typed_xml.Xml >> ~[<<a_api | module Xml_sigs.Iterable_typed_xml >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="Xml"| module Xml_sigs.Typed_xml.Xml >> ~[<<a_api | module Xml_sigs.Typed_xml >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="Xml"| module Xml >> |<<div class="odocwiki_info"|~Basic functions for construction and manipulation of ~X~M~L tree~.
 >>
 |
