@@ -1409,6 +1409,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="warning_f"| value Lwt_log_js.warning_f >> ~[<<a_api | module Lwt_log_js >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="webSocket"| value WebSockets.webSocket >> ~[<<a_api | module WebSockets >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="webSocket_withProtocol"| value WebSockets.webSocket_withProtocol >> ~[<<a_api | module WebSockets >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="webSocket_withProtocols"| value WebSockets.webSocket_withProtocols >> ~[<<a_api | module WebSockets >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="webglcontextcreationerror"| value WebGL.Event.webglcontextcreationerror >> ~[<<a_api | module WebGL.Event >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="webglcontextlost"| value WebGL.Event.webglcontextlost >> ~[<<a_api | module WebGL.Event >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="webglcontextrestored"| value WebGL.Event.webglcontextrestored >> ~[<<a_api | module WebGL.Event >>~]||
