@@ -216,6 +216,10 @@
       ~In case the javascript exception is not an instance of javascript <<span class="odocwiki_inlinecode"|~Error>>~,
       it will be serialized and wrapped into a <<span class="odocwiki_inlinecode"|~Failure>> exception~.
 >>
+<<pre class="ocsforge_color odocwiki_code"|<<span id="TYPEjson"|<<span class="ocsforge_color_keyword"|class type>> <<a_api text="json" | class type Js.json >>>> <<span class="ocsforge_color_delimiter"|~=>> <<span class="ocsforge_color_keyword"|object>><<a_api text=".." | class type Js.json >><<span class="ocsforge_color_keyword"|end>>>><<div class="odocwiki_info"|~Specification of ~Javascript ~J~S~O~N object~.
+>>
+<<pre id="VAL_JSON" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|~_~J~S~O~N>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<a_api text="json" | class type Js.json >> <<a_api text="t" | type Js.t >>>>>><<div class="odocwiki_info"|~J~S~O~N object
+>>
 
 
 ==@@id="2_StandardJavascriptfunctions"@@~Standard ~Javascript functions==

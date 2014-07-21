@@ -163,6 +163,9 @@
 |@@class="odocwiki_index"@ @@<<a_api text="js_string"| class type Js.js_string >> ~[<<a_api | module Js >>~]|<<div class="odocwiki_info"|~Specification of ~Javascript string objects~.
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api text="json"| class type Js.json >> ~[<<a_api | module Js >>~]|<<div class="odocwiki_info"|~Specification of ~Javascript ~J~S~O~N object~.
+>>
+|
 |@@ @style="tet-align: left;"@@\\K|
 |@@class="odocwiki_index"@ @@<<a_api text="keyboardEvent"| class type Dom_html.keyboardEvent >> ~[<<a_api | module Dom_html >>~]||
 |@@ @style="tet-align: left;"@@\\L|

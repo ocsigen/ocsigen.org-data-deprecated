@@ -1337,6 +1337,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="parent"| method Dom_html.window#parent >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="parentNode"| method Dom_svg.elementInstance#parentNode >> ~[<<a_api | module Dom_svg >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="parentNode"| method Dom.node#parentNode >> ~[<<a_api | module Dom >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="parse"| method Js.json#parse >> ~[<<a_api | module Js >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="parse"| method Js.date_constr#parse >> ~[<<a_api | module Js >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="pathLength"| method Dom_svg.pathElement#pathLength >> ~[<<a_api | module Dom_svg >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="pathSegList"| method Dom_svg.animatedPathData#pathSegList >> ~[<<a_api | module Dom_svg >>~]||
@@ -1640,6 +1641,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="stop"| method Dom_html.window#stop >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="storageArea"| method Dom_html.storageEvent#storageArea >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="stringifier"| method Dom_html.tokenList#stringifier >> ~[<<a_api | module Dom_html >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="stringify"| method Js.json#stringify >> ~[<<a_api | module Js >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="stroke"| method Dom_html.canvasRenderingContext2D#stroke >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="stroke"| method Dom_html.cssStyleDeclaration#stroke >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="strokeRect"| method Dom_html.canvasRenderingContext2D#strokeRect >> ~[<<a_api | module Dom_html >>~]||

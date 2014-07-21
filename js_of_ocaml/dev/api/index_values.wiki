@@ -4,6 +4,9 @@
 |@@class="odocwiki_index"@ @@<<a_api text="(+)"| value Dom.DocumentPosition.(+) >> ~[<<a_api | module Dom.DocumentPosition >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="_2d_"| value Dom_html._2d_ >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="_DOMMouseScroll"| value Dom_html.Event._DOMMouseScroll >> ~[<<a_api | module Dom_html.Event >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="_JSON"| value Js._JSON >> ~[<<a_api | module Js >>~]|<<div class="odocwiki_info"|~J~S~O~N object
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api text="_end"| value Keycode._end >> ~[<<a_api | module Keycode >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="_false"| value Js._false >> ~[<<a_api | module Js >>~]|<<div class="odocwiki_info"|~Javascript <<span class="odocwiki_inlinecode"|false>> boolean~.
 >>

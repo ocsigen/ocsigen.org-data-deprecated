@@ -307,6 +307,12 @@
     end
   val error_constr : (Js.js_string Js.t -> Js.error Js.t) Js.constr
   exception Error of Js.error Js.t
+  class type json =
+    object
+      method parse : Js.js_string Js.t -> 'a Js.meth
+      method stringify : 'a -> Js.js_string Js.t Js.meth
+    end
+  val _JSON : Js.json Js.t
   val decodeURI : Js.js_string Js.t -> Js.js_string Js.t
   val decodeURIComponent : Js.js_string Js.t -> Js.js_string Js.t
   val encodeURI : Js.js_string Js.t -> Js.js_string Js.t
