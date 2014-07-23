@@ -363,7 +363,7 @@ e=a[3][2]-1|0,g=0;if(!(e<0)){var
 b=g;for(;;){var
 f=a[3][1]-1|0,h=0;if(!(f<0)){var
 c=h;for(;;){var
-k=d(d(a[2],b),c);k.onclick=r(function(a){m.alert(j(bc));return q});var
+k=r(function(a){m.alert(j(bc));return q});d(d(a[2],b),c).onclick=k;var
 l=c+1|0;if(f!==c){var
 c=l;continue}break}}var
 i=b+1|0;if(e!==b){var
@@ -435,5 +435,5 @@ var
 ax=[0];o(e[2],f,ax);var
 aV=f+1|0;if(ap!==f){var
 f=aV;continue}break}}var
-aT=W.style;aT.lineHeight=j(bi);g(W,p);return q}}}var
+aT=j(bi);W.style.lineHeight=aT;g(W,p);return q}}}var
 c=k.createDocumentFragment(),b=ap([0,n(bm)],0,k);b.value=n(bs);b.onclick=r(e);g(c,b);g(l,c);return q});ae(0);return}(function(){return this}()));
