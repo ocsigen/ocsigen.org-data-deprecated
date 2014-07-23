@@ -51,7 +51,6 @@
           type 'a wrap = 'a
           type 'a list_wrap = 'a list
           type 'a elt = 'a elt
-          type +'a elts
           type ('a, 'b) nullary = ?a:'a attrib list -> unit -> 'b elt
           type ('a, 'b, 'c) unary =
               ?a:'a attrib list -> 'b elt wrap -> 'c elt
@@ -813,7 +812,6 @@
       type 'a wrap = 'a
       type 'a list_wrap = 'a list
       type 'a elt = 'a elt
-      type +'a elts
       type ('a, 'b) nullary = ?a:'a attrib list -> unit -> 'b elt
       type ('a, 'b, 'c) unary = ?a:'a attrib list -> 'b elt wrap -> 'c elt
       type ('a, 'b, 'c) star =
@@ -1530,7 +1528,6 @@
           type 'a wrap = 'a
           type 'a list_wrap = 'a list
           type 'a elt = 'a elt
-          type +'a elts
           type ('a, 'b) nullary = ?a:'a attrib list -> unit -> 'b elt
           type ('a, 'b, 'c) unary =
               ?a:'a attrib list -> 'b elt wrap -> 'c elt
@@ -2292,7 +2289,6 @@
       type 'a wrap = 'a
       type 'a list_wrap = 'a list
       type 'a elt = 'a elt
-      type +'a elts
       type ('a, 'b) nullary = ?a:'a attrib list -> unit -> 'b elt
       type ('a, 'b, 'c) unary = ?a:'a attrib list -> 'b elt wrap -> 'c elt
       type ('a, 'b, 'c) star =
@@ -3011,7 +3007,6 @@
           type 'a list_wrap =
               'a ReactiveData.RList.t Eliom_pervasives.client_value
           type 'a elt = 'a elt
-          type +'a elts
           type ('a, 'b) nullary = ?a:'a attrib list -> unit -> 'b elt
           type ('a, 'b, 'c) unary =
               ?a:'a attrib list -> 'b elt wrap -> 'c elt
@@ -3775,7 +3770,6 @@
       type 'a list_wrap =
           'a ReactiveData.RList.t Eliom_pervasives.client_value
       type 'a elt = 'a elt
-      type +'a elts
       type ('a, 'b) nullary = ?a:'a attrib list -> unit -> 'b elt
       type ('a, 'b, 'c) unary = ?a:'a attrib list -> 'b elt wrap -> 'c elt
       type ('a, 'b, 'c) star =
