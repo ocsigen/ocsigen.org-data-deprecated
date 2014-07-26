@@ -1409,6 +1409,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="readyState"| method XmlHttpRequest.xmlHttpRequest#readyState >> ~[<<a_api | module XmlHttpRequest >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="readyState"| method WebSockets.webSocket#readyState >> ~[<<a_api | module WebSockets >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="readyState"| method File.fileReader#readyState >> ~[<<a_api | module File >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="readyState"| method Dom_html.document#readyState >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="readyState"| method Dom_html.mediaElement#readyState >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="readyState_int"| method Dom_html.mediaElement#readyState_int >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="reason"| method WebSockets.closeEvent#reason >> ~[<<a_api | module WebSockets >>~]||

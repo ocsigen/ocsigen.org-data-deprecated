@@ -4649,6 +4649,7 @@
       method querySelector : Js.js_string Js.t -> element Js.t Js.opt Js.meth
       method querySelectorAll :
         Js.js_string Js.t -> element Dom.nodeList Js.t Js.meth
+      method readyState : Js.js_string Js.t Js.readonly_prop
       method referrer : Js.js_string Js.t Js.readonly_prop
       method removeChild : Dom.node Js.t -> Dom.node Js.t Js.meth
       method replaceChild :
@@ -5266,6 +5267,7 @@
       val updateready : Dom_html.event Js.t Dom_html.Event.typ
       val cached : Dom_html.event Js.t Dom_html.Event.typ
       val obsolete : Dom_html.event Js.t Dom_html.Event.typ
+      val domContentLoaded : Dom_html.event Js.t Dom_html.Event.typ
       val make : string -> 'a Dom_html.Event.typ
     end
   type event_listener_id = Dom.event_listener_id

@@ -85,6 +85,7 @@
   method querySelector : Js.js_string Js.t -> element Js.t Js.opt Js.meth
   method querySelectorAll :
     Js.js_string Js.t -> element Dom.nodeList Js.t Js.meth
+  method readyState : Js.js_string Js.t Js.readonly_prop
   method referrer : Js.js_string Js.t Js.readonly_prop
   method removeChild : Dom.node Js.t -> Dom.node Js.t Js.meth
   method replaceChild :
