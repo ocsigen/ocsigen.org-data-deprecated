@@ -608,7 +608,12 @@
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="get_dom"| value Eliom_content.Html5.Custom_data.get_dom >> ~[<<a_api subproject="client" | module Eliom_content.Html5.Custom_data >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="get_element"| value Eliom_content.Svg.Id.get_element >> ~[<<a_api subproject="client" | module Eliom_content.Svg.Id >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|get~_element id>> returns the ~H~T~M~L element in the ~D~O~M with the given <<span class="odocwiki_inlinecode"|id>>~.
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="get_element"| value Eliom_content.Html5.Id.get_element >> ~[<<a_api subproject="client" | module Eliom_content.Html5.Id >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|get~_element id>> returns
+        the ~H~T~M~L element in the ~D~O~M with the given <<span class="odocwiki_inlinecode"|id>> if it exists~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="get_element"| value Eliom_content.Svg.Id.get_element >> ~[<<a_api subproject="client" | module Eliom_content.Svg.Id >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|get~_element id>> returns
+        the ~H~T~M~L element in the ~D~O~M with the given <<span class="odocwiki_inlinecode"|id>> if it exists~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="get_form"| value Eliom_mkforms.MakeForms.get_form >> ~[<<a_api subproject="client" | module Eliom_mkforms.MakeForms >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|post~_form service formgen>> creates a ~G~E~T <<span class="odocwiki_inlinecode"|~<form~>>> to
