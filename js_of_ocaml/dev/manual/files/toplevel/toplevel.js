@@ -863,7 +863,7 @@ b=1;while(a&&a.joo_tramp){a=a.joo_tramp.apply(null,a.joo_args);b++}return a}func
 unix_mktime(a){var
 c=new
 Date(a[6]+agP,a[5],a[4],a[3],a[2],a[1]),b=Math.floor(c.getTime()/pS),d=unix_localtime(b);return[0,b,d]}var
-JSON;if(!JSON)JSON={};(function(){"use strict";function
+JSON=joo_global_object.JSON;if(!JSON)JSON={};(function(){"use strict";function
 b(a){return a<10?ka+a:a}if(typeof
 Date.prototype.toJSON!==jb){Date.prototype.toJSON=function(a){return isFinite(this.valueOf())?this.getUTCFullYear()+b2+b(this.getUTCMonth()+1)+b2+b(this.getUTCDate())+"T"+b(this.getUTCHours())+aU+b(this.getUTCMinutes())+aU+b(this.getUTCSeconds())+"Z":null};String.prototype.toJSON=Number.prototype.toJSON=Boolean.prototype.toJSON=function(a){return this.valueOf()}}var
 c=/[\u0000\u00ad\u0600-\u0604\u070f\u17b4\u17b5\u200c-\u200f\u2028-\u202f\u2060-\u206f\ufeff\ufff0-\uffff]/g,e=/[\\\"\x00-\x1f\x7f-\x9f\u00ad\u0600-\u0604\u070f\u17b4\u17b5\u200c-\u200f\u2028-\u202f\u2060-\u206f\ufeff\ufff0-\uffff]/g,d,l,f={"\b":"\\b","\t":"\\t","\n":"\\n","\f":"\\f","\r":"\\r",'"':'\\"',"\\":"\\\\"},i;function
