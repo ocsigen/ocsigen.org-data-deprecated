@@ -80,9 +80,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="Ocsigen_headers"| module Ocsigen_headers >> |<<div class="odocwiki_info"|~Getting informations from ~H~T~T~P header~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api text="Ocsigen_http_client"| module Ocsigen_http_client >> |<<div class="odocwiki_info"|~Using ~Ocsigen as a ~H~T~T~P client
->>
-|
+|@@class="odocwiki_index"@ @@<<a_api text="Ocsigen_http_client"| module Ocsigen_http_client >> ||
 |@@class="odocwiki_index"@ @@<<a_api text="Ocsigen_http_com"| module Ocsigen_http_com >> |<<div class="odocwiki_info"|~Sending and receiving ~H~T~T~P frames
 >>
 |
@@ -135,6 +133,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="Result"| module Ocsigen_http_frame.Result >> ~[<<a_api | module Ocsigen_http_frame >>~]||
 |@@ @style="tet-align: left;"@@\\S|
 |@@class="odocwiki_index"@ @@<<a_api text="Security"| module Ocsigen_comet.Security >> ~[<<a_api | module Ocsigen_comet >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="Server"| module Ocsigen_extensions.Server >> ~[<<a_api | module Ocsigen_extensions >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="Set"| module Ocsigen_lib_base.String_base.Set >> ~[<<a_api | module Ocsigen_lib_base.String_base >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="Stream_content"| module Ocsigen_senders.Stream_content >> ~[<<a_api | module Ocsigen_senders >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="Streamlist_content"| module Ocsigen_senders.Streamlist_content >> ~[<<a_api | module Ocsigen_senders >>~]|<<div class="odocwiki_info"|streams and content~-type

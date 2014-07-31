@@ -4,8 +4,10 @@
   exception Timeout
   exception Keepalive_timeout
   exception Aborted
+  exception Ocsigen_http_error of (Ocsigen_cookies.cookieset * int)
   type mode = Answer | Query | Nofirstline
   type connection
+  val dummy_receiver : unit -> Ocsigen_http_com.connection
   val create_receiver :
     int ->
     Ocsigen_http_com.mode -> Lwt_ssl.socket -> Ocsigen_http_com.connection
