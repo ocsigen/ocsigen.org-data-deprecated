@@ -1094,6 +1094,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="preventDefault"| value Dom.preventDefault >> ~[<<a_api | module Dom >>~]|<<div class="odocwiki_info"|~Call this to prevent the default handler for the event~.
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api text="print_error"| value Js.print_error >> ~[<<a_api | module Js >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="progress"| value XmlHttpRequest.Event.progress >> ~[<<a_api | module XmlHttpRequest.Event >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="progress"| value File.ReaderEvent.progress >> ~[<<a_api | module File.ReaderEvent >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="progress"| value Dom_html.Event.progress >> ~[<<a_api | module Dom_html.Event >>~]||

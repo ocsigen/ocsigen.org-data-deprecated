@@ -808,6 +808,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="error_3"| method Firebug.console#error_3 >> ~[<<a_api | module Firebug >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="error_4"| method Firebug.console#error_4 >> ~[<<a_api | module Firebug >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="error_5"| method Firebug.console#error_5 >> ~[<<a_api | module Firebug >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="every"| method Js.js_array#every >> ~[<<a_api | module Js >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="exec"| method Js.regExp#exec >> ~[<<a_api | module Js >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="execCommand"| method Dom_html.document#execCommand >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="extactContents"| method Dom_html.range#extactContents >> ~[<<a_api | module Dom_html >>~]||
@@ -828,6 +829,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="fillStyle_pattern"| method Dom_html.canvasRenderingContext2D#fillStyle_pattern >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="fillText"| method Dom_html.canvasRenderingContext2D#fillText >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="fillText_withWidth"| method Dom_html.canvasRenderingContext2D#fillText_withWidth >> ~[<<a_api | module Dom_html >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="filter"| method Js.js_array#filter >> ~[<<a_api | module Js >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="filterResX"| method Dom_svg.filterElement#filterResX >> ~[<<a_api | module Dom_svg >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="filterResY"| method Dom_svg.filterElement#filterResY >> ~[<<a_api | module Dom_svg >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="finish"| method WebGL.renderingContext#finish >> ~[<<a_api | module WebGL >>~]||
@@ -850,6 +852,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="fontStyle"| method Dom_html.cssStyleDeclaration#fontStyle >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="fontVariant"| method Dom_html.cssStyleDeclaration#fontVariant >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="fontWeight"| method Dom_html.cssStyleDeclaration#fontWeight >> ~[<<a_api | module Dom_html >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="forEach"| method Js.js_array#forEach >> ~[<<a_api | module Js >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="forceRedraw"| method Dom_svg.svgElement#forceRedraw >> ~[<<a_api | module Dom_svg >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="form"| method Dom_html.objectElement#form >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="form"| method Dom_html.legendElement#form >> ~[<<a_api | module Dom_html >>~]||
@@ -1153,6 +1156,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="longDesc"| method Dom_html.frameElement#longDesc >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="loop"| method Dom_html.mediaElement#loop >> ~[<<a_api | module Dom_html >>~]||
 |@@ @style="tet-align: left;"@@\\M|
+|@@class="odocwiki_index"@ @@<<a_api text="map"| method Js.js_array#map >> ~[<<a_api | module Js >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="margin"| method Dom_html.cssStyleDeclaration#margin >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="marginBottom"| method Dom_html.cssStyleDeclaration#marginBottom >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="marginHeight"| method Dom_html.iFrameElement#marginHeight >> ~[<<a_api | module Dom_html >>~]||
@@ -1414,6 +1418,10 @@
 |@@class="odocwiki_index"@ @@<<a_api text="readyState_int"| method Dom_html.mediaElement#readyState_int >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="reason"| method WebSockets.closeEvent#reason >> ~[<<a_api | module WebSockets >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="rect"| method Dom_html.canvasRenderingContext2D#rect >> ~[<<a_api | module Dom_html >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="reduce"| method Js.js_array#reduce >> ~[<<a_api | module Js >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="reduceRight"| method Js.js_array#reduceRight >> ~[<<a_api | module Js >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="reduceRight_init"| method Js.js_array#reduceRight_init >> ~[<<a_api | module Js >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="reduce_init"| method Js.js_array#reduce_init >> ~[<<a_api | module Js >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="referrer"| method Dom_svg.document#referrer >> ~[<<a_api | module Dom_svg >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="referrer"| method Dom_html.document#referrer >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="rel"| method Dom_html.anchorElement#rel >> ~[<<a_api | module Dom_html >>~]||
@@ -1596,6 +1604,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="slice_end"| method Js.js_array#slice_end >> ~[<<a_api | module Js >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="slice_end"| method Js.js_string#slice_end >> ~[<<a_api | module Js >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="slice_withContentType"| method File.blob#slice_withContentType >> ~[<<a_api | module File >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="some"| method Js.js_array#some >> ~[<<a_api | module Js >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="sort"| method Js.js_array#sort >> ~[<<a_api | module Js >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="sort_asStrings"| method Js.js_array#sort_asStrings >> ~[<<a_api | module Js >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="source"| method Js.regExp#source >> ~[<<a_api | module Js >>~]||

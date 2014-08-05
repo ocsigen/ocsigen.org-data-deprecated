@@ -132,17 +132,37 @@
   class type ['a] js_array =
     object
       method concat : 'a Js.js_array Js.t -> 'a Js.js_array Js.t Js.meth
+      method every :
+        ('a -> int -> 'a Js.js_array Js.t -> bool Js.t) -> bool Js.t Js.meth
+      method filter :
+        ('a -> int -> 'a Js.js_array Js.t -> bool Js.t) ->
+        'a Js.js_array Js.t Js.meth
+      method forEach :
+        ('a -> int -> 'a Js.js_array Js.t -> unit) -> unit Js.meth
       method join : Js.js_string Js.t -> Js.js_string Js.t Js.meth
       method length : int Js.prop
+      method map :
+        ('a -> int -> 'a Js.js_array Js.t -> 'a) ->
+        'a Js.js_array Js.t Js.meth
       method pop : 'a Js.optdef Js.meth
       method push : 'a -> int Js.meth
       method push_2 : 'a -> 'a -> int Js.meth
       method push_3 : 'a -> 'a -> 'a -> int Js.meth
       method push_4 : 'a -> 'a -> 'a -> 'a -> int Js.meth
+      method reduce :
+        ('a -> 'a -> int -> 'a Js.js_array Js.t -> 'a) -> 'a Js.meth
+      method reduceRight :
+        ('a -> 'a -> int -> 'a Js.js_array Js.t -> 'a) -> 'a Js.meth
+      method reduceRight_init :
+        ('b -> 'a -> int -> 'a Js.js_array Js.t -> 'b) -> 'b -> 'b Js.meth
+      method reduce_init :
+        ('b -> 'a -> int -> 'a Js.js_array Js.t -> 'b) -> 'b -> 'b Js.meth
       method reverse : 'a Js.js_array Js.t Js.meth
       method shift : 'a Js.optdef Js.meth
       method slice : int -> int -> 'a Js.js_array Js.t Js.meth
       method slice_end : int -> 'a Js.js_array Js.t Js.meth
+      method some :
+        ('a -> int -> 'a Js.js_array Js.t -> bool Js.t) -> bool Js.t Js.meth
       method sort :
         ('a -> 'a -> float) Js.callback -> 'a Js.js_array Js.t Js.meth
       method sort_asStrings : 'a Js.js_array Js.t Js.meth
@@ -167,20 +187,48 @@
   class type match_result =
     object
       method concat : js_string t js_array t -> js_string t js_array t meth
+      method every :
+        (js_string t -> int -> js_string t js_array t -> bool t) ->
+        bool t meth
+      method filter :
+        (js_string t -> int -> js_string t js_array t -> bool t) ->
+        js_string t js_array t meth
+      method forEach :
+        (js_string t -> int -> js_string t js_array t -> unit) -> unit meth
       method index : int Js.readonly_prop
       method input : Js.js_string Js.t Js.readonly_prop
       method join : js_string t -> js_string t meth
       method length : int prop
+      method map :
+        (js_string t -> int -> js_string t js_array t -> js_string t) ->
+        js_string t js_array t meth
       method pop : js_string t optdef meth
       method push : js_string t -> int meth
       method push_2 : js_string t -> js_string t -> int meth
       method push_3 : js_string t -> js_string t -> js_string t -> int meth
       method push_4 :
         js_string t -> js_string t -> js_string t -> js_string t -> int meth
+      method reduce :
+        (js_string t ->
+         js_string t -> int -> js_string t js_array t -> js_string t) ->
+        js_string t meth
+      method reduceRight :
+        (js_string t ->
+         js_string t -> int -> js_string t js_array t -> js_string t) ->
+        js_string t meth
+      method reduceRight_init :
+        ('b -> js_string t -> int -> js_string t js_array t -> 'b) ->
+        'b -> 'b meth
+      method reduce_init :
+        ('b -> js_string t -> int -> js_string t js_array t -> 'b) ->
+        'b -> 'b meth
       method reverse : js_string t js_array t meth
       method shift : js_string t optdef meth
       method slice : int -> int -> js_string t js_array t meth
       method slice_end : int -> js_string t js_array t meth
+      method some :
+        (js_string t -> int -> js_string t js_array t -> bool t) ->
+        bool t meth
       method sort :
         (js_string t -> js_string t -> float) callback ->
         js_string t js_array t meth
@@ -306,6 +354,7 @@
       method toString : Js.js_string Js.t Js.meth
     end
   val error_constr : (Js.js_string Js.t -> Js.error Js.t) Js.constr
+  val print_error : Format.formatter -> Js.error Js.t -> unit
   exception Error of Js.error Js.t
   class type json =
     object
