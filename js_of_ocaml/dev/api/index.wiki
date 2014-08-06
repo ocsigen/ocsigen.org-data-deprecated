@@ -45,6 +45,9 @@
 |<<a_api | module Json >>|<<div class="odocwiki_info"|~Unsafe ~I~O~.
 >>
 |
+|<<a_api | module Jsonp >>|<<div class="odocwiki_info"|~This module provides helpers to perform ~J~S~O~N~P calls
+>>
+|
 |<<a_api | module File >>|<<div class="odocwiki_info"|~File ~A~P~I
 >>
 |

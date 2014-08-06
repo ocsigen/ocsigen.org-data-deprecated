@@ -12,6 +12,7 @@
 ==[[Url|Url]]
 ==[[XmlHttpRequest|XmlHttpRequest]]
 ==[[Json|Json]]
+==[[Jsonp|Jsonp]]
 ==[[File|File]]
 ==[[Form|Form]]
 ==[[Sys_js|Sys_js]]
