@@ -26,19 +26,27 @@
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="Make"| module Html5_f.Make >> ~[<<a_api | module Html5_f >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="Make"| module Html5_sigs.Make >> ~[<<a_api | module Html5_sigs >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="Make"| module Html5_sigs.Make >> ~[<<a_api | module Html5_sigs >>~]|<<div class="odocwiki_info"|~Signature functor for <<a_api | module Html5_f.Make >>~.
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api text="Make"| module Svg_f.Make >> ~[<<a_api | module Svg_f >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="Make"| module Svg_sigs.Make >> ~[<<a_api | module Svg_sigs >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="Make"| module Svg_sigs.Make >> ~[<<a_api | module Svg_sigs >>~]|<<div class="odocwiki_info"|~Signature functor for <<a_api | module Svg_f.Make >>~.
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api text="Make"| module Xml_print.Make >> ~[<<a_api | module Xml_print >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="Make"| module Xml_iter.Make >> ~[<<a_api | module Xml_iter >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="MakeWrapped"| module Html5_f.MakeWrapped >> ~[<<a_api | module Html5_f >>~]|<<div class="odocwiki_info"|~Like the <<a_api | module Html5_f.Make >> functor~, but allows to wrap elements inside a monad described by <<a_api | module type Xml_wrap.T >>~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api text="MakeWrapped"| module Html5_sigs.MakeWrapped >> ~[<<a_api | module Html5_sigs >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="MakeWrapped"| module Html5_sigs.MakeWrapped >> ~[<<a_api | module Html5_sigs >>~]|<<div class="odocwiki_info"|~Signature functor for <<a_api | module Html5_f.MakeWrapped >>~.
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api text="MakeWrapped"| module Svg_f.MakeWrapped >> ~[<<a_api | module Svg_f >>~]|<<div class="odocwiki_info"|~Like the <<a_api | module Svg_f.Make >> functor~, but allows to wrap elements inside a monad described by <<a_api | module type Xml_wrap.T >>~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api text="MakeWrapped"| module Svg_sigs.MakeWrapped >> ~[<<a_api | module Svg_sigs >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="MakeWrapped"| module Svg_sigs.MakeWrapped >> ~[<<a_api | module Svg_sigs >>~]|<<div class="odocwiki_info"|~Signature functor for <<a_api | module Svg_f.MakeWrapped >>~.
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api text="Make_printer"| module Html5.Make_printer >> ~[<<a_api | module Html5 >>~]|<<div class="odocwiki_info"|~Parametrized stream printer for ~H~T~M~L~5 documents
 >>
 |
