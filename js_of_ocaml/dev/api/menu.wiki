@@ -31,6 +31,8 @@
 ==[[Tyxml_cast_sigs|Tyxml_cast_sigs]]
 =~Graphics ~- ~A~P~I ~Reference
 ==[[Graphics_js|Graphics_js]]
+=~Toplevel ~- ~A~P~I ~Reference
+==[[JsooTop|JsooTop]]
 =~The ocamlbuild plugin ~- ~A~P~I ~Reference
 ==[[Ocamlbuild_js_of_ocaml|Ocamlbuild_js_of_ocaml]]
 =~Indexes

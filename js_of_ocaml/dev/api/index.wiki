@@ -30,7 +30,7 @@
 |<<a_api | module Lwt_js_events >>|<<div class="odocwiki_info"|~Programming mouse or keyboard events handlers using ~Lwt
 >>
 |
-|<<a_api | module EventSource >>|<<div class="odocwiki_info"|~Add an event listener~.
+|<<a_api | module EventSource >>|<<div class="odocwiki_info"|~Event~Source binding
 >>
 |
 |<<a_api | module Firebug >>|<<div class="odocwiki_info"|~Firebug ~A~P~I ~(debugging console~)~.
@@ -128,6 +128,19 @@
 
 
 |<<a_api | module Graphics_js >>|<<div class="odocwiki_info"|~Javascript binding for ~Graphics lib
+>>
+|
+
+
+
+
+
+=@@id="1_ToplevelAPIReference"@@~Toplevel ~- ~A~P~I ~Reference=
+
+
+
+
+|<<a_api | module JsooTop >>|<<div class="odocwiki_info"|~Helper for ~Js~_of~_ocaml ~Toplevel~.
 >>
 |
 
