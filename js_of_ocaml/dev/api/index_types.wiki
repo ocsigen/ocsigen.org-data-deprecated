@@ -80,6 +80,7 @@
 >>
 |
 |@@ @style="tet-align: left;"@@\\H|
+|@@class="odocwiki_index"@ @@<<a_api text="handler"| type EventSource.handler >> ~[<<a_api | module EventSource >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="hintMode"| type WebGL.hintMode >> ~[<<a_api | module WebGL >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="hintTarget"| type WebGL.hintTarget >> ~[<<a_api | module WebGL >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="http_frame"| type XmlHttpRequest.http_frame >> ~[<<a_api | module XmlHttpRequest >>~]|<<div class="odocwiki_info"|~The type for ~X~H~R results~.
@@ -190,6 +191,7 @@
 |
 |@@class="odocwiki_index"@ @@<<a_api text="sizeiptr"| type WebGL.sizeiptr >> ~[<<a_api | module WebGL >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="spreadMethodType"| type Dom_svg.spreadMethodType >> ~[<<a_api | module Dom_svg >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="state"| type EventSource.state >> ~[<<a_api | module EventSource >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="stencilOp"| type WebGL.stencilOp >> ~[<<a_api | module WebGL >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="string_array"| type Js.string_array >> ~[<<a_api | module Js >>~]|<<div class="odocwiki_info"|~Opaque type for string arrays~.
 >>

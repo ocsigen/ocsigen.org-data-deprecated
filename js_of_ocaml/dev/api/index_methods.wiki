@@ -371,6 +371,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="add"| method Dom_html.tokenList#add >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="addColorStop"| method Dom_html.canvasGradient#addColorStop >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="addElement"| method Dom_html.dataTransfer#addElement >> ~[<<a_api | module Dom_html >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="addEventListener"| method EventSource.eventSource#addEventListener >> ~[<<a_api | module EventSource >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="addRange"| method Dom_html.selection#addRange >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="adoptNode"| method Dom.document#adoptNode >> ~[<<a_api | module Dom >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="alert"| method Dom_html.window#alert >> ~[<<a_api | module Dom_html >>~]||
@@ -577,6 +578,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="cloneNode"| method Dom.node#cloneNode >> ~[<<a_api | module Dom >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="cloneRange"| method Dom_html.range#cloneRange >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="close"| method WebSockets.webSocket#close >> ~[<<a_api | module WebSockets >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="close"| method EventSource.eventSource#close >> ~[<<a_api | module EventSource >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="close"| method Dom_html.window#close >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="close"| method Dom_html.document#close >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="closePath"| method Dom_html.canvasRenderingContext2D#closePath >> ~[<<a_api | module Dom_html >>~]||
@@ -709,6 +711,7 @@
 |@@ @style="tet-align: left;"@@\\D|
 |@@class="odocwiki_index"@ @@<<a_api text="d"| method Dom_svg.matrix#d >> ~[<<a_api | module Dom_svg >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="data"| method WebSockets.messageEvent#data >> ~[<<a_api | module WebSockets >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="data"| method EventSource.messageEvent#data >> ~[<<a_api | module EventSource >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="data"| method Dom_html.imageData#data >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="data"| method Dom_html.objectElement#data >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="data"| method Dom.characterData#data >> ~[<<a_api | module Dom >>~]||
@@ -1100,6 +1103,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="largeArcFlag"| method Dom_svg.pathSegArc#largeArcFlag >> ~[<<a_api | module Dom_svg >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="lastChild"| method Dom_svg.elementInstance#lastChild >> ~[<<a_api | module Dom_svg >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="lastChild"| method Dom.node#lastChild >> ~[<<a_api | module Dom >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="lastEventId"| method EventSource.messageEvent#lastEventId >> ~[<<a_api | module EventSource >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="lastIndex"| method Js.regExp#lastIndex >> ~[<<a_api | module Js >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="lastIndexOf"| method Js.js_string#lastIndexOf >> ~[<<a_api | module Js >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="lastIndexOf_from"| method Js.js_string#lastIndexOf_from >> ~[<<a_api | module Js >>~]||
@@ -1263,6 +1267,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="onerror"| method WebSockets.webSocket#onerror >> ~[<<a_api | module WebSockets >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="onerror"| method File.fileReader#onerror >> ~[<<a_api | module File >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="onerror"| method File.progressEventTarget#onerror >> ~[<<a_api | module File >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="onerror"| method EventSource.eventSource#onerror >> ~[<<a_api | module EventSource >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="onerror"| method Dom_html.applicationCache#onerror >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="onerror"| method Dom_html.imageElement#onerror >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="onfocus"| method Dom_html.window#onfocus >> ~[<<a_api | module Dom_html >>~]||
@@ -1284,6 +1289,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="onloadstart"| method File.fileReader#onloadstart >> ~[<<a_api | module File >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="onloadstart"| method File.progressEventTarget#onloadstart >> ~[<<a_api | module File >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="onmessage"| method WebSockets.webSocket#onmessage >> ~[<<a_api | module WebSockets >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="onmessage"| method EventSource.eventSource#onmessage >> ~[<<a_api | module EventSource >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="onmousedown"| method Dom_html.eventTarget#onmousedown >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="onmousemove"| method Dom_html.eventTarget#onmousemove >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="onmouseout"| method Dom_html.eventTarget#onmouseout >> ~[<<a_api | module Dom_html >>~]||
@@ -1294,6 +1300,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="onoffline"| method Dom_html.window#onoffline >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="ononline"| method Dom_html.window#ononline >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="onopen"| method WebSockets.webSocket#onopen >> ~[<<a_api | module WebSockets >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="onopen"| method EventSource.eventSource#onopen >> ~[<<a_api | module EventSource >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="onorientationchange"| method Dom_html.window#onorientationchange >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="onpopstate"| method Dom_html.window#onpopstate >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="onprogress"| method File.fileReader#onprogress >> ~[<<a_api | module File >>~]||
@@ -1312,6 +1319,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="open_"| method Dom_html.window#open_ >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="open_"| method Dom_html.document#open_ >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="options"| method Dom_html.selectElement#options >> ~[<<a_api | module Dom_html >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="origin"| method EventSource.messageEvent#origin >> ~[<<a_api | module EventSource >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="outerHTML"| method Dom_html.element#outerHTML >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="outerHeight"| method Dom_html.window#outerHeight >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="outerWidth"| method Dom_html.window#outerWidth >> ~[<<a_api | module Dom_html >>~]||
@@ -1413,6 +1421,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="readyState"| method XmlHttpRequest.xmlHttpRequest#readyState >> ~[<<a_api | module XmlHttpRequest >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="readyState"| method WebSockets.webSocket#readyState >> ~[<<a_api | module WebSockets >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="readyState"| method File.fileReader#readyState >> ~[<<a_api | module File >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="readyState"| method EventSource.eventSource#readyState >> ~[<<a_api | module EventSource >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="readyState"| method Dom_html.document#readyState >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="readyState"| method Dom_html.mediaElement#readyState >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="readyState_int"| method Dom_html.mediaElement#readyState_int >> ~[<<a_api | module Dom_html >>~]||
@@ -1817,6 +1826,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="update"| method Dom_html.applicationCache#update >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="upload"| method XmlHttpRequest.xmlHttpRequest#upload >> ~[<<a_api | module XmlHttpRequest >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="url"| method WebSockets.webSocket#url >> ~[<<a_api | module WebSockets >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="url"| method EventSource.eventSource#url >> ~[<<a_api | module EventSource >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="url"| method Dom_html.storageEvent#url >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="useCurrentView"| method Dom_svg.svgElement#useCurrentView >> ~[<<a_api | module Dom_svg >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="useMap"| method Dom_html.objectElement#useMap >> ~[<<a_api | module Dom_html >>~]||
@@ -1904,6 +1914,8 @@
 |@@class="odocwiki_index"@ @@<<a_api text="width"| method Dom_html.imageElement#width >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="width"| method Dom_html.clientRect#width >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="width"| method Dom_html.cssStyleDeclaration#width >> ~[<<a_api | module Dom_html >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="withCredentials"| method EventSource.options#withCredentials >> ~[<<a_api | module EventSource >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="withCredentials"| method EventSource.eventSource#withCredentials >> ~[<<a_api | module EventSource >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="wordSpacing"| method Dom_html.cssStyleDeclaration#wordSpacing >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="write"| method Dom_html.document#write >> ~[<<a_api | module Dom_html >>~]||
 |@@ @style="tet-align: left;"@@\\X|

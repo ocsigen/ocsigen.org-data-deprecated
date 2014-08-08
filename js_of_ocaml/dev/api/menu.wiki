@@ -7,6 +7,7 @@
 ==[[CSS|CSS]]
 ==[[Lwt_js|Lwt_js]]
 ==[[Lwt_js_events|Lwt_js_events]]
+==[[EventSource|EventSource]]
 ==[[Firebug|Firebug]]
 ==[[Regexp|Regexp]]
 ==[[Url|Url]]

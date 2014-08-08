@@ -111,6 +111,7 @@
 |
 |@@class="odocwiki_index"@ @@<<a_api text="event"| class type Dom_html.event >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="event"| class type Dom.event >> ~[<<a_api | module Dom >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="eventSource"| class type EventSource.eventSource >> ~[<<a_api | module EventSource >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="eventTarget"| class type Dom_html.eventTarget >> ~[<<a_api | module Dom_html >>~]|<<div class="odocwiki_info"|~Common properties of event target objects~: <<span class="odocwiki_inlinecode"|onclick>>~,
     <<span class="odocwiki_inlinecode"|onkeypress>>~, ~.~.~.
 >>
@@ -196,6 +197,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="matrix"| class type Dom_svg.matrix >> ~[<<a_api | module Dom_svg >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="mediaElement"| class type Dom_html.mediaElement >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="messageEvent"| class type WebSockets.messageEvent >> ~[<<a_api | module WebSockets >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="messageEvent"| class type EventSource.messageEvent >> ~[<<a_api | module EventSource >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="metaElement"| class type Dom_html.metaElement >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="metadataElement"| class type Dom_svg.metadataElement >> ~[<<a_api | module Dom_svg >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="modElement"| class type Dom_html.modElement >> ~[<<a_api | module Dom_html >>~]||
@@ -223,6 +225,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="objectElement"| class type Dom_html.objectElement >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="optGroupElement"| class type Dom_html.optGroupElement >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="optionElement"| class type Dom_html.optionElement >> ~[<<a_api | module Dom_html >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="options"| class type EventSource.options >> ~[<<a_api | module EventSource >>~]||
 |@@ @style="tet-align: left;"@@\\P|
 |@@class="odocwiki_index"@ @@<<a_api text="paragraphElement"| class type Dom_html.paragraphElement >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="paramElement"| class type Dom_html.paramElement >> ~[<<a_api | module Dom_html >>~]||

@@ -475,6 +475,8 @@
 |@@class="odocwiki_index"@ @@<<a_api text="eventRelatedTarget"| value Dom_html.eventRelatedTarget >> ~[<<a_api | module Dom_html >>~]|<<div class="odocwiki_info"|~Returns this event related target~.
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api text="eventSource"| value EventSource.eventSource >> ~[<<a_api | module EventSource >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="eventSource_options"| value EventSource.eventSource_options >> ~[<<a_api | module EventSource >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="eventTarget"| value Dom_html.eventTarget >> ~[<<a_api | module Dom_html >>~]|<<div class="odocwiki_info"|see <<span class="odocwiki_inlinecode"|~Dom~.event~Target>>
 >>
 |
@@ -616,6 +618,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="h4"| value Dom_html.CoerceTo.h4 >> ~[<<a_api | module Dom_html.CoerceTo >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="h5"| value Dom_html.CoerceTo.h5 >> ~[<<a_api | module Dom_html.CoerceTo >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="h6"| value Dom_html.CoerceTo.h6 >> ~[<<a_api | module Dom_html.CoerceTo >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="handler"| value EventSource.handler >> ~[<<a_api | module EventSource >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="handler"| value Dom_html.handler >> ~[<<a_api | module Dom_html >>~]|<<div class="odocwiki_info"|see <<span class="odocwiki_inlinecode"|~Dom~.handler>>
 >>
 |
@@ -1444,6 +1447,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="window"| value Dom_html.window >> ~[<<a_api | module Dom_html >>~]|<<div class="odocwiki_info"|~The current window
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api text="withCredentials"| value EventSource.withCredentials >> ~[<<a_api | module EventSource >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="wrap_callback"| value Js.wrap_callback >> ~[<<a_api | module Js >>~]|<<div class="odocwiki_info"|~Wrap an ~O~Caml function so that it can be invoked from
       ~Javascript~.
 >>
