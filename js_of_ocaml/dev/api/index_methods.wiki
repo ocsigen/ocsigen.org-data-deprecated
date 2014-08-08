@@ -371,7 +371,6 @@
 |@@class="odocwiki_index"@ @@<<a_api text="add"| method Dom_html.tokenList#add >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="addColorStop"| method Dom_html.canvasGradient#addColorStop >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="addElement"| method Dom_html.dataTransfer#addElement >> ~[<<a_api | module Dom_html >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="addEventListener"| method EventSource.eventSource#addEventListener >> ~[<<a_api | module EventSource >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="addRange"| method Dom_html.selection#addRange >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="adoptNode"| method Dom.document#adoptNode >> ~[<<a_api | module Dom >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="alert"| method Dom_html.window#alert >> ~[<<a_api | module Dom_html >>~]||

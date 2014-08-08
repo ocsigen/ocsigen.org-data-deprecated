@@ -80,7 +80,6 @@
 >>
 |
 |@@ @style="tet-align: left;"@@\\H|
-|@@class="odocwiki_index"@ @@<<a_api text="handler"| type EventSource.handler >> ~[<<a_api | module EventSource >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="hintMode"| type WebGL.hintMode >> ~[<<a_api | module WebGL >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="hintTarget"| type WebGL.hintTarget >> ~[<<a_api | module WebGL >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="http_frame"| type XmlHttpRequest.http_frame >> ~[<<a_api | module XmlHttpRequest >>~]|<<div class="odocwiki_info"|~The type for ~X~H~R results~.

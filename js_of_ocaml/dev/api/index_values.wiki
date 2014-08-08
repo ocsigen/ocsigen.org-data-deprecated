@@ -31,6 +31,9 @@
 |@@class="odocwiki_index"@ @@<<a_api text="addEventListener"| value File.addEventListener >> ~[<<a_api | module File >>~]|<<div class="odocwiki_info"|~Add an event listener~.
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api text="addEventListener"| value EventSource.addEventListener >> ~[<<a_api | module EventSource >>~]|<<div class="odocwiki_info"|~Add an event listener~.
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api text="addEventListener"| value Dom_html.addEventListener >> ~[<<a_api | module Dom_html >>~]|<<div class="odocwiki_info"|~Add an event listener~.
 >>
 |
@@ -618,7 +621,6 @@
 |@@class="odocwiki_index"@ @@<<a_api text="h4"| value Dom_html.CoerceTo.h4 >> ~[<<a_api | module Dom_html.CoerceTo >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="h5"| value Dom_html.CoerceTo.h5 >> ~[<<a_api | module Dom_html.CoerceTo >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="h6"| value Dom_html.CoerceTo.h6 >> ~[<<a_api | module Dom_html.CoerceTo >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="handler"| value EventSource.handler >> ~[<<a_api | module EventSource >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="handler"| value Dom_html.handler >> ~[<<a_api | module Dom_html >>~]|<<div class="odocwiki_info"|see <<span class="odocwiki_inlinecode"|~Dom~.handler>>
 >>
 |

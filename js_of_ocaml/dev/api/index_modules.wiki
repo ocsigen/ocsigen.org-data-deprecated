@@ -50,7 +50,9 @@
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="Event"| module Dom.Event >> ~[<<a_api | module Dom >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="EventSource"| module EventSource >> ||
+|@@class="odocwiki_index"@ @@<<a_api text="EventSource"| module EventSource >> |<<div class="odocwiki_info"|~Add an event listener~.
+>>
+|
 |@@ @style="tet-align: left;"@@\\F|
 |@@class="odocwiki_index"@ @@<<a_api text="File"| module File >> |<<div class="odocwiki_info"|~File ~A~P~I
 >>

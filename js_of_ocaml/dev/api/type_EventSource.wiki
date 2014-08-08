@@ -1,6 +1,5 @@
 <<code language="ocaml" | sig
   type state = CONNECTING | OPEN | CLOSED
-  type ('a, 'b) handler
   class type ['a] messageEvent =
     object
       method _type : Js.js_string Js.t Js.readonly_prop
@@ -13,19 +12,15 @@
     end
   class type eventSource =
     object ('a)
-      method addEventListener :
-        Js.js_string Js.t ->
-        ('a Js.t, 'a EventSource.messageEvent Js.t) EventSource.handler ->
-        bool Js.t -> unit Js.meth
       method close : unit Js.meth
       method onerror :
-        ('a Js.t, 'a EventSource.messageEvent Js.t) EventSource.handler
+        ('a Js.t, 'a EventSource.messageEvent Js.t) Dom.event_listener
         Js.writeonly_prop
       method onmessage :
-        ('a Js.t, 'a EventSource.messageEvent Js.t) EventSource.handler
+        ('a Js.t, 'a EventSource.messageEvent Js.t) Dom.event_listener
         Js.writeonly_prop
       method onopen :
-        ('a Js.t, 'a EventSource.messageEvent Js.t) EventSource.handler
+        ('a Js.t, 'a EventSource.messageEvent Js.t) Dom.event_listener
         Js.writeonly_prop
       method readyState : EventSource.state Js.readonly_prop
       method url : string Js.t Js.readonly_prop
@@ -33,9 +28,6 @@
     end
   class type options =
     object method withCredentials : bool Js.t Js.writeonly_prop end
-  val handler :
-    ('this EventSource.messageEvent Js.t -> unit) ->
-    ('this, 'this EventSource.messageEvent Js.t) EventSource.handler
   val withCredentials : bool -> EventSource.options Js.t
   val eventSource :
     (Js.js_string Js.t -> EventSource.eventSource Js.t) Js.constr
@@ -43,4 +35,8 @@
     (Js.js_string Js.t ->
      EventSource.options Js.t -> EventSource.eventSource Js.t)
     Js.constr
+  val addEventListener :
+    (#EventSource.eventSource as 'a) Js.t ->
+    'b Dom.Event.typ ->
+    ('a Js.t, 'b) Dom.event_listener -> bool Js.t -> Dom.event_listener_id
 end >>

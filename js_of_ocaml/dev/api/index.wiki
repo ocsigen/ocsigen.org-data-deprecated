@@ -30,7 +30,9 @@
 |<<a_api | module Lwt_js_events >>|<<div class="odocwiki_info"|~Programming mouse or keyboard events handlers using ~Lwt
 >>
 |
-|<<a_api | module EventSource >>||
+|<<a_api | module EventSource >>|<<div class="odocwiki_info"|~Add an event listener~.
+>>
+|
 |<<a_api | module Firebug >>|<<div class="odocwiki_info"|~Firebug ~A~P~I ~(debugging console~)~.
 >>
 |
