@@ -48,7 +48,8 @@
           method clientTop : int Js.readonly_prop
           method clientWidth : int Js.readonly_prop
           method cloneNode : bool Js.t -> Dom.node Js.t Js.meth
-          method compareDocumentPosition : Dom.node Js.t -> int Js.meth
+          method compareDocumentPosition :
+            Dom.node Js.t -> Dom.DocumentPosition.t Js.meth
           method dir : Js.js_string Js.t Js.prop
           method firstChild : Dom.node Js.t Js.opt Js.prop
           method getActive : Content.element Content.elt Js.opt Js.meth
@@ -185,7 +186,8 @@
       method clientTop : int Js.readonly_prop
       method clientWidth : int Js.readonly_prop
       method cloneNode : bool Js.t -> Dom.node Js.t Js.meth
-      method compareDocumentPosition : Dom.node Js.t -> int Js.meth
+      method compareDocumentPosition :
+        Dom.node Js.t -> Dom.DocumentPosition.t Js.meth
       method dir : Js.js_string Js.t Js.prop
       method disable : unit Js.meth
       method enable : unit Js.meth

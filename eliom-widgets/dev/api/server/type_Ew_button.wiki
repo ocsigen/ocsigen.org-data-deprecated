@@ -17,6 +17,7 @@
     ?pressed:bool ->
     ?predicate:(unit -> bool Lwt.t) ->
     ?allow_outer_clicks:bool ->
+    ?closeable_by_button:bool ->
     ?before:(Ew_alert.element' Ew_alert.elt' ->
              Ew_alert.element' Ew_alert.elt' -> unit) ->
     ?after:(Ew_alert.element' Ew_alert.elt' ->
@@ -29,6 +30,7 @@
     ?pressed:bool ->
     ?predicate:(unit -> bool Lwt.t) ->
     ?allow_outer_clicks:bool ->
+    ?closeable_by_button:bool ->
     ?before:(Ew_alert.element' Ew_alert.elt' ->
              Ew_alert.element' Ew_alert.elt' -> unit Lwt.t) ->
     ?after:(Ew_alert.element' Ew_alert.elt' ->

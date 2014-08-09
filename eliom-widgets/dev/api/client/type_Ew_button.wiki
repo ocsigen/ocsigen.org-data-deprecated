@@ -73,7 +73,8 @@
           method clientTop : int Js.readonly_prop
           method clientWidth : int Js.readonly_prop
           method cloneNode : bool Js.t -> Dom.node Js.t Js.meth
-          method compareDocumentPosition : Dom.node Js.t -> int Js.meth
+          method compareDocumentPosition :
+            Dom.node Js.t -> Dom.DocumentPosition.t Js.meth
           method dir : Js.js_string Js.t Js.prop
           method firstChild : Dom.node Js.t Js.opt Js.prop
           method getAttribute :
@@ -192,7 +193,8 @@
           method clientTop : int Js.readonly_prop
           method clientWidth : int Js.readonly_prop
           method cloneNode : bool Js.t -> Dom.node Js.t Js.meth
-          method compareDocumentPosition : Dom.node Js.t -> int Js.meth
+          method compareDocumentPosition :
+            Dom.node Js.t -> Dom.DocumentPosition.t Js.meth
           method dir : Js.js_string Js.t Js.prop
           method firstChild : Dom.node Js.t Js.opt Js.prop
           method getAttribute :
@@ -395,7 +397,8 @@
       method clientTop : int Js.readonly_prop
       method clientWidth : int Js.readonly_prop
       method cloneNode : bool Js.t -> Dom.node Js.t Js.meth
-      method compareDocumentPosition : Dom.node Js.t -> int Js.meth
+      method compareDocumentPosition :
+        Dom.node Js.t -> Dom.DocumentPosition.t Js.meth
       method dir : Js.js_string Js.t Js.prop
       method disable : unit Js.meth
       method enable : unit Js.meth
@@ -518,7 +521,8 @@
       method clientTop : int Js.readonly_prop
       method clientWidth : int Js.readonly_prop
       method cloneNode : bool Js.t -> Dom.node Js.t Js.meth
-      method compareDocumentPosition : Dom.node Js.t -> int Js.meth
+      method compareDocumentPosition :
+        Dom.node Js.t -> Dom.DocumentPosition.t Js.meth
       method dir : Js.js_string Js.t Js.prop
       method disable : unit Js.meth
       method enable : unit Js.meth
@@ -641,7 +645,8 @@
       method clientTop : int Js.readonly_prop
       method clientWidth : int Js.readonly_prop
       method cloneNode : bool Js.t -> Dom.node Js.t Js.meth
-      method compareDocumentPosition : Dom.node Js.t -> int Js.meth
+      method compareDocumentPosition :
+        Dom.node Js.t -> Dom.DocumentPosition.t Js.meth
       method dir : Js.js_string Js.t Js.prop
       method disable : unit Js.meth
       method enable : unit Js.meth
@@ -763,6 +768,7 @@
     ?pressed:bool ->
     ?predicate:(unit -> bool Lwt.t) ->
     ?allow_outer_clicks:bool ->
+    ?closeable_by_button:bool ->
     ?before:(D.element D.elt -> Alert.D.element Alert.D.elt -> unit) ->
     ?after:(D.element D.elt -> Alert.D.element Alert.D.elt -> unit) ->
     D.element D.elt ->
@@ -773,6 +779,7 @@
     ?pressed:bool ->
     ?predicate:(unit -> bool Lwt.t) ->
     ?allow_outer_clicks:bool ->
+    ?closeable_by_button:bool ->
     ?before:(D.element D.elt -> Alert.D.element Alert.D.elt -> unit Lwt.t) ->
     ?after:(D.element D.elt -> Alert.D.element Alert.D.elt -> unit Lwt.t) ->
     D.element D.elt ->
