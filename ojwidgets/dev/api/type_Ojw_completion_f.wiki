@@ -128,7 +128,8 @@
                               method cloneNode :
                                 bool Js.t -> Dom.node Js.t Js.meth
                               method compareDocumentPosition :
-                                Dom.node Js.t -> int Js.meth
+                                Dom.node Js.t ->
+                                Dom.DocumentPosition.t Js.meth
                               method dir : Js.js_string Js.t Js.prop
                               method disable : unit Js.meth
                               method enable : unit Js.meth
@@ -221,6 +222,7 @@
                               method onscroll :
                                 ('a Js.t, Dom_html.event Js.t)
                                 Dom_html.event_listener Js.writeonly_prop
+                              method outerHTML : Js.js_string Js.t Js.prop
                               method parentNode :
                                 Dom.node Js.t Js.opt Js.prop
                               method press : unit Js.meth
@@ -255,6 +257,8 @@
                               method t : Js.js_string Js.t Js.readonly_prop
                               method tagName :
                                 Js.js_string Js.t Js.readonly_prop
+                              method textContent :
+                                Js.js_string Js.t Js.opt Js.prop
                               method title : Js.js_string Js.t Js.prop
                               method toggle : unit Js.meth
                               method unpress : unit Js.meth
@@ -278,7 +282,8 @@
                               method cloneNode :
                                 bool Js.t -> Dom.node Js.t Js.meth
                               method compareDocumentPosition :
-                                Dom.node Js.t -> int Js.meth
+                                Dom.node Js.t ->
+                                Dom.DocumentPosition.t Js.meth
                               method dir : Js.js_string Js.t Js.prop
                               method disable : unit Js.meth
                               method enable : unit Js.meth
@@ -371,6 +376,7 @@
                               method onscroll :
                                 ('a Js.t, Dom_html.event Js.t)
                                 Dom_html.event_listener Js.writeonly_prop
+                              method outerHTML : Js.js_string Js.t Js.prop
                               method parentNode :
                                 Dom.node Js.t Js.opt Js.prop
                               method press : unit Js.meth
@@ -405,6 +411,8 @@
                               method t : Js.js_string Js.t Js.readonly_prop
                               method tagName :
                                 Js.js_string Js.t Js.readonly_prop
+                              method textContent :
+                                Js.js_string Js.t Js.opt Js.prop
                               method title : Js.js_string Js.t Js.prop
                               method toggle : unit Js.meth
                               method unpress : unit Js.meth
@@ -428,7 +436,8 @@
                               method cloneNode :
                                 bool Js.t -> Dom.node Js.t Js.meth
                               method compareDocumentPosition :
-                                Dom.node Js.t -> int Js.meth
+                                Dom.node Js.t ->
+                                Dom.DocumentPosition.t Js.meth
                               method dir : Js.js_string Js.t Js.prop
                               method disable : unit Js.meth
                               method enable : unit Js.meth
@@ -521,6 +530,7 @@
                               method onscroll :
                                 ('a Js.t, Dom_html.event Js.t)
                                 Dom_html.event_listener Js.writeonly_prop
+                              method outerHTML : Js.js_string Js.t Js.prop
                               method parentNode :
                                 Dom.node Js.t Js.opt Js.prop
                               method press : unit Js.meth
@@ -555,6 +565,8 @@
                               method t : Js.js_string Js.t Js.readonly_prop
                               method tagName :
                                 Js.js_string Js.t Js.readonly_prop
+                              method textContent :
+                                Js.js_string Js.t Js.opt Js.prop
                               method title : Js.js_string Js.t Js.prop
                               method toggle : unit Js.meth
                               method unpress : unit Js.meth
@@ -621,7 +633,7 @@
                           method cloneNode :
                             bool Js.t -> Dom.node Js.t Js.meth
                           method compareDocumentPosition :
-                            Dom.node Js.t -> int Js.meth
+                            Dom.node Js.t -> Dom.DocumentPosition.t Js.meth
                           method dir : Js.js_string Js.t Js.prop
                           method disable : unit Js.meth
                           method enable : unit Js.meth
@@ -712,6 +724,7 @@
                           method onscroll :
                             ('a Js.t, Dom_html.event Js.t)
                             Dom_html.event_listener Js.writeonly_prop
+                          method outerHTML : Js.js_string Js.t Js.prop
                           method parentNode : Dom.node Js.t Js.opt Js.prop
                           method press : unit Js.meth
                           method pressed : bool Js.t Js.readonly_prop
@@ -743,6 +756,8 @@
                             Dom_html.cssStyleDeclaration Js.t Js.prop
                           method t : Js.js_string Js.t Js.readonly_prop
                           method tagName : Js.js_string Js.t Js.readonly_prop
+                          method textContent :
+                            Js.js_string Js.t Js.opt Js.prop
                           method title : Js.js_string Js.t Js.prop
                           method toggle : unit Js.meth
                           method traversable :
@@ -874,7 +889,7 @@
                           method cloneNode :
                             bool Js.t -> Dom.node Js.t Js.meth
                           method compareDocumentPosition :
-                            Dom.node Js.t -> int Js.meth
+                            Dom.node Js.t -> Dom.DocumentPosition.t Js.meth
                           method dir : Js.js_string Js.t Js.prop
                           method firstChild : Dom.node Js.t Js.opt Js.prop
                           method getAttribute :
@@ -964,6 +979,7 @@
                           method onscroll :
                             ('a Js.t, Dom_html.event Js.t)
                             Dom_html.event_listener Js.writeonly_prop
+                          method outerHTML : Js.js_string Js.t Js.prop
                           method parentNode : Dom.node Js.t Js.opt Js.prop
                           method previousSibling :
                             Dom.node Js.t Js.opt Js.prop
@@ -993,6 +1009,8 @@
                             Dom_html.cssStyleDeclaration Js.t Js.prop
                           method t : Js.js_string Js.t Js.readonly_prop
                           method tagName : Js.js_string Js.t Js.readonly_prop
+                          method textContent :
+                            Js.js_string Js.t Js.opt Js.prop
                           method title : Js.js_string Js.t Js.prop
                           method visible : bool Js.meth
                         end
@@ -1014,7 +1032,7 @@
                           method cloneNode :
                             bool Js.t -> Dom.node Js.t Js.meth
                           method compareDocumentPosition :
-                            Dom.node Js.t -> int Js.meth
+                            Dom.node Js.t -> Dom.DocumentPosition.t Js.meth
                           method dir : Js.js_string Js.t Js.prop
                           method firstChild : Dom.node Js.t Js.opt Js.prop
                           method getAttribute :
@@ -1104,6 +1122,7 @@
                           method onscroll :
                             ('a Js.t, Dom_html.event Js.t)
                             Dom_html.event_listener Js.writeonly_prop
+                          method outerHTML : Js.js_string Js.t Js.prop
                           method parentNode : Dom.node Js.t Js.opt Js.prop
                           method previousSibling :
                             Dom.node Js.t Js.opt Js.prop
@@ -1133,6 +1152,8 @@
                             Dom_html.cssStyleDeclaration Js.t Js.prop
                           method t : Js.js_string Js.t Js.readonly_prop
                           method tagName : Js.js_string Js.t Js.readonly_prop
+                          method textContent :
+                            Js.js_string Js.t Js.opt Js.prop
                           method title : Js.js_string Js.t Js.prop
                           method update : unit Lwt.t Js.meth
                           method visible : bool Js.meth
@@ -1247,7 +1268,7 @@
                       method clientWidth : int Js.readonly_prop
                       method cloneNode : bool Js.t -> Dom.node Js.t Js.meth
                       method compareDocumentPosition :
-                        Dom.node Js.t -> int Js.meth
+                        Dom.node Js.t -> Dom.DocumentPosition.t Js.meth
                       method dir : Js.js_string Js.t Js.prop
                       method disable : unit Js.meth
                       method enable : unit Js.meth
@@ -1336,6 +1357,7 @@
                       method onscroll :
                         ('a Js.t, Dom_html.event Js.t)
                         Dom_html.event_listener Js.writeonly_prop
+                      method outerHTML : Js.js_string Js.t Js.prop
                       method parentNode : Dom.node Js.t Js.opt Js.prop
                       method press : unit Js.meth
                       method pressed : bool Js.t Js.readonly_prop
@@ -1366,6 +1388,7 @@
                         Dom_html.cssStyleDeclaration Js.t Js.prop
                       method t : Js.js_string Js.t Js.readonly_prop
                       method tagName : Js.js_string Js.t Js.readonly_prop
+                      method textContent : Js.js_string Js.t Js.opt Js.prop
                       method title : Js.js_string Js.t Js.prop
                       method toggle : unit Js.meth
                       method unpress : unit Js.meth
@@ -1386,7 +1409,7 @@
                       method clientWidth : int Js.readonly_prop
                       method cloneNode : bool Js.t -> Dom.node Js.t Js.meth
                       method compareDocumentPosition :
-                        Dom.node Js.t -> int Js.meth
+                        Dom.node Js.t -> Dom.DocumentPosition.t Js.meth
                       method dir : Js.js_string Js.t Js.prop
                       method disable : unit Js.meth
                       method enable : unit Js.meth
@@ -1475,6 +1498,7 @@
                       method onscroll :
                         ('a Js.t, Dom_html.event Js.t)
                         Dom_html.event_listener Js.writeonly_prop
+                      method outerHTML : Js.js_string Js.t Js.prop
                       method parentNode : Dom.node Js.t Js.opt Js.prop
                       method press : unit Js.meth
                       method pressed : bool Js.t Js.readonly_prop
@@ -1505,6 +1529,7 @@
                         Dom_html.cssStyleDeclaration Js.t Js.prop
                       method t : Js.js_string Js.t Js.readonly_prop
                       method tagName : Js.js_string Js.t Js.readonly_prop
+                      method textContent : Js.js_string Js.t Js.opt Js.prop
                       method title : Js.js_string Js.t Js.prop
                       method toggle : unit Js.meth
                       method unpress : unit Js.meth
@@ -1525,7 +1550,7 @@
                       method clientWidth : int Js.readonly_prop
                       method cloneNode : bool Js.t -> Dom.node Js.t Js.meth
                       method compareDocumentPosition :
-                        Dom.node Js.t -> int Js.meth
+                        Dom.node Js.t -> Dom.DocumentPosition.t Js.meth
                       method dir : Js.js_string Js.t Js.prop
                       method disable : unit Js.meth
                       method enable : unit Js.meth
@@ -1614,6 +1639,7 @@
                       method onscroll :
                         ('a Js.t, Dom_html.event Js.t)
                         Dom_html.event_listener Js.writeonly_prop
+                      method outerHTML : Js.js_string Js.t Js.prop
                       method parentNode : Dom.node Js.t Js.opt Js.prop
                       method press : unit Js.meth
                       method pressed : bool Js.t Js.readonly_prop
@@ -1644,6 +1670,7 @@
                         Dom_html.cssStyleDeclaration Js.t Js.prop
                       method t : Js.js_string Js.t Js.readonly_prop
                       method tagName : Js.js_string Js.t Js.readonly_prop
+                      method textContent : Js.js_string Js.t Js.opt Js.prop
                       method title : Js.js_string Js.t Js.prop
                       method toggle : unit Js.meth
                       method unpress : unit Js.meth
@@ -1739,7 +1766,7 @@
                       method clientWidth : int Js.readonly_prop
                       method cloneNode : bool Js.t -> Dom.node Js.t Js.meth
                       method compareDocumentPosition :
-                        Dom.node Js.t -> int Js.meth
+                        Dom.node Js.t -> Dom.DocumentPosition.t Js.meth
                       method dir : Js.js_string Js.t Js.prop
                       method firstChild : Dom.node Js.t Js.opt Js.prop
                       method getActive :
@@ -1831,6 +1858,7 @@
                       method onscroll :
                         ('a Js.t, Dom_html.event Js.t)
                         Dom_html.event_listener Js.writeonly_prop
+                      method outerHTML : Js.js_string Js.t Js.prop
                       method parentNode : Dom.node Js.t Js.opt Js.prop
                       method prev : unit Js.meth
                       method previousSibling : Dom.node Js.t Js.opt Js.prop
@@ -1862,6 +1890,7 @@
                         Dom_html.cssStyleDeclaration Js.t Js.prop
                       method t : Js.js_string Js.t Js.readonly_prop
                       method tagName : Js.js_string Js.t Js.readonly_prop
+                      method textContent : Js.js_string Js.t Js.opt Js.prop
                       method title : Js.js_string Js.t Js.prop
                     end
                   module Style :
@@ -1892,7 +1921,7 @@
                   method clientWidth : int Js.readonly_prop
                   method cloneNode : bool Js.t -> Dom.node Js.t Js.meth
                   method compareDocumentPosition :
-                    Dom.node Js.t -> int Js.meth
+                    Dom.node Js.t -> Dom.DocumentPosition.t Js.meth
                   method dir : Js.js_string Js.t Js.prop
                   method disable : unit Js.meth
                   method enable : unit Js.meth
@@ -1981,6 +2010,7 @@
                   method onscroll :
                     ('a Js.t, Dom_html.event Js.t) Dom_html.event_listener
                     Js.writeonly_prop
+                  method outerHTML : Js.js_string Js.t Js.prop
                   method parentNode : Dom.node Js.t Js.opt Js.prop
                   method press : unit Js.meth
                   method pressed : bool Js.t Js.readonly_prop
@@ -2005,6 +2035,7 @@
                   method style : Dom_html.cssStyleDeclaration Js.t Js.prop
                   method t : Js.js_string Js.t Js.readonly_prop
                   method tagName : Js.js_string Js.t Js.readonly_prop
+                  method textContent : Js.js_string Js.t Js.opt Js.prop
                   method title : Js.js_string Js.t Js.prop
                   method toggle : unit Js.meth
                   method traversable :
@@ -2040,7 +2071,8 @@
               method clientTop : int Js.readonly_prop
               method clientWidth : int Js.readonly_prop
               method cloneNode : bool Js.t -> Dom.node Js.t Js.meth
-              method compareDocumentPosition : Dom.node Js.t -> int Js.meth
+              method compareDocumentPosition :
+                Dom.node Js.t -> Dom.DocumentPosition.t Js.meth
               method confirm : unit Lwt.t Js.meth
               method dir : Js.js_string Js.t Js.prop
               method disable : unit Js.meth
@@ -2125,6 +2157,7 @@
               method onscroll :
                 ('a Js.t, Dom_html.event Js.t) Dom_html.event_listener
                 Js.writeonly_prop
+              method outerHTML : Js.js_string Js.t Js.prop
               method parentNode : Dom.node Js.t Js.opt Js.prop
               method press : unit Js.meth
               method pressed : bool Js.t Js.readonly_prop
@@ -2150,6 +2183,7 @@
               method style : Dom_html.cssStyleDeclaration Js.t Js.prop
               method t : Js.js_string Js.t Js.readonly_prop
               method tagName : Js.js_string Js.t Js.readonly_prop
+              method textContent : Js.js_string Js.t Js.opt Js.prop
               method title : Js.js_string Js.t Js.prop
               method toggle : unit Js.meth
               method traversable :

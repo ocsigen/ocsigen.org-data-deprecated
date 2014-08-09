@@ -11,7 +11,8 @@
       method clientTop : int Js.readonly_prop
       method clientWidth : int Js.readonly_prop
       method cloneNode : bool Js.t -> Dom.node Js.t Js.meth
-      method compareDocumentPosition : Dom.node Js.t -> int Js.meth
+      method compareDocumentPosition :
+        Dom.node Js.t -> Dom.DocumentPosition.t Js.meth
       method dir : Js.js_string Js.t Js.prop
       method firstChild : Dom.node Js.t Js.opt Js.prop
       method getAttribute :
@@ -91,6 +92,7 @@
       method onscroll :
         ('a Js.t, Dom_html.event Js.t) Dom_html.event_listener
         Js.writeonly_prop
+      method outerHTML : Js.js_string Js.t Js.prop
       method parentNode : Dom.node Js.t Js.opt Js.prop
       method previousSibling : Dom.node Js.t Js.opt Js.prop
       method querySelector :
@@ -111,6 +113,7 @@
       method style : Dom_html.cssStyleDeclaration Js.t Js.prop
       method t : Js.js_string Js.t Js.readonly_prop
       method tagName : Js.js_string Js.t Js.readonly_prop
+      method textContent : Js.js_string Js.t Js.opt Js.prop
       method title : Js.js_string Js.t Js.prop
     end
   class type widget' =
@@ -126,7 +129,8 @@
       method clientTop : int Js.readonly_prop
       method clientWidth : int Js.readonly_prop
       method cloneNode : bool Js.t -> Dom.node Js.t Js.meth
-      method compareDocumentPosition : Dom.node Js.t -> int Js.meth
+      method compareDocumentPosition :
+        Dom.node Js.t -> Dom.DocumentPosition.t Js.meth
       method dir : Js.js_string Js.t Js.prop
       method firstChild : Dom.node Js.t Js.opt Js.prop
       method getAttribute :
@@ -206,6 +210,7 @@
       method onscroll :
         ('a Js.t, Dom_html.event Js.t) Dom_html.event_listener
         Js.writeonly_prop
+      method outerHTML : Js.js_string Js.t Js.prop
       method parentNode : Dom.node Js.t Js.opt Js.prop
       method previousSibling : Dom.node Js.t Js.opt Js.prop
       method querySelector :
@@ -226,6 +231,7 @@
       method style : Dom_html.cssStyleDeclaration Js.t Js.prop
       method t : Js.js_string Js.t Js.readonly_prop
       method tagName : Js.js_string Js.t Js.readonly_prop
+      method textContent : Js.js_string Js.t Js.opt Js.prop
       method title : Js.js_string Js.t Js.prop
     end
   val ctor :
