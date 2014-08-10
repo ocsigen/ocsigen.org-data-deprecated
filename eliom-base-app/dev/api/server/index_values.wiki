@@ -62,12 +62,19 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="name_of_set"| value Eba_reqm.name_of_set >> ~[<<a_api subproject="server" | module Eba_reqm >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="name_of_state"| value Eba_sigs.State.name_of_state >> ~[<<a_api subproject="server" | module Eba_sigs.State >>~]||
 |@@ @style="tet-align: left;"@@\\O|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="on_close_session"| value Eba_session.on_close_session >> ~[<<a_api subproject="server" | module Eba_session >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="on_close_session"| value Eba_config.Session.on_close_session >> ~[<<a_api subproject="server" | module Eba_config.Session >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="on_connected_request"| value Eba_session.on_connected_request >> ~[<<a_api subproject="server" | module Eba_session >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="on_connected_request"| value Eba_config.Session.on_connected_request >> ~[<<a_api subproject="server" | module Eba_config.Session >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="on_denied_request"| value Eba_session.on_denied_request >> ~[<<a_api subproject="server" | module Eba_session >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="on_denied_request"| value Eba_config.Session.on_denied_request >> ~[<<a_api subproject="server" | module Eba_config.Session >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="on_open_session"| value Eba_session.on_open_session >> ~[<<a_api subproject="server" | module Eba_session >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="on_open_session"| value Eba_config.Session.on_open_session >> ~[<<a_api subproject="server" | module Eba_config.Session >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="on_request"| value Eba_session.on_request >> ~[<<a_api subproject="server" | module Eba_session >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="on_request"| value Eba_config.Session.on_request >> ~[<<a_api subproject="server" | module Eba_config.Session >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="on_start_connected_process"| value Eba_session.on_start_connected_process >> ~[<<a_api subproject="server" | module Eba_session >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="on_start_connected_process"| value Eba_config.Session.on_start_connected_process >> ~[<<a_api subproject="server" | module Eba_config.Session >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="on_start_process"| value Eba_session.on_start_process >> ~[<<a_api subproject="server" | module Eba_session >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="on_start_process"| value Eba_config.Session.on_start_process >> ~[<<a_api subproject="server" | module Eba_config.Session >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="other_head"| value Eba_config.Page.other_head >> ~[<<a_api subproject="server" | module Eba_config.Page >>~]||
 |@@ @style="tet-align: left;"@@\\P|

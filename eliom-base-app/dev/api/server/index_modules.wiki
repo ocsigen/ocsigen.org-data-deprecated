@@ -8,6 +8,7 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Eba_email"| module Eba_email >> ||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Eba_page"| module Eba_page >> ||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Eba_reqm"| module Eba_reqm >> ||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Eba_session"| module Eba_session >> ||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Eba_shared"| module Eba_shared >> ||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Eba_sigs"| module Eba_sigs >> ||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Eba_state"| module Eba_state >> ||
@@ -16,6 +17,7 @@
 |@@ @style="tet-align: left;"@@\\M|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Make"| module Eba_state.Make >> ~[<<a_api subproject="server" | module Eba_state >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Make"| module Eba_sigs.Tools.Cache_f.Make >> ~[<<a_api subproject="server" | module Eba_sigs.Tools.Cache_f >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Make"| module Eba_session.Make >> ~[<<a_api subproject="server" | module Eba_session >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Make"| module Eba_page.Make >> ~[<<a_api subproject="server" | module Eba_page >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Make"| module Eba_email.Make >> ~[<<a_api subproject="server" | module Eba_email >>~]||
 |@@ @style="tet-align: left;"@@\\O|
