@@ -21,7 +21,13 @@
           val to_dom_elt : element elt -> Dom_html.element Js.t
           val of_dom_elt : Dom_html.element Js.t -> element elt
         end
-      module Content : Ojw_dom_sigs.T
+      module Content :
+        sig
+          type 'a elt = 'a Ew_alert.D.elt
+          type element = Ew_alert.D.element
+          val to_dom_elt : element elt -> Dom_html.element Js.t
+          val of_dom_elt : Dom_html.element Js.t -> element elt
+        end
       class type alert_event =
         object
           method _type : Js.js_string Js.t Js.readonly_prop
