@@ -1,6 +1,5 @@
 =Class type <<a_api_type subproject="server" | class type Eba_reqm.reqm >> =
-<<pre class="ocsforge_color odocwiki_code"|<<span id="TYPEreqm"|<<span class="ocsforge_color_keyword"|class type>> <<span class="odocwiki_type"|['a]>><<span class="ocsforge_color_name"|reqm>>>> <<span class="ocsforge_color_delimiter"|~=>> <<span class="ocsforge_color_keyword"|object>><<a_api subproject="server" text=".." | class type Eba_reqm.reqm >><<span class="ocsforge_color_keyword"|end>>>>~The type of a request message~.
-**~Inherits**
+<<pre class="ocsforge_color odocwiki_code"|<<span id="TYPEreqm"|<<span class="ocsforge_color_keyword"|class type>> <<span class="odocwiki_type"|['a]>><<span class="ocsforge_color_name"|reqm>>>> <<span class="ocsforge_color_delimiter"|~=>> <<span class="ocsforge_color_keyword"|object>><<a_api subproject="server" text=".." | class type Eba_reqm.reqm >><<span class="ocsforge_color_keyword"|end>>>>**~Inherits**
 * <<a_api subproject="server" | class Eba_reqm.reqm_base >>
 
 ----

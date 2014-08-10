@@ -1,13 +1,4 @@
 =Module type <<a_api_type subproject="server" | module type Eba_config.Email >> =
-<<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module type>> <<span class="ocsforge_color_uid"|Email>> <<span class="ocsforge_color_delimiter"|~=>> <<span class="ocsforge_color_keyword"|sig>><<a_api subproject="server" text=".." | module type Eba_config.Email >><<span class="ocsforge_color_keyword"|end>>>>~The config module the module ~Email of ~E~B~A~:
-
-
- ~The ~Email module helps you to write easily your email~. ~It uses <<span class="odocwiki_inlinecode"|sendmail>>
- to send mail to someone~.
-
-
+<<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module type>> <<span class="ocsforge_color_uid"|Email>> <<span class="ocsforge_color_delimiter"|~=>> <<span class="ocsforge_color_keyword"|sig>><<a_api subproject="server" text=".." | module type Eba_config.Email >><<span class="ocsforge_color_keyword"|end>>>>
 ----
-<<pre class="ocsforge_color odocwiki_code"|<<span id="TYPEconfig"|<<span class="ocsforge_color_keyword"|class type>> <<a_api subproject="server" text="config" | class type Eba_config.Email.config >>>> <<span class="ocsforge_color_delimiter"|~=>> <<span class="ocsforge_color_keyword"|object>><<a_api subproject="server" text=".." | class type Eba_config.Email.config >><<span class="ocsforge_color_keyword"|end>>>><<div class="odocwiki_info"|~The config class
->>
-<<pre id="VALconfig" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|config>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<a_api subproject="server" text="config" | class type Eba_config.Email.config >>>>>><<div class="odocwiki_info"|~The configuration class of the module~.
->>
+<<pre id="VALfrom_addr" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|from~_addr>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|string * string>>>><<pre id="VALmailer" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|mailer>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|string>>>>

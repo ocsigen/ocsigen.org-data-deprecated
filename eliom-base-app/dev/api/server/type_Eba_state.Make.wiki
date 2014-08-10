@@ -1,5 +1,5 @@
 <<code language="ocaml" | functor (C : Eba_config.State) ->
-  functor (App : Eba_sigs.App) ->
+  functor (App : Eliom_registration.ELIOM_APPL) ->
     sig
       type state = C.t
       type t = state * string * string option

@@ -1,0 +1,10 @@
+<<code language="ocaml" | sig
+  val connected_page :
+    ?allow:Eba_sigs.Session.group list ->
+    ?deny:Eba_sigs.Session.group list ->
+    ?predicate:(int64 option -> 'a -> 'b -> bool Lwt.t) ->
+    ?fallback:(int64 option ->
+               'a -> 'b -> exn -> Eba_sigs.Page.page_content Lwt.t) ->
+    (int64 option -> 'a -> 'b -> Eba_sigs.Page.page_content Lwt.t) ->
+    'a -> 'b -> Eba_sigs.Page.page Lwt.t
+end >>

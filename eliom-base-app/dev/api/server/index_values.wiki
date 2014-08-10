@@ -2,175 +2,93 @@
 
 |@@ @style="tet-align: left;"@@\\A|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="all"| value Eba_sigs.State.all >> ~[<<a_api subproject="server" | module Eba_sigs.State >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="app_name"| value Eba_sigs.App.app_name >> ~[<<a_api subproject="server" | module Eba_sigs.App >>~]|<<div class="odocwiki_info"|~The name of you application~.
->>
-|
 |@@ @style="tet-align: left;"@@\\C|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="clear"| value Eba_sigs.Reqm.clear >> ~[<<a_api subproject="server" | module Eba_sigs.Reqm >>~]|<<div class="odocwiki_info"|~Clear the value of a request message~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="clear"| value Eba_reqm.clear >> ~[<<a_api subproject="server" | module Eba_reqm >>~]|<<div class="odocwiki_info"|~Clear the value of a request message~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="config"| value Eba_config.Email.config >> ~[<<a_api subproject="server" | module Eba_config.Email >>~]|<<div class="odocwiki_info"|~The configuration class of the module~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="config"| value Eba_config.Session.config >> ~[<<a_api subproject="server" | module Eba_config.Session >>~]|<<div class="odocwiki_info"|~The configuration class of the module~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="config"| value Eba_config.Page.config >> ~[<<a_api subproject="server" | module Eba_config.Page >>~]|<<div class="odocwiki_info"|~The configuration class of the module~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="connect"| value Eba_sigs.Session.connect >> ~[<<a_api subproject="server" | module Eba_sigs.Session >>~]|<<div class="odocwiki_info"|~Explicitly connect the user~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="connected_fun"| value Eba_sigs.Session.Opt.connected_fun >> ~[<<a_api subproject="server" | module Eba_sigs.Session.Opt >>~]|<<div class="odocwiki_info"|~Same as above but instead of raising an ~Not~_connected~, the first
- parameter is wrapped into an option~, ~None tells you that the user
- is currently not connected~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="connected_fun"| value Eba_sigs.Session.connected_fun >> ~[<<a_api subproject="server" | module Eba_sigs.Session >>~]|<<div class="odocwiki_info"|~Wrap a function which takes get and post paramters and the uid
- of the user as first parameter and call it only if the user is
- connected~, otherwise it raise ~Not~_connected~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="connected_page"| value Eba_sigs.Page.connected_page >> ~[<<a_api subproject="server" | module Eba_sigs.Page >>~]|<<div class="odocwiki_info"|~Generate a page only visible for connected user~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="connected_rpc"| value Eba_sigs.Session.Opt.connected_rpc >> ~[<<a_api subproject="server" | module Eba_sigs.Session.Opt >>~]|<<div class="odocwiki_info"|~Same as <<span class="odocwiki_inlinecode"|connected~_wrapper>> but the first parameter is wrapped into
- an option and ~None represents a non~-connected user~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="connected_rpc"| value Eba_sigs.Session.connected_rpc >> ~[<<a_api subproject="server" | module Eba_sigs.Session >>~]|<<div class="odocwiki_info"|~Same as <<span class="odocwiki_inlinecode"|connect~_wrapper~_function>> but only takes two parameters~,
- the uid and post parameters~.
->>
-|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="clear"| value Eba_sigs.Reqm.clear >> ~[<<a_api subproject="server" | module Eba_sigs.Reqm >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="clear"| value Eba_reqm.clear >> ~[<<a_api subproject="server" | module Eba_reqm >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="connect"| value Eba_sigs.Session.connect >> ~[<<a_api subproject="server" | module Eba_sigs.Session >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="connected_fun"| value Eba_sigs.Session.Opt.connected_fun >> ~[<<a_api subproject="server" | module Eba_sigs.Session.Opt >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="connected_fun"| value Eba_sigs.Session.connected_fun >> ~[<<a_api subproject="server" | module Eba_sigs.Session >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="connected_page"| value Eba_sigs.Page.Opt.connected_page >> ~[<<a_api subproject="server" | module Eba_sigs.Page.Opt >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="connected_page"| value Eba_sigs.Page.connected_page >> ~[<<a_api subproject="server" | module Eba_sigs.Page >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="connected_rpc"| value Eba_sigs.Session.Opt.connected_rpc >> ~[<<a_api subproject="server" | module Eba_sigs.Session.Opt >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="connected_rpc"| value Eba_sigs.Session.connected_rpc >> ~[<<a_api subproject="server" | module Eba_sigs.Session >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="cons"| value Eba_sigs.Reqm.cons >> ~[<<a_api subproject="server" | module Eba_sigs.Reqm >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="cons"| value Eba_reqm.cons >> ~[<<a_api subproject="server" | module Eba_reqm >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="create"| value Eba_sigs.Reqm.create >> ~[<<a_api subproject="server" | module Eba_sigs.Reqm >>~]|<<div class="odocwiki_info"|~Create a new request message~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="create"| value Eba_reqm.create >> ~[<<a_api subproject="server" | module Eba_reqm >>~]|<<div class="odocwiki_info"|~Create a new request message~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="create_set"| value Eba_sigs.Reqm.create_set >> ~[<<a_api subproject="server" | module Eba_sigs.Reqm >>~]|<<div class="odocwiki_info"|~Create a new set~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="create_set"| value Eba_reqm.create_set >> ~[<<a_api subproject="server" | module Eba_reqm >>~]|<<div class="odocwiki_info"|~Create a new set~.
->>
-|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="create"| value Eba_sigs.Reqm.create >> ~[<<a_api subproject="server" | module Eba_sigs.Reqm >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="create"| value Eba_reqm.create >> ~[<<a_api subproject="server" | module Eba_reqm >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="create_set"| value Eba_sigs.Reqm.create_set >> ~[<<a_api subproject="server" | module Eba_sigs.Reqm >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="create_set"| value Eba_reqm.create_set >> ~[<<a_api subproject="server" | module Eba_reqm >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="css"| value Eba_config.Page.css >> ~[<<a_api subproject="server" | module Eba_config.Page >>~]||
 |@@ @style="tet-align: left;"@@\\D|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="default"| value Eba_config.State.default >> ~[<<a_api subproject="server" | module Eba_config.State >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="default_connected_error_page"| value Eba_config.Page.default_connected_error_page >> ~[<<a_api subproject="server" | module Eba_config.Page >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="default_connected_predicate"| value Eba_config.Page.default_connected_predicate >> ~[<<a_api subproject="server" | module Eba_config.Page >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="default_error_page"| value Eba_config.Page.default_error_page >> ~[<<a_api subproject="server" | module Eba_config.Page >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="default_predicate"| value Eba_config.Page.default_predicate >> ~[<<a_api subproject="server" | module Eba_config.Page >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="desc_of_state"| value Eba_sigs.State.desc_of_state >> ~[<<a_api subproject="server" | module Eba_sigs.State >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="descopt_of_state"| value Eba_sigs.State.descopt_of_state >> ~[<<a_api subproject="server" | module Eba_sigs.State >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="disconnect"| value Eba_sigs.Session.disconnect >> ~[<<a_api subproject="server" | module Eba_sigs.Session >>~]|<<div class="odocwiki_info"|~Explicitly disconnect the connected user ~(it takes no parameter because
- ~E~B~A cache connection information for the current user~)~.
->>
-|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="disconnect"| value Eba_sigs.Session.disconnect >> ~[<<a_api subproject="server" | module Eba_sigs.Session >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="doc_start"| value Eba_sigs.doc_start >> ~[<<a_api subproject="server" | module Eba_sigs >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="doc_start"| value Eba_reqm.doc_start >> ~[<<a_api subproject="server" | module Eba_reqm >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="doc_start"| value Eba_config.doc_start >> ~[<<a_api subproject="server" | module Eba_config >>~]||
 |@@ @style="tet-align: left;"@@\\E|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="email_pattern"| value Eba_shared.Email.email_pattern >> ~[<<a_api subproject="server" | module Eba_shared.Email >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="email_pattern"| value Eba_sigs.Email.email_pattern >> ~[<<a_api subproject="server" | module Eba_sigs.Email >>~]|<<div class="odocwiki_info"|~The pattern used to match an email
->>
-|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="email_pattern"| value Eba_sigs.Email.email_pattern >> ~[<<a_api subproject="server" | module Eba_sigs.Email >>~]||
 |@@ @style="tet-align: left;"@@\\F|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="from_addr"| value Eba_config.Email.from_addr >> ~[<<a_api subproject="server" | module Eba_config.Email >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="fun_of_state"| value Eba_sigs.State.fun_of_state >> ~[<<a_api subproject="server" | module Eba_sigs.State >>~]||
 |@@ @style="tet-align: left;"@@\\G|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="get"| value Eba_sigs.Reqm.get >> ~[<<a_api subproject="server" | module Eba_sigs.Reqm >>~]|<<div class="odocwiki_info"|~Get the value of a request message~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="get"| value Eba_sigs.Tools.Cache_sig.get >> ~[<<a_api subproject="server" | module Eba_sigs.Tools.Cache_sig >>~]|<<div class="odocwiki_info"|~Get the value corresponding to the given key~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="get"| value Eba_reqm.get >> ~[<<a_api subproject="server" | module Eba_reqm >>~]|<<div class="odocwiki_info"|~Get the value of a request message~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="get_current_userid"| value Eba_sigs.Session.Opt.get_current_userid >> ~[<<a_api subproject="server" | module Eba_sigs.Session.Opt >>~]|<<div class="odocwiki_info"|~When connected~, you can retrieve the current user id using this function~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="get_current_userid"| value Eba_sigs.Session.get_current_userid >> ~[<<a_api subproject="server" | module Eba_sigs.Session >>~]|<<div class="odocwiki_info"|~When connected~, you can retrieve the current user id using this function~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="get_opt"| value Eba_sigs.Reqm.get_opt >> ~[<<a_api subproject="server" | module Eba_sigs.Reqm >>~]|<<div class="odocwiki_info"|~Get the value of a request message using <<span class="odocwiki_inlinecode"|~'a option>> type~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="get_opt"| value Eba_reqm.get_opt >> ~[<<a_api subproject="server" | module Eba_reqm >>~]|<<div class="odocwiki_info"|~Get the value of a request message using <<span class="odocwiki_inlinecode"|~'a option>> type~.
->>
-|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="get"| value Eba_sigs.Reqm.get >> ~[<<a_api subproject="server" | module Eba_sigs.Reqm >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="get"| value Eba_sigs.Tools.Cache_sig.get >> ~[<<a_api subproject="server" | module Eba_sigs.Tools.Cache_sig >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="get"| value Eba_reqm.get >> ~[<<a_api subproject="server" | module Eba_reqm >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="get_current_userid"| value Eba_sigs.Session.Opt.get_current_userid >> ~[<<a_api subproject="server" | module Eba_sigs.Session.Opt >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="get_current_userid"| value Eba_sigs.Session.get_current_userid >> ~[<<a_api subproject="server" | module Eba_sigs.Session >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="get_opt"| value Eba_sigs.Reqm.get_opt >> ~[<<a_api subproject="server" | module Eba_sigs.Reqm >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="get_opt"| value Eba_reqm.get_opt >> ~[<<a_api subproject="server" | module Eba_reqm >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="get_website_state"| value Eba_sigs.State.get_website_state >> ~[<<a_api subproject="server" | module Eba_sigs.State >>~]||
 |@@ @style="tet-align: left;"@@\\H|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="has"| value Eba_sigs.Reqm.has >> ~[<<a_api subproject="server" | module Eba_sigs.Reqm >>~]|<<div class="odocwiki_info"|~Returns <<span class="odocwiki_inlinecode"|true>> if a value has been set for the request message~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="has"| value Eba_sigs.Tools.Cache_sig.has >> ~[<<a_api subproject="server" | module Eba_sigs.Tools.Cache_sig >>~]|<<div class="odocwiki_info"|~Returns <<span class="odocwiki_inlinecode"|true>> if the key has been stored into the cache~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="has"| value Eba_reqm.has >> ~[<<a_api subproject="server" | module Eba_reqm >>~]|<<div class="odocwiki_info"|~Returns <<span class="odocwiki_inlinecode"|true>> if a value has been set for the request message~.
->>
-|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="has"| value Eba_sigs.Reqm.has >> ~[<<a_api subproject="server" | module Eba_sigs.Reqm >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="has"| value Eba_sigs.Tools.Cache_sig.has >> ~[<<a_api subproject="server" | module Eba_sigs.Tools.Cache_sig >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="has"| value Eba_reqm.has >> ~[<<a_api subproject="server" | module Eba_reqm >>~]||
 |@@ @style="tet-align: left;"@@\\I|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="in_group"| value Eba_sigs.Groups.in_group >> ~[<<a_api subproject="server" | module Eba_sigs.Groups >>~]|<<div class="odocwiki_info"|~Determin if a userid belongs or not~, to a group~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="is_valid"| value Eba_sigs.Email.is_valid >> ~[<<a_api subproject="server" | module Eba_sigs.Email >>~]|<<div class="odocwiki_info"|~Check if the given email is valid or not
->>
-|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="in_group"| value Eba_sigs.Groups.in_group >> ~[<<a_api subproject="server" | module Eba_sigs.Groups >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="is_valid"| value Eba_sigs.Email.is_valid >> ~[<<a_api subproject="server" | module Eba_sigs.Email >>~]||
+|@@ @style="tet-align: left;"@@\\J|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="js"| value Eba_config.Page.js >> ~[<<a_api subproject="server" | module Eba_config.Page >>~]||
+|@@ @style="tet-align: left;"@@\\M|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="mailer"| value Eba_config.Email.mailer >> ~[<<a_api subproject="server" | module Eba_config.Email >>~]||
 |@@ @style="tet-align: left;"@@\\N|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="name_of_set"| value Eba_sigs.Reqm.name_of_set >> ~[<<a_api subproject="server" | module Eba_sigs.Reqm >>~]|<<div class="odocwiki_info"|~Get the name of a set~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="name_of_set"| value Eba_reqm.name_of_set >> ~[<<a_api subproject="server" | module Eba_reqm >>~]|<<div class="odocwiki_info"|~Get the name of a set~.
->>
-|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="name_of_set"| value Eba_sigs.Reqm.name_of_set >> ~[<<a_api subproject="server" | module Eba_sigs.Reqm >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="name_of_set"| value Eba_reqm.name_of_set >> ~[<<a_api subproject="server" | module Eba_reqm >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="name_of_state"| value Eba_sigs.State.name_of_state >> ~[<<a_api subproject="server" | module Eba_sigs.State >>~]||
+|@@ @style="tet-align: left;"@@\\O|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="on_close_session"| value Eba_config.Session.on_close_session >> ~[<<a_api subproject="server" | module Eba_config.Session >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="on_connected_request"| value Eba_config.Session.on_connected_request >> ~[<<a_api subproject="server" | module Eba_config.Session >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="on_denied_request"| value Eba_config.Session.on_denied_request >> ~[<<a_api subproject="server" | module Eba_config.Session >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="on_open_session"| value Eba_config.Session.on_open_session >> ~[<<a_api subproject="server" | module Eba_config.Session >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="on_request"| value Eba_config.Session.on_request >> ~[<<a_api subproject="server" | module Eba_config.Session >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="on_start_connected_process"| value Eba_config.Session.on_start_connected_process >> ~[<<a_api subproject="server" | module Eba_config.Session >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="on_start_process"| value Eba_config.Session.on_start_process >> ~[<<a_api subproject="server" | module Eba_config.Session >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="other_head"| value Eba_config.Page.other_head >> ~[<<a_api subproject="server" | module Eba_config.Page >>~]||
 |@@ @style="tet-align: left;"@@\\P|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="page"| value Eba_sigs.Page.page >> ~[<<a_api subproject="server" | module Eba_sigs.Page >>~]|<<div class="odocwiki_info"|~Generate a page visible for non~-connected and connected user~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="push"| value Eba_sigs.Reqm.push >> ~[<<a_api subproject="server" | module Eba_sigs.Reqm >>~]|<<div class="odocwiki_info"|~Helper to push an element into a list~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="push"| value Eba_reqm.push >> ~[<<a_api subproject="server" | module Eba_reqm >>~]|<<div class="odocwiki_info"|~Helper to push an element into a list~.
->>
-|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="page"| value Eba_sigs.Page.page >> ~[<<a_api subproject="server" | module Eba_sigs.Page >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="push"| value Eba_sigs.Reqm.push >> ~[<<a_api subproject="server" | module Eba_sigs.Reqm >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="push"| value Eba_reqm.push >> ~[<<a_api subproject="server" | module Eba_reqm >>~]||
 |@@ @style="tet-align: left;"@@\\R|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="reset"| value Eba_sigs.Tools.Cache_sig.reset >> ~[<<a_api subproject="server" | module Eba_sigs.Tools.Cache_sig >>~]|<<div class="odocwiki_info"|~Explicitly reset a <<span class="odocwiki_inlinecode"|value>> for the given key~.
->>
-|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="reset"| value Eba_sigs.Tools.Cache_sig.reset >> ~[<<a_api subproject="server" | module Eba_sigs.Tools.Cache_sig >>~]||
 |@@ @style="tet-align: left;"@@\\S|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="send"| value Eba_sigs.Email.send >> ~[<<a_api subproject="server" | module Eba_sigs.Email >>~]|<<div class="odocwiki_info"|~Send an email to <<span class="odocwiki_inlinecode"|to~_addrs>>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="set"| value Eba_sigs.Reqm.set >> ~[<<a_api subproject="server" | module Eba_sigs.Reqm >>~]|<<div class="odocwiki_info"|~Set a value for the given request message~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="set"| value Eba_sigs.Tools.Cache_sig.set >> ~[<<a_api subproject="server" | module Eba_sigs.Tools.Cache_sig >>~]|<<div class="odocwiki_info"|~Set the corresponding <<span class="odocwiki_inlinecode"|value>> for a key~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="set"| value Eba_reqm.set >> ~[<<a_api subproject="server" | module Eba_reqm >>~]|<<div class="odocwiki_info"|~Set a value for the given request message~.
->>
-|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="send"| value Eba_sigs.Email.send >> ~[<<a_api subproject="server" | module Eba_sigs.Email >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="set"| value Eba_sigs.Reqm.set >> ~[<<a_api subproject="server" | module Eba_sigs.Reqm >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="set"| value Eba_sigs.Tools.Cache_sig.set >> ~[<<a_api subproject="server" | module Eba_sigs.Tools.Cache_sig >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="set"| value Eba_reqm.set >> ~[<<a_api subproject="server" | module Eba_reqm >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="set_website_state"| value Eba_sigs.State.set_website_state >> ~[<<a_api subproject="server" | module Eba_sigs.State >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="states"| value Eba_config.State.states >> ~[<<a_api subproject="server" | module Eba_config.State >>~]||
 |@@ @style="tet-align: left;"@@\\T|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="to_html"| value Eba_sigs.Reqm.to_html >> ~[<<a_api subproject="server" | module Eba_sigs.Reqm >>~]|<<div class="odocwiki_info"|~Returns the html representation of the request message~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="to_html"| value Eba_reqm.to_html >> ~[<<a_api subproject="server" | module Eba_reqm >>~]|<<div class="odocwiki_info"|~Returns the html representation of the request message~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="to_list"| value Eba_sigs.Reqm.to_list >> ~[<<a_api subproject="server" | module Eba_sigs.Reqm >>~]|<<div class="odocwiki_info"|~Get all the request messages **with a value** which belongs to
- the given <<span class="odocwiki_inlinecode"|set>>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="to_list"| value Eba_reqm.to_list >> ~[<<a_api subproject="server" | module Eba_reqm >>~]|<<div class="odocwiki_info"|~Get all the request messages **with a value** which belongs to
- the given <<span class="odocwiki_inlinecode"|set>>~.
->>
-|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="title"| value Eba_config.Page.title >> ~[<<a_api subproject="server" | module Eba_config.Page >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="to_html"| value Eba_sigs.Reqm.to_html >> ~[<<a_api subproject="server" | module Eba_sigs.Reqm >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="to_html"| value Eba_reqm.to_html >> ~[<<a_api subproject="server" | module Eba_reqm >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="to_list"| value Eba_sigs.Reqm.to_list >> ~[<<a_api subproject="server" | module Eba_sigs.Reqm >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="to_list"| value Eba_reqm.to_list >> ~[<<a_api subproject="server" | module Eba_reqm >>~]||
 |@@ @style="tet-align: left;"@@\\W|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="wrap_function"| value Eba_sigs.Tools.Cache_sig.wrap_function >> ~[<<a_api subproject="server" | module Eba_sigs.Tools.Cache_sig >>~]|<<div class="odocwiki_info"|~Not so useful~.~.
->>
-|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="wrap_function"| value Eba_sigs.Tools.Cache_sig.wrap_function >> ~[<<a_api subproject="server" | module Eba_sigs.Tools.Cache_sig >>~]||
 \\

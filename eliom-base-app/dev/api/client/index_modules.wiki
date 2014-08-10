@@ -5,7 +5,6 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Eba_email"| module Eba_email >> ||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Eba_page"| module Eba_page >> ||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Eba_reqm"| module Eba_reqm >> ||
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Eba_session"| module Eba_session >> ||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Eba_shared"| module Eba_shared >> ||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Eba_sigs"| module Eba_sigs >> ||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Eba_state"| module Eba_state >> ||

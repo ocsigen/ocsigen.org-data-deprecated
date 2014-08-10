@@ -5,9 +5,7 @@
 
 
 
-|<<a_api subproject="server" | module Eba_sigs >>|<<div class="odocwiki_info"|~This module defines all functor application module signatures~.
->>
-|
+|<<a_api subproject="server" | module Eba_sigs >>||
 
 
 
