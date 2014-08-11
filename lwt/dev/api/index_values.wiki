@@ -449,8 +449,8 @@
 |
 |@@class="odocwiki_index"@ @@<<a_api text="error"| value Lwt_log_core.error >> ~[<<a_api | module Lwt_log_core >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="error_f"| value Lwt_log_core.error_f >> ~[<<a_api | module Lwt_log_core >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="establish_server"| value Lwt_io.establish_server >> ~[<<a_api | module Lwt_io >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|establish~_server ~?buffer~_size ~?backlog sockaddr f>> creates a
-      server which will listen for incoming connections~.
+|@@class="odocwiki_index"@ @@<<a_api text="establish_server"| value Lwt_io.establish_server >> ~[<<a_api | module Lwt_io >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|establish~_server ~?fd ~?buffer~_size ~?backlog sockaddr f>> creates a
+    server which will listen for incoming connections~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="exec"| value Lwt_process.exec >> ~[<<a_api | module Lwt_process >>~]|<<div class="odocwiki_info"|~Executes the given command and returns its exit status~.
@@ -1363,8 +1363,8 @@
 |@@class="odocwiki_index"@ @@<<a_api text="on_writable"| value Lwt_engine.on_writable >> ~[<<a_api | module Lwt_engine >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|on~_readable fd f>> calls <<span class="odocwiki_inlinecode"|f>> each time <<span class="odocwiki_inlinecode"|fd>> becomes writable~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api text="open_connection"| value Lwt_io.open_connection >> ~[<<a_api | module Lwt_io >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|open~_connection ~?buffer~_size addr>> opens a connection to
-      the given address and returns two channels for using it~.
+|@@class="odocwiki_index"@ @@<<a_api text="open_connection"| value Lwt_io.open_connection >> ~[<<a_api | module Lwt_io >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|open~_connection ~?fd ~?buffer~_size addr>> opens a connection to the
+    given address and returns two channels for using it~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="open_connection"| value Lwt_chan.open_connection >> ~[<<a_api | module Lwt_chan >>~]||
@@ -2213,7 +2213,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="with_async_switch"| value Lwt_unix.with_async_switch >> ~[<<a_api | module Lwt_unix >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|with~_async~_none f>> is a shorthand for~:
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api text="with_connection"| value Lwt_io.with_connection >> ~[<<a_api | module Lwt_io >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|with~_connection ~?buffer~_size addr f>> opens a connection to
+|@@class="odocwiki_index"@ @@<<a_api text="with_connection"| value Lwt_io.with_connection >> ~[<<a_api | module Lwt_io >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|with~_connection ~?fd ~?buffer~_size addr f>> opens a connection to
       the given address and passes the channels to <<span class="odocwiki_inlinecode"|f>>
 >>
 |
