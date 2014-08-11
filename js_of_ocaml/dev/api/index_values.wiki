@@ -597,7 +597,6 @@
     current document~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api text="get_camlp4_syntaxes"| value JsooTop.get_camlp4_syntaxes >> ~[<<a_api | module JsooTop >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="get_context"| value Graphics_js.get_context >> ~[<<a_api | module Graphics_js >>~]|<<div class="odocwiki_info"|~Get the current context
 >>
 |
@@ -1175,7 +1174,6 @@
 |@@class="odocwiki_index"@ @@<<a_api text="register_autoload"| value Sys_js.register_autoload >> ~[<<a_api | module Sys_js >>~]|<<div class="odocwiki_info"|~Register a callback to the <<span class="odocwiki_inlinecode"|path>> to dynamicly load missing files~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api text="register_camlp4_syntax"| value JsooTop.register_camlp4_syntax >> ~[<<a_api | module JsooTop >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="register_file"| value Sys_js.register_file >> ~[<<a_api | module Sys_js >>~]|<<div class="odocwiki_info"|~Register a file to a ~Pseudo ~Filesystem~.
 >>
 |
