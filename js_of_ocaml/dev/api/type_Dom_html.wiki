@@ -90,6 +90,7 @@
       method strokeWidth : Js.js_string Js.t Js.prop
       method tableLayout : Js.js_string Js.t Js.prop
       method textAlign : Js.js_string Js.t Js.prop
+      method textAnchor : Js.js_string Js.t Js.prop
       method textDecoration : Js.js_string Js.t Js.prop
       method textIndent : Js.js_string Js.t Js.prop
       method textTransform : Js.js_string Js.t Js.prop
