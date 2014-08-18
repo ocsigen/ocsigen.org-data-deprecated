@@ -56,7 +56,9 @@
     was doing a new request to the url <<span class="odocwiki_inlinecode"|path>>~.
 >>
 |
-|<<a_api | module Ocsigen_http_client >>||
+|<<a_api | module Ocsigen_http_client >>|<<div class="odocwiki_info"|~Using ~Ocsigen as a ~H~T~T~P client
+>>
+|
 |<<a_api | module Ocsigen_http_com >>|<<div class="odocwiki_info"|~Sending and receiving ~H~T~T~P frames
 >>
 |
