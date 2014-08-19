@@ -1,7 +1,7 @@
 =Module <<a_api_type | module Ojw_button_sigs >> =
 <<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module>> <<span class="ocsforge_color_uid"|<<span class="ocsforge_color_uid"|Ojw_button_sigs>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="ocsforge_color_keyword"|sig>><<a_api text=".." | module Ojw_button_sigs >><<span class="ocsforge_color_keyword"|end>>>>~Buttons are html elements with a state of <<span class="odocwiki_inlinecode"|pressed>> or <<span class="odocwiki_inlinecode"|unpressed>>
-    ~* and actions are generally coupled with a state ~(such as **show**~/**hide**
-    ~* an element~)~.
+      and actions are generally coupled with a state ~(such as **show**~/**hide**
+      an element~)~.
 
 ----
 <<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module type>> <<a_api text="T" | module type Ojw_button_sigs.T >> <<span class="ocsforge_color_delimiter"|~=>> <<span class="ocsforge_color_keyword"|sig>><<a_api text=".." | module type Ojw_button_sigs.T >><<span class="ocsforge_color_keyword"|end>>>>

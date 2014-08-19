@@ -1,6 +1,0 @@
-<<code language="ocaml" | sig
-  type 'a elt = 'a D.elt
-  type element = D.element
-  val to_dom_elt : element elt -> Dom_html.element Js.t
-  val of_dom_elt : Dom_html.element Js.t -> element elt
-end >>

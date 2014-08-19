@@ -15,17 +15,21 @@
 
 
 
-|<<a_api | module Ojw_scrollbar >>||
-|<<a_api | module Ojw_jsstorage >>|<<div class="odocwiki_info"|~Allow to store informations on the client~.
+|<<a_api | module Ojw_base_widget >>||
+|<<a_api | module Ojw_alert >>||
+|<<a_api | module Ojw_popup >>|<<div class="odocwiki_info"|~Popups are a special kind of <<span class="odocwiki_inlinecode"|alerts>> that are automatically showed in
+    the middle of the screen~.
 >>
 |
-|<<a_api | module Ojw_alert >>||
 |<<a_api | module Ojw_button >>||
 |<<a_api | module Ojw_dropdown >>||
 |<<a_api | module Ojw_traversable >>||
 |<<a_api | module Ojw_completion >>||
-|<<a_api | module Ojw_base_widget >>||
+|<<a_api | module Ojw_scrollbar >>||
 |<<a_api | module Ojw_active_set >>||
+|<<a_api | module Ojw_slider >>|<<div class="odocwiki_info"|~Binding of the j~Query~_ui slider for ocaml~.
+>>
+|
 
 
 
@@ -53,9 +57,6 @@
 >>
 |
 |<<a_api | module Ojw_position >>|<<div class="odocwiki_info"|~Positions helper for javascript elements
-  ~*
-  ~* ~This module provides some helpers to get coordinates or move element
-  ~* next to each others~.
 >>
 |
 
@@ -71,9 +72,35 @@
 |<<a_api | module Ojw_jcrop >>|<<div class="odocwiki_info"|~Binding to ~Jcrop~, a ~J~Query croping tool~.
 >>
 |
-|<<a_api | module Ojw_slider >>|<<div class="odocwiki_info"|~Binding of the j~Query~_ui slider for ocaml~.
+
+
+
+
+
+==@@id="2_Experimental"@@~Experimental ==
+
+
+
+
+|<<a_api | module Ojw_jsstorage >>|<<div class="odocwiki_info"|~Allow to store informations on the client~.
 >>
 |
+|<<a_api | module Ojw_slide_event >>|<<div class="odocwiki_info"|~First is moves event
+    ~Second is end event
+    ~Third is move~_func call at each move event
+    ~Fourth is end event call at end event
+>>
+|
+
+
+
+
+
+==@@id="2_ExperimentalJavascriptbindings"@@~Experimental ~Javascript bindings ==
+
+
+
+
 |<<a_api | module Ojw_swipejs >>|<<div class="odocwiki_info"|~Swiping library~.
 >>
 |
@@ -90,22 +117,6 @@
 
 
 
-==@@id="2_Experimental"@@~Experimental ==
-
-
-
-
-|<<a_api | module Ojw_slide_event >>|<<div class="odocwiki_info"|~First is moves event
-    ~Second is end event
-    ~Third is move~_func call at each move event
-    ~Fourth is end event call at end event
->>
-|
-
-
-
-
-
 ==@@id="2_Internals"@@~Internals ==
 
 
@@ -113,6 +124,7 @@
 
 |<<a_api | module Ojw_dom_sigs >>||
 |<<a_api | module Ojw_alert_f >>||
+|<<a_api | module Ojw_popup_f >>||
 |<<a_api | module Ojw_button_f >>||
 |<<a_api | module Ojw_dropdown_f >>||
 |<<a_api | module Ojw_traversable_f >>||
@@ -121,13 +133,16 @@
 |<<a_api | module Ojw_alert_sigs >>|<<div class="odocwiki_info"|~Specific events for alerts
 >>
 |
+|<<a_api | module Ojw_popup_sigs >>|<<div class="odocwiki_info"|~Helpers
+>>
+|
 |<<a_api | module Ojw_button_sigs >>|<<div class="odocwiki_info"|~Buttons are html elements with a state of <<span class="odocwiki_inlinecode"|pressed>> or <<span class="odocwiki_inlinecode"|unpressed>>
-    ~* and actions are generally coupled with a state ~(such as **show**~/**hide**
-    ~* an element~)~.
+      and actions are generally coupled with a state ~(such as **show**~/**hide**
+      an element~)~.
 >>
 |
 |<<a_api | module Ojw_dropdown_sigs >>|<<div class="odocwiki_info"|~A dropdown menu is a menu which can be displayed under an element
-    ~* which will act like a <<span class="odocwiki_inlinecode"|button>>~.
+      which will act like a <<span class="odocwiki_inlinecode"|button>>~.
 >>
 |
 |<<a_api | module Ojw_traversable_sigs >>|<<div class="odocwiki_info"|~A traversable element can iterate through their children~.

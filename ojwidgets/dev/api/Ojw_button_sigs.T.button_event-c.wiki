@@ -1,6 +1,6 @@
 =Class type <<a_api_type | class type Ojw_button_sigs.T.button_event >> =
 <<pre class="ocsforge_color odocwiki_code"|<<span id="TYPEbutton_event"|<<span class="ocsforge_color_keyword"|class type>> <<span class="ocsforge_color_name"|button_event>>>> <<span class="ocsforge_color_delimiter"|~=>> <<span class="ocsforge_color_keyword"|object>><<a_api text=".." | class type Ojw_button_sigs.T.button_event >><<span class="ocsforge_color_keyword"|end>>>>~The type for event triggered by <<span class="odocwiki_inlinecode"|buttons>>~. ~You can add an event listener
-    ~* on many events for <<span class="odocwiki_inlinecode"|buttons>>~, see below~.
+      on many events for <<span class="odocwiki_inlinecode"|buttons>>~, see below~.
 **~Inherits**
 * <<span class="odocwiki_inlinecode"|~Dom~_html~.event>>
 

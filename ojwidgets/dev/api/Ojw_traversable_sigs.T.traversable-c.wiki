@@ -1,36 +1,38 @@
 =Class type <<a_api_type | class type Ojw_traversable_sigs.T.traversable >> =
 <<pre class="ocsforge_color odocwiki_code"|<<span id="TYPEtraversable"|<<span class="ocsforge_color_keyword"|class type>> <<span class="ocsforge_color_name"|traversable>>>> <<span class="ocsforge_color_delimiter"|~=>> <<span class="ocsforge_color_keyword"|object>><<a_api text=".." | class type Ojw_traversable_sigs.T.traversable >><<span class="ocsforge_color_keyword"|end>>>>~A <<span class="odocwiki_inlinecode"|traversable>> element can use keys to navigate through their
-    ~* children ~(only one level of children~)~.
-    ~*
-    ~* ~The element **~M~U~S~T ~B~E** a **ul** with **li** children~.
-    ~*
-    ~* **li** elements are used as container for child and used as item
-    ~* for the <<span class="odocwiki_inlinecode"|traversable>> element~. ~They must respect some requirements~.
-    ~* ~They **~M~U~S~T ~H~A~V~E** the css class **"ojw~_traversable~_elt"**~.
-    ~*
-    ~* ~Traversable is used to compose other widgets ~(as <<span class="odocwiki_inlinecode"|~Ojw~_dropdown>>~)~.
-    ~*
+      children ~(only one level of children~)~.
+
+
+      ~The element **~M~U~S~T ~B~E** a **ul** with **li** children~.
+
+
+      **li** elements are used as container for child and used as item
+      for the <<span class="odocwiki_inlinecode"|traversable>> element~. ~They must respect some requirements~.
+      ~They **~M~U~S~T ~H~A~V~E** the css class **"ojw~_traversable~_elt"**~.
+
+
+      ~Traversable is used to compose other widgets ~(as <<span class="odocwiki_inlinecode"|~Ojw~_dropdown>>~)~.
 **~Inherits**
 * <<a_api | class Ojw_base_widget.widget >>
 
 ----
 <<pre class="ocsforge_color odocwiki_code"|<<span id="METHODgetContainer"|<<span class="ocsforge_color_keyword"|method>> <<span class="odocwiki_name"|getContainer>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<span class="ocsforge_color_uid"|D>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|element>> <<span class="ocsforge_color_uid"|D>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|elt>> <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|meth>>>>>><<div class="odocwiki_info"|~Get the original version of the container used as <<span class="odocwiki_inlinecode"|traversable>>
-      ~* element ~(without conversion~)~.
+        element ~(without conversion~)~.
 >>
 <<pre class="ocsforge_color odocwiki_code"|<<span id="METHODnext"|<<span class="ocsforge_color_keyword"|method>> <<span class="odocwiki_name"|next>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|unit <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|meth>>>>>><<div class="odocwiki_info"|~Explicitly set active the next element of the <<span class="odocwiki_inlinecode"|traversable>>
-      ~* element~.
+        element~.
 >>
 <<pre class="ocsforge_color odocwiki_code"|<<span id="METHODprev"|<<span class="ocsforge_color_keyword"|method>> <<span class="odocwiki_name"|prev>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|unit <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|meth>>>>>><<div class="odocwiki_info"|~Explicitly set active the previous element of the <<span class="odocwiki_inlinecode"|traversable>>
-      ~* element~.
+        element~.
 >>
 <<pre class="ocsforge_color odocwiki_code"|<<span id="METHODresetActive"|<<span class="ocsforge_color_keyword"|method>> <<span class="odocwiki_name"|resetActive>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|unit <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|meth>>>>>><<div class="odocwiki_info"|~Make inactive the current active element~.
 >>
 <<pre class="ocsforge_color odocwiki_code"|<<span id="METHODsetActive"|<<span class="ocsforge_color_keyword"|method>> <<span class="odocwiki_name"|setActive>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<span class="ocsforge_color_uid"|Content>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|element>> <<span class="ocsforge_color_uid"|Content>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|elt>> <<span class="ocsforge_color_delimiter"| -> >> unit <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|meth>>>>>><<div class="odocwiki_info"|~Explicitly set to active state a <<span class="odocwiki_inlinecode"|traversable>>~'s child~.
 >>
 <<pre class="ocsforge_color odocwiki_code"|<<span id="METHODgetActive"|<<span class="ocsforge_color_keyword"|method>> <<span class="odocwiki_name"|getActive>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<span class="ocsforge_color_uid"|Content>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|element>> <<span class="ocsforge_color_uid"|Content>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|elt>> <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|opt>> <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|meth>>>>>><<div class="odocwiki_info"|~Get the current active element~. ~If there is no active element~,
-      ~* returns <<span class="odocwiki_inlinecode"|~Js~.null>>~.
+        returns <<span class="odocwiki_inlinecode"|~Js~.null>>~.
 >>
 <<pre class="ocsforge_color odocwiki_code"|<<span id="METHODisTraversable"|<<span class="ocsforge_color_keyword"|method>> <<span class="odocwiki_name"|isTraversable>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|bool <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|meth>>>>>><<div class="odocwiki_info"|~Returns true if the <<span class="odocwiki_inlinecode"|traversable>> element can listen keys and
-      ~* interpret them~. ~Uses the <<span class="odocwiki_inlinecode"|is~_traversable>> function on the construction
-      ~* of the widget ~(see below~)~.
+        interpret them~. ~Uses the <<span class="odocwiki_inlinecode"|is~_traversable>> function on the construction
+        of the widget ~(see below~)~.
 >>

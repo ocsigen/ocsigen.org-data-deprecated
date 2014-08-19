@@ -4,16 +4,17 @@
 
 ----
 <<pre class="ocsforge_color odocwiki_code"|<<span id="METHODvisible"|<<span class="ocsforge_color_keyword"|method>> <<span class="odocwiki_name"|visible>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|bool <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|meth>>>>>><<div class="odocwiki_info"|~This method returns <<span class="odocwiki_inlinecode"|true>> if the content of the <<span class="odocwiki_inlinecode"|alert>> is currently
-      ~* shown~. <<span class="odocwiki_inlinecode"|false>> if not~.
+        shown~. <<span class="odocwiki_inlinecode"|false>> if not~.
 
 ~Call the function associated to the <<span class="odocwiki_inlinecode"|alert>> to generate his content and
-     ~* make visible the <<span class="odocwiki_inlinecode"|alert>>~.
-     ~*
-     ~* ~If the method is called during the <<span class="odocwiki_inlinecode"|alert>> is already <<span class="odocwiki_inlinecode"|visible>>~, this
-     ~* method has no effect~.
+       make visible the <<span class="odocwiki_inlinecode"|alert>>~.
+
+
+       ~If the method is called during the <<span class="odocwiki_inlinecode"|alert>> is already <<span class="odocwiki_inlinecode"|visible>>~, this
+       method has no effect~.
 >>
 <<pre class="ocsforge_color odocwiki_code"|<<span id="METHODshow"|<<span class="ocsforge_color_keyword"|method>> <<span class="odocwiki_name"|show>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|unit <<span class="ocsforge_color_uid"|Lwt>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>> <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|meth>>>>>><<div class="odocwiki_info"|~Hide the content of the <<span class="odocwiki_inlinecode"|alert>>~. ~If already hidden~, the method has no
-      ~* effect~.
+        effect~.
 >>
 <<pre class="ocsforge_color odocwiki_code"|<<span id="METHODhide"|<<span class="ocsforge_color_keyword"|method>> <<span class="odocwiki_name"|hide>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|unit <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|meth>>>>>><<div class="odocwiki_info"|~Refresh the content of the <<span class="odocwiki_inlinecode"|alert>> if it is visible~.
 >>

@@ -5,9 +5,6 @@
 
 ----
 <<pre class="ocsforge_color odocwiki_code"|<<span id="METHODupdate"|<<span class="ocsforge_color_keyword"|method>> <<span class="odocwiki_name"|update>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|unit <<span class="ocsforge_color_uid"|Lwt>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>> <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|meth>>>>>><<div class="odocwiki_info"|~Wrapper around <<span class="odocwiki_inlinecode"|update>> method from <<span class="odocwiki_inlinecode"|dyn~_alert>> from the
-      ~* module <<span class="odocwiki_inlinecode"|~Ojw~_alert>>~.
-      ~*
-      ~*
-**See also** <<span class="odocwiki_inlinecode"|~Ojw~_alert>> ~.
-      ~*\\
+        module <<span class="odocwiki_inlinecode"|~Ojw~_alert>>~.
+**See also** <<span class="odocwiki_inlinecode"|~Ojw~_alert>> ~.\\
 >>

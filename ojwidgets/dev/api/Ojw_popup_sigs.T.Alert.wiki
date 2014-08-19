@@ -10,8 +10,8 @@
 <<pre id="VALhides" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|hides>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|\\  <<span class="ocsforge_color_label"| ?cancel_handler: >>bool <<span class="ocsforge_color_delimiter"| -> >>\\  <<span class="ocsforge_color_label"| ?use_capture: >>bool <<span class="ocsforge_color_delimiter"| -> >>\\  <<span class="ocsforge_color_uid"|D>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|element>> <<span class="ocsforge_color_uid"|D>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|elt>> <<span class="ocsforge_color_delimiter"| -> >>\\  <<span class="ocsforge_color_delimiter"| ( >><<a_api text="alert_event" | class type Ojw_alert_sigs.T.alert_event >> <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>> <<span class="ocsforge_color_delimiter"| -> >> unit <<span class="ocsforge_color_uid"|Lwt>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>> <<span class="ocsforge_color_delimiter"| -> >> unit <<span class="ocsforge_color_uid"|Lwt>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>><<span class="ocsforge_color_delimiter"| ) >> <<span class="ocsforge_color_delimiter"| -> >>\\  unit <<span class="ocsforge_color_uid"|Lwt>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>>>>>><<div class="odocwiki_info"|~This events is triggered when the method <<span class="odocwiki_inlinecode"|hide>> is called~.
 >>
 <<pre id="VALouter_clicks" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|outer~_clicks>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|\\  <<span class="ocsforge_color_label"| ?cancel_handler: >>bool <<span class="ocsforge_color_delimiter"| -> >>\\  <<span class="ocsforge_color_label"| ?use_capture: >>bool <<span class="ocsforge_color_delimiter"| -> >>\\  <<span class="ocsforge_color_uid"|D>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|element>> <<span class="ocsforge_color_uid"|D>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|elt>> <<span class="ocsforge_color_delimiter"| -> >>\\  <<span class="ocsforge_color_delimiter"| ( >><<a_api text="alert_event" | class type Ojw_alert_sigs.T.alert_event >> <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>> <<span class="ocsforge_color_delimiter"| -> >> unit <<span class="ocsforge_color_uid"|Lwt>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>> <<span class="ocsforge_color_delimiter"| -> >> unit <<span class="ocsforge_color_uid"|Lwt>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>><<span class="ocsforge_color_delimiter"| ) >> <<span class="ocsforge_color_delimiter"| -> >>\\  unit <<span class="ocsforge_color_uid"|Lwt>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>>>>>><<div class="odocwiki_info"|~This events is triggered when a click occurs outside of an alert box
-    ~* or outside of an element immune to out clicks~. ~Only <<span class="odocwiki_inlinecode"|alerts>> which are
-    ~* <<span class="odocwiki_inlinecode"|visible>> received the event~.
+      or outside of an element immune to out clicks~. ~Only <<span class="odocwiki_inlinecode"|alerts>> which are
+      <<span class="odocwiki_inlinecode"|visible>> received the event~.
 >>
 
 
@@ -26,14 +26,16 @@
 <<pre id="EXCEPTIONClose_button_not_in_alert" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|exception>> <<span class="odocwiki_name"|Close_button_not_in_alert>>>><<div class="odocwiki_info"|~Exception thrown if a <<span class="odocwiki_inlinecode"|closeable>> button do not find his parent~.
 >>
 <<pre id="VALcloseable_by_click" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|closeable~_by~_click>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<span class="ocsforge_color_uid"|D>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|element>> <<span class="ocsforge_color_uid"|D>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|elt>> <<span class="ocsforge_color_delimiter"| -> >> <<span class="ocsforge_color_uid"|D>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|element>> <<span class="ocsforge_color_uid"|D>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|elt>>>>>><<div class="odocwiki_info"|~Provides the behaviour of automatically <<span class="odocwiki_inlinecode"|hide>> an <<span class="odocwiki_inlinecode"|alert>> if the
-    ~* element is clicked~.
-    ~*
-    ~* ~The parent is found using bubble iteration ~(iterate through parents
-    ~* node~)~. ~Nodes with a class **"ojw~_alert"** or **"ojw~_dyn~_alert"** are
-    ~* considered as terminal node during this process~.
-    ~*
-    ~* ~If no parent are found during the process~, the exception
-    ~* <<span class="odocwiki_inlinecode"|~Close~_button~_not~_in~_alert>> is raised~.
+      element is clicked~.
+
+
+      ~The parent is found using bubble iteration ~(iterate through parents
+      node~)~. ~Nodes with a class **"ojw~_alert"** or **"ojw~_dyn~_alert"** are
+      considered as terminal node during this process~.
+
+
+      ~If no parent are found during the process~, the exception
+      <<span class="odocwiki_inlinecode"|~Close~_button~_not~_in~_alert>> is raised~.
 >>
 <<pre id="VALprevent_outer_clicks" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|prevent~_outer~_clicks>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<span class="ocsforge_color_uid"|D>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|element>> <<span class="ocsforge_color_uid"|D>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|elt>> <<span class="ocsforge_color_delimiter"| -> >> unit>>>><<div class="odocwiki_info"|~Prevent outer clicks on the given element ~(make it immune to them~)~.
 >>
@@ -42,35 +44,40 @@
 ==@@id="2_Constructionfunctions"@@~Construction functions==
 
 <<pre id="VALalert" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|alert>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|\\  <<span class="ocsforge_color_label"| ?show: >>bool <<span class="ocsforge_color_delimiter"| -> >>\\  <<span class="ocsforge_color_label"| ?allow_outer_clicks: >>bool <<span class="ocsforge_color_delimiter"| -> >>\\  <<span class="ocsforge_color_label"| ?on_outer_click: >><<span class="ocsforge_color_delimiter"| ( >><<a_api text="alert" | class type Ojw_alert_sigs.T.alert >> <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>> <<span class="ocsforge_color_delimiter"| -> >> unit<<span class="ocsforge_color_delimiter"| ) >> <<span class="ocsforge_color_delimiter"| -> >>\\  <<span class="ocsforge_color_label"| ?before: >><<span class="ocsforge_color_delimiter"| ( >><<span class="ocsforge_color_uid"|D>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|element>> <<span class="ocsforge_color_uid"|D>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|elt>> <<span class="ocsforge_color_delimiter"| -> >> unit<<span class="ocsforge_color_delimiter"| ) >> <<span class="ocsforge_color_delimiter"| -> >>\\  <<span class="ocsforge_color_label"| ?after: >><<span class="ocsforge_color_delimiter"| ( >><<span class="ocsforge_color_uid"|D>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|element>> <<span class="ocsforge_color_uid"|D>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|elt>> <<span class="ocsforge_color_delimiter"| -> >> unit<<span class="ocsforge_color_delimiter"| ) >> <<span class="ocsforge_color_delimiter"| -> >> <<span class="ocsforge_color_uid"|D>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|element>> <<span class="ocsforge_color_uid"|D>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|elt>> <<span class="ocsforge_color_delimiter"| -> >> <<span class="ocsforge_color_uid"|D>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|element>> <<span class="ocsforge_color_uid"|D>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|elt>>>>>><<div class="odocwiki_info"|~Provides behaviours of the <<span class="odocwiki_inlinecode"|alert>> class to an element~.
-    ~*
-    ~* ~The <<span class="odocwiki_inlinecode"|show>> parameter indicates whether or not the alert must be displayed
-    ~* at start~.
-    ~* <<span class="odocwiki_inlinecode"|allow~_outer~_clicks>> allows or not outer clicks for the <<span class="odocwiki_inlinecode"|alert>>~.
-    ~* <<span class="odocwiki_inlinecode"|on~_outer~_click>> function is called when a click outside of the alert
-    ~* occurs~.
-    ~* ~The function <<span class="odocwiki_inlinecode"|before>> and <<span class="odocwiki_inlinecode"|after>> are respectively called before and after
-    ~* the <<span class="odocwiki_inlinecode"|alert>> is shown~.
+
+
+      ~The <<span class="odocwiki_inlinecode"|show>> parameter indicates whether or not the alert must be displayed
+      at start~.
+      <<span class="odocwiki_inlinecode"|allow~_outer~_clicks>> allows or not outer clicks for the <<span class="odocwiki_inlinecode"|alert>>~.
+      <<span class="odocwiki_inlinecode"|on~_outer~_click>> function is called when a click outside of the alert
+      occurs~.
+      ~The function <<span class="odocwiki_inlinecode"|before>> and <<span class="odocwiki_inlinecode"|after>> are respectively called before and after
+      the <<span class="odocwiki_inlinecode"|alert>> is shown~.
 >>
 <<pre id="VALdyn_alert" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|dyn~_alert>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|\\  <<span class="ocsforge_color_label"| ?show: >>bool <<span class="ocsforge_color_delimiter"| -> >>\\  <<span class="ocsforge_color_label"| ?allow_outer_clicks: >>bool <<span class="ocsforge_color_delimiter"| -> >>\\  <<span class="ocsforge_color_label"| ?on_outer_click: >><<span class="ocsforge_color_delimiter"| ( >><<a_api text="dyn_alert" | class type Ojw_alert_sigs.T.dyn_alert >> <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>> <<span class="ocsforge_color_delimiter"| -> >> unit<<span class="ocsforge_color_delimiter"| ) >> <<span class="ocsforge_color_delimiter"| -> >>\\  <<span class="ocsforge_color_label"| ?before: >><<span class="ocsforge_color_delimiter"| ( >><<span class="ocsforge_color_uid"|D>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|element>> <<span class="ocsforge_color_uid"|D>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|elt>> <<span class="ocsforge_color_delimiter"| -> >> unit <<span class="ocsforge_color_uid"|Lwt>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>><<span class="ocsforge_color_delimiter"| ) >> <<span class="ocsforge_color_delimiter"| -> >>\\  <<span class="ocsforge_color_label"| ?after: >><<span class="ocsforge_color_delimiter"| ( >><<span class="ocsforge_color_uid"|D>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|element>> <<span class="ocsforge_color_uid"|D>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|elt>> <<span class="ocsforge_color_delimiter"| -> >> unit <<span class="ocsforge_color_uid"|Lwt>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>><<span class="ocsforge_color_delimiter"| ) >> <<span class="ocsforge_color_delimiter"| -> >>\\  <<span class="ocsforge_color_uid"|D>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|element>> <<span class="ocsforge_color_uid"|D>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|elt>> <<span class="ocsforge_color_delimiter"| -> >>\\  <<span class="ocsforge_color_delimiter"| ( >><<span class="ocsforge_color_uid"|D>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|element>> <<span class="ocsforge_color_uid"|D>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|elt>> <<span class="ocsforge_color_delimiter"| -> >> <<span class="ocsforge_color_uid"|Content>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|element>> <<span class="ocsforge_color_uid"|Content>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|elt>> list <<span class="ocsforge_color_uid"|Lwt>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>><<span class="ocsforge_color_delimiter"| ) >> <<span class="ocsforge_color_delimiter"| -> >>\\  <<span class="ocsforge_color_uid"|D>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|element>> <<span class="ocsforge_color_uid"|D>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|elt>>>>>><<div class="odocwiki_info"|~Provides behaviours of the <<span class="odocwiki_inlinecode"|dyn~_alert>> class to an element~.
-    ~*
-    ~* ~The parameters are the same a <<span class="odocwiki_inlinecode"|alert>> function above~.
-    ~*
-    ~* ~To construct a <<span class="odocwiki_inlinecode"|dyn~_alert>> you must provides the container
-    ~* on which the dynamic content will be added when the method
-    ~* <<span class="odocwiki_inlinecode"|show>> or <<span class="odocwiki_inlinecode"|update>> is called~.
-    ~*
-    ~* ~When the <<span class="odocwiki_inlinecode"|dyn~_alert>> is hidden ~(using <<span class="odocwiki_inlinecode"|hide>>~)~, the content is removed
-    ~* from the container~.
-    ~*
-    ~* <<span class="odocwiki_inlinecode"|update>> should only be called when a <<span class="odocwiki_inlinecode"|dyn~_alert>> is <<span class="odocwiki_inlinecode"|visible>>~.
+
+
+      ~The parameters are the same a <<span class="odocwiki_inlinecode"|alert>> function above~.
+
+
+      ~To construct a <<span class="odocwiki_inlinecode"|dyn~_alert>> you must provides the container
+      on which the dynamic content will be added when the method
+      <<span class="odocwiki_inlinecode"|show>> or <<span class="odocwiki_inlinecode"|update>> is called~.
+
+
+      ~When the <<span class="odocwiki_inlinecode"|dyn~_alert>> is hidden ~(using <<span class="odocwiki_inlinecode"|hide>>~)~, the content is removed
+      from the container~.
+
+
+      <<span class="odocwiki_inlinecode"|update>> should only be called when a <<span class="odocwiki_inlinecode"|dyn~_alert>> is <<span class="odocwiki_inlinecode"|visible>>~.
 >>
 
 
 ==@@id="2_Conversionfunctions"@@~Conversion functions==
 
 <<pre id="VALto_alert" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|to~_alert>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<span class="ocsforge_color_uid"|D>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|element>> <<span class="ocsforge_color_uid"|D>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|elt>> <<span class="ocsforge_color_delimiter"| -> >> <<a_api text="alert" | class type Ojw_alert_sigs.T.alert >> <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>>>>>><<div class="odocwiki_info"|~Tests if an element is an alert or not and returns it as a <<span class="odocwiki_inlinecode"|alert>>
-    ~* instance~.
+      instance~.
 >>
 <<pre id="VALto_dyn_alert" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|to~_dyn~_alert>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<span class="ocsforge_color_uid"|D>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|element>> <<span class="ocsforge_color_uid"|D>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|elt>> <<span class="ocsforge_color_delimiter"| -> >> <<a_api text="dyn_alert" | class type Ojw_alert_sigs.T.dyn_alert >> <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>>>>>><<div class="odocwiki_info"|~Tests if an element is an dyn~_alert or not and returns it as a <<span class="odocwiki_inlinecode"|dyn~_alert>>
-    ~* instance~.
+      instance~.
 >>

@@ -26,7 +26,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="customEventInit"| class type Ojw_event.customEventInit >> ~[<<a_api | module Ojw_event >>~]||
 |@@ @style="tet-align: left;"@@\\D|
 |@@class="odocwiki_index"@ @@<<a_api text="dropdown"| class type Ojw_dropdown_sigs.T.dropdown >> ~[<<a_api | module Ojw_dropdown_sigs.T >>~]|<<div class="odocwiki_info"|~A <<span class="odocwiki_inlinecode"|dropdown>> is a kind of <<span class="odocwiki_inlinecode"|button>> which triggers the menu when clicking
-    ~* on it ~(you can also use it with hover events~, see below~)~.
+      on it ~(you can also use it with hover events~, see below~)~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="dyn_alert"| class type Ojw_alert_sigs.T.dyn_alert >> ~[<<a_api | module Ojw_alert_sigs.T >>~]||
@@ -42,7 +42,7 @@
 |
 |@@ @style="tet-align: left;"@@\\T|
 |@@class="odocwiki_index"@ @@<<a_api text="traversable"| class type Ojw_traversable_sigs.T.traversable >> ~[<<a_api | module Ojw_traversable_sigs.T >>~]|<<div class="odocwiki_info"|~A <<span class="odocwiki_inlinecode"|traversable>> element can use keys to navigate through their
-    ~* children ~(only one level of children~)~.
+      children ~(only one level of children~)~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="traversable_detail_event"| class type Ojw_traversable_sigs.T.traversable_detail_event >> ~[<<a_api | module Ojw_traversable_sigs.T >>~]|<<div class="odocwiki_info"|~The <<span class="odocwiki_inlinecode"|detail>> of events of <<span class="odocwiki_inlinecode"|traversable>> element~.

@@ -31,7 +31,7 @@
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="getContainer"| method Ojw_traversable_sigs.T.traversable#getContainer >> ~[<<a_api | module Ojw_traversable_sigs.T >>~]|<<div class="odocwiki_info"|~Get the original version of the container used as <<span class="odocwiki_inlinecode"|traversable>>
-      ~* element ~(without conversion~)~.
+        element ~(without conversion~)~.
 >>
 |
 |@@ @style="tet-align: left;"@@\\H|
@@ -42,7 +42,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="hide"| method Ojw_alert_sigs.T.alert#hide >> ~[<<a_api | module Ojw_alert_sigs.T >>~]||
 |@@ @style="tet-align: left;"@@\\I|
 |@@class="odocwiki_index"@ @@<<a_api text="isTraversable"| method Ojw_traversable_sigs.T.traversable#isTraversable >> ~[<<a_api | module Ojw_traversable_sigs.T >>~]|<<div class="odocwiki_info"|~Returns true if the <<span class="odocwiki_inlinecode"|traversable>> element can listen keys and
-      ~* interpret them~.
+        interpret them~.
 >>
 |
 |@@ @style="tet-align: left;"@@\\L|
@@ -51,7 +51,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="loaderTextClass"| method Ojw_hookjs.options#loaderTextClass >> ~[<<a_api | module Ojw_hookjs >>~]||
 |@@ @style="tet-align: left;"@@\\N|
 |@@class="odocwiki_index"@ @@<<a_api text="next"| method Ojw_traversable_sigs.T.traversable#next >> ~[<<a_api | module Ojw_traversable_sigs.T >>~]|<<div class="odocwiki_info"|~Explicitly set active the next element of the <<span class="odocwiki_inlinecode"|traversable>>
-      ~* element~.
+        element~.
 >>
 |
 |@@ @style="tet-align: left;"@@\\P|
@@ -62,7 +62,7 @@
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="prev"| method Ojw_traversable_sigs.T.traversable#prev >> ~[<<a_api | module Ojw_traversable_sigs.T >>~]|<<div class="odocwiki_info"|~Explicitly set active the previous element of the <<span class="odocwiki_inlinecode"|traversable>>
-      ~* element~.
+        element~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="prevent"| method Ojw_button_sigs.T.button#prevent >> ~[<<a_api | module Ojw_button_sigs.T >>~]|<<div class="odocwiki_info"|**~E~X~P~E~R~I~M~E~N~T~A~L**~: try to prevents a button from beeing <<span class="odocwiki_inlinecode"|pressed>>~.
@@ -70,7 +70,7 @@
 |
 |@@ @style="tet-align: left;"@@\\R|
 |@@class="odocwiki_index"@ @@<<a_api text="refresh"| method Ojw_completion_sigs.T.completion#refresh >> ~[<<a_api | module Ojw_completion_sigs.T >>~]|<<div class="odocwiki_info"|~Explicitly refresh the content of the widget ~(using the given
-     ~* function <<span class="odocwiki_inlinecode"|refresh>> on the construction of the widget~)~.
+       function <<span class="odocwiki_inlinecode"|refresh>> on the construction of the widget~)~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="reloadEl"| method Ojw_hookjs.options#reloadEl >> ~[<<a_api | module Ojw_hookjs >>~]||
@@ -96,7 +96,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="t"| method Ojw_base_widget.widget#t >> ~[<<a_api | module Ojw_base_widget >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="textRequired"| method Ojw_hookjs.options#textRequired >> ~[<<a_api | module Ojw_hookjs >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="toggle"| method Ojw_button_sigs.T.button#toggle >> ~[<<a_api | module Ojw_button_sigs.T >>~]|<<div class="odocwiki_info"|~Presses the <<span class="odocwiki_inlinecode"|button>> if it is unpressed~, and unpress the <<span class="odocwiki_inlinecode"|button>> if
-      ~* it is pressed~.
+        it is pressed~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="transitionEnd"| method Ojw_swipejs.options#transitionEnd >> ~[<<a_api | module Ojw_swipejs >>~]||
@@ -108,21 +108,21 @@
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="update"| method Ojw_button_sigs.T.button_dyn_alert#update >> ~[<<a_api | module Ojw_button_sigs.T >>~]|<<div class="odocwiki_info"|~Wrapper around <<span class="odocwiki_inlinecode"|update>> method from <<span class="odocwiki_inlinecode"|dyn~_alert>> from the
-      ~* module <<span class="odocwiki_inlinecode"|~Ojw~_alert>>~.
+        module <<span class="odocwiki_inlinecode"|~Ojw~_alert>>~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="update"| method Ojw_alert_sigs.T.dyn_alert#update >> ~[<<a_api | module Ojw_alert_sigs.T >>~]||
 |@@ @style="tet-align: left;"@@\\V|
 |@@class="odocwiki_index"@ @@<<a_api text="value"| method Ojw_completion_sigs.T.completion#value >> ~[<<a_api | module Ojw_completion_sigs.T >>~]|<<div class="odocwiki_info"|~You can retrieve the value of the <<span class="odocwiki_inlinecode"|completion>> widget or even
-      ~* change it ~(you need to <<span class="odocwiki_inlinecode"|refresh>> explicitly the widget~)~.
+        change it ~(you need to <<span class="odocwiki_inlinecode"|refresh>> explicitly the widget~)~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="visible"| method Ojw_alert_sigs.T.dyn_alert#visible >> ~[<<a_api | module Ojw_alert_sigs.T >>~]|<<div class="odocwiki_info"|~This method returns <<span class="odocwiki_inlinecode"|true>> if the content of the <<span class="odocwiki_inlinecode"|alert>> is currently
-      ~* shown~.
+        shown~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="visible"| method Ojw_alert_sigs.T.alert#visible >> ~[<<a_api | module Ojw_alert_sigs.T >>~]|<<div class="odocwiki_info"|~This method returns <<span class="odocwiki_inlinecode"|true>> if the content of the <<span class="odocwiki_inlinecode"|alert>> is currently
-      ~* shown~.
+        shown~.
 >>
 |
 |@@ @style="tet-align: left;"@@\\W|

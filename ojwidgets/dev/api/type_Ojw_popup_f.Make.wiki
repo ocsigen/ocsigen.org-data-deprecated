@@ -340,7 +340,6 @@
                val to_dyn_alert : D.element D.elt -> dyn_alert Js.t
              end) ->
     sig
-      exception Close_button_not_in_popup
       module D :
         sig
           type 'a elt = 'a D.elt
@@ -677,29 +676,19 @@
         end
       val show_background : unit -> unit
       val hide_background : unit -> unit
-      val define_popup :
-        bg:'a ->
-        ?with_background:bool ->
-        Ojw_popup_f.Make.D.element Ojw_popup_f.Make.D.elt -> unit
       val popup :
         ?show:bool ->
         ?allow_outer_clicks:bool ->
-        ?with_background:bool ->
-        Ojw_popup_f.Make.D.element Ojw_popup_f.Make.D.elt ->
-        Ojw_popup_f.Make.D.element Ojw_popup_f.Make.D.elt
+        ?with_background:bool -> D.element D.elt -> D.element D.elt
       val dyn_popup :
         ?show:bool ->
         ?allow_outer_clicks:bool ->
         ?with_background:bool ->
-        Ojw_popup_f.Make.D.element Ojw_popup_f.Make.D.elt ->
-        (Ojw_popup_f.Make.Alert.D.element Ojw_popup_f.Make.Alert.D.elt ->
-         Ojw_popup_f.Make.Alert.Content.element
-         Ojw_popup_f.Make.Alert.Content.elt list Lwt.t) ->
-        Ojw_popup_f.Make.D.element Ojw_popup_f.Make.D.elt
-      val closeable_by_click :
-        Ojw_popup_f.Make.Alert.D.element Ojw_popup_f.Make.Alert.D.elt ->
-        Ojw_popup_f.Make.Alert.D.element Ojw_popup_f.Make.Alert.D.elt
-      val to_popup :
-        Ojw_popup_f.Make.Alert.D.element Ojw_popup_f.Make.Alert.D.elt ->
-        Ojw_popup_f.Make.Alert.alert Js.t
+        D.element D.elt ->
+        (Alert.D.element Alert.D.elt ->
+         Alert.Content.element Alert.Content.elt list Lwt.t) ->
+        D.element D.elt
+      val closeable_by_click : D.element D.elt -> D.element D.elt
+      val to_popup : D.element D.elt -> Alert.alert Js.t
+      val to_dyn_popup : D.element D.elt -> Alert.dyn_alert Js.t
     end >>

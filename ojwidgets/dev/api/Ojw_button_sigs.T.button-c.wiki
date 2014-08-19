@@ -1,19 +1,23 @@
 =Class type <<a_api_type | class type Ojw_button_sigs.T.button >> =
 <<pre class="ocsforge_color odocwiki_code"|<<span id="TYPEbutton"|<<span class="ocsforge_color_keyword"|class type>> <<span class="ocsforge_color_name"|button>>>> <<span class="ocsforge_color_delimiter"|~=>> <<span class="ocsforge_color_keyword"|object>><<a_api text=".." | class type Ojw_button_sigs.T.button >><<span class="ocsforge_color_keyword"|end>>>>~The basic type for <<span class="odocwiki_inlinecode"|buttons>>~. ~You can use it to develop your own kind
-    ~* of buttons~. ~It is used with other more specific buttons~, such as
-    ~* <<span class="odocwiki_inlinecode"|button~_alert>> or <<span class="odocwiki_inlinecode"|button~_dyn~_alert>> ~(see below~)~.
-    ~*
-    ~* ~Any visible element can be used to simulate a button~.
-    ~*
-    ~* ~A button is an item of an <<span class="odocwiki_inlinecode"|active~_set>> ~(see
-    ~* <<a_api project="ojwidgets" | val Ojw_active_set_sigs.T.item>> ~)~.
-    ~* ~It is only important if the <<span class="odocwiki_inlinecode"|button>> is used with an <<span class="odocwiki_inlinecode"|active~_set>>~, ~(see
-    ~* below~)~.
-    ~*
-    ~* ~A button can be <<span class="odocwiki_inlinecode"|press>>~, <<span class="odocwiki_inlinecode"|unpress>> or <<span class="odocwiki_inlinecode"|toggle>>~.
-    ~*
-    ~* ~When a button is <<span class="odocwiki_inlinecode"|pressed>>~, the css class **"pressed"** is added to the
-    ~* element which refer to the <<span class="odocwiki_inlinecode"|button>>~.
+      of buttons~. ~It is used with other more specific buttons~, such as
+      <<span class="odocwiki_inlinecode"|button~_alert>> or <<span class="odocwiki_inlinecode"|button~_dyn~_alert>> ~(see below~)~.
+
+
+      ~Any visible element can be used to simulate a button~.
+
+
+      ~A button is an item of an <<span class="odocwiki_inlinecode"|active~_set>> ~(see
+      <<a_api project="ojwidgets" | val Ojw_active_set_sigs.T.item>> ~)~.
+      ~It is only important if the <<span class="odocwiki_inlinecode"|button>> is used with an <<span class="odocwiki_inlinecode"|active~_set>>~, ~(see
+      below~)~.
+
+
+      ~A button can be <<span class="odocwiki_inlinecode"|press>>~, <<span class="odocwiki_inlinecode"|unpress>> or <<span class="odocwiki_inlinecode"|toggle>>~.
+
+
+      ~When a button is <<span class="odocwiki_inlinecode"|pressed>>~, the css class **"pressed"** is added to the
+      element which refer to the <<span class="odocwiki_inlinecode"|button>>~.
 **~Inherits**
 * <<span class="odocwiki_inlinecode"|~Ojw~_active~_set~.item>>
 * <<a_api | class Ojw_base_widget.widget >>
@@ -26,8 +30,8 @@
 <<pre class="ocsforge_color odocwiki_code"|<<span id="METHODunpress"|<<span class="ocsforge_color_keyword"|method>> <<span class="odocwiki_name"|unpress>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|unit <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|meth>>>>>><<div class="odocwiki_info"|~Explicitly unpress the <<span class="odocwiki_inlinecode"|button>>~.
 >>
 <<pre class="ocsforge_color odocwiki_code"|<<span id="METHODtoggle"|<<span class="ocsforge_color_keyword"|method>> <<span class="odocwiki_name"|toggle>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|unit <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|meth>>>>>><<div class="odocwiki_info"|~Presses the <<span class="odocwiki_inlinecode"|button>> if it is unpressed~, and unpress the <<span class="odocwiki_inlinecode"|button>> if
-      ~* it is pressed~.
+        it is pressed~.
 >>
 <<pre class="ocsforge_color odocwiki_code"|<<span id="METHODprevent"|<<span class="ocsforge_color_keyword"|method>> <<span class="odocwiki_name"|prevent>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|bool <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>> <<span class="ocsforge_color_delimiter"| -> >> unit <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|meth>>>>>><<div class="odocwiki_info"|**~E~X~P~E~R~I~M~E~N~T~A~L**~: try to prevents a button from beeing <<span class="odocwiki_inlinecode"|pressed>>~. ~This
-      ~* method should be used with <<span class="odocwiki_inlinecode"|pre~_presses>> or <<span class="odocwiki_inlinecode"|pre~_unpresses>> events~.
+        method should be used with <<span class="odocwiki_inlinecode"|pre~_presses>> or <<span class="odocwiki_inlinecode"|pre~_unpresses>> events~.
 >>
