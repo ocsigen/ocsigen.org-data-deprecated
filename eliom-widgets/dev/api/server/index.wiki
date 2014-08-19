@@ -5,17 +5,33 @@
 
 
 
+==@@id="2_Helpersandtools"@@~Helpers and tools==
+
+
+
+
 |Ew_accents||
-|<<a_api subproject="server" | module Ew_dropdown >>||
 |<<a_api subproject="server" | module Ew_editable >>||
-|<<a_api subproject="server" | module Ew_slider >>||
+|<<a_api subproject="server" | module Ew_dyn_upload >>||
+
+
+
+
+
+==@@id="2_Widgets"@@~Widgets==
+
+
+
+
+|<<a_api subproject="server" | module Ew_alert >>|<<div class="odocwiki_info"|~The type of the content element ~(dynamic alert only~)~.
+>>
+|
+|<<a_api subproject="server" | module Ew_popup >>||
 |<<a_api subproject="server" | module Ew_button >>||
-|<<a_api subproject="server" | module Ew_dyn_upload >>||
-|<<a_api subproject="server" | module Ew_editable >>||
+|<<a_api subproject="server" | module Ew_traversable >>||
+|<<a_api subproject="server" | module Ew_dropdown >>||
 |<<a_api subproject="server" | module Ew_completion >>||
-|<<a_api subproject="server" | module Ew_dyn_upload >>||
 |<<a_api subproject="server" | module Ew_table_color_picker >>||
-|<<a_api subproject="server" | module Ew_slider >>||
 
 
 

@@ -1,15 +1,15 @@
 =~Eliom~-widgets client ~A~P~I
-==[[client/Ew_accents|Ew_accents]]
-==[[client/Ew_dropdown|Ew_dropdown]]
-==[[client/Ew_editable|Ew_editable]]
-==[[client/Ew_slider|Ew_slider]]
-==[[client/Ew_button|Ew_button]]
-==[[client/Ew_dyn_upload|Ew_dyn_upload]]
-==[[client/Ew_editable|Ew_editable]]
-==[[client/Ew_completion|Ew_completion]]
-==[[client/Ew_dyn_upload|Ew_dyn_upload]]
-==[[client/Ew_table_color_picker|Ew_table_color_picker]]
-==[[client/Ew_slider|Ew_slider]]
+==~Helpers and tools
+===[[client/Ew_editable|Ew_editable]]
+===[[client/Ew_dyn_upload|Ew_dyn_upload]]
+==~Widgets
+===[[client/Ew_alert|Ew_alert]]
+===[[client/Ew_popup|Ew_popup]]
+===[[client/Ew_button|Ew_button]]
+===[[client/Ew_traversable|Ew_traversable]]
+===[[client/Ew_dropdown|Ew_dropdown]]
+===[[client/Ew_completion|Ew_completion]]
+===[[client/Ew_table_color_picker|Ew_table_color_picker]]
 ==~Index
 === <<a_api subproject="client" text="Index of types" | index types >>
 === <<a_api subproject="client" text="Index of exceptions" | index exceptions >>

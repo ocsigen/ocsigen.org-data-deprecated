@@ -5,28 +5,35 @@
 
 
 
-|Ew_accents||
-|<<a_api subproject="client" | module Ew_dropdown >>||
+==@@id="2_Helpersandtools"@@~Helpers and tools==
+
+
+
+
 |<<a_api subproject="client" | module Ew_editable >>||
-|<<a_api subproject="client" | module Ew_slider >>|<<div class="odocwiki_info"|initial~_value is at ~0~.~5 by default
-   ~It have to by between ~0~.
+|<<a_api subproject="client" | module Ew_dyn_upload >>|<<div class="odocwiki_info"|~Type of a dynamic service~.
 >>
 |
+
+
+
+
+
+==@@id="2_Widgets"@@~Widgets==
+
+
+
+
+|<<a_api subproject="client" | module Ew_alert >>|<<div class="odocwiki_info"|~The type of the content element ~(dynamic alert only~)~.
+>>
+|
+|<<a_api subproject="client" | module Ew_popup >>||
 |<<a_api subproject="client" | module Ew_button >>||
-|<<a_api subproject="client" | module Ew_dyn_upload >>|<<div class="odocwiki_info"|~Type of a dynamic service~.
->>
-|
-|<<a_api subproject="client" | module Ew_editable >>||
+|<<a_api subproject="client" | module Ew_traversable >>||
+|<<a_api subproject="client" | module Ew_dropdown >>||
 |<<a_api subproject="client" | module Ew_completion >>||
-|<<a_api subproject="client" | module Ew_dyn_upload >>|<<div class="odocwiki_info"|~Type of a dynamic service~.
->>
-|
 |<<a_api subproject="client" | module Ew_table_color_picker >>|<<div class="odocwiki_info"|~The agrument is the divisor of ~2~5~5
 ~*~* ~It have to be greater than ~1 ~*
->>
-|
-|<<a_api subproject="client" | module Ew_slider >>|<<div class="odocwiki_info"|initial~_value is at ~0~.~5 by default
-   ~It have to by between ~0~.
 >>
 |
 
