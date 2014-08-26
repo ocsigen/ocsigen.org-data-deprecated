@@ -255,8 +255,8 @@ g=a|0;c=c&15|f|b<<4;return[w,g,e,c]}if(!Math.imul)Math.imul=function(a,b){return
 by=Math.imul,ld=function(){var
 p=256;function
 c(a,b){return a<<b|a>>>32-b}function
-g(a,b){b=by(b,3432918353);b=c(b,15);b=by(b,461845907);a^=b;a=c(a,13);return(a*5|0)+3864292196|0}function
-s(a){a^=a>>>16;a=by(a,2246822507);a^=a>>>13;a=by(a,3266489909);a^=a>>>16;return a}function
+g(a,b){b=by(b,3432918353|0);b=c(b,15);b=by(b,461845907);a^=b;a=c(a,13);return(a+(a<<2)|0)+(3864292196|0)|0}function
+s(a){a^=a>>>16;a=by(a,2246822507|0);a^=a>>>13;a=by(a,3266489909|0);a^=a>>>16;return a}function
 t(a,b){var
 d=b[1]|b[2]<<24,c=b[2]>>>8|b[3]<<16;a=g(a,d);a=g(a,c);return a}function
 u(a,b){var
