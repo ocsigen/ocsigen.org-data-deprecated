@@ -89,6 +89,10 @@
         bool React.signal -> bool React.signal -> bool React.signal
       val ( || ) :
         bool React.signal -> bool React.signal -> bool React.signal
+      val edge : bool React.signal -> bool React.event
+      val rise : bool React.signal -> unit React.event
+      val fall : bool React.signal -> unit React.event
+      val flip : bool -> 'a React.event -> bool React.signal
     end
   module Int :
     sig
