@@ -1,3 +1,4 @@
 =Module <<a_api_type subproject="client" | module Eba_session >> =
 <<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module>> <<span class="ocsforge_color_uid"|<<span class="ocsforge_color_uid"|Eba_session>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="ocsforge_color_keyword"|sig>><<a_api subproject="client" text=".." | module Eba_session >><<span class="ocsforge_color_keyword"|end>>>>
 ----
+<<pre id="EXCEPTIONNot_connected" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|exception>> <<span class="odocwiki_name"|Not_connected>>>><<pre id="EXCEPTIONPermission_denied" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|exception>> <<span class="odocwiki_name"|Permission_denied>>>>

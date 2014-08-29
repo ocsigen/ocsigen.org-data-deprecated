@@ -4,7 +4,11 @@
     ?deny:Eba_sigs.Session.group list ->
     ?predicate:(int64 option -> 'a -> 'b -> bool Lwt.t) ->
     ?fallback:(int64 option ->
-               'a -> 'b -> exn -> Eba_sigs.Page.page_content Lwt.t) ->
-    (int64 option -> 'a -> 'b -> Eba_sigs.Page.page_content Lwt.t) ->
-    'a -> 'b -> Eba_sigs.Page.page Lwt.t
+               'a ->
+               'b ->
+               exn ->
+               Html5_types.body_content Eliom_content.Html5.elt list Lwt.t) ->
+    (int64 option ->
+     'a -> 'b -> Html5_types.body_content Eliom_content.Html5.elt list Lwt.t) ->
+    'a -> 'b -> Html5_types.html Eliom_content.Html5.elt Lwt.t
 end >>

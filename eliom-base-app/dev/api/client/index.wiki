@@ -5,7 +5,7 @@
 
 
 
-|<<a_api subproject="client" | module Eba_shared >>||
+|Eba_shared||
 
 
 
@@ -16,6 +16,5 @@
 
 
 * <<a_api subproject="client" text="Index of exceptions" | index exceptions >>
-* <<a_api subproject="client" text="Index of values" | index values >>
 * <<a_api subproject="client" text="Index of modules" | index modules >>
 

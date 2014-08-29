@@ -1,10 +1,5 @@
 <<code language="ocaml" | sig
   module Session : Session
-  exception Predicate_failed of exn option
-  exception Permission_denied
-  exception Not_connected
-  type page = Html5_types.html Eliom_content.Html5.elt
-  type page_content = Html5_types.body_content Eliom_content.Html5.elt list
   module Opt :
     sig
       val connected_page :
@@ -12,21 +7,34 @@
         ?deny:Eba_sigs.Session.group list ->
         ?predicate:(int64 option -> 'a -> 'b -> bool Lwt.t) ->
         ?fallback:(int64 option ->
-                   'a -> 'b -> exn -> Eba_sigs.Page.page_content Lwt.t) ->
-        (int64 option -> 'a -> 'b -> Eba_sigs.Page.page_content Lwt.t) ->
-        'a -> 'b -> Eba_sigs.Page.page Lwt.t
+                   'a ->
+                   'b ->
+                   exn ->
+                   Html5_types.body_content Eliom_content.Html5.elt list
+                   Lwt.t) ->
+        (int64 option ->
+         'a ->
+         'b -> Html5_types.body_content Eliom_content.Html5.elt list Lwt.t) ->
+        'a -> 'b -> Html5_types.html Eliom_content.Html5.elt Lwt.t
     end
   val page :
     ?predicate:('a -> 'b -> bool Lwt.t) ->
-    ?fallback:('a -> 'b -> exn -> Eba_sigs.Page.page_content Lwt.t) ->
-    ('a -> 'b -> Eba_sigs.Page.page_content Lwt.t) ->
-    'a -> 'b -> Eba_sigs.Page.page Lwt.t
+    ?fallback:('a ->
+               'b ->
+               exn ->
+               Html5_types.body_content Eliom_content.Html5.elt list Lwt.t) ->
+    ('a -> 'b -> Html5_types.body_content Eliom_content.Html5.elt list Lwt.t) ->
+    'a -> 'b -> Html5_types.html Eliom_content.Html5.elt Lwt.t
   val connected_page :
     ?allow:Eba_sigs.Session.group list ->
     ?deny:Eba_sigs.Session.group list ->
     ?predicate:(int64 option -> 'a -> 'b -> bool Lwt.t) ->
     ?fallback:(int64 option ->
-               'a -> 'b -> exn -> Eba_sigs.Page.page_content Lwt.t) ->
-    (int64 -> 'a -> 'b -> Eba_sigs.Page.page_content Lwt.t) ->
-    'a -> 'b -> Eba_sigs.Page.page Lwt.t
+               'a ->
+               'b ->
+               exn ->
+               Html5_types.body_content Eliom_content.Html5.elt list Lwt.t) ->
+    (int64 ->
+     'a -> 'b -> Html5_types.body_content Eliom_content.Html5.elt list Lwt.t) ->
+    'a -> 'b -> Html5_types.html Eliom_content.Html5.elt Lwt.t
 end >>

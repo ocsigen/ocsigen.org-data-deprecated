@@ -4,11 +4,8 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Invalid_mailer"| exception Eba_sigs.Email.Invalid_mailer >> ~[<<a_api subproject="server" | module Eba_sigs.Email >>~]||
 |@@ @style="tet-align: left;"@@\\N|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="No_value"| exception Eba_reqm.No_value >> ~[<<a_api subproject="server" | module Eba_reqm >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Not_connected"| exception Eba_shared.Session.Not_connected >> ~[<<a_api subproject="server" | module Eba_shared.Session >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Not_connected"| exception Eba_sigs.Session.Not_connected >> ~[<<a_api subproject="server" | module Eba_sigs.Session >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Not_connected"| exception Eba_sigs.Page.Not_connected >> ~[<<a_api subproject="server" | module Eba_sigs.Page >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Not_connected"| exception Eba_session.Not_connected >> ~[<<a_api subproject="server" | module Eba_session >>~]||
 |@@ @style="tet-align: left;"@@\\P|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Permission_denied"| exception Eba_sigs.Session.Permission_denied >> ~[<<a_api subproject="server" | module Eba_sigs.Session >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Permission_denied"| exception Eba_sigs.Page.Permission_denied >> ~[<<a_api subproject="server" | module Eba_sigs.Page >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Predicate_failed"| exception Eba_sigs.Page.Predicate_failed >> ~[<<a_api subproject="server" | module Eba_sigs.Page >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Permission_denied"| exception Eba_session.Permission_denied >> ~[<<a_api subproject="server" | module Eba_session >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Predicate_failed"| exception Eba_page.Predicate_failed >> ~[<<a_api subproject="server" | module Eba_page >>~]||
 \\

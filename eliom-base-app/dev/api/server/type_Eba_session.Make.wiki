@@ -2,8 +2,6 @@
   functor (Groups : Eba_sigs.Groups) ->
     sig
       type group = Groups.t
-      exception Permission_denied
-      exception Not_connected
       val connect : int64 -> unit Lwt.t
       val disconnect : unit -> unit Lwt.t
       val connected_fun :
@@ -16,7 +14,6 @@
         ?deny:group list ->
         ?deny_fun:(int64 option -> 'b Lwt.t) ->
         (int64 -> 'a -> 'b Lwt.t) -> 'a -> 'b Lwt.t
-      val get_current_userid : unit -> int64
       module Opt :
         sig
           val connected_fun :
@@ -29,6 +26,5 @@
             ?deny:group list ->
             ?deny_fun:(int64 option -> 'b Lwt.t) ->
             (int64 option -> 'a -> 'b Lwt.t) -> 'a -> 'b Lwt.t
-          val get_current_userid : unit -> int64 option
         end
     end >>

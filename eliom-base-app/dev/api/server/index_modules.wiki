@@ -9,11 +9,9 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Eba_page"| module Eba_page >> ||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Eba_reqm"| module Eba_reqm >> ||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Eba_session"| module Eba_session >> ||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Eba_shared"| module Eba_shared >> ||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Eba_sigs"| module Eba_sigs >> ||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Eba_state"| module Eba_state >> ||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Eba_tools"| module Eba_tools >> ||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Email"| module Eba_shared.Email >> ~[<<a_api subproject="server" | module Eba_shared >>~]||
 |@@ @style="tet-align: left;"@@\\M|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Make"| module Eba_state.Make >> ~[<<a_api subproject="server" | module Eba_state >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Make"| module Eba_sigs.Tools.Cache_f.Make >> ~[<<a_api subproject="server" | module Eba_sigs.Tools.Cache_f >>~]||
@@ -23,10 +21,7 @@
 |@@ @style="tet-align: left;"@@\\O|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Opt"| module Eba_sigs.Page.Opt >> ~[<<a_api subproject="server" | module Eba_sigs.Page >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Opt"| module Eba_sigs.Session.Opt >> ~[<<a_api subproject="server" | module Eba_sigs.Session >>~]||
-|@@ @style="tet-align: left;"@@\\P|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Page"| module Eba_shared.Page >> ~[<<a_api subproject="server" | module Eba_shared >>~]||
 |@@ @style="tet-align: left;"@@\\S|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Session"| module Eba_shared.Session >> ~[<<a_api subproject="server" | module Eba_shared >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Session"| module Eba_sigs.Page.Session >> ~[<<a_api subproject="server" | module Eba_sigs.Page >>~]||
 |@@ @style="tet-align: left;"@@\\T|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Tools"| module Eba_sigs.Tools >> ~[<<a_api subproject="server" | module Eba_sigs >>~]||

@@ -6,16 +6,10 @@
 |@@ @style="tet-align: left;"@@\\G|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="group"| type Eba_sigs.Session.group >> ~[<<a_api subproject="server" | module Eba_sigs.Session >>~]||
 |@@ @style="tet-align: left;"@@\\H|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="head_content"| type Eba_shared.Page.head_content >> ~[<<a_api subproject="server" | module Eba_shared.Page >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="html"| type Eba_sigs.Reqm.html >> ~[<<a_api subproject="server" | module Eba_sigs.Reqm >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="html"| type Eba_reqm.html >> ~[<<a_api subproject="server" | module Eba_reqm >>~]||
 |@@ @style="tet-align: left;"@@\\K|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="key_t"| type Eba_sigs.Tools.Cache_sig.key_t >> ~[<<a_api subproject="server" | module Eba_sigs.Tools.Cache_sig >>~]||
-|@@ @style="tet-align: left;"@@\\P|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="page"| type Eba_shared.Page.page >> ~[<<a_api subproject="server" | module Eba_shared.Page >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="page"| type Eba_sigs.Page.page >> ~[<<a_api subproject="server" | module Eba_sigs.Page >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="page_content"| type Eba_shared.Page.page_content >> ~[<<a_api subproject="server" | module Eba_shared.Page >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="page_content"| type Eba_sigs.Page.page_content >> ~[<<a_api subproject="server" | module Eba_sigs.Page >>~]||
 |@@ @style="tet-align: left;"@@\\S|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="set"| type Eba_sigs.Reqm.set >> ~[<<a_api subproject="server" | module Eba_sigs.Reqm >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="set"| type Eba_reqm.set >> ~[<<a_api subproject="server" | module Eba_reqm >>~]||

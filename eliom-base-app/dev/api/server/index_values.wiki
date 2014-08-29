@@ -32,7 +32,6 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="doc_start"| value Eba_reqm.doc_start >> ~[<<a_api subproject="server" | module Eba_reqm >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="doc_start"| value Eba_config.doc_start >> ~[<<a_api subproject="server" | module Eba_config >>~]||
 |@@ @style="tet-align: left;"@@\\E|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="email_pattern"| value Eba_shared.Email.email_pattern >> ~[<<a_api subproject="server" | module Eba_shared.Email >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="email_pattern"| value Eba_sigs.Email.email_pattern >> ~[<<a_api subproject="server" | module Eba_sigs.Email >>~]||
 |@@ @style="tet-align: left;"@@\\F|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="from_addr"| value Eba_config.Email.from_addr >> ~[<<a_api subproject="server" | module Eba_config.Email >>~]||
@@ -41,8 +40,6 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="get"| value Eba_sigs.Reqm.get >> ~[<<a_api subproject="server" | module Eba_sigs.Reqm >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="get"| value Eba_sigs.Tools.Cache_sig.get >> ~[<<a_api subproject="server" | module Eba_sigs.Tools.Cache_sig >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="get"| value Eba_reqm.get >> ~[<<a_api subproject="server" | module Eba_reqm >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="get_current_userid"| value Eba_sigs.Session.Opt.get_current_userid >> ~[<<a_api subproject="server" | module Eba_sigs.Session.Opt >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="get_current_userid"| value Eba_sigs.Session.get_current_userid >> ~[<<a_api subproject="server" | module Eba_sigs.Session >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="get_opt"| value Eba_sigs.Reqm.get_opt >> ~[<<a_api subproject="server" | module Eba_sigs.Reqm >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="get_opt"| value Eba_reqm.get_opt >> ~[<<a_api subproject="server" | module Eba_reqm >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="get_website_state"| value Eba_sigs.State.get_website_state >> ~[<<a_api subproject="server" | module Eba_sigs.State >>~]||
@@ -96,6 +93,10 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="to_html"| value Eba_reqm.to_html >> ~[<<a_api subproject="server" | module Eba_reqm >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="to_list"| value Eba_sigs.Reqm.to_list >> ~[<<a_api subproject="server" | module Eba_sigs.Reqm >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="to_list"| value Eba_reqm.to_list >> ~[<<a_api subproject="server" | module Eba_reqm >>~]||
+|@@ @style="tet-align: left;"@@\\U|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="user_indep_process_scope"| value Eba_session.user_indep_process_scope >> ~[<<a_api subproject="server" | module Eba_session >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="user_indep_session_scope"| value Eba_session.user_indep_session_scope >> ~[<<a_api subproject="server" | module Eba_session >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="user_indep_state_hierarchy"| value Eba_session.user_indep_state_hierarchy >> ~[<<a_api subproject="server" | module Eba_session >>~]||
 |@@ @style="tet-align: left;"@@\\W|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="wrap_function"| value Eba_sigs.Tools.Cache_sig.wrap_function >> ~[<<a_api subproject="server" | module Eba_sigs.Tools.Cache_sig >>~]||
 \\

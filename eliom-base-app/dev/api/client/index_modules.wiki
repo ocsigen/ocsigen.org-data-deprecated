@@ -6,13 +6,7 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Eba_page"| module Eba_page >> ||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Eba_reqm"| module Eba_reqm >> ||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Eba_session"| module Eba_session >> ||
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Eba_shared"| module Eba_shared >> ||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Eba_sigs"| module Eba_sigs >> ||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Eba_state"| module Eba_state >> ||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Eba_tools"| module Eba_tools >> ||
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Email"| module Eba_shared.Email >> ~[<<a_api subproject="client" | module Eba_shared >>~]||
-|@@ @style="tet-align: left;"@@\\O|
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Opt"| module Eba_shared.Session.Opt >> ~[<<a_api subproject="client" | module Eba_shared.Session >>~]||
-|@@ @style="tet-align: left;"@@\\S|
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Session"| module Eba_shared.Session >> ~[<<a_api subproject="client" | module Eba_shared >>~]||
 \\
