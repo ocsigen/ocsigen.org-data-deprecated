@@ -46,9 +46,11 @@
 >>
 <<pre id="VALeval_string" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|eval~_string>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|string <<span class="ocsforge_color_delimiter"| -> >> 'a>>>><<div class="odocwiki_info"|~Evaluate ~Javascript code
 >>
-<<pre id="VALexpr" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|expr>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|string <<span class="ocsforge_color_delimiter"| -> >> 'a>>>><<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|expr e>> will parse the ~Java~Script expression <<span class="odocwiki_inlinecode"|e>> if <<span class="odocwiki_inlinecode"|e>>
+<<pre id="VALjs_expr" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|js~_expr>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|string <<span class="ocsforge_color_delimiter"| -> >> 'a>>>><<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|js~_expr e>> will parse the ~Java~Script expression <<span class="odocwiki_inlinecode"|e>> if <<span class="odocwiki_inlinecode"|e>>
         is available at compile time or will failback to a
         runtime evaluation~. ~See <<span class="odocwiki_inlinecode"|eval~_string>>
+>>
+<<pre id="VALpure_js_expr" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|pure~_js~_expr>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|string <<span class="ocsforge_color_delimiter"| -> >> 'a>>>><<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|pure~_js~_expr str>> behaves like <<span class="odocwiki_inlinecode"|pure~_expr ~(fun ~(~) ~-~> js~_expr str~)>>~.
 >>
 <<pre id="VALglobal" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|global>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|< .. > <<a_api text="Js.t" | type Js.t >>>>>><<div class="odocwiki_info"|~Javascript global object
 >>

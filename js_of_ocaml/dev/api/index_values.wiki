@@ -489,11 +489,6 @@
 |@@class="odocwiki_index"@ @@<<a_api text="execute"| value JsooTop.execute >> ~[<<a_api | module JsooTop >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|execute print fmt content>> ~Execute <<span class="odocwiki_inlinecode"|content>>~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api text="expr"| value Js.Unsafe.expr >> ~[<<a_api | module Js.Unsafe >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|expr e>> will parse the ~Java~Script expression <<span class="odocwiki_inlinecode"|e>> if <<span class="odocwiki_inlinecode"|e>>
-        is available at compile time or will failback to a
-        runtime evaluation~.
->>
-|
 |@@ @style="tet-align: left;"@@\\F|
 |@@class="odocwiki_index"@ @@<<a_api text="f1"| value Keycode.f1 >> ~[<<a_api | module Keycode >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="f10"| value Keycode.f10 >> ~[<<a_api | module Keycode >>~]||
@@ -716,6 +711,11 @@
 |@@class="odocwiki_index"@ @@<<a_api text="js"| value CSS.Angle.js >> ~[<<a_api | module CSS.Angle >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="js"| value CSS.Length.js >> ~[<<a_api | module CSS.Length >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="js"| value CSS.Color.js >> ~[<<a_api | module CSS.Color >>~]|<<div class="odocwiki_info"|~Projection from ~O~Caml to ~Js~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="js_expr"| value Js.Unsafe.js_expr >> ~[<<a_api | module Js.Unsafe >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|js~_expr e>> will parse the ~Java~Script expression <<span class="odocwiki_inlinecode"|e>> if <<span class="odocwiki_inlinecode"|e>>
+        is available at compile time or will failback to a
+        runtime evaluation~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="js_of_ocaml_version"| value Sys_js.js_of_ocaml_version >> ~[<<a_api | module Sys_js >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|js~_of~_ocaml~_version>> is the version of ~Js~_of~_ocaml~.
@@ -1098,7 +1098,6 @@
 |@@class="odocwiki_index"@ @@<<a_api text="preventDefault"| value Dom.preventDefault >> ~[<<a_api | module Dom >>~]|<<div class="odocwiki_info"|~Call this to prevent the default handler for the event~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api text="print_error"| value Js.print_error >> ~[<<a_api | module Js >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="progress"| value XmlHttpRequest.Event.progress >> ~[<<a_api | module XmlHttpRequest.Event >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="progress"| value File.ReaderEvent.progress >> ~[<<a_api | module File.ReaderEvent >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="progress"| value Dom_html.Event.progress >> ~[<<a_api | module Dom_html.Event >>~]||
@@ -1107,6 +1106,9 @@
 |
 |@@class="odocwiki_index"@ @@<<a_api text="pure_expr"| value Js.Unsafe.pure_expr >> ~[<<a_api | module Js.Unsafe >>~]|<<div class="odocwiki_info"|~Asserts that an expression is pure~, and can therefore be
         optimized away by the compiler if unused~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="pure_js_expr"| value Js.Unsafe.pure_js_expr >> ~[<<a_api | module Js.Unsafe >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|pure~_js~_expr str>> behaves like <<span class="odocwiki_inlinecode"|pure~_expr ~(fun ~(~) ~-~> js~_expr str~)>>~.
 >>
 |
 |@@ @style="tet-align: left;"@@\\Q|
@@ -1287,6 +1289,7 @@
     character~.
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api text="string_of_error"| value Js.string_of_error >> ~[<<a_api | module Js >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="string_of_name"| value CSS.Color.string_of_name >> ~[<<a_api | module CSS.Color >>~]|<<div class="odocwiki_info"|~Gives the string equivalent of the argument~.
 >>
 |

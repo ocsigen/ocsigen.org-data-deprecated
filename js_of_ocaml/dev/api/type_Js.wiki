@@ -354,7 +354,7 @@
       method toString : Js.js_string Js.t Js.meth
     end
   val error_constr : (Js.js_string Js.t -> Js.error Js.t) Js.constr
-  val print_error : Format.formatter -> Js.error Js.t -> unit
+  val string_of_error : Js.error Js.t -> string
   exception Error of Js.error Js.t
   class type json =
     object
@@ -405,7 +405,8 @@
       external obj : (string * Js.Unsafe.any) array -> 'a = "caml_js_object"
       external pure_expr : (unit -> 'a) -> 'a = "caml_js_pure_expr"
       external eval_string : string -> 'a = "caml_js_eval_string"
-      external expr : string -> 'a = "caml_js_expr"
+      external js_expr : string -> 'a = "caml_js_expr"
+      external pure_js_expr : string -> 'a = "caml_pure_js_expr"
       val global : < .. > Js.t
     end
   external float : float -> float = "%identity"
