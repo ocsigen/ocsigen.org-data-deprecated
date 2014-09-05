@@ -138,9 +138,19 @@
       method firstChild : Dom.node Js.t Js.opt Js.prop
       method getAttribute :
         Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method getAttributeNS :
+        Js.js_string Js.t ->
+        Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method getAttributeNode :
+        Js.js_string Js.t -> Dom.attr Js.t Js.opt Js.meth
+      method getAttributeNodeNS :
+        Js.js_string Js.t ->
+        Js.js_string Js.t -> Dom.attr Js.t Js.opt Js.meth
       method getElementsByTagName :
         Js.js_string Js.t -> Dom.element Dom.nodeList Js.t Js.meth
       method hasAttribute : Js.js_string Js.t -> bool Js.t Js.meth
+      method hasAttributeNS :
+        Js.js_string Js.t -> Js.js_string Js.t -> bool Js.t Js.meth
       method hasChildNodes : bool Js.t Js.meth
       method id : Js.js_string Js.t Js.prop
       method insertBefore :
@@ -154,11 +164,20 @@
       method parentNode : Dom.node Js.t Js.opt Js.prop
       method previousSibling : Dom.node Js.t Js.opt Js.prop
       method removeAttribute : Js.js_string Js.t -> unit Js.meth
+      method removeAttributeNS :
+        Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
+      method removeAttributeNode : Dom.attr Js.t -> Dom.attr Js.t Js.meth
       method removeChild : Dom.node Js.t -> Dom.node Js.t Js.meth
       method replaceChild :
         Dom.node Js.t -> Dom.node Js.t -> Dom.node Js.t Js.meth
       method setAttribute :
         Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
+      method setAttributeNS :
+        Js.js_string Js.t ->
+        Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
+      method setAttributeNode : Dom.attr Js.t -> Dom.attr Js.t Js.opt Js.meth
+      method setAttributeNodeNS :
+        Dom.attr Js.t -> Dom.attr Js.t Js.opt Js.meth
       method tagName : Js.js_string Js.t Js.readonly_prop
       method viewportElement : Dom_svg.element Js.t Js.readonly_prop
       method xmlbase : Js.js_string Js.t Js.prop
@@ -365,6 +384,14 @@
       method forceRedraw : unit Js.meth
       method getAttribute :
         Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method getAttributeNS :
+        Js.js_string Js.t ->
+        Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method getAttributeNode :
+        Js.js_string Js.t -> Dom.attr Js.t Js.opt Js.meth
+      method getAttributeNodeNS :
+        Js.js_string Js.t ->
+        Js.js_string Js.t -> Dom.attr Js.t Js.opt Js.meth
       method getBBox : Dom_svg.rect Js.t Js.meth
       method getCTM : Dom_svg.matrix Js.t Js.meth
       method getCurrentTime : float Js.meth
@@ -383,6 +410,8 @@
       method getTransformToElement :
         Dom_svg.element Js.t -> Dom_svg.matrix Js.t Js.meth
       method hasAttribute : Js.js_string Js.t -> bool Js.t Js.meth
+      method hasAttributeNS :
+        Js.js_string Js.t -> Js.js_string Js.t -> bool Js.t Js.meth
       method hasChildNodes : bool Js.t Js.meth
       method hasExtension : Js.js_string Js.t -> bool Js.t Js.meth
       method height : Dom_svg.animatedLength Js.t Js.readonly_prop
@@ -404,6 +433,9 @@
         Dom_svg.animatedPreserveAspectRatio Js.t Js.readonly_prop
       method previousSibling : Dom.node Js.t Js.opt Js.prop
       method removeAttribute : Js.js_string Js.t -> unit Js.meth
+      method removeAttributeNS :
+        Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
+      method removeAttributeNode : Dom.attr Js.t -> Dom.attr Js.t Js.meth
       method removeChild : Dom.node Js.t -> Dom.node Js.t Js.meth
       method replaceChild :
         Dom.node Js.t -> Dom.node Js.t -> Dom.node Js.t Js.meth
@@ -413,6 +445,12 @@
       method screenPixelUnitToMillimeterY : float Js.readonly_prop
       method setAttribute :
         Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
+      method setAttributeNS :
+        Js.js_string Js.t ->
+        Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
+      method setAttributeNode : Dom.attr Js.t -> Dom.attr Js.t Js.opt Js.meth
+      method setAttributeNodeNS :
+        Dom.attr Js.t -> Dom.attr Js.t Js.opt Js.meth
       method setCurrentTime : int -> unit Js.meth
       method style : Dom_html.cssStyleDeclaration Js.t Js.readonly_prop
       method suspendRedraw : int -> Dom_svg.suspendHandleID Js.meth
@@ -448,6 +486,14 @@
       method firstChild : Dom.node Js.t Js.opt Js.prop
       method getAttribute :
         Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method getAttributeNS :
+        Js.js_string Js.t ->
+        Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method getAttributeNode :
+        Js.js_string Js.t -> Dom.attr Js.t Js.opt Js.meth
+      method getAttributeNodeNS :
+        Js.js_string Js.t ->
+        Js.js_string Js.t -> Dom.attr Js.t Js.opt Js.meth
       method getBBox : Dom_svg.rect Js.t Js.meth
       method getCTM : Dom_svg.matrix Js.t Js.meth
       method getElementsByTagName :
@@ -456,6 +502,8 @@
       method getTransformToElement :
         Dom_svg.element Js.t -> Dom_svg.matrix Js.t Js.meth
       method hasAttribute : Js.js_string Js.t -> bool Js.t Js.meth
+      method hasAttributeNS :
+        Js.js_string Js.t -> Js.js_string Js.t -> bool Js.t Js.meth
       method hasChildNodes : bool Js.t Js.meth
       method hasExtension : Js.js_string Js.t -> bool Js.t Js.meth
       method id : Js.js_string Js.t Js.prop
@@ -525,6 +573,9 @@
       method parentNode : Dom.node Js.t Js.opt Js.prop
       method previousSibling : Dom.node Js.t Js.opt Js.prop
       method removeAttribute : Js.js_string Js.t -> unit Js.meth
+      method removeAttributeNS :
+        Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
+      method removeAttributeNode : Dom.attr Js.t -> Dom.attr Js.t Js.meth
       method removeChild : Dom.node Js.t -> Dom.node Js.t Js.meth
       method replaceChild :
         Dom.node Js.t -> Dom.node Js.t -> Dom.node Js.t Js.meth
@@ -532,6 +583,12 @@
       method requiredFeatures : Dom_svg.stringList Js.t Js.readonly_prop
       method setAttribute :
         Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
+      method setAttributeNS :
+        Js.js_string Js.t ->
+        Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
+      method setAttributeNode : Dom.attr Js.t -> Dom.attr Js.t Js.opt Js.meth
+      method setAttributeNodeNS :
+        Dom.attr Js.t -> Dom.attr Js.t Js.opt Js.meth
       method style : Dom_html.cssStyleDeclaration Js.t Js.readonly_prop
       method systemLanguage : Dom_svg.stringList Js.t Js.readonly_prop
       method tagName : Js.js_string Js.t Js.readonly_prop
@@ -556,6 +613,14 @@
       method firstChild : Dom.node Js.t Js.opt Js.prop
       method getAttribute :
         Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method getAttributeNS :
+        Js.js_string Js.t ->
+        Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method getAttributeNode :
+        Js.js_string Js.t -> Dom.attr Js.t Js.opt Js.meth
+      method getAttributeNodeNS :
+        Js.js_string Js.t ->
+        Js.js_string Js.t -> Dom.attr Js.t Js.opt Js.meth
       method getBBox : Dom_svg.rect Js.t Js.meth
       method getCTM : Dom_svg.matrix Js.t Js.meth
       method getElementsByTagName :
@@ -564,6 +629,8 @@
       method getTransformToElement :
         Dom_svg.element Js.t -> Dom_svg.matrix Js.t Js.meth
       method hasAttribute : Js.js_string Js.t -> bool Js.t Js.meth
+      method hasAttributeNS :
+        Js.js_string Js.t -> Js.js_string Js.t -> bool Js.t Js.meth
       method hasChildNodes : bool Js.t Js.meth
       method hasExtension : Js.js_string Js.t -> bool Js.t Js.meth
       method id : Js.js_string Js.t Js.prop
@@ -579,6 +646,9 @@
       method parentNode : Dom.node Js.t Js.opt Js.prop
       method previousSibling : Dom.node Js.t Js.opt Js.prop
       method removeAttribute : Js.js_string Js.t -> unit Js.meth
+      method removeAttributeNS :
+        Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
+      method removeAttributeNode : Dom.attr Js.t -> Dom.attr Js.t Js.meth
       method removeChild : Dom.node Js.t -> Dom.node Js.t Js.meth
       method replaceChild :
         Dom.node Js.t -> Dom.node Js.t -> Dom.node Js.t Js.meth
@@ -586,6 +656,12 @@
       method requiredFeatures : Dom_svg.stringList Js.t Js.readonly_prop
       method setAttribute :
         Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
+      method setAttributeNS :
+        Js.js_string Js.t ->
+        Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
+      method setAttributeNode : Dom.attr Js.t -> Dom.attr Js.t Js.opt Js.meth
+      method setAttributeNodeNS :
+        Dom.attr Js.t -> Dom.attr Js.t Js.opt Js.meth
       method style : Dom_html.cssStyleDeclaration Js.t Js.readonly_prop
       method systemLanguage : Dom_svg.stringList Js.t Js.readonly_prop
       method tagName : Js.js_string Js.t Js.readonly_prop
@@ -607,9 +683,19 @@
       method firstChild : Dom.node Js.t Js.opt Js.prop
       method getAttribute :
         Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method getAttributeNS :
+        Js.js_string Js.t ->
+        Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method getAttributeNode :
+        Js.js_string Js.t -> Dom.attr Js.t Js.opt Js.meth
+      method getAttributeNodeNS :
+        Js.js_string Js.t ->
+        Js.js_string Js.t -> Dom.attr Js.t Js.opt Js.meth
       method getElementsByTagName :
         Js.js_string Js.t -> Dom.element Dom.nodeList Js.t Js.meth
       method hasAttribute : Js.js_string Js.t -> bool Js.t Js.meth
+      method hasAttributeNS :
+        Js.js_string Js.t -> Js.js_string Js.t -> bool Js.t Js.meth
       method hasChildNodes : bool Js.t Js.meth
       method id : Js.js_string Js.t Js.prop
       method insertBefore :
@@ -623,11 +709,20 @@
       method parentNode : Dom.node Js.t Js.opt Js.prop
       method previousSibling : Dom.node Js.t Js.opt Js.prop
       method removeAttribute : Js.js_string Js.t -> unit Js.meth
+      method removeAttributeNS :
+        Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
+      method removeAttributeNode : Dom.attr Js.t -> Dom.attr Js.t Js.meth
       method removeChild : Dom.node Js.t -> Dom.node Js.t Js.meth
       method replaceChild :
         Dom.node Js.t -> Dom.node Js.t -> Dom.node Js.t Js.meth
       method setAttribute :
         Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
+      method setAttributeNS :
+        Js.js_string Js.t ->
+        Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
+      method setAttributeNode : Dom.attr Js.t -> Dom.attr Js.t Js.opt Js.meth
+      method setAttributeNodeNS :
+        Dom.attr Js.t -> Dom.attr Js.t Js.opt Js.meth
       method style : Dom_html.cssStyleDeclaration Js.t Js.readonly_prop
       method tagName : Js.js_string Js.t Js.readonly_prop
       method viewportElement : Dom_svg.element Js.t Js.readonly_prop
@@ -647,9 +742,19 @@
       method firstChild : Dom.node Js.t Js.opt Js.prop
       method getAttribute :
         Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method getAttributeNS :
+        Js.js_string Js.t ->
+        Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method getAttributeNode :
+        Js.js_string Js.t -> Dom.attr Js.t Js.opt Js.meth
+      method getAttributeNodeNS :
+        Js.js_string Js.t ->
+        Js.js_string Js.t -> Dom.attr Js.t Js.opt Js.meth
       method getElementsByTagName :
         Js.js_string Js.t -> Dom.element Dom.nodeList Js.t Js.meth
       method hasAttribute : Js.js_string Js.t -> bool Js.t Js.meth
+      method hasAttributeNS :
+        Js.js_string Js.t -> Js.js_string Js.t -> bool Js.t Js.meth
       method hasChildNodes : bool Js.t Js.meth
       method id : Js.js_string Js.t Js.prop
       method insertBefore :
@@ -663,11 +768,20 @@
       method parentNode : Dom.node Js.t Js.opt Js.prop
       method previousSibling : Dom.node Js.t Js.opt Js.prop
       method removeAttribute : Js.js_string Js.t -> unit Js.meth
+      method removeAttributeNS :
+        Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
+      method removeAttributeNode : Dom.attr Js.t -> Dom.attr Js.t Js.meth
       method removeChild : Dom.node Js.t -> Dom.node Js.t Js.meth
       method replaceChild :
         Dom.node Js.t -> Dom.node Js.t -> Dom.node Js.t Js.meth
       method setAttribute :
         Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
+      method setAttributeNS :
+        Js.js_string Js.t ->
+        Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
+      method setAttributeNode : Dom.attr Js.t -> Dom.attr Js.t Js.opt Js.meth
+      method setAttributeNodeNS :
+        Dom.attr Js.t -> Dom.attr Js.t Js.opt Js.meth
       method style : Dom_html.cssStyleDeclaration Js.t Js.readonly_prop
       method tagName : Js.js_string Js.t Js.readonly_prop
       method viewportElement : Dom_svg.element Js.t Js.readonly_prop
@@ -689,9 +803,19 @@
       method firstChild : Dom.node Js.t Js.opt Js.prop
       method getAttribute :
         Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method getAttributeNS :
+        Js.js_string Js.t ->
+        Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method getAttributeNode :
+        Js.js_string Js.t -> Dom.attr Js.t Js.opt Js.meth
+      method getAttributeNodeNS :
+        Js.js_string Js.t ->
+        Js.js_string Js.t -> Dom.attr Js.t Js.opt Js.meth
       method getElementsByTagName :
         Js.js_string Js.t -> Dom.element Dom.nodeList Js.t Js.meth
       method hasAttribute : Js.js_string Js.t -> bool Js.t Js.meth
+      method hasAttributeNS :
+        Js.js_string Js.t -> Js.js_string Js.t -> bool Js.t Js.meth
       method hasChildNodes : bool Js.t Js.meth
       method id : Js.js_string Js.t Js.prop
       method insertBefore :
@@ -761,11 +885,20 @@
         Dom_svg.animatedPreserveAspectRatio Js.t Js.readonly_prop
       method previousSibling : Dom.node Js.t Js.opt Js.prop
       method removeAttribute : Js.js_string Js.t -> unit Js.meth
+      method removeAttributeNS :
+        Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
+      method removeAttributeNode : Dom.attr Js.t -> Dom.attr Js.t Js.meth
       method removeChild : Dom.node Js.t -> Dom.node Js.t Js.meth
       method replaceChild :
         Dom.node Js.t -> Dom.node Js.t -> Dom.node Js.t Js.meth
       method setAttribute :
         Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
+      method setAttributeNS :
+        Js.js_string Js.t ->
+        Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
+      method setAttributeNode : Dom.attr Js.t -> Dom.attr Js.t Js.opt Js.meth
+      method setAttributeNodeNS :
+        Dom.attr Js.t -> Dom.attr Js.t Js.opt Js.meth
       method style : Dom_html.cssStyleDeclaration Js.t Js.readonly_prop
       method tagName : Js.js_string Js.t Js.readonly_prop
       method viewBox : Dom_svg.animatedRect Js.t Js.readonly_prop
@@ -791,6 +924,14 @@
       method firstChild : Dom.node Js.t Js.opt Js.prop
       method getAttribute :
         Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method getAttributeNS :
+        Js.js_string Js.t ->
+        Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method getAttributeNode :
+        Js.js_string Js.t -> Dom.attr Js.t Js.opt Js.meth
+      method getAttributeNodeNS :
+        Js.js_string Js.t ->
+        Js.js_string Js.t -> Dom.attr Js.t Js.opt Js.meth
       method getBBox : Dom_svg.rect Js.t Js.meth
       method getCTM : Dom_svg.matrix Js.t Js.meth
       method getElementsByTagName :
@@ -799,6 +940,8 @@
       method getTransformToElement :
         Dom_svg.element Js.t -> Dom_svg.matrix Js.t Js.meth
       method hasAttribute : Js.js_string Js.t -> bool Js.t Js.meth
+      method hasAttributeNS :
+        Js.js_string Js.t -> Js.js_string Js.t -> bool Js.t Js.meth
       method hasChildNodes : bool Js.t Js.meth
       method hasExtension : Js.js_string Js.t -> bool Js.t Js.meth
       method height : Dom_svg.animatedLength Js.t Js.readonly_prop
@@ -817,6 +960,9 @@
       method parentNode : Dom.node Js.t Js.opt Js.prop
       method previousSibling : Dom.node Js.t Js.opt Js.prop
       method removeAttribute : Js.js_string Js.t -> unit Js.meth
+      method removeAttributeNS :
+        Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
+      method removeAttributeNode : Dom.attr Js.t -> Dom.attr Js.t Js.meth
       method removeChild : Dom.node Js.t -> Dom.node Js.t Js.meth
       method replaceChild :
         Dom.node Js.t -> Dom.node Js.t -> Dom.node Js.t Js.meth
@@ -824,6 +970,12 @@
       method requiredFeatures : Dom_svg.stringList Js.t Js.readonly_prop
       method setAttribute :
         Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
+      method setAttributeNS :
+        Js.js_string Js.t ->
+        Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
+      method setAttributeNode : Dom.attr Js.t -> Dom.attr Js.t Js.opt Js.meth
+      method setAttributeNodeNS :
+        Dom.attr Js.t -> Dom.attr Js.t Js.opt Js.meth
       method style : Dom_html.cssStyleDeclaration Js.t Js.readonly_prop
       method systemLanguage : Dom_svg.stringList Js.t Js.readonly_prop
       method tagName : Js.js_string Js.t Js.readonly_prop
@@ -922,6 +1074,14 @@
       method firstChild : Dom.node Js.t Js.opt Js.prop
       method getAttribute :
         Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method getAttributeNS :
+        Js.js_string Js.t ->
+        Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method getAttributeNode :
+        Js.js_string Js.t -> Dom.attr Js.t Js.opt Js.meth
+      method getAttributeNodeNS :
+        Js.js_string Js.t ->
+        Js.js_string Js.t -> Dom.attr Js.t Js.opt Js.meth
       method getBBox : Dom_svg.rect Js.t Js.meth
       method getCTM : Dom_svg.matrix Js.t Js.meth
       method getElementsByTagName :
@@ -930,6 +1090,8 @@
       method getTransformToElement :
         Dom_svg.element Js.t -> Dom_svg.matrix Js.t Js.meth
       method hasAttribute : Js.js_string Js.t -> bool Js.t Js.meth
+      method hasAttributeNS :
+        Js.js_string Js.t -> Js.js_string Js.t -> bool Js.t Js.meth
       method hasChildNodes : bool Js.t Js.meth
       method hasExtension : Js.js_string Js.t -> bool Js.t Js.meth
       method height : Dom_svg.animatedLength Js.t Js.readonly_prop
@@ -947,6 +1109,9 @@
       method parentNode : Dom.node Js.t Js.opt Js.prop
       method previousSibling : Dom.node Js.t Js.opt Js.prop
       method removeAttribute : Js.js_string Js.t -> unit Js.meth
+      method removeAttributeNS :
+        Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
+      method removeAttributeNode : Dom.attr Js.t -> Dom.attr Js.t Js.meth
       method removeChild : Dom.node Js.t -> Dom.node Js.t Js.meth
       method replaceChild :
         Dom.node Js.t -> Dom.node Js.t -> Dom.node Js.t Js.meth
@@ -954,6 +1119,12 @@
       method requiredFeatures : Dom_svg.stringList Js.t Js.readonly_prop
       method setAttribute :
         Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
+      method setAttributeNS :
+        Js.js_string Js.t ->
+        Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
+      method setAttributeNode : Dom.attr Js.t -> Dom.attr Js.t Js.opt Js.meth
+      method setAttributeNodeNS :
+        Dom.attr Js.t -> Dom.attr Js.t Js.opt Js.meth
       method style : Dom_html.cssStyleDeclaration Js.t Js.readonly_prop
       method systemLanguage : Dom_svg.stringList Js.t Js.readonly_prop
       method tagName : Js.js_string Js.t Js.readonly_prop
@@ -981,6 +1152,14 @@
       method firstChild : Dom.node Js.t Js.opt Js.prop
       method getAttribute :
         Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method getAttributeNS :
+        Js.js_string Js.t ->
+        Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method getAttributeNode :
+        Js.js_string Js.t -> Dom.attr Js.t Js.opt Js.meth
+      method getAttributeNodeNS :
+        Js.js_string Js.t ->
+        Js.js_string Js.t -> Dom.attr Js.t Js.opt Js.meth
       method getBBox : Dom_svg.rect Js.t Js.meth
       method getCTM : Dom_svg.matrix Js.t Js.meth
       method getElementsByTagName :
@@ -989,6 +1168,8 @@
       method getTransformToElement :
         Dom_svg.element Js.t -> Dom_svg.matrix Js.t Js.meth
       method hasAttribute : Js.js_string Js.t -> bool Js.t Js.meth
+      method hasAttributeNS :
+        Js.js_string Js.t -> Js.js_string Js.t -> bool Js.t Js.meth
       method hasChildNodes : bool Js.t Js.meth
       method hasExtension : Js.js_string Js.t -> bool Js.t Js.meth
       method id : Js.js_string Js.t Js.prop
@@ -1004,6 +1185,9 @@
       method parentNode : Dom.node Js.t Js.opt Js.prop
       method previousSibling : Dom.node Js.t Js.opt Js.prop
       method removeAttribute : Js.js_string Js.t -> unit Js.meth
+      method removeAttributeNS :
+        Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
+      method removeAttributeNode : Dom.attr Js.t -> Dom.attr Js.t Js.meth
       method removeChild : Dom.node Js.t -> Dom.node Js.t Js.meth
       method replaceChild :
         Dom.node Js.t -> Dom.node Js.t -> Dom.node Js.t Js.meth
@@ -1011,6 +1195,12 @@
       method requiredFeatures : Dom_svg.stringList Js.t Js.readonly_prop
       method setAttribute :
         Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
+      method setAttributeNS :
+        Js.js_string Js.t ->
+        Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
+      method setAttributeNode : Dom.attr Js.t -> Dom.attr Js.t Js.opt Js.meth
+      method setAttributeNodeNS :
+        Dom.attr Js.t -> Dom.attr Js.t Js.opt Js.meth
       method style : Dom_html.cssStyleDeclaration Js.t Js.readonly_prop
       method systemLanguage : Dom_svg.stringList Js.t Js.readonly_prop
       method tagName : Js.js_string Js.t Js.readonly_prop
@@ -1031,9 +1221,19 @@
       method firstChild : Dom.node Js.t Js.opt Js.prop
       method getAttribute :
         Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method getAttributeNS :
+        Js.js_string Js.t ->
+        Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method getAttributeNode :
+        Js.js_string Js.t -> Dom.attr Js.t Js.opt Js.meth
+      method getAttributeNodeNS :
+        Js.js_string Js.t ->
+        Js.js_string Js.t -> Dom.attr Js.t Js.opt Js.meth
       method getElementsByTagName :
         Js.js_string Js.t -> Dom.element Dom.nodeList Js.t Js.meth
       method hasAttribute : Js.js_string Js.t -> bool Js.t Js.meth
+      method hasAttributeNS :
+        Js.js_string Js.t -> Js.js_string Js.t -> bool Js.t Js.meth
       method hasChildNodes : bool Js.t Js.meth
       method id : Js.js_string Js.t Js.prop
       method insertBefore :
@@ -1048,11 +1248,20 @@
       method parentNode : Dom.node Js.t Js.opt Js.prop
       method previousSibling : Dom.node Js.t Js.opt Js.prop
       method removeAttribute : Js.js_string Js.t -> unit Js.meth
+      method removeAttributeNS :
+        Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
+      method removeAttributeNode : Dom.attr Js.t -> Dom.attr Js.t Js.meth
       method removeChild : Dom.node Js.t -> Dom.node Js.t Js.meth
       method replaceChild :
         Dom.node Js.t -> Dom.node Js.t -> Dom.node Js.t Js.meth
       method setAttribute :
         Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
+      method setAttributeNS :
+        Js.js_string Js.t ->
+        Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
+      method setAttributeNode : Dom.attr Js.t -> Dom.attr Js.t Js.opt Js.meth
+      method setAttributeNodeNS :
+        Dom.attr Js.t -> Dom.attr Js.t Js.opt Js.meth
       method tagName : Js.js_string Js.t Js.readonly_prop
       method title : Js.js_string Js.t Js.prop
       method type_ : Js.js_string Js.t Js.prop
@@ -1283,6 +1492,14 @@
       method firstChild : Dom.node Js.t Js.opt Js.prop
       method getAttribute :
         Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method getAttributeNS :
+        Js.js_string Js.t ->
+        Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method getAttributeNode :
+        Js.js_string Js.t -> Dom.attr Js.t Js.opt Js.meth
+      method getAttributeNodeNS :
+        Js.js_string Js.t ->
+        Js.js_string Js.t -> Dom.attr Js.t Js.opt Js.meth
       method getBBox : Dom_svg.rect Js.t Js.meth
       method getCTM : Dom_svg.matrix Js.t Js.meth
       method getElementsByTagName :
@@ -1294,6 +1511,8 @@
       method getTransformToElement :
         Dom_svg.element Js.t -> Dom_svg.matrix Js.t Js.meth
       method hasAttribute : Js.js_string Js.t -> bool Js.t Js.meth
+      method hasAttributeNS :
+        Js.js_string Js.t -> Js.js_string Js.t -> bool Js.t Js.meth
       method hasChildNodes : bool Js.t Js.meth
       method hasExtension : Js.js_string Js.t -> bool Js.t Js.meth
       method id : Js.js_string Js.t Js.prop
@@ -1312,6 +1531,9 @@
       method pathSegList : Dom_svg.pathSegList Js.t Js.prop
       method previousSibling : Dom.node Js.t Js.opt Js.prop
       method removeAttribute : Js.js_string Js.t -> unit Js.meth
+      method removeAttributeNS :
+        Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
+      method removeAttributeNode : Dom.attr Js.t -> Dom.attr Js.t Js.meth
       method removeChild : Dom.node Js.t -> Dom.node Js.t Js.meth
       method replaceChild :
         Dom.node Js.t -> Dom.node Js.t -> Dom.node Js.t Js.meth
@@ -1319,6 +1541,12 @@
       method requiredFeatures : Dom_svg.stringList Js.t Js.readonly_prop
       method setAttribute :
         Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
+      method setAttributeNS :
+        Js.js_string Js.t ->
+        Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
+      method setAttributeNode : Dom.attr Js.t -> Dom.attr Js.t Js.opt Js.meth
+      method setAttributeNodeNS :
+        Dom.attr Js.t -> Dom.attr Js.t Js.opt Js.meth
       method style : Dom_html.cssStyleDeclaration Js.t Js.readonly_prop
       method systemLanguage : Dom_svg.stringList Js.t Js.readonly_prop
       method tagName : Js.js_string Js.t Js.readonly_prop
@@ -1343,6 +1571,14 @@
       method firstChild : Dom.node Js.t Js.opt Js.prop
       method getAttribute :
         Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method getAttributeNS :
+        Js.js_string Js.t ->
+        Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method getAttributeNode :
+        Js.js_string Js.t -> Dom.attr Js.t Js.opt Js.meth
+      method getAttributeNodeNS :
+        Js.js_string Js.t ->
+        Js.js_string Js.t -> Dom.attr Js.t Js.opt Js.meth
       method getBBox : Dom_svg.rect Js.t Js.meth
       method getCTM : Dom_svg.matrix Js.t Js.meth
       method getElementsByTagName :
@@ -1351,6 +1587,8 @@
       method getTransformToElement :
         Dom_svg.element Js.t -> Dom_svg.matrix Js.t Js.meth
       method hasAttribute : Js.js_string Js.t -> bool Js.t Js.meth
+      method hasAttributeNS :
+        Js.js_string Js.t -> Js.js_string Js.t -> bool Js.t Js.meth
       method hasChildNodes : bool Js.t Js.meth
       method hasExtension : Js.js_string Js.t -> bool Js.t Js.meth
       method height : Dom_svg.animatedLength Js.t Js.readonly_prop
@@ -1367,6 +1605,9 @@
       method parentNode : Dom.node Js.t Js.opt Js.prop
       method previousSibling : Dom.node Js.t Js.opt Js.prop
       method removeAttribute : Js.js_string Js.t -> unit Js.meth
+      method removeAttributeNS :
+        Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
+      method removeAttributeNode : Dom.attr Js.t -> Dom.attr Js.t Js.meth
       method removeChild : Dom.node Js.t -> Dom.node Js.t Js.meth
       method replaceChild :
         Dom.node Js.t -> Dom.node Js.t -> Dom.node Js.t Js.meth
@@ -1376,6 +1617,12 @@
       method ry : Dom_svg.animatedLength Js.t Js.readonly_prop
       method setAttribute :
         Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
+      method setAttributeNS :
+        Js.js_string Js.t ->
+        Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
+      method setAttributeNode : Dom.attr Js.t -> Dom.attr Js.t Js.opt Js.meth
+      method setAttributeNodeNS :
+        Dom.attr Js.t -> Dom.attr Js.t Js.opt Js.meth
       method style : Dom_html.cssStyleDeclaration Js.t Js.readonly_prop
       method systemLanguage : Dom_svg.stringList Js.t Js.readonly_prop
       method tagName : Js.js_string Js.t Js.readonly_prop
@@ -1405,6 +1652,14 @@
       method firstChild : Dom.node Js.t Js.opt Js.prop
       method getAttribute :
         Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method getAttributeNS :
+        Js.js_string Js.t ->
+        Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method getAttributeNode :
+        Js.js_string Js.t -> Dom.attr Js.t Js.opt Js.meth
+      method getAttributeNodeNS :
+        Js.js_string Js.t ->
+        Js.js_string Js.t -> Dom.attr Js.t Js.opt Js.meth
       method getBBox : Dom_svg.rect Js.t Js.meth
       method getCTM : Dom_svg.matrix Js.t Js.meth
       method getElementsByTagName :
@@ -1413,6 +1668,8 @@
       method getTransformToElement :
         Dom_svg.element Js.t -> Dom_svg.matrix Js.t Js.meth
       method hasAttribute : Js.js_string Js.t -> bool Js.t Js.meth
+      method hasAttributeNS :
+        Js.js_string Js.t -> Js.js_string Js.t -> bool Js.t Js.meth
       method hasChildNodes : bool Js.t Js.meth
       method hasExtension : Js.js_string Js.t -> bool Js.t Js.meth
       method id : Js.js_string Js.t Js.prop
@@ -1429,6 +1686,9 @@
       method previousSibling : Dom.node Js.t Js.opt Js.prop
       method r : Dom_svg.animatedLength Js.t Js.readonly_prop
       method removeAttribute : Js.js_string Js.t -> unit Js.meth
+      method removeAttributeNS :
+        Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
+      method removeAttributeNode : Dom.attr Js.t -> Dom.attr Js.t Js.meth
       method removeChild : Dom.node Js.t -> Dom.node Js.t Js.meth
       method replaceChild :
         Dom.node Js.t -> Dom.node Js.t -> Dom.node Js.t Js.meth
@@ -1436,6 +1696,12 @@
       method requiredFeatures : Dom_svg.stringList Js.t Js.readonly_prop
       method setAttribute :
         Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
+      method setAttributeNS :
+        Js.js_string Js.t ->
+        Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
+      method setAttributeNode : Dom.attr Js.t -> Dom.attr Js.t Js.opt Js.meth
+      method setAttributeNodeNS :
+        Dom.attr Js.t -> Dom.attr Js.t Js.opt Js.meth
       method style : Dom_html.cssStyleDeclaration Js.t Js.readonly_prop
       method systemLanguage : Dom_svg.stringList Js.t Js.readonly_prop
       method tagName : Js.js_string Js.t Js.readonly_prop
@@ -1462,6 +1728,14 @@
       method firstChild : Dom.node Js.t Js.opt Js.prop
       method getAttribute :
         Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method getAttributeNS :
+        Js.js_string Js.t ->
+        Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method getAttributeNode :
+        Js.js_string Js.t -> Dom.attr Js.t Js.opt Js.meth
+      method getAttributeNodeNS :
+        Js.js_string Js.t ->
+        Js.js_string Js.t -> Dom.attr Js.t Js.opt Js.meth
       method getBBox : Dom_svg.rect Js.t Js.meth
       method getCTM : Dom_svg.matrix Js.t Js.meth
       method getElementsByTagName :
@@ -1470,6 +1744,8 @@
       method getTransformToElement :
         Dom_svg.element Js.t -> Dom_svg.matrix Js.t Js.meth
       method hasAttribute : Js.js_string Js.t -> bool Js.t Js.meth
+      method hasAttributeNS :
+        Js.js_string Js.t -> Js.js_string Js.t -> bool Js.t Js.meth
       method hasChildNodes : bool Js.t Js.meth
       method hasExtension : Js.js_string Js.t -> bool Js.t Js.meth
       method id : Js.js_string Js.t Js.prop
@@ -1485,6 +1761,9 @@
       method parentNode : Dom.node Js.t Js.opt Js.prop
       method previousSibling : Dom.node Js.t Js.opt Js.prop
       method removeAttribute : Js.js_string Js.t -> unit Js.meth
+      method removeAttributeNS :
+        Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
+      method removeAttributeNode : Dom.attr Js.t -> Dom.attr Js.t Js.meth
       method removeChild : Dom.node Js.t -> Dom.node Js.t Js.meth
       method replaceChild :
         Dom.node Js.t -> Dom.node Js.t -> Dom.node Js.t Js.meth
@@ -1494,6 +1773,12 @@
       method ry : Dom_svg.animatedLength Js.t Js.readonly_prop
       method setAttribute :
         Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
+      method setAttributeNS :
+        Js.js_string Js.t ->
+        Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
+      method setAttributeNode : Dom.attr Js.t -> Dom.attr Js.t Js.opt Js.meth
+      method setAttributeNodeNS :
+        Dom.attr Js.t -> Dom.attr Js.t Js.opt Js.meth
       method style : Dom_html.cssStyleDeclaration Js.t Js.readonly_prop
       method systemLanguage : Dom_svg.stringList Js.t Js.readonly_prop
       method tagName : Js.js_string Js.t Js.readonly_prop
@@ -1518,6 +1803,14 @@
       method firstChild : Dom.node Js.t Js.opt Js.prop
       method getAttribute :
         Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method getAttributeNS :
+        Js.js_string Js.t ->
+        Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method getAttributeNode :
+        Js.js_string Js.t -> Dom.attr Js.t Js.opt Js.meth
+      method getAttributeNodeNS :
+        Js.js_string Js.t ->
+        Js.js_string Js.t -> Dom.attr Js.t Js.opt Js.meth
       method getBBox : rect Js.t Js.meth
       method getCTM : matrix Js.t Js.meth
       method getElementsByTagName :
@@ -1525,6 +1818,8 @@
       method getScreenCTM : matrix Js.t Js.meth
       method getTransformToElement : element Js.t -> matrix Js.t Js.meth
       method hasAttribute : Js.js_string Js.t -> bool Js.t Js.meth
+      method hasAttributeNS :
+        Js.js_string Js.t -> Js.js_string Js.t -> bool Js.t Js.meth
       method hasChildNodes : bool Js.t Js.meth
       method hasExtension : Js.js_string Js.t -> bool Js.t Js.meth
       method id : Js.js_string Js.t Js.prop
@@ -1594,6 +1889,9 @@
       method parentNode : Dom.node Js.t Js.opt Js.prop
       method previousSibling : Dom.node Js.t Js.opt Js.prop
       method removeAttribute : Js.js_string Js.t -> unit Js.meth
+      method removeAttributeNS :
+        Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
+      method removeAttributeNode : Dom.attr Js.t -> Dom.attr Js.t Js.meth
       method removeChild : Dom.node Js.t -> Dom.node Js.t Js.meth
       method replaceChild :
         Dom.node Js.t -> Dom.node Js.t -> Dom.node Js.t Js.meth
@@ -1601,6 +1899,12 @@
       method requiredFeatures : stringList Js.t Js.readonly_prop
       method setAttribute :
         Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
+      method setAttributeNS :
+        Js.js_string Js.t ->
+        Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
+      method setAttributeNode : Dom.attr Js.t -> Dom.attr Js.t Js.opt Js.meth
+      method setAttributeNodeNS :
+        Dom.attr Js.t -> Dom.attr Js.t Js.opt Js.meth
       method style : Dom_html.cssStyleDeclaration Js.t Js.readonly_prop
       method systemLanguage : stringList Js.t Js.readonly_prop
       method tagName : Js.js_string Js.t Js.readonly_prop
@@ -1635,6 +1939,14 @@
       method firstChild : Dom.node Js.t Js.opt Js.prop
       method getAttribute :
         Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method getAttributeNS :
+        Js.js_string Js.t ->
+        Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method getAttributeNode :
+        Js.js_string Js.t -> Dom.attr Js.t Js.opt Js.meth
+      method getAttributeNodeNS :
+        Js.js_string Js.t ->
+        Js.js_string Js.t -> Dom.attr Js.t Js.opt Js.meth
       method getBBox : rect Js.t Js.meth
       method getCTM : matrix Js.t Js.meth
       method getElementsByTagName :
@@ -1642,6 +1954,8 @@
       method getScreenCTM : matrix Js.t Js.meth
       method getTransformToElement : element Js.t -> matrix Js.t Js.meth
       method hasAttribute : Js.js_string Js.t -> bool Js.t Js.meth
+      method hasAttributeNS :
+        Js.js_string Js.t -> Js.js_string Js.t -> bool Js.t Js.meth
       method hasChildNodes : bool Js.t Js.meth
       method hasExtension : Js.js_string Js.t -> bool Js.t Js.meth
       method id : Js.js_string Js.t Js.prop
@@ -1658,6 +1972,9 @@
       method points : Dom_svg.pointList Js.t Js.readonly_prop
       method previousSibling : Dom.node Js.t Js.opt Js.prop
       method removeAttribute : Js.js_string Js.t -> unit Js.meth
+      method removeAttributeNS :
+        Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
+      method removeAttributeNode : Dom.attr Js.t -> Dom.attr Js.t Js.meth
       method removeChild : Dom.node Js.t -> Dom.node Js.t Js.meth
       method replaceChild :
         Dom.node Js.t -> Dom.node Js.t -> Dom.node Js.t Js.meth
@@ -1665,6 +1982,12 @@
       method requiredFeatures : stringList Js.t Js.readonly_prop
       method setAttribute :
         Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
+      method setAttributeNS :
+        Js.js_string Js.t ->
+        Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
+      method setAttributeNode : Dom.attr Js.t -> Dom.attr Js.t Js.opt Js.meth
+      method setAttributeNodeNS :
+        Dom.attr Js.t -> Dom.attr Js.t Js.opt Js.meth
       method style : Dom_html.cssStyleDeclaration Js.t Js.readonly_prop
       method systemLanguage : stringList Js.t Js.readonly_prop
       method tagName : Js.js_string Js.t Js.readonly_prop
@@ -1690,6 +2013,14 @@
       method firstChild : Dom.node Js.t Js.opt Js.prop
       method getAttribute :
         Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method getAttributeNS :
+        Js.js_string Js.t ->
+        Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method getAttributeNode :
+        Js.js_string Js.t -> Dom.attr Js.t Js.opt Js.meth
+      method getAttributeNodeNS :
+        Js.js_string Js.t ->
+        Js.js_string Js.t -> Dom.attr Js.t Js.opt Js.meth
       method getBBox : rect Js.t Js.meth
       method getCTM : matrix Js.t Js.meth
       method getElementsByTagName :
@@ -1697,6 +2028,8 @@
       method getScreenCTM : matrix Js.t Js.meth
       method getTransformToElement : element Js.t -> matrix Js.t Js.meth
       method hasAttribute : Js.js_string Js.t -> bool Js.t Js.meth
+      method hasAttributeNS :
+        Js.js_string Js.t -> Js.js_string Js.t -> bool Js.t Js.meth
       method hasChildNodes : bool Js.t Js.meth
       method hasExtension : Js.js_string Js.t -> bool Js.t Js.meth
       method id : Js.js_string Js.t Js.prop
@@ -1713,6 +2046,9 @@
       method points : Dom_svg.pointList Js.t Js.readonly_prop
       method previousSibling : Dom.node Js.t Js.opt Js.prop
       method removeAttribute : Js.js_string Js.t -> unit Js.meth
+      method removeAttributeNS :
+        Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
+      method removeAttributeNode : Dom.attr Js.t -> Dom.attr Js.t Js.meth
       method removeChild : Dom.node Js.t -> Dom.node Js.t Js.meth
       method replaceChild :
         Dom.node Js.t -> Dom.node Js.t -> Dom.node Js.t Js.meth
@@ -1720,6 +2056,12 @@
       method requiredFeatures : stringList Js.t Js.readonly_prop
       method setAttribute :
         Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
+      method setAttributeNS :
+        Js.js_string Js.t ->
+        Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
+      method setAttributeNode : Dom.attr Js.t -> Dom.attr Js.t Js.opt Js.meth
+      method setAttributeNodeNS :
+        Dom.attr Js.t -> Dom.attr Js.t Js.opt Js.meth
       method style : Dom_html.cssStyleDeclaration Js.t Js.readonly_prop
       method systemLanguage : stringList Js.t Js.readonly_prop
       method tagName : Js.js_string Js.t Js.readonly_prop
@@ -1743,6 +2085,14 @@
       method firstChild : Dom.node Js.t Js.opt Js.prop
       method getAttribute :
         Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method getAttributeNS :
+        Js.js_string Js.t ->
+        Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method getAttributeNode :
+        Js.js_string Js.t -> Dom.attr Js.t Js.opt Js.meth
+      method getAttributeNodeNS :
+        Js.js_string Js.t ->
+        Js.js_string Js.t -> Dom.attr Js.t Js.opt Js.meth
       method getCharNumAtPosition : Dom_svg.point -> int Js.meth
       method getComputedTextLength : float Js.meth
       method getElementsByTagName :
@@ -1754,6 +2104,8 @@
       method getStartPositionOfChar : int -> Dom_svg.point Js.t Js.meth
       method getSubStringLength : int -> int -> float Js.meth
       method hasAttribute : Js.js_string Js.t -> bool Js.t Js.meth
+      method hasAttributeNS :
+        Js.js_string Js.t -> Js.js_string Js.t -> bool Js.t Js.meth
       method hasChildNodes : bool Js.t Js.meth
       method hasExtension : Js.js_string Js.t -> bool Js.t Js.meth
       method id : Js.js_string Js.t Js.prop
@@ -1824,6 +2176,9 @@
       method parentNode : Dom.node Js.t Js.opt Js.prop
       method previousSibling : Dom.node Js.t Js.opt Js.prop
       method removeAttribute : Js.js_string Js.t -> unit Js.meth
+      method removeAttributeNS :
+        Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
+      method removeAttributeNode : Dom.attr Js.t -> Dom.attr Js.t Js.meth
       method removeChild : Dom.node Js.t -> Dom.node Js.t Js.meth
       method replaceChild :
         Dom.node Js.t -> Dom.node Js.t -> Dom.node Js.t Js.meth
@@ -1832,6 +2187,12 @@
       method selectSubString : int -> int -> unit Js.meth
       method setAttribute :
         Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
+      method setAttributeNS :
+        Js.js_string Js.t ->
+        Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
+      method setAttributeNode : Dom.attr Js.t -> Dom.attr Js.t Js.opt Js.meth
+      method setAttributeNodeNS :
+        Dom.attr Js.t -> Dom.attr Js.t Js.opt Js.meth
       method style : Dom_html.cssStyleDeclaration Js.t Js.readonly_prop
       method systemLanguage : stringList Js.t Js.readonly_prop
       method tagName : Js.js_string Js.t Js.readonly_prop
@@ -1857,6 +2218,14 @@
       method firstChild : Dom.node Js.t Js.opt Js.prop
       method getAttribute :
         Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method getAttributeNS :
+        Js.js_string Js.t ->
+        Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method getAttributeNode :
+        Js.js_string Js.t -> Dom.attr Js.t Js.opt Js.meth
+      method getAttributeNodeNS :
+        Js.js_string Js.t ->
+        Js.js_string Js.t -> Dom.attr Js.t Js.opt Js.meth
       method getCharNumAtPosition : Dom_svg.point -> int Js.meth
       method getComputedTextLength : float Js.meth
       method getElementsByTagName :
@@ -1868,6 +2237,8 @@
       method getStartPositionOfChar : int -> Dom_svg.point Js.t Js.meth
       method getSubStringLength : int -> int -> float Js.meth
       method hasAttribute : Js.js_string Js.t -> bool Js.t Js.meth
+      method hasAttributeNS :
+        Js.js_string Js.t -> Js.js_string Js.t -> bool Js.t Js.meth
       method hasChildNodes : bool Js.t Js.meth
       method hasExtension : Js.js_string Js.t -> bool Js.t Js.meth
       method id : Js.js_string Js.t Js.prop
@@ -1938,6 +2309,9 @@
       method parentNode : Dom.node Js.t Js.opt Js.prop
       method previousSibling : Dom.node Js.t Js.opt Js.prop
       method removeAttribute : Js.js_string Js.t -> unit Js.meth
+      method removeAttributeNS :
+        Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
+      method removeAttributeNode : Dom.attr Js.t -> Dom.attr Js.t Js.meth
       method removeChild : Dom.node Js.t -> Dom.node Js.t Js.meth
       method replaceChild :
         Dom.node Js.t -> Dom.node Js.t -> Dom.node Js.t Js.meth
@@ -1947,6 +2321,12 @@
       method selectSubString : int -> int -> unit Js.meth
       method setAttribute :
         Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
+      method setAttributeNS :
+        Js.js_string Js.t ->
+        Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
+      method setAttributeNode : Dom.attr Js.t -> Dom.attr Js.t Js.opt Js.meth
+      method setAttributeNodeNS :
+        Dom.attr Js.t -> Dom.attr Js.t Js.opt Js.meth
       method style : Dom_html.cssStyleDeclaration Js.t Js.readonly_prop
       method systemLanguage : stringList Js.t Js.readonly_prop
       method tagName : Js.js_string Js.t Js.readonly_prop
@@ -1975,6 +2355,14 @@
       method firstChild : Dom.node Js.t Js.opt Js.prop
       method getAttribute :
         Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method getAttributeNS :
+        Js.js_string Js.t ->
+        Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method getAttributeNode :
+        Js.js_string Js.t -> Dom.attr Js.t Js.opt Js.meth
+      method getAttributeNodeNS :
+        Js.js_string Js.t ->
+        Js.js_string Js.t -> Dom.attr Js.t Js.opt Js.meth
       method getBBox : rect Js.t Js.meth
       method getCTM : matrix Js.t Js.meth
       method getCharNumAtPosition : Dom_svg.point -> int Js.meth
@@ -1990,6 +2378,8 @@
       method getSubStringLength : int -> int -> float Js.meth
       method getTransformToElement : element Js.t -> matrix Js.t Js.meth
       method hasAttribute : Js.js_string Js.t -> bool Js.t Js.meth
+      method hasAttributeNS :
+        Js.js_string Js.t -> Js.js_string Js.t -> bool Js.t Js.meth
       method hasChildNodes : bool Js.t Js.meth
       method hasExtension : Js.js_string Js.t -> bool Js.t Js.meth
       method id : Js.js_string Js.t Js.prop
@@ -2061,6 +2451,9 @@
       method parentNode : Dom.node Js.t Js.opt Js.prop
       method previousSibling : Dom.node Js.t Js.opt Js.prop
       method removeAttribute : Js.js_string Js.t -> unit Js.meth
+      method removeAttributeNS :
+        Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
+      method removeAttributeNode : Dom.attr Js.t -> Dom.attr Js.t Js.meth
       method removeChild : Dom.node Js.t -> Dom.node Js.t Js.meth
       method replaceChild :
         Dom.node Js.t -> Dom.node Js.t -> Dom.node Js.t Js.meth
@@ -2070,6 +2463,12 @@
       method selectSubString : int -> int -> unit Js.meth
       method setAttribute :
         Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
+      method setAttributeNS :
+        Js.js_string Js.t ->
+        Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
+      method setAttributeNode : Dom.attr Js.t -> Dom.attr Js.t Js.opt Js.meth
+      method setAttributeNodeNS :
+        Dom.attr Js.t -> Dom.attr Js.t Js.opt Js.meth
       method style : Dom_html.cssStyleDeclaration Js.t Js.readonly_prop
       method systemLanguage : stringList Js.t Js.readonly_prop
       method tagName : Js.js_string Js.t Js.readonly_prop
@@ -2099,6 +2498,14 @@
       method firstChild : Dom.node Js.t Js.opt Js.prop
       method getAttribute :
         Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method getAttributeNS :
+        Js.js_string Js.t ->
+        Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method getAttributeNode :
+        Js.js_string Js.t -> Dom.attr Js.t Js.opt Js.meth
+      method getAttributeNodeNS :
+        Js.js_string Js.t ->
+        Js.js_string Js.t -> Dom.attr Js.t Js.opt Js.meth
       method getCharNumAtPosition : Dom_svg.point -> int Js.meth
       method getComputedTextLength : float Js.meth
       method getElementsByTagName :
@@ -2110,6 +2517,8 @@
       method getStartPositionOfChar : int -> Dom_svg.point Js.t Js.meth
       method getSubStringLength : int -> int -> float Js.meth
       method hasAttribute : Js.js_string Js.t -> bool Js.t Js.meth
+      method hasAttributeNS :
+        Js.js_string Js.t -> Js.js_string Js.t -> bool Js.t Js.meth
       method hasChildNodes : bool Js.t Js.meth
       method hasExtension : Js.js_string Js.t -> bool Js.t Js.meth
       method href : animatedString Js.t Js.readonly_prop
@@ -2181,6 +2590,9 @@
       method parentNode : Dom.node Js.t Js.opt Js.prop
       method previousSibling : Dom.node Js.t Js.opt Js.prop
       method removeAttribute : Js.js_string Js.t -> unit Js.meth
+      method removeAttributeNS :
+        Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
+      method removeAttributeNode : Dom.attr Js.t -> Dom.attr Js.t Js.meth
       method removeChild : Dom.node Js.t -> Dom.node Js.t Js.meth
       method replaceChild :
         Dom.node Js.t -> Dom.node Js.t -> Dom.node Js.t Js.meth
@@ -2190,6 +2602,12 @@
       method selectSubString : int -> int -> unit Js.meth
       method setAttribute :
         Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
+      method setAttributeNS :
+        Js.js_string Js.t ->
+        Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
+      method setAttributeNode : Dom.attr Js.t -> Dom.attr Js.t Js.opt Js.meth
+      method setAttributeNodeNS :
+        Dom.attr Js.t -> Dom.attr Js.t Js.opt Js.meth
       method style : Dom_html.cssStyleDeclaration Js.t Js.readonly_prop
       method systemLanguage : stringList Js.t Js.readonly_prop
       method tagName : Js.js_string Js.t Js.readonly_prop
@@ -2217,6 +2635,14 @@
       method firstChild : Dom.node Js.t Js.opt Js.prop
       method getAttribute :
         Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method getAttributeNS :
+        Js.js_string Js.t ->
+        Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method getAttributeNode :
+        Js.js_string Js.t -> Dom.attr Js.t Js.opt Js.meth
+      method getAttributeNodeNS :
+        Js.js_string Js.t ->
+        Js.js_string Js.t -> Dom.attr Js.t Js.opt Js.meth
       method getCharNumAtPosition : Dom_svg.point -> int Js.meth
       method getComputedTextLength : float Js.meth
       method getElementsByTagName :
@@ -2228,6 +2654,8 @@
       method getStartPositionOfChar : int -> Dom_svg.point Js.t Js.meth
       method getSubStringLength : int -> int -> float Js.meth
       method hasAttribute : Js.js_string Js.t -> bool Js.t Js.meth
+      method hasAttributeNS :
+        Js.js_string Js.t -> Js.js_string Js.t -> bool Js.t Js.meth
       method hasChildNodes : bool Js.t Js.meth
       method hasExtension : Js.js_string Js.t -> bool Js.t Js.meth
       method href : animatedString Js.t Js.readonly_prop
@@ -2300,6 +2728,9 @@
       method parentNode : Dom.node Js.t Js.opt Js.prop
       method previousSibling : Dom.node Js.t Js.opt Js.prop
       method removeAttribute : Js.js_string Js.t -> unit Js.meth
+      method removeAttributeNS :
+        Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
+      method removeAttributeNode : Dom.attr Js.t -> Dom.attr Js.t Js.meth
       method removeChild : Dom.node Js.t -> Dom.node Js.t Js.meth
       method replaceChild :
         Dom.node Js.t -> Dom.node Js.t -> Dom.node Js.t Js.meth
@@ -2308,6 +2739,12 @@
       method selectSubString : int -> int -> unit Js.meth
       method setAttribute :
         Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
+      method setAttributeNS :
+        Js.js_string Js.t ->
+        Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
+      method setAttributeNode : Dom.attr Js.t -> Dom.attr Js.t Js.opt Js.meth
+      method setAttributeNodeNS :
+        Dom.attr Js.t -> Dom.attr Js.t Js.opt Js.meth
       method spacing : Dom_svg.textPathElementSpacing Js.readonly_prop
       method startOffset : Dom_svg.animatedLength Js.t Js.readonly_prop
       method style : Dom_html.cssStyleDeclaration Js.t Js.readonly_prop
@@ -2336,6 +2773,14 @@
       method format : Js.js_string Js.t Js.prop
       method getAttribute :
         Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method getAttributeNS :
+        Js.js_string Js.t ->
+        Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method getAttributeNode :
+        Js.js_string Js.t -> Dom.attr Js.t Js.opt Js.meth
+      method getAttributeNodeNS :
+        Js.js_string Js.t ->
+        Js.js_string Js.t -> Dom.attr Js.t Js.opt Js.meth
       method getCharNumAtPosition : Dom_svg.point -> int Js.meth
       method getComputedTextLength : float Js.meth
       method getElementsByTagName :
@@ -2348,6 +2793,8 @@
       method getSubStringLength : int -> int -> float Js.meth
       method glyphRef : Js.js_string Js.t Js.prop
       method hasAttribute : Js.js_string Js.t -> bool Js.t Js.meth
+      method hasAttributeNS :
+        Js.js_string Js.t -> Js.js_string Js.t -> bool Js.t Js.meth
       method hasChildNodes : bool Js.t Js.meth
       method hasExtension : Js.js_string Js.t -> bool Js.t Js.meth
       method href : animatedString Js.t Js.readonly_prop
@@ -2419,6 +2866,9 @@
       method parentNode : Dom.node Js.t Js.opt Js.prop
       method previousSibling : Dom.node Js.t Js.opt Js.prop
       method removeAttribute : Js.js_string Js.t -> unit Js.meth
+      method removeAttributeNS :
+        Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
+      method removeAttributeNode : Dom.attr Js.t -> Dom.attr Js.t Js.meth
       method removeChild : Dom.node Js.t -> Dom.node Js.t Js.meth
       method replaceChild :
         Dom.node Js.t -> Dom.node Js.t -> Dom.node Js.t Js.meth
@@ -2428,6 +2878,12 @@
       method selectSubString : int -> int -> unit Js.meth
       method setAttribute :
         Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
+      method setAttributeNS :
+        Js.js_string Js.t ->
+        Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
+      method setAttributeNode : Dom.attr Js.t -> Dom.attr Js.t Js.opt Js.meth
+      method setAttributeNodeNS :
+        Dom.attr Js.t -> Dom.attr Js.t Js.opt Js.meth
       method style : Dom_html.cssStyleDeclaration Js.t Js.readonly_prop
       method systemLanguage : stringList Js.t Js.readonly_prop
       method tagName : Js.js_string Js.t Js.readonly_prop
@@ -2456,10 +2912,20 @@
       method format : Js.js_string Js.t Js.prop
       method getAttribute :
         Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method getAttributeNS :
+        Js.js_string Js.t ->
+        Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method getAttributeNode :
+        Js.js_string Js.t -> Dom.attr Js.t Js.opt Js.meth
+      method getAttributeNodeNS :
+        Js.js_string Js.t ->
+        Js.js_string Js.t -> Dom.attr Js.t Js.opt Js.meth
       method getElementsByTagName :
         Js.js_string Js.t -> Dom.element Dom.nodeList Js.t Js.meth
       method glyphRef : Js.js_string Js.t Js.prop
       method hasAttribute : Js.js_string Js.t -> bool Js.t Js.meth
+      method hasAttributeNS :
+        Js.js_string Js.t -> Js.js_string Js.t -> bool Js.t Js.meth
       method hasChildNodes : bool Js.t Js.meth
       method href : animatedString Js.t Js.readonly_prop
       method id : Js.js_string Js.t Js.prop
@@ -2474,11 +2940,20 @@
       method parentNode : Dom.node Js.t Js.opt Js.prop
       method previousSibling : Dom.node Js.t Js.opt Js.prop
       method removeAttribute : Js.js_string Js.t -> unit Js.meth
+      method removeAttributeNS :
+        Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
+      method removeAttributeNode : Dom.attr Js.t -> Dom.attr Js.t Js.meth
       method removeChild : Dom.node Js.t -> Dom.node Js.t Js.meth
       method replaceChild :
         Dom.node Js.t -> Dom.node Js.t -> Dom.node Js.t Js.meth
       method setAttribute :
         Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
+      method setAttributeNS :
+        Js.js_string Js.t ->
+        Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
+      method setAttributeNode : Dom.attr Js.t -> Dom.attr Js.t Js.opt Js.meth
+      method setAttributeNodeNS :
+        Dom.attr Js.t -> Dom.attr Js.t Js.opt Js.meth
       method style : Dom_html.cssStyleDeclaration Js.t Js.readonly_prop
       method tagName : Js.js_string Js.t Js.readonly_prop
       method viewportElement : element Js.t Js.readonly_prop
@@ -2499,11 +2974,21 @@
       method firstChild : Dom.node Js.t Js.opt Js.prop
       method getAttribute :
         Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method getAttributeNS :
+        Js.js_string Js.t ->
+        Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method getAttributeNode :
+        Js.js_string Js.t -> Dom.attr Js.t Js.opt Js.meth
+      method getAttributeNodeNS :
+        Js.js_string Js.t ->
+        Js.js_string Js.t -> Dom.attr Js.t Js.opt Js.meth
       method getElementsByTagName :
         Js.js_string Js.t -> Dom.element Dom.nodeList Js.t Js.meth
       method gradientTransform :
         Dom_svg.animatedTransformList Js.t Js.readonly_prop
       method hasAttribute : Js.js_string Js.t -> bool Js.t Js.meth
+      method hasAttributeNS :
+        Js.js_string Js.t -> Js.js_string Js.t -> bool Js.t Js.meth
       method hasChildNodes : bool Js.t Js.meth
       method href : animatedString Js.t Js.readonly_prop
       method id : Js.js_string Js.t Js.prop
@@ -2518,11 +3003,20 @@
       method parentNode : Dom.node Js.t Js.opt Js.prop
       method previousSibling : Dom.node Js.t Js.opt Js.prop
       method removeAttribute : Js.js_string Js.t -> unit Js.meth
+      method removeAttributeNS :
+        Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
+      method removeAttributeNode : Dom.attr Js.t -> Dom.attr Js.t Js.meth
       method removeChild : Dom.node Js.t -> Dom.node Js.t Js.meth
       method replaceChild :
         Dom.node Js.t -> Dom.node Js.t -> Dom.node Js.t Js.meth
       method setAttribute :
         Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
+      method setAttributeNS :
+        Js.js_string Js.t ->
+        Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
+      method setAttributeNode : Dom.attr Js.t -> Dom.attr Js.t Js.opt Js.meth
+      method setAttributeNodeNS :
+        Dom.attr Js.t -> Dom.attr Js.t Js.opt Js.meth
       method spreadMethod :
         Dom_svg.animatedSpreadMethod Js.t Js.readonly_prop
       method style : Dom_html.cssStyleDeclaration Js.t Js.readonly_prop
@@ -2542,11 +3036,21 @@
       method firstChild : Dom.node Js.t Js.opt Js.prop
       method getAttribute :
         Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method getAttributeNS :
+        Js.js_string Js.t ->
+        Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method getAttributeNode :
+        Js.js_string Js.t -> Dom.attr Js.t Js.opt Js.meth
+      method getAttributeNodeNS :
+        Js.js_string Js.t ->
+        Js.js_string Js.t -> Dom.attr Js.t Js.opt Js.meth
       method getElementsByTagName :
         Js.js_string Js.t -> Dom.element Dom.nodeList Js.t Js.meth
       method gradientTransform :
         Dom_svg.animatedTransformList Js.t Js.readonly_prop
       method hasAttribute : Js.js_string Js.t -> bool Js.t Js.meth
+      method hasAttributeNS :
+        Js.js_string Js.t -> Js.js_string Js.t -> bool Js.t Js.meth
       method hasChildNodes : bool Js.t Js.meth
       method href : animatedString Js.t Js.readonly_prop
       method id : Js.js_string Js.t Js.prop
@@ -2561,11 +3065,20 @@
       method parentNode : Dom.node Js.t Js.opt Js.prop
       method previousSibling : Dom.node Js.t Js.opt Js.prop
       method removeAttribute : Js.js_string Js.t -> unit Js.meth
+      method removeAttributeNS :
+        Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
+      method removeAttributeNode : Dom.attr Js.t -> Dom.attr Js.t Js.meth
       method removeChild : Dom.node Js.t -> Dom.node Js.t Js.meth
       method replaceChild :
         Dom.node Js.t -> Dom.node Js.t -> Dom.node Js.t Js.meth
       method setAttribute :
         Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
+      method setAttributeNS :
+        Js.js_string Js.t ->
+        Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
+      method setAttributeNode : Dom.attr Js.t -> Dom.attr Js.t Js.opt Js.meth
+      method setAttributeNodeNS :
+        Dom.attr Js.t -> Dom.attr Js.t Js.opt Js.meth
       method spreadMethod :
         Dom_svg.animatedSpreadMethod Js.t Js.readonly_prop
       method style : Dom_html.cssStyleDeclaration Js.t Js.readonly_prop
@@ -2593,11 +3106,21 @@
       method fy : Dom_svg.animatedLength Js.t Js.readonly_prop
       method getAttribute :
         Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method getAttributeNS :
+        Js.js_string Js.t ->
+        Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method getAttributeNode :
+        Js.js_string Js.t -> Dom.attr Js.t Js.opt Js.meth
+      method getAttributeNodeNS :
+        Js.js_string Js.t ->
+        Js.js_string Js.t -> Dom.attr Js.t Js.opt Js.meth
       method getElementsByTagName :
         Js.js_string Js.t -> Dom.element Dom.nodeList Js.t Js.meth
       method gradientTransform :
         Dom_svg.animatedTransformList Js.t Js.readonly_prop
       method hasAttribute : Js.js_string Js.t -> bool Js.t Js.meth
+      method hasAttributeNS :
+        Js.js_string Js.t -> Js.js_string Js.t -> bool Js.t Js.meth
       method hasChildNodes : bool Js.t Js.meth
       method href : animatedString Js.t Js.readonly_prop
       method id : Js.js_string Js.t Js.prop
@@ -2613,11 +3136,20 @@
       method previousSibling : Dom.node Js.t Js.opt Js.prop
       method r : Dom_svg.animatedLength Js.t Js.readonly_prop
       method removeAttribute : Js.js_string Js.t -> unit Js.meth
+      method removeAttributeNS :
+        Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
+      method removeAttributeNode : Dom.attr Js.t -> Dom.attr Js.t Js.meth
       method removeChild : Dom.node Js.t -> Dom.node Js.t Js.meth
       method replaceChild :
         Dom.node Js.t -> Dom.node Js.t -> Dom.node Js.t Js.meth
       method setAttribute :
         Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
+      method setAttributeNS :
+        Js.js_string Js.t ->
+        Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
+      method setAttributeNode : Dom.attr Js.t -> Dom.attr Js.t Js.opt Js.meth
+      method setAttributeNodeNS :
+        Dom.attr Js.t -> Dom.attr Js.t Js.opt Js.meth
       method spreadMethod :
         Dom_svg.animatedSpreadMethod Js.t Js.readonly_prop
       method style : Dom_html.cssStyleDeclaration Js.t Js.readonly_prop
@@ -2637,9 +3169,19 @@
       method firstChild : Dom.node Js.t Js.opt Js.prop
       method getAttribute :
         Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method getAttributeNS :
+        Js.js_string Js.t ->
+        Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method getAttributeNode :
+        Js.js_string Js.t -> Dom.attr Js.t Js.opt Js.meth
+      method getAttributeNodeNS :
+        Js.js_string Js.t ->
+        Js.js_string Js.t -> Dom.attr Js.t Js.opt Js.meth
       method getElementsByTagName :
         Js.js_string Js.t -> Dom.element Dom.nodeList Js.t Js.meth
       method hasAttribute : Js.js_string Js.t -> bool Js.t Js.meth
+      method hasAttributeNS :
+        Js.js_string Js.t -> Js.js_string Js.t -> bool Js.t Js.meth
       method hasChildNodes : bool Js.t Js.meth
       method id : Js.js_string Js.t Js.prop
       method insertBefore :
@@ -2654,11 +3196,20 @@
       method parentNode : Dom.node Js.t Js.opt Js.prop
       method previousSibling : Dom.node Js.t Js.opt Js.prop
       method removeAttribute : Js.js_string Js.t -> unit Js.meth
+      method removeAttributeNS :
+        Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
+      method removeAttributeNode : Dom.attr Js.t -> Dom.attr Js.t Js.meth
       method removeChild : Dom.node Js.t -> Dom.node Js.t Js.meth
       method replaceChild :
         Dom.node Js.t -> Dom.node Js.t -> Dom.node Js.t Js.meth
       method setAttribute :
         Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
+      method setAttributeNS :
+        Js.js_string Js.t ->
+        Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
+      method setAttributeNode : Dom.attr Js.t -> Dom.attr Js.t Js.opt Js.meth
+      method setAttributeNodeNS :
+        Dom.attr Js.t -> Dom.attr Js.t Js.opt Js.meth
       method style : Dom_html.cssStyleDeclaration Js.t Js.readonly_prop
       method tagName : Js.js_string Js.t Js.readonly_prop
       method viewportElement : element Js.t Js.readonly_prop
@@ -2678,9 +3229,19 @@
       method firstChild : Dom.node Js.t Js.opt Js.prop
       method getAttribute :
         Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method getAttributeNS :
+        Js.js_string Js.t ->
+        Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method getAttributeNode :
+        Js.js_string Js.t -> Dom.attr Js.t Js.opt Js.meth
+      method getAttributeNodeNS :
+        Js.js_string Js.t ->
+        Js.js_string Js.t -> Dom.attr Js.t Js.opt Js.meth
       method getElementsByTagName :
         Js.js_string Js.t -> Dom.element Dom.nodeList Js.t Js.meth
       method hasAttribute : Js.js_string Js.t -> bool Js.t Js.meth
+      method hasAttributeNS :
+        Js.js_string Js.t -> Js.js_string Js.t -> bool Js.t Js.meth
       method hasChildNodes : bool Js.t Js.meth
       method hasExtension : Js.js_string Js.t -> bool Js.t Js.meth
       method height : Dom_svg.animatedLength Js.t Js.readonly_prop
@@ -2701,6 +3262,9 @@
         animatedPreserveAspectRatio Js.t Js.readonly_prop
       method previousSibling : Dom.node Js.t Js.opt Js.prop
       method removeAttribute : Js.js_string Js.t -> unit Js.meth
+      method removeAttributeNS :
+        Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
+      method removeAttributeNode : Dom.attr Js.t -> Dom.attr Js.t Js.meth
       method removeChild : Dom.node Js.t -> Dom.node Js.t Js.meth
       method replaceChild :
         Dom.node Js.t -> Dom.node Js.t -> Dom.node Js.t Js.meth
@@ -2708,6 +3272,12 @@
       method requiredFeatures : stringList Js.t Js.readonly_prop
       method setAttribute :
         Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
+      method setAttributeNS :
+        Js.js_string Js.t ->
+        Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
+      method setAttributeNode : Dom.attr Js.t -> Dom.attr Js.t Js.opt Js.meth
+      method setAttributeNodeNS :
+        Dom.attr Js.t -> Dom.attr Js.t Js.opt Js.meth
       method style : Dom_html.cssStyleDeclaration Js.t Js.readonly_prop
       method systemLanguage : stringList Js.t Js.readonly_prop
       method tagName : Js.js_string Js.t Js.readonly_prop
@@ -2735,6 +3305,14 @@
       method firstChild : Dom.node Js.t Js.opt Js.prop
       method getAttribute :
         Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method getAttributeNS :
+        Js.js_string Js.t ->
+        Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method getAttributeNode :
+        Js.js_string Js.t -> Dom.attr Js.t Js.opt Js.meth
+      method getAttributeNodeNS :
+        Js.js_string Js.t ->
+        Js.js_string Js.t -> Dom.attr Js.t Js.opt Js.meth
       method getBBox : rect Js.t Js.meth
       method getCTM : matrix Js.t Js.meth
       method getElementsByTagName :
@@ -2742,6 +3320,8 @@
       method getScreenCTM : matrix Js.t Js.meth
       method getTransformToElement : element Js.t -> matrix Js.t Js.meth
       method hasAttribute : Js.js_string Js.t -> bool Js.t Js.meth
+      method hasAttributeNS :
+        Js.js_string Js.t -> Js.js_string Js.t -> bool Js.t Js.meth
       method hasChildNodes : bool Js.t Js.meth
       method hasExtension : Js.js_string Js.t -> bool Js.t Js.meth
       method id : Js.js_string Js.t Js.prop
@@ -2757,6 +3337,9 @@
       method parentNode : Dom.node Js.t Js.opt Js.prop
       method previousSibling : Dom.node Js.t Js.opt Js.prop
       method removeAttribute : Js.js_string Js.t -> unit Js.meth
+      method removeAttributeNS :
+        Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
+      method removeAttributeNode : Dom.attr Js.t -> Dom.attr Js.t Js.meth
       method removeChild : Dom.node Js.t -> Dom.node Js.t Js.meth
       method replaceChild :
         Dom.node Js.t -> Dom.node Js.t -> Dom.node Js.t Js.meth
@@ -2764,6 +3347,12 @@
       method requiredFeatures : stringList Js.t Js.readonly_prop
       method setAttribute :
         Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
+      method setAttributeNS :
+        Js.js_string Js.t ->
+        Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
+      method setAttributeNode : Dom.attr Js.t -> Dom.attr Js.t Js.opt Js.meth
+      method setAttributeNodeNS :
+        Dom.attr Js.t -> Dom.attr Js.t Js.opt Js.meth
       method style : Dom_html.cssStyleDeclaration Js.t Js.readonly_prop
       method systemLanguage : stringList Js.t Js.readonly_prop
       method tagName : Js.js_string Js.t Js.readonly_prop
@@ -2787,9 +3376,19 @@
       method firstChild : Dom.node Js.t Js.opt Js.prop
       method getAttribute :
         Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method getAttributeNS :
+        Js.js_string Js.t ->
+        Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method getAttributeNode :
+        Js.js_string Js.t -> Dom.attr Js.t Js.opt Js.meth
+      method getAttributeNodeNS :
+        Js.js_string Js.t ->
+        Js.js_string Js.t -> Dom.attr Js.t Js.opt Js.meth
       method getElementsByTagName :
         Js.js_string Js.t -> Dom.element Dom.nodeList Js.t Js.meth
       method hasAttribute : Js.js_string Js.t -> bool Js.t Js.meth
+      method hasAttributeNS :
+        Js.js_string Js.t -> Js.js_string Js.t -> bool Js.t Js.meth
       method hasChildNodes : bool Js.t Js.meth
       method hasExtension : Js.js_string Js.t -> bool Js.t Js.meth
       method height : Dom_svg.animatedLength Js.t Js.readonly_prop
@@ -2805,6 +3404,9 @@
       method parentNode : Dom.node Js.t Js.opt Js.prop
       method previousSibling : Dom.node Js.t Js.opt Js.prop
       method removeAttribute : Js.js_string Js.t -> unit Js.meth
+      method removeAttributeNS :
+        Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
+      method removeAttributeNode : Dom.attr Js.t -> Dom.attr Js.t Js.meth
       method removeChild : Dom.node Js.t -> Dom.node Js.t Js.meth
       method replaceChild :
         Dom.node Js.t -> Dom.node Js.t -> Dom.node Js.t Js.meth
@@ -2812,6 +3414,12 @@
       method requiredFeatures : stringList Js.t Js.readonly_prop
       method setAttribute :
         Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
+      method setAttributeNS :
+        Js.js_string Js.t ->
+        Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
+      method setAttributeNode : Dom.attr Js.t -> Dom.attr Js.t Js.opt Js.meth
+      method setAttributeNodeNS :
+        Dom.attr Js.t -> Dom.attr Js.t Js.opt Js.meth
       method style : Dom_html.cssStyleDeclaration Js.t Js.readonly_prop
       method systemLanguage : stringList Js.t Js.readonly_prop
       method tagName : Js.js_string Js.t Js.readonly_prop
@@ -2839,9 +3447,19 @@
       method firstChild : Dom.node Js.t Js.opt Js.prop
       method getAttribute :
         Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method getAttributeNS :
+        Js.js_string Js.t ->
+        Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method getAttributeNode :
+        Js.js_string Js.t -> Dom.attr Js.t Js.opt Js.meth
+      method getAttributeNodeNS :
+        Js.js_string Js.t ->
+        Js.js_string Js.t -> Dom.attr Js.t Js.opt Js.meth
       method getElementsByTagName :
         Js.js_string Js.t -> Dom.element Dom.nodeList Js.t Js.meth
       method hasAttribute : Js.js_string Js.t -> bool Js.t Js.meth
+      method hasAttributeNS :
+        Js.js_string Js.t -> Js.js_string Js.t -> bool Js.t Js.meth
       method hasChildNodes : bool Js.t Js.meth
       method height : Dom_svg.animatedLength Js.t Js.readonly_prop
       method href : animatedString Js.t Js.readonly_prop
@@ -2857,11 +3475,20 @@
       method parentNode : Dom.node Js.t Js.opt Js.prop
       method previousSibling : Dom.node Js.t Js.opt Js.prop
       method removeAttribute : Js.js_string Js.t -> unit Js.meth
+      method removeAttributeNS :
+        Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
+      method removeAttributeNode : Dom.attr Js.t -> Dom.attr Js.t Js.meth
       method removeChild : Dom.node Js.t -> Dom.node Js.t Js.meth
       method replaceChild :
         Dom.node Js.t -> Dom.node Js.t -> Dom.node Js.t Js.meth
       method setAttribute :
         Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
+      method setAttributeNS :
+        Js.js_string Js.t ->
+        Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
+      method setAttributeNode : Dom.attr Js.t -> Dom.attr Js.t Js.opt Js.meth
+      method setAttributeNodeNS :
+        Dom.attr Js.t -> Dom.attr Js.t Js.opt Js.meth
       method setFilterRes : int -> int -> unit Js.meth
       method style : Dom_html.cssStyleDeclaration Js.t Js.readonly_prop
       method tagName : Js.js_string Js.t Js.readonly_prop
@@ -2886,9 +3513,19 @@
       method firstChild : Dom.node Js.t Js.opt Js.prop
       method getAttribute :
         Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method getAttributeNS :
+        Js.js_string Js.t ->
+        Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method getAttributeNode :
+        Js.js_string Js.t -> Dom.attr Js.t Js.opt Js.meth
+      method getAttributeNodeNS :
+        Js.js_string Js.t ->
+        Js.js_string Js.t -> Dom.attr Js.t Js.opt Js.meth
       method getElementsByTagName :
         Js.js_string Js.t -> Dom.element Dom.nodeList Js.t Js.meth
       method hasAttribute : Js.js_string Js.t -> bool Js.t Js.meth
+      method hasAttributeNS :
+        Js.js_string Js.t -> Js.js_string Js.t -> bool Js.t Js.meth
       method hasChildNodes : bool Js.t Js.meth
       method hasExtension : Js.js_string Js.t -> bool Js.t Js.meth
       method href : animatedString Js.t Js.readonly_prop
@@ -2904,6 +3541,9 @@
       method parentNode : Dom.node Js.t Js.opt Js.prop
       method previousSibling : Dom.node Js.t Js.opt Js.prop
       method removeAttribute : Js.js_string Js.t -> unit Js.meth
+      method removeAttributeNS :
+        Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
+      method removeAttributeNode : Dom.attr Js.t -> Dom.attr Js.t Js.meth
       method removeChild : Dom.node Js.t -> Dom.node Js.t Js.meth
       method replaceChild :
         Dom.node Js.t -> Dom.node Js.t -> Dom.node Js.t Js.meth
@@ -2911,6 +3551,12 @@
       method requiredFeatures : stringList Js.t Js.readonly_prop
       method setAttribute :
         Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
+      method setAttributeNS :
+        Js.js_string Js.t ->
+        Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
+      method setAttributeNode : Dom.attr Js.t -> Dom.attr Js.t Js.opt Js.meth
+      method setAttributeNodeNS :
+        Dom.attr Js.t -> Dom.attr Js.t Js.opt Js.meth
       method systemLanguage : stringList Js.t Js.readonly_prop
       method tagName : Js.js_string Js.t Js.readonly_prop
       method viewportElement : element Js.t Js.readonly_prop
@@ -2933,6 +3579,14 @@
       method firstChild : Dom.node Js.t Js.opt Js.prop
       method getAttribute :
         Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method getAttributeNS :
+        Js.js_string Js.t ->
+        Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method getAttributeNode :
+        Js.js_string Js.t -> Dom.attr Js.t Js.opt Js.meth
+      method getAttributeNodeNS :
+        Js.js_string Js.t ->
+        Js.js_string Js.t -> Dom.attr Js.t Js.opt Js.meth
       method getBBox : rect Js.t Js.meth
       method getCTM : matrix Js.t Js.meth
       method getElementsByTagName :
@@ -2940,6 +3594,8 @@
       method getScreenCTM : matrix Js.t Js.meth
       method getTransformToElement : element Js.t -> matrix Js.t Js.meth
       method hasAttribute : Js.js_string Js.t -> bool Js.t Js.meth
+      method hasAttributeNS :
+        Js.js_string Js.t -> Js.js_string Js.t -> bool Js.t Js.meth
       method hasChildNodes : bool Js.t Js.meth
       method hasExtension : Js.js_string Js.t -> bool Js.t Js.meth
       method href : animatedString Js.t Js.readonly_prop
@@ -2956,6 +3612,9 @@
       method parentNode : Dom.node Js.t Js.opt Js.prop
       method previousSibling : Dom.node Js.t Js.opt Js.prop
       method removeAttribute : Js.js_string Js.t -> unit Js.meth
+      method removeAttributeNS :
+        Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
+      method removeAttributeNode : Dom.attr Js.t -> Dom.attr Js.t Js.meth
       method removeChild : Dom.node Js.t -> Dom.node Js.t Js.meth
       method replaceChild :
         Dom.node Js.t -> Dom.node Js.t -> Dom.node Js.t Js.meth
@@ -2963,6 +3622,12 @@
       method requiredFeatures : stringList Js.t Js.readonly_prop
       method setAttribute :
         Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
+      method setAttributeNS :
+        Js.js_string Js.t ->
+        Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
+      method setAttributeNode : Dom.attr Js.t -> Dom.attr Js.t Js.opt Js.meth
+      method setAttributeNodeNS :
+        Dom.attr Js.t -> Dom.attr Js.t Js.opt Js.meth
       method style : Dom_html.cssStyleDeclaration Js.t Js.readonly_prop
       method systemLanguage : stringList Js.t Js.readonly_prop
       method tagName : Js.js_string Js.t Js.readonly_prop
@@ -2986,9 +3651,19 @@
       method firstChild : Dom.node Js.t Js.opt Js.prop
       method getAttribute :
         Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method getAttributeNS :
+        Js.js_string Js.t ->
+        Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method getAttributeNode :
+        Js.js_string Js.t -> Dom.attr Js.t Js.opt Js.meth
+      method getAttributeNodeNS :
+        Js.js_string Js.t ->
+        Js.js_string Js.t -> Dom.attr Js.t Js.opt Js.meth
       method getElementsByTagName :
         Js.js_string Js.t -> Dom.element Dom.nodeList Js.t Js.meth
       method hasAttribute : Js.js_string Js.t -> bool Js.t Js.meth
+      method hasAttributeNS :
+        Js.js_string Js.t -> Js.js_string Js.t -> bool Js.t Js.meth
       method hasChildNodes : bool Js.t Js.meth
       method id : Js.js_string Js.t Js.prop
       method insertBefore :
@@ -3004,11 +3679,20 @@
         animatedPreserveAspectRatio Js.t Js.readonly_prop
       method previousSibling : Dom.node Js.t Js.opt Js.prop
       method removeAttribute : Js.js_string Js.t -> unit Js.meth
+      method removeAttributeNS :
+        Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
+      method removeAttributeNode : Dom.attr Js.t -> Dom.attr Js.t Js.meth
       method removeChild : Dom.node Js.t -> Dom.node Js.t Js.meth
       method replaceChild :
         Dom.node Js.t -> Dom.node Js.t -> Dom.node Js.t Js.meth
       method setAttribute :
         Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
+      method setAttributeNS :
+        Js.js_string Js.t ->
+        Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
+      method setAttributeNode : Dom.attr Js.t -> Dom.attr Js.t Js.opt Js.meth
+      method setAttributeNodeNS :
+        Dom.attr Js.t -> Dom.attr Js.t Js.opt Js.meth
       method tagName : Js.js_string Js.t Js.readonly_prop
       method viewBox : animatedRect Js.t Js.readonly_prop
       method viewTarget : Dom_svg.stringList Js.t Js.readonly_prop
@@ -3029,9 +3713,19 @@
       method firstChild : Dom.node Js.t Js.opt Js.prop
       method getAttribute :
         Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method getAttributeNS :
+        Js.js_string Js.t ->
+        Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method getAttributeNode :
+        Js.js_string Js.t -> Dom.attr Js.t Js.opt Js.meth
+      method getAttributeNodeNS :
+        Js.js_string Js.t ->
+        Js.js_string Js.t -> Dom.attr Js.t Js.opt Js.meth
       method getElementsByTagName :
         Js.js_string Js.t -> Dom.element Dom.nodeList Js.t Js.meth
       method hasAttribute : Js.js_string Js.t -> bool Js.t Js.meth
+      method hasAttributeNS :
+        Js.js_string Js.t -> Js.js_string Js.t -> bool Js.t Js.meth
       method hasChildNodes : bool Js.t Js.meth
       method href : animatedString Js.t Js.readonly_prop
       method id : Js.js_string Js.t Js.prop
@@ -3046,11 +3740,20 @@
       method parentNode : Dom.node Js.t Js.opt Js.prop
       method previousSibling : Dom.node Js.t Js.opt Js.prop
       method removeAttribute : Js.js_string Js.t -> unit Js.meth
+      method removeAttributeNS :
+        Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
+      method removeAttributeNode : Dom.attr Js.t -> Dom.attr Js.t Js.meth
       method removeChild : Dom.node Js.t -> Dom.node Js.t Js.meth
       method replaceChild :
         Dom.node Js.t -> Dom.node Js.t -> Dom.node Js.t Js.meth
       method setAttribute :
         Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
+      method setAttributeNS :
+        Js.js_string Js.t ->
+        Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
+      method setAttributeNode : Dom.attr Js.t -> Dom.attr Js.t Js.opt Js.meth
+      method setAttributeNodeNS :
+        Dom.attr Js.t -> Dom.attr Js.t Js.opt Js.meth
       method tagName : Js.js_string Js.t Js.readonly_prop
       method type_ : Js.js_string Js.t Js.prop
       method viewportElement : element Js.t Js.readonly_prop
@@ -3069,12 +3772,22 @@
       method firstChild : Dom.node Js.t Js.opt Js.prop
       method getAttribute :
         Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method getAttributeNS :
+        Js.js_string Js.t ->
+        Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method getAttributeNode :
+        Js.js_string Js.t -> Dom.attr Js.t Js.opt Js.meth
+      method getAttributeNodeNS :
+        Js.js_string Js.t ->
+        Js.js_string Js.t -> Dom.attr Js.t Js.opt Js.meth
       method getCurrentTime : float Js.meth
       method getElementsByTagName :
         Js.js_string Js.t -> Dom.element Dom.nodeList Js.t Js.meth
       method getSimpleDuration : float Js.meth
       method getStartTime : float Js.meth
       method hasAttribute : Js.js_string Js.t -> bool Js.t Js.meth
+      method hasAttributeNS :
+        Js.js_string Js.t -> Js.js_string Js.t -> bool Js.t Js.meth
       method hasChildNodes : bool Js.t Js.meth
       method hasExtension : Js.js_string Js.t -> bool Js.t Js.meth
       method id : Js.js_string Js.t Js.prop
@@ -3089,6 +3802,9 @@
       method parentNode : Dom.node Js.t Js.opt Js.prop
       method previousSibling : Dom.node Js.t Js.opt Js.prop
       method removeAttribute : Js.js_string Js.t -> unit Js.meth
+      method removeAttributeNS :
+        Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
+      method removeAttributeNode : Dom.attr Js.t -> Dom.attr Js.t Js.meth
       method removeChild : Dom.node Js.t -> Dom.node Js.t Js.meth
       method replaceChild :
         Dom.node Js.t -> Dom.node Js.t -> Dom.node Js.t Js.meth
@@ -3096,6 +3812,12 @@
       method requiredFeatures : stringList Js.t Js.readonly_prop
       method setAttribute :
         Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
+      method setAttributeNS :
+        Js.js_string Js.t ->
+        Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
+      method setAttributeNode : Dom.attr Js.t -> Dom.attr Js.t Js.opt Js.meth
+      method setAttributeNodeNS :
+        Dom.attr Js.t -> Dom.attr Js.t Js.opt Js.meth
       method systemLanguage : stringList Js.t Js.readonly_prop
       method tagName : Js.js_string Js.t Js.readonly_prop
       method targetElement : Dom_svg.element Js.t Js.readonly_prop
@@ -3116,12 +3838,22 @@
       method firstChild : Dom.node Js.t Js.opt Js.prop
       method getAttribute :
         Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method getAttributeNS :
+        Js.js_string Js.t ->
+        Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method getAttributeNode :
+        Js.js_string Js.t -> Dom.attr Js.t Js.opt Js.meth
+      method getAttributeNodeNS :
+        Js.js_string Js.t ->
+        Js.js_string Js.t -> Dom.attr Js.t Js.opt Js.meth
       method getCurrentTime : float Js.meth
       method getElementsByTagName :
         Js.js_string Js.t -> Dom.element Dom.nodeList Js.t Js.meth
       method getSimpleDuration : float Js.meth
       method getStartTime : float Js.meth
       method hasAttribute : Js.js_string Js.t -> bool Js.t Js.meth
+      method hasAttributeNS :
+        Js.js_string Js.t -> Js.js_string Js.t -> bool Js.t Js.meth
       method hasChildNodes : bool Js.t Js.meth
       method hasExtension : Js.js_string Js.t -> bool Js.t Js.meth
       method id : Js.js_string Js.t Js.prop
@@ -3136,6 +3868,9 @@
       method parentNode : Dom.node Js.t Js.opt Js.prop
       method previousSibling : Dom.node Js.t Js.opt Js.prop
       method removeAttribute : Js.js_string Js.t -> unit Js.meth
+      method removeAttributeNS :
+        Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
+      method removeAttributeNode : Dom.attr Js.t -> Dom.attr Js.t Js.meth
       method removeChild : Dom.node Js.t -> Dom.node Js.t Js.meth
       method replaceChild :
         Dom.node Js.t -> Dom.node Js.t -> Dom.node Js.t Js.meth
@@ -3143,6 +3878,12 @@
       method requiredFeatures : stringList Js.t Js.readonly_prop
       method setAttribute :
         Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
+      method setAttributeNS :
+        Js.js_string Js.t ->
+        Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
+      method setAttributeNode : Dom.attr Js.t -> Dom.attr Js.t Js.opt Js.meth
+      method setAttributeNodeNS :
+        Dom.attr Js.t -> Dom.attr Js.t Js.opt Js.meth
       method style : Dom_html.cssStyleDeclaration Js.t Js.readonly_prop
       method systemLanguage : stringList Js.t Js.readonly_prop
       method tagName : Js.js_string Js.t Js.readonly_prop
@@ -3165,9 +3906,19 @@
       method firstChild : Dom.node Js.t Js.opt Js.prop
       method getAttribute :
         Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method getAttributeNS :
+        Js.js_string Js.t ->
+        Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method getAttributeNode :
+        Js.js_string Js.t -> Dom.attr Js.t Js.opt Js.meth
+      method getAttributeNodeNS :
+        Js.js_string Js.t ->
+        Js.js_string Js.t -> Dom.attr Js.t Js.opt Js.meth
       method getElementsByTagName :
         Js.js_string Js.t -> Dom.element Dom.nodeList Js.t Js.meth
       method hasAttribute : Js.js_string Js.t -> bool Js.t Js.meth
+      method hasAttributeNS :
+        Js.js_string Js.t -> Js.js_string Js.t -> bool Js.t Js.meth
       method hasChildNodes : bool Js.t Js.meth
       method href : animatedString Js.t Js.readonly_prop
       method id : Js.js_string Js.t Js.prop
@@ -3182,11 +3933,20 @@
       method parentNode : Dom.node Js.t Js.opt Js.prop
       method previousSibling : Dom.node Js.t Js.opt Js.prop
       method removeAttribute : Js.js_string Js.t -> unit Js.meth
+      method removeAttributeNS :
+        Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
+      method removeAttributeNode : Dom.attr Js.t -> Dom.attr Js.t Js.meth
       method removeChild : Dom.node Js.t -> Dom.node Js.t Js.meth
       method replaceChild :
         Dom.node Js.t -> Dom.node Js.t -> Dom.node Js.t Js.meth
       method setAttribute :
         Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
+      method setAttributeNS :
+        Js.js_string Js.t ->
+        Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
+      method setAttributeNode : Dom.attr Js.t -> Dom.attr Js.t Js.opt Js.meth
+      method setAttributeNodeNS :
+        Dom.attr Js.t -> Dom.attr Js.t Js.opt Js.meth
       method tagName : Js.js_string Js.t Js.readonly_prop
       method viewportElement : element Js.t Js.readonly_prop
       method xmlbase : Js.js_string Js.t Js.prop
@@ -3205,12 +3965,22 @@
       method firstChild : Dom.node Js.t Js.opt Js.prop
       method getAttribute :
         Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method getAttributeNS :
+        Js.js_string Js.t ->
+        Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method getAttributeNode :
+        Js.js_string Js.t -> Dom.attr Js.t Js.opt Js.meth
+      method getAttributeNodeNS :
+        Js.js_string Js.t ->
+        Js.js_string Js.t -> Dom.attr Js.t Js.opt Js.meth
       method getCurrentTime : float Js.meth
       method getElementsByTagName :
         Js.js_string Js.t -> Dom.element Dom.nodeList Js.t Js.meth
       method getSimpleDuration : float Js.meth
       method getStartTime : float Js.meth
       method hasAttribute : Js.js_string Js.t -> bool Js.t Js.meth
+      method hasAttributeNS :
+        Js.js_string Js.t -> Js.js_string Js.t -> bool Js.t Js.meth
       method hasChildNodes : bool Js.t Js.meth
       method hasExtension : Js.js_string Js.t -> bool Js.t Js.meth
       method id : Js.js_string Js.t Js.prop
@@ -3225,6 +3995,9 @@
       method parentNode : Dom.node Js.t Js.opt Js.prop
       method previousSibling : Dom.node Js.t Js.opt Js.prop
       method removeAttribute : Js.js_string Js.t -> unit Js.meth
+      method removeAttributeNS :
+        Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
+      method removeAttributeNode : Dom.attr Js.t -> Dom.attr Js.t Js.meth
       method removeChild : Dom.node Js.t -> Dom.node Js.t Js.meth
       method replaceChild :
         Dom.node Js.t -> Dom.node Js.t -> Dom.node Js.t Js.meth
@@ -3232,6 +4005,12 @@
       method requiredFeatures : stringList Js.t Js.readonly_prop
       method setAttribute :
         Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
+      method setAttributeNS :
+        Js.js_string Js.t ->
+        Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
+      method setAttributeNode : Dom.attr Js.t -> Dom.attr Js.t Js.opt Js.meth
+      method setAttributeNodeNS :
+        Dom.attr Js.t -> Dom.attr Js.t Js.opt Js.meth
       method style : Dom_html.cssStyleDeclaration Js.t Js.readonly_prop
       method systemLanguage : stringList Js.t Js.readonly_prop
       method tagName : Js.js_string Js.t Js.readonly_prop
@@ -3252,9 +4031,19 @@
       method firstChild : Dom.node Js.t Js.opt Js.prop
       method getAttribute :
         Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method getAttributeNS :
+        Js.js_string Js.t ->
+        Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method getAttributeNode :
+        Js.js_string Js.t -> Dom.attr Js.t Js.opt Js.meth
+      method getAttributeNodeNS :
+        Js.js_string Js.t ->
+        Js.js_string Js.t -> Dom.attr Js.t Js.opt Js.meth
       method getElementsByTagName :
         Js.js_string Js.t -> Dom.element Dom.nodeList Js.t Js.meth
       method hasAttribute : Js.js_string Js.t -> bool Js.t Js.meth
+      method hasAttributeNS :
+        Js.js_string Js.t -> Js.js_string Js.t -> bool Js.t Js.meth
       method hasChildNodes : bool Js.t Js.meth
       method id : Js.js_string Js.t Js.prop
       method insertBefore :
@@ -3268,11 +4057,20 @@
       method parentNode : Dom.node Js.t Js.opt Js.prop
       method previousSibling : Dom.node Js.t Js.opt Js.prop
       method removeAttribute : Js.js_string Js.t -> unit Js.meth
+      method removeAttributeNS :
+        Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
+      method removeAttributeNode : Dom.attr Js.t -> Dom.attr Js.t Js.meth
       method removeChild : Dom.node Js.t -> Dom.node Js.t Js.meth
       method replaceChild :
         Dom.node Js.t -> Dom.node Js.t -> Dom.node Js.t Js.meth
       method setAttribute :
         Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
+      method setAttributeNS :
+        Js.js_string Js.t ->
+        Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
+      method setAttributeNode : Dom.attr Js.t -> Dom.attr Js.t Js.opt Js.meth
+      method setAttributeNodeNS :
+        Dom.attr Js.t -> Dom.attr Js.t Js.opt Js.meth
       method style : Dom_html.cssStyleDeclaration Js.t Js.readonly_prop
       method tagName : Js.js_string Js.t Js.readonly_prop
       method viewportElement : element Js.t Js.readonly_prop
@@ -3290,9 +4088,19 @@
       method firstChild : Dom.node Js.t Js.opt Js.prop
       method getAttribute :
         Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method getAttributeNS :
+        Js.js_string Js.t ->
+        Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method getAttributeNode :
+        Js.js_string Js.t -> Dom.attr Js.t Js.opt Js.meth
+      method getAttributeNodeNS :
+        Js.js_string Js.t ->
+        Js.js_string Js.t -> Dom.attr Js.t Js.opt Js.meth
       method getElementsByTagName :
         Js.js_string Js.t -> Dom.element Dom.nodeList Js.t Js.meth
       method hasAttribute : Js.js_string Js.t -> bool Js.t Js.meth
+      method hasAttributeNS :
+        Js.js_string Js.t -> Js.js_string Js.t -> bool Js.t Js.meth
       method hasChildNodes : bool Js.t Js.meth
       method id : Js.js_string Js.t Js.prop
       method insertBefore :
@@ -3306,11 +4114,20 @@
       method parentNode : Dom.node Js.t Js.opt Js.prop
       method previousSibling : Dom.node Js.t Js.opt Js.prop
       method removeAttribute : Js.js_string Js.t -> unit Js.meth
+      method removeAttributeNS :
+        Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
+      method removeAttributeNode : Dom.attr Js.t -> Dom.attr Js.t Js.meth
       method removeChild : Dom.node Js.t -> Dom.node Js.t Js.meth
       method replaceChild :
         Dom.node Js.t -> Dom.node Js.t -> Dom.node Js.t Js.meth
       method setAttribute :
         Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
+      method setAttributeNS :
+        Js.js_string Js.t ->
+        Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
+      method setAttributeNode : Dom.attr Js.t -> Dom.attr Js.t Js.opt Js.meth
+      method setAttributeNodeNS :
+        Dom.attr Js.t -> Dom.attr Js.t Js.opt Js.meth
       method style : Dom_html.cssStyleDeclaration Js.t Js.readonly_prop
       method tagName : Js.js_string Js.t Js.readonly_prop
       method viewportElement : element Js.t Js.readonly_prop
@@ -3337,6 +4154,14 @@
       method firstChild : Dom.node Js.t Js.opt Js.prop
       method getAttribute :
         Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method getAttributeNS :
+        Js.js_string Js.t ->
+        Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method getAttributeNode :
+        Js.js_string Js.t -> Dom.attr Js.t Js.opt Js.meth
+      method getAttributeNodeNS :
+        Js.js_string Js.t ->
+        Js.js_string Js.t -> Dom.attr Js.t Js.opt Js.meth
       method getBBox : rect Js.t Js.meth
       method getCTM : matrix Js.t Js.meth
       method getElementsByTagName :
@@ -3344,6 +4169,8 @@
       method getScreenCTM : matrix Js.t Js.meth
       method getTransformToElement : element Js.t -> matrix Js.t Js.meth
       method hasAttribute : Js.js_string Js.t -> bool Js.t Js.meth
+      method hasAttributeNS :
+        Js.js_string Js.t -> Js.js_string Js.t -> bool Js.t Js.meth
       method hasChildNodes : bool Js.t Js.meth
       method hasExtension : Js.js_string Js.t -> bool Js.t Js.meth
       method height : Dom_svg.animatedLength Js.t Js.readonly_prop
@@ -3360,6 +4187,9 @@
       method parentNode : Dom.node Js.t Js.opt Js.prop
       method previousSibling : Dom.node Js.t Js.opt Js.prop
       method removeAttribute : Js.js_string Js.t -> unit Js.meth
+      method removeAttributeNS :
+        Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
+      method removeAttributeNode : Dom.attr Js.t -> Dom.attr Js.t Js.meth
       method removeChild : Dom.node Js.t -> Dom.node Js.t Js.meth
       method replaceChild :
         Dom.node Js.t -> Dom.node Js.t -> Dom.node Js.t Js.meth
@@ -3367,6 +4197,12 @@
       method requiredFeatures : stringList Js.t Js.readonly_prop
       method setAttribute :
         Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
+      method setAttributeNS :
+        Js.js_string Js.t ->
+        Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
+      method setAttributeNode : Dom.attr Js.t -> Dom.attr Js.t Js.opt Js.meth
+      method setAttributeNodeNS :
+        Dom.attr Js.t -> Dom.attr Js.t Js.opt Js.meth
       method style : Dom_html.cssStyleDeclaration Js.t Js.readonly_prop
       method systemLanguage : stringList Js.t Js.readonly_prop
       method tagName : Js.js_string Js.t Js.readonly_prop

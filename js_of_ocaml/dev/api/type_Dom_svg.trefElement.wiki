@@ -11,6 +11,12 @@
   method externalResourcesRequired : animatedBoolean Js.t Js.readonly_prop
   method firstChild : Dom.node Js.t Js.opt Js.prop
   method getAttribute : Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+  method getAttributeNS :
+    Js.js_string Js.t ->
+    Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+  method getAttributeNode : Js.js_string Js.t -> Dom.attr Js.t Js.opt Js.meth
+  method getAttributeNodeNS :
+    Js.js_string Js.t -> Js.js_string Js.t -> Dom.attr Js.t Js.opt Js.meth
   method getCharNumAtPosition : Dom_svg.point -> int Js.meth
   method getComputedTextLength : float Js.meth
   method getElementsByTagName :
@@ -22,6 +28,8 @@
   method getStartPositionOfChar : int -> Dom_svg.point Js.t Js.meth
   method getSubStringLength : int -> int -> float Js.meth
   method hasAttribute : Js.js_string Js.t -> bool Js.t Js.meth
+  method hasAttributeNS :
+    Js.js_string Js.t -> Js.js_string Js.t -> bool Js.t Js.meth
   method hasChildNodes : bool Js.t Js.meth
   method hasExtension : Js.js_string Js.t -> bool Js.t Js.meth
   method href : animatedString Js.t Js.readonly_prop
@@ -92,6 +100,9 @@
   method parentNode : Dom.node Js.t Js.opt Js.prop
   method previousSibling : Dom.node Js.t Js.opt Js.prop
   method removeAttribute : Js.js_string Js.t -> unit Js.meth
+  method removeAttributeNS :
+    Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
+  method removeAttributeNode : Dom.attr Js.t -> Dom.attr Js.t Js.meth
   method removeChild : Dom.node Js.t -> Dom.node Js.t Js.meth
   method replaceChild :
     Dom.node Js.t -> Dom.node Js.t -> Dom.node Js.t Js.meth
@@ -101,6 +112,11 @@
   method selectSubString : int -> int -> unit Js.meth
   method setAttribute :
     Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
+  method setAttributeNS :
+    Js.js_string Js.t ->
+    Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
+  method setAttributeNode : Dom.attr Js.t -> Dom.attr Js.t Js.opt Js.meth
+  method setAttributeNodeNS : Dom.attr Js.t -> Dom.attr Js.t Js.opt Js.meth
   method style : Dom_html.cssStyleDeclaration Js.t Js.readonly_prop
   method systemLanguage : stringList Js.t Js.readonly_prop
   method tagName : Js.js_string Js.t Js.readonly_prop

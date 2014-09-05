@@ -103,9 +103,19 @@
       method firstChild : node Js.t Js.opt Js.prop
       method getAttribute :
         Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method getAttributeNS :
+        Js.js_string Js.t ->
+        Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method getAttributeNode :
+        Js.js_string Js.t -> Dom.attr Js.t Js.opt Js.meth
+      method getAttributeNodeNS :
+        Js.js_string Js.t ->
+        Js.js_string Js.t -> Dom.attr Js.t Js.opt Js.meth
       method getElementsByTagName :
         Js.js_string Js.t -> Dom.element Dom.nodeList Js.t Js.meth
       method hasAttribute : Js.js_string Js.t -> bool Js.t Js.meth
+      method hasAttributeNS :
+        Js.js_string Js.t -> Js.js_string Js.t -> bool Js.t Js.meth
       method hasChildNodes : bool Js.t Js.meth
       method insertBefore :
         node Js.t -> node Js.t Js.opt -> node Js.t Js.meth
@@ -117,10 +127,19 @@
       method parentNode : node Js.t Js.opt Js.prop
       method previousSibling : node Js.t Js.opt Js.prop
       method removeAttribute : Js.js_string Js.t -> unit Js.meth
+      method removeAttributeNS :
+        Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
+      method removeAttributeNode : Dom.attr Js.t -> Dom.attr Js.t Js.meth
       method removeChild : node Js.t -> node Js.t Js.meth
       method replaceChild : node Js.t -> node Js.t -> node Js.t Js.meth
       method setAttribute :
         Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
+      method setAttributeNS :
+        Js.js_string Js.t ->
+        Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
+      method setAttributeNode : Dom.attr Js.t -> Dom.attr Js.t Js.opt Js.meth
+      method setAttributeNodeNS :
+        Dom.attr Js.t -> Dom.attr Js.t Js.opt Js.meth
       method tagName : Js.js_string Js.t Js.readonly_prop
     end
   class type characterData =

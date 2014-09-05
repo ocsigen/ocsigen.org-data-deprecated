@@ -888,6 +888,9 @@
 |@@class="odocwiki_index"@ @@<<a_api text="getAttachedShaders"| method WebGL.renderingContext#getAttachedShaders >> ~[<<a_api | module WebGL >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="getAttribLocation"| method WebGL.renderingContext#getAttribLocation >> ~[<<a_api | module WebGL >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="getAttribute"| method Dom.element#getAttribute >> ~[<<a_api | module Dom >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="getAttributeNS"| method Dom.element#getAttributeNS >> ~[<<a_api | module Dom >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="getAttributeNode"| method Dom.element#getAttributeNode >> ~[<<a_api | module Dom >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="getAttributeNodeNS"| method Dom.element#getAttributeNodeNS >> ~[<<a_api | module Dom >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="getBBox"| method Dom_svg.locatable#getBBox >> ~[<<a_api | module Dom_svg >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="getBoundingClientRect"| method Dom_html.element#getBoundingClientRect >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="getBufferParameter"| method WebGL.renderingContext#getBufferParameter >> ~[<<a_api | module WebGL >>~]||
@@ -998,6 +1001,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="group_5"| method Firebug.console#group_5 >> ~[<<a_api | module Firebug >>~]||
 |@@ @style="tet-align: left;"@@\\H|
 |@@class="odocwiki_index"@ @@<<a_api text="hasAttribute"| method Dom.element#hasAttribute >> ~[<<a_api | module Dom >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="hasAttributeNS"| method Dom.element#hasAttributeNS >> ~[<<a_api | module Dom >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="hasChildNodes"| method Dom.node#hasChildNodes >> ~[<<a_api | module Dom >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="hasExtension"| method Dom_svg.tests#hasExtension >> ~[<<a_api | module Dom_svg >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="hash"| method Dom_html.location#hash >> ~[<<a_api | module Dom_html >>~]||
@@ -1441,6 +1445,8 @@
 |@@class="odocwiki_index"@ @@<<a_api text="remove"| method Dom_html.tokenList#remove >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="removeAllRanges"| method Dom_html.selection#removeAllRanges >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="removeAttribute"| method Dom.element#removeAttribute >> ~[<<a_api | module Dom >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="removeAttributeNS"| method Dom.element#removeAttributeNS >> ~[<<a_api | module Dom >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="removeAttributeNode"| method Dom.element#removeAttributeNode >> ~[<<a_api | module Dom >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="removeChild"| method Dom.node#removeChild >> ~[<<a_api | module Dom >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="removeItem"| method Dom_svg.list#removeItem >> ~[<<a_api | module Dom_svg >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="removeItem"| method Dom_html.storage#removeItem >> ~[<<a_api | module Dom_html >>~]||
@@ -1531,6 +1537,9 @@
 |@@class="odocwiki_index"@ @@<<a_api text="send_formData"| method XmlHttpRequest.xmlHttpRequest#send_formData >> ~[<<a_api | module XmlHttpRequest >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="sessionStorage"| method Dom_html.window#sessionStorage >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="setAttribute"| method Dom.element#setAttribute >> ~[<<a_api | module Dom >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="setAttributeNS"| method Dom.element#setAttributeNS >> ~[<<a_api | module Dom >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="setAttributeNode"| method Dom.element#setAttributeNode >> ~[<<a_api | module Dom >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="setAttributeNodeNS"| method Dom.element#setAttributeNodeNS >> ~[<<a_api | module Dom >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="setColor"| method Dom_svg.color#setColor >> ~[<<a_api | module Dom_svg >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="setCurrentTime"| method Dom_svg.svgElement#setCurrentTime >> ~[<<a_api | module Dom_svg >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="setData"| method Dom_html.dataTransfer#setData >> ~[<<a_api | module Dom_html >>~]||
