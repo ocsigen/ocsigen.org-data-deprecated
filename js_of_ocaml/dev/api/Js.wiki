@@ -282,8 +282,8 @@
       called~.
       ~Typical usage is the following~:
       
-{{{Js.coerce_opt (Dom_html.document##getElementById(id))
-      Dom_html.CoerceTo.div (fun _ -> assert false)}}}
+<<code language='ocaml'|Js.coerce_opt (Dom_html.document##getElementById(id))
+      Dom_html.CoerceTo.div (fun _ -> assert false)>>
 
 >>
 

@@ -9,12 +9,12 @@
 
 <<span class="odocwiki_inlinecode"|type typ ~= ~.~. deriving ~(~Json~)>> with generate
 
-{{{module Json_typ : sig
+<<code language='ocaml'|module Json_typ : sig
   type a = typ
   val to_string : a -> string
   val from_string : string -> a
   ...
-end}}}
+end>>
 
 <<pre id="VALregister_predefs" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|register~_predefs>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|\\  <<span class="ocsforge_color_uid"|Pa_deriving_common>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_uid"|Type>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|qname>> <<span class="ocsforge_color_delimiter"| -> >> <<span class="ocsforge_color_uid"|Pa_deriving_common>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_uid"|Type>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|qname>> <<span class="ocsforge_color_delimiter"| -> >> unit>>>><<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|register~_predefs type~A type~B>> tells the syntax extension
     that <<span class="odocwiki_inlinecode"|type~B>> is an alias for <<span class="odocwiki_inlinecode"|type~A>>~.
