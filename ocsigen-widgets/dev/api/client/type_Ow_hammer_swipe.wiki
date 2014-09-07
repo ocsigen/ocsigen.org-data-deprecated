@@ -1,0 +1,9 @@
+<<code language="ocaml" | sig
+  type t
+  val create : Dom_html.element Js.t list -> Ow_hammer_swipe.t
+  val init : Ow_hammer_swipe.t -> unit
+  val get_current_pane : Ow_hammer_swipe.t -> int
+  val show_pane : Ow_hammer_swipe.t -> int -> unit
+  val next : Ow_hammer_swipe.t -> unit
+  val prev : Ow_hammer_swipe.t -> unit
+end >>

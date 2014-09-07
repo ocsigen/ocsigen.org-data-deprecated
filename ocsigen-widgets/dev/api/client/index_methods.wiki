@@ -1,0 +1,119 @@
+=Index of class methods=
+
+|@@ @style="tet-align: left;"@@\\|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="_disable"| method Ow_active_set.item'#_disable >> ~[<<a_api subproject="client" | module Ow_active_set >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="_enable"| method Ow_active_set.item'#_enable >> ~[<<a_api subproject="client" | module Ow_active_set >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="_t"| method Ow_base_widget.widget'#_t >> ~[<<a_api subproject="client" | module Ow_base_widget >>~]||
+|@@ @style="tet-align: left;"@@\\A|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="auto"| method Ow_swipejs.options#auto >> ~[<<a_api subproject="client" | module Ow_swipejs >>~]||
+|@@ @style="tet-align: left;"@@\\B|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="by"| method Ow_traversable.traversable_detail_event#by >> ~[<<a_api subproject="client" | module Ow_traversable >>~]||
+|@@ @style="tet-align: left;"@@\\C|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="callback"| method Ow_swipejs.options#callback >> ~[<<a_api subproject="client" | module Ow_swipejs >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="clear"| method Ow_completion.completion#clear >> ~[<<a_api subproject="client" | module Ow_completion >>~]|<<div class="odocwiki_info"|~Explicitly confirm with the current value of the input~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="confirm"| method Ow_completion.completion#confirm >> ~[<<a_api subproject="client" | module Ow_completion >>~]|<<div class="odocwiki_info"|~Explicitly refresh the content of the widget ~(using the given
+       function <<span class="odocwiki_inlinecode"|refresh>> on the construction of the widget~)~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="continous"| method Ow_swipejs.options#continous >> ~[<<a_api subproject="client" | module Ow_swipejs >>~]||
+|@@ @style="tet-align: left;"@@\\D|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="disable"| method Ow_active_set.item#disable >> ~[<<a_api subproject="client" | module Ow_active_set >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="disableScroll"| method Ow_swipejs.options#disableScroll >> ~[<<a_api subproject="client" | module Ow_swipejs >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="dynamic"| method Ow_hookjs.options#dynamic >> ~[<<a_api subproject="client" | module Ow_hookjs >>~]||
+|@@ @style="tet-align: left;"@@\\E|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="enable"| method Ow_active_set.item#enable >> ~[<<a_api subproject="client" | module Ow_active_set >>~]||
+|@@ @style="tet-align: left;"@@\\G|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="getActive"| method Ow_traversable.traversable#getActive >> ~[<<a_api subproject="client" | module Ow_traversable >>~]|<<div class="odocwiki_info"|~Returns true if the <<span class="odocwiki_inlinecode"|traversable>> element can listen keys and
+        interpret them~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="getContainer"| method Ow_traversable.traversable#getContainer >> ~[<<a_api subproject="client" | module Ow_traversable >>~]|<<div class="odocwiki_info"|~Explicitly set active the next element of the <<span class="odocwiki_inlinecode"|traversable>>
+        element~.
+>>
+|
+|@@ @style="tet-align: left;"@@\\H|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="h"| method Ow_jcrop.param#h >> ~[<<a_api subproject="client" | module Ow_jcrop >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="hide"| method Ow_alert.dyn_alert#hide >> ~[<<a_api subproject="client" | module Ow_alert >>~]|<<div class="odocwiki_info"|~Refresh the content of the <<span class="odocwiki_inlinecode"|alert>> if it is visible~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="hide"| method Ow_alert.alert#hide >> ~[<<a_api subproject="client" | module Ow_alert >>~]||
+|@@ @style="tet-align: left;"@@\\I|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="isTraversable"| method Ow_traversable.traversable#isTraversable >> ~[<<a_api subproject="client" | module Ow_traversable >>~]||
+|@@ @style="tet-align: left;"@@\\L|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="loaderClass"| method Ow_hookjs.options#loaderClass >> ~[<<a_api subproject="client" | module Ow_hookjs >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="loaderText"| method Ow_hookjs.options#loaderText >> ~[<<a_api subproject="client" | module Ow_hookjs >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="loaderTextClass"| method Ow_hookjs.options#loaderTextClass >> ~[<<a_api subproject="client" | module Ow_hookjs >>~]||
+|@@ @style="tet-align: left;"@@\\N|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="next"| method Ow_traversable.traversable#next >> ~[<<a_api subproject="client" | module Ow_traversable >>~]|<<div class="odocwiki_info"|~Explicitly set active the previous element of the <<span class="odocwiki_inlinecode"|traversable>>
+        element~.
+>>
+|
+|@@ @style="tet-align: left;"@@\\P|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="press"| method Ow_button.button#press >> ~[<<a_api subproject="client" | module Ow_button >>~]|<<div class="odocwiki_info"|~Explicitly unpress the <<span class="odocwiki_inlinecode"|button>>~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="pressed"| method Ow_button.button#pressed >> ~[<<a_api subproject="client" | module Ow_button >>~]|<<div class="odocwiki_info"|~Explicitly press the <<span class="odocwiki_inlinecode"|button>>~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="prev"| method Ow_traversable.traversable#prev >> ~[<<a_api subproject="client" | module Ow_traversable >>~]|<<div class="odocwiki_info"|~Make inactive the current active element~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="prevent"| method Ow_button.button#prevent >> ~[<<a_api subproject="client" | module Ow_button >>~]||
+|@@ @style="tet-align: left;"@@\\R|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="refresh"| method Ow_completion.completion#refresh >> ~[<<a_api subproject="client" | module Ow_completion >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="reloadEl"| method Ow_hookjs.options#reloadEl >> ~[<<a_api subproject="client" | module Ow_hookjs >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="reloadPage"| method Ow_hookjs.options#reloadPage >> ~[<<a_api subproject="client" | module Ow_hookjs >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="resetActive"| method Ow_traversable.traversable#resetActive >> ~[<<a_api subproject="client" | module Ow_traversable >>~]|<<div class="odocwiki_info"|~Explicitly set to active state a <<span class="odocwiki_inlinecode"|traversable>>~'s child~.
+>>
+|
+|@@ @style="tet-align: left;"@@\\S|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="setActive"| method Ow_traversable.traversable#setActive >> ~[<<a_api subproject="client" | module Ow_traversable >>~]|<<div class="odocwiki_info"|~Get the current active element~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="show"| method Ow_alert.dyn_alert#show >> ~[<<a_api subproject="client" | module Ow_alert >>~]|<<div class="odocwiki_info"|~Hide the content of the <<span class="odocwiki_inlinecode"|alert>>~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="show"| method Ow_alert.alert#show >> ~[<<a_api subproject="client" | module Ow_alert >>~]|<<div class="odocwiki_info"|~Hide the content of the <<span class="odocwiki_inlinecode"|alert>>~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="spinnerClass"| method Ow_hookjs.options#spinnerClass >> ~[<<a_api subproject="client" | module Ow_hookjs >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="startSlide"| method Ow_swipejs.options#startSlide >> ~[<<a_api subproject="client" | module Ow_swipejs >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="stopPropagation"| method Ow_swipejs.options#stopPropagation >> ~[<<a_api subproject="client" | module Ow_swipejs >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="swipeDistance"| method Ow_hookjs.options#swipeDistance >> ~[<<a_api subproject="client" | module Ow_hookjs >>~]||
+|@@ @style="tet-align: left;"@@\\T|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="t"| method Ow_base_widget.widget#t >> ~[<<a_api subproject="client" | module Ow_base_widget >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="textRequired"| method Ow_hookjs.options#textRequired >> ~[<<a_api subproject="client" | module Ow_hookjs >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="toggle"| method Ow_button.button#toggle >> ~[<<a_api subproject="client" | module Ow_button >>~]|<<div class="odocwiki_info"|**~E~X~P~E~R~I~M~E~N~T~A~L**~: try to prevents a button from beeing <<span class="odocwiki_inlinecode"|pressed>>~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="transitionEnd"| method Ow_swipejs.options#transitionEnd >> ~[<<a_api subproject="client" | module Ow_swipejs >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="traversable"| method Ow_dropdown.dropdown#traversable >> ~[<<a_api subproject="client" | module Ow_dropdown >>~]||
+|@@ @style="tet-align: left;"@@\\U|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="unpress"| method Ow_button.button#unpress >> ~[<<a_api subproject="client" | module Ow_button >>~]|<<div class="odocwiki_info"|~Presses the <<span class="odocwiki_inlinecode"|button>> if it is unpressed~, and unpress the <<span class="odocwiki_inlinecode"|button>> if
+        it is pressed~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="update"| method Ow_button.button_dyn_alert#update >> ~[<<a_api subproject="client" | module Ow_button >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="update"| method Ow_alert.dyn_alert#update >> ~[<<a_api subproject="client" | module Ow_alert >>~]||
+|@@ @style="tet-align: left;"@@\\V|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="value"| method Ow_completion.completion#value >> ~[<<a_api subproject="client" | module Ow_completion >>~]|<<div class="odocwiki_info"|~Clear the list of the possible values~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="visible"| method Ow_alert.dyn_alert#visible >> ~[<<a_api subproject="client" | module Ow_alert >>~]|<<div class="odocwiki_info"|~Call the function associated to the <<span class="odocwiki_inlinecode"|alert>> to generate his content and
+       make visible the <<span class="odocwiki_inlinecode"|alert>>~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="visible"| method Ow_alert.alert#visible >> ~[<<a_api subproject="client" | module Ow_alert >>~]|<<div class="odocwiki_info"|~Show the content of the <<span class="odocwiki_inlinecode"|alert>>~.
+>>
+|
+|@@ @style="tet-align: left;"@@\\W|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="w"| method Ow_jcrop.param#w >> ~[<<a_api subproject="client" | module Ow_jcrop >>~]||
+|@@ @style="tet-align: left;"@@\\X|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="x"| method Ow_jcrop.param#x >> ~[<<a_api subproject="client" | module Ow_jcrop >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="x2"| method Ow_jcrop.param#x2 >> ~[<<a_api subproject="client" | module Ow_jcrop >>~]||
+|@@ @style="tet-align: left;"@@\\Y|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="y"| method Ow_jcrop.param#y >> ~[<<a_api subproject="client" | module Ow_jcrop >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="y2"| method Ow_jcrop.param#y2 >> ~[<<a_api subproject="client" | module Ow_jcrop >>~]||
+\\

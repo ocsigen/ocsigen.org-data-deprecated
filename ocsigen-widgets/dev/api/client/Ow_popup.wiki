@@ -1,0 +1,39 @@
+=Module <<a_api_type subproject="client" | module Ow_popup >> =
+<<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module>> <<span class="ocsforge_color_uid"|<<span class="ocsforge_color_uid"|Ow_popup>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="ocsforge_color_keyword"|sig>><<a_api subproject="client" text=".." | module Ow_popup >><<span class="ocsforge_color_keyword"|end>>>>~Popups are a special kind of <<span class="odocwiki_inlinecode"|alerts>> that are automatically showed in
+      the middle of the screen~.
+
+----
+
+~Popups are a special kind of <<span class="odocwiki_inlinecode"|alerts>> that are automatically showed in
+      the middle of the screen~.
+
+
+==@@id="2_Helpers"@@~Helpers==
+
+<<pre id="VALshow_background" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|show~_background>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|unit <<span class="ocsforge_color_delimiter"| -> >> unit>>>><<div class="odocwiki_info"|~Internal background is shown when a popup is triggered~.
+>>
+<<pre id="VALhide_background" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|hide~_background>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|unit <<span class="ocsforge_color_delimiter"| -> >> unit>>>><<div class="odocwiki_info"|~Internal background id hidden when a popup is triggered~.
+>>
+
+
+==@@id="2_Constructionfunctions"@@~Construction functions==
+
+<<pre id="VALpopup" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|popup>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|\\  <<span class="ocsforge_color_label"| ?show: >>bool <<span class="ocsforge_color_delimiter"| -> >>\\  <<span class="ocsforge_color_label"| ?allow_outer_clicks: >>bool <<span class="ocsforge_color_delimiter"| -> >>\\  <<span class="ocsforge_color_label"| ?with_background: >>bool <<span class="ocsforge_color_delimiter"| -> >>\\  'a <<span class="ocsforge_color_uid"|Eliom_content>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_uid"|Html5>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|elt>> <<span class="ocsforge_color_delimiter"| -> >> 'a <<span class="ocsforge_color_uid"|Eliom_content>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_uid"|Html5>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|elt>>>>>><<div class="odocwiki_info"|~Specialization of a <<span class="odocwiki_inlinecode"|~Ow~_alert~.alert>> that shows a transparent
+      background if <<span class="odocwiki_inlinecode"|with~_background>> is set to <<span class="odocwiki_inlinecode"|true>>~.
+>>
+<<pre id="VALdyn_popup" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|dyn~_popup>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|\\  <<span class="ocsforge_color_label"| ?show: >>bool <<span class="ocsforge_color_delimiter"| -> >>\\  <<span class="ocsforge_color_label"| ?allow_outer_clicks: >>bool <<span class="ocsforge_color_delimiter"| -> >>\\  <<span class="ocsforge_color_label"| ?with_background: >>bool <<span class="ocsforge_color_delimiter"| -> >>\\  'a <<span class="ocsforge_color_uid"|Eliom_content>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_uid"|Html5>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|elt>> <<span class="ocsforge_color_delimiter"| -> >>\\  <<span class="ocsforge_color_delimiter"| ( >>'a <<span class="ocsforge_color_uid"|Eliom_content>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_uid"|Html5>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|elt>> <<span class="ocsforge_color_delimiter"| -> >> 'a <<span class="ocsforge_color_uid"|Eliom_content>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_uid"|Html5>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|elt>> list <<span class="ocsforge_color_uid"|Lwt>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>><<span class="ocsforge_color_delimiter"| ) >> <<span class="ocsforge_color_delimiter"| -> >>\\  'a <<span class="ocsforge_color_uid"|Eliom_content>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_uid"|Html5>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|elt>>>>>><<div class="odocwiki_info"|~Specialization of a <<span class="odocwiki_inlinecode"|~Ow~_alert~.dyn~_alert>> that shows a transparent
+      background if <<span class="odocwiki_inlinecode"|with~_background>> is set to <<span class="odocwiki_inlinecode"|true>>~.
+>>
+<<pre id="VALcloseable_by_click" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|closeable~_by~_click>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|\\  'a <<span class="ocsforge_color_uid"|Eliom_content>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_uid"|Html5>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|elt>> <<span class="ocsforge_color_delimiter"| -> >> 'a <<span class="ocsforge_color_uid"|Eliom_content>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_uid"|Html5>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|elt>>>>>><<div class="odocwiki_info"|~Alias to <<span class="odocwiki_inlinecode"|~Ow~_alert~_sigs~.closeable~_by~_click>>
+>>
+
+
+==@@id="2_Conversionfunctions"@@~Conversion functions==
+
+<<pre id="VALto_popup" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|to~_popup>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|'a <<span class="ocsforge_color_uid"|Eliom_content>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_uid"|Html5>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|elt>> <<span class="ocsforge_color_delimiter"| -> >> <<a_api subproject="client" text="Ow_alert.alert" | class type Ow_alert.alert >> <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>>>>>><<div class="odocwiki_info"|~Tests if an element is an alert or not and returns it as a <<span class="odocwiki_inlinecode"|popup>>
+      instance~.
+>>
+<<pre id="VALto_dyn_popup" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|to~_dyn~_popup>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|'a <<span class="ocsforge_color_uid"|Eliom_content>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_uid"|Html5>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|elt>> <<span class="ocsforge_color_delimiter"| -> >> <<a_api subproject="client" text="Ow_alert.dyn_alert" | class type Ow_alert.dyn_alert >> <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>>>>>><<div class="odocwiki_info"|~Tests if an element is an alert or not and returns it as a <<span class="odocwiki_inlinecode"|dyn~_popup>>
+      instance~.
+>>
+<<pre class="ocsforge_color odocwiki_code" id="TYPEdyn_popup_fun'"|<<span class="ocsforge_color_keyword"|type>> <<span class="odocwiki_name"|dyn~_popup~_fun~'>> <<span class="ocsforge_color_delimiter"|~=>> <<span class="odocwiki_type"|<<a_api subproject="client" text="Ow_alert.dyn_alert_fun'" | type Ow_alert.dyn_alert_fun' >>>> >>

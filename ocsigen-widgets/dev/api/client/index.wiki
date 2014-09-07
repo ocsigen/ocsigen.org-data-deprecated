@@ -1,0 +1,121 @@
+==
+
+=@@id="1_OcsigenwidgetsclientAPI"@@~Ocsigen~-widgets client ~A~P~I=
+
+
+
+
+==@@id="2_Nonwidgetstools"@@~Non~-widgets tools==
+
+
+
+
+|<<a_api subproject="client" | module Ow_list >>|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|find~_remove f l>> takes the first value from the list returning true~, and
+        returns it ~(as the ~'a~)~.
+>>
+|
+|<<a_api subproject="client" | module Ow_option >>|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|map f v>> returns the application of f on the option v if v is not ~None~, or ~None~.
+>>
+|
+
+
+
+
+
+==@@id="2_Helpersandtools"@@~Helpers and tools==
+
+
+
+
+|Ow_fun||
+|<<a_api subproject="client" | module Ow_log >>|<<div class="odocwiki_info"|~Client debugging functions~.
+>>
+|
+|<<a_api subproject="client" | module Ow_size >>|<<div class="odocwiki_info"|~Size and orientation
+>>
+|
+|<<a_api subproject="client" | module Ow_tools >>|<<div class="odocwiki_info"|~Various utility tools~.
+>>
+|
+|Ow_event||
+|<<a_api subproject="client" | module Ow_position >>|<<div class="odocwiki_info"|~The type to determin the value of the position attribute of the javascript
+      element~.
+>>
+|
+|<<a_api subproject="client" | module Ow_dyn_upload >>|<<div class="odocwiki_info"|~Type of a dynamic service~.
+>>
+|
+
+
+
+
+
+==@@id="2_Widgets"@@~Widgets==
+
+
+
+
+|<<a_api subproject="client" | module Ow_alert >>|<<div class="odocwiki_info"|~Specific events for alerts
+>>
+|
+|<<a_api subproject="client" | module Ow_popup >>|<<div class="odocwiki_info"|~Popups are a special kind of <<span class="odocwiki_inlinecode"|alerts>> that are automatically showed in
+      the middle of the screen~.
+>>
+|
+|<<a_api subproject="client" | module Ow_button >>|<<div class="odocwiki_info"|~Buttons are html elements with a state of <<span class="odocwiki_inlinecode"|pressed>> or <<span class="odocwiki_inlinecode"|unpressed>>
+      and actions are generally coupled with a state ~(such as **show**~/**hide**
+      an element~)~.
+>>
+|
+|<<a_api subproject="client" | module Ow_traversable >>|<<div class="odocwiki_info"|~A traversable element can iterate through their children~.
+>>
+|
+|<<a_api subproject="client" | module Ow_dropdown >>|<<div class="odocwiki_info"|~A dropdown menu is a menu which can be displayed under an element
+      which will act like a <<span class="odocwiki_inlinecode"|button>>~.
+>>
+|
+|<<a_api subproject="client" | module Ow_completion >>|<<div class="odocwiki_info"|~A completion widget to complete on string value~.
+>>
+|
+|<<a_api subproject="client" | module Ow_table_color_picker >>|<<div class="odocwiki_info"|~The agrument is the divisor of ~2~5~5
+~*~* ~It have to be greater than ~1 ~*
+>>
+|
+
+
+
+
+
+==@@id="2_Experimental"@@~Experimental==
+
+
+
+
+|<<a_api subproject="client" | module Ow_scrollbar >>|<<div class="odocwiki_info"|~Scrollbar module~.
+>>
+|
+|<<a_api subproject="client" | module Ow_sliderbar >>|<<div class="odocwiki_info"|~Binding of the j~Query~_ui slider for ocaml~.
+>>
+|
+|<<a_api subproject="client" | module Ow_slider >>|<<div class="odocwiki_info"|initial~_value is at ~0~.~5 by default
+   ~It have to by between ~0~.
+>>
+|
+
+
+
+
+
+==@@id="2_Index"@@~Index==
+
+
+
+* <<a_api subproject="client" text="Index of types" | index types >>
+* <<a_api subproject="client" text="Index of exceptions" | index exceptions >>
+* <<a_api subproject="client" text="Index of values" | index values >>
+* <<a_api subproject="client" text="Index of class methods" | index methods >>
+* <<a_api subproject="client" text="Index of classes" | index classes >>
+* <<a_api subproject="client" text="Index of class types" | index class types >>
+* <<a_api subproject="client" text="Index of modules" | index modules >>
+* <<a_api subproject="client" text="Index of module types" | index module types >>
+

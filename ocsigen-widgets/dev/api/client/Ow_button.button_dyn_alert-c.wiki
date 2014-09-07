@@ -1,0 +1,8 @@
+=Class type <<a_api_type subproject="client" | class type Ow_button.button_dyn_alert >> =
+<<pre class="ocsforge_color odocwiki_code"|<<span id="TYPEbutton_dyn_alert"|<<span class="ocsforge_color_keyword"|class type>> <<span class="ocsforge_color_name"|button_dyn_alert>>>> <<span class="ocsforge_color_delimiter"|~=>> <<span class="ocsforge_color_keyword"|object>><<a_api subproject="client" text=".." | class type Ow_button.button_dyn_alert >><<span class="ocsforge_color_keyword"|end>>>>~Same as above~, but use dynamic alert instead~.
+**~Inherits**
+* <<a_api subproject="client" | class Ow_button.button_alert >>~Wrapper around <<span class="odocwiki_inlinecode"|update>> method from <<span class="odocwiki_inlinecode"|dyn~_alert>> from the
+        module <<span class="odocwiki_inlinecode"|~Ow~_alert>>~.
+
+----
+<<pre class="ocsforge_color odocwiki_code"|<<span id="METHODupdate"|<<span class="ocsforge_color_keyword"|method>> <<span class="odocwiki_name"|update>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|unit <<span class="ocsforge_color_uid"|Lwt>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>> <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|meth>>>>>>

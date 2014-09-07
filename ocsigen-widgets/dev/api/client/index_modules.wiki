@@ -1,0 +1,104 @@
+=Index of modules=
+
+|@@ @style="tet-align: left;"@@\\E|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Event"| module Ow_traversable.Event >> ~[<<a_api subproject="client" | module Ow_traversable >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Event"| module Ow_button.Event >> ~[<<a_api subproject="client" | module Ow_button >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Event"| module Ow_alert.Event >> ~[<<a_api subproject="client" | module Ow_alert >>~]||
+|@@ @style="tet-align: left;"@@\\L|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="LocalStorage"| module Ow_jsstorage.LocalStorage >> ~[<<a_api subproject="client" | module Ow_jsstorage >>~]||
+|@@ @style="tet-align: left;"@@\\O|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Ow_active_set"| module Ow_active_set >> ||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Ow_alert"| module Ow_alert >> |<<div class="odocwiki_info"|~Specific events for alerts
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Ow_base_widget"| module Ow_base_widget >> ||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Ow_button"| module Ow_button >> |<<div class="odocwiki_info"|~Buttons are html elements with a state of <<span class="odocwiki_inlinecode"|pressed>> or <<span class="odocwiki_inlinecode"|unpressed>>
+      and actions are generally coupled with a state ~(such as **show**~/**hide**
+      an element~)~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Ow_color_picker"| module Ow_color_picker >> ||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Ow_completion"| module Ow_completion >> |<<div class="odocwiki_info"|~A completion widget to complete on string value~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Ow_dom"| module Ow_dom >> ||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Ow_dropdown"| module Ow_dropdown >> |<<div class="odocwiki_info"|~A dropdown menu is a menu which can be displayed under an element
+      which will act like a <<span class="odocwiki_inlinecode"|button>>~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Ow_dyn_upload"| module Ow_dyn_upload >> |<<div class="odocwiki_info"|~Type of a dynamic service~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Ow_event_tools"| module Ow_event_tools >> |<<div class="odocwiki_info"|~Various tools related to events~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Ow_hammer_swipe"| module Ow_hammer_swipe >> |<<div class="odocwiki_info"|create swipe and fill with panes~_list
+      ~Swipe html element is derectly add into body
+      ~Because it need to be in top level of body
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Ow_hookjs"| module Ow_hookjs >> |<<div class="odocwiki_info"|~Binding for hook~.js~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Ow_jcrop"| module Ow_jcrop >> |<<div class="odocwiki_info"|~Types used to constraint usage of parameters of ~Jcrop~'s callbacks
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Ow_jsstorage"| module Ow_jsstorage >> |<<div class="odocwiki_info"|~Allow to store informations on the client~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Ow_list"| module Ow_list >> |<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|find~_remove f l>> takes the first value from the list returning true~, and
+        returns it ~(as the ~'a~)~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Ow_log"| module Ow_log >> |<<div class="odocwiki_info"|~Client debugging functions~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Ow_option"| module Ow_option >> |<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|map f v>> returns the application of f on the option v if v is not ~None~, or ~None~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Ow_pervasives"| module Ow_pervasives >> ||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Ow_popup"| module Ow_popup >> |<<div class="odocwiki_info"|~Popups are a special kind of <<span class="odocwiki_inlinecode"|alerts>> that are automatically showed in
+      the middle of the screen~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Ow_position"| module Ow_position >> |<<div class="odocwiki_info"|~The type to determin the value of the position attribute of the javascript
+      element~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Ow_scrollbar"| module Ow_scrollbar >> |<<div class="odocwiki_info"|~Scrollbar module~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Ow_size"| module Ow_size >> |<<div class="odocwiki_info"|~Size and orientation
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Ow_slide_event"| module Ow_slide_event >> |<<div class="odocwiki_info"|~First is moves event
+      ~Second is end event
+      ~Third is move~_func call at each move event
+      ~Fourth is end event call at end event
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Ow_slider"| module Ow_slider >> |<<div class="odocwiki_info"|initial~_value is at ~0~.~5 by default
+   ~It have to by between ~0~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Ow_sliderbar"| module Ow_sliderbar >> |<<div class="odocwiki_info"|~Binding of the j~Query~_ui slider for ocaml~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Ow_swipejs"| module Ow_swipejs >> |<<div class="odocwiki_info"|~Swiping library~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Ow_table_color_picker"| module Ow_table_color_picker >> |<<div class="odocwiki_info"|~The agrument is the divisor of ~2~5~5
+~*~* ~It have to be greater than ~1 ~*
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Ow_tools"| module Ow_tools >> |<<div class="odocwiki_info"|~Various utility tools~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Ow_traversable"| module Ow_traversable >> |<<div class="odocwiki_info"|~A traversable element can iterate through their children~.
+>>
+|
+|@@ @style="tet-align: left;"@@\\S|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="S"| module Ow_alert.Event.S >> ~[<<a_api subproject="client" | module Ow_alert.Event >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="SessionStorage"| module Ow_jsstorage.SessionStorage >> ~[<<a_api subproject="client" | module Ow_jsstorage >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Style"| module Ow_traversable.Style >> ~[<<a_api subproject="client" | module Ow_traversable >>~]||
+\\

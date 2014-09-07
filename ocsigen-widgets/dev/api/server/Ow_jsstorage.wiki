@@ -1,0 +1,3 @@
+=Module <<a_api_type subproject="server" | module Ow_jsstorage >> =
+<<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module>> <<span class="ocsforge_color_uid"|<<span class="ocsforge_color_uid"|Ow_jsstorage>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="ocsforge_color_keyword"|sig>><<a_api subproject="server" text=".." | module Ow_jsstorage >><<span class="ocsforge_color_keyword"|end>>>>
+----

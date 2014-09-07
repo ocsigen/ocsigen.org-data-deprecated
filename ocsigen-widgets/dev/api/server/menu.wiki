@@ -1,0 +1,25 @@
+=~Ocsigen~-widgets server ~A~P~I
+==~Non~-widgets tools
+===[[server/Ow_list|Ow_list]]
+===[[server/Ow_option|Ow_option]]
+==~Helpers and tools
+===[[server/Ow_size|Ow_size]]
+===[[server/Ow_log|Ow_log]]
+===[[server/Ow_tools|Ow_tools]]
+===[[server/Ow_position|Ow_position]]
+===[[server/Ow_accents|Ow_accents]]
+===[[server/Ow_dyn_upload|Ow_dyn_upload]]
+==~Widgets
+===[[server/Ow_alert|Ow_alert]]
+===[[server/Ow_popup|Ow_popup]]
+===[[server/Ow_button|Ow_button]]
+===[[server/Ow_traversable|Ow_traversable]]
+===[[server/Ow_dropdown|Ow_dropdown]]
+===[[server/Ow_completion|Ow_completion]]
+==~Experimental
+==~Index
+=== <<a_api subproject="server" text="Index of types" | index types >>
+=== <<a_api subproject="server" text="Index of exceptions" | index exceptions >>
+=== <<a_api subproject="server" text="Index of values" | index values >>
+=== <<a_api subproject="server" text="Index of class types" | index class types >>
+=== <<a_api subproject="server" text="Index of modules" | index modules >>

@@ -1,0 +1,4 @@
+<<code language="ocaml" | sig
+  type event = Ow_traversable.traversable_event Js.t Dom.Event.typ
+  val actives : Ow_traversable.Event.event
+end >>

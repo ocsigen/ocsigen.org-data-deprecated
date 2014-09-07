@@ -1,0 +1,11 @@
+<<code language="ocaml" | sig
+  val get_timestamp : unit -> float
+  val as_dom_elt :
+    Dom_html.element Js.t -> (Dom_html.element Js.t -> 'a) -> 'a
+  val closeable :
+    ?get_parent:((#Dom_html.element as 'a) Js.t -> Dom.node Js.t) ->
+    ?on_close:(Dom.node Js.t -> unit) -> 'a Js.t -> unit -> unit
+  val closeable_by_click :
+    ?get_parent:((#Dom_html.element as 'a) Js.t -> Dom.node Js.t) ->
+    ?on_close:(Dom.node Js.t -> unit) -> 'a Js.t -> unit
+end >>

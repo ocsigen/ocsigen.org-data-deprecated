@@ -1,0 +1,6 @@
+<<code language="ocaml" | sig
+  val alert : string -> unit
+  val alert_int : int -> unit
+  val log : string -> unit
+  val log_int : int -> unit
+end >>

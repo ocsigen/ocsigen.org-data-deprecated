@@ -1,0 +1,479 @@
+=Index of values=
+
+|@@ @style="tet-align: left;"@@\\A|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="absolute_coord"| value Ow_position.absolute_coord >> ~[<<a_api subproject="client" | module Ow_position >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|absolute~_coord ~?h ~?v ~~relative elt>> same as <<span class="odocwiki_inlinecode"|relative~_coord>>~, but instead
+      of placing <<span class="odocwiki_inlinecode"|elt>> outside of <<span class="odocwiki_inlinecode"|relative>>~, it place **inside**~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="absolute_move"| value Ow_position.absolute_move >> ~[<<a_api subproject="client" | module Ow_position >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|absolute~_move ~?h ~?v ~~relative elt>> same as <<span class="odocwiki_inlinecode"|absolute~_coord>>~, but instead
+      of returning coordinates~, it moves directly <<span class="odocwiki_inlinecode"|elt>> to the calculated
+      coordinates~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="active"| value Ow_traversable.active >> ~[<<a_api subproject="client" | module Ow_traversable >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="actives"| value Ow_traversable.Event.actives >> ~[<<a_api subproject="client" | module Ow_traversable.Event >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="actives"| value Ow_traversable.actives >> ~[<<a_api subproject="client" | module Ow_traversable >>~]|<<div class="odocwiki_info"|~This event is triggered when an element is to active~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="add_scrollbar"| value Ow_scrollbar.add_scrollbar >> ~[<<a_api subproject="client" | module Ow_scrollbar >>~]|<<div class="odocwiki_info"|~This function adds a custom scrollbar to the element <<span class="odocwiki_inlinecode"|elt>>~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="add_slider"| value Ow_sliderbar.add_slider >> ~[<<a_api subproject="client" | module Ow_sliderbar >>~]|<<div class="odocwiki_info"|~Add a slider to the given element~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="add_square_color"| value Ow_table_color_picker.add_square_color >> ~[<<a_api subproject="client" | module Ow_table_color_picker >>~]|<<div class="odocwiki_info"|~It allow to add square color and append directly in block
+    ~It have to be made before start
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="add_square_color_and_start"| value Ow_table_color_picker.add_square_color_and_start >> ~[<<a_api subproject="client" | module Ow_table_color_picker >>~]|<<div class="odocwiki_info"|~It allow to add square color after start
+    ~It have not to be used before start ~*
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="alert"| value Ow_log.alert >> ~[<<a_api subproject="client" | module Ow_log >>~]|<<div class="odocwiki_info"|~Create a ~J~S alert message~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="alert"| value Ow_alert.alert >> ~[<<a_api subproject="client" | module Ow_alert >>~]|<<div class="odocwiki_info"|~Provides behaviours of the <<span class="odocwiki_inlinecode"|alert>> class to an element~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="alert_int"| value Ow_log.alert_int >> ~[<<a_api subproject="client" | module Ow_log >>~]|<<div class="odocwiki_info"|~Create a ~J~S alert message with an int~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="append_at"| value Ow_color_picker.append_at >> ~[<<a_api subproject="client" | module Ow_color_picker >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="as_dom_elt"| value Ow_tools.as_dom_elt >> ~[<<a_api subproject="client" | module Ow_tools >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|as~_dom~_elt elt f>> consider <<span class="odocwiki_inlinecode"|elt>> as an dom element~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="assoc_remove"| value Ow_list.assoc_remove >> ~[<<a_api subproject="client" | module Ow_list >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|find~_remove k l>> takes the first value from the list equal to k~, and
+        returns it ~(as the ~'a~)~.
+>>
+|
+|@@ @style="tet-align: left;"@@\\B|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="button"| value Ow_button.button >> ~[<<a_api subproject="client" | module Ow_button >>~]|<<div class="odocwiki_info"|~Provides behaviours of a basic button~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="button_alert"| value Ow_button.button_alert >> ~[<<a_api subproject="client" | module Ow_button >>~]|<<div class="odocwiki_info"|~Provides behaviours of an alert button~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="button_dyn_alert"| value Ow_button.button_dyn_alert >> ~[<<a_api subproject="client" | module Ow_button >>~]|<<div class="odocwiki_info"|~Provides behaviours of an dynamic alert button~.
+>>
+|
+|@@ @style="tet-align: left;"@@\\C|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="change_click_callback"| value Ow_slider.change_click_callback >> ~[<<a_api subproject="client" | module Ow_slider >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="change_end_slide_callback"| value Ow_slider.change_end_slide_callback >> ~[<<a_api subproject="client" | module Ow_slider >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="change_move_slide_callback"| value Ow_slider.change_move_slide_callback >> ~[<<a_api subproject="client" | module Ow_slider >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="change_start_slide_callback"| value Ow_slider.change_start_slide_callback >> ~[<<a_api subproject="client" | module Ow_slider >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="clear"| value Ow_jsstorage.JSSTORAGE.clear >> ~[<<a_api subproject="client" | module Ow_jsstorage.JSSTORAGE >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="client_bottom"| value Ow_size.client_bottom >> ~[<<a_api subproject="client" | module Ow_size >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="client_left"| value Ow_size.client_left >> ~[<<a_api subproject="client" | module Ow_size >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="client_right"| value Ow_size.client_right >> ~[<<a_api subproject="client" | module Ow_size >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="client_top"| value Ow_size.client_top >> ~[<<a_api subproject="client" | module Ow_size >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="closeable"| value Ow_tools.closeable >> ~[<<a_api subproject="client" | module Ow_tools >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="closeable_by_click"| value Ow_tools.closeable_by_click >> ~[<<a_api subproject="client" | module Ow_tools >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="closeable_by_click"| value Ow_popup.closeable_by_click >> ~[<<a_api subproject="client" | module Ow_popup >>~]|<<div class="odocwiki_info"|~Alias to <<span class="odocwiki_inlinecode"|~Ow~_alert~_sigs~.closeable~_by~_click>>
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="closeable_by_click"| value Ow_button.closeable_by_click >> ~[<<a_api subproject="client" | module Ow_button >>~]|<<div class="odocwiki_info"|~Same as <<span class="odocwiki_inlinecode"|closeable~_by~_click>> from the module <<span class="odocwiki_inlinecode"|~Ow~_alert>>
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="closeable_by_click"| value Ow_alert.closeable_by_click >> ~[<<a_api subproject="client" | module Ow_alert >>~]|<<div class="odocwiki_info"|~Provides the behaviour of automatically <<span class="odocwiki_inlinecode"|hide>> an <<span class="odocwiki_inlinecode"|alert>> if the
+      element is clicked~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="cmp_coord"| value Ow_event_tools.cmp_coord >> ~[<<a_api subproject="client" | module Ow_event_tools >>~]|<<div class="odocwiki_info"|~Take two coordinates and return true if they are equal
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="completion"| value Ow_completion.completion >> ~[<<a_api subproject="client" | module Ow_completion >>~]|<<div class="odocwiki_info"|~Provides behaviours of a completion widget~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="create"| value Ow_table_color_picker.create >> ~[<<a_api subproject="client" | module Ow_table_color_picker >>~]|<<div class="odocwiki_info"|~*~* ~Take one list ~(tables~) of list ~(columns~) of list ~(lines~) of color ~(string~)
+~*~* and build table list with it~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="create"| value Ow_swipejs.create >> ~[<<a_api subproject="client" | module Ow_swipejs >>~]|<<div class="odocwiki_info"|~Create a swipe from an dom node~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="create"| value Ow_slider.create >> ~[<<a_api subproject="client" | module Ow_slider >>~]|<<div class="odocwiki_info"|initial~_value is at ~0~.~5 by default
+   ~It have to by between ~0~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="create"| value Ow_hookjs.create >> ~[<<a_api subproject="client" | module Ow_hookjs >>~]|<<div class="odocwiki_info"|~Add a hook to your page~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="create"| value Ow_hammer_swipe.create >> ~[<<a_api subproject="client" | module Ow_hammer_swipe >>~]|<<div class="odocwiki_info"|create swipe and fill with panes~_list
+      ~Swipe html element is derectly add into body
+      ~Because it need to be in top level of body
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="create"| value Ow_color_picker.create >> ~[<<a_api subproject="client" | module Ow_color_picker >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="create_key"| value Ow_jsstorage.JSSTORAGE.create_key >> ~[<<a_api subproject="client" | module Ow_jsstorage.JSSTORAGE >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|create~_key name json~_type>>
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="ctor"| value Ow_base_widget.ctor >> ~[<<a_api subproject="client" | module Ow_base_widget >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="ctor"| value Ow_active_set.ctor >> ~[<<a_api subproject="client" | module Ow_active_set >>~]||
+|@@ @style="tet-align: left;"@@\\D|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="disable"| value Ow_active_set.disable >> ~[<<a_api subproject="client" | module Ow_active_set >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="disable_drag_and_drop"| value Ow_event_tools.disable_drag_and_drop >> ~[<<a_api subproject="client" | module Ow_event_tools >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="disable_event"| value Ow_event_tools.disable_event >> ~[<<a_api subproject="client" | module Ow_event_tools >>~]|<<div class="odocwiki_info"|~Disable <<span class="odocwiki_inlinecode"|~Dom~_html~.~Event>> with stopping propagation during capture phase ~*
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="dropdown"| value Ow_dropdown.dropdown >> ~[<<a_api subproject="client" | module Ow_dropdown >>~]|<<div class="odocwiki_info"|~Provides behaviours of dropdown menu~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="dyn_alert"| value Ow_alert.dyn_alert >> ~[<<a_api subproject="client" | module Ow_alert >>~]|<<div class="odocwiki_info"|~Provides behaviours of the <<span class="odocwiki_inlinecode"|dyn~_alert>> class to an element~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="dyn_popup"| value Ow_popup.dyn_popup >> ~[<<a_api subproject="client" | module Ow_popup >>~]|<<div class="odocwiki_info"|~Specialization of a <<span class="odocwiki_inlinecode"|~Ow~_alert~.dyn~_alert>> that shows a transparent
+      background if <<span class="odocwiki_inlinecode"|with~_background>> is set to <<span class="odocwiki_inlinecode"|true>>~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="dyn_upload"| value Ow_dyn_upload.dyn_upload >> ~[<<a_api subproject="client" | module Ow_dyn_upload >>~]|<<div class="odocwiki_info"|~Retrieve the associated file ~(on the server~)
+ of <<span class="odocwiki_inlinecode"|file>>~.
+>>
+|
+|@@ @style="tet-align: left;"@@\\E|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="empty_options"| value Ow_swipejs.empty_options >> ~[<<a_api subproject="client" | module Ow_swipejs >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="empty_options"| value Ow_hookjs.empty_options >> ~[<<a_api subproject="client" | module Ow_hookjs >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="enable"| value Ow_active_set.enable >> ~[<<a_api subproject="client" | module Ow_active_set >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="enable_event"| value Ow_event_tools.enable_event >> ~[<<a_api subproject="client" | module Ow_event_tools >>~]|<<div class="odocwiki_info"|~Enable <<span class="odocwiki_inlinecode"|~Dom~_html~.~Event>> with id given by disable~_event ~*
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="enable_events"| value Ow_event_tools.enable_events >> ~[<<a_api subproject="client" | module Ow_event_tools >>~]||
+|@@ @style="tet-align: left;"@@\\F|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="find_remove"| value Ow_list.find_remove >> ~[<<a_api subproject="client" | module Ow_list >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|find~_remove f l>> takes the first value from the list returning true~, and
+        returns it ~(as the ~'a~)~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="fusion"| value Ow_table_color_picker.fusion >> ~[<<a_api subproject="client" | module Ow_table_color_picker >>~]|<<div class="odocwiki_info"|~Get two color~_picker to fusion in single
+    ~This new color~_picker use color squares of both
+    ~It use color~_div of first color~_picker given in argument
+    ~It also keep referend on first color~_picker~'s block to future append color
+>>
+|
+|@@ @style="tet-align: left;"@@\\G|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="genere_lll_color"| value Ow_table_color_picker.genere_lll_color >> ~[<<a_api subproject="client" | module Ow_table_color_picker >>~]|<<div class="odocwiki_info"|~The agrument is the divisor of ~2~5~5
+~*~* ~It have to be greater than ~1 ~*
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="get"| value Ow_jsstorage.JSSTORAGE.get >> ~[<<a_api subproject="client" | module Ow_jsstorage.JSSTORAGE >>~]|<<div class="odocwiki_info"|~If storage does not existe~,
+          ~It launch failwith "~Storage is not available"
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="get_color"| value Ow_table_color_picker.get_color >> ~[<<a_api subproject="client" | module Ow_table_color_picker >>~]|<<div class="odocwiki_info"|~It is not disturbe by fusion or add square ~*
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="get_current_pane"| value Ow_hammer_swipe.get_current_pane >> ~[<<a_api subproject="client" | module Ow_hammer_swipe >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="get_document_size"| value Ow_size.get_document_size >> ~[<<a_api subproject="client" | module Ow_size >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="get_dragger_pct"| value Ow_scrollbar.get_dragger_pct >> ~[<<a_api subproject="client" | module Ow_scrollbar >>~]|<<div class="odocwiki_info"|~Return the position of the dragger in the bar in percent~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="get_dragger_pos"| value Ow_scrollbar.get_dragger_pos >> ~[<<a_api subproject="client" | module Ow_scrollbar >>~]|<<div class="odocwiki_info"|~Return the position of the dragger~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="get_full_height"| value Ow_size.get_full_height >> ~[<<a_api subproject="client" | module Ow_size >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="get_full_width"| value Ow_size.get_full_width >> ~[<<a_api subproject="client" | module Ow_size >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="get_item"| value Ow_jsstorage.JSSTORAGE.get_item >> ~[<<a_api subproject="client" | module Ow_jsstorage.JSSTORAGE >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="get_local_mouse_ev_coord"| value Ow_event_tools.get_local_mouse_ev_coord >> ~[<<a_api subproject="client" | module Ow_event_tools >>~]|<<div class="odocwiki_info"|~Similar to <<span class="odocwiki_inlinecode"|get~_mouse~_ev~_coord>>~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="get_local_slide_coord"| value Ow_slide_event.get_local_slide_coord >> ~[<<a_api subproject="client" | module Ow_slide_event >>~]|<<div class="odocwiki_info"|~Based on get~_local~_mouse~_ev~_coord and get~_local~_touch~_ev~_coord
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="get_local_touch_ev_coord"| value Ow_event_tools.get_local_touch_ev_coord >> ~[<<a_api subproject="client" | module Ow_event_tools >>~]|<<div class="odocwiki_info"|~Similar to <<span class="odocwiki_inlinecode"|get~_touch~_ev~_coord>>~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="get_mouse_ev_coord"| value Ow_event_tools.get_mouse_ev_coord >> ~[<<a_api subproject="client" | module Ow_event_tools >>~]|<<div class="odocwiki_info"|>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="get_name_key"| value Ow_jsstorage.JSSTORAGE.get_name_key >> ~[<<a_api subproject="client" | module Ow_jsstorage.JSSTORAGE >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|get~_name~_key storage index>>
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="get_noopt_item"| value Ow_jsstorage.JSSTORAGE.get_noopt_item >> ~[<<a_api subproject="client" | module Ow_jsstorage.JSSTORAGE >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|get~_noopt~_item storage key json~_type default~_value>>
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="get_number_of_slides"| value Ow_swipejs.get_number_of_slides >> ~[<<a_api subproject="client" | module Ow_swipejs >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="get_position"| value Ow_swipejs.get_position >> ~[<<a_api subproject="client" | module Ow_swipejs >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="get_rgb"| value Ow_color_picker.get_rgb >> ~[<<a_api subproject="client" | module Ow_color_picker >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="get_screen_orientation"| value Ow_size.get_screen_orientation >> ~[<<a_api subproject="client" | module Ow_size >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="get_screen_size"| value Ow_size.get_screen_size >> ~[<<a_api subproject="client" | module Ow_size >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="get_size"| value Ow_size.get_size >> ~[<<a_api subproject="client" | module Ow_size >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="get_slide_coord"| value Ow_slide_event.get_slide_coord >> ~[<<a_api subproject="client" | module Ow_slide_event >>~]|<<div class="odocwiki_info"|~Based on get~_mouse~_ev~_coord and get~_touch~_ev~_coord
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="get_square_color_div_list"| value Ow_table_color_picker.get_square_color_div_list >> ~[<<a_api subproject="client" | module Ow_table_color_picker >>~]|<<div class="odocwiki_info"|get all square color div element
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="get_timestamp"| value Ow_tools.get_timestamp >> ~[<<a_api subproject="client" | module Ow_tools >>~]|<<div class="odocwiki_info"|~Time
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="get_touch_coord"| value Ow_event_tools.get_touch_coord >> ~[<<a_api subproject="client" | module Ow_event_tools >>~]|<<div class="odocwiki_info"|>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="get_touch_ev_coord"| value Ow_event_tools.get_touch_ev_coord >> ~[<<a_api subproject="client" | module Ow_event_tools >>~]|<<div class="odocwiki_info"|~Similar to <<span class="odocwiki_inlinecode"|get~_touch~_coord>>~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="get_value"| value Ow_sliderbar.get_value >> ~[<<a_api subproject="client" | module Ow_sliderbar >>~]|<<div class="odocwiki_info"|~Return the value of the slider~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="get_value"| value Ow_slider.get_value >> ~[<<a_api subproject="client" | module Ow_slider >>~]|<<div class="odocwiki_info"|return value between ~0~.
+>>
+|
+|@@ @style="tet-align: left;"@@\\H|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="height"| value Ow_size.height >> ~[<<a_api subproject="client" | module Ow_size >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="height_to_bottom"| value Ow_size.height_to_bottom >> ~[<<a_api subproject="client" | module Ow_size >>~]|<<div class="odocwiki_info"|~Compute the height of an element to the bottom of the page
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="hide"| value Ow_alert.Event.S.hide >> ~[<<a_api subproject="client" | module Ow_alert.Event.S >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="hide"| value Ow_alert.Event.hide >> ~[<<a_api subproject="client" | module Ow_alert.Event >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="hide"| value Ow_alert.hide >> ~[<<a_api subproject="client" | module Ow_alert >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="hide_background"| value Ow_popup.hide_background >> ~[<<a_api subproject="client" | module Ow_popup >>~]|<<div class="odocwiki_info"|~Internal background id hidden when a popup is triggered~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="hides"| value Ow_alert.hides >> ~[<<a_api subproject="client" | module Ow_alert >>~]|<<div class="odocwiki_info"|~This events is triggered when the method <<span class="odocwiki_inlinecode"|hide>> is called~.
+>>
+|
+|@@ @style="tet-align: left;"@@\\I|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="id"| value Ow_pervasives.id >> ~[<<a_api subproject="client" | module Ow_pervasives >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="init"| value Ow_swipejs.init >> ~[<<a_api subproject="client" | module Ow_swipejs >>~]|<<div class="odocwiki_info"|~You need to initialize your swipe content with default values
+      to allow future update
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="init"| value Ow_hookjs.init >> ~[<<a_api subproject="client" | module Ow_hookjs >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="init"| value Ow_hammer_swipe.init >> ~[<<a_api subproject="client" | module Ow_hammer_swipe >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="init_handler"| value Ow_color_picker.init_handler >> ~[<<a_api subproject="client" | module Ow_color_picker >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="int_of_pxstring"| value Ow_size.int_of_pxstring >> ~[<<a_api subproject="client" | module Ow_size >>~]|<<div class="odocwiki_info"|~Convert an int into "~%i px"~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="iter"| value Ow_option.iter >> ~[<<a_api subproject="client" | module Ow_option >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|iter f v>> apply f to v if v is not ~None~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="iter_lwt"| value Ow_option.iter_lwt >> ~[<<a_api subproject="client" | module Ow_option >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|iter~_lwt>> is like <<span class="odocwiki_inlinecode"|iter>> but returns a ~Lwt value~.
+>>
+|
+|@@ @style="tet-align: left;"@@\\L|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="length"| value Ow_jsstorage.JSSTORAGE.length >> ~[<<a_api subproject="client" | module Ow_jsstorage.JSSTORAGE >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="li"| value Ow_traversable.li >> ~[<<a_api subproject="client" | module Ow_traversable >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="li"| value Ow_dropdown.li >> ~[<<a_api subproject="client" | module Ow_dropdown >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="li"| value Ow_completion.li >> ~[<<a_api subproject="client" | module Ow_completion >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="lll_color_10"| value Ow_table_color_picker.lll_color_10 >> ~[<<a_api subproject="client" | module Ow_table_color_picker >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="lll_color_6"| value Ow_table_color_picker.lll_color_6 >> ~[<<a_api subproject="client" | module Ow_table_color_picker >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="lll_color_p2"| value Ow_table_color_picker.lll_color_p2 >> ~[<<a_api subproject="client" | module Ow_table_color_picker >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="lll_color_p3"| value Ow_table_color_picker.lll_color_p3 >> ~[<<a_api subproject="client" | module Ow_table_color_picker >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="lll_color_p4"| value Ow_table_color_picker.lll_color_p4 >> ~[<<a_api subproject="client" | module Ow_table_color_picker >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="lll_color_p5"| value Ow_table_color_picker.lll_color_p5 >> ~[<<a_api subproject="client" | module Ow_table_color_picker >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="lll_color_p6"| value Ow_table_color_picker.lll_color_p6 >> ~[<<a_api subproject="client" | module Ow_table_color_picker >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="log"| value Ow_log.log >> ~[<<a_api subproject="client" | module Ow_log >>~]|<<div class="odocwiki_info"|~Log a message in the firebug console~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="log_int"| value Ow_log.log_int >> ~[<<a_api subproject="client" | module Ow_log >>~]|<<div class="odocwiki_info"|~Log an int in the firebug console~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="lwt_map"| value Ow_option.lwt_map >> ~[<<a_api subproject="client" | module Ow_option >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|lwt~_map t f g>> ~If the thread has returned a value v~, returns ~(f v~)~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="lwt_scroll_to"| value Ow_scrollbar.lwt_scroll_to >> ~[<<a_api subproject="client" | module Ow_scrollbar >>~]|<<div class="odocwiki_info"|~Scroll the scrollbar attached to <<span class="odocwiki_inlinecode"|elt>> to a point defined by <<span class="odocwiki_inlinecode"|scroll>>~.
+>>
+|
+|@@ @style="tet-align: left;"@@\\M|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="map"| value Ow_option.map >> ~[<<a_api subproject="client" | module Ow_option >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|map f v>> returns the application of f on the option v if v is not ~None~, or ~None~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="map_lwt"| value Ow_option.map_lwt >> ~[<<a_api subproject="client" | module Ow_option >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|map~_lwt>> is like <<span class="odocwiki_inlinecode"|map>> but returns a ~Lwt value~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="mouseslide"| value Ow_slide_event.mouseslide >> ~[<<a_api subproject="client" | module Ow_slide_event >>~]|<<div class="odocwiki_info"|~First is html element where catch start event
+      ~Second is start~_func call at start event
+      ~Third is move~_func call at each move event
+      ~Fourth is end event call at end event
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="mouseslides"| value Ow_slide_event.mouseslides >> ~[<<a_api subproject="client" | module Ow_slide_event >>~]|<<div class="odocwiki_info"|~Same as mouseslide but catch all start event instead of only one
+>>
+|
+|@@ @style="tet-align: left;"@@\\N|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="next"| value Ow_swipejs.next >> ~[<<a_api subproject="client" | module Ow_swipejs >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="next"| value Ow_hammer_swipe.next >> ~[<<a_api subproject="client" | module Ow_hammer_swipe >>~]||
+|@@ @style="tet-align: left;"@@\\O|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="of_opt"| value Ow_option.of_opt >> ~[<<a_api subproject="client" | module Ow_option >>~]|<<div class="odocwiki_info"|~De~-optize the value~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="of_server_set"| value Ow_active_set.of_server_set >> ~[<<a_api subproject="client" | module Ow_active_set >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="on_slide"| value Ow_sliderbar.on_slide >> ~[<<a_api subproject="client" | module Ow_sliderbar >>~]|<<div class="odocwiki_info"|~Replace the callback function done on slides~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="outer_click"| value Ow_alert.outer_click >> ~[<<a_api subproject="client" | module Ow_alert >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="outer_clicks"| value Ow_alert.outer_clicks >> ~[<<a_api subproject="client" | module Ow_alert >>~]|<<div class="odocwiki_info"|~This events is triggered when a click occurs outside of an alert box
+      or outside of an element immune to out clicks~.
+>>
+|
+|@@ @style="tet-align: left;"@@\\P|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="popup"| value Ow_popup.popup >> ~[<<a_api subproject="client" | module Ow_popup >>~]|<<div class="odocwiki_info"|~Specialization of a <<span class="odocwiki_inlinecode"|~Ow~_alert~.alert>> that shows a transparent
+      background if <<span class="odocwiki_inlinecode"|with~_background>> is set to <<span class="odocwiki_inlinecode"|true>>~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="post_press"| value Ow_button.post_press >> ~[<<a_api subproject="client" | module Ow_button >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="post_presses"| value Ow_button.post_presses >> ~[<<a_api subproject="client" | module Ow_button >>~]|<<div class="odocwiki_info"|~This event is triggered after the <<span class="odocwiki_inlinecode"|button>> is pressed~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="post_unpress"| value Ow_button.post_unpress >> ~[<<a_api subproject="client" | module Ow_button >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="post_unpresses"| value Ow_button.post_unpresses >> ~[<<a_api subproject="client" | module Ow_button >>~]|<<div class="odocwiki_info"|~This event is triggered after the <<span class="odocwiki_inlinecode"|button>> is unpressed~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="pre_press"| value Ow_button.pre_press >> ~[<<a_api subproject="client" | module Ow_button >>~]|<<div class="odocwiki_info"|~Specific events for alerts
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="pre_presses"| value Ow_button.pre_presses >> ~[<<a_api subproject="client" | module Ow_button >>~]|<<div class="odocwiki_info"|~This event is triggered before the <<span class="odocwiki_inlinecode"|button>> is pressed~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="pre_unpress"| value Ow_button.pre_unpress >> ~[<<a_api subproject="client" | module Ow_button >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="pre_unpresses"| value Ow_button.pre_unpresses >> ~[<<a_api subproject="client" | module Ow_button >>~]|<<div class="odocwiki_info"|~This event is triggered before the <<span class="odocwiki_inlinecode"|button>> is unpressed~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="press"| value Ow_button.Event.press >> ~[<<a_api subproject="client" | module Ow_button.Event >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="press"| value Ow_button.press >> ~[<<a_api subproject="client" | module Ow_button >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="presses"| value Ow_button.presses >> ~[<<a_api subproject="client" | module Ow_button >>~]|<<div class="odocwiki_info"|~This event is triggered when the <<span class="odocwiki_inlinecode"|button>> is pressed~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="prev"| value Ow_swipejs.prev >> ~[<<a_api subproject="client" | module Ow_swipejs >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="prev"| value Ow_hammer_swipe.prev >> ~[<<a_api subproject="client" | module Ow_hammer_swipe >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="prevent_outer_clicks"| value Ow_alert.prevent_outer_clicks >> ~[<<a_api subproject="client" | module Ow_alert >>~]|<<div class="odocwiki_info"|~Prevent outer clicks on the given element ~(make it immune to them~)~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="pxstring_of_int"| value Ow_size.pxstring_of_int >> ~[<<a_api subproject="client" | module Ow_size >>~]|<<div class="odocwiki_info"|~Extract an int from a string of the form "~%i px"~.
+>>
+|
+|@@ @style="tet-align: left;"@@\\R|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="relative_coord"| value Ow_position.relative_coord >> ~[<<a_api subproject="client" | module Ow_position >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|relative~_coord ~?h ~?v ~~relative elt>> try to calculate the
+      coordinates of <<span class="odocwiki_inlinecode"|elt>> applying the directions <<span class="odocwiki_inlinecode"|h>> and <<span class="odocwiki_inlinecode"|v>> on it and using
+      <<span class="odocwiki_inlinecode"|relative>> as a reference~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="relative_move"| value Ow_position.relative_move >> ~[<<a_api subproject="client" | module Ow_position >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|relative~_move ~?h ~?v ~~relative elt>> same as <<span class="odocwiki_inlinecode"|relative~_coord>>~, but instead
+      of returning coordinates~, it moves directly <<span class="odocwiki_inlinecode"|elt>> to the calculated
+      coordinates~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="remove_click_callback"| value Ow_slider.remove_click_callback >> ~[<<a_api subproject="client" | module Ow_slider >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="remove_end_slide_callback"| value Ow_slider.remove_end_slide_callback >> ~[<<a_api subproject="client" | module Ow_slider >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="remove_item"| value Ow_jsstorage.JSSTORAGE.remove_item >> ~[<<a_api subproject="client" | module Ow_jsstorage.JSSTORAGE >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="remove_move_slide_callback"| value Ow_slider.remove_move_slide_callback >> ~[<<a_api subproject="client" | module Ow_slider >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="remove_start_slide_callback"| value Ow_slider.remove_start_slide_callback >> ~[<<a_api subproject="client" | module Ow_slider >>~]||
+|@@ @style="tet-align: left;"@@\\S|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="scroll_starts"| value Ow_scrollbar.scroll_starts >> ~[<<a_api subproject="client" | module Ow_scrollbar >>~]|<<div class="odocwiki_info"|~Add a function to the list of callbacks executed before a scroll~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="scrolls"| value Ow_scrollbar.scrolls >> ~[<<a_api subproject="client" | module Ow_scrollbar >>~]|<<div class="odocwiki_info"|~Add a function to the list of callbacks executed after a scroll~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="selected_cls"| value Ow_traversable.Style.selected_cls >> ~[<<a_api subproject="client" | module Ow_traversable.Style >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="set"| value Ow_active_set.set >> ~[<<a_api subproject="client" | module Ow_active_set >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="set_adaptative_height"| value Ow_size.set_adaptative_height >> ~[<<a_api subproject="client" | module Ow_size >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|set~_adaptative~_height elt f>> will make the width of the element
+      recomputed using <<span class="odocwiki_inlinecode"|f>> everytime the height of the window changes~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="set_adaptative_width"| value Ow_size.set_adaptative_width >> ~[<<a_api subproject="client" | module Ow_size >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|set~_adaptative~_width elt f>> will make the width of the element
+      recomputed using <<span class="odocwiki_inlinecode"|f>> everytime the width of the window changes~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="set_item"| value Ow_jsstorage.JSSTORAGE.set_item >> ~[<<a_api subproject="client" | module Ow_jsstorage.JSSTORAGE >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="show"| value Ow_alert.Event.S.show >> ~[<<a_api subproject="client" | module Ow_alert.Event.S >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="show"| value Ow_alert.Event.show >> ~[<<a_api subproject="client" | module Ow_alert.Event >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="show"| value Ow_alert.show >> ~[<<a_api subproject="client" | module Ow_alert >>~]|<<div class="odocwiki_info"|~Specific events for alerts
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="show_background"| value Ow_popup.show_background >> ~[<<a_api subproject="client" | module Ow_popup >>~]|<<div class="odocwiki_info"|~Internal background is shown when a popup is triggered~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="show_pane"| value Ow_hammer_swipe.show_pane >> ~[<<a_api subproject="client" | module Ow_hammer_swipe >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|show~_pane t index>>
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="shows"| value Ow_alert.shows >> ~[<<a_api subproject="client" | module Ow_alert >>~]|<<div class="odocwiki_info"|~This events is triggered when the method <<span class="odocwiki_inlinecode"|show>> is called~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="slide_event"| value Ow_slide_event.slide_event >> ~[<<a_api subproject="client" | module Ow_slide_event >>~]|<<div class="odocwiki_info"|~First is start event
+      ~Second is function which take move~_func and end~_func
+      ~(partial slide~_without~_start~)
+      ~Third is html element where catch start event
+      ~Fourth is start~_func call at start event
+      ~Fifth is move~_func call at each move event
+      ~Sixth is end~_func call at end event
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="slide_events"| value Ow_slide_event.slide_events >> ~[<<a_api subproject="client" | module Ow_slide_event >>~]|<<div class="odocwiki_info"|~Same as slide~_event but catch all start event instead of only one
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="slide_to"| value Ow_swipejs.slide_to >> ~[<<a_api subproject="client" | module Ow_swipejs >>~]|<<div class="odocwiki_info"|~Jump to a specific slide~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="slide_without_start"| value Ow_slide_event.slide_without_start >> ~[<<a_api subproject="client" | module Ow_slide_event >>~]|<<div class="odocwiki_info"|~First is moves event
+      ~Second is end event
+      ~Third is move~_func call at each move event
+      ~Fourth is end event call at end event
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="start"| value Ow_table_color_picker.start >> ~[<<a_api subproject="client" | module Ow_table_color_picker >>~]|<<div class="odocwiki_info"|~Launch listeners
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="start"| value Ow_swipejs.start >> ~[<<a_api subproject="client" | module Ow_swipejs >>~]|<<div class="odocwiki_info"|~Start motion~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="start"| value Ow_slider.start >> ~[<<a_api subproject="client" | module Ow_slider >>~]|<<div class="odocwiki_info"|launch click callback at start with initialize value
+>>
+|
+|@@ @style="tet-align: left;"@@\\T|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="to_alert"| value Ow_alert.to_alert >> ~[<<a_api subproject="client" | module Ow_alert >>~]|<<div class="odocwiki_info"|~Tests if an element is an alert or not and returns it as a <<span class="odocwiki_inlinecode"|alert>>
+      instance~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="to_button"| value Ow_button.to_button >> ~[<<a_api subproject="client" | module Ow_button >>~]|<<div class="odocwiki_info"|~These functions check if the given element is an **instance of** specific
+      button ~(<<span class="odocwiki_inlinecode"|button>>~, <<span class="odocwiki_inlinecode"|button~_alert>> or <<span class="odocwiki_inlinecode"|button~_dyn~_alert>>~)~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="to_button_alert"| value Ow_button.to_button_alert >> ~[<<a_api subproject="client" | module Ow_button >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="to_button_dyn_alert"| value Ow_button.to_button_dyn_alert >> ~[<<a_api subproject="client" | module Ow_button >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="to_dyn_alert"| value Ow_alert.to_dyn_alert >> ~[<<a_api subproject="client" | module Ow_alert >>~]|<<div class="odocwiki_info"|~Tests if an element is an dyn~_alert or not and returns it as a <<span class="odocwiki_inlinecode"|dyn~_alert>>
+      instance~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="to_dyn_popup"| value Ow_popup.to_dyn_popup >> ~[<<a_api subproject="client" | module Ow_popup >>~]|<<div class="odocwiki_info"|~Tests if an element is an alert or not and returns it as a <<span class="odocwiki_inlinecode"|dyn~_popup>>
+      instance~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="to_popup"| value Ow_popup.to_popup >> ~[<<a_api subproject="client" | module Ow_popup >>~]|<<div class="odocwiki_info"|~Tests if an element is an alert or not and returns it as a <<span class="odocwiki_inlinecode"|popup>>
+      instance~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="to_server_set"| value Ow_active_set.to_server_set >> ~[<<a_api subproject="client" | module Ow_active_set >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="to_traversable"| value Ow_traversable.to_traversable >> ~[<<a_api subproject="client" | module Ow_traversable >>~]|<<div class="odocwiki_info"|~Check if the given element is an instance of a <<span class="odocwiki_inlinecode"|traversable>> widget~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="touch_or_mouse_slide"| value Ow_slide_event.touch_or_mouse_slide >> ~[<<a_api subproject="client" | module Ow_slide_event >>~]|<<div class="odocwiki_info"|~Same as mouseslide or touchslide but handle the both
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="touch_or_mouse_slides"| value Ow_slide_event.touch_or_mouse_slides >> ~[<<a_api subproject="client" | module Ow_slide_event >>~]|<<div class="odocwiki_info"|~Same as touch~_or~_mouse~_slide
+      but catch all event instead of only the first
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="touchslide"| value Ow_slide_event.touchslide >> ~[<<a_api subproject="client" | module Ow_slide_event >>~]|<<div class="odocwiki_info"|~Same as mouseslide but with touchevent
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="touchslides"| value Ow_slide_event.touchslides >> ~[<<a_api subproject="client" | module Ow_slide_event >>~]|<<div class="odocwiki_info"|~Same as mouseslides but with touchevent
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="traversable"| value Ow_traversable.traversable >> ~[<<a_api subproject="client" | module Ow_traversable >>~]|<<div class="odocwiki_info"|~Provides the behaviour of listening keys when the element is traversable~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="traversable_cls"| value Ow_traversable.Style.traversable_cls >> ~[<<a_api subproject="client" | module Ow_traversable.Style >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="traversable_elt_cls"| value Ow_traversable.Style.traversable_elt_cls >> ~[<<a_api subproject="client" | module Ow_traversable.Style >>~]||
+|@@ @style="tet-align: left;"@@\\U|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="uniq"| value Ow_list.uniq >> ~[<<a_api subproject="client" | module Ow_list >>~]|<<div class="odocwiki_info"|~Remove duplicates in a sorted list
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="unpress"| value Ow_button.Event.unpress >> ~[<<a_api subproject="client" | module Ow_button.Event >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="unpress"| value Ow_button.unpress >> ~[<<a_api subproject="client" | module Ow_button >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="unpresses"| value Ow_button.unpresses >> ~[<<a_api subproject="client" | module Ow_button >>~]|<<div class="odocwiki_info"|~This event is triggered when the <<span class="odocwiki_inlinecode"|button>> is unpressed~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="update"| value Ow_scrollbar.update >> ~[<<a_api subproject="client" | module Ow_scrollbar >>~]|<<div class="odocwiki_info"|~Update the scrollbar~.
+>>
+|
+|@@ @style="tet-align: left;"@@\\W|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="width"| value Ow_size.width >> ~[<<a_api subproject="client" | module Ow_size >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="width_height"| value Ow_size.width_height >> ~[<<a_api subproject="client" | module Ow_size >>~]||
+\\

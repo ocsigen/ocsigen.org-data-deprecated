@@ -1,0 +1,24 @@
+<<code language="ocaml" | sig
+  type dynup_service_t =
+      (unit, Eliom_lib.file_info, Eliom_service.service_method,
+       Eliom_service.non_attached_kind, [ `NonattachedCoservice ],
+       [ `WithoutSuffix ], unit,
+       [ `One of Eliom_lib.file_info ] Eliom_parameter.param_name,
+       [ `Registrable ], (string list * string) Eliom_service.ocaml_service)
+      Eliom_service.service
+  exception Invalid_extension
+  val service : ?name:string -> unit -> Ow_dyn_upload.dynup_service_t
+  val handler :
+    ?timeout:float ->
+    ?remove_on_timeout:bool ->
+    ?dir:string list ->
+    ?new_filename:(unit -> string) ->
+    ?extensions:string list ->
+    (string list -> string -> unit Lwt.t) ->
+    unit -> Ocsigen_extensions.file_info -> (string list * string) Lwt.t
+  val register :
+    Ow_dyn_upload.dynup_service_t ->
+    (unit -> Ocsigen_extensions.file_info -> (string list * string) Lwt.t) ->
+    unit
+  val mark_as_used : string -> unit Lwt.t
+end >>

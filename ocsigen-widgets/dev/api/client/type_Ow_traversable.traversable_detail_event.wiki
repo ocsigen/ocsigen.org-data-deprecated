@@ -1,0 +1,1 @@
+<<code language="ocaml" | object method by : Ow_traversable.by Js.meth end >>

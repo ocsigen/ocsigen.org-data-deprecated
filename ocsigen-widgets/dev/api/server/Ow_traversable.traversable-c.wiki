@@ -1,0 +1,3 @@
+=Class type <<a_api_type subproject="server" | class type Ow_traversable.traversable >> =
+<<pre class="ocsforge_color odocwiki_code"|<<span id="TYPEtraversable"|<<span class="ocsforge_color_keyword"|class type>> <<span class="ocsforge_color_name"|traversable>>>> <<span class="ocsforge_color_delimiter"|~=>> <<span class="ocsforge_color_keyword"|object>><<a_api subproject="server" text=".." | class type Ow_traversable.traversable >><<span class="ocsforge_color_keyword"|end>>>>
+----

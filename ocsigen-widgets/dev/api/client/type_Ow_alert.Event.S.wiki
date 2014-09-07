@@ -1,0 +1,1 @@
+<<code language="ocaml" | sig val show : string val hide : string end >>

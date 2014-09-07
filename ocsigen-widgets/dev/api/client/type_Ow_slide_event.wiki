@@ -1,0 +1,63 @@
+<<code language="ocaml" | sig
+  val slide_without_start :
+    (Dom_html.document Js.t -> ('a -> 'b Lwt.t -> 'b Lwt.t) -> 'b Lwt.t) ->
+    (Dom_html.document Js.t -> 'c Lwt.t) ->
+    ('a -> 'b Lwt.t -> 'b Lwt.t) -> ('c -> 'b Lwt.t) -> 'b Lwt.t
+  val slide_event :
+    ((#Dom_html.eventTarget as 'a) Js.t -> 'b Lwt.t) ->
+    (('c -> 'd Lwt.t -> 'd Lwt.t) -> ('e -> 'd Lwt.t) -> 'd Lwt.t) ->
+    'a Js.t ->
+    ('b -> 'd Lwt.t) ->
+    ('c -> 'd Lwt.t -> 'd Lwt.t) -> ('e -> 'd Lwt.t) -> 'd Lwt.t
+  val slide_events :
+    ((#Dom_html.eventTarget as 'a) Js.t ->
+     ('b -> 'c Lwt.t -> 'c Lwt.t) -> 'c Lwt.t) ->
+    (('d -> 'c Lwt.t -> 'c Lwt.t) -> ('e -> 'c Lwt.t) -> 'c Lwt.t) ->
+    'a Js.t ->
+    ('b -> 'c Lwt.t -> 'c Lwt.t) ->
+    ('d -> 'c Lwt.t -> 'c Lwt.t) -> ('e -> 'c Lwt.t) -> 'c Lwt.t
+  val mouseslide :
+    #Dom_html.eventTarget Js.t ->
+    (Dom_html.mouseEvent Js.t -> unit Lwt.t) ->
+    (Dom_html.mouseEvent Js.t -> unit Lwt.t -> unit Lwt.t) ->
+    (Dom_html.mouseEvent Js.t -> unit Lwt.t) -> unit Lwt.t
+  val mouseslides :
+    #Dom_html.eventTarget Js.t ->
+    (Dom_html.mouseEvent Js.t -> unit Lwt.t -> unit Lwt.t) ->
+    (Dom_html.mouseEvent Js.t -> unit Lwt.t -> unit Lwt.t) ->
+    (Dom_html.mouseEvent Js.t -> unit Lwt.t) -> unit Lwt.t
+  val touchslide :
+    #Dom_html.eventTarget Js.t ->
+    (Dom_html.touchEvent Js.t -> unit Lwt.t) ->
+    (Dom_html.touchEvent Js.t -> unit Lwt.t -> unit Lwt.t) ->
+    (Dom_html.touchEvent Js.t -> unit Lwt.t) -> unit Lwt.t
+  val touchslides :
+    #Dom_html.eventTarget Js.t ->
+    (Dom_html.touchEvent Js.t -> unit Lwt.t -> unit Lwt.t) ->
+    (Dom_html.touchEvent Js.t -> unit Lwt.t -> unit Lwt.t) ->
+    (Dom_html.touchEvent Js.t -> unit Lwt.t) -> unit Lwt.t
+  type slide_event =
+      Touch_event of Dom_html.touchEvent Js.t
+    | Mouse_event of Dom_html.mouseEvent Js.t
+  val get_slide_coord :
+    ?t_type:Ow_event_tools.touch_type ->
+    int ->
+    ?p_type:Ow_event_tools.position_type ->
+    Ow_slide_event.slide_event -> int * int
+  val get_local_slide_coord :
+    #Dom_html.element Js.t ->
+    ?t_type:Ow_event_tools.touch_type ->
+    int ->
+    ?p_type:Ow_event_tools.position_type ->
+    Ow_slide_event.slide_event -> int * int
+  val touch_or_mouse_slide :
+    #Dom_html.eventTarget Js.t ->
+    (Ow_slide_event.slide_event -> unit Lwt.t) ->
+    (Ow_slide_event.slide_event -> unit Lwt.t -> unit Lwt.t) ->
+    (Ow_slide_event.slide_event -> unit Lwt.t) -> unit Lwt.t
+  val touch_or_mouse_slides :
+    #Dom_html.eventTarget Js.t ->
+    (Ow_slide_event.slide_event -> unit Lwt.t -> unit Lwt.t) ->
+    (Ow_slide_event.slide_event -> unit Lwt.t -> unit Lwt.t) ->
+    (Ow_slide_event.slide_event -> unit Lwt.t) -> unit Lwt.t
+end >>

@@ -1,0 +1,27 @@
+<<code language="ocaml" | sig
+  type scroll_t = Bottom | First | Int of int | Last | Left | Right | Top
+  val add_scrollbar :
+    ?height:(Dom_html.element Js.t -> int) ->
+    ?scroll:Ow_scrollbar.scroll_t ->
+    ?inertia:int ->
+    ?mouse_wheel_pixels:int ->
+    ?on_scroll_callback:(unit -> unit) ->
+    ?on_scroll_start_callback:(unit -> unit) ->
+    ?on_total_scroll_callback:(unit -> unit) ->
+    ?on_total_scroll_back_callback:(unit -> unit) ->
+    ?while_scrolling_callback:(unit -> unit) ->
+    ?on_total_scroll_offset:int ->
+    ?on_total_scroll_back_offset:int ->
+    'a Eliom_content.Html5.elt -> unit Lwt.t
+  val get_dragger_pos : 'a Eliom_content.Html5.elt -> int
+  val get_dragger_pct : 'a Eliom_content.Html5.elt -> int
+  val lwt_scroll_to :
+    ?inertia:bool ->
+    ?scroll:Ow_scrollbar.scroll_t -> 'a Eliom_content.Html5.elt -> unit Lwt.t
+  val update :
+    ?height:(Dom_html.element Js.t -> int) ->
+    ?scroll:Ow_scrollbar.scroll_t -> 'a Eliom_content.Html5.elt -> unit Lwt.t
+  val scroll_starts :
+    (unit -> unit) -> 'a Eliom_content.Html5.elt -> 'a Lwt.t
+  val scrolls : (unit -> unit) -> 'a Eliom_content.Html5.elt -> 'a Lwt.t
+end >>

@@ -1,0 +1,26 @@
+<<code language="ocaml" | sig
+  type refresh_fun' =
+      int -> string -> Html5_types.li Eliom_content.Html5.elt list Lwt.t
+  type on_confirm_fun' = string -> unit Lwt.t
+  val is_completed_by : string -> string -> bool
+  val li :
+    ?a:[< Html5_types.li_attrib > `Class `User_data ]
+       Eliom_content.Html5.D.attrib list ->
+    value:Html5_types.text ->
+    value_to_match:Html5_types.text ->
+    Html5_types.flow5_without_interactive Eliom_content.Html5.D.Raw.elt list ->
+    [> Html5_types.li ] Eliom_content.Html5.D.elt
+  val completion :
+    refresh:Ow_completion.refresh_fun' Eliom_pervasives.client_value ->
+    ?limit:int ->
+    ?accents:bool ->
+    ?sensitive:bool ->
+    ?adaptive:bool ->
+    ?auto_match:bool ->
+    ?clear_input_on_confirm:bool ->
+    ?move_with_tab:bool ->
+    ?on_confirm:Ow_completion.on_confirm_fun' Eliom_pervasives.client_value ->
+    'a Eliom_content.Html5.elt ->
+    Html5_types.ul Eliom_content.Html5.elt ->
+    'a Eliom_content.Html5.elt * Html5_types.ul Eliom_content.Html5.elt
+end >>

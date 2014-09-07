@@ -1,0 +1,5 @@
+=Class type <<a_api_type subproject="client" | class type Ow_alert.alert_event >> =
+<<pre class="ocsforge_color odocwiki_code"|<<span id="TYPEalert_event"|<<span class="ocsforge_color_keyword"|class type>> <<span class="ocsforge_color_name"|alert_event>>>> <<span class="ocsforge_color_delimiter"|~=>> <<span class="ocsforge_color_keyword"|object>><<a_api subproject="client" text=".." | class type Ow_alert.alert_event >><<span class="ocsforge_color_keyword"|end>>>>**~Inherits**
+* <<span class="odocwiki_inlinecode"|~Dom~_html~.event>>
+
+----

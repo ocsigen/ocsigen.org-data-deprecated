@@ -1,0 +1,4 @@
+=Module <<a_api_type subproject="server" | module Ow_pervasives >> =
+<<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module>> <<span class="ocsforge_color_uid"|<<span class="ocsforge_color_uid"|Ow_pervasives>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="ocsforge_color_keyword"|sig>><<a_api subproject="server" text=".." | module Ow_pervasives >><<span class="ocsforge_color_keyword"|end>>>>
+----
+<<pre id="VALid" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|id>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|'a <<span class="ocsforge_color_delimiter"| -> >> 'a>>>>

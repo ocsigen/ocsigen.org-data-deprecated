@@ -1,0 +1,7 @@
+=Index of module types=
+
+|@@ @style="tet-align: left;"@@\\J|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="JSSTORAGE"| module type Ow_jsstorage.JSSTORAGE >> ~[<<a_api subproject="client" | module Ow_jsstorage >>~]|<<div class="odocwiki_info"|~Generic signature for storage on the client side~.
+>>
+|
+\\
