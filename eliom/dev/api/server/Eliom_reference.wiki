@@ -54,7 +54,7 @@
 >>
 <<pre id="VALeref_from_fun" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|eref~_from~_fun>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|\\  <<span class="ocsforge_color_label"| scope: >>[< <<a_api subproject="server" text="Eliom_common.all_scope" | type Eliom_common.all_scope >> ] <<span class="ocsforge_color_delimiter"| -> >>\\  <<span class="ocsforge_color_label"| ?secure: >>bool <<span class="ocsforge_color_delimiter"| -> >>\\  <<span class="ocsforge_color_label"| ?persistent: >>string <<span class="ocsforge_color_delimiter"| -> >> <<span class="ocsforge_color_delimiter"| ( >>unit <<span class="ocsforge_color_delimiter"| -> >> 'a<<span class="ocsforge_color_delimiter"| ) >> <<span class="ocsforge_color_delimiter"| -> >> 'a <<a_api subproject="server" text="eref" | type Eliom_reference.eref >>>>>><<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|eref~_from~_fun>> works like the above <<a_api subproject="server" | val Eliom_reference.eref >>~,
     but instead of providing a value for the initial content~, a function <<span class="odocwiki_inlinecode"|f>> for
-    //creating the initial content// is provided ~(cf~. also <<span class="odocwiki_inlinecode"|~Lazy~.lazy~_from~_fun>>~)~.
+    //creating the initial content// is provided ~(cf~. also <<span class="odocwiki_inlinecode"|~Lazy~.from~_fun>>~)~.
 
 
     ~In each scope~, the function <<span class="odocwiki_inlinecode"|f>> is called for creating the value of the
