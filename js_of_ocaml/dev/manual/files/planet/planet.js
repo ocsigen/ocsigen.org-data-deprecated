@@ -157,8 +157,9 @@ fX(a){var
 c=Array.prototype.slice;return function(){var
 b=arguments.length>0?c.call(arguments):[undefined];return N(a,b)}}function
 fY(a,b){var
-d=[0];for(var
-c=1;c<=a;c++)d[c]=b;return d}function
+a=a+1|0,c=new
+Array(a);c[0]=0;for(var
+d=1;d<a;d++)c[d]=b;return c}function
 x(a){bN(g[2],a)}function
 dm(a){if(!a.opened)x("Cannot flush a closed channel");if(a.buffer==e)return 0;if(a.output)switch(a.output.length){case
 2:a.output(a,a.buffer);break;default:a.output(a.buffer)}a.buffer=e;return 0}function

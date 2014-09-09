@@ -207,8 +207,9 @@ f=cB;else{f=l[c[e]];c[e]++}d=a.lex_check[g+f]==d?a.lex_trans[g+f]:a.lex_default[
 return c[h]}else
 if(f==cB)c[k]=0}}function
 fr(a,b){var
-d=[0];for(var
-c=1;c<=a;c++)d[c]=b;return d}function
+a=a+1|0,c=new
+Array(a);c[0]=0;for(var
+d=1;d<a;d++)c[d]=b;return c}function
 w(a){bt(g[2],a)}function
 cV(a){if(!a.opened)w("Cannot flush a closed channel");if(a.buffer==d)return 0;if(a.output)switch(a.output.length){case
 2:a.output(a,a.buffer);break;default:a.output(a.buffer)}a.buffer=d;return 0}function

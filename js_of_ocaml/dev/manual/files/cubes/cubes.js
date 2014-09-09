@@ -192,8 +192,9 @@ eJ(a){var
 c=Array.prototype.slice;return function(){var
 b=arguments.length>0?c.call(arguments):[undefined];return B(a,b)}}function
 eK(a,b){var
-d=[0];for(var
-c=1;c<=a;c++)d[c]=b;return d}function
+a=a+1|0,c=new
+Array(a);c[0]=0;for(var
+d=1;d<a;d++)c[d]=b;return c}function
 e3(a){var
 b=new
 g(),c=a.length;b.array=a;b.len=b.last=c;return b}var

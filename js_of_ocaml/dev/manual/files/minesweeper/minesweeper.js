@@ -131,8 +131,9 @@ c=Array.prototype.slice;return function(){var
 b=arguments.length>0?c.call(arguments):[undefined];return w(a,b)}}function
 bP(a,b){return+(aa(a,b,false)<=0)}function
 bQ(a,b){var
-d=[0];for(var
-c=1;c<=a;c++)d[c]=b;return d}function
+a=a+1|0,c=new
+Array(a);c[0]=0;for(var
+d=1;d<a;d++)c[d]=b;return c}function
 b6(a){var
 b=new
 h(),c=a.length;b.array=a;b.len=b.last=c;return b}var

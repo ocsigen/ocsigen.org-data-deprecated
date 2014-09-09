@@ -368,8 +368,9 @@ c=Array.prototype.slice;return function(){var
 b=arguments.length>0?c.call(arguments):[undefined];return as(a,b)}}function
 kX(a,b){return+(br(a,b,false)<=0)}function
 kY(a,b){var
-d=[0];for(var
-c=1;c<=a;c++)d[c]=b;return d}var
+a=a+1|0,c=new
+Array(a);c[0]=0;for(var
+d=1;d<a;d++)c[d]=b;return c}var
 kZ=function(){function
 m(a,b){return a+b|0}function
 l(a,b,c,d,e,f){b=m(m(b,a),m(d,f));return m(b<<e|b>>>32-e,c)}function

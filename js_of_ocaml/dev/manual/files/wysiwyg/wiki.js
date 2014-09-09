@@ -195,8 +195,9 @@ fT(a){var
 c=Array.prototype.slice;return function(){var
 b=arguments.length>0?c.call(arguments):[undefined];return B(a,b)}}function
 fU(a,b){var
-d=[0];for(var
-c=1;c<=a;c++)d[c]=b;return d}function
+a=a+1|0,c=new
+Array(a);c[0]=0;for(var
+d=1;d<a;d++)c[d]=b;return c}function
 n(a){bj(f[2],a)}function
 cT(a){if(!a.opened)n("Cannot flush a closed channel");if(a.buffer==e)return 0;if(a.output)switch(a.output.length){case
 2:a.output(a,a.buffer);break;default:a.output(a.buffer)}a.buffer=e;return 0}function
