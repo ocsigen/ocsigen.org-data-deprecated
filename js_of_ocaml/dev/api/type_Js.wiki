@@ -377,8 +377,7 @@
   external to_string : Js.js_string Js.t -> string = "caml_js_to_string"
   external array : 'a array -> 'a Js.js_array Js.t = "caml_js_from_array"
   external to_array : 'a Js.js_array Js.t -> 'a array = "caml_js_to_array"
-  external bytestring : string -> Js.js_string Js.t
-    = "caml_js_from_byte_string"
+  external bytestring : string -> Js.js_string Js.t = "caml_bytes_of_string"
   external to_bytestring : Js.js_string Js.t -> string
     = "caml_js_to_byte_string"
   val coerce : 'a -> ('a -> 'b Js.Opt.t) -> ('a -> 'b) -> 'b
