@@ -378,7 +378,7 @@ gm(){av(fZ)}function
 kW(a,b){if(b>>>0>=a.l)gm();return aw(a,b)}function
 kV(a,b){a.t&6&&aM(a);b.t&6&&aM(b);return a.c==b.c?1:0}function
 kX(a,b){return 1-kV(a,b)}function
-go(a,b,c){c&=aI;if(a.t!=4){if(b==a.c.length){a.c+=String.fromCharCode(c);return 0}bU(a)}a.c[b]=c;return 0}function
+go(a,b,c){c&=aI;if(a.t!=4){if(b==a.c.length){a.c+=String.fromCharCode(c);if(b+1==a.l)a.t=0;return 0}bU(a)}a.c[b]=c;return 0}function
 kZ(a,b,c){if(b>>>0>=a.l)gm();return go(a,b,c)}function
 k0(){return 32}function
 k1(a){var

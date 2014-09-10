@@ -311,7 +311,7 @@ c8(){T(cN)}function
 gj(a,b){if(b>>>0>=a.l)c8();return V(a,b)}function
 gi(a,b){a.t&6&&_(a);b.t&6&&_(b);return a.c==b.c?1:0}function
 gk(a,b){return 1-gi(a,b)}function
-c9(a,b,c){c&=Y;if(a.t!=4){if(b==a.c.length){a.c+=String.fromCharCode(c);return 0}aQ(a)}a.c[b]=c;return 0}function
+c9(a,b,c){c&=Y;if(a.t!=4){if(b==a.c.length){a.c+=String.fromCharCode(c);if(b+1==a.l)a.t=0;return 0}aQ(a)}a.c[b]=c;return 0}function
 gm(a,b,c){if(b>>>0>=a.l)c8();return c9(a,b,c)}function
 gn(){return 32}function
 go(a){var

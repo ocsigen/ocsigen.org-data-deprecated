@@ -323,7 +323,7 @@ c_(){X(cU)}function
 fT(a,b){if(b>>>0>=a.l)c_();return Z(a,b)}function
 fS(a,b){a.t&6&&ae(a);b.t&6&&ae(b);return a.c==b.c?1:0}function
 fU(a,b){return 1-fS(a,b)}function
-c$(a,b,c){c&=ac;if(a.t!=4){if(b==a.c.length){a.c+=String.fromCharCode(c);return 0}aR(a)}a.c[b]=c;return 0}function
+c$(a,b,c){c&=ac;if(a.t!=4){if(b==a.c.length){a.c+=String.fromCharCode(c);if(b+1==a.l)a.t=0;return 0}aR(a)}a.c[b]=c;return 0}function
 fW(a,b,c){if(b>>>0>=a.l)c_();return c$(a,b,c)}function
 fX(){return 32}function
 fY(a){var
