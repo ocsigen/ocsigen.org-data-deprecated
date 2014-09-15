@@ -3,7 +3,7 @@
 
 ----
 
-~This modules allows you to spawn processes and communicate with them~.
+~This module allows you to spawn processes and communicate with them~.
 <<pre class="ocsforge_color odocwiki_code" id="TYPEcommand"|<<span class="ocsforge_color_keyword"|type>> <<span class="odocwiki_name"|command>> <<span class="ocsforge_color_delimiter"|~=>> <<span class="odocwiki_type"|string * string array>> >><<div class="odocwiki_info"|~A command~. ~The first field is the name of the executable and
         the second is the list of arguments~. ~For example~:
 
