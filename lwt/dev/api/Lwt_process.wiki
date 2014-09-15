@@ -3,7 +3,7 @@
 
 ----
 
-~This modules allow you to spawn processes and communicate with them~.
+~This modules allows you to spawn processes and communicate with them~.
 <<pre class="ocsforge_color odocwiki_code" id="TYPEcommand"|<<span class="ocsforge_color_keyword"|type>> <<span class="odocwiki_name"|command>> <<span class="ocsforge_color_delimiter"|~=>> <<span class="odocwiki_type"|string * string array>> >><<div class="odocwiki_info"|~A command~. ~The first field is the name of the executable and
         the second is the list of arguments~. ~For example~:
 
@@ -45,7 +45,7 @@
       ~Unix and <<span class="odocwiki_inlinecode"|"cmd~.exe ~/c ~<cmd~>">> on ~Windows~)~.
 >>
 
-~All the following functions take an optionnal argument
+~All the following functions take an optional argument
     <<span class="odocwiki_inlinecode"|timeout>>~. ~If specified~, after expiration~, the process will be
     sent a <<span class="odocwiki_inlinecode"|~Unix~.sigkill>> signal and channels will be closed~.
 
@@ -56,11 +56,11 @@
 
 ===@@id="3_Redirections"@@~Redirections===
 
-<<pre class="ocsforge_color odocwiki_code" id="TYPEredirection"|<<span class="ocsforge_color_keyword"|type>> <<span class="odocwiki_name"|redirection>> <<span class="ocsforge_color_delimiter"|~=>> <<span class="odocwiki_type"|\\  [ `Close\\  | `Dev_null\\  | `FD_copy of <<span class="ocsforge_color_uid"|Unix>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|file_descr>>\\  | `FD_move of <<span class="ocsforge_color_uid"|Unix>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|file_descr>>\\  | `Keep ]>> >><<div class="odocwiki_info"|~A file descriptor redirection~. ~It describe how standard file
+<<pre class="ocsforge_color odocwiki_code" id="TYPEredirection"|<<span class="ocsforge_color_keyword"|type>> <<span class="odocwiki_name"|redirection>> <<span class="ocsforge_color_delimiter"|~=>> <<span class="odocwiki_type"|\\  [ `Close\\  | `Dev_null\\  | `FD_copy of <<span class="ocsforge_color_uid"|Unix>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|file_descr>>\\  | `FD_move of <<span class="ocsforge_color_uid"|Unix>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|file_descr>>\\  | `Keep ]>> >><<div class="odocwiki_info"|~A file descriptor redirection~. ~It describes how standard file
     descriptors are redirected in the child process~.
 >>
 
-~Note~: all optionnal redirection argumetns default to <<span class="odocwiki_inlinecode"|`~Keep>>
+~Note~: all optional redirection arguments default to <<span class="odocwiki_inlinecode"|`~Keep>>
 
 
 ===@@id="3_Executing"@@~Executing===
