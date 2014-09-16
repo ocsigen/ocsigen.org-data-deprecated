@@ -170,7 +170,8 @@ bl(a){var
 c=Array.prototype.slice;return function(){var
 b=arguments.length>0?c.call(arguments):[undefined];return M(a,b)}}function
 an(a){a=aE(a);var
-c=[],d=a.length/2;for(var
+d=a.length/2,c=new
+Array(d);for(var
 b=0;b<d;b++)c[b]=(a.charCodeAt(2*b)|a.charCodeAt(2*b+1)<<8)<<16>>16;return c}function
 eR(a){if(a.t!=4)aF(a);return a.c}function
 fa(a,b,c){var
