@@ -1,0 +1,14 @@
+<<code language="ocaml" | sig
+  type t
+  type crop_type = string * (int * int * int * int)
+  val upload_pic_form :
+    Ow_pic_uploader.t ->
+    url_path:string list ->
+    text:string ->
+    on_error:(exn -> unit Lwt.t) ->
+    continuation:(string -> unit Lwt.t) ->
+    unit -> [ `Div ] Eliom_content.Html5.D.elt
+  val upload_pic_popup :
+    Ow_pic_uploader.t ->
+    url_path:string list -> text:string -> unit -> string option Lwt.t
+end >>

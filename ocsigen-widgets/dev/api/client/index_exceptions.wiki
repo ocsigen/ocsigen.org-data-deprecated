@@ -4,8 +4,4 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Close_button_not_in_alert"| exception Ow_alert.Close_button_not_in_alert >> ~[<<a_api subproject="client" | module Ow_alert >>~]|<<div class="odocwiki_info"|~Exception thrown if a <<span class="odocwiki_inlinecode"|closeable>> button do not find his parent~.
 >>
 |
-|@@ @style="tet-align: left;"@@\\I|
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Invalid_extension"| exception Ow_dyn_upload.Invalid_extension >> ~[<<a_api subproject="client" | module Ow_dyn_upload >>~]|<<div class="odocwiki_info"|~Exception raised in case of invalid extension
->>
-|
 \\

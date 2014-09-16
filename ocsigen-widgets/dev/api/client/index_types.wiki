@@ -13,14 +13,14 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="common_orientation'"| type Ow_position.common_orientation' >> ~[<<a_api subproject="client" | module Ow_position >>~]|<<div class="odocwiki_info"|~The type used by vertical and horizontal orientation
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="crop_type"| type Ow_pic_uploader.crop_type >> ~[<<a_api subproject="client" | module Ow_pic_uploader >>~]|<<div class="odocwiki_info"|~Type of the data sent to the cropping function
+>>
+|
 |@@ @style="tet-align: left;"@@\\D|
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="div"| type Ow_table_color_picker.div >> ~[<<a_api subproject="client" | module Ow_table_color_picker >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="div"| type Ow_slider.div >> ~[<<a_api subproject="client" | module Ow_slider >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="dyn_alert_fun'"| type Ow_alert.dyn_alert_fun' >> ~[<<a_api subproject="client" | module Ow_alert >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="dyn_popup_fun'"| type Ow_popup.dyn_popup_fun' >> ~[<<a_api subproject="client" | module Ow_popup >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="dynup_service_t"| type Ow_dyn_upload.dynup_service_t >> ~[<<a_api subproject="client" | module Ow_dyn_upload >>~]|<<div class="odocwiki_info"|~Type of a dynamic service~.
->>
-|
 |@@ @style="tet-align: left;"@@\\E|
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="event"| type Ow_traversable.Event.event >> ~[<<a_api subproject="client" | module Ow_traversable.Event >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="event"| type Ow_button.Event.event >> ~[<<a_api subproject="client" | module Ow_button.Event >>~]||
@@ -60,6 +60,9 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="t"| type Ow_table_color_picker.t >> ~[<<a_api subproject="client" | module Ow_table_color_picker >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="t"| type Ow_swipejs.t >> ~[<<a_api subproject="client" | module Ow_swipejs >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="t"| type Ow_slider.t >> ~[<<a_api subproject="client" | module Ow_slider >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="t"| type Ow_pic_uploader.t >> ~[<<a_api subproject="client" | module Ow_pic_uploader >>~]|<<div class="odocwiki_info"|~The type of picture uploaders~.
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="t"| type Ow_jsstorage.JSSTORAGE.t >> ~[<<a_api subproject="client" | module Ow_jsstorage.JSSTORAGE >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="t"| type Ow_hookjs.t >> ~[<<a_api subproject="client" | module Ow_hookjs >>~]|<<div class="odocwiki_info"|~Binding for hook~.js~.
 >>

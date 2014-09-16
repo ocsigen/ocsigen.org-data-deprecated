@@ -26,9 +26,6 @@
       which will act like a <<span class="odocwiki_inlinecode"|button>>~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Ow_dyn_upload"| module Ow_dyn_upload >> |<<div class="odocwiki_info"|~Type of a dynamic service~.
->>
-|
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Ow_event_tools"| module Ow_event_tools >> |<<div class="odocwiki_info"|~Various tools related to events~.
 >>
 |
@@ -57,6 +54,9 @@
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Ow_pervasives"| module Ow_pervasives >> ||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Ow_pic_uploader"| module Ow_pic_uploader >> |<<div class="odocwiki_info"|~The type of picture uploaders~.
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Ow_popup"| module Ow_popup >> |<<div class="odocwiki_info"|~Popups are a special kind of <<span class="odocwiki_inlinecode"|alerts>> that are automatically showed in
       the middle of the screen~.
 >>
@@ -97,6 +97,7 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Ow_traversable"| module Ow_traversable >> |<<div class="odocwiki_info"|~A traversable element can iterate through their children~.
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Ow_upload"| module Ow_upload >> ||
 |@@ @style="tet-align: left;"@@\\S|
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="S"| module Ow_alert.Event.S >> ~[<<a_api subproject="client" | module Ow_alert.Event >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="SessionStorage"| module Ow_jsstorage.SessionStorage >> ~[<<a_api subproject="client" | module Ow_jsstorage >>~]||

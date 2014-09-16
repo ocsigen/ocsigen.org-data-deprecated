@@ -1,0 +1,33 @@
+=Module <<a_api_type subproject="client" | module Ow_pic_uploader >> =
+<<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module>> <<span class="ocsforge_color_uid"|<<span class="ocsforge_color_uid"|Ow_pic_uploader>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="ocsforge_color_keyword"|sig>><<a_api subproject="client" text=".." | module Ow_pic_uploader >><<span class="ocsforge_color_keyword"|end>>>>~The type of picture uploaders~.
+
+----
+<<pre class="ocsforge_color odocwiki_code" id="TYPEt"|<<span class="ocsforge_color_keyword"|type>> <<span class="odocwiki_name"|t>>>><<div class="odocwiki_info"|~The type of picture uploaders~.
+>>
+<<pre class="ocsforge_color odocwiki_code" id="TYPEcrop_type"|<<span class="ocsforge_color_keyword"|type>> <<span class="odocwiki_name"|crop~_type>> <<span class="ocsforge_color_delimiter"|~=>> <<span class="odocwiki_type"|string * <<span class="ocsforge_color_delimiter"| ( >>int * int * int * int<<span class="ocsforge_color_delimiter"| ) >>>> >><<div class="odocwiki_info"|~Type of the data sent to the cropping function
+>>
+<<pre id="VALupload_pic_form" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|upload~_pic~_form>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|\\  <<a_api subproject="client" text="t" | type Ow_pic_uploader.t >> <<span class="ocsforge_color_delimiter"| -> >>\\  <<span class="ocsforge_color_label"| url_path: >>string list <<span class="ocsforge_color_delimiter"| -> >>\\  <<span class="ocsforge_color_label"| text: >>string <<span class="ocsforge_color_delimiter"| -> >>\\  <<span class="ocsforge_color_label"| on_error: >><<span class="ocsforge_color_delimiter"| ( >>exn <<span class="ocsforge_color_delimiter"| -> >> unit <<span class="ocsforge_color_uid"|Lwt>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>><<span class="ocsforge_color_delimiter"| ) >> <<span class="ocsforge_color_delimiter"| -> >>\\  <<span class="ocsforge_color_label"| continuation: >><<span class="ocsforge_color_delimiter"| ( >>string <<span class="ocsforge_color_delimiter"| -> >> unit <<span class="ocsforge_color_uid"|Lwt>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>><<span class="ocsforge_color_delimiter"| ) >> <<span class="ocsforge_color_delimiter"| -> >>\\  unit <<span class="ocsforge_color_delimiter"| -> >> [ `Div ] <<span class="ocsforge_color_uid"|Eliom_content>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_uid"|Html5>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_uid"|D>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|elt>>>>>><<div class="odocwiki_info"|~Creates a form that will ask for an image~, send it~, possibly ask te user
+    to crop it~. ~On success~, the continuation called as last parameter will
+    be called with the name of the file on server as parameter
+    ~(use this for example to close the popup window~)~.
+
+
+* ~Argument <<span class="odocwiki_inlinecode"|~~url~_path>> is the ~U~R~L path of the directory containing
+    these pictures on the server~.
+* ~Argument <<span class="odocwiki_inlinecode"|~~text>> is the text you want to display before the form~.
+* ~Arguments <<span class="odocwiki_inlinecode"|~~err~_log>> and <<span class="odocwiki_inlinecode"|std~_log>> are the client~-side functions to use
+    to display ~(error or information~) messages~. ~Example <<span class="odocwiki_inlinecode"|~Eba~_msg~.log>>
+    if you are using ~Eliom base app ~(as client values if you are using this
+    from server side~)~.
+
+>>
+<<pre id="VALupload_pic_popup" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|upload~_pic~_popup>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|\\  <<a_api subproject="client" text="t" | type Ow_pic_uploader.t >> <<span class="ocsforge_color_delimiter"| -> >>\\  <<span class="ocsforge_color_label"| url_path: >>string list <<span class="ocsforge_color_delimiter"| -> >> <<span class="ocsforge_color_label"| text: >>string <<span class="ocsforge_color_delimiter"| -> >> unit <<span class="ocsforge_color_delimiter"| -> >> string option <<span class="ocsforge_color_uid"|Lwt>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>>>>>><<div class="odocwiki_info"|~This function will display a popup asking the user to upload a picture~,
+    and returns~:
+* the name of the picture if the procedure succeeded~,
+* <<span class="odocwiki_inlinecode"|~None>> if the procedure was interrupted ~(popup closed~)~.
+
+    ~It may raise an exception if something went wrong~.
+
+
+    ~The arguments are the same as for <<span class="odocwiki_inlinecode"|upload~_pic~_form>>~.
+>>

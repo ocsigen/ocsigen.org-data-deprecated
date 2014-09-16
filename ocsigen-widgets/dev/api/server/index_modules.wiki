@@ -9,7 +9,6 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Ow_completion"| module Ow_completion >> ||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Ow_dom"| module Ow_dom >> ||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Ow_dropdown"| module Ow_dropdown >> ||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Ow_dyn_upload"| module Ow_dyn_upload >> ||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Ow_event_tools"| module Ow_event_tools >> ||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Ow_hammer_swipe"| module Ow_hammer_swipe >> ||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Ow_hookjs"| module Ow_hookjs >> ||
@@ -19,6 +18,7 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Ow_log"| module Ow_log >> ||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Ow_option"| module Ow_option >> ||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Ow_pervasives"| module Ow_pervasives >> ||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Ow_pic_uploader"| module Ow_pic_uploader >> ||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Ow_popup"| module Ow_popup >> ||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Ow_position"| module Ow_position >> ||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Ow_scrollbar"| module Ow_scrollbar >> ||
@@ -30,6 +30,7 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Ow_table_color_picker"| module Ow_table_color_picker >> ||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Ow_tools"| module Ow_tools >> ||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Ow_traversable"| module Ow_traversable >> ||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Ow_upload"| module Ow_upload >> ||
 |@@ @style="tet-align: left;"@@\\S|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Style"| module Ow_traversable.Style >> ~[<<a_api subproject="server" | module Ow_traversable >>~]||
 \\

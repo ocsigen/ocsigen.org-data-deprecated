@@ -1,0 +1,22 @@
+<<code language="ocaml" | sig
+  type t
+  type crop_type = string * (int * int * int * int)
+  val make :
+    directory:string list ->
+    name:string ->
+    ?crop_ratio:float option ->
+    ?max_width:int ->
+    ?max_height:int ->
+    ?service_wrapper:((Ocsigen_extensions.file_info -> string Lwt.t) ->
+                      Eliom_lib.file_info -> string Lwt.t) ->
+    ?crop_wrapper:((Ow_pic_uploader.crop_type -> string Lwt.t) ->
+                   Ow_pic_uploader.crop_type -> unit Lwt.t) ->
+    unit -> Ow_pic_uploader.t
+  val upload_pic_form :
+    Ow_pic_uploader.t ->
+    url_path:string list ->
+    text:string ->
+    on_error:(exn -> unit Lwt.t) ->
+    continuation:(string -> unit Lwt.t) ->
+    unit -> [ `Div ] Eliom_content.Html5.D.elt
+end >>

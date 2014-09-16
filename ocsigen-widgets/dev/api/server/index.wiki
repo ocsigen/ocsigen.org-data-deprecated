@@ -27,7 +27,7 @@
 |<<a_api subproject="server" | module Ow_tools >>||
 |<<a_api subproject="server" | module Ow_position >>||
 |Ow_accents||
-|<<a_api subproject="server" | module Ow_dyn_upload >>||
+|Ow_dyn_upload||
 
 
 
@@ -59,7 +59,6 @@
 
 
 * <<a_api subproject="server" text="Index of types" | index types >>
-* <<a_api subproject="server" text="Index of exceptions" | index exceptions >>
 * <<a_api subproject="server" text="Index of values" | index values >>
 * <<a_api subproject="server" text="Index of class types" | index class types >>
 * <<a_api subproject="server" text="Index of modules" | index modules >>

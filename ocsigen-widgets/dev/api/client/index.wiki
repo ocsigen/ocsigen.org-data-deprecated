@@ -42,9 +42,7 @@
       element~.
 >>
 |
-|<<a_api subproject="client" | module Ow_dyn_upload >>|<<div class="odocwiki_info"|~Type of a dynamic service~.
->>
-|
+|Ow_dyn_upload||
 
 
 
