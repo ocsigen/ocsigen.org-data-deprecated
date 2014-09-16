@@ -18,6 +18,7 @@
       method borderLeftColor : Js.js_string Js.t Js.prop
       method borderLeftStyle : Js.js_string Js.t Js.prop
       method borderLeftWidth : Js.js_string Js.t Js.prop
+      method borderRadius : Js.js_string Js.t Js.prop
       method borderRight : Js.js_string Js.t Js.prop
       method borderRightColor : Js.js_string Js.t Js.prop
       method borderRightStyle : Js.js_string Js.t Js.prop

@@ -484,6 +484,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="borderLeftColor"| method Dom_html.cssStyleDeclaration#borderLeftColor >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="borderLeftStyle"| method Dom_html.cssStyleDeclaration#borderLeftStyle >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="borderLeftWidth"| method Dom_html.cssStyleDeclaration#borderLeftWidth >> ~[<<a_api | module Dom_html >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="borderRadius"| method Dom_html.cssStyleDeclaration#borderRadius >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="borderRight"| method Dom_html.cssStyleDeclaration#borderRight >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="borderRightColor"| method Dom_html.cssStyleDeclaration#borderRightColor >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="borderRightStyle"| method Dom_html.cssStyleDeclaration#borderRightStyle >> ~[<<a_api | module Dom_html >>~]||
