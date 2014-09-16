@@ -1,9 +1,12 @@
 =Index of exceptions=
 
+|@@ @style="tet-align: left;"@@\\A|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Already_exists"| exception Eba_user.Already_exists >> ~[<<a_api subproject="server" | module Eba_user >>~]||
 |@@ @style="tet-align: left;"@@\\I|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Invalid_mailer"| exception Eba_sigs.Email.Invalid_mailer >> ~[<<a_api subproject="server" | module Eba_sigs.Email >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Invalid_mailer"| exception Eba_email.Invalid_mailer >> ~[<<a_api subproject="server" | module Eba_email >>~]||
 |@@ @style="tet-align: left;"@@\\N|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="No_value"| exception Eba_reqm.No_value >> ~[<<a_api subproject="server" | module Eba_reqm >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="No_such_group"| exception Eba_group.No_such_group >> ~[<<a_api subproject="server" | module Eba_group >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="No_such_user"| exception Eba_user.No_such_user >> ~[<<a_api subproject="server" | module Eba_user >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Not_connected"| exception Eba_session.Not_connected >> ~[<<a_api subproject="server" | module Eba_session >>~]||
 |@@ @style="tet-align: left;"@@\\P|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Permission_denied"| exception Eba_session.Permission_denied >> ~[<<a_api subproject="server" | module Eba_session >>~]||

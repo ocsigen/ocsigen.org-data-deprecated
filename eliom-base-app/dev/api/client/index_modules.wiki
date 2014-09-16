@@ -1,12 +1,21 @@
 =Index of modules=
 
 |@@ @style="tet-align: left;"@@\\E|
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Eba_config"| module Eba_config >> ||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Eba_email"| module Eba_email >> ||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Eba_msg"| module Eba_msg >> |<<div class="odocwiki_info"|~Call this function either from client or server side
+    to display an error message in the page~.
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Eba_page"| module Eba_page >> ||
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Eba_reqm"| module Eba_reqm >> ||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Eba_request_cache"| module Eba_request_cache >> ||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Eba_session"| module Eba_session >> ||
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Eba_sigs"| module Eba_sigs >> ||
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Eba_state"| module Eba_state >> ||
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Eba_tools"| module Eba_tools >> ||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Eba_tips"| module Eba_tips >> |<<div class="odocwiki_info"|~Call this function to reset tips for current users~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Eba_user"| module Eba_user >> |<<div class="odocwiki_info"|~The type which represents a user~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Eba_userbox"| module Eba_userbox >> ||
+|@@ @style="tet-align: left;"@@\\J|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Json_t"| module Eba_user.Json_t >> ~[<<a_api subproject="client" | module Eba_user >>~]||
 \\

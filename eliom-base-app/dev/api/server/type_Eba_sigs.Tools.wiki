@@ -1,1 +1,0 @@
-<<code language="ocaml" | sig module Cache_f : Tools.Cache_f end >>

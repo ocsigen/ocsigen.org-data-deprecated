@@ -1,23 +1,14 @@
 =Index of types=
 
-|@@ @style="tet-align: left;"@@\\C|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="cons"| type Eba_sigs.Reqm.cons >> ~[<<a_api subproject="server" | module Eba_sigs.Reqm >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="cons"| type Eba_reqm.cons >> ~[<<a_api subproject="server" | module Eba_reqm >>~]||
-|@@ @style="tet-align: left;"@@\\G|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="group"| type Eba_sigs.Session.group >> ~[<<a_api subproject="server" | module Eba_sigs.Session >>~]||
-|@@ @style="tet-align: left;"@@\\H|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="html"| type Eba_sigs.Reqm.html >> ~[<<a_api subproject="server" | module Eba_sigs.Reqm >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="html"| type Eba_reqm.html >> ~[<<a_api subproject="server" | module Eba_reqm >>~]||
 |@@ @style="tet-align: left;"@@\\K|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="key_t"| type Eba_sigs.Tools.Cache_sig.key_t >> ~[<<a_api subproject="server" | module Eba_sigs.Tools.Cache_sig >>~]||
-|@@ @style="tet-align: left;"@@\\S|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="set"| type Eba_sigs.Reqm.set >> ~[<<a_api subproject="server" | module Eba_sigs.Reqm >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="set"| type Eba_reqm.set >> ~[<<a_api subproject="server" | module Eba_reqm >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="state"| type Eba_sigs.State.state >> ~[<<a_api subproject="server" | module Eba_sigs.State >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="key"| type Eba_request_cache.Cache_sig.key >> ~[<<a_api subproject="server" | module Eba_request_cache.Cache_sig >>~]||
 |@@ @style="tet-align: left;"@@\\T|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="t"| type Eba_sigs.State.t >> ~[<<a_api subproject="server" | module Eba_sigs.State >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="t"| type Eba_sigs.Groups.t >> ~[<<a_api subproject="server" | module Eba_sigs.Groups >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="t"| type Eba_config.State.t >> ~[<<a_api subproject="server" | module Eba_config.State >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="t"| type Eba_user.t >> ~[<<a_api subproject="server" | module Eba_user >>~]|<<div class="odocwiki_info"|~The type which represents a user~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="t"| type Eba_group.t >> ~[<<a_api subproject="server" | module Eba_group >>~]|<<div class="odocwiki_info"|~The type of a group
+>>
+|
 |@@ @style="tet-align: left;"@@\\V|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="value_t"| type Eba_sigs.Tools.Cache_sig.value_t >> ~[<<a_api subproject="server" | module Eba_sigs.Tools.Cache_sig >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="value"| type Eba_request_cache.Cache_sig.value >> ~[<<a_api subproject="server" | module Eba_request_cache.Cache_sig >>~]||
 \\

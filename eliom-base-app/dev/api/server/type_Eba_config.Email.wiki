@@ -1,1 +1,0 @@
-<<code language="ocaml" | sig val from_addr : string * string val mailer : string end >>

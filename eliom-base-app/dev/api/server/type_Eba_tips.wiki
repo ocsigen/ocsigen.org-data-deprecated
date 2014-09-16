@@ -1,0 +1,23 @@
+<<code language="ocaml" | sig
+  val display :
+    ?arrow:[< `bottom of int | `left of int | `right of int | `top of int ] ->
+    ?top:int ->
+    ?left:int ->
+    ?right:int ->
+    ?bottom:int ->
+    ?height:int ->
+    ?width:int ->
+    ?parent_node:'a Eliom_content.Html5.elt ->
+    name:string ->
+    content:Html5_types.div_content Eliom_content.Html5.elt list ->
+    unit -> unit Lwt.t
+  val reset_tips : int64 -> unit -> unit -> unit Lwt.t
+  val reset_tips_service :
+    (unit, unit, [< Eliom_service.service_method > `Post ],
+     [< Eliom_service.attached > `Nonattached ],
+     [< Eliom_service.service_kind > `NonattachedCoservice ],
+     [ `WithoutSuffix ], unit, unit,
+     [< Eliom_service.registrable > `Registrable ],
+     [> Eliom_service.http_service ])
+    Eliom_service.service
+end >>

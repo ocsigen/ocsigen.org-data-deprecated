@@ -1,0 +1,51 @@
+<<code language="ocaml" | sig
+  exception Already_exists
+  exception No_such_user
+  type t = { uid : int64; fn : string; ln : string; avatar : string option; }
+  module Json_t :
+    sig
+      type a = t
+      val t : a Deriving_Json.t
+      val write : Buffer.t -> a -> unit
+      val read : Deriving_Json_lexer.lexbuf -> a
+      val to_string : a -> string
+      val from_string : string -> a
+      val match_variant : [ `Cst of int | `NCst of int ] -> bool
+      val read_variant :
+        Deriving_Json_lexer.lexbuf -> [ `Cst of int | `NCst of int ] -> a
+    end
+  val uid_of_user : Eba_user.t -> int64
+  val firstname_of_user : Eba_user.t -> string
+  val lastname_of_user : Eba_user.t -> string
+  val avatar_of_user : Eba_user.t -> string option
+  val avatar_uri_of_avatar : string -> Eliom_content.Xml.uri
+  val avatar_uri_of_user : Eba_user.t -> Eliom_content.Xml.uri option
+  val is_complete : Eba_user.t -> bool
+  val add_activationkey : act_key:string -> int64 -> unit Lwt.t
+  val verify_password : email:string -> password:string -> int64 Lwt.t
+  val user_of_uid : int64 -> Eba_user.t Lwt.t
+  val uid_of_activationkey : string -> int64 Lwt.t
+  val uid_of_email : string -> int64 Lwt.t
+  val email_of_uid : int64 -> string Lwt.t
+  val email_of_user : Eba_user.t -> string Lwt.t
+  val get_users : ?pattern:string -> unit -> Eba_user.t list Lwt.t
+  val create :
+    ?password:string ->
+    ?avatar:string ->
+    firstname:string -> lastname:string -> string -> int64 Lwt.t
+  val create' :
+    ?password:string ->
+    ?avatar:string ->
+    firstname:string -> lastname:string -> string -> Eba_user.t Lwt.t
+  val update :
+    ?password:string ->
+    ?avatar:string ->
+    firstname:string -> lastname:string -> int64 -> unit Lwt.t
+  val update' : ?password:string -> Eba_user.t -> unit Lwt.t
+  val update_avatar : string -> int64 -> unit Lwt.t
+  val is_registered : string -> bool Lwt.t
+  val is_preregistered : string -> bool Lwt.t
+  val add_preregister : string -> unit Lwt.t
+  val remove_preregister : string -> unit Lwt.t
+  val all : ?limit:int64 -> unit -> string list Lwt.t
+end >>

@@ -1,3 +1,22 @@
 =Index of values=
 
+|@@ @style="tet-align: left;"@@\\A|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="avatar_of_user"| value Eba_user.avatar_of_user >> ~[<<a_api subproject="client" | module Eba_user >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="avatar_uri_of_avatar"| value Eba_user.avatar_uri_of_avatar >> ~[<<a_api subproject="client" | module Eba_user >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="avatar_uri_of_user"| value Eba_user.avatar_uri_of_user >> ~[<<a_api subproject="client" | module Eba_user >>~]||
+|@@ @style="tet-align: left;"@@\\F|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="firstname_of_user"| value Eba_user.firstname_of_user >> ~[<<a_api subproject="client" | module Eba_user >>~]||
+|@@ @style="tet-align: left;"@@\\L|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="lastname_of_user"| value Eba_user.lastname_of_user >> ~[<<a_api subproject="client" | module Eba_user >>~]||
+|@@ @style="tet-align: left;"@@\\M|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="msg"| value Eba_msg.msg >> ~[<<a_api subproject="client" | module Eba_msg >>~]|<<div class="odocwiki_info"|~Call this function either from client or server side
+    to display an error message in the page~.
+>>
+|
+|@@ @style="tet-align: left;"@@\\R|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="reset_tips"| value Eba_tips.reset_tips >> ~[<<a_api subproject="client" | module Eba_tips >>~]|<<div class="odocwiki_info"|~Call this function to reset tips for current users~.
+>>
+|
+|@@ @style="tet-align: left;"@@\\U|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="uid_of_user"| value Eba_user.uid_of_user >> ~[<<a_api subproject="client" | module Eba_user >>~]||
 \\

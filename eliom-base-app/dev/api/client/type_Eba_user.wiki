@@ -1,0 +1,21 @@
+<<code language="ocaml" | sig
+  type t = { uid : int64; fn : string; ln : string; avatar : string option; }
+  module Json_t :
+    sig
+      type a = t
+      val t : a Deriving_Json.t
+      val write : Buffer.t -> a -> unit
+      val read : Deriving_Json_lexer.lexbuf -> a
+      val to_string : a -> string
+      val from_string : string -> a
+      val match_variant : [ `Cst of int | `NCst of int ] -> bool
+      val read_variant :
+        Deriving_Json_lexer.lexbuf -> [ `Cst of int | `NCst of int ] -> a
+    end
+  val uid_of_user : Eba_user.t -> int64
+  val firstname_of_user : Eba_user.t -> string
+  val lastname_of_user : Eba_user.t -> string
+  val avatar_of_user : Eba_user.t -> string option
+  val avatar_uri_of_avatar : string -> Eliom_content.Xml.uri
+  val avatar_uri_of_user : Eba_user.t -> Eliom_content.Xml.uri option
+end >>

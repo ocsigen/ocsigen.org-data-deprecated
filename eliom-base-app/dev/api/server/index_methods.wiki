@@ -1,22 +1,3 @@
 =Index of class methods=
 
-|@@ @style="tet-align: left;"@@\\C|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="clear"| method Eba_sigs.Reqm.reqm#clear >> ~[<<a_api subproject="server" | module Eba_sigs.Reqm >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="clear"| method Eba_reqm.reqm#clear >> ~[<<a_api subproject="server" | module Eba_reqm >>~]||
-|@@ @style="tet-align: left;"@@\\G|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="get"| method Eba_sigs.Reqm.reqm#get >> ~[<<a_api subproject="server" | module Eba_sigs.Reqm >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="get"| method Eba_reqm.reqm#get >> ~[<<a_api subproject="server" | module Eba_reqm >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="get_opt"| method Eba_sigs.Reqm.reqm#get_opt >> ~[<<a_api subproject="server" | module Eba_sigs.Reqm >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="get_opt"| method Eba_reqm.reqm#get_opt >> ~[<<a_api subproject="server" | module Eba_reqm >>~]||
-|@@ @style="tet-align: left;"@@\\H|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="has"| method Eba_sigs.Reqm.reqm#has >> ~[<<a_api subproject="server" | module Eba_sigs.Reqm >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="has"| method Eba_reqm.reqm#has >> ~[<<a_api subproject="server" | module Eba_reqm >>~]||
-|@@ @style="tet-align: left;"@@\\S|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="set"| method Eba_sigs.Reqm.reqm#set >> ~[<<a_api subproject="server" | module Eba_sigs.Reqm >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="set"| method Eba_reqm.reqm#set >> ~[<<a_api subproject="server" | module Eba_reqm >>~]||
-|@@ @style="tet-align: left;"@@\\T|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="to_html"| method Eba_sigs.Reqm.reqm#to_html >> ~[<<a_api subproject="server" | module Eba_sigs.Reqm >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="to_html"| method Eba_sigs.Reqm.reqm_base#to_html >> ~[<<a_api subproject="server" | module Eba_sigs.Reqm >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="to_html"| method Eba_reqm.reqm#to_html >> ~[<<a_api subproject="server" | module Eba_reqm >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="to_html"| method Eba_reqm.reqm_base#to_html >> ~[<<a_api subproject="server" | module Eba_reqm >>~]||
 \\

@@ -1,28 +1,28 @@
 =Index of modules=
 
-|@@ @style="tet-align: left;"@@\\C|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Cache_f"| module Eba_tools.Cache_f >> ~[<<a_api subproject="server" | module Eba_tools >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Cache_f"| module Eba_sigs.Tools.Cache_f >> ~[<<a_api subproject="server" | module Eba_sigs.Tools >>~]||
+|@@ @style="tet-align: left;"@@\\D|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Default_config"| module Eba_page.Default_config >> ~[<<a_api subproject="server" | module Eba_page >>~]||
 |@@ @style="tet-align: left;"@@\\E|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Eba_config"| module Eba_config >> ||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Eba_email"| module Eba_email >> ||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Eba_group"| module Eba_group >> |<<div class="odocwiki_info"|~Groups of users~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Eba_msg"| module Eba_msg >> ||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Eba_page"| module Eba_page >> ||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Eba_reqm"| module Eba_reqm >> ||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Eba_request_cache"| module Eba_request_cache >> ||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Eba_session"| module Eba_session >> ||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Eba_sigs"| module Eba_sigs >> ||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Eba_state"| module Eba_state >> ||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Eba_tools"| module Eba_tools >> ||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Eba_tips"| module Eba_tips >> ||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Eba_user"| module Eba_user >> |<<div class="odocwiki_info"|~The type which represents a user~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Eba_userbox"| module Eba_userbox >> ||
+|@@ @style="tet-align: left;"@@\\J|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Json_t"| module Eba_user.Json_t >> ~[<<a_api subproject="server" | module Eba_user >>~]||
 |@@ @style="tet-align: left;"@@\\M|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Make"| module Eba_state.Make >> ~[<<a_api subproject="server" | module Eba_state >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Make"| module Eba_sigs.Tools.Cache_f.Make >> ~[<<a_api subproject="server" | module Eba_sigs.Tools.Cache_f >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Make"| module Eba_session.Make >> ~[<<a_api subproject="server" | module Eba_session >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Make"| module Eba_userbox.Make >> ~[<<a_api subproject="server" | module Eba_userbox >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Make"| module Eba_request_cache.Make >> ~[<<a_api subproject="server" | module Eba_request_cache >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Make"| module Eba_page.Make >> ~[<<a_api subproject="server" | module Eba_page >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Make"| module Eba_email.Make >> ~[<<a_api subproject="server" | module Eba_email >>~]||
 |@@ @style="tet-align: left;"@@\\O|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Opt"| module Eba_sigs.Page.Opt >> ~[<<a_api subproject="server" | module Eba_sigs.Page >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Opt"| module Eba_sigs.Session.Opt >> ~[<<a_api subproject="server" | module Eba_sigs.Session >>~]||
-|@@ @style="tet-align: left;"@@\\S|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Session"| module Eba_sigs.Page.Session >> ~[<<a_api subproject="server" | module Eba_sigs.Page >>~]||
-|@@ @style="tet-align: left;"@@\\T|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Tools"| module Eba_sigs.Tools >> ~[<<a_api subproject="server" | module Eba_sigs >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Opt"| module Eba_session.Opt >> ~[<<a_api subproject="server" | module Eba_session >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Opt"| module Eba_page.Make.Opt >> ~[<<a_api subproject="server" | module Eba_page.Make >>~]||
 \\
