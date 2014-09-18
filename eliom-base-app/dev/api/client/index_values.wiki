@@ -18,5 +18,5 @@
 >>
 |
 |@@ @style="tet-align: left;"@@\\U|
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="uid_of_user"| value Eba_user.uid_of_user >> ~[<<a_api subproject="client" | module Eba_user >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="userid_of_user"| value Eba_user.userid_of_user >> ~[<<a_api subproject="client" | module Eba_user >>~]||
 \\

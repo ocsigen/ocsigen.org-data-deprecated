@@ -1,5 +1,8 @@
 <<code language="ocaml" | functor (C : PAGE) ->
   sig
+    val make_page :
+      [< Html5_types.body_content ] Eliom_content.Html5.elt list ->
+      [> Html5_types.html ] Eliom_content.Html5.elt
     val page :
       ?predicate:('a -> 'b -> bool Lwt.t) ->
       ?fallback:('a ->
