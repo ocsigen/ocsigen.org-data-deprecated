@@ -7,8 +7,8 @@ f=e;for(c+=b;b<c;b+=az)f+=d.apply(null,a.slice(b,Math.min(c,b+az)));return f}fun
 aC(a){var
 c=new
 Array(a.l),e=a.c,d=e.length,b=0;for(;b<d;b++)c[b]=e.charCodeAt(b);for(d=a.l;b<d;b++)c[b]=0;a.c=c;a.t=4;return c}function
-A(a,b,c,d,e){if(e==0)return 0;if(d==0&&(e>=c.l||c.t==2&&e>=c.c.length)){c.c=a.t==4?bh(a.c,b,e):a.c.substr(b,e);c.t=c.c.length==c.l?0:2}else
-if(c.t==2&&d==c.c.length){c.c+=a.t==4?bh(a.c,b,e):a.c.substr(b,e);c.t=c.c.length==c.l?0:2}else{if(c.t!=4)aC(c);var
+A(a,b,c,d,e){if(e==0)return 0;if(d==0&&(e>=c.l||c.t==2&&e>=c.c.length)){c.c=a.t==4?bh(a.c,b,e):b==0&&a.c.length==e?a.c:a.c.substr(b,e);c.t=c.c.length==c.l?0:2}else
+if(c.t==2&&d==c.c.length){c.c+=a.t==4?bh(a.c,b,e):b==0&&a.c.length==e?a.c:a.c.substr(b,e);c.t=c.c.length==c.l?0:2}else{if(c.t!=4)aC(c);var
 g=a.c,h=c.c;if(a.t==4)for(var
 f=0;f<e;f++)h[d+f]=g[b+f];else{var
 i=Math.min(e,g.length-b);for(var
