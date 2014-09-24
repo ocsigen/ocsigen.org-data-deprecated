@@ -188,7 +188,7 @@
 
 
 
-* pattern mattching~:
+* pattern matching~:
 
       
 <<code language='ocaml'|        match_lwt <expr> with

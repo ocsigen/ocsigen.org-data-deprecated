@@ -170,6 +170,22 @@ penalty when using logging by inlining level tests~.
 
 
 
+==@@id="2_Ppxsyntaxextension"@@~Ppx syntax extension==
+
+
+
+~This new ppx extension provided by the package //lwt~.ppx// replaces <<a_api | module Pa_lwt >> and <<a_api | module Pa_lwt_log >> using the new ppx mechanism~.
+
+
+
+|<<a_api | module Ppx_lwt >>|<<div class="odocwiki_info"|~Ppx syntax extension for ~Lwt
+>>
+|
+
+
+
+
+
 ==@@id="2_Terminalmanipulation"@@~Terminal manipulation==
 
 

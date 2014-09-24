@@ -30,6 +30,8 @@
 ==~Syntax extensions
 ===[[Pa_lwt|Pa_lwt]]
 ===[[Pa_lwt_log|Pa_lwt_log]]
+==~Ppx syntax extension
+===[[Ppx_lwt|Ppx_lwt]]
 ==~Terminal manipulation
 ===[[Lwt_read_line|Lwt_read_line]]
 ===[[Lwt_term|Lwt_term]]

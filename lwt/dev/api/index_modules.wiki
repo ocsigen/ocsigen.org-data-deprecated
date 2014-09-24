@@ -145,6 +145,9 @@
 |@@class="odocwiki_index"@ @@<<a_api text="Pa_lwt_log"| module Pa_lwt_log >> |<<div class="odocwiki_info"|~Logging facility
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api text="Ppx_lwt"| module Ppx_lwt >> |<<div class="odocwiki_info"|~Ppx syntax extension for ~Lwt
+>>
+|
 |@@ @style="tet-align: left;"@@\\S|
 |@@class="odocwiki_index"@ @@<<a_api text="S"| module Lwt_react.S >> ~[<<a_api | module Lwt_react >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="Section"| module Lwt_log_core.Section >> ~[<<a_api | module Lwt_log_core >>~]|<<div class="odocwiki_info"|~Sections
