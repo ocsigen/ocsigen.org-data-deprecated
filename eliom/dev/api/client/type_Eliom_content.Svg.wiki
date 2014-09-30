@@ -4492,6 +4492,8 @@
         before:'a Eliom_content.Svg.elt -> 'b Eliom_content.Svg.elt -> unit
       val appendAfter :
         after:'a Eliom_content.Svg.elt -> 'b Eliom_content.Svg.elt -> unit
+      val replaceSelf :
+        'a Eliom_content.Svg.elt -> 'b Eliom_content.Svg.elt -> unit
       module Named :
         sig
           val appendChild :

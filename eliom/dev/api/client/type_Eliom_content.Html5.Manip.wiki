@@ -31,6 +31,8 @@
     before:'a Eliom_content.Html5.elt -> 'b Eliom_content.Html5.elt -> unit
   val appendAfter :
     after:'a Eliom_content.Html5.elt -> 'b Eliom_content.Html5.elt -> unit
+  val replaceSelf :
+    'a Eliom_content.Html5.elt -> 'b Eliom_content.Html5.elt -> unit
   val addEventListener :
     ?capture:bool ->
     'a Eliom_content.Html5.elt ->

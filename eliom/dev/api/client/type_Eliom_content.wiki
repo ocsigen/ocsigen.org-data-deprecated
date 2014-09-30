@@ -4862,6 +4862,8 @@
           val appendAfter :
             after:'a Eliom_content.Svg.elt ->
             'b Eliom_content.Svg.elt -> unit
+          val replaceSelf :
+            'a Eliom_content.Svg.elt -> 'b Eliom_content.Svg.elt -> unit
           module Named :
             sig
               val appendChild :
@@ -16171,6 +16173,8 @@
           val appendAfter :
             after:'a Eliom_content.Html5.elt ->
             'b Eliom_content.Html5.elt -> unit
+          val replaceSelf :
+            'a Eliom_content.Html5.elt -> 'b Eliom_content.Html5.elt -> unit
           val addEventListener :
             ?capture:bool ->
             'a Eliom_content.Html5.elt ->
