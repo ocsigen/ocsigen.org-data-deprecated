@@ -21,6 +21,16 @@
   val removeSelf : 'a Eliom_content.Html5.elt -> unit
   val replaceChildren :
     'a Eliom_content.Html5.elt -> 'b Eliom_content.Html5.elt list -> unit
+  val parentNode :
+    'a Eliom_content.Html5.elt -> 'b Eliom_content.Html5.elt option
+  val nextSibling :
+    'a Eliom_content.Html5.elt -> 'b Eliom_content.Html5.elt option
+  val previousSibling :
+    'a Eliom_content.Html5.elt -> 'b Eliom_content.Html5.elt option
+  val appendBefore :
+    before:'a Eliom_content.Html5.elt -> 'b Eliom_content.Html5.elt -> unit
+  val appendAfter :
+    after:'a Eliom_content.Html5.elt -> 'b Eliom_content.Html5.elt -> unit
   val addEventListener :
     ?capture:bool ->
     'a Eliom_content.Html5.elt ->
