@@ -91,6 +91,9 @@
 |
 |@@class="odocwiki_index"@ @@<<a_api text="Unsafe"| module Html5_sigs.T.Unsafe >> ~[<<a_api | module Html5_sigs.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="Unsafe"| module Svg_sigs.T.Unsafe >> ~[<<a_api | module Svg_sigs.T >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="Utf8"| module Xml_print.Utf8 >> ~[<<a_api | module Xml_print >>~]|<<div class="odocwiki_info"|~Utf~8 normalizer and encoder for ~H~T~M~L~.
+>>
+|
 |@@ @style="tet-align: left;"@@\\X|
 |@@class="odocwiki_index"@ @@<<a_api text="Xml"| module Html5_sigs.T.Xml >> ~[<<a_api | module Html5_sigs.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="Xml"| module Svg_sigs.T.Xml >> ~[<<a_api | module Svg_sigs.T >>~]||

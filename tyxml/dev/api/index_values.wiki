@@ -780,6 +780,16 @@
 |
 |@@class="odocwiki_index"@ @@<<a_api text="node"| value Xml_sigs.Wrapped.node >> ~[<<a_api | module Xml_sigs.Wrapped >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="node"| value Xml.node >> ~[<<a_api | module Xml >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="normalize"| value Xml_print.Utf8.normalize >> ~[<<a_api | module Xml_print.Utf8 >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="normalize_from"| value Xml_print.Utf8.normalize_from >> ~[<<a_api | module Xml_print.Utf8 >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|normalize~_from ~~encoding str>> convert the string <<span class="odocwiki_inlinecode"|str>> into an uft~-~8 string~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="normalize_html"| value Xml_print.Utf8.normalize_html >> ~[<<a_api | module Xml_print.Utf8 >>~]|<<div class="odocwiki_info"|~Same as <<span class="odocwiki_inlinecode"|normalize>> plus some extra work ~:
+      ~It encode ~'~<~' ~, ~'~>~' ~, ~'"~' ~, ~'~&~' characters with
+      corresponding entities and replaced invalid html
+      character by <<span class="odocwiki_inlinecode"|~U~+~F~F~F~D>>
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api text="noscript"| value Html5_sigs.T.noscript >> ~[<<a_api | module Html5_sigs.T >>~]||
 |@@ @style="tet-align: left;"@@\\O|
 |@@class="odocwiki_index"@ @@<<a_api text="object_"| value Html5_sigs.T.object_ >> ~[<<a_api | module Html5_sigs.T >>~]||
