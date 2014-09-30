@@ -137,10 +137,6 @@
 |@@class="odocwiki_index"@ @@<<a_api text="call_custom_url"| value Jsonp.call_custom_url >> ~[<<a_api | module Jsonp >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|call~_custom~_url ~~timeout make~_url>>~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api text="callback"| value Js.Unsafe.callback >> ~[<<a_api | module Js.Unsafe >>~]|<<div class="odocwiki_info"|~Wrap an ~O~Caml function so that it can be invoked from
-        ~Javascript~.
->>
-|
 |@@class="odocwiki_index"@ @@<<a_api text="canvas"| value Dom_html.CoerceTo.canvas >> ~[<<a_api | module Dom_html.CoerceTo >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="caption"| value Dom_html.CoerceTo.caption >> ~[<<a_api | module Dom_html.CoerceTo >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="case"| value Js.OPT.case >> ~[<<a_api | module Js.OPT >>~]|<<div class="odocwiki_info"|~Pattern matching on optional values~.
@@ -804,10 +800,6 @@
 |@@class="odocwiki_index"@ @@<<a_api text="meta"| value Dom_html.CoerceTo.meta >> ~[<<a_api | module Dom_html.CoerceTo >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="metaData"| value Dom_svg.CoerceTo.metaData >> ~[<<a_api | module Dom_svg.CoerceTo >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="meth_call"| value Js.Unsafe.meth_call >> ~[<<a_api | module Js.Unsafe >>~]|<<div class="odocwiki_info"|~Performs a ~Javascript method call~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api text="meth_callback"| value Js.Unsafe.meth_callback >> ~[<<a_api | module Js.Unsafe >>~]|<<div class="odocwiki_info"|~Wrap an ~O~Caml function so that it can be invoked from
-        ~Javascript~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="minus"| value Keycode.minus >> ~[<<a_api | module Keycode >>~]||

@@ -54,16 +54,3 @@
 >>
 <<pre id="VALglobal" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|global>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|< .. > <<a_api text="Js.t" | type Js.t >>>>>><<div class="odocwiki_info"|~Javascript global object
 >>
-<<pre id="VALcallback" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|callback>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<span class="ocsforge_color_delimiter"| ( >>'a <<span class="ocsforge_color_delimiter"| -> >> 'b<<span class="ocsforge_color_delimiter"| ) >> <<span class="ocsforge_color_delimiter"| -> >> <<span class="ocsforge_color_delimiter"| ( >>'c, 'a <<span class="ocsforge_color_delimiter"| -> >> 'b<<span class="ocsforge_color_delimiter"| ) >> <<a_api text="Js.meth_callback" | type Js.meth_callback >>>>>><<div class="odocwiki_info"|~Wrap an ~O~Caml function so that it can be invoked from
-        ~Javascript~. ~Contrary to <<span class="odocwiki_inlinecode"|~Js~.wrap~_callback>>~, partial
-        application and over~-application are not supported~: missing
-        arguments will be set to <<span class="odocwiki_inlinecode"|undefined>> and extra arguments are
-        lost~.
->>
-<<pre id="VALmeth_callback" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|meth~_callback>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<span class="ocsforge_color_delimiter"| ( >>'b <<span class="ocsforge_color_delimiter"| -> >> 'a<<span class="ocsforge_color_delimiter"| ) >> <<span class="ocsforge_color_delimiter"| -> >> <<span class="ocsforge_color_delimiter"| ( >>'b, 'a<<span class="ocsforge_color_delimiter"| ) >> <<a_api text="Js.meth_callback" | type Js.meth_callback >>>>>><<div class="odocwiki_info"|~Wrap an ~O~Caml function so that it can be invoked from
-        ~Javascript~.  ~The first parameter of the function will be bound
-        to the value of the <<span class="odocwiki_inlinecode"|this>> implicit parameter~. ~Contrary to
-        <<span class="odocwiki_inlinecode"|~Js~.wrap~_meth~_callback>>~, partial application and
-        over~-application is not supported~: missing arguments will be
-        set to <<span class="odocwiki_inlinecode"|undefined>> and extra arguments are lost~.
->>

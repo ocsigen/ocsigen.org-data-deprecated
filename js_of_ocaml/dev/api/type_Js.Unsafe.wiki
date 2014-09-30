@@ -17,8 +17,4 @@
   external js_expr : string -> 'a = "caml_js_expr"
   external pure_js_expr : string -> 'a = "caml_pure_js_expr"
   val global : < .. > Js.t
-  external callback : ('a -> 'b) -> ('c, 'a -> 'b) Js.meth_callback
-    = "%identity"
-  external meth_callback : ('b -> 'a) -> ('b, 'a) Js.meth_callback
-    = "caml_js_wrap_meth_callback_unsafe"
 end >>
