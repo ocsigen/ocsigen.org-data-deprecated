@@ -50,6 +50,8 @@
 |@@ @style="tet-align: left;"@@\\S|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="section"| value Ow_log.section >> ~[<<a_api subproject="server" | module Ow_log >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="selected_cls"| value Ow_traversable.Style.selected_cls >> ~[<<a_api subproject="server" | module Ow_traversable.Style >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="spinner"| value Ow_spinner.F.spinner >> ~[<<a_api subproject="server" | module Ow_spinner.F >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="spinner"| value Ow_spinner.D.spinner >> ~[<<a_api subproject="server" | module Ow_spinner.D >>~]||
 |@@ @style="tet-align: left;"@@\\T|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="traversable"| value Ow_traversable.traversable >> ~[<<a_api subproject="server" | module Ow_traversable >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="traversable_cls"| value Ow_traversable.Style.traversable_cls >> ~[<<a_api subproject="server" | module Ow_traversable.Style >>~]||
@@ -57,4 +59,6 @@
 |@@ @style="tet-align: left;"@@\\U|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="uniq"| value Ow_list.uniq >> ~[<<a_api subproject="server" | module Ow_list >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="upload_pic_form"| value Ow_pic_uploader.upload_pic_form >> ~[<<a_api subproject="server" | module Ow_pic_uploader >>~]||
+|@@ @style="tet-align: left;"@@\\W|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="with_spinner"| value Ow_spinner.with_spinner >> ~[<<a_api subproject="server" | module Ow_spinner >>~]||
 \\

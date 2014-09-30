@@ -1,5 +1,9 @@
 =Index of modules=
 
+|@@ @style="tet-align: left;"@@\\D|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="D"| module Ow_spinner.D >> ~[<<a_api subproject="server" | module Ow_spinner >>~]||
+|@@ @style="tet-align: left;"@@\\F|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="F"| module Ow_spinner.F >> ~[<<a_api subproject="server" | module Ow_spinner >>~]||
 |@@ @style="tet-align: left;"@@\\O|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Ow_active_set"| module Ow_active_set >> ||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Ow_alert"| module Ow_alert >> ||
@@ -16,6 +20,7 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Ow_jsstorage"| module Ow_jsstorage >> ||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Ow_list"| module Ow_list >> ||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Ow_log"| module Ow_log >> ||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Ow_mobile_tools"| module Ow_mobile_tools >> ||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Ow_option"| module Ow_option >> ||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Ow_pervasives"| module Ow_pervasives >> ||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Ow_pic_uploader"| module Ow_pic_uploader >> ||
@@ -26,6 +31,7 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Ow_slide_event"| module Ow_slide_event >> ||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Ow_slider"| module Ow_slider >> ||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Ow_sliderbar"| module Ow_sliderbar >> ||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Ow_spinner"| module Ow_spinner >> ||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Ow_swipejs"| module Ow_swipejs >> ||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Ow_table_color_picker"| module Ow_table_color_picker >> ||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Ow_tools"| module Ow_tools >> ||

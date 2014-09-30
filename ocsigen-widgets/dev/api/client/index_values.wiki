@@ -115,6 +115,9 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="disable_event"| value Ow_event_tools.disable_event >> ~[<<a_api subproject="client" | module Ow_event_tools >>~]|<<div class="odocwiki_info"|~Disable <<span class="odocwiki_inlinecode"|~Dom~_html~.~Event>> with stopping propagation during capture phase ~*
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="disable_zoom"| value Ow_mobile_tools.disable_zoom >> ~[<<a_api subproject="client" | module Ow_mobile_tools >>~]|<<div class="odocwiki_info"|~Enable or disable mobile features
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="dropdown"| value Ow_dropdown.dropdown >> ~[<<a_api subproject="client" | module Ow_dropdown >>~]|<<div class="odocwiki_info"|~Provides behaviours of dropdown menu~.
 >>
 |
@@ -221,6 +224,7 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="hide_background"| value Ow_popup.hide_background >> ~[<<a_api subproject="client" | module Ow_popup >>~]|<<div class="odocwiki_info"|~Internal background id hidden when a popup is triggered~.
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="hide_navigation_bar"| value Ow_mobile_tools.hide_navigation_bar >> ~[<<a_api subproject="client" | module Ow_mobile_tools >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="hides"| value Ow_alert.hides >> ~[<<a_api subproject="client" | module Ow_alert >>~]|<<div class="odocwiki_info"|~This events is triggered when the method <<span class="odocwiki_inlinecode"|hide>> is called~.
 >>
 |
@@ -403,6 +407,12 @@
       ~Fourth is end event call at end event
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="spinner"| value Ow_spinner.F.spinner >> ~[<<a_api subproject="client" | module Ow_spinner.F >>~]|<<div class="odocwiki_info"|~Display spinner with functional semantics
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="spinner"| value Ow_spinner.D.spinner >> ~[<<a_api subproject="client" | module Ow_spinner.D >>~]|<<div class="odocwiki_info"|~Display spinner with ~D~O~M semantics
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="start"| value Ow_table_color_picker.start >> ~[<<a_api subproject="client" | module Ow_table_color_picker >>~]|<<div class="odocwiki_info"|~Launch listeners
 >>
 |
@@ -481,4 +491,9 @@
 |@@ @style="tet-align: left;"@@\\W|
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="width"| value Ow_size.width >> ~[<<a_api subproject="client" | module Ow_size >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="width_height"| value Ow_size.width_height >> ~[<<a_api subproject="client" | module Ow_size >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="with_spinner"| value Ow_spinner.with_spinner >> ~[<<a_api subproject="client" | module Ow_spinner >>~]|<<div class="odocwiki_info"|~On client side~, <<span class="odocwiki_inlinecode"|with~_spinner th>> returns immediately a spinner
+    while ~Lwt thread <<span class="odocwiki_inlinecode"|th>> is not finished~, that will automatically
+    be replaced by the result of <<span class="odocwiki_inlinecode"|th>> when finished~.
+>>
+|
 \\

@@ -1,6 +1,6 @@
 <<code language="ocaml" | sig
   type t
-  type crop_type = string * (int * int * int * int)
+  type crop_type = string * int * (int * int * int * int)
   val make :
     directory:string list ->
     name:string ->

@@ -1,0 +1,5 @@
+<<code language="ocaml" | sig
+  val spinner :
+    ?class_:Html5_types.nmtoken list ->
+    unit -> [> Html5_types.i ] Eliom_content.Html5.F.elt
+end >>

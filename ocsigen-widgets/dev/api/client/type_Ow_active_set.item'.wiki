@@ -1,8 +1,6 @@
 <<code language="ocaml" | object ('a)
-  method _disable :
-    (#Ow_active_set.item Js.t, unit -> unit) Js.meth_callback Js.prop
-  method _enable :
-    (#Ow_active_set.item Js.t, unit -> unit) Js.meth_callback Js.prop
+  method _disable : (#Ow_active_set.item Js.t, unit) Js.meth_callback Js.prop
+  method _enable : (#Ow_active_set.item Js.t, unit) Js.meth_callback Js.prop
   method appendChild : Dom.node Js.t -> Dom.node Js.t Js.meth
   method attributes : Dom.attr Dom.namedNodeMap Js.t Js.readonly_prop
   method childNodes : Dom.node Dom.nodeList Js.t Js.prop

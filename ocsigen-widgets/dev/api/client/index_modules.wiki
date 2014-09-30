@@ -1,9 +1,13 @@
 =Index of modules=
 
+|@@ @style="tet-align: left;"@@\\D|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="D"| module Ow_spinner.D >> ~[<<a_api subproject="client" | module Ow_spinner >>~]||
 |@@ @style="tet-align: left;"@@\\E|
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Event"| module Ow_traversable.Event >> ~[<<a_api subproject="client" | module Ow_traversable >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Event"| module Ow_button.Event >> ~[<<a_api subproject="client" | module Ow_button >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Event"| module Ow_alert.Event >> ~[<<a_api subproject="client" | module Ow_alert >>~]||
+|@@ @style="tet-align: left;"@@\\F|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="F"| module Ow_spinner.F >> ~[<<a_api subproject="client" | module Ow_spinner >>~]||
 |@@ @style="tet-align: left;"@@\\L|
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="LocalStorage"| module Ow_jsstorage.LocalStorage >> ~[<<a_api subproject="client" | module Ow_jsstorage >>~]||
 |@@ @style="tet-align: left;"@@\\O|
@@ -50,6 +54,9 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Ow_log"| module Ow_log >> |<<div class="odocwiki_info"|~Client debugging functions~.
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Ow_mobile_tools"| module Ow_mobile_tools >> |<<div class="odocwiki_info"|~Various tools for mobiles~.
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Ow_option"| module Ow_option >> |<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|map f v>> returns the application of f on the option v if v is not ~None~, or ~None~.
 >>
 |
@@ -82,6 +89,9 @@
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Ow_sliderbar"| module Ow_sliderbar >> |<<div class="odocwiki_info"|~Binding of the j~Query~_ui slider for ocaml~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Ow_spinner"| module Ow_spinner >> |<<div class="odocwiki_info"|~Display spinner with ~D~O~M semantics
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Ow_swipejs"| module Ow_swipejs >> |<<div class="odocwiki_info"|~Swiping library~.

@@ -140,9 +140,9 @@
   class type item' =
     object ('a)
       method _disable :
-        (#Ow_active_set.item Js.t, unit -> unit) Js.meth_callback Js.prop
+        (#Ow_active_set.item Js.t, unit) Js.meth_callback Js.prop
       method _enable :
-        (#Ow_active_set.item Js.t, unit -> unit) Js.meth_callback Js.prop
+        (#Ow_active_set.item Js.t, unit) Js.meth_callback Js.prop
       method appendChild : Dom.node Js.t -> Dom.node Js.t Js.meth
       method attributes : Dom.attr Dom.namedNodeMap Js.t Js.readonly_prop
       method childNodes : Dom.node Dom.nodeList Js.t Js.prop
@@ -282,8 +282,8 @@
   val enable : set:Ow_active_set.t -> #Ow_active_set.item Js.t -> unit
   val disable : set:Ow_active_set.t -> #Ow_active_set.item Js.t -> unit
   val ctor :
-    enable:(#Ow_active_set.item Js.t -> unit -> unit) ->
-    disable:(#Ow_active_set.item Js.t -> unit -> unit) ->
+    enable:(#Ow_active_set.item Js.t -> unit) ->
+    disable:(#Ow_active_set.item Js.t -> unit) ->
     #Ow_active_set.item' Js.t -> Ow_active_set.item Js.t
   val set : ?at_least_one:bool -> unit -> Ow_active_set.t
   val of_server_set : Ow_active_set.t' -> Ow_active_set.t

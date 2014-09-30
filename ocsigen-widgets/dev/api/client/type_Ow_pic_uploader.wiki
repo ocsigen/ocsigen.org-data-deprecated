@@ -1,6 +1,6 @@
 <<code language="ocaml" | sig
   type t
-  type crop_type = string * (int * int * int * int)
+  type crop_type = string * int * (int * int * int * int)
   val upload_pic_form :
     Ow_pic_uploader.t ->
     url_path:string list ->
