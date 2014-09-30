@@ -71,6 +71,14 @@
                    method firstChild : Dom.node Js.t Js.opt Js.prop
                    method getAttribute :
                      Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+                   method getAttributeNS :
+                     Js.js_string Js.t ->
+                     Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+                   method getAttributeNode :
+                     Js.js_string Js.t -> Dom.attr Js.t Js.opt Js.meth
+                   method getAttributeNodeNS :
+                     Js.js_string Js.t ->
+                     Js.js_string Js.t -> Dom.attr Js.t Js.opt Js.meth
                    method getBoundingClientRect :
                      Dom_html.clientRect Js.t Js.meth
                    method getClientRects :
@@ -79,6 +87,9 @@
                      Js.js_string Js.t ->
                      Dom.element Dom.nodeList Js.t Js.meth
                    method hasAttribute :
+                     Js.js_string Js.t -> bool Js.t Js.meth
+                   method hasAttributeNS :
+                     Js.js_string Js.t ->
                      Js.js_string Js.t -> bool Js.t Js.meth
                    method hasChildNodes : bool Js.t Js.meth
                    method hide : unit Js.meth
@@ -164,6 +175,10 @@
                      Js.js_string Js.t ->
                      Dom_html.element Dom.nodeList Js.t Js.meth
                    method removeAttribute : Js.js_string Js.t -> unit Js.meth
+                   method removeAttributeNS :
+                     Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
+                   method removeAttributeNode :
+                     Dom.attr Js.t -> Dom.attr Js.t Js.meth
                    method removeChild :
                      Dom.node Js.t -> Dom.node Js.t Js.meth
                    method replaceChild :
@@ -175,6 +190,13 @@
                    method scrollWidth : int Js.prop
                    method setAttribute :
                      Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
+                   method setAttributeNS :
+                     Js.js_string Js.t ->
+                     Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
+                   method setAttributeNode :
+                     Dom.attr Js.t -> Dom.attr Js.t Js.opt Js.meth
+                   method setAttributeNodeNS :
+                     Dom.attr Js.t -> Dom.attr Js.t Js.opt Js.meth
                    method show : unit Js.meth
                    method style : Dom_html.cssStyleDeclaration Js.t Js.prop
                    method t : Js.js_string Js.t Js.readonly_prop
@@ -204,6 +226,14 @@
                    method firstChild : Dom.node Js.t Js.opt Js.prop
                    method getAttribute :
                      Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+                   method getAttributeNS :
+                     Js.js_string Js.t ->
+                     Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+                   method getAttributeNode :
+                     Js.js_string Js.t -> Dom.attr Js.t Js.opt Js.meth
+                   method getAttributeNodeNS :
+                     Js.js_string Js.t ->
+                     Js.js_string Js.t -> Dom.attr Js.t Js.opt Js.meth
                    method getBoundingClientRect :
                      Dom_html.clientRect Js.t Js.meth
                    method getClientRects :
@@ -212,6 +242,9 @@
                      Js.js_string Js.t ->
                      Dom.element Dom.nodeList Js.t Js.meth
                    method hasAttribute :
+                     Js.js_string Js.t -> bool Js.t Js.meth
+                   method hasAttributeNS :
+                     Js.js_string Js.t ->
                      Js.js_string Js.t -> bool Js.t Js.meth
                    method hasChildNodes : bool Js.t Js.meth
                    method hide : unit Js.meth
@@ -297,6 +330,10 @@
                      Js.js_string Js.t ->
                      Dom_html.element Dom.nodeList Js.t Js.meth
                    method removeAttribute : Js.js_string Js.t -> unit Js.meth
+                   method removeAttributeNS :
+                     Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
+                   method removeAttributeNode :
+                     Dom.attr Js.t -> Dom.attr Js.t Js.meth
                    method removeChild :
                      Dom.node Js.t -> Dom.node Js.t Js.meth
                    method replaceChild :
@@ -308,6 +345,13 @@
                    method scrollWidth : int Js.prop
                    method setAttribute :
                      Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
+                   method setAttributeNS :
+                     Js.js_string Js.t ->
+                     Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
+                   method setAttributeNode :
+                     Dom.attr Js.t -> Dom.attr Js.t Js.opt Js.meth
+                   method setAttributeNodeNS :
+                     Dom.attr Js.t -> Dom.attr Js.t Js.opt Js.meth
                    method show : unit Lwt.t Js.meth
                    method style : Dom_html.cssStyleDeclaration Js.t Js.prop
                    method t : Js.js_string Js.t Js.readonly_prop
@@ -422,11 +466,21 @@
               method firstChild : Dom.node Js.t Js.opt Js.prop
               method getAttribute :
                 Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+              method getAttributeNS :
+                Js.js_string Js.t ->
+                Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+              method getAttributeNode :
+                Js.js_string Js.t -> Dom.attr Js.t Js.opt Js.meth
+              method getAttributeNodeNS :
+                Js.js_string Js.t ->
+                Js.js_string Js.t -> Dom.attr Js.t Js.opt Js.meth
               method getBoundingClientRect : Dom_html.clientRect Js.t Js.meth
               method getClientRects : Dom_html.clientRectList Js.t Js.meth
               method getElementsByTagName :
                 Js.js_string Js.t -> Dom.element Dom.nodeList Js.t Js.meth
               method hasAttribute : Js.js_string Js.t -> bool Js.t Js.meth
+              method hasAttributeNS :
+                Js.js_string Js.t -> Js.js_string Js.t -> bool Js.t Js.meth
               method hasChildNodes : bool Js.t Js.meth
               method hide : unit Js.meth
               method id : Js.js_string Js.t Js.prop
@@ -509,6 +563,10 @@
                 Js.js_string Js.t ->
                 Dom_html.element Dom.nodeList Js.t Js.meth
               method removeAttribute : Js.js_string Js.t -> unit Js.meth
+              method removeAttributeNS :
+                Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
+              method removeAttributeNode :
+                Dom.attr Js.t -> Dom.attr Js.t Js.meth
               method removeChild : Dom.node Js.t -> Dom.node Js.t Js.meth
               method replaceChild :
                 Dom.node Js.t -> Dom.node Js.t -> Dom.node Js.t Js.meth
@@ -519,6 +577,13 @@
               method scrollWidth : int Js.prop
               method setAttribute :
                 Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
+              method setAttributeNS :
+                Js.js_string Js.t ->
+                Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
+              method setAttributeNode :
+                Dom.attr Js.t -> Dom.attr Js.t Js.opt Js.meth
+              method setAttributeNodeNS :
+                Dom.attr Js.t -> Dom.attr Js.t Js.opt Js.meth
               method show : unit Js.meth
               method style : Dom_html.cssStyleDeclaration Js.t Js.prop
               method t : Js.js_string Js.t Js.readonly_prop
@@ -546,11 +611,21 @@
               method firstChild : Dom.node Js.t Js.opt Js.prop
               method getAttribute :
                 Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+              method getAttributeNS :
+                Js.js_string Js.t ->
+                Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+              method getAttributeNode :
+                Js.js_string Js.t -> Dom.attr Js.t Js.opt Js.meth
+              method getAttributeNodeNS :
+                Js.js_string Js.t ->
+                Js.js_string Js.t -> Dom.attr Js.t Js.opt Js.meth
               method getBoundingClientRect : Dom_html.clientRect Js.t Js.meth
               method getClientRects : Dom_html.clientRectList Js.t Js.meth
               method getElementsByTagName :
                 Js.js_string Js.t -> Dom.element Dom.nodeList Js.t Js.meth
               method hasAttribute : Js.js_string Js.t -> bool Js.t Js.meth
+              method hasAttributeNS :
+                Js.js_string Js.t -> Js.js_string Js.t -> bool Js.t Js.meth
               method hasChildNodes : bool Js.t Js.meth
               method hide : unit Js.meth
               method id : Js.js_string Js.t Js.prop
@@ -633,6 +708,10 @@
                 Js.js_string Js.t ->
                 Dom_html.element Dom.nodeList Js.t Js.meth
               method removeAttribute : Js.js_string Js.t -> unit Js.meth
+              method removeAttributeNS :
+                Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
+              method removeAttributeNode :
+                Dom.attr Js.t -> Dom.attr Js.t Js.meth
               method removeChild : Dom.node Js.t -> Dom.node Js.t Js.meth
               method replaceChild :
                 Dom.node Js.t -> Dom.node Js.t -> Dom.node Js.t Js.meth
@@ -643,6 +722,13 @@
               method scrollWidth : int Js.prop
               method setAttribute :
                 Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
+              method setAttributeNS :
+                Js.js_string Js.t ->
+                Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
+              method setAttributeNode :
+                Dom.attr Js.t -> Dom.attr Js.t Js.opt Js.meth
+              method setAttributeNodeNS :
+                Dom.attr Js.t -> Dom.attr Js.t Js.opt Js.meth
               method show : unit Lwt.t Js.meth
               method style : Dom_html.cssStyleDeclaration Js.t Js.prop
               method t : Js.js_string Js.t Js.readonly_prop
@@ -756,11 +842,21 @@
           method firstChild : Dom.node Js.t Js.opt Js.prop
           method getAttribute :
             Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+          method getAttributeNS :
+            Js.js_string Js.t ->
+            Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+          method getAttributeNode :
+            Js.js_string Js.t -> Dom.attr Js.t Js.opt Js.meth
+          method getAttributeNodeNS :
+            Js.js_string Js.t ->
+            Js.js_string Js.t -> Dom.attr Js.t Js.opt Js.meth
           method getBoundingClientRect : Dom_html.clientRect Js.t Js.meth
           method getClientRects : Dom_html.clientRectList Js.t Js.meth
           method getElementsByTagName :
             Js.js_string Js.t -> Dom.element Dom.nodeList Js.t Js.meth
           method hasAttribute : Js.js_string Js.t -> bool Js.t Js.meth
+          method hasAttributeNS :
+            Js.js_string Js.t -> Js.js_string Js.t -> bool Js.t Js.meth
           method hasChildNodes : bool Js.t Js.meth
           method id : Js.js_string Js.t Js.prop
           method innerHTML : Js.js_string Js.t Js.prop
@@ -842,6 +938,9 @@
           method querySelectorAll :
             Js.js_string Js.t -> Dom_html.element Dom.nodeList Js.t Js.meth
           method removeAttribute : Js.js_string Js.t -> unit Js.meth
+          method removeAttributeNS :
+            Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
+          method removeAttributeNode : Dom.attr Js.t -> Dom.attr Js.t Js.meth
           method removeChild : Dom.node Js.t -> Dom.node Js.t Js.meth
           method replaceChild :
             Dom.node Js.t -> Dom.node Js.t -> Dom.node Js.t Js.meth
@@ -852,6 +951,13 @@
           method scrollWidth : int Js.prop
           method setAttribute :
             Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
+          method setAttributeNS :
+            Js.js_string Js.t ->
+            Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
+          method setAttributeNode :
+            Dom.attr Js.t -> Dom.attr Js.t Js.opt Js.meth
+          method setAttributeNodeNS :
+            Dom.attr Js.t -> Dom.attr Js.t Js.opt Js.meth
           method style : Dom_html.cssStyleDeclaration Js.t Js.prop
           method t : Js.js_string Js.t Js.readonly_prop
           method tagName : Js.js_string Js.t Js.readonly_prop
@@ -880,11 +986,21 @@
           method firstChild : Dom.node Js.t Js.opt Js.prop
           method getAttribute :
             Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+          method getAttributeNS :
+            Js.js_string Js.t ->
+            Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+          method getAttributeNode :
+            Js.js_string Js.t -> Dom.attr Js.t Js.opt Js.meth
+          method getAttributeNodeNS :
+            Js.js_string Js.t ->
+            Js.js_string Js.t -> Dom.attr Js.t Js.opt Js.meth
           method getBoundingClientRect : Dom_html.clientRect Js.t Js.meth
           method getClientRects : Dom_html.clientRectList Js.t Js.meth
           method getElementsByTagName :
             Js.js_string Js.t -> Dom.element Dom.nodeList Js.t Js.meth
           method hasAttribute : Js.js_string Js.t -> bool Js.t Js.meth
+          method hasAttributeNS :
+            Js.js_string Js.t -> Js.js_string Js.t -> bool Js.t Js.meth
           method hasChildNodes : bool Js.t Js.meth
           method id : Js.js_string Js.t Js.prop
           method innerHTML : Js.js_string Js.t Js.prop
@@ -966,6 +1082,9 @@
           method querySelectorAll :
             Js.js_string Js.t -> Dom_html.element Dom.nodeList Js.t Js.meth
           method removeAttribute : Js.js_string Js.t -> unit Js.meth
+          method removeAttributeNS :
+            Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
+          method removeAttributeNode : Dom.attr Js.t -> Dom.attr Js.t Js.meth
           method removeChild : Dom.node Js.t -> Dom.node Js.t Js.meth
           method replaceChild :
             Dom.node Js.t -> Dom.node Js.t -> Dom.node Js.t Js.meth
@@ -976,6 +1095,13 @@
           method scrollWidth : int Js.prop
           method setAttribute :
             Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
+          method setAttributeNS :
+            Js.js_string Js.t ->
+            Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
+          method setAttributeNode :
+            Dom.attr Js.t -> Dom.attr Js.t Js.opt Js.meth
+          method setAttributeNodeNS :
+            Dom.attr Js.t -> Dom.attr Js.t Js.opt Js.meth
           method style : Dom_html.cssStyleDeclaration Js.t Js.prop
           method t : Js.js_string Js.t Js.readonly_prop
           method tagName : Js.js_string Js.t Js.readonly_prop
@@ -1004,11 +1130,21 @@
           method firstChild : Dom.node Js.t Js.opt Js.prop
           method getAttribute :
             Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+          method getAttributeNS :
+            Js.js_string Js.t ->
+            Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+          method getAttributeNode :
+            Js.js_string Js.t -> Dom.attr Js.t Js.opt Js.meth
+          method getAttributeNodeNS :
+            Js.js_string Js.t ->
+            Js.js_string Js.t -> Dom.attr Js.t Js.opt Js.meth
           method getBoundingClientRect : Dom_html.clientRect Js.t Js.meth
           method getClientRects : Dom_html.clientRectList Js.t Js.meth
           method getElementsByTagName :
             Js.js_string Js.t -> Dom.element Dom.nodeList Js.t Js.meth
           method hasAttribute : Js.js_string Js.t -> bool Js.t Js.meth
+          method hasAttributeNS :
+            Js.js_string Js.t -> Js.js_string Js.t -> bool Js.t Js.meth
           method hasChildNodes : bool Js.t Js.meth
           method id : Js.js_string Js.t Js.prop
           method innerHTML : Js.js_string Js.t Js.prop
@@ -1090,6 +1226,9 @@
           method querySelectorAll :
             Js.js_string Js.t -> Dom_html.element Dom.nodeList Js.t Js.meth
           method removeAttribute : Js.js_string Js.t -> unit Js.meth
+          method removeAttributeNS :
+            Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
+          method removeAttributeNode : Dom.attr Js.t -> Dom.attr Js.t Js.meth
           method removeChild : Dom.node Js.t -> Dom.node Js.t Js.meth
           method replaceChild :
             Dom.node Js.t -> Dom.node Js.t -> Dom.node Js.t Js.meth
@@ -1100,6 +1239,13 @@
           method scrollWidth : int Js.prop
           method setAttribute :
             Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
+          method setAttributeNS :
+            Js.js_string Js.t ->
+            Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
+          method setAttributeNode :
+            Dom.attr Js.t -> Dom.attr Js.t Js.opt Js.meth
+          method setAttributeNodeNS :
+            Dom.attr Js.t -> Dom.attr Js.t Js.opt Js.meth
           method style : Dom_html.cssStyleDeclaration Js.t Js.prop
           method t : Js.js_string Js.t Js.readonly_prop
           method tagName : Js.js_string Js.t Js.readonly_prop
