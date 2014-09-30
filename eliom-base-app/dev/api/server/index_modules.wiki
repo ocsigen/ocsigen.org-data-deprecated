@@ -8,6 +8,7 @@
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Eba_msg"| module Eba_msg >> ||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Eba_notif"| module Eba_notif >> ||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Eba_page"| module Eba_page >> ||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Eba_request_cache"| module Eba_request_cache >> ||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Eba_session"| module Eba_session >> ||
@@ -22,6 +23,7 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Make"| module Eba_userbox.Make >> ~[<<a_api subproject="server" | module Eba_userbox >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Make"| module Eba_request_cache.Make >> ~[<<a_api subproject="server" | module Eba_request_cache >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Make"| module Eba_page.Make >> ~[<<a_api subproject="server" | module Eba_page >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Make"| module Eba_notif.Make >> ~[<<a_api subproject="server" | module Eba_notif >>~]||
 |@@ @style="tet-align: left;"@@\\O|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Opt"| module Eba_session.Opt >> ~[<<a_api subproject="server" | module Eba_session >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Opt"| module Eba_page.Make.Opt >> ~[<<a_api subproject="server" | module Eba_page.Make >>~]||

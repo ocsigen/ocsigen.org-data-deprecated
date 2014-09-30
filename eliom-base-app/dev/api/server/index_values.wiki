@@ -20,6 +20,7 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="avatar_uri_of_avatar"| value Eba_user.avatar_uri_of_avatar >> ~[<<a_api subproject="server" | module Eba_user >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="avatar_uri_of_user"| value Eba_user.avatar_uri_of_user >> ~[<<a_api subproject="server" | module Eba_user >>~]||
 |@@ @style="tet-align: left;"@@\\C|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="client_ev"| value Eba_notif.Make.client_ev >> ~[<<a_api subproject="server" | module Eba_notif.Make >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="connect"| value Eba_session.connect >> ~[<<a_api subproject="server" | module Eba_session >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="connected_fun"| value Eba_session.Opt.connected_fun >> ~[<<a_api subproject="server" | module Eba_session.Opt >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="connected_fun"| value Eba_session.connected_fun >> ~[<<a_api subproject="server" | module Eba_session >>~]||
@@ -88,11 +89,13 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="js"| value Eba_page.PAGE.js >> ~[<<a_api subproject="server" | module Eba_page.PAGE >>~]||
 |@@ @style="tet-align: left;"@@\\L|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="lastname_of_user"| value Eba_user.lastname_of_user >> ~[<<a_api subproject="server" | module Eba_user >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="listen"| value Eba_notif.Make.listen >> ~[<<a_api subproject="server" | module Eba_notif.Make >>~]||
 |@@ @style="tet-align: left;"@@\\M|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="make_page"| value Eba_page.Make.make_page >> ~[<<a_api subproject="server" | module Eba_page.Make >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="msg"| value Eba_msg.msg >> ~[<<a_api subproject="server" | module Eba_msg >>~]||
 |@@ @style="tet-align: left;"@@\\N|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="name_of_group"| value Eba_group.name_of_group >> ~[<<a_api subproject="server" | module Eba_group >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="notify"| value Eba_notif.Make.notify >> ~[<<a_api subproject="server" | module Eba_notif.Make >>~]||
 |@@ @style="tet-align: left;"@@\\O|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="on_close_session"| value Eba_session.on_close_session >> ~[<<a_api subproject="server" | module Eba_session >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="on_connected_request"| value Eba_session.on_connected_request >> ~[<<a_api subproject="server" | module Eba_session >>~]||
@@ -124,6 +127,7 @@
 |@@ @style="tet-align: left;"@@\\T|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="title"| value Eba_page.PAGE.title >> ~[<<a_api subproject="server" | module Eba_page.PAGE >>~]||
 |@@ @style="tet-align: left;"@@\\U|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="unlisten"| value Eba_notif.Make.unlisten >> ~[<<a_api subproject="server" | module Eba_notif.Make >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="update"| value Eba_user.update >> ~[<<a_api subproject="server" | module Eba_user >>~]|<<div class="odocwiki_info"|~Update the informations of a user~.
 >>
 |

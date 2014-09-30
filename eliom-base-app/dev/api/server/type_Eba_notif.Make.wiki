@@ -1,0 +1,9 @@
+<<code language="ocaml" | functor (A : sig type key type notification end) ->
+  sig
+    val listen : A.key -> unit
+    val unlisten : A.key -> unit
+    val notify :
+      ?notforme:bool ->
+      A.key -> (int64 option -> A.notification option Lwt.t) -> unit
+    val client_ev : unit -> (A.key * A.notification) Eliom_react.Down.t
+  end >>

@@ -6,6 +6,7 @@
     to display an error message in the page~.
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Eba_notif"| module Eba_notif >> ||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Eba_page"| module Eba_page >> ||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Eba_request_cache"| module Eba_request_cache >> ||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Eba_session"| module Eba_session >> ||
