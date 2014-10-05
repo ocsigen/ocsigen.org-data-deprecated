@@ -63,7 +63,7 @@
   val access_control_max_age : Http_headers.name
   val access_control_allow_methods : Http_headers.name
   val access_control_allow_headers : Http_headers.name
-  type t
+  type t = Cohttp.Header.t
   val empty : Http_headers.t
   val add : Http_headers.name -> string -> Http_headers.t -> Http_headers.t
   val replace :
