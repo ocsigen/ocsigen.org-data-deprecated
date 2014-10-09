@@ -297,7 +297,8 @@
     [< `New | `Replace ] Svg_sigs.T.wrap ->
     [> `Xlink_show ] Svg_sigs.T.attrib
   val a_xlinkactuate :
-    [< `OnRequest ] Svg_sigs.T.wrap -> [> `Xlink_actuate ] Svg_sigs.T.attrib
+    [< `None | `OnLoad | `OnRequest | `Other ] Svg_sigs.T.wrap ->
+    [> `Xlink_actuate ] Svg_sigs.T.attrib
   val a_target :
     string Svg_sigs.T.wrap -> [> `Xlink_target ] Svg_sigs.T.attrib
   val a_viewtarget :

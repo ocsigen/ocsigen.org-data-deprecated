@@ -239,7 +239,8 @@
           val a_xlinkshow :
             [< `New | `Replace ] wrap -> [> `Xlink_show ] attrib
           val a_xlinkactuate :
-            [< `OnRequest ] wrap -> [> `Xlink_actuate ] attrib
+            [< `None | `OnLoad | `OnRequest | `Other ] wrap ->
+            [> `Xlink_actuate ] attrib
           val a_target : string wrap -> [> `Xlink_target ] attrib
           val a_viewtarget : string wrap -> [> `ViewTarget ] attrib
           val a_attributename : string wrap -> [> `AttributeName ] attrib
@@ -1026,7 +1027,7 @@
       val a_cite :
         Xml.uri Html5_sigs.T.wrap -> [> `Cite ] Html5_sigs.T.attrib
       val a_xml_space :
-        [< `Preserve ] Html5_sigs.T.wrap ->
+        [< `Default | `Preserve ] Html5_sigs.T.wrap ->
         [> `XML_space ] Html5_sigs.T.attrib
       val a_accesskey :
         Html5_types.character Html5_sigs.T.wrap ->
@@ -2746,7 +2747,8 @@
                    val a_xlinkshow :
                      [< `New | `Replace ] wrap -> [> `Xlink_show ] attrib
                    val a_xlinkactuate :
-                     [< `OnRequest ] wrap -> [> `Xlink_actuate ] attrib
+                     [< `None | `OnLoad | `OnRequest | `Other ] wrap ->
+                     [> `Xlink_actuate ] attrib
                    val a_target : string wrap -> [> `Xlink_target ] attrib
                    val a_viewtarget : string wrap -> [> `ViewTarget ] attrib
                    val a_attributename :
@@ -3540,7 +3542,7 @@
                 val a_manifest : Xml.uri wrap -> [> `Manifest ] attrib
                 val a_cite : Xml.uri wrap -> [> `Cite ] attrib
                 val a_xml_space :
-                  [< `Preserve ] wrap -> [> `XML_space ] attrib
+                  [< `Default | `Preserve ] wrap -> [> `XML_space ] attrib
                 val a_accesskey :
                   Html5_types.character wrap -> [> `Accesskey ] attrib
                 val a_charset :
@@ -5175,7 +5177,8 @@
                  val a_xlinkshow :
                    [< `New | `Replace ] wrap -> [> `Xlink_show ] attrib
                  val a_xlinkactuate :
-                   [< `OnRequest ] wrap -> [> `Xlink_actuate ] attrib
+                   [< `None | `OnLoad | `OnRequest | `Other ] wrap ->
+                   [> `Xlink_actuate ] attrib
                  val a_target : string wrap -> [> `Xlink_target ] attrib
                  val a_viewtarget : string wrap -> [> `ViewTarget ] attrib
                  val a_attributename :

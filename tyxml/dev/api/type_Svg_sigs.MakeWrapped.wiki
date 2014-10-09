@@ -275,7 +275,8 @@
           val a_xlinkshow :
             [< `New | `Replace ] wrap -> [> `Xlink_show ] attrib
           val a_xlinkactuate :
-            [< `OnRequest ] wrap -> [> `Xlink_actuate ] attrib
+            [< `None | `OnLoad | `OnRequest | `Other ] wrap ->
+            [> `Xlink_actuate ] attrib
           val a_target : string wrap -> [> `Xlink_target ] attrib
           val a_viewtarget : string wrap -> [> `ViewTarget ] attrib
           val a_attributename : string wrap -> [> `AttributeName ] attrib

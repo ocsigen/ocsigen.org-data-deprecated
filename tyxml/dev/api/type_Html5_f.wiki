@@ -263,7 +263,8 @@
                  val a_xlinkshow :
                    [< `New | `Replace ] wrap -> [> `Xlink_show ] attrib
                  val a_xlinkactuate :
-                   [< `OnRequest ] wrap -> [> `Xlink_actuate ] attrib
+                   [< `None | `OnLoad | `OnRequest | `Other ] wrap ->
+                   [> `Xlink_actuate ] attrib
                  val a_target : string wrap -> [> `Xlink_target ] attrib
                  val a_viewtarget : string wrap -> [> `ViewTarget ] attrib
                  val a_attributename :
@@ -1002,7 +1003,8 @@
           val a_xmlns : [< `W3_org_1999_xhtml ] wrap -> [> `XMLns ] attrib
           val a_manifest : Xml.uri wrap -> [> `Manifest ] attrib
           val a_cite : Xml.uri wrap -> [> `Cite ] attrib
-          val a_xml_space : [< `Preserve ] wrap -> [> `XML_space ] attrib
+          val a_xml_space :
+            [< `Default | `Preserve ] wrap -> [> `XML_space ] attrib
           val a_accesskey :
             Html5_types.character wrap -> [> `Accesskey ] attrib
           val a_charset : Html5_types.charset wrap -> [> `Charset ] attrib
@@ -2621,7 +2623,8 @@
                    val a_xlinkshow :
                      [< `New | `Replace ] wrap -> [> `Xlink_show ] attrib
                    val a_xlinkactuate :
-                     [< `OnRequest ] wrap -> [> `Xlink_actuate ] attrib
+                     [< `None | `OnLoad | `OnRequest | `Other ] wrap ->
+                     [> `Xlink_actuate ] attrib
                    val a_target : string wrap -> [> `Xlink_target ] attrib
                    val a_viewtarget : string wrap -> [> `ViewTarget ] attrib
                    val a_attributename :
@@ -3392,7 +3395,8 @@
             val a_xmlns : [< `W3_org_1999_xhtml ] wrap -> [> `XMLns ] attrib
             val a_manifest : Xml.uri wrap -> [> `Manifest ] attrib
             val a_cite : Xml.uri wrap -> [> `Cite ] attrib
-            val a_xml_space : [< `Preserve ] wrap -> [> `XML_space ] attrib
+            val a_xml_space :
+              [< `Default | `Preserve ] wrap -> [> `XML_space ] attrib
             val a_accesskey :
               Html5_types.character wrap -> [> `Accesskey ] attrib
             val a_charset : Html5_types.charset wrap -> [> `Charset ] attrib
