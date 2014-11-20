@@ -888,8 +888,11 @@
       val a_title :
         Html5_types.text Html5_sigs.T.wrap -> [> `Title ] Html5_sigs.T.attrib
       val a_xml_lang :
-        Html5_types.nmtoken Html5_sigs.T.wrap ->
+        Html5_types.languagecode Html5_sigs.T.wrap ->
         [> `XML_lang ] Html5_sigs.T.attrib
+      val a_lang :
+        Html5_types.languagecode Html5_sigs.T.wrap ->
+        [> `Lang ] Html5_sigs.T.attrib
       val a_onabort : Xml.event_handler -> [> `OnAbort ] Html5_sigs.T.attrib
       val a_onafterprint :
         Xml.event_handler -> [> `OnAfterPrint ] Html5_sigs.T.attrib
@@ -1516,6 +1519,7 @@
           | `Height
           | `Hidden
           | `Id
+          | `Lang
           | `Name
           | `OnAbort
           | `OnBlur
@@ -1597,6 +1601,7 @@
           | `Height
           | `Hidden
           | `Id
+          | `Lang
           | `Mime_type
           | `Name
           | `OnAbort
@@ -1677,6 +1682,7 @@
           | `Height
           | `Hidden
           | `Id
+          | `Lang
           | `Mime_type
           | `OnAbort
           | `OnBlur
@@ -1772,6 +1778,7 @@
           | `Hidden
           | `Hreflang
           | `Id
+          | `Lang
           | `Media
           | `Mime_type
           | `OnAbort
@@ -1911,6 +1918,7 @@
           | `Form
           | `Hidden
           | `Id
+          | `Lang
           | `Name
           | `OnAbort
           | `OnBlur
@@ -2013,6 +2021,7 @@
           | `Hidden
           | `Id
           | `Label
+          | `Lang
           | `OnAbort
           | `OnBlur
           | `OnCanPlay
@@ -2116,6 +2125,7 @@
           | `Draggable
           | `Hidden
           | `Id
+          | `Lang
           | `OnAbort
           | `OnBlur
           | `OnCanPlay
@@ -2198,6 +2208,7 @@
           | `Hidden
           | `Icon
           | `Id
+          | `Lang
           | `OnAbort
           | `OnBlur
           | `OnCanPlay
@@ -2278,6 +2289,7 @@
           | `Hidden
           | `Id
           | `Label
+          | `Lang
           | `Menu_Type
           | `OnAbort
           | `OnBlur
@@ -2370,6 +2382,7 @@
           | `Href
           | `Hreflang
           | `Id
+          | `Lang
           | `Media
           | `Mime_type
           | `OnAbort
@@ -3429,7 +3442,9 @@
                 val a_id : Html5_types.text wrap -> [> `Id ] attrib
                 val a_title : Html5_types.text wrap -> [> `Title ] attrib
                 val a_xml_lang :
-                  Html5_types.nmtoken wrap -> [> `XML_lang ] attrib
+                  Html5_types.languagecode wrap -> [> `XML_lang ] attrib
+                val a_lang :
+                  Html5_types.languagecode wrap -> [> `Lang ] attrib
                 val a_onabort : Xml.event_handler -> [> `OnAbort ] attrib
                 val a_onafterprint :
                   Xml.event_handler -> [> `OnAfterPrint ] attrib
@@ -3952,6 +3967,7 @@
                     | `Height
                     | `Hidden
                     | `Id
+                    | `Lang
                     | `Name
                     | `OnAbort
                     | `OnBlur
@@ -4033,6 +4049,7 @@
                     | `Height
                     | `Hidden
                     | `Id
+                    | `Lang
                     | `Mime_type
                     | `Name
                     | `OnAbort
@@ -4113,6 +4130,7 @@
                     | `Height
                     | `Hidden
                     | `Id
+                    | `Lang
                     | `Mime_type
                     | `OnAbort
                     | `OnBlur
@@ -4211,6 +4229,7 @@
                     | `Hidden
                     | `Hreflang
                     | `Id
+                    | `Lang
                     | `Media
                     | `Mime_type
                     | `OnAbort
@@ -4354,6 +4373,7 @@
                     | `Form
                     | `Hidden
                     | `Id
+                    | `Lang
                     | `Name
                     | `OnAbort
                     | `OnBlur
@@ -4458,6 +4478,7 @@
                     | `Hidden
                     | `Id
                     | `Label
+                    | `Lang
                     | `OnAbort
                     | `OnBlur
                     | `OnCanPlay
@@ -4565,6 +4586,7 @@
                     | `Draggable
                     | `Hidden
                     | `Id
+                    | `Lang
                     | `OnAbort
                     | `OnBlur
                     | `OnCanPlay
@@ -4648,6 +4670,7 @@
                     | `Hidden
                     | `Icon
                     | `Id
+                    | `Lang
                     | `OnAbort
                     | `OnBlur
                     | `OnCanPlay
@@ -4726,6 +4749,7 @@
                     | `Hidden
                     | `Id
                     | `Label
+                    | `Lang
                     | `Menu_Type
                     | `OnAbort
                     | `OnBlur
@@ -4821,6 +4845,7 @@
                     | `Href
                     | `Hreflang
                     | `Id
+                    | `Lang
                     | `Media
                     | `Mime_type
                     | `OnAbort

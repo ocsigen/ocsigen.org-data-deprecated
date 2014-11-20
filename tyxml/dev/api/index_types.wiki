@@ -266,7 +266,6 @@
 |@@class="odocwiki_index"@ @@<<a_api text="embed_content_fun"| type Html5_types.embed_content_fun >> ~[<<a_api | module Html5_types >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="ename"| type Xml_sigs.Wrapped.ename >> ~[<<a_api | module Xml_sigs.Wrapped >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="ename"| type Xml.ename >> ~[<<a_api | module Xml >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="encoding"| type Xml_print.Utf8.encoding >> ~[<<a_api | module Xml_print.Utf8 >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="event_handler"| type Xml_sigs.Wrapped.event_handler >> ~[<<a_api | module Xml_sigs.Wrapped >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="event_handler"| type Xml.event_handler >> ~[<<a_api | module Xml >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="events"| type Html5_types.events >> ~[<<a_api | module Html5_types >>~]|<<div class="odocwiki_info"|~Javascript events
@@ -533,7 +532,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="label_content_fun"| type Html5_types.label_content_fun >> ~[<<a_api | module Html5_types >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="labelable"| type Html5_types.labelable >> ~[<<a_api | module Html5_types >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="labelable_without_interactive"| type Html5_types.labelable_without_interactive >> ~[<<a_api | module Html5_types >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="languagecode"| type Html5_types.languagecode >> ~[<<a_api | module Html5_types >>~]|<<div class="odocwiki_info"|~A language code~, as per ~R~F~C~5~6~4~6~.
+|@@class="odocwiki_index"@ @@<<a_api text="languagecode"| type Html5_types.languagecode >> ~[<<a_api | module Html5_types >>~]|<<div class="odocwiki_info"|~A language code~, as per ~R~F~C~5~6~4~6~/~B~C~P~4~7~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="legend"| type Html5_types.legend >> ~[<<a_api | module Html5_types >>~]||

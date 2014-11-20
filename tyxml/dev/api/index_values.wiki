@@ -172,6 +172,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="a_keytimes"| value Svg_sigs.T.a_keytimes >> ~[<<a_api | module Svg_sigs.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="a_keytype"| value Html5_sigs.T.a_keytype >> ~[<<a_api | module Html5_sigs.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="a_label"| value Html5_sigs.T.a_label >> ~[<<a_api | module Html5_sigs.T >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="a_lang"| value Html5_sigs.T.a_lang >> ~[<<a_api | module Html5_sigs.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="a_lang"| value Svg_sigs.T.a_lang >> ~[<<a_api | module Svg_sigs.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="a_lengthadjust"| value Svg_sigs.T.a_lengthadjust >> ~[<<a_api | module Svg_sigs.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="a_limitingconeangle"| value Svg_sigs.T.a_limitingconeangle >> ~[<<a_api | module Svg_sigs.T >>~]||
@@ -385,7 +386,9 @@
 |@@class="odocwiki_index"@ @@<<a_api text="a_spellcheck"| value Html5_sigs.T.a_spellcheck >> ~[<<a_api | module Html5_sigs.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="a_spreadmethod"| value Svg_sigs.T.a_spreadmethod >> ~[<<a_api | module Svg_sigs.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="a_src"| value Html5_sigs.T.a_src >> ~[<<a_api | module Html5_sigs.T >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="a_srclang"| value Html5_sigs.T.a_srclang >> ~[<<a_api | module Html5_sigs.T >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="a_srclang"| value Html5_sigs.T.a_srclang >> ~[<<a_api | module Html5_sigs.T >>~]|<<div class="odocwiki_info"|~This attribute is deprecated~, you should use <<a_api | val Html5_sigs.T.a_xml_lang >>~.
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api text="a_start"| value Html5_sigs.T.a_start >> ~[<<a_api | module Html5_sigs.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="a_startoffset"| value Svg_sigs.T.a_startoffset >> ~[<<a_api | module Svg_sigs.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="a_stddeviation"| value Svg_sigs.T.a_stddeviation >> ~[<<a_api | module Svg_sigs.T >>~]||
@@ -781,9 +784,6 @@
 |@@class="odocwiki_index"@ @@<<a_api text="node"| value Xml_sigs.Wrapped.node >> ~[<<a_api | module Xml_sigs.Wrapped >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="node"| value Xml.node >> ~[<<a_api | module Xml >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="normalize"| value Xml_print.Utf8.normalize >> ~[<<a_api | module Xml_print.Utf8 >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="normalize_from"| value Xml_print.Utf8.normalize_from >> ~[<<a_api | module Xml_print.Utf8 >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|normalize~_from ~~encoding str>> convert the string <<span class="odocwiki_inlinecode"|str>> into an uft~-~8 string~.
->>
-|
 |@@class="odocwiki_index"@ @@<<a_api text="normalize_html"| value Xml_print.Utf8.normalize_html >> ~[<<a_api | module Xml_print.Utf8 >>~]|<<div class="odocwiki_info"|~Same as <<span class="odocwiki_inlinecode"|normalize>> plus some extra work ~:
       ~It encode ~'~<~' ~, ~'~>~' ~, ~'"~' ~, ~'~&~' characters with
       corresponding entities and replaced invalid html

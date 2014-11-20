@@ -62,7 +62,7 @@
   type pixels = int
   type script_ = string
   type text = string
-  type i18n = [ `XML_lang ]
+  type i18n = [ `Lang | `XML_lang ]
   type core =
       [ `Accesskey
       | `Class
@@ -72,6 +72,7 @@
       | `Draggable
       | `Hidden
       | `Id
+      | `Lang
       | `Spellcheck
       | `Style_Attr
       | `Tabindex
@@ -143,6 +144,7 @@
       | `Draggable
       | `Hidden
       | `Id
+      | `Lang
       | `OnAbort
       | `OnBlur
       | `OnCanPlay
@@ -2073,6 +2075,7 @@
       | `Draggable
       | `Hidden
       | `Id
+      | `Lang
       | `Manifest
       | `OnAbort
       | `OnBlur
@@ -2149,6 +2152,7 @@
       | `Draggable
       | `Hidden
       | `Id
+      | `Lang
       | `OnAbort
       | `OnAfterPrint
       | `OnBeforePrint
@@ -2243,6 +2247,7 @@
       | `Hidden
       | `Href
       | `Id
+      | `Lang
       | `OnAbort
       | `OnBlur
       | `OnCanPlay
@@ -2388,6 +2393,7 @@
       | `Draggable
       | `Hidden
       | `Id
+      | `Lang
       | `OnAbort
       | `OnBlur
       | `OnCanPlay
@@ -2465,6 +2471,7 @@
           | `Hidden
           | `Id
           | `Int_Value
+          | `Lang
           | `OnAbort
           | `OnBlur
           | `OnCanPlay
@@ -2537,6 +2544,7 @@
           | `Hidden
           | `Id
           | `Int_Value
+          | `Lang
           | `OnAbort
           | `OnBlur
           | `OnCanPlay
@@ -2607,6 +2615,7 @@
       | `Draggable
       | `Hidden
       | `Id
+      | `Lang
       | `OnAbort
       | `OnBlur
       | `OnCanPlay
@@ -2682,6 +2691,7 @@
       | `Hidden
       | `Id
       | `Int_Value
+      | `Lang
       | `OnAbort
       | `OnBlur
       | `OnCanPlay
@@ -2971,6 +2981,7 @@
       | `Draggable
       | `Hidden
       | `Id
+      | `Lang
       | `OnAbort
       | `OnBlur
       | `OnCanPlay
@@ -3057,6 +3068,7 @@
       | `Draggable
       | `Hidden
       | `Id
+      | `Lang
       | `OnAbort
       | `OnBlur
       | `OnCanPlay
@@ -3138,6 +3150,7 @@
       | `Href
       | `Hreflang
       | `Id
+      | `Lang
       | `Media
       | `Mime_type
       | `OnAbort
@@ -3218,6 +3231,7 @@
       | `Draggable
       | `Hidden
       | `Id
+      | `Lang
       | `OnAbort
       | `OnBlur
       | `OnCanPlay
@@ -3294,6 +3308,7 @@
       | `Draggable
       | `Hidden
       | `Id
+      | `Lang
       | `OnAbort
       | `OnBlur
       | `OnCanPlay
@@ -3368,6 +3383,7 @@
       | `Height
       | `Hidden
       | `Id
+      | `Lang
       | `Name
       | `OnAbort
       | `OnBlur
@@ -3533,6 +3549,7 @@
       | `Height
       | `Hidden
       | `Id
+      | `Lang
       | `Mime_type
       | `Name
       | `OnAbort
@@ -3610,6 +3627,7 @@
       | `Draggable
       | `Hidden
       | `Id
+      | `Lang
       | `Name
       | `OnAbort
       | `OnBlur
@@ -3686,6 +3704,7 @@
       | `Height
       | `Hidden
       | `Id
+      | `Lang
       | `Mime_type
       | `OnAbort
       | `OnBlur
@@ -3765,6 +3784,7 @@
       | `Hidden
       | `Id
       | `Ismap
+      | `Lang
       | `OnAbort
       | `OnBlur
       | `OnCanPlay
@@ -3852,6 +3872,7 @@
       | `Draggable
       | `Hidden
       | `Id
+      | `Lang
       | `Loop
       | `Mediagroup
       | `Muted
@@ -3935,6 +3956,7 @@
       | `Height
       | `Hidden
       | `Id
+      | `Lang
       | `Loop
       | `Mediagroup
       | `Muted
@@ -4016,6 +4038,7 @@
       | `Height
       | `Hidden
       | `Id
+      | `Lang
       | `OnAbort
       | `OnBlur
       | `OnCanPlay
@@ -4090,6 +4113,7 @@
       | `Draggable
       | `Hidden
       | `Id
+      | `Lang
       | `Media
       | `Mime_type
       | `OnAbort
@@ -4169,6 +4193,7 @@
       | `Hidden
       | `Hreflang
       | `Id
+      | `Lang
       | `Media
       | `Mime_type
       | `OnAbort
@@ -4248,6 +4273,7 @@
       | `Draggable
       | `Hidden
       | `Id
+      | `Lang
       | `Name
       | `OnAbort
       | `OnBlur
@@ -4326,6 +4352,7 @@
       | `Draggable
       | `Hidden
       | `Id
+      | `Lang
       | `OnAbort
       | `OnBlur
       | `OnCanPlay
@@ -4400,6 +4427,7 @@
       | `Draggable
       | `Hidden
       | `Id
+      | `Lang
       | `OnAbort
       | `OnBlur
       | `OnCanPlay
@@ -4474,6 +4502,7 @@
       | `Draggable
       | `Hidden
       | `Id
+      | `Lang
       | `OnAbort
       | `OnBlur
       | `OnCanPlay
@@ -4548,6 +4577,7 @@
       | `Draggable
       | `Hidden
       | `Id
+      | `Lang
       | `OnAbort
       | `OnBlur
       | `OnCanPlay
@@ -4636,6 +4666,7 @@
       | `Headers
       | `Hidden
       | `Id
+      | `Lang
       | `OnAbort
       | `OnBlur
       | `OnCanPlay
@@ -4712,6 +4743,7 @@
       | `Headers
       | `Hidden
       | `Id
+      | `Lang
       | `OnAbort
       | `OnBlur
       | `OnCanPlay
@@ -4795,6 +4827,7 @@
       | `Enctype
       | `Hidden
       | `Id
+      | `Lang
       | `Method
       | `Name
       | `Novalidate
@@ -4874,6 +4907,7 @@
       | `Form
       | `Hidden
       | `Id
+      | `Lang
       | `Name
       | `OnAbort
       | `OnBlur
@@ -4954,6 +4988,7 @@
       | `Form
       | `Hidden
       | `Id
+      | `Lang
       | `OnAbort
       | `OnBlur
       | `OnCanPlay
@@ -5043,6 +5078,7 @@
       | `Input_Max
       | `Input_Min
       | `Input_Type
+      | `Lang
       | `List
       | `Maxlength
       | `Multiple
@@ -5131,6 +5167,7 @@
       | `Form
       | `Hidden
       | `Id
+      | `Lang
       | `Maxlength
       | `Name
       | `OnAbort
@@ -5222,6 +5259,7 @@
       | `Formtarget
       | `Hidden
       | `Id
+      | `Lang
       | `Name
       | `OnAbort
       | `OnBlur
@@ -5300,6 +5338,7 @@
       | `Form
       | `Hidden
       | `Id
+      | `Lang
       | `Multiple
       | `Name
       | `OnAbort
@@ -5383,6 +5422,7 @@
       | `Hidden
       | `Id
       | `Label
+      | `Lang
       | `OnAbort
       | `OnBlur
       | `OnCanPlay
@@ -5455,6 +5495,7 @@
       | `Hidden
       | `Id
       | `Label
+      | `Lang
       | `OnAbort
       | `OnBlur
       | `OnCanPlay
@@ -5539,6 +5580,7 @@
       | `Hidden
       | `Id
       | `Keytype
+      | `Lang
       | `Name
       | `OnAbort
       | `OnBlur
@@ -5615,6 +5657,7 @@
       | `Form
       | `Hidden
       | `Id
+      | `Lang
       | `Max
       | `OnAbort
       | `OnBlur
@@ -5692,6 +5735,7 @@
       | `Hidden
       | `High
       | `Id
+      | `Lang
       | `Low
       | `Max
       | `Min
@@ -5771,6 +5815,7 @@
       | `Form
       | `Hidden
       | `Id
+      | `Lang
       | `Name
       | `OnAbort
       | `OnBlur
@@ -5845,6 +5890,7 @@
       | `Draggable
       | `Hidden
       | `Id
+      | `Lang
       | `OnAbort
       | `OnBlur
       | `OnCanPlay
@@ -5927,6 +5973,7 @@
       | `Hidden
       | `Icon
       | `Id
+      | `Lang
       | `OnAbort
       | `OnBlur
       | `OnCanPlay
@@ -6002,6 +6049,7 @@
       | `Hidden
       | `Id
       | `Label
+      | `Lang
       | `Menu_Type
       | `OnAbort
       | `OnBlur
@@ -6083,6 +6131,7 @@
       | `Hidden
       | `Http_equiv
       | `Id
+      | `Lang
       | `Name
       | `OnAbort
       | `OnBlur
@@ -6158,6 +6207,7 @@
       | `Draggable
       | `Hidden
       | `Id
+      | `Lang
       | `Media
       | `Mime_type
       | `OnAbort
@@ -6235,6 +6285,7 @@
       | `Draggable
       | `Hidden
       | `Id
+      | `Lang
       | `Mime_type
       | `OnAbort
       | `OnBlur
@@ -6314,6 +6365,7 @@
       | `Href
       | `Hreflang
       | `Id
+      | `Lang
       | `Media
       | `Mime_type
       | `OnAbort
