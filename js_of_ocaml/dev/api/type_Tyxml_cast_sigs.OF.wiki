@@ -99,7 +99,7 @@
     Dom_html.embedElement Js.t ->
     [> Html5_types.embed ] Tyxml_cast_sigs.OF.elt
   val of_tableCell :
-    Dom_html.tableCellElement Js.t -> [> `Td ] Tyxml_cast_sigs.OF.elt
+    Dom_html.tableCellElement Js.t -> [> `Td | `Th ] Tyxml_cast_sigs.OF.elt
   val of_tableRow :
     Dom_html.tableRowElement Js.t ->
     [> Html5_types.tr ] Tyxml_cast_sigs.OF.elt

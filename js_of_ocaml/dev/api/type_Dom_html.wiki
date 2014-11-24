@@ -6280,12 +6280,14 @@
       val table : #Dom_html.element Js.t -> Dom_html.tableElement Js.t Js.opt
       val tbody :
         #Dom_html.element Js.t -> Dom_html.tableSectionElement Js.t Js.opt
-      val td : #Dom_html.element Js.t -> Dom_html.tableColElement Js.t Js.opt
+      val td :
+        #Dom_html.element Js.t -> Dom_html.tableCellElement Js.t Js.opt
       val textarea :
         #Dom_html.element Js.t -> Dom_html.textAreaElement Js.t Js.opt
       val tfoot :
         #Dom_html.element Js.t -> Dom_html.tableSectionElement Js.t Js.opt
-      val th : #Dom_html.element Js.t -> Dom_html.tableColElement Js.t Js.opt
+      val th :
+        #Dom_html.element Js.t -> Dom_html.tableCellElement Js.t Js.opt
       val thead :
         #Dom_html.element Js.t -> Dom_html.tableSectionElement Js.t Js.opt
       val title : #Dom_html.element Js.t -> Dom_html.titleElement Js.t Js.opt

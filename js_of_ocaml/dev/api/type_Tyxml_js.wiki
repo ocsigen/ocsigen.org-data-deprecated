@@ -2537,7 +2537,7 @@
       val of_script :
         Dom_html.scriptElement Js.t -> [> Html5_types.script ] elt
       val of_embed : Dom_html.embedElement Js.t -> [> Html5_types.embed ] elt
-      val of_tableCell : Dom_html.tableCellElement Js.t -> [> `Td ] elt
+      val of_tableCell : Dom_html.tableCellElement Js.t -> [> `Td | `Th ] elt
       val of_tableRow :
         Dom_html.tableRowElement Js.t -> [> Html5_types.tr ] elt
       val of_tableCol :
