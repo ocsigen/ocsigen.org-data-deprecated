@@ -6185,10 +6185,10 @@
     | Style of Dom_html.styleElement Js.t
     | Table of Dom_html.tableElement Js.t
     | Tbody of Dom_html.tableSectionElement Js.t
-    | Td of Dom_html.tableColElement Js.t
+    | Td of Dom_html.tableCellElement Js.t
     | Textarea of Dom_html.textAreaElement Js.t
     | Tfoot of Dom_html.tableSectionElement Js.t
-    | Th of Dom_html.tableColElement Js.t
+    | Th of Dom_html.tableCellElement Js.t
     | Thead of Dom_html.tableSectionElement Js.t
     | Title of Dom_html.titleElement Js.t
     | Tr of Dom_html.tableRowElement Js.t
