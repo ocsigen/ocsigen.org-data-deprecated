@@ -374,16 +374,17 @@
   val a_g2 : string Svg_sigs.T.wrap -> [> `G2 ] Svg_sigs.T.attrib
   val a_k : string Svg_sigs.T.wrap -> [> `K ] Svg_sigs.T.attrib
   val a_fontfamily :
-    string Svg_sigs.T.wrap -> [> `FontFamily ] Svg_sigs.T.attrib
+    string Svg_sigs.T.wrap -> [> `Font_Family ] Svg_sigs.T.attrib
   val a_fontstyle :
-    string Svg_sigs.T.wrap -> [> `FontStyle ] Svg_sigs.T.attrib
+    string Svg_sigs.T.wrap -> [> `Font_Style ] Svg_sigs.T.attrib
   val a_fontvariant :
-    string Svg_sigs.T.wrap -> [> `FontVariant ] Svg_sigs.T.attrib
+    string Svg_sigs.T.wrap -> [> `Font_Variant ] Svg_sigs.T.attrib
   val a_fontweight :
-    string Svg_sigs.T.wrap -> [> `FontWeight ] Svg_sigs.T.attrib
+    string Svg_sigs.T.wrap -> [> `Font_Weight ] Svg_sigs.T.attrib
   val a_fontstretch :
-    string Svg_sigs.T.wrap -> [> `FontStretch ] Svg_sigs.T.attrib
-  val a_fontsize : string Svg_sigs.T.wrap -> [> `FontSize ] Svg_sigs.T.attrib
+    string Svg_sigs.T.wrap -> [> `Font_Stretch ] Svg_sigs.T.attrib
+  val a_fontsize :
+    string Svg_sigs.T.wrap -> [> `Font_Size ] Svg_sigs.T.attrib
   val a_unicoderange :
     string Svg_sigs.T.wrap -> [> `UnicodeRange ] Svg_sigs.T.attrib
   val a_unitsperem :

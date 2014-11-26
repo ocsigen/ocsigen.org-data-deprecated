@@ -4955,7 +4955,7 @@
       | `Ellipse
       | `Filter
       | `Font
-      | `FontFace
+      | `Font_Face
       | `ForeignObject
       | `G
       | `Image
@@ -5057,7 +5057,7 @@
   type vkern = [ `Vkern ]
   type vkern_attr =
       [ `G1 | `G2 | `Id | `K | `U1 | `U2 | `Xml_base | `Xml_lang | `Xml_space ]
-  type fontface = [ `FontFace ]
+  type fontface = [ `Font_Face ]
   type fontface_content = [ `Desc | `Font_Face_Src | `Metadata | `Title ]
   type fontface_attr =
       [ `AccentHeight
@@ -5066,12 +5066,12 @@
       | `Bbox
       | `CapHeight
       | `Descent
-      | `FontFamily
-      | `FontSize
-      | `FontStretch
-      | `FontStyle
-      | `FontVariant
-      | `FontWeight
+      | `Font_Family
+      | `Font_Size
+      | `Font_Stretch
+      | `Font_Style
+      | `Font_Variant
+      | `Font_Weight
       | `Hanging
       | `Id
       | `Ideographic
@@ -5114,7 +5114,7 @@
       | `Xml_base
       | `Xml_lang
       | `Xml_space ]
-  type fontfaceformat = [ `Font_Face_Uri ]
+  type fontfaceformat = [ `Font_Face_Format ]
   type fontfaceformat_attr =
       [ `Id | `String | `Xml_base | `Xml_lang | `Xml_space ]
   type fontfacename = [ `Font_Face_Name ]
