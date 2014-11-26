@@ -1,8 +1,8 @@
 <<code language="ocaml" | sig
   module Xml :
     sig
-      type 'a wrap = 'a
-      type 'a list_wrap = 'a list
+      type 'a wrap = 'a Xml_wrap.NoWrap.t
+      type 'a list_wrap = 'a Xml_wrap.NoWrap.tlist
       type uri = Xml.uri
       val string_of_uri : uri -> string
       val uri_of_string : string -> uri
@@ -36,12 +36,12 @@
       val cdata_style : string -> elt
     end
   module Info : Xml_sigs.Info
-  type uri = uri
+  type uri = Xml.uri
   val string_of_uri : uri -> string
   val uri_of_string : string -> uri
   type 'a attrib = 'a attrib
-  type 'a wrap = 'a
-  type 'a list_wrap = 'a list
+  type 'a wrap = 'a Xml_wrap.NoWrap.t
+  type 'a list_wrap = 'a Xml_wrap.NoWrap.tlist
   type 'a elt = 'a elt
   type ('a, 'b) nullary = ?a:'a attrib list -> unit -> 'b elt
   type ('a, 'b, 'c) unary = ?a:'a attrib list -> 'b elt wrap -> 'c elt

@@ -1,8 +1,8 @@
 <<code language="ocaml" | sig
   module Xml :
     sig
-      type 'a wrap = 'a React.signal
-      type 'a list_wrap = 'a ReactiveData.RList.t
+      type 'a wrap = 'a Tyxml_js.Xml_wrap.t
+      type 'a list_wrap = 'a Tyxml_js.Xml_wrap.tlist
       type uri = Xml.uri
       val string_of_uri : uri -> string
       val uri_of_string : string -> uri
@@ -36,9 +36,9 @@
       val cdata_style : string -> elt
     end
   module Info : Xml_sigs.Info
-  type 'a wrap = 'a React.signal
-  type 'a list_wrap = 'a ReactiveData.RList.t
-  type uri = uri
+  type 'a wrap = 'a Tyxml_js.Xml_wrap.t
+  type 'a list_wrap = 'a Tyxml_js.Xml_wrap.tlist
+  type uri = Xml.uri
   val string_of_uri : uri -> string
   val uri_of_string : string -> uri
   type 'a attrib = 'a attrib
@@ -310,8 +310,8 @@
     star
   val svg :
     ?xmlns:string ->
-    ?a:[< Html5_types.svg_attrib ] Svg.D.Raw.attrib list ->
-    [< Html5_types.svg_content ] Svg.D.Raw.elt list_wrap ->
+    ?a:[< Html5_types.svg_attrib ] Svg.R.Raw.attrib list ->
+    [< Html5_types.svg_content ] Svg.R.Raw.elt list_wrap ->
     [> Html5_types.svg ] elt
   val footer :
     ([< Html5_types.common ], [< Html5_types.flow5_without_header_footer ],

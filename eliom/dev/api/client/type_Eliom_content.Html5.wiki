@@ -8,8 +8,8 @@
         sig
           module Xml :
             sig
-              type 'a wrap = 'a
-              type 'a list_wrap = 'a list
+              type 'a wrap = 'a Xml_wrap.NoWrap.t
+              type 'a list_wrap = 'a Xml_wrap.NoWrap.tlist
               type uri = Xml.uri
               val string_of_uri : uri -> string
               val uri_of_string : string -> uri
@@ -44,9 +44,9 @@
               val cdata_style : string -> elt
             end
           module Info : Xml_sigs.Info
-          type 'a wrap = 'a
-          type 'a list_wrap = 'a list
-          type uri = uri
+          type 'a wrap = 'a Xml_wrap.NoWrap.t
+          type 'a list_wrap = 'a Xml_wrap.NoWrap.tlist
+          type uri = Xml.uri
           val string_of_uri : uri -> string
           val uri_of_string : string -> uri
           type 'a attrib = 'a attrib
@@ -1526,8 +1526,8 @@
         end
       module Xml :
         sig
-          type 'a wrap = 'a
-          type 'a list_wrap = 'a list
+          type 'a wrap = 'a Xml_wrap.NoWrap.t
+          type 'a list_wrap = 'a Xml_wrap.NoWrap.tlist
           type uri = Xml.uri
           val string_of_uri : uri -> string
           val uri_of_string : string -> uri
@@ -1562,9 +1562,9 @@
           val cdata_style : string -> elt
         end
       module Info : Xml_sigs.Info
-      type 'a wrap = 'a
-      type 'a list_wrap = 'a list
-      type uri = uri
+      type 'a wrap = 'a Xml_wrap.NoWrap.t
+      type 'a list_wrap = 'a Xml_wrap.NoWrap.tlist
+      type uri = Xml.uri
       val string_of_uri : uri -> string
       type 'a attrib = 'a attrib
       val to_xmlattribs : 'a attrib list -> Xml.attrib list
@@ -3809,8 +3809,8 @@
         sig
           module Xml :
             sig
-              type 'a wrap = 'a
-              type 'a list_wrap = 'a list
+              type 'a wrap = 'a Xml_wrap.NoWrap.t
+              type 'a list_wrap = 'a Xml_wrap.NoWrap.tlist
               type uri = Xml.uri
               val string_of_uri : uri -> string
               val uri_of_string : string -> uri
@@ -3845,9 +3845,9 @@
               val cdata_style : string -> elt
             end
           module Info : Xml_sigs.Info
-          type 'a wrap = 'a
-          type 'a list_wrap = 'a list
-          type uri = uri
+          type 'a wrap = 'a Xml_wrap.NoWrap.t
+          type 'a list_wrap = 'a Xml_wrap.NoWrap.tlist
+          type uri = Xml.uri
           val string_of_uri : uri -> string
           val uri_of_string : string -> uri
           type 'a attrib = 'a attrib
@@ -5327,8 +5327,8 @@
         end
       module Xml :
         sig
-          type 'a wrap = 'a
-          type 'a list_wrap = 'a list
+          type 'a wrap = 'a Xml_wrap.NoWrap.t
+          type 'a list_wrap = 'a Xml_wrap.NoWrap.tlist
           type uri = Xml.uri
           val string_of_uri : uri -> string
           val uri_of_string : string -> uri
@@ -5363,9 +5363,9 @@
           val cdata_style : string -> elt
         end
       module Info : Xml_sigs.Info
-      type 'a wrap = 'a
-      type 'a list_wrap = 'a list
-      type uri = uri
+      type 'a wrap = 'a Xml_wrap.NoWrap.t
+      type 'a list_wrap = 'a Xml_wrap.NoWrap.tlist
+      type uri = Xml.uri
       val string_of_uri : uri -> string
       type 'a attrib = 'a attrib
       val to_xmlattribs : 'a attrib list -> Xml.attrib list
@@ -7616,9 +7616,8 @@
         sig
           module Xml :
             sig
-              type 'a wrap = 'a React.signal Eliom_pervasives.client_value
-              type 'a list_wrap =
-                  'a ReactiveData.RList.t Eliom_pervasives.client_value
+              type 'a wrap = 'a Tyxml_js.Xml_wrap.t
+              type 'a list_wrap = 'a Tyxml_js.Xml_wrap.tlist
               type uri = Xml.uri
               val string_of_uri : uri -> string
               val uri_of_string : string -> uri
@@ -7653,10 +7652,9 @@
               val cdata_style : string -> elt
             end
           module Info : Xml_sigs.Info
-          type 'a wrap = 'a React.signal Eliom_pervasives.client_value
-          type 'a list_wrap =
-              'a ReactiveData.RList.t Eliom_pervasives.client_value
-          type uri = uri
+          type 'a wrap = 'a Tyxml_js.Xml_wrap.t
+          type 'a list_wrap = 'a Tyxml_js.Xml_wrap.tlist
+          type uri = Xml.uri
           val string_of_uri : uri -> string
           val uri_of_string : string -> uri
           type 'a attrib = 'a attrib
@@ -9136,9 +9134,8 @@
         end
       module Xml :
         sig
-          type 'a wrap = 'a React.signal Eliom_pervasives.client_value
-          type 'a list_wrap =
-              'a ReactiveData.RList.t Eliom_pervasives.client_value
+          type 'a wrap = 'a Tyxml_js.Xml_wrap.t
+          type 'a list_wrap = 'a Tyxml_js.Xml_wrap.tlist
           type uri = Xml.uri
           val string_of_uri : uri -> string
           val uri_of_string : string -> uri
@@ -9173,10 +9170,9 @@
           val cdata_style : string -> elt
         end
       module Info : Xml_sigs.Info
-      type 'a wrap = 'a React.signal Eliom_pervasives.client_value
-      type 'a list_wrap =
-          'a ReactiveData.RList.t Eliom_pervasives.client_value
-      type uri = uri
+      type 'a wrap = 'a Tyxml_js.Xml_wrap.t
+      type 'a list_wrap = 'a Tyxml_js.Xml_wrap.tlist
+      type uri = Xml.uri
       val string_of_uri : uri -> string
       val uri_of_string : string -> uri
       type 'a attrib = 'a attrib
