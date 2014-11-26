@@ -6,7 +6,7 @@
   method deleteContents : unit Js.meth
   method endContainer : Dom.node Js.t Js.readonly_prop
   method endOffset : int Js.readonly_prop
-  method extactContents : Dom.documentFragment Js.t Js.meth
+  method extractContents : Dom.documentFragment Js.t Js.meth
   method insertNode : Dom.node Js.t -> unit Js.meth
   method selectNode : Dom.node Js.t -> unit Js.meth
   method selectNodeContents : Dom.node Js.t -> unit Js.meth

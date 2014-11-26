@@ -37,7 +37,11 @@
   method lastChild : Dom.node Js.t Js.opt Js.prop
   method lengthAdjust :
     Dom_svg.lengthAdjust Dom_svg.animated Js.t Js.readonly_prop
+  method lookupNamespaceURI :
+    Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+  method lookupPrefix : Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
   method method_ : Dom_svg.textPathElementMethod Js.readonly_prop
+  method namespaceURI : Js.js_string Js.t Js.opt Js.prop
   method nextSibling : Dom.node Js.t Js.opt Js.prop
   method nodeName : Js.js_string Js.t Js.readonly_prop
   method nodeType : Dom.nodeType Js.readonly_prop

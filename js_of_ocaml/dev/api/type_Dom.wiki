@@ -48,6 +48,11 @@
       method insertBefore :
         Dom.node Js.t -> Dom.node Js.t Js.opt -> Dom.node Js.t Js.meth
       method lastChild : Dom.node Js.t Js.opt Js.prop
+      method lookupNamespaceURI :
+        Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method lookupPrefix :
+        Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method namespaceURI : Js.js_string Js.t Js.opt Js.prop
       method nextSibling : Dom.node Js.t Js.opt Js.prop
       method nodeName : Js.js_string Js.t Js.readonly_prop
       method nodeType : Dom.nodeType Js.readonly_prop
@@ -70,7 +75,12 @@
       method insertBefore :
         node Js.t -> node Js.t Js.opt -> node Js.t Js.meth
       method lastChild : node Js.t Js.opt Js.prop
+      method lookupNamespaceURI :
+        Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method lookupPrefix :
+        Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
       method name : Js.js_string Js.t Js.readonly_prop
+      method namespaceURI : Js.js_string Js.t Js.opt Js.prop
       method nextSibling : node Js.t Js.opt Js.prop
       method nodeName : Js.js_string Js.t Js.readonly_prop
       method nodeType : nodeType Js.readonly_prop
@@ -120,6 +130,11 @@
       method insertBefore :
         node Js.t -> node Js.t Js.opt -> node Js.t Js.meth
       method lastChild : node Js.t Js.opt Js.prop
+      method lookupNamespaceURI :
+        Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method lookupPrefix :
+        Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method namespaceURI : Js.js_string Js.t Js.opt Js.prop
       method nextSibling : node Js.t Js.opt Js.prop
       method nodeName : Js.js_string Js.t Js.readonly_prop
       method nodeType : nodeType Js.readonly_prop
@@ -159,6 +174,11 @@
       method insertData : int -> Js.js_string Js.t -> unit Js.meth
       method lastChild : node Js.t Js.opt Js.prop
       method length : int Js.readonly_prop
+      method lookupNamespaceURI :
+        Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method lookupPrefix :
+        Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method namespaceURI : Js.js_string Js.t Js.opt Js.prop
       method nextSibling : node Js.t Js.opt Js.prop
       method nodeName : Js.js_string Js.t Js.readonly_prop
       method nodeType : nodeType Js.readonly_prop
@@ -200,6 +220,11 @@
       method insertBefore :
         node Js.t -> node Js.t Js.opt -> node Js.t Js.meth
       method lastChild : node Js.t Js.opt Js.prop
+      method lookupNamespaceURI :
+        Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method lookupPrefix :
+        Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method namespaceURI : Js.js_string Js.t Js.opt Js.prop
       method nextSibling : node Js.t Js.opt Js.prop
       method nodeName : Js.js_string Js.t Js.readonly_prop
       method nodeType : nodeType Js.readonly_prop

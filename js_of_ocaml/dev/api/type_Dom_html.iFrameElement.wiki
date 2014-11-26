@@ -39,9 +39,13 @@
   method lang : Js.js_string Js.t Js.prop
   method lastChild : Dom.node Js.t Js.opt Js.prop
   method longDesc : Js.js_string Js.t Js.prop
+  method lookupNamespaceURI :
+    Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+  method lookupPrefix : Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
   method marginHeight : Js.js_string Js.t Js.prop
   method marginWidth : Js.js_string Js.t Js.prop
   method name : Js.js_string Js.t Js.prop
+  method namespaceURI : Js.js_string Js.t Js.opt Js.prop
   method nextSibling : Dom.node Js.t Js.opt Js.prop
   method nodeName : Js.js_string Js.t Js.readonly_prop
   method nodeType : Dom.nodeType Js.readonly_prop

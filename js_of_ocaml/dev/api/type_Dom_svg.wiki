@@ -156,6 +156,11 @@
       method insertBefore :
         Dom.node Js.t -> Dom.node Js.t Js.opt -> Dom.node Js.t Js.meth
       method lastChild : Dom.node Js.t Js.opt Js.prop
+      method lookupNamespaceURI :
+        Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method lookupPrefix :
+        Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method namespaceURI : Js.js_string Js.t Js.opt Js.prop
       method nextSibling : Dom.node Js.t Js.opt Js.prop
       method nodeName : Js.js_string Js.t Js.readonly_prop
       method nodeType : Dom.nodeType Js.readonly_prop
@@ -335,6 +340,11 @@
       method insertBefore :
         Dom.node Js.t -> Dom.node Js.t Js.opt -> Dom.node Js.t Js.meth
       method lastChild : Dom.node Js.t Js.opt Js.prop
+      method lookupNamespaceURI :
+        Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method lookupPrefix :
+        Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method namespaceURI : Js.js_string Js.t Js.opt Js.prop
       method nextSibling : Dom.node Js.t Js.opt Js.prop
       method nodeName : Js.js_string Js.t Js.readonly_prop
       method nodeType : Dom.nodeType Js.readonly_prop
@@ -419,6 +429,11 @@
       method insertBefore :
         Dom.node Js.t -> Dom.node Js.t Js.opt -> Dom.node Js.t Js.meth
       method lastChild : Dom.node Js.t Js.opt Js.prop
+      method lookupNamespaceURI :
+        Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method lookupPrefix :
+        Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method namespaceURI : Js.js_string Js.t Js.opt Js.prop
       method nearestViewportElement : Dom_svg.element Js.t Js.readonly_prop
       method nextSibling : Dom.node Js.t Js.opt Js.prop
       method nodeName : Js.js_string Js.t Js.readonly_prop
@@ -510,6 +525,11 @@
       method insertBefore :
         Dom.node Js.t -> Dom.node Js.t Js.opt -> Dom.node Js.t Js.meth
       method lastChild : Dom.node Js.t Js.opt Js.prop
+      method lookupNamespaceURI :
+        Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method lookupPrefix :
+        Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method namespaceURI : Js.js_string Js.t Js.opt Js.prop
       method nearestViewportElement : Dom_svg.element Js.t Js.readonly_prop
       method nextSibling : Dom.node Js.t Js.opt Js.prop
       method nodeName : Js.js_string Js.t Js.readonly_prop
@@ -637,6 +657,11 @@
       method insertBefore :
         Dom.node Js.t -> Dom.node Js.t Js.opt -> Dom.node Js.t Js.meth
       method lastChild : Dom.node Js.t Js.opt Js.prop
+      method lookupNamespaceURI :
+        Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method lookupPrefix :
+        Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method namespaceURI : Js.js_string Js.t Js.opt Js.prop
       method nearestViewportElement : Dom_svg.element Js.t Js.readonly_prop
       method nextSibling : Dom.node Js.t Js.opt Js.prop
       method nodeName : Js.js_string Js.t Js.readonly_prop
@@ -701,6 +726,11 @@
       method insertBefore :
         Dom.node Js.t -> Dom.node Js.t Js.opt -> Dom.node Js.t Js.meth
       method lastChild : Dom.node Js.t Js.opt Js.prop
+      method lookupNamespaceURI :
+        Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method lookupPrefix :
+        Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method namespaceURI : Js.js_string Js.t Js.opt Js.prop
       method nextSibling : Dom.node Js.t Js.opt Js.prop
       method nodeName : Js.js_string Js.t Js.readonly_prop
       method nodeType : Dom.nodeType Js.readonly_prop
@@ -760,6 +790,11 @@
       method insertBefore :
         Dom.node Js.t -> Dom.node Js.t Js.opt -> Dom.node Js.t Js.meth
       method lastChild : Dom.node Js.t Js.opt Js.prop
+      method lookupNamespaceURI :
+        Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method lookupPrefix :
+        Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method namespaceURI : Js.js_string Js.t Js.opt Js.prop
       method nextSibling : Dom.node Js.t Js.opt Js.prop
       method nodeName : Js.js_string Js.t Js.readonly_prop
       method nodeType : Dom.nodeType Js.readonly_prop
@@ -821,6 +856,11 @@
       method insertBefore :
         Dom.node Js.t -> Dom.node Js.t Js.opt -> Dom.node Js.t Js.meth
       method lastChild : Dom.node Js.t Js.opt Js.prop
+      method lookupNamespaceURI :
+        Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method lookupPrefix :
+        Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method namespaceURI : Js.js_string Js.t Js.opt Js.prop
       method nextSibling : Dom.node Js.t Js.opt Js.prop
       method nodeName : Js.js_string Js.t Js.readonly_prop
       method nodeType : Dom.nodeType Js.readonly_prop
@@ -951,6 +991,11 @@
         Dom.node Js.t -> Dom.node Js.t Js.opt -> Dom.node Js.t Js.meth
       method instanceRoot : Dom_svg.elementInstance Js.t Js.readonly_prop
       method lastChild : Dom.node Js.t Js.opt Js.prop
+      method lookupNamespaceURI :
+        Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method lookupPrefix :
+        Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method namespaceURI : Js.js_string Js.t Js.opt Js.prop
       method nearestViewportElement : Dom_svg.element Js.t Js.readonly_prop
       method nextSibling : Dom.node Js.t Js.opt Js.prop
       method nodeName : Js.js_string Js.t Js.readonly_prop
@@ -1100,6 +1145,11 @@
       method insertBefore :
         Dom.node Js.t -> Dom.node Js.t Js.opt -> Dom.node Js.t Js.meth
       method lastChild : Dom.node Js.t Js.opt Js.prop
+      method lookupNamespaceURI :
+        Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method lookupPrefix :
+        Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method namespaceURI : Js.js_string Js.t Js.opt Js.prop
       method nearestViewportElement : Dom_svg.element Js.t Js.readonly_prop
       method nextSibling : Dom.node Js.t Js.opt Js.prop
       method nodeName : Js.js_string Js.t Js.readonly_prop
@@ -1176,6 +1226,11 @@
       method insertBefore :
         Dom.node Js.t -> Dom.node Js.t Js.opt -> Dom.node Js.t Js.meth
       method lastChild : Dom.node Js.t Js.opt Js.prop
+      method lookupNamespaceURI :
+        Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method lookupPrefix :
+        Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method namespaceURI : Js.js_string Js.t Js.opt Js.prop
       method nearestViewportElement : Dom_svg.element Js.t Js.readonly_prop
       method nextSibling : Dom.node Js.t Js.opt Js.prop
       method nodeName : Js.js_string Js.t Js.readonly_prop
@@ -1239,7 +1294,12 @@
       method insertBefore :
         Dom.node Js.t -> Dom.node Js.t Js.opt -> Dom.node Js.t Js.meth
       method lastChild : Dom.node Js.t Js.opt Js.prop
+      method lookupNamespaceURI :
+        Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method lookupPrefix :
+        Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
       method media : Js.js_string Js.t Js.prop
+      method namespaceURI : Js.js_string Js.t Js.opt Js.prop
       method nextSibling : Dom.node Js.t Js.opt Js.prop
       method nodeName : Js.js_string Js.t Js.readonly_prop
       method nodeType : Dom.nodeType Js.readonly_prop
@@ -1519,6 +1579,11 @@
       method insertBefore :
         Dom.node Js.t -> Dom.node Js.t Js.opt -> Dom.node Js.t Js.meth
       method lastChild : Dom.node Js.t Js.opt Js.prop
+      method lookupNamespaceURI :
+        Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method lookupPrefix :
+        Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method namespaceURI : Js.js_string Js.t Js.opt Js.prop
       method nearestViewportElement : Dom_svg.element Js.t Js.readonly_prop
       method nextSibling : Dom.node Js.t Js.opt Js.prop
       method nodeName : Js.js_string Js.t Js.readonly_prop
@@ -1596,6 +1661,11 @@
       method insertBefore :
         Dom.node Js.t -> Dom.node Js.t Js.opt -> Dom.node Js.t Js.meth
       method lastChild : Dom.node Js.t Js.opt Js.prop
+      method lookupNamespaceURI :
+        Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method lookupPrefix :
+        Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method namespaceURI : Js.js_string Js.t Js.opt Js.prop
       method nearestViewportElement : Dom_svg.element Js.t Js.readonly_prop
       method nextSibling : Dom.node Js.t Js.opt Js.prop
       method nodeName : Js.js_string Js.t Js.readonly_prop
@@ -1676,6 +1746,11 @@
       method insertBefore :
         Dom.node Js.t -> Dom.node Js.t Js.opt -> Dom.node Js.t Js.meth
       method lastChild : Dom.node Js.t Js.opt Js.prop
+      method lookupNamespaceURI :
+        Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method lookupPrefix :
+        Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method namespaceURI : Js.js_string Js.t Js.opt Js.prop
       method nearestViewportElement : Dom_svg.element Js.t Js.readonly_prop
       method nextSibling : Dom.node Js.t Js.opt Js.prop
       method nodeName : Js.js_string Js.t Js.readonly_prop
@@ -1752,6 +1827,11 @@
       method insertBefore :
         Dom.node Js.t -> Dom.node Js.t Js.opt -> Dom.node Js.t Js.meth
       method lastChild : Dom.node Js.t Js.opt Js.prop
+      method lookupNamespaceURI :
+        Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method lookupPrefix :
+        Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method namespaceURI : Js.js_string Js.t Js.opt Js.prop
       method nearestViewportElement : Dom_svg.element Js.t Js.readonly_prop
       method nextSibling : Dom.node Js.t Js.opt Js.prop
       method nodeName : Js.js_string Js.t Js.readonly_prop
@@ -1826,6 +1906,11 @@
       method insertBefore :
         Dom.node Js.t -> Dom.node Js.t Js.opt -> Dom.node Js.t Js.meth
       method lastChild : Dom.node Js.t Js.opt Js.prop
+      method lookupNamespaceURI :
+        Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method lookupPrefix :
+        Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method namespaceURI : Js.js_string Js.t Js.opt Js.prop
       method nearestViewportElement : element Js.t Js.readonly_prop
       method nextSibling : Dom.node Js.t Js.opt Js.prop
       method nodeName : Js.js_string Js.t Js.readonly_prop
@@ -1962,6 +2047,11 @@
       method insertBefore :
         Dom.node Js.t -> Dom.node Js.t Js.opt -> Dom.node Js.t Js.meth
       method lastChild : Dom.node Js.t Js.opt Js.prop
+      method lookupNamespaceURI :
+        Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method lookupPrefix :
+        Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method namespaceURI : Js.js_string Js.t Js.opt Js.prop
       method nearestViewportElement : element Js.t Js.readonly_prop
       method nextSibling : Dom.node Js.t Js.opt Js.prop
       method nodeName : Js.js_string Js.t Js.readonly_prop
@@ -2036,6 +2126,11 @@
       method insertBefore :
         Dom.node Js.t -> Dom.node Js.t Js.opt -> Dom.node Js.t Js.meth
       method lastChild : Dom.node Js.t Js.opt Js.prop
+      method lookupNamespaceURI :
+        Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method lookupPrefix :
+        Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method namespaceURI : Js.js_string Js.t Js.opt Js.prop
       method nearestViewportElement : element Js.t Js.readonly_prop
       method nextSibling : Dom.node Js.t Js.opt Js.prop
       method nodeName : Js.js_string Js.t Js.readonly_prop
@@ -2114,6 +2209,11 @@
       method lastChild : Dom.node Js.t Js.opt Js.prop
       method lengthAdjust :
         Dom_svg.lengthAdjust Dom_svg.animated Js.t Js.readonly_prop
+      method lookupNamespaceURI :
+        Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method lookupPrefix :
+        Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method namespaceURI : Js.js_string Js.t Js.opt Js.prop
       method nextSibling : Dom.node Js.t Js.opt Js.prop
       method nodeName : Js.js_string Js.t Js.readonly_prop
       method nodeType : Dom.nodeType Js.readonly_prop
@@ -2247,6 +2347,11 @@
       method lastChild : Dom.node Js.t Js.opt Js.prop
       method lengthAdjust :
         Dom_svg.lengthAdjust Dom_svg.animated Js.t Js.readonly_prop
+      method lookupNamespaceURI :
+        Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method lookupPrefix :
+        Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method namespaceURI : Js.js_string Js.t Js.opt Js.prop
       method nextSibling : Dom.node Js.t Js.opt Js.prop
       method nodeName : Js.js_string Js.t Js.readonly_prop
       method nodeType : Dom.nodeType Js.readonly_prop
@@ -2388,6 +2493,11 @@
       method lastChild : Dom.node Js.t Js.opt Js.prop
       method lengthAdjust :
         Dom_svg.lengthAdjust Dom_svg.animated Js.t Js.readonly_prop
+      method lookupNamespaceURI :
+        Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method lookupPrefix :
+        Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method namespaceURI : Js.js_string Js.t Js.opt Js.prop
       method nearestViewportElement : element Js.t Js.readonly_prop
       method nextSibling : Dom.node Js.t Js.opt Js.prop
       method nodeName : Js.js_string Js.t Js.readonly_prop
@@ -2528,6 +2638,11 @@
       method lastChild : Dom.node Js.t Js.opt Js.prop
       method lengthAdjust :
         Dom_svg.lengthAdjust Dom_svg.animated Js.t Js.readonly_prop
+      method lookupNamespaceURI :
+        Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method lookupPrefix :
+        Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method namespaceURI : Js.js_string Js.t Js.opt Js.prop
       method nextSibling : Dom.node Js.t Js.opt Js.prop
       method nodeName : Js.js_string Js.t Js.readonly_prop
       method nodeType : Dom.nodeType Js.readonly_prop
@@ -2665,7 +2780,12 @@
       method lastChild : Dom.node Js.t Js.opt Js.prop
       method lengthAdjust :
         Dom_svg.lengthAdjust Dom_svg.animated Js.t Js.readonly_prop
+      method lookupNamespaceURI :
+        Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method lookupPrefix :
+        Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
       method method_ : Dom_svg.textPathElementMethod Js.readonly_prop
+      method namespaceURI : Js.js_string Js.t Js.opt Js.prop
       method nextSibling : Dom.node Js.t Js.opt Js.prop
       method nodeName : Js.js_string Js.t Js.readonly_prop
       method nodeType : Dom.nodeType Js.readonly_prop
@@ -2804,6 +2924,11 @@
       method lastChild : Dom.node Js.t Js.opt Js.prop
       method lengthAdjust :
         Dom_svg.lengthAdjust Dom_svg.animated Js.t Js.readonly_prop
+      method lookupNamespaceURI :
+        Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method lookupPrefix :
+        Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method namespaceURI : Js.js_string Js.t Js.opt Js.prop
       method nextSibling : Dom.node Js.t Js.opt Js.prop
       method nodeName : Js.js_string Js.t Js.readonly_prop
       method nodeType : Dom.nodeType Js.readonly_prop
@@ -2932,6 +3057,11 @@
       method insertBefore :
         Dom.node Js.t -> Dom.node Js.t Js.opt -> Dom.node Js.t Js.meth
       method lastChild : Dom.node Js.t Js.opt Js.prop
+      method lookupNamespaceURI :
+        Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method lookupPrefix :
+        Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method namespaceURI : Js.js_string Js.t Js.opt Js.prop
       method nextSibling : Dom.node Js.t Js.opt Js.prop
       method nodeName : Js.js_string Js.t Js.readonly_prop
       method nodeType : Dom.nodeType Js.readonly_prop
@@ -2995,6 +3125,11 @@
       method insertBefore :
         Dom.node Js.t -> Dom.node Js.t Js.opt -> Dom.node Js.t Js.meth
       method lastChild : Dom.node Js.t Js.opt Js.prop
+      method lookupNamespaceURI :
+        Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method lookupPrefix :
+        Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method namespaceURI : Js.js_string Js.t Js.opt Js.prop
       method nextSibling : Dom.node Js.t Js.opt Js.prop
       method nodeName : Js.js_string Js.t Js.readonly_prop
       method nodeType : Dom.nodeType Js.readonly_prop
@@ -3057,6 +3192,11 @@
       method insertBefore :
         Dom.node Js.t -> Dom.node Js.t Js.opt -> Dom.node Js.t Js.meth
       method lastChild : Dom.node Js.t Js.opt Js.prop
+      method lookupNamespaceURI :
+        Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method lookupPrefix :
+        Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method namespaceURI : Js.js_string Js.t Js.opt Js.prop
       method nextSibling : Dom.node Js.t Js.opt Js.prop
       method nodeName : Js.js_string Js.t Js.readonly_prop
       method nodeType : Dom.nodeType Js.readonly_prop
@@ -3127,6 +3267,11 @@
       method insertBefore :
         Dom.node Js.t -> Dom.node Js.t Js.opt -> Dom.node Js.t Js.meth
       method lastChild : Dom.node Js.t Js.opt Js.prop
+      method lookupNamespaceURI :
+        Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method lookupPrefix :
+        Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method namespaceURI : Js.js_string Js.t Js.opt Js.prop
       method nextSibling : Dom.node Js.t Js.opt Js.prop
       method nodeName : Js.js_string Js.t Js.readonly_prop
       method nodeType : Dom.nodeType Js.readonly_prop
@@ -3187,6 +3332,11 @@
       method insertBefore :
         Dom.node Js.t -> Dom.node Js.t Js.opt -> Dom.node Js.t Js.meth
       method lastChild : Dom.node Js.t Js.opt Js.prop
+      method lookupNamespaceURI :
+        Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method lookupPrefix :
+        Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method namespaceURI : Js.js_string Js.t Js.opt Js.prop
       method nextSibling : Dom.node Js.t Js.opt Js.prop
       method nodeName : Js.js_string Js.t Js.readonly_prop
       method nodeType : Dom.nodeType Js.readonly_prop
@@ -3250,6 +3400,11 @@
       method insertBefore :
         Dom.node Js.t -> Dom.node Js.t Js.opt -> Dom.node Js.t Js.meth
       method lastChild : Dom.node Js.t Js.opt Js.prop
+      method lookupNamespaceURI :
+        Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method lookupPrefix :
+        Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method namespaceURI : Js.js_string Js.t Js.opt Js.prop
       method nextSibling : Dom.node Js.t Js.opt Js.prop
       method nodeName : Js.js_string Js.t Js.readonly_prop
       method nodeType : Dom.nodeType Js.readonly_prop
@@ -3328,6 +3483,11 @@
       method insertBefore :
         Dom.node Js.t -> Dom.node Js.t Js.opt -> Dom.node Js.t Js.meth
       method lastChild : Dom.node Js.t Js.opt Js.prop
+      method lookupNamespaceURI :
+        Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method lookupPrefix :
+        Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method namespaceURI : Js.js_string Js.t Js.opt Js.prop
       method nearestViewportElement : element Js.t Js.readonly_prop
       method nextSibling : Dom.node Js.t Js.opt Js.prop
       method nodeName : Js.js_string Js.t Js.readonly_prop
@@ -3396,6 +3556,11 @@
       method insertBefore :
         Dom.node Js.t -> Dom.node Js.t Js.opt -> Dom.node Js.t Js.meth
       method lastChild : Dom.node Js.t Js.opt Js.prop
+      method lookupNamespaceURI :
+        Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method lookupPrefix :
+        Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method namespaceURI : Js.js_string Js.t Js.opt Js.prop
       method nextSibling : Dom.node Js.t Js.opt Js.prop
       method nodeName : Js.js_string Js.t Js.readonly_prop
       method nodeType : Dom.nodeType Js.readonly_prop
@@ -3467,6 +3632,11 @@
       method insertBefore :
         Dom.node Js.t -> Dom.node Js.t Js.opt -> Dom.node Js.t Js.meth
       method lastChild : Dom.node Js.t Js.opt Js.prop
+      method lookupNamespaceURI :
+        Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method lookupPrefix :
+        Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method namespaceURI : Js.js_string Js.t Js.opt Js.prop
       method nextSibling : Dom.node Js.t Js.opt Js.prop
       method nodeName : Js.js_string Js.t Js.readonly_prop
       method nodeType : Dom.nodeType Js.readonly_prop
@@ -3533,6 +3703,11 @@
       method insertBefore :
         Dom.node Js.t -> Dom.node Js.t Js.opt -> Dom.node Js.t Js.meth
       method lastChild : Dom.node Js.t Js.opt Js.prop
+      method lookupNamespaceURI :
+        Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method lookupPrefix :
+        Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method namespaceURI : Js.js_string Js.t Js.opt Js.prop
       method nextSibling : Dom.node Js.t Js.opt Js.prop
       method nodeName : Js.js_string Js.t Js.readonly_prop
       method nodeType : Dom.nodeType Js.readonly_prop
@@ -3603,6 +3778,11 @@
       method insertBefore :
         Dom.node Js.t -> Dom.node Js.t Js.opt -> Dom.node Js.t Js.meth
       method lastChild : Dom.node Js.t Js.opt Js.prop
+      method lookupNamespaceURI :
+        Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method lookupPrefix :
+        Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method namespaceURI : Js.js_string Js.t Js.opt Js.prop
       method nearestViewportElement : element Js.t Js.readonly_prop
       method nextSibling : Dom.node Js.t Js.opt Js.prop
       method nodeName : Js.js_string Js.t Js.readonly_prop
@@ -3669,6 +3849,11 @@
       method insertBefore :
         Dom.node Js.t -> Dom.node Js.t Js.opt -> Dom.node Js.t Js.meth
       method lastChild : Dom.node Js.t Js.opt Js.prop
+      method lookupNamespaceURI :
+        Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method lookupPrefix :
+        Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method namespaceURI : Js.js_string Js.t Js.opt Js.prop
       method nextSibling : Dom.node Js.t Js.opt Js.prop
       method nodeName : Js.js_string Js.t Js.readonly_prop
       method nodeType : Dom.nodeType Js.readonly_prop
@@ -3732,6 +3917,11 @@
       method insertBefore :
         Dom.node Js.t -> Dom.node Js.t Js.opt -> Dom.node Js.t Js.meth
       method lastChild : Dom.node Js.t Js.opt Js.prop
+      method lookupNamespaceURI :
+        Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method lookupPrefix :
+        Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method namespaceURI : Js.js_string Js.t Js.opt Js.prop
       method nextSibling : Dom.node Js.t Js.opt Js.prop
       method nodeName : Js.js_string Js.t Js.readonly_prop
       method nodeType : Dom.nodeType Js.readonly_prop
@@ -3794,6 +3984,11 @@
       method insertBefore :
         Dom.node Js.t -> Dom.node Js.t Js.opt -> Dom.node Js.t Js.meth
       method lastChild : Dom.node Js.t Js.opt Js.prop
+      method lookupNamespaceURI :
+        Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method lookupPrefix :
+        Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method namespaceURI : Js.js_string Js.t Js.opt Js.prop
       method nextSibling : Dom.node Js.t Js.opt Js.prop
       method nodeName : Js.js_string Js.t Js.readonly_prop
       method nodeType : Dom.nodeType Js.readonly_prop
@@ -3860,6 +4055,11 @@
       method insertBefore :
         Dom.node Js.t -> Dom.node Js.t Js.opt -> Dom.node Js.t Js.meth
       method lastChild : Dom.node Js.t Js.opt Js.prop
+      method lookupNamespaceURI :
+        Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method lookupPrefix :
+        Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method namespaceURI : Js.js_string Js.t Js.opt Js.prop
       method nextSibling : Dom.node Js.t Js.opt Js.prop
       method nodeName : Js.js_string Js.t Js.readonly_prop
       method nodeType : Dom.nodeType Js.readonly_prop
@@ -3925,6 +4125,11 @@
       method insertBefore :
         Dom.node Js.t -> Dom.node Js.t Js.opt -> Dom.node Js.t Js.meth
       method lastChild : Dom.node Js.t Js.opt Js.prop
+      method lookupNamespaceURI :
+        Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method lookupPrefix :
+        Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method namespaceURI : Js.js_string Js.t Js.opt Js.prop
       method nextSibling : Dom.node Js.t Js.opt Js.prop
       method nodeName : Js.js_string Js.t Js.readonly_prop
       method nodeType : Dom.nodeType Js.readonly_prop
@@ -3987,6 +4192,11 @@
       method insertBefore :
         Dom.node Js.t -> Dom.node Js.t Js.opt -> Dom.node Js.t Js.meth
       method lastChild : Dom.node Js.t Js.opt Js.prop
+      method lookupNamespaceURI :
+        Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method lookupPrefix :
+        Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method namespaceURI : Js.js_string Js.t Js.opt Js.prop
       method nextSibling : Dom.node Js.t Js.opt Js.prop
       method nodeName : Js.js_string Js.t Js.readonly_prop
       method nodeType : Dom.nodeType Js.readonly_prop
@@ -4049,6 +4259,11 @@
       method insertBefore :
         Dom.node Js.t -> Dom.node Js.t Js.opt -> Dom.node Js.t Js.meth
       method lastChild : Dom.node Js.t Js.opt Js.prop
+      method lookupNamespaceURI :
+        Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method lookupPrefix :
+        Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method namespaceURI : Js.js_string Js.t Js.opt Js.prop
       method nextSibling : Dom.node Js.t Js.opt Js.prop
       method nodeName : Js.js_string Js.t Js.readonly_prop
       method nodeType : Dom.nodeType Js.readonly_prop
@@ -4106,6 +4321,11 @@
       method insertBefore :
         Dom.node Js.t -> Dom.node Js.t Js.opt -> Dom.node Js.t Js.meth
       method lastChild : Dom.node Js.t Js.opt Js.prop
+      method lookupNamespaceURI :
+        Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method lookupPrefix :
+        Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method namespaceURI : Js.js_string Js.t Js.opt Js.prop
       method nextSibling : Dom.node Js.t Js.opt Js.prop
       method nodeName : Js.js_string Js.t Js.readonly_prop
       method nodeType : Dom.nodeType Js.readonly_prop
@@ -4178,6 +4398,11 @@
       method insertBefore :
         Dom.node Js.t -> Dom.node Js.t Js.opt -> Dom.node Js.t Js.meth
       method lastChild : Dom.node Js.t Js.opt Js.prop
+      method lookupNamespaceURI :
+        Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method lookupPrefix :
+        Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method namespaceURI : Js.js_string Js.t Js.opt Js.prop
       method nearestViewportElement : element Js.t Js.readonly_prop
       method nextSibling : Dom.node Js.t Js.opt Js.prop
       method nodeName : Js.js_string Js.t Js.readonly_prop

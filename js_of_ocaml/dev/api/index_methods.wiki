@@ -814,10 +814,10 @@
 |@@class="odocwiki_index"@ @@<<a_api text="every"| method Js.js_array#every >> ~[<<a_api | module Js >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="exec"| method Js.regExp#exec >> ~[<<a_api | module Js >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="execCommand"| method Dom_html.document#execCommand >> ~[<<a_api | module Dom_html >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="extactContents"| method Dom_html.range#extactContents >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="extend"| method Dom_html.selection#extend >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="extensions"| method WebSockets.webSocket#extensions >> ~[<<a_api | module WebSockets >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="externalResourcesRequired"| method Dom_svg.externalResourcesRequired#externalResourcesRequired >> ~[<<a_api | module Dom_svg >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="extractContents"| method Dom_html.range#extractContents >> ~[<<a_api | module Dom_html >>~]||
 |@@ @style="tet-align: left;"@@\\F|
 |@@class="odocwiki_index"@ @@<<a_api text="f"| method Dom_svg.matrix#f >> ~[<<a_api | module Dom_svg >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="failIfMajorPerformanceCaveat"| method WebGL.contextAttributes#failIfMajorPerformanceCaveat >> ~[<<a_api | module WebGL >>~]||
@@ -1162,6 +1162,8 @@
 |@@class="odocwiki_index"@ @@<<a_api text="log_8"| method Firebug.console#log_8 >> ~[<<a_api | module Firebug >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="longDesc"| method Dom_html.iFrameElement#longDesc >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="longDesc"| method Dom_html.frameElement#longDesc >> ~[<<a_api | module Dom_html >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="lookupNamespaceURI"| method Dom.node#lookupNamespaceURI >> ~[<<a_api | module Dom >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="lookupPrefix"| method Dom.node#lookupPrefix >> ~[<<a_api | module Dom >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="loop"| method Dom_html.mediaElement#loop >> ~[<<a_api | module Dom_html >>~]||
 |@@ @style="tet-align: left;"@@\\M|
 |@@class="odocwiki_index"@ @@<<a_api text="map"| method Js.js_array#map >> ~[<<a_api | module Js >>~]||
@@ -1217,6 +1219,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="name"| method Dom_html.metaElement#name >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="name"| method Dom.attr#name >> ~[<<a_api | module Dom >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="namedItem"| method Dom_html.collection#namedItem >> ~[<<a_api | module Dom_html >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="namespaceURI"| method Dom.node#namespaceURI >> ~[<<a_api | module Dom >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="naturalHeight"| method Dom_html.imageElement#naturalHeight >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="naturalWidth"| method Dom_html.imageElement#naturalWidth >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="navigator"| method Dom_html.window#navigator >> ~[<<a_api | module Dom_html >>~]||
