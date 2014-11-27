@@ -1,1 +1,0 @@
-<<code language="ocaml" | Ocsigen_common_server.S >>
