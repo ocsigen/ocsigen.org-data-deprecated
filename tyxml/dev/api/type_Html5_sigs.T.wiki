@@ -788,8 +788,13 @@
   val a_reversed :
     [< `Reversed ] Html5_sigs.T.wrap -> [> `Reversed ] Html5_sigs.T.attrib
   val a_sandbox :
-    [< `AllowForms | `AllowSameOrigin | `AllowScript ] list Html5_sigs.T.wrap ->
-    [> `Sandbox ] Html5_sigs.T.attrib
+    [< `AllowForms
+     | `AllowPointerLock
+     | `AllowPopups
+     | `AllowSameOrigin
+     | `AllowScript
+     | `AllowTopNavigation ]
+    list Html5_sigs.T.wrap -> [> `Sandbox ] Html5_sigs.T.attrib
   val a_spellcheck :
     bool Html5_sigs.T.wrap -> [> `Spellcheck ] Html5_sigs.T.attrib
   val a_scoped :

@@ -92,8 +92,13 @@
   val a_required : [< `Required ] wrap -> [> `Required ] attrib
   val a_reversed : [< `Reversed ] wrap -> [> `Reversed ] attrib
   val a_sandbox :
-    [< `AllowForms | `AllowSameOrigin | `AllowScript ] list wrap ->
-    [> `Sandbox ] attrib
+    [< `AllowForms
+     | `AllowPointerLock
+     | `AllowPopups
+     | `AllowSameOrigin
+     | `AllowScript
+     | `AllowTopNavigation ]
+    list wrap -> [> `Sandbox ] attrib
   val a_spellcheck : bool wrap -> [> `Spellcheck ] attrib
   val a_scoped : [< `Scoped ] wrap -> [> `Scoped ] attrib
   val a_seamless : [< `Seamless ] wrap -> [> `Seamless ] attrib
