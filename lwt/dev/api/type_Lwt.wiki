@@ -79,6 +79,15 @@
   val on_failure : 'a Lwt.t -> (exn -> unit) -> unit
   val on_termination : 'a Lwt.t -> (unit -> unit) -> unit
   val on_any : 'a Lwt.t -> ('a -> unit) -> (exn -> unit) -> unit
+  module Infix :
+    sig
+      val ( >>= ) : 'a Lwt.t -> ('a -> 'b Lwt.t) -> 'b Lwt.t
+      val ( =<< ) : ('a -> 'b Lwt.t) -> 'a Lwt.t -> 'b Lwt.t
+      val ( >|= ) : 'a Lwt.t -> ('a -> 'b) -> 'b Lwt.t
+      val ( =|< ) : ('a -> 'b) -> 'a Lwt.t -> 'b Lwt.t
+      val ( <?> ) : 'a Lwt.t -> 'a Lwt.t -> 'a Lwt.t
+      val ( <&> ) : unit Lwt.t -> unit Lwt.t -> unit Lwt.t
+    end
   val poll : 'a Lwt.t -> 'a option
   val apply : ('a -> 'b Lwt.t) -> 'a -> 'b Lwt.t
   val backtrace_bind :

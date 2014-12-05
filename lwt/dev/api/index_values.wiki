@@ -1,19 +1,37 @@
 =Index of values=
 
 |@@ @style="tet-align: left;"@@\\|
+|@@class="odocwiki_index"@ @@<<a_api text="(<&>)"| value Lwt.Infix.(<&>) >> ~[<<a_api | module Lwt.Infix >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|t ~<~&~> t~'>> is the same as <<span class="odocwiki_inlinecode"|join ~[t~; t~'~]>>
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api text="(<&>)"| value Lwt.(<&>) >> ~[<<a_api | module Lwt >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|t ~<~&~> t~'>> is the same as <<span class="odocwiki_inlinecode"|join ~[t~; t~'~]>>
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="(<?>)"| value Lwt.Infix.(<?>) >> ~[<<a_api | module Lwt.Infix >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|t ~<~?~> t~'>> is the same as <<span class="odocwiki_inlinecode"|choose ~[t~; t~'~]>>
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="(<?>)"| value Lwt.(<?>) >> ~[<<a_api | module Lwt >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|t ~<~?~> t~'>> is the same as <<span class="odocwiki_inlinecode"|choose ~[t~; t~'~]>>
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api text="(=<<)"| value Lwt.Infix.(=<<) >> ~[<<a_api | module Lwt.Infix >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|f ~=~<~< t>> is <<span class="odocwiki_inlinecode"|t ~>~>~= f>>
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api text="(=<<)"| value Lwt.(=<<) >> ~[<<a_api | module Lwt >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|f ~=~<~< t>> is <<span class="odocwiki_inlinecode"|t ~>~>~= f>>
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="(=|<)"| value Lwt.Infix.(=|<) >> ~[<<a_api | module Lwt.Infix >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|f ~=~|~< m>> is <<span class="odocwiki_inlinecode"|map f m>>
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="(=|<)"| value Lwt.(=|<) >> ~[<<a_api | module Lwt >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|f ~=~|~< m>> is <<span class="odocwiki_inlinecode"|map f m>>
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api text="(>>=)"| value Lwt.Infix.(>>=) >> ~[<<a_api | module Lwt.Infix >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|t ~>~>~= f>> is an alternative notation for <<span class="odocwiki_inlinecode"|bind t f>>~.
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api text="(>>=)"| value Lwt.(>>=) >> ~[<<a_api | module Lwt >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|t ~>~>~= f>> is an alternative notation for <<span class="odocwiki_inlinecode"|bind t f>>~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="(>|=)"| value Lwt.Infix.(>|=) >> ~[<<a_api | module Lwt.Infix >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|m ~>~|~= f>> is <<span class="odocwiki_inlinecode"|map f m>>
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="(>|=)"| value Lwt.(>|=) >> ~[<<a_api | module Lwt >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|m ~>~|~= f>> is <<span class="odocwiki_inlinecode"|map f m>>

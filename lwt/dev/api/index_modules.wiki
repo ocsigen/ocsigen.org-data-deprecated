@@ -20,6 +20,10 @@
 |@@class="odocwiki_index"@ @@<<a_api text="Engine"| module Lwt_read_line.Engine >> ~[<<a_api | module Lwt_read_line >>~]|<<div class="odocwiki_info"|~Engine
 >>
 |
+|@@ @style="tet-align: left;"@@\\I|
+|@@class="odocwiki_index"@ @@<<a_api text="Infix"| module Lwt.Infix >> ~[<<a_api | module Lwt >>~]|<<div class="odocwiki_info"|~Infix operators~.
+>>
+|
 |@@ @style="tet-align: left;"@@\\L|
 |@@class="odocwiki_index"@ @@<<a_api text="LE"| module Lwt_io.LE >> ~[<<a_api | module Lwt_io >>~]|<<div class="odocwiki_info"|~Reading~/writing of numbers in little~-endian
 >>

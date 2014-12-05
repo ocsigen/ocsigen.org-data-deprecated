@@ -376,3 +376,5 @@
       or <<span class="odocwiki_inlinecode"|g>> raises an exception it is given to
       <<a_api | val Lwt.async_exception_hook >>~.
 >>
+<<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module>> <<a_api text="Infix" | module Lwt.Infix >> <<span class="ocsforge_color_delimiter"|~:>> <<span class="ocsforge_color_keyword"|sig>><<a_api text=".." | module Lwt.Infix >><<span class="ocsforge_color_keyword"|end>>>><<div class="odocwiki_info"|~Infix operators~.
+>>
