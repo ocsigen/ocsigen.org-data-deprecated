@@ -864,8 +864,8 @@
         [< `Seamless ] Html5_sigs.T.wrap ->
         [> `Seamless ] Html5_sigs.T.attrib
       val a_sizes :
-        Html5_types.numbers Html5_sigs.T.wrap ->
-        [> `Sizes ] Html5_sigs.T.attrib
+        [< `Any | `Sizes of (Html5_types.number * Html5_types.number) list ]
+        Html5_sigs.T.wrap -> [> `Sizes ] Html5_sigs.T.attrib
       val a_span :
         Html5_types.number Html5_sigs.T.wrap ->
         [> `Span ] Html5_sigs.T.attrib
@@ -3437,7 +3437,10 @@
                 val a_spellcheck : bool wrap -> [> `Spellcheck ] attrib
                 val a_scoped : [< `Scoped ] wrap -> [> `Scoped ] attrib
                 val a_seamless : [< `Seamless ] wrap -> [> `Seamless ] attrib
-                val a_sizes : Html5_types.numbers wrap -> [> `Sizes ] attrib
+                val a_sizes :
+                  [< `Any
+                   | `Sizes of (Html5_types.number * Html5_types.number) list ]
+                  wrap -> [> `Sizes ] attrib
                 val a_span : Html5_types.number wrap -> [> `Span ] attrib
                 val a_srclang :
                   Html5_types.nmtoken wrap -> [> `XML_lang ] attrib

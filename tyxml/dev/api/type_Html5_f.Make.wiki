@@ -858,7 +858,9 @@
       val a_spellcheck : bool wrap -> [> `Spellcheck ] attrib
       val a_scoped : [< `Scoped ] wrap -> [> `Scoped ] attrib
       val a_seamless : [< `Seamless ] wrap -> [> `Seamless ] attrib
-      val a_sizes : Html5_types.numbers wrap -> [> `Sizes ] attrib
+      val a_sizes :
+        [< `Any | `Sizes of (Html5_types.number * Html5_types.number) list ]
+        wrap -> [> `Sizes ] attrib
       val a_span : Html5_types.number wrap -> [> `Span ] attrib
       val a_srclang : Html5_types.nmtoken wrap -> [> `XML_lang ] attrib
       val a_start : Html5_types.number wrap -> [> `Start ] attrib

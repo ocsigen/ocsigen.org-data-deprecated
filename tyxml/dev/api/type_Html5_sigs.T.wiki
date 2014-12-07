@@ -802,7 +802,8 @@
   val a_seamless :
     [< `Seamless ] Html5_sigs.T.wrap -> [> `Seamless ] Html5_sigs.T.attrib
   val a_sizes :
-    Html5_types.numbers Html5_sigs.T.wrap -> [> `Sizes ] Html5_sigs.T.attrib
+    [< `Any | `Sizes of (Html5_types.number * Html5_types.number) list ]
+    Html5_sigs.T.wrap -> [> `Sizes ] Html5_sigs.T.attrib
   val a_span :
     Html5_types.number Html5_sigs.T.wrap -> [> `Span ] Html5_sigs.T.attrib
   val a_srclang :
