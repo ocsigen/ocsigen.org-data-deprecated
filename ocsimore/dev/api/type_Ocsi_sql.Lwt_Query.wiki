@@ -20,11 +20,16 @@
         ?unix_domain_socket_dir:string -> unit -> 'a t monad
       val close : 'a t -> unit monad
       val ping : 'a t -> unit monad
+      val alive : 'a t -> bool monad
       val begin_work :
         ?isolation:isolation ->
         ?access:access -> ?deferrable:bool -> 'a t -> unit monad
       val commit : 'a t -> unit monad
       val rollback : 'a t -> unit monad
+      val transact :
+        'a t ->
+        ?isolation:isolation ->
+        ?access:access -> ?deferrable:bool -> ('a t -> 'b monad) -> 'b monad
       val serial : 'a t -> string -> int64 monad
       val serial4 : 'a t -> string -> int32 monad
       val serial8 : 'a t -> string -> int64 monad
@@ -32,6 +37,7 @@
       val verbose : int ref
       val set_private_data : 'a t -> 'a -> unit
       val private_data : 'a t -> 'a
+      val uuid : 'a t -> string
       type pa_pg_data = (string, bool) Hashtbl.t
       type oid = int32
       type param = string option
@@ -55,6 +61,8 @@
         params:param list -> (row -> unit monad) -> unit monad
       val close_statement : 'a t -> ?name:string -> unit -> unit monad
       val close_portal : 'a t -> ?portal:string -> unit -> unit monad
+      val inject : 'a t -> ?name:string -> string -> row list monad
+      val alter : 'a t -> ?name:string -> string -> unit monad
       type row_description = result_description list
       and result_description = {
         name : string;
@@ -79,11 +87,12 @@
       type bytea = string
       type point = float * float
       type hstore = (string * string option) list
-      type bool_array = bool array
-      type int32_array = int32 array
-      type int64_array = int64 array
-      type string_array = string array
-      type float_array = float array
+      type numeric = string
+      type bool_array = bool option list
+      type int32_array = int32 option list
+      type int64_array = int64 option list
+      type string_array = string option list
+      type float_array = float option list
       val string_of_oid : oid -> string
       val string_of_bool : bool -> string
       val string_of_int : int -> string
@@ -93,6 +102,7 @@
       val string_of_float : float -> string
       val string_of_point : point -> string
       val string_of_hstore : hstore -> string
+      val string_of_numeric : numeric -> string
       val string_of_inet : inet -> string
       val string_of_timestamp : CalendarLib.Calendar.t -> string
       val string_of_timestamptz : timestamptz -> string
@@ -116,6 +126,7 @@
       val float_of_string : string -> float
       val point_of_string : string -> point
       val hstore_of_string : string -> hstore
+      val numeric_of_string : string -> numeric
       val inet_of_string : string -> inet
       val timestamp_of_string : string -> CalendarLib.Calendar.t
       val timestamptz_of_string : string -> timestamptz
