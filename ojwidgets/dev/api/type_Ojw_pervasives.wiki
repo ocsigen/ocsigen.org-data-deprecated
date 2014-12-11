@@ -81,6 +81,7 @@
       val sort : ('a -> 'a -> int) -> 'a list -> 'a list
       val stable_sort : ('a -> 'a -> int) -> 'a list -> 'a list
       val fast_sort : ('a -> 'a -> int) -> 'a list -> 'a list
+      val sort_uniq : ('a -> 'a -> int) -> 'a list -> 'a list
       val merge : ('a -> 'a -> int) -> 'a list -> 'a list -> 'a list
       val find_remove : ('a -> bool) -> 'a list -> 'a * 'a list
       val assoc_remove : 'a -> ('a * 'b) list -> 'b * ('a * 'b) list

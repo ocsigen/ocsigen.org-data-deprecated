@@ -1,197 +1,196 @@
-<<code language="ocaml" | functor (D : Ojw_dom_sigs.T) ->
-  functor (Content : Ojw_dom_sigs.T) ->
-    sig
-      module D :
-        sig
-          type 'a elt = 'a D.elt
-          type element = D.element
-          val to_dom_elt : element elt -> Dom_html.element Js.t
-          val of_dom_elt : Dom_html.element Js.t -> element elt
-        end
-      module Content :
-        sig
-          type 'a elt = 'a Content.elt
-          type element = Content.element
-          val to_dom_elt : element elt -> Dom_html.element Js.t
-          val of_dom_elt : Dom_html.element Js.t -> element elt
-        end
-      type by = [ `Click | `Explicit | `Key of int ]
-      class type traversable_detail_event = object method by : by Js.meth end
-      class type traversable_event =
-        [traversable_detail_event] Ojw_event.customEvent
-      module Event :
-        sig
-          type event = traversable_event Js.t Dom.Event.typ
-          val actives : event
-        end
-      val active :
-        ?use_capture:bool ->
-        #Dom_html.eventTarget Js.t -> traversable_event Js.t Lwt.t
-      val actives :
-        ?cancel_handler:bool ->
-        ?use_capture:bool ->
-        D.element D.elt ->
-        (traversable_event Js.t -> unit Lwt.t -> unit Lwt.t) -> unit Lwt.t
-      class type traversable =
-        object ('a)
-          method appendChild : Dom.node Js.t -> Dom.node Js.t Js.meth
-          method attributes : Dom.attr Dom.namedNodeMap Js.t Js.readonly_prop
-          method childNodes : Dom.node Dom.nodeList Js.t Js.prop
-          method classList : Dom_html.tokenList Js.t Js.readonly_prop
-          method className : Js.js_string Js.t Js.prop
-          method clientHeight : int Js.readonly_prop
-          method clientLeft : int Js.readonly_prop
-          method clientTop : int Js.readonly_prop
-          method clientWidth : int Js.readonly_prop
-          method cloneNode : bool Js.t -> Dom.node Js.t Js.meth
-          method compareDocumentPosition :
-            Dom.node Js.t -> Dom.DocumentPosition.t Js.meth
-          method dir : Js.js_string Js.t Js.prop
-          method firstChild : Dom.node Js.t Js.opt Js.prop
-          method getActive : Content.element Content.elt Js.opt Js.meth
-          method getAttribute :
-            Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
-          method getAttributeNS :
-            Js.js_string Js.t ->
-            Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
-          method getAttributeNode :
-            Js.js_string Js.t -> Dom.attr Js.t Js.opt Js.meth
-          method getAttributeNodeNS :
-            Js.js_string Js.t ->
-            Js.js_string Js.t -> Dom.attr Js.t Js.opt Js.meth
-          method getBoundingClientRect : Dom_html.clientRect Js.t Js.meth
-          method getClientRects : Dom_html.clientRectList Js.t Js.meth
-          method getContainer : D.element D.elt Js.meth
-          method getElementsByTagName :
-            Js.js_string Js.t -> Dom.element Dom.nodeList Js.t Js.meth
-          method hasAttribute : Js.js_string Js.t -> bool Js.t Js.meth
-          method hasAttributeNS :
-            Js.js_string Js.t -> Js.js_string Js.t -> bool Js.t Js.meth
-          method hasChildNodes : bool Js.t Js.meth
-          method id : Js.js_string Js.t Js.prop
-          method innerHTML : Js.js_string Js.t Js.prop
-          method insertBefore :
-            Dom.node Js.t -> Dom.node Js.t Js.opt -> Dom.node Js.t Js.meth
-          method isTraversable : bool Js.meth
-          method lang : Js.js_string Js.t Js.prop
-          method lastChild : Dom.node Js.t Js.opt Js.prop
-          method lookupNamespaceURI :
-            Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
-          method lookupPrefix :
-            Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
-          method namespaceURI : Js.js_string Js.t Js.opt Js.prop
-          method next : unit Js.meth
-          method nextSibling : Dom.node Js.t Js.opt Js.prop
-          method nodeName : Js.js_string Js.t Js.readonly_prop
-          method nodeType : Dom.nodeType Js.readonly_prop
-          method nodeValue : Js.js_string Js.t Js.opt Js.readonly_prop
-          method offsetHeight : int Js.readonly_prop
-          method offsetLeft : int Js.readonly_prop
-          method offsetParent : Dom_html.element Js.t Js.opt Js.readonly_prop
-          method offsetTop : int Js.readonly_prop
-          method offsetWidth : int Js.readonly_prop
-          method onclick :
-            ('a Js.t, Dom_html.mouseEvent Js.t) Dom_html.event_listener
-            Js.writeonly_prop
-          method ondblclick :
-            ('a Js.t, Dom_html.mouseEvent Js.t) Dom_html.event_listener
-            Js.writeonly_prop
-          method ondrag :
-            ('a Js.t, Dom_html.dragEvent Js.t) Dom_html.event_listener
-            Js.writeonly_prop
-          method ondragend :
-            ('a Js.t, Dom_html.dragEvent Js.t) Dom_html.event_listener
-            Js.writeonly_prop
-          method ondragenter :
-            ('a Js.t, Dom_html.dragEvent Js.t) Dom_html.event_listener
-            Js.writeonly_prop
-          method ondragleave :
-            ('a Js.t, Dom_html.dragEvent Js.t) Dom_html.event_listener
-            Js.writeonly_prop
-          method ondragover :
-            ('a Js.t, Dom_html.dragEvent Js.t) Dom_html.event_listener
-            Js.writeonly_prop
-          method ondragstart :
-            ('a Js.t, Dom_html.dragEvent Js.t) Dom_html.event_listener
-            Js.writeonly_prop
-          method ondrop :
-            ('a Js.t, Dom_html.dragEvent Js.t) Dom_html.event_listener
-            Js.writeonly_prop
-          method onkeydown :
-            ('a Js.t, Dom_html.keyboardEvent Js.t) Dom_html.event_listener
-            Js.writeonly_prop
-          method onkeypress :
-            ('a Js.t, Dom_html.keyboardEvent Js.t) Dom_html.event_listener
-            Js.writeonly_prop
-          method onkeyup :
-            ('a Js.t, Dom_html.keyboardEvent Js.t) Dom_html.event_listener
-            Js.writeonly_prop
-          method onmousedown :
-            ('a Js.t, Dom_html.mouseEvent Js.t) Dom_html.event_listener
-            Js.writeonly_prop
-          method onmousemove :
-            ('a Js.t, Dom_html.mouseEvent Js.t) Dom_html.event_listener
-            Js.writeonly_prop
-          method onmouseout :
-            ('a Js.t, Dom_html.mouseEvent Js.t) Dom_html.event_listener
-            Js.writeonly_prop
-          method onmouseover :
-            ('a Js.t, Dom_html.mouseEvent Js.t) Dom_html.event_listener
-            Js.writeonly_prop
-          method onmouseup :
-            ('a Js.t, Dom_html.mouseEvent Js.t) Dom_html.event_listener
-            Js.writeonly_prop
-          method onscroll :
-            ('a Js.t, Dom_html.event Js.t) Dom_html.event_listener
-            Js.writeonly_prop
-          method outerHTML : Js.js_string Js.t Js.prop
-          method parentNode : Dom.node Js.t Js.opt Js.prop
-          method prev : unit Js.meth
-          method previousSibling : Dom.node Js.t Js.opt Js.prop
-          method querySelector :
-            Js.js_string Js.t -> Dom_html.element Js.t Js.opt Js.meth
-          method querySelectorAll :
-            Js.js_string Js.t -> Dom_html.element Dom.nodeList Js.t Js.meth
-          method removeAttribute : Js.js_string Js.t -> unit Js.meth
-          method removeAttributeNS :
-            Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
-          method removeAttributeNode : Dom.attr Js.t -> Dom.attr Js.t Js.meth
-          method removeChild : Dom.node Js.t -> Dom.node Js.t Js.meth
-          method replaceChild :
-            Dom.node Js.t -> Dom.node Js.t -> Dom.node Js.t Js.meth
-          method resetActive : unit Js.meth
-          method scrollHeight : int Js.prop
-          method scrollIntoView : bool Js.t -> unit Js.meth
-          method scrollLeft : int Js.prop
-          method scrollTop : int Js.prop
-          method scrollWidth : int Js.prop
-          method setActive : Content.element Content.elt -> unit Js.meth
-          method setAttribute :
-            Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
-          method setAttributeNS :
-            Js.js_string Js.t ->
-            Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
-          method setAttributeNode :
-            Dom.attr Js.t -> Dom.attr Js.t Js.opt Js.meth
-          method setAttributeNodeNS :
-            Dom.attr Js.t -> Dom.attr Js.t Js.opt Js.meth
-          method style : Dom_html.cssStyleDeclaration Js.t Js.prop
-          method t : Js.js_string Js.t Js.readonly_prop
-          method tagName : Js.js_string Js.t Js.readonly_prop
-          method textContent : Js.js_string Js.t Js.opt Js.prop
-          method title : Js.js_string Js.t Js.prop
-        end
-      module Style :
-        sig
-          val traversable_cls : string
-          val traversable_elt_cls : string
-          val selected_cls : string
-        end
-      val traversable :
-        ?enable_link:bool ->
-        ?focus:bool ->
-        ?is_traversable:(#traversable Js.t -> bool) ->
-        ?on_keydown:(Dom_html.keyboardEvent Js.t -> bool Lwt.t) ->
-        D.element D.elt -> D.element D.elt
-      val to_traversable : D.element D.elt -> traversable Js.t
-    end >>
+<<code language="ocaml" | functor (D : Ojw_dom_sigs.T) (Content : Ojw_dom_sigs.T) ->
+  sig
+    module D :
+      sig
+        type 'a elt = 'a D.elt
+        type element = D.element
+        val to_dom_elt : element elt -> Dom_html.element Js.t
+        val of_dom_elt : Dom_html.element Js.t -> element elt
+      end
+    module Content :
+      sig
+        type 'a elt = 'a Content.elt
+        type element = Content.element
+        val to_dom_elt : element elt -> Dom_html.element Js.t
+        val of_dom_elt : Dom_html.element Js.t -> element elt
+      end
+    type by = [ `Click | `Explicit | `Key of int ]
+    class type traversable_detail_event = object method by : by Js.meth end
+    class type traversable_event =
+      [traversable_detail_event] Ojw_event.customEvent
+    module Event :
+      sig
+        type event = traversable_event Js.t Dom.Event.typ
+        val actives : event
+      end
+    val active :
+      ?use_capture:bool ->
+      #Dom_html.eventTarget Js.t -> traversable_event Js.t Lwt.t
+    val actives :
+      ?cancel_handler:bool ->
+      ?use_capture:bool ->
+      D.element D.elt ->
+      (traversable_event Js.t -> unit Lwt.t -> unit Lwt.t) -> unit Lwt.t
+    class type traversable =
+      object ('a)
+        method appendChild : Dom.node Js.t -> Dom.node Js.t Js.meth
+        method attributes : Dom.attr Dom.namedNodeMap Js.t Js.readonly_prop
+        method childNodes : Dom.node Dom.nodeList Js.t Js.prop
+        method classList : Dom_html.tokenList Js.t Js.readonly_prop
+        method className : Js.js_string Js.t Js.prop
+        method clientHeight : int Js.readonly_prop
+        method clientLeft : int Js.readonly_prop
+        method clientTop : int Js.readonly_prop
+        method clientWidth : int Js.readonly_prop
+        method cloneNode : bool Js.t -> Dom.node Js.t Js.meth
+        method compareDocumentPosition :
+          Dom.node Js.t -> Dom.DocumentPosition.t Js.meth
+        method dir : Js.js_string Js.t Js.prop
+        method firstChild : Dom.node Js.t Js.opt Js.prop
+        method getActive : Content.element Content.elt Js.opt Js.meth
+        method getAttribute :
+          Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+        method getAttributeNS :
+          Js.js_string Js.t ->
+          Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+        method getAttributeNode :
+          Js.js_string Js.t -> Dom.attr Js.t Js.opt Js.meth
+        method getAttributeNodeNS :
+          Js.js_string Js.t ->
+          Js.js_string Js.t -> Dom.attr Js.t Js.opt Js.meth
+        method getBoundingClientRect : Dom_html.clientRect Js.t Js.meth
+        method getClientRects : Dom_html.clientRectList Js.t Js.meth
+        method getContainer : D.element D.elt Js.meth
+        method getElementsByTagName :
+          Js.js_string Js.t -> Dom.element Dom.nodeList Js.t Js.meth
+        method hasAttribute : Js.js_string Js.t -> bool Js.t Js.meth
+        method hasAttributeNS :
+          Js.js_string Js.t -> Js.js_string Js.t -> bool Js.t Js.meth
+        method hasChildNodes : bool Js.t Js.meth
+        method id : Js.js_string Js.t Js.prop
+        method innerHTML : Js.js_string Js.t Js.prop
+        method insertBefore :
+          Dom.node Js.t -> Dom.node Js.t Js.opt -> Dom.node Js.t Js.meth
+        method isTraversable : bool Js.meth
+        method lang : Js.js_string Js.t Js.prop
+        method lastChild : Dom.node Js.t Js.opt Js.prop
+        method lookupNamespaceURI :
+          Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+        method lookupPrefix :
+          Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+        method namespaceURI : Js.js_string Js.t Js.opt Js.prop
+        method next : unit Js.meth
+        method nextSibling : Dom.node Js.t Js.opt Js.prop
+        method nodeName : Js.js_string Js.t Js.readonly_prop
+        method nodeType : Dom.nodeType Js.readonly_prop
+        method nodeValue : Js.js_string Js.t Js.opt Js.readonly_prop
+        method offsetHeight : int Js.readonly_prop
+        method offsetLeft : int Js.readonly_prop
+        method offsetParent : Dom_html.element Js.t Js.opt Js.readonly_prop
+        method offsetTop : int Js.readonly_prop
+        method offsetWidth : int Js.readonly_prop
+        method onclick :
+          ('a Js.t, Dom_html.mouseEvent Js.t) Dom_html.event_listener
+          Js.writeonly_prop
+        method ondblclick :
+          ('a Js.t, Dom_html.mouseEvent Js.t) Dom_html.event_listener
+          Js.writeonly_prop
+        method ondrag :
+          ('a Js.t, Dom_html.dragEvent Js.t) Dom_html.event_listener
+          Js.writeonly_prop
+        method ondragend :
+          ('a Js.t, Dom_html.dragEvent Js.t) Dom_html.event_listener
+          Js.writeonly_prop
+        method ondragenter :
+          ('a Js.t, Dom_html.dragEvent Js.t) Dom_html.event_listener
+          Js.writeonly_prop
+        method ondragleave :
+          ('a Js.t, Dom_html.dragEvent Js.t) Dom_html.event_listener
+          Js.writeonly_prop
+        method ondragover :
+          ('a Js.t, Dom_html.dragEvent Js.t) Dom_html.event_listener
+          Js.writeonly_prop
+        method ondragstart :
+          ('a Js.t, Dom_html.dragEvent Js.t) Dom_html.event_listener
+          Js.writeonly_prop
+        method ondrop :
+          ('a Js.t, Dom_html.dragEvent Js.t) Dom_html.event_listener
+          Js.writeonly_prop
+        method onkeydown :
+          ('a Js.t, Dom_html.keyboardEvent Js.t) Dom_html.event_listener
+          Js.writeonly_prop
+        method onkeypress :
+          ('a Js.t, Dom_html.keyboardEvent Js.t) Dom_html.event_listener
+          Js.writeonly_prop
+        method onkeyup :
+          ('a Js.t, Dom_html.keyboardEvent Js.t) Dom_html.event_listener
+          Js.writeonly_prop
+        method onmousedown :
+          ('a Js.t, Dom_html.mouseEvent Js.t) Dom_html.event_listener
+          Js.writeonly_prop
+        method onmousemove :
+          ('a Js.t, Dom_html.mouseEvent Js.t) Dom_html.event_listener
+          Js.writeonly_prop
+        method onmouseout :
+          ('a Js.t, Dom_html.mouseEvent Js.t) Dom_html.event_listener
+          Js.writeonly_prop
+        method onmouseover :
+          ('a Js.t, Dom_html.mouseEvent Js.t) Dom_html.event_listener
+          Js.writeonly_prop
+        method onmouseup :
+          ('a Js.t, Dom_html.mouseEvent Js.t) Dom_html.event_listener
+          Js.writeonly_prop
+        method onscroll :
+          ('a Js.t, Dom_html.event Js.t) Dom_html.event_listener
+          Js.writeonly_prop
+        method outerHTML : Js.js_string Js.t Js.prop
+        method parentNode : Dom.node Js.t Js.opt Js.prop
+        method prev : unit Js.meth
+        method previousSibling : Dom.node Js.t Js.opt Js.prop
+        method querySelector :
+          Js.js_string Js.t -> Dom_html.element Js.t Js.opt Js.meth
+        method querySelectorAll :
+          Js.js_string Js.t -> Dom_html.element Dom.nodeList Js.t Js.meth
+        method removeAttribute : Js.js_string Js.t -> unit Js.meth
+        method removeAttributeNS :
+          Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
+        method removeAttributeNode : Dom.attr Js.t -> Dom.attr Js.t Js.meth
+        method removeChild : Dom.node Js.t -> Dom.node Js.t Js.meth
+        method replaceChild :
+          Dom.node Js.t -> Dom.node Js.t -> Dom.node Js.t Js.meth
+        method resetActive : unit Js.meth
+        method scrollHeight : int Js.prop
+        method scrollIntoView : bool Js.t -> unit Js.meth
+        method scrollLeft : int Js.prop
+        method scrollTop : int Js.prop
+        method scrollWidth : int Js.prop
+        method setActive : Content.element Content.elt -> unit Js.meth
+        method setAttribute :
+          Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
+        method setAttributeNS :
+          Js.js_string Js.t ->
+          Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
+        method setAttributeNode :
+          Dom.attr Js.t -> Dom.attr Js.t Js.opt Js.meth
+        method setAttributeNodeNS :
+          Dom.attr Js.t -> Dom.attr Js.t Js.opt Js.meth
+        method style : Dom_html.cssStyleDeclaration Js.t Js.prop
+        method t : Js.js_string Js.t Js.readonly_prop
+        method tagName : Js.js_string Js.t Js.readonly_prop
+        method textContent : Js.js_string Js.t Js.opt Js.prop
+        method title : Js.js_string Js.t Js.prop
+      end
+    module Style :
+      sig
+        val traversable_cls : string
+        val traversable_elt_cls : string
+        val selected_cls : string
+      end
+    val traversable :
+      ?enable_link:bool ->
+      ?focus:bool ->
+      ?is_traversable:(#traversable Js.t -> bool) ->
+      ?on_keydown:(Dom_html.keyboardEvent Js.t -> bool Lwt.t) ->
+      D.element D.elt -> D.element D.elt
+    val to_traversable : D.element D.elt -> traversable Js.t
+  end >>
