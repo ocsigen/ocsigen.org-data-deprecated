@@ -41,6 +41,7 @@
   val sort : ('a -> 'a -> int) -> 'a list -> 'a list
   val stable_sort : ('a -> 'a -> int) -> 'a list -> 'a list
   val fast_sort : ('a -> 'a -> int) -> 'a list -> 'a list
+  val sort_uniq : ('a -> 'a -> int) -> 'a list -> 'a list
   val merge : ('a -> 'a -> int) -> 'a list -> 'a list -> 'a list
   val map_filter : ('a -> 'b option) -> 'a list -> 'b list
   val last : 'a list -> 'a
