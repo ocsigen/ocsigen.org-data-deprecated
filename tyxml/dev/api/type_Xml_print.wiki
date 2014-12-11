@@ -11,56 +11,51 @@
       val normalize_html : string -> Xml_print.Utf8.utf8 * bool
     end
   module Make :
-    functor (Xml : Xml_sigs.Iterable) ->
-      functor (I : sig val emptytags : string list end) ->
-        functor (O : Xml_sigs.Output) ->
-          sig
-            val print_list :
-              ?encode:(string -> string) -> Xml.elt list -> O.out
-          end
+    functor
+      (Xml : Xml_sigs.Iterable) (I : sig val emptytags : string list end) (O : Xml_sigs.Output) ->
+      sig
+        val print_list : ?encode:(string -> string) -> Xml.elt list -> O.out
+      end
   module Make_typed :
-    functor (Xml : Xml_sigs.Iterable) ->
-      functor
-        (Typed_xml : sig
-                       module Info : Xml_sigs.Info
-                       type 'a elt
-                       type doc
-                       val toelt : 'a elt -> Xml.elt
-                       val doc_toelt : doc -> Xml.elt
-                     end) ->
-        functor (O : Xml_sigs.Output) ->
-          sig
-            val print_list :
-              ?encode:(string -> string) -> 'a Typed_xml.elt list -> O.out
-            val print :
-              ?encode:(string -> string) ->
-              ?advert:string -> Typed_xml.doc -> O.out
-          end
+    functor
+      (Xml : Xml_sigs.Iterable) (Typed_xml : sig
+                                               module Info : Xml_sigs.Info
+                                               type 'a elt
+                                               type doc
+                                               val toelt : 'a elt -> Xml.elt
+                                               val doc_toelt : doc -> Xml.elt
+                                             end) (O : Xml_sigs.Output) ->
+      sig
+        val print_list :
+          ?encode:(string -> string) -> 'a Typed_xml.elt list -> O.out
+        val print :
+          ?encode:(string -> string) ->
+          ?advert:string -> Typed_xml.doc -> O.out
+      end
   module Make_simple :
-    functor (Xml : Xml_sigs.Iterable) ->
-      functor (F : sig val emptytags : string list end) ->
-        sig
-          val print_list :
-            output:(string -> unit) ->
-            ?encode:(string -> string) -> Xml.elt list -> unit
-        end
+    functor
+      (Xml : Xml_sigs.Iterable) (F : sig val emptytags : string list end) ->
+      sig
+        val print_list :
+          output:(string -> unit) ->
+          ?encode:(string -> string) -> Xml.elt list -> unit
+      end
   module Make_typed_simple :
-    functor (Xml : Xml_sigs.Iterable) ->
-      functor
-        (Typed_xml : sig
-                       module Info : Xml_sigs.Info
-                       type 'a elt
-                       type doc
-                       val toelt : 'a elt -> Xml.elt
-                       val doc_toelt : doc -> Xml.elt
-                     end) ->
-        sig
-          val print_list :
-            output:(string -> unit) ->
-            ?encode:(string -> string) -> 'a Typed_xml.elt list -> unit
-          val print :
-            output:(string -> unit) ->
-            ?encode:(string -> string) ->
-            ?advert:string -> Typed_xml.doc -> unit
-        end
+    functor
+      (Xml : Xml_sigs.Iterable) (Typed_xml : sig
+                                               module Info : Xml_sigs.Info
+                                               type 'a elt
+                                               type doc
+                                               val toelt : 'a elt -> Xml.elt
+                                               val doc_toelt : doc -> Xml.elt
+                                             end) ->
+      sig
+        val print_list :
+          output:(string -> unit) ->
+          ?encode:(string -> string) -> 'a Typed_xml.elt list -> unit
+        val print :
+          output:(string -> unit) ->
+          ?encode:(string -> string) ->
+          ?advert:string -> Typed_xml.doc -> unit
+      end
 end >>
