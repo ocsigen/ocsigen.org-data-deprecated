@@ -10,25 +10,23 @@
     Camlp4.PreCast.Loc.t ->
     Type.decl list -> Defs.generator -> Camlp4.PreCast.Ast.sig_item
   module RegisterClass :
-    functor (Desc : Defs.ClassDescription) ->
-      functor (MakeClass : Defs.ClassBuilder) ->
-        sig val register_predefs : Type.qname -> Type.qname -> unit end
+    functor (Desc : Defs.ClassDescription) (MakeClass : Defs.ClassBuilder) ->
+      sig val register_predefs : Type.qname -> Type.qname -> unit end
   module RegisterFullClass :
-    functor (Desc : Defs.ClassDescription) ->
-      functor (MakeClass : Defs.FullBuilder) ->
-        sig
-          val depends : (module Defs.DepClassBuilder)
-          val register_predefs : Type.qname -> Type.qname -> unit
-        end
+    functor (Desc : Defs.ClassDescription) (MakeClass : Defs.FullBuilder) ->
+      sig
+        val depends : (module Defs.DepClassBuilder)
+        val register_predefs : Type.qname -> Type.qname -> unit
+      end
   val is_registered : Type.name -> bool
   val add_register_hook :
     ((module Defs.ClassDescription) -> Defs.generator -> unit) -> unit
   val find : Type.name -> Defs.generator
   module Register :
-    functor (Desc : Defs.ClassDescription) ->
-      functor (MakeClass : Defs.InnerClassBuilder) -> sig  end
+    functor
+      (Desc : Defs.ClassDescription) (MakeClass : Defs.InnerClassBuilder) ->
+      sig  end
   module Generator :
-    functor (Loc : Defs.Loc) ->
-      functor (Desc : Defs.ClassDescription) -> Defs.Generator
+    functor (Loc : Defs.Loc) (Desc : Defs.ClassDescription) -> Defs.Generator
   module AstHelpers : functor (Loc : Defs.Loc) -> Defs.AstHelpers
 end >>

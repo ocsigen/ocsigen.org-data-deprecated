@@ -139,38 +139,37 @@
         val show_list : a list -> string
       end
   module Show_map :
-    functor (O : Map.OrderedType) ->
-      functor
-        (K : sig
-               type a = O.t
-               val format : Format.formatter -> a -> unit
-               val format_list : Format.formatter -> a list -> unit
-               val show : a -> string
-               val show_list : a list -> string
-             end) ->
-        functor (V : Show) ->
-          sig
-            type a = V.a Map.Make(O).t
-            val format : Format.formatter -> a -> unit
-            val format_list : Format.formatter -> a list -> unit
-            val show : a -> string
-            val show_list : a list -> string
-          end
+    functor
+      (O : Map.OrderedType) (K : sig
+                                   type a = O.t
+                                   val format : Format.formatter -> a -> unit
+                                   val format_list :
+                                     Format.formatter -> a list -> unit
+                                   val show : a -> string
+                                   val show_list : a list -> string
+                                 end) (V : Show) ->
+      sig
+        type a = V.a Map.Make(O).t
+        val format : Format.formatter -> a -> unit
+        val format_list : Format.formatter -> a list -> unit
+        val show : a -> string
+        val show_list : a list -> string
+      end
   module Show_set :
-    functor (O : Set.OrderedType) ->
-      functor
-        (K : sig
-               type a = O.t
-               val format : Format.formatter -> a -> unit
-               val format_list : Format.formatter -> a list -> unit
-               val show : a -> string
-               val show_list : a list -> string
-             end) ->
-        sig
-          type a = Set.Make(O).t
-          val format : Format.formatter -> a -> unit
-          val format_list : Format.formatter -> a list -> unit
-          val show : a -> string
-          val show_list : a list -> string
-        end
+    functor
+      (O : Set.OrderedType) (K : sig
+                                   type a = O.t
+                                   val format : Format.formatter -> a -> unit
+                                   val format_list :
+                                     Format.formatter -> a list -> unit
+                                   val show : a -> string
+                                   val show_list : a list -> string
+                                 end) ->
+      sig
+        type a = Set.Make(O).t
+        val format : Format.formatter -> a -> unit
+        val format_list : Format.formatter -> a list -> unit
+        val show : a -> string
+        val show_list : a list -> string
+      end
 end >>

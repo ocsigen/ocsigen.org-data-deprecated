@@ -41,6 +41,7 @@
   val sort : ('a -> 'a -> int) -> 'a list -> 'a list
   val stable_sort : ('a -> 'a -> int) -> 'a list -> 'a list
   val fast_sort : ('a -> 'a -> int) -> 'a list -> 'a list
+  val sort_uniq : ('a -> 'a -> int) -> 'a list -> 'a list
   val merge : ('a -> 'a -> int) -> 'a list -> 'a list -> 'a list
   val fold_left1 : ('a -> 'a -> 'a) -> 'a list -> 'a
   val fold_right1 : ('a -> 'a -> 'a) -> 'a list -> 'a

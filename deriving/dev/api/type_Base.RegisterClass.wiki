@@ -1,3 +1,2 @@
-<<code language="ocaml" | functor (Desc : Defs.ClassDescription) ->
-  functor (MakeClass : Defs.ClassBuilder) ->
-    sig val register_predefs : Type.qname -> Type.qname -> unit end >>
+<<code language="ocaml" | functor (Desc : Defs.ClassDescription) (MakeClass : Defs.ClassBuilder) ->
+  sig val register_predefs : Type.qname -> Type.qname -> unit end >>

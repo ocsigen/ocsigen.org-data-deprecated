@@ -28,8 +28,8 @@
   module Eq_option :
     functor (E : Eq) -> sig type a = E.a option val eq : a -> a -> bool end
   module Eq_map_s_t :
-    functor (E : Eq) ->
-      functor (M : Map.S) -> sig type a = E.a M.t val eq : a -> a -> bool end
+    functor (E : Eq) (M : Map.S) ->
+      sig type a = E.a M.t val eq : a -> a -> bool end
   module Eq_set_s_t :
     functor (S : Set.S) -> sig type a = S.t val eq : a -> a -> bool end
 end >>

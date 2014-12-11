@@ -64,37 +64,36 @@
       val choose : t -> elt
       val split : elt -> t -> t * bool * t
       val find : elt -> t -> elt
+      val of_list : elt list -> t
       val toList : t -> elt list
       val fromList : elt list -> t
     end
   type param = Type.name * [ `Minus | `Plus ] option
-  type decl =
-      Type.name * Type.param list * Type.rhs * Type.constraint_ list * bool
+  type decl = Type.name * Type.param list * rhs * constraint_ list * bool
   and rhs =
-      [ `Expr of Type.expr
-      | `Fresh of Type.expr option * Type.repr * [ `Private | `Public ]
+      [ `Expr of expr
+      | `Fresh of expr option * repr * [ `Private | `Public ]
       | `Nothing
-      | `Variant of Type.variant * [ `Private | `Public ] ]
+      | `Variant of variant * [ `Private | `Public ] ]
   and repr =
       Sum of Type.summand list
     | GSum of Type.name * Type.gsummand list
     | Record of Type.field list
-  and field = Type.name * Type.poly_expr * [ `Immutable | `Mutable ]
-  and summand = Type.name * Type.expr list
-  and gsummand = Type.name * Type.expr list * Type.expr list
-  and constraint_ = Type.expr * Type.expr
+  and field = Type.name * poly_expr * [ `Immutable | `Mutable ]
+  and summand = Type.name * expr list
+  and gsummand = Type.name * expr list * expr list
+  and constraint_ = expr * expr
   and expr =
       [ `Class of [ `NYI ]
-      | `Constr of Type.qname * Type.expr list
-      | `Function of Type.expr * Type.expr
-      | `GParam of Type.param * Type.expr
-      | `Label of
-          [ `NonOptional | `Optional ] * Type.name * Type.expr * Type.expr
+      | `Constr of Type.qname * expr list
+      | `Function of expr * expr
+      | `GParam of Type.param * expr
+      | `Label of [ `NonOptional | `Optional ] * Type.name * expr * expr
       | `Object of [ `NYI ]
       | `Param of Type.param
-      | `Tuple of Type.expr list ]
-  and poly_expr = Type.param list * Type.expr
-  and variant = [ `Eq | `Gt | `Lt ] * Type.tagspec list
+      | `Tuple of expr list ]
+  and poly_expr = Type.param list * expr
+  and variant = [ `Eq | `Gt | `Lt ] * tagspec list
   and tagspec = Tag of Type.name * Type.expr list | Extends of Type.expr
   module ParamSet :
     sig
@@ -125,6 +124,7 @@
       val choose : t -> elt
       val split : elt -> t -> t * bool * t
       val find : elt -> t -> elt
+      val of_list : elt list -> t
       val toList : t -> elt list
       val fromList : elt list -> t
     end
@@ -191,6 +191,7 @@
       val choose : t -> elt
       val split : elt -> t -> t * bool * t
       val find : elt -> t -> elt
+      val of_list : elt list -> t
       val toList : t -> elt list
       val fromList : elt list -> t
     end
@@ -257,6 +258,7 @@
       val choose : t -> elt
       val split : elt -> t -> t * bool * t
       val find : elt -> t -> elt
+      val of_list : elt list -> t
       val toList : t -> elt list
       val fromList : elt list -> t
     end
