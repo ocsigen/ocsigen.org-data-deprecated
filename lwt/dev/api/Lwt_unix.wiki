@@ -48,20 +48,26 @@
 
 ==@@id="2_Configuration"@@~Configuration==
 
-<<pre class="ocsforge_color odocwiki_code" id="TYPEasync_method"|<<span class="ocsforge_color_keyword"|type>> <<span class="odocwiki_name"|async~_method>> <<span class="ocsforge_color_delimiter"|~=>> <<span class="odocwiki_variants"|<<span class="odocwiki_variant"|<<span class="odocwiki_variant_constr"|<<span class="ocsforge_color_keyword"| ~|>> <<span class="ocsforge_color_uid"|Async_none>>>><<span class="odocwiki_comments"|<<span class="odocwiki_comments_open"|(*>> <<span|~System calls are made synchronously~, and may block the
-          entire program~.>><<span class="odocwiki_comments_close"| ~*)>>>>>><<span class="odocwiki_variant"|<<span class="odocwiki_variant_constr"|<<span class="ocsforge_color_keyword"| ~|>> <<span class="ocsforge_color_uid"|Async_detach>>>><<span class="odocwiki_comments"|<<span class="odocwiki_comments_open"|(*>> <<span|~System calls are made in another system thread~, thus without
+<<pre class="ocsforge_color odocwiki_code" id="TYPEasync_method"|<<span class="ocsforge_color_keyword"|type>> <<span class="odocwiki_name"|async~_method>> <<span class="ocsforge_color_delimiter"|~=>> <<span class="odocwiki_variants"|<<span class="odocwiki_variant"|<<span class="odocwiki_variant_constr"|<<span class="ocsforge_color_keyword"| ~|>> <<span class="ocsforge_color_uid"|Async_none>>>><<span class="odocwiki_comments"|<<span class="odocwiki_comments_open"|(*>> <<span|<<div class="odocwiki_info"|~System calls are made synchronously~, and may block the
+          entire program~.
+>>
+>><<span class="odocwiki_comments_close"| ~*)>>>>>><<span class="odocwiki_variant"|<<span class="odocwiki_variant_constr"|<<span class="ocsforge_color_keyword"| ~|>> <<span class="ocsforge_color_uid"|Async_detach>>>><<span class="odocwiki_comments"|<<span class="odocwiki_comments_open"|(*>> <<span|<<div class="odocwiki_info"|~System calls are made in another system thread~, thus without
           blocking other ~Lwt threads~. ~The drawback is that it may
           degrade performances in some cases~.
 
 
-          ~This is the default~.>><<span class="odocwiki_comments_close"| ~*)>>>>>><<span class="odocwiki_variant"|<<span class="odocwiki_variant_constr"|<<span class="ocsforge_color_keyword"| ~|>> <<span class="ocsforge_color_uid"|Async_switch>>>><<span class="odocwiki_comments"|<<span class="odocwiki_comments_open"|(*>> <<span|~System calls are made in the main thread~, and if one blocks
+          ~This is the default~.
+>>
+>><<span class="odocwiki_comments_close"| ~*)>>>>>><<span class="odocwiki_variant"|<<span class="odocwiki_variant_constr"|<<span class="ocsforge_color_keyword"| ~|>> <<span class="ocsforge_color_uid"|Async_switch>>>><<span class="odocwiki_comments"|<<span class="odocwiki_comments_open"|(*>> <<span|<<div class="odocwiki_info"|~System calls are made in the main thread~, and if one blocks
           the execution continue in another system thread~. ~This method
           is the most efficient~, also you will get better performance
           if you force all threads to run on the same cpu~. ~On linux
           this can be done by using the command <<span class="odocwiki_inlinecode"|taskset>>~.
 
 
-          ~Note that this method is still experimental~.>><<span class="odocwiki_comments_close"| ~*)>>>>>>>>>><<div class="odocwiki_info"|~For system calls that cannot be made asynchronously~, ~Lwt uses one
+          ~Note that this method is still experimental~.
+>>
+>><<span class="odocwiki_comments_close"| ~*)>>>>>>>>>><<div class="odocwiki_info"|~For system calls that cannot be made asynchronously~, ~Lwt uses one
     of the following method~:
 >>
 <<pre id="VALdefault_async_method" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|default~_async~_method>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|unit <<span class="ocsforge_color_delimiter"| -> >> <<a_api text="async_method" | type Lwt_unix.async_method >>>>>><<div class="odocwiki_info"|~Returns the default async method~.
@@ -145,9 +151,15 @@
       usable
 
 >>
-<<pre class="ocsforge_color odocwiki_code" id="TYPEstate"|<<span class="ocsforge_color_keyword"|type>> <<span class="odocwiki_name"|state>> <<span class="ocsforge_color_delimiter"|~=>> <<span class="odocwiki_variants"|<<span class="odocwiki_variant"|<<span class="odocwiki_variant_constr"|<<span class="ocsforge_color_keyword"| ~|>> <<span class="ocsforge_color_uid"|Opened>>>><<span class="odocwiki_comments"|<<span class="odocwiki_comments_open"|(*>> <<span|~The **file descriptor** is opened>><<span class="odocwiki_comments_close"| ~*)>>>>>><<span class="odocwiki_variant"|<<span class="odocwiki_variant_constr"|<<span class="ocsforge_color_keyword"| ~|>> <<span class="ocsforge_color_uid"|Closed>>>><<span class="odocwiki_comments"|<<span class="odocwiki_comments_open"|(*>> <<span|~The **file descriptor** has been closed by <<a_api | val Lwt_unix.close >>~. ~It must
-          not be used for any operation~.>><<span class="odocwiki_comments_close"| ~*)>>>>>><<span class="odocwiki_variant"|<<span class="odocwiki_variant_constr"|<<span class="ocsforge_color_keyword"| ~|>> <<span class="ocsforge_color_uid"|Aborted>> <<span class="ocsforge_color_keyword"|of>> <<span class="odocwiki_type"|exn>>>><<span class="odocwiki_comments"|<<span class="odocwiki_comments_open"|(*>> <<span|~The **file descriptor** has been aborted~, the only operation
-          possible is <<a_api | val Lwt_unix.close >>~, all others will fail~.>><<span class="odocwiki_comments_close"| ~*)>>>>>>>>>><<div class="odocwiki_info"|~State of a **file descriptor**
+<<pre class="ocsforge_color odocwiki_code" id="TYPEstate"|<<span class="ocsforge_color_keyword"|type>> <<span class="odocwiki_name"|state>> <<span class="ocsforge_color_delimiter"|~=>> <<span class="odocwiki_variants"|<<span class="odocwiki_variant"|<<span class="odocwiki_variant_constr"|<<span class="ocsforge_color_keyword"| ~|>> <<span class="ocsforge_color_uid"|Opened>>>><<span class="odocwiki_comments"|<<span class="odocwiki_comments_open"|(*>> <<span|<<div class="odocwiki_info"|~The **file descriptor** is opened
+>>
+>><<span class="odocwiki_comments_close"| ~*)>>>>>><<span class="odocwiki_variant"|<<span class="odocwiki_variant_constr"|<<span class="ocsforge_color_keyword"| ~|>> <<span class="ocsforge_color_uid"|Closed>>>><<span class="odocwiki_comments"|<<span class="odocwiki_comments_open"|(*>> <<span|<<div class="odocwiki_info"|~The **file descriptor** has been closed by <<a_api | val Lwt_unix.close >>~. ~It must
+          not be used for any operation~.
+>>
+>><<span class="odocwiki_comments_close"| ~*)>>>>>><<span class="odocwiki_variant"|<<span class="odocwiki_variant_constr"|<<span class="ocsforge_color_keyword"| ~|>> <<span class="ocsforge_color_uid"|Aborted>> <<span class="ocsforge_color_keyword"|of>> <<span class="odocwiki_type"|exn>>>><<span class="odocwiki_comments"|<<span class="odocwiki_comments_open"|(*>> <<span|<<div class="odocwiki_info"|~The **file descriptor** has been aborted~, the only operation
+          possible is <<a_api | val Lwt_unix.close >>~, all others will fail~.
+>>
+>><<span class="odocwiki_comments_close"| ~*)>>>>>>>>>><<div class="odocwiki_info"|~State of a **file descriptor**
 >>
 <<pre id="VALstate" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|state>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<a_api text="file_descr" | type Lwt_unix.file_descr >> <<span class="ocsforge_color_delimiter"| -> >> <<a_api text="state" | type Lwt_unix.state >>>>>><<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|state fd>> returns the state of <<span class="odocwiki_inlinecode"|fd>>
 >>
@@ -219,7 +231,11 @@
 <<pre id="VALwaitpid" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|waitpid>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|\\  <<a_api text="wait_flag" | type Lwt_unix.wait_flag >> list <<span class="ocsforge_color_delimiter"| -> >>\\  int <<span class="ocsforge_color_delimiter"| -> >> <<span class="ocsforge_color_delimiter"| ( >>int * <<a_api text="process_status" | type Lwt_unix.process_status >><<span class="ocsforge_color_delimiter"| ) >> <<a_api text="Lwt.t" | type Lwt.t >>>>>><<div class="odocwiki_info"|~Wrapper for <<span class="odocwiki_inlinecode"|~Unix~.waitpid>>
 >>
 <<pre class="ocsforge_color odocwiki_code" id="TYPEresource_usage"|<<span class="ocsforge_color_keyword"|type>> <<span class="odocwiki_name"|resource~_usage>> <<span class="ocsforge_color_delimiter"|~=>> <<span class="ocsforge_color_delimiter"|~{>>
-<<span class="odocwiki_record"|<<span class="odocwiki_field"|<<span class="odocwiki_field_descr"|  <<span class="ocsforge_color_label"|ru_utime:>> <<span class="odocwiki_type"|float>><<span class="ocsforge_color_delimiter"|~;>> >><<span class="odocwiki_comments"|<<span class="odocwiki_comments_open"|(*>> <<span|~User time used>><<span class="odocwiki_comments_close"| ~*)>>>>>><<span class="odocwiki_field"|<<span class="odocwiki_field_descr"|  <<span class="ocsforge_color_label"|ru_stime:>> <<span class="odocwiki_type"|float>><<span class="ocsforge_color_delimiter"|~;>> >><<span class="odocwiki_comments"|<<span class="odocwiki_comments_open"|(*>> <<span|~System time used>><<span class="odocwiki_comments_close"| ~*)>>>>>>>><<span class="ocsforge_color_delimiter"|~}>>>><<div class="odocwiki_info"|~Resource usages
+<<span class="odocwiki_record"|<<span class="odocwiki_field"|<<span class="odocwiki_field_descr"|  <<span class="ocsforge_color_label"|ru_utime:>> <<span class="odocwiki_type"|float>><<span class="ocsforge_color_delimiter"|~;>> >><<span class="odocwiki_comments"|<<span class="odocwiki_comments_open"|(*>> <<span|<<div class="odocwiki_info"|~User time used
+>>
+>><<span class="odocwiki_comments_close"| ~*)>>>>>><<span class="odocwiki_field"|<<span class="odocwiki_field_descr"|  <<span class="ocsforge_color_label"|ru_stime:>> <<span class="odocwiki_type"|float>><<span class="ocsforge_color_delimiter"|~;>> >><<span class="odocwiki_comments"|<<span class="odocwiki_comments_open"|(*>> <<span|<<div class="odocwiki_info"|~System time used
+>>
+>><<span class="odocwiki_comments_close"| ~*)>>>>>>>><<span class="ocsforge_color_delimiter"|~}>>>><<div class="odocwiki_info"|~Resource usages
 >>
 <<pre id="VALwait4" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|wait~4>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|\\  <<a_api text="wait_flag" | type Lwt_unix.wait_flag >> list <<span class="ocsforge_color_delimiter"| -> >>\\  int <<span class="ocsforge_color_delimiter"| -> >> <<span class="ocsforge_color_delimiter"| ( >>int * <<a_api text="process_status" | type Lwt_unix.process_status >> * <<a_api text="resource_usage" | type Lwt_unix.resource_usage >><<span class="ocsforge_color_delimiter"| ) >> <<a_api text="Lwt.t" | type Lwt.t >>>>>><<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|wait~4 flags pid>> returns <<span class="odocwiki_inlinecode"|~(pid~, status~, rusage~)>> where <<span class="odocwiki_inlinecode"|~(pid~,
       status~)>> is the same result as <<span class="odocwiki_inlinecode"|~Unix~.waitpid flags pid>>~, and

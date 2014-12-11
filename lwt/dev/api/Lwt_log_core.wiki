@@ -14,11 +14,23 @@
 
 ==@@id="2_Types"@@~Types==
 
-<<pre class="ocsforge_color odocwiki_code" id="TYPElevel"|<<span class="ocsforge_color_keyword"|type>> <<span class="odocwiki_name"|level>> <<span class="ocsforge_color_delimiter"|~=>> <<span class="odocwiki_variants"|<<span class="odocwiki_variant"|<<span class="odocwiki_variant_constr"|<<span class="ocsforge_color_keyword"| ~|>> <<span class="ocsforge_color_uid"|Debug>>>><<span class="odocwiki_comments"|<<span class="odocwiki_comments_open"|(*>> <<span|~Debugging message~. ~They can be automatically removed by the
-          syntax extension~.>><<span class="odocwiki_comments_close"| ~*)>>>>>><<span class="odocwiki_variant"|<<span class="odocwiki_variant_constr"|<<span class="ocsforge_color_keyword"| ~|>> <<span class="ocsforge_color_uid"|Info>>>><<span class="odocwiki_comments"|<<span class="odocwiki_comments_open"|(*>> <<span|~Informational message~. ~Suitable to be displayed when the
-          program is in verbose mode~.>><<span class="odocwiki_comments_close"| ~*)>>>>>><<span class="odocwiki_variant"|<<span class="odocwiki_variant_constr"|<<span class="ocsforge_color_keyword"| ~|>> <<span class="ocsforge_color_uid"|Notice>>>><<span class="odocwiki_comments"|<<span class="odocwiki_comments_open"|(*>> <<span|~Same as <<span class="odocwiki_inlinecode"|~Info>>~, but is displayed by default~.>><<span class="odocwiki_comments_close"| ~*)>>>>>><<span class="odocwiki_variant"|<<span class="odocwiki_variant_constr"|<<span class="ocsforge_color_keyword"| ~|>> <<span class="ocsforge_color_uid"|Warning>>>><<span class="odocwiki_comments"|<<span class="odocwiki_comments_open"|(*>> <<span|~Something strange happend>><<span class="odocwiki_comments_close"| ~*)>>>>>><<span class="odocwiki_variant"|<<span class="odocwiki_variant_constr"|<<span class="ocsforge_color_keyword"| ~|>> <<span class="ocsforge_color_uid"|Error>>>><<span class="odocwiki_comments"|<<span class="odocwiki_comments_open"|(*>> <<span|~An error message~, which should not means the end of the
-          program~.>><<span class="odocwiki_comments_close"| ~*)>>>>>><<span class="odocwiki_variant"|<<span class="odocwiki_variant_constr"|<<span class="ocsforge_color_keyword"| ~|>> <<span class="ocsforge_color_uid"|Fatal>>>><<span class="odocwiki_comments"|<<span class="odocwiki_comments_open"|(*>> <<span|~A fatal error happened~, in most cases the program will end
-          after a fatal error~.>><<span class="odocwiki_comments_close"| ~*)>>>>>>>>>><<div class="odocwiki_info"|~Type of log levels~. ~A level determines the importance of a
+<<pre class="ocsforge_color odocwiki_code" id="TYPElevel"|<<span class="ocsforge_color_keyword"|type>> <<span class="odocwiki_name"|level>> <<span class="ocsforge_color_delimiter"|~=>> <<span class="odocwiki_variants"|<<span class="odocwiki_variant"|<<span class="odocwiki_variant_constr"|<<span class="ocsforge_color_keyword"| ~|>> <<span class="ocsforge_color_uid"|Debug>>>><<span class="odocwiki_comments"|<<span class="odocwiki_comments_open"|(*>> <<span|<<div class="odocwiki_info"|~Debugging message~. ~They can be automatically removed by the
+          syntax extension~.
+>>
+>><<span class="odocwiki_comments_close"| ~*)>>>>>><<span class="odocwiki_variant"|<<span class="odocwiki_variant_constr"|<<span class="ocsforge_color_keyword"| ~|>> <<span class="ocsforge_color_uid"|Info>>>><<span class="odocwiki_comments"|<<span class="odocwiki_comments_open"|(*>> <<span|<<div class="odocwiki_info"|~Informational message~. ~Suitable to be displayed when the
+          program is in verbose mode~.
+>>
+>><<span class="odocwiki_comments_close"| ~*)>>>>>><<span class="odocwiki_variant"|<<span class="odocwiki_variant_constr"|<<span class="ocsforge_color_keyword"| ~|>> <<span class="ocsforge_color_uid"|Notice>>>><<span class="odocwiki_comments"|<<span class="odocwiki_comments_open"|(*>> <<span|<<div class="odocwiki_info"|~Same as <<span class="odocwiki_inlinecode"|~Info>>~, but is displayed by default~.
+>>
+>><<span class="odocwiki_comments_close"| ~*)>>>>>><<span class="odocwiki_variant"|<<span class="odocwiki_variant_constr"|<<span class="ocsforge_color_keyword"| ~|>> <<span class="ocsforge_color_uid"|Warning>>>><<span class="odocwiki_comments"|<<span class="odocwiki_comments_open"|(*>> <<span|<<div class="odocwiki_info"|~Something strange happend
+>>
+>><<span class="odocwiki_comments_close"| ~*)>>>>>><<span class="odocwiki_variant"|<<span class="odocwiki_variant_constr"|<<span class="ocsforge_color_keyword"| ~|>> <<span class="ocsforge_color_uid"|Error>>>><<span class="odocwiki_comments"|<<span class="odocwiki_comments_open"|(*>> <<span|<<div class="odocwiki_info"|~An error message~, which should not means the end of the
+          program~.
+>>
+>><<span class="odocwiki_comments_close"| ~*)>>>>>><<span class="odocwiki_variant"|<<span class="odocwiki_variant_constr"|<<span class="ocsforge_color_keyword"| ~|>> <<span class="ocsforge_color_uid"|Fatal>>>><<span class="odocwiki_comments"|<<span class="odocwiki_comments_open"|(*>> <<span|<<div class="odocwiki_info"|~A fatal error happened~, in most cases the program will end
+          after a fatal error~.
+>>
+>><<span class="odocwiki_comments_close"| ~*)>>>>>>>>>><<div class="odocwiki_info"|~Type of log levels~. ~A level determines the importance of a
     message
 >>
 <<pre class="ocsforge_color odocwiki_code" id="TYPElogger"|<<span class="ocsforge_color_keyword"|type>> <<span class="odocwiki_name"|logger>>>><<div class="odocwiki_info"|~Type of a logger~. ~A logger is responsible for dispatching messages
