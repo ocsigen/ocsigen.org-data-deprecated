@@ -11,8 +11,7 @@
        Eliom_registration.non_ocaml_service)
       Eliom_tools.one_page
   type ('a, 'b, 'c) hierarchical_site =
-      ('a, 'b) Eliom_tools.main_page *
-      ('c * ('a, 'b, 'c) Eliom_tools.hierarchical_site_item) list
+      ('a, 'b) main_page * ('c * ('a, 'b, 'c) hierarchical_site_item) list
     constraint 'a = [< Eliom_service.service_method ]
     constraint 'b = [< Eliom_service.registrable ]
   and ('a, 'b) main_page =

@@ -25,8 +25,7 @@
     | Not_clickable constraint 'a = [< Eliom_service.service_method ]
     constraint 'b = [< Eliom_service.registrable ]
   and ('a, 'b, 'c) hierarchical_site =
-      ('a, 'b) Eliom_tools_common.main_page *
-      ('c * ('a, 'b, 'c) Eliom_tools_common.hierarchical_site_item) list
+      ('a, 'b) main_page * ('c * ('a, 'b, 'c) hierarchical_site_item) list
     constraint 'a = [< Eliom_service.service_method ]
     constraint 'b = [< Eliom_service.registrable ]
   val menu_class : string

@@ -1,17 +1,19 @@
 <<code language="ocaml" | sig
   external length : string -> int = "%string_length"
   external get : string -> int -> char = "%string_safe_get"
-  external set : string -> int -> char -> unit = "%string_safe_set"
-  external create : int -> string = "caml_create_string"
+  external set : bytes -> int -> char -> unit = "%string_safe_set"
+  external create : int -> bytes = "caml_create_string"
   val make : int -> char -> string
+  val init : int -> (int -> char) -> string
   val copy : string -> string
   val sub : string -> int -> int -> string
-  val fill : string -> int -> int -> char -> unit
-  val blit : string -> int -> string -> int -> int -> unit
+  val fill : bytes -> int -> int -> char -> unit
+  val blit : string -> int -> bytes -> int -> int -> unit
   val concat : string -> string list -> string
   val iter : (char -> unit) -> string -> unit
   val iteri : (int -> char -> unit) -> string -> unit
   val map : (char -> char) -> string -> string
+  val mapi : (int -> char -> char) -> string -> string
   val trim : string -> string
   val escaped : string -> string
   val index : string -> char -> int
@@ -28,10 +30,10 @@
   type t = string
   val compare : t -> t -> int
   external unsafe_get : string -> int -> char = "%string_unsafe_get"
-  external unsafe_set : string -> int -> char -> unit = "%string_unsafe_set"
-  external unsafe_blit : string -> int -> string -> int -> int -> unit
+  external unsafe_set : bytes -> int -> char -> unit = "%string_unsafe_set"
+  external unsafe_blit : string -> int -> bytes -> int -> int -> unit
     = "caml_blit_string" "noalloc"
-  external unsafe_fill : string -> int -> int -> char -> unit
+  external unsafe_fill : bytes -> int -> int -> char -> unit
     = "caml_fill_string" "noalloc"
   val remove_spaces : string -> int -> int -> string
   val basic_sep : char -> string -> string * string
@@ -99,6 +101,7 @@
       val choose : t -> elt
       val split : elt -> t -> t * bool * t
       val find : elt -> t -> elt
+      val of_list : elt list -> t
     end
   module Map :
     sig
