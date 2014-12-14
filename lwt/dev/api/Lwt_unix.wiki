@@ -53,7 +53,7 @@
 >>
 >><<span class="odocwiki_comments_close"| ~*)>>>>>><<span class="odocwiki_variant"|<<span class="odocwiki_variant_constr"|<<span class="ocsforge_color_keyword"| ~|>> <<span class="ocsforge_color_uid"|Async_detach>>>><<span class="odocwiki_comments"|<<span class="odocwiki_comments_open"|(*>> <<span|<<div class="odocwiki_info"|~System calls are made in another system thread~, thus without
           blocking other ~Lwt threads~. ~The drawback is that it may
-          degrade performances in some cases~.
+          degrade performance in some cases~.
 
 
           ~This is the default~.
@@ -535,9 +535,9 @@
     ~This call is not available on windows~.
 >>
 <<pre class="ocsforge_color odocwiki_code" id="TYPEcredentials"|<<span class="ocsforge_color_keyword"|type>> <<span class="odocwiki_name"|credentials>> <<span class="ocsforge_color_delimiter"|~=>> <<span class="ocsforge_color_delimiter"|~{>>
-<<span class="odocwiki_record"|<<span class="odocwiki_field"|<<span class="odocwiki_field_descr"|  <<span class="ocsforge_color_label"|cred_pid:>> <<span class="odocwiki_type"|int>><<span class="ocsforge_color_delimiter"|~;>> >>>><<span class="odocwiki_field"|<<span class="odocwiki_field_descr"|  <<span class="ocsforge_color_label"|cred_uid:>> <<span class="odocwiki_type"|int>><<span class="ocsforge_color_delimiter"|~;>> >>>><<span class="odocwiki_field"|<<span class="odocwiki_field_descr"|  <<span class="ocsforge_color_label"|cred_gid:>> <<span class="odocwiki_type"|int>><<span class="ocsforge_color_delimiter"|~;>> >>>>>><<span class="ocsforge_color_delimiter"|~}>>>><<pre id="VALget_credentials" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|get~_credentials>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<a_api text="file_descr" | type Lwt_unix.file_descr >> <<span class="ocsforge_color_delimiter"| -> >> <<a_api text="credentials" | type Lwt_unix.credentials >>>>>><<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|get~_credentials fd>> returns credential informations from the
+<<span class="odocwiki_record"|<<span class="odocwiki_field"|<<span class="odocwiki_field_descr"|  <<span class="ocsforge_color_label"|cred_pid:>> <<span class="odocwiki_type"|int>><<span class="ocsforge_color_delimiter"|~;>> >>>><<span class="odocwiki_field"|<<span class="odocwiki_field_descr"|  <<span class="ocsforge_color_label"|cred_uid:>> <<span class="odocwiki_type"|int>><<span class="ocsforge_color_delimiter"|~;>> >>>><<span class="odocwiki_field"|<<span class="odocwiki_field_descr"|  <<span class="ocsforge_color_label"|cred_gid:>> <<span class="odocwiki_type"|int>><<span class="ocsforge_color_delimiter"|~;>> >>>>>><<span class="ocsforge_color_delimiter"|~}>>>><<pre id="VALget_credentials" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|get~_credentials>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<a_api text="file_descr" | type Lwt_unix.file_descr >> <<span class="ocsforge_color_delimiter"| -> >> <<a_api text="credentials" | type Lwt_unix.credentials >>>>>><<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|get~_credentials fd>> returns credentials information from the
       given socket~. ~On some platforms~, obtaining the peer pid is not
-      possible and it will be set to <<span class="odocwiki_inlinecode"|~-~1>>~. ~If obtaining credentials 
+      possible and it will be set to <<span class="odocwiki_inlinecode"|~-~1>>~. ~If obtaining credentials
       is not possible on the current system~, it raises
       <<span class="odocwiki_inlinecode"|~Lwt~_sys~.~Not~_available "get~_credentials">>~.
 
@@ -623,9 +623,9 @@
       **file descriptor** becomes writables~.
 >>
 <<pre class="ocsforge_color odocwiki_code" id="TYPEio_event"|<<span class="ocsforge_color_keyword"|type>> <<span class="odocwiki_name"|io~_event>> <<span class="ocsforge_color_delimiter"|~=>> <<span class="odocwiki_variants"|<<span class="odocwiki_variant"|<<span class="odocwiki_variant_constr"|<<span class="ocsforge_color_keyword"| ~|>> <<span class="ocsforge_color_uid"|Read>>>>>><<span class="odocwiki_variant"|<<span class="odocwiki_variant_constr"|<<span class="ocsforge_color_keyword"| ~|>> <<span class="ocsforge_color_uid"|Write>>>>>>>>>><<pre id="VALwrap_syscall" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|wrap~_syscall>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<a_api text="io_event" | type Lwt_unix.io_event >> <<span class="ocsforge_color_delimiter"| -> >> <<a_api text="file_descr" | type Lwt_unix.file_descr >> <<span class="ocsforge_color_delimiter"| -> >> <<span class="ocsforge_color_delimiter"| ( >>unit <<span class="ocsforge_color_delimiter"| -> >> 'a<<span class="ocsforge_color_delimiter"| ) >> <<span class="ocsforge_color_delimiter"| -> >> 'a <<a_api text="Lwt.t" | type Lwt.t >>>>>><<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|wrap~_syscall set fd action>> wrap an action on a **file
-      descriptor**~. ~It tries to execture action~, and if it can not be
+      descriptor**~. ~It tries to execute action~, and if it can not be
       performed immediately without blocking~, it is registered for
-      latter~.
+      later~.
 
 
       ~In the latter case~, if the thread is canceled~, <<span class="odocwiki_inlinecode"|action>> is

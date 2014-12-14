@@ -714,7 +714,7 @@
       running on~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api text="get_credentials"| value Lwt_unix.get_credentials >> ~[<<a_api | module Lwt_unix >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|get~_credentials fd>> returns credential informations from the
+|@@class="odocwiki_index"@ @@<<a_api text="get_credentials"| value Lwt_unix.get_credentials >> ~[<<a_api | module Lwt_unix >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|get~_credentials fd>> returns credentials information from the
       given socket~.
 >>
 |
