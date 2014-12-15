@@ -133,6 +133,8 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Id"| module Eliom_content.Svg.Id >> ~[<<a_api subproject="client" | module Eliom_content.Svg >>~]|<<div class="odocwiki_info"|~Node identifiers
 >>
 |
+|@@ @style="tet-align: left;"@@\\L|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Lwt_log"| module Eliom_lib.Lwt_log >> ~[<<a_api subproject="client" | module Eliom_lib >>~]||
 |@@ @style="tet-align: left;"@@\\M|
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="MakeForms"| module Eliom_mkforms.MakeForms >> ~[<<a_api subproject="client" | module Eliom_mkforms >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Manip"| module Eliom_content.Html5.Manip >> ~[<<a_api subproject="client" | module Eliom_content.Html5 >>~]|<<div class="odocwiki_info"|~D~O~M~-like manipulation functions~.

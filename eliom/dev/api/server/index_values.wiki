@@ -313,7 +313,6 @@
 >>
 |
 |@@ @style="tet-align: left;"@@\\D|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="debug"| value Eliom_lib.debug >> ~[<<a_api subproject="server" | module Eliom_lib >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="default_appl_service_options"| value Eliom_registration.default_appl_service_options >> ~[<<a_api subproject="server" | module Eliom_registration >>~]|<<div class="odocwiki_info"|~The default options record for an eliom service~.
 >>
 |
@@ -429,6 +428,7 @@
 >>
 |
 |@@ @style="tet-align: left;"@@\\E|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="eliom"| value Eliom_lib.Lwt_log.eliom >> ~[<<a_api subproject="server" | module Eliom_lib.Lwt_log >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="eliom_link_too_old"| value Eliom_common.eliom_link_too_old >> ~[<<a_api subproject="server" | module Eliom_common >>~]|<<div class="odocwiki_info"|~If present and true in request data~, it means that
     the previous coservice does not exist any more
 >>

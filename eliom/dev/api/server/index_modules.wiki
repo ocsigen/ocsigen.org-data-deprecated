@@ -201,6 +201,7 @@ file~.
 |
 |@@ @style="tet-align: left;"@@\\L|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Low_level"| module Eliom_state.Ext.Low_level >> ~[<<a_api subproject="server" | module Eliom_state.Ext >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Lwt_log"| module Eliom_lib.Lwt_log >> ~[<<a_api subproject="server" | module Eliom_lib >>~]||
 |@@ @style="tet-align: left;"@@\\M|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Make"| module Eliom_openid.Make >> ~[<<a_api subproject="server" | module Eliom_openid >>~]|<<div class="odocwiki_info"|~This functor build a hidden service that will be used
     to receive the remote server~'s data~.

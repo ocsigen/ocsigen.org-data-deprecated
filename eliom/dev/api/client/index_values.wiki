@@ -364,8 +364,12 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="cursor"| value Eliom_content.Html5.Manip.SetCss.cursor >> ~[<<a_api subproject="client" | module Eliom_content.Html5.Manip.SetCss >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="cursor"| value Eliom_content.Html5.Manip.Css.cursor >> ~[<<a_api subproject="client" | module Eliom_content.Html5.Manip.Css >>~]||
 |@@ @style="tet-align: left;"@@\\D|
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="debug"| value Eliom_lib.debug >> ~[<<a_api subproject="client" | module Eliom_lib >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="debug_exn"| value Eliom_lib.debug_exn >> ~[<<a_api subproject="client" | module Eliom_lib >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="debug"| value Eliom_lib.debug >> ~[<<a_api subproject="client" | module Eliom_lib >>~]|<<div class="odocwiki_info"|~Deprecated~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="debug_exn"| value Eliom_lib.debug_exn >> ~[<<a_api subproject="client" | module Eliom_lib >>~]|<<div class="odocwiki_info"|~Deprecated~.
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="debug_timings"| value Eliom_config.debug_timings >> ~[<<a_api subproject="client" | module Eliom_config >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="debug_var"| value Eliom_lib.debug_var >> ~[<<a_api subproject="client" | module Eliom_lib >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="decode"| value Eliom_lib.Url.decode >> ~[<<a_api subproject="client" | module Eliom_lib.Url >>~]||
@@ -447,6 +451,7 @@
 >>
 |
 |@@ @style="tet-align: left;"@@\\E|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="eliom"| value Eliom_lib.Lwt_log.eliom >> ~[<<a_api subproject="client" | module Eliom_lib.Lwt_log >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="emptyCells"| value Eliom_content.Html5.Manip.SetCss.emptyCells >> ~[<<a_api subproject="client" | module Eliom_content.Html5.Manip.SetCss >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="emptyCells"| value Eliom_content.Html5.Manip.Css.emptyCells >> ~[<<a_api subproject="client" | module Eliom_content.Html5.Manip.Css >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="empty_nl_params_set"| value Eliom_parameter.empty_nl_params_set >> ~[<<a_api subproject="client" | module Eliom_parameter >>~]||
@@ -454,8 +459,12 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="encode"| value Eliom_lib.Url.encode >> ~[<<a_api subproject="client" | module Eliom_lib.Url >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="encode_form_value"| value Eliom_lib.encode_form_value >> ~[<<a_api subproject="client" | module Eliom_lib >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="encode_header_value"| value Eliom_lib.encode_header_value >> ~[<<a_api subproject="client" | module Eliom_lib >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="error"| value Eliom_lib.error >> ~[<<a_api subproject="client" | module Eliom_lib >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="error_any"| value Eliom_lib.error_any >> ~[<<a_api subproject="client" | module Eliom_lib >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="error"| value Eliom_lib.error >> ~[<<a_api subproject="client" | module Eliom_lib >>~]|<<div class="odocwiki_info"|~Deprecated~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="error_any"| value Eliom_lib.error_any >> ~[<<a_api subproject="client" | module Eliom_lib >>~]|<<div class="odocwiki_info"|~Deprecated~.
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="exit_to"| value Eliom_client.exit_to >> ~[<<a_api subproject="client" | module Eliom_client >>~]|<<div class="odocwiki_info"|~Stop current program and load a new page~.
 >>
 |
@@ -906,7 +915,6 @@
 >>
 |
 |@@ @style="tet-align: left;"@@\\J|
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="js_array_to_list"| value Eliom_lib.js_array_to_list >> ~[<<a_api subproject="client" | module Eliom_lib >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="js_script"| value Eliom_mkforms.MakeForms.js_script >> ~[<<a_api subproject="client" | module Eliom_mkforms.MakeForms >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|js~_script ~~uri ~(~)>> creates a <<span class="odocwiki_inlinecode"|~<script~>>> node that
     reference a javascript file~.
 >>
@@ -920,7 +928,9 @@
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="jsalert"| value Eliom_lib.jsalert >> ~[<<a_api subproject="client" | module Eliom_lib >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="jsdebug"| value Eliom_lib.jsdebug >> ~[<<a_api subproject="client" | module Eliom_lib >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="jsdebug"| value Eliom_lib.jsdebug >> ~[<<a_api subproject="client" | module Eliom_lib >>~]|<<div class="odocwiki_info"|~Deprecated~.
+>>
+|
 |@@ @style="tet-align: left;"@@\\L|
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="left"| value Eliom_content.Html5.Manip.SetCss.left >> ~[<<a_api subproject="client" | module Eliom_content.Html5.Manip.SetCss >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="left"| value Eliom_content.Html5.Manip.Css.left >> ~[<<a_api subproject="client" | module Eliom_content.Html5.Manip.Css >>~]||
@@ -1395,6 +1405,8 @@
 |@@ @style="tet-align: left;"@@\\R|
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="radio"| value Eliom_parameter.radio >> ~[<<a_api subproject="client" | module Eliom_parameter >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="radio"| value Eliom_mkforms.FORMS_PARAM.radio >> ~[<<a_api subproject="client" | module Eliom_mkforms.FORMS_PARAM >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="raise_error"| value Eliom_lib.Lwt_log.raise_error >> ~[<<a_api subproject="client" | module Eliom_lib.Lwt_log >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="raise_error_f"| value Eliom_lib.Lwt_log.raise_error_f >> ~[<<a_api subproject="client" | module Eliom_lib.Lwt_log >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="raw_button"| value Eliom_mkforms.MakeForms.raw_button >> ~[<<a_api subproject="client" | module Eliom_mkforms.MakeForms >>~]|<<div class="odocwiki_info"|~Creates a <<span class="odocwiki_inlinecode"|~<button~>>> tag with untyped string content
 >>
 |
