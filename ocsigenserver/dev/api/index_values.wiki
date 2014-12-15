@@ -117,9 +117,6 @@
 |@@class="odocwiki_index"@ @@<<a_api text="console"| value Ocsigen_messages.console >> ~[<<a_api | module Ocsigen_messages >>~]|<<div class="odocwiki_info"|~Write a message in the console ~(if not called in silent mode~)
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api text="console2"| value Ocsigen_messages.console2 >> ~[<<a_api | module Ocsigen_messages >>~]|<<div class="odocwiki_info"|~Write a message in the console ~(if not called in silent mode~)
->>
-|
 |@@class="odocwiki_index"@ @@<<a_api text="consume"| value Ocsigen_stream.consume >> ~[<<a_api | module Ocsigen_stream >>~]|<<div class="odocwiki_info"|~Consume without cancelling~.
 >>
 |
@@ -161,19 +158,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="deactivate"| value Ocsigen_comet.Security.deactivate >> ~[<<a_api | module Ocsigen_comet.Security >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|deactivate ~(~)>> ceases all ~Comet related activity~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api text="debug"| value Ocsigen_messages.debug >> ~[<<a_api | module Ocsigen_messages >>~]|<<div class="odocwiki_info"|~Write a message only in debugging mode ~(~-~V option~) ~- ~Non cooperative
->>
-|
 |@@class="odocwiki_index"@ @@<<a_api text="debug"| value Ocsigen_lib_base.debug >> ~[<<a_api | module Ocsigen_lib_base >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="debug2"| value Ocsigen_messages.debug2 >> ~[<<a_api | module Ocsigen_messages >>~]|<<div class="odocwiki_info"|~Write a message only in debugging mode ~(~-~V option~) ~- ~Non cooperative
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api text="debug_noel"| value Ocsigen_messages.debug_noel >> ~[<<a_api | module Ocsigen_messages >>~]|<<div class="odocwiki_info"|~Same as <<span class="odocwiki_inlinecode"|debug>> without new line at the end ~- ~Non cooperative
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api text="debug_noel2"| value Ocsigen_messages.debug_noel2 >> ~[<<a_api | module Ocsigen_messages >>~]|<<div class="odocwiki_info"|~Same as <<span class="odocwiki_inlinecode"|debug>> without new line at the end ~- ~Non cooperative
->>
-|
 |@@class="odocwiki_index"@ @@<<a_api text="decode"| value Ocsigen_lib.Url.decode >> ~[<<a_api | module Ocsigen_lib.Url >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="default"| value Ocsigen_http_frame.Result.default >> ~[<<a_api | module Ocsigen_http_frame.Result >>~]|<<div class="odocwiki_info"|~Default <<span class="odocwiki_inlinecode"|result>> to use as a base for constructing others~.
 >>
@@ -613,11 +598,6 @@
     ~Moreover~, if the optional parameter <<span class="odocwiki_inlinecode"|~?respect~_pipeline>> is <<span class="odocwiki_inlinecode"|true>>~,
     the extension will ask the server to respect the order of the
     pipeline~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api text="register_section"| value Ocsigen_messages.register_section >> ~[<<a_api | module Ocsigen_messages >>~]|<<div class="odocwiki_info"|~Register sections ~(so as to be able to dynamically change their level~)
-    ~Level change is obtain by piping `logs~: ~<section~_name~> ~<level~_name~>` to the
-    ~Ocsigen command~-pipe~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="reload"| value Ocsigen_server.reload >> ~[<<a_api | module Ocsigen_server >>~]||
