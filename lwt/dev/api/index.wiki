@@ -148,7 +148,7 @@ contains~:
 
 
 
-==@@id="2_Syntaxextensions"@@~Syntax extensions==
+==@@id="2_caml4syntaxextensions"@@caml~4 syntax extensions==
 
 
 
@@ -170,7 +170,7 @@ penalty when using logging by inlining level tests~.
 
 
 
-==@@id="2_Ppxsyntaxextension"@@~Ppx syntax extension==
+==@@id="2_ppxsyntaxextension"@@ppx syntax extension==
 
 
 
@@ -186,35 +186,6 @@ penalty when using logging by inlining level tests~.
 
 
 
-==@@id="2_Terminalmanipulation"@@~Terminal manipulation==
-
-
-
-~The package //lwt~.text// provides~:
-* terminal manipulation through the module <<a_api | module Lwt_term >>
-* text channels which behaves as byte channels but are aware of the
-  text encoding
-* a cooperative~, fully customizable read~-line facility
-
-
-|<<a_api | module Lwt_read_line >>|<<div class="odocwiki_info"|~Interactive line input
->>
-|
-|<<a_api | module Lwt_term >>|<<div class="odocwiki_info"|~Terminal control
->>
-|
-|<<a_api | module Lwt_text >>|<<div class="odocwiki_info"|~Text channels
->>
-|
-
-
-
-
-~This package depends on the //core// library~, and the //lwt~.react//~,
-//lwt~.unix//~, //text// packages~.
-
-
-
 ==@@id="2_Miscellaneous"@@~Miscellaneous==
 
 
@@ -225,9 +196,6 @@ functions~/packages into ~Lwt~.
 
 
 |<<a_api | module Lwt_glib >>|<<div class="odocwiki_info"|~Glib integration
->>
-|
-|<<a_api | module Lwt_lib >>|<<div class="odocwiki_info"|~Cooperative unix system calls
 >>
 |
 |<<a_api | module Lwt_preemptive >>|<<div class="odocwiki_info"|~This module allows to mix preemptive threads with <<span class="odocwiki_inlinecode"|~Lwt>>

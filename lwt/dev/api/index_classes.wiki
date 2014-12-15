@@ -4,10 +4,6 @@
 |@@class="odocwiki_index"@ @@<<a_api text="abstract"| class Lwt_engine.abstract >> ~[<<a_api | module Lwt_engine >>~]|<<div class="odocwiki_info"|~Abstract class for engines~.
 >>
 |
-|@@ @style="tet-align: left;"@@\\C|
-|@@class="odocwiki_index"@ @@<<a_api text="clipboard"| class Lwt_read_line.clipboard >> ~[<<a_api | module Lwt_read_line >>~]|<<div class="odocwiki_info"|~Type of a clipboard~.
->>
-|
 |@@ @style="tet-align: left;"@@\\L|
 |@@class="odocwiki_index"@ @@<<a_api text="libev"| class Lwt_engine.libev >> ~[<<a_api | module Lwt_engine >>~]|<<div class="odocwiki_info"|~Engine based on libev~.
 >>

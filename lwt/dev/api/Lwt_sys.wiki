@@ -5,7 +5,7 @@
 <<pre id="EXCEPTIONNot_available" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|exception>> <<span class="odocwiki_name"|Not_available>> <<span class="ocsforge_color_keyword"|of>> <<span class="odocwiki_type"|string>>>><<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|~Not~_available~(feature~)>> is an exception that may be raised when
       a feature is not available on the current system~.
 >>
-<<pre id="VALwindows" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|windows>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|bool>>>><<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|true>> iff running on windows~.
+<<pre id="VALwindows" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|windows>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|bool>>>><<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|true>> iff running on windows~. ~Deprecated~; use <<span class="odocwiki_inlinecode"|~Sys~.win~3~2>>~.
 >>
 <<pre class="ocsforge_color odocwiki_code" id="TYPEfeature"|<<span class="ocsforge_color_keyword"|type>> <<span class="odocwiki_name"|feature>> <<span class="ocsforge_color_delimiter"|~=>> <<span class="odocwiki_type"|\\  [ `fd_passing\\  | `fdatasync\\  | `get_affinity\\  | `get_cpu\\  | `get_credentials\\  | `libev\\  | `madvise\\  | `mincore\\  | `recv_msg\\  | `send_msg\\  | `set_affinity\\  | `wait4 ]>> >><<div class="odocwiki_info"|~Features that can be tested~.
 >>

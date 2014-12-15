@@ -27,10 +27,6 @@
       push an element~.
 >>
 |
-|@@ @style="tet-align: left;"@@\\I|
-|@@class="odocwiki_index"@ @@<<a_api text="Interrupt"| exception Lwt_read_line.Interrupt >> ~[<<a_api | module Lwt_read_line >>~]|<<div class="odocwiki_info"|~Exception raised when the user press <<span class="odocwiki_inlinecode"|~Ctrl~^~D>>
->>
-|
 |@@ @style="tet-align: left;"@@\\L|
 |@@class="odocwiki_index"@ @@<<a_api text="Logger_closed"| exception Lwt_log_core.Logger_closed >> ~[<<a_api | module Lwt_log_core >>~]|<<div class="odocwiki_info"|~Exception raised when trying to use a closed logger
 >>

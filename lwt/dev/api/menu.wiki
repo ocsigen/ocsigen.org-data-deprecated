@@ -27,18 +27,13 @@
 ===[[Lwt_sys|Lwt_sys]]
 ==~Reactive programming helpers
 ===[[Lwt_react|Lwt_react]]
-==~Syntax extensions
+==caml~4 syntax extensions
 ===[[Pa_lwt|Pa_lwt]]
 ===[[Pa_lwt_log|Pa_lwt_log]]
-==~Ppx syntax extension
+==ppx syntax extension
 ===[[Ppx_lwt|Ppx_lwt]]
-==~Terminal manipulation
-===[[Lwt_read_line|Lwt_read_line]]
-===[[Lwt_term|Lwt_term]]
-===[[Lwt_text|Lwt_text]]
 ==~Miscellaneous
 ===[[Lwt_glib|Lwt_glib]]
-===[[Lwt_lib|Lwt_lib]]
 ===[[Lwt_preemptive|Lwt_preemptive]]
 ===[[Lwt_ssl|Lwt_ssl]]
 ==~Index

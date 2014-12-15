@@ -18,7 +18,6 @@
 |@@class="odocwiki_index"@ @@<<a_api text="closed"| method Lwt_stream.bounded_push#closed >> ~[<<a_api | module Lwt_stream >>~]|<<div class="odocwiki_info"|~Is the stream closed ~?
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api text="contents"| method Lwt_read_line.clipboard#contents >> ~[<<a_api | module Lwt_read_line >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="count"| method Lwt_stream.bounded_push#count >> ~[<<a_api | module Lwt_stream >>~]|<<div class="odocwiki_info"|~Number of elements in the stream queue~.
 >>
 |
@@ -75,7 +74,6 @@
 |@@class="odocwiki_index"@ @@<<a_api text="select"| method Lwt_engine.select_based#select >> ~[<<a_api | module Lwt_engine >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|select fds~_r fds~_w timeout>> waits for either~:
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api text="set"| method Lwt_read_line.clipboard#set >> ~[<<a_api | module Lwt_read_line >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="set_reference"| method Lwt_stream.bounded_push#set_reference >> ~[<<a_api | module Lwt_stream >>~]|<<div class="odocwiki_info"|~Set the reference to an external source~.
 >>
 |

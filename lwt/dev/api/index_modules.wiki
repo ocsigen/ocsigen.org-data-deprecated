@@ -4,22 +4,8 @@
 |@@class="odocwiki_index"@ @@<<a_api text="BE"| module Lwt_io.BE >> ~[<<a_api | module Lwt_io >>~]|<<div class="odocwiki_info"|~Reading~/writing of numbers in big~-endian
 >>
 |
-|@@ @style="tet-align: left;"@@\\C|
-|@@class="odocwiki_index"@ @@<<a_api text="Command"| module Lwt_read_line.Command >> ~[<<a_api | module Lwt_read_line >>~]|<<div class="odocwiki_info"|~Readline commands
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api text="Control"| module Lwt_read_line.Control >> ~[<<a_api | module Lwt_read_line >>~]|<<div class="odocwiki_info"|~Controlling a running read~-line instance
->>
-|
-|@@ @style="tet-align: left;"@@\\D|
-|@@class="odocwiki_index"@ @@<<a_api text="Draw"| module Lwt_term.Draw >> ~[<<a_api | module Lwt_term >>~]|<<div class="odocwiki_info"|~Drawing helpers
->>
-|
 |@@ @style="tet-align: left;"@@\\E|
 |@@class="odocwiki_index"@ @@<<a_api text="E"| module Lwt_react.E >> ~[<<a_api | module Lwt_react >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="Engine"| module Lwt_read_line.Engine >> ~[<<a_api | module Lwt_read_line >>~]|<<div class="odocwiki_info"|~Engine
->>
-|
 |@@ @style="tet-align: left;"@@\\I|
 |@@class="odocwiki_index"@ @@<<a_api text="Infix"| module Lwt.Infix >> ~[<<a_api | module Lwt >>~]|<<div class="odocwiki_info"|~Infix operators~.
 >>
@@ -47,9 +33,6 @@
 |@@class="odocwiki_index"@ @@<<a_api text="Lwt_engine"| module Lwt_engine >> |<<div class="odocwiki_info"|~Lwt unix main loop engine
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api text="Lwt_event"| module Lwt_event >> |<<div class="odocwiki_info"|~Events utilities
->>
-|
 |@@class="odocwiki_index"@ @@<<a_api text="Lwt_gc"| module Lwt_gc >> |<<div class="odocwiki_info"|~Interaction with the garbage collector
 >>
 |
@@ -57,9 +40,6 @@
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="Lwt_io"| module Lwt_io >> |<<div class="odocwiki_info"|~Buffered byte channels
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api text="Lwt_lib"| module Lwt_lib >> |<<div class="odocwiki_info"|~Cooperative unix system calls
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="Lwt_list"| module Lwt_list >> |<<div class="odocwiki_info"|~List helpers
@@ -97,13 +77,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="Lwt_react"| module Lwt_react >> |<<div class="odocwiki_info"|~React utilities
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api text="Lwt_read_line"| module Lwt_read_line >> |<<div class="odocwiki_info"|~Interactive line input
->>
-|
 |@@class="odocwiki_index"@ @@<<a_api text="Lwt_sequence"| module Lwt_sequence >> |<<div class="odocwiki_info"|~Mutable sequence of elements
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api text="Lwt_signal"| module Lwt_signal >> |<<div class="odocwiki_info"|~Signals utilities
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="Lwt_ssl"| module Lwt_ssl >> |<<div class="odocwiki_info"|~O~Caml~-~S~S~L integration
@@ -118,25 +92,13 @@
 |@@class="odocwiki_index"@ @@<<a_api text="Lwt_sys"| module Lwt_sys >> |<<div class="odocwiki_info"|~System informations~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api text="Lwt_term"| module Lwt_term >> |<<div class="odocwiki_info"|~Terminal control
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api text="Lwt_text"| module Lwt_text >> |<<div class="odocwiki_info"|~Text channels
->>
-|
 |@@class="odocwiki_index"@ @@<<a_api text="Lwt_throttle"| module Lwt_throttle >> |<<div class="odocwiki_info"|~Rate limiters
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="Lwt_timeout"| module Lwt_timeout >> |<<div class="odocwiki_info"|~Timeouts
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api text="Lwt_top"| module Lwt_top >> |<<div class="odocwiki_info"|~Toplevel configuration
->>
-|
 |@@class="odocwiki_index"@ @@<<a_api text="Lwt_unix"| module Lwt_unix >> |<<div class="odocwiki_info"|~Cooperative system calls
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api text="Lwt_util"| module Lwt_util >> |<<div class="odocwiki_info"|~Note~: ~This lodule is deprecated~.
 >>
 |
 |@@ @style="tet-align: left;"@@\\M|
@@ -155,14 +117,6 @@
 |@@ @style="tet-align: left;"@@\\S|
 |@@class="odocwiki_index"@ @@<<a_api text="S"| module Lwt_react.S >> ~[<<a_api | module Lwt_react >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="Section"| module Lwt_log_core.Section >> ~[<<a_api | module Lwt_log_core >>~]|<<div class="odocwiki_info"|~Sections
->>
-|
-|@@ @style="tet-align: left;"@@\\T|
-|@@class="odocwiki_index"@ @@<<a_api text="Terminal"| module Lwt_read_line.Terminal >> ~[<<a_api | module Lwt_read_line >>~]|<<div class="odocwiki_info"|~Rendering to the terminal
->>
-|
-|@@ @style="tet-align: left;"@@\\Z|
-|@@class="odocwiki_index"@ @@<<a_api text="Zone"| module Lwt_term.Zone >> ~[<<a_api | module Lwt_term >>~]|<<div class="odocwiki_info"|~Off~-screen zones
 >>
 |
 \\
