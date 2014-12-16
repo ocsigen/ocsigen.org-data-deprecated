@@ -35,6 +35,12 @@
 >>
 <<pre id="VALfail" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|fail>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|exn <<span class="ocsforge_color_delimiter"| -> >> 'a <<a_api text="t" | type Lwt.t >>>>>><<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|fail e>> is a thread that fails with the exception <<span class="odocwiki_inlinecode"|e>>~.
 >>
+<<pre id="VALfail_with" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|fail~_with>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|string <<span class="ocsforge_color_delimiter"| -> >> 'a <<a_api text="t" | type Lwt.t >>>>>><<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|fail~_with msg>> is a thread that fails with the exception
+      <<span class="odocwiki_inlinecode"|~Failure msg>>~.
+>>
+<<pre id="VALfail_invalid_arg" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|fail~_invalid~_arg>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|string <<span class="ocsforge_color_delimiter"| -> >> 'a <<a_api text="t" | type Lwt.t >>>>>><<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|fail~_invalid~_arg msg>> is a thread that fails with the exception
+      <<span class="odocwiki_inlinecode"|~Invalid~_argument msg>>~.
+>>
 <<pre id="VALbind" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|bind>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|'a <<a_api text="t" | type Lwt.t >> <<span class="ocsforge_color_delimiter"| -> >> <<span class="ocsforge_color_delimiter"| ( >>'a <<span class="ocsforge_color_delimiter"| -> >> 'b <<a_api text="t" | type Lwt.t >><<span class="ocsforge_color_delimiter"| ) >> <<span class="ocsforge_color_delimiter"| -> >> 'b <<a_api text="t" | type Lwt.t >>>>>><<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|bind t f>> is a thread which first waits for the thread <<span class="odocwiki_inlinecode"|t>> to
       terminate and then~, if the thread succeeds~, behaves as the
       application of function <<span class="odocwiki_inlinecode"|f>> to the return value of <<span class="odocwiki_inlinecode"|t>>~.  ~If the

@@ -2,6 +2,8 @@
   type +'a t
   val return : 'a -> 'a Lwt.t
   val fail : exn -> 'a Lwt.t
+  val fail_with : string -> 'a Lwt.t
+  val fail_invalid_arg : string -> 'a Lwt.t
   val bind : 'a Lwt.t -> ('a -> 'b Lwt.t) -> 'b Lwt.t
   val ( >>= ) : 'a Lwt.t -> ('a -> 'b Lwt.t) -> 'b Lwt.t
   val ( =<< ) : ('a -> 'b Lwt.t) -> 'a Lwt.t -> 'b Lwt.t

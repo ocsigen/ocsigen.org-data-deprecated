@@ -383,6 +383,14 @@
 |@@class="odocwiki_index"@ @@<<a_api text="fail"| value Lwt.fail >> ~[<<a_api | module Lwt >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|fail e>> is a thread that fails with the exception <<span class="odocwiki_inlinecode"|e>>~.
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api text="fail_invalid_arg"| value Lwt.fail_invalid_arg >> ~[<<a_api | module Lwt >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|fail~_invalid~_arg msg>> is a thread that fails with the exception
+      <<span class="odocwiki_inlinecode"|~Invalid~_argument msg>>~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="fail_with"| value Lwt.fail_with >> ~[<<a_api | module Lwt >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|fail~_with msg>> is a thread that fails with the exception
+      <<span class="odocwiki_inlinecode"|~Failure msg>>~.
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api text="fake_event"| value Lwt_engine.fake_event >> ~[<<a_api | module Lwt_engine >>~]|<<div class="odocwiki_info"|~Event which does nothing when stopped~.
 >>
 |
