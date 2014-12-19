@@ -55,9 +55,9 @@
   val read_line_opt : Lwt_io.input_channel -> string option Lwt.t
   val read_lines : Lwt_io.input_channel -> string Lwt_stream.t
   val read : ?count:int -> Lwt_io.input_channel -> string Lwt.t
-  val read_into : Lwt_io.input_channel -> string -> int -> int -> int Lwt.t
+  val read_into : Lwt_io.input_channel -> Bytes.t -> int -> int -> int Lwt.t
   val read_into_exactly :
-    Lwt_io.input_channel -> string -> int -> int -> unit Lwt.t
+    Lwt_io.input_channel -> Bytes.t -> int -> int -> unit Lwt.t
   val read_value : Lwt_io.input_channel -> 'a Lwt.t
   val write_char : Lwt_io.output_channel -> char -> unit Lwt.t
   val write_chars : Lwt_io.output_channel -> char Lwt_stream.t -> unit Lwt.t
@@ -65,8 +65,13 @@
   val write_line : Lwt_io.output_channel -> string -> unit Lwt.t
   val write_lines :
     Lwt_io.output_channel -> string Lwt_stream.t -> unit Lwt.t
-  val write_from : Lwt_io.output_channel -> string -> int -> int -> int Lwt.t
+  val write_from :
+    Lwt_io.output_channel -> Bytes.t -> int -> int -> int Lwt.t
+  val write_from_string :
+    Lwt_io.output_channel -> string -> int -> int -> int Lwt.t
   val write_from_exactly :
+    Lwt_io.output_channel -> Bytes.t -> int -> int -> unit Lwt.t
+  val write_from_string_exactly :
     Lwt_io.output_channel -> string -> int -> int -> unit Lwt.t
   val write_value :
     Lwt_io.output_channel ->
@@ -166,5 +171,4 @@
     'a Lwt_io.channel -> (Lwt_io.direct_access -> 'b Lwt.t) -> 'b Lwt.t
   val default_buffer_size : unit -> int
   val set_default_buffer_size : int -> unit
-  val of_string : mode:'mode Lwt_io.mode -> string -> 'mode Lwt_io.channel
 end >>

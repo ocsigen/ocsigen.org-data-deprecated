@@ -143,11 +143,11 @@
       starting at offset <<span class="odocwiki_inlinecode"|ofs~1>> to <<span class="odocwiki_inlinecode"|buf~2>> starting at offset <<span class="odocwiki_inlinecode"|ofs~2>>~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api text="blit_bytes_string"| value Lwt_bytes.blit_bytes_string >> ~[<<a_api | module Lwt_bytes >>~]|<<div class="odocwiki_info"|~Same as blit but the second buffer is a string instead of a byte
+|@@class="odocwiki_index"@ @@<<a_api text="blit_from_bytes"| value Lwt_bytes.blit_from_bytes >> ~[<<a_api | module Lwt_bytes >>~]|<<div class="odocwiki_info"|~Same as blit but the first buffer is a string instead of a byte
       array~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api text="blit_string_bytes"| value Lwt_bytes.blit_string_bytes >> ~[<<a_api | module Lwt_bytes >>~]|<<div class="odocwiki_info"|~Same as blit but the first buffer is a string instead of a byte
+|@@class="odocwiki_index"@ @@<<a_api text="blit_to_bytes"| value Lwt_bytes.blit_to_bytes >> ~[<<a_api | module Lwt_bytes >>~]|<<div class="odocwiki_info"|~Same as blit but the second buffer is a string instead of a byte
       array~.
 >>
 |
@@ -1036,6 +1036,10 @@
 |@@class="odocwiki_index"@ @@<<a_api text="of_array"| value Lwt_stream.of_array >> ~[<<a_api | module Lwt_stream >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|of~_array a>> creates a stream returning all elements of <<span class="odocwiki_inlinecode"|a>>
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api text="of_bytes"| value Lwt_bytes.of_bytes >> ~[<<a_api | module Lwt_bytes >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|of~_bytes buf>> returns a newly allocated byte array with the
+      same contents as <<span class="odocwiki_inlinecode"|buf>>~.
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api text="of_bytes"| value Lwt_io.of_bytes >> ~[<<a_api | module Lwt_io >>~]|<<div class="odocwiki_info"|~Create a channel from a byte array~.
 >>
 |
@@ -1053,8 +1057,8 @@
         value is available on the stream~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api text="of_string"| value Lwt_bytes.of_string >> ~[<<a_api | module Lwt_bytes >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|of~_string str>> returns a newly allocated byte array with the
-      same contents as <<span class="odocwiki_inlinecode"|str>>~.
+|@@class="odocwiki_index"@ @@<<a_api text="of_string"| value Lwt_bytes.of_string >> ~[<<a_api | module Lwt_bytes >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|of~_string buf>> returns a newly allocated byte array with the
+      same contents as <<span class="odocwiki_inlinecode"|buf>>~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="of_string"| value Lwt_stream.of_string >> ~[<<a_api | module Lwt_stream >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|of~_string str>> creates a stream returning all characters of
@@ -1634,6 +1638,10 @@
 |@@class="odocwiki_index"@ @@<<a_api text="timer_count"| value Lwt_engine.timer_count >> ~[<<a_api | module Lwt_engine >>~]|<<div class="odocwiki_info"|~Returns the number of registered timers~.
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api text="to_bytes"| value Lwt_bytes.to_bytes >> ~[<<a_api | module Lwt_bytes >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|to~_bytes buf>> returns newly allocated bytes with the same
+      contents as <<span class="odocwiki_inlinecode"|buf>>~.
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api text="to_list"| value Lwt_stream.to_list >> ~[<<a_api | module Lwt_stream >>~]|<<div class="odocwiki_info"|~Returns the list of elements of the given stream
 >>
 |
@@ -1685,10 +1693,10 @@
 |@@class="odocwiki_index"@ @@<<a_api text="unsafe_blit"| value Lwt_bytes.unsafe_blit >> ~[<<a_api | module Lwt_bytes >>~]|<<div class="odocwiki_info"|~Same as <<a_api | val Lwt_bytes.blit >> but without bound checking~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api text="unsafe_blit_bytes_string"| value Lwt_bytes.unsafe_blit_bytes_string >> ~[<<a_api | module Lwt_bytes >>~]|<<div class="odocwiki_info"|~Same as <<a_api | val Lwt_bytes.blit_bytes_string >> but without bound checking~.
+|@@class="odocwiki_index"@ @@<<a_api text="unsafe_blit_from_bytes"| value Lwt_bytes.unsafe_blit_from_bytes >> ~[<<a_api | module Lwt_bytes >>~]|<<div class="odocwiki_info"|~Same as <<span class="odocwiki_inlinecode"|blit~_string~_bytes>> but without bound checking~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api text="unsafe_blit_string_bytes"| value Lwt_bytes.unsafe_blit_string_bytes >> ~[<<a_api | module Lwt_bytes >>~]|<<div class="odocwiki_info"|~Same as <<a_api | val Lwt_bytes.blit_string_bytes >> but without bound checking~.
+|@@class="odocwiki_index"@ @@<<a_api text="unsafe_blit_to_bytes"| value Lwt_bytes.unsafe_blit_to_bytes >> ~[<<a_api | module Lwt_bytes >>~]|<<div class="odocwiki_info"|~Same as <<span class="odocwiki_inlinecode"|blit~_bytes~_string>> but without bound checking~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="unsafe_fill"| value Lwt_bytes.unsafe_fill >> ~[<<a_api | module Lwt_bytes >>~]|<<div class="odocwiki_info"|~Same as <<a_api | val Lwt_bytes.fill >> but without bound checking~.
@@ -1856,7 +1864,7 @@
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="write"| value Lwt_bytes.write >> ~[<<a_api | module Lwt_bytes >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="write"| value Lwt_unix.write >> ~[<<a_api | module Lwt_unix >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|read fd buf ofs len>> has the same semantic as <<span class="odocwiki_inlinecode"|~Unix~.write>>~, but
+|@@class="odocwiki_index"@ @@<<a_api text="write"| value Lwt_unix.write >> ~[<<a_api | module Lwt_unix >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|write fd buf ofs len>> has the same semantic as <<span class="odocwiki_inlinecode"|~Unix~.write>>~, but
       is cooperative
 >>
 |
@@ -1887,6 +1895,12 @@
       bytes from <<span class="odocwiki_inlinecode"|buffer>> at offset <<span class="odocwiki_inlinecode"|offset>> to <<span class="odocwiki_inlinecode"|oc>>
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api text="write_from_string"| value Lwt_io.write_from_string >> ~[<<a_api | module Lwt_io >>~]|<<div class="odocwiki_info"|~See <<a_api | val Lwt_io.write >>~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="write_from_string_exactly"| value Lwt_io.write_from_string_exactly >> ~[<<a_api | module Lwt_io >>~]|<<div class="odocwiki_info"|~See <<a_api | val Lwt_io.write_from_exactly >>~.
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api text="write_int"| value Lwt_io.NumberIO.write_int >> ~[<<a_api | module Lwt_io.NumberIO >>~]|<<div class="odocwiki_info"|~Writes an ocaml int as a ~3~2~-bits integer
 >>
 |
@@ -1898,6 +1912,9 @@
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="write_lines"| value Lwt_io.write_lines >> ~[<<a_api | module Lwt_io >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|write~_lines oc lines>> writes all lines of <<span class="odocwiki_inlinecode"|lines>> to <<span class="odocwiki_inlinecode"|oc>>
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="write_string"| value Lwt_unix.write_string >> ~[<<a_api | module Lwt_unix >>~]|<<div class="odocwiki_info"|~See <<a_api | val Lwt_unix.write >>~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="write_value"| value Lwt_io.write_value >> ~[<<a_api | module Lwt_io >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|write~_value oc ~?flags x>> marshals the value <<span class="odocwiki_inlinecode"|x>> to <<span class="odocwiki_inlinecode"|oc>>

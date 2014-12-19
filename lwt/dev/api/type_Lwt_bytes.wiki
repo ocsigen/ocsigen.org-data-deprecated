@@ -3,25 +3,22 @@
       (char, Bigarray.int8_unsigned_elt, Bigarray.c_layout) Bigarray.Array1.t
   val create : int -> Lwt_bytes.t
   val length : Lwt_bytes.t -> int
-  external get : Lwt_bytes.t -> int -> char = "%caml_ba_ref_1"
-  external set : Lwt_bytes.t -> int -> char -> unit = "%caml_ba_set_1"
-  external unsafe_get : Lwt_bytes.t -> int -> char = "%caml_ba_unsafe_ref_1"
-  external unsafe_set : Lwt_bytes.t -> int -> char -> unit
-    = "%caml_ba_unsafe_set_1"
+  val get : Lwt_bytes.t -> int -> char
+  val set : Lwt_bytes.t -> int -> char -> unit
+  val unsafe_get : Lwt_bytes.t -> int -> char
+  val unsafe_set : Lwt_bytes.t -> int -> char -> unit
+  val of_bytes : Bytes.t -> Lwt_bytes.t
   val of_string : string -> Lwt_bytes.t
+  val to_bytes : Lwt_bytes.t -> Bytes.t
   val to_string : Lwt_bytes.t -> string
   val blit : Lwt_bytes.t -> int -> Lwt_bytes.t -> int -> int -> unit
-  val blit_string_bytes : string -> int -> Lwt_bytes.t -> int -> int -> unit
-  val blit_bytes_string : Lwt_bytes.t -> int -> string -> int -> int -> unit
-  external unsafe_blit :
-    Lwt_bytes.t -> int -> Lwt_bytes.t -> int -> int -> unit
-    = "lwt_unix_blit_bytes_bytes" "noalloc"
-  external unsafe_blit_string_bytes :
-    string -> int -> Lwt_bytes.t -> int -> int -> unit
-    = "lwt_unix_blit_string_bytes" "noalloc"
-  external unsafe_blit_bytes_string :
-    Lwt_bytes.t -> int -> string -> int -> int -> unit
-    = "lwt_unix_blit_bytes_string" "noalloc"
+  val blit_from_bytes : Bytes.t -> int -> Lwt_bytes.t -> int -> int -> unit
+  val blit_to_bytes : Lwt_bytes.t -> int -> Bytes.t -> int -> int -> unit
+  val unsafe_blit : Lwt_bytes.t -> int -> Lwt_bytes.t -> int -> int -> unit
+  val unsafe_blit_from_bytes :
+    Bytes.t -> int -> Lwt_bytes.t -> int -> int -> unit
+  val unsafe_blit_to_bytes :
+    Lwt_bytes.t -> int -> Bytes.t -> int -> int -> unit
   val proxy : Lwt_bytes.t -> int -> int -> Lwt_bytes.t
   val extract : Lwt_bytes.t -> int -> int -> Lwt_bytes.t
   val copy : Lwt_bytes.t -> Lwt_bytes.t
