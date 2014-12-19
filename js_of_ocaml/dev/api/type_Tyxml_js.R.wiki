@@ -256,7 +256,9 @@
       val a_stitchtype :
         [< `FractalNoise | `Turbulence ] wrap -> [> `TypeStitch ] attrib
       val a_xlinkshow : [< `New | `Replace ] wrap -> [> `Xlink_show ] attrib
-      val a_xlinkactuate : [< `OnRequest ] wrap -> [> `Xlink_actuate ] attrib
+      val a_xlinkactuate :
+        [< `None | `OnLoad | `OnRequest | `Other ] wrap ->
+        [> `Xlink_actuate ] attrib
       val a_target : string wrap -> [> `Xlink_target ] attrib
       val a_viewtarget : string wrap -> [> `ViewTarget ] attrib
       val a_attributename : string wrap -> [> `AttributeName ] attrib
@@ -310,12 +312,12 @@
       val a_g1 : string wrap -> [> `G1 ] attrib
       val a_g2 : string wrap -> [> `G2 ] attrib
       val a_k : string wrap -> [> `K ] attrib
-      val a_fontfamily : string wrap -> [> `FontFamily ] attrib
-      val a_fontstyle : string wrap -> [> `FontStyle ] attrib
-      val a_fontvariant : string wrap -> [> `FontVariant ] attrib
-      val a_fontweight : string wrap -> [> `FontWeight ] attrib
-      val a_fontstretch : string wrap -> [> `FontStretch ] attrib
-      val a_fontsize : string wrap -> [> `FontSize ] attrib
+      val a_fontfamily : string wrap -> [> `Font_Family ] attrib
+      val a_fontstyle : string wrap -> [> `Font_Style ] attrib
+      val a_fontvariant : string wrap -> [> `Font_Variant ] attrib
+      val a_fontweight : string wrap -> [> `Font_Weight ] attrib
+      val a_fontstretch : string wrap -> [> `Font_Stretch ] attrib
+      val a_fontsize : string wrap -> [> `Font_Size ] attrib
       val a_unicoderange : string wrap -> [> `UnicodeRange ] attrib
       val a_unitsperem : string wrap -> [> `UnitsPerEm ] attrib
       val a_stemv : Svg_types.number wrap -> [> `Stemv ] attrib
@@ -811,12 +813,19 @@
       val a_required : [< `Required ] wrap -> [> `Required ] attrib
       val a_reversed : [< `Reversed ] wrap -> [> `Reversed ] attrib
       val a_sandbox :
-        [< `AllowForms | `AllowSameOrigin | `AllowScript ] list wrap ->
-        [> `Sandbox ] attrib
+        [< `AllowForms
+         | `AllowPointerLock
+         | `AllowPopups
+         | `AllowSameOrigin
+         | `AllowScript
+         | `AllowTopNavigation ]
+        list wrap -> [> `Sandbox ] attrib
       val a_spellcheck : bool wrap -> [> `Spellcheck ] attrib
       val a_scoped : [< `Scoped ] wrap -> [> `Scoped ] attrib
       val a_seamless : [< `Seamless ] wrap -> [> `Seamless ] attrib
-      val a_sizes : Html5_types.numbers wrap -> [> `Sizes ] attrib
+      val a_sizes :
+        [< `Any | `Sizes of (Html5_types.number * Html5_types.number) list ]
+        wrap -> [> `Sizes ] attrib
       val a_span : Html5_types.number wrap -> [> `Span ] attrib
       val a_srclang : Html5_types.nmtoken wrap -> [> `XML_lang ] attrib
       val a_start : Html5_types.number wrap -> [> `Start ] attrib
@@ -828,7 +837,8 @@
         Html5_types.text wrap -> [> `User_data ] attrib
       val a_id : Html5_types.text wrap -> [> `Id ] attrib
       val a_title : Html5_types.text wrap -> [> `Title ] attrib
-      val a_xml_lang : Html5_types.nmtoken wrap -> [> `XML_lang ] attrib
+      val a_xml_lang : Html5_types.languagecode wrap -> [> `XML_lang ] attrib
+      val a_lang : Html5_types.languagecode wrap -> [> `Lang ] attrib
       val a_onabort : Xml.event_handler -> [> `OnAbort ] attrib
       val a_onafterprint : Xml.event_handler -> [> `OnAfterPrint ] attrib
       val a_onbeforeprint : Xml.event_handler -> [> `OnBeforePrint ] attrib
@@ -908,7 +918,8 @@
       val a_xmlns : [< `W3_org_1999_xhtml ] wrap -> [> `XMLns ] attrib
       val a_manifest : Xml.uri wrap -> [> `Manifest ] attrib
       val a_cite : Xml.uri wrap -> [> `Cite ] attrib
-      val a_xml_space : [< `Preserve ] wrap -> [> `XML_space ] attrib
+      val a_xml_space :
+        [< `Default | `Preserve ] wrap -> [> `XML_space ] attrib
       val a_accesskey : Html5_types.character wrap -> [> `Accesskey ] attrib
       val a_charset : Html5_types.charset wrap -> [> `Charset ] attrib
       val a_accept_charset :
@@ -1266,6 +1277,7 @@
           | `Height
           | `Hidden
           | `Id
+          | `Lang
           | `Name
           | `OnAbort
           | `OnBlur
@@ -1347,6 +1359,7 @@
           | `Height
           | `Hidden
           | `Id
+          | `Lang
           | `Mime_type
           | `Name
           | `OnAbort
@@ -1426,6 +1439,7 @@
           | `Height
           | `Hidden
           | `Id
+          | `Lang
           | `Mime_type
           | `OnAbort
           | `OnBlur
@@ -1517,6 +1531,7 @@
           | `Hidden
           | `Hreflang
           | `Id
+          | `Lang
           | `Media
           | `Mime_type
           | `OnAbort
@@ -1651,6 +1666,7 @@
           | `Form
           | `Hidden
           | `Id
+          | `Lang
           | `Name
           | `OnAbort
           | `OnBlur
@@ -1749,6 +1765,7 @@
           | `Hidden
           | `Id
           | `Label
+          | `Lang
           | `OnAbort
           | `OnBlur
           | `OnCanPlay
@@ -1851,6 +1868,7 @@
           | `Draggable
           | `Hidden
           | `Id
+          | `Lang
           | `OnAbort
           | `OnBlur
           | `OnCanPlay
@@ -1933,6 +1951,7 @@
           | `Hidden
           | `Icon
           | `Id
+          | `Lang
           | `OnAbort
           | `OnBlur
           | `OnCanPlay
@@ -2009,6 +2028,7 @@
           | `Hidden
           | `Id
           | `Label
+          | `Lang
           | `Menu_Type
           | `OnAbort
           | `OnBlur
@@ -2100,6 +2120,7 @@
           | `Href
           | `Hreflang
           | `Id
+          | `Lang
           | `Media
           | `Mime_type
           | `OnAbort
