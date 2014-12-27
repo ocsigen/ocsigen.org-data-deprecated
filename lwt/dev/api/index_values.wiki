@@ -426,9 +426,11 @@
 |
 |@@class="odocwiki_index"@ @@<<a_api text="filter"| value Lwt_stream.filter >> ~[<<a_api | module Lwt_stream >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="filter_map"| value Lwt_stream.filter_map >> ~[<<a_api | module Lwt_stream >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="filter_map_p"| value Lwt_list.filter_map_p >> ~[<<a_api | module Lwt_list >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="filter_map_s"| value Lwt_stream.filter_map_s >> ~[<<a_api | module Lwt_stream >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|filter~_map f st>> filter and map <<span class="odocwiki_inlinecode"|st>> at the same time
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api text="filter_map_s"| value Lwt_list.filter_map_s >> ~[<<a_api | module Lwt_list >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="filter_p"| value Lwt_react.E.filter_p >> ~[<<a_api | module Lwt_react.E >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="filter_p"| value Lwt_list.filter_p >> ~[<<a_api | module Lwt_list >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="filter_s"| value Lwt_react.S.filter_s >> ~[<<a_api | module Lwt_react.S >>~]||
