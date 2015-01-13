@@ -866,6 +866,7 @@
   type file_info = Ocsigen_extensions.file_info
   val to_json : ?typ:'a Deriving_Json.t -> 'a -> string
   val of_json : ?typ:'a Deriving_Json.t -> string -> 'a
+  val debug : ('a, unit, string, unit) Pervasives.format4 -> 'a
   val jsmarshal : 'a -> string
   module Lwt_log :
     sig
@@ -1089,5 +1090,4 @@
   val string_escape : string -> string
   type global_data = poly Eliom_lib_base.global_data * Eliom_wrap.unwrapper
   val global_data_unwrapper : Eliom_wrap.unwrapper
-  val debug : [ `use_lwt_log_instead ]
 end >>

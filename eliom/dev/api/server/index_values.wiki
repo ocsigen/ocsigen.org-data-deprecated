@@ -313,6 +313,9 @@
 >>
 |
 |@@ @style="tet-align: left;"@@\\D|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="debug"| value Eliom_lib.debug >> ~[<<a_api subproject="server" | module Eliom_lib >>~]|<<div class="odocwiki_info"|~Deprecated~.
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="default_appl_service_options"| value Eliom_registration.default_appl_service_options >> ~[<<a_api subproject="server" | module Eliom_registration >>~]|<<div class="odocwiki_info"|~The default options record for an eliom service~.
 >>
 |
