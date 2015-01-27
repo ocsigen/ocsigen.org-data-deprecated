@@ -6,7 +6,7 @@
 |
 |@@ @style="tet-align: left;"@@\\C|
 |@@class="odocwiki_index"@ @@<<a_api text="cleanup"| method Lwt_engine.t#cleanup >> ~[<<a_api | module Lwt_engine >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="cleanup"| method Lwt_engine.abstract#cleanup >> ~[<<a_api | module Lwt_engine >>~]|<<div class="odocwiki_info"|~Cleanup resources associated to the engine~.
+|@@class="odocwiki_index"@ @@<<a_api text="cleanup"| method Lwt_engine.abstract#cleanup >> ~[<<a_api | module Lwt_engine >>~]|<<div class="odocwiki_info"|~Cleanup resources associated with the engine~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="close"| method Lwt_process.process_none#close >> ~[<<a_api | module Lwt_process >>~]|<<div class="odocwiki_info"|~Closes the process and returns its exit status~.

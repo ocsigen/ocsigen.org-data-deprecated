@@ -33,11 +33,11 @@
 * <<span class="odocwiki_inlinecode"|`~Log~_default>> means that the output is redirected to the
         default logger
 
-      ~Both <<span class="odocwiki_inlinecode"|stdout>> and <<span class="odocwiki_inlinecode"|stderr>> defaults to <<span class="odocwiki_inlinecode"|`~Log~_default>>~.
+      ~Both <<span class="odocwiki_inlinecode"|stdout>> and <<span class="odocwiki_inlinecode"|stderr>> default to <<span class="odocwiki_inlinecode"|`~Log~_default>>~.
 
 
       ~Warning~: do not redirect an output to a logger logging into this
-      outpout~, for example this code will create an infinite loop~:
+      output~. ~For example~, this code will create an infinite loop~:
 
 
       
@@ -54,7 +54,7 @@
 
       <<span class="odocwiki_inlinecode"|umask>> may be one of~:
 * <<span class="odocwiki_inlinecode"|`~Keep>> which means that the umask is left unchanged
-* <<span class="odocwiki_inlinecode"|`~Set n>> which means that the umash is set to <<span class="odocwiki_inlinecode"|n>>
+* <<span class="odocwiki_inlinecode"|`~Set n>> which means that the umask is set to <<span class="odocwiki_inlinecode"|n>>
 
       ~It defaults to <<span class="odocwiki_inlinecode"|`~Set ~0o~0~2~2>>~.
 >>

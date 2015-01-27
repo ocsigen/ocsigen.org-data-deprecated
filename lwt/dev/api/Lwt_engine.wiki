@@ -18,7 +18,7 @@
 ==@@id="2_Eventloopfunctions"@@~Event loop functions==
 
 <<pre id="VALiter" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|iter>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|bool <<span class="ocsforge_color_delimiter"| -> >> unit>>>><<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|iter block>> performs one iteration of the main loop~. ~If <<span class="odocwiki_inlinecode"|block>>
-      is <<span class="odocwiki_inlinecode"|true>> the function must blocks until one event become
+      is <<span class="odocwiki_inlinecode"|true>> the function must block until one event becomes
       available~, otherwise it should just check for available events
       and return immediately~.
 >>
@@ -45,8 +45,8 @@
 ==@@id="2_Engines"@@~Engines==
 
 
-~An engine represent a set of functions used to register different
-    kind of callbacks for different kind of events~.
+~An engine represents a set of functions used to register different
+    kinds of callbacks for different kinds of events~.
 <<pre class="ocsforge_color odocwiki_code"|<<span name="TYPEabstract"|<<span class="ocsforge_color_keyword"|class>> <<span class="ocsforge_color_keyword"|virtual>> <<a_api text="abstract" | class Lwt_engine.abstract >>>> <<span class="ocsforge_color_delimiter"|~:>>  <<span class="ocsforge_color_keyword"|object>><<a_api text=".." | class Lwt_engine.abstract >><<span class="ocsforge_color_keyword"|end>>>><<div class="odocwiki_info"|~Abstract class for engines~.
 >>
 <<pre class="ocsforge_color odocwiki_code"|<<span id="TYPEt"|<<span class="ocsforge_color_keyword"|class type>> <<a_api text="t" | class type Lwt_engine.t >>>> <<span class="ocsforge_color_delimiter"|~=>> <<span class="ocsforge_color_keyword"|object>><<a_api text=".." | class type Lwt_engine.t >><<span class="ocsforge_color_keyword"|end>>>><<div class="odocwiki_info"|~Type of engines~.

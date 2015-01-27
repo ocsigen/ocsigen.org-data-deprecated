@@ -139,15 +139,15 @@
 |@@class="odocwiki_index"@ @@<<a_api text="bind_s"| value Lwt_react.S.bind_s >> ~[<<a_api | module Lwt_react.S >>~]|<<div class="odocwiki_info"|~Same as <<a_api | val Lwt_react.S.bind >> except that <<span class="odocwiki_inlinecode"|f>> returns a thread~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api text="blit"| value Lwt_bytes.blit >> ~[<<a_api | module Lwt_bytes >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|blit buf~1 ofs~1 buf~2 ofs~2 len>> copy <<span class="odocwiki_inlinecode"|len>> bytes from <<span class="odocwiki_inlinecode"|buf~1>>
+|@@class="odocwiki_index"@ @@<<a_api text="blit"| value Lwt_bytes.blit >> ~[<<a_api | module Lwt_bytes >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|blit buf~1 ofs~1 buf~2 ofs~2 len>> copies <<span class="odocwiki_inlinecode"|len>> bytes from <<span class="odocwiki_inlinecode"|buf~1>>
       starting at offset <<span class="odocwiki_inlinecode"|ofs~1>> to <<span class="odocwiki_inlinecode"|buf~2>> starting at offset <<span class="odocwiki_inlinecode"|ofs~2>>~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api text="blit_from_bytes"| value Lwt_bytes.blit_from_bytes >> ~[<<a_api | module Lwt_bytes >>~]|<<div class="odocwiki_info"|~Same as blit but the first buffer is a string instead of a byte
+|@@class="odocwiki_index"@ @@<<a_api text="blit_from_bytes"| value Lwt_bytes.blit_from_bytes >> ~[<<a_api | module Lwt_bytes >>~]|<<div class="odocwiki_info"|~Same as <<a_api | val Lwt_bytes.blit >> but the first buffer is a string instead of a byte
       array~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api text="blit_to_bytes"| value Lwt_bytes.blit_to_bytes >> ~[<<a_api | module Lwt_bytes >>~]|<<div class="odocwiki_info"|~Same as blit but the second buffer is a string instead of a byte
+|@@class="odocwiki_index"@ @@<<a_api text="blit_to_bytes"| value Lwt_bytes.blit_to_bytes >> ~[<<a_api | module Lwt_bytes >>~]|<<div class="odocwiki_info"|~Same as <<a_api | val Lwt_bytes.blit >> but the second buffer is a string instead of a byte
       array~.
 >>
 |
@@ -444,7 +444,7 @@
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="finalise_or_exit"| value Lwt_gc.finalise_or_exit >> ~[<<a_api | module Lwt_gc >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|finalise~_or~_exit f x>> call <<span class="odocwiki_inlinecode"|f x>> when <<span class="odocwiki_inlinecode"|x>> is garbage collected
-      or ~(exclusively~) when the program exit~.
+      or ~(exclusively~) when the program exits~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="finalize"| value Lwt.finalize >> ~[<<a_api | module Lwt >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|finalize f g>> returns the same result as <<span class="odocwiki_inlinecode"|f ~(~)>> whether it
@@ -903,9 +903,9 @@
 >>
 |
 |@@ @style="tet-align: left;"@@\\M|
-|@@class="odocwiki_index"@ @@<<a_api text="madvise"| value Lwt_bytes.madvise >> ~[<<a_api | module Lwt_bytes >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|madvise buffer pos len advice>> advise the kernel about how the
-      program is going to use the part of the memory mapped file
-      between <<span class="odocwiki_inlinecode"|pos>> and <<span class="odocwiki_inlinecode"|pos ~+ len>>~.
+|@@class="odocwiki_index"@ @@<<a_api text="madvise"| value Lwt_bytes.madvise >> ~[<<a_api | module Lwt_bytes >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|madvise buffer pos len advice>> advises the kernel how the
+      program will use the memory mapped file between <<span class="odocwiki_inlinecode"|pos>> and
+      <<span class="odocwiki_inlinecode"|pos ~+ len>>~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="main"| value Lwt_log_core.Section.main >> ~[<<a_api | module Lwt_log_core.Section >>~]|<<div class="odocwiki_info"|~The main section~.
@@ -1695,19 +1695,19 @@
 |@@class="odocwiki_index"@ @@<<a_api text="unsafe_blit"| value Lwt_bytes.unsafe_blit >> ~[<<a_api | module Lwt_bytes >>~]|<<div class="odocwiki_info"|~Same as <<a_api | val Lwt_bytes.blit >> but without bound checking~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api text="unsafe_blit_from_bytes"| value Lwt_bytes.unsafe_blit_from_bytes >> ~[<<a_api | module Lwt_bytes >>~]|<<div class="odocwiki_info"|~Same as <<span class="odocwiki_inlinecode"|blit~_string~_bytes>> but without bound checking~.
+|@@class="odocwiki_index"@ @@<<a_api text="unsafe_blit_from_bytes"| value Lwt_bytes.unsafe_blit_from_bytes >> ~[<<a_api | module Lwt_bytes >>~]|<<div class="odocwiki_info"|~Same as <<span class="odocwiki_inlinecode"|blit~_string~_bytes>> but without bounds checking~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api text="unsafe_blit_to_bytes"| value Lwt_bytes.unsafe_blit_to_bytes >> ~[<<a_api | module Lwt_bytes >>~]|<<div class="odocwiki_info"|~Same as <<span class="odocwiki_inlinecode"|blit~_bytes~_string>> but without bound checking~.
+|@@class="odocwiki_index"@ @@<<a_api text="unsafe_blit_to_bytes"| value Lwt_bytes.unsafe_blit_to_bytes >> ~[<<a_api | module Lwt_bytes >>~]|<<div class="odocwiki_info"|~Same as <<span class="odocwiki_inlinecode"|blit~_bytes~_string>> but without bounds checking~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api text="unsafe_fill"| value Lwt_bytes.unsafe_fill >> ~[<<a_api | module Lwt_bytes >>~]|<<div class="odocwiki_info"|~Same as <<a_api | val Lwt_bytes.fill >> but without bound checking~.
+|@@class="odocwiki_index"@ @@<<a_api text="unsafe_fill"| value Lwt_bytes.unsafe_fill >> ~[<<a_api | module Lwt_bytes >>~]|<<div class="odocwiki_info"|~Same as <<a_api | val Lwt_bytes.fill >> but without bounds checking~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api text="unsafe_get"| value Lwt_bytes.unsafe_get >> ~[<<a_api | module Lwt_bytes >>~]|<<div class="odocwiki_info"|~Same as <<a_api | val Lwt_bytes.get >> but without bound checking~.
+|@@class="odocwiki_index"@ @@<<a_api text="unsafe_get"| value Lwt_bytes.unsafe_get >> ~[<<a_api | module Lwt_bytes >>~]|<<div class="odocwiki_info"|~Same as <<a_api | val Lwt_bytes.get >> but without bounds checking~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api text="unsafe_set"| value Lwt_bytes.unsafe_set >> ~[<<a_api | module Lwt_bytes >>~]|<<div class="odocwiki_info"|~Same as <<a_api | val Lwt_bytes.set >> but without bound checking~.
+|@@class="odocwiki_index"@ @@<<a_api text="unsafe_set"| value Lwt_bytes.unsafe_set >> ~[<<a_api | module Lwt_bytes >>~]|<<div class="odocwiki_info"|~Same as <<a_api | val Lwt_bytes.set >> but without bounds checking~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="use"| value Lwt_pool.use >> ~[<<a_api | module Lwt_pool >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|use p f>> takes one free member of the pool <<span class="odocwiki_inlinecode"|p>> and gives it to
@@ -1742,7 +1742,7 @@
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="wait_mincore"| value Lwt_bytes.wait_mincore >> ~[<<a_api | module Lwt_bytes >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|wait~_mincore buffer offset>> waits until the page containing the
-      byte at offset <<span class="odocwiki_inlinecode"|offset>> in the the ~R~A~M~.
+      byte at offset <<span class="odocwiki_inlinecode"|offset>> is in ~R~A~M~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="wait_read"| value Lwt_unix.wait_read >> ~[<<a_api | module Lwt_unix >>~]|<<div class="odocwiki_info"|waits ~(without blocking other threads~) until there is something
