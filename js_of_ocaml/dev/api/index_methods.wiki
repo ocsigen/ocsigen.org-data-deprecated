@@ -716,6 +716,8 @@
 |@@class="odocwiki_index"@ @@<<a_api text="data"| method Dom_html.objectElement#data >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="data"| method Dom.characterData#data >> ~[<<a_api | module Dom >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="dataTransfer"| method Dom_html.dragEvent#dataTransfer >> ~[<<a_api | module Dom_html >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="data_blob"| method WebSockets.messageEvent#data_blob >> ~[<<a_api | module WebSockets >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="data_buffer"| method WebSockets.messageEvent#data_buffer >> ~[<<a_api | module WebSockets >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="dateTime"| method Dom_html.modElement#dateTime >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="debug"| method Firebug.console#debug >> ~[<<a_api | module Firebug >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="debug_2"| method Firebug.console#debug_2 >> ~[<<a_api | module Firebug >>~]||
@@ -1537,6 +1539,8 @@
 |@@class="odocwiki_index"@ @@<<a_api text="selectedIndex"| method Dom_html.selectElement#selectedIndex >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="send"| method XmlHttpRequest.xmlHttpRequest#send >> ~[<<a_api | module XmlHttpRequest >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="send"| method WebSockets.webSocket#send >> ~[<<a_api | module WebSockets >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="send_blob"| method WebSockets.webSocket#send_blob >> ~[<<a_api | module WebSockets >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="send_buffer"| method WebSockets.webSocket#send_buffer >> ~[<<a_api | module WebSockets >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="send_document"| method XmlHttpRequest.xmlHttpRequest#send_document >> ~[<<a_api | module XmlHttpRequest >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="send_formData"| method XmlHttpRequest.xmlHttpRequest#send_formData >> ~[<<a_api | module XmlHttpRequest >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="sessionStorage"| method Dom_html.window#sessionStorage >> ~[<<a_api | module Dom_html >>~]||

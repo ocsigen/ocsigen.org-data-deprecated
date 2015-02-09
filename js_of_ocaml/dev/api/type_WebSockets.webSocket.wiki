@@ -71,5 +71,7 @@
   method protocol : Js.js_string Js.t Js.readonly_prop
   method readyState : WebSockets.readyState Js.readonly_prop
   method send : Js.js_string Js.t -> unit Js.meth
+  method send_blob : File.blob Js.t -> unit Js.meth
+  method send_buffer : Typed_array.arrayBuffer Js.t -> unit Js.meth
   method url : Js.js_string Js.t Js.readonly_prop
 end >>
