@@ -23,11 +23,11 @@
 >>
 <<pre id="VALcall" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|call>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|'a <<span class="ocsforge_color_delimiter"| -> >> 'b <<span class="ocsforge_color_delimiter"| -> >> <<a_api text="any" | type Js.Unsafe.any >> array <<span class="ocsforge_color_delimiter"| -> >> 'c>>>><<div class="odocwiki_info"|~Performs a ~Javascript function call~.  ~The expression
         <<span class="odocwiki_inlinecode"|call f o a>> calls the ~Javascript function <<span class="odocwiki_inlinecode"|f>> with the
-        arguments given by the array <<span class="odocwiki_inlinecode"|o>>~, and binding <<span class="odocwiki_inlinecode"|this>> to <<span class="odocwiki_inlinecode"|o>>~.
+        arguments given by the array <<span class="odocwiki_inlinecode"|a>>~, and binding <<span class="odocwiki_inlinecode"|this>> to <<span class="odocwiki_inlinecode"|o>>~.
 >>
 <<pre id="VALfun_call" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|fun~_call>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|'a <<span class="ocsforge_color_delimiter"| -> >> <<a_api text="any" | type Js.Unsafe.any >> array <<span class="ocsforge_color_delimiter"| -> >> 'b>>>><<div class="odocwiki_info"|~Performs a ~Javascript function call~.  ~The expression
         <<span class="odocwiki_inlinecode"|fun~_call f a>> calls the ~Javascript function <<span class="odocwiki_inlinecode"|f>> with the
-        arguments given by the array <<span class="odocwiki_inlinecode"|o>>~.
+        arguments given by the array <<span class="odocwiki_inlinecode"|a>>~.
 >>
 <<pre id="VALmeth_call" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|meth~_call>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|'a <<span class="ocsforge_color_delimiter"| -> >> string <<span class="ocsforge_color_delimiter"| -> >> <<a_api text="any" | type Js.Unsafe.any >> array <<span class="ocsforge_color_delimiter"| -> >> 'b>>>><<div class="odocwiki_info"|~Performs a ~Javascript method call~.  ~The expression
         <<span class="odocwiki_inlinecode"|meth~_call o m a>> calls the ~Javascript method <<span class="odocwiki_inlinecode"|m>> of object <<span class="odocwiki_inlinecode"|o>>
