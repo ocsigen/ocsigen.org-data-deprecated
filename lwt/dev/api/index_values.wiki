@@ -1346,6 +1346,9 @@
         default value~, i~.e~.
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api text="reset_rules"| value Lwt_log_core.reset_rules >> ~[<<a_api | module Lwt_log_core >>~]|<<div class="odocwiki_info"|removes all rules~.
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api text="resize_buffer"| value Lwt_io.resize_buffer >> ~[<<a_api | module Lwt_io >>~]|<<div class="odocwiki_info"|~Resize the internal buffer to the given size
 >>
 |

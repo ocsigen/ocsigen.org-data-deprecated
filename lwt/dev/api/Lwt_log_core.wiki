@@ -73,7 +73,7 @@
 >>
 <<pre id="VALadd_rule" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|add~_rule>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|string <<span class="ocsforge_color_delimiter"| -> >> <<a_api text="level" | type Lwt_log_core.level >> <<span class="ocsforge_color_delimiter"| -> >> unit>>>><<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|add~_rule pattern level>> adds a rule for sections logging
       levels~. ~The rule is added before all other rules~. ~It takes
-      effect immediately and affect all sections for which the level
+      effect immediately and affects all sections for which the level
       has not been set explicitly with <<a_api | val Lwt_log_core.Section.set_level >>~. <<span class="odocwiki_inlinecode"|pattern>>
       may contains <<span class="odocwiki_inlinecode"|~*>>~. ~For example~:
 
@@ -91,6 +91,8 @@
 <<code language='ocaml'|        Lwt_log_core.append_rule "*" Lwt_log_core.Info
       >>
 
+>>
+<<pre id="VALreset_rules" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|reset~_rules>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|unit <<span class="ocsforge_color_delimiter"| -> >> unit>>>><<div class="odocwiki_info"|removes all rules~.
 >>
 
 

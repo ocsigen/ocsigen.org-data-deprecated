@@ -6,6 +6,7 @@
   val load_rules : string -> unit
   val add_rule : string -> Lwt_log_core.level -> unit
   val append_rule : string -> Lwt_log_core.level -> unit
+  val reset_rules : unit -> unit
   val log :
     ?exn:exn ->
     ?section:Lwt_log_core.section ->

@@ -13,6 +13,7 @@
   val load_rules : string -> unit
   val add_rule : string -> level -> unit
   val append_rule : string -> level -> unit
+  val reset_rules : unit -> unit
   val log :
     ?exn:exn ->
     ?section:section ->
