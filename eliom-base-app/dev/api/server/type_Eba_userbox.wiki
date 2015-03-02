@@ -1,26 +1,26 @@
 <<code language="ocaml" | sig
-  module Make :
-    functor (A : sig val avatar_directory : string list end) ->
-      sig
-        val connected_user_box :
-          Eba_user.t -> [> Html5_types.div ] Eliom_content.Html5.D.elt Lwt.t
-        val connection_box :
-          unit -> [> Html5_types.div ] Eliom_content.Html5.D.elt Lwt.t
-        val userbox :
-          Eba_user.t option ->
-          [> Html5_types.div ] Eliom_content.Html5.D.elt Lwt.t
-        val upload_pic_link :
-          unit -> [> `A of [> `PCDATA ] ] Eliom_content.Html5.D.Raw.elt
-        val reset_tips_link :
-          unit -> [> `A of [> `PCDATA ] ] Eliom_content.Html5.D.Raw.elt
-        val user_menu :
-          Eba_user.t -> [> Html5_types.div ] Eliom_content.Html5.F.elt
-        val set_user_menu :
-          (Eba_user.t ->
-           Html5_types.div_content Eliom_content.Html5.D.elt
-           Eliom_content.Html5.D.list_wrap) ->
-          unit
-      end
+  type uploader
+  val uploader : string list -> Eba_userbox.uploader
+  val connected_user_box :
+    Eba_user.t ->
+    Eba_userbox.uploader ->
+    [> Html5_types.div ] Eliom_content.Html5.D.elt Lwt.t
+  val connection_box :
+    unit -> [> Html5_types.div ] Eliom_content.Html5.D.elt Lwt.t
+  val userbox :
+    Eba_user.t option ->
+    Eba_userbox.uploader ->
+    [> Html5_types.div ] Eliom_content.Html5.D.elt Lwt.t
+  val upload_pic_link :
+    (unit -> unit) Eliom_pervasives.client_value ->
+    Eba_userbox.uploader ->
+    [> `A of [> `PCDATA ] ] Eliom_content.Html5.D.Raw.elt
+  val reset_tips_link :
+    (unit -> unit) Eliom_pervasives.client_value ->
+    [> `A of [> `PCDATA ] ] Eliom_content.Html5.D.Raw.elt
+  val user_menu :
+    Eba_user.t ->
+    Eba_userbox.uploader -> [> Html5_types.div ] Eliom_content.Html5.F.elt
   val wrong_password : bool Eliom_reference.Volatile.eref
   val user_already_exists : bool Eliom_reference.Volatile.eref
   val user_does_not_exist : bool Eliom_reference.Volatile.eref

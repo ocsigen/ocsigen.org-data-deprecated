@@ -9,6 +9,8 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="t"| type Eba_group.t >> ~[<<a_api subproject="server" | module Eba_group >>~]|<<div class="odocwiki_info"|~The type of a group
 >>
 |
+|@@ @style="tet-align: left;"@@\\U|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="uploader"| type Eba_userbox.uploader >> ~[<<a_api subproject="server" | module Eba_userbox >>~]||
 |@@ @style="tet-align: left;"@@\\V|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="value"| type Eba_request_cache.Cache_sig.value >> ~[<<a_api subproject="server" | module Eba_request_cache.Cache_sig >>~]||
 \\

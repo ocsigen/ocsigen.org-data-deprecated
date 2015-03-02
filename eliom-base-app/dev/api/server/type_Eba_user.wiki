@@ -25,6 +25,7 @@
   val avatar_of_user : Eba_user.t -> string option
   val avatar_uri_of_avatar : string -> Eliom_content.Xml.uri
   val avatar_uri_of_user : Eba_user.t -> Eliom_content.Xml.uri option
+  val fullname_of_user : Eba_user.t -> string
   val is_complete : Eba_user.t -> bool
   val add_activationkey : act_key:string -> int64 -> unit Lwt.t
   val verify_password : email:string -> password:string -> int64 Lwt.t
@@ -47,10 +48,13 @@
     ?avatar:string ->
     firstname:string -> lastname:string -> int64 -> unit Lwt.t
   val update' : ?password:string -> Eba_user.t -> unit Lwt.t
+  val update_password : string -> int64 -> unit Lwt.t
   val update_avatar : string -> int64 -> unit Lwt.t
   val is_registered : string -> bool Lwt.t
   val is_preregistered : string -> bool Lwt.t
   val add_preregister : string -> unit Lwt.t
   val remove_preregister : string -> unit Lwt.t
   val all : ?limit:int64 -> unit -> string list Lwt.t
+  val set_pwd_crypt_fun :
+    (string -> string) * (int64 -> string -> string -> bool) -> unit
 end >>

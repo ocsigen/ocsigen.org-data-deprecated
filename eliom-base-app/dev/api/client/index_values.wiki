@@ -4,19 +4,119 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="avatar_of_user"| value Eba_user.avatar_of_user >> ~[<<a_api subproject="client" | module Eba_user >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="avatar_uri_of_avatar"| value Eba_user.avatar_uri_of_avatar >> ~[<<a_api subproject="client" | module Eba_user >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="avatar_uri_of_user"| value Eba_user.avatar_uri_of_user >> ~[<<a_api subproject="client" | module Eba_user >>~]||
+|@@ @style="tet-align: left;"@@\\C|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="connected_fun"| value Eba_session.Opt.connected_fun >> ~[<<a_api subproject="client" | module Eba_session.Opt >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="client" | val Eba_session.Opt.connected_fun >> but instead of failing in case the user is
+      not connected~, the function given as parameter takes an <<span class="odocwiki_inlinecode"|int~6~4 option>>
+      for user id~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="connected_fun"| value Eba_session.connected_fun >> ~[<<a_api subproject="client" | module Eba_session >>~]|<<div class="odocwiki_info"|~Wrapper for service handlers that fetches automatically connection
+    information~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="connected_page"| value Eba_page.Make.Opt.connected_page >> ~[<<a_api subproject="client" | module Eba_page.Make.Opt >>~]|<<div class="odocwiki_info"|~Wrapper for page that first checks if user is connected~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="connected_page"| value Eba_page.Make.connected_page >> ~[<<a_api subproject="client" | module Eba_page.Make >>~]|<<div class="odocwiki_info"|~Wrapper for page that first checks if user is connected~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="connected_rpc"| value Eba_session.Opt.connected_rpc >> ~[<<a_api subproject="client" | module Eba_session.Opt >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="client" | val Eba_session.Opt.connected_rpc >> but instead of failing in case the user is
+      not connected~, the function given as parameter takes an <<span class="odocwiki_inlinecode"|int~6~4 option>>
+      for user id~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="connected_rpc"| value Eba_session.connected_rpc >> ~[<<a_api subproject="client" | module Eba_session >>~]|<<div class="odocwiki_info"|~Wrapper for server functions ~(see <<a_api subproject="client" | val Eba_session.connected_fun >>~)~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="connected_user_box"| value Eba_userbox.connected_user_box >> ~[<<a_api subproject="client" | module Eba_userbox >>~]|<<div class="odocwiki_info"|~Box for connected users~, with picture~, name~, and menu
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="connection_box"| value Eba_userbox.connection_box >> ~[<<a_api subproject="client" | module Eba_userbox >>~]|<<div class="odocwiki_info"|~Connection box
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="css"| value Eba_page.PAGE.css >> ~[<<a_api subproject="client" | module Eba_page.PAGE >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|css>> ~(same as <<span class="odocwiki_inlinecode"|js>> but for style sheet files~)~,
+      ~Eba will automatically prepend the suffix "css~/" as directory~.
+>>
+|
+|@@ @style="tet-align: left;"@@\\D|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="default_connected_error_page"| value Eba_page.PAGE.default_connected_error_page >> ~[<<a_api subproject="client" | module Eba_page.PAGE >>~]|<<div class="odocwiki_info"|~Default error page for connected pages~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="default_connected_predicate"| value Eba_page.PAGE.default_connected_predicate >> ~[<<a_api subproject="client" | module Eba_page.PAGE >>~]|<<div class="odocwiki_info"|~Default predicate for connected pages~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="default_error_page"| value Eba_page.PAGE.default_error_page >> ~[<<a_api subproject="client" | module Eba_page.PAGE >>~]|<<div class="odocwiki_info"|~Default error page~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="default_predicate"| value Eba_page.PAGE.default_predicate >> ~[<<a_api subproject="client" | module Eba_page.PAGE >>~]|<<div class="odocwiki_info"|~Default predicate~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="display"| value Eba_tips.display >> ~[<<a_api subproject="client" | module Eba_tips >>~]|<<div class="odocwiki_info"|~Display tips in pages~.
+>>
+|
 |@@ @style="tet-align: left;"@@\\F|
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="firstname_of_user"| value Eba_user.firstname_of_user >> ~[<<a_api subproject="client" | module Eba_user >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="fullname_of_user"| value Eba_user.fullname_of_user >> ~[<<a_api subproject="client" | module Eba_user >>~]|<<div class="odocwiki_info"|~Retrieve the full name of user~.
+>>
+|
+|@@ @style="tet-align: left;"@@\\G|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="get_current_userid_o"| value Eba_session.get_current_userid_o >> ~[<<a_api subproject="client" | module Eba_session >>~]|<<div class="odocwiki_info"|internal~.
+>>
+|
+|@@ @style="tet-align: left;"@@\\I|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="is_complete"| value Eba_user.is_complete >> ~[<<a_api subproject="client" | module Eba_user >>~]|<<div class="odocwiki_info"|~Returns true if the firstname and the lastname of <<span class="odocwiki_inlinecode"|t>> has not
+ been completed yet~.
+>>
+|
+|@@ @style="tet-align: left;"@@\\J|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="js"| value Eba_page.PAGE.js >> ~[<<a_api subproject="client" | module Eba_page.PAGE >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|js>> corresponds to the ~Javascript files to include into each page~.
+>>
+|
 |@@ @style="tet-align: left;"@@\\L|
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="lastname_of_user"| value Eba_user.lastname_of_user >> ~[<<a_api subproject="client" | module Eba_user >>~]||
 |@@ @style="tet-align: left;"@@\\M|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="make_page"| value Eba_page.Make.make_page >> ~[<<a_api subproject="client" | module Eba_page.Make >>~]|<<div class="odocwiki_info"|~Builds a valid html page from body content by adding headers
+      for this app
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="msg"| value Eba_msg.msg >> ~[<<a_api subproject="client" | module Eba_msg >>~]|<<div class="odocwiki_info"|~Call this function either from client or server side
     to display an error message in the page~.
+>>
+|
+|@@ @style="tet-align: left;"@@\\O|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="other_head"| value Eba_page.PAGE.other_head >> ~[<<a_api subproject="client" | module Eba_page.PAGE >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|other~_head>> is a list of custom elements to add in the head section~.
+>>
+|
+|@@ @style="tet-align: left;"@@\\P|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="page"| value Eba_page.Make.page >> ~[<<a_api subproject="client" | module Eba_page.Make >>~]|<<div class="odocwiki_info"|~Default wrapper for service handler generating pages~.
 >>
 |
 |@@ @style="tet-align: left;"@@\\R|
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="reset_tips"| value Eba_tips.reset_tips >> ~[<<a_api subproject="client" | module Eba_tips >>~]|<<div class="odocwiki_info"|~Call this function to reset tips for current users~.
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="reset_tips_link"| value Eba_userbox.reset_tips_link >> ~[<<a_api subproject="client" | module Eba_userbox >>~]|<<div class="odocwiki_info"|~Link to start to see the help from the begining~.
+>>
+|
+|@@ @style="tet-align: left;"@@\\S|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="set_user_menu"| value Eba_userbox.set_user_menu >> ~[<<a_api subproject="client" | module Eba_userbox >>~]|<<div class="odocwiki_info"|~Personnalize user menu
+>>
+|
+|@@ @style="tet-align: left;"@@\\T|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="title"| value Eba_page.PAGE.title >> ~[<<a_api subproject="client" | module Eba_page.PAGE >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|title>> corresponds to the html tag ~<title~>~, it will be inserted on all
+      pages~.
+>>
+|
 |@@ @style="tet-align: left;"@@\\U|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="upload_pic_link"| value Eba_userbox.upload_pic_link >> ~[<<a_api subproject="client" | module Eba_userbox >>~]|<<div class="odocwiki_info"|~Link to upload a picture~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="user_menu"| value Eba_userbox.user_menu >> ~[<<a_api subproject="client" | module Eba_userbox >>~]|<<div class="odocwiki_info"|~Display user menu
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="userbox"| value Eba_userbox.userbox >> ~[<<a_api subproject="client" | module Eba_userbox >>~]|<<div class="odocwiki_info"|~Connected user box or connexion box~, depending whether user
+    is connected or not
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="userid_of_user"| value Eba_user.userid_of_user >> ~[<<a_api subproject="client" | module Eba_user >>~]||
 \\

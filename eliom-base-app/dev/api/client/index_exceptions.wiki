@@ -4,4 +4,7 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Not_connected"| exception Eba_session.Not_connected >> ~[<<a_api subproject="client" | module Eba_session >>~]||
 |@@ @style="tet-align: left;"@@\\P|
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Permission_denied"| exception Eba_session.Permission_denied >> ~[<<a_api subproject="client" | module Eba_session >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Predicate_failed"| exception Eba_page.Predicate_failed >> ~[<<a_api subproject="client" | module Eba_page >>~]|<<div class="odocwiki_info"|~Functor defining wrappers for services handlers returning pages~.
+>>
+|
 \\

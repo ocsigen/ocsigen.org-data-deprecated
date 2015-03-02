@@ -20,7 +20,6 @@
 |@@ @style="tet-align: left;"@@\\J|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Json_t"| module Eba_user.Json_t >> ~[<<a_api subproject="server" | module Eba_user >>~]||
 |@@ @style="tet-align: left;"@@\\M|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Make"| module Eba_userbox.Make >> ~[<<a_api subproject="server" | module Eba_userbox >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Make"| module Eba_request_cache.Make >> ~[<<a_api subproject="server" | module Eba_request_cache >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Make"| module Eba_page.Make >> ~[<<a_api subproject="server" | module Eba_page >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Make"| module Eba_notif.Make >> ~[<<a_api subproject="server" | module Eba_notif >>~]||

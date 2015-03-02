@@ -1,0 +1,12 @@
+<<code language="ocaml" | sig
+  val connected_fun :
+    ?allow:Eba_group.t list ->
+    ?deny:Eba_group.t list ->
+    ?deny_fun:(int64 option -> 'c Lwt.t) ->
+    (int64 option -> 'a -> 'b -> 'c Lwt.t) -> 'a -> 'b -> 'c Lwt.t
+  val connected_rpc :
+    ?allow:Eba_group.t list ->
+    ?deny:Eba_group.t list ->
+    ?deny_fun:(int64 option -> 'b Lwt.t) ->
+    (int64 option -> 'a -> 'b Lwt.t) -> 'a -> 'b Lwt.t
+end >>

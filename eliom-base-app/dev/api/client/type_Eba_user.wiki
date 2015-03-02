@@ -23,4 +23,6 @@
   val avatar_of_user : Eba_user.t -> string option
   val avatar_uri_of_avatar : string -> Eliom_content.Xml.uri
   val avatar_uri_of_user : Eba_user.t -> Eliom_content.Xml.uri option
+  val fullname_of_user : Eba_user.t -> string
+  val is_complete : Eba_user.t -> bool
 end >>

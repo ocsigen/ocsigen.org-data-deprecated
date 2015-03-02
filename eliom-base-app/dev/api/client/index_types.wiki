@@ -4,4 +4,6 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="t"| type Eba_user.t >> ~[<<a_api subproject="client" | module Eba_user >>~]|<<div class="odocwiki_info"|~The type which represents a user~.
 >>
 |
+|@@ @style="tet-align: left;"@@\\U|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="uploader"| type Eba_userbox.uploader >> ~[<<a_api subproject="client" | module Eba_userbox >>~]||
 \\
