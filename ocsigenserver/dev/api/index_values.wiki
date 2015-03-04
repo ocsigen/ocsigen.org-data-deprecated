@@ -71,6 +71,7 @@
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="basic_sep"| value Ocsigen_lib_base.String_base.basic_sep >> ~[<<a_api | module Ocsigen_lib_base.String_base >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="bind"| value Ocsigen_lib_base.Option.Lwt.bind >> ~[<<a_api | module Ocsigen_lib_base.Option.Lwt >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="bind"| value Ocsigen_lib_base.Option.bind >> ~[<<a_api | module Ocsigen_lib_base.Option >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="block_next_request"| value Ocsigen_http_com.block_next_request >> ~[<<a_api | module Ocsigen_http_com >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="builtin_packages"| value Ocsigen_config.builtin_packages >> ~[<<a_api | module Ocsigen_config >>~]||
@@ -283,7 +284,9 @@
 |@@class="odocwiki_index"@ @@<<a_api text="get"| value Ocsigen_stream.get >> ~[<<a_api | module Ocsigen_stream >>~]|<<div class="odocwiki_info"|call this function if you decide to start reading a stream~.
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api text="get"| value Ocsigen_lib_base.Option.Lwt.get >> ~[<<a_api | module Ocsigen_lib_base.Option.Lwt >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="get"| value Ocsigen_lib_base.Option.get >> ~[<<a_api | module Ocsigen_lib_base.Option >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="get'"| value Ocsigen_lib_base.Option.Lwt.get' >> ~[<<a_api | module Ocsigen_lib_base.Option.Lwt >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="get'"| value Ocsigen_lib_base.Option.get' >> ~[<<a_api | module Ocsigen_lib_base.Option >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="get_accept"| value Ocsigen_headers.get_accept >> ~[<<a_api | module Ocsigen_headers >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="get_accept_charset"| value Ocsigen_headers.get_accept_charset >> ~[<<a_api | module Ocsigen_headers >>~]||
@@ -404,6 +407,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="iter"| value Ocsigen_lib_base.Clist.iter >> ~[<<a_api | module Ocsigen_lib_base.Clist >>~]|<<div class="odocwiki_info"|~Infinite iteration on circular lists
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api text="iter"| value Ocsigen_lib_base.Option.Lwt.iter >> ~[<<a_api | module Ocsigen_lib_base.Option.Lwt >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="iter"| value Ocsigen_lib_base.Option.iter >> ~[<<a_api | module Ocsigen_lib_base.Option >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="iter_step"| value Ocsipersist.iter_step >> ~[<<a_api | module Ocsipersist >>~]|<<div class="odocwiki_info"|~Important warning~: this iterator may not iter on all data of the table
     if another thread is modifying it in the same time~.
@@ -474,6 +478,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="make_persistent_lazy_lwt"| value Ocsipersist.make_persistent_lazy_lwt >> ~[<<a_api | module Ocsipersist >>~]|<<div class="odocwiki_info"|~Lwt version of make~_persistent~_lazy~.
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api text="map"| value Ocsigen_lib_base.Option.Lwt.map >> ~[<<a_api | module Ocsigen_lib_base.Option.Lwt >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="map"| value Ocsigen_lib_base.Option.map >> ~[<<a_api | module Ocsigen_lib_base.Option >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="map_filter"| value Ocsigen_lib_base.List.map_filter >> ~[<<a_api | module Ocsigen_lib_base.List >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="maxsize"| value Ocsigen_cache.Dlist.maxsize >> ~[<<a_api | module Ocsigen_cache.Dlist >>~]||

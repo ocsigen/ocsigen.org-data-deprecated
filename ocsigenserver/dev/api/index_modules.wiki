@@ -47,6 +47,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="Ip_address"| module Ocsigen_lib.Ip_address >> ~[<<a_api | module Ocsigen_lib >>~]||
 |@@ @style="tet-align: left;"@@\\L|
 |@@class="odocwiki_index"@ @@<<a_api text="List"| module Ocsigen_lib_base.List >> ~[<<a_api | module Ocsigen_lib_base >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="Lwt"| module Ocsigen_lib_base.Option.Lwt >> ~[<<a_api | module Ocsigen_lib_base.Option >>~]||
 |@@ @style="tet-align: left;"@@\\M|
 |@@class="odocwiki_index"@ @@<<a_api text="Make"| module Ocsigen_cache.Make >> ~[<<a_api | module Ocsigen_cache >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="Make_XML_Content"| module Ocsigen_senders.Make_XML_Content >> ~[<<a_api | module Ocsigen_senders >>~]||
