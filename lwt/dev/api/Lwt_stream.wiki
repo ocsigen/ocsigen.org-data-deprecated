@@ -22,7 +22,7 @@
 >>
 <<pre id="VALfrom_direct" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|from~_direct>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<span class="ocsforge_color_delimiter"| ( >>unit <<span class="ocsforge_color_delimiter"| -> >> 'a option<<span class="ocsforge_color_delimiter"| ) >> <<span class="ocsforge_color_delimiter"| -> >> 'a <<a_api text="t" | type Lwt_stream.t >>>>>><<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|from~_direct f>> does the same as <<a_api | val Lwt_stream.from >> but with a function
       that does not return a thread~. ~It is better than wrapping <<span class="odocwiki_inlinecode"|f>>
-      into a function which return a thread~.
+      into a function which returns a thread~.
 >>
 <<pre id="EXCEPTIONClosed" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|exception>> <<span class="odocwiki_name"|Closed>>>><<div class="odocwiki_info"|~Exception raised by the push function of a push~-stream when
       pushing an element after the end of stream ~(<<span class="odocwiki_inlinecode"|~= ~None>>~) have been
@@ -31,8 +31,8 @@
 <<pre id="VALcreate" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|create>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|unit <<span class="ocsforge_color_delimiter"| -> >> 'a <<a_api text="t" | type Lwt_stream.t >> * <<span class="ocsforge_color_delimiter"| ( >>'a option <<span class="ocsforge_color_delimiter"| -> >> unit<<span class="ocsforge_color_delimiter"| ) >>>>>><<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|create ~(~)>> returns a new stream and a push function~.
 >>
 <<pre id="VALcreate_with_reference" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|create~_with~_reference>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|\\  unit <<span class="ocsforge_color_delimiter"| -> >> 'a <<a_api text="t" | type Lwt_stream.t >> * <<span class="ocsforge_color_delimiter"| ( >>'a option <<span class="ocsforge_color_delimiter"| -> >> unit<<span class="ocsforge_color_delimiter"| ) >> * <<span class="ocsforge_color_delimiter"| ( >>'b <<span class="ocsforge_color_delimiter"| -> >> unit<<span class="ocsforge_color_delimiter"| ) >>>>>><<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|create~_with~_reference ~(~)>> returns a new stream and a push
-      function~. ~The last function allows to set a reference to an
-      external source~. ~This prevent the external source from being
+      function~. ~The last function allows a reference to be set to an
+      external source~. ~This prevents the external source from being
       garbage collected~.
 
 
