@@ -6505,6 +6505,9 @@
       val popStateEvent :
         #Dom_html.event Js.t -> Dom_html.popStateEvent Js.t Js.opt
     end
+  type timeout_id_safe
+  val setTimeout : (unit -> unit) -> float -> Dom_html.timeout_id_safe
+  val clearTimeout : Dom_html.timeout_id_safe -> unit
   val decode_html_entities : Js.js_string Js.t -> Js.js_string Js.t
   val onIE : bool
   val hasPushState : unit -> bool

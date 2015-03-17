@@ -224,6 +224,10 @@
 |@@class="odocwiki_index"@ @@<<a_api text="textureFilter"| type WebGL.textureFilter >> ~[<<a_api | module WebGL >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="textureUnit"| type WebGL.textureUnit >> ~[<<a_api | module WebGL >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="timeout_id"| type Dom_html.timeout_id >> ~[<<a_api | module Dom_html >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="timeout_id_safe"| type Dom_html.timeout_id_safe >> ~[<<a_api | module Dom_html >>~]|<<div class="odocwiki_info"|~Same as <<span class="odocwiki_inlinecode"|~Dom~_html~.window~#~#set~Timeout~(cb~,ms~)>> but prevents overflow
+    with delay greater than ~2~4 days~.
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api text="transformType"| type Dom_svg.transformType >> ~[<<a_api | module Dom_svg >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="typ"| type XmlHttpRequest.Event.typ >> ~[<<a_api | module XmlHttpRequest.Event >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="typ"| type File.ReaderEvent.typ >> ~[<<a_api | module File.ReaderEvent >>~]||

@@ -151,6 +151,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="changes"| value Lwt_js_events.changes >> ~[<<a_api | module Lwt_js_events >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="checking"| value Dom_html.Event.checking >> ~[<<a_api | module Dom_html.Event >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="circle"| value Dom_svg.CoerceTo.circle >> ~[<<a_api | module Dom_svg.CoerceTo >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="clearTimeout"| value Dom_html.clearTimeout >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="click"| value Lwt_js_events.click >> ~[<<a_api | module Lwt_js_events >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="click"| value Dom_html.Event.click >> ~[<<a_api | module Dom_html.Event >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="clicks"| value Lwt_js_events.clicks >> ~[<<a_api | module Lwt_js_events >>~]||
@@ -1258,6 +1259,7 @@
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="set"| value Dom_svg.CoerceTo.set >> ~[<<a_api | module Dom_svg.CoerceTo >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="setTimeout"| value Dom_html.setTimeout >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="set_channel_flusher"| value Sys_js.set_channel_flusher >> ~[<<a_api | module Sys_js >>~]|<<div class="odocwiki_info"|~Set a callback to be called when an out~_channel flush its buffer~.
 >>
 |
