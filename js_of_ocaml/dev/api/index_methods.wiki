@@ -1472,7 +1472,9 @@
 |@@class="odocwiki_index"@ @@<<a_api text="requiredExtensions"| method Dom_svg.tests#requiredExtensions >> ~[<<a_api | module Dom_svg >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="requiredFeatures"| method Dom_svg.tests#requiredFeatures >> ~[<<a_api | module Dom_svg >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="reset"| method Dom_html.formElement#reset >> ~[<<a_api | module Dom_html >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="response"| method XmlHttpRequest.xmlHttpRequest#response >> ~[<<a_api | module XmlHttpRequest >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="responseText"| method XmlHttpRequest.xmlHttpRequest#responseText >> ~[<<a_api | module XmlHttpRequest >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="responseType"| method XmlHttpRequest.xmlHttpRequest#responseType >> ~[<<a_api | module XmlHttpRequest >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="responseXML"| method XmlHttpRequest.xmlHttpRequest#responseXML >> ~[<<a_api | module XmlHttpRequest >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="restore"| method Dom_html.canvasRenderingContext2D#restore >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="result"| method File.fileReader#result >> ~[<<a_api | module File >>~]||
