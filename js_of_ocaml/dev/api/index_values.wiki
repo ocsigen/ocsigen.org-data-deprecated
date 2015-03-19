@@ -100,7 +100,6 @@
 |@@class="odocwiki_index"@ @@<<a_api text="bind"| value Js.OPT.bind >> ~[<<a_api | module Js.OPT >>~]|<<div class="odocwiki_info"|~Apply a function returning an optional value to an optional value
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api text="blob"| value File.CoerceTo.blob >> ~[<<a_api | module File.CoerceTo >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="blockquote"| value Dom_html.CoerceTo.blockquote >> ~[<<a_api | module Dom_html.CoerceTo >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="blur"| value Lwt_js_events.blur >> ~[<<a_api | module Lwt_js_events >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="blur"| value Dom_html.Event.blur >> ~[<<a_api | module Dom_html.Event >>~]||
@@ -403,7 +402,6 @@
 |
 |@@class="odocwiki_index"@ @@<<a_api text="div"| value Dom_html.CoerceTo.div >> ~[<<a_api | module Dom_html.CoerceTo >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="dl"| value Dom_html.CoerceTo.dl >> ~[<<a_api | module Dom_html.CoerceTo >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="document"| value File.CoerceTo.document >> ~[<<a_api | module File.CoerceTo >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="document"| value Dom_html.document >> ~[<<a_api | module Dom_html >>~]|<<div class="odocwiki_info"|~The current document
 >>
 |
@@ -731,7 +729,6 @@
 |@@class="odocwiki_index"@ @@<<a_api text="js_t_of_js_string"| value CSS.Color.js_t_of_js_string >> ~[<<a_api | module CSS.Color >>~]|<<div class="odocwiki_info"|~Checks the well~-formedness of a string or fails with <<span class="odocwiki_inlinecode"|~Invalid~_argument>>
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api text="json"| value File.CoerceTo.json >> ~[<<a_api | module File.CoerceTo >>~]||
 |@@ @style="tet-align: left;"@@\\K|
 |@@class="odocwiki_index"@ @@<<a_api text="keyboardEvent"| value Dom_html.CoerceTo.keyboardEvent >> ~[<<a_api | module Dom_html.CoerceTo >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="keydown"| value Lwt_js_events.keydown >> ~[<<a_api | module Lwt_js_events >>~]||
@@ -1087,12 +1084,6 @@
 |
 |@@class="odocwiki_index"@ @@<<a_api text="perform"| value XmlHttpRequest.perform >> ~[<<a_api | module XmlHttpRequest >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|perform>> is the same as <<a_api | val XmlHttpRequest.perform_raw_url >> except that the ~Url argument has type
       <<a_api | type Url.url >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api text="perform_raw"| value XmlHttpRequest.perform_raw >> ~[<<a_api | module XmlHttpRequest >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|perform~_raw>> is the same as <<a_api | val XmlHttpRequest.perform_raw_url >> except that an additional
-      response~_type argument can be given to set the ~X~M~L~Http~Request
-      response~Type~, and hence return different types of data for ~G~E~T
-      requests~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="perform_raw_url"| value XmlHttpRequest.perform_raw_url >> ~[<<a_api | module XmlHttpRequest >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|perform~_raw~_url ~?headers ~?content~_type ~?post~_args ~?get~_args ~?form~_arg url>>
