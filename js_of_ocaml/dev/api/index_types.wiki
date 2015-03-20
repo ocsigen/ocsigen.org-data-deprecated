@@ -177,6 +177,7 @@
 |
 |@@class="odocwiki_index"@ @@<<a_api text="renderbuffer"| type WebGL.renderbuffer >> ~[<<a_api | module WebGL >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="renderbufferParam"| type WebGL.renderbufferParam >> ~[<<a_api | module WebGL >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="response"| type XmlHttpRequest.response >> ~[<<a_api | module XmlHttpRequest >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="result"| type Regexp.result >> ~[<<a_api | module Regexp >>~]|<<div class="odocwiki_info"|~The type for match result~.
 >>
 |

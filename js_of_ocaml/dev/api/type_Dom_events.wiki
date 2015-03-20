@@ -25,6 +25,7 @@
       val dragleave : Dom_html.dragEvent Js.t typ
       val drag : Dom_html.dragEvent Js.t typ
       val drop : Dom_html.dragEvent Js.t typ
+      val hashchange : Dom_html.hashChangeEvent Js.t typ
       val change : Dom_html.event Js.t typ
       val input : Dom_html.event Js.t typ
       val timeupdate : Dom_html.event Js.t typ
@@ -38,13 +39,12 @@
       val resize : Dom_html.event Js.t typ
       val orientationchange : Dom_html.event Js.t typ
       val popstate : Dom_html.event Js.t typ
-      val hashchange : Dom_html.event Js.t typ
+      val error : Dom_html.event Js.t typ
       val abort : Dom_html.event Js.t typ
       val select : Dom_html.event Js.t typ
       val online : Dom_html.event Js.t typ
       val offline : Dom_html.event Js.t typ
       val checking : Dom_html.event Js.t typ
-      val error : Dom_html.event Js.t typ
       val noupdate : Dom_html.event Js.t typ
       val downloading : Dom_html.event Js.t typ
       val progress : Dom_html.event Js.t typ
