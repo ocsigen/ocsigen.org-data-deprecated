@@ -1736,14 +1736,14 @@ gA(a,b){var
 c=a.firstChild;if(c!=bn)a.removeChild(c);return ao(a,b)}function
 cC(a){var
 b=g.getElementById("wiki_demo");if(b==bn)throw[0,m,gB];var
-c=fO(0,0,g,fP);c[d("rows")]=20;c[d("cols")]=80;c.value="\n\n====this is h4\n\n# number list  el 1\n# number list e2 2 //with italic text\n\n\n//with italic\n\n* bullet list el1 ** with bold text\n* bullet list el2 ** with bold // and italic text\n\n<<youtube 1XNTjVScm_8>>\n\n[[http://ya.ru|Link to Yandex]]\n\n[[http://google.com]]\n\n{{http://icons-search.com/img/yellowicon/firefox_win.zip/Firefox_Thunderbird_Win-icons-Firefox.ico-128x128.png|mail icon}}\n\n{{{\n== [[Nowiki]]:\n//**don't** format//\n}}}\n\n\n";var
-e=cu(g);e.style.border="1px black dashed";e.style.padding="5px";ao(b,c);ao(b,aC(g,fR));ao(b,e);function
+c=fO(0,0,g,fP);c.rows=20;c.cols=80;c.value="\n\n====this is h4\n\n# number list  el 1\n# number list e2 2 //with italic text\n\n\n//with italic\n\n* bullet list el1 ** with bold text\n* bullet list el2 ** with bold // and italic text\n\n<<youtube 1XNTjVScm_8>>\n\n[[http://ya.ru|Link to Yandex]]\n\n[[http://google.com]]\n\n{{http://icons-search.com/img/yellowicon/firefox_win.zip/Firefox_Thunderbird_Win-icons-Firefox.ico-128x128.png|mail icon}}\n\n{{{\n== [[Nowiki]]:\n//**don't** format//\n}}}\n\n\n";var
+d=cu(g);d.style.border="1px black dashed";d.style.padding="5px";ao(b,c);ao(b,aC(g,fR));ao(b,d);function
 h(a,b){var
-d=aJ(c.value);if(ha(d,a)){try{gA(e,gz(d))}catch(f){}var
+e=aJ(c.value);if(ha(e,a)){try{gA(d,gz(e))}catch(f){}var
 f=20}else
 var
 f=bS(0,b-1|0);function
-g(a){return h(d,f)}var
+g(a){return h(e,f)}var
 i=0===f?0.5:0.1;return fF(fY(i),g)}h(gC,0);return fM}ac.onload=cs(function(a){if(1-(cs(a)==bn?1:0)){var
 d=cC(a);if(!(d|0))a.preventDefault();return d}var
 c=event,b=cC(c);if(!(b|0))c.returnValue=b;return b});bV(0);return}(function(){return this}()));
