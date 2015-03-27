@@ -98,13 +98,14 @@
       val timeout : XmlHttpRequest.Event.typ
       val loadend : XmlHttpRequest.Event.typ
     end
-  type 'response http_frame = {
+  type 'response generic_http_frame = {
     url : string;
     code : int;
     headers : string -> string option;
     content : 'response;
     content_xml : unit -> Dom.element Dom.document Js.t option;
   }
+  type http_frame = string XmlHttpRequest.generic_http_frame
   exception Wrong_headers of (int * (string -> string option))
   val perform_raw :
     ?headers:(string * string) list ->
@@ -117,7 +118,7 @@
     ?upload_progress:(int -> int -> unit) ->
     ?override_mime_type:string ->
     response_type:'a XmlHttpRequest.response ->
-    string -> 'a XmlHttpRequest.http_frame Lwt.t
+    string -> 'a XmlHttpRequest.generic_http_frame Lwt.t
   val perform_raw_url :
     ?headers:(string * string) list ->
     ?content_type:string ->
@@ -127,8 +128,7 @@
     ?check_headers:(int -> (string -> string option) -> bool) ->
     ?progress:(int -> int -> unit) ->
     ?upload_progress:(int -> int -> unit) ->
-    ?override_mime_type:string ->
-    string -> string XmlHttpRequest.http_frame Lwt.t
+    ?override_mime_type:string -> string -> XmlHttpRequest.http_frame Lwt.t
   val perform :
     ?headers:(string * string) list ->
     ?content_type:string ->
@@ -138,7 +138,6 @@
     ?check_headers:(int -> (string -> string option) -> bool) ->
     ?progress:(int -> int -> unit) ->
     ?upload_progress:(int -> int -> unit) ->
-    ?override_mime_type:string ->
-    Url.url -> string XmlHttpRequest.http_frame Lwt.t
-  val get : string -> string XmlHttpRequest.http_frame Lwt.t
+    ?override_mime_type:string -> Url.url -> XmlHttpRequest.http_frame Lwt.t
+  val get : string -> XmlHttpRequest.http_frame Lwt.t
 end >>

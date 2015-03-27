@@ -79,12 +79,13 @@
       objects~.
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api text="generic_http_frame"| type XmlHttpRequest.generic_http_frame >> ~[<<a_api | module XmlHttpRequest >>~]|<<div class="odocwiki_info"|~The type for ~X~H~R results~.
+>>
+|
 |@@ @style="tet-align: left;"@@\\H|
 |@@class="odocwiki_index"@ @@<<a_api text="hintMode"| type WebGL.hintMode >> ~[<<a_api | module WebGL >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="hintTarget"| type WebGL.hintTarget >> ~[<<a_api | module WebGL >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="http_frame"| type XmlHttpRequest.http_frame >> ~[<<a_api | module XmlHttpRequest >>~]|<<div class="odocwiki_info"|~The type for ~X~H~R results~.
->>
-|
+|@@class="odocwiki_index"@ @@<<a_api text="http_frame"| type XmlHttpRequest.http_frame >> ~[<<a_api | module XmlHttpRequest >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="http_url"| type Url.http_url >> ~[<<a_api | module Url >>~]|<<div class="odocwiki_info"|~The type for ~H~T~T~P~(s~) url~.
 >>
 |
