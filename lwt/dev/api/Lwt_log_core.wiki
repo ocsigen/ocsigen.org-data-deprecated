@@ -62,7 +62,7 @@
 
 
       ~If the pattern is omited in a rule then the pattern <<span class="odocwiki_inlinecode"|"~*">> is
-      used instead~, so <<span class="odocwiki_inlinecode"|~L~W~T~_~L~O~G>> may just contains <<span class="odocwiki_inlinecode"|"debug">> for
+      used instead~, so <<span class="odocwiki_inlinecode"|~L~W~T~_~L~O~G>> may just contain <<span class="odocwiki_inlinecode"|"debug">> for
       instance~.
 
 
@@ -177,8 +177,9 @@
 <<pre id="VALclose" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|close>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<a_api text="logger" | type Lwt_log_core.logger >> <<span class="ocsforge_color_delimiter"| -> >> unit <<a_api text="Lwt.t" | type Lwt.t >>>>>><<div class="odocwiki_info"|~Close the given logger
 >>
 <<pre id="VALdefault" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|default>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<a_api text="logger" | type Lwt_log_core.logger >> <<span class="ocsforge_color_uid"|Pervasives>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|ref>>>>>><<div class="odocwiki_info"|~The default logger~. ~It is used as default when no one is
-      specified~. ~Initially~, it sends messages to the standard output
-      for error messages~.
+      specified~. ~If <<span class="odocwiki_inlinecode"|~Lwt~_core>> is linked ~(in the package <<span class="odocwiki_inlinecode"|lwt~.unix>>~)
+      the default logger sends all messages to standard error~.
+      ~Otherwise the default logger is <<a_api | val Lwt_log_core.null >>~.
 >>
 <<pre id="VALbroadcast" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|broadcast>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<a_api text="logger" | type Lwt_log_core.logger >> list <<span class="ocsforge_color_delimiter"| -> >> <<a_api text="logger" | type Lwt_log_core.logger >>>>>><<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|broadcast loggers>> is a logger which send messages to all the
       given loggers~.
