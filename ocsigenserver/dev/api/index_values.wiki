@@ -4,6 +4,8 @@
 |@@class="odocwiki_index"@ @@<<a_api text="(!!)"| value Ocsigen_lib_base.(!!) >> ~[<<a_api | module Ocsigen_lib_base >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="(>>=)"| value Ocsigen_lib_base.(>>=) >> ~[<<a_api | module Ocsigen_lib_base >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="(>|=)"| value Ocsigen_lib_base.(>|=) >> ~[<<a_api | module Ocsigen_lib_base >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="(@@)"| value Ocsigen_lib_base.(@@) >> ~[<<a_api | module Ocsigen_lib_base >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="(|>)"| value Ocsigen_lib_base.(|>) >> ~[<<a_api | module Ocsigen_lib_base >>~]||
 |@@ @style="tet-align: left;"@@\\A|
 |@@class="odocwiki_index"@ @@<<a_api text="abort"| value Ocsigen_http_com.abort >> ~[<<a_api | module Ocsigen_http_com >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="accept"| value Http_headers.accept >> ~[<<a_api | module Http_headers >>~]||
