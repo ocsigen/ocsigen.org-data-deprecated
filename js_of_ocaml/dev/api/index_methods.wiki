@@ -1798,6 +1798,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="transformString"| method Dom_svg.viewSpec#transformString >> ~[<<a_api | module Dom_svg >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="translate"| method Dom_svg.matrix#translate >> ~[<<a_api | module Dom_svg >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="translate"| method Dom_html.canvasRenderingContext2D#translate >> ~[<<a_api | module Dom_html >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="trim"| method Js.js_string#trim >> ~[<<a_api | module Js >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="type_"| method Dom_svg.scriptElement#type_ >> ~[<<a_api | module Dom_svg >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="type_"| method Dom_svg.styleElement#type_ >> ~[<<a_api | module Dom_svg >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="types"| method Dom_html.dataTransfer#types >> ~[<<a_api | module Dom_html >>~]||

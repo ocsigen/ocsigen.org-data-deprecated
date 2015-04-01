@@ -39,5 +39,6 @@
   method toLowerCase : Js.js_string Js.t Js.meth
   method toString : Js.js_string Js.t Js.meth
   method toUpperCase : Js.js_string Js.t Js.meth
+  method trim : Js.js_string Js.t Js.meth
   method valueOf : Js.js_string Js.t Js.meth
 end >>
