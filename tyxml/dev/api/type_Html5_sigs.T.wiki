@@ -963,6 +963,8 @@
   val a_hreflang :
     Html5_types.languagecode Html5_sigs.T.wrap ->
     [> `Hreflang ] Html5_sigs.T.attrib
+  val a_download :
+    string option Html5_sigs.T.wrap -> [> `Download ] Html5_sigs.T.attrib
   val a_rel :
     Html5_types.linktypes Html5_sigs.T.wrap -> [> `Rel ] Html5_sigs.T.attrib
   val a_tabindex :

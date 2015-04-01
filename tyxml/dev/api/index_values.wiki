@@ -85,6 +85,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="a_dir"| value Html5_sigs.T.a_dir >> ~[<<a_api | module Html5_sigs.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="a_disabled"| value Html5_sigs.T.a_disabled >> ~[<<a_api | module Html5_sigs.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="a_divisor"| value Svg_sigs.T.a_divisor >> ~[<<a_api | module Svg_sigs.T >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="a_download"| value Html5_sigs.T.a_download >> ~[<<a_api | module Html5_sigs.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="a_draggable"| value Html5_sigs.T.a_draggable >> ~[<<a_api | module Html5_sigs.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="a_dur"| value Svg_sigs.T.a_dur >> ~[<<a_api | module Svg_sigs.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="a_dx"| value Svg_sigs.T.a_dx >> ~[<<a_api | module Svg_sigs.T >>~]||

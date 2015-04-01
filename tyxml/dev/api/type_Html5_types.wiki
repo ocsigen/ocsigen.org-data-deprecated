@@ -3144,6 +3144,7 @@
       | `Contenteditable
       | `Contextmenu
       | `Dir
+      | `Download
       | `Draggable
       | `Hidden
       | `Href
@@ -4188,6 +4189,7 @@
       | `Contextmenu
       | `Coords
       | `Dir
+      | `Download
       | `Draggable
       | `Hidden
       | `Hreflang
