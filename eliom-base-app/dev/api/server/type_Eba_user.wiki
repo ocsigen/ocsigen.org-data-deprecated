@@ -1,6 +1,7 @@
 <<code language="ocaml" | sig
-  exception Already_exists
+  exception Already_exists of int64
   exception No_such_user
+  val password_set : int64 -> bool Lwt.t
   type t = {
     userid : int64;
     fn : string;
@@ -36,10 +37,6 @@
   val email_of_user : Eba_user.t -> string Lwt.t
   val get_users : ?pattern:string -> unit -> Eba_user.t list Lwt.t
   val create :
-    ?password:string ->
-    ?avatar:string ->
-    firstname:string -> lastname:string -> string -> int64 Lwt.t
-  val create' :
     ?password:string ->
     ?avatar:string ->
     firstname:string -> lastname:string -> string -> Eba_user.t Lwt.t

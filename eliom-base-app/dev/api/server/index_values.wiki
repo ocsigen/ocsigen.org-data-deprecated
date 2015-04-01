@@ -30,15 +30,11 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="connected_rpc"| value Eba_session.connected_rpc >> ~[<<a_api subproject="server" | module Eba_session >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="connected_user_box"| value Eba_userbox.connected_user_box >> ~[<<a_api subproject="server" | module Eba_userbox >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="connection_box"| value Eba_userbox.connection_box >> ~[<<a_api subproject="server" | module Eba_userbox >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="create"| value Eba_user.create >> ~[<<a_api subproject="server" | module Eba_user >>~]|<<div class="odocwiki_info"|~Create a new user and returns his userid~.
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="create"| value Eba_user.create >> ~[<<a_api subproject="server" | module Eba_user >>~]|<<div class="odocwiki_info"|~Create a new user
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="create"| value Eba_group.create >> ~[<<a_api subproject="server" | module Eba_group >>~]|<<div class="odocwiki_info"|~Helper function which creates a new group and return it as
  a record of type <<span class="odocwiki_inlinecode"|t>>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="create'"| value Eba_user.create' >> ~[<<a_api subproject="server" | module Eba_user >>~]|<<div class="odocwiki_info"|~Same as above~, but instead of returning the userid~,
-    it returns a user of type <<span class="odocwiki_inlinecode"|t>>
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="css"| value Eba_page.PAGE.css >> ~[<<a_api subproject="server" | module Eba_page.PAGE >>~]||
@@ -111,6 +107,9 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="other_head"| value Eba_page.PAGE.other_head >> ~[<<a_api subproject="server" | module Eba_page.PAGE >>~]||
 |@@ @style="tet-align: left;"@@\\P|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="page"| value Eba_page.Make.page >> ~[<<a_api subproject="server" | module Eba_page.Make >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="password_set"| value Eba_user.password_set >> ~[<<a_api subproject="server" | module Eba_user >>~]|<<div class="odocwiki_info"|~Has user set its password~?
+>>
+|
 |@@ @style="tet-align: left;"@@\\R|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="remove_preregister"| value Eba_user.remove_preregister >> ~[<<a_api subproject="server" | module Eba_user >>~]|<<div class="odocwiki_info"|~Rempve an email from the preregister collections~.
 >>
@@ -156,7 +155,9 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="user_indep_session_scope"| value Eba_session.user_indep_session_scope >> ~[<<a_api subproject="server" | module Eba_session >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="user_indep_state_hierarchy"| value Eba_session.user_indep_state_hierarchy >> ~[<<a_api subproject="server" | module Eba_session >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="user_menu"| value Eba_userbox.user_menu >> ~[<<a_api subproject="server" | module Eba_userbox >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="user_of_userid"| value Eba_user.user_of_userid >> ~[<<a_api subproject="server" | module Eba_user >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="user_of_userid"| value Eba_user.user_of_userid >> ~[<<a_api subproject="server" | module Eba_user >>~]|<<div class="odocwiki_info"|returns user information~.
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="userbox"| value Eba_userbox.userbox >> ~[<<a_api subproject="server" | module Eba_userbox >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="userid_of_activationkey"| value Eba_user.userid_of_activationkey >> ~[<<a_api subproject="server" | module Eba_user >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="userid_of_email"| value Eba_user.userid_of_email >> ~[<<a_api subproject="server" | module Eba_user >>~]|<<div class="odocwiki_info"|~Retrieve an userid from an activation key~.
