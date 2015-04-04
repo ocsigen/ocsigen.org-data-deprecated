@@ -969,6 +969,20 @@
       file~.
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api text="mcast_add_membership"| value Lwt_unix.mcast_add_membership >> ~[<<a_api | module Lwt_unix >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|mcast~_add~_membership fd ~~ifname addr>> joins the multicast group <<span class="odocwiki_inlinecode"|addr>>
+      on the network interface <<span class="odocwiki_inlinecode"|ifname>>~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="mcast_drop_membership"| value Lwt_unix.mcast_drop_membership >> ~[<<a_api | module Lwt_unix >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|mcast~_drop~_membership fd ~~ifname addr>> leaves the multicast group <<span class="odocwiki_inlinecode"|addr>>
+      on the network interface <<span class="odocwiki_inlinecode"|ifname>>~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="mcast_set_loop"| value Lwt_unix.mcast_set_loop >> ~[<<a_api | module Lwt_unix >>~]|<<div class="odocwiki_info"|~Whether sent multicast messages are received by the sending host
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="mcast_set_ttl"| value Lwt_unix.mcast_set_ttl >> ~[<<a_api | module Lwt_unix >>~]|<<div class="odocwiki_info"|~Set ~T~T~L~/hops value
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api text="merge_s"| value Lwt_react.S.merge_s >> ~[<<a_api | module Lwt_react.S >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="merge_s"| value Lwt_react.E.merge_s >> ~[<<a_api | module Lwt_react.E >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="mincore"| value Lwt_bytes.mincore >> ~[<<a_api | module Lwt_bytes >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|mincore buffer offset states>> tests whether the given pages are

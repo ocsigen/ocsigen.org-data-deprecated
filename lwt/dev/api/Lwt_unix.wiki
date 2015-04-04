@@ -570,6 +570,20 @@
 >>
 
 
+===@@id="3_Multicastfunctions"@@~Multicast functions===
+
+<<pre id="VALmcast_set_loop" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|mcast~_set~_loop>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<a_api text="file_descr" | type Lwt_unix.file_descr >> <<span class="ocsforge_color_delimiter"| -> >> bool <<span class="ocsforge_color_delimiter"| -> >> unit>>>><<div class="odocwiki_info"|~Whether sent multicast messages are received by the sending host
+>>
+<<pre id="VALmcast_set_ttl" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|mcast~_set~_ttl>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<a_api text="file_descr" | type Lwt_unix.file_descr >> <<span class="ocsforge_color_delimiter"| -> >> int <<span class="ocsforge_color_delimiter"| -> >> unit>>>><<div class="odocwiki_info"|~Set ~T~T~L~/hops value
+>>
+<<pre id="VALmcast_add_membership" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|mcast~_add~_membership>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|\\  <<a_api text="file_descr" | type Lwt_unix.file_descr >> <<span class="ocsforge_color_delimiter"| -> >>\\  <<span class="ocsforge_color_label"| ?ifname: >><<span class="ocsforge_color_uid"|Unix>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|inet_addr>> <<span class="ocsforge_color_delimiter"| -> >> <<span class="ocsforge_color_uid"|Unix>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|inet_addr>> <<span class="ocsforge_color_delimiter"| -> >> unit>>>><<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|mcast~_add~_membership fd ~~ifname addr>> joins the multicast group <<span class="odocwiki_inlinecode"|addr>>
+      on the network interface <<span class="odocwiki_inlinecode"|ifname>>~.
+>>
+<<pre id="VALmcast_drop_membership" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|mcast~_drop~_membership>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|\\  <<a_api text="file_descr" | type Lwt_unix.file_descr >> <<span class="ocsforge_color_delimiter"| -> >>\\  <<span class="ocsforge_color_label"| ?ifname: >><<span class="ocsforge_color_uid"|Unix>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|inet_addr>> <<span class="ocsforge_color_delimiter"| -> >> <<span class="ocsforge_color_uid"|Unix>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|inet_addr>> <<span class="ocsforge_color_delimiter"| -> >> unit>>>><<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|mcast~_drop~_membership fd ~~ifname addr>> leaves the multicast group <<span class="odocwiki_inlinecode"|addr>>
+      on the network interface <<span class="odocwiki_inlinecode"|ifname>>~.
+>>
+
+
 ==@@id="2_Hostandprotocoldatabases"@@~Host and protocol databases==
 
 <<pre class="ocsforge_color odocwiki_code" id="TYPEhost_entry"|<<span class="ocsforge_color_keyword"|type>> <<span class="odocwiki_name"|host~_entry>> <<span class="ocsforge_color_delimiter"|~=>> <<span class="odocwiki_type"|<<span class="ocsforge_color_uid"|Unix>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|host_entry>>>>  <<span class="ocsforge_color_delimiter"|~=>> <<span class="ocsforge_color_delimiter"|~{>>

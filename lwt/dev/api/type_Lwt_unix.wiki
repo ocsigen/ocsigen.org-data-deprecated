@@ -309,6 +309,12 @@
   val setsockopt_float :
     Lwt_unix.file_descr -> Lwt_unix.socket_float_option -> float -> unit
   val getsockopt_error : Lwt_unix.file_descr -> Unix.error option
+  val mcast_set_loop : Lwt_unix.file_descr -> bool -> unit
+  val mcast_set_ttl : Lwt_unix.file_descr -> int -> unit
+  val mcast_add_membership :
+    Lwt_unix.file_descr -> ?ifname:Unix.inet_addr -> Unix.inet_addr -> unit
+  val mcast_drop_membership :
+    Lwt_unix.file_descr -> ?ifname:Unix.inet_addr -> Unix.inet_addr -> unit
   type host_entry =
     Unix.host_entry = {
     h_name : string;
