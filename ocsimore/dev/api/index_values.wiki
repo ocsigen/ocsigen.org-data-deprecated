@@ -839,6 +839,7 @@ and <<span class="odocwiki_inlinecode"|~String~.concat>>~.
     this wikibox~.
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api text="section"| value Ocsimore_lib.section >> ~[<<a_api | module Ocsimore_lib >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="section_elem"| value Wikicreole.RawBuilder.section_elem >> ~[<<a_api | module Wikicreole.RawBuilder >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="select_single"| value Xform.Xform.select_single >> ~[<<a_api | module Xform.Xform >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="send_wikibox"| value Wiki_services.send_wikibox >> ~[<<a_api | module Wiki_services >>~]||
