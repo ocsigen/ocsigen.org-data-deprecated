@@ -359,8 +359,8 @@
 |@@class="odocwiki_index"@ @@<<a_api text="eprintlf"| value Lwt_io.eprintlf >> ~[<<a_api | module Lwt_io >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="error"| value Lwt_log_core.error >> ~[<<a_api | module Lwt_log_core >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="error_f"| value Lwt_log_core.error_f >> ~[<<a_api | module Lwt_log_core >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="establish_server"| value Lwt_io.establish_server >> ~[<<a_api | module Lwt_io >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|establish~_server ~?fd ~?buffer~_size ~?backlog sockaddr f>> creates a
-    server which will listen for incoming connections~.
+|@@class="odocwiki_index"@ @@<<a_api text="establish_server"| value Lwt_io.establish_server >> ~[<<a_api | module Lwt_io >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|establish~_server ~?fd ~?buffer~_size ~?backlog sockaddr f>> creates
+      a server which will listen for incoming connections~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="exec"| value Lwt_process.exec >> ~[<<a_api | module Lwt_process >>~]|<<div class="odocwiki_info"|~Executes the given command and returns its exit status~.
@@ -911,7 +911,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="main"| value Lwt_log_core.Section.main >> ~[<<a_api | module Lwt_log_core.Section >>~]|<<div class="odocwiki_info"|~The main section~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api text="make"| value Lwt_io.make >> ~[<<a_api | module Lwt_io >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|make ~?buffer~_size ~?close ~~mode perform~_io>> is the
+|@@class="odocwiki_index"@ @@<<a_api text="make"| value Lwt_io.make >> ~[<<a_api | module Lwt_io >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|make ~?buffer ~?close ~~mode perform~_io>> is the
       main function for creating new channels~.
 >>
 |
@@ -1059,7 +1059,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="of_bytes"| value Lwt_io.of_bytes >> ~[<<a_api | module Lwt_io >>~]|<<div class="odocwiki_info"|~Create a channel from a byte array~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api text="of_fd"| value Lwt_io.of_fd >> ~[<<a_api | module Lwt_io >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|of~_fd ~?buffer~_size ~?close ~~mode fd>> creates a channel from a
+|@@class="odocwiki_index"@ @@<<a_api text="of_fd"| value Lwt_io.of_fd >> ~[<<a_api | module Lwt_io >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|of~_fd ~?buffer ~?close ~~mode fd>> creates a channel from a
       file descriptor~.
 >>
 |
@@ -1081,7 +1081,7 @@
       <<span class="odocwiki_inlinecode"|str>>
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api text="of_unix_fd"| value Lwt_io.of_unix_fd >> ~[<<a_api | module Lwt_io >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|of~_unix~_fd ~?buffer~_size ~?close ~~mode fd>> is a short~-hand for~:
+|@@class="odocwiki_index"@ @@<<a_api text="of_unix_fd"| value Lwt_io.of_unix_fd >> ~[<<a_api | module Lwt_io >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|of~_unix~_fd ~?buffer ~?close ~~mode fd>> is a short~-hand for~:
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="of_unix_file_descr"| value Lwt_unix.of_unix_file_descr >> ~[<<a_api | module Lwt_unix >>~]|<<div class="odocwiki_info"|~Creates a lwt **file descriptor** from a unix one~.
@@ -1126,12 +1126,13 @@
 |@@class="odocwiki_index"@ @@<<a_api text="on_writable"| value Lwt_engine.on_writable >> ~[<<a_api | module Lwt_engine >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|on~_readable fd f>> calls <<span class="odocwiki_inlinecode"|f>> each time <<span class="odocwiki_inlinecode"|fd>> becomes writable~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api text="open_connection"| value Lwt_io.open_connection >> ~[<<a_api | module Lwt_io >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|open~_connection ~?fd ~?buffer~_size addr>> opens a connection to the
-    given address and returns two channels for using it~.
+|@@class="odocwiki_index"@ @@<<a_api text="open_connection"| value Lwt_io.open_connection >> ~[<<a_api | module Lwt_io >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|open~_connection ~?fd ~?in~_buffer ~?out~_buffer addr>> opens a
+      connection to the given address and returns two channels for using
+      it~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="open_connection"| value Lwt_chan.open_connection >> ~[<<a_api | module Lwt_chan >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="open_file"| value Lwt_io.open_file >> ~[<<a_api | module Lwt_io >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|open~_file ~?buffer~_size ~?flags ~?perm ~~mode filename>> opens the
+|@@class="odocwiki_index"@ @@<<a_api text="open_file"| value Lwt_io.open_file >> ~[<<a_api | module Lwt_io >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|open~_file ~?buffer ~?flags ~?perm ~~mode filename>> opens the
       file with name <<span class="odocwiki_inlinecode"|filename>> and returns a channel for
       reading~/writing it~.
 >>
@@ -1189,8 +1190,9 @@
 |@@class="odocwiki_index"@ @@<<a_api text="pipe"| value Lwt_unix.pipe >> ~[<<a_api | module Lwt_unix >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|pipe ~(~)>> creates pipe using <<span class="odocwiki_inlinecode"|~Unix~.pipe>> and returns two lwt **      file descriptor**s created from unix **file~_descriptor**
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api text="pipe"| value Lwt_io.pipe >> ~[<<a_api | module Lwt_io >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|pipe ~?buffer~_size ~(~)>> creates a pipe using <<a_api | val Lwt_unix.pipe >> and
-      makes two channels from the two returned file descriptors
+|@@class="odocwiki_index"@ @@<<a_api text="pipe"| value Lwt_io.pipe >> ~[<<a_api | module Lwt_io >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|pipe ~?in~_buffer ~?out~_buffer ~(~)>> creates a pipe using
+      <<a_api | val Lwt_unix.pipe >> and makes two channels from the two returned file
+      descriptors
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="pipe_in"| value Lwt_unix.pipe_in >> ~[<<a_api | module Lwt_unix >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|pipe~_in ~(~)>> is the same as <<a_api | val Lwt_unix.pipe >> but maps only the unix **      file descriptor** for reading into a lwt one~.
@@ -1824,11 +1826,12 @@
 |@@class="odocwiki_index"@ @@<<a_api text="with_async_switch"| value Lwt_unix.with_async_switch >> ~[<<a_api | module Lwt_unix >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|with~_async~_none f>> is a shorthand for~:
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api text="with_connection"| value Lwt_io.with_connection >> ~[<<a_api | module Lwt_io >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|with~_connection ~?fd ~?buffer~_size addr f>> opens a connection to
-      the given address and passes the channels to <<span class="odocwiki_inlinecode"|f>>
+|@@class="odocwiki_index"@ @@<<a_api text="with_connection"| value Lwt_io.with_connection >> ~[<<a_api | module Lwt_io >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|with~_connection ~?fd ~?in~_buffer ~?out~_buffer addr f>> opens a
+      connection to the given address and passes the channels to
+      <<span class="odocwiki_inlinecode"|f>>
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api text="with_file"| value Lwt_io.with_file >> ~[<<a_api | module Lwt_io >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|with~_file ~?buffer~_size ~?flags ~?perm ~~mode filename f>> opens a
+|@@class="odocwiki_index"@ @@<<a_api text="with_file"| value Lwt_io.with_file >> ~[<<a_api | module Lwt_io >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|with~_file ~?buffer ~?flags ~?perm ~~mode filename f>> opens a
       file and passes the channel to <<span class="odocwiki_inlinecode"|f>>~.
 >>
 |
