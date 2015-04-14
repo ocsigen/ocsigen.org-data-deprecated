@@ -1,4 +1,9 @@
 <<code language="ocaml" | sig
+  exception Unknown_command
+  val register_command_function :
+    ?prefix:string -> (string -> string list -> unit Lwt.t) -> unit
+  val get_command_function :
+    unit -> ?prefix:string -> string -> string list -> unit Lwt.t
   module Ocsigen_request_info :
     sig
       type ifrange =
@@ -16,6 +21,8 @@
           ((string * string) * (string * string) list) option;
       }
       type request_info = Ocsigen_request_info.request_info
+      val ri_of_url :
+        ?full_rewrite:bool -> string -> request_info -> request_info
       val make :
         url_string:string ->
         meth:Ocsigen_http_frame.Http_header.http_method ->
@@ -250,7 +257,9 @@
     request_info : Ocsigen_extensions.request_info;
     request_config : Ocsigen_extensions.config_info;
   }
-  exception Ocsigen_Is_a_directory of Ocsigen_extensions.request
+  exception Ocsigen_Is_a_directory of
+              (Ocsigen_extensions.Ocsigen_request_info.request_info ->
+               Neturl.url)
   type answer =
       Ext_do_nothing
     | Ext_found of (unit -> Ocsigen_http_frame.result Lwt.t)
@@ -338,6 +347,9 @@
     end
   val get_hostname : Ocsigen_extensions.request -> string
   val get_port : Ocsigen_extensions.request -> int
+  val new_url_of_directory_request :
+    Ocsigen_extensions.request ->
+    Ocsigen_extensions.request_info -> Neturl.url
   val ri_of_url :
     ?full_rewrite:bool ->
     string ->
@@ -354,11 +366,6 @@
     string ->
     bool ->
     string option -> int -> string option -> string -> string -> string
-  exception Unknown_command
-  val register_command_function :
-    ?prefix:string -> (string -> string list -> unit Lwt.t) -> unit
-  val get_command_function :
-    unit -> ?prefix:string -> string -> string list -> unit Lwt.t
   val make_parse_config :
     Ocsigen_lib.Url.path ->
     Ocsigen_extensions.parse_config_aux -> Ocsigen_extensions.parse_fun

@@ -46,7 +46,9 @@
 |@@class="odocwiki_index"@ @@<<a_api text="Int"| module Ocsigen_lib_base.Int >> ~[<<a_api | module Ocsigen_lib_base >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="Ip_address"| module Ocsigen_lib.Ip_address >> ~[<<a_api | module Ocsigen_lib >>~]||
 |@@ @style="tet-align: left;"@@\\L|
-|@@class="odocwiki_index"@ @@<<a_api text="List"| module Ocsigen_lib_base.List >> ~[<<a_api | module Ocsigen_lib_base >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="List"| module Ocsigen_lib_base.List >> ~[<<a_api | module Ocsigen_lib_base >>~]|<<div class="odocwiki_info"|~Improvement of module ~List
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api text="Lwt"| module Ocsigen_lib_base.Option.Lwt >> ~[<<a_api | module Ocsigen_lib_base.Option >>~]||
 |@@ @style="tet-align: left;"@@\\M|
 |@@class="odocwiki_index"@ @@<<a_api text="Make"| module Ocsigen_cache.Make >> ~[<<a_api | module Ocsigen_cache >>~]||
@@ -126,7 +128,9 @@
 |@@class="odocwiki_index"@ @@<<a_api text="Ocsipersist"| module Ocsipersist >> |<<div class="odocwiki_info"|~Persistent data on hard disk~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api text="Option"| module Ocsigen_lib_base.Option >> ~[<<a_api | module Ocsigen_lib_base >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="Option"| module Ocsigen_lib_base.Option >> ~[<<a_api | module Ocsigen_lib_base >>~]|<<div class="odocwiki_info"|~Module ~Option to compute type <<span class="odocwiki_inlinecode"|~'a option>>
+>>
+|
 |@@ @style="tet-align: left;"@@\\P|
 |@@class="odocwiki_index"@ @@<<a_api text="Polytables"| module Polytables >> |<<div class="odocwiki_info"|~Polymorphic tables ~(using ~Map~)
 >>
@@ -143,7 +147,9 @@
 |
 |@@class="odocwiki_index"@ @@<<a_api text="String"| module Ocsigen_lib.String >> ~[<<a_api | module Ocsigen_lib >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="StringStream"| module Ocsigen_stream.StringStream >> ~[<<a_api | module Ocsigen_stream >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="String_base"| module Ocsigen_lib_base.String_base >> ~[<<a_api | module Ocsigen_lib_base >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="String_base"| module Ocsigen_lib_base.String_base >> ~[<<a_api | module Ocsigen_lib_base >>~]|<<div class="odocwiki_info"|~Improvement of module ~String
+>>
+|
 |@@ @style="tet-align: left;"@@\\T|
 |@@class="odocwiki_index"@ @@<<a_api text="Table"| module Ocsigen_lib_base.String_base.Table >> ~[<<a_api | module Ocsigen_lib_base.String_base >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="Table"| module Ocsigen_lib_base.Int.Table >> ~[<<a_api | module Ocsigen_lib_base.Int >>~]||

@@ -77,8 +77,4 @@
       the channel count exceed <<span class="odocwiki_inlinecode"|max~_virtual~_channels>>~.
 >>
 |
-|@@ @style="tet-align: left;"@@\\U|
-|@@class="odocwiki_index"@ @@<<a_api text="Unknown_command"| exception Ocsigen_extensions.Unknown_command >> ~[<<a_api | module Ocsigen_extensions >>~]|<<div class="odocwiki_info"|~Extending server commands
->>
-|
 \\
