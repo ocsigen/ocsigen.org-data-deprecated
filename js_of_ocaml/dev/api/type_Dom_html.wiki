@@ -5645,12 +5645,15 @@
     end
   type interval_id
   type timeout_id
+  type animation_frame_request_id
   class type window =
     object ('a)
       method alert : Js.js_string Js.t -> unit Js.meth
       method applicationCache :
         Dom_html.applicationCache Js.t Js.readonly_prop
       method blur : unit Js.meth
+      method cancelAnimationFrame :
+        Dom_html.animation_frame_request_id -> unit Js.meth
       method clearInterval : Dom_html.interval_id -> unit Js.meth
       method clearTimeout : Dom_html.timeout_id -> unit Js.meth
       method close : unit Js.meth
@@ -5747,6 +5750,9 @@
       method prompt :
         Js.js_string Js.t ->
         Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+      method requestAnimationFrame :
+        (float -> unit) Js.callback ->
+        Dom_html.animation_frame_request_id Js.meth
       method screen : Dom_html.screen Js.t Js.readonly_prop
       method scroll : int -> int -> unit Js.meth
       method sessionStorage :
@@ -5760,7 +5766,6 @@
       method undoManager : Dom_html.undoManager Js.t Js.readonly_prop
     end
   val window : Dom_html.window Js.t
-  val _requestAnimationFrame : (unit -> unit) Js.callback -> unit
   class type frameSetElement =
     object ('a)
       method appendChild : Dom.node Js.t -> Dom.node Js.t Js.meth
@@ -6508,6 +6513,7 @@
   type timeout_id_safe
   val setTimeout : (unit -> unit) -> float -> Dom_html.timeout_id_safe
   val clearTimeout : Dom_html.timeout_id_safe -> unit
+  val _requestAnimationFrame : (unit -> unit) Js.callback -> unit
   val decode_html_entities : Js.js_string Js.t -> Js.js_string Js.t
   val onIE : bool
   val hasPushState : unit -> bool

@@ -7,6 +7,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="a"| type Deriving_Json.Json.a >> ~[<<a_api | module Deriving_Json.Json >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="alignmentType"| type Dom_svg.alignmentType >> ~[<<a_api | module Dom_svg >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="angleUnitType"| type Dom_svg.angleUnitType >> ~[<<a_api | module Dom_svg >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="animation_frame_request_id"| type Dom_html.animation_frame_request_id >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="any"| type Js.Unsafe.any >> ~[<<a_api | module Js.Unsafe >>~]|<<div class="odocwiki_info"|~Top type~.
 >>
 |

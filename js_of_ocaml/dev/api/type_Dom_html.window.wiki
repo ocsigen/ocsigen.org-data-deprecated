@@ -2,6 +2,8 @@
   method alert : Js.js_string Js.t -> unit Js.meth
   method applicationCache : Dom_html.applicationCache Js.t Js.readonly_prop
   method blur : unit Js.meth
+  method cancelAnimationFrame :
+    Dom_html.animation_frame_request_id -> unit Js.meth
   method clearInterval : Dom_html.interval_id -> unit Js.meth
   method clearTimeout : Dom_html.timeout_id -> unit Js.meth
   method close : unit Js.meth
@@ -95,6 +97,9 @@
   method prompt :
     Js.js_string Js.t ->
     Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+  method requestAnimationFrame :
+    (float -> unit) Js.callback ->
+    Dom_html.animation_frame_request_id Js.meth
   method screen : Dom_html.screen Js.t Js.readonly_prop
   method scroll : int -> int -> unit Js.meth
   method sessionStorage : Dom_html.storage Js.t Js.optdef Js.readonly_prop
