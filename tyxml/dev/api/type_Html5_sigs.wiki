@@ -80,6 +80,24 @@
             [> `LengthAdjust ] attrib
           val a_textlength :
             Svg_types.Unit.length wrap -> [> `TextLength ] attrib
+          val a_text_anchor :
+            [< `End | `Inherit | `Middle | `Start ] wrap ->
+            [> `Text_Anchor ] attrib
+          val a_text_decoration :
+            [< `Blink
+             | `Inherit
+             | `Line_through
+             | `None
+             | `Overline
+             | `Underline ]
+            wrap -> [> `Text_Decoration ] attrib
+          val a_text_rendering :
+            [< `Auto
+             | `GeometricPrecision
+             | `Inherit
+             | `OptimizeLegibility
+             | `OptimizeSpeed ]
+            wrap -> [> `Text_Rendering ] attrib
           val a_rotate : Svg_types.numbers wrap -> [> `Rotate ] attrib
           val a_startoffset :
             Svg_types.Unit.length wrap -> [> `StartOffset ] attrib
@@ -2726,6 +2744,33 @@
                                                            Svg_types.Unit.length
                                                            wrap ->
                                                            [> `TextLength ]
+                                                           attrib
+                                                         val a_text_anchor :
+                                                           [< `End
+                                                            | `Inherit
+                                                            | `Middle
+                                                            | `Start ]
+                                                           wrap ->
+                                                           [> `Text_Anchor ]
+                                                           attrib
+                                                         val a_text_decoration :
+                                                           [< `Blink
+                                                            | `Inherit
+                                                            | `Line_through
+                                                            | `None
+                                                            | `Overline
+                                                            | `Underline ]
+                                                           wrap ->
+                                                           [> `Text_Decoration ]
+                                                           attrib
+                                                         val a_text_rendering :
+                                                           [< `Auto
+                                                            | `GeometricPrecision
+                                                            | `Inherit
+                                                            | `OptimizeLegibility
+                                                            | `OptimizeSpeed ]
+                                                           wrap ->
+                                                           [> `Text_Rendering ]
                                                            attrib
                                                          val a_rotate :
                                                            Svg_types.numbers
@@ -5776,6 +5821,24 @@
                                   val a_textlength :
                                     Svg_types.Unit.length wrap ->
                                     [> `TextLength ] attrib
+                                  val a_text_anchor :
+                                    [< `End | `Inherit | `Middle | `Start ]
+                                    wrap -> [> `Text_Anchor ] attrib
+                                  val a_text_decoration :
+                                    [< `Blink
+                                     | `Inherit
+                                     | `Line_through
+                                     | `None
+                                     | `Overline
+                                     | `Underline ]
+                                    wrap -> [> `Text_Decoration ] attrib
+                                  val a_text_rendering :
+                                    [< `Auto
+                                     | `GeometricPrecision
+                                     | `Inherit
+                                     | `OptimizeLegibility
+                                     | `OptimizeSpeed ]
+                                    wrap -> [> `Text_Rendering ] attrib
                                   val a_rotate :
                                     Svg_types.numbers wrap ->
                                     [> `Rotate ] attrib

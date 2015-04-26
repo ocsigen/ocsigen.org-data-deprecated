@@ -106,6 +106,19 @@
   val a_textlength :
     Svg_types.Unit.length Svg_sigs.T.wrap ->
     [> `TextLength ] Svg_sigs.T.attrib
+  val a_text_anchor :
+    [< `End | `Inherit | `Middle | `Start ] Svg_sigs.T.wrap ->
+    [> `Text_Anchor ] Svg_sigs.T.attrib
+  val a_text_decoration :
+    [< `Blink | `Inherit | `Line_through | `None | `Overline | `Underline ]
+    Svg_sigs.T.wrap -> [> `Text_Decoration ] Svg_sigs.T.attrib
+  val a_text_rendering :
+    [< `Auto
+     | `GeometricPrecision
+     | `Inherit
+     | `OptimizeLegibility
+     | `OptimizeSpeed ]
+    Svg_sigs.T.wrap -> [> `Text_Rendering ] Svg_sigs.T.attrib
   val a_rotate :
     Svg_types.numbers Svg_sigs.T.wrap -> [> `Rotate ] Svg_sigs.T.attrib
   val a_startoffset :

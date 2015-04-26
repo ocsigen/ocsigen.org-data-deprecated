@@ -425,6 +425,9 @@
 |@@class="odocwiki_index"@ @@<<a_api text="a_target"| value Svg_sigs.T.a_target >> ~[<<a_api | module Svg_sigs.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="a_targetX"| value Svg_sigs.T.a_targetX >> ~[<<a_api | module Svg_sigs.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="a_targetY"| value Svg_sigs.T.a_targetY >> ~[<<a_api | module Svg_sigs.T >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="a_text_anchor"| value Svg_sigs.T.a_text_anchor >> ~[<<a_api | module Svg_sigs.T >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="a_text_decoration"| value Svg_sigs.T.a_text_decoration >> ~[<<a_api | module Svg_sigs.T >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="a_text_rendering"| value Svg_sigs.T.a_text_rendering >> ~[<<a_api | module Svg_sigs.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="a_text_value"| value Html5_sigs.T.a_text_value >> ~[<<a_api | module Html5_sigs.T >>~]|<<div class="odocwiki_info"|~This attribute specifies the initial value of the
       control~.
 >>
