@@ -1308,7 +1308,6 @@
          [> Html5_types.body ])
         Html5_sigs.T.star
       val svg :
-        ?xmlns:string ->
         ?a:[< Html5_types.svg_attrib ] Html5_sigs.T.Svg.attrib list ->
         [< Html5_types.svg_content ] Html5_sigs.T.Svg.elt
         Html5_sigs.T.list_wrap -> [> Html5_types.svg ] Html5_sigs.T.elt
@@ -4496,7 +4495,6 @@
                [< Html5_types.body_content_fun ], [> Html5_types.body ])
               star
             val svg :
-              ?xmlns:string ->
               ?a:[< Html5_types.svg_attrib ] Svg.attrib list ->
               [< Html5_types.svg_content ] Svg.elt list_wrap ->
               [> Html5_types.svg ] elt

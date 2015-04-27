@@ -6,7 +6,7 @@
                               val uri_of_string : string -> uri
                               type +'a attrib
                               type 'a wrap
-                              type 'a list_wrap
+                              type 'a list_wrap = 'a Xml.list_wrap
                               type +'a elt
                               type ('a, 'b) nullary =
                                   ?a:'a attrib list -> unit -> 'b elt
@@ -1354,7 +1354,6 @@
        [> Html5_types.body ])
       star
     val svg :
-      ?xmlns:string ->
       ?a:[< Html5_types.svg_attrib ] Svg.attrib list ->
       [< Html5_types.svg_content ] Svg.elt list_wrap ->
       [> Html5_types.svg ] elt
