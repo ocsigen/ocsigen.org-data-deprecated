@@ -3,9 +3,9 @@
     object
       method _type : Js.js_string Js.t Js.readonly_prop
       method size : int Js.readonly_prop
-      method slice : int -> int -> File.blob Js.meth
+      method slice : int -> int -> File.blob Js.t Js.meth
       method slice_withContentType :
-        int -> int -> Js.js_string Js.t -> File.blob Js.meth
+        int -> int -> Js.js_string Js.t -> File.blob Js.t Js.meth
     end
   class type file =
     object
@@ -13,9 +13,9 @@
       method lastModifiedDate : Js.js_string Js.t Js.readonly_prop
       method name : Js.js_string Js.t Js.readonly_prop
       method size : int Js.readonly_prop
-      method slice : int -> int -> blob Js.meth
+      method slice : int -> int -> blob Js.t Js.meth
       method slice_withContentType :
-        int -> int -> Js.js_string Js.t -> blob Js.meth
+        int -> int -> Js.js_string Js.t -> blob Js.t Js.meth
     end
   type file_any
   module CoerceTo :
