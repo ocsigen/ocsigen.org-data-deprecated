@@ -117,6 +117,13 @@
     ?progress:(int -> int -> unit) ->
     ?upload_progress:(int -> int -> unit) ->
     ?override_mime_type:string ->
+    ?override_method:[< `DELETE
+                      | `GET
+                      | `HEAD
+                      | `OPTIONS
+                      | `PATCH
+                      | `POST
+                      | `PUT ] ->
     response_type:'a XmlHttpRequest.response ->
     string -> 'a XmlHttpRequest.generic_http_frame Lwt.t
   val perform_raw_url :
@@ -128,7 +135,15 @@
     ?check_headers:(int -> (string -> string option) -> bool) ->
     ?progress:(int -> int -> unit) ->
     ?upload_progress:(int -> int -> unit) ->
-    ?override_mime_type:string -> string -> XmlHttpRequest.http_frame Lwt.t
+    ?override_mime_type:string ->
+    ?override_method:[< `DELETE
+                      | `GET
+                      | `HEAD
+                      | `OPTIONS
+                      | `PATCH
+                      | `POST
+                      | `PUT ] ->
+    string -> XmlHttpRequest.http_frame Lwt.t
   val perform :
     ?headers:(string * string) list ->
     ?content_type:string ->
@@ -138,6 +153,14 @@
     ?check_headers:(int -> (string -> string option) -> bool) ->
     ?progress:(int -> int -> unit) ->
     ?upload_progress:(int -> int -> unit) ->
-    ?override_mime_type:string -> Url.url -> XmlHttpRequest.http_frame Lwt.t
+    ?override_mime_type:string ->
+    ?override_method:[< `DELETE
+                      | `GET
+                      | `HEAD
+                      | `OPTIONS
+                      | `PATCH
+                      | `POST
+                      | `PUT ] ->
+    Url.url -> XmlHttpRequest.http_frame Lwt.t
   val get : string -> XmlHttpRequest.http_frame Lwt.t
 end >>

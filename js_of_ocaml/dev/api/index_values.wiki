@@ -1096,8 +1096,7 @@
       requests~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api text="perform_raw_url"| value XmlHttpRequest.perform_raw_url >> ~[<<a_api | module XmlHttpRequest >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|perform~_raw~_url ~?headers ~?content~_type ~?post~_args ~?get~_args ~?form~_arg url>>
-      makes an asynchronous request to the specified <<span class="odocwiki_inlinecode"|url>> with
+|@@class="odocwiki_index"@ @@<<a_api text="perform_raw_url"| value XmlHttpRequest.perform_raw_url >> ~[<<a_api | module XmlHttpRequest >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|perform~_raw~_url>> makes an asynchronous request to the specified <<span class="odocwiki_inlinecode"|url>> with
       specified options~.
 >>
 |
