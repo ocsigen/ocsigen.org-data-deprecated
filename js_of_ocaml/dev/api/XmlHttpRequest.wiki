@@ -25,7 +25,7 @@
       request is used~. ~If <<span class="odocwiki_inlinecode"|post~_args>> or <<span class="odocwiki_inlinecode"|form~_arg>> is <<span class="odocwiki_inlinecode"|~Some ~_>> ~(even <<span class="odocwiki_inlinecode"|~Some ~[~]>>~) then a ~P~O~S~T
       request is made~. ~But if <<span class="odocwiki_inlinecode"|override~_method>> is set~, the request method is forced~, 
       no matter the <<span class="odocwiki_inlinecode"|post~_args>> or <<span class="odocwiki_inlinecode"|form~_arg>> value~. ~For example~, with <<span class="odocwiki_inlinecode"|override~_method>>
-      set to <<span class="odocwiki_inlinecode"|`~Put>> and <<span class="odocwiki_inlinecode"|form~_arg>> set to <<span class="odocwiki_inlinecode"|~Some ~_>> a ~P~U~T request including the form data
+      set to <<span class="odocwiki_inlinecode"|`~P~U~T>> and <<span class="odocwiki_inlinecode"|form~_arg>> set to <<span class="odocwiki_inlinecode"|~Some ~_>> a ~P~U~T request including the form data
       will be made~. ~The <<span class="odocwiki_inlinecode"|check~_headers>> argument is run as soon as the answer
       code and headers are available~. ~If it returns false~, the request is canceled
       and the functions raise the <<span class="odocwiki_inlinecode"|~Wrong~_headers>> exception
