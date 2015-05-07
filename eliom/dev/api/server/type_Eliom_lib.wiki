@@ -6,6 +6,8 @@
   val ( >>= ) : 'a Lwt.t -> ('a -> 'b Lwt.t) -> 'b Lwt.t
   val ( >|= ) : 'a Lwt.t -> ('a -> 'b) -> 'b Lwt.t
   val ( !! ) : 'a Lazy.t -> 'a
+  val ( |> ) : 'a -> ('a -> 'b) -> 'b
+  val ( @@ ) : ('a -> 'b) -> 'a -> 'b
   external id : 'a -> 'a = "%identity"
   val comp : ('a -> 'b) -> ('c -> 'a) -> 'c -> 'b
   val curry : ('a * 'b -> 'c) -> 'a -> 'b -> 'c
@@ -35,6 +37,14 @@
       val return : 'a -> 'a t
       val bind : 'a t -> ('a -> 'b t) -> 'b t
       val to_list : 'a t -> 'a list
+      module Lwt :
+        sig
+          val map : ('a -> 'b Lwt.t) -> 'a t -> 'b t Lwt.t
+          val get : (unit -> 'a Lwt.t) -> 'a t -> 'a Lwt.t
+          val get' : 'a Lwt.t -> 'a t -> 'a Lwt.t
+          val iter : ('a -> unit Lwt.t) -> 'a t -> unit Lwt.t
+          val bind : 'a t -> ('a -> 'b t Lwt.t) -> 'b t Lwt.t
+        end
     end
   module List :
     sig
@@ -884,6 +894,7 @@
       val load_rules : string -> unit
       val add_rule : string -> level -> unit
       val append_rule : string -> level -> unit
+      val reset_rules : unit -> unit
       val log :
         ?exn:exn ->
         ?section:section ->
