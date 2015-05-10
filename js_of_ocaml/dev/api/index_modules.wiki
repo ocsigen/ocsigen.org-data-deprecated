@@ -152,7 +152,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="Tyxml_cast_sigs"| module Tyxml_cast_sigs >> |<<div class="odocwiki_info"|~Signatures to cast to and from ~Tyxml types
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api text="Tyxml_js"| module Tyxml_js >> |<<div class="odocwiki_info"|~Tyxml interface
+|@@class="odocwiki_index"@ @@<<a_api text="Tyxml_js"| module Tyxml_js >> |<<div class="odocwiki_info"|~Tyxml interface~.
 >>
 |
 |@@ @style="tet-align: left;"@@\\U|

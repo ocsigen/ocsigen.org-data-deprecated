@@ -119,7 +119,7 @@
 
 
 
-|<<a_api | module Tyxml_js >>|<<div class="odocwiki_info"|~Tyxml interface
+|<<a_api | module Tyxml_js >>|<<div class="odocwiki_info"|~Tyxml interface~.
 >>
 |
 |<<a_api | module Tyxml_cast >>|<<div class="odocwiki_info"|~Cast to and from ~Tyxml types
