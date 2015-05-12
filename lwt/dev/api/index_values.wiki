@@ -1384,6 +1384,9 @@
 |@@class="odocwiki_index"@ @@<<a_api text="return_none"| value Lwt.return_none >> ~[<<a_api | module Lwt >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|return~_none ~= return ~None>>
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api text="return_some"| value Lwt.return_some >> ~[<<a_api | module Lwt >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|return~_some x ~= return ~(~Some x~)>>
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api text="return_true"| value Lwt.return_true >> ~[<<a_api | module Lwt >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|return~_true ~= return true>>
 >>
 |

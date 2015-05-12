@@ -78,6 +78,8 @@
 >>
 <<pre id="VALreturn_none" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|return~_none>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|'a option <<a_api text="t" | type Lwt.t >>>>>><<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|return~_none ~= return ~None>>
 >>
+<<pre id="VALreturn_some" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|return~_some>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|'a <<span class="ocsforge_color_delimiter"| -> >> 'a option <<a_api text="t" | type Lwt.t >>>>>><<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|return~_some x ~= return ~(~Some x~)>>
+>>
 <<pre id="VALreturn_nil" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|return~_nil>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|'a list <<a_api text="t" | type Lwt.t >>>>>><<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|return~_nil ~= return ~[~]>>
 >>
 <<pre id="VALreturn_true" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|return~_true>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|bool <<a_api text="t" | type Lwt.t >>>>>><<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|return~_true ~= return true>>

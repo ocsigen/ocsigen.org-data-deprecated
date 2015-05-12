@@ -12,6 +12,7 @@
   val ( =|< ) : ('a -> 'b) -> 'a Lwt.t -> 'b Lwt.t
   val return_unit : unit Lwt.t
   val return_none : 'a option Lwt.t
+  val return_some : 'a -> 'a option Lwt.t
   val return_nil : 'a list Lwt.t
   val return_true : bool Lwt.t
   val return_false : bool Lwt.t
