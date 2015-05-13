@@ -1543,6 +1543,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="selectedIndex"| method Dom_html.selectElement#selectedIndex >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="send"| method XmlHttpRequest.xmlHttpRequest#send >> ~[<<a_api | module XmlHttpRequest >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="send"| method WebSockets.webSocket#send >> ~[<<a_api | module WebSockets >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="send_blob"| method XmlHttpRequest.xmlHttpRequest#send_blob >> ~[<<a_api | module XmlHttpRequest >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="send_blob"| method WebSockets.webSocket#send_blob >> ~[<<a_api | module WebSockets >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="send_buffer"| method WebSockets.webSocket#send_buffer >> ~[<<a_api | module WebSockets >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="send_document"| method XmlHttpRequest.xmlHttpRequest#send_document >> ~[<<a_api | module XmlHttpRequest >>~]||

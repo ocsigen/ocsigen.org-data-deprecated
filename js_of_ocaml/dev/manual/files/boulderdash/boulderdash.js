@@ -28,7 +28,7 @@
      num_10_dB_=-10,
      str_dA_="% ",
      str_e_="",
-     num_128_G_=128,
+     num_128_I_=128,
      num_781515420_dg_=781515420,
      str_sprites_boulder_png_dn_="sprites/boulder.png",
      num_479410653_dm_=479410653,
@@ -253,13 +253,13 @@
         i_c_++)
         /*<<mlString.js 116 74>>*/ {c1_g_=
          /*<<mlString.js 117 9>>*/ s_a_.charCodeAt(i_c_);
-         /*<<mlString.js 118 4>>*/ if(c1_g_<num_128_G_)
+         /*<<mlString.js 118 4>>*/ if(c1_g_<num_128_I_)
           /*<<mlString.js 118 19>>*/ { /*<<mlString.js 119 6>>*/ for
            ( /*<<mlString.js 119 17>>*/ var j_f_=i_c_+1;
             j_f_<
             l_j_&&
             (c1_g_= /*<<mlString.js 119 43>>*/ s_a_.charCodeAt(j_f_))<
-            num_128_G_;
+            num_128_I_;
             j_f_++)
             /*<<mlString.js 119 72>>*/ ;
            /*<<mlString.js 120 6>>*/ if(j_f_-i_c_>num_512_dO_)
@@ -278,18 +278,18 @@
          (++i_c_<
           l_j_&&
           ((c2_i_= /*<<mlString.js 126 29>>*/ s_a_.charCodeAt(i_c_))&-64)==
-          num_128_G_)
+          num_128_I_)
           /*<<mlString.js 126 62>>*/ {c_h_=c2_i_+(c1_g_<<6);
            /*<<mlString.js 128 6>>*/ if(c1_g_<num_224_dG_)
             /*<<mlString.js 128 21>>*/ {v_b_=c_h_-12416;
-             /*<<mlString.js 130 8>>*/ if(v_b_<num_128_G_)v_b_=1}
+             /*<<mlString.js 130 8>>*/ if(v_b_<num_128_I_)v_b_=1}
           else
             /*<<mlString.js 131 13>>*/ {v_b_=2;
              /*<<mlString.js 133 8>>*/ if
              (++i_c_<
               l_j_&&
               ((c2_i_= /*<<mlString.js 133 33>>*/ s_a_.charCodeAt(i_c_))&-64)==
-              num_128_G_)
+              num_128_I_)
               /*<<mlString.js 133 66>>*/ {c_h_=c2_i_+(c_h_<<6);
                /*<<mlString.js 135 10>>*/ if(c1_g_<num_240_dh_)
                 /*<<mlString.js 135 25>>*/ {v_b_=c_h_-925824;
@@ -303,7 +303,7 @@
                   l_j_&&
                   ((c2_i_= /*<<mlString.js 140 39>>*/ s_a_.charCodeAt(i_c_))&
                    -64)==
-                  num_128_G_&&
+                  num_128_I_&&
                   c1_g_<
                   245)
                   /*<<mlString.js 141 31>>*/ {v_b_=c2_i_-63447168+(c_h_<<6);
@@ -1196,13 +1196,13 @@
         i_d_++)
         /*<<mlString.js 81 65>>*/ {c_b_=
          /*<<mlString.js 82 8>>*/ s_a_.charCodeAt(i_d_);
-         /*<<mlString.js 83 4>>*/ if(c_b_<num_128_G_)
+         /*<<mlString.js 83 4>>*/ if(c_b_<num_128_I_)
           /*<<mlString.js 83 18>>*/ { /*<<mlString.js 84 6>>*/ for
            ( /*<<mlString.js 84 17>>*/ var j_f_=i_d_+1;
             j_f_<
             l_h_&&
             (c_b_= /*<<mlString.js 84 42>>*/ s_a_.charCodeAt(j_f_))<
-            num_128_G_;
+            num_128_I_;
             j_f_++)
             /*<<mlString.js 84 71>>*/ ;
            /*<<mlString.js 85 6>>*/ if(j_f_-i_d_>num_512_dO_)
@@ -1220,12 +1220,12 @@
           /*<<mlString.js 90 19>>*/ {t_c_+=
            /*<<mlString.js 91 11>>*/ String.fromCharCode(192|c_b_>>6);
           t_c_+=
-           /*<<mlString.js 92 11>>*/ String.fromCharCode(num_128_G_|c_b_&63)}
+           /*<<mlString.js 92 11>>*/ String.fromCharCode(num_128_I_|c_b_&63)}
         else
           /*<<mlString.js 93 11>>*/ if(c_b_<55296||c_b_>=num_57343_dl_)
            /*<<mlString.js 93 42>>*/ t_c_+=
            /*<<mlString.js 94 11>>*/ String.fromCharCode
-           (num_224_dG_|c_b_>>12,num_128_G_|c_b_>>6&63,num_128_G_|c_b_&63);
+           (num_224_dG_|c_b_>>12,num_128_I_|c_b_>>6&63,num_128_I_|c_b_&63);
          else
            /*<<mlString.js 97 11>>*/ if
            (c_b_>=
@@ -1244,9 +1244,9 @@
             t_c_+=
              /*<<mlString.js 104 11>>*/ String.fromCharCode
              (num_240_dh_|c_b_>>18,
-              num_128_G_|c_b_>>12&63,
-              num_128_G_|c_b_>>6&63,
-              num_128_G_|c_b_&63)}
+              num_128_I_|c_b_>>12&63,
+              num_128_I_|c_b_>>6&63,
+              num_128_I_|c_b_&63)}
          /*<<mlString.js 109 4>>*/ if(t_c_.length>num_1024_aW_)
           /*<<mlString.js 109 25>>*/ { /*<<mlString.js 109 26>>*/ t_c_.substr
            (0,1);
@@ -1919,15 +1919,15 @@
      _hm_=caml_new_string_d_(str_GET_dM_),
      _hh_=caml_new_string_d_(str_b9_),
      _hi_=caml_new_string_d_("?"),
-     _g9_=[0,caml_new_string_d_(str_xmlHttpRequest_ml_ax_),160,29],
-     _g8_=[0,caml_new_string_d_(str_xmlHttpRequest_ml_ax_),152,29],
-     _g7_=[0,caml_new_string_d_(str_xmlHttpRequest_ml_ax_),144,29],
-     _g6_=[0,caml_new_string_d_(str_xmlHttpRequest_ml_ax_),136,29],
-     _g5_=[0,caml_new_string_d_(str_xmlHttpRequest_ml_ax_),num_128_G_,29],
+     _g9_=[0,caml_new_string_d_(str_xmlHttpRequest_ml_ax_),161,29],
+     _g8_=[0,caml_new_string_d_(str_xmlHttpRequest_ml_ax_),153,29],
+     _g7_=[0,caml_new_string_d_(str_xmlHttpRequest_ml_ax_),145,29],
+     _g6_=[0,caml_new_string_d_(str_xmlHttpRequest_ml_ax_),137,29],
+     _g5_=[0,caml_new_string_d_(str_xmlHttpRequest_ml_ax_),129,29],
      _g0_=caml_new_string_d_(str_b0_),
      _g1_=caml_new_string_d_(str_b0_),
      _g2_=caml_new_string_d_(str_b9_),
-     _gZ_=[0,caml_new_string_d_(str_xmlHttpRequest_ml_ax_),83,2],
+     _gZ_=[0,caml_new_string_d_(str_xmlHttpRequest_ml_ax_),84,2],
      _g3_=caml_new_string_d_("XmlHttpRequest.Wrong_headers"),
      _hs_=caml_new_string_d_(str_index_out_of_bounds_b2_),
      _hG_=caml_new_string_d_(str_eos_b1_),
@@ -3954,7 +3954,7 @@
                     [13,match_B_[1]],
                     match_B_[2]]}}
        /*<<camlinternalFormat.ml 1198 28>>*/ throw _u_ /*<<camlinternalFormat.ml 1198 28>>*/ }
-    function _H_(padty_a_,width_b_,str_c_)
+    function _G_(padty_a_,width_b_,str_c_)
      {var
         /*<<camlinternalFormat.ml 1240 2>>*/ len_d_=
          /*<<camlinternalFormat.ml 1240 2>>*/ caml_ml_string_length_f_(str_c_),
@@ -4552,7 +4552,7 @@
                                     o_i_,
                                     [4,
                                      _f_,
-                                      /*<<camlinternalFormat.ml 1607 17>>*/ _H_
+                                      /*<<camlinternalFormat.ml 1607 17>>*/ _G_
                                       (_E_,
                                        _C_,
                                         /*<<camlinternalFormat.ml 1606 16>>*/ _ab_(_x_,_bx_,x_a_))],
@@ -4563,7 +4563,7 @@
                                     o_i_,
                                     [4,
                                      _f_,
-                                      /*<<camlinternalFormat.ml 1615 16>>*/ _H_
+                                      /*<<camlinternalFormat.ml 1615 16>>*/ _G_
                                       (_E_,
                                        _C_,
                                         /*<<camlinternalFormat.ml 1615 36>>*/ _ab_(_x_,p_a_,x_b_))],
@@ -4575,7 +4575,7 @@
                           o_i_,
                           [4,
                            _f_,
-                            /*<<camlinternalFormat.ml 1611 16>>*/ _H_
+                            /*<<camlinternalFormat.ml 1611 16>>*/ _G_
                             (_E_,
                              _C_,
                               /*<<camlinternalFormat.ml 1611 36>>*/ _ab_(_x_,_ac_,x_a_))],
@@ -4589,7 +4589,7 @@
                                   o_i_,
                                   [4,
                                    _f_,
-                                    /*<<camlinternalFormat.ml 1620 17>>*/ _H_
+                                    /*<<camlinternalFormat.ml 1620 17>>*/ _G_
                                     (_F_,
                                      w_a_,
                                       /*<<camlinternalFormat.ml 1619 16>>*/ _ab_(_x_,_bx_,x_b_))],
@@ -4600,7 +4600,7 @@
                                   o_i_,
                                   [4,
                                    _f_,
-                                    /*<<camlinternalFormat.ml 1628 16>>*/ _H_
+                                    /*<<camlinternalFormat.ml 1628 16>>*/ _G_
                                     (_F_,
                                      w_a_,
                                       /*<<camlinternalFormat.ml 1628 36>>*/ _ab_(_x_,p_b_,x_c_))],
@@ -4612,7 +4612,7 @@
                         o_i_,
                         [4,
                          _f_,
-                          /*<<camlinternalFormat.ml 1624 16>>*/ _H_
+                          /*<<camlinternalFormat.ml 1624 16>>*/ _G_
                           (_F_,
                            w_a_,
                             /*<<camlinternalFormat.ml 1624 36>>*/ _ab_(_x_,_ad_,x_b_))],
@@ -4630,13 +4630,13 @@
            var
             _O_=_g_[3],
             _P_=_g_[2],
-             /*<<camlinternalFormat.ml 1360 12>>*/ buf_G_=
+             /*<<camlinternalFormat.ml 1360 12>>*/ buf_H_=
               /*<<camlinternalFormat.ml 1360 12>>*/ _co_(16);
             /*<<camlinternalFormat.ml 1361 2>>*/  /*<<camlinternalFormat.ml 1361 2>>*/ _by_
-            (buf_G_,_P_);
+            (buf_H_,_P_);
             /*<<camlinternalFormat.ml 1361 24>>*/ var
             ty_K_=
-              /*<<camlinternalFormat.ml 1361 24>>*/ _cq_(buf_G_);
+              /*<<camlinternalFormat.ml 1361 24>>*/ _cq_(buf_H_);
             /*<<camlinternalFormat.ml 1426 4>>*/ return function(str_a_)
             { /*<<camlinternalFormat.ml 1428 6>>*/ return  /*<<camlinternalFormat.ml 1428 6>>*/ _k_
                      (_h_,o_i_,[4,_f_,ty_K_],_O_) /*<<camlinternalFormat.ml 1428 54>>*/ };
@@ -4902,7 +4902,7 @@
                      o_c_,
                      [4,
                       acc_d_,
-                       /*<<camlinternalFormat.ml 1533 42>>*/ _H_
+                       /*<<camlinternalFormat.ml 1533 42>>*/ _G_
                        (_j_,
                         _b_,
                          /*<<camlinternalFormat.ml 1533 66>>*/ caml_call_gen1_h_
@@ -4915,7 +4915,7 @@
                    o_c_,
                    [4,
                     acc_d_,
-                     /*<<camlinternalFormat.ml 1537 42>>*/ _H_
+                     /*<<camlinternalFormat.ml 1537 42>>*/ _G_
                      (_l_,
                       w_a_,
                        /*<<camlinternalFormat.ml 1537 62>>*/ caml_call_gen1_h_
@@ -4969,7 +4969,7 @@
                                o_j_,
                                [4,
                                 acc_d_,
-                                 /*<<camlinternalFormat.ml 1562 16>>*/ _H_
+                                 /*<<camlinternalFormat.ml 1562 16>>*/ _G_
                                  (_m_,
                                   _c_,
                                    /*<<camlinternalFormat.ml 1562 36>>*/ caml_call_gen2_D_
@@ -4981,7 +4981,7 @@
                                o_j_,
                                [4,
                                 acc_d_,
-                                 /*<<camlinternalFormat.ml 1570 16>>*/ _H_
+                                 /*<<camlinternalFormat.ml 1570 16>>*/ _G_
                                  (_m_,
                                   _c_,
                                    /*<<camlinternalFormat.ml 1570 36>>*/ _as_
@@ -4996,7 +4996,7 @@
                      o_j_,
                      [4,
                       acc_d_,
-                       /*<<camlinternalFormat.ml 1566 16>>*/ _H_
+                       /*<<camlinternalFormat.ml 1566 16>>*/ _G_
                        (_m_,
                         _c_,
                          /*<<camlinternalFormat.ml 1566 36>>*/ _as_
@@ -5013,7 +5013,7 @@
                              o_j_,
                              [4,
                               acc_d_,
-                               /*<<camlinternalFormat.ml 1574 16>>*/ _H_
+                               /*<<camlinternalFormat.ml 1574 16>>*/ _G_
                                (_n_,
                                 w_a_,
                                  /*<<camlinternalFormat.ml 1574 36>>*/ caml_call_gen2_D_
@@ -5025,7 +5025,7 @@
                              o_j_,
                              [4,
                               acc_d_,
-                               /*<<camlinternalFormat.ml 1582 16>>*/ _H_
+                               /*<<camlinternalFormat.ml 1582 16>>*/ _G_
                                (_n_,
                                 w_a_,
                                  /*<<camlinternalFormat.ml 1582 36>>*/ _as_
@@ -5040,7 +5040,7 @@
                    o_j_,
                    [4,
                     acc_d_,
-                     /*<<camlinternalFormat.ml 1578 16>>*/ _H_
+                     /*<<camlinternalFormat.ml 1578 16>>*/ _G_
                      (_n_,
                       w_a_,
                        /*<<camlinternalFormat.ml 1578 36>>*/ _as_
@@ -6230,44 +6230,44 @@
                 ( /*<<form.ml 157 23>>*/ _f_.toString(),_c_[2])
               : /*<<form.ml 156 22>>*/ _e_.append
                 ( /*<<form.ml 156 22>>*/ _f_.toString(),_c_[2]) /*<<form.ml 157 73>>*/ }
-     /*<<xmlHttpRequest.ml 75 40>>*/ function _gY_(param_a_)
-     { /*<<xmlHttpRequest.ml 79 2>>*/ try
-       { /*<<xmlHttpRequest.ml 79 6>>*/ var
+     /*<<xmlHttpRequest.ml 76 40>>*/ function _gY_(param_a_)
+     { /*<<xmlHttpRequest.ml 80 2>>*/ try
+       { /*<<xmlHttpRequest.ml 80 6>>*/ var
          _f_=
           new (window_c_.XMLHttpRequest)()}
       catch(_f_)
-       { /*<<xmlHttpRequest.ml 80 2>>*/ try
-         { /*<<xmlHttpRequest.ml 80 6>>*/ var
+       { /*<<xmlHttpRequest.ml 81 2>>*/ try
+         { /*<<xmlHttpRequest.ml 81 6>>*/ var
            _e_=
             new (window_c_.activeXObject)("Msxml2.XMLHTTP")}
         catch(_f_)
-         { /*<<xmlHttpRequest.ml 81 2>>*/ try
-           { /*<<xmlHttpRequest.ml 81 6>>*/ var
+         { /*<<xmlHttpRequest.ml 82 2>>*/ try
+           { /*<<xmlHttpRequest.ml 82 6>>*/ var
              _d_=
               new (window_c_.activeXObject)("Msxml3.XMLHTTP")}
           catch(_f_)
-           { /*<<xmlHttpRequest.ml 82 2>>*/ try
-             { /*<<xmlHttpRequest.ml 82 6>>*/ var
+           { /*<<xmlHttpRequest.ml 83 2>>*/ try
+             { /*<<xmlHttpRequest.ml 83 6>>*/ var
                _b_=
                 new (window_c_.activeXObject)("Microsoft.XMLHTTP")}
-            catch(_f_){ /*<<xmlHttpRequest.ml 83 14>>*/ throw [0,_l_,_gZ_]}
+            catch(_f_){ /*<<xmlHttpRequest.ml 84 14>>*/ throw [0,_l_,_gZ_]}
             return _b_}
-           /*<<xmlHttpRequest.ml 82 2>>*/ return _d_}
-         /*<<xmlHttpRequest.ml 81 2>>*/ return _e_}
-       /*<<xmlHttpRequest.ml 80 2>>*/ return _f_ /*<<xmlHttpRequest.ml 83 14>>*/ }
-     /*<<xmlHttpRequest.ml 75 40>>*/ var
+           /*<<xmlHttpRequest.ml 83 2>>*/ return _d_}
+         /*<<xmlHttpRequest.ml 82 2>>*/ return _e_}
+       /*<<xmlHttpRequest.ml 81 2>>*/ return _f_ /*<<xmlHttpRequest.ml 84 14>>*/ }
+     /*<<xmlHttpRequest.ml 76 40>>*/ var
      _g4_=
-       /*<<xmlHttpRequest.ml 75 40>>*/ caml_set_oo_id_J_([num_248_a_,_g3_,0]);
-     /*<<xmlHttpRequest.ml 75 40>>*/ function _g__(url_a_)
-     { /*<<xmlHttpRequest.ml 165 2>>*/ try
-       { /*<<xmlHttpRequest.ml 165 14>>*/  /*<<xmlHttpRequest.ml 165 14>>*/ _cm_
+       /*<<xmlHttpRequest.ml 76 40>>*/ caml_set_oo_id_J_([num_248_a_,_g3_,0]);
+     /*<<xmlHttpRequest.ml 76 40>>*/ function _g__(url_a_)
+     { /*<<xmlHttpRequest.ml 166 2>>*/ try
+       { /*<<xmlHttpRequest.ml 166 14>>*/  /*<<xmlHttpRequest.ml 166 14>>*/ _cm_
          (url_a_,63);
-         /*<<xmlHttpRequest.ml 165 37>>*/ var _b_=1}
+         /*<<xmlHttpRequest.ml 166 37>>*/ var _b_=1}
       catch(_f_)
        {_f_=caml_wrap_exception_U_(_f_);
         if(_f_===_aH_)return 0;
-         /*<<xmlHttpRequest.ml 159 41>>*/ throw _f_}
-      return _b_ /*<<xmlHttpRequest.ml 165 65>>*/ }
+         /*<<xmlHttpRequest.ml 160 41>>*/ throw _f_}
+      return _b_ /*<<xmlHttpRequest.ml 166 65>>*/ }
      /*<<boulderdash.ml 13 15>>*/ var doc_A_=window_c_.document;
      /*<<boulderdash.ml 13 15>>*/ function append_text_af_(e_a_,s_b_)
      { /*<<boulderdash.ml 15 41>>*/ return  /*<<boulderdash.ml 15 41>>*/ _C_
@@ -6299,7 +6299,7 @@
         case 6: /*<<boulderdash.ml 78 15>>*/ return str_sprites_guy_png_dP_;
         case 7: /*<<boulderdash.ml 79 15>>*/ return "sprites/wall.png";
         default: /*<<boulderdash.ml 72 15>>*/ return "sprites/bam.png"} /*<<boulderdash.ml 79 35>>*/ }
-     /*<<boulderdash.ml 25 41>>*/ function set_cell_I_
+     /*<<boulderdash.ml 25 41>>*/ function set_cell_H_
      (state_a_,x_b_,y_c_,v_d_)
      { /*<<boulderdash.ml 82 15>>*/  /*<<boulderdash.ml 82 15>>*/ caml_check_bound_g_
         ( /*<<boulderdash.ml 82 2>>*/ caml_check_bound_g_(state_a_[1],y_c_)
@@ -6377,9 +6377,9 @@
                       [_l_+1],
                      _a_)
                    [_a_+1]
-                  ?( /*<<boulderdash.ml 95 5>>*/ set_cell_I_
+                  ?( /*<<boulderdash.ml 95 5>>*/ set_cell_H_
                      (state_c_,_a_,_b_-1|0,0),
-                     /*<<boulderdash.ml 96 5>>*/ set_cell_I_(state_c_,_a_,_b_,3),
+                     /*<<boulderdash.ml 96 5>>*/ set_cell_H_(state_c_,_a_,_b_,3),
                     changed_d_[1]=
                     1,
                     1)
@@ -6423,9 +6423,9 @@
                           [_p_+1],
                          _o_)
                        [_o_+1]
-                      ?( /*<<boulderdash.ml 103 5>>*/ set_cell_I_
+                      ?( /*<<boulderdash.ml 103 5>>*/ set_cell_H_
                          (state_c_,_a_-1|0,_b_-1|0,0),
-                         /*<<boulderdash.ml 104 5>>*/ set_cell_I_
+                         /*<<boulderdash.ml 104 5>>*/ set_cell_H_
                          (state_c_,_a_,_b_,3),
                         changed_d_[1]=
                         1,
@@ -6474,9 +6474,9 @@
                           [_t_+1],
                          _s_)
                        [_s_+1]
-                      ?( /*<<boulderdash.ml 111 5>>*/ set_cell_I_
+                      ?( /*<<boulderdash.ml 111 5>>*/ set_cell_H_
                          (state_c_,_a_+1|0,_b_-1|0,0),
-                         /*<<boulderdash.ml 112 5>>*/ set_cell_I_
+                         /*<<boulderdash.ml 112 5>>*/ set_cell_H_
                          (state_c_,_a_,_b_,3),
                         changed_d_[1]=
                         1,
@@ -6506,7 +6506,7 @@
                        [_b_+1],
                       _a_)
                     [_a_+1])
-                  { /*<<boulderdash.ml 116 5>>*/  /*<<boulderdash.ml 116 5>>*/ set_cell_I_
+                  { /*<<boulderdash.ml 116 5>>*/  /*<<boulderdash.ml 116 5>>*/ set_cell_H_
                     (state_c_,_a_,_b_+1|0,8);
                     /*<<boulderdash.ml 117 16>>*/ throw Death_bQ_}}
                /*<<boulderdash.ml 115 3>>*/ var _B_=_a_+1|0;
@@ -6530,9 +6530,9 @@
      { /*<<boulderdash.ml 127 26>>*/ var _G_=clock_t_[3];
        /*<<boulderdash.ml 128 2>>*/ function _k_(param_a_)
        {var
-          /*<<boulderdash.ml 129 4>>*/ _H_=state_i_[1].length-1-1|0,
+          /*<<boulderdash.ml 129 4>>*/ _I_=state_i_[1].length-1-1|0,
           /*<<boulderdash.ml 129 4>>*/ _S_=0;
-         /*<<boulderdash.ml 129 4>>*/ if(!(_H_<0))
+         /*<<boulderdash.ml 129 4>>*/ if(!(_I_<0))
          {var _b_=_S_;
            /*<<boulderdash.ml 130 6>>*/ for(;;)
            {var
@@ -6572,7 +6572,7 @@
                 if(_Q_!==_d_){var _d_=_W_;continue}
                 break}}
             var _V_=_b_+1|0;
-            if(_H_!==_b_){var _b_=_V_;continue}
+            if(_I_!==_b_){var _b_=_V_;continue}
             break}}
          /*<<boulderdash.ml 136 4>>*/ function inhibit_k_(f_a_,_b_)
          { /*<<boulderdash.ml 137 6>>*/ if(!state_i_[8])
@@ -6657,7 +6657,7 @@
                       /*<<boulderdash.ml 161 10>>*/ return  /*<<boulderdash.ml 161 10>>*/ caml_call_gen1_h_
                              (_m_,0) /*<<boulderdash.ml 161 21>>*/ }}
                  (_m_,_b_,_c_,cur_img_d_),
-                /*<<boulderdash.ml 156 1>>*/ click_H_=
+                /*<<boulderdash.ml 156 1>>*/ click_I_=
                 function(_j_,_b_,_c_)
                   { /*<<boulderdash.ml 156 1>>*/ return function(param_a_)
                     { /*<<boulderdash.ml 163 3>>*/ function _d_(param_a_)
@@ -6670,11 +6670,11 @@
                             _c_)
                           [_c_+1])
                         state_i_[5]=state_i_[5]-1|0;
-                        /*<<boulderdash.ml 165 3>>*/  /*<<boulderdash.ml 165 3>>*/ set_cell_I_
+                        /*<<boulderdash.ml 165 3>>*/  /*<<boulderdash.ml 165 3>>*/ set_cell_H_
                         (state_i_,_c_,_b_,6);
                         /*<<boulderdash.ml 165 25>>*/ function _d_(param_a_)
                         { /*<<boulderdash.ml 167 3>>*/ function _d_(param_a_)
-                          { /*<<boulderdash.ml 168 3>>*/  /*<<boulderdash.ml 168 3>>*/ set_cell_I_
+                          { /*<<boulderdash.ml 168 3>>*/  /*<<boulderdash.ml 168 3>>*/ set_cell_H_
                             (state_i_,_c_,_b_,0);
                             /*<<boulderdash.ml 168 27>>*/ return  /*<<boulderdash.ml 168 27>>*/ return_v_
                                    (0) /*<<boulderdash.ml 169 23>>*/ }
@@ -6689,7 +6689,7 @@
                 function(_j_,_b_,_c_)
                   { /*<<boulderdash.ml 171 1>>*/ return function(param_a_)
                     { /*<<boulderdash.ml 172 3>>*/ var _d_=state_i_[3];
-                      /*<<boulderdash.ml 173 5>>*/  /*<<boulderdash.ml 173 5>>*/ set_cell_I_
+                      /*<<boulderdash.ml 173 5>>*/  /*<<boulderdash.ml 173 5>>*/ set_cell_H_
                       (state_i_,_d_[1],_d_[2],0);
                       /*<<boulderdash.ml 173 31>>*/ function _e_(param_a_)
                       { /*<<boulderdash.ml 184 5>>*/ return  /*<<boulderdash.ml 184 5>>*/ build_interaction_bR_
@@ -6711,7 +6711,7 @@
                                          _c_)
                                        [_c_+1])
                                      state_i_[5]=state_i_[5]-1|0;
-                                     /*<<boulderdash.ml 177 8>>*/  /*<<boulderdash.ml 177 8>>*/ set_cell_I_
+                                     /*<<boulderdash.ml 177 8>>*/  /*<<boulderdash.ml 177 8>>*/ set_cell_H_
                                      (state_i_,_c_,_b_,6);
                                      /*<<boulderdash.ml 177 30>>*/ state_i_[3]=[0,_c_,_b_];
                                      /*<<boulderdash.ml 179 8>>*/ return  /*<<boulderdash.ml 179 8>>*/ fall_bb_
@@ -6801,7 +6801,7 @@
                  (next_G_,[0,_c_,_b_]),
                _n_=over_o_,
                _m_=out_p_,
-               _j_=click_H_;
+               _j_=click_I_;
               continue}
              /*<<boulderdash.ml 154 6>>*/ return 0} /*<<boulderdash.ml 194 7>>*/ }
          /*<<boulderdash.ml 196 4>>*/ function update_push_L_
@@ -6890,12 +6890,12 @@
                        str_sprites_boulder_png_dn_ /*<<boulderdash.ml 209 57>>*/ },
               /*<<boulderdash.ml 211 3>>*/ click_A_=
               function(param_a_)
-               { /*<<boulderdash.ml 212 5>>*/  /*<<boulderdash.ml 212 5>>*/ set_cell_I_
+               { /*<<boulderdash.ml 212 5>>*/  /*<<boulderdash.ml 212 5>>*/ set_cell_H_
                  (state_i_,_m_,_j_,0);
-                 /*<<boulderdash.ml 213 5>>*/  /*<<boulderdash.ml 213 5>>*/ set_cell_I_
+                 /*<<boulderdash.ml 213 5>>*/  /*<<boulderdash.ml 213 5>>*/ set_cell_H_
                  (state_i_,_f_,_e_,6);
                  /*<<boulderdash.ml 213 29>>*/ state_i_[3]=pos_n_;
-                 /*<<boulderdash.ml 215 5>>*/  /*<<boulderdash.ml 215 5>>*/ set_cell_I_
+                 /*<<boulderdash.ml 215 5>>*/  /*<<boulderdash.ml 215 5>>*/ set_cell_H_
                  (state_i_,_p_,_o_,3);
                  /*<<boulderdash.ml 215 35>>*/ function _b_(param_a_)
                  { /*<<boulderdash.ml 222 5>>*/ return  /*<<boulderdash.ml 222 5>>*/ build_interaction_bR_
@@ -6945,12 +6945,12 @@
              [_f_+1].onmouseout=
             match_G_;
             var
-              /*<<boulderdash.ml 229 17>>*/ _H_=
+              /*<<boulderdash.ml 229 17>>*/ _I_=
               function(_a_)
                { /*<<?>>*/ return with_pending_out_l_(click_A_,_a_)},
               /*<<boulderdash.ml 228 38>>*/ x0f6fa25c_K_=
                /*<<boulderdash.ml 228 38>>*/ handler_Y_
-               (function(_a_){ /*<<?>>*/ return inhibit_k_(_H_,_a_)});
+               (function(_a_){ /*<<?>>*/ return inhibit_k_(_I_,_a_)});
              /*<<boulderdash.ml 228 5>>*/ return  /*<<boulderdash.ml 228 20>>*/ caml_check_bound_g_
                      ( /*<<boulderdash.ml 228 5>>*/ caml_check_bound_g_
                         (state_i_[2],_e_)
@@ -7136,44 +7136,44 @@
          /*<<boulderdash.ml 288 7>>*/ return  /*<<boulderdash.ml 288 7>>*/ return_v_
                 (_c_) /*<<boulderdash.ml 289 24>>*/ }
       var
-        /*<<xmlHttpRequest.ml 379 12>>*/ override_method_K_=0,
-        /*<<xmlHttpRequest.ml 379 12>>*/ override_mime_type_L_=0,
-        /*<<xmlHttpRequest.ml 379 12>>*/ upload_progress_N_=0,
-        /*<<xmlHttpRequest.ml 379 12>>*/ progress_O_=0,
-        /*<<xmlHttpRequest.ml 379 12>>*/ check_headers_Q_=0,
-        /*<<xmlHttpRequest.ml 379 12>>*/ form_arg_R_=0,
-        /*<<xmlHttpRequest.ml 379 12>>*/ _T_=0,
-        /*<<xmlHttpRequest.ml 379 12>>*/ post_args_j_=0,
-        /*<<xmlHttpRequest.ml 379 12>>*/ content_type_q_=0,
-        /*<<xmlHttpRequest.ml 379 12>>*/ opt_ai_=0,
-        /*<<xmlHttpRequest.ml 359 2>>*/ _H_=0?opt_ai_[1]:0,
-        /*<<xmlHttpRequest.ml 359 2>>*/ _I_=_T_?_T_[1]:0,
-        /*<<xmlHttpRequest.ml 359 2>>*/ response_type_J_=5,
-        /*<<xmlHttpRequest.ml 359 2>>*/ _ah_=[0,_I_],
-        /*<<xmlHttpRequest.ml 181 2>>*/ _X_=[0,_H_]?_H_:0,
-        /*<<xmlHttpRequest.ml 181 2>>*/ _t_=_ah_?_I_:0,
-        /*<<xmlHttpRequest.ml 181 2>>*/ _Z_=
+        /*<<xmlHttpRequest.ml 380 12>>*/ override_method_K_=0,
+        /*<<xmlHttpRequest.ml 380 12>>*/ override_mime_type_L_=0,
+        /*<<xmlHttpRequest.ml 380 12>>*/ upload_progress_N_=0,
+        /*<<xmlHttpRequest.ml 380 12>>*/ progress_O_=0,
+        /*<<xmlHttpRequest.ml 380 12>>*/ check_headers_Q_=0,
+        /*<<xmlHttpRequest.ml 380 12>>*/ form_arg_R_=0,
+        /*<<xmlHttpRequest.ml 380 12>>*/ _T_=0,
+        /*<<xmlHttpRequest.ml 380 12>>*/ post_args_j_=0,
+        /*<<xmlHttpRequest.ml 380 12>>*/ content_type_q_=0,
+        /*<<xmlHttpRequest.ml 380 12>>*/ opt_ai_=0,
+        /*<<xmlHttpRequest.ml 360 2>>*/ _H_=0?opt_ai_[1]:0,
+        /*<<xmlHttpRequest.ml 360 2>>*/ _I_=_T_?_T_[1]:0,
+        /*<<xmlHttpRequest.ml 360 2>>*/ response_type_J_=5,
+        /*<<xmlHttpRequest.ml 360 2>>*/ _ah_=[0,_I_],
+        /*<<xmlHttpRequest.ml 182 2>>*/ _X_=[0,_H_]?_H_:0,
+        /*<<xmlHttpRequest.ml 182 2>>*/ _t_=_ah_?_I_:0,
+        /*<<xmlHttpRequest.ml 182 2>>*/ _Z_=
         check_headers_Q_
          ?check_headers_Q_[1]
          :function(_a_,_b_)
-           { /*<<xmlHttpRequest.ml 173 32>>*/ return 1 /*<<xmlHttpRequest.ml 173 36>>*/ };
-       /*<<xmlHttpRequest.ml 181 2>>*/ if(form_arg_R_)
-       { /*<<xmlHttpRequest.ml 201 2>>*/ var _u_=form_arg_R_[1];
-         /*<<xmlHttpRequest.ml 201 2>>*/ if(post_args_j_)
-         { /*<<xmlHttpRequest.ml 204 5>>*/ var ___=post_args_j_[1];
-           /*<<xmlHttpRequest.ml 204 5>>*/  /*<<xmlHttpRequest.ml 204 5>>*/ _ar_
+           { /*<<xmlHttpRequest.ml 174 32>>*/ return 1 /*<<xmlHttpRequest.ml 174 36>>*/ };
+       /*<<xmlHttpRequest.ml 182 2>>*/ if(form_arg_R_)
+       { /*<<xmlHttpRequest.ml 202 2>>*/ var _u_=form_arg_R_[1];
+         /*<<xmlHttpRequest.ml 202 2>>*/ if(post_args_j_)
+         { /*<<xmlHttpRequest.ml 205 5>>*/ var ___=post_args_j_[1];
+           /*<<xmlHttpRequest.ml 205 5>>*/  /*<<xmlHttpRequest.ml 205 5>>*/ _ar_
            (function(param_a_)
-             { /*<<xmlHttpRequest.ml 205 14>>*/ return  /*<<xmlHttpRequest.ml 205 14>>*/ _c$_
-                      (_u_,[0,param_a_[1],param_a_[2]]) /*<<xmlHttpRequest.ml 205 48>>*/ },
+             { /*<<xmlHttpRequest.ml 206 14>>*/ return  /*<<xmlHttpRequest.ml 206 14>>*/ _c$_
+                      (_u_,[0,param_a_[1],param_a_[2]]) /*<<xmlHttpRequest.ml 206 48>>*/ },
             ___)}
         var _f_=[0,_u_]}
       else
        if(post_args_j_)
-        {var  /*<<xmlHttpRequest.ml 187 12>>*/ _E_=post_args_j_[1],_g_=_E_;
+        {var  /*<<xmlHttpRequest.ml 188 12>>*/ _E_=post_args_j_[1],_g_=_E_;
          for(;;)
           {if(_g_)
-            {var  /*<<xmlHttpRequest.ml 189 26>>*/ _F_=_g_[1][2],_U_=_g_[2];
-              /*<<xmlHttpRequest.ml 189 26>>*/ if(typeof _F_==="number")
+            {var  /*<<xmlHttpRequest.ml 190 26>>*/ _F_=_g_[1][2],_U_=_g_[2];
+              /*<<xmlHttpRequest.ml 190 26>>*/ if(typeof _F_==="number")
               var _r_=0;
              else
               if(-976970511===_F_[1])var _k_=1,_r_=1;else var _r_=0;
@@ -7182,7 +7182,7 @@
              var only_strings_G_=_k_}
            else
             var only_strings_G_=1;
-            /*<<xmlHttpRequest.ml 192 5>>*/ if(only_strings_G_)
+            /*<<xmlHttpRequest.ml 193 5>>*/ if(only_strings_G_)
             var _p_=[0,num_891486873_aX_,[0,0]];
            else
             var
@@ -7200,48 +7200,48 @@
                ?[0,808620462,new (match_s_[1])()]
                :[0,num_891486873_aX_,[0,0]],
              _p_=_ag_;
-            /*<<xmlHttpRequest.ml 196 5>>*/  /*<<xmlHttpRequest.ml 196 5>>*/ _ar_
+            /*<<xmlHttpRequest.ml 197 5>>*/  /*<<xmlHttpRequest.ml 197 5>>*/ _ar_
             (function(param_a_)
-              { /*<<xmlHttpRequest.ml 197 14>>*/ return  /*<<xmlHttpRequest.ml 197 14>>*/ _c$_
-                       (_p_,[0,param_a_[1],param_a_[2]]) /*<<xmlHttpRequest.ml 197 48>>*/ },
+              { /*<<xmlHttpRequest.ml 198 14>>*/ return  /*<<xmlHttpRequest.ml 198 14>>*/ _c$_
+                       (_p_,[0,param_a_[1],param_a_[2]]) /*<<xmlHttpRequest.ml 198 48>>*/ },
              _E_);
            var _f_=[0,_p_];
            break}}
        else
         var _f_=0;
-       /*<<xmlHttpRequest.ml 220 2>>*/ function override_h_(m_a_)
-       { /*<<xmlHttpRequest.ml 222 6>>*/ if(override_method_K_)
-         { /*<<xmlHttpRequest.ml 224 20>>*/ var _b_=override_method_K_[1];
-           /*<<xmlHttpRequest.ml 211 4>>*/ return 492530731<=_b_
+       /*<<xmlHttpRequest.ml 221 2>>*/ function override_h_(m_a_)
+       { /*<<xmlHttpRequest.ml 223 6>>*/ if(override_method_K_)
+         { /*<<xmlHttpRequest.ml 225 20>>*/ var _b_=override_method_K_[1];
+           /*<<xmlHttpRequest.ml 212 4>>*/ return 492530731<=_b_
                   ?891112544<=_b_
                     ?994393768<=_b_?_g$_:_ha_
                     :801894688<=_b_?_hb_:_hc_
                   :3546230===_b_?_hd_:3997359<=_b_?_he_:_hf_}
-         /*<<xmlHttpRequest.ml 223 18>>*/ return m_a_ /*<<xmlHttpRequest.ml 224 38>>*/ }
-       /*<<xmlHttpRequest.ml 226 4>>*/ if(_f_)
+         /*<<xmlHttpRequest.ml 224 18>>*/ return m_a_ /*<<xmlHttpRequest.ml 225 38>>*/ }
+       /*<<xmlHttpRequest.ml 227 4>>*/ if(_f_)
        {var _$_=_f_[1];
         if(content_type_q_)
          var
           _x_=
            [0,
-             /*<<xmlHttpRequest.ml 233 22>>*/ override_h_(_hg_),
+             /*<<xmlHttpRequest.ml 234 22>>*/ override_h_(_hg_),
             content_type_q_];
         else
          var
-           /*<<xmlHttpRequest.ml 229 2>>*/ _af_=
+           /*<<xmlHttpRequest.ml 230 2>>*/ _af_=
            num_891486873_aX_<=_$_[1]
-            ?[0, /*<<xmlHttpRequest.ml 231 14>>*/ override_h_(_hk_),_hj_]
-            :[0, /*<<xmlHttpRequest.ml 232 20>>*/ override_h_(_hl_),0],
+            ?[0, /*<<xmlHttpRequest.ml 232 14>>*/ override_h_(_hk_),_hj_]
+            :[0, /*<<xmlHttpRequest.ml 233 20>>*/ override_h_(_hl_),0],
           _x_=_af_;
         var _m_=_x_}
       else
        var
         _m_=
          [0,
-           /*<<xmlHttpRequest.ml 227 20>>*/ override_h_(_hm_),
+           /*<<xmlHttpRequest.ml 228 20>>*/ override_h_(_hm_),
           content_type_q_];
       var _y_=_m_[2],_aa_=_m_[1];
-       /*<<xmlHttpRequest.ml 235 2>>*/ if(0===_t_)
+       /*<<xmlHttpRequest.ml 236 2>>*/ if(0===_t_)
        var url_c_=url_a_;
       else
        var
@@ -7258,165 +7258,165 @@
                 /*<<url.ml 117 33>>*/ return  /*<<url.ml 117 33>>*/ _M_
                        ( /*<<url.ml 117 22>>*/ urlencode_av_(0,_b_),_c_) /*<<url.ml 117 51>>*/ },
              _t_)),
-         /*<<xmlHttpRequest.ml 239 32>>*/ _ae_=
-          /*<<xmlHttpRequest.ml 239 16>>*/ _g__(url_a_)?_hh_:_hi_,
+         /*<<xmlHttpRequest.ml 240 32>>*/ _ae_=
+          /*<<xmlHttpRequest.ml 240 16>>*/ _g__(url_a_)?_hh_:_hi_,
         url_c_=
-          /*<<xmlHttpRequest.ml 239 6>>*/ _M_
-          (url_a_, /*<<xmlHttpRequest.ml 239 12>>*/ _M_(_ae_,_W_));
+          /*<<xmlHttpRequest.ml 240 6>>*/ _M_
+          (url_a_, /*<<xmlHttpRequest.ml 240 12>>*/ _M_(_ae_,_W_));
       var
-        /*<<xmlHttpRequest.ml 243 55>>*/ match_z_=
-         /*<<xmlHttpRequest.ml 243 55>>*/ task_cQ_(0),
-        /*<<xmlHttpRequest.ml 243 66>>*/ _A_=match_z_[2],
-        /*<<xmlHttpRequest.ml 243 66>>*/ _B_=match_z_[1],
-        /*<<xmlHttpRequest.ml 244 12>>*/ x2c7d0868_b_=
-         /*<<xmlHttpRequest.ml 244 12>>*/ _gY_(0);
-       /*<<xmlHttpRequest.ml 246 2>>*/  /*<<xmlHttpRequest.ml 246 2>>*/ x2c7d0868_b_.open
-       ( /*<<xmlHttpRequest.ml 246 2>>*/ _aa_.toString(),
-         /*<<xmlHttpRequest.ml 246 2>>*/ url_c_.toString(),
+        /*<<xmlHttpRequest.ml 244 55>>*/ match_z_=
+         /*<<xmlHttpRequest.ml 244 55>>*/ task_cQ_(0),
+        /*<<xmlHttpRequest.ml 244 66>>*/ _A_=match_z_[2],
+        /*<<xmlHttpRequest.ml 244 66>>*/ _B_=match_z_[1],
+        /*<<xmlHttpRequest.ml 245 12>>*/ x2c7d0868_b_=
+         /*<<xmlHttpRequest.ml 245 12>>*/ _gY_(0);
+       /*<<xmlHttpRequest.ml 247 2>>*/  /*<<xmlHttpRequest.ml 247 2>>*/ x2c7d0868_b_.open
+       ( /*<<xmlHttpRequest.ml 247 2>>*/ _aa_.toString(),
+         /*<<xmlHttpRequest.ml 247 2>>*/ url_c_.toString(),
         xf5b7986a_bJ_);
-       /*<<xmlHttpRequest.ml 248 8>>*/ if(override_mime_type_L_)
-        /*<<xmlHttpRequest.ml 250 22>>*/ x2c7d0868_b_.overrideMimeType
-        ( /*<<xmlHttpRequest.ml 250 22>>*/ override_mime_type_L_[1].toString());
-       /*<<xmlHttpRequest.ml 253 8>>*/ switch(response_type_J_)
+       /*<<xmlHttpRequest.ml 249 8>>*/ if(override_mime_type_L_)
+        /*<<xmlHttpRequest.ml 251 22>>*/ x2c7d0868_b_.overrideMimeType
+        ( /*<<xmlHttpRequest.ml 251 22>>*/ override_mime_type_L_[1].toString());
+       /*<<xmlHttpRequest.ml 254 8>>*/ switch(response_type_J_)
        {case 0:
-          /*<<xmlHttpRequest.ml 254 19>>*/ x2c7d0868_b_.responseType=
+          /*<<xmlHttpRequest.ml 255 19>>*/ x2c7d0868_b_.responseType=
          "arraybuffer";
          break;
         case 1:
-          /*<<xmlHttpRequest.ml 255 19>>*/ x2c7d0868_b_.responseType="blob";
+          /*<<xmlHttpRequest.ml 256 19>>*/ x2c7d0868_b_.responseType="blob";
          break;
         case 2:
-          /*<<xmlHttpRequest.ml 256 19>>*/ x2c7d0868_b_.responseType=
+          /*<<xmlHttpRequest.ml 257 19>>*/ x2c7d0868_b_.responseType=
          "document";
          break;
         case 3:
-          /*<<xmlHttpRequest.ml 257 19>>*/ x2c7d0868_b_.responseType="json";
+          /*<<xmlHttpRequest.ml 258 19>>*/ x2c7d0868_b_.responseType="json";
          break;
         case 4:
-          /*<<xmlHttpRequest.ml 258 19>>*/ x2c7d0868_b_.responseType="text";
+          /*<<xmlHttpRequest.ml 259 19>>*/ x2c7d0868_b_.responseType="text";
          break;
         default:
-          /*<<xmlHttpRequest.ml 259 19>>*/ x2c7d0868_b_.responseType=str_e_}
-       /*<<xmlHttpRequest.ml 262 3>>*/ if(_y_)
-        /*<<xmlHttpRequest.ml 264 6>>*/ x2c7d0868_b_.setRequestHeader
-        ("Content-type", /*<<xmlHttpRequest.ml 264 6>>*/ _y_[1].toString());
-       /*<<xmlHttpRequest.ml 266 2>>*/  /*<<xmlHttpRequest.ml 266 2>>*/ _ar_
+          /*<<xmlHttpRequest.ml 260 19>>*/ x2c7d0868_b_.responseType=str_e_}
+       /*<<xmlHttpRequest.ml 263 3>>*/ if(_y_)
+        /*<<xmlHttpRequest.ml 265 6>>*/ x2c7d0868_b_.setRequestHeader
+        ("Content-type", /*<<xmlHttpRequest.ml 265 6>>*/ _y_[1].toString());
+       /*<<xmlHttpRequest.ml 267 2>>*/  /*<<xmlHttpRequest.ml 267 2>>*/ _ar_
        (function(param_a_)
-         { /*<<xmlHttpRequest.ml 266 27>>*/ return  /*<<xmlHttpRequest.ml 266 27>>*/ x2c7d0868_b_.setRequestHeader
-                  ( /*<<xmlHttpRequest.ml 266 27>>*/ param_a_[1].toString(),
-                    /*<<xmlHttpRequest.ml 266 27>>*/ param_a_[2].toString()) /*<<xmlHttpRequest.ml 266 75>>*/ },
+         { /*<<xmlHttpRequest.ml 267 27>>*/ return  /*<<xmlHttpRequest.ml 267 27>>*/ x2c7d0868_b_.setRequestHeader
+                  ( /*<<xmlHttpRequest.ml 267 27>>*/ param_a_[1].toString(),
+                    /*<<xmlHttpRequest.ml 267 27>>*/ param_a_[2].toString()) /*<<xmlHttpRequest.ml 267 75>>*/ },
         _X_);
-       /*<<xmlHttpRequest.ml 267 11>>*/ function headers_d_(s_a_)
-       { /*<<xmlHttpRequest.ml 269 4>>*/ function _c_(v_a_)
-         { /*<<xmlHttpRequest.ml 272 36>>*/ return [0,
-                   /*<<xmlHttpRequest.ml 272 22>>*/ caml_js_to_string_aq_
-                   (v_a_)] /*<<xmlHttpRequest.ml 272 37>>*/ }
-         /*<<xmlHttpRequest.ml 269 4>>*/ function _d_(param_a_)
-         { /*<<xmlHttpRequest.ml 271 17>>*/ return 0 /*<<xmlHttpRequest.ml 271 21>>*/ }
-         /*<<xmlHttpRequest.ml 270 7>>*/ return  /*<<xmlHttpRequest.ml 270 7>>*/ _cU_
-                ( /*<<xmlHttpRequest.ml 270 7>>*/ x2c7d0868_b_.getResponseHeader
-                  ( /*<<xmlHttpRequest.ml 269 4>>*/ caml_bytes_of_string_S_
+       /*<<xmlHttpRequest.ml 268 11>>*/ function headers_d_(s_a_)
+       { /*<<xmlHttpRequest.ml 270 4>>*/ function _c_(v_a_)
+         { /*<<xmlHttpRequest.ml 273 36>>*/ return [0,
+                   /*<<xmlHttpRequest.ml 273 22>>*/ caml_js_to_string_aq_
+                   (v_a_)] /*<<xmlHttpRequest.ml 273 37>>*/ }
+         /*<<xmlHttpRequest.ml 270 4>>*/ function _d_(param_a_)
+         { /*<<xmlHttpRequest.ml 272 17>>*/ return 0 /*<<xmlHttpRequest.ml 272 21>>*/ }
+         /*<<xmlHttpRequest.ml 271 7>>*/ return  /*<<xmlHttpRequest.ml 271 7>>*/ _cU_
+                ( /*<<xmlHttpRequest.ml 271 7>>*/ x2c7d0868_b_.getResponseHeader
+                  ( /*<<xmlHttpRequest.ml 270 4>>*/ caml_bytes_of_string_S_
                     (s_a_)),
                  _d_,
-                 _c_) /*<<xmlHttpRequest.ml 272 38>>*/ }
-       /*<<xmlHttpRequest.ml 274 2>>*/ var st_i_=[0,num_382334108_dC_];
-       /*<<xmlHttpRequest.ml 276 8>>*/ function do_check_headers_n_(param_a_)
-       { /*<<xmlHttpRequest.ml 277 6>>*/ if(num_382334108_dC_===st_i_[1])
+                 _c_) /*<<xmlHttpRequest.ml 273 38>>*/ }
+       /*<<xmlHttpRequest.ml 275 2>>*/ var st_i_=[0,num_382334108_dC_];
+       /*<<xmlHttpRequest.ml 277 8>>*/ function do_check_headers_n_(param_a_)
+       { /*<<xmlHttpRequest.ml 278 6>>*/ if(num_382334108_dC_===st_i_[1])
          if
-          ( /*<<xmlHttpRequest.ml 278 11>>*/ caml_call_gen2_D_
+          ( /*<<xmlHttpRequest.ml 279 11>>*/ caml_call_gen2_D_
             (_Z_,x2c7d0868_b_.status,headers_d_))
           st_i_[1]=583419792;
          else
           { /*<<src/core/lwt.ml 326 51>>*/  /*<<src/core/lwt.ml 326 51>>*/ wakeup_result_cL_
             (_A_,[1,[0,_g4_,[0,x2c7d0868_b_.status,headers_d_]]]);
-            /*<<xmlHttpRequest.ml 281 66>>*/ st_i_[1]=num_479410653_dm_;
-            /*<<xmlHttpRequest.ml 283 10>>*/  /*<<xmlHttpRequest.ml 283 10>>*/ x2c7d0868_b_.abort
+            /*<<xmlHttpRequest.ml 282 66>>*/ st_i_[1]=num_479410653_dm_;
+            /*<<xmlHttpRequest.ml 284 10>>*/  /*<<xmlHttpRequest.ml 284 10>>*/ x2c7d0868_b_.abort
             ()}
-         /*<<xmlHttpRequest.ml 286 6>>*/ return num_479410653_dm_!==st_i_[1]
+         /*<<xmlHttpRequest.ml 287 6>>*/ return num_479410653_dm_!==st_i_[1]
                 ?1
-                :0 /*<<xmlHttpRequest.ml 286 20>>*/ }
-       /*<<xmlHttpRequest.ml 288 2>>*/ x2c7d0868_b_.onreadystatechange=
-       /*<<xmlHttpRequest.ml 288 2>>*/ caml_js_wrap_callback_cb_
+                :0 /*<<xmlHttpRequest.ml 287 20>>*/ }
+       /*<<xmlHttpRequest.ml 289 2>>*/ x2c7d0868_b_.onreadystatechange=
+       /*<<xmlHttpRequest.ml 289 2>>*/ caml_js_wrap_callback_cb_
        (function(param_a_)
-         { /*<<xmlHttpRequest.ml 290 14>>*/ switch(x2c7d0868_b_.readyState)
+         { /*<<xmlHttpRequest.ml 291 14>>*/ switch(x2c7d0868_b_.readyState)
            {case 2:
-              /*<<xmlHttpRequest.ml 294 32>>*/ if(!onIE_cZ_)
-              { /*<<xmlHttpRequest.ml 295 20>>*/  /*<<xmlHttpRequest.ml 295 20>>*/ do_check_headers_n_
+              /*<<xmlHttpRequest.ml 295 32>>*/ if(!onIE_cZ_)
+              { /*<<xmlHttpRequest.ml 296 20>>*/  /*<<xmlHttpRequest.ml 296 20>>*/ do_check_headers_n_
                 (0);
-                /*<<xmlHttpRequest.ml 295 39>>*/ return 0}
+                /*<<xmlHttpRequest.ml 296 39>>*/ return 0}
              break;
             case 3:
-              /*<<xmlHttpRequest.ml 296 23>>*/ if(onIE_cZ_)
-              { /*<<xmlHttpRequest.ml 297 20>>*/  /*<<xmlHttpRequest.ml 297 20>>*/ do_check_headers_n_
+              /*<<xmlHttpRequest.ml 297 23>>*/ if(onIE_cZ_)
+              { /*<<xmlHttpRequest.ml 298 20>>*/  /*<<xmlHttpRequest.ml 298 20>>*/ do_check_headers_n_
                 (0);
-                /*<<xmlHttpRequest.ml 297 39>>*/ return 0}
+                /*<<xmlHttpRequest.ml 298 39>>*/ return 0}
              break;
             case 4:
-              /*<<xmlHttpRequest.ml 300 34>>*/ if
-              ( /*<<xmlHttpRequest.ml 300 15>>*/ do_check_headers_n_(0))
-              { /*<<xmlHttpRequest.ml 301 14>>*/ switch(response_type_J_)
+              /*<<xmlHttpRequest.ml 301 34>>*/ if
+              ( /*<<xmlHttpRequest.ml 301 15>>*/ do_check_headers_n_(0))
+              { /*<<xmlHttpRequest.ml 302 14>>*/ switch(response_type_J_)
                 {case 0:
                   var
-                    /*<<xmlHttpRequest.ml 304 46>>*/ code_t_=
+                    /*<<xmlHttpRequest.ml 305 46>>*/ code_t_=
                     x2c7d0868_b_.status,
-                    /*<<xmlHttpRequest.ml 157 2>>*/ _r_=
+                    /*<<xmlHttpRequest.ml 158 2>>*/ _r_=
                     function(param_a_)
-                     { /*<<xmlHttpRequest.ml 160 41>>*/ throw [0,_l_,_g9_] /*<<xmlHttpRequest.ml 160 41>>*/ },
-                    /*<<xmlHttpRequest.ml 159 41>>*/ e_h_=x2c7d0868_b_.response,
+                     { /*<<xmlHttpRequest.ml 161 41>>*/ throw [0,_l_,_g9_] /*<<xmlHttpRequest.ml 161 41>>*/ },
+                    /*<<xmlHttpRequest.ml 160 41>>*/ e_h_=x2c7d0868_b_.response,
                     /*<<file.ml 76 43>>*/ _s_=
                     e_h_ instanceof arrayBuffer_gs_?e_h_:xd24db195_P_,
                    _e_=[0,url_c_,code_t_,headers_d_,_s_,_r_];
                   break;
                  case 1:
                   var
-                    /*<<xmlHttpRequest.ml 306 39>>*/ code_u_=
+                    /*<<xmlHttpRequest.ml 307 39>>*/ code_u_=
                     x2c7d0868_b_.status,
-                    /*<<xmlHttpRequest.ml 149 2>>*/ _p_=
+                    /*<<xmlHttpRequest.ml 150 2>>*/ _p_=
                     function(param_a_)
-                     { /*<<xmlHttpRequest.ml 152 41>>*/ throw [0,_l_,_g8_] /*<<xmlHttpRequest.ml 152 41>>*/ },
-                    /*<<xmlHttpRequest.ml 151 34>>*/ e_g_=x2c7d0868_b_.response,
+                     { /*<<xmlHttpRequest.ml 153 41>>*/ throw [0,_l_,_g8_] /*<<xmlHttpRequest.ml 153 41>>*/ },
+                    /*<<xmlHttpRequest.ml 152 34>>*/ e_g_=x2c7d0868_b_.response,
                     /*<<file.ml 68 31>>*/ _q_=
                     e_g_ instanceof blob_constr_gE_?e_g_:xd24db195_P_,
                    _e_=[0,url_c_,code_u_,headers_d_,_q_,_p_];
                   break;
                  case 2:
                   var
-                    /*<<xmlHttpRequest.ml 308 43>>*/ code_v_=
+                    /*<<xmlHttpRequest.ml 309 43>>*/ code_v_=
                     x2c7d0868_b_.status,
-                    /*<<xmlHttpRequest.ml 133 2>>*/ _k_=
+                    /*<<xmlHttpRequest.ml 134 2>>*/ _k_=
                     function(param_a_)
-                     { /*<<xmlHttpRequest.ml 136 41>>*/ throw [0,_l_,_g6_] /*<<xmlHttpRequest.ml 136 41>>*/ },
-                    /*<<xmlHttpRequest.ml 135 38>>*/ e_f_=x2c7d0868_b_.response,
+                     { /*<<xmlHttpRequest.ml 137 41>>*/ throw [0,_l_,_g6_] /*<<xmlHttpRequest.ml 137 41>>*/ },
+                    /*<<xmlHttpRequest.ml 136 38>>*/ e_f_=x2c7d0868_b_.response,
                     /*<<file.ml 64 30>>*/ _m_=
                     e_f_ instanceof doc_constr_gF_?e_f_:xd24db195_P_,
                    _e_=[0,url_c_,code_v_,headers_d_,_m_,_k_];
                   break;
                  case 3:
                   var
-                    /*<<xmlHttpRequest.ml 310 39>>*/ code_w_=
+                    /*<<xmlHttpRequest.ml 311 39>>*/ code_w_=
                     x2c7d0868_b_.status,
-                    /*<<xmlHttpRequest.ml 141 2>>*/ _o_=
+                    /*<<xmlHttpRequest.ml 142 2>>*/ _o_=
                     function(param_a_)
-                     { /*<<xmlHttpRequest.ml 144 41>>*/ throw [0,_l_,_g7_] /*<<xmlHttpRequest.ml 144 41>>*/ },
+                     { /*<<xmlHttpRequest.ml 145 41>>*/ throw [0,_l_,_g7_] /*<<xmlHttpRequest.ml 145 41>>*/ },
                    _e_=[0,url_c_,code_w_,headers_d_,x2c7d0868_b_.response,_o_];
                   break;
                  case 4:
                   var
-                    /*<<xmlHttpRequest.ml 312 39>>*/ code_x_=
+                    /*<<xmlHttpRequest.ml 313 39>>*/ code_x_=
                     x2c7d0868_b_.status,
-                    /*<<xmlHttpRequest.ml 125 2>>*/ _j_=
+                    /*<<xmlHttpRequest.ml 126 2>>*/ _j_=
                     function(param_a_)
-                     { /*<<xmlHttpRequest.ml 128 41>>*/ throw [0,_l_,_g5_] /*<<xmlHttpRequest.ml 128 41>>*/ },
+                     { /*<<xmlHttpRequest.ml 129 41>>*/ throw [0,_l_,_g5_] /*<<xmlHttpRequest.ml 129 41>>*/ },
                    _e_=
                     [0,url_c_,code_x_,headers_d_,x2c7d0868_b_.responseText,_j_];
                   break;
                  default:
                   var
-                    /*<<xmlHttpRequest.ml 314 42>>*/ code_y_=
+                    /*<<xmlHttpRequest.ml 315 42>>*/ code_y_=
                     x2c7d0868_b_.status,
-                    /*<<xmlHttpRequest.ml 110 2>>*/ _i_=
+                    /*<<xmlHttpRequest.ml 111 2>>*/ _i_=
                     function(param_a_)
-                     { /*<<xmlHttpRequest.ml 115 25>>*/ var
+                     { /*<<xmlHttpRequest.ml 116 25>>*/ var
                        x_f_=
                         x2c7d0868_b_.responseXML;
                        /*<<js.ml 96 20>>*/ function _e_(x_a_)
@@ -7428,89 +7428,89 @@
                           function(param_a_)
                            { /*<<js.ml 96 38>>*/ return 0 /*<<js.ml 96 42>>*/ },
                           _e_);
-                       /*<<xmlHttpRequest.ml 115 42>>*/ if(match_c_)
+                       /*<<xmlHttpRequest.ml 116 42>>*/ if(match_c_)
                        {var _d_=match_c_[1];
-                         /*<<xmlHttpRequest.ml 118 37>>*/ return _d_.documentElement===
+                         /*<<xmlHttpRequest.ml 119 37>>*/ return _d_.documentElement===
                                 xd24db195_P_
                                 ?0
                                 :[0,_d_]}
-                       /*<<xmlHttpRequest.ml 116 13>>*/ return 0 /*<<xmlHttpRequest.ml 120 18>>*/ },
+                       /*<<xmlHttpRequest.ml 117 13>>*/ return 0 /*<<xmlHttpRequest.ml 121 18>>*/ },
                    _e_=
                     [0,
                      url_c_,
                      code_y_,
                      headers_d_,
-                      /*<<xmlHttpRequest.ml 112 14>>*/ caml_js_to_string_aq_
+                      /*<<xmlHttpRequest.ml 113 14>>*/ caml_js_to_string_aq_
                       (x2c7d0868_b_.responseText),
                      _i_]}
-                /*<<xmlHttpRequest.ml 315 14>>*/ return  /*<<xmlHttpRequest.ml 315 14>>*/ wakeup_bG_
+                /*<<xmlHttpRequest.ml 316 14>>*/ return  /*<<xmlHttpRequest.ml 316 14>>*/ wakeup_bG_
                        (_A_,_e_)}
-              /*<<xmlHttpRequest.ml 300 12>>*/ return 0
+              /*<<xmlHttpRequest.ml 301 12>>*/ return 0
             }
-           /*<<xmlHttpRequest.ml 318 12>>*/ return 0 /*<<xmlHttpRequest.ml 318 14>>*/ });
-       /*<<xmlHttpRequest.ml 320 8>>*/ if(progress_O_)
+           /*<<xmlHttpRequest.ml 319 12>>*/ return 0 /*<<xmlHttpRequest.ml 319 14>>*/ });
+       /*<<xmlHttpRequest.ml 321 8>>*/ if(progress_O_)
        {var _ab_=progress_O_[1];
-         /*<<xmlHttpRequest.ml 322 4>>*/ x2c7d0868_b_.onprogress=
-         /*<<xmlHttpRequest.ml 322 23>>*/ handler_Y_
+         /*<<xmlHttpRequest.ml 323 4>>*/ x2c7d0868_b_.onprogress=
+         /*<<xmlHttpRequest.ml 323 23>>*/ handler_Y_
          (function(x4a3455d3_a_)
-           { /*<<xmlHttpRequest.ml 324 8>>*/  /*<<xmlHttpRequest.ml 324 8>>*/ caml_call_gen2_D_
+           { /*<<xmlHttpRequest.ml 325 8>>*/  /*<<xmlHttpRequest.ml 325 8>>*/ caml_call_gen2_D_
              (_ab_,x4a3455d3_a_.loaded,x4a3455d3_a_.total);
-             /*<<xmlHttpRequest.ml 324 35>>*/ return xf5b7986a_bJ_ /*<<xmlHttpRequest.ml 325 16>>*/ })}
-       /*<<xmlHttpRequest.ml 328 15>>*/ var x61ce86fd_C_=x2c7d0868_b_.upload;
+             /*<<xmlHttpRequest.ml 325 35>>*/ return xf5b7986a_bJ_ /*<<xmlHttpRequest.ml 326 16>>*/ })}
+       /*<<xmlHttpRequest.ml 329 15>>*/ var x61ce86fd_C_=x2c7d0868_b_.upload;
        /*<<js.ml 106 17>>*/ if(x61ce86fd_C_!==undefined_aP_)
        if(upload_progress_N_)
-        { /*<<xmlHttpRequest.ml 331 6>>*/ var _ac_=upload_progress_N_[1];
-          /*<<xmlHttpRequest.ml 331 6>>*/ x61ce86fd_C_.onprogress=
-          /*<<xmlHttpRequest.ml 331 28>>*/ handler_Y_
+        { /*<<xmlHttpRequest.ml 332 6>>*/ var _ac_=upload_progress_N_[1];
+          /*<<xmlHttpRequest.ml 332 6>>*/ x61ce86fd_C_.onprogress=
+          /*<<xmlHttpRequest.ml 332 28>>*/ handler_Y_
           (function(xee22b285_a_)
-            { /*<<xmlHttpRequest.ml 333 10>>*/  /*<<xmlHttpRequest.ml 333 10>>*/ caml_call_gen2_D_
+            { /*<<xmlHttpRequest.ml 334 10>>*/  /*<<xmlHttpRequest.ml 334 10>>*/ caml_call_gen2_D_
               (_ac_,xee22b285_a_.loaded,xee22b285_a_.total);
-              /*<<xmlHttpRequest.ml 333 44>>*/ return xf5b7986a_bJ_ /*<<xmlHttpRequest.ml 334 18>>*/ })}
-       /*<<xmlHttpRequest.ml 336 3>>*/ if(_f_)
+              /*<<xmlHttpRequest.ml 334 44>>*/ return xf5b7986a_bJ_ /*<<xmlHttpRequest.ml 335 18>>*/ })}
+       /*<<xmlHttpRequest.ml 337 3>>*/ if(_f_)
        {var _o_=_f_[1];
         if(num_891486873_aX_<=_o_[1])
-         { /*<<xmlHttpRequest.ml 341 9>>*/ var _ad_=_o_[2][1];
-           /*<<xmlHttpRequest.ml 341 17>>*/  /*<<xmlHttpRequest.ml 341 17>>*/ x2c7d0868_b_.send
-           ( /*<<xmlHttpRequest.ml 341 57>>*/  /*<<xmlHttpRequest.ml 91 3>>*/ _aJ_
+         { /*<<xmlHttpRequest.ml 342 9>>*/ var _ad_=_o_[2][1];
+           /*<<xmlHttpRequest.ml 342 17>>*/  /*<<xmlHttpRequest.ml 342 17>>*/ x2c7d0868_b_.send
+           ( /*<<xmlHttpRequest.ml 342 57>>*/  /*<<xmlHttpRequest.ml 92 3>>*/ _aJ_
               (_g2_,
-                /*<<xmlHttpRequest.ml 87 5>>*/ _a5_
+                /*<<xmlHttpRequest.ml 88 5>>*/ _a5_
                 (function(param_a_)
                   {var
-                     /*<<xmlHttpRequest.ml 88 8>>*/ _b_=param_a_[2],
-                     /*<<xmlHttpRequest.ml 88 8>>*/ _c_=param_a_[1];
-                    /*<<xmlHttpRequest.ml 88 8>>*/ if
+                     /*<<xmlHttpRequest.ml 89 8>>*/ _b_=param_a_[2],
+                     /*<<xmlHttpRequest.ml 89 8>>*/ _c_=param_a_[1];
+                    /*<<xmlHttpRequest.ml 89 8>>*/ if
                     (num_781515420_dg_<=_b_[1])
-                    { /*<<xmlHttpRequest.ml 90 44>>*/ var
+                    { /*<<xmlHttpRequest.ml 91 44>>*/ var
                       _d_=
-                        /*<<xmlHttpRequest.ml 90 44>>*/ _M_
+                        /*<<xmlHttpRequest.ml 91 44>>*/ _M_
                         (_g0_,
-                          /*<<xmlHttpRequest.ml 90 51>>*/ urlencode_av_
+                          /*<<xmlHttpRequest.ml 91 51>>*/ urlencode_av_
                           (0,
-                            /*<<xmlHttpRequest.ml 90 66>>*/ caml_js_to_string_aq_
+                            /*<<xmlHttpRequest.ml 91 66>>*/ caml_js_to_string_aq_
                             (_b_[2].name)));
-                      /*<<xmlHttpRequest.ml 90 40>>*/ return  /*<<xmlHttpRequest.ml 90 40>>*/ _M_
-                             ( /*<<xmlHttpRequest.ml 90 22>>*/ urlencode_av_(0,_c_),_d_)}
-                    /*<<xmlHttpRequest.ml 89 46>>*/ var
+                      /*<<xmlHttpRequest.ml 91 40>>*/ return  /*<<xmlHttpRequest.ml 91 40>>*/ _M_
+                             ( /*<<xmlHttpRequest.ml 91 22>>*/ urlencode_av_(0,_c_),_d_)}
+                    /*<<xmlHttpRequest.ml 90 46>>*/ var
                     _e_=
-                      /*<<xmlHttpRequest.ml 89 46>>*/ _M_
+                      /*<<xmlHttpRequest.ml 90 46>>*/ _M_
                       (_g1_,
-                        /*<<xmlHttpRequest.ml 89 53>>*/ urlencode_av_
+                        /*<<xmlHttpRequest.ml 90 53>>*/ urlencode_av_
                         (0,
-                          /*<<xmlHttpRequest.ml 89 23>>*/ caml_js_to_string_aq_
+                          /*<<xmlHttpRequest.ml 90 23>>*/ caml_js_to_string_aq_
                           (_b_[2])));
-                    /*<<xmlHttpRequest.ml 89 42>>*/ return  /*<<xmlHttpRequest.ml 89 42>>*/ _M_
-                           ( /*<<xmlHttpRequest.ml 89 24>>*/ urlencode_av_(0,_c_),_e_) /*<<xmlHttpRequest.ml 90 88>>*/ },
+                    /*<<xmlHttpRequest.ml 90 42>>*/ return  /*<<xmlHttpRequest.ml 90 42>>*/ _M_
+                           ( /*<<xmlHttpRequest.ml 90 24>>*/ urlencode_av_(0,_c_),_e_) /*<<xmlHttpRequest.ml 91 88>>*/ },
                  _ad_)).toString
              ())}
         else
-          /*<<xmlHttpRequest.ml 342 29>>*/ x2c7d0868_b_.send(_o_[2])}
+          /*<<xmlHttpRequest.ml 343 29>>*/ x2c7d0868_b_.send(_o_[2])}
       else
-        /*<<xmlHttpRequest.ml 339 15>>*/ x2c7d0868_b_.send(xd24db195_P_);
-       /*<<xmlHttpRequest.ml 344 2>>*/  /*<<xmlHttpRequest.ml 344 2>>*/ on_cancel_cS_
+        /*<<xmlHttpRequest.ml 340 15>>*/ x2c7d0868_b_.send(xd24db195_P_);
+       /*<<xmlHttpRequest.ml 345 2>>*/  /*<<xmlHttpRequest.ml 345 2>>*/ on_cancel_cS_
        (_B_,
         function(param_a_)
-         { /*<<xmlHttpRequest.ml 344 31>>*/ return  /*<<xmlHttpRequest.ml 344 31>>*/ x2c7d0868_b_.abort
-                  () /*<<xmlHttpRequest.ml 344 44>>*/ });
+         { /*<<xmlHttpRequest.ml 345 31>>*/ return  /*<<xmlHttpRequest.ml 345 31>>*/ x2c7d0868_b_.abort
+                  () /*<<xmlHttpRequest.ml 345 44>>*/ });
        /*<<boulderdash.ml 284 24>>*/ return  /*<<boulderdash.ml 284 24>>*/ bind_w_
               (_B_,_aj_) /*<<boulderdash.ml 289 24>>*/ }
      /*<<boulderdash.ml 25 41>>*/ function getfile_hu_(f_a_)

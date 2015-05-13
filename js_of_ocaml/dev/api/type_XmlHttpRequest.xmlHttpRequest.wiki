@@ -39,6 +39,7 @@
   method responseType : Js.js_string Js.t Js.prop
   method responseXML : Dom.element Dom.document Js.t Js.opt Js.readonly_prop
   method send : Js.js_string Js.t Js.opt -> unit Js.meth
+  method send_blob : File.blob Js.t -> unit Js.meth
   method send_document : Dom.element Dom.document -> unit Js.meth
   method send_formData : Form.formData Js.t -> unit Js.meth
   method setRequestHeader :
