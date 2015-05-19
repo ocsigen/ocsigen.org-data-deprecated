@@ -5617,8 +5617,8 @@
       /*<<src/core/lwt.ml 1181 13>>*/ s1_S_=
        /*<<src/core/lwt.ml 1181 13>>*/ _ch_(0),
       /*<<src/core/lwt.ml 1181 35>>*/ _fD_=[0,0],
-      /*<<js.ml 52 15>>*/ window_ab_=joo_global_object_P_,
-      /*<<js.ml 65 20>>*/ no_handler_bl_=null;
+      /*<<js.ml 50 15>>*/ window_ab_=joo_global_object_P_,
+      /*<<js.ml 66 20>>*/ no_handler_bl_=null;
      /*<<src/core/lwt.ml 1181 35>>*/ function _fE_(param_a_)
      { /*<<src/core/lwt.ml 1191 39>>*/ var _e_=1-(s1_S_[2]===s1_S_?1:0);
        /*<<src/core/lwt.ml 1191 39>>*/ if(_e_)
@@ -5645,32 +5645,32 @@
           return _d_}}
        /*<<src/core/lwt.ml 1185 2>>*/ return _e_ /*<<src/core/lwt.ml 1196 5>>*/ }
     var
-      /*<<js.ml 241 24>>*/ xbcb1e9dd_cm_=window_ab_.Array,
-      /*<<js.ml 351 11>>*/ Error_cn_=
-       /*<<js.ml 351 11>>*/ caml_set_oo_id_U_([num_248_a_,_fH_,0]),
-      /*<<js.ml 363 69>>*/ exn_bm_=[0,Error_cn_,{}],
-      /*<<js.ml 68 28>>*/ undefined_fF_=undefined,
-      /*<<js.ml 139 13>>*/ false_fG_=false,
+      /*<<js.ml 242 24>>*/ xbcb1e9dd_cm_=window_ab_.Array,
+      /*<<js.ml 352 11>>*/ Error_cn_=
+       /*<<js.ml 352 11>>*/ caml_set_oo_id_U_([num_248_a_,_fH_,0]),
+      /*<<js.ml 364 69>>*/ exn_bm_=[0,Error_cn_,{}],
+      /*<<js.ml 69 28>>*/ undefined_fF_=undefined,
+      /*<<js.ml 140 13>>*/ false_fG_=false,
       /*<<callback.ml 24 27>>*/ exn_fn_=
        /*<<callback.ml 24 16>>*/ caml_obj_tag_a4_(exn_bm_)===num_248_a_
        ?exn_bm_
        :exn_bm_[0+1];
      /*<<callback.ml 25 2>>*/  /*<<callback.ml 25 2>>*/ caml_register_named_value_g2_
      (caml_new_string_d_(str_jsError_cI_),exn_fn_);
-     /*<<js.ml 414 2>>*/  /*<<js.ml 414 2>>*/ register_printer_cg_
+     /*<<js.ml 415 2>>*/  /*<<js.ml 415 2>>*/ register_printer_cg_
      (function(param_a_)
-       { /*<<js.ml 415 5>>*/ return param_a_[1]===Error_cn_
+       { /*<<js.ml 416 5>>*/ return param_a_[1]===Error_cn_
                 ?[0,
-                   /*<<js.ml 415 31>>*/ caml_js_to_string_aH_
-                   ( /*<<js.ml 415 42>>*/ param_a_[2].toString())]
-                :0 /*<<js.ml 415 70>>*/ });
-     /*<<js.ml 417 2>>*/  /*<<js.ml 417 2>>*/ register_printer_cg_
+                   /*<<js.ml 416 31>>*/ caml_js_to_string_aH_
+                   ( /*<<js.ml 416 42>>*/ param_a_[2].toString())]
+                :0 /*<<js.ml 416 70>>*/ });
+     /*<<js.ml 418 2>>*/  /*<<js.ml 418 2>>*/ register_printer_cg_
      (function(xa78544e1_a_)
-       { /*<<js.ml 419 40>>*/ return xa78544e1_a_ instanceof xbcb1e9dd_cm_
+       { /*<<js.ml 420 40>>*/ return xa78544e1_a_ instanceof xbcb1e9dd_cm_
                 ?0
                 :[0,
-                   /*<<js.ml 420 18>>*/ caml_js_to_string_aH_
-                   ( /*<<js.ml 420 29>>*/ xa78544e1_a_.toString())] /*<<js.ml 420 56>>*/ });
+                   /*<<js.ml 421 18>>*/ caml_js_to_string_aH_
+                   ( /*<<js.ml 421 29>>*/ xa78544e1_a_.toString())] /*<<js.ml 421 56>>*/ });
     function _am_(x18184c07_a_,x32f94eb9_b_)
      { /*<<dom.ml 94 10>>*/  /*<<dom.ml 94 10>>*/ x18184c07_a_.appendChild
        (x32f94eb9_b_);
@@ -6604,7 +6604,7 @@
        /*<<wiki_syntax.ml 62 8>>*/  /*<<wiki_syntax.ml 60 10>>*/ _ar_
         (_gl_,
           /*<<wiki_syntax.ml 61 53>>*/ caml_js_to_string_aH_
-          ( /*<<js.ml 378 19>>*/ window_ab_.encodeURI
+          ( /*<<js.ml 379 19>>*/ window_ab_.encodeURI
             ( /*<<wiki_syntax.ml 61 38>>*/ addr_a_.toString()))).toString
        ();
        /*<<wiki_syntax.ml 63 8>>*/ i_c_.frameBorder=str_0_N_;
@@ -6702,14 +6702,14 @@
               ( /*<<wiki_syntax.ml 106 20>>*/ createDiv_cp_(doc_g_),_n_) /*<<wiki_syntax.ml 106 75>>*/ }
     function replace_child_gu_(p_a_,n_b_)
      { /*<<main.ml 26 15>>*/ var c_c_=p_a_.firstChild;
-       /*<<js.ml 92 45>>*/ if(c_c_!=no_handler_bl_)
+       /*<<js.ml 93 45>>*/ if(c_c_!=no_handler_bl_)
         /*<<dom.ml 97 10>>*/ p_a_.removeChild(c_c_);
        /*<<main.ml 26 60>>*/ return  /*<<main.ml 26 60>>*/ _am_(p_a_,n_b_) /*<<main.ml 27 21>>*/ }
     function f_cx_(param_a_)
      { /*<<main.ml 32 16>>*/ var
        body_b_=
          /*<<main.ml 32 16>>*/ doc_g_.getElementById("wiki_demo");
-       /*<<js.ml 94 39>>*/ if(body_b_==no_handler_bl_)throw [0,_m_,_gv_];
+       /*<<js.ml 95 39>>*/ if(body_b_==no_handler_bl_)throw [0,_m_,_gv_];
        /*<<dom_html.ml 1337 2>>*/ var
        textbox_c_=
          /*<<dom_html.ml 1337 2>>*/ unsafeCreateElementEx_fI_(0,0,doc_g_,_fJ_);

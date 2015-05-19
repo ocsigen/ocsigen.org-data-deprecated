@@ -388,7 +388,6 @@
   external debugger : unit -> unit = "debugger"
   module Unsafe :
     sig
-      external variable : string -> 'a = "caml_js_var"
       type any
       external inject : 'a -> Js.Unsafe.any = "%identity"
       external coerce : < .. > Js.t -> < .. > Js.t = "%identity"
@@ -411,6 +410,7 @@
         = "%identity"
       external meth_callback : ('b -> 'a) -> ('b, 'a) Js.meth_callback
         = "caml_js_wrap_meth_callback_unsafe"
+      external variable : string -> 'a = "caml_js_var"
     end
   external float : float -> float = "%identity"
   external to_float : float -> float = "%identity"
