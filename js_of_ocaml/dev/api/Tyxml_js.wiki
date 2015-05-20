@@ -1,13 +1,7 @@
 =Module <<a_api_type | module Tyxml_js >> =
-<<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module>> <<span class="ocsforge_color_uid"|<<span class="ocsforge_color_uid"|Tyxml_js>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="ocsforge_color_keyword"|sig>><<a_api text=".." | module Tyxml_js >><<span class="ocsforge_color_keyword"|end>>>>~Tyxml interface~. ~Please consult the [[ https://ocsigen.org/tyxml/ | ~Tyxml project ]] 
-    website for more information~.
-
-
-   ~Example of use for ~H~T~M~L ~(see [[ https://ocsigen.org/tyxml/dev/api/Html5_sigs.T | ~Html~5~_sigs~.~T ]]
-   to have a list of available functions~)~:
-
-
-   
+<<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module>> <<span class="ocsforge_color_uid"|<<span class="ocsforge_color_uid"|Tyxml_js>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="ocsforge_color_keyword"|sig>><<a_api text=".." | module Tyxml_js >><<span class="ocsforge_color_keyword"|end>>>>~Tyxml interface~.
+    ~Example of use for ~H~T~M~L~:
+    
 <<code language='ocaml'|     module T = Tyxml_js.Html5
      let html = T.(
        div ~a:[a_class ["several"; "css"; "class"]; a_id "id-of-div"] [
@@ -21,6 +15,10 @@
        ]
      )
    >>
+
+**See also**
+* [[https://ocsigen.org/tyxml/|the ~Tyxml project website~.]]
+* [[https://ocsigen.org/tyxml/dev/api/Html5_sigs.T|~Html~5~_sigs~.~T to have a list of available functions to build ~H~T~M~L~.]]
 
 
 ----
