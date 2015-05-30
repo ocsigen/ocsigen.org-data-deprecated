@@ -30,6 +30,8 @@
     Dom_html.formElement Dom_html.collection Js.t Js.readonly_prop
   method getElementById :
     Js.js_string Js.t -> Dom_html.element Js.t Js.opt Js.meth
+  method getElementsByClassName :
+    Js.js_string Js.t -> 'element Dom.nodeList Js.t Js.meth
   method getElementsByTagName :
     Js.js_string Js.t -> Dom_html.element Dom.nodeList Js.t Js.meth
   method hasChildNodes : bool Js.t Js.meth

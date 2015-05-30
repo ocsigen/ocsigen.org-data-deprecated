@@ -5845,11 +5845,11 @@
                    ( /*<<js.ml 421 29>>*/ xa78544e1_a_.toString())] /*<<js.ml 421 56>>*/ });
     var
       /*<<dom_html.ml 888 11>>*/ x5c9112d9_cd_="2d",
-      /*<<dom_html.ml 1230 15>>*/ Canvas_not_available_fC_=
-       /*<<dom_html.ml 1230 15>>*/ caml_set_oo_id_R_([num_248_a_,_fB_,0]);
-     /*<<dom_html.ml 1420 23>>*/ window_X_.HTMLElement===undefined_fx_;
+      /*<<dom_html.ml 1231 15>>*/ Canvas_not_available_fC_=
+       /*<<dom_html.ml 1231 15>>*/ caml_set_oo_id_R_([num_248_a_,_fB_,0]);
+     /*<<dom_html.ml 1421 23>>*/ window_X_.HTMLElement===undefined_fx_;
     var
-      /*<<dom_html.ml 1847 54>>*/ _fD_=num_2147483e3_bm_,
+      /*<<dom_html.ml 1848 54>>*/ _fD_=num_2147483e3_bm_,
       /*<<firebug.ml 78 14>>*/ x18184c07_fE_=
        /*<<firebug.ml 78 14>>*/ caml_js_get_console_f__(0);
      /*<<src/core/lwt.ml 1198 32>>*/ pause_hook_ft_[1]=
@@ -6158,16 +6158,16 @@
           break}}
        /*<<cubes.ml 128 2>>*/ return 0 /*<<cubes.ml 151 6>>*/ }
      /*<<cubes.ml 64 30>>*/ function create_canvas_cg_(param_a_)
-     { /*<<dom_html.ml 1278 44>>*/ var
+     { /*<<dom_html.ml 1279 44>>*/ var
        c_b_=
-         /*<<dom_html.ml 1278 44>>*/ window_X_.document.createElement
+         /*<<dom_html.ml 1279 44>>*/ window_X_.document.createElement
          ("canvas");
-       /*<<dom_html.ml 1413 32>>*/ if
-       ( /*<<dom_html.ml 1413 10>>*/ _cb_(c_b_.getContext))
+       /*<<dom_html.ml 1414 32>>*/ if
+       ( /*<<dom_html.ml 1414 10>>*/ _cb_(c_b_.getContext))
        { /*<<cubes.ml 156 2>>*/ c_b_.width=(24*(x0902e952_m_|0)|0)+1|0;
          /*<<cubes.ml 157 2>>*/ c_b_.height=(24*20|0)+1|0;
          /*<<cubes.ml 158 2>>*/ return c_b_}
-       /*<<dom_html.ml 1413 65>>*/ throw Canvas_not_available_fC_ /*<<cubes.ml 158 3>>*/ }
+       /*<<dom_html.ml 1414 65>>*/ throw Canvas_not_available_fC_ /*<<cubes.ml 158 3>>*/ }
      /*<<cubes.ml 64 30>>*/ function redraw_ch_
      (x52d2feda_a_,x621e1ec6_b_,a_c_)
      { /*<<cubes.ml 161 10>>*/ var
@@ -6274,32 +6274,32 @@
       var
         /*<<src/core/lwt.ml 564 18>>*/ t_f_=[0,[2,[0,1,0,0,0]]],
         /*<<lwt_js.ml 23 2>>*/ d_y_=0.2*num_1e3_cz_,
-        /*<<dom_html.ml 1866 2>>*/ id_h_=[0,0];
+        /*<<dom_html.ml 1867 2>>*/ id_h_=[0,0];
        /*<<lwt_js.ml 23 32>>*/ function callback_z_(_a_)
        { /*<<?>>*/ return wakeup_b$_(t_f_,_a_)}
-       /*<<dom_html.ml 1867 2>>*/ function loop_q_(d_a_,_b_)
+       /*<<dom_html.ml 1868 2>>*/ function loop_q_(d_a_,_b_)
        {var
-          /*<<dom_html.ml 1868 4>>*/ _c_=
+          /*<<dom_html.ml 1869 4>>*/ _c_=
           num_2147483e3_bm_<d_a_?[0,_fD_,d_a_-num_2147483e3_bm_]:[0,d_a_,0],
          _d_=_c_[2],
          _e_=_c_[1],
-          /*<<dom_html.ml 1872 4>>*/ callback_f_=
+          /*<<dom_html.ml 1873 4>>*/ callback_f_=
           _d_==0?callback_z_:function(_a_){ /*<<?>>*/ return loop_q_(_d_,_a_)};
-         /*<<dom_html.ml 1876 16>>*/ id_h_[1]=
+         /*<<dom_html.ml 1877 16>>*/ id_h_[1]=
         [0,
-          /*<<dom_html.ml 1876 16>>*/ window_X_.setTimeout
-          ( /*<<dom_html.ml 1876 16>>*/ caml_js_wrap_callback_cX_(callback_f_),
+          /*<<dom_html.ml 1877 16>>*/ window_X_.setTimeout
+          ( /*<<dom_html.ml 1877 16>>*/ caml_js_wrap_callback_cX_(callback_f_),
            _e_)];
-         /*<<dom_html.ml 1876 16>>*/ return 0 /*<<dom_html.ml 1876 63>>*/ }
-       /*<<dom_html.ml 1878 2>>*/  /*<<dom_html.ml 1878 2>>*/ loop_q_(d_y_,0);
+         /*<<dom_html.ml 1877 16>>*/ return 0 /*<<dom_html.ml 1877 63>>*/ }
+       /*<<dom_html.ml 1879 2>>*/  /*<<dom_html.ml 1879 2>>*/ loop_q_(d_y_,0);
        /*<<lwt_js.ml 24 2>>*/ function f_r_(param_a_)
-       { /*<<dom_html.ml 1882 2>>*/ var _b_=id_h_[1];
-         /*<<dom_html.ml 1882 2>>*/ if(_b_)
-         { /*<<dom_html.ml 1885 5>>*/ var _c_=_b_[1];
-           /*<<dom_html.ml 1885 5>>*/ id_h_[1]=0;
-           /*<<dom_html.ml 1886 5>>*/ return  /*<<dom_html.ml 1886 5>>*/ window_X_.clearTimeout
+       { /*<<dom_html.ml 1883 2>>*/ var _b_=id_h_[1];
+         /*<<dom_html.ml 1883 2>>*/ if(_b_)
+         { /*<<dom_html.ml 1886 5>>*/ var _c_=_b_[1];
+           /*<<dom_html.ml 1886 5>>*/ id_h_[1]=0;
+           /*<<dom_html.ml 1887 5>>*/ return  /*<<dom_html.ml 1887 5>>*/ window_X_.clearTimeout
                   (_c_)}
-         /*<<dom_html.ml 1883 12>>*/ return 0 /*<<lwt_js.ml 24 53>>*/ }
+         /*<<dom_html.ml 1884 12>>*/ return 0 /*<<lwt_js.ml 24 53>>*/ }
        /*<<src/core/lwt.ml 627 16>>*/ var
        _g_=
          /*<<src/core/lwt.ml 627 8>>*/ repr_au_(t_f_)[1];
