@@ -1964,21 +1964,21 @@
              /*<<dom_html.ml 1348 35>>*/ unsafeCreateElement_aa_(doc_n_,_bL_);
            /*<<main.ml 55 10>>*/  /*<<main.ml 55 10>>*/ _j_(main_l_,div_V_);
           var
-            /*<<main.ml 55 34>>*/ _a7_=nbm_aF_[1],
-            /*<<main.ml 55 34>>*/ _a8_=nbr_aH_[1],
+            /*<<main.ml 55 34>>*/ _a6_=nbm_aF_[1],
+            /*<<main.ml 55 34>>*/ _a7_=nbr_aH_[1],
             /*<<minesweeper.ml 170 12>>*/ nbc_at_=
              /*<<minesweeper.ml 170 12>>*/ max_F_(_ay_[1],nbc_aG_[1]),
             /*<<minesweeper.ml 171 12>>*/ nbr___=
-             /*<<minesweeper.ml 171 12>>*/ max_F_(_ay_[2],_a8_),
+             /*<<minesweeper.ml 171 12>>*/ max_F_(_ay_[2],_a7_),
             /*<<minesweeper.ml 172 27>>*/ y_au_=
-             /*<<minesweeper.ml 172 27>>*/ max_F_(1,_a7_),
+             /*<<minesweeper.ml 172 27>>*/ max_F_(1,_a6_),
             /*<<minesweeper.ml 172 37>>*/ x_av_=
              /*<<minesweeper.ml 172 37>>*/ caml_mul_aj_(nbc_at_,nbr___),
-            /*<<pervasives.ml 62 23>>*/ nbm_aX_=
+            /*<<pervasives.ml 62 23>>*/ nbm_aW_=
              /*<<pervasives.ml 62 17>>*/ caml_lessequal_ci_(x_av_,y_au_)
              ?x_av_
              :y_au_,
-            /*<<minesweeper.ml 173 2>>*/ cf_k_=[0,nbc_at_,nbr___,nbm_aX_],
+            /*<<minesweeper.ml 173 2>>*/ cf_k_=[0,nbc_at_,nbr___,nbm_aW_],
             /*<<random.ml 173 16>>*/ seed_aq_=
             [0,
               /*<<minesweeper.ml 46 5>>*/ caml_mod_t_
@@ -1986,539 +1986,536 @@
                1e5)],
             /*<<random.ml 44 4>>*/ _ae_=0===seed_aq_.length-1?[0,0]:seed_aq_,
             /*<<random.ml 45 4>>*/ l_ag_=_ae_.length-1,
-            /*<<random.ml 45 4>>*/ _aN_=0;
-           /*<<random.ml 46 4>>*/ if(!(54<0))
-           {var _p_=_aN_;
-             /*<<random.ml 47 6>>*/ for(;;)
-             { /*<<random.ml 47 6>>*/  /*<<random.ml 47 6>>*/ caml_check_bound_e_
-                (s_m_[1],_p_)
-               [_p_+1]=
-              _p_;
-               /*<<random.ml 47 20>>*/ var _aT_=_p_+1|0;
-              if(54!==_p_){var _p_=_aT_;continue}
-              break}}
-          var
-            /*<<random.ml 49 4>>*/ accu_Q_=[0,_bp_],
-            /*<<random.ml 50 30>>*/ _ah_=
-            54+
-             /*<<random.ml 50 22>>*/ max_F_(55,l_ag_)|
-            0,
-            /*<<random.ml 49 4>>*/ _aP_=0;
-           /*<<random.ml 50 30>>*/ if(!(_ah_<0))
-           {var _x_=_aP_;
-             /*<<random.ml 51 6>>*/ for(;;)
-             {var
-                /*<<random.ml 51 6>>*/ j_D_=
-                 /*<<random.ml 51 6>>*/ caml_mod_t_(_x_,55),
-                /*<<random.ml 52 6>>*/ k_ai_=
-                 /*<<random.ml 52 6>>*/ caml_mod_t_(_x_,l_ag_),
-                /*<<random.ml 53 28>>*/ x_aQ_=
-                 /*<<random.ml 53 28>>*/ caml_check_bound_e_(_ae_,k_ai_)
-                 [k_ai_+1],
-                /*<<random.ml 39 39>>*/ str_ad_=
-                 /*<<random.ml 39 39>>*/ _X_
-                 (accu_Q_[1],
-                   /*<<random.ml 39 47>>*/ caml_new_string_d_(str_i_+x_aQ_));
-               /*<<random.ml 53 36>>*/ accu_Q_[1]=
-               /*<<digest.ml 24 2>>*/ caml_md5_string_cj_
-               (str_ad_,
-                0,
-                 /*<<digest.ml 24 2>>*/ caml_ml_string_length_q_(str_ad_));
-              var
-                /*<<random.ml 54 6>>*/ _E_=accu_Q_[1],
-                /*<<random.ml 41 21>>*/ _aM_=
-                (( /*<<random.ml 41 16>>*/ caml_string_get_U_(_E_,0)+
-                  ( /*<<random.ml 41 35>>*/ caml_string_get_U_(_E_,1)<<8)|
-                  0)+
-                 ( /*<<random.ml 41 61>>*/ caml_string_get_U_(_E_,2)<<16)|
-                 0)+
-                ( /*<<random.ml 42 19>>*/ caml_string_get_U_(_E_,3)<<24)|
-                0,
-                /*<<random.ml 54 27>>*/ _aR_=
-                ( /*<<random.ml 54 19>>*/ caml_check_bound_e_(s_m_[1],j_D_)
-                  [j_D_+1]^
-                 _aM_)&
-                num_1073741823_K_;
-               /*<<random.ml 54 6>>*/  /*<<random.ml 54 6>>*/ caml_check_bound_e_
-                (s_m_[1],j_D_)
-               [j_D_+1]=
-              _aR_;
-               /*<<random.ml 54 64>>*/ var _aS_=_x_+1|0;
-              if(_ah_!==_x_){var _x_=_aS_;continue}
-              break}}
-           /*<<random.ml 56 4>>*/ s_m_[2]=0;
-          var
-            /*<<minesweeper.ml 174 18>>*/ _aY_=0,
-            /*<<minesweeper.ml 174 18>>*/ _aZ_=
-             /*<<minesweeper.ml 174 18>>*/ caml_mul_aj_(cf_k_[2],cf_k_[1])-
-            cf_k_[3]|
-            0,
-            /*<<minesweeper.ml 174 18>>*/ _a0_=0,
-            /*<<minesweeper.ml 177 10>>*/ _a2_=
-             /*<<minesweeper.ml 177 10>>*/ caml_make_vect_R_(nbr___,[0]);
-           /*<<minesweeper.ml 57 2>>*/ function cell_init_as_(param_a_)
-           { /*<<minesweeper.ml 57 21>>*/ return [0,0,0,0,0] /*<<minesweeper.ml 57 67>>*/ }
-          var
-            /*<<minesweeper.ml 71 0>>*/ lc_G_=
-             /*<<minesweeper.ml 71 0>>*/ caml_mul_aj_(cf_k_[1],cf_k_[2]),
-            /*<<minesweeper.ml 36 2>>*/ cell_list_y_=[0,0],
-            /*<<minesweeper.ml 71 0>>*/ _aV_=cf_k_[3];
-          a:
-          for(;;)
-           {var _P_=0,_O_=cell_list_y_[1];
+           _p_=0;
+           /*<<random.ml 47 6>>*/ for(;;)
+           { /*<<random.ml 47 6>>*/  /*<<random.ml 47 6>>*/ caml_check_bound_e_
+              (s_m_[1],_p_)
+             [_p_+1]=
+            _p_;
+             /*<<random.ml 47 20>>*/ var _aS_=_p_+1|0;
+            if(54!==_p_){var _p_=_aS_;continue}
+            var
+              /*<<random.ml 49 4>>*/ accu_Q_=[0,_bp_],
+              /*<<random.ml 50 30>>*/ _ah_=
+              54+
+               /*<<random.ml 50 22>>*/ max_F_(55,l_ag_)|
+              0,
+              /*<<random.ml 49 4>>*/ _aN_=0;
+             /*<<random.ml 50 30>>*/ if(!(_ah_<0))
+             {var _x_=_aN_;
+               /*<<random.ml 51 6>>*/ for(;;)
+               {var
+                  /*<<random.ml 51 6>>*/ j_D_=
+                   /*<<random.ml 51 6>>*/ caml_mod_t_(_x_,55),
+                  /*<<random.ml 52 6>>*/ k_ai_=
+                   /*<<random.ml 52 6>>*/ caml_mod_t_(_x_,l_ag_),
+                  /*<<random.ml 53 28>>*/ x_aP_=
+                   /*<<random.ml 53 28>>*/ caml_check_bound_e_(_ae_,k_ai_)
+                   [k_ai_+1],
+                  /*<<random.ml 39 39>>*/ str_ad_=
+                   /*<<random.ml 39 39>>*/ _X_
+                   (accu_Q_[1],
+                     /*<<random.ml 39 47>>*/ caml_new_string_d_(str_i_+x_aP_));
+                 /*<<random.ml 53 36>>*/ accu_Q_[1]=
+                 /*<<digest.ml 24 2>>*/ caml_md5_string_cj_
+                 (str_ad_,
+                  0,
+                   /*<<digest.ml 24 2>>*/ caml_ml_string_length_q_(str_ad_));
+                var
+                  /*<<random.ml 54 6>>*/ _E_=accu_Q_[1],
+                  /*<<random.ml 41 21>>*/ _aM_=
+                  (( /*<<random.ml 41 16>>*/ caml_string_get_U_(_E_,0)+
+                    ( /*<<random.ml 41 35>>*/ caml_string_get_U_(_E_,1)<<8)|
+                    0)+
+                   ( /*<<random.ml 41 61>>*/ caml_string_get_U_(_E_,2)<<16)|
+                   0)+
+                  ( /*<<random.ml 42 19>>*/ caml_string_get_U_(_E_,3)<<24)|
+                  0,
+                  /*<<random.ml 54 27>>*/ _aQ_=
+                  ( /*<<random.ml 54 19>>*/ caml_check_bound_e_(s_m_[1],j_D_)
+                    [j_D_+1]^
+                   _aM_)&
+                  num_1073741823_K_;
+                 /*<<random.ml 54 6>>*/  /*<<random.ml 54 6>>*/ caml_check_bound_e_
+                  (s_m_[1],j_D_)
+                 [j_D_+1]=
+                _aQ_;
+                 /*<<random.ml 54 64>>*/ var _aR_=_x_+1|0;
+                if(_ah_!==_x_){var _x_=_aR_;continue}
+                break}}
+             /*<<random.ml 56 4>>*/ s_m_[2]=0;
+            var
+              /*<<minesweeper.ml 174 18>>*/ _aX_=0,
+              /*<<minesweeper.ml 174 18>>*/ _aY_=
+               /*<<minesweeper.ml 174 18>>*/ caml_mul_aj_(cf_k_[2],cf_k_[1])-
+              cf_k_[3]|
+              0,
+              /*<<minesweeper.ml 174 18>>*/ _aZ_=0,
+              /*<<minesweeper.ml 177 10>>*/ _a0_=
+               /*<<minesweeper.ml 177 10>>*/ caml_make_vect_R_(nbr___,[0]),
+              /*<<minesweeper.ml 57 2>>*/ cell_init_as_=
+              function(param_a_)
+               { /*<<minesweeper.ml 57 21>>*/ return [0,0,0,0,0] /*<<minesweeper.ml 57 67>>*/ },
+              /*<<minesweeper.ml 71 0>>*/ lc_G_=
+               /*<<minesweeper.ml 71 0>>*/ caml_mul_aj_(cf_k_[1],cf_k_[2]),
+              /*<<minesweeper.ml 36 2>>*/ cell_list_y_=[0,0],
+              /*<<minesweeper.ml 71 0>>*/ _aU_=cf_k_[3];
+            a:
             for(;;)
-             {if(_O_){var _P_=_P_+1|0,_O_=_O_[2];continue}
-               /*<<minesweeper.ml 37 34>>*/ if(_P_<_aV_)
-               { /*<<random.ml 90 4>>*/ if(!(num_1073741823_K_<lc_G_))
-                 if(0<lc_G_)
-                  for(;;)
-                   { /*<<random.ml 75 4>>*/ s_m_[2]=
-                     /*<<random.ml 75 4>>*/ caml_mod_t_(s_m_[2]+1|0,55);
-                    var
-                      /*<<random.ml 76 4>>*/ _ak_=s_m_[2],
-                      /*<<random.ml 76 4>>*/ curval_al_=
-                       /*<<random.ml 76 4>>*/ caml_check_bound_e_(s_m_[1],_ak_)
-                       [_ak_+1],
-                      /*<<random.ml 77 4>>*/ _an_=
-                       /*<<random.ml 77 4>>*/ caml_mod_t_(s_m_[2]+24|0,55),
-                      /*<<random.ml 79 4>>*/ r_S_=
-                      ( /*<<random.ml 77 17>>*/ caml_check_bound_e_(s_m_[1],_an_)
-                        [_an_+1]+
-                       (curval_al_^(curval_al_>>>25|0)&31)|
-                       0)&
-                      num_1073741823_K_,
-                      /*<<random.ml 80 4>>*/ _ap_=s_m_[2];
-                     /*<<random.ml 80 4>>*/  /*<<random.ml 80 4>>*/ caml_check_bound_e_
-                      (s_m_[1],_ap_)
-                     [_ap_+1]=
-                    r_S_;
-                     /*<<random.ml 86 4>>*/ var
-                     n_T_=
-                       /*<<random.ml 86 4>>*/ caml_mod_t_(r_S_,lc_G_);
-                     /*<<random.ml 87 4>>*/ if
-                     (((num_1073741823_K_-lc_G_|0)+1|0)<(r_S_-n_T_|0))
-                     continue;
-                    var _C_=cell_list_y_[1];
+             {var _P_=0,_O_=cell_list_y_[1];
+              for(;;)
+               {if(_O_){var _P_=_P_+1|0,_O_=_O_[2];continue}
+                 /*<<minesweeper.ml 37 34>>*/ if(_P_<_aU_)
+                 { /*<<random.ml 90 4>>*/ if(!(num_1073741823_K_<lc_G_))
+                   if(0<lc_G_)
                     for(;;)
-                     {if(_C_)
-                       {var
-                         _aL_=_C_[2],
-                          /*<<list.ml 147 23>>*/ _ac_=
-                          0=== /*<<list.ml 147 12>>*/ caml_compare_b$_(_C_[1],n_T_)
-                           ?1
-                           :0;
-                         /*<<list.ml 147 23>>*/ if(!_ac_){var _C_=_aL_;continue}
-                        var _ar_=_ac_}
-                      else
-                       var _ar_=0;
-                       /*<<minesweeper.ml 39 35>>*/ if(!_ar_)
-                       cell_list_y_[1]=[0,n_T_,cell_list_y_[1]];
-                      continue a}}
-                 /*<<pervasives.ml 31 45>>*/ throw [0,_W_,s_bq_]}
-              var
-                /*<<minesweeper.ml 41 2>>*/ _aU_=cell_list_y_[1],
-                /*<<minesweeper.ml 72 51>>*/ _aW_=
-                 /*<<minesweeper.ml 72 51>>*/ cell_init_as_(0),
-                /*<<minesweeper.ml 72 12>>*/ b_r_=
-                 /*<<minesweeper.ml 72 12>>*/ _am_(cf_k_[1],cf_k_[2],_aW_);
-               /*<<minesweeper.ml 73 3>>*/  /*<<minesweeper.ml 73 3>>*/ _az_
-               (cf_k_,
-                function(param_a_)
-                 {var
-                    /*<<minesweeper.ml 58 21>>*/ _b_=param_a_[2],
-                    /*<<minesweeper.ml 58 21>>*/ _c_=param_a_[1],
-                    /*<<minesweeper.ml 58 44>>*/ _d_=
-                     /*<<minesweeper.ml 58 44>>*/ cell_init_as_(0);
-                   /*<<minesweeper.ml 58 36>>*/ return  /*<<minesweeper.ml 58 36>>*/ caml_check_bound_e_
-                           ( /*<<minesweeper.ml 58 31>>*/ caml_check_bound_e_(b_r_,_c_)
-                             [_c_+1],
-                            _b_)
-                          [_b_+1]=
-                         _d_});
-               /*<<minesweeper.ml 74 0>>*/  /*<<minesweeper.ml 74 0>>*/ _Z_
-               (function(n_a_)
-                 {var
-                    /*<<minesweeper.ml 59 22>>*/ _b_=
-                     /*<<minesweeper.ml 59 22>>*/ caml_mod_t_(n_a_,cf_k_[2]),
-                    /*<<minesweeper.ml 59 22>>*/ _c_=
-                     /*<<minesweeper.ml 59 22>>*/ caml_div_bc_(n_a_,cf_k_[2]);
-                   /*<<minesweeper.ml 59 57>>*/  /*<<minesweeper.ml 59 39>>*/ caml_check_bound_e_
-                     ( /*<<minesweeper.ml 59 22>>*/ caml_check_bound_e_(b_r_,_c_)
-                       [_c_+1],
-                      _b_)
-                    [_b_+1]
-                   [1]=
-                  1;
-                   /*<<minesweeper.ml 59 57>>*/ return 0},
-                _aU_);
-               /*<<minesweeper.ml 75 0>>*/  /*<<minesweeper.ml 75 0>>*/ _az_
-               (cf_k_,
-                function(param_a_)
-                 {var
-                    /*<<minesweeper.ml 67 14>>*/ _b_=param_a_[2],
-                    /*<<minesweeper.ml 67 14>>*/ _c_=param_a_[1];
-                   /*<<minesweeper.ml 68 18>>*/ if
-                   ( /*<<minesweeper.ml 68 14>>*/ caml_check_bound_e_
-                       ( /*<<minesweeper.ml 68 9>>*/ caml_check_bound_e_(b_r_,_c_)
+                     { /*<<random.ml 75 4>>*/ s_m_[2]=
+                       /*<<random.ml 75 4>>*/ caml_mod_t_(s_m_[2]+1|0,55);
+                      var
+                        /*<<random.ml 76 4>>*/ _ak_=s_m_[2],
+                        /*<<random.ml 76 4>>*/ curval_al_=
+                         /*<<random.ml 76 4>>*/ caml_check_bound_e_(s_m_[1],_ak_)
+                         [_ak_+1],
+                        /*<<random.ml 77 4>>*/ _an_=
+                         /*<<random.ml 77 4>>*/ caml_mod_t_(s_m_[2]+24|0,55),
+                        /*<<random.ml 79 4>>*/ r_S_=
+                        ( /*<<random.ml 77 17>>*/ caml_check_bound_e_(s_m_[1],_an_)
+                          [_an_+1]+
+                         (curval_al_^(curval_al_>>>25|0)&31)|
+                         0)&
+                        num_1073741823_K_,
+                        /*<<random.ml 80 4>>*/ _ap_=s_m_[2];
+                       /*<<random.ml 80 4>>*/  /*<<random.ml 80 4>>*/ caml_check_bound_e_
+                        (s_m_[1],_ap_)
+                       [_ap_+1]=
+                      r_S_;
+                       /*<<random.ml 86 4>>*/ var
+                       n_T_=
+                         /*<<random.ml 86 4>>*/ caml_mod_t_(r_S_,lc_G_);
+                       /*<<random.ml 87 4>>*/ if
+                       (((num_1073741823_K_-lc_G_|0)+1|0)<(r_S_-n_T_|0))
+                       continue;
+                      var _C_=cell_list_y_[1];
+                      for(;;)
+                       {if(_C_)
+                         {var
+                           _aL_=_C_[2],
+                            /*<<list.ml 147 23>>*/ _ac_=
+                            0=== /*<<list.ml 147 12>>*/ caml_compare_b$_(_C_[1],n_T_)
+                             ?1
+                             :0;
+                           /*<<list.ml 147 23>>*/ if(!_ac_){var _C_=_aL_;continue}
+                          var _ar_=_ac_}
+                        else
+                         var _ar_=0;
+                         /*<<minesweeper.ml 39 35>>*/ if(!_ar_)
+                         cell_list_y_[1]=[0,n_T_,cell_list_y_[1]];
+                        continue a}}
+                   /*<<pervasives.ml 31 45>>*/ throw [0,_W_,s_bq_]}
+                var
+                  /*<<minesweeper.ml 41 2>>*/ _aT_=cell_list_y_[1],
+                  /*<<minesweeper.ml 72 51>>*/ _aV_=
+                   /*<<minesweeper.ml 72 51>>*/ cell_init_as_(0),
+                  /*<<minesweeper.ml 72 12>>*/ b_r_=
+                   /*<<minesweeper.ml 72 12>>*/ _am_(cf_k_[1],cf_k_[2],_aV_);
+                 /*<<minesweeper.ml 73 3>>*/  /*<<minesweeper.ml 73 3>>*/ _az_
+                 (cf_k_,
+                  function(param_a_)
+                   {var
+                      /*<<minesweeper.ml 58 21>>*/ _b_=param_a_[2],
+                      /*<<minesweeper.ml 58 21>>*/ _c_=param_a_[1],
+                      /*<<minesweeper.ml 58 44>>*/ _d_=
+                       /*<<minesweeper.ml 58 44>>*/ cell_init_as_(0);
+                     /*<<minesweeper.ml 58 36>>*/ return  /*<<minesweeper.ml 58 36>>*/ caml_check_bound_e_
+                             ( /*<<minesweeper.ml 58 31>>*/ caml_check_bound_e_(b_r_,_c_)
+                               [_c_+1],
+                              _b_)
+                            [_b_+1]=
+                           _d_});
+                 /*<<minesweeper.ml 74 0>>*/  /*<<minesweeper.ml 74 0>>*/ _Z_
+                 (function(n_a_)
+                   {var
+                      /*<<minesweeper.ml 59 22>>*/ _b_=
+                       /*<<minesweeper.ml 59 22>>*/ caml_mod_t_(n_a_,cf_k_[2]),
+                      /*<<minesweeper.ml 59 22>>*/ _c_=
+                       /*<<minesweeper.ml 59 22>>*/ caml_div_bc_(n_a_,cf_k_[2]);
+                     /*<<minesweeper.ml 59 57>>*/  /*<<minesweeper.ml 59 39>>*/ caml_check_bound_e_
+                       ( /*<<minesweeper.ml 59 22>>*/ caml_check_bound_e_(b_r_,_c_)
                          [_c_+1],
                         _b_)
                       [_b_+1]
-                     [1])
-                   return 0;
-                   /*<<minesweeper.ml 62 4>>*/ var x_d_=[0,0];
-                   /*<<minesweeper.ml 63 4>>*/ function inc_if_mined_f_
-                   (param_a_)
+                     [1]=
+                    1;
+                     /*<<minesweeper.ml 59 57>>*/ return 0},
+                  _aT_);
+                 /*<<minesweeper.ml 75 0>>*/  /*<<minesweeper.ml 75 0>>*/ _az_
+                 (cf_k_,
+                  function(param_a_)
                    {var
-                      /*<<minesweeper.ml 63 21>>*/ _b_=param_a_[2],
-                      /*<<minesweeper.ml 63 21>>*/ _c_=param_a_[1];
-                     /*<<minesweeper.ml 63 41>>*/ return  /*<<minesweeper.ml 63 37>>*/ caml_check_bound_e_
-                               ( /*<<minesweeper.ml 63 32>>*/ caml_check_bound_e_(b_r_,_c_)
-                                 [_c_+1],
-                                _b_)
-                              [_b_+1]
-                             [1]
-                            ?(x_d_[1]++,0)
-                            :0 /*<<minesweeper.ml 63 59>>*/ }
-                   /*<<minesweeper.ml 64 5>>*/  /*<<minesweeper.ml 64 5>>*/ _Z_
-                   (inc_if_mined_f_,
-                     /*<<minesweeper.ml 64 29>>*/ _aA_(cf_k_,[0,_c_,_b_]));
-                   /*<<minesweeper.ml 64 49>>*/ var _g_=x_d_[1];
-                   /*<<minesweeper.ml 69 16>>*/  /*<<minesweeper.ml 69 12>>*/ caml_check_bound_e_
-                     ( /*<<minesweeper.ml 69 7>>*/ caml_check_bound_e_(b_r_,_c_)
-                       [_c_+1],
-                      _b_)
-                    [_b_+1]
-                   [4]=
-                  _g_;
-                   /*<<minesweeper.ml 69 16>>*/ return 0});
-              var
-                /*<<minesweeper.ml 176 28>>*/ d_g_=
-                [0,b_r_,_a2_,cf_k_,_a0_,_aZ_,_aY_],
-                /*<<minesweeper.ml 185 2>>*/ mode_I_=[0,0],
-                /*<<minesweeper.ml 186 12>>*/ buf_s_=
-                 /*<<minesweeper.ml 186 12>>*/ caml_js_meth_call_h_
-                 (x26523dec_w_,_bY_,[0]);
-               /*<<minesweeper.ml 187 2>>*/  /*<<minesweeper.ml 187 2>>*/ _j_
-               (buf_s_,
-                 /*<<minesweeper.ml 187 23>>*/ caml_js_meth_call_h_
-                 (x26523dec_w_,_bZ_,[0,"Mode : "]));
-               /*<<minesweeper.ml 188 12>>*/ var
-               img_A_=
-                 /*<<minesweeper.ml 188 12>>*/ createImg_ax_(x26523dec_w_);
-               /*<<minesweeper.ml 189 2>>*/  /*<<minesweeper.ml 189 2>>*/ _j_
-               (buf_s_,img_A_);
-               /*<<minesweeper.ml 190 2>>*/ img_A_.src=
-              str_sprites_bomb_png_af_;
-               /*<<minesweeper.ml 191 2>>*/ img_A_.onclick=
-               /*<<minesweeper.ml 191 18>>*/ handler_v_
-               (function(param_a_)
-                 { /*<<minesweeper.ml 193 13>>*/ if(0===mode_I_[1])
-                   { /*<<minesweeper.ml 194 21>>*/ mode_I_[1]=1;
-                     /*<<minesweeper.ml 194 36>>*/ img_A_.src=
-                    str_sprites_flag_png_a__}
-                  else
-                   { /*<<minesweeper.ml 195 21>>*/ mode_I_[1]=0;
-                     /*<<minesweeper.ml 195 38>>*/ img_A_.src=
-                    str_sprites_bomb_png_af_}
-                   /*<<minesweeper.ml 197 7>>*/ return false_u_ /*<<minesweeper.ml 197 16>>*/ });
-               /*<<minesweeper.ml 199 2>>*/  /*<<minesweeper.ml 199 2>>*/ _j_
-               (buf_s_,
-                 /*<<minesweeper.ml 199 23>>*/ createBr_z_(x26523dec_w_));
-              var
-                /*<<minesweeper.ml 199 46>>*/ _aw_=d_g_[3][2]-1|0,
-                /*<<minesweeper.ml 199 46>>*/ _a3_=0;
-               /*<<minesweeper.ml 199 46>>*/ if(!(_aw_<0))
-               {var _f_=_a3_;
-                 /*<<minesweeper.ml 201 4>>*/ for(;;)
-                 {var
-                    /*<<minesweeper.ml 201 4>>*/ imgs_$_=[0,0],
-                    /*<<minesweeper.ml 202 4>>*/ _aD_=d_g_[3][1]-1|0,
-                    /*<<minesweeper.ml 201 4>>*/ _a4_=0;
-                   /*<<minesweeper.ml 202 4>>*/ if(!(_aD_<0))
-                   {var _b_=_a4_;
-                     /*<<minesweeper.ml 203 6>>*/ for(;;)
-                     { /*<<minesweeper.ml 203 16>>*/ var
-                       img_c_=
-                         /*<<minesweeper.ml 203 16>>*/ createImg_ax_(x26523dec_w_);
-                       /*<<minesweeper.ml 204 6>>*/ imgs_$_[1]=
-                      [0,img_c_,imgs_$_[1]];
-                       /*<<minesweeper.ml 205 6>>*/ img_c_.src=
-                      str_sprites_normal_png_aO_;
-                       /*<<minesweeper.ml 206 6>>*/ img_c_.onclick=
-                       /*<<minesweeper.ml 206 22>>*/ handler_v_
-                       (function(_f_,_b_,img_c_)
-                          { /*<<minesweeper.ml 206 6>>*/ return function(param_a_)
-                            { /*<<minesweeper.ml 208 11>>*/ if(0===mode_I_[1])
-                              {if
-                                (! /*<<minesweeper.ml 210 27>>*/ caml_check_bound_e_
-                                    ( /*<<minesweeper.ml 210 19>>*/ caml_check_bound_e_
-                                       (d_g_[1],_b_)
-                                      [_b_+1],
-                                     _f_)
-                                   [_f_+1]
-                                  [2])
-                                if(d_g_[6])
-                                 { /*<<minesweeper.ml 149 17>>*/ if
-                                   ( /*<<minesweeper.ml 149 13>>*/ caml_check_bound_e_
-                                       ( /*<<minesweeper.ml 149 5>>*/ caml_check_bound_e_
-                                          (d_g_[1],_b_)
-                                         [_b_+1],
-                                        _f_)
-                                      [_f_+1]
-                                     [3])
-                                   { /*<<minesweeper.ml 150 9>>*/ d_g_[4]=d_g_[4]-1|0;
-                                     /*<<minesweeper.ml 151 21>>*/  /*<<minesweeper.ml 151 17>>*/ caml_check_bound_e_
-                                       ( /*<<minesweeper.ml 151 9>>*/ caml_check_bound_e_
-                                          (d_g_[1],_b_)
-                                         [_b_+1],
-                                        _f_)
-                                      [_f_+1]
-                                     [3]=
-                                    0}
-                                  else
-                                   { /*<<minesweeper.ml 152 9>>*/ d_g_[4]=d_g_[4]+1|0;
-                                     /*<<minesweeper.ml 153 21>>*/  /*<<minesweeper.ml 153 17>>*/ caml_check_bound_e_
-                                       ( /*<<minesweeper.ml 153 9>>*/ caml_check_bound_e_
-                                          (d_g_[1],_b_)
-                                         [_b_+1],
-                                        _f_)
-                                      [_f_+1]
-                                     [3]=
-                                    1}
-                                   /*<<minesweeper.ml 154 34>>*/ var
-                                   _l_=
-                                     /*<<minesweeper.ml 154 34>>*/ caml_check_bound_e_
-                                      ( /*<<minesweeper.ml 154 26>>*/ caml_check_bound_e_
-                                         (d_g_[1],_b_)
-                                        [_b_+1],
-                                       _f_)
-                                     [_f_+1];
-                                   /*<<minesweeper.ml 154 25>>*/  /*<<minesweeper.ml 154 25>>*/ _H_
-                                   ( /*<<minesweeper.ml 154 21>>*/ caml_check_bound_e_
-                                      ( /*<<minesweeper.ml 154 12>>*/ caml_check_bound_e_
-                                         (d_g_[2],_f_)
-                                        [_f_+1],
-                                       _b_)
-                                     [_b_+1],
-                                    _l_)}
-                                else
-                                 if
-                                  (! /*<<minesweeper.ml 212 32>>*/ caml_check_bound_e_
-                                      ( /*<<minesweeper.ml 212 24>>*/ caml_check_bound_e_
+                      /*<<minesweeper.ml 67 14>>*/ _b_=param_a_[2],
+                      /*<<minesweeper.ml 67 14>>*/ _c_=param_a_[1];
+                     /*<<minesweeper.ml 68 18>>*/ if
+                     ( /*<<minesweeper.ml 68 14>>*/ caml_check_bound_e_
+                         ( /*<<minesweeper.ml 68 9>>*/ caml_check_bound_e_(b_r_,_c_)
+                           [_c_+1],
+                          _b_)
+                        [_b_+1]
+                       [1])
+                     return 0;
+                     /*<<minesweeper.ml 62 4>>*/ var x_d_=[0,0];
+                     /*<<minesweeper.ml 63 4>>*/ function inc_if_mined_f_
+                     (param_a_)
+                     {var
+                        /*<<minesweeper.ml 63 21>>*/ _b_=param_a_[2],
+                        /*<<minesweeper.ml 63 21>>*/ _c_=param_a_[1];
+                       /*<<minesweeper.ml 63 41>>*/ return  /*<<minesweeper.ml 63 37>>*/ caml_check_bound_e_
+                                 ( /*<<minesweeper.ml 63 32>>*/ caml_check_bound_e_(b_r_,_c_)
+                                   [_c_+1],
+                                  _b_)
+                                [_b_+1]
+                               [1]
+                              ?(x_d_[1]++,0)
+                              :0 /*<<minesweeper.ml 63 59>>*/ }
+                     /*<<minesweeper.ml 64 5>>*/  /*<<minesweeper.ml 64 5>>*/ _Z_
+                     (inc_if_mined_f_,
+                       /*<<minesweeper.ml 64 29>>*/ _aA_(cf_k_,[0,_c_,_b_]));
+                     /*<<minesweeper.ml 64 49>>*/ var _g_=x_d_[1];
+                     /*<<minesweeper.ml 69 16>>*/  /*<<minesweeper.ml 69 12>>*/ caml_check_bound_e_
+                       ( /*<<minesweeper.ml 69 7>>*/ caml_check_bound_e_(b_r_,_c_)
+                         [_c_+1],
+                        _b_)
+                      [_b_+1]
+                     [4]=
+                    _g_;
+                     /*<<minesweeper.ml 69 16>>*/ return 0});
+                var
+                  /*<<minesweeper.ml 176 28>>*/ d_g_=
+                  [0,b_r_,_a0_,cf_k_,_aZ_,_aY_,_aX_],
+                  /*<<minesweeper.ml 185 2>>*/ mode_I_=[0,0],
+                  /*<<minesweeper.ml 186 12>>*/ buf_s_=
+                   /*<<minesweeper.ml 186 12>>*/ caml_js_meth_call_h_
+                   (x26523dec_w_,_bY_,[0]);
+                 /*<<minesweeper.ml 187 2>>*/  /*<<minesweeper.ml 187 2>>*/ _j_
+                 (buf_s_,
+                   /*<<minesweeper.ml 187 23>>*/ caml_js_meth_call_h_
+                   (x26523dec_w_,_bZ_,[0,"Mode : "]));
+                 /*<<minesweeper.ml 188 12>>*/ var
+                 img_A_=
+                   /*<<minesweeper.ml 188 12>>*/ createImg_ax_(x26523dec_w_);
+                 /*<<minesweeper.ml 189 2>>*/  /*<<minesweeper.ml 189 2>>*/ _j_
+                 (buf_s_,img_A_);
+                 /*<<minesweeper.ml 190 2>>*/ img_A_.src=
+                str_sprites_bomb_png_af_;
+                 /*<<minesweeper.ml 191 2>>*/ img_A_.onclick=
+                 /*<<minesweeper.ml 191 18>>*/ handler_v_
+                 (function(param_a_)
+                   { /*<<minesweeper.ml 193 13>>*/ if(0===mode_I_[1])
+                     { /*<<minesweeper.ml 194 21>>*/ mode_I_[1]=1;
+                       /*<<minesweeper.ml 194 36>>*/ img_A_.src=
+                      str_sprites_flag_png_a__}
+                    else
+                     { /*<<minesweeper.ml 195 21>>*/ mode_I_[1]=0;
+                       /*<<minesweeper.ml 195 38>>*/ img_A_.src=
+                      str_sprites_bomb_png_af_}
+                     /*<<minesweeper.ml 197 7>>*/ return false_u_ /*<<minesweeper.ml 197 16>>*/ });
+                 /*<<minesweeper.ml 199 2>>*/  /*<<minesweeper.ml 199 2>>*/ _j_
+                 (buf_s_,
+                   /*<<minesweeper.ml 199 23>>*/ createBr_z_(x26523dec_w_));
+                var
+                  /*<<minesweeper.ml 199 46>>*/ _aw_=d_g_[3][2]-1|0,
+                  /*<<minesweeper.ml 199 46>>*/ _a2_=0;
+                 /*<<minesweeper.ml 199 46>>*/ if(!(_aw_<0))
+                 {var _f_=_a2_;
+                   /*<<minesweeper.ml 201 4>>*/ for(;;)
+                   {var
+                      /*<<minesweeper.ml 201 4>>*/ imgs_$_=[0,0],
+                      /*<<minesweeper.ml 202 4>>*/ _aD_=d_g_[3][1]-1|0,
+                      /*<<minesweeper.ml 201 4>>*/ _a3_=0;
+                     /*<<minesweeper.ml 202 4>>*/ if(!(_aD_<0))
+                     {var _b_=_a3_;
+                       /*<<minesweeper.ml 203 6>>*/ for(;;)
+                       { /*<<minesweeper.ml 203 16>>*/ var
+                         img_c_=
+                           /*<<minesweeper.ml 203 16>>*/ createImg_ax_(x26523dec_w_);
+                         /*<<minesweeper.ml 204 6>>*/ imgs_$_[1]=
+                        [0,img_c_,imgs_$_[1]];
+                         /*<<minesweeper.ml 205 6>>*/ img_c_.src=
+                        str_sprites_normal_png_aO_;
+                         /*<<minesweeper.ml 206 6>>*/ img_c_.onclick=
+                         /*<<minesweeper.ml 206 22>>*/ handler_v_
+                         (function(_f_,_b_,img_c_)
+                            { /*<<minesweeper.ml 206 6>>*/ return function(param_a_)
+                              { /*<<minesweeper.ml 208 11>>*/ if(0===mode_I_[1])
+                                {if
+                                  (! /*<<minesweeper.ml 210 27>>*/ caml_check_bound_e_
+                                      ( /*<<minesweeper.ml 210 19>>*/ caml_check_bound_e_
                                          (d_g_[1],_b_)
                                         [_b_+1],
                                        _f_)
                                      [_f_+1]
-                                    [3])
-                                  if
-                                   ( /*<<minesweeper.ml 213 32>>*/ caml_check_bound_e_
-                                       ( /*<<minesweeper.ml 213 24>>*/ caml_check_bound_e_
-                                          (d_g_[1],_b_)
-                                         [_b_+1],
-                                        _f_)
-                                      [_f_+1]
-                                     [1])
-                                   { /*<<minesweeper.ml 214 18>>*/  /*<<minesweeper.ml 214 18>>*/ _aB_
-                                     (d_g_);
-                                     /*<<minesweeper.ml 215 18>>*/  /*<<minesweeper.ml 215 18>>*/ _aC_
-                                     (d_g_);
-                                     /*<<minesweeper.ml 216 18>>*/  /*<<minesweeper.ml 216 18>>*/ caml_js_meth_call_h_
-                                     (window_o_,_b0_,[0,"YOU LOSE"])}
+                                    [2])
+                                  if(d_g_[6])
+                                   { /*<<minesweeper.ml 149 17>>*/ if
+                                     ( /*<<minesweeper.ml 149 13>>*/ caml_check_bound_e_
+                                         ( /*<<minesweeper.ml 149 5>>*/ caml_check_bound_e_
+                                            (d_g_[1],_b_)
+                                           [_b_+1],
+                                          _f_)
+                                        [_f_+1]
+                                       [3])
+                                     { /*<<minesweeper.ml 150 9>>*/ d_g_[4]=d_g_[4]-1|0;
+                                       /*<<minesweeper.ml 151 21>>*/  /*<<minesweeper.ml 151 17>>*/ caml_check_bound_e_
+                                         ( /*<<minesweeper.ml 151 9>>*/ caml_check_bound_e_
+                                            (d_g_[1],_b_)
+                                           [_b_+1],
+                                          _f_)
+                                        [_f_+1]
+                                       [3]=
+                                      0}
+                                    else
+                                     { /*<<minesweeper.ml 152 9>>*/ d_g_[4]=d_g_[4]+1|0;
+                                       /*<<minesweeper.ml 153 21>>*/  /*<<minesweeper.ml 153 17>>*/ caml_check_bound_e_
+                                         ( /*<<minesweeper.ml 153 9>>*/ caml_check_bound_e_
+                                            (d_g_[1],_b_)
+                                           [_b_+1],
+                                          _f_)
+                                        [_f_+1]
+                                       [3]=
+                                      1}
+                                     /*<<minesweeper.ml 154 34>>*/ var
+                                     _l_=
+                                       /*<<minesweeper.ml 154 34>>*/ caml_check_bound_e_
+                                        ( /*<<minesweeper.ml 154 26>>*/ caml_check_bound_e_
+                                           (d_g_[1],_b_)
+                                          [_b_+1],
+                                         _f_)
+                                       [_f_+1];
+                                     /*<<minesweeper.ml 154 25>>*/  /*<<minesweeper.ml 154 25>>*/ _H_
+                                     ( /*<<minesweeper.ml 154 21>>*/ caml_check_bound_e_
+                                        ( /*<<minesweeper.ml 154 12>>*/ caml_check_bound_e_
+                                           (d_g_[2],_f_)
+                                          [_f_+1],
+                                         _b_)
+                                       [_b_+1],
+                                      _l_)}
                                   else
-                                   {var
-                                      /*<<minesweeper.ml 157 2>>*/ reveal_cell_m_=
-                                      function(param_a_)
-                                       {var
-                                          /*<<minesweeper.ml 157 18>>*/ _b_=param_a_[2],
-                                          /*<<minesweeper.ml 157 18>>*/ _c_=param_a_[1];
-                                         /*<<minesweeper.ml 158 16>>*/  /*<<minesweeper.ml 158 12>>*/ caml_check_bound_e_
-                                           ( /*<<minesweeper.ml 158 4>>*/ caml_check_bound_e_
-                                              (d_g_[1],_c_)
+                                   if
+                                    (! /*<<minesweeper.ml 212 32>>*/ caml_check_bound_e_
+                                        ( /*<<minesweeper.ml 212 24>>*/ caml_check_bound_e_
+                                           (d_g_[1],_b_)
+                                          [_b_+1],
+                                         _f_)
+                                       [_f_+1]
+                                      [3])
+                                    if
+                                     ( /*<<minesweeper.ml 213 32>>*/ caml_check_bound_e_
+                                         ( /*<<minesweeper.ml 213 24>>*/ caml_check_bound_e_
+                                            (d_g_[1],_b_)
+                                           [_b_+1],
+                                          _f_)
+                                        [_f_+1]
+                                       [1])
+                                     { /*<<minesweeper.ml 214 18>>*/  /*<<minesweeper.ml 214 18>>*/ _aB_
+                                       (d_g_);
+                                       /*<<minesweeper.ml 215 18>>*/  /*<<minesweeper.ml 215 18>>*/ _aC_
+                                       (d_g_);
+                                       /*<<minesweeper.ml 216 18>>*/  /*<<minesweeper.ml 216 18>>*/ caml_js_meth_call_h_
+                                       (window_o_,_b0_,[0,"YOU LOSE"])}
+                                    else
+                                     {var
+                                        /*<<minesweeper.ml 157 2>>*/ reveal_cell_m_=
+                                        function(param_a_)
+                                         {var
+                                            /*<<minesweeper.ml 157 18>>*/ _b_=param_a_[2],
+                                            /*<<minesweeper.ml 157 18>>*/ _c_=param_a_[1];
+                                           /*<<minesweeper.ml 158 16>>*/  /*<<minesweeper.ml 158 12>>*/ caml_check_bound_e_
+                                             ( /*<<minesweeper.ml 158 4>>*/ caml_check_bound_e_
+                                                (d_g_[1],_c_)
+                                               [_c_+1],
+                                              _b_)
+                                            [_b_+1]
+                                           [2]=
+                                          1;
+                                           /*<<minesweeper.ml 159 36>>*/ var
+                                           _d_=
+                                             /*<<minesweeper.ml 159 36>>*/ caml_check_bound_e_
+                                              ( /*<<minesweeper.ml 159 28>>*/ caml_check_bound_e_
+                                                 (d_g_[1],_c_)
+                                                [_c_+1],
+                                               _b_)
+                                             [_b_+1];
+                                           /*<<minesweeper.ml 159 4>>*/  /*<<minesweeper.ml 159 4>>*/ _H_
+                                           ( /*<<minesweeper.ml 159 23>>*/ caml_check_bound_e_
+                                              ( /*<<minesweeper.ml 159 14>>*/ caml_check_bound_e_
+                                                 (d_g_[2],_b_)
+                                                [_b_+1],
+                                               _c_)
                                              [_c_+1],
-                                            _b_)
-                                          [_b_+1]
-                                         [2]=
-                                        1;
-                                         /*<<minesweeper.ml 159 36>>*/ var
-                                         _d_=
-                                           /*<<minesweeper.ml 159 36>>*/ caml_check_bound_e_
-                                            ( /*<<minesweeper.ml 159 28>>*/ caml_check_bound_e_
-                                               (d_g_[1],_c_)
-                                              [_c_+1],
-                                             _b_)
-                                           [_b_+1];
-                                         /*<<minesweeper.ml 159 4>>*/  /*<<minesweeper.ml 159 4>>*/ _H_
-                                         ( /*<<minesweeper.ml 159 23>>*/ caml_check_bound_e_
-                                            ( /*<<minesweeper.ml 159 14>>*/ caml_check_bound_e_
-                                               (d_g_[2],_b_)
-                                              [_b_+1],
-                                             _c_)
-                                           [_c_+1],
-                                          _d_);
-                                         /*<<minesweeper.ml 159 40>>*/ d_g_[5]=d_g_[5]-1|0;
-                                         /*<<minesweeper.ml 159 40>>*/ return 0 /*<<minesweeper.ml 160 45>>*/ },
-                                      /*<<minesweeper.ml 162 2>>*/ _j_=d_g_[3],
-                                      /*<<minesweeper.ml 162 2>>*/ _n_=d_g_[1],
-                                      /*<<minesweeper.ml 79 16>>*/ visited_i_=
-                                       /*<<minesweeper.ml 79 16>>*/ _am_(_j_[1],_j_[2],0),
-                                      /*<<minesweeper.ml 80 2>>*/ relevant_k_=
-                                      function(param_a_)
-                                       {var param_d_=param_a_;
-                                         /*<<minesweeper.ml 80 21>>*/ for(;;)
-                                         { /*<<minesweeper.ml 80 21>>*/ if(param_d_)
-                                           {var
-                                             _h_=param_d_[2],
-                                             _f_=param_d_[1],
-                                             _b_=_f_[2],
-                                             _c_=_f_[1],
-                                              /*<<minesweeper.ml 83 23>>*/ cell_g_=
-                                               /*<<minesweeper.ml 83 23>>*/ caml_check_bound_e_
-                                                ( /*<<minesweeper.ml 83 17>>*/ caml_check_bound_e_(_n_,_c_)
-                                                  [_c_+1],
-                                                 _b_)
-                                               [_b_+1];
-                                             /*<<minesweeper.ml 84 11>>*/ if(!cell_g_[1])
-                                             if(!cell_g_[3])
-                                              if(!cell_g_[2])
-                                               if
-                                                (! /*<<minesweeper.ml 84 65>>*/ caml_check_bound_e_
-                                                   ( /*<<minesweeper.ml 84 54>>*/ caml_check_bound_e_
-                                                      (visited_i_,_c_)
-                                                     [_c_+1],
-                                                    _b_)
-                                                  [_b_+1])
-                                                {var
-                                                   /*<<minesweeper.ml 86 29>>*/ match_j_=
-                                                    /*<<minesweeper.ml 86 29>>*/ relevant_k_(_h_),
-                                                   /*<<minesweeper.ml 86 39>>*/ _l_=match_j_[2],
-                                                   /*<<minesweeper.ml 86 39>>*/ _m_=match_j_[1];
-                                                  /*<<minesweeper.ml 87 26>>*/  /*<<minesweeper.ml 87 26>>*/ caml_check_bound_e_
-                                                   ( /*<<minesweeper.ml 87 15>>*/ caml_check_bound_e_
-                                                      (visited_i_,_c_)
-                                                     [_c_+1],
-                                                    _b_)
-                                                  [_b_+1]=
-                                                 1;
-                                                  /*<<minesweeper.ml 87 38>>*/ return 0===cell_g_[4]
-                                                         ?[0,_m_,[0,_f_,_l_]]
-                                                         :[0,[0,_f_,_m_],_l_]}
-                                            var param_d_=_h_;
-                                            continue}
-                                           /*<<minesweeper.ml 81 13>>*/ return _bP_} /*<<minesweeper.ml 88 55>>*/ },
-                                      /*<<minesweeper.ml 90 2>>*/ cells_to_see_rec_d_=
-                                      function(param_a_)
-                                       { /*<<minesweeper.ml 90 29>>*/ if(param_a_)
-                                         {var _c_=param_a_[2],_b_=param_a_[1],_f_=_b_[2],_g_=_b_[1];
-                                           /*<<minesweeper.ml 93 21>>*/ if
-                                           (0===
-                                             /*<<minesweeper.ml 93 17>>*/ caml_check_bound_e_
-                                               ( /*<<minesweeper.ml 93 11>>*/ caml_check_bound_e_(_n_,_g_)
-                                                 [_g_+1],
-                                                _f_)
-                                              [_f_+1]
-                                             [4])
-                                           {var
-                                              /*<<minesweeper.ml 94 27>>*/ match_h_=
-                                               /*<<minesweeper.ml 94 27>>*/ relevant_k_
-                                               ( /*<<minesweeper.ml 94 37>>*/ _aA_(_j_,_b_)),
-                                              /*<<minesweeper.ml 94 53>>*/ _i_=match_h_[1];
-                                             /*<<minesweeper.ml 95 54>>*/ return  /*<<minesweeper.ml 95 54>>*/ _Y_
-                                                    ([0,_b_,_i_],
-                                                      /*<<minesweeper.ml 95 29>>*/ cells_to_see_rec_d_
-                                                      ( /*<<minesweeper.ml 95 47>>*/ _Y_(match_h_[2],_c_)))}
-                                           /*<<minesweeper.ml 93 58>>*/ return [0,
-                                                  _b_,
-                                                   /*<<minesweeper.ml 93 40>>*/ cells_to_see_rec_d_(_c_)]}
-                                         /*<<minesweeper.ml 91 12>>*/ return 0 /*<<minesweeper.ml 95 55>>*/ };
-                                     /*<<minesweeper.ml 96 16>>*/  /*<<minesweeper.ml 96 16>>*/ caml_check_bound_e_
-                                      ( /*<<minesweeper.ml 96 5>>*/ caml_check_bound_e_
-                                         (visited_i_,_b_)
+                                            _d_);
+                                           /*<<minesweeper.ml 159 40>>*/ d_g_[5]=d_g_[5]-1|0;
+                                           /*<<minesweeper.ml 159 40>>*/ return 0 /*<<minesweeper.ml 160 45>>*/ },
+                                        /*<<minesweeper.ml 162 2>>*/ _j_=d_g_[3],
+                                        /*<<minesweeper.ml 162 2>>*/ _n_=d_g_[1],
+                                        /*<<minesweeper.ml 79 16>>*/ visited_i_=
+                                         /*<<minesweeper.ml 79 16>>*/ _am_(_j_[1],_j_[2],0),
+                                        /*<<minesweeper.ml 80 2>>*/ relevant_k_=
+                                        function(param_a_)
+                                         {var param_d_=param_a_;
+                                           /*<<minesweeper.ml 80 21>>*/ for(;;)
+                                           { /*<<minesweeper.ml 80 21>>*/ if(param_d_)
+                                             {var
+                                               _h_=param_d_[2],
+                                               _f_=param_d_[1],
+                                               _b_=_f_[2],
+                                               _c_=_f_[1],
+                                                /*<<minesweeper.ml 83 23>>*/ cell_g_=
+                                                 /*<<minesweeper.ml 83 23>>*/ caml_check_bound_e_
+                                                  ( /*<<minesweeper.ml 83 17>>*/ caml_check_bound_e_(_n_,_c_)
+                                                    [_c_+1],
+                                                   _b_)
+                                                 [_b_+1];
+                                               /*<<minesweeper.ml 84 11>>*/ if(!cell_g_[1])
+                                               if(!cell_g_[3])
+                                                if(!cell_g_[2])
+                                                 if
+                                                  (! /*<<minesweeper.ml 84 65>>*/ caml_check_bound_e_
+                                                     ( /*<<minesweeper.ml 84 54>>*/ caml_check_bound_e_
+                                                        (visited_i_,_c_)
+                                                       [_c_+1],
+                                                      _b_)
+                                                    [_b_+1])
+                                                  {var
+                                                     /*<<minesweeper.ml 86 29>>*/ match_j_=
+                                                      /*<<minesweeper.ml 86 29>>*/ relevant_k_(_h_),
+                                                     /*<<minesweeper.ml 86 39>>*/ _l_=match_j_[2],
+                                                     /*<<minesweeper.ml 86 39>>*/ _m_=match_j_[1];
+                                                    /*<<minesweeper.ml 87 26>>*/  /*<<minesweeper.ml 87 26>>*/ caml_check_bound_e_
+                                                     ( /*<<minesweeper.ml 87 15>>*/ caml_check_bound_e_
+                                                        (visited_i_,_c_)
+                                                       [_c_+1],
+                                                      _b_)
+                                                    [_b_+1]=
+                                                   1;
+                                                    /*<<minesweeper.ml 87 38>>*/ return 0===cell_g_[4]
+                                                           ?[0,_m_,[0,_f_,_l_]]
+                                                           :[0,[0,_f_,_m_],_l_]}
+                                              var param_d_=_h_;
+                                              continue}
+                                             /*<<minesweeper.ml 81 13>>*/ return _bP_} /*<<minesweeper.ml 88 55>>*/ },
+                                        /*<<minesweeper.ml 90 2>>*/ cells_to_see_rec_d_=
+                                        function(param_a_)
+                                         { /*<<minesweeper.ml 90 29>>*/ if(param_a_)
+                                           {var _c_=param_a_[2],_b_=param_a_[1],_f_=_b_[2],_g_=_b_[1];
+                                             /*<<minesweeper.ml 93 21>>*/ if
+                                             (0===
+                                               /*<<minesweeper.ml 93 17>>*/ caml_check_bound_e_
+                                                 ( /*<<minesweeper.ml 93 11>>*/ caml_check_bound_e_(_n_,_g_)
+                                                   [_g_+1],
+                                                  _f_)
+                                                [_f_+1]
+                                               [4])
+                                             {var
+                                                /*<<minesweeper.ml 94 27>>*/ match_h_=
+                                                 /*<<minesweeper.ml 94 27>>*/ relevant_k_
+                                                 ( /*<<minesweeper.ml 94 37>>*/ _aA_(_j_,_b_)),
+                                                /*<<minesweeper.ml 94 53>>*/ _i_=match_h_[1];
+                                               /*<<minesweeper.ml 95 54>>*/ return  /*<<minesweeper.ml 95 54>>*/ _Y_
+                                                      ([0,_b_,_i_],
+                                                        /*<<minesweeper.ml 95 29>>*/ cells_to_see_rec_d_
+                                                        ( /*<<minesweeper.ml 95 47>>*/ _Y_(match_h_[2],_c_)))}
+                                             /*<<minesweeper.ml 93 58>>*/ return [0,
+                                                    _b_,
+                                                     /*<<minesweeper.ml 93 40>>*/ cells_to_see_rec_d_(_c_)]}
+                                           /*<<minesweeper.ml 91 12>>*/ return 0 /*<<minesweeper.ml 95 55>>*/ };
+                                       /*<<minesweeper.ml 96 16>>*/  /*<<minesweeper.ml 96 16>>*/ caml_check_bound_e_
+                                        ( /*<<minesweeper.ml 96 5>>*/ caml_check_bound_e_
+                                           (visited_i_,_b_)
+                                          [_b_+1],
+                                         _f_)
+                                       [_f_+1]=
+                                      1;
+                                       /*<<minesweeper.ml 162 2>>*/  /*<<minesweeper.ml 162 2>>*/ _Z_
+                                       (reveal_cell_m_,
+                                         /*<<minesweeper.ml 96 28>>*/ cells_to_see_rec_d_
+                                         ([0,[0,_b_,_f_],0]));
+                                       /*<<minesweeper.ml 162 54>>*/ if(0===d_g_[5])
+                                       { /*<<minesweeper.ml 164 4>>*/  /*<<minesweeper.ml 164 4>>*/ _aB_
+                                         (d_g_);
+                                         /*<<minesweeper.ml 165 4>>*/  /*<<minesweeper.ml 165 4>>*/ _aC_
+                                         (d_g_);
+                                         /*<<minesweeper.ml 166 4>>*/  /*<<minesweeper.ml 166 4>>*/ caml_js_meth_call_h_
+                                         (window_o_,_bX_,[0,"YOU WIN"])}}}
+                               else
+                                { /*<<minesweeper.ml 219 53>>*/ var
+                                  _p_=
+                                   1-
+                                    /*<<minesweeper.ml 219 49>>*/ caml_check_bound_e_
+                                      ( /*<<minesweeper.ml 219 41>>*/ caml_check_bound_e_
+                                         (d_g_[1],_b_)
                                         [_b_+1],
                                        _f_)
-                                     [_f_+1]=
-                                    1;
-                                     /*<<minesweeper.ml 162 2>>*/  /*<<minesweeper.ml 162 2>>*/ _Z_
-                                     (reveal_cell_m_,
-                                       /*<<minesweeper.ml 96 28>>*/ cells_to_see_rec_d_
-                                       ([0,[0,_b_,_f_],0]));
-                                     /*<<minesweeper.ml 162 54>>*/ if(0===d_g_[5])
-                                     { /*<<minesweeper.ml 164 4>>*/  /*<<minesweeper.ml 164 4>>*/ _aB_
-                                       (d_g_);
-                                       /*<<minesweeper.ml 165 4>>*/  /*<<minesweeper.ml 165 4>>*/ _aC_
-                                       (d_g_);
-                                       /*<<minesweeper.ml 166 4>>*/  /*<<minesweeper.ml 166 4>>*/ caml_js_meth_call_h_
-                                       (window_o_,_bX_,[0,"YOU WIN"])}}}
-                             else
-                              { /*<<minesweeper.ml 219 53>>*/ var
-                                _p_=
-                                 1-
-                                  /*<<minesweeper.ml 219 49>>*/ caml_check_bound_e_
-                                    ( /*<<minesweeper.ml 219 41>>*/ caml_check_bound_e_
+                                     [_f_+1]
+                                    [3];
+                                  /*<<minesweeper.ml 219 28>>*/  /*<<minesweeper.ml 219 24>>*/ caml_check_bound_e_
+                                    ( /*<<minesweeper.ml 219 16>>*/ caml_check_bound_e_
                                        (d_g_[1],_b_)
                                       [_b_+1],
                                      _f_)
                                    [_f_+1]
-                                  [3];
-                                /*<<minesweeper.ml 219 28>>*/  /*<<minesweeper.ml 219 24>>*/ caml_check_bound_e_
-                                  ( /*<<minesweeper.ml 219 16>>*/ caml_check_bound_e_
-                                     (d_g_[1],_b_)
-                                    [_b_+1],
-                                   _f_)
-                                 [_f_+1]
-                                [3]=
-                               _p_;
-                                /*<<minesweeper.ml 220 16>>*/  /*<<minesweeper.ml 220 16>>*/ _H_
-                                (img_c_,
-                                  /*<<minesweeper.ml 220 38>>*/ caml_check_bound_e_
-                                   ( /*<<minesweeper.ml 220 30>>*/ caml_check_bound_e_
-                                      (d_g_[1],_b_)
-                                     [_b_+1],
-                                    _f_)
-                                  [_f_+1])}
-                              /*<<minesweeper.ml 221 10>>*/ return false_u_ /*<<minesweeper.ml 221 19>>*/ }}
-                         (_f_,_b_,img_c_));
-                       /*<<minesweeper.ml 222 6>>*/  /*<<minesweeper.ml 222 6>>*/ _j_
-                       (buf_s_,img_c_);
-                       /*<<minesweeper.ml 222 29>>*/ var _a6_=_b_+1|0;
-                      if(_aD_!==_b_){var _b_=_a6_;continue}
-                      break}}
-                   /*<<minesweeper.ml 224 4>>*/  /*<<minesweeper.ml 224 4>>*/ _j_
-                   (buf_s_,
-                     /*<<minesweeper.ml 224 25>>*/ createBr_z_(x26523dec_w_));
-                   /*<<minesweeper.ml 225 32>>*/ var
-                   l_J_=
-                     /*<<minesweeper.ml 225 32>>*/ _ao_(imgs_$_[1]);
-                   /*<<array.ml 109 14>>*/ if(l_J_)
-                   {var _M_=0,_L_=l_J_,_aI_=l_J_[2],_aJ_=l_J_[1];
-                    for(;;)
-                     {if(_L_){var _M_=_M_+1|0,_L_=_L_[2];continue}
-                      var
-                        /*<<array.ml 112 38>>*/ a_ab_=
-                         /*<<array.ml 112 38>>*/ caml_make_vect_R_(_M_,_aJ_),
-                       _N_=1,
-                       _B_=_aI_;
+                                  [3]=
+                                 _p_;
+                                  /*<<minesweeper.ml 220 16>>*/  /*<<minesweeper.ml 220 16>>*/ _H_
+                                  (img_c_,
+                                    /*<<minesweeper.ml 220 38>>*/ caml_check_bound_e_
+                                     ( /*<<minesweeper.ml 220 30>>*/ caml_check_bound_e_
+                                        (d_g_[1],_b_)
+                                       [_b_+1],
+                                      _f_)
+                                    [_f_+1])}
+                                /*<<minesweeper.ml 221 10>>*/ return false_u_ /*<<minesweeper.ml 221 19>>*/ }}
+                           (_f_,_b_,img_c_));
+                         /*<<minesweeper.ml 222 6>>*/  /*<<minesweeper.ml 222 6>>*/ _j_
+                         (buf_s_,img_c_);
+                         /*<<minesweeper.ml 222 29>>*/ var _a5_=_b_+1|0;
+                        if(_aD_!==_b_){var _b_=_a5_;continue}
+                        break}}
+                     /*<<minesweeper.ml 224 4>>*/  /*<<minesweeper.ml 224 4>>*/ _j_
+                     (buf_s_,
+                       /*<<minesweeper.ml 224 25>>*/ createBr_z_(x26523dec_w_));
+                     /*<<minesweeper.ml 225 32>>*/ var
+                     l_J_=
+                       /*<<minesweeper.ml 225 32>>*/ _ao_(imgs_$_[1]);
+                     /*<<array.ml 109 14>>*/ if(l_J_)
+                     {var _M_=0,_L_=l_J_,_aI_=l_J_[2],_aJ_=l_J_[1];
                       for(;;)
-                       {if(_B_)
-                         {var _aK_=_B_[2];
-                           /*<<array.ml 115 39>>*/ a_ab_[_N_+1]=_B_[1];
-                          var _N_=_N_+1|0,_B_=_aK_;
-                          continue}
-                        var _aE_=a_ab_;
-                        break}
-                      break}}
-                  else
-                   var _aE_=[0];
-                   /*<<minesweeper.ml 225 4>>*/  /*<<minesweeper.ml 225 4>>*/ caml_check_bound_e_
-                    (d_g_[2],_f_)
-                   [_f_+1]=
-                  _aE_;
-                   /*<<minesweeper.ml 225 47>>*/ var _a5_=_f_+1|0;
-                  if(_aw_!==_f_){var _f_=_a5_;continue}
-                  break}}
-               /*<<minesweeper.ml 227 2>>*/ div_V_.style.lineHeight="0";
-               /*<<minesweeper.ml 228 2>>*/  /*<<minesweeper.ml 228 2>>*/ _j_
-               (div_V_,buf_s_);
-               /*<<main.ml 56 44>>*/ return false_u_}} /*<<main.ml 57 19>>*/ }
+                       {if(_L_){var _M_=_M_+1|0,_L_=_L_[2];continue}
+                        var
+                          /*<<array.ml 112 38>>*/ a_ab_=
+                           /*<<array.ml 112 38>>*/ caml_make_vect_R_(_M_,_aJ_),
+                         _N_=1,
+                         _B_=_aI_;
+                        for(;;)
+                         {if(_B_)
+                           {var _aK_=_B_[2];
+                             /*<<array.ml 115 39>>*/ a_ab_[_N_+1]=_B_[1];
+                            var _N_=_N_+1|0,_B_=_aK_;
+                            continue}
+                          var _aE_=a_ab_;
+                          break}
+                        break}}
+                    else
+                     var _aE_=[0];
+                     /*<<minesweeper.ml 225 4>>*/  /*<<minesweeper.ml 225 4>>*/ caml_check_bound_e_
+                      (d_g_[2],_f_)
+                     [_f_+1]=
+                    _aE_;
+                     /*<<minesweeper.ml 225 47>>*/ var _a4_=_f_+1|0;
+                    if(_aw_!==_f_){var _f_=_a4_;continue}
+                    break}}
+                 /*<<minesweeper.ml 227 2>>*/ div_V_.style.lineHeight="0";
+                 /*<<minesweeper.ml 228 2>>*/  /*<<minesweeper.ml 228 2>>*/ _j_
+                 (div_V_,buf_s_);
+                 /*<<main.ml 56 44>>*/ return false_u_}}} /*<<main.ml 57 19>>*/ }
         var
           /*<<main.ml 32 12>>*/ res_c_=
            /*<<main.ml 32 12>>*/ caml_js_meth_call_h_(doc_n_,_b3_,[0]),
