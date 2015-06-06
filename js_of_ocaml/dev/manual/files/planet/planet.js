@@ -5939,11 +5939,7 @@
        /*<<src/core/lwt_sequence.ml 64 2>>*/ return seq_b_ /*<<src/core/lwt_sequence.ml 64 5>>*/ }
     var
      Canceled_bx_=caml_set_oo_id_W_([num_248_c_,_gg_,0]),
-     current_data_ah_=
-      [0,
-       _eu_
-         ([0,function(_a_,_b_){ /*<<?>>*/ return caml_compare_ih_(_a_,_b_)}])
-        [1]];
+     current_data_ah_=[0,_eu_([0,caml_compare_ih_])[1]];
     function repr_rec_by_(t_a_)
      { /*<<src/core/lwt.ml 174 2>>*/ var _c_=t_a_[1];
        /*<<src/core/lwt.ml 174 2>>*/ if(3===_c_[0])

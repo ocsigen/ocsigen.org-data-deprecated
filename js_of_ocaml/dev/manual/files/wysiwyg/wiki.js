@@ -6005,8 +6005,7 @@
                        { /*<<main.ml 67 47>>*/ throw [0,_o_,_gJ_] /*<<main.ml 67 47>>*/ }),
                     /*<<main.ml 69 3>>*/ _m_=
                     function(s_a_)
-                     { /*<<main.ml 72 7>>*/ function _h_(_a_)
-                       { /*<<?>>*/ return caml_js_to_string_Y_(_a_)}
+                     { /*<<main.ml 72 7>>*/ var _h_=caml_js_to_string_Y_;
                        /*<<main.ml 72 7>>*/ function _i_(param_a_)
                        { /*<<main.ml 72 88>>*/ throw [0,_o_,_gK_] /*<<main.ml 72 88>>*/ }
                       var
@@ -6151,8 +6150,7 @@
            /*<<main.ml 139 12>>*/  /*<<main.ml 139 12>>*/ createButton_a_
            (0,_hn_,_hm_,_hl_);
            /*<<main.ml 141 4>>*/ function prompt_j_(query_a_,default_b_)
-           { /*<<main.ml 142 6>>*/ function _c_(_a_)
-             { /*<<?>>*/ return caml_js_to_string_Y_(_a_)}
+           { /*<<main.ml 142 6>>*/ var _c_=caml_js_to_string_Y_;
              /*<<main.ml 142 6>>*/ function _d_(param_a_)
              { /*<<main.ml 143 19>>*/ return  /*<<main.ml 143 19>>*/ default_b_.toString
                       () /*<<main.ml 143 36>>*/ }
