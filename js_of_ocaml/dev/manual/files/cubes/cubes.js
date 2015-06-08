@@ -5925,9 +5925,9 @@
      { /*<<js.ml 92 40>>*/ return 1-(x_a_==no_handler_fU_?1:0) /*<<js.ml 92 41>>*/ }
     var
       /*<<js.ml 242 24>>*/ xbcb1e9dd_fX_=window_Z_.Array,
-      /*<<js.ml 352 11>>*/ Error_cj_=
-       /*<<js.ml 352 11>>*/ caml_set_oo_id_T_([num_248_a_,_fY_,0]),
-      /*<<js.ml 364 69>>*/ exn_bg_=[0,Error_cj_,{}],
+      /*<<js.ml 381 11>>*/ Error_cj_=
+       /*<<js.ml 381 11>>*/ caml_set_oo_id_T_([num_248_a_,_fY_,0]),
+      /*<<js.ml 393 69>>*/ exn_bg_=[0,Error_cj_,{}],
       /*<<js.ml 140 13>>*/ false_fW_=false,
       /*<<callback.ml 24 27>>*/ exn_fD_=
        /*<<callback.ml 24 16>>*/ caml_obj_tag_aX_(exn_bg_)===num_248_a_
@@ -5935,22 +5935,22 @@
        :exn_bg_[1];
      /*<<callback.ml 25 2>>*/  /*<<callback.ml 25 2>>*/ caml_register_named_value_hA_
      (caml_new_string_d_(str_jsError_cJ_),exn_fD_);
-     /*<<js.ml 415 2>>*/  /*<<js.ml 415 2>>*/ register_printer_b8_
+     /*<<js.ml 444 2>>*/  /*<<js.ml 444 2>>*/ register_printer_b8_
      (function(param_a_)
-       { /*<<js.ml 416 5>>*/ return param_a_[1]===Error_cj_
+       { /*<<js.ml 445 5>>*/ return param_a_[1]===Error_cj_
                 ?[0,
-                   /*<<js.ml 416 31>>*/ caml_js_to_string_bA_
-                   ( /*<<js.ml 416 42>>*/ caml_js_meth_call_f_
+                   /*<<js.ml 445 31>>*/ caml_js_to_string_bA_
+                   ( /*<<js.ml 445 42>>*/ caml_js_meth_call_f_
                      (param_a_[2],_fZ_,[0]))]
-                :0 /*<<js.ml 416 70>>*/ });
-     /*<<js.ml 418 2>>*/  /*<<js.ml 418 2>>*/ register_printer_b8_
+                :0 /*<<js.ml 445 70>>*/ });
+     /*<<js.ml 447 2>>*/  /*<<js.ml 447 2>>*/ register_printer_b8_
      (function(xa78544e1_a_)
-       { /*<<js.ml 420 40>>*/ return xa78544e1_a_ instanceof xbcb1e9dd_fX_
+       { /*<<js.ml 449 40>>*/ return xa78544e1_a_ instanceof xbcb1e9dd_fX_
                 ?0
                 :[0,
-                   /*<<js.ml 421 18>>*/ caml_js_to_string_bA_
-                   ( /*<<js.ml 421 29>>*/ caml_js_meth_call_f_
-                     (xa78544e1_a_,_f0_,[0]))] /*<<js.ml 421 56>>*/ });
+                   /*<<js.ml 450 18>>*/ caml_js_to_string_bA_
+                   ( /*<<js.ml 450 29>>*/ caml_js_meth_call_f_
+                     (xa78544e1_a_,_f0_,[0]))] /*<<js.ml 450 56>>*/ });
     var
       /*<<dom_html.ml 888 11>>*/ d_ck_="2d",
       /*<<dom_html.ml 1231 15>>*/ Canvas_not_available_f5_=

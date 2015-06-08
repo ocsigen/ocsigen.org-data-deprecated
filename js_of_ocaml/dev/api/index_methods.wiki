@@ -73,6 +73,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="_DST_ALPHA_"| method WebGL.renderingContext#_DST_ALPHA_ >> ~[<<a_api | module WebGL >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="_DST_COLOR_"| method WebGL.renderingContext#_DST_COLOR_ >> ~[<<a_api | module WebGL >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="_DYNAMIC_DRAW_"| method WebGL.renderingContext#_DYNAMIC_DRAW_ >> ~[<<a_api | module WebGL >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="_E"| method Js.math#_E >> ~[<<a_api | module Js >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="_ELEMENT_ARRAY_BUFFER_"| method WebGL.renderingContext#_ELEMENT_ARRAY_BUFFER_ >> ~[<<a_api | module WebGL >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="_ELEMENT_ARRAY_BUFFER_BINDING_"| method WebGL.renderingContext#_ELEMENT_ARRAY_BUFFER_BINDING_ >> ~[<<a_api | module WebGL >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="_EQUAL"| method WebGL.renderingContext#_EQUAL >> ~[<<a_api | module WebGL >>~]||
@@ -135,6 +136,10 @@
 |@@class="odocwiki_index"@ @@<<a_api text="_LINE_STRIP_"| method WebGL.renderingContext#_LINE_STRIP_ >> ~[<<a_api | module WebGL >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="_LINE_WIDTH_"| method WebGL.renderingContext#_LINE_WIDTH_ >> ~[<<a_api | module WebGL >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="_LINK_STATUS_"| method WebGL.renderingContext#_LINK_STATUS_ >> ~[<<a_api | module WebGL >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="_LN10"| method Js.math#_LN10 >> ~[<<a_api | module Js >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="_LN2"| method Js.math#_LN2 >> ~[<<a_api | module Js >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="_LOG10E"| method Js.math#_LOG10E >> ~[<<a_api | module Js >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="_LOG2E"| method Js.math#_LOG2E >> ~[<<a_api | module Js >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="_LOW_FLOAT_"| method WebGL.renderingContext#_LOW_FLOAT_ >> ~[<<a_api | module WebGL >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="_LOW_INT_"| method WebGL.renderingContext#_LOW_INT_ >> ~[<<a_api | module WebGL >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="_LUMINANCE"| method WebGL.renderingContext#_LUMINANCE >> ~[<<a_api | module WebGL >>~]||
@@ -172,6 +177,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="_ONE_MINUS_SRC_COLOR_"| method WebGL.renderingContext#_ONE_MINUS_SRC_COLOR_ >> ~[<<a_api | module WebGL >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="_OUT_OF_MEMORY_"| method WebGL.renderingContext#_OUT_OF_MEMORY_ >> ~[<<a_api | module WebGL >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="_PACK_ALIGNMENT_"| method WebGL.renderingContext#_PACK_ALIGNMENT_ >> ~[<<a_api | module WebGL >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="_PI"| method Js.math#_PI >> ~[<<a_api | module Js >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="_POINTS"| method WebGL.renderingContext#_POINTS >> ~[<<a_api | module WebGL >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="_POLYGON_OFFSET_FACTOR_"| method WebGL.renderingContext#_POLYGON_OFFSET_FACTOR_ >> ~[<<a_api | module WebGL >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="_POLYGON_OFFSET_FILL_"| method WebGL.renderingContext#_POLYGON_OFFSET_FILL_ >> ~[<<a_api | module WebGL >>~]||
@@ -212,6 +218,8 @@
 |@@class="odocwiki_index"@ @@<<a_api text="_SHADER_TYPE_"| method WebGL.renderingContext#_SHADER_TYPE_ >> ~[<<a_api | module WebGL >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="_SHADING_LANGUAGE_VERSION_"| method WebGL.renderingContext#_SHADING_LANGUAGE_VERSION_ >> ~[<<a_api | module WebGL >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="_SHORT"| method WebGL.renderingContext#_SHORT >> ~[<<a_api | module WebGL >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="_SQRT1_2_"| method Js.math#_SQRT1_2_ >> ~[<<a_api | module Js >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="_SQRT2"| method Js.math#_SQRT2 >> ~[<<a_api | module Js >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="_SRC_ALPHA_"| method WebGL.renderingContext#_SRC_ALPHA_ >> ~[<<a_api | module WebGL >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="_SRC_ALPHA_SATURATE_"| method WebGL.renderingContext#_SRC_ALPHA_SATURATE_ >> ~[<<a_api | module WebGL >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="_SRC_COLOR_"| method WebGL.renderingContext#_SRC_COLOR_ >> ~[<<a_api | module WebGL >>~]||
@@ -354,6 +362,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="abort"| method XmlHttpRequest.xmlHttpRequest#abort >> ~[<<a_api | module XmlHttpRequest >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="abort"| method File.fileReader#abort >> ~[<<a_api | module File >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="abort"| method Dom_html.applicationCache#abort >> ~[<<a_api | module Dom_html >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="abs"| method Js.math#abs >> ~[<<a_api | module Js >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="accept"| method Dom_html.inputElement#accept >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="acceptCharset"| method Dom_html.formElement#acceptCharset >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="accessKey"| method Dom_html.areaElement#accessKey >> ~[<<a_api | module Dom_html >>~]||
@@ -363,6 +372,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="accessKey"| method Dom_html.buttonElement#accessKey >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="accessKey"| method Dom_html.textAreaElement#accessKey >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="accessKey"| method Dom_html.inputElement#accessKey >> ~[<<a_api | module Dom_html >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="acos"| method Js.math#acos >> ~[<<a_api | module Js >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="action"| method Dom_html.formElement#action >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="activeTexture"| method WebGL.renderingContext#activeTexture >> ~[<<a_api | module WebGL >>~]|<<div class="odocwiki_info"|~5~.~1~3~.~3 ~Setting and getting state
 >>
@@ -414,6 +424,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="arcTo"| method Dom_html.canvasRenderingContext2D#arcTo >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="archive"| method Dom_html.objectElement#archive >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="areas"| method Dom_html.mapElement#areas >> ~[<<a_api | module Dom_html >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="asin"| method Js.math#asin >> ~[<<a_api | module Js >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="assert_"| method Firebug.console#assert_ >> ~[<<a_api | module Firebug >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="assert_1"| method Firebug.console#assert_1 >> ~[<<a_api | module Firebug >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="assert_2"| method Firebug.console#assert_2 >> ~[<<a_api | module Firebug >>~]||
@@ -422,6 +433,8 @@
 |@@class="odocwiki_index"@ @@<<a_api text="assert_5"| method Firebug.console#assert_5 >> ~[<<a_api | module Firebug >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="assign"| method Dom_html.location#assign >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="async"| method Dom_html.scriptElement#async >> ~[<<a_api | module Dom_html >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="atan"| method Js.math#atan >> ~[<<a_api | module Js >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="atan2"| method Js.math#atan2 >> ~[<<a_api | module Js >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="attachShader"| method WebGL.renderingContext#attachShader >> ~[<<a_api | module WebGL >>~]|<<div class="odocwiki_info"|~5~.~1~3~.~9 ~Programs and ~Shaders
 >>
 |
@@ -520,6 +533,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="canvas"| method Dom_html.canvasRenderingContext2D#canvas >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="caption"| method Dom_html.tableElement#caption >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="captionSide"| method Dom_html.cssStyleDeclaration#captionSide >> ~[<<a_api | module Dom_html >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="ceil"| method Js.math#ceil >> ~[<<a_api | module Js >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="cellIndex"| method Dom_html.tableCellElement#cellIndex >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="cellPadding"| method Dom_html.tableElement#cellPadding >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="cellSpacing"| method Dom_html.tableElement#cellSpacing >> ~[<<a_api | module Dom_html >>~]||
@@ -638,6 +652,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="copyTexSubImage2D"| method WebGL.renderingContext#copyTexSubImage2D >> ~[<<a_api | module WebGL >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="correspondingElement"| method Dom_svg.elementInstance#correspondingElement >> ~[<<a_api | module Dom_svg >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="correspondingUseElement"| method Dom_svg.elementInstance#correspondingUseElement >> ~[<<a_api | module Dom_svg >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="cos"| method Js.math#cos >> ~[<<a_api | module Js >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="counterIncrement"| method Dom_html.cssStyleDeclaration#counterIncrement >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="counterReset"| method Dom_html.cssStyleDeclaration#counterReset >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="createAttribute"| method Dom.document#createAttribute >> ~[<<a_api | module Dom >>~]||
@@ -817,6 +832,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="every"| method Js.js_array#every >> ~[<<a_api | module Js >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="exec"| method Js.regExp#exec >> ~[<<a_api | module Js >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="execCommand"| method Dom_html.document#execCommand >> ~[<<a_api | module Dom_html >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="exp"| method Js.math#exp >> ~[<<a_api | module Js >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="extend"| method Dom_html.selection#extend >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="extensions"| method WebSockets.webSocket#extensions >> ~[<<a_api | module WebSockets >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="externalResourcesRequired"| method Dom_svg.externalResourcesRequired#externalResourcesRequired >> ~[<<a_api | module Dom_svg >>~]||
@@ -843,6 +859,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="firstChild"| method Dom.node#firstChild >> ~[<<a_api | module Dom >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="flipX"| method Dom_svg.matrix#flipX >> ~[<<a_api | module Dom_svg >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="flipY"| method Dom_svg.matrix#flipY >> ~[<<a_api | module Dom_svg >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="floor"| method Js.math#floor >> ~[<<a_api | module Js >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="flush"| method WebGL.renderingContext#flush >> ~[<<a_api | module WebGL >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="focus"| method Dom_html.window#focus >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="focus"| method Dom_html.anchorElement#focus >> ~[<<a_api | module Dom_html >>~]||
@@ -1156,6 +1173,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="localStorage"| method Dom_html.window#localStorage >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="localeCompare"| method Js.js_string#localeCompare >> ~[<<a_api | module Js >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="location"| method Dom_html.window#location >> ~[<<a_api | module Dom_html >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="log"| method Js.math#log >> ~[<<a_api | module Js >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="log"| method Firebug.console#log >> ~[<<a_api | module Firebug >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="log_2"| method Firebug.console#log_2 >> ~[<<a_api | module Firebug >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="log_3"| method Firebug.console#log_3 >> ~[<<a_api | module Firebug >>~]||
@@ -1182,9 +1200,12 @@
 |@@class="odocwiki_index"@ @@<<a_api text="marginWidth"| method Dom_html.frameElement#marginWidth >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="matrix"| method Dom_svg.transform#matrix >> ~[<<a_api | module Dom_svg >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="matrixTransform"| method Dom_svg.point#matrixTransform >> ~[<<a_api | module Dom_svg >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="max"| method Js.math#max >> ~[<<a_api | module Js >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="maxHeight"| method Dom_html.cssStyleDeclaration#maxHeight >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="maxLength"| method Dom_html.inputElement#maxLength >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="maxWidth"| method Dom_html.cssStyleDeclaration#maxWidth >> ~[<<a_api | module Dom_html >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="max_3"| method Js.math#max_3 >> ~[<<a_api | module Js >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="max_4"| method Js.math#max_4 >> ~[<<a_api | module Js >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="measureText"| method Dom_html.canvasRenderingContext2D#measureText >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="media"| method Dom_svg.styleElement#media >> ~[<<a_api | module Dom_svg >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="media"| method Dom_html.styleElement#media >> ~[<<a_api | module Dom_html >>~]||
@@ -1196,8 +1217,11 @@
 |@@class="odocwiki_index"@ @@<<a_api text="metaKey"| method Dom_html.keyboardEvent#metaKey >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="metaKey"| method Dom_html.mouseEvent#metaKey >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="method_"| method Dom_svg.textPathElement#method_ >> ~[<<a_api | module Dom_svg >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="min"| method Js.math#min >> ~[<<a_api | module Js >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="minHeight"| method Dom_html.cssStyleDeclaration#minHeight >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="minWidth"| method Dom_html.cssStyleDeclaration#minWidth >> ~[<<a_api | module Dom_html >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="min_3"| method Js.math#min_3 >> ~[<<a_api | module Js >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="min_4"| method Js.math#min_4 >> ~[<<a_api | module Js >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="miterLimit"| method Dom_html.canvasRenderingContext2D#miterLimit >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="modify"| method Dom_html.selection#modify >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="moveTo"| method Dom_html.canvasRenderingContext2D#moveTo >> ~[<<a_api | module Dom_html >>~]||
@@ -1386,6 +1410,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="pop"| method Js.js_array#pop >> ~[<<a_api | module Js >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="port"| method Dom_html.location#port >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="position"| method Dom_html.cssStyleDeclaration#position >> ~[<<a_api | module Dom_html >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="pow"| method Js.math#pow >> ~[<<a_api | module Js >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="precision"| method WebGL.shaderPrecisionFormat#precision >> ~[<<a_api | module WebGL >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="preferLowPowerToHighPerformance"| method WebGL.contextAttributes#preferLowPowerToHighPerformance >> ~[<<a_api | module WebGL >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="preload"| method Dom_html.mediaElement#preload >> ~[<<a_api | module Dom_html >>~]||
@@ -1492,6 +1517,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="rotate"| method Dom_svg.matrix#rotate >> ~[<<a_api | module Dom_svg >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="rotate"| method Dom_html.canvasRenderingContext2D#rotate >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="rotateFromVector"| method Dom_svg.matrix#rotateFromVector >> ~[<<a_api | module Dom_svg >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="round"| method Js.math#round >> ~[<<a_api | module Js >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="rowIndex"| method Dom_html.tableRowElement#rowIndex >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="rowSpan"| method Dom_html.tableCellElement#rowSpan >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="rows"| method Dom_html.frameSetElement#rows >> ~[<<a_api | module Dom_html >>~]||
@@ -1623,6 +1649,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="shiftKey"| method Dom_html.touchEvent#shiftKey >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="shiftKey"| method Dom_html.keyboardEvent#shiftKey >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="shiftKey"| method Dom_html.mouseEvent#shiftKey >> ~[<<a_api | module Dom_html >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="sin"| method Js.math#sin >> ~[<<a_api | module Js >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="size"| method WebGL.activeInfo#size >> ~[<<a_api | module WebGL >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="size"| method File.blob#size >> ~[<<a_api | module File >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="size"| method Dom_html.inputElement#size >> ~[<<a_api | module Dom_html >>~]||
@@ -1652,6 +1679,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="split_regExp"| method Js.js_string#split_regExp >> ~[<<a_api | module Js >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="split_regExpLimited"| method Js.js_string#split_regExpLimited >> ~[<<a_api | module Js >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="spreadMethod"| method Dom_svg.gradientElement#spreadMethod >> ~[<<a_api | module Dom_svg >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="sqrt"| method Js.math#sqrt >> ~[<<a_api | module Js >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="src"| method Dom_html.iFrameElement#src >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="src"| method Dom_html.frameElement#src >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="src"| method Dom_html.mediaElement#src >> ~[<<a_api | module Dom_html >>~]||
@@ -1719,6 +1747,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="tabIndex"| method Dom_html.selectElement#tabIndex >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="tableLayout"| method Dom_html.cssStyleDeclaration#tableLayout >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="tagName"| method Dom.element#tagName >> ~[<<a_api | module Dom >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="tan"| method Js.math#tan >> ~[<<a_api | module Js >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="target"| method Dom_svg.aElement#target >> ~[<<a_api | module Dom_svg >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="target"| method Dom_html.areaElement#target >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="target"| method Dom_html.anchorElement#target >> ~[<<a_api | module Dom_html >>~]||
