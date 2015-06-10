@@ -1269,7 +1269,10 @@
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="set"| value Dom_svg.CoerceTo.set >> ~[<<a_api | module Dom_svg.CoerceTo >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="setTimeout"| value Dom_html.setTimeout >> ~[<<a_api | module Dom_html >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="setTimeout"| value Dom_html.setTimeout >> ~[<<a_api | module Dom_html >>~]|<<div class="odocwiki_info"|~Same as <<span class="odocwiki_inlinecode"|~Dom~_html~.window~#~#set~Timeout~(cb~,ms~)>> but prevents overflow
+    with delay greater than ~2~4 days~.
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api text="set_channel_flusher"| value Sys_js.set_channel_flusher >> ~[<<a_api | module Sys_js >>~]|<<div class="odocwiki_info"|~Set a callback to be called when an out~_channel flush its buffer~.
 >>
 |

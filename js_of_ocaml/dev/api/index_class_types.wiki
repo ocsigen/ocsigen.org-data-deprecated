@@ -158,7 +158,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="imageElement"| class type Dom_html.imageElement >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="inputElement"| class type Dom_html.inputElement >> ~[<<a_api | module Dom_html >>~]||
 |@@ @style="tet-align: left;"@@\\J|
-|@@class="odocwiki_index"@ @@<<a_api text="js_array"| class type Js.js_array >> ~[<<a_api | module Js >>~]|<<div class="odocwiki_info"|use <<span class="odocwiki_inlinecode"|~Js~.array~_get>> and <<span class="odocwiki_inlinecode"|~Js~.array~_set>> to access and set array elements~.
+|@@class="odocwiki_index"@ @@<<a_api text="js_array"| class type Js.js_array >> ~[<<a_api | module Js >>~]|<<div class="odocwiki_info"|~Specification of ~Javascript regular arrays~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="js_string"| class type Js.js_string >> ~[<<a_api | module Js >>~]|<<div class="odocwiki_info"|~Specification of ~Javascript string objects~.
@@ -211,7 +211,9 @@
 |@@class="odocwiki_index"@ @@<<a_api text="navigator"| class type Dom_html.navigator >> ~[<<a_api | module Dom_html >>~]|<<div class="odocwiki_info"|~Navigator information
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api text="node"| class type Dom.node >> ~[<<a_api | module Dom >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="node"| class type Dom.node >> ~[<<a_api | module Dom >>~]|<<div class="odocwiki_info"|~Specification of <<span class="odocwiki_inlinecode"|~Node>> objects~.
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api text="nodeList"| class type Dom.nodeList >> ~[<<a_api | module Dom >>~]|<<div class="odocwiki_info"|~Specification of <<span class="odocwiki_inlinecode"|~Node~List>> objects~.
 >>
 |

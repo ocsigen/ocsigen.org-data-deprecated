@@ -28,9 +28,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="Deriving_Json_lexer"| module Deriving_Json_lexer >> |<<div class="odocwiki_info"|~Create a fresh lexbuf record~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api text="DocumentPosition"| module Dom.DocumentPosition >> ~[<<a_api | module Dom >>~]|<<div class="odocwiki_info"|~Specification of <<span class="odocwiki_inlinecode"|~Node>> objects~.
->>
-|
+|@@class="odocwiki_index"@ @@<<a_api text="DocumentPosition"| module Dom.DocumentPosition >> ~[<<a_api | module Dom >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="Dom"| module Dom >> |<<div class="odocwiki_info"|~D~O~M binding
 >>
 |
