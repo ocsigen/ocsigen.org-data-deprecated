@@ -1344,10 +1344,10 @@
        [ /*<<stdlib.js 81 20>>*/ caml_bytes_of_string_b$_(nm_a_)]=
       v_b_;
        /*<<stdlib.js 82 2>>*/ return 0 /*<<stdlib.js 83 0>>*/ }
-     /*<<stdlib.js 1006 20>>*/ var caml_oo_last_id_cr_=0;
-     /*<<stdlib.js 1007 0>>*/ function caml_set_oo_id_w_(b_a_)
+     /*<<stdlib.js 1016 20>>*/ var caml_oo_last_id_cr_=0;
+     /*<<stdlib.js 1017 0>>*/ function caml_set_oo_id_w_(b_a_)
      {b_a_[2]=caml_oo_last_id_cr_++;
-       /*<<stdlib.js 1009 2>>*/ return b_a_ /*<<stdlib.js 1010 0>>*/ }
+       /*<<stdlib.js 1019 2>>*/ return b_a_ /*<<stdlib.js 1020 0>>*/ }
      /*<<mlString.js 222 0>>*/ function caml_string_bound_error_cy_()
      { /*<<mlString.js 223 2>>*/ caml_invalid_argument_C_
        (str_index_out_of_bounds_a5_) /*<<mlString.js 224 0>>*/ }
@@ -1356,8 +1356,8 @@
         /*<<mlString.js 229 22>>*/ caml_string_bound_error_cy_();
        /*<<mlString.js 230 2>>*/ return  /*<<mlString.js 230 9>>*/ caml_string_unsafe_get_x_
               (s_a_,i_b_) /*<<mlString.js 231 0>>*/ }
-     /*<<stdlib.js 847 0>>*/ function caml_sys_const_word_size_cA_()
-     { /*<<stdlib.js 847 39>>*/ return 32 /*<<stdlib.js 847 50>>*/ }
+     /*<<stdlib.js 857 0>>*/ function caml_sys_const_word_size_cA_()
+     { /*<<stdlib.js 857 39>>*/ return 32 /*<<stdlib.js 857 50>>*/ }
      /*<<stdlib.js 829 22>>*/ var
      caml_initial_time_cf_=
       new Date()*num_0_001_aG_;
