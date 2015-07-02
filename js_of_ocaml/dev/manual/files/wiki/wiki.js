@@ -344,11 +344,10 @@
      {this.t=tag_a_;
       this.c=contents_b_;
       this.l=length_c_ /*<<mlString.js 244 0>>*/ }
-    MlString_M_.prototype=
-    {toString:
-     function()
-      { /*<<mlString.js 245 43>>*/ return  /*<<mlString.js 245 50>>*/ caml_to_js_string_h$_
-               (this) /*<<mlString.js 245 32>>*/ }};
+    MlString_M_.prototype.toString=
+    function()
+     { /*<<mlString.js 245 41>>*/ return  /*<<mlString.js 245 48>>*/ caml_to_js_string_h$_
+              (this) /*<<mlString.js 245 30>>*/ };
      /*<<mlString.js 300 0>>*/ function caml_new_string_d_(s_a_)
      { /*<<mlString.js 300 31>>*/ return new MlString_M_(0,s_a_,s_a_.length) /*<<mlString.js 300 66>>*/ }
      /*<<stdlib.js 129 0>>*/ function caml_raise_with_string_bP_
