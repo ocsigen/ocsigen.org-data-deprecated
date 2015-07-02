@@ -236,7 +236,8 @@
 
 
 
-   ~The syntax extension will replace expression of the form~:
+   ~The logging syntax extension is enabled with <<span class="odocwiki_inlinecode"|~-log>>~.
+   ~It will replace expressions of the form~:
 
 
    
@@ -264,6 +265,4 @@
    will make compilation fail~.
 
 * ~Debug messages are removed if the option <<span class="odocwiki_inlinecode"|~-no~-debug>> is passed~.
-
-* ~The log syntax extension can be disabled with the option <<span class="odocwiki_inlinecode"|~-no~-log>>~.
 
