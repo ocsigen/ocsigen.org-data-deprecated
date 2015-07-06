@@ -21,4 +21,5 @@
   val stat : string -> Lwt_unix.LargeFile.stats Lwt.t
   val lstat : string -> Lwt_unix.LargeFile.stats Lwt.t
   val fstat : Lwt_unix.file_descr -> Lwt_unix.LargeFile.stats Lwt.t
+  val file_exists : string -> bool Lwt.t
 end >>

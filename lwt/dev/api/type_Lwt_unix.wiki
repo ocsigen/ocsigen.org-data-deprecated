@@ -106,6 +106,7 @@
   val stat : string -> Lwt_unix.stats Lwt.t
   val lstat : string -> Lwt_unix.stats Lwt.t
   val fstat : Lwt_unix.file_descr -> Lwt_unix.stats Lwt.t
+  val file_exists : string -> bool Lwt.t
   val isatty : Lwt_unix.file_descr -> bool Lwt.t
   module LargeFile :
     sig
@@ -131,6 +132,7 @@
       val stat : string -> Lwt_unix.LargeFile.stats Lwt.t
       val lstat : string -> Lwt_unix.LargeFile.stats Lwt.t
       val fstat : Lwt_unix.file_descr -> Lwt_unix.LargeFile.stats Lwt.t
+      val file_exists : string -> bool Lwt.t
     end
   val unlink : string -> unit Lwt.t
   val rename : string -> string -> unit Lwt.t

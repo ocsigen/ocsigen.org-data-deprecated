@@ -14,3 +14,5 @@
 >>
 <<pre id="VALfstat" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|fstat>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<a_api text="Lwt_unix.file_descr" | type Lwt_unix.file_descr >> <<span class="ocsforge_color_delimiter"| -> >> <<a_api text="stats" | type Lwt_unix.LargeFile.stats >> <<a_api text="Lwt.t" | type Lwt.t >>>>>><<div class="odocwiki_info"|~Wrapper for <<span class="odocwiki_inlinecode"|~Unix~.~Large~File~.fstat>>
 >>
+<<pre id="VALfile_exists" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|file~_exists>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|string <<span class="ocsforge_color_delimiter"| -> >> bool <<a_api text="Lwt.t" | type Lwt.t >>>>>><<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|file~_exists name>> tests if a file named <<span class="odocwiki_inlinecode"|name>> exists~.
+>>

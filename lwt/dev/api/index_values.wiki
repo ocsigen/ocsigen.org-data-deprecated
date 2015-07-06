@@ -413,6 +413,12 @@
       logger which will write messages to <<span class="odocwiki_inlinecode"|file~_name>>~.
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api text="file_exists"| value Lwt_unix.LargeFile.file_exists >> ~[<<a_api | module Lwt_unix.LargeFile >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|file~_exists name>> tests if a file named <<span class="odocwiki_inlinecode"|name>> exists~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="file_exists"| value Lwt_unix.file_exists >> ~[<<a_api | module Lwt_unix >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|file~_exists name>> tests if a file named <<span class="odocwiki_inlinecode"|name>> exists~.
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api text="file_length"| value Lwt_io.file_length >> ~[<<a_api | module Lwt_io >>~]|<<div class="odocwiki_info"|~Returns the length of a file
 >>
 |
