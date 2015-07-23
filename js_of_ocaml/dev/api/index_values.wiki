@@ -520,6 +520,7 @@
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="filter"| value Dom_svg.CoerceTo.filter >> ~[<<a_api | module Dom_svg.CoerceTo >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="filter_attrib"| value Tyxml_js.R.filter_attrib >> ~[<<a_api | module Tyxml_js.R >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="float"| value Js.float >> ~[<<a_api | module Js >>~]|<<div class="odocwiki_info"|~Conversion of ~O~Caml floats to ~Javascript numbers~.
 >>
 |

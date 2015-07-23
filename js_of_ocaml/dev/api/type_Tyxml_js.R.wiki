@@ -2209,4 +2209,7 @@
           val comma_sep_attrib : string -> string list wrap -> 'a attrib
         end
     end
+  val filter_attrib :
+    'a Tyxml_js.R.Html5.attrib ->
+    bool React.signal -> 'a Tyxml_js.R.Html5.attrib
 end >>
