@@ -5946,7 +5946,7 @@
      /*<<js.ml 69 59>>*/ function _cl_(x_a_)
      { /*<<js.ml 92 40>>*/ return 1-(x_a_==no_handler_fX_?1:0) /*<<js.ml 92 41>>*/ }
     var
-      /*<<js.ml 242 24>>*/ xbcb1e9dd_f0_=window_Z_.Array,
+      /*<<js.ml 242 24>>*/ jsoo_593685be_f0_=window_Z_.Array,
       /*<<js.ml 381 11>>*/ Error_cm_=
        /*<<js.ml 381 11>>*/ caml_set_oo_id_T_([num_248_a_,_f1_,0]),
       /*<<js.ml 393 69>>*/ exn_bg_=[0,Error_cm_,{}],
@@ -5966,13 +5966,13 @@
                      (param_a_[2],_f2_,[0]))]
                 :0 /*<<js.ml 445 70>>*/ });
      /*<<js.ml 447 2>>*/  /*<<js.ml 447 2>>*/ register_printer_b__
-     (function(xa78544e1_a_)
-       { /*<<js.ml 449 40>>*/ return xa78544e1_a_ instanceof xbcb1e9dd_f0_
+     (function(jsoo_self_a_)
+       { /*<<js.ml 449 40>>*/ return jsoo_self_a_ instanceof jsoo_593685be_f0_
                 ?0
                 :[0,
                    /*<<js.ml 450 18>>*/ caml_js_to_string_bB_
                    ( /*<<js.ml 450 29>>*/ caml_js_meth_call_f_
-                     (xa78544e1_a_,_f3_,[0]))] /*<<js.ml 450 56>>*/ });
+                     (jsoo_self_a_,_f3_,[0]))] /*<<js.ml 450 56>>*/ });
     var
       /*<<dom_html.ml 888 11>>*/ d_cn_="2d",
       /*<<dom_html.ml 1231 15>>*/ Canvas_not_available_f8_=
@@ -5980,7 +5980,7 @@
      /*<<dom_html.ml 1421 23>>*/ window_Z_.HTMLElement===undefined_fY_;
     var
       /*<<dom_html.ml 1848 54>>*/ _f9_=num_2147483e3_bw_,
-      /*<<firebug.ml 78 14>>*/ x18184c07_ga_=
+      /*<<firebug.ml 78 14>>*/ jsoo_self_ga_=
        /*<<firebug.ml 78 14>>*/ caml_js_get_console_ht_(0);
      /*<<src/core/lwt.ml 1201 32>>*/ pause_hook_fV_[1]=
     function(param_a_)
@@ -5989,13 +5989,13 @@
                  (window_Z_,
                   _gb_,
                   [0,
-                    /*<<lwt_js.ml 30 17>>*/ caml_js_wrap_callback_dm_(_fW_),
+                    /*<<lwt_js.ml 31 5>>*/ caml_js_wrap_callback_dm_(_fW_),
                    0]),
                 0)
               :0 /*<<lwt_js.ml 32 11>>*/ };
      /*<<lwt_js.ml 34 43>>*/ function _co_(s_a_)
      { /*<<lwt_js.ml 37 21>>*/ return  /*<<lwt_js.ml 37 21>>*/ caml_js_meth_call_f_
-              (x18184c07_ga_,
+              (jsoo_self_ga_,
                _gc_,
                [0, /*<<lwt_js.ml 37 21>>*/ s_a_.toString()]) /*<<lwt_js.ml 37 54>>*/ }
      /*<<lwt_js.ml 34 43>>*/ async_exception_hook_cg_[1]=
@@ -6110,100 +6110,100 @@
         /*<<cubes.ml 62 11>>*/ left_gf_="#d9d9d9",
         /*<<cubes.ml 63 12>>*/ right_gg_="#767676",
         /*<<cubes.ml 64 30>>*/ on_cube_bh_=
-        function(x776737d4_a_,i_b_,j_c_,k_d_,f_e_)
+        function(jsoo_self_a_,i_b_,j_c_,k_d_,f_e_)
          { /*<<cubes.ml 69 2>>*/  /*<<cubes.ml 69 2>>*/ caml_js_meth_call_f_
-           (x776737d4_a_,_gh_,[0]);
+           (jsoo_self_a_,_gh_,[0]);
            /*<<cubes.ml 70 2>>*/  /*<<cubes.ml 70 2>>*/ caml_js_meth_call_f_
-           (x776737d4_a_,
+           (jsoo_self_a_,
             _gi_,
             [0,
              (((i_b_-k_d_|0)+12|0)-1|0)*w_t_,
              (11-j_c_|0)*20+(i_b_+k_d_|0)*20/2]);
            /*<<cubes.ml 71 2>>*/  /*<<cubes.ml 71 2>>*/ caml_call_gen1_h_
-           (f_e_,x776737d4_a_);
+           (f_e_,jsoo_self_a_);
            /*<<cubes.ml 72 2>>*/ return  /*<<cubes.ml 72 2>>*/ caml_js_meth_call_f_
-                  (x776737d4_a_,_gj_,[0]) /*<<cubes.ml 72 15>>*/ },
+                  (jsoo_self_a_,_gj_,[0]) /*<<cubes.ml 72 15>>*/ },
         /*<<cubes.ml 64 30>>*/ draw_top_gk_=
-        function(x92b58168_a_)
-         { /*<<cubes.ml 75 2>>*/ x92b58168_a_.fillStyle=top_ge_;
+        function(jsoo_self_a_)
+         { /*<<cubes.ml 75 2>>*/ jsoo_self_a_.fillStyle=top_ge_;
            /*<<cubes.ml 76 2>>*/  /*<<cubes.ml 76 2>>*/ caml_js_meth_call_f_
-           (x92b58168_a_,_gl_,[0]);
+           (jsoo_self_a_,_gl_,[0]);
            /*<<cubes.ml 77 2>>*/  /*<<cubes.ml 77 2>>*/ caml_js_meth_call_f_
-           (x92b58168_a_,_gm_,[0,w_t_,0]);
+           (jsoo_self_a_,_gm_,[0,w_t_,0]);
            /*<<cubes.ml 78 2>>*/  /*<<cubes.ml 78 2>>*/ caml_js_meth_call_f_
-           (x92b58168_a_,_gn_,[0,2*w_t_,10]);
+           (jsoo_self_a_,_gn_,[0,2*w_t_,10]);
            /*<<cubes.ml 79 2>>*/  /*<<cubes.ml 79 2>>*/ caml_js_meth_call_f_
-           (x92b58168_a_,_go_,[0,w_t_,h_aA_]);
+           (jsoo_self_a_,_go_,[0,w_t_,h_aA_]);
            /*<<cubes.ml 80 2>>*/  /*<<cubes.ml 80 2>>*/ caml_js_meth_call_f_
-           (x92b58168_a_,_gp_,[0,0,10]);
+           (jsoo_self_a_,_gp_,[0,0,10]);
            /*<<cubes.ml 81 2>>*/ return  /*<<cubes.ml 81 2>>*/ caml_js_meth_call_f_
-                  (x92b58168_a_,_gq_,[0]) /*<<cubes.ml 81 12>>*/ },
+                  (jsoo_self_a_,_gq_,[0]) /*<<cubes.ml 81 12>>*/ },
         /*<<cubes.ml 64 30>>*/ top_edges_gr_=
-        function(x6a77c4b0_a_)
+        function(jsoo_self_a_)
          { /*<<cubes.ml 84 2>>*/  /*<<cubes.ml 84 2>>*/ caml_js_meth_call_f_
-           (x6a77c4b0_a_,_gs_,[0]);
+           (jsoo_self_a_,_gs_,[0]);
            /*<<cubes.ml 85 2>>*/  /*<<cubes.ml 85 2>>*/ caml_js_meth_call_f_
-           (x6a77c4b0_a_,_gt_,[0,0,10]);
+           (jsoo_self_a_,_gt_,[0,0,10]);
            /*<<cubes.ml 86 2>>*/  /*<<cubes.ml 86 2>>*/ caml_js_meth_call_f_
-           (x6a77c4b0_a_,_gu_,[0,w_t_,0]);
+           (jsoo_self_a_,_gu_,[0,w_t_,0]);
            /*<<cubes.ml 87 2>>*/  /*<<cubes.ml 87 2>>*/ caml_js_meth_call_f_
-           (x6a77c4b0_a_,_gv_,[0,2*w_t_,10]);
+           (jsoo_self_a_,_gv_,[0,2*w_t_,10]);
            /*<<cubes.ml 88 2>>*/ return  /*<<cubes.ml 88 2>>*/ caml_js_meth_call_f_
-                  (x6a77c4b0_a_,_gw_,[0]) /*<<cubes.ml 88 14>>*/ },
+                  (jsoo_self_a_,_gw_,[0]) /*<<cubes.ml 88 14>>*/ },
         /*<<cubes.ml 64 30>>*/ draw_right_gx_=
-        function(x1452d862_a_)
-         { /*<<cubes.ml 91 2>>*/ x1452d862_a_.fillStyle=right_gg_;
+        function(jsoo_self_a_)
+         { /*<<cubes.ml 91 2>>*/ jsoo_self_a_.fillStyle=right_gg_;
            /*<<cubes.ml 92 2>>*/  /*<<cubes.ml 92 2>>*/ caml_js_meth_call_f_
-           (x1452d862_a_,_gy_,[0]);
+           (jsoo_self_a_,_gy_,[0]);
            /*<<cubes.ml 93 2>>*/  /*<<cubes.ml 93 2>>*/ caml_js_meth_call_f_
-           (x1452d862_a_,_gz_,[0,w_t_,h_aA_]);
+           (jsoo_self_a_,_gz_,[0,w_t_,h_aA_]);
            /*<<cubes.ml 94 2>>*/  /*<<cubes.ml 94 2>>*/ caml_js_meth_call_f_
-           (x1452d862_a_,_gA_,[0,w_t_,40]);
+           (jsoo_self_a_,_gA_,[0,w_t_,40]);
            /*<<cubes.ml 95 2>>*/  /*<<cubes.ml 95 2>>*/ caml_js_meth_call_f_
-           (x1452d862_a_,_gB_,[0,2*w_t_,30]);
+           (jsoo_self_a_,_gB_,[0,2*w_t_,30]);
            /*<<cubes.ml 96 2>>*/  /*<<cubes.ml 96 2>>*/ caml_js_meth_call_f_
-           (x1452d862_a_,_gC_,[0,2*w_t_,10]);
+           (jsoo_self_a_,_gC_,[0,2*w_t_,10]);
            /*<<cubes.ml 97 2>>*/ return  /*<<cubes.ml 97 2>>*/ caml_js_meth_call_f_
-                  (x1452d862_a_,_gD_,[0]) /*<<cubes.ml 97 12>>*/ },
+                  (jsoo_self_a_,_gD_,[0]) /*<<cubes.ml 97 12>>*/ },
         /*<<cubes.ml 64 30>>*/ right_edges_gE_=
-        function(x211596db_a_)
+        function(jsoo_self_a_)
          { /*<<cubes.ml 100 2>>*/  /*<<cubes.ml 100 2>>*/ caml_js_meth_call_f_
-           (x211596db_a_,_gF_,[0]);
+           (jsoo_self_a_,_gF_,[0]);
            /*<<cubes.ml 101 2>>*/  /*<<cubes.ml 101 2>>*/ caml_js_meth_call_f_
-           (x211596db_a_,_gG_,[0,w_t_,40]);
+           (jsoo_self_a_,_gG_,[0,w_t_,40]);
            /*<<cubes.ml 102 2>>*/  /*<<cubes.ml 102 2>>*/ caml_js_meth_call_f_
-           (x211596db_a_,_gH_,[0,w_t_,h_aA_]);
+           (jsoo_self_a_,_gH_,[0,w_t_,h_aA_]);
            /*<<cubes.ml 103 2>>*/  /*<<cubes.ml 103 2>>*/ caml_js_meth_call_f_
-           (x211596db_a_,_gI_,[0,2*w_t_,10]);
+           (jsoo_self_a_,_gI_,[0,2*w_t_,10]);
            /*<<cubes.ml 104 2>>*/ return  /*<<cubes.ml 104 2>>*/ caml_js_meth_call_f_
-                  (x211596db_a_,_gJ_,[0]) /*<<cubes.ml 104 14>>*/ },
+                  (jsoo_self_a_,_gJ_,[0]) /*<<cubes.ml 104 14>>*/ },
         /*<<cubes.ml 64 30>>*/ draw_left_gK_=
-        function(xec84381f_a_)
-         { /*<<cubes.ml 107 2>>*/ xec84381f_a_.fillStyle=left_gf_;
+        function(jsoo_self_a_)
+         { /*<<cubes.ml 107 2>>*/ jsoo_self_a_.fillStyle=left_gf_;
            /*<<cubes.ml 108 2>>*/  /*<<cubes.ml 108 2>>*/ caml_js_meth_call_f_
-           (xec84381f_a_,_gL_,[0]);
+           (jsoo_self_a_,_gL_,[0]);
            /*<<cubes.ml 109 2>>*/  /*<<cubes.ml 109 2>>*/ caml_js_meth_call_f_
-           (xec84381f_a_,_gM_,[0,w_t_,h_aA_]);
+           (jsoo_self_a_,_gM_,[0,w_t_,h_aA_]);
            /*<<cubes.ml 110 2>>*/  /*<<cubes.ml 110 2>>*/ caml_js_meth_call_f_
-           (xec84381f_a_,_gN_,[0,w_t_,40]);
+           (jsoo_self_a_,_gN_,[0,w_t_,40]);
            /*<<cubes.ml 111 2>>*/  /*<<cubes.ml 111 2>>*/ caml_js_meth_call_f_
-           (xec84381f_a_,_gO_,[0,0,30]);
+           (jsoo_self_a_,_gO_,[0,0,30]);
            /*<<cubes.ml 112 2>>*/  /*<<cubes.ml 112 2>>*/ caml_js_meth_call_f_
-           (xec84381f_a_,_gP_,[0,0,10]);
+           (jsoo_self_a_,_gP_,[0,0,10]);
            /*<<cubes.ml 113 2>>*/ return  /*<<cubes.ml 113 2>>*/ caml_js_meth_call_f_
-                  (xec84381f_a_,_gQ_,[0]) /*<<cubes.ml 113 12>>*/ },
+                  (jsoo_self_a_,_gQ_,[0]) /*<<cubes.ml 113 12>>*/ },
         /*<<cubes.ml 64 30>>*/ left_edges_gR_=
-        function(x4977bef4_a_)
+        function(jsoo_self_a_)
          { /*<<cubes.ml 116 2>>*/  /*<<cubes.ml 116 2>>*/ caml_js_meth_call_f_
-           (x4977bef4_a_,_gS_,[0]);
+           (jsoo_self_a_,_gS_,[0]);
            /*<<cubes.ml 117 2>>*/  /*<<cubes.ml 117 2>>*/ caml_js_meth_call_f_
-           (x4977bef4_a_,_gT_,[0,w_t_,h_aA_]);
+           (jsoo_self_a_,_gT_,[0,w_t_,h_aA_]);
            /*<<cubes.ml 118 2>>*/  /*<<cubes.ml 118 2>>*/ caml_js_meth_call_f_
-           (x4977bef4_a_,_gU_,[0,0,10]);
+           (jsoo_self_a_,_gU_,[0,0,10]);
            /*<<cubes.ml 119 2>>*/  /*<<cubes.ml 119 2>>*/ caml_js_meth_call_f_
-           (x4977bef4_a_,_gV_,[0,0,30]);
+           (jsoo_self_a_,_gV_,[0,0,30]);
            /*<<cubes.ml 120 2>>*/ return  /*<<cubes.ml 120 2>>*/ caml_js_meth_call_f_
-                  (x4977bef4_a_,_gW_,[0]) /*<<cubes.ml 120 14>>*/ },
+                  (jsoo_self_a_,_gW_,[0]) /*<<cubes.ml 120 14>>*/ },
         /*<<cubes.ml 64 30>>*/ tile_cp_=
         function(c_a_,a_b_,param_c_)
          {var
@@ -6299,41 +6299,43 @@
              /*<<cubes.ml 158 2>>*/ return c_b_}
            /*<<dom_html.ml 1414 65>>*/ throw Canvas_not_available_f8_ /*<<cubes.ml 158 3>>*/ },
         /*<<cubes.ml 64 30>>*/ redraw_cr_=
-        function(x52d2feda_a_,x621e1ec6_b_,a_c_)
+        function(jsoo_self_a_,jsoo_b9bde2df_b_,a_c_)
          { /*<<cubes.ml 161 10>>*/ var
-           xc7d896e1_d_=
+           jsoo_self_d_=
              /*<<cubes.ml 161 10>>*/ caml_js_meth_call_f_
-             (x621e1ec6_b_,_g3_,[0,d_cn_]);
+             (jsoo_b9bde2df_b_,_g3_,[0,d_cn_]);
            /*<<cubes.ml 162 2>>*/  /*<<cubes.ml 162 2>>*/ caml_js_meth_call_f_
-           (xc7d896e1_d_,_g4_,[0,1,0,0,1,0,0]);
+           (jsoo_self_d_,_g4_,[0,1,0,0,1,0,0]);
            /*<<cubes.ml 163 2>>*/  /*<<cubes.ml 163 2>>*/ caml_js_meth_call_f_
-           (xc7d896e1_d_,_g5_,[0,0,0,x621e1ec6_b_.width,x621e1ec6_b_.height]);
+           (jsoo_self_d_,
+            _g5_,
+            [0,0,0,jsoo_b9bde2df_b_.width,jsoo_b9bde2df_b_.height]);
            /*<<cubes.ml 164 2>>*/  /*<<cubes.ml 164 2>>*/ caml_js_meth_call_f_
-           (xc7d896e1_d_,_g6_,[0,1,0,0,1,num_0_5_dd_,num_0_5_dd_]);
-           /*<<cubes.ml 165 2>>*/ xc7d896e1_d_.globalCompositeOperation=
+           (jsoo_self_d_,_g6_,[0,1,0,0,1,num_0_5_dd_,num_0_5_dd_]);
+           /*<<cubes.ml 165 2>>*/ jsoo_self_d_.globalCompositeOperation=
           "lighter";
            /*<<cubes.ml 166 2>>*/  /*<<cubes.ml 166 2>>*/ tile_cp_
-           (xc7d896e1_d_,a_c_,[0,draw_top_gk_,draw_right_gx_,draw_left_gK_]);
-           /*<<cubes.ml 167 2>>*/ xc7d896e1_d_.globalCompositeOperation=
+           (jsoo_self_d_,a_c_,[0,draw_top_gk_,draw_right_gx_,draw_left_gK_]);
+           /*<<cubes.ml 167 2>>*/ jsoo_self_d_.globalCompositeOperation=
           "source-over";
            /*<<cubes.ml 168 2>>*/  /*<<cubes.ml 168 2>>*/ tile_cp_
-           (xc7d896e1_d_,
+           (jsoo_self_d_,
             a_c_,
             [0,top_edges_gr_,right_edges_gE_,left_edges_gR_]);
            /*<<cubes.ml 123 2>>*/  /*<<cubes.ml 123 2>>*/ caml_js_meth_call_f_
-           (xc7d896e1_d_,_gX_,[0]);
+           (jsoo_self_d_,_gX_,[0]);
            /*<<cubes.ml 124 2>>*/  /*<<cubes.ml 124 2>>*/ caml_js_meth_call_f_
-           (xc7d896e1_d_,_gY_,[0,0,num_360_cO_]);
+           (jsoo_self_d_,_gY_,[0,0,num_360_cO_]);
            /*<<cubes.ml 125 2>>*/  /*<<cubes.ml 125 2>>*/ caml_js_meth_call_f_
-           (xc7d896e1_d_,_gZ_,[0,12*w_t_,480]);
+           (jsoo_self_d_,_gZ_,[0,12*w_t_,480]);
            /*<<cubes.ml 126 2>>*/  /*<<cubes.ml 126 2>>*/ caml_js_meth_call_f_
-           (xc7d896e1_d_,_g0_,[0,24*w_t_,num_360_cO_]);
+           (jsoo_self_d_,_g0_,[0,24*w_t_,num_360_cO_]);
            /*<<cubes.ml 127 2>>*/  /*<<cubes.ml 127 2>>*/ caml_js_meth_call_f_
-           (xc7d896e1_d_,_g1_,[0,24*w_t_,num_120_bo_]);
+           (jsoo_self_d_,_g1_,[0,24*w_t_,num_120_bo_]);
            /*<<cubes.ml 128 2>>*/  /*<<cubes.ml 128 2>>*/ caml_js_meth_call_f_
-           (xc7d896e1_d_,_g2_,[0]);
+           (jsoo_self_d_,_g2_,[0]);
            /*<<cubes.ml 170 2>>*/ return  /*<<cubes.ml 170 2>>*/ caml_js_meth_call_f_
-                  (x52d2feda_a_,_g7_,[0,x621e1ec6_b_,0,0]) /*<<cubes.ml 170 44>>*/ },
+                  (jsoo_self_a_,_g7_,[0,jsoo_b9bde2df_b_,0,0]) /*<<cubes.ml 170 44>>*/ },
         /*<<cubes.ml 64 30>>*/ loop_cs_=
         function(c_t_,c_b_,a_c_)
          { /*<<cubes.ml 175 2>>*/ function f_u_(param_a_)
@@ -6430,7 +6432,7 @@
               (window_Z_,
                _f__,
                [0,
-                 /*<<dom_html.ml 1877 16>>*/ caml_js_wrap_callback_dm_
+                 /*<<dom_html.ml 1877 4>>*/ caml_js_wrap_callback_dm_
                  (callback_g_),
                 _e_])];
              /*<<dom_html.ml 1877 16>>*/ return 0 /*<<dom_html.ml 1877 63>>*/ }
@@ -6511,16 +6513,16 @@
         /*<<cubes.ml 64 30>>*/ f_ct_=
         function(param_a_)
          {var
-            /*<<cubes.ml 184 10>>*/ x32f94eb9_d_=
+            /*<<cubes.ml 184 10>>*/ jsoo_ad7fbbdd_d_=
              /*<<cubes.ml 184 10>>*/ create_canvas_cq_(0),
             /*<<cubes.ml 185 11>>*/ c_e_=
              /*<<cubes.ml 185 11>>*/ create_canvas_cq_(0);
            /*<<dom.ml 94 10>>*/  /*<<dom.ml 94 10>>*/ caml_js_meth_call_f_
-           (window_Z_.document.body,_f4_,[0,x32f94eb9_d_]);
+           (window_Z_.document.body,_f4_,[0,jsoo_ad7fbbdd_d_]);
            /*<<cubes.ml 187 10>>*/ var
            c_b_=
              /*<<cubes.ml 187 10>>*/ caml_js_meth_call_f_
-             (x32f94eb9_d_,_g8_,[0,d_cn_]);
+             (jsoo_ad7fbbdd_d_,_g8_,[0,d_cn_]);
            /*<<cubes.ml 188 2>>*/ c_b_.globalCompositeOperation="copy";
           var
             /*<<cubes.ml 189 2>>*/ v_g_=1,
@@ -6539,20 +6541,20 @@
            (c_b_,c_e_,a_c_);
            /*<<cubes.ml 192 2>>*/ return false_fZ_ /*<<cubes.ml 192 11>>*/ };
        /*<<cubes.ml 195 0>>*/ window_Z_.onload=
-      function(xf5b7986a_a_)
-       { /*<<dom.ml 234 34>>*/ if( /*<<dom.ml 234 14>>*/ _cl_(xf5b7986a_a_))
+      function(jsoo_self_a_)
+       { /*<<dom.ml 234 34>>*/ if( /*<<dom.ml 234 14>>*/ _cl_(jsoo_self_a_))
          { /*<<dom.ml 242 11>>*/ var
            res_c_=
-             /*<<dom.ml 242 11>>*/ f_ct_(xf5b7986a_a_);
+             /*<<dom.ml 242 11>>*/ f_ct_(jsoo_self_a_);
            /*<<dom.ml 243 30>>*/ if(!(res_c_|0))
-            /*<<dom.ml 244 10>>*/ caml_js_meth_call_f_(xf5b7986a_a_,_f5_,[0]);
+            /*<<dom.ml 244 10>>*/ caml_js_meth_call_f_(jsoo_self_a_,_f5_,[0]);
            /*<<dom.ml 245 8>>*/ return res_c_}
         var
-          /*<<dom.ml 236 16>>*/ xc3540b3c_d_=event,
+          /*<<dom.ml 236 16>>*/ jsoo_obj_d_=event,
           /*<<dom.ml 237 18>>*/ match_b_=
-           /*<<dom.ml 237 18>>*/ f_ct_(xc3540b3c_d_);
+           /*<<dom.ml 237 18>>*/ f_ct_(jsoo_obj_d_);
          /*<<dom.ml 238 30>>*/ if(!(match_b_|0))
-         xc3540b3c_d_.returnValue=match_b_;
+         jsoo_obj_d_.returnValue=match_b_;
          /*<<dom.ml 240 1>>*/ return match_b_ /*<<dom.ml 245 11>>*/ };
        /*<<std_exit.ml 16 8>>*/  /*<<std_exit.ml 16 8>>*/ do_at_exit_bL_(0);
        /*<<std_exit.ml 16 20>>*/ return} /*<<?>>*/ }

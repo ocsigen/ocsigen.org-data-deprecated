@@ -6314,10 +6314,10 @@
      /*<<js.ml 69 59>>*/ function _cH_(x_a_)
      { /*<<js.ml 92 40>>*/ return 1-(x_a_==no_handler_aV_?1:0) /*<<js.ml 92 41>>*/ }
     var
-      /*<<js.ml 139 12>>*/ x120132ea_Z_=true,
+      /*<<js.ml 139 12>>*/ jsoo_824000b9_Z_=true,
       /*<<js.ml 140 13>>*/ false_bE_=false,
-      /*<<js.ml 242 24>>*/ xbcb1e9dd_cI_=window_ae_.Array,
-      /*<<js.ml 334 18>>*/ x2e2deb87_aW_=window_ae_.Date,
+      /*<<js.ml 242 24>>*/ jsoo_593685be_cI_=window_ae_.Array,
+      /*<<js.ml 334 18>>*/ jsoo_0d6e75e4_aW_=window_ae_.Date,
       /*<<js.ml 381 11>>*/ Error_cJ_=
        /*<<js.ml 381 11>>*/ caml_set_oo_id_W_([num_248_c_,_gB_,0]);
      /*<<js.ml 393 8>>*/  /*<<js.ml 393 8>>*/ _gi_(_gC_,[0,Error_cJ_,{}]);
@@ -6330,55 +6330,59 @@
                      (param_a_[2],_gD_,[0]))]
                 :0 /*<<js.ml 445 70>>*/ });
      /*<<js.ml 447 2>>*/  /*<<js.ml 447 2>>*/ register_printer_cx_
-     (function(xa78544e1_a_)
-       { /*<<js.ml 449 40>>*/ return xa78544e1_a_ instanceof xbcb1e9dd_cI_
+     (function(jsoo_self_a_)
+       { /*<<js.ml 449 40>>*/ return jsoo_self_a_ instanceof jsoo_593685be_cI_
                 ?0
                 :[0,
                    /*<<js.ml 450 18>>*/ caml_js_to_string_bd_
                    ( /*<<js.ml 450 29>>*/ caml_js_meth_call_i_
-                     (xa78544e1_a_,_gE_,[0]))] /*<<js.ml 450 56>>*/ });
-    function add_r_(x18184c07_a_,x32f94eb9_b_)
+                     (jsoo_self_a_,_gE_,[0]))] /*<<js.ml 450 56>>*/ });
+    function add_r_(jsoo_self_a_,jsoo_ad7fbbdd_b_)
      { /*<<dom.ml 94 10>>*/  /*<<dom.ml 94 10>>*/ caml_js_meth_call_i_
-       (x18184c07_a_,_gF_,[0,x32f94eb9_b_]);
+       (jsoo_self_a_,_gF_,[0,jsoo_ad7fbbdd_b_]);
        /*<<dom.ml 94 10>>*/ return 0 /*<<dom.ml 94 41>>*/ }
     function handler___(f_c_)
-     { /*<<dom.ml 231 2>>*/ return function(xf5b7986a_a_)
-       { /*<<dom.ml 234 34>>*/ if( /*<<dom.ml 234 14>>*/ _cH_(xf5b7986a_a_))
+     { /*<<dom.ml 231 2>>*/ return function(jsoo_self_a_)
+       { /*<<dom.ml 234 34>>*/ if( /*<<dom.ml 234 14>>*/ _cH_(jsoo_self_a_))
          { /*<<dom.ml 242 11>>*/ var
            res_d_=
-             /*<<dom.ml 242 11>>*/ caml_call_gen1_h_(f_c_,xf5b7986a_a_);
+             /*<<dom.ml 242 11>>*/ caml_call_gen1_h_(f_c_,jsoo_self_a_);
            /*<<dom.ml 243 30>>*/ if(!(res_d_|0))
-            /*<<dom.ml 244 10>>*/ caml_js_meth_call_i_(xf5b7986a_a_,_gG_,[0]);
+            /*<<dom.ml 244 10>>*/ caml_js_meth_call_i_(jsoo_self_a_,_gG_,[0]);
            /*<<dom.ml 245 8>>*/ return res_d_}
         var
-          /*<<dom.ml 236 16>>*/ xc3540b3c_e_=event,
+          /*<<dom.ml 236 16>>*/ jsoo_obj_e_=event,
           /*<<dom.ml 237 18>>*/ match_b_=
-           /*<<dom.ml 237 18>>*/ caml_call_gen1_h_(f_c_,xc3540b3c_e_);
+           /*<<dom.ml 237 18>>*/ caml_call_gen1_h_(f_c_,jsoo_obj_e_);
          /*<<dom.ml 238 30>>*/ if(!(match_b_|0))
-         xc3540b3c_e_.returnValue=match_b_;
+         jsoo_obj_e_.returnValue=match_b_;
          /*<<dom.ml 240 1>>*/ return match_b_ /*<<dom.ml 245 11>>*/ } /*<<dom.ml 245 13>>*/ }
     function addEventListener_cK_
-     (x0c26bf87_e_,x3bf4f782_b_,x98db9fd1_c_,x7428a376_d_)
-     { /*<<dom.ml 289 5>>*/ if(x0c26bf87_e_.addEventListener===undefined_cG_)
+     (jsoo_self_e_,jsoo_4ec1b650_b_,jsoo_c9a9e1c3_c_,jsoo_a44ae7e3_d_)
+     { /*<<dom.ml 289 5>>*/ if(jsoo_self_e_.addEventListener===undefined_cG_)
        {var
-          /*<<dom.ml 290 13>>*/ x6a77c4b0_f_=
+          /*<<dom.ml 290 13>>*/ jsoo_6bc4b4e3_f_=
            /*<<dom.ml 290 13>>*/ caml_js_meth_call_i_
-           ("on",_gH_,[0,x3bf4f782_b_]),
-          /*<<dom.ml 291 4>>*/ x560e4fa1_g_=
+           ("on",_gH_,[0,jsoo_4ec1b650_b_]),
+          /*<<dom.ml 291 4>>*/ jsoo_33fd16a3_g_=
           function(e_a_)
-           { /*<<dom.ml 291 28>>*/ var _d_=[0,x98db9fd1_c_,e_a_,[0]];
+           { /*<<dom.ml 291 28>>*/ var _d_=[0,jsoo_c9a9e1c3_c_,e_a_,[0]];
              /*<<dom.ml 291 28>>*/ return function(_a_,_b_)
              { /*<<?>>*/ return caml_js_call_iD_(_d_,_a_,_b_)} /*<<dom.ml 291 55>>*/ };
          /*<<dom.ml 292 13>>*/  /*<<dom.ml 292 13>>*/ caml_js_meth_call_i_
-         (x0c26bf87_e_,_gI_,[0,x6a77c4b0_f_,x560e4fa1_g_]);
+         (jsoo_self_e_,_gI_,[0,jsoo_6bc4b4e3_f_,jsoo_33fd16a3_g_]);
          /*<<dom.ml 293 8>>*/ return function(param_a_)
          { /*<<dom.ml 293 14>>*/ return  /*<<dom.ml 293 14>>*/ caml_js_meth_call_i_
-                  (x0c26bf87_e_,_gJ_,[0,x6a77c4b0_f_,x560e4fa1_g_]) /*<<dom.ml 293 61>>*/ }}
+                  (jsoo_self_e_,_gJ_,[0,jsoo_6bc4b4e3_f_,jsoo_33fd16a3_g_]) /*<<dom.ml 293 61>>*/ }}
        /*<<dom.ml 295 13>>*/  /*<<dom.ml 295 13>>*/ caml_js_meth_call_i_
-       (x0c26bf87_e_,_gK_,[0,x3bf4f782_b_,x98db9fd1_c_,x7428a376_d_]);
+       (jsoo_self_e_,
+        _gK_,
+        [0,jsoo_4ec1b650_b_,jsoo_c9a9e1c3_c_,jsoo_a44ae7e3_d_]);
        /*<<dom.ml 296 8>>*/ return function(param_a_)
        { /*<<dom.ml 296 14>>*/ return  /*<<dom.ml 296 14>>*/ caml_js_meth_call_i_
-                (x0c26bf87_e_,_gL_,[0,x3bf4f782_b_,x98db9fd1_c_,x7428a376_d_]) /*<<dom.ml 296 70>>*/ } /*<<dom.ml 297 5>>*/ }
+                (jsoo_self_e_,
+                 _gL_,
+                 [0,jsoo_4ec1b650_b_,jsoo_c9a9e1c3_c_,jsoo_a44ae7e3_d_]) /*<<dom.ml 296 70>>*/ } /*<<dom.ml 297 5>>*/ }
     function f_cL_(id_a_)
      { /*<<dom.ml 299 29>>*/ return  /*<<dom.ml 299 29>>*/ caml_call_gen1_h_
               (id_a_,0) /*<<dom.ml 299 34>>*/ }
@@ -6392,9 +6396,9 @@
               ? /*<<dom_html.ml 1277 55>>*/ caml_call_gen1_h_(f_b_,x_a_[1])
               :0 /*<<dom_html.ml 1277 58>>*/ }
      /*<<dom_html.ml 1231 15>>*/ function createElement_bF_
-     (x18184c07_a_,name_b_)
+     (jsoo_self_a_,name_b_)
      { /*<<dom_html.ml 1279 44>>*/ return  /*<<dom_html.ml 1279 44>>*/ caml_js_meth_call_i_
-              (x18184c07_a_,
+              (jsoo_self_a_,
                _gO_,
                [0, /*<<dom_html.ml 1279 44>>*/ name_b_.toString()]) /*<<dom_html.ml 1279 78>>*/ }
      /*<<dom_html.ml 1231 15>>*/ function unsafeCreateElement_ai_
@@ -6433,9 +6437,9 @@
            /*<<dom_html.ml 1320 8>>*/ createElementSyntax_cM_[1]=_m_;
           continue}
         if(num_982028505_c__<=_h_)
-         { /*<<dom_html.ml 1295 16>>*/ var a_f_=new xbcb1e9dd_cI_();
+         { /*<<dom_html.ml 1295 16>>*/ var a_f_=new jsoo_593685be_cI_();
            /*<<dom_html.ml 1296 16>>*/  /*<<dom_html.ml 1296 16>>*/ caml_js_meth_call_i_
-           (a_f_,_gR_,[0,"<", /*<<dom_html.ml 1296 8>>*/ elt_d_.toString()]);
+           (a_f_,_gR_,[0,"<", /*<<dom_html.ml 1296 39>>*/ elt_d_.toString()]);
            /*<<dom_html.ml 1297 8>>*/  /*<<dom_html.ml 1297 8>>*/ opt_iter_aY_
            (type_a_,
             function(t_a_)
@@ -6444,7 +6448,7 @@
                 _gS_,
                 [0,
                  ' type="',
-                  /*<<dom_html.ml 1299 13>>*/ caml_js_html_escape_dU_(t_a_),
+                  /*<<dom_html.ml 1299 45>>*/ caml_js_html_escape_dU_(t_a_),
                  str_a5_]);
                /*<<dom_html.ml 1299 13>>*/ return 0 /*<<dom_html.ml 1299 76>>*/ });
            /*<<dom_html.ml 1300 8>>*/  /*<<dom_html.ml 1300 8>>*/ opt_iter_aY_
@@ -6455,7 +6459,7 @@
                 _gT_,
                 [0,
                  ' name="',
-                  /*<<dom_html.ml 1302 13>>*/ caml_js_html_escape_dU_(n_a_),
+                  /*<<dom_html.ml 1302 45>>*/ caml_js_html_escape_dU_(n_a_),
                  str_a5_]);
                /*<<dom_html.ml 1302 13>>*/ return 0 /*<<dom_html.ml 1302 76>>*/ });
            /*<<dom_html.ml 1303 16>>*/  /*<<dom_html.ml 1303 16>>*/ caml_js_meth_call_i_
@@ -6471,12 +6475,12 @@
            /*<<dom_html.ml 1290 36>>*/ createElement_bF_(doc_c_,elt_d_);
          /*<<dom_html.ml 1291 8>>*/  /*<<dom_html.ml 1291 8>>*/ opt_iter_aY_
          (type_a_,
-          function(x521a4c10_a_)
-           { /*<<dom_html.ml 1291 33>>*/ return res_g_.type=x521a4c10_a_ /*<<dom_html.ml 1291 48>>*/ });
+          function(jsoo_arg_a_)
+           { /*<<dom_html.ml 1291 33>>*/ return res_g_.type=jsoo_arg_a_ /*<<dom_html.ml 1291 48>>*/ });
          /*<<dom_html.ml 1292 8>>*/  /*<<dom_html.ml 1292 8>>*/ opt_iter_aY_
          (name_b_,
-          function(x96770fe7_a_)
-           { /*<<dom_html.ml 1292 32>>*/ return res_g_.name=x96770fe7_a_ /*<<dom_html.ml 1292 46>>*/ });
+          function(jsoo_arg_a_)
+           { /*<<dom_html.ml 1292 32>>*/ return res_g_.name=jsoo_arg_a_ /*<<dom_html.ml 1292 46>>*/ });
          /*<<dom_html.ml 1292 47>>*/ return res_g_} /*<<dom_html.ml 1320 50>>*/ }
      /*<<dom_html.ml 1231 15>>*/ function createInput_bG_
      (type_a_,name_b_,doc_c_)
@@ -6494,7 +6498,7 @@
      /*<<dom_html.ml 1421 23>>*/ window_ae_.HTMLElement===undefined_cG_;
     var
       /*<<dom_html.ml 1848 54>>*/ _g8_=num_2147483e3_bZ_,
-      /*<<firebug.ml 78 14>>*/ x18184c07_g$_=
+      /*<<firebug.ml 78 14>>*/ jsoo_self_g$_=
        /*<<firebug.ml 78 14>>*/ caml_js_get_console_iE_(0);
     function sleep_ha_(d_a_)
      {var
@@ -6519,8 +6523,7 @@
           (window_ae_,
            _g9_,
            [0,
-             /*<<dom_html.ml 1877 16>>*/ caml_js_wrap_callback_dV_
-             (callback_h_),
+             /*<<dom_html.ml 1877 4>>*/ caml_js_wrap_callback_dV_(callback_h_),
             _f_])];
          /*<<dom_html.ml 1877 16>>*/ return 0 /*<<dom_html.ml 1877 63>>*/ }
        /*<<dom_html.ml 1879 2>>*/  /*<<dom_html.ml 1879 2>>*/ loop_g_(d_o_,0);
@@ -6563,13 +6566,13 @@
                    (window_ae_,
                     _hb_,
                     [0,
-                      /*<<lwt_js.ml 30 17>>*/ caml_js_wrap_callback_dV_(_gz_),
+                      /*<<lwt_js.ml 31 5>>*/ caml_js_wrap_callback_dV_(_gz_),
                      0]),
                   0)
                 :0 /*<<lwt_js.ml 32 11>>*/ });
      /*<<lwt_js.ml 34 43>>*/ function _cP_(s_a_)
      { /*<<lwt_js.ml 37 21>>*/ return  /*<<lwt_js.ml 37 21>>*/ caml_js_meth_call_i_
-              (x18184c07_g$_,
+              (jsoo_self_g$_,
                _hc_,
                [0, /*<<lwt_js.ml 37 21>>*/ s_a_.toString()]) /*<<lwt_js.ml 37 54>>*/ }
      /*<<lwt_js.ml 34 43>>*/ async_exception_hook_bz_[1]=
@@ -6604,7 +6607,7 @@
            /*<<planet.ml 77 7>>*/ b_f_.value=txt2_b_;
            /*<<planet.ml 78 7>>*/  /*<<planet.ml 78 7>>*/ caml_call_gen1_h_
            (action_c_,state_d_[1]);
-           /*<<planet.ml 78 20>>*/ return x120132ea_Z_ /*<<planet.ml 79 15>>*/ });
+           /*<<planet.ml 78 20>>*/ return jsoo_824000b9_Z_ /*<<planet.ml 79 15>>*/ });
        /*<<planet.ml 80 2>>*/ return b_f_ /*<<planet.ml 80 3>>*/ }
      /*<<planet.ml 62 36>>*/ function checkbox_cS_
      (txt_a_,checked_b_,action_c_)
@@ -6617,7 +6620,7 @@
        (function(param_a_)
          { /*<<planet.ml 85 31>>*/  /*<<planet.ml 85 31>>*/ caml_call_gen1_h_
            (action_c_,b_d_.checked|0);
-           /*<<planet.ml 85 61>>*/ return x120132ea_Z_ /*<<planet.ml 85 71>>*/ });
+           /*<<planet.ml 85 61>>*/ return jsoo_824000b9_Z_ /*<<planet.ml 85 71>>*/ });
        /*<<planet.ml 86 12>>*/ var
        lab_f_=
          /*<<planet.ml 86 12>>*/ createLabel_cO_(doc_e_);
@@ -6812,14 +6815,14 @@
           break}}
        /*<<planet.ml 235 2>>*/ return [0,vertices_h_,faces_f_] /*<<planet.ml 235 40>>*/ }
      /*<<planet.ml 185 30>>*/ function create_canvas_a1_
-     (x48bc6136_a_,x874ebaa6_b_)
+     (jsoo_arg_a_,jsoo_arg_b_)
      { /*<<dom_html.ml 1413 10>>*/ var
        c_c_=
          /*<<dom_html.ml 1413 10>>*/ unsafeCreateElement_ai_(doc_e_,_g7_);
        /*<<dom_html.ml 1414 32>>*/ if
        ( /*<<dom_html.ml 1414 10>>*/ _cH_(c_c_.getContext))
-       { /*<<planet.ml 306 2>>*/ c_c_.width=x48bc6136_a_;
-         /*<<planet.ml 306 17>>*/ c_c_.height=x874ebaa6_b_;
+       { /*<<planet.ml 306 2>>*/ c_c_.width=jsoo_arg_a_;
+         /*<<planet.ml 306 17>>*/ c_c_.height=jsoo_arg_b_;
          /*<<planet.ml 306 33>>*/ return c_c_}
        /*<<dom_html.ml 1414 65>>*/ throw Canvas_not_available_g6_ /*<<planet.ml 306 34>>*/ }
      /*<<planet.ml 185 30>>*/ function min_as_(u_a_,v_b_)
@@ -6827,7 +6830,14 @@
      /*<<planet.ml 185 30>>*/ function max_b_(u_a_,v_b_)
      { /*<<planet.ml 422 24>>*/ return u_a_<v_b_?v_b_:u_a_ /*<<planet.ml 422 46>>*/ }
      /*<<planet.ml 185 30>>*/ function draw_hz_
-     (xe010e632_a_,_b_,xdc5f61a5_c_,o_d_,_e_,normals_f_,face_info_g_,dir_h_)
+     (jsoo_self_a_,
+      _b_,
+      jsoo_b62335d6_c_,
+      o_d_,
+      _e_,
+      normals_f_,
+      face_info_g_,
+      dir_h_)
      {var
         /*<<planet.ml 469 2>>*/ _q_=o_d_[2],
         /*<<array.ml 86 2>>*/ _p_=_q_.length-1-1|0,
@@ -6864,19 +6874,19 @@
             param_o_[3]*
             dir_h_[3])
            { /*<<planet.ml 476 9>>*/  /*<<planet.ml 476 9>>*/ caml_js_meth_call_i_
-             (xe010e632_a_,_hA_,[0]);
+             (jsoo_self_a_,_hA_,[0]);
              /*<<planet.ml 477 9>>*/  /*<<planet.ml 477 9>>*/ caml_js_meth_call_i_
-             (xe010e632_a_,_hB_,[0,_m_,_l_]);
+             (jsoo_self_a_,_hB_,[0,_m_,_l_]);
              /*<<planet.ml 478 9>>*/  /*<<planet.ml 478 9>>*/ caml_js_meth_call_i_
-             (xe010e632_a_,_hC_,[0,_x_,_w_]);
+             (jsoo_self_a_,_hC_,[0,_x_,_w_]);
              /*<<planet.ml 479 9>>*/  /*<<planet.ml 479 9>>*/ caml_js_meth_call_i_
-             (xe010e632_a_,_hD_,[0,_B_,_A_]);
+             (jsoo_self_a_,_hD_,[0,_B_,_A_]);
              /*<<planet.ml 480 9>>*/  /*<<planet.ml 480 9>>*/ caml_js_meth_call_i_
-             (xe010e632_a_,_hE_,[0]);
+             (jsoo_self_a_,_hE_,[0]);
              /*<<planet.ml 481 9>>*/  /*<<planet.ml 481 9>>*/ caml_js_meth_call_i_
-             (xe010e632_a_,_hF_,[0]);
+             (jsoo_self_a_,_hF_,[0]);
              /*<<planet.ml 482 9>>*/  /*<<planet.ml 482 9>>*/ caml_js_meth_call_i_
-             (xe010e632_a_,_hG_,[0]);
+             (jsoo_self_a_,_hG_,[0]);
             var
               /*<<planet.ml 484 49>>*/ match_j_=
                /*<<planet.ml 484 49>>*/ caml_check_bound_y_(face_info_g_,_k_)
@@ -6900,7 +6910,7 @@
               /*<<planet.ml 492 0>>*/ d_S_=dy2_O_*_G_-dy3_P_*_I_,
               /*<<planet.ml 493 0>>*/ e_T_=dy2_O_*_H_-dy3_P_*_J_;
              /*<<planet.ml 495 0>>*/  /*<<planet.ml 495 0>>*/ caml_js_meth_call_i_
-             (xe010e632_a_,
+             (jsoo_self_a_,
               _hH_,
               [0,
                a_Q_,
@@ -6910,11 +6920,11 @@
                _m_-a_Q_*_L_-b_R_*_K_,
                _l_-d_S_*_L_-e_T_*_K_]);
              /*<<planet.ml 543 0>>*/  /*<<planet.ml 543 0>>*/ caml_js_meth_call_i_
-             (xe010e632_a_,
+             (jsoo_self_a_,
               _hI_,
-              [0,xdc5f61a5_c_,_F_,_E_,_D_,_C_,_F_,_E_,_D_,_C_]);
+              [0,jsoo_b62335d6_c_,_F_,_E_,_D_,_C_,_F_,_E_,_D_,_C_]);
              /*<<planet.ml 544 0>>*/  /*<<planet.ml 544 0>>*/ caml_js_meth_call_i_
-             (xe010e632_a_,_hJ_,[0])}
+             (jsoo_self_a_,_hJ_,[0])}
            /*<<array.ml 86 51>>*/ var _V_=_k_+1|0;
           if(_p_!==_k_){var _k_=_V_;continue}
           break}}
@@ -6922,7 +6932,7 @@
     var
       /*<<planet.ml 556 8>>*/ o_aj_=
        /*<<planet.ml 556 8>>*/ tesselate_sphere_hh_(12,8),
-      /*<<planet.ml 564 14>>*/ x32e1e419_hL_="../planet/texture.jpg";
+      /*<<planet.ml 564 14>>*/ jsoo_arg_hL_="../planet/texture.jpg";
      /*<<planet.ml 741 0>>*/ window_ae_.onload=
      /*<<planet.ml 741 23>>*/ handler___
      (function(param_a_)
@@ -7293,7 +7303,7 @@
                /*<<planet.ml 618 49>>*/ phi_rot_B_[1]=0;
                /*<<planet.ml 619 59>>*/ m_obliq_$_[1]=
                /*<<planet.ml 619 38>>*/ xy_rotation_cV_(-obl_Y_[1]);
-               /*<<planet.ml 66 52>>*/ return x120132ea_Z_ /*<<planet.ml 66 62>>*/ });
+               /*<<planet.ml 66 52>>*/ return jsoo_824000b9_Z_ /*<<planet.ml 66 62>>*/ });
            /*<<planet.ml 617 4>>*/  /*<<planet.ml 617 4>>*/ add_r_
            (form_j_,b_D_);
            /*<<planet.ml 620 4>>*/  /*<<planet.ml 620 4>>*/ add_r_
@@ -7312,15 +7322,15 @@
            /*<<planet.ml 624 4>>*/  /*<<planet.ml 624 4>>*/ _bn_
            (function(txt_a_)
              { /*<<dom_html.ml 1332 41>>*/ var
-               x0b22c4fa_b_=
+               jsoo_4977bef4_b_=
                  /*<<dom_html.ml 1332 41>>*/ unsafeCreateElement_ai_
                  (doc_e_,_gX_);
                /*<<planet.ml 627 9>>*/  /*<<planet.ml 627 9>>*/ add_r_
-               (x0b22c4fa_b_,
+               (jsoo_4977bef4_b_,
                  /*<<planet.ml 627 16>>*/ caml_js_meth_call_i_
                  (doc_e_,_hW_,[0, /*<<planet.ml 627 9>>*/ txt_a_.toString()]));
                /*<<planet.ml 628 9>>*/ return  /*<<planet.ml 628 9>>*/ caml_js_meth_call_i_
-                      (s_v_,_hX_,[0,x0b22c4fa_b_,no_handler_aV_]) /*<<planet.ml 628 28>>*/ },
+                      (s_v_,_hX_,[0,jsoo_4977bef4_b_,no_handler_aV_]) /*<<planet.ml 628 28>>*/ },
             _hV_);
            /*<<planet.ml 630 4>>*/ s_v_.onchange=
            /*<<planet.ml 631 6>>*/ handler___
@@ -7332,7 +7342,7 @@
                /*<<planet.ml 639 9>>*/  /*<<planet.ml 639 9>>*/ update_shadow_S_
                (obliquity_c_);
                /*<<planet.ml 639 24>>*/ obl_Y_[1]=obliquity_c_;
-               /*<<planet.ml 640 9>>*/ return x120132ea_Z_ /*<<planet.ml 640 17>>*/ });
+               /*<<planet.ml 640 9>>*/ return jsoo_824000b9_Z_ /*<<planet.ml 640 17>>*/ });
            /*<<planet.ml 641 4>>*/  /*<<planet.ml 641 4>>*/ add_r_
            (lab_I_,s_v_);
            /*<<planet.ml 642 4>>*/  /*<<planet.ml 642 4>>*/ add_r_
@@ -7384,9 +7394,9 @@
             /*<<planet.ml 663 2>>*/ my_L_=[0,0];
            /*<<planet.ml 664 2>>*/ canvas_F_.onmousedown=
            /*<<planet.ml 664 25>>*/ handler___
-           (function(xfcb44943_a_)
-             { /*<<planet.ml 666 13>>*/ mx_J_[1]=xfcb44943_a_.clientX;
-               /*<<planet.ml 666 32>>*/ my_L_[1]=xfcb44943_a_.clientY;
+           (function(jsoo_obj_a_)
+             { /*<<planet.ml 666 13>>*/ mx_J_[1]=jsoo_obj_a_.clientX;
+               /*<<planet.ml 666 32>>*/ my_L_[1]=jsoo_obj_a_.clientY;
               var
                 /*<<planet.ml 683 7>>*/ c2_b_=[0,no_handler_aV_],
                 /*<<planet.ml 668 9>>*/ c1_d_=
@@ -7394,10 +7404,10 @@
                  (doc_e_,
                   mousemove_gN_,
                    /*<<planet.ml 669 12>>*/ handler___
-                   (function(x428fca8c_a_)
+                   (function(jsoo_obj_a_)
                      {var
-                        /*<<planet.ml 671 25>>*/ x_d_=x428fca8c_a_.clientX,
-                        /*<<planet.ml 671 45>>*/ y_e_=x428fca8c_a_.clientY,
+                        /*<<planet.ml 671 25>>*/ x_d_=jsoo_obj_a_.clientX,
+                        /*<<planet.ml 671 45>>*/ y_e_=jsoo_obj_a_.clientY,
                         /*<<planet.ml 672 17>>*/ dx_f_=x_d_-mx_J_[1]|0,
                         /*<<planet.ml 672 17>>*/ dy_g_=y_e_-my_L_[1]|0;
                        /*<<planet.ml 673 17>>*/ if(0!==dy_g_)
@@ -7423,8 +7433,8 @@
                           _i_)}
                        /*<<planet.ml 679 17>>*/ mx_J_[1]=x_d_;
                        /*<<planet.ml 679 26>>*/ my_L_[1]=y_e_;
-                       /*<<planet.ml 680 17>>*/ return x120132ea_Z_ /*<<planet.ml 680 25>>*/ }),
-                  x120132ea_Z_);
+                       /*<<planet.ml 680 17>>*/ return jsoo_824000b9_Z_ /*<<planet.ml 680 25>>*/ }),
+                  jsoo_824000b9_Z_);
                /*<<planet.ml 691 21>>*/ c2_b_[1]=
                /*<<planet.ml 685 10>>*/ addEventListener_cK_
                (doc_e_,
@@ -7436,14 +7446,14 @@
                      /*<<planet.ml 688 45>>*/ var _c_=c2_b_[1];
                      /*<<js.ml 93 45>>*/ if(_c_!=no_handler_aV_)
                       /*<<js.ml 93 52>>*/ f_cL_(_c_);
-                     /*<<planet.ml 689 58>>*/ return x120132ea_Z_ /*<<planet.ml 690 26>>*/ }),
-                x120132ea_Z_);
+                     /*<<planet.ml 689 58>>*/ return jsoo_824000b9_Z_ /*<<planet.ml 690 26>>*/ }),
+                jsoo_824000b9_Z_);
                /*<<planet.ml 692 7>>*/ return false_bE_ /*<<planet.ml 692 16>>*/ });
           var
             /*<<planet.ml 693 16>>*/ ti_ac_=
             [0,
               /*<<planet.ml 693 16>>*/ caml_js_meth_call_i_
-              (new x2e2deb87_aW_(),_h1_,[0])],
+              (new jsoo_0d6e75e4_aW_(),_h1_,[0])],
             /*<<planet.ml 694 2>>*/ fps_C_=[0,0];
            /*<<planet.ml 696 2>>*/ function loop_ad_(t_g_,phi_b_)
            { /*<<planet.ml 697 19>>*/ var
@@ -7469,7 +7479,9 @@
              { /*<<planet.ml 706 6>>*/  /*<<planet.ml 706 6>>*/ caml_js_meth_call_i_
                (ctx_a_,_h4_,[0]);
                /*<<planet.ml 707 6>>*/  /*<<planet.ml 707 6>>*/ caml_js_meth_call_i_
-               (ctx_a_,_h5_,[0,r_k_,r_k_,r_k_*0.95,0,-2*pi_K_,x120132ea_Z_]);
+               (ctx_a_,
+                _h5_,
+                [0,r_k_,r_k_,r_k_*0.95,0,-2*pi_K_,jsoo_824000b9_Z_]);
                /*<<planet.ml 708 6>>*/  /*<<planet.ml 708 6>>*/ caml_js_meth_call_i_
                (ctx_a_,_h6_,[0])}
              /*<<planet.ml 711 4>>*/  /*<<planet.ml 711 4>>*/ caml_js_meth_call_i_
@@ -7498,7 +7510,7 @@
             var
               /*<<planet.ml 719 13>>*/ t_e_=
                /*<<planet.ml 719 13>>*/ caml_js_meth_call_i_
-               (new x2e2deb87_aW_(),_h__,[0]),
+               (new jsoo_0d6e75e4_aW_(),_h__,[0]),
               /*<<planet.ml 720 4>>*/ hz_f_=num_1e3_aw_/(t_e_-ti_ac_[1]),
               /*<<planet.ml 722 7>>*/ hz_p_=
               fps_C_[1]==0?hz_f_:0.9*fps_C_[1]+0.1*hz_f_;
@@ -7513,7 +7525,7 @@
              {var
                 /*<<planet.ml 726 13>>*/ t_d_=
                  /*<<planet.ml 726 13>>*/ caml_js_meth_call_i_
-                 (new x2e2deb87_aW_(),_ia_,[0]),
+                 (new jsoo_0d6e75e4_aW_(),_ia_,[0]),
                 /*<<planet.ml 727 4>>*/ dt_c_=t_d_-t_g_,
                 /*<<planet.ml 728 4>>*/ _f_=
                 dt_c_<0?0:num_1e3_aw_<dt_c_?0:dt_c_,
@@ -7529,7 +7541,7 @@
                     ( /*<<planet.ml 725 4>>*/ sleep_ha_(0.01),_r_) /*<<planet.ml 735 45>>*/ }
            /*<<planet.ml 737 8>>*/ return  /*<<planet.ml 737 8>>*/ loop_ad_
                   ( /*<<planet.ml 737 8>>*/ caml_js_meth_call_i_
-                    (new x2e2deb87_aW_(),_ic_,[0]),
+                    (new jsoo_0d6e75e4_aW_(),_ic_,[0]),
                    0) /*<<planet.ml 737 45>>*/ }
          /*<<dom_html.ml 1366 37>>*/ var
          img_d_=
@@ -7547,7 +7559,7 @@
            { /*<<planet.ml 314 15>>*/  /*<<planet.ml 314 15>>*/ wakeup_bB_
              (_j_,0);
              /*<<planet.ml 324 49>>*/ return false_bE_ /*<<planet.ml 324 60>>*/ });
-         /*<<planet.ml 324 63>>*/ img_d_.src=x32e1e419_hL_;
+         /*<<planet.ml 324 63>>*/ img_d_.src=jsoo_arg_hL_;
          /*<<src/core/lwt.ml 811 16>>*/ var
          _c_=
            /*<<src/core/lwt.ml 811 8>>*/ repr_ap_

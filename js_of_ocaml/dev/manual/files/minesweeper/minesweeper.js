@@ -1625,7 +1625,7 @@
       /*<<js.ml 50 15>>*/ window_o_=joo_global_object_c_,
       /*<<js.ml 66 20>>*/ no_handler_at_=null,
       /*<<js.ml 140 13>>*/ false_t_=false,
-      /*<<js.ml 242 24>>*/ xbcb1e9dd_au_=window_o_.Array,
+      /*<<js.ml 242 24>>*/ jsoo_593685be_au_=window_o_.Array,
       /*<<js.ml 381 11>>*/ Error_av_=
        /*<<js.ml 381 11>>*/ caml_set_oo_id_w_([num_248_a_,_bw_,0]),
       /*<<js.ml 393 69>>*/ exn_Z_=[0,Error_av_,{}],
@@ -1645,32 +1645,32 @@
                      (param_a_[2],_bx_,[0]))]
                 :0 /*<<js.ml 445 70>>*/ });
      /*<<js.ml 447 2>>*/  /*<<js.ml 447 2>>*/ register_printer_as_
-     (function(xa78544e1_a_)
-       { /*<<js.ml 449 40>>*/ return xa78544e1_a_ instanceof xbcb1e9dd_au_
+     (function(jsoo_self_a_)
+       { /*<<js.ml 449 40>>*/ return jsoo_self_a_ instanceof jsoo_593685be_au_
                 ?0
                 :[0,
                    /*<<js.ml 450 18>>*/ caml_js_to_string_O_
                    ( /*<<js.ml 450 29>>*/ caml_js_meth_call_h_
-                     (xa78544e1_a_,_by_,[0]))] /*<<js.ml 450 56>>*/ });
-    function _j_(x18184c07_a_,x32f94eb9_b_)
+                     (jsoo_self_a_,_by_,[0]))] /*<<js.ml 450 56>>*/ });
+    function _j_(jsoo_self_a_,jsoo_ad7fbbdd_b_)
      { /*<<dom.ml 94 10>>*/  /*<<dom.ml 94 10>>*/ caml_js_meth_call_h_
-       (x18184c07_a_,_bz_,[0,x32f94eb9_b_]);
+       (jsoo_self_a_,_bz_,[0,jsoo_ad7fbbdd_b_]);
        /*<<dom.ml 94 10>>*/ return 0 /*<<dom.ml 94 41>>*/ }
     function handler_u_(f_c_)
-     { /*<<dom.ml 231 2>>*/ return function(xf5b7986a_a_)
-       { /*<<dom.ml 234 34>>*/ if(1-(xf5b7986a_a_==no_handler_at_?1:0))
+     { /*<<dom.ml 231 2>>*/ return function(jsoo_self_a_)
+       { /*<<dom.ml 234 34>>*/ if(1-(jsoo_self_a_==no_handler_at_?1:0))
          { /*<<dom.ml 242 11>>*/ var
            res_d_=
-             /*<<dom.ml 242 11>>*/ caml_call_gen1_z_(f_c_,xf5b7986a_a_);
+             /*<<dom.ml 242 11>>*/ caml_call_gen1_z_(f_c_,jsoo_self_a_);
            /*<<dom.ml 243 30>>*/ if(!(res_d_|0))
-            /*<<dom.ml 244 10>>*/ caml_js_meth_call_h_(xf5b7986a_a_,_bA_,[0]);
+            /*<<dom.ml 244 10>>*/ caml_js_meth_call_h_(jsoo_self_a_,_bA_,[0]);
            /*<<dom.ml 245 8>>*/ return res_d_}
         var
-          /*<<dom.ml 236 16>>*/ xc3540b3c_e_=event,
+          /*<<dom.ml 236 16>>*/ jsoo_obj_e_=event,
           /*<<dom.ml 237 18>>*/ match_b_=
-           /*<<dom.ml 237 18>>*/ caml_call_gen1_z_(f_c_,xc3540b3c_e_);
+           /*<<dom.ml 237 18>>*/ caml_call_gen1_z_(f_c_,jsoo_obj_e_);
          /*<<dom.ml 238 30>>*/ if(!(match_b_|0))
-         xc3540b3c_e_.returnValue=match_b_;
+         jsoo_obj_e_.returnValue=match_b_;
          /*<<dom.ml 240 1>>*/ return match_b_ /*<<dom.ml 245 11>>*/ } /*<<dom.ml 245 13>>*/ }
      /*<<dom_html.ml 1231 15>>*/ var document_bB_=window_o_.document;
      /*<<dom_html.ml 1231 15>>*/ function opt_iter_F_(x_a_,f_b_)
@@ -1678,9 +1678,9 @@
               ? /*<<dom_html.ml 1277 55>>*/ caml_call_gen1_z_(f_b_,x_a_[1])
               :0 /*<<dom_html.ml 1277 58>>*/ }
      /*<<dom_html.ml 1231 15>>*/ function createElement___
-     (x18184c07_a_,name_b_)
+     (jsoo_self_a_,name_b_)
      { /*<<dom_html.ml 1279 44>>*/ return  /*<<dom_html.ml 1279 44>>*/ caml_js_meth_call_h_
-              (x18184c07_a_,
+              (jsoo_self_a_,
                _bC_,
                [0, /*<<dom_html.ml 1279 44>>*/ name_b_.toString()]) /*<<dom_html.ml 1279 78>>*/ }
      /*<<dom_html.ml 1231 15>>*/ function unsafeCreateElement_$_
@@ -1719,9 +1719,9 @@
            /*<<dom_html.ml 1320 8>>*/ createElementSyntax_aw_[1]=_m_;
           continue}
         if(num_982028505_aN_<=_g_)
-         { /*<<dom_html.ml 1295 16>>*/ var a_e_=new xbcb1e9dd_au_();
+         { /*<<dom_html.ml 1295 16>>*/ var a_e_=new jsoo_593685be_au_();
            /*<<dom_html.ml 1296 16>>*/  /*<<dom_html.ml 1296 16>>*/ caml_js_meth_call_h_
-           (a_e_,_bG_,[0,"<", /*<<dom_html.ml 1296 8>>*/ elt_d_.toString()]);
+           (a_e_,_bG_,[0,"<", /*<<dom_html.ml 1296 39>>*/ elt_d_.toString()]);
            /*<<dom_html.ml 1297 8>>*/  /*<<dom_html.ml 1297 8>>*/ opt_iter_F_
            (type_a_,
             function(t_a_)
@@ -1730,7 +1730,7 @@
                 _bH_,
                 [0,
                  ' type="',
-                  /*<<dom_html.ml 1299 13>>*/ caml_js_html_escape_bd_(t_a_),
+                  /*<<dom_html.ml 1299 45>>*/ caml_js_html_escape_bd_(t_a_),
                  str_aW_]);
                /*<<dom_html.ml 1299 13>>*/ return 0 /*<<dom_html.ml 1299 76>>*/ });
            /*<<dom_html.ml 1300 8>>*/  /*<<dom_html.ml 1300 8>>*/ opt_iter_F_
@@ -1741,7 +1741,7 @@
                 _bI_,
                 [0,
                  ' name="',
-                  /*<<dom_html.ml 1302 13>>*/ caml_js_html_escape_bd_(n_a_),
+                  /*<<dom_html.ml 1302 45>>*/ caml_js_html_escape_bd_(n_a_),
                  str_aW_]);
                /*<<dom_html.ml 1302 13>>*/ return 0 /*<<dom_html.ml 1302 76>>*/ });
            /*<<dom_html.ml 1303 16>>*/  /*<<dom_html.ml 1303 16>>*/ caml_js_meth_call_h_
@@ -1757,12 +1757,12 @@
            /*<<dom_html.ml 1290 36>>*/ createElement___(doc_c_,elt_d_);
          /*<<dom_html.ml 1291 8>>*/  /*<<dom_html.ml 1291 8>>*/ opt_iter_F_
          (type_a_,
-          function(x521a4c10_a_)
-           { /*<<dom_html.ml 1291 33>>*/ return res_f_.type=x521a4c10_a_ /*<<dom_html.ml 1291 48>>*/ });
+          function(jsoo_arg_a_)
+           { /*<<dom_html.ml 1291 33>>*/ return res_f_.type=jsoo_arg_a_ /*<<dom_html.ml 1291 48>>*/ });
          /*<<dom_html.ml 1292 8>>*/  /*<<dom_html.ml 1292 8>>*/ opt_iter_F_
          (name_b_,
-          function(x96770fe7_a_)
-           { /*<<dom_html.ml 1292 32>>*/ return res_f_.name=x96770fe7_a_ /*<<dom_html.ml 1292 46>>*/ });
+          function(jsoo_arg_a_)
+           { /*<<dom_html.ml 1292 32>>*/ return res_f_.name=jsoo_arg_a_ /*<<dom_html.ml 1292 46>>*/ });
          /*<<dom_html.ml 1292 47>>*/ return res_f_} /*<<dom_html.ml 1320 50>>*/ }
      /*<<dom_html.ml 1231 15>>*/ function createInput_ax_
      (type_a_,name_b_,doc_c_)
@@ -1777,7 +1777,7 @@
      /*<<dom_html.ml 1231 15>>*/  /*<<dom_html.ml 1231 15>>*/ caml_set_oo_id_w_
      ([num_248_a_,_bQ_,0]);
      /*<<dom_html.ml 1421 23>>*/ window_o_.HTMLElement===undefined_bv_;
-     /*<<minesweeper.ml 13 15>>*/ var x26523dec_v_=window_o_.document;
+     /*<<minesweeper.ml 13 15>>*/ var jsoo_self_v_=window_o_.document;
      /*<<minesweeper.ml 13 15>>*/ function _aA_(cf_a_,f_b_)
      {var
         /*<<minesweeper.ml 33 2>>*/ _e_=cf_a_[1]-1|0,
@@ -1840,7 +1840,7 @@
           var _e_=_i_;
           continue}
          /*<<list.ml 184 10>>*/ return  /*<<list.ml 184 10>>*/ _aq_(_f_)} /*<<minesweeper.ml 53 31>>*/ }
-     /*<<minesweeper.ml 13 15>>*/ function _G_(dom_a_,bd_b_)
+     /*<<minesweeper.ml 13 15>>*/ function _G_(jsoo_obj_a_,bd_b_)
      { /*<<minesweeper.ml 124 2>>*/ var
        _c_=
         bd_b_[3]
@@ -1857,7 +1857,7 @@
                      (str_i_+bd_b_[4]),
                     _bV_))
              :_bX_;
-       /*<<minesweeper.ml 124 2>>*/ return dom_a_.src=
+       /*<<minesweeper.ml 124 2>>*/ return jsoo_obj_a_.src=
               /*<<minesweeper.ml 125 4>>*/ _c_.toString() /*<<minesweeper.ml 131 34>>*/ }
      /*<<minesweeper.ml 13 15>>*/ function _aC_(d_a_)
      {var
@@ -1908,20 +1908,20 @@
            /*<<minesweeper.ml 142 4>>*/ if(!(_f_<0))
            {var _c_=_i_;
              /*<<minesweeper.ml 143 6>>*/ for(;;)
-             { /*<<minesweeper.ml 143 32>>*/ var
-               match_k_=
-                 /*<<minesweeper.ml 143 32>>*/ handler_u_
-                 (function(param_a_)
-                   { /*<<minesweeper.ml 144 18>>*/  /*<<minesweeper.ml 144 18>>*/ caml_js_meth_call_h_
-                     (window_o_,_bY_,[0,"GAME OVER"]);
-                     /*<<minesweeper.ml 144 54>>*/ return false_t_ /*<<minesweeper.ml 144 63>>*/ });
-               /*<<minesweeper.ml 143 6>>*/  /*<<minesweeper.ml 143 15>>*/ caml_check_bound_e_
-                ( /*<<minesweeper.ml 143 6>>*/ caml_check_bound_e_
-                   (d_a_[2],_b_)
-                  [_b_+1],
-                 _c_)
-               [_c_+1].onclick=
-              match_k_;
+             { /*<<minesweeper.ml 143 15>>*/ var
+               jsoo_obj_k_=
+                 /*<<minesweeper.ml 143 15>>*/ caml_check_bound_e_
+                  ( /*<<minesweeper.ml 143 6>>*/ caml_check_bound_e_
+                     (d_a_[2],_b_)
+                    [_b_+1],
+                   _c_)
+                 [_c_+1];
+               /*<<minesweeper.ml 143 6>>*/ jsoo_obj_k_.onclick=
+               /*<<minesweeper.ml 143 32>>*/ handler_u_
+               (function(param_a_)
+                 { /*<<minesweeper.ml 144 18>>*/  /*<<minesweeper.ml 144 18>>*/ caml_js_meth_call_h_
+                   (window_o_,_bY_,[0,"GAME OVER"]);
+                   /*<<minesweeper.ml 144 54>>*/ return false_t_ /*<<minesweeper.ml 144 63>>*/ });
                /*<<minesweeper.ml 144 64>>*/ var _l_=_c_+1|0;
               if(_f_!==_c_){var _c_=_l_;continue}
               break}}
@@ -2217,14 +2217,14 @@
                   /*<<minesweeper.ml 185 2>>*/ mode_H_=[0,0],
                   /*<<minesweeper.ml 186 12>>*/ buf_s_=
                    /*<<minesweeper.ml 186 12>>*/ caml_js_meth_call_h_
-                   (x26523dec_v_,_b0_,[0]);
+                   (jsoo_self_v_,_b0_,[0]);
                  /*<<minesweeper.ml 187 2>>*/  /*<<minesweeper.ml 187 2>>*/ _j_
                  (buf_s_,
                    /*<<minesweeper.ml 187 23>>*/ caml_js_meth_call_h_
-                   (x26523dec_v_,_b1_,[0,"Mode : "]));
+                   (jsoo_self_v_,_b1_,[0,"Mode : "]));
                  /*<<minesweeper.ml 188 12>>*/ var
                  img_z_=
-                   /*<<minesweeper.ml 188 12>>*/ createImg_ay_(x26523dec_v_);
+                   /*<<minesweeper.ml 188 12>>*/ createImg_ay_(jsoo_self_v_);
                  /*<<minesweeper.ml 189 2>>*/  /*<<minesweeper.ml 189 2>>*/ _j_
                  (buf_s_,img_z_);
                  /*<<minesweeper.ml 190 2>>*/ img_z_.src=
@@ -2243,7 +2243,7 @@
                      /*<<minesweeper.ml 197 7>>*/ return false_t_ /*<<minesweeper.ml 197 16>>*/ });
                  /*<<minesweeper.ml 199 2>>*/  /*<<minesweeper.ml 199 2>>*/ _j_
                  (buf_s_,
-                   /*<<minesweeper.ml 199 23>>*/ createBr_y_(x26523dec_v_));
+                   /*<<minesweeper.ml 199 23>>*/ createBr_y_(jsoo_self_v_));
                 var
                   /*<<minesweeper.ml 199 46>>*/ _ax_=d_g_[3][2]-1|0,
                   /*<<minesweeper.ml 199 46>>*/ _a2_=0;
@@ -2259,7 +2259,7 @@
                        /*<<minesweeper.ml 203 6>>*/ for(;;)
                        { /*<<minesweeper.ml 203 16>>*/ var
                          img_c_=
-                           /*<<minesweeper.ml 203 16>>*/ createImg_ay_(x26523dec_v_);
+                           /*<<minesweeper.ml 203 16>>*/ createImg_ay_(jsoo_self_v_);
                          /*<<minesweeper.ml 204 6>>*/ imgs___[1]=
                         [0,img_c_,imgs___[1]];
                          /*<<minesweeper.ml 205 6>>*/ img_c_.src=
@@ -2504,7 +2504,7 @@
                         break}}
                      /*<<minesweeper.ml 224 4>>*/  /*<<minesweeper.ml 224 4>>*/ _j_
                      (buf_s_,
-                       /*<<minesweeper.ml 224 25>>*/ createBr_y_(x26523dec_v_));
+                       /*<<minesweeper.ml 224 25>>*/ createBr_y_(jsoo_self_v_));
                      /*<<minesweeper.ml 225 32>>*/ var
                      l_I_=
                        /*<<minesweeper.ml 225 32>>*/ _aq_(imgs___[1]);

@@ -7835,12 +7835,12 @@
               ? /*<<js.ml 109 39>>*/ caml_call_gen1_h_(f_b_,0)
               :x_a_ /*<<js.ml 109 50>>*/ }
     var
-      /*<<js.ml 139 12>>*/ xf5b7986a_y_=true,
-      /*<<js.ml 140 13>>*/ x3bd6d47f_D_=false,
-      /*<<js.ml 199 13>>*/ x6a5316b9_bp_=window_c_.RegExp,
-      /*<<js.ml 242 24>>*/ x173316d7_cW_=window_c_.Array,
-      /*<<js.ml 334 18>>*/ x90e12450_js_=window_c_.Date,
-      /*<<js.ml 381 11>>*/ xf499ad27_jt_=window_c_.Math,
+      /*<<js.ml 139 12>>*/ jsoo_a030bfac_y_=true,
+      /*<<js.ml 140 13>>*/ jsoo_359432e5_D_=false,
+      /*<<js.ml 199 13>>*/ jsoo_f5b7986a_bp_=window_c_.RegExp,
+      /*<<js.ml 242 24>>*/ jsoo_173316d7_cW_=window_c_.Array,
+      /*<<js.ml 334 18>>*/ jsoo_f5a2075c_js_=window_c_.Date,
+      /*<<js.ml 381 11>>*/ jsoo_self_jt_=window_c_.Math,
       /*<<js.ml 381 11>>*/ Error_ev_=
        /*<<js.ml 381 11>>*/ caml_set_oo_id___([num_248_d_,_ju_,0]);
      /*<<js.ml 393 8>>*/  /*<<js.ml 393 8>>*/ _i__(_jv_,[0,Error_ev_,{}]);
@@ -7856,59 +7856,63 @@
                      (param_a_[2],_jw_,[0]))]
                 :0 /*<<js.ml 445 70>>*/ });
      /*<<js.ml 447 2>>*/  /*<<js.ml 447 2>>*/ register_printer_eg_
-     (function(xa78544e1_a_)
-       { /*<<js.ml 449 40>>*/ return xa78544e1_a_ instanceof x173316d7_cW_
+     (function(jsoo_self_a_)
+       { /*<<js.ml 449 40>>*/ return jsoo_self_a_ instanceof jsoo_173316d7_cW_
                 ?0
                 :[0,
                    /*<<js.ml 450 18>>*/ caml_js_to_string_P_
                    ( /*<<js.ml 450 29>>*/ caml_js_meth_call_i_
-                     (xa78544e1_a_,_jx_,[0]))] /*<<js.ml 450 56>>*/ });
-    function _j_(x18184c07_a_,x32f94eb9_b_)
+                     (jsoo_self_a_,_jx_,[0]))] /*<<js.ml 450 56>>*/ });
+    function _j_(jsoo_self_a_,jsoo_ad7fbbdd_b_)
      { /*<<dom.ml 94 10>>*/  /*<<dom.ml 94 10>>*/ caml_js_meth_call_i_
-       (x18184c07_a_,_jy_,[0,x32f94eb9_b_]);
+       (jsoo_self_a_,_jy_,[0,jsoo_ad7fbbdd_b_]);
        /*<<dom.ml 94 10>>*/ return 0 /*<<dom.ml 94 41>>*/ }
-    function _a4_(x96770fe7_a_,x521a4c10_b_)
+    function _a4_(jsoo_self_a_,jsoo_1df5757a_b_)
      { /*<<dom.ml 97 10>>*/  /*<<dom.ml 97 10>>*/ caml_js_meth_call_i_
-       (x96770fe7_a_,_jz_,[0,x521a4c10_b_]);
+       (jsoo_self_a_,_jz_,[0,jsoo_1df5757a_b_]);
        /*<<dom.ml 97 10>>*/ return 0 /*<<dom.ml 97 41>>*/ }
     function handler_v_(f_c_)
-     { /*<<dom.ml 231 2>>*/ return function(xf5b7986a_a_)
-       { /*<<dom.ml 234 34>>*/ if( /*<<dom.ml 234 14>>*/ _et_(xf5b7986a_a_))
+     { /*<<dom.ml 231 2>>*/ return function(jsoo_self_a_)
+       { /*<<dom.ml 234 34>>*/ if( /*<<dom.ml 234 14>>*/ _et_(jsoo_self_a_))
          { /*<<dom.ml 242 11>>*/ var
            res_d_=
-             /*<<dom.ml 242 11>>*/ caml_call_gen1_h_(f_c_,xf5b7986a_a_);
+             /*<<dom.ml 242 11>>*/ caml_call_gen1_h_(f_c_,jsoo_self_a_);
            /*<<dom.ml 243 30>>*/ if(!(res_d_|0))
-            /*<<dom.ml 244 10>>*/ caml_js_meth_call_i_(xf5b7986a_a_,_jA_,[0]);
+            /*<<dom.ml 244 10>>*/ caml_js_meth_call_i_(jsoo_self_a_,_jA_,[0]);
            /*<<dom.ml 245 8>>*/ return res_d_}
         var
-          /*<<dom.ml 236 16>>*/ xc3540b3c_e_=event,
+          /*<<dom.ml 236 16>>*/ jsoo_obj_e_=event,
           /*<<dom.ml 237 18>>*/ match_b_=
-           /*<<dom.ml 237 18>>*/ caml_call_gen1_h_(f_c_,xc3540b3c_e_);
+           /*<<dom.ml 237 18>>*/ caml_call_gen1_h_(f_c_,jsoo_obj_e_);
          /*<<dom.ml 238 30>>*/ if(!(match_b_|0))
-         xc3540b3c_e_.returnValue=match_b_;
+         jsoo_obj_e_.returnValue=match_b_;
          /*<<dom.ml 240 1>>*/ return match_b_ /*<<dom.ml 245 11>>*/ } /*<<dom.ml 245 13>>*/ }
     function addEventListener_aw_
-     (x0c26bf87_e_,x3bf4f782_b_,x98db9fd1_c_,x7428a376_d_)
-     { /*<<dom.ml 289 5>>*/ if(x0c26bf87_e_.addEventListener===undefined_aP_)
+     (jsoo_self_e_,jsoo_4ec1b650_b_,jsoo_c9a9e1c3_c_,jsoo_a44ae7e3_d_)
+     { /*<<dom.ml 289 5>>*/ if(jsoo_self_e_.addEventListener===undefined_aP_)
        {var
-          /*<<dom.ml 290 13>>*/ x6a77c4b0_f_=
+          /*<<dom.ml 290 13>>*/ jsoo_6bc4b4e3_f_=
            /*<<dom.ml 290 13>>*/ caml_js_meth_call_i_
-           (str_on_df_,_jB_,[0,x3bf4f782_b_]),
-          /*<<dom.ml 291 4>>*/ x560e4fa1_g_=
+           (str_on_df_,_jB_,[0,jsoo_4ec1b650_b_]),
+          /*<<dom.ml 291 4>>*/ jsoo_33fd16a3_g_=
           function(e_a_)
-           { /*<<dom.ml 291 28>>*/ var _d_=[0,x98db9fd1_c_,e_a_,[0]];
+           { /*<<dom.ml 291 28>>*/ var _d_=[0,jsoo_c9a9e1c3_c_,e_a_,[0]];
              /*<<dom.ml 291 28>>*/ return function(_a_,_b_)
              { /*<<?>>*/ return caml_js_call_nI_(_d_,_a_,_b_)} /*<<dom.ml 291 55>>*/ };
          /*<<dom.ml 292 13>>*/  /*<<dom.ml 292 13>>*/ caml_js_meth_call_i_
-         (x0c26bf87_e_,_jC_,[0,x6a77c4b0_f_,x560e4fa1_g_]);
+         (jsoo_self_e_,_jC_,[0,jsoo_6bc4b4e3_f_,jsoo_33fd16a3_g_]);
          /*<<dom.ml 293 8>>*/ return function(param_a_)
          { /*<<dom.ml 293 14>>*/ return  /*<<dom.ml 293 14>>*/ caml_js_meth_call_i_
-                  (x0c26bf87_e_,_jD_,[0,x6a77c4b0_f_,x560e4fa1_g_]) /*<<dom.ml 293 61>>*/ }}
+                  (jsoo_self_e_,_jD_,[0,jsoo_6bc4b4e3_f_,jsoo_33fd16a3_g_]) /*<<dom.ml 293 61>>*/ }}
        /*<<dom.ml 295 13>>*/  /*<<dom.ml 295 13>>*/ caml_js_meth_call_i_
-       (x0c26bf87_e_,_jE_,[0,x3bf4f782_b_,x98db9fd1_c_,x7428a376_d_]);
+       (jsoo_self_e_,
+        _jE_,
+        [0,jsoo_4ec1b650_b_,jsoo_c9a9e1c3_c_,jsoo_a44ae7e3_d_]);
        /*<<dom.ml 296 8>>*/ return function(param_a_)
        { /*<<dom.ml 296 14>>*/ return  /*<<dom.ml 296 14>>*/ caml_js_meth_call_i_
-                (x0c26bf87_e_,_jF_,[0,x3bf4f782_b_,x98db9fd1_c_,x7428a376_d_]) /*<<dom.ml 296 70>>*/ } /*<<dom.ml 297 5>>*/ }
+                (jsoo_self_e_,
+                 _jF_,
+                 [0,jsoo_4ec1b650_b_,jsoo_c9a9e1c3_c_,jsoo_a44ae7e3_d_]) /*<<dom.ml 296 70>>*/ } /*<<dom.ml 297 5>>*/ }
     function removeEventListener_an_(id_a_)
      { /*<<dom.ml 299 29>>*/ return  /*<<dom.ml 299 29>>*/ caml_call_gen1_h_
               (id_a_,0) /*<<dom.ml 299 34>>*/ }
@@ -7931,9 +7935,9 @@
               ? /*<<dom_html.ml 1277 55>>*/ caml_call_gen1_h_(f_b_,x_a_[1])
               :0 /*<<dom_html.ml 1277 58>>*/ }
      /*<<dom_html.ml 1231 15>>*/ function createElement_bq_
-     (x18184c07_a_,name_b_)
+     (jsoo_self_a_,name_b_)
      { /*<<dom_html.ml 1279 44>>*/ return  /*<<dom_html.ml 1279 44>>*/ caml_js_meth_call_i_
-              (x18184c07_a_,
+              (jsoo_self_a_,
                _jM_,
                [0, /*<<dom_html.ml 1279 44>>*/ name_b_.toString()]) /*<<dom_html.ml 1279 78>>*/ }
      /*<<dom_html.ml 1231 15>>*/ function unsafeCreateElement_aR_
@@ -7972,9 +7976,9 @@
            /*<<dom_html.ml 1320 8>>*/ createElementSyntax_eA_[1]=_n_;
           continue}
         if(num_982028505_f6_<=_h_)
-         { /*<<dom_html.ml 1295 16>>*/ var a_e_=new x173316d7_cW_();
+         { /*<<dom_html.ml 1295 16>>*/ var a_e_=new jsoo_173316d7_cW_();
            /*<<dom_html.ml 1296 16>>*/  /*<<dom_html.ml 1296 16>>*/ caml_js_meth_call_i_
-           (a_e_,_jQ_,[0,"<", /*<<dom_html.ml 1296 8>>*/ elt_d_.toString()]);
+           (a_e_,_jQ_,[0,"<", /*<<dom_html.ml 1296 39>>*/ elt_d_.toString()]);
            /*<<dom_html.ml 1297 8>>*/  /*<<dom_html.ml 1297 8>>*/ opt_iter_bW_
            (type_a_,
             function(t_a_)
@@ -7983,7 +7987,7 @@
                 _jR_,
                 [0,
                  ' type="',
-                  /*<<dom_html.ml 1299 13>>*/ caml_js_html_escape_gC_(t_a_),
+                  /*<<dom_html.ml 1299 45>>*/ caml_js_html_escape_gC_(t_a_),
                  str_aL_]);
                /*<<dom_html.ml 1299 13>>*/ return 0 /*<<dom_html.ml 1299 76>>*/ });
            /*<<dom_html.ml 1300 8>>*/  /*<<dom_html.ml 1300 8>>*/ opt_iter_bW_
@@ -7994,7 +7998,7 @@
                 _jS_,
                 [0,
                  ' name="',
-                  /*<<dom_html.ml 1302 13>>*/ caml_js_html_escape_gC_(n_a_),
+                  /*<<dom_html.ml 1302 45>>*/ caml_js_html_escape_gC_(n_a_),
                  str_aL_]);
                /*<<dom_html.ml 1302 13>>*/ return 0 /*<<dom_html.ml 1302 76>>*/ });
            /*<<dom_html.ml 1303 16>>*/  /*<<dom_html.ml 1303 16>>*/ caml_js_meth_call_i_
@@ -8010,12 +8014,12 @@
            /*<<dom_html.ml 1290 36>>*/ createElement_bq_(doc_c_,elt_d_);
          /*<<dom_html.ml 1291 8>>*/  /*<<dom_html.ml 1291 8>>*/ opt_iter_bW_
          (type_a_,
-          function(x521a4c10_a_)
-           { /*<<dom_html.ml 1291 33>>*/ return res_g_.type=x521a4c10_a_ /*<<dom_html.ml 1291 48>>*/ });
+          function(jsoo_arg_a_)
+           { /*<<dom_html.ml 1291 33>>*/ return res_g_.type=jsoo_arg_a_ /*<<dom_html.ml 1291 48>>*/ });
          /*<<dom_html.ml 1292 8>>*/  /*<<dom_html.ml 1292 8>>*/ opt_iter_bW_
          (name_b_,
-          function(x96770fe7_a_)
-           { /*<<dom_html.ml 1292 32>>*/ return res_g_.name=x96770fe7_a_ /*<<dom_html.ml 1292 46>>*/ });
+          function(jsoo_arg_a_)
+           { /*<<dom_html.ml 1292 32>>*/ return res_g_.name=jsoo_arg_a_ /*<<dom_html.ml 1292 46>>*/ });
          /*<<dom_html.ml 1292 47>>*/ return res_g_} /*<<dom_html.ml 1320 50>>*/ }
      /*<<dom_html.ml 1231 15>>*/ function createButton_jW_
      (type_a_,name_b_,doc_c_)
@@ -8057,15 +8061,15 @@
        return c_b_;
        /*<<dom_html.ml 1414 65>>*/ throw Canvas_not_available_eG_ /*<<dom_html.ml 1415 3>>*/ }
      /*<<dom_html.ml 1421 23>>*/ window_c_.HTMLElement===undefined_aP_;
-    function stopPropagation_a5_(x2d174536_b_)
+    function stopPropagation_a5_(jsoo_obj_b_)
      { /*<<dom_html.ml 1821 2>>*/ function _a_(param_a_)
        { /*<<dom_html.ml 1824 14>>*/ return  /*<<dom_html.ml 1824 14>>*/ caml_js_meth_call_i_
-                (x2d174536_b_,_j8_,[0]) /*<<dom_html.ml 1824 35>>*/ }
+                (jsoo_obj_b_,_j8_,[0]) /*<<dom_html.ml 1824 35>>*/ }
        /*<<dom_html.ml 1821 2>>*/ function _c_(param_a_)
-       { /*<<dom_html.ml 1823 15>>*/ return x2d174536_b_.cancelBubble=
-               xf5b7986a_y_ /*<<dom_html.ml 1823 42>>*/ }
+       { /*<<dom_html.ml 1823 15>>*/ return jsoo_obj_b_.cancelBubble=
+               jsoo_a030bfac_y_ /*<<dom_html.ml 1823 42>>*/ }
        /*<<dom_html.ml 1822 5>>*/ return  /*<<dom_html.ml 1822 5>>*/ _bn_
-              (x2d174536_b_.stopPropagation,_c_,_a_) /*<<dom_html.ml 1824 36>>*/ }
+              (jsoo_obj_b_.stopPropagation,_c_,_a_) /*<<dom_html.ml 1824 36>>*/ }
     var
       /*<<dom_html.ml 1827 2>>*/ _j$_=
        /*<<dom_html.ml 1827 2>>*/ caml_js_pure_expr_nL_
@@ -8099,7 +8103,7 @@
                 /*<<dom_html.ml 1841 9>>*/ now_b_=
                 function(param_a_)
                  { /*<<dom_html.ml 1841 22>>*/ return  /*<<dom_html.ml 1841 22>>*/ caml_js_meth_call_i_
-                          (new x90e12450_js_(),_j9_,[0]) /*<<dom_html.ml 1841 53>>*/ },
+                          (new jsoo_f5a2075c_js_(),_j9_,[0]) /*<<dom_html.ml 1841 53>>*/ },
                 /*<<dom_html.ml 1842 31>>*/ last_d_=
                 [0, /*<<dom_html.ml 1842 25>>*/ now_b_(0)];
                /*<<dom_html.ml 1843 13>>*/ return function(callback_a_)
@@ -8117,7 +8121,7 @@
                  /*<<dom_html.ml 1848 19>>*/ return 0 /*<<dom_html.ml 1848 53>>*/ }}
              /*<<dom_html.ml 1822 5>>*/ throw _f_}
           return _g_ /*<<dom_html.ml 1848 53>>*/ }),
-      /*<<firebug.ml 78 14>>*/ x541dc528_ax_=
+      /*<<firebug.ml 78 14>>*/ jsoo_self_ax_=
        /*<<firebug.ml 78 14>>*/ caml_js_get_console_nJ_(0),
       /*<<dom_html.ml 1848 54>>*/ _ka_=num_2147483e3_dr_,
       /*<<file.ml 56 18>>*/ blob_constr_kd_=window_c_.Blob,
@@ -8145,8 +8149,7 @@
           (window_c_,
            _kb_,
            [0,
-             /*<<dom_html.ml 1877 16>>*/ caml_js_wrap_callback_cw_
-             (callback_j_),
+             /*<<dom_html.ml 1877 4>>*/ caml_js_wrap_callback_cw_(callback_j_),
             _h_])];
          /*<<dom_html.ml 1877 16>>*/ return 0 /*<<dom_html.ml 1877 63>>*/ }
        /*<<dom_html.ml 1879 2>>*/  /*<<dom_html.ml 1879 2>>*/ loop_e_(d_h_,0);
@@ -8168,13 +8171,13 @@
                    (window_c_,
                     _kf_,
                     [0,
-                      /*<<lwt_js.ml 30 17>>*/ caml_js_wrap_callback_cw_(_jq_),
+                      /*<<lwt_js.ml 31 5>>*/ caml_js_wrap_callback_cw_(_jq_),
                      0]),
                   0)
                 :0 /*<<lwt_js.ml 32 11>>*/ });
      /*<<lwt_js.ml 34 43>>*/ function _eJ_(s_a_)
      { /*<<lwt_js.ml 37 21>>*/ return  /*<<lwt_js.ml 37 21>>*/ caml_js_meth_call_i_
-              (x541dc528_ax_,
+              (jsoo_self_ax_,
                _kg_,
                [0, /*<<lwt_js.ml 37 21>>*/ s_a_.toString()]) /*<<lwt_js.ml 37 54>>*/ }
      /*<<lwt_js.ml 34 43>>*/ async_exception_hook_cS_[1]=
@@ -8186,13 +8189,13 @@
               (stderr_bd_) /*<<lwt_js.ml 43 35>>*/ };
     function regexp_br_(s_a_)
      { /*<<regexp.ml 25 57>>*/ return new
-              x6a5316b9_bp_
+              jsoo_f5b7986a_bp_
               ( /*<<regexp.ml 25 42>>*/ caml_bytes_of_string_ad_(s_a_),
                str_g_dh_) /*<<regexp.ml 25 73>>*/ }
     var
       /*<<regexp.ml 54 20>>*/ quote_repl_re_ki_=
-      new x6a5316b9_bp_("[$]",str_g_dh_),
-      /*<<regexp.ml 88 15>>*/ x0c5647b7_km_=
+      new jsoo_f5b7986a_bp_("[$]",str_g_dh_),
+      /*<<regexp.ml 88 15>>*/ jsoo_97b9daf3_km_=
        /*<<regexp.ml 88 15>>*/ regexp_br_(_kl_);
      /*<<regexp.ml 88 45>>*/ function _ko_(s_a_)
      { /*<<regexp.ml 93 37>>*/ return  /*<<regexp.ml 93 37>>*/ regexp_br_
@@ -8200,10 +8203,10 @@
                 ( /*<<regexp.ml 91 19>>*/ caml_js_meth_call_i_
                   ( /*<<regexp.ml 91 19>>*/ caml_bytes_of_string_ad_(s_a_),
                    _kn_,
-                   [0,x0c5647b7_km_,"\\$&"]))) /*<<regexp.ml 93 38>>*/ }
-    function split_eK_(c_a_,x6d9ac43e_b_)
+                   [0,jsoo_97b9daf3_km_,"\\$&"]))) /*<<regexp.ml 93 38>>*/ }
+    function split_eK_(c_a_,jsoo_self_b_)
      { /*<<url.ml 24 16>>*/ return  /*<<url.ml 24 16>>*/ caml_js_meth_call_i_
-              (x6d9ac43e_b_,
+              (jsoo_self_b_,
                _kp_,
                [0,
                  /*<<url.ml 24 52>>*/  /*<<url.ml 24 37>>*/ _cF_(1,c_a_).toString
@@ -8212,9 +8215,9 @@
     function interrupt_cX_(param_a_)
      { /*<<url.ml 27 34>>*/ throw Local_exn_eL_ /*<<url.ml 27 34>>*/ }
     var
-      /*<<url.ml 32 14>>*/ xf5b7986a_eM_= /*<<url.ml 32 14>>*/ _ko_(_kr_),
+      /*<<url.ml 32 14>>*/ jsoo_7bc5387d_eM_= /*<<url.ml 32 14>>*/ _ko_(_kr_),
       /*<<url.ml 37 2>>*/ plus_re_js_string_eN_=
-      new x6a5316b9_bp_("\\+",str_g_dh_);
+      new jsoo_f5b7986a_bp_("\\+",str_g_dh_);
      /*<<url.ml 37 60>>*/ function urldecode_js_string_string_bs_(s_a_)
      { /*<<url.ml 39 2>>*/ plus_re_js_string_eN_.lastIndex=0;
        /*<<url.ml 40 2>>*/ var
@@ -8231,9 +8234,9 @@
            /*<<url.ml 53 65>>*/ caml_js_to_byte_string_bb_
            ( /*<<url.ml 53 38>>*/ escape_ew_
              ( /*<<url.ml 53 49>>*/ caml_bytes_of_string_ad_(s_b_)));
-         /*<<regexp.ml 59 2>>*/ xf5b7986a_eM_.lastIndex=0;
+         /*<<regexp.ml 59 2>>*/ jsoo_7bc5387d_eM_.lastIndex=0;
          /*<<regexp.ml 56 2>>*/ var
-         xd7096cba_c_=
+         jsoo_a78544e1_c_=
            /*<<regexp.ml 56 2>>*/ caml_js_meth_call_i_
            ( /*<<regexp.ml 56 2>>*/ caml_bytes_of_string_ad_(s_by_ks_),
             _kj_,
@@ -8242,7 +8245,7 @@
                 ( /*<<regexp.ml 60 19>>*/ caml_js_meth_call_i_
                   ( /*<<regexp.ml 60 19>>*/ caml_bytes_of_string_ad_(s_e_),
                    _kk_,
-                   [0,xf5b7986a_eM_,xd7096cba_c_]))}
+                   [0,jsoo_7bc5387d_eM_,jsoo_a78544e1_c_]))}
        /*<<url.ml 54 52>>*/ return  /*<<url.ml 54 52>>*/ caml_js_to_byte_string_bb_
               ( /*<<url.ml 54 25>>*/ escape_ew_
                 ( /*<<url.ml 54 36>>*/ caml_bytes_of_string_ad_(s_b_))) /*<<url.ml 54 53>>*/ }
@@ -8326,10 +8329,10 @@
            /*<<url.ml 132 9>>*/ return acc_a_} /*<<url.ml 148 45>>*/ }
        /*<<url.ml 150 2>>*/ return  /*<<url.ml 150 2>>*/ aux_e_(0,len_b_-1|0) /*<<url.ml 150 16>>*/ }
      /*<<url.ml 156 2>>*/ new
-     x6a5316b9_bp_
+     jsoo_f5b7986a_bp_
      ( /*<<url.ml 156 2>>*/ caml_bytes_of_string_ad_(_kA_));
      /*<<url.ml 166 2>>*/ new
-     x6a5316b9_bp_
+     jsoo_f5b7986a_bp_
      ( /*<<url.ml 166 2>>*/ caml_bytes_of_string_ad_(_kB_));
      /*<<url.ml 311 10>>*/ var l_a7_=window_c_.location;
      /*<<url.ml 313 13>>*/  /*<<url.ml 313 13>>*/ urldecode_js_string_string_bs_
@@ -8408,7 +8411,7 @@
      { /*<<hypertree.ml 96 2>>*/ return  /*<<hypertree.ml 96 2>>*/ _bo_
               (var_a_,
                function(param_a_)
-                { /*<<hypertree.ml 96 49>>*/ return new x173316d7_cW_() /*<<hypertree.ml 96 73>>*/ }) /*<<hypertree.ml 96 74>>*/ }
+                { /*<<hypertree.ml 96 49>>*/ return new jsoo_173316d7_cW_() /*<<hypertree.ml 96 73>>*/ }) /*<<hypertree.ml 96 74>>*/ }
      /*<<hypertree.ml 110 25>>*/ var
      style_ag_=
        /*<<hypertree.ml 110 25>>*/ option_eP_(window_c_.hyp);
@@ -8650,56 +8653,58 @@
          /*<<xmlHttpRequest.ml 244 55>>*/ task_cV_(0),
         /*<<xmlHttpRequest.ml 244 66>>*/ _D_=match_C_[2],
         /*<<xmlHttpRequest.ml 244 66>>*/ _E_=match_C_[1],
-        /*<<xmlHttpRequest.ml 245 12>>*/ x2c7d0868_b_=
+        /*<<xmlHttpRequest.ml 245 12>>*/ jsoo_obj_b_=
          /*<<xmlHttpRequest.ml 245 12>>*/ _kF_(0);
        /*<<xmlHttpRequest.ml 247 2>>*/  /*<<xmlHttpRequest.ml 247 2>>*/ caml_js_meth_call_i_
-       (x2c7d0868_b_,
+       (jsoo_obj_b_,
         _k0_,
         [0,
           /*<<xmlHttpRequest.ml 247 2>>*/ _$_.toString(),
-          /*<<xmlHttpRequest.ml 247 2>>*/ url_c_.toString(),
-         xf5b7986a_y_]);
+          /*<<xmlHttpRequest.ml 247 33>>*/ url_c_.toString(),
+         jsoo_a030bfac_y_]);
        /*<<xmlHttpRequest.ml 249 8>>*/ if(override_mime_type_M_)
         /*<<xmlHttpRequest.ml 251 22>>*/ caml_js_meth_call_i_
-        (x2c7d0868_b_,
+        (jsoo_obj_b_,
          _k1_,
          [0,
            /*<<xmlHttpRequest.ml 251 22>>*/ override_mime_type_M_[1].toString
            ()]);
        /*<<xmlHttpRequest.ml 254 8>>*/ switch(response_type_K_)
        {case 0:
-          /*<<xmlHttpRequest.ml 255 19>>*/ x2c7d0868_b_.responseType=
+          /*<<xmlHttpRequest.ml 255 19>>*/ jsoo_obj_b_.responseType=
          "arraybuffer";
          break;
         case 1:
-          /*<<xmlHttpRequest.ml 256 19>>*/ x2c7d0868_b_.responseType="blob";
+          /*<<xmlHttpRequest.ml 256 19>>*/ jsoo_obj_b_.responseType="blob";
          break;
         case 2:
-          /*<<xmlHttpRequest.ml 257 19>>*/ x2c7d0868_b_.responseType=
+          /*<<xmlHttpRequest.ml 257 19>>*/ jsoo_obj_b_.responseType=
          "document";
          break;
         case 3:
-          /*<<xmlHttpRequest.ml 258 19>>*/ x2c7d0868_b_.responseType="json";
+          /*<<xmlHttpRequest.ml 258 19>>*/ jsoo_obj_b_.responseType="json";
          break;
         case 4:
-          /*<<xmlHttpRequest.ml 259 19>>*/ x2c7d0868_b_.responseType=
+          /*<<xmlHttpRequest.ml 259 19>>*/ jsoo_obj_b_.responseType=
          str_text_bA_;
          break;
         default:
-          /*<<xmlHttpRequest.ml 260 19>>*/ x2c7d0868_b_.responseType=str_k_}
+          /*<<xmlHttpRequest.ml 260 19>>*/ jsoo_obj_b_.responseType=str_k_}
        /*<<xmlHttpRequest.ml 263 3>>*/ if(_B_)
         /*<<xmlHttpRequest.ml 265 6>>*/ caml_js_meth_call_i_
-        (x2c7d0868_b_,
+        (jsoo_obj_b_,
          _k2_,
-         [0,"Content-type", /*<<xmlHttpRequest.ml 265 6>>*/ _B_[1].toString()]);
+         [0,
+          "Content-type",
+           /*<<xmlHttpRequest.ml 265 53>>*/ _B_[1].toString()]);
        /*<<xmlHttpRequest.ml 267 2>>*/  /*<<xmlHttpRequest.ml 267 2>>*/ _aM_
        (function(param_a_)
          { /*<<xmlHttpRequest.ml 267 27>>*/ return  /*<<xmlHttpRequest.ml 267 27>>*/ caml_js_meth_call_i_
-                  (x2c7d0868_b_,
+                  (jsoo_obj_b_,
                    _k3_,
                    [0,
                      /*<<xmlHttpRequest.ml 267 27>>*/ param_a_[1].toString(),
-                     /*<<xmlHttpRequest.ml 267 27>>*/ param_a_[2].toString()]) /*<<xmlHttpRequest.ml 267 75>>*/ },
+                     /*<<xmlHttpRequest.ml 267 61>>*/ param_a_[2].toString()]) /*<<xmlHttpRequest.ml 267 75>>*/ },
         _X_);
        /*<<xmlHttpRequest.ml 268 11>>*/ function headers_d_(s_a_)
        { /*<<xmlHttpRequest.ml 270 4>>*/ function _c_(v_a_)
@@ -8709,7 +8714,7 @@
          { /*<<xmlHttpRequest.ml 272 17>>*/ return 0 /*<<xmlHttpRequest.ml 272 21>>*/ }
          /*<<xmlHttpRequest.ml 271 7>>*/ return  /*<<xmlHttpRequest.ml 271 7>>*/ _eu_
                 ( /*<<xmlHttpRequest.ml 271 7>>*/ caml_js_meth_call_i_
-                  (x2c7d0868_b_,
+                  (jsoo_obj_b_,
                    _k4_,
                    [0,
                      /*<<xmlHttpRequest.ml 270 4>>*/ caml_bytes_of_string_ad_
@@ -8721,21 +8726,21 @@
        { /*<<xmlHttpRequest.ml 278 6>>*/ if(num_382334108_fB_===st_h_[1])
          if
           ( /*<<xmlHttpRequest.ml 279 11>>*/ caml_call_gen2_q_
-            (_Y_,x2c7d0868_b_.status,headers_d_))
+            (_Y_,jsoo_obj_b_.status,headers_d_))
           st_h_[1]=583419792;
          else
           { /*<<src/core/lwt.ml 326 51>>*/  /*<<src/core/lwt.ml 326 51>>*/ wakeup_result_en_
-            (_D_,[1,[0,_kL_,[0,x2c7d0868_b_.status,headers_d_]]]);
+            (_D_,[1,[0,_kL_,[0,jsoo_obj_b_.status,headers_d_]]]);
             /*<<xmlHttpRequest.ml 282 66>>*/ st_h_[1]=num_479410653_f__;
             /*<<xmlHttpRequest.ml 284 10>>*/  /*<<xmlHttpRequest.ml 284 10>>*/ caml_js_meth_call_i_
-            (x2c7d0868_b_,_k5_,[0])}
+            (jsoo_obj_b_,_k5_,[0])}
          /*<<xmlHttpRequest.ml 287 6>>*/ return num_479410653_f__!==st_h_[1]
                 ?1
                 :0 /*<<xmlHttpRequest.ml 287 20>>*/ }
-       /*<<xmlHttpRequest.ml 289 2>>*/ x2c7d0868_b_.onreadystatechange=
+       /*<<xmlHttpRequest.ml 289 2>>*/ jsoo_obj_b_.onreadystatechange=
        /*<<xmlHttpRequest.ml 289 2>>*/ caml_js_wrap_callback_cw_
        (function(param_a_)
-         { /*<<xmlHttpRequest.ml 291 14>>*/ switch(x2c7d0868_b_.readyState)
+         { /*<<xmlHttpRequest.ml 291 14>>*/ switch(jsoo_obj_b_.readyState)
            {case 2:
               /*<<xmlHttpRequest.ml 295 32>>*/ if(!onIE_ex_)
               { /*<<xmlHttpRequest.ml 296 20>>*/  /*<<xmlHttpRequest.ml 296 20>>*/ do_check_headers_n_
@@ -8754,68 +8759,62 @@
               { /*<<xmlHttpRequest.ml 302 14>>*/ switch(response_type_K_)
                 {case 0:
                   var
-                    /*<<xmlHttpRequest.ml 305 46>>*/ code_t_=
-                    x2c7d0868_b_.status,
+                    /*<<xmlHttpRequest.ml 305 46>>*/ code_t_=jsoo_obj_b_.status,
                     /*<<xmlHttpRequest.ml 158 2>>*/ _r_=
                     function(param_a_)
                      { /*<<xmlHttpRequest.ml 161 41>>*/ throw [0,_o_,_kQ_] /*<<xmlHttpRequest.ml 161 41>>*/ },
-                    /*<<xmlHttpRequest.ml 160 41>>*/ e_h_=x2c7d0868_b_.response,
+                    /*<<xmlHttpRequest.ml 160 41>>*/ e_h_=jsoo_obj_b_.response,
                     /*<<file.ml 76 43>>*/ _s_=
                     e_h_ instanceof arrayBuffer_jG_?e_h_:no_handler_W_,
                    _e_=[0,url_c_,code_t_,headers_d_,_s_,_r_];
                   break;
                  case 1:
                   var
-                    /*<<xmlHttpRequest.ml 307 39>>*/ code_u_=
-                    x2c7d0868_b_.status,
+                    /*<<xmlHttpRequest.ml 307 39>>*/ code_u_=jsoo_obj_b_.status,
                     /*<<xmlHttpRequest.ml 150 2>>*/ _p_=
                     function(param_a_)
                      { /*<<xmlHttpRequest.ml 153 41>>*/ throw [0,_o_,_kP_] /*<<xmlHttpRequest.ml 153 41>>*/ },
-                    /*<<xmlHttpRequest.ml 152 34>>*/ e_g_=x2c7d0868_b_.response,
+                    /*<<xmlHttpRequest.ml 152 34>>*/ e_g_=jsoo_obj_b_.response,
                     /*<<file.ml 68 31>>*/ _q_=
                     e_g_ instanceof blob_constr_kd_?e_g_:no_handler_W_,
                    _e_=[0,url_c_,code_u_,headers_d_,_q_,_p_];
                   break;
                  case 2:
                   var
-                    /*<<xmlHttpRequest.ml 309 43>>*/ code_v_=
-                    x2c7d0868_b_.status,
+                    /*<<xmlHttpRequest.ml 309 43>>*/ code_v_=jsoo_obj_b_.status,
                     /*<<xmlHttpRequest.ml 134 2>>*/ _k_=
                     function(param_a_)
                      { /*<<xmlHttpRequest.ml 137 41>>*/ throw [0,_o_,_kN_] /*<<xmlHttpRequest.ml 137 41>>*/ },
-                    /*<<xmlHttpRequest.ml 136 38>>*/ e_f_=x2c7d0868_b_.response,
+                    /*<<xmlHttpRequest.ml 136 38>>*/ e_f_=jsoo_obj_b_.response,
                     /*<<file.ml 64 30>>*/ _l_=
                     e_f_ instanceof doc_constr_ke_?e_f_:no_handler_W_,
                    _e_=[0,url_c_,code_v_,headers_d_,_l_,_k_];
                   break;
                  case 3:
                   var
-                    /*<<xmlHttpRequest.ml 311 39>>*/ code_w_=
-                    x2c7d0868_b_.status,
+                    /*<<xmlHttpRequest.ml 311 39>>*/ code_w_=jsoo_obj_b_.status,
                     /*<<xmlHttpRequest.ml 142 2>>*/ _m_=
                     function(param_a_)
                      { /*<<xmlHttpRequest.ml 145 41>>*/ throw [0,_o_,_kO_] /*<<xmlHttpRequest.ml 145 41>>*/ },
-                   _e_=[0,url_c_,code_w_,headers_d_,x2c7d0868_b_.response,_m_];
+                   _e_=[0,url_c_,code_w_,headers_d_,jsoo_obj_b_.response,_m_];
                   break;
                  case 4:
                   var
-                    /*<<xmlHttpRequest.ml 313 39>>*/ code_x_=
-                    x2c7d0868_b_.status,
+                    /*<<xmlHttpRequest.ml 313 39>>*/ code_x_=jsoo_obj_b_.status,
                     /*<<xmlHttpRequest.ml 126 2>>*/ _j_=
                     function(param_a_)
                      { /*<<xmlHttpRequest.ml 129 41>>*/ throw [0,_o_,_kM_] /*<<xmlHttpRequest.ml 129 41>>*/ },
                    _e_=
-                    [0,url_c_,code_x_,headers_d_,x2c7d0868_b_.responseText,_j_];
+                    [0,url_c_,code_x_,headers_d_,jsoo_obj_b_.responseText,_j_];
                   break;
                  default:
                   var
-                    /*<<xmlHttpRequest.ml 315 42>>*/ code_y_=
-                    x2c7d0868_b_.status,
+                    /*<<xmlHttpRequest.ml 315 42>>*/ code_y_=jsoo_obj_b_.status,
                     /*<<xmlHttpRequest.ml 111 2>>*/ _i_=
                     function(param_a_)
                      { /*<<xmlHttpRequest.ml 116 25>>*/ var
                        x_f_=
-                        x2c7d0868_b_.responseXML;
+                        jsoo_obj_b_.responseXML;
                        /*<<js.ml 97 20>>*/ function _e_(x_a_)
                        { /*<<js.ml 97 54>>*/ return [0,x_a_] /*<<js.ml 97 60>>*/ }
                        /*<<js.ml 97 20>>*/ var
@@ -8838,7 +8837,7 @@
                      code_y_,
                      headers_d_,
                       /*<<xmlHttpRequest.ml 113 14>>*/ caml_js_to_string_P_
-                      (x2c7d0868_b_.responseText),
+                      (jsoo_obj_b_.responseText),
                      _i_]}
                 /*<<xmlHttpRequest.ml 316 14>>*/ return  /*<<xmlHttpRequest.ml 316 14>>*/ wakeup_bU_
                        (_D_,_e_)}
@@ -8847,30 +8846,30 @@
            /*<<xmlHttpRequest.ml 319 12>>*/ return 0 /*<<xmlHttpRequest.ml 319 14>>*/ });
        /*<<xmlHttpRequest.ml 321 8>>*/ if(progress_O_)
        {var _aa_=progress_O_[1];
-         /*<<xmlHttpRequest.ml 323 4>>*/ x2c7d0868_b_.onprogress=
+         /*<<xmlHttpRequest.ml 323 4>>*/ jsoo_obj_b_.onprogress=
          /*<<xmlHttpRequest.ml 323 23>>*/ handler_v_
-         (function(x4a3455d3_a_)
+         (function(jsoo_obj_a_)
            { /*<<xmlHttpRequest.ml 325 8>>*/  /*<<xmlHttpRequest.ml 325 8>>*/ caml_call_gen2_q_
-             (_aa_,x4a3455d3_a_.loaded,x4a3455d3_a_.total);
-             /*<<xmlHttpRequest.ml 325 35>>*/ return xf5b7986a_y_ /*<<xmlHttpRequest.ml 326 16>>*/ })}
-       /*<<xmlHttpRequest.ml 329 2>>*/ function _ab_(x61ce86fd_a_)
+             (_aa_,jsoo_obj_a_.loaded,jsoo_obj_a_.total);
+             /*<<xmlHttpRequest.ml 325 35>>*/ return jsoo_a030bfac_y_ /*<<xmlHttpRequest.ml 326 16>>*/ })}
+       /*<<xmlHttpRequest.ml 329 2>>*/ function _ab_(jsoo_obj_a_)
        { /*<<xmlHttpRequest.ml 330 4>>*/ if(upload_progress_N_)
          { /*<<xmlHttpRequest.ml 332 6>>*/ var _b_=upload_progress_N_[1];
-           /*<<xmlHttpRequest.ml 332 6>>*/ return x61ce86fd_a_.onprogress=
+           /*<<xmlHttpRequest.ml 332 6>>*/ return jsoo_obj_a_.onprogress=
                   /*<<xmlHttpRequest.ml 332 28>>*/ handler_v_
-                  (function(xee22b285_a_)
+                  (function(jsoo_obj_a_)
                     { /*<<xmlHttpRequest.ml 334 10>>*/  /*<<xmlHttpRequest.ml 334 10>>*/ caml_call_gen2_q_
-                      (_b_,xee22b285_a_.loaded,xee22b285_a_.total);
-                      /*<<xmlHttpRequest.ml 334 44>>*/ return xf5b7986a_y_ /*<<xmlHttpRequest.ml 335 18>>*/ })}
+                      (_b_,jsoo_obj_a_.loaded,jsoo_obj_a_.total);
+                      /*<<xmlHttpRequest.ml 334 44>>*/ return jsoo_a030bfac_y_ /*<<xmlHttpRequest.ml 335 18>>*/ })}
          /*<<xmlHttpRequest.ml 336 14>>*/ return 0 /*<<xmlHttpRequest.ml 336 16>>*/ }
        /*<<xmlHttpRequest.ml 329 2>>*/  /*<<xmlHttpRequest.ml 329 2>>*/ _aG_
-       (x2c7d0868_b_.upload,_ab_);
+       (jsoo_obj_b_.upload,_ab_);
        /*<<xmlHttpRequest.ml 337 3>>*/ if(_e_)
        {var _p_=_e_[1];
         if(num_891486873_bG_<=_p_[1])
          { /*<<xmlHttpRequest.ml 342 9>>*/ var _ac_=_p_[2][1];
            /*<<xmlHttpRequest.ml 342 17>>*/  /*<<xmlHttpRequest.ml 342 17>>*/ caml_js_meth_call_i_
-           (x2c7d0868_b_,
+           (jsoo_obj_b_,
             _k6_,
             [0,
               /*<<xmlHttpRequest.ml 342 57>>*/  /*<<xmlHttpRequest.ml 92 3>>*/ _bh_
@@ -8906,15 +8905,15 @@
               ()])}
         else
           /*<<xmlHttpRequest.ml 343 29>>*/ caml_js_meth_call_i_
-          (x2c7d0868_b_,_k8_,[0,_p_[2]])}
+          (jsoo_obj_b_,_k8_,[0,_p_[2]])}
       else
         /*<<xmlHttpRequest.ml 340 15>>*/ caml_js_meth_call_i_
-        (x2c7d0868_b_,_k9_,[0,no_handler_W_]);
+        (jsoo_obj_b_,_k9_,[0,no_handler_W_]);
        /*<<xmlHttpRequest.ml 345 2>>*/  /*<<xmlHttpRequest.ml 345 2>>*/ on_cancel_eq_
        (_E_,
         function(param_a_)
          { /*<<xmlHttpRequest.ml 345 31>>*/ return  /*<<xmlHttpRequest.ml 345 31>>*/ caml_js_meth_call_i_
-                  (x2c7d0868_b_,_k7_,[0]) /*<<xmlHttpRequest.ml 345 44>>*/ });
+                  (jsoo_obj_b_,_k7_,[0]) /*<<xmlHttpRequest.ml 345 44>>*/ });
        /*<<hypertree.ml 233 24>>*/ return  /*<<hypertree.ml 233 24>>*/ bind_af_
               (_E_,_ak_) /*<<hypertree.ml 238 24>>*/ }
      /*<<hypertree.ml 230 82>>*/ function getfile_c7_(f_a_)
@@ -8928,7 +8927,7 @@
         if(_f_===_A_)return  /*<<hypertree.ml 244 4>>*/ http_get_lg_(f_a_);
          /*<<hypertree.ml 234 2>>*/ throw _f_}
       return _b_ /*<<hypertree.ml 244 14>>*/ }
-     /*<<hypertree.ml 230 82>>*/ function load_image_eT_(x3257b5a8_a_)
+     /*<<hypertree.ml 230 82>>*/ function load_image_eT_(jsoo_arg_a_)
      { /*<<hypertree.ml 247 12>>*/ var
        img_b_=
          /*<<hypertree.ml 247 12>>*/ createImg_bY_(document_f_);
@@ -8945,17 +8944,17 @@
        (function(param_a_)
          { /*<<hypertree.ml 222 15>>*/  /*<<hypertree.ml 222 15>>*/ wakeup_bU_
            (_d_,0);
-           /*<<hypertree.ml 250 49>>*/ return x3bd6d47f_D_ /*<<hypertree.ml 250 60>>*/ });
-       /*<<hypertree.ml 250 63>>*/ img_b_.src=x3257b5a8_a_;
+           /*<<hypertree.ml 250 49>>*/ return jsoo_359432e5_D_ /*<<hypertree.ml 250 60>>*/ });
+       /*<<hypertree.ml 250 63>>*/ img_b_.src=jsoo_arg_a_;
        /*<<hypertree.ml 250 79>>*/ return  /*<<hypertree.ml 250 79>>*/ bind_af_
               (_e_,_g_) /*<<hypertree.ml 252 16>>*/ }
      /*<<hypertree.ml 230 82>>*/ function create_canvas_bZ_
-     (x776737d4_a_,x521a4c10_b_)
+     (jsoo_arg_a_,jsoo_arg_b_)
      { /*<<hypertree.ml 256 10>>*/ var
        c_d_=
          /*<<hypertree.ml 256 10>>*/ createCanvas_eH_(window_c_.document);
-       /*<<hypertree.ml 257 2>>*/ c_d_.width=x776737d4_a_;
-       /*<<hypertree.ml 258 2>>*/ c_d_.height=x521a4c10_b_;
+       /*<<hypertree.ml 257 2>>*/ c_d_.width=jsoo_arg_a_;
+       /*<<hypertree.ml 258 2>>*/ c_d_.height=jsoo_arg_b_;
        /*<<hypertree.ml 259 2>>*/ return c_d_ /*<<hypertree.ml 259 3>>*/ }
      /*<<hypertree.ml 263 10>>*/ var
      debug_widget_b0_=
@@ -8980,8 +8979,8 @@
           /*<<hypertree.ml 461 34>>*/ return d_b_}];
      /*<<hypertree.ml 456 2>>*/ function f_eU_(param_a_)
      {var
-        /*<<hypertree.ml 477 2>>*/ x9589f5f6_b_=2,
-        /*<<hypertree.ml 477 2>>*/ x4795e353_d_=0;
+        /*<<hypertree.ml 477 2>>*/ jsoo_829717ac_b_=0,
+        /*<<hypertree.ml 477 2>>*/ jsoo_b62335d6_d_=2;
        /*<<hypertree.ml 477 2>>*/ function _e_(param_a_)
        { /*<<hypertree.ml 478 3>>*/ function _b_(param_a_)
          { /*<<hypertree.ml 479 3>>*/ return str_en_aW_ /*<<hypertree.ml 479 17>>*/ }
@@ -8991,12 +8990,12 @@
               ( /*<<hypertree.ml 477 3>>*/ _bo_
                 (window_c_.navigator.language,_e_),
                _ls_,
-               [0,x4795e353_d_,x9589f5f6_b_]) /*<<hypertree.ml 479 36>>*/ }
-     /*<<hypertree.ml 456 2>>*/ function _lt_(x8d84aa72_a_)
+               [0,jsoo_829717ac_b_,jsoo_b62335d6_d_]) /*<<hypertree.ml 479 36>>*/ }
+     /*<<hypertree.ml 456 2>>*/ function _lt_(jsoo_self_a_)
      { /*<<hypertree.ml 485 24>>*/ var
        x_b_=
          /*<<hypertree.ml 485 24>>*/ caml_js_meth_call_i_
-         (x8d84aa72_a_,_lu_,[0,str_hyp_lang_fH_]);
+         (jsoo_self_a_,_lu_,[0,str_hyp_lang_fH_]);
        /*<<js.ml 95 39>>*/ return x_b_==no_handler_W_
               ? /*<<js.ml 95 45>>*/ f_eU_(0)
               :x_b_ /*<<hypertree.ml 485 75>>*/ }
@@ -9004,7 +9003,7 @@
      language_ay_=
       [0, /*<<hypertree.ml 482 7>>*/ _bn_(window_c_.localStorage,f_eU_,_lt_)];
      /*<<hypertree.ml 487 8>>*/  /*<<hypertree.ml 487 8>>*/ caml_js_meth_call_i_
-     (x541dc528_ax_,_lv_,[0,language_ay_[1]]);
+     (jsoo_self_ax_,_lv_,[0,language_ay_[1]]);
      /*<<hypertree.ml 487 8>>*/ function load_messages_lx_(param_a_)
      { /*<<hypertree.ml 495 2>>*/ function _b_(s_a_)
        { /*<<hypertree.ml 496 14>>*/ return  /*<<hypertree.ml 496 14>>*/ return_al_
@@ -9017,7 +9016,7 @@
      /*<<hypertree.ml 487 8>>*/ function local_messages_eV_(msgs_a_)
      { /*<<hypertree.ml 498 78>>*/ return  /*<<hypertree.ml 498 78>>*/ option_eP_
               (msgs_a_[language_ay_[1]]) /*<<hypertree.ml 498 79>>*/ }
-     /*<<hypertree.ml 487 8>>*/ function screen_transform_eW_(xaa225ed5_a_)
+     /*<<hypertree.ml 487 8>>*/ function screen_transform_eW_(jsoo_obj_a_)
      {var
         /*<<hypertree.ml 503 46>>*/ _e_=
          /*<<hypertree.ml 503 46>>*/ opt_style_O_(style_ag_.padding,0),
@@ -9025,8 +9024,8 @@
          /*<<hypertree.ml 503 15>>*/ opt_style_O_
          (style_ag_.border,num_0_5_gv_)+
         _e_,
-        /*<<hypertree.ml 504 10>>*/ w_c_=xaa225ed5_a_.width,
-        /*<<hypertree.ml 505 10>>*/ h_d_=xaa225ed5_a_.height,
+        /*<<hypertree.ml 504 10>>*/ w_c_=jsoo_obj_a_.width,
+        /*<<hypertree.ml 505 10>>*/ h_d_=jsoo_obj_a_.height,
         /*<<hypertree.ml 513 11>>*/ rx_f_=
          /*<<hypertree.ml 513 11>>*/ max_at_(5,w_c_/2-offset_b_);
        /*<<hypertree.ml 515 3>>*/ return [0,
@@ -9049,24 +9048,26 @@
               : /*<<hypertree.ml 525 32>>*/ sdiv_c1_(z_e_,n_f_/num_0_95_fa_) /*<<hypertree.ml 525 57>>*/ }
      /*<<hypertree.ml 527 22>>*/ var pi_bv_=3.14159265358979312;
      /*<<hypertree.ml 527 22>>*/ function ellipse_arc_eX_
-     (x52d2feda_a_,
-      xa6b4cfc8_b_,
-      x2e949db4_c_,
-      xa8b3e522_d_,
-      x428fca8c_e_,
-      x4b51774f_f_,
-      x5b14c010_g_,
-      x638ae6e4_h_)
+     (jsoo_self_a_,
+      jsoo_4950329f_b_,
+      jsoo_49218997_c_,
+      jsoo_0b1b989a_d_,
+      jsoo_f2ba1604_e_,
+      jsoo_d0a8f124_f_,
+      jsoo_4977bef4_g_,
+      jsoo_c64afb46_h_)
      { /*<<hypertree.ml 531 1>>*/  /*<<hypertree.ml 531 1>>*/ caml_js_meth_call_i_
-       (x52d2feda_a_,_lA_,[0]);
+       (jsoo_self_a_,_lA_,[0]);
        /*<<hypertree.ml 532 1>>*/  /*<<hypertree.ml 532 1>>*/ caml_js_meth_call_i_
-       (x52d2feda_a_,_lB_,[0,xa6b4cfc8_b_,x2e949db4_c_]);
+       (jsoo_self_a_,_lB_,[0,jsoo_4950329f_b_,jsoo_49218997_c_]);
        /*<<hypertree.ml 533 1>>*/  /*<<hypertree.ml 533 1>>*/ caml_js_meth_call_i_
-       (x52d2feda_a_,_lC_,[0,xa8b3e522_d_,x428fca8c_e_]);
+       (jsoo_self_a_,_lC_,[0,jsoo_0b1b989a_d_,jsoo_f2ba1604_e_]);
        /*<<hypertree.ml 534 1>>*/  /*<<hypertree.ml 534 1>>*/ caml_js_meth_call_i_
-       (x52d2feda_a_,_lD_,[0,0,0,1,x4b51774f_f_,x5b14c010_g_,x638ae6e4_h_]);
+       (jsoo_self_a_,
+        _lD_,
+        [0,0,0,1,jsoo_d0a8f124_f_,jsoo_4977bef4_g_,jsoo_c64afb46_h_]);
        /*<<hypertree.ml 535 1>>*/ return  /*<<hypertree.ml 535 1>>*/ caml_js_meth_call_i_
-              (x52d2feda_a_,_lE_,[0]) /*<<hypertree.ml 535 14>>*/ }
+              (jsoo_self_a_,_lE_,[0]) /*<<hypertree.ml 535 14>>*/ }
      /*<<hypertree.ml 527 22>>*/ function _eY_(x_a_,f_b_)
      { /*<<hypertree.ml 730 15>>*/ return  /*<<hypertree.ml 730 15>>*/ caml_call_gen1_h_
               (f_b_,x_a_) /*<<hypertree.ml 730 18>>*/ }
@@ -9104,7 +9105,7 @@
              /*<<hypertree.ml 745 4>>*/ caml_check_bound_g_(_c_,_b_)[_b_+1],
             /*<<hypertree.ml 746 22>>*/ j_d_=
              /*<<hypertree.ml 746 22>>*/ caml_js_meth_call_i_
-             (xf499ad27_jt_,_l0_,[0])*
+             (jsoo_self_jt_,_l0_,[0])*
             (_b_+1|0)|
             0,
             /*<<hypertree.ml 747 14>>*/ _h_=
@@ -9166,48 +9167,52 @@
        /*<<hypertree.ml 469 2>>*/  /*<<hypertree.ml 469 2>>*/ _j_(_g_,txt_k_);
       var
         /*<<hypertree.ml 470 29>>*/ h_n_=_g_.clientHeight,
-        /*<<hypertree.ml 470 13>>*/ x9c9fa101_o_=_g_.clientWidth;
+        /*<<hypertree.ml 470 13>>*/ jsoo_res_o_=_g_.clientWidth;
        /*<<hypertree.ml 471 2>>*/  /*<<hypertree.ml 471 2>>*/ _a4_(_g_,txt_k_);
       var
-        /*<<hypertree.ml 804 2>>*/ w_d_=x9c9fa101_o_+8|0,
+        /*<<hypertree.ml 804 2>>*/ w_d_=jsoo_res_o_+8|0,
         /*<<hypertree.ml 805 2>>*/ h_e_=h_n_+8|0,
         /*<<hypertree.ml 806 15>>*/ canvas_m_=
          /*<<hypertree.ml 806 15>>*/ create_canvas_bZ_(w_d_,h_e_),
-        /*<<hypertree.ml 807 10>>*/ xf22d213f_b_=
+        /*<<hypertree.ml 807 10>>*/ jsoo_self_b_=
          /*<<hypertree.ml 807 10>>*/ caml_js_meth_call_i_
          (canvas_m_,_l7_,[0,d_bV_]);
-       /*<<hypertree.ml 808 2>>*/ xf22d213f_b_.fillStyle=
+       /*<<hypertree.ml 808 2>>*/ jsoo_self_b_.fillStyle=
        /*<<hypertree.ml 808 18>>*/ opt_style_O_
        (style_ag_.nodeBackgroundColor,tree_color_c0_);
        /*<<hypertree.ml 446 10>>*/ var
-       x4f3f008a_c_=
+       jsoo_8573ceee_c_=
          /*<<hypertree.ml 446 10>>*/ min_cD_
          (4, /*<<hypertree.ml 446 17>>*/ min_cD_(w_d_,h_e_)/2);
        /*<<hypertree.ml 447 2>>*/  /*<<hypertree.ml 447 2>>*/ caml_js_meth_call_i_
-       (xf22d213f_b_,_ll_,[0]);
+       (jsoo_self_b_,_ll_,[0]);
        /*<<hypertree.ml 448 2>>*/  /*<<hypertree.ml 448 2>>*/ caml_js_meth_call_i_
-       (xf22d213f_b_,_lm_,[0,0+x4f3f008a_c_,0]);
+       (jsoo_self_b_,_lm_,[0,0+jsoo_8573ceee_c_,0]);
        /*<<hypertree.ml 449 2>>*/  /*<<hypertree.ml 449 2>>*/ caml_js_meth_call_i_
-       (xf22d213f_b_,_ln_,[0,0+w_d_,0,0+w_d_,0+x4f3f008a_c_,x4f3f008a_c_]);
+       (jsoo_self_b_,
+        _ln_,
+        [0,0+w_d_,0,0+w_d_,0+jsoo_8573ceee_c_,jsoo_8573ceee_c_]);
        /*<<hypertree.ml 450 2>>*/  /*<<hypertree.ml 450 2>>*/ caml_js_meth_call_i_
-       (xf22d213f_b_,
+       (jsoo_self_b_,
         _lo_,
-        [0,0+w_d_,0+h_e_,0+w_d_-x4f3f008a_c_,0+h_e_,x4f3f008a_c_]);
+        [0,0+w_d_,0+h_e_,0+w_d_-jsoo_8573ceee_c_,0+h_e_,jsoo_8573ceee_c_]);
        /*<<hypertree.ml 451 2>>*/  /*<<hypertree.ml 451 2>>*/ caml_js_meth_call_i_
-       (xf22d213f_b_,_lp_,[0,0,0+h_e_,0,0+h_e_-x4f3f008a_c_,x4f3f008a_c_]);
+       (jsoo_self_b_,
+        _lp_,
+        [0,0,0+h_e_,0,0+h_e_-jsoo_8573ceee_c_,jsoo_8573ceee_c_]);
        /*<<hypertree.ml 452 2>>*/  /*<<hypertree.ml 452 2>>*/ caml_js_meth_call_i_
-       (xf22d213f_b_,_lq_,[0,0,0,0+x4f3f008a_c_,0,x4f3f008a_c_]);
+       (jsoo_self_b_,_lq_,[0,0,0,0+jsoo_8573ceee_c_,0,jsoo_8573ceee_c_]);
        /*<<hypertree.ml 810 2>>*/  /*<<hypertree.ml 810 2>>*/ caml_js_meth_call_i_
-       (xf22d213f_b_,_l8_,[0]);
-       /*<<hypertree.ml 811 2>>*/ xf22d213f_b_.font=font_l_;
-       /*<<hypertree.ml 812 2>>*/ xf22d213f_b_.fillStyle=
+       (jsoo_self_b_,_l8_,[0]);
+       /*<<hypertree.ml 811 2>>*/ jsoo_self_b_.font=font_l_;
+       /*<<hypertree.ml 812 2>>*/ jsoo_self_b_.fillStyle=
        /*<<hypertree.ml 812 18>>*/ opt_style_O_(style_ag_.nodeColor,"black");
-       /*<<hypertree.ml 813 2>>*/ xf22d213f_b_.textAlign=str_center_fn_;
-       /*<<hypertree.ml 814 2>>*/ xf22d213f_b_.textBaseline=str_middle_dc_;
+       /*<<hypertree.ml 813 2>>*/ jsoo_self_b_.textAlign=str_center_fn_;
+       /*<<hypertree.ml 814 2>>*/ jsoo_self_b_.textBaseline=str_middle_dc_;
        /*<<hypertree.ml 815 2>>*/  /*<<hypertree.ml 815 2>>*/ caml_js_meth_call_i_
-       (xf22d213f_b_,
+       (jsoo_self_b_,
         _l9_,
-        [0, /*<<hypertree.ml 815 2>>*/ info_a_.toString(),w_d_/2,h_e_/2]);
+        [0, /*<<hypertree.ml 815 14>>*/ info_a_.toString(),w_d_/2,h_e_/2]);
        /*<<hypertree.ml 816 2>>*/ return canvas_m_ /*<<hypertree.ml 816 8>>*/ }
      /*<<hypertree.ml 799 33>>*/ function compute_text_nodes_e4_
      (node_names_a_,nodes_b_)
@@ -9236,7 +9241,8 @@
          _i_=_u_}
       catch(_f_)
        {_f_=caml_wrap_exception_G_(_f_);if(_f_!==_A_)throw _f_;var _i_=_l__}
-       /*<<hypertree.ml 824 2>>*/ document_f_.title=_i_.toString();
+       /*<<hypertree.ml 824 2>>*/ document_f_.title=
+       /*<<hypertree.ml 824 2>>*/ _i_.toString();
       var
         /*<<hypertree.ml 826 2>>*/ _j_=nodes_b_.length-1-1|0,
         /*<<hypertree.ml 826 2>>*/ _p_=0;
@@ -9852,56 +9858,56 @@
          /*<<hypertree.ml 1083 4>>*/ img_h_.src=
          /*<<hypertree.ml 1083 16>>*/ icon_cZ_(src_c_);
          /*<<hypertree.ml 1084 14>>*/ var
-         div_d_=
+         jsoo_obj_d_=
            /*<<hypertree.ml 1084 14>>*/ createDiv_z_(document_f_);
-         /*<<hypertree.ml 1085 4>>*/ div_d_.style.position=str_absolute_I_;
-         /*<<hypertree.ml 1086 4>>*/ div_d_.style.width=str_38px_dy_;
-         /*<<hypertree.ml 1087 68>>*/ var
-         match_i_=
-           /*<<hypertree.ml 1087 68>>*/  /*<<hypertree.ml 1087 37>>*/ _r_
-            ( /*<<hypertree.ml 1087 37>>*/ caml_new_string_e_
-              (str_k_+ /*<<hypertree.ml 1087 52>>*/ max_at_(38,h_b_)),
-             _mt_).toString
-           ();
-         /*<<hypertree.ml 1087 4>>*/ div_d_.style.height=match_i_;
-         /*<<hypertree.ml 1088 4>>*/ div_d_.style.margin=str_2px_bD_;
-         /*<<hypertree.ml 1089 4>>*/ div_d_.style.borderRadius=str_2px_bD_;
+         /*<<hypertree.ml 1085 4>>*/ jsoo_obj_d_.style.position=
+        str_absolute_I_;
+         /*<<hypertree.ml 1086 4>>*/ jsoo_obj_d_.style.width=str_38px_dy_;
+         /*<<hypertree.ml 1087 4>>*/ var jsoo_obj_i_=jsoo_obj_d_.style;
+         /*<<hypertree.ml 1087 4>>*/ jsoo_obj_i_.height=
+         /*<<hypertree.ml 1087 68>>*/  /*<<hypertree.ml 1087 37>>*/ _r_
+          ( /*<<hypertree.ml 1087 37>>*/ caml_new_string_e_
+            (str_k_+ /*<<hypertree.ml 1087 52>>*/ max_at_(38,h_b_)),
+           _mt_).toString
+         ();
+         /*<<hypertree.ml 1088 4>>*/ jsoo_obj_d_.style.margin=str_2px_bD_;
+         /*<<hypertree.ml 1089 4>>*/ jsoo_obj_d_.style.borderRadius=
+        str_2px_bD_;
         var
           /*<<hypertree.ml 1090 16>>*/ extra_g_=
            /*<<hypertree.ml 1090 16>>*/ max_at_(6,44-h_b_|0),
-          /*<<hypertree.ml 1096 51>>*/ match_l_=
-           /*<<hypertree.ml 1096 51>>*/  /*<<hypertree.ml 1095 7>>*/ _r_
-            ( /*<<hypertree.ml 1095 7>>*/ caml_new_string_e_
-              (str_k_+(extra_g_/2|0)),
-              /*<<hypertree.ml 1095 35>>*/ _r_
-              (_mv_,
-                /*<<hypertree.ml 1096 7>>*/ _r_
-                ( /*<<hypertree.ml 1096 7>>*/ caml_new_string_e_
-                  (str_k_+(extra_g_-(extra_g_/2|0)|0)),
-                 _mu_))).toString
-           ();
-         /*<<hypertree.ml 1091 4>>*/ div_d_.style.padding=match_l_;
+          /*<<hypertree.ml 1091 4>>*/ jsoo_obj_l_=jsoo_obj_d_.style;
+         /*<<hypertree.ml 1091 4>>*/ jsoo_obj_l_.padding=
+         /*<<hypertree.ml 1096 51>>*/  /*<<hypertree.ml 1095 7>>*/ _r_
+          ( /*<<hypertree.ml 1095 7>>*/ caml_new_string_e_
+            (str_k_+(extra_g_/2|0)),
+            /*<<hypertree.ml 1095 35>>*/ _r_
+            (_mv_,
+              /*<<hypertree.ml 1096 7>>*/ _r_
+              ( /*<<hypertree.ml 1096 7>>*/ caml_new_string_e_
+                (str_k_+(extra_g_-(extra_g_/2|0)|0)),
+               _mu_))).toString
+         ();
          /*<<hypertree.ml 1097 4>>*/ var _m_=over_a_?_mw_:_my_;
-         /*<<hypertree.ml 1097 4>>*/ div_d_.className=
+         /*<<hypertree.ml 1097 4>>*/ jsoo_obj_d_.className=
          /*<<hypertree.ml 1098 54>>*/  /*<<hypertree.ml 1098 7>>*/ _r_
           (_mx_,_m_).toString
          ();
          /*<<hypertree.ml 1099 4>>*/  /*<<hypertree.ml 1099 4>>*/ _j_
-         (div_d_,img_h_);
-         /*<<hypertree.ml 1099 27>>*/ return div_d_ /*<<hypertree.ml 1100 7>>*/ }
+         (jsoo_obj_d_,img_h_);
+         /*<<hypertree.ml 1099 27>>*/ return jsoo_obj_d_ /*<<hypertree.ml 1100 7>>*/ }
        /*<<hypertree.ml 1102 15>>*/ var
        button_d_=
          /*<<hypertree.ml 1102 15>>*/ createDiv_z_(document_f_);
        /*<<hypertree.ml 1103 2>>*/ button_d_.className=str_button_dH_;
        /*<<hypertree.ml 1104 2>>*/ button_d_.style.width=str_48px_ck_;
-       /*<<hypertree.ml 1105 73>>*/ var
-       match_l_=
-         /*<<hypertree.ml 1105 73>>*/  /*<<hypertree.ml 1105 38>>*/ _r_
-          ( /*<<hypertree.ml 1105 38>>*/ caml_new_string_e_
-            (str_k_+(8+ /*<<hypertree.ml 1105 57>>*/ max_at_(38,h_b_)|0)),
-           _mz_).toString
-         ();
-       /*<<hypertree.ml 1105 2>>*/ button_d_.style.height=match_l_;
+       /*<<hypertree.ml 1105 2>>*/ var jsoo_obj_l_=button_d_.style;
+       /*<<hypertree.ml 1105 2>>*/ jsoo_obj_l_.height=
+       /*<<hypertree.ml 1105 73>>*/  /*<<hypertree.ml 1105 38>>*/ _r_
+        ( /*<<hypertree.ml 1105 38>>*/ caml_new_string_e_
+          (str_k_+(8+ /*<<hypertree.ml 1105 57>>*/ max_at_(38,h_b_)|0)),
+         _mz_).toString
+       ();
        /*<<hypertree.ml 1106 2>>*/ if(href_a_)
        {var
           /*<<hypertree.ml 1111 7>>*/ _m_=href_a_[1],
@@ -9919,18 +9925,18 @@
        /*<<hypertree.ml 1118 2>>*/  /*<<hypertree.ml 1118 2>>*/ _j_
        (a_h_, /*<<hypertree.ml 1118 29>>*/ decoration_i_(0));
        /*<<hypertree.ml 1118 46>>*/ return button_d_ /*<<hypertree.ml 1119 8>>*/ }
-     /*<<hypertree.ml 799 33>>*/ function tooltip_b3_(x184ddcac_a_)
+     /*<<hypertree.ml 799 33>>*/ function tooltip_b3_(jsoo_arg_a_)
      { /*<<hypertree.ml 1122 16>>*/ var
        tooltip_b_=
          /*<<hypertree.ml 1122 16>>*/ createDiv_z_(document_f_);
        /*<<hypertree.ml 1123 2>>*/ tooltip_b_.style.position=str_absolute_I_;
        /*<<hypertree.ml 1124 2>>*/ tooltip_b_.className="tooltip on";
-       /*<<hypertree.ml 1125 2>>*/ tooltip_b_.innerHTML=x184ddcac_a_;
+       /*<<hypertree.ml 1125 2>>*/ tooltip_b_.innerHTML=jsoo_arg_a_;
        /*<<hypertree.ml 1126 2>>*/ return tooltip_b_ /*<<hypertree.ml 1126 9>>*/ }
      /*<<hypertree.ml 799 33>>*/ function show_on_click_e9_
-     (x921dceb6_a_,x22da18a1_b_)
+     (jsoo_obj_a_,jsoo_obj_b_)
      { /*<<hypertree.ml 1129 2>>*/ var activated_c_=[0,0];
-       /*<<hypertree.ml 1130 2>>*/ return x921dceb6_a_.onclick=
+       /*<<hypertree.ml 1130 2>>*/ return jsoo_obj_a_.onclick=
               /*<<hypertree.ml 1131 4>>*/ handler_v_
               (function(ev_a_)
                 { /*<<hypertree.ml 1133 9>>*/ if(!activated_c_[1])
@@ -9945,20 +9951,20 @@
                         { /*<<hypertree.ml 1140 22>>*/ function _e_(param_a_)
                           { /*<<hypertree.ml 1142 25>>*/  /*<<hypertree.ml 1142 25>>*/ _aQ_
                             (c_d_[1],removeEventListener_an_);
-                            /*<<hypertree.ml 1143 25>>*/ x22da18a1_b_.className=
+                            /*<<hypertree.ml 1143 25>>*/ jsoo_obj_b_.className=
                            str_text_on_dz_;
                             /*<<hypertree.ml 1144 25>>*/ activated_c_[1]=0;
                             /*<<hypertree.ml 1145 25>>*/ return  /*<<hypertree.ml 1145 25>>*/ return_al_
                                    (0) /*<<hypertree.ml 1145 38>>*/ }
                           /*<<hypertree.ml 1141 25>>*/  /*<<hypertree.ml 1141 25>>*/ bind_af_
                           ( /*<<hypertree.ml 1141 25>>*/ yield_eI_(0),_e_);
-                          /*<<hypertree.ml 1146 22>>*/ return xf5b7986a_y_ /*<<hypertree.ml 1146 30>>*/ }),
-                     xf5b7986a_y_);
-                    /*<<hypertree.ml 1148 11>>*/ x22da18a1_b_.className=
+                          /*<<hypertree.ml 1146 22>>*/ return jsoo_a030bfac_y_ /*<<hypertree.ml 1146 30>>*/ }),
+                     jsoo_a030bfac_y_);
+                    /*<<hypertree.ml 1148 11>>*/ jsoo_obj_b_.className=
                    str_text_bA_}
                   /*<<hypertree.ml 1150 9>>*/  /*<<hypertree.ml 1150 9>>*/ stopPropagation_a5_
                   (ev_a_);
-                  /*<<hypertree.ml 1150 32>>*/ return x3bd6d47f_D_ /*<<hypertree.ml 1150 43>>*/ }) /*<<hypertree.ml 1150 44>>*/ }
+                  /*<<hypertree.ml 1150 32>>*/ return jsoo_359432e5_D_ /*<<hypertree.ml 1150 43>>*/ }) /*<<hypertree.ml 1150 44>>*/ }
      /*<<hypertree.ml 799 33>>*/ function show_image_e__
      (all_messages_W_,image_info_b_,name_c_,small_image_d_)
      { /*<<hypertree.ml 1153 2>>*/ return  /*<<hypertree.ml 1153 2>>*/ bind_af_
@@ -9994,7 +10000,7 @@
                        (image_info_a_,_J_)
                       [_J_+1];
                     /*<<hypertree.ml 1166 0>>*/  /*<<hypertree.ml 1166 0>>*/ caml_js_meth_call_i_
-                    (x541dc528_ax_,_mA_,[0,name_c_,i_B_[1]]);
+                    (jsoo_self_ax_,_mA_,[0,name_c_,i_B_[1]]);
                     /*<<hypertree.ml 1169 20>>*/ var
                     container_q_=
                       /*<<hypertree.ml 1169 20>>*/ createDiv_z_(document_f_);
@@ -10036,14 +10042,13 @@
                         /*<<hypertree.ml 1189 6>>*/ w_b_.style.left=str_0_n_;
                         /*<<hypertree.ml 1190 6>>*/ w_b_.style.right=str_0_n_;
                         /*<<hypertree.ml 1191 6>>*/ w_b_.style.margin=str_auto_Z_;
-                        /*<<hypertree.ml 1197 72>>*/ var
-                        match_c_=
-                          /*<<hypertree.ml 1197 72>>*/  /*<<hypertree.ml 1197 40>>*/ _r_
-                           ( /*<<hypertree.ml 1197 40>>*/ caml_new_string_e_
-                             (str_k_+info_l_[5]),
-                            _mB_).toString
-                          ();
-                        /*<<hypertree.ml 1197 6>>*/ w_b_.style.maxHeight=match_c_;
+                        /*<<hypertree.ml 1197 6>>*/ var jsoo_obj_c_=w_b_.style;
+                        /*<<hypertree.ml 1197 6>>*/ jsoo_obj_c_.maxHeight=
+                        /*<<hypertree.ml 1197 72>>*/  /*<<hypertree.ml 1197 40>>*/ _r_
+                         ( /*<<hypertree.ml 1197 40>>*/ caml_new_string_e_
+                           (str_k_+info_l_[5]),
+                          _mB_).toString
+                        ();
                         /*<<hypertree.ml 1198 6>>*/  /*<<hypertree.ml 1198 6>>*/ _j_
                         (w_b_,elt_a_);
                         /*<<hypertree.ml 1198 27>>*/ return w_b_ /*<<hypertree.ml 1199 7>>*/ },
@@ -10093,7 +10098,7 @@
                       (function(param_a_)
                         { /*<<hypertree.ml 1221 15>>*/  /*<<hypertree.ml 1221 15>>*/ _a4_
                           (img_container_o_,w_N_);
-                          /*<<hypertree.ml 1221 46>>*/ return x3bd6d47f_D_ /*<<hypertree.ml 1222 24>>*/ })}
+                          /*<<hypertree.ml 1221 46>>*/ return jsoo_359432e5_D_ /*<<hypertree.ml 1222 24>>*/ })}
                    var
                      /*<<hypertree.ml 1226 4>>*/ _Q_=info_l_[7],
                      /*<<hypertree.ml 1226 4>>*/ _ac_=
@@ -10125,7 +10130,7 @@
                      function(param_a_)
                       { /*<<hypertree.ml 1241 6>>*/  /*<<hypertree.ml 1241 6>>*/ _a4_
                         (img_container_o_,w_R_);
-                        /*<<hypertree.ml 1241 37>>*/ return x3bd6d47f_D_ /*<<hypertree.ml 1242 15>>*/ };
+                        /*<<hypertree.ml 1241 37>>*/ return jsoo_359432e5_D_ /*<<hypertree.ml 1242 15>>*/ };
                     /*<<hypertree.ml 1244 4>>*/ img_b_.onerror=
                     /*<<hypertree.ml 1244 20>>*/ handler_v_(handle_error_S_);
                     /*<<hypertree.ml 1245 4>>*/ img_b_.onabort=
@@ -10143,7 +10148,7 @@
                     (function(ev_a_)
                       { /*<<hypertree.ml 1263 19>>*/  /*<<hypertree.ml 1263 19>>*/ stopPropagation_a5_
                         (ev_a_);
-                        /*<<hypertree.ml 1263 42>>*/ return xf5b7986a_y_ /*<<hypertree.ml 1263 52>>*/ });
+                        /*<<hypertree.ml 1263 42>>*/ return jsoo_a030bfac_y_ /*<<hypertree.ml 1263 52>>*/ });
                     /*<<hypertree.ml 1264 4>>*/ legend_u_.className=
                    str_text_bA_;
                     /*<<hypertree.ml 1265 4>>*/ legend_u_.style.position=
@@ -10249,7 +10254,7 @@
                      /*<<hypertree.ml 1323 13>>*/ dl_G_=
                       /*<<hypertree.ml 1323 13>>*/ createDl_eC_(document_f_),
                      /*<<hypertree.ml 1324 4>>*/ list_V_=
-                     function(xdf9af989_a_,lang_b_)
+                     function(jsoo_d9a0c31d_a_,lang_b_)
                       {var
                          /*<<hypertree.ml 1325 15>>*/ ul_d_=
                           /*<<hypertree.ml 1325 15>>*/ createUl_eB_(document_f_),
@@ -10303,7 +10308,7 @@
                         /*<<hypertree.ml 1348 8>>*/  /*<<hypertree.ml 1348 8>>*/ _j_
                         (dd_c_,
                           /*<<hypertree.ml 1348 28>>*/ caml_js_meth_call_i_
-                          (document_f_,_mL_,[0,xdf9af989_a_]));
+                          (document_f_,_mL_,[0,jsoo_d9a0c31d_a_]));
                         /*<<hypertree.ml 1349 8>>*/  /*<<hypertree.ml 1349 8>>*/ _j_
                         (dl_G_,dd_c_);
                         /*<<hypertree.ml 1350 17>>*/ var
@@ -10350,7 +10355,7 @@
                     (function(ev_a_)
                       { /*<<hypertree.ml 1372 44>>*/  /*<<hypertree.ml 1372 44>>*/ stopPropagation_a5_
                         (ev_a_);
-                        /*<<hypertree.ml 1372 67>>*/ return xf5b7986a_y_ /*<<hypertree.ml 1372 77>>*/ });
+                        /*<<hypertree.ml 1372 67>>*/ return jsoo_a030bfac_y_ /*<<hypertree.ml 1372 77>>*/ });
                     /*<<hypertree.ml 1373 4>>*/  /*<<hypertree.ml 1373 4>>*/ show_on_click_e9_
                     (wikipedia_F_,txt_p_);
                     /*<<hypertree.ml 1375 4>>*/ buttons_w_.onclick=
@@ -10358,7 +10363,7 @@
                     (function(ev_a_)
                       { /*<<hypertree.ml 1376 30>>*/  /*<<hypertree.ml 1376 30>>*/ stopPropagation_a5_
                         (ev_a_);
-                        /*<<hypertree.ml 1376 53>>*/ return xf5b7986a_y_ /*<<hypertree.ml 1376 63>>*/ });
+                        /*<<hypertree.ml 1376 53>>*/ return jsoo_a030bfac_y_ /*<<hypertree.ml 1376 63>>*/ });
                     /*<<hypertree.ml 1377 4>>*/  /*<<hypertree.ml 1377 4>>*/ _j_
                     (background_h_,buttons_w_);
                     /*<<hypertree.ml 1379 4>>*/  /*<<hypertree.ml 1379 4>>*/ _j_
@@ -10368,7 +10373,7 @@
                     (function(param_a_)
                       { /*<<hypertree.ml 1382 18>>*/  /*<<hypertree.ml 1382 18>>*/ _a4_
                         (document_f_.body,background_h_);
-                        /*<<hypertree.ml 1382 52>>*/ return xf5b7986a_y_ /*<<hypertree.ml 1382 62>>*/ })}
+                        /*<<hypertree.ml 1382 52>>*/ return jsoo_a030bfac_y_ /*<<hypertree.ml 1382 62>>*/ })}
                   /*<<hypertree.ml 1384 2>>*/ return  /*<<hypertree.ml 1384 2>>*/ return_al_
                          (0) /*<<hypertree.ml 1384 14>>*/ }) /*<<hypertree.ml 1384 14>>*/ }
      /*<<hypertree.ml 1387 2>>*/ var
@@ -10433,14 +10438,14 @@
        (document_f_,
         keydown_ey_,
          /*<<hypertree.ml 1434 8>>*/ handler_v_
-         (function(x90fa895d_a_)
-           { /*<<hypertree.ml 1436 19>>*/ var match_b_=x90fa895d_a_.keyCode;
+         (function(jsoo_obj_a_)
+           { /*<<hypertree.ml 1436 19>>*/ var match_b_=jsoo_obj_a_.keyCode;
              /*<<hypertree.ml 1436 19>>*/ if(13!==match_b_)
-             if(27!==match_b_)return xf5b7986a_y_;
+             if(27!==match_b_)return jsoo_a030bfac_y_;
              /*<<hypertree.ml 1437 26>>*/  /*<<hypertree.ml 1437 26>>*/ close_info_o_
              (0);
-             /*<<hypertree.ml 1437 39>>*/ return x3bd6d47f_D_ /*<<hypertree.ml 1438 34>>*/ }),
-        xf5b7986a_y_);
+             /*<<hypertree.ml 1437 39>>*/ return jsoo_359432e5_D_ /*<<hypertree.ml 1438 34>>*/ }),
+        jsoo_a030bfac_y_);
        /*<<hypertree.ml 1441 15>>*/ var
        button_k_=
          /*<<hypertree.ml 1441 15>>*/ createButton_jW_(0,0,document_f_);
@@ -10455,7 +10460,7 @@
        (function(param_a_)
          { /*<<hypertree.ml 1444 44>>*/  /*<<hypertree.ml 1444 44>>*/ close_info_o_
            (0);
-           /*<<hypertree.ml 1444 57>>*/ return x3bd6d47f_D_ /*<<hypertree.ml 1444 68>>*/ });
+           /*<<hypertree.ml 1444 57>>*/ return jsoo_359432e5_D_ /*<<hypertree.ml 1444 68>>*/ });
        /*<<hypertree.ml 1445 19>>*/ var
        button_div_h_=
          /*<<hypertree.ml 1445 19>>*/ createDiv_z_(document_f_);
@@ -10544,11 +10549,11 @@
                            /*<<hypertree.ml 1499 5>>*/ document_f_.body.style.height=
                           str_100_ab_;
                            /*<<hypertree.ml 1502 18>>*/ var
-                           x402b1295_d_=
+                           jsoo_obj_d_=
                              /*<<hypertree.ml 1502 18>>*/ create_canvas_bZ_
                              (page_u_.clientWidth,page_u_.clientHeight);
                            /*<<hypertree.ml 1503 5>>*/  /*<<hypertree.ml 1503 5>>*/ _j_
-                           (document_f_.body,x402b1295_d_);
+                           (document_f_.body,jsoo_obj_d_);
                           var
                             /*<<hypertree.ml 1503 37>>*/ tr_b_=[0,[0,zero_bt_,a_S_]],
                             /*<<hypertree.ml 1506 5>>*/ tr_e_=[0,tr_b_[1]],
@@ -10561,15 +10566,15 @@
                           function(param_a_)
                            { /*<<hypertree.ml 1510 10>>*/ need_redraw_bw_[1]=0;
                              /*<<hypertree.ml 1511 10>>*/  /*<<hypertree.ml 1511 10>>*/ caml_js_meth_call_i_
-                             (x541dc528_ax_,_mY_,[0,str_transform_dw_]);
+                             (jsoo_self_ax_,_mY_,[0,str_transform_dw_]);
                             var
                               /*<<hypertree.ml 1518 18>>*/ w_aM_=page_u_.clientWidth,
                               /*<<hypertree.ml 1519 18>>*/ h_aN_=page_u_.clientHeight,
                               /*<<hypertree.ml 1520 18>>*/ _a$_=
-                              w_aM_!==x402b1295_d_.width?0:h_aN_!==x402b1295_d_.height?0:1;
+                              w_aM_!==jsoo_obj_d_.width?0:h_aN_!==jsoo_obj_d_.height?0:1;
                              /*<<camlinternalFormatBasics.ml 465 8>>*/ if(!_a$_)
-                             { /*<<hypertree.ml 1521 12>>*/ x402b1295_d_.width=w_aM_;
-                               /*<<hypertree.ml 1522 12>>*/ x402b1295_d_.height=h_aN_}
+                             { /*<<hypertree.ml 1521 12>>*/ jsoo_obj_d_.width=w_aM_;
+                               /*<<hypertree.ml 1522 12>>*/ jsoo_obj_d_.height=h_aN_}
                             var
                               /*<<hypertree.ml 1524 10>>*/ _aO_=tr_e_[1],
                               /*<<hypertree.ml 190 20>>*/ _Y_=_aO_[2],
@@ -10599,22 +10604,22 @@
                                 if(___!==_n_){var _n_=_aU_;continue}
                                 break}}
                              /*<<hypertree.ml 1525 10>>*/  /*<<hypertree.ml 1525 10>>*/ caml_js_meth_call_i_
-                             (x541dc528_ax_,_mZ_,[0,str_transform_dw_]);
+                             (jsoo_self_ax_,_mZ_,[0,str_transform_dw_]);
                              /*<<hypertree.ml 587 0>>*/  /*<<hypertree.ml 587 0>>*/ caml_js_meth_call_i_
-                             (x541dc528_ax_,_lM_,[0,str_draw_fy_]);
+                             (jsoo_self_ax_,_lM_,[0,str_draw_fy_]);
                             var
                               /*<<hypertree.ml 588 10>>*/ c_b_=
                                /*<<hypertree.ml 588 10>>*/ caml_js_meth_call_i_
-                               (x402b1295_d_,_lN_,[0,d_bV_]),
+                               (jsoo_obj_d_,_lN_,[0,d_bV_]),
                               /*<<hypertree.ml 589 35>>*/ transf_f_=
                                /*<<hypertree.ml 589 35>>*/ screen_transform_eW_
-                               (x402b1295_d_),
+                               (jsoo_obj_d_),
                               /*<<hypertree.ml 589 58>>*/ _z_=transf_f_[4],
                               /*<<hypertree.ml 589 58>>*/ _B_=transf_f_[3],
                               /*<<hypertree.ml 589 58>>*/ _aV_=transf_f_[2],
                               /*<<hypertree.ml 589 58>>*/ _aW_=transf_f_[1];
                              /*<<hypertree.ml 590 2>>*/  /*<<hypertree.ml 590 2>>*/ caml_js_meth_call_i_
-                             (c_b_,_lO_,[0,0,0,x402b1295_d_.width,x402b1295_d_.height]);
+                             (c_b_,_lO_,[0,0,0,jsoo_obj_d_.width,jsoo_obj_d_.height]);
                              /*<<hypertree.ml 592 16>>*/ var
                              padding_aj_=
                                /*<<hypertree.ml 592 16>>*/ opt_style_O_
@@ -10629,16 +10634,16 @@
                               _aV_+padding_aj_,
                               0,
                               7,
-                              x3bd6d47f_D_);
-                             /*<<hypertree.ml 594 69>>*/ function _aX_(xccd67ee8_a_)
-                             { /*<<hypertree.ml 597 7>>*/ c_b_.fillStyle=xccd67ee8_a_;
+                              jsoo_359432e5_D_);
+                             /*<<hypertree.ml 594 69>>*/ function _aX_(jsoo_arg_a_)
+                             { /*<<hypertree.ml 597 7>>*/ c_b_.fillStyle=jsoo_arg_a_;
                                /*<<hypertree.ml 598 7>>*/ return  /*<<hypertree.ml 598 7>>*/ caml_js_meth_call_i_
                                       (c_b_,_lQ_,[0]) /*<<hypertree.ml 598 17>>*/ }
                              /*<<hypertree.ml 595 2>>*/  /*<<hypertree.ml 595 2>>*/ _aG_
                              (style_ag_.backgroundColor,_aX_);
-                             /*<<hypertree.ml 598 18>>*/ function _aY_(x19af555c_a_)
+                             /*<<hypertree.ml 598 18>>*/ function _aY_(jsoo_arg_a_)
                              { /*<<hypertree.ml 601 7>>*/ c_b_.lineWidth=1;
-                               /*<<hypertree.ml 602 7>>*/ c_b_.strokeStyle=x19af555c_a_;
+                               /*<<hypertree.ml 602 7>>*/ c_b_.strokeStyle=jsoo_arg_a_;
                                /*<<hypertree.ml 603 7>>*/ return  /*<<hypertree.ml 603 7>>*/ caml_js_meth_call_i_
                                       (c_b_,_lR_,[0]) /*<<hypertree.ml 603 19>>*/ }
                              /*<<hypertree.ml 599 2>>*/  /*<<hypertree.ml 599 2>>*/ _aG_
@@ -10817,10 +10822,10 @@
                                           [0,
                                            z_q_[1]*_p_+_B_,
                                            z_q_[2]*_o_+_z_,
-                                            /*<<hypertree.ml 714 11>>*/ Math.sqrt(w_F_*w_F_+h_G_*h_G_),
+                                            /*<<hypertree.ml 715 18>>*/ Math.sqrt(w_F_*w_F_+h_G_*h_G_),
                                            0,
                                            7,
-                                           x3bd6d47f_D_]);
+                                           jsoo_359432e5_D_]);
                                          /*<<hypertree.ml 717 11>>*/  /*<<hypertree.ml 717 11>>*/ caml_js_meth_call_i_
                                          (c_b_,_lW_,[0])}
                                        /*<<hypertree.ml 719 9>>*/  /*<<hypertree.ml 719 9>>*/ caml_js_meth_call_i_
@@ -10959,9 +10964,9 @@
                                 if(_an_!==_c_){var _c_=_a1_;continue}
                                 break}}
                              /*<<hypertree.ml 724 0>>*/  /*<<hypertree.ml 724 0>>*/ caml_js_meth_call_i_
-                             (x541dc528_ax_,_lS_,[0,str_draw_fy_]);
+                             (jsoo_self_ax_,_lS_,[0,str_draw_fy_]);
                              /*<<hypertree.ml 725 0>>*/ return  /*<<hypertree.ml 725 0>>*/ caml_js_meth_call_i_
-                                    (x541dc528_ax_,
+                                    (jsoo_self_ax_,
                                      _lT_,
                                      [0,image_count_al_[1],large_image_count_am_[1]]) /*<<hypertree.ml 1526 49>>*/ };
                            /*<<hypertree.ml 1527 5>>*/  /*<<hypertree.ml 1527 5>>*/ perform_redraw_e3_
@@ -10974,12 +10979,12 @@
                                 document_f_.documentElement,
                                 /*<<hypertree.ml 1533 18>>*/ h_c_=page_b_.clientHeight,
                                 /*<<hypertree.ml 1537 18>>*/ _e_=
-                                page_b_.clientWidth!==x402b1295_d_.width
+                                page_b_.clientWidth!==jsoo_obj_d_.width
                                  ?0
-                                 :h_c_!==x402b1295_d_.height?0:1;
+                                 :h_c_!==jsoo_obj_d_.height?0:1;
                                /*<<camlinternalFormatBasics.ml 465 8>>*/ if(!_e_)
                                 /*<<hypertree.ml 1543 12>>*/ schedule_redraw_ao_(1);
-                               /*<<hypertree.ml 1545 10>>*/ return xf5b7986a_y_ /*<<hypertree.ml 1545 18>>*/ });
+                               /*<<hypertree.ml 1545 10>>*/ return jsoo_a030bfac_y_ /*<<hypertree.ml 1545 18>>*/ });
                            /*<<hypertree.ml 1561 5>>*/ function find_box_r_
                            (boxes_a_,x_b_,y_c_)
                            {var
@@ -11008,27 +11013,27 @@
                            { /*<<hypertree.ml 1581 7>>*/ return -1===
                                      /*<<hypertree.ml 1580 15>>*/ find_box_r_(_l_,x_a_,y_b_)
                                     ?on_image_o_[1]
-                                      ?(x402b1295_d_.style.cursor=str_k_,on_image_o_[1]=0,0)
+                                      ?(jsoo_obj_d_.style.cursor=str_k_,on_image_o_[1]=0,0)
                                       :0
                                     :on_image_o_[1]
                                       ?0
-                                      :(x402b1295_d_.style.cursor=
+                                      :(jsoo_obj_d_.style.cursor=
                                         str_pointer_bC_,
                                         on_image_o_[1]=
                                         1,
                                         0) /*<<hypertree.ml 1589 10>>*/ }
-                           /*<<hypertree.ml 1591 5>>*/ x402b1295_d_.onmousemove=
+                           /*<<hypertree.ml 1591 5>>*/ jsoo_obj_d_.onmousemove=
                            /*<<hypertree.ml 1591 28>>*/ handler_v_
-                           (function(x502b8476_a_)
+                           (function(jsoo_obj_a_)
                              { /*<<hypertree.ml 1592 18>>*/  /*<<hypertree.ml 1592 18>>*/ update_cursor_x_
-                               (x502b8476_a_.clientX,x502b8476_a_.clientY);
-                               /*<<hypertree.ml 1592 59>>*/ return x3bd6d47f_D_ /*<<hypertree.ml 1592 70>>*/ });
-                           /*<<hypertree.ml 280 2>>*/ x402b1295_d_.onmousedown=
+                               (jsoo_obj_a_.clientX,jsoo_obj_a_.clientY);
+                               /*<<hypertree.ml 1592 59>>*/ return jsoo_359432e5_D_ /*<<hypertree.ml 1592 70>>*/ });
+                           /*<<hypertree.ml 280 2>>*/ jsoo_obj_d_.onmousedown=
                            /*<<hypertree.ml 280 26>>*/ handler_v_
-                           (function(x7bc72a9e_a_)
+                           (function(jsoo_obj_a_)
                              {var
-                                /*<<hypertree.ml 282 16>>*/ x0_i_=x7bc72a9e_a_.clientX,
-                                /*<<hypertree.ml 282 37>>*/ y0_j_=x7bc72a9e_a_.clientY,
+                                /*<<hypertree.ml 282 16>>*/ x0_i_=jsoo_obj_a_.clientX,
+                                /*<<hypertree.ml 282 37>>*/ y0_j_=jsoo_obj_a_.clientY,
                                 /*<<hypertree.ml 286 7>>*/ started_c_=[0,0],
                                 /*<<hypertree.ml 306 7>>*/ c2_m_=[0,no_handler_W_],
                                 /*<<hypertree.ml 288 9>>*/ c1_n_=
@@ -11053,17 +11058,17 @@
                                           var _l_=0,_f_=0;
                                         if(_f_)
                                          { /*<<hypertree.ml 298 19>>*/ started_c_[1]=1;
-                                           /*<<hypertree.ml 299 19>>*/ x402b1295_d_.style.cursor=
+                                           /*<<hypertree.ml 299 19>>*/ jsoo_obj_d_.style.cursor=
                                           str_move_fK_;
                                           var _l_=1}}
                                        /*<<hypertree.ml 301 17>>*/ if(started_c_[1])
                                        {var
                                           /*<<hypertree.ml 1596 18>>*/ z0_m_=
                                            /*<<hypertree.ml 1596 18>>*/ from_screen_b2_
-                                           (x402b1295_d_,x0_i_,y0_j_),
+                                           (jsoo_obj_d_,x0_i_,y0_j_),
                                           /*<<hypertree.ml 1597 18>>*/ z1_n_=
                                            /*<<hypertree.ml 1597 18>>*/ from_screen_b2_
-                                           (x402b1295_d_,x1_g_,y1_k_);
+                                           (jsoo_obj_d_,x1_g_,y1_k_);
                                          /*<<hypertree.ml 1610 9>>*/ tr_e_[1]=
                                         [0,
                                           /*<<hypertree.ml 1609 18>>*/ compute_translation_a9_
@@ -11077,24 +11082,24 @@
                                          (1)}
                                        /*<<hypertree.ml 302 17>>*/  /*<<hypertree.ml 302 17>>*/ stopPropagation_a5_
                                        (ev_a_);
-                                       /*<<hypertree.ml 302 40>>*/ return xf5b7986a_y_ /*<<hypertree.ml 303 25>>*/ }),
-                                  xf5b7986a_y_);
+                                       /*<<hypertree.ml 302 40>>*/ return jsoo_a030bfac_y_ /*<<hypertree.ml 303 25>>*/ }),
+                                  jsoo_a030bfac_y_);
                                /*<<hypertree.ml 322 21>>*/ c2_m_[1]=
                                /*<<hypertree.ml 308 10>>*/ addEventListener_aw_
                                (document_f_,
                                 mouseup_jI_,
                                  /*<<hypertree.ml 309 13>>*/ handler_v_
-                                 (function(x67c1d93d_a_)
+                                 (function(jsoo_obj_a_)
                                    { /*<<hypertree.ml 314 18>>*/  /*<<hypertree.ml 314 18>>*/ removeEventListener_an_
                                      (c1_n_);
                                      /*<<hypertree.ml 315 18>>*/  /*<<hypertree.ml 315 18>>*/ _aQ_
                                      (c2_m_[1],removeEventListener_an_);
                                      /*<<hypertree.ml 315 58>>*/ if(started_c_[1])
-                                     { /*<<hypertree.ml 317 20>>*/ x402b1295_d_.style.cursor=
+                                     { /*<<hypertree.ml 317 20>>*/ jsoo_obj_d_.style.cursor=
                                       str_k_;
                                       var
-                                        /*<<hypertree.ml 318 37>>*/ y_p_=x67c1d93d_a_.clientY,
-                                        /*<<hypertree.ml 318 25>>*/ x_s_=x67c1d93d_a_.clientX;
+                                        /*<<hypertree.ml 318 37>>*/ y_p_=jsoo_obj_a_.clientY,
+                                        /*<<hypertree.ml 318 25>>*/ x_s_=jsoo_obj_a_.clientX;
                                        /*<<hypertree.ml 1613 18>>*/ tr_b_[1]=tr_e_[1];
                                        /*<<hypertree.ml 1613 30>>*/ on_image_o_[1]=0;
                                        /*<<hypertree.ml 1613 49>>*/  /*<<hypertree.ml 1613 49>>*/ update_cursor_x_
@@ -11103,7 +11108,7 @@
                                      { /*<<hypertree.ml 1615 17>>*/ var
                                        i_f_=
                                          /*<<hypertree.ml 1615 17>>*/ find_box_r_
-                                         (_l_,x67c1d93d_a_.clientX,x67c1d93d_a_.clientY);
+                                         (_l_,jsoo_obj_a_.clientX,jsoo_obj_a_.clientY);
                                        /*<<hypertree.ml 1616 9>>*/ if(0<i_f_)
                                        { /*<<hypertree.ml 1617 26>>*/ var
                                          _h_=
@@ -11120,19 +11125,19 @@
                                            var _j_=1}
                                          else
                                           var _j_=0}}
-                                     /*<<hypertree.ml 320 49>>*/ return xf5b7986a_y_ /*<<hypertree.ml 321 26>>*/ }),
-                                xf5b7986a_y_);
-                               /*<<hypertree.ml 323 7>>*/ return xf5b7986a_y_ /*<<hypertree.ml 323 15>>*/ });
+                                     /*<<hypertree.ml 320 49>>*/ return jsoo_a030bfac_y_ /*<<hypertree.ml 321 26>>*/ }),
+                                jsoo_a030bfac_y_);
+                               /*<<hypertree.ml 323 7>>*/ return jsoo_a030bfac_y_ /*<<hypertree.ml 323 15>>*/ });
                            /*<<hypertree.ml 327 10>>*/  /*<<hypertree.ml 327 10>>*/ addEventListener_aw_
-                           (x402b1295_d_,
+                           (jsoo_obj_d_,
                             touchstart_jK_,
                              /*<<hypertree.ml 328 5>>*/ handler_v_
-                             (function(x9f5d45e6_a_)
-                               { /*<<hypertree.ml 329 7>>*/ function _c_(xc9a9e1c3_a_)
+                             (function(jsoo_obj_a_)
+                               { /*<<hypertree.ml 329 7>>*/ function _c_(jsoo_obj_a_)
                                  {var
-                                    /*<<hypertree.ml 330 16>>*/ id_j_=xc9a9e1c3_a_.identifier,
-                                    /*<<hypertree.ml 331 16>>*/ x0_o_=xc9a9e1c3_a_.clientX,
-                                    /*<<hypertree.ml 331 40>>*/ y0_p_=xc9a9e1c3_a_.clientY,
+                                    /*<<hypertree.ml 330 16>>*/ id_j_=jsoo_obj_a_.identifier,
+                                    /*<<hypertree.ml 331 16>>*/ x0_o_=jsoo_obj_a_.clientX,
+                                    /*<<hypertree.ml 331 40>>*/ y0_p_=jsoo_obj_a_.clientY,
                                     /*<<hypertree.ml 335 7>>*/ started_c_=[0,0],
                                     /*<<hypertree.ml 337 9>>*/ c1_s_=
                                      /*<<hypertree.ml 337 9>>*/ addEventListener_aw_
@@ -11151,12 +11156,12 @@
                                              /*<<hypertree.ml 341 19>>*/ for(;;)
                                              { /*<<hypertree.ml 341 19>>*/ var
                                                _l_=
-                                                function(x0c5647b7_a_)
+                                                function(jsoo_obj_a_)
                                                  { /*<<hypertree.ml 342 22>>*/ if
-                                                   (x0c5647b7_a_.identifier===id_j_)
+                                                   (jsoo_obj_a_.identifier===id_j_)
                                                    {var
-                                                      /*<<hypertree.ml 343 29>>*/ x1_g_=x0c5647b7_a_.clientX,
-                                                      /*<<hypertree.ml 343 52>>*/ y1_k_=x0c5647b7_a_.clientY;
+                                                      /*<<hypertree.ml 343 29>>*/ x1_g_=jsoo_obj_a_.clientX,
+                                                      /*<<hypertree.ml 343 52>>*/ y1_k_=jsoo_obj_a_.clientY;
                                                      /*<<hypertree.ml 347 21>>*/ if(started_c_[1])
                                                      var _l_=0;
                                                     else
@@ -11170,19 +11175,19 @@
                                                         var _l_=0,_f_=0;
                                                       if(_f_)
                                                        { /*<<hypertree.ml 351 23>>*/ started_c_[1]=1;
-                                                         /*<<hypertree.ml 352 23>>*/ x402b1295_d_.style.cursor=
+                                                         /*<<hypertree.ml 352 23>>*/ jsoo_obj_d_.style.cursor=
                                                         str_move_fK_;
                                                         var _l_=1}}
                                                      /*<<hypertree.ml 354 21>>*/ if(started_c_[1])
                                                      { /*<<hypertree.ml 1623 3>>*/  /*<<hypertree.ml 1623 3>>*/ caml_js_meth_call_i_
-                                                       (x541dc528_ax_,_m0_,[0,str_transform_dw_]);
+                                                       (jsoo_self_ax_,_m0_,[0,str_transform_dw_]);
                                                       var
                                                         /*<<hypertree.ml 1624 18>>*/ z0_m_=
                                                          /*<<hypertree.ml 1624 18>>*/ from_screen_b2_
-                                                         (x402b1295_d_,x0_o_,y0_p_),
+                                                         (jsoo_obj_d_,x0_o_,y0_p_),
                                                         /*<<hypertree.ml 1625 18>>*/ z1_n_=
                                                          /*<<hypertree.ml 1625 18>>*/ from_screen_b2_
-                                                         (x402b1295_d_,x1_g_,y1_k_);
+                                                         (jsoo_obj_d_,x1_g_,y1_k_);
                                                        /*<<hypertree.ml 1638 9>>*/ tr_e_[1]=
                                                       [0,
                                                         /*<<hypertree.ml 1637 18>>*/ compute_translation_a9_
@@ -11205,8 +11210,8 @@
                                               break}}
                                            /*<<hypertree.ml 357 17>>*/  /*<<hypertree.ml 357 17>>*/ stopPropagation_a5_
                                            (ev_a_);
-                                           /*<<hypertree.ml 357 40>>*/ return x3bd6d47f_D_ /*<<hypertree.ml 358 26>>*/ }),
-                                      xf5b7986a_y_),
+                                           /*<<hypertree.ml 357 40>>*/ return jsoo_359432e5_D_ /*<<hypertree.ml 358 26>>*/ }),
+                                      jsoo_a030bfac_y_),
                                     /*<<hypertree.ml 361 7>>*/ c2_m_=[0,no_handler_W_],
                                     /*<<hypertree.ml 362 7>>*/ c3_n_=[0,no_handler_W_];
                                    /*<<hypertree.ml 385 21>>*/ c2_m_[1]=
@@ -11226,12 +11231,12 @@
                                            /*<<hypertree.ml 368 20>>*/ for(;;)
                                            { /*<<hypertree.ml 368 20>>*/ var
                                              _p_=
-                                              function(x4a3455d3_a_)
+                                              function(jsoo_obj_a_)
                                                { /*<<hypertree.ml 369 23>>*/ if
-                                                 (x4a3455d3_a_.identifier===id_j_)
+                                                 (jsoo_obj_a_.identifier===id_j_)
                                                  {var
-                                                    /*<<hypertree.ml 370 30>>*/ x_o_=x4a3455d3_a_.clientX,
-                                                    /*<<hypertree.ml 370 53>>*/ y_p_=x4a3455d3_a_.clientY;
+                                                    /*<<hypertree.ml 370 30>>*/ x_o_=jsoo_obj_a_.clientX,
+                                                    /*<<hypertree.ml 370 53>>*/ y_p_=jsoo_obj_a_.clientY;
                                                    /*<<hypertree.ml 374 22>>*/  /*<<hypertree.ml 374 22>>*/ removeEventListener_an_
                                                    (c1_s_);
                                                    /*<<hypertree.ml 375 22>>*/  /*<<hypertree.ml 375 22>>*/ _aQ_
@@ -11239,7 +11244,7 @@
                                                    /*<<hypertree.ml 376 22>>*/  /*<<hypertree.ml 376 22>>*/ _aQ_
                                                    (c3_n_[1],removeEventListener_an_);
                                                    /*<<hypertree.ml 376 62>>*/ if(started_c_[1])
-                                                   { /*<<hypertree.ml 378 24>>*/ x402b1295_d_.style.cursor=
+                                                   { /*<<hypertree.ml 378 24>>*/ jsoo_obj_d_.style.cursor=
                                                     str_k_;
                                                      /*<<hypertree.ml 1640 18>>*/ tr_b_[1]=tr_e_[1];
                                                      /*<<hypertree.ml 1640 18>>*/ return 0}
@@ -11268,8 +11273,8 @@
                                              /*<<hypertree.ml 382 24>>*/ var _t_=_f_+1|0;
                                             if(_h_!==_f_){var _f_=_t_;continue}
                                             break}}
-                                         /*<<hypertree.ml 384 18>>*/ return xf5b7986a_y_ /*<<hypertree.ml 384 26>>*/ }),
-                                    xf5b7986a_y_);
+                                         /*<<hypertree.ml 384 18>>*/ return jsoo_a030bfac_y_ /*<<hypertree.ml 384 26>>*/ }),
+                                    jsoo_a030bfac_y_);
                                    /*<<hypertree.ml 405 21>>*/ c3_n_[1]=
                                    /*<<hypertree.ml 387 10>>*/ addEventListener_aw_
                                    (document_f_,
@@ -11287,9 +11292,9 @@
                                            /*<<hypertree.ml 391 20>>*/ for(;;)
                                            { /*<<hypertree.ml 391 20>>*/ var
                                              _l_=
-                                              function(x0dfc5f21_a_)
+                                              function(jsoo_obj_a_)
                                                { /*<<hypertree.ml 392 23>>*/ if
-                                                 (x0dfc5f21_a_.identifier===id_j_)
+                                                 (jsoo_obj_a_.identifier===id_j_)
                                                  { /*<<hypertree.ml 397 22>>*/  /*<<hypertree.ml 397 22>>*/ removeEventListener_an_
                                                    (c1_s_);
                                                    /*<<hypertree.ml 398 22>>*/  /*<<hypertree.ml 398 22>>*/ _aQ_
@@ -11297,7 +11302,7 @@
                                                    /*<<hypertree.ml 399 22>>*/  /*<<hypertree.ml 399 22>>*/ _aQ_
                                                    (c3_n_[1],removeEventListener_an_);
                                                    /*<<hypertree.ml 399 62>>*/ if(started_c_[1])
-                                                   x402b1295_d_.style.cursor=str_k_;
+                                                   jsoo_obj_d_.style.cursor=str_k_;
                                                    /*<<hypertree.ml 1641 18>>*/ tr_b_[1]=tr_e_[1];
                                                    /*<<hypertree.ml 1641 18>>*/ return 0}
                                                  /*<<hypertree.ml 392 20>>*/ return 0 /*<<hypertree.ml 402 23>>*/ };
@@ -11308,25 +11313,25 @@
                                              /*<<hypertree.ml 402 24>>*/ var _o_=_f_+1|0;
                                             if(_g_!==_f_){var _f_=_o_;continue}
                                             break}}
-                                         /*<<hypertree.ml 404 18>>*/ return x3bd6d47f_D_ /*<<hypertree.ml 404 27>>*/ }),
-                                    xf5b7986a_y_);
+                                         /*<<hypertree.ml 404 18>>*/ return jsoo_359432e5_D_ /*<<hypertree.ml 404 27>>*/ }),
+                                    jsoo_a030bfac_y_);
                                    /*<<hypertree.ml 405 21>>*/ return 0 /*<<hypertree.ml 405 21>>*/ }
                                  /*<<hypertree.ml 329 7>>*/  /*<<hypertree.ml 329 7>>*/ _aG_
                                  ( /*<<hypertree.ml 329 23>>*/ caml_js_meth_call_i_
-                                   (x9f5d45e6_a_.changedTouches,_lk_,[0,0]),
+                                   (jsoo_obj_a_.changedTouches,_lk_,[0,0]),
                                   _c_);
-                                 /*<<hypertree.ml 405 22>>*/ return x3bd6d47f_D_ /*<<hypertree.ml 406 16>>*/ }),
-                            xf5b7986a_y_);
+                                 /*<<hypertree.ml 405 22>>*/ return jsoo_359432e5_D_ /*<<hypertree.ml 406 16>>*/ }),
+                            jsoo_a030bfac_y_);
                            /*<<hypertree.ml 1694 13>>*/  /*<<hypertree.ml 1694 13>>*/ addEventListener_aw_
                            (document_f_,
                             keydown_ey_,
                              /*<<hypertree.ml 1695 16>>*/ handler_v_
-                             (function(x49e066ea_a_)
+                             (function(jsoo_obj_a_)
                                { /*<<hypertree.ml 1650 13>>*/ var
                                  switcher_c_=
-                                  x49e066ea_a_.keyCode-37|0;
+                                  jsoo_obj_a_.keyCode-37|0;
                                  /*<<hypertree.ml 1650 13>>*/ if(3<switcher_c_>>>0)
-                                 return xf5b7986a_y_;
+                                 return jsoo_a030bfac_y_;
                                 switch(switcher_c_)
                                  {case 0:
                                     /*<<hypertree.ml 1657 12>>*/ tr_e_[1]=
@@ -11341,7 +11346,7 @@
                                     /*<<hypertree.ml 1658 12>>*/ tr_b_[1]=tr_e_[1];
                                     /*<<hypertree.ml 1659 12>>*/  /*<<hypertree.ml 1659 12>>*/ schedule_redraw_ao_
                                     (1);
-                                    /*<<hypertree.ml 1659 32>>*/ return x3bd6d47f_D_;
+                                    /*<<hypertree.ml 1659 32>>*/ return jsoo_359432e5_D_;
                                   case 1:
                                     /*<<hypertree.ml 1667 12>>*/ tr_e_[1]=
                                    [0,
@@ -11355,7 +11360,7 @@
                                     /*<<hypertree.ml 1668 12>>*/ tr_b_[1]=tr_e_[1];
                                     /*<<hypertree.ml 1669 12>>*/  /*<<hypertree.ml 1669 12>>*/ schedule_redraw_ao_
                                     (1);
-                                    /*<<hypertree.ml 1669 32>>*/ return x3bd6d47f_D_;
+                                    /*<<hypertree.ml 1669 32>>*/ return jsoo_359432e5_D_;
                                   case 2:
                                     /*<<hypertree.ml 1677 12>>*/ tr_e_[1]=
                                    [0,
@@ -11369,7 +11374,7 @@
                                     /*<<hypertree.ml 1678 12>>*/ tr_b_[1]=tr_e_[1];
                                     /*<<hypertree.ml 1679 12>>*/  /*<<hypertree.ml 1679 12>>*/ schedule_redraw_ao_
                                     (1);
-                                    /*<<hypertree.ml 1679 32>>*/ return x3bd6d47f_D_;
+                                    /*<<hypertree.ml 1679 32>>*/ return jsoo_359432e5_D_;
                                   default:
                                     /*<<hypertree.ml 1687 12>>*/ tr_e_[1]=
                                    [0,
@@ -11383,8 +11388,8 @@
                                     /*<<hypertree.ml 1688 12>>*/ tr_b_[1]=tr_e_[1];
                                     /*<<hypertree.ml 1689 12>>*/  /*<<hypertree.ml 1689 12>>*/ schedule_redraw_ao_
                                     (1);
-                                    /*<<hypertree.ml 1689 32>>*/ return x3bd6d47f_D_} /*<<hypertree.ml 1692 19>>*/ }),
-                            xf5b7986a_y_);
+                                    /*<<hypertree.ml 1689 32>>*/ return jsoo_359432e5_D_} /*<<hypertree.ml 1692 19>>*/ }),
+                            jsoo_a030bfac_y_);
                            /*<<hypertree.ml 1697 5>>*/ var prev_buttons_B_=[0,0];
                            /*<<hypertree.ml 1698 5>>*/ function make_buttons_C_
                            (param_a_)
@@ -11418,7 +11423,7 @@
                              (function(param_a_)
                                { /*<<hypertree.ml 1718 21>>*/  /*<<hypertree.ml 1718 21>>*/ show_information_page_mS_
                                  (messages_m_,_t_);
-                                 /*<<hypertree.ml 1718 61>>*/ return x3bd6d47f_D_ /*<<hypertree.ml 1718 72>>*/ });
+                                 /*<<hypertree.ml 1718 61>>*/ return jsoo_359432e5_D_ /*<<hypertree.ml 1718 72>>*/ });
                              /*<<hypertree.ml 1720 9>>*/ var
                              tt_o_=
                                /*<<hypertree.ml 1720 9>>*/ tooltip_b3_
@@ -11469,9 +11474,9 @@
                                    { /*<<hypertree.ml 1742 31>>*/ var
                                      lang_b_=
                                        /*<<hypertree.ml 1742 31>>*/ _e_.toString();
-                                     /*<<hypertree.ml 490 2>>*/ function _d_(xdd9b7316_a_)
+                                     /*<<hypertree.ml 490 2>>*/ function _d_(jsoo_self_a_)
                                      { /*<<hypertree.ml 491 15>>*/ return  /*<<hypertree.ml 491 15>>*/ caml_js_meth_call_i_
-                                              (xdd9b7316_a_,_lw_,[0,str_hyp_lang_fH_,lang_b_]) /*<<hypertree.ml 491 54>>*/ }
+                                              (jsoo_self_a_,_lw_,[0,str_hyp_lang_fH_,lang_b_]) /*<<hypertree.ml 491 54>>*/ }
                                      /*<<hypertree.ml 490 2>>*/  /*<<hypertree.ml 490 2>>*/ _aG_
                                      (window_c_.localStorage,_d_);
                                      /*<<hypertree.ml 491 55>>*/ language_ay_[1]=lang_b_;
@@ -11481,7 +11486,7 @@
                                      (_t_,_A_);
                                      /*<<hypertree.ml 1745 17>>*/  /*<<hypertree.ml 1745 17>>*/ schedule_redraw_ao_
                                      (1);
-                                     /*<<hypertree.ml 1745 37>>*/ return x3bd6d47f_D_ /*<<hypertree.ml 1746 26>>*/ });
+                                     /*<<hypertree.ml 1745 37>>*/ return jsoo_359432e5_D_ /*<<hypertree.ml 1746 26>>*/ });
                                  /*<<hypertree.ml 1747 21>>*/ var
                                  li_d_=
                                    /*<<hypertree.ml 1747 21>>*/ createLi_eD_(document_f_);
@@ -11543,7 +11548,7 @@
                                  /*<<hypertree.ml 1777 11>>*/ tr_b_[1]=tr_e_[1];
                                  /*<<hypertree.ml 1778 11>>*/  /*<<hypertree.ml 1778 11>>*/ schedule_redraw_ao_
                                  (1);
-                                 /*<<hypertree.ml 1778 31>>*/ return x3bd6d47f_D_ /*<<hypertree.ml 1779 20>>*/ });
+                                 /*<<hypertree.ml 1778 31>>*/ return jsoo_359432e5_D_ /*<<hypertree.ml 1779 20>>*/ });
                              /*<<hypertree.ml 1781 9>>*/ var
                              tt_r_=
                                /*<<hypertree.ml 1781 9>>*/ tooltip_b3_
@@ -11606,7 +11611,7 @@
                default: /*<<src/core/lwt.ml 821 32>>*/ throw [0,_o_,_jn_]} /*<<src/core/lwt.ml 821 33>>*/ });
          break;
         default: /*<<src/core/lwt.ml 823 20>>*/ throw [0,_o_,_jo_]}
-       /*<<hypertree.ml 1804 19>>*/ return x3bd6d47f_D_ /*<<hypertree.ml 1805 11>>*/ }
+       /*<<hypertree.ml 1804 19>>*/ return jsoo_359432e5_D_ /*<<hypertree.ml 1805 11>>*/ }
      /*<<hypertree.ml 1816 0>>*/ window_c_.onload=
      /*<<hypertree.ml 1816 23>>*/ handler_v_
      (function(param_a_)
@@ -11621,7 +11626,7 @@
           if(_f_===Canvas_not_available_eG_)
            { /*<<hypertree.ml 1812 4>>*/  /*<<hypertree.ml 1812 4>>*/ unsupported_messages_mU_
              (0);
-             /*<<hypertree.ml 1812 27>>*/ return x3bd6d47f_D_}
+             /*<<hypertree.ml 1812 27>>*/ return jsoo_359432e5_D_}
            /*<<hypertree.ml 1786 23>>*/ throw _f_}
         return _b_ /*<<hypertree.ml 1813 13>>*/ });
      /*<<std_exit.ml 16 8>>*/  /*<<std_exit.ml 16 8>>*/ do_at_exit_dT_(0);
