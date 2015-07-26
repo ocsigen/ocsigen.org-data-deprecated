@@ -16,6 +16,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="a_additive"| value Svg_sigs.T.a_additive >> ~[<<a_api | module Svg_sigs.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="a_aizmuth"| value Svg_sigs.T.a_aizmuth >> ~[<<a_api | module Svg_sigs.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="a_align"| value Html5_sigs.T.a_align >> ~[<<a_api | module Html5_sigs.T >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="a_alignment_baseline"| value Svg_sigs.T.a_alignment_baseline >> ~[<<a_api | module Svg_sigs.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="a_alphabetic"| value Svg_sigs.T.a_alphabetic >> ~[<<a_api | module Svg_sigs.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="a_alt"| value Html5_sigs.T.a_alt >> ~[<<a_api | module Html5_sigs.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="a_amplitude"| value Svg_sigs.T.a_amplitude >> ~[<<a_api | module Svg_sigs.T >>~]||
@@ -85,6 +86,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="a_dir"| value Html5_sigs.T.a_dir >> ~[<<a_api | module Html5_sigs.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="a_disabled"| value Html5_sigs.T.a_disabled >> ~[<<a_api | module Html5_sigs.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="a_divisor"| value Svg_sigs.T.a_divisor >> ~[<<a_api | module Svg_sigs.T >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="a_dominant_baseline"| value Svg_sigs.T.a_dominant_baseline >> ~[<<a_api | module Svg_sigs.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="a_download"| value Html5_sigs.T.a_download >> ~[<<a_api | module Html5_sigs.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="a_draggable"| value Html5_sigs.T.a_draggable >> ~[<<a_api | module Html5_sigs.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="a_dur"| value Svg_sigs.T.a_dur >> ~[<<a_api | module Svg_sigs.T >>~]||

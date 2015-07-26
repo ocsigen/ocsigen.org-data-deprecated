@@ -865,6 +865,40 @@
                                                      val a_name :
                                                        string wrap ->
                                                        [> `Name ] attrib
+                                                     val a_alignment_baseline :
+                                                       [< `After_edge
+                                                        | `Alphabetic
+                                                        | `Auto
+                                                        | `Baseline
+                                                        | `Before_edge
+                                                        | `Central
+                                                        | `Hanging
+                                                        | `Ideographic
+                                                        | `Inherit
+                                                        | `Mathematical
+                                                        | `Middle
+                                                        | `Text_after_edge
+                                                        | `Text_before_edge ]
+                                                       wrap ->
+                                                       [> `Alignment_Baseline ]
+                                                       attrib
+                                                     val a_dominant_baseline :
+                                                       [< `Alphabetic
+                                                        | `Auto
+                                                        | `Central
+                                                        | `Hanging
+                                                        | `Ideographic
+                                                        | `Inherit
+                                                        | `Mathematical
+                                                        | `Middle
+                                                        | `No_change
+                                                        | `Reset_size
+                                                        | `Text_after_edge
+                                                        | `Text_before_edge
+                                                        | `Use_script ]
+                                                       wrap ->
+                                                       [> `Dominant_Baseline ]
+                                                       attrib
                                                      val a_onabort :
                                                        Xml.event_handler ->
                                                        [> `OnAbort ] attrib

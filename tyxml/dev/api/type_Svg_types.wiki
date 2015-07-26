@@ -85,7 +85,7 @@
       [ `By | `CalcMode | `From | `KeySplines | `KeyTimes | `To | `Values ]
   type animation_addition_attr = [ `Accumulate | `Additive ]
   type presentation_attr =
-      [ `Alignement_Baseline
+      [ `Alignment_Baseline
       | `Baseline_Shift
       | `Clip
       | `Clip_Path
@@ -98,7 +98,7 @@
       | `Cursor
       | `Direction
       | `Display
-      | `Dominant_baseline
+      | `Dominant_Baseline
       | `Enable_background
       | `Fill
       | `Fill_opacity
@@ -250,7 +250,7 @@
       | `Use
       | `View ]
   type svg_attr =
-      [ `Alignement_Baseline
+      [ `Alignment_Baseline
       | `BaseProfile
       | `Baseline_Shift
       | `Class
@@ -267,7 +267,7 @@
       | `Cursor
       | `Direction
       | `Display
-      | `Dominant_baseline
+      | `Dominant_Baseline
       | `Enable_background
       | `ExternalResourcesRequired
       | `Fill
@@ -389,7 +389,7 @@
       | `Use
       | `View ]
   type g_attr =
-      [ `Alignement_Baseline
+      [ `Alignment_Baseline
       | `Baseline_Shift
       | `Class
       | `Clip
@@ -403,7 +403,7 @@
       | `Cursor
       | `Direction
       | `Display
-      | `Dominant_baseline
+      | `Dominant_Baseline
       | `Enable_background
       | `ExternalResourcesRequired
       | `Fill
@@ -512,7 +512,7 @@
       | `Use
       | `View ]
   type defs_attr =
-      [ `Alignement_Baseline
+      [ `Alignment_Baseline
       | `Baseline_Shift
       | `Class
       | `Clip
@@ -526,7 +526,7 @@
       | `Cursor
       | `Direction
       | `Display
-      | `Dominant_baseline
+      | `Dominant_Baseline
       | `Enable_background
       | `ExternalResourcesRequired
       | `Fill
@@ -651,7 +651,7 @@
       | `Set
       | `Title ]
   type use_attr =
-      [ `Alignement_Baseline
+      [ `Alignment_Baseline
       | `Baseline_Shift
       | `Class
       | `Clip
@@ -665,7 +665,7 @@
       | `Cursor
       | `Direction
       | `Display
-      | `Dominant_baseline
+      | `Dominant_Baseline
       | `Enable_background
       | `ExternalResourcesRequired
       | `Fill
@@ -753,7 +753,7 @@
       | `Set
       | `Title ]
   type image_attr =
-      [ `Alignement_Baseline
+      [ `Alignment_Baseline
       | `Baseline_Shift
       | `Class
       | `Clip
@@ -767,7 +767,7 @@
       | `Cursor
       | `Direction
       | `Display
-      | `Dominant_baseline
+      | `Dominant_Baseline
       | `Enable_background
       | `ExternalResourcesRequired
       | `Fill
@@ -871,7 +871,7 @@
       | `Title
       | `Use ]
   type switch_attr =
-      [ `Alignement_Baseline
+      [ `Alignment_Baseline
       | `Baseline_Shift
       | `Class
       | `Clip
@@ -885,7 +885,7 @@
       | `Cursor
       | `Direction
       | `Display
-      | `Dominant_baseline
+      | `Dominant_Baseline
       | `Enable_background
       | `ExternalResourcesRequired
       | `Fill
@@ -966,7 +966,7 @@
       | `Set
       | `Title ]
   type path_attr =
-      [ `Alignement_Baseline
+      [ `Alignment_Baseline
       | `Baseline_Shift
       | `Class
       | `Clip
@@ -981,7 +981,7 @@
       | `D
       | `Direction
       | `Display
-      | `Dominant_baseline
+      | `Dominant_Baseline
       | `Enable_background
       | `ExternalResourcesRequired
       | `Fill
@@ -1059,7 +1059,7 @@
       | `Set
       | `Title ]
   type rect_attr =
-      [ `Alignement_Baseline
+      [ `Alignment_Baseline
       | `Baseline_Shift
       | `Class
       | `Clip
@@ -1073,7 +1073,7 @@
       | `Cursor
       | `Direction
       | `Display
-      | `Dominant_baseline
+      | `Dominant_Baseline
       | `Enable_background
       | `ExternalResourcesRequired
       | `Fill
@@ -1156,7 +1156,7 @@
       | `Set
       | `Title ]
   type circle_attr =
-      [ `Alignement_Baseline
+      [ `Alignment_Baseline
       | `Baseline_Shift
       | `Class
       | `Clip
@@ -1172,7 +1172,7 @@
       | `Cy
       | `Direction
       | `Display
-      | `Dominant_baseline
+      | `Dominant_Baseline
       | `Enable_background
       | `ExternalResourcesRequired
       | `Fill
@@ -1250,7 +1250,7 @@
       | `Set
       | `Title ]
   type ellipse_attr =
-      [ `Alignement_Baseline
+      [ `Alignment_Baseline
       | `Baseline_Shift
       | `Class
       | `Clip
@@ -1266,7 +1266,7 @@
       | `Cy
       | `Direction
       | `Display
-      | `Dominant_baseline
+      | `Dominant_Baseline
       | `Enable_background
       | `ExternalResourcesRequired
       | `Fill
@@ -1345,7 +1345,7 @@
       | `Set
       | `Title ]
   type line_attr =
-      [ `Alignement_Baseline
+      [ `Alignment_Baseline
       | `Baseline_Shift
       | `Class
       | `Clip
@@ -1359,7 +1359,7 @@
       | `Cursor
       | `Direction
       | `Display
-      | `Dominant_baseline
+      | `Dominant_Baseline
       | `Enable_background
       | `ExternalResourcesRequired
       | `Fill
@@ -1440,7 +1440,7 @@
       | `Set
       | `Title ]
   type polyline_attr =
-      [ `Alignement_Baseline
+      [ `Alignment_Baseline
       | `Baseline_Shift
       | `Class
       | `Clip
@@ -1454,7 +1454,7 @@
       | `Cursor
       | `Direction
       | `Display
-      | `Dominant_baseline
+      | `Dominant_Baseline
       | `Enable_background
       | `ExternalResourcesRequired
       | `Fill
@@ -1532,7 +1532,7 @@
       | `Set
       | `Title ]
   type polygon_attr =
-      [ `Alignement_Baseline
+      [ `Alignment_Baseline
       | `Baseline_Shift
       | `Class
       | `Clip
@@ -1546,7 +1546,7 @@
       | `Cursor
       | `Direction
       | `Display
-      | `Dominant_baseline
+      | `Dominant_Baseline
       | `Enable_background
       | `ExternalResourcesRequired
       | `Fill
@@ -1630,8 +1630,9 @@
       | `Tref
       | `Tspan ]
   type text_attr =
-      [ `Alignement_Baseline
+      [ `Alignment_Baseline
       | `Baseline_Shift
+      | `Class
       | `Clip
       | `Clip_Path
       | `Clip_Rule
@@ -1643,7 +1644,7 @@
       | `Cursor
       | `Direction
       | `Display
-      | `Dominant_baseline
+      | `Dominant_Baseline
       | `Dx_list
       | `Dy_list
       | `Enable_background
@@ -1732,7 +1733,7 @@
       | `Xml_lang
       | `Xml_space ]
   type tspan_attr =
-      [ `Alignement_Baseline
+      [ `Alignment_Baseline
       | `Baseline_Shift
       | `Class
       | `Clip
@@ -1746,7 +1747,7 @@
       | `Cursor
       | `Direction
       | `Display
-      | `Dominant_baseline
+      | `Dominant_Baseline
       | `Dx_list
       | `Dy_list
       | `Enable_background
@@ -1822,7 +1823,7 @@
   type tref_content =
       [ `Animate | `AnimateColor | `Desc | `Metadata | `Set | `Title ]
   type tref_attr =
-      [ `Alignement_Baseline
+      [ `Alignment_Baseline
       | `Baseline_Shift
       | `Class
       | `Clip
@@ -1836,7 +1837,7 @@
       | `Cursor
       | `Direction
       | `Display
-      | `Dominant_baseline
+      | `Dominant_Baseline
       | `Enable_background
       | `ExternalResourcesRequired
       | `Fill
@@ -1922,7 +1923,7 @@
       | `Tref
       | `Tspan ]
   type textpath_attr =
-      [ `Alignement_Baseline
+      [ `Alignment_Baseline
       | `Baseline_Shift
       | `Class
       | `Clip
@@ -1936,7 +1937,7 @@
       | `Cursor
       | `Direction
       | `Display
-      | `Dominant_baseline
+      | `Dominant_Baseline
       | `Enable_background
       | `ExternalResourcesRequired
       | `Fill
@@ -2014,7 +2015,7 @@
   type altglyph = [ `AltGlyph ]
   type altglyph_content = [ `PCDATA ]
   type altglyph_attr =
-      [ `Alignement_Baseline
+      [ `Alignment_Baseline
       | `Baseline_Shift
       | `Class
       | `Clip
@@ -2028,7 +2029,7 @@
       | `Cursor
       | `Direction
       | `Display
-      | `Dominant_baseline
+      | `Dominant_Baseline
       | `Dx_list
       | `Dy_list
       | `Enable_background
@@ -2114,7 +2115,7 @@
   type altglyphitem_attr = Svg_types.core_attr
   type glyphref = [ `GlyphRef ]
   type glyphref_attr =
-      [ `Alignement_Baseline
+      [ `Alignment_Baseline
       | `Baseline_Shift
       | `Class
       | `Clip
@@ -2128,7 +2129,7 @@
       | `Cursor
       | `Direction
       | `Display
-      | `Dominant_baseline
+      | `Dominant_Baseline
       | `Dx_single
       | `Dy_single
       | `Enable_background
@@ -2235,7 +2236,7 @@
       | `Use
       | `View ]
   type marker_attr =
-      [ `Alignement_Baseline
+      [ `Alignment_Baseline
       | `Baseline_Shift
       | `Class
       | `Clip
@@ -2249,7 +2250,7 @@
       | `Cursor
       | `Direction
       | `Display
-      | `Dominant_baseline
+      | `Dominant_Baseline
       | `Enable_background
       | `ExternalResourcesRequired
       | `Fill
@@ -2336,7 +2337,7 @@
       | `Stop
       | `Title ]
   type lineargradient_attr =
-      [ `Alignement_Baseline
+      [ `Alignment_Baseline
       | `Baseline_Shift
       | `Class
       | `Clip
@@ -2350,7 +2351,7 @@
       | `Cursor
       | `Direction
       | `Display
-      | `Dominant_baseline
+      | `Dominant_Baseline
       | `Enable_background
       | `ExternalResourcesRequired
       | `Fill
@@ -2426,7 +2427,7 @@
       | `Stop
       | `Title ]
   type radialgradient_attr =
-      [ `Alignement_Baseline
+      [ `Alignment_Baseline
       | `Baseline_Shift
       | `Class
       | `Clip
@@ -2442,7 +2443,7 @@
       | `Cy
       | `Direction
       | `Display
-      | `Dominant_baseline
+      | `Dominant_Baseline
       | `Enable_background
       | `ExternalResourcesRequired
       | `Fill
@@ -2510,7 +2511,7 @@
   type stop = [ `Stop ]
   type stop_content = [ `Animate | `Animate_Color | `Set ]
   type stop_attr =
-      [ `Alignement_Baseline
+      [ `Alignment_Baseline
       | `Baseline_Shift
       | `Class
       | `Clip
@@ -2524,7 +2525,7 @@
       | `Cursor
       | `Direction
       | `Display
-      | `Dominant_baseline
+      | `Dominant_Baseline
       | `Enable_background
       | `Fill
       | `Fill_opacity
@@ -2619,7 +2620,7 @@
       | `Use
       | `View ]
   type pattern_attr =
-      [ `Alignement_Baseline
+      [ `Alignment_Baseline
       | `Baseline_Shift
       | `Class
       | `Clip
@@ -2633,7 +2634,7 @@
       | `Cursor
       | `Direction
       | `Display
-      | `Dominant_baseline
+      | `Dominant_Baseline
       | `Enable_background
       | `ExternalResourcesRequired
       | `Fill
@@ -2706,7 +2707,7 @@
       | `Y ]
   type clippath = [ `ClipPath ]
   type clippath_attr =
-      [ `Alignement_Baseline
+      [ `Alignment_Baseline
       | `Baseline_Shift
       | `Class
       | `Clip
@@ -2721,7 +2722,7 @@
       | `Cursor
       | `Direction
       | `Display
-      | `Dominant_baseline
+      | `Dominant_Baseline
       | `Enable_background
       | `ExternalResourcesRequired
       | `Fill
@@ -2838,7 +2839,7 @@
       | `Use
       | `View ]
   type mask_attr =
-      [ `Alignement_Baseline
+      [ `Alignment_Baseline
       | `Baseline_Shift
       | `Class
       | `Clip
@@ -2852,7 +2853,7 @@
       | `Cursor
       | `Direction
       | `Display
-      | `Dominant_baseline
+      | `Dominant_Baseline
       | `Enable_background
       | `ExternalResourcesRequired
       | `Fill
@@ -2937,7 +2938,7 @@
       | `Set
       | `Title ]
   type filter_attr =
-      [ `Alignement_Baseline
+      [ `Alignment_Baseline
       | `Baseline_Shift
       | `Class
       | `Clip
@@ -2951,7 +2952,7 @@
       | `Cursor
       | `Direction
       | `Display
-      | `Dominant_baseline
+      | `Dominant_Baseline
       | `Enable_background
       | `ExternalResourcesRequired
       | `Fill
@@ -3043,7 +3044,7 @@
   type feblend = [ `FeBlend ]
   type feblend_content = [ `Animate | `Set ]
   type feblend_attr =
-      [ `Alignement_Baseline
+      [ `Alignment_Baseline
       | `Baseline_Shift
       | `Class
       | `Clip
@@ -3057,7 +3058,7 @@
       | `Cursor
       | `Direction
       | `Display
-      | `Dominant_baseline
+      | `Dominant_Baseline
       | `Enable_background
       | `Fill
       | `Fill_opacity
@@ -3119,7 +3120,7 @@
   type fecolormatrix = [ `FeColorMatrix ]
   type fecolormatrix_content = [ `Animate | `Set ]
   type fecolormatrix_attr =
-      [ `Alignement_Baseline
+      [ `Alignment_Baseline
       | `Baseline_Shift
       | `Class
       | `Clip
@@ -3133,7 +3134,7 @@
       | `Cursor
       | `Direction
       | `Display
-      | `Dominant_baseline
+      | `Dominant_Baseline
       | `Enable_background
       | `Fill
       | `Fill_opacity
@@ -3196,7 +3197,7 @@
   type fecomponenttransfer_content =
       [ `FeFuncA | `FeFuncB | `FeFuncG | `FeFuncR ]
   type fecomponenttransfer_attr =
-      [ `Alignement_Baseline
+      [ `Alignment_Baseline
       | `Baseline_Shift
       | `Class
       | `Clip
@@ -3210,7 +3211,7 @@
       | `Cursor
       | `Direction
       | `Display
-      | `Dominant_baseline
+      | `Dominant_Baseline
       | `Enable_background
       | `Fill
       | `Fill_opacity
@@ -3326,7 +3327,7 @@
   type fecomposite = [ `FeComposite ]
   type fecomposite_content = [ `Animate | `Set ]
   type fecomposite_attr =
-      [ `Alignement_Baseline
+      [ `Alignment_Baseline
       | `Baseline_Shift
       | `Class
       | `Clip
@@ -3340,7 +3341,7 @@
       | `Cursor
       | `Direction
       | `Display
-      | `Dominant_baseline
+      | `Dominant_Baseline
       | `Enable_background
       | `Fill
       | `Fill_opacity
@@ -3406,7 +3407,7 @@
   type feconvolvematrix = [ `FeConvolveMatrix ]
   type feconvolvematrix_content = [ `Animate | `Set ]
   type feconvolvematrix_attr =
-      [ `Alignement_Baseline
+      [ `Alignment_Baseline
       | `Baseline_Shift
       | `Bias
       | `Class
@@ -3422,7 +3423,7 @@
       | `Direction
       | `Display
       | `Divisor
-      | `Dominant_baseline
+      | `Dominant_Baseline
       | `EdgeMode
       | `Enable_background
       | `Fill
@@ -3495,7 +3496,7 @@
       | `Metadata
       | `Title ]
   type fediffuselighting_attr =
-      [ `Alignement_Baseline
+      [ `Alignment_Baseline
       | `Baseline_Shift
       | `Class
       | `Clip
@@ -3510,7 +3511,7 @@
       | `DiffuseConstant
       | `Direction
       | `Display
-      | `Dominant_baseline
+      | `Dominant_Baseline
       | `Enable_background
       | `Fill
       | `Fill_opacity
@@ -3572,7 +3573,7 @@
   type fedisplacementmap = [ `FeDisplacementMap ]
   type fedisplacementmap_content = [ `Animate | `Set ]
   type fedisplacementmap_attr =
-      [ `Alignement_Baseline
+      [ `Alignment_Baseline
       | `Baseline_Shift
       | `Class
       | `Clip
@@ -3586,7 +3587,7 @@
       | `Cursor
       | `Direction
       | `Display
-      | `Dominant_baseline
+      | `Dominant_Baseline
       | `Enable_background
       | `Fill
       | `Fill_opacity
@@ -3650,7 +3651,7 @@
   type feflood = [ `FeFlood ]
   type feflood_content = [ `Animate | `AnimateColor | `Set ]
   type feflood_attr =
-      [ `Alignement_Baseline
+      [ `Alignment_Baseline
       | `Baseline_Shift
       | `Class
       | `Clip
@@ -3664,7 +3665,7 @@
       | `Cursor
       | `Direction
       | `Display
-      | `Dominant_baseline
+      | `Dominant_Baseline
       | `Enable_background
       | `Fill
       | `Fill_opacity
@@ -3723,7 +3724,7 @@
   type fegaussianblur = [ `FeGaussianBlur ]
   type fegaussianblur_content = [ `Animate | `AnimateColor | `Set ]
   type fegaussianblur_attr =
-      [ `Alignement_Baseline
+      [ `Alignment_Baseline
       | `Baseline_Shift
       | `Class
       | `Clip
@@ -3737,7 +3738,7 @@
       | `Cursor
       | `Direction
       | `Display
-      | `Dominant_baseline
+      | `Dominant_Baseline
       | `Enable_background
       | `Fill
       | `Fill_opacity
@@ -3798,7 +3799,7 @@
   type feimage = [ `FeImage ]
   type feimage_content = [ `Animate | `AnimateColor | `Set ]
   type feimage_attr =
-      [ `Alignement_Baseline
+      [ `Alignment_Baseline
       | `Baseline_Shift
       | `Class
       | `Clip
@@ -3812,7 +3813,7 @@
       | `Cursor
       | `Direction
       | `Display
-      | `Dominant_baseline
+      | `Dominant_Baseline
       | `Enable_background
       | `ExternalResourcesRequired
       | `Fill
@@ -3880,7 +3881,7 @@
   type femerge = [ `FeMerge ]
   type femerge_content = [ `FeMergeNode ]
   type femerge_attr =
-      [ `Alignement_Baseline
+      [ `Alignment_Baseline
       | `Baseline_Shift
       | `Class
       | `Clip
@@ -3894,7 +3895,7 @@
       | `Cursor
       | `Direction
       | `Display
-      | `Dominant_baseline
+      | `Dominant_Baseline
       | `Enable_background
       | `Fill
       | `Fill_opacity
@@ -3953,7 +3954,7 @@
   type femorphology = [ `FeMorphology ]
   type femorphology_content = [ `Animate | `Set ]
   type femorphology_attr =
-      [ `Alignement_Baseline
+      [ `Alignment_Baseline
       | `Baseline_Shift
       | `Class
       | `Clip
@@ -3967,7 +3968,7 @@
       | `Cursor
       | `Direction
       | `Display
-      | `Dominant_baseline
+      | `Dominant_Baseline
       | `Enable_background
       | `Fill
       | `Fill_opacity
@@ -4029,7 +4030,7 @@
   type feoffset = [ `FeOffset ]
   type feoffset_content = [ `Animate | `Set ]
   type feoffset_attr =
-      [ `Alignement_Baseline
+      [ `Alignment_Baseline
       | `Baseline_Shift
       | `Class
       | `Clip
@@ -4043,7 +4044,7 @@
       | `Cursor
       | `Direction
       | `Display
-      | `Dominant_baseline
+      | `Dominant_Baseline
       | `Dx
       | `Dy
       | `Enable_background
@@ -4111,7 +4112,7 @@
       | `Metadata
       | `Title ]
   type fespecularlighting_attr =
-      [ `Alignement_Baseline
+      [ `Alignment_Baseline
       | `Baseline_Shift
       | `Class
       | `Clip
@@ -4125,7 +4126,7 @@
       | `Cursor
       | `Direction
       | `Display
-      | `Dominant_baseline
+      | `Dominant_Baseline
       | `Enable_background
       | `Fill
       | `Fill_opacity
@@ -4189,7 +4190,7 @@
   type fetile = [ `FeTile ]
   type fetile_content = [ `Animate | `Set ]
   type fetile_attr =
-      [ `Alignement_Baseline
+      [ `Alignment_Baseline
       | `Baseline_Shift
       | `Class
       | `Clip
@@ -4203,7 +4204,7 @@
       | `Cursor
       | `Direction
       | `Display
-      | `Dominant_baseline
+      | `Dominant_Baseline
       | `Enable_background
       | `Fill
       | `Fill_opacity
@@ -4263,7 +4264,7 @@
   type feturbulence = [ `FeTurbulence ]
   type feturbulence_content = [ `Animate | `Set ]
   type feturbulence_attr =
-      [ `Alignement_Baseline
+      [ `Alignment_Baseline
       | `BaseFrequency
       | `Baseline_Shift
       | `Class
@@ -4278,7 +4279,7 @@
       | `Cursor
       | `Direction
       | `Display
-      | `Dominant_baseline
+      | `Dominant_Baseline
       | `Enable_background
       | `Fill
       | `Fill_opacity
@@ -4401,7 +4402,7 @@
       | `Use
       | `View ]
   type a_attr =
-      [ `Alignement_Baseline
+      [ `Alignment_Baseline
       | `Baseline_Shift
       | `Class
       | `Clip
@@ -4415,7 +4416,7 @@
       | `Cursor
       | `Direction
       | `Display
-      | `Dominant_baseline
+      | `Dominant_Baseline
       | `Enable_background
       | `ExternalResourcesRequired
       | `Fill
@@ -4739,7 +4740,7 @@
       | `Xml_space ]
   type font = [ `Font ]
   type font_attr =
-      [ `Alignement_Baseline
+      [ `Alignment_Baseline
       | `Baseline_Shift
       | `Class
       | `Clip
@@ -4753,7 +4754,7 @@
       | `Cursor
       | `Direction
       | `Display
-      | `Dominant_baseline
+      | `Dominant_Baseline
       | `Enable_background
       | `ExternalResourcesRequired
       | `Fill
@@ -4863,7 +4864,7 @@
       | `Use
       | `View ]
   type glyph_attr =
-      [ `Alignement_Baseline
+      [ `Alignment_Baseline
       | `ArabicForm
       | `Baseline_Shift
       | `Class
@@ -4879,7 +4880,7 @@
       | `D
       | `Direction
       | `Display
-      | `Dominant_baseline
+      | `Dominant_Baseline
       | `Enable_background
       | `Fill
       | `Fill_opacity
@@ -4981,7 +4982,7 @@
       | `Use
       | `View ]
   type missingglyph_attr =
-      [ `Alignement_Baseline
+      [ `Alignment_Baseline
       | `Baseline_Shift
       | `Class
       | `Clip
@@ -4996,7 +4997,7 @@
       | `D
       | `Direction
       | `Display
-      | `Dominant_baseline
+      | `Dominant_Baseline
       | `Enable_background
       | `Fill
       | `Fill_opacity
@@ -5124,7 +5125,7 @@
   type metadata_attr = Svg_types.core_attr
   type foreignobject = [ `ForeignObject ]
   type foreignobject_attr =
-      [ `Alignement_Baseline
+      [ `Alignment_Baseline
       | `Baseline_Shift
       | `Class
       | `Clip
@@ -5138,7 +5139,7 @@
       | `Cursor
       | `Direction
       | `Display
-      | `Dominant_baseline
+      | `Dominant_Baseline
       | `Enable_background
       | `ExternalResourcesRequired
       | `Fill

@@ -454,6 +454,36 @@
     [> `OverlineThickness ] Svg_sigs.T.attrib
   val a_string : string Svg_sigs.T.wrap -> [> `String ] Svg_sigs.T.attrib
   val a_name : string Svg_sigs.T.wrap -> [> `Name ] Svg_sigs.T.attrib
+  val a_alignment_baseline :
+    [< `After_edge
+     | `Alphabetic
+     | `Auto
+     | `Baseline
+     | `Before_edge
+     | `Central
+     | `Hanging
+     | `Ideographic
+     | `Inherit
+     | `Mathematical
+     | `Middle
+     | `Text_after_edge
+     | `Text_before_edge ]
+    Svg_sigs.T.wrap -> [> `Alignment_Baseline ] Svg_sigs.T.attrib
+  val a_dominant_baseline :
+    [< `Alphabetic
+     | `Auto
+     | `Central
+     | `Hanging
+     | `Ideographic
+     | `Inherit
+     | `Mathematical
+     | `Middle
+     | `No_change
+     | `Reset_size
+     | `Text_after_edge
+     | `Text_before_edge
+     | `Use_script ]
+    Svg_sigs.T.wrap -> [> `Dominant_Baseline ] Svg_sigs.T.attrib
   val a_onabort : Xml.event_handler -> [> `OnAbort ] Svg_sigs.T.attrib
   val a_onactivate : Xml.event_handler -> [> `OnActivate ] Svg_sigs.T.attrib
   val a_onbegin : Xml.event_handler -> [> `OnBegin ] Svg_sigs.T.attrib
