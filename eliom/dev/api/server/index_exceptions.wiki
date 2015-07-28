@@ -29,6 +29,8 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Error"| exception Eliom_openid.Error >> ~[<<a_api subproject="server" | module Eliom_openid >>~]|<<div class="odocwiki_info"|~Exception thrown by this module~'s function~.
 >>
 |
+|@@ @style="tet-align: left;"@@\\N|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Not_ready"| exception Eliom_cscache.Not_ready >> ~[<<a_api subproject="server" | module Eliom_cscache >>~]||
 |@@ @style="tet-align: left;"@@\\W|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Wrong_scope"| exception Eliom_state.Ext.Wrong_scope >> ~[<<a_api subproject="server" | module Eliom_state.Ext >>~]|<<div class="odocwiki_info"|~Exception raised when you try to access a reference
       belonging to a scope different to the state~'s scope

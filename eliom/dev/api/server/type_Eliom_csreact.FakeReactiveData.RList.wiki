@@ -1,0 +1,31 @@
+<<code language="ocaml" | sig
+  type 'a t
+  type 'a handle
+  val make :
+    'a list ->
+    'a Eliom_csreact.FakeReactiveData.??.t *
+    'a Eliom_csreact.FakeReactiveData.??.handle
+  val from_signal :
+    'a list Eliom_csreact.FakeReact.S.t ->
+    'a Eliom_csreact.FakeReactiveData.??.t
+  val value : 'a Eliom_csreact.FakeReactiveData.??.t -> 'a list
+  val value_s :
+    'a Eliom_csreact.FakeReactiveData.??.t ->
+    'a list Eliom_csreact.FakeReact.S.t
+  val singleton_s :
+    'a Eliom_csreact.FakeReact.S.t -> 'a Eliom_csreact.FakeReactiveData.??.t
+  val map :
+    ('a -> 'b) ->
+    'a Eliom_csreact.FakeReactiveData.??.t ->
+    'b Eliom_csreact.FakeReactiveData.??.t
+  val make_from_s :
+    'a list Eliom_csreact.FakeReact.S.t ->
+    'a Eliom_csreact.FakeReactiveData.??.t
+  module Lwt :
+    sig
+      val map_p :
+        ('a -> 'b Lwt.t) ->
+        'a Eliom_csreact.FakeReactiveData.??.t ->
+        'b Eliom_csreact.FakeReactiveData.??.t Lwt.t
+    end
+end >>

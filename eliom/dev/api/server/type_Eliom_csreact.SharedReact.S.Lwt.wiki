@@ -1,0 +1,19 @@
+<<code language="ocaml" | sig
+  val map_s :
+    ?eq:'c ->
+    ('a -> 'b Lwt.t) Eliom_lib.shared_value ->
+    'a Eliom_csreact.SharedReact.S.t ->
+    'b Eliom_csreact.SharedReact.S.t Lwt.t
+  val l2_s :
+    ?eq:'d ->
+    ('a -> 'b -> 'c Lwt.t) Eliom_lib.shared_value ->
+    'a Eliom_csreact.SharedReact.S.t ->
+    'b Eliom_csreact.SharedReact.S.t ->
+    'c Eliom_csreact.SharedReact.S.t Lwt.t
+  val merge_s :
+    ?eq:'c ->
+    ('a -> 'b -> 'a Lwt.t) Eliom_lib.shared_value ->
+    'a ->
+    'b Eliom_csreact.SharedReact.S.t list ->
+    'a Eliom_csreact.SharedReact.S.t Lwt.t
+end >>

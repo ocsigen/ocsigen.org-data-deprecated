@@ -7,7 +7,7 @@
 <<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|include>> Eliom_lib_base>>
 <<pre class="ocsforge_color odocwiki_code" id="TYPEclient_value"|<<span class="ocsforge_color_keyword"|type>> <<span class="odocwiki_type"|+'a>> <<span class="odocwiki_name"|client~_value>>>><<div class="odocwiki_info"|~See <<a_api subproject="server"|type Eliom_lib.client_value>> ~.
 >>
-<<pre id="EXCEPTIONClient_value_creation_invalid_context" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|exception>> <<span class="odocwiki_name"|Client_value_creation_invalid_context>> <<span class="ocsforge_color_keyword"|of>> <<span class="odocwiki_type"|int64>>>><<div class="odocwiki_info"|~Raised if a client value of the given closure ~I~D is created at a
+<<pre class="ocsforge_color odocwiki_code" id="TYPEshared_value"|<<span class="ocsforge_color_keyword"|type>> <<span class="odocwiki_type"|+'a>> <<span class="odocwiki_name"|shared~_value>>>><<pre id="EXCEPTIONClient_value_creation_invalid_context" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|exception>> <<span class="odocwiki_name"|Client_value_creation_invalid_context>> <<span class="ocsforge_color_keyword"|of>> <<span class="odocwiki_type"|int64>>>><<div class="odocwiki_info"|~Raised if a client value of the given closure ~I~D is created at a
     point in time where it is neither global ~(i~.e~. during the
     initialization of the server program~)~, nor request ~(i~.e~. during
     the processing of a request~)~.

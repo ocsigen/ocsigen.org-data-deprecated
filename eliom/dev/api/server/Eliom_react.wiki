@@ -3,6 +3,11 @@
     occurrences from the server to the client and the other way
     around~. ~Occurrence propagation is done asynchronously~.
 
+
+    ~Warning~: it is not possible to catch exceptions on each channel
+    using ~Eliom~_react ~(for example channel closed or full~)~.
+    ~If you need an error handling~, use ~Eliom~_comet~.~Channel instead~.
+
 ----
 
 **~Please read the

@@ -1164,6 +1164,14 @@
   val default_appl_service_options : Eliom_registration.appl_service_options
   module type ELIOM_APPL =
     sig
+      val set_client_fun :
+        ('a, 'b, [< Eliom_service.service_method ],
+         [< Eliom_service.attached ], [< Eliom_service.service_kind ],
+         [< Eliom_service.suff ], 'e, 'f, [< Eliom_service.registrable ],
+         'return)
+        Eliom_service.service ->
+        ('a -> 'b -> [ `Html ] Eliom_content.Html5.elt Lwt.t)
+        Eliom_lib.client_value -> unit
       val application_script :
         ?async:bool -> unit -> [> `Script ] Eliom_content.Html5.elt
       val application_name : string

@@ -105,4 +105,6 @@
 <<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module>> <<a_api subproject="server" text="Volatile" | module Eliom_reference.Volatile >> <<span class="ocsforge_color_delimiter"|~:>> <<span class="ocsforge_color_keyword"|sig>><<a_api subproject="server" text=".." | module Eliom_reference.Volatile >><<span class="ocsforge_color_keyword"|end>>>><<div class="odocwiki_info"|~Same functions as in <<span class="odocwiki_inlinecode"|~Eliom~_reference>> but a non~-~Lwt interface
     for non~-persistent ~Eliom references~.
 >>
-<<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module>> <<a_api subproject="server" text="Ext" | module Eliom_reference.Ext >> <<span class="ocsforge_color_delimiter"|~:>> <<span class="ocsforge_color_keyword"|sig>><<a_api subproject="server" text=".." | module Eliom_reference.Ext >><<span class="ocsforge_color_keyword"|end>>>>
+<<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module>> <<a_api subproject="server" text="Ext" | module Eliom_reference.Ext >> <<span class="ocsforge_color_delimiter"|~:>> <<span class="ocsforge_color_keyword"|sig>><<a_api subproject="server" text=".." | module Eliom_reference.Ext >><<span class="ocsforge_color_keyword"|end>>>><<div class="odocwiki_info"|~This module allows access to references for other groups~,
+    sessions~, or client processes~.
+>>

@@ -1,0 +1,39 @@
+<<code language="ocaml" | sig
+  type 'a t =
+      'a Eliom_csreact.FakeReactiveData.RList.t Eliom_lib.shared_value
+  type 'a handle =
+      'a Eliom_csreact.FakeReactiveData.RList.handle Eliom_lib.shared_value
+  val from_signal :
+    'a list Eliom_csreact.SharedReact.S.t ->
+    'a Eliom_csreact.FakeReactiveData.RList.t Eliom_lib.shared_value
+  val make :
+    ?default:'a ->
+    ?reset_default:bool ->
+    'b list ->
+    'b Eliom_csreact.FakeReactiveData.RList.t Eliom_lib.shared_value *
+    'b Eliom_csreact.FakeReactiveData.RList.handle Eliom_lib.shared_value
+  val singleton_s :
+    'a Eliom_csreact.FakeReact.S.t Eliom_lib.shared_value ->
+    'a Eliom_csreact.FakeReactiveData.RList.t Eliom_lib.shared_value
+  val value_s :
+    'a Eliom_csreact.SharedReactiveData.RList.t ->
+    'a list Eliom_csreact.SharedReact.S.t
+  val map :
+    ('b -> 'a) Eliom_lib.shared_value ->
+    'b Eliom_csreact.FakeReactiveData.RList.t Eliom_lib.shared_value ->
+    'a Eliom_csreact.FakeReactiveData.RList.t Eliom_lib.shared_value
+  val make_from_s :
+    'a list Eliom_csreact.SharedReact.S.t ->
+    'a Eliom_csreact.SharedReactiveData.RList.t
+  module Lwt :
+    sig
+      val map_p :
+        ('a -> 'b Lwt.t) Eliom_lib.shared_value ->
+        'a Eliom_csreact.SharedReactiveData.RList.t ->
+        'b Eliom_csreact.SharedReactiveData.RList.t Lwt.t
+      val fold_p :
+        ('a -> 'b Lwt.t) Eliom_lib.shared_value ->
+        'a Eliom_csreact.SharedReactiveData.RList.t ->
+        'b Eliom_csreact.SharedReactiveData.RList.t Lwt.t
+    end
+end >>

@@ -1,0 +1,4 @@
+=Module type <<a_api_type subproject="client" | module type Eliom_csreact.RE >> =
+<<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module type>> <<span class="ocsforge_color_uid"|RE>> <<span class="ocsforge_color_delimiter"|~=>> <<span class="ocsforge_color_keyword"|sig>><<a_api subproject="client" text=".." | module type Eliom_csreact.RE >><<span class="ocsforge_color_keyword"|end>>>>
+----
+<<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module>> <<a_api subproject="client" text="S" | module Eliom_csreact.RE.S >> <<span class="ocsforge_color_delimiter"|~:>> <<span class="ocsforge_color_keyword"|sig>><<a_api subproject="client" text=".." | module Eliom_csreact.RE.S >><<span class="ocsforge_color_keyword"|end>>>>

@@ -1,0 +1,118 @@
+<<code language="ocaml" | sig
+  exception Ocsigen_Internal_Error of string
+  exception Input_is_too_large
+  exception Ocsigen_Bad_Request
+  exception Ocsigen_Request_too_long
+  val ( >>= ) : 'a Lwt.t -> ('a -> 'b Lwt.t) -> 'b Lwt.t
+  val ( >|= ) : 'a Lwt.t -> ('a -> 'b) -> 'b Lwt.t
+  val ( !! ) : 'a Lazy.t -> 'a
+  val ( |> ) : 'a -> ('a -> 'b) -> 'b
+  val ( @@ ) : ('a -> 'b) -> 'a -> 'b
+  external id : 'a -> 'a = "%identity"
+  val comp : ('a -> 'b) -> ('c -> 'a) -> 'c -> 'b
+  val curry : ('a * 'b -> 'c) -> 'a -> 'b -> 'c
+  val uncurry : ('a -> 'b -> 'c) -> 'a * 'b -> 'c
+  module Tuple3 = Eliom_lib.Tuple3
+  type poly = Ocsigen_lib.poly
+  val to_poly : 'a -> poly
+  val from_poly : poly -> 'a
+  type yesnomaybe = Ocsigen_lib_base.yesnomaybe = Yes | No | Maybe
+  type ('a, 'b) leftright =
+    ('a, 'b) Ocsigen_lib_base.leftright =
+      Left of 'a
+    | Right of 'b
+  val advert : string
+  module Option = Eliom_lib.Option
+  module List = Eliom_lib.List
+  module Clist = Eliom_lib.Clist
+  module Int = Eliom_lib.Int
+  module String_base = Eliom_lib.String_base
+  module Url_base = Eliom_lib.Url_base
+  module Printexc = Eliom_lib.Printexc
+  module Lwt_ops = Eliom_lib.Lwt_ops
+  module type Map_S =
+    sig
+      type key
+      type +'a t
+      val empty : 'a t
+      val is_empty : 'a t -> bool
+      val mem : key -> 'a t -> bool
+      val add : key -> 'a -> 'a t -> 'a t
+      val singleton : key -> 'a -> 'a t
+      val remove : key -> 'a t -> 'a t
+      val merge :
+        (key -> 'a option -> 'b option -> 'c option) -> 'a t -> 'b t -> 'c t
+      val compare : ('a -> 'a -> int) -> 'a t -> 'a t -> int
+      val equal : ('a -> 'a -> bool) -> 'a t -> 'a t -> bool
+      val iter : (key -> 'a -> unit) -> 'a t -> unit
+      val fold : (key -> 'a -> 'b -> 'b) -> 'a t -> 'b -> 'b
+      val for_all : (key -> 'a -> bool) -> 'a t -> bool
+      val exists : (key -> 'a -> bool) -> 'a t -> bool
+      val filter : (key -> 'a -> bool) -> 'a t -> 'a t
+      val partition : (key -> 'a -> bool) -> 'a t -> 'a t * 'a t
+      val cardinal : 'a t -> int
+      val bindings : 'a t -> (key * 'a) list
+      val min_binding : 'a t -> key * 'a
+      val max_binding : 'a t -> key * 'a
+      val choose : 'a t -> key * 'a
+      val split : key -> 'a t -> 'a t * 'a option * 'a t
+      val find : key -> 'a t -> 'a
+      val map : ('a -> 'b) -> 'a t -> 'b t
+      val mapi : (key -> 'a -> 'b) -> 'a t -> 'b t
+      val from_list : (key * 'a) list -> 'a t
+      val to_string : ?sep:string -> ('a -> string) -> 'a t -> string
+    end
+  module Int64_map = Eliom_lib.Int64_map
+  module Int_map = Eliom_lib.Int_map
+  module String_map = Eliom_lib.String_map
+  type pos = Lexing.position * Lexing.position
+  val pos_to_string : pos -> string
+  module Client_value_server_repr = Eliom_lib.Client_value_server_repr
+  type escaped_value = Ocsigen_lib_base.poly
+  val fresh_ix : unit -> int64
+  module RawXML = Eliom_lib.RawXML
+  val tyxml_unwrap_id_int : int
+  val client_value_unwrap_id_int : int
+  type client_value_datum =
+    Eliom_lib_base.client_value_datum = {
+    closure_id : int64;
+    instance_id : int64;
+    loc : pos option;
+    args : Ocsigen_lib_base.poly;
+    value : Ocsigen_lib_base.poly;
+  }
+  type 'a compilation_unit_global_data =
+    'a Eliom_lib_base.compilation_unit_global_data = {
+    server_sections_data : client_value_datum list Queue.t;
+    client_sections_data : 'a Eliom_lib_base.injection_datum list Queue.t;
+  }
+  type request_data = Eliom_lib_base.request_data
+  val global_data_unwrap_id_int : int
+  type 'a client_value = 'a
+  type 'a shared_value = 'a
+  exception Eliom_Internal_Error of string
+  exception Exception_on_server of string
+  type file_info = File.file Js.t
+  val to_json : ?typ:'a -> 'b -> string
+  val of_json : ?typ:'a -> string -> 'b
+  exception False
+  module Url = Eliom_lib.Url
+  module String = Eliom_lib.String
+  module Lwt_log = Eliom_lib.Lwt_log
+  val error : ('a, unit, string, 'b) format4 -> 'a
+  val error_any : 'c -> ('a, unit, string, 'b) format4 -> 'a
+  val debug : ('a, unit, string, unit) format4 -> 'a
+  val debug_exn : ('a, unit, string, unit) format4 -> exn -> 'a
+  val jsdebug : 'a -> unit
+  val alert : ('a, unit, string, unit) format4 -> 'a
+  val jsalert : Js.js_string Js.t -> unit
+  val debug_var : string -> 'a -> unit
+  val trace : ('a, unit, string, unit) format4 -> 'a
+  val lwt_ignore : ?message:string -> unit Lwt.t -> unit
+  val encode_form_value : 'a -> string
+  val unmarshal_js : Js.js_string Js.t -> 'a
+  val encode_header_value : 'a -> string
+  type injection_datum = poly Eliom_lib_base.injection_datum
+  type global_data = unit
+  val create_shared_value : 'a -> 'b -> 'b
+end >>

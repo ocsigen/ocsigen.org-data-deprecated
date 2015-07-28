@@ -5,7 +5,7 @@
 ~This module allows access to volatile references for other groups~,
         sessions~, or client processes~.
         ~Use it in conjunction with functions like
-        <<span class="odocwiki_inlinecode"|~Eliom~_state~.~Ext~.iter~_on~_all~_volatile~_data~_sessions~_from~_group>>
+        <<a_api subproject="server" | val Eliom_state.Ext.iter_volatile_sub_states >>
         to get the sessions from a group ~(or the processes from a session~)~.
 <<pre id="VALget" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|get>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|\\  <<span class="ocsforge_color_delimiter"| ( >>[< `Client_process | `Session | `Session_group ], [< `Data ]<<span class="ocsforge_color_delimiter"| ) >>\\  <<a_api subproject="server" text="Eliom_state.Ext.state" | type Eliom_state.Ext.state >> <<span class="ocsforge_color_delimiter"| -> >> 'a <<a_api subproject="server" text="Eliom_reference.Volatile.eref" | type Eliom_reference.Volatile.eref >> <<span class="ocsforge_color_delimiter"| -> >> 'a>>>><<div class="odocwiki_info"|get the value of a reference from outside the state~.
         ~If the value has not been set yet for this state~,

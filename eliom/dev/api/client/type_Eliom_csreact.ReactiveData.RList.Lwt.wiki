@@ -1,0 +1,15 @@
+<<code language="ocaml" | sig
+  val map_data_p_lwt : ('a -> 'b Lwt.t) -> 'a list -> 'b list Lwt.t
+  val map_patch_p_lwt :
+    ('a -> 'b Lwt.t) ->
+    'a ReactiveData.RList.p list -> 'b ReactiveData.RList.p list Lwt.t
+  val map_msg_p_lwt :
+    ('a -> 'b Lwt.t) ->
+    'a ReactiveData.RList.msg -> 'b ReactiveData.RList.msg Lwt.t
+  val map_p_aux :
+    ('a * 'b ReactiveData.RList.handle) Lwt.t ->
+    ('c -> 'b Lwt.t) -> 'c ReactiveData.RList.t -> unit React.event
+  val map_p_init :
+    init:'b ReactiveData.RList.data -> ('a -> 'b Lwt.t) -> 'a t -> 'b t
+  val map_p : ('a -> 'b Lwt.t) -> 'a t -> 'b t Lwt.t
+end >>

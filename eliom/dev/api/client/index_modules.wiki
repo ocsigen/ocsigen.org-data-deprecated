@@ -26,6 +26,9 @@
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Custom_data"| module Eliom_content.Html5.Custom_data >> ~[<<a_api subproject="client" | module Eliom_content.Html5 >>~]||
 |@@ @style="tet-align: left;"@@\\D|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="D"| module Eliom_tools.D >> ~[<<a_api subproject="client" | module Eliom_tools >>~]|<<div class="odocwiki_info"|~Menus with ~D~O~M semantics
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="D"| module Eliom_content_core.Html5.D >> ~[<<a_api subproject="client" | module Eliom_content_core.Html5 >>~]|<<div class="odocwiki_info"|~Typed interface for building valid ~H~T~M~L~5 tree ~(~D~O~M semantics~)~.
 >>
 |
@@ -41,6 +44,7 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Down"| module Eliom_react.S.Down >> ~[<<a_api subproject="client" | module Eliom_react.S >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Down"| module Eliom_react.Down >> ~[<<a_api subproject="client" | module Eliom_react >>~]||
 |@@ @style="tet-align: left;"@@\\E|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="E"| module Eliom_csreact.React.E >> ~[<<a_api subproject="client" | module Eliom_csreact.React >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Eliom_bus"| module Eliom_bus >> |<<div class="odocwiki_info"|~Broadcasting facilities between clients and server~.
 >>
 |
@@ -59,7 +63,16 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Eliom_content_core"| module Eliom_content_core >> |<<div class="odocwiki_info"|~X~M~L building and deconstructing~.
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Eliom_cscache"| module Eliom_cscache >> |<<div class="odocwiki_info"|~Client~-server cache for ~Eliom applications~,
+    that is used both for keeping data on client side
+    or keeping values in memory during a request~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Eliom_csreact"| module Eliom_csreact >> |<<div class="odocwiki_info"|~Same as map~_p but we do not compute the initial list~.
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Eliom_lazy"| module Eliom_lazy >> ||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Eliom_lib"| module Eliom_csreact.Eliom_lib >> ~[<<a_api subproject="client" | module Eliom_csreact >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Eliom_lib"| module Eliom_lib >> |<<div class="odocwiki_info"|~See <<a_api subproject="client"|type
     Eliom_pervasives.client_value>> ~.
 >>
@@ -85,9 +98,10 @@
     client side declaration of void coservices~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Eliom_tools"| module Eliom_tools >> |<<div class="odocwiki_info"|~Record an ~(external~) ~Java~Script file to be included in <<span class="odocwiki_inlinecode"|~Eliom~_tools~.~F~.html>>~.
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Eliom_tools"| module Eliom_tools >> |<<div class="odocwiki_info"|~Helpers for ~(hierarchical~) menu generation in ~H~T~M~L~5~.
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Eliom_tools_common"| module Eliom_tools_common >> ||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Eliom_types"| module Eliom_types >> ||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Eliom_unwrap"| module Eliom_unwrap >> |<<div class="odocwiki_info"|~Values of type <<span class="odocwiki_inlinecode"|unwrap~_id>> are used to identify a specific unwrapper~.
 >>
@@ -98,6 +112,9 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Elt"| module Eliom_content.Html5.Manip.Elt >> ~[<<a_api subproject="client" | module Eliom_content.Html5.Manip >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Ev"| module Eliom_content.Html5.Manip.Ev >> ~[<<a_api subproject="client" | module Eliom_content.Html5.Manip >>~]||
 |@@ @style="tet-align: left;"@@\\F|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="F"| module Eliom_tools.F >> ~[<<a_api subproject="client" | module Eliom_tools >>~]|<<div class="odocwiki_info"|~Menus with functional node semantics
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="F"| module Eliom_content_core.Html5.F >> ~[<<a_api subproject="client" | module Eliom_content_core.Html5 >>~]|<<div class="odocwiki_info"|~Typed interface for building valid ~H~T~M~L~5 tree ~(functional semantics~)~.
 >>
 |
@@ -110,6 +127,8 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="F"| module Eliom_content.Svg.F >> ~[<<a_api subproject="client" | module Eliom_content.Svg >>~]|<<div class="odocwiki_info"|~Creation of //f//unctional content ~(copy~-able but not referable~)~.
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="FakeReact"| module Eliom_csreact.FakeReact >> ~[<<a_api subproject="client" | module Eliom_csreact >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="FakeReactiveData"| module Eliom_csreact.FakeReactiveData >> ~[<<a_api subproject="client" | module Eliom_csreact >>~]||
 |@@ @style="tet-align: left;"@@\\H|
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Html5"| module Eliom_content_core.Html5 >> ~[<<a_api subproject="client" | module Eliom_content_core >>~]|<<div class="odocwiki_info"|~Building ~Html~5 tree~.
 >>
@@ -134,6 +153,8 @@
 >>
 |
 |@@ @style="tet-align: left;"@@\\L|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Lwt"| module Eliom_csreact.React.S.Lwt >> ~[<<a_api subproject="client" | module Eliom_csreact.React.S >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Lwt"| module Eliom_csreact.ReactiveData.RList.Lwt >> ~[<<a_api subproject="client" | module Eliom_csreact.ReactiveData.RList >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Lwt_log"| module Eliom_lib.Lwt_log >> ~[<<a_api subproject="client" | module Eliom_lib >>~]||
 |@@ @style="tet-align: left;"@@\\M|
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="MakeForms"| module Eliom_mkforms.MakeForms >> ~[<<a_api subproject="client" | module Eliom_mkforms >>~]||
@@ -181,6 +202,8 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="R"| module Eliom_content.Svg.R >> ~[<<a_api subproject="client" | module Eliom_content.Svg >>~]|<<div class="odocwiki_info"|~Creation of reactive content
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="RList"| module Eliom_csreact.SharedReactiveData.RList >> ~[<<a_api subproject="client" | module Eliom_csreact.SharedReactiveData >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="RList"| module Eliom_csreact.ReactiveData.RList >> ~[<<a_api subproject="client" | module Eliom_csreact.ReactiveData >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Raw"| module Eliom_content_core.Html5.R.Raw >> ~[<<a_api subproject="client" | module Eliom_content_core.Html5.R >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Raw"| module Eliom_content_core.Html5.D.Raw >> ~[<<a_api subproject="client" | module Eliom_content_core.Html5.D >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Raw"| module Eliom_content_core.Html5.F.Raw >> ~[<<a_api subproject="client" | module Eliom_content_core.Html5.F >>~]||
@@ -203,11 +226,19 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Raw"| module Eliom_content.Svg.F.Raw >> ~[<<a_api subproject="client" | module Eliom_content.Svg.F >>~]|<<div class="odocwiki_info"|~Cf~.
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="React"| module Eliom_csreact.React >> ~[<<a_api subproject="client" | module Eliom_csreact >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="ReactiveData"| module Eliom_csreact.ReactiveData >> ~[<<a_api subproject="client" | module Eliom_csreact >>~]||
 |@@ @style="tet-align: left;"@@\\S|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="S"| module Eliom_csreact.RE.S >> ~[<<a_api subproject="client" | module Eliom_csreact.RE >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="S"| module Eliom_csreact.SharedReact.S >> ~[<<a_api subproject="client" | module Eliom_csreact.SharedReact >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="S"| module Eliom_csreact.React.S >> ~[<<a_api subproject="client" | module Eliom_csreact.React >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="S"| module Eliom_react.S >> ~[<<a_api subproject="client" | module Eliom_react >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="SetCss"| module Eliom_content.Html5.Manip.SetCss >> ~[<<a_api subproject="client" | module Eliom_content.Html5.Manip >>~]|<<div class="odocwiki_info"|~Modify the ~C~S~S properties of ~D~O~M elements~.
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Shared"| module Eliom_csreact.Shared >> ~[<<a_api subproject="client" | module Eliom_csreact >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="SharedReact"| module Eliom_csreact.SharedReact >> ~[<<a_api subproject="client" | module Eliom_csreact >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="SharedReactiveData"| module Eliom_csreact.SharedReactiveData >> ~[<<a_api subproject="client" | module Eliom_csreact >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="String"| module Eliom_lib.String >> ~[<<a_api subproject="client" | module Eliom_lib >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Svg"| module Eliom_content_core.Svg >> ~[<<a_api subproject="client" | module Eliom_content_core >>~]|<<div class="odocwiki_info"|~Building ~S~V~G tree~.
 >>

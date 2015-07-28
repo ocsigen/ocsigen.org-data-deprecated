@@ -7,7 +7,7 @@
   val appendChildren :
     ?before:'a Eliom_content.Html5.elt ->
     'b Eliom_content.Html5.elt -> 'c Eliom_content.Html5.elt list -> unit
-  val appendChildFirst :
+  val insertFirstChild :
     'b Eliom_content.Html5.elt -> 'c Eliom_content.Html5.elt -> unit
   val nth :
     'a Eliom_content.Html5.elt -> int -> 'b Eliom_content.Html5.elt option
@@ -27,9 +27,9 @@
     'a Eliom_content.Html5.elt -> 'b Eliom_content.Html5.elt option
   val previousSibling :
     'a Eliom_content.Html5.elt -> 'b Eliom_content.Html5.elt option
-  val appendBefore :
+  val insertBefore :
     before:'a Eliom_content.Html5.elt -> 'b Eliom_content.Html5.elt -> unit
-  val appendAfter :
+  val insertAfter :
     after:'a Eliom_content.Html5.elt -> 'b Eliom_content.Html5.elt -> unit
   val replaceSelf :
     'a Eliom_content.Html5.elt -> 'b Eliom_content.Html5.elt -> unit

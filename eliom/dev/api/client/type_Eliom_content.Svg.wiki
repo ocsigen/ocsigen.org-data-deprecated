@@ -2964,6 +2964,8 @@
     end
   module R :
     sig
+      val node :
+        'a Eliom_content.Svg.elt React.signal -> 'a Eliom_content.Svg.elt
       module Raw :
         sig
           module Xml :
@@ -4473,7 +4475,7 @@
       val appendChildren :
         ?before:'a Eliom_content.Svg.elt ->
         'b Eliom_content.Svg.elt -> 'c Eliom_content.Svg.elt list -> unit
-      val appendChildFirst :
+      val insertFirstChild :
         'b Eliom_content.Svg.elt -> 'c Eliom_content.Svg.elt -> unit
       val nth :
         'a Eliom_content.Svg.elt -> int -> 'b Eliom_content.Svg.elt option
@@ -4493,9 +4495,9 @@
         'a Eliom_content.Svg.elt -> 'b Eliom_content.Svg.elt option
       val previousSibling :
         'a Eliom_content.Svg.elt -> 'b Eliom_content.Svg.elt option
-      val appendBefore :
+      val insertBefore :
         before:'a Eliom_content.Svg.elt -> 'b Eliom_content.Svg.elt -> unit
-      val appendAfter :
+      val insertAfter :
         after:'a Eliom_content.Svg.elt -> 'b Eliom_content.Svg.elt -> unit
       val replaceSelf :
         'a Eliom_content.Svg.elt -> 'b Eliom_content.Svg.elt -> unit

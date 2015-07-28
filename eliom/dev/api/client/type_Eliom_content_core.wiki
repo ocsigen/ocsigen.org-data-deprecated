@@ -3311,6 +3311,9 @@
         end
       module R :
         sig
+          val node :
+            'a Eliom_content_core.Svg.elt React.signal ->
+            'a Eliom_content_core.Svg.elt
           module Raw :
             sig
               module Xml :

@@ -1,0 +1,26 @@
+<<code language="ocaml" | sig
+  val map_s :
+    ?eq:('a -> 'a -> bool) ->
+    ('b -> 'a Lwt.t) -> 'b Lwt_react.signal -> 'a Lwt_react.signal Lwt.t
+  val map_s_init :
+    init:'a ->
+    ?eq:('a -> 'a -> bool) ->
+    ('b -> 'a Lwt.t) -> 'b Lwt_react.signal -> 'a React.S.t
+  val l2_s :
+    ?eq:('a -> 'a -> bool) ->
+    ('b -> 'c -> 'a Lwt.t) ->
+    'b Lwt_react.signal -> 'c Lwt_react.signal -> 'a Lwt_react.signal Lwt.t
+  val l2_s_init :
+    init:'a ->
+    ?eq:('a -> 'a -> bool) ->
+    ('b -> 'c -> 'a Lwt.t) ->
+    'b Lwt_react.signal -> 'c Lwt_react.signal -> 'a React.S.t
+  val merge_s :
+    ?eq:('a -> 'a -> bool) ->
+    ('a -> 'b -> 'a Lwt.t) ->
+    'a -> 'b Lwt_react.signal list -> 'a Lwt_react.signal Lwt.t
+  val merge_s_init :
+    init:'a ->
+    ?eq:('a -> 'a -> bool) ->
+    ('a -> 'b -> 'a Lwt.t) -> 'a -> 'b Lwt_react.signal list -> 'a React.S.t
+end >>

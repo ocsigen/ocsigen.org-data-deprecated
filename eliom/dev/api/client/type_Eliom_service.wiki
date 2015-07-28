@@ -1392,6 +1392,13 @@
      [< Eliom_service.registrable ], 'return)
     Eliom_service.service -> bool
   val get_priority_ : Eliom_service.a_s -> int
+  val get_client_fun_ :
+    ('a, 'b, [< Eliom_service.service_method ], [< Eliom_service.attached ],
+     [< Eliom_service.service_kind ], [< Eliom_service.suff ], 'e, 'f,
+     [< Eliom_service.registrable ], 'return)
+    Eliom_service.service ->
+    ('a -> 'b -> [ `Html ] Eliom_content_core.Html5.elt Lwt.t)
+    Eliom_lib.client_value option
   val keep_nl_params :
     ('a, 'b, [< Eliom_service.service_method ], [< Eliom_service.attached ],
      [< Eliom_service.service_kind ], [< Eliom_service.suff ], 'e, 'f,

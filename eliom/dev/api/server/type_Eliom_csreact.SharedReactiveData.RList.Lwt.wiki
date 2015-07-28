@@ -1,0 +1,10 @@
+<<code language="ocaml" | sig
+  val map_p :
+    ('a -> 'b Lwt.t) Eliom_lib.shared_value ->
+    'a Eliom_csreact.SharedReactiveData.RList.t ->
+    'b Eliom_csreact.SharedReactiveData.RList.t Lwt.t
+  val fold_p :
+    ('a -> 'b Lwt.t) Eliom_lib.shared_value ->
+    'a Eliom_csreact.SharedReactiveData.RList.t ->
+    'b Eliom_csreact.SharedReactiveData.RList.t Lwt.t
+end >>

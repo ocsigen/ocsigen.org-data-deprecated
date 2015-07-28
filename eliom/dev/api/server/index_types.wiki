@@ -133,6 +133,7 @@
     the may be volatile~.
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="event"| type Eliom_csreact.SharedReact.event >> ~[<<a_api subproject="server" | module Eliom_csreact.SharedReact >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="extension"| type Eliom_openid.extension >> ~[<<a_api subproject="server" | module Eliom_openid >>~]|<<div class="odocwiki_info"|~An extension yielding values of type ~'a
 >>
 |
@@ -176,6 +177,8 @@
 >>
 |
 |@@ @style="tet-align: left;"@@\\H|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="handle"| type Eliom_csreact.SharedReactiveData.RList.handle >> ~[<<a_api subproject="server" | module Eliom_csreact.SharedReactiveData.RList >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="handle"| type Eliom_csreact.FakeReactiveData.RList.handle >> ~[<<a_api subproject="server" | module Eliom_csreact.FakeReactiveData.RList >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="hierarchical_site"| type Eliom_tools_common.hierarchical_site >> ~[<<a_api subproject="server" | module Eliom_tools_common >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="hierarchical_site"| type Eliom_tools.hierarchical_site >> ~[<<a_api subproject="server" | module Eliom_tools >>~]|<<div class="odocwiki_info"|~Hierarchical sites description~.
 >>
@@ -423,6 +426,8 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="setoneradio"| type Eliom_parameter.setoneradio >> ~[<<a_api subproject="server" | module Eliom_parameter >>~]|<<div class="odocwiki_info"|~A parameter arity could either be~: <<span class="odocwiki_inlinecode"|`~Set of ~'a>> means~: any number of <<span class="odocwiki_inlinecode"|~'a>>~.~, <<span class="odocwiki_inlinecode"|`~One of ~'a>> means~: exactly one <<span class="odocwiki_inlinecode"|~'a>>~.~, <<span class="odocwiki_inlinecode"|`~Radio of ~'a>> means~: zero or one <<span class="odocwiki_inlinecode"|~'a>>~.
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="shared_value"| type Eliom_lib.shared_value >> ~[<<a_api subproject="server" | module Eliom_lib >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="signal"| type Eliom_csreact.SharedReact.signal >> ~[<<a_api subproject="server" | module Eliom_csreact.SharedReact >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="site_scope"| type Eliom_common.site_scope >> ~[<<a_api subproject="server" | module Eliom_common >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="sitedata"| type Eliom_types.sitedata >> ~[<<a_api subproject="server" | module Eliom_types >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="soption"| type Eliom_mkforms.MakeForms.soption >> ~[<<a_api subproject="server" | module Eliom_mkforms.MakeForms >>~]||
@@ -443,6 +448,7 @@
     ~The default scope is <<span class="odocwiki_inlinecode"|`~Session>>~.
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="step"| type Eliom_csreact.SharedReact.step >> ~[<<a_api subproject="server" | module Eliom_csreact.SharedReact >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="suff"| type Eliom_service.suff >> ~[<<a_api subproject="server" | module Eliom_service >>~]|<<div class="odocwiki_info"|~The kind of parameters for a service is <<span class="odocwiki_inlinecode"|`~With~Suffix>> when it have
     a suffix parameter~, for examples <<a_api subproject="server" | val Eliom_parameter.suffix >> or
     <<a_api subproject="server" | val Eliom_parameter.suffix_prod >>~.
@@ -455,6 +461,14 @@
 |
 |@@ @style="tet-align: left;"@@\\T|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="t"| type Eliom_registration.TMPL_PARAMS.t >> ~[<<a_api subproject="server" | module Eliom_registration.TMPL_PARAMS >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="t"| type Eliom_cscache.t >> ~[<<a_api subproject="server" | module Eliom_cscache >>~]|<<div class="odocwiki_info"|~The type of association tables ~(implemented using ~Hashtbl~)
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="t"| type Eliom_csreact.RE.S.t >> ~[<<a_api subproject="server" | module Eliom_csreact.RE.S >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="t"| type Eliom_csreact.SharedReactiveData.RList.t >> ~[<<a_api subproject="server" | module Eliom_csreact.SharedReactiveData.RList >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="t"| type Eliom_csreact.SharedReact.S.t >> ~[<<a_api subproject="server" | module Eliom_csreact.SharedReact.S >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="t"| type Eliom_csreact.FakeReactiveData.RList.t >> ~[<<a_api subproject="server" | module Eliom_csreact.FakeReactiveData.RList >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="t"| type Eliom_csreact.FakeReact.S.t >> ~[<<a_api subproject="server" | module Eliom_csreact.FakeReact.S >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="t"| type Eliom_react.S.Down.t >> ~[<<a_api subproject="server" | module Eliom_react.S.Down >>~]|<<div class="odocwiki_info"|~The abstract type of down signals~.
 >>
 |

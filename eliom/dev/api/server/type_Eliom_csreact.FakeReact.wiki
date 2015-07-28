@@ -1,0 +1,36 @@
+<<code language="ocaml" | sig
+  module S :
+    sig
+      type 'a t
+      val create :
+        'a ->
+        'a Eliom_csreact.FakeReact.??.t * (?step:React.step -> 'a -> unit)
+      val value : 'a Eliom_csreact.FakeReact.??.t -> 'a
+      val const : 'a -> 'a Eliom_csreact.FakeReact.??.t
+      val map :
+        ?eq:('b -> 'b -> bool) ->
+        ('a -> 'b) ->
+        'a Eliom_csreact.FakeReact.??.t -> 'b Eliom_csreact.FakeReact.??.t
+      val merge :
+        ?eq:('a -> 'a -> bool) ->
+        ('a -> 'b -> 'a) ->
+        'a ->
+        'b Eliom_csreact.FakeReact.??.t list ->
+        'a Eliom_csreact.FakeReact.??.t
+      val l2 :
+        ?eq:('d -> 'd -> bool) ->
+        ('a -> 'b -> 'c) ->
+        'a Eliom_csreact.FakeReact.??.t ->
+        'b Eliom_csreact.FakeReact.??.t -> 'c Eliom_csreact.FakeReact.??.t
+      val l3 :
+        ?eq:('d -> 'd -> bool) ->
+        ('a -> 'b -> 'c -> 'd) ->
+        'a Eliom_csreact.FakeReact.??.t ->
+        'b Eliom_csreact.FakeReact.??.t ->
+        'c Eliom_csreact.FakeReact.??.t -> 'd Eliom_csreact.FakeReact.??.t
+      val switch :
+        ?eq:('a -> 'a -> bool) ->
+        'a Eliom_csreact.FakeReact.??.t Eliom_csreact.FakeReact.??.t ->
+        'a Eliom_csreact.FakeReact.??.t
+    end
+end >>
