@@ -1,1 +1,1 @@
-<<code language="ocaml" | T >>
+<<code language="ocaml" | NoWrap >>

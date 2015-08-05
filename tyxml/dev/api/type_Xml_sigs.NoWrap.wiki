@@ -44,21 +44,4 @@
   val cdata : string -> elt
   val cdata_script : string -> elt
   val cdata_style : string -> elt
-  type separator = Space | Comma
-  val aname : attrib -> aname
-  type acontent = private
-      AFloat of float
-    | AInt of int
-    | AStr of string
-    | AStrL of Xml_sigs.Iterable.separator * string list
-  val acontent : attrib -> Xml_sigs.Iterable.acontent
-  type econtent = private
-      Empty
-    | Comment of string
-    | EncodedPCDATA of string
-    | PCDATA of string
-    | Entity of string
-    | Leaf of ename * attrib list
-    | Node of ename * attrib list * elt list
-  val content : elt -> Xml_sigs.Iterable.econtent
 end >>

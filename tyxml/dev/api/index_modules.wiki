@@ -35,18 +35,6 @@
 |
 |@@class="odocwiki_index"@ @@<<a_api text="Make"| module Xml_print.Make >> ~[<<a_api | module Xml_print >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="Make"| module Xml_iter.Make >> ~[<<a_api | module Xml_iter >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="MakeWrapped"| module Html5_f.MakeWrapped >> ~[<<a_api | module Html5_f >>~]|<<div class="odocwiki_info"|~Like the <<a_api | module Html5_f.Make >> functor~, but allows to wrap elements inside a monad described by <<a_api | module type Xml_wrap.T >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api text="MakeWrapped"| module Html5_sigs.MakeWrapped >> ~[<<a_api | module Html5_sigs >>~]|<<div class="odocwiki_info"|~Signature functor for <<a_api | module Html5_f.MakeWrapped >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api text="MakeWrapped"| module Svg_f.MakeWrapped >> ~[<<a_api | module Svg_f >>~]|<<div class="odocwiki_info"|~Like the <<a_api | module Svg_f.Make >> functor~, but allows to wrap elements inside a monad described by <<a_api | module type Xml_wrap.T >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api text="MakeWrapped"| module Svg_sigs.MakeWrapped >> ~[<<a_api | module Svg_sigs >>~]|<<div class="odocwiki_info"|~Signature functor for <<a_api | module Svg_f.MakeWrapped >>~.
->>
-|
 |@@class="odocwiki_index"@ @@<<a_api text="Make_printer"| module Html5.Make_printer >> ~[<<a_api | module Html5 >>~]|<<div class="odocwiki_info"|~Parametrized stream printer for ~H~T~M~L~5 documents
 >>
 |
@@ -94,6 +82,9 @@
 |@@class="odocwiki_index"@ @@<<a_api text="Utf8"| module Xml_print.Utf8 >> ~[<<a_api | module Xml_print >>~]|<<div class="odocwiki_info"|~Utf~8 normalizer and encoder for ~H~T~M~L~.
 >>
 |
+|@@ @style="tet-align: left;"@@\\W|
+|@@class="odocwiki_index"@ @@<<a_api text="W"| module Xml_sigs.T.W >> ~[<<a_api | module Xml_sigs.T >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="W"| module Xml.W >> ~[<<a_api | module Xml >>~]||
 |@@ @style="tet-align: left;"@@\\X|
 |@@class="odocwiki_index"@ @@<<a_api text="Xml"| module Html5_sigs.T.Xml >> ~[<<a_api | module Html5_sigs.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="Xml"| module Svg_sigs.T.Xml >> ~[<<a_api | module Svg_sigs.T >>~]||

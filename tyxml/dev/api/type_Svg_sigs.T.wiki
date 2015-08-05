@@ -1,12 +1,12 @@
 <<code language="ocaml" | sig
-  module Xml : Xml_sigs.Wrapped
+  module Xml : Xml_sigs.T
   module Info : Xml_sigs.Info
   type uri = Xml.uri
   val string_of_uri : Svg_sigs.T.uri -> string
   val uri_of_string : string -> Svg_sigs.T.uri
   type +'a attrib
-  type 'a wrap
-  type 'a list_wrap
+  type 'a wrap = 'a Xml.W.t
+  type 'a list_wrap = 'a Xml.W.tlist
   type +'a elt
   type ('a, 'b) nullary =
       ?a:'a Svg_sigs.T.attrib list -> unit -> 'b Svg_sigs.T.elt

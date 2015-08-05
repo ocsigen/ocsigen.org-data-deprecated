@@ -13,7 +13,7 @@
         'a Xml_wrap.T.tlist -> 'a Xml_wrap.T.tlist -> 'a Xml_wrap.T.tlist
       val map : ('a -> 'b) -> 'a Xml_wrap.T.tlist -> 'b Xml_wrap.T.tlist
     end
-  module NoWrap :
+  module type NoWrap =
     sig
       type 'a t = 'a
       type 'a tlist = 'a list
@@ -25,4 +25,5 @@
       val append : 'a tlist -> 'a tlist -> 'a tlist
       val map : ('a -> 'b) -> 'a tlist -> 'b tlist
     end
+  module NoWrap : NoWrap
 end >>

@@ -1,16 +1,28 @@
 <<code language="ocaml" | sig
   module Xml :
     sig
+      module W :
+        sig
+          type 'a t = 'a
+          type 'a tlist = 'a list
+          val return : 'a -> 'a t
+          val fmap : ('a -> 'b) -> 'a t -> 'b t
+          val nil : unit -> 'a tlist
+          val singleton : 'a t -> 'a tlist
+          val cons : 'a t -> 'a tlist -> 'a tlist
+          val append : 'a tlist -> 'a tlist -> 'a tlist
+          val map : ('a -> 'b) -> 'a tlist -> 'b tlist
+        end
       type 'a wrap = 'a W.t
       type 'a list_wrap = 'a W.tlist
-      type uri = Xml.uri
+      type uri
       val string_of_uri : uri -> string
       val uri_of_string : string -> uri
       type aname = string
-      type event_handler = Xml.event_handler
-      type mouse_event_handler = Xml.mouse_event_handler
-      type keyboard_event_handler = Xml.keyboard_event_handler
-      type attrib = Xml.attrib
+      type event_handler
+      type mouse_event_handler
+      type keyboard_event_handler
+      type attrib
       val float_attrib : aname -> float wrap -> attrib
       val int_attrib : aname -> int wrap -> attrib
       val string_attrib : aname -> string wrap -> attrib
@@ -22,7 +34,7 @@
         aname -> keyboard_event_handler -> attrib
       val uri_attrib : aname -> uri wrap -> attrib
       val uris_attrib : aname -> uri list wrap -> attrib
-      type elt = Xml.elt
+      type elt
       type ename = string
       val empty : unit -> elt
       val comment : string -> elt
@@ -40,8 +52,8 @@
   val string_of_uri : uri -> string
   val uri_of_string : string -> uri
   type +'a attrib
-  type 'a wrap = 'a W.t
-  type 'a list_wrap = 'a W.tlist
+  type 'a wrap = 'a Xml.W.t
+  type 'a list_wrap = 'a Xml.W.tlist
   type +'a elt
   type ('a, 'b) nullary = ?a:'a attrib list -> unit -> 'b elt
   type ('a, 'b, 'c) unary = ?a:'a attrib list -> 'b elt wrap -> 'c elt
