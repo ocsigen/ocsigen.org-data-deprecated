@@ -315,6 +315,24 @@
                 [> `LengthAdjust ] attrib
               val a_textlength :
                 Svg_types.Unit.length wrap -> [> `TextLength ] attrib
+              val a_text_anchor :
+                [< `End | `Inherit | `Middle | `Start ] wrap ->
+                [> `Text_Anchor ] attrib
+              val a_text_decoration :
+                [< `Blink
+                 | `Inherit
+                 | `Line_through
+                 | `None
+                 | `Overline
+                 | `Underline ]
+                wrap -> [> `Text_Decoration ] attrib
+              val a_text_rendering :
+                [< `Auto
+                 | `GeometricPrecision
+                 | `Inherit
+                 | `OptimizeLegibility
+                 | `OptimizeSpeed ]
+                wrap -> [> `Text_Rendering ] attrib
               val a_rotate : Svg_types.numbers wrap -> [> `Rotate ] attrib
               val a_startoffset :
                 Svg_types.Unit.length wrap -> [> `StartOffset ] attrib
@@ -593,6 +611,36 @@
                 Svg_types.number wrap -> [> `OverlineThickness ] attrib
               val a_string : string wrap -> [> `String ] attrib
               val a_name : string wrap -> [> `Name ] attrib
+              val a_alignment_baseline :
+                [< `After_edge
+                 | `Alphabetic
+                 | `Auto
+                 | `Baseline
+                 | `Before_edge
+                 | `Central
+                 | `Hanging
+                 | `Ideographic
+                 | `Inherit
+                 | `Mathematical
+                 | `Middle
+                 | `Text_after_edge
+                 | `Text_before_edge ]
+                wrap -> [> `Alignment_Baseline ] attrib
+              val a_dominant_baseline :
+                [< `Alphabetic
+                 | `Auto
+                 | `Central
+                 | `Hanging
+                 | `Ideographic
+                 | `Inherit
+                 | `Mathematical
+                 | `Middle
+                 | `No_change
+                 | `Reset_size
+                 | `Text_after_edge
+                 | `Text_before_edge
+                 | `Use_script ]
+                wrap -> [> `Dominant_Baseline ] attrib
               val a_onabort : Xml.event_handler -> [> `OnAbort ] attrib
               val a_onactivate : Xml.event_handler -> [> `OnActivate ] attrib
               val a_onbegin : Xml.event_handler -> [> `OnBegin ] attrib
@@ -1103,6 +1151,24 @@
             [> `LengthAdjust ] attrib
           val a_textlength :
             Svg_types.Unit.length wrap -> [> `TextLength ] attrib
+          val a_text_anchor :
+            [< `End | `Inherit | `Middle | `Start ] wrap ->
+            [> `Text_Anchor ] attrib
+          val a_text_decoration :
+            [< `Blink
+             | `Inherit
+             | `Line_through
+             | `None
+             | `Overline
+             | `Underline ]
+            wrap -> [> `Text_Decoration ] attrib
+          val a_text_rendering :
+            [< `Auto
+             | `GeometricPrecision
+             | `Inherit
+             | `OptimizeLegibility
+             | `OptimizeSpeed ]
+            wrap -> [> `Text_Rendering ] attrib
           val a_rotate : Svg_types.numbers wrap -> [> `Rotate ] attrib
           val a_startoffset :
             Svg_types.Unit.length wrap -> [> `StartOffset ] attrib
@@ -1368,6 +1434,36 @@
             Svg_types.number wrap -> [> `OverlineThickness ] attrib
           val a_string : string wrap -> [> `String ] attrib
           val a_name : string wrap -> [> `Name ] attrib
+          val a_alignment_baseline :
+            [< `After_edge
+             | `Alphabetic
+             | `Auto
+             | `Baseline
+             | `Before_edge
+             | `Central
+             | `Hanging
+             | `Ideographic
+             | `Inherit
+             | `Mathematical
+             | `Middle
+             | `Text_after_edge
+             | `Text_before_edge ]
+            wrap -> [> `Alignment_Baseline ] attrib
+          val a_dominant_baseline :
+            [< `Alphabetic
+             | `Auto
+             | `Central
+             | `Hanging
+             | `Ideographic
+             | `Inherit
+             | `Mathematical
+             | `Middle
+             | `No_change
+             | `Reset_size
+             | `Text_after_edge
+             | `Text_before_edge
+             | `Use_script ]
+            wrap -> [> `Dominant_Baseline ] attrib
           val a_onabort : Xml.event_handler -> [> `OnAbort ] attrib
           val a_onactivate : Xml.event_handler -> [> `OnActivate ] attrib
           val a_onbegin : Xml.event_handler -> [> `OnBegin ] attrib
@@ -1872,6 +1968,24 @@
                 [> `LengthAdjust ] attrib
               val a_textlength :
                 Svg_types.Unit.length wrap -> [> `TextLength ] attrib
+              val a_text_anchor :
+                [< `End | `Inherit | `Middle | `Start ] wrap ->
+                [> `Text_Anchor ] attrib
+              val a_text_decoration :
+                [< `Blink
+                 | `Inherit
+                 | `Line_through
+                 | `None
+                 | `Overline
+                 | `Underline ]
+                wrap -> [> `Text_Decoration ] attrib
+              val a_text_rendering :
+                [< `Auto
+                 | `GeometricPrecision
+                 | `Inherit
+                 | `OptimizeLegibility
+                 | `OptimizeSpeed ]
+                wrap -> [> `Text_Rendering ] attrib
               val a_rotate : Svg_types.numbers wrap -> [> `Rotate ] attrib
               val a_startoffset :
                 Svg_types.Unit.length wrap -> [> `StartOffset ] attrib
@@ -2150,6 +2264,36 @@
                 Svg_types.number wrap -> [> `OverlineThickness ] attrib
               val a_string : string wrap -> [> `String ] attrib
               val a_name : string wrap -> [> `Name ] attrib
+              val a_alignment_baseline :
+                [< `After_edge
+                 | `Alphabetic
+                 | `Auto
+                 | `Baseline
+                 | `Before_edge
+                 | `Central
+                 | `Hanging
+                 | `Ideographic
+                 | `Inherit
+                 | `Mathematical
+                 | `Middle
+                 | `Text_after_edge
+                 | `Text_before_edge ]
+                wrap -> [> `Alignment_Baseline ] attrib
+              val a_dominant_baseline :
+                [< `Alphabetic
+                 | `Auto
+                 | `Central
+                 | `Hanging
+                 | `Ideographic
+                 | `Inherit
+                 | `Mathematical
+                 | `Middle
+                 | `No_change
+                 | `Reset_size
+                 | `Text_after_edge
+                 | `Text_before_edge
+                 | `Use_script ]
+                wrap -> [> `Dominant_Baseline ] attrib
               val a_onabort : Xml.event_handler -> [> `OnAbort ] attrib
               val a_onactivate : Xml.event_handler -> [> `OnActivate ] attrib
               val a_onbegin : Xml.event_handler -> [> `OnBegin ] attrib
@@ -2660,6 +2804,24 @@
             [> `LengthAdjust ] attrib
           val a_textlength :
             Svg_types.Unit.length wrap -> [> `TextLength ] attrib
+          val a_text_anchor :
+            [< `End | `Inherit | `Middle | `Start ] wrap ->
+            [> `Text_Anchor ] attrib
+          val a_text_decoration :
+            [< `Blink
+             | `Inherit
+             | `Line_through
+             | `None
+             | `Overline
+             | `Underline ]
+            wrap -> [> `Text_Decoration ] attrib
+          val a_text_rendering :
+            [< `Auto
+             | `GeometricPrecision
+             | `Inherit
+             | `OptimizeLegibility
+             | `OptimizeSpeed ]
+            wrap -> [> `Text_Rendering ] attrib
           val a_rotate : Svg_types.numbers wrap -> [> `Rotate ] attrib
           val a_startoffset :
             Svg_types.Unit.length wrap -> [> `StartOffset ] attrib
@@ -2925,6 +3087,36 @@
             Svg_types.number wrap -> [> `OverlineThickness ] attrib
           val a_string : string wrap -> [> `String ] attrib
           val a_name : string wrap -> [> `Name ] attrib
+          val a_alignment_baseline :
+            [< `After_edge
+             | `Alphabetic
+             | `Auto
+             | `Baseline
+             | `Before_edge
+             | `Central
+             | `Hanging
+             | `Ideographic
+             | `Inherit
+             | `Mathematical
+             | `Middle
+             | `Text_after_edge
+             | `Text_before_edge ]
+            wrap -> [> `Alignment_Baseline ] attrib
+          val a_dominant_baseline :
+            [< `Alphabetic
+             | `Auto
+             | `Central
+             | `Hanging
+             | `Ideographic
+             | `Inherit
+             | `Mathematical
+             | `Middle
+             | `No_change
+             | `Reset_size
+             | `Text_after_edge
+             | `Text_before_edge
+             | `Use_script ]
+            wrap -> [> `Dominant_Baseline ] attrib
           val a_onabort : Xml.event_handler -> [> `OnAbort ] attrib
           val a_onactivate : Xml.event_handler -> [> `OnActivate ] attrib
           val a_onbegin : Xml.event_handler -> [> `OnBegin ] attrib
@@ -3432,6 +3624,24 @@
                 [> `LengthAdjust ] attrib
               val a_textlength :
                 Svg_types.Unit.length wrap -> [> `TextLength ] attrib
+              val a_text_anchor :
+                [< `End | `Inherit | `Middle | `Start ] wrap ->
+                [> `Text_Anchor ] attrib
+              val a_text_decoration :
+                [< `Blink
+                 | `Inherit
+                 | `Line_through
+                 | `None
+                 | `Overline
+                 | `Underline ]
+                wrap -> [> `Text_Decoration ] attrib
+              val a_text_rendering :
+                [< `Auto
+                 | `GeometricPrecision
+                 | `Inherit
+                 | `OptimizeLegibility
+                 | `OptimizeSpeed ]
+                wrap -> [> `Text_Rendering ] attrib
               val a_rotate : Svg_types.numbers wrap -> [> `Rotate ] attrib
               val a_startoffset :
                 Svg_types.Unit.length wrap -> [> `StartOffset ] attrib
@@ -3710,6 +3920,36 @@
                 Svg_types.number wrap -> [> `OverlineThickness ] attrib
               val a_string : string wrap -> [> `String ] attrib
               val a_name : string wrap -> [> `Name ] attrib
+              val a_alignment_baseline :
+                [< `After_edge
+                 | `Alphabetic
+                 | `Auto
+                 | `Baseline
+                 | `Before_edge
+                 | `Central
+                 | `Hanging
+                 | `Ideographic
+                 | `Inherit
+                 | `Mathematical
+                 | `Middle
+                 | `Text_after_edge
+                 | `Text_before_edge ]
+                wrap -> [> `Alignment_Baseline ] attrib
+              val a_dominant_baseline :
+                [< `Alphabetic
+                 | `Auto
+                 | `Central
+                 | `Hanging
+                 | `Ideographic
+                 | `Inherit
+                 | `Mathematical
+                 | `Middle
+                 | `No_change
+                 | `Reset_size
+                 | `Text_after_edge
+                 | `Text_before_edge
+                 | `Use_script ]
+                wrap -> [> `Dominant_Baseline ] attrib
               val a_onabort : Xml.event_handler -> [> `OnAbort ] attrib
               val a_onactivate : Xml.event_handler -> [> `OnActivate ] attrib
               val a_onbegin : Xml.event_handler -> [> `OnBegin ] attrib
@@ -4220,6 +4460,24 @@
             [> `LengthAdjust ] attrib
           val a_textlength :
             Svg_types.Unit.length wrap -> [> `TextLength ] attrib
+          val a_text_anchor :
+            [< `End | `Inherit | `Middle | `Start ] wrap ->
+            [> `Text_Anchor ] attrib
+          val a_text_decoration :
+            [< `Blink
+             | `Inherit
+             | `Line_through
+             | `None
+             | `Overline
+             | `Underline ]
+            wrap -> [> `Text_Decoration ] attrib
+          val a_text_rendering :
+            [< `Auto
+             | `GeometricPrecision
+             | `Inherit
+             | `OptimizeLegibility
+             | `OptimizeSpeed ]
+            wrap -> [> `Text_Rendering ] attrib
           val a_rotate : Svg_types.numbers wrap -> [> `Rotate ] attrib
           val a_startoffset :
             Svg_types.Unit.length wrap -> [> `StartOffset ] attrib
@@ -4485,6 +4743,36 @@
             Svg_types.number wrap -> [> `OverlineThickness ] attrib
           val a_string : string wrap -> [> `String ] attrib
           val a_name : string wrap -> [> `Name ] attrib
+          val a_alignment_baseline :
+            [< `After_edge
+             | `Alphabetic
+             | `Auto
+             | `Baseline
+             | `Before_edge
+             | `Central
+             | `Hanging
+             | `Ideographic
+             | `Inherit
+             | `Mathematical
+             | `Middle
+             | `Text_after_edge
+             | `Text_before_edge ]
+            wrap -> [> `Alignment_Baseline ] attrib
+          val a_dominant_baseline :
+            [< `Alphabetic
+             | `Auto
+             | `Central
+             | `Hanging
+             | `Ideographic
+             | `Inherit
+             | `Mathematical
+             | `Middle
+             | `No_change
+             | `Reset_size
+             | `Text_after_edge
+             | `Text_before_edge
+             | `Use_script ]
+            wrap -> [> `Dominant_Baseline ] attrib
           val a_onabort : Xml.event_handler -> [> `OnAbort ] attrib
           val a_onactivate : Xml.event_handler -> [> `OnActivate ] attrib
           val a_onbegin : Xml.event_handler -> [> `OnBegin ] attrib
@@ -5154,6 +5442,7 @@
               val a_href : Xml.uri wrap -> [> `Href ] attrib
               val a_hreflang :
                 Html5_types.languagecode wrap -> [> `Hreflang ] attrib
+              val a_download : string option wrap -> [> `Download ] attrib
               val a_rel : Html5_types.linktypes wrap -> [> `Rel ] attrib
               val a_tabindex :
                 Html5_types.number wrap -> [> `Tabindex ] attrib
@@ -5303,7 +5592,6 @@
                  [< Html5_types.body_content_fun ], [> Html5_types.body ])
                 star
               val svg :
-                ?xmlns:string ->
                 ?a:[< Html5_types.svg_attrib ] Svg.F.Raw.attrib list ->
                 [< Html5_types.svg_content ] Svg.F.Raw.elt list_wrap ->
                 [> Html5_types.svg ] elt
@@ -6732,6 +7020,7 @@
           val a_href : Xml.uri wrap -> [> `Href ] attrib
           val a_hreflang :
             Html5_types.languagecode wrap -> [> `Hreflang ] attrib
+          val a_download : string option wrap -> [> `Download ] attrib
           val a_rel : Html5_types.linktypes wrap -> [> `Rel ] attrib
           val a_tabindex : Html5_types.number wrap -> [> `Tabindex ] attrib
           val a_mime_type :
@@ -6870,7 +7159,6 @@
              [> Html5_types.body ])
             star
           val svg :
-            ?xmlns:string ->
             ?a:[< Html5_types.svg_attrib ] Svg.F.Raw.attrib list ->
             [< Html5_types.svg_content ] Svg.F.Raw.elt list_wrap ->
             [> Html5_types.svg ] elt
@@ -8305,6 +8593,7 @@
               val a_href : Xml.uri wrap -> [> `Href ] attrib
               val a_hreflang :
                 Html5_types.languagecode wrap -> [> `Hreflang ] attrib
+              val a_download : string option wrap -> [> `Download ] attrib
               val a_rel : Html5_types.linktypes wrap -> [> `Rel ] attrib
               val a_tabindex :
                 Html5_types.number wrap -> [> `Tabindex ] attrib
@@ -8454,7 +8743,6 @@
                  [< Html5_types.body_content_fun ], [> Html5_types.body ])
                 star
               val svg :
-                ?xmlns:string ->
                 ?a:[< Html5_types.svg_attrib ] Svg.D.Raw.attrib list ->
                 [< Html5_types.svg_content ] Svg.D.Raw.elt list_wrap ->
                 [> Html5_types.svg ] elt
@@ -9883,6 +10171,7 @@
           val a_href : Xml.uri wrap -> [> `Href ] attrib
           val a_hreflang :
             Html5_types.languagecode wrap -> [> `Hreflang ] attrib
+          val a_download : string option wrap -> [> `Download ] attrib
           val a_rel : Html5_types.linktypes wrap -> [> `Rel ] attrib
           val a_tabindex : Html5_types.number wrap -> [> `Tabindex ] attrib
           val a_mime_type :
@@ -10021,7 +10310,6 @@
              [> Html5_types.body ])
             star
           val svg :
-            ?xmlns:string ->
             ?a:[< Html5_types.svg_attrib ] Svg.D.Raw.attrib list ->
             [< Html5_types.svg_content ] Svg.D.Raw.elt list_wrap ->
             [> Html5_types.svg ] elt
@@ -11462,6 +11750,7 @@
               val a_href : Xml.uri wrap -> [> `Href ] attrib
               val a_hreflang :
                 Html5_types.languagecode wrap -> [> `Hreflang ] attrib
+              val a_download : string option wrap -> [> `Download ] attrib
               val a_rel : Html5_types.linktypes wrap -> [> `Rel ] attrib
               val a_tabindex :
                 Html5_types.number wrap -> [> `Tabindex ] attrib
@@ -11611,7 +11900,6 @@
                  [< Html5_types.body_content_fun ], [> Html5_types.body ])
                 star
               val svg :
-                ?xmlns:string ->
                 ?a:[< Html5_types.svg_attrib ] Svg.R.Raw.attrib list ->
                 [< Html5_types.svg_content ] Svg.R.Raw.elt list_wrap ->
                 [> Html5_types.svg ] elt
@@ -13040,6 +13328,7 @@
           val a_href : Xml.uri wrap -> [> `Href ] attrib
           val a_hreflang :
             Html5_types.languagecode wrap -> [> `Hreflang ] attrib
+          val a_download : string option wrap -> [> `Download ] attrib
           val a_rel : Html5_types.linktypes wrap -> [> `Rel ] attrib
           val a_tabindex : Html5_types.number wrap -> [> `Tabindex ] attrib
           val a_mime_type :
@@ -13178,7 +13467,6 @@
              [> Html5_types.body ])
             star
           val svg :
-            ?xmlns:string ->
             ?a:[< Html5_types.svg_attrib ] Svg.R.Raw.attrib list ->
             [< Html5_types.svg_content ] Svg.R.Raw.elt list_wrap ->
             [> Html5_types.svg ] elt

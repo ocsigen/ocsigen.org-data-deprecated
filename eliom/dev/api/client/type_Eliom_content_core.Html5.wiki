@@ -242,6 +242,7 @@
           val a_href : Xml.uri wrap -> [> `Href ] attrib
           val a_hreflang :
             Html5_types.languagecode wrap -> [> `Hreflang ] attrib
+          val a_download : string option wrap -> [> `Download ] attrib
           val a_rel : Html5_types.linktypes wrap -> [> `Rel ] attrib
           val a_tabindex : Html5_types.number wrap -> [> `Tabindex ] attrib
           val a_mime_type :
@@ -380,7 +381,6 @@
              [> Html5_types.body ])
             star
           val svg :
-            ?xmlns:string ->
             ?a:[< Html5_types.svg_attrib ] Svg.F.Raw.attrib list ->
             [< Html5_types.svg_content ] Svg.F.Raw.elt list_wrap ->
             [> Html5_types.svg ] elt
@@ -1757,6 +1757,7 @@
       val a_accept : Html5_types.contenttypes wrap -> [> `Accept ] attrib
       val a_href : Xml.uri wrap -> [> `Href ] attrib
       val a_hreflang : Html5_types.languagecode wrap -> [> `Hreflang ] attrib
+      val a_download : string option wrap -> [> `Download ] attrib
       val a_rel : Html5_types.linktypes wrap -> [> `Rel ] attrib
       val a_tabindex : Html5_types.number wrap -> [> `Tabindex ] attrib
       val a_mime_type :
@@ -1884,7 +1885,6 @@
          [> Html5_types.body ])
         star
       val svg :
-        ?xmlns:string ->
         ?a:[< Html5_types.svg_attrib ] Svg.F.Raw.attrib list ->
         [< Html5_types.svg_content ] Svg.F.Raw.elt list_wrap ->
         [> Html5_types.svg ] elt
@@ -3285,6 +3285,7 @@
           val a_href : Xml.uri wrap -> [> `Href ] attrib
           val a_hreflang :
             Html5_types.languagecode wrap -> [> `Hreflang ] attrib
+          val a_download : string option wrap -> [> `Download ] attrib
           val a_rel : Html5_types.linktypes wrap -> [> `Rel ] attrib
           val a_tabindex : Html5_types.number wrap -> [> `Tabindex ] attrib
           val a_mime_type :
@@ -3423,7 +3424,6 @@
              [> Html5_types.body ])
             star
           val svg :
-            ?xmlns:string ->
             ?a:[< Html5_types.svg_attrib ] Svg.D.Raw.attrib list ->
             [< Html5_types.svg_content ] Svg.D.Raw.elt list_wrap ->
             [> Html5_types.svg ] elt
@@ -4800,6 +4800,7 @@
       val a_accept : Html5_types.contenttypes wrap -> [> `Accept ] attrib
       val a_href : Xml.uri wrap -> [> `Href ] attrib
       val a_hreflang : Html5_types.languagecode wrap -> [> `Hreflang ] attrib
+      val a_download : string option wrap -> [> `Download ] attrib
       val a_rel : Html5_types.linktypes wrap -> [> `Rel ] attrib
       val a_tabindex : Html5_types.number wrap -> [> `Tabindex ] attrib
       val a_mime_type :
@@ -4927,7 +4928,6 @@
          [> Html5_types.body ])
         star
       val svg :
-        ?xmlns:string ->
         ?a:[< Html5_types.svg_attrib ] Svg.D.Raw.attrib list ->
         [< Html5_types.svg_content ] Svg.D.Raw.elt list_wrap ->
         [> Html5_types.svg ] elt
@@ -6334,6 +6334,7 @@
           val a_href : Xml.uri wrap -> [> `Href ] attrib
           val a_hreflang :
             Html5_types.languagecode wrap -> [> `Hreflang ] attrib
+          val a_download : string option wrap -> [> `Download ] attrib
           val a_rel : Html5_types.linktypes wrap -> [> `Rel ] attrib
           val a_tabindex : Html5_types.number wrap -> [> `Tabindex ] attrib
           val a_mime_type :
@@ -6472,7 +6473,6 @@
              [> Html5_types.body ])
             star
           val svg :
-            ?xmlns:string ->
             ?a:[< Html5_types.svg_attrib ] Svg.R.Raw.attrib list ->
             [< Html5_types.svg_content ] Svg.R.Raw.elt list_wrap ->
             [> Html5_types.svg ] elt
@@ -7849,6 +7849,7 @@
       val a_accept : Html5_types.contenttypes wrap -> [> `Accept ] attrib
       val a_href : Xml.uri wrap -> [> `Href ] attrib
       val a_hreflang : Html5_types.languagecode wrap -> [> `Hreflang ] attrib
+      val a_download : string option wrap -> [> `Download ] attrib
       val a_rel : Html5_types.linktypes wrap -> [> `Rel ] attrib
       val a_tabindex : Html5_types.number wrap -> [> `Tabindex ] attrib
       val a_mime_type :
@@ -7976,7 +7977,6 @@
          [> Html5_types.body ])
         star
       val svg :
-        ?xmlns:string ->
         ?a:[< Html5_types.svg_attrib ] Svg.R.Raw.attrib list ->
         [< Html5_types.svg_content ] Svg.R.Raw.elt list_wrap ->
         [> Html5_types.svg ] elt
