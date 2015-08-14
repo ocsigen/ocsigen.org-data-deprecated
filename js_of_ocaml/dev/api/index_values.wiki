@@ -1274,6 +1274,10 @@
     with delay greater than ~2~4 days~.
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api text="set_channel_filler"| value Sys_js.set_channel_filler >> ~[<<a_api | module Sys_js >>~]|<<div class="odocwiki_info"|~Set a callback to be called when an in~_channel wants to fill its
+      buffer~.
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api text="set_channel_flusher"| value Sys_js.set_channel_flusher >> ~[<<a_api | module Sys_js >>~]|<<div class="odocwiki_info"|~Set a callback to be called when an out~_channel flush its buffer~.
 >>
 |

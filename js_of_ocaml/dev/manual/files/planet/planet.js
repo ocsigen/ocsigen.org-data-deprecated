@@ -1088,20 +1088,20 @@
      /*<<stdlib.js 135 0>>*/ function caml_raise_sys_error_Q_(msg_a_)
      { /*<<stdlib.js 136 2>>*/ caml_raise_with_string_b7_
        (caml_global_data_w_.Sys_error,msg_a_) /*<<stdlib.js 137 0>>*/ }
-     /*<<io.js 295 0>>*/ function caml_ml_flush_bf_(oc_a_)
-     { /*<<io.js 296 4>>*/ if(!oc_a_.opened)
-        /*<<io.js 296 20>>*/ caml_raise_sys_error_Q_
+     /*<<io.js 341 0>>*/ function caml_ml_flush_bf_(oc_a_)
+     { /*<<io.js 342 4>>*/ if(!oc_a_.opened)
+        /*<<io.js 342 20>>*/ caml_raise_sys_error_Q_
         ("Cannot flush a closed channel");
-       /*<<io.js 297 4>>*/ if(oc_a_.buffer==str_n_)
-        /*<<io.js 297 24>>*/ return 0;
-       /*<<io.js 298 4>>*/ if(oc_a_.output)
-        /*<<io.js 299 6>>*/ switch(oc_a_.output.length)
+       /*<<io.js 343 4>>*/ if(oc_a_.buffer==str_n_)
+        /*<<io.js 343 24>>*/ return 0;
+       /*<<io.js 344 4>>*/ if(oc_a_.output)
+        /*<<io.js 345 6>>*/ switch(oc_a_.output.length)
         {case 2:
-           /*<<io.js 300 14>>*/ oc_a_.output(oc_a_,oc_a_.buffer);
-           /*<<io.js 300 38>>*/ break;
-         default: /*<<io.js 301 15>>*/ oc_a_.output(oc_a_.buffer)}
+           /*<<io.js 346 14>>*/ oc_a_.output(oc_a_,oc_a_.buffer);
+           /*<<io.js 346 38>>*/ break;
+         default: /*<<io.js 347 15>>*/ oc_a_.output(oc_a_.buffer)}
       oc_a_.buffer=str_n_;
-       /*<<io.js 305 4>>*/ return 0 /*<<io.js 306 0>>*/ }
+       /*<<io.js 351 4>>*/ return 0 /*<<io.js 352 0>>*/ }
      /*<<fs.js 25 15>>*/ var file_inode_d6_=0;
      /*<<unix.js 2 0>>*/ function unix_gettimeofday_i3_()
      { /*<<unix.js 3 2>>*/ return  /*<<unix.js 3 9>>*/ new Date().getTime()/
@@ -1359,7 +1359,8 @@
        /*<<io.js 152 2>>*/ return {file:data_b_.file,
               offset:data_b_.offset,
               fd:fd_a_,
-              opened:true} /*<<io.js 158 0>>*/ }
+              opened:true,
+              refill:null} /*<<io.js 159 0>>*/ }
      /*<<jslib.js 100 0>>*/ function js_print_stderr_iZ_(s_a_)
      { /*<<jslib.js 103 2>>*/ if
        ( /*<<jslib.js 103 5>>*/ s_a_.charCodeAt(s_a_.length-1)==10)
@@ -1420,43 +1421,43 @@
         /*<<io.js 96 36>>*/ if(caml_ml_out_channels_bg_[c_b_].opened)
         l_a_=[0,caml_ml_out_channels_bg_[c_b_],l_a_];
        /*<<io.js 100 2>>*/ return l_a_ /*<<io.js 101 0>>*/ }
-     /*<<io.js 313 0>>*/ function caml_ml_output_dX_
+     /*<<io.js 359 0>>*/ function caml_ml_output_dX_
      (oc_a_,buffer_b_,offset_c_,len_d_)
-     { /*<<io.js 314 4>>*/ if(!oc_a_.opened)
-        /*<<io.js 314 20>>*/ caml_raise_sys_error_Q_
+     { /*<<io.js 360 4>>*/ if(!oc_a_.opened)
+        /*<<io.js 360 20>>*/ caml_raise_sys_error_Q_
         ("Cannot output to a closed channel");
       var string_g_;
-       /*<<io.js 316 4>>*/ if
+       /*<<io.js 362 4>>*/ if
        (offset_c_==
         0&&
-         /*<<io.js 316 22>>*/ caml_ml_string_length_f_(buffer_b_)==
+         /*<<io.js 362 22>>*/ caml_ml_string_length_f_(buffer_b_)==
         len_d_)
        string_g_=buffer_b_;
       else
-        /*<<io.js 318 9>>*/ {string_g_=
-         /*<<io.js 319 17>>*/ caml_create_string_z_(len_d_);
-         /*<<io.js 320 8>>*/ caml_blit_string_M_
+        /*<<io.js 364 9>>*/ {string_g_=
+         /*<<io.js 365 17>>*/ caml_create_string_z_(len_d_);
+         /*<<io.js 366 8>>*/ caml_blit_string_M_
          (buffer_b_,offset_c_,string_g_,0,len_d_)}
       var
-        /*<<io.js 322 17>>*/ jsstring_e_=
-         /*<<io.js 322 19>>*/ string_g_.toString(),
-        /*<<io.js 323 11>>*/ id_h_=
-         /*<<io.js 323 13>>*/ jsstring_e_.lastIndexOf("\n");
-       /*<<io.js 324 4>>*/ if(id_h_<0)
+        /*<<io.js 368 17>>*/ jsstring_e_=
+         /*<<io.js 368 19>>*/ string_g_.toString(),
+        /*<<io.js 369 11>>*/ id_h_=
+         /*<<io.js 369 13>>*/ jsstring_e_.lastIndexOf("\n");
+       /*<<io.js 370 4>>*/ if(id_h_<0)
        oc_a_.buffer+=jsstring_e_;
       else
-        /*<<io.js 326 9>>*/ {oc_a_.buffer+=
-         /*<<io.js 327 19>>*/ jsstring_e_.substr(0,id_h_+1);
-         /*<<io.js 328 8>>*/ caml_ml_flush_bf_(oc_a_);
-        oc_a_.buffer+= /*<<io.js 329 21>>*/ jsstring_e_.substr(id_h_+1)}
-       /*<<io.js 331 4>>*/ return 0 /*<<io.js 332 0>>*/ }
-     /*<<io.js 336 0>>*/ function caml_ml_output_char_dY_(oc_a_,c_b_)
-     { /*<<io.js 337 10>>*/ var
+        /*<<io.js 372 9>>*/ {oc_a_.buffer+=
+         /*<<io.js 373 19>>*/ jsstring_e_.substr(0,id_h_+1);
+         /*<<io.js 374 8>>*/ caml_ml_flush_bf_(oc_a_);
+        oc_a_.buffer+= /*<<io.js 375 21>>*/ jsstring_e_.substr(id_h_+1)}
+       /*<<io.js 377 4>>*/ return 0 /*<<io.js 378 0>>*/ }
+     /*<<io.js 382 0>>*/ function caml_ml_output_char_dY_(oc_a_,c_b_)
+     { /*<<io.js 383 10>>*/ var
        s_c_=
-         /*<<io.js 337 12>>*/ caml_new_string_d_
-         ( /*<<io.js 337 28>>*/ String.fromCharCode(c_b_));
-       /*<<io.js 338 4>>*/ caml_ml_output_dX_(oc_a_,s_c_,0,1);
-       /*<<io.js 339 4>>*/ return 0 /*<<io.js 340 0>>*/ }
+         /*<<io.js 383 12>>*/ caml_new_string_d_
+         ( /*<<io.js 383 28>>*/ String.fromCharCode(c_b_));
+       /*<<io.js 384 4>>*/ caml_ml_output_dX_(oc_a_,s_c_,0,1);
+       /*<<io.js 385 4>>*/ return 0 /*<<io.js 386 0>>*/ }
      /*<<stdlib.js 114 0>>*/ function caml_raise_constant_d1_(tag_a_)
      { /*<<stdlib.js 114 37>>*/ throw tag_a_ /*<<stdlib.js 114 48>>*/ }
      /*<<stdlib.js 183 0>>*/ function caml_raise_zero_divide_iM_()

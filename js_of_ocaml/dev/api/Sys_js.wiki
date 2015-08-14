@@ -10,6 +10,11 @@
       <<span class="odocwiki_inlinecode"|set~_channel~_flusher chan cb>> install the callback <<span class="odocwiki_inlinecode"|cb>> for <<span class="odocwiki_inlinecode"|chan>> out~_channel~.
       <<span class="odocwiki_inlinecode"|cb>> will be called with the string to flush~.
 >>
+<<pre id="VALset_channel_filler" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|set~_channel~_filler>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<span class="ocsforge_color_uid"|Pervasives>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|in_channel>> <<span class="ocsforge_color_delimiter"| -> >> <<span class="ocsforge_color_delimiter"| ( >>unit <<span class="ocsforge_color_delimiter"| -> >> string<<span class="ocsforge_color_delimiter"| ) >> <<span class="ocsforge_color_delimiter"| -> >> unit>>>><<div class="odocwiki_info"|~Set a callback to be called when an in~_channel wants to fill its
+      buffer~. <<span class="odocwiki_inlinecode"|set~_channel~_filler chan cb>> install the called <<span class="odocwiki_inlinecode"|cb>> for
+      <<span class="odocwiki_inlinecode"|chan>> in~_channel~. ~The string returned by <<span class="odocwiki_inlinecode"|cb>> will be appended
+      to the channel buffer~.
+>>
 
 
 ==@@id="2_Pseudofilesystem"@@~Pseudo filesystem~.==

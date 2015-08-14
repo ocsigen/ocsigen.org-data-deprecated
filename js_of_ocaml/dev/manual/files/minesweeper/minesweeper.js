@@ -983,20 +983,20 @@
      /*<<stdlib.js 135 0>>*/ function caml_raise_sys_error_k_(msg_a_)
      { /*<<stdlib.js 136 2>>*/ caml_raise_with_string_al_
        (caml_global_data_f_.Sys_error,msg_a_) /*<<stdlib.js 137 0>>*/ }
-     /*<<io.js 295 0>>*/ function caml_ml_flush_cn_(oc_a_)
-     { /*<<io.js 296 4>>*/ if(!oc_a_.opened)
-        /*<<io.js 296 20>>*/ caml_raise_sys_error_k_
+     /*<<io.js 341 0>>*/ function caml_ml_flush_cn_(oc_a_)
+     { /*<<io.js 342 4>>*/ if(!oc_a_.opened)
+        /*<<io.js 342 20>>*/ caml_raise_sys_error_k_
         ("Cannot flush a closed channel");
-       /*<<io.js 297 4>>*/ if(oc_a_.buffer==str_i_)
-        /*<<io.js 297 24>>*/ return 0;
-       /*<<io.js 298 4>>*/ if(oc_a_.output)
-        /*<<io.js 299 6>>*/ switch(oc_a_.output.length)
+       /*<<io.js 343 4>>*/ if(oc_a_.buffer==str_i_)
+        /*<<io.js 343 24>>*/ return 0;
+       /*<<io.js 344 4>>*/ if(oc_a_.output)
+        /*<<io.js 345 6>>*/ switch(oc_a_.output.length)
         {case 2:
-           /*<<io.js 300 14>>*/ oc_a_.output(oc_a_,oc_a_.buffer);
-           /*<<io.js 300 38>>*/ break;
-         default: /*<<io.js 301 15>>*/ oc_a_.output(oc_a_.buffer)}
+           /*<<io.js 346 14>>*/ oc_a_.output(oc_a_,oc_a_.buffer);
+           /*<<io.js 346 38>>*/ break;
+         default: /*<<io.js 347 15>>*/ oc_a_.output(oc_a_.buffer)}
       oc_a_.buffer=str_i_;
-       /*<<io.js 305 4>>*/ return 0 /*<<io.js 306 0>>*/ }
+       /*<<io.js 351 4>>*/ return 0 /*<<io.js 352 0>>*/ }
      /*<<fs.js 25 15>>*/ var file_inode_bl_=0;
      /*<<unix.js 2 0>>*/ function unix_gettimeofday_cM_()
      { /*<<unix.js 3 2>>*/ return  /*<<unix.js 3 9>>*/ new Date().getTime()/
@@ -1250,7 +1250,8 @@
        /*<<io.js 152 2>>*/ return {file:data_b_.file,
               offset:data_b_.offset,
               fd:fd_a_,
-              opened:true} /*<<io.js 158 0>>*/ }
+              opened:true,
+              refill:null} /*<<io.js 159 0>>*/ }
      /*<<jslib.js 100 0>>*/ function js_print_stderr_cJ_(s_a_)
      { /*<<jslib.js 103 2>>*/ if
        ( /*<<jslib.js 103 5>>*/ s_a_.charCodeAt(s_a_.length-1)==10)
