@@ -4,6 +4,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="a"| type Deriving_Json.Json_min''.a >> ~[<<a_api | module Deriving_Json.Json_min'' >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="a"| type Deriving_Json.Json_min'.a >> ~[<<a_api | module Deriving_Json.Json_min' >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="a"| type Deriving_Json.Json_min.a >> ~[<<a_api | module Deriving_Json.Json_min >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="a"| type Deriving_Json.Json_converter.a >> ~[<<a_api | module Deriving_Json.Json_converter >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="a"| type Deriving_Json.Json.a >> ~[<<a_api | module Deriving_Json.Json >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="alignmentType"| type Dom_svg.alignmentType >> ~[<<a_api | module Dom_svg >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="angleUnitType"| type Dom_svg.angleUnitType >> ~[<<a_api | module Dom_svg >>~]||
@@ -14,6 +15,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="attachParam"| type WebGL.attachParam >> ~[<<a_api | module WebGL >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="attachmentPoint"| type WebGL.attachmentPoint >> ~[<<a_api | module WebGL >>~]||
 |@@ @style="tet-align: left;"@@\\B|
+|@@class="odocwiki_index"@ @@<<a_api text="b"| type Deriving_Json.Json_converter.b >> ~[<<a_api | module Deriving_Json.Json_converter >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="beginMode"| type WebGL.beginMode >> ~[<<a_api | module WebGL >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="blendMode"| type WebGL.blendMode >> ~[<<a_api | module WebGL >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="blendingFactor"| type WebGL.blendingFactor >> ~[<<a_api | module WebGL >>~]||

@@ -175,6 +175,11 @@
 |@@class="odocwiki_index"@ @@<<a_api text="console"| value Firebug.console >> ~[<<a_api | module Firebug >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="contained_by"| value Dom.DocumentPosition.contained_by >> ~[<<a_api | module Dom.DocumentPosition >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="contains"| value Dom.DocumentPosition.contains >> ~[<<a_api | module Dom.DocumentPosition >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="convert"| value Deriving_Json.convert >> ~[<<a_api | module Deriving_Json >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|convert ~(t ~: ~'a t~) ~(from~_ ~: ~'a ~-~> ~'b~) ~(to~_ ~: ~'b ~-~> ~'a~)>>
+    generate a ~J~S~O~N parser~/printer for value of type <<span class="odocwiki_inlinecode"|~'b>> using the parser~/printer of type <<span class="odocwiki_inlinecode"|~'a>>
+    provided by <<span class="odocwiki_inlinecode"|t>>
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api text="create"| value XmlHttpRequest.create >> ~[<<a_api | module XmlHttpRequest >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="createA"| value Dom_svg.createA >> ~[<<a_api | module Dom_svg >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="createA"| value Dom_html.createA >> ~[<<a_api | module Dom_html >>~]||
@@ -554,6 +559,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="form_elements"| value Form.form_elements >> ~[<<a_api | module Form >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="frame"| value Dom_html.CoerceTo.frame >> ~[<<a_api | module Dom_html.CoerceTo >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="frameset"| value Dom_html.CoerceTo.frameset >> ~[<<a_api | module Dom_html.CoerceTo >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="from_"| value Deriving_Json.Json_converter.from_ >> ~[<<a_api | module Deriving_Json.Json_converter >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="from_string"| value Deriving_Json.Json.from_string >> ~[<<a_api | module Deriving_Json.Json >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="from_string"| value Deriving_Json.from_string >> ~[<<a_api | module Deriving_Json >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|from~_string ~Json~.t~<ty~> s>> safely unmarshal the ~J~S~O~N <<span class="odocwiki_inlinecode"|s>> into an
     ~O~Caml value of type <<span class="odocwiki_inlinecode"|ty>>~.
@@ -724,6 +730,10 @@
 |@@class="odocwiki_index"@ @@<<a_api text="js_expr"| value Js.Unsafe.js_expr >> ~[<<a_api | module Js.Unsafe >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|js~_expr e>> will parse the ~Java~Script expression <<span class="odocwiki_inlinecode"|e>> if <<span class="odocwiki_inlinecode"|e>>
         is available at compile time or will failback to a
         runtime evaluation~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="js_mapper"| value Ppx_js.js_mapper >> ~[<<a_api | module Ppx_js >>~]|<<div class="odocwiki_info"|~A syntax extension is available for manipulating object properties~,
+   invoking methods and creating objects~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="js_of_ocaml_version"| value Sys_js.js_of_ocaml_version >> ~[<<a_api | module Sys_js >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|js~_of~_ocaml~_version>> is the version of ~Js~_of~_ocaml~.
@@ -1341,6 +1351,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="symbol"| value Dom_svg.CoerceTo.symbol >> ~[<<a_api | module Dom_svg.CoerceTo >>~]||
 |@@ @style="tet-align: left;"@@\\T|
 |@@class="odocwiki_index"@ @@<<a_api text="t"| value Deriving_Json.Json_min''.t >> ~[<<a_api | module Deriving_Json.Json_min'' >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="t"| value Deriving_Json.Json_converter.t >> ~[<<a_api | module Deriving_Json.Json_converter >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="t"| value Deriving_Json.Json.t >> ~[<<a_api | module Deriving_Json.Json >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="tab"| value Keycode.tab >> ~[<<a_api | module Keycode >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="table"| value Dom_html.CoerceTo.table >> ~[<<a_api | module Dom_html.CoerceTo >>~]||
@@ -1365,6 +1376,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="timeupdates"| value Lwt_js_events.timeupdates >> ~[<<a_api | module Lwt_js_events >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="title"| value Dom_svg.CoerceTo.title >> ~[<<a_api | module Dom_svg.CoerceTo >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="title"| value Dom_html.CoerceTo.title >> ~[<<a_api | module Dom_html.CoerceTo >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="to_"| value Deriving_Json.Json_converter.to_ >> ~[<<a_api | module Deriving_Json.Json_converter >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="to_array"| value Js.to_array >> ~[<<a_api | module Js >>~]|<<div class="odocwiki_info"|~Conversion of arrays from ~Javascript to ~O~Caml~.
 >>
 |

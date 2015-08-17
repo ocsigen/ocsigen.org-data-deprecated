@@ -79,7 +79,9 @@
 
 
 
-|Ppx_js||
+|<<a_api | module Ppx_js >>|<<div class="odocwiki_info"|~Ppx syntax extension for ~Js~_of~_ocaml~.
+>>
+|
 
 
 

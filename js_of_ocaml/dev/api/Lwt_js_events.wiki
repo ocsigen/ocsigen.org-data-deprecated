@@ -8,6 +8,59 @@
    works inwards to the ~H~T~M~L element the event took place on ~(capture phase~)
    and then out again ~(bubbling phase~)~.
 
+~Reminder~:
+   ~Event capturing starts with the outer most element in the ~D~O~M and
+   works inwards to the ~H~T~M~L element the event took place on ~(capture phase~)
+   and then out again ~(bubbling phase~)~.
+
+~Examples of use~:
+
+
+   ~Waiting for a click on <<span class="odocwiki_inlinecode"|elt~1>> before continuing~:
+
+
+   
+<<code language='ocaml'|lwt _ = Lwt_js_events.click elt1 in>>
+
+
+
+   ~Doing some operation for each value change in input element <<span class="odocwiki_inlinecode"|inp>>~:
+
+
+   
+<<code language='ocaml'|Lwt_js_events.(async (fun () ->
+      clicks inp1 (fun ev _ -> ...)
+   ))>>
+
+
+
+   ~Defining a thread that waits for ~E~S~C key on an element~:
+
+
+   
+<<code language='ocaml'|let rec esc elt =
+      lwt ev = keydown elt in
+      if ev##keyCode = 27
+      then Lwt.return ev
+      else esc elt>>
+
+
+
+   ~Waiting for a click or escape key before continuing~:
+
+
+   
+<<code language='ocaml'|lwt () =
+       Lwt.pick [(lwt _ = esc Dom_html.document in Lwt.return ());
+                 (lwt _ = click Dom_html.document in Lwt.return ())]
+     in ...>>
+
+
+~Reminder~:
+   ~Event capturing starts with the outer most element in the ~D~O~M and
+   works inwards to the ~H~T~M~L element the event took place on ~(capture phase~)
+   and then out again ~(bubbling phase~)~.
+
 ~Examples of use~:
 
 

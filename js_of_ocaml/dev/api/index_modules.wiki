@@ -14,6 +14,9 @@
 |@@class="odocwiki_index"@ @@<<a_api text="CoerceTo"| module Dom_html.CoerceTo >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="CoerceTo"| module Dom.CoerceTo >> ~[<<a_api | module Dom >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="Color"| module CSS.Color >> ~[<<a_api | module CSS >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="Convert"| module Deriving_Json.Convert >> ~[<<a_api | module Deriving_Json >>~]|<<div class="odocwiki_info"|~Generate a ~J~S~O~N class from a ~Converter
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api text="Current"| module Url.Current >> ~[<<a_api | module Url >>~]|<<div class="odocwiki_info"|~This module can be used to handle the ~Url associated to the current
     document~.
 >>
@@ -124,6 +127,9 @@
 |
 |@@ @style="tet-align: left;"@@\\P|
 |@@class="odocwiki_index"@ @@<<a_api text="Pa_deriving_Json"| module Pa_deriving_Json >> |<<div class="odocwiki_info"|~Deriving~_json syntax extension ~(based on the //deriving// library~)~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="Ppx_js"| module Ppx_js >> |<<div class="odocwiki_info"|~Ppx syntax extension for ~Js~_of~_ocaml~.
 >>
 |
 |@@ @style="tet-align: left;"@@\\R|

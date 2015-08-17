@@ -1579,19 +1579,19 @@
      (2);
     function _ao_(sx_a_,sy_b_,init_c_)
      {var
-        /*<<array.ml 39 2>>*/ res_e_=
-         /*<<array.ml 39 2>>*/ caml_make_vect_Q_(sx_a_,[0]),
-        /*<<array.ml 40 2>>*/ _f_=sx_a_-1|0,
-        /*<<array.ml 39 2>>*/ _g_=0;
-       /*<<array.ml 40 2>>*/ if(!(_f_<0))
+        /*<<array.ml 43 2>>*/ res_e_=
+         /*<<array.ml 43 2>>*/ caml_make_vect_Q_(sx_a_,[0]),
+        /*<<array.ml 44 2>>*/ _f_=sx_a_-1|0,
+        /*<<array.ml 43 2>>*/ _g_=0;
+       /*<<array.ml 44 2>>*/ if(!(_f_<0))
        {var x_d_=_g_;
-         /*<<array.ml 41 4>>*/ for(;;)
-         { /*<<array.ml 41 37>>*/ res_e_[x_d_+1]=
-           /*<<array.ml 41 21>>*/ caml_make_vect_Q_(sy_b_,init_c_);
-           /*<<array.ml 41 37>>*/ var _h_=x_d_+1|0;
+         /*<<array.ml 45 4>>*/ for(;;)
+         { /*<<array.ml 45 37>>*/ res_e_[x_d_+1]=
+           /*<<array.ml 45 21>>*/ caml_make_vect_Q_(sy_b_,init_c_);
+           /*<<array.ml 45 37>>*/ var _h_=x_d_+1|0;
           if(_f_!==x_d_){var x_d_=_h_;continue}
           break}}
-       /*<<array.ml 43 2>>*/ return res_e_ /*<<array.ml 43 5>>*/ }
+       /*<<array.ml 47 2>>*/ return res_e_ /*<<array.ml 47 5>>*/ }
     caml_set_oo_id_w_([num_248_a_,_bn_,0]);
     function _aq_(l_a_)
      {var l1_b_=l_a_,l2_c_=0;
@@ -2522,20 +2522,20 @@
                      /*<<minesweeper.ml 225 32>>*/ var
                      l_I_=
                        /*<<minesweeper.ml 225 32>>*/ _aq_(imgs___[1]);
-                     /*<<array.ml 109 14>>*/ if(l_I_)
+                     /*<<array.ml 113 14>>*/ if(l_I_)
                      {var accu_L_=0,param_K_=l_I_,tl_aJ_=l_I_[2],hd_aK_=l_I_[1];
                       for(;;)
                        {if(param_K_)
                          {var accu_L_=accu_L_+1|0,param_K_=param_K_[2];continue}
                         var
-                          /*<<array.ml 112 38>>*/ a_aa_=
-                           /*<<array.ml 112 38>>*/ caml_make_vect_Q_(accu_L_,hd_aK_),
+                          /*<<array.ml 116 38>>*/ a_aa_=
+                           /*<<array.ml 116 38>>*/ caml_make_vect_Q_(accu_L_,hd_aK_),
                          i_M_=1,
                          param_A_=tl_aJ_;
                         for(;;)
                          {if(param_A_)
                            {var tl_aL_=param_A_[2];
-                             /*<<array.ml 115 39>>*/ a_aa_[i_M_+1]=param_A_[1];
+                             /*<<array.ml 119 39>>*/ a_aa_[i_M_+1]=param_A_[1];
                             var i_M_=i_M_+1|0,param_A_=tl_aL_;
                             continue}
                           var _aF_=a_aa_;

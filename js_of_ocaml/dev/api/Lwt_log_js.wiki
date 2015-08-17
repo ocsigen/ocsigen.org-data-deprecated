@@ -6,6 +6,8 @@
 
 ~Lwt logger for js~_of~_ocaml
 
+~Lwt logger for js~_of~_ocaml
+
 
 ==@@id="2_Predefinedlogger"@@~Predefined logger==
 
