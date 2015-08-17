@@ -155,6 +155,8 @@
                                                    Dom.node Js.t ->
                                                    Dom.DocumentPosition.t
                                                    Js.meth
+                                                 method cssText :
+                                                   Js.js_string Js.t Js.prop
                                                  method dir :
                                                    Js.js_string Js.t Js.prop
                                                  method disable :
@@ -454,6 +456,8 @@
                                                    Dom.node Js.t ->
                                                    Dom.DocumentPosition.t
                                                    Js.meth
+                                                 method cssText :
+                                                   Js.js_string Js.t Js.prop
                                                  method dir :
                                                    Js.js_string Js.t Js.prop
                                                  method disable :
@@ -753,6 +757,8 @@
                                                    Dom.node Js.t ->
                                                    Dom.DocumentPosition.t
                                                    Js.meth
+                                                 method cssText :
+                                                   Js.js_string Js.t Js.prop
                                                  method dir :
                                                    Js.js_string Js.t Js.prop
                                                  method disable :
@@ -1113,6 +1119,8 @@
                                              method compareDocumentPosition :
                                                Dom.node Js.t ->
                                                Dom.DocumentPosition.t Js.meth
+                                             method cssText :
+                                               Js.js_string Js.t Js.prop
                                              method dir :
                                                Js.js_string Js.t Js.prop
                                              method disable : unit Js.meth
@@ -1487,6 +1495,7 @@
                         method cloneNode : bool Js.t -> Dom.node Js.t Js.meth
                         method compareDocumentPosition :
                           Dom.node Js.t -> Dom.DocumentPosition.t Js.meth
+                        method cssText : Js.js_string Js.t Js.prop
                         method dir : Js.js_string Js.t Js.prop
                         method firstChild : Dom.node Js.t Js.opt Js.prop
                         method getAttribute :
@@ -1659,6 +1668,7 @@
                         method cloneNode : bool Js.t -> Dom.node Js.t Js.meth
                         method compareDocumentPosition :
                           Dom.node Js.t -> Dom.DocumentPosition.t Js.meth
+                        method cssText : Js.js_string Js.t Js.prop
                         method dir : Js.js_string Js.t Js.prop
                         method firstChild : Dom.node Js.t Js.opt Js.prop
                         method getAttribute :
@@ -1925,6 +1935,7 @@
                     method cloneNode : bool Js.t -> Dom.node Js.t Js.meth
                     method compareDocumentPosition :
                       Dom.node Js.t -> Dom.DocumentPosition.t Js.meth
+                    method cssText : Js.js_string Js.t Js.prop
                     method dir : Js.js_string Js.t Js.prop
                     method disable : unit Js.meth
                     method enable : unit Js.meth
@@ -2090,6 +2101,7 @@
                     method cloneNode : bool Js.t -> Dom.node Js.t Js.meth
                     method compareDocumentPosition :
                       Dom.node Js.t -> Dom.DocumentPosition.t Js.meth
+                    method cssText : Js.js_string Js.t Js.prop
                     method dir : Js.js_string Js.t Js.prop
                     method disable : unit Js.meth
                     method enable : unit Js.meth
@@ -2255,6 +2267,7 @@
                     method cloneNode : bool Js.t -> Dom.node Js.t Js.meth
                     method compareDocumentPosition :
                       Dom.node Js.t -> Dom.DocumentPosition.t Js.meth
+                    method cssText : Js.js_string Js.t Js.prop
                     method dir : Js.js_string Js.t Js.prop
                     method disable : unit Js.meth
                     method enable : unit Js.meth
@@ -2496,6 +2509,7 @@
                     method cloneNode : bool Js.t -> Dom.node Js.t Js.meth
                     method compareDocumentPosition :
                       Dom.node Js.t -> Dom.DocumentPosition.t Js.meth
+                    method cssText : Js.js_string Js.t Js.prop
                     method dir : Js.js_string Js.t Js.prop
                     method firstChild : Dom.node Js.t Js.opt Js.prop
                     method getActive :
@@ -2675,6 +2689,7 @@
                 method cloneNode : bool Js.t -> Dom.node Js.t Js.meth
                 method compareDocumentPosition :
                   Dom.node Js.t -> Dom.DocumentPosition.t Js.meth
+                method cssText : Js.js_string Js.t Js.prop
                 method dir : Js.js_string Js.t Js.prop
                 method disable : unit Js.meth
                 method enable : unit Js.meth
@@ -2848,6 +2863,7 @@
             method compareDocumentPosition :
               Dom.node Js.t -> Dom.DocumentPosition.t Js.meth
             method confirm : unit Lwt.t Js.meth
+            method cssText : Js.js_string Js.t Js.prop
             method dir : Js.js_string Js.t Js.prop
             method disable : unit Js.meth
             method enable : unit Js.meth
