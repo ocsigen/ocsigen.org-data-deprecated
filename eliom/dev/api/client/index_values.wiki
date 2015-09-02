@@ -333,6 +333,7 @@
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="create_shared_value"| value Eliom_csreact.Eliom_lib.create_shared_value >> ~[<<a_api subproject="client" | module Eliom_csreact.Eliom_lib >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="create_shared_value"| value Eliom_lib.create_shared_value >> ~[<<a_api subproject="client" | module Eliom_lib >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="cssFloat"| value Eliom_content.Html5.Manip.SetCss.cssFloat >> ~[<<a_api subproject="client" | module Eliom_content.Html5.Manip.SetCss >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="cssFloat"| value Eliom_content.Html5.Manip.Css.cssFloat >> ~[<<a_api subproject="client" | module Eliom_content.Html5.Manip.Css >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="cssText"| value Eliom_content.Html5.Manip.SetCss.cssText >> ~[<<a_api subproject="client" | module Eliom_content.Html5.Manip.SetCss >>~]||
