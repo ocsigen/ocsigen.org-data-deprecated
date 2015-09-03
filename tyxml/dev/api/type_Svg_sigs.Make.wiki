@@ -7,14 +7,15 @@
             module W :
               sig
                 type 'a t = 'a Xml.W.t
-                type 'a tlist = 'a Xml.W.tlist
                 val return : 'a -> 'a t
-                val fmap : ('a -> 'b) -> 'a t -> 'b t
+                type (-'a, 'b) ft
+                val fmap : ('a, 'b) ft -> 'a t -> 'b t
+                type 'a tlist = 'a Xml.W.tlist
                 val nil : unit -> 'a tlist
                 val singleton : 'a t -> 'a tlist
                 val cons : 'a t -> 'a tlist -> 'a tlist
                 val append : 'a tlist -> 'a tlist -> 'a tlist
-                val map : ('a -> 'b) -> 'a tlist -> 'b tlist
+                val map : ('a, 'b) ft -> 'a tlist -> 'b tlist
               end
             type 'a wrap = 'a W.t
             type 'a list_wrap = 'a W.tlist

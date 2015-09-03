@@ -5209,4 +5209,138 @@
       | `Xml_lang
       | `Xml_space
       | `Y ]
+  type alignment_baseline =
+      [ `After_edge
+      | `Alphabetic
+      | `Auto
+      | `Baseline
+      | `Before_edge
+      | `Central
+      | `Hanging
+      | `Ideographic
+      | `Inherit
+      | `Mathematical
+      | `Middle
+      | `Text_after_edge
+      | `Text_before_edge ]
+  type dominant_baseline =
+      [ `Alphabetic
+      | `Auto
+      | `Central
+      | `Hanging
+      | `Ideographic
+      | `Inherit
+      | `Mathematical
+      | `Middle
+      | `No_change
+      | `Reset_size
+      | `Text_after_edge
+      | `Text_before_edge
+      | `Use_script ]
+  type in_value =
+      [ `BackgroundAlpha
+      | `BackgroundImage
+      | `FillPaint
+      | `Ref of string
+      | `SourceAlpha
+      | `SourceGraphic
+      | `StrokePaint ]
+  type offset = [ `Number of float | `Percentage of int ]
+  type orient = [ `Angle of Svg_types.Unit.angle | `Auto ]
+  type big_variant =
+      [ `A
+      | `Absolute_colorimetric
+      | `Align
+      | `Always
+      | `Arithmetic
+      | `Atop
+      | `Auto
+      | `B
+      | `Bever
+      | `Blink
+      | `Butt
+      | `CSS
+      | `Darken
+      | `Default
+      | `Dilate
+      | `Disable
+      | `Discrete
+      | `Duplicate
+      | `End
+      | `Erode
+      | `Exact
+      | `FractalNoise
+      | `Freeze
+      | `G
+      | `Gamma
+      | `GeometricPrecision
+      | `H
+      | `HueRotate
+      | `Identity
+      | `In
+      | `Inherit
+      | `Initial
+      | `Isolated
+      | `Lighten
+      | `Line_through
+      | `Linear
+      | `LuminanceToAlpha
+      | `Magnify
+      | `Matrix
+      | `Medial
+      | `Middle
+      | `Miter
+      | `Multiply
+      | `Never
+      | `New
+      | `NoStitch
+      | `None
+      | `Normal
+      | `ObjectBoundingBox
+      | `OnLoad
+      | `OnRequest
+      | `OptimizeLegibility
+      | `OptimizeSpeed
+      | `Other
+      | `Out
+      | `Over
+      | `Overline
+      | `Paced
+      | `Pad
+      | `Perceptual
+      | `Preserve
+      | `R
+      | `Reflect
+      | `Relative_colorimetric
+      | `Remove
+      | `Repeat
+      | `Replace
+      | `Rotate
+      | `Round
+      | `Saturate
+      | `Saturation
+      | `Scale
+      | `Screen
+      | `SkewX
+      | `SkewY
+      | `Spacing
+      | `SpacingAndGlyphs
+      | `Spline
+      | `Square
+      | `Start
+      | `Stitch
+      | `Stretch
+      | `StrokeWidth
+      | `Sum
+      | `Table
+      | `Terminal
+      | `Translate
+      | `Turbulence
+      | `Underline
+      | `UserSpaceOnUse
+      | `V
+      | `WhenNotActive
+      | `Wrap
+      | `XML
+      | `Xor ]
 end >>

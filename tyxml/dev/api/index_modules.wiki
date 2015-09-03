@@ -44,6 +44,8 @@
 |@@class="odocwiki_index"@ @@<<a_api text="Make_simple"| module Xml_print.Make_simple >> ~[<<a_api | module Xml_print >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="Make_typed"| module Xml_print.Make_typed >> ~[<<a_api | module Xml_print >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="Make_typed_simple"| module Xml_print.Make_typed_simple >> ~[<<a_api | module Xml_print >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="Make_with_wrapped_functions"| module Html5_f.Make_with_wrapped_functions >> ~[<<a_api | module Html5_f >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="Make_with_wrapped_functions"| module Svg_f.Make_with_wrapped_functions >> ~[<<a_api | module Svg_f >>~]||
 |@@ @style="tet-align: left;"@@\\N|
 |@@class="odocwiki_index"@ @@<<a_api text="NoWrap"| module Xml_wrap.NoWrap >> ~[<<a_api | module Xml_wrap >>~]||
 |@@ @style="tet-align: left;"@@\\P|
@@ -85,6 +87,8 @@
 |@@ @style="tet-align: left;"@@\\W|
 |@@class="odocwiki_index"@ @@<<a_api text="W"| module Xml_sigs.T.W >> ~[<<a_api | module Xml_sigs.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="W"| module Xml.W >> ~[<<a_api | module Xml >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="Wrapped_functions"| module Html5_f.Wrapped_functions >> ~[<<a_api | module Html5_f >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="Wrapped_functions"| module Svg_f.Wrapped_functions >> ~[<<a_api | module Svg_f >>~]||
 |@@ @style="tet-align: left;"@@\\X|
 |@@class="odocwiki_index"@ @@<<a_api text="Xml"| module Html5_sigs.T.Xml >> ~[<<a_api | module Html5_sigs.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="Xml"| module Svg_sigs.T.Xml >> ~[<<a_api | module Svg_sigs.T >>~]||

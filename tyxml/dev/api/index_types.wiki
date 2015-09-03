@@ -19,6 +19,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="address_attrib"| type Html5_types.address_attrib >> ~[<<a_api | module Html5_types >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="address_content"| type Html5_types.address_content >> ~[<<a_api | module Html5_types >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="address_content_fun"| type Html5_types.address_content_fun >> ~[<<a_api | module Html5_types >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="alignment_baseline"| type Svg_types.alignment_baseline >> ~[<<a_api | module Svg_types >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="altglyph"| type Svg_types.altglyph >> ~[<<a_api | module Svg_types >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="altglyph_attr"| type Svg_types.altglyph_attr >> ~[<<a_api | module Svg_types >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="altglyph_content"| type Svg_types.altglyph_content >> ~[<<a_api | module Svg_types >>~]||
@@ -88,6 +89,8 @@
 |@@class="odocwiki_index"@ @@<<a_api text="between_flow5_and_flow5_without_header_footer"| type Html5_types.between_flow5_and_flow5_without_header_footer >> ~[<<a_api | module Html5_types >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="between_flow5_and_flow5_without_interactive_header_footer"| type Html5_types.between_flow5_and_flow5_without_interactive_header_footer >> ~[<<a_api | module Html5_types >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="between_phrasing_and_phrasing_without_interactive"| type Html5_types.between_phrasing_and_phrasing_without_interactive >> ~[<<a_api | module Html5_types >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="big_variant"| type Html5_types.big_variant >> ~[<<a_api | module Html5_types >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="big_variant"| type Svg_types.big_variant >> ~[<<a_api | module Svg_types >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="blockquote"| type Html5_types.blockquote >> ~[<<a_api | module Html5_types >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="blockquote_attrib"| type Html5_types.blockquote_attrib >> ~[<<a_api | module Html5_types >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="blockquote_content"| type Html5_types.blockquote_content >> ~[<<a_api | module Html5_types >>~]||
@@ -238,6 +241,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="doc"| type Xml_sigs.Typed_printer.doc >> ~[<<a_api | module Xml_sigs.Typed_printer >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="doc"| type Xml_sigs.Typed_simple_printer.doc >> ~[<<a_api | module Xml_sigs.Typed_simple_printer >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="document_event_attr"| type Svg_types.document_event_attr >> ~[<<a_api | module Svg_types >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="dominant_baseline"| type Svg_types.dominant_baseline >> ~[<<a_api | module Svg_types >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="dt"| type Html5_types.dt >> ~[<<a_api | module Html5_types >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="dt_attrib"| type Html5_types.dt_attrib >> ~[<<a_api | module Html5_types >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="dt_content"| type Html5_types.dt_content >> ~[<<a_api | module Html5_types >>~]||
@@ -404,6 +408,9 @@
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="frequency"| type Svg_types.Unit.frequency >> ~[<<a_api | module Svg_types.Unit >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="ft"| type Html5_sigs.Wrapped_functions.ft >> ~[<<a_api | module Html5_sigs.Wrapped_functions >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="ft"| type Svg_sigs.Wrapped_functions.ft >> ~[<<a_api | module Svg_sigs.Wrapped_functions >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="ft"| type Xml_wrap.T.ft >> ~[<<a_api | module Xml_wrap.T >>~]||
 |@@ @style="tet-align: left;"@@\\G|
 |@@class="odocwiki_index"@ @@<<a_api text="g"| type Svg_types.g >> ~[<<a_api | module Svg_types >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="g_attr"| type Svg_types.g_attr >> ~[<<a_api | module Svg_types >>~]||
@@ -499,10 +506,12 @@
 |@@class="odocwiki_index"@ @@<<a_api text="img_content"| type Html5_types.img_content >> ~[<<a_api | module Html5_types >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="img_content_fun"| type Html5_types.img_content_fun >> ~[<<a_api | module Html5_types >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="img_interactive"| type Html5_types.img_interactive >> ~[<<a_api | module Html5_types >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="in_value"| type Svg_types.in_value >> ~[<<a_api | module Svg_types >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="input"| type Html5_types.input >> ~[<<a_api | module Html5_types >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="input_attrib"| type Html5_types.input_attrib >> ~[<<a_api | module Html5_types >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="input_content"| type Html5_types.input_content >> ~[<<a_api | module Html5_types >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="input_content_fun"| type Html5_types.input_content_fun >> ~[<<a_api | module Html5_types >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="input_type"| type Html5_types.input_type >> ~[<<a_api | module Html5_types >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="ins"| type Html5_types.ins >> ~[<<a_api | module Html5_types >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="ins_"| type Html5_types.ins_ >> ~[<<a_api | module Html5_types >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="ins_attrib"| type Html5_types.ins_attrib >> ~[<<a_api | module Html5_types >>~]||
@@ -560,6 +569,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="link_attrib"| type Html5_types.link_attrib >> ~[<<a_api | module Html5_types >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="link_content"| type Html5_types.link_content >> ~[<<a_api | module Html5_types >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="link_content_fun"| type Html5_types.link_content_fun >> ~[<<a_api | module Html5_types >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="linktype"| type Html5_types.linktype >> ~[<<a_api | module Html5_types >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="linktypes"| type Html5_types.linktypes >> ~[<<a_api | module Html5_types >>~]|<<div class="odocwiki_info"|~Authors may use the following recognized link types~, listed here with
         their conventional interpretations~.
 >>
@@ -587,9 +597,8 @@
 |@@class="odocwiki_index"@ @@<<a_api text="mask_attr"| type Svg_types.mask_attr >> ~[<<a_api | module Svg_types >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="mask_content"| type Svg_types.mask_content >> ~[<<a_api | module Svg_types >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="media_attrib"| type Html5_types.media_attrib >> ~[<<a_api | module Html5_types >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="mediadesc"| type Html5_types.mediadesc >> ~[<<a_api | module Html5_types >>~]|<<div class="odocwiki_info"|~The ~Media~Desc attribute is a comma~-separated list of media descriptors~.
->>
-|
+|@@class="odocwiki_index"@ @@<<a_api text="mediadesc"| type Html5_types.mediadesc >> ~[<<a_api | module Html5_types >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="mediadesc_token"| type Html5_types.mediadesc_token >> ~[<<a_api | module Html5_types >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="menu"| type Html5_types.menu >> ~[<<a_api | module Html5_types >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="menu_attrib"| type Html5_types.menu_attrib >> ~[<<a_api | module Html5_types >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="menu_content"| type Html5_types.menu_content >> ~[<<a_api | module Html5_types >>~]||
@@ -659,6 +668,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="object__attrib"| type Html5_types.object__attrib >> ~[<<a_api | module Html5_types >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="object__content"| type Html5_types.object__content >> ~[<<a_api | module Html5_types >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="object__content_fun"| type Html5_types.object__content_fun >> ~[<<a_api | module Html5_types >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="offset"| type Svg_types.offset >> ~[<<a_api | module Svg_types >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="ol"| type Html5_types.ol >> ~[<<a_api | module Html5_types >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="ol_attrib"| type Html5_types.ol_attrib >> ~[<<a_api | module Html5_types >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="ol_content"| type Html5_types.ol_content >> ~[<<a_api | module Html5_types >>~]||
@@ -670,6 +680,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="option_attrib"| type Html5_types.option_attrib >> ~[<<a_api | module Html5_types >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="option_content"| type Html5_types.option_content >> ~[<<a_api | module Html5_types >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="option_content_fun"| type Html5_types.option_content_fun >> ~[<<a_api | module Html5_types >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="orient"| type Svg_types.orient >> ~[<<a_api | module Svg_types >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="out"| type Xml_sigs.Printer.out >> ~[<<a_api | module Xml_sigs.Printer >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="out"| type Xml_sigs.Output.out >> ~[<<a_api | module Xml_sigs.Output >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="out"| type Xml_sigs.Typed_printer.out >> ~[<<a_api | module Xml_sigs.Typed_printer >>~]||
@@ -759,6 +770,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="samp_attrib"| type Html5_types.samp_attrib >> ~[<<a_api | module Html5_types >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="samp_content"| type Html5_types.samp_content >> ~[<<a_api | module Html5_types >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="samp_content_fun"| type Html5_types.samp_content_fun >> ~[<<a_api | module Html5_types >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="sandbox_token"| type Html5_types.sandbox_token >> ~[<<a_api | module Html5_types >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="script"| type Html5_types.script >> ~[<<a_api | module Html5_types >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="script"| type Svg_types.script >> ~[<<a_api | module Svg_types >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="script_"| type Html5_types.script_ >> ~[<<a_api | module Html5_types >>~]|<<div class="odocwiki_info"|~Script data can be the content of the <<span class="odocwiki_inlinecode"|"script">> element and the
@@ -788,6 +800,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="set_content"| type Svg_types.set_content >> ~[<<a_api | module Svg_types >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="shape"| type Html5_sigs.T.shape >> ~[<<a_api | module Html5_sigs.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="shape_element"| type Svg_types.shape_element >> ~[<<a_api | module Svg_types >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="sizes"| type Html5_types.sizes >> ~[<<a_api | module Html5_types >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="small"| type Html5_types.small >> ~[<<a_api | module Html5_types >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="small_attrib"| type Html5_types.small_attrib >> ~[<<a_api | module Html5_types >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="small_content"| type Html5_types.small_content >> ~[<<a_api | module Html5_types >>~]||

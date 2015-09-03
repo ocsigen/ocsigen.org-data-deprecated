@@ -29,4 +29,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="Typed_printer"| module type Xml_sigs.Typed_printer >> ~[<<a_api | module Xml_sigs >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="Typed_simple_printer"| module type Xml_sigs.Typed_simple_printer >> ~[<<a_api | module Xml_sigs >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="Typed_xml"| module type Xml_sigs.Typed_xml >> ~[<<a_api | module Xml_sigs >>~]||
+|@@ @style="tet-align: left;"@@\\W|
+|@@class="odocwiki_index"@ @@<<a_api text="Wrapped_functions"| module type Html5_sigs.Wrapped_functions >> ~[<<a_api | module Html5_sigs >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="Wrapped_functions"| module type Svg_sigs.Wrapped_functions >> ~[<<a_api | module Svg_sigs >>~]||
 \\

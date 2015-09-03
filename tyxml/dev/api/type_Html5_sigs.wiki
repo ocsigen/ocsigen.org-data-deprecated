@@ -2543,14 +2543,15 @@
           module W :
             sig
               type 'a t = 'a
-              type 'a tlist = 'a list
               val return : 'a -> 'a t
-              val fmap : ('a -> 'b) -> 'a t -> 'b t
+              type ('a, 'b) ft = 'a -> 'b
+              val fmap : ('a, 'b) ft -> 'a t -> 'b t
+              type 'a tlist = 'a list
               val nil : unit -> 'a tlist
               val singleton : 'a t -> 'a tlist
               val cons : 'a t -> 'a tlist -> 'a tlist
               val append : 'a tlist -> 'a tlist -> 'a tlist
-              val map : ('a -> 'b) -> 'a tlist -> 'b tlist
+              val map : ('a, 'b) ft -> 'a tlist -> 'b tlist
             end
           type 'a wrap = 'a W.t
           type 'a list_wrap = 'a W.tlist
@@ -4817,6 +4818,41 @@
           val comma_sep_attrib : string -> string list wrap -> 'a attrib
         end
     end
+  module type Wrapped_functions =
+    sig
+      type (-'a, 'b) ft
+      val string_of_big_variant :
+        ([< Html5_types.big_variant ], string)
+        Html5_sigs.Wrapped_functions.ft
+      val string_of_bool : (bool, string) Html5_sigs.Wrapped_functions.ft
+      val string_of_character :
+        (Html5_types.character, string) Html5_sigs.Wrapped_functions.ft
+      val string_of_input_type :
+        ([< Html5_types.input_type ], string) Html5_sigs.Wrapped_functions.ft
+      val string_of_linktypes :
+        ([< Html5_types.linktype ] list, string)
+        Html5_sigs.Wrapped_functions.ft
+      val string_of_mediadesc :
+        ([< Html5_types.mediadesc_token ] list, string)
+        Html5_sigs.Wrapped_functions.ft
+      val string_of_multilength :
+        ([< Html5_types.multilength ], string)
+        Html5_sigs.Wrapped_functions.ft
+      val string_of_multilengths :
+        ([< Html5_types.multilength ] list, string)
+        Html5_sigs.Wrapped_functions.ft
+      val string_of_numbers :
+        (Html5_types.numbers, string) Html5_sigs.Wrapped_functions.ft
+      val string_of_sandbox :
+        ([< Html5_types.sandbox_token ] list, string)
+        Html5_sigs.Wrapped_functions.ft
+      val string_of_sizes :
+        ([< Html5_types.sizes ], string) Html5_sigs.Wrapped_functions.ft
+      val string_of_step :
+        (float option, string) Html5_sigs.Wrapped_functions.ft
+      val unoption_string :
+        (string option, string) Html5_sigs.Wrapped_functions.ft
+    end
   module Make :
     functor
       (Xml : Xml_sigs.T) (Svg : sig
@@ -5945,14 +5981,15 @@
                 module W :
                   sig
                     type 'a t = 'a Xml.W.t
-                    type 'a tlist = 'a Xml.W.tlist
                     val return : 'a -> 'a t
-                    val fmap : ('a -> 'b) -> 'a t -> 'b t
+                    type (-'a, 'b) ft
+                    val fmap : ('a, 'b) ft -> 'a t -> 'b t
+                    type 'a tlist = 'a Xml.W.tlist
                     val nil : unit -> 'a tlist
                     val singleton : 'a t -> 'a tlist
                     val cons : 'a t -> 'a tlist -> 'a tlist
                     val append : 'a tlist -> 'a tlist -> 'a tlist
-                    val map : ('a -> 'b) -> 'a tlist -> 'b tlist
+                    val map : ('a, 'b) ft -> 'a tlist -> 'b tlist
                   end
                 type 'a wrap = 'a W.t
                 type 'a list_wrap = 'a W.tlist
