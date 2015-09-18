@@ -175,6 +175,7 @@
 >>
 |
 |@@ @style="tet-align: left;"@@\\X|
+|@@class="odocwiki_index"@ @@<<a_api text="Xml"| module Tyxml_js.R.Xml >> ~[<<a_api | module Tyxml_js.R >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="Xml"| module Tyxml_js.Xml >> ~[<<a_api | module Tyxml_js >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="XmlHttpRequest"| module XmlHttpRequest >> |<<div class="odocwiki_info"|~Xml~Http~Request object~.
 >>

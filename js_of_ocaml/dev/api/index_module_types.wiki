@@ -18,4 +18,6 @@
 |
 |@@ @style="tet-align: left;"@@\\T|
 |@@class="odocwiki_index"@ @@<<a_api text="TO"| module type Tyxml_cast_sigs.TO >> ~[<<a_api | module Tyxml_cast_sigs >>~]||
+|@@ @style="tet-align: left;"@@\\X|
+|@@class="odocwiki_index"@ @@<<a_api text="XML"| module type Tyxml_js.XML >> ~[<<a_api | module Tyxml_js >>~]||
 \\
