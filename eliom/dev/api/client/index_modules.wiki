@@ -259,9 +259,12 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Unsafe"| module Eliom_service.Unsafe >> ~[<<a_api subproject="client" | module Eliom_service >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Up"| module Eliom_react.Up >> ~[<<a_api subproject="client" | module Eliom_react >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Url"| module Eliom_lib.Url >> ~[<<a_api subproject="client" | module Eliom_lib >>~]||
+|@@ @style="tet-align: left;"@@\\W|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="W"| module Eliom_content_core.Xml.W >> ~[<<a_api subproject="client" | module Eliom_content_core.Xml >>~]||
 |@@ @style="tet-align: left;"@@\\X|
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Xml"| module Eliom_content_core.Xml >> ~[<<a_api subproject="client" | module Eliom_content_core >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Xml"| module Eliom_content.Xml >> ~[<<a_api subproject="client" | module Eliom_content >>~]|<<div class="odocwiki_info"|~Low~-level ~X~M~L manipulation~.
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Xml_wed"| module Eliom_content_core.Xml_wed >> ~[<<a_api subproject="client" | module Eliom_content_core >>~]||
 \\

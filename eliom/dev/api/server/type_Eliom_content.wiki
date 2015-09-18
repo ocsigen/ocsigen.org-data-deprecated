@@ -546,6 +546,19 @@
     end
   module Xml :
     sig
+      module W :
+        sig
+          type 'a t = 'a
+          val return : 'a -> 'a t
+          type ('a, 'b) ft = 'a -> 'b
+          val fmap : ('a, 'b) ft -> 'a t -> 'b t
+          type 'a tlist = 'a list
+          val nil : unit -> 'a tlist
+          val singleton : 'a t -> 'a tlist
+          val cons : 'a t -> 'a tlist -> 'a tlist
+          val append : 'a tlist -> 'a tlist -> 'a tlist
+          val map : ('a, 'b) ft -> 'a tlist -> 'b tlist
+        end
       type 'a wrap = 'a
       type 'a list_wrap = 'a list
       type uri
@@ -669,8 +682,21 @@
             sig
               module Xml :
                 sig
-                  type 'a wrap = 'a Xml_wrap.NoWrap.t
-                  type 'a list_wrap = 'a Xml_wrap.NoWrap.tlist
+                  module W :
+                    sig
+                      type 'a t = 'a Xml.W.t
+                      val return : 'a -> 'a t
+                      type (-'a, 'b) ft
+                      val fmap : ('a, 'b) ft -> 'a t -> 'b t
+                      type 'a tlist = 'a Xml.W.tlist
+                      val nil : unit -> 'a tlist
+                      val singleton : 'a t -> 'a tlist
+                      val cons : 'a t -> 'a tlist -> 'a tlist
+                      val append : 'a tlist -> 'a tlist -> 'a tlist
+                      val map : ('a, 'b) ft -> 'a tlist -> 'b tlist
+                    end
+                  type 'a wrap = 'a W.t
+                  type 'a list_wrap = 'a W.tlist
                   type uri = Xml.uri
                   val string_of_uri : uri -> string
                   val uri_of_string : string -> uri
@@ -709,8 +735,8 @@
               val string_of_uri : uri -> string
               val uri_of_string : string -> uri
               type 'a attrib = 'a attrib
-              type 'a wrap = 'a Xml_wrap.NoWrap.t
-              type 'a list_wrap = 'a Xml_wrap.NoWrap.tlist
+              type 'a wrap = 'a Xml.W.t
+              type 'a list_wrap = 'a Xml.W.tlist
               type 'a elt = 'a elt
               type ('a, 'b) nullary = ?a:'a attrib list -> unit -> 'b elt
               type ('a, 'b, 'c) unary =
@@ -1508,8 +1534,21 @@
             end
           module Xml :
             sig
-              type 'a wrap = 'a Xml_wrap.NoWrap.t
-              type 'a list_wrap = 'a Xml_wrap.NoWrap.tlist
+              module W :
+                sig
+                  type 'a t = 'a Xml.W.t
+                  val return : 'a -> 'a t
+                  type (-'a, 'b) ft
+                  val fmap : ('a, 'b) ft -> 'a t -> 'b t
+                  type 'a tlist = 'a Xml.W.tlist
+                  val nil : unit -> 'a tlist
+                  val singleton : 'a t -> 'a tlist
+                  val cons : 'a t -> 'a tlist -> 'a tlist
+                  val append : 'a tlist -> 'a tlist -> 'a tlist
+                  val map : ('a, 'b) ft -> 'a tlist -> 'b tlist
+                end
+              type 'a wrap = 'a W.t
+              type 'a list_wrap = 'a W.tlist
               type uri = Xml.uri
               val string_of_uri : uri -> string
               val uri_of_string : string -> uri
@@ -1548,8 +1587,8 @@
           val string_of_uri : uri -> string
           val uri_of_string : string -> uri
           type 'a attrib = 'a attrib
-          type 'a wrap = 'a Xml_wrap.NoWrap.t
-          type 'a list_wrap = 'a Xml_wrap.NoWrap.tlist
+          type 'a wrap = 'a Xml.W.t
+          type 'a list_wrap = 'a Xml.W.tlist
           type 'a elt = 'a elt
           type ('a, 'b) nullary = ?a:'a attrib list -> unit -> 'b elt
           type ('a, 'b, 'c) unary =
@@ -2322,8 +2361,21 @@
             sig
               module Xml :
                 sig
-                  type 'a wrap = 'a Xml_wrap.NoWrap.t
-                  type 'a list_wrap = 'a Xml_wrap.NoWrap.tlist
+                  module W :
+                    sig
+                      type 'a t = 'a Xml.W.t
+                      val return : 'a -> 'a t
+                      type (-'a, 'b) ft
+                      val fmap : ('a, 'b) ft -> 'a t -> 'b t
+                      type 'a tlist = 'a Xml.W.tlist
+                      val nil : unit -> 'a tlist
+                      val singleton : 'a t -> 'a tlist
+                      val cons : 'a t -> 'a tlist -> 'a tlist
+                      val append : 'a tlist -> 'a tlist -> 'a tlist
+                      val map : ('a, 'b) ft -> 'a tlist -> 'b tlist
+                    end
+                  type 'a wrap = 'a W.t
+                  type 'a list_wrap = 'a W.tlist
                   type uri = Xml.uri
                   val string_of_uri : uri -> string
                   val uri_of_string : string -> uri
@@ -2362,8 +2414,8 @@
               val string_of_uri : uri -> string
               val uri_of_string : string -> uri
               type 'a attrib = 'a attrib
-              type 'a wrap = 'a Xml_wrap.NoWrap.t
-              type 'a list_wrap = 'a Xml_wrap.NoWrap.tlist
+              type 'a wrap = 'a Xml.W.t
+              type 'a list_wrap = 'a Xml.W.tlist
               type 'a elt = 'a elt
               type ('a, 'b) nullary = ?a:'a attrib list -> unit -> 'b elt
               type ('a, 'b, 'c) unary =
@@ -3161,8 +3213,21 @@
             end
           module Xml :
             sig
-              type 'a wrap = 'a Xml_wrap.NoWrap.t
-              type 'a list_wrap = 'a Xml_wrap.NoWrap.tlist
+              module W :
+                sig
+                  type 'a t = 'a Xml.W.t
+                  val return : 'a -> 'a t
+                  type (-'a, 'b) ft
+                  val fmap : ('a, 'b) ft -> 'a t -> 'b t
+                  type 'a tlist = 'a Xml.W.tlist
+                  val nil : unit -> 'a tlist
+                  val singleton : 'a t -> 'a tlist
+                  val cons : 'a t -> 'a tlist -> 'a tlist
+                  val append : 'a tlist -> 'a tlist -> 'a tlist
+                  val map : ('a, 'b) ft -> 'a tlist -> 'b tlist
+                end
+              type 'a wrap = 'a W.t
+              type 'a list_wrap = 'a W.tlist
               type uri = Xml.uri
               val string_of_uri : uri -> string
               val uri_of_string : string -> uri
@@ -3201,8 +3266,8 @@
           val string_of_uri : uri -> string
           val uri_of_string : string -> uri
           type 'a attrib = 'a attrib
-          type 'a wrap = 'a Xml_wrap.NoWrap.t
-          type 'a list_wrap = 'a Xml_wrap.NoWrap.tlist
+          type 'a wrap = 'a Xml.W.t
+          type 'a list_wrap = 'a Xml.W.tlist
           type 'a elt = 'a elt
           type ('a, 'b) nullary = ?a:'a attrib list -> unit -> 'b elt
           type ('a, 'b, 'c) unary =
@@ -4011,8 +4076,21 @@
             sig
               module Xml :
                 sig
-                  type 'a wrap = 'a Xml_wrap.NoWrap.t
-                  type 'a list_wrap = 'a Xml_wrap.NoWrap.tlist
+                  module W :
+                    sig
+                      type 'a t = 'a Xml.W.t
+                      val return : 'a -> 'a t
+                      type (-'a, 'b) ft
+                      val fmap : ('a, 'b) ft -> 'a t -> 'b t
+                      type 'a tlist = 'a Xml.W.tlist
+                      val nil : unit -> 'a tlist
+                      val singleton : 'a t -> 'a tlist
+                      val cons : 'a t -> 'a tlist -> 'a tlist
+                      val append : 'a tlist -> 'a tlist -> 'a tlist
+                      val map : ('a, 'b) ft -> 'a tlist -> 'b tlist
+                    end
+                  type 'a wrap = 'a W.t
+                  type 'a list_wrap = 'a W.tlist
                   type uri = Xml.uri
                   val string_of_uri : uri -> string
                   val uri_of_string : string -> uri
@@ -4047,8 +4125,8 @@
                   val cdata_style : string -> elt
                 end
               module Info : Xml_sigs.Info
-              type 'a wrap = 'a Xml_wrap.NoWrap.t
-              type 'a list_wrap = 'a Xml_wrap.NoWrap.tlist
+              type 'a wrap = 'a Xml.W.t
+              type 'a list_wrap = 'a Xml.W.tlist
               type uri = Xml.uri
               val string_of_uri : uri -> string
               val uri_of_string : string -> uri
@@ -5611,8 +5689,21 @@
             end
           module Xml :
             sig
-              type 'a wrap = 'a Xml_wrap.NoWrap.t
-              type 'a list_wrap = 'a Xml_wrap.NoWrap.tlist
+              module W :
+                sig
+                  type 'a t = 'a Xml.W.t
+                  val return : 'a -> 'a t
+                  type (-'a, 'b) ft
+                  val fmap : ('a, 'b) ft -> 'a t -> 'b t
+                  type 'a tlist = 'a Xml.W.tlist
+                  val nil : unit -> 'a tlist
+                  val singleton : 'a t -> 'a tlist
+                  val cons : 'a t -> 'a tlist -> 'a tlist
+                  val append : 'a tlist -> 'a tlist -> 'a tlist
+                  val map : ('a, 'b) ft -> 'a tlist -> 'b tlist
+                end
+              type 'a wrap = 'a W.t
+              type 'a list_wrap = 'a W.tlist
               type uri = Xml.uri
               val string_of_uri : uri -> string
               val uri_of_string : string -> uri
@@ -5647,8 +5738,8 @@
               val cdata_style : string -> elt
             end
           module Info : Xml_sigs.Info
-          type 'a wrap = 'a Xml_wrap.NoWrap.t
-          type 'a list_wrap = 'a Xml_wrap.NoWrap.tlist
+          type 'a wrap = 'a Xml.W.t
+          type 'a list_wrap = 'a Xml.W.tlist
           type uri = Xml.uri
           val string_of_uri : uri -> string
           type 'a attrib = 'a attrib
@@ -7993,8 +8084,21 @@
             sig
               module Xml :
                 sig
-                  type 'a wrap = 'a Xml_wrap.NoWrap.t
-                  type 'a list_wrap = 'a Xml_wrap.NoWrap.tlist
+                  module W :
+                    sig
+                      type 'a t = 'a Xml.W.t
+                      val return : 'a -> 'a t
+                      type (-'a, 'b) ft
+                      val fmap : ('a, 'b) ft -> 'a t -> 'b t
+                      type 'a tlist = 'a Xml.W.tlist
+                      val nil : unit -> 'a tlist
+                      val singleton : 'a t -> 'a tlist
+                      val cons : 'a t -> 'a tlist -> 'a tlist
+                      val append : 'a tlist -> 'a tlist -> 'a tlist
+                      val map : ('a, 'b) ft -> 'a tlist -> 'b tlist
+                    end
+                  type 'a wrap = 'a W.t
+                  type 'a list_wrap = 'a W.tlist
                   type uri = Xml.uri
                   val string_of_uri : uri -> string
                   val uri_of_string : string -> uri
@@ -8029,8 +8133,8 @@
                   val cdata_style : string -> elt
                 end
               module Info : Xml_sigs.Info
-              type 'a wrap = 'a Xml_wrap.NoWrap.t
-              type 'a list_wrap = 'a Xml_wrap.NoWrap.tlist
+              type 'a wrap = 'a Xml.W.t
+              type 'a list_wrap = 'a Xml.W.tlist
               type uri = Xml.uri
               val string_of_uri : uri -> string
               val uri_of_string : string -> uri
@@ -9593,8 +9697,21 @@
             end
           module Xml :
             sig
-              type 'a wrap = 'a Xml_wrap.NoWrap.t
-              type 'a list_wrap = 'a Xml_wrap.NoWrap.tlist
+              module W :
+                sig
+                  type 'a t = 'a Xml.W.t
+                  val return : 'a -> 'a t
+                  type (-'a, 'b) ft
+                  val fmap : ('a, 'b) ft -> 'a t -> 'b t
+                  type 'a tlist = 'a Xml.W.tlist
+                  val nil : unit -> 'a tlist
+                  val singleton : 'a t -> 'a tlist
+                  val cons : 'a t -> 'a tlist -> 'a tlist
+                  val append : 'a tlist -> 'a tlist -> 'a tlist
+                  val map : ('a, 'b) ft -> 'a tlist -> 'b tlist
+                end
+              type 'a wrap = 'a W.t
+              type 'a list_wrap = 'a W.tlist
               type uri = Xml.uri
               val string_of_uri : uri -> string
               val uri_of_string : string -> uri
@@ -9629,8 +9746,8 @@
               val cdata_style : string -> elt
             end
           module Info : Xml_sigs.Info
-          type 'a wrap = 'a Xml_wrap.NoWrap.t
-          type 'a list_wrap = 'a Xml_wrap.NoWrap.tlist
+          type 'a wrap = 'a Xml.W.t
+          type 'a list_wrap = 'a Xml.W.tlist
           type uri = Xml.uri
           val string_of_uri : uri -> string
           type 'a attrib = 'a attrib
