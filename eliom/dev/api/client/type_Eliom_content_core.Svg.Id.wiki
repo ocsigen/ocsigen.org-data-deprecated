@@ -6,5 +6,8 @@
     'a Eliom_content_core.Svg.elt -> 'a Eliom_content_core.Svg.elt
   val create_global_elt :
     'a Eliom_content_core.Svg.elt -> 'a Eliom_content_core.Svg.elt
+  val create_request_elt :
+    ?reset:bool ->
+    'a Eliom_content_core.Svg.elt -> 'a Eliom_content_core.Svg.elt
   val string_of_id : 'a Eliom_content_core.Svg.Id.id -> string
 end >>

@@ -28,6 +28,9 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="button_type_t"| type Eliom_mkforms.FORMS_PARAM.button_type_t >> ~[<<a_api subproject="client" | module Eliom_mkforms.FORMS_PARAM >>~]||
 |@@ @style="tet-align: left;"@@\\C|
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="caml_event_handler"| type Eliom_content_core.Xml.caml_event_handler >> ~[<<a_api subproject="client" | module Eliom_content_core.Xml >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="chandle"| type Eliom_shared_sigs.RLIST.chandle >> ~[<<a_api subproject="client" | module Eliom_shared_sigs.RLIST >>~]|<<div class="odocwiki_info"|~Client~-side version of ~'a handle
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="client_value"| type Eliom_pervasives.client_value >> ~[<<a_api subproject="client" | module Eliom_pervasives >>~]|<<div class="odocwiki_info"|~An <<span class="odocwiki_inlinecode"|~'a>> client value on the client is just an <<span class="odocwiki_inlinecode"|~'a>>~.
 >>
 |
@@ -36,6 +39,9 @@
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="coordinates"| type Eliom_parameter.coordinates >> ~[<<a_api subproject="client" | module Eliom_parameter >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="ct"| type Eliom_shared_sigs.RLIST.ct >> ~[<<a_api subproject="client" | module Eliom_shared_sigs.RLIST >>~]|<<div class="odocwiki_info"|~Client~-side version of ~'a t
+>>
+|
 |@@ @style="tet-align: left;"@@\\D|
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="delete_service_kind"| type Eliom_service.delete_service_kind >> ~[<<a_api subproject="client" | module Eliom_service >>~]|<<div class="odocwiki_info"|~Restriction of <<span class="odocwiki_inlinecode"|service~_method>> to ~D~E~L~E~T~E services~.
 >>
@@ -70,7 +76,6 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="ename"| type Eliom_content_core.Xml.ename >> ~[<<a_api subproject="client" | module Eliom_content_core.Xml >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="ev"| type Eliom_content.Html5.Manip.Ev.ev >> ~[<<a_api subproject="client" | module Eliom_content.Html5.Manip.Ev >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="ev_unit"| type Eliom_content.Html5.Manip.Ev.ev_unit >> ~[<<a_api subproject="client" | module Eliom_content.Html5.Manip.Ev >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="event"| type Eliom_csreact.React.event >> ~[<<a_api subproject="client" | module Eliom_csreact.React >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="event_handler"| type Eliom_content_core.Xml.event_handler >> ~[<<a_api subproject="client" | module Eliom_content_core.Xml >>~]||
 |@@ @style="tet-align: left;"@@\\F|
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="file_info"| type Eliom_lib.file_info >> ~[<<a_api subproject="client" | module Eliom_lib >>~]||
@@ -90,6 +95,10 @@
 >>
 |
 |@@ @style="tet-align: left;"@@\\H|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="handle"| type Eliom_shared.FakeReactiveData.RList.handle >> ~[<<a_api subproject="client" | module Eliom_shared.FakeReactiveData.RList >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="handle"| type Eliom_shared_sigs.RLIST.handle >> ~[<<a_api subproject="client" | module Eliom_shared_sigs.RLIST >>~]|<<div class="odocwiki_info"|~Handles are used to manipulate reactive lists
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="hierarchical_site"| type Eliom_tools_common.hierarchical_site >> ~[<<a_api subproject="client" | module Eliom_tools_common >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="hierarchical_site"| type Eliom_tools.hierarchical_site >> ~[<<a_api subproject="client" | module Eliom_tools >>~]|<<div class="odocwiki_info"|~Hierarchical sites description~.
 >>
@@ -219,11 +228,10 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="setone"| type Eliom_parameter.setone >> ~[<<a_api subproject="client" | module Eliom_parameter >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="setoneradio"| type Eliom_parameter.setoneradio >> ~[<<a_api subproject="client" | module Eliom_parameter >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="shared_value"| type Eliom_lib.shared_value >> ~[<<a_api subproject="client" | module Eliom_lib >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="signal"| type Eliom_csreact.React.signal >> ~[<<a_api subproject="client" | module Eliom_csreact.React >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="signal"| type Eliom_shared_sigs.RLIST.signal >> ~[<<a_api subproject="client" | module Eliom_shared_sigs.RLIST >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="soption"| type Eliom_mkforms.MakeForms.soption >> ~[<<a_api subproject="client" | module Eliom_mkforms.MakeForms >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="soption"| type Eliom_content.Html5.D.soption >> ~[<<a_api subproject="client" | module Eliom_content.Html5.D >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="soption"| type Eliom_content.Html5.F.soption >> ~[<<a_api subproject="client" | module Eliom_content.Html5.F >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="step"| type Eliom_csreact.React.step >> ~[<<a_api subproject="client" | module Eliom_csreact.React >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="suff"| type Eliom_service.suff >> ~[<<a_api subproject="client" | module Eliom_service >>~]|<<div class="odocwiki_info"|~The kind of parameters for a service is <<span class="odocwiki_inlinecode"|`~With~Suffix>> when it have
     a suffix parameter~, for examples <<a_api subproject="client" | val Eliom_parameter.suffix >> or
     <<a_api subproject="client" | val Eliom_parameter.suffix_prod >>~.
@@ -234,7 +242,7 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="t"| type Eliom_cscache.t >> ~[<<a_api subproject="client" | module Eliom_cscache >>~]|<<div class="odocwiki_info"|~The type of association tables ~(implemented using ~Hashtbl~)
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="t"| type Eliom_csreact.RE.S.t >> ~[<<a_api subproject="client" | module Eliom_csreact.RE.S >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="t"| type Eliom_shared.FakeReactiveData.RList.t >> ~[<<a_api subproject="client" | module Eliom_shared.FakeReactiveData.RList >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="t"| type Eliom_react.S.Down.t >> ~[<<a_api subproject="client" | module Eliom_react.S.Down >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="t"| type Eliom_react.Up.t >> ~[<<a_api subproject="client" | module Eliom_react.Up >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="t"| type Eliom_react.Down.t >> ~[<<a_api subproject="client" | module Eliom_react.Down >>~]||
@@ -247,6 +255,11 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="t"| type Eliom_comet.Channel.t >> ~[<<a_api subproject="client" | module Eliom_comet.Channel >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="t"| type Eliom_comet.Configuration.t >> ~[<<a_api subproject="client" | module Eliom_comet.Configuration >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="t"| type Eliom_bus.t >> ~[<<a_api subproject="client" | module Eliom_bus >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="t"| type Eliom_shared_sigs.RLIST.t >> ~[<<a_api subproject="client" | module Eliom_shared_sigs.RLIST >>~]|<<div class="odocwiki_info"|~The type of ~(shared~) reactive lists
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="t"| type Eliom_shared_sigs.S.t >> ~[<<a_api subproject="client" | module Eliom_shared_sigs.S >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="t"| type Eliom_shared_sigs.VALUE.t >> ~[<<a_api subproject="client" | module Eliom_shared_sigs.VALUE >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="textarea_attrib_t"| type Eliom_mkforms.FORMS_PARAM.textarea_attrib_t >> ~[<<a_api subproject="client" | module Eliom_mkforms.FORMS_PARAM >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="textarea_elt"| type Eliom_mkforms.FORMS_PARAM.textarea_elt >> ~[<<a_api subproject="client" | module Eliom_mkforms.FORMS_PARAM >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="to_and_from"| type Eliom_parameter.to_and_from >> ~[<<a_api subproject="client" | module Eliom_parameter >>~]||

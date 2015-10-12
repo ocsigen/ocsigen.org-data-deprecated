@@ -128,7 +128,7 @@
   val force_lazy : elt -> unit
   val make_react : ?id:node_id -> elt React.signal -> elt
   val make_process_node : ?id:string -> elt -> elt
-  val make_request_node : elt -> elt
+  val make_request_node : ?reset:bool -> elt -> elt
   val get_node_id : elt -> node_id
   type node =
       DomNode of Dom.node Js.t

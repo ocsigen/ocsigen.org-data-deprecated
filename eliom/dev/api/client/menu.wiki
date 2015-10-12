@@ -11,6 +11,7 @@
 ===[[client/Eliom_bus|Eliom_bus]]
 ===[[client/Eliom_comet|Eliom_comet]]
 ===[[client/Eliom_react|Eliom_react]]
+===[[client/Eliom_shared|Eliom_shared]]
 ==~Index
 === <<a_api subproject="client" text="Index of types" | index types >>
 === <<a_api subproject="client" text="Index of exceptions" | index exceptions >>

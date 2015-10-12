@@ -69,6 +69,9 @@
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="category"| type Atom_feed.category >> ~[<<a_api subproject="server" | module Atom_feed >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="chandle"| type Eliom_shared_sigs.RLIST.chandle >> ~[<<a_api subproject="server" | module Eliom_shared_sigs.RLIST >>~]|<<div class="odocwiki_info"|~Client~-side version of ~'a handle
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="check_fun"| type Eliom_openid.check_fun >> ~[<<a_api subproject="server" | module Eliom_openid >>~]|<<div class="odocwiki_info"|~The type of the authenticate function~.
 >>
 |
@@ -93,6 +96,9 @@
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="coordinates"| type Eliom_parameter.coordinates >> ~[<<a_api subproject="server" | module Eliom_parameter >>~]|<<div class="odocwiki_info"|~The type <<span class="odocwiki_inlinecode"|coordinates>> represent the data sent by an <<span class="odocwiki_inlinecode"|~<input
     type~="image" ~.~.~.~>>>~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="ct"| type Eliom_shared_sigs.RLIST.ct >> ~[<<a_api subproject="server" | module Eliom_shared_sigs.RLIST >>~]|<<div class="odocwiki_info"|~Client~-side version of ~'a t
 >>
 |
 |@@ @style="tet-align: left;"@@\\D|
@@ -133,7 +139,6 @@
     the may be volatile~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="event"| type Eliom_csreact.SharedReact.event >> ~[<<a_api subproject="server" | module Eliom_csreact.SharedReact >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="extension"| type Eliom_openid.extension >> ~[<<a_api subproject="server" | module Eliom_openid >>~]|<<div class="odocwiki_info"|~An extension yielding values of type ~'a
 >>
 |
@@ -177,8 +182,10 @@
 >>
 |
 |@@ @style="tet-align: left;"@@\\H|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="handle"| type Eliom_csreact.SharedReactiveData.RList.handle >> ~[<<a_api subproject="server" | module Eliom_csreact.SharedReactiveData.RList >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="handle"| type Eliom_csreact.FakeReactiveData.RList.handle >> ~[<<a_api subproject="server" | module Eliom_csreact.FakeReactiveData.RList >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="handle"| type Eliom_shared.FakeReactiveData.RList.handle >> ~[<<a_api subproject="server" | module Eliom_shared.FakeReactiveData.RList >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="handle"| type Eliom_shared_sigs.RLIST.handle >> ~[<<a_api subproject="server" | module Eliom_shared_sigs.RLIST >>~]|<<div class="odocwiki_info"|~Handles are used to manipulate reactive lists
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="hierarchical_site"| type Eliom_tools_common.hierarchical_site >> ~[<<a_api subproject="server" | module Eliom_tools_common >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="hierarchical_site"| type Eliom_tools.hierarchical_site >> ~[<<a_api subproject="server" | module Eliom_tools >>~]|<<div class="odocwiki_info"|~Hierarchical sites description~.
 >>
@@ -427,7 +434,7 @@
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="shared_value"| type Eliom_lib.shared_value >> ~[<<a_api subproject="server" | module Eliom_lib >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="signal"| type Eliom_csreact.SharedReact.signal >> ~[<<a_api subproject="server" | module Eliom_csreact.SharedReact >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="signal"| type Eliom_shared_sigs.RLIST.signal >> ~[<<a_api subproject="server" | module Eliom_shared_sigs.RLIST >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="site_scope"| type Eliom_common.site_scope >> ~[<<a_api subproject="server" | module Eliom_common >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="sitedata"| type Eliom_types.sitedata >> ~[<<a_api subproject="server" | module Eliom_types >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="soption"| type Eliom_mkforms.MakeForms.soption >> ~[<<a_api subproject="server" | module Eliom_mkforms.MakeForms >>~]||
@@ -448,7 +455,6 @@
     ~The default scope is <<span class="odocwiki_inlinecode"|`~Session>>~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="step"| type Eliom_csreact.SharedReact.step >> ~[<<a_api subproject="server" | module Eliom_csreact.SharedReact >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="suff"| type Eliom_service.suff >> ~[<<a_api subproject="server" | module Eliom_service >>~]|<<div class="odocwiki_info"|~The kind of parameters for a service is <<span class="odocwiki_inlinecode"|`~With~Suffix>> when it have
     a suffix parameter~, for examples <<a_api subproject="server" | val Eliom_parameter.suffix >> or
     <<a_api subproject="server" | val Eliom_parameter.suffix_prod >>~.
@@ -464,11 +470,7 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="t"| type Eliom_cscache.t >> ~[<<a_api subproject="server" | module Eliom_cscache >>~]|<<div class="odocwiki_info"|~The type of association tables ~(implemented using ~Hashtbl~)
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="t"| type Eliom_csreact.RE.S.t >> ~[<<a_api subproject="server" | module Eliom_csreact.RE.S >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="t"| type Eliom_csreact.SharedReactiveData.RList.t >> ~[<<a_api subproject="server" | module Eliom_csreact.SharedReactiveData.RList >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="t"| type Eliom_csreact.SharedReact.S.t >> ~[<<a_api subproject="server" | module Eliom_csreact.SharedReact.S >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="t"| type Eliom_csreact.FakeReactiveData.RList.t >> ~[<<a_api subproject="server" | module Eliom_csreact.FakeReactiveData.RList >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="t"| type Eliom_csreact.FakeReact.S.t >> ~[<<a_api subproject="server" | module Eliom_csreact.FakeReact.S >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="t"| type Eliom_shared.FakeReactiveData.RList.t >> ~[<<a_api subproject="server" | module Eliom_shared.FakeReactiveData.RList >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="t"| type Eliom_react.S.Down.t >> ~[<<a_api subproject="server" | module Eliom_react.S.Down >>~]|<<div class="odocwiki_info"|~The abstract type of down signals~.
 >>
 |
@@ -489,6 +491,11 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="t"| type Eliom_bus.t >> ~[<<a_api subproject="server" | module Eliom_bus >>~]|<<div class="odocwiki_info"|~The type of bus~'s carrying values of type <<span class="odocwiki_inlinecode"|~'a>>~.
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="t"| type Eliom_shared_sigs.RLIST.t >> ~[<<a_api subproject="server" | module Eliom_shared_sigs.RLIST >>~]|<<div class="odocwiki_info"|~The type of ~(shared~) reactive lists
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="t"| type Eliom_shared_sigs.S.t >> ~[<<a_api subproject="server" | module Eliom_shared_sigs.S >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="t"| type Eliom_shared_sigs.VALUE.t >> ~[<<a_api subproject="server" | module Eliom_shared_sigs.VALUE >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="term"| type Atom_feed.term >> ~[<<a_api subproject="server" | module Atom_feed >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="textConstruct"| type Atom_feed.textConstruct >> ~[<<a_api subproject="server" | module Atom_feed >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="textarea_attrib_t"| type Eliom_mkforms.FORMS_PARAM.textarea_attrib_t >> ~[<<a_api subproject="server" | module Eliom_mkforms.FORMS_PARAM >>~]||

@@ -1,8 +1,0 @@
-<<code language="ocaml" | sig
-  module S :
-    sig
-      type 'a t
-      val create : 'a -> 'a Eliom_csreact.RE.S.t * ('a -> unit)
-      val value : 'a Eliom_csreact.RE.S.t -> 'a
-    end
-end >>

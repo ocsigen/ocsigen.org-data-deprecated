@@ -44,7 +44,7 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Down"| module Eliom_react.S.Down >> ~[<<a_api subproject="client" | module Eliom_react.S >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Down"| module Eliom_react.Down >> ~[<<a_api subproject="client" | module Eliom_react >>~]||
 |@@ @style="tet-align: left;"@@\\E|
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="E"| module Eliom_csreact.React.E >> ~[<<a_api subproject="client" | module Eliom_csreact.React >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="E"| module Eliom_shared.React.E >> ~[<<a_api subproject="client" | module Eliom_shared.React >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Eliom_bus"| module Eliom_bus >> |<<div class="odocwiki_info"|~Broadcasting facilities between clients and server~.
 >>
 |
@@ -68,11 +68,7 @@
     or keeping values in memory during a request~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Eliom_csreact"| module Eliom_csreact >> |<<div class="odocwiki_info"|~Same as map~_p but we do not compute the initial list~.
->>
-|
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Eliom_lazy"| module Eliom_lazy >> ||
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Eliom_lib"| module Eliom_csreact.Eliom_lib >> ~[<<a_api subproject="client" | module Eliom_csreact >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Eliom_lib"| module Eliom_lib >> |<<div class="odocwiki_info"|~See <<a_api subproject="client"|type
     Eliom_pervasives.client_value>> ~.
 >>
@@ -96,6 +92,13 @@
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Eliom_service"| module Eliom_service >> |<<div class="odocwiki_info"|~Functions to add non localised parameters to services and
     client side declaration of void coservices~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Eliom_shared"| module Eliom_shared >> |<<div class="odocwiki_info"|~This module implements shared ~(i~.e~.~, client~-server~) versions of
+    the ~React and ~Reactive~Data libraries~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Eliom_shared_sigs"| module Eliom_shared_sigs >> |<<div class="odocwiki_info"|~Accessing shared values
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Eliom_tools"| module Eliom_tools >> |<<div class="odocwiki_info"|~Helpers for ~(hierarchical~) menu generation in ~H~T~M~L~5~.
@@ -127,8 +130,11 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="F"| module Eliom_content.Svg.F >> ~[<<a_api subproject="client" | module Eliom_content.Svg >>~]|<<div class="odocwiki_info"|~Creation of //f//unctional content ~(copy~-able but not referable~)~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="FakeReact"| module Eliom_csreact.FakeReact >> ~[<<a_api subproject="client" | module Eliom_csreact >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="FakeReactiveData"| module Eliom_csreact.FakeReactiveData >> ~[<<a_api subproject="client" | module Eliom_csreact >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="FakeReactiveData"| module Eliom_shared.FakeReactiveData >> ~[<<a_api subproject="client" | module Eliom_shared >>~]|<<div class="odocwiki_info"|~This is a dummy ~Reactive~Data module that allows us to refer to
+    client~-side ~Reactive~Data types on the server side~, without
+    actually linking against ~Reactive~Data~.
+>>
+|
 |@@ @style="tet-align: left;"@@\\H|
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Html5"| module Eliom_content_core.Html5 >> ~[<<a_api subproject="client" | module Eliom_content_core >>~]|<<div class="odocwiki_info"|~Building ~Html~5 tree~.
 >>
@@ -152,9 +158,16 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Id"| module Eliom_content.Svg.Id >> ~[<<a_api subproject="client" | module Eliom_content.Svg >>~]|<<div class="odocwiki_info"|~Node identifiers
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Infix"| module Eliom_shared_sigs.S.Infix >> ~[<<a_api subproject="client" | module Eliom_shared_sigs.S >>~]|<<div class="odocwiki_info"|~Infix operators
+>>
+|
 |@@ @style="tet-align: left;"@@\\L|
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Lwt"| module Eliom_csreact.React.S.Lwt >> ~[<<a_api subproject="client" | module Eliom_csreact.React.S >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Lwt"| module Eliom_csreact.ReactiveData.RList.Lwt >> ~[<<a_api subproject="client" | module Eliom_csreact.ReactiveData.RList >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Lwt"| module Eliom_shared_sigs.RLIST.Lwt >> ~[<<a_api subproject="client" | module Eliom_shared_sigs.RLIST >>~]|<<div class="odocwiki_info"|~Cooperative versions of the ~Reactive~Data operators
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Lwt"| module Eliom_shared_sigs.S.Lwt >> ~[<<a_api subproject="client" | module Eliom_shared_sigs.S >>~]|<<div class="odocwiki_info"|~Cooperative versions of the ~React operators
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Lwt_log"| module Eliom_lib.Lwt_log >> ~[<<a_api subproject="client" | module Eliom_lib >>~]||
 |@@ @style="tet-align: left;"@@\\M|
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="MakeForms"| module Eliom_mkforms.MakeForms >> ~[<<a_api subproject="client" | module Eliom_mkforms >>~]||
@@ -202,8 +215,8 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="R"| module Eliom_content.Svg.R >> ~[<<a_api subproject="client" | module Eliom_content.Svg >>~]|<<div class="odocwiki_info"|~Creation of reactive content
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="RList"| module Eliom_csreact.SharedReactiveData.RList >> ~[<<a_api subproject="client" | module Eliom_csreact.SharedReactiveData >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="RList"| module Eliom_csreact.ReactiveData.RList >> ~[<<a_api subproject="client" | module Eliom_csreact.ReactiveData >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="RList"| module Eliom_shared.ReactiveData.RList >> ~[<<a_api subproject="client" | module Eliom_shared.ReactiveData >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="RList"| module Eliom_shared.FakeReactiveData.RList >> ~[<<a_api subproject="client" | module Eliom_shared.FakeReactiveData >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Raw"| module Eliom_content_core.Html5.R.Raw >> ~[<<a_api subproject="client" | module Eliom_content_core.Html5.R >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Raw"| module Eliom_content_core.Html5.D.Raw >> ~[<<a_api subproject="client" | module Eliom_content_core.Html5.D >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Raw"| module Eliom_content_core.Html5.F.Raw >> ~[<<a_api subproject="client" | module Eliom_content_core.Html5.F >>~]||
@@ -226,19 +239,20 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Raw"| module Eliom_content.Svg.F.Raw >> ~[<<a_api subproject="client" | module Eliom_content.Svg.F >>~]|<<div class="odocwiki_info"|~Cf~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="React"| module Eliom_csreact.React >> ~[<<a_api subproject="client" | module Eliom_csreact >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="ReactiveData"| module Eliom_csreact.ReactiveData >> ~[<<a_api subproject="client" | module Eliom_csreact >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="React"| module Eliom_shared.React >> ~[<<a_api subproject="client" | module Eliom_shared >>~]|<<div class="odocwiki_info"|~Shared implementation of ~React~; client~-side behavior is like
+    standard ~React
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="ReactiveData"| module Eliom_shared.ReactiveData >> ~[<<a_api subproject="client" | module Eliom_shared >>~]|<<div class="odocwiki_info"|~Shared implementation of ~Reactive~Data~; client~-side behavior is
+    like standard ~Reactive~Data
+>>
+|
 |@@ @style="tet-align: left;"@@\\S|
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="S"| module Eliom_csreact.RE.S >> ~[<<a_api subproject="client" | module Eliom_csreact.RE >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="S"| module Eliom_csreact.SharedReact.S >> ~[<<a_api subproject="client" | module Eliom_csreact.SharedReact >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="S"| module Eliom_csreact.React.S >> ~[<<a_api subproject="client" | module Eliom_csreact.React >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="S"| module Eliom_shared.React.S >> ~[<<a_api subproject="client" | module Eliom_shared.React >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="S"| module Eliom_react.S >> ~[<<a_api subproject="client" | module Eliom_react >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="SetCss"| module Eliom_content.Html5.Manip.SetCss >> ~[<<a_api subproject="client" | module Eliom_content.Html5.Manip >>~]|<<div class="odocwiki_info"|~Modify the ~C~S~S properties of ~D~O~M elements~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Shared"| module Eliom_csreact.Shared >> ~[<<a_api subproject="client" | module Eliom_csreact >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="SharedReact"| module Eliom_csreact.SharedReact >> ~[<<a_api subproject="client" | module Eliom_csreact >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="SharedReactiveData"| module Eliom_csreact.SharedReactiveData >> ~[<<a_api subproject="client" | module Eliom_csreact >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="String"| module Eliom_lib.String >> ~[<<a_api subproject="client" | module Eliom_lib >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Svg"| module Eliom_content_core.Svg >> ~[<<a_api subproject="client" | module Eliom_content_core >>~]|<<div class="odocwiki_info"|~Building ~S~V~G tree~.
 >>
@@ -259,6 +273,10 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Unsafe"| module Eliom_service.Unsafe >> ~[<<a_api subproject="client" | module Eliom_service >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Up"| module Eliom_react.Up >> ~[<<a_api subproject="client" | module Eliom_react >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Url"| module Eliom_lib.Url >> ~[<<a_api subproject="client" | module Eliom_lib >>~]||
+|@@ @style="tet-align: left;"@@\\V|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Value"| module Eliom_shared.Value >> ~[<<a_api subproject="client" | module Eliom_shared >>~]|<<div class="odocwiki_info"|~Accessing shared values
+>>
+|
 |@@ @style="tet-align: left;"@@\\W|
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="W"| module Eliom_content_core.Xml.W >> ~[<<a_api subproject="client" | module Eliom_content_core.Xml >>~]||
 |@@ @style="tet-align: left;"@@\\X|

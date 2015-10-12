@@ -1,4 +1,0 @@
-<<code language="ocaml" | sig
-  val local : 'a Eliom_lib.shared_value -> 'a
-  val client : 'a Eliom_lib.shared_value -> 'a Eliom_lib.client_value
-end >>

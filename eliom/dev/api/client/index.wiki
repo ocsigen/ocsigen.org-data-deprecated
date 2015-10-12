@@ -57,6 +57,10 @@
 |<<a_api subproject="client" | module Eliom_react >>|<<div class="odocwiki_info"|~Client side type declarations for ~React event propagation~.
 >>
 |
+|<<a_api subproject="client" | module Eliom_shared >>|<<div class="odocwiki_info"|~This module implements shared ~(i~.e~.~, client~-server~) versions of
+    the ~React and ~Reactive~Data libraries~.
+>>
+|
 
 
 

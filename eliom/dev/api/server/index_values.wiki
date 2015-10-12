@@ -8,6 +8,12 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="( *** )"| value Eliom_openid.( *** ) >> ~[<<a_api subproject="server" | module Eliom_openid >>~]|<<div class="odocwiki_info"|~The ~P~A~P~E extension~.
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="(=|<)"| value Eliom_shared_sigs.S.Infix.(=|<) >> ~[<<a_api subproject="server" | module Eliom_shared_sigs.S.Infix >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|f ~=~|~< s>> is <<span class="odocwiki_inlinecode"|map f s>>~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="(>|=)"| value Eliom_shared_sigs.S.Infix.(>|=) >> ~[<<a_api subproject="server" | module Eliom_shared_sigs.S.Infix >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|s ~>~|~= f>> is <<span class="odocwiki_inlinecode"|map f s>>~.
+>>
+|
 |@@ @style="tet-align: left;"@@\\A|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="a"| value Eliom_mkforms.MakeForms.a >> ~[<<a_api subproject="server" | module Eliom_mkforms.MakeForms >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|a service a~_content get~_params>> creates a <<span class="odocwiki_inlinecode"|~<a~>>>
     node that link to <<span class="odocwiki_inlinecode"|service>> applied to ~G~E~T parameters <<span class="odocwiki_inlinecode"|get~_params>>
@@ -34,7 +40,6 @@
     and whose content is <<span class="odocwiki_inlinecode"|a~_content>>~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="a_class"| value Eliom_csreact.R.a_class >> ~[<<a_api subproject="server" | module Eliom_csreact.R >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="a_for"| value Eliom_mkforms.MakeForms.a_for >> ~[<<a_api subproject="server" | module Eliom_mkforms.MakeForms >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="a_for"| value Eliom_content.Forms.a_for >> ~[<<a_api subproject="server" | module Eliom_content.Forms >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="a_for"| value Eliom_content.Html_text.a_for >> ~[<<a_api subproject="server" | module Eliom_content.Html_text >>~]||
@@ -42,7 +47,7 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="a_for"| value Eliom_content.Html5.F.a_for >> ~[<<a_api subproject="server" | module Eliom_content.Html5.F >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="a_input_required"| value Eliom_mkforms.FORMS_PARAM.a_input_required >> ~[<<a_api subproject="server" | module Eliom_mkforms.FORMS_PARAM >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="a_select_required"| value Eliom_mkforms.FORMS_PARAM.a_select_required >> ~[<<a_api subproject="server" | module Eliom_mkforms.FORMS_PARAM >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="a_style"| value Eliom_csreact.R.a_style >> ~[<<a_api subproject="server" | module Eliom_csreact.R >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="acc_e"| value Eliom_shared_sigs.RLIST.acc_e >> ~[<<a_api subproject="server" | module Eliom_shared_sigs.RLIST >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="add_cookie"| value Eliom_cookie.add_cookie >> ~[<<a_api subproject="server" | module Eliom_cookie >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|add~_cookie path c v cookie~_table>> adds the cookie
     <<span class="odocwiki_inlinecode"|c>> to the table <<span class="odocwiki_inlinecode"|cookie~_table>>~.
 >>
@@ -178,12 +183,13 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="clean_request_cache"| value Eliom_request_info.clean_request_cache >> ~[<<a_api subproject="server" | module Eliom_request_info >>~]|<<div class="odocwiki_info"|~Remove all data from the request cache
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="client"| value Eliom_csreact.SH.client >> ~[<<a_api subproject="server" | module Eliom_csreact.SH >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="client"| value Eliom_csreact.Shared.client >> ~[<<a_api subproject="server" | module Eliom_csreact.Shared >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="client"| value Eliom_shared_sigs.VALUE.client >> ~[<<a_api subproject="server" | module Eliom_shared_sigs.VALUE >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|client x>> is the client~-side portion of <<span class="odocwiki_inlinecode"|x>>~.
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="comet_client_process_scope"| value Eliom_common.comet_client_process_scope >> ~[<<a_api subproject="server" | module Eliom_common >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="concat"| value Eliom_shared_sigs.RLIST.concat >> ~[<<a_api subproject="server" | module Eliom_shared_sigs.RLIST >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="cons_hidden_fieldset"| value Eliom_mkforms.FORMS_PARAM.cons_hidden_fieldset >> ~[<<a_api subproject="server" | module Eliom_mkforms.FORMS_PARAM >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="const"| value Eliom_csreact.SharedReact.S.const >> ~[<<a_api subproject="server" | module Eliom_csreact.SharedReact.S >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="const"| value Eliom_csreact.FakeReact.S.const >> ~[<<a_api subproject="server" | module Eliom_csreact.FakeReact.S >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="const"| value Eliom_shared_sigs.S.const >> ~[<<a_api subproject="server" | module Eliom_shared_sigs.S >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="contributor"| value Atom_feed.contributor >> ~[<<a_api subproject="server" | module Atom_feed >>~]|<<div class="odocwiki_info"|contributor tag
 >>
 |
@@ -241,9 +247,11 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="create"| value Eliom_cscache.create >> ~[<<a_api subproject="server" | module Eliom_cscache >>~]|<<div class="odocwiki_info"|~Create a new table~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="create"| value Eliom_csreact.RE.S.create >> ~[<<a_api subproject="server" | module Eliom_csreact.RE.S >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="create"| value Eliom_csreact.SharedReact.S.create >> ~[<<a_api subproject="server" | module Eliom_csreact.SharedReact.S >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="create"| value Eliom_csreact.FakeReact.S.create >> ~[<<a_api subproject="server" | module Eliom_csreact.FakeReact.S >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="create"| value Eliom_shared.React.S.create >> ~[<<a_api subproject="server" | module Eliom_shared.React.S >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|create ~?default ~?reset~_default x>> produces a pair <<span class="odocwiki_inlinecode"|s~, f>>~,
+        where <<span class="odocwiki_inlinecode"|s>> is a ~(shared~) reactive signal~, and <<span class="odocwiki_inlinecode"|f>> is a shared
+        function for updating the signal~.
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="create"| value Eliom_react.Up.create >> ~[<<a_api subproject="server" | module Eliom_react.Up >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|create param>> creates an ~Up event~.
 >>
 |
@@ -283,6 +291,14 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="create_newest"| value Eliom_comet.Channel.create_newest >> ~[<<a_api subproject="server" | module Eliom_comet.Channel >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|create~_newest s>> is similar to <<span class="odocwiki_inlinecode"|create
       ~~scope~:~Eliom~_common~.site~_scope s>> but only the last message is
       returned to the client~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="create_request_elt"| value Eliom_content.Html5.Id.create_request_elt >> ~[<<a_api subproject="server" | module Eliom_content.Html5.Id >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|create~_request~_elt ~?reset elt>> creates a referable copy of
+        <<span class="odocwiki_inlinecode"|elt>>~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="create_request_elt"| value Eliom_content.Svg.Id.create_request_elt >> ~[<<a_api subproject="server" | module Eliom_content.Svg.Id >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|create~_request~_elt ~?reset elt>> creates a referable copy of
+        <<span class="odocwiki_inlinecode"|elt>>~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="create_scope_hierarchy"| value Eliom_common.create_scope_hierarchy >> ~[<<a_api subproject="server" | module Eliom_common >>~]||
@@ -439,7 +455,6 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="discard_state"| value Eliom_state.Ext.discard_state >> ~[<<a_api subproject="server" | module Eliom_state.Ext >>~]|<<div class="odocwiki_info"|~Discard external states
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="div"| value Eliom_csreact.R.div >> ~[<<a_api subproject="server" | module Eliom_csreact.R >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="do_cache"| value Eliom_cscache.do_cache >> ~[<<a_api subproject="server" | module Eliom_cscache >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|do~_cache cache key value>> adds the association from <<span class="odocwiki_inlinecode"|key>>
        to <<span class="odocwiki_inlinecode"|value>> in <<span class="odocwiki_inlinecode"|cache>>~, if not already present~.
 >>
@@ -558,6 +573,10 @@
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="file_input"| value Eliom_content.Html5.F.file_input >> ~[<<a_api subproject="server" | module Eliom_content.Html5.F >>~]|<<div class="odocwiki_info"|~Creates an <<span class="odocwiki_inlinecode"|~<input~>>> tag for sending a file
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="filter_attrib"| value Eliom_content.Html5.R.filter_attrib >> ~[<<a_api subproject="server" | module Eliom_content.Html5.R >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|filter~_attrib a b>> amounts to the attribute <<span class="odocwiki_inlinecode"|a>> while <<span class="odocwiki_inlinecode"|b>> is
+        <<span class="odocwiki_inlinecode"|true>>~, and to no attribute while <<span class="odocwiki_inlinecode"|b>> is <<span class="odocwiki_inlinecode"|false>>~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="find"| value Eliom_cscache.find >> ~[<<a_api subproject="server" | module Eliom_cscache >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|find cache get~_from~_db key>>
@@ -687,7 +706,6 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="float_select"| value Eliom_content.Html5.F.float_select >> ~[<<a_api subproject="server" | module Eliom_content.Html5.F >>~]|<<div class="odocwiki_info"|~Creates a <<span class="odocwiki_inlinecode"|~<select~>>> tag for float values~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="fold_p"| value Eliom_csreact.SharedReactiveData.RList.Lwt.fold_p >> ~[<<a_api subproject="server" | module Eliom_csreact.SharedReactiveData.RList.Lwt >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="fold_persistent_data_cookies"| value Eliom_state.Ext.fold_persistent_data_cookies >> ~[<<a_api subproject="server" | module Eliom_state.Ext >>~]|<<div class="odocwiki_info"|~Iterator on persistent cookies~.
 >>
 |
@@ -715,9 +733,7 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="format_url"| value Eliom_s2s.format_url >> ~[<<a_api subproject="server" | module Eliom_s2s >>~]|<<div class="odocwiki_info"|~Format a url with a base and ~G~E~T parameters
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="from_signal"| value Eliom_csreact.SharedReactiveData.RList.from_signal >> ~[<<a_api subproject="server" | module Eliom_csreact.SharedReactiveData.RList >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="from_signal"| value Eliom_csreact.FakeReactiveData.RList.from_signal >> ~[<<a_api subproject="server" | module Eliom_csreact.FakeReactiveData.RList >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="from_signal"| value Eliom_csreact.ReactiveData.RList.from_signal >> ~[<<a_api subproject="server" | module Eliom_csreact.ReactiveData.RList >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="from_signal"| value Eliom_shared_sigs.RLIST.from_signal >> ~[<<a_api subproject="server" | module Eliom_shared_sigs.RLIST >>~]||
 |@@ @style="tet-align: left;"@@\\G|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="get"| value Eliom_reference.Ext.get >> ~[<<a_api subproject="server" | module Eliom_reference.Ext >>~]|<<div class="odocwiki_info"|get the value of a reference from outside the state~.
 >>
@@ -1495,13 +1511,17 @@
 >>
 |
 |@@ @style="tet-align: left;"@@\\L|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="l2"| value Eliom_csreact.SharedReact.S.l2 >> ~[<<a_api subproject="server" | module Eliom_csreact.SharedReact.S >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="l2"| value Eliom_csreact.FakeReact.S.l2 >> ~[<<a_api subproject="server" | module Eliom_csreact.FakeReact.S >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="l2_s"| value Eliom_csreact.SharedReact.S.Lwt.l2_s >> ~[<<a_api subproject="server" | module Eliom_csreact.SharedReact.S.Lwt >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="l3"| value Eliom_csreact.SharedReact.S.l3 >> ~[<<a_api subproject="server" | module Eliom_csreact.SharedReact.S >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="l3"| value Eliom_csreact.FakeReact.S.l3 >> ~[<<a_api subproject="server" | module Eliom_csreact.FakeReact.S >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="l2"| value Eliom_shared_sigs.S.l2 >> ~[<<a_api subproject="server" | module Eliom_shared_sigs.S >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="l2_s"| value Eliom_shared_sigs.S.Lwt.l2_s >> ~[<<a_api subproject="server" | module Eliom_shared_sigs.S.Lwt >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="l3"| value Eliom_shared_sigs.S.l3 >> ~[<<a_api subproject="server" | module Eliom_shared_sigs.S >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="l3_s"| value Eliom_shared_sigs.S.Lwt.l3_s >> ~[<<a_api subproject="server" | module Eliom_shared_sigs.S.Lwt >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="l4"| value Eliom_shared_sigs.S.l4 >> ~[<<a_api subproject="server" | module Eliom_shared_sigs.S >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="l4_s"| value Eliom_shared_sigs.S.Lwt.l4_s >> ~[<<a_api subproject="server" | module Eliom_shared_sigs.S.Lwt >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="l5"| value Eliom_shared_sigs.S.l5 >> ~[<<a_api subproject="server" | module Eliom_shared_sigs.S >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="l5_s"| value Eliom_shared_sigs.S.Lwt.l5_s >> ~[<<a_api subproject="server" | module Eliom_shared_sigs.S.Lwt >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="l6"| value Eliom_shared_sigs.S.l6 >> ~[<<a_api subproject="server" | module Eliom_shared_sigs.S >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="l6_s"| value Eliom_shared_sigs.S.Lwt.l6_s >> ~[<<a_api subproject="server" | module Eliom_shared_sigs.S.Lwt >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="level_of_user_scope"| value Eliom_common.level_of_user_scope >> ~[<<a_api subproject="server" | module Eliom_common >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="li"| value Eliom_csreact.R.li >> ~[<<a_api subproject="server" | module Eliom_csreact.R >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="link"| value Atom_feed.link >> ~[<<a_api subproject="server" | module Atom_feed >>~]|<<div class="odocwiki_info"|~Link tag
 >>
 |
@@ -1512,8 +1532,9 @@
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="list_scope_hierarchies"| value Eliom_common.list_scope_hierarchies >> ~[<<a_api subproject="server" | module Eliom_common >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="local"| value Eliom_csreact.SH.local >> ~[<<a_api subproject="server" | module Eliom_csreact.SH >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="local"| value Eliom_csreact.Shared.local >> ~[<<a_api subproject="server" | module Eliom_csreact.Shared >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="local"| value Eliom_shared_sigs.VALUE.local >> ~[<<a_api subproject="server" | module Eliom_shared_sigs.VALUE >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|local x>> is the local portion of <<span class="odocwiki_inlinecode"|x>>~.
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="local_find"| value Eliom_cscache.local_find >> ~[<<a_api subproject="server" | module Eliom_cscache >>~]|<<div class="odocwiki_info"|~Find a piece of data in local cache~,
       without trying to fetch it from server~.
 >>
@@ -1562,14 +1583,16 @@
 >>
 |
 |@@ @style="tet-align: left;"@@\\M|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="make"| value Eliom_csreact.SharedReactiveData.RList.make >> ~[<<a_api subproject="server" | module Eliom_csreact.SharedReactiveData.RList >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="make"| value Eliom_csreact.FakeReactiveData.RList.make >> ~[<<a_api subproject="server" | module Eliom_csreact.FakeReactiveData.RList >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="make"| value Eliom_shared_sigs.RLIST.make >> ~[<<a_api subproject="server" | module Eliom_shared_sigs.RLIST >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|make ~?default ~?reset~_default l>> produces a pair <<span class="odocwiki_inlinecode"|l~, f>>~, where
+      <<span class="odocwiki_inlinecode"|s>> is a ~(shared~) reactive list~, and <<span class="odocwiki_inlinecode"|f>> is a handle for
+      manipulating the list~.
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="make_a"| value Eliom_mkforms.FORMS_PARAM.make_a >> ~[<<a_api subproject="server" | module Eliom_mkforms.FORMS_PARAM >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="make_button"| value Eliom_mkforms.FORMS_PARAM.make_button >> ~[<<a_api subproject="server" | module Eliom_mkforms.FORMS_PARAM >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="make_css_link"| value Eliom_mkforms.FORMS_PARAM.make_css_link >> ~[<<a_api subproject="server" | module Eliom_mkforms.FORMS_PARAM >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="make_for_attrib"| value Eliom_mkforms.FORMS_PARAM.make_for_attrib >> ~[<<a_api subproject="server" | module Eliom_mkforms.FORMS_PARAM >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="make_from_s"| value Eliom_csreact.SharedReactiveData.RList.make_from_s >> ~[<<a_api subproject="server" | module Eliom_csreact.SharedReactiveData.RList >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="make_from_s"| value Eliom_csreact.FakeReactiveData.RList.make_from_s >> ~[<<a_api subproject="server" | module Eliom_csreact.FakeReactiveData.RList >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="make_from_s"| value Eliom_shared_sigs.RLIST.make_from_s >> ~[<<a_api subproject="server" | module Eliom_shared_sigs.RLIST >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="make_get_form"| value Eliom_mkforms.FORMS_PARAM.make_get_form >> ~[<<a_api subproject="server" | module Eliom_mkforms.FORMS_PARAM >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="make_input"| value Eliom_mkforms.FORMS_PARAM.make_input >> ~[<<a_api subproject="server" | module Eliom_mkforms.FORMS_PARAM >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="make_js_script"| value Eliom_mkforms.FORMS_PARAM.make_js_script >> ~[<<a_api subproject="server" | module Eliom_mkforms.FORMS_PARAM >>~]||
@@ -1697,34 +1720,19 @@
     <<span class="odocwiki_inlinecode"|get~_params>>~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="map"| value Eliom_csreact.SharedReactiveData.RList.map >> ~[<<a_api subproject="server" | module Eliom_csreact.SharedReactiveData.RList >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="map"| value Eliom_csreact.SharedReact.S.map >> ~[<<a_api subproject="server" | module Eliom_csreact.SharedReact.S >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="map"| value Eliom_csreact.FakeReactiveData.RList.map >> ~[<<a_api subproject="server" | module Eliom_csreact.FakeReactiveData.RList >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="map"| value Eliom_csreact.FakeReact.S.map >> ~[<<a_api subproject="server" | module Eliom_csreact.FakeReact.S >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="map_data_p_lwt"| value Eliom_csreact.ReactiveData.RList.Lwt.map_data_p_lwt >> ~[<<a_api subproject="server" | module Eliom_csreact.ReactiveData.RList.Lwt >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="map_msg_p_lwt"| value Eliom_csreact.ReactiveData.RList.Lwt.map_msg_p_lwt >> ~[<<a_api subproject="server" | module Eliom_csreact.ReactiveData.RList.Lwt >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="map"| value Eliom_shared_sigs.RLIST.map >> ~[<<a_api subproject="server" | module Eliom_shared_sigs.RLIST >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="map"| value Eliom_shared_sigs.S.map >> ~[<<a_api subproject="server" | module Eliom_shared_sigs.S >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="map_optgroup"| value Eliom_mkforms.FORMS_PARAM.map_optgroup >> ~[<<a_api subproject="server" | module Eliom_mkforms.FORMS_PARAM >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="map_option"| value Eliom_mkforms.FORMS_PARAM.map_option >> ~[<<a_api subproject="server" | module Eliom_mkforms.FORMS_PARAM >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="map_p"| value Eliom_csreact.SharedReactiveData.RList.Lwt.map_p >> ~[<<a_api subproject="server" | module Eliom_csreact.SharedReactiveData.RList.Lwt >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="map_p"| value Eliom_csreact.FakeReactiveData.RList.Lwt.map_p >> ~[<<a_api subproject="server" | module Eliom_csreact.FakeReactiveData.RList.Lwt >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="map_p"| value Eliom_csreact.ReactiveData.RList.Lwt.map_p >> ~[<<a_api subproject="server" | module Eliom_csreact.ReactiveData.RList.Lwt >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|map~_p f l>> is the equivalent of <<span class="odocwiki_inlinecode"|~Reactive~Data~.~Rlist~.map>>
-        but with a function that may yield~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="map_p_aux"| value Eliom_csreact.ReactiveData.RList.Lwt.map_p_aux >> ~[<<a_api subproject="server" | module Eliom_csreact.ReactiveData.RList.Lwt >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="map_p_init"| value Eliom_csreact.ReactiveData.RList.Lwt.map_p_init >> ~[<<a_api subproject="server" | module Eliom_csreact.ReactiveData.RList.Lwt >>~]|<<div class="odocwiki_info"|~Same as map~_p but we do not compute the initial list~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="map_patch_p_lwt"| value Eliom_csreact.ReactiveData.RList.Lwt.map_patch_p_lwt >> ~[<<a_api subproject="server" | module Eliom_csreact.ReactiveData.RList.Lwt >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="map_s"| value Eliom_csreact.SharedReact.S.Lwt.map_s >> ~[<<a_api subproject="server" | module Eliom_csreact.SharedReact.S.Lwt >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="map_p"| value Eliom_shared_sigs.RLIST.Lwt.map_p >> ~[<<a_api subproject="server" | module Eliom_shared_sigs.RLIST.Lwt >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="map_s"| value Eliom_shared_sigs.S.Lwt.map_s >> ~[<<a_api subproject="server" | module Eliom_shared_sigs.S.Lwt >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="menu"| value Eliom_tools.HTML5_TOOLS.menu >> ~[<<a_api subproject="server" | module Eliom_tools.HTML5_TOOLS >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|menu elts ~(~)>>~, where <<span class="odocwiki_inlinecode"|elts>> is a list of pair
       <<span class="odocwiki_inlinecode"|~(service~, content~)>>~, creates a list of link towards the
       <<span class="odocwiki_inlinecode"|service>>s~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="merge"| value Eliom_csreact.SharedReact.S.merge >> ~[<<a_api subproject="server" | module Eliom_csreact.SharedReact.S >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="merge"| value Eliom_csreact.FakeReact.S.merge >> ~[<<a_api subproject="server" | module Eliom_csreact.FakeReact.S >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="merge_s"| value Eliom_csreact.SharedReact.S.Lwt.merge_s >> ~[<<a_api subproject="server" | module Eliom_csreact.SharedReact.S.Lwt >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="merge"| value Eliom_shared_sigs.S.merge >> ~[<<a_api subproject="server" | module Eliom_shared_sigs.S >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="merge_s"| value Eliom_shared_sigs.S.Lwt.merge_s >> ~[<<a_api subproject="server" | module Eliom_shared_sigs.S.Lwt >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="modify"| value Eliom_reference.Ext.modify >> ~[<<a_api subproject="server" | module Eliom_reference.Ext >>~]|<<div class="odocwiki_info"|~Warning~: the function will be executed with the current context
 >>
 |
@@ -1750,12 +1758,19 @@
         identifier~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="node"| value Eliom_csreact.R.node >> ~[<<a_api subproject="server" | module Eliom_csreact.R >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="node"| value Eliom_content.Html5.R.node >> ~[<<a_api subproject="server" | module Eliom_content.Html5.R >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|node s>> produces an <<span class="odocwiki_inlinecode"|~'a elt>> out of the shared reactive
+        signal <<span class="odocwiki_inlinecode"|s>>~.
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="node"| value Eliom_content.Html5.C.node >> ~[<<a_api subproject="server" | module Eliom_content.Html5.C >>~]|<<div class="odocwiki_info"|~See ~Eliom manual for more detail on
         <<a_manual chapter="clientserver-html" fragment="inject" | Dom & Client-values >>~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="node"| value Eliom_content.Svg.C.node >> ~[<<a_api subproject="server" | module Eliom_content.Svg.C >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="node"| value Eliom_content.Svg.R.node >> ~[<<a_api subproject="server" | module Eliom_content.Svg.R >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|node s>> produces an <<span class="odocwiki_inlinecode"|~'a elt>> out of the shared reactive
+        signal <<span class="odocwiki_inlinecode"|s>>~.
+>>
+|
 |@@ @style="tet-align: left;"@@\\O|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="ocaml"| value Eliom_parameter.ocaml >> ~[<<a_api subproject="server" | module Eliom_parameter >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|ocaml s>> tells that the service is expecting some caml ~(client side~)
     program to send some value of type ~'a~, marshaled~.
@@ -1774,7 +1789,6 @@
 >>
 |
 |@@ @style="tet-align: left;"@@\\P|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="p"| value Eliom_csreact.R.p >> ~[<<a_api subproject="server" | module Eliom_csreact.R >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="pape"| value Eliom_openid.pape >> ~[<<a_api subproject="server" | module Eliom_openid >>~]|<<div class="odocwiki_info"|~The nist level
 >>
 |
@@ -1790,7 +1804,14 @@ foobar:value}}}
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="path"| value Eliom_openid.HiddenServiceInfo.path >> ~[<<a_api subproject="server" | module Eliom_openid.HiddenServiceInfo >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="pcdata"| value Eliom_csreact.R.pcdata >> ~[<<a_api subproject="server" | module Eliom_csreact.R >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="pcdata"| value Eliom_content.Html5.R.pcdata >> ~[<<a_api subproject="server" | module Eliom_content.Html5.R >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|pcdata s>> produces a node of type
+        <<span class="odocwiki_inlinecode"|~[~> ~Html~5~_types~.span~] elt>>
+        out of the string signal <<span class="odocwiki_inlinecode"|s>>~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="pcdata"| value Eliom_content.Svg.R.pcdata >> ~[<<a_api subproject="server" | module Eliom_content.Svg.R >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|pcdata>> is not implemented reactively for ~S~V~G~.
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="perform_discovery"| value Eliom_openid.perform_discovery >> ~[<<a_api subproject="server" | module Eliom_openid >>~]|<<div class="odocwiki_info"|~Perform discovery on an user~-supplied url
 >>
 |
@@ -3304,14 +3325,12 @@ foobar:value}}}
    in seconds~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="singleton_s"| value Eliom_csreact.SharedReactiveData.RList.singleton_s >> ~[<<a_api subproject="server" | module Eliom_csreact.SharedReactiveData.RList >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="singleton_s"| value Eliom_csreact.FakeReactiveData.RList.singleton_s >> ~[<<a_api subproject="server" | module Eliom_csreact.FakeReactiveData.RList >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="singleton_s"| value Eliom_shared_sigs.RLIST.singleton_s >> ~[<<a_api subproject="server" | module Eliom_shared_sigs.RLIST >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="site_scope"| value Eliom_common.site_scope >> ~[<<a_api subproject="server" | module Eliom_common >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="source"| value Atom_feed.source >> ~[<<a_api subproject="server" | module Atom_feed >>~]|<<div class="odocwiki_info"|~Source tag
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="sp"| value Eliom_types.sp >> ~[<<a_api subproject="server" | module Eliom_types >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="span"| value Eliom_csreact.R.span >> ~[<<a_api subproject="server" | module Eliom_csreact.R >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="sreg"| value Eliom_openid.sreg >> ~[<<a_api subproject="server" | module Eliom_openid >>~]|<<div class="odocwiki_info"|~The ~S~R~E~G extension
 >>
 |
@@ -3484,8 +3503,15 @@ foobar:value}}}
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="summary"| value Atom_feed.summary >> ~[<<a_api subproject="server" | module Atom_feed >>~]|<<div class="odocwiki_info"|~Summary tag
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="switch"| value Eliom_csreact.SharedReact.S.switch >> ~[<<a_api subproject="server" | module Eliom_csreact.SharedReact.S >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="switch"| value Eliom_csreact.FakeReact.S.switch >> ~[<<a_api subproject="server" | module Eliom_csreact.FakeReact.S >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="switch"| value Eliom_shared_sigs.S.switch >> ~[<<a_api subproject="server" | module Eliom_shared_sigs.S >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="synced"| value Eliom_shared.ReactiveData.RList.synced >> ~[<<a_api subproject="server" | module Eliom_shared.ReactiveData.RList >>~]|<<div class="odocwiki_info"|~If <<span class="odocwiki_inlinecode"|synced l>> is true~, then the server~-side and client~-side
+        values of <<span class="odocwiki_inlinecode"|l>> are equal~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="synced"| value Eliom_shared.React.S.synced >> ~[<<a_api subproject="server" | module Eliom_shared.React.S >>~]|<<div class="odocwiki_info"|~If <<span class="odocwiki_inlinecode"|synced s>> is true~, then the server~-side and client~-side
+        values of <<span class="odocwiki_inlinecode"|s>> are equal~.
+>>
+|
 |@@ @style="tet-align: left;"@@\\T|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="textarea"| value Eliom_mkforms.MakeForms.textarea >> ~[<<a_api subproject="server" | module Eliom_mkforms.MakeForms >>~]|<<div class="odocwiki_info"|~Creates a <<span class="odocwiki_inlinecode"|~<textarea~>>> tag
 >>
@@ -3507,7 +3533,10 @@ foobar:value}}}
       be manipulated as a standard event~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="to_signal"| value Eliom_csreact.to_signal >> ~[<<a_api subproject="server" | module Eliom_csreact >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="to_signal"| value Eliom_shared.to_signal >> ~[<<a_api subproject="server" | module Eliom_shared >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|to~_signal ~~init s>> converts the ~Lwt~-wrapped signal <<span class="odocwiki_inlinecode"|s>> into a
+    regular signal with initial value <<span class="odocwiki_inlinecode"|init>>~.
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="type_checker"| value Eliom_parameter.type_checker >> ~[<<a_api subproject="server" | module Eliom_parameter >>~]|<<div class="odocwiki_info"|~Specifying parameter as <<span class="odocwiki_inlinecode"|type~_checker check t>>
     is equivalent as <<span class="odocwiki_inlinecode"|t>> but the check function is called after decoding the
     parameters~, allowing you to make more checks on the parameters before
@@ -3515,7 +3544,6 @@ foobar:value}}}
 >>
 |
 |@@ @style="tet-align: left;"@@\\U|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="ul"| value Eliom_csreact.R.ul >> ~[<<a_api subproject="server" | module Eliom_csreact.R >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="unit"| value Eliom_parameter.unit >> ~[<<a_api subproject="server" | module Eliom_parameter >>~]|<<div class="odocwiki_info"|~Specifying parameter as <<span class="odocwiki_inlinecode"|unit>> is used for services that don~'t have any parameters
 >>
 |
@@ -3706,12 +3734,9 @@ foobar:value}}}
 >>
 |
 |@@ @style="tet-align: left;"@@\\V|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="value"| value Eliom_csreact.RE.S.value >> ~[<<a_api subproject="server" | module Eliom_csreact.RE.S >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="value"| value Eliom_csreact.SharedReact.S.value >> ~[<<a_api subproject="server" | module Eliom_csreact.SharedReact.S >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="value"| value Eliom_csreact.FakeReactiveData.RList.value >> ~[<<a_api subproject="server" | module Eliom_csreact.FakeReactiveData.RList >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="value"| value Eliom_csreact.FakeReact.S.value >> ~[<<a_api subproject="server" | module Eliom_csreact.FakeReact.S >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="value_s"| value Eliom_csreact.SharedReactiveData.RList.value_s >> ~[<<a_api subproject="server" | module Eliom_csreact.SharedReactiveData.RList >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="value_s"| value Eliom_csreact.FakeReactiveData.RList.value_s >> ~[<<a_api subproject="server" | module Eliom_csreact.FakeReactiveData.RList >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="value"| value Eliom_shared_sigs.RLIST.value >> ~[<<a_api subproject="server" | module Eliom_shared_sigs.RLIST >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="value"| value Eliom_shared_sigs.S.value >> ~[<<a_api subproject="server" | module Eliom_shared_sigs.S >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="value_s"| value Eliom_shared_sigs.RLIST.value_s >> ~[<<a_api subproject="server" | module Eliom_shared_sigs.RLIST >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="void_coservice'"| value Eliom_service.void_coservice' >> ~[<<a_api subproject="server" | module Eliom_service >>~]|<<div class="odocwiki_info"|~The service <<span class="odocwiki_inlinecode"|void~_coservice~'>> is a predefined non~-attached action
     with special behaviour~: it has no parameter at all~, even
     non~-attached parameters~.

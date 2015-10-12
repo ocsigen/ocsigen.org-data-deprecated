@@ -176,7 +176,7 @@
   val make_process_node :
     ?id:string -> Eliom_content_core.Xml.elt -> Eliom_content_core.Xml.elt
   val make_request_node :
-    Eliom_content_core.Xml.elt -> Eliom_content_core.Xml.elt
+    ?reset:bool -> Eliom_content_core.Xml.elt -> Eliom_content_core.Xml.elt
   val get_node_id :
     Eliom_content_core.Xml.elt -> Eliom_content_core.Xml.node_id
   type node =

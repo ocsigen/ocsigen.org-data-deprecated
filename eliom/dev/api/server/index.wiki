@@ -120,6 +120,10 @@ file~.
     around~.
 >>
 |
+|<<a_api subproject="server" | module Eliom_shared >>|<<div class="odocwiki_info"|~This module implements shared ~(i~.e~.~, client~-server~) versions of
+    the ~React and ~Reactive~Data libraries~.
+>>
+|
 
 
 

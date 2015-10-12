@@ -131,7 +131,7 @@
       val force_lazy : elt -> unit
       val make_react : ?id:node_id -> elt React.signal -> elt
       val make_process_node : ?id:string -> elt -> elt
-      val make_request_node : elt -> elt
+      val make_request_node : ?reset:bool -> elt -> elt
       val get_node_id : elt -> node_id
       type node =
           DomNode of Dom.node Js.t
@@ -5210,6 +5210,9 @@
             id:'a Eliom_content.Svg.Id.id ->
             'a Eliom_content.Svg.elt -> 'a Eliom_content.Svg.elt
           val create_global_elt :
+            'a Eliom_content.Svg.elt -> 'a Eliom_content.Svg.elt
+          val create_request_elt :
+            ?reset:bool ->
             'a Eliom_content.Svg.elt -> 'a Eliom_content.Svg.elt
           val get_element :
             'a Eliom_content.Svg.Id.id -> 'a Eliom_content.Svg.elt option
@@ -16522,6 +16525,9 @@
             id:'a Eliom_content.Html5.Id.id ->
             'a Eliom_content.Html5.elt -> 'a Eliom_content.Html5.elt
           val create_global_elt :
+            'a Eliom_content.Html5.elt -> 'a Eliom_content.Html5.elt
+          val create_request_elt :
+            ?reset:bool ->
             'a Eliom_content.Html5.elt -> 'a Eliom_content.Html5.elt
           val get_element :
             'a Eliom_content.Html5.Id.id -> 'a Eliom_content.Html5.elt option

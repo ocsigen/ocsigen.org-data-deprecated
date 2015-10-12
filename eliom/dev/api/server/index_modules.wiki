@@ -83,9 +83,6 @@ file~.
     or keeping values in memory during a request~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Eliom_csreact"| module Eliom_csreact >> |<<div class="odocwiki_info"|~Same as map~_p but we do not compute the initial list~.
->>
-|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Eliom_extension"| module Eliom_extension >> |<<div class="odocwiki_info"|~Allows ~Ocsigen~'s extension to access ~Eliom data~.
 >>
 |
@@ -132,6 +129,13 @@ file~.
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Eliom_service"| module Eliom_service >> |<<div class="odocwiki_info"|~Creation and manipulation of ~Eliom services~.
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Eliom_shared"| module Eliom_shared >> |<<div class="odocwiki_info"|~This module implements shared ~(i~.e~.~, client~-server~) versions of
+    the ~React and ~Reactive~Data libraries~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Eliom_shared_sigs"| module Eliom_shared_sigs >> |<<div class="odocwiki_info"|~Accessing shared values
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Eliom_state"| module Eliom_state >> |<<div class="odocwiki_info"|~Storing server~-side values for your applications or sessions~.
 >>
 |
@@ -169,8 +173,11 @@ file~.
       semantics~)~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="FakeReact"| module Eliom_csreact.FakeReact >> ~[<<a_api subproject="server" | module Eliom_csreact >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="FakeReactiveData"| module Eliom_csreact.FakeReactiveData >> ~[<<a_api subproject="server" | module Eliom_csreact >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="FakeReactiveData"| module Eliom_shared.FakeReactiveData >> ~[<<a_api subproject="server" | module Eliom_shared >>~]|<<div class="odocwiki_info"|~This is a dummy ~Reactive~Data module that allows us to refer to
+    client~-side ~Reactive~Data types on the server side~, without
+    actually linking against ~Reactive~Data~.
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="File"| module Eliom_registration.File >> ~[<<a_api subproject="server" | module Eliom_registration >>~]|<<div class="odocwiki_info"|~Eliom service registration for services that returns file
     contents~.
 >>
@@ -212,12 +219,17 @@ file~.
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Id"| module Eliom_content.Svg.Id >> ~[<<a_api subproject="server" | module Eliom_content.Svg >>~]|<<div class="odocwiki_info"|~Node identifiers~.
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Infix"| module Eliom_shared_sigs.S.Infix >> ~[<<a_api subproject="server" | module Eliom_shared_sigs.S >>~]|<<div class="odocwiki_info"|~Infix operators
+>>
+|
 |@@ @style="tet-align: left;"@@\\L|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Low_level"| module Eliom_state.Ext.Low_level >> ~[<<a_api subproject="server" | module Eliom_state.Ext >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Lwt"| module Eliom_csreact.SharedReactiveData.RList.Lwt >> ~[<<a_api subproject="server" | module Eliom_csreact.SharedReactiveData.RList >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Lwt"| module Eliom_csreact.SharedReact.S.Lwt >> ~[<<a_api subproject="server" | module Eliom_csreact.SharedReact.S >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Lwt"| module Eliom_csreact.FakeReactiveData.RList.Lwt >> ~[<<a_api subproject="server" | module Eliom_csreact.FakeReactiveData.RList >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Lwt"| module Eliom_csreact.ReactiveData.RList.Lwt >> ~[<<a_api subproject="server" | module Eliom_csreact.ReactiveData.RList >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Lwt"| module Eliom_shared_sigs.RLIST.Lwt >> ~[<<a_api subproject="server" | module Eliom_shared_sigs.RLIST >>~]|<<div class="odocwiki_info"|~Cooperative versions of the ~Reactive~Data operators
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Lwt"| module Eliom_shared_sigs.S.Lwt >> ~[<<a_api subproject="server" | module Eliom_shared_sigs.S >>~]|<<div class="odocwiki_info"|~Cooperative versions of the ~React operators
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Lwt_log"| module Eliom_lib.Lwt_log >> ~[<<a_api subproject="server" | module Eliom_lib >>~]||
 |@@ @style="tet-align: left;"@@\\M|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Make"| module Eliom_openid.Make >> ~[<<a_api subproject="server" | module Eliom_openid >>~]|<<div class="odocwiki_info"|~This functor build a hidden service that will be used
@@ -246,37 +258,43 @@ file~.
 >>
 |
 |@@ @style="tet-align: left;"@@\\R|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="R"| module Eliom_csreact.R >> ~[<<a_api subproject="server" | module Eliom_csreact >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="RList"| module Eliom_csreact.SharedReactiveData.RList >> ~[<<a_api subproject="server" | module Eliom_csreact.SharedReactiveData >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="RList"| module Eliom_csreact.FakeReactiveData.RList >> ~[<<a_api subproject="server" | module Eliom_csreact.FakeReactiveData >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="RList"| module Eliom_csreact.ReactiveData.RList >> ~[<<a_api subproject="server" | module Eliom_csreact.ReactiveData >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="R"| module Eliom_content.Html5.R >> ~[<<a_api subproject="server" | module Eliom_content.Html5 >>~]|<<div class="odocwiki_info"|~Creation of ~H~T~M~L~5 content from shared reactive signals and data
+      ~(<<a_api project="eliom" subproject="server"|module Eliom_shared>> ~)~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="R"| module Eliom_content.Svg.R >> ~[<<a_api subproject="server" | module Eliom_content.Svg >>~]|<<div class="odocwiki_info"|~Creation of ~S~V~G content from shared reactive signals and data
+      ~(<<a_api project="eliom" subproject="server"|module Eliom_shared>> ~)~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="RList"| module Eliom_shared.ReactiveData.RList >> ~[<<a_api subproject="server" | module Eliom_shared.ReactiveData >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="RList"| module Eliom_shared.FakeReactiveData.RList >> ~[<<a_api subproject="server" | module Eliom_shared.FakeReactiveData >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Raw"| module Eliom_content.Html5.D.Raw >> ~[<<a_api subproject="server" | module Eliom_content.Html5.D >>~]|<<div class="odocwiki_info"|~See <<a_api project="tyxml" | module Html5_sigs.T >> ~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Raw"| module Eliom_content.Html5.F.Raw >> ~[<<a_api subproject="server" | module Eliom_content.Html5.F >>~]|<<div class="odocwiki_info"|~See <<a_api project="tyxml" | module Html5_sigs.T >> ~.
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Raw"| module Eliom_content.Svg.R.Raw >> ~[<<a_api subproject="server" | module Eliom_content.Svg.R >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Raw"| module Eliom_content.Svg.D.Raw >> ~[<<a_api subproject="server" | module Eliom_content.Svg.D >>~]|<<div class="odocwiki_info"|~See <<a_api project="tyxml" | module Html5_sigs.T >> ~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Raw"| module Eliom_content.Svg.F.Raw >> ~[<<a_api subproject="server" | module Eliom_content.Svg.F >>~]|<<div class="odocwiki_info"|~See <<a_api project="tyxml" | module Html5_sigs.T >> ~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="React"| module Eliom_csreact.React >> ~[<<a_api subproject="server" | module Eliom_csreact >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="ReactiveData"| module Eliom_csreact.ReactiveData >> ~[<<a_api subproject="server" | module Eliom_csreact >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="React"| module Eliom_shared.React >> ~[<<a_api subproject="server" | module Eliom_shared >>~]|<<div class="odocwiki_info"|~Shared implementation of ~React
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="ReactiveData"| module Eliom_shared.ReactiveData >> ~[<<a_api subproject="server" | module Eliom_shared >>~]|<<div class="odocwiki_info"|~Shared implementation of ~Reactive~Data
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Redirection"| module Eliom_registration.Redirection >> ~[<<a_api subproject="server" | module Eliom_registration >>~]|<<div class="odocwiki_info"|~Eliom service registration for services that returns a redirections
     towards another service~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Reg"| module Eliom_atom.Reg >> ~[<<a_api subproject="server" | module Eliom_atom >>~]||
 |@@ @style="tet-align: left;"@@\\S|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="S"| module Eliom_csreact.RE.S >> ~[<<a_api subproject="server" | module Eliom_csreact.RE >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="S"| module Eliom_csreact.SharedReact.S >> ~[<<a_api subproject="server" | module Eliom_csreact.SharedReact >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="S"| module Eliom_csreact.FakeReact.S >> ~[<<a_api subproject="server" | module Eliom_csreact.FakeReact >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="S"| module Eliom_shared.React.S >> ~[<<a_api subproject="server" | module Eliom_shared.React >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="S"| module Eliom_react.S >> ~[<<a_api subproject="server" | module Eliom_react >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Shared"| module Eliom_csreact.Shared >> ~[<<a_api subproject="server" | module Eliom_csreact >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="SharedReact"| module Eliom_csreact.SharedReact >> ~[<<a_api subproject="server" | module Eliom_csreact >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="SharedReactiveData"| module Eliom_csreact.SharedReactiveData >> ~[<<a_api subproject="server" | module Eliom_csreact >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Streamlist"| module Eliom_registration.Streamlist >> ~[<<a_api subproject="server" | module Eliom_registration >>~]|<<div class="odocwiki_info"|~Eliom service registration for services that returns "byte"
     contents with <<a_api project="ocsigenserver" text="Ocsigen's
     streams"| module Ocsigen_stream>>~.
@@ -304,6 +322,9 @@ file~.
 >>
 |
 |@@ @style="tet-align: left;"@@\\V|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Value"| module Eliom_shared.Value >> ~[<<a_api subproject="server" | module Eliom_shared >>~]|<<div class="odocwiki_info"|~Accessing shared values
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Volatile"| module Eliom_reference.Volatile >> ~[<<a_api subproject="server" | module Eliom_reference >>~]|<<div class="odocwiki_info"|~Same functions as in <<span class="odocwiki_inlinecode"|~Eliom~_reference>> but a non~-~Lwt interface
     for non~-persistent ~Eliom references~.
 >>
@@ -312,4 +333,5 @@ file~.
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Xml"| module Eliom_content.Xml >> ~[<<a_api subproject="server" | module Eliom_content >>~]|<<div class="odocwiki_info"|~Low~-level ~X~M~L manipulation~.
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Xml_shared"| module Eliom_content.Xml_shared >> ~[<<a_api subproject="server" | module Eliom_content >>~]||
 \\

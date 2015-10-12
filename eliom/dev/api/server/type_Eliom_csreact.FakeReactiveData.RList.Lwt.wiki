@@ -1,6 +1,0 @@
-<<code language="ocaml" | sig
-  val map_p :
-    ('a -> 'b Lwt.t) ->
-    'a Eliom_csreact.FakeReactiveData.??.t ->
-    'b Eliom_csreact.FakeReactiveData.??.t Lwt.t
-end >>
