@@ -7,7 +7,7 @@
     ('a -> 'b) Eliom_lib.shared_value ->
     'a Eliom_shared_sigs.S.t -> 'b Eliom_shared_sigs.S.t
   val merge :
-    ?eq:('a -> 'a -> bool) ->
+    ?eq:('a -> 'a -> bool) Eliom_lib.shared_value ->
     ('a -> 'b -> 'a) Eliom_lib.shared_value ->
     'a -> 'b Eliom_shared_sigs.S.t list -> 'a Eliom_shared_sigs.S.t
   val l2 :
