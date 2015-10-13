@@ -733,7 +733,6 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="format_url"| value Eliom_s2s.format_url >> ~[<<a_api subproject="server" | module Eliom_s2s >>~]|<<div class="odocwiki_info"|~Format a url with a base and ~G~E~T parameters
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="from_signal"| value Eliom_shared_sigs.RLIST.from_signal >> ~[<<a_api subproject="server" | module Eliom_shared_sigs.RLIST >>~]||
 |@@ @style="tet-align: left;"@@\\G|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="get"| value Eliom_reference.Ext.get >> ~[<<a_api subproject="server" | module Eliom_reference.Ext >>~]|<<div class="odocwiki_info"|get the value of a reference from outside the state~.
 >>

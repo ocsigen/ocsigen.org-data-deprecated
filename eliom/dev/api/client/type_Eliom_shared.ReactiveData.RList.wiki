@@ -29,7 +29,6 @@
              Eliom_lib.client_value ->
     ?reset_default:bool -> 'a list -> 'a t * 'a handle
   val concat : 'a t -> 'a t -> 'a t
-  val from_signal : 'a list React.S.t -> 'a t
   val value : 'a t -> 'a list Eliom_lib.shared_value
   val value_s : 'a t -> 'a list React.S.t
   val singleton_s : 'a React.S.t -> 'a t

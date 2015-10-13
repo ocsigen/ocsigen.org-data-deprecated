@@ -14,8 +14,6 @@
   val concat :
     'a Eliom_shared_sigs.RLIST.t ->
     'a Eliom_shared_sigs.RLIST.t -> 'a Eliom_shared_sigs.RLIST.t
-  val from_signal :
-    'a list Eliom_shared_sigs.RLIST.signal -> 'a Eliom_shared_sigs.RLIST.t
   val value : 'a Eliom_shared_sigs.RLIST.t -> 'a list Eliom_lib.shared_value
   val value_s :
     'a Eliom_shared_sigs.RLIST.t -> 'a list Eliom_shared_sigs.RLIST.signal

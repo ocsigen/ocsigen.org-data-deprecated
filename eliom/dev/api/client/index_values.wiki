@@ -653,7 +653,6 @@
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="from_fun"| value Eliom_lazy.from_fun >> ~[<<a_api subproject="client" | module Eliom_lazy >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="from_signal"| value Eliom_shared_sigs.RLIST.from_signal >> ~[<<a_api subproject="client" | module Eliom_shared_sigs.RLIST >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="from_val"| value Eliom_lazy.from_val >> ~[<<a_api subproject="client" | module Eliom_lazy >>~]||
 |@@ @style="tet-align: left;"@@\\G|
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="get_default_hostname"| value Eliom_config.get_default_hostname >> ~[<<a_api subproject="client" | module Eliom_config >>~]||
