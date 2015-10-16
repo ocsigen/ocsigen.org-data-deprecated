@@ -613,6 +613,6 @@
           name:string ->
           string Eliom_mkforms.MakeForms.select_opt ->
           string Eliom_mkforms.MakeForms.select_opt list -> Pages.select_elt
-        val a_for : 'a Eliom_parameter.param_name -> Pages.for_attrib
+        val a_for : string -> Pages.for_attrib
       end
 end >>

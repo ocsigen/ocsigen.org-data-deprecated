@@ -523,5 +523,5 @@
     string Eliom_content.Forms.select_opt ->
     string Eliom_content.Forms.select_opt list ->
     Eliom_content.Forms.select_elt
-  val a_for : 'a Eliom_parameter.param_name -> Eliom_content.Forms.for_attrib
+  val a_for : string -> Eliom_content.Forms.for_attrib
 end >>

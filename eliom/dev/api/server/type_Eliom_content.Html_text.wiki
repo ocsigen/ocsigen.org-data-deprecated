@@ -433,5 +433,5 @@
     name:string ->
     string Eliom_content.Html_text.select_opt ->
     string Eliom_content.Html_text.select_opt list -> string
-  val a_for : 'a Eliom_parameter.param_name -> string
+  val a_for : string -> string
 end >>

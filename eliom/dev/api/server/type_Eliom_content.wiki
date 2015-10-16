@@ -541,8 +541,7 @@
         string Eliom_content.Forms.select_opt ->
         string Eliom_content.Forms.select_opt list ->
         Eliom_content.Forms.select_elt
-      val a_for :
-        'a Eliom_parameter.param_name -> Eliom_content.Forms.for_attrib
+      val a_for : string -> Eliom_content.Forms.for_attrib
     end
   module Xml :
     sig
@@ -9753,9 +9752,7 @@
             string Eliom_content.Html5.F.select_opt ->
             string Eliom_content.Html5.F.select_opt list ->
             [> Html5_types.select ] Eliom_content.Html5.elt
-          val a_for :
-            'a Eliom_parameter.param_name ->
-            [> `For ] Eliom_content.Html5.attrib
+          val a_for : string -> [> `For ] Eliom_content.Html5.attrib
           val raw_form :
             ([< Html5_types.form_attrib ], [< Html5_types.form_content_fun ],
              [> Html5_types.form ])
@@ -13761,9 +13758,7 @@
             string Eliom_content.Html5.D.select_opt ->
             string Eliom_content.Html5.D.select_opt list ->
             [> Html5_types.select ] Eliom_content.Html5.elt
-          val a_for :
-            'a Eliom_parameter.param_name ->
-            [> `For ] Eliom_content.Html5.attrib
+          val a_for : string -> [> `For ] Eliom_content.Html5.attrib
           val raw_form :
             ([< Html5_types.form_attrib ], [< Html5_types.form_content_fun ],
              [> Html5_types.form ])
@@ -15887,7 +15882,7 @@
         name:string ->
         string Eliom_content.Html_text.select_opt ->
         string Eliom_content.Html_text.select_opt list -> string
-      val a_for : 'a Eliom_parameter.param_name -> string
+      val a_for : string -> string
     end
   val set_client_fun :
     ('a, 'b, [< Eliom_service.service_method ], [< Eliom_service.attached ],

@@ -3809,8 +3809,7 @@
         string Eliom_content.Html5.F.select_opt ->
         string Eliom_content.Html5.F.select_opt list ->
         [> Html5_types.select ] Eliom_content.Html5.elt
-      val a_for :
-        'a Eliom_parameter.param_name -> [> `For ] Eliom_content.Html5.attrib
+      val a_for : string -> [> `For ] Eliom_content.Html5.attrib
       val raw_form :
         ([< Html5_types.form_attrib ], [< Html5_types.form_content_fun ],
          [> Html5_types.form ])
@@ -7677,8 +7676,7 @@
         string Eliom_content.Html5.D.select_opt ->
         string Eliom_content.Html5.D.select_opt list ->
         [> Html5_types.select ] Eliom_content.Html5.elt
-      val a_for :
-        'a Eliom_parameter.param_name -> [> `For ] Eliom_content.Html5.attrib
+      val a_for : string -> [> `For ] Eliom_content.Html5.attrib
       val raw_form :
         ([< Html5_types.form_attrib ], [< Html5_types.form_content_fun ],
          [> Html5_types.form ])
