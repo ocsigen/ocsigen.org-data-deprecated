@@ -36,9 +36,8 @@
     ~Use the optional parameter <<span class="odocwiki_inlinecode"|~~secure~:true>> if you want the data to
     be available only using ~H~T~T~P~S~. ~This parameter has no effect for
     scopes <<a_api subproject="server" | val Eliom_common.global_scope >>~, <<a_api subproject="server" | val Eliom_common.site_scope >>~, and
-    <<a_api subproject="server" | val Eliom_common.request_scope >>~.
-
-
+    <<a_api subproject="server" | val Eliom_common.request_scope >>~. ~The default is <<span class="odocwiki_inlinecode"|false>>~, but this default
+    can be changed in configuration file ~(<<span class="odocwiki_inlinecode"|~<securecookies value~="true"~/~>>>~)~.
     //~Warning~: ~Eliom references of scope <<a_api subproject="server" | val Eliom_common.global_scope >>~,
     <<a_api subproject="server" | val Eliom_common.site_scope >> or
     <<a_api subproject="server" | val Eliom_common.request_scope >> may be created at any time ~; but for other

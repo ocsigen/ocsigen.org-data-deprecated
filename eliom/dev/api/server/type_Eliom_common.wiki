@@ -452,6 +452,7 @@
     mutable max_persistent_data_tab_sessions_per_group : int option * bool;
     mutable max_anonymous_services_per_session : int * bool;
     mutable max_anonymous_services_per_subnet : int * bool;
+    mutable secure_cookies : bool;
     dlist_ip_table : Eliom_common.dlist_ip_table;
     mutable ipv4mask : int option * bool;
     mutable ipv6mask : int option * bool;
@@ -596,4 +597,5 @@
   }
   val get_site_dir : Eliom_common.sitedata -> Eliom_lib.Url.path
   val get_site_dir_string : Eliom_common.sitedata -> string
+  val get_secure : bool option -> Eliom_common.sitedata -> bool
 end >>
