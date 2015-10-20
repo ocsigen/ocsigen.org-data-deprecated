@@ -43,6 +43,7 @@
         <<span class="odocwiki_inlinecode"|handler>> for the event <<span class="odocwiki_inlinecode"|evt>> on the element <<span class="odocwiki_inlinecode"|elt>>~.
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="add_get_args"| value Eliom_lib.Url.add_get_args >> ~[<<a_api subproject="client" | module Eliom_lib.Url >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="add_nl_parameter"| value Eliom_parameter.add_nl_parameter >> ~[<<a_api subproject="client" | module Eliom_parameter >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="add_non_localized_get_parameters"| value Eliom_service.add_non_localized_get_parameters >> ~[<<a_api subproject="client" | module Eliom_service >>~]|<<div class="odocwiki_info"|~Localized parameters
 >>
@@ -1687,6 +1688,7 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="replaceSelf"| value Eliom_content.Svg.Manip.replaceSelf >> ~[<<a_api subproject="client" | module Eliom_content.Svg.Manip >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|replace~Self elt~1 elt~2>> replaces <<span class="odocwiki_inlinecode"|elt~1>> by <<span class="odocwiki_inlinecode"|elt~2>>~.
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="resolve"| value Eliom_lib.Url.resolve >> ~[<<a_api subproject="client" | module Eliom_lib.Url >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="right"| value Eliom_content.Html5.Manip.SetCss.right >> ~[<<a_api subproject="client" | module Eliom_content.Html5.Manip.SetCss >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="right"| value Eliom_content.Html5.Manip.Css.right >> ~[<<a_api subproject="client" | module Eliom_content.Html5.Manip.Css >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="rightPx"| value Eliom_content.Html5.Manip.SetCss.rightPx >> ~[<<a_api subproject="client" | module Eliom_content.Html5.Manip.SetCss >>~]||
