@@ -3,7 +3,8 @@
 
 
     ~To migrate from the camlp~4 extension~, it is advised to use
-    [[ https://github.com/janestreet/camlp4-to-ppx|camlp~4~-to~-ppx]]~.
+    [[https://github.com/janestreet/camlp4-to-ppx|camlp~4~-to~-ppx]]~,
+    which provides built~-in support for ~Js~_of~_ocaml syntax~.
 
 ----
 <<pre id="VALjs_mapper" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|js~_mapper>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|string list <<span class="ocsforge_color_delimiter"| -> >> <<span class="ocsforge_color_lid"|Ast_mapper>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|mapper>>>>>><<div class="odocwiki_info"|~A syntax extension is available for manipulating object properties~,
