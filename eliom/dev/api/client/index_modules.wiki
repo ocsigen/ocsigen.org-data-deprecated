@@ -202,14 +202,14 @@
 |
 |@@ @style="tet-align: left;"@@\\R|
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="R"| module Eliom_content_core.Html5.R >> ~[<<a_api subproject="client" | module Eliom_content_core.Html5 >>~]|<<div class="odocwiki_info"|~Typed interface for building valid ~H~T~M~L~5 tree from
-      [[ http://erratique.ch/software/react| ~React ]] signals~.
+      [[http://erratique.ch/software/react| ~React]] signals~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="R"| module Eliom_content_core.Svg.R >> ~[<<a_api subproject="client" | module Eliom_content_core.Svg >>~]|<<div class="odocwiki_info"|~Typed interface for building valid reactive ~S~V~G tree~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="R"| module Eliom_content.Html5.R >> ~[<<a_api subproject="client" | module Eliom_content.Html5 >>~]|<<div class="odocwiki_info"|~Creation of ~H~T~M~L~5 content from
-      [[ http://erratique.ch/software/react| ~React ]] signals~.
+      [[http://erratique.ch/software/react| ~React]] signals~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="R"| module Eliom_content.Svg.R >> ~[<<a_api subproject="client" | module Eliom_content.Svg >>~]|<<div class="odocwiki_info"|~Creation of reactive content

@@ -12,7 +12,7 @@
 <<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module>> <<a_api subproject="client" text="D" | module Eliom_content.Html5.D >> <<span class="ocsforge_color_delimiter"|~:>> <<span class="ocsforge_color_keyword"|sig>><<a_api subproject="client" text=".." | module Eliom_content.Html5.D >><<span class="ocsforge_color_keyword"|end>>>><<div class="odocwiki_info"|~Creation of ~H~T~M~L~5 content with //~D//~O~M semantics ~(referable~)
 >>
 <<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module>> <<a_api subproject="client" text="R" | module Eliom_content.Html5.R >> <<span class="ocsforge_color_delimiter"|~:>> <<span class="ocsforge_color_keyword"|sig>><<a_api subproject="client" text=".." | module Eliom_content.Html5.R >><<span class="ocsforge_color_keyword"|end>>>><<div class="odocwiki_info"|~Creation of ~H~T~M~L~5 content from
-      [[ http://erratique.ch/software/react| ~React ]] signals~.
+      [[http://erratique.ch/software/react| ~React]] signals~.
 >>
 <<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module>> <<a_api subproject="client" text="C" | module Eliom_content.Html5.C >> <<span class="ocsforge_color_delimiter"|~:>> <<span class="ocsforge_color_keyword"|sig>><<a_api subproject="client" text=".." | module Eliom_content.Html5.C >><<span class="ocsforge_color_keyword"|end>>>><<div class="odocwiki_info"|~Creation of ~H~T~M~L~5 content from client~-side values~.
 >>

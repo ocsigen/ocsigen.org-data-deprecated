@@ -1,6 +1,6 @@
 =Module <<a_api_type subproject="client" | module Eliom_content.Html5.R >> =
 <<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module>> <<span class="ocsforge_color_uid"|<<span class="ocsforge_color_uid"|R>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="ocsforge_color_keyword"|sig>><<a_api subproject="client" text=".." | module Eliom_content.Html5.R >><<span class="ocsforge_color_keyword"|end>>>>~Creation of ~H~T~M~L~5 content from
-      [[ http://erratique.ch/software/react| ~React ]] signals~.
+      [[http://erratique.ch/software/react| ~React]] signals~.
       ~H~T~M~L~5~'s trees are automatically updated whenever
       corresponding signals change~.
 
