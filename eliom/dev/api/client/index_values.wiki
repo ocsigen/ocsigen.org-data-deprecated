@@ -242,6 +242,7 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="color"| value Eliom_content.Html5.Manip.Css.color >> ~[<<a_api subproject="client" | module Eliom_content.Html5.Manip.Css >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="comma_sep_attrib"| value Eliom_content_core.Xml_wed.comma_sep_attrib >> ~[<<a_api subproject="client" | module Eliom_content_core.Xml_wed >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="concat"| value Eliom_shared_sigs.RLIST.concat >> ~[<<a_api subproject="client" | module Eliom_shared_sigs.RLIST >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="confirm"| value Eliom_lib.confirm >> ~[<<a_api subproject="client" | module Eliom_lib >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="cons_hidden_fieldset"| value Eliom_mkforms.FORMS_PARAM.cons_hidden_fieldset >> ~[<<a_api subproject="client" | module Eliom_mkforms.FORMS_PARAM >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="const"| value Eliom_shared_sigs.S.const >> ~[<<a_api subproject="client" | module Eliom_shared_sigs.S >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="construct_params"| value Eliom_parameter.construct_params >> ~[<<a_api subproject="client" | module Eliom_parameter >>~]||
@@ -1300,8 +1301,8 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="onmouseup"| value Eliom_content.Html5.Manip.Ev.onmouseup >> ~[<<a_api subproject="client" | module Eliom_content.Html5.Manip.Ev >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="onreturn"| value Eliom_content.Html5.Manip.Ev.onreturn >> ~[<<a_api subproject="client" | module Eliom_content.Html5.Manip.Ev >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="onscroll"| value Eliom_content.Html5.Manip.Ev.onscroll >> ~[<<a_api subproject="client" | module Eliom_content.Html5.Manip.Ev >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="onunload"| value Eliom_client.onunload >> ~[<<a_api subproject="client" | module Eliom_client >>~]|<<div class="odocwiki_info"|~Register a function to be called before changing the page the next
-    time~.
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="onunload"| value Eliom_client.onunload >> ~[<<a_api subproject="client" | module Eliom_client >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|onunload f>> registers <<span class="odocwiki_inlinecode"|f>> as a handler to be called before
+    changing the page the next time~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="opacity"| value Eliom_content.Html5.Manip.SetCss.opacity >> ~[<<a_api subproject="client" | module Eliom_content.Html5.Manip.SetCss >>~]||

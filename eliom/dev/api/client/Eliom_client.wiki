@@ -66,8 +66,22 @@
     }}
     >> 
 >>
-<<pre id="VALonunload" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|onunload>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<span class="ocsforge_color_delimiter"| ( >>unit <<span class="ocsforge_color_delimiter"| -> >> unit<<span class="ocsforge_color_delimiter"| ) >> <<span class="ocsforge_color_delimiter"| -> >> unit>>>><<div class="odocwiki_info"|~Register a function to be called before changing the page the next
-    time~.
+<<pre id="VALonunload" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|onunload>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<span class="ocsforge_color_delimiter"| ( >>unit <<span class="ocsforge_color_delimiter"| -> >> string option<<span class="ocsforge_color_delimiter"| ) >> <<span class="ocsforge_color_delimiter"| -> >> unit>>>><<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|onunload f>> registers <<span class="odocwiki_inlinecode"|f>> as a handler to be called before
+    changing the page the next time~. ~If <<span class="odocwiki_inlinecode"|f>> returns <<span class="odocwiki_inlinecode"|~Some s>>~, then we
+    ask the user to confirm quitting~. ~We try to use <<span class="odocwiki_inlinecode"|s>> in the
+    confirmation pop~-up~. <<span class="odocwiki_inlinecode"|~None>> means no confirmation needed~.
+
+
+    ~The callback <<span class="odocwiki_inlinecode"|f>> is sometimes trigerred by internal service calls~,
+    and sometimes by the browser <<span class="odocwiki_inlinecode"|onbeforeunload>> event~. ~In the
+    <<span class="odocwiki_inlinecode"|onbeforeunload>> case~, the confirmation pop~-up is managed by the
+    browser~. ~For ~Firefox~, the string <<span class="odocwiki_inlinecode"|s>> returned by <<span class="odocwiki_inlinecode"|f>> is ignored~:
+    https~:~/~/bugzilla~.mozilla~.org~/show~_bug~.cgi~?id~=~6~4~1~5~0~9
+
+
+    <<span class="odocwiki_inlinecode"|onunload>> can be used to register multiple callbacks~. ~If the user
+    decides to stay~, we call any remaining callbacks~, but these cannot
+    ask for further confirmation~.
 >>
 <<pre id="VALwait_load_end" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|wait~_load~_end>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|unit <<span class="ocsforge_color_delimiter"| -> >> unit <<span class="ocsforge_color_uid"|Lwt>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>>>>>><<div class="odocwiki_info"|~Wait for the initialization phase to terminate
 >>

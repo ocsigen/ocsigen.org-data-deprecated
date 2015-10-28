@@ -104,7 +104,7 @@
     ?upload_progress:(int -> int -> unit) ->
     ?override_mime_type:string -> 'a -> 'b -> string Lwt.t
   val onload : (unit -> unit) -> unit
-  val onunload : (unit -> unit) -> unit
+  val onunload : (unit -> string option) -> unit
   val wait_load_end : unit -> unit Lwt.t
   val in_onload : unit -> bool
   val getElementById : string -> Dom.node Js.t
