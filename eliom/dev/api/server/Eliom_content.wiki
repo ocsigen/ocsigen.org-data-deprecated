@@ -11,7 +11,7 @@
 
 
 * ~If you want to generate typed ~H~T~M~L~, use <<a_api subproject="server" | module Eliom_content.Html5 >>~,
-* ~If you want to write untyped html~, use <<a_api subproject="server" | module Eliom_content.Html_text >>~,
+* ~If you want to write untyped html~, use <<span class="odocwiki_inlinecode"|~Eliom~_content~.~Html~_text>>~,
 * ~If you want to generate typed svg~, use <<a_api subproject="server" | module Eliom_content.Svg >>~.
 
     ~Modules <<a_api subproject="server" | module Eliom_content.Html5 >>~, <<a_api subproject="server" | module Eliom_content.Svg >> contain two
@@ -75,14 +75,9 @@
    **~Please read
    <<a_manual chapter="clientserver-html"|Eliom's manual>>
    to learn how to generate ~H~T~M~L~. **
-<<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module type>> <<a_api subproject="server" text="Forms" | module type Eliom_content.Forms >> <<span class="ocsforge_color_delimiter"|~=>> <<span class="ocsforge_color_keyword"|sig>><<a_api subproject="server" text=".." | module type Eliom_content.Forms >><<span class="ocsforge_color_keyword"|end>>>><<div class="odocwiki_info"|~Abstract signature for links and forms creation functions~, for
-    concrete instances see <<a_api subproject="server" | module Eliom_content.Html5 >>~, or <<a_api subproject="server" | module Eliom_content.Html_text >>~.
->>
 <<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module>> <<a_api subproject="server" text="Xml" | module Eliom_content.Xml >> <<span class="ocsforge_color_delimiter"|~:>> <<span class="ocsforge_color_keyword"|sig>><<a_api subproject="server" text=".." | module Eliom_content.Xml >><<span class="ocsforge_color_keyword"|end>>>><<div class="odocwiki_info"|~Low~-level ~X~M~L manipulation~.
 >>
 <<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module>> <<a_api subproject="server" text="Xml_shared" | module Eliom_content.Xml_shared >> <<span class="ocsforge_color_delimiter"|~:>> \\  <<span class="odocwiki_type"|<<span class="ocsforge_color_uid"|Xml_sigs.T>>>><<span class="odocwiki_type"| with type 'a W.t = 'a <<a_api subproject="server" text="Eliom_shared.React.S" | module Eliom_shared.React.S >>.t\\  and type 'a W.tlist = 'a <<a_api subproject="server" text="Eliom_shared.ReactiveData.RList" | module Eliom_shared.ReactiveData.RList >>.t\\  and\\    type event_handler = (Dom_html.event Js.t -> unit) Eliom_lib.client_value\\  and\\    type mouse_event_handler =\\      (Dom_html.mouseEvent Js.t -> unit) Eliom_lib.client_value\\  and\\    type keyboard_event_handler =\\      (Dom_html.keyboardEvent Js.t -> unit) Eliom_lib.client_value>>>><<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module>> <<a_api subproject="server" text="Svg" | module Eliom_content.Svg >> <<span class="ocsforge_color_delimiter"|~:>> <<span class="ocsforge_color_keyword"|sig>><<a_api subproject="server" text=".." | module Eliom_content.Svg >><<span class="ocsforge_color_keyword"|end>>>><<div class="odocwiki_info"|~Building and pretty~-printing valid ~S~V~G tree~.
 >>
 <<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module>> <<a_api subproject="server" text="Html5" | module Eliom_content.Html5 >> <<span class="ocsforge_color_delimiter"|~:>> <<span class="ocsforge_color_keyword"|sig>><<a_api subproject="server" text=".." | module Eliom_content.Html5 >><<span class="ocsforge_color_keyword"|end>>>><<div class="odocwiki_info"|~Building and printing valid ~H~T~M~L~5 tree~.
->>
-<<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module>> <<a_api subproject="server" text="Html_text" | module Eliom_content.Html_text >> <<span class="ocsforge_color_delimiter"|~:>> <<span class="ocsforge_color_keyword"|sig>><<a_api subproject="server" text=".." | module Eliom_content.Html_text >><<span class="ocsforge_color_keyword"|end>>>><<div class="odocwiki_info"|~Generate untyped html as text~.
 >>

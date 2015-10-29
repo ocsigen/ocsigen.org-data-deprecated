@@ -11,10 +11,6 @@
    generating form widgets for your own types of pages~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Forms"| module type Eliom_content.Forms >> ~[<<a_api subproject="server" | module Eliom_content >>~]|<<div class="odocwiki_info"|~Abstract signature for links and forms creation functions~, for
-    concrete instances see <<a_api subproject="server" | module Eliom_content.Html5 >>~, or <<a_api subproject="server" | module Eliom_content.Html_text >>~.
->>
-|
 |@@ @style="tet-align: left;"@@\\H|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="HTML5_TOOLS"| module type Eliom_tools.HTML5_TOOLS >> ~[<<a_api subproject="server" | module Eliom_tools >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="HiddenServiceInfo"| module type Eliom_openid.HiddenServiceInfo >> ~[<<a_api subproject="server" | module Eliom_openid >>~]|<<div class="odocwiki_info"|~Information about the hidden service

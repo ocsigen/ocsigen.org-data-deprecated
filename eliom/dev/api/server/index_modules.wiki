@@ -206,9 +206,6 @@ file~.
     page~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Html_text"| module Eliom_content.Html_text >> ~[<<a_api subproject="server" | module Eliom_content >>~]|<<div class="odocwiki_info"|~Generate untyped html as text~.
->>
-|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Http"| module Eliom_service.Http >> ~[<<a_api subproject="server" | module Eliom_service >>~]|<<div class="odocwiki_info"|~Default module for creating services
 >>
 |
