@@ -94,9 +94,9 @@
 * <<span class="odocwiki_inlinecode"| ~'tipo>> the type paremeter of subtype <<a_api subproject="server" | type Eliom_service.suff >> states the kind
       of parameters it uses~: suffix or not~.
 * <<span class="odocwiki_inlinecode"| ~'gn>> is the type of ~G~E~T parameters names~. ~See <<a_api subproject="server" | type Eliom_parameter.param_name >> and
-            form generation functions ~(e~. g~. <<a_api subproject="server" | val Eliom_content.Html5.D.get_form >>~)~.
+            form generation functions ~(e~. g~. <<span class="odocwiki_inlinecode"|~Eliom~_content~.~Html~5~.~D~.get~_form>>~)~.
 * <<span class="odocwiki_inlinecode"| ~'pn>> is the type of ~P~O~S~T parameters names~. ~See <<a_api subproject="server" | type Eliom_parameter.param_name >> and
-            form generation functions ~(e~. g~. <<a_api subproject="server" | val Eliom_content.Html5.D.post_form >>~)~.
+            form generation functions ~(e~. g~. <<span class="odocwiki_inlinecode"|~Eliom~_content~.~Html~5~.~D~.post~_form>>~)~.
 * <<span class="odocwiki_inlinecode"| ~'reg>> the type parameter of subtype <<a_api subproject="server" | type Eliom_service.registrable >> tells if it is possible to
       register a handler on this service~.
 * <<span class="odocwiki_inlinecode"| ~'ret>> is an information on what the service returns~.

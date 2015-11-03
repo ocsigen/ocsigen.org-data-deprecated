@@ -22,9 +22,9 @@
 * <<span class="odocwiki_inlinecode"| ~'c>> is the type of the parameter name~, usually an instance of
     <<a_api subproject="server" | type Eliom_parameter.param_name >>~, as used by forms construction
     functions ~(e~. g~. the last parameter of
-    <<a_api subproject="server" | val Eliom_content.Html5.D.get_form >>~)~, and specialized form widget ~(see
+    <<span class="odocwiki_inlinecode"|~Eliom~_content~.~Html~5~.~D~.get~_form>>~)~, and specialized form widget ~(see
     for example the section
-    <<a_api subproject="server" text="~Form widget" | section Eliom_content.Html5.D.form_widgets >> of
+    ~Form widget of
     <<span class="odocwiki_inlinecode"|~Eliom~_content~.~H~T~M~L~5~.~D>>~)~. ~)
 
 <<pre class="ocsforge_color odocwiki_code" id="TYPEsuff"|<<span class="ocsforge_color_keyword"|type>> <<span class="odocwiki_name"|suff>> <<span class="ocsforge_color_delimiter"|~=>> <<span class="odocwiki_type"|[ `Endsuffix | `WithSuffix | `WithoutSuffix ]>> >><<div class="odocwiki_info"|~This type is used as a phantom type in <<a_api subproject="server" | type Eliom_parameter.params_type >> to describe

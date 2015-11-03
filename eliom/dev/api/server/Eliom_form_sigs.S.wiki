@@ -1,11 +1,5 @@
-=Functor <<a_api_type subproject="server" | module Eliom_mkforms.MakeForms >> =
-<<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module>> <<span class="ocsforge_color_uid"|<<span class="ocsforge_color_uid"|MakeForms>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_sig_block"|<<span class="ocsforge_color_keyword"|functor>> <<span class="ocsforge_color_delimiter"|(>>Pages <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<a_api subproject="server" text="Eliom_form_sigs.PARAM" | module Eliom_form_sigs.PARAM >>>><<span class="ocsforge_color_delimiter"|)>> <<span class="ocsforge_color_delimiter"|-~>>> \\  \\  <<span class="odocwiki_type"|<<a_api subproject="server" text="Eliom_form_sigs.S" | module Eliom_form_sigs.S >>>><<span class="odocwiki_type"| with type (+'a) elt = 'a Pages.elt\\  and type (+'a) attrib = 'a Pages.attrib and type uri := Pages.uri>>>>>>~This module defines the functor to use to creates modules
-    generating form widgets for your own types of pages~.  ~It is used
-    for example in <<a_api subproject="server" | module Eliom_registration >>~.
-<<div class="odocwiki_module_param_list" | <<span class="odocwiki_param_title" |Parameters :>><<div|
-|@@class="odocwiki_paramstable"@ @class="centertop fifteen code"@@{{{Pages}}}|@@class="centertop"@@:|<<span class="odocwiki_type"|Eliom_form_sigs.PARAM>>|
->>>>
-
+=Module type <<a_api_type subproject="server" | module type Eliom_form_sigs.S >> =
+<<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module type>> <<span class="ocsforge_color_uid"|S>> <<span class="ocsforge_color_delimiter"|~=>> <<span class="ocsforge_color_keyword"|sig>><<a_api subproject="server" text=".." | module type Eliom_form_sigs.S >><<span class="ocsforge_color_keyword"|end>>>>
 ----
 <<pre class="ocsforge_color odocwiki_code" id="TYPEelt"|<<span class="ocsforge_color_keyword"|type>> <<span class="odocwiki_type"|+'a>> <<span class="odocwiki_name"|elt>>>><<pre class="ocsforge_color odocwiki_code" id="TYPEattrib"|<<span class="ocsforge_color_keyword"|type>> <<span class="odocwiki_type"|+'a>> <<span class="odocwiki_name"|attrib>>>><<pre class="ocsforge_color odocwiki_code" id="TYPEuri"|<<span class="ocsforge_color_keyword"|type>> <<span class="odocwiki_name"|uri>>>>
 

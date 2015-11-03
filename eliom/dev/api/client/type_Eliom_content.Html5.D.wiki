@@ -2964,14 +2964,6 @@
       val space_sep_attrib : string -> string list wrap -> 'a attrib
       val comma_sep_attrib : string -> string list wrap -> 'a attrib
     end
-  type ('a, 'b, 'c) lazy_star =
-      ?a:'a Eliom_content.Html5.attrib list ->
-      'b Eliom_content.Html5.elt list Eliom_lazy.request ->
-      'c Eliom_content.Html5.elt
-  val lazy_form :
-    ([< Html5_types.form_attrib ], [< Html5_types.form_content_fun ],
-     [> Html5_types.form ])
-    Eliom_content.Html5.D.lazy_star
   val make_uri :
     ?absolute:bool ->
     ?absolute_path:bool ->
@@ -2985,7 +2977,7 @@
     ?port:int ->
     ?fragment:string ->
     ?keep_nl_params:[ `All | `None | `Persistent ] ->
-    ?nl_params:Eliom_parameter.nl_params_set -> 'get -> Eliom_content.Xml.uri
+    ?nl_params:Eliom_parameter.nl_params_set -> 'get -> uri
   val make_string_uri :
     ?absolute:bool ->
     ?absolute_path:bool ->
@@ -3000,7 +2992,7 @@
     ?fragment:string ->
     ?keep_nl_params:[ `All | `None | `Persistent ] ->
     ?nl_params:Eliom_parameter.nl_params_set -> 'get -> string
-  val uri_of_string : (unit -> string) -> Eliom_content.Xml.uri
+  val uri_of_string : (unit -> string) -> uri
   val make_uri_components :
     ?absolute:bool ->
     ?absolute_path:bool ->
@@ -3041,7 +3033,7 @@
     ?absolute:bool ->
     ?absolute_path:bool ->
     ?https:bool ->
-    ?a:Html5_types.a_attrib Eliom_content.Html5.attrib list ->
+    ?a:Html5_types.a_attrib attrib list ->
     service:('get, unit, [< Eliom_service.get_service_kind ],
              [< Eliom_service.attached ], [< Eliom_service.service_kind ],
              [< Eliom_service.suff ], 'd, unit,
@@ -3053,22 +3045,18 @@
     ?fragment:string ->
     ?keep_nl_params:[ `All | `None | `Persistent ] ->
     ?nl_params:Eliom_parameter.nl_params_set ->
-    ?xhr:bool ->
-    'a Eliom_content.Html5.elt list ->
-    'get -> [> 'a Html5_types.a ] Eliom_content.Html5.elt
+    ?xhr:bool -> 'a elt list -> 'get -> [> 'a Html5_types.a ] elt
   val css_link :
-    ?a:Html5_types.link_attrib Eliom_content.Html5.attrib list ->
-    uri:Eliom_content.Xml.uri ->
-    unit -> [> Html5_types.link ] Eliom_content.Html5.elt
+    ?a:Html5_types.link_attrib attrib list ->
+    uri:uri -> unit -> [> Html5_types.link ] elt
   val js_script :
-    ?a:Html5_types.script_attrib Eliom_content.Html5.attrib list ->
-    uri:Eliom_content.Xml.uri ->
-    unit -> [> Html5_types.script ] Eliom_content.Html5.elt
+    ?a:Html5_types.script_attrib attrib list ->
+    uri:uri -> unit -> [> Html5_types.script ] elt
   val get_form :
     ?absolute:bool ->
     ?absolute_path:bool ->
     ?https:bool ->
-    ?a:Html5_types.form_attrib Eliom_content.Html5.attrib list ->
+    ?a:Html5_types.form_attrib attrib list ->
     service:('get, unit, [< Eliom_service.get_service_kind ],
              [< Eliom_service.attached ], [< Eliom_service.service_kind ],
              [< Eliom_service.suff ], 'gn, 'pn,
@@ -3081,13 +3069,12 @@
     ?keep_nl_params:[ `All | `None | `Persistent ] ->
     ?nl_params:Eliom_parameter.nl_params_set ->
     ?xhr:bool ->
-    ('gn -> Html5_types.form_content Eliom_content.Html5.elt list) ->
-    [> Html5_types.form ] Eliom_content.Html5.elt
+    ('gn -> Html5_types.form_content elt list) -> [> Html5_types.form ] elt
   val lwt_get_form :
     ?absolute:bool ->
     ?absolute_path:bool ->
     ?https:bool ->
-    ?a:Html5_types.form_attrib Eliom_content.Html5.attrib list ->
+    ?a:Html5_types.form_attrib attrib list ->
     service:('get, unit, [< Eliom_service.get_service_kind ],
              [< Eliom_service.attached ], [< Eliom_service.service_kind ],
              [< Eliom_service.suff ], 'gn, 'pn,
@@ -3100,13 +3087,13 @@
     ?keep_nl_params:[ `All | `None | `Persistent ] ->
     ?nl_params:Eliom_parameter.nl_params_set ->
     ?xhr:bool ->
-    ('gn -> Html5_types.form_content Eliom_content.Html5.elt list Lwt.t) ->
-    [> Html5_types.form ] Eliom_content.Html5.elt Lwt.t
+    ('gn -> Html5_types.form_content elt list Lwt.t) ->
+    [> Html5_types.form ] elt Lwt.t
   val post_form :
     ?absolute:bool ->
     ?absolute_path:bool ->
     ?https:bool ->
-    ?a:Html5_types.form_attrib Eliom_content.Html5.attrib list ->
+    ?a:Html5_types.form_attrib attrib list ->
     service:('get, 'post, [< Eliom_service.post_service_kind ],
              [< Eliom_service.attached ], [< Eliom_service.service_kind ],
              [< Eliom_service.suff ], 'gn, 'pn,
@@ -3120,13 +3107,13 @@
     ?keep_get_na_params:bool ->
     ?nl_params:Eliom_parameter.nl_params_set ->
     ?xhr:bool ->
-    ('pn -> Html5_types.form_content Eliom_content.Html5.elt list) ->
-    'get -> [> Html5_types.form ] Eliom_content.Html5.elt
+    ('pn -> Html5_types.form_content elt list) ->
+    'get -> [> Html5_types.form ] elt
   val lwt_post_form :
     ?absolute:bool ->
     ?absolute_path:bool ->
     ?https:bool ->
-    ?a:Html5_types.form_attrib Eliom_content.Html5.attrib list ->
+    ?a:Html5_types.form_attrib attrib list ->
     service:('get, 'post, [< Eliom_service.post_service_kind ],
              [< Eliom_service.attached ], [< Eliom_service.service_kind ],
              [< Eliom_service.suff ], 'gn, 'pn,
@@ -3140,402 +3127,219 @@
     ?keep_get_na_params:bool ->
     ?nl_params:Eliom_parameter.nl_params_set ->
     ?xhr:bool ->
-    ('pn -> Html5_types.form_content Eliom_content.Html5.elt list Lwt.t) ->
-    'get -> [> Html5_types.form ] Eliom_content.Html5.elt Lwt.t
+    ('pn -> Html5_types.form_content elt list Lwt.t) ->
+    'get -> [> Html5_types.form ] elt Lwt.t
   val int_input :
-    ?a:Html5_types.input_attrib Eliom_content.Html5.attrib list ->
-    input_type:[< `Button
-                | `Checkbox
-                | `Color
-                | `Date
-                | `Datetime
-                | `Datetime_local
-                | `Email
-                | `File
-                | `Hidden
-                | `Image
-                | `Month
-                | `Number
-                | `Password
-                | `Radio
-                | `Range
-                | `Reset
-                | `Search
-                | `Submit
-                | `Tel
-                | `Text
-                | `Time
-                | `Url
-                | `Week ] ->
+    ?a:Html5_types.input_attrib attrib list ->
+    input_type:[< Html5_types.input_type ] ->
     ?name:[< int Eliom_parameter.setoneradio ] Eliom_parameter.param_name ->
-    ?value:int -> unit -> [> Html5_types.input ] Eliom_content.Html5.elt
+    ?value:int -> unit -> [> Html5_types.input ] elt
   val int32_input :
-    ?a:Html5_types.input_attrib Eliom_content.Html5.attrib list ->
-    input_type:[< `Button
-                | `Checkbox
-                | `Color
-                | `Date
-                | `Datetime
-                | `Datetime_local
-                | `Email
-                | `File
-                | `Hidden
-                | `Image
-                | `Month
-                | `Number
-                | `Password
-                | `Radio
-                | `Range
-                | `Reset
-                | `Search
-                | `Submit
-                | `Tel
-                | `Text
-                | `Time
-                | `Url
-                | `Week ] ->
+    ?a:Html5_types.input_attrib attrib list ->
+    input_type:[< Html5_types.input_type ] ->
     ?name:[< int32 Eliom_parameter.setoneradio ] Eliom_parameter.param_name ->
-    ?value:int32 -> unit -> [> Html5_types.input ] Eliom_content.Html5.elt
+    ?value:int32 -> unit -> [> Html5_types.input ] elt
   val int64_input :
-    ?a:Html5_types.input_attrib Eliom_content.Html5.attrib list ->
-    input_type:[< `Button
-                | `Checkbox
-                | `Color
-                | `Date
-                | `Datetime
-                | `Datetime_local
-                | `Email
-                | `File
-                | `Hidden
-                | `Image
-                | `Month
-                | `Number
-                | `Password
-                | `Radio
-                | `Range
-                | `Reset
-                | `Search
-                | `Submit
-                | `Tel
-                | `Text
-                | `Time
-                | `Url
-                | `Week ] ->
+    ?a:Html5_types.input_attrib attrib list ->
+    input_type:[< Html5_types.input_type ] ->
     ?name:[< int64 Eliom_parameter.setoneradio ] Eliom_parameter.param_name ->
-    ?value:int64 -> unit -> [> Html5_types.input ] Eliom_content.Html5.elt
+    ?value:int64 -> unit -> [> Html5_types.input ] elt
   val float_input :
-    ?a:Html5_types.input_attrib Eliom_content.Html5.attrib list ->
-    input_type:[< `Button
-                | `Checkbox
-                | `Color
-                | `Date
-                | `Datetime
-                | `Datetime_local
-                | `Email
-                | `File
-                | `Hidden
-                | `Image
-                | `Month
-                | `Number
-                | `Password
-                | `Radio
-                | `Range
-                | `Reset
-                | `Search
-                | `Submit
-                | `Tel
-                | `Text
-                | `Time
-                | `Url
-                | `Week ] ->
+    ?a:Html5_types.input_attrib attrib list ->
+    input_type:[< Html5_types.input_type ] ->
     ?name:[< float Eliom_parameter.setoneradio ] Eliom_parameter.param_name ->
-    ?value:float -> unit -> [> Html5_types.input ] Eliom_content.Html5.elt
+    ?value:float -> unit -> [> Html5_types.input ] elt
   val string_input :
-    ?a:Html5_types.input_attrib Eliom_content.Html5.attrib list ->
-    input_type:[< `Button
-                | `Checkbox
-                | `Color
-                | `Date
-                | `Datetime
-                | `Datetime_local
-                | `Email
-                | `File
-                | `Hidden
-                | `Image
-                | `Month
-                | `Number
-                | `Password
-                | `Radio
-                | `Range
-                | `Reset
-                | `Search
-                | `Submit
-                | `Tel
-                | `Text
-                | `Time
-                | `Url
-                | `Week ] ->
+    ?a:Html5_types.input_attrib attrib list ->
+    input_type:[< Html5_types.input_type ] ->
     ?name:[< string Eliom_parameter.setoneradio ] Eliom_parameter.param_name ->
-    ?value:string -> unit -> [> Html5_types.input ] Eliom_content.Html5.elt
+    ?value:string -> unit -> [> Html5_types.input ] elt
   val user_type_input :
     ('a -> string) ->
-    ?a:Html5_types.input_attrib Eliom_content.Html5.attrib list ->
-    input_type:[< `Button
-                | `Checkbox
-                | `Color
-                | `Date
-                | `Datetime
-                | `Datetime_local
-                | `Email
-                | `File
-                | `Hidden
-                | `Image
-                | `Month
-                | `Number
-                | `Password
-                | `Radio
-                | `Range
-                | `Reset
-                | `Search
-                | `Submit
-                | `Tel
-                | `Text
-                | `Time
-                | `Url
-                | `Week ] ->
+    ?a:Html5_types.input_attrib attrib list ->
+    input_type:[< Html5_types.input_type ] ->
     ?name:[< 'a Eliom_parameter.setoneradio ] Eliom_parameter.param_name ->
-    ?value:'a -> unit -> [> Html5_types.input ] Eliom_content.Html5.elt
+    ?value:'a -> unit -> [> Html5_types.input ] elt
   val raw_input :
-    ?a:Html5_types.input_attrib Eliom_content.Html5.attrib list ->
-    input_type:[< `Button
-                | `Checkbox
-                | `Color
-                | `Date
-                | `Datetime
-                | `Datetime_local
-                | `Email
-                | `File
-                | `Hidden
-                | `Image
-                | `Month
-                | `Number
-                | `Password
-                | `Radio
-                | `Range
-                | `Reset
-                | `Search
-                | `Submit
-                | `Tel
-                | `Text
-                | `Time
-                | `Url
-                | `Week ] ->
-    ?name:string ->
-    ?value:string -> unit -> [> Html5_types.input ] Eliom_content.Html5.elt
+    ?a:Html5_types.input_attrib attrib list ->
+    input_type:[< Html5_types.input_type ] ->
+    ?name:string -> ?value:string -> unit -> [> Html5_types.input ] elt
   val file_input :
-    ?a:Html5_types.input_attrib Eliom_content.Html5.attrib list ->
+    ?a:Html5_types.input_attrib attrib list ->
     name:[< Eliom_lib.file_info Eliom_parameter.setoneradio ]
          Eliom_parameter.param_name ->
-    unit -> [> Html5_types.input ] Eliom_content.Html5.elt
+    unit -> [> Html5_types.input ] elt
   val image_input :
-    ?a:Html5_types.input_attrib Eliom_content.Html5.attrib list ->
+    ?a:Html5_types.input_attrib attrib list ->
     name:[< Eliom_parameter.coordinates Eliom_parameter.oneradio ]
          Eliom_parameter.param_name ->
-    ?src:Eliom_content.Xml.uri ->
-    unit -> [> Html5_types.input ] Eliom_content.Html5.elt
+    ?src:uri -> unit -> [> Html5_types.input ] elt
   val int_image_input :
-    ?a:Html5_types.input_attrib Eliom_content.Html5.attrib list ->
+    ?a:Html5_types.input_attrib attrib list ->
     name:[< (int * Eliom_parameter.coordinates) Eliom_parameter.oneradio ]
          Eliom_parameter.param_name ->
-    value:int ->
-    ?src:Eliom_content.Xml.uri ->
-    unit -> [> Html5_types.input ] Eliom_content.Html5.elt
+    value:int -> ?src:uri -> unit -> [> Html5_types.input ] elt
   val int32_image_input :
-    ?a:Html5_types.input_attrib Eliom_content.Html5.attrib list ->
+    ?a:Html5_types.input_attrib attrib list ->
     name:[< (int32 * Eliom_parameter.coordinates) Eliom_parameter.oneradio ]
          Eliom_parameter.param_name ->
-    value:int32 ->
-    ?src:Eliom_content.Xml.uri ->
-    unit -> [> Html5_types.input ] Eliom_content.Html5.elt
+    value:int32 -> ?src:uri -> unit -> [> Html5_types.input ] elt
   val int64_image_input :
-    ?a:Html5_types.input_attrib Eliom_content.Html5.attrib list ->
+    ?a:Html5_types.input_attrib attrib list ->
     name:[< (int64 * Eliom_parameter.coordinates) Eliom_parameter.oneradio ]
          Eliom_parameter.param_name ->
-    value:int64 ->
-    ?src:Eliom_content.Xml.uri ->
-    unit -> [> Html5_types.input ] Eliom_content.Html5.elt
+    value:int64 -> ?src:uri -> unit -> [> Html5_types.input ] elt
   val float_image_input :
-    ?a:Html5_types.input_attrib Eliom_content.Html5.attrib list ->
+    ?a:Html5_types.input_attrib attrib list ->
     name:[< (float * Eliom_parameter.coordinates) Eliom_parameter.oneradio ]
          Eliom_parameter.param_name ->
-    value:float ->
-    ?src:Eliom_content.Xml.uri ->
-    unit -> [> Html5_types.input ] Eliom_content.Html5.elt
+    value:float -> ?src:uri -> unit -> [> Html5_types.input ] elt
   val string_image_input :
-    ?a:Html5_types.input_attrib Eliom_content.Html5.attrib list ->
+    ?a:Html5_types.input_attrib attrib list ->
     name:[< (string * Eliom_parameter.coordinates) Eliom_parameter.oneradio ]
          Eliom_parameter.param_name ->
-    value:string ->
-    ?src:Eliom_content.Xml.uri ->
-    unit -> [> Html5_types.input ] Eliom_content.Html5.elt
+    value:string -> ?src:uri -> unit -> [> Html5_types.input ] elt
   val user_type_image_input :
     ('a -> string) ->
-    ?a:Html5_types.input_attrib Eliom_content.Html5.attrib list ->
+    ?a:Html5_types.input_attrib attrib list ->
     name:[< ('a * Eliom_parameter.coordinates) Eliom_parameter.oneradio ]
          Eliom_parameter.param_name ->
-    value:'a ->
-    ?src:Eliom_content.Xml.uri ->
-    unit -> [> Html5_types.input ] Eliom_content.Html5.elt
+    value:'a -> ?src:uri -> unit -> [> Html5_types.input ] elt
   val raw_image_input :
-    ?a:Html5_types.input_attrib Eliom_content.Html5.attrib list ->
+    ?a:Html5_types.input_attrib attrib list ->
     name:string ->
-    value:string ->
-    ?src:Eliom_content.Xml.uri ->
-    unit -> [> Html5_types.input ] Eliom_content.Html5.elt
+    value:string -> ?src:uri -> unit -> [> Html5_types.input ] elt
   val bool_checkbox :
-    ?a:Html5_types.input_attrib Eliom_content.Html5.attrib list ->
+    ?a:Html5_types.input_attrib attrib list ->
     ?checked:bool ->
     name:[ `One of bool ] Eliom_parameter.param_name ->
-    unit -> [> Html5_types.input ] Eliom_content.Html5.elt
+    unit -> [> Html5_types.input ] elt
   val int_checkbox :
-    ?a:Html5_types.input_attrib Eliom_content.Html5.attrib list ->
+    ?a:Html5_types.input_attrib attrib list ->
     ?checked:bool ->
     name:[ `Set of int ] Eliom_parameter.param_name ->
-    value:int -> unit -> [> Html5_types.input ] Eliom_content.Html5.elt
+    value:int -> unit -> [> Html5_types.input ] elt
   val int32_checkbox :
-    ?a:Html5_types.input_attrib Eliom_content.Html5.attrib list ->
+    ?a:Html5_types.input_attrib attrib list ->
     ?checked:bool ->
     name:[ `Set of int32 ] Eliom_parameter.param_name ->
-    value:int32 -> unit -> [> Html5_types.input ] Eliom_content.Html5.elt
+    value:int32 -> unit -> [> Html5_types.input ] elt
   val int64_checkbox :
-    ?a:Html5_types.input_attrib Eliom_content.Html5.attrib list ->
+    ?a:Html5_types.input_attrib attrib list ->
     ?checked:bool ->
     name:[ `Set of int64 ] Eliom_parameter.param_name ->
-    value:int64 -> unit -> [> Html5_types.input ] Eliom_content.Html5.elt
+    value:int64 -> unit -> [> Html5_types.input ] elt
   val float_checkbox :
-    ?a:Html5_types.input_attrib Eliom_content.Html5.attrib list ->
+    ?a:Html5_types.input_attrib attrib list ->
     ?checked:bool ->
     name:[ `Set of float ] Eliom_parameter.param_name ->
-    value:float -> unit -> [> Html5_types.input ] Eliom_content.Html5.elt
+    value:float -> unit -> [> Html5_types.input ] elt
   val string_checkbox :
-    ?a:Html5_types.input_attrib Eliom_content.Html5.attrib list ->
+    ?a:Html5_types.input_attrib attrib list ->
     ?checked:bool ->
     name:[ `Set of string ] Eliom_parameter.param_name ->
-    value:string -> unit -> [> Html5_types.input ] Eliom_content.Html5.elt
+    value:string -> unit -> [> Html5_types.input ] elt
   val user_type_checkbox :
     ('a -> string) ->
-    ?a:Html5_types.input_attrib Eliom_content.Html5.attrib list ->
+    ?a:Html5_types.input_attrib attrib list ->
     ?checked:bool ->
     name:[ `Set of 'a ] Eliom_parameter.param_name ->
-    value:'a -> unit -> [> Html5_types.input ] Eliom_content.Html5.elt
+    value:'a -> unit -> [> Html5_types.input ] elt
   val raw_checkbox :
-    ?a:Html5_types.input_attrib Eliom_content.Html5.attrib list ->
+    ?a:Html5_types.input_attrib attrib list ->
     ?checked:bool ->
-    name:string ->
-    value:string -> unit -> [> Html5_types.input ] Eliom_content.Html5.elt
+    name:string -> value:string -> unit -> [> Html5_types.input ] elt
   val string_radio :
-    ?a:Html5_types.input_attrib Eliom_content.Html5.attrib list ->
+    ?a:Html5_types.input_attrib attrib list ->
     ?checked:bool ->
     name:[ `Radio of string ] Eliom_parameter.param_name ->
-    value:string -> unit -> [> Html5_types.input ] Eliom_content.Html5.elt
+    value:string -> unit -> [> Html5_types.input ] elt
   val string_radio_required :
-    ?a:Html5_types.input_attrib Eliom_content.Html5.attrib list ->
+    ?a:Html5_types.input_attrib attrib list ->
     ?checked:bool ->
     name:[ `One of string ] Eliom_parameter.param_name ->
-    value:string -> unit -> [> Html5_types.input ] Eliom_content.Html5.elt
+    value:string -> unit -> [> Html5_types.input ] elt
   val int_radio :
-    ?a:Html5_types.input_attrib Eliom_content.Html5.attrib list ->
+    ?a:Html5_types.input_attrib attrib list ->
     ?checked:bool ->
     name:[ `Radio of int ] Eliom_parameter.param_name ->
-    value:int -> unit -> [> Html5_types.input ] Eliom_content.Html5.elt
+    value:int -> unit -> [> Html5_types.input ] elt
   val int32_radio :
-    ?a:Html5_types.input_attrib Eliom_content.Html5.attrib list ->
+    ?a:Html5_types.input_attrib attrib list ->
     ?checked:bool ->
     name:[ `Radio of int32 ] Eliom_parameter.param_name ->
-    value:int32 -> unit -> [> Html5_types.input ] Eliom_content.Html5.elt
+    value:int32 -> unit -> [> Html5_types.input ] elt
   val int64_radio :
-    ?a:Html5_types.input_attrib Eliom_content.Html5.attrib list ->
+    ?a:Html5_types.input_attrib attrib list ->
     ?checked:bool ->
     name:[ `Radio of int64 ] Eliom_parameter.param_name ->
-    value:int64 -> unit -> [> Html5_types.input ] Eliom_content.Html5.elt
+    value:int64 -> unit -> [> Html5_types.input ] elt
   val float_radio :
-    ?a:Html5_types.input_attrib Eliom_content.Html5.attrib list ->
+    ?a:Html5_types.input_attrib attrib list ->
     ?checked:bool ->
     name:[ `Radio of float ] Eliom_parameter.param_name ->
-    value:float -> unit -> [> Html5_types.input ] Eliom_content.Html5.elt
+    value:float -> unit -> [> Html5_types.input ] elt
   val user_type_radio :
     ('a -> string) ->
-    ?a:Html5_types.input_attrib Eliom_content.Html5.attrib list ->
+    ?a:Html5_types.input_attrib attrib list ->
     ?checked:bool ->
     name:[ `Radio of 'a ] Eliom_parameter.param_name ->
-    value:'a -> unit -> [> Html5_types.input ] Eliom_content.Html5.elt
+    value:'a -> unit -> [> Html5_types.input ] elt
   val raw_radio :
-    ?a:Html5_types.input_attrib Eliom_content.Html5.attrib list ->
+    ?a:Html5_types.input_attrib attrib list ->
     ?checked:bool ->
-    name:string ->
-    value:string -> unit -> [> Html5_types.input ] Eliom_content.Html5.elt
+    name:string -> value:string -> unit -> [> Html5_types.input ] elt
   val string_button :
-    ?a:Html5_types.button_attrib Eliom_content.Html5.attrib list ->
+    ?a:Html5_types.button_attrib attrib list ->
     name:[< string Eliom_parameter.setone ] Eliom_parameter.param_name ->
     value:string ->
-    Html5_types.button_content Eliom_content.Html5.elt list ->
-    [> Html5_types.button ] Eliom_content.Html5.elt
+    Html5_types.button_content elt list -> [> Html5_types.button ] elt
   val int_button :
-    ?a:Html5_types.button_attrib Eliom_content.Html5.attrib list ->
+    ?a:Html5_types.button_attrib attrib list ->
     name:[< int Eliom_parameter.setone ] Eliom_parameter.param_name ->
     value:int ->
-    Html5_types.button_content Eliom_content.Html5.elt list ->
-    [> Html5_types.button ] Eliom_content.Html5.elt
+    Html5_types.button_content elt list -> [> Html5_types.button ] elt
   val int32_button :
-    ?a:Html5_types.button_attrib Eliom_content.Html5.attrib list ->
+    ?a:Html5_types.button_attrib attrib list ->
     name:[< int32 Eliom_parameter.setone ] Eliom_parameter.param_name ->
     value:int32 ->
-    Html5_types.button_content Eliom_content.Html5.elt list ->
-    [> Html5_types.button ] Eliom_content.Html5.elt
+    Html5_types.button_content elt list -> [> Html5_types.button ] elt
   val int64_button :
-    ?a:Html5_types.button_attrib Eliom_content.Html5.attrib list ->
+    ?a:Html5_types.button_attrib attrib list ->
     name:[< int64 Eliom_parameter.setone ] Eliom_parameter.param_name ->
     value:int64 ->
-    Html5_types.button_content Eliom_content.Html5.elt list ->
-    [> Html5_types.button ] Eliom_content.Html5.elt
+    Html5_types.button_content elt list -> [> Html5_types.button ] elt
   val float_button :
-    ?a:Html5_types.button_attrib Eliom_content.Html5.attrib list ->
+    ?a:Html5_types.button_attrib attrib list ->
     name:[< float Eliom_parameter.setone ] Eliom_parameter.param_name ->
     value:float ->
-    Html5_types.button_content Eliom_content.Html5.elt list ->
-    [> Html5_types.button ] Eliom_content.Html5.elt
+    Html5_types.button_content elt list -> [> Html5_types.button ] elt
   val user_type_button :
     ('a -> string) ->
-    ?a:Html5_types.button_attrib Eliom_content.Html5.attrib list ->
+    ?a:Html5_types.button_attrib attrib list ->
     name:[< 'a Eliom_parameter.setone ] Eliom_parameter.param_name ->
     value:'a ->
-    Html5_types.button_content Eliom_content.Html5.elt list ->
-    [> Html5_types.button ] Eliom_content.Html5.elt
+    Html5_types.button_content elt list -> [> Html5_types.button ] elt
   val raw_button :
-    ?a:Html5_types.button_attrib Eliom_content.Html5.attrib list ->
-    button_type:[< `Button | `Reset | `Submit ] ->
+    ?a:Html5_types.button_attrib attrib list ->
+    button_type:[< Eliom_form_sigs.button_type ] ->
     name:string ->
     value:string ->
-    Html5_types.button_content Eliom_content.Html5.elt list ->
-    [> Html5_types.button ] Eliom_content.Html5.elt
+    Html5_types.button_content elt list -> [> Html5_types.button ] elt
   val button :
-    ?a:Html5_types.button_attrib Eliom_content.Html5.attrib list ->
-    button_type:[< `Button | `Reset | `Submit ] ->
-    Html5_types.button_content Eliom_content.Html5.elt list ->
-    [> Html5_types.button ] Eliom_content.Html5.elt
+    ?a:Html5_types.button_attrib attrib list ->
+    button_type:[< Eliom_form_sigs.button_type ] ->
+    Html5_types.button_content elt list -> [> Html5_types.button ] elt
   val textarea :
-    ?a:Html5_types.textarea_attrib Eliom_content.Html5.attrib list ->
+    ?a:Html5_types.textarea_attrib attrib list ->
     name:[< string Eliom_parameter.setoneradio ] Eliom_parameter.param_name ->
-    ?value:string ->
-    unit -> [> Html5_types.textarea ] Eliom_content.Html5.elt
+    ?value:string -> unit -> [> Html5_types.textarea ] elt
   val raw_textarea :
-    ?a:Html5_types.textarea_attrib Eliom_content.Html5.attrib list ->
-    name:string ->
-    ?value:string ->
-    unit -> [> Html5_types.textarea ] Eliom_content.Html5.elt
+    ?a:Html5_types.textarea_attrib attrib list ->
+    name:string -> ?value:string -> unit -> [> Html5_types.textarea ] elt
   type 'a soption =
-      Html5_types.option_attrib Eliom_content.Html5.attrib list * 'a *
-      Html5_types.pcdata Eliom_content.Html5.elt option * bool
+      Html5_types.option_attrib attrib list * 'a *
+      Html5_types.pcdata elt option * bool
   type 'a select_opt =
       Optgroup of
         [ `Accesskey
@@ -3608,111 +3412,91 @@
         | `Title
         | `User_data
         | `XML_lang
-        | `XMLns ] Eliom_content.Html5.attrib list * string *
-        'a Eliom_content.Html5.D.soption *
-        'a Eliom_content.Html5.D.soption list
-    | Option of 'a Eliom_content.Html5.D.soption
+        | `XMLns ] attrib list * string * 'a soption * 'a soption list
+    | Option of 'a soption
   val int_select :
-    ?a:Html5_types.select_attrib Eliom_content.Html5.attrib list ->
-    ?required:Html5_types.pcdata Eliom_content.Html5.elt ->
+    ?a:Html5_types.select_attrib attrib list ->
+    ?required:Html5_types.pcdata elt ->
     name:[ `One of int ] Eliom_parameter.param_name ->
-    int Eliom_content.Html5.D.select_opt ->
-    int Eliom_content.Html5.D.select_opt list ->
-    [> Html5_types.select ] Eliom_content.Html5.elt
+    int select_opt -> int select_opt list -> [> Html5_types.select ] elt
   val int32_select :
-    ?a:Html5_types.select_attrib Eliom_content.Html5.attrib list ->
-    ?required:Html5_types.pcdata Eliom_content.Html5.elt ->
+    ?a:Html5_types.select_attrib attrib list ->
+    ?required:Html5_types.pcdata elt ->
     name:[ `One of int32 ] Eliom_parameter.param_name ->
-    int32 Eliom_content.Html5.D.select_opt ->
-    int32 Eliom_content.Html5.D.select_opt list ->
-    [> Html5_types.select ] Eliom_content.Html5.elt
+    int32 select_opt -> int32 select_opt list -> [> Html5_types.select ] elt
   val int64_select :
-    ?a:Html5_types.select_attrib Eliom_content.Html5.attrib list ->
-    ?required:Html5_types.pcdata Eliom_content.Html5.elt ->
+    ?a:Html5_types.select_attrib attrib list ->
+    ?required:Html5_types.pcdata elt ->
     name:[ `One of int64 ] Eliom_parameter.param_name ->
-    int64 Eliom_content.Html5.D.select_opt ->
-    int64 Eliom_content.Html5.D.select_opt list ->
-    [> Html5_types.select ] Eliom_content.Html5.elt
+    int64 select_opt -> int64 select_opt list -> [> Html5_types.select ] elt
   val float_select :
-    ?a:Html5_types.select_attrib Eliom_content.Html5.attrib list ->
-    ?required:Html5_types.pcdata Eliom_content.Html5.elt ->
+    ?a:Html5_types.select_attrib attrib list ->
+    ?required:Html5_types.pcdata elt ->
     name:[ `One of float ] Eliom_parameter.param_name ->
-    float Eliom_content.Html5.D.select_opt ->
-    float Eliom_content.Html5.D.select_opt list ->
-    [> Html5_types.select ] Eliom_content.Html5.elt
+    float select_opt -> float select_opt list -> [> Html5_types.select ] elt
   val string_select :
-    ?a:Html5_types.select_attrib Eliom_content.Html5.attrib list ->
-    ?required:Html5_types.pcdata Eliom_content.Html5.elt ->
+    ?a:Html5_types.select_attrib attrib list ->
+    ?required:Html5_types.pcdata elt ->
     name:[ `One of string ] Eliom_parameter.param_name ->
-    string Eliom_content.Html5.D.select_opt ->
-    string Eliom_content.Html5.D.select_opt list ->
-    [> Html5_types.select ] Eliom_content.Html5.elt
+    string select_opt ->
+    string select_opt list -> [> Html5_types.select ] elt
   val user_type_select :
     ('a -> string) ->
-    ?a:Html5_types.select_attrib Eliom_content.Html5.attrib list ->
-    ?required:Html5_types.pcdata Eliom_content.Html5.elt ->
+    ?a:Html5_types.select_attrib attrib list ->
+    ?required:Html5_types.pcdata elt ->
     name:[ `One of 'a ] Eliom_parameter.param_name ->
-    'a Eliom_content.Html5.D.select_opt ->
-    'a Eliom_content.Html5.D.select_opt list ->
-    [> Html5_types.select ] Eliom_content.Html5.elt
+    'a select_opt -> 'a select_opt list -> [> Html5_types.select ] elt
   val raw_select :
-    ?a:Html5_types.select_attrib Eliom_content.Html5.attrib list ->
-    ?required:Html5_types.pcdata Eliom_content.Html5.elt ->
+    ?a:Html5_types.select_attrib attrib list ->
+    ?required:Html5_types.pcdata elt ->
     name:string ->
-    string Eliom_content.Html5.D.select_opt ->
-    string Eliom_content.Html5.D.select_opt list ->
-    [> Html5_types.select ] Eliom_content.Html5.elt
+    string select_opt ->
+    string select_opt list -> [> Html5_types.select ] elt
   val int_multiple_select :
-    ?a:Html5_types.select_attrib Eliom_content.Html5.attrib list ->
-    ?required:Html5_types.pcdata Eliom_content.Html5.elt ->
+    ?a:Html5_types.select_attrib attrib list ->
+    ?required:Html5_types.pcdata elt ->
     name:[ `Set of int ] Eliom_parameter.param_name ->
-    int Eliom_content.Html5.D.select_opt ->
-    int Eliom_content.Html5.D.select_opt list ->
-    [> Html5_types.select ] Eliom_content.Html5.elt
+    int select_opt -> int select_opt list -> [> Html5_types.select ] elt
   val int32_multiple_select :
-    ?a:Html5_types.select_attrib Eliom_content.Html5.attrib list ->
-    ?required:Html5_types.pcdata Eliom_content.Html5.elt ->
+    ?a:Html5_types.select_attrib attrib list ->
+    ?required:Html5_types.pcdata elt ->
     name:[ `Set of int32 ] Eliom_parameter.param_name ->
-    int32 Eliom_content.Html5.D.select_opt ->
-    int32 Eliom_content.Html5.D.select_opt list ->
-    [> Html5_types.select ] Eliom_content.Html5.elt
+    int32 select_opt -> int32 select_opt list -> [> Html5_types.select ] elt
   val int64_multiple_select :
-    ?a:Html5_types.select_attrib Eliom_content.Html5.attrib list ->
-    ?required:Html5_types.pcdata Eliom_content.Html5.elt ->
+    ?a:Html5_types.select_attrib attrib list ->
+    ?required:Html5_types.pcdata elt ->
     name:[ `Set of int64 ] Eliom_parameter.param_name ->
-    int64 Eliom_content.Html5.D.select_opt ->
-    int64 Eliom_content.Html5.D.select_opt list ->
-    [> Html5_types.select ] Eliom_content.Html5.elt
+    int64 select_opt -> int64 select_opt list -> [> Html5_types.select ] elt
   val float_multiple_select :
-    ?a:Html5_types.select_attrib Eliom_content.Html5.attrib list ->
-    ?required:Html5_types.pcdata Eliom_content.Html5.elt ->
+    ?a:Html5_types.select_attrib attrib list ->
+    ?required:Html5_types.pcdata elt ->
     name:[ `Set of float ] Eliom_parameter.param_name ->
-    float Eliom_content.Html5.D.select_opt ->
-    float Eliom_content.Html5.D.select_opt list ->
-    [> Html5_types.select ] Eliom_content.Html5.elt
+    float select_opt -> float select_opt list -> [> Html5_types.select ] elt
   val string_multiple_select :
-    ?a:Html5_types.select_attrib Eliom_content.Html5.attrib list ->
-    ?required:Html5_types.pcdata Eliom_content.Html5.elt ->
+    ?a:Html5_types.select_attrib attrib list ->
+    ?required:Html5_types.pcdata elt ->
     name:[ `Set of string ] Eliom_parameter.param_name ->
-    string Eliom_content.Html5.D.select_opt ->
-    string Eliom_content.Html5.D.select_opt list ->
-    [> Html5_types.select ] Eliom_content.Html5.elt
+    string select_opt ->
+    string select_opt list -> [> Html5_types.select ] elt
   val user_type_multiple_select :
     ('a -> string) ->
-    ?a:Html5_types.select_attrib Eliom_content.Html5.attrib list ->
-    ?required:Html5_types.pcdata Eliom_content.Html5.elt ->
+    ?a:Html5_types.select_attrib attrib list ->
+    ?required:Html5_types.pcdata elt ->
     name:[ `Set of 'a ] Eliom_parameter.param_name ->
-    'a Eliom_content.Html5.D.select_opt ->
-    'a Eliom_content.Html5.D.select_opt list ->
-    [> Html5_types.select ] Eliom_content.Html5.elt
+    'a select_opt -> 'a select_opt list -> [> Html5_types.select ] elt
   val raw_multiple_select :
-    ?a:Html5_types.select_attrib Eliom_content.Html5.attrib list ->
-    ?required:Html5_types.pcdata Eliom_content.Html5.elt ->
+    ?a:Html5_types.select_attrib attrib list ->
+    ?required:Html5_types.pcdata elt ->
     name:string ->
-    string Eliom_content.Html5.D.select_opt ->
-    string Eliom_content.Html5.D.select_opt list ->
-    [> Html5_types.select ] Eliom_content.Html5.elt
-  val a_for : string -> [> `For ] Eliom_content.Html5.attrib
+    string select_opt ->
+    string select_opt list -> [> Html5_types.select ] elt
+  val a_for : string -> [> `For ] attrib
+  type ('a, 'b, 'c) lazy_star =
+      ?a:'a attrib list -> 'b elt list Eliom_lazy.request -> 'c elt
+  val lazy_form :
+    ([< Html5_types.form_attrib ], [< Html5_types.form_content_fun ],
+     [> Html5_types.form ])
+    lazy_star
   val raw_form :
     ([< Html5_types.form_attrib ], [< Html5_types.form_content_fun ],
      [> Html5_types.form ])
@@ -3721,7 +3505,7 @@
     ?absolute:bool ->
     ?absolute_path:bool ->
     ?https:bool ->
-    ?a:Html5_types.form_attrib Eliom_content.Html5.attrib list ->
+    ?a:Html5_types.form_attrib attrib list ->
     service:('get, unit, [< Eliom_service.get_service_kind ],
              [< Eliom_service.attached ], [< Eliom_service.service_kind ],
              [< Eliom_service.suff ], 'gn, 'pn,
@@ -3734,39 +3518,15 @@
     ?keep_nl_params:[ `All | `None | `Persistent ] ->
     ?nl_params:Eliom_parameter.nl_params_set ->
     ?xhr:bool ->
-    ('gn -> Html5_types.form_content Eliom_content.Html5.elt list) ->
-    [> Html5_types.form ] Eliom_content.Html5.elt
+    ('gn -> Html5_types.form_content elt list) -> [> Html5_types.form ] elt
   val input :
-    ?a:Html5_types.input_attrib Eliom_content.Html5.attrib list ->
-    input_type:[< `Button
-                | `Checkbox
-                | `Color
-                | `Date
-                | `Datetime
-                | `Datetime_local
-                | `Email
-                | `File
-                | `Hidden
-                | `Image
-                | `Month
-                | `Number
-                | `Password
-                | `Radio
-                | `Range
-                | `Reset
-                | `Search
-                | `Submit
-                | `Tel
-                | `Text
-                | `Time
-                | `Url
-                | `Week ] ->
+    ?a:Html5_types.input_attrib attrib list ->
+    input_type:[< Html5_types.input_type ] ->
     ?name:[< string Eliom_parameter.setoneradio ] Eliom_parameter.param_name ->
-    ?value:string -> unit -> [> Html5_types.input ] Eliom_content.Html5.elt
+    ?value:string -> unit -> [> Html5_types.input ] elt
   val select :
-    ?a:Html5_types.select_attrib Eliom_content.Html5.attrib list ->
+    ?a:Html5_types.select_attrib attrib list ->
     name:[ `One of string ] Eliom_parameter.param_name ->
-    string Eliom_content.Html5.D.select_opt ->
-    string Eliom_content.Html5.D.select_opt list ->
-    [> Html5_types.select ] Eliom_content.Html5.elt
+    string select_opt ->
+    string select_opt list -> [> Html5_types.select ] elt
 end >>

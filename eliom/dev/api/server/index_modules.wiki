@@ -45,7 +45,8 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="D"| module Eliom_tools.D >> ~[<<a_api subproject="server" | module Eliom_tools >>~]|<<div class="odocwiki_info"|~Menus with ~D~O~M semantics
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="D"| module Eliom_content.Html5.D >> ~[<<a_api subproject="server" | module Eliom_content.Html5 >>~]|<<div class="odocwiki_info"|~Creation of ~H~T~M~L~5 content with **~D**~O~M semantics ~(referable~, see also <<a_api|module Eliom_content>> ~)~.
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="D"| module Eliom_content.Html5.D >> ~[<<a_api subproject="server" | module Eliom_content.Html5 >>~]|<<div class="odocwiki_info"|~Creation of ~H~T~M~L~5 content with **~D**~O~M semantics ~(referable~, see
+      also <<a_api|module Eliom_content>> ~)~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="D"| module Eliom_content.Svg.D >> ~[<<a_api subproject="server" | module Eliom_content.Svg >>~]|<<div class="odocwiki_info"|~Typed interface for building valid ~S~V~G tree ~(~D~O~M semantics~)~.
@@ -75,6 +76,9 @@ file~.
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Eliom_content"| module Eliom_content >> |<<div class="odocwiki_info"|~This module allows creating valid ~H~T~M~L content~, or other ~X~M~L formats~.
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Eliom_content_sigs"| module Eliom_content_sigs >> |<<div class="odocwiki_info"|~Creates an untyped form~.
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Eliom_cookie"| module Eliom_cookie >> |<<div class="odocwiki_info"|~Cookies table manipulation ~(~Duplicate of ~Ocsigen~_cookies~)~.
 >>
 |
@@ -86,11 +90,14 @@ file~.
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Eliom_extension"| module Eliom_extension >> |<<div class="odocwiki_info"|~Allows ~Ocsigen~'s extension to access ~Eliom data~.
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Eliom_form_sigs"| module Eliom_form_sigs >> |<<div class="odocwiki_info"|~Forms creation 
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Eliom_lib"| module Eliom_lib >> |<<div class="odocwiki_info"|~A few common functions used by ~Eliom~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Eliom_mkforms"| module Eliom_mkforms >> |<<div class="odocwiki_info"|~This module defines the functor to use to creates modules
-   generating form widgets for your own types of pages~.
+    generating form widgets for your own types of pages~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Eliom_mkreg"| module Eliom_mkreg >> |<<div class="odocwiki_info"|~This module defines the functor to use to creates modules
@@ -166,7 +173,8 @@ file~.
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="F"| module Eliom_tools.F >> ~[<<a_api subproject="server" | module Eliom_tools >>~]|<<div class="odocwiki_info"|~Menus with functional node semantics
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="F"| module Eliom_content.Html5.F >> ~[<<a_api subproject="server" | module Eliom_content.Html5 >>~]|<<div class="odocwiki_info"|~Creation of **~F**unctional ~H~T~M~L~5 content ~(copy~-able but not referable~, see also <<a_api|module Eliom_content>> ~)~.
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="F"| module Eliom_content.Html5.F >> ~[<<a_api subproject="server" | module Eliom_content.Html5 >>~]|<<div class="odocwiki_info"|~Creation of **~F**unctional ~H~T~M~L~5 content ~(copy~-able but not
+      referable~, see also <<a_api|module Eliom_content>> ~)~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="F"| module Eliom_content.Svg.F >> ~[<<a_api subproject="server" | module Eliom_content.Svg >>~]|<<div class="odocwiki_info"|~Typed interface for building valid ~S~V~G tree ~(functional
@@ -233,7 +241,10 @@ file~.
     to receive the remote server~'s data~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="MakeForms"| module Eliom_mkforms.MakeForms >> ~[<<a_api subproject="server" | module Eliom_mkforms >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="MakeForms"| module Eliom_mkforms.MakeForms >> ~[<<a_api subproject="server" | module Eliom_mkforms >>~]|<<div class="odocwiki_info"|~This module defines the functor to use to creates modules
+    generating form widgets for your own types of pages~.
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="MakeRegister"| module Eliom_mkreg.MakeRegister >> ~[<<a_api subproject="server" | module Eliom_mkreg >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="MakeRegister_AlphaReturn"| module Eliom_mkreg.MakeRegister_AlphaReturn >> ~[<<a_api subproject="server" | module Eliom_mkreg >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Make_typed_xml_registration"| module Eliom_registration.Make_typed_xml_registration >> ~[<<a_api subproject="server" | module Eliom_registration >>~]|<<div class="odocwiki_info"|~Eliom service registration for services that returns fragment of
