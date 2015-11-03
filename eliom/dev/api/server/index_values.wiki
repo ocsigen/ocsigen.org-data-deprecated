@@ -555,9 +555,8 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="fold_volatile_sub_states"| value Eliom_state.Ext.fold_volatile_sub_states >> ~[<<a_api subproject="server" | module Eliom_state.Ext >>~]|<<div class="odocwiki_info"|~Fold all sessions in a groups~, or all client processes in a session~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="form"| value Eliom_content_sigs.FORMS.form >> ~[<<a_api subproject="server" | module Eliom_content_sigs.FORMS >>~]|<<div class="odocwiki_info"|~This is an alias to <<a_api|val
-      Eliom_content.Html5.D.get_form>>  to avoid the untyped
-      <<span class="odocwiki_inlinecode"|~Eliom~_content~.~Html~5~.~D~.form>>~.
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="form"| value Eliom_content_sigs.FORMS.form >> ~[<<a_api subproject="server" | module Eliom_content_sigs.FORMS >>~]|<<div class="odocwiki_info"|~This is an alias to <<a_api|val Eliom_form_sigs.S.get_form>>
+       to avoid the untyped <<span class="odocwiki_inlinecode"|~Html~5~_sigs~.~T~.form>>~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="format_url"| value Eliom_s2s.format_url >> ~[<<a_api subproject="server" | module Eliom_s2s >>~]|<<div class="odocwiki_info"|~Format a url with a base and ~G~E~T parameters
@@ -900,8 +899,8 @@
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="input"| value Eliom_content_sigs.FORMS.input >> ~[<<a_api subproject="server" | module Eliom_content_sigs.FORMS >>~]|<<div class="odocwiki_info"|~This is an alias to <<a_api|val
-      Eliom_content.Html5.D.string_input>>  to avoid the untyped
-      <<span class="odocwiki_inlinecode"|~Eliom~_content~.~Html~5~.~D~.input>>~.
+      Eliom_form_sigs.S.string_input>>  to avoid the untyped
+      <<span class="odocwiki_inlinecode"|~Html~5~_sigs~.~T~.input>>~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="insert_hub_links"| value Atom_feed.insert_hub_links >> ~[<<a_api subproject="server" | module Atom_feed >>~]|<<div class="odocwiki_info"|~Technically not used elsewhere than in eliom~_feed~.ml~, since the links tags
@@ -2333,8 +2332,8 @@ foobar:value}}}
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="rt"| value Eliom_service.rt >> ~[<<a_api subproject="server" | module Eliom_service >>~]||
 |@@ @style="tet-align: left;"@@\\S|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="select"| value Eliom_content_sigs.FORMS.select >> ~[<<a_api subproject="server" | module Eliom_content_sigs.FORMS >>~]|<<div class="odocwiki_info"|~This is an alias to <<a_api|val
-      Eliom_content.Html5.D.string_select>>  to avoid the untyped
-      <<span class="odocwiki_inlinecode"|~Eliom~_content~.~Html~5~.~D~.select>>~.
+      Eliom_form_sigs.S.string_select>>  to avoid the untyped
+      <<span class="odocwiki_inlinecode"|~Html~5~_sigs~.~T~.select>>~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="select_content_of_option"| value Eliom_form_sigs.PARAM.select_content_of_option >> ~[<<a_api subproject="server" | module Eliom_form_sigs.PARAM >>~]||
