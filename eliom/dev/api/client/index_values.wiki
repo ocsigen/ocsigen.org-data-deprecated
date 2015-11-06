@@ -1260,7 +1260,7 @@
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="removeChild"| value Eliom_content.Svg.Manip.removeChild >> ~[<<a_api subproject="client" | module Eliom_content.Svg.Manip >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|remove~Child e~1 e~2>> removes for <<span class="odocwiki_inlinecode"|e~2>> from the list of
-        <<span class="odocwiki_inlinecode"|e~1>> children~.
+        children of <<span class="odocwiki_inlinecode"|e~1>>~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="removeChildren"| value Eliom_content.Html5.Manip.Named.removeChildren >> ~[<<a_api subproject="client" | module Eliom_content.Html5.Manip.Named >>~]|<<div class="odocwiki_info"|see <<span class="odocwiki_inlinecode"|remove~Children>>
@@ -1272,7 +1272,7 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="removeChildren"| value Eliom_content.Svg.Manip.Named.removeChildren >> ~[<<a_api subproject="client" | module Eliom_content.Svg.Manip.Named >>~]|<<div class="odocwiki_info"|see <<span class="odocwiki_inlinecode"|remove~Children>>
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="removeChildren"| value Eliom_content.Svg.Manip.removeChildren >> ~[<<a_api subproject="client" | module Eliom_content.Svg.Manip >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|remove~Children e~1>> removes <<span class="odocwiki_inlinecode"|e~1>> children~.
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="removeChildren"| value Eliom_content.Svg.Manip.removeChildren >> ~[<<a_api subproject="client" | module Eliom_content.Svg.Manip >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|remove~Children e~1>> removes all children of <<span class="odocwiki_inlinecode"|e~1>>~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="removeSelf"| value Eliom_content.Html5.Manip.removeSelf >> ~[<<a_api subproject="client" | module Eliom_content.Html5.Manip >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|remove~Self e>> removes element e from the ~D~O~M~.
@@ -1297,8 +1297,8 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="replaceChild"| value Eliom_content.Svg.Manip.Named.replaceChild >> ~[<<a_api subproject="client" | module Eliom_content.Svg.Manip.Named >>~]|<<div class="odocwiki_info"|see <<span class="odocwiki_inlinecode"|replace~Child>>
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="replaceChild"| value Eliom_content.Svg.Manip.replaceChild >> ~[<<a_api subproject="client" | module Eliom_content.Svg.Manip >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|replace e~1 e~2 e~3>> replaces for <<span class="odocwiki_inlinecode"|e~2>> by <<span class="odocwiki_inlinecode"|e~3>> in the
-        list of <<span class="odocwiki_inlinecode"|e~1>> children~.
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="replaceChild"| value Eliom_content.Svg.Manip.replaceChild >> ~[<<a_api subproject="client" | module Eliom_content.Svg.Manip >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|replace e~1 e~2 e~3>> replaces <<span class="odocwiki_inlinecode"|e~3>> by <<span class="odocwiki_inlinecode"|e~2>> in the
+        list of children of <<span class="odocwiki_inlinecode"|e~1>>~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="replaceChildren"| value Eliom_content.Html5.Manip.Named.replaceChildren >> ~[<<a_api subproject="client" | module Eliom_content.Html5.Manip.Named >>~]|<<div class="odocwiki_info"|see <<span class="odocwiki_inlinecode"|replace~Children>>
