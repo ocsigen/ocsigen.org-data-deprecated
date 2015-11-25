@@ -80,9 +80,8 @@
 
 
     ~Cookies can have an expiration date~, specified ~(in seconds
-    since the ~1st of ~January ~1~9~7~0~) in the optional parameter <<span class="odocwiki_inlinecode"|~?exp>>~.
-    ~If the parameter is not set~,
-    the expiration date will be when the browser is closed~.
+    since the ~1st of ~January ~1~9~7~0~) in the optional parameter <<span class="odocwiki_inlinecode"|~?exp>>
+    ~(see how to set default expiration dates below~)~.
 
 
     ~Secure cookies are sent by the browser only with ~H~T~T~P~S ~(default~: <<span class="odocwiki_inlinecode"|false>>~)~.
@@ -260,8 +259,10 @@
 ~The functions in this section ask the browser to set the state cookie
     expiration date~, for the different kinds of session~, in seconds~,
     since the ~1st of ~January ~1~9~7~0~. <<span class="odocwiki_inlinecode"|~None>> means the cookie will expire
-    when the browser is closed~. ~Note~: there is no way to set cookies
+    when the browser is closed~. ~There is no way to set cookies
     for an infinite time on browsers~.
+    ~By default~, ~Eliom sets default expiration date to
+    ~1~0 years after opening the session~.
 
 
     ~By default~, it will affect regular browser cookies ~(sessions~)~.
