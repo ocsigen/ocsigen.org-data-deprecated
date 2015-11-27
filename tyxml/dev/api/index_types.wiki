@@ -581,6 +581,10 @@
 |@@class="odocwiki_index"@ @@<<a_api text="listed"| type Html5_types.listed >> ~[<<a_api | module Html5_types >>~]||
 |@@ @style="tet-align: left;"@@\\M|
 |@@class="odocwiki_index"@ @@<<a_api text="m"| type Xml_sigs.Output.m >> ~[<<a_api | module Xml_sigs.Output >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="main"| type Html5_types.main >> ~[<<a_api | module Html5_types >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="main_attrib"| type Html5_types.main_attrib >> ~[<<a_api | module Html5_types >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="main_content"| type Html5_types.main_content >> ~[<<a_api | module Html5_types >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="main_content_fun"| type Html5_types.main_content_fun >> ~[<<a_api | module Html5_types >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="map"| type Html5_types.map >> ~[<<a_api | module Html5_types >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="map_"| type Html5_types.map_ >> ~[<<a_api | module Html5_types >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="map_attrib"| type Html5_types.map_attrib >> ~[<<a_api | module Html5_types >>~]||

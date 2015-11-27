@@ -757,6 +757,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="lineargradient"| value Svg_sigs.T.lineargradient >> ~[<<a_api | module Svg_sigs.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="link"| value Html5_sigs.T.link >> ~[<<a_api | module Html5_sigs.T >>~]||
 |@@ @style="tet-align: left;"@@\\M|
+|@@class="odocwiki_index"@ @@<<a_api text="main"| value Html5_sigs.T.main >> ~[<<a_api | module Html5_sigs.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="make"| value Xml_sigs.Output.make >> ~[<<a_api | module Xml_sigs.Output >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="map"| value Html5_sigs.T.map >> ~[<<a_api | module Html5_sigs.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="map"| value Xml_wrap.T.map >> ~[<<a_api | module Xml_wrap.T >>~]||

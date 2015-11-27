@@ -1277,6 +1277,10 @@
     ([< Html5_types.aside_attrib ], [< Html5_types.aside_content_fun ],
      [> Html5_types.aside ])
     Html5_sigs.T.star
+  val main :
+    ([< Html5_types.main_attrib ], [< Html5_types.main_content_fun ],
+     [> Html5_types.main ])
+    Html5_sigs.T.star
   val p :
     ([< Html5_types.p_attrib ], [< Html5_types.p_content_fun ],
      [> Html5_types.p ])

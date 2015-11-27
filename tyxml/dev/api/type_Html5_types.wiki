@@ -1010,6 +1010,7 @@
       | `Kbd
       | `Keygen
       | `Label
+      | `Main
       | `Mark
       | `Menu
       | `Meter
@@ -1077,6 +1078,7 @@
       | `Kbd
       | `Keygen
       | `Label
+      | `Main
       | `Mark
       | `Menu
       | `Meter
@@ -1148,6 +1150,7 @@
       | `Kbd
       | `Keygen
       | `Label
+      | `Main
       | `Mark
       | `Menu
       | `Meter
@@ -1219,6 +1222,7 @@
       | `Kbd
       | `Keygen
       | `Label
+      | `Main
       | `Mark
       | `Menu
       | `Meter
@@ -1290,6 +1294,7 @@
       | `Kbd
       | `Keygen
       | `Label
+      | `Main
       | `Map of flow5
       | `Mark
       | `Menu
@@ -1371,6 +1376,7 @@
       | `Kbd
       | `Keygen
       | `Label
+      | `Main
       | `Map of flow5
       | `Mark
       | `Menu
@@ -1451,6 +1457,7 @@
       | `Kbd
       | `Keygen
       | `Label
+      | `Main
       | `Map of flow5
       | `Mark
       | `Menu
@@ -1532,6 +1539,7 @@
       | `Kbd
       | `Keygen
       | `Label
+      | `Main
       | `Map of flow5
       | `Mark
       | `Menu
@@ -1615,6 +1623,7 @@
       | `Kbd
       | `Keygen
       | `Label
+      | `Main
       | `Map of Html5_types.flow5
       | `Mark
       | `Menu
@@ -1689,6 +1698,7 @@
       | `Kbd
       | `Keygen
       | `Label
+      | `Main
       | `Map of Html5_types.flow5
       | `Mark
       | `Menu
@@ -1768,6 +1778,7 @@
       | `Kbd
       | `Keygen
       | `Label
+      | `Main
       | `Map of Html5_types.flow5
       | `Mark
       | `Menu
@@ -1862,6 +1873,7 @@
        | `Kbd
        | `Keygen
        | `Label
+       | `Main
        | `Map of 'a
        | `Mark
        | `Menu
@@ -1954,6 +1966,7 @@
       | `Kbd
       | `Keygen
       | `Label
+      | `Main
       | `Map of Html5_types.flow5
       | `Mark
       | `Menu
@@ -2025,6 +2038,7 @@
       | `Kbd
       | `Keygen
       | `Label
+      | `Main
       | `Map of Html5_types.flow5
       | `Mark
       | `Menu
@@ -2373,6 +2387,10 @@
   type aside_content = Html5_types.flow5
   type aside_content_fun = Html5_types.flow5
   type aside_attrib = Html5_types.common
+  type main = [ `Main ]
+  type main_content = Html5_types.flow5
+  type main_content_fun = Html5_types.flow5
+  type main_attrib = Html5_types.common
   type p = [ `P ]
   type p_content = Html5_types.phrasing
   type p_content_fun = Html5_types.phrasing
@@ -3499,6 +3517,7 @@
       | `Kbd
       | `Keygen
       | `Label
+      | `Main
       | `Map of Html5_types.flow5
       | `Mark
       | `Menu
