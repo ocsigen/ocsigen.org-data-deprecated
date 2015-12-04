@@ -1,5 +1,10 @@
 <<code language="ocaml" | sig
   type 'a t
+  val make :
+    (Buffer.t -> 'a -> unit) ->
+    (Deriving_Json_lexer.lexbuf -> 'a) -> 'a Deriving_Json.t
+  val write : 'a Deriving_Json.t -> Buffer.t -> 'a -> unit
+  val read : 'a Deriving_Json.t -> Deriving_Json_lexer.lexbuf -> 'a
   val to_string : 'a Deriving_Json.t -> 'a -> string
   val from_string : 'a Deriving_Json.t -> string -> 'a
   module type Json =
@@ -257,4 +262,22 @@
         val read_variant :
           Deriving_Json_lexer.lexbuf -> [ `Cst of int | `NCst of int ] -> a
       end
+  val read_list :
+    (Deriving_Json_lexer.lexbuf -> 'a) ->
+    Deriving_Json_lexer.lexbuf -> 'a list
+  val write_list : (Buffer.t -> 'a -> unit) -> Buffer.t -> 'a list -> unit
+  val read_ref :
+    (Deriving_Json_lexer.lexbuf -> 'a) ->
+    Deriving_Json_lexer.lexbuf -> 'a Pervasives.ref
+  val write_ref :
+    (Buffer.t -> 'a -> unit) -> Buffer.t -> 'a Pervasives.ref -> unit
+  val read_option :
+    (Deriving_Json_lexer.lexbuf -> 'a) ->
+    Deriving_Json_lexer.lexbuf -> 'a option
+  val write_option :
+    (Buffer.t -> 'a -> unit) -> Buffer.t -> 'a option -> unit
+  val read_array :
+    (Deriving_Json_lexer.lexbuf -> 'a) ->
+    Deriving_Json_lexer.lexbuf -> 'a array
+  val write_array : (Buffer.t -> 'a -> unit) -> Buffer.t -> 'a array -> unit
 end >>

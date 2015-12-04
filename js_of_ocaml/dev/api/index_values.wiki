@@ -792,6 +792,7 @@
 |
 |@@ @style="tet-align: left;"@@\\M|
 |@@class="odocwiki_index"@ @@<<a_api text="mPath"| value Dom_svg.CoerceTo.mPath >> ~[<<a_api | module Dom_svg.CoerceTo >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="make"| value Deriving_Json.make >> ~[<<a_api | module Deriving_Json >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="make"| value Dom_html.Event.make >> ~[<<a_api | module Dom_html.Event >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="make"| value Dom.Event.make >> ~[<<a_api | module Dom.Event >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="make_event"| value Lwt_js_events.make_event >> ~[<<a_api | module Lwt_js_events >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|make~_event ev target>> creates a ~Lwt thread that waits
@@ -1150,10 +1151,12 @@
 |@@class="odocwiki_index"@ @@<<a_api text="read"| value Deriving_Json.Json_min'.read >> ~[<<a_api | module Deriving_Json.Json_min' >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="read"| value Deriving_Json.Json_min.read >> ~[<<a_api | module Deriving_Json.Json_min >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="read"| value Deriving_Json.Json.read >> ~[<<a_api | module Deriving_Json.Json >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="read"| value Deriving_Json.read >> ~[<<a_api | module Deriving_Json >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="readAsBinaryString"| value File.readAsBinaryString >> ~[<<a_api | module File >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="readAsDataURL"| value File.readAsDataURL >> ~[<<a_api | module File >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="readAsText"| value File.readAsText >> ~[<<a_api | module File >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="readAsText_withEncoding"| value File.readAsText_withEncoding >> ~[<<a_api | module File >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="read_array"| value Deriving_Json.read_array >> ~[<<a_api | module Deriving_Json >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="read_bounded_int"| value Deriving_Json_lexer.read_bounded_int >> ~[<<a_api | module Deriving_Json_lexer >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="read_case"| value Deriving_Json_lexer.read_case >> ~[<<a_api | module Deriving_Json_lexer >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="read_comma"| value Deriving_Json_lexer.read_comma >> ~[<<a_api | module Deriving_Json_lexer >>~]||
@@ -1166,8 +1169,11 @@
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="read_lbracket"| value Deriving_Json_lexer.read_lbracket >> ~[<<a_api | module Deriving_Json_lexer >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="read_list"| value Deriving_Json.read_list >> ~[<<a_api | module Deriving_Json >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="read_number"| value Deriving_Json_lexer.read_number >> ~[<<a_api | module Deriving_Json_lexer >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="read_option"| value Deriving_Json.read_option >> ~[<<a_api | module Deriving_Json >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="read_rbracket"| value Deriving_Json_lexer.read_rbracket >> ~[<<a_api | module Deriving_Json_lexer >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="read_ref"| value Deriving_Json.read_ref >> ~[<<a_api | module Deriving_Json >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="read_string"| value Deriving_Json_lexer.read_string >> ~[<<a_api | module Deriving_Json_lexer >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="read_tag_1"| value Deriving_Json_lexer.read_tag_1 >> ~[<<a_api | module Deriving_Json_lexer >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="read_tag_2"| value Deriving_Json_lexer.read_tag_2 >> ~[<<a_api | module Deriving_Json_lexer >>~]||
@@ -1502,6 +1508,11 @@
 |@@class="odocwiki_index"@ @@<<a_api text="write"| value Deriving_Json.Json_min'.write >> ~[<<a_api | module Deriving_Json.Json_min' >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="write"| value Deriving_Json.Json_min.write >> ~[<<a_api | module Deriving_Json.Json_min >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="write"| value Deriving_Json.Json.write >> ~[<<a_api | module Deriving_Json.Json >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="write"| value Deriving_Json.write >> ~[<<a_api | module Deriving_Json >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="write_array"| value Deriving_Json.write_array >> ~[<<a_api | module Deriving_Json >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="write_list"| value Deriving_Json.write_list >> ~[<<a_api | module Deriving_Json >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="write_option"| value Deriving_Json.write_option >> ~[<<a_api | module Deriving_Json >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="write_ref"| value Deriving_Json.write_ref >> ~[<<a_api | module Deriving_Json >>~]||
 |@@ @style="tet-align: left;"@@\\X|
 |@@class="odocwiki_index"@ @@<<a_api text="xmlns"| value Dom_svg.xmlns >> ~[<<a_api | module Dom_svg >>~]|<<div class="odocwiki_info"|~Types
 >>
