@@ -141,6 +141,9 @@
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="file_info"| type Eliom_lib.file_info >> ~[<<a_api subproject="server" | module Eliom_lib >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="files"| type Eliom_parameter.files >> ~[<<a_api subproject="server" | module Eliom_parameter >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="fragment"| type Eliom_pervasives.fragment >> ~[<<a_api subproject="server" | module Eliom_pervasives >>~]|<<div class="odocwiki_info"|~An alias for <<a_api subproject="server" | type Eliom_pervasives.client_value >>~.
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="full_state_name"| type Eliom_common.full_state_name >> ~[<<a_api subproject="server" | module Eliom_common >>~]||
 |@@ @style="tet-align: left;"@@\\G|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="generator"| type Atom_feed.generator >> ~[<<a_api subproject="server" | module Atom_feed >>~]||

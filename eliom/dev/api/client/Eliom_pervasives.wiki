@@ -15,6 +15,8 @@
     ~See also <<a_api subproject="server" text="the abstract representation on the server" |
     type Eliom_pervasives.client_value >> ~.
 >>
+<<pre class="ocsforge_color odocwiki_code" id="TYPEfragment"|<<span class="ocsforge_color_keyword"|type>> <<span class="odocwiki_type"|'a>> <<span class="odocwiki_name"|fragment>> <<span class="ocsforge_color_delimiter"|~=>> <<span class="odocwiki_type"|'a <<a_api subproject="client" text="client_value" | type Eliom_pervasives.client_value >>>> >><<div class="odocwiki_info"|~An alias for <<a_api subproject="client" | type Eliom_pervasives.client_value >>~.
+>>
 
 
 ==@@id="2_RPCServerfunctions"@@~R~P~C ~/ ~Server functions==

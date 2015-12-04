@@ -5813,6 +5813,10 @@
                 ([< Html5_types.aside_attrib ],
                  [< Html5_types.aside_content_fun ], [> Html5_types.aside ])
                 star
+              val main :
+                ([< Html5_types.main_attrib ],
+                 [< Html5_types.main_content_fun ], [> Html5_types.main ])
+                star
               val p :
                 ([< Html5_types.p_attrib ], [< Html5_types.p_content_fun ],
                  [> Html5_types.p ])
@@ -7388,6 +7392,10 @@
           val aside :
             ([< Html5_types.aside_attrib ],
              [< Html5_types.aside_content_fun ], [> Html5_types.aside ])
+            star
+          val main :
+            ([< Html5_types.main_attrib ], [< Html5_types.main_content_fun ],
+             [> Html5_types.main ])
             star
           val p :
             ([< Html5_types.p_attrib ], [< Html5_types.p_content_fun ],
@@ -8990,6 +8998,10 @@
                 ([< Html5_types.aside_attrib ],
                  [< Html5_types.aside_content_fun ], [> Html5_types.aside ])
                 star
+              val main :
+                ([< Html5_types.main_attrib ],
+                 [< Html5_types.main_content_fun ], [> Html5_types.main ])
+                star
               val p :
                 ([< Html5_types.p_attrib ], [< Html5_types.p_content_fun ],
                  [> Html5_types.p ])
@@ -10565,6 +10577,10 @@
           val aside :
             ([< Html5_types.aside_attrib ],
              [< Html5_types.aside_content_fun ], [> Html5_types.aside ])
+            star
+          val main :
+            ([< Html5_types.main_attrib ], [< Html5_types.main_content_fun ],
+             [> Html5_types.main ])
             star
           val p :
             ([< Html5_types.p_attrib ], [< Html5_types.p_content_fun ],
@@ -12174,6 +12190,10 @@
                 ([< Html5_types.aside_attrib ],
                  [< Html5_types.aside_content_fun ], [> Html5_types.aside ])
                 star
+              val main :
+                ([< Html5_types.main_attrib ],
+                 [< Html5_types.main_content_fun ], [> Html5_types.main ])
+                star
               val p :
                 ([< Html5_types.p_attrib ], [< Html5_types.p_content_fun ],
                  [> Html5_types.p ])
@@ -13749,6 +13769,10 @@
           val aside :
             ([< Html5_types.aside_attrib ],
              [< Html5_types.aside_content_fun ], [> Html5_types.aside ])
+            star
+          val main :
+            ([< Html5_types.main_attrib ], [< Html5_types.main_content_fun ],
+             [> Html5_types.main ])
             star
           val p :
             ([< Html5_types.p_attrib ], [< Html5_types.p_content_fun ],

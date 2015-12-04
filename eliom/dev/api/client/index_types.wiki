@@ -74,6 +74,9 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="event_handler"| type Eliom_content_core.Xml.event_handler >> ~[<<a_api subproject="client" | module Eliom_content_core.Xml >>~]||
 |@@ @style="tet-align: left;"@@\\F|
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="file_info"| type Eliom_lib.file_info >> ~[<<a_api subproject="client" | module Eliom_lib >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="fragment"| type Eliom_pervasives.fragment >> ~[<<a_api subproject="client" | module Eliom_pervasives >>~]|<<div class="odocwiki_info"|~An alias for <<a_api subproject="client" | type Eliom_pervasives.client_value >>~.
+>>
+|
 |@@ @style="tet-align: left;"@@\\G|
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="get_page"| type Eliom_tools_common.get_page >> ~[<<a_api subproject="client" | module Eliom_tools_common >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="get_page"| type Eliom_tools.get_page >> ~[<<a_api subproject="client" | module Eliom_tools >>~]|<<div class="odocwiki_info"|~Restriction of <<a_api subproject="client" | type Eliom_service.service >> to registrable ~G~E~T
