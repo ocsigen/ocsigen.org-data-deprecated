@@ -118,11 +118,11 @@
       <<span class="odocwiki_inlinecode"|false>> otherwise~.
 
 
-      ~This call is not available on windows~.
+      ~This call is not available on windows and cygwin~.
 >>
 <<pre id="VALwait_mincore" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|wait~_mincore>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<a_api text="t" | type Lwt_bytes.t >> <<span class="ocsforge_color_delimiter"| -> >> int <<span class="ocsforge_color_delimiter"| -> >> unit <<a_api text="Lwt.t" | type Lwt.t >>>>>><<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|wait~_mincore buffer offset>> waits until the page containing the
       byte at offset <<span class="odocwiki_inlinecode"|offset>> is in ~R~A~M~.
 
 
-      ~This functions is not available on windows~.
+      ~This functions is not available on windows and cygwin~.
 >>
