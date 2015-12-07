@@ -152,7 +152,9 @@
 |@@class="odocwiki_index"@ @@<<a_api text="changes"| value Lwt_js_events.changes >> ~[<<a_api | module Lwt_js_events >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="checking"| value Dom_html.Event.checking >> ~[<<a_api | module Dom_html.Event >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="circle"| value Dom_svg.CoerceTo.circle >> ~[<<a_api | module Dom_svg.CoerceTo >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="clearTimeout"| value Dom_html.clearTimeout >> ~[<<a_api | module Dom_html >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="clearTimeout"| value Dom_html.clearTimeout >> ~[<<a_api | module Dom_html >>~]|<<div class="odocwiki_info"|~Convert a <<span class="odocwiki_inlinecode"|~Dom~_html~.collection>> to a ~Js array
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api text="click"| value Lwt_js_events.click >> ~[<<a_api | module Lwt_js_events >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="click"| value Dom_html.Event.click >> ~[<<a_api | module Dom_html.Event >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="clicks"| value Lwt_js_events.clicks >> ~[<<a_api | module Lwt_js_events >>~]||
@@ -638,6 +640,10 @@
 |@@class="odocwiki_index"@ @@<<a_api text="has"| value Dom.DocumentPosition.has >> ~[<<a_api | module Dom.DocumentPosition >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="hashchange"| value Dom_html.Event.hashchange >> ~[<<a_api | module Dom_html.Event >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="head"| value Dom_html.CoerceTo.head >> ~[<<a_api | module Dom_html.CoerceTo >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="hex_of_rgb"| value CSS.Color.hex_of_rgb >> ~[<<a_api | module CSS.Color >>~]|<<div class="odocwiki_info"|~Convert a tuple of three integers between <<span class="odocwiki_inlinecode"|~0>> and <<span class="odocwiki_inlinecode"|~2~5~5>> into a hex
+    string
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api text="hkern"| value Dom_svg.CoerceTo.hkern >> ~[<<a_api | module Dom_svg.CoerceTo >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="home"| value Keycode.home >> ~[<<a_api | module Keycode >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="host"| value Url.Current.host >> ~[<<a_api | module Url.Current >>~]|<<div class="odocwiki_info"|~The host part of the current url~.
@@ -727,6 +733,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="js"| value CSS.Color.js >> ~[<<a_api | module CSS.Color >>~]|<<div class="odocwiki_info"|~Projection from ~O~Caml to ~Js~.
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api text="js_array_of_collection"| value Dom_html.js_array_of_collection >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="js_expr"| value Js.Unsafe.js_expr >> ~[<<a_api | module Js.Unsafe >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|js~_expr e>> will parse the ~Java~Script expression <<span class="odocwiki_inlinecode"|e>> if <<span class="odocwiki_inlinecode"|e>>
         is available at compile time or will failback to a
         runtime evaluation~.

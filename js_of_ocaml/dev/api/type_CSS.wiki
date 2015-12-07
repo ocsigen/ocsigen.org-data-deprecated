@@ -151,6 +151,7 @@
         | Yellowgreen
       val string_of_name : CSS.Color.name -> string
       val rgb_of_name : CSS.Color.name -> int * int * int
+      val hex_of_rgb : int * int * int -> string
       type t =
           Name of CSS.Color.name
         | RGB of (int * int * int)

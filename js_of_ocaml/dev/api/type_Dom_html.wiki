@@ -6554,6 +6554,9 @@
   type timeout_id_safe
   val setTimeout : (unit -> unit) -> float -> Dom_html.timeout_id_safe
   val clearTimeout : Dom_html.timeout_id_safe -> unit
+  val js_array_of_collection :
+    #Dom_html.element Dom_html.collection Js.t ->
+    #Dom_html.element Js.t Js.js_array Js.t
   val _requestAnimationFrame : (unit -> unit) Js.callback -> unit
   val decode_html_entities : Js.js_string Js.t -> Js.js_string Js.t
   val onIE : bool
