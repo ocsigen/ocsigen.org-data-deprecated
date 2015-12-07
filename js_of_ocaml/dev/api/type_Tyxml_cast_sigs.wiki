@@ -380,6 +380,8 @@
       val of_keygen :
         [> Html5_types.keygen ] Tyxml_cast_sigs.TO.elt ->
         Dom_html.element Js.t
+      val of_main :
+        [> Html5_types.main ] Tyxml_cast_sigs.TO.elt -> Dom_html.element Js.t
       val of_mark :
         [> Html5_types.mark ] Tyxml_cast_sigs.TO.elt -> Dom_html.element Js.t
       val of_menu :

@@ -981,6 +981,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="of_li"| value Tyxml_cast_sigs.TO.of_li >> ~[<<a_api | module Tyxml_cast_sigs.TO >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="of_link"| value Tyxml_cast_sigs.OF.of_link >> ~[<<a_api | module Tyxml_cast_sigs.OF >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="of_link"| value Tyxml_cast_sigs.TO.of_link >> ~[<<a_api | module Tyxml_cast_sigs.TO >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="of_main"| value Tyxml_cast_sigs.TO.of_main >> ~[<<a_api | module Tyxml_cast_sigs.TO >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="of_map"| value Tyxml_cast_sigs.OF.of_map >> ~[<<a_api | module Tyxml_cast_sigs.OF >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="of_map"| value Tyxml_cast_sigs.TO.of_map >> ~[<<a_api | module Tyxml_cast_sigs.TO >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="of_mark"| value Tyxml_cast_sigs.TO.of_mark >> ~[<<a_api | module Tyxml_cast_sigs.TO >>~]||
