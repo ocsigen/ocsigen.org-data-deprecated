@@ -1118,7 +1118,8 @@
       failing~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api text="on_terminate"| value Lwt_stream.on_terminate >> ~[<<a_api | module Lwt_stream >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|on~_terminate st f>> executes <<span class="odocwiki_inlinecode"|f>> when the end of the stream <<span class="odocwiki_inlinecode"|st>>
+|@@class="odocwiki_index"@ @@<<a_api text="on_terminate"| value Lwt_stream.on_terminate >> ~[<<a_api | module Lwt_stream >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="on_termination"| value Lwt_stream.on_termination >> ~[<<a_api | module Lwt_stream >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|on~_termination st f>> executes <<span class="odocwiki_inlinecode"|f>> when the end of the stream <<span class="odocwiki_inlinecode"|st>>
       is reached~.
 >>
 |
