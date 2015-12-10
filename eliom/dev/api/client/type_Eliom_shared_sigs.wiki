@@ -140,9 +140,11 @@
       val singleton_s :
         'a Eliom_shared_sigs.RLIST.signal -> 'a Eliom_shared_sigs.RLIST.t
       val map :
+        ?eq:('b -> 'b -> bool) Eliom_lib.shared_value ->
         ('a -> 'b) Eliom_lib.shared_value ->
         'a Eliom_shared_sigs.RLIST.t -> 'b Eliom_shared_sigs.RLIST.t
       val make_from_s :
+        ?eq:('a -> 'a -> bool) Eliom_lib.shared_value ->
         'a list Eliom_shared_sigs.RLIST.signal ->
         'a Eliom_shared_sigs.RLIST.t
       val acc_e :

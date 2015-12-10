@@ -81,7 +81,7 @@
       val toggle : 'a Eliom_content.Html5.elt -> string -> unit
       val toggle2 : 'a Eliom_content.Html5.elt -> string -> string -> unit
     end
-  module Elt : sig val body : [ `Body ] Eliom_content.Html5.elt end
+  module Elt : sig val body : unit -> [ `Body ] Eliom_content.Html5.elt end
   module Ev :
     sig
       type ('a, 'b) ev =

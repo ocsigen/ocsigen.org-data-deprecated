@@ -16228,6 +16228,7 @@
           val of_kbd : [> Html5_types.kbd ] elt -> Dom_html.element Js.t
           val of_keygen :
             [> Html5_types.keygen ] elt -> Dom_html.element Js.t
+          val of_main : [> Html5_types.main ] elt -> Dom_html.element Js.t
           val of_mark : [> Html5_types.mark ] elt -> Dom_html.element Js.t
           val of_menu : [> Html5_types.menu ] elt -> Dom_html.element Js.t
           val of_meter : [> Html5_types.meter ] elt -> Dom_html.element Js.t
@@ -16358,7 +16359,8 @@
               val toggle2 :
                 'a Eliom_content.Html5.elt -> string -> string -> unit
             end
-          module Elt : sig val body : [ `Body ] Eliom_content.Html5.elt end
+          module Elt :
+            sig val body : unit -> [ `Body ] Eliom_content.Html5.elt end
           module Ev :
             sig
               type ('a, 'b) ev =

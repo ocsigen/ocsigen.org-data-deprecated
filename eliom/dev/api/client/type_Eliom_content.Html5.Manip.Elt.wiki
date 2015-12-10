@@ -1,1 +1,1 @@
-<<code language="ocaml" | sig val body : [ `Body ] Eliom_content.Html5.elt end >>
+<<code language="ocaml" | sig val body : unit -> [ `Body ] Eliom_content.Html5.elt end >>
