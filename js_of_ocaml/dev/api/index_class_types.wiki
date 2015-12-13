@@ -70,6 +70,7 @@
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="contextEvent"| class type WebGL.contextEvent >> ~[<<a_api | module WebGL >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="coordinates"| class type Geolocation.coordinates >> ~[<<a_api | module Geolocation >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="cssStyleDeclaration"| class type Dom_html.cssStyleDeclaration >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="cursorElement"| class type Dom_svg.cursorElement >> ~[<<a_api | module Dom_svg >>~]||
 |@@ @style="tet-align: left;"@@\\D|
@@ -138,6 +139,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="frameSetElement"| class type Dom_html.frameSetElement >> ~[<<a_api | module Dom_html >>~]||
 |@@ @style="tet-align: left;"@@\\G|
 |@@class="odocwiki_index"@ @@<<a_api text="gElement"| class type Dom_svg.gElement >> ~[<<a_api | module Dom_svg >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="geolocation"| class type Geolocation.geolocation >> ~[<<a_api | module Geolocation >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="glyphElement"| class type Dom_svg.glyphElement >> ~[<<a_api | module Dom_svg >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="glyphRefElement"| class type Dom_svg.glyphRefElement >> ~[<<a_api | module Dom_svg >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="gradientElement"| class type Dom_svg.gradientElement >> ~[<<a_api | module Dom_svg >>~]||
@@ -250,6 +252,9 @@
 |@@class="odocwiki_index"@ @@<<a_api text="polyLineElement"| class type Dom_svg.polyLineElement >> ~[<<a_api | module Dom_svg >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="polygonElement"| class type Dom_svg.polygonElement >> ~[<<a_api | module Dom_svg >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="popStateEvent"| class type Dom_html.popStateEvent >> ~[<<a_api | module Dom_html >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="position"| class type Geolocation.position >> ~[<<a_api | module Geolocation >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="positionError"| class type Geolocation.positionError >> ~[<<a_api | module Geolocation >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="positionOptions"| class type Geolocation.positionOptions >> ~[<<a_api | module Geolocation >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="preElement"| class type Dom_html.preElement >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="preserveAspectRatio"| class type Dom_svg.preserveAspectRatio >> ~[<<a_api | module Dom_svg >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="progressEvent"| class type File.progressEvent >> ~[<<a_api | module File >>~]||

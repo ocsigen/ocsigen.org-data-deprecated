@@ -156,6 +156,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="pixelFormat"| type WebGL.pixelFormat >> ~[<<a_api | module WebGL >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="pixelStoreParam"| type WebGL.pixelStoreParam >> ~[<<a_api | module WebGL >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="pixelType"| type WebGL.pixelType >> ~[<<a_api | module WebGL >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="positionErrorCode"| type Geolocation.positionErrorCode >> ~[<<a_api | module Geolocation >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="program"| type WebGL.program >> ~[<<a_api | module WebGL >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="programParam"| type WebGL.programParam >> ~[<<a_api | module WebGL >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="prop"| type Js.prop >> ~[<<a_api | module Js >>~]|<<div class="odocwiki_info"|~Type of read~/write properties~:
@@ -251,6 +252,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="vertexAttribPointerParam"| type WebGL.vertexAttribPointerParam >> ~[<<a_api | module WebGL >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="void"| type WebGL.void >> ~[<<a_api | module WebGL >>~]||
 |@@ @style="tet-align: left;"@@\\W|
+|@@class="odocwiki_index"@ @@<<a_api text="watchId"| type Geolocation.watchId >> ~[<<a_api | module Geolocation >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="wrapMode"| type WebGL.wrapMode >> ~[<<a_api | module WebGL >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="writeonly_prop"| type Js.writeonly_prop >> ~[<<a_api | module Js >>~]|<<div class="odocwiki_info"|~Type of write~-only properties~:
       a ~Javascript object

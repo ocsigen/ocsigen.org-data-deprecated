@@ -65,6 +65,9 @@
 >>
 |
 |@@ @style="tet-align: left;"@@\\G|
+|@@class="odocwiki_index"@ @@<<a_api text="Geolocation"| module Geolocation >> |<<div class="odocwiki_info"|~Geolocation ~A~P~I
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api text="Graphics_js"| module Graphics_js >> |<<div class="odocwiki_info"|~Javascript binding for ~Graphics lib
 >>
 |

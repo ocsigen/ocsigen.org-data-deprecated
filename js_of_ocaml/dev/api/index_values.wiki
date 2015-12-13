@@ -455,6 +455,7 @@
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="empty_form_contents"| value Form.empty_form_contents >> ~[<<a_api | module Form >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="empty_position_options"| value Geolocation.empty_position_options >> ~[<<a_api | module Geolocation >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="encodeURI"| value Js.encodeURI >> ~[<<a_api | module Js >>~]|<<div class="odocwiki_info"|~Encode a ~U~R~I~: convert the string to ~U~T~F~-~8 and replace all unsafe
       bytes by the corresponding escape sequence~.
 >>
@@ -584,6 +585,7 @@
 |
 |@@ @style="tet-align: left;"@@\\G|
 |@@class="odocwiki_index"@ @@<<a_api text="g"| value Dom_svg.CoerceTo.g >> ~[<<a_api | module Dom_svg.CoerceTo >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="geolocation"| value Geolocation.geolocation >> ~[<<a_api | module Geolocation >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="get"| value XmlHttpRequest.get >> ~[<<a_api | module XmlHttpRequest >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|get url>> makes an asynchronous request to the specified <<span class="odocwiki_inlinecode"|url>>
 >>
 |
@@ -724,6 +726,7 @@
 |
 |@@class="odocwiki_index"@ @@<<a_api text="isNaN"| value Js.isNaN >> ~[<<a_api | module Js >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="is_supported"| value WebSockets.is_supported >> ~[<<a_api | module WebSockets >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="is_supported"| value Geolocation.is_supported >> ~[<<a_api | module Geolocation >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="iter"| value Js.OPT.iter >> ~[<<a_api | module Js.OPT >>~]|<<div class="odocwiki_info"|~Apply a function to an optional value if it is available~.
 >>
 |

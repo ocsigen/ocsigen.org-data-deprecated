@@ -177,12 +177,14 @@
 |@@class="odocwiki_index"@ @@<<a_api text="_ONE_MINUS_SRC_COLOR_"| method WebGL.renderingContext#_ONE_MINUS_SRC_COLOR_ >> ~[<<a_api | module WebGL >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="_OUT_OF_MEMORY_"| method WebGL.renderingContext#_OUT_OF_MEMORY_ >> ~[<<a_api | module WebGL >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="_PACK_ALIGNMENT_"| method WebGL.renderingContext#_PACK_ALIGNMENT_ >> ~[<<a_api | module WebGL >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="_PERMISSION_DENIED_"| method Geolocation.positionError#_PERMISSION_DENIED_ >> ~[<<a_api | module Geolocation >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="_PI"| method Js.math#_PI >> ~[<<a_api | module Js >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="_POINTS"| method WebGL.renderingContext#_POINTS >> ~[<<a_api | module WebGL >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="_POLYGON_OFFSET_FACTOR_"| method WebGL.renderingContext#_POLYGON_OFFSET_FACTOR_ >> ~[<<a_api | module WebGL >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="_POLYGON_OFFSET_FILL_"| method WebGL.renderingContext#_POLYGON_OFFSET_FILL_ >> ~[<<a_api | module WebGL >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="_POLYGON_OFFSET_FILL_PARAM"| method WebGL.renderingContext#_POLYGON_OFFSET_FILL_PARAM >> ~[<<a_api | module WebGL >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="_POLYGON_OFFSET_UNITS_"| method WebGL.renderingContext#_POLYGON_OFFSET_UNITS_ >> ~[<<a_api | module WebGL >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="_POSITION_UNAVAILABLE_"| method Geolocation.positionError#_POSITION_UNAVAILABLE_ >> ~[<<a_api | module Geolocation >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="_RED_BITS_"| method WebGL.renderingContext#_RED_BITS_ >> ~[<<a_api | module WebGL >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="_RENDERBUFFER"| method WebGL.renderingContext#_RENDERBUFFER >> ~[<<a_api | module WebGL >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="_RENDERBUFFER_ALPHA_SIZE_"| method WebGL.renderingContext#_RENDERBUFFER_ALPHA_SIZE_ >> ~[<<a_api | module WebGL >>~]||
@@ -295,6 +297,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="_TEXTURE_OT"| method WebGL.renderingContext#_TEXTURE_OT >> ~[<<a_api | module WebGL >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="_TEXTURE_WRAP_S_"| method WebGL.renderingContext#_TEXTURE_WRAP_S_ >> ~[<<a_api | module WebGL >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="_TEXTURE_WRAP_T_"| method WebGL.renderingContext#_TEXTURE_WRAP_T_ >> ~[<<a_api | module WebGL >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="_TIMEOUT"| method Geolocation.positionError#_TIMEOUT >> ~[<<a_api | module Geolocation >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="_TRIANGLES"| method WebGL.renderingContext#_TRIANGLES >> ~[<<a_api | module WebGL >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="_TRIANGLE_FAN_"| method WebGL.renderingContext#_TRIANGLE_FAN_ >> ~[<<a_api | module WebGL >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="_TRIANGLE_STRIP_"| method WebGL.renderingContext#_TRIANGLE_STRIP_ >> ~[<<a_api | module WebGL >>~]||
@@ -372,6 +375,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="accessKey"| method Dom_html.buttonElement#accessKey >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="accessKey"| method Dom_html.textAreaElement#accessKey >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="accessKey"| method Dom_html.inputElement#accessKey >> ~[<<a_api | module Dom_html >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="accuracy"| method Geolocation.coordinates#accuracy >> ~[<<a_api | module Geolocation >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="acos"| method Js.math#acos >> ~[<<a_api | module Js >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="action"| method Dom_html.formElement#action >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="activeTexture"| method WebGL.renderingContext#activeTexture >> ~[<<a_api | module WebGL >>~]|<<div class="odocwiki_info"|~5~.~1~3~.~3 ~Setting and getting state
@@ -398,6 +402,8 @@
 |@@class="odocwiki_index"@ @@<<a_api text="altKey"| method Dom_html.touchEvent#altKey >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="altKey"| method Dom_html.keyboardEvent#altKey >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="altKey"| method Dom_html.mouseEvent#altKey >> ~[<<a_api | module Dom_html >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="altitude"| method Geolocation.coordinates#altitude >> ~[<<a_api | module Geolocation >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="altitudeAccuracy"| method Geolocation.coordinates#altitudeAccuracy >> ~[<<a_api | module Geolocation >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="anchorNode"| method Dom_html.selection#anchorNode >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="anchorOffset"| method Dom_html.selection#anchorOffset >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="anchors"| method Dom_html.document#anchors >> ~[<<a_api | module Dom_html >>~]||
@@ -578,6 +584,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="clearRect"| method Dom_html.canvasRenderingContext2D#clearRect >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="clearStencil"| method WebGL.renderingContext#clearStencil >> ~[<<a_api | module WebGL >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="clearTimeout"| method Dom_html.window#clearTimeout >> ~[<<a_api | module Dom_html >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="clearWatch"| method Geolocation.geolocation#clearWatch >> ~[<<a_api | module Geolocation >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="click"| method Dom_html.inputElement#click >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="clientHeight"| method Dom_html.element#clientHeight >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="clientLeft"| method Dom_html.element#clientLeft >> ~[<<a_api | module Dom_html >>~]||
@@ -601,6 +608,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="close_withCodeAndReason"| method WebSockets.webSocket#close_withCodeAndReason >> ~[<<a_api | module WebSockets >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="closed"| method Dom_html.window#closed >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="code"| method WebSockets.closeEvent#code >> ~[<<a_api | module WebSockets >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="code"| method Geolocation.positionError#code >> ~[<<a_api | module Geolocation >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="code"| method File.fileError#code >> ~[<<a_api | module File >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="code"| method Dom_svg.svg_error#code >> ~[<<a_api | module Dom_svg >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="code"| method Dom_html.objectElement#code >> ~[<<a_api | module Dom_html >>~]||
@@ -646,6 +654,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="convertToSpecifiedUnits"| method Dom_svg.length#convertToSpecifiedUnits >> ~[<<a_api | module Dom_svg >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="cookie"| method Dom_html.document#cookie >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="cookieEnabled"| method Dom_html.navigator#cookieEnabled >> ~[<<a_api | module Dom_html >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="coords"| method Geolocation.position#coords >> ~[<<a_api | module Geolocation >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="coords"| method Dom_html.areaElement#coords >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="coords"| method Dom_html.anchorElement#coords >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="copyTexImage2D"| method WebGL.renderingContext#copyTexImage2D >> ~[<<a_api | module WebGL >>~]||
@@ -818,6 +827,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="elements"| method Dom_html.formElement#elements >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="emptyCells"| method Dom_html.cssStyleDeclaration#emptyCells >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="enable"| method WebGL.renderingContext#enable >> ~[<<a_api | module WebGL >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="enableHighAccuracy"| method Geolocation.positionOptions#enableHighAccuracy >> ~[<<a_api | module Geolocation >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="enableVertexAttribArray"| method WebGL.renderingContext#enableVertexAttribArray >> ~[<<a_api | module WebGL >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="enctype"| method Dom_html.formElement#enctype >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="endContainer"| method Dom_html.range#endContainer >> ~[<<a_api | module Dom_html >>~]||
@@ -924,6 +934,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="getContextAttributes"| method WebGL.renderingContext#getContextAttributes >> ~[<<a_api | module WebGL >>~]|<<div class="odocwiki_info"|~5~.~1~3~.~2 ~Getting information about the context
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api text="getCurrentPosition"| method Geolocation.geolocation#getCurrentPosition >> ~[<<a_api | module Geolocation >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="getCurrentTime"| method Dom_svg.animationElement#getCurrentTime >> ~[<<a_api | module Dom_svg >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="getCurrentTime"| method Dom_svg.svgElement#getCurrentTime >> ~[<<a_api | module Dom_svg >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="getData"| method Dom_html.dataTransfer#getData >> ~[<<a_api | module Dom_html >>~]||
@@ -1030,6 +1041,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="hash"| method Dom_html.location#hash >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="head"| method Dom_html.document#head >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="headers"| method Dom_html.tableCellElement#headers >> ~[<<a_api | module Dom_html >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="heading"| method Geolocation.coordinates#heading >> ~[<<a_api | module Geolocation >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="height"| method Dom_svg.foreignObjectElement#height >> ~[<<a_api | module Dom_svg >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="height"| method Dom_svg.filterElement#height >> ~[<<a_api | module Dom_svg >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="height"| method Dom_svg.maskElement#height >> ~[<<a_api | module Dom_svg >>~]||
@@ -1134,6 +1146,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="lastIndexOf"| method Js.js_string#lastIndexOf >> ~[<<a_api | module Js >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="lastIndexOf_from"| method Js.js_string#lastIndexOf_from >> ~[<<a_api | module Js >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="lastModifiedDate"| method File.file#lastModifiedDate >> ~[<<a_api | module File >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="latitude"| method Geolocation.coordinates#latitude >> ~[<<a_api | module Geolocation >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="left"| method Dom_html.clientRect#left >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="left"| method Dom_html.cssStyleDeclaration#left >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="length"| method Typed_array.typedArray#length >> ~[<<a_api | module Typed_array >>~]||
@@ -1185,6 +1198,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="log_8"| method Firebug.console#log_8 >> ~[<<a_api | module Firebug >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="longDesc"| method Dom_html.iFrameElement#longDesc >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="longDesc"| method Dom_html.frameElement#longDesc >> ~[<<a_api | module Dom_html >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="longitude"| method Geolocation.coordinates#longitude >> ~[<<a_api | module Geolocation >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="lookupNamespaceURI"| method Dom.node#lookupNamespaceURI >> ~[<<a_api | module Dom >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="lookupPrefix"| method Dom.node#lookupPrefix >> ~[<<a_api | module Dom >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="loop"| method Dom_html.mediaElement#loop >> ~[<<a_api | module Dom_html >>~]||
@@ -1207,6 +1221,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="maxWidth"| method Dom_html.cssStyleDeclaration#maxWidth >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="max_3"| method Js.math#max_3 >> ~[<<a_api | module Js >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="max_4"| method Js.math#max_4 >> ~[<<a_api | module Js >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="maximumAge"| method Geolocation.positionOptions#maximumAge >> ~[<<a_api | module Geolocation >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="measureText"| method Dom_html.canvasRenderingContext2D#measureText >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="media"| method Dom_svg.styleElement#media >> ~[<<a_api | module Dom_svg >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="media"| method Dom_html.styleElement#media >> ~[<<a_api | module Dom_html >>~]||
@@ -1214,6 +1229,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="mediagroup"| method Dom_html.mediaElement#mediagroup >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="meetOrSlice"| method Dom_svg.preserveAspectRatio#meetOrSlice >> ~[<<a_api | module Dom_svg >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="message"| method Js.error#message >> ~[<<a_api | module Js >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="message"| method Geolocation.positionError#message >> ~[<<a_api | module Geolocation >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="metaKey"| method Dom_html.touchEvent#metaKey >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="metaKey"| method Dom_html.keyboardEvent#metaKey >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="metaKey"| method Dom_html.mouseEvent#metaKey >> ~[<<a_api | module Dom_html >>~]||
@@ -1670,6 +1686,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="spacing"| method Dom_svg.textPathElement#spacing >> ~[<<a_api | module Dom_svg >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="span"| method Dom_html.tableColElement#span >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="specified"| method Dom.attr#specified >> ~[<<a_api | module Dom >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="speed"| method Geolocation.coordinates#speed >> ~[<<a_api | module Geolocation >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="splice"| method Js.js_array#splice >> ~[<<a_api | module Js >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="splice_1"| method Js.js_array#splice_1 >> ~[<<a_api | module Js >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="splice_2"| method Js.js_array#splice_2 >> ~[<<a_api | module Js >>~]||
@@ -1786,6 +1803,8 @@
 |@@class="odocwiki_index"@ @@<<a_api text="textTransform"| method Dom_html.cssStyleDeclaration#textTransform >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="time"| method Firebug.console#time >> ~[<<a_api | module Firebug >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="timeEnd"| method Firebug.console#timeEnd >> ~[<<a_api | module Firebug >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="timeout"| method Geolocation.positionOptions#timeout >> ~[<<a_api | module Geolocation >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="timestamp"| method Geolocation.position#timestamp >> ~[<<a_api | module Geolocation >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="title"| method Dom_svg.styleElement#title >> ~[<<a_api | module Dom_svg >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="title"| method Dom_svg.document#title >> ~[<<a_api | module Dom_svg >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="title"| method Dom_html.document#title >> ~[<<a_api | module Dom_html >>~]||
@@ -1942,6 +1961,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="warn_4"| method Firebug.console#warn_4 >> ~[<<a_api | module Firebug >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="warn_5"| method Firebug.console#warn_5 >> ~[<<a_api | module Firebug >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="wasClean"| method WebSockets.closeEvent#wasClean >> ~[<<a_api | module WebSockets >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="watchPosition"| method Geolocation.geolocation#watchPosition >> ~[<<a_api | module Geolocation >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="wheelDelta"| method Dom_html.mousewheelEvent#wheelDelta >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="wheelDeltaX"| method Dom_html.mousewheelEvent#wheelDeltaX >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="wheelDeltaY"| method Dom_html.mousewheelEvent#wheelDeltaY >> ~[<<a_api | module Dom_html >>~]||
