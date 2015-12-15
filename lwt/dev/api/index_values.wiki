@@ -1248,7 +1248,7 @@
       is cooperative
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api text="read"| value Lwt_io.read >> ~[<<a_api | module Lwt_io >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|read ~?count ic>> reads at most <<span class="odocwiki_inlinecode"|len>> characters from <<span class="odocwiki_inlinecode"|ic>>~.
+|@@class="odocwiki_index"@ @@<<a_api text="read"| value Lwt_io.read >> ~[<<a_api | module Lwt_io >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|read ~?count ic>> reads at most <<span class="odocwiki_inlinecode"|count>> characters from <<span class="odocwiki_inlinecode"|ic>>~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="read"| value Lwt_ssl.read >> ~[<<a_api | module Lwt_ssl >>~]||
