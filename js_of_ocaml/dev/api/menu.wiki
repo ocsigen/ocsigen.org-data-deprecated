@@ -20,6 +20,7 @@
 ==[[Typed_array|Typed_array]]
 ==[[WebGL|WebGL]]
 ==[[WebSockets|WebSockets]]
+==[[Geolocation|Geolocation]]
 =~Ppx ~- ~A~P~I ~Reference
 ==[[Ppx_js|Ppx_js]]
 =~Deriving ~- ~A~P~I ~Reference

@@ -1,28 +1,29 @@
 =Module <<a_api_type | module Geolocation >> =
 <<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module>> <<span class="ocsforge_color_uid"|<<span class="ocsforge_color_uid"|Geolocation>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="ocsforge_color_keyword"|sig>><<a_api text=".." | module Geolocation >><<span class="ocsforge_color_keyword"|end>>>>~Geolocation ~A~P~I
-**See also**
-* [[https://developer.mozilla.org/en-US/docs/Web/API/Geolocation|for ~A~P~I documentation~.]]
-* [[http://www.w3.org/TR/geolocation-API/|for the ~W~3~C ~Recommendation~.
 
 
   ~A code example~:
-
-
-  if ~(~Geolocation~.is~_supported~(~)~) then
-    let geo ~= ~Geolocation~.geolocation in
-    let options ~= ~Geolocation~.empty~_position~_options~(~) in
-    let ~(~) ~= options~#~#enable~High~Accuracy ~<~- true in
-    let f~_success pos ~=
-      let coords ~= pos~#~#coords in
-      let latitude ~= coords~#~#latitude in
-      ~Firebug~.console~#~#debug~(latitude~) ~;
+  
+<<code language='ocaml'|  if (Geolocation.is_supported()) then
+    let geo = Geolocation.geolocation in
+    let options = Geolocation.empty_position_options() in
+    let () = options##enableHighAccuracy <- true in
+    let f_success pos =
+      let coords = pos##coords in
+      let latitude = coords##latitude in
+      Firebug.console##debug(latitude) ;
     in
-    let f~_error err ~=
-      let code ~= err~#~#code in
-      let msg ~= err~#~#message in
-      if code ~= err~#~#~_~T~I~M~E~O~U~T then ~Firebug~.console~#~#debug~(msg~)
+    let f_error err =
+      let code = err##code in
+      let msg = err##message in
+      if code = err##_TIMEOUT then Firebug.console##debug(msg)
     in
-    geo~#~#get~Current~Position~(~Js~.wrap~_callback f~_success~, ~Js~.wrap~_callback f~_error~, options~)]]
+    geo##getCurrentPosition(Js.wrap_callback f_success, Js.wrap_callback f_error, options)
+  >>
+
+**See also**
+* [[https://developer.mozilla.org/en-US/docs/Web/API/Geolocation|for ~A~P~I documentation~.]]
+* [[http://www.w3.org/TR/geolocation-API/|for the ~W~3~C ~Recommendation~.]]
 
 
 ----
