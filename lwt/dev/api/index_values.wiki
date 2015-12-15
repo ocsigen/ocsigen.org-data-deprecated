@@ -1827,13 +1827,13 @@
 |@@class="odocwiki_index"@ @@<<a_api text="windows"| value Lwt_sys.windows >> ~[<<a_api | module Lwt_sys >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|true>> iff running on windows~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api text="with_async_detach"| value Lwt_unix.with_async_detach >> ~[<<a_api | module Lwt_unix >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|with~_async~_none f>> is a shorthand for~:
+|@@class="odocwiki_index"@ @@<<a_api text="with_async_detach"| value Lwt_unix.with_async_detach >> ~[<<a_api | module Lwt_unix >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|with~_async~_detach f>> is a shorthand for~:
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="with_async_none"| value Lwt_unix.with_async_none >> ~[<<a_api | module Lwt_unix >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|with~_async~_none f>> is a shorthand for~:
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api text="with_async_switch"| value Lwt_unix.with_async_switch >> ~[<<a_api | module Lwt_unix >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|with~_async~_none f>> is a shorthand for~:
+|@@class="odocwiki_index"@ @@<<a_api text="with_async_switch"| value Lwt_unix.with_async_switch >> ~[<<a_api | module Lwt_unix >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|with~_async~_switch f>> is a shorthand for~:
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="with_connection"| value Lwt_io.with_connection >> ~[<<a_api | module Lwt_io >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|with~_connection ~?fd ~?in~_buffer ~?out~_buffer addr f>> opens a
