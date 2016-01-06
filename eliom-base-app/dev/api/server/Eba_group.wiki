@@ -5,6 +5,11 @@
     server functions~.
 
 ----
+
+~Groups of users~.
+    ~Groups are sets of users~. ~Groups and group members are saved in database~.
+    ~Groups are used by ~E~B~A for example to restrict access to pages or
+    server functions~.
 <<pre id="EXCEPTIONNo_such_group" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|exception>> <<span class="odocwiki_name"|No_such_group>>>><<pre class="ocsforge_color odocwiki_code" id="TYPEt"|<<span class="ocsforge_color_keyword"|type>> <<span class="odocwiki_name"|t>>>><<div class="odocwiki_info"|~The type of a group
 >>
 <<pre id="VALid_of_group" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|id~_of~_group>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<a_api subproject="server" text="t" | type Eba_group.t >> <<span class="ocsforge_color_delimiter"| -> >> int64>>>><<pre id="VALname_of_group" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|name~_of~_group>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<a_api subproject="server" text="t" | type Eba_group.t >> <<span class="ocsforge_color_delimiter"| -> >> string>>>><<pre id="VALdesc_of_group" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|desc~_of~_group>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<a_api subproject="server" text="t" | type Eba_group.t >> <<span class="ocsforge_color_delimiter"| -> >> string option>>>><<pre id="VALcreate" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|create>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<span class="ocsforge_color_label"| ?description: >>string <<span class="ocsforge_color_delimiter"| -> >> string <<span class="ocsforge_color_delimiter"| -> >> <<a_api subproject="server" text="t" | type Eba_group.t >> <<span class="ocsforge_color_uid"|Lwt>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>>>>>><<div class="odocwiki_info"|~Helper function which creates a new group and return it as

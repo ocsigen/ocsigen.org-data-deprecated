@@ -3,7 +3,8 @@
   val on_start_connected_process : (int64 -> unit Lwt.t) -> unit
   val on_connected_request : (int64 -> unit Lwt.t) -> unit
   val on_open_session : (int64 -> unit Lwt.t) -> unit
-  val on_close_session : (unit -> unit Lwt.t) -> unit
+  val on_pre_close_session : (unit -> unit Lwt.t) -> unit
+  val on_post_close_session : (unit -> unit Lwt.t) -> unit
   val on_request : (unit -> unit Lwt.t) -> unit
   val on_denied_request : (int64 option -> unit Lwt.t) -> unit
   val user_indep_state_hierarchy : Eliom_common.scope_hierarchy
@@ -11,7 +12,7 @@
   val user_indep_session_scope : Eliom_common.session_scope
   exception Not_connected
   exception Permission_denied
-  val connect : int64 -> unit Lwt.t
+  val connect : ?expire:float -> int64 -> unit Lwt.t
   val disconnect : unit -> unit Lwt.t
   val connected_fun :
     ?allow:Eba_group.t list ->

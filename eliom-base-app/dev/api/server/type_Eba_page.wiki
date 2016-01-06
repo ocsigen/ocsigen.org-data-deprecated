@@ -1,5 +1,12 @@
 <<code language="ocaml" | sig
   exception Predicate_failed of exn option
+  type content
+  val content :
+    ?a:Html5_types.body_attrib Eliom_content.Html5.attrib list ->
+    ?title:string ->
+    ?head:[< Html5_types.head_content_fun ] Eliom_content.Html5.elt list ->
+    [< Html5_types.body_content ] Eliom_content.Html5.elt list ->
+    Eba_page.content
   module type PAGE =
     sig
       val title : string
@@ -11,11 +18,15 @@
         'a ->
         'b ->
         exn -> Html5_types.body_content Eliom_content.Html5.elt list Lwt.t
+      val default_error_page_full :
+        ('a -> 'b -> exn -> Eba_page.content Lwt.t) option
       val default_connected_error_page :
         int64 option ->
         'a ->
         'b ->
         exn -> Html5_types.body_content Eliom_content.Html5.elt list Lwt.t
+      val default_connected_error_page_full :
+        (int64 option -> 'a -> 'b -> exn -> Eba_page.content Lwt.t) option
       val default_predicate : 'a -> 'b -> bool Lwt.t
       val default_connected_predicate :
         int64 option -> 'a -> 'b -> bool Lwt.t
@@ -54,6 +65,14 @@
                'b ->
                Html5_types.body_content Eliom_content.Html5.elt list Lwt.t) ->
               'a -> 'b -> Html5_types.html Eliom_content.Html5.elt Lwt.t
+            val connected_page_full :
+              ?allow:Eba_group.t list ->
+              ?deny:Eba_group.t list ->
+              ?predicate:(int64 option -> 'a -> 'b -> bool Lwt.t) ->
+              ?fallback:(int64 option ->
+                         'a -> 'b -> exn -> Eba_page.content Lwt.t) ->
+              (int64 option -> 'a -> 'b -> Eba_page.content Lwt.t) ->
+              'a -> 'b -> Html5_types.html Eliom_content.Html5.elt Lwt.t
           end
         val connected_page :
           ?allow:Eba_group.t list ->
@@ -68,6 +87,14 @@
           (int64 ->
            'a ->
            'b -> Html5_types.body_content Eliom_content.Html5.elt list Lwt.t) ->
+          'a -> 'b -> Html5_types.html Eliom_content.Html5.elt Lwt.t
+        val connected_page_full :
+          ?allow:Eba_group.t list ->
+          ?deny:Eba_group.t list ->
+          ?predicate:(int64 option -> 'a -> 'b -> bool Lwt.t) ->
+          ?fallback:(int64 option ->
+                     'a -> 'b -> exn -> Eba_page.content Lwt.t) ->
+          (int64 -> 'a -> 'b -> Eba_page.content Lwt.t) ->
           'a -> 'b -> Html5_types.html Eliom_content.Html5.elt Lwt.t
       end
 end >>

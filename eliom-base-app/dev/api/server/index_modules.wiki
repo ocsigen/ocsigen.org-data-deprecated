@@ -3,6 +3,7 @@
 |@@ @style="tet-align: left;"@@\\D|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Default_config"| module Eba_page.Default_config >> ~[<<a_api subproject="server" | module Eba_page >>~]||
 |@@ @style="tet-align: left;"@@\\E|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Eba_date"| module Eba_date >> ||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Eba_email"| module Eba_email >> ||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Eba_group"| module Eba_group >> |<<div class="odocwiki_info"|~Groups of users~.
 >>

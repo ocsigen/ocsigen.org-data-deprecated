@@ -1,5 +1,11 @@
 =Index of types=
 
+|@@ @style="tet-align: left;"@@\\C|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="content"| type Eba_page.content >> ~[<<a_api subproject="client" | module Eba_page >>~]|<<div class="odocwiki_info"|~An abstract type describing the content of a page
+>>
+|
+|@@ @style="tet-align: left;"@@\\L|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="local_calendar"| type Eba_date.local_calendar >> ~[<<a_api subproject="client" | module Eba_date >>~]||
 |@@ @style="tet-align: left;"@@\\T|
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="t"| type Eba_user.t >> ~[<<a_api subproject="client" | module Eba_user >>~]|<<div class="odocwiki_info"|~The type which represents a user~.
 >>

@@ -14,10 +14,18 @@
     information~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="connected_page"| value Eba_page.Make.Opt.connected_page >> ~[<<a_api subproject="client" | module Eba_page.Make.Opt >>~]|<<div class="odocwiki_info"|~Wrapper for page that first checks if user is connected~.
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="connected_page"| value Eba_page.Make.Opt.connected_page >> ~[<<a_api subproject="client" | module Eba_page.Make.Opt >>~]|<<div class="odocwiki_info"|~Wrapper for pages that first checks if the user is connected~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="connected_page"| value Eba_page.Make.connected_page >> ~[<<a_api subproject="client" | module Eba_page.Make >>~]|<<div class="odocwiki_info"|~Wrapper for page that first checks if user is connected~.
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="connected_page"| value Eba_page.Make.connected_page >> ~[<<a_api subproject="client" | module Eba_page.Make >>~]|<<div class="odocwiki_info"|~Wrapper for pages that first checks if the user is connected~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="connected_page_full"| value Eba_page.Make.Opt.connected_page_full >> ~[<<a_api subproject="client" | module Eba_page.Make.Opt >>~]|<<div class="odocwiki_info"|~More flexible wrapper than <<a_api subproject="client" | val Eba_page.Make.Opt.connected_page >> for pages that
+        first checks if the user is connected~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="connected_page_full"| value Eba_page.Make.connected_page_full >> ~[<<a_api subproject="client" | module Eba_page.Make >>~]|<<div class="odocwiki_info"|~More flexible wrapper than <<span class="odocwiki_inlinecode"|connected~_page>> for pages that
+      first checks if user is connected~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="connected_rpc"| value Eba_session.Opt.connected_rpc >> ~[<<a_api subproject="client" | module Eba_session.Opt >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="client" | val Eba_session.Opt.connected_rpc >> but instead of failing in case the user is
@@ -34,6 +42,10 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="connection_box"| value Eba_userbox.connection_box >> ~[<<a_api subproject="client" | module Eba_userbox >>~]|<<div class="odocwiki_info"|~Connection box
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="content"| value Eba_page.content >> ~[<<a_api subproject="client" | module Eba_page >>~]|<<div class="odocwiki_info"|~Specifies a page with an optional title~, some optional extra
+    metadata and a given body
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="css"| value Eba_page.PAGE.css >> ~[<<a_api subproject="client" | module Eba_page.PAGE >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|css>> ~(same as <<span class="odocwiki_inlinecode"|js>> but for style sheet files~)~,
       ~Eba will automatically prepend the suffix "css~/" as directory~.
 >>
@@ -42,10 +54,17 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="default_connected_error_page"| value Eba_page.PAGE.default_connected_error_page >> ~[<<a_api subproject="client" | module Eba_page.PAGE >>~]|<<div class="odocwiki_info"|~Default error page for connected pages~.
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="default_connected_error_page_full"| value Eba_page.PAGE.default_connected_error_page_full >> ~[<<a_api subproject="client" | module Eba_page.PAGE >>~]|<<div class="odocwiki_info"|~Default error page for connected pages ~(with custom headers and
+      title~)~.
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="default_connected_predicate"| value Eba_page.PAGE.default_connected_predicate >> ~[<<a_api subproject="client" | module Eba_page.PAGE >>~]|<<div class="odocwiki_info"|~Default predicate for connected pages~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="default_error_page"| value Eba_page.PAGE.default_error_page >> ~[<<a_api subproject="client" | module Eba_page.PAGE >>~]|<<div class="odocwiki_info"|~Default error page~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="default_error_page_full"| value Eba_page.PAGE.default_error_page_full >> ~[<<a_api subproject="client" | module Eba_page.PAGE >>~]|<<div class="odocwiki_info"|~Default error page ~(with custom headers and title~)~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="default_predicate"| value Eba_page.PAGE.default_predicate >> ~[<<a_api subproject="client" | module Eba_page.PAGE >>~]|<<div class="odocwiki_info"|~Default predicate~.
@@ -74,6 +93,8 @@
 |
 |@@ @style="tet-align: left;"@@\\L|
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="lastname_of_user"| value Eba_user.lastname_of_user >> ~[<<a_api subproject="client" | module Eba_user >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="local_from_calendar"| value Eba_date.local_from_calendar >> ~[<<a_api subproject="client" | module Eba_date >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="local_to_calendar"| value Eba_date.local_to_calendar >> ~[<<a_api subproject="client" | module Eba_date >>~]||
 |@@ @style="tet-align: left;"@@\\M|
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="make_page"| value Eba_page.Make.make_page >> ~[<<a_api subproject="client" | module Eba_page.Make >>~]|<<div class="odocwiki_info"|~Builds a valid html page from body content by adding headers
       for this app
@@ -83,6 +104,8 @@
     to display an error message in the page~.
 >>
 |
+|@@ @style="tet-align: left;"@@\\N|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="now"| value Eba_date.now >> ~[<<a_api subproject="client" | module Eba_date >>~]||
 |@@ @style="tet-align: left;"@@\\O|
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="other_head"| value Eba_page.PAGE.other_head >> ~[<<a_api subproject="client" | module Eba_page.PAGE >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|other~_head>> is a list of custom elements to add in the head section~.
 >>
@@ -102,12 +125,22 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="set_user_menu"| value Eba_userbox.set_user_menu >> ~[<<a_api subproject="client" | module Eba_userbox >>~]|<<div class="odocwiki_info"|~Personnalize user menu
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="smart_date"| value Eba_date.smart_date >> ~[<<a_api subproject="client" | module Eba_date >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="smart_date_interval"| value Eba_date.smart_date_interval >> ~[<<a_api subproject="client" | module Eba_date >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="smart_hours_minutes"| value Eba_date.smart_hours_minutes >> ~[<<a_api subproject="client" | module Eba_date >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="smart_interval"| value Eba_date.smart_interval >> ~[<<a_api subproject="client" | module Eba_date >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="smart_time"| value Eba_date.smart_time >> ~[<<a_api subproject="client" | module Eba_date >>~]||
 |@@ @style="tet-align: left;"@@\\T|
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="title"| value Eba_page.PAGE.title >> ~[<<a_api subproject="client" | module Eba_page.PAGE >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|title>> corresponds to the html tag ~<title~>~, it will be inserted on all
       pages~.
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="to_local"| value Eba_date.to_local >> ~[<<a_api subproject="client" | module Eba_date >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="to_local_date"| value Eba_date.to_local_date >> ~[<<a_api subproject="client" | module Eba_date >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="to_local_time"| value Eba_date.to_local_time >> ~[<<a_api subproject="client" | module Eba_date >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="to_utc"| value Eba_date.to_utc >> ~[<<a_api subproject="client" | module Eba_date >>~]||
 |@@ @style="tet-align: left;"@@\\U|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="unknown_timezone"| value Eba_date.unknown_timezone >> ~[<<a_api subproject="client" | module Eba_date >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="upload_pic_link"| value Eba_userbox.upload_pic_link >> ~[<<a_api subproject="client" | module Eba_userbox >>~]|<<div class="odocwiki_info"|~Link to upload a picture~.
 >>
 |

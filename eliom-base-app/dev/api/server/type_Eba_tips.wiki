@@ -55,6 +55,7 @@
                   | `Kbd
                   | `Keygen
                   | `Label
+                  | `Main
                   | `Map of Html5_types.flow5
                   | `Mark
                   | `Menu
