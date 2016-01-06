@@ -422,15 +422,15 @@
     = "caml_js_to_byte_string"
   val coerce : 'a -> ('a -> 'b Js.Opt.t) -> ('a -> 'b) -> 'b
   val coerce_opt : 'a Js.Opt.t -> ('a -> 'b Js.Opt.t) -> ('a -> 'b) -> 'b
-  external typeof : < .. > Js.t -> Js.js_string Js.t = "caml_js_typeof"
-  external instanceof : < .. > Js.t -> 'a Js.constr -> bool
+  external typeof : 'a Js.t -> Js.js_string Js.t = "caml_js_typeof"
+  external instanceof : 'a Js.t -> 'b Js.constr -> bool
     = "caml_js_instanceof"
   external debugger : unit -> unit = "debugger"
   module Unsafe :
     sig
       type any
       external inject : 'a -> Js.Unsafe.any = "%identity"
-      external coerce : < .. > Js.t -> < .. > Js.t = "%identity"
+      external coerce : 'a Js.t -> 'b Js.t = "%identity"
       external get : 'a -> 'b -> 'c = "caml_js_get"
       external set : 'a -> 'b -> 'c -> unit = "caml_js_set"
       external delete : 'a -> 'b -> unit = "caml_js_delete"

@@ -290,9 +290,9 @@
 
 ==@@id="2_Typecheckingoperators"@@~Type checking operators~.==
 
-<<pre id="VALtypeof" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|typeof>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|< .. > <<a_api text="t" | type Js.t >> <<span class="ocsforge_color_delimiter"| -> >> <<a_api text="js_string" | class type Js.js_string >> <<a_api text="t" | type Js.t >>>>>><<div class="odocwiki_info"|~Returns the type of a ~Javascript object~.
+<<pre id="VALtypeof" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|typeof>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|'a <<a_api text="t" | type Js.t >> <<span class="ocsforge_color_delimiter"| -> >> <<a_api text="js_string" | class type Js.js_string >> <<a_api text="t" | type Js.t >>>>>><<div class="odocwiki_info"|~Returns the type of a ~Javascript object~.
 >>
-<<pre id="VALinstanceof" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|instanceof>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|< .. > <<a_api text="t" | type Js.t >> <<span class="ocsforge_color_delimiter"| -> >> 'a <<a_api text="constr" | type Js.constr >> <<span class="ocsforge_color_delimiter"| -> >> bool>>>><<div class="odocwiki_info"|~Tests whether a ~Javascript object is an instance of a given class~.
+<<pre id="VALinstanceof" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|instanceof>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|'a <<a_api text="t" | type Js.t >> <<span class="ocsforge_color_delimiter"| -> >> 'b <<a_api text="constr" | type Js.constr >> <<span class="ocsforge_color_delimiter"| -> >> bool>>>><<div class="odocwiki_info"|~Tests whether a ~Javascript object is an instance of a given class~.
 >>
 
 

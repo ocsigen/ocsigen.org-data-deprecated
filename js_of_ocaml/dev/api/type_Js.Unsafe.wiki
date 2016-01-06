@@ -1,7 +1,7 @@
 <<code language="ocaml" | sig
   type any
   external inject : 'a -> Js.Unsafe.any = "%identity"
-  external coerce : < .. > Js.t -> < .. > Js.t = "%identity"
+  external coerce : 'a Js.t -> 'b Js.t = "%identity"
   external get : 'a -> 'b -> 'c = "caml_js_get"
   external set : 'a -> 'b -> 'c -> unit = "caml_js_set"
   external delete : 'a -> 'b -> unit = "caml_js_delete"
