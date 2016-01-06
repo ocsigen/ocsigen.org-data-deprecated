@@ -25,7 +25,6 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Ow_completion"| module Ow_completion >> |<<div class="odocwiki_info"|~A completion widget to complete on string value~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Ow_dom"| module Ow_dom >> ||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Ow_dropdown"| module Ow_dropdown >> |<<div class="odocwiki_info"|~A dropdown menu is a menu which can be displayed under an element
       which will act like a <<span class="odocwiki_inlinecode"|button>>~.
 >>

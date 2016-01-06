@@ -17,5 +17,4 @@
     'a Eliom_content.Html5.elt -> 'a Eliom_content.Html5.elt
   val to_popup : 'a Eliom_content.Html5.elt -> Ow_alert.alert Js.t
   val to_dyn_popup : 'a Eliom_content.Html5.elt -> Ow_alert.dyn_alert Js.t
-  type dyn_popup_fun' = Ow_alert.dyn_alert_fun'
 end >>

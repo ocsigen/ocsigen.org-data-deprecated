@@ -51,6 +51,7 @@
       method cloneNode : bool Js.t -> Dom.node Js.t Js.meth
       method compareDocumentPosition :
         Dom.node Js.t -> Dom.DocumentPosition.t Js.meth
+      method cssText : Js.js_string Js.t Js.prop
       method dir : Js.js_string Js.t Js.prop
       method firstChild : Dom.node Js.t Js.opt Js.prop
       method getAttribute :
@@ -195,6 +196,7 @@
       method cloneNode : bool Js.t -> Dom.node Js.t Js.meth
       method compareDocumentPosition :
         Dom.node Js.t -> Dom.DocumentPosition.t Js.meth
+      method cssText : Js.js_string Js.t Js.prop
       method dir : Js.js_string Js.t Js.prop
       method firstChild : Dom.node Js.t Js.opt Js.prop
       method getAttribute :
@@ -348,7 +350,6 @@
     'a Eliom_content.Html5.elt
   val to_alert : 'a Eliom_content.Html5.elt -> Ow_alert.alert Js.t
   val to_dyn_alert : 'a Eliom_content.Html5.elt -> Ow_alert.dyn_alert Js.t
-  type dyn_alert_fun' =
-      Ow_dom.any_elt' Eliom_content.Html5.elt ->
-      Ow_dom.any_elt' Eliom_content.Html5.elt list Lwt.t
+  type ('a, 'b) dyn_alert_fun' =
+      'a Eliom_content.Html5.elt -> 'b Eliom_content.Html5.elt list Lwt.t
 end >>

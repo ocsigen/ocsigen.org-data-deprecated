@@ -1,7 +1,6 @@
 <<code language="ocaml" | sig
-  type dyn_alert_fun' =
-      Ow_dom.any_elt' Eliom_content.Html5.elt ->
-      Ow_dom.any_elt' Eliom_content.Html5.elt list Lwt.t
+  type ('a, 'b) dyn_alert_fun' =
+      'a Eliom_content.Html5.elt -> 'b Eliom_content.Html5.elt list Lwt.t
   val closeable_by_click :
     'a Eliom_content.Html5.elt -> 'a Eliom_content.Html5.elt
   val alert :
@@ -14,6 +13,6 @@
     ?before:('a Eliom_content.Html5.elt -> unit Lwt.t) ->
     ?after:('a Eliom_content.Html5.elt -> unit Lwt.t) ->
     'a Eliom_content.Html5.elt ->
-    Ow_alert.dyn_alert_fun' Eliom_pervasives.client_value ->
+    ('a, 'b) Ow_alert.dyn_alert_fun' Eliom_pervasives.client_value ->
     'a Eliom_content.Html5.elt
 end >>

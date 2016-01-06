@@ -1,7 +1,5 @@
 =Index of types=
 
-|@@ @style="tet-align: left;"@@\\A|
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="any_elt'"| type Ow_dom.any_elt' >> ~[<<a_api subproject="client" | module Ow_dom >>~]||
 |@@ @style="tet-align: left;"@@\\B|
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="button_dyn_alert_fun'"| type Ow_button.button_dyn_alert_fun' >> ~[<<a_api subproject="client" | module Ow_button >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="by"| type Ow_traversable.by >> ~[<<a_api subproject="client" | module Ow_traversable >>~]|<<div class="odocwiki_info"|~A type which defines which interaction have been used to trigger
@@ -20,7 +18,6 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="div"| type Ow_table_color_picker.div >> ~[<<a_api subproject="client" | module Ow_table_color_picker >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="div"| type Ow_slider.div >> ~[<<a_api subproject="client" | module Ow_slider >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="dyn_alert_fun'"| type Ow_alert.dyn_alert_fun' >> ~[<<a_api subproject="client" | module Ow_alert >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="dyn_popup_fun'"| type Ow_popup.dyn_popup_fun' >> ~[<<a_api subproject="client" | module Ow_popup >>~]||
 |@@ @style="tet-align: left;"@@\\E|
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="event"| type Ow_traversable.Event.event >> ~[<<a_api subproject="client" | module Ow_traversable.Event >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="event"| type Ow_button.Event.event >> ~[<<a_api subproject="client" | module Ow_button.Event >>~]||

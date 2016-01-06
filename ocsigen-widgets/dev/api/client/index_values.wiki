@@ -479,7 +479,7 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="update"| value Ow_scrollbar.update >> ~[<<a_api subproject="client" | module Ow_scrollbar >>~]|<<div class="odocwiki_info"|~Update the scrollbar~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="upload_pic_form"| value Ow_pic_uploader.upload_pic_form >> ~[<<a_api subproject="client" | module Ow_pic_uploader >>~]|<<div class="odocwiki_info"|~Creates a form that will ask for an image~, send it~, possibly ask te user
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="upload_pic_form"| value Ow_pic_uploader.upload_pic_form >> ~[<<a_api subproject="client" | module Ow_pic_uploader >>~]|<<div class="odocwiki_info"|~Creates a form that will ask for an image~, send it~, possibly ask the user
     to crop it~.
 >>
 |
