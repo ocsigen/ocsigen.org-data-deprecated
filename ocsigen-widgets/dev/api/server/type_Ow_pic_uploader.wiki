@@ -13,6 +13,9 @@
                    Ow_pic_uploader.crop_type -> unit Lwt.t) ->
     unit -> Ow_pic_uploader.t
   val upload_pic_form :
+    ?send:string ->
+    ?crop:string ->
+    ?select_an_area_of_the_picture:string ->
     ?fit_in_box:([ `Div ] Eliom_content.Html5.D.elt ->
                  int option * int option)
                 Eliom_pervasives.client_value ->
