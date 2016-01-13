@@ -15,9 +15,6 @@
   val filter :
     ?eq:('a -> 'a -> bool) ->
     ('a -> bool) -> 'a -> 'a React.signal -> 'a React.signal
-  val fmap :
-    ?eq:('b -> 'b -> bool) ->
-    ('a -> 'b option) -> 'b -> 'a React.signal -> 'b React.signal
   val diff : ('a -> 'a -> 'b) -> 'a React.signal -> 'b React.event
   val changes : 'a React.signal -> 'a React.event
   val sample :
@@ -462,6 +459,10 @@
   val map :
     ?eq:('b -> 'b -> bool) Eliom_lib.shared_value ->
     ('a -> 'b) Eliom_lib.shared_value -> 'a t -> 'b t
+  val fmap :
+    ?eq:('b -> 'b -> bool) Eliom_lib.shared_value ->
+    ('a -> 'b option) Eliom_lib.shared_value ->
+    'b Eliom_lib.shared_value -> 'a t -> 'b t
   val merge :
     ?eq:('a -> 'a -> bool) Eliom_lib.shared_value ->
     ('a -> 'b -> 'a) Eliom_lib.shared_value -> 'a -> 'b t list -> 'a t

@@ -545,6 +545,7 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="float_select"| value Eliom_form_sigs.S.float_select >> ~[<<a_api subproject="client" | module Eliom_form_sigs.S >>~]|<<div class="odocwiki_info"|~Creates a <<span class="odocwiki_inlinecode"|~<select~>>> tag for float values~.
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="fmap"| value Eliom_shared_sigs.S.fmap >> ~[<<a_api subproject="client" | module Eliom_shared_sigs.S >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="font"| value Eliom_content.Html5.Manip.SetCss.font >> ~[<<a_api subproject="client" | module Eliom_content.Html5.Manip.SetCss >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="font"| value Eliom_content.Html5.Manip.Css.font >> ~[<<a_api subproject="client" | module Eliom_content.Html5.Manip.Css >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="fontFamily"| value Eliom_content.Html5.Manip.SetCss.fontFamily >> ~[<<a_api subproject="client" | module Eliom_content.Html5.Manip.SetCss >>~]||

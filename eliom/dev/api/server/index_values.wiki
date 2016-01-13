@@ -539,6 +539,7 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="float_select"| value Eliom_form_sigs.S.float_select >> ~[<<a_api subproject="server" | module Eliom_form_sigs.S >>~]|<<div class="odocwiki_info"|~Creates a <<span class="odocwiki_inlinecode"|~<select~>>> tag for float values~.
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="fmap"| value Eliom_shared_sigs.S.fmap >> ~[<<a_api subproject="server" | module Eliom_shared_sigs.S >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="fold_persistent_data_cookies"| value Eliom_state.Ext.fold_persistent_data_cookies >> ~[<<a_api subproject="server" | module Eliom_state.Ext >>~]|<<div class="odocwiki_info"|~Iterator on persistent cookies~.
 >>
 |
