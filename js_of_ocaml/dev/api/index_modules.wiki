@@ -101,6 +101,9 @@
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="JsooTopError"| module JsooTopError >> ||
+|@@class="odocwiki_index"@ @@<<a_api text="Jstable"| module Jstable >> |<<div class="odocwiki_info"|~A minimal table implementation specialized for <<a_api | class type Js.js_string >> keys~.
+>>
+|
 |@@ @style="tet-align: left;"@@\\K|
 |@@class="odocwiki_index"@ @@<<a_api text="Keycode"| module Keycode >> ||
 |@@ @style="tet-align: left;"@@\\L|

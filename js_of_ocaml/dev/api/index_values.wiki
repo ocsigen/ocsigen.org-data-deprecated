@@ -27,6 +27,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="abort"| value Lwt_js_events.abort >> ~[<<a_api | module Lwt_js_events >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="abort"| value File.ReaderEvent.abort >> ~[<<a_api | module File.ReaderEvent >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="abort"| value Dom_html.Event.abort >> ~[<<a_api | module Dom_html.Event >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="add"| value Jstable.add >> ~[<<a_api | module Jstable >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="add"| value Dom.DocumentPosition.add >> ~[<<a_api | module Dom.DocumentPosition >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="addEventListener"| value File.addEventListener >> ~[<<a_api | module File >>~]|<<div class="odocwiki_info"|~Add an event listener~.
 >>
@@ -181,6 +182,7 @@
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="create"| value XmlHttpRequest.create >> ~[<<a_api | module XmlHttpRequest >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="create"| value Jstable.create >> ~[<<a_api | module Jstable >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="createA"| value Dom_svg.createA >> ~[<<a_api | module Dom_svg >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="createA"| value Dom_html.createA >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="createAbbr"| value Dom_html.createAbbr >> ~[<<a_api | module Dom_html >>~]||
@@ -527,6 +529,7 @@
 |
 |@@class="odocwiki_index"@ @@<<a_api text="filter"| value Dom_svg.CoerceTo.filter >> ~[<<a_api | module Dom_svg.CoerceTo >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="filter_attrib"| value Tyxml_js.R.filter_attrib >> ~[<<a_api | module Tyxml_js.R >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="find"| value Jstable.find >> ~[<<a_api | module Jstable >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="float"| value Js.float >> ~[<<a_api | module Js >>~]|<<div class="odocwiki_info"|~Conversion of ~O~Caml floats to ~Javascript numbers~.
 >>
 |
@@ -761,6 +764,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="keypress"| value Lwt_js_events.keypress >> ~[<<a_api | module Lwt_js_events >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="keypress"| value Dom_html.Event.keypress >> ~[<<a_api | module Dom_html.Event >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="keypresses"| value Lwt_js_events.keypresses >> ~[<<a_api | module Lwt_js_events >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="keys"| value Jstable.keys >> ~[<<a_api | module Jstable >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="keyup"| value Lwt_js_events.keyup >> ~[<<a_api | module Lwt_js_events >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="keyup"| value Dom_html.Event.keyup >> ~[<<a_api | module Dom_html.Event >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="keyups"| value Lwt_js_events.keyups >> ~[<<a_api | module Lwt_js_events >>~]||

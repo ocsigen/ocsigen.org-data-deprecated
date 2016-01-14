@@ -72,6 +72,9 @@
 |<<a_api | module Geolocation >>|<<div class="odocwiki_info"|~Geolocation ~A~P~I
 >>
 |
+|<<a_api | module Jstable >>|<<div class="odocwiki_info"|~A minimal table implementation specialized for <<a_api | class type Js.js_string >> keys~.
+>>
+|
 
 
 

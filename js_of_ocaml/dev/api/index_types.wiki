@@ -206,6 +206,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="t"| type Deriving_Json.t >> ~[<<a_api | module Deriving_Json >>~]|<<div class="odocwiki_info"|~The type of ~J~S~O~N parser~/printer for value of type <<span class="odocwiki_inlinecode"|~'a>>~.
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api text="t"| type Jstable.t >> ~[<<a_api | module Jstable >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="t"| type Js.OPT.t >> ~[<<a_api | module Js.OPT >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="t"| type Js.t >> ~[<<a_api | module Js >>~]|<<div class="odocwiki_info"|~Type of ~Javascript objects~.
 >>

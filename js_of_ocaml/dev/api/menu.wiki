@@ -21,6 +21,7 @@
 ==[[WebGL|WebGL]]
 ==[[WebSockets|WebSockets]]
 ==[[Geolocation|Geolocation]]
+==[[Jstable|Jstable]]
 =~Ppx ~- ~A~P~I ~Reference
 ==[[Ppx_js|Ppx_js]]
 =~Deriving ~- ~A~P~I ~Reference
