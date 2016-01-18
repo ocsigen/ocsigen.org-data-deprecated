@@ -8,14 +8,21 @@
 
 
 
+    ~This ~Ppx extension adds various syntactic shortcut for lwt programming~.
+    ~It needs ~O~Caml ~>~= ~4~.~0~2 and [[https://github.com/alainfrisch/ppx_tools|ppx~_tools]]~.
+
+
+    ~To use it~, simply use the ocamlfind package <<span class="odocwiki_inlinecode"|lwt~.ppx>>~.
+
+
    ~This extension adds the following syntax~:
 
 
 * lwt~-binding~:
 
    
-<<code language='ocaml'|     let%lwt ch = get_char stdin in
-     code
+<<code language='ocaml'|let%lwt ch = get_char stdin in
+code
    >>
 
 
@@ -27,9 +34,9 @@
 
 
    
-<<code language='ocaml'|     let%lwt x = do_something1 ()
-     and y = do_something2 in
-     code
+<<code language='ocaml'|let%lwt x = do_something1 ()
+and y = do_something2 in
+code
    >>
 
 
@@ -39,9 +46,9 @@
 
 
    
-<<code language='ocaml'|     let t1 = do_something1
-     and t2 = do_something2 in
-     bind t1 (fun x -> bind t2 (fun y -> code))
+<<code language='ocaml'|let t1 = do_something1
+and t2 = do_something2 in
+bind t1 (fun x -> bind t2 (fun y -> code))
    >>
 
 
@@ -49,10 +56,10 @@
 * exception catching~:
 
    
-<<code language='ocaml'|     try%lwt
-       <expr>
-     with
-       <branches>
+<<code language='ocaml'|try%lwt
+  <expr>
+with
+  <branches>
    >>
 
 
@@ -61,12 +68,12 @@
 
 
    
-<<code language='ocaml'|     try%lwt
-       f x
-     with
-       | Failure msg ->
-           prerr_endline msg;
-           return ()
+<<code language='ocaml'|try%lwt
+  f x
+with
+  | Failure msg ->
+      prerr_endline msg;
+      return ()
    >>
 
 
@@ -75,13 +82,13 @@
 
 
    
-<<code language='ocaml'|     catch (fun () -> f x)
-       (function
-         | Failure msg ->
-             prerr_endline msg;
-             return ()
-         | exn ->
-             Lwt.fail exn)
+<<code language='ocaml'|catch (fun () -> f x)
+  (function
+    | Failure msg ->
+        prerr_endline msg;
+        return ()
+    | exn ->
+        Lwt.fail exn)
    >>
 
 
@@ -112,9 +119,9 @@
 * for loop~:
 
    
-<<code language='ocaml'|     for%lwt i = <expr> to <expr> do
-       <expr>
-     done
+<<code language='ocaml'|for%lwt i = <expr> to <expr> do
+  <expr>
+done
    >>
 
 
@@ -123,9 +130,9 @@
 
 
    
-<<code language='ocaml'|     for%lwt i = <expr> downto <expr> do
-       <expr>
-     done
+<<code language='ocaml'|for%lwt i = <expr> downto <expr> do
+  <expr>
+done
    >>
 
 
@@ -133,9 +140,9 @@
 * while loop~:
 
    
-<<code language='ocaml'|     while%lwt <expr> do
-       <expr>
-     done
+<<code language='ocaml'|while%lwt <expr> do
+  <expr>
+done
    >>
 
 
@@ -143,10 +150,10 @@
 * pattern matching~:
 
    
-<<code language='ocaml'|     match%lwt <expr> with
-       | <patt_1> -> <expr_1>
-           ...
-       | <patt_n> -> <expr_n>
+<<code language='ocaml'|match%lwt <expr> with
+  | <patt_1> -> <expr_1>
+      ...
+  | <patt_n> -> <expr_n>
    >>
 
 
@@ -155,11 +162,11 @@
 
 
    
-<<code language='ocaml'|     match%lwt <expr> with
-       | exception <exn> -> <expr_1>
-       | <patt_2> -> <expr_2>
-           ...
-       | <patt_n> -> <expr_n>
+<<code language='ocaml'|match%lwt <expr> with
+  | exception <exn> -> <expr_1>
+  | <patt_2> -> <expr_2>
+      ...
+  | <patt_n> -> <expr_n>
    >>
 
 
@@ -167,10 +174,10 @@
 * conditional~:
 
    
-<<code language='ocaml'|     if%lwt <expr> then
-       <expr_1>
-     else
-       <expr_2>
+<<code language='ocaml'|if%lwt <expr> then
+  <expr_1>
+else
+  <expr_2>
    >>
 
 
@@ -211,7 +218,14 @@
    ~By default~, the debug mode is enabled~. ~This means that the <<span class="odocwiki_inlinecode"|backtrace>> versions of the <<span class="odocwiki_inlinecode"|bind>>~, <<span class="odocwiki_inlinecode"|finalize>> and <<span class="odocwiki_inlinecode"|catch>> functions are used~, enabling proper backtraces for the ~Lwt exceptions~.
 
 
-   ~The debug mode can be disabled with the option <<span class="odocwiki_inlinecode"|~-no~-debug>>~.
+   ~The debug mode can be disabled with the option <<span class="odocwiki_inlinecode"|~-no~-debug>>~:
+
+
+   
+<<code language='ocaml'|$ ocamlfind ocamlc -package lwt.ppx \
+    -ppxopt lwt.ppx,-no-debug -linkpkg -o foo foo.ml
+   >>
+
 
 
    
@@ -229,6 +243,8 @@
    ~By default~, each operation must return <<span class="odocwiki_inlinecode"|unit ~Lwt~.t>>~. ~This constraint can be
    lifted with the option <<span class="odocwiki_inlinecode"|~-no~-strict~-sequence>>~. ~The operator can be disabled
    with the option <<span class="odocwiki_inlinecode"|~-no~-sequence>>~.
+   ~Note that unlike <<span class="odocwiki_inlinecode"|~>~>~=>>~, <<span class="odocwiki_inlinecode"|~>~>>> is not an ~O~Caml value~. it is a piece of syntax
+   added by the ppx rewriter ~- i~.e~.~, you cannot refer to <<span class="odocwiki_inlinecode"|~(~>~>~)>>~.
 
 
    
@@ -250,10 +266,10 @@
 
 
    
-<<code language='ocaml'|     if Lwt_log.Section.level section <= Lwt_log.Info then
-       Lwt_log.info_f ~section "x = %d" x
-     else
-       return ()
+<<code language='ocaml'|if Lwt_log.Section.level section <= Lwt_log.Info then
+  Lwt_log.info_f ~section "x = %d" x
+else
+  return ()
    >>
 
 
