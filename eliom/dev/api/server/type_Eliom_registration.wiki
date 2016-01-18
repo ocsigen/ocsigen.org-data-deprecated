@@ -1173,6 +1173,7 @@
         ('a -> 'b -> [ `Html ] Eliom_content.Html5.elt Lwt.t)
         Eliom_lib.client_value -> unit
       val application_script :
+        ?defer:bool ->
         ?async:bool -> unit -> [> `Script ] Eliom_content.Html5.elt
       val application_name : string
       val is_initial_request : unit -> bool
