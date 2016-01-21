@@ -353,7 +353,6 @@
       val exn_slot_name : exn -> string
       val register_exn_printer : ((exn -> string) -> exn -> string) -> unit
     end
-  val make_cryptographic_safe_string : unit -> string
   module String :
     sig
       external length : string -> int = "%string_length"
@@ -688,12 +687,14 @@
   module Client_value_server_repr :
     sig
       type 'a t = 'a Eliom_lib_base.Client_value_server_repr.t
-      val create : closure_id:int64 -> instance_id:int64 -> 'a t
-      val closure_id : 'a t -> int64
-      val instance_id : 'a t -> int64
+      val create :
+        ?loc:pos -> instance_id:int -> unwrapper:Eliom_wrap.unwrapper -> 'a t
+      val instance_id : 'a t -> int
+      val loc : 'a t -> pos option
+      val clear_loc : 'a t -> unit
+      val to_poly : 'a t -> Ocsigen_lib_base.poly t
     end
   type escaped_value = Eliom_lib_base.escaped_value
-  val fresh_ix : unit -> int64
   module RawXML :
     sig
       type separator = Space | Comma
@@ -712,8 +713,7 @@
             Deriving_Json_lexer.lexbuf -> [ `Cst of int | `NCst of int ] -> a
         end
       type -'a caml_event_handler =
-          CE_registered_closure of string *
-            ('a Js.t -> unit) Client_value_server_repr.t
+          CE_registered_closure of string * Ocsigen_lib_base.poly
         | CE_client_closure of ('a Js.t -> unit)
         | CE_call_service of
             ([ `A | `Form_get | `Form_post ] * cookie_info option *
@@ -783,8 +783,7 @@
         | RACamlEventHandler of biggest_event caml_event_handler
         | RALazyStr of string Eliom_lazy.request
         | RALazyStrL of separator * string Eliom_lazy.request list
-        | RAClient of string * attrib option *
-            attrib Client_value_server_repr.t
+        | RAClient of string * attrib option * Ocsigen_lib_base.poly
       and attrib = aname * racontent
       val aname : attrib -> aname
       val acontent : attrib -> acontent
@@ -839,11 +838,8 @@
           val map : ('a -> 'b) -> 'a t -> 'b t
           val mapi : (key -> 'a -> 'b) -> 'a t -> 'b t
         end
-      type event_handler_table =
-          (biggest_event Js.t -> unit) Client_value_server_repr.t
-          ClosureMap.t
-      type client_attrib_table =
-          attrib Client_value_server_repr.t ClosureMap.t
+      type event_handler_table = Ocsigen_lib_base.poly ClosureMap.t
+      type client_attrib_table = Ocsigen_lib_base.poly ClosureMap.t
       val filter_class_attribs :
         node_id -> (string * racontent) list -> (string * racontent) list
     end
@@ -851,29 +847,26 @@
   val client_value_unwrap_id_int : int
   type client_value_datum =
     Eliom_lib_base.client_value_datum = {
-    closure_id : int64;
-    instance_id : int64;
-    loc : pos option;
+    closure_id : string;
     args : Ocsigen_lib_base.poly;
-    value : Ocsigen_lib_base.poly;
+    value : Ocsigen_lib_base.poly Client_value_server_repr.t;
   }
-  type 'a injection_datum =
-    'a Eliom_lib_base.injection_datum = {
-    injection_id : string;
-    injection_value : 'a;
-    injection_loc : pos option;
-    injection_ident : string option;
+  type injection_datum =
+    Eliom_lib_base.injection_datum = {
+    injection_dbg : (pos * string option) option;
+    injection_id : int;
+    injection_value : Ocsigen_lib_base.poly;
   }
-  type 'a compilation_unit_global_data =
-    'a Eliom_lib_base.compilation_unit_global_data = {
-    server_sections_data : client_value_datum list Queue.t;
-    client_sections_data : 'a injection_datum list Queue.t;
+  type compilation_unit_global_data =
+    Eliom_lib_base.compilation_unit_global_data = {
+    server_sections_data : client_value_datum array array;
+    client_sections_data : injection_datum array array;
   }
   type request_data = Eliom_lib_base.request_data
   val global_data_unwrap_id_int : int
   type +'a client_value
   type +'a shared_value
-  exception Client_value_creation_invalid_context of int64
+  exception Client_value_creation_invalid_context of string
   exception Eliom_Internal_Error of string
   type file_info = Ocsigen_extensions.file_info
   val to_json : ?typ:'a Deriving_Json.t -> 'a -> string
@@ -1096,15 +1089,19 @@
       val eliom : section
     end
   val create_client_value :
+    ?loc:pos -> instance_id:int -> 'a Client_value_server_repr.t
+  val client_value_from_server_repr :
     'a Client_value_server_repr.t -> 'a Eliom_lib.client_value
+  val client_value_datum :
+    closure_id:string ->
+    args:poly -> value:'a Eliom_lib.client_value -> client_value_datum
   val create_shared_value :
     'a -> 'a Eliom_lib.client_value -> 'a Eliom_lib.shared_value
   val shared_value_server_repr :
     'a Eliom_lib.shared_value -> 'a * 'a Eliom_lib.client_value
-  val client_value_server_repr :
-    'a Eliom_lib.client_value -> 'a Client_value_server_repr.t
   val escaped_value : 'a -> escaped_value
   val string_escape : string -> string
-  type global_data = poly Eliom_lib_base.global_data * Eliom_wrap.unwrapper
+  type global_data = Eliom_lib_base.global_data * Eliom_wrap.unwrapper
   val global_data_unwrapper : Eliom_wrap.unwrapper
+  val make_cryptographic_safe_string : ?len:int -> unit -> string
 end >>

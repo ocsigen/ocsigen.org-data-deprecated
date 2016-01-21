@@ -1489,18 +1489,17 @@
     ('a, 'b, 'c, 'd, 'g, 'h, 'e, 'f, 'i, 'rr) Eliom_service.service
   val eliom_appl_answer_content_type : string
   exception Wrong_session_table_for_CSRF_safe_coservice
-  val get_global_data : unit -> Eliom_lib.poly Eliom_lib_base.global_data
+  val get_global_data : unit -> Eliom_lib_base.global_data
   val get_request_data : unit -> Eliom_lib.request_data
   module Syntax_helpers :
     sig
       val client_value :
-        ?pos:Eliom_lib.pos -> int64 -> 'args -> 'a Eliom_lib.client_value
+        ?pos:Eliom_lib.pos -> string -> 'args -> 'a Eliom_lib.client_value
       val set_global : bool -> unit
       val close_server_section : string -> unit
       val close_client_section :
         string ->
-        (string * (unit -> Eliom_lib.poly) * Eliom_lib.pos * string option)
-        list -> unit
+        (int * Eliom_lib.poly * Eliom_lib.pos * string option) list -> unit
       val escaped_value : 'a -> Eliom_lib.escaped_value
     end
 end >>

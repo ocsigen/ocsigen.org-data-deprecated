@@ -120,7 +120,7 @@
   module Syntax_helpers :
     sig
       val get_injection : ?ident:string -> ?pos:Eliom_lib.pos -> string -> 'a
-      val register_client_closure : int64 -> ('args -> 'res) -> unit
+      val register_client_closure : string -> ('args -> 'res) -> unit
       val close_server_section : string -> unit
       val open_client_section : string -> unit
       val get_escaped_value : Eliom_lib.escaped_value -> 'a

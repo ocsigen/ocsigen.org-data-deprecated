@@ -978,6 +978,9 @@
       manipulating the list~.
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="make_cryptographic_safe_string"| value Eliom_lib.make_cryptographic_safe_string >> ~[<<a_api subproject="server" | module Eliom_lib >>~]|<<div class="odocwiki_info"|~Return a base~-~6~4 encoded cryptographic safe string of the given length~.
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="make_from_s"| value Eliom_shared_sigs.RLIST.make_from_s >> ~[<<a_api subproject="server" | module Eliom_shared_sigs.RLIST >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="make_non_localized_parameters"| value Eliom_parameter.make_non_localized_parameters >> ~[<<a_api subproject="server" | module Eliom_parameter >>~]|<<div class="odocwiki_info"|create a new specification for non localized parameters~.
 >>

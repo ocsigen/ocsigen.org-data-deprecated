@@ -21,8 +21,7 @@
       type aname = string
       type attrib
       type -'a caml_event_handler =
-          CE_registered_closure of string *
-            ('a Js.t -> unit) Eliom_lib.Client_value_server_repr.t
+          CE_registered_closure of string * Eliom_lib.poly
         | CE_client_closure of ('a Js.t -> unit)
         | CE_call_service of
             ([ `A | `Form_get | `Form_post ] * (bool * string list) option *
@@ -104,8 +103,7 @@
         | RALazyStrL of Eliom_content_core.Xml.separator *
             string Eliom_lazy.request list
         | RAClient of string * Eliom_content_core.Xml.attrib option *
-            Eliom_content_core.Xml.attrib
-            Eliom_lib.Client_value_server_repr.t
+            Eliom_lib.poly
       val racontent :
         Eliom_content_core.Xml.attrib -> Eliom_content_core.Xml.racontent
       val aname :
