@@ -76,9 +76,7 @@ file~.
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Eliom_content"| module Eliom_content >> |<<div class="odocwiki_info"|~This module allows creating valid ~H~T~M~L content~, or other ~X~M~L formats~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Eliom_content_sigs"| module Eliom_content_sigs >> |<<div class="odocwiki_info"|~Creates an untyped form~.
->>
-|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Eliom_content_sigs"| module Eliom_content_sigs >> ||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Eliom_cookie"| module Eliom_cookie >> |<<div class="odocwiki_info"|~Cookies table manipulation ~(~Duplicate of ~Ocsigen~_cookies~)~.
 >>
 |
@@ -90,14 +88,12 @@ file~.
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Eliom_extension"| module Eliom_extension >> |<<div class="odocwiki_info"|~Allows ~Ocsigen~'s extension to access ~Eliom data~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Eliom_form_sigs"| module Eliom_form_sigs >> |<<div class="odocwiki_info"|~Forms creation 
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Eliom_form_sigs"| module Eliom_form_sigs >> |<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|make~_uri service get~_params>> returns the ~U~R~L of
+      the service <<span class="odocwiki_inlinecode"|service>> applied to the ~G~E~T parameters
+      <<span class="odocwiki_inlinecode"|get~_params>>~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Eliom_lib"| module Eliom_lib >> |<<div class="odocwiki_info"|~A few common functions used by ~Eliom~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Eliom_mkforms"| module Eliom_mkforms >> |<<div class="odocwiki_info"|~This module defines the functor to use to creates modules
-    generating form widgets for your own types of pages~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Eliom_mkreg"| module Eliom_mkreg >> |<<div class="odocwiki_info"|~This module defines the functor to use to creates modules
@@ -198,6 +194,7 @@ file~.
     ~H~T~M~L~5 page~.
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Form"| module Eliom_content_sigs.LINKS_AND_FORMS.Form >> ~[<<a_api subproject="server" | module Eliom_content_sigs.LINKS_AND_FORMS >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Full_state_name_table"| module Eliom_common.Full_state_name_table >> ~[<<a_api subproject="server" | module Eliom_common >>~]||
 |@@ @style="tet-align: left;"@@\\H|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Html5"| module Eliom_registration.Html5 >> ~[<<a_api subproject="server" | module Eliom_registration >>~]|<<div class="odocwiki_info"|~Eliom service registration for ~H~T~M~L~5 page~.
@@ -239,10 +236,6 @@ file~.
 |@@ @style="tet-align: left;"@@\\M|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Make"| module Eliom_openid.Make >> ~[<<a_api subproject="server" | module Eliom_openid >>~]|<<div class="odocwiki_info"|~This functor build a hidden service that will be used
     to receive the remote server~'s data~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="MakeForms"| module Eliom_mkforms.MakeForms >> ~[<<a_api subproject="server" | module Eliom_mkforms >>~]|<<div class="odocwiki_info"|~This module defines the functor to use to creates modules
-    generating form widgets for your own types of pages~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="MakeRegister"| module Eliom_mkreg.MakeRegister >> ~[<<a_api subproject="server" | module Eliom_mkreg >>~]||

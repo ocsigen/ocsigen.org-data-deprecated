@@ -63,24 +63,20 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Eliom_content_core"| module Eliom_content_core >> |<<div class="odocwiki_info"|~X~M~L building and deconstructing~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Eliom_content_sigs"| module Eliom_content_sigs >> |<<div class="odocwiki_info"|~Creates an untyped form~.
->>
-|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Eliom_content_sigs"| module Eliom_content_sigs >> ||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Eliom_cscache"| module Eliom_cscache >> |<<div class="odocwiki_info"|~Client~-server cache for ~Eliom applications~,
     that is used both for keeping data on client side
     or keeping values in memory during a request~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Eliom_form_sigs"| module Eliom_form_sigs >> |<<div class="odocwiki_info"|~Forms creation 
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Eliom_form_sigs"| module Eliom_form_sigs >> |<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|make~_uri service get~_params>> returns the ~U~R~L of
+      the service <<span class="odocwiki_inlinecode"|service>> applied to the ~G~E~T parameters
+      <<span class="odocwiki_inlinecode"|get~_params>>~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Eliom_lazy"| module Eliom_lazy >> ||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Eliom_lib"| module Eliom_lib >> |<<div class="odocwiki_info"|~See <<a_api subproject="client"|type
     Eliom_pervasives.client_value>> ~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Eliom_mkforms"| module Eliom_mkforms >> |<<div class="odocwiki_info"|~This module defines the functor to use to creates modules
-    generating form widgets for your own types of pages~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Eliom_parameter"| module Eliom_parameter >> |<<div class="odocwiki_info"|~See documentation in the server side version~:
@@ -141,6 +137,7 @@
     actually linking against ~Reactive~Data~.
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Form"| module Eliom_content_sigs.LINKS_AND_FORMS.Form >> ~[<<a_api subproject="client" | module Eliom_content_sigs.LINKS_AND_FORMS >>~]||
 |@@ @style="tet-align: left;"@@\\H|
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Html5"| module Eliom_content_core.Html5 >> ~[<<a_api subproject="client" | module Eliom_content_core >>~]|<<div class="odocwiki_info"|~Building ~Html~5 tree~.
 >>
@@ -176,10 +173,6 @@
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Lwt_log"| module Eliom_lib.Lwt_log >> ~[<<a_api subproject="client" | module Eliom_lib >>~]||
 |@@ @style="tet-align: left;"@@\\M|
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="MakeForms"| module Eliom_mkforms.MakeForms >> ~[<<a_api subproject="client" | module Eliom_mkforms >>~]|<<div class="odocwiki_info"|~This module defines the functor to use to creates modules
-    generating form widgets for your own types of pages~.
->>
-|
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Manip"| module Eliom_content.Html5.Manip >> ~[<<a_api subproject="client" | module Eliom_content.Html5 >>~]|<<div class="odocwiki_info"|~D~O~M~-like manipulation functions~.
 >>
 |
