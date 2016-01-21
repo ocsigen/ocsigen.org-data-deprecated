@@ -455,6 +455,7 @@
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="empty_form_contents"| value Form.empty_form_contents >> ~[<<a_api | module Form >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="empty_mutation_observer_init"| value MutationObserver.empty_mutation_observer_init >> ~[<<a_api | module MutationObserver >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="empty_position_options"| value Geolocation.empty_position_options >> ~[<<a_api | module Geolocation >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="encodeURI"| value Js.encodeURI >> ~[<<a_api | module Js >>~]|<<div class="odocwiki_info"|~Encode a ~U~R~I~: convert the string to ~U~T~F~-~8 and replace all unsafe
       bytes by the corresponding escape sequence~.
@@ -727,6 +728,7 @@
 |
 |@@class="odocwiki_index"@ @@<<a_api text="isNaN"| value Js.isNaN >> ~[<<a_api | module Js >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="is_supported"| value WebSockets.is_supported >> ~[<<a_api | module WebSockets >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="is_supported"| value MutationObserver.is_supported >> ~[<<a_api | module MutationObserver >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="is_supported"| value Geolocation.is_supported >> ~[<<a_api | module Geolocation >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="iter"| value Js.OPT.iter >> ~[<<a_api | module Js.OPT >>~]|<<div class="odocwiki_info"|~Apply a function to an optional value if it is available~.
 >>
@@ -874,6 +876,7 @@
 |
 |@@class="odocwiki_index"@ @@<<a_api text="mousewheel"| value Dom_html.Event.mousewheel >> ~[<<a_api | module Dom_html.Event >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="mousewheels"| value Lwt_js_events.mousewheels >> ~[<<a_api | module Lwt_js_events >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="mutationObserver"| value MutationObserver.mutationObserver >> ~[<<a_api | module MutationObserver >>~]||
 |@@ @style="tet-align: left;"@@\\N|
 |@@class="odocwiki_index"@ @@<<a_api text="new_obj"| value Js.Unsafe.new_obj >> ~[<<a_api | module Js.Unsafe >>~]|<<div class="odocwiki_info"|~Create a ~Javascript object~.
 >>
@@ -900,6 +903,9 @@
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="obj"| value Js.Unsafe.obj >> ~[<<a_api | module Js.Unsafe >>~]|<<div class="odocwiki_info"|~Creates a ~Javascript literal object~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="observe"| value MutationObserver.observe >> ~[<<a_api | module MutationObserver >>~]|<<div class="odocwiki_info"|~Helper to create a new observer and connect it to a node
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="obsolete"| value Dom_html.Event.obsolete >> ~[<<a_api | module Dom_html.Event >>~]||

@@ -75,6 +75,9 @@
 |<<a_api | module Jstable >>|<<div class="odocwiki_info"|~A minimal table implementation specialized for <<a_api | class type Js.js_string >> keys~.
 >>
 |
+|<<a_api | module MutationObserver >>|<<div class="odocwiki_info"|~Mutation~Observer ~A~P~I
+>>
+|
 
 
 

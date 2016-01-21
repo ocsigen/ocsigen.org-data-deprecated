@@ -22,6 +22,7 @@
 ==[[WebSockets|WebSockets]]
 ==[[Geolocation|Geolocation]]
 ==[[Jstable|Jstable]]
+==[[MutationObserver|MutationObserver]]
 =~Ppx ~- ~A~P~I ~Reference
 ==[[Ppx_js|Ppx_js]]
 =~Deriving ~- ~A~P~I ~Reference

@@ -120,6 +120,9 @@
 |@@ @style="tet-align: left;"@@\\M|
 |@@class="odocwiki_index"@ @@<<a_api text="MakeOf"| module Tyxml_cast.MakeOf >> ~[<<a_api | module Tyxml_cast >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="MakeTo"| module Tyxml_cast.MakeTo >> ~[<<a_api | module Tyxml_cast >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="MutationObserver"| module MutationObserver >> |<<div class="odocwiki_info"|~Mutation~Observer ~A~P~I
+>>
+|
 |@@ @style="tet-align: left;"@@\\O|
 |@@class="odocwiki_index"@ @@<<a_api text="Ocamlbuild_js_of_ocaml"| module Ocamlbuild_js_of_ocaml >> |<<div class="odocwiki_info"|~Ocamlbuild plugin to build with js~_of~_ocaml
 >>
