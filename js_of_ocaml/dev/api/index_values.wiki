@@ -411,6 +411,9 @@
 |@@class="odocwiki_index"@ @@<<a_api text="div"| value Dom_html.CoerceTo.div >> ~[<<a_api | module Dom_html.CoerceTo >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="dl"| value Dom_html.CoerceTo.dl >> ~[<<a_api | module Dom_html.CoerceTo >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="document"| value File.CoerceTo.document >> ~[<<a_api | module File.CoerceTo >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="document"| value Dom_svg.document >> ~[<<a_api | module Dom_svg >>~]|<<div class="odocwiki_info"|~The current document
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api text="document"| value Dom_html.document >> ~[<<a_api | module Dom_html >>~]|<<div class="odocwiki_info"|~The current document
 >>
 |
@@ -607,7 +610,10 @@
 |@@class="odocwiki_index"@ @@<<a_api text="getDocumentScroll"| value Dom_html.getDocumentScroll >> ~[<<a_api | module Dom_html >>~]|<<div class="odocwiki_info"|~Viewport top~/left position
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api text="getElementById"| value Dom_svg.getElementById >> ~[<<a_api | module Dom_svg >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="getElementById"| value Dom_svg.getElementById >> ~[<<a_api | module Dom_svg >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|get~Element~By~Id id>> returns the element with the id <<span class="odocwiki_inlinecode"|id>> in the
+    current document~.
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api text="getElementById"| value Dom_html.getElementById >> ~[<<a_api | module Dom_html >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|get~Element~By~Id id>> returns the element with the id <<span class="odocwiki_inlinecode"|id>> in the
     current document~.
 >>

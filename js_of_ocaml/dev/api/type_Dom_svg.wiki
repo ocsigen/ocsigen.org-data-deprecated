@@ -355,7 +355,7 @@
       method removeChild : Dom.node Js.t -> Dom.node Js.t Js.meth
       method replaceChild :
         Dom.node Js.t -> Dom.node Js.t -> Dom.node Js.t Js.meth
-      method rootElement : Dom_svg.svgElement Js.t Js.readonly_prop
+      method rootElement : Dom_svg.svgElement Js.t Js.opt Js.readonly_prop
       method title : Js.js_string Js.t Js.prop
     end
   and svgElement =
@@ -4505,6 +4505,7 @@
   val createView : Dom_svg.document Js.t -> Dom_svg.viewElement Js.t
   val createvkern : Dom_svg.document Js.t -> Dom_svg.element Js.t
   val svg_element : Dom_svg.element Js.t Js.constr
+  val document : Dom_svg.document Js.t
   val getElementById : string -> Dom_svg.element Js.t
   module CoerceTo :
     sig
