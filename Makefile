@@ -41,9 +41,11 @@ copy-js_of_ocaml:
 copy-eliom:
 	$(MAKE) -C $(REPO_PATH) wikidoc
 	cp -Rf $(REPO_PATH)/doc/manual-wiki/*.wiki $(MANUAL_SRC_DIR)
-	mkdir -p $(API_DIR)/server $(API_DIR)/client
+	mkdir -p $(API_DIR)/server $(API_DIR)/client $(API_DIR)/ocamlbuild $(API_DIR)/ppx
 	cp -Rf $(REPO_PATH)/_build/src/lib/server/api.wikidocdir/*.wiki $(API_DIR)/server/
 	cp -Rf $(REPO_PATH)/_build/src/lib/client/api.wikidocdir/*.wiki $(API_DIR)/client/
+	cp -Rf $(REPO_PATH)/_build/src/ocamlbuild/api.wikidocdir/*.wiki $(API_DIR)/ocamlbuild/
+	cp -Rf $(REPO_PATH)/_build/src/ppx/api.wikidocdir/*.wiki $(API_DIR)/ppx/
 	cp -Rf $(REPO_PATH)/doc/index.wiki $(API_DIR)/
 
 copy-tyxml:
