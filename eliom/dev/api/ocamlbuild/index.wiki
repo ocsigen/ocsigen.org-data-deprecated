@@ -1,0 +1,23 @@
+==
+
+=@@id="1_TheocamlbuildpluginAPI"@@~The ocamlbuild plugin ~A~P~I=
+
+
+
+
+|<<a_api subproject="ocamlbuild" | module Ocamlbuild_eliom >>|<<div class="odocwiki_info"|~The paths to each eliom directories
+>>
+|
+
+
+
+
+
+==@@id="2_Index"@@~Index==
+
+
+
+* <<a_api subproject="ocamlbuild" text="Index of values" | index values >>
+* <<a_api subproject="ocamlbuild" text="Index of modules" | index modules >>
+* <<a_api subproject="ocamlbuild" text="Index of module types" | index module types >>
+
