@@ -12,7 +12,7 @@
   val user_indep_session_scope : Eliom_common.session_scope
   exception Not_connected
   exception Permission_denied
-  val connect : ?expire:float -> int64 -> unit Lwt.t
+  val connect : ?expire:bool -> int64 -> unit Lwt.t
   val disconnect : unit -> unit Lwt.t
   val connected_fun :
     ?allow:Eba_group.t list ->
