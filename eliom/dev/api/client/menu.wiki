@@ -1,4 +1,4 @@
-=~Eliom client ~A~P~I
+=~Client ~A~P~I
 ==[[client/Eliom_pervasives|Eliom_pervasives]]
 ==[[client/Eliom_lib|Eliom_lib]]
 ==[[client/Eliom_client|Eliom_client]]

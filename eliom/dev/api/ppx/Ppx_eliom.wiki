@@ -9,7 +9,7 @@
 <<a_manual chapter="clientserver-language" | here >>
 
 
-~Also the extensions presented here are also available with the <<span class="odocwiki_inlinecode"|eliom~.>> prefix~.
+~The extensions presented here are also available with the <<span class="odocwiki_inlinecode"|eliom~.>> prefix~.
 
 
 
@@ -110,7 +110,7 @@ put it in a list~)~. ~The value of a client fragment cannot be accessed on the s
 
 ~It is also possible to use shared fragments~.
 
-<<code language='ocaml'|let%server x =  [[%shared ...]]
+<<code language='ocaml'|let%server x =  [%shared ...]
 >>
 
 
@@ -162,7 +162,8 @@ let%client c = [3 + ~%x]
 ~It is not possible to use injections on values containing a closure~. ~This includes lazy values~, objects or anything containing functions~. ~You can use either <<a_api subproject="server"|type Eliom_pervasive.server_function>>  and client or shared fragments to circumvent this limitation~.
 
 
-~To extend and customize the serialization from client to server~, see chapter ~<~<a~_manual chapter~="clientserver~-wrapping"~|~Wrapping values~>~>~.
+~To extend and customize the serialization from client to server~, see chapter
+<<a_manual chapter="clientserver-wrapping"|Wrapping values>> ~.
 
 
 

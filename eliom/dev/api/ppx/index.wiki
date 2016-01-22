@@ -1,6 +1,6 @@
 ==
 
-=@@id="1_EliomPpxdocumentation"@@~Eliom ~Ppx documentation=
+=@@id="1_Ppxsyntax"@@~Ppx syntax=
 
 
 
@@ -9,14 +9,4 @@
 >>
 |
 
-
-
-
-
-==@@id="2_Index"@@~Index==
-
-
-
-* <<a_api subproject="ppx" text="Index of values" | index values >>
-* <<a_api subproject="ppx" text="Index of modules" | index modules >>
 

@@ -1,6 +1,2 @@
-=~The ocamlbuild plugin ~A~P~I
+=~Ocamlbuild plugin
 ==[[ocamlbuild/Ocamlbuild_eliom|Ocamlbuild_eliom]]
-==~Index
-=== <<a_api subproject="ocamlbuild" text="Index of values" | index values >>
-=== <<a_api subproject="ocamlbuild" text="Index of modules" | index modules >>
-=== <<a_api subproject="ocamlbuild" text="Index of module types" | index module types >>

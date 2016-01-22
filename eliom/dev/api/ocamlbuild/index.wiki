@@ -1,6 +1,6 @@
 ==
 
-=@@id="1_TheocamlbuildpluginAPI"@@~The ocamlbuild plugin ~A~P~I=
+=@@id="1_Ocamlbuildplugin"@@~Ocamlbuild plugin=
 
 
 
@@ -9,15 +9,4 @@
 >>
 |
 
-
-
-
-
-==@@id="2_Index"@@~Index==
-
-
-
-* <<a_api subproject="ocamlbuild" text="Index of values" | index values >>
-* <<a_api subproject="ocamlbuild" text="Index of modules" | index modules >>
-* <<a_api subproject="ocamlbuild" text="Index of module types" | index module types >>
 
