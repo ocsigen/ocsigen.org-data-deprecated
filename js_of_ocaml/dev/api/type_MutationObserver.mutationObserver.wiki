@@ -2,7 +2,7 @@
   method disconnect : unit Js.meth
   method observe :
     Dom.node Js.t ->
-    MutationObserver._MutationObserverInit Js.t -> unit Js.meth
+    MutationObserver.mutationObserverInit Js.t -> unit Js.meth
   method takeRecords :
-    MutationObserver._MutationRecord Js.t Js.js_array Js.t Js.meth
+    MutationObserver.mutationRecord Js.t Js.js_array Js.t Js.meth
 end >>

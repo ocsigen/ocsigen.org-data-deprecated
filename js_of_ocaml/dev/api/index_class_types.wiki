@@ -1,8 +1,5 @@
 =Index of class types=
 
-|@@ @style="tet-align: left;"@@\\|
-|@@class="odocwiki_index"@ @@<<a_api text="_MutationObserverInit"| class type MutationObserver._MutationObserverInit >> ~[<<a_api | module MutationObserver >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="_MutationRecord"| class type MutationObserver._MutationRecord >> ~[<<a_api | module MutationObserver >>~]||
 |@@ @style="tet-align: left;"@@\\A|
 |@@class="odocwiki_index"@ @@<<a_api text="aElement"| class type Dom_svg.aElement >> ~[<<a_api | module Dom_svg >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="activeInfo"| class type WebGL.activeInfo >> ~[<<a_api | module WebGL >>~]||
@@ -210,6 +207,8 @@
 |@@class="odocwiki_index"@ @@<<a_api text="mouseScrollEvent"| class type Dom_html.mouseScrollEvent >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="mousewheelEvent"| class type Dom_html.mousewheelEvent >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="mutationObserver"| class type MutationObserver.mutationObserver >> ~[<<a_api | module MutationObserver >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="mutationObserverInit"| class type MutationObserver.mutationObserverInit >> ~[<<a_api | module MutationObserver >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="mutationRecord"| class type MutationObserver.mutationRecord >> ~[<<a_api | module MutationObserver >>~]||
 |@@ @style="tet-align: left;"@@\\N|
 |@@class="odocwiki_index"@ @@<<a_api text="namedNodeMap"| class type Dom.namedNodeMap >> ~[<<a_api | module Dom >>~]|<<div class="odocwiki_info"|~Specification of <<span class="odocwiki_inlinecode"|~Named~Node~Map>> objects~.
 >>

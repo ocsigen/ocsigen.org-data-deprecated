@@ -345,7 +345,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="_open"| method XmlHttpRequest.xmlHttpRequest#_open >> ~[<<a_api | module XmlHttpRequest >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="_open_full"| method XmlHttpRequest.xmlHttpRequest#_open_full >> ~[<<a_api | module XmlHttpRequest >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="_type"| method WebGL.activeInfo#_type >> ~[<<a_api | module WebGL >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="_type"| method MutationObserver._MutationRecord#_type >> ~[<<a_api | module MutationObserver >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="_type"| method MutationObserver.mutationRecord#_type >> ~[<<a_api | module MutationObserver >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="_type"| method File.blob#_type >> ~[<<a_api | module File >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="_type"| method Dom_svg.transform#_type >> ~[<<a_api | module Dom_svg >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="_type"| method Dom_html.embedElement#_type >> ~[<<a_api | module Dom_html >>~]||
@@ -387,7 +387,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="addColorStop"| method Dom_html.canvasGradient#addColorStop >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="addElement"| method Dom_html.dataTransfer#addElement >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="addRange"| method Dom_html.selection#addRange >> ~[<<a_api | module Dom_html >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="addedNodes"| method MutationObserver._MutationRecord#addedNodes >> ~[<<a_api | module MutationObserver >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="addedNodes"| method MutationObserver.mutationRecord#addedNodes >> ~[<<a_api | module MutationObserver >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="adoptNode"| method Dom.document#adoptNode >> ~[<<a_api | module Dom >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="alert"| method Dom_html.window#alert >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="align"| method Dom_svg.preserveAspectRatio#align >> ~[<<a_api | module Dom_svg >>~]||
@@ -446,11 +446,11 @@
 |@@class="odocwiki_index"@ @@<<a_api text="attachShader"| method WebGL.renderingContext#attachShader >> ~[<<a_api | module WebGL >>~]|<<div class="odocwiki_info"|~5~.~1~3~.~9 ~Programs and ~Shaders
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api text="attributeFilter"| method MutationObserver._MutationObserverInit#attributeFilter >> ~[<<a_api | module MutationObserver >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="attributeName"| method MutationObserver._MutationRecord#attributeName >> ~[<<a_api | module MutationObserver >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="attributeNamespace"| method MutationObserver._MutationRecord#attributeNamespace >> ~[<<a_api | module MutationObserver >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="attributeOldValue"| method MutationObserver._MutationObserverInit#attributeOldValue >> ~[<<a_api | module MutationObserver >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="attributes"| method MutationObserver._MutationObserverInit#attributes >> ~[<<a_api | module MutationObserver >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="attributeFilter"| method MutationObserver.mutationObserverInit#attributeFilter >> ~[<<a_api | module MutationObserver >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="attributeName"| method MutationObserver.mutationRecord#attributeName >> ~[<<a_api | module MutationObserver >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="attributeNamespace"| method MutationObserver.mutationRecord#attributeNamespace >> ~[<<a_api | module MutationObserver >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="attributeOldValue"| method MutationObserver.mutationObserverInit#attributeOldValue >> ~[<<a_api | module MutationObserver >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="attributes"| method MutationObserver.mutationObserverInit#attributes >> ~[<<a_api | module MutationObserver >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="attributes"| method Dom.element#attributes >> ~[<<a_api | module Dom >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="autoplay"| method Dom_html.mediaElement#autoplay >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="availHeight"| method Dom_html.screen#availHeight >> ~[<<a_api | module Dom_html >>~]||
@@ -563,8 +563,8 @@
 |@@class="odocwiki_index"@ @@<<a_api text="charAt"| method Js.js_string#charAt >> ~[<<a_api | module Js >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="charCode"| method Dom_html.keyboardEvent#charCode >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="charCodeAt"| method Js.js_string#charCodeAt >> ~[<<a_api | module Js >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="characterData"| method MutationObserver._MutationObserverInit#characterData >> ~[<<a_api | module MutationObserver >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="characterDataOldValue"| method MutationObserver._MutationObserverInit#characterDataOldValue >> ~[<<a_api | module MutationObserver >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="characterData"| method MutationObserver.mutationObserverInit#characterData >> ~[<<a_api | module MutationObserver >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="characterDataOldValue"| method MutationObserver.mutationObserverInit#characterDataOldValue >> ~[<<a_api | module MutationObserver >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="charset"| method Dom_html.scriptElement#charset >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="charset"| method Dom_html.anchorElement#charset >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="charset"| method Dom_html.linkElement#charset >> ~[<<a_api | module Dom_html >>~]||
@@ -572,7 +572,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="checkFramebufferStatus"| method WebGL.renderingContext#checkFramebufferStatus >> ~[<<a_api | module WebGL >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="checkIntersection"| method Dom_svg.svgElement#checkIntersection >> ~[<<a_api | module Dom_svg >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="checked"| method Dom_html.inputElement#checked >> ~[<<a_api | module Dom_html >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="childList"| method MutationObserver._MutationObserverInit#childList >> ~[<<a_api | module MutationObserver >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="childList"| method MutationObserver.mutationObserverInit#childList >> ~[<<a_api | module MutationObserver >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="childNodes"| method Dom_svg.elementInstance#childNodes >> ~[<<a_api | module Dom_svg >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="childNodes"| method Dom.node#childNodes >> ~[<<a_api | module Dom >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="cite"| method Dom_html.modElement#cite >> ~[<<a_api | module Dom_html >>~]||
@@ -1285,7 +1285,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="newURL"| method Dom_html.hashChangeEvent#newURL >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="newValueSpecifiedUnits"| method Dom_svg.angle#newValueSpecifiedUnits >> ~[<<a_api | module Dom_svg >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="newValueSpecifiedUnits"| method Dom_svg.length#newValueSpecifiedUnits >> ~[<<a_api | module Dom_svg >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="nextSibling"| method MutationObserver._MutationRecord#nextSibling >> ~[<<a_api | module MutationObserver >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="nextSibling"| method MutationObserver.mutationRecord#nextSibling >> ~[<<a_api | module MutationObserver >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="nextSibling"| method Dom_svg.elementInstance#nextSibling >> ~[<<a_api | module Dom_svg >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="nextSibling"| method Dom.node#nextSibling >> ~[<<a_api | module Dom >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="noHref"| method Dom_html.areaElement#noHref >> ~[<<a_api | module Dom_html >>~]||
@@ -1304,7 +1304,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="offsetTop"| method Dom_html.element#offsetTop >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="offsetWidth"| method Dom_html.element#offsetWidth >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="oldURL"| method Dom_html.hashChangeEvent#oldURL >> ~[<<a_api | module Dom_html >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="oldValue"| method MutationObserver._MutationRecord#oldValue >> ~[<<a_api | module MutationObserver >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="oldValue"| method MutationObserver.mutationRecord#oldValue >> ~[<<a_api | module MutationObserver >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="oldValue"| method Dom_html.storageEvent#oldValue >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="onLine"| method Dom_html.navigator#onLine >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="onabort"| method File.fileReader#onabort >> ~[<<a_api | module File >>~]||
@@ -1449,7 +1449,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="preserveAspectRatio"| method Dom_svg.fitToViewBox#preserveAspectRatio >> ~[<<a_api | module Dom_svg >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="preserveAspectRatioString"| method Dom_svg.viewSpec#preserveAspectRatioString >> ~[<<a_api | module Dom_svg >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="preserveDrawingBuffer"| method WebGL.contextAttributes#preserveDrawingBuffer >> ~[<<a_api | module WebGL >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="previousSibling"| method MutationObserver._MutationRecord#previousSibling >> ~[<<a_api | module MutationObserver >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="previousSibling"| method MutationObserver.mutationRecord#previousSibling >> ~[<<a_api | module MutationObserver >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="previousSibling"| method Dom_svg.elementInstance#previousSibling >> ~[<<a_api | module Dom_svg >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="previousSibling"| method Dom.node#previousSibling >> ~[<<a_api | module Dom >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="print"| method Dom_html.window#print >> ~[<<a_api | module Dom_html >>~]||
@@ -1517,7 +1517,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="removeItem"| method Dom_html.storage#removeItem >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="removeNamedItem"| method Dom.namedNodeMap#removeNamedItem >> ~[<<a_api | module Dom >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="removeRange"| method Dom_html.selection#removeRange >> ~[<<a_api | module Dom_html >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="removedNodes"| method MutationObserver._MutationRecord#removedNodes >> ~[<<a_api | module MutationObserver >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="removedNodes"| method MutationObserver.mutationRecord#removedNodes >> ~[<<a_api | module MutationObserver >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="renderbufferStorage"| method WebGL.renderingContext#renderbufferStorage >> ~[<<a_api | module WebGL >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="replace"| method Js.js_string#replace >> ~[<<a_api | module Js >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="replace"| method Dom_html.location#replace >> ~[<<a_api | module Dom_html >>~]||
@@ -1762,7 +1762,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="submit"| method Dom_html.formElement#submit >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="substring"| method Js.js_string#substring >> ~[<<a_api | module Js >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="substring_toEnd"| method Js.js_string#substring_toEnd >> ~[<<a_api | module Js >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="subtree"| method MutationObserver._MutationObserverInit#subtree >> ~[<<a_api | module MutationObserver >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="subtree"| method MutationObserver.mutationObserverInit#subtree >> ~[<<a_api | module MutationObserver >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="summary"| method Dom_html.tableElement#summary >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="surroundContents"| method Dom_html.range#surroundContents >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="suspendRedraw"| method Dom_svg.svgElement#suspendRedraw >> ~[<<a_api | module Dom_svg >>~]||
@@ -1784,7 +1784,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="tagName"| method Dom.element#tagName >> ~[<<a_api | module Dom >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="takeRecords"| method MutationObserver.mutationObserver#takeRecords >> ~[<<a_api | module MutationObserver >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="tan"| method Js.math#tan >> ~[<<a_api | module Js >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="target"| method MutationObserver._MutationRecord#target >> ~[<<a_api | module MutationObserver >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="target"| method MutationObserver.mutationRecord#target >> ~[<<a_api | module MutationObserver >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="target"| method Dom_svg.aElement#target >> ~[<<a_api | module Dom_svg >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="target"| method Dom_html.areaElement#target >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="target"| method Dom_html.anchorElement#target >> ~[<<a_api | module Dom_html >>~]||
