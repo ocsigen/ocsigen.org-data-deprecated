@@ -3196,172 +3196,172 @@
          /*<<camlinternalFormat.ml 815 34>>*/ return 0;
        else
         switch(match_b_[0])
-         {case 10:var _c_=0;break;
-          case 11:var _c_=1;break;
-          case 12:var _c_=2;break;
-          case 13:var _c_=3;break;
-          case 14:var _c_=4;break;
-          case 8:var _c_=5;break;
-          case 9:var _c_=6;break;
+         {case 10:var switch_c_=0;break;
+          case 11:var switch_c_=1;break;
+          case 12:var switch_c_=2;break;
+          case 13:var switch_c_=3;break;
+          case 14:var switch_c_=4;break;
+          case 8:var switch_c_=5;break;
+          case 9:var switch_c_=6;break;
           default: /*<<camlinternalFormat.ml 816 35>>*/ throw [0,_l_,_e__]}
       else
         /*<<camlinternalFormat.ml 769 17>>*/ switch(ty1_a_[0])
         {case 0:
           var _x_=ty1_a_[1];
           if(typeof match_b_==="number")
-           var _d_=1;
+           var switch_d_=1;
           else
            switch(match_b_[0])
             {case 0:
                /*<<camlinternalFormat.ml 770 63>>*/ return [0,
                        /*<<camlinternalFormat.ml 770 44>>*/ _j_(_x_,match_b_[1])];
-             case 8:var _c_=5,_d_=0;break;
-             case 9:var _c_=6,_d_=0;break;
-             case 10:var _c_=0,_d_=0;break;
-             case 11:var _c_=1,_d_=0;break;
-             case 12:var _c_=2,_d_=0;break;
-             case 13:var _c_=3,_d_=0;break;
-             case 14:var _c_=4,_d_=0;break;
-             default:var _d_=1}
-          if(_d_)var _c_=7;
+             case 8:var switch_c_=5,switch_d_=0;break;
+             case 9:var switch_c_=6,switch_d_=0;break;
+             case 10:var switch_c_=0,switch_d_=0;break;
+             case 11:var switch_c_=1,switch_d_=0;break;
+             case 12:var switch_c_=2,switch_d_=0;break;
+             case 13:var switch_c_=3,switch_d_=0;break;
+             case 14:var switch_c_=4,switch_d_=0;break;
+             default:var switch_d_=1}
+          if(switch_d_)var switch_c_=7;
           break;
          case 1:
           var _y_=ty1_a_[1];
           if(typeof match_b_==="number")
-           var _e_=1;
+           var switch_e_=1;
           else
            switch(match_b_[0])
             {case 1:
                /*<<camlinternalFormat.ml 771 69>>*/ return [1,
                        /*<<camlinternalFormat.ml 771 50>>*/ _j_(_y_,match_b_[1])];
-             case 8:var _c_=5,_e_=0;break;
-             case 9:var _c_=6,_e_=0;break;
-             case 10:var _c_=0,_e_=0;break;
-             case 11:var _c_=1,_e_=0;break;
-             case 12:var _c_=2,_e_=0;break;
-             case 13:var _c_=3,_e_=0;break;
-             case 14:var _c_=4,_e_=0;break;
-             default:var _e_=1}
-          if(_e_)var _c_=7;
+             case 8:var switch_c_=5,switch_e_=0;break;
+             case 9:var switch_c_=6,switch_e_=0;break;
+             case 10:var switch_c_=0,switch_e_=0;break;
+             case 11:var switch_c_=1,switch_e_=0;break;
+             case 12:var switch_c_=2,switch_e_=0;break;
+             case 13:var switch_c_=3,switch_e_=0;break;
+             case 14:var switch_c_=4,switch_e_=0;break;
+             default:var switch_e_=1}
+          if(switch_e_)var switch_c_=7;
           break;
          case 2:
           var _z_=ty1_a_[1];
           if(typeof match_b_==="number")
-           var _f_=1;
+           var switch_f_=1;
           else
            switch(match_b_[0])
             {case 2:
                /*<<camlinternalFormat.ml 773 60>>*/ return [2,
                        /*<<camlinternalFormat.ml 773 41>>*/ _j_(_z_,match_b_[1])];
-             case 8:var _c_=5,_f_=0;break;
-             case 9:var _c_=6,_f_=0;break;
-             case 10:var _c_=0,_f_=0;break;
-             case 11:var _c_=1,_f_=0;break;
-             case 12:var _c_=2,_f_=0;break;
-             case 13:var _c_=3,_f_=0;break;
-             case 14:var _c_=4,_f_=0;break;
-             default:var _f_=1}
-          if(_f_)var _c_=7;
+             case 8:var switch_c_=5,switch_f_=0;break;
+             case 9:var switch_c_=6,switch_f_=0;break;
+             case 10:var switch_c_=0,switch_f_=0;break;
+             case 11:var switch_c_=1,switch_f_=0;break;
+             case 12:var switch_c_=2,switch_f_=0;break;
+             case 13:var switch_c_=3,switch_f_=0;break;
+             case 14:var switch_c_=4,switch_f_=0;break;
+             default:var switch_f_=1}
+          if(switch_f_)var switch_c_=7;
           break;
          case 3:
           var _A_=ty1_a_[1];
           if(typeof match_b_==="number")
-           var _g_=1;
+           var switch_g_=1;
           else
            switch(match_b_[0])
             {case 3:
                /*<<camlinternalFormat.ml 774 66>>*/ return [3,
                        /*<<camlinternalFormat.ml 774 47>>*/ _j_(_A_,match_b_[1])];
-             case 8:var _c_=5,_g_=0;break;
-             case 9:var _c_=6,_g_=0;break;
-             case 10:var _c_=0,_g_=0;break;
-             case 11:var _c_=1,_g_=0;break;
-             case 12:var _c_=2,_g_=0;break;
-             case 13:var _c_=3,_g_=0;break;
-             case 14:var _c_=4,_g_=0;break;
-             default:var _g_=1}
-          if(_g_)var _c_=7;
+             case 8:var switch_c_=5,switch_g_=0;break;
+             case 9:var switch_c_=6,switch_g_=0;break;
+             case 10:var switch_c_=0,switch_g_=0;break;
+             case 11:var switch_c_=1,switch_g_=0;break;
+             case 12:var switch_c_=2,switch_g_=0;break;
+             case 13:var switch_c_=3,switch_g_=0;break;
+             case 14:var switch_c_=4,switch_g_=0;break;
+             default:var switch_g_=1}
+          if(switch_g_)var switch_c_=7;
           break;
          case 4:
           var _B_=ty1_a_[1];
           if(typeof match_b_==="number")
-           var _i_=1;
+           var switch_i_=1;
           else
            switch(match_b_[0])
             {case 4:
                /*<<camlinternalFormat.ml 776 78>>*/ return [4,
                        /*<<camlinternalFormat.ml 776 59>>*/ _j_(_B_,match_b_[1])];
-             case 8:var _c_=5,_i_=0;break;
-             case 9:var _c_=6,_i_=0;break;
-             case 10:var _c_=0,_i_=0;break;
-             case 11:var _c_=1,_i_=0;break;
-             case 12:var _c_=2,_i_=0;break;
-             case 13:var _c_=3,_i_=0;break;
-             case 14:var _c_=4,_i_=0;break;
-             default:var _i_=1}
-          if(_i_)var _c_=7;
+             case 8:var switch_c_=5,switch_i_=0;break;
+             case 9:var switch_c_=6,switch_i_=0;break;
+             case 10:var switch_c_=0,switch_i_=0;break;
+             case 11:var switch_c_=1,switch_i_=0;break;
+             case 12:var switch_c_=2,switch_i_=0;break;
+             case 13:var switch_c_=3,switch_i_=0;break;
+             case 14:var switch_c_=4,switch_i_=0;break;
+             default:var switch_i_=1}
+          if(switch_i_)var switch_c_=7;
           break;
          case 5:
           var _C_=ty1_a_[1];
           if(typeof match_b_==="number")
-           var _k_=1;
+           var switch_k_=1;
           else
            switch(match_b_[0])
             {case 5:
                /*<<camlinternalFormat.ml 775 66>>*/ return [5,
                        /*<<camlinternalFormat.ml 775 47>>*/ _j_(_C_,match_b_[1])];
-             case 8:var _c_=5,_k_=0;break;
-             case 9:var _c_=6,_k_=0;break;
-             case 10:var _c_=0,_k_=0;break;
-             case 11:var _c_=1,_k_=0;break;
-             case 12:var _c_=2,_k_=0;break;
-             case 13:var _c_=3,_k_=0;break;
-             case 14:var _c_=4,_k_=0;break;
-             default:var _k_=1}
-          if(_k_)var _c_=7;
+             case 8:var switch_c_=5,switch_k_=0;break;
+             case 9:var switch_c_=6,switch_k_=0;break;
+             case 10:var switch_c_=0,switch_k_=0;break;
+             case 11:var switch_c_=1,switch_k_=0;break;
+             case 12:var switch_c_=2,switch_k_=0;break;
+             case 13:var switch_c_=3,switch_k_=0;break;
+             case 14:var switch_c_=4,switch_k_=0;break;
+             default:var switch_k_=1}
+          if(switch_k_)var switch_c_=7;
           break;
          case 6:
           var _D_=ty1_a_[1];
           if(typeof match_b_==="number")
-           var _m_=1;
+           var switch_m_=1;
           else
            switch(match_b_[0])
             {case 6:
                /*<<camlinternalFormat.ml 777 66>>*/ return [6,
                        /*<<camlinternalFormat.ml 777 47>>*/ _j_(_D_,match_b_[1])];
-             case 8:var _c_=5,_m_=0;break;
-             case 9:var _c_=6,_m_=0;break;
-             case 10:var _c_=0,_m_=0;break;
-             case 11:var _c_=1,_m_=0;break;
-             case 12:var _c_=2,_m_=0;break;
-             case 13:var _c_=3,_m_=0;break;
-             case 14:var _c_=4,_m_=0;break;
-             default:var _m_=1}
-          if(_m_)var _c_=7;
+             case 8:var switch_c_=5,switch_m_=0;break;
+             case 9:var switch_c_=6,switch_m_=0;break;
+             case 10:var switch_c_=0,switch_m_=0;break;
+             case 11:var switch_c_=1,switch_m_=0;break;
+             case 12:var switch_c_=2,switch_m_=0;break;
+             case 13:var switch_c_=3,switch_m_=0;break;
+             case 14:var switch_c_=4,switch_m_=0;break;
+             default:var switch_m_=1}
+          if(switch_m_)var switch_c_=7;
           break;
          case 7:
           var _E_=ty1_a_[1];
           if(typeof match_b_==="number")
-           var _n_=1;
+           var switch_n_=1;
           else
            switch(match_b_[0])
             {case 7:
                /*<<camlinternalFormat.ml 772 63>>*/ return [7,
                        /*<<camlinternalFormat.ml 772 44>>*/ _j_(_E_,match_b_[1])];
-             case 8:var _c_=5,_n_=0;break;
-             case 9:var _c_=6,_n_=0;break;
-             case 10:var _c_=0,_n_=0;break;
-             case 11:var _c_=1,_n_=0;break;
-             case 12:var _c_=2,_n_=0;break;
-             case 13:var _c_=3,_n_=0;break;
-             case 14:var _c_=4,_n_=0;break;
-             default:var _n_=1}
-          if(_n_)var _c_=7;
+             case 8:var switch_c_=5,switch_n_=0;break;
+             case 9:var switch_c_=6,switch_n_=0;break;
+             case 10:var switch_c_=0,switch_n_=0;break;
+             case 11:var switch_c_=1,switch_n_=0;break;
+             case 12:var switch_c_=2,switch_n_=0;break;
+             case 13:var switch_c_=3,switch_n_=0;break;
+             case 14:var switch_c_=4,switch_n_=0;break;
+             default:var switch_n_=1}
+          if(switch_n_)var switch_c_=7;
           break;
          case 8:
           var _F_=ty1_a_[2],_G_=ty1_a_[1];
           if(typeof match_b_==="number")
-           var _p_=1;
+           var switch_p_=1;
           else
            switch(match_b_[0])
             {case 8:
@@ -3372,21 +3372,21 @@
                /*<<camlinternalFormat.ml 801 32>>*/ return [8,
                        /*<<camlinternalFormat.ml 801 19>>*/ _j_(_G_,ty2_H_),
                       _I_];
-             case 10:var _c_=0,_p_=0;break;
-             case 11:var _c_=1,_p_=0;break;
-             case 12:var _c_=2,_p_=0;break;
-             case 13:var _c_=3,_p_=0;break;
-             case 14:var _c_=4,_p_=0;break;
-             default:var _p_=1}
-          if(_p_)throw [0,_l_,_fh_];
+             case 10:var switch_c_=0,switch_p_=0;break;
+             case 11:var switch_c_=1,switch_p_=0;break;
+             case 12:var switch_c_=2,switch_p_=0;break;
+             case 13:var switch_c_=3,switch_p_=0;break;
+             case 14:var switch_c_=4,switch_p_=0;break;
+             default:var switch_p_=1}
+          if(switch_p_)throw [0,_l_,_fh_];
           break;
          case 9:
           var _J_=ty1_a_[3],_K_=ty1_a_[2],_L_=ty1_a_[1];
           if(typeof match_b_==="number")
-           var _o_=1;
+           var switch_o_=1;
           else
            switch(match_b_[0])
-            {case 8:var _c_=5,_o_=0;break;
+            {case 8:var switch_c_=5,switch_o_=0;break;
              case 9:
               var
                rest2_M_=match_b_[3],
@@ -3405,13 +3405,13 @@
                       _L_,
                       ty22_N_,
                        /*<<camlinternalFormat.ml 811 33>>*/ _j_(_J_,rest2_M_)];
-             case 10:var _c_=0,_o_=0;break;
-             case 11:var _c_=1,_o_=0;break;
-             case 12:var _c_=2,_o_=0;break;
-             case 13:var _c_=3,_o_=0;break;
-             case 14:var _c_=4,_o_=0;break;
-             default:var _o_=1}
-          if(_o_)throw [0,_l_,_fi_];
+             case 10:var switch_c_=0,switch_o_=0;break;
+             case 11:var switch_c_=1,switch_o_=0;break;
+             case 12:var switch_c_=2,switch_o_=0;break;
+             case 13:var switch_c_=3,switch_o_=0;break;
+             case 14:var switch_c_=4,switch_o_=0;break;
+             default:var switch_o_=1}
+          if(switch_o_)throw [0,_l_,_fi_];
           break;
          case 10:
           var _Q_=ty1_a_[1];
@@ -3422,61 +3422,61 @@
          case 11:
           var _R_=ty1_a_[1];
           if(typeof match_b_==="number")
-           var _u_=1;
+           var switch_u_=1;
           else
            switch(match_b_[0])
-            {case 10:var _c_=0,_u_=0;break;
+            {case 10:var switch_c_=0,switch_u_=0;break;
              case 11:
                /*<<camlinternalFormat.ml 783 66>>*/ return [11,
                        /*<<camlinternalFormat.ml 783 47>>*/ _j_(_R_,match_b_[1])];
-             default:var _u_=1}
-          if(_u_)throw [0,_l_,_fk_];
+             default:var switch_u_=1}
+          if(switch_u_)throw [0,_l_,_fk_];
           break;
          case 12:
           var _S_=ty1_a_[1];
           if(typeof match_b_==="number")
-           var _s_=1;
+           var switch_s_=1;
           else
            switch(match_b_[0])
-            {case 10:var _c_=0,_s_=0;break;
-             case 11:var _c_=1,_s_=0;break;
+            {case 10:var switch_c_=0,switch_s_=0;break;
+             case 11:var switch_c_=1,switch_s_=0;break;
              case 12:
                /*<<camlinternalFormat.ml 787 60>>*/ return [12,
                        /*<<camlinternalFormat.ml 787 41>>*/ _j_(_S_,match_b_[1])];
-             default:var _s_=1}
-          if(_s_)throw [0,_l_,_fl_];
+             default:var switch_s_=1}
+          if(switch_s_)throw [0,_l_,_fl_];
           break;
          case 13:
           var _T_=ty1_a_[1];
           if(typeof match_b_==="number")
-           var _r_=1;
+           var switch_r_=1;
           else
            switch(match_b_[0])
-            {case 10:var _c_=0,_r_=0;break;
-             case 11:var _c_=1,_r_=0;break;
-             case 12:var _c_=2,_r_=0;break;
+            {case 10:var switch_c_=0,switch_r_=0;break;
+             case 11:var switch_c_=1,switch_r_=0;break;
+             case 12:var switch_c_=2,switch_r_=0;break;
              case 13:
                /*<<camlinternalFormat.ml 791 69>>*/ return [13,
                        /*<<camlinternalFormat.ml 791 50>>*/ _j_(_T_,match_b_[1])];
-             default:var _r_=1}
-          if(_r_)throw [0,_l_,_fm_];
+             default:var switch_r_=1}
+          if(switch_r_)throw [0,_l_,_fm_];
           break;
          default:
           var _U_=ty1_a_[1];
           if(typeof match_b_==="number")
-           var _q_=1;
+           var switch_q_=1;
           else
            switch(match_b_[0])
-            {case 10:var _c_=0,_q_=0;break;
-             case 11:var _c_=1,_q_=0;break;
-             case 12:var _c_=2,_q_=0;break;
-             case 13:var _c_=3,_q_=0;break;
+            {case 10:var switch_c_=0,switch_q_=0;break;
+             case 11:var switch_c_=1,switch_q_=0;break;
+             case 12:var switch_c_=2,switch_q_=0;break;
+             case 13:var switch_c_=3,switch_q_=0;break;
              case 14:
                /*<<camlinternalFormat.ml 796 41>>*/ return [14,
                        /*<<camlinternalFormat.ml 796 22>>*/ _j_(_U_,match_b_[1])];
-             default:var _q_=1}
-          if(_q_)throw [0,_l_,_fn_]}
-       /*<<camlinternalFormatBasics.ml 502 8>>*/ switch(_c_)
+             default:var switch_q_=1}
+          if(switch_q_)throw [0,_l_,_fn_]}
+       /*<<camlinternalFormatBasics.ml 502 8>>*/ switch(switch_c_)
        {case 0: /*<<camlinternalFormat.ml 781 33>>*/ throw [0,_l_,_fb_];
         case 1: /*<<camlinternalFormat.ml 785 33>>*/ throw [0,_l_,_fc_];
         case 2: /*<<camlinternalFormat.ml 789 31>>*/ throw [0,_l_,_fd_];
@@ -4143,22 +4143,22 @@
             (43===
               /*<<camlinternalFormat.ml 1289 29>>*/ caml_string_get_B_
               (str_c_,0))
-            var _h_=1;
+            var switch_h_=1;
            else
             if
              (45===
                /*<<camlinternalFormat.ml 1289 46>>*/ caml_string_get_B_
                (str_c_,0))
-             var _h_=1;
+             var switch_h_=1;
             else
              if
               (32===
                 /*<<camlinternalFormat.ml 1289 63>>*/ caml_string_get_B_
                 (str_c_,0))
-              var _h_=1;
+              var switch_h_=1;
              else
-              var _j_=0,_h_=0;
-           if(_h_)
+              var switch_j_=0,switch_h_=0;
+           if(switch_h_)
             { /*<<camlinternalFormat.ml 1290 6>>*/  /*<<camlinternalFormat.ml 1290 6>>*/ caml_string_set_a2_
               (res_e_,
                0,
@@ -4166,10 +4166,10 @@
                 (str_c_,0));
               /*<<camlinternalFormat.ml 1291 6>>*/  /*<<camlinternalFormat.ml 1291 6>>*/ _X_
               (str_c_,1,res_e_,(width_g_-len_d_|0)+1|0,len_d_-1|0);
-             var _j_=1}}
+             var switch_j_=1}}
          else
-          var _j_=0;
-          /*<<camlinternalFormatBasics.ml 502 8>>*/ if(!_j_)
+          var switch_j_=0;
+          /*<<camlinternalFormatBasics.ml 502 8>>*/ if(!switch_j_)
           { /*<<camlinternalFormat.ml 1292 17>>*/ if(1<len_d_)
             if
              (48===
@@ -4179,16 +4179,16 @@
                (num_120_dy_===
                  /*<<camlinternalFormat.ml 1292 46>>*/ caml_string_get_B_
                  (str_c_,1))
-               var _k_=1;
+               var switch_k_=1;
               else
                if
                 (88===
                   /*<<camlinternalFormat.ml 1292 63>>*/ caml_string_get_B_
                   (str_c_,1))
-                var _k_=1;
+                var switch_k_=1;
                else
-                var _i_=0,_k_=0;
-              if(_k_)
+                var switch_i_=0,switch_k_=0;
+              if(switch_k_)
                { /*<<camlinternalFormat.ml 1293 6>>*/  /*<<camlinternalFormat.ml 1293 6>>*/ caml_string_set_a2_
                  (res_e_,
                   1,
@@ -4196,12 +4196,12 @@
                    (str_c_,1));
                  /*<<camlinternalFormat.ml 1294 6>>*/  /*<<camlinternalFormat.ml 1294 6>>*/ _X_
                  (str_c_,2,res_e_,(width_g_-len_d_|0)+2|0,len_d_-2|0);
-                var _i_=1}}
+                var switch_i_=1}}
             else
-             var _i_=0;
+             var switch_i_=0;
            else
-            var _i_=0;
-           if(!_i_)
+            var switch_i_=0;
+           if(!switch_i_)
              /*<<camlinternalFormat.ml 1296 6>>*/ _X_
              (str_c_,0,res_e_,width_g_-len_d_|0,len_d_)}}
        /*<<camlinternalFormat.ml 1298 4>>*/ return res_e_ /*<<camlinternalFormat.ml 1298 30>>*/ }
@@ -4214,10 +4214,10 @@
         /*<<camlinternalFormat.ml 1304 8>>*/ c_e_=
          /*<<camlinternalFormat.ml 1304 8>>*/ caml_string_get_B_(str_b_,0);
        /*<<camlinternalFormat.ml 1304 15>>*/ if(58<=c_e_)
-       var _g_=71<=c_e_?5<(c_e_-97|0)>>>0?1:0:65<=c_e_?0:1;
+       var switch_g_=71<=c_e_?5<(c_e_-97|0)>>>0?1:0:65<=c_e_?0:1;
       else
        {if(32===c_e_)
-         var _h_=1;
+         var switch_h_=1;
         else
          if(43<=c_e_)
           switch(c_e_-43|0)
@@ -4225,7 +4225,7 @@
               /*<<camlinternalFormat.ml 1310 13>>*/ if(len_c_<(prec_d_+2|0))
               if(1<len_c_)
                { /*<<camlinternalFormat.ml 1310 50>>*/ var
-                 _l_=
+                 switch_l_=
                   num_120_dy_===
                     /*<<camlinternalFormat.ml 1310 43>>*/ caml_string_get_B_
                     (str_b_,1)
@@ -4235,7 +4235,7 @@
                       (str_b_,1)
                      ?0
                      :1;
-                if(!_l_)
+                if(!switch_l_)
                  { /*<<camlinternalFormat.ml 1311 14>>*/ var
                    res_j_=
                      /*<<camlinternalFormat.ml 1311 14>>*/ make_aI_
@@ -4248,17 +4248,17 @@
                    /*<<camlinternalFormat.ml 1313 4>>*/  /*<<camlinternalFormat.ml 1313 4>>*/ _X_
                    (str_b_,2,res_j_,(prec_d_-len_c_|0)+4|0,len_c_-2|0);
                    /*<<camlinternalFormat.ml 1313 52>>*/ return res_j_}}
-             var _g_=0,_h_=0;
+             var switch_g_=0,switch_h_=0;
              break;
             case 0:
-            case 2:var _h_=1;break;
+            case 2:var switch_h_=1;break;
             case 1:
             case 3:
-            case 4:var _g_=1,_h_=0;break;
-            default:var _g_=0,_h_=0}
+            case 4:var switch_g_=1,switch_h_=0;break;
+            default:var switch_g_=0,switch_h_=0}
          else
-          var _g_=1,_h_=0;
-        if(_h_)
+          var switch_g_=1,switch_h_=0;
+        if(switch_h_)
          { /*<<camlinternalFormat.ml 1305 32>>*/ if(len_c_<(prec_d_+1|0))
            { /*<<camlinternalFormat.ml 1306 14>>*/ var
              res_i_=
@@ -4268,8 +4268,8 @@
              /*<<camlinternalFormat.ml 1308 4>>*/  /*<<camlinternalFormat.ml 1308 4>>*/ _X_
              (str_b_,1,res_i_,(prec_d_-len_c_|0)+2|0,len_c_-1|0);
              /*<<camlinternalFormat.ml 1308 52>>*/ return res_i_}
-          var _g_=1}}
-       /*<<camlinternalFormatBasics.ml 502 8>>*/ if(!_g_)
+          var switch_g_=1}}
+       /*<<camlinternalFormatBasics.ml 502 8>>*/ if(!switch_g_)
        if(len_c_<prec_d_)
         { /*<<camlinternalFormat.ml 1316 14>>*/ var
           res_k_=
@@ -4288,11 +4288,11 @@
          {var
             /*<<string.ml 91 6>>*/ c_g_=
              /*<<string.ml 91 6>>*/ caml_string_unsafe_get_aa_(str_a_,i_l_),
-            /*<<string.ml 91 6>>*/ _B_=
+            /*<<string.ml 91 6>>*/ switch_B_=
             14<=c_g_
              ?34===c_g_?1:92===c_g_?1:0
              :11<=c_g_?13<=c_g_?1:0:8<=c_g_?1:0;
-           /*<<camlinternalFormatBasics.ml 502 8>>*/ if(_B_)
+           /*<<camlinternalFormatBasics.ml 502 8>>*/ if(switch_B_)
            var _n_=1;
           else
            { /*<<string.ml 93 29>>*/ if
@@ -4314,12 +4314,14 @@
                 /*<<bytes.ml 151 4>>*/ c_e_=
                  /*<<bytes.ml 151 4>>*/ caml_string_unsafe_get_aa_
                  (str_a_,i_k_),
-                /*<<bytes.ml 151 4>>*/ _C_=
+                /*<<bytes.ml 151 4>>*/ switch_C_=
                 14<=c_e_
                  ?34===c_e_?1:92===c_e_?1:0
                  :11<=c_e_?13<=c_e_?1:0:8<=c_e_?1:0,
                _z_=
-                _C_?2: /*<<bytes.ml 154 17>>*/ caml_is_printable_bm_(c_e_)?1:4;
+                switch_C_
+                 ?2
+                 : /*<<bytes.ml 154 17>>*/ caml_is_printable_bm_(c_e_)?1:4;
               n_b_[1]=n_b_[1]+_z_|0;
               var _A_=i_k_+1|0;
               if(_q_!==i_k_){var i_k_=_A_;continue}
@@ -4356,7 +4358,7 @@
                   /*<<bytes.ml 160 6>>*/ _j_=c_d_-34|0;
                  /*<<bytes.ml 160 6>>*/ if(58<_j_>>>0)
                  if(-20<=_j_)
-                  var _m_=1;
+                  var switch_m_=1;
                  else
                   {switch(_j_+34|0)
                     {case 8:
@@ -4365,7 +4367,7 @@
                        /*<<bytes.ml 170 33>>*/ n_b_[1]++;
                        /*<<bytes.ml 170 41>>*/  /*<<bytes.ml 170 41>>*/ caml_string_unsafe_set_s_
                        (s_c_,n_b_[1],98);
-                      var _h_=1;
+                      var switch_h_=1;
                       break;
                      case 9:
                        /*<<bytes.ml 166 10>>*/  /*<<bytes.ml 166 10>>*/ caml_string_unsafe_set_s_
@@ -4373,7 +4375,7 @@
                        /*<<bytes.ml 166 33>>*/ n_b_[1]++;
                        /*<<bytes.ml 166 41>>*/  /*<<bytes.ml 166 41>>*/ caml_string_unsafe_set_s_
                        (s_c_,n_b_[1],116);
-                      var _h_=1;
+                      var switch_h_=1;
                       break;
                      case 10:
                        /*<<bytes.ml 164 10>>*/  /*<<bytes.ml 164 10>>*/ caml_string_unsafe_set_s_
@@ -4381,7 +4383,7 @@
                        /*<<bytes.ml 164 33>>*/ n_b_[1]++;
                        /*<<bytes.ml 164 41>>*/  /*<<bytes.ml 164 41>>*/ caml_string_unsafe_set_s_
                        (s_c_,n_b_[1],num_110_dX_);
-                      var _h_=1;
+                      var switch_h_=1;
                       break;
                      case 13:
                        /*<<bytes.ml 168 10>>*/  /*<<bytes.ml 168 10>>*/ caml_string_unsafe_set_s_
@@ -4389,13 +4391,13 @@
                        /*<<bytes.ml 168 33>>*/ n_b_[1]++;
                        /*<<bytes.ml 168 41>>*/  /*<<bytes.ml 168 41>>*/ caml_string_unsafe_set_s_
                        (s_c_,n_b_[1],114);
-                      var _h_=1;
+                      var switch_h_=1;
                       break;
-                     default:var _m_=1,_h_=0}
-                   if(_h_)var _m_=0}
+                     default:var switch_m_=1,switch_h_=0}
+                   if(switch_h_)var switch_m_=0}
                 else
                  var
-                  _m_=
+                  switch_m_=
                    56<(_j_-1|0)>>>0
                     ?( /*<<bytes.ml 162 10>>*/ caml_string_unsafe_set_s_
                        (s_c_,n_b_[1],92),
@@ -4404,7 +4406,7 @@
                        (s_c_,n_b_[1],c_d_),
                       0)
                     :1;
-                if(_m_)
+                if(switch_m_)
                  if( /*<<bytes.ml 172 10>>*/ caml_is_printable_bm_(c_d_))
                    /*<<bytes.ml 173 12>>*/ caml_string_unsafe_set_s_
                    (s_c_,n_b_[1],c_d_);
@@ -4556,9 +4558,9 @@
                (str_i_,i_j_)-
               46|
               0,
-              /*<<camlinternalFormat.ml 1375 21>>*/ _r_=
+              /*<<camlinternalFormat.ml 1375 21>>*/ switch_r_=
               23<_k_>>>0?55===_k_?1:0:21<(_k_-1|0)>>>0?1:0;
-             /*<<camlinternalFormatBasics.ml 502 8>>*/ if(!_r_)
+             /*<<camlinternalFormatBasics.ml 502 8>>*/ if(!switch_r_)
              {var i_j_=i_j_+1|0;continue}
             var _n_=1}
            /*<<camlinternalFormat.ml 1381 19>>*/ return _n_
@@ -4588,15 +4590,15 @@
                var _b_=_ex_;
               else
                {if(14<=c_a_)
-                 var _c_=0;
+                 var switch_c_=0;
                 else
                  switch(c_a_)
-                  {case 8:var _b_=_ey_,_c_=1;break;
-                   case 9:var _b_=_ez_,_c_=1;break;
-                   case 10:var _b_=_eA_,_c_=1;break;
-                   case 13:var _b_=_eB_,_c_=1;break;
-                   default:var _c_=0}
-                 /*<<camlinternalFormatBasics.ml 502 8>>*/ if(!_c_)
+                  {case 8:var _b_=_ey_,switch_c_=1;break;
+                   case 9:var _b_=_ez_,switch_c_=1;break;
+                   case 10:var _b_=_eA_,switch_c_=1;break;
+                   case 13:var _b_=_eB_,switch_c_=1;break;
+                   default:var switch_c_=0}
+                 /*<<camlinternalFormatBasics.ml 502 8>>*/ if(!switch_c_)
                  if( /*<<char.ml 37 7>>*/ caml_is_printable_bm_(c_a_))
                   { /*<<char.ml 37 27>>*/ var
                     s_e_=
@@ -5534,9 +5536,9 @@
             var
               /*<<pervasives.ml 231 10>>*/ match_g_=
                /*<<pervasives.ml 231 10>>*/ caml_string_get_B_(s_e_,i_d_),
-              /*<<pervasives.ml 231 24>>*/ _j_=
+              /*<<pervasives.ml 231 24>>*/ switch_j_=
               48<=match_g_?58<=match_g_?0:1:45===match_g_?1:0;
-             /*<<camlinternalFormatBasics.ml 502 8>>*/ if(_j_)
+             /*<<camlinternalFormatBasics.ml 502 8>>*/ if(switch_j_)
              {var i_d_=i_d_+1|0;continue}
              /*<<pervasives.ml 233 11>>*/ return s_e_}}
          /*<<printexc.ml 29 4>>*/ return _f8_}
@@ -5642,10 +5644,10 @@
             /*<<printexc.ml 106 11>>*/ _bv_
             (function(_a_)
               { /*<<?>>*/ return caml_convert_raw_backtrace_slot_h7_(_a_)},
-             rbckt_a_)]}
+             rbckt_a_)];
+        return _b_}
       catch(_f_)
-       {_f_=caml_wrap_exception_V_(_f_);if(_f_[1]===_aE_)return 0;throw _f_}
-      return _b_ /*<<printexc.ml 107 24>>*/ }
+       {_f_=caml_wrap_exception_V_(_f_);if(_f_[1]===_aE_)return 0;throw _f_} /*<<printexc.ml 107 24>>*/ }
     function print_backtrace_cI_(outchan_a_)
      { /*<<printexc.ml 137 36>>*/ var
        backtrace_j_=
@@ -5764,12 +5766,12 @@
      { /*<<src/core/lwt.ml 191 2>>*/ try
        { /*<<src/core/lwt.ml 192 4>>*/ var
          _c_=
-           /*<<src/core/lwt.ml 192 4>>*/ caml_call_gen1_h_(f_a_,x_b_)}
+           /*<<src/core/lwt.ml 192 4>>*/ caml_call_gen1_h_(f_a_,x_b_);
+         /*<<src/core/lwt.ml 194 4>>*/ return _c_}
       catch(exn_f_)
        {exn_f_=caml_wrap_exception_V_(exn_f_);
          /*<<src/core/lwt.ml 194 4>>*/ return  /*<<src/core/lwt.ml 194 4>>*/ caml_call_gen1_h_
-                (async_exception_hook_cL_[1],exn_f_)}
-       /*<<src/core/lwt.ml 194 4>>*/ return _c_ /*<<src/core/lwt.ml 194 29>>*/ }
+                (async_exception_hook_cL_[1],exn_f_)} /*<<src/core/lwt.ml 194 29>>*/ }
     function run_waiters_rec_bX_(counter_a_,state_b_,ws_c_,rem_d_)
      {var ws_f_=ws_c_,rem_e_=rem_d_;
        /*<<src/core/lwt.ml 197 2>>*/ for(;;)
@@ -5863,7 +5865,7 @@
      {return caml_trampoline_U_(run_cancel_handlers_rec_next_am_(0,rem_b_)) /*<<src/core/lwt.ml 237 39>>*/ }
     function unsafe_run_waiters_a__(sleeper_a_,state_b_)
      { /*<<src/core/lwt.ml 245 2>>*/ var
-       _c_=
+       switch_c_=
         1===state_b_[0]
          ?state_b_[1]===Canceled_a8_
            ?( /*<<src/core/lwt.ml 247 9>>*/ run_cancel_handlers_rec_gz_
@@ -6448,12 +6450,12 @@
               ( /*<<url.ml 108 19>>*/ _a7_
                 (s_a_,pos_slash_b_+1|0,(length_c_-pos_slash_b_|0)-1|0)),
             _e_=[0, /*<<url.ml 106 12>>*/ _a7_(s_a_,0,pos_slash_b_),_g_];
-          var _d_=_e_}}
+          var _d_=_e_}
+        return _d_}
       catch(_f_)
        {_f_=caml_wrap_exception_V_(_f_);
         if(_f_===_aH_)return [0,s_a_,0];
-         /*<<url.ml 348 45>>*/ throw _f_}
-      return _d_ /*<<url.ml 110 23>>*/ }
+         /*<<url.ml 348 45>>*/ throw _f_} /*<<url.ml 110 23>>*/ }
      /*<<url.ml 156 2>>*/ new
      jsoo_f5b7986a_aQ_
      ( /*<<url.ml 156 2>>*/ caml_bytes_of_string_S_(_hd_));
@@ -6472,12 +6474,12 @@
            _b_=
             [0,
               /*<<url.ml 318 53>>*/ caml_int_of_string_io_
-              ( /*<<url.ml 318 29>>*/ caml_js_to_byte_string_aC_(l_aw_.port))]}
+              ( /*<<url.ml 318 29>>*/ caml_js_to_byte_string_aC_(l_aw_.port))];
+          return _b_}
         catch(_f_)
          {_f_=caml_wrap_exception_V_(_f_);
           if(_f_[1]===_aE_)return 0;
-           /*<<url.ml 315 44>>*/ throw _f_}
-        return _b_ /*<<url.ml 319 26>>*/ }
+           /*<<url.ml 315 44>>*/ throw _f_} /*<<url.ml 319 26>>*/ }
       (_hf_));
      /*<<url.ml 323 13>>*/  /*<<url.ml 323 13>>*/ path_of_path_string_bQ_
      ( /*<<url.ml 321 20>>*/ urldecode_js_string_string_aS_(l_aw_.pathname));
@@ -6489,47 +6491,47 @@
      {var idx_c_=idx_b_;
        /*<<url.ml 131 4>>*/ for(;;)
        { /*<<url.ml 131 4>>*/ if(0<=idx_c_)
-         { /*<<url.ml 133 9>>*/ try
-           {var
-             _d_=idx_c_-1|0,
-             _e_=
-              function(s_a_)
-               { /*<<url.ml 136 30>>*/ function _c_(param_a_)
-                 {var
-                    /*<<url.ml 138 37>>*/ y_c_=param_a_[2],
-                    /*<<url.ml 138 37>>*/ x_d_=param_a_[1];
-                   /*<<url.ml 139 34>>*/ function get_b_(t_a_)
-                   { /*<<js.ml 109 16>>*/ var
-                     _b_=
-                      t_a_===undefined_aP_? /*<<js.ml 109 39>>*/ f_bP_(0):t_a_;
-                     /*<<url.ml 141 64>>*/ return  /*<<url.ml 141 64>>*/ urldecode_js_string_string_aS_
-                            (_b_) /*<<url.ml 141 65>>*/ }
-                   /*<<url.ml 143 42>>*/ var
-                   _e_=
-                     /*<<url.ml 143 42>>*/ get_b_(y_c_);
-                   /*<<url.ml 143 40>>*/ return [0,
-                           /*<<url.ml 143 35>>*/ get_b_(x_d_),
-                          _e_] /*<<url.ml 143 48>>*/ }
-                var
-                  /*<<url.ml 125 18>>*/ arr_bis_b_=
-                   /*<<url.ml 125 18>>*/ split_c__(61,s_a_),
-                  /*<<url.ml 126 10>>*/ _d_=
-                  2===arr_bis_b_.length
-                   ?[0,arr_bis_b_[0],arr_bis_b_[1]]
-                   :undefined_aP_;
-                 /*<<url.ml 136 64>>*/ return  /*<<url.ml 136 64>>*/ _bK_
-                        (_d_,f_bP_,_c_) /*<<url.ml 144 33>>*/ },
-              /*<<url.ml 133 13>>*/ _f_=
-               /*<<url.ml 133 13>>*/ aux_dc_
-               ([0,
-                  /*<<url.ml 133 18>>*/ _bK_(arr_db_[idx_c_],f_bP_,_e_),
-                 acc_a_],
-                _d_)}
-          catch(_f_)
-           {_f_=caml_wrap_exception_V_(_f_);
-            if(_f_===Local_exn_c$_){var idx_c_=idx_c_-1|0;continue}
-             /*<<url.ml 126 10>>*/ throw _f_}
-          return _f_}
+          /*<<url.ml 133 9>>*/ try
+          {var
+            _d_=idx_c_-1|0,
+            _e_=
+             function(s_a_)
+              { /*<<url.ml 136 30>>*/ function _c_(param_a_)
+                {var
+                   /*<<url.ml 138 37>>*/ y_c_=param_a_[2],
+                   /*<<url.ml 138 37>>*/ x_d_=param_a_[1];
+                  /*<<url.ml 139 34>>*/ function get_b_(t_a_)
+                  { /*<<js.ml 109 16>>*/ var
+                    _b_=
+                     t_a_===undefined_aP_? /*<<js.ml 109 39>>*/ f_bP_(0):t_a_;
+                    /*<<url.ml 141 64>>*/ return  /*<<url.ml 141 64>>*/ urldecode_js_string_string_aS_
+                           (_b_) /*<<url.ml 141 65>>*/ }
+                  /*<<url.ml 143 42>>*/ var
+                  _e_=
+                    /*<<url.ml 143 42>>*/ get_b_(y_c_);
+                  /*<<url.ml 143 40>>*/ return [0,
+                          /*<<url.ml 143 35>>*/ get_b_(x_d_),
+                         _e_] /*<<url.ml 143 48>>*/ }
+               var
+                 /*<<url.ml 125 18>>*/ arr_bis_b_=
+                  /*<<url.ml 125 18>>*/ split_c__(61,s_a_),
+                 /*<<url.ml 126 10>>*/ _d_=
+                 2===arr_bis_b_.length
+                  ?[0,arr_bis_b_[0],arr_bis_b_[1]]
+                  :undefined_aP_;
+                /*<<url.ml 136 64>>*/ return  /*<<url.ml 136 64>>*/ _bK_
+                       (_d_,f_bP_,_c_) /*<<url.ml 144 33>>*/ },
+             /*<<url.ml 133 13>>*/ _f_=
+              /*<<url.ml 133 13>>*/ aux_dc_
+              ([0,
+                 /*<<url.ml 133 18>>*/ _bK_(arr_db_[idx_c_],f_bP_,_e_),
+                acc_a_],
+               _d_);
+           return _f_}
+         catch(_f_)
+          {_f_=caml_wrap_exception_V_(_f_);
+           if(_f_===Local_exn_c$_){var idx_c_=idx_c_-1|0;continue}
+            /*<<url.ml 126 10>>*/ throw _f_}
          /*<<url.ml 132 9>>*/ return acc_a_} /*<<url.ml 148 45>>*/ }
      /*<<url.ml 150 2>>*/  /*<<url.ml 150 2>>*/ aux_dc_(0,len_hc_-1|0);
      /*<<url.ml 348 18>>*/  /*<<url.ml 348 18>>*/ urldecode_js_string_string_aS_
@@ -6553,27 +6555,27 @@
      { /*<<xmlHttpRequest.ml 80 2>>*/ try
        { /*<<xmlHttpRequest.ml 80 6>>*/ var
          _f_=
-          new (window_c_.XMLHttpRequest)()}
+          new (window_c_.XMLHttpRequest)();
+         /*<<xmlHttpRequest.ml 81 2>>*/ return _f_}
       catch(_f_)
        { /*<<xmlHttpRequest.ml 81 2>>*/ try
          { /*<<xmlHttpRequest.ml 81 6>>*/ var
            _e_=
-            new (window_c_.activeXObject)("Msxml2.XMLHTTP")}
+            new (window_c_.activeXObject)("Msxml2.XMLHTTP");
+           /*<<xmlHttpRequest.ml 82 2>>*/ return _e_}
         catch(_f_)
          { /*<<xmlHttpRequest.ml 82 2>>*/ try
            { /*<<xmlHttpRequest.ml 82 6>>*/ var
              _d_=
-              new (window_c_.activeXObject)("Msxml3.XMLHTTP")}
+              new (window_c_.activeXObject)("Msxml3.XMLHTTP");
+             /*<<xmlHttpRequest.ml 83 2>>*/ return _d_}
           catch(_f_)
            { /*<<xmlHttpRequest.ml 83 2>>*/ try
              { /*<<xmlHttpRequest.ml 83 6>>*/ var
                _b_=
-                new (window_c_.activeXObject)("Microsoft.XMLHTTP")}
-            catch(_f_){ /*<<xmlHttpRequest.ml 84 14>>*/ throw [0,_l_,_hi_]}
-            return _b_}
-           /*<<xmlHttpRequest.ml 83 2>>*/ return _d_}
-         /*<<xmlHttpRequest.ml 82 2>>*/ return _e_}
-       /*<<xmlHttpRequest.ml 81 2>>*/ return _f_ /*<<xmlHttpRequest.ml 84 14>>*/ }
+                new (window_c_.activeXObject)("Microsoft.XMLHTTP");
+              return _b_}
+            catch(_f_){ /*<<xmlHttpRequest.ml 84 14>>*/ throw [0,_l_,_hi_]}}}} /*<<xmlHttpRequest.ml 84 14>>*/ }
      /*<<xmlHttpRequest.ml 76 40>>*/ var
      _hn_=
        /*<<xmlHttpRequest.ml 76 40>>*/ caml_set_oo_id_J_([num_248_a_,_hm_,0]);
@@ -6581,12 +6583,12 @@
      { /*<<xmlHttpRequest.ml 166 2>>*/ try
        { /*<<xmlHttpRequest.ml 166 14>>*/  /*<<xmlHttpRequest.ml 166 14>>*/ _cp_
          (url_a_,63);
-         /*<<xmlHttpRequest.ml 166 37>>*/ var _b_=1}
+         /*<<xmlHttpRequest.ml 166 37>>*/ var _b_=1;
+        return _b_}
       catch(_f_)
        {_f_=caml_wrap_exception_V_(_f_);
         if(_f_===_aH_)return 0;
-         /*<<xmlHttpRequest.ml 160 41>>*/ throw _f_}
-      return _b_ /*<<xmlHttpRequest.ml 166 65>>*/ }
+         /*<<xmlHttpRequest.ml 160 41>>*/ throw _f_} /*<<xmlHttpRequest.ml 166 65>>*/ }
      /*<<boulderdash.ml 13 15>>*/ var doc_A_=window_c_.document;
      /*<<boulderdash.ml 13 15>>*/ function append_text_af_(e_a_,s_b_)
      { /*<<boulderdash.ml 15 41>>*/ return  /*<<boulderdash.ml 15 41>>*/ _D_
@@ -6688,7 +6690,7 @@
                  [x_a_+1])
                var
                 _l_=y_b_-1|0,
-                 /*<<boulderdash.ml 94 31>>*/ _C_=
+                 /*<<boulderdash.ml 94 31>>*/ switch_C_=
                  3===
                    /*<<boulderdash.ml 94 27>>*/ caml_check_bound_g_
                     ( /*<<boulderdash.ml 94 10>>*/ caml_check_bound_g_
@@ -6705,7 +6707,7 @@
                     1)
                   :0;
               else
-               var _C_=0;
+               var switch_C_=0;
                /*<<boulderdash.ml 99 24>>*/ if
                (0===
                  /*<<boulderdash.ml 99 20>>*/ caml_check_bound_g_
@@ -6735,7 +6737,7 @@
                    var
                     _o_=x_a_-1|0,
                     _p_=y_b_-1|0,
-                     /*<<boulderdash.ml 102 35>>*/ _e_=
+                     /*<<boulderdash.ml 102 35>>*/ switch_e_=
                      3===
                        /*<<boulderdash.ml 102 27>>*/ caml_check_bound_g_
                         ( /*<<boulderdash.ml 102 10>>*/ caml_check_bound_g_
@@ -6752,11 +6754,11 @@
                         1)
                       :0;
                   else
-                   var _e_=0}
+                   var switch_e_=0}
                 else
-                 var _e_=0}
+                 var switch_e_=0}
               else
-               var _e_=0;
+               var switch_e_=0;
                /*<<boulderdash.ml 107 24>>*/ if
                (0===
                  /*<<boulderdash.ml 107 20>>*/ caml_check_bound_g_
@@ -6786,7 +6788,7 @@
                    var
                     _s_=x_a_+1|0,
                     _t_=y_b_-1|0,
-                     /*<<boulderdash.ml 110 35>>*/ _f_=
+                     /*<<boulderdash.ml 110 35>>*/ switch_f_=
                      3===
                        /*<<boulderdash.ml 110 27>>*/ caml_check_bound_g_
                         ( /*<<boulderdash.ml 110 10>>*/ caml_check_bound_g_
@@ -6803,11 +6805,11 @@
                         1)
                       :0;
                   else
-                   var _f_=0}
+                   var switch_f_=0}
                 else
-                 var _f_=0}
+                 var switch_f_=0}
               else
-               var _f_=0;
+               var switch_f_=0;
                /*<<boulderdash.ml 115 3>>*/ if(!sustaining_A_)
                {var _u_=y_b_+1|0;
                  /*<<boulderdash.ml 115 47>>*/ if
@@ -6943,10 +6945,11 @@
                  x_c_)
                [x_c_+1];
              /*<<boulderdash.ml 85 15>>*/ if(5===param_C_)
-             var _B_=0;
+             var switch_B_=0;
             else
-             if(3<=param_C_)var _D_=0,_B_=1;else var _B_=0;
-             /*<<camlinternalFormatBasics.ml 502 8>>*/ if(!_B_)var _D_=1;
+             if(3<=param_C_)var _D_=0,switch_B_=1;else var switch_B_=0;
+             /*<<camlinternalFormatBasics.ml 502 8>>*/ if(!switch_B_)
+             var _D_=1;
              /*<<boulderdash.ml 154 35>>*/ if(_D_)
              {var
                 /*<<boulderdash.ml 155 15>>*/ cur_img_d_=
@@ -7175,12 +7178,12 @@
            {_f_=caml_wrap_exception_V_(_f_);
             if(_f_[1]===_bu_)
              if(caml_string_notequal_el_(_f_[2],_hN_))
-              var _q_=0;
+              var switch_q_=0;
              else
-              var _s_=0,_q_=1;
+              var _s_=0,switch_q_=1;
             else
-             var _q_=0;
-             /*<<camlinternalFormatBasics.ml 502 8>>*/ if(!_q_)throw _f_}
+             var switch_q_=0;
+             /*<<camlinternalFormatBasics.ml 502 8>>*/ if(!switch_q_)throw _f_}
            /*<<boulderdash.ml 202 3>>*/ if(_s_)
            {var
               /*<<boulderdash.ml 202 3>>*/ over_w_=
@@ -7403,7 +7406,7 @@
               /*<<src/core/lwt.ml 329 10>>*/ repr_rec_a9_(node_B_[3]),
              /*<<src/core/lwt.ml 330 2>>*/ _r_=t_C_[1];
             /*<<src/core/lwt.ml 330 2>>*/ switch(_r_[0])
-            {case 1:var _f_=_r_[1]===Canceled_a8_?1:0;break;
+            {case 1:var switch_f_=_r_[1]===Canceled_a8_?1:0;break;
              case 2:
                /*<<src/core/lwt.ml 332 8>>*/ var sleeper_D_=_r_[1];
                /*<<src/core/lwt.ml 333 8>>*/ t_C_[1]=state_s_;
@@ -7417,7 +7420,7 @@
                    (cell_q_,[0,x_E_,cell_q_]);
                    /*<<queue.ml 60 4>>*/ to_wakeup_K_[1]=1;
                    /*<<queue.ml 61 4>>*/ to_wakeup_K_[2]=cell_q_;
-                  var _f_=1}
+                  var switch_f_=1}
                 else
                  {var
                     /*<<queue.ml 63 4>>*/ tail_x_=to_wakeup_K_[2],
@@ -7425,14 +7428,14 @@
                    /*<<queue.ml 69 4>>*/ to_wakeup_K_[1]=to_wakeup_K_[1]+1|0;
                    /*<<queue.ml 70 4>>*/ tail_x_[2]=cell_A_;
                    /*<<queue.ml 71 4>>*/ to_wakeup_K_[2]=cell_A_;
-                  var _f_=1}}
+                  var switch_f_=1}}
               else
                { /*<<src/core/lwt.ml 344 10>>*/  /*<<src/core/lwt.ml 344 10>>*/ safe_run_waiters_cN_
                  (sleeper_D_,state_s_);
-                var _f_=1}
+                var switch_f_=1}
               break;
-             default:var _f_=0}
-            /*<<camlinternalFormatBasics.ml 502 8>>*/ if(!_f_)
+             default:var switch_f_=0}
+            /*<<camlinternalFormatBasics.ml 502 8>>*/ if(!switch_f_)
              /*<<src/core/lwt.ml 348 8>>*/ invalid_arg_ak_(_gB_)}
          /*<<boulderdash.ml 261 38>>*/ return  /*<<boulderdash.ml 261 38>>*/ return_y_
                 (0) /*<<boulderdash.ml 262 19>>*/ }
@@ -7508,10 +7511,14 @@
                /*<<xmlHttpRequest.ml 190 26>>*/ _F_=param_g_[1][2],
               l_U_=param_g_[2];
               /*<<xmlHttpRequest.ml 190 26>>*/ if(typeof _F_==="number")
-              var _r_=0;
+              var switch_r_=0;
              else
-              if(-976970511===_F_[1])var _k_=1,_r_=1;else var _r_=0;
-              /*<<camlinternalFormatBasics.ml 502 8>>*/ if(!_r_)var _k_=0;
+              if(-976970511===_F_[1])
+               var _k_=1,switch_r_=1;
+              else
+               var switch_r_=0;
+              /*<<camlinternalFormatBasics.ml 502 8>>*/ if(!switch_r_)
+              var _k_=0;
               /*<<list.ml 127 15>>*/ if(_k_){var param_g_=l_U_;continue}
              var only_strings_G_=_k_}
            else
@@ -7850,12 +7857,12 @@
        { /*<<boulderdash.ml 293 4>>*/ var
          _b_=
            /*<<boulderdash.ml 293 4>>*/ return_y_
-           ( /*<<boulderdash.ml 293 16>>*/ caml_fs_file_content_h$_(f_a_))}
+           ( /*<<boulderdash.ml 293 16>>*/ caml_fs_file_content_h$_(f_a_));
+        return _b_}
       catch(_f_)
        {_f_=caml_wrap_exception_V_(_f_);
         if(_f_===_aH_)return  /*<<boulderdash.ml 295 4>>*/ http_get_hO_(f_a_);
-         /*<<boulderdash.ml 285 2>>*/ throw _f_}
-      return _b_ /*<<boulderdash.ml 295 14>>*/ }
+         /*<<boulderdash.ml 285 2>>*/ throw _f_} /*<<boulderdash.ml 295 14>>*/ }
      /*<<boulderdash.ml 458 0>>*/ window_c_.onload=
      /*<<boulderdash.ml 458 23>>*/ handler_Y_
      (function(param_a_)
@@ -8038,56 +8045,56 @@
                              /*<<boulderdash.ml 361 22>>*/ if(47<=match_e_)
                              if(83<=match_e_)
                               if(89<=match_e_)
-                               var _i_=0;
+                               var switch_i_=0;
                               else
                                {switch(match_e_-83|0)
                                  {case 0:
                                     /*<<boulderdash.ml 369 41>>*/ row_b_[1]=[0,6,row_b_[1]];
-                                   var _o_=1;
+                                   var switch_o_=1;
                                    break;
                                   case 4:
                                     /*<<boulderdash.ml 368 12>>*/ row_b_[1]=[0,6,row_b_[1]];
-                                   var _o_=1;
+                                   var switch_o_=1;
                                    break;
                                   case 5:
                                     /*<<boulderdash.ml 367 12>>*/ row_b_[1]=[0,3,row_b_[1]];
-                                   var _o_=1;
+                                   var switch_o_=1;
                                    break;
-                                  default:var _i_=0,_o_=0}
-                                if(_o_)var _i_=1}
+                                  default:var switch_i_=0,switch_o_=0}
+                                if(switch_o_)var switch_i_=1}
                              else
-                              var _i_=69===match_e_?(row_b_[1]=[0,4,row_b_[1]],1):0;
+                              var switch_i_=69===match_e_?(row_b_[1]=[0,4,row_b_[1]],1):0;
                             else
                              if(10===match_e_)
                               { /*<<boulderdash.ml 362 13>>*/ var _W_=res_r_[1];
                                 /*<<boulderdash.ml 362 35>>*/ res_r_[1]=
                                [0, /*<<boulderdash.ml 362 20>>*/ _bw_(row_b_[1]),_W_];
                                 /*<<boulderdash.ml 362 46>>*/ row_b_[1]=0;
-                               var _i_=1}
+                               var switch_i_=1}
                              else
                               if(32<=match_e_)
                                {switch(match_e_-32|0)
                                  {case 0:
                                     /*<<boulderdash.ml 365 12>>*/ row_b_[1]=[0,0,row_b_[1]];
-                                   var _k_=1;
+                                   var switch_k_=1;
                                    break;
                                   case 3:
                                     /*<<boulderdash.ml 363 12>>*/ row_b_[1]=[0,7,row_b_[1]];
-                                   var _k_=1;
+                                   var switch_k_=1;
                                    break;
                                   case 11:
                                     /*<<boulderdash.ml 366 12>>*/ row_b_[1]=[0,2,row_b_[1]];
-                                   var _k_=1;
+                                   var switch_k_=1;
                                    break;
                                   case 14:
                                     /*<<boulderdash.ml 364 12>>*/ row_b_[1]=[0,1,row_b_[1]];
-                                   var _k_=1;
+                                   var switch_k_=1;
                                    break;
-                                  default:var _i_=0,_k_=0}
-                                if(_k_)var _i_=1}
+                                  default:var switch_i_=0,switch_k_=0}
+                                if(switch_k_)var switch_i_=1}
                               else
-                               var _i_=0;
-                             /*<<camlinternalFormatBasics.ml 502 8>>*/ if(!_i_)
+                               var switch_i_=0;
+                             /*<<camlinternalFormatBasics.ml 502 8>>*/ if(!switch_i_)
                               /*<<boulderdash.ml 370 10>>*/ failwith_aD_(_hT_);
                              /*<<boulderdash.ml 370 36>>*/ var _V_=i_n_+1|0;
                             if(_w_!==i_n_){var i_n_=_V_;continue}
@@ -8240,12 +8247,12 @@
                                    show_rem_Q_,
                                    clock_p_),
                                  _U_) /*<<boulderdash.ml 415 58>>*/ });
-                    var _m_=1}
+                    var switch_m_=1}
                   else
-                   var _m_=0;
+                   var switch_m_=0;
                   break}}
               else
-               var _m_=0;
+               var switch_m_=0;
                /*<<boulderdash.ml 449 9>>*/ return false_bM_ /*<<boulderdash.ml 449 18>>*/ });
            /*<<boulderdash.ml 450 4>>*/  /*<<boulderdash.ml 450 4>>*/ _D_
            (div_a_,select_b_);
@@ -8312,12 +8319,13 @@
                                {_f_=caml_wrap_exception_V_(_f_);
                                 if(_f_[1]===_aE_)
                                  if(caml_string_notequal_el_(_f_[2],_h1_))
-                                  var _e_=0;
+                                  var switch_e_=0;
                                  else
-                                  var _d_=0,_e_=1;
+                                  var _d_=0,switch_e_=1;
                                 else
-                                 var _e_=0;
-                                 /*<<camlinternalFormatBasics.ml 502 8>>*/ if(!_e_)throw _f_}
+                                 var switch_e_=0;
+                                 /*<<camlinternalFormatBasics.ml 502 8>>*/ if(!switch_e_)
+                                 throw _f_}
                               if(_d_)
                                {var
                                  match_h_=_d_[1],
