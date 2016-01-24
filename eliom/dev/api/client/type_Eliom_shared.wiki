@@ -713,11 +713,11 @@
             | R of int
             | U of int * 'a
             | X of int * int
-          type 'a data = 'a list
           type 'a patch = 'a p list
+          type 'a t = 'a ReactiveData.RList.t
+          type 'a data = 'a list
           type 'a msg = Patch of 'a patch | Set of 'a data
           type 'a handle = 'a ReactiveData.RList.handle
-          type 'a t = 'a ReactiveData.RList.t
           val empty : 'a t
           val make_from : 'a data -> 'a msg React.E.t -> 'a t
           val const : 'a data -> 'a t
@@ -726,7 +726,6 @@
           val map_msg : ('a -> 'b) -> 'a msg -> 'b msg
           val fold : ('a -> 'b msg -> 'a) -> 'b t -> 'a -> 'a React.signal
           val event : 'a t -> 'a msg React.E.t
-          val nil : 'a t
           val append : 'a -> 'a handle -> unit
           val cons : 'a -> 'a handle -> unit
           val insert : 'a -> int -> 'a handle -> unit
@@ -735,8 +734,6 @@
           val move : int -> int -> 'a handle -> unit
           val singleton : 'a -> 'a t
           val rev : 'a t -> 'a t
-          val sort : ('a -> 'a -> int) -> 'a t -> [ `Not_implemented ]
-          val filter : ('a -> unit) -> 'a t -> [ `Not_implemented ]
           val make :
             ?default:('a ReactiveData.RList.t * 'a ReactiveData.RList.handle)
                      option Eliom_lib.client_value ->
