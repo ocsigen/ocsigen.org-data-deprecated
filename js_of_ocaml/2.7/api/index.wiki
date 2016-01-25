@@ -78,6 +78,9 @@
 |<<a_api | module MutationObserver >>|<<div class="odocwiki_info"|~Mutation~Observer ~A~P~I
 >>
 |
+|<<a_api | module Worker >>|<<div class="odocwiki_info"|~Low~-level bindgins to javascript ~Web ~Workers~.
+>>
+|
 
 
 
