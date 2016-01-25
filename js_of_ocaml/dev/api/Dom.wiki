@@ -36,21 +36,21 @@
 <<pre id="VALinsertBefore" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|insert~Before>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|~#<<a_api text="node" | class type Dom.node >> <<a_api text="Js.t" | type Js.t >> <<span class="ocsforge_color_delimiter"| -> >> ~#<<a_api text="node" | class type Dom.node >> <<a_api text="Js.t" | type Js.t >> <<span class="ocsforge_color_delimiter"| -> >> ~#<<a_api text="node" | class type Dom.node >> <<a_api text="Js.t" | type Js.t >> <<a_api text="Js.opt" | type Js.opt >> <<span class="ocsforge_color_delimiter"| -> >> unit>>>><<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|insert~Before p n c>> inserts node <<span class="odocwiki_inlinecode"|n>> as child of node <<span class="odocwiki_inlinecode"|p>>~,
       just before node <<span class="odocwiki_inlinecode"|c>>~, or as last child if <<span class="odocwiki_inlinecode"|p>> is empty~.
       ~The expression <<span class="odocwiki_inlinecode"|insert~Before n c p>> behave the same as
-      <<span class="odocwiki_inlinecode"|p~#~#insert~Before~(n~, c~)>> but avoid the need of coercing the
+      <<span class="odocwiki_inlinecode"|p~#~#insert~Before n c>> but avoid the need of coercing the
       different objects to <<span class="odocwiki_inlinecode"|node t>>~.
 >>
 <<pre id="VALreplaceChild" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|replace~Child>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|~#<<a_api text="node" | class type Dom.node >> <<a_api text="Js.t" | type Js.t >> <<span class="ocsforge_color_delimiter"| -> >> ~#<<a_api text="node" | class type Dom.node >> <<a_api text="Js.t" | type Js.t >> <<span class="ocsforge_color_delimiter"| -> >> ~#<<a_api text="node" | class type Dom.node >> <<a_api text="Js.t" | type Js.t >> <<span class="ocsforge_color_delimiter"| -> >> unit>>>><<div class="odocwiki_info"|~The expression <<span class="odocwiki_inlinecode"|replace~Child p n c>> behave the same as
-      <<span class="odocwiki_inlinecode"|p~#~#replace~Child~(n~, c~)>> ~(replace <<span class="odocwiki_inlinecode"|c>> by <<span class="odocwiki_inlinecode"|n>> in <<span class="odocwiki_inlinecode"|p>>~)
+      <<span class="odocwiki_inlinecode"|p~#~#replace~Child n c>> ~(replace <<span class="odocwiki_inlinecode"|c>> by <<span class="odocwiki_inlinecode"|n>> in <<span class="odocwiki_inlinecode"|p>>~)
       but avoid the need of coercing the
       different objects to <<span class="odocwiki_inlinecode"|node t>>~.
 >>
 <<pre id="VALremoveChild" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|remove~Child>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|~#<<a_api text="node" | class type Dom.node >> <<a_api text="Js.t" | type Js.t >> <<span class="ocsforge_color_delimiter"| -> >> ~#<<a_api text="node" | class type Dom.node >> <<a_api text="Js.t" | type Js.t >> <<span class="ocsforge_color_delimiter"| -> >> unit>>>><<div class="odocwiki_info"|~The expression <<span class="odocwiki_inlinecode"|remove~Child n c>> behave the same as
-      <<span class="odocwiki_inlinecode"|n~#~#remove~Child~(c~)>> ~(remove <<span class="odocwiki_inlinecode"|c>> from <<span class="odocwiki_inlinecode"|n>>~)
+      <<span class="odocwiki_inlinecode"|n~#~#remove~Child c>> ~(remove <<span class="odocwiki_inlinecode"|c>> from <<span class="odocwiki_inlinecode"|n>>~)
       but avoid the need of coercing the
       different objects to <<span class="odocwiki_inlinecode"|node t>>~.
 >>
 <<pre id="VALappendChild" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|append~Child>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|~#<<a_api text="node" | class type Dom.node >> <<a_api text="Js.t" | type Js.t >> <<span class="ocsforge_color_delimiter"| -> >> ~#<<a_api text="node" | class type Dom.node >> <<a_api text="Js.t" | type Js.t >> <<span class="ocsforge_color_delimiter"| -> >> unit>>>><<div class="odocwiki_info"|~The expression <<span class="odocwiki_inlinecode"|append~Child n c>> behave the same as
-      <<span class="odocwiki_inlinecode"|n~#~#append~Child~(c~)>> ~(appends <<span class="odocwiki_inlinecode"|c>> to <<span class="odocwiki_inlinecode"|n>>~)
+      <<span class="odocwiki_inlinecode"|n~#~#append~Child c>> ~(appends <<span class="odocwiki_inlinecode"|c>> to <<span class="odocwiki_inlinecode"|n>>~)
       but avoid the need of coercing the
       different objects to <<span class="odocwiki_inlinecode"|node t>>~.
 >>

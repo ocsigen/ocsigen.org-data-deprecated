@@ -54,7 +54,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="animateTransform"| value Dom_svg.CoerceTo.animateTransform >> ~[<<a_api | module Dom_svg.CoerceTo >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="append"| value Form.append >> ~[<<a_api | module Form >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="appendChild"| value Dom.appendChild >> ~[<<a_api | module Dom >>~]|<<div class="odocwiki_info"|~The expression <<span class="odocwiki_inlinecode"|append~Child n c>> behave the same as
-      <<span class="odocwiki_inlinecode"|n~#~#append~Child~(c~)>> ~(appends <<span class="odocwiki_inlinecode"|c>> to <<span class="odocwiki_inlinecode"|n>>~)
+      <<span class="odocwiki_inlinecode"|n~#~#append~Child c>> ~(appends <<span class="odocwiki_inlinecode"|c>> to <<span class="odocwiki_inlinecode"|n>>~)
       but avoid the need of coercing the
       different objects to <<span class="odocwiki_inlinecode"|node t>>~.
 >>
@@ -1250,7 +1250,7 @@
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="removeChild"| value Dom.removeChild >> ~[<<a_api | module Dom >>~]|<<div class="odocwiki_info"|~The expression <<span class="odocwiki_inlinecode"|remove~Child n c>> behave the same as
-      <<span class="odocwiki_inlinecode"|n~#~#remove~Child~(c~)>> ~(remove <<span class="odocwiki_inlinecode"|c>> from <<span class="odocwiki_inlinecode"|n>>~)
+      <<span class="odocwiki_inlinecode"|n~#~#remove~Child c>> ~(remove <<span class="odocwiki_inlinecode"|c>> from <<span class="odocwiki_inlinecode"|n>>~)
       but avoid the need of coercing the
       different objects to <<span class="odocwiki_inlinecode"|node t>>~.
 >>
@@ -1262,7 +1262,7 @@
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="replaceChild"| value Dom.replaceChild >> ~[<<a_api | module Dom >>~]|<<div class="odocwiki_info"|~The expression <<span class="odocwiki_inlinecode"|replace~Child p n c>> behave the same as
-      <<span class="odocwiki_inlinecode"|p~#~#replace~Child~(n~, c~)>> ~(replace <<span class="odocwiki_inlinecode"|c>> by <<span class="odocwiki_inlinecode"|n>> in <<span class="odocwiki_inlinecode"|p>>~)
+      <<span class="odocwiki_inlinecode"|p~#~#replace~Child n c>> ~(replace <<span class="odocwiki_inlinecode"|c>> by <<span class="odocwiki_inlinecode"|n>> in <<span class="odocwiki_inlinecode"|p>>~)
       but avoid the need of coercing the
       different objects to <<span class="odocwiki_inlinecode"|node t>>~.
 >>
@@ -1316,7 +1316,7 @@
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="set"| value Dom_svg.CoerceTo.set >> ~[<<a_api | module Dom_svg.CoerceTo >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="setTimeout"| value Dom_html.setTimeout >> ~[<<a_api | module Dom_html >>~]|<<div class="odocwiki_info"|~Same as <<span class="odocwiki_inlinecode"|~Dom~_html~.window~#~#set~Timeout~(cb~,ms~)>> but prevents overflow
+|@@class="odocwiki_index"@ @@<<a_api text="setTimeout"| value Dom_html.setTimeout >> ~[<<a_api | module Dom_html >>~]|<<div class="odocwiki_info"|~Same as <<span class="odocwiki_inlinecode"|~Dom~_html~.window~#~#set~Timeout cb ms>> but prevents overflow
     with delay greater than ~2~4 days~.
 >>
 |

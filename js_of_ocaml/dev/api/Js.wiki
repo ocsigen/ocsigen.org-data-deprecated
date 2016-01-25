@@ -282,7 +282,7 @@
       called~.
       ~Typical usage is the following~:
       
-<<code language='ocaml'|Js.coerce_opt (Dom_html.document##getElementById(id))
+<<code language='ocaml'|Js.coerce_opt (Dom_html.document##getElementById id)
       Dom_html.CoerceTo.div (fun _ -> assert false)>>
 
 >>
