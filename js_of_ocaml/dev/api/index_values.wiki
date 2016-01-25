@@ -182,6 +182,7 @@
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="create"| value XmlHttpRequest.create >> ~[<<a_api | module XmlHttpRequest >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="create"| value Worker.create >> ~[<<a_api | module Worker >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="create"| value Jstable.create >> ~[<<a_api | module Jstable >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="createA"| value Dom_svg.createA >> ~[<<a_api | module Dom_svg >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="createA"| value Dom_html.createA >> ~[<<a_api | module Dom_html >>~]||
@@ -687,6 +688,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="image"| value Dom_svg.CoerceTo.image >> ~[<<a_api | module Dom_svg.CoerceTo >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="img"| value Dom_html.CoerceTo.img >> ~[<<a_api | module Dom_html.CoerceTo >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="implementation_specific"| value Dom.DocumentPosition.implementation_specific >> ~[<<a_api | module Dom.DocumentPosition >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="import_scripts"| value Worker.import_scripts >> ~[<<a_api | module Worker >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="info"| value Lwt_log_js.info >> ~[<<a_api | module Lwt_log_js >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="info_f"| value Lwt_log_js.info_f >> ~[<<a_api | module Lwt_log_js >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="init_lexer"| value Deriving_Json_lexer.init_lexer >> ~[<<a_api | module Deriving_Json_lexer >>~]|<<div class="odocwiki_info"|~Create a fresh lexbuf record~.
@@ -1150,6 +1152,7 @@
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="post_form_contents"| value Form.post_form_contents >> ~[<<a_api | module Form >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="post_message"| value Worker.post_message >> ~[<<a_api | module Worker >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="pre"| value Dom_html.CoerceTo.pre >> ~[<<a_api | module Dom_html.CoerceTo >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="preceding"| value Dom.DocumentPosition.preceding >> ~[<<a_api | module Dom.DocumentPosition >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="preventDefault"| value Dom.preventDefault >> ~[<<a_api | module Dom >>~]|<<div class="odocwiki_info"|~Call this to prevent the default handler for the event~.
@@ -1330,6 +1333,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="set_fragment"| value Url.Current.set_fragment >> ~[<<a_api | module Url.Current >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|set~_fragment s>> replaces the current fragment by <<span class="odocwiki_inlinecode"|s>>~.
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api text="set_onmessage"| value Worker.set_onmessage >> ~[<<a_api | module Worker >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="shift"| value Keycode.shift >> ~[<<a_api | module Keycode >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="sleep"| value Lwt_js.sleep >> ~[<<a_api | module Lwt_js >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|sleep d>> is a threads which remain suspended for <<span class="odocwiki_inlinecode"|d>> seconds
       and then terminates~.

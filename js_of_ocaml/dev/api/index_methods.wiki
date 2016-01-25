@@ -630,6 +630,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="collapseToEnd"| method Dom_html.selection#collapseToEnd >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="collapseToStart"| method Dom_html.selection#collapseToStart >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="collapsed"| method Dom_html.range#collapsed >> ~[<<a_api | module Dom_html >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="colno"| method Worker.errorEvent#colno >> ~[<<a_api | module Worker >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="color"| method Dom_html.cssStyleDeclaration#color >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="colorMask"| method WebGL.renderingContext#colorMask >> ~[<<a_api | module WebGL >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="colorProfile"| method Dom_svg.iccColor#colorProfile >> ~[<<a_api | module Dom_svg >>~]||
@@ -746,6 +747,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="cy"| method Dom_svg.circleElement#cy >> ~[<<a_api | module Dom_svg >>~]||
 |@@ @style="tet-align: left;"@@\\D|
 |@@class="odocwiki_index"@ @@<<a_api text="d"| method Dom_svg.matrix#d >> ~[<<a_api | module Dom_svg >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="data"| method Worker.messageEvent#data >> ~[<<a_api | module Worker >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="data"| method WebSockets.messageEvent#data >> ~[<<a_api | module WebSockets >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="data"| method EventSource.messageEvent#data >> ~[<<a_api | module EventSource >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="data"| method Dom_html.imageData#data >> ~[<<a_api | module Dom_html >>~]||
@@ -845,6 +847,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="endOffset"| method Dom_html.range#endOffset >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="end_"| method Dom_html.timeRanges#end_ >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="ended"| method Dom_html.mediaElement#ended >> ~[<<a_api | module Dom_html >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="error"| method Worker.errorEvent#error >> ~[<<a_api | module Worker >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="error"| method Firebug.console#error >> ~[<<a_api | module Firebug >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="error"| method File.fileReader#error >> ~[<<a_api | module File >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="error_2"| method Firebug.console#error_2 >> ~[<<a_api | module Firebug >>~]||
@@ -863,6 +866,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="f"| method Dom_svg.matrix#f >> ~[<<a_api | module Dom_svg >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="failIfMajorPerformanceCaveat"| method WebGL.contextAttributes#failIfMajorPerformanceCaveat >> ~[<<a_api | module WebGL >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="farthestViewportElement"| method Dom_svg.locatable#farthestViewportElement >> ~[<<a_api | module Dom_svg >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="filename"| method Worker.errorEvent#filename >> ~[<<a_api | module Worker >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="files"| method Dom_html.inputElement#files >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="files"| method Dom_html.dataTransfer#files >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="fill"| method Dom_html.canvasRenderingContext2D#fill >> ~[<<a_api | module Dom_html >>~]||
@@ -1187,6 +1191,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="lineTo"| method Dom_html.canvasRenderingContext2D#lineTo >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="lineWidth"| method WebGL.renderingContext#lineWidth >> ~[<<a_api | module WebGL >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="lineWidth"| method Dom_html.canvasRenderingContext2D#lineWidth >> ~[<<a_api | module Dom_html >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="lineno"| method Worker.errorEvent#lineno >> ~[<<a_api | module Worker >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="linkProgram"| method WebGL.renderingContext#linkProgram >> ~[<<a_api | module WebGL >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="links"| method Dom_html.document#links >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="listStyle"| method Dom_html.cssStyleDeclaration#listStyle >> ~[<<a_api | module Dom_html >>~]||
@@ -1253,6 +1258,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="miterLimit"| method Dom_html.canvasRenderingContext2D#miterLimit >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="modify"| method Dom_html.selection#modify >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="moveTo"| method Dom_html.canvasRenderingContext2D#moveTo >> ~[<<a_api | module Dom_html >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="msg"| method Worker.errorEvent#msg >> ~[<<a_api | module Worker >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="multiline"| method Js.regExp#multiline >> ~[<<a_api | module Js >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="multiple"| method Dom_html.selectElement#multiple >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="multiply"| method Dom_svg.matrix#multiply >> ~[<<a_api | module Dom_svg >>~]||
@@ -1330,6 +1336,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="ondragover"| method Dom_html.eventTarget#ondragover >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="ondragstart"| method Dom_html.eventTarget#ondragstart >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="ondrop"| method Dom_html.eventTarget#ondrop >> ~[<<a_api | module Dom_html >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="onerror"| method Worker.worker#onerror >> ~[<<a_api | module Worker >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="onerror"| method WebSockets.webSocket#onerror >> ~[<<a_api | module WebSockets >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="onerror"| method File.fileReader#onerror >> ~[<<a_api | module File >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="onerror"| method File.progressEventTarget#onerror >> ~[<<a_api | module File >>~]||
@@ -1354,6 +1361,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="onloadend"| method File.progressEventTarget#onloadend >> ~[<<a_api | module File >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="onloadstart"| method File.fileReader#onloadstart >> ~[<<a_api | module File >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="onloadstart"| method File.progressEventTarget#onloadstart >> ~[<<a_api | module File >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="onmessage"| method Worker.worker#onmessage >> ~[<<a_api | module Worker >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="onmessage"| method WebSockets.webSocket#onmessage >> ~[<<a_api | module WebSockets >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="onmessage"| method EventSource.eventSource#onmessage >> ~[<<a_api | module EventSource >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="onmousedown"| method Dom_html.eventTarget#onmousedown >> ~[<<a_api | module Dom_html >>~]||
@@ -1441,6 +1449,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="pop"| method Js.js_array#pop >> ~[<<a_api | module Js >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="port"| method Dom_html.location#port >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="position"| method Dom_html.cssStyleDeclaration#position >> ~[<<a_api | module Dom_html >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="postMessage"| method Worker.worker#postMessage >> ~[<<a_api | module Worker >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="pow"| method Js.math#pow >> ~[<<a_api | module Js >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="precision"| method WebGL.shaderPrecisionFormat#precision >> ~[<<a_api | module WebGL >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="preferLowPowerToHighPerformance"| method WebGL.contextAttributes#preferLowPowerToHighPerformance >> ~[<<a_api | module WebGL >>~]||
@@ -1795,6 +1804,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="target"| method Dom.event#target >> ~[<<a_api | module Dom >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="targetElement"| method Dom_svg.animationElement#targetElement >> ~[<<a_api | module Dom_svg >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="targetTouches"| method Dom_html.touchEvent#targetTouches >> ~[<<a_api | module Dom_html >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="terminate"| method Worker.worker#terminate >> ~[<<a_api | module Worker >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="test"| method Js.regExp#test >> ~[<<a_api | module Js >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="texImage2D_fromCanvas"| method WebGL.renderingContext#texImage2D_fromCanvas >> ~[<<a_api | module WebGL >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="texImage2D_fromImage"| method WebGL.renderingContext#texImage2D_fromImage >> ~[<<a_api | module WebGL >>~]||

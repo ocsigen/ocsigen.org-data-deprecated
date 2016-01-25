@@ -183,6 +183,9 @@
 |@@class="odocwiki_index"@ @@<<a_api text="WebSockets"| module WebSockets >> |<<div class="odocwiki_info"|~Web~Socket binding
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api text="Worker"| module Worker >> |<<div class="odocwiki_info"|~Low~-level bindgins to javascript ~Web ~Workers~.
+>>
+|
 |@@ @style="tet-align: left;"@@\\X|
 |@@class="odocwiki_index"@ @@<<a_api text="Xml"| module Tyxml_js.R.Xml >> ~[<<a_api | module Tyxml_js.R >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="Xml"| module Tyxml_js.Xml >> ~[<<a_api | module Tyxml_js >>~]||

@@ -110,6 +110,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="error"| class type Js.error >> ~[<<a_api | module Js >>~]|<<div class="odocwiki_info"|~Specification of ~Javascript error object~.
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api text="errorEvent"| class type Worker.errorEvent >> ~[<<a_api | module Worker >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="event"| class type Dom_html.event >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="event"| class type Dom.event >> ~[<<a_api | module Dom >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="eventSource"| class type EventSource.eventSource >> ~[<<a_api | module EventSource >>~]||
@@ -198,6 +199,7 @@
 |
 |@@class="odocwiki_index"@ @@<<a_api text="matrix"| class type Dom_svg.matrix >> ~[<<a_api | module Dom_svg >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="mediaElement"| class type Dom_html.mediaElement >> ~[<<a_api | module Dom_html >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="messageEvent"| class type Worker.messageEvent >> ~[<<a_api | module Worker >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="messageEvent"| class type WebSockets.messageEvent >> ~[<<a_api | module WebSockets >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="messageEvent"| class type EventSource.messageEvent >> ~[<<a_api | module EventSource >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="metaElement"| class type Dom_html.metaElement >> ~[<<a_api | module Dom_html >>~]||
@@ -351,6 +353,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="window"| class type Dom_html.window >> ~[<<a_api | module Dom_html >>~]|<<div class="odocwiki_info"|~Specification of window objects
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api text="worker"| class type Worker.worker >> ~[<<a_api | module Worker >>~]||
 |@@ @style="tet-align: left;"@@\\X|
 |@@class="odocwiki_index"@ @@<<a_api text="xmlHttpRequest"| class type XmlHttpRequest.xmlHttpRequest >> ~[<<a_api | module XmlHttpRequest >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="xmlHttpRequestUpload"| class type XmlHttpRequest.xmlHttpRequestUpload >> ~[<<a_api | module XmlHttpRequest >>~]||
