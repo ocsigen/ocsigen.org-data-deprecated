@@ -23,6 +23,7 @@
 ==[[Geolocation|Geolocation]]
 ==[[Jstable|Jstable]]
 ==[[MutationObserver|MutationObserver]]
+==[[Worker|Worker]]
 =~Ppx ~- ~A~P~I ~Reference
 ==[[Ppx_js|Ppx_js]]
 =~Deriving ~- ~A~P~I ~Reference
