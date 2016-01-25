@@ -3,17 +3,17 @@
     sig
       type 'a t
       type 'a handle
-      val make :
+      val create :
         ?default:('a FakeReactiveData.RList.t *
                   'a FakeReactiveData.RList.handle)
                  option Eliom_lib.client_value ->
         ?reset_default:bool -> 'a list -> 'a t * 'a handle
       val concat : 'a t -> 'a t -> 'a t
       val value : 'a t -> 'a list Eliom_lib.shared_value
-      val value_s : 'a t -> 'a list React.S.t
+      val signal : 'a t -> 'a list React.S.t
       val singleton_s : 'a React.S.t -> 'a t
       val map : ('a -> 'b) Eliom_lib.shared_value -> 'a t -> 'b t
-      val make_from_s :
+      val from_signal :
         ?eq:('a -> 'a -> bool) Eliom_lib.shared_value ->
         'a list React.S.t -> 'a t
       val acc_e :

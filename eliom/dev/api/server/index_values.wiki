@@ -217,6 +217,11 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="create"| value Eliom_bus.create >> ~[<<a_api subproject="server" | module Eliom_bus >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|create ~?scope ~?name ~?size ~?filter t>> creates a fresh bus~.
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="create"| value Eliom_shared_sigs.RLIST.create >> ~[<<a_api subproject="server" | module Eliom_shared_sigs.RLIST >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|create ~?default ~?reset~_default l>> produces a pair <<span class="odocwiki_inlinecode"|l~, f>>~, where
+      <<span class="odocwiki_inlinecode"|s>> is a ~(shared~) reactive list~, and <<span class="odocwiki_inlinecode"|f>> is a handle for
+      manipulating the list~.
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="create_filtered"| value Eliom_bus.create_filtered >> ~[<<a_api subproject="server" | module Eliom_bus >>~]|<<div class="odocwiki_info"|~Same as <<span class="odocwiki_inlinecode"|create>>~, but data is filtered through <<span class="odocwiki_inlinecode"|filter>> function
     before entering the bus~.
 >>
@@ -540,6 +545,7 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="format_url"| value Eliom_s2s.format_url >> ~[<<a_api subproject="server" | module Eliom_s2s >>~]|<<div class="odocwiki_info"|~Format a url with a base and ~G~E~T parameters
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="from_signal"| value Eliom_shared_sigs.RLIST.from_signal >> ~[<<a_api subproject="server" | module Eliom_shared_sigs.RLIST >>~]||
 |@@ @style="tet-align: left;"@@\\G|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="get"| value Eliom_reference.Ext.get >> ~[<<a_api subproject="server" | module Eliom_reference.Ext >>~]|<<div class="odocwiki_info"|get the value of a reference from outside the state~.
 >>
@@ -973,15 +979,9 @@
 >>
 |
 |@@ @style="tet-align: left;"@@\\M|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="make"| value Eliom_shared_sigs.RLIST.make >> ~[<<a_api subproject="server" | module Eliom_shared_sigs.RLIST >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|make ~?default ~?reset~_default l>> produces a pair <<span class="odocwiki_inlinecode"|l~, f>>~, where
-      <<span class="odocwiki_inlinecode"|s>> is a ~(shared~) reactive list~, and <<span class="odocwiki_inlinecode"|f>> is a handle for
-      manipulating the list~.
->>
-|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="make_cryptographic_safe_string"| value Eliom_lib.make_cryptographic_safe_string >> ~[<<a_api subproject="server" | module Eliom_lib >>~]|<<div class="odocwiki_info"|~Return a base~-~6~4 encoded cryptographic safe string of the given length~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="make_from_s"| value Eliom_shared_sigs.RLIST.make_from_s >> ~[<<a_api subproject="server" | module Eliom_shared_sigs.RLIST >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="make_non_localized_parameters"| value Eliom_parameter.make_non_localized_parameters >> ~[<<a_api subproject="server" | module Eliom_parameter >>~]|<<div class="odocwiki_info"|create a new specification for non localized parameters~.
 >>
 |
@@ -2463,6 +2463,7 @@ foobar:value}}}
    in seconds~.
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="signal"| value Eliom_shared_sigs.RLIST.signal >> ~[<<a_api subproject="server" | module Eliom_shared_sigs.RLIST >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="singleton_s"| value Eliom_shared_sigs.RLIST.singleton_s >> ~[<<a_api subproject="server" | module Eliom_shared_sigs.RLIST >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="site_scope"| value Eliom_common.site_scope >> ~[<<a_api subproject="server" | module Eliom_common >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="source"| value Atom_feed.source >> ~[<<a_api subproject="server" | module Atom_feed >>~]|<<div class="odocwiki_info"|~Source tag
@@ -2621,7 +2622,6 @@ foobar:value}}}
 |@@ @style="tet-align: left;"@@\\V|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="value"| value Eliom_shared_sigs.RLIST.value >> ~[<<a_api subproject="server" | module Eliom_shared_sigs.RLIST >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="value"| value Eliom_shared_sigs.S.value >> ~[<<a_api subproject="server" | module Eliom_shared_sigs.S >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="value_s"| value Eliom_shared_sigs.RLIST.value_s >> ~[<<a_api subproject="server" | module Eliom_shared_sigs.RLIST >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="void_coservice'"| value Eliom_service.void_coservice' >> ~[<<a_api subproject="server" | module Eliom_service >>~]|<<div class="odocwiki_info"|~The service <<span class="odocwiki_inlinecode"|void~_coservice~'>> is a predefined non~-attached action
     with special behaviour~: it has no parameter at all~, even
     non~-attached parameters~.

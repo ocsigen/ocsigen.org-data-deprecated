@@ -287,6 +287,11 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="create"| value Eliom_content.Html5.Custom_data.create >> ~[<<a_api subproject="client" | module Eliom_content.Html5.Custom_data >>~]|<<div class="odocwiki_info"|~Create a custom data field by providing string conversion functions~.
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="create"| value Eliom_shared_sigs.RLIST.create >> ~[<<a_api subproject="client" | module Eliom_shared_sigs.RLIST >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|create ~?default ~?reset~_default l>> produces a pair <<span class="odocwiki_inlinecode"|l~, f>>~, where
+      <<span class="odocwiki_inlinecode"|s>> is a ~(shared~) reactive list~, and <<span class="odocwiki_inlinecode"|f>> is a handle for
+      manipulating the list~.
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="create_global_elt"| value Eliom_content_core.Html5.Id.create_global_elt >> ~[<<a_api subproject="client" | module Eliom_content_core.Html5.Id >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|create~_named~_elt elt>> is equivalent to
         <<span class="odocwiki_inlinecode"|create~_named~_elt ~~id~:~(new~_elt~_id ~(~)~) elt>>~.
 >>
@@ -542,6 +547,7 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="force"| value Eliom_lazy.force >> ~[<<a_api subproject="client" | module Eliom_lazy >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="force_link"| value Eliom_content.force_link >> ~[<<a_api subproject="client" | module Eliom_content >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="from_fun"| value Eliom_lazy.from_fun >> ~[<<a_api subproject="client" | module Eliom_lazy >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="from_signal"| value Eliom_shared_sigs.RLIST.from_signal >> ~[<<a_api subproject="client" | module Eliom_shared_sigs.RLIST >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="from_val"| value Eliom_lazy.from_val >> ~[<<a_api subproject="client" | module Eliom_lazy >>~]||
 |@@ @style="tet-align: left;"@@\\G|
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="get_default_hostname"| value Eliom_config.get_default_hostname >> ~[<<a_api subproject="client" | module Eliom_config >>~]||
@@ -711,13 +717,7 @@
 >>
 |
 |@@ @style="tet-align: left;"@@\\M|
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="make"| value Eliom_shared_sigs.RLIST.make >> ~[<<a_api subproject="client" | module Eliom_shared_sigs.RLIST >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|make ~?default ~?reset~_default l>> produces a pair <<span class="odocwiki_inlinecode"|l~, f>>~, where
-      <<span class="odocwiki_inlinecode"|s>> is a ~(shared~) reactive list~, and <<span class="odocwiki_inlinecode"|f>> is a handle for
-      manipulating the list~.
->>
-|
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="make_encoded_parameters"| value Eliom_lib.Url.make_encoded_parameters >> ~[<<a_api subproject="client" | module Eliom_lib.Url >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="make_from_s"| value Eliom_shared_sigs.RLIST.make_from_s >> ~[<<a_api subproject="client" | module Eliom_shared_sigs.RLIST >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="make_non_localized_parameters"| value Eliom_parameter.make_non_localized_parameters >> ~[<<a_api subproject="client" | module Eliom_parameter >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="make_params_names"| value Eliom_parameter.make_params_names >> ~[<<a_api subproject="client" | module Eliom_parameter >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="make_post_uri_components"| value Eliom_uri.make_post_uri_components >> ~[<<a_api subproject="client" | module Eliom_uri >>~]|<<div class="odocwiki_info"|~Same a <<a_api subproject="client" | val Eliom_uri.make_uri_components >>~, but also returns a table of post
@@ -1265,6 +1265,7 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="set_tracing"| value Eliom_config.set_tracing >> ~[<<a_api subproject="client" | module Eliom_config >>~]|<<div class="odocwiki_info"|~Not tracing by default~.
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="signal"| value Eliom_shared_sigs.RLIST.signal >> ~[<<a_api subproject="client" | module Eliom_shared_sigs.RLIST >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="singleton_s"| value Eliom_shared_sigs.RLIST.singleton_s >> ~[<<a_api subproject="client" | module Eliom_shared_sigs.RLIST >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="space_sep_attrib"| value Eliom_content_core.Xml_wed.space_sep_attrib >> ~[<<a_api subproject="client" | module Eliom_content_core.Xml_wed >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="split_path"| value Eliom_lib.Url.split_path >> ~[<<a_api subproject="client" | module Eliom_lib.Url >>~]||
@@ -1345,7 +1346,6 @@
 |@@ @style="tet-align: left;"@@\\V|
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="value"| value Eliom_shared_sigs.RLIST.value >> ~[<<a_api subproject="client" | module Eliom_shared_sigs.RLIST >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="value"| value Eliom_shared_sigs.S.value >> ~[<<a_api subproject="client" | module Eliom_shared_sigs.S >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="value_s"| value Eliom_shared_sigs.RLIST.value_s >> ~[<<a_api subproject="client" | module Eliom_shared_sigs.RLIST >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="verticalAlign"| value Eliom_content.Html5.Manip.SetCss.verticalAlign >> ~[<<a_api subproject="client" | module Eliom_content.Html5.Manip.SetCss >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="verticalAlign"| value Eliom_content.Html5.Manip.Css.verticalAlign >> ~[<<a_api subproject="client" | module Eliom_content.Html5.Manip.Css >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="visibility"| value Eliom_content.Html5.Manip.SetCss.visibility >> ~[<<a_api subproject="client" | module Eliom_content.Html5.Manip.SetCss >>~]||
