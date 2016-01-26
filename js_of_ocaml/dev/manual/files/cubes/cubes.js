@@ -6155,12 +6155,12 @@
                    /*<<js.ml 451 18>>*/ caml_js_to_string_bu_
                    ( /*<<js.ml 451 29>>*/ jsoo_self_a_.toString())] /*<<js.ml 451 44>>*/ });
     var
-      /*<<dom_html.ml 889 11>>*/ jsoo_ebd11ba6_ch_="2d",
-      /*<<dom_html.ml 1232 15>>*/ Canvas_not_available_fY_=
-       /*<<dom_html.ml 1232 15>>*/ caml_set_oo_id_R_([num_248_a_,_fX_,0]);
-     /*<<dom_html.ml 1422 23>>*/ window_Y_.HTMLElement===undefined_fT_;
+      /*<<dom_html.ml 890 11>>*/ jsoo_ebd11ba6_ch_="2d",
+      /*<<dom_html.ml 1233 15>>*/ Canvas_not_available_fY_=
+       /*<<dom_html.ml 1233 15>>*/ caml_set_oo_id_R_([num_248_a_,_fX_,0]);
+     /*<<dom_html.ml 1423 23>>*/ window_Y_.HTMLElement===undefined_fT_;
     var
-      /*<<dom_html.ml 1849 54>>*/ _fZ_=num_2147483e3_bp_,
+      /*<<dom_html.ml 1850 54>>*/ _fZ_=num_2147483e3_bp_,
       /*<<firebug.ml 78 14>>*/ jsoo_self_f0_=
        /*<<firebug.ml 78 14>>*/ caml_js_get_console_gu_(0);
      /*<<src/core/lwt.ml 1201 32>>*/ pause_hook_fQ_[1]=
@@ -6459,19 +6459,19 @@
                           /*<<cubes.ml 128 2>>*/ return 0}}}}}} /*<<cubes.ml 151 6>>*/ },
         /*<<cubes.ml 64 30>>*/ create_canvas_ck_=
         function(param_a_)
-         { /*<<dom_html.ml 1280 44>>*/ var
+         { /*<<dom_html.ml 1281 44>>*/ var
            c_b_=
-             /*<<dom_html.ml 1280 44>>*/ window_Y_.document.createElement
+             /*<<dom_html.ml 1281 44>>*/ window_Y_.document.createElement
              ("canvas");
-           /*<<dom_html.ml 1415 32>>*/ if
-           ( /*<<dom_html.ml 1415 10>>*/ _cf_(c_b_.getContext))
+           /*<<dom_html.ml 1416 32>>*/ if
+           ( /*<<dom_html.ml 1416 10>>*/ _cf_(c_b_.getContext))
            { /*<<cubes.ml 156 2>>*/ c_b_.width=
             (24*(jsoo_d761558f_n_|0)|0)+
             1|
             0;
              /*<<cubes.ml 157 2>>*/ c_b_.height=(24*20|0)+1|0;
              /*<<cubes.ml 158 2>>*/ return c_b_}
-           /*<<dom_html.ml 1415 65>>*/ throw Canvas_not_available_fY_ /*<<cubes.ml 158 3>>*/ },
+           /*<<dom_html.ml 1416 65>>*/ throw Canvas_not_available_fY_ /*<<cubes.ml 158 3>>*/ },
         /*<<cubes.ml 64 30>>*/ redraw_cl_=
         function(jsoo_self_a_,jsoo_b9bde2df_b_,a_c_)
          { /*<<cubes.ml 161 10>>*/ var
@@ -6584,37 +6584,37 @@
           var
             /*<<src/core/lwt.ml 565 18>>*/ t_f_=[0,[2,[0,1,0,0,0]]],
             /*<<lwt_js.ml 23 2>>*/ d_y_=0.2*num_1e3_bk_,
-            /*<<dom_html.ml 1868 2>>*/ id_h_=[0,0];
+            /*<<dom_html.ml 1869 2>>*/ id_h_=[0,0];
            /*<<lwt_js.ml 23 32>>*/ function callback_z_(_a_)
            { /*<<?>>*/ return wakeup_cc_(t_f_,_a_)}
-           /*<<dom_html.ml 1869 2>>*/ function loop_p_(d_a_,param_b_)
+           /*<<dom_html.ml 1870 2>>*/ function loop_p_(d_a_,param_b_)
            {var
-              /*<<dom_html.ml 1870 4>>*/ match_c_=
+              /*<<dom_html.ml 1871 4>>*/ match_c_=
               num_2147483e3_bp_<d_a_
                ?[0,_fZ_,d_a_-num_2147483e3_bp_]
                :[0,d_a_,0],
              remain_d_=match_c_[2],
              step_e_=match_c_[1],
-              /*<<dom_html.ml 1874 4>>*/ cb_f_=
+              /*<<dom_html.ml 1875 4>>*/ cb_f_=
               remain_d_==0
                ?callback_z_
                :function(_a_){ /*<<?>>*/ return loop_p_(remain_d_,_a_)};
-             /*<<dom_html.ml 1878 16>>*/ id_h_[1]=
+             /*<<dom_html.ml 1879 16>>*/ id_h_[1]=
             [0,
-              /*<<dom_html.ml 1878 16>>*/ window_Y_.setTimeout
-              ( /*<<dom_html.ml 1878 4>>*/ caml_js_wrap_callback_db_(cb_f_),
+              /*<<dom_html.ml 1879 16>>*/ window_Y_.setTimeout
+              ( /*<<dom_html.ml 1879 4>>*/ caml_js_wrap_callback_db_(cb_f_),
                step_e_)];
-             /*<<dom_html.ml 1878 16>>*/ return 0 /*<<dom_html.ml 1878 63>>*/ }
-           /*<<dom_html.ml 1880 2>>*/  /*<<dom_html.ml 1880 2>>*/ loop_p_
+             /*<<dom_html.ml 1879 16>>*/ return 0 /*<<dom_html.ml 1879 63>>*/ }
+           /*<<dom_html.ml 1881 2>>*/  /*<<dom_html.ml 1881 2>>*/ loop_p_
            (d_y_,0);
            /*<<lwt_js.ml 24 2>>*/ function f_r_(param_a_)
-           { /*<<dom_html.ml 1884 2>>*/ var _b_=id_h_[1];
-             /*<<dom_html.ml 1884 2>>*/ if(_b_)
-             { /*<<dom_html.ml 1887 5>>*/ var x_c_=_b_[1];
-               /*<<dom_html.ml 1887 5>>*/ id_h_[1]=0;
-               /*<<dom_html.ml 1888 5>>*/ return  /*<<dom_html.ml 1888 5>>*/ window_Y_.clearTimeout
+           { /*<<dom_html.ml 1885 2>>*/ var _b_=id_h_[1];
+             /*<<dom_html.ml 1885 2>>*/ if(_b_)
+             { /*<<dom_html.ml 1888 5>>*/ var x_c_=_b_[1];
+               /*<<dom_html.ml 1888 5>>*/ id_h_[1]=0;
+               /*<<dom_html.ml 1889 5>>*/ return  /*<<dom_html.ml 1889 5>>*/ window_Y_.clearTimeout
                       (x_c_)}
-             /*<<dom_html.ml 1885 12>>*/ return 0 /*<<lwt_js.ml 24 53>>*/ }
+             /*<<dom_html.ml 1886 12>>*/ return 0 /*<<lwt_js.ml 24 53>>*/ }
            /*<<src/core/lwt.ml 628 16>>*/ var
            _g_=
              /*<<src/core/lwt.ml 628 8>>*/ repr_au_(t_f_)[1];

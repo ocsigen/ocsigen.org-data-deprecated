@@ -595,7 +595,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="clearStencil"| method WebGL.renderingContext#clearStencil >> ~[<<a_api | module WebGL >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="clearTimeout"| method Dom_html.window#clearTimeout >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="clearWatch"| method Geolocation.geolocation#clearWatch >> ~[<<a_api | module Geolocation >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="click"| method Dom_html.inputElement#click >> ~[<<a_api | module Dom_html >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="click"| method Dom_html.element#click >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="clientHeight"| method Dom_html.element#clientHeight >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="clientLeft"| method Dom_html.element#clientLeft >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="clientTop"| method Dom_html.element#clientTop >> ~[<<a_api | module Dom_html >>~]||

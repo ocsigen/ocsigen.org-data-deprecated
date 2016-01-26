@@ -6350,42 +6350,42 @@
       /*<<dom_html.ml 25 40>>*/ onIE_c1_=
        /*<<dom_html.ml 25 24>>*/ caml_js_on_ie_iF_(0)|
       0,
-      /*<<dom_html.ml 1232 15>>*/ document_a8_=window_c_.document,
+      /*<<dom_html.ml 1233 15>>*/ document_a8_=window_c_.document,
       /*<<typed_array.ml 28 2>>*/ arrayBuffer_gU_=window_c_.ArrayBuffer,
       /*<<typed_array.ml 92 19>>*/ jsoo_6c9ec695_gV_=window_c_.Float32Array;
-     /*<<dom_html.ml 1232 15>>*/  /*<<dom_html.ml 1232 15>>*/ caml_set_oo_id_H_
+     /*<<dom_html.ml 1233 15>>*/  /*<<dom_html.ml 1233 15>>*/ caml_set_oo_id_H_
      ([num_248_a_,_gW_,0]);
     var
-      /*<<dom_html.ml 1418 42>>*/ html_element_c2_=window_c_.HTMLElement,
-      /*<<dom_html.ml 1422 23>>*/ _gX_=
+      /*<<dom_html.ml 1419 42>>*/ html_element_c2_=window_c_.HTMLElement,
+      /*<<dom_html.ml 1423 23>>*/ _gX_=
       html_element_c2_===undefined_ad_
        ?function(e_a_)
-         { /*<<dom_html.ml 1426 41>>*/ return e_a_.innerHTML===undefined_ad_
+         { /*<<dom_html.ml 1427 41>>*/ return e_a_.innerHTML===undefined_ad_
                   ?jsoo_264a17d7_y_
-                  :e_a_ /*<<dom_html.ml 1428 34>>*/ }
+                  :e_a_ /*<<dom_html.ml 1429 34>>*/ }
        :function(e_a_)
-         { /*<<dom_html.ml 1431 32>>*/ return e_a_ instanceof html_element_c2_
+         { /*<<dom_html.ml 1432 32>>*/ return e_a_ instanceof html_element_c2_
                   ?e_a_
-                  :jsoo_264a17d7_y_ /*<<dom_html.ml 1433 13>>*/ };
+                  :jsoo_264a17d7_y_ /*<<dom_html.ml 1434 13>>*/ };
     function _c3_(tag_a_,e_b_)
-     { /*<<dom_html.ml 1436 36>>*/ var
+     { /*<<dom_html.ml 1437 36>>*/ var
        _c_=
-         /*<<dom_html.ml 1436 36>>*/ tag_a_.toString();
-       /*<<dom_html.ml 1436 7>>*/ return  /*<<dom_html.ml 1436 7>>*/ e_b_.tagName.toLowerCase
+         /*<<dom_html.ml 1437 36>>*/ tag_a_.toString();
+       /*<<dom_html.ml 1437 7>>*/ return  /*<<dom_html.ml 1437 7>>*/ e_b_.tagName.toLowerCase
                ()===
               _c_
               ?e_b_
-              :jsoo_264a17d7_y_ /*<<dom_html.ml 1439 13>>*/ }
+              :jsoo_264a17d7_y_ /*<<dom_html.ml 1440 13>>*/ }
     function _gY_(e_a_)
-     { /*<<dom_html.ml 1447 18>>*/ return  /*<<dom_html.ml 1447 18>>*/ _c3_
-              (_gZ_,e_a_) /*<<dom_html.ml 1447 41>>*/ }
+     { /*<<dom_html.ml 1448 18>>*/ return  /*<<dom_html.ml 1448 18>>*/ _c3_
+              (_gZ_,e_a_) /*<<dom_html.ml 1448 41>>*/ }
     function _g0_(e_a_)
-     { /*<<dom_html.ml 1486 17>>*/ return  /*<<dom_html.ml 1486 17>>*/ _c3_
-              (_g1_,e_a_) /*<<dom_html.ml 1486 40>>*/ }
+     { /*<<dom_html.ml 1487 17>>*/ return  /*<<dom_html.ml 1487 17>>*/ _c3_
+              (_g1_,e_a_) /*<<dom_html.ml 1487 40>>*/ }
     var
       /*<<firebug.ml 78 14>>*/ jsoo_self_bN_=
        /*<<firebug.ml 78 14>>*/ caml_js_get_console_iE_(0),
-      /*<<dom_html.ml 1849 54>>*/ _g2_=num_2147483e3_b4_,
+      /*<<dom_html.ml 1850 54>>*/ _g2_=num_2147483e3_b4_,
       /*<<file.ml 56 18>>*/ blob_constr_g3_=window_c_.Blob,
       /*<<file.ml 58 17>>*/ doc_constr_g4_=window_c_.Document;
      /*<<src/core/lwt.ml 1201 32>>*/ pause_hook_gQ_[1]=
@@ -7513,37 +7513,37 @@
           /*<<lwt_js.ml 22 26>>*/ t_q_=match_p_[1],
           /*<<lwt_js.ml 22 26>>*/ w_A_=match_p_[2],
           /*<<lwt_js.ml 23 2>>*/ d_B_=0.02*num_1e3_aV_,
-          /*<<dom_html.ml 1868 2>>*/ id_i_=[0,0];
+          /*<<dom_html.ml 1869 2>>*/ id_i_=[0,0];
          /*<<lwt_js.ml 23 32>>*/ function callback_C_(_a_)
          { /*<<?>>*/ return wakeup_bC_(w_A_,_a_)}
-         /*<<dom_html.ml 1869 2>>*/ function loop_o_(d_a_,param_b_)
+         /*<<dom_html.ml 1870 2>>*/ function loop_o_(d_a_,param_b_)
          {var
-            /*<<dom_html.ml 1870 4>>*/ match_d_=
+            /*<<dom_html.ml 1871 4>>*/ match_d_=
             num_2147483e3_b4_<d_a_?[0,_g2_,d_a_-num_2147483e3_b4_]:[0,d_a_,0],
            remain_e_=match_d_[2],
            step_f_=match_d_[1],
-            /*<<dom_html.ml 1874 4>>*/ cb_g_=
+            /*<<dom_html.ml 1875 4>>*/ cb_g_=
             remain_e_==0
              ?callback_C_
              :function(_a_){ /*<<?>>*/ return loop_o_(remain_e_,_a_)};
-           /*<<dom_html.ml 1878 16>>*/ id_i_[1]=
+           /*<<dom_html.ml 1879 16>>*/ id_i_[1]=
           [0,
-            /*<<dom_html.ml 1878 16>>*/ window_c_.setTimeout
-            ( /*<<dom_html.ml 1878 4>>*/ caml_js_wrap_callback_b__(cb_g_),
+            /*<<dom_html.ml 1879 16>>*/ window_c_.setTimeout
+            ( /*<<dom_html.ml 1879 4>>*/ caml_js_wrap_callback_b__(cb_g_),
              step_f_)];
-           /*<<dom_html.ml 1878 16>>*/ return 0 /*<<dom_html.ml 1878 63>>*/ }
-         /*<<dom_html.ml 1880 2>>*/  /*<<dom_html.ml 1880 2>>*/ loop_o_
+           /*<<dom_html.ml 1879 16>>*/ return 0 /*<<dom_html.ml 1879 63>>*/ }
+         /*<<dom_html.ml 1881 2>>*/  /*<<dom_html.ml 1881 2>>*/ loop_o_
          (d_B_,0);
          /*<<lwt_js.ml 24 2>>*/  /*<<lwt_js.ml 24 2>>*/ on_cancel_cQ_
          (t_q_,
           function(param_a_)
-           { /*<<dom_html.ml 1884 2>>*/ var _b_=id_i_[1];
-             /*<<dom_html.ml 1884 2>>*/ if(_b_)
-             { /*<<dom_html.ml 1887 5>>*/ var x_d_=_b_[1];
-               /*<<dom_html.ml 1887 5>>*/ id_i_[1]=0;
-               /*<<dom_html.ml 1888 5>>*/ return  /*<<dom_html.ml 1888 5>>*/ window_c_.clearTimeout
+           { /*<<dom_html.ml 1885 2>>*/ var _b_=id_i_[1];
+             /*<<dom_html.ml 1885 2>>*/ if(_b_)
+             { /*<<dom_html.ml 1888 5>>*/ var x_d_=_b_[1];
+               /*<<dom_html.ml 1888 5>>*/ id_i_[1]=0;
+               /*<<dom_html.ml 1889 5>>*/ return  /*<<dom_html.ml 1889 5>>*/ window_c_.clearTimeout
                       (x_d_)}
-             /*<<dom_html.ml 1885 12>>*/ return 0 /*<<lwt_js.ml 24 53>>*/ });
+             /*<<dom_html.ml 1886 12>>*/ return 0 /*<<lwt_js.ml 24 53>>*/ });
          /*<<webgldemo.ml 299 21>>*/ return  /*<<webgldemo.ml 299 21>>*/ _bH_
                 (t_q_,f_v_) /*<<webgldemo.ml 299 27>>*/ }
        /*<<webgldemo.ml 301 2>>*/ return  /*<<webgldemo.ml 301 2>>*/ f_v_(0) /*<<webgldemo.ml 301 6>>*/ }
