@@ -1105,10 +1105,6 @@
     path to <<span class="odocwiki_inlinecode"|dest>> that is relative to <<span class="odocwiki_inlinecode"|src>>~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="register_unwrapper"| value Eliom_unwrap.register_unwrapper >> ~[<<a_api subproject="client" | module Eliom_unwrap >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|register~_unwrapper id f>> register an unwrapping function <<span class="odocwiki_inlinecode"|f>> to
-    be called when a value is marked with the id <<span class="odocwiki_inlinecode"|id>>
->>
-|
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="remove"| value Eliom_content.Html5.Manip.Class.remove >> ~[<<a_api subproject="client" | module Eliom_content.Html5.Manip.Class >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="remove"| value Eliom_content.Svg.Manip.Class.remove >> ~[<<a_api subproject="client" | module Eliom_content.Svg.Manip.Class >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="removeChild"| value Eliom_content.Html5.Manip.Named.removeChild >> ~[<<a_api subproject="client" | module Eliom_content.Html5.Manip.Named >>~]|<<div class="odocwiki_info"|see <<span class="odocwiki_inlinecode"|remove~Child>>
@@ -1329,8 +1325,7 @@
 |@@ @style="tet-align: left;"@@\\U|
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="unit"| value Eliom_parameter.unit >> ~[<<a_api subproject="client" | module Eliom_parameter >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="unmarshal_js"| value Eliom_lib.unmarshal_js >> ~[<<a_api subproject="client" | module Eliom_lib >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="unwrap_js"| value Eliom_unwrap.unwrap_js >> ~[<<a_api subproject="client" | module Eliom_unwrap >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|unwrap~_js~_var v>> execute <<span class="odocwiki_inlinecode"|unwrap>> on the content of the javascript
-    variable <<span class="odocwiki_inlinecode"|v>>
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="unwrap_js"| value Eliom_unwrap.unwrap_js >> ~[<<a_api subproject="client" | module Eliom_unwrap >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|unwrap~_js v>> unwraps the content of the ~Java~Script variable <<span class="odocwiki_inlinecode"|v>>
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="uri_attrib"| value Eliom_content_core.Xml_wed.uri_attrib >> ~[<<a_api subproject="client" | module Eliom_content_core.Xml_wed >>~]||
