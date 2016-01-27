@@ -1,5 +1,5 @@
 <<code language="ocaml" | sig
-  type uploader = Ow_pic_uploader.t
+  type uploader = unit Ow_pic_uploader.t
   val uploader : string list -> Eba_userbox.uploader
   val connected_user_box :
     Eba_user.t ->

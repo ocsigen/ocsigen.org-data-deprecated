@@ -1,1 +1,1 @@
-<<code language="ocaml" | sig val msg : ?level:[ `Err | `Msg ] -> string -> unit end >>
+<<code language="ocaml" | sig  end >>

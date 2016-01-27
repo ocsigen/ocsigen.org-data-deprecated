@@ -1,5 +1,5 @@
 <<code language="ocaml" | sig
-  val msg : ?level:[ `Err | `Msg ] -> string -> unit
+  val msg : ?level:[ `Err | `Msg ] -> ?duration:float -> string -> unit
   val activation_key_created : bool Eliom_reference.Volatile.eref
   val wrong_pdata :
     ((string * string) * (string * string)) option

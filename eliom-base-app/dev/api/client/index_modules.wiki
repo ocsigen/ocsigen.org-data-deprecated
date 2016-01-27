@@ -1,37 +1,14 @@
 =Index of modules=
 
-|@@ @style="tet-align: left;"@@\\D|
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Default_config"| module Eba_page.Default_config >> ~[<<a_api subproject="client" | module Eba_page >>~]||
 |@@ @style="tet-align: left;"@@\\E|
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Eba_date"| module Eba_date >> ||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Eba_email"| module Eba_email >> ||
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Eba_msg"| module Eba_msg >> |<<div class="odocwiki_info"|~Call this function either from client or server side
-    to display an error message in the page~.
->>
-|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Eba_msg"| module Eba_msg >> ||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Eba_notif"| module Eba_notif >> ||
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Eba_page"| module Eba_page >> |<<div class="odocwiki_info"|~Functor defining wrappers for services handlers returning pages~.
->>
-|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Eba_page"| module Eba_page >> ||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Eba_request_cache"| module Eba_request_cache >> ||
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Eba_session"| module Eba_session >> |<<div class="odocwiki_info"|~Wrapper for service handlers that fetches automatically connection
-    information~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Eba_tips"| module Eba_tips >> |<<div class="odocwiki_info"|~Display tips in pages~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Eba_user"| module Eba_user >> |<<div class="odocwiki_info"|~The type which represents a user~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Eba_userbox"| module Eba_userbox >> |<<div class="odocwiki_info"|~Box for connected users~, with picture~, name~, and menu
->>
-|
-|@@ @style="tet-align: left;"@@\\J|
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Json_t"| module Eba_user.Json_t >> ~[<<a_api subproject="client" | module Eba_user >>~]||
-|@@ @style="tet-align: left;"@@\\M|
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Make"| module Eba_page.Make >> ~[<<a_api subproject="client" | module Eba_page >>~]||
-|@@ @style="tet-align: left;"@@\\O|
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Opt"| module Eba_session.Opt >> ~[<<a_api subproject="client" | module Eba_session >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Opt"| module Eba_page.Make.Opt >> ~[<<a_api subproject="client" | module Eba_page.Make >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Eba_session"| module Eba_session >> ||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Eba_tips"| module Eba_tips >> ||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Eba_user"| module Eba_user >> ||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Eba_userbox"| module Eba_userbox >> ||
 \\

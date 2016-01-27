@@ -3,5 +3,7 @@
 |@@ @style="tet-align: left;"@@\\C|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Cache_sig"| module type Eba_request_cache.Cache_sig >> ~[<<a_api subproject="server" | module Eba_request_cache >>~]||
 |@@ @style="tet-align: left;"@@\\P|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="PAGE"| module type Eba_page.PAGE >> ~[<<a_api subproject="server" | module Eba_page >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="PAGE"| module type Eba_page.PAGE >> ~[<<a_api subproject="server" | module Eba_page >>~]|<<div class="odocwiki_info"|~The signature of the module to be given as parameter to the functor~.
+>>
+|
 \\
