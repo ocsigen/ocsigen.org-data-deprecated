@@ -1,6 +1,0 @@
-<<code language="ocaml" | sig
-  type event = Ow_alert.alert_event Js.t Dom.Event.typ
-  module S : sig val show : string val hide : string end
-  val show : Ow_alert.Event.event
-  val hide : Ow_alert.Event.event
-end >>

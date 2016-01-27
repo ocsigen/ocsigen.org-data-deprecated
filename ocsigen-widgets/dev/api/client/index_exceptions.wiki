@@ -1,7 +1,3 @@
 =Index of exceptions=
 
-|@@ @style="tet-align: left;"@@\\C|
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Close_button_not_in_alert"| exception Ow_alert.Close_button_not_in_alert >> ~[<<a_api subproject="client" | module Ow_alert >>~]|<<div class="odocwiki_info"|~Exception thrown if a <<span class="odocwiki_inlinecode"|closeable>> button do not find his parent~.
->>
-|
 \\

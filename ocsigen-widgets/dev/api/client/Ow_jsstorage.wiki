@@ -1,10 +1,3 @@
 =Module <<a_api_type subproject="client" | module Ow_jsstorage >> =
-<<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module>> <<span class="ocsforge_color_uid"|<<span class="ocsforge_color_uid"|Ow_jsstorage>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="ocsforge_color_keyword"|sig>><<a_api subproject="client" text=".." | module Ow_jsstorage >><<span class="ocsforge_color_keyword"|end>>>>~Allow to store informations on the client~.
-**Author(s):** : Arnaud Parant\\
-
+<<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module>> <<span class="ocsforge_color_uid"|<<span class="ocsforge_color_uid"|Ow_jsstorage>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="ocsforge_color_keyword"|sig>><<a_api subproject="client" text=".." | module Ow_jsstorage >><<span class="ocsforge_color_keyword"|end>>>>
 ----
-
-~Allow to store informations on the client~.
-<<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module type>> <<a_api subproject="client" text="JSSTORAGE" | module type Ow_jsstorage.JSSTORAGE >> <<span class="ocsforge_color_delimiter"|~=>> <<span class="ocsforge_color_keyword"|sig>><<a_api subproject="client" text=".." | module type Ow_jsstorage.JSSTORAGE >><<span class="ocsforge_color_keyword"|end>>>><<div class="odocwiki_info"|~Generic signature for storage on the client side~.
->>
-<<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module>> <<a_api subproject="client" text="SessionStorage" | module Ow_jsstorage.SessionStorage >> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<a_api subproject="client" text="JSSTORAGE" | module Ow_jsstorage.JSSTORAGE >>>><<span class="odocwiki_type"|>>>><<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module>> <<a_api subproject="client" text="LocalStorage" | module Ow_jsstorage.LocalStorage >> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<a_api subproject="client" text="JSSTORAGE" | module Ow_jsstorage.JSSTORAGE >>>><<span class="odocwiki_type"|>>>>

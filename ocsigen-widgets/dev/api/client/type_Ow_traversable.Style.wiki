@@ -1,5 +1,0 @@
-<<code language="ocaml" | sig
-  val traversable_cls : string
-  val traversable_elt_cls : string
-  val selected_cls : string
-end >>

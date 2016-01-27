@@ -23,11 +23,4 @@
 ===[[client/Ow_sliderbar|Ow_sliderbar]]
 ===[[client/Ow_slider|Ow_slider]]
 ==~Index
-=== <<a_api subproject="client" text="Index of types" | index types >>
-=== <<a_api subproject="client" text="Index of exceptions" | index exceptions >>
-=== <<a_api subproject="client" text="Index of values" | index values >>
-=== <<a_api subproject="client" text="Index of class methods" | index methods >>
-=== <<a_api subproject="client" text="Index of classes" | index classes >>
-=== <<a_api subproject="client" text="Index of class types" | index class types >>
 === <<a_api subproject="client" text="Index of modules" | index modules >>
-=== <<a_api subproject="client" text="Index of module types" | index module types >>

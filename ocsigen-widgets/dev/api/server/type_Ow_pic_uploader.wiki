@@ -1,5 +1,5 @@
 <<code language="ocaml" | sig
-  type t
+  type 'data t
   type crop_type = string * (float * float * float * float)
   val make :
     directory:string list ->
@@ -9,9 +9,10 @@
     ?max_height:int ->
     ?service_wrapper:((Ocsigen_extensions.file_info -> string Lwt.t) ->
                       Eliom_lib.file_info -> string Lwt.t) ->
-    ?crop_wrapper:((Ow_pic_uploader.crop_type -> string Lwt.t) ->
-                   Ow_pic_uploader.crop_type -> unit Lwt.t) ->
-    unit -> Ow_pic_uploader.t
+    ?crop_wrapper:((Ow_pic_uploader.crop_type * 'data -> string Lwt.t) ->
+                   Ow_pic_uploader.crop_type * 'data -> unit Lwt.t) ->
+    data_deriver:(Ow_pic_uploader.crop_type * 'data) Deriving_Json.t ->
+    unit -> 'data Ow_pic_uploader.t
   val upload_pic_form :
     ?send:string ->
     ?crop:string ->
@@ -19,10 +20,10 @@
     ?fit_in_box:([ `Div ] Eliom_content.Html5.D.elt ->
                  int option * int option)
                 Eliom_pervasives.client_value ->
-    Ow_pic_uploader.t ->
+    'data Ow_pic_uploader.t ->
     url_path:string list ->
     text:string ->
     on_error:(exn -> unit Lwt.t) ->
     continuation:(string -> unit Lwt.t) ->
-    unit -> [ `Div ] Eliom_content.Html5.D.elt
+    'data -> [ `Div ] Eliom_content.Html5.D.elt
 end >>

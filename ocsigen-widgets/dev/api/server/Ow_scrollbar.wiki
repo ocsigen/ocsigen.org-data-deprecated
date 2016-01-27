@@ -1,3 +1,39 @@
 =Module <<a_api_type subproject="server" | module Ow_scrollbar >> =
-<<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module>> <<span class="ocsforge_color_uid"|<<span class="ocsforge_color_uid"|Ow_scrollbar>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="ocsforge_color_keyword"|sig>><<a_api subproject="server" text=".." | module Ow_scrollbar >><<span class="ocsforge_color_keyword"|end>>>>
+<<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module>> <<span class="ocsforge_color_uid"|<<span class="ocsforge_color_uid"|Ow_scrollbar>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="ocsforge_color_keyword"|sig>><<a_api subproject="server" text=".." | module Ow_scrollbar >><<span class="ocsforge_color_keyword"|end>>>>~Scrollbar module~.
+
+
+      ~Allow to add customizable scrollbars to your pages~.
+      ~To use it~, you must include the original js file~, and j~Query to your page~.
+
+
+      ~Binding of the ~J~S custom scrollbar by ~Manos ~Malihutsakis
+**Author(s):** Christophe Lecointe\\
+**See also** [[ http://manos.malihu.gr/jquery-custom-content-scroller/ |~Scrollbar of ~Manos ~Malihutsakis]]\\
+
 ----
+
+~Describe where the dragger should scroll to~.
+      <<span class="odocwiki_inlinecode"|~Bottom>> and <<span class="odocwiki_inlinecode"|~Top>> are for vertical scrollbars~, <<span class="odocwiki_inlinecode"|~Left>> and <<span class="odocwiki_inlinecode"|~Right>> for
+      horizontal ones~.
+
+~This function adds a custom scrollbar to the element <<span class="odocwiki_inlinecode"|elt>>~. ~There are
+      several optionnal callbacks that you can add at construction~, but you can
+      also add them later~.
+
+~Return the position of the dragger~. ~The position is updated only
+      when the dragger has finished its movement~. ~Thus~, if you call it while the
+      dragger is moving~, the position returned will be the position of the
+      dragger before the scroll
+
+~Return the position of the dragger in the bar in percent~.
+      ~As <<span class="odocwiki_inlinecode"|get~_dragger~_pos>>~, the position is only updated when the dragger has finished its movement~.
+
+~Scroll the scrollbar attached to <<span class="odocwiki_inlinecode"|elt>> to a point defined by <<span class="odocwiki_inlinecode"|scroll>>~.
+      ~It returns a thread which end when the scrolling is done ~(immediately if inertia is deactivated~)~.
+
+~Update the scrollbar~.
+      ~You should call this function each time the content of the element the scrollbar is attached to is changed~.
+
+~Add a function to the list of callbacks executed before a scroll~.
+
+~Add a function to the list of callbacks executed after a scroll~.

@@ -1,5 +1,0 @@
-<<code language="ocaml" | sig
-  val spinner :
-    ?a:Html5_types.i_attrib Eliom_content.Html5.attrib list ->
-    unit -> [> Html5_types.i ] Eliom_content.Html5.F.elt
-end >>

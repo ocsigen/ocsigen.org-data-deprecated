@@ -1,6 +1,1 @@
-<<code language="ocaml" | sig
-  val add_slider :
-    ?vertical:bool -> ?slide:(unit -> unit) -> Dom_html.element Js.t -> unit
-  val get_value : Dom_html.element Js.t -> int
-  val on_slide : Dom_html.element Js.t -> (unit -> unit) -> 'a Lwt.t
-end >>
+<<code language="ocaml" | sig  end >>

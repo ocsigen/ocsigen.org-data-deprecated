@@ -1,3 +1,15 @@
 =Module <<a_api_type subproject="server" | module Ow_sliderbar >> =
-<<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module>> <<span class="ocsforge_color_uid"|<<span class="ocsforge_color_uid"|Ow_sliderbar>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="ocsforge_color_keyword"|sig>><<a_api subproject="server" text=".." | module Ow_sliderbar >><<span class="ocsforge_color_keyword"|end>>>>
+<<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module>> <<span class="ocsforge_color_uid"|<<span class="ocsforge_color_uid"|Ow_sliderbar>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="ocsforge_color_keyword"|sig>><<a_api subproject="server" text=".." | module Ow_sliderbar >><<span class="ocsforge_color_keyword"|end>>>>~Binding of the j~Query~_ui slider for ocaml~.
+
+
+      ~To use it~, you must include jquery~-ui~.js and jquery~-~1~.~9~.~1~.js
+**Author(s):** Christophe Lecointe\\
+**See also** [[ http://api.jqueryui.com/slider/ |~J~Query~U~I slider~.]]\\
+
 ----
+
+~Add a slider to the given element~.
+
+~Return the value of the slider~.
+
+~Replace the callback function done on slides~.

@@ -1,3 +1,15 @@
 =Module <<a_api_type subproject="server" | module Ow_jcrop >> =
-<<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module>> <<span class="ocsforge_color_uid"|<<span class="ocsforge_color_uid"|Ow_jcrop>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="ocsforge_color_keyword"|sig>><<a_api subproject="server" text=".." | module Ow_jcrop >><<span class="ocsforge_color_keyword"|end>>>>
+<<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module>> <<span class="ocsforge_color_uid"|<<span class="ocsforge_color_uid"|Ow_jcrop>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="ocsforge_color_keyword"|sig>><<a_api subproject="server" text=".." | module Ow_jcrop >><<span class="ocsforge_color_keyword"|end>>>>~Binding to ~Jcrop~, a ~J~Query croping tool~.
+**Author(s):** Charly Chevalier\\
+**See also** [[ http://github.com/tapmodo/Jcrop |~Jcrop]]\\
+
 ----
+
+~Types used to constraint usage of parameters of ~Jcrop~'s callbacks
+
+~Jcrop gives you crop tools to redefine an ~<img~> tag~. ~You have to pass~.
+      this image as parameter to apply tools on it~.
+
+
+      ~There are some parameters to configure the tools~. ~(description come from
+      the original website~)~:

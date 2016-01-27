@@ -1,4 +1,37 @@
 =Module <<a_api_type subproject="server" | module Ow_position >> =
-<<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module>> <<span class="ocsforge_color_uid"|<<span class="ocsforge_color_uid"|Ow_position>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="ocsforge_color_keyword"|sig>><<a_api subproject="server" text=".." | module Ow_position >><<span class="ocsforge_color_keyword"|end>>>>
+<<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module>> <<span class="ocsforge_color_uid"|<<span class="ocsforge_color_uid"|Ow_position>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="ocsforge_color_keyword"|sig>><<a_api subproject="server" text=".." | module Ow_position >><<span class="ocsforge_color_keyword"|end>>>>~Positions helper for javascript elements
+
+
+    ~This module provides some helpers to get coordinates or move element
+    next to each others~.
+**Author(s):** Charly Chevalier\\
+
 ----
-<<pre class="ocsforge_color odocwiki_code" id="TYPEposition'"|<<span class="ocsforge_color_keyword"|type>> <<span class="odocwiki_name"|position~'>> <<span class="ocsforge_color_delimiter"|~=>> <<span class="odocwiki_type"|[ `absolute | `fixed ]>> >><<pre class="ocsforge_color odocwiki_code" id="TYPEcommon_orientation'"|<<span class="ocsforge_color_keyword"|type>> <<span class="odocwiki_name"|common~_orientation~'>> <<span class="ocsforge_color_delimiter"|~=>> <<span class="odocwiki_type"|[ `center ]>> >><<pre class="ocsforge_color odocwiki_code" id="TYPEh_orientation'"|<<span class="ocsforge_color_keyword"|type>> <<span class="odocwiki_name"|h~_orientation~'>> <<span class="ocsforge_color_delimiter"|~=>> <<span class="odocwiki_type"|[ `center | `left | `right ]>> >><<pre class="ocsforge_color odocwiki_code" id="TYPEv_orientation'"|<<span class="ocsforge_color_keyword"|type>> <<span class="odocwiki_name"|v~_orientation~'>> <<span class="ocsforge_color_delimiter"|~=>> <<span class="odocwiki_type"|[ `bottom | `center | `top ]>> >>
+<<pre class="ocsforge_color odocwiki_code" id="TYPEposition'"|<<span class="ocsforge_color_keyword"|type>> <<span class="odocwiki_name"|position~'>> <<span class="ocsforge_color_delimiter"|~=>> <<span class="odocwiki_type"|[ `absolute | `fixed ]>> >><<div class="odocwiki_info"|~The type to determin the value of the position attribute of the javascript
+      element~.
+>>
+<<pre class="ocsforge_color odocwiki_code" id="TYPEcommon_orientation'"|<<span class="ocsforge_color_keyword"|type>> <<span class="odocwiki_name"|common~_orientation~'>> <<span class="ocsforge_color_delimiter"|~=>> <<span class="odocwiki_type"|[ `center ]>> >><<div class="odocwiki_info"|~The type used by vertical and horizontal orientation
+>>
+<<pre class="ocsforge_color odocwiki_code" id="TYPEh_orientation'"|<<span class="ocsforge_color_keyword"|type>> <<span class="odocwiki_name"|h~_orientation~'>> <<span class="ocsforge_color_delimiter"|~=>> <<span class="odocwiki_type"|[ `center | `left | `right ]>> >><<div class="odocwiki_info"|~The type for horizontal orientation~.
+>>
+<<pre class="ocsforge_color odocwiki_code" id="TYPEv_orientation'"|<<span class="ocsforge_color_keyword"|type>> <<span class="odocwiki_name"|v~_orientation~'>> <<span class="ocsforge_color_delimiter"|~=>> <<span class="odocwiki_type"|[ `bottom | `center | `top ]>> >><<div class="odocwiki_info"|~The type for vertical orientation~.
+>>
+
+<<span class="odocwiki_inlinecode"|relative~_coord ~?h ~?v ~~relative elt>> try to calculate the
+      coordinates of <<span class="odocwiki_inlinecode"|elt>> applying the directions <<span class="odocwiki_inlinecode"|h>> and <<span class="odocwiki_inlinecode"|v>> on it and using
+      <<span class="odocwiki_inlinecode"|relative>> as a reference~. **<<span class="odocwiki_inlinecode"|elt>> will be placed outside of <<span class="odocwiki_inlinecode"|relative>>~.**
+
+
+      ~If the given orientation move <<span class="odocwiki_inlinecode"|elt>> out of screen~, the orientation is flip
+      to the opposite~.
+
+<<span class="odocwiki_inlinecode"|relative~_move ~?h ~?v ~~relative elt>> same as <<span class="odocwiki_inlinecode"|relative~_coord>>~, but instead
+      of returning coordinates~, it moves directly <<span class="odocwiki_inlinecode"|elt>> to the calculated
+      coordinates~.
+
+<<span class="odocwiki_inlinecode"|absolute~_coord ~?h ~?v ~~relative elt>> same as <<span class="odocwiki_inlinecode"|relative~_coord>>~, but instead
+      of placing <<span class="odocwiki_inlinecode"|elt>> outside of <<span class="odocwiki_inlinecode"|relative>>~, it place **inside**~.
+
+<<span class="odocwiki_inlinecode"|absolute~_move ~?h ~?v ~~relative elt>> same as <<span class="odocwiki_inlinecode"|absolute~_coord>>~, but instead
+      of returning coordinates~, it moves directly <<span class="odocwiki_inlinecode"|elt>> to the calculated
+      coordinates~.

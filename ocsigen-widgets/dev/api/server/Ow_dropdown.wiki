@@ -1,4 +1,45 @@
 =Module <<a_api_type subproject="server" | module Ow_dropdown >> =
-<<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module>> <<span class="ocsforge_color_uid"|<<span class="ocsforge_color_uid"|Ow_dropdown>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="ocsforge_color_keyword"|sig>><<a_api subproject="server" text=".." | module Ow_dropdown >><<span class="ocsforge_color_keyword"|end>>>>
+<<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module>> <<span class="ocsforge_color_uid"|<<span class="ocsforge_color_uid"|Ow_dropdown>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="ocsforge_color_keyword"|sig>><<a_api subproject="server" text=".." | module Ow_dropdown >><<span class="ocsforge_color_keyword"|end>>>>~A dropdown menu is a menu which can be displayed under an element
+      which will act like a <<span class="odocwiki_inlinecode"|button>>~.
+
 ----
+
+~A dropdown menu is a menu which can be displayed under an element
+      which will act like a <<span class="odocwiki_inlinecode"|button>>~.
+
+
+==@@id="2_Specificeventsfordropdowns"@@~Specific events for dropdowns==
+
+
+
+==@@id="2_Typesfordropdown"@@~Types for dropdown==
+
+
+~A <<span class="odocwiki_inlinecode"|dropdown>> is a kind of <<span class="odocwiki_inlinecode"|button~_alert>> which triggers the menu when clicking
+      on it ~(you can also use it with hover events~, see below~)~. ~It also uses
+      a <<span class="odocwiki_inlinecode"|traversable>> element to simulate the menu ~(and the interactions with
+      the keys~)~.
+
+~Returns the <<span class="odocwiki_inlinecode"|traversable>> element of the <<span class="odocwiki_inlinecode"|dropdown>>~.
+
+
+==@@id="2_Constructionfunctions"@@~Construction functions==
+
+
+~Provides behaviours of dropdown menu~.
+
+
+      ~Some of the parameters are the same as <<span class="odocwiki_inlinecode"|~Ow~_button>> and <<span class="odocwiki_inlinecode"|~Ow~_traversable>>~.
+
+
+      ~The parameters <<span class="odocwiki_inlinecode"|v>> and <<span class="odocwiki_inlinecode"|h>> ~(respectively vertical and horizontal~)
+      corresponds to the orientation of the menu~.
+
+
+      ~You can use <<span class="odocwiki_inlinecode"|hover>> and <<span class="odocwiki_inlinecode"|hover~_timeout>> if you want your <<span class="odocwiki_inlinecode"|dropdown>>
+      triggered during hover javascript events~. ~The <<span class="odocwiki_inlinecode"|dropdown>> waits
+      <<span class="odocwiki_inlinecode"|hover~_timeout>> seconds before hiding the menu~.
+
+
+      ~The <<span class="odocwiki_inlinecode"|dropdown>> is traversable only when it is opened~.
 <<pre id="VALli" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|li>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|\\  <<span class="ocsforge_color_label"| ?a: >>[< <<span class="ocsforge_color_uid"|Html5_types>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|li_attrib>> > `Class `User_data ]\\     <<span class="ocsforge_color_uid"|Eliom_content>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_uid"|Html5>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_uid"|D>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|attrib>> list <<span class="ocsforge_color_delimiter"| -> >>\\  <<span class="ocsforge_color_label"| href: >>string <<span class="ocsforge_color_delimiter"| -> >>\\  <<span class="ocsforge_color_uid"|Html5_types>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|flow5_without_interactive>> <<span class="ocsforge_color_uid"|Eliom_content>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_uid"|Html5>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_uid"|D>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_uid"|Raw>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|elt>>\\  list <<span class="ocsforge_color_delimiter"| -> >> [> <<span class="ocsforge_color_uid"|Html5_types>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|li>> ] <<span class="ocsforge_color_uid"|Eliom_content>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_uid"|Html5>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_uid"|D>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|elt>>>>>><<pre id="VALdropdown" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|dropdown>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|\\  <<span class="ocsforge_color_label"| ?v: >><<a_api subproject="server" text="Ow_position.v_orientation'" | type Ow_position.v_orientation' >> <<span class="ocsforge_color_delimiter"| -> >>\\  <<span class="ocsforge_color_label"| ?h: >><<a_api subproject="server" text="Ow_position.h_orientation'" | type Ow_position.h_orientation' >> <<span class="ocsforge_color_delimiter"| -> >>\\  <<span class="ocsforge_color_label"| ?hover: >>bool <<span class="ocsforge_color_delimiter"| -> >>\\  <<span class="ocsforge_color_label"| ?hover_timeout: >>float <<span class="ocsforge_color_delimiter"| -> >>\\  'a <<span class="ocsforge_color_uid"|Eliom_content>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_uid"|Html5>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|elt>> <<span class="ocsforge_color_delimiter"| -> >>\\  <<span class="ocsforge_color_uid"|Html5_types>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|ul>> <<span class="ocsforge_color_uid"|Eliom_content>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_uid"|Html5>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|elt>> <<span class="ocsforge_color_delimiter"| -> >>\\  'a <<span class="ocsforge_color_uid"|Eliom_content>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_uid"|Html5>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|elt>> * <<span class="ocsforge_color_uid"|Html5_types>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|ul>> <<span class="ocsforge_color_uid"|Eliom_content>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_uid"|Html5>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|elt>>>>>>

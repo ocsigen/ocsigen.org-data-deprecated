@@ -1,3 +1,36 @@
 =Module <<a_api_type subproject="server" | module Ow_event_tools >> =
-<<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module>> <<span class="ocsforge_color_uid"|<<span class="ocsforge_color_uid"|Ow_event_tools>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="ocsforge_color_keyword"|sig>><<a_api subproject="server" text=".." | module Ow_event_tools >><<span class="ocsforge_color_keyword"|end>>>>
+<<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module>> <<span class="ocsforge_color_uid"|<<span class="ocsforge_color_uid"|Ow_event_tools>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="ocsforge_color_keyword"|sig>><<a_api subproject="server" text=".." | module Ow_event_tools >><<span class="ocsforge_color_keyword"|end>>>>~Various tools related to events~.
+
 ----
+
+
+===@@id="3_PositionandCoordination"@@~Position and ~Coordination ===
+
+
+~Take two coordinates and return true if they are equal
+
+
+=====@@id="5_Mouse"@@~Mouse=====
+
+
+~Similar to <<span class="odocwiki_inlinecode"|get~_mouse~_ev~_coord>>~.
+      ~Calculate the position of the mouse inside a given element~.
+
+
+=====@@id="5_Touch"@@~Touch=====
+
+
+~Similar to <<span class="odocwiki_inlinecode"|get~_touch~_coord>>~.
+      ~Take the index of touch ~(for multi~-touch~) as argument~.
+
+~Similar to <<span class="odocwiki_inlinecode"|get~_touch~_ev~_coord>>~.
+      ~Calculate the position of the touch inside a given element~.
+      ~Take the index of touch ~(for multi~-touch~) as argument~.
+
+
+===@@id="3_Enableordisableevents"@@~Enable or disable events===
+
+
+~Disable <<span class="odocwiki_inlinecode"|~Dom~_html~.~Event>> with stopping propagation during capture phase ~*
+
+~Enable <<span class="odocwiki_inlinecode"|~Dom~_html~.~Event>> with id given by disable~_event ~*

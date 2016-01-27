@@ -1,1 +1,0 @@
-<<code language="ocaml" | [Ow_traversable.traversable_detail_event] Ow_event.customEvent >>

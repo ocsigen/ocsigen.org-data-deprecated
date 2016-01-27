@@ -4,26 +4,39 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="button_dyn_alert_fun'"| type Ow_button.button_dyn_alert_fun' >> ~[<<a_api subproject="server" | module Ow_button >>~]||
 |@@ @style="tet-align: left;"@@\\C|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="callback"| type Ow_slider.callback >> ~[<<a_api subproject="server" | module Ow_slider >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="common_orientation'"| type Ow_position.common_orientation' >> ~[<<a_api subproject="server" | module Ow_position >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="crop_type"| type Ow_pic_uploader.crop_type >> ~[<<a_api subproject="server" | module Ow_pic_uploader >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="common_orientation'"| type Ow_position.common_orientation' >> ~[<<a_api subproject="server" | module Ow_position >>~]|<<div class="odocwiki_info"|~The type used by vertical and horizontal orientation
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="crop_type"| type Ow_pic_uploader.crop_type >> ~[<<a_api subproject="server" | module Ow_pic_uploader >>~]|<<div class="odocwiki_info"|~Type of the data sent to the cropping function
+>>
+|
 |@@ @style="tet-align: left;"@@\\D|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="div"| type Ow_table_color_picker.div >> ~[<<a_api subproject="server" | module Ow_table_color_picker >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="div"| type Ow_slider.div >> ~[<<a_api subproject="server" | module Ow_slider >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="dyn_alert_fun'"| type Ow_alert.dyn_alert_fun' >> ~[<<a_api subproject="server" | module Ow_alert >>~]||
 |@@ @style="tet-align: left;"@@\\H|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="h_orientation'"| type Ow_position.h_orientation' >> ~[<<a_api subproject="server" | module Ow_position >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="h_orientation'"| type Ow_position.h_orientation' >> ~[<<a_api subproject="server" | module Ow_position >>~]|<<div class="odocwiki_info"|~The type for horizontal orientation~.
+>>
+|
 |@@ @style="tet-align: left;"@@\\O|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="on_confirm_fun'"| type Ow_completion.on_confirm_fun' >> ~[<<a_api subproject="server" | module Ow_completion >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="orientation_t"| type Ow_slider.orientation_t >> ~[<<a_api subproject="server" | module Ow_slider >>~]||
 |@@ @style="tet-align: left;"@@\\P|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="position'"| type Ow_position.position' >> ~[<<a_api subproject="server" | module Ow_position >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="position'"| type Ow_position.position' >> ~[<<a_api subproject="server" | module Ow_position >>~]|<<div class="odocwiki_info"|~The type to determin the value of the position attribute of the javascript
+      element~.
+>>
+|
 |@@ @style="tet-align: left;"@@\\R|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="refresh_fun'"| type Ow_completion.refresh_fun' >> ~[<<a_api subproject="server" | module Ow_completion >>~]||
 |@@ @style="tet-align: left;"@@\\T|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="t"| type Ow_table_color_picker.t >> ~[<<a_api subproject="server" | module Ow_table_color_picker >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="t"| type Ow_slider.t >> ~[<<a_api subproject="server" | module Ow_slider >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="t"| type Ow_pic_uploader.t >> ~[<<a_api subproject="server" | module Ow_pic_uploader >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="t"| type Ow_pic_uploader.t >> ~[<<a_api subproject="server" | module Ow_pic_uploader >>~]|<<div class="odocwiki_info"|~The type of picture uploaders~.
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="t'"| type Ow_active_set.t' >> ~[<<a_api subproject="server" | module Ow_active_set >>~]||
 |@@ @style="tet-align: left;"@@\\V|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="v_orientation'"| type Ow_position.v_orientation' >> ~[<<a_api subproject="server" | module Ow_position >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="v_orientation'"| type Ow_position.v_orientation' >> ~[<<a_api subproject="server" | module Ow_position >>~]|<<div class="odocwiki_info"|~The type for vertical orientation~.
+>>
+|
 \\

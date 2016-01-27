@@ -1,8 +1,1 @@
-<<code language="ocaml" | sig
-  val map : ('a -> 'b) -> 'a option -> 'b option
-  val map_lwt : ('a -> 'b Lwt.t) -> 'a option -> 'b option Lwt.t
-  val iter : ('a -> unit) -> 'a option -> unit
-  val iter_lwt : ('a -> unit Lwt.t) -> 'a option -> unit Lwt.t
-  val lwt_map : 'a Lwt.t -> ('a -> 'b) -> (unit -> 'b) -> 'b
-  val of_opt : 'a Js.Opt.t -> 'a
-end >>
+<<code language="ocaml" | sig  end >>

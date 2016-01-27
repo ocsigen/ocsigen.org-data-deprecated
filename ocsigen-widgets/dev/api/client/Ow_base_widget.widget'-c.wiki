@@ -1,6 +1,0 @@
-=Class type <<a_api_type subproject="client" | class type Ow_base_widget.widget' >> =
-<<pre class="ocsforge_color odocwiki_code"|<<span id="TYPEwidget'"|<<span class="ocsforge_color_keyword"|class type>> <<span class="ocsforge_color_name"|widget'>>>> <<span class="ocsforge_color_delimiter"|~=>> <<span class="ocsforge_color_keyword"|object>><<a_api subproject="client" text=".." | class type Ow_base_widget.widget' >><<span class="ocsforge_color_keyword"|end>>>>**~Inherits**
-* <<a_api subproject="client" | class Ow_base_widget.widget >>
-
-----
-<<pre class="ocsforge_color odocwiki_code"|<<span id="METHOD_t"|<<span class="ocsforge_color_keyword"|method>> <<span class="odocwiki_name"|_t>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|js_string>> <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>> <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|prop>>>>>>

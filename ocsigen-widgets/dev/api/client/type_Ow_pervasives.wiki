@@ -1,1 +1,1 @@
-<<code language="ocaml" | sig external id : 'a -> 'a = "%identity" end >>
+<<code language="ocaml" | sig  end >>
