@@ -5,7 +5,7 @@
 
 
 
-|<<a_api subproject="ppx" | module Ppx_eliom >>|<<div class="odocwiki_info"|~Eliom ppx syntax extension~.
+|<<a_api subproject="ppx" | module Ppx_eliom >>|<<div class="odocwiki_info"|~Eliom ~P~P~X syntax extension~.
 >>
 |
 
