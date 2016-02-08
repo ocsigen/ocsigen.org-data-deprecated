@@ -6,10 +6,6 @@
     constraint 'a = [< Eliom_service.service_method ]
     constraint 'b = [< Eliom_service.registrable ]
     constraint 'c = [< Eliom_registration.non_ocaml_service ]
-  type get_page =
-      (Eliom_service.get_service_kind, Eliom_service.registrable,
-       Eliom_registration.non_ocaml_service)
-      Eliom_tools.one_page
   type ('a, 'b, 'c) hierarchical_site =
       ('a, 'b) Eliom_tools.main_page *
       ('c * ('a, 'b, 'c) Eliom_tools.hierarchical_site_item) list
@@ -92,4 +88,11 @@
     (unit -> 'a option Lwt.t) ->
     ('get -> 'post -> 'res Lwt.t) ->
     ('a -> 'get -> 'post -> 'res Lwt.t) -> 'get -> 'post -> 'res Lwt.t
+  val menu_class : string
+  val last_class : string
+  val current_class : string
+  val current_path_class : string
+  val disabled_class : string
+  val first_class : string
+  val level_class : string
 end >>

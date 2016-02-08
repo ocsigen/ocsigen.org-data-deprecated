@@ -352,8 +352,6 @@
       reference a ~Cascading ~Style~Sheet ~(~C~S~S~)~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="current_class"| value Eliom_tools_common.current_class >> ~[<<a_api subproject="client" | module Eliom_tools_common >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="current_path_class"| value Eliom_tools_common.current_path_class >> ~[<<a_api subproject="client" | module Eliom_tools_common >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="cursor"| value Eliom_content.Html5.Manip.SetCss.cursor >> ~[<<a_api subproject="client" | module Eliom_content.Html5.Manip.SetCss >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="cursor"| value Eliom_content.Html5.Manip.Css.cursor >> ~[<<a_api subproject="client" | module Eliom_content.Html5.Manip.Css >>~]||
 |@@ @style="tet-align: left;"@@\\D|
@@ -437,7 +435,6 @@
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="direction"| value Eliom_content.Html5.Manip.SetCss.direction >> ~[<<a_api subproject="client" | module Eliom_content.Html5.Manip.SetCss >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="direction"| value Eliom_content.Html5.Manip.Css.direction >> ~[<<a_api subproject="client" | module Eliom_content.Html5.Manip.Css >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="disabled_class"| value Eliom_tools_common.disabled_class >> ~[<<a_api subproject="client" | module Eliom_tools_common >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="display"| value Eliom_content.Html5.Manip.SetCss.display >> ~[<<a_api subproject="client" | module Eliom_content.Html5.Manip.SetCss >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="display"| value Eliom_content.Html5.Manip.Css.display >> ~[<<a_api subproject="client" | module Eliom_content.Html5.Manip.Css >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="do_cache"| value Eliom_cscache.do_cache >> ~[<<a_api subproject="client" | module Eliom_cscache >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|do~_cache cache key value>> adds the association from <<span class="odocwiki_inlinecode"|key>>
@@ -526,7 +523,6 @@
       without trying to fetch it from server~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="first_class"| value Eliom_tools_common.first_class >> ~[<<a_api subproject="client" | module Eliom_tools_common >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="float"| value Eliom_parameter.float >> ~[<<a_api subproject="client" | module Eliom_parameter >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="float"| value Eliom_form_sigs.S.float >> ~[<<a_api subproject="client" | module Eliom_form_sigs.S >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="float_attrib"| value Eliom_content_core.Xml_wed.float_attrib >> ~[<<a_api subproject="client" | module Eliom_content_core.Xml_wed >>~]||
@@ -676,7 +672,6 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="l5_s"| value Eliom_shared_sigs.S.Lwt.l5_s >> ~[<<a_api subproject="client" | module Eliom_shared_sigs.S.Lwt >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="l6"| value Eliom_shared_sigs.S.l6 >> ~[<<a_api subproject="client" | module Eliom_shared_sigs.S >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="l6_s"| value Eliom_shared_sigs.S.Lwt.l6_s >> ~[<<a_api subproject="client" | module Eliom_shared_sigs.S.Lwt >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="last_class"| value Eliom_tools_common.last_class >> ~[<<a_api subproject="client" | module Eliom_tools_common >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="lazy_form"| value Eliom_content_sigs.LINKS_AND_FORMS.lazy_form >> ~[<<a_api subproject="client" | module Eliom_content_sigs.LINKS_AND_FORMS >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="left"| value Eliom_content.Html5.Manip.SetCss.left >> ~[<<a_api subproject="client" | module Eliom_content.Html5.Manip.SetCss >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="left"| value Eliom_content.Html5.Manip.Css.left >> ~[<<a_api subproject="client" | module Eliom_content.Html5.Manip.Css >>~]||
@@ -684,7 +679,6 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="leftPx"| value Eliom_content.Html5.Manip.Css.leftPx >> ~[<<a_api subproject="client" | module Eliom_content.Html5.Manip.Css >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="letterSpacing"| value Eliom_content.Html5.Manip.SetCss.letterSpacing >> ~[<<a_api subproject="client" | module Eliom_content.Html5.Manip.SetCss >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="letterSpacing"| value Eliom_content.Html5.Manip.Css.letterSpacing >> ~[<<a_api subproject="client" | module Eliom_content.Html5.Manip.Css >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="level_class"| value Eliom_tools_common.level_class >> ~[<<a_api subproject="client" | module Eliom_tools_common >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="lineHeight"| value Eliom_content.Html5.Manip.SetCss.lineHeight >> ~[<<a_api subproject="client" | module Eliom_content.Html5.Manip.SetCss >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="lineHeight"| value Eliom_content.Html5.Manip.Css.lineHeight >> ~[<<a_api subproject="client" | module Eliom_content.Html5.Manip.Css >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="list"| value Eliom_parameter.list >> ~[<<a_api subproject="client" | module Eliom_parameter >>~]||
@@ -783,7 +777,6 @@
       <<span class="odocwiki_inlinecode"|service>>s~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="menu_class"| value Eliom_tools_common.menu_class >> ~[<<a_api subproject="client" | module Eliom_tools_common >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="merge"| value Eliom_shared_sigs.S.merge >> ~[<<a_api subproject="client" | module Eliom_shared_sigs.S >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="merge_s"| value Eliom_shared_sigs.S.Lwt.merge_s >> ~[<<a_api subproject="client" | module Eliom_shared_sigs.S.Lwt >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="minHeight"| value Eliom_content.Html5.Manip.SetCss.minHeight >> ~[<<a_api subproject="client" | module Eliom_content.Html5.Manip.SetCss >>~]||

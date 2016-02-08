@@ -151,12 +151,6 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="full_state_name"| type Eliom_common.full_state_name >> ~[<<a_api subproject="server" | module Eliom_common >>~]||
 |@@ @style="tet-align: left;"@@\\G|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="generator"| type Atom_feed.generator >> ~[<<a_api subproject="server" | module Atom_feed >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="get_page"| type Eliom_tools_common.get_page >> ~[<<a_api subproject="server" | module Eliom_tools_common >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="get_page"| type Eliom_tools.get_page >> ~[<<a_api subproject="server" | module Eliom_tools >>~]|<<div class="odocwiki_info"|~Restriction of <<a_api subproject="server" | type Eliom_service.service >> to registrable ~G~E~T
-    services without parameters that do not returns a marshalled ~O~Caml
-    value~.
->>
-|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="get_service_kind"| type Eliom_service.get_service_kind >> ~[<<a_api subproject="server" | module Eliom_service >>~]|<<div class="odocwiki_info"|~Restriction of <<span class="odocwiki_inlinecode"|service~_method>> to ~G~E~T services~.
 >>
 |
@@ -169,11 +163,7 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="handle"| type Eliom_shared_sigs.RLIST.handle >> ~[<<a_api subproject="server" | module Eliom_shared_sigs.RLIST >>~]|<<div class="odocwiki_info"|~Handles are used to manipulate reactive lists
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="hierarchical_site"| type Eliom_tools_common.hierarchical_site >> ~[<<a_api subproject="server" | module Eliom_tools_common >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="hierarchical_site"| type Eliom_tools.hierarchical_site >> ~[<<a_api subproject="server" | module Eliom_tools >>~]|<<div class="odocwiki_info"|~Hierarchical sites description~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="hierarchical_site_item"| type Eliom_tools_common.hierarchical_site_item >> ~[<<a_api subproject="server" | module Eliom_tools_common >>~]|<<div class="odocwiki_info"|~Hierchical sites 
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="hierarchical_site_item"| type Eliom_tools.hierarchical_site_item >> ~[<<a_api subproject="server" | module Eliom_tools >>~]||
@@ -222,7 +212,6 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="logo"| type Atom_feed.logo >> ~[<<a_api subproject="server" | module Atom_feed >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="ltitle"| type Atom_feed.ltitle >> ~[<<a_api subproject="server" | module Atom_feed >>~]||
 |@@ @style="tet-align: left;"@@\\M|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="main_page"| type Eliom_tools_common.main_page >> ~[<<a_api subproject="server" | module Eliom_tools_common >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="main_page"| type Eliom_tools.main_page >> ~[<<a_api subproject="server" | module Eliom_tools >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="mediaType"| type Atom_feed.mediaType >> ~[<<a_api subproject="server" | module Atom_feed >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="metaAttr"| type Atom_feed.metaAttr >> ~[<<a_api subproject="server" | module Atom_feed >>~]|<<div class="odocwiki_info"|~Common optional attributes
@@ -261,9 +250,6 @@
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="ocaml_service"| type Eliom_service.ocaml_service >> ~[<<a_api subproject="server" | module Eliom_service >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="one_page"| type Eliom_tools_common.one_page >> ~[<<a_api subproject="server" | module Eliom_tools_common >>~]|<<div class="odocwiki_info"|~Menus 
->>
-|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="one_page"| type Eliom_tools.one_page >> ~[<<a_api subproject="server" | module Eliom_tools >>~]|<<div class="odocwiki_info"|~Restriction of <<a_api subproject="server" | type Eliom_service.service >> to services without
     parameters that do not returns a marshalled ~O~Caml value~.
 >>

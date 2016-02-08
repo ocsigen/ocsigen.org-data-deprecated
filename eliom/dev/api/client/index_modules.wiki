@@ -106,7 +106,6 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Eliom_tools"| module Eliom_tools >> |<<div class="odocwiki_info"|~Helpers for ~(hierarchical~) menu generation in ~H~T~M~L~5~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Eliom_tools_common"| module Eliom_tools_common >> ||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Eliom_types"| module Eliom_types >> ||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Eliom_unwrap"| module Eliom_unwrap >> |<<div class="odocwiki_info"|~Values of type <<span class="odocwiki_inlinecode"|unwrap~_id>> are used to identify a specific unwrapper~.
 >>

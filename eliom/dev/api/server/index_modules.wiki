@@ -146,9 +146,6 @@ file~.
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Eliom_tools"| module Eliom_tools >> |<<div class="odocwiki_info"|~Helpers for ~(hierarchical~) menu generation in ~H~T~M~L~5~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Eliom_tools_common"| module Eliom_tools_common >> |<<div class="odocwiki_info"|~Menus 
->>
-|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Eliom_types"| module Eliom_types >> |<<div class="odocwiki_info"|~Types shared by client and server~.
 >>
 |
