@@ -223,9 +223,7 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="ltitle"| type Atom_feed.ltitle >> ~[<<a_api subproject="server" | module Atom_feed >>~]||
 |@@ @style="tet-align: left;"@@\\M|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="main_page"| type Eliom_tools_common.main_page >> ~[<<a_api subproject="server" | module Eliom_tools_common >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="main_page"| type Eliom_tools.main_page >> ~[<<a_api subproject="server" | module Eliom_tools >>~]|<<div class="odocwiki_info"|~Main page description for a section of a hierarchical site~.
->>
-|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="main_page"| type Eliom_tools.main_page >> ~[<<a_api subproject="server" | module Eliom_tools >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="mediaType"| type Atom_feed.mediaType >> ~[<<a_api subproject="server" | module Atom_feed >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="metaAttr"| type Atom_feed.metaAttr >> ~[<<a_api subproject="server" | module Atom_feed >>~]|<<div class="odocwiki_info"|~Common optional attributes
 >>

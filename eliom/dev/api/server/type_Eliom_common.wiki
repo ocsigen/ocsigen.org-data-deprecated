@@ -368,7 +368,7 @@
     sp_full_state_name : Eliom_common.full_state_name option;
     sp_client_process_info : Eliom_common.client_process_info;
   }
-  and page_table = page_table_content Eliom_common.Serv_Table.t
+  and page_table = Eliom_common.page_table_content Eliom_common.Serv_Table.t
   and page_table_content =
       Ptc of
         (Eliom_common.page_table Pervasives.ref * Eliom_common.page_table_key,
@@ -382,8 +382,8 @@
   and naservice_table_content =
       int * int Pervasives.ref option *
       (float * float Pervasives.ref) option *
-      (server_params -> Ocsigen_http_frame.result Lwt.t) *
-      (page_table Pervasives.ref * Eliom_common.page_table_key,
+      (Eliom_common.server_params -> Ocsigen_http_frame.result Lwt.t) *
+      (Eliom_common.page_table Pervasives.ref * Eliom_common.page_table_key,
        Eliom_common.na_key_serv)
       Eliom_lib.leftright Ocsigen_cache.Dlist.node option
   and naservice_table =

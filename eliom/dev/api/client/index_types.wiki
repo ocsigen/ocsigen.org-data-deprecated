@@ -136,9 +136,7 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="listnames"| type Eliom_parameter.listnames >> ~[<<a_api subproject="client" | module Eliom_parameter >>~]||
 |@@ @style="tet-align: left;"@@\\M|
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="main_page"| type Eliom_tools_common.main_page >> ~[<<a_api subproject="client" | module Eliom_tools_common >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="main_page"| type Eliom_tools.main_page >> ~[<<a_api subproject="client" | module Eliom_tools >>~]|<<div class="odocwiki_info"|~Main page description for a section of a hierarchical site~.
->>
-|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="main_page"| type Eliom_tools.main_page >> ~[<<a_api subproject="client" | module Eliom_tools >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="mouse_event_handler"| type Eliom_content_core.Xml.mouse_event_handler >> ~[<<a_api subproject="client" | module Eliom_content_core.Xml >>~]||
 |@@ @style="tet-align: left;"@@\\N|
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="na_s"| type Eliom_service.na_s >> ~[<<a_api subproject="client" | module Eliom_service >>~]|<<div class="odocwiki_info"|~The abstract type for non~-attached service representation~.
