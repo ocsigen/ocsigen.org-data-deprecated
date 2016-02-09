@@ -162,6 +162,7 @@
     <<span class="odocwiki_inlinecode"|url>>~, returns a viewable content of <<span class="odocwiki_inlinecode"|file>>~.
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api text="content_disposition"| value Http_headers.content_disposition >> ~[<<a_api | module Http_headers >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="content_encoding"| value Http_headers.content_encoding >> ~[<<a_api | module Http_headers >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="content_length"| value Ocsigen_request_info.content_length >> ~[<<a_api | module Ocsigen_request_info >>~]|<<div class="odocwiki_info"|~Accessor for content~_length of request~_info
 >>

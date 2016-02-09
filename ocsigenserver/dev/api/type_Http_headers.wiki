@@ -28,6 +28,7 @@
   val accept_ranges : Http_headers.name
   val cache_control : Http_headers.name
   val connection : Http_headers.name
+  val content_disposition : Http_headers.name
   val content_encoding : Http_headers.name
   val content_length : Http_headers.name
   val content_type : Http_headers.name
