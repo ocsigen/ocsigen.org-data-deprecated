@@ -5450,6 +5450,8 @@
               val a_span : Html5_types.number wrap -> [> `Span ] attrib
               val a_srclang :
                 Html5_types.nmtoken wrap -> [> `XML_lang ] attrib
+              val a_srcset :
+                Html5_types.image_candidate list wrap -> [> `Srcset ] attrib
               val a_start : Html5_types.number wrap -> [> `Start ] attrib
               val a_step :
                 Html5_types.float_number option wrap -> [> `Step ] attrib
@@ -7059,6 +7061,8 @@
             wrap -> [> `Sizes ] attrib
           val a_span : Html5_types.number wrap -> [> `Span ] attrib
           val a_srclang : Html5_types.nmtoken wrap -> [> `XML_lang ] attrib
+          val a_srcset :
+            Html5_types.image_candidate list wrap -> [> `Srcset ] attrib
           val a_start : Html5_types.number wrap -> [> `Start ] attrib
           val a_step :
             Html5_types.float_number option wrap -> [> `Step ] attrib
@@ -8931,6 +8935,8 @@
               val a_span : Html5_types.number wrap -> [> `Span ] attrib
               val a_srclang :
                 Html5_types.nmtoken wrap -> [> `XML_lang ] attrib
+              val a_srcset :
+                Html5_types.image_candidate list wrap -> [> `Srcset ] attrib
               val a_start : Html5_types.number wrap -> [> `Start ] attrib
               val a_step :
                 Html5_types.float_number option wrap -> [> `Step ] attrib
@@ -10540,6 +10546,8 @@
             wrap -> [> `Sizes ] attrib
           val a_span : Html5_types.number wrap -> [> `Span ] attrib
           val a_srclang : Html5_types.nmtoken wrap -> [> `XML_lang ] attrib
+          val a_srcset :
+            Html5_types.image_candidate list wrap -> [> `Srcset ] attrib
           val a_start : Html5_types.number wrap -> [> `Start ] attrib
           val a_step :
             Html5_types.float_number option wrap -> [> `Step ] attrib
@@ -12421,6 +12429,8 @@
               val a_span : Html5_types.number wrap -> [> `Span ] attrib
               val a_srclang :
                 Html5_types.nmtoken wrap -> [> `XML_lang ] attrib
+              val a_srcset :
+                Html5_types.image_candidate list wrap -> [> `Srcset ] attrib
               val a_start : Html5_types.number wrap -> [> `Start ] attrib
               val a_step :
                 Html5_types.float_number option wrap -> [> `Step ] attrib
@@ -14033,6 +14043,8 @@
             wrap -> [> `Sizes ] attrib
           val a_span : Html5_types.number wrap -> [> `Span ] attrib
           val a_srclang : Html5_types.nmtoken wrap -> [> `XML_lang ] attrib
+          val a_srcset :
+            Html5_types.image_candidate list wrap -> [> `Srcset ] attrib
           val a_start : Html5_types.number wrap -> [> `Start ] attrib
           val a_step :
             Html5_types.float_number option wrap -> [> `Step ] attrib
