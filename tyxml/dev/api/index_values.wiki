@@ -392,6 +392,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="a_srclang"| value Html5_sigs.T.a_srclang >> ~[<<a_api | module Html5_sigs.T >>~]|<<div class="odocwiki_info"|~This attribute is deprecated~, you should use <<a_api | val Html5_sigs.T.a_xml_lang >>~.
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api text="a_srcset"| value Html5_sigs.T.a_srcset >> ~[<<a_api | module Html5_sigs.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="a_start"| value Html5_sigs.T.a_start >> ~[<<a_api | module Html5_sigs.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="a_startoffset"| value Svg_sigs.T.a_startoffset >> ~[<<a_api | module Svg_sigs.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="a_stddeviation"| value Svg_sigs.T.a_stddeviation >> ~[<<a_api | module Svg_sigs.T >>~]||
@@ -900,6 +901,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="string_of_paint"| value Svg_sigs.Wrapped_functions.string_of_paint >> ~[<<a_api | module Svg_sigs.Wrapped_functions >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="string_of_sandbox"| value Html5_sigs.Wrapped_functions.string_of_sandbox >> ~[<<a_api | module Html5_sigs.Wrapped_functions >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="string_of_sizes"| value Html5_sigs.Wrapped_functions.string_of_sizes >> ~[<<a_api | module Html5_sigs.Wrapped_functions >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="string_of_srcset"| value Html5_sigs.Wrapped_functions.string_of_srcset >> ~[<<a_api | module Html5_sigs.Wrapped_functions >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="string_of_step"| value Html5_sigs.Wrapped_functions.string_of_step >> ~[<<a_api | module Html5_sigs.Wrapped_functions >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="string_of_strokedasharray"| value Svg_sigs.Wrapped_functions.string_of_strokedasharray >> ~[<<a_api | module Svg_sigs.Wrapped_functions >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="string_of_transform"| value Svg_sigs.Wrapped_functions.string_of_transform >> ~[<<a_api | module Svg_sigs.Wrapped_functions >>~]||

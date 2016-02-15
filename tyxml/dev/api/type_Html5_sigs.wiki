@@ -920,6 +920,9 @@
       val a_srclang :
         Html5_types.nmtoken Html5_sigs.T.wrap ->
         [> `XML_lang ] Html5_sigs.T.attrib
+      val a_srcset :
+        Html5_types.image_candidate list Html5_sigs.T.wrap ->
+        [> `Srcset ] Html5_sigs.T.attrib
       val a_start :
         Html5_types.number Html5_sigs.T.wrap ->
         [> `Start ] Html5_sigs.T.attrib
@@ -3441,6 +3444,8 @@
         wrap -> [> `Sizes ] attrib
       val a_span : Html5_types.number wrap -> [> `Span ] attrib
       val a_srclang : Html5_types.nmtoken wrap -> [> `XML_lang ] attrib
+      val a_srcset :
+        Html5_types.image_candidate list wrap -> [> `Srcset ] attrib
       val a_start : Html5_types.number wrap -> [> `Start ] attrib
       val a_step : Html5_types.float_number option wrap -> [> `Step ] attrib
       val a_wrap : [< `Hard | `Soft ] wrap -> [> `Wrap ] attrib
@@ -4856,6 +4861,9 @@
         Html5_sigs.Wrapped_functions.ft
       val string_of_sizes :
         ([< Html5_types.sizes ], string) Html5_sigs.Wrapped_functions.ft
+      val string_of_srcset :
+        ([< Html5_types.image_candidate ] list, string)
+        Html5_sigs.Wrapped_functions.ft
       val string_of_step :
         (float option, string) Html5_sigs.Wrapped_functions.ft
       val unoption_string :
@@ -6118,6 +6126,8 @@
               wrap -> [> `Sizes ] attrib
             val a_span : Html5_types.number wrap -> [> `Span ] attrib
             val a_srclang : Html5_types.nmtoken wrap -> [> `XML_lang ] attrib
+            val a_srcset :
+              Html5_types.image_candidate list wrap -> [> `Srcset ] attrib
             val a_start : Html5_types.number wrap -> [> `Start ] attrib
             val a_step :
               Html5_types.float_number option wrap -> [> `Step ] attrib
