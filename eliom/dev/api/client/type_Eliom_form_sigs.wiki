@@ -62,6 +62,7 @@
       val nativeint : nativeint Eliom_form_sigs.S.param
       val bool : bool Eliom_form_sigs.S.param
       val string : string Eliom_form_sigs.S.param
+      val user : ('a -> string) -> 'a Eliom_form_sigs.S.param
       val make_post_uri_components :
         ?absolute:bool ->
         ?absolute_path:bool ->

@@ -1329,6 +1329,7 @@
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="uris_attrib"| value Eliom_content_core.Xml_wed.uris_attrib >> ~[<<a_api subproject="client" | module Eliom_content_core.Xml_wed >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="user"| value Eliom_form_sigs.S.user >> ~[<<a_api subproject="client" | module Eliom_form_sigs.S >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="user_type"| value Eliom_parameter.user_type >> ~[<<a_api subproject="client" | module Eliom_parameter >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="user_type_coordinates"| value Eliom_parameter.user_type_coordinates >> ~[<<a_api subproject="client" | module Eliom_parameter >>~]||
 |@@ @style="tet-align: left;"@@\\V|

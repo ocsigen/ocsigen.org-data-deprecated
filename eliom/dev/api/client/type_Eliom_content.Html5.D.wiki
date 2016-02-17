@@ -3047,6 +3047,7 @@
       val nativeint : nativeint param
       val bool : bool param
       val string : string param
+      val user : ('a -> string) -> 'a param
       val make_post_uri_components :
         ?absolute:bool ->
         ?absolute_path:bool ->

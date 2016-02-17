@@ -2609,6 +2609,7 @@ foobar:value}}}
       equivalent to <<span class="odocwiki_inlinecode"|f ~(~)>>~.
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="user"| value Eliom_form_sigs.S.user >> ~[<<a_api subproject="server" | module Eliom_form_sigs.S >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="user_type"| value Eliom_parameter.user_type >> ~[<<a_api subproject="server" | module Eliom_parameter >>~]|<<div class="odocwiki_info"|~Specifying parameter as <<span class="odocwiki_inlinecode"|user~_type ~~of~_string ~~to~_string s>> tells that the
     service take a parameter~, labeled <<span class="odocwiki_inlinecode"|s>>~, and that the server will
     have to use <<span class="odocwiki_inlinecode"|of~_string>> and <<span class="odocwiki_inlinecode"|to~_string>> to make the conversion
