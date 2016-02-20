@@ -155,6 +155,7 @@
 |
 |@@class="odocwiki_index"@ @@<<a_api text="a_id"| value Svg_sigs.T.a_id >> ~[<<a_api | module Svg_sigs.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="a_ideographic"| value Svg_sigs.T.a_ideographic >> ~[<<a_api | module Svg_sigs.T >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="a_img_sizes"| value Html5_sigs.T.a_img_sizes >> ~[<<a_api | module Html5_sigs.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="a_in"| value Svg_sigs.T.a_in >> ~[<<a_api | module Svg_sigs.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="a_in2"| value Svg_sigs.T.a_in2 >> ~[<<a_api | module Svg_sigs.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="a_input_max"| value Html5_sigs.T.a_input_max >> ~[<<a_api | module Html5_sigs.T >>~]||

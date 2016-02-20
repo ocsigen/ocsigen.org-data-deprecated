@@ -3808,6 +3808,7 @@
       | `Height
       | `Hidden
       | `Id
+      | `Img_sizes
       | `Ismap
       | `Lang
       | `OnAbort

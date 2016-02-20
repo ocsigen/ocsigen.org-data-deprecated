@@ -855,6 +855,9 @@
   val a_srcset :
     Html5_types.image_candidate list Html5_sigs.T.wrap ->
     [> `Srcset ] Html5_sigs.T.attrib
+  val a_img_sizes :
+    Html5_types.text list Html5_sigs.T.wrap ->
+    [> `Img_sizes ] Html5_sigs.T.attrib
   val a_start :
     Html5_types.number Html5_sigs.T.wrap -> [> `Start ] Html5_sigs.T.attrib
   val a_step :
