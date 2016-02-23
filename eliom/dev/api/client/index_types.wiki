@@ -126,6 +126,10 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="list_wrap"| type Eliom_content_core.Svg.list_wrap >> ~[<<a_api subproject="client" | module Eliom_content_core.Svg >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="list_wrap"| type Eliom_content_core.Xml.list_wrap >> ~[<<a_api subproject="client" | module Eliom_content_core.Xml >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="listnames"| type Eliom_parameter.listnames >> ~[<<a_api subproject="client" | module Eliom_parameter >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="local_t"| type Eliom_cscache.local_t >> ~[<<a_api subproject="client" | module Eliom_cscache >>~]|<<div class="odocwiki_info"|~The type of local ~(client or server~)
+    association tables ~(implemented using ~Hashtbl~)
+>>
+|
 |@@ @style="tet-align: left;"@@\\M|
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="main_page"| type Eliom_tools.main_page >> ~[<<a_api subproject="client" | module Eliom_tools >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="mouse_event_handler"| type Eliom_content_core.Xml.mouse_event_handler >> ~[<<a_api subproject="client" | module Eliom_content_core.Xml >>~]||
@@ -203,7 +207,7 @@
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="suff"| type Eliom_parameter.suff >> ~[<<a_api subproject="client" | module Eliom_parameter >>~]||
 |@@ @style="tet-align: left;"@@\\T|
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="t"| type Eliom_cscache.t >> ~[<<a_api subproject="client" | module Eliom_cscache >>~]|<<div class="odocwiki_info"|~The type of association tables ~(implemented using ~Hashtbl~)
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="t"| type Eliom_cscache.t >> ~[<<a_api subproject="client" | module Eliom_cscache >>~]|<<div class="odocwiki_info"|~The type of client~-server association tables ~(implemented using ~Hashtbl~)
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="t"| type Eliom_shared.FakeReactiveData.RList.t >> ~[<<a_api subproject="client" | module Eliom_shared.FakeReactiveData.RList >>~]||

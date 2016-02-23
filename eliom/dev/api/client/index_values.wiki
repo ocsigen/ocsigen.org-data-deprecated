@@ -546,6 +546,9 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="from_signal"| value Eliom_shared_sigs.RLIST.from_signal >> ~[<<a_api subproject="client" | module Eliom_shared_sigs.RLIST >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="from_val"| value Eliom_lazy.from_val >> ~[<<a_api subproject="client" | module Eliom_lazy >>~]||
 |@@ @style="tet-align: left;"@@\\G|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="get_debugmode"| value Eliom_config.get_debugmode >> ~[<<a_api subproject="client" | module Eliom_config >>~]|<<div class="odocwiki_info"|~Same as <<span class="odocwiki_inlinecode"|~Ocsigen~_config~.get~_debugmode>>~.
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="get_default_hostname"| value Eliom_config.get_default_hostname >> ~[<<a_api subproject="client" | module Eliom_config >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="get_default_links_xhr"| value Eliom_config.get_default_links_xhr >> ~[<<a_api subproject="client" | module Eliom_config >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="get_default_port"| value Eliom_config.get_default_port >> ~[<<a_api subproject="client" | module Eliom_config >>~]||
@@ -652,6 +655,10 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="is_active"| value Eliom_comet.is_active >> ~[<<a_api subproject="client" | module Eliom_comet >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|is~_active ~(~)>> returns the current activity state
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="is_client_app"| value Eliom_client.is_client_app >> ~[<<a_api subproject="client" | module Eliom_client >>~]|<<div class="odocwiki_info"|~Returns whether the application is sent by a server or started on
+    client side~.
+>>
+|
 |@@ @style="tet-align: left;"@@\\J|
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="js_script"| value Eliom_form_sigs.LINKS.js_script >> ~[<<a_api subproject="client" | module Eliom_form_sigs.LINKS >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|js~_script ~~uri ~(~)>> creates a <<span class="odocwiki_inlinecode"|~<script~>>> node that
       reference a javascript file~.
@@ -695,6 +702,9 @@
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="local"| value Eliom_shared_sigs.VALUE.local >> ~[<<a_api subproject="client" | module Eliom_shared_sigs.VALUE >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|local x>> is the local portion of <<span class="odocwiki_inlinecode"|x>>~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="local_create"| value Eliom_cscache.local_create >> ~[<<a_api subproject="client" | module Eliom_cscache >>~]|<<div class="odocwiki_info"|~Create a new local ~(client or server~) table~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="local_find"| value Eliom_cscache.local_find >> ~[<<a_api subproject="client" | module Eliom_cscache >>~]|<<div class="odocwiki_info"|~Find a piece of data in local cache~,
@@ -1184,6 +1194,9 @@
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="select"| value Eliom_form_sigs.S.select >> ~[<<a_api subproject="client" | module Eliom_form_sigs.S >>~]|<<div class="odocwiki_info"|~Creates a <<span class="odocwiki_inlinecode"|~<select~>>> tag~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="server_function"| value Eliom_pervasives.server_function >> ~[<<a_api subproject="client" | module Eliom_pervasives >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|server~_function argument~_type f>> creates a value of type     <<a_api | type Eliom_pervasives.server_function>> ~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="service"| value Eliom_service.Http.service >> ~[<<a_api subproject="client" | module Eliom_service.Http >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|service ~~path ~~get~_params ~(~)>> creates a <<a_api subproject="client" | val Eliom_service.Http.service >>

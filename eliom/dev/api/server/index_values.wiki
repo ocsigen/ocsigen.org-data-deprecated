@@ -621,6 +621,9 @@
    sent by the browser~.
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="get_debugmode"| value Eliom_config.get_debugmode >> ~[<<a_api subproject="server" | module Eliom_config >>~]|<<div class="odocwiki_info"|~Same as <<span class="odocwiki_inlinecode"|~Ocsigen~_config~.get~_debugmode>>~.
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="get_default_hostname"| value Eliom_config.get_default_hostname >> ~[<<a_api subproject="server" | module Eliom_config >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|get~_default~_hostname ~(~)>>returns the hostname
     declared in the config file ~(<<span class="odocwiki_inlinecode"|~<host defaulthostname~="~.~.~."~>>>~) or
     the default machine hostname~.
@@ -909,6 +912,7 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="int_coordinates"| value Eliom_parameter.int_coordinates >> ~[<<a_api subproject="server" | module Eliom_parameter >>~]|<<div class="odocwiki_info"|~Same as <<span class="odocwiki_inlinecode"|string~_coordinates>> but for an integer value
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="is_client_app"| value Eliom_client.is_client_app >> ~[<<a_api subproject="server" | module Eliom_client >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="is_initial_request"| value Eliom_registration.ELIOM_APPL.is_initial_request >> ~[<<a_api subproject="server" | module Eliom_registration.ELIOM_APPL >>~]|<<div class="odocwiki_info"|~Checks during a request whether it is the initial request of the
       client process in this ~Eliom application~.
 >>
@@ -961,6 +965,9 @@
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="list_scope_hierarchies"| value Eliom_common.list_scope_hierarchies >> ~[<<a_api subproject="server" | module Eliom_common >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="local"| value Eliom_shared_sigs.VALUE.local >> ~[<<a_api subproject="server" | module Eliom_shared_sigs.VALUE >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|local x>> is the local portion of <<span class="odocwiki_inlinecode"|x>>~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="local_create"| value Eliom_cscache.local_create >> ~[<<a_api subproject="server" | module Eliom_cscache >>~]|<<div class="odocwiki_info"|~Create a new local ~(client or server~) table~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="local_find"| value Eliom_cscache.local_find >> ~[<<a_api subproject="server" | module Eliom_cscache >>~]|<<div class="odocwiki_info"|~Find a piece of data in local cache~,

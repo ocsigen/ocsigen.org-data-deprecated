@@ -209,6 +209,10 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="listnames"| type Eliom_parameter.listnames >> ~[<<a_api subproject="server" | module Eliom_parameter >>~]|<<div class="odocwiki_info"|~Helpers type used to construct forms from lists~, see <<a_api subproject="server" | val Eliom_parameter.list >>~.
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="local_t"| type Eliom_cscache.local_t >> ~[<<a_api subproject="server" | module Eliom_cscache >>~]|<<div class="odocwiki_info"|~The type of local ~(client or server~)
+    association tables ~(implemented using ~Hashtbl~)
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="logo"| type Atom_feed.logo >> ~[<<a_api subproject="server" | module Atom_feed >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="ltitle"| type Atom_feed.ltitle >> ~[<<a_api subproject="server" | module Atom_feed >>~]||
 |@@ @style="tet-align: left;"@@\\M|
@@ -393,7 +397,7 @@
 |
 |@@ @style="tet-align: left;"@@\\T|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="t"| type Eliom_registration.TMPL_PARAMS.t >> ~[<<a_api subproject="server" | module Eliom_registration.TMPL_PARAMS >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="t"| type Eliom_cscache.t >> ~[<<a_api subproject="server" | module Eliom_cscache >>~]|<<div class="odocwiki_info"|~The type of association tables ~(implemented using ~Hashtbl~)
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="t"| type Eliom_cscache.t >> ~[<<a_api subproject="server" | module Eliom_cscache >>~]|<<div class="odocwiki_info"|~The type of client~-server association tables ~(implemented using ~Hashtbl~)
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="t"| type Eliom_shared.FakeReactiveData.RList.t >> ~[<<a_api subproject="server" | module Eliom_shared.FakeReactiveData.RList >>~]||

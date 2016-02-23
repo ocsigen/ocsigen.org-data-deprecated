@@ -14,7 +14,12 @@
     ~This module hides many subtelties that are useful for
     client~-server ~(possibly reactive~) applications~, like~, for
     example~, handling delays correctly both on client and server sides~.
-<<pre class="ocsforge_color odocwiki_code" id="TYPEt"|<<span class="ocsforge_color_keyword"|type>> <<span class="odocwiki_type"|<<span class="ocsforge_color_delimiter"| ( >>'a, 'b<<span class="ocsforge_color_delimiter"| ) >>>> <<span class="odocwiki_name"|t>>>><<div class="odocwiki_info"|~The type of association tables ~(implemented using ~Hashtbl~)
+<<pre class="ocsforge_color odocwiki_code" id="TYPElocal_t"|<<span class="ocsforge_color_keyword"|type>> <<span class="odocwiki_type"|<<span class="ocsforge_color_delimiter"| ( >>'a, 'b<<span class="ocsforge_color_delimiter"| ) >>>> <<span class="odocwiki_name"|local~_t>>>><<div class="odocwiki_info"|~The type of local ~(client or server~)
+    association tables ~(implemented using ~Hashtbl~)
+>>
+<<pre class="ocsforge_color odocwiki_code" id="TYPEt"|<<span class="ocsforge_color_keyword"|type>> <<span class="odocwiki_type"|<<span class="ocsforge_color_delimiter"| ( >>'a, 'b<<span class="ocsforge_color_delimiter"| ) >>>> <<span class="odocwiki_name"|t>> <<span class="ocsforge_color_delimiter"|~=>> <<span class="odocwiki_type"|<<span class="ocsforge_color_delimiter"| ( >>'a, 'b<<span class="ocsforge_color_delimiter"| ) >> <<a_api subproject="server" text="local_t" | type Eliom_cscache.local_t >> <<a_api subproject="server" text="Eliom_lib.shared_value" | type Eliom_lib.shared_value >>>> >><<div class="odocwiki_info"|~The type of client~-server association tables ~(implemented using ~Hashtbl~)
+>>
+<<pre id="VALlocal_create" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|local~_create>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|unit <<span class="ocsforge_color_delimiter"| -> >> <<span class="ocsforge_color_delimiter"| ( >>'a, 'b<<span class="ocsforge_color_delimiter"| ) >> <<a_api subproject="server" text="local_t" | type Eliom_cscache.local_t >>>>>><<div class="odocwiki_info"|~Create a new local ~(client or server~) table~.
 >>
 <<pre id="VALcreate" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|create>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|unit <<span class="ocsforge_color_delimiter"| -> >> <<span class="ocsforge_color_delimiter"| ( >>'a, 'b<<span class="ocsforge_color_delimiter"| ) >> <<a_api subproject="server" text="t" | type Eliom_cscache.t >>>>>><<div class="odocwiki_info"|~Create a new table~. ~Must be called from server side~.
 >>

@@ -63,6 +63,10 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Eliom_bus"| module Eliom_bus >> |<<div class="odocwiki_info"|~Broadcasting facilities between clients and server
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Eliom_client"| module Eliom_client >> |<<div class="odocwiki_info"|~Returns whether the application is sent by a server or started on
+    client side~.
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Eliom_comet"| module Eliom_comet >> |<<div class="odocwiki_info"|~Primitives to push data to the client~, without explicit request~.
 >>
 |

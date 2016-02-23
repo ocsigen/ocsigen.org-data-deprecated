@@ -2,5 +2,22 @@
   type 'a client_value = 'a Eliom_lib.client_value
   type 'a fragment = 'a Eliom_pervasives.client_value
   type ('a, 'b) server_function = 'a -> 'b Lwt.t
+  val server_function :
+    ?scope:[< Eliom_common.scope ] ->
+    ?options:unit ->
+    ?charset:string ->
+    ?code:int ->
+    ?content_type:string ->
+    ?headers:Http_headers.t ->
+    ?secure_session:bool ->
+    name:string ->
+    ?csrf_safe:bool ->
+    ?csrf_scope:[< Eliom_common.user_scope ] ->
+    ?csrf_secure:bool ->
+    ?max_use:int ->
+    ?timeout:float ->
+    ?https:bool ->
+    ?error_handler:((string * exn) list -> 'b Lwt.t) ->
+    'a Deriving_Json.t -> unit -> ('a, 'b) Eliom_pervasives.server_function
   val _force_link : unit
 end >>

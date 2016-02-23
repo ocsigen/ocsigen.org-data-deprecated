@@ -7,4 +7,5 @@
   val debug_timings : bool Pervasives.ref
   val set_tracing : bool -> unit
   val get_tracing : unit -> bool
+  val get_debugmode : unit -> bool
 end >>

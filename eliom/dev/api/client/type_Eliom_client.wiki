@@ -1,8 +1,10 @@
 <<code language="ocaml" | sig
   val init_client_app :
+    app_name:string ->
     ?ssl:bool ->
     hostname:string ->
     ?port:int -> full_path:Eliom_lib.Url.path -> unit -> unit
+  val is_client_app : unit -> bool
   val change_page :
     ?absolute:bool ->
     ?absolute_path:bool ->

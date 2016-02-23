@@ -5407,6 +5407,8 @@
                 Html5_types.nmtoken wrap -> [> `XML_lang ] attrib
               val a_srcset :
                 Html5_types.image_candidate list wrap -> [> `Srcset ] attrib
+              val a_img_sizes :
+                Html5_types.text list wrap -> [> `Img_sizes ] attrib
               val a_start : Html5_types.number wrap -> [> `Start ] attrib
               val a_step :
                 Html5_types.float_number option wrap -> [> `Step ] attrib
@@ -7018,6 +7020,8 @@
           val a_srclang : Html5_types.nmtoken wrap -> [> `XML_lang ] attrib
           val a_srcset :
             Html5_types.image_candidate list wrap -> [> `Srcset ] attrib
+          val a_img_sizes :
+            Html5_types.text list wrap -> [> `Img_sizes ] attrib
           val a_start : Html5_types.number wrap -> [> `Start ] attrib
           val a_step :
             Html5_types.float_number option wrap -> [> `Step ] attrib
@@ -8893,6 +8897,8 @@
                 Html5_types.nmtoken wrap -> [> `XML_lang ] attrib
               val a_srcset :
                 Html5_types.image_candidate list wrap -> [> `Srcset ] attrib
+              val a_img_sizes :
+                Html5_types.text list wrap -> [> `Img_sizes ] attrib
               val a_start : Html5_types.number wrap -> [> `Start ] attrib
               val a_step :
                 Html5_types.float_number option wrap -> [> `Step ] attrib
@@ -10504,6 +10510,8 @@
           val a_srclang : Html5_types.nmtoken wrap -> [> `XML_lang ] attrib
           val a_srcset :
             Html5_types.image_candidate list wrap -> [> `Srcset ] attrib
+          val a_img_sizes :
+            Html5_types.text list wrap -> [> `Img_sizes ] attrib
           val a_start : Html5_types.number wrap -> [> `Start ] attrib
           val a_step :
             Html5_types.float_number option wrap -> [> `Step ] attrib
@@ -12398,6 +12406,8 @@
           val a_srclang : Html5_types.nmtoken wrap -> [> `XML_lang ] attrib
           val a_srcset :
             Html5_types.image_candidate list wrap -> [> `Srcset ] attrib
+          val a_img_sizes :
+            Html5_types.text list wrap -> [> `Img_sizes ] attrib
           val a_start : Html5_types.number wrap -> [> `Start ] attrib
           val a_step :
             Html5_types.float_number option wrap -> [> `Step ] attrib
@@ -13859,10 +13869,12 @@
         end
     end
   val set_client_fun :
-    ('a, 'b, [< Eliom_service.service_method ], [< Eliom_service.attached ],
-     [< Eliom_service.service_kind ], [< Eliom_service.suff ], 'e, 'f,
-     [< Eliom_service.registrable ], 'return)
-    Eliom_service.service ->
+    ?app:string ->
+    service:('a, 'b, [< Eliom_service.service_method ],
+             [< Eliom_service.attached ], [< Eliom_service.service_kind ],
+             [< Eliom_service.suff ], 'e, 'f, [< Eliom_service.registrable ],
+             'return)
+            Eliom_service.service ->
     ('a -> 'b -> [ `Html ] Eliom_content.Html5.elt Lwt.t)
     Eliom_lib.client_value -> unit
 end >>

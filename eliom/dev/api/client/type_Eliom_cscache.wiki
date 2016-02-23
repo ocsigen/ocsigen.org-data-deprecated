@@ -1,5 +1,7 @@
 <<code language="ocaml" | sig
-  type ('a, 'b) t
+  type ('a, 'b) local_t
+  type ('a, 'b) t = ('a, 'b) Eliom_cscache.local_t Eliom_lib.shared_value
+  val local_create : unit -> ('a, 'b) Eliom_cscache.local_t
   val find : ('a, 'b) Eliom_cscache.t -> ('a -> 'b Lwt.t) -> 'a -> 'b Lwt.t
   val do_cache : ('a, 'b) Eliom_cscache.t -> 'a -> 'b -> unit
   val local_find : ('a, 'b) Eliom_cscache.t -> 'a -> 'b Lwt.t

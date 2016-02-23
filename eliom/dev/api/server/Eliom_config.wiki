@@ -68,3 +68,6 @@ file~.
     ~The configuration may have been modified by previous ~Ocsigen server
     extensions~.
 >>
+<<pre id="VALget_debugmode" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|get~_debugmode>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|unit <<span class="ocsforge_color_delimiter"| -> >> bool>>>><<div class="odocwiki_info"|~Same as <<span class="odocwiki_inlinecode"|~Ocsigen~_config~.get~_debugmode>>~.
+    ~On client side~, returns <<span class="odocwiki_inlinecode"|false>> for now~.
+>>
