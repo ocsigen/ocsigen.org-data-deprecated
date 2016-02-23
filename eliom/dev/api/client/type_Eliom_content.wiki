@@ -217,29 +217,29 @@
                   | `Ref of Svg_types.glyphref elt list ]
               val pcdata : string wrap -> [> `PCDATA ] elt
               val a_version : string wrap -> [> `Version ] attrib
-              val a_baseprofile : string wrap -> [> `BaseProfile ] attrib
+              val a_baseProfile : string wrap -> [> `BaseProfile ] attrib
               val a_x : Svg_types.coord wrap -> [> `X ] attrib
               val a_y : Svg_types.coord wrap -> [> `Y ] attrib
               val a_width : Svg_types.Unit.length wrap -> [> `Width ] attrib
               val a_height :
                 Svg_types.Unit.length wrap -> [> `Height ] attrib
-              val a_preserveaspectratio :
+              val a_preserveAspectRatio :
                 string wrap -> [> `PreserveAspectRatio ] attrib
-              val a_contentscripttype :
+              val a_contentScriptType :
                 string wrap -> [> `ContentScriptType ] attrib
-              val a_contentstyletype :
+              val a_contentStyleType :
                 string wrap -> [> `ContentStyleType ] attrib
               val a_zoomAndPan :
                 [< `Disable | `Magnify ] wrap -> [> `ZoomAndSpan ] attrib
               val a_xlink_href :
                 Svg_types.iri wrap -> [> `Xlink_href ] attrib
-              val a_requiredfeatures :
+              val a_requiredFeatures :
                 Svg_types.spacestrings wrap -> [> `RequiredFeatures ] attrib
-              val a_requiredextensions :
+              val a_requiredExtensions :
                 Svg_types.spacestrings wrap -> [> `RequiredExtension ] attrib
-              val a_systemlanguage :
+              val a_systemLanguage :
                 Svg_types.commastrings wrap -> [> `SystemLanguage ] attrib
-              val a_externalressourcesrequired :
+              val a_externalRessourcesRequired :
                 bool wrap -> [> `ExternalRessourcesRequired ] attrib
               val a_id : string wrap -> [> `Id ] attrib
               val a_xml_base : Svg_types.iri wrap -> [> `Xml_Base ] attrib
@@ -253,10 +253,10 @@
               val a_style : string wrap -> [> `Style ] attrib
               val a_transform :
                 Svg_types.transform wrap -> [> `Transform ] attrib
-              val a_viewbox :
+              val a_viewBox :
                 Svg_types.fourfloats wrap -> [> `ViewBox ] attrib
               val a_d : string wrap -> [> `D ] attrib
-              val a_pathlength : float wrap -> [> `PathLength ] attrib
+              val a_pathLength : float wrap -> [> `PathLength ] attrib
               val a_rx : Svg_types.Unit.length wrap -> [> `Rx ] attrib
               val a_ry : Svg_types.Unit.length wrap -> [> `Ry ] attrib
               val a_cx : Svg_types.Unit.length wrap -> [> `Cx ] attrib
@@ -273,10 +273,10 @@
               val a_dy : Svg_types.number wrap -> [> `Dy ] attrib
               val a_dx_list : Svg_types.lengths wrap -> [> `Dx_list ] attrib
               val a_dy_list : Svg_types.lengths wrap -> [> `Dy_list ] attrib
-              val a_lengthadjust :
+              val a_lengthAdjust :
                 [< `Spacing | `SpacingAndGlyphs ] wrap ->
                 [> `LengthAdjust ] attrib
-              val a_textlength :
+              val a_textLength :
                 Svg_types.Unit.length wrap -> [> `TextLength ] attrib
               val a_text_anchor :
                 [< `End | `Inherit | `Middle | `Start ] wrap ->
@@ -297,40 +297,40 @@
                  | `OptimizeSpeed ]
                 wrap -> [> `Text_Rendering ] attrib
               val a_rotate : Svg_types.numbers wrap -> [> `Rotate ] attrib
-              val a_startoffset :
+              val a_startOffset :
                 Svg_types.Unit.length wrap -> [> `StartOffset ] attrib
               val a_method :
                 [< `Align | `Stretch ] wrap -> [> `Method ] attrib
               val a_spacing :
                 [< `Auto | `Exact ] wrap -> [> `Spacing ] attrib
-              val a_glyphref : string wrap -> [> `GlyphRef ] attrib
+              val a_glyphRef : string wrap -> [> `GlyphRef ] attrib
               val a_format : string wrap -> [> `Format ] attrib
-              val a_markerunits :
+              val a_markerUnits :
                 [< `StrokeWidth | `UserSpaceOnUse ] wrap ->
                 [> `MarkerUnits ] attrib
-              val a_refx : Svg_types.coord wrap -> [> `RefX ] attrib
-              val a_refy : Svg_types.coord wrap -> [> `RefY ] attrib
-              val a_markerwidth :
+              val a_refX : Svg_types.coord wrap -> [> `RefX ] attrib
+              val a_refY : Svg_types.coord wrap -> [> `RefY ] attrib
+              val a_markerWidth :
                 Svg_types.Unit.length wrap -> [> `MarkerWidth ] attrib
-              val a_markerheight :
+              val a_markerHeight :
                 Svg_types.Unit.length wrap -> [> `MarkerHeight ] attrib
               val a_orient :
                 [< `Angle of Svg_types.Unit.angle | `Auto ] wrap ->
                 [> `Orient ] attrib
               val a_local : string wrap -> [> `Local ] attrib
-              val a_renderingindent :
+              val a_rendering_intent :
                 [< `Absolute_colorimetric
                  | `Auto
                  | `Perceptual
                  | `Relative_colorimetric
                  | `Saturation ]
                 wrap -> [> `Rendering_Indent ] attrib
-              val a_gradientunits :
+              val a_gradientUnits :
                 [< `ObjectBoundingBox | `UserSpaceOnUse ] wrap ->
                 [ `GradientUnits ] attrib
-              val a_gradienttransform :
+              val a_gradientTransform :
                 Svg_types.transforms wrap -> [> `Gradient_Transform ] attrib
-              val a_spreadmethod :
+              val a_spreadMethod :
                 [< `Pad | `Reflect | `Repeat ] wrap ->
                 [> `SpreadMethod ] attrib
               val a_fx : Svg_types.coord wrap -> [> `Fx ] attrib
@@ -339,27 +339,27 @@
                 [< `Number of Svg_types.number
                  | `Percentage of Svg_types.percentage ]
                 wrap -> [> `Offset ] attrib
-              val a_patternunits :
+              val a_patternUnits :
                 [< `ObjectBoundingBox | `UserSpaceOnUse ] wrap ->
                 [> `PatternUnits ] attrib
-              val a_patterncontentunits :
+              val a_patternContentUnits :
                 [< `ObjectBoundingBox | `UserSpaceOnUse ] wrap ->
                 [> `PatternContentUnits ] attrib
-              val a_patterntransform :
+              val a_patternTransform :
                 Svg_types.transforms wrap -> [> `PatternTransform ] attrib
-              val a_clippathunits :
+              val a_clipPathUnits :
                 [< `ObjectBoundingBox | `UserSpaceOnUse ] wrap ->
                 [> `ClipPathUnits ] attrib
-              val a_maskunits :
+              val a_maskUnits :
                 [< `ObjectBoundingBox | `UserSpaceOnUse ] wrap ->
                 [> `MaskUnits ] attrib
-              val a_maskcontentunits :
+              val a_maskContentUnits :
                 [< `ObjectBoundingBox | `UserSpaceOnUse ] wrap ->
                 [> `MaskContentUnits ] attrib
-              val a_primitiveunits :
+              val a_primitiveUnits :
                 [< `ObjectBoundingBox | `UserSpaceOnUse ] wrap ->
                 [> `PrimitiveUnits ] attrib
-              val a_filterres :
+              val a_filterRes :
                 Svg_types.number_optional_number wrap ->
                 [> `FilterResUnits ] attrib
               val a_result : string wrap -> [> `Result ] attrib
@@ -381,36 +381,36 @@
                  | `SourceGraphic
                  | `StrokePaint ]
                 wrap -> [> `In2 ] attrib
-              val a_aizmuth : float wrap -> [> `Azimuth ] attrib
+              val a_azimuth : float wrap -> [> `Azimuth ] attrib
               val a_elevation : float wrap -> [> `Elevation ] attrib
-              val a_pointatx : float wrap -> [> `PointsAtX ] attrib
-              val a_pointaty : float wrap -> [> `PointsAtY ] attrib
-              val a_pointatz : float wrap -> [> `PointsAtZ ] attrib
-              val a_specularexponent :
+              val a_pointsAtX : float wrap -> [> `PointsAtX ] attrib
+              val a_pointsAtY : float wrap -> [> `PointsAtY ] attrib
+              val a_pointsAtZ : float wrap -> [> `PointsAtZ ] attrib
+              val a_specularExponent :
                 float wrap -> [> `SpecularExponent ] attrib
-              val a_specularconstant :
+              val a_specularConstant :
                 float wrap -> [> `SpecularConstant ] attrib
-              val a_limitingconeangle :
+              val a_limitingConeAngle :
                 float wrap -> [> `LimitingConeAngle ] attrib
               val a_mode :
                 [< `Darken | `Lighten | `Multiply | `Normal | `Screen ] wrap ->
                 [> `Mode ] attrib
-              val a_typefecolor :
+              val a_feColorMatrix_type :
                 [< `HueRotate | `LuminanceToAlpha | `Matrix | `Saturate ]
                 wrap -> [> `Typefecolor ] attrib
               val a_values : Svg_types.numbers wrap -> [> `Values ] attrib
-              val a_transferttype :
+              val a_type_transfer :
                 [< `Discrete | `Gamma | `Identity | `Linear | `Table ] wrap ->
-                [> `Typetransfert ] attrib
-              val a_tablevalues :
+                [> `Type_transfert ] attrib
+              val a_tableValues :
                 Svg_types.numbers wrap -> [> `TableValues ] attrib
               val a_intercept :
                 Svg_types.number wrap -> [> `Intercept ] attrib
               val a_amplitude :
                 Svg_types.number wrap -> [> `Amplitude ] attrib
               val a_exponent : Svg_types.number wrap -> [> `Exponent ] attrib
-              val a_offsettransfer :
-                Svg_types.number wrap -> [> `Offsettransfer ] attrib
+              val a_offset_transfer :
+                Svg_types.number wrap -> [> `Offset_transfer ] attrib
               val a_operator :
                 [< `Arithmetic | `Atop | `In | `Out | `Over | `Xor ] wrap ->
                 [> `Operator ] attrib
@@ -420,53 +420,53 @@
               val a_k4 : Svg_types.number wrap -> [> `K4 ] attrib
               val a_order :
                 Svg_types.number_optional_number wrap -> [> `Order ] attrib
-              val a_kernelmatrix :
+              val a_kernelMatrix :
                 Svg_types.numbers wrap -> [> `KernelMatrix ] attrib
               val a_divisor : Svg_types.number wrap -> [> `Divisor ] attrib
               val a_bias : Svg_types.number wrap -> [> `Bias ] attrib
-              val a_kernelunitlength :
+              val a_kernelUnitLength :
                 Svg_types.number_optional_number wrap ->
                 [> `KernelUnitLength ] attrib
               val a_targetX : int wrap -> [> `TargetX ] attrib
               val a_targetY : int wrap -> [> `TargetY ] attrib
-              val a_edgemode :
+              val a_edgeMode :
                 [< `Duplicate | `None | `Wrap ] wrap -> [> `TargetY ] attrib
-              val a_preservealpha : bool wrap -> [> `TargetY ] attrib
-              val a_surfacescale :
+              val a_preserveAlpha : bool wrap -> [> `TargetY ] attrib
+              val a_surfaceScale :
                 Svg_types.number wrap -> [> `SurfaceScale ] attrib
-              val a_diffuseconstant :
+              val a_diffuseConstant :
                 Svg_types.number wrap -> [> `DiffuseConstant ] attrib
               val a_scale : Svg_types.number wrap -> [> `Scale ] attrib
-              val a_xchannelselector :
+              val a_xChannelSelector :
                 [< `A | `B | `G | `R ] wrap -> [> `XChannelSelector ] attrib
-              val a_ychannelselector :
+              val a_yChannelSelector :
                 [< `A | `B | `G | `R ] wrap -> [> `YChannelSelector ] attrib
-              val a_stddeviation :
+              val a_stdDeviation :
                 Svg_types.number_optional_number wrap ->
                 [> `StdDeviation ] attrib
-              val a_operatormorphology :
+              val a_feMorphology_operator :
                 [< `Dilate | `Erode ] wrap -> [> `OperatorMorphology ] attrib
               val a_radius :
                 Svg_types.number_optional_number wrap -> [> `Radius ] attrib
-              val a_basefrenquency :
+              val a_baseFrenquency :
                 Svg_types.number_optional_number wrap ->
                 [> `BaseFrequency ] attrib
-              val a_numoctaves : int wrap -> [> `NumOctaves ] attrib
+              val a_numOctaves : int wrap -> [> `NumOctaves ] attrib
               val a_seed : Svg_types.number wrap -> [> `Seed ] attrib
-              val a_stitchtiles :
+              val a_stitchTiles :
                 [< `NoStitch | `Stitch ] wrap -> [> `StitchTiles ] attrib
-              val a_stitchtype :
+              val a_feTurbulence_type :
                 [< `FractalNoise | `Turbulence ] wrap ->
                 [> `TypeStitch ] attrib
-              val a_xlinkshow :
+              val a_xlink_show :
                 [< `New | `Replace ] wrap -> [> `Xlink_show ] attrib
-              val a_xlinkactuate :
+              val a_xlink_actuate :
                 [< `None | `OnLoad | `OnRequest | `Other ] wrap ->
                 [> `Xlink_actuate ] attrib
               val a_target : string wrap -> [> `Xlink_target ] attrib
-              val a_viewtarget : string wrap -> [> `ViewTarget ] attrib
-              val a_attributename : string wrap -> [> `AttributeName ] attrib
-              val a_attributetype :
+              val a_viewTarget : string wrap -> [> `ViewTarget ] attrib
+              val a_attributeName : string wrap -> [> `AttributeName ] attrib
+              val a_attributeType :
                 [< `Auto | `CSS | `XML ] wrap -> [> `AttributeType ] attrib
               val a_begin : string wrap -> [> `Begin ] attrib
               val a_dur : string wrap -> [> `Dur ] attrib
@@ -475,19 +475,19 @@
               val a_restart :
                 [< `Always | `Never | `WhenNotActive ] wrap ->
                 [> `Restart ] attrib
-              val a_repeatcount : string wrap -> [> `RepeatCount ] attrib
-              val a_repeatdur : string wrap -> [> `RepeatDur ] attrib
+              val a_repeatCount : string wrap -> [> `RepeatCount ] attrib
+              val a_repeatDur : string wrap -> [> `RepeatDur ] attrib
               val a_fill : Svg_types.paint wrap -> [> `Fill ] attrib
-              val a_fill_animation :
+              val a_animation_fill :
                 [< `Freeze | `Remove ] wrap -> [> `Fill_Animation ] attrib
-              val a_calcmode :
+              val a_calcMode :
                 [< `Discrete | `Linear | `Paced | `Spline ] wrap ->
                 [> `CalcMode ] attrib
-              val a_values_anim :
+              val a_animation_values :
                 Svg_types.strings wrap -> [> `Valuesanim ] attrib
-              val a_keytimes :
+              val a_keyTimes :
                 Svg_types.strings wrap -> [> `KeyTimes ] attrib
-              val a_keysplines :
+              val a_keySplines :
                 Svg_types.strings wrap -> [> `KeySplines ] attrib
               val a_from : string wrap -> [> `From ] attrib
               val a_to : string wrap -> [> `To ] attrib
@@ -496,29 +496,29 @@
                 [< `Replace | `Sum ] wrap -> [> `Additive ] attrib
               val a_accumulate :
                 [< `None | `Sum ] wrap -> [> `Accumulate ] attrib
-              val a_keypoints :
+              val a_keyPoints :
                 Svg_types.numbers_semicolon wrap -> [> `KeyPoints ] attrib
               val a_path : string wrap -> [> `Path ] attrib
-              val a_typeanimatecolor :
+              val a_animateColor_type :
                 [ `Rotate | `Scale | `SkewX | `SkewY | `Translate ] wrap ->
                 [ `Typeanimatecolor ] attrib
               val a_horiz_origin_x :
-                Svg_types.number wrap -> [> `Horizoriginx ] attrib
+                Svg_types.number wrap -> [> `HorizOriginX ] attrib
               val a_horiz_origin_y :
-                Svg_types.number wrap -> [> `Horizoriginy ] attrib
+                Svg_types.number wrap -> [> `HorizOriginY ] attrib
               val a_horiz_adv_x :
-                Svg_types.number wrap -> [> `Horizadvx ] attrib
+                Svg_types.number wrap -> [> `HorizAdvX ] attrib
               val a_vert_origin_x :
-                Svg_types.number wrap -> [> `Vertoriginx ] attrib
+                Svg_types.number wrap -> [> `VertOriginX ] attrib
               val a_vert_origin_y :
-                Svg_types.number wrap -> [> `Vertoriginy ] attrib
+                Svg_types.number wrap -> [> `VertOriginY ] attrib
               val a_vert_adv_y :
-                Svg_types.number wrap -> [> `Vertadvy ] attrib
+                Svg_types.number wrap -> [> `VertAdvY ] attrib
               val a_unicode : string wrap -> [> `Unicode ] attrib
-              val a_glyphname : string wrap -> [> `glyphname ] attrib
+              val a_glyph_name : string wrap -> [> `glyphname ] attrib
               val a_orientation :
                 [< `H | `V ] wrap -> [> `Orientation ] attrib
-              val a_arabicform :
+              val a_arabic_form :
                 [< `Initial | `Isolated | `Medial | `Terminal ] wrap ->
                 [> `Arabicform ] attrib
               val a_lang : string wrap -> [> `Lang ] attrib
@@ -527,21 +527,21 @@
               val a_g1 : string wrap -> [> `G1 ] attrib
               val a_g2 : string wrap -> [> `G2 ] attrib
               val a_k : string wrap -> [> `K ] attrib
-              val a_fontfamily : string wrap -> [> `Font_Family ] attrib
-              val a_fontstyle : string wrap -> [> `Font_Style ] attrib
-              val a_fontvariant : string wrap -> [> `Font_Variant ] attrib
-              val a_fontweight : string wrap -> [> `Font_Weight ] attrib
-              val a_fontstretch : string wrap -> [> `Font_Stretch ] attrib
-              val a_fontsize : string wrap -> [> `Font_Size ] attrib
-              val a_unicoderange : string wrap -> [> `UnicodeRange ] attrib
-              val a_unitsperem : string wrap -> [> `UnitsPerEm ] attrib
+              val a_font_family : string wrap -> [> `Font_Family ] attrib
+              val a_font_style : string wrap -> [> `Font_Style ] attrib
+              val a_font_variant : string wrap -> [> `Font_Variant ] attrib
+              val a_font_weight : string wrap -> [> `Font_Weight ] attrib
+              val a_font_stretch : string wrap -> [> `Font_Stretch ] attrib
+              val a_font_size : string wrap -> [> `Font_Size ] attrib
+              val a_unicode_range : string wrap -> [> `UnicodeRange ] attrib
+              val a_units_per_em : string wrap -> [> `UnitsPerEm ] attrib
               val a_stemv : Svg_types.number wrap -> [> `Stemv ] attrib
               val a_stemh : Svg_types.number wrap -> [> `Stemh ] attrib
               val a_slope : Svg_types.number wrap -> [> `Slope ] attrib
-              val a_capheight :
+              val a_cap_height :
                 Svg_types.number wrap -> [> `CapHeight ] attrib
-              val a_xheight : Svg_types.number wrap -> [> `XHeight ] attrib
-              val a_accentheight :
+              val a_x_height : Svg_types.number wrap -> [> `XHeight ] attrib
+              val a_accent_height :
                 Svg_types.number wrap -> [> `AccentHeight ] attrib
               val a_ascent : Svg_types.number wrap -> [> `Ascent ] attrib
               val a_widths : string wrap -> [> `Widths ] attrib
@@ -555,22 +555,23 @@
               val a_hanging : Svg_types.number wrap -> [> `Hanging ] attrib
               val a_videographic :
                 Svg_types.number wrap -> [> `VIdeographic ] attrib
-              val a_valphabetic :
+              val a_v_alphabetic :
                 Svg_types.number wrap -> [> `VAlphabetic ] attrib
-              val a_vmathematical :
+              val a_v_mathematical :
                 Svg_types.number wrap -> [> `VMathematical ] attrib
-              val a_vhanging : Svg_types.number wrap -> [> `VHanging ] attrib
-              val a_underlineposition :
+              val a_v_hanging :
+                Svg_types.number wrap -> [> `VHanging ] attrib
+              val a_underline_position :
                 Svg_types.number wrap -> [> `UnderlinePosition ] attrib
-              val a_underlinethickness :
+              val a_underline_thickness :
                 Svg_types.number wrap -> [> `UnderlineThickness ] attrib
-              val a_strikethroughposition :
+              val a_strikethrough_position :
                 Svg_types.number wrap -> [> `StrikethroughPosition ] attrib
-              val a_strikethroughthickness :
+              val a_strikethrough_thickness :
                 Svg_types.number wrap -> [> `StrikethroughThickness ] attrib
-              val a_overlineposition :
+              val a_overline_position :
                 Svg_types.number wrap -> [> `OverlinePosition ] attrib
-              val a_overlinethickness :
+              val a_overline_thickness :
                 Svg_types.number wrap -> [> `OverlineThickness ] attrib
               val a_string : string wrap -> [> `String ] attrib
               val a_name : string wrap -> [> `Name ] attrib
@@ -631,30 +632,31 @@
               val metadata :
                 ?a:Svg_types.metadata_attr attrib list ->
                 Xml.elt list_wrap -> [> Svg_types.metadata ] elt
-              val foreignobject :
+              val foreignObject :
                 ?a:Svg_types.foreignobject_attr attrib list ->
                 Xml.elt list_wrap -> [> Svg_types.foreignobject ] elt
-              val a_stopcolor :
+              val a_stop_color :
                 Svg_types.color wrap -> [> `Stop_Color ] attrib
-              val a_stopopacity :
+              val a_stop_opacity :
                 Svg_types.number wrap -> [> `Stop_Opacity ] attrib
               val a_stroke : Svg_types.paint wrap -> [> `Stroke ] attrib
-              val a_strokewidth :
+              val a_stroke_width :
                 Svg_types.Unit.length wrap -> [> `Stroke_Width ] attrib
-              val a_strokelinecap :
+              val a_stroke_linecap :
                 [< `Butt | `Round | `Square ] wrap ->
                 [> `Stroke_Linecap ] attrib
-              val a_strokelinejoin :
+              val a_stroke_linejoin :
                 [< `Bever | `Miter | `Round ] wrap ->
                 [> `Stroke_Linejoin ] attrib
-              val a_strokemiterlimit :
+              val a_stroke_miterlimit :
                 float wrap -> [> `Stroke_Miterlimit ] attrib
-              val a_strokedasharray :
+              val a_stroke_dasharray :
                 Svg_types.Unit.length list wrap ->
                 [> `Stroke_Dasharray ] attrib
-              val a_strokedashoffset :
+              val a_stroke_dashoffset :
                 Svg_types.Unit.length wrap -> [> `Stroke_Dashoffset ] attrib
-              val a_strokeopacity : float wrap -> [> `Stroke_Opacity ] attrib
+              val a_stroke_opacity :
+                float wrap -> [> `Stroke_Opacity ] attrib
               val svg :
                 ([< Svg_types.svg_attr ], [< Svg_types.svg_content ],
                  [> Svg_types.svg ])
@@ -955,26 +957,26 @@
                 ([< Svg_types.hkern_attr ], [> Svg_types.hkern ]) nullary
               val vkern :
                 ([< Svg_types.vkern_attr ], [> Svg_types.vkern ]) nullary
-              val fontface :
-                ([< Svg_types.fontface_attr ], [> Svg_types.fontface ])
+              val font_face :
+                ([< Svg_types.font_face_attr ], [> Svg_types.font_face ])
                 nullary
-              val fontfacesrc :
-                ([< Svg_types.fontfacesrc_attr ],
-                 [< Svg_types.fontfacesrc_content ],
-                 [> Svg_types.fontfacesrc ])
+              val font_face_src :
+                ([< Svg_types.font_face_src_attr ],
+                 [< Svg_types.font_face_src_content ],
+                 [> Svg_types.font_face_src ])
                 star
-              val fontfaceuri :
-                ([< Svg_types.fontfaceuri_attr ],
-                 [< Svg_types.fontfaceuri_content ],
-                 [> Svg_types.fontfaceuri ])
+              val font_face_uri :
+                ([< Svg_types.font_face_uri_attr ],
+                 [< Svg_types.font_face_uri_content ],
+                 [> Svg_types.font_face_uri ])
                 star
-              val fontfaceformat :
-                ([< Svg_types.fontfaceformat_attr ],
-                 [> Svg_types.fontfaceformat ])
+              val font_face_format :
+                ([< Svg_types.font_face_format_attr ],
+                 [> Svg_types.font_face_format ])
                 nullary
-              val fontfacename :
-                ([< Svg_types.fontfacename_attr ],
-                 [> Svg_types.fontfacename ])
+              val font_face_name :
+                ([< Svg_types.font_face_name_attr ],
+                 [> Svg_types.font_face_name ])
                 nullary
               val tot : Xml.elt -> 'a elt
               val totl : Xml.elt list -> 'a elt list
@@ -1069,27 +1071,27 @@
               | `Ref of Svg_types.glyphref elt list ]
           val pcdata : string wrap -> [> `PCDATA ] elt
           val a_version : string wrap -> [> `Version ] attrib
-          val a_baseprofile : string wrap -> [> `BaseProfile ] attrib
+          val a_baseProfile : string wrap -> [> `BaseProfile ] attrib
           val a_x : Svg_types.coord wrap -> [> `X ] attrib
           val a_y : Svg_types.coord wrap -> [> `Y ] attrib
           val a_width : Svg_types.Unit.length wrap -> [> `Width ] attrib
           val a_height : Svg_types.Unit.length wrap -> [> `Height ] attrib
-          val a_preserveaspectratio :
+          val a_preserveAspectRatio :
             string wrap -> [> `PreserveAspectRatio ] attrib
-          val a_contentscripttype :
+          val a_contentScriptType :
             string wrap -> [> `ContentScriptType ] attrib
-          val a_contentstyletype :
+          val a_contentStyleType :
             string wrap -> [> `ContentStyleType ] attrib
           val a_zoomAndPan :
             [< `Disable | `Magnify ] wrap -> [> `ZoomAndSpan ] attrib
           val a_xlink_href : Svg_types.iri wrap -> [> `Xlink_href ] attrib
-          val a_requiredfeatures :
+          val a_requiredFeatures :
             Svg_types.spacestrings wrap -> [> `RequiredFeatures ] attrib
-          val a_requiredextensions :
+          val a_requiredExtensions :
             Svg_types.spacestrings wrap -> [> `RequiredExtension ] attrib
-          val a_systemlanguage :
+          val a_systemLanguage :
             Svg_types.commastrings wrap -> [> `SystemLanguage ] attrib
-          val a_externalressourcesrequired :
+          val a_externalRessourcesRequired :
             bool wrap -> [> `ExternalRessourcesRequired ] attrib
           val a_id : string wrap -> [> `Id ] attrib
           val a_xml_base : Svg_types.iri wrap -> [> `Xml_Base ] attrib
@@ -1103,9 +1105,9 @@
           val a_style : string wrap -> [> `Style ] attrib
           val a_transform :
             Svg_types.transform wrap -> [> `Transform ] attrib
-          val a_viewbox : Svg_types.fourfloats wrap -> [> `ViewBox ] attrib
+          val a_viewBox : Svg_types.fourfloats wrap -> [> `ViewBox ] attrib
           val a_d : string wrap -> [> `D ] attrib
-          val a_pathlength : float wrap -> [> `PathLength ] attrib
+          val a_pathLength : float wrap -> [> `PathLength ] attrib
           val a_rx : Svg_types.Unit.length wrap -> [> `Rx ] attrib
           val a_ry : Svg_types.Unit.length wrap -> [> `Ry ] attrib
           val a_cx : Svg_types.Unit.length wrap -> [> `Cx ] attrib
@@ -1122,10 +1124,10 @@
           val a_dy : Svg_types.number wrap -> [> `Dy ] attrib
           val a_dx_list : Svg_types.lengths wrap -> [> `Dx_list ] attrib
           val a_dy_list : Svg_types.lengths wrap -> [> `Dy_list ] attrib
-          val a_lengthadjust :
+          val a_lengthAdjust :
             [< `Spacing | `SpacingAndGlyphs ] wrap ->
             [> `LengthAdjust ] attrib
-          val a_textlength :
+          val a_textLength :
             Svg_types.Unit.length wrap -> [> `TextLength ] attrib
           val a_text_anchor :
             [< `End | `Inherit | `Middle | `Start ] wrap ->
@@ -1146,38 +1148,38 @@
              | `OptimizeSpeed ]
             wrap -> [> `Text_Rendering ] attrib
           val a_rotate : Svg_types.numbers wrap -> [> `Rotate ] attrib
-          val a_startoffset :
+          val a_startOffset :
             Svg_types.Unit.length wrap -> [> `StartOffset ] attrib
           val a_method : [< `Align | `Stretch ] wrap -> [> `Method ] attrib
           val a_spacing : [< `Auto | `Exact ] wrap -> [> `Spacing ] attrib
-          val a_glyphref : string wrap -> [> `GlyphRef ] attrib
+          val a_glyphRef : string wrap -> [> `GlyphRef ] attrib
           val a_format : string wrap -> [> `Format ] attrib
-          val a_markerunits :
+          val a_markerUnits :
             [< `StrokeWidth | `UserSpaceOnUse ] wrap ->
             [> `MarkerUnits ] attrib
-          val a_refx : Svg_types.coord wrap -> [> `RefX ] attrib
-          val a_refy : Svg_types.coord wrap -> [> `RefY ] attrib
-          val a_markerwidth :
+          val a_refX : Svg_types.coord wrap -> [> `RefX ] attrib
+          val a_refY : Svg_types.coord wrap -> [> `RefY ] attrib
+          val a_markerWidth :
             Svg_types.Unit.length wrap -> [> `MarkerWidth ] attrib
-          val a_markerheight :
+          val a_markerHeight :
             Svg_types.Unit.length wrap -> [> `MarkerHeight ] attrib
           val a_orient :
             [< `Angle of Svg_types.Unit.angle | `Auto ] wrap ->
             [> `Orient ] attrib
           val a_local : string wrap -> [> `Local ] attrib
-          val a_renderingindent :
+          val a_rendering_intent :
             [< `Absolute_colorimetric
              | `Auto
              | `Perceptual
              | `Relative_colorimetric
              | `Saturation ]
             wrap -> [> `Rendering_Indent ] attrib
-          val a_gradientunits :
+          val a_gradientUnits :
             [< `ObjectBoundingBox | `UserSpaceOnUse ] wrap ->
             [ `GradientUnits ] attrib
-          val a_gradienttransform :
+          val a_gradientTransform :
             Svg_types.transforms wrap -> [> `Gradient_Transform ] attrib
-          val a_spreadmethod :
+          val a_spreadMethod :
             [< `Pad | `Reflect | `Repeat ] wrap -> [> `SpreadMethod ] attrib
           val a_fx : Svg_types.coord wrap -> [> `Fx ] attrib
           val a_fy : Svg_types.coord wrap -> [> `Fy ] attrib
@@ -1185,27 +1187,27 @@
             [< `Number of Svg_types.number
              | `Percentage of Svg_types.percentage ]
             wrap -> [> `Offset ] attrib
-          val a_patternunits :
+          val a_patternUnits :
             [< `ObjectBoundingBox | `UserSpaceOnUse ] wrap ->
             [> `PatternUnits ] attrib
-          val a_patterncontentunits :
+          val a_patternContentUnits :
             [< `ObjectBoundingBox | `UserSpaceOnUse ] wrap ->
             [> `PatternContentUnits ] attrib
-          val a_patterntransform :
+          val a_patternTransform :
             Svg_types.transforms wrap -> [> `PatternTransform ] attrib
-          val a_clippathunits :
+          val a_clipPathUnits :
             [< `ObjectBoundingBox | `UserSpaceOnUse ] wrap ->
             [> `ClipPathUnits ] attrib
-          val a_maskunits :
+          val a_maskUnits :
             [< `ObjectBoundingBox | `UserSpaceOnUse ] wrap ->
             [> `MaskUnits ] attrib
-          val a_maskcontentunits :
+          val a_maskContentUnits :
             [< `ObjectBoundingBox | `UserSpaceOnUse ] wrap ->
             [> `MaskContentUnits ] attrib
-          val a_primitiveunits :
+          val a_primitiveUnits :
             [< `ObjectBoundingBox | `UserSpaceOnUse ] wrap ->
             [> `PrimitiveUnits ] attrib
-          val a_filterres :
+          val a_filterRes :
             Svg_types.number_optional_number wrap ->
             [> `FilterResUnits ] attrib
           val a_result : string wrap -> [> `Result ] attrib
@@ -1227,34 +1229,34 @@
              | `SourceGraphic
              | `StrokePaint ]
             wrap -> [> `In2 ] attrib
-          val a_aizmuth : float wrap -> [> `Azimuth ] attrib
+          val a_azimuth : float wrap -> [> `Azimuth ] attrib
           val a_elevation : float wrap -> [> `Elevation ] attrib
-          val a_pointatx : float wrap -> [> `PointsAtX ] attrib
-          val a_pointaty : float wrap -> [> `PointsAtY ] attrib
-          val a_pointatz : float wrap -> [> `PointsAtZ ] attrib
-          val a_specularexponent :
+          val a_pointsAtX : float wrap -> [> `PointsAtX ] attrib
+          val a_pointsAtY : float wrap -> [> `PointsAtY ] attrib
+          val a_pointsAtZ : float wrap -> [> `PointsAtZ ] attrib
+          val a_specularExponent :
             float wrap -> [> `SpecularExponent ] attrib
-          val a_specularconstant :
+          val a_specularConstant :
             float wrap -> [> `SpecularConstant ] attrib
-          val a_limitingconeangle :
+          val a_limitingConeAngle :
             float wrap -> [> `LimitingConeAngle ] attrib
           val a_mode :
             [< `Darken | `Lighten | `Multiply | `Normal | `Screen ] wrap ->
             [> `Mode ] attrib
-          val a_typefecolor :
+          val a_feColorMatrix_type :
             [< `HueRotate | `LuminanceToAlpha | `Matrix | `Saturate ] wrap ->
             [> `Typefecolor ] attrib
           val a_values : Svg_types.numbers wrap -> [> `Values ] attrib
-          val a_transferttype :
+          val a_type_transfer :
             [< `Discrete | `Gamma | `Identity | `Linear | `Table ] wrap ->
-            [> `Typetransfert ] attrib
-          val a_tablevalues :
+            [> `Type_transfert ] attrib
+          val a_tableValues :
             Svg_types.numbers wrap -> [> `TableValues ] attrib
           val a_intercept : Svg_types.number wrap -> [> `Intercept ] attrib
           val a_amplitude : Svg_types.number wrap -> [> `Amplitude ] attrib
           val a_exponent : Svg_types.number wrap -> [> `Exponent ] attrib
-          val a_offsettransfer :
-            Svg_types.number wrap -> [> `Offsettransfer ] attrib
+          val a_offset_transfer :
+            Svg_types.number wrap -> [> `Offset_transfer ] attrib
           val a_operator :
             [< `Arithmetic | `Atop | `In | `Out | `Over | `Xor ] wrap ->
             [> `Operator ] attrib
@@ -1264,52 +1266,52 @@
           val a_k4 : Svg_types.number wrap -> [> `K4 ] attrib
           val a_order :
             Svg_types.number_optional_number wrap -> [> `Order ] attrib
-          val a_kernelmatrix :
+          val a_kernelMatrix :
             Svg_types.numbers wrap -> [> `KernelMatrix ] attrib
           val a_divisor : Svg_types.number wrap -> [> `Divisor ] attrib
           val a_bias : Svg_types.number wrap -> [> `Bias ] attrib
-          val a_kernelunitlength :
+          val a_kernelUnitLength :
             Svg_types.number_optional_number wrap ->
             [> `KernelUnitLength ] attrib
           val a_targetX : int wrap -> [> `TargetX ] attrib
           val a_targetY : int wrap -> [> `TargetY ] attrib
-          val a_edgemode :
+          val a_edgeMode :
             [< `Duplicate | `None | `Wrap ] wrap -> [> `TargetY ] attrib
-          val a_preservealpha : bool wrap -> [> `TargetY ] attrib
-          val a_surfacescale :
+          val a_preserveAlpha : bool wrap -> [> `TargetY ] attrib
+          val a_surfaceScale :
             Svg_types.number wrap -> [> `SurfaceScale ] attrib
-          val a_diffuseconstant :
+          val a_diffuseConstant :
             Svg_types.number wrap -> [> `DiffuseConstant ] attrib
           val a_scale : Svg_types.number wrap -> [> `Scale ] attrib
-          val a_xchannelselector :
+          val a_xChannelSelector :
             [< `A | `B | `G | `R ] wrap -> [> `XChannelSelector ] attrib
-          val a_ychannelselector :
+          val a_yChannelSelector :
             [< `A | `B | `G | `R ] wrap -> [> `YChannelSelector ] attrib
-          val a_stddeviation :
+          val a_stdDeviation :
             Svg_types.number_optional_number wrap ->
             [> `StdDeviation ] attrib
-          val a_operatormorphology :
+          val a_feMorphology_operator :
             [< `Dilate | `Erode ] wrap -> [> `OperatorMorphology ] attrib
           val a_radius :
             Svg_types.number_optional_number wrap -> [> `Radius ] attrib
-          val a_basefrenquency :
+          val a_baseFrenquency :
             Svg_types.number_optional_number wrap ->
             [> `BaseFrequency ] attrib
-          val a_numoctaves : int wrap -> [> `NumOctaves ] attrib
+          val a_numOctaves : int wrap -> [> `NumOctaves ] attrib
           val a_seed : Svg_types.number wrap -> [> `Seed ] attrib
-          val a_stitchtiles :
+          val a_stitchTiles :
             [< `NoStitch | `Stitch ] wrap -> [> `StitchTiles ] attrib
-          val a_stitchtype :
+          val a_feTurbulence_type :
             [< `FractalNoise | `Turbulence ] wrap -> [> `TypeStitch ] attrib
-          val a_xlinkshow :
+          val a_xlink_show :
             [< `New | `Replace ] wrap -> [> `Xlink_show ] attrib
-          val a_xlinkactuate :
+          val a_xlink_actuate :
             [< `None | `OnLoad | `OnRequest | `Other ] wrap ->
             [> `Xlink_actuate ] attrib
           val a_target : string wrap -> [> `Xlink_target ] attrib
-          val a_viewtarget : string wrap -> [> `ViewTarget ] attrib
-          val a_attributename : string wrap -> [> `AttributeName ] attrib
-          val a_attributetype :
+          val a_viewTarget : string wrap -> [> `ViewTarget ] attrib
+          val a_attributeName : string wrap -> [> `AttributeName ] attrib
+          val a_attributeType :
             [< `Auto | `CSS | `XML ] wrap -> [> `AttributeType ] attrib
           val a_begin : string wrap -> [> `Begin ] attrib
           val a_dur : string wrap -> [> `Dur ] attrib
@@ -1318,18 +1320,18 @@
           val a_restart :
             [< `Always | `Never | `WhenNotActive ] wrap ->
             [> `Restart ] attrib
-          val a_repeatcount : string wrap -> [> `RepeatCount ] attrib
-          val a_repeatdur : string wrap -> [> `RepeatDur ] attrib
+          val a_repeatCount : string wrap -> [> `RepeatCount ] attrib
+          val a_repeatDur : string wrap -> [> `RepeatDur ] attrib
           val a_fill : Svg_types.paint wrap -> [> `Fill ] attrib
-          val a_fill_animation :
+          val a_animation_fill :
             [< `Freeze | `Remove ] wrap -> [> `Fill_Animation ] attrib
-          val a_calcmode :
+          val a_calcMode :
             [< `Discrete | `Linear | `Paced | `Spline ] wrap ->
             [> `CalcMode ] attrib
-          val a_values_anim :
+          val a_animation_values :
             Svg_types.strings wrap -> [> `Valuesanim ] attrib
-          val a_keytimes : Svg_types.strings wrap -> [> `KeyTimes ] attrib
-          val a_keysplines :
+          val a_keyTimes : Svg_types.strings wrap -> [> `KeyTimes ] attrib
+          val a_keySplines :
             Svg_types.strings wrap -> [> `KeySplines ] attrib
           val a_from : string wrap -> [> `From ] attrib
           val a_to : string wrap -> [> `To ] attrib
@@ -1337,26 +1339,26 @@
           val a_additive : [< `Replace | `Sum ] wrap -> [> `Additive ] attrib
           val a_accumulate :
             [< `None | `Sum ] wrap -> [> `Accumulate ] attrib
-          val a_keypoints :
+          val a_keyPoints :
             Svg_types.numbers_semicolon wrap -> [> `KeyPoints ] attrib
           val a_path : string wrap -> [> `Path ] attrib
-          val a_typeanimatecolor :
+          val a_animateColor_type :
             [ `Rotate | `Scale | `SkewX | `SkewY | `Translate ] wrap ->
             [ `Typeanimatecolor ] attrib
           val a_horiz_origin_x :
-            Svg_types.number wrap -> [> `Horizoriginx ] attrib
+            Svg_types.number wrap -> [> `HorizOriginX ] attrib
           val a_horiz_origin_y :
-            Svg_types.number wrap -> [> `Horizoriginy ] attrib
-          val a_horiz_adv_x : Svg_types.number wrap -> [> `Horizadvx ] attrib
+            Svg_types.number wrap -> [> `HorizOriginY ] attrib
+          val a_horiz_adv_x : Svg_types.number wrap -> [> `HorizAdvX ] attrib
           val a_vert_origin_x :
-            Svg_types.number wrap -> [> `Vertoriginx ] attrib
+            Svg_types.number wrap -> [> `VertOriginX ] attrib
           val a_vert_origin_y :
-            Svg_types.number wrap -> [> `Vertoriginy ] attrib
-          val a_vert_adv_y : Svg_types.number wrap -> [> `Vertadvy ] attrib
+            Svg_types.number wrap -> [> `VertOriginY ] attrib
+          val a_vert_adv_y : Svg_types.number wrap -> [> `VertAdvY ] attrib
           val a_unicode : string wrap -> [> `Unicode ] attrib
-          val a_glyphname : string wrap -> [> `glyphname ] attrib
+          val a_glyph_name : string wrap -> [> `glyphname ] attrib
           val a_orientation : [< `H | `V ] wrap -> [> `Orientation ] attrib
-          val a_arabicform :
+          val a_arabic_form :
             [< `Initial | `Isolated | `Medial | `Terminal ] wrap ->
             [> `Arabicform ] attrib
           val a_lang : string wrap -> [> `Lang ] attrib
@@ -1365,20 +1367,20 @@
           val a_g1 : string wrap -> [> `G1 ] attrib
           val a_g2 : string wrap -> [> `G2 ] attrib
           val a_k : string wrap -> [> `K ] attrib
-          val a_fontfamily : string wrap -> [> `Font_Family ] attrib
-          val a_fontstyle : string wrap -> [> `Font_Style ] attrib
-          val a_fontvariant : string wrap -> [> `Font_Variant ] attrib
-          val a_fontweight : string wrap -> [> `Font_Weight ] attrib
-          val a_fontstretch : string wrap -> [> `Font_Stretch ] attrib
-          val a_fontsize : string wrap -> [> `Font_Size ] attrib
-          val a_unicoderange : string wrap -> [> `UnicodeRange ] attrib
-          val a_unitsperem : string wrap -> [> `UnitsPerEm ] attrib
+          val a_font_family : string wrap -> [> `Font_Family ] attrib
+          val a_font_style : string wrap -> [> `Font_Style ] attrib
+          val a_font_variant : string wrap -> [> `Font_Variant ] attrib
+          val a_font_weight : string wrap -> [> `Font_Weight ] attrib
+          val a_font_stretch : string wrap -> [> `Font_Stretch ] attrib
+          val a_font_size : string wrap -> [> `Font_Size ] attrib
+          val a_unicode_range : string wrap -> [> `UnicodeRange ] attrib
+          val a_units_per_em : string wrap -> [> `UnitsPerEm ] attrib
           val a_stemv : Svg_types.number wrap -> [> `Stemv ] attrib
           val a_stemh : Svg_types.number wrap -> [> `Stemh ] attrib
           val a_slope : Svg_types.number wrap -> [> `Slope ] attrib
-          val a_capheight : Svg_types.number wrap -> [> `CapHeight ] attrib
-          val a_xheight : Svg_types.number wrap -> [> `XHeight ] attrib
-          val a_accentheight :
+          val a_cap_height : Svg_types.number wrap -> [> `CapHeight ] attrib
+          val a_x_height : Svg_types.number wrap -> [> `XHeight ] attrib
+          val a_accent_height :
             Svg_types.number wrap -> [> `AccentHeight ] attrib
           val a_ascent : Svg_types.number wrap -> [> `Ascent ] attrib
           val a_widths : string wrap -> [> `Widths ] attrib
@@ -1391,22 +1393,22 @@
           val a_hanging : Svg_types.number wrap -> [> `Hanging ] attrib
           val a_videographic :
             Svg_types.number wrap -> [> `VIdeographic ] attrib
-          val a_valphabetic :
+          val a_v_alphabetic :
             Svg_types.number wrap -> [> `VAlphabetic ] attrib
-          val a_vmathematical :
+          val a_v_mathematical :
             Svg_types.number wrap -> [> `VMathematical ] attrib
-          val a_vhanging : Svg_types.number wrap -> [> `VHanging ] attrib
-          val a_underlineposition :
+          val a_v_hanging : Svg_types.number wrap -> [> `VHanging ] attrib
+          val a_underline_position :
             Svg_types.number wrap -> [> `UnderlinePosition ] attrib
-          val a_underlinethickness :
+          val a_underline_thickness :
             Svg_types.number wrap -> [> `UnderlineThickness ] attrib
-          val a_strikethroughposition :
+          val a_strikethrough_position :
             Svg_types.number wrap -> [> `StrikethroughPosition ] attrib
-          val a_strikethroughthickness :
+          val a_strikethrough_thickness :
             Svg_types.number wrap -> [> `StrikethroughThickness ] attrib
-          val a_overlineposition :
+          val a_overline_position :
             Svg_types.number wrap -> [> `OverlinePosition ] attrib
-          val a_overlinethickness :
+          val a_overline_thickness :
             Svg_types.number wrap -> [> `OverlineThickness ] attrib
           val a_string : string wrap -> [> `String ] attrib
           val a_name : string wrap -> [> `Name ] attrib
@@ -1466,27 +1468,27 @@
           val metadata :
             ?a:Svg_types.metadata_attr attrib list ->
             Xml.elt list_wrap -> [> Svg_types.metadata ] elt
-          val foreignobject :
+          val foreignObject :
             ?a:Svg_types.foreignobject_attr attrib list ->
             Xml.elt list_wrap -> [> Svg_types.foreignobject ] elt
-          val a_stopcolor : Svg_types.color wrap -> [> `Stop_Color ] attrib
-          val a_stopopacity :
+          val a_stop_color : Svg_types.color wrap -> [> `Stop_Color ] attrib
+          val a_stop_opacity :
             Svg_types.number wrap -> [> `Stop_Opacity ] attrib
           val a_stroke : Svg_types.paint wrap -> [> `Stroke ] attrib
-          val a_strokewidth :
+          val a_stroke_width :
             Svg_types.Unit.length wrap -> [> `Stroke_Width ] attrib
-          val a_strokelinecap :
+          val a_stroke_linecap :
             [< `Butt | `Round | `Square ] wrap -> [> `Stroke_Linecap ] attrib
-          val a_strokelinejoin :
+          val a_stroke_linejoin :
             [< `Bever | `Miter | `Round ] wrap ->
             [> `Stroke_Linejoin ] attrib
-          val a_strokemiterlimit :
+          val a_stroke_miterlimit :
             float wrap -> [> `Stroke_Miterlimit ] attrib
-          val a_strokedasharray :
+          val a_stroke_dasharray :
             Svg_types.Unit.length list wrap -> [> `Stroke_Dasharray ] attrib
-          val a_strokedashoffset :
+          val a_stroke_dashoffset :
             Svg_types.Unit.length wrap -> [> `Stroke_Dashoffset ] attrib
-          val a_strokeopacity : float wrap -> [> `Stroke_Opacity ] attrib
+          val a_stroke_opacity : float wrap -> [> `Stroke_Opacity ] attrib
           val svg :
             ([< Svg_types.svg_attr ], [< Svg_types.svg_content ],
              [> Svg_types.svg ])
@@ -1784,22 +1786,25 @@
             ([< Svg_types.hkern_attr ], [> Svg_types.hkern ]) nullary
           val vkern :
             ([< Svg_types.vkern_attr ], [> Svg_types.vkern ]) nullary
-          val fontface :
-            ([< Svg_types.fontface_attr ], [> Svg_types.fontface ]) nullary
-          val fontfacesrc :
-            ([< Svg_types.fontfacesrc_attr ],
-             [< Svg_types.fontfacesrc_content ], [> Svg_types.fontfacesrc ])
+          val font_face :
+            ([< Svg_types.font_face_attr ], [> Svg_types.font_face ]) nullary
+          val font_face_src :
+            ([< Svg_types.font_face_src_attr ],
+             [< Svg_types.font_face_src_content ],
+             [> Svg_types.font_face_src ])
             star
-          val fontfaceuri :
-            ([< Svg_types.fontfaceuri_attr ],
-             [< Svg_types.fontfaceuri_content ], [> Svg_types.fontfaceuri ])
+          val font_face_uri :
+            ([< Svg_types.font_face_uri_attr ],
+             [< Svg_types.font_face_uri_content ],
+             [> Svg_types.font_face_uri ])
             star
-          val fontfaceformat :
-            ([< Svg_types.fontfaceformat_attr ],
-             [> Svg_types.fontfaceformat ])
+          val font_face_format :
+            ([< Svg_types.font_face_format_attr ],
+             [> Svg_types.font_face_format ])
             nullary
-          val fontfacename :
-            ([< Svg_types.fontfacename_attr ], [> Svg_types.fontfacename ])
+          val font_face_name :
+            ([< Svg_types.font_face_name_attr ],
+             [> Svg_types.font_face_name ])
             nullary
           val tot : Xml.elt -> 'a elt
           val totl : Xml.elt list -> 'a elt list
@@ -1896,29 +1901,29 @@
                   | `Ref of Svg_types.glyphref elt list ]
               val pcdata : string wrap -> [> `PCDATA ] elt
               val a_version : string wrap -> [> `Version ] attrib
-              val a_baseprofile : string wrap -> [> `BaseProfile ] attrib
+              val a_baseProfile : string wrap -> [> `BaseProfile ] attrib
               val a_x : Svg_types.coord wrap -> [> `X ] attrib
               val a_y : Svg_types.coord wrap -> [> `Y ] attrib
               val a_width : Svg_types.Unit.length wrap -> [> `Width ] attrib
               val a_height :
                 Svg_types.Unit.length wrap -> [> `Height ] attrib
-              val a_preserveaspectratio :
+              val a_preserveAspectRatio :
                 string wrap -> [> `PreserveAspectRatio ] attrib
-              val a_contentscripttype :
+              val a_contentScriptType :
                 string wrap -> [> `ContentScriptType ] attrib
-              val a_contentstyletype :
+              val a_contentStyleType :
                 string wrap -> [> `ContentStyleType ] attrib
               val a_zoomAndPan :
                 [< `Disable | `Magnify ] wrap -> [> `ZoomAndSpan ] attrib
               val a_xlink_href :
                 Svg_types.iri wrap -> [> `Xlink_href ] attrib
-              val a_requiredfeatures :
+              val a_requiredFeatures :
                 Svg_types.spacestrings wrap -> [> `RequiredFeatures ] attrib
-              val a_requiredextensions :
+              val a_requiredExtensions :
                 Svg_types.spacestrings wrap -> [> `RequiredExtension ] attrib
-              val a_systemlanguage :
+              val a_systemLanguage :
                 Svg_types.commastrings wrap -> [> `SystemLanguage ] attrib
-              val a_externalressourcesrequired :
+              val a_externalRessourcesRequired :
                 bool wrap -> [> `ExternalRessourcesRequired ] attrib
               val a_id : string wrap -> [> `Id ] attrib
               val a_xml_base : Svg_types.iri wrap -> [> `Xml_Base ] attrib
@@ -1932,10 +1937,10 @@
               val a_style : string wrap -> [> `Style ] attrib
               val a_transform :
                 Svg_types.transform wrap -> [> `Transform ] attrib
-              val a_viewbox :
+              val a_viewBox :
                 Svg_types.fourfloats wrap -> [> `ViewBox ] attrib
               val a_d : string wrap -> [> `D ] attrib
-              val a_pathlength : float wrap -> [> `PathLength ] attrib
+              val a_pathLength : float wrap -> [> `PathLength ] attrib
               val a_rx : Svg_types.Unit.length wrap -> [> `Rx ] attrib
               val a_ry : Svg_types.Unit.length wrap -> [> `Ry ] attrib
               val a_cx : Svg_types.Unit.length wrap -> [> `Cx ] attrib
@@ -1952,10 +1957,10 @@
               val a_dy : Svg_types.number wrap -> [> `Dy ] attrib
               val a_dx_list : Svg_types.lengths wrap -> [> `Dx_list ] attrib
               val a_dy_list : Svg_types.lengths wrap -> [> `Dy_list ] attrib
-              val a_lengthadjust :
+              val a_lengthAdjust :
                 [< `Spacing | `SpacingAndGlyphs ] wrap ->
                 [> `LengthAdjust ] attrib
-              val a_textlength :
+              val a_textLength :
                 Svg_types.Unit.length wrap -> [> `TextLength ] attrib
               val a_text_anchor :
                 [< `End | `Inherit | `Middle | `Start ] wrap ->
@@ -1976,40 +1981,40 @@
                  | `OptimizeSpeed ]
                 wrap -> [> `Text_Rendering ] attrib
               val a_rotate : Svg_types.numbers wrap -> [> `Rotate ] attrib
-              val a_startoffset :
+              val a_startOffset :
                 Svg_types.Unit.length wrap -> [> `StartOffset ] attrib
               val a_method :
                 [< `Align | `Stretch ] wrap -> [> `Method ] attrib
               val a_spacing :
                 [< `Auto | `Exact ] wrap -> [> `Spacing ] attrib
-              val a_glyphref : string wrap -> [> `GlyphRef ] attrib
+              val a_glyphRef : string wrap -> [> `GlyphRef ] attrib
               val a_format : string wrap -> [> `Format ] attrib
-              val a_markerunits :
+              val a_markerUnits :
                 [< `StrokeWidth | `UserSpaceOnUse ] wrap ->
                 [> `MarkerUnits ] attrib
-              val a_refx : Svg_types.coord wrap -> [> `RefX ] attrib
-              val a_refy : Svg_types.coord wrap -> [> `RefY ] attrib
-              val a_markerwidth :
+              val a_refX : Svg_types.coord wrap -> [> `RefX ] attrib
+              val a_refY : Svg_types.coord wrap -> [> `RefY ] attrib
+              val a_markerWidth :
                 Svg_types.Unit.length wrap -> [> `MarkerWidth ] attrib
-              val a_markerheight :
+              val a_markerHeight :
                 Svg_types.Unit.length wrap -> [> `MarkerHeight ] attrib
               val a_orient :
                 [< `Angle of Svg_types.Unit.angle | `Auto ] wrap ->
                 [> `Orient ] attrib
               val a_local : string wrap -> [> `Local ] attrib
-              val a_renderingindent :
+              val a_rendering_intent :
                 [< `Absolute_colorimetric
                  | `Auto
                  | `Perceptual
                  | `Relative_colorimetric
                  | `Saturation ]
                 wrap -> [> `Rendering_Indent ] attrib
-              val a_gradientunits :
+              val a_gradientUnits :
                 [< `ObjectBoundingBox | `UserSpaceOnUse ] wrap ->
                 [ `GradientUnits ] attrib
-              val a_gradienttransform :
+              val a_gradientTransform :
                 Svg_types.transforms wrap -> [> `Gradient_Transform ] attrib
-              val a_spreadmethod :
+              val a_spreadMethod :
                 [< `Pad | `Reflect | `Repeat ] wrap ->
                 [> `SpreadMethod ] attrib
               val a_fx : Svg_types.coord wrap -> [> `Fx ] attrib
@@ -2018,27 +2023,27 @@
                 [< `Number of Svg_types.number
                  | `Percentage of Svg_types.percentage ]
                 wrap -> [> `Offset ] attrib
-              val a_patternunits :
+              val a_patternUnits :
                 [< `ObjectBoundingBox | `UserSpaceOnUse ] wrap ->
                 [> `PatternUnits ] attrib
-              val a_patterncontentunits :
+              val a_patternContentUnits :
                 [< `ObjectBoundingBox | `UserSpaceOnUse ] wrap ->
                 [> `PatternContentUnits ] attrib
-              val a_patterntransform :
+              val a_patternTransform :
                 Svg_types.transforms wrap -> [> `PatternTransform ] attrib
-              val a_clippathunits :
+              val a_clipPathUnits :
                 [< `ObjectBoundingBox | `UserSpaceOnUse ] wrap ->
                 [> `ClipPathUnits ] attrib
-              val a_maskunits :
+              val a_maskUnits :
                 [< `ObjectBoundingBox | `UserSpaceOnUse ] wrap ->
                 [> `MaskUnits ] attrib
-              val a_maskcontentunits :
+              val a_maskContentUnits :
                 [< `ObjectBoundingBox | `UserSpaceOnUse ] wrap ->
                 [> `MaskContentUnits ] attrib
-              val a_primitiveunits :
+              val a_primitiveUnits :
                 [< `ObjectBoundingBox | `UserSpaceOnUse ] wrap ->
                 [> `PrimitiveUnits ] attrib
-              val a_filterres :
+              val a_filterRes :
                 Svg_types.number_optional_number wrap ->
                 [> `FilterResUnits ] attrib
               val a_result : string wrap -> [> `Result ] attrib
@@ -2060,36 +2065,36 @@
                  | `SourceGraphic
                  | `StrokePaint ]
                 wrap -> [> `In2 ] attrib
-              val a_aizmuth : float wrap -> [> `Azimuth ] attrib
+              val a_azimuth : float wrap -> [> `Azimuth ] attrib
               val a_elevation : float wrap -> [> `Elevation ] attrib
-              val a_pointatx : float wrap -> [> `PointsAtX ] attrib
-              val a_pointaty : float wrap -> [> `PointsAtY ] attrib
-              val a_pointatz : float wrap -> [> `PointsAtZ ] attrib
-              val a_specularexponent :
+              val a_pointsAtX : float wrap -> [> `PointsAtX ] attrib
+              val a_pointsAtY : float wrap -> [> `PointsAtY ] attrib
+              val a_pointsAtZ : float wrap -> [> `PointsAtZ ] attrib
+              val a_specularExponent :
                 float wrap -> [> `SpecularExponent ] attrib
-              val a_specularconstant :
+              val a_specularConstant :
                 float wrap -> [> `SpecularConstant ] attrib
-              val a_limitingconeangle :
+              val a_limitingConeAngle :
                 float wrap -> [> `LimitingConeAngle ] attrib
               val a_mode :
                 [< `Darken | `Lighten | `Multiply | `Normal | `Screen ] wrap ->
                 [> `Mode ] attrib
-              val a_typefecolor :
+              val a_feColorMatrix_type :
                 [< `HueRotate | `LuminanceToAlpha | `Matrix | `Saturate ]
                 wrap -> [> `Typefecolor ] attrib
               val a_values : Svg_types.numbers wrap -> [> `Values ] attrib
-              val a_transferttype :
+              val a_type_transfer :
                 [< `Discrete | `Gamma | `Identity | `Linear | `Table ] wrap ->
-                [> `Typetransfert ] attrib
-              val a_tablevalues :
+                [> `Type_transfert ] attrib
+              val a_tableValues :
                 Svg_types.numbers wrap -> [> `TableValues ] attrib
               val a_intercept :
                 Svg_types.number wrap -> [> `Intercept ] attrib
               val a_amplitude :
                 Svg_types.number wrap -> [> `Amplitude ] attrib
               val a_exponent : Svg_types.number wrap -> [> `Exponent ] attrib
-              val a_offsettransfer :
-                Svg_types.number wrap -> [> `Offsettransfer ] attrib
+              val a_offset_transfer :
+                Svg_types.number wrap -> [> `Offset_transfer ] attrib
               val a_operator :
                 [< `Arithmetic | `Atop | `In | `Out | `Over | `Xor ] wrap ->
                 [> `Operator ] attrib
@@ -2099,53 +2104,53 @@
               val a_k4 : Svg_types.number wrap -> [> `K4 ] attrib
               val a_order :
                 Svg_types.number_optional_number wrap -> [> `Order ] attrib
-              val a_kernelmatrix :
+              val a_kernelMatrix :
                 Svg_types.numbers wrap -> [> `KernelMatrix ] attrib
               val a_divisor : Svg_types.number wrap -> [> `Divisor ] attrib
               val a_bias : Svg_types.number wrap -> [> `Bias ] attrib
-              val a_kernelunitlength :
+              val a_kernelUnitLength :
                 Svg_types.number_optional_number wrap ->
                 [> `KernelUnitLength ] attrib
               val a_targetX : int wrap -> [> `TargetX ] attrib
               val a_targetY : int wrap -> [> `TargetY ] attrib
-              val a_edgemode :
+              val a_edgeMode :
                 [< `Duplicate | `None | `Wrap ] wrap -> [> `TargetY ] attrib
-              val a_preservealpha : bool wrap -> [> `TargetY ] attrib
-              val a_surfacescale :
+              val a_preserveAlpha : bool wrap -> [> `TargetY ] attrib
+              val a_surfaceScale :
                 Svg_types.number wrap -> [> `SurfaceScale ] attrib
-              val a_diffuseconstant :
+              val a_diffuseConstant :
                 Svg_types.number wrap -> [> `DiffuseConstant ] attrib
               val a_scale : Svg_types.number wrap -> [> `Scale ] attrib
-              val a_xchannelselector :
+              val a_xChannelSelector :
                 [< `A | `B | `G | `R ] wrap -> [> `XChannelSelector ] attrib
-              val a_ychannelselector :
+              val a_yChannelSelector :
                 [< `A | `B | `G | `R ] wrap -> [> `YChannelSelector ] attrib
-              val a_stddeviation :
+              val a_stdDeviation :
                 Svg_types.number_optional_number wrap ->
                 [> `StdDeviation ] attrib
-              val a_operatormorphology :
+              val a_feMorphology_operator :
                 [< `Dilate | `Erode ] wrap -> [> `OperatorMorphology ] attrib
               val a_radius :
                 Svg_types.number_optional_number wrap -> [> `Radius ] attrib
-              val a_basefrenquency :
+              val a_baseFrenquency :
                 Svg_types.number_optional_number wrap ->
                 [> `BaseFrequency ] attrib
-              val a_numoctaves : int wrap -> [> `NumOctaves ] attrib
+              val a_numOctaves : int wrap -> [> `NumOctaves ] attrib
               val a_seed : Svg_types.number wrap -> [> `Seed ] attrib
-              val a_stitchtiles :
+              val a_stitchTiles :
                 [< `NoStitch | `Stitch ] wrap -> [> `StitchTiles ] attrib
-              val a_stitchtype :
+              val a_feTurbulence_type :
                 [< `FractalNoise | `Turbulence ] wrap ->
                 [> `TypeStitch ] attrib
-              val a_xlinkshow :
+              val a_xlink_show :
                 [< `New | `Replace ] wrap -> [> `Xlink_show ] attrib
-              val a_xlinkactuate :
+              val a_xlink_actuate :
                 [< `None | `OnLoad | `OnRequest | `Other ] wrap ->
                 [> `Xlink_actuate ] attrib
               val a_target : string wrap -> [> `Xlink_target ] attrib
-              val a_viewtarget : string wrap -> [> `ViewTarget ] attrib
-              val a_attributename : string wrap -> [> `AttributeName ] attrib
-              val a_attributetype :
+              val a_viewTarget : string wrap -> [> `ViewTarget ] attrib
+              val a_attributeName : string wrap -> [> `AttributeName ] attrib
+              val a_attributeType :
                 [< `Auto | `CSS | `XML ] wrap -> [> `AttributeType ] attrib
               val a_begin : string wrap -> [> `Begin ] attrib
               val a_dur : string wrap -> [> `Dur ] attrib
@@ -2154,19 +2159,19 @@
               val a_restart :
                 [< `Always | `Never | `WhenNotActive ] wrap ->
                 [> `Restart ] attrib
-              val a_repeatcount : string wrap -> [> `RepeatCount ] attrib
-              val a_repeatdur : string wrap -> [> `RepeatDur ] attrib
+              val a_repeatCount : string wrap -> [> `RepeatCount ] attrib
+              val a_repeatDur : string wrap -> [> `RepeatDur ] attrib
               val a_fill : Svg_types.paint wrap -> [> `Fill ] attrib
-              val a_fill_animation :
+              val a_animation_fill :
                 [< `Freeze | `Remove ] wrap -> [> `Fill_Animation ] attrib
-              val a_calcmode :
+              val a_calcMode :
                 [< `Discrete | `Linear | `Paced | `Spline ] wrap ->
                 [> `CalcMode ] attrib
-              val a_values_anim :
+              val a_animation_values :
                 Svg_types.strings wrap -> [> `Valuesanim ] attrib
-              val a_keytimes :
+              val a_keyTimes :
                 Svg_types.strings wrap -> [> `KeyTimes ] attrib
-              val a_keysplines :
+              val a_keySplines :
                 Svg_types.strings wrap -> [> `KeySplines ] attrib
               val a_from : string wrap -> [> `From ] attrib
               val a_to : string wrap -> [> `To ] attrib
@@ -2175,29 +2180,29 @@
                 [< `Replace | `Sum ] wrap -> [> `Additive ] attrib
               val a_accumulate :
                 [< `None | `Sum ] wrap -> [> `Accumulate ] attrib
-              val a_keypoints :
+              val a_keyPoints :
                 Svg_types.numbers_semicolon wrap -> [> `KeyPoints ] attrib
               val a_path : string wrap -> [> `Path ] attrib
-              val a_typeanimatecolor :
+              val a_animateColor_type :
                 [ `Rotate | `Scale | `SkewX | `SkewY | `Translate ] wrap ->
                 [ `Typeanimatecolor ] attrib
               val a_horiz_origin_x :
-                Svg_types.number wrap -> [> `Horizoriginx ] attrib
+                Svg_types.number wrap -> [> `HorizOriginX ] attrib
               val a_horiz_origin_y :
-                Svg_types.number wrap -> [> `Horizoriginy ] attrib
+                Svg_types.number wrap -> [> `HorizOriginY ] attrib
               val a_horiz_adv_x :
-                Svg_types.number wrap -> [> `Horizadvx ] attrib
+                Svg_types.number wrap -> [> `HorizAdvX ] attrib
               val a_vert_origin_x :
-                Svg_types.number wrap -> [> `Vertoriginx ] attrib
+                Svg_types.number wrap -> [> `VertOriginX ] attrib
               val a_vert_origin_y :
-                Svg_types.number wrap -> [> `Vertoriginy ] attrib
+                Svg_types.number wrap -> [> `VertOriginY ] attrib
               val a_vert_adv_y :
-                Svg_types.number wrap -> [> `Vertadvy ] attrib
+                Svg_types.number wrap -> [> `VertAdvY ] attrib
               val a_unicode : string wrap -> [> `Unicode ] attrib
-              val a_glyphname : string wrap -> [> `glyphname ] attrib
+              val a_glyph_name : string wrap -> [> `glyphname ] attrib
               val a_orientation :
                 [< `H | `V ] wrap -> [> `Orientation ] attrib
-              val a_arabicform :
+              val a_arabic_form :
                 [< `Initial | `Isolated | `Medial | `Terminal ] wrap ->
                 [> `Arabicform ] attrib
               val a_lang : string wrap -> [> `Lang ] attrib
@@ -2206,21 +2211,21 @@
               val a_g1 : string wrap -> [> `G1 ] attrib
               val a_g2 : string wrap -> [> `G2 ] attrib
               val a_k : string wrap -> [> `K ] attrib
-              val a_fontfamily : string wrap -> [> `Font_Family ] attrib
-              val a_fontstyle : string wrap -> [> `Font_Style ] attrib
-              val a_fontvariant : string wrap -> [> `Font_Variant ] attrib
-              val a_fontweight : string wrap -> [> `Font_Weight ] attrib
-              val a_fontstretch : string wrap -> [> `Font_Stretch ] attrib
-              val a_fontsize : string wrap -> [> `Font_Size ] attrib
-              val a_unicoderange : string wrap -> [> `UnicodeRange ] attrib
-              val a_unitsperem : string wrap -> [> `UnitsPerEm ] attrib
+              val a_font_family : string wrap -> [> `Font_Family ] attrib
+              val a_font_style : string wrap -> [> `Font_Style ] attrib
+              val a_font_variant : string wrap -> [> `Font_Variant ] attrib
+              val a_font_weight : string wrap -> [> `Font_Weight ] attrib
+              val a_font_stretch : string wrap -> [> `Font_Stretch ] attrib
+              val a_font_size : string wrap -> [> `Font_Size ] attrib
+              val a_unicode_range : string wrap -> [> `UnicodeRange ] attrib
+              val a_units_per_em : string wrap -> [> `UnitsPerEm ] attrib
               val a_stemv : Svg_types.number wrap -> [> `Stemv ] attrib
               val a_stemh : Svg_types.number wrap -> [> `Stemh ] attrib
               val a_slope : Svg_types.number wrap -> [> `Slope ] attrib
-              val a_capheight :
+              val a_cap_height :
                 Svg_types.number wrap -> [> `CapHeight ] attrib
-              val a_xheight : Svg_types.number wrap -> [> `XHeight ] attrib
-              val a_accentheight :
+              val a_x_height : Svg_types.number wrap -> [> `XHeight ] attrib
+              val a_accent_height :
                 Svg_types.number wrap -> [> `AccentHeight ] attrib
               val a_ascent : Svg_types.number wrap -> [> `Ascent ] attrib
               val a_widths : string wrap -> [> `Widths ] attrib
@@ -2234,22 +2239,23 @@
               val a_hanging : Svg_types.number wrap -> [> `Hanging ] attrib
               val a_videographic :
                 Svg_types.number wrap -> [> `VIdeographic ] attrib
-              val a_valphabetic :
+              val a_v_alphabetic :
                 Svg_types.number wrap -> [> `VAlphabetic ] attrib
-              val a_vmathematical :
+              val a_v_mathematical :
                 Svg_types.number wrap -> [> `VMathematical ] attrib
-              val a_vhanging : Svg_types.number wrap -> [> `VHanging ] attrib
-              val a_underlineposition :
+              val a_v_hanging :
+                Svg_types.number wrap -> [> `VHanging ] attrib
+              val a_underline_position :
                 Svg_types.number wrap -> [> `UnderlinePosition ] attrib
-              val a_underlinethickness :
+              val a_underline_thickness :
                 Svg_types.number wrap -> [> `UnderlineThickness ] attrib
-              val a_strikethroughposition :
+              val a_strikethrough_position :
                 Svg_types.number wrap -> [> `StrikethroughPosition ] attrib
-              val a_strikethroughthickness :
+              val a_strikethrough_thickness :
                 Svg_types.number wrap -> [> `StrikethroughThickness ] attrib
-              val a_overlineposition :
+              val a_overline_position :
                 Svg_types.number wrap -> [> `OverlinePosition ] attrib
-              val a_overlinethickness :
+              val a_overline_thickness :
                 Svg_types.number wrap -> [> `OverlineThickness ] attrib
               val a_string : string wrap -> [> `String ] attrib
               val a_name : string wrap -> [> `Name ] attrib
@@ -2310,30 +2316,31 @@
               val metadata :
                 ?a:Svg_types.metadata_attr attrib list ->
                 Xml.elt list_wrap -> [> Svg_types.metadata ] elt
-              val foreignobject :
+              val foreignObject :
                 ?a:Svg_types.foreignobject_attr attrib list ->
                 Xml.elt list_wrap -> [> Svg_types.foreignobject ] elt
-              val a_stopcolor :
+              val a_stop_color :
                 Svg_types.color wrap -> [> `Stop_Color ] attrib
-              val a_stopopacity :
+              val a_stop_opacity :
                 Svg_types.number wrap -> [> `Stop_Opacity ] attrib
               val a_stroke : Svg_types.paint wrap -> [> `Stroke ] attrib
-              val a_strokewidth :
+              val a_stroke_width :
                 Svg_types.Unit.length wrap -> [> `Stroke_Width ] attrib
-              val a_strokelinecap :
+              val a_stroke_linecap :
                 [< `Butt | `Round | `Square ] wrap ->
                 [> `Stroke_Linecap ] attrib
-              val a_strokelinejoin :
+              val a_stroke_linejoin :
                 [< `Bever | `Miter | `Round ] wrap ->
                 [> `Stroke_Linejoin ] attrib
-              val a_strokemiterlimit :
+              val a_stroke_miterlimit :
                 float wrap -> [> `Stroke_Miterlimit ] attrib
-              val a_strokedasharray :
+              val a_stroke_dasharray :
                 Svg_types.Unit.length list wrap ->
                 [> `Stroke_Dasharray ] attrib
-              val a_strokedashoffset :
+              val a_stroke_dashoffset :
                 Svg_types.Unit.length wrap -> [> `Stroke_Dashoffset ] attrib
-              val a_strokeopacity : float wrap -> [> `Stroke_Opacity ] attrib
+              val a_stroke_opacity :
+                float wrap -> [> `Stroke_Opacity ] attrib
               val svg :
                 ([< Svg_types.svg_attr ], [< Svg_types.svg_content ],
                  [> Svg_types.svg ])
@@ -2634,26 +2641,26 @@
                 ([< Svg_types.hkern_attr ], [> Svg_types.hkern ]) nullary
               val vkern :
                 ([< Svg_types.vkern_attr ], [> Svg_types.vkern ]) nullary
-              val fontface :
-                ([< Svg_types.fontface_attr ], [> Svg_types.fontface ])
+              val font_face :
+                ([< Svg_types.font_face_attr ], [> Svg_types.font_face ])
                 nullary
-              val fontfacesrc :
-                ([< Svg_types.fontfacesrc_attr ],
-                 [< Svg_types.fontfacesrc_content ],
-                 [> Svg_types.fontfacesrc ])
+              val font_face_src :
+                ([< Svg_types.font_face_src_attr ],
+                 [< Svg_types.font_face_src_content ],
+                 [> Svg_types.font_face_src ])
                 star
-              val fontfaceuri :
-                ([< Svg_types.fontfaceuri_attr ],
-                 [< Svg_types.fontfaceuri_content ],
-                 [> Svg_types.fontfaceuri ])
+              val font_face_uri :
+                ([< Svg_types.font_face_uri_attr ],
+                 [< Svg_types.font_face_uri_content ],
+                 [> Svg_types.font_face_uri ])
                 star
-              val fontfaceformat :
-                ([< Svg_types.fontfaceformat_attr ],
-                 [> Svg_types.fontfaceformat ])
+              val font_face_format :
+                ([< Svg_types.font_face_format_attr ],
+                 [> Svg_types.font_face_format ])
                 nullary
-              val fontfacename :
-                ([< Svg_types.fontfacename_attr ],
-                 [> Svg_types.fontfacename ])
+              val font_face_name :
+                ([< Svg_types.font_face_name_attr ],
+                 [> Svg_types.font_face_name ])
                 nullary
               val tot : Xml.elt -> 'a elt
               val totl : Xml.elt list -> 'a elt list
@@ -2748,27 +2755,27 @@
               | `Ref of Svg_types.glyphref elt list ]
           val pcdata : string wrap -> [> `PCDATA ] elt
           val a_version : string wrap -> [> `Version ] attrib
-          val a_baseprofile : string wrap -> [> `BaseProfile ] attrib
+          val a_baseProfile : string wrap -> [> `BaseProfile ] attrib
           val a_x : Svg_types.coord wrap -> [> `X ] attrib
           val a_y : Svg_types.coord wrap -> [> `Y ] attrib
           val a_width : Svg_types.Unit.length wrap -> [> `Width ] attrib
           val a_height : Svg_types.Unit.length wrap -> [> `Height ] attrib
-          val a_preserveaspectratio :
+          val a_preserveAspectRatio :
             string wrap -> [> `PreserveAspectRatio ] attrib
-          val a_contentscripttype :
+          val a_contentScriptType :
             string wrap -> [> `ContentScriptType ] attrib
-          val a_contentstyletype :
+          val a_contentStyleType :
             string wrap -> [> `ContentStyleType ] attrib
           val a_zoomAndPan :
             [< `Disable | `Magnify ] wrap -> [> `ZoomAndSpan ] attrib
           val a_xlink_href : Svg_types.iri wrap -> [> `Xlink_href ] attrib
-          val a_requiredfeatures :
+          val a_requiredFeatures :
             Svg_types.spacestrings wrap -> [> `RequiredFeatures ] attrib
-          val a_requiredextensions :
+          val a_requiredExtensions :
             Svg_types.spacestrings wrap -> [> `RequiredExtension ] attrib
-          val a_systemlanguage :
+          val a_systemLanguage :
             Svg_types.commastrings wrap -> [> `SystemLanguage ] attrib
-          val a_externalressourcesrequired :
+          val a_externalRessourcesRequired :
             bool wrap -> [> `ExternalRessourcesRequired ] attrib
           val a_id : string wrap -> [> `Id ] attrib
           val a_xml_base : Svg_types.iri wrap -> [> `Xml_Base ] attrib
@@ -2782,9 +2789,9 @@
           val a_style : string wrap -> [> `Style ] attrib
           val a_transform :
             Svg_types.transform wrap -> [> `Transform ] attrib
-          val a_viewbox : Svg_types.fourfloats wrap -> [> `ViewBox ] attrib
+          val a_viewBox : Svg_types.fourfloats wrap -> [> `ViewBox ] attrib
           val a_d : string wrap -> [> `D ] attrib
-          val a_pathlength : float wrap -> [> `PathLength ] attrib
+          val a_pathLength : float wrap -> [> `PathLength ] attrib
           val a_rx : Svg_types.Unit.length wrap -> [> `Rx ] attrib
           val a_ry : Svg_types.Unit.length wrap -> [> `Ry ] attrib
           val a_cx : Svg_types.Unit.length wrap -> [> `Cx ] attrib
@@ -2801,10 +2808,10 @@
           val a_dy : Svg_types.number wrap -> [> `Dy ] attrib
           val a_dx_list : Svg_types.lengths wrap -> [> `Dx_list ] attrib
           val a_dy_list : Svg_types.lengths wrap -> [> `Dy_list ] attrib
-          val a_lengthadjust :
+          val a_lengthAdjust :
             [< `Spacing | `SpacingAndGlyphs ] wrap ->
             [> `LengthAdjust ] attrib
-          val a_textlength :
+          val a_textLength :
             Svg_types.Unit.length wrap -> [> `TextLength ] attrib
           val a_text_anchor :
             [< `End | `Inherit | `Middle | `Start ] wrap ->
@@ -2825,38 +2832,38 @@
              | `OptimizeSpeed ]
             wrap -> [> `Text_Rendering ] attrib
           val a_rotate : Svg_types.numbers wrap -> [> `Rotate ] attrib
-          val a_startoffset :
+          val a_startOffset :
             Svg_types.Unit.length wrap -> [> `StartOffset ] attrib
           val a_method : [< `Align | `Stretch ] wrap -> [> `Method ] attrib
           val a_spacing : [< `Auto | `Exact ] wrap -> [> `Spacing ] attrib
-          val a_glyphref : string wrap -> [> `GlyphRef ] attrib
+          val a_glyphRef : string wrap -> [> `GlyphRef ] attrib
           val a_format : string wrap -> [> `Format ] attrib
-          val a_markerunits :
+          val a_markerUnits :
             [< `StrokeWidth | `UserSpaceOnUse ] wrap ->
             [> `MarkerUnits ] attrib
-          val a_refx : Svg_types.coord wrap -> [> `RefX ] attrib
-          val a_refy : Svg_types.coord wrap -> [> `RefY ] attrib
-          val a_markerwidth :
+          val a_refX : Svg_types.coord wrap -> [> `RefX ] attrib
+          val a_refY : Svg_types.coord wrap -> [> `RefY ] attrib
+          val a_markerWidth :
             Svg_types.Unit.length wrap -> [> `MarkerWidth ] attrib
-          val a_markerheight :
+          val a_markerHeight :
             Svg_types.Unit.length wrap -> [> `MarkerHeight ] attrib
           val a_orient :
             [< `Angle of Svg_types.Unit.angle | `Auto ] wrap ->
             [> `Orient ] attrib
           val a_local : string wrap -> [> `Local ] attrib
-          val a_renderingindent :
+          val a_rendering_intent :
             [< `Absolute_colorimetric
              | `Auto
              | `Perceptual
              | `Relative_colorimetric
              | `Saturation ]
             wrap -> [> `Rendering_Indent ] attrib
-          val a_gradientunits :
+          val a_gradientUnits :
             [< `ObjectBoundingBox | `UserSpaceOnUse ] wrap ->
             [ `GradientUnits ] attrib
-          val a_gradienttransform :
+          val a_gradientTransform :
             Svg_types.transforms wrap -> [> `Gradient_Transform ] attrib
-          val a_spreadmethod :
+          val a_spreadMethod :
             [< `Pad | `Reflect | `Repeat ] wrap -> [> `SpreadMethod ] attrib
           val a_fx : Svg_types.coord wrap -> [> `Fx ] attrib
           val a_fy : Svg_types.coord wrap -> [> `Fy ] attrib
@@ -2864,27 +2871,27 @@
             [< `Number of Svg_types.number
              | `Percentage of Svg_types.percentage ]
             wrap -> [> `Offset ] attrib
-          val a_patternunits :
+          val a_patternUnits :
             [< `ObjectBoundingBox | `UserSpaceOnUse ] wrap ->
             [> `PatternUnits ] attrib
-          val a_patterncontentunits :
+          val a_patternContentUnits :
             [< `ObjectBoundingBox | `UserSpaceOnUse ] wrap ->
             [> `PatternContentUnits ] attrib
-          val a_patterntransform :
+          val a_patternTransform :
             Svg_types.transforms wrap -> [> `PatternTransform ] attrib
-          val a_clippathunits :
+          val a_clipPathUnits :
             [< `ObjectBoundingBox | `UserSpaceOnUse ] wrap ->
             [> `ClipPathUnits ] attrib
-          val a_maskunits :
+          val a_maskUnits :
             [< `ObjectBoundingBox | `UserSpaceOnUse ] wrap ->
             [> `MaskUnits ] attrib
-          val a_maskcontentunits :
+          val a_maskContentUnits :
             [< `ObjectBoundingBox | `UserSpaceOnUse ] wrap ->
             [> `MaskContentUnits ] attrib
-          val a_primitiveunits :
+          val a_primitiveUnits :
             [< `ObjectBoundingBox | `UserSpaceOnUse ] wrap ->
             [> `PrimitiveUnits ] attrib
-          val a_filterres :
+          val a_filterRes :
             Svg_types.number_optional_number wrap ->
             [> `FilterResUnits ] attrib
           val a_result : string wrap -> [> `Result ] attrib
@@ -2906,34 +2913,34 @@
              | `SourceGraphic
              | `StrokePaint ]
             wrap -> [> `In2 ] attrib
-          val a_aizmuth : float wrap -> [> `Azimuth ] attrib
+          val a_azimuth : float wrap -> [> `Azimuth ] attrib
           val a_elevation : float wrap -> [> `Elevation ] attrib
-          val a_pointatx : float wrap -> [> `PointsAtX ] attrib
-          val a_pointaty : float wrap -> [> `PointsAtY ] attrib
-          val a_pointatz : float wrap -> [> `PointsAtZ ] attrib
-          val a_specularexponent :
+          val a_pointsAtX : float wrap -> [> `PointsAtX ] attrib
+          val a_pointsAtY : float wrap -> [> `PointsAtY ] attrib
+          val a_pointsAtZ : float wrap -> [> `PointsAtZ ] attrib
+          val a_specularExponent :
             float wrap -> [> `SpecularExponent ] attrib
-          val a_specularconstant :
+          val a_specularConstant :
             float wrap -> [> `SpecularConstant ] attrib
-          val a_limitingconeangle :
+          val a_limitingConeAngle :
             float wrap -> [> `LimitingConeAngle ] attrib
           val a_mode :
             [< `Darken | `Lighten | `Multiply | `Normal | `Screen ] wrap ->
             [> `Mode ] attrib
-          val a_typefecolor :
+          val a_feColorMatrix_type :
             [< `HueRotate | `LuminanceToAlpha | `Matrix | `Saturate ] wrap ->
             [> `Typefecolor ] attrib
           val a_values : Svg_types.numbers wrap -> [> `Values ] attrib
-          val a_transferttype :
+          val a_type_transfer :
             [< `Discrete | `Gamma | `Identity | `Linear | `Table ] wrap ->
-            [> `Typetransfert ] attrib
-          val a_tablevalues :
+            [> `Type_transfert ] attrib
+          val a_tableValues :
             Svg_types.numbers wrap -> [> `TableValues ] attrib
           val a_intercept : Svg_types.number wrap -> [> `Intercept ] attrib
           val a_amplitude : Svg_types.number wrap -> [> `Amplitude ] attrib
           val a_exponent : Svg_types.number wrap -> [> `Exponent ] attrib
-          val a_offsettransfer :
-            Svg_types.number wrap -> [> `Offsettransfer ] attrib
+          val a_offset_transfer :
+            Svg_types.number wrap -> [> `Offset_transfer ] attrib
           val a_operator :
             [< `Arithmetic | `Atop | `In | `Out | `Over | `Xor ] wrap ->
             [> `Operator ] attrib
@@ -2943,52 +2950,52 @@
           val a_k4 : Svg_types.number wrap -> [> `K4 ] attrib
           val a_order :
             Svg_types.number_optional_number wrap -> [> `Order ] attrib
-          val a_kernelmatrix :
+          val a_kernelMatrix :
             Svg_types.numbers wrap -> [> `KernelMatrix ] attrib
           val a_divisor : Svg_types.number wrap -> [> `Divisor ] attrib
           val a_bias : Svg_types.number wrap -> [> `Bias ] attrib
-          val a_kernelunitlength :
+          val a_kernelUnitLength :
             Svg_types.number_optional_number wrap ->
             [> `KernelUnitLength ] attrib
           val a_targetX : int wrap -> [> `TargetX ] attrib
           val a_targetY : int wrap -> [> `TargetY ] attrib
-          val a_edgemode :
+          val a_edgeMode :
             [< `Duplicate | `None | `Wrap ] wrap -> [> `TargetY ] attrib
-          val a_preservealpha : bool wrap -> [> `TargetY ] attrib
-          val a_surfacescale :
+          val a_preserveAlpha : bool wrap -> [> `TargetY ] attrib
+          val a_surfaceScale :
             Svg_types.number wrap -> [> `SurfaceScale ] attrib
-          val a_diffuseconstant :
+          val a_diffuseConstant :
             Svg_types.number wrap -> [> `DiffuseConstant ] attrib
           val a_scale : Svg_types.number wrap -> [> `Scale ] attrib
-          val a_xchannelselector :
+          val a_xChannelSelector :
             [< `A | `B | `G | `R ] wrap -> [> `XChannelSelector ] attrib
-          val a_ychannelselector :
+          val a_yChannelSelector :
             [< `A | `B | `G | `R ] wrap -> [> `YChannelSelector ] attrib
-          val a_stddeviation :
+          val a_stdDeviation :
             Svg_types.number_optional_number wrap ->
             [> `StdDeviation ] attrib
-          val a_operatormorphology :
+          val a_feMorphology_operator :
             [< `Dilate | `Erode ] wrap -> [> `OperatorMorphology ] attrib
           val a_radius :
             Svg_types.number_optional_number wrap -> [> `Radius ] attrib
-          val a_basefrenquency :
+          val a_baseFrenquency :
             Svg_types.number_optional_number wrap ->
             [> `BaseFrequency ] attrib
-          val a_numoctaves : int wrap -> [> `NumOctaves ] attrib
+          val a_numOctaves : int wrap -> [> `NumOctaves ] attrib
           val a_seed : Svg_types.number wrap -> [> `Seed ] attrib
-          val a_stitchtiles :
+          val a_stitchTiles :
             [< `NoStitch | `Stitch ] wrap -> [> `StitchTiles ] attrib
-          val a_stitchtype :
+          val a_feTurbulence_type :
             [< `FractalNoise | `Turbulence ] wrap -> [> `TypeStitch ] attrib
-          val a_xlinkshow :
+          val a_xlink_show :
             [< `New | `Replace ] wrap -> [> `Xlink_show ] attrib
-          val a_xlinkactuate :
+          val a_xlink_actuate :
             [< `None | `OnLoad | `OnRequest | `Other ] wrap ->
             [> `Xlink_actuate ] attrib
           val a_target : string wrap -> [> `Xlink_target ] attrib
-          val a_viewtarget : string wrap -> [> `ViewTarget ] attrib
-          val a_attributename : string wrap -> [> `AttributeName ] attrib
-          val a_attributetype :
+          val a_viewTarget : string wrap -> [> `ViewTarget ] attrib
+          val a_attributeName : string wrap -> [> `AttributeName ] attrib
+          val a_attributeType :
             [< `Auto | `CSS | `XML ] wrap -> [> `AttributeType ] attrib
           val a_begin : string wrap -> [> `Begin ] attrib
           val a_dur : string wrap -> [> `Dur ] attrib
@@ -2997,18 +3004,18 @@
           val a_restart :
             [< `Always | `Never | `WhenNotActive ] wrap ->
             [> `Restart ] attrib
-          val a_repeatcount : string wrap -> [> `RepeatCount ] attrib
-          val a_repeatdur : string wrap -> [> `RepeatDur ] attrib
+          val a_repeatCount : string wrap -> [> `RepeatCount ] attrib
+          val a_repeatDur : string wrap -> [> `RepeatDur ] attrib
           val a_fill : Svg_types.paint wrap -> [> `Fill ] attrib
-          val a_fill_animation :
+          val a_animation_fill :
             [< `Freeze | `Remove ] wrap -> [> `Fill_Animation ] attrib
-          val a_calcmode :
+          val a_calcMode :
             [< `Discrete | `Linear | `Paced | `Spline ] wrap ->
             [> `CalcMode ] attrib
-          val a_values_anim :
+          val a_animation_values :
             Svg_types.strings wrap -> [> `Valuesanim ] attrib
-          val a_keytimes : Svg_types.strings wrap -> [> `KeyTimes ] attrib
-          val a_keysplines :
+          val a_keyTimes : Svg_types.strings wrap -> [> `KeyTimes ] attrib
+          val a_keySplines :
             Svg_types.strings wrap -> [> `KeySplines ] attrib
           val a_from : string wrap -> [> `From ] attrib
           val a_to : string wrap -> [> `To ] attrib
@@ -3016,26 +3023,26 @@
           val a_additive : [< `Replace | `Sum ] wrap -> [> `Additive ] attrib
           val a_accumulate :
             [< `None | `Sum ] wrap -> [> `Accumulate ] attrib
-          val a_keypoints :
+          val a_keyPoints :
             Svg_types.numbers_semicolon wrap -> [> `KeyPoints ] attrib
           val a_path : string wrap -> [> `Path ] attrib
-          val a_typeanimatecolor :
+          val a_animateColor_type :
             [ `Rotate | `Scale | `SkewX | `SkewY | `Translate ] wrap ->
             [ `Typeanimatecolor ] attrib
           val a_horiz_origin_x :
-            Svg_types.number wrap -> [> `Horizoriginx ] attrib
+            Svg_types.number wrap -> [> `HorizOriginX ] attrib
           val a_horiz_origin_y :
-            Svg_types.number wrap -> [> `Horizoriginy ] attrib
-          val a_horiz_adv_x : Svg_types.number wrap -> [> `Horizadvx ] attrib
+            Svg_types.number wrap -> [> `HorizOriginY ] attrib
+          val a_horiz_adv_x : Svg_types.number wrap -> [> `HorizAdvX ] attrib
           val a_vert_origin_x :
-            Svg_types.number wrap -> [> `Vertoriginx ] attrib
+            Svg_types.number wrap -> [> `VertOriginX ] attrib
           val a_vert_origin_y :
-            Svg_types.number wrap -> [> `Vertoriginy ] attrib
-          val a_vert_adv_y : Svg_types.number wrap -> [> `Vertadvy ] attrib
+            Svg_types.number wrap -> [> `VertOriginY ] attrib
+          val a_vert_adv_y : Svg_types.number wrap -> [> `VertAdvY ] attrib
           val a_unicode : string wrap -> [> `Unicode ] attrib
-          val a_glyphname : string wrap -> [> `glyphname ] attrib
+          val a_glyph_name : string wrap -> [> `glyphname ] attrib
           val a_orientation : [< `H | `V ] wrap -> [> `Orientation ] attrib
-          val a_arabicform :
+          val a_arabic_form :
             [< `Initial | `Isolated | `Medial | `Terminal ] wrap ->
             [> `Arabicform ] attrib
           val a_lang : string wrap -> [> `Lang ] attrib
@@ -3044,20 +3051,20 @@
           val a_g1 : string wrap -> [> `G1 ] attrib
           val a_g2 : string wrap -> [> `G2 ] attrib
           val a_k : string wrap -> [> `K ] attrib
-          val a_fontfamily : string wrap -> [> `Font_Family ] attrib
-          val a_fontstyle : string wrap -> [> `Font_Style ] attrib
-          val a_fontvariant : string wrap -> [> `Font_Variant ] attrib
-          val a_fontweight : string wrap -> [> `Font_Weight ] attrib
-          val a_fontstretch : string wrap -> [> `Font_Stretch ] attrib
-          val a_fontsize : string wrap -> [> `Font_Size ] attrib
-          val a_unicoderange : string wrap -> [> `UnicodeRange ] attrib
-          val a_unitsperem : string wrap -> [> `UnitsPerEm ] attrib
+          val a_font_family : string wrap -> [> `Font_Family ] attrib
+          val a_font_style : string wrap -> [> `Font_Style ] attrib
+          val a_font_variant : string wrap -> [> `Font_Variant ] attrib
+          val a_font_weight : string wrap -> [> `Font_Weight ] attrib
+          val a_font_stretch : string wrap -> [> `Font_Stretch ] attrib
+          val a_font_size : string wrap -> [> `Font_Size ] attrib
+          val a_unicode_range : string wrap -> [> `UnicodeRange ] attrib
+          val a_units_per_em : string wrap -> [> `UnitsPerEm ] attrib
           val a_stemv : Svg_types.number wrap -> [> `Stemv ] attrib
           val a_stemh : Svg_types.number wrap -> [> `Stemh ] attrib
           val a_slope : Svg_types.number wrap -> [> `Slope ] attrib
-          val a_capheight : Svg_types.number wrap -> [> `CapHeight ] attrib
-          val a_xheight : Svg_types.number wrap -> [> `XHeight ] attrib
-          val a_accentheight :
+          val a_cap_height : Svg_types.number wrap -> [> `CapHeight ] attrib
+          val a_x_height : Svg_types.number wrap -> [> `XHeight ] attrib
+          val a_accent_height :
             Svg_types.number wrap -> [> `AccentHeight ] attrib
           val a_ascent : Svg_types.number wrap -> [> `Ascent ] attrib
           val a_widths : string wrap -> [> `Widths ] attrib
@@ -3070,22 +3077,22 @@
           val a_hanging : Svg_types.number wrap -> [> `Hanging ] attrib
           val a_videographic :
             Svg_types.number wrap -> [> `VIdeographic ] attrib
-          val a_valphabetic :
+          val a_v_alphabetic :
             Svg_types.number wrap -> [> `VAlphabetic ] attrib
-          val a_vmathematical :
+          val a_v_mathematical :
             Svg_types.number wrap -> [> `VMathematical ] attrib
-          val a_vhanging : Svg_types.number wrap -> [> `VHanging ] attrib
-          val a_underlineposition :
+          val a_v_hanging : Svg_types.number wrap -> [> `VHanging ] attrib
+          val a_underline_position :
             Svg_types.number wrap -> [> `UnderlinePosition ] attrib
-          val a_underlinethickness :
+          val a_underline_thickness :
             Svg_types.number wrap -> [> `UnderlineThickness ] attrib
-          val a_strikethroughposition :
+          val a_strikethrough_position :
             Svg_types.number wrap -> [> `StrikethroughPosition ] attrib
-          val a_strikethroughthickness :
+          val a_strikethrough_thickness :
             Svg_types.number wrap -> [> `StrikethroughThickness ] attrib
-          val a_overlineposition :
+          val a_overline_position :
             Svg_types.number wrap -> [> `OverlinePosition ] attrib
-          val a_overlinethickness :
+          val a_overline_thickness :
             Svg_types.number wrap -> [> `OverlineThickness ] attrib
           val a_string : string wrap -> [> `String ] attrib
           val a_name : string wrap -> [> `Name ] attrib
@@ -3145,27 +3152,27 @@
           val metadata :
             ?a:Svg_types.metadata_attr attrib list ->
             Xml.elt list_wrap -> [> Svg_types.metadata ] elt
-          val foreignobject :
+          val foreignObject :
             ?a:Svg_types.foreignobject_attr attrib list ->
             Xml.elt list_wrap -> [> Svg_types.foreignobject ] elt
-          val a_stopcolor : Svg_types.color wrap -> [> `Stop_Color ] attrib
-          val a_stopopacity :
+          val a_stop_color : Svg_types.color wrap -> [> `Stop_Color ] attrib
+          val a_stop_opacity :
             Svg_types.number wrap -> [> `Stop_Opacity ] attrib
           val a_stroke : Svg_types.paint wrap -> [> `Stroke ] attrib
-          val a_strokewidth :
+          val a_stroke_width :
             Svg_types.Unit.length wrap -> [> `Stroke_Width ] attrib
-          val a_strokelinecap :
+          val a_stroke_linecap :
             [< `Butt | `Round | `Square ] wrap -> [> `Stroke_Linecap ] attrib
-          val a_strokelinejoin :
+          val a_stroke_linejoin :
             [< `Bever | `Miter | `Round ] wrap ->
             [> `Stroke_Linejoin ] attrib
-          val a_strokemiterlimit :
+          val a_stroke_miterlimit :
             float wrap -> [> `Stroke_Miterlimit ] attrib
-          val a_strokedasharray :
+          val a_stroke_dasharray :
             Svg_types.Unit.length list wrap -> [> `Stroke_Dasharray ] attrib
-          val a_strokedashoffset :
+          val a_stroke_dashoffset :
             Svg_types.Unit.length wrap -> [> `Stroke_Dashoffset ] attrib
-          val a_strokeopacity : float wrap -> [> `Stroke_Opacity ] attrib
+          val a_stroke_opacity : float wrap -> [> `Stroke_Opacity ] attrib
           val svg :
             ([< Svg_types.svg_attr ], [< Svg_types.svg_content ],
              [> Svg_types.svg ])
@@ -3463,22 +3470,25 @@
             ([< Svg_types.hkern_attr ], [> Svg_types.hkern ]) nullary
           val vkern :
             ([< Svg_types.vkern_attr ], [> Svg_types.vkern ]) nullary
-          val fontface :
-            ([< Svg_types.fontface_attr ], [> Svg_types.fontface ]) nullary
-          val fontfacesrc :
-            ([< Svg_types.fontfacesrc_attr ],
-             [< Svg_types.fontfacesrc_content ], [> Svg_types.fontfacesrc ])
+          val font_face :
+            ([< Svg_types.font_face_attr ], [> Svg_types.font_face ]) nullary
+          val font_face_src :
+            ([< Svg_types.font_face_src_attr ],
+             [< Svg_types.font_face_src_content ],
+             [> Svg_types.font_face_src ])
             star
-          val fontfaceuri :
-            ([< Svg_types.fontfaceuri_attr ],
-             [< Svg_types.fontfaceuri_content ], [> Svg_types.fontfaceuri ])
+          val font_face_uri :
+            ([< Svg_types.font_face_uri_attr ],
+             [< Svg_types.font_face_uri_content ],
+             [> Svg_types.font_face_uri ])
             star
-          val fontfaceformat :
-            ([< Svg_types.fontfaceformat_attr ],
-             [> Svg_types.fontfaceformat ])
+          val font_face_format :
+            ([< Svg_types.font_face_format_attr ],
+             [> Svg_types.font_face_format ])
             nullary
-          val fontfacename :
-            ([< Svg_types.fontfacename_attr ], [> Svg_types.fontfacename ])
+          val font_face_name :
+            ([< Svg_types.font_face_name_attr ],
+             [> Svg_types.font_face_name ])
             nullary
           val tot : Xml.elt -> 'a elt
           val totl : Xml.elt list -> 'a elt list
@@ -3580,29 +3590,29 @@
                   | `Ref of Svg_types.glyphref elt list ]
               val pcdata : string wrap -> [> `PCDATA ] elt
               val a_version : string wrap -> [> `Version ] attrib
-              val a_baseprofile : string wrap -> [> `BaseProfile ] attrib
+              val a_baseProfile : string wrap -> [> `BaseProfile ] attrib
               val a_x : Svg_types.coord wrap -> [> `X ] attrib
               val a_y : Svg_types.coord wrap -> [> `Y ] attrib
               val a_width : Svg_types.Unit.length wrap -> [> `Width ] attrib
               val a_height :
                 Svg_types.Unit.length wrap -> [> `Height ] attrib
-              val a_preserveaspectratio :
+              val a_preserveAspectRatio :
                 string wrap -> [> `PreserveAspectRatio ] attrib
-              val a_contentscripttype :
+              val a_contentScriptType :
                 string wrap -> [> `ContentScriptType ] attrib
-              val a_contentstyletype :
+              val a_contentStyleType :
                 string wrap -> [> `ContentStyleType ] attrib
               val a_zoomAndPan :
                 [< `Disable | `Magnify ] wrap -> [> `ZoomAndSpan ] attrib
               val a_xlink_href :
                 Svg_types.iri wrap -> [> `Xlink_href ] attrib
-              val a_requiredfeatures :
+              val a_requiredFeatures :
                 Svg_types.spacestrings wrap -> [> `RequiredFeatures ] attrib
-              val a_requiredextensions :
+              val a_requiredExtensions :
                 Svg_types.spacestrings wrap -> [> `RequiredExtension ] attrib
-              val a_systemlanguage :
+              val a_systemLanguage :
                 Svg_types.commastrings wrap -> [> `SystemLanguage ] attrib
-              val a_externalressourcesrequired :
+              val a_externalRessourcesRequired :
                 bool wrap -> [> `ExternalRessourcesRequired ] attrib
               val a_id : string wrap -> [> `Id ] attrib
               val a_xml_base : Svg_types.iri wrap -> [> `Xml_Base ] attrib
@@ -3616,10 +3626,10 @@
               val a_style : string wrap -> [> `Style ] attrib
               val a_transform :
                 Svg_types.transform wrap -> [> `Transform ] attrib
-              val a_viewbox :
+              val a_viewBox :
                 Svg_types.fourfloats wrap -> [> `ViewBox ] attrib
               val a_d : string wrap -> [> `D ] attrib
-              val a_pathlength : float wrap -> [> `PathLength ] attrib
+              val a_pathLength : float wrap -> [> `PathLength ] attrib
               val a_rx : Svg_types.Unit.length wrap -> [> `Rx ] attrib
               val a_ry : Svg_types.Unit.length wrap -> [> `Ry ] attrib
               val a_cx : Svg_types.Unit.length wrap -> [> `Cx ] attrib
@@ -3636,10 +3646,10 @@
               val a_dy : Svg_types.number wrap -> [> `Dy ] attrib
               val a_dx_list : Svg_types.lengths wrap -> [> `Dx_list ] attrib
               val a_dy_list : Svg_types.lengths wrap -> [> `Dy_list ] attrib
-              val a_lengthadjust :
+              val a_lengthAdjust :
                 [< `Spacing | `SpacingAndGlyphs ] wrap ->
                 [> `LengthAdjust ] attrib
-              val a_textlength :
+              val a_textLength :
                 Svg_types.Unit.length wrap -> [> `TextLength ] attrib
               val a_text_anchor :
                 [< `End | `Inherit | `Middle | `Start ] wrap ->
@@ -3660,40 +3670,40 @@
                  | `OptimizeSpeed ]
                 wrap -> [> `Text_Rendering ] attrib
               val a_rotate : Svg_types.numbers wrap -> [> `Rotate ] attrib
-              val a_startoffset :
+              val a_startOffset :
                 Svg_types.Unit.length wrap -> [> `StartOffset ] attrib
               val a_method :
                 [< `Align | `Stretch ] wrap -> [> `Method ] attrib
               val a_spacing :
                 [< `Auto | `Exact ] wrap -> [> `Spacing ] attrib
-              val a_glyphref : string wrap -> [> `GlyphRef ] attrib
+              val a_glyphRef : string wrap -> [> `GlyphRef ] attrib
               val a_format : string wrap -> [> `Format ] attrib
-              val a_markerunits :
+              val a_markerUnits :
                 [< `StrokeWidth | `UserSpaceOnUse ] wrap ->
                 [> `MarkerUnits ] attrib
-              val a_refx : Svg_types.coord wrap -> [> `RefX ] attrib
-              val a_refy : Svg_types.coord wrap -> [> `RefY ] attrib
-              val a_markerwidth :
+              val a_refX : Svg_types.coord wrap -> [> `RefX ] attrib
+              val a_refY : Svg_types.coord wrap -> [> `RefY ] attrib
+              val a_markerWidth :
                 Svg_types.Unit.length wrap -> [> `MarkerWidth ] attrib
-              val a_markerheight :
+              val a_markerHeight :
                 Svg_types.Unit.length wrap -> [> `MarkerHeight ] attrib
               val a_orient :
                 [< `Angle of Svg_types.Unit.angle | `Auto ] wrap ->
                 [> `Orient ] attrib
               val a_local : string wrap -> [> `Local ] attrib
-              val a_renderingindent :
+              val a_rendering_intent :
                 [< `Absolute_colorimetric
                  | `Auto
                  | `Perceptual
                  | `Relative_colorimetric
                  | `Saturation ]
                 wrap -> [> `Rendering_Indent ] attrib
-              val a_gradientunits :
+              val a_gradientUnits :
                 [< `ObjectBoundingBox | `UserSpaceOnUse ] wrap ->
                 [ `GradientUnits ] attrib
-              val a_gradienttransform :
+              val a_gradientTransform :
                 Svg_types.transforms wrap -> [> `Gradient_Transform ] attrib
-              val a_spreadmethod :
+              val a_spreadMethod :
                 [< `Pad | `Reflect | `Repeat ] wrap ->
                 [> `SpreadMethod ] attrib
               val a_fx : Svg_types.coord wrap -> [> `Fx ] attrib
@@ -3702,27 +3712,27 @@
                 [< `Number of Svg_types.number
                  | `Percentage of Svg_types.percentage ]
                 wrap -> [> `Offset ] attrib
-              val a_patternunits :
+              val a_patternUnits :
                 [< `ObjectBoundingBox | `UserSpaceOnUse ] wrap ->
                 [> `PatternUnits ] attrib
-              val a_patterncontentunits :
+              val a_patternContentUnits :
                 [< `ObjectBoundingBox | `UserSpaceOnUse ] wrap ->
                 [> `PatternContentUnits ] attrib
-              val a_patterntransform :
+              val a_patternTransform :
                 Svg_types.transforms wrap -> [> `PatternTransform ] attrib
-              val a_clippathunits :
+              val a_clipPathUnits :
                 [< `ObjectBoundingBox | `UserSpaceOnUse ] wrap ->
                 [> `ClipPathUnits ] attrib
-              val a_maskunits :
+              val a_maskUnits :
                 [< `ObjectBoundingBox | `UserSpaceOnUse ] wrap ->
                 [> `MaskUnits ] attrib
-              val a_maskcontentunits :
+              val a_maskContentUnits :
                 [< `ObjectBoundingBox | `UserSpaceOnUse ] wrap ->
                 [> `MaskContentUnits ] attrib
-              val a_primitiveunits :
+              val a_primitiveUnits :
                 [< `ObjectBoundingBox | `UserSpaceOnUse ] wrap ->
                 [> `PrimitiveUnits ] attrib
-              val a_filterres :
+              val a_filterRes :
                 Svg_types.number_optional_number wrap ->
                 [> `FilterResUnits ] attrib
               val a_result : string wrap -> [> `Result ] attrib
@@ -3744,36 +3754,36 @@
                  | `SourceGraphic
                  | `StrokePaint ]
                 wrap -> [> `In2 ] attrib
-              val a_aizmuth : float wrap -> [> `Azimuth ] attrib
+              val a_azimuth : float wrap -> [> `Azimuth ] attrib
               val a_elevation : float wrap -> [> `Elevation ] attrib
-              val a_pointatx : float wrap -> [> `PointsAtX ] attrib
-              val a_pointaty : float wrap -> [> `PointsAtY ] attrib
-              val a_pointatz : float wrap -> [> `PointsAtZ ] attrib
-              val a_specularexponent :
+              val a_pointsAtX : float wrap -> [> `PointsAtX ] attrib
+              val a_pointsAtY : float wrap -> [> `PointsAtY ] attrib
+              val a_pointsAtZ : float wrap -> [> `PointsAtZ ] attrib
+              val a_specularExponent :
                 float wrap -> [> `SpecularExponent ] attrib
-              val a_specularconstant :
+              val a_specularConstant :
                 float wrap -> [> `SpecularConstant ] attrib
-              val a_limitingconeangle :
+              val a_limitingConeAngle :
                 float wrap -> [> `LimitingConeAngle ] attrib
               val a_mode :
                 [< `Darken | `Lighten | `Multiply | `Normal | `Screen ] wrap ->
                 [> `Mode ] attrib
-              val a_typefecolor :
+              val a_feColorMatrix_type :
                 [< `HueRotate | `LuminanceToAlpha | `Matrix | `Saturate ]
                 wrap -> [> `Typefecolor ] attrib
               val a_values : Svg_types.numbers wrap -> [> `Values ] attrib
-              val a_transferttype :
+              val a_type_transfer :
                 [< `Discrete | `Gamma | `Identity | `Linear | `Table ] wrap ->
-                [> `Typetransfert ] attrib
-              val a_tablevalues :
+                [> `Type_transfert ] attrib
+              val a_tableValues :
                 Svg_types.numbers wrap -> [> `TableValues ] attrib
               val a_intercept :
                 Svg_types.number wrap -> [> `Intercept ] attrib
               val a_amplitude :
                 Svg_types.number wrap -> [> `Amplitude ] attrib
               val a_exponent : Svg_types.number wrap -> [> `Exponent ] attrib
-              val a_offsettransfer :
-                Svg_types.number wrap -> [> `Offsettransfer ] attrib
+              val a_offset_transfer :
+                Svg_types.number wrap -> [> `Offset_transfer ] attrib
               val a_operator :
                 [< `Arithmetic | `Atop | `In | `Out | `Over | `Xor ] wrap ->
                 [> `Operator ] attrib
@@ -3783,53 +3793,53 @@
               val a_k4 : Svg_types.number wrap -> [> `K4 ] attrib
               val a_order :
                 Svg_types.number_optional_number wrap -> [> `Order ] attrib
-              val a_kernelmatrix :
+              val a_kernelMatrix :
                 Svg_types.numbers wrap -> [> `KernelMatrix ] attrib
               val a_divisor : Svg_types.number wrap -> [> `Divisor ] attrib
               val a_bias : Svg_types.number wrap -> [> `Bias ] attrib
-              val a_kernelunitlength :
+              val a_kernelUnitLength :
                 Svg_types.number_optional_number wrap ->
                 [> `KernelUnitLength ] attrib
               val a_targetX : int wrap -> [> `TargetX ] attrib
               val a_targetY : int wrap -> [> `TargetY ] attrib
-              val a_edgemode :
+              val a_edgeMode :
                 [< `Duplicate | `None | `Wrap ] wrap -> [> `TargetY ] attrib
-              val a_preservealpha : bool wrap -> [> `TargetY ] attrib
-              val a_surfacescale :
+              val a_preserveAlpha : bool wrap -> [> `TargetY ] attrib
+              val a_surfaceScale :
                 Svg_types.number wrap -> [> `SurfaceScale ] attrib
-              val a_diffuseconstant :
+              val a_diffuseConstant :
                 Svg_types.number wrap -> [> `DiffuseConstant ] attrib
               val a_scale : Svg_types.number wrap -> [> `Scale ] attrib
-              val a_xchannelselector :
+              val a_xChannelSelector :
                 [< `A | `B | `G | `R ] wrap -> [> `XChannelSelector ] attrib
-              val a_ychannelselector :
+              val a_yChannelSelector :
                 [< `A | `B | `G | `R ] wrap -> [> `YChannelSelector ] attrib
-              val a_stddeviation :
+              val a_stdDeviation :
                 Svg_types.number_optional_number wrap ->
                 [> `StdDeviation ] attrib
-              val a_operatormorphology :
+              val a_feMorphology_operator :
                 [< `Dilate | `Erode ] wrap -> [> `OperatorMorphology ] attrib
               val a_radius :
                 Svg_types.number_optional_number wrap -> [> `Radius ] attrib
-              val a_basefrenquency :
+              val a_baseFrenquency :
                 Svg_types.number_optional_number wrap ->
                 [> `BaseFrequency ] attrib
-              val a_numoctaves : int wrap -> [> `NumOctaves ] attrib
+              val a_numOctaves : int wrap -> [> `NumOctaves ] attrib
               val a_seed : Svg_types.number wrap -> [> `Seed ] attrib
-              val a_stitchtiles :
+              val a_stitchTiles :
                 [< `NoStitch | `Stitch ] wrap -> [> `StitchTiles ] attrib
-              val a_stitchtype :
+              val a_feTurbulence_type :
                 [< `FractalNoise | `Turbulence ] wrap ->
                 [> `TypeStitch ] attrib
-              val a_xlinkshow :
+              val a_xlink_show :
                 [< `New | `Replace ] wrap -> [> `Xlink_show ] attrib
-              val a_xlinkactuate :
+              val a_xlink_actuate :
                 [< `None | `OnLoad | `OnRequest | `Other ] wrap ->
                 [> `Xlink_actuate ] attrib
               val a_target : string wrap -> [> `Xlink_target ] attrib
-              val a_viewtarget : string wrap -> [> `ViewTarget ] attrib
-              val a_attributename : string wrap -> [> `AttributeName ] attrib
-              val a_attributetype :
+              val a_viewTarget : string wrap -> [> `ViewTarget ] attrib
+              val a_attributeName : string wrap -> [> `AttributeName ] attrib
+              val a_attributeType :
                 [< `Auto | `CSS | `XML ] wrap -> [> `AttributeType ] attrib
               val a_begin : string wrap -> [> `Begin ] attrib
               val a_dur : string wrap -> [> `Dur ] attrib
@@ -3838,19 +3848,19 @@
               val a_restart :
                 [< `Always | `Never | `WhenNotActive ] wrap ->
                 [> `Restart ] attrib
-              val a_repeatcount : string wrap -> [> `RepeatCount ] attrib
-              val a_repeatdur : string wrap -> [> `RepeatDur ] attrib
+              val a_repeatCount : string wrap -> [> `RepeatCount ] attrib
+              val a_repeatDur : string wrap -> [> `RepeatDur ] attrib
               val a_fill : Svg_types.paint wrap -> [> `Fill ] attrib
-              val a_fill_animation :
+              val a_animation_fill :
                 [< `Freeze | `Remove ] wrap -> [> `Fill_Animation ] attrib
-              val a_calcmode :
+              val a_calcMode :
                 [< `Discrete | `Linear | `Paced | `Spline ] wrap ->
                 [> `CalcMode ] attrib
-              val a_values_anim :
+              val a_animation_values :
                 Svg_types.strings wrap -> [> `Valuesanim ] attrib
-              val a_keytimes :
+              val a_keyTimes :
                 Svg_types.strings wrap -> [> `KeyTimes ] attrib
-              val a_keysplines :
+              val a_keySplines :
                 Svg_types.strings wrap -> [> `KeySplines ] attrib
               val a_from : string wrap -> [> `From ] attrib
               val a_to : string wrap -> [> `To ] attrib
@@ -3859,29 +3869,29 @@
                 [< `Replace | `Sum ] wrap -> [> `Additive ] attrib
               val a_accumulate :
                 [< `None | `Sum ] wrap -> [> `Accumulate ] attrib
-              val a_keypoints :
+              val a_keyPoints :
                 Svg_types.numbers_semicolon wrap -> [> `KeyPoints ] attrib
               val a_path : string wrap -> [> `Path ] attrib
-              val a_typeanimatecolor :
+              val a_animateColor_type :
                 [ `Rotate | `Scale | `SkewX | `SkewY | `Translate ] wrap ->
                 [ `Typeanimatecolor ] attrib
               val a_horiz_origin_x :
-                Svg_types.number wrap -> [> `Horizoriginx ] attrib
+                Svg_types.number wrap -> [> `HorizOriginX ] attrib
               val a_horiz_origin_y :
-                Svg_types.number wrap -> [> `Horizoriginy ] attrib
+                Svg_types.number wrap -> [> `HorizOriginY ] attrib
               val a_horiz_adv_x :
-                Svg_types.number wrap -> [> `Horizadvx ] attrib
+                Svg_types.number wrap -> [> `HorizAdvX ] attrib
               val a_vert_origin_x :
-                Svg_types.number wrap -> [> `Vertoriginx ] attrib
+                Svg_types.number wrap -> [> `VertOriginX ] attrib
               val a_vert_origin_y :
-                Svg_types.number wrap -> [> `Vertoriginy ] attrib
+                Svg_types.number wrap -> [> `VertOriginY ] attrib
               val a_vert_adv_y :
-                Svg_types.number wrap -> [> `Vertadvy ] attrib
+                Svg_types.number wrap -> [> `VertAdvY ] attrib
               val a_unicode : string wrap -> [> `Unicode ] attrib
-              val a_glyphname : string wrap -> [> `glyphname ] attrib
+              val a_glyph_name : string wrap -> [> `glyphname ] attrib
               val a_orientation :
                 [< `H | `V ] wrap -> [> `Orientation ] attrib
-              val a_arabicform :
+              val a_arabic_form :
                 [< `Initial | `Isolated | `Medial | `Terminal ] wrap ->
                 [> `Arabicform ] attrib
               val a_lang : string wrap -> [> `Lang ] attrib
@@ -3890,21 +3900,21 @@
               val a_g1 : string wrap -> [> `G1 ] attrib
               val a_g2 : string wrap -> [> `G2 ] attrib
               val a_k : string wrap -> [> `K ] attrib
-              val a_fontfamily : string wrap -> [> `Font_Family ] attrib
-              val a_fontstyle : string wrap -> [> `Font_Style ] attrib
-              val a_fontvariant : string wrap -> [> `Font_Variant ] attrib
-              val a_fontweight : string wrap -> [> `Font_Weight ] attrib
-              val a_fontstretch : string wrap -> [> `Font_Stretch ] attrib
-              val a_fontsize : string wrap -> [> `Font_Size ] attrib
-              val a_unicoderange : string wrap -> [> `UnicodeRange ] attrib
-              val a_unitsperem : string wrap -> [> `UnitsPerEm ] attrib
+              val a_font_family : string wrap -> [> `Font_Family ] attrib
+              val a_font_style : string wrap -> [> `Font_Style ] attrib
+              val a_font_variant : string wrap -> [> `Font_Variant ] attrib
+              val a_font_weight : string wrap -> [> `Font_Weight ] attrib
+              val a_font_stretch : string wrap -> [> `Font_Stretch ] attrib
+              val a_font_size : string wrap -> [> `Font_Size ] attrib
+              val a_unicode_range : string wrap -> [> `UnicodeRange ] attrib
+              val a_units_per_em : string wrap -> [> `UnitsPerEm ] attrib
               val a_stemv : Svg_types.number wrap -> [> `Stemv ] attrib
               val a_stemh : Svg_types.number wrap -> [> `Stemh ] attrib
               val a_slope : Svg_types.number wrap -> [> `Slope ] attrib
-              val a_capheight :
+              val a_cap_height :
                 Svg_types.number wrap -> [> `CapHeight ] attrib
-              val a_xheight : Svg_types.number wrap -> [> `XHeight ] attrib
-              val a_accentheight :
+              val a_x_height : Svg_types.number wrap -> [> `XHeight ] attrib
+              val a_accent_height :
                 Svg_types.number wrap -> [> `AccentHeight ] attrib
               val a_ascent : Svg_types.number wrap -> [> `Ascent ] attrib
               val a_widths : string wrap -> [> `Widths ] attrib
@@ -3918,22 +3928,23 @@
               val a_hanging : Svg_types.number wrap -> [> `Hanging ] attrib
               val a_videographic :
                 Svg_types.number wrap -> [> `VIdeographic ] attrib
-              val a_valphabetic :
+              val a_v_alphabetic :
                 Svg_types.number wrap -> [> `VAlphabetic ] attrib
-              val a_vmathematical :
+              val a_v_mathematical :
                 Svg_types.number wrap -> [> `VMathematical ] attrib
-              val a_vhanging : Svg_types.number wrap -> [> `VHanging ] attrib
-              val a_underlineposition :
+              val a_v_hanging :
+                Svg_types.number wrap -> [> `VHanging ] attrib
+              val a_underline_position :
                 Svg_types.number wrap -> [> `UnderlinePosition ] attrib
-              val a_underlinethickness :
+              val a_underline_thickness :
                 Svg_types.number wrap -> [> `UnderlineThickness ] attrib
-              val a_strikethroughposition :
+              val a_strikethrough_position :
                 Svg_types.number wrap -> [> `StrikethroughPosition ] attrib
-              val a_strikethroughthickness :
+              val a_strikethrough_thickness :
                 Svg_types.number wrap -> [> `StrikethroughThickness ] attrib
-              val a_overlineposition :
+              val a_overline_position :
                 Svg_types.number wrap -> [> `OverlinePosition ] attrib
-              val a_overlinethickness :
+              val a_overline_thickness :
                 Svg_types.number wrap -> [> `OverlineThickness ] attrib
               val a_string : string wrap -> [> `String ] attrib
               val a_name : string wrap -> [> `Name ] attrib
@@ -3994,30 +4005,31 @@
               val metadata :
                 ?a:Svg_types.metadata_attr attrib list ->
                 Xml.elt list_wrap -> [> Svg_types.metadata ] elt
-              val foreignobject :
+              val foreignObject :
                 ?a:Svg_types.foreignobject_attr attrib list ->
                 Xml.elt list_wrap -> [> Svg_types.foreignobject ] elt
-              val a_stopcolor :
+              val a_stop_color :
                 Svg_types.color wrap -> [> `Stop_Color ] attrib
-              val a_stopopacity :
+              val a_stop_opacity :
                 Svg_types.number wrap -> [> `Stop_Opacity ] attrib
               val a_stroke : Svg_types.paint wrap -> [> `Stroke ] attrib
-              val a_strokewidth :
+              val a_stroke_width :
                 Svg_types.Unit.length wrap -> [> `Stroke_Width ] attrib
-              val a_strokelinecap :
+              val a_stroke_linecap :
                 [< `Butt | `Round | `Square ] wrap ->
                 [> `Stroke_Linecap ] attrib
-              val a_strokelinejoin :
+              val a_stroke_linejoin :
                 [< `Bever | `Miter | `Round ] wrap ->
                 [> `Stroke_Linejoin ] attrib
-              val a_strokemiterlimit :
+              val a_stroke_miterlimit :
                 float wrap -> [> `Stroke_Miterlimit ] attrib
-              val a_strokedasharray :
+              val a_stroke_dasharray :
                 Svg_types.Unit.length list wrap ->
                 [> `Stroke_Dasharray ] attrib
-              val a_strokedashoffset :
+              val a_stroke_dashoffset :
                 Svg_types.Unit.length wrap -> [> `Stroke_Dashoffset ] attrib
-              val a_strokeopacity : float wrap -> [> `Stroke_Opacity ] attrib
+              val a_stroke_opacity :
+                float wrap -> [> `Stroke_Opacity ] attrib
               val svg :
                 ([< Svg_types.svg_attr ], [< Svg_types.svg_content ],
                  [> Svg_types.svg ])
@@ -4318,26 +4330,26 @@
                 ([< Svg_types.hkern_attr ], [> Svg_types.hkern ]) nullary
               val vkern :
                 ([< Svg_types.vkern_attr ], [> Svg_types.vkern ]) nullary
-              val fontface :
-                ([< Svg_types.fontface_attr ], [> Svg_types.fontface ])
+              val font_face :
+                ([< Svg_types.font_face_attr ], [> Svg_types.font_face ])
                 nullary
-              val fontfacesrc :
-                ([< Svg_types.fontfacesrc_attr ],
-                 [< Svg_types.fontfacesrc_content ],
-                 [> Svg_types.fontfacesrc ])
+              val font_face_src :
+                ([< Svg_types.font_face_src_attr ],
+                 [< Svg_types.font_face_src_content ],
+                 [> Svg_types.font_face_src ])
                 star
-              val fontfaceuri :
-                ([< Svg_types.fontfaceuri_attr ],
-                 [< Svg_types.fontfaceuri_content ],
-                 [> Svg_types.fontfaceuri ])
+              val font_face_uri :
+                ([< Svg_types.font_face_uri_attr ],
+                 [< Svg_types.font_face_uri_content ],
+                 [> Svg_types.font_face_uri ])
                 star
-              val fontfaceformat :
-                ([< Svg_types.fontfaceformat_attr ],
-                 [> Svg_types.fontfaceformat ])
+              val font_face_format :
+                ([< Svg_types.font_face_format_attr ],
+                 [> Svg_types.font_face_format ])
                 nullary
-              val fontfacename :
-                ([< Svg_types.fontfacename_attr ],
-                 [> Svg_types.fontfacename ])
+              val font_face_name :
+                ([< Svg_types.font_face_name_attr ],
+                 [> Svg_types.font_face_name ])
                 nullary
               val tot : Xml.elt -> 'a elt
               val totl : Xml.elt list -> 'a elt list
@@ -4434,27 +4446,27 @@
               | `Ref of Svg_types.glyphref elt list ]
           val pcdata : string wrap -> [> `PCDATA ] elt
           val a_version : string wrap -> [> `Version ] attrib
-          val a_baseprofile : string wrap -> [> `BaseProfile ] attrib
+          val a_baseProfile : string wrap -> [> `BaseProfile ] attrib
           val a_x : Svg_types.coord wrap -> [> `X ] attrib
           val a_y : Svg_types.coord wrap -> [> `Y ] attrib
           val a_width : Svg_types.Unit.length wrap -> [> `Width ] attrib
           val a_height : Svg_types.Unit.length wrap -> [> `Height ] attrib
-          val a_preserveaspectratio :
+          val a_preserveAspectRatio :
             string wrap -> [> `PreserveAspectRatio ] attrib
-          val a_contentscripttype :
+          val a_contentScriptType :
             string wrap -> [> `ContentScriptType ] attrib
-          val a_contentstyletype :
+          val a_contentStyleType :
             string wrap -> [> `ContentStyleType ] attrib
           val a_zoomAndPan :
             [< `Disable | `Magnify ] wrap -> [> `ZoomAndSpan ] attrib
           val a_xlink_href : Svg_types.iri wrap -> [> `Xlink_href ] attrib
-          val a_requiredfeatures :
+          val a_requiredFeatures :
             Svg_types.spacestrings wrap -> [> `RequiredFeatures ] attrib
-          val a_requiredextensions :
+          val a_requiredExtensions :
             Svg_types.spacestrings wrap -> [> `RequiredExtension ] attrib
-          val a_systemlanguage :
+          val a_systemLanguage :
             Svg_types.commastrings wrap -> [> `SystemLanguage ] attrib
-          val a_externalressourcesrequired :
+          val a_externalRessourcesRequired :
             bool wrap -> [> `ExternalRessourcesRequired ] attrib
           val a_id : string wrap -> [> `Id ] attrib
           val a_xml_base : Svg_types.iri wrap -> [> `Xml_Base ] attrib
@@ -4468,9 +4480,9 @@
           val a_style : string wrap -> [> `Style ] attrib
           val a_transform :
             Svg_types.transform wrap -> [> `Transform ] attrib
-          val a_viewbox : Svg_types.fourfloats wrap -> [> `ViewBox ] attrib
+          val a_viewBox : Svg_types.fourfloats wrap -> [> `ViewBox ] attrib
           val a_d : string wrap -> [> `D ] attrib
-          val a_pathlength : float wrap -> [> `PathLength ] attrib
+          val a_pathLength : float wrap -> [> `PathLength ] attrib
           val a_rx : Svg_types.Unit.length wrap -> [> `Rx ] attrib
           val a_ry : Svg_types.Unit.length wrap -> [> `Ry ] attrib
           val a_cx : Svg_types.Unit.length wrap -> [> `Cx ] attrib
@@ -4487,10 +4499,10 @@
           val a_dy : Svg_types.number wrap -> [> `Dy ] attrib
           val a_dx_list : Svg_types.lengths wrap -> [> `Dx_list ] attrib
           val a_dy_list : Svg_types.lengths wrap -> [> `Dy_list ] attrib
-          val a_lengthadjust :
+          val a_lengthAdjust :
             [< `Spacing | `SpacingAndGlyphs ] wrap ->
             [> `LengthAdjust ] attrib
-          val a_textlength :
+          val a_textLength :
             Svg_types.Unit.length wrap -> [> `TextLength ] attrib
           val a_text_anchor :
             [< `End | `Inherit | `Middle | `Start ] wrap ->
@@ -4511,38 +4523,38 @@
              | `OptimizeSpeed ]
             wrap -> [> `Text_Rendering ] attrib
           val a_rotate : Svg_types.numbers wrap -> [> `Rotate ] attrib
-          val a_startoffset :
+          val a_startOffset :
             Svg_types.Unit.length wrap -> [> `StartOffset ] attrib
           val a_method : [< `Align | `Stretch ] wrap -> [> `Method ] attrib
           val a_spacing : [< `Auto | `Exact ] wrap -> [> `Spacing ] attrib
-          val a_glyphref : string wrap -> [> `GlyphRef ] attrib
+          val a_glyphRef : string wrap -> [> `GlyphRef ] attrib
           val a_format : string wrap -> [> `Format ] attrib
-          val a_markerunits :
+          val a_markerUnits :
             [< `StrokeWidth | `UserSpaceOnUse ] wrap ->
             [> `MarkerUnits ] attrib
-          val a_refx : Svg_types.coord wrap -> [> `RefX ] attrib
-          val a_refy : Svg_types.coord wrap -> [> `RefY ] attrib
-          val a_markerwidth :
+          val a_refX : Svg_types.coord wrap -> [> `RefX ] attrib
+          val a_refY : Svg_types.coord wrap -> [> `RefY ] attrib
+          val a_markerWidth :
             Svg_types.Unit.length wrap -> [> `MarkerWidth ] attrib
-          val a_markerheight :
+          val a_markerHeight :
             Svg_types.Unit.length wrap -> [> `MarkerHeight ] attrib
           val a_orient :
             [< `Angle of Svg_types.Unit.angle | `Auto ] wrap ->
             [> `Orient ] attrib
           val a_local : string wrap -> [> `Local ] attrib
-          val a_renderingindent :
+          val a_rendering_intent :
             [< `Absolute_colorimetric
              | `Auto
              | `Perceptual
              | `Relative_colorimetric
              | `Saturation ]
             wrap -> [> `Rendering_Indent ] attrib
-          val a_gradientunits :
+          val a_gradientUnits :
             [< `ObjectBoundingBox | `UserSpaceOnUse ] wrap ->
             [ `GradientUnits ] attrib
-          val a_gradienttransform :
+          val a_gradientTransform :
             Svg_types.transforms wrap -> [> `Gradient_Transform ] attrib
-          val a_spreadmethod :
+          val a_spreadMethod :
             [< `Pad | `Reflect | `Repeat ] wrap -> [> `SpreadMethod ] attrib
           val a_fx : Svg_types.coord wrap -> [> `Fx ] attrib
           val a_fy : Svg_types.coord wrap -> [> `Fy ] attrib
@@ -4550,27 +4562,27 @@
             [< `Number of Svg_types.number
              | `Percentage of Svg_types.percentage ]
             wrap -> [> `Offset ] attrib
-          val a_patternunits :
+          val a_patternUnits :
             [< `ObjectBoundingBox | `UserSpaceOnUse ] wrap ->
             [> `PatternUnits ] attrib
-          val a_patterncontentunits :
+          val a_patternContentUnits :
             [< `ObjectBoundingBox | `UserSpaceOnUse ] wrap ->
             [> `PatternContentUnits ] attrib
-          val a_patterntransform :
+          val a_patternTransform :
             Svg_types.transforms wrap -> [> `PatternTransform ] attrib
-          val a_clippathunits :
+          val a_clipPathUnits :
             [< `ObjectBoundingBox | `UserSpaceOnUse ] wrap ->
             [> `ClipPathUnits ] attrib
-          val a_maskunits :
+          val a_maskUnits :
             [< `ObjectBoundingBox | `UserSpaceOnUse ] wrap ->
             [> `MaskUnits ] attrib
-          val a_maskcontentunits :
+          val a_maskContentUnits :
             [< `ObjectBoundingBox | `UserSpaceOnUse ] wrap ->
             [> `MaskContentUnits ] attrib
-          val a_primitiveunits :
+          val a_primitiveUnits :
             [< `ObjectBoundingBox | `UserSpaceOnUse ] wrap ->
             [> `PrimitiveUnits ] attrib
-          val a_filterres :
+          val a_filterRes :
             Svg_types.number_optional_number wrap ->
             [> `FilterResUnits ] attrib
           val a_result : string wrap -> [> `Result ] attrib
@@ -4592,34 +4604,34 @@
              | `SourceGraphic
              | `StrokePaint ]
             wrap -> [> `In2 ] attrib
-          val a_aizmuth : float wrap -> [> `Azimuth ] attrib
+          val a_azimuth : float wrap -> [> `Azimuth ] attrib
           val a_elevation : float wrap -> [> `Elevation ] attrib
-          val a_pointatx : float wrap -> [> `PointsAtX ] attrib
-          val a_pointaty : float wrap -> [> `PointsAtY ] attrib
-          val a_pointatz : float wrap -> [> `PointsAtZ ] attrib
-          val a_specularexponent :
+          val a_pointsAtX : float wrap -> [> `PointsAtX ] attrib
+          val a_pointsAtY : float wrap -> [> `PointsAtY ] attrib
+          val a_pointsAtZ : float wrap -> [> `PointsAtZ ] attrib
+          val a_specularExponent :
             float wrap -> [> `SpecularExponent ] attrib
-          val a_specularconstant :
+          val a_specularConstant :
             float wrap -> [> `SpecularConstant ] attrib
-          val a_limitingconeangle :
+          val a_limitingConeAngle :
             float wrap -> [> `LimitingConeAngle ] attrib
           val a_mode :
             [< `Darken | `Lighten | `Multiply | `Normal | `Screen ] wrap ->
             [> `Mode ] attrib
-          val a_typefecolor :
+          val a_feColorMatrix_type :
             [< `HueRotate | `LuminanceToAlpha | `Matrix | `Saturate ] wrap ->
             [> `Typefecolor ] attrib
           val a_values : Svg_types.numbers wrap -> [> `Values ] attrib
-          val a_transferttype :
+          val a_type_transfer :
             [< `Discrete | `Gamma | `Identity | `Linear | `Table ] wrap ->
-            [> `Typetransfert ] attrib
-          val a_tablevalues :
+            [> `Type_transfert ] attrib
+          val a_tableValues :
             Svg_types.numbers wrap -> [> `TableValues ] attrib
           val a_intercept : Svg_types.number wrap -> [> `Intercept ] attrib
           val a_amplitude : Svg_types.number wrap -> [> `Amplitude ] attrib
           val a_exponent : Svg_types.number wrap -> [> `Exponent ] attrib
-          val a_offsettransfer :
-            Svg_types.number wrap -> [> `Offsettransfer ] attrib
+          val a_offset_transfer :
+            Svg_types.number wrap -> [> `Offset_transfer ] attrib
           val a_operator :
             [< `Arithmetic | `Atop | `In | `Out | `Over | `Xor ] wrap ->
             [> `Operator ] attrib
@@ -4629,52 +4641,52 @@
           val a_k4 : Svg_types.number wrap -> [> `K4 ] attrib
           val a_order :
             Svg_types.number_optional_number wrap -> [> `Order ] attrib
-          val a_kernelmatrix :
+          val a_kernelMatrix :
             Svg_types.numbers wrap -> [> `KernelMatrix ] attrib
           val a_divisor : Svg_types.number wrap -> [> `Divisor ] attrib
           val a_bias : Svg_types.number wrap -> [> `Bias ] attrib
-          val a_kernelunitlength :
+          val a_kernelUnitLength :
             Svg_types.number_optional_number wrap ->
             [> `KernelUnitLength ] attrib
           val a_targetX : int wrap -> [> `TargetX ] attrib
           val a_targetY : int wrap -> [> `TargetY ] attrib
-          val a_edgemode :
+          val a_edgeMode :
             [< `Duplicate | `None | `Wrap ] wrap -> [> `TargetY ] attrib
-          val a_preservealpha : bool wrap -> [> `TargetY ] attrib
-          val a_surfacescale :
+          val a_preserveAlpha : bool wrap -> [> `TargetY ] attrib
+          val a_surfaceScale :
             Svg_types.number wrap -> [> `SurfaceScale ] attrib
-          val a_diffuseconstant :
+          val a_diffuseConstant :
             Svg_types.number wrap -> [> `DiffuseConstant ] attrib
           val a_scale : Svg_types.number wrap -> [> `Scale ] attrib
-          val a_xchannelselector :
+          val a_xChannelSelector :
             [< `A | `B | `G | `R ] wrap -> [> `XChannelSelector ] attrib
-          val a_ychannelselector :
+          val a_yChannelSelector :
             [< `A | `B | `G | `R ] wrap -> [> `YChannelSelector ] attrib
-          val a_stddeviation :
+          val a_stdDeviation :
             Svg_types.number_optional_number wrap ->
             [> `StdDeviation ] attrib
-          val a_operatormorphology :
+          val a_feMorphology_operator :
             [< `Dilate | `Erode ] wrap -> [> `OperatorMorphology ] attrib
           val a_radius :
             Svg_types.number_optional_number wrap -> [> `Radius ] attrib
-          val a_basefrenquency :
+          val a_baseFrenquency :
             Svg_types.number_optional_number wrap ->
             [> `BaseFrequency ] attrib
-          val a_numoctaves : int wrap -> [> `NumOctaves ] attrib
+          val a_numOctaves : int wrap -> [> `NumOctaves ] attrib
           val a_seed : Svg_types.number wrap -> [> `Seed ] attrib
-          val a_stitchtiles :
+          val a_stitchTiles :
             [< `NoStitch | `Stitch ] wrap -> [> `StitchTiles ] attrib
-          val a_stitchtype :
+          val a_feTurbulence_type :
             [< `FractalNoise | `Turbulence ] wrap -> [> `TypeStitch ] attrib
-          val a_xlinkshow :
+          val a_xlink_show :
             [< `New | `Replace ] wrap -> [> `Xlink_show ] attrib
-          val a_xlinkactuate :
+          val a_xlink_actuate :
             [< `None | `OnLoad | `OnRequest | `Other ] wrap ->
             [> `Xlink_actuate ] attrib
           val a_target : string wrap -> [> `Xlink_target ] attrib
-          val a_viewtarget : string wrap -> [> `ViewTarget ] attrib
-          val a_attributename : string wrap -> [> `AttributeName ] attrib
-          val a_attributetype :
+          val a_viewTarget : string wrap -> [> `ViewTarget ] attrib
+          val a_attributeName : string wrap -> [> `AttributeName ] attrib
+          val a_attributeType :
             [< `Auto | `CSS | `XML ] wrap -> [> `AttributeType ] attrib
           val a_begin : string wrap -> [> `Begin ] attrib
           val a_dur : string wrap -> [> `Dur ] attrib
@@ -4683,18 +4695,18 @@
           val a_restart :
             [< `Always | `Never | `WhenNotActive ] wrap ->
             [> `Restart ] attrib
-          val a_repeatcount : string wrap -> [> `RepeatCount ] attrib
-          val a_repeatdur : string wrap -> [> `RepeatDur ] attrib
+          val a_repeatCount : string wrap -> [> `RepeatCount ] attrib
+          val a_repeatDur : string wrap -> [> `RepeatDur ] attrib
           val a_fill : Svg_types.paint wrap -> [> `Fill ] attrib
-          val a_fill_animation :
+          val a_animation_fill :
             [< `Freeze | `Remove ] wrap -> [> `Fill_Animation ] attrib
-          val a_calcmode :
+          val a_calcMode :
             [< `Discrete | `Linear | `Paced | `Spline ] wrap ->
             [> `CalcMode ] attrib
-          val a_values_anim :
+          val a_animation_values :
             Svg_types.strings wrap -> [> `Valuesanim ] attrib
-          val a_keytimes : Svg_types.strings wrap -> [> `KeyTimes ] attrib
-          val a_keysplines :
+          val a_keyTimes : Svg_types.strings wrap -> [> `KeyTimes ] attrib
+          val a_keySplines :
             Svg_types.strings wrap -> [> `KeySplines ] attrib
           val a_from : string wrap -> [> `From ] attrib
           val a_to : string wrap -> [> `To ] attrib
@@ -4702,26 +4714,26 @@
           val a_additive : [< `Replace | `Sum ] wrap -> [> `Additive ] attrib
           val a_accumulate :
             [< `None | `Sum ] wrap -> [> `Accumulate ] attrib
-          val a_keypoints :
+          val a_keyPoints :
             Svg_types.numbers_semicolon wrap -> [> `KeyPoints ] attrib
           val a_path : string wrap -> [> `Path ] attrib
-          val a_typeanimatecolor :
+          val a_animateColor_type :
             [ `Rotate | `Scale | `SkewX | `SkewY | `Translate ] wrap ->
             [ `Typeanimatecolor ] attrib
           val a_horiz_origin_x :
-            Svg_types.number wrap -> [> `Horizoriginx ] attrib
+            Svg_types.number wrap -> [> `HorizOriginX ] attrib
           val a_horiz_origin_y :
-            Svg_types.number wrap -> [> `Horizoriginy ] attrib
-          val a_horiz_adv_x : Svg_types.number wrap -> [> `Horizadvx ] attrib
+            Svg_types.number wrap -> [> `HorizOriginY ] attrib
+          val a_horiz_adv_x : Svg_types.number wrap -> [> `HorizAdvX ] attrib
           val a_vert_origin_x :
-            Svg_types.number wrap -> [> `Vertoriginx ] attrib
+            Svg_types.number wrap -> [> `VertOriginX ] attrib
           val a_vert_origin_y :
-            Svg_types.number wrap -> [> `Vertoriginy ] attrib
-          val a_vert_adv_y : Svg_types.number wrap -> [> `Vertadvy ] attrib
+            Svg_types.number wrap -> [> `VertOriginY ] attrib
+          val a_vert_adv_y : Svg_types.number wrap -> [> `VertAdvY ] attrib
           val a_unicode : string wrap -> [> `Unicode ] attrib
-          val a_glyphname : string wrap -> [> `glyphname ] attrib
+          val a_glyph_name : string wrap -> [> `glyphname ] attrib
           val a_orientation : [< `H | `V ] wrap -> [> `Orientation ] attrib
-          val a_arabicform :
+          val a_arabic_form :
             [< `Initial | `Isolated | `Medial | `Terminal ] wrap ->
             [> `Arabicform ] attrib
           val a_lang : string wrap -> [> `Lang ] attrib
@@ -4730,20 +4742,20 @@
           val a_g1 : string wrap -> [> `G1 ] attrib
           val a_g2 : string wrap -> [> `G2 ] attrib
           val a_k : string wrap -> [> `K ] attrib
-          val a_fontfamily : string wrap -> [> `Font_Family ] attrib
-          val a_fontstyle : string wrap -> [> `Font_Style ] attrib
-          val a_fontvariant : string wrap -> [> `Font_Variant ] attrib
-          val a_fontweight : string wrap -> [> `Font_Weight ] attrib
-          val a_fontstretch : string wrap -> [> `Font_Stretch ] attrib
-          val a_fontsize : string wrap -> [> `Font_Size ] attrib
-          val a_unicoderange : string wrap -> [> `UnicodeRange ] attrib
-          val a_unitsperem : string wrap -> [> `UnitsPerEm ] attrib
+          val a_font_family : string wrap -> [> `Font_Family ] attrib
+          val a_font_style : string wrap -> [> `Font_Style ] attrib
+          val a_font_variant : string wrap -> [> `Font_Variant ] attrib
+          val a_font_weight : string wrap -> [> `Font_Weight ] attrib
+          val a_font_stretch : string wrap -> [> `Font_Stretch ] attrib
+          val a_font_size : string wrap -> [> `Font_Size ] attrib
+          val a_unicode_range : string wrap -> [> `UnicodeRange ] attrib
+          val a_units_per_em : string wrap -> [> `UnitsPerEm ] attrib
           val a_stemv : Svg_types.number wrap -> [> `Stemv ] attrib
           val a_stemh : Svg_types.number wrap -> [> `Stemh ] attrib
           val a_slope : Svg_types.number wrap -> [> `Slope ] attrib
-          val a_capheight : Svg_types.number wrap -> [> `CapHeight ] attrib
-          val a_xheight : Svg_types.number wrap -> [> `XHeight ] attrib
-          val a_accentheight :
+          val a_cap_height : Svg_types.number wrap -> [> `CapHeight ] attrib
+          val a_x_height : Svg_types.number wrap -> [> `XHeight ] attrib
+          val a_accent_height :
             Svg_types.number wrap -> [> `AccentHeight ] attrib
           val a_ascent : Svg_types.number wrap -> [> `Ascent ] attrib
           val a_widths : string wrap -> [> `Widths ] attrib
@@ -4756,22 +4768,22 @@
           val a_hanging : Svg_types.number wrap -> [> `Hanging ] attrib
           val a_videographic :
             Svg_types.number wrap -> [> `VIdeographic ] attrib
-          val a_valphabetic :
+          val a_v_alphabetic :
             Svg_types.number wrap -> [> `VAlphabetic ] attrib
-          val a_vmathematical :
+          val a_v_mathematical :
             Svg_types.number wrap -> [> `VMathematical ] attrib
-          val a_vhanging : Svg_types.number wrap -> [> `VHanging ] attrib
-          val a_underlineposition :
+          val a_v_hanging : Svg_types.number wrap -> [> `VHanging ] attrib
+          val a_underline_position :
             Svg_types.number wrap -> [> `UnderlinePosition ] attrib
-          val a_underlinethickness :
+          val a_underline_thickness :
             Svg_types.number wrap -> [> `UnderlineThickness ] attrib
-          val a_strikethroughposition :
+          val a_strikethrough_position :
             Svg_types.number wrap -> [> `StrikethroughPosition ] attrib
-          val a_strikethroughthickness :
+          val a_strikethrough_thickness :
             Svg_types.number wrap -> [> `StrikethroughThickness ] attrib
-          val a_overlineposition :
+          val a_overline_position :
             Svg_types.number wrap -> [> `OverlinePosition ] attrib
-          val a_overlinethickness :
+          val a_overline_thickness :
             Svg_types.number wrap -> [> `OverlineThickness ] attrib
           val a_string : string wrap -> [> `String ] attrib
           val a_name : string wrap -> [> `Name ] attrib
@@ -4831,27 +4843,27 @@
           val metadata :
             ?a:Svg_types.metadata_attr attrib list ->
             Xml.elt list_wrap -> [> Svg_types.metadata ] elt
-          val foreignobject :
+          val foreignObject :
             ?a:Svg_types.foreignobject_attr attrib list ->
             Xml.elt list_wrap -> [> Svg_types.foreignobject ] elt
-          val a_stopcolor : Svg_types.color wrap -> [> `Stop_Color ] attrib
-          val a_stopopacity :
+          val a_stop_color : Svg_types.color wrap -> [> `Stop_Color ] attrib
+          val a_stop_opacity :
             Svg_types.number wrap -> [> `Stop_Opacity ] attrib
           val a_stroke : Svg_types.paint wrap -> [> `Stroke ] attrib
-          val a_strokewidth :
+          val a_stroke_width :
             Svg_types.Unit.length wrap -> [> `Stroke_Width ] attrib
-          val a_strokelinecap :
+          val a_stroke_linecap :
             [< `Butt | `Round | `Square ] wrap -> [> `Stroke_Linecap ] attrib
-          val a_strokelinejoin :
+          val a_stroke_linejoin :
             [< `Bever | `Miter | `Round ] wrap ->
             [> `Stroke_Linejoin ] attrib
-          val a_strokemiterlimit :
+          val a_stroke_miterlimit :
             float wrap -> [> `Stroke_Miterlimit ] attrib
-          val a_strokedasharray :
+          val a_stroke_dasharray :
             Svg_types.Unit.length list wrap -> [> `Stroke_Dasharray ] attrib
-          val a_strokedashoffset :
+          val a_stroke_dashoffset :
             Svg_types.Unit.length wrap -> [> `Stroke_Dashoffset ] attrib
-          val a_strokeopacity : float wrap -> [> `Stroke_Opacity ] attrib
+          val a_stroke_opacity : float wrap -> [> `Stroke_Opacity ] attrib
           val svg :
             ([< Svg_types.svg_attr ], [< Svg_types.svg_content ],
              [> Svg_types.svg ])
@@ -5149,22 +5161,25 @@
             ([< Svg_types.hkern_attr ], [> Svg_types.hkern ]) nullary
           val vkern :
             ([< Svg_types.vkern_attr ], [> Svg_types.vkern ]) nullary
-          val fontface :
-            ([< Svg_types.fontface_attr ], [> Svg_types.fontface ]) nullary
-          val fontfacesrc :
-            ([< Svg_types.fontfacesrc_attr ],
-             [< Svg_types.fontfacesrc_content ], [> Svg_types.fontfacesrc ])
+          val font_face :
+            ([< Svg_types.font_face_attr ], [> Svg_types.font_face ]) nullary
+          val font_face_src :
+            ([< Svg_types.font_face_src_attr ],
+             [< Svg_types.font_face_src_content ],
+             [> Svg_types.font_face_src ])
             star
-          val fontfaceuri :
-            ([< Svg_types.fontfaceuri_attr ],
-             [< Svg_types.fontfaceuri_content ], [> Svg_types.fontfaceuri ])
+          val font_face_uri :
+            ([< Svg_types.font_face_uri_attr ],
+             [< Svg_types.font_face_uri_content ],
+             [> Svg_types.font_face_uri ])
             star
-          val fontfaceformat :
-            ([< Svg_types.fontfaceformat_attr ],
-             [> Svg_types.fontfaceformat ])
+          val font_face_format :
+            ([< Svg_types.font_face_format_attr ],
+             [> Svg_types.font_face_format ])
             nullary
-          val fontfacename :
-            ([< Svg_types.fontfacename_attr ], [> Svg_types.fontfacename ])
+          val font_face_name :
+            ([< Svg_types.font_face_name_attr ],
+             [> Svg_types.font_face_name ])
             nullary
           val tot : Xml.elt -> 'a elt
           val totl : Xml.elt list -> 'a elt list
@@ -5371,13 +5386,11 @@
               type 'a attrib = 'a attrib
               val to_xmlattribs : 'a attrib list -> Xml.attrib list
               val to_attrib : Xml.attrib -> 'a attrib
-              val a_autocomplete :
-                [< `Off | `On ] wrap -> [> `Autocomplete ] attrib
-              val a_async : [< `Async ] wrap -> [> `Async ] attrib
-              val a_autofocus :
-                [< `Autofocus ] wrap -> [> `Autofocus ] attrib
-              val a_autoplay : [< `Autoplay ] wrap -> [> `Autoplay ] attrib
-              val a_muted : [< `Muted ] wrap -> [> `Muted ] attrib
+              val a_autocomplete : bool wrap -> [> `Autocomplete ] attrib
+              val a_async : [> `Async ] attrib
+              val a_autofocus : [> `Autofocus ] attrib
+              val a_autoplay : [> `Autoplay ] attrib
+              val a_muted : [> `Muted ] attrib
               val a_crossorigin :
                 [< `Anonymous | `Use_credentials ] wrap ->
                 [> `Crossorigin ] attrib
@@ -5388,7 +5401,7 @@
                 bool wrap -> [> `Contenteditable ] attrib
               val a_contextmenu :
                 Html5_types.idref wrap -> [> `Contextmenu ] attrib
-              val a_controls : [< `Controls ] wrap -> [> `Controls ] attrib
+              val a_controls : [> `Controls ] attrib
               val a_dir : [< `Ltr | `Rtl ] wrap -> [> `Dir ] attrib
               val a_draggable : bool wrap -> [> `Draggable ] attrib
               val a_form : Html5_types.idref wrap -> [> `Form ] attrib
@@ -5398,17 +5411,16 @@
               val a_formmethod :
                 [< `Delete | `Get | `Post | `Put ] wrap ->
                 [> `Formmethod ] attrib
-              val a_formnovalidate :
-                [< `Formnovalidate ] wrap -> [> `Formnovalidate ] attrib
+              val a_formnovalidate : [> `Formnovalidate ] attrib
               val a_formtarget :
                 Html5_types.text wrap -> [> `Formtarget ] attrib
-              val a_hidden : [< `Hidden ] wrap -> [> `Hidden ] attrib
+              val a_hidden : [> `Hidden ] attrib
               val a_high : Html5_types.float_number wrap -> [> `High ] attrib
               val a_icon : Xml.uri wrap -> [> `Icon ] attrib
-              val a_ismap : [< `Ismap ] wrap -> [> `Ismap ] attrib
+              val a_ismap : [> `Ismap ] attrib
               val a_keytype : Html5_types.text wrap -> [> `Keytype ] attrib
               val a_list : Html5_types.idref wrap -> [> `List ] attrib
-              val a_loop : [< `Loop ] wrap -> [> `Loop ] attrib
+              val a_loop : [> `Loop ] attrib
               val a_low : Html5_types.float_number wrap -> [> `High ] attrib
               val a_max : Html5_types.float_number wrap -> [> `Max ] attrib
               val a_input_max :
@@ -5416,9 +5428,8 @@
               val a_min : Html5_types.float_number wrap -> [> `Min ] attrib
               val a_input_min :
                 Html5_types.float_number wrap -> [> `Input_Min ] attrib
-              val a_novalidate :
-                [< `Novalidate ] wrap -> [> `Novalidate ] attrib
-              val a_open : [< `Open ] wrap -> [> `Open ] attrib
+              val a_novalidate : [> `Novalidate ] attrib
+              val a_open : [> `Open ] attrib
               val a_optimum :
                 Html5_types.float_number wrap -> [> `Optimum ] attrib
               val a_pattern : Html5_types.text wrap -> [> `Pattern ] attrib
@@ -5427,22 +5438,17 @@
               val a_poster : Xml.uri wrap -> [> `Poster ] attrib
               val a_preload :
                 [< `Audio | `Metadata | `None ] wrap -> [> `Preload ] attrib
-              val a_pubdate : [< `Pubdate ] wrap -> [> `Pubdate ] attrib
+              val a_pubdate : [> `Pubdate ] attrib
               val a_radiogroup :
                 Html5_types.text wrap -> [> `Radiogroup ] attrib
-              val a_required : [< `Required ] wrap -> [> `Required ] attrib
-              val a_reversed : [< `Reversed ] wrap -> [> `Reversed ] attrib
+              val a_required : [> `Required ] attrib
+              val a_reversed : [> `Reversed ] attrib
               val a_sandbox :
-                [< `AllowForms
-                 | `AllowPointerLock
-                 | `AllowPopups
-                 | `AllowSameOrigin
-                 | `AllowScript
-                 | `AllowTopNavigation ]
-                list wrap -> [> `Sandbox ] attrib
+                [< Html5_types.sandbox_token ] list wrap ->
+                [> `Sandbox ] attrib
               val a_spellcheck : bool wrap -> [> `Spellcheck ] attrib
-              val a_scoped : [< `Scoped ] wrap -> [> `Scoped ] attrib
-              val a_seamless : [< `Seamless ] wrap -> [> `Seamless ] attrib
+              val a_scoped : [> `Scoped ] attrib
+              val a_seamless : [> `Seamless ] attrib
               val a_sizes :
                 [< `Any
                  | `Sizes of (Html5_types.number * Html5_types.number) list ]
@@ -5594,7 +5600,7 @@
               val a_datetime :
                 Html5_types.cdata wrap -> [> `Datetime ] attrib
               val a_action : Xml.uri wrap -> [> `Action ] attrib
-              val a_checked : [< `Checked ] wrap -> [> `Checked ] attrib
+              val a_checked : [> `Checked ] attrib
               val a_cols : Html5_types.number wrap -> [> `Cols ] attrib
               val a_enctype :
                 Html5_types.contenttype wrap -> [> `Enctype ] attrib
@@ -5606,10 +5612,10 @@
               val a_method :
                 [< `Delete | `Get | `Post | `Put ] wrap ->
                 [> `Method ] attrib
-              val a_multiple : [< `Multiple ] wrap -> [> `Multiple ] attrib
+              val a_multiple : [> `Multiple ] attrib
               val a_name : Html5_types.text wrap -> [> `Name ] attrib
               val a_rows : Html5_types.number wrap -> [> `Rows ] attrib
-              val a_selected : [< `Selected ] wrap -> [> `Selected ] attrib
+              val a_selected : [> `Selected ] attrib
               val a_size : Html5_types.number wrap -> [> `Size ] attrib
               val a_src : Xml.uri wrap -> [> `Src ] attrib
               val a_input_type :
@@ -5644,8 +5650,8 @@
               val a_value : Html5_types.cdata wrap -> [> `Value ] attrib
               val a_float_value :
                 Html5_types.float_number wrap -> [> `Float_Value ] attrib
-              val a_disabled : [< `Disabled ] wrap -> [> `Disabled ] attrib
-              val a_readonly : [< `ReadOnly ] wrap -> [> `ReadOnly ] attrib
+              val a_disabled : [> `Disabled ] attrib
+              val a_readonly : [> `ReadOnly ] attrib
               val a_button_type :
                 [< `Button | `Reset | `Submit ] wrap ->
                 [> `Button_Type ] attrib
@@ -5705,7 +5711,7 @@
               val a_content : Html5_types.text wrap -> [> `Content ] attrib
               val a_http_equiv :
                 Html5_types.text wrap -> [> `Http_equiv ] attrib
-              val a_defer : [< `Defer ] wrap -> [> `Defer ] attrib
+              val a_defer : [> `Defer ] attrib
               val a_media : Html5_types.mediadesc wrap -> [> `Media ] attrib
               val a_style : string wrap -> [> `Style_Attr ] attrib
               val a_property : string wrap -> [> `Property ] attrib
@@ -6991,12 +6997,11 @@
           type 'a attrib = 'a attrib
           val to_xmlattribs : 'a attrib list -> Xml.attrib list
           val to_attrib : Xml.attrib -> 'a attrib
-          val a_autocomplete :
-            [< `Off | `On ] wrap -> [> `Autocomplete ] attrib
-          val a_async : [< `Async ] wrap -> [> `Async ] attrib
-          val a_autofocus : [< `Autofocus ] wrap -> [> `Autofocus ] attrib
-          val a_autoplay : [< `Autoplay ] wrap -> [> `Autoplay ] attrib
-          val a_muted : [< `Muted ] wrap -> [> `Muted ] attrib
+          val a_autocomplete : bool wrap -> [> `Autocomplete ] attrib
+          val a_async : [> `Async ] attrib
+          val a_autofocus : [> `Autofocus ] attrib
+          val a_autoplay : [> `Autoplay ] attrib
+          val a_muted : [> `Muted ] attrib
           val a_crossorigin :
             [< `Anonymous | `Use_credentials ] wrap ->
             [> `Crossorigin ] attrib
@@ -7005,7 +7010,7 @@
           val a_contenteditable : bool wrap -> [> `Contenteditable ] attrib
           val a_contextmenu :
             Html5_types.idref wrap -> [> `Contextmenu ] attrib
-          val a_controls : [< `Controls ] wrap -> [> `Controls ] attrib
+          val a_controls : [> `Controls ] attrib
           val a_dir : [< `Ltr | `Rtl ] wrap -> [> `Dir ] attrib
           val a_draggable : bool wrap -> [> `Draggable ] attrib
           val a_form : Html5_types.idref wrap -> [> `Form ] attrib
@@ -7015,16 +7020,15 @@
           val a_formmethod :
             [< `Delete | `Get | `Post | `Put ] wrap ->
             [> `Formmethod ] attrib
-          val a_formnovalidate :
-            [< `Formnovalidate ] wrap -> [> `Formnovalidate ] attrib
+          val a_formnovalidate : [> `Formnovalidate ] attrib
           val a_formtarget : Html5_types.text wrap -> [> `Formtarget ] attrib
-          val a_hidden : [< `Hidden ] wrap -> [> `Hidden ] attrib
+          val a_hidden : [> `Hidden ] attrib
           val a_high : Html5_types.float_number wrap -> [> `High ] attrib
           val a_icon : Xml.uri wrap -> [> `Icon ] attrib
-          val a_ismap : [< `Ismap ] wrap -> [> `Ismap ] attrib
+          val a_ismap : [> `Ismap ] attrib
           val a_keytype : Html5_types.text wrap -> [> `Keytype ] attrib
           val a_list : Html5_types.idref wrap -> [> `List ] attrib
-          val a_loop : [< `Loop ] wrap -> [> `Loop ] attrib
+          val a_loop : [> `Loop ] attrib
           val a_low : Html5_types.float_number wrap -> [> `High ] attrib
           val a_max : Html5_types.float_number wrap -> [> `Max ] attrib
           val a_input_max :
@@ -7032,8 +7036,8 @@
           val a_min : Html5_types.float_number wrap -> [> `Min ] attrib
           val a_input_min :
             Html5_types.float_number wrap -> [> `Input_Min ] attrib
-          val a_novalidate : [< `Novalidate ] wrap -> [> `Novalidate ] attrib
-          val a_open : [< `Open ] wrap -> [> `Open ] attrib
+          val a_novalidate : [> `Novalidate ] attrib
+          val a_open : [> `Open ] attrib
           val a_optimum :
             Html5_types.float_number wrap -> [> `Optimum ] attrib
           val a_pattern : Html5_types.text wrap -> [> `Pattern ] attrib
@@ -7042,21 +7046,15 @@
           val a_poster : Xml.uri wrap -> [> `Poster ] attrib
           val a_preload :
             [< `Audio | `Metadata | `None ] wrap -> [> `Preload ] attrib
-          val a_pubdate : [< `Pubdate ] wrap -> [> `Pubdate ] attrib
+          val a_pubdate : [> `Pubdate ] attrib
           val a_radiogroup : Html5_types.text wrap -> [> `Radiogroup ] attrib
-          val a_required : [< `Required ] wrap -> [> `Required ] attrib
-          val a_reversed : [< `Reversed ] wrap -> [> `Reversed ] attrib
+          val a_required : [> `Required ] attrib
+          val a_reversed : [> `Reversed ] attrib
           val a_sandbox :
-            [< `AllowForms
-             | `AllowPointerLock
-             | `AllowPopups
-             | `AllowSameOrigin
-             | `AllowScript
-             | `AllowTopNavigation ]
-            list wrap -> [> `Sandbox ] attrib
+            [< Html5_types.sandbox_token ] list wrap -> [> `Sandbox ] attrib
           val a_spellcheck : bool wrap -> [> `Spellcheck ] attrib
-          val a_scoped : [< `Scoped ] wrap -> [> `Scoped ] attrib
-          val a_seamless : [< `Seamless ] wrap -> [> `Seamless ] attrib
+          val a_scoped : [> `Scoped ] attrib
+          val a_seamless : [> `Seamless ] attrib
           val a_sizes :
             [< `Any
              | `Sizes of (Html5_types.number * Html5_types.number) list ]
@@ -7190,7 +7188,7 @@
             Html5_types.contenttype wrap -> [> `Mime_type ] attrib
           val a_datetime : Html5_types.cdata wrap -> [> `Datetime ] attrib
           val a_action : Xml.uri wrap -> [> `Action ] attrib
-          val a_checked : [< `Checked ] wrap -> [> `Checked ] attrib
+          val a_checked : [> `Checked ] attrib
           val a_cols : Html5_types.number wrap -> [> `Cols ] attrib
           val a_enctype :
             Html5_types.contenttype wrap -> [> `Enctype ] attrib
@@ -7199,10 +7197,10 @@
           val a_maxlength : Html5_types.number wrap -> [> `Maxlength ] attrib
           val a_method :
             [< `Delete | `Get | `Post | `Put ] wrap -> [> `Method ] attrib
-          val a_multiple : [< `Multiple ] wrap -> [> `Multiple ] attrib
+          val a_multiple : [> `Multiple ] attrib
           val a_name : Html5_types.text wrap -> [> `Name ] attrib
           val a_rows : Html5_types.number wrap -> [> `Rows ] attrib
-          val a_selected : [< `Selected ] wrap -> [> `Selected ] attrib
+          val a_selected : [> `Selected ] attrib
           val a_size : Html5_types.number wrap -> [> `Size ] attrib
           val a_src : Xml.uri wrap -> [> `Src ] attrib
           val a_input_type :
@@ -7235,8 +7233,8 @@
           val a_value : Html5_types.cdata wrap -> [> `Value ] attrib
           val a_float_value :
             Html5_types.float_number wrap -> [> `Float_Value ] attrib
-          val a_disabled : [< `Disabled ] wrap -> [> `Disabled ] attrib
-          val a_readonly : [< `ReadOnly ] wrap -> [> `ReadOnly ] attrib
+          val a_disabled : [> `Disabled ] attrib
+          val a_readonly : [> `ReadOnly ] attrib
           val a_button_type :
             [< `Button | `Reset | `Submit ] wrap -> [> `Button_Type ] attrib
           val a_command_type :
@@ -7292,7 +7290,7 @@
           val a_target : Html5_types.frametarget wrap -> [> `Target ] attrib
           val a_content : Html5_types.text wrap -> [> `Content ] attrib
           val a_http_equiv : Html5_types.text wrap -> [> `Http_equiv ] attrib
-          val a_defer : [< `Defer ] wrap -> [> `Defer ] attrib
+          val a_defer : [> `Defer ] attrib
           val a_media : Html5_types.mediadesc wrap -> [> `Media ] attrib
           val a_style : string wrap -> [> `Style_Attr ] attrib
           val a_property : string wrap -> [> `Property ] attrib
@@ -8861,13 +8859,11 @@
               type 'a attrib = 'a attrib
               val to_xmlattribs : 'a attrib list -> Xml.attrib list
               val to_attrib : Xml.attrib -> 'a attrib
-              val a_autocomplete :
-                [< `Off | `On ] wrap -> [> `Autocomplete ] attrib
-              val a_async : [< `Async ] wrap -> [> `Async ] attrib
-              val a_autofocus :
-                [< `Autofocus ] wrap -> [> `Autofocus ] attrib
-              val a_autoplay : [< `Autoplay ] wrap -> [> `Autoplay ] attrib
-              val a_muted : [< `Muted ] wrap -> [> `Muted ] attrib
+              val a_autocomplete : bool wrap -> [> `Autocomplete ] attrib
+              val a_async : [> `Async ] attrib
+              val a_autofocus : [> `Autofocus ] attrib
+              val a_autoplay : [> `Autoplay ] attrib
+              val a_muted : [> `Muted ] attrib
               val a_crossorigin :
                 [< `Anonymous | `Use_credentials ] wrap ->
                 [> `Crossorigin ] attrib
@@ -8878,7 +8874,7 @@
                 bool wrap -> [> `Contenteditable ] attrib
               val a_contextmenu :
                 Html5_types.idref wrap -> [> `Contextmenu ] attrib
-              val a_controls : [< `Controls ] wrap -> [> `Controls ] attrib
+              val a_controls : [> `Controls ] attrib
               val a_dir : [< `Ltr | `Rtl ] wrap -> [> `Dir ] attrib
               val a_draggable : bool wrap -> [> `Draggable ] attrib
               val a_form : Html5_types.idref wrap -> [> `Form ] attrib
@@ -8888,17 +8884,16 @@
               val a_formmethod :
                 [< `Delete | `Get | `Post | `Put ] wrap ->
                 [> `Formmethod ] attrib
-              val a_formnovalidate :
-                [< `Formnovalidate ] wrap -> [> `Formnovalidate ] attrib
+              val a_formnovalidate : [> `Formnovalidate ] attrib
               val a_formtarget :
                 Html5_types.text wrap -> [> `Formtarget ] attrib
-              val a_hidden : [< `Hidden ] wrap -> [> `Hidden ] attrib
+              val a_hidden : [> `Hidden ] attrib
               val a_high : Html5_types.float_number wrap -> [> `High ] attrib
               val a_icon : Xml.uri wrap -> [> `Icon ] attrib
-              val a_ismap : [< `Ismap ] wrap -> [> `Ismap ] attrib
+              val a_ismap : [> `Ismap ] attrib
               val a_keytype : Html5_types.text wrap -> [> `Keytype ] attrib
               val a_list : Html5_types.idref wrap -> [> `List ] attrib
-              val a_loop : [< `Loop ] wrap -> [> `Loop ] attrib
+              val a_loop : [> `Loop ] attrib
               val a_low : Html5_types.float_number wrap -> [> `High ] attrib
               val a_max : Html5_types.float_number wrap -> [> `Max ] attrib
               val a_input_max :
@@ -8906,9 +8901,8 @@
               val a_min : Html5_types.float_number wrap -> [> `Min ] attrib
               val a_input_min :
                 Html5_types.float_number wrap -> [> `Input_Min ] attrib
-              val a_novalidate :
-                [< `Novalidate ] wrap -> [> `Novalidate ] attrib
-              val a_open : [< `Open ] wrap -> [> `Open ] attrib
+              val a_novalidate : [> `Novalidate ] attrib
+              val a_open : [> `Open ] attrib
               val a_optimum :
                 Html5_types.float_number wrap -> [> `Optimum ] attrib
               val a_pattern : Html5_types.text wrap -> [> `Pattern ] attrib
@@ -8917,22 +8911,17 @@
               val a_poster : Xml.uri wrap -> [> `Poster ] attrib
               val a_preload :
                 [< `Audio | `Metadata | `None ] wrap -> [> `Preload ] attrib
-              val a_pubdate : [< `Pubdate ] wrap -> [> `Pubdate ] attrib
+              val a_pubdate : [> `Pubdate ] attrib
               val a_radiogroup :
                 Html5_types.text wrap -> [> `Radiogroup ] attrib
-              val a_required : [< `Required ] wrap -> [> `Required ] attrib
-              val a_reversed : [< `Reversed ] wrap -> [> `Reversed ] attrib
+              val a_required : [> `Required ] attrib
+              val a_reversed : [> `Reversed ] attrib
               val a_sandbox :
-                [< `AllowForms
-                 | `AllowPointerLock
-                 | `AllowPopups
-                 | `AllowSameOrigin
-                 | `AllowScript
-                 | `AllowTopNavigation ]
-                list wrap -> [> `Sandbox ] attrib
+                [< Html5_types.sandbox_token ] list wrap ->
+                [> `Sandbox ] attrib
               val a_spellcheck : bool wrap -> [> `Spellcheck ] attrib
-              val a_scoped : [< `Scoped ] wrap -> [> `Scoped ] attrib
-              val a_seamless : [< `Seamless ] wrap -> [> `Seamless ] attrib
+              val a_scoped : [> `Scoped ] attrib
+              val a_seamless : [> `Seamless ] attrib
               val a_sizes :
                 [< `Any
                  | `Sizes of (Html5_types.number * Html5_types.number) list ]
@@ -9084,7 +9073,7 @@
               val a_datetime :
                 Html5_types.cdata wrap -> [> `Datetime ] attrib
               val a_action : Xml.uri wrap -> [> `Action ] attrib
-              val a_checked : [< `Checked ] wrap -> [> `Checked ] attrib
+              val a_checked : [> `Checked ] attrib
               val a_cols : Html5_types.number wrap -> [> `Cols ] attrib
               val a_enctype :
                 Html5_types.contenttype wrap -> [> `Enctype ] attrib
@@ -9096,10 +9085,10 @@
               val a_method :
                 [< `Delete | `Get | `Post | `Put ] wrap ->
                 [> `Method ] attrib
-              val a_multiple : [< `Multiple ] wrap -> [> `Multiple ] attrib
+              val a_multiple : [> `Multiple ] attrib
               val a_name : Html5_types.text wrap -> [> `Name ] attrib
               val a_rows : Html5_types.number wrap -> [> `Rows ] attrib
-              val a_selected : [< `Selected ] wrap -> [> `Selected ] attrib
+              val a_selected : [> `Selected ] attrib
               val a_size : Html5_types.number wrap -> [> `Size ] attrib
               val a_src : Xml.uri wrap -> [> `Src ] attrib
               val a_input_type :
@@ -9134,8 +9123,8 @@
               val a_value : Html5_types.cdata wrap -> [> `Value ] attrib
               val a_float_value :
                 Html5_types.float_number wrap -> [> `Float_Value ] attrib
-              val a_disabled : [< `Disabled ] wrap -> [> `Disabled ] attrib
-              val a_readonly : [< `ReadOnly ] wrap -> [> `ReadOnly ] attrib
+              val a_disabled : [> `Disabled ] attrib
+              val a_readonly : [> `ReadOnly ] attrib
               val a_button_type :
                 [< `Button | `Reset | `Submit ] wrap ->
                 [> `Button_Type ] attrib
@@ -9195,7 +9184,7 @@
               val a_content : Html5_types.text wrap -> [> `Content ] attrib
               val a_http_equiv :
                 Html5_types.text wrap -> [> `Http_equiv ] attrib
-              val a_defer : [< `Defer ] wrap -> [> `Defer ] attrib
+              val a_defer : [> `Defer ] attrib
               val a_media : Html5_types.mediadesc wrap -> [> `Media ] attrib
               val a_style : string wrap -> [> `Style_Attr ] attrib
               val a_property : string wrap -> [> `Property ] attrib
@@ -10481,12 +10470,11 @@
           type 'a attrib = 'a attrib
           val to_xmlattribs : 'a attrib list -> Xml.attrib list
           val to_attrib : Xml.attrib -> 'a attrib
-          val a_autocomplete :
-            [< `Off | `On ] wrap -> [> `Autocomplete ] attrib
-          val a_async : [< `Async ] wrap -> [> `Async ] attrib
-          val a_autofocus : [< `Autofocus ] wrap -> [> `Autofocus ] attrib
-          val a_autoplay : [< `Autoplay ] wrap -> [> `Autoplay ] attrib
-          val a_muted : [< `Muted ] wrap -> [> `Muted ] attrib
+          val a_autocomplete : bool wrap -> [> `Autocomplete ] attrib
+          val a_async : [> `Async ] attrib
+          val a_autofocus : [> `Autofocus ] attrib
+          val a_autoplay : [> `Autoplay ] attrib
+          val a_muted : [> `Muted ] attrib
           val a_crossorigin :
             [< `Anonymous | `Use_credentials ] wrap ->
             [> `Crossorigin ] attrib
@@ -10495,7 +10483,7 @@
           val a_contenteditable : bool wrap -> [> `Contenteditable ] attrib
           val a_contextmenu :
             Html5_types.idref wrap -> [> `Contextmenu ] attrib
-          val a_controls : [< `Controls ] wrap -> [> `Controls ] attrib
+          val a_controls : [> `Controls ] attrib
           val a_dir : [< `Ltr | `Rtl ] wrap -> [> `Dir ] attrib
           val a_draggable : bool wrap -> [> `Draggable ] attrib
           val a_form : Html5_types.idref wrap -> [> `Form ] attrib
@@ -10505,16 +10493,15 @@
           val a_formmethod :
             [< `Delete | `Get | `Post | `Put ] wrap ->
             [> `Formmethod ] attrib
-          val a_formnovalidate :
-            [< `Formnovalidate ] wrap -> [> `Formnovalidate ] attrib
+          val a_formnovalidate : [> `Formnovalidate ] attrib
           val a_formtarget : Html5_types.text wrap -> [> `Formtarget ] attrib
-          val a_hidden : [< `Hidden ] wrap -> [> `Hidden ] attrib
+          val a_hidden : [> `Hidden ] attrib
           val a_high : Html5_types.float_number wrap -> [> `High ] attrib
           val a_icon : Xml.uri wrap -> [> `Icon ] attrib
-          val a_ismap : [< `Ismap ] wrap -> [> `Ismap ] attrib
+          val a_ismap : [> `Ismap ] attrib
           val a_keytype : Html5_types.text wrap -> [> `Keytype ] attrib
           val a_list : Html5_types.idref wrap -> [> `List ] attrib
-          val a_loop : [< `Loop ] wrap -> [> `Loop ] attrib
+          val a_loop : [> `Loop ] attrib
           val a_low : Html5_types.float_number wrap -> [> `High ] attrib
           val a_max : Html5_types.float_number wrap -> [> `Max ] attrib
           val a_input_max :
@@ -10522,8 +10509,8 @@
           val a_min : Html5_types.float_number wrap -> [> `Min ] attrib
           val a_input_min :
             Html5_types.float_number wrap -> [> `Input_Min ] attrib
-          val a_novalidate : [< `Novalidate ] wrap -> [> `Novalidate ] attrib
-          val a_open : [< `Open ] wrap -> [> `Open ] attrib
+          val a_novalidate : [> `Novalidate ] attrib
+          val a_open : [> `Open ] attrib
           val a_optimum :
             Html5_types.float_number wrap -> [> `Optimum ] attrib
           val a_pattern : Html5_types.text wrap -> [> `Pattern ] attrib
@@ -10532,21 +10519,15 @@
           val a_poster : Xml.uri wrap -> [> `Poster ] attrib
           val a_preload :
             [< `Audio | `Metadata | `None ] wrap -> [> `Preload ] attrib
-          val a_pubdate : [< `Pubdate ] wrap -> [> `Pubdate ] attrib
+          val a_pubdate : [> `Pubdate ] attrib
           val a_radiogroup : Html5_types.text wrap -> [> `Radiogroup ] attrib
-          val a_required : [< `Required ] wrap -> [> `Required ] attrib
-          val a_reversed : [< `Reversed ] wrap -> [> `Reversed ] attrib
+          val a_required : [> `Required ] attrib
+          val a_reversed : [> `Reversed ] attrib
           val a_sandbox :
-            [< `AllowForms
-             | `AllowPointerLock
-             | `AllowPopups
-             | `AllowSameOrigin
-             | `AllowScript
-             | `AllowTopNavigation ]
-            list wrap -> [> `Sandbox ] attrib
+            [< Html5_types.sandbox_token ] list wrap -> [> `Sandbox ] attrib
           val a_spellcheck : bool wrap -> [> `Spellcheck ] attrib
-          val a_scoped : [< `Scoped ] wrap -> [> `Scoped ] attrib
-          val a_seamless : [< `Seamless ] wrap -> [> `Seamless ] attrib
+          val a_scoped : [> `Scoped ] attrib
+          val a_seamless : [> `Seamless ] attrib
           val a_sizes :
             [< `Any
              | `Sizes of (Html5_types.number * Html5_types.number) list ]
@@ -10680,7 +10661,7 @@
             Html5_types.contenttype wrap -> [> `Mime_type ] attrib
           val a_datetime : Html5_types.cdata wrap -> [> `Datetime ] attrib
           val a_action : Xml.uri wrap -> [> `Action ] attrib
-          val a_checked : [< `Checked ] wrap -> [> `Checked ] attrib
+          val a_checked : [> `Checked ] attrib
           val a_cols : Html5_types.number wrap -> [> `Cols ] attrib
           val a_enctype :
             Html5_types.contenttype wrap -> [> `Enctype ] attrib
@@ -10689,10 +10670,10 @@
           val a_maxlength : Html5_types.number wrap -> [> `Maxlength ] attrib
           val a_method :
             [< `Delete | `Get | `Post | `Put ] wrap -> [> `Method ] attrib
-          val a_multiple : [< `Multiple ] wrap -> [> `Multiple ] attrib
+          val a_multiple : [> `Multiple ] attrib
           val a_name : Html5_types.text wrap -> [> `Name ] attrib
           val a_rows : Html5_types.number wrap -> [> `Rows ] attrib
-          val a_selected : [< `Selected ] wrap -> [> `Selected ] attrib
+          val a_selected : [> `Selected ] attrib
           val a_size : Html5_types.number wrap -> [> `Size ] attrib
           val a_src : Xml.uri wrap -> [> `Src ] attrib
           val a_input_type :
@@ -10725,8 +10706,8 @@
           val a_value : Html5_types.cdata wrap -> [> `Value ] attrib
           val a_float_value :
             Html5_types.float_number wrap -> [> `Float_Value ] attrib
-          val a_disabled : [< `Disabled ] wrap -> [> `Disabled ] attrib
-          val a_readonly : [< `ReadOnly ] wrap -> [> `ReadOnly ] attrib
+          val a_disabled : [> `Disabled ] attrib
+          val a_readonly : [> `ReadOnly ] attrib
           val a_button_type :
             [< `Button | `Reset | `Submit ] wrap -> [> `Button_Type ] attrib
           val a_command_type :
@@ -10782,7 +10763,7 @@
           val a_target : Html5_types.frametarget wrap -> [> `Target ] attrib
           val a_content : Html5_types.text wrap -> [> `Content ] attrib
           val a_http_equiv : Html5_types.text wrap -> [> `Http_equiv ] attrib
-          val a_defer : [< `Defer ] wrap -> [> `Defer ] attrib
+          val a_defer : [> `Defer ] attrib
           val a_media : Html5_types.mediadesc wrap -> [> `Media ] attrib
           val a_style : string wrap -> [> `Style_Attr ] attrib
           val a_property : string wrap -> [> `Property ] attrib
@@ -12360,13 +12341,11 @@
               type 'a attrib = 'a attrib
               val to_xmlattribs : 'a attrib list -> Xml.attrib list
               val to_attrib : Xml.attrib -> 'a attrib
-              val a_autocomplete :
-                [< `Off | `On ] wrap -> [> `Autocomplete ] attrib
-              val a_async : [< `Async ] wrap -> [> `Async ] attrib
-              val a_autofocus :
-                [< `Autofocus ] wrap -> [> `Autofocus ] attrib
-              val a_autoplay : [< `Autoplay ] wrap -> [> `Autoplay ] attrib
-              val a_muted : [< `Muted ] wrap -> [> `Muted ] attrib
+              val a_autocomplete : bool wrap -> [> `Autocomplete ] attrib
+              val a_async : [> `Async ] attrib
+              val a_autofocus : [> `Autofocus ] attrib
+              val a_autoplay : [> `Autoplay ] attrib
+              val a_muted : [> `Muted ] attrib
               val a_crossorigin :
                 [< `Anonymous | `Use_credentials ] wrap ->
                 [> `Crossorigin ] attrib
@@ -12377,7 +12356,7 @@
                 bool wrap -> [> `Contenteditable ] attrib
               val a_contextmenu :
                 Html5_types.idref wrap -> [> `Contextmenu ] attrib
-              val a_controls : [< `Controls ] wrap -> [> `Controls ] attrib
+              val a_controls : [> `Controls ] attrib
               val a_dir : [< `Ltr | `Rtl ] wrap -> [> `Dir ] attrib
               val a_draggable : bool wrap -> [> `Draggable ] attrib
               val a_form : Html5_types.idref wrap -> [> `Form ] attrib
@@ -12387,17 +12366,16 @@
               val a_formmethod :
                 [< `Delete | `Get | `Post | `Put ] wrap ->
                 [> `Formmethod ] attrib
-              val a_formnovalidate :
-                [< `Formnovalidate ] wrap -> [> `Formnovalidate ] attrib
+              val a_formnovalidate : [> `Formnovalidate ] attrib
               val a_formtarget :
                 Html5_types.text wrap -> [> `Formtarget ] attrib
-              val a_hidden : [< `Hidden ] wrap -> [> `Hidden ] attrib
+              val a_hidden : [> `Hidden ] attrib
               val a_high : Html5_types.float_number wrap -> [> `High ] attrib
               val a_icon : Xml.uri wrap -> [> `Icon ] attrib
-              val a_ismap : [< `Ismap ] wrap -> [> `Ismap ] attrib
+              val a_ismap : [> `Ismap ] attrib
               val a_keytype : Html5_types.text wrap -> [> `Keytype ] attrib
               val a_list : Html5_types.idref wrap -> [> `List ] attrib
-              val a_loop : [< `Loop ] wrap -> [> `Loop ] attrib
+              val a_loop : [> `Loop ] attrib
               val a_low : Html5_types.float_number wrap -> [> `High ] attrib
               val a_max : Html5_types.float_number wrap -> [> `Max ] attrib
               val a_input_max :
@@ -12405,9 +12383,8 @@
               val a_min : Html5_types.float_number wrap -> [> `Min ] attrib
               val a_input_min :
                 Html5_types.float_number wrap -> [> `Input_Min ] attrib
-              val a_novalidate :
-                [< `Novalidate ] wrap -> [> `Novalidate ] attrib
-              val a_open : [< `Open ] wrap -> [> `Open ] attrib
+              val a_novalidate : [> `Novalidate ] attrib
+              val a_open : [> `Open ] attrib
               val a_optimum :
                 Html5_types.float_number wrap -> [> `Optimum ] attrib
               val a_pattern : Html5_types.text wrap -> [> `Pattern ] attrib
@@ -12416,22 +12393,17 @@
               val a_poster : Xml.uri wrap -> [> `Poster ] attrib
               val a_preload :
                 [< `Audio | `Metadata | `None ] wrap -> [> `Preload ] attrib
-              val a_pubdate : [< `Pubdate ] wrap -> [> `Pubdate ] attrib
+              val a_pubdate : [> `Pubdate ] attrib
               val a_radiogroup :
                 Html5_types.text wrap -> [> `Radiogroup ] attrib
-              val a_required : [< `Required ] wrap -> [> `Required ] attrib
-              val a_reversed : [< `Reversed ] wrap -> [> `Reversed ] attrib
+              val a_required : [> `Required ] attrib
+              val a_reversed : [> `Reversed ] attrib
               val a_sandbox :
-                [< `AllowForms
-                 | `AllowPointerLock
-                 | `AllowPopups
-                 | `AllowSameOrigin
-                 | `AllowScript
-                 | `AllowTopNavigation ]
-                list wrap -> [> `Sandbox ] attrib
+                [< Html5_types.sandbox_token ] list wrap ->
+                [> `Sandbox ] attrib
               val a_spellcheck : bool wrap -> [> `Spellcheck ] attrib
-              val a_scoped : [< `Scoped ] wrap -> [> `Scoped ] attrib
-              val a_seamless : [< `Seamless ] wrap -> [> `Seamless ] attrib
+              val a_scoped : [> `Scoped ] attrib
+              val a_seamless : [> `Seamless ] attrib
               val a_sizes :
                 [< `Any
                  | `Sizes of (Html5_types.number * Html5_types.number) list ]
@@ -12583,7 +12555,7 @@
               val a_datetime :
                 Html5_types.cdata wrap -> [> `Datetime ] attrib
               val a_action : Xml.uri wrap -> [> `Action ] attrib
-              val a_checked : [< `Checked ] wrap -> [> `Checked ] attrib
+              val a_checked : [> `Checked ] attrib
               val a_cols : Html5_types.number wrap -> [> `Cols ] attrib
               val a_enctype :
                 Html5_types.contenttype wrap -> [> `Enctype ] attrib
@@ -12595,10 +12567,10 @@
               val a_method :
                 [< `Delete | `Get | `Post | `Put ] wrap ->
                 [> `Method ] attrib
-              val a_multiple : [< `Multiple ] wrap -> [> `Multiple ] attrib
+              val a_multiple : [> `Multiple ] attrib
               val a_name : Html5_types.text wrap -> [> `Name ] attrib
               val a_rows : Html5_types.number wrap -> [> `Rows ] attrib
-              val a_selected : [< `Selected ] wrap -> [> `Selected ] attrib
+              val a_selected : [> `Selected ] attrib
               val a_size : Html5_types.number wrap -> [> `Size ] attrib
               val a_src : Xml.uri wrap -> [> `Src ] attrib
               val a_input_type :
@@ -12633,8 +12605,8 @@
               val a_value : Html5_types.cdata wrap -> [> `Value ] attrib
               val a_float_value :
                 Html5_types.float_number wrap -> [> `Float_Value ] attrib
-              val a_disabled : [< `Disabled ] wrap -> [> `Disabled ] attrib
-              val a_readonly : [< `ReadOnly ] wrap -> [> `ReadOnly ] attrib
+              val a_disabled : [> `Disabled ] attrib
+              val a_readonly : [> `ReadOnly ] attrib
               val a_button_type :
                 [< `Button | `Reset | `Submit ] wrap ->
                 [> `Button_Type ] attrib
@@ -12694,7 +12666,7 @@
               val a_content : Html5_types.text wrap -> [> `Content ] attrib
               val a_http_equiv :
                 Html5_types.text wrap -> [> `Http_equiv ] attrib
-              val a_defer : [< `Defer ] wrap -> [> `Defer ] attrib
+              val a_defer : [> `Defer ] attrib
               val a_media : Html5_types.mediadesc wrap -> [> `Media ] attrib
               val a_style : string wrap -> [> `Style_Attr ] attrib
               val a_property : string wrap -> [> `Property ] attrib
@@ -13983,12 +13955,11 @@
           type 'a attrib = 'a attrib
           val to_xmlattribs : 'a attrib list -> Xml.attrib list
           val to_attrib : Xml.attrib -> 'a attrib
-          val a_autocomplete :
-            [< `Off | `On ] wrap -> [> `Autocomplete ] attrib
-          val a_async : [< `Async ] wrap -> [> `Async ] attrib
-          val a_autofocus : [< `Autofocus ] wrap -> [> `Autofocus ] attrib
-          val a_autoplay : [< `Autoplay ] wrap -> [> `Autoplay ] attrib
-          val a_muted : [< `Muted ] wrap -> [> `Muted ] attrib
+          val a_autocomplete : bool wrap -> [> `Autocomplete ] attrib
+          val a_async : [> `Async ] attrib
+          val a_autofocus : [> `Autofocus ] attrib
+          val a_autoplay : [> `Autoplay ] attrib
+          val a_muted : [> `Muted ] attrib
           val a_crossorigin :
             [< `Anonymous | `Use_credentials ] wrap ->
             [> `Crossorigin ] attrib
@@ -13997,7 +13968,7 @@
           val a_contenteditable : bool wrap -> [> `Contenteditable ] attrib
           val a_contextmenu :
             Html5_types.idref wrap -> [> `Contextmenu ] attrib
-          val a_controls : [< `Controls ] wrap -> [> `Controls ] attrib
+          val a_controls : [> `Controls ] attrib
           val a_dir : [< `Ltr | `Rtl ] wrap -> [> `Dir ] attrib
           val a_draggable : bool wrap -> [> `Draggable ] attrib
           val a_form : Html5_types.idref wrap -> [> `Form ] attrib
@@ -14007,16 +13978,15 @@
           val a_formmethod :
             [< `Delete | `Get | `Post | `Put ] wrap ->
             [> `Formmethod ] attrib
-          val a_formnovalidate :
-            [< `Formnovalidate ] wrap -> [> `Formnovalidate ] attrib
+          val a_formnovalidate : [> `Formnovalidate ] attrib
           val a_formtarget : Html5_types.text wrap -> [> `Formtarget ] attrib
-          val a_hidden : [< `Hidden ] wrap -> [> `Hidden ] attrib
+          val a_hidden : [> `Hidden ] attrib
           val a_high : Html5_types.float_number wrap -> [> `High ] attrib
           val a_icon : Xml.uri wrap -> [> `Icon ] attrib
-          val a_ismap : [< `Ismap ] wrap -> [> `Ismap ] attrib
+          val a_ismap : [> `Ismap ] attrib
           val a_keytype : Html5_types.text wrap -> [> `Keytype ] attrib
           val a_list : Html5_types.idref wrap -> [> `List ] attrib
-          val a_loop : [< `Loop ] wrap -> [> `Loop ] attrib
+          val a_loop : [> `Loop ] attrib
           val a_low : Html5_types.float_number wrap -> [> `High ] attrib
           val a_max : Html5_types.float_number wrap -> [> `Max ] attrib
           val a_input_max :
@@ -14024,8 +13994,8 @@
           val a_min : Html5_types.float_number wrap -> [> `Min ] attrib
           val a_input_min :
             Html5_types.float_number wrap -> [> `Input_Min ] attrib
-          val a_novalidate : [< `Novalidate ] wrap -> [> `Novalidate ] attrib
-          val a_open : [< `Open ] wrap -> [> `Open ] attrib
+          val a_novalidate : [> `Novalidate ] attrib
+          val a_open : [> `Open ] attrib
           val a_optimum :
             Html5_types.float_number wrap -> [> `Optimum ] attrib
           val a_pattern : Html5_types.text wrap -> [> `Pattern ] attrib
@@ -14034,21 +14004,15 @@
           val a_poster : Xml.uri wrap -> [> `Poster ] attrib
           val a_preload :
             [< `Audio | `Metadata | `None ] wrap -> [> `Preload ] attrib
-          val a_pubdate : [< `Pubdate ] wrap -> [> `Pubdate ] attrib
+          val a_pubdate : [> `Pubdate ] attrib
           val a_radiogroup : Html5_types.text wrap -> [> `Radiogroup ] attrib
-          val a_required : [< `Required ] wrap -> [> `Required ] attrib
-          val a_reversed : [< `Reversed ] wrap -> [> `Reversed ] attrib
+          val a_required : [> `Required ] attrib
+          val a_reversed : [> `Reversed ] attrib
           val a_sandbox :
-            [< `AllowForms
-             | `AllowPointerLock
-             | `AllowPopups
-             | `AllowSameOrigin
-             | `AllowScript
-             | `AllowTopNavigation ]
-            list wrap -> [> `Sandbox ] attrib
+            [< Html5_types.sandbox_token ] list wrap -> [> `Sandbox ] attrib
           val a_spellcheck : bool wrap -> [> `Spellcheck ] attrib
-          val a_scoped : [< `Scoped ] wrap -> [> `Scoped ] attrib
-          val a_seamless : [< `Seamless ] wrap -> [> `Seamless ] attrib
+          val a_scoped : [> `Scoped ] attrib
+          val a_seamless : [> `Seamless ] attrib
           val a_sizes :
             [< `Any
              | `Sizes of (Html5_types.number * Html5_types.number) list ]
@@ -14182,7 +14146,7 @@
             Html5_types.contenttype wrap -> [> `Mime_type ] attrib
           val a_datetime : Html5_types.cdata wrap -> [> `Datetime ] attrib
           val a_action : Xml.uri wrap -> [> `Action ] attrib
-          val a_checked : [< `Checked ] wrap -> [> `Checked ] attrib
+          val a_checked : [> `Checked ] attrib
           val a_cols : Html5_types.number wrap -> [> `Cols ] attrib
           val a_enctype :
             Html5_types.contenttype wrap -> [> `Enctype ] attrib
@@ -14191,10 +14155,10 @@
           val a_maxlength : Html5_types.number wrap -> [> `Maxlength ] attrib
           val a_method :
             [< `Delete | `Get | `Post | `Put ] wrap -> [> `Method ] attrib
-          val a_multiple : [< `Multiple ] wrap -> [> `Multiple ] attrib
+          val a_multiple : [> `Multiple ] attrib
           val a_name : Html5_types.text wrap -> [> `Name ] attrib
           val a_rows : Html5_types.number wrap -> [> `Rows ] attrib
-          val a_selected : [< `Selected ] wrap -> [> `Selected ] attrib
+          val a_selected : [> `Selected ] attrib
           val a_size : Html5_types.number wrap -> [> `Size ] attrib
           val a_src : Xml.uri wrap -> [> `Src ] attrib
           val a_input_type :
@@ -14227,8 +14191,8 @@
           val a_value : Html5_types.cdata wrap -> [> `Value ] attrib
           val a_float_value :
             Html5_types.float_number wrap -> [> `Float_Value ] attrib
-          val a_disabled : [< `Disabled ] wrap -> [> `Disabled ] attrib
-          val a_readonly : [< `ReadOnly ] wrap -> [> `ReadOnly ] attrib
+          val a_disabled : [> `Disabled ] attrib
+          val a_readonly : [> `ReadOnly ] attrib
           val a_button_type :
             [< `Button | `Reset | `Submit ] wrap -> [> `Button_Type ] attrib
           val a_command_type :
@@ -14284,7 +14248,7 @@
           val a_target : Html5_types.frametarget wrap -> [> `Target ] attrib
           val a_content : Html5_types.text wrap -> [> `Content ] attrib
           val a_http_equiv : Html5_types.text wrap -> [> `Http_equiv ] attrib
-          val a_defer : [< `Defer ] wrap -> [> `Defer ] attrib
+          val a_defer : [> `Defer ] attrib
           val a_media : Html5_types.mediadesc wrap -> [> `Media ] attrib
           val a_style : string wrap -> [> `Style_Attr ] attrib
           val a_property : string wrap -> [> `Property ] attrib
