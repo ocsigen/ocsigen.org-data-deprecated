@@ -735,16 +735,11 @@
   val to_xmlattribs : 'a Html5_sigs.T.attrib list -> Xml.attrib list
   val to_attrib : Xml.attrib -> 'a Html5_sigs.T.attrib
   val a_autocomplete :
-    [< `Off | `On ] Html5_sigs.T.wrap ->
-    [> `Autocomplete ] Html5_sigs.T.attrib
-  val a_async :
-    [< `Async ] Html5_sigs.T.wrap -> [> `Async ] Html5_sigs.T.attrib
-  val a_autofocus :
-    [< `Autofocus ] Html5_sigs.T.wrap -> [> `Autofocus ] Html5_sigs.T.attrib
-  val a_autoplay :
-    [< `Autoplay ] Html5_sigs.T.wrap -> [> `Autoplay ] Html5_sigs.T.attrib
-  val a_muted :
-    [< `Muted ] Html5_sigs.T.wrap -> [> `Muted ] Html5_sigs.T.attrib
+    bool Html5_sigs.T.wrap -> [> `Autocomplete ] Html5_sigs.T.attrib
+  val a_async : [> `Async ] Html5_sigs.T.attrib
+  val a_autofocus : [> `Autofocus ] Html5_sigs.T.attrib
+  val a_autoplay : [> `Autoplay ] Html5_sigs.T.attrib
+  val a_muted : [> `Muted ] Html5_sigs.T.attrib
   val a_crossorigin :
     [< `Anonymous | `Use_credentials ] Html5_sigs.T.wrap ->
     [> `Crossorigin ] Html5_sigs.T.attrib
@@ -757,8 +752,7 @@
   val a_contextmenu :
     Html5_types.idref Html5_sigs.T.wrap ->
     [> `Contextmenu ] Html5_sigs.T.attrib
-  val a_controls :
-    [< `Controls ] Html5_sigs.T.wrap -> [> `Controls ] Html5_sigs.T.attrib
+  val a_controls : [> `Controls ] Html5_sigs.T.attrib
   val a_dir :
     [< `Ltr | `Rtl ] Html5_sigs.T.wrap -> [> `Dir ] Html5_sigs.T.attrib
   val a_draggable :
@@ -773,25 +767,21 @@
   val a_formmethod :
     [< `Delete | `Get | `Post | `Put ] Html5_sigs.T.wrap ->
     [> `Formmethod ] Html5_sigs.T.attrib
-  val a_formnovalidate :
-    [< `Formnovalidate ] Html5_sigs.T.wrap ->
-    [> `Formnovalidate ] Html5_sigs.T.attrib
+  val a_formnovalidate : [> `Formnovalidate ] Html5_sigs.T.attrib
   val a_formtarget :
     Html5_types.text Html5_sigs.T.wrap ->
     [> `Formtarget ] Html5_sigs.T.attrib
-  val a_hidden :
-    [< `Hidden ] Html5_sigs.T.wrap -> [> `Hidden ] Html5_sigs.T.attrib
+  val a_hidden : [> `Hidden ] Html5_sigs.T.attrib
   val a_high :
     Html5_types.float_number Html5_sigs.T.wrap ->
     [> `High ] Html5_sigs.T.attrib
   val a_icon : Xml.uri Html5_sigs.T.wrap -> [> `Icon ] Html5_sigs.T.attrib
-  val a_ismap :
-    [< `Ismap ] Html5_sigs.T.wrap -> [> `Ismap ] Html5_sigs.T.attrib
+  val a_ismap : [> `Ismap ] Html5_sigs.T.attrib
   val a_keytype :
     Html5_types.text Html5_sigs.T.wrap -> [> `Keytype ] Html5_sigs.T.attrib
   val a_list :
     Html5_types.idref Html5_sigs.T.wrap -> [> `List ] Html5_sigs.T.attrib
-  val a_loop : [< `Loop ] Html5_sigs.T.wrap -> [> `Loop ] Html5_sigs.T.attrib
+  val a_loop : [> `Loop ] Html5_sigs.T.attrib
   val a_low :
     Html5_types.float_number Html5_sigs.T.wrap ->
     [> `High ] Html5_sigs.T.attrib
@@ -807,10 +797,8 @@
   val a_input_min :
     Html5_types.float_number Html5_sigs.T.wrap ->
     [> `Input_Min ] Html5_sigs.T.attrib
-  val a_novalidate :
-    [< `Novalidate ] Html5_sigs.T.wrap ->
-    [> `Novalidate ] Html5_sigs.T.attrib
-  val a_open : [< `Open ] Html5_sigs.T.wrap -> [> `Open ] Html5_sigs.T.attrib
+  val a_novalidate : [> `Novalidate ] Html5_sigs.T.attrib
+  val a_open : [> `Open ] Html5_sigs.T.attrib
   val a_optimum :
     Html5_types.float_number Html5_sigs.T.wrap ->
     [> `Optimum ] Html5_sigs.T.attrib
@@ -824,24 +812,19 @@
   val a_preload :
     [< `Audio | `Metadata | `None ] Html5_sigs.T.wrap ->
     [> `Preload ] Html5_sigs.T.attrib
-  val a_pubdate :
-    [< `Pubdate ] Html5_sigs.T.wrap -> [> `Pubdate ] Html5_sigs.T.attrib
+  val a_pubdate : [> `Pubdate ] Html5_sigs.T.attrib
   val a_radiogroup :
     Html5_types.text Html5_sigs.T.wrap ->
     [> `Radiogroup ] Html5_sigs.T.attrib
-  val a_required :
-    [< `Required ] Html5_sigs.T.wrap -> [> `Required ] Html5_sigs.T.attrib
-  val a_reversed :
-    [< `Reversed ] Html5_sigs.T.wrap -> [> `Reversed ] Html5_sigs.T.attrib
+  val a_required : [> `Required ] Html5_sigs.T.attrib
+  val a_reversed : [> `Reversed ] Html5_sigs.T.attrib
   val a_sandbox :
     [< Html5_types.sandbox_token ] list Html5_sigs.T.wrap ->
     [> `Sandbox ] Html5_sigs.T.attrib
   val a_spellcheck :
     bool Html5_sigs.T.wrap -> [> `Spellcheck ] Html5_sigs.T.attrib
-  val a_scoped :
-    [< `Scoped ] Html5_sigs.T.wrap -> [> `Scoped ] Html5_sigs.T.attrib
-  val a_seamless :
-    [< `Seamless ] Html5_sigs.T.wrap -> [> `Seamless ] Html5_sigs.T.attrib
+  val a_scoped : [> `Scoped ] Html5_sigs.T.attrib
+  val a_seamless : [> `Seamless ] Html5_sigs.T.attrib
   val a_sizes :
     [< `Any | `Sizes of (Html5_types.number * Html5_types.number) list ]
     Html5_sigs.T.wrap -> [> `Sizes ] Html5_sigs.T.attrib
@@ -1024,8 +1007,7 @@
     Html5_types.cdata Html5_sigs.T.wrap -> [> `Datetime ] Html5_sigs.T.attrib
   val a_action :
     Xml.uri Html5_sigs.T.wrap -> [> `Action ] Html5_sigs.T.attrib
-  val a_checked :
-    [< `Checked ] Html5_sigs.T.wrap -> [> `Checked ] Html5_sigs.T.attrib
+  val a_checked : [> `Checked ] Html5_sigs.T.attrib
   val a_cols :
     Html5_types.number Html5_sigs.T.wrap -> [> `Cols ] Html5_sigs.T.attrib
   val a_enctype :
@@ -1042,14 +1024,12 @@
   val a_method :
     [< `Delete | `Get | `Post | `Put ] Html5_sigs.T.wrap ->
     [> `Method ] Html5_sigs.T.attrib
-  val a_multiple :
-    [< `Multiple ] Html5_sigs.T.wrap -> [> `Multiple ] Html5_sigs.T.attrib
+  val a_multiple : [> `Multiple ] Html5_sigs.T.attrib
   val a_name :
     Html5_types.text Html5_sigs.T.wrap -> [> `Name ] Html5_sigs.T.attrib
   val a_rows :
     Html5_types.number Html5_sigs.T.wrap -> [> `Rows ] Html5_sigs.T.attrib
-  val a_selected :
-    [< `Selected ] Html5_sigs.T.wrap -> [> `Selected ] Html5_sigs.T.attrib
+  val a_selected : [> `Selected ] Html5_sigs.T.attrib
   val a_size :
     Html5_types.number Html5_sigs.T.wrap -> [> `Size ] Html5_sigs.T.attrib
   val a_src : Xml.uri Html5_sigs.T.wrap -> [> `Src ] Html5_sigs.T.attrib
@@ -1089,10 +1069,8 @@
   val a_float_value :
     Html5_types.float_number Html5_sigs.T.wrap ->
     [> `Float_Value ] Html5_sigs.T.attrib
-  val a_disabled :
-    [< `Disabled ] Html5_sigs.T.wrap -> [> `Disabled ] Html5_sigs.T.attrib
-  val a_readonly :
-    [< `ReadOnly ] Html5_sigs.T.wrap -> [> `ReadOnly ] Html5_sigs.T.attrib
+  val a_disabled : [> `Disabled ] Html5_sigs.T.attrib
+  val a_readonly : [> `ReadOnly ] Html5_sigs.T.attrib
   val a_button_type :
     [< `Button | `Reset | `Submit ] Html5_sigs.T.wrap ->
     [> `Button_Type ] Html5_sigs.T.attrib
@@ -1181,8 +1159,7 @@
   val a_http_equiv :
     Html5_types.text Html5_sigs.T.wrap ->
     [> `Http_equiv ] Html5_sigs.T.attrib
-  val a_defer :
-    [< `Defer ] Html5_sigs.T.wrap -> [> `Defer ] Html5_sigs.T.attrib
+  val a_defer : [> `Defer ] Html5_sigs.T.attrib
   val a_media :
     Html5_types.mediadesc Html5_sigs.T.wrap ->
     [> `Media ] Html5_sigs.T.attrib

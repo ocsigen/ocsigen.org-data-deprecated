@@ -6497,8 +6497,6 @@
       | `No
       | `None
       | `Novalidate
-      | `Off
-      | `On
       | `One
       | `Open
       | `Poly

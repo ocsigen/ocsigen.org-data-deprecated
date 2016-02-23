@@ -803,6 +803,7 @@
 |@@ @style="tet-align: left;"@@\\O|
 |@@class="odocwiki_index"@ @@<<a_api text="object_"| value Html5_sigs.T.object_ >> ~[<<a_api | module Html5_sigs.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="ol"| value Html5_sigs.T.ol >> ~[<<a_api | module Html5_sigs.T >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="onoff_of_bool"| value Html5_sigs.Wrapped_functions.onoff_of_bool >> ~[<<a_api | module Html5_sigs.Wrapped_functions >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="optgroup"| value Html5_sigs.T.optgroup >> ~[<<a_api | module Html5_sigs.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="option"| value Html5_sigs.T.option >> ~[<<a_api | module Html5_sigs.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="output_elt"| value Html5_sigs.T.output_elt >> ~[<<a_api | module Html5_sigs.T >>~]||

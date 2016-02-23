@@ -3,6 +3,7 @@
   val string_of_big_variant :
     ([< Html5_types.big_variant ], string) Html5_sigs.Wrapped_functions.ft
   val string_of_bool : (bool, string) Html5_sigs.Wrapped_functions.ft
+  val onoff_of_bool : (bool, string) Html5_sigs.Wrapped_functions.ft
   val string_of_character :
     (Html5_types.character, string) Html5_sigs.Wrapped_functions.ft
   val string_of_input_type :
