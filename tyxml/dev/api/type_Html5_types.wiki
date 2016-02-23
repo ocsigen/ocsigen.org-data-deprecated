@@ -6526,12 +6526,12 @@
       | `Yes
       | `Zero ]
   type sandbox_token =
-      [ `AllowForms
-      | `AllowPointerLock
-      | `AllowPopups
-      | `AllowSameOrigin
-      | `AllowScript
-      | `AllowTopNavigation ]
+      [ `Allow_forms
+      | `Allow_pointer_lock
+      | `Allow_popups
+      | `Allow_same_origin
+      | `Allow_script
+      | `Allow_top_navigation ]
   type input_type =
       [ `Button
       | `Checkbox
