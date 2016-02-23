@@ -769,21 +769,22 @@
       star
     val hkern : ([< Svg_types.hkern_attr ], [> Svg_types.hkern ]) nullary
     val vkern : ([< Svg_types.vkern_attr ], [> Svg_types.vkern ]) nullary
-    val fontface :
-      ([< Svg_types.fontface_attr ], [> Svg_types.fontface ]) nullary
-    val fontfacesrc :
-      ([< Svg_types.fontfacesrc_attr ], [< Svg_types.fontfacesrc_content ],
-       [> Svg_types.fontfacesrc ])
+    val font_face :
+      ([< Svg_types.font_face_attr ], [> Svg_types.font_face ]) nullary
+    val font_face_src :
+      ([< Svg_types.font_face_src_attr ],
+       [< Svg_types.font_face_src_content ], [> Svg_types.font_face_src ])
       star
-    val fontfaceuri :
-      ([< Svg_types.fontfaceuri_attr ], [< Svg_types.fontfaceuri_content ],
-       [> Svg_types.fontfaceuri ])
+    val font_face_uri :
+      ([< Svg_types.font_face_uri_attr ],
+       [< Svg_types.font_face_uri_content ], [> Svg_types.font_face_uri ])
       star
-    val fontfaceformat :
-      ([< Svg_types.fontfaceformat_attr ], [> Svg_types.fontfaceformat ])
+    val font_face_format :
+      ([< Svg_types.font_face_format_attr ], [> Svg_types.font_face_format ])
       nullary
-    val fontfacename :
-      ([< Svg_types.fontfacename_attr ], [> Svg_types.fontfacename ]) nullary
+    val font_face_name :
+      ([< Svg_types.font_face_name_attr ], [> Svg_types.font_face_name ])
+      nullary
     val tot : Xml.elt -> 'a elt
     val totl : Xml.elt list -> 'a elt list
     val toelt : 'a elt -> Xml.elt

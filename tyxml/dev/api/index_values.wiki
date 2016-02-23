@@ -685,11 +685,11 @@
 |@@class="odocwiki_index"@ @@<<a_api text="fold"| value Xml_iter.Make.fold >> ~[<<a_api | module Xml_iter.Make >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="fold"| value Xml.fold >> ~[<<a_api | module Xml >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="font"| value Svg_sigs.T.font >> ~[<<a_api | module Svg_sigs.T >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="fontface"| value Svg_sigs.T.fontface >> ~[<<a_api | module Svg_sigs.T >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="fontfaceformat"| value Svg_sigs.T.fontfaceformat >> ~[<<a_api | module Svg_sigs.T >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="fontfacename"| value Svg_sigs.T.fontfacename >> ~[<<a_api | module Svg_sigs.T >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="fontfacesrc"| value Svg_sigs.T.fontfacesrc >> ~[<<a_api | module Svg_sigs.T >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="fontfaceuri"| value Svg_sigs.T.fontfaceuri >> ~[<<a_api | module Svg_sigs.T >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="font_face"| value Svg_sigs.T.font_face >> ~[<<a_api | module Svg_sigs.T >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="font_face_format"| value Svg_sigs.T.font_face_format >> ~[<<a_api | module Svg_sigs.T >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="font_face_name"| value Svg_sigs.T.font_face_name >> ~[<<a_api | module Svg_sigs.T >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="font_face_src"| value Svg_sigs.T.font_face_src >> ~[<<a_api | module Svg_sigs.T >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="font_face_uri"| value Svg_sigs.T.font_face_uri >> ~[<<a_api | module Svg_sigs.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="footer"| value Html5_sigs.T.footer >> ~[<<a_api | module Html5_sigs.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="foreignObject"| value Svg_sigs.T.foreignObject >> ~[<<a_api | module Svg_sigs.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="form"| value Html5_sigs.T.form >> ~[<<a_api | module Html5_sigs.T >>~]|<<div class="odocwiki_info"|~Forms

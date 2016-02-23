@@ -5058,9 +5058,9 @@
   type vkern = [ `Vkern ]
   type vkern_attr =
       [ `G1 | `G2 | `Id | `K | `U1 | `U2 | `Xml_base | `Xml_lang | `Xml_space ]
-  type fontface = [ `Font_Face ]
-  type fontface_content = [ `Desc | `Font_Face_Src | `Metadata | `Title ]
-  type fontface_attr =
+  type font_face = [ `Font_Face ]
+  type font_face_content = [ `Desc | `Font_Face_Src | `Metadata | `Title ]
+  type font_face_attr =
       [ `AccentHeight
       | `Alphabetic
       | `Ascent
@@ -5098,12 +5098,12 @@
       | `Xml_base
       | `Xml_lang
       | `Xml_space ]
-  type fontfacesrc = [ `Font_Face_Src ]
-  type fontfacesrc_content = [ `Font_Face_Name | `Font_Face_Uri ]
-  type fontfacesrc_attr = Svg_types.core_attr
-  type fontfaceuri = [ `Font_Face_Uri ]
-  type fontfaceuri_content = [ `Font_Face_Format ]
-  type fontfaceuri_attr =
+  type font_face_src = [ `Font_Face_Src ]
+  type font_face_src_content = [ `Font_Face_Name | `Font_Face_Uri ]
+  type font_face_src_attr = Svg_types.core_attr
+  type font_face_uri = [ `Font_Face_Uri ]
+  type font_face_uri_content = [ `Font_Face_Format ]
+  type font_face_uri_attr =
       [ `Id
       | `Xlink_actuate
       | `Xlink_arcrole
@@ -5115,11 +5115,11 @@
       | `Xml_base
       | `Xml_lang
       | `Xml_space ]
-  type fontfaceformat = [ `Font_Face_Format ]
-  type fontfaceformat_attr =
+  type font_face_format = [ `Font_Face_Format ]
+  type font_face_format_attr =
       [ `Id | `String | `Xml_base | `Xml_lang | `Xml_space ]
-  type fontfacename = [ `Font_Face_Name ]
-  type fontfacename_attr =
+  type font_face_name = [ `Font_Face_Name ]
+  type font_face_name_attr =
       [ `Id | `Name | `Xml_base | `Xml_lang | `Xml_space ]
   type metadata = [ `Metadata ]
   type metadata_attr = Svg_types.core_attr
