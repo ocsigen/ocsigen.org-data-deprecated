@@ -9,7 +9,15 @@
 <<pre id="VALjs" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|js>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|string list list>>>><<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|js>> corresponds to the ~Javascript files to include into each page~.
       ~Eba will automatically preprend the suffix "js~/" as directory~.
 >>
-<<pre id="VALcss" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|css>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|string list list>>>><<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|css>> ~(same as <<span class="odocwiki_inlinecode"|js>> but for style sheet files~)~,
+<<pre id="VALlocal_js" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|local~_js>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|string list list>>>><<div class="odocwiki_info"|~Use <<span class="odocwiki_inlinecode"|local~_js>> instead of <<span class="odocwiki_inlinecode"|js>> for local scripts if you are building
+      a mobile application~.
+      ~Eba will automatically preprend the suffix "js~/" as directory~.
+>>
+<<pre id="VALcss" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|css>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|string list list>>>><<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|css>> ~(same as <<span class="odocwiki_inlinecode"|js>> but for style sheet files~)~.
+      ~Eba will automatically prepend the suffix "css~/" as directory~.
+>>
+<<pre id="VALlocal_css" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|local~_css>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|string list list>>>><<div class="odocwiki_info"|~Use <<span class="odocwiki_inlinecode"|local~_css>> instead of <<span class="odocwiki_inlinecode"|css>> for local stylesheets if you are building
+      a mobile application~.
       ~Eba will automatically prepend the suffix "css~/" as directory~.
 >>
 <<pre id="VALother_head" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|other~_head>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<span class="ocsforge_color_uid"|Html5_types>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|head_content_fun>> <<span class="ocsforge_color_uid"|Eliom_content>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_uid"|Html5>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|elt>> list>>>><<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|other~_head>> is a list of custom elements to add in the head section~.

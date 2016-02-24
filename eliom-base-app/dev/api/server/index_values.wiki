@@ -75,8 +75,7 @@
  a record of type <<span class="odocwiki_inlinecode"|t>>~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="css"| value Eba_page.PAGE.css >> ~[<<a_api subproject="server" | module Eba_page.PAGE >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|css>> ~(same as <<span class="odocwiki_inlinecode"|js>> but for style sheet files~)~,
-      ~Eba will automatically prepend the suffix "css~/" as directory~.
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="css"| value Eba_page.PAGE.css >> ~[<<a_api subproject="server" | module Eba_page.PAGE >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|css>> ~(same as <<span class="odocwiki_inlinecode"|js>> but for style sheet files~)~.
 >>
 |
 |@@ @style="tet-align: left;"@@\\D|
@@ -170,7 +169,15 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="listen"| value Eba_notif.Make.listen >> ~[<<a_api subproject="server" | module Eba_notif.Make >>~]|<<div class="odocwiki_info"|~Make client process listen on data whose index is <<span class="odocwiki_inlinecode"|key>>
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="local_css"| value Eba_page.PAGE.local_css >> ~[<<a_api subproject="server" | module Eba_page.PAGE >>~]|<<div class="odocwiki_info"|~Use <<span class="odocwiki_inlinecode"|local~_css>> instead of <<span class="odocwiki_inlinecode"|css>> for local stylesheets if you are building
+      a mobile application~.
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="local_from_calendar"| value Eba_date.local_from_calendar >> ~[<<a_api subproject="server" | module Eba_date >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="local_js"| value Eba_page.PAGE.local_js >> ~[<<a_api subproject="server" | module Eba_page.PAGE >>~]|<<div class="odocwiki_info"|~Use <<span class="odocwiki_inlinecode"|local~_js>> instead of <<span class="odocwiki_inlinecode"|js>> for local scripts if you are building
+      a mobile application~.
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="local_to_calendar"| value Eba_date.local_to_calendar >> ~[<<a_api subproject="server" | module Eba_date >>~]||
 |@@ @style="tet-align: left;"@@\\M|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="make_page"| value Eba_page.Make.make_page >> ~[<<a_api subproject="server" | module Eba_page.Make >>~]|<<div class="odocwiki_info"|~Builds a valid html page from body content by adding headers
