@@ -14,7 +14,7 @@
                 sig
                   type 'a t = 'a Xml.W.t
                   val return : 'a -> 'a t
-                  type (-'a, 'b) ft
+                  type ('a, 'b) ft = ('a, 'b) Xml.W.ft
                   val fmap : ('a, 'b) ft -> 'a t -> 'b t
                   type 'a tlist = 'a Xml.W.tlist
                   val nil : unit -> 'a tlist
@@ -840,7 +840,7 @@
             sig
               type 'a t = 'a Xml.W.t
               val return : 'a -> 'a t
-              type (-'a, 'b) ft
+              type ('a, 'b) ft = ('a, 'b) Xml.W.ft
               val fmap : ('a, 'b) ft -> 'a t -> 'b t
               type 'a tlist = 'a Xml.W.tlist
               val nil : unit -> 'a tlist
@@ -1617,7 +1617,7 @@
                 sig
                   type 'a t = 'a Xml.W.t
                   val return : 'a -> 'a t
-                  type (-'a, 'b) ft
+                  type ('a, 'b) ft = ('a, 'b) Xml.W.ft
                   val fmap : ('a, 'b) ft -> 'a t -> 'b t
                   type 'a tlist = 'a Xml.W.tlist
                   val nil : unit -> 'a tlist
@@ -2443,7 +2443,7 @@
             sig
               type 'a t = 'a Xml.W.t
               val return : 'a -> 'a t
-              type (-'a, 'b) ft
+              type ('a, 'b) ft = ('a, 'b) Xml.W.ft
               val fmap : ('a, 'b) ft -> 'a t -> 'b t
               type 'a tlist = 'a Xml.W.tlist
               val nil : unit -> 'a tlist
@@ -3220,7 +3220,7 @@
                 sig
                   type 'a t = 'a Xml_shared.W.t
                   val return : 'a -> 'a t
-                  type (-'a, 'b) ft
+                  type ('a, 'b) ft = ('a, 'b) Xml_shared.W.ft
                   val fmap : ('a, 'b) ft -> 'a t -> 'b t
                   type 'a tlist = 'a Xml_shared.W.tlist
                   val nil : unit -> 'a tlist
@@ -4046,7 +4046,7 @@
             sig
               type 'a t = 'a Xml_shared.W.t
               val return : 'a -> 'a t
-              type (-'a, 'b) ft
+              type ('a, 'b) ft = ('a, 'b) Xml_shared.W.ft
               val fmap : ('a, 'b) ft -> 'a t -> 'b t
               type 'a tlist = 'a Xml_shared.W.tlist
               val nil : unit -> 'a tlist

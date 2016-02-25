@@ -13,7 +13,7 @@
                 sig
                   type 'a t = 'a Xml.W.t
                   val return : 'a -> 'a t
-                  type (-'a, 'b) ft
+                  type ('a, 'b) ft = ('a, 'b) Xml.W.ft
                   val fmap : ('a, 'b) ft -> 'a t -> 'b t
                   type 'a tlist = 'a Xml.W.tlist
                   val nil : unit -> 'a tlist
@@ -1565,7 +1565,7 @@
             sig
               type 'a t = 'a Xml.W.t
               val return : 'a -> 'a t
-              type (-'a, 'b) ft
+              type ('a, 'b) ft = ('a, 'b) Xml.W.ft
               val fmap : ('a, 'b) ft -> 'a t -> 'b t
               type 'a tlist = 'a Xml.W.tlist
               val nil : unit -> 'a tlist
@@ -3376,7 +3376,7 @@
                 sig
                   type 'a t = 'a Xml.W.t
                   val return : 'a -> 'a t
-                  type (-'a, 'b) ft
+                  type ('a, 'b) ft = ('a, 'b) Xml.W.ft
                   val fmap : ('a, 'b) ft -> 'a t -> 'b t
                   type 'a tlist = 'a Xml.W.tlist
                   val nil : unit -> 'a tlist
@@ -4928,7 +4928,7 @@
             sig
               type 'a t = 'a Xml.W.t
               val return : 'a -> 'a t
-              type (-'a, 'b) ft
+              type ('a, 'b) ft = ('a, 'b) Xml.W.ft
               val fmap : ('a, 'b) ft -> 'a t -> 'b t
               type 'a tlist = 'a Xml.W.tlist
               val nil : unit -> 'a tlist
@@ -6745,7 +6745,7 @@
                 sig
                   type 'a t = 'a Eliom_content_core.Xml_wed.W.t
                   val return : 'a -> 'a t
-                  type (-'a, 'b) ft
+                  type ('a, 'b) ft = ('a, 'b) Eliom_content_core.Xml_wed.W.ft
                   val fmap : ('a, 'b) ft -> 'a t -> 'b t
                   type 'a tlist = 'a Eliom_content_core.Xml_wed.W.tlist
                   val nil : unit -> 'a tlist
@@ -8299,7 +8299,7 @@
             sig
               type 'a t = 'a Eliom_content_core.Xml_wed.W.t
               val return : 'a -> 'a t
-              type (-'a, 'b) ft
+              type ('a, 'b) ft = ('a, 'b) Eliom_content_core.Xml_wed.W.ft
               val fmap : ('a, 'b) ft -> 'a t -> 'b t
               type 'a tlist = 'a Eliom_content_core.Xml_wed.W.tlist
               val nil : unit -> 'a tlist
