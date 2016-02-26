@@ -6554,6 +6554,4 @@
       | `Time
       | `Url
       | `Week ]
-  type sizes =
-      [ `Any | `Sizes of (Html5_types.number * Html5_types.number) list ]
 end >>

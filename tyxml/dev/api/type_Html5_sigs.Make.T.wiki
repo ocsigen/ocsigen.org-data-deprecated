@@ -5,7 +5,7 @@
         sig
           type 'a t = 'a Xml.W.t
           val return : 'a -> 'a t
-          type (-'a, 'b) ft
+          type ('a, 'b) ft = ('a, 'b) Xml.W.ft
           val fmap : ('a, 'b) ft -> 'a t -> 'b t
           type 'a tlist = 'a Xml.W.tlist
           val nil : unit -> 'a tlist
@@ -109,7 +109,7 @@
   val a_scoped : [> `Scoped ] attrib
   val a_seamless : [> `Seamless ] attrib
   val a_sizes :
-    [< `Any | `Sizes of (Html5_types.number * Html5_types.number) list ] wrap ->
+    (Html5_types.number * Html5_types.number) list option wrap ->
     [> `Sizes ] attrib
   val a_span : Html5_types.number wrap -> [> `Span ] attrib
   val a_srclang : Html5_types.nmtoken wrap -> [> `XML_lang ] attrib

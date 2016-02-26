@@ -57,7 +57,7 @@
               sig
                 type 'a t = 'a Xml.W.t
                 val return : 'a -> 'a t
-                type (-'a, 'b) ft
+                type ('a, 'b) ft = ('a, 'b) Xml.W.ft
                 val fmap : ('a, 'b) ft -> 'a t -> 'b t
                 type 'a tlist = 'a Xml.W.tlist
                 val nil : unit -> 'a tlist
@@ -208,8 +208,7 @@
         val a_markerHeight :
           Svg_types.Unit.length wrap -> [> `MarkerHeight ] attrib
         val a_orient :
-          [< `Angle of Svg_types.Unit.angle | `Auto ] wrap ->
-          [> `Orient ] attrib
+          Svg_types.Unit.angle option wrap -> [> `Orient ] attrib
         val a_local : string wrap -> [> `Local ] attrib
         val a_rendering_intent :
           [< `Absolute_colorimetric
@@ -872,7 +871,7 @@
       val string_of_numbers : (float list, string) ft
       val string_of_numbers_semicolon : (float list, string) ft
       val string_of_offset : ([< Svg_types.offset ], string) ft
-      val string_of_orient : ([< Svg_types.orient ], string) ft
+      val string_of_orient : (Svg_types.Unit.angle option, string) ft
       val string_of_paint : ([< Svg_types.paint ], string) ft
       val string_of_strokedasharray : (Svg_types.lengths, string) ft
       val string_of_transform : (Svg_types.transform, string) ft
@@ -912,7 +911,7 @@
                                 val string_of_offset :
                                   ([< Svg_types.offset ], string) ft
                                 val string_of_orient :
-                                  ([< Svg_types.orient ], string) ft
+                                  (Svg_types.Unit.angle option, string) ft
                                 val string_of_paint :
                                   ([< Svg_types.paint ], string) ft
                                 val string_of_strokedasharray :
@@ -929,7 +928,7 @@
               sig
                 type 'a t = 'a Xml.W.t
                 val return : 'a -> 'a t
-                type (-'a, 'b) ft
+                type ('a, 'b) ft = ('a, 'b) Xml.W.ft
                 val fmap : ('a, 'b) ft -> 'a t -> 'b t
                 type 'a tlist = 'a Xml.W.tlist
                 val nil : unit -> 'a tlist
@@ -1080,8 +1079,7 @@
         val a_markerHeight :
           Svg_types.Unit.length wrap -> [> `MarkerHeight ] attrib
         val a_orient :
-          [< `Angle of Svg_types.Unit.angle | `Auto ] wrap ->
-          [> `Orient ] attrib
+          Svg_types.Unit.angle option wrap -> [> `Orient ] attrib
         val a_local : string wrap -> [> `Local ] attrib
         val a_rendering_intent :
           [< `Absolute_colorimetric

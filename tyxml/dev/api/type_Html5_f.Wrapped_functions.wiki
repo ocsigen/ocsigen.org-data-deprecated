@@ -12,7 +12,8 @@
   val string_of_multilengths : ([< Html5_types.multilength ] list, string) ft
   val string_of_numbers : (Html5_types.numbers, string) ft
   val string_of_sandbox : ([< Html5_types.sandbox_token ] list, string) ft
-  val string_of_sizes : ([< Html5_types.sizes ], string) ft
+  val string_of_sizes :
+    ((Html5_types.number * Html5_types.number) list option, string) ft
   val string_of_srcset : ([< Html5_types.image_candidate ] list, string) ft
   val string_of_step : (float option, string) ft
   val unoption_string : (string option, string) ft

@@ -24,7 +24,8 @@
     ([< Html5_types.sandbox_token ] list, string)
     Html5_sigs.Wrapped_functions.ft
   val string_of_sizes :
-    ([< Html5_types.sizes ], string) Html5_sigs.Wrapped_functions.ft
+    ((Html5_types.number * Html5_types.number) list option, string)
+    Html5_sigs.Wrapped_functions.ft
   val string_of_srcset :
     ([< Html5_types.image_candidate ] list, string)
     Html5_sigs.Wrapped_functions.ft

@@ -5246,7 +5246,6 @@
       | `SourceGraphic
       | `StrokePaint ]
   type offset = [ `Number of float | `Percentage of int ]
-  type orient = [ `Angle of Svg_types.Unit.angle | `Auto ]
   type big_variant =
       [ `A
       | `Absolute_colorimetric

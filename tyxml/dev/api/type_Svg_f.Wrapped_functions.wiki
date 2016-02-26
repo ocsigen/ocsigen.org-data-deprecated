@@ -17,7 +17,7 @@
   val string_of_numbers : (float list, string) ft
   val string_of_numbers_semicolon : (float list, string) ft
   val string_of_offset : ([< Svg_types.offset ], string) ft
-  val string_of_orient : ([< Svg_types.orient ], string) ft
+  val string_of_orient : (Svg_types.Unit.angle option, string) ft
   val string_of_paint : ([< Svg_types.paint ], string) ft
   val string_of_strokedasharray : (Svg_types.lengths, string) ft
   val string_of_transform : (Svg_types.transform, string) ft

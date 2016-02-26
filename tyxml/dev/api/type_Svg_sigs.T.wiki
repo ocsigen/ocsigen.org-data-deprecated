@@ -144,7 +144,7 @@
     Svg_types.Unit.length Svg_sigs.T.wrap ->
     [> `MarkerHeight ] Svg_sigs.T.attrib
   val a_orient :
-    [< `Angle of Svg_types.Unit.angle | `Auto ] Svg_sigs.T.wrap ->
+    Svg_types.Unit.angle option Svg_sigs.T.wrap ->
     [> `Orient ] Svg_sigs.T.attrib
   val a_local : string Svg_sigs.T.wrap -> [> `Local ] Svg_sigs.T.attrib
   val a_rendering_intent :

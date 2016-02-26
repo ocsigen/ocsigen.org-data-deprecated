@@ -685,7 +685,6 @@
 |@@class="odocwiki_index"@ @@<<a_api text="option_attrib"| type Html5_types.option_attrib >> ~[<<a_api | module Html5_types >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="option_content"| type Html5_types.option_content >> ~[<<a_api | module Html5_types >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="option_content_fun"| type Html5_types.option_content_fun >> ~[<<a_api | module Html5_types >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="orient"| type Svg_types.orient >> ~[<<a_api | module Svg_types >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="out"| type Xml_sigs.Printer.out >> ~[<<a_api | module Xml_sigs.Printer >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="out"| type Xml_sigs.Output.out >> ~[<<a_api | module Xml_sigs.Output >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="out"| type Xml_sigs.Typed_printer.out >> ~[<<a_api | module Xml_sigs.Typed_printer >>~]||
@@ -805,7 +804,6 @@
 |@@class="odocwiki_index"@ @@<<a_api text="set_content"| type Svg_types.set_content >> ~[<<a_api | module Svg_types >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="shape"| type Html5_sigs.T.shape >> ~[<<a_api | module Html5_sigs.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="shape_element"| type Svg_types.shape_element >> ~[<<a_api | module Svg_types >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="sizes"| type Html5_types.sizes >> ~[<<a_api | module Html5_types >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="small"| type Html5_types.small >> ~[<<a_api | module Html5_types >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="small_attrib"| type Html5_types.small_attrib >> ~[<<a_api | module Html5_types >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="small_content"| type Html5_types.small_content >> ~[<<a_api | module Html5_types >>~]||

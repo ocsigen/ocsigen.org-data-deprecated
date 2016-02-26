@@ -162,7 +162,7 @@
         Svg_types.Unit.length Svg_sigs.T.wrap ->
         [> `MarkerHeight ] Svg_sigs.T.attrib
       val a_orient :
-        [< `Angle of Svg_types.Unit.angle | `Auto ] Svg_sigs.T.wrap ->
+        Svg_types.Unit.angle option Svg_sigs.T.wrap ->
         [> `Orient ] Svg_sigs.T.attrib
       val a_local : string Svg_sigs.T.wrap -> [> `Local ] Svg_sigs.T.attrib
       val a_rendering_intent :
@@ -1082,9 +1082,7 @@
         Svg_types.Unit.length wrap -> [> `MarkerWidth ] attrib
       val a_markerHeight :
         Svg_types.Unit.length wrap -> [> `MarkerHeight ] attrib
-      val a_orient :
-        [< `Angle of Svg_types.Unit.angle | `Auto ] wrap ->
-        [> `Orient ] attrib
+      val a_orient : Svg_types.Unit.angle option wrap -> [> `Orient ] attrib
       val a_local : string wrap -> [> `Local ] attrib
       val a_rendering_intent :
         [< `Absolute_colorimetric
@@ -1739,7 +1737,7 @@
       val string_of_offset :
         ([< Svg_types.offset ], string) Svg_sigs.Wrapped_functions.ft
       val string_of_orient :
-        ([< Svg_types.orient ], string) Svg_sigs.Wrapped_functions.ft
+        (Svg_types.Unit.angle option, string) Svg_sigs.Wrapped_functions.ft
       val string_of_paint :
         ([< Svg_types.paint ], string) Svg_sigs.Wrapped_functions.ft
       val string_of_strokedasharray :
@@ -1760,7 +1758,7 @@
                   sig
                     type 'a t = 'a Xml.W.t
                     val return : 'a -> 'a t
-                    type (-'a, 'b) ft
+                    type ('a, 'b) ft = ('a, 'b) Xml.W.ft
                     val fmap : ('a, 'b) ft -> 'a t -> 'b t
                     type 'a tlist = 'a Xml.W.tlist
                     val nil : unit -> 'a tlist
@@ -1915,8 +1913,7 @@
             val a_markerHeight :
               Svg_types.Unit.length wrap -> [> `MarkerHeight ] attrib
             val a_orient :
-              [< `Angle of Svg_types.Unit.angle | `Auto ] wrap ->
-              [> `Orient ] attrib
+              Svg_types.Unit.angle option wrap -> [> `Orient ] attrib
             val a_local : string wrap -> [> `Local ] attrib
             val a_rendering_intent :
               [< `Absolute_colorimetric
