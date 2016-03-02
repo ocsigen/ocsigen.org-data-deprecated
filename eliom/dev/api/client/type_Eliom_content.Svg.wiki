@@ -167,8 +167,7 @@
           val a_markerHeight :
             Svg_types.Unit.length wrap -> [> `MarkerHeight ] attrib
           val a_orient :
-            [< `Angle of Svg_types.Unit.angle | `Auto ] wrap ->
-            [> `Orient ] attrib
+            Svg_types.Unit.angle option wrap -> [> `Orient ] attrib
           val a_local : string wrap -> [> `Local ] attrib
           val a_rendering_intent :
             [< `Absolute_colorimetric
@@ -981,9 +980,7 @@
         Svg_types.Unit.length wrap -> [> `MarkerWidth ] attrib
       val a_markerHeight :
         Svg_types.Unit.length wrap -> [> `MarkerHeight ] attrib
-      val a_orient :
-        [< `Angle of Svg_types.Unit.angle | `Auto ] wrap ->
-        [> `Orient ] attrib
+      val a_orient : Svg_types.Unit.angle option wrap -> [> `Orient ] attrib
       val a_local : string wrap -> [> `Local ] attrib
       val a_rendering_intent :
         [< `Absolute_colorimetric
@@ -1770,8 +1767,7 @@
           val a_markerHeight :
             Svg_types.Unit.length wrap -> [> `MarkerHeight ] attrib
           val a_orient :
-            [< `Angle of Svg_types.Unit.angle | `Auto ] wrap ->
-            [> `Orient ] attrib
+            Svg_types.Unit.angle option wrap -> [> `Orient ] attrib
           val a_local : string wrap -> [> `Local ] attrib
           val a_rendering_intent :
             [< `Absolute_colorimetric
@@ -2584,9 +2580,7 @@
         Svg_types.Unit.length wrap -> [> `MarkerWidth ] attrib
       val a_markerHeight :
         Svg_types.Unit.length wrap -> [> `MarkerHeight ] attrib
-      val a_orient :
-        [< `Angle of Svg_types.Unit.angle | `Auto ] wrap ->
-        [> `Orient ] attrib
+      val a_orient : Svg_types.Unit.angle option wrap -> [> `Orient ] attrib
       val a_local : string wrap -> [> `Local ] attrib
       val a_rendering_intent :
         [< `Absolute_colorimetric
@@ -3377,8 +3371,7 @@
           val a_markerHeight :
             Svg_types.Unit.length wrap -> [> `MarkerHeight ] attrib
           val a_orient :
-            [< `Angle of Svg_types.Unit.angle | `Auto ] wrap ->
-            [> `Orient ] attrib
+            Svg_types.Unit.angle option wrap -> [> `Orient ] attrib
           val a_local : string wrap -> [> `Local ] attrib
           val a_rendering_intent :
             [< `Absolute_colorimetric
@@ -4193,9 +4186,7 @@
         Svg_types.Unit.length wrap -> [> `MarkerWidth ] attrib
       val a_markerHeight :
         Svg_types.Unit.length wrap -> [> `MarkerHeight ] attrib
-      val a_orient :
-        [< `Angle of Svg_types.Unit.angle | `Auto ] wrap ->
-        [> `Orient ] attrib
+      val a_orient : Svg_types.Unit.angle option wrap -> [> `Orient ] attrib
       val a_local : string wrap -> [> `Local ] attrib
       val a_rendering_intent :
         [< `Absolute_colorimetric

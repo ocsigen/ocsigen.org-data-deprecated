@@ -426,8 +426,7 @@
               val a_markerHeight :
                 Svg_types.Unit.length wrap -> [> `MarkerHeight ] attrib
               val a_orient :
-                [< `Angle of Svg_types.Unit.angle | `Auto ] wrap ->
-                [> `Orient ] attrib
+                Svg_types.Unit.angle option wrap -> [> `Orient ] attrib
               val a_local : string wrap -> [> `Local ] attrib
               val a_rendering_intent :
                 [< `Absolute_colorimetric
@@ -1275,8 +1274,7 @@
           val a_markerHeight :
             Svg_types.Unit.length wrap -> [> `MarkerHeight ] attrib
           val a_orient :
-            [< `Angle of Svg_types.Unit.angle | `Auto ] wrap ->
-            [> `Orient ] attrib
+            Svg_types.Unit.angle option wrap -> [> `Orient ] attrib
           val a_local : string wrap -> [> `Local ] attrib
           val a_rendering_intent :
             [< `Absolute_colorimetric
@@ -2110,8 +2108,7 @@
               val a_markerHeight :
                 Svg_types.Unit.length wrap -> [> `MarkerHeight ] attrib
               val a_orient :
-                [< `Angle of Svg_types.Unit.angle | `Auto ] wrap ->
-                [> `Orient ] attrib
+                Svg_types.Unit.angle option wrap -> [> `Orient ] attrib
               val a_local : string wrap -> [> `Local ] attrib
               val a_rendering_intent :
                 [< `Absolute_colorimetric
@@ -2959,8 +2956,7 @@
           val a_markerHeight :
             Svg_types.Unit.length wrap -> [> `MarkerHeight ] attrib
           val a_orient :
-            [< `Angle of Svg_types.Unit.angle | `Auto ] wrap ->
-            [> `Orient ] attrib
+            Svg_types.Unit.angle option wrap -> [> `Orient ] attrib
           val a_local : string wrap -> [> `Local ] attrib
           val a_rendering_intent :
             [< `Absolute_colorimetric
@@ -3798,8 +3794,7 @@
               val a_markerHeight :
                 Svg_types.Unit.length wrap -> [> `MarkerHeight ] attrib
               val a_orient :
-                [< `Angle of Svg_types.Unit.angle | `Auto ] wrap ->
-                [> `Orient ] attrib
+                Svg_types.Unit.angle option wrap -> [> `Orient ] attrib
               val a_local : string wrap -> [> `Local ] attrib
               val a_rendering_intent :
                 [< `Absolute_colorimetric
@@ -4647,8 +4642,7 @@
           val a_markerHeight :
             Svg_types.Unit.length wrap -> [> `MarkerHeight ] attrib
           val a_orient :
-            [< `Angle of Svg_types.Unit.angle | `Auto ] wrap ->
-            [> `Orient ] attrib
+            Svg_types.Unit.angle option wrap -> [> `Orient ] attrib
           val a_local : string wrap -> [> `Local ] attrib
           val a_rendering_intent :
             [< `Absolute_colorimetric
@@ -5467,9 +5461,8 @@
               val a_scoped : [> `Scoped ] attrib
               val a_seamless : [> `Seamless ] attrib
               val a_sizes :
-                [< `Any
-                 | `Sizes of (Html5_types.number * Html5_types.number) list ]
-                wrap -> [> `Sizes ] attrib
+                (Html5_types.number * Html5_types.number) list option wrap ->
+                [> `Sizes ] attrib
               val a_span : Html5_types.number wrap -> [> `Span ] attrib
               val a_srclang :
                 Html5_types.nmtoken wrap -> [> `XML_lang ] attrib
@@ -7074,9 +7067,8 @@
           val a_scoped : [> `Scoped ] attrib
           val a_seamless : [> `Seamless ] attrib
           val a_sizes :
-            [< `Any
-             | `Sizes of (Html5_types.number * Html5_types.number) list ]
-            wrap -> [> `Sizes ] attrib
+            (Html5_types.number * Html5_types.number) list option wrap ->
+            [> `Sizes ] attrib
           val a_span : Html5_types.number wrap -> [> `Span ] attrib
           val a_srclang : Html5_types.nmtoken wrap -> [> `XML_lang ] attrib
           val a_srcset :
@@ -8643,9 +8635,8 @@
               val a_scoped : [> `Scoped ] attrib
               val a_seamless : [> `Seamless ] attrib
               val a_sizes :
-                [< `Any
-                 | `Sizes of (Html5_types.number * Html5_types.number) list ]
-                wrap -> [> `Sizes ] attrib
+                (Html5_types.number * Html5_types.number) list option wrap ->
+                [> `Sizes ] attrib
               val a_span : Html5_types.number wrap -> [> `Span ] attrib
               val a_srclang :
                 Html5_types.nmtoken wrap -> [> `XML_lang ] attrib
@@ -10250,9 +10241,8 @@
           val a_scoped : [> `Scoped ] attrib
           val a_seamless : [> `Seamless ] attrib
           val a_sizes :
-            [< `Any
-             | `Sizes of (Html5_types.number * Html5_types.number) list ]
-            wrap -> [> `Sizes ] attrib
+            (Html5_types.number * Html5_types.number) list option wrap ->
+            [> `Sizes ] attrib
           val a_span : Html5_types.number wrap -> [> `Span ] attrib
           val a_srclang : Html5_types.nmtoken wrap -> [> `XML_lang ] attrib
           val a_srcset :
@@ -11826,9 +11816,8 @@
               val a_scoped : [> `Scoped ] attrib
               val a_seamless : [> `Seamless ] attrib
               val a_sizes :
-                [< `Any
-                 | `Sizes of (Html5_types.number * Html5_types.number) list ]
-                wrap -> [> `Sizes ] attrib
+                (Html5_types.number * Html5_types.number) list option wrap ->
+                [> `Sizes ] attrib
               val a_span : Html5_types.number wrap -> [> `Span ] attrib
               val a_srclang :
                 Html5_types.nmtoken wrap -> [> `XML_lang ] attrib
@@ -13433,9 +13422,8 @@
           val a_scoped : [> `Scoped ] attrib
           val a_seamless : [> `Seamless ] attrib
           val a_sizes :
-            [< `Any
-             | `Sizes of (Html5_types.number * Html5_types.number) list ]
-            wrap -> [> `Sizes ] attrib
+            (Html5_types.number * Html5_types.number) list option wrap ->
+            [> `Sizes ] attrib
           val a_span : Html5_types.number wrap -> [> `Span ] attrib
           val a_srclang : Html5_types.nmtoken wrap -> [> `XML_lang ] attrib
           val a_srcset :
