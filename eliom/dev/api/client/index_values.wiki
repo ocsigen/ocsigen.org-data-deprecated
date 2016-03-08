@@ -190,10 +190,10 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="checkbox"| value Eliom_form_sigs.S.checkbox >> ~[<<a_api subproject="client" | module Eliom_form_sigs.S >>~]|<<div class="odocwiki_info"|~Creates a checkbox <<span class="odocwiki_inlinecode"|~<input~>>> tag~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="childLength"| value Eliom_content.Html5.Manip.childLength >> ~[<<a_api subproject="client" | module Eliom_content.Html5.Manip >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|child~Length e>> returns the number of chilren of <<span class="odocwiki_inlinecode"|e>>
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="childLength"| value Eliom_content.Html5.Manip.childLength >> ~[<<a_api subproject="client" | module Eliom_content.Html5.Manip >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|child~Length e>> returns the number of children of <<span class="odocwiki_inlinecode"|e>>
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="childLength"| value Eliom_content.Svg.Manip.childLength >> ~[<<a_api subproject="client" | module Eliom_content.Svg.Manip >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|child~Length e>> returns the number of chilren of <<span class="odocwiki_inlinecode"|e>>
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="childLength"| value Eliom_content.Svg.Manip.childLength >> ~[<<a_api subproject="client" | module Eliom_content.Svg.Manip >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|child~Length e>> returns the number of children of <<span class="odocwiki_inlinecode"|e>>
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="children"| value Eliom_content.Html5.Manip.children >> ~[<<a_api subproject="client" | module Eliom_content.Html5.Manip >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|children elt>> returns the list of html children of <<span class="odocwiki_inlinecode"|elt>>~.
