@@ -8,60 +8,8 @@
    works inwards to the ~H~T~M~L element the event took place on ~(capture phase~)
    and then out again ~(bubbling phase~)~.
 
-~Reminder~:
-   ~Event capturing starts with the outer most element in the ~D~O~M and
-   works inwards to the ~H~T~M~L element the event took place on ~(capture phase~)
-   and then out again ~(bubbling phase~)~.
 
-~Examples of use~:
-
-
-   ~Waiting for a click on <<span class="odocwiki_inlinecode"|elt~1>> before continuing~:
-
-
-   
-<<code language='ocaml'|lwt _ = Lwt_js_events.click elt1 in>>
-
-
-
-   ~Doing some operation for each value change in input element <<span class="odocwiki_inlinecode"|inp>>~:
-
-
-   
-<<code language='ocaml'|Lwt_js_events.(async (fun () ->
-      clicks inp1 (fun ev _ -> ...)
-   ))>>
-
-
-
-   ~Defining a thread that waits for ~E~S~C key on an element~:
-
-
-   
-<<code language='ocaml'|let rec esc elt =
-      lwt ev = keydown elt in
-      if ev##.keyCode = 27
-      then Lwt.return ev
-      else esc elt>>
-
-
-
-   ~Waiting for a click or escape key before continuing~:
-
-
-   
-<<code language='ocaml'|lwt () =
-       Lwt.pick [(lwt _ = esc Dom_html.document in Lwt.return ());
-                 (lwt _ = click Dom_html.document in Lwt.return ())]
-     in ...>>
-
-
-~Reminder~:
-   ~Event capturing starts with the outer most element in the ~D~O~M and
-   works inwards to the ~H~T~M~L element the event took place on ~(capture phase~)
-   and then out again ~(bubbling phase~)~.
-
-~Examples of use~:
+   ~Examples of use~:
 
 
    ~Waiting for a click on <<span class="odocwiki_inlinecode"|elt~1>> before continuing~:
@@ -105,6 +53,7 @@
 
 
 
+  
 ==@@id="2_CreateLwtthreadsforevents"@@~Create ~Lwt threads for events==
 
 <<pre id="VALmake_event" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|make~_event>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|\\  <<span class="ocsforge_color_delimiter"| ( >>~#<<a_api text="Dom_html.event" | class type Dom_html.event >> as 'a<<span class="ocsforge_color_delimiter"| ) >> <<a_api text="Js.t" | type Js.t >> <<a_api text="Dom_html.Event.typ" | type Dom_html.Event.typ >> <<span class="ocsforge_color_delimiter"| -> >>\\  <<span class="ocsforge_color_label"| ?use_capture: >>bool <<span class="ocsforge_color_delimiter"| -> >> ~#<<a_api text="Dom_html.eventTarget" | class type Dom_html.eventTarget >> <<a_api text="Js.t" | type Js.t >> <<span class="ocsforge_color_delimiter"| -> >> 'a <<a_api text="Js.t" | type Js.t >> <<span class="ocsforge_color_uid"|Lwt>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>>>>>><<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|make~_event ev target>> creates a ~Lwt thread that waits
