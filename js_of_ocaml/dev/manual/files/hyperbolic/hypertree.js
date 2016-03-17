@@ -1064,8 +1064,8 @@
         /*<<stdlib.js 600 11>>*/ f_f_=
          /*<<stdlib.js 600 13>>*/ caml_parse_format_dt_(fmt_a_),
         /*<<stdlib.js 601 11>>*/ prec_e_=f_f_.prec<0?6:f_f_.prec;
-       /*<<stdlib.js 602 2>>*/ if(x_b_<0)
-        /*<<stdlib.js 602 13>>*/ {f_f_.sign=-1;x_b_=-x_b_}
+       /*<<stdlib.js 602 2>>*/ if(x_b_<0||x_b_==0&&1/x_b_==-Infinity)
+        /*<<stdlib.js 602 45>>*/ {f_f_.sign=-1;x_b_=-x_b_}
        /*<<stdlib.js 603 2>>*/ if( /*<<stdlib.js 603 6>>*/ isNaN(x_b_))
         /*<<stdlib.js 603 16>>*/ {s_c_=str_nan_e8_;f_f_.filler=str_ao_}
       else
