@@ -957,12 +957,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="use"| type Svg_types.use >> ~[<<a_api | module Svg_types >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="use_attr"| type Svg_types.use_attr >> ~[<<a_api | module Svg_types >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="use_content"| type Svg_types.use_content >> ~[<<a_api | module Svg_types >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="utf8"| type Xml_print.Utf8.utf8 >> ~[<<a_api | module Xml_print.Utf8 >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|normalize str>> take a possibly invalid utf~-~8 string
-      and return a valid utf~-~8 string
-      where invalid bytes have been replaced by
-      the replacement character <<span class="odocwiki_inlinecode"|~U~+~F~F~F~D>>~.
->>
-|
+|@@class="odocwiki_index"@ @@<<a_api text="utf8"| type Xml_print.Utf8.utf8 >> ~[<<a_api | module Xml_print.Utf8 >>~]||
 |@@ @style="tet-align: left;"@@\\V|
 |@@class="odocwiki_index"@ @@<<a_api text="var"| type Html5_types.var >> ~[<<a_api | module Html5_types >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="var_attrib"| type Html5_types.var_attrib >> ~[<<a_api | module Html5_types >>~]||

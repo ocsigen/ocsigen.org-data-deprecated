@@ -189,7 +189,7 @@
 >>
 
 
-=@@id="1_CategegoriesofHTML5elements"@@~Categegories of ~H~T~M~L~5 elements=
+=@@id="1_CategoriesofHTML5elements"@@~Categories of ~H~T~M~L~5 elements=
 
 <<pre class="ocsforge_color odocwiki_code" id="TYPEheading"|<<span class="ocsforge_color_keyword"|type>> <<span class="odocwiki_name"|heading>> <<span class="ocsforge_color_delimiter"|~=>> <<span class="odocwiki_type"|[ `H1 | `H2 | `H3 | `H4 | `H5 | `H6 | `Hgroup ]>> >><<div class="odocwiki_info"|~These category are mainly subdivised in
 * interactive~,
