@@ -2,6 +2,8 @@
 
 |@@ @style="tet-align: left;"@@\\A|
 |@@class="odocwiki_index"@ @@<<a_api text="Angle"| module CSS.Angle >> ~[<<a_api | module CSS >>~]||
+|@@ @style="tet-align: left;"@@\\B|
+|@@class="odocwiki_index"@ @@<<a_api text="Bigstring"| module Typed_array.Bigstring >> ~[<<a_api | module Typed_array >>~]||
 |@@ @style="tet-align: left;"@@\\C|
 |@@class="odocwiki_index"@ @@<<a_api text="CSS"| module CSS >> |<<div class="odocwiki_info"|~This module contains a few types and values to ease the use of ~C~S~S properties
    and such~.

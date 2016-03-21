@@ -923,6 +923,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="of_anchor"| value Tyxml_cast_sigs.OF.of_anchor >> ~[<<a_api | module Tyxml_cast_sigs.OF >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="of_area"| value Tyxml_cast_sigs.OF.of_area >> ~[<<a_api | module Tyxml_cast_sigs.OF >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="of_area"| value Tyxml_cast_sigs.TO.of_area >> ~[<<a_api | module Tyxml_cast_sigs.TO >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="of_arrayBuffer"| value Typed_array.Bigstring.of_arrayBuffer >> ~[<<a_api | module Typed_array.Bigstring >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="of_article"| value Tyxml_cast_sigs.TO.of_article >> ~[<<a_api | module Tyxml_cast_sigs.TO >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="of_aside"| value Tyxml_cast_sigs.TO.of_aside >> ~[<<a_api | module Tyxml_cast_sigs.TO >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="of_audio"| value Tyxml_cast_sigs.OF.of_audio >> ~[<<a_api | module Tyxml_cast_sigs.OF >>~]||
@@ -1417,6 +1418,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="to_array"| value Js.to_array >> ~[<<a_api | module Js >>~]|<<div class="odocwiki_info"|~Conversion of arrays from ~Javascript to ~O~Caml~.
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api text="to_arrayBuffer"| value Typed_array.Bigstring.to_arrayBuffer >> ~[<<a_api | module Typed_array.Bigstring >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="to_bool"| value Js.to_bool >> ~[<<a_api | module Js >>~]|<<div class="odocwiki_info"|~Conversion of booleans from ~Javascript to ~O~Caml~.
 >>
 |
