@@ -2017,6 +2017,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="width"| method Dom_html.imageElement#width >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="width"| method Dom_html.clientRect#width >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="width"| method Dom_html.cssStyleDeclaration#width >> ~[<<a_api | module Dom_html >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="withCredentials"| method XmlHttpRequest.xmlHttpRequest#withCredentials >> ~[<<a_api | module XmlHttpRequest >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="withCredentials"| method EventSource.options#withCredentials >> ~[<<a_api | module EventSource >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="withCredentials"| method EventSource.eventSource#withCredentials >> ~[<<a_api | module EventSource >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="wordSpacing"| method Dom_html.cssStyleDeclaration#wordSpacing >> ~[<<a_api | module Dom_html >>~]||

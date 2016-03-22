@@ -48,4 +48,5 @@
   method statusText : Js.js_string Js.t Js.readonly_prop
   method upload :
     XmlHttpRequest.xmlHttpRequestUpload Js.t Js.optdef Js.readonly_prop
+  method withCredentials : bool Js.t Js.writeonly_prop
 end >>

@@ -62,6 +62,7 @@
       method statusText : Js.js_string Js.t Js.readonly_prop
       method upload :
         XmlHttpRequest.xmlHttpRequestUpload Js.t Js.optdef Js.readonly_prop
+      method withCredentials : bool Js.t Js.writeonly_prop
     end
   and xmlHttpRequestUpload =
     object ('a)
@@ -125,6 +126,7 @@
                       | `PATCH
                       | `POST
                       | `PUT ] ->
+    ?with_credentials:bool ->
     response_type:'a XmlHttpRequest.response ->
     string -> 'a XmlHttpRequest.generic_http_frame Lwt.t
   val perform_raw_url :
@@ -144,7 +146,7 @@
                       | `PATCH
                       | `POST
                       | `PUT ] ->
-    string -> XmlHttpRequest.http_frame Lwt.t
+    ?with_credentials:bool -> string -> XmlHttpRequest.http_frame Lwt.t
   val perform :
     ?headers:(string * string) list ->
     ?content_type:string ->
@@ -162,6 +164,6 @@
                       | `PATCH
                       | `POST
                       | `PUT ] ->
-    Url.url -> XmlHttpRequest.http_frame Lwt.t
+    ?with_credentials:bool -> Url.url -> XmlHttpRequest.http_frame Lwt.t
   val get : string -> XmlHttpRequest.http_frame Lwt.t
 end >>
