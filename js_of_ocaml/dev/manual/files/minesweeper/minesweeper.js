@@ -1378,12 +1378,12 @@
        [ /*<<stdlib.js 81 20>>*/ caml_bytes_of_string_bJ_(nm_a_)]=
       v_b_;
        /*<<stdlib.js 82 2>>*/ return 0 /*<<stdlib.js 83 0>>*/ }
-     /*<<stdlib.js 1027 0>>*/  /*<<stdlib.js 1027 20>>*/ var
+     /*<<stdlib.js 1028 0>>*/  /*<<stdlib.js 1028 20>>*/ var
      caml_oo_last_id_b0_=
       0;
-     /*<<stdlib.js 1031 0>>*/ function caml_set_oo_id_w_(b_a_)
+     /*<<stdlib.js 1032 0>>*/ function caml_set_oo_id_w_(b_a_)
      {b_a_[2]=caml_oo_last_id_b0_++;
-       /*<<stdlib.js 1033 2>>*/ return b_a_ /*<<stdlib.js 1034 0>>*/ }
+       /*<<stdlib.js 1034 2>>*/ return b_a_ /*<<stdlib.js 1035 0>>*/ }
      /*<<mlString.js 222 0>>*/ function caml_string_bound_error_b7_()
      { /*<<mlString.js 223 2>>*/ caml_invalid_argument_v_
        (str_index_out_of_bounds_aY_) /*<<mlString.js 224 0>>*/ }
@@ -1392,15 +1392,15 @@
         /*<<mlString.js 229 22>>*/ caml_string_bound_error_b7_();
        /*<<mlString.js 230 2>>*/ return  /*<<mlString.js 230 9>>*/ caml_string_unsafe_get_x_
               (s_a_,i_b_) /*<<mlString.js 231 0>>*/ }
-     /*<<stdlib.js 869 0>>*/ function caml_sys_const_word_size_b9_()
-     { /*<<stdlib.js 869 39>>*/ return 32 /*<<stdlib.js 869 50>>*/ }
-     /*<<stdlib.js 841 0>>*/  /*<<stdlib.js 841 22>>*/ var
+     /*<<stdlib.js 870 0>>*/ function caml_sys_const_word_size_b9_()
+     { /*<<stdlib.js 870 39>>*/ return 32 /*<<stdlib.js 870 50>>*/ }
+     /*<<stdlib.js 842 0>>*/  /*<<stdlib.js 842 22>>*/ var
      caml_initial_time_bP_=
       new Date()*num_0_001_aA_;
-     /*<<stdlib.js 842 0>>*/ function caml_sys_time_ca_()
-     { /*<<stdlib.js 842 28>>*/ return new Date()*
+     /*<<stdlib.js 843 0>>*/ function caml_sys_time_ca_()
+     { /*<<stdlib.js 843 28>>*/ return new Date()*
              num_0_001_aA_-
-             caml_initial_time_bP_ /*<<stdlib.js 842 75>>*/ }
+             caml_initial_time_bP_ /*<<stdlib.js 843 75>>*/ }
      /*<<stdlib.js 122 0>>*/ function caml_return_exn_constant_bc_(tag_a_)
      { /*<<stdlib.js 122 42>>*/ return tag_a_ /*<<stdlib.js 122 54>>*/ }
      /*<<stdlib.js 87 0>>*/ function caml_named_value_bY_(nm_a_)
