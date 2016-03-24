@@ -395,6 +395,7 @@
     end
   val error_constr : (Js.js_string Js.t -> Js.error Js.t) Js.constr
   val string_of_error : Js.error Js.t -> string
+  val raise_js_error : Js.error Js.t -> 'a
   exception Error of Js.error Js.t
   class type json =
     object

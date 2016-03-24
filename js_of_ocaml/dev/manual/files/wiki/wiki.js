@@ -6119,20 +6119,22 @@
        :exn_bn_[1];
      /*<<callback.ml 25 2>>*/  /*<<callback.ml 25 2>>*/ caml_register_named_value_hm_
      (caml_new_string_d_(str_jsError_cT_),slot_fK_);
-     /*<<js.ml 444 2>>*/  /*<<js.ml 444 2>>*/ register_printer_cj_
+     /*<<js.ml 395 23>>*/ (function(exn_a_)
+      { /*<<js.ml 395 41>>*/ throw exn_a_ /*<<js.ml 395 24>>*/ });
+     /*<<js.ml 446 2>>*/  /*<<js.ml 446 2>>*/ register_printer_cj_
      (function(param_a_)
-       { /*<<js.ml 445 5>>*/ return param_a_[1]===Error_cr_
+       { /*<<js.ml 447 5>>*/ return param_a_[1]===Error_cr_
                 ?[0,
-                   /*<<js.ml 445 31>>*/ caml_js_to_string_aI_
-                   ( /*<<js.ml 445 42>>*/ param_a_[2].toString())]
-                :0 /*<<js.ml 445 70>>*/ });
-     /*<<js.ml 447 2>>*/  /*<<js.ml 447 2>>*/ register_printer_cj_
+                   /*<<js.ml 447 31>>*/ caml_js_to_string_aI_
+                   ( /*<<js.ml 447 42>>*/ param_a_[2].toString())]
+                :0 /*<<js.ml 447 70>>*/ });
+     /*<<js.ml 449 2>>*/  /*<<js.ml 449 2>>*/ register_printer_cj_
      (function(jsoo_self_a_)
-       { /*<<js.ml 450 40>>*/ return jsoo_self_a_ instanceof jsoo_593685be_cq_
+       { /*<<js.ml 452 40>>*/ return jsoo_self_a_ instanceof jsoo_593685be_cq_
                 ?0
                 :[0,
-                   /*<<js.ml 451 18>>*/ caml_js_to_string_aI_
-                   ( /*<<js.ml 451 29>>*/ jsoo_self_a_.toString())] /*<<js.ml 451 44>>*/ });
+                   /*<<js.ml 453 18>>*/ caml_js_to_string_aI_
+                   ( /*<<js.ml 453 29>>*/ jsoo_self_a_.toString())] /*<<js.ml 453 44>>*/ });
     function _am_(jsoo_self_a_,jsoo_ad7fbbdd_b_)
      { /*<<dom.ml 94 10>>*/  /*<<dom.ml 94 10>>*/ jsoo_self_a_.appendChild
        (jsoo_ad7fbbdd_b_);
@@ -7116,7 +7118,7 @@
        /*<<wiki_syntax.ml 62 8>>*/  /*<<wiki_syntax.ml 60 10>>*/ _ar_
         (_gH_,
           /*<<wiki_syntax.ml 61 53>>*/ caml_js_to_string_aI_
-          ( /*<<js.ml 408 19>>*/ window_ab_.encodeURI
+          ( /*<<js.ml 410 19>>*/ window_ab_.encodeURI
             ( /*<<wiki_syntax.ml 61 38>>*/ addr_a_.toString()))).toString
        ();
        /*<<wiki_syntax.ml 63 8>>*/ i_c_.frameBorder=str_0_N_;

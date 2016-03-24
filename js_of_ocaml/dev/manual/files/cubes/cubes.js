@@ -6290,20 +6290,22 @@
        :exn_ba_[1];
      /*<<callback.ml 25 2>>*/  /*<<callback.ml 25 2>>*/ caml_register_named_value_gF_
      (caml_new_string_d_(str_jsError_cC_),slot_fD_);
-     /*<<js.ml 444 2>>*/  /*<<js.ml 444 2>>*/ register_printer_b4_
+     /*<<js.ml 395 23>>*/ (function(exn_a_)
+      { /*<<js.ml 395 41>>*/ throw exn_a_ /*<<js.ml 395 24>>*/ });
+     /*<<js.ml 446 2>>*/  /*<<js.ml 446 2>>*/ register_printer_b4_
      (function(param_a_)
-       { /*<<js.ml 445 5>>*/ return param_a_[1]===Error_cg_
+       { /*<<js.ml 447 5>>*/ return param_a_[1]===Error_cg_
                 ?[0,
-                   /*<<js.ml 445 31>>*/ caml_js_to_string_bu_
-                   ( /*<<js.ml 445 42>>*/ param_a_[2].toString())]
-                :0 /*<<js.ml 445 70>>*/ });
-     /*<<js.ml 447 2>>*/  /*<<js.ml 447 2>>*/ register_printer_b4_
+                   /*<<js.ml 447 31>>*/ caml_js_to_string_bu_
+                   ( /*<<js.ml 447 42>>*/ param_a_[2].toString())]
+                :0 /*<<js.ml 447 70>>*/ });
+     /*<<js.ml 449 2>>*/  /*<<js.ml 449 2>>*/ register_printer_b4_
      (function(jsoo_self_a_)
-       { /*<<js.ml 450 40>>*/ return jsoo_self_a_ instanceof jsoo_593685be_fW_
+       { /*<<js.ml 452 40>>*/ return jsoo_self_a_ instanceof jsoo_593685be_fW_
                 ?0
                 :[0,
-                   /*<<js.ml 451 18>>*/ caml_js_to_string_bu_
-                   ( /*<<js.ml 451 29>>*/ jsoo_self_a_.toString())] /*<<js.ml 451 44>>*/ });
+                   /*<<js.ml 453 18>>*/ caml_js_to_string_bu_
+                   ( /*<<js.ml 453 29>>*/ jsoo_self_a_.toString())] /*<<js.ml 453 44>>*/ });
      /*<<js.ml 242 24>>*/ var
       /*<<dom_html.ml 890 11>>*/ jsoo_ebd11ba6_ch_="2d",
       /*<<dom_html.ml 1233 15>>*/ Canvas_not_available_fZ_=
