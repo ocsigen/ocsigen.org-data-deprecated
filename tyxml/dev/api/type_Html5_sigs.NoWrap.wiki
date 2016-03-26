@@ -17,8 +17,8 @@
       type 'a wrap = 'a W.t
       type 'a list_wrap = 'a W.tlist
       type uri
-      val string_of_uri : uri -> string
-      val uri_of_string : string -> uri
+      val string_of_uri : (uri, string) W.ft
+      val uri_of_string : (string, uri) W.ft
       type aname = string
       type event_handler
       type mouse_event_handler
@@ -52,8 +52,8 @@
     sig
       module Info : Xml_sigs.Info
       type uri = Xml.uri
-      val string_of_uri : uri -> string
-      val uri_of_string : string -> uri
+      val string_of_uri : (uri, string) Xml.W.ft
+      val uri_of_string : (string, uri) Xml.W.ft
       type +'a attrib
       type 'a wrap = 'a Xml.W.t
       type 'a list_wrap = 'a Xml.W.tlist
@@ -775,8 +775,12 @@
   type 'a wrap = 'a Xml.W.t
   type 'a list_wrap = 'a Xml.W.tlist
   type uri = Xml.uri
-  val string_of_uri : uri -> string
-  val uri_of_string : string -> uri
+  val string_of_uri : (uri, string) Xml.W.ft
+  val uri_of_string : (string, uri) Xml.W.ft
+  type image_candidate =
+      [ `Url of uri
+      | `Url_pixel of uri * Html5_types.float_number
+      | `Url_width of uri * Html5_types.number ]
   type +'a attrib
   val to_xmlattribs : 'a attrib list -> Xml.attrib list
   val to_attrib : Xml.attrib -> 'a attrib
@@ -836,7 +840,7 @@
     [> `Sizes ] attrib
   val a_span : Html5_types.number wrap -> [> `Span ] attrib
   val a_srclang : Html5_types.nmtoken wrap -> [> `XML_lang ] attrib
-  val a_srcset : Html5_types.image_candidate list wrap -> [> `Srcset ] attrib
+  val a_srcset : image_candidate list wrap -> [> `Srcset ] attrib
   val a_img_sizes : Html5_types.text list wrap -> [> `Img_sizes ] attrib
   val a_start : Html5_types.number wrap -> [> `Start ] attrib
   val a_step : Html5_types.float_number option wrap -> [> `Step ] attrib

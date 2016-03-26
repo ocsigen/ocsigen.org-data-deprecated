@@ -408,7 +408,6 @@
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="frequency"| type Svg_types.Unit.frequency >> ~[<<a_api | module Svg_types.Unit >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="ft"| type Html5_sigs.Wrapped_functions.ft >> ~[<<a_api | module Html5_sigs.Wrapped_functions >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="ft"| type Svg_sigs.Wrapped_functions.ft >> ~[<<a_api | module Svg_sigs.Wrapped_functions >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="ft"| type Xml_wrap.T.ft >> ~[<<a_api | module Xml_wrap.T >>~]||
 |@@ @style="tet-align: left;"@@\\G|
@@ -500,7 +499,8 @@
 |@@class="odocwiki_index"@ @@<<a_api text="iframe_content_fun"| type Html5_types.iframe_content_fun >> ~[<<a_api | module Html5_types >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="image"| type Svg_types.image >> ~[<<a_api | module Svg_types >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="image_attr"| type Svg_types.image_attr >> ~[<<a_api | module Svg_types >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="image_candidate"| type Html5_types.image_candidate >> ~[<<a_api | module Html5_types >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="image_candidate"| type Html5_sigs.Wrapped_functions.image_candidate >> ~[<<a_api | module Html5_sigs.Wrapped_functions >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="image_candidate"| type Html5_sigs.T.image_candidate >> ~[<<a_api | module Html5_sigs.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="image_content"| type Svg_types.image_content >> ~[<<a_api | module Svg_types >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="img"| type Html5_types.img >> ~[<<a_api | module Html5_types >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="img_attrib"| type Html5_types.img_attrib >> ~[<<a_api | module Html5_types >>~]||

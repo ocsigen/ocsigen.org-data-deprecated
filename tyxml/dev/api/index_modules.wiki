@@ -7,7 +7,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="Html5_f"| module Html5_f >> |<<div class="odocwiki_info"|~Typesafe constructors for ~H~T~M~L~5 documents ~(~Functorial interface~)
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api text="Html5_sigs"| module Html5_sigs >> |<<div class="odocwiki_info"|~Common ~Attributes
+|@@class="odocwiki_index"@ @@<<a_api text="Html5_sigs"| module Html5_sigs >> |<<div class="odocwiki_info"|~Uri
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="Html5_types"| module Html5_types >> |<<div class="odocwiki_info"|~H~T~M~L~5 types with variants~.
@@ -90,6 +90,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="Wrapped_functions"| module Html5_f.Wrapped_functions >> ~[<<a_api | module Html5_f >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="Wrapped_functions"| module Svg_f.Wrapped_functions >> ~[<<a_api | module Svg_f >>~]||
 |@@ @style="tet-align: left;"@@\\X|
+|@@class="odocwiki_index"@ @@<<a_api text="Xml"| module Html5_sigs.Wrapped_functions.Xml >> ~[<<a_api | module Html5_sigs.Wrapped_functions >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="Xml"| module Html5_sigs.T.Xml >> ~[<<a_api | module Html5_sigs.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="Xml"| module Svg_sigs.T.Xml >> ~[<<a_api | module Svg_sigs.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="Xml"| module Xml_sigs.Iterable_typed_xml.Xml >> ~[<<a_api | module Xml_sigs.Iterable_typed_xml >>~]||

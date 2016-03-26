@@ -1,35 +1,27 @@
 <<code language="ocaml" | sig
-  type (-'a, 'b) ft
-  val string_of_big_variant :
-    ([< Html5_types.big_variant ], string) Html5_sigs.Wrapped_functions.ft
-  val string_of_bool : (bool, string) Html5_sigs.Wrapped_functions.ft
-  val onoff_of_bool : (bool, string) Html5_sigs.Wrapped_functions.ft
-  val string_of_character :
-    (Html5_types.character, string) Html5_sigs.Wrapped_functions.ft
-  val string_of_input_type :
-    ([< Html5_types.input_type ], string) Html5_sigs.Wrapped_functions.ft
-  val string_of_linktypes :
-    ([< Html5_types.linktype ] list, string) Html5_sigs.Wrapped_functions.ft
+  module Xml : Xml_sigs.T
+  val string_of_big_variant : ([< Html5_types.big_variant ], string) Xml.W.ft
+  val string_of_bool : (bool, string) Xml.W.ft
+  val onoff_of_bool : (bool, string) Xml.W.ft
+  val string_of_character : (Html5_types.character, string) Xml.W.ft
+  val string_of_input_type : ([< Html5_types.input_type ], string) Xml.W.ft
+  val string_of_linktypes : ([< Html5_types.linktype ] list, string) Xml.W.ft
   val string_of_mediadesc :
-    ([< Html5_types.mediadesc_token ] list, string)
-    Html5_sigs.Wrapped_functions.ft
-  val string_of_multilength :
-    ([< Html5_types.multilength ], string) Html5_sigs.Wrapped_functions.ft
+    ([< Html5_types.mediadesc_token ] list, string) Xml.W.ft
+  val string_of_multilength : ([< Html5_types.multilength ], string) Xml.W.ft
   val string_of_multilengths :
-    ([< Html5_types.multilength ] list, string)
-    Html5_sigs.Wrapped_functions.ft
-  val string_of_numbers :
-    (Html5_types.numbers, string) Html5_sigs.Wrapped_functions.ft
+    ([< Html5_types.multilength ] list, string) Xml.W.ft
+  val string_of_numbers : (Html5_types.numbers, string) Xml.W.ft
   val string_of_sandbox :
-    ([< Html5_types.sandbox_token ] list, string)
-    Html5_sigs.Wrapped_functions.ft
+    ([< Html5_types.sandbox_token ] list, string) Xml.W.ft
   val string_of_sizes :
-    ((Html5_types.number * Html5_types.number) list option, string)
-    Html5_sigs.Wrapped_functions.ft
+    ((Html5_types.number * Html5_types.number) list option, string) Xml.W.ft
+  type image_candidate =
+      [ `Url of Xml.uri
+      | `Url_pixel of Xml.uri * Html5_types.float_number
+      | `Url_width of Xml.uri * Html5_types.number ]
   val string_of_srcset :
-    ([< Html5_types.image_candidate ] list, string)
-    Html5_sigs.Wrapped_functions.ft
-  val string_of_step : (float option, string) Html5_sigs.Wrapped_functions.ft
-  val unoption_string :
-    (string option, string) Html5_sigs.Wrapped_functions.ft
+    ([< Html5_sigs.Wrapped_functions.image_candidate ] list, string) Xml.W.ft
+  val string_of_step : (float option, string) Xml.W.ft
+  val unoption_string : (string option, string) Xml.W.ft
 end >>

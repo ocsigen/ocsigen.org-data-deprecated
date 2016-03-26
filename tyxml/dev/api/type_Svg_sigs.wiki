@@ -4,8 +4,8 @@
       module Xml : Xml_sigs.T
       module Info : Xml_sigs.Info
       type uri = Xml.uri
-      val string_of_uri : Svg_sigs.T.uri -> string
-      val uri_of_string : string -> Svg_sigs.T.uri
+      val string_of_uri : (Svg_sigs.T.uri, string) Xml.W.ft
+      val uri_of_string : (string, Svg_sigs.T.uri) Xml.W.ft
       type +'a attrib
       type 'a wrap = 'a Xml.W.t
       type 'a list_wrap = 'a Xml.W.tlist
@@ -951,8 +951,8 @@
           type 'a wrap = 'a W.t
           type 'a list_wrap = 'a W.tlist
           type uri
-          val string_of_uri : uri -> string
-          val uri_of_string : string -> uri
+          val string_of_uri : (uri, string) W.ft
+          val uri_of_string : (string, uri) W.ft
           type aname = string
           type event_handler
           type mouse_event_handler
@@ -985,8 +985,8 @@
         end
       module Info : Xml_sigs.Info
       type uri = Xml.uri
-      val string_of_uri : uri -> string
-      val uri_of_string : string -> uri
+      val string_of_uri : (uri, string) Xml.W.ft
+      val uri_of_string : (string, uri) Xml.W.ft
       type +'a attrib
       type 'a wrap = 'a Xml.W.t
       type 'a list_wrap = 'a Xml.W.tlist
@@ -1770,8 +1770,8 @@
                 type 'a wrap = 'a W.t
                 type 'a list_wrap = 'a W.tlist
                 type uri = Xml.uri
-                val string_of_uri : uri -> string
-                val uri_of_string : string -> uri
+                val string_of_uri : (uri, string) W.ft
+                val uri_of_string : (string, uri) W.ft
                 type aname = string
                 type event_handler = Xml.event_handler
                 type mouse_event_handler = Xml.mouse_event_handler
@@ -1804,8 +1804,8 @@
               end
             module Info : Xml_sigs.Info
             type uri = Xml.uri
-            val string_of_uri : uri -> string
-            val uri_of_string : string -> uri
+            val string_of_uri : (uri, string) Xml.W.ft
+            val uri_of_string : (string, uri) Xml.W.ft
             type +'a attrib
             type 'a wrap = 'a Xml.W.t
             type 'a list_wrap = 'a Xml.W.tlist

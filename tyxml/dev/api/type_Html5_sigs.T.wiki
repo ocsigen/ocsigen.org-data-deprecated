@@ -4,8 +4,8 @@
     sig
       module Info : Xml_sigs.Info
       type uri = Xml.uri
-      val string_of_uri : uri -> string
-      val uri_of_string : string -> uri
+      val string_of_uri : (uri, string) Xml.W.ft
+      val uri_of_string : (string, uri) Xml.W.ft
       type +'a attrib
       type 'a wrap = 'a Xml.W.t
       type 'a list_wrap = 'a Xml.W.tlist
@@ -727,8 +727,12 @@
   type 'a wrap = 'a Xml.W.t
   type 'a list_wrap = 'a Xml.W.tlist
   type uri = Xml.uri
-  val string_of_uri : Html5_sigs.T.uri -> string
-  val uri_of_string : string -> Html5_sigs.T.uri
+  val string_of_uri : (Html5_sigs.T.uri, string) Xml.W.ft
+  val uri_of_string : (string, Html5_sigs.T.uri) Xml.W.ft
+  type image_candidate =
+      [ `Url of Html5_sigs.T.uri
+      | `Url_pixel of Html5_sigs.T.uri * Html5_types.float_number
+      | `Url_width of Html5_sigs.T.uri * Html5_types.number ]
   type +'a attrib
   val to_xmlattribs : 'a Html5_sigs.T.attrib list -> Xml.attrib list
   val to_attrib : Xml.attrib -> 'a Html5_sigs.T.attrib
@@ -832,7 +836,7 @@
     Html5_types.nmtoken Html5_sigs.T.wrap ->
     [> `XML_lang ] Html5_sigs.T.attrib
   val a_srcset :
-    Html5_types.image_candidate list Html5_sigs.T.wrap ->
+    Html5_sigs.T.image_candidate list Html5_sigs.T.wrap ->
     [> `Srcset ] Html5_sigs.T.attrib
   val a_img_sizes :
     Html5_types.text list Html5_sigs.T.wrap ->

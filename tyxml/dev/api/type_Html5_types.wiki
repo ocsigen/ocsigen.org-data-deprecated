@@ -3790,10 +3790,6 @@
       | `Width
       | `XML_lang
       | `XMLns ]
-  type image_candidate =
-      [ `Url of Xml.uri
-      | `Url_pixel of Xml.uri * Html5_types.float_number
-      | `Url_width of Xml.uri * Html5_types.number ]
   type img = [ `Img ]
   type img_interactive = [ `Img | `Img_interactive ]
   type img_content = Html5_types.notag
