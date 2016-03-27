@@ -191,6 +191,9 @@
   val array_length : (int -> 'a Js.js_array Js.t) Js.constr
   val array_get : 'a #Js.js_array Js.t -> int -> 'a Js.optdef
   val array_set : 'a #Js.js_array Js.t -> int -> 'a -> unit
+  val array_map : ('a -> 'b) -> 'a #Js.js_array Js.t -> 'b #Js.js_array Js.t
+  val array_mapi :
+    (int -> 'a -> 'b) -> 'a #Js.js_array Js.t -> 'b #Js.js_array Js.t
   class type match_result =
     object
       method concat : js_string t js_array t -> js_string t js_array t meth
