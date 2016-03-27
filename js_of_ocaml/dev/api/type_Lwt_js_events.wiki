@@ -278,6 +278,21 @@
     ?use_capture:bool ->
     #Dom_html.eventTarget Js.t ->
     (Dom_html.event Js.t -> unit Lwt.t -> unit Lwt.t) -> unit Lwt.t
+  val loads :
+    ?cancel_handler:bool ->
+    ?use_capture:bool ->
+    #Dom_html.imageElement Js.t ->
+    (Dom_html.event Js.t -> unit Lwt.t -> unit Lwt.t) -> unit Lwt.t
+  val errors :
+    ?cancel_handler:bool ->
+    ?use_capture:bool ->
+    #Dom_html.imageElement Js.t ->
+    (Dom_html.event Js.t -> unit Lwt.t -> unit Lwt.t) -> unit Lwt.t
+  val aborts :
+    ?cancel_handler:bool ->
+    ?use_capture:bool ->
+    #Dom_html.imageElement Js.t ->
+    (Dom_html.event Js.t -> unit Lwt.t -> unit Lwt.t) -> unit Lwt.t
   val request_animation_frame : unit -> unit Lwt.t
   val onload : unit -> Dom_html.event Js.t Lwt.t
   val domContentLoaded : unit -> unit Lwt.t

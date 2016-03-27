@@ -27,6 +27,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="abort"| value Lwt_js_events.abort >> ~[<<a_api | module Lwt_js_events >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="abort"| value File.ReaderEvent.abort >> ~[<<a_api | module File.ReaderEvent >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="abort"| value Dom_html.Event.abort >> ~[<<a_api | module Dom_html.Event >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="aborts"| value Lwt_js_events.aborts >> ~[<<a_api | module Lwt_js_events >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="add"| value Jstable.add >> ~[<<a_api | module Jstable >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="add"| value Dom.DocumentPosition.add >> ~[<<a_api | module Dom.DocumentPosition >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="addEventListener"| value File.addEventListener >> ~[<<a_api | module File >>~]|<<div class="odocwiki_info"|~Add an event listener~.
@@ -484,6 +485,7 @@
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="error_f"| value Lwt_log_js.error_f >> ~[<<a_api | module Lwt_log_js >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="errors"| value Lwt_js_events.errors >> ~[<<a_api | module Lwt_js_events >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="esc"| value Keycode.esc >> ~[<<a_api | module Keycode >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="escape"| value Js.escape >> ~[<<a_api | module Js >>~]|<<div class="odocwiki_info"|~Escape a string~: unsafe ~U~T~F~-~1~6 code points are replaced by
       ~2~-digit and ~4~-digit escape sequences~.
@@ -804,6 +806,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="load"| value Dom_html.Event.load >> ~[<<a_api | module Dom_html.Event >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="loadend"| value XmlHttpRequest.Event.loadend >> ~[<<a_api | module XmlHttpRequest.Event >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="loadend"| value File.ReaderEvent.loadend >> ~[<<a_api | module File.ReaderEvent >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="loads"| value Lwt_js_events.loads >> ~[<<a_api | module Lwt_js_events >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="loadstart"| value XmlHttpRequest.Event.loadstart >> ~[<<a_api | module XmlHttpRequest.Event >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="loadstart"| value File.ReaderEvent.loadstart >> ~[<<a_api | module File.ReaderEvent >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="loc"| value JsooTopError.loc >> ~[<<a_api | module JsooTopError >>~]||
