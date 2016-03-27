@@ -6279,7 +6279,7 @@
      /*<<js.ml 69 59>>*/ function _cf_(x_a_)
      { /*<<js.ml 92 40>>*/ return 1-(x_a_==no_handler_fT_?1:0) /*<<js.ml 92 41>>*/ }
      /*<<js.ml 242 24>>*/ var
-      /*<<js.ml 242 24>>*/ jsoo_593685be_fW_=window_Y_.Array,
+      /*<<js.ml 242 24>>*/ jsoo_7bc72a9e_fW_=window_Y_.Array,
       /*<<js.ml 381 11>>*/ Error_cg_=
        /*<<js.ml 381 11>>*/ caml_set_oo_id_R_([num_248_a_,_fX_,0]),
       /*<<js.ml 393 69>>*/ exn_ba_=[0,Error_cg_,{}],
@@ -6301,18 +6301,18 @@
                 :0 /*<<js.ml 447 70>>*/ });
      /*<<js.ml 449 2>>*/  /*<<js.ml 449 2>>*/ register_printer_b4_
      (function(jsoo_self_a_)
-       { /*<<js.ml 452 40>>*/ return jsoo_self_a_ instanceof jsoo_593685be_fW_
+       { /*<<js.ml 452 40>>*/ return jsoo_self_a_ instanceof jsoo_7bc72a9e_fW_
                 ?0
                 :[0,
                    /*<<js.ml 453 18>>*/ caml_js_to_string_bu_
                    ( /*<<js.ml 453 29>>*/ jsoo_self_a_.toString())] /*<<js.ml 453 44>>*/ });
      /*<<js.ml 242 24>>*/ var
       /*<<dom_html.ml 890 11>>*/ jsoo_ebd11ba6_ch_="2d",
-      /*<<dom_html.ml 1233 15>>*/ Canvas_not_available_fZ_=
-       /*<<dom_html.ml 1233 15>>*/ caml_set_oo_id_R_([num_248_a_,_fY_,0]);
-     /*<<dom_html.ml 1423 23>>*/ window_Y_.HTMLElement===undefined_fU_;
+      /*<<dom_html.ml 1250 15>>*/ Canvas_not_available_fZ_=
+       /*<<dom_html.ml 1250 15>>*/ caml_set_oo_id_R_([num_248_a_,_fY_,0]);
+     /*<<dom_html.ml 1440 23>>*/ window_Y_.HTMLElement===undefined_fU_;
      /*<<js.ml 242 24>>*/ var
-      /*<<dom_html.ml 1850 54>>*/ _f0_=num_2147483e3_bp_,
+      /*<<dom_html.ml 1867 54>>*/ _f0_=num_2147483e3_bp_,
       /*<<firebug.ml 78 14>>*/ jsoo_self_f1_=
        /*<<firebug.ml 78 14>>*/ caml_js_get_console_gv_(0);
      /*<<src/core/lwt.ml 1201 32>>*/ pause_hook_fR_[1]=
@@ -6623,19 +6623,19 @@
                           /*<<cubes.ml 128 2>>*/ return 0}}}}}} /*<<cubes.ml 151 6>>*/ },
         /*<<cubes.ml 64 30>>*/ create_canvas_ck_=
         function(param_a_)
-         { /*<<dom_html.ml 1281 44>>*/  /*<<dom_html.ml 1281 44>>*/ var
+         { /*<<dom_html.ml 1298 44>>*/  /*<<dom_html.ml 1298 44>>*/ var
            c_b_=
-             /*<<dom_html.ml 1281 44>>*/ window_Y_.document.createElement
+             /*<<dom_html.ml 1298 44>>*/ window_Y_.document.createElement
              ("canvas");
-           /*<<dom_html.ml 1416 32>>*/ if
-           ( /*<<dom_html.ml 1416 10>>*/ _cf_(c_b_.getContext))
+           /*<<dom_html.ml 1433 32>>*/ if
+           ( /*<<dom_html.ml 1433 10>>*/ _cf_(c_b_.getContext))
            { /*<<cubes.ml 156 2>>*/ c_b_.width=
             (24*(jsoo_d761558f_n_|0)|0)+
             1|
             0;
              /*<<cubes.ml 157 2>>*/ c_b_.height=(24*20|0)+1|0;
              /*<<cubes.ml 158 2>>*/ return c_b_}
-           /*<<dom_html.ml 1416 65>>*/ throw Canvas_not_available_fZ_ /*<<cubes.ml 158 3>>*/ },
+           /*<<dom_html.ml 1433 65>>*/ throw Canvas_not_available_fZ_ /*<<cubes.ml 158 3>>*/ },
         /*<<cubes.ml 64 30>>*/ redraw_cl_=
         function(jsoo_self_a_,jsoo_b9bde2df_b_,a_c_)
          { /*<<cubes.ml 161 10>>*/  /*<<cubes.ml 161 10>>*/ var
@@ -6752,41 +6752,41 @@
            /*<<src/core/lwt.ml 565 18>>*/ var
             /*<<src/core/lwt.ml 565 18>>*/ t_f_=[0,[2,[0,1,0,0,0]]],
             /*<<lwt_js.ml 23 2>>*/ d_y_=0.2*num_1e3_bk_,
-            /*<<dom_html.ml 1869 2>>*/ id_h_=[0,0];
+            /*<<dom_html.ml 1886 2>>*/ id_h_=[0,0];
            /*<<lwt_js.ml 23 32>>*/ function callback_z_(_a_)
            { /*<<?>>*/ return wakeup_cc_(t_f_,_a_)}
-           /*<<dom_html.ml 1870 2>>*/ function loop_p_(d_a_,param_b_)
-           { /*<<dom_html.ml 1871 4>>*/ var
-              /*<<dom_html.ml 1871 4>>*/ match_c_=
+           /*<<dom_html.ml 1887 2>>*/ function loop_p_(d_a_,param_b_)
+           { /*<<dom_html.ml 1888 4>>*/ var
+              /*<<dom_html.ml 1888 4>>*/ match_c_=
               num_2147483e3_bp_<d_a_
                ?[0,_f0_,d_a_-num_2147483e3_bp_]
                :[0,d_a_,0],
              remain_d_=match_c_[2],
              step_e_=match_c_[1],
-              /*<<dom_html.ml 1875 4>>*/ cb_f_=
+              /*<<dom_html.ml 1892 4>>*/ cb_f_=
               remain_d_==0
                ?callback_z_
                :function(_a_){ /*<<?>>*/ return loop_p_(remain_d_,_a_)};
-             /*<<dom_html.ml 1879 16>>*/ id_h_[1]=
+             /*<<dom_html.ml 1896 16>>*/ id_h_[1]=
             [0,
-              /*<<dom_html.ml 1879 16>>*/ window_Y_.setTimeout
-              ( /*<<dom_html.ml 1879 4>>*/ caml_js_wrap_callback_dc_(cb_f_),
+              /*<<dom_html.ml 1896 16>>*/ window_Y_.setTimeout
+              ( /*<<dom_html.ml 1896 4>>*/ caml_js_wrap_callback_dc_(cb_f_),
                step_e_)];
-             /*<<dom_html.ml 1879 16>>*/ return 0 /*<<dom_html.ml 1879 63>>*/ }
-           /*<<dom_html.ml 1881 2>>*/  /*<<dom_html.ml 1881 2>>*/ loop_p_
+             /*<<dom_html.ml 1896 16>>*/ return 0 /*<<dom_html.ml 1896 63>>*/ }
+           /*<<dom_html.ml 1898 2>>*/  /*<<dom_html.ml 1898 2>>*/ loop_p_
            (d_y_,0);
            /*<<lwt_js.ml 24 2>>*/ function f_r_(param_a_)
-           { /*<<dom_html.ml 1885 2>>*/  /*<<dom_html.ml 1885 2>>*/ var
+           { /*<<dom_html.ml 1902 2>>*/  /*<<dom_html.ml 1902 2>>*/ var
              _b_=
               id_h_[1];
-             /*<<dom_html.ml 1885 2>>*/ if(_b_)
-             { /*<<dom_html.ml 1888 5>>*/  /*<<dom_html.ml 1888 5>>*/ var
+             /*<<dom_html.ml 1902 2>>*/ if(_b_)
+             { /*<<dom_html.ml 1905 5>>*/  /*<<dom_html.ml 1905 5>>*/ var
                x_c_=
                 _b_[1];
-               /*<<dom_html.ml 1888 5>>*/ id_h_[1]=0;
-               /*<<dom_html.ml 1889 5>>*/ return  /*<<dom_html.ml 1889 5>>*/ window_Y_.clearTimeout
+               /*<<dom_html.ml 1905 5>>*/ id_h_[1]=0;
+               /*<<dom_html.ml 1906 5>>*/ return  /*<<dom_html.ml 1906 5>>*/ window_Y_.clearTimeout
                       (x_c_)}
-             /*<<dom_html.ml 1886 12>>*/ return 0 /*<<lwt_js.ml 24 53>>*/ }
+             /*<<dom_html.ml 1903 12>>*/ return 0 /*<<lwt_js.ml 24 53>>*/ }
            /*<<src/core/lwt.ml 628 16>>*/  /*<<src/core/lwt.ml 628 16>>*/ var
            _g_=
              /*<<src/core/lwt.ml 628 8>>*/ repr_au_(t_f_)[1];

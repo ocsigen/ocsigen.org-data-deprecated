@@ -810,6 +810,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="loadstart"| value XmlHttpRequest.Event.loadstart >> ~[<<a_api | module XmlHttpRequest.Event >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="loadstart"| value File.ReaderEvent.loadstart >> ~[<<a_api | module File.ReaderEvent >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="loc"| value JsooTopError.loc >> ~[<<a_api | module JsooTopError >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="location_origin"| value Dom_html.location_origin >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="log"| value Lwt_log_js.log >> ~[<<a_api | module Lwt_log_js >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|log ~?section ~?logger ~~level message>> logs a message~.
 >>
 |

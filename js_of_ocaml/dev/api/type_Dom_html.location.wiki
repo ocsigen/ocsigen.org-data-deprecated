@@ -4,6 +4,7 @@
   method host : Js.js_string Js.t Js.prop
   method hostname : Js.js_string Js.t Js.prop
   method href : Js.js_string Js.t Js.prop
+  method origin : Js.js_string Js.t Js.optdef Js.readonly_prop
   method pathname : Js.js_string Js.t Js.prop
   method port : Js.js_string Js.t Js.prop
   method protocol : Js.js_string Js.t Js.prop

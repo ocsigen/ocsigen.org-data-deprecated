@@ -1394,6 +1394,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="open_"| method Dom_html.document#open_ >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="options"| method Dom_html.selectElement#options >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="origin"| method EventSource.messageEvent#origin >> ~[<<a_api | module EventSource >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="origin"| method Dom_html.location#origin >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="outerHTML"| method Dom_html.element#outerHTML >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="outerHeight"| method Dom_html.window#outerHeight >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="outerWidth"| method Dom_html.window#outerWidth >> ~[<<a_api | module Dom_html >>~]||
