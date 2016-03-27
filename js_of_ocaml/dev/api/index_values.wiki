@@ -79,10 +79,10 @@
 |@@class="odocwiki_index"@ @@<<a_api text="array_length"| value Js.array_length >> ~[<<a_api | module Js >>~]|<<div class="odocwiki_info"|~Constructor of <<span class="odocwiki_inlinecode"|~Array>> objects~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api text="array_map"| value Js.array_map >> ~[<<a_api | module Js >>~]|<<div class="odocwiki_info"|~Array map~: <<span class="odocwiki_inlinecode"|array~_map f a>> is <<span class="odocwiki_inlinecode"|a~#~#map~(wrap~_callback ~(fun idx elt arr ~-~> f a~)~)>>~.
+|@@class="odocwiki_index"@ @@<<a_api text="array_map"| value Js.array_map >> ~[<<a_api | module Js >>~]|<<div class="odocwiki_info"|~Array map~: <<span class="odocwiki_inlinecode"|array~_map f a>> is <<span class="odocwiki_inlinecode"|a~#~#map~(wrap~_callback ~(fun elt idx arr ~-~> f elt~)~)>>~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api text="array_mapi"| value Js.array_mapi >> ~[<<a_api | module Js >>~]|<<div class="odocwiki_info"|~Array mapi~: <<span class="odocwiki_inlinecode"|array~_mapi f a>> is <<span class="odocwiki_inlinecode"|a~#~#map~(wrap~_callback ~(fun idx elt arr ~-~> f idx a~)~)>>~.
+|@@class="odocwiki_index"@ @@<<a_api text="array_mapi"| value Js.array_mapi >> ~[<<a_api | module Js >>~]|<<div class="odocwiki_info"|~Array mapi~: <<span class="odocwiki_inlinecode"|array~_mapi f a>> is <<span class="odocwiki_inlinecode"|a~#~#map~(wrap~_callback ~(fun elt idx arr ~-~> f idx elt~)~)>>~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="array_set"| value Js.array_set >> ~[<<a_api | module Js >>~]|<<div class="odocwiki_info"|~Array update~: <<span class="odocwiki_inlinecode"|array~_set a i v>> puts <<span class="odocwiki_inlinecode"|v>> at index <<span class="odocwiki_inlinecode"|i>> in
