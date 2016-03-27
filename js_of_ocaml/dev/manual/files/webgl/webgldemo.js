@@ -6529,42 +6529,42 @@
       /*<<dom_html.ml 25 40>>*/ onIE_c2_=
        /*<<dom_html.ml 25 24>>*/ caml_js_on_ie_iQ_(0)|
       0,
-      /*<<dom_html.ml 1250 15>>*/ document_a$_=window_c_.document,
+      /*<<dom_html.ml 1253 15>>*/ document_a$_=window_c_.document,
       /*<<typed_array.ml 28 2>>*/ arrayBuffer_g3_=window_c_.ArrayBuffer,
       /*<<typed_array.ml 92 19>>*/ jsoo_6c9ec695_g4_=window_c_.Float32Array;
-     /*<<dom_html.ml 1250 15>>*/  /*<<dom_html.ml 1250 15>>*/ caml_set_oo_id_H_
+     /*<<dom_html.ml 1253 15>>*/  /*<<dom_html.ml 1253 15>>*/ caml_set_oo_id_H_
      ([num_248_a_,_g5_,0]);
      /*<<dom_html.ml 25 40>>*/ var
-      /*<<dom_html.ml 1436 42>>*/ html_element_c3_=window_c_.HTMLElement,
-      /*<<dom_html.ml 1440 23>>*/ _g6_=
+      /*<<dom_html.ml 1439 42>>*/ html_element_c3_=window_c_.HTMLElement,
+      /*<<dom_html.ml 1443 23>>*/ _g6_=
       html_element_c3_===origin_U_
        ?function(e_a_)
-         { /*<<dom_html.ml 1444 41>>*/ return e_a_.innerHTML===origin_U_
+         { /*<<dom_html.ml 1447 41>>*/ return e_a_.innerHTML===origin_U_
                   ?jsoo_560e4fa1_y_
-                  :e_a_ /*<<dom_html.ml 1446 34>>*/ }
+                  :e_a_ /*<<dom_html.ml 1449 34>>*/ }
        :function(e_a_)
-         { /*<<dom_html.ml 1449 32>>*/ return e_a_ instanceof html_element_c3_
+         { /*<<dom_html.ml 1452 32>>*/ return e_a_ instanceof html_element_c3_
                   ?e_a_
-                  :jsoo_560e4fa1_y_ /*<<dom_html.ml 1451 13>>*/ };
+                  :jsoo_560e4fa1_y_ /*<<dom_html.ml 1454 13>>*/ };
     function _c4_(tag_a_,e_b_)
-     { /*<<dom_html.ml 1454 36>>*/  /*<<dom_html.ml 1454 36>>*/ var
+     { /*<<dom_html.ml 1457 36>>*/  /*<<dom_html.ml 1457 36>>*/ var
        _c_=
-         /*<<dom_html.ml 1454 36>>*/ tag_a_.toString();
-       /*<<dom_html.ml 1454 7>>*/ return  /*<<dom_html.ml 1454 7>>*/ e_b_.tagName.toLowerCase
+         /*<<dom_html.ml 1457 36>>*/ tag_a_.toString();
+       /*<<dom_html.ml 1457 7>>*/ return  /*<<dom_html.ml 1457 7>>*/ e_b_.tagName.toLowerCase
                ()===
               _c_
               ?e_b_
-              :jsoo_560e4fa1_y_ /*<<dom_html.ml 1457 13>>*/ }
+              :jsoo_560e4fa1_y_ /*<<dom_html.ml 1460 13>>*/ }
     function _g7_(e_a_)
-     { /*<<dom_html.ml 1465 18>>*/ return  /*<<dom_html.ml 1465 18>>*/ _c4_
-              (_g8_,e_a_) /*<<dom_html.ml 1465 41>>*/ }
+     { /*<<dom_html.ml 1468 18>>*/ return  /*<<dom_html.ml 1468 18>>*/ _c4_
+              (_g8_,e_a_) /*<<dom_html.ml 1468 41>>*/ }
     function _g9_(e_a_)
-     { /*<<dom_html.ml 1504 17>>*/ return  /*<<dom_html.ml 1504 17>>*/ _c4_
-              (_g__,e_a_) /*<<dom_html.ml 1504 40>>*/ }
+     { /*<<dom_html.ml 1507 17>>*/ return  /*<<dom_html.ml 1507 17>>*/ _c4_
+              (_g__,e_a_) /*<<dom_html.ml 1507 40>>*/ }
      /*<<firebug.ml 78 14>>*/ var
       /*<<firebug.ml 78 14>>*/ jsoo_self_bO_=
        /*<<firebug.ml 78 14>>*/ caml_js_get_console_iP_(0),
-      /*<<dom_html.ml 1867 54>>*/ _g$_=num_2147483e3_b6_,
+      /*<<dom_html.ml 1870 54>>*/ _g$_=num_2147483e3_b6_,
       /*<<file.ml 56 18>>*/ blob_constr_ha_=window_c_.Blob,
       /*<<file.ml 58 17>>*/ doc_constr_hb_=window_c_.Document;
      /*<<src/core/lwt.ml 1201 32>>*/ pause_hook_gZ_[1]=
@@ -7758,41 +7758,41 @@
           /*<<lwt_js.ml 22 26>>*/ t_q_=match_p_[1],
           /*<<lwt_js.ml 22 26>>*/ w_A_=match_p_[2],
           /*<<lwt_js.ml 23 2>>*/ d_B_=0.02*num_1e3_aW_,
-          /*<<dom_html.ml 1886 2>>*/ id_i_=[0,0];
+          /*<<dom_html.ml 1889 2>>*/ id_i_=[0,0];
          /*<<lwt_js.ml 23 32>>*/ function callback_C_(_a_)
          { /*<<?>>*/ return wakeup_bD_(w_A_,_a_)}
-         /*<<dom_html.ml 1887 2>>*/ function loop_o_(d_a_,param_b_)
-         { /*<<dom_html.ml 1888 4>>*/ var
-            /*<<dom_html.ml 1888 4>>*/ match_d_=
+         /*<<dom_html.ml 1890 2>>*/ function loop_o_(d_a_,param_b_)
+         { /*<<dom_html.ml 1891 4>>*/ var
+            /*<<dom_html.ml 1891 4>>*/ match_d_=
             num_2147483e3_b6_<d_a_?[0,_g$_,d_a_-num_2147483e3_b6_]:[0,d_a_,0],
            remain_e_=match_d_[2],
            step_f_=match_d_[1],
-            /*<<dom_html.ml 1892 4>>*/ cb_g_=
+            /*<<dom_html.ml 1895 4>>*/ cb_g_=
             remain_e_==0
              ?callback_C_
              :function(_a_){ /*<<?>>*/ return loop_o_(remain_e_,_a_)};
-           /*<<dom_html.ml 1896 16>>*/ id_i_[1]=
+           /*<<dom_html.ml 1899 16>>*/ id_i_[1]=
           [0,
-            /*<<dom_html.ml 1896 16>>*/ window_c_.setTimeout
-            ( /*<<dom_html.ml 1896 4>>*/ caml_js_wrap_callback_ca_(cb_g_),
+            /*<<dom_html.ml 1899 16>>*/ window_c_.setTimeout
+            ( /*<<dom_html.ml 1899 4>>*/ caml_js_wrap_callback_ca_(cb_g_),
              step_f_)];
-           /*<<dom_html.ml 1896 16>>*/ return 0 /*<<dom_html.ml 1896 63>>*/ }
-         /*<<dom_html.ml 1898 2>>*/  /*<<dom_html.ml 1898 2>>*/ loop_o_
+           /*<<dom_html.ml 1899 16>>*/ return 0 /*<<dom_html.ml 1899 63>>*/ }
+         /*<<dom_html.ml 1901 2>>*/  /*<<dom_html.ml 1901 2>>*/ loop_o_
          (d_B_,0);
          /*<<lwt_js.ml 24 2>>*/  /*<<lwt_js.ml 24 2>>*/ on_cancel_cS_
          (t_q_,
           function(param_a_)
-           { /*<<dom_html.ml 1902 2>>*/  /*<<dom_html.ml 1902 2>>*/ var
+           { /*<<dom_html.ml 1905 2>>*/  /*<<dom_html.ml 1905 2>>*/ var
              _b_=
               id_i_[1];
-             /*<<dom_html.ml 1902 2>>*/ if(_b_)
-             { /*<<dom_html.ml 1905 5>>*/  /*<<dom_html.ml 1905 5>>*/ var
+             /*<<dom_html.ml 1905 2>>*/ if(_b_)
+             { /*<<dom_html.ml 1908 5>>*/  /*<<dom_html.ml 1908 5>>*/ var
                x_d_=
                 _b_[1];
-               /*<<dom_html.ml 1905 5>>*/ id_i_[1]=0;
-               /*<<dom_html.ml 1906 5>>*/ return  /*<<dom_html.ml 1906 5>>*/ window_c_.clearTimeout
+               /*<<dom_html.ml 1908 5>>*/ id_i_[1]=0;
+               /*<<dom_html.ml 1909 5>>*/ return  /*<<dom_html.ml 1909 5>>*/ window_c_.clearTimeout
                       (x_d_)}
-             /*<<dom_html.ml 1903 12>>*/ return 0 /*<<lwt_js.ml 24 53>>*/ });
+             /*<<dom_html.ml 1906 12>>*/ return 0 /*<<lwt_js.ml 24 53>>*/ });
          /*<<webgldemo.ml 299 21>>*/ return  /*<<webgldemo.ml 299 21>>*/ _bI_
                 (t_q_,f_v_) /*<<webgldemo.ml 299 27>>*/ }
        /*<<webgldemo.ml 301 2>>*/ return  /*<<webgldemo.ml 301 2>>*/ f_v_(0) /*<<webgldemo.ml 301 6>>*/ }
