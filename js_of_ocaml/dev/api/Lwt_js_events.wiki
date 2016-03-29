@@ -16,7 +16,7 @@
 
 
    
-<<code language='ocaml'|lwt _ = Lwt_js_events.click elt1 in>>
+<<code language='ocaml'|let%lwt _ = Lwt_js_events.click elt1 in>>
 
 
 
@@ -35,7 +35,7 @@
 
    
 <<code language='ocaml'|let rec esc elt =
-      lwt ev = keydown elt in
+      let%lwt ev = keydown elt in
       if ev##.keyCode = 27
       then Lwt.return ev
       else esc elt>>
@@ -46,9 +46,9 @@
 
 
    
-<<code language='ocaml'|lwt () =
-       Lwt.pick [(lwt _ = esc Dom_html.document in Lwt.return ());
-                 (lwt _ = click Dom_html.document in Lwt.return ())]
+<<code language='ocaml'|let%lwt () =
+       Lwt.pick [(let%lwt _ = esc Dom_html.document in Lwt.return ());
+                 (let%lwt _ = click Dom_html.document in Lwt.return ())]
      in ...>>
 
 
