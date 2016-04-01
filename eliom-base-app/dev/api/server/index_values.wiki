@@ -61,6 +61,9 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="connected_user_box"| value Eba_userbox.connected_user_box >> ~[<<a_api subproject="server" | module Eba_userbox >>~]|<<div class="odocwiki_info"|~Box for connected users~, with picture~, name~, and menu
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="connected_wrapper"| value Eba_session.connected_wrapper >> ~[<<a_api subproject="server" | module Eba_session >>~]|<<div class="odocwiki_info"|~Wrapper for server functions when you do not not need userid~.
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="connection_box"| value Eba_userbox.connection_box >> ~[<<a_api subproject="server" | module Eba_userbox >>~]|<<div class="odocwiki_info"|~Connection box
 >>
 |

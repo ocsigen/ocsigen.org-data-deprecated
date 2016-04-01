@@ -24,6 +24,11 @@
     ?deny:Eba_group.t list ->
     ?deny_fun:(int64 option -> 'b Lwt.t) ->
     (int64 -> 'a -> 'b Lwt.t) -> 'a -> 'b Lwt.t
+  val connected_wrapper :
+    ?allow:Eba_group.t list ->
+    ?deny:Eba_group.t list ->
+    ?deny_fun:(int64 option -> 'b Lwt.t) ->
+    ('a -> 'b Lwt.t) -> 'a -> 'b Lwt.t
   module Opt :
     sig
       val connected_fun :
