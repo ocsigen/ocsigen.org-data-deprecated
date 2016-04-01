@@ -13,6 +13,6 @@
     ?before:('a Eliom_content.Html5.elt -> unit Lwt.t) ->
     ?after:('a Eliom_content.Html5.elt -> unit Lwt.t) ->
     'a Eliom_content.Html5.elt ->
-    ('a, 'b) Ow_alert.dyn_alert_fun' Eliom_pervasives.client_value ->
+    ('a, 'b) Ow_alert.dyn_alert_fun' Eliom_client_value.t ->
     'a Eliom_content.Html5.elt
 end >>
