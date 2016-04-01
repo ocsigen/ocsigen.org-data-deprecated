@@ -28,7 +28,7 @@
 
 
       ~Note that the concrete implementation of this type can vary~.
-      ~See <<a_api text="~Xml" | module Html5_sigs.T.Xml >> for details~.
+      ~See <<a_api | module Html5_sigs.T.Xml >> for details~.
 >>
 <<pre class="ocsforge_color odocwiki_code" id="TYPEdoc"|<<span class="ocsforge_color_keyword"|type>> <<span class="odocwiki_name"|doc>> <<span class="ocsforge_color_delimiter"|~=>> <<span class="odocwiki_type"|[ `Html ] <<a_api text="elt" | type Html5_sigs.T.elt >>>> >><<div class="odocwiki_info"|~A complete ~Html document~.
 >>
@@ -48,7 +48,7 @@
       ~Html validity~.
 
 
-      ~For example <<a_api text="a~_href" | val Html5_sigs.T.a_href >> returns a value of type <<span class="odocwiki_inlinecode"|~[~> `~Href~] attrib>>~.
+      ~For example <<a_api | val Html5_sigs.T.a_href >> returns a value of type <<span class="odocwiki_inlinecode"|~[~> `~Href~] attrib>>~.
       ~The <<a_api text="div" | val Html5_sigs.T.div >> function only accepts attributes of type
       <<a_api | type Html5_types.div_attrib >>~.
       ~Since <<span class="odocwiki_inlinecode"|`~Href>> is not part of it~,
@@ -57,7 +57,7 @@
 
       ~In some cases~, attributes have to be disambiguated~.
       ~The <<span class="odocwiki_inlinecode"|max>> attribute has two version~,
-      <<a_api text="a~_max" | val Html5_sigs.T.a_max >> and <<a_api text="a~_input~_max" | val Html5_sigs.T.a_input_max >>~, depending on the
+      <<a_api | val Html5_sigs.T.a_max >> and <<a_api | val Html5_sigs.T.a_input_max >>~, depending on the
       element~.
       ~Such disambiguated attribute will contain the name of the associated element~.
 >>
