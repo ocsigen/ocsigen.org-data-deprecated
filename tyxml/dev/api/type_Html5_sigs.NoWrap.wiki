@@ -1021,8 +1021,6 @@
   val a_usemap : Html5_types.idref wrap -> [> `Usemap ] attrib
   val a_data : Xml.uri wrap -> [> `Data ] attrib
   val a_codetype : Html5_types.contenttype wrap -> [> `Codetype ] attrib
-  val a_fs_rows : Html5_types.multilengths wrap -> [> `FS_Rows ] attrib
-  val a_fs_cols : Html5_types.multilengths wrap -> [> `FS_Cols ] attrib
   val a_frameborder : [< `One | `Zero ] wrap -> [> `Frameborder ] attrib
   val a_marginheight : Html5_types.pixels wrap -> [> `Marginheight ] attrib
   val a_marginwidth : Html5_types.pixels wrap -> [> `Marginwidth ] attrib

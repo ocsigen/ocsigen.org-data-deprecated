@@ -1394,8 +1394,6 @@
         val a_data : Xml.uri wrap -> [> `Data ] attrib
         val a_codetype :
           Html5_types.contenttype wrap -> [> `Codetype ] attrib
-        val a_fs_rows : Html5_types.multilengths wrap -> [> `FS_Rows ] attrib
-        val a_fs_cols : Html5_types.multilengths wrap -> [> `FS_Cols ] attrib
         val a_frameborder :
           [< `One | `Zero ] wrap -> [> `Frameborder ] attrib
         val a_marginheight :

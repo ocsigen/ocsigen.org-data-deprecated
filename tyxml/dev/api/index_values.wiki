@@ -125,8 +125,6 @@
 |@@class="odocwiki_index"@ @@<<a_api text="a_formtarget"| value Html5_sigs.T.a_formtarget >> ~[<<a_api | module Html5_sigs.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="a_frameborder"| value Html5_sigs.T.a_frameborder >> ~[<<a_api | module Html5_sigs.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="a_from"| value Svg_sigs.T.a_from >> ~[<<a_api | module Svg_sigs.T >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="a_fs_cols"| value Html5_sigs.T.a_fs_cols >> ~[<<a_api | module Html5_sigs.T >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="a_fs_rows"| value Html5_sigs.T.a_fs_rows >> ~[<<a_api | module Html5_sigs.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="a_fx"| value Svg_sigs.T.a_fx >> ~[<<a_api | module Svg_sigs.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="a_fy"| value Svg_sigs.T.a_fy >> ~[<<a_api | module Svg_sigs.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="a_g1"| value Svg_sigs.T.a_g1 >> ~[<<a_api | module Svg_sigs.T >>~]||
@@ -881,7 +879,6 @@
 |@@class="odocwiki_index"@ @@<<a_api text="string_of_linktypes"| value Html5_sigs.Wrapped_functions.string_of_linktypes >> ~[<<a_api | module Html5_sigs.Wrapped_functions >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="string_of_mediadesc"| value Html5_sigs.Wrapped_functions.string_of_mediadesc >> ~[<<a_api | module Html5_sigs.Wrapped_functions >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="string_of_multilength"| value Html5_sigs.Wrapped_functions.string_of_multilength >> ~[<<a_api | module Html5_sigs.Wrapped_functions >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="string_of_multilengths"| value Html5_sigs.Wrapped_functions.string_of_multilengths >> ~[<<a_api | module Html5_sigs.Wrapped_functions >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="string_of_number"| value Svg_sigs.Wrapped_functions.string_of_number >> ~[<<a_api | module Svg_sigs.Wrapped_functions >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="string_of_number"| value Xml_print.string_of_number >> ~[<<a_api | module Xml_print >>~]|<<div class="odocwiki_info"|~Convert a float to a string using a compact representation compatible with ~Javascript norme~.
 >>

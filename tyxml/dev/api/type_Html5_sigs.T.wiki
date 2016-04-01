@@ -1143,12 +1143,6 @@
   val a_codetype :
     Html5_types.contenttype Html5_sigs.T.wrap ->
     [> `Codetype ] Html5_sigs.T.attrib
-  val a_fs_rows :
-    Html5_types.multilengths Html5_sigs.T.wrap ->
-    [> `FS_Rows ] Html5_sigs.T.attrib
-  val a_fs_cols :
-    Html5_types.multilengths Html5_sigs.T.wrap ->
-    [> `FS_Cols ] Html5_sigs.T.attrib
   val a_frameborder :
     [< `One | `Zero ] Html5_sigs.T.wrap ->
     [> `Frameborder ] Html5_sigs.T.attrib

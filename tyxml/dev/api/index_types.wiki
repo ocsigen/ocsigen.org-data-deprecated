@@ -636,9 +636,6 @@
 |@@class="odocwiki_index"@ @@<<a_api text="multilength"| type Html5_types.multilength >> ~[<<a_api | module Html5_types >>~]|<<div class="odocwiki_info"|~The value may be a ~Length or a relative length~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api text="multilengths"| type Html5_types.multilengths >> ~[<<a_api | module Html5_types >>~]|<<div class="odocwiki_info"|~A comma separated list of items of type ~Multi~Length~.
->>
-|
 |@@ @style="tet-align: left;"@@\\N|
 |@@class="odocwiki_index"@ @@<<a_api text="name"| type Html5_types.name >> ~[<<a_api | module Html5_types >>~]|<<div class="odocwiki_info"|~A name with the same character constraints as ~I~D above
 >>
