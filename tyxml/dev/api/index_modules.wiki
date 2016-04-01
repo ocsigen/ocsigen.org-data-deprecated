@@ -123,7 +123,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="Xml_print"| module Xml_print >> |<<div class="odocwiki_info"|~Printing utilities~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api text="Xml_sigs"| module Xml_sigs >> |<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|pp ~(~)>> is a <<span class="odocwiki_inlinecode"|~Format>> printer for untyped ~X~M~L~.
+|@@class="odocwiki_index"@ @@<<a_api text="Xml_sigs"| module Xml_sigs >> |<<div class="odocwiki_info"|~X~M~L ~Signatures~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="Xml_wrap"| module Xml_wrap >> ||

@@ -62,7 +62,7 @@
 |<<a_api | module Svg_f >>|<<div class="odocwiki_info"|~Typesafe constructors for ~S~V~G documents ~(~Functorial interface~)
 >>
 |
-|<<a_api | module Xml_sigs >>|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|pp ~(~)>> is a <<span class="odocwiki_inlinecode"|~Format>> printer for untyped ~X~M~L~.
+|<<a_api | module Xml_sigs >>|<<div class="odocwiki_info"|~X~M~L ~Signatures~.
 >>
 |
 |<<a_api | module Xml_iter >>|<<div class="odocwiki_info"|~Basic iterators over ~X~M~L tree ~(functorial interface~)~.
