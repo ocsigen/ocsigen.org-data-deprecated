@@ -574,7 +574,7 @@
         their conventional interpretations~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api text="list_wrap"| type Html5_sigs.T.list_wrap >> ~[<<a_api | module Html5_sigs.T >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|list~_wrap>> is a containre for list of elements~.
+|@@class="odocwiki_index"@ @@<<a_api text="list_wrap"| type Html5_sigs.T.list_wrap >> ~[<<a_api | module Html5_sigs.T >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|list~_wrap>> is a container for list of elements~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="list_wrap"| type Svg_sigs.T.list_wrap >> ~[<<a_api | module Svg_sigs.T >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|list~_wrap>> is a containre for list of elements~.

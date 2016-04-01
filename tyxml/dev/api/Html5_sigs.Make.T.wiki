@@ -5,11 +5,11 @@
 <<pre class="ocsforge_color odocwiki_code" id="TYPEelt"|<<span class="ocsforge_color_keyword"|type>> <<span class="odocwiki_type"|+'a>> <<span class="odocwiki_name"|elt>>>><<div class="odocwiki_info"|~Html~5 elements~.
 
 
-      ~Element constructors are in section <<a_api | section Html5_sigs.T.elements >>~. ~Most elements constructors
-      are either <<a_api text="<<span class="odocwiki_inlinecode"|nullary>>" | type Html5_sigs.T.nullary >>~, <<a_api text="<<span class="odocwiki_inlinecode"|unary>>" | type Html5_sigs.T.unary >> or <<a_api text="<<span class="odocwiki_inlinecode"|star>>" | type Html5_sigs.T.star >>~,
+      ~Element constructors are in section <<a_api text="elements" | section Html5_sigs.T.elements >>~. ~Most elements constructors
+      are either <<a_api text="nullary" | type Html5_sigs.T.nullary >>~, <<a_api text="unary" | type Html5_sigs.T.unary >> or <<a_api text="star" | type Html5_sigs.T.star >>~,
       depending on the number of children they accept~.
       ~Children are usually given as a list of elements~.
-      <<a_api text="<<span class="odocwiki_inlinecode"|pcdata>>" | val Html5_sigs.T.pcdata >> is used for text~.
+      <<a_api text="pcdata" | val Html5_sigs.T.pcdata >> is used for text~.
 
 
       <<span class="odocwiki_inlinecode"|div ~[a ~[pcdata "~Foo"~]~]>>
@@ -22,20 +22,20 @@
 
 
       ~For example~, <<span class="odocwiki_inlinecode"|div ~[~]>> is of type <<span class="odocwiki_inlinecode"|~[~> `~Div~] elt>>~.
-      ~The <<a_api text="<<span class="odocwiki_inlinecode"|span>>" | val Html5_sigs.T.span >> function only accepts children of type
+      ~The <<a_api text="span" | val Html5_sigs.T.span >> function only accepts children of type
       <<a_api | type Html5_types.span_content >>~.
       ~Since <<span class="odocwiki_inlinecode"|`~Div>> is not part of it~. <<span class="odocwiki_inlinecode"|span ~[div ~[~]~]>> will not typecheck~.
 
 
       ~Note that the concrete implementation of this type can vary~.
-      ~See <<a_api text="<<span class="odocwiki_inlinecode"|~Xml>>" | module Html5_sigs.T.Xml >> for details~.
+      ~See <<a_api text="~Xml" | module Html5_sigs.T.Xml >> for details~.
 >>
 <<pre class="ocsforge_color odocwiki_code" id="TYPEdoc"|<<span class="ocsforge_color_keyword"|type>> <<span class="odocwiki_name"|doc>> <<span class="ocsforge_color_delimiter"|~=>> <<span class="odocwiki_type"|[ `Html ] <<a_api text="elt" | type Html5_sigs.T.elt >>>> >><<div class="odocwiki_info"|~A complete ~Html document~.
 >>
 <<pre class="ocsforge_color odocwiki_code" id="TYPEattrib"|<<span class="ocsforge_color_keyword"|type>> <<span class="odocwiki_type"|+'a>> <<span class="odocwiki_name"|attrib>>>><<div class="odocwiki_info"|~Html~5 attributes
 
 
-      ~Attribute constructors are in section <<a_api | section Html5_sigs.T.attributes >> and their name starts
+      ~Attribute constructors are in section <<a_api text="attributes" | section Html5_sigs.T.attributes >> and their name starts
       with <<span class="odocwiki_inlinecode"|a~_>>~. ~Attributes are given to elements with the <<span class="odocwiki_inlinecode"|~~a>> optional argument~.
 
 
@@ -44,12 +44,12 @@
       <<span class="odocwiki_inlinecode"|~<a href~="ocsigen~.org"~>link!~<~/a~>>>
 
 
-      ~Similarly to <<a_api text="<<span class="odocwiki_inlinecode"|elt>>" | type Html5_sigs.T.elt >>~, attributes use the ~O~Caml type system to enforce
+      ~Similarly to <<a_api text="elt" | type Html5_sigs.T.elt >>~, attributes use the ~O~Caml type system to enforce
       ~Html validity~.
 
 
-      ~For example <<a_api text="<<span class="odocwiki_inlinecode"|a~_href>>" | val Html5_sigs.T.a_href >> returns a value of type <<span class="odocwiki_inlinecode"|~[~> `~Href~] attrib>>~.
-      ~The <<a_api text="<<span class="odocwiki_inlinecode"|div>>" | val Html5_sigs.T.div >> function only accepts attributes of type
+      ~For example <<a_api text="a~_href" | val Html5_sigs.T.a_href >> returns a value of type <<span class="odocwiki_inlinecode"|~[~> `~Href~] attrib>>~.
+      ~The <<a_api text="div" | val Html5_sigs.T.div >> function only accepts attributes of type
       <<a_api | type Html5_types.div_attrib >>~.
       ~Since <<span class="odocwiki_inlinecode"|`~Href>> is not part of it~,
       <<span class="odocwiki_inlinecode"|div ~~a~:~[a~_href "ocsigen~.org"~] ~[~]>> will not typecheck~.
@@ -57,7 +57,7 @@
 
       ~In some cases~, attributes have to be disambiguated~.
       ~The <<span class="odocwiki_inlinecode"|max>> attribute has two version~,
-      <<a_api text="<<span class="odocwiki_inlinecode"|a~_max>>" | val Html5_sigs.T.a_max >> and <<a_api text="<<span class="odocwiki_inlinecode"|a~_input~_max>>" | val Html5_sigs.T.a_input_max >>~, depending on the
+      <<a_api text="a~_max" | val Html5_sigs.T.a_max >> and <<a_api text="a~_input~_max" | val Html5_sigs.T.a_input_max >>~, depending on the
       element~.
       ~Such disambiguated attribute will contain the name of the associated element~.
 >>
@@ -69,7 +69,7 @@
       ~In most cases~, <<span class="odocwiki_inlinecode"|~'a wrap ~= ~'a>>~. ~For <<span class="odocwiki_inlinecode"|~R>> modules ~(in eliom or js~_of~_ocaml~)~,
       ~It will be <<span class="odocwiki_inlinecode"|~React~.~S~.t>>~.
 >>
-<<pre class="ocsforge_color odocwiki_code" id="TYPElist_wrap"|<<span class="ocsforge_color_keyword"|type>> <<span class="odocwiki_type"|'a>> <<span class="odocwiki_name"|list~_wrap>> <<span class="ocsforge_color_delimiter"|~=>> <<span class="odocwiki_type"|'a <<span class="ocsforge_color_uid"|Xml>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_uid"|W>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|tlist>>>> >><<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|list~_wrap>> is a containre for list of elements~.
+<<pre class="ocsforge_color odocwiki_code" id="TYPElist_wrap"|<<span class="ocsforge_color_keyword"|type>> <<span class="odocwiki_type"|'a>> <<span class="odocwiki_name"|list~_wrap>> <<span class="ocsforge_color_delimiter"|~=>> <<span class="odocwiki_type"|'a <<span class="ocsforge_color_uid"|Xml>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_uid"|W>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|tlist>>>> >><<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|list~_wrap>> is a container for list of elements~.
 
 
       ~In most cases~, <<span class="odocwiki_inlinecode"|~'a list~_wrap ~= ~'a list>>~. ~For <<span class="odocwiki_inlinecode"|~R>> modules ~(in eliom or js~_of~_ocaml~)~,
