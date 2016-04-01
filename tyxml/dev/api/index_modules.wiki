@@ -1,7 +1,7 @@
 =Index of modules=
 
 |@@ @style="tet-align: left;"@@\\H|
-|@@class="odocwiki_index"@ @@<<a_api text="Html5"| module Html5 >> |<<div class="odocwiki_info"|~Typesafe constructors and printers for ~H~T~M~L~5 documents~.
+|@@class="odocwiki_index"@ @@<<a_api text="Html5"| module Html5 >> |<<div class="odocwiki_info"|~Typesafe constructors and printers for ~Html~5 documents~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="Html5_f"| module Html5_f >> |<<div class="odocwiki_info"|~Typesafe constructors for ~H~T~M~L~5 documents ~(~Functorial interface~)
@@ -41,10 +41,10 @@
 |@@class="odocwiki_index"@ @@<<a_api text="Make_fmt"| module Xml_print.Make_fmt >> ~[<<a_api | module Xml_print >>~]|<<div class="odocwiki_info"|~Printers for raw ~X~M~L modules~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api text="Make_printer"| module Html5.Make_printer >> ~[<<a_api | module Html5 >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_deprecated"|~Parametrized stream printer for ~H~T~M~L~5 documents~.
+|@@class="odocwiki_index"@ @@<<a_api text="Make_printer"| module Html5.Make_printer >> ~[<<a_api | module Html5 >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_deprecated"|~Parametrized stream printer for ~Html~5 documents~.
 >>>>
 |
-|@@class="odocwiki_index"@ @@<<a_api text="Make_printer"| module Svg.Make_printer >> ~[<<a_api | module Svg >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_deprecated"|~Parametrized stream printer for ~S~V~G documents~.
+|@@class="odocwiki_index"@ @@<<a_api text="Make_printer"| module Svg.Make_printer >> ~[<<a_api | module Svg >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_deprecated"|~Parametrized stream printer for ~Svg documents~.
 >>>>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="Make_simple"| module Xml_print.Make_simple >> ~[<<a_api | module Xml_print >>~]||
@@ -72,7 +72,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="Svg"| module Html5_sigs.T.Svg >> ~[<<a_api | module Html5_sigs.T >>~]|<<div class="odocwiki_info"|~Associated ~Svg module~, for the <<a_api | val Html5_sigs.T.svg >> combinator~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api text="Svg"| module Svg >> |<<div class="odocwiki_info"|~Typesafe constructors and printers for ~S~V~G documents~.
+|@@class="odocwiki_index"@ @@<<a_api text="Svg"| module Svg >> |<<div class="odocwiki_info"|~Typesafe constructors and printers for ~Svg documents~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="Svg_f"| module Svg_f >> |<<div class="odocwiki_info"|~Typesafe constructors for ~S~V~G documents ~(~Functorial interface~)

@@ -803,10 +803,10 @@
 |@@class="odocwiki_index"@ @@<<a_api text="pp_elt"| value Xml_sigs.Typed_pp.pp_elt >> ~[<<a_api | module Xml_sigs.Typed_pp >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|pp~_elt ~(~)>> is a <<span class="odocwiki_inlinecode"|~Format>> printer for individual elements~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api text="pp_elt"| value Html5.pp_elt >> ~[<<a_api | module Html5 >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|pp~_elt ~(~)>> is a <<span class="odocwiki_inlinecode"|~Format>> printer for svg elements~.
+|@@class="odocwiki_index"@ @@<<a_api text="pp_elt"| value Html5.pp_elt >> ~[<<a_api | module Html5 >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|pp~_elt ~(~)>> is a <<span class="odocwiki_inlinecode"|~Format>> printer for ~Html~5 elements~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api text="pp_elt"| value Svg.pp_elt >> ~[<<a_api | module Svg >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|pp~_elt ~(~)>> is a <<span class="odocwiki_inlinecode"|~Format>> printer for svg elements~.
+|@@class="odocwiki_index"@ @@<<a_api text="pp_elt"| value Svg.pp_elt >> ~[<<a_api | module Svg >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|pp~_elt ~(~)>> is a <<span class="odocwiki_inlinecode"|~Format>> printer for ~Svg elements~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="pp_number"| value Xml_print.pp_number >> ~[<<a_api | module Xml_print >>~]|<<div class="odocwiki_info"|~See <<a_api | val Xml_print.string_of_number >>~.

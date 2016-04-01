@@ -2,15 +2,16 @@
 ==[[Html5|Html5]]
 ==[[Svg|Svg]]
 ==~Types and signatures
-===[[Html5_sig|Html5_sig]]
+===[[Html5_sigs|Html5_sigs]]
 ===[[Html5_types|Html5_types]]
-===[[Svg_sig|Svg_sig]]
+===[[Svg_sigs|Svg_sigs]]
 ===[[Svg_types|Svg_types]]
 ==~Low~-level ~X~M~L manipulation
 ===[[Xml|Xml]]
 =~Ty~X~M~L ~Functors 
 ==[[Html5_f|Html5_f]]
 ==[[Svg_f|Svg_f]]
+==[[Xml_sigs|Xml_sigs]]
 ==[[Xml_iter|Xml_iter]]
 ==[[Xml_print|Xml_print]]
 =~Camlp~4 ~Syntax extension and parser
