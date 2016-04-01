@@ -18,11 +18,11 @@
   val string_of_uri : uri -> string
   val uri_of_string : string -> uri
   type aname = string
-  type event_handler = (Dom_html.event Js.t -> unit) Eliom_lib.client_value
+  type event_handler = (Dom_html.event Js.t -> unit) Eliom_client_value.t
   type mouse_event_handler =
-      (Dom_html.mouseEvent Js.t -> unit) Eliom_lib.client_value
+      (Dom_html.mouseEvent Js.t -> unit) Eliom_client_value.t
   type keyboard_event_handler =
-      (Dom_html.keyboardEvent Js.t -> unit) Eliom_lib.client_value
+      (Dom_html.keyboardEvent Js.t -> unit) Eliom_client_value.t
   type attrib
   val float_attrib : aname -> float wrap -> attrib
   val int_attrib : aname -> int wrap -> attrib

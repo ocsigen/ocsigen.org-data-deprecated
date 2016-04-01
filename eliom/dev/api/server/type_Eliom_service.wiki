@@ -1346,6 +1346,11 @@
      [< Eliom_service.suff ], 'f, 'g, [< Eliom_service.registrable ],
      'return)
     Eliom_service.service -> unit
+  val is_external :
+    ('a, 'b, [< Eliom_service.service_method ], [< Eliom_service.attached ],
+     [< Eliom_service.service_kind ], [< Eliom_service.suff ], 'c, 'd,
+     [< Eliom_service.registrable ], 'e)
+    Eliom_service.service -> bool
   val get_get_or_post :
     ('a, 'b, [< Eliom_service.service_method ] as 'c,
      [< Eliom_service.attached ], [< Eliom_service.service_kind ],
@@ -1413,8 +1418,7 @@
      [< Eliom_service.service_kind ], [< Eliom_service.suff ], 'e, 'f,
      [< Eliom_service.registrable ], 'return)
     Eliom_service.service ->
-    ('a -> 'b -> [ `Html ] Eliom_content_core.Html5.elt Lwt.t)
-    Eliom_lib.client_value option
+    (unit -> ('a -> 'b -> unit Lwt.t) option) Eliom_client_value.t
   val set_client_fun_ :
     ?app:string ->
     service:('a, 'b, [< Eliom_service.service_method ],
@@ -1422,8 +1426,14 @@
              [< Eliom_service.suff ], 'e, 'f, [< Eliom_service.registrable ],
              'return)
             Eliom_service.service ->
-    ('a -> 'b -> [ `Html ] Eliom_content_core.Html5.elt Lwt.t)
-    Eliom_lib.client_value -> unit
+    ('a -> 'b -> unit Lwt.t) Eliom_client_value.t -> unit
+  val internal_set_client_fun_ :
+    service:('a, 'b, [< Eliom_service.service_method ],
+             [< Eliom_service.attached ], [< Eliom_service.service_kind ],
+             [< Eliom_service.suff ], 'e, 'f, [< Eliom_service.registrable ],
+             'return)
+            Eliom_service.service ->
+    (unit -> ('a -> 'b -> unit Lwt.t) option) Eliom_client_value.t -> unit
   val keep_nl_params :
     ('a, 'b, [< Eliom_service.service_method ], [< Eliom_service.attached ],
      [< Eliom_service.service_kind ], [< Eliom_service.suff ], 'e, 'f,
@@ -1482,6 +1492,8 @@
      [< Eliom_service.service_kind ], [< Eliom_service.suff ], 'e, 'f,
      [< Eliom_service.registrable ], 'h)
     Eliom_service.service -> string option option
+  val eliom_appl_answer_content_type : string
+  exception Wrong_session_table_for_CSRF_safe_coservice
   val pre_wrap :
     ('a, 'b, [< Eliom_service.service_method ] as 'c,
      [< Eliom_service.attached ] as 'd,
@@ -1489,19 +1501,4 @@
      'e, 'f, [< Eliom_service.registrable ] as 'i, 'rr)
     Eliom_service.service ->
     ('a, 'b, 'c, 'd, 'g, 'h, 'e, 'f, 'i, 'rr) Eliom_service.service
-  val eliom_appl_answer_content_type : string
-  exception Wrong_session_table_for_CSRF_safe_coservice
-  val get_global_data : unit -> Eliom_lib_base.global_data
-  val get_request_data : unit -> Eliom_lib.request_data
-  module Syntax_helpers :
-    sig
-      val client_value :
-        ?pos:Eliom_lib.pos -> string -> 'args -> 'a Eliom_lib.client_value
-      val set_global : bool -> unit
-      val close_server_section : string -> unit
-      val close_client_section :
-        string ->
-        (int * Eliom_lib.poly * Eliom_lib.pos * string option) list -> unit
-      val escaped_value : 'a -> Eliom_lib.escaped_value
-    end
 end >>

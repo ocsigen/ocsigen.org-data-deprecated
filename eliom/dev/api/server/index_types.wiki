@@ -61,13 +61,6 @@
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="client_process_scope"| type Eliom_common.client_process_scope >> ~[<<a_api subproject="server" | module Eliom_common >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="client_value"| type Eliom_pervasives.client_value >> ~[<<a_api subproject="server" | module Eliom_pervasives >>~]|<<div class="odocwiki_info"|~Client values on the server are created by the syntax <<span class="odocwiki_inlinecode"|~{typ~{ expr ~}~}>>
-    in the server section ~(cf~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="client_value"| type Eliom_lib.client_value >> ~[<<a_api subproject="server" | module Eliom_lib >>~]|<<div class="odocwiki_info"|~See <<a_api subproject="server"|type Eliom_lib.client_value>> ~.
->>
-|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="comet_scope"| type Eliom_comet.Channel.comet_scope >> ~[<<a_api subproject="server" | module Eliom_comet.Channel >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="content"| type Atom_feed.content >> ~[<<a_api subproject="server" | module Atom_feed >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="contributor"| type Atom_feed.contributor >> ~[<<a_api subproject="server" | module Atom_feed >>~]||
@@ -145,9 +138,6 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="files"| type Eliom_parameter.files >> ~[<<a_api subproject="server" | module Eliom_parameter >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="form_param"| type Eliom_content.Html5.form_param >> ~[<<a_api subproject="server" | module Eliom_content.Html5 >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="form_param"| type Eliom_content_sigs.LINKS_AND_FORMS.form_param >> ~[<<a_api subproject="server" | module Eliom_content_sigs.LINKS_AND_FORMS >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="fragment"| type Eliom_pervasives.fragment >> ~[<<a_api subproject="server" | module Eliom_pervasives >>~]|<<div class="odocwiki_info"|~An alias for <<a_api subproject="server" | type Eliom_pervasives.client_value >>~.
->>
-|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="full_state_name"| type Eliom_common.full_state_name >> ~[<<a_api subproject="server" | module Eliom_common >>~]||
 |@@ @style="tet-align: left;"@@\\G|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="generator"| type Atom_feed.generator >> ~[<<a_api subproject="server" | module Atom_feed >>~]||
@@ -207,10 +197,6 @@
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="list_wrap"| type Eliom_content.Svg.list_wrap >> ~[<<a_api subproject="server" | module Eliom_content.Svg >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="listnames"| type Eliom_parameter.listnames >> ~[<<a_api subproject="server" | module Eliom_parameter >>~]|<<div class="odocwiki_info"|~Helpers type used to construct forms from lists~, see <<a_api subproject="server" | val Eliom_parameter.list >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="local_t"| type Eliom_cscache.local_t >> ~[<<a_api subproject="server" | module Eliom_cscache >>~]|<<div class="odocwiki_info"|~The type of local ~(client or server~)
-    association tables ~(implemented using ~Hashtbl~)
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="logo"| type Atom_feed.logo >> ~[<<a_api subproject="server" | module Atom_feed >>~]||
@@ -338,7 +324,7 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="select_opt"| type Eliom_form_sigs.S.select_opt >> ~[<<a_api subproject="server" | module Eliom_form_sigs.S >>~]|<<div class="odocwiki_info"|~The type for <<span class="odocwiki_inlinecode"|~<select~>>> options and groups of options~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="server_function"| type Eliom_pervasives.server_function >> ~[<<a_api subproject="server" | module Eliom_pervasives >>~]|<<div class="odocwiki_info"|~A value of type <<span class="odocwiki_inlinecode"|~(~'a~, ~'b~) server~_function>> is created on the server from a
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="server_function"| type Eliom_client.server_function >> ~[<<a_api subproject="server" | module Eliom_client >>~]|<<div class="odocwiki_info"|~A value of type <<span class="odocwiki_inlinecode"|~(~'a~, ~'b~) server~_function>> is created on the server from a
     function <<span class="odocwiki_inlinecode"|~'a ~-~> ~'b ~Lwt~.t>> and provides a given function on the client side~.
 >>
 |
@@ -366,7 +352,6 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="setoneradio"| type Eliom_parameter.setoneradio >> ~[<<a_api subproject="server" | module Eliom_parameter >>~]|<<div class="odocwiki_info"|~A parameter arity could either be~: <<span class="odocwiki_inlinecode"|`~Set of ~'a>> means~: any number of <<span class="odocwiki_inlinecode"|~'a>>~.~, <<span class="odocwiki_inlinecode"|`~One of ~'a>> means~: exactly one <<span class="odocwiki_inlinecode"|~'a>>~.~, <<span class="odocwiki_inlinecode"|`~Radio of ~'a>> means~: zero or one <<span class="odocwiki_inlinecode"|~'a>>~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="shared_value"| type Eliom_lib.shared_value >> ~[<<a_api subproject="server" | module Eliom_lib >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="signal"| type Eliom_shared_sigs.RLIST.signal >> ~[<<a_api subproject="server" | module Eliom_shared_sigs.RLIST >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="site_scope"| type Eliom_common.site_scope >> ~[<<a_api subproject="server" | module Eliom_common >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="sitedata"| type Eliom_types.sitedata >> ~[<<a_api subproject="server" | module Eliom_types >>~]||
@@ -395,9 +380,13 @@
     parameter~.
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="sv"| type Eliom_shared_sigs.RLIST.sv >> ~[<<a_api subproject="server" | module Eliom_shared_sigs.RLIST >>~]|<<div class="odocwiki_info"|~The type of shared values
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="sv"| type Eliom_shared_sigs.S.sv >> ~[<<a_api subproject="server" | module Eliom_shared_sigs.S >>~]||
 |@@ @style="tet-align: left;"@@\\T|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="t"| type Eliom_registration.TMPL_PARAMS.t >> ~[<<a_api subproject="server" | module Eliom_registration.TMPL_PARAMS >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="t"| type Eliom_cscache.t >> ~[<<a_api subproject="server" | module Eliom_cscache >>~]|<<div class="odocwiki_info"|~The type of client~-server association tables ~(implemented using ~Hashtbl~)
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="t"| type Eliom_cscache.t >> ~[<<a_api subproject="server" | module Eliom_cscache >>~]|<<div class="odocwiki_info"|~The type of association tables ~(implemented using ~Hashtbl~)
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="t"| type Eliom_shared.FakeReactiveData.RList.t >> ~[<<a_api subproject="server" | module Eliom_shared.FakeReactiveData.RList >>~]||
@@ -416,6 +405,10 @@
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="t"| type Eliom_comet.Channel.t >> ~[<<a_api subproject="server" | module Eliom_comet.Channel >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|v t>> is the type of server~-to~-client communication channels
       transporting data of type <<span class="odocwiki_inlinecode"|v>>
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="t"| type Eliom_client_value.t >> ~[<<a_api subproject="server" | module Eliom_client_value >>~]|<<div class="odocwiki_info"|~Client values on the server are created by the syntax <<span class="odocwiki_inlinecode"|~{typ~{ expr
+    ~}~}>> in the server section ~(cf~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="t"| type Eliom_bus.t >> ~[<<a_api subproject="server" | module Eliom_bus >>~]|<<div class="odocwiki_info"|~The type of bus~'s carrying values of type <<span class="odocwiki_inlinecode"|~'a>>~.

@@ -5193,11 +5193,11 @@
         sig
           val node :
             ?init:'a Eliom_content.Svg.D.elt ->
-            'a Eliom_content.Svg.elt Eliom_pervasives.client_value ->
+            'a Eliom_content.Svg.elt Eliom_client_value.t ->
             'a Eliom_content.Svg.D.elt
           val attr :
             ?init:'a Eliom_content.Svg.attrib ->
-            'a Eliom_content.Svg.attrib Eliom_pervasives.client_value ->
+            'a Eliom_content.Svg.attrib Eliom_client_value.t ->
             'a Eliom_content.Svg.attrib
         end
       module Id :
@@ -12275,8 +12275,8 @@
       module R :
         sig
           val node :
-            'a Eliom_content.Html5.elt React.signal
-            Eliom_pervasives.client_value -> 'a Eliom_content.Html5.elt
+            'a Eliom_content.Html5.elt React.signal Eliom_client_value.t ->
+            'a Eliom_content.Html5.elt
           val filter_attrib :
             'a Eliom_content.Html5.attrib ->
             bool React.signal -> 'a Eliom_content.Html5.attrib
@@ -15464,11 +15464,11 @@
         sig
           val node :
             ?init:'a Eliom_content.Html5.D.elt ->
-            'a Eliom_content.Html5.elt Eliom_pervasives.client_value ->
+            'a Eliom_content.Html5.elt Eliom_client_value.t ->
             'a Eliom_content.Html5.D.elt
           val attr :
             ?init:'a Eliom_content.Html5.attrib ->
-            'a Eliom_content.Html5.attrib Eliom_pervasives.client_value ->
+            'a Eliom_content.Html5.attrib Eliom_client_value.t ->
             'a Eliom_content.Html5.attrib
         end
       module Id :
@@ -16221,5 +16221,8 @@
              [< Eliom_service.suff ], 'e, 'f, [< Eliom_service.registrable ],
              'return)
             Eliom_service.service ->
-    ('a -> 'b -> [ `Html ] Eliom_content.Html5.elt Lwt.t) -> unit
+    ('a -> 'b -> unit Lwt.t) -> unit
+  val wrap_client_fun :
+    ('g -> 'p -> Html5_types.html Eliom_content.Html5.elt Lwt.t) ->
+    'g -> 'p -> unit Lwt.t
 end >>

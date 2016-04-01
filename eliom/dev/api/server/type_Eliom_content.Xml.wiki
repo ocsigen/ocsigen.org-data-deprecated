@@ -18,11 +18,11 @@
   val string_of_uri : uri -> string
   val uri_of_string : string -> uri
   type aname = string
-  type event_handler = (Dom_html.event Js.t -> unit) Eliom_lib.client_value
+  type event_handler = (Dom_html.event Js.t -> unit) Eliom_client_value.t
   type mouse_event_handler =
-      (Dom_html.mouseEvent Js.t -> unit) Eliom_lib.client_value
+      (Dom_html.mouseEvent Js.t -> unit) Eliom_client_value.t
   type keyboard_event_handler =
-      (Dom_html.keyboardEvent Js.t -> unit) Eliom_lib.client_value
+      (Dom_html.keyboardEvent Js.t -> unit) Eliom_client_value.t
   type attrib
   val float_attrib : aname -> float wrap -> attrib
   val int_attrib : aname -> int wrap -> attrib
@@ -70,10 +70,12 @@
   val uri_of_fun : (unit -> string) -> uri
   type node_id
   val get_node_id : elt -> Eliom_content.Xml.node_id
-  val make_event_handler_table : elt -> Eliom_lib.RawXML.event_handler_table
-  val make_client_attrib_table : elt -> Eliom_lib.RawXML.client_attrib_table
+  val make_event_handler_table :
+    elt -> Eliom_runtime.RawXML.event_handler_table
+  val make_client_attrib_table :
+    elt -> Eliom_runtime.RawXML.client_attrib_table
   val caml_event_handler :
-    ((#Dom_html.event as 'a) Js.t -> unit) Eliom_lib.client_value ->
+    ((#Dom_html.event as 'a) Js.t -> unit) Eliom_client_value.t ->
     'a Eliom_content.Xml.caml_event_handler
   class type biggest_event =
     object

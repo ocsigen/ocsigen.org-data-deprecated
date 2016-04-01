@@ -4,6 +4,5 @@
   val make_page :
     Eliom_registration.TMPL_PARAMS.t ->
     Html5_types.html Eliom_content.Html5.elt Lwt.t
-  val update :
-    Eliom_registration.TMPL_PARAMS.t -> unit Eliom_lib.client_value
+  val update : Eliom_registration.TMPL_PARAMS.t -> unit Eliom_client_value.t
 end >>

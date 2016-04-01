@@ -15,6 +15,8 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Channel"| module Eliom_comet.Channel >> ~[<<a_api subproject="client" | module Eliom_comet >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Class"| module Eliom_content.Html5.Manip.Class >> ~[<<a_api subproject="client" | module Eliom_content.Html5.Manip >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Class"| module Eliom_content.Svg.Manip.Class >> ~[<<a_api subproject="client" | module Eliom_content.Svg.Manip >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Client_closure"| module Eliom_client_core.Client_closure >> ~[<<a_api subproject="client" | module Eliom_client_core >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Client_value"| module Eliom_client_core.Client_value >> ~[<<a_api subproject="client" | module Eliom_client_core >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Configuration"| module Eliom_comet.Configuration >> ~[<<a_api subproject="client" | module Eliom_comet >>~]|<<div class="odocwiki_info"|~Change the reactivity of channels~.
 >>
 |
@@ -51,6 +53,13 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Eliom_client"| module Eliom_client >> |<<div class="odocwiki_info"|~Call server side services and change the current page~.
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Eliom_client_core"| module Eliom_client_core >> |<<div class="odocwiki_info"|~The first argument describes the calling function ~(if any~) in case
+    of an error~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Eliom_client_value"| module Eliom_client_value >> |<<div class="odocwiki_info"|~Client and shared values
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Eliom_comet"| module Eliom_comet >> |<<div class="odocwiki_info"|~Handle unsolicited server to client communications~.
 >>
 |
@@ -75,15 +84,11 @@
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Eliom_lazy"| module Eliom_lazy >> ||
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Eliom_lib"| module Eliom_lib >> |<<div class="odocwiki_info"|~See <<a_api subproject="client"|type
-    Eliom_pervasives.client_value>> ~.
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Eliom_lib"| module Eliom_lib >> |<<div class="odocwiki_info"|~Deprecated~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Eliom_parameter"| module Eliom_parameter >> |<<div class="odocwiki_info"|~See documentation in the server side version~:
     <<a_api subproject="server"|module Eliom_parameter>>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Eliom_pervasives"| module Eliom_pervasives >> |<<div class="odocwiki_info"|~This module is automatically open by {{{eliomc}}} and {{{js_of_eliom}}}~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Eliom_react"| module Eliom_react >> |<<div class="odocwiki_info"|~Client side type declarations for ~React event propagation~.
@@ -163,6 +168,7 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Infix"| module Eliom_shared_sigs.S.Infix >> ~[<<a_api subproject="client" | module Eliom_shared_sigs.S >>~]|<<div class="odocwiki_info"|~Infix operators
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Injection"| module Eliom_client_core.Injection >> ~[<<a_api subproject="client" | module Eliom_client_core >>~]||
 |@@ @style="tet-align: left;"@@\\L|
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Lwt"| module Eliom_shared_sigs.RLIST.Lwt >> ~[<<a_api subproject="client" | module Eliom_shared_sigs.RLIST >>~]|<<div class="odocwiki_info"|~Cooperative versions of the ~Reactive~Data operators
 >>
@@ -244,6 +250,7 @@
     standard ~React
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="ReactState"| module Eliom_client_core.ReactState >> ~[<<a_api subproject="client" | module Eliom_client_core >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="ReactiveData"| module Eliom_shared.ReactiveData >> ~[<<a_api subproject="client" | module Eliom_shared >>~]|<<div class="odocwiki_info"|~Shared implementation of ~Reactive~Data~; client~-side behavior is
     like standard ~Reactive~Data
 >>
@@ -261,6 +268,7 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Svg"| module Eliom_content.Svg >> ~[<<a_api subproject="client" | module Eliom_content >>~]|<<div class="odocwiki_info"|~Building valid ~S~V~G ~.
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Syntax_helpers"| module Eliom_client_core.Syntax_helpers >> ~[<<a_api subproject="client" | module Eliom_client_core >>~]||
 |@@ @style="tet-align: left;"@@\\T|
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="To_dom"| module Eliom_content.Html5.To_dom >> ~[<<a_api subproject="client" | module Eliom_content.Html5 >>~]|<<div class="odocwiki_info"|~Conversion from ~H~T~M~L~5 <<span class="odocwiki_inlinecode"|elt>>s to ~Javascript ~D~O~M elements ~(<<span class="odocwiki_inlinecode"|~<~:>> <<a_api
       project="js_of_ocaml"| class Dom_html.element >> ~)~.
@@ -285,5 +293,6 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Xml"| module Eliom_content.Xml >> ~[<<a_api subproject="client" | module Eliom_content >>~]|<<div class="odocwiki_info"|~Low~-level ~X~M~L manipulation~.
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Xml"| module Eliom_client_core.Xml >> ~[<<a_api subproject="client" | module Eliom_client_core >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Xml_wed"| module Eliom_content_core.Xml_wed >> ~[<<a_api subproject="client" | module Eliom_content_core >>~]||
 \\

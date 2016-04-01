@@ -5,11 +5,8 @@
 
 
 
-|<<a_api subproject="client" | module Eliom_pervasives >>|<<div class="odocwiki_info"|~This module is automatically open by {{{eliomc}}} and {{{js_of_eliom}}}~.
->>
-|
-|<<a_api subproject="client" | module Eliom_lib >>|<<div class="odocwiki_info"|~See <<a_api subproject="client"|type
-    Eliom_pervasives.client_value>> ~.
+|Eliom_client_common||
+|<<a_api subproject="client" | module Eliom_lib >>|<<div class="odocwiki_info"|~Deprecated~.
 >>
 |
 |<<a_api subproject="client" | module Eliom_client >>|<<div class="odocwiki_info"|~Call server side services and change the current page~.

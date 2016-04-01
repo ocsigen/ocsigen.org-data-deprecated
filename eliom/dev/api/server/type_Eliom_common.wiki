@@ -589,14 +589,16 @@
   val patch_request_info :
     Ocsigen_extensions.request -> Ocsigen_extensions.request
   type eliom_js_page_data = {
-    ejs_global_data : Eliom_lib.global_data option;
-    ejs_request_data : Eliom_lib.request_data;
-    ejs_event_handler_table : Eliom_lib.RawXML.event_handler_table;
-    ejs_client_attrib_table : Eliom_lib.RawXML.client_attrib_table;
+    ejs_global_data :
+      (Eliom_runtime.global_data * Eliom_wrap.unwrapper) option;
+    ejs_request_data : Eliom_runtime.request_data;
+    ejs_event_handler_table : Eliom_runtime.RawXML.event_handler_table;
+    ejs_client_attrib_table : Eliom_runtime.RawXML.client_attrib_table;
     ejs_sess_info : Eliom_common.sess_info;
   }
   val get_site_dir : Eliom_common.sitedata -> Eliom_lib.Url.path
   val get_site_dir_string : Eliom_common.sitedata -> string
   val get_secure : bool option -> Eliom_common.sitedata -> bool
   val is_client_app : bool Pervasives.ref
+  val make_actual_path : string list -> string list
 end >>

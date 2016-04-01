@@ -5,9 +5,7 @@
 
 
 
-|<<a_api subproject="server" | module Eliom_pervasives >>|<<div class="odocwiki_info"|~This module is automatically open by {{{eliomc}}} and {{{js_of_eliom}}}~.
->>
-|
+|Eliom_client_common||
 |<<a_api subproject="server" | module Eliom_lib >>|<<div class="odocwiki_info"|~A few common functions used by ~Eliom~.
 >>
 |

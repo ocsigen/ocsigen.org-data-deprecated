@@ -5,11 +5,6 @@
     chapter="misc" fragment="hier_menu"| hierarchical site>>~.
 
 ----
-
-~Helpers for ~(hierarchical~) menu generation in ~H~T~M~L~5~. ~See
-    the ~Eliom manual for more information about <<a_manual
-    chapter="misc" fragment="basic_menu"| menu>> or <<a_manual
-    chapter="misc" fragment="hier_menu"| hierarchical site>>~.
 <<pre class="ocsforge_color odocwiki_code" id="TYPEone_page"|<<span class="ocsforge_color_keyword"|type>> <<span class="odocwiki_type"|\\  <<span class="ocsforge_color_delimiter"| ( >>[< <<a_api subproject="client" text="Eliom_service.service_method" | type Eliom_service.service_method >> ], [< <<a_api subproject="client" text="Eliom_service.registrable" | type Eliom_service.registrable >> ]\\    , [< <<a_api subproject="client" text="Eliom_registration.non_ocaml_service" | type Eliom_registration.non_ocaml_service >> ]<<span class="ocsforge_color_delimiter"| ) >>>> <<span class="odocwiki_name"|one~_page>> <<span class="ocsforge_color_delimiter"|~=>> <<span class="odocwiki_type"|\\  <<span class="ocsforge_color_delimiter"| ( >>unit, unit, [< <<a_api subproject="client" text="Eliom_service.service_method" | type Eliom_service.service_method >> ] as 'a,\\   <<a_api subproject="client" text="Eliom_service.attached" | type Eliom_service.attached >>, <<a_api subproject="client" text="Eliom_service.service_kind" | type Eliom_service.service_kind >>,\\   [ `WithoutSuffix ], unit, unit, [< <<a_api subproject="client" text="Eliom_service.registrable" | type Eliom_service.registrable >> ] as 'b,\\   [< <<a_api subproject="client" text="Eliom_registration.non_ocaml_service" | type Eliom_registration.non_ocaml_service >> ] as 'c<<span class="ocsforge_color_delimiter"| ) >>\\  <<a_api subproject="client" text="Eliom_service.service" | type Eliom_service.service >>>> >><<div class="odocwiki_info"|~Restriction of <<a_api subproject="client" | type Eliom_service.service >> to services without
     parameters that do not returns a marshalled ~O~Caml value~.
 >>

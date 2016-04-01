@@ -67,6 +67,9 @@
     client side~.
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Eliom_client_value"| module Eliom_client_value >> |<<div class="odocwiki_info"|~Client and shared values
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Eliom_comet"| module Eliom_comet >> |<<div class="odocwiki_info"|~Primitives to push data to the client~, without explicit request~.
 >>
 |
@@ -110,9 +113,6 @@ file~.
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Eliom_parameter"| module Eliom_parameter >> |<<div class="odocwiki_info"|~Ad~-hoc runtime type representation for service parameters~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Eliom_pervasives"| module Eliom_pervasives >> |<<div class="odocwiki_info"|~This module is automatically open by {{{eliomc}}} and {{{js_of_eliom}}}~.
->>
-|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Eliom_react"| module Eliom_react >> |<<div class="odocwiki_info"|~Propagate events
     occurrences from the server to the client and the other way
     around~.
@@ -144,6 +144,10 @@ file~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Eliom_state"| module Eliom_state >> |<<div class="odocwiki_info"|~Storing server~-side values for your applications or sessions~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Eliom_syntax"| module Eliom_syntax >> |<<div class="odocwiki_info"|~Registers a client value datum for the next server section when
+    executed in a global~_data ~(cf~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Eliom_tmpl"| module Eliom_registration.Eliom_tmpl >> ~[<<a_api subproject="server" | module Eliom_registration >>~]||

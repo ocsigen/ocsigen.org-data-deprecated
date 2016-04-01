@@ -12,14 +12,14 @@
 |
 |@@ @style="tet-align: left;"@@\\E|
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Eliom_Internal_Error"| exception Eliom_lib.Eliom_Internal_Error >> ~[<<a_api subproject="client" | module Eliom_lib >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Exception_on_server"| exception Eliom_lib.Exception_on_server >> ~[<<a_api subproject="client" | module Eliom_lib >>~]|<<div class="odocwiki_info"|~This exception is raised ~(in ~Lwt~) on the client if a call to a
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Exception_on_server"| exception Eliom_client_value.Exception_on_server >> ~[<<a_api subproject="client" | module Eliom_client_value >>~]|<<div class="odocwiki_info"|~This exception is raised ~(in ~Lwt~) on the client if a call to a
     server function <<a_api subproject="server"|val
-    Eliom_pervasives.server_function>>  fails ~(in ~Lwt~) on the server
+    Eliom_client.server_function>>  fails ~(in ~Lwt~) on the server
     side~.
 >>
 |
 |@@ @style="tet-align: left;"@@\\F|
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="False"| exception Eliom_lib.False >> ~[<<a_api subproject="client" | module Eliom_lib >>~]|<<div class="odocwiki_info"|~Event handlers like <<a_api | Eliom_content.Html5.F.a_onclick
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="False"| exception Eliom_client_value.False >> ~[<<a_api subproject="client" | module Eliom_client_value >>~]|<<div class="odocwiki_info"|~Event handlers like <<a_api | Eliom_content.Html5.F.a_onclick
     >>  may raise <<span class="odocwiki_inlinecode"|~False>> to cancel the event ~(as if the ~Java~Script
     function returned <<span class="odocwiki_inlinecode"|false>>~)~.
 >>

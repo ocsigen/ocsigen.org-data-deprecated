@@ -1171,8 +1171,7 @@
                  [< Eliom_service.service_kind ], [< Eliom_service.suff ],
                  'e, 'f, [< Eliom_service.registrable ], 'return)
                 Eliom_service.service ->
-        ('a -> 'b -> [ `Html ] Eliom_content.Html5.elt Lwt.t)
-        Eliom_lib.client_value -> unit
+        ('a -> 'b -> unit Lwt.t) Eliom_client_value.t -> unit
       val application_script :
         ?defer:bool ->
         ?async:bool -> unit -> [> `Script ] Eliom_content.Html5.elt
@@ -1575,7 +1574,7 @@
         Eliom_registration.TMPL_PARAMS.t ->
         Html5_types.html Eliom_content.Html5.elt Lwt.t
       val update :
-        Eliom_registration.TMPL_PARAMS.t -> unit Eliom_lib.client_value
+        Eliom_registration.TMPL_PARAMS.t -> unit Eliom_client_value.t
     end
   module Eliom_tmpl :
     functor (Appl : ELIOM_APPL) (Tmpl_param : TMPL_PARAMS) ->

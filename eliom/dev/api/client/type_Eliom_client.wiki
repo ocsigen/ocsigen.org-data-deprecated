@@ -108,28 +108,30 @@
   val onload : (unit -> unit) -> unit
   val onunload : (unit -> string option) -> unit
   val wait_load_end : unit -> unit Lwt.t
-  val in_onload : unit -> bool
-  val getElementById : string -> Dom.node Js.t
-  type content_ns = [ `HTML5 | `SVG ]
-  val rebuild_node' :
-    Eliom_client.content_ns -> Eliom_content_core.Xml.elt -> Dom.node Js.t
-  val rebuild_node : string -> 'a Eliom_content_core.Html5.elt -> < .. > Js.t
-  val rebuild_node_svg :
-    string -> 'a Eliom_content_core.Svg.elt -> < .. > Js.t
+  val get_application_name : unit -> string
+  type ('a, 'b) server_function = 'a -> 'b Lwt.t
+  val server_function :
+    ?scope:[< Eliom_common.scope ] ->
+    ?options:unit ->
+    ?charset:string ->
+    ?code:int ->
+    ?content_type:string ->
+    ?headers:Http_headers.t ->
+    ?secure_session:bool ->
+    name:string ->
+    ?csrf_safe:bool ->
+    ?csrf_scope:[< Eliom_common.user_scope ] ->
+    ?csrf_secure:bool ->
+    ?max_use:int ->
+    ?timeout:float ->
+    ?https:bool ->
+    ?error_handler:((string * exn) list -> 'b Lwt.t) ->
+    'a Deriving_Json.t -> unit -> ('a, 'b) Eliom_client.server_function
   val init : unit -> unit
-  val form_handler :
-    (Dom_html.element Js.t, Dom_html.event Js.t) Dom_html.event_listener
-  module Syntax_helpers :
-    sig
-      val get_injection : ?ident:string -> ?pos:Eliom_lib.pos -> string -> 'a
-      val register_client_closure : string -> ('args -> 'res) -> unit
-      val close_server_section : string -> unit
-      val open_client_section : string -> unit
-      val get_escaped_value : Eliom_lib.escaped_value -> 'a
-    end
+  val reload_function : (unit -> unit -> unit Lwt.t) option Pervasives.ref
   val log_section : Eliom_lib.Lwt_log.section
-  val of_element_ :
-    ([ `Html ] Eliom_content_core.Html5.elt -> Dom_html.element Js.t)
-    Pervasives.ref
   val middleClick : Dom_html.mouseEvent Js.t -> bool
+  val set_content_local :
+    ?offset:Eliommod_dom.position ->
+    ?fragment:string -> Dom_html.element Js.t -> unit Lwt.t
 end >>

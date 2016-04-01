@@ -223,3 +223,5 @@
     those functions for a description of the <<span class="odocwiki_inlinecode"|~~scope>> and <<span class="odocwiki_inlinecode"|~~secure>>
     optional parameters~.
 >>
+<<pre id="VALis_external" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|is~_external>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|\\  <<span class="ocsforge_color_delimiter"| ( >>'a, 'b, [< <<a_api subproject="server" text="service_method" | type Eliom_service.service_method >> ],\\   [< <<a_api subproject="server" text="attached" | type Eliom_service.attached >> ], [< <<a_api subproject="server" text="service_kind" | type Eliom_service.service_kind >> ],\\   [< <<a_api subproject="server" text="suff" | type Eliom_service.suff >> ], 'c, 'd, [< <<a_api subproject="server" text="registrable" | type Eliom_service.registrable >> ], 'e<<span class="ocsforge_color_delimiter"| ) >>\\  <<a_api subproject="server" text="service" | type Eliom_service.service >> <<span class="ocsforge_color_delimiter"| -> >> bool>>>><<div class="odocwiki_info"|~Returns whether it is an external service or not~.
+>>
