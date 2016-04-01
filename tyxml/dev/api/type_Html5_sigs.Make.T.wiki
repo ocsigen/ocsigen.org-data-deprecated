@@ -1,4 +1,7 @@
 <<code language="ocaml" | sig
+  type +'a elt
+  type doc = [ `Html ] elt
+  type +'a attrib
   module Xml :
     sig
       module W :
@@ -48,80 +51,15 @@
       val cdata_script : string -> elt
       val cdata_style : string -> elt
     end
-  module Info : Xml_sigs.Info
   type 'a wrap = 'a Xml.W.t
   type 'a list_wrap = 'a Xml.W.tlist
+  type ('a, 'b) nullary = ?a:'a attrib list -> unit -> 'b elt
+  type ('a, 'b, 'c) unary = ?a:'a attrib list -> 'b elt wrap -> 'c elt
+  type ('a, 'b, 'c) star = ?a:'a attrib list -> 'b elt list_wrap -> 'c elt
+  module Info : Xml_sigs.Info
   type uri = Xml.uri
   val string_of_uri : (uri, string) Xml.W.ft
   val uri_of_string : (string, uri) Xml.W.ft
-  type image_candidate =
-      [ `Url of uri
-      | `Url_pixel of uri * Html5_types.float_number
-      | `Url_width of uri * Html5_types.number ]
-  type +'a attrib
-  val to_xmlattribs : 'a attrib list -> Xml.attrib list
-  val to_attrib : Xml.attrib -> 'a attrib
-  val a_autocomplete : bool wrap -> [> `Autocomplete ] attrib
-  val a_async : [> `Async ] attrib
-  val a_autofocus : [> `Autofocus ] attrib
-  val a_autoplay : [> `Autoplay ] attrib
-  val a_muted : [> `Muted ] attrib
-  val a_crossorigin :
-    [< `Anonymous | `Use_credentials ] wrap -> [> `Crossorigin ] attrib
-  val a_mediagroup : string wrap -> [> `Mediagroup ] attrib
-  val a_challenge : Html5_types.text wrap -> [> `Challenge ] attrib
-  val a_contenteditable : bool wrap -> [> `Contenteditable ] attrib
-  val a_contextmenu : Html5_types.idref wrap -> [> `Contextmenu ] attrib
-  val a_controls : [> `Controls ] attrib
-  val a_dir : [< `Ltr | `Rtl ] wrap -> [> `Dir ] attrib
-  val a_draggable : bool wrap -> [> `Draggable ] attrib
-  val a_form : Html5_types.idref wrap -> [> `Form ] attrib
-  val a_formaction : Xml.uri wrap -> [> `Formaction ] attrib
-  val a_formenctype :
-    Html5_types.contenttype wrap -> [> `Formenctype ] attrib
-  val a_formmethod :
-    [< `Delete | `Get | `Post | `Put ] wrap -> [> `Formmethod ] attrib
-  val a_formnovalidate : [> `Formnovalidate ] attrib
-  val a_formtarget : Html5_types.text wrap -> [> `Formtarget ] attrib
-  val a_hidden : [> `Hidden ] attrib
-  val a_high : Html5_types.float_number wrap -> [> `High ] attrib
-  val a_icon : Xml.uri wrap -> [> `Icon ] attrib
-  val a_ismap : [> `Ismap ] attrib
-  val a_keytype : Html5_types.text wrap -> [> `Keytype ] attrib
-  val a_list : Html5_types.idref wrap -> [> `List ] attrib
-  val a_loop : [> `Loop ] attrib
-  val a_low : Html5_types.float_number wrap -> [> `High ] attrib
-  val a_max : Html5_types.float_number wrap -> [> `Max ] attrib
-  val a_input_max : Html5_types.float_number wrap -> [> `Input_Max ] attrib
-  val a_min : Html5_types.float_number wrap -> [> `Min ] attrib
-  val a_input_min : Html5_types.float_number wrap -> [> `Input_Min ] attrib
-  val a_novalidate : [> `Novalidate ] attrib
-  val a_open : [> `Open ] attrib
-  val a_optimum : Html5_types.float_number wrap -> [> `Optimum ] attrib
-  val a_pattern : Html5_types.text wrap -> [> `Pattern ] attrib
-  val a_placeholder : Html5_types.text wrap -> [> `Placeholder ] attrib
-  val a_poster : Xml.uri wrap -> [> `Poster ] attrib
-  val a_preload :
-    [< `Audio | `Metadata | `None ] wrap -> [> `Preload ] attrib
-  val a_pubdate : [> `Pubdate ] attrib
-  val a_radiogroup : Html5_types.text wrap -> [> `Radiogroup ] attrib
-  val a_required : [> `Required ] attrib
-  val a_reversed : [> `Reversed ] attrib
-  val a_sandbox :
-    [< Html5_types.sandbox_token ] list wrap -> [> `Sandbox ] attrib
-  val a_spellcheck : bool wrap -> [> `Spellcheck ] attrib
-  val a_scoped : [> `Scoped ] attrib
-  val a_seamless : [> `Seamless ] attrib
-  val a_sizes :
-    (Html5_types.number * Html5_types.number) list option wrap ->
-    [> `Sizes ] attrib
-  val a_span : Html5_types.number wrap -> [> `Span ] attrib
-  val a_srclang : Html5_types.nmtoken wrap -> [> `XML_lang ] attrib
-  val a_srcset : image_candidate list wrap -> [> `Srcset ] attrib
-  val a_img_sizes : Html5_types.text list wrap -> [> `Img_sizes ] attrib
-  val a_start : Html5_types.number wrap -> [> `Start ] attrib
-  val a_step : Html5_types.float_number option wrap -> [> `Step ] attrib
-  val a_wrap : [< `Hard | `Soft ] wrap -> [> `Wrap ] attrib
   val a_class : Html5_types.nmtokens wrap -> [> `Class ] attrib
   val a_user_data :
     Html5_types.nmtoken -> Html5_types.text wrap -> [> `User_data ] attrib
@@ -199,6 +137,71 @@
   val a_onkeypress : Xml.keyboard_event_handler -> [> `OnKeyPress ] attrib
   val a_onkeydown : Xml.keyboard_event_handler -> [> `OnKeyDown ] attrib
   val a_onkeyup : Xml.keyboard_event_handler -> [> `OnKeyUp ] attrib
+  val a_autocomplete : bool wrap -> [> `Autocomplete ] attrib
+  val a_async : [> `Async ] attrib
+  val a_autofocus : [> `Autofocus ] attrib
+  val a_autoplay : [> `Autoplay ] attrib
+  val a_muted : [> `Muted ] attrib
+  val a_crossorigin :
+    [< `Anonymous | `Use_credentials ] wrap -> [> `Crossorigin ] attrib
+  val a_mediagroup : string wrap -> [> `Mediagroup ] attrib
+  val a_challenge : Html5_types.text wrap -> [> `Challenge ] attrib
+  val a_contenteditable : bool wrap -> [> `Contenteditable ] attrib
+  val a_contextmenu : Html5_types.idref wrap -> [> `Contextmenu ] attrib
+  val a_controls : [> `Controls ] attrib
+  val a_dir : [< `Ltr | `Rtl ] wrap -> [> `Dir ] attrib
+  val a_draggable : bool wrap -> [> `Draggable ] attrib
+  val a_form : Html5_types.idref wrap -> [> `Form ] attrib
+  val a_formaction : Xml.uri wrap -> [> `Formaction ] attrib
+  val a_formenctype :
+    Html5_types.contenttype wrap -> [> `Formenctype ] attrib
+  val a_formmethod :
+    [< `Delete | `Get | `Post | `Put ] wrap -> [> `Formmethod ] attrib
+  val a_formnovalidate : [> `Formnovalidate ] attrib
+  val a_formtarget : Html5_types.text wrap -> [> `Formtarget ] attrib
+  val a_hidden : [> `Hidden ] attrib
+  val a_high : Html5_types.float_number wrap -> [> `High ] attrib
+  val a_icon : Xml.uri wrap -> [> `Icon ] attrib
+  val a_ismap : [> `Ismap ] attrib
+  val a_keytype : Html5_types.text wrap -> [> `Keytype ] attrib
+  val a_list : Html5_types.idref wrap -> [> `List ] attrib
+  val a_loop : [> `Loop ] attrib
+  val a_low : Html5_types.float_number wrap -> [> `High ] attrib
+  val a_max : Html5_types.float_number wrap -> [> `Max ] attrib
+  val a_input_max : Html5_types.float_number wrap -> [> `Input_Max ] attrib
+  val a_min : Html5_types.float_number wrap -> [> `Min ] attrib
+  val a_input_min : Html5_types.float_number wrap -> [> `Input_Min ] attrib
+  val a_novalidate : [> `Novalidate ] attrib
+  val a_open : [> `Open ] attrib
+  val a_optimum : Html5_types.float_number wrap -> [> `Optimum ] attrib
+  val a_pattern : Html5_types.text wrap -> [> `Pattern ] attrib
+  val a_placeholder : Html5_types.text wrap -> [> `Placeholder ] attrib
+  val a_poster : Xml.uri wrap -> [> `Poster ] attrib
+  val a_preload :
+    [< `Audio | `Metadata | `None ] wrap -> [> `Preload ] attrib
+  val a_pubdate : [> `Pubdate ] attrib
+  val a_radiogroup : Html5_types.text wrap -> [> `Radiogroup ] attrib
+  val a_required : [> `Required ] attrib
+  val a_reversed : [> `Reversed ] attrib
+  val a_sandbox :
+    [< Html5_types.sandbox_token ] list wrap -> [> `Sandbox ] attrib
+  val a_spellcheck : bool wrap -> [> `Spellcheck ] attrib
+  val a_scoped : [> `Scoped ] attrib
+  val a_seamless : [> `Seamless ] attrib
+  val a_sizes :
+    (Html5_types.number * Html5_types.number) list option wrap ->
+    [> `Sizes ] attrib
+  val a_span : Html5_types.number wrap -> [> `Span ] attrib
+  val a_srclang : Html5_types.nmtoken wrap -> [> `XML_lang ] attrib
+  type image_candidate =
+      [ `Url of uri
+      | `Url_pixel of uri * Html5_types.float_number
+      | `Url_width of uri * Html5_types.number ]
+  val a_srcset : image_candidate list wrap -> [> `Srcset ] attrib
+  val a_img_sizes : Html5_types.text list wrap -> [> `Img_sizes ] attrib
+  val a_start : Html5_types.number wrap -> [> `Start ] attrib
+  val a_step : Html5_types.float_number option wrap -> [> `Step ] attrib
+  val a_wrap : [< `Hard | `Soft ] wrap -> [> `Wrap ] attrib
   val a_version : Html5_types.cdata wrap -> [> `Version ] attrib
   val a_xmlns : [< `W3_org_1999_xhtml ] wrap -> [> `XMLns ] attrib
   val a_manifest : Xml.uri wrap -> [> `Manifest ] attrib
@@ -308,11 +311,7 @@
   val a_media : Html5_types.mediadesc wrap -> [> `Media ] attrib
   val a_style : string wrap -> [> `Style_Attr ] attrib
   val a_property : string wrap -> [> `Property ] attrib
-  type +'a elt
-  type ('a, 'b) nullary = ?a:'a attrib list -> unit -> 'b elt
-  type ('a, 'b, 'c) unary = ?a:'a attrib list -> 'b elt wrap -> 'c elt
-  type ('a, 'b, 'c) star = ?a:'a attrib list -> 'b elt list_wrap -> 'c elt
-  type html = [ `Html ] elt
+  val pcdata : string wrap -> [> `PCDATA ] elt
   val html :
     ?a:Html5_types.html_attrib attrib list ->
     [< `Head ] elt wrap -> [< `Body ] elt wrap -> [> `Html ] elt
@@ -444,18 +443,6 @@
      [> Html5_types.figure ])
     star
   val hr : ([< Html5_types.hr_attrib ], [> Html5_types.hr ]) nullary
-  val rt :
-    ([< Html5_types.rt_attrib ], [< Html5_types.rt_content_fun ],
-     [> Html5_types.rt ])
-    star
-  val rp :
-    ([< Html5_types.rp_attrib ], [< Html5_types.rp_content_fun ],
-     [> Html5_types.rp ])
-    star
-  val ruby :
-    ([< Html5_types.ruby_attrib ], [< Html5_types.ruby_content_fun ],
-     [> Html5_types.ruby ])
-    star
   val b :
     ([< Html5_types.b_attrib ], [< Html5_types.b_content_fun ],
      [> Html5_types.b ])
@@ -1126,7 +1113,6 @@
     ([< Html5_types.output_elt_attrib ],
      [< Html5_types.output_elt_content_fun ], [> Html5_types.output_elt ])
     star
-  val pcdata : string wrap -> [> `PCDATA ] elt
   val entity : string -> [> `PCDATA ] elt
   val space : unit -> [> `PCDATA ] elt
   val cdata : string -> [> `PCDATA ] elt
@@ -1461,12 +1447,25 @@
       | `XMLns ],
      [> `Link ])
     nullary
+  val rt :
+    ([< Html5_types.rt_attrib ], [< Html5_types.rt_content_fun ],
+     [> Html5_types.rt ])
+    star
+  val rp :
+    ([< Html5_types.rp_attrib ], [< Html5_types.rp_content_fun ],
+     [> Html5_types.rp ])
+    star
+  val ruby :
+    ([< Html5_types.ruby_attrib ], [< Html5_types.ruby_content_fun ],
+     [> Html5_types.ruby ])
+    star
   val tot : Xml.elt -> 'a elt
-  val totl : Xml.elt list -> 'a elt list
+  val totl : Xml.elt list_wrap -> 'a elt list_wrap
   val toelt : 'a elt -> Xml.elt
-  val toeltl : 'a elt list -> Xml.elt list
-  type doc = [ `Html ] elt
+  val toeltl : 'a elt list_wrap -> Xml.elt list_wrap
   val doc_toelt : doc -> Xml.elt
+  val to_xmlattribs : 'a attrib list -> Xml.attrib list
+  val to_attrib : Xml.attrib -> 'a attrib
   module Unsafe :
     sig
       val data : string wrap -> 'a elt

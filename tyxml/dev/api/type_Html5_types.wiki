@@ -335,25 +335,25 @@
       | `Select
       | `Textarea ]
   type interactive =
-      [ `Audio of interactive
+      [ `Audio of Html5_types.interactive
       | `Button
-      | `Canvas of interactive
-      | `Del of interactive
+      | `Canvas of Html5_types.interactive
+      | `Del of Html5_types.interactive
       | `Details
       | `Embed
       | `Iframe
       | `Img_interactive
       | `Input
-      | `Ins of interactive
+      | `Ins of Html5_types.interactive
       | `Keygen
       | `Label
-      | `Map of interactive
+      | `Map of Html5_types.interactive
       | `Menu
-      | `Noscript of interactive
-      | `Object of interactive
+      | `Noscript of Html5_types.interactive
+      | `Object of Html5_types.interactive
       | `Select
       | `Textarea
-      | `Video of interactive ]
+      | `Video of Html5_types.interactive ]
   type core_phrasing =
       [ `Abbr
       | `B
@@ -513,21 +513,22 @@
       | `Var
       | `Wbr ]
   type phrasing_without_noscript =
-      (phrasing_without_interactive, phrasing, phrasing_without_media)
+      (Html5_types.phrasing_without_interactive, Html5_types.phrasing,
+       Html5_types.phrasing_without_media)
       Html5_types.transparent_without_noscript
   and phrasing_without_media =
-      [ `A of phrasing_without_interactive
+      [ `A of Html5_types.phrasing_without_interactive
       | `Abbr
       | `B
       | `Bdo
       | `Br
       | `Button
-      | `Canvas of phrasing
+      | `Canvas of Html5_types.phrasing
       | `Cite
       | `Code
       | `Command
       | `Datalist
-      | `Del of phrasing
+      | `Del of Html5_types.phrasing
       | `Dfn
       | `Em
       | `Embed
@@ -536,16 +537,16 @@
       | `Img
       | `Img_interactive
       | `Input
-      | `Ins of phrasing
+      | `Ins of Html5_types.phrasing
       | `Kbd
       | `Keygen
       | `Label
-      | `Map of phrasing
+      | `Map of Html5_types.phrasing
       | `Mark
       | `Meter
-      | `Noscript of phrasing_without_noscript
-      | `Object of phrasing
-      | `Object_interactive of phrasing
+      | `Noscript of Html5_types.phrasing_without_noscript
+      | `Object of Html5_types.phrasing
+      | `Object_interactive of Html5_types.phrasing
       | `Output
       | `PCDATA
       | `Progress
@@ -567,27 +568,27 @@
       | `Wbr ]
   and phrasing_without_interactive =
       [ `Abbr
-      | `Audio of phrasing_without_media
+      | `Audio of Html5_types.phrasing_without_media
       | `B
       | `Bdo
       | `Br
-      | `Canvas of phrasing
+      | `Canvas of Html5_types.phrasing
       | `Cite
       | `Code
       | `Command
       | `Datalist
-      | `Del of phrasing
+      | `Del of Html5_types.phrasing
       | `Dfn
       | `Em
       | `I
       | `Img
-      | `Ins of phrasing
+      | `Ins of Html5_types.phrasing
       | `Kbd
-      | `Map of phrasing
+      | `Map of Html5_types.phrasing
       | `Mark
       | `Meter
-      | `Noscript of phrasing_without_noscript
-      | `Object of phrasing
+      | `Noscript of Html5_types.phrasing_without_noscript
+      | `Object of Html5_types.phrasing
       | `PCDATA
       | `Progress
       | `Q
@@ -603,23 +604,23 @@
       | `Time
       | `U
       | `Var
-      | `Video of phrasing_without_media
+      | `Video of Html5_types.phrasing_without_media
       | `Wbr ]
   and phrasing =
-      [ `A of phrasing_without_interactive
+      [ `A of Html5_types.phrasing_without_interactive
       | `Abbr
-      | `Audio of phrasing_without_media
-      | `Audio_interactive of phrasing_without_media
+      | `Audio of Html5_types.phrasing_without_media
+      | `Audio_interactive of Html5_types.phrasing_without_media
       | `B
       | `Bdo
       | `Br
       | `Button
-      | `Canvas of phrasing
+      | `Canvas of Html5_types.phrasing
       | `Cite
       | `Code
       | `Command
       | `Datalist
-      | `Del of phrasing
+      | `Del of Html5_types.phrasing
       | `Dfn
       | `Em
       | `Embed
@@ -628,16 +629,16 @@
       | `Img
       | `Img_interactive
       | `Input
-      | `Ins of phrasing
+      | `Ins of Html5_types.phrasing
       | `Kbd
       | `Keygen
       | `Label
-      | `Map of phrasing
+      | `Map of Html5_types.phrasing
       | `Mark
       | `Meter
-      | `Noscript of phrasing_without_noscript
-      | `Object of phrasing
-      | `Object_interactive of phrasing
+      | `Noscript of Html5_types.phrasing_without_noscript
+      | `Object of Html5_types.phrasing
+      | `Object_interactive of Html5_types.phrasing
       | `Output
       | `PCDATA
       | `Progress
@@ -656,8 +657,8 @@
       | `Time
       | `U
       | `Var
-      | `Video of phrasing_without_media
-      | `Video_interactive of phrasing_without_media
+      | `Video of Html5_types.phrasing_without_media
+      | `Video_interactive of Html5_types.phrasing_without_media
       | `Wbr ]
   type (+'a, +'b) between_phrasing_and_phrasing_without_interactive = 'a
     constraint 'a =
@@ -728,27 +729,27 @@
       | `Bdo
       | `Br
       | `Button
-      | `Canvas of phrasing_without_dfn
+      | `Canvas of Html5_types.phrasing_without_dfn
       | `Cite
       | `Code
       | `Command
       | `Datalist
-      | `Del of phrasing_without_dfn
+      | `Del of Html5_types.phrasing_without_dfn
       | `Em
       | `I
       | `Img
       | `Img_interactive
       | `Input
-      | `Ins of phrasing_without_dfn
+      | `Ins of Html5_types.phrasing_without_dfn
       | `Kbd
       | `Keygen
       | `Label
-      | `Map of phrasing_without_dfn
+      | `Map of Html5_types.phrasing_without_dfn
       | `Mark
       | `Meter
       | `Noscript of Html5_types.phrasing_without_noscript
-      | `Object of phrasing_without_dfn
-      | `Object_interactive of phrasing_without_dfn
+      | `Object of Html5_types.phrasing_without_dfn
+      | `Object_interactive of Html5_types.phrasing_without_dfn
       | `Output
       | `PCDATA
       | `Progress
@@ -778,27 +779,27 @@
       | `Bdo
       | `Br
       | `Button
-      | `Canvas of phrasing_without_label
+      | `Canvas of Html5_types.phrasing_without_label
       | `Cite
       | `Code
       | `Command
       | `Datalist
-      | `Del of phrasing_without_label
+      | `Del of Html5_types.phrasing_without_label
       | `Dfn
       | `Em
       | `I
       | `Img
       | `Img_interactive
       | `Input
-      | `Ins of phrasing_without_label
+      | `Ins of Html5_types.phrasing_without_label
       | `Kbd
       | `Keygen
-      | `Map of phrasing_without_label
+      | `Map of Html5_types.phrasing_without_label
       | `Mark
       | `Meter
       | `Noscript of Html5_types.phrasing_without_noscript
-      | `Object of phrasing_without_label
-      | `Object_interactive of phrasing_without_label
+      | `Object of Html5_types.phrasing_without_label
+      | `Object_interactive of Html5_types.phrasing_without_label
       | `Output
       | `PCDATA
       | `Progress
@@ -828,28 +829,28 @@
       | `Bdo
       | `Br
       | `Button
-      | `Canvas of phrasing_without_progress
+      | `Canvas of Html5_types.phrasing_without_progress
       | `Cite
       | `Code
       | `Command
       | `Datalist
-      | `Del of phrasing_without_progress
+      | `Del of Html5_types.phrasing_without_progress
       | `Dfn
       | `Em
       | `I
       | `Img
       | `Img_interactive
       | `Input
-      | `Ins of phrasing_without_progress
+      | `Ins of Html5_types.phrasing_without_progress
       | `Kbd
       | `Keygen
       | `Label
-      | `Map of phrasing_without_progress
+      | `Map of Html5_types.phrasing_without_progress
       | `Mark
       | `Meter
       | `Noscript of Html5_types.phrasing_without_noscript
-      | `Object of phrasing_without_progress
-      | `Object_interactive of phrasing_without_progress
+      | `Object of Html5_types.phrasing_without_progress
+      | `Object_interactive of Html5_types.phrasing_without_progress
       | `Output
       | `PCDATA
       | `Q
@@ -878,28 +879,28 @@
       | `Bdo
       | `Br
       | `Button
-      | `Canvas of phrasing_without_time
+      | `Canvas of Html5_types.phrasing_without_time
       | `Cite
       | `Code
       | `Command
       | `Datalist
-      | `Del of phrasing_without_time
+      | `Del of Html5_types.phrasing_without_time
       | `Dfn
       | `Em
       | `I
       | `Img
       | `Img_interactive
       | `Input
-      | `Ins of phrasing_without_time
+      | `Ins of Html5_types.phrasing_without_time
       | `Kbd
       | `Keygen
       | `Label
-      | `Map of phrasing_without_time
+      | `Map of Html5_types.phrasing_without_time
       | `Mark
       | `Meter
       | `Noscript of Html5_types.phrasing_without_noscript
-      | `Object of phrasing_without_time
-      | `Object_interactive of phrasing_without_time
+      | `Object of Html5_types.phrasing_without_time
+      | `Object_interactive of Html5_types.phrasing_without_time
       | `Output
       | `PCDATA
       | `Progress
@@ -928,27 +929,27 @@
       | `Bdo
       | `Br
       | `Button
-      | `Canvas of phrasing_without_meter
+      | `Canvas of Html5_types.phrasing_without_meter
       | `Cite
       | `Code
       | `Command
       | `Datalist
-      | `Del of phrasing_without_meter
+      | `Del of Html5_types.phrasing_without_meter
       | `Dfn
       | `Em
       | `I
       | `Img
       | `Img_interactive
       | `Input
-      | `Ins of phrasing_without_meter
+      | `Ins of Html5_types.phrasing_without_meter
       | `Kbd
       | `Keygen
       | `Label
-      | `Map of phrasing_without_meter
+      | `Map of Html5_types.phrasing_without_meter
       | `Mark
       | `Noscript of Html5_types.phrasing_without_noscript
-      | `Object of phrasing_without_meter
-      | `Object_interactive of phrasing_without_meter
+      | `Object of Html5_types.phrasing_without_meter
+      | `Object_interactive of Html5_types.phrasing_without_meter
       | `Output
       | `PCDATA
       | `Progress
@@ -1258,18 +1259,18 @@
       | `Address
       | `Article
       | `Aside
-      | `Audio of flow5_without_media
+      | `Audio of Html5_types.flow5_without_media
       | `B
       | `Bdo
       | `Blockquote
       | `Br
       | `Button
-      | `Canvas of flow5
+      | `Canvas of Html5_types.flow5
       | `Cite
       | `Code
       | `Command
       | `Datalist
-      | `Del of flow5
+      | `Del of Html5_types.flow5
       | `Dfn
       | `Div
       | `Dl
@@ -1290,18 +1291,18 @@
       | `I
       | `Img
       | `Input
-      | `Ins of flow5
+      | `Ins of Html5_types.flow5
       | `Kbd
       | `Keygen
       | `Label
       | `Main
-      | `Map of flow5
+      | `Map of Html5_types.flow5
       | `Mark
       | `Menu
       | `Meter
       | `Nav
-      | `Noscript of flow5_without_noscript
-      | `Object of flow5
+      | `Noscript of Html5_types.flow5_without_noscript
+      | `Object of Html5_types.flow5
       | `Ol
       | `Output
       | `P
@@ -1327,27 +1328,27 @@
       | `U
       | `Ul
       | `Var
-      | `Video of flow5_without_media
+      | `Video of Html5_types.flow5_without_media
       | `Wbr ]
   and flow5_without_noscript =
-      [ `A of flow5_without_interactive
+      [ `A of Html5_types.flow5_without_interactive
       | `Abbr
       | `Address
       | `Article
       | `Aside
-      | `Audio of flow5_without_media
-      | `Audio_interactive of flow5_without_media
+      | `Audio of Html5_types.flow5_without_media
+      | `Audio_interactive of Html5_types.flow5_without_media
       | `B
       | `Bdo
       | `Blockquote
       | `Br
       | `Button
-      | `Canvas of flow5
+      | `Canvas of Html5_types.flow5
       | `Cite
       | `Code
       | `Command
       | `Datalist
-      | `Del of flow5
+      | `Del of Html5_types.flow5
       | `Details
       | `Dfn
       | `Div
@@ -1372,18 +1373,18 @@
       | `Img
       | `Img_interactive
       | `Input
-      | `Ins of flow5
+      | `Ins of Html5_types.flow5
       | `Kbd
       | `Keygen
       | `Label
       | `Main
-      | `Map of flow5
+      | `Map of Html5_types.flow5
       | `Mark
       | `Menu
       | `Meter
       | `Nav
-      | `Object of flow5
-      | `Object_interactive of flow5
+      | `Object of Html5_types.flow5
+      | `Object_interactive of Html5_types.flow5
       | `Ol
       | `Output
       | `P
@@ -1409,11 +1410,11 @@
       | `U
       | `Ul
       | `Var
-      | `Video of flow5_without_media
-      | `Video_interactive of flow5_without_media
+      | `Video of Html5_types.flow5_without_media
+      | `Video_interactive of Html5_types.flow5_without_media
       | `Wbr ]
   and flow5_without_media =
-      [ `A of flow5_without_interactive
+      [ `A of Html5_types.flow5_without_interactive
       | `Abbr
       | `Address
       | `Article
@@ -1423,12 +1424,12 @@
       | `Blockquote
       | `Br
       | `Button
-      | `Canvas of flow5
+      | `Canvas of Html5_types.flow5
       | `Cite
       | `Code
       | `Command
       | `Datalist
-      | `Del of flow5
+      | `Del of Html5_types.flow5
       | `Details
       | `Dfn
       | `Div
@@ -1453,19 +1454,19 @@
       | `Img
       | `Img_interactive
       | `Input
-      | `Ins of flow5
+      | `Ins of Html5_types.flow5
       | `Kbd
       | `Keygen
       | `Label
       | `Main
-      | `Map of flow5
+      | `Map of Html5_types.flow5
       | `Mark
       | `Menu
       | `Meter
       | `Nav
-      | `Noscript of flow5_without_noscript
-      | `Object of flow5
-      | `Object_interactive of flow5
+      | `Noscript of Html5_types.flow5_without_noscript
+      | `Object of Html5_types.flow5
+      | `Object_interactive of Html5_types.flow5
       | `Ol
       | `Output
       | `P
@@ -1493,24 +1494,24 @@
       | `Var
       | `Wbr ]
   and flow5 =
-      [ `A of flow5_without_interactive
+      [ `A of Html5_types.flow5_without_interactive
       | `Abbr
       | `Address
       | `Article
       | `Aside
-      | `Audio of flow5_without_media
-      | `Audio_interactive of flow5_without_media
+      | `Audio of Html5_types.flow5_without_media
+      | `Audio_interactive of Html5_types.flow5_without_media
       | `B
       | `Bdo
       | `Blockquote
       | `Br
       | `Button
-      | `Canvas of flow5
+      | `Canvas of Html5_types.flow5
       | `Cite
       | `Code
       | `Command
       | `Datalist
-      | `Del of flow5
+      | `Del of Html5_types.flow5
       | `Details
       | `Dfn
       | `Div
@@ -1535,19 +1536,19 @@
       | `Img
       | `Img_interactive
       | `Input
-      | `Ins of flow5
+      | `Ins of Html5_types.flow5
       | `Kbd
       | `Keygen
       | `Label
       | `Main
-      | `Map of flow5
+      | `Map of Html5_types.flow5
       | `Mark
       | `Menu
       | `Meter
       | `Nav
-      | `Noscript of flow5_without_noscript
-      | `Object of flow5
-      | `Object_interactive of flow5
+      | `Noscript of Html5_types.flow5_without_noscript
+      | `Object of Html5_types.flow5
+      | `Object_interactive of Html5_types.flow5
       | `Ol
       | `Output
       | `P
@@ -1573,8 +1574,8 @@
       | `U
       | `Ul
       | `Var
-      | `Video of flow5_without_media
-      | `Video_interactive of flow5_without_media
+      | `Video of Html5_types.flow5_without_media
+      | `Video_interactive of Html5_types.flow5_without_media
       | `Wbr ]
   type flow5_without_table =
       [ `A of Html5_types.flow5_without_interactive

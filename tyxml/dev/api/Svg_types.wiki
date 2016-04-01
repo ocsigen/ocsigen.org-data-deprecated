@@ -1,7 +1,44 @@
 =Module <<a_api_type | module Svg_types >> =
-<<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module>> <<span class="ocsforge_color_uid"|<<span class="ocsforge_color_uid"|Svg_types>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="ocsforge_color_keyword"|sig>><<a_api text=".." | module Svg_types >><<span class="ocsforge_color_keyword"|end>>>>~S~V~G types with variants~. ~(~See also <<a_api | module Svg.M >>~)
+<<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module>> <<span class="ocsforge_color_uid"|<<span class="ocsforge_color_uid"|Svg_types>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="ocsforge_color_keyword"|sig>><<a_api text=".." | module Svg_types >><<span class="ocsforge_color_keyword"|end>>>>~S~V~G types with variants~. ~(~See also <<span class="odocwiki_inlinecode"|~Svg~.~M>>~)
 
 ----
+
+~This module defines basic data types for data~, attributes
+    and element occuring in ~S~V~G documents~.
+    ~It is based on the specification available at http~:~/~/www~.w~3~.org~/~T~R~/~S~V~G~/~.
+
+
+    ~This module is experimental~, it may lack of some attributes~,
+    and the interface is very low level and do not take deeply into account
+    the needs of ~S~V~G elements~.
+
+~This module defines basic data types for data~, attributes
+    and element occuring in ~S~V~G documents~.
+    ~It is based on the specification available at http~:~/~/www~.w~3~.org~/~T~R~/~S~V~G~/~.
+
+
+    ~This module is experimental~, it may lack of some attributes~,
+    and the interface is very low level and do not take deeply into account
+    the needs of ~S~V~G elements~.
+
+
+=@@id="1_Categoriesofelementsandattributes"@@~Categories of elements and attributes=
+
+
+~This module defines basic data types for data~, attributes
+    and element occuring in ~S~V~G documents~.
+    ~It is based on the specification available at http~:~/~/www~.w~3~.org~/~T~R~/~S~V~G~/~.
+
+
+    ~This module is experimental~, it may lack of some attributes~,
+    and the interface is very low level and do not take deeply into account
+    the needs of ~S~V~G elements~.
+
+
+=@@id="1_Categoriesofelementsandattributes"@@~Categories of elements and attributes=
+
+
+~This part defines the categories of elements and attributes
 
 ~This module defines basic data types for data~, attributes
     and element occuring in ~S~V~G documents~.

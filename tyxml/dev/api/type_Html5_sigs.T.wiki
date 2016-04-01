@@ -1,23 +1,33 @@
 <<code language="ocaml" | sig
+  type +'a elt
+  type doc = [ `Html ] Html5_sigs.T.elt
+  type +'a attrib
   module Xml : Xml_sigs.T
+  type 'a wrap = 'a Xml.W.t
+  type 'a list_wrap = 'a Xml.W.tlist
+  type ('a, 'b) nullary =
+      ?a:'a Html5_sigs.T.attrib list -> unit -> 'b Html5_sigs.T.elt
+  type ('a, 'b, 'c) unary =
+      ?a:'a Html5_sigs.T.attrib list ->
+      'b Html5_sigs.T.elt Html5_sigs.T.wrap -> 'c Html5_sigs.T.elt
+  type ('a, 'b, 'c) star =
+      ?a:'a Html5_sigs.T.attrib list ->
+      'b Html5_sigs.T.elt Html5_sigs.T.list_wrap -> 'c Html5_sigs.T.elt
   module Svg :
     sig
-      module Info : Xml_sigs.Info
-      type uri = Xml.uri
-      val string_of_uri : (uri, string) Xml.W.ft
-      val uri_of_string : (string, uri) Xml.W.ft
+      type +'a elt
+      type doc = [ `Svg ] elt
       type +'a attrib
       type 'a wrap = 'a Xml.W.t
       type 'a list_wrap = 'a Xml.W.tlist
-      type +'a elt
       type ('a, 'b) nullary = ?a:'a attrib list -> unit -> 'b elt
       type ('a, 'b, 'c) unary = ?a:'a attrib list -> 'b elt wrap -> 'c elt
       type ('a, 'b, 'c) star =
           ?a:'a attrib list -> 'b elt list_wrap -> 'c elt
-      type altglyphdef_content =
-          [ `Item of Svg_types.altglyphitem elt list
-          | `Ref of Svg_types.glyphref elt list ]
-      val pcdata : string wrap -> [> `PCDATA ] elt
+      module Info : Xml_sigs.Info
+      type uri = Xml.uri
+      val string_of_uri : (uri, string) Xml.W.ft
+      val uri_of_string : (string, uri) Xml.W.ft
       val a_version : string wrap -> [> `Version ] attrib
       val a_baseProfile : string wrap -> [> `BaseProfile ] attrib
       val a_x : Svg_types.coord wrap -> [> `X ] attrib
@@ -399,6 +409,7 @@
       val a_stroke_dashoffset :
         Svg_types.Unit.length wrap -> [> `Stroke_Dashoffset ] attrib
       val a_stroke_opacity : float wrap -> [> `Stroke_Opacity ] attrib
+      val pcdata : string wrap -> [> `PCDATA ] elt
       val svg :
         ([< Svg_types.svg_attr ], [< Svg_types.svg_content ],
          [> Svg_types.svg ])
@@ -486,6 +497,9 @@
         ([< Svg_types.altglyph_attr ], [< Svg_types.altglyph_content ],
          [> Svg_types.altglyph ])
         unary
+      type altglyphdef_content =
+          [ `Item of Svg_types.altglyphitem elt list
+          | `Ref of Svg_types.glyphref elt list ]
       val altglyphdef :
         ([< Svg_types.altglyphdef_attr ], [< altglyphdef_content ],
          [> Svg_types.altglyphdef ])
@@ -704,6 +718,7 @@
       val totl : Xml.elt list -> 'a elt list
       val toelt : 'a elt -> Xml.elt
       val toeltl : 'a elt list -> Xml.elt list
+      val doc_toelt : doc -> Xml.elt
       val to_xmlattribs : 'a attrib list -> Xml.attrib list
       val to_attrib : Xml.attrib -> 'a attrib
       module Unsafe :
@@ -720,134 +735,11 @@
           val space_sep_attrib : string -> string list wrap -> 'a attrib
           val comma_sep_attrib : string -> string list wrap -> 'a attrib
         end
-      type doc = [ `Svg ] elt
-      val doc_toelt : doc -> Xml.elt
     end
   module Info : Xml_sigs.Info
-  type 'a wrap = 'a Xml.W.t
-  type 'a list_wrap = 'a Xml.W.tlist
   type uri = Xml.uri
   val string_of_uri : (Html5_sigs.T.uri, string) Xml.W.ft
   val uri_of_string : (string, Html5_sigs.T.uri) Xml.W.ft
-  type image_candidate =
-      [ `Url of Html5_sigs.T.uri
-      | `Url_pixel of Html5_sigs.T.uri * Html5_types.float_number
-      | `Url_width of Html5_sigs.T.uri * Html5_types.number ]
-  type +'a attrib
-  val to_xmlattribs : 'a Html5_sigs.T.attrib list -> Xml.attrib list
-  val to_attrib : Xml.attrib -> 'a Html5_sigs.T.attrib
-  val a_autocomplete :
-    bool Html5_sigs.T.wrap -> [> `Autocomplete ] Html5_sigs.T.attrib
-  val a_async : [> `Async ] Html5_sigs.T.attrib
-  val a_autofocus : [> `Autofocus ] Html5_sigs.T.attrib
-  val a_autoplay : [> `Autoplay ] Html5_sigs.T.attrib
-  val a_muted : [> `Muted ] Html5_sigs.T.attrib
-  val a_crossorigin :
-    [< `Anonymous | `Use_credentials ] Html5_sigs.T.wrap ->
-    [> `Crossorigin ] Html5_sigs.T.attrib
-  val a_mediagroup :
-    string Html5_sigs.T.wrap -> [> `Mediagroup ] Html5_sigs.T.attrib
-  val a_challenge :
-    Html5_types.text Html5_sigs.T.wrap -> [> `Challenge ] Html5_sigs.T.attrib
-  val a_contenteditable :
-    bool Html5_sigs.T.wrap -> [> `Contenteditable ] Html5_sigs.T.attrib
-  val a_contextmenu :
-    Html5_types.idref Html5_sigs.T.wrap ->
-    [> `Contextmenu ] Html5_sigs.T.attrib
-  val a_controls : [> `Controls ] Html5_sigs.T.attrib
-  val a_dir :
-    [< `Ltr | `Rtl ] Html5_sigs.T.wrap -> [> `Dir ] Html5_sigs.T.attrib
-  val a_draggable :
-    bool Html5_sigs.T.wrap -> [> `Draggable ] Html5_sigs.T.attrib
-  val a_form :
-    Html5_types.idref Html5_sigs.T.wrap -> [> `Form ] Html5_sigs.T.attrib
-  val a_formaction :
-    Xml.uri Html5_sigs.T.wrap -> [> `Formaction ] Html5_sigs.T.attrib
-  val a_formenctype :
-    Html5_types.contenttype Html5_sigs.T.wrap ->
-    [> `Formenctype ] Html5_sigs.T.attrib
-  val a_formmethod :
-    [< `Delete | `Get | `Post | `Put ] Html5_sigs.T.wrap ->
-    [> `Formmethod ] Html5_sigs.T.attrib
-  val a_formnovalidate : [> `Formnovalidate ] Html5_sigs.T.attrib
-  val a_formtarget :
-    Html5_types.text Html5_sigs.T.wrap ->
-    [> `Formtarget ] Html5_sigs.T.attrib
-  val a_hidden : [> `Hidden ] Html5_sigs.T.attrib
-  val a_high :
-    Html5_types.float_number Html5_sigs.T.wrap ->
-    [> `High ] Html5_sigs.T.attrib
-  val a_icon : Xml.uri Html5_sigs.T.wrap -> [> `Icon ] Html5_sigs.T.attrib
-  val a_ismap : [> `Ismap ] Html5_sigs.T.attrib
-  val a_keytype :
-    Html5_types.text Html5_sigs.T.wrap -> [> `Keytype ] Html5_sigs.T.attrib
-  val a_list :
-    Html5_types.idref Html5_sigs.T.wrap -> [> `List ] Html5_sigs.T.attrib
-  val a_loop : [> `Loop ] Html5_sigs.T.attrib
-  val a_low :
-    Html5_types.float_number Html5_sigs.T.wrap ->
-    [> `High ] Html5_sigs.T.attrib
-  val a_max :
-    Html5_types.float_number Html5_sigs.T.wrap ->
-    [> `Max ] Html5_sigs.T.attrib
-  val a_input_max :
-    Html5_types.float_number Html5_sigs.T.wrap ->
-    [> `Input_Max ] Html5_sigs.T.attrib
-  val a_min :
-    Html5_types.float_number Html5_sigs.T.wrap ->
-    [> `Min ] Html5_sigs.T.attrib
-  val a_input_min :
-    Html5_types.float_number Html5_sigs.T.wrap ->
-    [> `Input_Min ] Html5_sigs.T.attrib
-  val a_novalidate : [> `Novalidate ] Html5_sigs.T.attrib
-  val a_open : [> `Open ] Html5_sigs.T.attrib
-  val a_optimum :
-    Html5_types.float_number Html5_sigs.T.wrap ->
-    [> `Optimum ] Html5_sigs.T.attrib
-  val a_pattern :
-    Html5_types.text Html5_sigs.T.wrap -> [> `Pattern ] Html5_sigs.T.attrib
-  val a_placeholder :
-    Html5_types.text Html5_sigs.T.wrap ->
-    [> `Placeholder ] Html5_sigs.T.attrib
-  val a_poster :
-    Xml.uri Html5_sigs.T.wrap -> [> `Poster ] Html5_sigs.T.attrib
-  val a_preload :
-    [< `Audio | `Metadata | `None ] Html5_sigs.T.wrap ->
-    [> `Preload ] Html5_sigs.T.attrib
-  val a_pubdate : [> `Pubdate ] Html5_sigs.T.attrib
-  val a_radiogroup :
-    Html5_types.text Html5_sigs.T.wrap ->
-    [> `Radiogroup ] Html5_sigs.T.attrib
-  val a_required : [> `Required ] Html5_sigs.T.attrib
-  val a_reversed : [> `Reversed ] Html5_sigs.T.attrib
-  val a_sandbox :
-    [< Html5_types.sandbox_token ] list Html5_sigs.T.wrap ->
-    [> `Sandbox ] Html5_sigs.T.attrib
-  val a_spellcheck :
-    bool Html5_sigs.T.wrap -> [> `Spellcheck ] Html5_sigs.T.attrib
-  val a_scoped : [> `Scoped ] Html5_sigs.T.attrib
-  val a_seamless : [> `Seamless ] Html5_sigs.T.attrib
-  val a_sizes :
-    (Html5_types.number * Html5_types.number) list option Html5_sigs.T.wrap ->
-    [> `Sizes ] Html5_sigs.T.attrib
-  val a_span :
-    Html5_types.number Html5_sigs.T.wrap -> [> `Span ] Html5_sigs.T.attrib
-  val a_srclang :
-    Html5_types.nmtoken Html5_sigs.T.wrap ->
-    [> `XML_lang ] Html5_sigs.T.attrib
-  val a_srcset :
-    Html5_sigs.T.image_candidate list Html5_sigs.T.wrap ->
-    [> `Srcset ] Html5_sigs.T.attrib
-  val a_img_sizes :
-    Html5_types.text list Html5_sigs.T.wrap ->
-    [> `Img_sizes ] Html5_sigs.T.attrib
-  val a_start :
-    Html5_types.number Html5_sigs.T.wrap -> [> `Start ] Html5_sigs.T.attrib
-  val a_step :
-    Html5_types.float_number option Html5_sigs.T.wrap ->
-    [> `Step ] Html5_sigs.T.attrib
-  val a_wrap :
-    [< `Hard | `Soft ] Html5_sigs.T.wrap -> [> `Wrap ] Html5_sigs.T.attrib
   val a_class :
     Html5_types.nmtokens Html5_sigs.T.wrap -> [> `Class ] Html5_sigs.T.attrib
   val a_user_data :
@@ -968,6 +860,122 @@
     Xml.keyboard_event_handler -> [> `OnKeyDown ] Html5_sigs.T.attrib
   val a_onkeyup :
     Xml.keyboard_event_handler -> [> `OnKeyUp ] Html5_sigs.T.attrib
+  val a_autocomplete :
+    bool Html5_sigs.T.wrap -> [> `Autocomplete ] Html5_sigs.T.attrib
+  val a_async : [> `Async ] Html5_sigs.T.attrib
+  val a_autofocus : [> `Autofocus ] Html5_sigs.T.attrib
+  val a_autoplay : [> `Autoplay ] Html5_sigs.T.attrib
+  val a_muted : [> `Muted ] Html5_sigs.T.attrib
+  val a_crossorigin :
+    [< `Anonymous | `Use_credentials ] Html5_sigs.T.wrap ->
+    [> `Crossorigin ] Html5_sigs.T.attrib
+  val a_mediagroup :
+    string Html5_sigs.T.wrap -> [> `Mediagroup ] Html5_sigs.T.attrib
+  val a_challenge :
+    Html5_types.text Html5_sigs.T.wrap -> [> `Challenge ] Html5_sigs.T.attrib
+  val a_contenteditable :
+    bool Html5_sigs.T.wrap -> [> `Contenteditable ] Html5_sigs.T.attrib
+  val a_contextmenu :
+    Html5_types.idref Html5_sigs.T.wrap ->
+    [> `Contextmenu ] Html5_sigs.T.attrib
+  val a_controls : [> `Controls ] Html5_sigs.T.attrib
+  val a_dir :
+    [< `Ltr | `Rtl ] Html5_sigs.T.wrap -> [> `Dir ] Html5_sigs.T.attrib
+  val a_draggable :
+    bool Html5_sigs.T.wrap -> [> `Draggable ] Html5_sigs.T.attrib
+  val a_form :
+    Html5_types.idref Html5_sigs.T.wrap -> [> `Form ] Html5_sigs.T.attrib
+  val a_formaction :
+    Xml.uri Html5_sigs.T.wrap -> [> `Formaction ] Html5_sigs.T.attrib
+  val a_formenctype :
+    Html5_types.contenttype Html5_sigs.T.wrap ->
+    [> `Formenctype ] Html5_sigs.T.attrib
+  val a_formmethod :
+    [< `Delete | `Get | `Post | `Put ] Html5_sigs.T.wrap ->
+    [> `Formmethod ] Html5_sigs.T.attrib
+  val a_formnovalidate : [> `Formnovalidate ] Html5_sigs.T.attrib
+  val a_formtarget :
+    Html5_types.text Html5_sigs.T.wrap ->
+    [> `Formtarget ] Html5_sigs.T.attrib
+  val a_hidden : [> `Hidden ] Html5_sigs.T.attrib
+  val a_high :
+    Html5_types.float_number Html5_sigs.T.wrap ->
+    [> `High ] Html5_sigs.T.attrib
+  val a_icon : Xml.uri Html5_sigs.T.wrap -> [> `Icon ] Html5_sigs.T.attrib
+  val a_ismap : [> `Ismap ] Html5_sigs.T.attrib
+  val a_keytype :
+    Html5_types.text Html5_sigs.T.wrap -> [> `Keytype ] Html5_sigs.T.attrib
+  val a_list :
+    Html5_types.idref Html5_sigs.T.wrap -> [> `List ] Html5_sigs.T.attrib
+  val a_loop : [> `Loop ] Html5_sigs.T.attrib
+  val a_low :
+    Html5_types.float_number Html5_sigs.T.wrap ->
+    [> `High ] Html5_sigs.T.attrib
+  val a_max :
+    Html5_types.float_number Html5_sigs.T.wrap ->
+    [> `Max ] Html5_sigs.T.attrib
+  val a_input_max :
+    Html5_types.float_number Html5_sigs.T.wrap ->
+    [> `Input_Max ] Html5_sigs.T.attrib
+  val a_min :
+    Html5_types.float_number Html5_sigs.T.wrap ->
+    [> `Min ] Html5_sigs.T.attrib
+  val a_input_min :
+    Html5_types.float_number Html5_sigs.T.wrap ->
+    [> `Input_Min ] Html5_sigs.T.attrib
+  val a_novalidate : [> `Novalidate ] Html5_sigs.T.attrib
+  val a_open : [> `Open ] Html5_sigs.T.attrib
+  val a_optimum :
+    Html5_types.float_number Html5_sigs.T.wrap ->
+    [> `Optimum ] Html5_sigs.T.attrib
+  val a_pattern :
+    Html5_types.text Html5_sigs.T.wrap -> [> `Pattern ] Html5_sigs.T.attrib
+  val a_placeholder :
+    Html5_types.text Html5_sigs.T.wrap ->
+    [> `Placeholder ] Html5_sigs.T.attrib
+  val a_poster :
+    Xml.uri Html5_sigs.T.wrap -> [> `Poster ] Html5_sigs.T.attrib
+  val a_preload :
+    [< `Audio | `Metadata | `None ] Html5_sigs.T.wrap ->
+    [> `Preload ] Html5_sigs.T.attrib
+  val a_pubdate : [> `Pubdate ] Html5_sigs.T.attrib
+  val a_radiogroup :
+    Html5_types.text Html5_sigs.T.wrap ->
+    [> `Radiogroup ] Html5_sigs.T.attrib
+  val a_required : [> `Required ] Html5_sigs.T.attrib
+  val a_reversed : [> `Reversed ] Html5_sigs.T.attrib
+  val a_sandbox :
+    [< Html5_types.sandbox_token ] list Html5_sigs.T.wrap ->
+    [> `Sandbox ] Html5_sigs.T.attrib
+  val a_spellcheck :
+    bool Html5_sigs.T.wrap -> [> `Spellcheck ] Html5_sigs.T.attrib
+  val a_scoped : [> `Scoped ] Html5_sigs.T.attrib
+  val a_seamless : [> `Seamless ] Html5_sigs.T.attrib
+  val a_sizes :
+    (Html5_types.number * Html5_types.number) list option Html5_sigs.T.wrap ->
+    [> `Sizes ] Html5_sigs.T.attrib
+  val a_span :
+    Html5_types.number Html5_sigs.T.wrap -> [> `Span ] Html5_sigs.T.attrib
+  val a_srclang :
+    Html5_types.nmtoken Html5_sigs.T.wrap ->
+    [> `XML_lang ] Html5_sigs.T.attrib
+  type image_candidate =
+      [ `Url of Html5_sigs.T.uri
+      | `Url_pixel of Html5_sigs.T.uri * Html5_types.float_number
+      | `Url_width of Html5_sigs.T.uri * Html5_types.number ]
+  val a_srcset :
+    Html5_sigs.T.image_candidate list Html5_sigs.T.wrap ->
+    [> `Srcset ] Html5_sigs.T.attrib
+  val a_img_sizes :
+    Html5_types.text list Html5_sigs.T.wrap ->
+    [> `Img_sizes ] Html5_sigs.T.attrib
+  val a_start :
+    Html5_types.number Html5_sigs.T.wrap -> [> `Start ] Html5_sigs.T.attrib
+  val a_step :
+    Html5_types.float_number option Html5_sigs.T.wrap ->
+    [> `Step ] Html5_sigs.T.attrib
+  val a_wrap :
+    [< `Hard | `Soft ] Html5_sigs.T.wrap -> [> `Wrap ] Html5_sigs.T.attrib
   val a_version :
     Html5_types.cdata Html5_sigs.T.wrap -> [> `Version ] Html5_sigs.T.attrib
   val a_xmlns :
@@ -1169,16 +1177,7 @@
     string Html5_sigs.T.wrap -> [> `Style_Attr ] Html5_sigs.T.attrib
   val a_property :
     string Html5_sigs.T.wrap -> [> `Property ] Html5_sigs.T.attrib
-  type +'a elt
-  type ('a, 'b) nullary =
-      ?a:'a Html5_sigs.T.attrib list -> unit -> 'b Html5_sigs.T.elt
-  type ('a, 'b, 'c) unary =
-      ?a:'a Html5_sigs.T.attrib list ->
-      'b Html5_sigs.T.elt Html5_sigs.T.wrap -> 'c Html5_sigs.T.elt
-  type ('a, 'b, 'c) star =
-      ?a:'a Html5_sigs.T.attrib list ->
-      'b Html5_sigs.T.elt Html5_sigs.T.list_wrap -> 'c Html5_sigs.T.elt
-  type html = [ `Html ] Html5_sigs.T.elt
+  val pcdata : string Html5_sigs.T.wrap -> [> `PCDATA ] Html5_sigs.T.elt
   val html :
     ?a:Html5_types.html_attrib Html5_sigs.T.attrib list ->
     [< `Head ] Html5_sigs.T.elt Html5_sigs.T.wrap ->
@@ -1317,18 +1316,6 @@
     Html5_sigs.T.star
   val hr :
     ([< Html5_types.hr_attrib ], [> Html5_types.hr ]) Html5_sigs.T.nullary
-  val rt :
-    ([< Html5_types.rt_attrib ], [< Html5_types.rt_content_fun ],
-     [> Html5_types.rt ])
-    Html5_sigs.T.star
-  val rp :
-    ([< Html5_types.rp_attrib ], [< Html5_types.rp_content_fun ],
-     [> Html5_types.rp ])
-    Html5_sigs.T.star
-  val ruby :
-    ([< Html5_types.ruby_attrib ], [< Html5_types.ruby_content_fun ],
-     [> Html5_types.ruby ])
-    Html5_sigs.T.star
   val b :
     ([< Html5_types.b_attrib ], [< Html5_types.b_content_fun ],
      [> Html5_types.b ])
@@ -2020,7 +2007,6 @@
     ([< Html5_types.output_elt_attrib ],
      [< Html5_types.output_elt_content_fun ], [> Html5_types.output_elt ])
     Html5_sigs.T.star
-  val pcdata : string Html5_sigs.T.wrap -> [> `PCDATA ] Html5_sigs.T.elt
   val entity : string -> [> `PCDATA ] Html5_sigs.T.elt
   val space : unit -> [> `PCDATA ] Html5_sigs.T.elt
   val cdata : string -> [> `PCDATA ] Html5_sigs.T.elt
@@ -2361,12 +2347,29 @@
       | `XMLns ],
      [> `Link ])
     Html5_sigs.T.nullary
+  val rt :
+    ([< Html5_types.rt_attrib ], [< Html5_types.rt_content_fun ],
+     [> Html5_types.rt ])
+    Html5_sigs.T.star
+  val rp :
+    ([< Html5_types.rp_attrib ], [< Html5_types.rp_content_fun ],
+     [> Html5_types.rp ])
+    Html5_sigs.T.star
+  val ruby :
+    ([< Html5_types.ruby_attrib ], [< Html5_types.ruby_content_fun ],
+     [> Html5_types.ruby ])
+    Html5_sigs.T.star
   val tot : Xml.elt -> 'a Html5_sigs.T.elt
-  val totl : Xml.elt list -> 'a Html5_sigs.T.elt list
+  val totl :
+    Xml.elt Html5_sigs.T.list_wrap ->
+    'a Html5_sigs.T.elt Html5_sigs.T.list_wrap
   val toelt : 'a Html5_sigs.T.elt -> Xml.elt
-  val toeltl : 'a Html5_sigs.T.elt list -> Xml.elt list
-  type doc = [ `Html ] Html5_sigs.T.elt
+  val toeltl :
+    'a Html5_sigs.T.elt Html5_sigs.T.list_wrap ->
+    Xml.elt Html5_sigs.T.list_wrap
   val doc_toelt : Html5_sigs.T.doc -> Xml.elt
+  val to_xmlattribs : 'a Html5_sigs.T.attrib list -> Xml.attrib list
+  val to_attrib : Xml.attrib -> 'a Html5_sigs.T.attrib
   module Unsafe :
     sig
       val data : string Html5_sigs.T.wrap -> 'a Html5_sigs.T.elt

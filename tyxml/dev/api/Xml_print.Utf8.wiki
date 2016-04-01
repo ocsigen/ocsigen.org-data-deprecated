@@ -5,7 +5,7 @@
 ~Given a module <<span class="odocwiki_inlinecode"|~Htmlprinter>> produced by one of the functors in <<a_api | module Xml_print >>~, this modules is used as following~:
   
 <<code language='ocaml'|    let encode x = fst (Utf8.normalize_html x) in
-    Htmlprinter.print ~encode document
+    Printf.printf "%a" (Html5.pp ~encode ()) document
   >>
 
 

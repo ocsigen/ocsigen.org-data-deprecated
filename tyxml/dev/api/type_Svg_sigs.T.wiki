@@ -1,13 +1,10 @@
 <<code language="ocaml" | sig
-  module Xml : Xml_sigs.T
-  module Info : Xml_sigs.Info
-  type uri = Xml.uri
-  val string_of_uri : (Svg_sigs.T.uri, string) Xml.W.ft
-  val uri_of_string : (string, Svg_sigs.T.uri) Xml.W.ft
+  type +'a elt
+  type doc = [ `Svg ] Svg_sigs.T.elt
   type +'a attrib
+  module Xml : Xml_sigs.T
   type 'a wrap = 'a Xml.W.t
   type 'a list_wrap = 'a Xml.W.tlist
-  type +'a elt
   type ('a, 'b) nullary =
       ?a:'a Svg_sigs.T.attrib list -> unit -> 'b Svg_sigs.T.elt
   type ('a, 'b, 'c) unary =
@@ -16,10 +13,10 @@
   type ('a, 'b, 'c) star =
       ?a:'a Svg_sigs.T.attrib list ->
       'b Svg_sigs.T.elt Svg_sigs.T.list_wrap -> 'c Svg_sigs.T.elt
-  type altglyphdef_content =
-      [ `Item of Svg_types.altglyphitem Svg_sigs.T.elt list
-      | `Ref of Svg_types.glyphref Svg_sigs.T.elt list ]
-  val pcdata : string Svg_sigs.T.wrap -> [> `PCDATA ] Svg_sigs.T.elt
+  module Info : Xml_sigs.Info
+  type uri = Xml.uri
+  val string_of_uri : (Svg_sigs.T.uri, string) Xml.W.ft
+  val uri_of_string : (string, Svg_sigs.T.uri) Xml.W.ft
   val a_version : string Svg_sigs.T.wrap -> [> `Version ] Svg_sigs.T.attrib
   val a_baseProfile :
     string Svg_sigs.T.wrap -> [> `BaseProfile ] Svg_sigs.T.attrib
@@ -543,6 +540,7 @@
     [> `Stroke_Dashoffset ] Svg_sigs.T.attrib
   val a_stroke_opacity :
     float Svg_sigs.T.wrap -> [> `Stroke_Opacity ] Svg_sigs.T.attrib
+  val pcdata : string Svg_sigs.T.wrap -> [> `PCDATA ] Svg_sigs.T.elt
   val svg :
     ([< Svg_types.svg_attr ], [< Svg_types.svg_content ], [> Svg_types.svg ])
     Svg_sigs.T.star
@@ -628,6 +626,9 @@
     ([< Svg_types.altglyph_attr ], [< Svg_types.altglyph_content ],
      [> Svg_types.altglyph ])
     Svg_sigs.T.unary
+  type altglyphdef_content =
+      [ `Item of Svg_types.altglyphitem Svg_sigs.T.elt list
+      | `Ref of Svg_types.glyphref Svg_sigs.T.elt list ]
   val altglyphdef :
     ([< Svg_types.altglyphdef_attr ], [< Svg_sigs.T.altglyphdef_content ],
      [> Svg_types.altglyphdef ])
@@ -844,6 +845,7 @@
   val totl : Xml.elt list -> 'a Svg_sigs.T.elt list
   val toelt : 'a Svg_sigs.T.elt -> Xml.elt
   val toeltl : 'a Svg_sigs.T.elt list -> Xml.elt list
+  val doc_toelt : Svg_sigs.T.doc -> Xml.elt
   val to_xmlattribs : 'a Svg_sigs.T.attrib list -> Xml.attrib list
   val to_attrib : Xml.attrib -> 'a Svg_sigs.T.attrib
   module Unsafe :
@@ -868,6 +870,4 @@
       val comma_sep_attrib :
         string -> string list Svg_sigs.T.wrap -> 'a Svg_sigs.T.attrib
     end
-  type doc = [ `Svg ] Svg_sigs.T.elt
-  val doc_toelt : Svg_sigs.T.doc -> Xml.elt
 end >>

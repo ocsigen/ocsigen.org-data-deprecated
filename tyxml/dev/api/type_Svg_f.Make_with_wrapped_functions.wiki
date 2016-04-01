@@ -39,6 +39,9 @@
                               (Svg_types.transforms, string) ft
                           end) ->
   sig
+    type 'a elt = Xml.elt
+    type doc = [ `Svg ] elt
+    type 'a attrib = Xml.attrib
     module Xml :
       sig
         module W :
@@ -89,21 +92,15 @@
         val cdata_script : string -> elt
         val cdata_style : string -> elt
       end
+    type 'a wrap = 'a Xml.W.t
+    type 'a list_wrap = 'a Xml.W.tlist
+    type ('a, 'b) nullary = ?a:'a attrib list -> unit -> 'b elt
+    type ('a, 'b, 'c) unary = ?a:'a attrib list -> 'b elt wrap -> 'c elt
+    type ('a, 'b, 'c) star = ?a:'a attrib list -> 'b elt list_wrap -> 'c elt
     module Info : Xml_sigs.Info
     type uri = Xml.uri
     val string_of_uri : (uri, string) Xml.W.ft
     val uri_of_string : (string, uri) Xml.W.ft
-    type 'a attrib = Xml.attrib
-    type 'a wrap = 'a Xml.W.t
-    type 'a list_wrap = 'a Xml.W.tlist
-    type 'a elt = Xml.elt
-    type ('a, 'b) nullary = ?a:'a attrib list -> unit -> 'b elt
-    type ('a, 'b, 'c) unary = ?a:'a attrib list -> 'b elt wrap -> 'c elt
-    type ('a, 'b, 'c) star = ?a:'a attrib list -> 'b elt list_wrap -> 'c elt
-    type altglyphdef_content =
-        [ `Item of Svg_types.altglyphitem elt list
-        | `Ref of Svg_types.glyphref elt list ]
-    val pcdata : string wrap -> [> `PCDATA ] elt
     val a_version : string wrap -> [> `Version ] attrib
     val a_baseProfile : string wrap -> [> `BaseProfile ] attrib
     val a_x : Svg_types.coord wrap -> [> `X ] attrib
@@ -478,6 +475,7 @@
     val a_stroke_dashoffset :
       Svg_types.Unit.length wrap -> [> `Stroke_Dashoffset ] attrib
     val a_stroke_opacity : float wrap -> [> `Stroke_Opacity ] attrib
+    val pcdata : string wrap -> [> `PCDATA ] elt
     val svg :
       ([< Svg_types.svg_attr ], [< Svg_types.svg_content ],
        [> Svg_types.svg ])
@@ -565,6 +563,9 @@
       ([< Svg_types.altglyph_attr ], [< Svg_types.altglyph_content ],
        [> Svg_types.altglyph ])
       unary
+    type altglyphdef_content =
+        [ `Item of Svg_types.altglyphitem elt list
+        | `Ref of Svg_types.glyphref elt list ]
     val altglyphdef :
       ([< Svg_types.altglyphdef_attr ], [< altglyphdef_content ],
        [> Svg_types.altglyphdef ])
@@ -778,6 +779,7 @@
     val totl : Xml.elt list -> 'a elt list
     val toelt : 'a elt -> Xml.elt
     val toeltl : 'a elt list -> Xml.elt list
+    val doc_toelt : doc -> Xml.elt
     val to_xmlattribs : 'a attrib list -> Xml.attrib list
     val to_attrib : Xml.attrib -> 'a attrib
     module Unsafe :
@@ -793,6 +795,4 @@
         val space_sep_attrib : string -> string list wrap -> 'a attrib
         val comma_sep_attrib : string -> string list wrap -> 'a attrib
       end
-    type doc = [ `Svg ] elt
-    val doc_toelt : doc -> Xml.elt
   end >>

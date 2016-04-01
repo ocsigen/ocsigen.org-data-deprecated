@@ -1,15 +1,12 @@
 <<code language="ocaml" | sig
   module type T =
     sig
-      module Xml : Xml_sigs.T
-      module Info : Xml_sigs.Info
-      type uri = Xml.uri
-      val string_of_uri : (Svg_sigs.T.uri, string) Xml.W.ft
-      val uri_of_string : (string, Svg_sigs.T.uri) Xml.W.ft
+      type +'a elt
+      type doc = [ `Svg ] Svg_sigs.T.elt
       type +'a attrib
+      module Xml : Xml_sigs.T
       type 'a wrap = 'a Xml.W.t
       type 'a list_wrap = 'a Xml.W.tlist
-      type +'a elt
       type ('a, 'b) nullary =
           ?a:'a Svg_sigs.T.attrib list -> unit -> 'b Svg_sigs.T.elt
       type ('a, 'b, 'c) unary =
@@ -18,10 +15,10 @@
       type ('a, 'b, 'c) star =
           ?a:'a Svg_sigs.T.attrib list ->
           'b Svg_sigs.T.elt Svg_sigs.T.list_wrap -> 'c Svg_sigs.T.elt
-      type altglyphdef_content =
-          [ `Item of Svg_types.altglyphitem Svg_sigs.T.elt list
-          | `Ref of Svg_types.glyphref Svg_sigs.T.elt list ]
-      val pcdata : string Svg_sigs.T.wrap -> [> `PCDATA ] Svg_sigs.T.elt
+      module Info : Xml_sigs.Info
+      type uri = Xml.uri
+      val string_of_uri : (Svg_sigs.T.uri, string) Xml.W.ft
+      val uri_of_string : (string, Svg_sigs.T.uri) Xml.W.ft
       val a_version :
         string Svg_sigs.T.wrap -> [> `Version ] Svg_sigs.T.attrib
       val a_baseProfile :
@@ -593,6 +590,7 @@
         [> `Stroke_Dashoffset ] Svg_sigs.T.attrib
       val a_stroke_opacity :
         float Svg_sigs.T.wrap -> [> `Stroke_Opacity ] Svg_sigs.T.attrib
+      val pcdata : string Svg_sigs.T.wrap -> [> `PCDATA ] Svg_sigs.T.elt
       val svg :
         ([< Svg_types.svg_attr ], [< Svg_types.svg_content ],
          [> Svg_types.svg ])
@@ -680,6 +678,9 @@
         ([< Svg_types.altglyph_attr ], [< Svg_types.altglyph_content ],
          [> Svg_types.altglyph ])
         Svg_sigs.T.unary
+      type altglyphdef_content =
+          [ `Item of Svg_types.altglyphitem Svg_sigs.T.elt list
+          | `Ref of Svg_types.glyphref Svg_sigs.T.elt list ]
       val altglyphdef :
         ([< Svg_types.altglyphdef_attr ],
          [< Svg_sigs.T.altglyphdef_content ], [> Svg_types.altglyphdef ])
@@ -902,6 +903,7 @@
       val totl : Xml.elt list -> 'a Svg_sigs.T.elt list
       val toelt : 'a Svg_sigs.T.elt -> Xml.elt
       val toeltl : 'a Svg_sigs.T.elt list -> Xml.elt list
+      val doc_toelt : Svg_sigs.T.doc -> Xml.elt
       val to_xmlattribs : 'a Svg_sigs.T.attrib list -> Xml.attrib list
       val to_attrib : Xml.attrib -> 'a Svg_sigs.T.attrib
       module Unsafe :
@@ -928,11 +930,12 @@
           val comma_sep_attrib :
             string -> string list Svg_sigs.T.wrap -> 'a Svg_sigs.T.attrib
         end
-      type doc = [ `Svg ] Svg_sigs.T.elt
-      val doc_toelt : Svg_sigs.T.doc -> Xml.elt
     end
   module type NoWrap =
     sig
+      type +'a elt
+      type doc = [ `Svg ] elt
+      type +'a attrib
       module Xml :
         sig
           module W :
@@ -983,22 +986,16 @@
           val cdata_script : string -> elt
           val cdata_style : string -> elt
         end
-      module Info : Xml_sigs.Info
-      type uri = Xml.uri
-      val string_of_uri : (uri, string) Xml.W.ft
-      val uri_of_string : (string, uri) Xml.W.ft
-      type +'a attrib
       type 'a wrap = 'a Xml.W.t
       type 'a list_wrap = 'a Xml.W.tlist
-      type +'a elt
       type ('a, 'b) nullary = ?a:'a attrib list -> unit -> 'b elt
       type ('a, 'b, 'c) unary = ?a:'a attrib list -> 'b elt wrap -> 'c elt
       type ('a, 'b, 'c) star =
           ?a:'a attrib list -> 'b elt list_wrap -> 'c elt
-      type altglyphdef_content =
-          [ `Item of Svg_types.altglyphitem elt list
-          | `Ref of Svg_types.glyphref elt list ]
-      val pcdata : string wrap -> [> `PCDATA ] elt
+      module Info : Xml_sigs.Info
+      type uri = Xml.uri
+      val string_of_uri : (uri, string) Xml.W.ft
+      val uri_of_string : (string, uri) Xml.W.ft
       val a_version : string wrap -> [> `Version ] attrib
       val a_baseProfile : string wrap -> [> `BaseProfile ] attrib
       val a_x : Svg_types.coord wrap -> [> `X ] attrib
@@ -1380,6 +1377,7 @@
       val a_stroke_dashoffset :
         Svg_types.Unit.length wrap -> [> `Stroke_Dashoffset ] attrib
       val a_stroke_opacity : float wrap -> [> `Stroke_Opacity ] attrib
+      val pcdata : string wrap -> [> `PCDATA ] elt
       val svg :
         ([< Svg_types.svg_attr ], [< Svg_types.svg_content ],
          [> Svg_types.svg ])
@@ -1467,6 +1465,9 @@
         ([< Svg_types.altglyph_attr ], [< Svg_types.altglyph_content ],
          [> Svg_types.altglyph ])
         unary
+      type altglyphdef_content =
+          [ `Item of Svg_types.altglyphitem elt list
+          | `Ref of Svg_types.glyphref elt list ]
       val altglyphdef :
         ([< Svg_types.altglyphdef_attr ], [< altglyphdef_content ],
          [> Svg_types.altglyphdef ])
@@ -1685,6 +1686,7 @@
       val totl : Xml.elt list -> 'a elt list
       val toelt : 'a elt -> Xml.elt
       val toeltl : 'a elt list -> Xml.elt list
+      val doc_toelt : doc -> Xml.elt
       val to_xmlattribs : 'a attrib list -> Xml.attrib list
       val to_attrib : Xml.attrib -> 'a attrib
       module Unsafe :
@@ -1701,57 +1703,15 @@
           val space_sep_attrib : string -> string list wrap -> 'a attrib
           val comma_sep_attrib : string -> string list wrap -> 'a attrib
         end
-      type doc = [ `Svg ] elt
-      val doc_toelt : doc -> Xml.elt
-    end
-  module type Wrapped_functions =
-    sig
-      type (-'a, 'b) ft
-      val string_of_alignment_baseline :
-        ([< Svg_types.alignment_baseline ], string)
-        Svg_sigs.Wrapped_functions.ft
-      val string_of_bool : (bool, string) Svg_sigs.Wrapped_functions.ft
-      val string_of_big_variant :
-        ([< Svg_types.big_variant ], string) Svg_sigs.Wrapped_functions.ft
-      val string_of_coords :
-        (Svg_types.coords, string) Svg_sigs.Wrapped_functions.ft
-      val string_of_dominant_baseline :
-        ([< Svg_types.dominant_baseline ], string)
-        Svg_sigs.Wrapped_functions.ft
-      val string_of_fourfloats :
-        (float * float * float * float, string) Svg_sigs.Wrapped_functions.ft
-      val string_of_in_value :
-        ([< Svg_types.in_value ], string) Svg_sigs.Wrapped_functions.ft
-      val string_of_int : (int, string) Svg_sigs.Wrapped_functions.ft
-      val string_of_length :
-        (Svg_types.Unit.length, string) Svg_sigs.Wrapped_functions.ft
-      val string_of_lengths :
-        (Svg_types.lengths, string) Svg_sigs.Wrapped_functions.ft
-      val string_of_number : (float, string) Svg_sigs.Wrapped_functions.ft
-      val string_of_number_optional_number :
-        (float * float option, string) Svg_sigs.Wrapped_functions.ft
-      val string_of_numbers :
-        (float list, string) Svg_sigs.Wrapped_functions.ft
-      val string_of_numbers_semicolon :
-        (float list, string) Svg_sigs.Wrapped_functions.ft
-      val string_of_offset :
-        ([< Svg_types.offset ], string) Svg_sigs.Wrapped_functions.ft
-      val string_of_orient :
-        (Svg_types.Unit.angle option, string) Svg_sigs.Wrapped_functions.ft
-      val string_of_paint :
-        ([< Svg_types.paint ], string) Svg_sigs.Wrapped_functions.ft
-      val string_of_strokedasharray :
-        (Svg_types.lengths, string) Svg_sigs.Wrapped_functions.ft
-      val string_of_transform :
-        (Svg_types.transform, string) Svg_sigs.Wrapped_functions.ft
-      val string_of_transforms :
-        (Svg_types.transforms, string) Svg_sigs.Wrapped_functions.ft
     end
   module Make :
     functor (Xml : Xml_sigs.T) ->
       sig
         module type T =
           sig
+            type +'a elt
+            type doc = [ `Svg ] elt
+            type +'a attrib
             module Xml :
               sig
                 module W :
@@ -1802,23 +1762,17 @@
                 val cdata_script : string -> elt
                 val cdata_style : string -> elt
               end
-            module Info : Xml_sigs.Info
-            type uri = Xml.uri
-            val string_of_uri : (uri, string) Xml.W.ft
-            val uri_of_string : (string, uri) Xml.W.ft
-            type +'a attrib
             type 'a wrap = 'a Xml.W.t
             type 'a list_wrap = 'a Xml.W.tlist
-            type +'a elt
             type ('a, 'b) nullary = ?a:'a attrib list -> unit -> 'b elt
             type ('a, 'b, 'c) unary =
                 ?a:'a attrib list -> 'b elt wrap -> 'c elt
             type ('a, 'b, 'c) star =
                 ?a:'a attrib list -> 'b elt list_wrap -> 'c elt
-            type altglyphdef_content =
-                [ `Item of Svg_types.altglyphitem elt list
-                | `Ref of Svg_types.glyphref elt list ]
-            val pcdata : string wrap -> [> `PCDATA ] elt
+            module Info : Xml_sigs.Info
+            type uri = Xml.uri
+            val string_of_uri : (uri, string) Xml.W.ft
+            val uri_of_string : (string, uri) Xml.W.ft
             val a_version : string wrap -> [> `Version ] attrib
             val a_baseProfile : string wrap -> [> `BaseProfile ] attrib
             val a_x : Svg_types.coord wrap -> [> `X ] attrib
@@ -2247,6 +2201,7 @@
             val a_stroke_dashoffset :
               Svg_types.Unit.length wrap -> [> `Stroke_Dashoffset ] attrib
             val a_stroke_opacity : float wrap -> [> `Stroke_Opacity ] attrib
+            val pcdata : string wrap -> [> `PCDATA ] elt
             val svg :
               ([< Svg_types.svg_attr ], [< Svg_types.svg_content ],
                [> Svg_types.svg ])
@@ -2335,6 +2290,9 @@
               ([< Svg_types.altglyph_attr ], [< Svg_types.altglyph_content ],
                [> Svg_types.altglyph ])
               unary
+            type altglyphdef_content =
+                [ `Item of Svg_types.altglyphitem elt list
+                | `Ref of Svg_types.glyphref elt list ]
             val altglyphdef :
               ([< Svg_types.altglyphdef_attr ], [< altglyphdef_content ],
                [> Svg_types.altglyphdef ])
@@ -2571,6 +2529,7 @@
             val totl : Xml.elt list -> 'a elt list
             val toelt : 'a elt -> Xml.elt
             val toeltl : 'a elt list -> Xml.elt list
+            val doc_toelt : doc -> Xml.elt
             val to_xmlattribs : 'a attrib list -> Xml.attrib list
             val to_attrib : Xml.attrib -> 'a attrib
             module Unsafe :
@@ -2589,8 +2548,49 @@
                 val comma_sep_attrib :
                   string -> string list wrap -> 'a attrib
               end
-            type doc = [ `Svg ] elt
-            val doc_toelt : doc -> Xml.elt
           end
       end
+  module type Wrapped_functions =
+    sig
+      type (-'a, 'b) ft
+      val string_of_alignment_baseline :
+        ([< Svg_types.alignment_baseline ], string)
+        Svg_sigs.Wrapped_functions.ft
+      val string_of_bool : (bool, string) Svg_sigs.Wrapped_functions.ft
+      val string_of_big_variant :
+        ([< Svg_types.big_variant ], string) Svg_sigs.Wrapped_functions.ft
+      val string_of_coords :
+        (Svg_types.coords, string) Svg_sigs.Wrapped_functions.ft
+      val string_of_dominant_baseline :
+        ([< Svg_types.dominant_baseline ], string)
+        Svg_sigs.Wrapped_functions.ft
+      val string_of_fourfloats :
+        (float * float * float * float, string) Svg_sigs.Wrapped_functions.ft
+      val string_of_in_value :
+        ([< Svg_types.in_value ], string) Svg_sigs.Wrapped_functions.ft
+      val string_of_int : (int, string) Svg_sigs.Wrapped_functions.ft
+      val string_of_length :
+        (Svg_types.Unit.length, string) Svg_sigs.Wrapped_functions.ft
+      val string_of_lengths :
+        (Svg_types.lengths, string) Svg_sigs.Wrapped_functions.ft
+      val string_of_number : (float, string) Svg_sigs.Wrapped_functions.ft
+      val string_of_number_optional_number :
+        (float * float option, string) Svg_sigs.Wrapped_functions.ft
+      val string_of_numbers :
+        (float list, string) Svg_sigs.Wrapped_functions.ft
+      val string_of_numbers_semicolon :
+        (float list, string) Svg_sigs.Wrapped_functions.ft
+      val string_of_offset :
+        ([< Svg_types.offset ], string) Svg_sigs.Wrapped_functions.ft
+      val string_of_orient :
+        (Svg_types.Unit.angle option, string) Svg_sigs.Wrapped_functions.ft
+      val string_of_paint :
+        ([< Svg_types.paint ], string) Svg_sigs.Wrapped_functions.ft
+      val string_of_strokedasharray :
+        (Svg_types.lengths, string) Svg_sigs.Wrapped_functions.ft
+      val string_of_transform :
+        (Svg_types.transform, string) Svg_sigs.Wrapped_functions.ft
+      val string_of_transforms :
+        (Svg_types.transforms, string) Svg_sigs.Wrapped_functions.ft
+    end
 end >>

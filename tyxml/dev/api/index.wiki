@@ -1,35 +1,32 @@
 ==
 
-=@@id="1_TyXMLAPIreference"@@~Ty~X~M~L – ~A~P~I reference =
+=@@id="1_TyXML"@@~Ty~X~M~L =
 
 
 
 
-==@@id="2_BuildingvalidXMLtree"@@~Building valid ~X~M~L tree ==
-
-
-
-
-|<<a_api | module Svg >>|<<div class="odocwiki_info"|~Typesafe constructors and printers for ~S~V~G documents~.
->>
-|
 |<<a_api | module Html5 >>|<<div class="odocwiki_info"|~Typesafe constructors and printers for ~H~T~M~L~5 documents~.
 >>
 |
-
-
-
-
-
-==@@id="2_CommonDTDstranscriptions"@@~Common ~D~T~D~'s transcriptions==
-
-
-
-
-|<<a_api | module Svg_types >>|<<div class="odocwiki_info"|~S~V~G types with variants~.
+|<<a_api | module Svg >>|<<div class="odocwiki_info"|~Typesafe constructors and printers for ~S~V~G documents~.
 >>
 |
-|<<a_api | module Html5_types >>|<<div class="odocwiki_info"|~H~T~M~L~5 types with variants~.
+
+
+
+
+
+==@@id="2_Typesandsignatures"@@~Types and signatures==
+
+
+
+
+|Html5_sig||
+|<<a_api | module Html5_types >>|<<div class="odocwiki_info"|~H~T~M~L~5 types with variants~, goes with <<a_api | module type Html5_sigs.T >>~.
+>>
+|
+|Svg_sig||
+|<<a_api | module Svg_types >>|<<div class="odocwiki_info"|~S~V~G types with variants~.
 >>
 |
 
@@ -50,21 +47,21 @@
 
 
 
-==@@id="2_Functorialinterface"@@~Functorial interface ==
+=@@id="1_TyXMLFunctors"@@~Ty~X~M~L ~Functors =
 
 
 
 
-|<<a_api | module Svg_f >>|<<div class="odocwiki_info"|~Typesafe constructors for ~S~V~G documents ~(~Functorial interface~)
+|<<a_api | module Html5_f >>|<<div class="odocwiki_info"|~Typesafe constructors for ~H~T~M~L~5 documents ~(~Functorial interface~)
 >>
 |
-|<<a_api | module Html5_f >>|<<div class="odocwiki_info"|~Typesafe constructors for ~H~T~M~L~5 documents ~(~Functorial interface~)
+|<<a_api | module Svg_f >>|<<div class="odocwiki_info"|~Typesafe constructors for ~S~V~G documents ~(~Functorial interface~)
 >>
 |
 |<<a_api | module Xml_iter >>|<<div class="odocwiki_info"|~Basic iterators over ~X~M~L tree ~(functorial interface~)~.
 >>
 |
-|<<a_api | module Xml_print >>|<<div class="odocwiki_info"|~Printer for ~X~M~L~.
+|<<a_api | module Xml_print >>|<<div class="odocwiki_info"|~Printing utilities~.
 >>
 |
 
@@ -72,7 +69,7 @@
 
 
 
-==@@id="2_Syntaxextensionandsimpleparser"@@~Syntax extension and simple parser==
+=@@id="1_Camlp4Syntaxextensionandparser"@@~Camlp~4 ~Syntax extension and parser=
 
 
 
@@ -88,7 +85,7 @@
 
 
 
-==@@id="2_Indexes"@@~Indexes==
+=@@id="1_Indexes"@@~Indexes=
 
 
 
