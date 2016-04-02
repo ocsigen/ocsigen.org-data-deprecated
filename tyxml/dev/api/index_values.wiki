@@ -735,8 +735,14 @@
 |@@class="odocwiki_index"@ @@<<a_api text="map_string_attrib"| value Xml.map_string_attrib >> ~[<<a_api | module Xml >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="map_string_attrib_in_list"| value Xml_iter.Make.map_string_attrib_in_list >> ~[<<a_api | module Xml_iter.Make >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="map_string_attrib_in_list"| value Xml.map_string_attrib_in_list >> ~[<<a_api | module Xml >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="mapper"| value Ppx_tyxml.mapper >> ~[<<a_api | module Ppx_tyxml >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="mark"| value Html5_sigs.T.mark >> ~[<<a_api | module Html5_sigs.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="marker"| value Svg_sigs.T.marker >> ~[<<a_api | module Svg_sigs.T >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="markup_to_expr"| value Ppx_tyxml.markup_to_expr >> ~[<<a_api | module Ppx_tyxml >>~]|<<div class="odocwiki_info"|~Given the payload of a <<span class="odocwiki_inlinecode"|~%html~5 ~.~.~.>> or <<span class="odocwiki_inlinecode"|~%svg ~.~.~.>> expression~,
+    converts it to a ~Ty~X~M~L expression representing the markup
+    contained therein~.
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api text="menu"| value Html5_sigs.T.menu >> ~[<<a_api | module Html5_sigs.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="meta"| value Html5_sigs.T.meta >> ~[<<a_api | module Html5_sigs.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="metadata"| value Svg_sigs.T.metadata >> ~[<<a_api | module Svg_sigs.T >>~]||

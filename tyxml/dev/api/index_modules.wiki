@@ -65,6 +65,9 @@
 |@@class="odocwiki_index"@ @@<<a_api text="Pa_tyxml"| module Pa_tyxml >> |<<div class="odocwiki_info"|~Syntax extension for ~H~T~M~L~5 or ~S~V~G tree creation~.
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api text="Ppx_tyxml"| module Ppx_tyxml >> |<<div class="odocwiki_info"|~Internal functions to build tyxml~'s ppx~.
+>>
+|
 |@@ @style="tet-align: left;"@@\\S|
 |@@class="odocwiki_index"@ @@<<a_api text="Simplexmlparser"| module Simplexmlparser >> |<<div class="odocwiki_info"|~Basic camlp~4 parser for xml
 >>
