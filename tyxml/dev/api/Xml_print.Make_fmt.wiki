@@ -11,6 +11,6 @@
 
     ~It can be used in combination with <<span class="odocwiki_inlinecode"|"~%a">>~. ~For example~, to get a string~:
     
-<<code language='ocaml'|let s = Format.sprintf "%a" (pp ()) my_xml>>
+<<code language='ocaml'|let s = Format.asprintf "%a" (pp ()) my_xml>>
 
 >>
