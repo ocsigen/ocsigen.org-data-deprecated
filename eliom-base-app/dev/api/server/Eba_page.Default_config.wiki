@@ -1,5 +1,5 @@
 =Module <<a_api_type subproject="server" | module Eba_page.Default_config >> =
-<<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module>> <<span class="ocsforge_color_uid"|<<span class="ocsforge_color_uid"|Default_config>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<a_api subproject="server" text="PAGE" | module Eba_page.PAGE >>>><<span class="odocwiki_type"|>>>>
+<<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module>> <<span class="ocsforge_color_uid"|<<span class="ocsforge_color_uid"|Default_config>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<a_api subproject="server" text="PAGE" | module Eba_page.PAGE >>>><<span class="odocwiki_type"| >>>>
 ----
 <<pre id="VALtitle" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|title>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|string>>>><<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|title>> corresponds to the html tag ~<title~>~, it will be inserted on all
       pages~.
