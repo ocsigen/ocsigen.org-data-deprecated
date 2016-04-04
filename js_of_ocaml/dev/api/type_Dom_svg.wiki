@@ -410,12 +410,10 @@
         Js.js_string Js.t -> Dom.element Dom.nodeList Js.t Js.meth
       method getEnclosureList :
         Dom_svg.rect Js.t ->
-        Dom_svg.element Js.t ->
-        Dom_svg.element Js.t Dom.nodeList Js.t Js.meth
+        Dom_svg.element Js.t -> Dom_svg.element Dom.nodeList Js.t Js.meth
       method getIntersectionList :
         Dom_svg.rect Js.t ->
-        Dom_svg.element Js.t ->
-        Dom_svg.element Js.t Dom.nodeList Js.t Js.meth
+        Dom_svg.element Js.t -> Dom_svg.element Dom.nodeList Js.t Js.meth
       method getScreenCTM : Dom_svg.matrix Js.t Js.meth
       method getTransformToElement :
         Dom_svg.element Js.t -> Dom_svg.matrix Js.t Js.meth
