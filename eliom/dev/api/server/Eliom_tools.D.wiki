@@ -1,5 +1,5 @@
 =Module <<a_api_type subproject="server" | module Eliom_tools.D >> =
-<<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module>> <<span class="ocsforge_color_uid"|<<span class="ocsforge_color_uid"|D>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<a_api subproject="server" text="HTML5_TOOLS" | module Eliom_tools.HTML5_TOOLS >>>><<span class="odocwiki_type"|>>>>~Menus with ~D~O~M semantics
+<<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module>> <<span class="ocsforge_color_uid"|<<span class="ocsforge_color_uid"|D>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<a_api subproject="server" text="HTML5_TOOLS" | module Eliom_tools.HTML5_TOOLS >>>><<span class="odocwiki_type"| >>>>~Menus with ~D~O~M semantics
 
 ----
 
