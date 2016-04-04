@@ -130,6 +130,7 @@
                                                Js.readonly_prop
                                              method className :
                                                Js.js_string Js.t Js.prop
+                                             method click : unit Js.meth
                                              method clientHeight :
                                                int Js.readonly_prop
                                              method clientLeft :
@@ -411,6 +412,7 @@
                                                Js.readonly_prop
                                              method className :
                                                Js.js_string Js.t Js.prop
+                                             method click : unit Js.meth
                                              method clientHeight :
                                                int Js.readonly_prop
                                              method clientLeft :
@@ -692,6 +694,7 @@
                                                Js.readonly_prop
                                              method className :
                                                Js.js_string Js.t Js.prop
+                                             method click : unit Js.meth
                                              method clientHeight :
                                                int Js.readonly_prop
                                              method clientLeft :
@@ -1028,6 +1031,7 @@
                                            Js.readonly_prop
                                          method className :
                                            Js.js_string Js.t Js.prop
+                                         method click : unit Js.meth
                                          method clientHeight :
                                            int Js.readonly_prop
                                          method clientLeft :
@@ -1386,6 +1390,7 @@
                     method classList :
                       Dom_html.tokenList Js.t Js.readonly_prop
                     method className : Js.js_string Js.t Js.prop
+                    method click : unit Js.meth
                     method clientHeight : int Js.readonly_prop
                     method clientLeft : int Js.readonly_prop
                     method clientTop : int Js.readonly_prop
@@ -1548,6 +1553,7 @@
                     method classList :
                       Dom_html.tokenList Js.t Js.readonly_prop
                     method className : Js.js_string Js.t Js.prop
+                    method click : unit Js.meth
                     method clientHeight : int Js.readonly_prop
                     method clientLeft : int Js.readonly_prop
                     method clientTop : int Js.readonly_prop
@@ -1794,6 +1800,7 @@
                 method childNodes : Dom.node Dom.nodeList Js.t Js.prop
                 method classList : Dom_html.tokenList Js.t Js.readonly_prop
                 method className : Js.js_string Js.t Js.prop
+                method click : unit Js.meth
                 method clientHeight : int Js.readonly_prop
                 method clientLeft : int Js.readonly_prop
                 method clientTop : int Js.readonly_prop
@@ -1950,6 +1957,7 @@
                 method childNodes : Dom.node Dom.nodeList Js.t Js.prop
                 method classList : Dom_html.tokenList Js.t Js.readonly_prop
                 method className : Js.js_string Js.t Js.prop
+                method click : unit Js.meth
                 method clientHeight : int Js.readonly_prop
                 method clientLeft : int Js.readonly_prop
                 method clientTop : int Js.readonly_prop
@@ -2106,6 +2114,7 @@
                 method childNodes : Dom.node Dom.nodeList Js.t Js.prop
                 method classList : Dom_html.tokenList Js.t Js.readonly_prop
                 method className : Js.js_string Js.t Js.prop
+                method click : unit Js.meth
                 method clientHeight : int Js.readonly_prop
                 method clientLeft : int Js.readonly_prop
                 method clientTop : int Js.readonly_prop
@@ -2336,6 +2345,7 @@
                 method childNodes : Dom.node Dom.nodeList Js.t Js.prop
                 method classList : Dom_html.tokenList Js.t Js.readonly_prop
                 method className : Js.js_string Js.t Js.prop
+                method click : unit Js.meth
                 method clientHeight : int Js.readonly_prop
                 method clientLeft : int Js.readonly_prop
                 method clientTop : int Js.readonly_prop
@@ -2507,6 +2517,7 @@
             method childNodes : Dom.node Dom.nodeList Js.t Js.prop
             method classList : Dom_html.tokenList Js.t Js.readonly_prop
             method className : Js.js_string Js.t Js.prop
+            method click : unit Js.meth
             method clientHeight : int Js.readonly_prop
             method clientLeft : int Js.readonly_prop
             method clientTop : int Js.readonly_prop
@@ -2676,6 +2687,7 @@
         method classList : Dom_html.tokenList Js.t Js.readonly_prop
         method className : Js.js_string Js.t Js.prop
         method clear : unit Js.meth
+        method click : unit Js.meth
         method clientHeight : int Js.readonly_prop
         method clientLeft : int Js.readonly_prop
         method clientTop : int Js.readonly_prop

@@ -1,7 +1,7 @@
 =Module type <<a_api_type | module type Ojw_popup_sigs.T >> =
 <<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module type>> <<span class="ocsforge_color_uid"|T>> <<span class="ocsforge_color_delimiter"|~=>> <<span class="ocsforge_color_keyword"|sig>><<a_api text=".." | module type Ojw_popup_sigs.T >><<span class="ocsforge_color_keyword"|end>>>>
 ----
-<<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module>> <<a_api text="D" | module Ojw_popup_sigs.T.D >> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<a_api text="Ojw_dom_sigs.T" | module Ojw_dom_sigs.T >>>><<span class="odocwiki_type"|>>>><<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module>> <<a_api text="Alert" | module Ojw_popup_sigs.T.Alert >> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<a_api text="Ojw_alert_sigs.T" | module Ojw_alert_sigs.T >>>><<span class="odocwiki_type"|>>>>
+<<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module>> <<a_api text="D" | module Ojw_popup_sigs.T.D >> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<a_api text="Ojw_dom_sigs.T" | module Ojw_dom_sigs.T >>>><<span class="odocwiki_type"| >>>><<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module>> <<a_api text="Alert" | module Ojw_popup_sigs.T.Alert >> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<a_api text="Ojw_alert_sigs.T" | module Ojw_alert_sigs.T >>>><<span class="odocwiki_type"| >>>>
 
 ==@@id="2_Helpers"@@~Helpers==
 

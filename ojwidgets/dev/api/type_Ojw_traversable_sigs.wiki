@@ -33,6 +33,7 @@
           method childNodes : Dom.node Dom.nodeList Js.t Js.prop
           method classList : Dom_html.tokenList Js.t Js.readonly_prop
           method className : Js.js_string Js.t Js.prop
+          method click : unit Js.meth
           method clientHeight : int Js.readonly_prop
           method clientLeft : int Js.readonly_prop
           method clientTop : int Js.readonly_prop

@@ -3,7 +3,7 @@
 ----
 
 ~A traversable element can iterate through their children~.
-<<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module>> <<a_api text="D" | module Ojw_traversable_sigs.T.D >> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<a_api text="Ojw_dom_sigs.T" | module Ojw_dom_sigs.T >>>><<span class="odocwiki_type"|>>>><<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module>> <<a_api text="Content" | module Ojw_traversable_sigs.T.Content >> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<a_api text="Ojw_dom_sigs.T" | module Ojw_dom_sigs.T >>>><<span class="odocwiki_type"|>>>>
+<<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module>> <<a_api text="D" | module Ojw_traversable_sigs.T.D >> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<a_api text="Ojw_dom_sigs.T" | module Ojw_dom_sigs.T >>>><<span class="odocwiki_type"| >>>><<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module>> <<a_api text="Content" | module Ojw_traversable_sigs.T.Content >> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<a_api text="Ojw_dom_sigs.T" | module Ojw_dom_sigs.T >>>><<span class="odocwiki_type"| >>>>
 
 ==@@id="2_Specificeventsforalerts"@@~Specific events for alerts==
 
