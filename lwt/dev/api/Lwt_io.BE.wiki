@@ -1,5 +1,5 @@
 =Module <<a_api_type | module Lwt_io.BE >> =
-<<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module>> <<span class="ocsforge_color_uid"|<<span class="ocsforge_color_uid"|BE>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<a_api text="NumberIO" | module Lwt_io.NumberIO >>>><<span class="odocwiki_type"|>>>>~Reading~/writing of numbers in big~-endian
+<<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module>> <<span class="ocsforge_color_uid"|<<span class="ocsforge_color_uid"|BE>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<a_api text="NumberIO" | module Lwt_io.NumberIO >>>><<span class="odocwiki_type"| >>>>~Reading~/writing of numbers in big~-endian
 
 ----
 

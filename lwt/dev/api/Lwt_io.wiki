@@ -344,9 +344,9 @@
 
 <<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module type>> <<a_api text="NumberIO" | module type Lwt_io.NumberIO >> <<span class="ocsforge_color_delimiter"|~=>> <<span class="ocsforge_color_keyword"|sig>><<a_api text=".." | module type Lwt_io.NumberIO >><<span class="ocsforge_color_keyword"|end>>>><<div class="odocwiki_info"|~Common interface for reading~/writing integers in binary
 >>
-<<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module>> <<a_api text="LE" | module Lwt_io.LE >> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<a_api text="NumberIO" | module Lwt_io.NumberIO >>>><<span class="odocwiki_type"|>>>><<div class="odocwiki_info"|~Reading~/writing of numbers in little~-endian
+<<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module>> <<a_api text="LE" | module Lwt_io.LE >> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<a_api text="NumberIO" | module Lwt_io.NumberIO >>>><<span class="odocwiki_type"| >>>><<div class="odocwiki_info"|~Reading~/writing of numbers in little~-endian
 >>
-<<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module>> <<a_api text="BE" | module Lwt_io.BE >> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<a_api text="NumberIO" | module Lwt_io.NumberIO >>>><<span class="odocwiki_type"|>>>><<div class="odocwiki_info"|~Reading~/writing of numbers in big~-endian
+<<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module>> <<a_api text="BE" | module Lwt_io.BE >> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<a_api text="NumberIO" | module Lwt_io.NumberIO >>>><<span class="odocwiki_type"| >>>><<div class="odocwiki_info"|~Reading~/writing of numbers in big~-endian
 >>
 <<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|include>> <<a_api | module type Lwt_io.NumberIO >>>>
 
