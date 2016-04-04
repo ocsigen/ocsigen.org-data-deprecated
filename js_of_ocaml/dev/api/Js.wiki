@@ -26,9 +26,9 @@
 <<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module type>> <<a_api text="OPT" | module type Js.OPT >> <<span class="ocsforge_color_delimiter"|~=>> <<span class="ocsforge_color_keyword"|sig>><<a_api text=".." | module type Js.OPT >><<span class="ocsforge_color_keyword"|end>>>><<div class="odocwiki_info"|~Signatures of a set of standard functions for manipulating
     optional values~.
 >>
-<<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module>> <<a_api text="Opt" | module Js.Opt >> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<a_api text="OPT" | module Js.OPT >>>><<span class="odocwiki_type"| with type 'a t = 'a opt>>>><<div class="odocwiki_info"|~Standard functions for manipulating possibly null values~.
+<<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module>> <<a_api text="Opt" | module Js.Opt >> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<a_api text="OPT" | module Js.OPT >>>><<span class="odocwiki_type"|  with type 'a t = 'a opt>>>><<div class="odocwiki_info"|~Standard functions for manipulating possibly null values~.
 >>
-<<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module>> <<a_api text="Optdef" | module Js.Optdef >> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<a_api text="OPT" | module Js.OPT >>>><<span class="odocwiki_type"| with type 'a t = 'a optdef>>>><<div class="odocwiki_info"|~Standard functions for manipulating possibly undefined values~.
+<<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module>> <<a_api text="Optdef" | module Js.Optdef >> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<a_api text="OPT" | module Js.OPT >>>><<span class="odocwiki_type"|  with type 'a t = 'a optdef>>>><<div class="odocwiki_info"|~Standard functions for manipulating possibly undefined values~.
 >>
 
 

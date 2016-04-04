@@ -1,5 +1,5 @@
 =Module <<a_api_type | module Js.Optdef >> =
-<<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module>> <<span class="ocsforge_color_uid"|<<span class="ocsforge_color_uid"|Optdef>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<a_api text="OPT" | module Js.OPT >>>><<span class="odocwiki_type"| with type 'a t = 'a optdef>>>>~Standard functions for manipulating possibly undefined values~.
+<<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module>> <<span class="ocsforge_color_uid"|<<span class="ocsforge_color_uid"|Optdef>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<a_api text="OPT" | module Js.OPT >>>><<span class="odocwiki_type"|  with type 'a t = 'a optdef>>>>~Standard functions for manipulating possibly undefined values~.
 
 ----
 <<pre class="ocsforge_color odocwiki_code" id="TYPEt"|<<span class="ocsforge_color_keyword"|type>> <<span class="odocwiki_type"|'a>> <<span class="odocwiki_name"|t>>>><<pre id="VALempty" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|empty>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|'a <<a_api text="t" | type Js.OPT.t >>>>>><<div class="odocwiki_info"|~No value~.
