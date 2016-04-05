@@ -87,8 +87,8 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Eliom_lib"| module Eliom_lib >> |<<div class="odocwiki_info"|~Deprecated~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Eliom_parameter"| module Eliom_parameter >> |<<div class="odocwiki_info"|~See documentation in the server side version~:
-    <<a_api subproject="server"|module Eliom_parameter>>~.
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Eliom_parameter"| module Eliom_parameter >> ||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Eliom_parameter_sigs"| module Eliom_parameter_sigs >> |<<div class="odocwiki_info"|~Ad~-hoc runtime type representation for service parameters~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Eliom_react"| module Eliom_react >> |<<div class="odocwiki_info"|~Client side type declarations for ~React event propagation~.

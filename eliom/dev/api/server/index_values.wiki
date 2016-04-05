@@ -1,8 +1,8 @@
 =Index of values=
 
 |@@ @style="tet-align: left;"@@\\|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="( ** )"| value Eliom_parameter.( ** ) >> ~[<<a_api subproject="server" | module Eliom_parameter >>~]|<<div class="odocwiki_info"|~The combinator <<span class="odocwiki_inlinecode"|p~1 ~*~* p~2>> allows one to define service that take a
-    pair of parameter~.
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="( ** )"| value Eliom_parameter_sigs.S.( ** ) >> ~[<<a_api subproject="server" | module Eliom_parameter_sigs.S >>~]|<<div class="odocwiki_info"|~The combinator <<span class="odocwiki_inlinecode"|p~1 ~*~* p~2>> allows one to define a service that
+      takes a pair of parameters~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="( *** )"| value Eliom_openid.( *** ) >> ~[<<a_api subproject="server" | module Eliom_openid >>~]|<<div class="odocwiki_info"|~The ~P~A~P~E extension~.
@@ -29,7 +29,7 @@
     from <<span class="odocwiki_inlinecode"|newcookies>> to <<span class="odocwiki_inlinecode"|oldcookies>>~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="add_nl_parameter"| value Eliom_parameter.add_nl_parameter >> ~[<<a_api subproject="server" | module Eliom_parameter >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="add_nl_parameter"| value Eliom_parameter_sigs.S.add_nl_parameter >> ~[<<a_api subproject="server" | module Eliom_parameter_sigs.S >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="add_non_localized_get_parameters"| value Eliom_service.add_non_localized_get_parameters >> ~[<<a_api subproject="server" | module Eliom_service >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|add~_non~_localized~_get~_parameters ~~params ~~service>>
     ~Adds non localized ~G~E~T parameters <<span class="odocwiki_inlinecode"|params>> to <<span class="odocwiki_inlinecode"|service>>~.
 >>
@@ -38,22 +38,23 @@
     parameters~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="all_suffix"| value Eliom_parameter.all_suffix >> ~[<<a_api subproject="server" | module Eliom_parameter >>~]|<<div class="odocwiki_info"|~Takes all the suffix~, as long as possible~, as a ~(slash separated~)
-   string list
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="all_suffix"| value Eliom_parameter_sigs.S.all_suffix >> ~[<<a_api subproject="server" | module Eliom_parameter_sigs.S >>~]|<<div class="odocwiki_info"|~Takes the whole suffix~, as long as possible~, as a ~(slash
+      separated~) string list
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="all_suffix_regexp"| value Eliom_parameter.all_suffix_regexp >> ~[<<a_api subproject="server" | module Eliom_parameter >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|all~_suffix~_regexp r d s>> takes all the suffix~, as long as possible~,
-   matching the regular expression <<span class="odocwiki_inlinecode"|r>>~, name <<span class="odocwiki_inlinecode"|s>>~, and rewrite it in <<span class="odocwiki_inlinecode"|d>>~.
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="all_suffix_regexp"| value Eliom_parameter.all_suffix_regexp >> ~[<<a_api subproject="server" | module Eliom_parameter >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|all~_suffix~_regexp r d s>> takes all the suffix~, as long as
+    possible~, matching the regular expression <<span class="odocwiki_inlinecode"|r>>~, name <<span class="odocwiki_inlinecode"|s>>~, and
+    rewrite it in <<span class="odocwiki_inlinecode"|d>>~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="all_suffix_string"| value Eliom_parameter.all_suffix_string >> ~[<<a_api subproject="server" | module Eliom_parameter >>~]|<<div class="odocwiki_info"|~Takes all the suffix~, as long as possible~, as a string
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="all_suffix_string"| value Eliom_parameter_sigs.S.all_suffix_string >> ~[<<a_api subproject="server" | module Eliom_parameter_sigs.S >>~]|<<div class="odocwiki_info"|~Takes the whole suffix~, as long as possible~, as a string
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="all_suffix_user"| value Eliom_parameter.all_suffix_user >> ~[<<a_api subproject="server" | module Eliom_parameter >>~]|<<div class="odocwiki_info"|~Takes all the suffix~, as long as possible~,
-        with a type specified by the user~.
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="all_suffix_user"| value Eliom_parameter_sigs.S.all_suffix_user >> ~[<<a_api subproject="server" | module Eliom_parameter_sigs.S >>~]|<<div class="odocwiki_info"|~Takes the whole suffix~, as long as possible~, with a type
+      specified by the user~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="any"| value Eliom_parameter.any >> ~[<<a_api subproject="server" | module Eliom_parameter >>~]|<<div class="odocwiki_info"|~Use this if you want to take any parameters~.
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="any"| value Eliom_parameter_sigs.S.any >> ~[<<a_api subproject="server" | module Eliom_parameter_sigs.S >>~]|<<div class="odocwiki_info"|~Use this if you want to take any parameters~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="appl_self_redirect"| value Eliom_registration.appl_self_redirect >> ~[<<a_api subproject="server" | module Eliom_registration >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|appl~_self~_redirect send page>> is an helper function
@@ -94,7 +95,8 @@
 >>
 |
 |@@ @style="tet-align: left;"@@\\B|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="bool"| value Eliom_parameter.bool >> ~[<<a_api subproject="server" | module Eliom_parameter >>~]|<<div class="odocwiki_info"|~Specifying parameter as <<span class="odocwiki_inlinecode"|bool s>> tells that the service takes a boolean as parameter~, labeled <<span class="odocwiki_inlinecode"|s>>~.
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="bool"| value Eliom_parameter_sigs.S.bool >> ~[<<a_api subproject="server" | module Eliom_parameter_sigs.S >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|bool s>> means that the service takes a ~Boolean as the parameter
+      named <<span class="odocwiki_inlinecode"|s>>~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="bool"| value Eliom_form_sigs.S.bool >> ~[<<a_api subproject="server" | module Eliom_form_sigs.S >>~]||
@@ -162,9 +164,8 @@
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="cookie_level_of_user_scope"| value Eliom_common.cookie_level_of_user_scope >> ~[<<a_api subproject="server" | module Eliom_common >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="cookie_scope_of_user_scope"| value Eliom_common.cookie_scope_of_user_scope >> ~[<<a_api subproject="server" | module Eliom_common >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="coordinates"| value Eliom_parameter.coordinates >> ~[<<a_api subproject="server" | module Eliom_parameter >>~]|<<div class="odocwiki_info"|~Specifying parameter as <<span class="odocwiki_inlinecode"|coordinates s>> tells that the service takes as
-    parameters the coordinates of a point in an <<span class="odocwiki_inlinecode"|~<input type~="image"
-    ~.~.~.~>>>~.
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="coordinates"| value Eliom_parameter_sigs.S.coordinates >> ~[<<a_api subproject="server" | module Eliom_parameter_sigs.S >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|coordinates s>> means that the service takes as parameters the
+      coordinates of a point in an <<span class="odocwiki_inlinecode"|~<input type~="image" ~.~.~.~>>>~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="coservice"| value Eliom_service.Unsafe.coservice >> ~[<<a_api subproject="server" | module Eliom_service.Unsafe >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|coservice ~~fallback ~~get~_params>> creates an     <<a_manual chapter="services" fragment="attached_coservices"|attached
@@ -311,69 +312,69 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="delete_coservice"| value Eliom_service.Unsafe.delete_coservice >> ~[<<a_api subproject="server" | module Eliom_service.Unsafe >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|delete~_coservice ~~fallback ~~get~_params>> creates an     <<a_manual chapter="services" fragment="attached_coservices"|attached
     coservice>> with the same path and ~G~E~T parameters than the
     service <<span class="odocwiki_inlinecode"|fallback>> and taking a single ~P~O~S~T parameter of type
-    <<a_api subproject="server" | val Eliom_parameter.raw_post_data >>~.
+    <<span class="odocwiki_inlinecode"|~Eliom~_parameter~.raw~_post~_data>>~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="delete_coservice"| value Eliom_service.Ocaml.delete_coservice >> ~[<<a_api subproject="server" | module Eliom_service.Ocaml >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|delete~_coservice ~~fallback ~~get~_params>> creates an     <<a_manual chapter="services" fragment="attached_coservices"|attached
     coservice>> with the same path and ~G~E~T parameters than the
     service <<span class="odocwiki_inlinecode"|fallback>> and taking a single ~P~O~S~T parameter of type
-    <<a_api subproject="server" | val Eliom_parameter.raw_post_data >>~.
+    <<span class="odocwiki_inlinecode"|~Eliom~_parameter~.raw~_post~_data>>~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="delete_coservice"| value Eliom_service.App.delete_coservice >> ~[<<a_api subproject="server" | module Eliom_service.App >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|delete~_coservice ~~fallback ~~get~_params>> creates an     <<a_manual chapter="services" fragment="attached_coservices"|attached
     coservice>> with the same path and ~G~E~T parameters than the
     service <<span class="odocwiki_inlinecode"|fallback>> and taking a single ~P~O~S~T parameter of type
-    <<a_api subproject="server" | val Eliom_parameter.raw_post_data >>~.
+    <<span class="odocwiki_inlinecode"|~Eliom~_parameter~.raw~_post~_data>>~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="delete_coservice"| value Eliom_service.Http.delete_coservice >> ~[<<a_api subproject="server" | module Eliom_service.Http >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|delete~_coservice ~~fallback ~~get~_params>> creates an     <<a_manual chapter="services" fragment="attached_coservices"|attached
     coservice>> with the same path and ~G~E~T parameters than the
     service <<span class="odocwiki_inlinecode"|fallback>> and taking a single ~P~O~S~T parameter of type
-    <<a_api subproject="server" | val Eliom_parameter.raw_post_data >>~.
+    <<span class="odocwiki_inlinecode"|~Eliom~_parameter~.raw~_post~_data>>~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="delete_coservice'"| value Eliom_service.Unsafe.delete_coservice' >> ~[<<a_api subproject="server" | module Eliom_service.Unsafe >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|delete~_coservice~' ~~get~_params>> creates a <<a_manual
     chapter="services" fragment="non-attached_coservices"|non-attached
     coservice>> taking a single ~P~O~S~T parameter of type
-    <<a_api subproject="server" | val Eliom_parameter.raw_post_data >>~.
+    <<span class="odocwiki_inlinecode"|~Eliom~_parameter~.raw~_post~_data>>~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="delete_coservice'"| value Eliom_service.Ocaml.delete_coservice' >> ~[<<a_api subproject="server" | module Eliom_service.Ocaml >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|delete~_coservice~' ~~get~_params>> creates a <<a_manual
     chapter="services" fragment="non-attached_coservices"|non-attached
     coservice>> taking a single ~P~O~S~T parameter of type
-    <<a_api subproject="server" | val Eliom_parameter.raw_post_data >>~.
+    <<span class="odocwiki_inlinecode"|~Eliom~_parameter~.raw~_post~_data>>~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="delete_coservice'"| value Eliom_service.App.delete_coservice' >> ~[<<a_api subproject="server" | module Eliom_service.App >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|delete~_coservice~' ~~get~_params>> creates a <<a_manual
     chapter="services" fragment="non-attached_coservices"|non-attached
     coservice>> taking a single ~P~O~S~T parameter of type
-    <<a_api subproject="server" | val Eliom_parameter.raw_post_data >>~.
+    <<span class="odocwiki_inlinecode"|~Eliom~_parameter~.raw~_post~_data>>~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="delete_coservice'"| value Eliom_service.Http.delete_coservice' >> ~[<<a_api subproject="server" | module Eliom_service.Http >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|delete~_coservice~' ~~get~_params>> creates a <<a_manual
     chapter="services" fragment="non-attached_coservices"|non-attached
     coservice>> taking a single ~P~O~S~T parameter of type
-    <<a_api subproject="server" | val Eliom_parameter.raw_post_data >>~.
+    <<span class="odocwiki_inlinecode"|~Eliom~_parameter~.raw~_post~_data>>~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="delete_service"| value Eliom_service.Unsafe.delete_service >> ~[<<a_api subproject="server" | module Eliom_service.Unsafe >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|delete~_service ~~path ~~get~_params ~(~)>> creates a
     service that answers the ~H~T~T~P ~D~E~L~E~T~E method~, and only takes
-    <<a_api subproject="server" | val Eliom_parameter.raw_post_data >> as ~P~O~S~T parameter~.
+    <<span class="odocwiki_inlinecode"|~Eliom~_parameter~.raw~_post~_data>> as ~P~O~S~T parameter~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="delete_service"| value Eliom_service.Ocaml.delete_service >> ~[<<a_api subproject="server" | module Eliom_service.Ocaml >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|delete~_service ~~path ~~get~_params ~(~)>> creates a
     service that answers the ~H~T~T~P ~D~E~L~E~T~E method~, and only takes
-    <<a_api subproject="server" | val Eliom_parameter.raw_post_data >> as ~P~O~S~T parameter~.
+    <<span class="odocwiki_inlinecode"|~Eliom~_parameter~.raw~_post~_data>> as ~P~O~S~T parameter~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="delete_service"| value Eliom_service.App.delete_service >> ~[<<a_api subproject="server" | module Eliom_service.App >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|delete~_service ~~path ~~get~_params ~(~)>> creates a
     service that answers the ~H~T~T~P ~D~E~L~E~T~E method~, and only takes
-    <<a_api subproject="server" | val Eliom_parameter.raw_post_data >> as ~P~O~S~T parameter~.
+    <<span class="odocwiki_inlinecode"|~Eliom~_parameter~.raw~_post~_data>> as ~P~O~S~T parameter~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="delete_service"| value Eliom_service.Http.delete_service >> ~[<<a_api subproject="server" | module Eliom_service.Http >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|delete~_service ~~path ~~get~_params ~(~)>> creates a
     service that answers the ~H~T~T~P ~D~E~L~E~T~E method~, and only takes
-    <<a_api subproject="server" | val Eliom_parameter.raw_post_data >> as ~P~O~S~T parameter~.
+    <<span class="odocwiki_inlinecode"|~Eliom~_parameter~.raw~_post~_data>> as ~P~O~S~T parameter~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="direct_request"| value Eliom_s2s.direct_request >> ~[<<a_api subproject="server" | module Eliom_s2s >>~]|<<div class="odocwiki_info"|~Perform a direct ~(~P~O~S~T~) request towards a server~,
@@ -431,7 +432,7 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="empty_cookieset"| value Eliom_cookie.empty_cookieset >> ~[<<a_api subproject="server" | module Eliom_cookie >>~]|<<div class="odocwiki_info"|~Empty set of cookies~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="empty_nl_params_set"| value Eliom_parameter.empty_nl_params_set >> ~[<<a_api subproject="server" | module Eliom_parameter >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="empty_nl_params_set"| value Eliom_parameter_sigs.S.empty_nl_params_set >> ~[<<a_api subproject="server" | module Eliom_parameter_sigs.S >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="empty_unwrapper"| value Eliom_wrap.empty_unwrapper >> ~[<<a_api subproject="server" | module Eliom_wrap >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="empty_wrapper"| value Eliom_wrap.empty_wrapper >> ~[<<a_api subproject="server" | module Eliom_wrap >>~]|<<div class="odocwiki_info"|a wrapper that do not change the value
 >>
@@ -512,7 +513,8 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="feed"| value Atom_feed.feed >> ~[<<a_api subproject="server" | module Atom_feed >>~]|<<div class="odocwiki_info"|~Feed tag
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="file"| value Eliom_parameter.file >> ~[<<a_api subproject="server" | module Eliom_parameter >>~]|<<div class="odocwiki_info"|~Specifying parameter as <<span class="odocwiki_inlinecode"|file s>> tells that the service takes a file as parameter~, labeled <<span class="odocwiki_inlinecode"|s>>~.
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="file"| value Eliom_parameter_sigs.S.file >> ~[<<a_api subproject="server" | module Eliom_parameter_sigs.S >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|file s>> means that the service takes a file as the parameter
+      named <<span class="odocwiki_inlinecode"|s>>~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="file_input"| value Eliom_form_sigs.S.file_input >> ~[<<a_api subproject="server" | module Eliom_form_sigs.S >>~]|<<div class="odocwiki_info"|~Creates an <<span class="odocwiki_inlinecode"|~<input~>>> tag for sending a file
@@ -533,11 +535,12 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="find_in_ns"| value Eliom_s2s.find_in_ns >> ~[<<a_api subproject="server" | module Eliom_s2s >>~]|<<div class="odocwiki_info"|~Finds some parameters in a namespace~, identified by its url~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="float"| value Eliom_parameter.float >> ~[<<a_api subproject="server" | module Eliom_parameter >>~]|<<div class="odocwiki_info"|~Specifying parameter as <<span class="odocwiki_inlinecode"|float s>> tells that the service takes a floating point number as parameter~, labeled <<span class="odocwiki_inlinecode"|s>>~.
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="float"| value Eliom_parameter_sigs.S.float >> ~[<<a_api subproject="server" | module Eliom_parameter_sigs.S >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|float s>> means that the service takes a float as the parameter
+      named <<span class="odocwiki_inlinecode"|s>>~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="float"| value Eliom_form_sigs.S.float >> ~[<<a_api subproject="server" | module Eliom_form_sigs.S >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="float_coordinates"| value Eliom_parameter.float_coordinates >> ~[<<a_api subproject="server" | module Eliom_parameter >>~]|<<div class="odocwiki_info"|~Same as <<span class="odocwiki_inlinecode"|string~_coordinates>> but for a float value
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="float_coordinates"| value Eliom_parameter_sigs.S.float_coordinates >> ~[<<a_api subproject="server" | module Eliom_parameter_sigs.S >>~]|<<div class="odocwiki_info"|~Same as <<span class="odocwiki_inlinecode"|string~_coordinates>> but for a float value
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="fmap"| value Eliom_shared_sigs.S.fmap >> ~[<<a_api subproject="server" | module Eliom_shared_sigs.S >>~]||
@@ -705,16 +708,16 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="get_nl_get_params"| value Eliom_request_info.get_nl_get_params >> ~[<<a_api subproject="server" | module Eliom_request_info >>~]|<<div class="odocwiki_info"|returns non localized parameters in the ~U~R~L~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="get_nl_params_names"| value Eliom_parameter.get_nl_params_names >> ~[<<a_api subproject="server" | module Eliom_parameter >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="get_nl_params_names"| value Eliom_parameter_sigs.S.get_nl_params_names >> ~[<<a_api subproject="server" | module Eliom_parameter_sigs.S >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="get_nl_post_params"| value Eliom_request_info.get_nl_post_params >> ~[<<a_api subproject="server" | module Eliom_request_info >>~]|<<div class="odocwiki_info"|returns non localized ~P~O~S~T parameters~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="get_non_localized_get_parameters"| value Eliom_parameter.get_non_localized_get_parameters >> ~[<<a_api subproject="server" | module Eliom_parameter >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|get~_non~_localized~_get~_parameters ~~sp p>> decodes and
-    returns non localized ~G~E~T parameters specified by <<span class="odocwiki_inlinecode"|p>> if present~.
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="get_non_localized_get_parameters"| value Eliom_parameter.get_non_localized_get_parameters >> ~[<<a_api subproject="server" | module Eliom_parameter >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|get~_non~_localized~_get~_parameters ~~sp p>> decodes and returns non
+    localized ~G~E~T parameters specified by <<span class="odocwiki_inlinecode"|p>> if present~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="get_non_localized_post_parameters"| value Eliom_parameter.get_non_localized_post_parameters >> ~[<<a_api subproject="server" | module Eliom_parameter >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|get~_non~_localized~_post~_parameters ~~sp p>> decodes and
-    returns non localized ~P~O~S~T parameters specified by <<span class="odocwiki_inlinecode"|p>> if present~.
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="get_non_localized_post_parameters"| value Eliom_parameter.get_non_localized_post_parameters >> ~[<<a_api subproject="server" | module Eliom_parameter >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|get~_non~_localized~_post~_parameters ~~sp p>> decodes and returns non
+    localized ~P~O~S~T parameters specified by <<span class="odocwiki_inlinecode"|p>> if present~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="get_original_filename"| value Eliom_request_info.get_original_filename >> ~[<<a_api subproject="server" | module Eliom_request_info >>~]|<<div class="odocwiki_info"|returns the name the file had on the client when it has been sent~.
@@ -822,8 +825,8 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="get_tmp_filename"| value Eliom_request_info.get_tmp_filename >> ~[<<a_api subproject="server" | module Eliom_request_info >>~]|<<div class="odocwiki_info"|returns the filename used by ~Ocsigen for the uploaded file~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="get_to_and_from"| value Eliom_parameter.get_to_and_from >> ~[<<a_api subproject="server" | module Eliom_parameter >>~]|<<div class="odocwiki_info"|~Given a parameter type~, get the two functions
-    that converts from and to strings~.
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="get_to_and_from"| value Eliom_parameter_sigs.S.get_to_and_from >> ~[<<a_api subproject="server" | module Eliom_parameter_sigs.S >>~]|<<div class="odocwiki_info"|~Given a parameter type~, get the two functions that converts from
+      and to strings~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="get_user_agent"| value Eliom_request_info.get_user_agent >> ~[<<a_api subproject="server" | module Eliom_request_info >>~]|<<div class="odocwiki_info"|returns the name of the user agent that did the request
@@ -908,25 +911,28 @@
  related to each hub are added when registering the feed~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="int"| value Eliom_parameter.int >> ~[<<a_api subproject="server" | module Eliom_parameter >>~]|<<div class="odocwiki_info"|~Specifying parameter as <<span class="odocwiki_inlinecode"|int s>> tells that the service takes an integer as parameter~, labeled <<span class="odocwiki_inlinecode"|s>>~.
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="int"| value Eliom_parameter_sigs.S.int >> ~[<<a_api subproject="server" | module Eliom_parameter_sigs.S >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|int s>> means that the service takes an integer as the parameter
+      named <<span class="odocwiki_inlinecode"|s>>~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="int"| value Eliom_form_sigs.S.int >> ~[<<a_api subproject="server" | module Eliom_form_sigs.S >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="int32"| value Eliom_parameter.int32 >> ~[<<a_api subproject="server" | module Eliom_parameter >>~]|<<div class="odocwiki_info"|~Specifying parameter as <<span class="odocwiki_inlinecode"|int~3~2 s>> tells that the service takes a ~3~2 bits integer as parameter~, labeled <<span class="odocwiki_inlinecode"|s>>~.
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="int32"| value Eliom_parameter_sigs.S.int32 >> ~[<<a_api subproject="server" | module Eliom_parameter_sigs.S >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|int~3~2 s>> means that the service takes a ~3~2~-bit integer as the
+      parameter named <<span class="odocwiki_inlinecode"|s>>~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="int32"| value Eliom_form_sigs.S.int32 >> ~[<<a_api subproject="server" | module Eliom_form_sigs.S >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="int32_coordinates"| value Eliom_parameter.int32_coordinates >> ~[<<a_api subproject="server" | module Eliom_parameter >>~]|<<div class="odocwiki_info"|~Same as <<span class="odocwiki_inlinecode"|string~_coordinates>> but for a ~3~2 bits integer value
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="int32_coordinates"| value Eliom_parameter_sigs.S.int32_coordinates >> ~[<<a_api subproject="server" | module Eliom_parameter_sigs.S >>~]|<<div class="odocwiki_info"|~Same as <<span class="odocwiki_inlinecode"|string~_coordinates>> but for a ~3~2~-bit integer value
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="int64"| value Eliom_parameter.int64 >> ~[<<a_api subproject="server" | module Eliom_parameter >>~]|<<div class="odocwiki_info"|~Specifying parameter as <<span class="odocwiki_inlinecode"|int~6~4 s>> tells that the service takes a ~6~4 bits integer as parameter~, labeled <<span class="odocwiki_inlinecode"|s>>~.
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="int64"| value Eliom_parameter_sigs.S.int64 >> ~[<<a_api subproject="server" | module Eliom_parameter_sigs.S >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|int~6~4 s>> means that the service takes a ~6~4~-bit integer as the
+      parameter named <<span class="odocwiki_inlinecode"|s>>~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="int64"| value Eliom_form_sigs.S.int64 >> ~[<<a_api subproject="server" | module Eliom_form_sigs.S >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="int64_coordinates"| value Eliom_parameter.int64_coordinates >> ~[<<a_api subproject="server" | module Eliom_parameter >>~]|<<div class="odocwiki_info"|~Same as <<span class="odocwiki_inlinecode"|string~_coordinates>> but for a ~6~4 integer value
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="int64_coordinates"| value Eliom_parameter_sigs.S.int64_coordinates >> ~[<<a_api subproject="server" | module Eliom_parameter_sigs.S >>~]|<<div class="odocwiki_info"|~Same as <<span class="odocwiki_inlinecode"|string~_coordinates>> but for a ~6~4~-bit integer value
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="int_coordinates"| value Eliom_parameter.int_coordinates >> ~[<<a_api subproject="server" | module Eliom_parameter >>~]|<<div class="odocwiki_info"|~Same as <<span class="odocwiki_inlinecode"|string~_coordinates>> but for an integer value
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="int_coordinates"| value Eliom_parameter_sigs.S.int_coordinates >> ~[<<a_api subproject="server" | module Eliom_parameter_sigs.S >>~]|<<div class="odocwiki_info"|~Same as <<span class="odocwiki_inlinecode"|string~_coordinates>> but for an integer value
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="is_client_app"| value Eliom_client.is_client_app >> ~[<<a_api subproject="server" | module Eliom_client >>~]||
@@ -980,7 +986,7 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="links"| value Atom_feed.links >> ~[<<a_api subproject="server" | module Atom_feed >>~]|<<div class="odocwiki_info"|~We need a list of links~, this is only a converter from link list to `~Links
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="list"| value Eliom_parameter.list >> ~[<<a_api subproject="server" | module Eliom_parameter >>~]|<<div class="odocwiki_info"|~The service takes a list of parameters~.
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="list"| value Eliom_parameter_sigs.S.list >> ~[<<a_api subproject="server" | module Eliom_parameter_sigs.S >>~]|<<div class="odocwiki_info"|~The service takes a list of parameters~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="list_scope_hierarchies"| value Eliom_common.list_scope_hierarchies >> ~[<<a_api subproject="server" | module Eliom_common >>~]||
@@ -1006,7 +1012,7 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="make_cryptographic_safe_string"| value Eliom_lib.make_cryptographic_safe_string >> ~[<<a_api subproject="server" | module Eliom_lib >>~]|<<div class="odocwiki_info"|~Return a base~-~6~4 encoded cryptographic safe string of the given length~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="make_non_localized_parameters"| value Eliom_parameter.make_non_localized_parameters >> ~[<<a_api subproject="server" | module Eliom_parameter >>~]|<<div class="odocwiki_info"|create a new specification for non localized parameters~.
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="make_non_localized_parameters"| value Eliom_parameter_sigs.S.make_non_localized_parameters >> ~[<<a_api subproject="server" | module Eliom_parameter_sigs.S >>~]|<<div class="odocwiki_info"|~Create a new specification for non localized parameters~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="make_page"| value Eliom_registration.TMPL_PARAMS.make_page >> ~[<<a_api subproject="server" | module Eliom_registration.TMPL_PARAMS >>~]||
@@ -1066,7 +1072,8 @@
 |@@ @style="tet-align: left;"@@\\N|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="name"| value Eliom_registration.TMPL_PARAMS.name >> ~[<<a_api subproject="server" | module Eliom_registration.TMPL_PARAMS >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="nativeint"| value Eliom_form_sigs.S.nativeint >> ~[<<a_api subproject="server" | module Eliom_form_sigs.S >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="neopt"| value Eliom_parameter.neopt >> ~[<<a_api subproject="server" | module Eliom_parameter >>~]|<<div class="odocwiki_info"|~The combinator <<span class="odocwiki_inlinecode"|neopt p>> allow to define an optional parameter assumed to be ~None if empty~.
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="neopt"| value Eliom_parameter_sigs.S.neopt >> ~[<<a_api subproject="server" | module Eliom_parameter_sigs.S >>~]|<<div class="odocwiki_info"|~The combinator <<span class="odocwiki_inlinecode"|neopt p>> allows defining an optional parameter
+      assumed to be ~None if empty~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="new_elt_id"| value Eliom_content.Html5.Id.new_elt_id >> ~[<<a_api subproject="server" | module Eliom_content.Html5.Id >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|new~_elt~_id ~(~)>> creates a new global ~H~T~M~L~5 element
@@ -1093,8 +1100,8 @@
 >>
 |
 |@@ @style="tet-align: left;"@@\\O|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="ocaml"| value Eliom_parameter.ocaml >> ~[<<a_api subproject="server" | module Eliom_parameter >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|ocaml s>> tells that the service is expecting some caml ~(client side~)
-    program to send some value of type ~'a~, marshaled~.
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="ocaml"| value Eliom_parameter_sigs.S.ocaml >> ~[<<a_api subproject="server" | module Eliom_parameter_sigs.S >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|ocaml s>> tells that the service is expecting some caml ~(client
+      side~) program to send some value of type ~'a~, marshaled~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="of_json"| value Eliom_lib.of_json >> ~[<<a_api subproject="server" | module Eliom_lib >>~]||
@@ -1103,7 +1110,7 @@
       asynchronous edge originating from <<span class="odocwiki_inlinecode"|e>>~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="opt"| value Eliom_parameter.opt >> ~[<<a_api subproject="server" | module Eliom_parameter >>~]|<<div class="odocwiki_info"|~The combinator <<span class="odocwiki_inlinecode"|opt p>> allow to define an optional parameter~.
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="opt"| value Eliom_parameter_sigs.S.opt >> ~[<<a_api subproject="server" | module Eliom_parameter_sigs.S >>~]|<<div class="odocwiki_info"|~The combinator <<span class="odocwiki_inlinecode"|opt p>> allows defining optional parameters~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="outOfLineC"| value Atom_feed.outOfLineC >> ~[<<a_api subproject="server" | module Atom_feed >>~]|<<div class="odocwiki_info"|~Every other content
@@ -1216,7 +1223,7 @@ foobar:value}}}
     by preapplying <<span class="odocwiki_inlinecode"|service>> to the ~G~E~T <<span class="odocwiki_inlinecode"|parameters>>~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="prod"| value Eliom_parameter.prod >> ~[<<a_api subproject="server" | module Eliom_parameter >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_parameter.( ** ) >>~.
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="prod"| value Eliom_parameter_sigs.S.prod >> ~[<<a_api subproject="server" | module Eliom_parameter_sigs.S >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_parameter_sigs.S.( ** ) >>~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="published"| value Atom_feed.published >> ~[<<a_api subproject="server" | module Atom_feed >>~]||
@@ -1227,87 +1234,87 @@ foobar:value}}}
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="put_coservice"| value Eliom_service.Unsafe.put_coservice >> ~[<<a_api subproject="server" | module Eliom_service.Unsafe >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|put~_coservice ~~fallback ~~get~_params>> creates an     <<a_manual chapter="services" fragment="attached_coservices"|attached
     coservice>> with the same path and ~G~E~T parameters than the
     service <<span class="odocwiki_inlinecode"|fallback>> and taking a single ~P~O~S~T parameter of type
-    <<a_api subproject="server" | val Eliom_parameter.raw_post_data >>~.
+    <<span class="odocwiki_inlinecode"|~Eliom~_parameter~.raw~_post~_data>>~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="put_coservice"| value Eliom_service.Ocaml.put_coservice >> ~[<<a_api subproject="server" | module Eliom_service.Ocaml >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|put~_coservice ~~fallback ~~get~_params>> creates an     <<a_manual chapter="services" fragment="attached_coservices"|attached
     coservice>> with the same path and ~G~E~T parameters than the
     service <<span class="odocwiki_inlinecode"|fallback>> and taking a single ~P~O~S~T parameter of type
-    <<a_api subproject="server" | val Eliom_parameter.raw_post_data >>~.
+    <<span class="odocwiki_inlinecode"|~Eliom~_parameter~.raw~_post~_data>>~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="put_coservice"| value Eliom_service.App.put_coservice >> ~[<<a_api subproject="server" | module Eliom_service.App >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|put~_coservice ~~fallback ~~get~_params>> creates an     <<a_manual chapter="services" fragment="attached_coservices"|attached
     coservice>> with the same path and ~G~E~T parameters than the
     service <<span class="odocwiki_inlinecode"|fallback>> and taking a single ~P~O~S~T parameter of type
-    <<a_api subproject="server" | val Eliom_parameter.raw_post_data >>~.
+    <<span class="odocwiki_inlinecode"|~Eliom~_parameter~.raw~_post~_data>>~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="put_coservice"| value Eliom_service.Http.put_coservice >> ~[<<a_api subproject="server" | module Eliom_service.Http >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|put~_coservice ~~fallback ~~get~_params>> creates an     <<a_manual chapter="services" fragment="attached_coservices"|attached
     coservice>> with the same path and ~G~E~T parameters than the
     service <<span class="odocwiki_inlinecode"|fallback>> and taking a single ~P~O~S~T parameter of type
-    <<a_api subproject="server" | val Eliom_parameter.raw_post_data >>~.
+    <<span class="odocwiki_inlinecode"|~Eliom~_parameter~.raw~_post~_data>>~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="put_coservice'"| value Eliom_service.Unsafe.put_coservice' >> ~[<<a_api subproject="server" | module Eliom_service.Unsafe >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|put~_coservice~' ~~get~_params>> creates a <<a_manual
     chapter="services" fragment="non-attached_coservices"|non-attached
     coservice>> taking a single ~P~O~S~T parameter of type
-    <<a_api subproject="server" | val Eliom_parameter.raw_post_data >>~.
+    <<span class="odocwiki_inlinecode"|~Eliom~_parameter~.raw~_post~_data>>~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="put_coservice'"| value Eliom_service.Ocaml.put_coservice' >> ~[<<a_api subproject="server" | module Eliom_service.Ocaml >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|put~_coservice~' ~~get~_params>> creates a <<a_manual
     chapter="services" fragment="non-attached_coservices"|non-attached
     coservice>> taking a single ~P~O~S~T parameter of type
-    <<a_api subproject="server" | val Eliom_parameter.raw_post_data >>~.
+    <<span class="odocwiki_inlinecode"|~Eliom~_parameter~.raw~_post~_data>>~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="put_coservice'"| value Eliom_service.App.put_coservice' >> ~[<<a_api subproject="server" | module Eliom_service.App >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|put~_coservice~' ~~get~_params>> creates a <<a_manual
     chapter="services" fragment="non-attached_coservices"|non-attached
     coservice>> taking a single ~P~O~S~T parameter of type
-    <<a_api subproject="server" | val Eliom_parameter.raw_post_data >>~.
+    <<span class="odocwiki_inlinecode"|~Eliom~_parameter~.raw~_post~_data>>~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="put_coservice'"| value Eliom_service.Http.put_coservice' >> ~[<<a_api subproject="server" | module Eliom_service.Http >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|put~_coservice~' ~~get~_params>> creates a <<a_manual
     chapter="services" fragment="non-attached_coservices"|non-attached
     coservice>> taking a single ~P~O~S~T parameter of type
-    <<a_api subproject="server" | val Eliom_parameter.raw_post_data >>~.
+    <<span class="odocwiki_inlinecode"|~Eliom~_parameter~.raw~_post~_data>>~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="put_service"| value Eliom_service.Unsafe.put_service >> ~[<<a_api subproject="server" | module Eliom_service.Unsafe >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|put~_service ~~path ~~get~_params ~(~)>> creates a service
     that answers the ~H~T~T~P ~P~U~T method~, and only takes
-    <<a_api subproject="server" | val Eliom_parameter.raw_post_data >> as ~P~O~S~T parameter~.
+    <<span class="odocwiki_inlinecode"|~Eliom~_parameter~.raw~_post~_data>> as ~P~O~S~T parameter~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="put_service"| value Eliom_service.Ocaml.put_service >> ~[<<a_api subproject="server" | module Eliom_service.Ocaml >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|put~_service ~~path ~~get~_params ~(~)>> creates a service
     that answers the ~H~T~T~P ~P~U~T method~, and only takes
-    <<a_api subproject="server" | val Eliom_parameter.raw_post_data >> as ~P~O~S~T parameter~.
+    <<span class="odocwiki_inlinecode"|~Eliom~_parameter~.raw~_post~_data>> as ~P~O~S~T parameter~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="put_service"| value Eliom_service.App.put_service >> ~[<<a_api subproject="server" | module Eliom_service.App >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|put~_service ~~path ~~get~_params ~(~)>> creates a service
     that answers the ~H~T~T~P ~P~U~T method~, and only takes
-    <<a_api subproject="server" | val Eliom_parameter.raw_post_data >> as ~P~O~S~T parameter~.
+    <<span class="odocwiki_inlinecode"|~Eliom~_parameter~.raw~_post~_data>> as ~P~O~S~T parameter~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="put_service"| value Eliom_service.Http.put_service >> ~[<<a_api subproject="server" | module Eliom_service.Http >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|put~_service ~~path ~~get~_params ~(~)>> creates a service
     that answers the ~H~T~T~P ~P~U~T method~, and only takes
-    <<a_api subproject="server" | val Eliom_parameter.raw_post_data >> as ~P~O~S~T parameter~.
+    <<span class="odocwiki_inlinecode"|~Eliom~_parameter~.raw~_post~_data>> as ~P~O~S~T parameter~.
 >>
 |
 |@@ @style="tet-align: left;"@@\\R|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="radio"| value Eliom_parameter.radio >> ~[<<a_api subproject="server" | module Eliom_parameter >>~]|<<div class="odocwiki_info"|~Specifying parameter as <<span class="odocwiki_inlinecode"|radio f s>> tells that the service takes an optional
-    argument labeled <<span class="odocwiki_inlinecode"|s>> and of type <<span class="odocwiki_inlinecode"|f s>>~.
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="radio"| value Eliom_parameter_sigs.S.radio >> ~[<<a_api subproject="server" | module Eliom_parameter_sigs.S >>~]|<<div class="odocwiki_info"|~A parameter as <<span class="odocwiki_inlinecode"|radio f s>> specifies that the service takes an
+      optional argument labeled <<span class="odocwiki_inlinecode"|s>>~, of type <<span class="odocwiki_inlinecode"|f s>>~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="radio"| value Eliom_form_sigs.S.radio >> ~[<<a_api subproject="server" | module Eliom_form_sigs.S >>~]|<<div class="odocwiki_info"|~Creates a radio <<span class="odocwiki_inlinecode"|~<input~>>> tag~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="raw_post_data"| value Eliom_parameter.raw_post_data >> ~[<<a_api subproject="server" | module Eliom_parameter >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="raw_post_data"| value Eliom_parameter_sigs.S.raw_post_data >> ~[<<a_api subproject="server" | module Eliom_parameter_sigs.S >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="reconstruct_relative_url_path"| value Eliom_uri.reconstruct_relative_url_path >> ~[<<a_api subproject="server" | module Eliom_uri >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|reconstruct~_relative~_url~_path src dest>> returns a
     path to <<span class="odocwiki_inlinecode"|dest>> that is relative to <<span class="odocwiki_inlinecode"|src>>~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="regexp"| value Eliom_parameter.regexp >> ~[<<a_api subproject="server" | module Eliom_parameter >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|regexp r d s>> tells that the service takes a string
-   that matches the regular expression <<span class="odocwiki_inlinecode"|r>> as parameter~,
-   labeled <<span class="odocwiki_inlinecode"|s>>~, and that will be rewritten in d~.
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="regexp"| value Eliom_parameter.regexp >> ~[<<a_api subproject="server" | module Eliom_parameter >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|regexp r d s>> tells that the service takes a string that matches
+    the regular expression <<span class="odocwiki_inlinecode"|r>> as parameter~, labeled <<span class="odocwiki_inlinecode"|s>>~, and that will
+    be rewritten in d~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register"| value Eliom_atom.Reg.register >> ~[<<a_api subproject="server" | module Eliom_atom.Reg >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|register service handler>> will associate the
@@ -2349,8 +2356,8 @@ foobar:value}}}
     reference <<span class="odocwiki_inlinecode"|eref>>~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="set"| value Eliom_parameter.set >> ~[<<a_api subproject="server" | module Eliom_parameter >>~]|<<div class="odocwiki_info"|~Use this if you want your service to take several parameters
-   with the same name~.
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="set"| value Eliom_parameter_sigs.S.set >> ~[<<a_api subproject="server" | module Eliom_parameter_sigs.S >>~]|<<div class="odocwiki_info"|~Use this if you want your service to take several parameters
+      with the same name~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="set_client_fun"| value Eliom_registration.ELIOM_APPL.set_client_fun >> ~[<<a_api subproject="server" | module Eliom_registration.ELIOM_APPL >>~]|<<div class="odocwiki_info"|~Attach a client function to a service~,
@@ -2512,13 +2519,14 @@ foobar:value}}}
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="stream"| value Eliom_bus.stream >> ~[<<a_api subproject="server" | module Eliom_bus >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|stream b>> returns the stream of data sent to bus <<span class="odocwiki_inlinecode"|b>>~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="string"| value Eliom_parameter.string >> ~[<<a_api subproject="server" | module Eliom_parameter >>~]|<<div class="odocwiki_info"|~Specifying parameter as <<span class="odocwiki_inlinecode"|string s>> tells that the service takes a string as parameter~, labeled <<span class="odocwiki_inlinecode"|s>>~.
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="string"| value Eliom_parameter_sigs.S.string >> ~[<<a_api subproject="server" | module Eliom_parameter_sigs.S >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|string s>> means that the service takes a string as the parameter
+      named <<span class="odocwiki_inlinecode"|s>>~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="string"| value Eliom_form_sigs.S.string >> ~[<<a_api subproject="server" | module Eliom_form_sigs.S >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="string_coordinates"| value Eliom_parameter.string_coordinates >> ~[<<a_api subproject="server" | module Eliom_parameter >>~]|<<div class="odocwiki_info"|~Specifying parameter as <<span class="odocwiki_inlinecode"|string~_coordinates s>> tells that the service takes
-    as parameters the coordinates of a point and the associated
-    <<span class="odocwiki_inlinecode"|string>> value in an <<span class="odocwiki_inlinecode"|~<input type~="image" value~="~.~.~." ~.~.~.~>>>~.
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="string_coordinates"| value Eliom_parameter_sigs.S.string_coordinates >> ~[<<a_api subproject="server" | module Eliom_parameter_sigs.S >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|coordinates s>> means that the service takes as parameters the
+      coordinates of a point in an <<span class="odocwiki_inlinecode"|~<input type~="image" ~.~.~.~>>> ~(plus
+      the associated string value~)~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="string_escape"| value Eliom_lib.string_escape >> ~[<<a_api subproject="server" | module Eliom_lib >>~]||
@@ -2538,21 +2546,21 @@ foobar:value}}}
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="subtitle"| value Atom_feed.subtitle >> ~[<<a_api subproject="server" | module Atom_feed >>~]|<<div class="odocwiki_info"|~Subtitle tag
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="suffix"| value Eliom_parameter.suffix >> ~[<<a_api subproject="server" | module Eliom_parameter >>~]|<<div class="odocwiki_info"|~Tells that the parameter of the service handler is
-    the suffix of the ~U~R~L of the current service~.
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="suffix"| value Eliom_parameter_sigs.S.suffix >> ~[<<a_api subproject="server" | module Eliom_parameter_sigs.S >>~]|<<div class="odocwiki_info"|~Tells that the parameter of the service handler is the suffix of
+      the ~U~R~L of the current service~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="suffix_const"| value Eliom_parameter.suffix_const >> ~[<<a_api subproject="server" | module Eliom_parameter >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|suffix~_const v>> is used only inside suffixes ~(do nothing for
-    regular parameters~)~.
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="suffix_const"| value Eliom_parameter_sigs.S.suffix_const >> ~[<<a_api subproject="server" | module Eliom_parameter_sigs.S >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|suffix~_const v>> is used only inside suffixes~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="suffix_prod"| value Eliom_parameter.suffix_prod >> ~[<<a_api subproject="server" | module Eliom_parameter >>~]|<<div class="odocwiki_info"|~Tells that the function that will generate the service takes
-   a pair whose first element is the suffix of the ~U~R~L of the current service~,
-   and the second element corresponds to other ~(regular~) parameters~.
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="suffix_prod"| value Eliom_parameter_sigs.S.suffix_prod >> ~[<<a_api subproject="server" | module Eliom_parameter_sigs.S >>~]|<<div class="odocwiki_info"|~Tells that the function that will generate the service takes a
+      pair whose first element is the suffix of the ~U~R~L of the current
+      service~, and the second element corresponds to other ~(regular~)
+      parameters~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="sum"| value Eliom_parameter.sum >> ~[<<a_api subproject="server" | module Eliom_parameter >>~]|<<div class="odocwiki_info"|~The combinator <<span class="odocwiki_inlinecode"|sum p~1 p~2>> allows one to define service that expect
-    either the parameter <<span class="odocwiki_inlinecode"|p~1>> or the parameter <<span class="odocwiki_inlinecode"|p~2>>~.
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="sum"| value Eliom_parameter_sigs.S.sum >> ~[<<a_api subproject="server" | module Eliom_parameter_sigs.S >>~]|<<div class="odocwiki_info"|~The combinator <<span class="odocwiki_inlinecode"|sum p~1 p~2>> allows one to define service that
+      expect either the parameter <<span class="odocwiki_inlinecode"|p~1>> or the parameter <<span class="odocwiki_inlinecode"|p~2>>~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="summary"| value Atom_feed.summary >> ~[<<a_api subproject="server" | module Atom_feed >>~]|<<div class="odocwiki_info"|~Summary tag
@@ -2580,14 +2588,15 @@ foobar:value}}}
     regular signal with initial value <<span class="odocwiki_inlinecode"|init>>~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="type_checker"| value Eliom_parameter.type_checker >> ~[<<a_api subproject="server" | module Eliom_parameter >>~]|<<div class="odocwiki_info"|~Specifying parameter as <<span class="odocwiki_inlinecode"|type~_checker check t>>
-    is equivalent as <<span class="odocwiki_inlinecode"|t>> but the check function is called after decoding the
-    parameters~, allowing you to make more checks on the parameters before
-    the service handler is called~.
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="type_checker"| value Eliom_parameter.type_checker >> ~[<<a_api subproject="server" | module Eliom_parameter >>~]|<<div class="odocwiki_info"|~Specifying parameter as <<span class="odocwiki_inlinecode"|type~_checker check t>> is equivalent as
+    <<span class="odocwiki_inlinecode"|t>> but the check function is called after decoding the
+    parameters~, allowing you to make more checks on the parameters
+    before the service handler is called~.
 >>
 |
 |@@ @style="tet-align: left;"@@\\U|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="unit"| value Eliom_parameter.unit >> ~[<<a_api subproject="server" | module Eliom_parameter >>~]|<<div class="odocwiki_info"|~Specifying parameter as <<span class="odocwiki_inlinecode"|unit>> is used for services that don~'t have any parameters
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="unit"| value Eliom_parameter_sigs.S.unit >> ~[<<a_api subproject="server" | module Eliom_parameter_sigs.S >>~]|<<div class="odocwiki_info"|~Specifying parameter as <<span class="odocwiki_inlinecode"|unit>> is used for services that don~'t
+      have any parameters
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="unregister"| value Eliom_service.unregister >> ~[<<a_api subproject="server" | module Eliom_service >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|unregister service>> unregister the service handler
@@ -2640,14 +2649,15 @@ foobar:value}}}
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="user"| value Eliom_form_sigs.S.user >> ~[<<a_api subproject="server" | module Eliom_form_sigs.S >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="user_type"| value Eliom_parameter.user_type >> ~[<<a_api subproject="server" | module Eliom_parameter >>~]|<<div class="odocwiki_info"|~Specifying parameter as <<span class="odocwiki_inlinecode"|user~_type ~~of~_string ~~to~_string s>> tells that the
-    service take a parameter~, labeled <<span class="odocwiki_inlinecode"|s>>~, and that the server will
-    have to use <<span class="odocwiki_inlinecode"|of~_string>> and <<span class="odocwiki_inlinecode"|to~_string>> to make the conversion
-    between the ~O~Caml representation of the parameter and it~'s
-    external representation as a string~.
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="user_type"| value Eliom_parameter_sigs.S.user_type >> ~[<<a_api subproject="server" | module Eliom_parameter_sigs.S >>~]|<<div class="odocwiki_info"|~Specifying parameter as <<span class="odocwiki_inlinecode"|user~_type ~~of~_string ~~to~_string s>>
+      tells that the service take a parameter~, labeled <<span class="odocwiki_inlinecode"|s>>~, and that the
+      server will have to use <<span class="odocwiki_inlinecode"|of~_string>> and <<span class="odocwiki_inlinecode"|to~_string>> to make the
+      conversion between the ~O~Caml representation of the parameter and
+      it~'s external representation as a string~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="user_type_coordinates"| value Eliom_parameter.user_type_coordinates >> ~[<<a_api subproject="server" | module Eliom_parameter >>~]|<<div class="odocwiki_info"|~Same as <<span class="odocwiki_inlinecode"|string~_coordinates>> but for a value of your own type~.
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="user_type_coordinates"| value Eliom_parameter_sigs.S.user_type_coordinates >> ~[<<a_api subproject="server" | module Eliom_parameter_sigs.S >>~]|<<div class="odocwiki_info"|~Same as <<span class="odocwiki_inlinecode"|string~_coordinates>> but for a value of your own
+      type~.
 >>
 |
 |@@ @style="tet-align: left;"@@\\V|

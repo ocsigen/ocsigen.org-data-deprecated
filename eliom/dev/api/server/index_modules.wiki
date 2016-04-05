@@ -110,7 +110,13 @@ file~.
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Eliom_openid"| module Eliom_openid >> |<<div class="odocwiki_info"|~Open~I~D identification
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Eliom_parameter"| module Eliom_parameter >> |<<div class="odocwiki_info"|~Ad~-hoc runtime type representation for service parameters~.
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Eliom_parameter"| module Eliom_parameter >> |<<div class="odocwiki_info"|~Specifying parameter as <<span class="odocwiki_inlinecode"|type~_checker check t>> is equivalent as
+    <<span class="odocwiki_inlinecode"|t>> but the check function is called after decoding the
+    parameters~, allowing you to make more checks on the parameters
+    before the service handler is called~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Eliom_parameter_sigs"| module Eliom_parameter_sigs >> |<<div class="odocwiki_info"|~Ad~-hoc runtime type representation for service parameters~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Eliom_react"| module Eliom_react >> |<<div class="odocwiki_info"|~Propagate events

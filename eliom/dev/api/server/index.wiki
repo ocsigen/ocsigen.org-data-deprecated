@@ -64,7 +64,10 @@ file~.
 |<<a_api subproject="server" | module Eliom_service >>|<<div class="odocwiki_info"|~Creation and manipulation of ~Eliom services~.
 >>
 |
-|<<a_api subproject="server" | module Eliom_parameter >>|<<div class="odocwiki_info"|~Ad~-hoc runtime type representation for service parameters~.
+|<<a_api subproject="server" | module Eliom_parameter >>|<<div class="odocwiki_info"|~Specifying parameter as <<span class="odocwiki_inlinecode"|type~_checker check t>> is equivalent as
+    <<span class="odocwiki_inlinecode"|t>> but the check function is called after decoding the
+    parameters~, allowing you to make more checks on the parameters
+    before the service handler is called~.
 >>
 |
 |<<a_api subproject="server" | module Eliom_registration >>|<<div class="odocwiki_info"|~Eliom services registration for various kinds of
