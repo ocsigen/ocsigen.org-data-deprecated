@@ -1427,6 +1427,11 @@
              'return)
             Eliom_service.service ->
     ('a -> 'b -> unit Lwt.t) Eliom_client_value.t -> unit
+  val has_client_fun_ :
+    ('a, 'b, [< Eliom_service.service_method ], [< Eliom_service.attached ],
+     [< Eliom_service.service_kind ], [< Eliom_service.suff ], 'e, 'f,
+     [< Eliom_service.registrable ], 'return)
+    Eliom_service.service -> bool
   val internal_set_client_fun_ :
     service:('a, 'b, [< Eliom_service.service_method ],
              [< Eliom_service.attached ], [< Eliom_service.service_kind ],
