@@ -922,6 +922,7 @@
         if <<span class="odocwiki_inlinecode"|elt>> is not the last~.
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="next_state_id"| value Eliom_client_core.next_state_id >> ~[<<a_api subproject="client" | module Eliom_client_core >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="node"| value Eliom_content_core.Html5.R.node >> ~[<<a_api subproject="client" | module Eliom_content_core.Html5.R >>~]|<<div class="odocwiki_info"|the function <<span class="odocwiki_inlinecode"|node s>> create an ~H~T~M~L~5 <<span class="odocwiki_inlinecode"|elt>> from a signal <<span class="odocwiki_inlinecode"|s>>~.
 >>
 |
