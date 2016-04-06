@@ -65,10 +65,24 @@
 |<<a_api | module Xml_sigs >>|<<div class="odocwiki_info"|~X~M~L ~Signatures~.
 >>
 |
+|<<a_api | module Xml_wrap >>||
 |<<a_api | module Xml_iter >>|<<div class="odocwiki_info"|~Basic iterators over ~X~M~L tree ~(functorial interface~)~.
 >>
 |
 |<<a_api | module Xml_print >>|<<div class="odocwiki_info"|~Printing utilities~.
+>>
+|
+
+
+
+
+
+=@@id="1_Ppxlibrary"@@~Ppx library=
+
+
+
+
+|<<a_api | module Ppx_tyxml >>|<<div class="odocwiki_info"|~Ty~X~M~L ppx library~.
 >>
 |
 

@@ -12,8 +12,11 @@
 ==[[Html5_f|Html5_f]]
 ==[[Svg_f|Svg_f]]
 ==[[Xml_sigs|Xml_sigs]]
+==[[Xml_wrap|Xml_wrap]]
 ==[[Xml_iter|Xml_iter]]
 ==[[Xml_print|Xml_print]]
+=~Ppx library
+==[[Ppx_tyxml|Ppx_tyxml]]
 =~Camlp~4 ~Syntax extension and parser
 ==[[Pa_tyxml|Pa_tyxml]]
 ==[[Simplexmlparser|Simplexmlparser]]

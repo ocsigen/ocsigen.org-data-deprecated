@@ -65,7 +65,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="Pa_tyxml"| module Pa_tyxml >> |<<div class="odocwiki_info"|~Syntax extension for ~H~T~M~L~5 or ~S~V~G tree creation~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api text="Ppx_tyxml"| module Ppx_tyxml >> |<<div class="odocwiki_info"|~Internal functions to build tyxml~'s ppx~.
+|@@class="odocwiki_index"@ @@<<a_api text="Ppx_tyxml"| module Ppx_tyxml >> |<<div class="odocwiki_info"|~Ty~X~M~L ppx library~.
 >>
 |
 |@@ @style="tet-align: left;"@@\\S|
