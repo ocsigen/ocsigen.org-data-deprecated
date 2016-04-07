@@ -1,6 +1,6 @@
 <<code language="ocaml" | sig
   val markup_to_expr :
-    ?context:[ `Document | `Fragment of string ] ->
+    Ppx_common.lang ->
     Location.t -> Parsetree.expression -> Parsetree.expression
   val mapper : string list -> Ast_mapper.mapper
 end >>
