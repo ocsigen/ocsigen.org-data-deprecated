@@ -548,10 +548,6 @@
 |@@class="odocwiki_index"@ @@<<a_api text="legend_attrib"| type Html5_types.legend_attrib >> ~[<<a_api | module Html5_types >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="legend_content"| type Html5_types.legend_content >> ~[<<a_api | module Html5_types >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="legend_content_fun"| type Html5_types.legend_content_fun >> ~[<<a_api | module Html5_types >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="length"| type Html5_types.length >> ~[<<a_api | module Html5_types >>~]|<<div class="odocwiki_info"|~The value may be either in pixels or a percentage of the available
-    horizontal or vertical space~.
->>
-|
 |@@class="odocwiki_index"@ @@<<a_api text="length"| type Svg_types.Unit.length >> ~[<<a_api | module Svg_types.Unit >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="lengths"| type Svg_types.lengths >> ~[<<a_api | module Svg_types >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="li"| type Html5_types.li >> ~[<<a_api | module Html5_types >>~]||
@@ -633,9 +629,6 @@
 |@@class="odocwiki_index"@ @@<<a_api text="mpath"| type Svg_types.mpath >> ~[<<a_api | module Svg_types >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="mpath_attr"| type Svg_types.mpath_attr >> ~[<<a_api | module Svg_types >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="mpath_content"| type Svg_types.mpath_content >> ~[<<a_api | module Svg_types >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="multilength"| type Html5_types.multilength >> ~[<<a_api | module Html5_types >>~]|<<div class="odocwiki_info"|~The value may be a ~Length or a relative length~.
->>
-|
 |@@ @style="tet-align: left;"@@\\N|
 |@@class="odocwiki_index"@ @@<<a_api text="name"| type Html5_types.name >> ~[<<a_api | module Html5_types >>~]|<<div class="odocwiki_info"|~A name with the same character constraints as ~I~D above
 >>

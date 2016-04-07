@@ -16,7 +16,6 @@
   type fpi = string
   type frametarget = string
   type languagecode = string
-  type length = [ `Percent of int | `Pixels of int ]
   type linktype =
       [ `Alternate
       | `Archives
@@ -56,7 +55,6 @@
       | `TTY
       | `TV ]
   type mediadesc = Html5_types.mediadesc_token list
-  type multilength = [ `Percent of int | `Pixels of int | `Relative of int ]
   type number = int
   type numbers = Html5_types.number list
   type float_number = float

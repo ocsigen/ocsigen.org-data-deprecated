@@ -51,10 +51,6 @@
 <<pre class="ocsforge_color odocwiki_code" id="TYPElanguagecode"|<<span class="ocsforge_color_keyword"|type>> <<span class="odocwiki_name"|languagecode>> <<span class="ocsforge_color_delimiter"|~=>> <<span class="odocwiki_type"|string>> >><<div class="odocwiki_info"|~A language code~, as per ~R~F~C~5~6~4~6~/~B~C~P~4~7~.
 **See also** [[http://tools.ietf.org/html/rfc5646|~R~F~C~5~6~4~6]]\\
 >>
-<<pre class="ocsforge_color odocwiki_code" id="TYPElength"|<<span class="ocsforge_color_keyword"|type>> <<span class="odocwiki_name"|length>> <<span class="ocsforge_color_delimiter"|~=>> <<span class="odocwiki_type"|[ `Percent of int | `Pixels of int ]>> >><<div class="odocwiki_info"|~The value may be either in pixels or a percentage of the available
-    horizontal or vertical space~. ~Thus~, the value <<span class="odocwiki_inlinecode"|`~Percent ~5~0>> means half of
-    the available space~.
->>
 <<pre class="ocsforge_color odocwiki_code" id="TYPElinktype"|<<span class="ocsforge_color_keyword"|type>> <<span class="odocwiki_name"|linktype>> <<span class="ocsforge_color_delimiter"|~=>> <<span class="odocwiki_type"|\\  [ `Alternate\\  | `Archives\\  | `Author\\  | `Bookmark\\  | `External\\  | `First\\  | `Help\\  | `Icon\\  | `Index\\  | `Last\\  | `License\\  | `Next\\  | `Nofollow\\  | `Noreferrer\\  | `Other of string\\  | `Pingback\\  | `Prefetch\\  | `Prev\\  | `Search\\  | `Sidebar\\  | `Stylesheet\\  | `Tag\\  | `Up ]>> >><<pre class="ocsforge_color odocwiki_code" id="TYPElinktypes"|<<span class="ocsforge_color_keyword"|type>> <<span class="odocwiki_name"|linktypes>> <<span class="ocsforge_color_delimiter"|~=>> <<span class="odocwiki_type"|<<a_api text="linktype" | type Html5_types.linktype >> list>> >><<div class="odocwiki_info"|~Authors may use the following recognized link types~, listed here with
         their conventional interpretations~. ~A ~Link~Types value refers to a
         space~-separated list of link types~. ~White space characters are not
@@ -139,18 +135,6 @@
 * <<span class="odocwiki_inlinecode"|`~Raw~_mediadesc>>~:
         ~For more complex ~(untyped~) media descriptors~.
 
-<<pre class="ocsforge_color odocwiki_code" id="TYPEmultilength"|<<span class="ocsforge_color_keyword"|type>> <<span class="odocwiki_name"|multilength>> <<span class="ocsforge_color_delimiter"|~=>> <<span class="odocwiki_type"|[ `Percent of int | `Pixels of int | `Relative of int ]>> >><<div class="odocwiki_info"|~The value may be a ~Length or a relative length~. ~A relative length
-        has the form <<span class="odocwiki_inlinecode"|"i~*">>~, where <<span class="odocwiki_inlinecode"|"i">> is an integer~. ~When allotting space
-        among elements competing for that space~, user agents allot pixel
-        and percentage lengths first~, then divide up remaining available
-        space among relative lengths~. ~Each relative length receives a
-        portion of the available space that is proportional to the integer
-        preceding the <<span class="odocwiki_inlinecode"|"~*">>~. ~The value <<span class="odocwiki_inlinecode"|"~*">> is equivalent to <<span class="odocwiki_inlinecode"|"~1~*">>~. ~Thus~, if
-        ~6~0 pixels of space are available after the user agent allots pixel
-        and percentage space~, and the competing relative lengths are <<span class="odocwiki_inlinecode"|"~1~*">>~,
-        <<span class="odocwiki_inlinecode"|"~2~*">>~, and <<span class="odocwiki_inlinecode"|"~3~*">>~, the <<span class="odocwiki_inlinecode"|"~1~*">> will be allotted ~1~0 pixels~, the <<span class="odocwiki_inlinecode"|"~2~*">> will be
-        allotted ~2~0 pixels~, and the <<span class="odocwiki_inlinecode"|"~3~*">> will be allotted ~3~0 pixels~.
->>
 <<pre class="ocsforge_color odocwiki_code" id="TYPEnumber"|<<span class="ocsforge_color_keyword"|type>> <<span class="odocwiki_name"|number>> <<span class="ocsforge_color_delimiter"|~=>> <<span class="odocwiki_type"|int>> >><<pre class="ocsforge_color odocwiki_code" id="TYPEnumbers"|<<span class="ocsforge_color_keyword"|type>> <<span class="odocwiki_name"|numbers>> <<span class="ocsforge_color_delimiter"|~=>> <<span class="odocwiki_type"|<<a_api text="number" | type Html5_types.number >> list>> >><<pre class="ocsforge_color odocwiki_code" id="TYPEfloat_number"|<<span class="ocsforge_color_keyword"|type>> <<span class="odocwiki_name"|float~_number>> <<span class="ocsforge_color_delimiter"|~=>> <<span class="odocwiki_type"|float>> >><<pre class="ocsforge_color odocwiki_code" id="TYPEpixels"|<<span class="ocsforge_color_keyword"|type>> <<span class="odocwiki_name"|pixels>> <<span class="ocsforge_color_delimiter"|~=>> <<span class="odocwiki_type"|int>> >><<div class="odocwiki_info"|~The value is an integer that represents the number of pixels of
         the canvas ~(screen~, paper~)~. ~Thus~, the value <<span class="odocwiki_inlinecode"|"~5~0">> means fifty
         pixels~. ~For normative information about the definition of a pixel~,

@@ -42,11 +42,8 @@
 |@@class="odocwiki_index"@ @@<<a_api text="a_by"| value Svg_sigs.T.a_by >> ~[<<a_api | module Svg_sigs.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="a_calcMode"| value Svg_sigs.T.a_calcMode >> ~[<<a_api | module Svg_sigs.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="a_cap_height"| value Svg_sigs.T.a_cap_height >> ~[<<a_api | module Svg_sigs.T >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="a_cellpadding"| value Html5_sigs.T.a_cellpadding >> ~[<<a_api | module Html5_sigs.T >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="a_cellspacing"| value Html5_sigs.T.a_cellspacing >> ~[<<a_api | module Html5_sigs.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="a_challenge"| value Html5_sigs.T.a_challenge >> ~[<<a_api | module Html5_sigs.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="a_char"| value Html5_sigs.T.a_char >> ~[<<a_api | module Html5_sigs.T >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="a_charoff"| value Html5_sigs.T.a_charoff >> ~[<<a_api | module Html5_sigs.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="a_charset"| value Html5_sigs.T.a_charset >> ~[<<a_api | module Html5_sigs.T >>~]|<<div class="odocwiki_info"|~This attribute specifies the character encoding of the resource
       designated by the link~.
 >>
@@ -884,7 +881,6 @@
 |@@class="odocwiki_index"@ @@<<a_api text="string_of_lengths"| value Svg_sigs.Wrapped_functions.string_of_lengths >> ~[<<a_api | module Svg_sigs.Wrapped_functions >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="string_of_linktypes"| value Html5_sigs.Wrapped_functions.string_of_linktypes >> ~[<<a_api | module Html5_sigs.Wrapped_functions >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="string_of_mediadesc"| value Html5_sigs.Wrapped_functions.string_of_mediadesc >> ~[<<a_api | module Html5_sigs.Wrapped_functions >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="string_of_multilength"| value Html5_sigs.Wrapped_functions.string_of_multilength >> ~[<<a_api | module Html5_sigs.Wrapped_functions >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="string_of_number"| value Svg_sigs.Wrapped_functions.string_of_number >> ~[<<a_api | module Svg_sigs.Wrapped_functions >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="string_of_number"| value Xml_print.string_of_number >> ~[<<a_api | module Xml_print >>~]|<<div class="odocwiki_info"|~Convert a float to a string using a compact representation compatible with ~Javascript norme~.
 >>

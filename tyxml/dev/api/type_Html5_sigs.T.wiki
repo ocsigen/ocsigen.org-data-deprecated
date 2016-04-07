@@ -1110,12 +1110,6 @@
     Html5_types.text Html5_sigs.T.wrap -> [> `Summary ] Html5_sigs.T.attrib
   val a_border :
     Html5_types.pixels Html5_sigs.T.wrap -> [> `Border ] Html5_sigs.T.attrib
-  val a_cellpadding :
-    Html5_types.length Html5_sigs.T.wrap ->
-    [> `Cellpadding ] Html5_sigs.T.attrib
-  val a_cellspacing :
-    Html5_types.length Html5_sigs.T.wrap ->
-    [> `Cellspacing ] Html5_sigs.T.attrib
   val a_datapagesize :
     Html5_types.cdata Html5_sigs.T.wrap ->
     [> `Datapagesize ] Html5_sigs.T.attrib
@@ -1124,8 +1118,6 @@
     [> `Rules ] Html5_sigs.T.attrib
   val a_char :
     Html5_types.character Html5_sigs.T.wrap -> [> `Char ] Html5_sigs.T.attrib
-  val a_charoff :
-    Html5_types.length Html5_sigs.T.wrap -> [> `Charoff ] Html5_sigs.T.attrib
   val a_alt :
     Html5_types.text Html5_sigs.T.wrap -> [> `Alt ] Html5_sigs.T.attrib
   val a_height :

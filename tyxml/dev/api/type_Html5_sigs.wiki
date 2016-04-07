@@ -1210,12 +1210,6 @@
       val a_border :
         Html5_types.pixels Html5_sigs.T.wrap ->
         [> `Border ] Html5_sigs.T.attrib
-      val a_cellpadding :
-        Html5_types.length Html5_sigs.T.wrap ->
-        [> `Cellpadding ] Html5_sigs.T.attrib
-      val a_cellspacing :
-        Html5_types.length Html5_sigs.T.wrap ->
-        [> `Cellspacing ] Html5_sigs.T.attrib
       val a_datapagesize :
         Html5_types.cdata Html5_sigs.T.wrap ->
         [> `Datapagesize ] Html5_sigs.T.attrib
@@ -1225,9 +1219,6 @@
       val a_char :
         Html5_types.character Html5_sigs.T.wrap ->
         [> `Char ] Html5_sigs.T.attrib
-      val a_charoff :
-        Html5_types.length Html5_sigs.T.wrap ->
-        [> `Charoff ] Html5_sigs.T.attrib
       val a_alt :
         Html5_types.text Html5_sigs.T.wrap -> [> `Alt ] Html5_sigs.T.attrib
       val a_height :
@@ -3584,15 +3575,12 @@
         [< `Col | `Colgroup | `Row | `Rowgroup ] wrap -> [> `Scope ] attrib
       val a_summary : Html5_types.text wrap -> [> `Summary ] attrib
       val a_border : Html5_types.pixels wrap -> [> `Border ] attrib
-      val a_cellpadding : Html5_types.length wrap -> [> `Cellpadding ] attrib
-      val a_cellspacing : Html5_types.length wrap -> [> `Cellspacing ] attrib
       val a_datapagesize :
         Html5_types.cdata wrap -> [> `Datapagesize ] attrib
       val a_rules :
         [< `All | `Cols | `Groups | `None | `Rows ] wrap ->
         [> `Rules ] attrib
       val a_char : Html5_types.character wrap -> [> `Char ] attrib
-      val a_charoff : Html5_types.length wrap -> [> `Charoff ] attrib
       val a_alt : Html5_types.text wrap -> [> `Alt ] attrib
       val a_height : Html5_types.number wrap -> [> `Height ] attrib
       val a_width : Html5_types.number wrap -> [> `Width ] attrib
@@ -6258,17 +6246,12 @@
               [> `Scope ] attrib
             val a_summary : Html5_types.text wrap -> [> `Summary ] attrib
             val a_border : Html5_types.pixels wrap -> [> `Border ] attrib
-            val a_cellpadding :
-              Html5_types.length wrap -> [> `Cellpadding ] attrib
-            val a_cellspacing :
-              Html5_types.length wrap -> [> `Cellspacing ] attrib
             val a_datapagesize :
               Html5_types.cdata wrap -> [> `Datapagesize ] attrib
             val a_rules :
               [< `All | `Cols | `Groups | `None | `Rows ] wrap ->
               [> `Rules ] attrib
             val a_char : Html5_types.character wrap -> [> `Char ] attrib
-            val a_charoff : Html5_types.length wrap -> [> `Charoff ] attrib
             val a_alt : Html5_types.text wrap -> [> `Alt ] attrib
             val a_height : Html5_types.number wrap -> [> `Height ] attrib
             val a_width : Html5_types.number wrap -> [> `Width ] attrib
@@ -7513,8 +7496,6 @@
         ([< Html5_types.linktype ] list, string) Xml.W.ft
       val string_of_mediadesc :
         ([< Html5_types.mediadesc_token ] list, string) Xml.W.ft
-      val string_of_multilength :
-        ([< Html5_types.multilength ], string) Xml.W.ft
       val string_of_numbers : (Html5_types.numbers, string) Xml.W.ft
       val string_of_sandbox :
         ([< Html5_types.sandbox_token ] list, string) Xml.W.ft
