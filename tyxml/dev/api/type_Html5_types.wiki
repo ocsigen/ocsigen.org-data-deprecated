@@ -5006,10 +5006,10 @@
       | `Contextmenu
       | `Dir
       | `Draggable
-      | `For
       | `Form
       | `Hidden
       | `Id
+      | `Label_for
       | `Lang
       | `OnAbort
       | `OnBlur
@@ -5091,7 +5091,6 @@
       | `Form
       | `Formation
       | `Formenctype
-      | `Formmethod
       | `Formnovalidate
       | `Formtarget
       | `Height
@@ -5100,9 +5099,11 @@
       | `Input_Max
       | `Input_Min
       | `Input_Type
+      | `Inputmode
       | `Lang
       | `List
       | `Maxlength
+      | `Method
       | `Multiple
       | `Name
       | `OnAbort
@@ -5276,12 +5277,12 @@
       | `Form
       | `Formaction
       | `Formenctype
-      | `Formmethod
       | `Formnovalidate
       | `Formtarget
       | `Hidden
       | `Id
       | `Lang
+      | `Method
       | `Name
       | `OnAbort
       | `OnBlur
@@ -5833,7 +5834,6 @@
       | `Contextmenu
       | `Dir
       | `Draggable
-      | `For_List
       | `Form
       | `Hidden
       | `Id
@@ -5893,6 +5893,7 @@
       | `OnTimeUpdate
       | `OnVolumeChange
       | `OnWaiting
+      | `Output_for
       | `Spellcheck
       | `Style_Attr
       | `Tabindex
@@ -6475,13 +6476,20 @@
       | `Defer
       | `Delete
       | `Disabled
+      | `Email
       | `Formnovalidate
+      | `Full_width_latin
       | `Get
       | `Groups
       | `Hard
       | `Hidden
       | `Ismap
       | `Justify
+      | `Kana
+      | `Katakana
+      | `Latin
+      | `Latin_name
+      | `Latin_prose
       | `Left
       | `Loop
       | `Ltr
@@ -6491,6 +6499,7 @@
       | `No
       | `None
       | `Novalidate
+      | `Numeric
       | `One
       | `Open
       | `Poly
@@ -6512,8 +6521,11 @@
       | `Seamless
       | `Selected
       | `Soft
+      | `Tel
       | `Toolbar
+      | `Url
       | `Use_credentials
+      | `Verbatim
       | `W3_org_1999_xhtml
       | `Yes
       | `Zero ]

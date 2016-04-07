@@ -111,13 +111,16 @@
 |@@class="odocwiki_index"@ @@<<a_api text="a_font_style"| value Svg_sigs.T.a_font_style >> ~[<<a_api | module Svg_sigs.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="a_font_variant"| value Svg_sigs.T.a_font_variant >> ~[<<a_api | module Svg_sigs.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="a_font_weight"| value Svg_sigs.T.a_font_weight >> ~[<<a_api | module Svg_sigs.T >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="a_for"| value Html5_sigs.T.a_for >> ~[<<a_api | module Html5_sigs.T >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="a_for_list"| value Html5_sigs.T.a_for_list >> ~[<<a_api | module Html5_sigs.T >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="a_for"| value Html5_sigs.T.a_for >> ~[<<a_api | module Html5_sigs.T >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_deprecated"|>>>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="a_for_list"| value Html5_sigs.T.a_for_list >> ~[<<a_api | module Html5_sigs.T >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_deprecated"|>>>>
+|
 |@@class="odocwiki_index"@ @@<<a_api text="a_form"| value Html5_sigs.T.a_form >> ~[<<a_api | module Html5_sigs.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="a_formaction"| value Html5_sigs.T.a_formaction >> ~[<<a_api | module Html5_sigs.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="a_format"| value Svg_sigs.T.a_format >> ~[<<a_api | module Svg_sigs.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="a_formenctype"| value Html5_sigs.T.a_formenctype >> ~[<<a_api | module Html5_sigs.T >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="a_formmethod"| value Html5_sigs.T.a_formmethod >> ~[<<a_api | module Html5_sigs.T >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="a_formmethod"| value Html5_sigs.T.a_formmethod >> ~[<<a_api | module Html5_sigs.T >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_deprecated"|>>>>
+|
 |@@class="odocwiki_index"@ @@<<a_api text="a_formnovalidate"| value Html5_sigs.T.a_formnovalidate >> ~[<<a_api | module Html5_sigs.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="a_formtarget"| value Html5_sigs.T.a_formtarget >> ~[<<a_api | module Html5_sigs.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="a_frameborder"| value Html5_sigs.T.a_frameborder >> ~[<<a_api | module Html5_sigs.T >>~]||
@@ -161,6 +164,8 @@
 |@@class="odocwiki_index"@ @@<<a_api text="a_input_max"| value Html5_sigs.T.a_input_max >> ~[<<a_api | module Html5_sigs.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="a_input_min"| value Html5_sigs.T.a_input_min >> ~[<<a_api | module Html5_sigs.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="a_input_type"| value Html5_sigs.T.a_input_type >> ~[<<a_api | module Html5_sigs.T >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="a_inputmode"| value Html5_sigs.T.a_inputmode >> ~[<<a_api | module Html5_sigs.T >>~]|<<div class="odocwiki_info"|>>
+|
 |@@class="odocwiki_index"@ @@<<a_api text="a_int_value"| value Html5_sigs.T.a_int_value >> ~[<<a_api | module Html5_sigs.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="a_intercept"| value Svg_sigs.T.a_intercept >> ~[<<a_api | module Svg_sigs.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="a_ismap"| value Html5_sigs.T.a_ismap >> ~[<<a_api | module Html5_sigs.T >>~]||
@@ -176,6 +181,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="a_keyTimes"| value Svg_sigs.T.a_keyTimes >> ~[<<a_api | module Svg_sigs.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="a_keytype"| value Html5_sigs.T.a_keytype >> ~[<<a_api | module Html5_sigs.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="a_label"| value Html5_sigs.T.a_label >> ~[<<a_api | module Html5_sigs.T >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="a_label_for"| value Html5_sigs.T.a_label_for >> ~[<<a_api | module Html5_sigs.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="a_lang"| value Html5_sigs.T.a_lang >> ~[<<a_api | module Html5_sigs.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="a_lang"| value Svg_sigs.T.a_lang >> ~[<<a_api | module Svg_sigs.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="a_lengthAdjust"| value Svg_sigs.T.a_lengthAdjust >> ~[<<a_api | module Svg_sigs.T >>~]||
@@ -313,6 +319,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="a_order"| value Svg_sigs.T.a_order >> ~[<<a_api | module Svg_sigs.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="a_orient"| value Svg_sigs.T.a_orient >> ~[<<a_api | module Svg_sigs.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="a_orientation"| value Svg_sigs.T.a_orientation >> ~[<<a_api | module Svg_sigs.T >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="a_output_for"| value Html5_sigs.T.a_output_for >> ~[<<a_api | module Html5_sigs.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="a_overline_position"| value Svg_sigs.T.a_overline_position >> ~[<<a_api | module Svg_sigs.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="a_overline_thickness"| value Svg_sigs.T.a_overline_thickness >> ~[<<a_api | module Svg_sigs.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="a_path"| value Svg_sigs.T.a_path >> ~[<<a_api | module Svg_sigs.T >>~]||

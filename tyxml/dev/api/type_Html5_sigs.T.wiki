@@ -890,9 +890,6 @@
   val a_formenctype :
     Html5_types.contenttype Html5_sigs.T.wrap ->
     [> `Formenctype ] Html5_sigs.T.attrib
-  val a_formmethod :
-    [< `Delete | `Get | `Post | `Put ] Html5_sigs.T.wrap ->
-    [> `Formmethod ] Html5_sigs.T.attrib
   val a_formnovalidate : [> `Formnovalidate ] Html5_sigs.T.attrib
   val a_formtarget :
     Html5_types.text Html5_sigs.T.wrap ->
@@ -923,6 +920,19 @@
   val a_input_min :
     Html5_types.float_number Html5_sigs.T.wrap ->
     [> `Input_Min ] Html5_sigs.T.attrib
+  val a_inputmode :
+    [< `Email
+     | `Full_width_latin
+     | `Kana
+     | `Katakana
+     | `Latin
+     | `Latin_name
+     | `Latin_prose
+     | `Numeric
+     | `Tel
+     | `Url
+     | `Verbatim ]
+    Html5_sigs.T.wrap -> [> `Inputmode ] Html5_sigs.T.attrib
   val a_novalidate : [> `Novalidate ] Html5_sigs.T.attrib
   val a_open : [> `Open ] Html5_sigs.T.attrib
   val a_optimum :
@@ -1023,15 +1033,25 @@
   val a_enctype :
     Html5_types.contenttype Html5_sigs.T.wrap ->
     [> `Enctype ] Html5_sigs.T.attrib
+  val a_label_for :
+    Html5_types.idref Html5_sigs.T.wrap ->
+    [> `Label_for ] Html5_sigs.T.attrib
   val a_for :
-    Html5_types.idref Html5_sigs.T.wrap -> [> `For ] Html5_sigs.T.attrib
+    Html5_types.idref Html5_sigs.T.wrap ->
+    [> `Label_for ] Html5_sigs.T.attrib
+  val a_output_for :
+    Html5_types.idrefs Html5_sigs.T.wrap ->
+    [> `Output_for ] Html5_sigs.T.attrib
   val a_for_list :
     Html5_types.idrefs Html5_sigs.T.wrap ->
-    [> `For_List ] Html5_sigs.T.attrib
+    [> `Output_for ] Html5_sigs.T.attrib
   val a_maxlength :
     Html5_types.number Html5_sigs.T.wrap ->
     [> `Maxlength ] Html5_sigs.T.attrib
   val a_method :
+    [< `Delete | `Get | `Post | `Put ] Html5_sigs.T.wrap ->
+    [> `Method ] Html5_sigs.T.attrib
+  val a_formmethod :
     [< `Delete | `Get | `Post | `Put ] Html5_sigs.T.wrap ->
     [> `Method ] Html5_sigs.T.attrib
   val a_multiple : [> `Multiple ] Html5_sigs.T.attrib

@@ -1472,8 +1472,6 @@
     val a_formaction : Xml.uri wrap -> [> `Formaction ] attrib
     val a_formenctype :
       Html5_types.contenttype wrap -> [> `Formenctype ] attrib
-    val a_formmethod :
-      [< `Delete | `Get | `Post | `Put ] wrap -> [> `Formmethod ] attrib
     val a_formnovalidate : [> `Formnovalidate ] attrib
     val a_formtarget : Html5_types.text wrap -> [> `Formtarget ] attrib
     val a_hidden : [> `Hidden ] attrib
@@ -1488,6 +1486,19 @@
     val a_input_max : Html5_types.float_number wrap -> [> `Input_Max ] attrib
     val a_min : Html5_types.float_number wrap -> [> `Min ] attrib
     val a_input_min : Html5_types.float_number wrap -> [> `Input_Min ] attrib
+    val a_inputmode :
+      [< `Email
+       | `Full_width_latin
+       | `Kana
+       | `Katakana
+       | `Latin
+       | `Latin_name
+       | `Latin_prose
+       | `Numeric
+       | `Tel
+       | `Url
+       | `Verbatim ]
+      wrap -> [> `Inputmode ] attrib
     val a_novalidate : [> `Novalidate ] attrib
     val a_open : [> `Open ] attrib
     val a_optimum : Html5_types.float_number wrap -> [> `Optimum ] attrib
@@ -1541,10 +1552,14 @@
     val a_checked : [> `Checked ] attrib
     val a_cols : Html5_types.number wrap -> [> `Cols ] attrib
     val a_enctype : Html5_types.contenttype wrap -> [> `Enctype ] attrib
-    val a_for : Html5_types.idref wrap -> [> `For ] attrib
-    val a_for_list : Html5_types.idrefs wrap -> [> `For_List ] attrib
+    val a_label_for : Html5_types.idref wrap -> [> `Label_for ] attrib
+    val a_for : Html5_types.idref wrap -> [> `Label_for ] attrib
+    val a_output_for : Html5_types.idrefs wrap -> [> `Output_for ] attrib
+    val a_for_list : Html5_types.idrefs wrap -> [> `Output_for ] attrib
     val a_maxlength : Html5_types.number wrap -> [> `Maxlength ] attrib
     val a_method :
+      [< `Delete | `Get | `Post | `Put ] wrap -> [> `Method ] attrib
+    val a_formmethod :
       [< `Delete | `Get | `Post | `Put ] wrap -> [> `Method ] attrib
     val a_multiple : [> `Multiple ] attrib
     val a_name : Html5_types.text wrap -> [> `Name ] attrib
