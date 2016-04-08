@@ -1357,6 +1357,7 @@
     parameters~.
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="session_id"| value Eliom_client_core.session_id >> ~[<<a_api subproject="client" | module Eliom_client_core >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="set"| value Eliom_parameter_sigs.S.set >> ~[<<a_api subproject="client" | module Eliom_parameter_sigs.S >>~]|<<div class="odocwiki_info"|~Use this if you want your service to take several parameters
       with the same name~.
 >>
