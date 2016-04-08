@@ -26,7 +26,7 @@
     object
       method disconnect : unit Js.meth
       method observe :
-        Dom.node Js.t ->
+        #Dom.node Js.t ->
         MutationObserver.mutationObserverInit Js.t -> unit Js.meth
       method takeRecords :
         MutationObserver.mutationRecord Js.t Js.js_array Js.t Js.meth
@@ -40,7 +40,7 @@
     Js.constr
   val is_supported : unit -> bool
   val observe :
-    node:Dom.node Js.t ->
+    node:#Dom.node Js.t ->
     f:(MutationObserver.mutationRecord Js.t Js.js_array Js.t ->
        MutationObserver.mutationObserver Js.t -> unit) ->
     ?child_list:bool ->
