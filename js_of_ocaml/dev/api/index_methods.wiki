@@ -944,6 +944,8 @@
 |@@class="odocwiki_index"@ @@<<a_api text="getCTM"| method Dom_svg.locatable#getCTM >> ~[<<a_api | module Dom_svg >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="getCharNumAtPosition"| method Dom_svg.textContentElement#getCharNumAtPosition >> ~[<<a_api | module Dom_svg >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="getClientRects"| method Dom_html.element#getClientRects >> ~[<<a_api | module Dom_html >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="getComputedStyle"| method Dom_html.window#getComputedStyle >> ~[<<a_api | module Dom_html >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="getComputedStyle_pseudoElt"| method Dom_html.window#getComputedStyle_pseudoElt >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="getComputedTextLength"| method Dom_svg.textContentElement#getComputedTextLength >> ~[<<a_api | module Dom_svg >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="getContext"| method Dom_html.canvasElement#getContext >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="getContextAttributes"| method WebGL.renderingContext#getContextAttributes >> ~[<<a_api | module WebGL >>~]|<<div class="odocwiki_info"|~5~.~1~3~.~2 ~Getting information about the context

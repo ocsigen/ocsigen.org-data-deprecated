@@ -5740,6 +5740,11 @@
       method document : Dom_html.document Js.t Js.readonly_prop
       method focus : unit Js.meth
       method frameElement : Dom_html.element Js.t Js.opt Js.readonly_prop
+      method getComputedStyle :
+        #Dom_html.element Js.t -> Dom_html.cssStyleDeclaration Js.t Js.meth
+      method getComputedStyle_pseudoElt :
+        #Dom_html.element Js.t ->
+        Js.js_string Js.t -> Dom_html.cssStyleDeclaration Js.t Js.meth
       method getSelection : Dom_html.selection Js.t Js.meth
       method history : Dom_html.history Js.t Js.readonly_prop
       method innerHeight : int Js.optdef Js.readonly_prop
