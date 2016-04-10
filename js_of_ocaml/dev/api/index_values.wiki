@@ -699,6 +699,9 @@
 |@@class="odocwiki_index"@ @@<<a_api text="import_scripts"| value Worker.import_scripts >> ~[<<a_api | module Worker >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="info"| value Lwt_log_js.info >> ~[<<a_api | module Lwt_log_js >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="info_f"| value Lwt_log_js.info_f >> ~[<<a_api | module Lwt_log_js >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="init"| value Async_js.init >> ~[<<a_api | module Async_js >>~]|<<div class="odocwiki_info"|~Initialize the async scheduler
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api text="init_lexer"| value Deriving_Json_lexer.init_lexer >> ~[<<a_api | module Deriving_Json_lexer >>~]|<<div class="odocwiki_info"|~Create a fresh lexbuf record~.
 >>
 |
@@ -1347,6 +1350,9 @@
 |
 |@@class="odocwiki_index"@ @@<<a_api text="set_onmessage"| value Worker.set_onmessage >> ~[<<a_api | module Worker >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="shift"| value Keycode.shift >> ~[<<a_api | module Keycode >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="sleep"| value Async_js.sleep >> ~[<<a_api | module Async_js >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|sleep d>> is a deferred which becomes determined in <<span class="odocwiki_inlinecode"|d>> seconds~.
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api text="sleep"| value Lwt_js.sleep >> ~[<<a_api | module Lwt_js >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|sleep d>> is a threads which remain suspended for <<span class="odocwiki_inlinecode"|d>> seconds
       and then terminates~.
 >>
@@ -1562,6 +1568,10 @@
 >>
 |
 |@@ @style="tet-align: left;"@@\\Y|
+|@@class="odocwiki_index"@ @@<<a_api text="yield"| value Async_js.yield >> ~[<<a_api | module Async_js >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|yield ~(~)>> returns a deferred that becomes determined after the current cycle
+    completes~.
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api text="yield"| value Lwt_js.yield >> ~[<<a_api | module Lwt_js >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|yield ~(~)>> is a threads which suspends itself and then resumes
       as soon as possible and terminates~.
 >>
