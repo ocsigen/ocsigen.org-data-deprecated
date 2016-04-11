@@ -726,7 +726,6 @@
 |@@class="odocwiki_index"@ @@<<a_api text="createTextNode"| method Dom.document#createTextNode >> ~[<<a_api | module Dom >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="createTexture"| method WebGL.renderingContext#createTexture >> ~[<<a_api | module WebGL >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="cssFloat"| method Dom_html.cssStyleDeclaration#cssFloat >> ~[<<a_api | module Dom_html >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="cssText"| method Dom_html.element#cssText >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="cssText"| method Dom_html.cssStyleDeclaration#cssText >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="ctrlKey"| method Dom_html.touchEvent#ctrlKey >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="ctrlKey"| method Dom_html.keyboardEvent#ctrlKey >> ~[<<a_api | module Dom_html >>~]||

@@ -20,7 +20,6 @@
   method createCaption : Dom_html.tableCaptionElement Js.t Js.meth
   method createTFoot : Dom_html.tableSectionElement Js.t Js.meth
   method createTHead : Dom_html.tableSectionElement Js.t Js.meth
-  method cssText : Js.js_string Js.t Js.prop
   method deleteCaption : unit Js.meth
   method deleteRow : int -> unit Js.meth
   method deleteTFoot : unit Js.meth

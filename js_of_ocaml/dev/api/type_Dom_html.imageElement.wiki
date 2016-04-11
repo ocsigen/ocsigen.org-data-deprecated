@@ -14,7 +14,6 @@
   method compareDocumentPosition :
     Dom.node Js.t -> Dom.DocumentPosition.t Js.meth
   method complete : bool Js.t Js.prop
-  method cssText : Js.js_string Js.t Js.prop
   method dir : Js.js_string Js.t Js.prop
   method firstChild : Dom.node Js.t Js.opt Js.prop
   method getAttribute : Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
