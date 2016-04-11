@@ -1,15 +1,15 @@
 =Module <<a_api_type | module Pa_tyxml >> =
-<<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module>> <<span class="ocsforge_color_uid"|<<span class="ocsforge_color_uid"|Pa_tyxml>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="ocsforge_color_keyword"|sig>><<a_api text=".." | module Pa_tyxml >><<span class="ocsforge_color_keyword"|end>>>>~Syntax extension for ~H~T~M~L~5 or ~S~V~G tree creation~.
+<<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module>> <<span class="ocsforge_color_uid"|<<span class="ocsforge_color_uid"|Pa_tyxml>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="ocsforge_color_keyword"|sig>><<a_api text=".." | module Pa_tyxml >><<span class="ocsforge_color_keyword"|end>>>>~Syntax extension for ~H~T~M~L or ~S~V~G tree creation~.
 
 ----
 
-~To choose actual ~X~M~L~-implementation you have to provide a module named <<span class="odocwiki_inlinecode"|~Html~5>>
+~To choose actual ~X~M~L~-implementation you have to provide a module named <<span class="odocwiki_inlinecode"|~Html>>
 ~(or <<span class="odocwiki_inlinecode"|~Svg>>~)~:
 
 
 ~For example~, the following code~:
 
-<<code language='ocaml'|  let module Html5 = Html5.M in
+<<code language='ocaml'|  let open Tyxml in
   << <html>
      <head><title></title></head>
      <body><h1>plop</h1></body>
@@ -17,11 +17,11 @@
 )
 >>
 
-is a caml value of type {{{Html5_types.html Html5.elt}}}~.
+is a caml value of type {{{Html_types.html Html.elt}}}~.
 
 
-~In the following~, <<span class="odocwiki_inlinecode"|~Html~5>> is assumed to be an ~H~T~M~L~5 implementation~, such as
-<<span class="odocwiki_inlinecode"|~Html~5~.~M>>~, but this could for example also be ~Eliom~'s <<span class="odocwiki_inlinecode"|~Eliom~_content~.~Html~5~.~F>>~.
+~In the following~, <<span class="odocwiki_inlinecode"|~Html>> is assumed to be an ~H~T~M~L implementation~, such as
+<<a_api | module Tyxml.Html >>~, but this could for example also be ~Eliom~'s <<span class="odocwiki_inlinecode"|~Eliom~_content~.~Html~.~F>>~.
 
 
 ~To compile a module containing this syntax~, you need the camlp~4 preprocessor~:
@@ -36,13 +36,13 @@ or
 
 
 
-~You can insert ~O~Caml expressions of type {{{'a Html5.M.elt}}} inside html using {{{$...$}}}~, like this~:
+~You can insert ~O~Caml expressions of type {{{'a Html.elt}}} inside html using {{{$...$}}}~, like this~:
 
 <<code language='ocaml'|let oc = << <em>Ocsigen</em> ~>> in
 << <p>$oc$ will revolutionize web programming.</p> ~>>
 >>
 
-~You can insert ~O~Caml expressions of type string inside html using {{{$str:... $}}}~, like this~:
+~You can insert ~O~Caml expressions of type string inside ~H~T~M~L using {{{$str:... $}}}~, like this~:
 
 <<code language='ocaml'|let i = 4 in
 << <p>i is equal to $str:string_of_int i$</p> ~>>
@@ -51,9 +51,9 @@ or
 ~If you want to use a dollar in your page~, just write it twice~.
 
 
-~You can write a list of html~5 expressions using the syntax {{{<:html5list<...>>}}}~, for example~:
+~You can write a list of ~H~T~M~L expressions using the syntax {{{<:htmllist<...>>}}}~, for example~:
 
-<<code language='ocaml'|<:html5list< <p>hello</p> <div></div> ~>>
+<<code language='ocaml'|<:htmllist< <p>hello</p> <div></div> ~>>
 >>
 
 

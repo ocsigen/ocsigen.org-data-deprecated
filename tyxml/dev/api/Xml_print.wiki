@@ -3,7 +3,7 @@
 
 
     ~This module contains various encoding functions that can be used
-    with <<a_api | val Html5.pp >> and <<a_api | val Svg.pp >>~.
+    with <<span class="odocwiki_inlinecode"|~Tyxml~.~Html~.pp>> and <<span class="odocwiki_inlinecode"|~Tyxml~.~Svg~.pp>>~.
 
 
     ~It also contains functors to create printers for your own ~X~M~L data structure~.
@@ -47,7 +47,7 @@
 
 ==@@id="2_Formatterfunctors"@@~Formatter functors==
 
-<<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module>> <<a_api text="Make_typed_fmt" | module Xml_print.Make_typed_fmt >> <<span class="ocsforge_color_delimiter"|(>>Xml <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<a_api text="Xml_sigs.Iterable" | module Xml_sigs.Iterable >>>><<span class="ocsforge_color_delimiter"|)>> \\   <<span class="ocsforge_color_delimiter"|(>>Typed_xml <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<a_api text="Xml_sigs.Typed_xml" | module Xml_sigs.Typed_xml >>>><<span class="odocwiki_type"|     with module Xml := Xml>><<span class="ocsforge_color_delimiter"|)>> : \\  \\  <<span class="odocwiki_type"|<<a_api text="Xml_sigs.Typed_pp" | module Xml_sigs.Typed_pp >>>><<span class="odocwiki_type"| \\    with type 'a elt := 'a Typed_xml.elt\\     and type doc := Typed_xml.doc>>>><<div class="odocwiki_info"|~Printers for typed ~X~M~L module~, such as the one produced by <<a_api | module Svg_f >> and <<a_api | module Html5_f >>~.
+<<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module>> <<a_api text="Make_typed_fmt" | module Xml_print.Make_typed_fmt >> <<span class="ocsforge_color_delimiter"|(>>Xml <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<a_api text="Xml_sigs.Iterable" | module Xml_sigs.Iterable >>>><<span class="ocsforge_color_delimiter"|)>> \\   <<span class="ocsforge_color_delimiter"|(>>Typed_xml <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<a_api text="Xml_sigs.Typed_xml" | module Xml_sigs.Typed_xml >>>><<span class="odocwiki_type"|     with module Xml := Xml>><<span class="ocsforge_color_delimiter"|)>> : \\  \\  <<span class="odocwiki_type"|<<a_api text="Xml_sigs.Typed_pp" | module Xml_sigs.Typed_pp >>>><<span class="odocwiki_type"| \\    with type 'a elt := 'a Typed_xml.elt\\     and type doc := Typed_xml.doc>>>><<div class="odocwiki_info"|~Printers for typed ~X~M~L module~, such as the one produced by <<a_api | module Svg_f >> and <<a_api | module Html_f >>~.
 >>
 <<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module type>> <<a_api text="TagList" | module type Xml_print.TagList >> <<span class="ocsforge_color_delimiter"|~=>> <<span class="ocsforge_color_keyword"|sig>><<a_api text=".." | module type Xml_print.TagList >><<span class="ocsforge_color_keyword"|end>>>><<div class="odocwiki_info"|~List of tags that can be printed as empty tags~: <<span class="odocwiki_inlinecode"|~<foo ~/~>>>~.
 >>

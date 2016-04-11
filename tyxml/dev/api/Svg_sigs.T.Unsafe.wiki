@@ -3,7 +3,7 @@
 
 
       ~Using this module can break
-      ~Svg validity and may introduce security problems like
+      ~S~V~G validity and may introduce security problems like
       code injection~.
       ~Use it with care~.
 

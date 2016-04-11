@@ -1,15 +1,12 @@
 =~Ty~X~M~L 
-==[[Html5|Html5]]
-==[[Svg|Svg]]
+==[[Tyxml|Tyxml]]
 ==~Types and signatures
-===[[Html5_sigs|Html5_sigs]]
-===[[Html5_types|Html5_types]]
+===[[Html_sigs|Html_sigs]]
+===[[Html_types|Html_types]]
 ===[[Svg_sigs|Svg_sigs]]
 ===[[Svg_types|Svg_types]]
-==~Low~-level ~X~M~L manipulation
-===[[Xml|Xml]]
 =~Ty~X~M~L ~Functors 
-==[[Html5_f|Html5_f]]
+==[[Html_f|Html_f]]
 ==[[Svg_f|Svg_f]]
 ==[[Xml_sigs|Xml_sigs]]
 ==[[Xml_wrap|Xml_wrap]]

@@ -2,10 +2,10 @@
 <<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module>> <<span class="ocsforge_color_uid"|<<span class="ocsforge_color_uid"|Utf8>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="ocsforge_color_keyword"|sig>><<a_api text=".." | module Xml_print.Utf8 >><<span class="ocsforge_color_keyword"|end>>>>~Utf~8 normalizer and encoder for ~H~T~M~L~.
 
 
-~Given a module <<span class="odocwiki_inlinecode"|~Htmlprinter>> produced by one of the functors in <<a_api | module Xml_print >>~, this modules is used as following~:
+~Given a module <<span class="odocwiki_inlinecode"|pp>> functions produced by one of the functors in <<a_api | module Xml_print >>~, this modules is used as following~:
   
 <<code language='ocaml'|    let encode x = fst (Xml_print.Utf8.normalize_html x) in
-    Format.printf "%a" (Html5.pp ~encode ()) document
+    Format.printf "%a" (Html.pp ~encode ()) document
   >>
 
 

@@ -1,5 +1,5 @@
 =Module <<a_api_type | module Svg_types >> =
-<<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module>> <<span class="ocsforge_color_uid"|<<span class="ocsforge_color_uid"|Svg_types>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="ocsforge_color_keyword"|sig>><<a_api text=".." | module Svg_types >><<span class="ocsforge_color_keyword"|end>>>>~S~V~G types with variants~. ~(~See also <<span class="odocwiki_inlinecode"|~Svg~.~M>>~)
+<<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module>> <<span class="ocsforge_color_uid"|<<span class="ocsforge_color_uid"|Svg_types>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="ocsforge_color_keyword"|sig>><<a_api text=".." | module Svg_types >><<span class="ocsforge_color_keyword"|end>>>>~S~V~G types with variants~, goes with <<a_api | module type Svg_sigs.T >>~.
 
 ----
 

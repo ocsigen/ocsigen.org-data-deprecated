@@ -2,7 +2,7 @@
 <<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module type>> <<span class="ocsforge_color_uid"|NoWrap>> <<span class="ocsforge_color_delimiter"|~=>> <<span class="odocwiki_type"|<<a_api text="T" | module Svg_sigs.T >>>><<span class="odocwiki_type"| with module <<span class="ocsforge_color_uid"|Xml.W>> = <<a_api text="Xml_wrap.NoWrap" | module Xml_wrap.NoWrap >>>>>>~Equivalent to <<a_api | module type Svg_sigs.T >>~, but without wrapping~.
 
 ----
-<<pre class="ocsforge_color odocwiki_code" id="TYPEelt"|<<span class="ocsforge_color_keyword"|type>> <<span class="odocwiki_type"|+'a>> <<span class="odocwiki_name"|elt>>>><<div class="odocwiki_info"|~Svg elements~.
+<<pre class="ocsforge_color odocwiki_code" id="TYPEelt"|<<span class="ocsforge_color_keyword"|type>> <<span class="odocwiki_type"|+'a>> <<span class="odocwiki_name"|elt>>>><<div class="odocwiki_info"|~S~V~G elements~.
 
 
       ~Element constructors are in section <<a_api | section Svg_sigs.T.elements >>~. ~Most elements constructors
@@ -13,15 +13,15 @@
 
 
       ~The type variable <<span class="odocwiki_inlinecode"|~'a>> is used to track the element~'s type~. ~This
-      allows the ~O~Caml typechecker to check ~Svg validity~.
+      allows the ~O~Caml typechecker to check ~S~V~G validity~.
 
 
       ~Note that the concrete implementation of this type can vary~.
       ~See <<a_api | module Svg_sigs.T.Xml >> for details~.
 >>
-<<pre class="ocsforge_color odocwiki_code" id="TYPEdoc"|<<span class="ocsforge_color_keyword"|type>> <<span class="odocwiki_name"|doc>> <<span class="ocsforge_color_delimiter"|~=>> <<span class="odocwiki_type"|[ `Svg ] <<a_api text="elt" | type Svg_sigs.T.elt >>>> >><<div class="odocwiki_info"|~A complete ~Svg document~.
+<<pre class="ocsforge_color odocwiki_code" id="TYPEdoc"|<<span class="ocsforge_color_keyword"|type>> <<span class="odocwiki_name"|doc>> <<span class="ocsforge_color_delimiter"|~=>> <<span class="odocwiki_type"|[ `Svg ] <<a_api text="elt" | type Svg_sigs.T.elt >>>> >><<div class="odocwiki_info"|~A complete ~S~V~G document~.
 >>
-<<pre class="ocsforge_color odocwiki_code" id="TYPEattrib"|<<span class="ocsforge_color_keyword"|type>> <<span class="odocwiki_type"|+'a>> <<span class="odocwiki_name"|attrib>>>><<div class="odocwiki_info"|~Svg attributes
+<<pre class="ocsforge_color odocwiki_code" id="TYPEattrib"|<<span class="ocsforge_color_keyword"|type>> <<span class="odocwiki_type"|+'a>> <<span class="odocwiki_name"|attrib>>>><<div class="odocwiki_info"|~S~V~G attributes
 
 
       ~Attribute constructors are in section <<a_api | section Svg_sigs.T.attributes >> and their name starts
@@ -58,7 +58,7 @@
 >>
 <<pre class="ocsforge_color odocwiki_code" id="TYPEstar"|<<span class="ocsforge_color_keyword"|type>> <<span class="odocwiki_type"|<<span class="ocsforge_color_delimiter"| ( >>'a, 'b, 'c<<span class="ocsforge_color_delimiter"| ) >>>> <<span class="odocwiki_name"|star>> <<span class="ocsforge_color_delimiter"|~=>> <<span class="odocwiki_type"|\\  <<span class="ocsforge_color_label"| ?a: >>'a <<a_api text="attrib" | type Svg_sigs.T.attrib >> list <<span class="ocsforge_color_delimiter"| -> >>\\  'b <<a_api text="elt" | type Svg_sigs.T.elt >> <<a_api text="list_wrap" | type Svg_sigs.T.list_wrap >> <<span class="ocsforge_color_delimiter"| -> >> 'c <<a_api text="elt" | type Svg_sigs.T.elt >>>> >><<div class="odocwiki_info"|~A star element is an element that has any number of children~, including zero~.
 >>
-<<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module>> <<a_api text="Info" | module Svg_sigs.T.Info >> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<a_api text="Xml_sigs.Info" | module Xml_sigs.Info >>>><<span class="odocwiki_type"| >>>><<div class="odocwiki_info"|~Various information about ~Svg~, such as the doctype~, ~.~.~.
+<<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module>> <<a_api text="Info" | module Svg_sigs.T.Info >> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<a_api text="Xml_sigs.Info" | module Xml_sigs.Info >>>><<span class="odocwiki_type"| >>>><<div class="odocwiki_info"|~Various information about ~S~V~G~, such as the doctype~, ~.~.~.
 >>
 
 
