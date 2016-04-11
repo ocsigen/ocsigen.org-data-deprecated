@@ -414,7 +414,6 @@
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="frequency"| type Svg_types.Unit.frequency >> ~[<<a_api | module Svg_types.Unit >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="ft"| type Svg_sigs.Wrapped_functions.ft >> ~[<<a_api | module Svg_sigs.Wrapped_functions >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="ft"| type Xml_wrap.T.ft >> ~[<<a_api | module Xml_wrap.T >>~]||
 |@@ @style="tet-align: left;"@@\\G|
 |@@class="odocwiki_index"@ @@<<a_api text="g"| type Svg_types.g >> ~[<<a_api | module Svg_types >>~]||

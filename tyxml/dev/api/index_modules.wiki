@@ -129,6 +129,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="Xml"| module Html_sigs.T.Xml >> ~[<<a_api | module Html_sigs.T >>~]|<<div class="odocwiki_info"|~Underlying ~X~M~L data~-structure
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api text="Xml"| module Svg_sigs.Wrapped_functions.Xml >> ~[<<a_api | module Svg_sigs.Wrapped_functions >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="Xml"| module Svg_sigs.T.Xml >> ~[<<a_api | module Svg_sigs.T >>~]|<<div class="odocwiki_info"|~Underlying ~X~M~L data~-structure
 >>
 |
