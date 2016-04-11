@@ -390,17 +390,17 @@
      { /*<<stdlib.js 285 2>>*/ if(index_b_>>>0>=array_a_.length-1)
         /*<<stdlib.js 285 39>>*/ caml_array_bound_error_iw_();
        /*<<stdlib.js 286 2>>*/ return array_a_ /*<<stdlib.js 287 0>>*/ }
-     /*<<ieee_754.js 134 0>>*/ function caml_classify_float_ix_(x_a_)
-     { /*<<ieee_754.js 135 2>>*/ if( /*<<ieee_754.js 135 6>>*/ isFinite(x_a_))
-        /*<<ieee_754.js 135 20>>*/ { /*<<ieee_754.js 136 4>>*/ if
-         ( /*<<ieee_754.js 136 8>>*/ Math.abs(x_a_)>=2.22507385850720138e-308)
-          /*<<ieee_754.js 136 48>>*/ return 0;
-         /*<<ieee_754.js 137 4>>*/ if(x_a_!=0)
-          /*<<ieee_754.js 137 16>>*/ return 1;
-         /*<<ieee_754.js 138 4>>*/ return 2}
-       /*<<ieee_754.js 140 2>>*/ return  /*<<ieee_754.js 140 9>>*/ isNaN(x_a_)
+     /*<<ieee_754.js 152 0>>*/ function caml_classify_float_ix_(x_a_)
+     { /*<<ieee_754.js 153 2>>*/ if( /*<<ieee_754.js 153 6>>*/ isFinite(x_a_))
+        /*<<ieee_754.js 153 20>>*/ { /*<<ieee_754.js 154 4>>*/ if
+         ( /*<<ieee_754.js 154 8>>*/ Math.abs(x_a_)>=2.22507385850720138e-308)
+          /*<<ieee_754.js 154 48>>*/ return 0;
+         /*<<ieee_754.js 155 4>>*/ if(x_a_!=0)
+          /*<<ieee_754.js 155 16>>*/ return 1;
+         /*<<ieee_754.js 156 4>>*/ return 2}
+       /*<<ieee_754.js 158 2>>*/ return  /*<<ieee_754.js 158 9>>*/ isNaN(x_a_)
               ?4
-              :3 /*<<ieee_754.js 141 0>>*/ }
+              :3 /*<<ieee_754.js 159 0>>*/ }
      /*<<stdlib.js 141 0>>*/ function caml_failwith_aC_(msg_a_)
      { /*<<stdlib.js 142 2>>*/ caml_raise_with_string_ce_
        (caml_global_data_j_.Failure,msg_a_) /*<<stdlib.js 143 0>>*/ }
