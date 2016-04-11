@@ -1,0 +1,42 @@
+==
+
+=@@id="1_OcsigentoolkitclientAPI"@@~Ocsigen~-toolkit client ~A~P~I=
+
+
+
+
+|<<a_api subproject="server" | module Ot_popup >>|<<div class="odocwiki_info"|~Section with header~, content and footer~.
+>>
+|
+|<<a_api subproject="server" | module Ot_spinner >>|<<div class="odocwiki_info"|~On client side~, <<span class="odocwiki_inlinecode"|with~_spinner th>> returns immediately a spinner
+    while ~Lwt thread <<span class="odocwiki_inlinecode"|th>> is not finished~, that will automatically
+    be replaced by the result of <<span class="odocwiki_inlinecode"|th>> when finished~.
+>>
+|
+|<<a_api subproject="server" | module Ot_range >>||
+|<<a_api subproject="server" | module Ot_calendar >>|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|intl>> is the type of internationalization specifiers~.
+>>
+|
+|<<a_api subproject="server" | module Ot_time_picker >>|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|make ~?action ~?round~_~5 ~?h~2~4 ~(~)>> produces a clock~-style time picker
+    for hours and minutes~.
+>>
+|
+|<<a_api subproject="server" | module Ot_toggle >>||
+|Ot_icons||
+|<<a_api subproject="server" | module Ot_picture_uploader >>|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|~Ot~_picture~_uploader>> allow the user to see a picture he wants to
+    send to the before sending it server~.
+>>
+|
+
+
+
+
+
+=@@id="1_Index"@@~Index=
+
+
+
+* <<a_api subproject="server" text="Index of types" | index types >>
+* <<a_api subproject="server" text="Index of values" | index values >>
+* <<a_api subproject="server" text="Index of modules" | index modules >>
+

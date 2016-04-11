@@ -1,0 +1,7 @@
+=Index of types=
+
+|@@ @style="tet-align: left;"@@\\I|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="intl"| type Ot_calendar.intl >> ~[<<a_api subproject="server" | module Ot_calendar >>~]||
+|@@ @style="tet-align: left;"@@\\S|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="service"| type Ot_picture_uploader.service >> ~[<<a_api subproject="server" | module Ot_picture_uploader >>~]||
+\\
