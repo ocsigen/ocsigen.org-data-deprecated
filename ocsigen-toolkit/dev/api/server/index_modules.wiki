@@ -14,6 +14,7 @@
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Ot_nodeready"| module Ot_nodeready >> ||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Ot_noderesize"| module Ot_noderesize >> ||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Ot_picture_uploader"| module Ot_picture_uploader >> |<<div class="odocwiki_info"|~Picture uploader widget
 >>
 |
