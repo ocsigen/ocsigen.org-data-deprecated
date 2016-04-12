@@ -4,5 +4,5 @@
     ?header:[< Html5_types.header_content_fun ] Eliom_content.Html5.elt list ->
     ?footer:[< Html5_types.footer_content_fun ] Eliom_content.Html5.elt list ->
     [< Html5_types.div_content ] Eliom_content.Html5.elt list ->
-    [> Html5_types.section ] Eliom_content.Html5.elt
+    [> `Section ] Eliom_content.Html5.elt
 end >>

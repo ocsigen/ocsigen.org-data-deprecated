@@ -15,23 +15,19 @@
        [ `Registrable ], unit Eliom_service.ocaml_service)
       Eliom_service.service
   val input :
-    [< Html5_types.label_content_fun > `Input ] Eliom_content.Html5.F.elt
-    list ->
-    [> Html5_types.input ] Eliom_content.Html5.D.elt *
-    [> Html5_types.label ] Eliom_content.Html5.D.elt
-  val preview : unit -> [> Html5_types.img ] Eliom_content.Html5.D.elt
+    [< Html5_types.label_content_fun ] Eliom_content.Html5.elt list ->
+    [> `Input ] Eliom_content.Html5.elt * [> `Label ] Eliom_content.Html5.elt
+  val preview : unit -> [> `Img ] Eliom_content.Html5.elt
   val submit :
-    [< Html5_types.button_content ] Eliom_content.Html5.F.elt list ->
-    [> Html5_types.button ] Eliom_content.Html5.D.elt
+    [< Html5_types.button_content ] Eliom_content.Html5.elt list ->
+    [> `Button ] Eliom_content.Html5.elt
   val mk_service :
     string -> 'a Deriving_Json.t -> 'a Ot_picture_uploader.service
   val mk_form :
     ?after_submit:(unit -> unit Lwt.t) ->
     ?crop:float option ->
-    ?input:[< Html5_types.label_content_fun > `Input ]
-           Eliom_content.Html5.F.elt list ->
-    ?submit:[< Html5_types.button_content_fun ] Eliom_content.Html5.D.Raw.elt
-            Eliom_content.Html5.D.Raw.list_wrap ->
+    ?input:[< Html5_types.label_content_fun ] Eliom_content.Html5.elt list ->
+    ?submit:[< Html5_types.button_content_fun ] Eliom_content.Html5.elt list ->
     'a Ot_picture_uploader.service ->
-    'a -> [> Html5_types.form ] Eliom_content.Html5.D.elt Lwt.t
+    'a -> [> `Form ] Eliom_content.Html5.elt Lwt.t
 end >>
