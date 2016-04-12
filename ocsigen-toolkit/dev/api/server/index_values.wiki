@@ -33,8 +33,14 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="make"| value Ot_carousel.make >> ~[<<a_api subproject="server" | module Ot_carousel >>~]|<<div class="odocwiki_info"|~Creates a carousel from the elements of a list~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="make"| value Ot_calendar.make >> ~[<<a_api subproject="server" | module Ot_calendar >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="make_date_picker"| value Ot_calendar.make_date_picker >> ~[<<a_api subproject="server" | module Ot_calendar >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="make"| value Ot_calendar.make >> ~[<<a_api subproject="server" | module Ot_calendar >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|make ~?highlight ~?click~_any ~?action>> produces a calendar~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="make_date_picker"| value Ot_calendar.make_date_picker >> ~[<<a_api subproject="server" | module Ot_calendar >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|make~_date~_picker ~?init ~(~)>> returns a client~-side reactive signal
+    <<span class="odocwiki_inlinecode"|~(y~, m~, d~)>> corresponding to the date <<span class="odocwiki_inlinecode"|d>>~:<<span class="odocwiki_inlinecode"|m>>~:<<span class="odocwiki_inlinecode"|y>> that the user
+    clicks on~.
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="make_hours_minutes_seq"| value Ot_time_picker.make_hours_minutes_seq >> ~[<<a_api subproject="server" | module Ot_time_picker >>~]|<<div class="odocwiki_info"|~Alias of <<span class="odocwiki_inlinecode"|make>>~.
 >>
 |
