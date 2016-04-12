@@ -5271,6 +5271,9 @@
       method textContent : Js.js_string Js.t Js.opt Js.prop
       method title : Js.js_string Js.t Js.prop
       method toDataURL : Js.js_string Js.t Js.meth
+      method toDataURL_type : Js.js_string Js.t -> Js.js_string Js.t Js.meth
+      method toDataURL_type_compression :
+        Js.js_string Js.t -> float -> Js.js_string Js.t Js.meth
       method width : int Js.prop
     end
   and canvasRenderingContext2D =
@@ -5688,12 +5691,20 @@
   type interval_id
   type timeout_id
   type animation_frame_request_id
+  class type _URL =
+    object
+      method createObjectURL : #File.blob Js.t -> Js.js_string Js.t Js.meth
+      method revokeObjectURL : Js.js_string Js.t -> unit Js.meth
+    end
   class type window =
     object ('a)
+      method _URL : Dom_html._URL Js.t Js.readonly_prop
       method alert : Js.js_string Js.t -> unit Js.meth
       method applicationCache :
         Dom_html.applicationCache Js.t Js.readonly_prop
+      method atob : Js.js_string Js.t -> Js.js_string Js.t Js.meth
       method blur : unit Js.meth
+      method btoa : Js.js_string Js.t -> Js.js_string Js.t Js.meth
       method cancelAnimationFrame :
         Dom_html.animation_frame_request_id -> unit Js.meth
       method clearInterval : Dom_html.interval_id -> unit Js.meth

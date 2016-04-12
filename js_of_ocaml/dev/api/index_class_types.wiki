@@ -1,5 +1,7 @@
 =Index of class types=
 
+|@@ @style="tet-align: left;"@@\\|
+|@@class="odocwiki_index"@ @@<<a_api text="_URL"| class type Dom_html._URL >> ~[<<a_api | module Dom_html >>~]||
 |@@ @style="tet-align: left;"@@\\A|
 |@@class="odocwiki_index"@ @@<<a_api text="aElement"| class type Dom_svg.aElement >> ~[<<a_api | module Dom_svg >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="activeInfo"| class type WebGL.activeInfo >> ~[<<a_api | module WebGL >>~]||

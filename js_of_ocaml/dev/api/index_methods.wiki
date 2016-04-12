@@ -317,6 +317,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="_UNSIGNED_SHORT_5_5_5_1_"| method WebGL.renderingContext#_UNSIGNED_SHORT_5_5_5_1_ >> ~[<<a_api | module WebGL >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="_UNSIGNED_SHORT_5_6_5_"| method WebGL.renderingContext#_UNSIGNED_SHORT_5_6_5_ >> ~[<<a_api | module WebGL >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="_URL"| method Dom_svg.document#_URL >> ~[<<a_api | module Dom_svg >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="_URL"| method Dom_html.window#_URL >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="_URL"| method Dom_html.document#_URL >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="_UTC_day"| method Js.date_constr#_UTC_day >> ~[<<a_api | module Js >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="_UTC_hour"| method Js.date_constr#_UTC_hour >> ~[<<a_api | module Js >>~]||
@@ -443,6 +444,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="async"| method Dom_html.scriptElement#async >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="atan"| method Js.math#atan >> ~[<<a_api | module Js >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="atan2"| method Js.math#atan2 >> ~[<<a_api | module Js >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="atob"| method Dom_html.window#atob >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="attachShader"| method WebGL.renderingContext#attachShader >> ~[<<a_api | module WebGL >>~]|<<div class="odocwiki_info"|~5~.~1~3~.~9 ~Programs and ~Shaders
 >>
 |
@@ -524,6 +526,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="borderWidth"| method Dom_html.cssStyleDeclaration#borderWidth >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="bottom"| method Dom_html.clientRect#bottom >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="bottom"| method Dom_html.cssStyleDeclaration#bottom >> ~[<<a_api | module Dom_html >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="btoa"| method Dom_html.window#btoa >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="buffer"| method Typed_array.arrayBufferView#buffer >> ~[<<a_api | module Typed_array >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="bufferData"| method WebGL.renderingContext#bufferData >> ~[<<a_api | module WebGL >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="bufferData_create"| method WebGL.renderingContext#bufferData_create >> ~[<<a_api | module WebGL >>~]||
@@ -685,6 +688,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="createFramebuffer"| method WebGL.renderingContext#createFramebuffer >> ~[<<a_api | module WebGL >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="createImageData"| method Dom_html.canvasRenderingContext2D#createImageData >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="createLinearGradient"| method Dom_html.canvasRenderingContext2D#createLinearGradient >> ~[<<a_api | module Dom_html >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="createObjectURL"| method Dom_html._URL#createObjectURL >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="createPattern"| method Dom_html.canvasRenderingContext2D#createPattern >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="createPattern_fromCanvas"| method Dom_html.canvasRenderingContext2D#createPattern_fromCanvas >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="createPattern_fromVideo"| method Dom_html.canvasRenderingContext2D#createPattern_fromVideo >> ~[<<a_api | module Dom_html >>~]||
@@ -1553,6 +1557,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="rev"| method Dom_html.anchorElement#rev >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="rev"| method Dom_html.linkElement#rev >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="reverse"| method Js.js_array#reverse >> ~[<<a_api | module Js >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="revokeObjectURL"| method Dom_html._URL#revokeObjectURL >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="rgbColor"| method Dom_svg.color#rgbColor >> ~[<<a_api | module Dom_svg >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="right"| method Dom_html.clientRect#right >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="right"| method Dom_html.cssStyleDeclaration#right >> ~[<<a_api | module Dom_html >>~]||
@@ -1844,6 +1849,8 @@
 |@@class="odocwiki_index"@ @@<<a_api text="title"| method Dom_html.document#title >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="title"| method Dom_html.element#title >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="toDataURL"| method Dom_html.canvasElement#toDataURL >> ~[<<a_api | module Dom_html >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="toDataURL_type"| method Dom_html.canvasElement#toDataURL_type >> ~[<<a_api | module Dom_html >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="toDataURL_type_compression"| method Dom_html.canvasElement#toDataURL_type_compression >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="toDateString"| method Js.date#toDateString >> ~[<<a_api | module Js >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="toElement"| method Dom_html.mouseEvent#toElement >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="toExponential"| method Js.number#toExponential >> ~[<<a_api | module Js >>~]||

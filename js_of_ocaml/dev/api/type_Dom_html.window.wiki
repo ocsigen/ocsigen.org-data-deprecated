@@ -1,7 +1,10 @@
 <<code language="ocaml" | object ('a)
+  method _URL : Dom_html._URL Js.t Js.readonly_prop
   method alert : Js.js_string Js.t -> unit Js.meth
   method applicationCache : Dom_html.applicationCache Js.t Js.readonly_prop
+  method atob : Js.js_string Js.t -> Js.js_string Js.t Js.meth
   method blur : unit Js.meth
+  method btoa : Js.js_string Js.t -> Js.js_string Js.t Js.meth
   method cancelAnimationFrame :
     Dom_html.animation_frame_request_id -> unit Js.meth
   method clearInterval : Dom_html.interval_id -> unit Js.meth

@@ -6398,103 +6398,103 @@
        /*<<dom_html.ml 25 24>>*/ caml_js_on_ie_iB_(0)|
       0,
       /*<<typed_array.ml 28 2>>*/ arrayBuffer_gY_=window_c_.ArrayBuffer,
-      /*<<dom_html.ml 1256 15>>*/ document_gZ_=window_c_.document;
-     /*<<dom_html.ml 1256 15>>*/ function opt_iter_ba_(x_a_,f_b_)
-     { /*<<dom_html.ml 1302 19>>*/ return x_a_
-              ? /*<<dom_html.ml 1302 55>>*/ caml_call_gen1_h_(f_b_,x_a_[1])
-              :0 /*<<dom_html.ml 1302 58>>*/ }
-     /*<<dom_html.ml 1256 15>>*/ function createElement_bO_
+      /*<<dom_html.ml 1269 15>>*/ document_gZ_=window_c_.document;
+     /*<<dom_html.ml 1269 15>>*/ function opt_iter_ba_(x_a_,f_b_)
+     { /*<<dom_html.ml 1315 19>>*/ return x_a_
+              ? /*<<dom_html.ml 1315 55>>*/ caml_call_gen1_h_(f_b_,x_a_[1])
+              :0 /*<<dom_html.ml 1315 58>>*/ }
+     /*<<dom_html.ml 1269 15>>*/ function createElement_bO_
      (jsoo_self_a_,name_b_)
-     { /*<<dom_html.ml 1304 44>>*/ return  /*<<dom_html.ml 1304 44>>*/ jsoo_self_a_.createElement
-              ( /*<<dom_html.ml 1304 44>>*/ name_b_.toString()) /*<<dom_html.ml 1304 78>>*/ }
-     /*<<dom_html.ml 1256 15>>*/ function unsafeCreateElement_ax_
+     { /*<<dom_html.ml 1317 44>>*/ return  /*<<dom_html.ml 1317 44>>*/ jsoo_self_a_.createElement
+              ( /*<<dom_html.ml 1317 44>>*/ name_b_.toString()) /*<<dom_html.ml 1317 78>>*/ }
+     /*<<dom_html.ml 1269 15>>*/ function unsafeCreateElement_ax_
      (doc_a_,name_b_)
-     { /*<<dom_html.ml 1305 35>>*/ return  /*<<dom_html.ml 1305 35>>*/ createElement_bO_
-              (doc_a_,name_b_) /*<<dom_html.ml 1305 76>>*/ }
-     /*<<dom_html.ml 1256 15>>*/  /*<<dom_html.ml 1256 15>>*/ var
+     { /*<<dom_html.ml 1318 35>>*/ return  /*<<dom_html.ml 1318 35>>*/ createElement_bO_
+              (doc_a_,name_b_) /*<<dom_html.ml 1318 76>>*/ }
+     /*<<dom_html.ml 1269 15>>*/  /*<<dom_html.ml 1269 15>>*/ var
      createElementSyntax_c6_=
       [0,num_785140586_dQ_];
-     /*<<dom_html.ml 1256 15>>*/ function unsafeCreateElementEx_g0_
+     /*<<dom_html.ml 1269 15>>*/ function unsafeCreateElementEx_g0_
      (type_a_,name_b_,doc_c_,elt_d_)
-     { /*<<dom_html.ml 1310 2>>*/ for(;;)
-       { /*<<dom_html.ml 1310 2>>*/ if(0===type_a_)
+     { /*<<dom_html.ml 1323 2>>*/ for(;;)
+       { /*<<dom_html.ml 1323 2>>*/ if(0===type_a_)
          if(0===name_b_)
-          return  /*<<dom_html.ml 1311 4>>*/ createElement_bO_(doc_c_,elt_d_);
-         /*<<dom_html.ml 1313 4>>*/  /*<<dom_html.ml 1313 4>>*/ var
+          return  /*<<dom_html.ml 1324 4>>*/ createElement_bO_(doc_c_,elt_d_);
+         /*<<dom_html.ml 1326 4>>*/  /*<<dom_html.ml 1326 4>>*/ var
          _h_=
           createElementSyntax_c6_[1];
-         /*<<dom_html.ml 1313 4>>*/ if(num_785140586_dQ_===_h_)
-         { /*<<dom_html.ml 1331 8>>*/ try
-           { /*<<dom_html.ml 1336 19>>*/ var
-              /*<<dom_html.ml 1336 19>>*/ el_j_=
-               /*<<dom_html.ml 1336 19>>*/ document_gZ_.createElement
+         /*<<dom_html.ml 1326 4>>*/ if(num_785140586_dQ_===_h_)
+         { /*<<dom_html.ml 1344 8>>*/ try
+           { /*<<dom_html.ml 1349 19>>*/ var
+              /*<<dom_html.ml 1349 19>>*/ el_j_=
+               /*<<dom_html.ml 1349 19>>*/ document_gZ_.createElement
                ('<input name="x">'),
-              /*<<dom_html.ml 1337 14>>*/ _k_=
-               /*<<dom_html.ml 1337 14>>*/ el_j_.tagName.toLowerCase()===
+              /*<<dom_html.ml 1350 14>>*/ _k_=
+               /*<<dom_html.ml 1350 14>>*/ el_j_.tagName.toLowerCase()===
                "input"
                ?1
                :0,
-              /*<<dom_html.ml 1337 14>>*/ _m_=
+              /*<<dom_html.ml 1350 14>>*/ _m_=
               _k_?el_j_.name===str_x_b3_?1:0:_k_,
              _i_=_m_}
           catch(_f_){var _i_=0}
-           /*<<dom_html.ml 1342 12>>*/  /*<<dom_html.ml 1342 12>>*/ var
+           /*<<dom_html.ml 1355 12>>*/  /*<<dom_html.ml 1355 12>>*/ var
            _l_=
             _i_?num_982028505_dw_:-1003883683;
-           /*<<dom_html.ml 1345 8>>*/ createElementSyntax_c6_[1]=_l_;
+           /*<<dom_html.ml 1358 8>>*/ createElementSyntax_c6_[1]=_l_;
           continue}
         if(num_982028505_dw_<=_h_)
-         { /*<<dom_html.ml 1320 16>>*/  /*<<dom_html.ml 1320 16>>*/ var
+         { /*<<dom_html.ml 1333 16>>*/  /*<<dom_html.ml 1333 16>>*/ var
            a_f_=
             new jsoo_7bc72a9e_c1_();
-           /*<<dom_html.ml 1321 16>>*/  /*<<dom_html.ml 1321 16>>*/ a_f_.push
-           ("<", /*<<dom_html.ml 1321 39>>*/ elt_d_.toString());
-           /*<<dom_html.ml 1322 8>>*/  /*<<dom_html.ml 1322 8>>*/ opt_iter_ba_
+           /*<<dom_html.ml 1334 16>>*/  /*<<dom_html.ml 1334 16>>*/ a_f_.push
+           ("<", /*<<dom_html.ml 1334 39>>*/ elt_d_.toString());
+           /*<<dom_html.ml 1335 8>>*/  /*<<dom_html.ml 1335 8>>*/ opt_iter_ba_
            (type_a_,
             function(t_a_)
-             { /*<<dom_html.ml 1324 13>>*/  /*<<dom_html.ml 1324 13>>*/ a_f_.push
+             { /*<<dom_html.ml 1337 13>>*/  /*<<dom_html.ml 1337 13>>*/ a_f_.push
                (' type="',
-                 /*<<dom_html.ml 1324 45>>*/ caml_js_html_escape_eh_(t_a_),
+                 /*<<dom_html.ml 1337 45>>*/ caml_js_html_escape_eh_(t_a_),
                 str_bf_);
-               /*<<dom_html.ml 1324 13>>*/ return 0 /*<<dom_html.ml 1324 76>>*/ });
-           /*<<dom_html.ml 1325 8>>*/  /*<<dom_html.ml 1325 8>>*/ opt_iter_ba_
+               /*<<dom_html.ml 1337 13>>*/ return 0 /*<<dom_html.ml 1337 76>>*/ });
+           /*<<dom_html.ml 1338 8>>*/  /*<<dom_html.ml 1338 8>>*/ opt_iter_ba_
            (name_b_,
             function(n_a_)
-             { /*<<dom_html.ml 1327 13>>*/  /*<<dom_html.ml 1327 13>>*/ a_f_.push
+             { /*<<dom_html.ml 1340 13>>*/  /*<<dom_html.ml 1340 13>>*/ a_f_.push
                (' name="',
-                 /*<<dom_html.ml 1327 45>>*/ caml_js_html_escape_eh_(n_a_),
+                 /*<<dom_html.ml 1340 45>>*/ caml_js_html_escape_eh_(n_a_),
                 str_bf_);
-               /*<<dom_html.ml 1327 13>>*/ return 0 /*<<dom_html.ml 1327 76>>*/ });
-           /*<<dom_html.ml 1328 16>>*/  /*<<dom_html.ml 1328 16>>*/ a_f_.push
+               /*<<dom_html.ml 1340 13>>*/ return 0 /*<<dom_html.ml 1340 76>>*/ });
+           /*<<dom_html.ml 1341 16>>*/  /*<<dom_html.ml 1341 16>>*/ a_f_.push
            (">");
-           /*<<dom_html.ml 1329 26>>*/ return  /*<<dom_html.ml 1329 26>>*/ doc_c_.createElement
-                  ( /*<<dom_html.ml 1329 46>>*/ a_f_.join(str_e_))}
-         /*<<dom_html.ml 1313 4>>*/  /*<<dom_html.ml 1315 36>>*/ var
+           /*<<dom_html.ml 1342 26>>*/ return  /*<<dom_html.ml 1342 26>>*/ doc_c_.createElement
+                  ( /*<<dom_html.ml 1342 46>>*/ a_f_.join(str_e_))}
+         /*<<dom_html.ml 1326 4>>*/  /*<<dom_html.ml 1328 36>>*/ var
          res_g_=
-           /*<<dom_html.ml 1315 36>>*/ createElement_bO_(doc_c_,elt_d_);
-         /*<<dom_html.ml 1316 8>>*/  /*<<dom_html.ml 1316 8>>*/ opt_iter_ba_
+           /*<<dom_html.ml 1328 36>>*/ createElement_bO_(doc_c_,elt_d_);
+         /*<<dom_html.ml 1329 8>>*/  /*<<dom_html.ml 1329 8>>*/ opt_iter_ba_
          (type_a_,
           function(jsoo_arg_a_)
-           { /*<<dom_html.ml 1316 33>>*/ return res_g_.type=jsoo_arg_a_ /*<<dom_html.ml 1316 48>>*/ });
-         /*<<dom_html.ml 1317 8>>*/  /*<<dom_html.ml 1317 8>>*/ opt_iter_ba_
+           { /*<<dom_html.ml 1329 33>>*/ return res_g_.type=jsoo_arg_a_ /*<<dom_html.ml 1329 48>>*/ });
+         /*<<dom_html.ml 1330 8>>*/  /*<<dom_html.ml 1330 8>>*/ opt_iter_ba_
          (name_b_,
           function(jsoo_arg_a_)
-           { /*<<dom_html.ml 1317 32>>*/ return res_g_.name=jsoo_arg_a_ /*<<dom_html.ml 1317 46>>*/ });
-         /*<<dom_html.ml 1317 47>>*/ return res_g_} /*<<dom_html.ml 1345 50>>*/ }
-     /*<<dom_html.ml 1256 15>>*/ function createOption_c7_(doc_a_)
-     { /*<<dom_html.ml 1357 41>>*/ return  /*<<dom_html.ml 1357 41>>*/ unsafeCreateElement_ax_
-              (doc_a_,_g1_) /*<<dom_html.ml 1357 73>>*/ }
-     /*<<dom_html.ml 1256 15>>*/ function createDiv_aR_(doc_a_)
-     { /*<<dom_html.ml 1373 35>>*/ return  /*<<dom_html.ml 1373 35>>*/ unsafeCreateElement_ax_
-              (doc_a_,_g3_) /*<<dom_html.ml 1373 64>>*/ }
-     /*<<dom_html.ml 1256 15>>*/ function createBr_c8_(doc_a_)
-     { /*<<dom_html.ml 1386 33>>*/ return  /*<<dom_html.ml 1386 33>>*/ unsafeCreateElement_ax_
-              (doc_a_,_g5_) /*<<dom_html.ml 1386 61>>*/ }
-     /*<<dom_html.ml 1256 15>>*/  /*<<dom_html.ml 1256 15>>*/ caml_set_oo_id_G_
+           { /*<<dom_html.ml 1330 32>>*/ return res_g_.name=jsoo_arg_a_ /*<<dom_html.ml 1330 46>>*/ });
+         /*<<dom_html.ml 1330 47>>*/ return res_g_} /*<<dom_html.ml 1358 50>>*/ }
+     /*<<dom_html.ml 1269 15>>*/ function createOption_c7_(doc_a_)
+     { /*<<dom_html.ml 1370 41>>*/ return  /*<<dom_html.ml 1370 41>>*/ unsafeCreateElement_ax_
+              (doc_a_,_g1_) /*<<dom_html.ml 1370 73>>*/ }
+     /*<<dom_html.ml 1269 15>>*/ function createDiv_aR_(doc_a_)
+     { /*<<dom_html.ml 1386 35>>*/ return  /*<<dom_html.ml 1386 35>>*/ unsafeCreateElement_ax_
+              (doc_a_,_g3_) /*<<dom_html.ml 1386 64>>*/ }
+     /*<<dom_html.ml 1269 15>>*/ function createBr_c8_(doc_a_)
+     { /*<<dom_html.ml 1399 33>>*/ return  /*<<dom_html.ml 1399 33>>*/ unsafeCreateElement_ax_
+              (doc_a_,_g5_) /*<<dom_html.ml 1399 61>>*/ }
+     /*<<dom_html.ml 1269 15>>*/  /*<<dom_html.ml 1269 15>>*/ caml_set_oo_id_G_
      ([num_248_a_,_g8_,0]);
-     /*<<dom_html.ml 1446 23>>*/ window_c_.HTMLElement===origin_aw_;
-     /*<<dom_html.ml 1873 54>>*/ var
-      /*<<dom_html.ml 1873 54>>*/ _g9_=num_2147483e3_b$_,
+     /*<<dom_html.ml 1459 23>>*/ window_c_.HTMLElement===origin_aw_;
+     /*<<dom_html.ml 1886 54>>*/ var
+      /*<<dom_html.ml 1886 54>>*/ _g9_=num_2147483e3_b$_,
       /*<<file.ml 56 18>>*/ blob_constr_g__=window_c_.Blob,
       /*<<file.ml 58 17>>*/ doc_constr_g$_=window_c_.Document,
       /*<<firebug.ml 78 14>>*/ jsoo_self_ha_=
@@ -6505,40 +6505,40 @@
         /*<<lwt_js.ml 22 26>>*/ t_f_=match_b_[1],
         /*<<lwt_js.ml 22 26>>*/ w_g_=match_b_[2],
         /*<<lwt_js.ml 23 2>>*/ d_h_=d_a_*num_1e3_b5_,
-        /*<<dom_html.ml 1892 2>>*/ id_d_=[0,0];
+        /*<<dom_html.ml 1905 2>>*/ id_d_=[0,0];
        /*<<lwt_js.ml 23 32>>*/ function callback_j_(_a_)
        { /*<<?>>*/ return wakeup_bI_(w_g_,_a_)}
-       /*<<dom_html.ml 1893 2>>*/ function loop_e_(d_a_,param_b_)
-       { /*<<dom_html.ml 1894 4>>*/ var
-          /*<<dom_html.ml 1894 4>>*/ match_f_=
+       /*<<dom_html.ml 1906 2>>*/ function loop_e_(d_a_,param_b_)
+       { /*<<dom_html.ml 1907 4>>*/ var
+          /*<<dom_html.ml 1907 4>>*/ match_f_=
           num_2147483e3_b$_<d_a_?[0,_g9_,d_a_-num_2147483e3_b$_]:[0,d_a_,0],
          remain_g_=match_f_[2],
          step_h_=match_f_[1],
-          /*<<dom_html.ml 1898 4>>*/ cb_i_=
+          /*<<dom_html.ml 1911 4>>*/ cb_i_=
           remain_g_==0
            ?callback_j_
            :function(_a_){ /*<<?>>*/ return loop_e_(remain_g_,_a_)};
-         /*<<dom_html.ml 1902 16>>*/ id_d_[1]=
+         /*<<dom_html.ml 1915 16>>*/ id_d_[1]=
         [0,
-          /*<<dom_html.ml 1902 16>>*/ window_c_.setTimeout
-          ( /*<<dom_html.ml 1902 4>>*/ caml_js_wrap_callback_ce_(cb_i_),
+          /*<<dom_html.ml 1915 16>>*/ window_c_.setTimeout
+          ( /*<<dom_html.ml 1915 4>>*/ caml_js_wrap_callback_ce_(cb_i_),
            step_h_)];
-         /*<<dom_html.ml 1902 16>>*/ return 0 /*<<dom_html.ml 1902 63>>*/ }
-       /*<<dom_html.ml 1904 2>>*/  /*<<dom_html.ml 1904 2>>*/ loop_e_(d_h_,0);
+         /*<<dom_html.ml 1915 16>>*/ return 0 /*<<dom_html.ml 1915 63>>*/ }
+       /*<<dom_html.ml 1917 2>>*/  /*<<dom_html.ml 1917 2>>*/ loop_e_(d_h_,0);
        /*<<lwt_js.ml 24 2>>*/  /*<<lwt_js.ml 24 2>>*/ on_cancel_cX_
        (t_f_,
         function(param_a_)
-         { /*<<dom_html.ml 1908 2>>*/  /*<<dom_html.ml 1908 2>>*/ var
+         { /*<<dom_html.ml 1921 2>>*/  /*<<dom_html.ml 1921 2>>*/ var
            _b_=
             id_d_[1];
-           /*<<dom_html.ml 1908 2>>*/ if(_b_)
-           { /*<<dom_html.ml 1911 5>>*/  /*<<dom_html.ml 1911 5>>*/ var
+           /*<<dom_html.ml 1921 2>>*/ if(_b_)
+           { /*<<dom_html.ml 1924 5>>*/  /*<<dom_html.ml 1924 5>>*/ var
              x_e_=
               _b_[1];
-             /*<<dom_html.ml 1911 5>>*/ id_d_[1]=0;
-             /*<<dom_html.ml 1912 5>>*/ return  /*<<dom_html.ml 1912 5>>*/ window_c_.clearTimeout
+             /*<<dom_html.ml 1924 5>>*/ id_d_[1]=0;
+             /*<<dom_html.ml 1925 5>>*/ return  /*<<dom_html.ml 1925 5>>*/ window_c_.clearTimeout
                     (x_e_)}
-           /*<<dom_html.ml 1909 12>>*/ return 0 /*<<lwt_js.ml 24 53>>*/ });
+           /*<<dom_html.ml 1922 12>>*/ return 0 /*<<lwt_js.ml 24 53>>*/ });
        /*<<lwt_js.ml 24 54>>*/ return t_f_ /*<<lwt_js.ml 25 3>>*/ }
      /*<<src/core/lwt.ml 1201 32>>*/ pause_hook_gV_[1]=
     function(param_a_)
@@ -8226,14 +8226,14 @@
          /*<<boulderdash.ml 322 2>>*/ function _r_(levels_k_)
          { /*<<boulderdash.ml 420 4>>*/ body_c_.style.cssText=
           "font-family: sans-serif; text-align: center; background-color: #e8e8e8;";
-           /*<<dom_html.ml 1376 38>>*/  /*<<dom_html.ml 1376 38>>*/ var
+           /*<<dom_html.ml 1389 38>>*/  /*<<dom_html.ml 1389 38>>*/ var
            h1_d_=
-             /*<<dom_html.ml 1376 38>>*/ unsafeCreateElement_ax_(doc_A_,_g4_);
+             /*<<dom_html.ml 1389 38>>*/ unsafeCreateElement_ax_(doc_A_,_g4_);
            /*<<boulderdash.ml 424 4>>*/  /*<<boulderdash.ml 424 4>>*/ append_text_ai_
            (h1_d_,_h6_);
            /*<<boulderdash.ml 425 4>>*/  /*<<boulderdash.ml 425 4>>*/ _D_
            (body_c_,h1_d_);
-           /*<<dom_html.ml 1376 38>>*/  /*<<boulderdash.ml 426 14>>*/ var
+           /*<<dom_html.ml 1389 38>>*/  /*<<boulderdash.ml 426 14>>*/ var
            div_a_=
              /*<<boulderdash.ml 426 14>>*/ createDiv_aR_(doc_A_);
            /*<<boulderdash.ml 427 4>>*/  /*<<boulderdash.ml 427 4>>*/ append_text_ai_
@@ -8246,9 +8246,9 @@
            (div_a_,rem_div_i_);
            /*<<boulderdash.ml 431 4>>*/  /*<<boulderdash.ml 431 4>>*/ append_text_ai_
            (div_a_,_h9_);
-           /*<<dom_html.ml 1376 38>>*/ var
-            /*<<dom_html.ml 1359 2>>*/ select_b_=
-             /*<<dom_html.ml 1359 2>>*/ unsafeCreateElementEx_g0_
+           /*<<dom_html.ml 1389 38>>*/ var
+            /*<<dom_html.ml 1372 2>>*/ select_b_=
+             /*<<dom_html.ml 1372 2>>*/ unsafeCreateElementEx_g0_
              (0,0,doc_A_,_g2_),
             /*<<boulderdash.ml 433 17>>*/ option_e_=
              /*<<boulderdash.ml 433 17>>*/ createOption_c7_(doc_A_);
@@ -8381,9 +8381,9 @@
                            ( /*<<boulderdash.ml 374 31>>*/ _a6_
                              (_cm_, /*<<boulderdash.ml 374 55>>*/ _bx_(res_r_[1])));
                          /*<<boulderdash.ml 375 8>>*/ function _R_(c_a_)
-                         { /*<<dom_html.ml 1391 37>>*/  /*<<dom_html.ml 1391 37>>*/ var
+                         { /*<<dom_html.ml 1404 37>>*/  /*<<dom_html.ml 1404 37>>*/ var
                            img_b_=
-                             /*<<dom_html.ml 1391 37>>*/ unsafeCreateElement_ax_
+                             /*<<dom_html.ml 1404 37>>*/ unsafeCreateElement_ax_
                              (doc_A_,_g6_);
                            /*<<boulderdash.ml 378 36>>*/ img_b_.src=
                            /*<<boulderdash.ml 378 48>>*/ img_assoc_dj_(c_a_);
@@ -8397,8 +8397,8 @@
                           /*<<boulderdash.ml 381 2>>*/ ex_E_=[0,0],
                           /*<<boulderdash.ml 381 2>>*/ ey_F_=[0,0],
                           /*<<boulderdash.ml 381 2>>*/ rem_G_=[0,0],
-                          /*<<dom_html.ml 1397 39>>*/ table_j_=
-                           /*<<dom_html.ml 1397 39>>*/ unsafeCreateElement_ax_
+                          /*<<dom_html.ml 1410 39>>*/ table_j_=
+                           /*<<dom_html.ml 1410 39>>*/ unsafeCreateElement_ax_
                            (doc_A_,_g7_);
                          /*<<boulderdash.ml 269 2>>*/  /*<<boulderdash.ml 269 2>>*/ opt_style_bV_
                          (table_j_,
