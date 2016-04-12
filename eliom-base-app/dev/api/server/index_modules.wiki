@@ -3,6 +3,7 @@
 |@@ @style="tet-align: left;"@@\\D|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Default_config"| module Eba_page.Default_config >> ~[<<a_api subproject="server" | module Eba_page >>~]||
 |@@ @style="tet-align: left;"@@\\E|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Eba_current_user"| module Eba_current_user >> ||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Eba_date"| module Eba_date >> ||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Eba_email"| module Eba_email >> |<<div class="odocwiki_info"|~Basic module for sending e~-mail messages to users~,
     using some local sendmail program~.
@@ -46,4 +47,5 @@
 |@@ @style="tet-align: left;"@@\\O|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Opt"| module Eba_session.Opt >> ~[<<a_api subproject="server" | module Eba_session >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Opt"| module Eba_page.Make.Opt >> ~[<<a_api subproject="server" | module Eba_page.Make >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Opt"| module Eba_current_user.Opt >> ~[<<a_api subproject="server" | module Eba_current_user >>~]||
 \\

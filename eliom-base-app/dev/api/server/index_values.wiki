@@ -131,6 +131,10 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="get"| value Eba_request_cache.Cache_sig.get >> ~[<<a_api subproject="server" | module Eba_request_cache.Cache_sig >>~]|<<div class="odocwiki_info"|~Get the value corresponding to the given key~.
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="get_current_user"| value Eba_current_user.Opt.get_current_user >> ~[<<a_api subproject="server" | module Eba_current_user.Opt >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="get_current_user"| value Eba_current_user.get_current_user >> ~[<<a_api subproject="server" | module Eba_current_user >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="get_current_userid"| value Eba_current_user.Opt.get_current_userid >> ~[<<a_api subproject="server" | module Eba_current_user.Opt >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="get_current_userid"| value Eba_current_user.get_current_userid >> ~[<<a_api subproject="server" | module Eba_current_user >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="get_mailer"| value Eba_email.get_mailer >> ~[<<a_api subproject="server" | module Eba_email >>~]|<<div class="odocwiki_info"|~Get the name of mailer program
 >>
 |

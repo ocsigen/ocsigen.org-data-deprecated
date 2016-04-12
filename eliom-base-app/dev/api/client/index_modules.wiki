@@ -1,6 +1,7 @@
 =Index of modules=
 
 |@@ @style="tet-align: left;"@@\\E|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Eba_current_user"| module Eba_current_user >> ||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Eba_date"| module Eba_date >> ||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Eba_email"| module Eba_email >> ||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Eba_msg"| module Eba_msg >> ||
