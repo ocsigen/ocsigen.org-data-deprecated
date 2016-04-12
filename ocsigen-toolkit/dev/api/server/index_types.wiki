@@ -1,7 +1,9 @@
 =Index of types=
 
 |@@ @style="tet-align: left;"@@\\I|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="intl"| type Ot_calendar.intl >> ~[<<a_api subproject="server" | module Ot_calendar >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="intl"| type Ot_calendar.intl >> ~[<<a_api subproject="server" | module Ot_calendar >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|intl>> is the type of internationalization specifiers~.
+>>
+|
 |@@ @style="tet-align: left;"@@\\S|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="service"| type Ot_picture_uploader.service >> ~[<<a_api subproject="server" | module Ot_picture_uploader >>~]||
 \\

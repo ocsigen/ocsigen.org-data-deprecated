@@ -18,9 +18,18 @@
 >>
 |
 |@@ @style="tet-align: left;"@@\\M|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="make"| value Ot_toggle.make >> ~[<<a_api subproject="server" | module Ot_toggle >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="make"| value Ot_time_picker.make >> ~[<<a_api subproject="server" | module Ot_time_picker >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="make"| value Ot_range.make >> ~[<<a_api subproject="server" | module Ot_range >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="make"| value Ot_toggle.make >> ~[<<a_api subproject="server" | module Ot_toggle >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|make ~?init~_up ~?up~_txt ~?down~_txt ~(~)>> produces a binary toggle~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="make"| value Ot_time_picker.make >> ~[<<a_api subproject="server" | module Ot_time_picker >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|make ~?action ~?round~_~5 ~?h~2~4 ~(~)>> produces a clock~-style time picker
+    for hours and minutes~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="make"| value Ot_range.make >> ~[<<a_api subproject="server" | module Ot_range >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|make ~?txt~_up ~?txt~_down ~~f ~~lb ub>> produces a widget for picking
+    one of the values in <<span class="odocwiki_inlinecode"|~[lb~, ub~)>> via "up" and "down" buttons marked
+    with the text <<span class="odocwiki_inlinecode"|txt~_up>> and <<span class="odocwiki_inlinecode"|txt~_down>>~.
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="make"| value Ot_carousel.make >> ~[<<a_api subproject="server" | module Ot_carousel >>~]|<<div class="odocwiki_info"|~Creates a carousel from the elements of a list~.
 >>
 |
@@ -52,5 +61,9 @@
 >>
 |
 |@@ @style="tet-align: left;"@@\\W|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="with_spinner"| value Ot_spinner.with_spinner >> ~[<<a_api subproject="server" | module Ot_spinner >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="with_spinner"| value Ot_spinner.with_spinner >> ~[<<a_api subproject="server" | module Ot_spinner >>~]|<<div class="odocwiki_info"|~On client side~, <<span class="odocwiki_inlinecode"|with~_spinner th>> returns immediately a spinner
+    while ~Lwt thread <<span class="odocwiki_inlinecode"|th>> is not finished~, that will automatically
+    be replaced by the result of <<span class="odocwiki_inlinecode"|th>> when finished~.
+>>
+|
 \\

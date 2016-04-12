@@ -1,4 +1,4 @@
-=~Ocsigen~-toolkit client ~A~P~I
+=~Ocsigen~-toolkit server ~A~P~I
 ==[[server/Ot_popup|Ot_popup]]
 ==[[server/Ot_spinner|Ot_spinner]]
 ==[[server/Ot_range|Ot_range]]

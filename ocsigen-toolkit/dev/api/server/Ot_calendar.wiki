@@ -1,12 +1,14 @@
 =Module <<a_api_type subproject="server" | module Ot_calendar >> =
-<<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module>> <<span class="ocsforge_color_uid"|<<span class="ocsforge_color_uid"|Ot_calendar>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="ocsforge_color_keyword"|sig>><<a_api subproject="server" text=".." | module Ot_calendar >><<span class="ocsforge_color_keyword"|end>>>><<span class="odocwiki_inlinecode"|intl>> is the type of internationalization specifiers~. <<span class="odocwiki_inlinecode"|i~_days>>
-    contains the names of the weekdays~, starting with
-    ~Sunday~. <<span class="odocwiki_inlinecode"|i~_months>> contains the names of the months~, starting with
-    ~January~. <<span class="odocwiki_inlinecode"|i~_start>> specifies the first day of the week~.
+<<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module>> <<span class="ocsforge_color_uid"|<<span class="ocsforge_color_uid"|Ot_calendar>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="ocsforge_color_keyword"|sig>><<a_api subproject="server" text=".." | module Ot_calendar >><<span class="ocsforge_color_keyword"|end>>>>~Calendar widget
 
 ----
 <<pre class="ocsforge_color odocwiki_code" id="TYPEintl"|<<span class="ocsforge_color_keyword"|type>> <<span class="odocwiki_name"|intl>> <<span class="ocsforge_color_delimiter"|~=>> <<span class="ocsforge_color_delimiter"|~{>>
-<<span class="odocwiki_record"|<<span class="odocwiki_field"|<<span class="odocwiki_field_descr"|  <<span class="ocsforge_color_label"|i_days:>> <<span class="odocwiki_type"|string list>><<span class="ocsforge_color_delimiter"|~;>> >>>><<span class="odocwiki_field"|<<span class="odocwiki_field_descr"|  <<span class="ocsforge_color_label"|i_months:>> <<span class="odocwiki_type"|string list>><<span class="ocsforge_color_delimiter"|~;>> >>>><<span class="odocwiki_field"|<<span class="odocwiki_field_descr"|  <<span class="ocsforge_color_label"|i_start:>> <<span class="odocwiki_type"|[ `Fri | `Mon | `Sat | `Sun | `Thu | `Tue | `Wed ]>><<span class="ocsforge_color_delimiter"|~;>> >>>>>><<span class="ocsforge_color_delimiter"|~}>>>>
+<<span class="odocwiki_record"|<<span class="odocwiki_field"|<<span class="odocwiki_field_descr"|  <<span class="ocsforge_color_label"|i_days:>> <<span class="odocwiki_type"|string list>><<span class="ocsforge_color_delimiter"|~;>> >>>><<span class="odocwiki_field"|<<span class="odocwiki_field_descr"|  <<span class="ocsforge_color_label"|i_months:>> <<span class="odocwiki_type"|string list>><<span class="ocsforge_color_delimiter"|~;>> >>>><<span class="odocwiki_field"|<<span class="odocwiki_field_descr"|  <<span class="ocsforge_color_label"|i_start:>> <<span class="odocwiki_type"|[ `Fri | `Mon | `Sat | `Sun | `Thu | `Tue | `Wed ]>><<span class="ocsforge_color_delimiter"|~;>> >>>>>><<span class="ocsforge_color_delimiter"|~}>>>><<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|intl>> is the type of internationalization specifiers~. <<span class="odocwiki_inlinecode"|i~_days>>
+    contains the names of the weekdays~, starting with
+    ~Sunday~. <<span class="odocwiki_inlinecode"|i~_months>> contains the names of the months~, starting with
+    ~January~. <<span class="odocwiki_inlinecode"|i~_start>> specifies the first day of the week~.
+>>
+
 <<span class="odocwiki_inlinecode"|make ~?highlight ~?click~_any ~?action>> produces a calendar~.
 
 
