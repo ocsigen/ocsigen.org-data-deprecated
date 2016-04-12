@@ -7,10 +7,17 @@
   val parser_config :
     Simplexmlparser.xml list -> Simplexmlparser.xml list list
   val parse_server : bool -> Simplexmlparser.xml list -> unit
+  type ssl_info = {
+    ssl_certificate : string option;
+    ssl_privatekey : string option;
+    ssl_ciphers : string option;
+    ssl_dhfile : string option;
+    ssl_curve : string option;
+  }
   val extract_info :
     Simplexmlparser.xml list ->
     (string option * string option) *
-    ((string option * string option) option *
+    (Ocsigen_parseconfig.ssl_info option *
      (Ocsigen_socket.socket_type * int) list *
      (Ocsigen_socket.socket_type * int) list) *
     (int * int)
