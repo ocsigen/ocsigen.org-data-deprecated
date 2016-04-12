@@ -2,9 +2,14 @@
 
 |@@ @style="tet-align: left;"@@\\O|
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Ot_calendar"| module Ot_calendar >> ||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Ot_carousel"| module Ot_carousel >> ||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Ot_drawer"| module Ot_drawer >> ||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Ot_lib"| module Ot_lib >> ||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Ot_nodeready"| module Ot_nodeready >> ||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Ot_picture_uploader"| module Ot_picture_uploader >> ||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Ot_popup"| module Ot_popup >> ||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Ot_range"| module Ot_range >> ||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Ot_size"| module Ot_size >> ||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Ot_spinner"| module Ot_spinner >> ||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Ot_time_picker"| module Ot_time_picker >> ||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Ot_toggle"| module Ot_toggle >> ||

@@ -1,0 +1,20 @@
+=Module <<a_api_type subproject="server" | module Ot_size >> =
+<<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module>> <<span class="ocsforge_color_uid"|<<span class="ocsforge_color_uid"|Ot_size>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="ocsforge_color_keyword"|sig>><<a_api subproject="server" text=".." | module Ot_size >><<span class="ocsforge_color_keyword"|end>>>>~Size functions for ~Dom elements~.
+
+----
+
+
+===@@id="3_Sizeandorientation"@@~Size and orientation===
+
+
+~Convert an int into "~%i px"~.
+
+~Extract an int from a string of the form "~%i px"~.
+
+<<span class="odocwiki_inlinecode"|set~_adaptative~_width elt f>> will make the width of the element
+      recomputed using <<span class="odocwiki_inlinecode"|f>> everytime the width of the window changes~.
+
+<<span class="odocwiki_inlinecode"|set~_adaptative~_height elt f>> will make the width of the element
+      recomputed using <<span class="odocwiki_inlinecode"|f>> everytime the height of the window changes~.
+
+~Compute the height of an element to the bottom of the page

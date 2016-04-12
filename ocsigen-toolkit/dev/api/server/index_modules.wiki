@@ -4,6 +4,16 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Ot_calendar"| module Ot_calendar >> |<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|intl>> is the type of internationalization specifiers~.
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Ot_carousel"| module Ot_carousel >> |<<div class="odocwiki_info"|~Carousel~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Ot_drawer"| module Ot_drawer >> |<<div class="odocwiki_info"|~Drawer menu for mobile and ~Web applications
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Ot_lib"| module Ot_lib >> |<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|click~_outside e>> returns when user clicks outside element <<span class="odocwiki_inlinecode"|e>>~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Ot_nodeready"| module Ot_nodeready >> ||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Ot_picture_uploader"| module Ot_picture_uploader >> |<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|~Ot~_picture~_uploader>> allow the user to see a picture he wants to
     send to the before sending it server~.
 >>
@@ -12,6 +22,9 @@
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Ot_range"| module Ot_range >> ||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Ot_size"| module Ot_size >> |<<div class="odocwiki_info"|~Size functions for ~Dom elements~.
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Ot_spinner"| module Ot_spinner >> |<<div class="odocwiki_info"|~On client side~, <<span class="odocwiki_inlinecode"|with~_spinner th>> returns immediately a spinner
     while ~Lwt thread <<span class="odocwiki_inlinecode"|th>> is not finished~, that will automatically
     be replaced by the result of <<span class="odocwiki_inlinecode"|th>> when finished~.
