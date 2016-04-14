@@ -855,10 +855,10 @@
     Xml.keyboard_event_handler -> [> `OnKeyUp ] Html_sigs.T.attrib
   val a_autocomplete :
     bool Html_sigs.T.wrap -> [> `Autocomplete ] Html_sigs.T.attrib
-  val a_async : [> `Async ] Html_sigs.T.attrib
-  val a_autofocus : [> `Autofocus ] Html_sigs.T.attrib
-  val a_autoplay : [> `Autoplay ] Html_sigs.T.attrib
-  val a_muted : [> `Muted ] Html_sigs.T.attrib
+  val a_async : unit -> [> `Async ] Html_sigs.T.attrib
+  val a_autofocus : unit -> [> `Autofocus ] Html_sigs.T.attrib
+  val a_autoplay : unit -> [> `Autoplay ] Html_sigs.T.attrib
+  val a_muted : unit -> [> `Muted ] Html_sigs.T.attrib
   val a_crossorigin :
     [< `Anonymous | `Use_credentials ] Html_sigs.T.wrap ->
     [> `Crossorigin ] Html_sigs.T.attrib
@@ -870,7 +870,7 @@
     bool Html_sigs.T.wrap -> [> `Contenteditable ] Html_sigs.T.attrib
   val a_contextmenu :
     Html_types.idref Html_sigs.T.wrap -> [> `Contextmenu ] Html_sigs.T.attrib
-  val a_controls : [> `Controls ] Html_sigs.T.attrib
+  val a_controls : unit -> [> `Controls ] Html_sigs.T.attrib
   val a_dir :
     [< `Ltr | `Rtl ] Html_sigs.T.wrap -> [> `Dir ] Html_sigs.T.attrib
   val a_draggable :
@@ -882,19 +882,19 @@
   val a_formenctype :
     Html_types.contenttype Html_sigs.T.wrap ->
     [> `Formenctype ] Html_sigs.T.attrib
-  val a_formnovalidate : [> `Formnovalidate ] Html_sigs.T.attrib
+  val a_formnovalidate : unit -> [> `Formnovalidate ] Html_sigs.T.attrib
   val a_formtarget :
     Html_types.text Html_sigs.T.wrap -> [> `Formtarget ] Html_sigs.T.attrib
-  val a_hidden : [> `Hidden ] Html_sigs.T.attrib
+  val a_hidden : unit -> [> `Hidden ] Html_sigs.T.attrib
   val a_high :
     Html_types.float_number Html_sigs.T.wrap -> [> `High ] Html_sigs.T.attrib
   val a_icon : Xml.uri Html_sigs.T.wrap -> [> `Icon ] Html_sigs.T.attrib
-  val a_ismap : [> `Ismap ] Html_sigs.T.attrib
+  val a_ismap : unit -> [> `Ismap ] Html_sigs.T.attrib
   val a_keytype :
     Html_types.text Html_sigs.T.wrap -> [> `Keytype ] Html_sigs.T.attrib
   val a_list :
     Html_types.idref Html_sigs.T.wrap -> [> `List ] Html_sigs.T.attrib
-  val a_loop : [> `Loop ] Html_sigs.T.attrib
+  val a_loop : unit -> [> `Loop ] Html_sigs.T.attrib
   val a_low :
     Html_types.float_number Html_sigs.T.wrap -> [> `High ] Html_sigs.T.attrib
   val a_max :
@@ -920,8 +920,8 @@
      | `Url
      | `Verbatim ]
     Html_sigs.T.wrap -> [> `Inputmode ] Html_sigs.T.attrib
-  val a_novalidate : [> `Novalidate ] Html_sigs.T.attrib
-  val a_open : [> `Open ] Html_sigs.T.attrib
+  val a_novalidate : unit -> [> `Novalidate ] Html_sigs.T.attrib
+  val a_open : unit -> [> `Open ] Html_sigs.T.attrib
   val a_optimum :
     Html_types.float_number Html_sigs.T.wrap ->
     [> `Optimum ] Html_sigs.T.attrib
@@ -933,18 +933,18 @@
   val a_preload :
     [< `Audio | `Metadata | `None ] Html_sigs.T.wrap ->
     [> `Preload ] Html_sigs.T.attrib
-  val a_pubdate : [> `Pubdate ] Html_sigs.T.attrib
+  val a_pubdate : unit -> [> `Pubdate ] Html_sigs.T.attrib
   val a_radiogroup :
     Html_types.text Html_sigs.T.wrap -> [> `Radiogroup ] Html_sigs.T.attrib
-  val a_required : [> `Required ] Html_sigs.T.attrib
-  val a_reversed : [> `Reversed ] Html_sigs.T.attrib
+  val a_required : unit -> [> `Required ] Html_sigs.T.attrib
+  val a_reversed : unit -> [> `Reversed ] Html_sigs.T.attrib
   val a_sandbox :
     [< Html_types.sandbox_token ] list Html_sigs.T.wrap ->
     [> `Sandbox ] Html_sigs.T.attrib
   val a_spellcheck :
     bool Html_sigs.T.wrap -> [> `Spellcheck ] Html_sigs.T.attrib
-  val a_scoped : [> `Scoped ] Html_sigs.T.attrib
-  val a_seamless : [> `Seamless ] Html_sigs.T.attrib
+  val a_scoped : unit -> [> `Scoped ] Html_sigs.T.attrib
+  val a_seamless : unit -> [> `Seamless ] Html_sigs.T.attrib
   val a_sizes :
     (Html_types.number * Html_types.number) list option Html_sigs.T.wrap ->
     [> `Sizes ] Html_sigs.T.attrib
@@ -1007,7 +1007,7 @@
   val a_datetime :
     Html_types.cdata Html_sigs.T.wrap -> [> `Datetime ] Html_sigs.T.attrib
   val a_action : Xml.uri Html_sigs.T.wrap -> [> `Action ] Html_sigs.T.attrib
-  val a_checked : [> `Checked ] Html_sigs.T.attrib
+  val a_checked : unit -> [> `Checked ] Html_sigs.T.attrib
   val a_cols :
     Html_types.number Html_sigs.T.wrap -> [> `Cols ] Html_sigs.T.attrib
   val a_enctype :
@@ -1029,12 +1029,12 @@
   val a_formmethod :
     [< `Delete | `Get | `Post | `Put ] Html_sigs.T.wrap ->
     [> `Method ] Html_sigs.T.attrib
-  val a_multiple : [> `Multiple ] Html_sigs.T.attrib
+  val a_multiple : unit -> [> `Multiple ] Html_sigs.T.attrib
   val a_name :
     Html_types.text Html_sigs.T.wrap -> [> `Name ] Html_sigs.T.attrib
   val a_rows :
     Html_types.number Html_sigs.T.wrap -> [> `Rows ] Html_sigs.T.attrib
-  val a_selected : [> `Selected ] Html_sigs.T.attrib
+  val a_selected : unit -> [> `Selected ] Html_sigs.T.attrib
   val a_size :
     Html_types.number Html_sigs.T.wrap -> [> `Size ] Html_sigs.T.attrib
   val a_src : Xml.uri Html_sigs.T.wrap -> [> `Src ] Html_sigs.T.attrib
@@ -1072,8 +1072,8 @@
   val a_float_value :
     Html_types.float_number Html_sigs.T.wrap ->
     [> `Float_Value ] Html_sigs.T.attrib
-  val a_disabled : [> `Disabled ] Html_sigs.T.attrib
-  val a_readonly : [> `ReadOnly ] Html_sigs.T.attrib
+  val a_disabled : unit -> [> `Disabled ] Html_sigs.T.attrib
+  val a_readonly : unit -> [> `ReadOnly ] Html_sigs.T.attrib
   val a_button_type :
     [< `Button | `Reset | `Submit ] Html_sigs.T.wrap ->
     [> `Button_Type ] Html_sigs.T.attrib
@@ -1147,7 +1147,7 @@
     Html_types.text Html_sigs.T.wrap -> [> `Content ] Html_sigs.T.attrib
   val a_http_equiv :
     Html_types.text Html_sigs.T.wrap -> [> `Http_equiv ] Html_sigs.T.attrib
-  val a_defer : [> `Defer ] Html_sigs.T.attrib
+  val a_defer : unit -> [> `Defer ] Html_sigs.T.attrib
   val a_media :
     Html_types.mediadesc Html_sigs.T.wrap -> [> `Media ] Html_sigs.T.attrib
   val a_style :

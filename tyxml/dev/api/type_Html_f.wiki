@@ -1231,32 +1231,32 @@
           Xml.keyboard_event_handler -> [> `OnKeyDown ] attrib
         val a_onkeyup : Xml.keyboard_event_handler -> [> `OnKeyUp ] attrib
         val a_autocomplete : bool wrap -> [> `Autocomplete ] attrib
-        val a_async : [> `Async ] attrib
-        val a_autofocus : [> `Autofocus ] attrib
-        val a_autoplay : [> `Autoplay ] attrib
-        val a_muted : [> `Muted ] attrib
+        val a_async : unit -> [> `Async ] attrib
+        val a_autofocus : unit -> [> `Autofocus ] attrib
+        val a_autoplay : unit -> [> `Autoplay ] attrib
+        val a_muted : unit -> [> `Muted ] attrib
         val a_crossorigin :
           [< `Anonymous | `Use_credentials ] wrap -> [> `Crossorigin ] attrib
         val a_mediagroup : string wrap -> [> `Mediagroup ] attrib
         val a_challenge : Html_types.text wrap -> [> `Challenge ] attrib
         val a_contenteditable : bool wrap -> [> `Contenteditable ] attrib
         val a_contextmenu : Html_types.idref wrap -> [> `Contextmenu ] attrib
-        val a_controls : [> `Controls ] attrib
+        val a_controls : unit -> [> `Controls ] attrib
         val a_dir : [< `Ltr | `Rtl ] wrap -> [> `Dir ] attrib
         val a_draggable : bool wrap -> [> `Draggable ] attrib
         val a_form : Html_types.idref wrap -> [> `Form ] attrib
         val a_formaction : Xml.uri wrap -> [> `Formaction ] attrib
         val a_formenctype :
           Html_types.contenttype wrap -> [> `Formenctype ] attrib
-        val a_formnovalidate : [> `Formnovalidate ] attrib
+        val a_formnovalidate : unit -> [> `Formnovalidate ] attrib
         val a_formtarget : Html_types.text wrap -> [> `Formtarget ] attrib
-        val a_hidden : [> `Hidden ] attrib
+        val a_hidden : unit -> [> `Hidden ] attrib
         val a_high : Html_types.float_number wrap -> [> `High ] attrib
         val a_icon : Xml.uri wrap -> [> `Icon ] attrib
-        val a_ismap : [> `Ismap ] attrib
+        val a_ismap : unit -> [> `Ismap ] attrib
         val a_keytype : Html_types.text wrap -> [> `Keytype ] attrib
         val a_list : Html_types.idref wrap -> [> `List ] attrib
-        val a_loop : [> `Loop ] attrib
+        val a_loop : unit -> [> `Loop ] attrib
         val a_low : Html_types.float_number wrap -> [> `High ] attrib
         val a_max : Html_types.float_number wrap -> [> `Max ] attrib
         val a_input_max :
@@ -1277,23 +1277,23 @@
            | `Url
            | `Verbatim ]
           wrap -> [> `Inputmode ] attrib
-        val a_novalidate : [> `Novalidate ] attrib
-        val a_open : [> `Open ] attrib
+        val a_novalidate : unit -> [> `Novalidate ] attrib
+        val a_open : unit -> [> `Open ] attrib
         val a_optimum : Html_types.float_number wrap -> [> `Optimum ] attrib
         val a_pattern : Html_types.text wrap -> [> `Pattern ] attrib
         val a_placeholder : Html_types.text wrap -> [> `Placeholder ] attrib
         val a_poster : Xml.uri wrap -> [> `Poster ] attrib
         val a_preload :
           [< `Audio | `Metadata | `None ] wrap -> [> `Preload ] attrib
-        val a_pubdate : [> `Pubdate ] attrib
+        val a_pubdate : unit -> [> `Pubdate ] attrib
         val a_radiogroup : Html_types.text wrap -> [> `Radiogroup ] attrib
-        val a_required : [> `Required ] attrib
-        val a_reversed : [> `Reversed ] attrib
+        val a_required : unit -> [> `Required ] attrib
+        val a_reversed : unit -> [> `Reversed ] attrib
         val a_sandbox :
           [< Html_types.sandbox_token ] list wrap -> [> `Sandbox ] attrib
         val a_spellcheck : bool wrap -> [> `Spellcheck ] attrib
-        val a_scoped : [> `Scoped ] attrib
-        val a_seamless : [> `Seamless ] attrib
+        val a_scoped : unit -> [> `Scoped ] attrib
+        val a_seamless : unit -> [> `Seamless ] attrib
         val a_sizes :
           (Html_types.number * Html_types.number) list option wrap ->
           [> `Sizes ] attrib
@@ -1329,7 +1329,7 @@
           Html_types.contenttype wrap -> [> `Mime_type ] attrib
         val a_datetime : Html_types.cdata wrap -> [> `Datetime ] attrib
         val a_action : Xml.uri wrap -> [> `Action ] attrib
-        val a_checked : [> `Checked ] attrib
+        val a_checked : unit -> [> `Checked ] attrib
         val a_cols : Html_types.number wrap -> [> `Cols ] attrib
         val a_enctype : Html_types.contenttype wrap -> [> `Enctype ] attrib
         val a_label_for : Html_types.idref wrap -> [> `Label_for ] attrib
@@ -1341,10 +1341,10 @@
           [< `Delete | `Get | `Post | `Put ] wrap -> [> `Method ] attrib
         val a_formmethod :
           [< `Delete | `Get | `Post | `Put ] wrap -> [> `Method ] attrib
-        val a_multiple : [> `Multiple ] attrib
+        val a_multiple : unit -> [> `Multiple ] attrib
         val a_name : Html_types.text wrap -> [> `Name ] attrib
         val a_rows : Html_types.number wrap -> [> `Rows ] attrib
-        val a_selected : [> `Selected ] attrib
+        val a_selected : unit -> [> `Selected ] attrib
         val a_size : Html_types.number wrap -> [> `Size ] attrib
         val a_src : Xml.uri wrap -> [> `Src ] attrib
         val a_input_type :
@@ -1377,8 +1377,8 @@
         val a_value : Html_types.cdata wrap -> [> `Value ] attrib
         val a_float_value :
           Html_types.float_number wrap -> [> `Float_Value ] attrib
-        val a_disabled : [> `Disabled ] attrib
-        val a_readonly : [> `ReadOnly ] attrib
+        val a_disabled : unit -> [> `Disabled ] attrib
+        val a_readonly : unit -> [> `ReadOnly ] attrib
         val a_button_type :
           [< `Button | `Reset | `Submit ] wrap -> [> `Button_Type ] attrib
         val a_command_type :
@@ -1423,7 +1423,7 @@
         val a_target : Html_types.frametarget wrap -> [> `Target ] attrib
         val a_content : Html_types.text wrap -> [> `Content ] attrib
         val a_http_equiv : Html_types.text wrap -> [> `Http_equiv ] attrib
-        val a_defer : [> `Defer ] attrib
+        val a_defer : unit -> [> `Defer ] attrib
         val a_media : Html_types.mediadesc wrap -> [> `Media ] attrib
         val a_style : string wrap -> [> `Style_Attr ] attrib
         val a_property : string wrap -> [> `Property ] attrib
@@ -4267,32 +4267,32 @@
           Xml.keyboard_event_handler -> [> `OnKeyDown ] attrib
         val a_onkeyup : Xml.keyboard_event_handler -> [> `OnKeyUp ] attrib
         val a_autocomplete : bool wrap -> [> `Autocomplete ] attrib
-        val a_async : [> `Async ] attrib
-        val a_autofocus : [> `Autofocus ] attrib
-        val a_autoplay : [> `Autoplay ] attrib
-        val a_muted : [> `Muted ] attrib
+        val a_async : unit -> [> `Async ] attrib
+        val a_autofocus : unit -> [> `Autofocus ] attrib
+        val a_autoplay : unit -> [> `Autoplay ] attrib
+        val a_muted : unit -> [> `Muted ] attrib
         val a_crossorigin :
           [< `Anonymous | `Use_credentials ] wrap -> [> `Crossorigin ] attrib
         val a_mediagroup : string wrap -> [> `Mediagroup ] attrib
         val a_challenge : Html_types.text wrap -> [> `Challenge ] attrib
         val a_contenteditable : bool wrap -> [> `Contenteditable ] attrib
         val a_contextmenu : Html_types.idref wrap -> [> `Contextmenu ] attrib
-        val a_controls : [> `Controls ] attrib
+        val a_controls : unit -> [> `Controls ] attrib
         val a_dir : [< `Ltr | `Rtl ] wrap -> [> `Dir ] attrib
         val a_draggable : bool wrap -> [> `Draggable ] attrib
         val a_form : Html_types.idref wrap -> [> `Form ] attrib
         val a_formaction : Xml.uri wrap -> [> `Formaction ] attrib
         val a_formenctype :
           Html_types.contenttype wrap -> [> `Formenctype ] attrib
-        val a_formnovalidate : [> `Formnovalidate ] attrib
+        val a_formnovalidate : unit -> [> `Formnovalidate ] attrib
         val a_formtarget : Html_types.text wrap -> [> `Formtarget ] attrib
-        val a_hidden : [> `Hidden ] attrib
+        val a_hidden : unit -> [> `Hidden ] attrib
         val a_high : Html_types.float_number wrap -> [> `High ] attrib
         val a_icon : Xml.uri wrap -> [> `Icon ] attrib
-        val a_ismap : [> `Ismap ] attrib
+        val a_ismap : unit -> [> `Ismap ] attrib
         val a_keytype : Html_types.text wrap -> [> `Keytype ] attrib
         val a_list : Html_types.idref wrap -> [> `List ] attrib
-        val a_loop : [> `Loop ] attrib
+        val a_loop : unit -> [> `Loop ] attrib
         val a_low : Html_types.float_number wrap -> [> `High ] attrib
         val a_max : Html_types.float_number wrap -> [> `Max ] attrib
         val a_input_max :
@@ -4313,23 +4313,23 @@
            | `Url
            | `Verbatim ]
           wrap -> [> `Inputmode ] attrib
-        val a_novalidate : [> `Novalidate ] attrib
-        val a_open : [> `Open ] attrib
+        val a_novalidate : unit -> [> `Novalidate ] attrib
+        val a_open : unit -> [> `Open ] attrib
         val a_optimum : Html_types.float_number wrap -> [> `Optimum ] attrib
         val a_pattern : Html_types.text wrap -> [> `Pattern ] attrib
         val a_placeholder : Html_types.text wrap -> [> `Placeholder ] attrib
         val a_poster : Xml.uri wrap -> [> `Poster ] attrib
         val a_preload :
           [< `Audio | `Metadata | `None ] wrap -> [> `Preload ] attrib
-        val a_pubdate : [> `Pubdate ] attrib
+        val a_pubdate : unit -> [> `Pubdate ] attrib
         val a_radiogroup : Html_types.text wrap -> [> `Radiogroup ] attrib
-        val a_required : [> `Required ] attrib
-        val a_reversed : [> `Reversed ] attrib
+        val a_required : unit -> [> `Required ] attrib
+        val a_reversed : unit -> [> `Reversed ] attrib
         val a_sandbox :
           [< Html_types.sandbox_token ] list wrap -> [> `Sandbox ] attrib
         val a_spellcheck : bool wrap -> [> `Spellcheck ] attrib
-        val a_scoped : [> `Scoped ] attrib
-        val a_seamless : [> `Seamless ] attrib
+        val a_scoped : unit -> [> `Scoped ] attrib
+        val a_seamless : unit -> [> `Seamless ] attrib
         val a_sizes :
           (Html_types.number * Html_types.number) list option wrap ->
           [> `Sizes ] attrib
@@ -4365,7 +4365,7 @@
           Html_types.contenttype wrap -> [> `Mime_type ] attrib
         val a_datetime : Html_types.cdata wrap -> [> `Datetime ] attrib
         val a_action : Xml.uri wrap -> [> `Action ] attrib
-        val a_checked : [> `Checked ] attrib
+        val a_checked : unit -> [> `Checked ] attrib
         val a_cols : Html_types.number wrap -> [> `Cols ] attrib
         val a_enctype : Html_types.contenttype wrap -> [> `Enctype ] attrib
         val a_label_for : Html_types.idref wrap -> [> `Label_for ] attrib
@@ -4377,10 +4377,10 @@
           [< `Delete | `Get | `Post | `Put ] wrap -> [> `Method ] attrib
         val a_formmethod :
           [< `Delete | `Get | `Post | `Put ] wrap -> [> `Method ] attrib
-        val a_multiple : [> `Multiple ] attrib
+        val a_multiple : unit -> [> `Multiple ] attrib
         val a_name : Html_types.text wrap -> [> `Name ] attrib
         val a_rows : Html_types.number wrap -> [> `Rows ] attrib
-        val a_selected : [> `Selected ] attrib
+        val a_selected : unit -> [> `Selected ] attrib
         val a_size : Html_types.number wrap -> [> `Size ] attrib
         val a_src : Xml.uri wrap -> [> `Src ] attrib
         val a_input_type :
@@ -4413,8 +4413,8 @@
         val a_value : Html_types.cdata wrap -> [> `Value ] attrib
         val a_float_value :
           Html_types.float_number wrap -> [> `Float_Value ] attrib
-        val a_disabled : [> `Disabled ] attrib
-        val a_readonly : [> `ReadOnly ] attrib
+        val a_disabled : unit -> [> `Disabled ] attrib
+        val a_readonly : unit -> [> `ReadOnly ] attrib
         val a_button_type :
           [< `Button | `Reset | `Submit ] wrap -> [> `Button_Type ] attrib
         val a_command_type :
@@ -4459,7 +4459,7 @@
         val a_target : Html_types.frametarget wrap -> [> `Target ] attrib
         val a_content : Html_types.text wrap -> [> `Content ] attrib
         val a_http_equiv : Html_types.text wrap -> [> `Http_equiv ] attrib
-        val a_defer : [> `Defer ] attrib
+        val a_defer : unit -> [> `Defer ] attrib
         val a_media : Html_types.mediadesc wrap -> [> `Media ] attrib
         val a_style : string wrap -> [> `Style_Attr ] attrib
         val a_property : string wrap -> [> `Property ] attrib
