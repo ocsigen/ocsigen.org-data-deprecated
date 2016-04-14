@@ -1,6 +1,6 @@
 <<code language="ocaml" | sig
   val is_client_app : unit -> bool
-  type ('a, +'b) server_function
+  type ('a, 'b) server_function
   val server_function :
     ?scope:[< Eliom_common.scope ] ->
     ?options:unit ->

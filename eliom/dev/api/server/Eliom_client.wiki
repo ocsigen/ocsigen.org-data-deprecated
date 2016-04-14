@@ -17,7 +17,7 @@
 
 
     ~See the <<a_manual chapter="clientserver-communication" fragment="rpc"|manual>> ~.
-<<pre class="ocsforge_color odocwiki_code" id="TYPEserver_function"|<<span class="ocsforge_color_keyword"|type>> <<span class="odocwiki_type"|<<span class="ocsforge_color_delimiter"| ( >>'a, +'b<<span class="ocsforge_color_delimiter"| ) >>>> <<span class="odocwiki_name"|server~_function>>>><<div class="odocwiki_info"|~A value of type <<span class="odocwiki_inlinecode"|~(~'a~, ~'b~) server~_function>> is created on the server from a
+<<pre class="ocsforge_color odocwiki_code" id="TYPEserver_function"|<<span class="ocsforge_color_keyword"|type>> <<span class="odocwiki_type"|<<span class="ocsforge_color_delimiter"| ( >>'a, 'b<<span class="ocsforge_color_delimiter"| ) >>>> <<span class="odocwiki_name"|server~_function>>>><<div class="odocwiki_info"|~A value of type <<span class="odocwiki_inlinecode"|~(~'a~, ~'b~) server~_function>> is created on the server from a
     function <<span class="odocwiki_inlinecode"|~'a ~-~> ~'b ~Lwt~.t>> and provides a given function on the client side~.
     ~See also <<a_api subproject="client" text="the concrete client side representation"|
               type Eliom_client.server_function>> ~.
