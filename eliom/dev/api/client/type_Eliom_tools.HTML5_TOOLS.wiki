@@ -6,7 +6,7 @@
       [< Eliom_service.registrable ] as 'b,
       [< Eliom_registration.non_ocaml_service ] as 'c)
      Eliom_tools.one_page *
-     Html5_types.flow5_without_interactive Eliom_content.Html5.elt list)
+     [< Html5_types.flow5_without_interactive ] Eliom_content.Html5.elt list)
     list ->
     ?service:('a, 'b, 'c) Eliom_tools.one_page ->
     unit -> [> `Ul ] Eliom_content.Html5.elt
@@ -16,7 +16,7 @@
     ?whole_tree:bool ->
     ([< Eliom_service.get_service_kind ] as 'a,
      [< Eliom_service.registrable ] as 'b,
-     Html5_types.a_content Eliom_content.Html5.elt list)
+     [< Html5_types.a_content ] Eliom_content.Html5.elt list)
     Eliom_tools.hierarchical_site ->
     ?service:('a, 'b, [< Eliom_registration.non_ocaml_service ])
              Eliom_tools.one_page ->
@@ -26,7 +26,7 @@
     ?id:string ->
     ([< Eliom_service.get_service_kind ] as 'a,
      [< Eliom_service.registrable ] as 'b,
-     Html5_types.a_content Eliom_content.Html5.elt list)
+     [< Html5_types.a_content ] Eliom_content.Html5.elt list)
     Eliom_tools.hierarchical_site ->
     ?service:('a, 'b, [< Eliom_registration.non_ocaml_service ])
              Eliom_tools.one_page ->
@@ -34,7 +34,7 @@
   val structure_links :
     ([< Eliom_service.get_service_kind ] as 'a,
      [< Eliom_service.registrable ] as 'b,
-     Html5_types.a_content Eliom_content.Html5.elt list)
+     [< Html5_types.a_content ] Eliom_content.Html5.elt list)
     Eliom_tools.hierarchical_site ->
     ?service:('a, 'b, [< Eliom_registration.non_ocaml_service ])
              Eliom_tools.one_page ->
@@ -43,14 +43,14 @@
     title:string ->
     ?css:string list list ->
     ?js:string list list ->
-    ?other:Html5_types.head_content_fun Eliom_content.Html5.elt list ->
-    unit -> Html5_types.head Eliom_content.Html5.elt
+    ?other:[< Html5_types.head_content_fun ] Eliom_content.Html5.elt list ->
+    unit -> [ `Head ] Eliom_content.Html5.elt
   val html :
     title:string ->
-    ?a:Html5_types.html_attrib Eliom_content.Html5.attrib list ->
+    ?a:[< Html5_types.html_attrib ] Eliom_content.Html5.attrib list ->
     ?css:string list list ->
     ?js:string list list ->
-    ?other_head:Html5_types.head_content_fun Eliom_content.Html5.elt list ->
-    Html5_types.body Eliom_content.Html5.elt ->
-    Html5_types.html Eliom_content.Html5.elt
+    ?other_head:[< Html5_types.head_content_fun ] Eliom_content.Html5.elt
+                list ->
+    [ `Body ] Eliom_content.Html5.elt -> [ `Html ] Eliom_content.Html5.elt
 end >>
