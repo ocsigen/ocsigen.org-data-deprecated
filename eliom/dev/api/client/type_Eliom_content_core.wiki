@@ -25,7 +25,7 @@
         | CE_client_closure of ('a Js.t -> unit)
         | CE_call_service of
             ([ `A | `Form_get | `Form_post ] * (bool * string list) option *
-             string option)
+             string option * Ocsigen_lib.poly)
             option Eliom_lazy.request
         constraint 'a = #Dom_html.event
       class type biggest_event =
@@ -82,7 +82,7 @@
             Eliom_content_core.Xml.elt list
       val internal_event_handler_of_service :
         ([ `A | `Form_get | `Form_post ] * (bool * string list) option *
-         string option)
+         string option * Eliom_lib.poly)
         option Eliom_lazy.request ->
         Eliom_content_core.Xml.internal_event_handler
       type separator = Space | Comma

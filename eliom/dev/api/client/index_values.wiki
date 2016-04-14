@@ -1214,6 +1214,7 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="rebuild_node_with_state"| value Eliom_client_core.rebuild_node_with_state >> ~[<<a_api subproject="client" | module Eliom_client_core >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="rebuild_rattrib"| value Eliom_client_core.rebuild_rattrib >> ~[<<a_api subproject="client" | module Eliom_client_core >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="rebuild_reactive_class_rattrib"| value Eliom_client_core.rebuild_reactive_class_rattrib >> ~[<<a_api subproject="client" | module Eliom_client_core >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="reconstruct_params"| value Eliom_parameter.reconstruct_params >> ~[<<a_api subproject="client" | module Eliom_parameter >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="reconstruct_relative_url_path"| value Eliom_uri.reconstruct_relative_url_path >> ~[<<a_api subproject="client" | module Eliom_uri >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|reconstruct~_relative~_url~_path src dest>> returns a
     path to <<span class="odocwiki_inlinecode"|dest>> that is relative to <<span class="odocwiki_inlinecode"|src>>~.
 >>

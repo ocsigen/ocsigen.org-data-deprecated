@@ -1416,6 +1416,11 @@
      [< Eliom_service.service_kind ], [< Eliom_service.suff ], 'e, 'f,
      [< Eliom_service.registrable ], 'return)
     Eliom_service.service -> bool
+  val has_client_fun_lazy :
+    ('a, 'b, [< Eliom_service.service_method ], [< Eliom_service.attached ],
+     [< Eliom_service.service_kind ], [< Eliom_service.suff ], 'c, 'd,
+     [< Eliom_service.registrable ], 'e)
+    Eliom_service.service -> (unit -> bool) Eliom_client_value.t
   val internal_set_client_fun_ :
     service:('a, 'b, [< Eliom_service.service_method ],
              [< Eliom_service.attached ], [< Eliom_service.service_kind ],
