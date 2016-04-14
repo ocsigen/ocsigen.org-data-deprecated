@@ -540,9 +540,6 @@
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="float"| value Eliom_form_sigs.S.float >> ~[<<a_api subproject="server" | module Eliom_form_sigs.S >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="float_coordinates"| value Eliom_parameter_sigs.S.float_coordinates >> ~[<<a_api subproject="server" | module Eliom_parameter_sigs.S >>~]|<<div class="odocwiki_info"|~Same as <<span class="odocwiki_inlinecode"|string~_coordinates>> but for a float value
->>
-|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="fmap"| value Eliom_shared_sigs.S.fmap >> ~[<<a_api subproject="server" | module Eliom_shared_sigs.S >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="fold_persistent_data_cookies"| value Eliom_state.Ext.fold_persistent_data_cookies >> ~[<<a_api subproject="server" | module Eliom_state.Ext >>~]|<<div class="odocwiki_info"|~Iterator on persistent cookies~.
 >>
@@ -921,20 +918,11 @@
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="int32"| value Eliom_form_sigs.S.int32 >> ~[<<a_api subproject="server" | module Eliom_form_sigs.S >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="int32_coordinates"| value Eliom_parameter_sigs.S.int32_coordinates >> ~[<<a_api subproject="server" | module Eliom_parameter_sigs.S >>~]|<<div class="odocwiki_info"|~Same as <<span class="odocwiki_inlinecode"|string~_coordinates>> but for a ~3~2~-bit integer value
->>
-|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="int64"| value Eliom_parameter_sigs.S.int64 >> ~[<<a_api subproject="server" | module Eliom_parameter_sigs.S >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|int~6~4 s>> means that the service takes a ~6~4~-bit integer as the
       parameter named <<span class="odocwiki_inlinecode"|s>>~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="int64"| value Eliom_form_sigs.S.int64 >> ~[<<a_api subproject="server" | module Eliom_form_sigs.S >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="int64_coordinates"| value Eliom_parameter_sigs.S.int64_coordinates >> ~[<<a_api subproject="server" | module Eliom_parameter_sigs.S >>~]|<<div class="odocwiki_info"|~Same as <<span class="odocwiki_inlinecode"|string~_coordinates>> but for a ~6~4~-bit integer value
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="int_coordinates"| value Eliom_parameter_sigs.S.int_coordinates >> ~[<<a_api subproject="server" | module Eliom_parameter_sigs.S >>~]|<<div class="odocwiki_info"|~Same as <<span class="odocwiki_inlinecode"|string~_coordinates>> but for an integer value
->>
-|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="is_client_app"| value Eliom_client.is_client_app >> ~[<<a_api subproject="server" | module Eliom_client >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="is_external"| value Eliom_service.is_external >> ~[<<a_api subproject="server" | module Eliom_service >>~]|<<div class="odocwiki_info"|~Returns whether it is an external service or not~.
 >>
@@ -2524,11 +2512,6 @@ foobar:value}}}
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="string"| value Eliom_form_sigs.S.string >> ~[<<a_api subproject="server" | module Eliom_form_sigs.S >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="string_coordinates"| value Eliom_parameter_sigs.S.string_coordinates >> ~[<<a_api subproject="server" | module Eliom_parameter_sigs.S >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|coordinates s>> means that the service takes as parameters the
-      coordinates of a point in an <<span class="odocwiki_inlinecode"|~<input type~="image" ~.~.~.~>>> ~(plus
-      the associated string value~)~.
->>
-|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="string_escape"| value Eliom_lib.string_escape >> ~[<<a_api subproject="server" | module Eliom_lib >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="string_of_openid_error"| value Eliom_openid.string_of_openid_error >> ~[<<a_api subproject="server" | module Eliom_openid >>~]|<<div class="odocwiki_info"|~Prettyprint an ~Open~I~D ~Error
 >>
@@ -2654,10 +2637,6 @@ foobar:value}}}
       server will have to use <<span class="odocwiki_inlinecode"|of~_string>> and <<span class="odocwiki_inlinecode"|to~_string>> to make the
       conversion between the ~O~Caml representation of the parameter and
       it~'s external representation as a string~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="user_type_coordinates"| value Eliom_parameter_sigs.S.user_type_coordinates >> ~[<<a_api subproject="server" | module Eliom_parameter_sigs.S >>~]|<<div class="odocwiki_info"|~Same as <<span class="odocwiki_inlinecode"|string~_coordinates>> but for a value of your own
-      type~.
 >>
 |
 |@@ @style="tet-align: left;"@@\\V|

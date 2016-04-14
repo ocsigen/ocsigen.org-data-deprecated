@@ -567,9 +567,6 @@
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="float"| value Eliom_form_sigs.S.float >> ~[<<a_api subproject="client" | module Eliom_form_sigs.S >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="float_attrib"| value Eliom_content_core.Xml_wed.float_attrib >> ~[<<a_api subproject="client" | module Eliom_content_core.Xml_wed >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="float_coordinates"| value Eliom_parameter_sigs.S.float_coordinates >> ~[<<a_api subproject="client" | module Eliom_parameter_sigs.S >>~]|<<div class="odocwiki_info"|~Same as <<span class="odocwiki_inlinecode"|string~_coordinates>> but for a float value
->>
-|
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="fmap"| value Eliom_shared_sigs.S.fmap >> ~[<<a_api subproject="client" | module Eliom_shared_sigs.S >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="font"| value Eliom_content.Html5.Manip.SetCss.font >> ~[<<a_api subproject="client" | module Eliom_content.Html5.Manip.SetCss >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="font"| value Eliom_content.Html5.Manip.Css.font >> ~[<<a_api subproject="client" | module Eliom_content.Html5.Manip.Css >>~]||
@@ -715,21 +712,12 @@
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="int32"| value Eliom_form_sigs.S.int32 >> ~[<<a_api subproject="client" | module Eliom_form_sigs.S >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="int32_coordinates"| value Eliom_parameter_sigs.S.int32_coordinates >> ~[<<a_api subproject="client" | module Eliom_parameter_sigs.S >>~]|<<div class="odocwiki_info"|~Same as <<span class="odocwiki_inlinecode"|string~_coordinates>> but for a ~3~2~-bit integer value
->>
-|
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="int64"| value Eliom_parameter_sigs.S.int64 >> ~[<<a_api subproject="client" | module Eliom_parameter_sigs.S >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|int~6~4 s>> means that the service takes a ~6~4~-bit integer as the
       parameter named <<span class="odocwiki_inlinecode"|s>>~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="int64"| value Eliom_form_sigs.S.int64 >> ~[<<a_api subproject="client" | module Eliom_form_sigs.S >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="int64_coordinates"| value Eliom_parameter_sigs.S.int64_coordinates >> ~[<<a_api subproject="client" | module Eliom_parameter_sigs.S >>~]|<<div class="odocwiki_info"|~Same as <<span class="odocwiki_inlinecode"|string~_coordinates>> but for a ~6~4~-bit integer value
->>
-|
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="int_attrib"| value Eliom_content_core.Xml_wed.int_attrib >> ~[<<a_api subproject="client" | module Eliom_content_core.Xml_wed >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="int_coordinates"| value Eliom_parameter_sigs.S.int_coordinates >> ~[<<a_api subproject="client" | module Eliom_parameter_sigs.S >>~]|<<div class="odocwiki_info"|~Same as <<span class="odocwiki_inlinecode"|string~_coordinates>> but for an integer value
->>
-|
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="is_active"| value Eliom_comet.is_active >> ~[<<a_api subproject="client" | module Eliom_comet >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|is~_active ~(~)>> returns the current activity state
 >>
 |
@@ -1431,11 +1419,6 @@
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="string"| value Eliom_form_sigs.S.string >> ~[<<a_api subproject="client" | module Eliom_form_sigs.S >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="string_attrib"| value Eliom_content_core.Xml_wed.string_attrib >> ~[<<a_api subproject="client" | module Eliom_content_core.Xml_wed >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="string_coordinates"| value Eliom_parameter_sigs.S.string_coordinates >> ~[<<a_api subproject="client" | module Eliom_parameter_sigs.S >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|coordinates s>> means that the service takes as parameters the
-      coordinates of a point in an <<span class="odocwiki_inlinecode"|~<input type~="image" ~.~.~.~>>> ~(plus
-      the associated string value~)~.
->>
-|
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="string_of_uri"| value Eliom_content_core.Xml.string_of_uri >> ~[<<a_api subproject="client" | module Eliom_content_core.Xml >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="string_radio_required"| value Eliom_form_sigs.S.string_radio_required >> ~[<<a_api subproject="client" | module Eliom_form_sigs.S >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="structure_links"| value Eliom_tools.HTML5_TOOLS.structure_links >> ~[<<a_api subproject="client" | module Eliom_tools.HTML5_TOOLS >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|structure~_links site ~(~)>> returns the tags <<span class="odocwiki_inlinecode"|~<link
@@ -1516,10 +1499,6 @@
       server will have to use <<span class="odocwiki_inlinecode"|of~_string>> and <<span class="odocwiki_inlinecode"|to~_string>> to make the
       conversion between the ~O~Caml representation of the parameter and
       it~'s external representation as a string~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="user_type_coordinates"| value Eliom_parameter_sigs.S.user_type_coordinates >> ~[<<a_api subproject="client" | module Eliom_parameter_sigs.S >>~]|<<div class="odocwiki_info"|~Same as <<span class="odocwiki_inlinecode"|string~_coordinates>> but for a value of your own
-      type~.
 >>
 |
 |@@ @style="tet-align: left;"@@\\V|

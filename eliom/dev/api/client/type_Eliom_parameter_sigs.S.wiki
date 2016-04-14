@@ -66,44 +66,6 @@
      [ `One of Eliom_parameter_sigs.S.coordinates ]
      Eliom_parameter_sigs.S.param_name)
     Eliom_parameter_sigs.S.params_type
-  val string_coordinates :
-    string ->
-    (string * Eliom_parameter_sigs.S.coordinates, [ `WithoutSuffix ],
-     [ `One of string * Eliom_parameter_sigs.S.coordinates ]
-     Eliom_parameter_sigs.S.param_name)
-    Eliom_parameter_sigs.S.params_type
-  val int_coordinates :
-    string ->
-    (int * Eliom_parameter_sigs.S.coordinates, [ `WithoutSuffix ],
-     [ `One of int * Eliom_parameter_sigs.S.coordinates ]
-     Eliom_parameter_sigs.S.param_name)
-    Eliom_parameter_sigs.S.params_type
-  val int32_coordinates :
-    string ->
-    (int32 * Eliom_parameter_sigs.S.coordinates, [ `WithoutSuffix ],
-     [ `One of int32 * Eliom_parameter_sigs.S.coordinates ]
-     Eliom_parameter_sigs.S.param_name)
-    Eliom_parameter_sigs.S.params_type
-  val int64_coordinates :
-    string ->
-    (int64 * Eliom_parameter_sigs.S.coordinates, [ `WithoutSuffix ],
-     [ `One of int64 * Eliom_parameter_sigs.S.coordinates ]
-     Eliom_parameter_sigs.S.param_name)
-    Eliom_parameter_sigs.S.params_type
-  val float_coordinates :
-    string ->
-    (float * Eliom_parameter_sigs.S.coordinates, [ `WithoutSuffix ],
-     [ `One of float * Eliom_parameter_sigs.S.coordinates ]
-     Eliom_parameter_sigs.S.param_name)
-    Eliom_parameter_sigs.S.params_type
-  val user_type_coordinates :
-    of_string:(string -> 'a) ->
-    to_string:('a -> string) ->
-    string ->
-    ('a * Eliom_parameter_sigs.S.coordinates, [ `WithoutSuffix ],
-     [ `One of 'a * Eliom_parameter_sigs.S.coordinates ]
-     Eliom_parameter_sigs.S.param_name)
-    Eliom_parameter_sigs.S.params_type
   val ( ** ) :
     ('a, [ `WithoutSuffix ], 'b) Eliom_parameter_sigs.S.params_type ->
     ('c, [< `Endsuffix | `WithoutSuffix ] as 'e, 'd)
