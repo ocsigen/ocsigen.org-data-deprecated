@@ -310,7 +310,6 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="upload_pic_link"| value Eba_userbox.upload_pic_link >> ~[<<a_api subproject="server" | module Eba_userbox >>~]|<<div class="odocwiki_info"|~Link to upload a picture~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="uploader"| value Eba_userbox.uploader >> ~[<<a_api subproject="server" | module Eba_userbox >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="user_already_exists"| value Eba_userbox.user_already_exists >> ~[<<a_api subproject="server" | module Eba_userbox >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="user_already_preregistered"| value Eba_userbox.user_already_preregistered >> ~[<<a_api subproject="server" | module Eba_userbox >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="user_does_not_exist"| value Eba_userbox.user_does_not_exist >> ~[<<a_api subproject="server" | module Eba_userbox >>~]||

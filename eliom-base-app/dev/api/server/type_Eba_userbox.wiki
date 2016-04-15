@@ -1,6 +1,5 @@
 <<code language="ocaml" | sig
-  type uploader = unit Ow_pic_uploader.t
-  val uploader : string list -> Eba_userbox.uploader
+  type uploader = unit Ot_picture_uploader.service
   val connected_user_box :
     Eba_user.t ->
     Eba_userbox.uploader -> [> Html5_types.div ] Eliom_content.Html5.D.elt
@@ -11,11 +10,15 @@
     Eba_userbox.uploader ->
     [> Html5_types.div ] Eliom_content.Html5.D.elt Lwt.t
   val upload_pic_link :
-    ?a:[< Html5_types.a_attrib ] Eliom_content.Html5.D.Raw.attrib list ->
+    ?a:[< Html5_types.a_attrib > `OnClick ] Eliom_content.Html5.D.Raw.attrib
+       list ->
     ?content:Html5_types.a_content Eliom_content.Html5.D.Raw.elt list ->
+    ?crop:float option ->
+    ?input:Html5_types.label_content_fun Eliom_content.Html5.D.Raw.elt list ->
+    ?submit:Html5_types.button_content_fun Eliom_content.Html5.D.Raw.elt list ->
     (unit -> unit) Eliom_client_value.t ->
     Eba_userbox.uploader ->
-    [> `A of Html5_types.a_content ] Eliom_content.Html5.D.Raw.elt
+    int64 -> [> `A of Html5_types.a_content ] Eliom_content.Html5.D.Raw.elt
   val reset_tips_link :
     (unit -> unit) Eliom_client_value.t ->
     [> `A of [> `PCDATA ] ] Eliom_content.Html5.D.Raw.elt
