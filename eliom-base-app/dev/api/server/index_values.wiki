@@ -127,6 +127,7 @@
 |
 |@@ @style="tet-align: left;"@@\\F|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="firstname_of_user"| value Eba_user.firstname_of_user >> ~[<<a_api subproject="server" | module Eba_user >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="forgot_password_handler"| value Eba_handlers.forgot_password_handler >> ~[<<a_api subproject="server" | module Eba_handlers >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="fullname_of_user"| value Eba_user.fullname_of_user >> ~[<<a_api subproject="server" | module Eba_user >>~]|<<div class="odocwiki_info"|~Retrieve the full name of user~.
 >>
 |
