@@ -241,6 +241,7 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="password_set"| value Eba_user.password_set >> ~[<<a_api subproject="server" | module Eba_user >>~]|<<div class="odocwiki_info"|~Has user set its password~?
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="preregister_handler'"| value Eba_handlers.preregister_handler' >> ~[<<a_api subproject="server" | module Eba_handlers >>~]||
 |@@ @style="tet-align: left;"@@\\R|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="remove_preregister"| value Eba_user.remove_preregister >> ~[<<a_api subproject="server" | module Eba_user >>~]|<<div class="odocwiki_info"|~Rempve an email from the preregister collections~.
 >>
