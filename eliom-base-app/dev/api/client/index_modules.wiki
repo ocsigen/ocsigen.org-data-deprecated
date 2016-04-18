@@ -4,6 +4,7 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Eba_current_user"| module Eba_current_user >> ||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Eba_date"| module Eba_date >> ||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Eba_email"| module Eba_email >> ||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Eba_handlers"| module Eba_handlers >> ||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Eba_msg"| module Eba_msg >> ||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Eba_notif"| module Eba_notif >> ||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Eba_page"| module Eba_page >> ||

@@ -1,6 +1,7 @@
 =Index of values=
 
 |@@ @style="tet-align: left;"@@\\A|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="activation_handler"| value Eba_handlers.activation_handler >> ~[<<a_api subproject="server" | module Eba_handlers >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="activation_key_created"| value Eba_msg.activation_key_created >> ~[<<a_api subproject="server" | module Eba_msg >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="activation_key_outdated"| value Eba_userbox.activation_key_outdated >> ~[<<a_api subproject="server" | module Eba_userbox >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="add_activationkey"| value Eba_user.add_activationkey >> ~[<<a_api subproject="server" | module Eba_user >>~]||
@@ -27,6 +28,7 @@
     which initiated the current request~.
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="connect_handler"| value Eba_handlers.connect_handler >> ~[<<a_api subproject="server" | module Eba_handlers >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="connected_fun"| value Eba_session.Opt.connected_fun >> ~[<<a_api subproject="server" | module Eba_session.Opt >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eba_session.Opt.connected_fun >> but instead of failing in case the user is
       not connected~, the function given as parameter takes an <<span class="odocwiki_inlinecode"|int~6~4 option>>
       for user id~.
@@ -107,6 +109,7 @@
     request~.
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="disconnect_handler"| value Eba_handlers.disconnect_handler >> ~[<<a_api subproject="server" | module Eba_handlers >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="display"| value Eba_tips.display >> ~[<<a_api subproject="server" | module Eba_tips >>~]||
 |@@ @style="tet-align: left;"@@\\E|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="email_of_user"| value Eba_user.email_of_user >> ~[<<a_api subproject="server" | module Eba_user >>~]|<<div class="odocwiki_info"|~Retrieve one of the e~-mails of a user~.
@@ -270,6 +273,8 @@
     used by the default send function
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="set_password_handler'"| value Eba_handlers.set_password_handler' >> ~[<<a_api subproject="server" | module Eba_handlers >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="set_personal_data_handler'"| value Eba_handlers.set_personal_data_handler' >> ~[<<a_api subproject="server" | module Eba_handlers >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="set_pwd_crypt_fun"| value Eba_user.set_pwd_crypt_fun >> ~[<<a_api subproject="server" | module Eba_user >>~]|<<div class="odocwiki_info"|~By default~, passwords are encrypted using ~Bcrypt~.
 >>
 |

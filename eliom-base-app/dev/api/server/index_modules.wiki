@@ -12,6 +12,7 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Eba_group"| module Eba_group >> |<<div class="odocwiki_info"|~Groups of users~.
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Eba_handlers"| module Eba_handlers >> ||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Eba_msg"| module Eba_msg >> |<<div class="odocwiki_info"|~Call this function either from client or server side
     to display an error message in the page~.
 >>
