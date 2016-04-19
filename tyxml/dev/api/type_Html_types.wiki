@@ -21,6 +21,7 @@
       | `Archives
       | `Author
       | `Bookmark
+      | `Canonical
       | `External
       | `First
       | `Help

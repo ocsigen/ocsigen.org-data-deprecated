@@ -51,7 +51,7 @@
 <<pre class="ocsforge_color odocwiki_code" id="TYPElanguagecode"|<<span class="ocsforge_color_keyword"|type>> <<span class="odocwiki_name"|languagecode>> <<span class="ocsforge_color_delimiter"|~=>> <<span class="odocwiki_type"|string>> >><<div class="odocwiki_info"|~A language code~, as per ~R~F~C~5~6~4~6~/~B~C~P~4~7~.
 **See also** [[http://tools.ietf.org/html/rfc5646|~R~F~C~5~6~4~6]]\\
 >>
-<<pre class="ocsforge_color odocwiki_code" id="TYPElinktype"|<<span class="ocsforge_color_keyword"|type>> <<span class="odocwiki_name"|linktype>> <<span class="ocsforge_color_delimiter"|~=>> <<span class="odocwiki_type"|\\  [ `Alternate\\  | `Archives\\  | `Author\\  | `Bookmark\\  | `External\\  | `First\\  | `Help\\  | `Icon\\  | `Index\\  | `Last\\  | `License\\  | `Next\\  | `Nofollow\\  | `Noreferrer\\  | `Other of string\\  | `Pingback\\  | `Prefetch\\  | `Prev\\  | `Search\\  | `Sidebar\\  | `Stylesheet\\  | `Tag\\  | `Up ]>> >><<pre class="ocsforge_color odocwiki_code" id="TYPElinktypes"|<<span class="ocsforge_color_keyword"|type>> <<span class="odocwiki_name"|linktypes>> <<span class="ocsforge_color_delimiter"|~=>> <<span class="odocwiki_type"|<<a_api text="linktype" | type Html_types.linktype >> list>> >><<div class="odocwiki_info"|~Authors may use the following recognized link types~, listed here with
+<<pre class="ocsforge_color odocwiki_code" id="TYPElinktype"|<<span class="ocsforge_color_keyword"|type>> <<span class="odocwiki_name"|linktype>> <<span class="ocsforge_color_delimiter"|~=>> <<span class="odocwiki_type"|\\  [ `Alternate\\  | `Archives\\  | `Author\\  | `Bookmark\\  | `Canonical\\  | `External\\  | `First\\  | `Help\\  | `Icon\\  | `Index\\  | `Last\\  | `License\\  | `Next\\  | `Nofollow\\  | `Noreferrer\\  | `Other of string\\  | `Pingback\\  | `Prefetch\\  | `Prev\\  | `Search\\  | `Sidebar\\  | `Stylesheet\\  | `Tag\\  | `Up ]>> >><<pre class="ocsforge_color odocwiki_code" id="TYPElinktypes"|<<span class="ocsforge_color_keyword"|type>> <<span class="odocwiki_name"|linktypes>> <<span class="ocsforge_color_delimiter"|~=>> <<span class="odocwiki_type"|<<a_api text="linktype" | type Html_types.linktype >> list>> >><<div class="odocwiki_info"|~Authors may use the following recognized link types~, listed here with
         their conventional interpretations~. ~A ~Link~Types value refers to a
         space~-separated list of link types~. ~White space characters are not
         permitted within link types~.  ~These link types are case~-insensitive~, i~.e~.~,
@@ -72,6 +72,8 @@
         ~Gives a link to the current document~'s author~.
 * <<span class="odocwiki_inlinecode"|`~Bookmark>>~:
         ~Gives the permalink for the nearest ancestor section~.
+* <<span class="odocwiki_inlinecode"|`~Canonical>>~:
+        ~Gives the preferred location for accessing the current document~.
 * <<span class="odocwiki_inlinecode"|`~External>>~:
         ~Indicates that the referenced document is not part of the same site as the current document~.
 * <<span class="odocwiki_inlinecode"|`~First>>~:
