@@ -52,8 +52,8 @@
       | `Raw_mediadesc of string
       | `Screen
       | `Speech
-      | `TTY
-      | `TV ]
+      | `Tty
+      | `Tv ]
   type mediadesc = Html_types.mediadesc_token list
   type number = int
   type numbers = Html_types.number list

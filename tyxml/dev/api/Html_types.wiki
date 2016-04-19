@@ -110,7 +110,7 @@
         ~Provides a link to a document giving the context for the current document~.
 
 >>
-<<pre class="ocsforge_color odocwiki_code" id="TYPEmediadesc_token"|<<span class="ocsforge_color_keyword"|type>> <<span class="odocwiki_name"|mediadesc~_token>> <<span class="ocsforge_color_delimiter"|~=>> <<span class="odocwiki_type"|\\  [ `All\\  | `Aural\\  | `Braille\\  | `Embossed\\  | `Handheld\\  | `Print\\  | `Projection\\  | `Raw_mediadesc of string\\  | `Screen\\  | `Speech\\  | `TTY\\  | `TV ]>> >><<pre class="ocsforge_color odocwiki_code" id="TYPEmediadesc"|<<span class="ocsforge_color_keyword"|type>> <<span class="odocwiki_name"|mediadesc>> <<span class="ocsforge_color_delimiter"|~=>> <<span class="odocwiki_type"|<<a_api text="mediadesc_token" | type Html_types.mediadesc_token >> list>> >>
+<<pre class="ocsforge_color odocwiki_code" id="TYPEmediadesc_token"|<<span class="ocsforge_color_keyword"|type>> <<span class="odocwiki_name"|mediadesc~_token>> <<span class="ocsforge_color_delimiter"|~=>> <<span class="odocwiki_type"|\\  [ `All\\  | `Aural\\  | `Braille\\  | `Embossed\\  | `Handheld\\  | `Print\\  | `Projection\\  | `Raw_mediadesc of string\\  | `Screen\\  | `Speech\\  | `Tty\\  | `Tv ]>> >><<pre class="ocsforge_color odocwiki_code" id="TYPEmediadesc"|<<span class="ocsforge_color_keyword"|type>> <<span class="odocwiki_name"|mediadesc>> <<span class="ocsforge_color_delimiter"|~=>> <<span class="odocwiki_type"|<<a_api text="mediadesc_token" | type Html_types.mediadesc_token >> list>> >>
 ~The ~Media~Desc attribute is a comma~-separated list of media descriptors~.
         ~The following is a list of recognized media descriptors~:
         
