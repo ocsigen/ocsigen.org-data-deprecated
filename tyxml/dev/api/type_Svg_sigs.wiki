@@ -528,6 +528,32 @@
          | `Text_before_edge
          | `Use_script ]
         Svg_sigs.T.wrap -> [> `Dominant_Baseline ] Svg_sigs.T.attrib
+      val a_stop_color :
+        Svg_types.color Svg_sigs.T.wrap -> [> `Stop_Color ] Svg_sigs.T.attrib
+      val a_stop_opacity :
+        Svg_types.number Svg_sigs.T.wrap ->
+        [> `Stop_Opacity ] Svg_sigs.T.attrib
+      val a_stroke :
+        Svg_types.paint Svg_sigs.T.wrap -> [> `Stroke ] Svg_sigs.T.attrib
+      val a_stroke_width :
+        Svg_types.Unit.length Svg_sigs.T.wrap ->
+        [> `Stroke_Width ] Svg_sigs.T.attrib
+      val a_stroke_linecap :
+        [< `Butt | `Round | `Square ] Svg_sigs.T.wrap ->
+        [> `Stroke_Linecap ] Svg_sigs.T.attrib
+      val a_stroke_linejoin :
+        [< `Bever | `Miter | `Round ] Svg_sigs.T.wrap ->
+        [> `Stroke_Linejoin ] Svg_sigs.T.attrib
+      val a_stroke_miterlimit :
+        float Svg_sigs.T.wrap -> [> `Stroke_Miterlimit ] Svg_sigs.T.attrib
+      val a_stroke_dasharray :
+        Svg_types.Unit.length list Svg_sigs.T.wrap ->
+        [> `Stroke_Dasharray ] Svg_sigs.T.attrib
+      val a_stroke_dashoffset :
+        Svg_types.Unit.length Svg_sigs.T.wrap ->
+        [> `Stroke_Dashoffset ] Svg_sigs.T.attrib
+      val a_stroke_opacity :
+        float Svg_sigs.T.wrap -> [> `Stroke_Opacity ] Svg_sigs.T.attrib
       val a_onabort : Xml.event_handler -> [> `OnAbort ] Svg_sigs.T.attrib
       val a_onactivate :
         Xml.event_handler -> [> `OnActivate ] Svg_sigs.T.attrib
@@ -556,40 +582,6 @@
         Xml.mouse_event_handler -> [> `OnMouseOut ] Svg_sigs.T.attrib
       val a_onmousemove :
         Xml.mouse_event_handler -> [> `OnMouseMove ] Svg_sigs.T.attrib
-      val metadata :
-        ?a:Svg_types.metadata_attr Svg_sigs.T.attrib list ->
-        Xml.elt Svg_sigs.T.list_wrap ->
-        [> Svg_types.metadata ] Svg_sigs.T.elt
-      val foreignObject :
-        ?a:Svg_types.foreignobject_attr Svg_sigs.T.attrib list ->
-        Xml.elt Svg_sigs.T.list_wrap ->
-        [> Svg_types.foreignobject ] Svg_sigs.T.elt
-      val a_stop_color :
-        Svg_types.color Svg_sigs.T.wrap -> [> `Stop_Color ] Svg_sigs.T.attrib
-      val a_stop_opacity :
-        Svg_types.number Svg_sigs.T.wrap ->
-        [> `Stop_Opacity ] Svg_sigs.T.attrib
-      val a_stroke :
-        Svg_types.paint Svg_sigs.T.wrap -> [> `Stroke ] Svg_sigs.T.attrib
-      val a_stroke_width :
-        Svg_types.Unit.length Svg_sigs.T.wrap ->
-        [> `Stroke_Width ] Svg_sigs.T.attrib
-      val a_stroke_linecap :
-        [< `Butt | `Round | `Square ] Svg_sigs.T.wrap ->
-        [> `Stroke_Linecap ] Svg_sigs.T.attrib
-      val a_stroke_linejoin :
-        [< `Bever | `Miter | `Round ] Svg_sigs.T.wrap ->
-        [> `Stroke_Linejoin ] Svg_sigs.T.attrib
-      val a_stroke_miterlimit :
-        float Svg_sigs.T.wrap -> [> `Stroke_Miterlimit ] Svg_sigs.T.attrib
-      val a_stroke_dasharray :
-        Svg_types.Unit.length list Svg_sigs.T.wrap ->
-        [> `Stroke_Dasharray ] Svg_sigs.T.attrib
-      val a_stroke_dashoffset :
-        Svg_types.Unit.length Svg_sigs.T.wrap ->
-        [> `Stroke_Dashoffset ] Svg_sigs.T.attrib
-      val a_stroke_opacity :
-        float Svg_sigs.T.wrap -> [> `Stroke_Opacity ] Svg_sigs.T.attrib
       val pcdata : string Svg_sigs.T.wrap -> [> `PCDATA ] Svg_sigs.T.elt
       val svg :
         ([< Svg_types.svg_attr ], [< Svg_types.svg_content ],
@@ -899,6 +891,14 @@
       val font_face_name :
         ([< Svg_types.font_face_name_attr ], [> Svg_types.font_face_name ])
         Svg_sigs.T.nullary
+      val metadata :
+        ?a:Svg_types.metadata_attr Svg_sigs.T.attrib list ->
+        Xml.elt Svg_sigs.T.list_wrap ->
+        [> Svg_types.metadata ] Svg_sigs.T.elt
+      val foreignObject :
+        ?a:Svg_types.foreignobject_attr Svg_sigs.T.attrib list ->
+        Xml.elt Svg_sigs.T.list_wrap ->
+        [> Svg_types.foreignobject ] Svg_sigs.T.elt
       val tot : Xml.elt -> 'a Svg_sigs.T.elt
       val totl : Xml.elt list -> 'a Svg_sigs.T.elt list
       val toelt : 'a Svg_sigs.T.elt -> Xml.elt
@@ -1337,6 +1337,21 @@
          | `Text_before_edge
          | `Use_script ]
         wrap -> [> `Dominant_Baseline ] attrib
+      val a_stop_color : Svg_types.color wrap -> [> `Stop_Color ] attrib
+      val a_stop_opacity : Svg_types.number wrap -> [> `Stop_Opacity ] attrib
+      val a_stroke : Svg_types.paint wrap -> [> `Stroke ] attrib
+      val a_stroke_width :
+        Svg_types.Unit.length wrap -> [> `Stroke_Width ] attrib
+      val a_stroke_linecap :
+        [< `Butt | `Round | `Square ] wrap -> [> `Stroke_Linecap ] attrib
+      val a_stroke_linejoin :
+        [< `Bever | `Miter | `Round ] wrap -> [> `Stroke_Linejoin ] attrib
+      val a_stroke_miterlimit : float wrap -> [> `Stroke_Miterlimit ] attrib
+      val a_stroke_dasharray :
+        Svg_types.Unit.length list wrap -> [> `Stroke_Dasharray ] attrib
+      val a_stroke_dashoffset :
+        Svg_types.Unit.length wrap -> [> `Stroke_Dashoffset ] attrib
+      val a_stroke_opacity : float wrap -> [> `Stroke_Opacity ] attrib
       val a_onabort : Xml.event_handler -> [> `OnAbort ] attrib
       val a_onactivate : Xml.event_handler -> [> `OnActivate ] attrib
       val a_onbegin : Xml.event_handler -> [> `OnBegin ] attrib
@@ -1356,27 +1371,6 @@
       val a_onmouseover : Xml.mouse_event_handler -> [> `OnMouseOver ] attrib
       val a_onmouseout : Xml.mouse_event_handler -> [> `OnMouseOut ] attrib
       val a_onmousemove : Xml.mouse_event_handler -> [> `OnMouseMove ] attrib
-      val metadata :
-        ?a:Svg_types.metadata_attr attrib list ->
-        Xml.elt list_wrap -> [> Svg_types.metadata ] elt
-      val foreignObject :
-        ?a:Svg_types.foreignobject_attr attrib list ->
-        Xml.elt list_wrap -> [> Svg_types.foreignobject ] elt
-      val a_stop_color : Svg_types.color wrap -> [> `Stop_Color ] attrib
-      val a_stop_opacity : Svg_types.number wrap -> [> `Stop_Opacity ] attrib
-      val a_stroke : Svg_types.paint wrap -> [> `Stroke ] attrib
-      val a_stroke_width :
-        Svg_types.Unit.length wrap -> [> `Stroke_Width ] attrib
-      val a_stroke_linecap :
-        [< `Butt | `Round | `Square ] wrap -> [> `Stroke_Linecap ] attrib
-      val a_stroke_linejoin :
-        [< `Bever | `Miter | `Round ] wrap -> [> `Stroke_Linejoin ] attrib
-      val a_stroke_miterlimit : float wrap -> [> `Stroke_Miterlimit ] attrib
-      val a_stroke_dasharray :
-        Svg_types.Unit.length list wrap -> [> `Stroke_Dasharray ] attrib
-      val a_stroke_dashoffset :
-        Svg_types.Unit.length wrap -> [> `Stroke_Dashoffset ] attrib
-      val a_stroke_opacity : float wrap -> [> `Stroke_Opacity ] attrib
       val pcdata : string wrap -> [> `PCDATA ] elt
       val svg :
         ([< Svg_types.svg_attr ], [< Svg_types.svg_content ],
@@ -1682,6 +1676,12 @@
       val font_face_name :
         ([< Svg_types.font_face_name_attr ], [> Svg_types.font_face_name ])
         nullary
+      val metadata :
+        ?a:Svg_types.metadata_attr attrib list ->
+        Xml.elt list_wrap -> [> Svg_types.metadata ] elt
+      val foreignObject :
+        ?a:Svg_types.foreignobject_attr attrib list ->
+        Xml.elt list_wrap -> [> Svg_types.foreignobject ] elt
       val tot : Xml.elt -> 'a elt
       val totl : Xml.elt list -> 'a elt list
       val toelt : 'a elt -> Xml.elt
@@ -2150,6 +2150,27 @@
                | `Text_before_edge
                | `Use_script ]
               wrap -> [> `Dominant_Baseline ] attrib
+            val a_stop_color :
+              Svg_types.color wrap -> [> `Stop_Color ] attrib
+            val a_stop_opacity :
+              Svg_types.number wrap -> [> `Stop_Opacity ] attrib
+            val a_stroke : Svg_types.paint wrap -> [> `Stroke ] attrib
+            val a_stroke_width :
+              Svg_types.Unit.length wrap -> [> `Stroke_Width ] attrib
+            val a_stroke_linecap :
+              [< `Butt | `Round | `Square ] wrap ->
+              [> `Stroke_Linecap ] attrib
+            val a_stroke_linejoin :
+              [< `Bever | `Miter | `Round ] wrap ->
+              [> `Stroke_Linejoin ] attrib
+            val a_stroke_miterlimit :
+              float wrap -> [> `Stroke_Miterlimit ] attrib
+            val a_stroke_dasharray :
+              Svg_types.Unit.length list wrap ->
+              [> `Stroke_Dasharray ] attrib
+            val a_stroke_dashoffset :
+              Svg_types.Unit.length wrap -> [> `Stroke_Dashoffset ] attrib
+            val a_stroke_opacity : float wrap -> [> `Stroke_Opacity ] attrib
             val a_onabort : Xml.event_handler -> [> `OnAbort ] attrib
             val a_onactivate : Xml.event_handler -> [> `OnActivate ] attrib
             val a_onbegin : Xml.event_handler -> [> `OnBegin ] attrib
@@ -2174,33 +2195,6 @@
               Xml.mouse_event_handler -> [> `OnMouseOut ] attrib
             val a_onmousemove :
               Xml.mouse_event_handler -> [> `OnMouseMove ] attrib
-            val metadata :
-              ?a:Svg_types.metadata_attr attrib list ->
-              Xml.elt list_wrap -> [> Svg_types.metadata ] elt
-            val foreignObject :
-              ?a:Svg_types.foreignobject_attr attrib list ->
-              Xml.elt list_wrap -> [> Svg_types.foreignobject ] elt
-            val a_stop_color :
-              Svg_types.color wrap -> [> `Stop_Color ] attrib
-            val a_stop_opacity :
-              Svg_types.number wrap -> [> `Stop_Opacity ] attrib
-            val a_stroke : Svg_types.paint wrap -> [> `Stroke ] attrib
-            val a_stroke_width :
-              Svg_types.Unit.length wrap -> [> `Stroke_Width ] attrib
-            val a_stroke_linecap :
-              [< `Butt | `Round | `Square ] wrap ->
-              [> `Stroke_Linecap ] attrib
-            val a_stroke_linejoin :
-              [< `Bever | `Miter | `Round ] wrap ->
-              [> `Stroke_Linejoin ] attrib
-            val a_stroke_miterlimit :
-              float wrap -> [> `Stroke_Miterlimit ] attrib
-            val a_stroke_dasharray :
-              Svg_types.Unit.length list wrap ->
-              [> `Stroke_Dasharray ] attrib
-            val a_stroke_dashoffset :
-              Svg_types.Unit.length wrap -> [> `Stroke_Dashoffset ] attrib
-            val a_stroke_opacity : float wrap -> [> `Stroke_Opacity ] attrib
             val pcdata : string wrap -> [> `PCDATA ] elt
             val svg :
               ([< Svg_types.svg_attr ], [< Svg_types.svg_content ],
@@ -2525,6 +2519,12 @@
               ([< Svg_types.font_face_name_attr ],
                [> Svg_types.font_face_name ])
               nullary
+            val metadata :
+              ?a:Svg_types.metadata_attr attrib list ->
+              Xml.elt list_wrap -> [> Svg_types.metadata ] elt
+            val foreignObject :
+              ?a:Svg_types.foreignobject_attr attrib list ->
+              Xml.elt list_wrap -> [> Svg_types.foreignobject ] elt
             val tot : Xml.elt -> 'a elt
             val totl : Xml.elt list -> 'a elt list
             val toelt : 'a elt -> Xml.elt

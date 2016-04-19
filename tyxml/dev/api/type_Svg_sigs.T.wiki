@@ -484,37 +484,6 @@
      | `Text_before_edge
      | `Use_script ]
     Svg_sigs.T.wrap -> [> `Dominant_Baseline ] Svg_sigs.T.attrib
-  val a_onabort : Xml.event_handler -> [> `OnAbort ] Svg_sigs.T.attrib
-  val a_onactivate : Xml.event_handler -> [> `OnActivate ] Svg_sigs.T.attrib
-  val a_onbegin : Xml.event_handler -> [> `OnBegin ] Svg_sigs.T.attrib
-  val a_onend : Xml.event_handler -> [> `OnEnd ] Svg_sigs.T.attrib
-  val a_onerror : Xml.event_handler -> [> `OnError ] Svg_sigs.T.attrib
-  val a_onfocusin : Xml.event_handler -> [> `OnFocusIn ] Svg_sigs.T.attrib
-  val a_onfocusout : Xml.event_handler -> [> `OnFocusOut ] Svg_sigs.T.attrib
-  val a_onload : Xml.event_handler -> [> `OnLoad ] Svg_sigs.T.attrib
-  val a_onrepeat : Xml.event_handler -> [> `OnRepeat ] Svg_sigs.T.attrib
-  val a_onresize : Xml.event_handler -> [> `OnResize ] Svg_sigs.T.attrib
-  val a_onscroll : Xml.event_handler -> [> `OnScroll ] Svg_sigs.T.attrib
-  val a_onunload : Xml.event_handler -> [> `OnUnload ] Svg_sigs.T.attrib
-  val a_onzoom : Xml.event_handler -> [> `OnZoom ] Svg_sigs.T.attrib
-  val a_onclick : Xml.mouse_event_handler -> [> `OnClick ] Svg_sigs.T.attrib
-  val a_onmousedown :
-    Xml.mouse_event_handler -> [> `OnMouseDown ] Svg_sigs.T.attrib
-  val a_onmouseup :
-    Xml.mouse_event_handler -> [> `OnMouseUp ] Svg_sigs.T.attrib
-  val a_onmouseover :
-    Xml.mouse_event_handler -> [> `OnMouseOver ] Svg_sigs.T.attrib
-  val a_onmouseout :
-    Xml.mouse_event_handler -> [> `OnMouseOut ] Svg_sigs.T.attrib
-  val a_onmousemove :
-    Xml.mouse_event_handler -> [> `OnMouseMove ] Svg_sigs.T.attrib
-  val metadata :
-    ?a:Svg_types.metadata_attr Svg_sigs.T.attrib list ->
-    Xml.elt Svg_sigs.T.list_wrap -> [> Svg_types.metadata ] Svg_sigs.T.elt
-  val foreignObject :
-    ?a:Svg_types.foreignobject_attr Svg_sigs.T.attrib list ->
-    Xml.elt Svg_sigs.T.list_wrap ->
-    [> Svg_types.foreignobject ] Svg_sigs.T.elt
   val a_stop_color :
     Svg_types.color Svg_sigs.T.wrap -> [> `Stop_Color ] Svg_sigs.T.attrib
   val a_stop_opacity :
@@ -540,6 +509,30 @@
     [> `Stroke_Dashoffset ] Svg_sigs.T.attrib
   val a_stroke_opacity :
     float Svg_sigs.T.wrap -> [> `Stroke_Opacity ] Svg_sigs.T.attrib
+  val a_onabort : Xml.event_handler -> [> `OnAbort ] Svg_sigs.T.attrib
+  val a_onactivate : Xml.event_handler -> [> `OnActivate ] Svg_sigs.T.attrib
+  val a_onbegin : Xml.event_handler -> [> `OnBegin ] Svg_sigs.T.attrib
+  val a_onend : Xml.event_handler -> [> `OnEnd ] Svg_sigs.T.attrib
+  val a_onerror : Xml.event_handler -> [> `OnError ] Svg_sigs.T.attrib
+  val a_onfocusin : Xml.event_handler -> [> `OnFocusIn ] Svg_sigs.T.attrib
+  val a_onfocusout : Xml.event_handler -> [> `OnFocusOut ] Svg_sigs.T.attrib
+  val a_onload : Xml.event_handler -> [> `OnLoad ] Svg_sigs.T.attrib
+  val a_onrepeat : Xml.event_handler -> [> `OnRepeat ] Svg_sigs.T.attrib
+  val a_onresize : Xml.event_handler -> [> `OnResize ] Svg_sigs.T.attrib
+  val a_onscroll : Xml.event_handler -> [> `OnScroll ] Svg_sigs.T.attrib
+  val a_onunload : Xml.event_handler -> [> `OnUnload ] Svg_sigs.T.attrib
+  val a_onzoom : Xml.event_handler -> [> `OnZoom ] Svg_sigs.T.attrib
+  val a_onclick : Xml.mouse_event_handler -> [> `OnClick ] Svg_sigs.T.attrib
+  val a_onmousedown :
+    Xml.mouse_event_handler -> [> `OnMouseDown ] Svg_sigs.T.attrib
+  val a_onmouseup :
+    Xml.mouse_event_handler -> [> `OnMouseUp ] Svg_sigs.T.attrib
+  val a_onmouseover :
+    Xml.mouse_event_handler -> [> `OnMouseOver ] Svg_sigs.T.attrib
+  val a_onmouseout :
+    Xml.mouse_event_handler -> [> `OnMouseOut ] Svg_sigs.T.attrib
+  val a_onmousemove :
+    Xml.mouse_event_handler -> [> `OnMouseMove ] Svg_sigs.T.attrib
   val pcdata : string Svg_sigs.T.wrap -> [> `PCDATA ] Svg_sigs.T.elt
   val svg :
     ([< Svg_types.svg_attr ], [< Svg_types.svg_content ], [> Svg_types.svg ])
@@ -841,6 +834,13 @@
   val font_face_name :
     ([< Svg_types.font_face_name_attr ], [> Svg_types.font_face_name ])
     Svg_sigs.T.nullary
+  val metadata :
+    ?a:Svg_types.metadata_attr Svg_sigs.T.attrib list ->
+    Xml.elt Svg_sigs.T.list_wrap -> [> Svg_types.metadata ] Svg_sigs.T.elt
+  val foreignObject :
+    ?a:Svg_types.foreignobject_attr Svg_sigs.T.attrib list ->
+    Xml.elt Svg_sigs.T.list_wrap ->
+    [> Svg_types.foreignobject ] Svg_sigs.T.elt
   val tot : Xml.elt -> 'a Svg_sigs.T.elt
   val totl : Xml.elt list -> 'a Svg_sigs.T.elt list
   val toelt : 'a Svg_sigs.T.elt -> Xml.elt
