@@ -41,8 +41,7 @@
 
 
 
-|<<a_api subproject="client" | module Eliom_service >>|<<div class="odocwiki_info"|~Functions to add non localised parameters to services and
-    client side declaration of void coservices~.
+|<<a_api subproject="client" | module Eliom_service >>|<<div class="odocwiki_info"|~/~*
 >>
 |
 |<<a_api subproject="client" | module Eliom_bus >>|<<div class="odocwiki_info"|~Broadcasting facilities between clients and server~.

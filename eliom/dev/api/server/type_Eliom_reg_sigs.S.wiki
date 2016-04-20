@@ -1,0 +1,51 @@
+<<code language="ocaml" | sig
+  type page
+  type options
+  type return
+  type result
+  val register :
+    ?scope:[< Eliom_common.scope ] ->
+    ?options:Eliom_reg_sigs.S.options ->
+    ?charset:string ->
+    ?code:int ->
+    ?content_type:string ->
+    ?headers:Http_headers.t ->
+    ?secure_session:bool ->
+    service:('get, 'post, 'a, 'b, 'c, Eliom_service.non_ext,
+             Eliom_service.reg, [< `WithSuffix | `WithoutSuffix ], 'd, 'e,
+             Eliom_reg_sigs.S.return)
+            Eliom_service.t ->
+    ?error_handler:((string * exn) list -> Eliom_reg_sigs.S.page Lwt.t) ->
+    ('get -> 'post -> Eliom_reg_sigs.S.page Lwt.t) -> unit
+  val create :
+    ?scope:[< Eliom_common.scope ] ->
+    ?options:Eliom_reg_sigs.S.options ->
+    ?charset:string ->
+    ?code:int ->
+    ?content_type:string ->
+    ?headers:Http_headers.t ->
+    ?secure_session:bool ->
+    ?https:bool ->
+    ?name:string ->
+    ?csrf_safe:bool ->
+    ?csrf_scope:[< Eliom_common.user_scope ] ->
+    ?csrf_secure:bool ->
+    ?max_use:int ->
+    ?timeout:float ->
+    meth:('m, 'gp, 'gn, 'pp, 'pn, [< `WithSuffix | `WithoutSuffix ] as 'a,
+          'mf, 'gp_)
+         Eliom_service.Meth.t ->
+    id:('att, 'co, 'mf, Eliom_reg_sigs.S.return, 'gp_) Eliom_service.Id.t ->
+    ?error_handler:((string * exn) list -> Eliom_reg_sigs.S.page Lwt.t) ->
+    ('gp -> 'pp -> Eliom_reg_sigs.S.page Lwt.t) ->
+    ('gp, 'pp, 'm, 'att, 'co, Eliom_service.non_ext, Eliom_service.reg, 'a,
+     'gn, 'pn, Eliom_reg_sigs.S.return)
+    Eliom_service.t
+  val send :
+    ?options:Eliom_reg_sigs.S.options ->
+    ?charset:string ->
+    ?code:int ->
+    ?content_type:string ->
+    ?headers:Http_headers.t ->
+    Eliom_reg_sigs.S.page -> Eliom_reg_sigs.S.result Lwt.t
+end >>

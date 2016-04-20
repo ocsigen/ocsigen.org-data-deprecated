@@ -1,28 +1,22 @@
 =Index of types=
 
 |@@ @style="tet-align: left;"@@\\A|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="a_s"| type Eliom_service.a_s >> ~[<<a_api subproject="server" | module Eliom_service >>~]|<<div class="odocwiki_info"|~The abstract type for attached service representation~.
->>
-|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="all_scope"| type Eliom_common.all_scope >> ~[<<a_api subproject="server" | module Eliom_common >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="appl"| type Eliom_registration.ELIOM_APPL.appl >> ~[<<a_api subproject="server" | module Eliom_registration.ELIOM_APPL >>~]|<<div class="odocwiki_info"|~The type <<span class="odocwiki_inlinecode"|appl>> is an abstract type for identifying an
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="app_id"| type Eliom_registration.ELIOM_APPL.app_id >> ~[<<a_api subproject="server" | module Eliom_registration.ELIOM_APPL >>~]|<<div class="odocwiki_info"|~The type <<span class="odocwiki_inlinecode"|appl>> is an abstract type for identifying an
       application~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="appl_service"| type Eliom_service.appl_service >> ~[<<a_api subproject="server" | module Eliom_service >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="appl_service"| type Eliom_registration.appl_service >> ~[<<a_api subproject="server" | module Eliom_registration >>~]|<<div class="odocwiki_info"|~The type <<span class="odocwiki_inlinecode"|appl~_service>> is used as a phantom type parameters for
-    <<a_api subproject="server" | type Eliom_service.service >> and <<a_api subproject="server" | type Eliom_registration.kind >>~.
->>
-|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="appl"| type Eliom_service_types.appl >> ~[<<a_api subproject="server" | module Eliom_service_types >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="appl_service_options"| type Eliom_registration.appl_service_options >> ~[<<a_api subproject="server" | module Eliom_registration >>~]|<<div class="odocwiki_info"|~Type for the options of an ~Eliom application service~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="application_content"| type Eliom_registration.application_content >> ~[<<a_api subproject="server" | module Eliom_registration >>~]|<<div class="odocwiki_info"|~The type <<span class="odocwiki_inlinecode"|application~_content>> is a refinement of <<a_api subproject="server" | type Eliom_registration.appl_service >>
-    to be used as a phantom type parameters for <<a_api subproject="server" | type Eliom_registration.kind >>~.
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="application_content"| type Eliom_registration.application_content >> ~[<<a_api subproject="server" | module Eliom_registration >>~]|<<div class="odocwiki_info"|~The type <<span class="odocwiki_inlinecode"|application~_content>> is a refinement of <<span class="odocwiki_inlinecode"|appl~_service>>
+    to be used as a phantom type parameters for
+    <<a_api subproject="server" | type Eliom_registration.kind >>~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="attached"| type Eliom_service.attached >> ~[<<a_api subproject="server" | module Eliom_service >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="attached_kind"| type Eliom_service.attached_kind >> ~[<<a_api subproject="server" | module Eliom_service >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="att"| type Eliom_service_sigs.S.att >> ~[<<a_api subproject="server" | module Eliom_service_sigs.S >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="attached_info"| type Eliom_service_sigs.S.attached_info >> ~[<<a_api subproject="server" | module Eliom_service_sigs.S >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="attrib"| type Eliom_content.Html5.attrib >> ~[<<a_api subproject="server" | module Eliom_content.Html5 >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="attrib"| type Eliom_content.Svg.attrib >> ~[<<a_api subproject="server" | module Eliom_content.Svg >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="attrib"| type Eliom_form_sigs.LINKS.attrib >> ~[<<a_api subproject="server" | module Eliom_form_sigs.LINKS >>~]||
@@ -38,12 +32,12 @@
       <<a_api subproject="server" | val Eliom_parameter_sigs.S.sum >>~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="block_content"| type Eliom_registration.block_content >> ~[<<a_api subproject="server" | module Eliom_registration >>~]|<<div class="odocwiki_info"|~The type <<span class="odocwiki_inlinecode"|block~_content>> is a refinement of <<a_api subproject="server" | type Eliom_registration.http_service >> to be
-    used as a phantom type parameters for <<a_api subproject="server" | type Eliom_registration.kind >>~.
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="block_content"| type Eliom_registration.block_content >> ~[<<a_api subproject="server" | module Eliom_registration >>~]|<<div class="odocwiki_info"|~The type <<span class="odocwiki_inlinecode"|block~_content>> is to be used as a phantom type parameter
+    for <<a_api subproject="server" | type Eliom_registration.kind >>~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="browser_content"| type Eliom_registration.browser_content >> ~[<<a_api subproject="server" | module Eliom_registration >>~]|<<div class="odocwiki_info"|~The type <<span class="odocwiki_inlinecode"|browser~_content>> is a refinement of <<a_api subproject="server" | type Eliom_registration.http_service >> to
-    be used as a phantom type parameters for <<a_api subproject="server" | type Eliom_registration.kind >>~.
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="browser_content"| type Eliom_registration.browser_content >> ~[<<a_api subproject="server" | module Eliom_registration >>~]|<<div class="odocwiki_info"|~The type <<span class="odocwiki_inlinecode"|browser~_content>> is to be used as a phantom type
+    parameter for <<a_api subproject="server" | type Eliom_registration.kind >>~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="button_type"| type Eliom_form_sigs.button_type >> ~[<<a_api subproject="server" | module Eliom_form_sigs >>~]||
@@ -62,6 +56,7 @@
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="client_process_scope"| type Eliom_common.client_process_scope >> ~[<<a_api subproject="server" | module Eliom_common >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="co"| type Eliom_service_types.co >> ~[<<a_api subproject="server" | module Eliom_service_types >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="comet_scope"| type Eliom_comet.Channel.comet_scope >> ~[<<a_api subproject="server" | module Eliom_comet.Channel >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="content"| type Atom_feed.content >> ~[<<a_api subproject="server" | module Atom_feed >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="contributor"| type Atom_feed.contributor >> ~[<<a_api subproject="server" | module Atom_feed >>~]||
@@ -83,9 +78,7 @@
 |@@ @style="tet-align: left;"@@\\D|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="data_cookie_info"| type Eliom_state.Ext.data_cookie_info >> ~[<<a_api subproject="server" | module Eliom_state.Ext >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="dateConstruct"| type Atom_feed.dateConstruct >> ~[<<a_api subproject="server" | module Atom_feed >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="delete_service_kind"| type Eliom_service.delete_service_kind >> ~[<<a_api subproject="server" | module Eliom_service >>~]|<<div class="odocwiki_info"|~Restriction of <<span class="odocwiki_inlinecode"|service~_method>> to ~D~E~L~E~T~E services~.
->>
-|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="delete"| type Eliom_service_types.delete >> ~[<<a_api subproject="server" | module Eliom_service_types >>~]||
 |@@ @style="tet-align: left;"@@\\E|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="eliom_extension_sig"| type Eliom_extension.eliom_extension_sig >> ~[<<a_api subproject="server" | module Eliom_extension >>~]|<<div class="odocwiki_info"|~Type of the function that must be registered to declare an eliom extension~.
 >>
@@ -121,6 +114,7 @@
     the may be volatile~.
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="ext"| type Eliom_service_types.ext >> ~[<<a_api subproject="server" | module Eliom_service_types >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="extension"| type Eliom_openid.extension >> ~[<<a_api subproject="server" | module Eliom_openid >>~]|<<div class="odocwiki_info"|~An extension yielding values of type ~'a
 >>
 |
@@ -141,9 +135,7 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="full_state_name"| type Eliom_common.full_state_name >> ~[<<a_api subproject="server" | module Eliom_common >>~]||
 |@@ @style="tet-align: left;"@@\\G|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="generator"| type Atom_feed.generator >> ~[<<a_api subproject="server" | module Atom_feed >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="get_service_kind"| type Eliom_service.get_service_kind >> ~[<<a_api subproject="server" | module Eliom_service >>~]|<<div class="odocwiki_info"|~Restriction of <<span class="odocwiki_inlinecode"|service~_method>> to ~G~E~T services~.
->>
-|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="get"| type Eliom_service_types.get >> ~[<<a_api subproject="server" | module Eliom_service_types >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="global_scope"| type Eliom_common.global_scope >> ~[<<a_api subproject="server" | module Eliom_common >>~]|<<div class="odocwiki_info"|~Eliom is using regular ~(browser~) cookies but can also use its own
     browser tab cookies ~(only if you are using a client side ~Eliom application~)~.
 >>
@@ -159,13 +151,7 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="hierarchical_site_item"| type Eliom_tools.hierarchical_site_item >> ~[<<a_api subproject="server" | module Eliom_tools >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="href"| type Atom_feed.href >> ~[<<a_api subproject="server" | module Atom_feed >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="hrefLang"| type Atom_feed.hrefLang >> ~[<<a_api subproject="server" | module Atom_feed >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="http_service"| type Eliom_service.http_service >> ~[<<a_api subproject="server" | module Eliom_service >>~]|<<div class="odocwiki_info"|~Types of groups of services~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="http_service"| type Eliom_registration.http_service >> ~[<<a_api subproject="server" | module Eliom_registration >>~]|<<div class="odocwiki_info"|~The type <<span class="odocwiki_inlinecode"|http~_service>> is used as a phantom type parameters for
-    <<a_api subproject="server" | type Eliom_service.service >> and <<a_api subproject="server" | type Eliom_registration.kind >>~.
->>
-|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="http"| type Eliom_service_types.http >> ~[<<a_api subproject="server" | module Eliom_service_types >>~]||
 |@@ @style="tet-align: left;"@@\\I|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="icon"| type Atom_feed.icon >> ~[<<a_api subproject="server" | module Atom_feed >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="id"| type Atom_feed.id >> ~[<<a_api subproject="server" | module Atom_feed >>~]||
@@ -173,12 +159,6 @@
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="id"| type Eliom_content.Svg.Id.id >> ~[<<a_api subproject="server" | module Eliom_content.Svg.Id >>~]|<<div class="odocwiki_info"|~The type of global ~S~V~G element identifier~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="internal_attached_service_kind"| type Eliom_service.internal_attached_service_kind >> ~[<<a_api subproject="server" | module Eliom_service >>~]|<<div class="odocwiki_info"|~An internal attached service could either be a <<span class="odocwiki_inlinecode"|`~Service>> or a <<span class="odocwiki_inlinecode"|`~Attached~Coservice>>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="internal_service_kind"| type Eliom_service.internal_service_kind >> ~[<<a_api subproject="server" | module Eliom_service >>~]|<<div class="odocwiki_info"|~An internal service could either be an internal attached service or a <<span class="odocwiki_inlinecode"|`~Nonattached~Coservice>>~.
 >>
 |
 |@@ @style="tet-align: left;"@@\\K|
@@ -208,9 +188,6 @@
 >>
 |
 |@@ @style="tet-align: left;"@@\\N|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="na_s"| type Eliom_service.na_s >> ~[<<a_api subproject="server" | module Eliom_service >>~]|<<div class="odocwiki_info"|~The abstract type for non~-attached service representation~.
->>
-|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="ncname"| type Atom_feed.ncname >> ~[<<a_api subproject="server" | module Atom_feed >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="nl_params_set"| type Eliom_parameter_sigs.S.nl_params_set >> ~[<<a_api subproject="server" | module Eliom_parameter_sigs.S >>~]|<<div class="odocwiki_info"|~Use this type to give non localized parameters to a link or a
       form
@@ -220,29 +197,22 @@
       parameter in a form~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="non_attached_kind"| type Eliom_service.non_attached_kind >> ~[<<a_api subproject="server" | module Eliom_service >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="non_att"| type Eliom_service_sigs.S.non_att >> ~[<<a_api subproject="server" | module Eliom_service_sigs.S >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="non_co"| type Eliom_service_types.non_co >> ~[<<a_api subproject="server" | module Eliom_service_types >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="non_ext"| type Eliom_service_types.non_ext >> ~[<<a_api subproject="server" | module Eliom_service_types >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="non_localized_params"| type Eliom_parameter_sigs.S.non_localized_params >> ~[<<a_api subproject="server" | module Eliom_parameter_sigs.S >>~]|<<div class="odocwiki_info"|~Non localized parameters
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="non_ocaml_service"| type Eliom_service.non_ocaml_service >> ~[<<a_api subproject="server" | module Eliom_service >>~]|<<div class="odocwiki_info"|~The type <<span class="odocwiki_inlinecode"|non~_ocaml~_service>> is used as phantom type parameters for
-    the <<a_api subproject="server" | type Eliom_registration.kind >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="non_ocaml_service"| type Eliom_registration.non_ocaml_service >> ~[<<a_api subproject="server" | module Eliom_registration >>~]|<<div class="odocwiki_info"|~The type <<span class="odocwiki_inlinecode"|non~_ocaml~_service>> is used as phantom type parameters for
-    the <<a_api subproject="server" | type Eliom_registration.kind >>~.
->>
-|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="non_ocaml"| type Eliom_service_types.non_ocaml >> ~[<<a_api subproject="server" | module Eliom_service_types >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="non_reg"| type Eliom_service_types.non_reg >> ~[<<a_api subproject="server" | module Eliom_service_types >>~]||
 |@@ @style="tet-align: left;"@@\\O|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="ocaml"| type Eliom_service_types.ocaml >> ~[<<a_api subproject="server" | module Eliom_service_types >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="ocaml"| type Eliom_parameter_sigs.S.ocaml >> ~[<<a_api subproject="server" | module Eliom_parameter_sigs.S >>~]|<<div class="odocwiki_info"|marshaled ~O~Caml values of type ~'a
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="ocaml_content"| type Eliom_registration.ocaml_content >> ~[<<a_api subproject="server" | module Eliom_registration >>~]|<<div class="odocwiki_info"|~The type <<span class="odocwiki_inlinecode"|ocaml~_content>> is an synomyn for <<a_api subproject="server" | type Eliom_service.ocaml_service >>
-    to be used as a phantom type parameters for <<a_api subproject="server" | type Eliom_registration.kind >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="ocaml_service"| type Eliom_service.ocaml_service >> ~[<<a_api subproject="server" | module Eliom_service >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="one_page"| type Eliom_tools.one_page >> ~[<<a_api subproject="server" | module Eliom_tools >>~]|<<div class="odocwiki_info"|~Restriction of <<a_api subproject="server" | type Eliom_service.service >> to services without
-    parameters that do not returns a marshalled ~O~Caml value~.
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="ocaml_content"| type Eliom_registration.ocaml_content >> ~[<<a_api subproject="server" | module Eliom_registration >>~]|<<div class="odocwiki_info"|~The type <<span class="odocwiki_inlinecode"|ocaml~_content>> is an synomyn for
+    <<span class="odocwiki_inlinecode"|~Eliom~_service~.ocaml~_service>> to be used as a phantom type
+    parameters for <<a_api subproject="server" | type Eliom_registration.kind >>~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="oneradio"| type Eliom_parameter_sigs.S.oneradio >> ~[<<a_api subproject="server" | module Eliom_parameter_sigs.S >>~]|<<div class="odocwiki_info"|~Restriction of <<a_api subproject="server" | type Eliom_parameter_sigs.S.setoneradio >> unary and optional parameters~.
@@ -251,19 +221,19 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="openid_error"| type Eliom_openid.openid_error >> ~[<<a_api subproject="server" | module Eliom_openid >>~]|<<div class="odocwiki_info"|~Error that may happen when identifiying an user
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="options"| type Eliom_registration.Registration.options >> ~[<<a_api subproject="server" | module Eliom_registration.Registration >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="options"| type Eliom_registration.Any.options >> ~[<<a_api subproject="server" | module Eliom_registration.Any >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="options"| type Eliom_registration.Redirection.options >> ~[<<a_api subproject="server" | module Eliom_registration.Redirection >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="options"| type Eliom_mkreg.REG_PARAM_ALPHA_RETURN.options >> ~[<<a_api subproject="server" | module Eliom_mkreg.REG_PARAM_ALPHA_RETURN >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="options"| type Eliom_mkreg.REG_PARAM.options >> ~[<<a_api subproject="server" | module Eliom_mkreg.REG_PARAM >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="options"| type Eliom_mkreg.MakeRegister_AlphaReturn.options >> ~[<<a_api subproject="server" | module Eliom_mkreg.MakeRegister_AlphaReturn >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="options"| type Eliom_reg_sigs.S.options >> ~[<<a_api subproject="server" | module Eliom_reg_sigs.S >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="options"| type Eliom_reg_sigs.PARAM_ALPHA_RETURN.options >> ~[<<a_api subproject="server" | module Eliom_reg_sigs.PARAM_ALPHA_RETURN >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="options"| type Eliom_reg_sigs.PARAM.options >> ~[<<a_api subproject="server" | module Eliom_reg_sigs.PARAM >>~]||
 |@@ @style="tet-align: left;"@@\\P|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="page"| type Eliom_registration.Registration.page >> ~[<<a_api subproject="server" | module Eliom_registration.Registration >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="page"| type Eliom_registration.Any.page >> ~[<<a_api subproject="server" | module Eliom_registration.Any >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="page"| type Eliom_registration.Redirection.page >> ~[<<a_api subproject="server" | module Eliom_registration.Redirection >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="page"| type Eliom_mkreg.REG_PARAM_ALPHA_RETURN.page >> ~[<<a_api subproject="server" | module Eliom_mkreg.REG_PARAM_ALPHA_RETURN >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="page"| type Eliom_mkreg.REG_PARAM.page >> ~[<<a_api subproject="server" | module Eliom_mkreg.REG_PARAM >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="page"| type Eliom_mkreg.MakeRegister_AlphaReturn.page >> ~[<<a_api subproject="server" | module Eliom_mkreg.MakeRegister_AlphaReturn >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="page"| type Eliom_reg_sigs.S.page >> ~[<<a_api subproject="server" | module Eliom_reg_sigs.S >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="page"| type Eliom_reg_sigs.PARAM_ALPHA_RETURN.page >> ~[<<a_api subproject="server" | module Eliom_reg_sigs.PARAM_ALPHA_RETURN >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="page"| type Eliom_reg_sigs.PARAM.page >> ~[<<a_api subproject="server" | module Eliom_reg_sigs.PARAM >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="pape"| type Eliom_openid.pape >> ~[<<a_api subproject="server" | module Eliom_openid >>~]|<<div class="odocwiki_info"|~The pape data returned by the server
 >>
 |
@@ -271,6 +241,7 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="param_name"| type Eliom_parameter_sigs.S.param_name >> ~[<<a_api subproject="server" | module Eliom_parameter_sigs.S >>~]|<<div class="odocwiki_info"|~Abstract type for parameters~' name~.
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="params"| type Eliom_service_types.params >> ~[<<a_api subproject="server" | module Eliom_service_types >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="params_type"| type Eliom_parameter_sigs.S.params_type >> ~[<<a_api subproject="server" | module Eliom_parameter_sigs.S >>~]|<<div class="odocwiki_info"|~Abstract type for service parameters~.
 >>
 |
@@ -281,42 +252,34 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="personConstruct"| type Atom_feed.personConstruct >> ~[<<a_api subproject="server" | module Atom_feed >>~]|<<div class="odocwiki_info"|~Children tags allowed for the author and contributor tags
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="post_service_kind"| type Eliom_service.post_service_kind >> ~[<<a_api subproject="server" | module Eliom_service >>~]|<<div class="odocwiki_info"|~Restriction of <<span class="odocwiki_inlinecode"|service~_method>> to ~P~O~S~T services~.
->>
-|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="post"| type Eliom_service_types.post >> ~[<<a_api subproject="server" | module Eliom_service_types >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="published"| type Atom_feed.published >> ~[<<a_api subproject="server" | module Atom_feed >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="put_service_kind"| type Eliom_service.put_service_kind >> ~[<<a_api subproject="server" | module Eliom_service >>~]|<<div class="odocwiki_info"|~Restriction of <<span class="odocwiki_inlinecode"|service~_method>> to ~P~U~T services~.
->>
-|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="put"| type Eliom_service_types.put >> ~[<<a_api subproject="server" | module Eliom_service_types >>~]||
 |@@ @style="tet-align: left;"@@\\R|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="raw_post_data"| type Eliom_parameter_sigs.S.raw_post_data >> ~[<<a_api subproject="server" | module Eliom_parameter_sigs.S >>~]|<<div class="odocwiki_info"|~When the content type is neither ~U~R~Lencoded form data nor
       multipart data~, it is possible to get it as a stream of strings~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="registrable"| type Eliom_service.registrable >> ~[<<a_api subproject="server" | module Eliom_service >>~]|<<div class="odocwiki_info"|~A service is <<span class="odocwiki_inlinecode"|`~Registrable>> only if it isn~'t a pre~-applied
-    service~, see <<a_api subproject="server" | val Eliom_service.preapply >>~.
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="redirected_service"| type Eliom_registration.redirected_service >> ~[<<a_api subproject="server" | module Eliom_registration >>~]|<<div class="odocwiki_info"|~Auxiliarry type to hide non~-interesting type parameters
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="reg"| type Eliom_service_types.reg >> ~[<<a_api subproject="server" | module Eliom_service_types >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="rel"| type Atom_feed.rel >> ~[<<a_api subproject="server" | module Atom_feed >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="request_scope"| type Eliom_common.request_scope >> ~[<<a_api subproject="server" | module Eliom_common >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="result"| type Eliom_openid.result >> ~[<<a_api subproject="server" | module Eliom_openid >>~]|<<div class="odocwiki_info"|~The result yielded by the authentication process
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="result"| type Eliom_registration.Registration.result >> ~[<<a_api subproject="server" | module Eliom_registration.Registration >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="result"| type Eliom_registration.Any.result >> ~[<<a_api subproject="server" | module Eliom_registration.Any >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="result"| type Eliom_registration.Redirection.result >> ~[<<a_api subproject="server" | module Eliom_registration.Redirection >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="result"| type Eliom_mkreg.REG_PARAM_ALPHA_RETURN.result >> ~[<<a_api subproject="server" | module Eliom_mkreg.REG_PARAM_ALPHA_RETURN >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="result"| type Eliom_mkreg.REG_PARAM.result >> ~[<<a_api subproject="server" | module Eliom_mkreg.REG_PARAM >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="result"| type Eliom_mkreg.MakeRegister_AlphaReturn.result >> ~[<<a_api subproject="server" | module Eliom_mkreg.MakeRegister_AlphaReturn >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="return"| type Eliom_registration.Registration.return >> ~[<<a_api subproject="server" | module Eliom_registration.Registration >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="result"| type Eliom_reg_sigs.S.result >> ~[<<a_api subproject="server" | module Eliom_reg_sigs.S >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="result"| type Eliom_reg_sigs.PARAM_ALPHA_RETURN.result >> ~[<<a_api subproject="server" | module Eliom_reg_sigs.PARAM_ALPHA_RETURN >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="result"| type Eliom_reg_sigs.PARAM.result >> ~[<<a_api subproject="server" | module Eliom_reg_sigs.PARAM >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="return"| type Eliom_registration.Any.return >> ~[<<a_api subproject="server" | module Eliom_registration.Any >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="return"| type Eliom_registration.Redirection.return >> ~[<<a_api subproject="server" | module Eliom_registration.Redirection >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="return"| type Eliom_mkreg.REG_PARAM_ALPHA_RETURN.return >> ~[<<a_api subproject="server" | module Eliom_mkreg.REG_PARAM_ALPHA_RETURN >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="return"| type Eliom_mkreg.REG_PARAM.return >> ~[<<a_api subproject="server" | module Eliom_mkreg.REG_PARAM >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="return"| type Eliom_mkreg.MakeRegister_AlphaReturn.return >> ~[<<a_api subproject="server" | module Eliom_mkreg.MakeRegister_AlphaReturn >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="rt"| type Eliom_service.rt >> ~[<<a_api subproject="server" | module Eliom_service >>~]|<<div class="odocwiki_info"|~Helper for typing ~O~Caml services~.
->>
-|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="return"| type Eliom_reg_sigs.S.return >> ~[<<a_api subproject="server" | module Eliom_reg_sigs.S >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="return"| type Eliom_reg_sigs.PARAM.return >> ~[<<a_api subproject="server" | module Eliom_reg_sigs.PARAM >>~]||
 |@@ @style="tet-align: left;"@@\\S|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="scheme"| type Atom_feed.scheme >> ~[<<a_api subproject="server" | module Atom_feed >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="scope"| type Eliom_common.scope >> ~[<<a_api subproject="server" | module Eliom_common >>~]||
@@ -331,19 +294,9 @@
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="server_params"| type Eliom_types.server_params >> ~[<<a_api subproject="server" | module Eliom_types >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="service"| type Eliom_service.service >> ~[<<a_api subproject="server" | module Eliom_service >>~]|<<div class="odocwiki_info"|~Type of services~.
->>
-|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="service"| type Eliom_service_sigs.S.Id.service >> ~[<<a_api subproject="server" | module Eliom_service_sigs.S.Id >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="service_cookie_info"| type Eliom_state.Ext.service_cookie_info >> ~[<<a_api subproject="server" | module Eliom_state.Ext >>~]|<<div class="odocwiki_info"|~These types are used to get or set information about browser
       or process cookies ~(like timeouts~)~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="service_kind"| type Eliom_service.service_kind >> ~[<<a_api subproject="server" | module Eliom_service >>~]|<<div class="odocwiki_info"|~An attached service could either be an internal ~Eliom service or an
-    abstraction for an <<span class="odocwiki_inlinecode"|`~External>> service~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="service_method"| type Eliom_service.service_method >> ~[<<a_api subproject="server" | module Eliom_service >>~]|<<div class="odocwiki_info"|~The kind of a service is <<span class="odocwiki_inlinecode"|`~Post>> when there is at least one ~P~O~S~T
-    parameters~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="session_group_scope"| type Eliom_common.session_group_scope >> ~[<<a_api subproject="server" | module Eliom_common >>~]||
@@ -362,6 +315,7 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="sourceOAttr"| type Atom_feed.sourceOAttr >> ~[<<a_api subproject="server" | module Atom_feed >>~]|<<div class="odocwiki_info"|~Children tags allowed for the source tag
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="srv"| type Eliom_tools.srv >> ~[<<a_api subproject="server" | module Eliom_tools >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="star"| type Eliom_content_sigs.LINKS_AND_FORMS.star >> ~[<<a_api subproject="server" | module Eliom_content_sigs.LINKS_AND_FORMS >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="state"| type Eliom_state.Ext.state >> ~[<<a_api subproject="server" | module Eliom_state.Ext >>~]|<<div class="odocwiki_info"|~The type of states~.
 >>
@@ -370,11 +324,6 @@
     scope~: <<span class="odocwiki_inlinecode"|~Alive~_state>> means that data has been recorded for this scope~, <<span class="odocwiki_inlinecode"|~Empty~_state>> means that there is no data for this scope~, <<span class="odocwiki_inlinecode"|~Expired~_state>> means that data for this scope has been removed
     because the timeout has been reached~.
     ~The default scope is <<span class="odocwiki_inlinecode"|`~Session>>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="suff"| type Eliom_service.suff >> ~[<<a_api subproject="server" | module Eliom_service >>~]|<<div class="odocwiki_info"|~The kind of parameters for a service is <<span class="odocwiki_inlinecode"|`~With~Suffix>> when it have
-    a suffix parameter~, for examples <<span class="odocwiki_inlinecode"|~Eliom~_parameter~.suffix>> or
-    <<span class="odocwiki_inlinecode"|~Eliom~_parameter~.suffix~_prod>>~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="suff"| type Eliom_parameter_sigs.S.suff >> ~[<<a_api subproject="server" | module Eliom_parameter_sigs.S >>~]|<<div class="odocwiki_info"|~This type is used as a phantom type in <<a_api subproject="server" | type Eliom_parameter_sigs.S.params_type >> to
@@ -387,6 +336,11 @@
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="sv"| type Eliom_shared_sigs.S.sv >> ~[<<a_api subproject="server" | module Eliom_shared_sigs.S >>~]||
 |@@ @style="tet-align: left;"@@\\T|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="t"| type Eliom_service_types.Meth.t >> ~[<<a_api subproject="server" | module Eliom_service_types.Meth >>~]|<<div class="odocwiki_info"|~- ~0~-th param ~: method params ~1~-~4 ~: ~G~E~T and ~P~O~S~T param types~, param ~5    ~: with~/without suffix~, param ~6    ~: method for fallback service~, param ~7    ~: non~-unit only for the ~Post ~(g~, p~) case when g !~= unit ~;
+                    used to force unit ~G~E~T parameters when needed
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="t"| type Eliom_service_types.Ret.t >> ~[<<a_api subproject="server" | module Eliom_service_types.Ret >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="t"| type Eliom_registration.TMPL_PARAMS.t >> ~[<<a_api subproject="server" | module Eliom_registration.TMPL_PARAMS >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="t"| type Eliom_cscache.t >> ~[<<a_api subproject="server" | module Eliom_cscache >>~]|<<div class="odocwiki_info"|~The type of association tables ~(implemented using ~Hashtbl~)
 >>
@@ -416,6 +370,10 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="t"| type Eliom_bus.t >> ~[<<a_api subproject="server" | module Eliom_bus >>~]|<<div class="odocwiki_info"|~The type of bus~'s carrying values of type <<span class="odocwiki_inlinecode"|~'a>>~.
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="t"| type Eliom_service_sigs.S.Id.t >> ~[<<a_api subproject="server" | module Eliom_service_sigs.S.Id >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="t"| type Eliom_service_sigs.S.t >> ~[<<a_api subproject="server" | module Eliom_service_sigs.S >>~]|<<div class="odocwiki_info"|~Type of services~.
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="t"| type Eliom_shared_sigs.RLIST.t >> ~[<<a_api subproject="server" | module Eliom_shared_sigs.RLIST >>~]|<<div class="odocwiki_info"|~The type of ~(shared~) reactive lists
 >>
 |
@@ -428,9 +386,9 @@
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="to_and_from"| type Eliom_parameter_sigs.S.to_and_from >> ~[<<a_api subproject="server" | module Eliom_parameter_sigs.S >>~]||
 |@@ @style="tet-align: left;"@@\\U|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="unknown_content"| type Eliom_registration.unknown_content >> ~[<<a_api subproject="server" | module Eliom_registration >>~]|<<div class="odocwiki_info"|~The type <<span class="odocwiki_inlinecode"|unknown~_content>> is a refinement of <<a_api subproject="server" | type Eliom_registration.http_service >> to
-    be used as a phantom type parameters for <<a_api subproject="server" | type Eliom_registration.kind >> when
-    the content~-type can~'t be determined staticaly~.
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="unknown_content"| type Eliom_registration.unknown_content >> ~[<<a_api subproject="server" | module Eliom_registration >>~]|<<div class="odocwiki_info"|~The type <<span class="odocwiki_inlinecode"|unknown~_content>> is to be used as a phantom type
+    parameter for <<a_api subproject="server" | type Eliom_registration.kind >> when the content~-type
+    can~'t be determined statically~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="unwrap_id"| type Eliom_wrap.unwrap_id >> ~[<<a_api subproject="server" | module Eliom_wrap >>~]|<<div class="odocwiki_info"|unwrap ~*
@@ -451,6 +409,10 @@
 >>
 |
 |@@ @style="tet-align: left;"@@\\W|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="which"| type Eliom_service_types.Meth.which >> ~[<<a_api subproject="server" | module Eliom_service_types.Meth >>~]|<<div class="odocwiki_info"|~Like <<span class="odocwiki_inlinecode"|~Meth~.t>> but without the auxilliary parameters~; used to query
+      about the service method from outside~.
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="wrap"| type Eliom_content.Svg.wrap >> ~[<<a_api subproject="server" | module Eliom_content.Svg >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="wrapped_value"| type Eliom_wrap.wrapped_value >> ~[<<a_api subproject="server" | module Eliom_wrap >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="wrapper"| type Eliom_wrap.wrapper >> ~[<<a_api subproject="server" | module Eliom_wrap >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|~'a wrapper>> is the type of values to include into a value of type ~'a for

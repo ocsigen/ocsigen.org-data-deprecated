@@ -75,14 +75,16 @@ file~.
     actions~, redirections~, static files~, …
 >>
 |
-|<<a_api subproject="server" | module Eliom_registration.Html5 >>|<<div class="odocwiki_info"|~Eliom service registration for ~H~T~M~L~5 page~.
+|<<a_api subproject="server" | module Eliom_registration.Html5 >>|<<div class="odocwiki_info"|~Eliom service registration for services that return ~H~T~M~L~5
+    pages~.
 >>
 |
 |<<a_api subproject="server" | module Eliom_registration.Action >>|<<div class="odocwiki_info"|~Eliom service registration for services that only execute
     actions~.
 >>
 |
-|<<a_api subproject="server" | module Eliom_registration.Ocaml >>|<<div class="odocwiki_info"|~Eliom service registration for services that send marshalled ~O~Caml values~.
+|<<a_api subproject="server" | module Eliom_registration.Ocaml >>|<<div class="odocwiki_info"|~Eliom service registration for services that send marshalled ~O~Caml
+    values~.
 >>
 |
 |<<a_api subproject="server" | module Eliom_registration.App >>|<<div class="odocwiki_info"|~Functor for application creation~.
@@ -96,8 +98,8 @@ file~.
     what they want to send~.
 >>
 |
-|<<a_api subproject="server" | module Eliom_registration.Redirection >>|<<div class="odocwiki_info"|~Eliom service registration for services that returns a redirections
-    towards another service~.
+|<<a_api subproject="server" | module Eliom_registration.Redirection >>|<<div class="odocwiki_info"|~Eliom service registration for services that returns a
+    redirections towards another service~.
 >>
 |
 

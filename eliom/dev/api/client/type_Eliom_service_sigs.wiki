@@ -1,0 +1,313 @@
+<<code language="ocaml" | sig
+  module type S =
+    sig
+      type get = Get_method
+      type put = Put_method
+      type post = Post_method
+      type delete = Delete_method
+      type co = Co
+      type non_co = Non_co
+      type ext = Ext
+      type non_ext = Non_ext
+      type http = Http_ret
+      type appl = Appl_ret
+      type 'a ocaml = Ocaml of 'a
+      type non_ocaml = Non_ocaml
+      type reg = Reg
+      type non_reg = Non_reg
+      module Ret :
+        sig
+          type _ t =
+              Ocaml : 'r ocaml t
+            | Non_ocaml : non_ocaml t
+            | Unsafe : 'a t
+        end
+      type ('get, 'a, 'gn) params =
+          ('get, 'a, 'gn) Eliom_parameter.params_type
+        constraint 'a = [< `WithSuffix | `WithoutSuffix ]
+      module Meth :
+        sig
+          type (_, _, _, _, _, _, _, _) t =
+              Get :
+                ('gp, 'a, 'gn) params -> (get, 'gp, 'gn, unit, unit,
+                                          [< `WithSuffix | `WithoutSuffix ]
+                                          as 'a, get, unit)
+                                         t
+            | Post : ('gp, 'b, 'gn) params *
+                ('pp, [ `WithoutSuffix ], 'pn) params -> (post, 'gp, 'gn,
+                                                          'pp, 'pn,
+                                                          [< `WithSuffix
+                                                           | `WithoutSuffix ]
+                                                          as 'b, get, 'gp)
+                                                         t
+            | Put :
+                ('gp, 'c, 'gn) params -> (put, 'gp, 'gn, unit, unit,
+                                          [< `WithSuffix | `WithoutSuffix ]
+                                          as 'c, put, unit)
+                                         t
+            | Delete :
+                ('gp, 'd, 'gn) params -> (delete, 'gp, 'gn, unit, unit,
+                                          [< `WithSuffix | `WithoutSuffix ]
+                                          as 'd, delete, unit)
+                                         t
+          val params :
+            ('a, 'b, 'c, 'd, 'e, [< `WithSuffix | `WithoutSuffix ] as 'f, 'g,
+             'h)
+            t -> ('b, 'f, 'c) params * ('d, [ `WithoutSuffix ], 'e) params
+          type _ which =
+              Get' : get which
+            | Post' : post which
+            | Put' : put which
+            | Delete' : delete which
+          val which : ('a, 'b, 'c, 'd, 'e, 'f, 'g, 'h) t -> 'a which
+        end
+      type att
+      type non_att
+      type 'a attached_info =
+          Attached :
+            Eliom_service_sigs.S.att -> Eliom_service_sigs.S.att
+                                        Eliom_service_sigs.S.attached_info
+        | Nonattached :
+            Eliom_service_sigs.S.non_att -> Eliom_service_sigs.S.non_att
+                                            Eliom_service_sigs.S.attached_info
+      type ('get, 'post, 'meth, 'attached, 'co, 'ext, 'reg, +'a, 'gn, 'pn,
+            +'ret)
+           t
+        constraint 'a = [< `WithSuffix | `WithoutSuffix ]
+      module Id :
+        sig
+          type ('a, 'b, 'c, 'd, 'e, 'f, 'g, 'h, 'i, 'j, 'k) service =
+              ('a, 'b, 'c, 'd, 'e, 'f, 'g, 'h, 'i, 'j, 'k)
+              Eliom_service_sigs.S.t
+            constraint 'h = [< `WithSuffix | `WithoutSuffix ]
+          type (_, _, _, _, _) t =
+              Path :
+                Eliom_lib.Url.path -> (Eliom_service_sigs.S.att, non_co, 'a,
+                                       'b, 'c)
+                                      Eliom_service_sigs.S.Id.t
+            | Fallback :
+                (unit, unit, 'mf, Eliom_service_sigs.S.att, non_co, non_ext,
+                 reg, [ `WithoutSuffix ], unit, unit, 'ret)
+                Eliom_service_sigs.S.Id.service -> (Eliom_service_sigs.S.att,
+                                                    co, 'mf, 'ret, unit)
+                                                   Eliom_service_sigs.S.Id.t
+            | Global :
+                (Eliom_service_sigs.S.non_att, co, 'd, 'e, unit)
+                Eliom_service_sigs.S.Id.t
+          val untype :
+            ('a, 'c, 'm, 'r, 'g) Eliom_service_sigs.S.Id.t ->
+            ('a, 'c, 'm, 'rr, 'g) Eliom_service_sigs.S.Id.t
+        end
+      val create :
+        ?name:string ->
+        ?csrf_safe:bool ->
+        ?csrf_scope:[< Eliom_common.user_scope ] ->
+        ?csrf_secure:bool ->
+        ?max_use:int ->
+        ?timeout:float ->
+        ?https:bool ->
+        ?keep_nl_params:[ `All | `None | `Persistent ] ->
+        ?priority:int ->
+        ret:'ret Ret.t ->
+        meth:('m, 'gp, 'gn, 'pp, 'pn,
+              [< `WithSuffix | `WithoutSuffix ] as 'a, 'mf, 'gp_)
+             Meth.t ->
+        id:('att, 'co, 'mf, 'ret, 'gp_) Eliom_service_sigs.S.Id.t ->
+        unit ->
+        ('gp, 'pp, 'm, 'att, 'co, non_ext, reg, 'a, 'gn, 'pn, 'ret)
+        Eliom_service_sigs.S.t
+      val create_external :
+        prefix:string ->
+        path:Eliom_lib.Url.path ->
+        ?keep_nl_params:[ `All | `None | `Persistent ] ->
+        ret:'ret Ret.t ->
+        meth:('m, 'gp, 'gn, 'pp, 'pn,
+              [< `WithSuffix | `WithoutSuffix ] as 'a, 'mf, 'b)
+             Meth.t ->
+        unit ->
+        ('gp, 'pp, 'm, Eliom_service_sigs.S.att, non_co, ext, non_reg, 'a,
+         'gn, 'pn, 'ret)
+        Eliom_service_sigs.S.t
+      val reload_action :
+        (unit, unit, get, Eliom_service_sigs.S.non_att, co, non_ext, 
+         non_reg, [ `WithoutSuffix ], unit, unit, non_ocaml)
+        Eliom_service_sigs.S.t
+      val reload_action_https :
+        (unit, unit, get, Eliom_service_sigs.S.non_att, co, non_ext, 
+         non_reg, [ `WithoutSuffix ], unit, unit, non_ocaml)
+        Eliom_service_sigs.S.t
+      val reload_action_hidden :
+        (unit, unit, get, Eliom_service_sigs.S.non_att, co, non_ext, 
+         non_reg, [ `WithoutSuffix ], unit, unit, non_ocaml)
+        Eliom_service_sigs.S.t
+      val reload_action_https_hidden :
+        (unit, unit, get, Eliom_service_sigs.S.non_att, co, non_ext, 
+         non_reg, [ `WithoutSuffix ], unit, unit, non_ocaml)
+        Eliom_service_sigs.S.t
+      val static_dir :
+        unit ->
+        (string list, unit, get, Eliom_service_sigs.S.att, non_co, non_ext,
+         non_reg, [ `WithSuffix ],
+         [ `One of string list ] Eliom_parameter.param_name, unit, non_ocaml)
+        Eliom_service_sigs.S.t
+      val https_static_dir :
+        unit ->
+        (string list, unit, get, Eliom_service_sigs.S.att, non_co, non_ext,
+         non_reg, [ `WithSuffix ],
+         [ `One of string list ] Eliom_parameter.param_name, unit, non_ocaml)
+        Eliom_service_sigs.S.t
+      val static_dir_with_params :
+        ?keep_nl_params:[ `All | `None | `Persistent ] ->
+        get_params:('a, [ `WithoutSuffix ], 'an) Eliom_parameter.params_type ->
+        unit ->
+        (string list * 'a, unit, get, Eliom_service_sigs.S.att, non_co,
+         non_ext, non_reg, [ `WithSuffix ],
+         [ `One of string list ] Eliom_parameter.param_name * 'an, unit,
+         non_ocaml)
+        Eliom_service_sigs.S.t
+      val https_static_dir_with_params :
+        ?keep_nl_params:[ `All | `None | `Persistent ] ->
+        get_params:('a, [ `WithoutSuffix ], 'an) Eliom_parameter.params_type ->
+        unit ->
+        (string list * 'a, unit, get, Eliom_service_sigs.S.att, non_co,
+         non_ext, non_reg, [ `WithSuffix ],
+         [ `One of string list ] Eliom_parameter.param_name * 'an, unit,
+         non_ocaml)
+        Eliom_service_sigs.S.t
+      val preapply :
+        service:('a, 'b, 'meth, Eliom_service_sigs.S.att, 'co, 'ext, 'reg,
+                 [< `WithSuffix | `WithoutSuffix ], 'e, 'f, 'return)
+                Eliom_service_sigs.S.t ->
+        'a ->
+        (unit, 'b, 'meth, Eliom_service_sigs.S.att, 'co, 'ext, non_reg,
+         [ `WithoutSuffix ], unit, 'f, 'return)
+        Eliom_service_sigs.S.t
+      val attach_global_to_fallback :
+        fallback:(unit, unit, get, Eliom_service_sigs.S.att, 'a, non_ext, 'b,
+                  [< `WithSuffix | `WithoutSuffix ], unit, unit, 'return1)
+                 Eliom_service_sigs.S.t ->
+        service:('get, 'post, 'meth, Eliom_service_sigs.S.non_att, co,
+                 non_ext, 'c, [< `WithoutSuffix ] as 'd, 'gn, 'pn, 'return)
+                Eliom_service_sigs.S.t ->
+        ('get, 'post, 'meth, Eliom_service_sigs.S.att, co, non_ext, non_reg,
+         'd, 'gn, 'pn, 'return)
+        Eliom_service_sigs.S.t
+      val add_non_localized_get_parameters :
+        params:('p, [ `WithoutSuffix ], 'pn)
+               Eliom_parameter.non_localized_params ->
+        service:('a, 'b, 'meth, 'attach, 'co, 'ext, 'reg,
+                 [< `WithSuffix | `WithoutSuffix ] as 'c, 'e, 'f, 'return)
+                Eliom_service_sigs.S.t ->
+        ('a * 'p, 'b, 'meth, 'attach, 'co, 'ext, 'reg, 'c, 'e * 'pn, 'f,
+         'return)
+        Eliom_service_sigs.S.t
+      val add_non_localized_post_parameters :
+        params:('p, [ `WithoutSuffix ], 'pn)
+               Eliom_parameter.non_localized_params ->
+        service:('a, 'b, 'meth, 'attach, 'co, 'ext, 'g,
+                 [< `WithSuffix | `WithoutSuffix ] as 'c, 'e, 'f, 'return)
+                Eliom_service_sigs.S.t ->
+        ('a, 'b * 'p, 'meth, 'attach, 'co, 'ext, 'g, 'c, 'e, 'f * 'pn,
+         'return)
+        Eliom_service_sigs.S.t
+      val which_meth :
+        ('a, 'b, 'm, 'c, 'd, 'e, 'f, [< `WithSuffix | `WithoutSuffix ], 'g,
+         'h, 'i)
+        Eliom_service_sigs.S.t -> 'm Meth.which
+      val info :
+        ('a, 'b, 'c, 'att, 'd, 'e, 'f, [< `WithSuffix | `WithoutSuffix ], 'g,
+         'h, 'i)
+        Eliom_service_sigs.S.t -> 'att Eliom_service_sigs.S.attached_info
+      val is_external :
+        ('a, 'b, 'c, 'd, 'e, 'f, 'g, [< `WithSuffix | `WithoutSuffix ], 'h,
+         'i, 'j)
+        Eliom_service_sigs.S.t -> bool
+      val get_params_type :
+        ('a, 'b, 'd, 'e, 'f, 'g, 'h, [< `WithSuffix | `WithoutSuffix ] as 'i,
+         'c, 'j, 'k)
+        Eliom_service_sigs.S.t -> ('a, 'i, 'c) Eliom_parameter.params_type
+      val post_params_type :
+        ('c, 'a, 'd, 'e, 'f, 'g, 'h, [< `WithSuffix | `WithoutSuffix ], 'i,
+         'b, 'j)
+        Eliom_service_sigs.S.t ->
+        ('a, [ `WithoutSuffix ], 'b) Eliom_parameter.params_type
+      val sub_path : Eliom_service_sigs.S.att -> Eliom_lib.Url.path
+      val full_path : Eliom_service_sigs.S.att -> Eliom_lib.Url.path
+      val prefix : Eliom_service_sigs.S.att -> string
+      val get_name : Eliom_service_sigs.S.att -> Eliom_common.att_key_serv
+      val post_name : Eliom_service_sigs.S.att -> Eliom_common.att_key_serv
+      val redirect_suffix : Eliom_service_sigs.S.att -> bool
+      val na_name : Eliom_service_sigs.S.non_att -> Eliom_common.na_key_serv
+      val na_keep_get_na_params : Eliom_service_sigs.S.non_att -> bool
+      val max_use :
+        ('a, 'b, 'c, 'd, 'e, 'f, 'g, [< `WithSuffix | `WithoutSuffix ], 'h,
+         'i, 'j)
+        Eliom_service_sigs.S.t -> int option
+      val timeout :
+        ('a, 'b, 'c, 'd, 'e, 'f, 'g, [< `WithSuffix | `WithoutSuffix ], 'h,
+         'i, 'j)
+        Eliom_service_sigs.S.t -> float option
+      val https :
+        ('a, 'b, 'c, 'd, 'e, 'f, 'g, [< `WithSuffix | `WithoutSuffix ], 'h,
+         'i, 'j)
+        Eliom_service_sigs.S.t -> bool
+      val priority : Eliom_service_sigs.S.att -> int
+      val client_fun :
+        ('a, 'b, 'c, 'd, 'e, 'f, 'g, [< `WithSuffix | `WithoutSuffix ], 'h,
+         'i, 'j)
+        Eliom_service_sigs.S.t ->
+        (unit -> ('a -> 'b -> unit Lwt.t) option) Eliom_client_value.t
+      val has_client_fun :
+        ('a, 'b, 'c, 'd, 'e, 'f, 'g, [< `WithSuffix | `WithoutSuffix ], 'h,
+         'i, 'j)
+        Eliom_service_sigs.S.t -> bool
+      val has_client_fun_lazy :
+        ('a, 'b, 'c, 'd, 'e, 'f, 'g, [< `WithSuffix | `WithoutSuffix ], 'h,
+         'i, 'j)
+        Eliom_service_sigs.S.t -> (unit -> bool) Eliom_client_value.t
+      val keep_nl_params :
+        ('a, 'b, 'c, 'd, 'e, 'f, 'g, [< `WithSuffix | `WithoutSuffix ], 'h,
+         'i, 'j)
+        Eliom_service_sigs.S.t -> [ `All | `None | `Persistent ]
+      val change_get_num :
+        ('a, 'b, 'meth, Eliom_service_sigs.S.att, 'co, 'ext, 'c,
+         [< `WithSuffix | `WithoutSuffix ] as 'd, 'e, 'f, 'return)
+        Eliom_service_sigs.S.t ->
+        Eliom_service_sigs.S.att ->
+        Eliom_common.att_key_serv ->
+        ('a, 'b, 'meth, Eliom_service_sigs.S.att, 'co, 'ext, 'g, 'd, 'e, 'f,
+         'return)
+        Eliom_service_sigs.S.t
+      val register_delayed_get_or_na_coservice :
+        sp:Eliom_common.server_params ->
+        int * [< Eliom_common.user_scope ] * bool option -> string
+      val register_delayed_post_coservice :
+        sp:Eliom_common.server_params ->
+        int * [< Eliom_common.user_scope ] * bool option ->
+        Eliom_common.att_key_serv -> string
+      type send_appl_content =
+          XNever
+        | XAlways
+        | XSame_appl of string * string option
+      val send_appl_content :
+        ('a, 'b, 'c, 'd, 'e, 'f, 'g, [< `WithSuffix | `WithoutSuffix ], 'h,
+         'i, 'j)
+        Eliom_service_sigs.S.t -> Eliom_service_sigs.S.send_appl_content
+      val xhr_with_cookies :
+        ('a, 'b, 'c, 'd, 'e, 'f, 'g, [< `WithSuffix | `WithoutSuffix ], 'h,
+         'i, 'j)
+        Eliom_service_sigs.S.t -> string option option
+      val set_client_fun :
+        ?app:string ->
+        service:('a, 'b, 'c, 'd, 'e, 'f, 'g,
+                 [< `WithSuffix | `WithoutSuffix ], 'h, 'i, 'j)
+                Eliom_service_sigs.S.t ->
+        ('a -> 'b -> unit Lwt.t) Eliom_client_value.t -> unit
+      val internal_set_client_fun :
+        service:('a, 'b, 'c, 'd, 'e, 'f, 'g,
+                 [< `WithSuffix | `WithoutSuffix ], 'h, 'i, 'j)
+                Eliom_service_sigs.S.t ->
+        (unit -> ('a -> 'b -> unit Lwt.t) option) Eliom_client_value.t ->
+        unit
+    end
+end >>

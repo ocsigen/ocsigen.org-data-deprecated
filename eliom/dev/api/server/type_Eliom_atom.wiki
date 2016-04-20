@@ -1,11 +1,6 @@
 <<code language="ocaml" | sig
   module Reg :
     sig
-      type page = Atom_feed.feed
-      type options = unit
-      type return = Eliom_registration.http_service
-      type result =
-          Eliom_registration.browser_content Eliom_registration.kind
       val register :
         ?scope:[< Eliom_common.scope ] ->
         ?options:unit ->
@@ -14,15 +9,13 @@
         ?content_type:string ->
         ?headers:Http_headers.t ->
         ?secure_session:bool ->
-        service:('get, 'post, [< Eliom_service.service_method ],
-                 [< Eliom_service.attached ],
-                 [< Eliom_service.internal_service_kind ],
-                 [< Eliom_service.suff ], 'gn, 'pn, [ `Registrable ],
-                 [< Eliom_registration.http_service ])
-                Eliom_service.service ->
+        service:('get, 'post, 'a, 'b, 'c, Eliom_service.non_ext,
+                 Eliom_service.reg, [< `WithSuffix | `WithoutSuffix ], 'd,
+                 'e, Eliom_service.non_ocaml)
+                Eliom_service.t ->
         ?error_handler:((string * exn) list -> Atom_feed.feed Lwt.t) ->
         ('get -> 'post -> Atom_feed.feed Lwt.t) -> unit
-      val register_service :
+      val create :
         ?scope:[< Eliom_common.scope ] ->
         ?options:unit ->
         ?charset:string ->
@@ -31,323 +24,21 @@
         ?headers:Http_headers.t ->
         ?secure_session:bool ->
         ?https:bool ->
-        ?priority:int ->
-        path:Eliom_lib.Url.path ->
-        get_params:('get, [< Eliom_service.suff ] as 'a, 'gn)
-                   Eliom_parameter.params_type ->
-        ?error_handler:((string * exn) list -> Atom_feed.feed Lwt.t) ->
-        ('get -> unit -> Atom_feed.feed Lwt.t) ->
-        ('get, unit, [< Eliom_service.service_method > `Get ],
-         [< Eliom_service.attached > `Attached ],
-         [< Eliom_service.service_kind > `Service ], 'a, 'gn, unit,
-         [< Eliom_service.registrable > `Registrable ],
-         [> Eliom_registration.http_service ])
-        Eliom_service.service
-      val register_coservice :
-        ?scope:[< Eliom_common.scope ] ->
-        ?options:unit ->
-        ?charset:string ->
-        ?code:int ->
-        ?content_type:string ->
-        ?headers:Http_headers.t ->
-        ?secure_session:bool ->
         ?name:string ->
         ?csrf_safe:bool ->
         ?csrf_scope:[< Eliom_common.user_scope ] ->
         ?csrf_secure:bool ->
         ?max_use:int ->
         ?timeout:float ->
-        ?https:bool ->
-        fallback:(unit, unit, [ `Get ], Eliom_service.attached_kind,
-                  [ `Service ], [ `WithoutSuffix ], unit, unit,
-                  [< Eliom_service.registrable ],
-                  [< Eliom_registration.http_service ])
-                 Eliom_service.service ->
-        get_params:('get, [ `WithoutSuffix ], 'gn)
-                   Eliom_parameter.params_type ->
+        meth:('m, 'gp, 'gn, 'pp, 'pn,
+              [< `WithSuffix | `WithoutSuffix ] as 'a, 'mf, 'gp_)
+             Eliom_service.Meth.t ->
+        id:('att, 'co, 'mf, Eliom_service.non_ocaml, 'gp_) Eliom_service.Id.t ->
         ?error_handler:((string * exn) list -> Atom_feed.feed Lwt.t) ->
-        ('get -> unit -> Atom_feed.feed Lwt.t) ->
-        ('get, unit, [< Eliom_service.service_method > `Get ],
-         [< Eliom_service.attached > `Attached ],
-         [< Eliom_service.service_kind > `AttachedCoservice ],
-         [ `WithoutSuffix ], 'gn, unit,
-         [< Eliom_service.registrable > `Registrable ],
-         [> Eliom_registration.http_service ])
-        Eliom_service.service
-      val register_coservice' :
-        ?scope:[< Eliom_common.scope ] ->
-        ?options:unit ->
-        ?charset:string ->
-        ?code:int ->
-        ?content_type:string ->
-        ?headers:Http_headers.t ->
-        ?secure_session:bool ->
-        ?name:string ->
-        ?csrf_safe:bool ->
-        ?csrf_scope:[< Eliom_common.user_scope ] ->
-        ?csrf_secure:bool ->
-        ?max_use:int ->
-        ?timeout:float ->
-        ?https:bool ->
-        get_params:('get, [ `WithoutSuffix ], 'gn)
-                   Eliom_parameter.params_type ->
-        ?error_handler:((string * exn) list -> Atom_feed.feed Lwt.t) ->
-        ('get -> unit -> Atom_feed.feed Lwt.t) ->
-        ('get, unit, [< Eliom_service.service_method > `Get ],
-         [< Eliom_service.attached > `Nonattached ],
-         [< Eliom_service.service_kind > `NonattachedCoservice ],
-         [ `WithoutSuffix ], 'gn, unit,
-         [< Eliom_service.registrable > `Registrable ],
-         [> Eliom_registration.http_service ])
-        Eliom_service.service
-      val register_post_service :
-        ?scope:[< Eliom_common.scope ] ->
-        ?options:unit ->
-        ?charset:string ->
-        ?code:int ->
-        ?content_type:string ->
-        ?headers:Http_headers.t ->
-        ?secure_session:bool ->
-        ?https:bool ->
-        ?priority:int ->
-        fallback:('get, unit, [ `Get ], Eliom_service.attached_kind,
-                  [ `AttachedCoservice | `Service ],
-                  [< Eliom_service.suff ] as 'a, 'gn, unit,
-                  [< `Registrable ], [< Eliom_registration.http_service ])
-                 Eliom_service.service ->
-        post_params:('post, [ `WithoutSuffix ], 'pn)
-                    Eliom_parameter.params_type ->
-        ?error_handler:((string * exn) list -> Atom_feed.feed Lwt.t) ->
-        ('get -> 'post -> Atom_feed.feed Lwt.t) ->
-        ('get, 'post, [< Eliom_service.service_method > `Post ],
-         [< Eliom_service.attached > `Attached ],
-         [ `AttachedCoservice | `Service ], 'a, 'gn, 'pn,
-         [< Eliom_service.registrable > `Registrable ],
-         [> Eliom_registration.http_service ])
-        Eliom_service.service
-      val register_post_coservice :
-        ?scope:[< Eliom_common.scope ] ->
-        ?options:unit ->
-        ?charset:string ->
-        ?code:int ->
-        ?content_type:string ->
-        ?headers:Http_headers.t ->
-        ?secure_session:bool ->
-        ?name:string ->
-        ?csrf_safe:bool ->
-        ?csrf_scope:[< Eliom_common.user_scope ] ->
-        ?csrf_secure:bool ->
-        ?max_use:int ->
-        ?timeout:float ->
-        ?https:bool ->
-        fallback:('get, unit, [< `Get ], [< Eliom_service.attached_kind ],
-                  [< `AttachedCoservice | `Service ],
-                  [< Eliom_service.suff ] as 'a, 'gn, unit,
-                  [< `Registrable ], [< Eliom_registration.http_service ])
-                 Eliom_service.service ->
-        post_params:('post, [ `WithoutSuffix ], 'pn)
-                    Eliom_parameter.params_type ->
-        ?error_handler:((string * exn) list -> Atom_feed.feed Lwt.t) ->
-        ('get -> 'post -> Atom_feed.feed Lwt.t) ->
-        ('get, 'post, [< Eliom_service.service_method > `Post ],
-         [< Eliom_service.attached > `Attached ],
-         [< Eliom_service.service_kind > `AttachedCoservice ], 'a, 'gn, 'pn,
-         [< Eliom_service.registrable > `Registrable ],
-         [> Eliom_registration.http_service ])
-        Eliom_service.service
-      val register_post_coservice' :
-        ?scope:[< Eliom_common.scope ] ->
-        ?options:unit ->
-        ?charset:string ->
-        ?code:int ->
-        ?content_type:string ->
-        ?headers:Http_headers.t ->
-        ?secure_session:bool ->
-        ?name:string ->
-        ?csrf_safe:bool ->
-        ?csrf_scope:[< Eliom_common.user_scope ] ->
-        ?csrf_secure:bool ->
-        ?max_use:int ->
-        ?timeout:float ->
-        ?keep_get_na_params:bool ->
-        ?https:bool ->
-        post_params:('post, [ `WithoutSuffix ], 'pn)
-                    Eliom_parameter.params_type ->
-        ?error_handler:((string * exn) list -> Atom_feed.feed Lwt.t) ->
-        (unit -> 'post -> Atom_feed.feed Lwt.t) ->
-        (unit, 'post, [< Eliom_service.service_method > `Post ],
-         [< Eliom_service.attached > `Nonattached ],
-         [< Eliom_service.service_kind > `NonattachedCoservice ],
-         [ `WithoutSuffix ], unit, 'pn,
-         [< Eliom_service.registrable > `Registrable ],
-         [> Eliom_registration.http_service ])
-        Eliom_service.service
-      val register_put_service :
-        ?scope:[< Eliom_common.scope ] ->
-        ?options:unit ->
-        ?charset:string ->
-        ?code:int ->
-        ?content_type:string ->
-        ?headers:Http_headers.t ->
-        ?secure_session:bool ->
-        ?https:bool ->
-        ?priority:int ->
-        path:Eliom_lib.Url.path ->
-        get_params:('get, [< Eliom_service.suff ] as 'a, 'gn)
-                   Eliom_parameter.params_type ->
-        ?error_handler:((string * exn) list -> Atom_feed.feed Lwt.t) ->
-        ('get -> Eliom_parameter.raw_post_data -> Atom_feed.feed Lwt.t) ->
-        ('get, Eliom_parameter.raw_post_data,
-         [< Eliom_service.service_method > `Put ],
-         [< Eliom_service.attached > `Attached ],
-         [< Eliom_service.service_kind > `Service ], 'a, 'gn,
-         Eliom_parameter.no_param_name,
-         [< Eliom_service.registrable > `Registrable ],
-         [> Eliom_registration.http_service ])
-        Eliom_service.service
-      val register_put_coservice :
-        ?scope:[< Eliom_common.scope ] ->
-        ?options:unit ->
-        ?charset:string ->
-        ?code:int ->
-        ?content_type:string ->
-        ?headers:Http_headers.t ->
-        ?secure_session:bool ->
-        ?name:string ->
-        ?csrf_safe:bool ->
-        ?csrf_scope:[< Eliom_common.user_scope ] ->
-        ?csrf_secure:bool ->
-        ?max_use:int ->
-        ?timeout:float ->
-        ?https:bool ->
-        fallback:(unit, Eliom_parameter.raw_post_data, [ `Put ],
-                  Eliom_service.attached_kind, [ `Service ],
-                  [ `WithoutSuffix ], unit, Eliom_parameter.no_param_name,
-                  [< Eliom_service.registrable ],
-                  [< Eliom_registration.http_service ])
-                 Eliom_service.service ->
-        get_params:('get, [ `WithoutSuffix ], 'gn)
-                   Eliom_parameter.params_type ->
-        ?error_handler:((string * exn) list -> Atom_feed.feed Lwt.t) ->
-        ('get -> Eliom_parameter.raw_post_data -> Atom_feed.feed Lwt.t) ->
-        ('get, Eliom_parameter.raw_post_data,
-         [< Eliom_service.service_method > `Put ],
-         [< Eliom_service.attached > `Attached ],
-         [< Eliom_service.service_kind > `AttachedCoservice ],
-         [ `WithoutSuffix ], 'gn, Eliom_parameter.no_param_name,
-         [< Eliom_service.registrable > `Registrable ],
-         [> Eliom_registration.http_service ])
-        Eliom_service.service
-      val register_put_coservice' :
-        ?scope:[< Eliom_common.scope ] ->
-        ?options:unit ->
-        ?charset:string ->
-        ?code:int ->
-        ?content_type:string ->
-        ?headers:Http_headers.t ->
-        ?secure_session:bool ->
-        ?name:string ->
-        ?csrf_safe:bool ->
-        ?csrf_scope:[< Eliom_common.user_scope ] ->
-        ?csrf_secure:bool ->
-        ?max_use:int ->
-        ?timeout:float ->
-        ?https:bool ->
-        get_params:('get, [ `WithoutSuffix ], 'gn)
-                   Eliom_parameter.params_type ->
-        ?error_handler:((string * exn) list -> Atom_feed.feed Lwt.t) ->
-        ('get -> Eliom_parameter.raw_post_data -> Atom_feed.feed Lwt.t) ->
-        ('get, Eliom_parameter.raw_post_data,
-         [< Eliom_service.service_method > `Put ],
-         [< Eliom_service.attached > `Nonattached ],
-         [< Eliom_service.service_kind > `NonattachedCoservice ],
-         [ `WithoutSuffix ], 'gn, Eliom_parameter.no_param_name,
-         [< Eliom_service.registrable > `Registrable ],
-         [> Eliom_registration.http_service ])
-        Eliom_service.service
-      val register_delete_service :
-        ?scope:[< Eliom_common.scope ] ->
-        ?options:unit ->
-        ?charset:string ->
-        ?code:int ->
-        ?content_type:string ->
-        ?headers:Http_headers.t ->
-        ?secure_session:bool ->
-        ?https:bool ->
-        ?priority:int ->
-        path:Eliom_lib.Url.path ->
-        get_params:('get, [< Eliom_service.suff ] as 'a, 'gn)
-                   Eliom_parameter.params_type ->
-        ?error_handler:((string * exn) list -> Atom_feed.feed Lwt.t) ->
-        ('get -> Eliom_parameter.raw_post_data -> Atom_feed.feed Lwt.t) ->
-        ('get, Eliom_parameter.raw_post_data,
-         [< Eliom_service.service_method > `Delete ],
-         [< Eliom_service.attached > `Attached ],
-         [< Eliom_service.service_kind > `Service ], 'a, 'gn,
-         Eliom_parameter.no_param_name,
-         [< Eliom_service.registrable > `Registrable ],
-         [> Eliom_registration.http_service ])
-        Eliom_service.service
-      val register_delete_coservice :
-        ?scope:[< Eliom_common.scope ] ->
-        ?options:unit ->
-        ?charset:string ->
-        ?code:int ->
-        ?content_type:string ->
-        ?headers:Http_headers.t ->
-        ?secure_session:bool ->
-        ?name:string ->
-        ?csrf_safe:bool ->
-        ?csrf_scope:[< Eliom_common.user_scope ] ->
-        ?csrf_secure:bool ->
-        ?max_use:int ->
-        ?timeout:float ->
-        ?https:bool ->
-        fallback:(unit, Eliom_parameter.raw_post_data, [ `Delete ],
-                  Eliom_service.attached_kind, [ `Service ],
-                  [ `WithoutSuffix ], unit, Eliom_parameter.no_param_name,
-                  [< Eliom_service.registrable ],
-                  [< Eliom_registration.http_service ])
-                 Eliom_service.service ->
-        get_params:('get, [ `WithoutSuffix ], 'gn)
-                   Eliom_parameter.params_type ->
-        ?error_handler:((string * exn) list -> Atom_feed.feed Lwt.t) ->
-        ('get -> Eliom_parameter.raw_post_data -> Atom_feed.feed Lwt.t) ->
-        ('get, Eliom_parameter.raw_post_data,
-         [< Eliom_service.service_method > `Delete ],
-         [< Eliom_service.attached > `Attached ],
-         [< Eliom_service.service_kind > `AttachedCoservice ],
-         [ `WithoutSuffix ], 'gn, Eliom_parameter.no_param_name,
-         [< Eliom_service.registrable > `Registrable ],
-         [> Eliom_registration.http_service ])
-        Eliom_service.service
-      val register_delete_coservice' :
-        ?scope:[< Eliom_common.scope ] ->
-        ?options:unit ->
-        ?charset:string ->
-        ?code:int ->
-        ?content_type:string ->
-        ?headers:Http_headers.t ->
-        ?secure_session:bool ->
-        ?name:string ->
-        ?csrf_safe:bool ->
-        ?csrf_scope:[< Eliom_common.user_scope ] ->
-        ?csrf_secure:bool ->
-        ?max_use:int ->
-        ?timeout:float ->
-        ?https:bool ->
-        get_params:('get, [ `WithoutSuffix ], 'gn)
-                   Eliom_parameter.params_type ->
-        ?error_handler:((string * exn) list -> Atom_feed.feed Lwt.t) ->
-        ('get -> Eliom_parameter.raw_post_data -> Atom_feed.feed Lwt.t) ->
-        ('get, Eliom_parameter.raw_post_data,
-         [< Eliom_service.service_method > `Delete ],
-         [< Eliom_service.attached > `Nonattached ],
-         [< Eliom_service.service_kind > `NonattachedCoservice ],
-         [ `WithoutSuffix ], 'gn, Eliom_parameter.no_param_name,
-         [< Eliom_service.registrable > `Registrable ],
-         [> Eliom_registration.http_service ])
-        Eliom_service.service
+        ('gp -> 'pp -> Atom_feed.feed Lwt.t) ->
+        ('gp, 'pp, 'm, 'att, 'co, Eliom_service.non_ext, Eliom_service.reg,
+         'a, 'gn, 'pn, Eliom_service.non_ocaml)
+        Eliom_service.t
       val send :
         ?options:unit ->
         ?charset:string ->

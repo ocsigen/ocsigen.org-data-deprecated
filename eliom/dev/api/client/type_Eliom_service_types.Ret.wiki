@@ -1,0 +1,6 @@
+<<code language="ocaml" | sig
+  type _ t =
+      Ocaml : 'r Eliom_service_types.ocaml Eliom_service_types.Ret.t
+    | Non_ocaml : Eliom_service_types.non_ocaml Eliom_service_types.Ret.t
+    | Unsafe : 'a Eliom_service_types.Ret.t
+end >>

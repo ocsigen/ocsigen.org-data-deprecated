@@ -8492,12 +8492,9 @@
             ?absolute:bool ->
             ?absolute_path:bool ->
             ?https:bool ->
-            service:('get, unit, [< Eliom_service.get_service_kind ],
-                     [< Eliom_service.attached ],
-                     [< Eliom_service.service_kind ],
-                     [< Eliom_service.suff ], 'gn, unit,
-                     [< Eliom_service.registrable ], 'return)
-                    Eliom_service.service ->
+            service:('get, unit, Eliom_service.get, 'a, 'b, 'c, 'd,
+                     [< `WithSuffix | `WithoutSuffix ], 'e, unit, 'f)
+                    Eliom_service.t ->
             ?hostname:string ->
             ?port:int ->
             ?fragment:string ->
@@ -8515,13 +8512,10 @@
             ?absolute_path:bool ->
             ?https:bool ->
             ?a:[< Html5_types.a_attrib ] attrib list ->
-            service:('get, unit, [< Eliom_service.get_service_kind ],
-                     [< Eliom_service.attached ],
-                     [< Eliom_service.service_kind ],
-                     [< Eliom_service.suff ], 'd, unit,
-                     [< Eliom_service.registrable ],
-                     [< Eliom_service.non_ocaml_service ])
-                    Eliom_service.service ->
+            service:('get, unit, Eliom_service.get, 'b, 'c, 'd, 'e,
+                     [< `WithSuffix | `WithoutSuffix ], 'f, unit,
+                     Eliom_service.non_ocaml)
+                    Eliom_service.t ->
             ?hostname:string ->
             ?port:int ->
             ?fragment:string ->
@@ -8543,12 +8537,9 @@
                 ?absolute:bool ->
                 ?absolute_path:bool ->
                 ?https:bool ->
-                service:('get, 'post, [< Eliom_service.post_service_kind ],
-                         [< Eliom_service.attached ],
-                         [< Eliom_service.service_kind ],
-                         [< Eliom_service.suff ], 'gn, 'pn,
-                         [< Eliom_service.registrable ], 'return)
-                        Eliom_service.service ->
+                service:('get, 'post, Eliom_service.post, 'a, 'b, 'c, 'd,
+                         [< `WithSuffix | `WithoutSuffix ], 'e, 'f, 'g)
+                        Eliom_service.t ->
                 ?hostname:string ->
                 ?port:int ->
                 ?fragment:string ->
@@ -8564,13 +8555,10 @@
                 ?absolute_path:bool ->
                 ?https:bool ->
                 ?a:[< Html5_types.form_attrib ] attrib list ->
-                service:('get, unit, [< Eliom_service.get_service_kind ],
-                         [< Eliom_service.attached ],
-                         [< Eliom_service.service_kind ],
-                         [< Eliom_service.suff ], 'gn, 'pn,
-                         [< Eliom_service.registrable ],
-                         [< Eliom_service.non_ocaml_service ])
-                        Eliom_service.service ->
+                service:('a, unit, Eliom_service.get, 'b, 'c, 'd, 'e,
+                         [< `WithSuffix | `WithoutSuffix ], 'gn, 'f,
+                         Eliom_service.non_ocaml)
+                        Eliom_service.t ->
                 ?hostname:string ->
                 ?port:int ->
                 ?fragment:string ->
@@ -8584,13 +8572,10 @@
                 ?absolute_path:bool ->
                 ?https:bool ->
                 ?a:[< Html5_types.form_attrib ] attrib list ->
-                service:('get, unit, [< Eliom_service.get_service_kind ],
-                         [< Eliom_service.attached ],
-                         [< Eliom_service.service_kind ],
-                         [< Eliom_service.suff ], 'gn, 'pn,
-                         [< Eliom_service.registrable ],
-                         [< Eliom_service.non_ocaml_service ])
-                        Eliom_service.service ->
+                service:('a, unit, Eliom_service.get, 'b, 'c, 'd, 'e,
+                         [< `WithSuffix | `WithoutSuffix ], 'gn, 'f,
+                         Eliom_service.non_ocaml)
+                        Eliom_service.t ->
                 ?hostname:string ->
                 ?port:int ->
                 ?fragment:string ->
@@ -8604,13 +8589,10 @@
                 ?absolute_path:bool ->
                 ?https:bool ->
                 ?a:[< Html5_types.form_attrib ] attrib list ->
-                service:('get, 'post, [< Eliom_service.post_service_kind ],
-                         [< Eliom_service.attached ],
-                         [< Eliom_service.service_kind ],
-                         [< Eliom_service.suff ], 'gn, 'pn,
-                         [< Eliom_service.registrable ],
-                         [< Eliom_service.non_ocaml_service ])
-                        Eliom_service.service ->
+                service:('get, 'a, Eliom_service.post, 'b, 'c, 'd, 'e,
+                         [< `WithSuffix | `WithoutSuffix ], 'f, 'pn,
+                         Eliom_service.non_ocaml)
+                        Eliom_service.t ->
                 ?hostname:string ->
                 ?port:int ->
                 ?fragment:string ->
@@ -8625,13 +8607,10 @@
                 ?absolute_path:bool ->
                 ?https:bool ->
                 ?a:[< Html5_types.form_attrib ] attrib list ->
-                service:('get, 'post, [< Eliom_service.post_service_kind ],
-                         [< Eliom_service.attached ],
-                         [< Eliom_service.service_kind ],
-                         [< Eliom_service.suff ], 'gn, 'pn,
-                         [< Eliom_service.registrable ],
-                         [< Eliom_service.non_ocaml_service ])
-                        Eliom_service.service ->
+                service:('get, 'a, Eliom_service.post, 'b, 'c, 'd, 'e,
+                         [< `WithSuffix | `WithoutSuffix ], 'f, 'pn,
+                         Eliom_service.non_ocaml)
+                        Eliom_service.t ->
                 ?hostname:string ->
                 ?port:int ->
                 ?fragment:string ->
@@ -11974,12 +11953,9 @@
             ?absolute:bool ->
             ?absolute_path:bool ->
             ?https:bool ->
-            service:('get, unit, [< Eliom_service.get_service_kind ],
-                     [< Eliom_service.attached ],
-                     [< Eliom_service.service_kind ],
-                     [< Eliom_service.suff ], 'gn, unit,
-                     [< Eliom_service.registrable ], 'return)
-                    Eliom_service.service ->
+            service:('get, unit, Eliom_service.get, 'a, 'b, 'c, 'd,
+                     [< `WithSuffix | `WithoutSuffix ], 'e, unit, 'f)
+                    Eliom_service.t ->
             ?hostname:string ->
             ?port:int ->
             ?fragment:string ->
@@ -11997,13 +11973,10 @@
             ?absolute_path:bool ->
             ?https:bool ->
             ?a:[< Html5_types.a_attrib ] attrib list ->
-            service:('get, unit, [< Eliom_service.get_service_kind ],
-                     [< Eliom_service.attached ],
-                     [< Eliom_service.service_kind ],
-                     [< Eliom_service.suff ], 'd, unit,
-                     [< Eliom_service.registrable ],
-                     [< Eliom_service.non_ocaml_service ])
-                    Eliom_service.service ->
+            service:('get, unit, Eliom_service.get, 'b, 'c, 'd, 'e,
+                     [< `WithSuffix | `WithoutSuffix ], 'f, unit,
+                     Eliom_service.non_ocaml)
+                    Eliom_service.t ->
             ?hostname:string ->
             ?port:int ->
             ?fragment:string ->
@@ -12025,12 +11998,9 @@
                 ?absolute:bool ->
                 ?absolute_path:bool ->
                 ?https:bool ->
-                service:('get, 'post, [< Eliom_service.post_service_kind ],
-                         [< Eliom_service.attached ],
-                         [< Eliom_service.service_kind ],
-                         [< Eliom_service.suff ], 'gn, 'pn,
-                         [< Eliom_service.registrable ], 'return)
-                        Eliom_service.service ->
+                service:('get, 'post, Eliom_service.post, 'a, 'b, 'c, 'd,
+                         [< `WithSuffix | `WithoutSuffix ], 'e, 'f, 'g)
+                        Eliom_service.t ->
                 ?hostname:string ->
                 ?port:int ->
                 ?fragment:string ->
@@ -12046,13 +12016,10 @@
                 ?absolute_path:bool ->
                 ?https:bool ->
                 ?a:[< Html5_types.form_attrib ] attrib list ->
-                service:('get, unit, [< Eliom_service.get_service_kind ],
-                         [< Eliom_service.attached ],
-                         [< Eliom_service.service_kind ],
-                         [< Eliom_service.suff ], 'gn, 'pn,
-                         [< Eliom_service.registrable ],
-                         [< Eliom_service.non_ocaml_service ])
-                        Eliom_service.service ->
+                service:('a, unit, Eliom_service.get, 'b, 'c, 'd, 'e,
+                         [< `WithSuffix | `WithoutSuffix ], 'gn, 'f,
+                         Eliom_service.non_ocaml)
+                        Eliom_service.t ->
                 ?hostname:string ->
                 ?port:int ->
                 ?fragment:string ->
@@ -12066,13 +12033,10 @@
                 ?absolute_path:bool ->
                 ?https:bool ->
                 ?a:[< Html5_types.form_attrib ] attrib list ->
-                service:('get, unit, [< Eliom_service.get_service_kind ],
-                         [< Eliom_service.attached ],
-                         [< Eliom_service.service_kind ],
-                         [< Eliom_service.suff ], 'gn, 'pn,
-                         [< Eliom_service.registrable ],
-                         [< Eliom_service.non_ocaml_service ])
-                        Eliom_service.service ->
+                service:('a, unit, Eliom_service.get, 'b, 'c, 'd, 'e,
+                         [< `WithSuffix | `WithoutSuffix ], 'gn, 'f,
+                         Eliom_service.non_ocaml)
+                        Eliom_service.t ->
                 ?hostname:string ->
                 ?port:int ->
                 ?fragment:string ->
@@ -12086,13 +12050,10 @@
                 ?absolute_path:bool ->
                 ?https:bool ->
                 ?a:[< Html5_types.form_attrib ] attrib list ->
-                service:('get, 'post, [< Eliom_service.post_service_kind ],
-                         [< Eliom_service.attached ],
-                         [< Eliom_service.service_kind ],
-                         [< Eliom_service.suff ], 'gn, 'pn,
-                         [< Eliom_service.registrable ],
-                         [< Eliom_service.non_ocaml_service ])
-                        Eliom_service.service ->
+                service:('get, 'a, Eliom_service.post, 'b, 'c, 'd, 'e,
+                         [< `WithSuffix | `WithoutSuffix ], 'f, 'pn,
+                         Eliom_service.non_ocaml)
+                        Eliom_service.t ->
                 ?hostname:string ->
                 ?port:int ->
                 ?fragment:string ->
@@ -12107,13 +12068,10 @@
                 ?absolute_path:bool ->
                 ?https:bool ->
                 ?a:[< Html5_types.form_attrib ] attrib list ->
-                service:('get, 'post, [< Eliom_service.post_service_kind ],
-                         [< Eliom_service.attached ],
-                         [< Eliom_service.service_kind ],
-                         [< Eliom_service.suff ], 'gn, 'pn,
-                         [< Eliom_service.registrable ],
-                         [< Eliom_service.non_ocaml_service ])
-                        Eliom_service.service ->
+                service:('get, 'a, Eliom_service.post, 'b, 'c, 'd, 'e,
+                         [< `WithSuffix | `WithoutSuffix ], 'f, 'pn,
+                         Eliom_service.non_ocaml)
+                        Eliom_service.t ->
                 ?hostname:string ->
                 ?port:int ->
                 ?fragment:string ->
@@ -16216,11 +16174,9 @@
   val force_link : unit
   val set_client_fun :
     ?app:string ->
-    service:('a, 'b, [< Eliom_service.service_method ],
-             [< Eliom_service.attached ], [< Eliom_service.service_kind ],
-             [< Eliom_service.suff ], 'e, 'f, [< Eliom_service.registrable ],
-             'return)
-            Eliom_service.service ->
+    service:('a, 'b, 'c, 'd, 'e, 'f, 'g, [< `WithSuffix | `WithoutSuffix ],
+             'h, 'i, 'j)
+            Eliom_service.t ->
     ('a -> 'b -> unit Lwt.t) -> unit
   val wrap_client_fun :
     ('g -> 'p -> Html5_types.html Eliom_content.Html5.elt Lwt.t) ->

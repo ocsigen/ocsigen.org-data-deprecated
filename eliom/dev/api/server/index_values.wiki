@@ -30,12 +30,12 @@
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="add_nl_parameter"| value Eliom_parameter_sigs.S.add_nl_parameter >> ~[<<a_api subproject="server" | module Eliom_parameter_sigs.S >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="add_non_localized_get_parameters"| value Eliom_service.add_non_localized_get_parameters >> ~[<<a_api subproject="server" | module Eliom_service >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|add~_non~_localized~_get~_parameters ~~params ~~service>>
-    ~Adds non localized ~G~E~T parameters <<span class="odocwiki_inlinecode"|params>> to <<span class="odocwiki_inlinecode"|service>>~.
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="add_non_localized_get_parameters"| value Eliom_service_sigs.S.add_non_localized_get_parameters >> ~[<<a_api subproject="server" | module Eliom_service_sigs.S >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|add~_non~_localized~_get~_parameters ~~params ~~service>>
+      ~Adds non localized ~G~E~T parameters <<span class="odocwiki_inlinecode"|params>> to <<span class="odocwiki_inlinecode"|service>>~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="add_non_localized_post_parameters"| value Eliom_service.add_non_localized_post_parameters >> ~[<<a_api subproject="server" | module Eliom_service >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.add_non_localized_get_parameters >> but with ~P~O~S~T
-    parameters~.
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="add_non_localized_post_parameters"| value Eliom_service_sigs.S.add_non_localized_post_parameters >> ~[<<a_api subproject="server" | module Eliom_service_sigs.S >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service_sigs.S.add_non_localized_get_parameters >> but with ~P~O~S~T
+      parameters~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="all_suffix"| value Eliom_parameter_sigs.S.all_suffix >> ~[<<a_api subproject="server" | module Eliom_parameter_sigs.S >>~]|<<div class="odocwiki_info"|~Takes the whole suffix~, as long as possible~, as a ~(slash
@@ -72,8 +72,8 @@
       that represents the javascript part of the application~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="attach_coservice'"| value Eliom_service.attach_coservice' >> ~[<<a_api subproject="server" | module Eliom_service >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|attach~_coservice~' ~~fallback ~~service>> attaches the non~-attached
-    coservice <<span class="odocwiki_inlinecode"|service>> on the ~U~R~L of <<span class="odocwiki_inlinecode"|fallback>>~.
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="attach_global_to_fallback"| value Eliom_service_sigs.S.attach_global_to_fallback >> ~[<<a_api subproject="server" | module Eliom_service_sigs.S >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|attach~_global~_to~_fallback ~~fallback ~~service>> attaches the
+      global service <<span class="odocwiki_inlinecode"|service>> on the ~U~R~L of <<span class="odocwiki_inlinecode"|fallback>>~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="attr"| value Eliom_content.Html5.C.attr >> ~[<<a_api subproject="server" | module Eliom_content.Html5.C >>~]||
@@ -110,12 +110,13 @@
 >>
 |
 |@@ @style="tet-align: left;"@@\\C|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="cast_http_result"| value Eliom_registration.cast_http_result >> ~[<<a_api subproject="server" | module Eliom_registration >>~]|<<div class="odocwiki_info"|~If you know that the content you generated using <<span class="odocwiki_inlinecode"|~Text~.send>> or
-    <<span class="odocwiki_inlinecode"|~Streamlist~.send>> is the same as some other kind~, you can cast
-    it with <<span class="odocwiki_inlinecode"|cast~_unknown~_content~_kind>> for use with <<span class="odocwiki_inlinecode"|~Any>> module~.
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="cast_http_result"| value Eliom_registration.cast_http_result >> ~[<<a_api subproject="server" | module Eliom_registration >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|cast~_http~_result>> should only be used to register new output
+    modules
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="cast_unknown_content_kind"| value Eliom_registration.cast_unknown_content_kind >> ~[<<a_api subproject="server" | module Eliom_registration >>~]|<<div class="odocwiki_info"|~Unsafe cast of contents
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="cast_unknown_content_kind"| value Eliom_registration.cast_unknown_content_kind >> ~[<<a_api subproject="server" | module Eliom_registration >>~]|<<div class="odocwiki_info"|~If you know that the content you generated using <<span class="odocwiki_inlinecode"|~Text~.send>> or
+    <<span class="odocwiki_inlinecode"|~Streamlist~.send>> is the same as some other kind~, you can cast it
+    with <<span class="odocwiki_inlinecode"|cast~_unknown~_content~_kind>> for use with <<span class="odocwiki_inlinecode"|~Any>> module~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="categories"| value Atom_feed.categories >> ~[<<a_api subproject="server" | module Atom_feed >>~]|<<div class="odocwiki_info"|~We need a list of categories~, this is only a converter from category list
@@ -125,12 +126,12 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="category"| value Atom_feed.category >> ~[<<a_api subproject="server" | module Atom_feed >>~]|<<div class="odocwiki_info"|category tag
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="check_file"| value Eliom_registration.File_ct.check_file >> ~[<<a_api subproject="server" | module Eliom_registration.File_ct >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|check~_file file>> is true if <<span class="odocwiki_inlinecode"|~File~.send file>>
-      would effectively return the file ~(i~.e~.
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="check_file"| value Eliom_registration.File_ct.check_file >> ~[<<a_api subproject="server" | module Eliom_registration.File_ct >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|check~_file file>> is true if <<span class="odocwiki_inlinecode"|~File~.send file>> would
+      effectively return the file ~(i~.e~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="check_file"| value Eliom_registration.File.check_file >> ~[<<a_api subproject="server" | module Eliom_registration.File >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|check~_file file>> is true if <<span class="odocwiki_inlinecode"|~File~.send file>>
-      would effectively return the file ~(i~.e~.
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="check_file"| value Eliom_registration.File.check_file >> ~[<<a_api subproject="server" | module Eliom_registration.File >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|check~_file file>> is true if <<span class="odocwiki_inlinecode"|~File~.send file>> would
+      effectively return the file ~(i~.e~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="checkbox"| value Eliom_form_sigs.S.checkbox >> ~[<<a_api subproject="server" | module Eliom_form_sigs.S >>~]|<<div class="odocwiki_info"|~Creates a checkbox <<span class="odocwiki_inlinecode"|~<input~>>> tag~.
@@ -168,44 +169,16 @@
       coordinates of a point in an <<span class="odocwiki_inlinecode"|~<input type~="image" ~.~.~.~>>>~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="coservice"| value Eliom_service.Unsafe.coservice >> ~[<<a_api subproject="server" | module Eliom_service.Unsafe >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|coservice ~~fallback ~~get~_params>> creates an     <<a_manual chapter="services" fragment="attached_coservices"|attached
-    coservice>> at the same path than the service <<span class="odocwiki_inlinecode"|fallback>> and
-    taking <<span class="odocwiki_inlinecode"|get~_params>> as ~G~E~T parameters~.
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="create"| value Eliom_atom.Reg.create >> ~[<<a_api subproject="server" | module Eliom_atom.Reg >>~]|<<div class="odocwiki_info"|~Same as <<span class="odocwiki_inlinecode"|~Eliom~_service~.create>> followed by <<a_api subproject="server" | val Eliom_atom.Reg.register >>~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="coservice"| value Eliom_service.Ocaml.coservice >> ~[<<a_api subproject="server" | module Eliom_service.Ocaml >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|coservice ~~fallback ~~get~_params>> creates an     <<a_manual chapter="services" fragment="attached_coservices"|attached
-    coservice>> at the same path than the service <<span class="odocwiki_inlinecode"|fallback>> and
-    taking <<span class="odocwiki_inlinecode"|get~_params>> as ~G~E~T parameters~.
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="create"| value Eliom_registration.Any.create >> ~[<<a_api subproject="server" | module Eliom_registration.Any >>~]|<<div class="odocwiki_info"|~Same as <<span class="odocwiki_inlinecode"|~Eliom~_service~.create>> followed by <<a_api subproject="server" | val Eliom_registration.Any.register >>~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="coservice"| value Eliom_service.App.coservice >> ~[<<a_api subproject="server" | module Eliom_service.App >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|coservice ~~fallback ~~get~_params>> creates an     <<a_manual chapter="services" fragment="attached_coservices"|attached
-    coservice>> at the same path than the service <<span class="odocwiki_inlinecode"|fallback>> and
-    taking <<span class="odocwiki_inlinecode"|get~_params>> as ~G~E~T parameters~.
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="create"| value Eliom_registration.Ocaml.create >> ~[<<a_api subproject="server" | module Eliom_registration.Ocaml >>~]|<<div class="odocwiki_info"|~Same as <<span class="odocwiki_inlinecode"|~Eliom~_service~.create>> followed by <<a_api subproject="server" | val Eliom_registration.Ocaml.register >>~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="coservice"| value Eliom_service.Http.coservice >> ~[<<a_api subproject="server" | module Eliom_service.Http >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|coservice ~~fallback ~~get~_params>> creates an     <<a_manual chapter="services" fragment="attached_coservices"|attached
-    coservice>> at the same path than the service <<span class="odocwiki_inlinecode"|fallback>> and
-    taking <<span class="odocwiki_inlinecode"|get~_params>> as ~G~E~T parameters~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="coservice'"| value Eliom_service.Unsafe.coservice' >> ~[<<a_api subproject="server" | module Eliom_service.Unsafe >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|coservice~' ~~get~_param>> creates a <<a_manual
-    chapter="services" fragment="non-attached_coservices"|non-attached
-    coservice>> taking <<span class="odocwiki_inlinecode"|get~_params>> as extra ~G~E~T parameters~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="coservice'"| value Eliom_service.Ocaml.coservice' >> ~[<<a_api subproject="server" | module Eliom_service.Ocaml >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|coservice~' ~~get~_param>> creates a <<a_manual
-    chapter="services" fragment="non-attached_coservices"|non-attached
-    coservice>> taking <<span class="odocwiki_inlinecode"|get~_params>> as extra ~G~E~T parameters~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="coservice'"| value Eliom_service.App.coservice' >> ~[<<a_api subproject="server" | module Eliom_service.App >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|coservice~' ~~get~_param>> creates a <<a_manual
-    chapter="services" fragment="non-attached_coservices"|non-attached
-    coservice>> taking <<span class="odocwiki_inlinecode"|get~_params>> as extra ~G~E~T parameters~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="coservice'"| value Eliom_service.Http.coservice' >> ~[<<a_api subproject="server" | module Eliom_service.Http >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|coservice~' ~~get~_param>> creates a <<a_manual
-    chapter="services" fragment="non-attached_coservices"|non-attached
-    coservice>> taking <<span class="odocwiki_inlinecode"|get~_params>> as extra ~G~E~T parameters~.
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="create"| value Eliom_registration.Redirection.create >> ~[<<a_api subproject="server" | module Eliom_registration.Redirection >>~]|<<div class="odocwiki_info"|~Same as <<span class="odocwiki_inlinecode"|~Eliom~_service~.create>> followed by <<a_api subproject="server" | val Eliom_registration.Redirection.register >>~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="create"| value Eliom_cscache.create >> ~[<<a_api subproject="server" | module Eliom_cscache >>~]|<<div class="odocwiki_info"|~Create a new table~.
@@ -219,6 +192,9 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="create"| value Eliom_react.Up.create >> ~[<<a_api subproject="server" | module Eliom_react.Up >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|create param>> creates an ~Up event~.
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="create"| value Eliom_mkreg.MakeRegister_AlphaReturn.create >> ~[<<a_api subproject="server" | module Eliom_mkreg.MakeRegister_AlphaReturn >>~]|<<div class="odocwiki_info"|~Same as <<span class="odocwiki_inlinecode"|~Eliom~_service~.create>> followed by <<span class="odocwiki_inlinecode"|register>>~.
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="create"| value Eliom_content.Html5.Custom_data.create >> ~[<<a_api subproject="server" | module Eliom_content.Html5.Custom_data >>~]|<<div class="odocwiki_info"|~Create a custom data field by providing string conversion functions~.
 >>
 |
@@ -228,12 +204,24 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="create"| value Eliom_bus.create >> ~[<<a_api subproject="server" | module Eliom_bus >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|create ~?scope ~?name ~?size ~?filter t>> creates a fresh bus~.
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="create"| value Eliom_service_sigs.S.create >> ~[<<a_api subproject="server" | module Eliom_service_sigs.S >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|create ~~id ~~meth ~~ret ~(~)>> creates a <<span class="odocwiki_inlinecode"|service>>
+      identified as per <<span class="odocwiki_inlinecode"|id>> and accepting parameters as per <<span class="odocwiki_inlinecode"|m>>~.
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="create"| value Eliom_shared_sigs.RLIST.create >> ~[<<a_api subproject="server" | module Eliom_shared_sigs.RLIST >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|create ~?default ~?reset~_default l>> produces a pair <<span class="odocwiki_inlinecode"|l~, f>>~, where
       <<span class="odocwiki_inlinecode"|s>> is a ~(shared~) reactive list~, and <<span class="odocwiki_inlinecode"|f>> is a handle for
       manipulating the list~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="create"| value Eliom_shared_sigs.VALUE.create >> ~[<<a_api subproject="server" | module Eliom_shared_sigs.VALUE >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="create"| value Eliom_reg_sigs.S.create >> ~[<<a_api subproject="server" | module Eliom_reg_sigs.S >>~]|<<div class="odocwiki_info"|~Same as <<span class="odocwiki_inlinecode"|~Eliom~_service~.create>> followed by <<a_api subproject="server" | val Eliom_reg_sigs.S.register >>~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="create_external"| value Eliom_service_sigs.S.create_external >> ~[<<a_api subproject="server" | module Eliom_service_sigs.S >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|create~_external ~~prefix ~~path ~~get~_params ~(~)>>
+      creates a service for an external web site~, that will use ~G~E~T
+      method and requires <<span class="odocwiki_inlinecode"|get~_params>> as parameters~.
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="create_filtered"| value Eliom_bus.create_filtered >> ~[<<a_api subproject="server" | module Eliom_bus >>~]|<<div class="odocwiki_info"|~Same as <<span class="odocwiki_inlinecode"|create>>~, but data is filtered through <<span class="odocwiki_inlinecode"|filter>> function
     before entering the bus~.
 >>
@@ -309,74 +297,6 @@
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="default_session_scope"| value Eliom_common.default_session_scope >> ~[<<a_api subproject="server" | module Eliom_common >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="delete_coservice"| value Eliom_service.Unsafe.delete_coservice >> ~[<<a_api subproject="server" | module Eliom_service.Unsafe >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|delete~_coservice ~~fallback ~~get~_params>> creates an     <<a_manual chapter="services" fragment="attached_coservices"|attached
-    coservice>> with the same path and ~G~E~T parameters than the
-    service <<span class="odocwiki_inlinecode"|fallback>> and taking a single ~P~O~S~T parameter of type
-    <<span class="odocwiki_inlinecode"|~Eliom~_parameter~.raw~_post~_data>>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="delete_coservice"| value Eliom_service.Ocaml.delete_coservice >> ~[<<a_api subproject="server" | module Eliom_service.Ocaml >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|delete~_coservice ~~fallback ~~get~_params>> creates an     <<a_manual chapter="services" fragment="attached_coservices"|attached
-    coservice>> with the same path and ~G~E~T parameters than the
-    service <<span class="odocwiki_inlinecode"|fallback>> and taking a single ~P~O~S~T parameter of type
-    <<span class="odocwiki_inlinecode"|~Eliom~_parameter~.raw~_post~_data>>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="delete_coservice"| value Eliom_service.App.delete_coservice >> ~[<<a_api subproject="server" | module Eliom_service.App >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|delete~_coservice ~~fallback ~~get~_params>> creates an     <<a_manual chapter="services" fragment="attached_coservices"|attached
-    coservice>> with the same path and ~G~E~T parameters than the
-    service <<span class="odocwiki_inlinecode"|fallback>> and taking a single ~P~O~S~T parameter of type
-    <<span class="odocwiki_inlinecode"|~Eliom~_parameter~.raw~_post~_data>>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="delete_coservice"| value Eliom_service.Http.delete_coservice >> ~[<<a_api subproject="server" | module Eliom_service.Http >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|delete~_coservice ~~fallback ~~get~_params>> creates an     <<a_manual chapter="services" fragment="attached_coservices"|attached
-    coservice>> with the same path and ~G~E~T parameters than the
-    service <<span class="odocwiki_inlinecode"|fallback>> and taking a single ~P~O~S~T parameter of type
-    <<span class="odocwiki_inlinecode"|~Eliom~_parameter~.raw~_post~_data>>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="delete_coservice'"| value Eliom_service.Unsafe.delete_coservice' >> ~[<<a_api subproject="server" | module Eliom_service.Unsafe >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|delete~_coservice~' ~~get~_params>> creates a <<a_manual
-    chapter="services" fragment="non-attached_coservices"|non-attached
-    coservice>> taking a single ~P~O~S~T parameter of type
-    <<span class="odocwiki_inlinecode"|~Eliom~_parameter~.raw~_post~_data>>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="delete_coservice'"| value Eliom_service.Ocaml.delete_coservice' >> ~[<<a_api subproject="server" | module Eliom_service.Ocaml >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|delete~_coservice~' ~~get~_params>> creates a <<a_manual
-    chapter="services" fragment="non-attached_coservices"|non-attached
-    coservice>> taking a single ~P~O~S~T parameter of type
-    <<span class="odocwiki_inlinecode"|~Eliom~_parameter~.raw~_post~_data>>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="delete_coservice'"| value Eliom_service.App.delete_coservice' >> ~[<<a_api subproject="server" | module Eliom_service.App >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|delete~_coservice~' ~~get~_params>> creates a <<a_manual
-    chapter="services" fragment="non-attached_coservices"|non-attached
-    coservice>> taking a single ~P~O~S~T parameter of type
-    <<span class="odocwiki_inlinecode"|~Eliom~_parameter~.raw~_post~_data>>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="delete_coservice'"| value Eliom_service.Http.delete_coservice' >> ~[<<a_api subproject="server" | module Eliom_service.Http >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|delete~_coservice~' ~~get~_params>> creates a <<a_manual
-    chapter="services" fragment="non-attached_coservices"|non-attached
-    coservice>> taking a single ~P~O~S~T parameter of type
-    <<span class="odocwiki_inlinecode"|~Eliom~_parameter~.raw~_post~_data>>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="delete_service"| value Eliom_service.Unsafe.delete_service >> ~[<<a_api subproject="server" | module Eliom_service.Unsafe >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|delete~_service ~~path ~~get~_params ~(~)>> creates a
-    service that answers the ~H~T~T~P ~D~E~L~E~T~E method~, and only takes
-    <<span class="odocwiki_inlinecode"|~Eliom~_parameter~.raw~_post~_data>> as ~P~O~S~T parameter~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="delete_service"| value Eliom_service.Ocaml.delete_service >> ~[<<a_api subproject="server" | module Eliom_service.Ocaml >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|delete~_service ~~path ~~get~_params ~(~)>> creates a
-    service that answers the ~H~T~T~P ~D~E~L~E~T~E method~, and only takes
-    <<span class="odocwiki_inlinecode"|~Eliom~_parameter~.raw~_post~_data>> as ~P~O~S~T parameter~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="delete_service"| value Eliom_service.App.delete_service >> ~[<<a_api subproject="server" | module Eliom_service.App >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|delete~_service ~~path ~~get~_params ~(~)>> creates a
-    service that answers the ~H~T~T~P ~D~E~L~E~T~E method~, and only takes
-    <<span class="odocwiki_inlinecode"|~Eliom~_parameter~.raw~_post~_data>> as ~P~O~S~T parameter~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="delete_service"| value Eliom_service.Http.delete_service >> ~[<<a_api subproject="server" | module Eliom_service.Http >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|delete~_service ~~path ~~get~_params ~(~)>> creates a
-    service that answers the ~H~T~T~P ~D~E~L~E~T~E method~, and only takes
-    <<span class="odocwiki_inlinecode"|~Eliom~_parameter~.raw~_post~_data>> as ~P~O~S~T parameter~.
->>
-|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="direct_request"| value Eliom_s2s.direct_request >> ~[<<a_api subproject="server" | module Eliom_s2s >>~]|<<div class="odocwiki_info"|~Perform a direct ~(~P~O~S~T~) request towards a server~,
     and parse the result as key~-value data
 >>
@@ -462,48 +382,6 @@
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="external_channel"| value Eliom_comet.Channel.external_channel >> ~[<<a_api subproject="server" | module Eliom_comet.Channel >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|external~_channel ~~prefix ~~name ~(~)>> declares an external
       channel~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="external_delete_service"| value Eliom_service.Unsafe.external_delete_service >> ~[<<a_api subproject="server" | module Eliom_service.Unsafe >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Unsafe.external_service >> but with ~D~E~L~E~T~E method~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="external_delete_service"| value Eliom_service.Ocaml.external_delete_service >> ~[<<a_api subproject="server" | module Eliom_service.Ocaml >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Ocaml.external_service >> but with ~D~E~L~E~T~E method~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="external_delete_service"| value Eliom_service.Http.external_delete_service >> ~[<<a_api subproject="server" | module Eliom_service.Http >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.external_service >> but with ~D~E~L~E~T~E method~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="external_post_service"| value Eliom_service.Unsafe.external_post_service >> ~[<<a_api subproject="server" | module Eliom_service.Unsafe >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Unsafe.external_service >> but with ~P~O~S~T method~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="external_post_service"| value Eliom_service.Ocaml.external_post_service >> ~[<<a_api subproject="server" | module Eliom_service.Ocaml >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Ocaml.external_service >> but with ~P~O~S~T method~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="external_post_service"| value Eliom_service.Http.external_post_service >> ~[<<a_api subproject="server" | module Eliom_service.Http >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.external_service >> but with ~P~O~S~T method~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="external_put_service"| value Eliom_service.Unsafe.external_put_service >> ~[<<a_api subproject="server" | module Eliom_service.Unsafe >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Unsafe.external_service >> but with ~P~U~T method~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="external_put_service"| value Eliom_service.Ocaml.external_put_service >> ~[<<a_api subproject="server" | module Eliom_service.Ocaml >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Ocaml.external_service >> but with ~P~U~T method~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="external_put_service"| value Eliom_service.Http.external_put_service >> ~[<<a_api subproject="server" | module Eliom_service.Http >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.external_service >> but with ~P~U~T method~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="external_service"| value Eliom_service.Unsafe.external_service >> ~[<<a_api subproject="server" | module Eliom_service.Unsafe >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|external~_service ~~prefix ~~path ~~get~_params ~(~)>>
-    creates a service for an external web site~, that will use ~G~E~T
-    method and requires <<span class="odocwiki_inlinecode"|get~_params>> as parameters~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="external_service"| value Eliom_service.Ocaml.external_service >> ~[<<a_api subproject="server" | module Eliom_service.Ocaml >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|external~_service ~~prefix ~~path ~~get~_params ~(~)>>
-    creates a service for an external web site~, that will use ~G~E~T
-    method and requires <<span class="odocwiki_inlinecode"|get~_params>> as parameters~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="external_service"| value Eliom_service.Http.external_service >> ~[<<a_api subproject="server" | module Eliom_service.Http >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|external~_service ~~prefix ~~path ~~get~_params ~(~)>>
-    creates a service for an external web site~, that will use ~G~E~T
-    method and requires <<span class="odocwiki_inlinecode"|get~_params>> as parameters~.
 >>
 |
 |@@ @style="tet-align: left;"@@\\F|
@@ -848,7 +726,8 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="global_scope"| value Eliom_common.global_scope >> ~[<<a_api subproject="server" | module Eliom_common >>~]||
 |@@ @style="tet-align: left;"@@\\H|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="have_id"| value Eliom_content.Html5.Id.have_id >> ~[<<a_api subproject="server" | module Eliom_content.Html5.Id >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="head"| value Eliom_tools.HTML5_TOOLS.head >> ~[<<a_api subproject="server" | module Eliom_tools.HTML5_TOOLS >>~]|<<div class="odocwiki_info"|~An auxiliary function for creating an ~H~T~M~L head elements~.
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="head"| value Eliom_tools.HTML5_TOOLS.head >> ~[<<a_api subproject="server" | module Eliom_tools.HTML5_TOOLS >>~]|<<div class="odocwiki_info"|~An auxiliary function for creating an ~H~T~M~L head
+      elements~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="hierarchical_menu_breadth_first"| value Eliom_tools.HTML5_TOOLS.hierarchical_menu_breadth_first >> ~[<<a_api subproject="server" | module Eliom_tools.HTML5_TOOLS >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|hierarchical~_menu~_breadth~_first site ~(~)>>
@@ -859,7 +738,7 @@
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="hierarchical_menu_depth_first"| value Eliom_tools.HTML5_TOOLS.hierarchical_menu_depth_first >> ~[<<a_api subproject="server" | module Eliom_tools.HTML5_TOOLS >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|hierarchical~_menu~_depth~_first site ~(~)>> constructs
-      a hierarchical menu by exploring the hierarchical <<span class="odocwiki_inlinecode"|site>>
+      a hieranrchical menu by exploring the hierarchical <<span class="odocwiki_inlinecode"|site>>
       description using a depth~-first algorithm~: the first menu item
       will be displayed~, followed by the whole sub~-menu for this item~,
       then the second menu item with its sub~-menu~, and so on~.
@@ -872,16 +751,10 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="html5C"| value Atom_feed.html5C >> ~[<<a_api subproject="server" | module Atom_feed >>~]|<<div class="odocwiki_info"|~An html~5 content~, embedded in a div
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="https_static_dir"| value Eliom_service.https_static_dir >> ~[<<a_api subproject="server" | module Eliom_service >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.static_dir >> but forcing https link~.
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="https_static_dir"| value Eliom_service_sigs.S.https_static_dir >> ~[<<a_api subproject="server" | module Eliom_service_sigs.S >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service_sigs.S.static_dir >> but forcing https link~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="https_static_dir_with_params"| value Eliom_service.https_static_dir_with_params >> ~[<<a_api subproject="server" | module Eliom_service >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.static_dir_with_params >> but forcing https link~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="https_void_coservice'"| value Eliom_service.https_void_coservice' >> ~[<<a_api subproject="server" | module Eliom_service >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.void_coservice' >> but forcing https~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="https_void_hidden_coservice'"| value Eliom_service.https_void_hidden_coservice' >> ~[<<a_api subproject="server" | module Eliom_service >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.void_hidden_coservice' >> but forcing https~.
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="https_static_dir_with_params"| value Eliom_service_sigs.S.https_static_dir_with_params >> ~[<<a_api subproject="server" | module Eliom_service_sigs.S >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service_sigs.S.static_dir_with_params >> but forcing https link~.
 >>
 |
 |@@ @style="tet-align: left;"@@\\I|
@@ -1108,6 +981,7 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="pape"| value Eliom_openid.pape >> ~[<<a_api subproject="server" | module Eliom_openid >>~]|<<div class="odocwiki_info"|~The nist level
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="params"| value Eliom_service_types.Meth.params >> ~[<<a_api subproject="server" | module Eliom_service_types.Meth >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="parse_config"| value Eliom_config.parse_config >> ~[<<a_api subproject="server" | module Eliom_config >>~]|<<div class="odocwiki_info"|~Process the configuration
     ~(same as the one returned by
     <<a_api module="Eliom_config" | val get_config>> ~)
@@ -1138,77 +1012,13 @@ foobar:value}}}
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="plain"| value Atom_feed.plain >> ~[<<a_api subproject="server" | module Atom_feed >>~]|<<div class="odocwiki_info"|~Plain text construct
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="post_coservice"| value Eliom_service.Unsafe.post_coservice >> ~[<<a_api subproject="server" | module Eliom_service.Unsafe >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|post~_coservice ~~fallback ~~post~_params>> creates an     <<a_manual chapter="services" fragment="attached_coservices"|attached
-    coservice>> with the same path and ~G~E~T parameters than the
-    service <<span class="odocwiki_inlinecode"|fallback>> and taking <<span class="odocwiki_inlinecode"|post~_params>> as ~P~O~S~T
-    parameters~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="post_coservice"| value Eliom_service.Ocaml.post_coservice >> ~[<<a_api subproject="server" | module Eliom_service.Ocaml >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|post~_coservice ~~fallback ~~post~_params>> creates an     <<a_manual chapter="services" fragment="attached_coservices"|attached
-    coservice>> with the same path and ~G~E~T parameters than the
-    service <<span class="odocwiki_inlinecode"|fallback>> and taking <<span class="odocwiki_inlinecode"|post~_params>> as ~P~O~S~T
-    parameters~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="post_coservice"| value Eliom_service.App.post_coservice >> ~[<<a_api subproject="server" | module Eliom_service.App >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|post~_coservice ~~fallback ~~post~_params>> creates an     <<a_manual chapter="services" fragment="attached_coservices"|attached
-    coservice>> with the same path and ~G~E~T parameters than the
-    service <<span class="odocwiki_inlinecode"|fallback>> and taking <<span class="odocwiki_inlinecode"|post~_params>> as ~P~O~S~T
-    parameters~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="post_coservice"| value Eliom_service.Http.post_coservice >> ~[<<a_api subproject="server" | module Eliom_service.Http >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|post~_coservice ~~fallback ~~post~_params>> creates an     <<a_manual chapter="services" fragment="attached_coservices"|attached
-    coservice>> with the same path and ~G~E~T parameters than the
-    service <<span class="odocwiki_inlinecode"|fallback>> and taking <<span class="odocwiki_inlinecode"|post~_params>> as ~P~O~S~T
-    parameters~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="post_coservice'"| value Eliom_service.Unsafe.post_coservice' >> ~[<<a_api subproject="server" | module Eliom_service.Unsafe >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|post~_coservice~' ~~post~_params>> creates a <<a_manual
-    chapter="services" fragment="non-attached_coservices"|non-attached
-    coservice>> taking <<span class="odocwiki_inlinecode"|post~_params>> as ~P~O~S~T parameters~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="post_coservice'"| value Eliom_service.Ocaml.post_coservice' >> ~[<<a_api subproject="server" | module Eliom_service.Ocaml >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|post~_coservice~' ~~post~_params>> creates a <<a_manual
-    chapter="services" fragment="non-attached_coservices"|non-attached
-    coservice>> taking <<span class="odocwiki_inlinecode"|post~_params>> as ~P~O~S~T parameters~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="post_coservice'"| value Eliom_service.App.post_coservice' >> ~[<<a_api subproject="server" | module Eliom_service.App >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|post~_coservice~' ~~post~_params>> creates a <<a_manual
-    chapter="services" fragment="non-attached_coservices"|non-attached
-    coservice>> taking <<span class="odocwiki_inlinecode"|post~_params>> as ~P~O~S~T parameters~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="post_coservice'"| value Eliom_service.Http.post_coservice' >> ~[<<a_api subproject="server" | module Eliom_service.Http >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|post~_coservice~' ~~post~_params>> creates a <<a_manual
-    chapter="services" fragment="non-attached_coservices"|non-attached
-    coservice>> taking <<span class="odocwiki_inlinecode"|post~_params>> as ~P~O~S~T parameters~.
->>
-|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="post_form"| value Eliom_form_sigs.S.post_form >> ~[<<a_api subproject="server" | module Eliom_form_sigs.S >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|post~_form service formgen get~_params>> creates a
       ~P~O~S~T <<span class="odocwiki_inlinecode"|~<form~>>> to <<span class="odocwiki_inlinecode"|service>> preapplied to the ~G~E~T parameters
       <<span class="odocwiki_inlinecode"|get~_params>>~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="post_service"| value Eliom_service.Unsafe.post_service >> ~[<<a_api subproject="server" | module Eliom_service.Unsafe >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|post~_service ~~fallback ~~post~_params ~(~)>> creates a
-    service that takes <<span class="odocwiki_inlinecode"|post~_params>> as ~P~O~S~T parameters and share the
-    same path and ~G~E~T parameters than the service <<span class="odocwiki_inlinecode"|fallback>>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="post_service"| value Eliom_service.Ocaml.post_service >> ~[<<a_api subproject="server" | module Eliom_service.Ocaml >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|post~_service ~~fallback ~~post~_params ~(~)>> creates a
-    service that takes <<span class="odocwiki_inlinecode"|post~_params>> as ~P~O~S~T parameters and share the
-    same path and ~G~E~T parameters than the service <<span class="odocwiki_inlinecode"|fallback>>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="post_service"| value Eliom_service.App.post_service >> ~[<<a_api subproject="server" | module Eliom_service.App >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|post~_service ~~fallback ~~post~_params ~(~)>> creates a
-    service that takes <<span class="odocwiki_inlinecode"|post~_params>> as ~P~O~S~T parameters and share the
-    same path and ~G~E~T parameters than the service <<span class="odocwiki_inlinecode"|fallback>>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="post_service"| value Eliom_service.Http.post_service >> ~[<<a_api subproject="server" | module Eliom_service.Http >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|post~_service ~~fallback ~~post~_params ~(~)>> creates a
-    service that takes <<span class="odocwiki_inlinecode"|post~_params>> as ~P~O~S~T parameters and share the
-    same path and ~G~E~T parameters than the service <<span class="odocwiki_inlinecode"|fallback>>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="preapply"| value Eliom_service.preapply >> ~[<<a_api subproject="server" | module Eliom_service >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|preapply ~~service paramaters>> creates a new service
-    by preapplying <<span class="odocwiki_inlinecode"|service>> to the ~G~E~T <<span class="odocwiki_inlinecode"|parameters>>~.
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="preapply"| value Eliom_service_sigs.S.preapply >> ~[<<a_api subproject="server" | module Eliom_service_sigs.S >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|preapply ~~service paramaters>> creates a new
+      service by preapplying <<span class="odocwiki_inlinecode"|service>> to the ~G~E~T <<span class="odocwiki_inlinecode"|parameters>>~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="prod"| value Eliom_parameter_sigs.S.prod >> ~[<<a_api subproject="server" | module Eliom_parameter_sigs.S >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_parameter_sigs.S.( ** ) >>~.
@@ -1217,74 +1027,6 @@ foobar:value}}}
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="published"| value Atom_feed.published >> ~[<<a_api subproject="server" | module Atom_feed >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="push_ns"| value Eliom_s2s.push_ns >> ~[<<a_api subproject="server" | module Eliom_s2s >>~]|<<div class="odocwiki_info"|~Given a list of <<span class="odocwiki_inlinecode"|~(param~, value~)>> to be sent to the remote server~,
     push a namespace at the beginning of the parameters
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="put_coservice"| value Eliom_service.Unsafe.put_coservice >> ~[<<a_api subproject="server" | module Eliom_service.Unsafe >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|put~_coservice ~~fallback ~~get~_params>> creates an     <<a_manual chapter="services" fragment="attached_coservices"|attached
-    coservice>> with the same path and ~G~E~T parameters than the
-    service <<span class="odocwiki_inlinecode"|fallback>> and taking a single ~P~O~S~T parameter of type
-    <<span class="odocwiki_inlinecode"|~Eliom~_parameter~.raw~_post~_data>>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="put_coservice"| value Eliom_service.Ocaml.put_coservice >> ~[<<a_api subproject="server" | module Eliom_service.Ocaml >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|put~_coservice ~~fallback ~~get~_params>> creates an     <<a_manual chapter="services" fragment="attached_coservices"|attached
-    coservice>> with the same path and ~G~E~T parameters than the
-    service <<span class="odocwiki_inlinecode"|fallback>> and taking a single ~P~O~S~T parameter of type
-    <<span class="odocwiki_inlinecode"|~Eliom~_parameter~.raw~_post~_data>>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="put_coservice"| value Eliom_service.App.put_coservice >> ~[<<a_api subproject="server" | module Eliom_service.App >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|put~_coservice ~~fallback ~~get~_params>> creates an     <<a_manual chapter="services" fragment="attached_coservices"|attached
-    coservice>> with the same path and ~G~E~T parameters than the
-    service <<span class="odocwiki_inlinecode"|fallback>> and taking a single ~P~O~S~T parameter of type
-    <<span class="odocwiki_inlinecode"|~Eliom~_parameter~.raw~_post~_data>>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="put_coservice"| value Eliom_service.Http.put_coservice >> ~[<<a_api subproject="server" | module Eliom_service.Http >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|put~_coservice ~~fallback ~~get~_params>> creates an     <<a_manual chapter="services" fragment="attached_coservices"|attached
-    coservice>> with the same path and ~G~E~T parameters than the
-    service <<span class="odocwiki_inlinecode"|fallback>> and taking a single ~P~O~S~T parameter of type
-    <<span class="odocwiki_inlinecode"|~Eliom~_parameter~.raw~_post~_data>>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="put_coservice'"| value Eliom_service.Unsafe.put_coservice' >> ~[<<a_api subproject="server" | module Eliom_service.Unsafe >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|put~_coservice~' ~~get~_params>> creates a <<a_manual
-    chapter="services" fragment="non-attached_coservices"|non-attached
-    coservice>> taking a single ~P~O~S~T parameter of type
-    <<span class="odocwiki_inlinecode"|~Eliom~_parameter~.raw~_post~_data>>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="put_coservice'"| value Eliom_service.Ocaml.put_coservice' >> ~[<<a_api subproject="server" | module Eliom_service.Ocaml >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|put~_coservice~' ~~get~_params>> creates a <<a_manual
-    chapter="services" fragment="non-attached_coservices"|non-attached
-    coservice>> taking a single ~P~O~S~T parameter of type
-    <<span class="odocwiki_inlinecode"|~Eliom~_parameter~.raw~_post~_data>>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="put_coservice'"| value Eliom_service.App.put_coservice' >> ~[<<a_api subproject="server" | module Eliom_service.App >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|put~_coservice~' ~~get~_params>> creates a <<a_manual
-    chapter="services" fragment="non-attached_coservices"|non-attached
-    coservice>> taking a single ~P~O~S~T parameter of type
-    <<span class="odocwiki_inlinecode"|~Eliom~_parameter~.raw~_post~_data>>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="put_coservice'"| value Eliom_service.Http.put_coservice' >> ~[<<a_api subproject="server" | module Eliom_service.Http >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|put~_coservice~' ~~get~_params>> creates a <<a_manual
-    chapter="services" fragment="non-attached_coservices"|non-attached
-    coservice>> taking a single ~P~O~S~T parameter of type
-    <<span class="odocwiki_inlinecode"|~Eliom~_parameter~.raw~_post~_data>>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="put_service"| value Eliom_service.Unsafe.put_service >> ~[<<a_api subproject="server" | module Eliom_service.Unsafe >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|put~_service ~~path ~~get~_params ~(~)>> creates a service
-    that answers the ~H~T~T~P ~P~U~T method~, and only takes
-    <<span class="odocwiki_inlinecode"|~Eliom~_parameter~.raw~_post~_data>> as ~P~O~S~T parameter~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="put_service"| value Eliom_service.Ocaml.put_service >> ~[<<a_api subproject="server" | module Eliom_service.Ocaml >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|put~_service ~~path ~~get~_params ~(~)>> creates a service
-    that answers the ~H~T~T~P ~P~U~T method~, and only takes
-    <<span class="odocwiki_inlinecode"|~Eliom~_parameter~.raw~_post~_data>> as ~P~O~S~T parameter~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="put_service"| value Eliom_service.App.put_service >> ~[<<a_api subproject="server" | module Eliom_service.App >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|put~_service ~~path ~~get~_params ~(~)>> creates a service
-    that answers the ~H~T~T~P ~P~U~T method~, and only takes
-    <<span class="odocwiki_inlinecode"|~Eliom~_parameter~.raw~_post~_data>> as ~P~O~S~T parameter~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="put_service"| value Eliom_service.Http.put_service >> ~[<<a_api subproject="server" | module Eliom_service.Http >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|put~_service ~~path ~~get~_params ~(~)>> creates a service
-    that answers the ~H~T~T~P ~P~U~T method~, and only takes
-    <<span class="odocwiki_inlinecode"|~Eliom~_parameter~.raw~_post~_data>> as ~P~O~S~T parameter~.
 >>
 |
 |@@ @style="tet-align: left;"@@\\R|
@@ -1309,18 +1051,6 @@ foobar:value}}}
     <<span class="odocwiki_inlinecode"|service>> to the function <<span class="odocwiki_inlinecode"|handler>>~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register"| value Eliom_registration.Registration.register >> ~[<<a_api subproject="server" | module Eliom_registration.Registration >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|register service handler>> will associate the
-    <<span class="odocwiki_inlinecode"|service>> to the function <<span class="odocwiki_inlinecode"|handler>>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register"| value Eliom_registration.Streamlist.register >> ~[<<a_api subproject="server" | module Eliom_registration.Streamlist >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|register service handler>> will associate the
-    <<span class="odocwiki_inlinecode"|service>> to the function <<span class="odocwiki_inlinecode"|handler>>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register"| value Eliom_registration.String.register >> ~[<<a_api subproject="server" | module Eliom_registration.String >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|register service handler>> will associate the
-    <<span class="odocwiki_inlinecode"|service>> to the function <<span class="odocwiki_inlinecode"|handler>>~.
->>
-|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register"| value Eliom_registration.Any.register >> ~[<<a_api subproject="server" | module Eliom_registration.Any >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|register service handler>> will associate the
     <<span class="odocwiki_inlinecode"|service>> to the function <<span class="odocwiki_inlinecode"|handler>>~.
 >>
@@ -1329,59 +1059,7 @@ foobar:value}}}
     <<span class="odocwiki_inlinecode"|service>> to the function <<span class="odocwiki_inlinecode"|handler>>~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register"| value Eliom_registration.File_ct.register >> ~[<<a_api subproject="server" | module Eliom_registration.File_ct >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|register service handler>> will associate the
-    <<span class="odocwiki_inlinecode"|service>> to the function <<span class="odocwiki_inlinecode"|handler>>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register"| value Eliom_registration.File.register >> ~[<<a_api subproject="server" | module Eliom_registration.File >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|register service handler>> will associate the
-    <<span class="odocwiki_inlinecode"|service>> to the function <<span class="odocwiki_inlinecode"|handler>>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register"| value Eliom_registration.String_redirection.register >> ~[<<a_api subproject="server" | module Eliom_registration.String_redirection >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|register service handler>> will associate the
-    <<span class="odocwiki_inlinecode"|service>> to the function <<span class="odocwiki_inlinecode"|handler>>~.
->>
-|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register"| value Eliom_registration.Redirection.register >> ~[<<a_api subproject="server" | module Eliom_registration.Redirection >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|register service handler>> will associate the
-    <<span class="odocwiki_inlinecode"|service>> to the function <<span class="odocwiki_inlinecode"|handler>>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register"| value Eliom_registration.Unit.register >> ~[<<a_api subproject="server" | module Eliom_registration.Unit >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|register service handler>> will associate the
-    <<span class="odocwiki_inlinecode"|service>> to the function <<span class="odocwiki_inlinecode"|handler>>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register"| value Eliom_registration.Action.register >> ~[<<a_api subproject="server" | module Eliom_registration.Action >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|register service handler>> will associate the
-    <<span class="odocwiki_inlinecode"|service>> to the function <<span class="odocwiki_inlinecode"|handler>>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register"| value Eliom_registration.CssText.register >> ~[<<a_api subproject="server" | module Eliom_registration.CssText >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|register service handler>> will associate the
-    <<span class="odocwiki_inlinecode"|service>> to the function <<span class="odocwiki_inlinecode"|handler>>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register"| value Eliom_registration.Html_text.register >> ~[<<a_api subproject="server" | module Eliom_registration.Html_text >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|register service handler>> will associate the
-    <<span class="odocwiki_inlinecode"|service>> to the function <<span class="odocwiki_inlinecode"|handler>>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register"| value Eliom_registration.Make_typed_xml_registration.register >> ~[<<a_api subproject="server" | module Eliom_registration.Make_typed_xml_registration >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|register service handler>> will associate the
-    <<span class="odocwiki_inlinecode"|service>> to the function <<span class="odocwiki_inlinecode"|handler>>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register"| value Eliom_registration.Flow5.register >> ~[<<a_api subproject="server" | module Eliom_registration.Flow5 >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|register service handler>> will associate the
-    <<span class="odocwiki_inlinecode"|service>> to the function <<span class="odocwiki_inlinecode"|handler>>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register"| value Eliom_registration.Eliom_tmpl.register >> ~[<<a_api subproject="server" | module Eliom_registration.Eliom_tmpl >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|register service handler>> will associate the
-    <<span class="odocwiki_inlinecode"|service>> to the function <<span class="odocwiki_inlinecode"|handler>>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register"| value Eliom_registration.ELIOM_APPL.register >> ~[<<a_api subproject="server" | module Eliom_registration.ELIOM_APPL >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|register service handler>> will associate the
-    <<span class="odocwiki_inlinecode"|service>> to the function <<span class="odocwiki_inlinecode"|handler>>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register"| value Eliom_registration.Html5.register >> ~[<<a_api subproject="server" | module Eliom_registration.Html5 >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|register service handler>> will associate the
-    <<span class="odocwiki_inlinecode"|service>> to the function <<span class="odocwiki_inlinecode"|handler>>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register"| value Eliom_registration.Html5_registration.register >> ~[<<a_api subproject="server" | module Eliom_registration.Html5_registration >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|register service handler>> will associate the
     <<span class="odocwiki_inlinecode"|service>> to the function <<span class="odocwiki_inlinecode"|handler>>~.
 >>
 |
@@ -1389,338 +1067,8 @@ foobar:value}}}
     <<span class="odocwiki_inlinecode"|service>> to the function <<span class="odocwiki_inlinecode"|handler>>~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register"| value Eliom_mkreg.MakeRegister.register >> ~[<<a_api subproject="server" | module Eliom_mkreg.MakeRegister >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|register service handler>> will associate the
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register"| value Eliom_reg_sigs.S.register >> ~[<<a_api subproject="server" | module Eliom_reg_sigs.S >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|register service handler>> will associate the
     <<span class="odocwiki_inlinecode"|service>> to the function <<span class="odocwiki_inlinecode"|handler>>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_coservice"| value Eliom_atom.Reg.register_coservice >> ~[<<a_api subproject="server" | module Eliom_atom.Reg >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.coservice >> followed by <<a_api subproject="server" | val Eliom_atom.Reg.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_coservice"| value Eliom_registration.Registration.register_coservice >> ~[<<a_api subproject="server" | module Eliom_registration.Registration >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.coservice >> followed by <<a_api subproject="server" | val Eliom_registration.Registration.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_coservice"| value Eliom_registration.Streamlist.register_coservice >> ~[<<a_api subproject="server" | module Eliom_registration.Streamlist >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.coservice >> followed by <<a_api subproject="server" | val Eliom_registration.Streamlist.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_coservice"| value Eliom_registration.String.register_coservice >> ~[<<a_api subproject="server" | module Eliom_registration.String >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.coservice >> followed by <<a_api subproject="server" | val Eliom_registration.String.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_coservice"| value Eliom_registration.Any.register_coservice >> ~[<<a_api subproject="server" | module Eliom_registration.Any >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.coservice >> followed by <<a_api subproject="server" | val Eliom_registration.Any.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_coservice"| value Eliom_registration.Ocaml.register_coservice >> ~[<<a_api subproject="server" | module Eliom_registration.Ocaml >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.coservice >> followed by <<a_api subproject="server" | val Eliom_registration.Ocaml.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_coservice"| value Eliom_registration.File_ct.register_coservice >> ~[<<a_api subproject="server" | module Eliom_registration.File_ct >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.coservice >> followed by <<a_api subproject="server" | val Eliom_registration.File_ct.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_coservice"| value Eliom_registration.File.register_coservice >> ~[<<a_api subproject="server" | module Eliom_registration.File >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.coservice >> followed by <<a_api subproject="server" | val Eliom_registration.File.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_coservice"| value Eliom_registration.String_redirection.register_coservice >> ~[<<a_api subproject="server" | module Eliom_registration.String_redirection >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.coservice >> followed by <<a_api subproject="server" | val Eliom_registration.String_redirection.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_coservice"| value Eliom_registration.Redirection.register_coservice >> ~[<<a_api subproject="server" | module Eliom_registration.Redirection >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.coservice >> followed by <<a_api subproject="server" | val Eliom_registration.Redirection.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_coservice"| value Eliom_registration.Unit.register_coservice >> ~[<<a_api subproject="server" | module Eliom_registration.Unit >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.coservice >> followed by <<a_api subproject="server" | val Eliom_registration.Unit.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_coservice"| value Eliom_registration.Action.register_coservice >> ~[<<a_api subproject="server" | module Eliom_registration.Action >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.coservice >> followed by <<a_api subproject="server" | val Eliom_registration.Action.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_coservice"| value Eliom_registration.CssText.register_coservice >> ~[<<a_api subproject="server" | module Eliom_registration.CssText >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.coservice >> followed by <<a_api subproject="server" | val Eliom_registration.CssText.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_coservice"| value Eliom_registration.Html_text.register_coservice >> ~[<<a_api subproject="server" | module Eliom_registration.Html_text >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.coservice >> followed by <<a_api subproject="server" | val Eliom_registration.Html_text.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_coservice"| value Eliom_registration.Make_typed_xml_registration.register_coservice >> ~[<<a_api subproject="server" | module Eliom_registration.Make_typed_xml_registration >>~]|<<div class="odocwiki_info"|~Same as <<span class="odocwiki_inlinecode"|~Eliom~_service~.~Http~.coservice>> followed by <<span class="odocwiki_inlinecode"|register>>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_coservice"| value Eliom_registration.Flow5.register_coservice >> ~[<<a_api subproject="server" | module Eliom_registration.Flow5 >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.coservice >> followed by <<a_api subproject="server" | val Eliom_registration.Flow5.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_coservice"| value Eliom_registration.Eliom_tmpl.register_coservice >> ~[<<a_api subproject="server" | module Eliom_registration.Eliom_tmpl >>~]|<<div class="odocwiki_info"|~Same as <<span class="odocwiki_inlinecode"|~Eliom~_service~.~Http~.coservice>> followed by <<span class="odocwiki_inlinecode"|register>>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_coservice"| value Eliom_registration.ELIOM_APPL.register_coservice >> ~[<<a_api subproject="server" | module Eliom_registration.ELIOM_APPL >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.coservice >> followed by <<a_api subproject="server" | val Eliom_registration.ELIOM_APPL.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_coservice"| value Eliom_registration.Html5.register_coservice >> ~[<<a_api subproject="server" | module Eliom_registration.Html5 >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.coservice >> followed by <<a_api subproject="server" | val Eliom_registration.Html5.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_coservice"| value Eliom_registration.Html5_registration.register_coservice >> ~[<<a_api subproject="server" | module Eliom_registration.Html5_registration >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.coservice >> followed by <<a_api subproject="server" | val Eliom_registration.Html5_registration.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_coservice"| value Eliom_mkreg.MakeRegister_AlphaReturn.register_coservice >> ~[<<a_api subproject="server" | module Eliom_mkreg.MakeRegister_AlphaReturn >>~]|<<div class="odocwiki_info"|~Same as <<span class="odocwiki_inlinecode"|~Eliom~_service~.~Http~.coservice>> followed by <<span class="odocwiki_inlinecode"|register>>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_coservice"| value Eliom_mkreg.MakeRegister.register_coservice >> ~[<<a_api subproject="server" | module Eliom_mkreg.MakeRegister >>~]|<<div class="odocwiki_info"|~Same as <<span class="odocwiki_inlinecode"|~Eliom~_service~.~Http~.coservice>> followed by <<span class="odocwiki_inlinecode"|register>>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_coservice'"| value Eliom_atom.Reg.register_coservice' >> ~[<<a_api subproject="server" | module Eliom_atom.Reg >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.coservice' >> followed by <<a_api subproject="server" | val Eliom_atom.Reg.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_coservice'"| value Eliom_registration.Registration.register_coservice' >> ~[<<a_api subproject="server" | module Eliom_registration.Registration >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.coservice' >> followed by <<a_api subproject="server" | val Eliom_registration.Registration.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_coservice'"| value Eliom_registration.Streamlist.register_coservice' >> ~[<<a_api subproject="server" | module Eliom_registration.Streamlist >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.coservice' >> followed by <<a_api subproject="server" | val Eliom_registration.Streamlist.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_coservice'"| value Eliom_registration.String.register_coservice' >> ~[<<a_api subproject="server" | module Eliom_registration.String >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.coservice' >> followed by <<a_api subproject="server" | val Eliom_registration.String.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_coservice'"| value Eliom_registration.Any.register_coservice' >> ~[<<a_api subproject="server" | module Eliom_registration.Any >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.coservice' >> followed by <<a_api subproject="server" | val Eliom_registration.Any.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_coservice'"| value Eliom_registration.Ocaml.register_coservice' >> ~[<<a_api subproject="server" | module Eliom_registration.Ocaml >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.coservice' >> followed by <<a_api subproject="server" | val Eliom_registration.Ocaml.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_coservice'"| value Eliom_registration.File_ct.register_coservice' >> ~[<<a_api subproject="server" | module Eliom_registration.File_ct >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.coservice' >> followed by <<a_api subproject="server" | val Eliom_registration.File_ct.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_coservice'"| value Eliom_registration.File.register_coservice' >> ~[<<a_api subproject="server" | module Eliom_registration.File >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.coservice' >> followed by <<a_api subproject="server" | val Eliom_registration.File.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_coservice'"| value Eliom_registration.String_redirection.register_coservice' >> ~[<<a_api subproject="server" | module Eliom_registration.String_redirection >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.coservice' >> followed by <<a_api subproject="server" | val Eliom_registration.String_redirection.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_coservice'"| value Eliom_registration.Redirection.register_coservice' >> ~[<<a_api subproject="server" | module Eliom_registration.Redirection >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.coservice' >> followed by <<a_api subproject="server" | val Eliom_registration.Redirection.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_coservice'"| value Eliom_registration.Unit.register_coservice' >> ~[<<a_api subproject="server" | module Eliom_registration.Unit >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.coservice' >> followed by <<a_api subproject="server" | val Eliom_registration.Unit.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_coservice'"| value Eliom_registration.Action.register_coservice' >> ~[<<a_api subproject="server" | module Eliom_registration.Action >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.coservice' >> followed by <<a_api subproject="server" | val Eliom_registration.Action.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_coservice'"| value Eliom_registration.CssText.register_coservice' >> ~[<<a_api subproject="server" | module Eliom_registration.CssText >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.coservice' >> followed by <<a_api subproject="server" | val Eliom_registration.CssText.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_coservice'"| value Eliom_registration.Html_text.register_coservice' >> ~[<<a_api subproject="server" | module Eliom_registration.Html_text >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.coservice' >> followed by <<a_api subproject="server" | val Eliom_registration.Html_text.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_coservice'"| value Eliom_registration.Make_typed_xml_registration.register_coservice' >> ~[<<a_api subproject="server" | module Eliom_registration.Make_typed_xml_registration >>~]|<<div class="odocwiki_info"|~Same as <<span class="odocwiki_inlinecode"|~Eliom~_service~.~Http~.coservice~'>> followed by <<span class="odocwiki_inlinecode"|register>>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_coservice'"| value Eliom_registration.Flow5.register_coservice' >> ~[<<a_api subproject="server" | module Eliom_registration.Flow5 >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.coservice' >> followed by <<a_api subproject="server" | val Eliom_registration.Flow5.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_coservice'"| value Eliom_registration.Eliom_tmpl.register_coservice' >> ~[<<a_api subproject="server" | module Eliom_registration.Eliom_tmpl >>~]|<<div class="odocwiki_info"|~Same as <<span class="odocwiki_inlinecode"|~Eliom~_service~.~Http~.coservice~'>> followed by <<span class="odocwiki_inlinecode"|register>>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_coservice'"| value Eliom_registration.ELIOM_APPL.register_coservice' >> ~[<<a_api subproject="server" | module Eliom_registration.ELIOM_APPL >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.coservice' >> followed by <<a_api subproject="server" | val Eliom_registration.ELIOM_APPL.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_coservice'"| value Eliom_registration.Html5.register_coservice' >> ~[<<a_api subproject="server" | module Eliom_registration.Html5 >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.coservice' >> followed by <<a_api subproject="server" | val Eliom_registration.Html5.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_coservice'"| value Eliom_registration.Html5_registration.register_coservice' >> ~[<<a_api subproject="server" | module Eliom_registration.Html5_registration >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.coservice' >> followed by <<a_api subproject="server" | val Eliom_registration.Html5_registration.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_coservice'"| value Eliom_mkreg.MakeRegister_AlphaReturn.register_coservice' >> ~[<<a_api subproject="server" | module Eliom_mkreg.MakeRegister_AlphaReturn >>~]|<<div class="odocwiki_info"|~Same as <<span class="odocwiki_inlinecode"|~Eliom~_service~.~Http~.coservice~'>> followed by <<span class="odocwiki_inlinecode"|register>>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_coservice'"| value Eliom_mkreg.MakeRegister.register_coservice' >> ~[<<a_api subproject="server" | module Eliom_mkreg.MakeRegister >>~]|<<div class="odocwiki_info"|~Same as <<span class="odocwiki_inlinecode"|~Eliom~_service~.~Http~.coservice~'>> followed by <<span class="odocwiki_inlinecode"|register>>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_delete_coservice"| value Eliom_atom.Reg.register_delete_coservice >> ~[<<a_api subproject="server" | module Eliom_atom.Reg >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.delete_coservice >> followed by <<a_api subproject="server" | val Eliom_atom.Reg.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_delete_coservice"| value Eliom_registration.Registration.register_delete_coservice >> ~[<<a_api subproject="server" | module Eliom_registration.Registration >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.delete_coservice >> followed by <<a_api subproject="server" | val Eliom_registration.Registration.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_delete_coservice"| value Eliom_registration.Streamlist.register_delete_coservice >> ~[<<a_api subproject="server" | module Eliom_registration.Streamlist >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.delete_coservice >> followed by <<a_api subproject="server" | val Eliom_registration.Streamlist.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_delete_coservice"| value Eliom_registration.String.register_delete_coservice >> ~[<<a_api subproject="server" | module Eliom_registration.String >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.delete_coservice >> followed by <<a_api subproject="server" | val Eliom_registration.String.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_delete_coservice"| value Eliom_registration.Any.register_delete_coservice >> ~[<<a_api subproject="server" | module Eliom_registration.Any >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.delete_coservice >> followed by <<a_api subproject="server" | val Eliom_registration.Any.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_delete_coservice"| value Eliom_registration.Ocaml.register_delete_coservice >> ~[<<a_api subproject="server" | module Eliom_registration.Ocaml >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.delete_coservice >> followed by <<a_api subproject="server" | val Eliom_registration.Ocaml.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_delete_coservice"| value Eliom_registration.File_ct.register_delete_coservice >> ~[<<a_api subproject="server" | module Eliom_registration.File_ct >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.delete_coservice >> followed by <<a_api subproject="server" | val Eliom_registration.File_ct.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_delete_coservice"| value Eliom_registration.File.register_delete_coservice >> ~[<<a_api subproject="server" | module Eliom_registration.File >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.delete_coservice >> followed by <<a_api subproject="server" | val Eliom_registration.File.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_delete_coservice"| value Eliom_registration.String_redirection.register_delete_coservice >> ~[<<a_api subproject="server" | module Eliom_registration.String_redirection >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.delete_coservice >> followed by <<a_api subproject="server" | val Eliom_registration.String_redirection.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_delete_coservice"| value Eliom_registration.Redirection.register_delete_coservice >> ~[<<a_api subproject="server" | module Eliom_registration.Redirection >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.delete_coservice >> followed by <<a_api subproject="server" | val Eliom_registration.Redirection.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_delete_coservice"| value Eliom_registration.Unit.register_delete_coservice >> ~[<<a_api subproject="server" | module Eliom_registration.Unit >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.delete_coservice >> followed by <<a_api subproject="server" | val Eliom_registration.Unit.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_delete_coservice"| value Eliom_registration.Action.register_delete_coservice >> ~[<<a_api subproject="server" | module Eliom_registration.Action >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.delete_coservice >> followed by <<a_api subproject="server" | val Eliom_registration.Action.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_delete_coservice"| value Eliom_registration.CssText.register_delete_coservice >> ~[<<a_api subproject="server" | module Eliom_registration.CssText >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.delete_coservice >> followed by <<a_api subproject="server" | val Eliom_registration.CssText.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_delete_coservice"| value Eliom_registration.Html_text.register_delete_coservice >> ~[<<a_api subproject="server" | module Eliom_registration.Html_text >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.delete_coservice >> followed by <<a_api subproject="server" | val Eliom_registration.Html_text.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_delete_coservice"| value Eliom_registration.Make_typed_xml_registration.register_delete_coservice >> ~[<<a_api subproject="server" | module Eliom_registration.Make_typed_xml_registration >>~]|<<div class="odocwiki_info"|~Same as <<span class="odocwiki_inlinecode"|~Eliom~_service~.~Http~.delete~_coservice>> followed by <<span class="odocwiki_inlinecode"|register>>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_delete_coservice"| value Eliom_registration.Flow5.register_delete_coservice >> ~[<<a_api subproject="server" | module Eliom_registration.Flow5 >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.delete_coservice >> followed by <<a_api subproject="server" | val Eliom_registration.Flow5.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_delete_coservice"| value Eliom_registration.Eliom_tmpl.register_delete_coservice >> ~[<<a_api subproject="server" | module Eliom_registration.Eliom_tmpl >>~]|<<div class="odocwiki_info"|~Same as <<span class="odocwiki_inlinecode"|~Eliom~_service~.~Http~.delete~_coservice>> followed by <<span class="odocwiki_inlinecode"|register>>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_delete_coservice"| value Eliom_registration.ELIOM_APPL.register_delete_coservice >> ~[<<a_api subproject="server" | module Eliom_registration.ELIOM_APPL >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.delete_coservice >> followed by <<a_api subproject="server" | val Eliom_registration.ELIOM_APPL.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_delete_coservice"| value Eliom_registration.Html5.register_delete_coservice >> ~[<<a_api subproject="server" | module Eliom_registration.Html5 >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.delete_coservice >> followed by <<a_api subproject="server" | val Eliom_registration.Html5.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_delete_coservice"| value Eliom_registration.Html5_registration.register_delete_coservice >> ~[<<a_api subproject="server" | module Eliom_registration.Html5_registration >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.delete_coservice >> followed by <<a_api subproject="server" | val Eliom_registration.Html5_registration.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_delete_coservice"| value Eliom_mkreg.MakeRegister_AlphaReturn.register_delete_coservice >> ~[<<a_api subproject="server" | module Eliom_mkreg.MakeRegister_AlphaReturn >>~]|<<div class="odocwiki_info"|~Same as <<span class="odocwiki_inlinecode"|~Eliom~_service~.~Http~.delete~_coservice>> followed by <<span class="odocwiki_inlinecode"|register>>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_delete_coservice"| value Eliom_mkreg.MakeRegister.register_delete_coservice >> ~[<<a_api subproject="server" | module Eliom_mkreg.MakeRegister >>~]|<<div class="odocwiki_info"|~Same as <<span class="odocwiki_inlinecode"|~Eliom~_service~.~Http~.delete~_coservice>> followed by <<span class="odocwiki_inlinecode"|register>>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_delete_coservice'"| value Eliom_atom.Reg.register_delete_coservice' >> ~[<<a_api subproject="server" | module Eliom_atom.Reg >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.delete_coservice' >> followed by <<a_api subproject="server" | val Eliom_atom.Reg.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_delete_coservice'"| value Eliom_registration.Registration.register_delete_coservice' >> ~[<<a_api subproject="server" | module Eliom_registration.Registration >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.delete_coservice' >> followed by <<a_api subproject="server" | val Eliom_registration.Registration.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_delete_coservice'"| value Eliom_registration.Streamlist.register_delete_coservice' >> ~[<<a_api subproject="server" | module Eliom_registration.Streamlist >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.delete_coservice' >> followed by <<a_api subproject="server" | val Eliom_registration.Streamlist.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_delete_coservice'"| value Eliom_registration.String.register_delete_coservice' >> ~[<<a_api subproject="server" | module Eliom_registration.String >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.delete_coservice' >> followed by <<a_api subproject="server" | val Eliom_registration.String.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_delete_coservice'"| value Eliom_registration.Any.register_delete_coservice' >> ~[<<a_api subproject="server" | module Eliom_registration.Any >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.delete_coservice' >> followed by <<a_api subproject="server" | val Eliom_registration.Any.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_delete_coservice'"| value Eliom_registration.Ocaml.register_delete_coservice' >> ~[<<a_api subproject="server" | module Eliom_registration.Ocaml >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.delete_coservice' >> followed by <<a_api subproject="server" | val Eliom_registration.Ocaml.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_delete_coservice'"| value Eliom_registration.File_ct.register_delete_coservice' >> ~[<<a_api subproject="server" | module Eliom_registration.File_ct >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.delete_coservice' >> followed by <<a_api subproject="server" | val Eliom_registration.File_ct.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_delete_coservice'"| value Eliom_registration.File.register_delete_coservice' >> ~[<<a_api subproject="server" | module Eliom_registration.File >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.delete_coservice' >> followed by <<a_api subproject="server" | val Eliom_registration.File.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_delete_coservice'"| value Eliom_registration.String_redirection.register_delete_coservice' >> ~[<<a_api subproject="server" | module Eliom_registration.String_redirection >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.delete_coservice' >> followed by <<a_api subproject="server" | val Eliom_registration.String_redirection.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_delete_coservice'"| value Eliom_registration.Redirection.register_delete_coservice' >> ~[<<a_api subproject="server" | module Eliom_registration.Redirection >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.delete_coservice' >> followed by <<a_api subproject="server" | val Eliom_registration.Redirection.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_delete_coservice'"| value Eliom_registration.Unit.register_delete_coservice' >> ~[<<a_api subproject="server" | module Eliom_registration.Unit >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.delete_coservice' >> followed by <<a_api subproject="server" | val Eliom_registration.Unit.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_delete_coservice'"| value Eliom_registration.Action.register_delete_coservice' >> ~[<<a_api subproject="server" | module Eliom_registration.Action >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.delete_coservice' >> followed by <<a_api subproject="server" | val Eliom_registration.Action.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_delete_coservice'"| value Eliom_registration.CssText.register_delete_coservice' >> ~[<<a_api subproject="server" | module Eliom_registration.CssText >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.delete_coservice' >> followed by <<a_api subproject="server" | val Eliom_registration.CssText.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_delete_coservice'"| value Eliom_registration.Html_text.register_delete_coservice' >> ~[<<a_api subproject="server" | module Eliom_registration.Html_text >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.delete_coservice' >> followed by <<a_api subproject="server" | val Eliom_registration.Html_text.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_delete_coservice'"| value Eliom_registration.Make_typed_xml_registration.register_delete_coservice' >> ~[<<a_api subproject="server" | module Eliom_registration.Make_typed_xml_registration >>~]|<<div class="odocwiki_info"|~Same as <<span class="odocwiki_inlinecode"|~Eliom~_service~.~Http~.delete~_coservice~'>> followed by <<span class="odocwiki_inlinecode"|register>>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_delete_coservice'"| value Eliom_registration.Flow5.register_delete_coservice' >> ~[<<a_api subproject="server" | module Eliom_registration.Flow5 >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.delete_coservice' >> followed by <<a_api subproject="server" | val Eliom_registration.Flow5.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_delete_coservice'"| value Eliom_registration.Eliom_tmpl.register_delete_coservice' >> ~[<<a_api subproject="server" | module Eliom_registration.Eliom_tmpl >>~]|<<div class="odocwiki_info"|~Same as <<span class="odocwiki_inlinecode"|~Eliom~_service~.~Http~.delete~_coservice~'>> followed by <<span class="odocwiki_inlinecode"|register>>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_delete_coservice'"| value Eliom_registration.ELIOM_APPL.register_delete_coservice' >> ~[<<a_api subproject="server" | module Eliom_registration.ELIOM_APPL >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.delete_coservice' >> followed by <<a_api subproject="server" | val Eliom_registration.ELIOM_APPL.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_delete_coservice'"| value Eliom_registration.Html5.register_delete_coservice' >> ~[<<a_api subproject="server" | module Eliom_registration.Html5 >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.delete_coservice' >> followed by <<a_api subproject="server" | val Eliom_registration.Html5.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_delete_coservice'"| value Eliom_registration.Html5_registration.register_delete_coservice' >> ~[<<a_api subproject="server" | module Eliom_registration.Html5_registration >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.delete_coservice' >> followed by <<a_api subproject="server" | val Eliom_registration.Html5_registration.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_delete_coservice'"| value Eliom_mkreg.MakeRegister_AlphaReturn.register_delete_coservice' >> ~[<<a_api subproject="server" | module Eliom_mkreg.MakeRegister_AlphaReturn >>~]|<<div class="odocwiki_info"|~Same as <<span class="odocwiki_inlinecode"|~Eliom~_service~.~Http~.delete~_coservice~'>> followed by <<span class="odocwiki_inlinecode"|register>>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_delete_coservice'"| value Eliom_mkreg.MakeRegister.register_delete_coservice' >> ~[<<a_api subproject="server" | module Eliom_mkreg.MakeRegister >>~]|<<div class="odocwiki_info"|~Same as <<span class="odocwiki_inlinecode"|~Eliom~_service~.~Http~.delete~_coservice~'>> followed by <<span class="odocwiki_inlinecode"|register>>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_delete_service"| value Eliom_atom.Reg.register_delete_service >> ~[<<a_api subproject="server" | module Eliom_atom.Reg >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.delete_service >> followed by <<a_api subproject="server" | val Eliom_atom.Reg.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_delete_service"| value Eliom_registration.Registration.register_delete_service >> ~[<<a_api subproject="server" | module Eliom_registration.Registration >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.delete_service >> followed by <<a_api subproject="server" | val Eliom_registration.Registration.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_delete_service"| value Eliom_registration.Streamlist.register_delete_service >> ~[<<a_api subproject="server" | module Eliom_registration.Streamlist >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.delete_service >> followed by <<a_api subproject="server" | val Eliom_registration.Streamlist.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_delete_service"| value Eliom_registration.String.register_delete_service >> ~[<<a_api subproject="server" | module Eliom_registration.String >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.delete_service >> followed by <<a_api subproject="server" | val Eliom_registration.String.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_delete_service"| value Eliom_registration.Any.register_delete_service >> ~[<<a_api subproject="server" | module Eliom_registration.Any >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.delete_service >> followed by <<a_api subproject="server" | val Eliom_registration.Any.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_delete_service"| value Eliom_registration.Ocaml.register_delete_service >> ~[<<a_api subproject="server" | module Eliom_registration.Ocaml >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.delete_service >> followed by <<a_api subproject="server" | val Eliom_registration.Ocaml.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_delete_service"| value Eliom_registration.File_ct.register_delete_service >> ~[<<a_api subproject="server" | module Eliom_registration.File_ct >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.delete_service >> followed by <<a_api subproject="server" | val Eliom_registration.File_ct.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_delete_service"| value Eliom_registration.File.register_delete_service >> ~[<<a_api subproject="server" | module Eliom_registration.File >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.delete_service >> followed by <<a_api subproject="server" | val Eliom_registration.File.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_delete_service"| value Eliom_registration.String_redirection.register_delete_service >> ~[<<a_api subproject="server" | module Eliom_registration.String_redirection >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.delete_service >> followed by <<a_api subproject="server" | val Eliom_registration.String_redirection.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_delete_service"| value Eliom_registration.Redirection.register_delete_service >> ~[<<a_api subproject="server" | module Eliom_registration.Redirection >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.delete_service >> followed by <<a_api subproject="server" | val Eliom_registration.Redirection.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_delete_service"| value Eliom_registration.Unit.register_delete_service >> ~[<<a_api subproject="server" | module Eliom_registration.Unit >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.delete_service >> followed by <<a_api subproject="server" | val Eliom_registration.Unit.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_delete_service"| value Eliom_registration.Action.register_delete_service >> ~[<<a_api subproject="server" | module Eliom_registration.Action >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.delete_service >> followed by <<a_api subproject="server" | val Eliom_registration.Action.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_delete_service"| value Eliom_registration.CssText.register_delete_service >> ~[<<a_api subproject="server" | module Eliom_registration.CssText >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.delete_service >> followed by <<a_api subproject="server" | val Eliom_registration.CssText.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_delete_service"| value Eliom_registration.Html_text.register_delete_service >> ~[<<a_api subproject="server" | module Eliom_registration.Html_text >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.delete_service >> followed by <<a_api subproject="server" | val Eliom_registration.Html_text.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_delete_service"| value Eliom_registration.Make_typed_xml_registration.register_delete_service >> ~[<<a_api subproject="server" | module Eliom_registration.Make_typed_xml_registration >>~]|<<div class="odocwiki_info"|~Same as <<span class="odocwiki_inlinecode"|~Eliom~_service~.~Http~.delete~_service>> followed by <<span class="odocwiki_inlinecode"|register>>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_delete_service"| value Eliom_registration.Flow5.register_delete_service >> ~[<<a_api subproject="server" | module Eliom_registration.Flow5 >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.delete_service >> followed by <<a_api subproject="server" | val Eliom_registration.Flow5.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_delete_service"| value Eliom_registration.Eliom_tmpl.register_delete_service >> ~[<<a_api subproject="server" | module Eliom_registration.Eliom_tmpl >>~]|<<div class="odocwiki_info"|~Same as <<span class="odocwiki_inlinecode"|~Eliom~_service~.~Http~.delete~_service>> followed by <<span class="odocwiki_inlinecode"|register>>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_delete_service"| value Eliom_registration.ELIOM_APPL.register_delete_service >> ~[<<a_api subproject="server" | module Eliom_registration.ELIOM_APPL >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.delete_service >> followed by <<a_api subproject="server" | val Eliom_registration.ELIOM_APPL.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_delete_service"| value Eliom_registration.Html5.register_delete_service >> ~[<<a_api subproject="server" | module Eliom_registration.Html5 >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.delete_service >> followed by <<a_api subproject="server" | val Eliom_registration.Html5.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_delete_service"| value Eliom_registration.Html5_registration.register_delete_service >> ~[<<a_api subproject="server" | module Eliom_registration.Html5_registration >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.delete_service >> followed by <<a_api subproject="server" | val Eliom_registration.Html5_registration.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_delete_service"| value Eliom_mkreg.MakeRegister_AlphaReturn.register_delete_service >> ~[<<a_api subproject="server" | module Eliom_mkreg.MakeRegister_AlphaReturn >>~]|<<div class="odocwiki_info"|~Same as <<span class="odocwiki_inlinecode"|~Eliom~_service~.~Http~.delete~_service>> followed by <<span class="odocwiki_inlinecode"|register>>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_delete_service"| value Eliom_mkreg.MakeRegister.register_delete_service >> ~[<<a_api subproject="server" | module Eliom_mkreg.MakeRegister >>~]|<<div class="odocwiki_info"|~Same as <<span class="odocwiki_inlinecode"|~Eliom~_service~.~Http~.delete~_service>> followed by <<span class="odocwiki_inlinecode"|register>>~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_eliom_extension"| value Eliom_extension.register_eliom_extension >> ~[<<a_api subproject="server" | module Eliom_extension >>~]||
@@ -1733,466 +1081,19 @@ foobar:value}}}
  communicate with the hub
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_post_coservice"| value Eliom_atom.Reg.register_post_coservice >> ~[<<a_api subproject="server" | module Eliom_atom.Reg >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.post_coservice >> followed by <<a_api subproject="server" | val Eliom_atom.Reg.register >>~.
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="reload_action"| value Eliom_service_sigs.S.reload_action >> ~[<<a_api subproject="server" | module Eliom_service_sigs.S >>~]|<<div class="odocwiki_info"|~The service <<span class="odocwiki_inlinecode"|reload~_action>> is a predefined non~-attached action
+      with special behaviour~: it has no parameter at all~, even
+      non~-attached parameters~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_post_coservice"| value Eliom_registration.Registration.register_post_coservice >> ~[<<a_api subproject="server" | module Eliom_registration.Registration >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.post_coservice >> followed by <<a_api subproject="server" | val Eliom_registration.Registration.register >>~.
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="reload_action_hidden"| value Eliom_service_sigs.S.reload_action_hidden >> ~[<<a_api subproject="server" | module Eliom_service_sigs.S >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service_sigs.S.reload_action >> but keeps non~-attached ~G~E~T
+      parameters~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_post_coservice"| value Eliom_registration.Streamlist.register_post_coservice >> ~[<<a_api subproject="server" | module Eliom_registration.Streamlist >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.post_coservice >> followed by <<a_api subproject="server" | val Eliom_registration.Streamlist.register >>~.
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="reload_action_https"| value Eliom_service_sigs.S.reload_action_https >> ~[<<a_api subproject="server" | module Eliom_service_sigs.S >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service_sigs.S.reload_action >> but forcing ~H~T~T~P~S~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_post_coservice"| value Eliom_registration.String.register_post_coservice >> ~[<<a_api subproject="server" | module Eliom_registration.String >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.post_coservice >> followed by <<a_api subproject="server" | val Eliom_registration.String.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_post_coservice"| value Eliom_registration.Any.register_post_coservice >> ~[<<a_api subproject="server" | module Eliom_registration.Any >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.post_coservice >> followed by <<a_api subproject="server" | val Eliom_registration.Any.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_post_coservice"| value Eliom_registration.Ocaml.register_post_coservice >> ~[<<a_api subproject="server" | module Eliom_registration.Ocaml >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.post_coservice >> followed by <<a_api subproject="server" | val Eliom_registration.Ocaml.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_post_coservice"| value Eliom_registration.File_ct.register_post_coservice >> ~[<<a_api subproject="server" | module Eliom_registration.File_ct >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.post_coservice >> followed by <<a_api subproject="server" | val Eliom_registration.File_ct.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_post_coservice"| value Eliom_registration.File.register_post_coservice >> ~[<<a_api subproject="server" | module Eliom_registration.File >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.post_coservice >> followed by <<a_api subproject="server" | val Eliom_registration.File.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_post_coservice"| value Eliom_registration.String_redirection.register_post_coservice >> ~[<<a_api subproject="server" | module Eliom_registration.String_redirection >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.post_coservice >> followed by <<a_api subproject="server" | val Eliom_registration.String_redirection.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_post_coservice"| value Eliom_registration.Redirection.register_post_coservice >> ~[<<a_api subproject="server" | module Eliom_registration.Redirection >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.post_coservice >> followed by <<a_api subproject="server" | val Eliom_registration.Redirection.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_post_coservice"| value Eliom_registration.Unit.register_post_coservice >> ~[<<a_api subproject="server" | module Eliom_registration.Unit >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.post_coservice >> followed by <<a_api subproject="server" | val Eliom_registration.Unit.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_post_coservice"| value Eliom_registration.Action.register_post_coservice >> ~[<<a_api subproject="server" | module Eliom_registration.Action >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.post_coservice >> followed by <<a_api subproject="server" | val Eliom_registration.Action.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_post_coservice"| value Eliom_registration.CssText.register_post_coservice >> ~[<<a_api subproject="server" | module Eliom_registration.CssText >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.post_coservice >> followed by <<a_api subproject="server" | val Eliom_registration.CssText.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_post_coservice"| value Eliom_registration.Html_text.register_post_coservice >> ~[<<a_api subproject="server" | module Eliom_registration.Html_text >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.post_coservice >> followed by <<a_api subproject="server" | val Eliom_registration.Html_text.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_post_coservice"| value Eliom_registration.Make_typed_xml_registration.register_post_coservice >> ~[<<a_api subproject="server" | module Eliom_registration.Make_typed_xml_registration >>~]|<<div class="odocwiki_info"|~Same as <<span class="odocwiki_inlinecode"|~Eliom~_service~.~Http~.post~_coservice>> followed by <<span class="odocwiki_inlinecode"|register>>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_post_coservice"| value Eliom_registration.Flow5.register_post_coservice >> ~[<<a_api subproject="server" | module Eliom_registration.Flow5 >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.post_coservice >> followed by <<a_api subproject="server" | val Eliom_registration.Flow5.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_post_coservice"| value Eliom_registration.Eliom_tmpl.register_post_coservice >> ~[<<a_api subproject="server" | module Eliom_registration.Eliom_tmpl >>~]|<<div class="odocwiki_info"|~Same as <<span class="odocwiki_inlinecode"|~Eliom~_service~.~Http~.post~_coservice>> followed by <<span class="odocwiki_inlinecode"|register>>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_post_coservice"| value Eliom_registration.ELIOM_APPL.register_post_coservice >> ~[<<a_api subproject="server" | module Eliom_registration.ELIOM_APPL >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.post_coservice >> followed by <<a_api subproject="server" | val Eliom_registration.ELIOM_APPL.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_post_coservice"| value Eliom_registration.Html5.register_post_coservice >> ~[<<a_api subproject="server" | module Eliom_registration.Html5 >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.post_coservice >> followed by <<a_api subproject="server" | val Eliom_registration.Html5.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_post_coservice"| value Eliom_registration.Html5_registration.register_post_coservice >> ~[<<a_api subproject="server" | module Eliom_registration.Html5_registration >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.post_coservice >> followed by <<a_api subproject="server" | val Eliom_registration.Html5_registration.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_post_coservice"| value Eliom_mkreg.MakeRegister_AlphaReturn.register_post_coservice >> ~[<<a_api subproject="server" | module Eliom_mkreg.MakeRegister_AlphaReturn >>~]|<<div class="odocwiki_info"|~Same as <<span class="odocwiki_inlinecode"|~Eliom~_service~.~Http~.post~_coservice>> followed by <<span class="odocwiki_inlinecode"|register>>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_post_coservice"| value Eliom_mkreg.MakeRegister.register_post_coservice >> ~[<<a_api subproject="server" | module Eliom_mkreg.MakeRegister >>~]|<<div class="odocwiki_info"|~Same as <<span class="odocwiki_inlinecode"|~Eliom~_service~.~Http~.post~_coservice>> followed by <<span class="odocwiki_inlinecode"|register>>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_post_coservice'"| value Eliom_atom.Reg.register_post_coservice' >> ~[<<a_api subproject="server" | module Eliom_atom.Reg >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.post_coservice' >> followed by <<a_api subproject="server" | val Eliom_atom.Reg.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_post_coservice'"| value Eliom_registration.Registration.register_post_coservice' >> ~[<<a_api subproject="server" | module Eliom_registration.Registration >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.post_coservice' >> followed by <<a_api subproject="server" | val Eliom_registration.Registration.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_post_coservice'"| value Eliom_registration.Streamlist.register_post_coservice' >> ~[<<a_api subproject="server" | module Eliom_registration.Streamlist >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.post_coservice' >> followed by <<a_api subproject="server" | val Eliom_registration.Streamlist.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_post_coservice'"| value Eliom_registration.String.register_post_coservice' >> ~[<<a_api subproject="server" | module Eliom_registration.String >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.post_coservice' >> followed by <<a_api subproject="server" | val Eliom_registration.String.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_post_coservice'"| value Eliom_registration.Any.register_post_coservice' >> ~[<<a_api subproject="server" | module Eliom_registration.Any >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.post_coservice' >> followed by <<a_api subproject="server" | val Eliom_registration.Any.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_post_coservice'"| value Eliom_registration.Ocaml.register_post_coservice' >> ~[<<a_api subproject="server" | module Eliom_registration.Ocaml >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.post_coservice' >> followed by <<a_api subproject="server" | val Eliom_registration.Ocaml.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_post_coservice'"| value Eliom_registration.File_ct.register_post_coservice' >> ~[<<a_api subproject="server" | module Eliom_registration.File_ct >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.post_coservice' >> followed by <<a_api subproject="server" | val Eliom_registration.File_ct.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_post_coservice'"| value Eliom_registration.File.register_post_coservice' >> ~[<<a_api subproject="server" | module Eliom_registration.File >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.post_coservice' >> followed by <<a_api subproject="server" | val Eliom_registration.File.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_post_coservice'"| value Eliom_registration.String_redirection.register_post_coservice' >> ~[<<a_api subproject="server" | module Eliom_registration.String_redirection >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.post_coservice' >> followed by <<a_api subproject="server" | val Eliom_registration.String_redirection.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_post_coservice'"| value Eliom_registration.Redirection.register_post_coservice' >> ~[<<a_api subproject="server" | module Eliom_registration.Redirection >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.post_coservice' >> followed by <<a_api subproject="server" | val Eliom_registration.Redirection.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_post_coservice'"| value Eliom_registration.Unit.register_post_coservice' >> ~[<<a_api subproject="server" | module Eliom_registration.Unit >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.post_coservice' >> followed by <<a_api subproject="server" | val Eliom_registration.Unit.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_post_coservice'"| value Eliom_registration.Action.register_post_coservice' >> ~[<<a_api subproject="server" | module Eliom_registration.Action >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.post_coservice' >> followed by <<a_api subproject="server" | val Eliom_registration.Action.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_post_coservice'"| value Eliom_registration.CssText.register_post_coservice' >> ~[<<a_api subproject="server" | module Eliom_registration.CssText >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.post_coservice' >> followed by <<a_api subproject="server" | val Eliom_registration.CssText.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_post_coservice'"| value Eliom_registration.Html_text.register_post_coservice' >> ~[<<a_api subproject="server" | module Eliom_registration.Html_text >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.post_coservice' >> followed by <<a_api subproject="server" | val Eliom_registration.Html_text.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_post_coservice'"| value Eliom_registration.Make_typed_xml_registration.register_post_coservice' >> ~[<<a_api subproject="server" | module Eliom_registration.Make_typed_xml_registration >>~]|<<div class="odocwiki_info"|~Same as <<span class="odocwiki_inlinecode"|~Eliom~_service~.~Http~.post~_coservice~'>> followed by <<span class="odocwiki_inlinecode"|register>>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_post_coservice'"| value Eliom_registration.Flow5.register_post_coservice' >> ~[<<a_api subproject="server" | module Eliom_registration.Flow5 >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.post_coservice' >> followed by <<a_api subproject="server" | val Eliom_registration.Flow5.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_post_coservice'"| value Eliom_registration.Eliom_tmpl.register_post_coservice' >> ~[<<a_api subproject="server" | module Eliom_registration.Eliom_tmpl >>~]|<<div class="odocwiki_info"|~Same as <<span class="odocwiki_inlinecode"|~Eliom~_service~.~Http~.post~_coservice~'>> followed by <<span class="odocwiki_inlinecode"|register>>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_post_coservice'"| value Eliom_registration.ELIOM_APPL.register_post_coservice' >> ~[<<a_api subproject="server" | module Eliom_registration.ELIOM_APPL >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.post_coservice' >> followed by <<a_api subproject="server" | val Eliom_registration.ELIOM_APPL.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_post_coservice'"| value Eliom_registration.Html5.register_post_coservice' >> ~[<<a_api subproject="server" | module Eliom_registration.Html5 >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.post_coservice' >> followed by <<a_api subproject="server" | val Eliom_registration.Html5.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_post_coservice'"| value Eliom_registration.Html5_registration.register_post_coservice' >> ~[<<a_api subproject="server" | module Eliom_registration.Html5_registration >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.post_coservice' >> followed by <<a_api subproject="server" | val Eliom_registration.Html5_registration.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_post_coservice'"| value Eliom_mkreg.MakeRegister_AlphaReturn.register_post_coservice' >> ~[<<a_api subproject="server" | module Eliom_mkreg.MakeRegister_AlphaReturn >>~]|<<div class="odocwiki_info"|~Same as <<span class="odocwiki_inlinecode"|~Eliom~_service~.~Http~.post~_coservice~'>> followed by <<span class="odocwiki_inlinecode"|register>>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_post_coservice'"| value Eliom_mkreg.MakeRegister.register_post_coservice' >> ~[<<a_api subproject="server" | module Eliom_mkreg.MakeRegister >>~]|<<div class="odocwiki_info"|~Same as <<span class="odocwiki_inlinecode"|~Eliom~_service~.~Http~.post~_coservice~'>> followed by <<span class="odocwiki_inlinecode"|register>>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_post_service"| value Eliom_atom.Reg.register_post_service >> ~[<<a_api subproject="server" | module Eliom_atom.Reg >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.post_service >> followed by <<a_api subproject="server" | val Eliom_atom.Reg.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_post_service"| value Eliom_registration.Registration.register_post_service >> ~[<<a_api subproject="server" | module Eliom_registration.Registration >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.post_service >> followed by <<a_api subproject="server" | val Eliom_registration.Registration.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_post_service"| value Eliom_registration.Streamlist.register_post_service >> ~[<<a_api subproject="server" | module Eliom_registration.Streamlist >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.post_service >> followed by <<a_api subproject="server" | val Eliom_registration.Streamlist.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_post_service"| value Eliom_registration.String.register_post_service >> ~[<<a_api subproject="server" | module Eliom_registration.String >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.post_service >> followed by <<a_api subproject="server" | val Eliom_registration.String.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_post_service"| value Eliom_registration.Any.register_post_service >> ~[<<a_api subproject="server" | module Eliom_registration.Any >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.post_service >> followed by <<a_api subproject="server" | val Eliom_registration.Any.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_post_service"| value Eliom_registration.Ocaml.register_post_service >> ~[<<a_api subproject="server" | module Eliom_registration.Ocaml >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.post_service >> followed by <<a_api subproject="server" | val Eliom_registration.Ocaml.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_post_service"| value Eliom_registration.File_ct.register_post_service >> ~[<<a_api subproject="server" | module Eliom_registration.File_ct >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.post_service >> followed by <<a_api subproject="server" | val Eliom_registration.File_ct.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_post_service"| value Eliom_registration.File.register_post_service >> ~[<<a_api subproject="server" | module Eliom_registration.File >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.post_service >> followed by <<a_api subproject="server" | val Eliom_registration.File.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_post_service"| value Eliom_registration.String_redirection.register_post_service >> ~[<<a_api subproject="server" | module Eliom_registration.String_redirection >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.post_service >> followed by <<a_api subproject="server" | val Eliom_registration.String_redirection.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_post_service"| value Eliom_registration.Redirection.register_post_service >> ~[<<a_api subproject="server" | module Eliom_registration.Redirection >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.post_service >> followed by <<a_api subproject="server" | val Eliom_registration.Redirection.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_post_service"| value Eliom_registration.Unit.register_post_service >> ~[<<a_api subproject="server" | module Eliom_registration.Unit >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.post_service >> followed by <<a_api subproject="server" | val Eliom_registration.Unit.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_post_service"| value Eliom_registration.Action.register_post_service >> ~[<<a_api subproject="server" | module Eliom_registration.Action >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.post_service >> followed by <<a_api subproject="server" | val Eliom_registration.Action.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_post_service"| value Eliom_registration.CssText.register_post_service >> ~[<<a_api subproject="server" | module Eliom_registration.CssText >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.post_service >> followed by <<a_api subproject="server" | val Eliom_registration.CssText.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_post_service"| value Eliom_registration.Html_text.register_post_service >> ~[<<a_api subproject="server" | module Eliom_registration.Html_text >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.post_service >> followed by <<a_api subproject="server" | val Eliom_registration.Html_text.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_post_service"| value Eliom_registration.Make_typed_xml_registration.register_post_service >> ~[<<a_api subproject="server" | module Eliom_registration.Make_typed_xml_registration >>~]|<<div class="odocwiki_info"|~Same as <<span class="odocwiki_inlinecode"|~Eliom~_service~.~Http~.post~_service>> followed by <<span class="odocwiki_inlinecode"|register>>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_post_service"| value Eliom_registration.Flow5.register_post_service >> ~[<<a_api subproject="server" | module Eliom_registration.Flow5 >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.post_service >> followed by <<a_api subproject="server" | val Eliom_registration.Flow5.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_post_service"| value Eliom_registration.Eliom_tmpl.register_post_service >> ~[<<a_api subproject="server" | module Eliom_registration.Eliom_tmpl >>~]|<<div class="odocwiki_info"|~Same as <<span class="odocwiki_inlinecode"|~Eliom~_service~.~Http~.post~_service>> followed by <<span class="odocwiki_inlinecode"|register>>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_post_service"| value Eliom_registration.ELIOM_APPL.register_post_service >> ~[<<a_api subproject="server" | module Eliom_registration.ELIOM_APPL >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.post_service >> followed by <<a_api subproject="server" | val Eliom_registration.ELIOM_APPL.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_post_service"| value Eliom_registration.Html5.register_post_service >> ~[<<a_api subproject="server" | module Eliom_registration.Html5 >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.post_service >> followed by <<a_api subproject="server" | val Eliom_registration.Html5.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_post_service"| value Eliom_registration.Html5_registration.register_post_service >> ~[<<a_api subproject="server" | module Eliom_registration.Html5_registration >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.post_service >> followed by <<a_api subproject="server" | val Eliom_registration.Html5_registration.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_post_service"| value Eliom_mkreg.MakeRegister_AlphaReturn.register_post_service >> ~[<<a_api subproject="server" | module Eliom_mkreg.MakeRegister_AlphaReturn >>~]|<<div class="odocwiki_info"|~Same as <<span class="odocwiki_inlinecode"|~Eliom~_service~.~Http~.post~_service>> followed by <<span class="odocwiki_inlinecode"|register>>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_post_service"| value Eliom_mkreg.MakeRegister.register_post_service >> ~[<<a_api subproject="server" | module Eliom_mkreg.MakeRegister >>~]|<<div class="odocwiki_info"|~Same as <<span class="odocwiki_inlinecode"|~Eliom~_service~.~Http~.post~_service>> followed by <<span class="odocwiki_inlinecode"|register>>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_put_coservice"| value Eliom_atom.Reg.register_put_coservice >> ~[<<a_api subproject="server" | module Eliom_atom.Reg >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.put_coservice >> followed by <<a_api subproject="server" | val Eliom_atom.Reg.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_put_coservice"| value Eliom_registration.Registration.register_put_coservice >> ~[<<a_api subproject="server" | module Eliom_registration.Registration >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.put_coservice >> followed by <<a_api subproject="server" | val Eliom_registration.Registration.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_put_coservice"| value Eliom_registration.Streamlist.register_put_coservice >> ~[<<a_api subproject="server" | module Eliom_registration.Streamlist >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.put_coservice >> followed by <<a_api subproject="server" | val Eliom_registration.Streamlist.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_put_coservice"| value Eliom_registration.String.register_put_coservice >> ~[<<a_api subproject="server" | module Eliom_registration.String >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.put_coservice >> followed by <<a_api subproject="server" | val Eliom_registration.String.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_put_coservice"| value Eliom_registration.Any.register_put_coservice >> ~[<<a_api subproject="server" | module Eliom_registration.Any >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.put_coservice >> followed by <<a_api subproject="server" | val Eliom_registration.Any.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_put_coservice"| value Eliom_registration.Ocaml.register_put_coservice >> ~[<<a_api subproject="server" | module Eliom_registration.Ocaml >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.put_coservice >> followed by <<a_api subproject="server" | val Eliom_registration.Ocaml.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_put_coservice"| value Eliom_registration.File_ct.register_put_coservice >> ~[<<a_api subproject="server" | module Eliom_registration.File_ct >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.put_coservice >> followed by <<a_api subproject="server" | val Eliom_registration.File_ct.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_put_coservice"| value Eliom_registration.File.register_put_coservice >> ~[<<a_api subproject="server" | module Eliom_registration.File >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.put_coservice >> followed by <<a_api subproject="server" | val Eliom_registration.File.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_put_coservice"| value Eliom_registration.String_redirection.register_put_coservice >> ~[<<a_api subproject="server" | module Eliom_registration.String_redirection >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.put_coservice >> followed by <<a_api subproject="server" | val Eliom_registration.String_redirection.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_put_coservice"| value Eliom_registration.Redirection.register_put_coservice >> ~[<<a_api subproject="server" | module Eliom_registration.Redirection >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.put_coservice >> followed by <<a_api subproject="server" | val Eliom_registration.Redirection.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_put_coservice"| value Eliom_registration.Unit.register_put_coservice >> ~[<<a_api subproject="server" | module Eliom_registration.Unit >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.put_coservice >> followed by <<a_api subproject="server" | val Eliom_registration.Unit.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_put_coservice"| value Eliom_registration.Action.register_put_coservice >> ~[<<a_api subproject="server" | module Eliom_registration.Action >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.put_coservice >> followed by <<a_api subproject="server" | val Eliom_registration.Action.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_put_coservice"| value Eliom_registration.CssText.register_put_coservice >> ~[<<a_api subproject="server" | module Eliom_registration.CssText >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.put_coservice >> followed by <<a_api subproject="server" | val Eliom_registration.CssText.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_put_coservice"| value Eliom_registration.Html_text.register_put_coservice >> ~[<<a_api subproject="server" | module Eliom_registration.Html_text >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.put_coservice >> followed by <<a_api subproject="server" | val Eliom_registration.Html_text.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_put_coservice"| value Eliom_registration.Make_typed_xml_registration.register_put_coservice >> ~[<<a_api subproject="server" | module Eliom_registration.Make_typed_xml_registration >>~]|<<div class="odocwiki_info"|~Same as <<span class="odocwiki_inlinecode"|~Eliom~_service~.~Http~.put~_coservice>> followed by <<span class="odocwiki_inlinecode"|register>>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_put_coservice"| value Eliom_registration.Flow5.register_put_coservice >> ~[<<a_api subproject="server" | module Eliom_registration.Flow5 >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.put_coservice >> followed by <<a_api subproject="server" | val Eliom_registration.Flow5.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_put_coservice"| value Eliom_registration.Eliom_tmpl.register_put_coservice >> ~[<<a_api subproject="server" | module Eliom_registration.Eliom_tmpl >>~]|<<div class="odocwiki_info"|~Same as <<span class="odocwiki_inlinecode"|~Eliom~_service~.~Http~.put~_coservice>> followed by <<span class="odocwiki_inlinecode"|register>>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_put_coservice"| value Eliom_registration.ELIOM_APPL.register_put_coservice >> ~[<<a_api subproject="server" | module Eliom_registration.ELIOM_APPL >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.put_coservice >> followed by <<a_api subproject="server" | val Eliom_registration.ELIOM_APPL.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_put_coservice"| value Eliom_registration.Html5.register_put_coservice >> ~[<<a_api subproject="server" | module Eliom_registration.Html5 >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.put_coservice >> followed by <<a_api subproject="server" | val Eliom_registration.Html5.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_put_coservice"| value Eliom_registration.Html5_registration.register_put_coservice >> ~[<<a_api subproject="server" | module Eliom_registration.Html5_registration >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.put_coservice >> followed by <<a_api subproject="server" | val Eliom_registration.Html5_registration.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_put_coservice"| value Eliom_mkreg.MakeRegister_AlphaReturn.register_put_coservice >> ~[<<a_api subproject="server" | module Eliom_mkreg.MakeRegister_AlphaReturn >>~]|<<div class="odocwiki_info"|~Same as <<span class="odocwiki_inlinecode"|~Eliom~_service~.~Http~.put~_coservice>> followed by <<span class="odocwiki_inlinecode"|register>>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_put_coservice"| value Eliom_mkreg.MakeRegister.register_put_coservice >> ~[<<a_api subproject="server" | module Eliom_mkreg.MakeRegister >>~]|<<div class="odocwiki_info"|~Same as <<span class="odocwiki_inlinecode"|~Eliom~_service~.~Http~.put~_coservice>> followed by <<span class="odocwiki_inlinecode"|register>>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_put_coservice'"| value Eliom_atom.Reg.register_put_coservice' >> ~[<<a_api subproject="server" | module Eliom_atom.Reg >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.put_coservice' >> followed by <<a_api subproject="server" | val Eliom_atom.Reg.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_put_coservice'"| value Eliom_registration.Registration.register_put_coservice' >> ~[<<a_api subproject="server" | module Eliom_registration.Registration >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.put_coservice' >> followed by <<a_api subproject="server" | val Eliom_registration.Registration.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_put_coservice'"| value Eliom_registration.Streamlist.register_put_coservice' >> ~[<<a_api subproject="server" | module Eliom_registration.Streamlist >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.put_coservice' >> followed by <<a_api subproject="server" | val Eliom_registration.Streamlist.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_put_coservice'"| value Eliom_registration.String.register_put_coservice' >> ~[<<a_api subproject="server" | module Eliom_registration.String >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.put_coservice' >> followed by <<a_api subproject="server" | val Eliom_registration.String.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_put_coservice'"| value Eliom_registration.Any.register_put_coservice' >> ~[<<a_api subproject="server" | module Eliom_registration.Any >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.put_coservice' >> followed by <<a_api subproject="server" | val Eliom_registration.Any.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_put_coservice'"| value Eliom_registration.Ocaml.register_put_coservice' >> ~[<<a_api subproject="server" | module Eliom_registration.Ocaml >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.put_coservice' >> followed by <<a_api subproject="server" | val Eliom_registration.Ocaml.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_put_coservice'"| value Eliom_registration.File_ct.register_put_coservice' >> ~[<<a_api subproject="server" | module Eliom_registration.File_ct >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.put_coservice' >> followed by <<a_api subproject="server" | val Eliom_registration.File_ct.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_put_coservice'"| value Eliom_registration.File.register_put_coservice' >> ~[<<a_api subproject="server" | module Eliom_registration.File >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.put_coservice' >> followed by <<a_api subproject="server" | val Eliom_registration.File.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_put_coservice'"| value Eliom_registration.String_redirection.register_put_coservice' >> ~[<<a_api subproject="server" | module Eliom_registration.String_redirection >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.put_coservice' >> followed by <<a_api subproject="server" | val Eliom_registration.String_redirection.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_put_coservice'"| value Eliom_registration.Redirection.register_put_coservice' >> ~[<<a_api subproject="server" | module Eliom_registration.Redirection >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.put_coservice' >> followed by <<a_api subproject="server" | val Eliom_registration.Redirection.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_put_coservice'"| value Eliom_registration.Unit.register_put_coservice' >> ~[<<a_api subproject="server" | module Eliom_registration.Unit >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.put_coservice' >> followed by <<a_api subproject="server" | val Eliom_registration.Unit.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_put_coservice'"| value Eliom_registration.Action.register_put_coservice' >> ~[<<a_api subproject="server" | module Eliom_registration.Action >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.put_coservice' >> followed by <<a_api subproject="server" | val Eliom_registration.Action.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_put_coservice'"| value Eliom_registration.CssText.register_put_coservice' >> ~[<<a_api subproject="server" | module Eliom_registration.CssText >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.put_coservice' >> followed by <<a_api subproject="server" | val Eliom_registration.CssText.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_put_coservice'"| value Eliom_registration.Html_text.register_put_coservice' >> ~[<<a_api subproject="server" | module Eliom_registration.Html_text >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.put_coservice' >> followed by <<a_api subproject="server" | val Eliom_registration.Html_text.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_put_coservice'"| value Eliom_registration.Make_typed_xml_registration.register_put_coservice' >> ~[<<a_api subproject="server" | module Eliom_registration.Make_typed_xml_registration >>~]|<<div class="odocwiki_info"|~Same as <<span class="odocwiki_inlinecode"|~Eliom~_service~.~Http~.put~_coservice~'>> followed by <<span class="odocwiki_inlinecode"|register>>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_put_coservice'"| value Eliom_registration.Flow5.register_put_coservice' >> ~[<<a_api subproject="server" | module Eliom_registration.Flow5 >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.put_coservice' >> followed by <<a_api subproject="server" | val Eliom_registration.Flow5.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_put_coservice'"| value Eliom_registration.Eliom_tmpl.register_put_coservice' >> ~[<<a_api subproject="server" | module Eliom_registration.Eliom_tmpl >>~]|<<div class="odocwiki_info"|~Same as <<span class="odocwiki_inlinecode"|~Eliom~_service~.~Http~.put~_coservice~'>> followed by <<span class="odocwiki_inlinecode"|register>>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_put_coservice'"| value Eliom_registration.ELIOM_APPL.register_put_coservice' >> ~[<<a_api subproject="server" | module Eliom_registration.ELIOM_APPL >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.put_coservice' >> followed by <<a_api subproject="server" | val Eliom_registration.ELIOM_APPL.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_put_coservice'"| value Eliom_registration.Html5.register_put_coservice' >> ~[<<a_api subproject="server" | module Eliom_registration.Html5 >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.put_coservice' >> followed by <<a_api subproject="server" | val Eliom_registration.Html5.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_put_coservice'"| value Eliom_registration.Html5_registration.register_put_coservice' >> ~[<<a_api subproject="server" | module Eliom_registration.Html5_registration >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.put_coservice' >> followed by <<a_api subproject="server" | val Eliom_registration.Html5_registration.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_put_coservice'"| value Eliom_mkreg.MakeRegister_AlphaReturn.register_put_coservice' >> ~[<<a_api subproject="server" | module Eliom_mkreg.MakeRegister_AlphaReturn >>~]|<<div class="odocwiki_info"|~Same as <<span class="odocwiki_inlinecode"|~Eliom~_service~.~Http~.put~_coservice~'>> followed by <<span class="odocwiki_inlinecode"|register>>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_put_coservice'"| value Eliom_mkreg.MakeRegister.register_put_coservice' >> ~[<<a_api subproject="server" | module Eliom_mkreg.MakeRegister >>~]|<<div class="odocwiki_info"|~Same as <<span class="odocwiki_inlinecode"|~Eliom~_service~.~Http~.put~_coservice~'>> followed by <<span class="odocwiki_inlinecode"|register>>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_put_service"| value Eliom_atom.Reg.register_put_service >> ~[<<a_api subproject="server" | module Eliom_atom.Reg >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.put_service >> followed by <<a_api subproject="server" | val Eliom_atom.Reg.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_put_service"| value Eliom_registration.Registration.register_put_service >> ~[<<a_api subproject="server" | module Eliom_registration.Registration >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.put_service >> followed by <<a_api subproject="server" | val Eliom_registration.Registration.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_put_service"| value Eliom_registration.Streamlist.register_put_service >> ~[<<a_api subproject="server" | module Eliom_registration.Streamlist >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.put_service >> followed by <<a_api subproject="server" | val Eliom_registration.Streamlist.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_put_service"| value Eliom_registration.String.register_put_service >> ~[<<a_api subproject="server" | module Eliom_registration.String >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.put_service >> followed by <<a_api subproject="server" | val Eliom_registration.String.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_put_service"| value Eliom_registration.Any.register_put_service >> ~[<<a_api subproject="server" | module Eliom_registration.Any >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.put_service >> followed by <<a_api subproject="server" | val Eliom_registration.Any.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_put_service"| value Eliom_registration.Ocaml.register_put_service >> ~[<<a_api subproject="server" | module Eliom_registration.Ocaml >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.put_service >> followed by <<a_api subproject="server" | val Eliom_registration.Ocaml.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_put_service"| value Eliom_registration.File_ct.register_put_service >> ~[<<a_api subproject="server" | module Eliom_registration.File_ct >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.put_service >> followed by <<a_api subproject="server" | val Eliom_registration.File_ct.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_put_service"| value Eliom_registration.File.register_put_service >> ~[<<a_api subproject="server" | module Eliom_registration.File >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.put_service >> followed by <<a_api subproject="server" | val Eliom_registration.File.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_put_service"| value Eliom_registration.String_redirection.register_put_service >> ~[<<a_api subproject="server" | module Eliom_registration.String_redirection >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.put_service >> followed by <<a_api subproject="server" | val Eliom_registration.String_redirection.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_put_service"| value Eliom_registration.Redirection.register_put_service >> ~[<<a_api subproject="server" | module Eliom_registration.Redirection >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.put_service >> followed by <<a_api subproject="server" | val Eliom_registration.Redirection.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_put_service"| value Eliom_registration.Unit.register_put_service >> ~[<<a_api subproject="server" | module Eliom_registration.Unit >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.put_service >> followed by <<a_api subproject="server" | val Eliom_registration.Unit.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_put_service"| value Eliom_registration.Action.register_put_service >> ~[<<a_api subproject="server" | module Eliom_registration.Action >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.put_service >> followed by <<a_api subproject="server" | val Eliom_registration.Action.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_put_service"| value Eliom_registration.CssText.register_put_service >> ~[<<a_api subproject="server" | module Eliom_registration.CssText >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.put_service >> followed by <<a_api subproject="server" | val Eliom_registration.CssText.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_put_service"| value Eliom_registration.Html_text.register_put_service >> ~[<<a_api subproject="server" | module Eliom_registration.Html_text >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.put_service >> followed by <<a_api subproject="server" | val Eliom_registration.Html_text.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_put_service"| value Eliom_registration.Make_typed_xml_registration.register_put_service >> ~[<<a_api subproject="server" | module Eliom_registration.Make_typed_xml_registration >>~]|<<div class="odocwiki_info"|~Same as <<span class="odocwiki_inlinecode"|~Eliom~_service~.~Http~.put~_service>> followed by <<span class="odocwiki_inlinecode"|register>>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_put_service"| value Eliom_registration.Flow5.register_put_service >> ~[<<a_api subproject="server" | module Eliom_registration.Flow5 >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.put_service >> followed by <<a_api subproject="server" | val Eliom_registration.Flow5.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_put_service"| value Eliom_registration.Eliom_tmpl.register_put_service >> ~[<<a_api subproject="server" | module Eliom_registration.Eliom_tmpl >>~]|<<div class="odocwiki_info"|~Same as <<span class="odocwiki_inlinecode"|~Eliom~_service~.~Http~.put~_service>> followed by <<span class="odocwiki_inlinecode"|register>>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_put_service"| value Eliom_registration.ELIOM_APPL.register_put_service >> ~[<<a_api subproject="server" | module Eliom_registration.ELIOM_APPL >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.put_service >> followed by <<a_api subproject="server" | val Eliom_registration.ELIOM_APPL.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_put_service"| value Eliom_registration.Html5.register_put_service >> ~[<<a_api subproject="server" | module Eliom_registration.Html5 >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.put_service >> followed by <<a_api subproject="server" | val Eliom_registration.Html5.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_put_service"| value Eliom_registration.Html5_registration.register_put_service >> ~[<<a_api subproject="server" | module Eliom_registration.Html5_registration >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.put_service >> followed by <<a_api subproject="server" | val Eliom_registration.Html5_registration.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_put_service"| value Eliom_mkreg.MakeRegister_AlphaReturn.register_put_service >> ~[<<a_api subproject="server" | module Eliom_mkreg.MakeRegister_AlphaReturn >>~]|<<div class="odocwiki_info"|~Same as <<span class="odocwiki_inlinecode"|~Eliom~_service~.~Http~.put~_service>> followed by <<span class="odocwiki_inlinecode"|register>>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_put_service"| value Eliom_mkreg.MakeRegister.register_put_service >> ~[<<a_api subproject="server" | module Eliom_mkreg.MakeRegister >>~]|<<div class="odocwiki_info"|~Same as <<span class="odocwiki_inlinecode"|~Eliom~_service~.~Http~.put~_service>> followed by <<span class="odocwiki_inlinecode"|register>>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_service"| value Eliom_atom.Reg.register_service >> ~[<<a_api subproject="server" | module Eliom_atom.Reg >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.service >> followed by <<a_api subproject="server" | val Eliom_atom.Reg.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_service"| value Eliom_registration.Registration.register_service >> ~[<<a_api subproject="server" | module Eliom_registration.Registration >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.service >> followed by <<a_api subproject="server" | val Eliom_registration.Registration.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_service"| value Eliom_registration.Streamlist.register_service >> ~[<<a_api subproject="server" | module Eliom_registration.Streamlist >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.service >> followed by <<a_api subproject="server" | val Eliom_registration.Streamlist.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_service"| value Eliom_registration.String.register_service >> ~[<<a_api subproject="server" | module Eliom_registration.String >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.service >> followed by <<a_api subproject="server" | val Eliom_registration.String.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_service"| value Eliom_registration.Any.register_service >> ~[<<a_api subproject="server" | module Eliom_registration.Any >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.service >> followed by <<a_api subproject="server" | val Eliom_registration.Any.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_service"| value Eliom_registration.Ocaml.register_service >> ~[<<a_api subproject="server" | module Eliom_registration.Ocaml >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.service >> followed by <<a_api subproject="server" | val Eliom_registration.Ocaml.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_service"| value Eliom_registration.File_ct.register_service >> ~[<<a_api subproject="server" | module Eliom_registration.File_ct >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.service >> followed by <<a_api subproject="server" | val Eliom_registration.File_ct.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_service"| value Eliom_registration.File.register_service >> ~[<<a_api subproject="server" | module Eliom_registration.File >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.service >> followed by <<a_api subproject="server" | val Eliom_registration.File.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_service"| value Eliom_registration.String_redirection.register_service >> ~[<<a_api subproject="server" | module Eliom_registration.String_redirection >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.service >> followed by <<a_api subproject="server" | val Eliom_registration.String_redirection.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_service"| value Eliom_registration.Redirection.register_service >> ~[<<a_api subproject="server" | module Eliom_registration.Redirection >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.service >> followed by <<a_api subproject="server" | val Eliom_registration.Redirection.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_service"| value Eliom_registration.Unit.register_service >> ~[<<a_api subproject="server" | module Eliom_registration.Unit >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.service >> followed by <<a_api subproject="server" | val Eliom_registration.Unit.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_service"| value Eliom_registration.Action.register_service >> ~[<<a_api subproject="server" | module Eliom_registration.Action >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.service >> followed by <<a_api subproject="server" | val Eliom_registration.Action.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_service"| value Eliom_registration.CssText.register_service >> ~[<<a_api subproject="server" | module Eliom_registration.CssText >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.service >> followed by <<a_api subproject="server" | val Eliom_registration.CssText.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_service"| value Eliom_registration.Html_text.register_service >> ~[<<a_api subproject="server" | module Eliom_registration.Html_text >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.service >> followed by <<a_api subproject="server" | val Eliom_registration.Html_text.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_service"| value Eliom_registration.Make_typed_xml_registration.register_service >> ~[<<a_api subproject="server" | module Eliom_registration.Make_typed_xml_registration >>~]|<<div class="odocwiki_info"|~Same as <<span class="odocwiki_inlinecode"|~Eliom~_service~.~Http~.service>> followed by <<span class="odocwiki_inlinecode"|register>>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_service"| value Eliom_registration.Flow5.register_service >> ~[<<a_api subproject="server" | module Eliom_registration.Flow5 >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.service >> followed by <<a_api subproject="server" | val Eliom_registration.Flow5.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_service"| value Eliom_registration.Eliom_tmpl.register_service >> ~[<<a_api subproject="server" | module Eliom_registration.Eliom_tmpl >>~]|<<div class="odocwiki_info"|~Same as <<span class="odocwiki_inlinecode"|~Eliom~_service~.~Http~.service>> followed by <<span class="odocwiki_inlinecode"|register>>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_service"| value Eliom_registration.ELIOM_APPL.register_service >> ~[<<a_api subproject="server" | module Eliom_registration.ELIOM_APPL >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.service >> followed by <<a_api subproject="server" | val Eliom_registration.ELIOM_APPL.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_service"| value Eliom_registration.Html5.register_service >> ~[<<a_api subproject="server" | module Eliom_registration.Html5 >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.service >> followed by <<a_api subproject="server" | val Eliom_registration.Html5.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_service"| value Eliom_registration.Html5_registration.register_service >> ~[<<a_api subproject="server" | module Eliom_registration.Html5_registration >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.Http.service >> followed by <<a_api subproject="server" | val Eliom_registration.Html5_registration.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_service"| value Eliom_mkreg.MakeRegister_AlphaReturn.register_service >> ~[<<a_api subproject="server" | module Eliom_mkreg.MakeRegister_AlphaReturn >>~]|<<div class="odocwiki_info"|~Same as <<span class="odocwiki_inlinecode"|~Eliom~_service~.~Http~.service>> followed by <<span class="odocwiki_inlinecode"|register>>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_service"| value Eliom_mkreg.MakeRegister.register_service >> ~[<<a_api subproject="server" | module Eliom_mkreg.MakeRegister >>~]|<<div class="odocwiki_info"|~Same as <<span class="odocwiki_inlinecode"|~Eliom~_service~.~Http~.service>> followed by <<span class="odocwiki_inlinecode"|register>>~.
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="reload_action_https_hidden"| value Eliom_service_sigs.S.reload_action_https_hidden >> ~[<<a_api subproject="server" | module Eliom_service_sigs.S >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service_sigs.S.reload_action_hidden >> but forcing ~H~T~T~P~S~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="remove_cookie"| value Eliom_cookie.remove_cookie >> ~[<<a_api subproject="server" | module Eliom_cookie >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|remove~_cookie c cookie~_table>> removes the cookie <<span class="odocwiki_inlinecode"|c>>
@@ -2202,35 +1103,20 @@ foobar:value}}}
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="remove_persistent_data"| value Eliom_state.Ext.Low_level.remove_persistent_data >> ~[<<a_api subproject="server" | module Eliom_state.Ext.Low_level >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="remove_volatile_data"| value Eliom_state.Ext.Low_level.remove_volatile_data >> ~[<<a_api subproject="server" | module Eliom_state.Ext.Low_level >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="request_scope"| value Eliom_common.request_scope >> ~[<<a_api subproject="server" | module Eliom_common >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="result_of_http_result"| value Eliom_mkreg.REG_PARAM_ALPHA_RETURN.result_of_http_result >> ~[<<a_api subproject="server" | module Eliom_mkreg.REG_PARAM_ALPHA_RETURN >>~]|<<div class="odocwiki_info"|~Whether the service is capable to send application content when
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="result_of_http_result"| value Eliom_reg_sigs.PARAM_ALPHA_RETURN.result_of_http_result >> ~[<<a_api subproject="server" | module Eliom_reg_sigs.PARAM_ALPHA_RETURN >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="result_of_http_result"| value Eliom_reg_sigs.PARAM.result_of_http_result >> ~[<<a_api subproject="server" | module Eliom_reg_sigs.PARAM >>~]|<<div class="odocwiki_info"|~Whether the service is capable to send application content when
       required~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="result_of_http_result"| value Eliom_mkreg.REG_PARAM.result_of_http_result >> ~[<<a_api subproject="server" | module Eliom_mkreg.REG_PARAM >>~]|<<div class="odocwiki_info"|~Whether the service is capable to send application content when
-      required~.
->>
-|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="ret"| value Eliom_reg_sigs.PARAM.ret >> ~[<<a_api subproject="server" | module Eliom_reg_sigs.PARAM >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="rights"| value Atom_feed.rights >> ~[<<a_api subproject="server" | module Atom_feed >>~]|<<div class="odocwiki_info"|~Rights tag
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="rt"| value Eliom_service.rt >> ~[<<a_api subproject="server" | module Eliom_service >>~]||
 |@@ @style="tet-align: left;"@@\\S|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="select"| value Eliom_form_sigs.S.select >> ~[<<a_api subproject="server" | module Eliom_form_sigs.S >>~]|<<div class="odocwiki_info"|~Creates a <<span class="odocwiki_inlinecode"|~<select~>>> tag~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="send"| value Eliom_atom.Reg.send >> ~[<<a_api subproject="server" | module Eliom_atom.Reg >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|send page>> build the ~H~T~T~P frame corresponding to
-    <<span class="odocwiki_inlinecode"|page>>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="send"| value Eliom_registration.Registration.send >> ~[<<a_api subproject="server" | module Eliom_registration.Registration >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|send page>> build the ~H~T~T~P frame corresponding to
-    <<span class="odocwiki_inlinecode"|page>>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="send"| value Eliom_registration.Streamlist.send >> ~[<<a_api subproject="server" | module Eliom_registration.Streamlist >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|send page>> build the ~H~T~T~P frame corresponding to
-    <<span class="odocwiki_inlinecode"|page>>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="send"| value Eliom_registration.String.send >> ~[<<a_api subproject="server" | module Eliom_registration.String >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|send page>> build the ~H~T~T~P frame corresponding to
     <<span class="odocwiki_inlinecode"|page>>~.
 >>
 |
@@ -2242,95 +1128,25 @@ foobar:value}}}
     <<span class="odocwiki_inlinecode"|page>>~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="send"| value Eliom_registration.File_ct.send >> ~[<<a_api subproject="server" | module Eliom_registration.File_ct >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|send page>> build the ~H~T~T~P frame corresponding to
-    <<span class="odocwiki_inlinecode"|page>>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="send"| value Eliom_registration.File.send >> ~[<<a_api subproject="server" | module Eliom_registration.File >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|send page>> build the ~H~T~T~P frame corresponding to
-    <<span class="odocwiki_inlinecode"|page>>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="send"| value Eliom_registration.String_redirection.send >> ~[<<a_api subproject="server" | module Eliom_registration.String_redirection >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|send page>> build the ~H~T~T~P frame corresponding to
-    <<span class="odocwiki_inlinecode"|page>>~.
->>
-|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="send"| value Eliom_registration.Redirection.send >> ~[<<a_api subproject="server" | module Eliom_registration.Redirection >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|send page>> build the ~H~T~T~P frame corresponding to
     <<span class="odocwiki_inlinecode"|page>>~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="send"| value Eliom_registration.Unit.send >> ~[<<a_api subproject="server" | module Eliom_registration.Unit >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|send page>> build the ~H~T~T~P frame corresponding to
-    <<span class="odocwiki_inlinecode"|page>>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="send"| value Eliom_registration.Action.send >> ~[<<a_api subproject="server" | module Eliom_registration.Action >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|send page>> build the ~H~T~T~P frame corresponding to
-    <<span class="odocwiki_inlinecode"|page>>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="send"| value Eliom_registration.CssText.send >> ~[<<a_api subproject="server" | module Eliom_registration.CssText >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|send page>> build the ~H~T~T~P frame corresponding to
-    <<span class="odocwiki_inlinecode"|page>>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="send"| value Eliom_registration.Html_text.send >> ~[<<a_api subproject="server" | module Eliom_registration.Html_text >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|send page>> build the ~H~T~T~P frame corresponding to
-    <<span class="odocwiki_inlinecode"|page>>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="send"| value Eliom_registration.Make_typed_xml_registration.send >> ~[<<a_api subproject="server" | module Eliom_registration.Make_typed_xml_registration >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|send page>> build the ~H~T~T~P frame corresponding to
-    <<span class="odocwiki_inlinecode"|page>>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="send"| value Eliom_registration.Flow5.send >> ~[<<a_api subproject="server" | module Eliom_registration.Flow5 >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|send page>> build the ~H~T~T~P frame corresponding to
-    <<span class="odocwiki_inlinecode"|page>>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="send"| value Eliom_registration.Eliom_tmpl.send >> ~[<<a_api subproject="server" | module Eliom_registration.Eliom_tmpl >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|send page>> build the ~H~T~T~P frame corresponding to
-    <<span class="odocwiki_inlinecode"|page>>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="send"| value Eliom_registration.ELIOM_APPL.send >> ~[<<a_api subproject="server" | module Eliom_registration.ELIOM_APPL >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|send page>> build the ~H~T~T~P frame corresponding to
-    <<span class="odocwiki_inlinecode"|page>>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="send"| value Eliom_registration.Html5.send >> ~[<<a_api subproject="server" | module Eliom_registration.Html5 >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|send page>> build the ~H~T~T~P frame corresponding to
-    <<span class="odocwiki_inlinecode"|page>>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="send"| value Eliom_registration.Html5_registration.send >> ~[<<a_api subproject="server" | module Eliom_registration.Html5_registration >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|send page>> build the ~H~T~T~P frame corresponding to
-    <<span class="odocwiki_inlinecode"|page>>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="send"| value Eliom_mkreg.REG_PARAM_ALPHA_RETURN.send >> ~[<<a_api subproject="server" | module Eliom_mkreg.REG_PARAM_ALPHA_RETURN >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="send"| value Eliom_mkreg.REG_PARAM.send >> ~[<<a_api subproject="server" | module Eliom_mkreg.REG_PARAM >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="send"| value Eliom_mkreg.MakeRegister_AlphaReturn.send >> ~[<<a_api subproject="server" | module Eliom_mkreg.MakeRegister_AlphaReturn >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|send page>> build the ~H~T~T~P frame corresponding to
     <<span class="odocwiki_inlinecode"|page>>~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="send"| value Eliom_mkreg.MakeRegister.send >> ~[<<a_api subproject="server" | module Eliom_mkreg.MakeRegister >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|send page>> build the ~H~T~T~P frame corresponding to
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="send"| value Eliom_reg_sigs.S.send >> ~[<<a_api subproject="server" | module Eliom_reg_sigs.S >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|send page>> build the ~H~T~T~P frame corresponding to
     <<span class="odocwiki_inlinecode"|page>>~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="send_appl_content"| value Eliom_mkreg.REG_PARAM_ALPHA_RETURN.send_appl_content >> ~[<<a_api subproject="server" | module Eliom_mkreg.REG_PARAM_ALPHA_RETURN >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="send_appl_content"| value Eliom_mkreg.REG_PARAM.send_appl_content >> ~[<<a_api subproject="server" | module Eliom_mkreg.REG_PARAM >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="send"| value Eliom_reg_sigs.PARAM_ALPHA_RETURN.send >> ~[<<a_api subproject="server" | module Eliom_reg_sigs.PARAM_ALPHA_RETURN >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="send"| value Eliom_reg_sigs.PARAM.send >> ~[<<a_api subproject="server" | module Eliom_reg_sigs.PARAM >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="send_appl_content"| value Eliom_reg_sigs.PARAM_ALPHA_RETURN.send_appl_content >> ~[<<a_api subproject="server" | module Eliom_reg_sigs.PARAM_ALPHA_RETURN >>~]|<<div class="odocwiki_info"|~See <<a_api subproject="server" | val Eliom_reg_sigs.PARAM.send_appl_content >>~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="send_appl_content"| value Eliom_reg_sigs.PARAM.send_appl_content >> ~[<<a_api subproject="server" | module Eliom_reg_sigs.PARAM >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="server_function"| value Eliom_client.server_function >> ~[<<a_api subproject="server" | module Eliom_client >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|server~_function argument~_type f>> creates a value of type     <<a_api | type Eliom_client.server_function>> ~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="service"| value Eliom_service.Unsafe.service >> ~[<<a_api subproject="server" | module Eliom_service.Unsafe >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|service ~~path ~~get~_params ~(~)>> creates a <<a_api subproject="server" | val Eliom_service.Unsafe.service >>
-    associated to the path <<span class="odocwiki_inlinecode"|path>> and taking <<span class="odocwiki_inlinecode"|get~_params>> as ~G~E~T
-    parameters~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="service"| value Eliom_service.Ocaml.service >> ~[<<a_api subproject="server" | module Eliom_service.Ocaml >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|service ~~path ~~get~_params ~(~)>> creates a <<a_api subproject="server" | val Eliom_service.Ocaml.service >>
-    associated to the path <<span class="odocwiki_inlinecode"|path>> and taking <<span class="odocwiki_inlinecode"|get~_params>> as ~G~E~T
-    parameters~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="service"| value Eliom_service.App.service >> ~[<<a_api subproject="server" | module Eliom_service.App >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|service ~~path ~~get~_params ~(~)>> creates a <<a_api subproject="server" | val Eliom_service.App.service >>
-    associated to the path <<span class="odocwiki_inlinecode"|path>> and taking <<span class="odocwiki_inlinecode"|get~_params>> as ~G~E~T
-    parameters~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="service"| value Eliom_service.Http.service >> ~[<<a_api subproject="server" | module Eliom_service.Http >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|service ~~path ~~get~_params ~(~)>> creates a <<a_api subproject="server" | val Eliom_service.Http.service >>
-    associated to the path <<span class="odocwiki_inlinecode"|path>> and taking <<span class="odocwiki_inlinecode"|get~_params>> as ~G~E~T
-    parameters~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="service_group_state"| value Eliom_state.Ext.service_group_state >> ~[<<a_api subproject="server" | module Eliom_state.Ext >>~]|<<div class="odocwiki_info"|~Same for services
@@ -2348,8 +1164,8 @@ foobar:value}}}
       with the same name~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="set_client_fun"| value Eliom_registration.ELIOM_APPL.set_client_fun >> ~[<<a_api subproject="server" | module Eliom_registration.ELIOM_APPL >>~]|<<div class="odocwiki_info"|~Attach a client function to a service~,
-      that will be used instead of calling the server to generate the page~.
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="set_client_fun"| value Eliom_registration.ELIOM_APPL.set_client_fun >> ~[<<a_api subproject="server" | module Eliom_registration.ELIOM_APPL >>~]|<<div class="odocwiki_info"|~Attach a client function to a service~, that will be used instead
+      of calling the server to generate the page~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="set_cookie"| value Eliom_state.set_cookie >> ~[<<a_api subproject="server" | module Eliom_state >>~]|<<div class="odocwiki_info"|~Ask the browser to record a cookie~.
@@ -2497,11 +1313,11 @@ foobar:value}}}
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="sreg"| value Eliom_openid.sreg >> ~[<<a_api subproject="server" | module Eliom_openid >>~]|<<div class="odocwiki_info"|~The ~S~R~E~G extension
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="static_dir"| value Eliom_service.static_dir >> ~[<<a_api subproject="server" | module Eliom_service >>~]|<<div class="odocwiki_info"|~The predefined service <<span class="odocwiki_inlinecode"|static~_dir>> allows one to create links to
-    static files~.
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="static_dir"| value Eliom_service_sigs.S.static_dir >> ~[<<a_api subproject="server" | module Eliom_service_sigs.S >>~]|<<div class="odocwiki_info"|~The predefined service <<span class="odocwiki_inlinecode"|static~_dir>> allows one to create links
+      to static files~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="static_dir_with_params"| value Eliom_service.static_dir_with_params >> ~[<<a_api subproject="server" | module Eliom_service >>~]|<<div class="odocwiki_info"|~Like <<span class="odocwiki_inlinecode"|static~_dir>>~, but allows one to put ~G~E~T parameters
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="static_dir_with_params"| value Eliom_service_sigs.S.static_dir_with_params >> ~[<<a_api subproject="server" | module Eliom_service_sigs.S >>~]|<<div class="odocwiki_info"|~Like <<span class="odocwiki_inlinecode"|static~_dir>>~, but allows one to put ~G~E~T parameters
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="stream"| value Eliom_bus.stream >> ~[<<a_api subproject="server" | module Eliom_bus >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|stream b>> returns the stream of data sent to bus <<span class="odocwiki_inlinecode"|b>>~.
@@ -2584,7 +1400,7 @@ foobar:value}}}
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="unregister"| value Eliom_service.unregister >> ~[<<a_api subproject="server" | module Eliom_service >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|unregister service>> unregister the service handler
     previously associated to <<span class="odocwiki_inlinecode"|service>> with
-    <<a_api subproject="server" | val Eliom_registration.Html5.register >>~,
+    <<span class="odocwiki_inlinecode"|~Eliom~_registration~.~Html~5~.register>>~,
     <<span class="odocwiki_inlinecode"|~Eliom~_registration~.~App~.register>> or any other
     <<a_api subproject="server" | module Eliom_registration >><<span class="odocwiki_inlinecode"|~.~*~.register>> functions~.
 >>
@@ -2623,6 +1439,7 @@ foobar:value}}}
    ~(and turn back to the default~)~.
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="untype"| value Eliom_service_sigs.S.Id.untype >> ~[<<a_api subproject="server" | module Eliom_service_sigs.S.Id >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="update"| value Eliom_registration.TMPL_PARAMS.update >> ~[<<a_api subproject="server" | module Eliom_registration.TMPL_PARAMS >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="uri"| value Atom_feed.uri >> ~[<<a_api subproject="server" | module Atom_feed >>~]|<<div class="odocwiki_info"|uri tag~, basically~, simply a converter
 >>
@@ -2642,14 +1459,6 @@ foobar:value}}}
 |@@ @style="tet-align: left;"@@\\V|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="value"| value Eliom_shared_sigs.RLIST.value >> ~[<<a_api subproject="server" | module Eliom_shared_sigs.RLIST >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="value"| value Eliom_shared_sigs.S.value >> ~[<<a_api subproject="server" | module Eliom_shared_sigs.S >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="void_coservice'"| value Eliom_service.void_coservice' >> ~[<<a_api subproject="server" | module Eliom_service >>~]|<<div class="odocwiki_info"|~The service <<span class="odocwiki_inlinecode"|void~_coservice~'>> is a predefined non~-attached action
-    with special behaviour~: it has no parameter at all~, even
-    non~-attached parameters~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="void_hidden_coservice'"| value Eliom_service.void_hidden_coservice' >> ~[<<a_api subproject="server" | module Eliom_service >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.void_coservice' >> but keeps non attached ~G~E~T parameters~.
->>
-|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="volatile_data_group_state"| value Eliom_state.Ext.volatile_data_group_state >> ~[<<a_api subproject="server" | module Eliom_state.Ext >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|volatile~_data~_group~_state ~~scope n>> returns the state corresponding to
       the group named <<span class="odocwiki_inlinecode"|n>> in scope <<span class="odocwiki_inlinecode"|scope>>~.
 >>
@@ -2660,6 +1469,7 @@ foobar:value}}}
       length <<span class="odocwiki_inlinecode"|time>> in the <<span class="odocwiki_inlinecode"|scope>>~.
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="which"| value Eliom_service_types.Meth.which >> ~[<<a_api subproject="server" | module Eliom_service_types.Meth >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="with_css_file"| value Eliom_tools.with_css_file >> ~[<<a_api subproject="server" | module Eliom_tools >>~]|<<div class="odocwiki_info"|~Record an ~C~S~S file to be included in <<span class="odocwiki_inlinecode"|~Eliom~_tools~.~F~.html>>~.
 >>
 |

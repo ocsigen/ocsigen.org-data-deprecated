@@ -1,0 +1,49 @@
+<<code language="ocaml" | sig
+  type (_, _, _, _, _, _, _, _) t =
+      Get :
+        ('gp, 'a, 'gn) Eliom_service_types.params -> (Eliom_service_types.get,
+                                                      'gp, 'gn, unit, 
+                                                      unit,
+                                                      [< `WithSuffix
+                                                       | `WithoutSuffix ]
+                                                      as 'a,
+                                                      Eliom_service_types.get,
+                                                      unit)
+                                                     Eliom_service_types.Meth.t
+    | Post : ('gp, 'b, 'gn) Eliom_service_types.params *
+        ('pp, [ `WithoutSuffix ], 'pn) Eliom_service_types.params -> 
+        (Eliom_service_types.post, 'gp, 'gn, 'pp, 'pn,
+         [< `WithSuffix | `WithoutSuffix ] as 'b, Eliom_service_types.get,
+         'gp)
+        Eliom_service_types.Meth.t
+    | Put :
+        ('gp, 'c, 'gn) Eliom_service_types.params -> (Eliom_service_types.put,
+                                                      'gp, 'gn, unit, 
+                                                      unit,
+                                                      [< `WithSuffix
+                                                       | `WithoutSuffix ]
+                                                      as 'c,
+                                                      Eliom_service_types.put,
+                                                      unit)
+                                                     Eliom_service_types.Meth.t
+    | Delete :
+        ('gp, 'd, 'gn) Eliom_service_types.params -> (Eliom_service_types.delete,
+                                                      'gp, 'gn, unit, 
+                                                      unit,
+                                                      [< `WithSuffix
+                                                       | `WithoutSuffix ]
+                                                      as 'd,
+                                                      Eliom_service_types.delete,
+                                                      unit)
+                                                     Eliom_service_types.Meth.t
+  val params :
+    ('meth, 'gp, 'gn, 'pp, 'pn, [< `WithSuffix | `WithoutSuffix ] as 'a, 'm,
+     'x)
+    t -> ('gp, 'a, 'gn) params * ('pp, [ `WithoutSuffix ], 'pn) params
+  type _ which =
+      Get' : Eliom_service_types.get Eliom_service_types.Meth.which
+    | Post' : Eliom_service_types.post Eliom_service_types.Meth.which
+    | Put' : Eliom_service_types.put Eliom_service_types.Meth.which
+    | Delete' : Eliom_service_types.delete Eliom_service_types.Meth.which
+  val which : ('meth, 'gp, 'gn, 'pp, 'pn, 'tipo, 'm, 'x) t -> 'meth which
+end >>

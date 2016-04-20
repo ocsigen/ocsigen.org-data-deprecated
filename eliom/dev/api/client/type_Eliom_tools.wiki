@@ -1,70 +1,59 @@
 <<code language="ocaml" | sig
-  type ('a, 'b, 'c) one_page =
-      (unit, unit, 'a, Eliom_service.attached, Eliom_service.service_kind,
-       [ `WithoutSuffix ], unit, unit, 'b, 'c)
-      Eliom_service.service
-    constraint 'a = [< Eliom_service.service_method ]
-    constraint 'b = [< Eliom_service.registrable ]
-    constraint 'c = [< Eliom_registration.non_ocaml_service ]
-  type ('a, 'b, 'c) hierarchical_site =
-      ('a, 'b) Eliom_tools.main_page *
-      ('c * ('a, 'b, 'c) Eliom_tools.hierarchical_site_item) list
-    constraint 'a = [< Eliom_service.service_method ]
-    constraint 'b = [< Eliom_service.registrable ]
-  and ('a, 'b) main_page =
-      Main_page of
-        ('a, 'b, Eliom_registration.non_ocaml_service) Eliom_tools.one_page
-    | Default_page of
-        ('a, 'b, Eliom_registration.non_ocaml_service) Eliom_tools.one_page
-    | Not_clickable constraint 'a = [< Eliom_service.service_method ]
-    constraint 'b = [< Eliom_service.registrable ]
-  and ('a, 'b, 'c) hierarchical_site_item =
+  type srv =
+      Srv :
+        (unit, unit, Eliom_service.get, 'a, 'b, 'c, 'd, [ `WithoutSuffix ],
+         unit, unit, Eliom_service.non_ocaml)
+        Eliom_service.t -> Eliom_tools.srv
+  type 'a hierarchical_site =
+      Eliom_tools.main_page *
+      ('a * 'a Eliom_tools.hierarchical_site_item) list
+  and 'a hierarchical_site_item =
       Disabled
-    | Site_tree of ('a, 'b, 'c) Eliom_tools.hierarchical_site
-    constraint 'a = [< Eliom_service.service_method ]
-    constraint 'b = [< Eliom_service.registrable ]
+    | Site_tree of 'a Eliom_tools.hierarchical_site
+  and main_page =
+      Main_page of Eliom_tools.srv
+    | Default_page of Eliom_tools.srv
+    | Not_clickable
   module type HTML5_TOOLS =
     sig
       val menu :
         ?classe:Html5_types.nmtoken list ->
         ?id:string ->
-        (([< Eliom_service.get_service_kind ] as 'a,
-          [< Eliom_service.registrable ] as 'b,
-          [< Eliom_registration.non_ocaml_service ] as 'c)
-         Eliom_tools.one_page *
+        ((unit, unit, Eliom_service.get, 'a, 'b, 'c, 'd, [ `WithoutSuffix ],
+          unit, unit, Eliom_service.non_ocaml)
+         Eliom_service.t *
          [< Html5_types.flow5_without_interactive ] Eliom_content.Html5.elt
          list)
         list ->
-        ?service:('a, 'b, 'c) Eliom_tools.one_page ->
+        ?service:(unit, unit, Eliom_service.get, 'e, 'f, 'g, 'h,
+                  [ `WithoutSuffix ], unit, unit, Eliom_service.non_ocaml)
+                 Eliom_service.t ->
         unit -> [> `Ul ] Eliom_content.Html5.elt
       val hierarchical_menu_depth_first :
         ?classe:Html5_types.nmtoken list ->
         ?id:string ->
         ?whole_tree:bool ->
-        ([< Eliom_service.get_service_kind ] as 'a,
-         [< Eliom_service.registrable ] as 'b,
-         [< Html5_types.a_content ] Eliom_content.Html5.elt list)
+        [< Html5_types.a_content ] Eliom_content.Html5.elt list
         Eliom_tools.hierarchical_site ->
-        ?service:('a, 'b, [< Eliom_registration.non_ocaml_service ])
-                 Eliom_tools.one_page ->
+        ?service:(unit, unit, Eliom_service.get, 'a, 'b, 'c, 'd,
+                  [ `WithoutSuffix ], unit, unit, Eliom_service.non_ocaml)
+                 Eliom_service.t ->
         unit -> [> `Ul ] Eliom_content.Html5.elt list
       val hierarchical_menu_breadth_first :
         ?classe:Html5_types.nmtoken list ->
         ?id:string ->
-        ([< Eliom_service.get_service_kind ] as 'a,
-         [< Eliom_service.registrable ] as 'b,
-         [< Html5_types.a_content ] Eliom_content.Html5.elt list)
+        [< Html5_types.a_content ] Eliom_content.Html5.elt list
         Eliom_tools.hierarchical_site ->
-        ?service:('a, 'b, [< Eliom_registration.non_ocaml_service ])
-                 Eliom_tools.one_page ->
+        ?service:(unit, unit, Eliom_service.get, 'a, 'b, 'c, 'd,
+                  [ `WithoutSuffix ], unit, unit, Eliom_service.non_ocaml)
+                 Eliom_service.t ->
         unit -> [> `Ul ] Eliom_content.Html5.elt list
       val structure_links :
-        ([< Eliom_service.get_service_kind ] as 'a,
-         [< Eliom_service.registrable ] as 'b,
-         [< Html5_types.a_content ] Eliom_content.Html5.elt list)
+        [< Html5_types.a_content ] Eliom_content.Html5.elt list
         Eliom_tools.hierarchical_site ->
-        ?service:('a, 'b, [< Eliom_registration.non_ocaml_service ])
-                 Eliom_tools.one_page ->
+        ?service:(unit, unit, Eliom_service.get, 'a, 'b, 'c, 'd,
+                  [ `WithoutSuffix ], unit, unit, Eliom_service.non_ocaml)
+                 Eliom_service.t ->
         unit -> [> `Link ] Eliom_content.Html5.elt list
       val head :
         title:string ->

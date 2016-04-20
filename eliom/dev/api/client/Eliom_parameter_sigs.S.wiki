@@ -6,7 +6,7 @@
       a suffix parameter~.
 >>
 <<pre class="ocsforge_color odocwiki_code" id="TYPEparams_type"|<<span class="ocsforge_color_keyword"|type>> <<span class="odocwiki_type"|<<span class="ocsforge_color_delimiter"| ( >>'a, +[< <<a_api subproject="client" text="suff" | type Eliom_parameter_sigs.S.suff >> ], 'c<<span class="ocsforge_color_delimiter"| ) >>>> <<span class="odocwiki_name"|params~_type>>>><<div class="odocwiki_info"|~Abstract type for service parameters~. ~See for example the
-      parameter <<span class="odocwiki_inlinecode"|~~get~_param>> of <<a_api subproject="client" | val Eliom_service.Http.service >>~.
+      parameter <<span class="odocwiki_inlinecode"|~~get~_param>> of <<span class="odocwiki_inlinecode"|~Eliom~_service~.~Http~.service>>~.
 
 
 * <<span class="odocwiki_inlinecode"| ~'a>> is the type for the ~O~Caml type of the
