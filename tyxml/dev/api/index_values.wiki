@@ -43,7 +43,8 @@
 |@@class="odocwiki_index"@ @@<<a_api text="a_calcMode"| value Svg_sigs.T.a_calcMode >> ~[<<a_api | module Svg_sigs.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="a_cap_height"| value Svg_sigs.T.a_cap_height >> ~[<<a_api | module Svg_sigs.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="a_challenge"| value Html_sigs.T.a_challenge >> ~[<<a_api | module Html_sigs.T >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="a_char"| value Html_sigs.T.a_char >> ~[<<a_api | module Html_sigs.T >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="a_char"| value Html_sigs.T.a_char >> ~[<<a_api | module Html_sigs.T >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_deprecated"|>>>>
+|
 |@@class="odocwiki_index"@ @@<<a_api text="a_charset"| value Html_sigs.T.a_charset >> ~[<<a_api | module Html_sigs.T >>~]|<<div class="odocwiki_info"|~This attribute specifies the character encoding of the resource
       designated by the link~.
 >>
