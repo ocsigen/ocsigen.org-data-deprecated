@@ -24,7 +24,7 @@
 
 |Ow_fun||
 |<<a_api subproject="client" | module Ow_log >>||
-|<<a_api subproject="client" | module Ow_size >>||
+|Ow_size||
 |<<a_api subproject="client" | module Ow_tools >>||
 |Ow_event||
 |<<a_api subproject="client" | module Ow_position >>||

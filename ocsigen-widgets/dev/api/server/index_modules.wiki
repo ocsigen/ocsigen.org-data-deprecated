@@ -70,9 +70,6 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Ow_scrollbar"| module Ow_scrollbar >> |<<div class="odocwiki_info"|~Scrollbar module~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Ow_size"| module Ow_size >> |<<div class="odocwiki_info"|~Size functions for ~Dom elements~.
->>
-|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Ow_slide_event"| module Ow_slide_event >> |<<div class="odocwiki_info"|~First is moves event
       ~Second is end event
       ~Third is move~_func call at each move event

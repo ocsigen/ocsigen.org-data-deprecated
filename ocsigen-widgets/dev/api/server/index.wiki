@@ -27,9 +27,7 @@
 
 
 
-|<<a_api subproject="server" | module Ow_size >>|<<div class="odocwiki_info"|~Size functions for ~Dom elements~.
->>
-|
+|Ow_size||
 |<<a_api subproject="server" | module Ow_log >>|<<div class="odocwiki_info"|~Client debugging functions~.
 >>
 |

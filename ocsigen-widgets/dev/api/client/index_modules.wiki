@@ -22,7 +22,6 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Ow_popup"| module Ow_popup >> ||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Ow_position"| module Ow_position >> ||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Ow_scrollbar"| module Ow_scrollbar >> ||
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Ow_size"| module Ow_size >> ||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Ow_slide_event"| module Ow_slide_event >> ||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Ow_slider"| module Ow_slider >> ||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Ow_sliderbar"| module Ow_sliderbar >> ||
