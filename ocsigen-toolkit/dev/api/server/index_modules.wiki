@@ -13,8 +13,12 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Ot_lib"| module Ot_lib >> |<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|click~_outside e>> returns when user clicks outside element <<span class="odocwiki_inlinecode"|e>>~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Ot_nodeready"| module Ot_nodeready >> ||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Ot_noderesize"| module Ot_noderesize >> ||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Ot_nodeready"| module Ot_nodeready >> |<<div class="odocwiki_info"|~Wait for a node to be inserted in the ~D~O~M~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Ot_noderesize"| module Ot_noderesize >> |<<div class="odocwiki_info"|~Get an event when an element~'s size changes~.
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Ot_picture_uploader"| module Ot_picture_uploader >> |<<div class="odocwiki_info"|~Picture uploader widget
 >>
 |
