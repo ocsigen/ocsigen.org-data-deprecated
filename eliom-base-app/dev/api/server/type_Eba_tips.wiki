@@ -98,11 +98,8 @@
     unit -> unit Lwt.t
   val reset_tips : int64 -> unit -> unit -> unit Lwt.t
   val reset_tips_service :
-    (unit, unit, [< Eliom_service.service_method > `Post ],
-     [< Eliom_service.attached > `Nonattached ],
-     [< Eliom_service.service_kind > `NonattachedCoservice ],
-     [ `WithoutSuffix ], unit, unit,
-     [< Eliom_service.registrable > `Registrable ],
-     [> Eliom_service.http_service ])
-    Eliom_service.service
+    (unit, unit, Eliom_service.post, Eliom_service.non_att, Eliom_service.co,
+     Eliom_service.non_ext, Eliom_service.reg, [ `WithoutSuffix ], unit,
+     unit, Eliom_service.non_ocaml)
+    Eliom_service.t
 end >>
