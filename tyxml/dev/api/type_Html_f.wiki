@@ -2400,8 +2400,9 @@
            [> `Command ])
           nullary
         val menu :
-          ?child:[< `Flows of [< Html_types.flow5 ] elt list_wrap
-                  | `Lis of [< `Li of [< Html_types.common ] ] elt list_wrap ] ->
+          ?children:[< `Flows of [< Html_types.flow5 ] elt list_wrap
+                     | `Lis of
+                         [< `Li of [< Html_types.common ] ] elt list_wrap ] ->
           ([< `Accesskey
             | `Class
             | `Contenteditable
@@ -5438,8 +5439,9 @@
            [> `Command ])
           nullary
         val menu :
-          ?child:[< `Flows of [< Html_types.flow5 ] elt list_wrap
-                  | `Lis of [< `Li of [< Html_types.common ] ] elt list_wrap ] ->
+          ?children:[< `Flows of [< Html_types.flow5 ] elt list_wrap
+                     | `Lis of
+                         [< `Li of [< Html_types.common ] ] elt list_wrap ] ->
           ([< `Accesskey
             | `Class
             | `Contenteditable

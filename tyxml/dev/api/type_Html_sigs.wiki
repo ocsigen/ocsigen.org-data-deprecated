@@ -2256,12 +2256,12 @@
          [> `Command ])
         Html_sigs.T.nullary
       val menu :
-        ?child:[< `Flows of
-                    [< Html_types.flow5 ] Html_sigs.T.elt
-                    Html_sigs.T.list_wrap
-                | `Lis of
-                    [< `Li of [< Html_types.common ] ] Html_sigs.T.elt
-                    Html_sigs.T.list_wrap ] ->
+        ?children:[< `Flows of
+                       [< Html_types.flow5 ] Html_sigs.T.elt
+                       Html_sigs.T.list_wrap
+                   | `Lis of
+                       [< `Li of [< Html_types.common ] ] Html_sigs.T.elt
+                       Html_sigs.T.list_wrap ] ->
         ([< `Accesskey
           | `Class
           | `Contenteditable
@@ -4564,8 +4564,8 @@
          [> `Command ])
         nullary
       val menu :
-        ?child:[< `Flows of [< Html_types.flow5 ] elt list_wrap
-                | `Lis of [< `Li of [< Html_types.common ] ] elt list_wrap ] ->
+        ?children:[< `Flows of [< Html_types.flow5 ] elt list_wrap
+                   | `Lis of [< `Li of [< Html_types.common ] ] elt list_wrap ] ->
         ([< `Accesskey
           | `Class
           | `Contenteditable
@@ -7265,9 +7265,9 @@
                [> `Command ])
               nullary
             val menu :
-              ?child:[< `Flows of [< Html_types.flow5 ] elt list_wrap
-                      | `Lis of
-                          [< `Li of [< Html_types.common ] ] elt list_wrap ] ->
+              ?children:[< `Flows of [< Html_types.flow5 ] elt list_wrap
+                         | `Lis of
+                             [< `Li of [< Html_types.common ] ] elt list_wrap ] ->
               ([< `Accesskey
                 | `Class
                 | `Contenteditable
