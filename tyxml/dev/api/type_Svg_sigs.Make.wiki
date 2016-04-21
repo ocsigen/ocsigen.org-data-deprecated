@@ -97,7 +97,7 @@
         val a_title : string wrap -> [> `Title ] attrib
         val a_class : Svg_types.spacestrings wrap -> [> `Class ] attrib
         val a_style : string wrap -> [> `Style ] attrib
-        val a_transform : Svg_types.transform wrap -> [> `Transform ] attrib
+        val a_transform : Svg_types.transforms wrap -> [> `Transform ] attrib
         val a_viewBox : Svg_types.fourfloats wrap -> [> `ViewBox ] attrib
         val a_d : string wrap -> [> `D ] attrib
         val a_pathLength : float wrap -> [> `PathLength ] attrib
@@ -780,9 +780,9 @@
           ?a:Svg_types.foreignobject_attr attrib list ->
           Xml.elt list_wrap -> [> Svg_types.foreignobject ] elt
         val tot : Xml.elt -> 'a elt
-        val totl : Xml.elt list -> 'a elt list
+        val totl : Xml.elt list_wrap -> 'a elt list_wrap
         val toelt : 'a elt -> Xml.elt
-        val toeltl : 'a elt list -> Xml.elt list
+        val toeltl : 'a elt list_wrap -> Xml.elt list_wrap
         val doc_toelt : doc -> Xml.elt
         val to_xmlattribs : 'a attrib list -> Xml.attrib list
         val to_attrib : Xml.attrib -> 'a attrib

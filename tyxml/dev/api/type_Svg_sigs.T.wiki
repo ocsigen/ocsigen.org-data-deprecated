@@ -65,7 +65,7 @@
     Svg_types.spacestrings Svg_sigs.T.wrap -> [> `Class ] Svg_sigs.T.attrib
   val a_style : string Svg_sigs.T.wrap -> [> `Style ] Svg_sigs.T.attrib
   val a_transform :
-    Svg_types.transform Svg_sigs.T.wrap -> [> `Transform ] Svg_sigs.T.attrib
+    Svg_types.transforms Svg_sigs.T.wrap -> [> `Transform ] Svg_sigs.T.attrib
   val a_viewBox :
     Svg_types.fourfloats Svg_sigs.T.wrap -> [> `ViewBox ] Svg_sigs.T.attrib
   val a_d : string Svg_sigs.T.wrap -> [> `D ] Svg_sigs.T.attrib
@@ -842,9 +842,11 @@
     Xml.elt Svg_sigs.T.list_wrap ->
     [> Svg_types.foreignobject ] Svg_sigs.T.elt
   val tot : Xml.elt -> 'a Svg_sigs.T.elt
-  val totl : Xml.elt list -> 'a Svg_sigs.T.elt list
+  val totl :
+    Xml.elt Svg_sigs.T.list_wrap -> 'a Svg_sigs.T.elt Svg_sigs.T.list_wrap
   val toelt : 'a Svg_sigs.T.elt -> Xml.elt
-  val toeltl : 'a Svg_sigs.T.elt list -> Xml.elt list
+  val toeltl :
+    'a Svg_sigs.T.elt Svg_sigs.T.list_wrap -> Xml.elt Svg_sigs.T.list_wrap
   val doc_toelt : Svg_sigs.T.doc -> Xml.elt
   val to_xmlattribs : 'a Svg_sigs.T.attrib list -> Xml.attrib list
   val to_attrib : Xml.attrib -> 'a Svg_sigs.T.attrib

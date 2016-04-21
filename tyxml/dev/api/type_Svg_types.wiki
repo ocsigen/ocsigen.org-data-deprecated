@@ -177,7 +177,7 @@
   type coord = Svg_types.Unit.length
   type number = float
   type number_optional_number = Svg_types.number * Svg_types.number option
-  type percentage = int
+  type percentage = float
   type strings = string list
   type color = string
   type icccolor = string
@@ -191,12 +191,12 @@
       | `Icc of Svg_types.iri * Svg_types.paint_whitout_icc option
       | `None ]
   type transform =
-      Matrix of (float * float * float * float * float * float)
-    | Translate of (float * float option)
-    | Scale of (float * float option)
-    | Rotate of (Svg_types.Unit.angle * (float * float) option)
-    | SkewX of Svg_types.Unit.angle
-    | SkewY of Svg_types.Unit.angle
+      [ `Matrix of float * float * float * float * float * float
+      | `Rotate of Svg_types.Unit.angle * (float * float) option
+      | `Scale of float * float option
+      | `SkewX of Svg_types.Unit.angle
+      | `SkewY of Svg_types.Unit.angle
+      | `Translate of float * float option ]
   type spacestrings = string list
   type commastrings = string list
   type transforms = Svg_types.transform list
@@ -5245,7 +5245,8 @@
       | `SourceAlpha
       | `SourceGraphic
       | `StrokePaint ]
-  type offset = [ `Number of float | `Percentage of int ]
+  type offset =
+      [ `Number of Svg_types.number | `Percentage of Svg_types.percentage ]
   type big_variant =
       [ `A
       | `Absolute_colorimetric
