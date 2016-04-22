@@ -580,6 +580,7 @@
     client side~.
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="is_post"| value Eliom_service_types.Meth.is_post >> ~[<<a_api subproject="client" | module Eliom_service_types.Meth >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="iter_prop"| value Eliom_client_core.iter_prop >> ~[<<a_api subproject="client" | module Eliom_client_core >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="iter_prop_protected"| value Eliom_client_core.iter_prop_protected >> ~[<<a_api subproject="client" | module Eliom_client_core >>~]||
 |@@ @style="tet-align: left;"@@\\J|

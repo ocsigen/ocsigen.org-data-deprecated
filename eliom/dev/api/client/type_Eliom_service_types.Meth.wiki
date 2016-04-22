@@ -46,4 +46,7 @@
     | Put' : Eliom_service_types.put Eliom_service_types.Meth.which
     | Delete' : Eliom_service_types.delete Eliom_service_types.Meth.which
   val which : ('meth, 'gp, 'gn, 'pp, 'pn, 'tipo, 'm, 'x) t -> 'meth which
+  val is_post :
+    ('m, 'gp, 'gn, 'pp, 'pn, [< `WithSuffix | `WithoutSuffix ], 'mf, 'x) t ->
+    bool
 end >>

@@ -60,6 +60,9 @@
             | Put' : put which
             | Delete' : delete which
           val which : ('a, 'b, 'c, 'd, 'e, 'f, 'g, 'h) t -> 'a which
+          val is_post :
+            ('a, 'b, 'c, 'd, 'e, [< `WithSuffix | `WithoutSuffix ], 'f, 'g) t ->
+            bool
         end
       type att
       type non_att

@@ -804,6 +804,7 @@
       client process in this ~Eliom application~.
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="is_post"| value Eliom_service_types.Meth.is_post >> ~[<<a_api subproject="server" | module Eliom_service_types.Meth >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="iter_persistent_data_cookies"| value Eliom_state.Ext.iter_persistent_data_cookies >> ~[<<a_api subproject="server" | module Eliom_state.Ext >>~]|<<div class="odocwiki_info"|~Iterator on persistent cookies~.
 >>
 |
