@@ -83,6 +83,7 @@
       val a_contentStyleType : string wrap -> [> `ContentStyleType ] attrib
       val a_zoomAndPan :
         [< `Disable | `Magnify ] wrap -> [> `ZoomAndSpan ] attrib
+      val a_href : Svg_types.iri wrap -> [> `Xlink_href ] attrib
       val a_xlink_href : Svg_types.iri wrap -> [> `Xlink_href ] attrib
       val a_requiredFeatures :
         Svg_types.spacestrings wrap -> [> `RequiredFeatures ] attrib
@@ -99,7 +100,7 @@
         [< `Default | `Preserve ] wrap -> [> `Xml_Space ] attrib
       val a_type : string wrap -> [> `Type ] attrib
       val a_media : Svg_types.commastrings wrap -> [> `Media ] attrib
-      val a_title : string wrap -> [> `Title ] attrib
+      val a_xlink_title : string wrap -> [> `Title ] attrib
       val a_class : Svg_types.spacestrings wrap -> [> `Class ] attrib
       val a_style : string wrap -> [> `Style ] attrib
       val a_transform : Svg_types.transforms wrap -> [> `Transform ] attrib
@@ -231,18 +232,18 @@
         [< `HueRotate | `LuminanceToAlpha | `Matrix | `Saturate ] wrap ->
         [> `Typefecolor ] attrib
       val a_values : Svg_types.numbers wrap -> [> `Values ] attrib
-      val a_type_transfer :
+      val a_transfer_type :
         [< `Discrete | `Gamma | `Identity | `Linear | `Table ] wrap ->
         [> `Type_transfert ] attrib
       val a_tableValues : Svg_types.numbers wrap -> [> `TableValues ] attrib
       val a_intercept : Svg_types.number wrap -> [> `Intercept ] attrib
       val a_amplitude : Svg_types.number wrap -> [> `Amplitude ] attrib
       val a_exponent : Svg_types.number wrap -> [> `Exponent ] attrib
-      val a_offset_transfer :
+      val a_transfer_offset :
         Svg_types.number wrap -> [> `Offset_transfer ] attrib
-      val a_operator :
+      val a_feComposite_operator :
         [< `Arithmetic | `Atop | `In | `Out | `Over | `Xor ] wrap ->
-        [> `Operator ] attrib
+        [> `OperatorComposite ] attrib
       val a_k1 : Svg_types.number wrap -> [> `K1 ] attrib
       val a_k2 : Svg_types.number wrap -> [> `K2 ] attrib
       val a_k3 : Svg_types.number wrap -> [> `K3 ] attrib
@@ -318,9 +319,9 @@
       val a_keyPoints :
         Svg_types.numbers_semicolon wrap -> [> `KeyPoints ] attrib
       val a_path : string wrap -> [> `Path ] attrib
-      val a_animateColor_type :
+      val a_animateTransform_type :
         [ `Rotate | `Scale | `SkewX | `SkewY | `Translate ] wrap ->
-        [ `Typeanimatecolor ] attrib
+        [ `Typeanimatetransform ] attrib
       val a_horiz_origin_x :
         Svg_types.number wrap -> [> `HorizOriginX ] attrib
       val a_horiz_origin_y :
@@ -526,41 +527,41 @@
         ([< Svg_types.tref_attr ], [< Svg_types.tref_content ],
          [> Svg_types.tref ])
         star
-      val textpath :
+      val textPath :
         ([< Svg_types.textpath_attr ], [< Svg_types.textpath_content ],
          [> Svg_types.textpath ])
         star
-      val altglyph :
+      val altGlyph :
         ([< Svg_types.altglyph_attr ], [< Svg_types.altglyph_content ],
          [> Svg_types.altglyph ])
         unary
       type altglyphdef_content =
           [ `Item of Svg_types.altglyphitem elt list
           | `Ref of Svg_types.glyphref elt list ]
-      val altglyphdef :
+      val altGlyphDef :
         ([< Svg_types.altglyphdef_attr ], [< altglyphdef_content ],
          [> Svg_types.altglyphdef ])
         unary
-      val altglyphitem :
+      val altGlyphItem :
         ([< Svg_types.altglyphitem_attr ],
          [< Svg_types.altglyphitem_content ], [> Svg_types.altglyphitem ])
         star
-      val glyphref :
+      val glyphRef :
         ([< Svg_types.glyphref_attr ], [> Svg_types.glyphref ]) nullary
       val marker :
         ([< Svg_types.marker_attr ], [< Svg_types.marker_content ],
          [> Svg_types.marker ])
         star
-      val colorprofile :
+      val color_profile :
         ([< Svg_types.colorprofile_attr ],
          [< Svg_types.colorprofile_content ], [> Svg_types.colorprofile ])
         star
-      val lineargradient :
+      val linearGradient :
         ([< Svg_types.lineargradient_attr ],
          [< Svg_types.lineargradient_content ],
          [> Svg_types.lineargradient ])
         star
-      val radialgradient :
+      val radialGradient :
         ([< Svg_types.radialgradient_attr ],
          [< Svg_types.radialgradient_content ],
          [> Svg_types.radialgradient ])
@@ -573,7 +574,7 @@
         ([< Svg_types.pattern_attr ], [< Svg_types.pattern_content ],
          [> Svg_types.pattern ])
         star
-      val clippath :
+      val clipPath :
         ([< Svg_types.clippath_attr ], [< Svg_types.clippath_content ],
          [> Svg_types.clippath ])
         star
@@ -581,102 +582,102 @@
         ([< Svg_types.filter_attr ], [< Svg_types.filter_content ],
          [> Svg_types.filter ])
         star
-      val fedistantlight :
+      val feDistantLight :
         ([< Svg_types.fedistantlight_attr ],
          [< Svg_types.fedistantlight_content ],
          [> Svg_types.fedistantlight ])
         star
-      val fepointlight :
+      val fePointLight :
         ([< Svg_types.fepointlight_attr ],
          [< Svg_types.fepointlight_content ], [> Svg_types.fepointlight ])
         star
-      val fespotlight :
+      val feSpotLight :
         ([< Svg_types.fespotlight_attr ], [< Svg_types.fespotlight_content ],
          [> Svg_types.fespotlight ])
         star
-      val feblend :
+      val feBlend :
         ([< Svg_types.feblend_attr ], [< Svg_types.feblend_content ],
          [> Svg_types.feblend ])
         star
-      val fecolormatrix :
+      val feColorMatrix :
         ([< Svg_types.fecolormatrix_attr ],
          [< Svg_types.fecolormatrix_content ], [> Svg_types.fecolormatrix ])
         star
-      val fecomponenttransfer :
+      val feComponentTransfer :
         ([< Svg_types.fecomponenttransfer_attr ],
          [< Svg_types.fecomponenttransfer_content ],
          [> Svg_types.fecomponenttransfer ])
         star
-      val fefunca :
+      val feFuncA :
         ([< Svg_types.fefunca_attr ], [< Svg_types.fefunca_content ],
          [> Svg_types.fefunca ])
         star
-      val fefuncg :
+      val feFuncG :
         ([< Svg_types.fefuncg_attr ], [< Svg_types.fefuncg_content ],
          [> Svg_types.fefuncg ])
         star
-      val fefuncb :
+      val feFuncB :
         ([< Svg_types.fefuncb_attr ], [< Svg_types.fefuncb_content ],
          [> Svg_types.fefuncb ])
         star
-      val fefuncr :
+      val feFuncR :
         ([< Svg_types.fefuncr_attr ], [< Svg_types.fefuncr_content ],
          [> Svg_types.fefuncr ])
         star
-      val fecomposite :
+      val feComposite :
         ([< Svg_types.fecomposite_attr ], [< Svg_types.fecomposite_content ],
          [> Svg_types.fecomposite ])
         star
-      val feconvolvematrix :
+      val feConvolveMatrix :
         ([< Svg_types.feconvolvematrix_attr ],
          [< Svg_types.feconvolvematrix_content ],
          [> Svg_types.feconvolvematrix ])
         star
-      val fediffuselighting :
+      val feDiffuseLighting :
         ([< Svg_types.fediffuselighting_attr ],
          [< Svg_types.fediffuselighting_content ],
          [> Svg_types.fediffuselighting ])
         star
-      val fedisplacementmap :
+      val feDisplacementMap :
         ([< Svg_types.fedisplacementmap_attr ],
          [< Svg_types.fedisplacementmap_content ],
          [> Svg_types.fedisplacementmap ])
         star
-      val feflood :
+      val feFlood :
         ([< Svg_types.feflood_attr ], [< Svg_types.feflood_content ],
          [> Svg_types.feflood ])
         star
-      val fegaussianblur :
+      val feGaussianBlur :
         ([< Svg_types.fegaussianblur_attr ],
          [< Svg_types.fegaussianblur_content ],
          [> Svg_types.fegaussianblur ])
         star
-      val feimage :
+      val feImage :
         ([< Svg_types.feimage_attr ], [< Svg_types.feimage_content ],
          [> Svg_types.feimage ])
         star
-      val femerge :
+      val feMerge :
         ([< Svg_types.femerge_attr ], [< Svg_types.femerge_content ],
          [> Svg_types.femerge ])
         star
-      val femorphology :
+      val feMorphology :
         ([< Svg_types.femorphology_attr ],
          [< Svg_types.femorphology_content ], [> Svg_types.femorphology ])
         star
-      val feoffset :
+      val feOffset :
         ([< Svg_types.feoffset_attr ], [< Svg_types.feoffset_content ],
          [> Svg_types.feoffset ])
         star
-      val fespecularlighting :
+      val feSpecularLighting :
         ([< Svg_types.fespecularlighting_attr ],
          [< Svg_types.fespecularlighting_content ],
          [> Svg_types.fespecularlighting ])
         star
-      val fetile :
+      val feTile :
         ([< Svg_types.fetile_attr ], [< Svg_types.fetile_content ],
          [> Svg_types.fetile ])
         star
-      val feturbulence :
+      val feTurbulence :
         ([< Svg_types.feturbulence_attr ],
          [< Svg_types.feturbulence_content ], [> Svg_types.feturbulence ])
         star
@@ -703,7 +704,7 @@
         ([< Svg_types.set_attr ], [< Svg_types.set_content ],
          [> Svg_types.set ])
         star
-      val animatemotion :
+      val animateMotion :
         ([< Svg_types.animatemotion_attr ],
          [< Svg_types.animatemotion_content ], [> Svg_types.animatemotion ])
         star
@@ -711,11 +712,11 @@
         ([< Svg_types.mpath_attr ], [< Svg_types.mpath_content ],
          [> Svg_types.mpath ])
         star
-      val animatecolor :
+      val animateColor :
         ([< Svg_types.animatecolor_attr ],
          [< Svg_types.animatecolor_content ], [> Svg_types.animatecolor ])
         star
-      val animatetransform :
+      val animateTransform :
         ([< Svg_types.animatetransform_attr ],
          [< Svg_types.animatetransform_content ],
          [> Svg_types.animatetransform ])
@@ -728,7 +729,7 @@
         ([< Svg_types.glyph_attr ], [< Svg_types.glyph_content ],
          [> Svg_types.glyph ])
         star
-      val missingglyph :
+      val missing_glyph :
         ([< Svg_types.missingglyph_attr ],
          [< Svg_types.missingglyph_content ], [> Svg_types.missingglyph ])
         star

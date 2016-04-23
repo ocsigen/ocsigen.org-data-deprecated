@@ -82,7 +82,7 @@
       | `RepeatDur
       | `Restart ]
   type animation_value_attr =
-      [ `By | `CalcMode | `From | `KeySplines | `KeyTimes | `To | `Values ]
+      [ `By | `CalcMode | `From | `KeySplines | `KeyTimes | `To | `Valuesanim ]
   type animation_addition_attr = [ `Accumulate | `Additive ]
   type presentation_attr =
       [ `Alignment_Baseline
@@ -2130,8 +2130,8 @@
       | `Direction
       | `Display
       | `Dominant_Baseline
-      | `Dx_single
-      | `Dy_single
+      | `Dx
+      | `Dy
       | `Enable_background
       | `Fill
       | `Fill_opacity
@@ -3375,7 +3375,7 @@
       | `Marker_Start
       | `Mask
       | `Opacity
-      | `Operator
+      | `OperatorComposite
       | `Overflow
       | `Pointer_Events
       | `Result
@@ -3997,7 +3997,7 @@
       | `Marker_Start
       | `Mask
       | `Opacity
-      | `Operator_morphology
+      | `OperatorMorphology
       | `Overflow
       | `Pointer_Events
       | `Radius
@@ -4328,7 +4328,7 @@
       | `Text_Anchor
       | `Text_Decoration
       | `Text_Rendering
-      | `Type_stitch
+      | `TypeStitch
       | `Unicode_Bidi
       | `Visibility
       | `Width
@@ -4549,7 +4549,7 @@
       | `Restart
       | `SystemLanguage
       | `To
-      | `Values
+      | `Valuesanim
       | `Xlink_actuate
       | `Xlink_arcrole
       | `Xlink_href
@@ -4627,7 +4627,7 @@
       | `Rotate
       | `SystemLanguage
       | `To
-      | `Values
+      | `Valuesanim
       | `Xlink_actuate
       | `Xlink_arcrole
       | `Xlink_href
@@ -4684,7 +4684,7 @@
       | `Restart
       | `SystemLanguage
       | `To
-      | `Values
+      | `Valuesanim
       | `Xlink_actuate
       | `Xlink_arcrole
       | `Xlink_href
@@ -4726,8 +4726,8 @@
       | `Restart
       | `SystemLanguage
       | `To
-      | `Typeanimatecolor
-      | `Values
+      | `Typeanimatetransform
+      | `Valuesanim
       | `Xlink_actuate
       | `Xlink_arcrole
       | `Xlink_href
