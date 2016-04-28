@@ -3713,7 +3713,6 @@
              return counter<50
                      ?_dB_(counter+1|0,c,lexbuf)
                      :caml_trampoline_return(_dB_,[0,c,lexbuf])}}}}
-    function _c6_(c,lexbuf){return caml_trampoline(_dC_(0,c,lexbuf))}
     function _dB_(counter,c,lexbuf)
      {a:
       for(;;)
@@ -3815,6 +3814,7 @@
              if(_cV_(c))c[12]=[7,1,c[12]];else _cO_(c,lexbuf);continue a;
             case 16:_cO_(c,lexbuf);continue a;
             default:return _cY_(c,0)}}}}
+    function _c6_(c,lexbuf){return caml_trampoline(_dC_(0,c,lexbuf))}
     function _c9_(e,l){_r_(function(c){return _cA_(e,c)},l);return e}
     function list_builder(jsoo_self,tag,c)
      {var
