@@ -2,10 +2,6 @@
 
 |@@ @style="tet-align: left;"@@\\A|
 |@@class="odocwiki_index"@ @@<<a_api text="Angle"| module CSS.Angle >> ~[<<a_api | module CSS >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="Async_js"| module Async_js >> |<<div class="odocwiki_info"|~This is the javascript equivalent of ~Async~_unix~.~Scheduler~, ie a reimplementation of
-    the async scheduler for javascript ~(at least the part of it that makes sense~)~.
->>
-|
 |@@ @style="tet-align: left;"@@\\B|
 |@@class="odocwiki_index"@ @@<<a_api text="Bigstring"| module Typed_array.Bigstring >> ~[<<a_api | module Typed_array >>~]||
 |@@ @style="tet-align: left;"@@\\C|
