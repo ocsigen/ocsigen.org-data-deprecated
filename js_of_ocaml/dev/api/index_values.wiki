@@ -1468,6 +1468,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="transitionend"| value Lwt_js_events.transitionend >> ~[<<a_api | module Lwt_js_events >>~]|<<div class="odocwiki_info"|~Returns when a ~C~S~S transition terminates on the element~.
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api text="transitionends"| value Lwt_js_events.transitionends >> ~[<<a_api | module Lwt_js_events >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="tref"| value Dom_svg.CoerceTo.tref >> ~[<<a_api | module Dom_svg.CoerceTo >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="tspan"| value Dom_svg.CoerceTo.tspan >> ~[<<a_api | module Dom_svg.CoerceTo >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="typeof"| value Js.typeof >> ~[<<a_api | module Js >>~]|<<div class="odocwiki_info"|~Returns the type of a ~Javascript object~.
