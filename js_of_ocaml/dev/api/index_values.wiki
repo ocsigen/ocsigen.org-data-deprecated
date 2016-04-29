@@ -113,6 +113,9 @@
 |@@class="odocwiki_index"@ @@<<a_api text="blur"| value Lwt_js_events.blur >> ~[<<a_api | module Lwt_js_events >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="blur"| value Dom_html.Event.blur >> ~[<<a_api | module Dom_html.Event >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="blurs"| value Lwt_js_events.blurs >> ~[<<a_api | module Lwt_js_events >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="body"| value Tyxml_js.Register.body >> ~[<<a_api | module Tyxml_js.Register >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|~Register~.body elements>> add <<span class="odocwiki_inlinecode"|elements>> as children of <<span class="odocwiki_inlinecode"|body>>~.
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api text="body"| value Dom_html.CoerceTo.body >> ~[<<a_api | module Dom_html.CoerceTo >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="bool"| value Js.bool >> ~[<<a_api | module Js >>~]|<<div class="odocwiki_info"|~Conversion of booleans from ~O~Caml to ~Javascript~.
 >>
@@ -658,6 +661,9 @@
 |
 |@@class="odocwiki_index"@ @@<<a_api text="has"| value Dom.DocumentPosition.has >> ~[<<a_api | module Dom.DocumentPosition >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="hashchange"| value Dom_html.Event.hashchange >> ~[<<a_api | module Dom_html.Event >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="head"| value Tyxml_js.Register.head >> ~[<<a_api | module Tyxml_js.Register >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|~Register~.head elements>> add <<span class="odocwiki_inlinecode"|elements>> as children of <<span class="odocwiki_inlinecode"|body>>~.
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api text="head"| value Dom_html.CoerceTo.head >> ~[<<a_api | module Dom_html.CoerceTo >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="hex_of_rgb"| value CSS.Color.hex_of_rgb >> ~[<<a_api | module CSS.Color >>~]|<<div class="odocwiki_info"|~Convert a tuple of three integers between <<span class="odocwiki_inlinecode"|~0>> and <<span class="odocwiki_inlinecode"|~2~5~5>> into a hex
     string
@@ -672,8 +678,16 @@
 |@@class="odocwiki_index"@ @@<<a_api text="hsl"| value CSS.Color.hsl >> ~[<<a_api | module CSS.Color >>~]|<<div class="odocwiki_info"|build a color from the values of hue~, saturation~, and lightness channels~.
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api text="html"| value Tyxml_js.Register.html >> ~[<<a_api | module Tyxml_js.Register >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|~Register~.html head body>> uses the given head and body elements
+      as document~.
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api text="html"| value Dom_html.CoerceTo.html >> ~[<<a_api | module Dom_html.CoerceTo >>~]||
 |@@ @style="tet-align: left;"@@\\I|
+|@@class="odocwiki_index"@ @@<<a_api text="id"| value Tyxml_js.Register.id >> ~[<<a_api | module Tyxml_js.Register >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|~Register~.id "some~_id" elements>> add <<span class="odocwiki_inlinecode"|elements>> as children of the node
+      with the id <<span class="odocwiki_inlinecode"|"some~_id">>~.
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api text="iframe"| value Dom_html.CoerceTo.iframe >> ~[<<a_api | module Dom_html.CoerceTo >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="ign_debug"| value Lwt_log_js.ign_debug >> ~[<<a_api | module Lwt_log_js >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="ign_debug_f"| value Lwt_log_js.ign_debug_f >> ~[<<a_api | module Lwt_log_js >>~]||

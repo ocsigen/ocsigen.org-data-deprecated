@@ -149,6 +149,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="Regexp"| module Regexp >> |<<div class="odocwiki_info"|~Types for regexps~.
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api text="Register"| module Tyxml_js.Register >> ~[<<a_api | module Tyxml_js >>~]||
 |@@ @style="tet-align: left;"@@\\S|
 |@@class="odocwiki_index"@ @@<<a_api text="Svg"| module Tyxml_js.R.Svg >> ~[<<a_api | module Tyxml_js.R >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="Svg"| module Tyxml_js.Svg >> ~[<<a_api | module Tyxml_js >>~]||
