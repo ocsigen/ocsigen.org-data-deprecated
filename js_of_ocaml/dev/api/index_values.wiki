@@ -923,6 +923,9 @@
 |@@class="odocwiki_index"@ @@<<a_api text="obj"| value Js.Unsafe.obj >> ~[<<a_api | module Js.Unsafe >>~]|<<div class="odocwiki_info"|~Creates a ~Javascript literal object~.
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api text="object_keys"| value Js.object_keys >> ~[<<a_api | module Js >>~]|<<div class="odocwiki_info"|~Returns jsarray containing keys of the object as ~Object~.keys does~.
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api text="observe"| value MutationObserver.observe >> ~[<<a_api | module MutationObserver >>~]|<<div class="odocwiki_info"|~Helper to create a new observer and connect it to a node
 >>
 |

@@ -5302,7 +5302,7 @@
                 return Math.pow
                         (2,
                          caml_call_gen1
-                          (caml_get_public_method(sadj,num_834174833,354),sadj)/
+                          (caml_get_public_method(sadj,num_834174833,356),sadj)/
                          8)/
                        _e5_}
               var redraw_queued=[0,0];
@@ -5314,7 +5314,7 @@
                  ah=Math.ceil(a[4]/scale),
                  _eX_=[0,min(aw,st[6])];
                 caml_call_gen7
-                 (caml_get_public_method(hadj,num_635267918,355),
+                 (caml_get_public_method(hadj,num_635267918,357),
                   hadj,
                   0,
                   [0,st[6]],
@@ -5325,23 +5325,23 @@
                 var
                  _eY_=
                   caml_call_gen1
-                   (caml_get_public_method(hadj,num_307110897,356),hadj),
+                   (caml_get_public_method(hadj,num_307110897,358),hadj),
                  mv=st[6]-_eY_;
                 if
                  (caml_call_gen1
-                   (caml_get_public_method(hadj,num_834174833,357),hadj)<
+                   (caml_get_public_method(hadj,num_834174833,359),hadj)<
                   0)
                  caml_call_gen2
-                  (caml_get_public_method(hadj,num_659372076,358),hadj,0);
+                  (caml_get_public_method(hadj,num_659372076,360),hadj,0);
                 if
                  (mv<
                   caml_call_gen1
-                   (caml_get_public_method(hadj,num_834174833,359),hadj))
+                   (caml_get_public_method(hadj,num_834174833,361),hadj))
                  caml_call_gen2
-                  (caml_get_public_method(hadj,num_659372076,360),hadj,mv);
+                  (caml_get_public_method(hadj,num_659372076,362),hadj,mv);
                 var _eZ_=[0,min(ah,st[7])];
                 caml_call_gen7
-                 (caml_get_public_method(vadj,num_635267918,361),
+                 (caml_get_public_method(vadj,num_635267918,363),
                   vadj,
                   0,
                   [0,st[7]],
@@ -5352,20 +5352,20 @@
                 var
                  _e0_=
                   caml_call_gen1
-                   (caml_get_public_method(vadj,num_307110897,362),vadj),
+                   (caml_get_public_method(vadj,num_307110897,364),vadj),
                  mv$0=st[7]-_e0_;
                 if
                  (caml_call_gen1
-                   (caml_get_public_method(vadj,num_834174833,363),vadj)<
+                   (caml_get_public_method(vadj,num_834174833,365),vadj)<
                   0)
                  caml_call_gen2
-                  (caml_get_public_method(vadj,num_659372076,364),vadj,0);
+                  (caml_get_public_method(vadj,num_659372076,366),vadj,0);
                 if
                  (mv$0<
                   caml_call_gen1
-                   (caml_get_public_method(vadj,num_834174833,365),vadj))
+                   (caml_get_public_method(vadj,num_834174833,367),vadj))
                  caml_call_gen2
-                  (caml_get_public_method(vadj,num_659372076,366),vadj,mv$0);
+                  (caml_get_public_method(vadj,num_659372076,368),vadj,mv$0);
                 return redraw_queued[1]
                         ?0
                         :(redraw_queued[1]=
@@ -5378,10 +5378,10 @@
                                 var
                                  y0$2=
                                   caml_call_gen1
-                                   (caml_get_public_method(vadj,num_834174833,367),vadj),
+                                   (caml_get_public_method(vadj,num_834174833,369),vadj),
                                  x0$2=
                                   caml_call_gen1
-                                   (caml_get_public_method(hadj,num_834174833,368),hadj),
+                                   (caml_get_public_method(hadj,num_834174833,370),hadj),
                                  scale=get_scale(0),
                                  width$0=window$0.width,
                                  height$0=window$0.height,
@@ -5485,7 +5485,7 @@
                 Math.ceil
                  (Math.log(max(st[6]/a[3],st[7]/a[4]))/0.693147180559945286*8);
               caml_call_gen7
-               (caml_get_public_method(sadj,num_635267918,353),
+               (caml_get_public_method(sadj,num_635267918,355),
                 sadj,
                 0,
                 [0,count],
@@ -5501,26 +5501,26 @@
                  r=1-prev_scale[1]/scale,
                  _eV_=
                   caml_call_gen1
-                   (caml_get_public_method(hadj,num_307110897,369),hadj)*
+                   (caml_get_public_method(hadj,num_307110897,371),hadj)*
                   r*
                   x;
                 caml_call_gen2
-                 (caml_get_public_method(hadj,num_659372076,371),
+                 (caml_get_public_method(hadj,num_659372076,373),
                   hadj,
                   caml_call_gen1
-                   (caml_get_public_method(hadj,num_834174833,370),hadj)+
+                   (caml_get_public_method(hadj,num_834174833,372),hadj)+
                   _eV_);
                 var
                  _eW_=
                   caml_call_gen1
-                   (caml_get_public_method(vadj,num_307110897,372),vadj)*
+                   (caml_get_public_method(vadj,num_307110897,374),vadj)*
                   r*
                   y;
                 caml_call_gen2
-                 (caml_get_public_method(vadj,num_659372076,374),
+                 (caml_get_public_method(vadj,num_659372076,376),
                   vadj,
                   caml_call_gen1
-                   (caml_get_public_method(vadj,num_834174833,373),vadj)+
+                   (caml_get_public_method(vadj,num_834174833,375),vadj)+
                   _eW_);
                 prev_scale[1]=scale;
                 st[8][4]=_dY_;
@@ -5556,11 +5556,11 @@
                   jsoo_obj.top=points(pos$0);
                   pos[1]=pos$0;
                   caml_call_gen2
-                   (caml_get_public_method(sadj,num_659372076,395),
+                   (caml_get_public_method(sadj,num_659372076,397),
                     sadj,
                     (height-pos$0|0)*
                     caml_call_gen1
-                     (caml_get_public_method(sadj,num_675223906,394),sadj)/
+                     (caml_get_public_method(sadj,num_675223906,396),sadj)/
                     height);
                   return rescale(num_0_5,num_0_5)}
                 return 0}
@@ -5592,17 +5592,17 @@
                    {var
                      _eT_=
                       caml_call_gen1
-                       (caml_get_public_method(a,num_307110897,408),a),
+                       (caml_get_public_method(a,num_307110897,410),a),
                      _eU_=
                       caml_call_gen1
-                       (caml_get_public_method(a,num_675223906,409),a)-
+                       (caml_get_public_method(a,num_675223906,411),a)-
                       _eT_;
                     return caml_call_gen2
-                            (caml_get_public_method(a,num_659372076,411),
+                            (caml_get_public_method(a,num_659372076,413),
                              a,
                              min
                               (caml_call_gen1
-                                (caml_get_public_method(a,num_834174833,410),a)-
+                                (caml_get_public_method(a,num_834174833,412),a)-
                                d/
                                scale,
                                _eU_))}
@@ -5616,33 +5616,33 @@
                  y$0=y/a[4],
                  prev=
                   caml_call_gen1
-                   (caml_get_public_method(sadj,num_834174833,412),sadj),
+                   (caml_get_public_method(sadj,num_834174833,414),sadj),
                  _eR_=
                   prev+
                   v*
                   caml_call_gen1
-                   (caml_get_public_method(sadj,num_292814788,413),sadj),
+                   (caml_get_public_method(sadj,num_292814788,415),sadj),
                  _eS_=
                   max
                    (caml_call_gen1
-                     (caml_get_public_method(sadj,-117442047,414),sadj),
+                     (caml_get_public_method(sadj,-117442047,416),sadj),
                     _eR_),
                  vl=
                   min
                    (caml_call_gen1
-                     (caml_get_public_method(sadj,num_675223906,415),sadj),
+                     (caml_get_public_method(sadj,num_675223906,417),sadj),
                     _eS_);
                 if(vl!=prev)
                  {caml_call_gen2
-                   (caml_get_public_method(sadj,num_659372076,416),sadj,vl);
+                   (caml_get_public_method(sadj,num_659372076,418),sadj,vl);
                   var
                    _eQ_=
                     caml_call_gen1
-                     (caml_get_public_method(sadj,num_675223906,398),sadj),
+                     (caml_get_public_method(sadj,num_675223906,400),sadj),
                    pos$0=
                     height-
                     (caml_call_gen1
-                      (caml_get_public_method(sadj,num_834174833,399),sadj)*
+                      (caml_get_public_method(sadj,num_834174833,401),sadj)*
                      height/
                      _eQ_+
                      num_0_5|
@@ -5692,12 +5692,12 @@
                    var
                     _eK_=
                      caml_call_gen1
-                      (caml_get_public_method(hadj,num_292814788,420),hadj);
+                      (caml_get_public_method(hadj,num_292814788,422),hadj);
                    caml_call_gen2
-                    (caml_get_public_method(hadj,num_659372076,422),
+                    (caml_get_public_method(hadj,num_659372076,424),
                      hadj,
                      caml_call_gen1
-                      (caml_get_public_method(hadj,num_834174833,421),hadj)-
+                      (caml_get_public_method(hadj,num_834174833,423),hadj)-
                      _eK_);
                    update_view(0);
                    return false$0;
@@ -5705,12 +5705,12 @@
                    var
                     _eL_=
                      caml_call_gen1
-                      (caml_get_public_method(vadj,num_292814788,423),vadj);
+                      (caml_get_public_method(vadj,num_292814788,425),vadj);
                    caml_call_gen2
-                    (caml_get_public_method(vadj,num_659372076,425),
+                    (caml_get_public_method(vadj,num_659372076,427),
                      vadj,
                      caml_call_gen1
-                      (caml_get_public_method(vadj,num_834174833,424),vadj)-
+                      (caml_get_public_method(vadj,num_834174833,426),vadj)-
                      _eL_);
                    update_view(0);
                    return false$0;
@@ -5718,12 +5718,12 @@
                    var
                     _eM_=
                      caml_call_gen1
-                      (caml_get_public_method(hadj,num_292814788,426),hadj);
+                      (caml_get_public_method(hadj,num_292814788,428),hadj);
                    caml_call_gen2
-                    (caml_get_public_method(hadj,num_659372076,428),
+                    (caml_get_public_method(hadj,num_659372076,430),
                      hadj,
                      caml_call_gen1
-                      (caml_get_public_method(hadj,num_834174833,427),hadj)+
+                      (caml_get_public_method(hadj,num_834174833,429),hadj)+
                      _eM_);
                    update_view(0);
                    return false$0;
@@ -5731,12 +5731,12 @@
                    var
                     _eN_=
                      caml_call_gen1
-                      (caml_get_public_method(vadj,num_292814788,429),vadj);
+                      (caml_get_public_method(vadj,num_292814788,431),vadj);
                    caml_call_gen2
-                    (caml_get_public_method(vadj,num_659372076,431),
+                    (caml_get_public_method(vadj,num_659372076,433),
                      vadj,
                      caml_call_gen1
-                      (caml_get_public_method(vadj,num_834174833,430),vadj)+
+                      (caml_get_public_method(vadj,num_834174833,432),vadj)+
                      _eN_);
                    update_view(0);
                    return false$0}}
