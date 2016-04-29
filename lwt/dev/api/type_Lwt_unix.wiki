@@ -441,16 +441,16 @@
   val register_action :
     Lwt_unix.io_event -> Lwt_unix.file_descr -> (unit -> 'a) -> 'a Lwt.t
   type 'a job
-  val execute_job :
-    ?async_method:Lwt_unix.async_method ->
-    job:'a Lwt_unix.job ->
-    result:('a Lwt_unix.job -> 'b) ->
-    free:('a Lwt_unix.job -> unit) -> 'b Lwt.t
   val run_job :
     ?async_method:Lwt_unix.async_method -> 'a Lwt_unix.job -> 'a Lwt.t
   val abort_jobs : exn -> unit
   val cancel_jobs : unit -> unit
   val wait_for_jobs : unit -> unit Lwt.t
+  val execute_job :
+    ?async_method:Lwt_unix.async_method ->
+    job:'a Lwt_unix.job ->
+    result:('a Lwt_unix.job -> 'b) ->
+    free:('a Lwt_unix.job -> unit) -> 'b Lwt.t
   val make_notification : ?once:bool -> (unit -> unit) -> int
   val send_notification : int -> unit
   val stop_notification : int -> unit

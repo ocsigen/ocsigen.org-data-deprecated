@@ -366,8 +366,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="exec"| value Lwt_process.exec >> ~[<<a_api | module Lwt_process >>~]|<<div class="odocwiki_info"|~Executes the given command and returns its exit status~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api text="execute_job"| value Lwt_unix.execute_job >> ~[<<a_api | module Lwt_unix >>~]|<<div class="odocwiki_info"|~This is the old and deprecated way of running a job~.
->>
+|@@class="odocwiki_index"@ @@<<a_api text="execute_job"| value Lwt_unix.execute_job >> ~[<<a_api | module Lwt_unix >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_deprecated"|>>>>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="exists_p"| value Lwt_list.exists_p >> ~[<<a_api | module Lwt_list >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="exists_s"| value Lwt_list.exists_s >> ~[<<a_api | module Lwt_list >>~]||
@@ -1118,7 +1117,8 @@
       failing~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api text="on_terminate"| value Lwt_stream.on_terminate >> ~[<<a_api | module Lwt_stream >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="on_terminate"| value Lwt_stream.on_terminate >> ~[<<a_api | module Lwt_stream >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_deprecated"|>>>>
+|
 |@@class="odocwiki_index"@ @@<<a_api text="on_termination"| value Lwt_stream.on_termination >> ~[<<a_api | module Lwt_stream >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|on~_termination st f>> executes <<span class="odocwiki_inlinecode"|f>> when the end of the stream <<span class="odocwiki_inlinecode"|st>>
       is reached~.
 >>
@@ -1824,8 +1824,7 @@
 |
 |@@class="odocwiki_index"@ @@<<a_api text="warning"| value Lwt_log_core.warning >> ~[<<a_api | module Lwt_log_core >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="warning_f"| value Lwt_log_core.warning_f >> ~[<<a_api | module Lwt_log_core >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="windows"| value Lwt_sys.windows >> ~[<<a_api | module Lwt_sys >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|true>> iff running on windows~.
->>
+|@@class="odocwiki_index"@ @@<<a_api text="windows"| value Lwt_sys.windows >> ~[<<a_api | module Lwt_sys >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_deprecated"|>>>>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="with_async_detach"| value Lwt_unix.with_async_detach >> ~[<<a_api | module Lwt_unix >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|with~_async~_detach f>> is a shorthand for~:
 >>
