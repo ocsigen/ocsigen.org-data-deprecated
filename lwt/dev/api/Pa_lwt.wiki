@@ -14,6 +14,16 @@
 
 
 
+      ~If you are mixing `~>~>` and `~;`~, you need to use parentheses or
+      `begin`~/`end` to get the result you expect~:
+
+
+      
+<<code language='ocaml'|        write stdout "Hello, " ~>> (ignore (); write stdout "world!")
+      >>
+
+
+
 * lwt~-binding~:
 
       
