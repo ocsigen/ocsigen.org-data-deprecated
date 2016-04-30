@@ -235,7 +235,7 @@ else
 
    ~It is also possible to sequence ~Lwt operations with the <<span class="odocwiki_inlinecode"|~>~>>> operator~:
    
-<<code language='ocaml'|     write stdio "Hello, " ~>> write stdio "world!"
+<<code language='ocaml'|     write stdout "Hello, " ~>> write stdout "world!"
    >>
 
 

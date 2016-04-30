@@ -9,7 +9,7 @@
 * anonymous bind~:
 
       
-<<code language='ocaml'|         write stdio "Hello, " ~>> write stdio "world!"
+<<code language='ocaml'|         write stdout "Hello, " ~>> write stdout "world!"
       >>
 
 
