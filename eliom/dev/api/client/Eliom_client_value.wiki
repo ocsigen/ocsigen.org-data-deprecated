@@ -20,7 +20,8 @@
     ~The argument describes the original exception by
     <<span class="odocwiki_inlinecode"|~Printexc~.to~_string>>~.
 >>
-<<pre id="EXCEPTIONFalse" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|exception>> <<span class="odocwiki_name"|False>>>><<div class="odocwiki_info"|~Event handlers like <<a_api | Eliom_content.Html5.F.a_onclick
+
+~Event handlers like <<a_api | Eliom_content.Html5.F.a_onclick
     >>  may raise <<span class="odocwiki_inlinecode"|~False>> to cancel the event ~(as if the ~Java~Script
     function returned <<span class="odocwiki_inlinecode"|false>>~)~.
->>
+<<pre id="EXCEPTIONFalse" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|exception>> <<span class="odocwiki_name"|False>>>>

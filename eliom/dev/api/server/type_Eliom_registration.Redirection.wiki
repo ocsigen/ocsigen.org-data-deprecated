@@ -1,5 +1,5 @@
 <<code language="ocaml" | sig
-  type ('a, 'b) page = ('a, 'b) Eliom_registration.redirected_service
+  type 'a page = 'a redirection
   type options =
       [ `Found
       | `MovedPermanently
@@ -7,27 +7,24 @@
       | `SeeOther
       | `TemporaryRedirect
       | `UseProxy ]
-  type 'b return = 'b
-  type 'a result = 'a Eliom_registration.kind
+  type 'a return = 'a
   val register :
     ?scope:[< Eliom_common.scope ] ->
-    ?options:Eliom_registration.Redirection.options ->
+    ?options:options ->
     ?charset:string ->
     ?code:int ->
     ?content_type:string ->
     ?headers:Http_headers.t ->
     ?secure_session:bool ->
-    service:('get, 'post, 'c, 'd, 'e, Eliom_service.non_ext,
-             Eliom_service.reg, [< `WithSuffix | `WithoutSuffix ], 'f, 'g,
-             'b Eliom_registration.Redirection.return)
+    service:('get, 'post, 'b, 'c, 'd, Eliom_service.non_ext,
+             Eliom_service.reg, [< `WithSuffix | `WithoutSuffix ], 'e, 'f,
+             'a return)
             Eliom_service.t ->
-    ?error_handler:((string * exn) list ->
-                    ('a, 'b) Eliom_registration.Redirection.page Lwt.t) ->
-    ('get -> 'post -> ('a, 'b) Eliom_registration.Redirection.page Lwt.t) ->
-    unit
+    ?error_handler:((string * exn) list -> 'a page Lwt.t) ->
+    ('get -> 'post -> 'a page Lwt.t) -> unit
   val create :
     ?scope:[< Eliom_common.scope ] ->
-    ?options:Eliom_registration.Redirection.options ->
+    ?options:options ->
     ?charset:string ->
     ?code:int ->
     ?content_type:string ->
@@ -40,23 +37,21 @@
     ?csrf_secure:bool ->
     ?max_use:int ->
     ?timeout:float ->
-    meth:('m, 'gp, 'gn, 'pp, 'pn, [< `WithSuffix | `WithoutSuffix ] as 'c,
+    meth:('m, 'gp, 'gn, 'pp, 'pn, [< `WithSuffix | `WithoutSuffix ] as 'b,
           'mf, 'gp_)
-         Eliom_service.Meth.t ->
-    id:('att, 'co, 'mf, 'b Eliom_registration.Redirection.return, 'gp_)
-       Eliom_service.Id.t ->
-    ?error_handler:((string * exn) list ->
-                    ('a, 'b) Eliom_registration.Redirection.page Lwt.t) ->
-    ('gp -> 'pp -> ('a, 'b) Eliom_registration.Redirection.page Lwt.t) ->
-    ('gp, 'pp, 'm, 'att, 'co, Eliom_service.non_ext, Eliom_service.reg, 'c,
-     'gn, 'pn, 'b Eliom_registration.Redirection.return)
+         Eliom_service.meth ->
+    id:('att, 'co, Eliom_service.non_ext, Eliom_service.reg, 'mf, 'a return,
+        'gp_)
+       Eliom_service.id ->
+    ?error_handler:((string * exn) list -> 'a page Lwt.t) ->
+    ('gp -> 'pp -> 'a page Lwt.t) ->
+    ('gp, 'pp, 'm, 'att, 'co, Eliom_service.non_ext, Eliom_service.reg, 'b,
+     'gn, 'pn, 'a return)
     Eliom_service.t
   val send :
-    ?options:Eliom_registration.Redirection.options ->
+    ?options:options ->
     ?charset:string ->
     ?code:int ->
     ?content_type:string ->
-    ?headers:Http_headers.t ->
-    ('a, 'b) Eliom_registration.Redirection.page ->
-    'a Eliom_registration.Redirection.result Lwt.t
+    ?headers:Http_headers.t -> 'a page -> 'b Eliom_registration.kind Lwt.t
 end >>

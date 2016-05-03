@@ -1,7 +1,7 @@
 <<code language="ocaml" | sig
   type page
   type options
-  type return
+  type return = Eliom_service.non_ocaml
   type result
   val register :
     ?scope:[< Eliom_common.scope ] ->
@@ -34,8 +34,10 @@
     ?timeout:float ->
     meth:('m, 'gp, 'gn, 'pp, 'pn, [< `WithSuffix | `WithoutSuffix ] as 'a,
           'mf, 'gp_)
-         Eliom_service.Meth.t ->
-    id:('att, 'co, 'mf, Eliom_reg_sigs.S.return, 'gp_) Eliom_service.Id.t ->
+         Eliom_service.meth ->
+    id:('att, 'co, Eliom_service.non_ext, Eliom_service.reg, 'mf,
+        Eliom_reg_sigs.S.return, 'gp_)
+       Eliom_service.id ->
     ?error_handler:((string * exn) list -> Eliom_reg_sigs.S.page Lwt.t) ->
     ('gp -> 'pp -> Eliom_reg_sigs.S.page Lwt.t) ->
     ('gp, 'pp, 'm, 'att, 'co, Eliom_service.non_ext, Eliom_service.reg, 'a,

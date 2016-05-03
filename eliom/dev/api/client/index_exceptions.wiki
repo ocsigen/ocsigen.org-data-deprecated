@@ -19,11 +19,7 @@
 >>
 |
 |@@ @style="tet-align: left;"@@\\F|
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="False"| exception Eliom_client_value.False >> ~[<<a_api subproject="client" | module Eliom_client_value >>~]|<<div class="odocwiki_info"|~Event handlers like <<a_api | Eliom_content.Html5.F.a_onclick
-    >>  may raise <<span class="odocwiki_inlinecode"|~False>> to cancel the event ~(as if the ~Java~Script
-    function returned <<span class="odocwiki_inlinecode"|false>>~)~.
->>
-|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="False"| exception Eliom_client_value.False >> ~[<<a_api subproject="client" | module Eliom_client_value >>~]||
 |@@ @style="tet-align: left;"@@\\N|
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Not_ready"| exception Eliom_cscache.Not_ready >> ~[<<a_api subproject="client" | module Eliom_cscache >>~]||
 \\

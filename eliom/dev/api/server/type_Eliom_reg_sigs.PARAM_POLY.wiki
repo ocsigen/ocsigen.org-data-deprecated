@@ -1,0 +1,13 @@
+<<code language="ocaml" | sig
+  type _ page
+  type options
+  type _ return
+  val send :
+    ?options:Eliom_reg_sigs.PARAM_POLY.options ->
+    ?charset:string ->
+    ?code:int ->
+    ?content_type:string ->
+    ?headers:Http_headers.t ->
+    'a Eliom_reg_sigs.PARAM_POLY.page -> Ocsigen_http_frame.result Lwt.t
+  val send_appl_content : Eliom_service.send_appl_content
+end >>

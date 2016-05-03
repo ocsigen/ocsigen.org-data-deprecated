@@ -2,6 +2,11 @@
 <<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module>> <<span class="ocsforge_color_uid"|<<span class="ocsforge_color_uid"|Xml>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="ocsforge_color_keyword"|sig>><<a_api subproject="server" text=".." | module Eliom_content.Xml >><<span class="ocsforge_color_keyword"|end>>>>~Low~-level ~X~M~L manipulation~.
 
 ----
+
+
+==@@id="2_Basefunctions"@@~Base functions==
+
+      ~See <<a_api project="tyxml" | module Xml_sigs.Iterable >> ~.
 <<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|include>> Xml_sigs.Iterable>>
 
 

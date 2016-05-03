@@ -70,9 +70,9 @@ file~.
     before the service handler is called~.
 >>
 |
-|<<a_api subproject="server" | module Eliom_registration >>|<<div class="odocwiki_info"|~Eliom services registration for various kinds of
-    page content~: ~Eliom application~, valid <<a_api subproject="server" | module Eliom_registration.Html5 >>~,
-    actions~, redirections~, static files~, …
+|<<a_api subproject="server" | module Eliom_registration >>|<<div class="odocwiki_info"|~Eliom services registration for various kinds of page content~:
+    ~Eliom application~, valid <<a_api subproject="server" | module Eliom_registration.Html5 >>~, actions~, redirections~, static
+    files~, …
 >>
 |
 |<<a_api subproject="server" | module Eliom_registration.Html5 >>|<<div class="odocwiki_info"|~Eliom service registration for services that return ~H~T~M~L~5

@@ -16,6 +16,8 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="S"| module type Eliom_service_sigs.S >> ~[<<a_api subproject="client" | module Eliom_service_sigs >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="S"| module type Eliom_parameter_sigs.S >> ~[<<a_api subproject="client" | module Eliom_parameter_sigs >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="S"| module type Eliom_form_sigs.S >> ~[<<a_api subproject="client" | module Eliom_form_sigs >>~]||
+|@@ @style="tet-align: left;"@@\\T|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="TYPES"| module type Eliom_service_sigs.TYPES >> ~[<<a_api subproject="client" | module Eliom_service_sigs >>~]||
 |@@ @style="tet-align: left;"@@\\V|
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="VALUE"| module type Eliom_shared_sigs.VALUE >> ~[<<a_api subproject="client" | module Eliom_shared_sigs >>~]||
 \\

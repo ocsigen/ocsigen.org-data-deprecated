@@ -5,12 +5,10 @@
       takes a pair of parameters~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="( *** )"| value Eliom_openid.( *** ) >> ~[<<a_api subproject="server" | module Eliom_openid >>~]|<<div class="odocwiki_info"|~The ~P~A~P~E extension~.
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="( *** )"| value Eliom_openid.( *** ) >> ~[<<a_api subproject="server" | module Eliom_openid >>~]|<<div class="odocwiki_info"|~Product of two extension
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="(=|<)"| value Eliom_shared_sigs.S.Infix.(=|<) >> ~[<<a_api subproject="server" | module Eliom_shared_sigs.S.Infix >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|f ~=~|~< s>> is <<span class="odocwiki_inlinecode"|map f s>>~.
->>
-|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="(=|<)"| value Eliom_shared_sigs.S.Infix.(=|<) >> ~[<<a_api subproject="server" | module Eliom_shared_sigs.S.Infix >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="(>|=)"| value Eliom_shared_sigs.S.Infix.(>|=) >> ~[<<a_api subproject="server" | module Eliom_shared_sigs.S.Infix >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|s ~>~|~= f>> is <<span class="odocwiki_inlinecode"|map f s>>~.
 >>
 |
@@ -83,7 +81,9 @@
         ~(<<a_api | type Eliom_content.Html5.elt >> ~)~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="authenticate"| value Eliom_openid.Make.authenticate >> ~[<<a_api subproject="server" | module Eliom_openid.Make >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="authenticate"| value Eliom_openid.Make.authenticate >> ~[<<a_api subproject="server" | module Eliom_openid.Make >>~]|<<div class="odocwiki_info"|~Authenticate an user~.
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="author"| value Atom_feed.author >> ~[<<a_api subproject="server" | module Atom_feed >>~]|<<div class="odocwiki_info"|author tag
 >>
 |
@@ -140,7 +140,7 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="clean_request_cache"| value Eliom_request_info.clean_request_cache >> ~[<<a_api subproject="server" | module Eliom_request_info >>~]|<<div class="odocwiki_info"|~Remove all data from the request cache
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="client"| value Eliom_shared_sigs.VALUE.client >> ~[<<a_api subproject="server" | module Eliom_shared_sigs.VALUE >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|client x>> is the client~-side portion of <<span class="odocwiki_inlinecode"|x>>~.
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="client"| value Eliom_shared_sigs.VALUE.client >> ~[<<a_api subproject="server" | module Eliom_shared_sigs.VALUE >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|local x>> is the local portion of <<span class="odocwiki_inlinecode"|x>>~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="client_value"| value Eliom_syntax.client_value >> ~[<<a_api subproject="server" | module Eliom_syntax >>~]|<<div class="odocwiki_info"|~Registers a client value datum for the next server section when
@@ -169,18 +169,6 @@
       coordinates of a point in an <<span class="odocwiki_inlinecode"|~<input type~="image" ~.~.~.~>>>~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="create"| value Eliom_atom.Reg.create >> ~[<<a_api subproject="server" | module Eliom_atom.Reg >>~]|<<div class="odocwiki_info"|~Same as <<span class="odocwiki_inlinecode"|~Eliom~_service~.create>> followed by <<a_api subproject="server" | val Eliom_atom.Reg.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="create"| value Eliom_registration.Any.create >> ~[<<a_api subproject="server" | module Eliom_registration.Any >>~]|<<div class="odocwiki_info"|~Same as <<span class="odocwiki_inlinecode"|~Eliom~_service~.create>> followed by <<a_api subproject="server" | val Eliom_registration.Any.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="create"| value Eliom_registration.Ocaml.create >> ~[<<a_api subproject="server" | module Eliom_registration.Ocaml >>~]|<<div class="odocwiki_info"|~Same as <<span class="odocwiki_inlinecode"|~Eliom~_service~.create>> followed by <<a_api subproject="server" | val Eliom_registration.Ocaml.register >>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="create"| value Eliom_registration.Redirection.create >> ~[<<a_api subproject="server" | module Eliom_registration.Redirection >>~]|<<div class="odocwiki_info"|~Same as <<span class="odocwiki_inlinecode"|~Eliom~_service~.create>> followed by <<a_api subproject="server" | val Eliom_registration.Redirection.register >>~.
->>
-|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="create"| value Eliom_cscache.create >> ~[<<a_api subproject="server" | module Eliom_cscache >>~]|<<div class="odocwiki_info"|~Create a new table~.
 >>
 |
@@ -190,9 +178,6 @@
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="create"| value Eliom_react.Up.create >> ~[<<a_api subproject="server" | module Eliom_react.Up >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|create param>> creates an ~Up event~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="create"| value Eliom_mkreg.MakeRegister_AlphaReturn.create >> ~[<<a_api subproject="server" | module Eliom_mkreg.MakeRegister_AlphaReturn >>~]|<<div class="odocwiki_info"|~Same as <<span class="odocwiki_inlinecode"|~Eliom~_service~.create>> followed by <<span class="odocwiki_inlinecode"|register>>~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="create"| value Eliom_content.Html5.Custom_data.create >> ~[<<a_api subproject="server" | module Eliom_content.Html5.Custom_data >>~]|<<div class="odocwiki_info"|~Create a custom data field by providing string conversion functions~.
@@ -213,13 +198,11 @@
       manipulating the list~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="create"| value Eliom_shared_sigs.VALUE.create >> ~[<<a_api subproject="server" | module Eliom_shared_sigs.VALUE >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="create"| value Eliom_reg_sigs.S.create >> ~[<<a_api subproject="server" | module Eliom_reg_sigs.S >>~]|<<div class="odocwiki_info"|~Same as <<span class="odocwiki_inlinecode"|~Eliom~_service~.create>> followed by <<a_api subproject="server" | val Eliom_reg_sigs.S.register >>~.
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="create"| value Eliom_shared_sigs.VALUE.create >> ~[<<a_api subproject="server" | module Eliom_shared_sigs.VALUE >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|client x>> is the client~-side portion of <<span class="odocwiki_inlinecode"|x>>~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="create_external"| value Eliom_service_sigs.S.create_external >> ~[<<a_api subproject="server" | module Eliom_service_sigs.S >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|create~_external ~~prefix ~~path ~~get~_params ~(~)>>
-      creates a service for an external web site~, that will use ~G~E~T
-      method and requires <<span class="odocwiki_inlinecode"|get~_params>> as parameters~.
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="create"| value Eliom_reg_sigs.S_poly.create >> ~[<<a_api subproject="server" | module Eliom_reg_sigs.S_poly >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="create"| value Eliom_reg_sigs.S.create >> ~[<<a_api subproject="server" | module Eliom_reg_sigs.S >>~]|<<div class="odocwiki_info"|~Same as <<span class="odocwiki_inlinecode"|~Eliom~_service~.create>> followed by <<a_api subproject="server" | val Eliom_reg_sigs.S.register >>~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="create_filtered"| value Eliom_bus.create_filtered >> ~[<<a_api subproject="server" | module Eliom_bus >>~]|<<div class="odocwiki_info"|~Same as <<span class="odocwiki_inlinecode"|create>>~, but data is filtered through <<span class="odocwiki_inlinecode"|filter>> function
@@ -333,9 +316,7 @@
        to <<span class="odocwiki_inlinecode"|value>> in <<span class="odocwiki_inlinecode"|cache>>~, if not already present~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="do_get_request"| value Eliom_s2s.do_get_request >> ~[<<a_api subproject="server" | module Eliom_s2s >>~]|<<div class="odocwiki_info"|~Do a get request towards a given url
->>
-|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="do_get_request"| value Eliom_s2s.do_get_request >> ~[<<a_api subproject="server" | module Eliom_s2s >>~]||
 |@@ @style="tet-align: left;"@@\\E|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="eliom"| value Eliom_lib.Lwt_log.eliom >> ~[<<a_api subproject="server" | module Eliom_lib.Lwt_log >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="eliom_link_too_old"| value Eliom_common.eliom_link_too_old >> ~[<<a_api subproject="server" | module Eliom_common >>~]|<<div class="odocwiki_info"|~If present and true in request data~, it means that
@@ -385,7 +366,8 @@
 >>
 |
 |@@ @style="tet-align: left;"@@\\F|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="f"| value Eliom_openid.HiddenServiceInfo.f >> ~[<<a_api subproject="server" | module Eliom_openid.HiddenServiceInfo >>~]|<<div class="odocwiki_info"|~The path of the hidden service
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="f"| value Eliom_openid.HiddenServiceInfo.f >> ~[<<a_api subproject="server" | module Eliom_openid.HiddenServiceInfo >>~]|<<div class="odocwiki_info"|~The function called when an user connects to the hidden service
+    ~(not that hidden~) without being in an identication process~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="feed"| value Atom_feed.feed >> ~[<<a_api subproject="server" | module Atom_feed >>~]|<<div class="odocwiki_info"|~Feed tag
@@ -723,6 +705,7 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="get_volatile_data_state_timeout"| value Eliom_state.get_volatile_data_state_timeout >> ~[<<a_api subproject="server" | module Eliom_state >>~]|<<div class="odocwiki_info"|returns the timeout for current volatile data state~.
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="global_data_path"| value Eliom_registration.APPL_PARAMS.global_data_path >> ~[<<a_api subproject="server" | module Eliom_registration.APPL_PARAMS >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="global_scope"| value Eliom_common.global_scope >> ~[<<a_api subproject="server" | module Eliom_common >>~]||
 |@@ @style="tet-align: left;"@@\\H|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="have_id"| value Eliom_content.Html5.Id.have_id >> ~[<<a_api subproject="server" | module Eliom_content.Html5.Id >>~]||
@@ -804,7 +787,6 @@
       client process in this ~Eliom application~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="is_post"| value Eliom_service_types.Meth.is_post >> ~[<<a_api subproject="server" | module Eliom_service_types.Meth >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="iter_persistent_data_cookies"| value Eliom_state.Ext.iter_persistent_data_cookies >> ~[<<a_api subproject="server" | module Eliom_state.Ext >>~]|<<div class="odocwiki_info"|~Iterator on persistent cookies~.
 >>
 |
@@ -852,9 +834,7 @@
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="list_scope_hierarchies"| value Eliom_common.list_scope_hierarchies >> ~[<<a_api subproject="server" | module Eliom_common >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="local"| value Eliom_shared_sigs.VALUE.local >> ~[<<a_api subproject="server" | module Eliom_shared_sigs.VALUE >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|local x>> is the local portion of <<span class="odocwiki_inlinecode"|x>>~.
->>
-|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="local"| value Eliom_shared_sigs.VALUE.local >> ~[<<a_api subproject="server" | module Eliom_shared_sigs.VALUE >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="local_find"| value Eliom_cscache.local_find >> ~[<<a_api subproject="server" | module Eliom_cscache >>~]|<<div class="odocwiki_info"|~Find a piece of data in local cache~,
       without trying to fetch it from server~.
 >>
@@ -979,22 +959,19 @@
 >>
 |
 |@@ @style="tet-align: left;"@@\\P|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="pape"| value Eliom_openid.pape >> ~[<<a_api subproject="server" | module Eliom_openid >>~]|<<div class="odocwiki_info"|~The nist level
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="pape"| value Eliom_openid.pape >> ~[<<a_api subproject="server" | module Eliom_openid >>~]|<<div class="odocwiki_info"|~The ~P~A~P~E extension~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="params"| value Eliom_service_types.Meth.params >> ~[<<a_api subproject="server" | module Eliom_service_types.Meth >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="parse_config"| value Eliom_config.parse_config >> ~[<<a_api subproject="server" | module Eliom_config >>~]|<<div class="odocwiki_info"|~Process the configuration
     ~(same as the one returned by
     <<a_api module="Eliom_config" | val get_config>> ~)
     by a given specification ~(cf~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="parse_key_pairs"| value Eliom_s2s.parse_key_pairs >> ~[<<a_api subproject="server" | module Eliom_s2s >>~]|<<div class="odocwiki_info"|~Parse an answer in the ~Key~-~Value form ~:
-{{{foo:bar
-foobar:value}}}
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="parse_key_pairs"| value Eliom_s2s.parse_key_pairs >> ~[<<a_api subproject="server" | module Eliom_s2s >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="path"| value Eliom_openid.HiddenServiceInfo.path >> ~[<<a_api subproject="server" | module Eliom_openid.HiddenServiceInfo >>~]|<<div class="odocwiki_info"|~The path of the hidden service
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="path"| value Eliom_openid.HiddenServiceInfo.path >> ~[<<a_api subproject="server" | module Eliom_openid.HiddenServiceInfo >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="pcdata"| value Eliom_content.Html5.R.pcdata >> ~[<<a_api subproject="server" | module Eliom_content.Html5.R >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|pcdata s>> produces a node of type
         <<span class="odocwiki_inlinecode"|~[~> ~Html~5~_types~.span~] elt>>
         out of the string signal <<span class="odocwiki_inlinecode"|s>>~.
@@ -1048,28 +1025,9 @@ foobar:value}}}
     be rewritten in d~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register"| value Eliom_atom.Reg.register >> ~[<<a_api subproject="server" | module Eliom_atom.Reg >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|register service handler>> will associate the
-    <<span class="odocwiki_inlinecode"|service>> to the function <<span class="odocwiki_inlinecode"|handler>>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register"| value Eliom_registration.Any.register >> ~[<<a_api subproject="server" | module Eliom_registration.Any >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|register service handler>> will associate the
-    <<span class="odocwiki_inlinecode"|service>> to the function <<span class="odocwiki_inlinecode"|handler>>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register"| value Eliom_registration.Ocaml.register >> ~[<<a_api subproject="server" | module Eliom_registration.Ocaml >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|register service handler>> will associate the
-    <<span class="odocwiki_inlinecode"|service>> to the function <<span class="odocwiki_inlinecode"|handler>>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register"| value Eliom_registration.Redirection.register >> ~[<<a_api subproject="server" | module Eliom_registration.Redirection >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|register service handler>> will associate the
-    <<span class="odocwiki_inlinecode"|service>> to the function <<span class="odocwiki_inlinecode"|handler>>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register"| value Eliom_mkreg.MakeRegister_AlphaReturn.register >> ~[<<a_api subproject="server" | module Eliom_mkreg.MakeRegister_AlphaReturn >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|register service handler>> will associate the
-    <<span class="odocwiki_inlinecode"|service>> to the function <<span class="odocwiki_inlinecode"|handler>>~.
->>
-|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register"| value Eliom_reg_sigs.S_poly.register >> ~[<<a_api subproject="server" | module Eliom_reg_sigs.S_poly >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register"| value Eliom_reg_sigs.S.register >> ~[<<a_api subproject="server" | module Eliom_reg_sigs.S >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|register service handler>> will associate the
-    <<span class="odocwiki_inlinecode"|service>> to the function <<span class="odocwiki_inlinecode"|handler>>~.
+      <<span class="odocwiki_inlinecode"|service>> to the function <<span class="odocwiki_inlinecode"|handler>>~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_eliom_extension"| value Eliom_extension.register_eliom_extension >> ~[<<a_api subproject="server" | module Eliom_extension >>~]||
@@ -1104,12 +1062,7 @@ foobar:value}}}
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="remove_persistent_data"| value Eliom_state.Ext.Low_level.remove_persistent_data >> ~[<<a_api subproject="server" | module Eliom_state.Ext.Low_level >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="remove_volatile_data"| value Eliom_state.Ext.Low_level.remove_volatile_data >> ~[<<a_api subproject="server" | module Eliom_state.Ext.Low_level >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="request_scope"| value Eliom_common.request_scope >> ~[<<a_api subproject="server" | module Eliom_common >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="result_of_http_result"| value Eliom_reg_sigs.PARAM_ALPHA_RETURN.result_of_http_result >> ~[<<a_api subproject="server" | module Eliom_reg_sigs.PARAM_ALPHA_RETURN >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="result_of_http_result"| value Eliom_reg_sigs.PARAM.result_of_http_result >> ~[<<a_api subproject="server" | module Eliom_reg_sigs.PARAM >>~]|<<div class="odocwiki_info"|~Whether the service is capable to send application content when
-      required~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="ret"| value Eliom_reg_sigs.PARAM.ret >> ~[<<a_api subproject="server" | module Eliom_reg_sigs.PARAM >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="result_of_http_result"| value Eliom_reg_sigs.PARAM.result_of_http_result >> ~[<<a_api subproject="server" | module Eliom_reg_sigs.PARAM >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="rights"| value Atom_feed.rights >> ~[<<a_api subproject="server" | module Atom_feed >>~]|<<div class="odocwiki_info"|~Rights tag
 >>
 |
@@ -1117,36 +1070,23 @@ foobar:value}}}
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="select"| value Eliom_form_sigs.S.select >> ~[<<a_api subproject="server" | module Eliom_form_sigs.S >>~]|<<div class="odocwiki_info"|~Creates a <<span class="odocwiki_inlinecode"|~<select~>>> tag~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="send"| value Eliom_atom.Reg.send >> ~[<<a_api subproject="server" | module Eliom_atom.Reg >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|send page>> build the ~H~T~T~P frame corresponding to
-    <<span class="odocwiki_inlinecode"|page>>~.
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="send"| value Eliom_registration.Redirection.send >> ~[<<a_api subproject="server" | module Eliom_registration.Redirection >>~]|<<div class="odocwiki_info"|~More polymorphic version of <<span class="odocwiki_inlinecode"|~Eliom~_reg~_sigs~.send>>
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="send"| value Eliom_registration.Any.send >> ~[<<a_api subproject="server" | module Eliom_registration.Any >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|send page>> build the ~H~T~T~P frame corresponding to
-    <<span class="odocwiki_inlinecode"|page>>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="send"| value Eliom_registration.Ocaml.send >> ~[<<a_api subproject="server" | module Eliom_registration.Ocaml >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|send page>> build the ~H~T~T~P frame corresponding to
-    <<span class="odocwiki_inlinecode"|page>>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="send"| value Eliom_registration.Redirection.send >> ~[<<a_api subproject="server" | module Eliom_registration.Redirection >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|send page>> build the ~H~T~T~P frame corresponding to
-    <<span class="odocwiki_inlinecode"|page>>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="send"| value Eliom_mkreg.MakeRegister_AlphaReturn.send >> ~[<<a_api subproject="server" | module Eliom_mkreg.MakeRegister_AlphaReturn >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|send page>> build the ~H~T~T~P frame corresponding to
-    <<span class="odocwiki_inlinecode"|page>>~.
->>
-|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="send"| value Eliom_reg_sigs.S_poly_with_send.send >> ~[<<a_api subproject="server" | module Eliom_reg_sigs.S_poly_with_send >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="send"| value Eliom_reg_sigs.S.send >> ~[<<a_api subproject="server" | module Eliom_reg_sigs.S >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|send page>> build the ~H~T~T~P frame corresponding to
-    <<span class="odocwiki_inlinecode"|page>>~.
+      <<span class="odocwiki_inlinecode"|page>>~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="send"| value Eliom_reg_sigs.PARAM_ALPHA_RETURN.send >> ~[<<a_api subproject="server" | module Eliom_reg_sigs.PARAM_ALPHA_RETURN >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="send"| value Eliom_reg_sigs.PARAM_POLY.send >> ~[<<a_api subproject="server" | module Eliom_reg_sigs.PARAM_POLY >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="send"| value Eliom_reg_sigs.PARAM.send >> ~[<<a_api subproject="server" | module Eliom_reg_sigs.PARAM >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="send_appl_content"| value Eliom_reg_sigs.PARAM_ALPHA_RETURN.send_appl_content >> ~[<<a_api subproject="server" | module Eliom_reg_sigs.PARAM_ALPHA_RETURN >>~]|<<div class="odocwiki_info"|~See <<a_api subproject="server" | val Eliom_reg_sigs.PARAM.send_appl_content >>~.
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="send_appl_content"| value Eliom_reg_sigs.PARAM_POLY.send_appl_content >> ~[<<a_api subproject="server" | module Eliom_reg_sigs.PARAM_POLY >>~]|<<div class="odocwiki_info"|~See <<a_api subproject="server" | val Eliom_reg_sigs.PARAM.send_appl_content >>~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="send_appl_content"| value Eliom_reg_sigs.PARAM.send_appl_content >> ~[<<a_api subproject="server" | module Eliom_reg_sigs.PARAM >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="send_appl_content"| value Eliom_reg_sigs.PARAM.send_appl_content >> ~[<<a_api subproject="server" | module Eliom_reg_sigs.PARAM >>~]|<<div class="odocwiki_info"|~Whether the service is capable to send application content when
+      required~.
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="server_function"| value Eliom_client.server_function >> ~[<<a_api subproject="server" | module Eliom_client >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|server~_function argument~_type f>> creates a value of type     <<a_api | type Eliom_client.server_function>> ~.
 >>
 |
@@ -1330,9 +1270,7 @@ foobar:value}}}
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="string"| value Eliom_form_sigs.S.string >> ~[<<a_api subproject="server" | module Eliom_form_sigs.S >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="string_escape"| value Eliom_lib.string_escape >> ~[<<a_api subproject="server" | module Eliom_lib >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="string_of_openid_error"| value Eliom_openid.string_of_openid_error >> ~[<<a_api subproject="server" | module Eliom_openid >>~]|<<div class="odocwiki_info"|~Prettyprint an ~Open~I~D ~Error
->>
-|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="string_of_openid_error"| value Eliom_openid.string_of_openid_error >> ~[<<a_api subproject="server" | module Eliom_openid >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="string_radio_required"| value Eliom_form_sigs.S.string_radio_required >> ~[<<a_api subproject="server" | module Eliom_form_sigs.S >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="strip_ns"| value Eliom_s2s.strip_ns >> ~[<<a_api subproject="server" | module Eliom_s2s >>~]|<<div class="odocwiki_info"|~Retrieves parameters beginning with the specified namespace and
     strips it~.
@@ -1440,7 +1378,6 @@ foobar:value}}}
    ~(and turn back to the default~)~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="untype"| value Eliom_service_sigs.S.Id.untype >> ~[<<a_api subproject="server" | module Eliom_service_sigs.S.Id >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="update"| value Eliom_registration.TMPL_PARAMS.update >> ~[<<a_api subproject="server" | module Eliom_registration.TMPL_PARAMS >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="uri"| value Atom_feed.uri >> ~[<<a_api subproject="server" | module Atom_feed >>~]|<<div class="odocwiki_info"|uri tag~, basically~, simply a converter
 >>
@@ -1470,16 +1407,13 @@ foobar:value}}}
       length <<span class="odocwiki_inlinecode"|time>> in the <<span class="odocwiki_inlinecode"|scope>>~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="which"| value Eliom_service_types.Meth.which >> ~[<<a_api subproject="server" | module Eliom_service_types.Meth >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="with_css_file"| value Eliom_tools.with_css_file >> ~[<<a_api subproject="server" | module Eliom_tools >>~]|<<div class="odocwiki_info"|~Record an ~C~S~S file to be included in <<span class="odocwiki_inlinecode"|~Eliom~_tools~.~F~.html>>~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="with_js_file"| value Eliom_tools.with_js_file >> ~[<<a_api subproject="server" | module Eliom_tools >>~]|<<div class="odocwiki_info"|~Record an ~(external~) ~Java~Script file to be included in <<span class="odocwiki_inlinecode"|~Eliom~_tools~.~F~.html>>~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="wrap"| value Eliom_wrap.wrap >> ~[<<a_api subproject="server" | module Eliom_wrap >>~]|<<div class="odocwiki_info"|marshal a value~, taking into account the tags~.
->>
-|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="wrap"| value Eliom_wrap.wrap >> ~[<<a_api subproject="server" | module Eliom_wrap >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="wrap"| value Eliom_content.Xml.wrap >> ~[<<a_api subproject="server" | module Eliom_content.Xml >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|~Eliom~_content~.~Xml~.wrap page v>> is like <<span class="odocwiki_inlinecode"|~Eliom~_wrap~.wrap v>> but
       it makes sure that all <<span class="odocwiki_inlinecode"|elt>>s in <<span class="odocwiki_inlinecode"|v>> which are included in
       <<span class="odocwiki_inlinecode"|page>> are sent with empty content~.

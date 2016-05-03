@@ -4,14 +4,18 @@
 <<pre id="EXCEPTIONWrong_scope" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|exception>> <<span class="odocwiki_name"|Wrong_scope>>>><<div class="odocwiki_info"|~Exception raised when you try to access a reference
       belonging to a scope different to the state~'s scope
 >>
-<<pre class="ocsforge_color odocwiki_code" id="TYPEtimeout"|<<span class="ocsforge_color_keyword"|type>> <<span class="odocwiki_name"|timeout>> <<span class="ocsforge_color_delimiter"|~=>> <<span class="odocwiki_variants"|<<span class="odocwiki_variant"|<<span class="odocwiki_variant_constr"|<<span class="ocsforge_color_keyword"| ~|>> <<span class="ocsforge_color_uid"|TGlobal>>>>>><<span class="odocwiki_variant"|<<span class="odocwiki_variant_constr"|<<span class="ocsforge_color_keyword"| ~|>> <<span class="ocsforge_color_uid"|TNone>>>>>><<span class="odocwiki_variant"|<<span class="odocwiki_variant_constr"|<<span class="ocsforge_color_keyword"| ~|>> <<span class="ocsforge_color_uid"|TSome>> <<span class="ocsforge_color_keyword"|of>> <<span class="odocwiki_type"|float>>>>>>>>>><<div class="odocwiki_info"|~Type used to describe session timeouts
+<<pre class="ocsforge_color odocwiki_code" id="TYPEtimeout"|<<span class="ocsforge_color_keyword"|type>> <<span class="odocwiki_name"|timeout>> <<span class="ocsforge_color_delimiter"|~=>> <<span class="odocwiki_variants"|<<span class="odocwiki_variant"|<<span class="odocwiki_variant_constr"|<<span class="ocsforge_color_keyword"| ~|>> <<span class="ocsforge_color_uid"|TGlobal>>>><<span class="odocwiki_comments"|<<span class="odocwiki_comments_open"|(*>> <<span|<<div class="odocwiki_info"|see global setting
+>>
+>><<span class="odocwiki_comments_close"| ~*)>>>>>><<span class="odocwiki_variant"|<<span class="odocwiki_variant_constr"|<<span class="ocsforge_color_keyword"| ~|>> <<span class="ocsforge_color_uid"|TNone>>>><<span class="odocwiki_comments"|<<span class="odocwiki_comments_open"|(*>> <<span|<<div class="odocwiki_info"|explicitly set no timeout
+>>
+>><<span class="odocwiki_comments_close"| ~*)>>>>>><<span class="odocwiki_variant"|<<span class="odocwiki_variant_constr"|<<span class="ocsforge_color_keyword"| ~|>> <<span class="ocsforge_color_uid"|TSome>> <<span class="ocsforge_color_keyword"|of>> <<span class="odocwiki_type"|float>>>><<span class="odocwiki_comments"|<<span class="odocwiki_comments_open"|(*>> <<span|<<div class="odocwiki_info"|timeout duration in seconds
+>>
+>><<span class="odocwiki_comments_close"| ~*)>>>>>>>>>><<div class="odocwiki_info"|~Type used to describe session timeouts
 >>
 
-timeout duration in seconds
-<<pre class="ocsforge_color odocwiki_code" id="TYPEservice_cookie_info"|<<span class="ocsforge_color_keyword"|type>> <<span class="odocwiki_name"|service~_cookie~_info>>>><<div class="odocwiki_info"|~These types are used to get or set information about browser
+~These types are used to get or set information about browser
       or process cookies ~(like timeouts~)~.
->>
-<<pre class="ocsforge_color odocwiki_code" id="TYPEdata_cookie_info"|<<span class="ocsforge_color_keyword"|type>> <<span class="odocwiki_name"|data~_cookie~_info>>>><<pre class="ocsforge_color odocwiki_code" id="TYPEpersistent_cookie_info"|<<span class="ocsforge_color_keyword"|type>> <<span class="odocwiki_name"|persistent~_cookie~_info>>>><<pre class="ocsforge_color odocwiki_code" id="TYPEstate"|<<span class="ocsforge_color_keyword"|type>> <<span class="odocwiki_type"|<<span class="ocsforge_color_delimiter"| ( >>+'a, +'b<<span class="ocsforge_color_delimiter"| ) >>>> <<span class="odocwiki_name"|state>>>><<div class="odocwiki_info"|~The type of states~. ~The first parameter corresponds to the scope level
+<<pre class="ocsforge_color odocwiki_code" id="TYPEservice_cookie_info"|<<span class="ocsforge_color_keyword"|type>> <<span class="odocwiki_name"|service~_cookie~_info>>>><<pre class="ocsforge_color odocwiki_code" id="TYPEdata_cookie_info"|<<span class="ocsforge_color_keyword"|type>> <<span class="odocwiki_name"|data~_cookie~_info>>>><<pre class="ocsforge_color odocwiki_code" id="TYPEpersistent_cookie_info"|<<span class="ocsforge_color_keyword"|type>> <<span class="odocwiki_name"|persistent~_cookie~_info>>>><<pre class="ocsforge_color odocwiki_code" id="TYPEstate"|<<span class="ocsforge_color_keyword"|type>> <<span class="odocwiki_type"|<<span class="ocsforge_color_delimiter"| ( >>+'a, +'b<<span class="ocsforge_color_delimiter"| ) >>>> <<span class="odocwiki_name"|state>>>><<div class="odocwiki_info"|~The type of states~. ~The first parameter corresponds to the scope level
       and the second one to the kind of state ~(volatile or persistent data~,
       or service state~)
 >>

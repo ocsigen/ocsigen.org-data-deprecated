@@ -2,8 +2,6 @@
   type page
   type options
   type result
-  type return
-  val ret : Eliom_reg_sigs.PARAM.return Eliom_service.Ret.t
   val send :
     ?options:Eliom_reg_sigs.PARAM.options ->
     ?charset:string ->

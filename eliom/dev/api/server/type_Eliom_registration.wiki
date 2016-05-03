@@ -43,8 +43,10 @@
         ?timeout:float ->
         meth:('m, 'gp, 'gn, 'pp, 'pn,
               [< `WithSuffix | `WithoutSuffix ] as 'a, 'mf, 'gp_)
-             Eliom_service.Meth.t ->
-        id:('att, 'co, 'mf, return, 'gp_) Eliom_service.Id.t ->
+             Eliom_service.meth ->
+        id:('att, 'co, Eliom_service.non_ext, Eliom_service.reg, 'mf, 
+            return, 'gp_)
+           Eliom_service.id ->
         ?error_handler:((string * exn) list -> page Lwt.t) ->
         ('gp -> 'pp -> page Lwt.t) ->
         ('gp, 'pp, 'm, 'att, 'co, Eliom_service.non_ext, Eliom_service.reg,
@@ -57,7 +59,11 @@
         ?content_type:string ->
         ?headers:Http_headers.t -> page -> result Lwt.t
     end
-  module type APPL_PARAMS = sig val application_name : string end
+  module type APPL_PARAMS =
+    sig
+      val application_name : string
+      val global_data_path : string list option
+    end
   type appl_service_options = { do_not_launch : bool; }
   val default_appl_service_options : Eliom_registration.appl_service_options
   module type ELIOM_APPL =
@@ -109,8 +115,10 @@
         ?timeout:float ->
         meth:('m, 'gp, 'gn, 'pp, 'pn,
               [< `WithSuffix | `WithoutSuffix ] as 'a, 'mf, 'gp_)
-             Eliom_service.Meth.t ->
-        id:('att, 'co, 'mf, return, 'gp_) Eliom_service.Id.t ->
+             Eliom_service.meth ->
+        id:('att, 'co, Eliom_service.non_ext, Eliom_service.reg, 'mf, 
+            return, 'gp_)
+           Eliom_service.id ->
         ?error_handler:((string * exn) list -> page Lwt.t) ->
         ('gp -> 'pp -> page Lwt.t) ->
         ('gp, 'pp, 'm, 'att, 'co, Eliom_service.non_ext, Eliom_service.reg,
@@ -175,8 +183,10 @@
           ?timeout:float ->
           meth:('m, 'gp, 'gn, 'pp, 'pn,
                 [< `WithSuffix | `WithoutSuffix ] as 'a, 'mf, 'gp_)
-               Eliom_service.Meth.t ->
-          id:('att, 'co, 'mf, return, 'gp_) Eliom_service.Id.t ->
+               Eliom_service.meth ->
+          id:('att, 'co, Eliom_service.non_ext, Eliom_service.reg, 'mf,
+              return, 'gp_)
+             Eliom_service.id ->
           ?error_handler:((string * exn) list -> page Lwt.t) ->
           ('gp -> 'pp -> page Lwt.t) ->
           ('gp, 'pp, 'm, 'att, 'co, Eliom_service.non_ext, Eliom_service.reg,
@@ -226,8 +236,10 @@
         ?timeout:float ->
         meth:('m, 'gp, 'gn, 'pp, 'pn,
               [< `WithSuffix | `WithoutSuffix ] as 'a, 'mf, 'gp_)
-             Eliom_service.Meth.t ->
-        id:('att, 'co, 'mf, return, 'gp_) Eliom_service.Id.t ->
+             Eliom_service.meth ->
+        id:('att, 'co, Eliom_service.non_ext, Eliom_service.reg, 'mf, 
+            return, 'gp_)
+           Eliom_service.id ->
         ?error_handler:((string * exn) list -> page Lwt.t) ->
         ('gp -> 'pp -> page Lwt.t) ->
         ('gp, 'pp, 'm, 'att, 'co, Eliom_service.non_ext, Eliom_service.reg,
@@ -285,8 +297,10 @@
           ?timeout:float ->
           meth:('m, 'gp, 'gn, 'pp, 'pn,
                 [< `WithSuffix | `WithoutSuffix ] as 'a, 'mf, 'gp_)
-               Eliom_service.Meth.t ->
-          id:('att, 'co, 'mf, return, 'gp_) Eliom_service.Id.t ->
+               Eliom_service.meth ->
+          id:('att, 'co, Eliom_service.non_ext, Eliom_service.reg, 'mf,
+              return, 'gp_)
+             Eliom_service.id ->
           ?error_handler:((string * exn) list -> page Lwt.t) ->
           ('gp -> 'pp -> page Lwt.t) ->
           ('gp, 'pp, 'm, 'att, 'co, Eliom_service.non_ext, Eliom_service.reg,
@@ -336,8 +350,10 @@
         ?timeout:float ->
         meth:('m, 'gp, 'gn, 'pp, 'pn,
               [< `WithSuffix | `WithoutSuffix ] as 'a, 'mf, 'gp_)
-             Eliom_service.Meth.t ->
-        id:('att, 'co, 'mf, return, 'gp_) Eliom_service.Id.t ->
+             Eliom_service.meth ->
+        id:('att, 'co, Eliom_service.non_ext, Eliom_service.reg, 'mf, 
+            return, 'gp_)
+           Eliom_service.id ->
         ?error_handler:((string * exn) list -> page Lwt.t) ->
         ('gp -> 'pp -> page Lwt.t) ->
         ('gp, 'pp, 'm, 'att, 'co, Eliom_service.non_ext, Eliom_service.reg,
@@ -387,8 +403,10 @@
         ?timeout:float ->
         meth:('m, 'gp, 'gn, 'pp, 'pn,
               [< `WithSuffix | `WithoutSuffix ] as 'a, 'mf, 'gp_)
-             Eliom_service.Meth.t ->
-        id:('att, 'co, 'mf, return, 'gp_) Eliom_service.Id.t ->
+             Eliom_service.meth ->
+        id:('att, 'co, Eliom_service.non_ext, Eliom_service.reg, 'mf, 
+            return, 'gp_)
+           Eliom_service.id ->
         ?error_handler:((string * exn) list -> page Lwt.t) ->
         ('gp -> 'pp -> page Lwt.t) ->
         ('gp, 'pp, 'm, 'att, 'co, Eliom_service.non_ext, Eliom_service.reg,
@@ -438,8 +456,10 @@
         ?timeout:float ->
         meth:('m, 'gp, 'gn, 'pp, 'pn,
               [< `WithSuffix | `WithoutSuffix ] as 'a, 'mf, 'gp_)
-             Eliom_service.Meth.t ->
-        id:('att, 'co, 'mf, return, 'gp_) Eliom_service.Id.t ->
+             Eliom_service.meth ->
+        id:('att, 'co, Eliom_service.non_ext, Eliom_service.reg, 'mf, 
+            return, 'gp_)
+           Eliom_service.id ->
         ?error_handler:((string * exn) list -> page Lwt.t) ->
         ('gp -> 'pp -> page Lwt.t) ->
         ('gp, 'pp, 'm, 'att, 'co, Eliom_service.non_ext, Eliom_service.reg,
@@ -489,8 +509,10 @@
         ?timeout:float ->
         meth:('m, 'gp, 'gn, 'pp, 'pn,
               [< `WithSuffix | `WithoutSuffix ] as 'a, 'mf, 'gp_)
-             Eliom_service.Meth.t ->
-        id:('att, 'co, 'mf, return, 'gp_) Eliom_service.Id.t ->
+             Eliom_service.meth ->
+        id:('att, 'co, Eliom_service.non_ext, Eliom_service.reg, 'mf, 
+            return, 'gp_)
+           Eliom_service.id ->
         ?error_handler:((string * exn) list -> page Lwt.t) ->
         ('gp -> 'pp -> page Lwt.t) ->
         ('gp, 'pp, 'm, 'att, 'co, Eliom_service.non_ext, Eliom_service.reg,
@@ -503,14 +525,14 @@
         ?content_type:string ->
         ?headers:Http_headers.t -> page -> result Lwt.t
     end
-  type (_, _) redirected_service =
-      Service :
-        (unit, unit, Eliom_service.get, 'c, 'd, 'e, 'f, [ `WithoutSuffix ],
-         unit, unit, 'b)
-        Eliom_service.t -> ('a, 'b) Eliom_registration.redirected_service
+  type _ redirection =
+      Redirection :
+        (unit, unit, Eliom_service.get, 'b, 'c, 'd, 'e, [ `WithoutSuffix ],
+         unit, unit, 'a)
+        Eliom_service.t -> 'a Eliom_registration.redirection
   module Redirection :
     sig
-      type ('a, 'b) page = ('a, 'b) Eliom_registration.redirected_service
+      type 'a page = 'a redirection
       type options =
           [ `Found
           | `MovedPermanently
@@ -518,27 +540,24 @@
           | `SeeOther
           | `TemporaryRedirect
           | `UseProxy ]
-      type 'b return = 'b
-      type 'a result = 'a Eliom_registration.kind
+      type 'a return = 'a
       val register :
         ?scope:[< Eliom_common.scope ] ->
-        ?options:Eliom_registration.Redirection.options ->
+        ?options:options ->
         ?charset:string ->
         ?code:int ->
         ?content_type:string ->
         ?headers:Http_headers.t ->
         ?secure_session:bool ->
-        service:('get, 'post, 'c, 'd, 'e, Eliom_service.non_ext,
-                 Eliom_service.reg, [< `WithSuffix | `WithoutSuffix ], 'f,
-                 'g, 'b Eliom_registration.Redirection.return)
+        service:('get, 'post, 'b, 'c, 'd, Eliom_service.non_ext,
+                 Eliom_service.reg, [< `WithSuffix | `WithoutSuffix ], 'e,
+                 'f, 'a return)
                 Eliom_service.t ->
-        ?error_handler:((string * exn) list ->
-                        ('a, 'b) Eliom_registration.Redirection.page Lwt.t) ->
-        ('get -> 'post -> ('a, 'b) Eliom_registration.Redirection.page Lwt.t) ->
-        unit
+        ?error_handler:((string * exn) list -> 'a page Lwt.t) ->
+        ('get -> 'post -> 'a page Lwt.t) -> unit
       val create :
         ?scope:[< Eliom_common.scope ] ->
-        ?options:Eliom_registration.Redirection.options ->
+        ?options:options ->
         ?charset:string ->
         ?code:int ->
         ?content_type:string ->
@@ -552,24 +571,23 @@
         ?max_use:int ->
         ?timeout:float ->
         meth:('m, 'gp, 'gn, 'pp, 'pn,
-              [< `WithSuffix | `WithoutSuffix ] as 'c, 'mf, 'gp_)
-             Eliom_service.Meth.t ->
-        id:('att, 'co, 'mf, 'b Eliom_registration.Redirection.return, 'gp_)
-           Eliom_service.Id.t ->
-        ?error_handler:((string * exn) list ->
-                        ('a, 'b) Eliom_registration.Redirection.page Lwt.t) ->
-        ('gp -> 'pp -> ('a, 'b) Eliom_registration.Redirection.page Lwt.t) ->
+              [< `WithSuffix | `WithoutSuffix ] as 'b, 'mf, 'gp_)
+             Eliom_service.meth ->
+        id:('att, 'co, Eliom_service.non_ext, Eliom_service.reg, 'mf,
+            'a return, 'gp_)
+           Eliom_service.id ->
+        ?error_handler:((string * exn) list -> 'a page Lwt.t) ->
+        ('gp -> 'pp -> 'a page Lwt.t) ->
         ('gp, 'pp, 'm, 'att, 'co, Eliom_service.non_ext, Eliom_service.reg,
-         'c, 'gn, 'pn, 'b Eliom_registration.Redirection.return)
+         'b, 'gn, 'pn, 'a return)
         Eliom_service.t
       val send :
-        ?options:Eliom_registration.Redirection.options ->
+        ?options:options ->
         ?charset:string ->
         ?code:int ->
         ?content_type:string ->
         ?headers:Http_headers.t ->
-        ('a, 'b) Eliom_registration.Redirection.page ->
-        'a Eliom_registration.Redirection.result Lwt.t
+        'a page -> 'b Eliom_registration.kind Lwt.t
     end
   module String_redirection :
     sig
@@ -614,8 +632,10 @@
         ?timeout:float ->
         meth:('m, 'gp, 'gn, 'pp, 'pn,
               [< `WithSuffix | `WithoutSuffix ] as 'a, 'mf, 'gp_)
-             Eliom_service.Meth.t ->
-        id:('att, 'co, 'mf, return, 'gp_) Eliom_service.Id.t ->
+             Eliom_service.meth ->
+        id:('att, 'co, Eliom_service.non_ext, Eliom_service.reg, 'mf, 
+            return, 'gp_)
+           Eliom_service.id ->
         ?error_handler:((string * exn) list -> page Lwt.t) ->
         ('gp -> 'pp -> page Lwt.t) ->
         ('gp, 'pp, 'm, 'att, 'co, Eliom_service.non_ext, Eliom_service.reg,
@@ -666,8 +686,10 @@
         ?timeout:float ->
         meth:('m, 'gp, 'gn, 'pp, 'pn,
               [< `WithSuffix | `WithoutSuffix ] as 'a, 'mf, 'gp_)
-             Eliom_service.Meth.t ->
-        id:('att, 'co, 'mf, return, 'gp_) Eliom_service.Id.t ->
+             Eliom_service.meth ->
+        id:('att, 'co, Eliom_service.non_ext, Eliom_service.reg, 'mf, 
+            return, 'gp_)
+           Eliom_service.id ->
         ?error_handler:((string * exn) list -> page Lwt.t) ->
         ('gp -> 'pp -> page Lwt.t) ->
         ('gp, 'pp, 'm, 'att, 'co, Eliom_service.non_ext, Eliom_service.reg,
@@ -718,8 +740,10 @@
         ?timeout:float ->
         meth:('m, 'gp, 'gn, 'pp, 'pn,
               [< `WithSuffix | `WithoutSuffix ] as 'a, 'mf, 'gp_)
-             Eliom_service.Meth.t ->
-        id:('att, 'co, 'mf, return, 'gp_) Eliom_service.Id.t ->
+             Eliom_service.meth ->
+        id:('att, 'co, Eliom_service.non_ext, Eliom_service.reg, 'mf, 
+            return, 'gp_)
+           Eliom_service.id ->
         ?error_handler:((string * exn) list -> page Lwt.t) ->
         ('gp -> 'pp -> page Lwt.t) ->
         ('gp, 'pp, 'm, 'att, 'co, Eliom_service.non_ext, Eliom_service.reg,
@@ -734,23 +758,26 @@
     end
   module Ocaml :
     sig
+      type 'a page = 'a
+      type options = unit
+      type 'a return = 'a Eliom_service.ocaml
       val register :
         ?scope:[< Eliom_common.scope ] ->
-        ?options:unit ->
+        ?options:options ->
         ?charset:string ->
         ?code:int ->
         ?content_type:string ->
         ?headers:Http_headers.t ->
         ?secure_session:bool ->
-        service:('get, 'post, 'a, 'b, 'c, Eliom_service.non_ext,
-                 Eliom_service.reg, [< `WithSuffix | `WithoutSuffix ], 'd,
-                 'e, 'return Eliom_service.ocaml)
+        service:('get, 'post, 'b, 'c, 'd, Eliom_service.non_ext,
+                 Eliom_service.reg, [< `WithSuffix | `WithoutSuffix ], 'e,
+                 'f, 'a return)
                 Eliom_service.t ->
-        ?error_handler:((string * exn) list -> 'return Lwt.t) ->
-        ('get -> 'post -> 'return Lwt.t) -> unit
+        ?error_handler:((string * exn) list -> 'a page Lwt.t) ->
+        ('get -> 'post -> 'a page Lwt.t) -> unit
       val create :
         ?scope:[< Eliom_common.scope ] ->
-        ?options:unit ->
+        ?options:options ->
         ?charset:string ->
         ?code:int ->
         ?content_type:string ->
@@ -764,49 +791,46 @@
         ?max_use:int ->
         ?timeout:float ->
         meth:('m, 'gp, 'gn, 'pp, 'pn,
-              [< `WithSuffix | `WithoutSuffix ] as 'a, 'mf, 'gp_)
-             Eliom_service.Meth.t ->
-        id:('att, 'co, 'mf, 'return Eliom_service.ocaml, 'gp_)
-           Eliom_service.Id.t ->
-        ?error_handler:((string * exn) list -> 'return Lwt.t) ->
-        ('gp -> 'pp -> 'return Lwt.t) ->
+              [< `WithSuffix | `WithoutSuffix ] as 'b, 'mf, 'gp_)
+             Eliom_service.meth ->
+        id:('att, 'co, Eliom_service.non_ext, Eliom_service.reg, 'mf,
+            'a return, 'gp_)
+           Eliom_service.id ->
+        ?error_handler:((string * exn) list -> 'a page Lwt.t) ->
+        ('gp -> 'pp -> 'a page Lwt.t) ->
         ('gp, 'pp, 'm, 'att, 'co, Eliom_service.non_ext, Eliom_service.reg,
-         'a, 'gn, 'pn, 'return Eliom_service.ocaml)
+         'b, 'gn, 'pn, 'a return)
         Eliom_service.t
+      type 'a result = 'a ocaml_content kind
       val send :
-        ?options:unit ->
+        ?options:options ->
         ?charset:string ->
         ?code:int ->
         ?content_type:string ->
-        ?headers:Http_headers.t ->
-        'return ->
-        'return Eliom_registration.ocaml_content Eliom_registration.kind
-        Lwt.t
+        ?headers:Http_headers.t -> 'a page -> 'a result Lwt.t
     end
   module Any :
     sig
-      type ('a, 'b) page = 'a Eliom_registration.kind
+      type 'a page = 'a kind
       type options = unit
-      type 'b return = 'b
-      type 'a result = 'a Eliom_registration.kind
+      type 'a return = Eliom_service.non_ocaml
       val register :
         ?scope:[< Eliom_common.scope ] ->
-        ?options:unit ->
+        ?options:options ->
         ?charset:string ->
         ?code:int ->
         ?content_type:string ->
         ?headers:Http_headers.t ->
         ?secure_session:bool ->
-        service:('get, 'post, 'c, 'd, 'e, Eliom_service.non_ext,
-                 Eliom_service.reg, [< `WithSuffix | `WithoutSuffix ], 'f,
-                 'g, 'b)
+        service:('get, 'post, 'b, 'c, 'd, Eliom_service.non_ext,
+                 Eliom_service.reg, [< `WithSuffix | `WithoutSuffix ], 'e,
+                 'f, 'a return)
                 Eliom_service.t ->
-        ?error_handler:((string * exn) list ->
-                        'a Eliom_registration.kind Lwt.t) ->
-        ('get -> 'post -> 'a Eliom_registration.kind Lwt.t) -> unit
+        ?error_handler:((string * exn) list -> 'a page Lwt.t) ->
+        ('get -> 'post -> 'a page Lwt.t) -> unit
       val create :
         ?scope:[< Eliom_common.scope ] ->
-        ?options:unit ->
+        ?options:options ->
         ?charset:string ->
         ?code:int ->
         ?content_type:string ->
@@ -820,22 +844,23 @@
         ?max_use:int ->
         ?timeout:float ->
         meth:('m, 'gp, 'gn, 'pp, 'pn,
-              [< `WithSuffix | `WithoutSuffix ] as 'c, 'mf, 'gp_)
-             Eliom_service.Meth.t ->
-        id:('att, 'co, 'mf, 'b, 'gp_) Eliom_service.Id.t ->
-        ?error_handler:((string * exn) list ->
-                        'a Eliom_registration.kind Lwt.t) ->
-        ('gp -> 'pp -> 'a Eliom_registration.kind Lwt.t) ->
+              [< `WithSuffix | `WithoutSuffix ] as 'b, 'mf, 'gp_)
+             Eliom_service.meth ->
+        id:('att, 'co, Eliom_service.non_ext, Eliom_service.reg, 'mf,
+            'a return, 'gp_)
+           Eliom_service.id ->
+        ?error_handler:((string * exn) list -> 'a page Lwt.t) ->
+        ('gp -> 'pp -> 'a page Lwt.t) ->
         ('gp, 'pp, 'm, 'att, 'co, Eliom_service.non_ext, Eliom_service.reg,
-         'c, 'gn, 'pn, 'b)
+         'b, 'gn, 'pn, 'a return)
         Eliom_service.t
+      type 'a result = 'a kind
       val send :
-        ?options:unit ->
+        ?options:options ->
         ?charset:string ->
         ?code:int ->
         ?content_type:string ->
-        ?headers:Http_headers.t ->
-        'a Eliom_registration.kind -> 'a Eliom_registration.kind Lwt.t
+        ?headers:Http_headers.t -> 'a page -> 'a result Lwt.t
     end
   val appl_self_redirect :
     ('page -> [< `Appl of 'a | `Browser ] Eliom_registration.kind Lwt.t) ->
@@ -879,8 +904,10 @@
         ?timeout:float ->
         meth:('m, 'gp, 'gn, 'pp, 'pn,
               [< `WithSuffix | `WithoutSuffix ] as 'a, 'mf, 'gp_)
-             Eliom_service.Meth.t ->
-        id:('att, 'co, 'mf, return, 'gp_) Eliom_service.Id.t ->
+             Eliom_service.meth ->
+        id:('att, 'co, Eliom_service.non_ext, Eliom_service.reg, 'mf, 
+            return, 'gp_)
+           Eliom_service.id ->
         ?error_handler:((string * exn) list -> page Lwt.t) ->
         ('gp -> 'pp -> page Lwt.t) ->
         ('gp, 'pp, 'm, 'att, 'co, Eliom_service.non_ext, Eliom_service.reg,
@@ -930,8 +957,10 @@
         ?timeout:float ->
         meth:('m, 'gp, 'gn, 'pp, 'pn,
               [< `WithSuffix | `WithoutSuffix ] as 'a, 'mf, 'gp_)
-             Eliom_service.Meth.t ->
-        id:('att, 'co, 'mf, return, 'gp_) Eliom_service.Id.t ->
+             Eliom_service.meth ->
+        id:('att, 'co, Eliom_service.non_ext, Eliom_service.reg, 'mf, 
+            return, 'gp_)
+           Eliom_service.id ->
         ?error_handler:((string * exn) list -> page Lwt.t) ->
         ('gp -> 'pp -> page Lwt.t) ->
         ('gp, 'pp, 'm, 'att, 'co, Eliom_service.non_ext, Eliom_service.reg,
@@ -988,8 +1017,10 @@
           ?timeout:float ->
           meth:('m, 'gp, 'gn, 'pp, 'pn,
                 [< `WithSuffix | `WithoutSuffix ] as 'a, 'mf, 'gp_)
-               Eliom_service.Meth.t ->
-          id:('att, 'co, 'mf, return, 'gp_) Eliom_service.Id.t ->
+               Eliom_service.meth ->
+          id:('att, 'co, Eliom_service.non_ext, Eliom_service.reg, 'mf,
+              return, 'gp_)
+             Eliom_service.id ->
           ?error_handler:((string * exn) list -> page Lwt.t) ->
           ('gp -> 'pp -> page Lwt.t) ->
           ('gp, 'pp, 'm, 'att, 'co, Eliom_service.non_ext, Eliom_service.reg,

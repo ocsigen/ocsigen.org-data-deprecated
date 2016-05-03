@@ -1,1 +1,1 @@
-<<code language="ocaml" | Base >>
+<<code language="ocaml" | sig type 'a return = 'a end >>

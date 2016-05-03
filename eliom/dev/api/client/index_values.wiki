@@ -5,9 +5,7 @@
       takes a pair of parameters~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="(=|<)"| value Eliom_shared_sigs.S.Infix.(=|<) >> ~[<<a_api subproject="client" | module Eliom_shared_sigs.S.Infix >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|f ~=~|~< s>> is <<span class="odocwiki_inlinecode"|map f s>>~.
->>
-|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="(=|<)"| value Eliom_shared_sigs.S.Infix.(=|<) >> ~[<<a_api subproject="client" | module Eliom_shared_sigs.S.Infix >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="(>|=)"| value Eliom_shared_sigs.S.Infix.(>|=) >> ~[<<a_api subproject="client" | module Eliom_shared_sigs.S.Infix >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|s ~>~|~= f>> is <<span class="odocwiki_inlinecode"|map f s>>~.
 >>
 |
@@ -74,14 +72,14 @@
         child of <<span class="odocwiki_inlinecode"|e~1>>~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="appendChildren"| value Eliom_content.Html5.Manip.Named.appendChildren >> ~[<<a_api subproject="client" | module Eliom_content.Html5.Manip.Named >>~]|<<div class="odocwiki_info"|see <<span class="odocwiki_inlinecode"|append~Children>>
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="appendChildren"| value Eliom_content.Html5.Manip.Named.appendChildren >> ~[<<a_api subproject="client" | module Eliom_content.Html5.Manip.Named >>~]|<<div class="odocwiki_info"|see <<span class="odocwiki_inlinecode"|remove~Child>>
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="appendChildren"| value Eliom_content.Html5.Manip.appendChildren >> ~[<<a_api subproject="client" | module Eliom_content.Html5.Manip >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|append~Children e~1 elts>> inserts <<span class="odocwiki_inlinecode"|elts>> as last children
         of <<span class="odocwiki_inlinecode"|e~1>>~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="appendChildren"| value Eliom_content.Svg.Manip.Named.appendChildren >> ~[<<a_api subproject="client" | module Eliom_content.Svg.Manip.Named >>~]|<<div class="odocwiki_info"|see <<span class="odocwiki_inlinecode"|append~Children>>
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="appendChildren"| value Eliom_content.Svg.Manip.Named.appendChildren >> ~[<<a_api subproject="client" | module Eliom_content.Svg.Manip.Named >>~]|<<div class="odocwiki_info"|see <<span class="odocwiki_inlinecode"|remove~Child>>
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="appendChildren"| value Eliom_content.Svg.Manip.appendChildren >> ~[<<a_api subproject="client" | module Eliom_content.Svg.Manip >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|append~Children e~1 elts>> inserts <<span class="odocwiki_inlinecode"|elts>> as last children
@@ -229,7 +227,7 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="clear"| value Eliom_content.Html5.Manip.Css.clear >> ~[<<a_api subproject="client" | module Eliom_content.Html5.Manip.Css >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="clear"| value Eliom_content.Html5.Manip.Class.clear >> ~[<<a_api subproject="client" | module Eliom_content.Html5.Manip.Class >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="clear"| value Eliom_content.Svg.Manip.Class.clear >> ~[<<a_api subproject="client" | module Eliom_content.Svg.Manip.Class >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="client"| value Eliom_shared_sigs.VALUE.client >> ~[<<a_api subproject="client" | module Eliom_shared_sigs.VALUE >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|client x>> is the client~-side portion of <<span class="odocwiki_inlinecode"|x>>~.
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="client"| value Eliom_shared_sigs.VALUE.client >> ~[<<a_api subproject="client" | module Eliom_shared_sigs.VALUE >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|local x>> is the local portion of <<span class="odocwiki_inlinecode"|x>>~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="clientHeight"| value Eliom_content.Html5.Manip.Attr.clientHeight >> ~[<<a_api subproject="client" | module Eliom_content.Html5.Manip.Attr >>~]||
@@ -279,22 +277,19 @@
       manipulating the list~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="create"| value Eliom_shared_sigs.VALUE.create >> ~[<<a_api subproject="client" | module Eliom_shared_sigs.VALUE >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="create"| value Eliom_shared_sigs.VALUE.create >> ~[<<a_api subproject="client" | module Eliom_shared_sigs.VALUE >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|client x>> is the client~-side portion of <<span class="odocwiki_inlinecode"|x>>~.
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="create"| value Eliom_service_sigs.S.create >> ~[<<a_api subproject="client" | module Eliom_service_sigs.S >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|create ~~id ~~meth ~~ret ~(~)>> creates a <<span class="odocwiki_inlinecode"|service>>
       identified as per <<span class="odocwiki_inlinecode"|id>> and accepting parameters as per <<span class="odocwiki_inlinecode"|m>>~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="create_buffer"| value Eliom_client_core.create_buffer >> ~[<<a_api subproject="client" | module Eliom_client_core >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="create_external"| value Eliom_service_sigs.S.create_external >> ~[<<a_api subproject="client" | module Eliom_service_sigs.S >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|create~_external ~~prefix ~~path ~~get~_params ~(~)>>
-      creates a service for an external web site~, that will use ~G~E~T
-      method and requires <<span class="odocwiki_inlinecode"|get~_params>> as parameters~.
->>
-|
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="create_global_elt"| value Eliom_content_core.Html5.Id.create_global_elt >> ~[<<a_api subproject="client" | module Eliom_content_core.Html5.Id >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|create~_named~_elt elt>> is equivalent to
         <<span class="odocwiki_inlinecode"|create~_named~_elt ~~id~:~(new~_elt~_id ~(~)~) elt>>~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="create_global_elt"| value Eliom_content_core.Svg.Id.create_global_elt >> ~[<<a_api subproject="client" | module Eliom_content_core.Svg.Id >>~]|<<div class="odocwiki_info"|~See <<a_api subproject="client" | val Eliom_content.Html5.Id.create_global_elt >>
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="create_global_elt"| value Eliom_content_core.Svg.Id.create_global_elt >> ~[<<a_api subproject="client" | module Eliom_content_core.Svg.Id >>~]|<<div class="odocwiki_info"|~See <<a_api subproject="client" | val Eliom_content.Html5.Id.create_request_elt >>
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="create_global_elt"| value Eliom_content.Html5.Id.create_global_elt >> ~[<<a_api subproject="client" | module Eliom_content.Html5.Id >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|create~_named~_elt elt>> is equivalent to
@@ -315,7 +310,7 @@
         element <<span class="odocwiki_inlinecode"|elt>> that will be accessible through the name <<span class="odocwiki_inlinecode"|id>>~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="create_named_elt"| value Eliom_content_core.Svg.Id.create_named_elt >> ~[<<a_api subproject="client" | module Eliom_content_core.Svg.Id >>~]|<<div class="odocwiki_info"|~See <<a_api subproject="client" | val Eliom_content.Html5.Id.create_named_elt >>
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="create_named_elt"| value Eliom_content_core.Svg.Id.create_named_elt >> ~[<<a_api subproject="client" | module Eliom_content_core.Svg.Id >>~]|<<div class="odocwiki_info"|~See <<a_api subproject="client" | val Eliom_content.Html5.Id.create_global_elt >>
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="create_named_elt"| value Eliom_content.Html5.Id.create_named_elt >> ~[<<a_api subproject="client" | module Eliom_content.Html5.Id >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|create~_named~_elt ~~id elt>> create a copy of the
@@ -330,9 +325,7 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="create_request_elt"| value Eliom_content_core.Html5.Id.create_request_elt >> ~[<<a_api subproject="client" | module Eliom_content_core.Html5.Id >>~]|<<div class="odocwiki_info"|~See <<a_api subproject="client" | val Eliom_content.Svg.Id.create_request_elt >>
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="create_request_elt"| value Eliom_content_core.Svg.Id.create_request_elt >> ~[<<a_api subproject="client" | module Eliom_content_core.Svg.Id >>~]|<<div class="odocwiki_info"|~See <<a_api subproject="client" | val Eliom_content.Html5.Id.create_request_elt >>
->>
-|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="create_request_elt"| value Eliom_content_core.Svg.Id.create_request_elt >> ~[<<a_api subproject="client" | module Eliom_content_core.Svg.Id >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="create_request_elt"| value Eliom_content.Html5.Id.create_request_elt >> ~[<<a_api subproject="client" | module Eliom_content.Html5.Id >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|create~_request~_elt ~?reset elt>> creates a referable copy of
         <<span class="odocwiki_inlinecode"|elt>>~.
 >>
@@ -580,7 +573,6 @@
     client side~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="is_post"| value Eliom_service_types.Meth.is_post >> ~[<<a_api subproject="client" | module Eliom_service_types.Meth >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="iter_prop"| value Eliom_client_core.iter_prop >> ~[<<a_api subproject="client" | module Eliom_client_core >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="iter_prop_protected"| value Eliom_client_core.iter_prop_protected >> ~[<<a_api subproject="client" | module Eliom_client_core >>~]||
 |@@ @style="tet-align: left;"@@\\J|
@@ -589,9 +581,7 @@
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="jsalert"| value Eliom_lib.jsalert >> ~[<<a_api subproject="client" | module Eliom_lib >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="jsdebug"| value Eliom_lib.jsdebug >> ~[<<a_api subproject="client" | module Eliom_lib >>~]|<<div class="odocwiki_info"|~Deprecated~.
->>
-|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="jsdebug"| value Eliom_lib.jsdebug >> ~[<<a_api subproject="client" | module Eliom_lib >>~]||
 |@@ @style="tet-align: left;"@@\\L|
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="l2"| value Eliom_shared_sigs.S.l2 >> ~[<<a_api subproject="client" | module Eliom_shared_sigs.S >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="l2_s"| value Eliom_shared_sigs.S.Lwt.l2_s >> ~[<<a_api subproject="client" | module Eliom_shared_sigs.S.Lwt >>~]||
@@ -628,9 +618,7 @@
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="load_data_script"| value Eliom_client_core.load_data_script >> ~[<<a_api subproject="client" | module Eliom_client_core >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="load_mutex"| value Eliom_client_core.load_mutex >> ~[<<a_api subproject="client" | module Eliom_client_core >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="local"| value Eliom_shared_sigs.VALUE.local >> ~[<<a_api subproject="client" | module Eliom_shared_sigs.VALUE >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|local x>> is the local portion of <<span class="odocwiki_inlinecode"|x>>~.
->>
-|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="local"| value Eliom_shared_sigs.VALUE.local >> ~[<<a_api subproject="client" | module Eliom_shared_sigs.VALUE >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="local_find"| value Eliom_cscache.local_find >> ~[<<a_api subproject="client" | module Eliom_cscache >>~]|<<div class="odocwiki_info"|~Find a piece of data in local cache~,
       without trying to fetch it from server~.
 >>
@@ -876,7 +864,6 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="pageBreakAfter"| value Eliom_content.Html5.Manip.Css.pageBreakAfter >> ~[<<a_api subproject="client" | module Eliom_content.Html5.Manip.Css >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="pageBreakBefore"| value Eliom_content.Html5.Manip.SetCss.pageBreakBefore >> ~[<<a_api subproject="client" | module Eliom_content.Html5.Manip.SetCss >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="pageBreakBefore"| value Eliom_content.Html5.Manip.Css.pageBreakBefore >> ~[<<a_api subproject="client" | module Eliom_content.Html5.Manip.Css >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="params"| value Eliom_service_types.Meth.params >> ~[<<a_api subproject="client" | module Eliom_service_types.Meth >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="parentNode"| value Eliom_content.Html5.Manip.parentNode >> ~[<<a_api subproject="client" | module Eliom_content.Html5.Manip >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|parent~Node elt>> returns the parent of <<span class="odocwiki_inlinecode"|elt>>~, if any~.
 >>
 |
@@ -971,27 +958,27 @@
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="remove"| value Eliom_content.Html5.Manip.Class.remove >> ~[<<a_api subproject="client" | module Eliom_content.Html5.Manip.Class >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="remove"| value Eliom_content.Svg.Manip.Class.remove >> ~[<<a_api subproject="client" | module Eliom_content.Svg.Manip.Class >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="removeChild"| value Eliom_content.Html5.Manip.Named.removeChild >> ~[<<a_api subproject="client" | module Eliom_content.Html5.Manip.Named >>~]|<<div class="odocwiki_info"|see <<span class="odocwiki_inlinecode"|remove~Child>>
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="removeChild"| value Eliom_content.Html5.Manip.Named.removeChild >> ~[<<a_api subproject="client" | module Eliom_content.Html5.Manip.Named >>~]|<<div class="odocwiki_info"|see <<span class="odocwiki_inlinecode"|replace~Child>>
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="removeChild"| value Eliom_content.Html5.Manip.removeChild >> ~[<<a_api subproject="client" | module Eliom_content.Html5.Manip >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|remove~Child e~1 e~2>> removes for <<span class="odocwiki_inlinecode"|e~2>> from the list of
         <<span class="odocwiki_inlinecode"|e~1>> children~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="removeChild"| value Eliom_content.Svg.Manip.Named.removeChild >> ~[<<a_api subproject="client" | module Eliom_content.Svg.Manip.Named >>~]|<<div class="odocwiki_info"|see <<span class="odocwiki_inlinecode"|remove~Child>>
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="removeChild"| value Eliom_content.Svg.Manip.Named.removeChild >> ~[<<a_api subproject="client" | module Eliom_content.Svg.Manip.Named >>~]|<<div class="odocwiki_info"|see <<span class="odocwiki_inlinecode"|replace~Child>>
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="removeChild"| value Eliom_content.Svg.Manip.removeChild >> ~[<<a_api subproject="client" | module Eliom_content.Svg.Manip >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|remove~Child e~1 e~2>> removes for <<span class="odocwiki_inlinecode"|e~2>> from the list of
         children of <<span class="odocwiki_inlinecode"|e~1>>~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="removeChildren"| value Eliom_content.Html5.Manip.Named.removeChildren >> ~[<<a_api subproject="client" | module Eliom_content.Html5.Manip.Named >>~]|<<div class="odocwiki_info"|see <<span class="odocwiki_inlinecode"|remove~Children>>
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="removeChildren"| value Eliom_content.Html5.Manip.Named.removeChildren >> ~[<<a_api subproject="client" | module Eliom_content.Html5.Manip.Named >>~]|<<div class="odocwiki_info"|see <<span class="odocwiki_inlinecode"|replace~Children>>
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="removeChildren"| value Eliom_content.Html5.Manip.removeChildren >> ~[<<a_api subproject="client" | module Eliom_content.Html5.Manip >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|remove~Children e~1>> removes <<span class="odocwiki_inlinecode"|e~1>> children~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="removeChildren"| value Eliom_content.Svg.Manip.Named.removeChildren >> ~[<<a_api subproject="client" | module Eliom_content.Svg.Manip.Named >>~]|<<div class="odocwiki_info"|see <<span class="odocwiki_inlinecode"|remove~Children>>
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="removeChildren"| value Eliom_content.Svg.Manip.Named.removeChildren >> ~[<<a_api subproject="client" | module Eliom_content.Svg.Manip.Named >>~]|<<div class="odocwiki_info"|see <<span class="odocwiki_inlinecode"|replace~Children>>
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="removeChildren"| value Eliom_content.Svg.Manip.removeChildren >> ~[<<a_api subproject="client" | module Eliom_content.Svg.Manip >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|remove~Children e~1>> removes all children of <<span class="odocwiki_inlinecode"|e~1>>~.
@@ -1008,30 +995,26 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="removes"| value Eliom_content.Svg.Manip.Class.removes >> ~[<<a_api subproject="client" | module Eliom_content.Svg.Manip.Class >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="replace"| value Eliom_content.Html5.Manip.Class.replace >> ~[<<a_api subproject="client" | module Eliom_content.Html5.Manip.Class >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="replace"| value Eliom_content.Svg.Manip.Class.replace >> ~[<<a_api subproject="client" | module Eliom_content.Svg.Manip.Class >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="replaceChild"| value Eliom_content.Html5.Manip.Named.replaceChild >> ~[<<a_api subproject="client" | module Eliom_content.Html5.Manip.Named >>~]|<<div class="odocwiki_info"|see <<span class="odocwiki_inlinecode"|replace~Child>>
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="replaceChild"| value Eliom_content.Html5.Manip.Named.replaceChild >> ~[<<a_api subproject="client" | module Eliom_content.Html5.Manip.Named >>~]|<<div class="odocwiki_info"|see <<span class="odocwiki_inlinecode"|remove~Children>>
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="replaceChild"| value Eliom_content.Html5.Manip.replaceChild >> ~[<<a_api subproject="client" | module Eliom_content.Html5.Manip >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|replace e~1 e~2 e~3>> replaces for <<span class="odocwiki_inlinecode"|e~2>> by <<span class="odocwiki_inlinecode"|e~3>> in the
         list of <<span class="odocwiki_inlinecode"|e~1>> children~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="replaceChild"| value Eliom_content.Svg.Manip.Named.replaceChild >> ~[<<a_api subproject="client" | module Eliom_content.Svg.Manip.Named >>~]|<<div class="odocwiki_info"|see <<span class="odocwiki_inlinecode"|replace~Child>>
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="replaceChild"| value Eliom_content.Svg.Manip.Named.replaceChild >> ~[<<a_api subproject="client" | module Eliom_content.Svg.Manip.Named >>~]|<<div class="odocwiki_info"|see <<span class="odocwiki_inlinecode"|remove~Children>>
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="replaceChild"| value Eliom_content.Svg.Manip.replaceChild >> ~[<<a_api subproject="client" | module Eliom_content.Svg.Manip >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|replace e~1 e~2 e~3>> replaces <<span class="odocwiki_inlinecode"|e~3>> by <<span class="odocwiki_inlinecode"|e~2>> in the
         list of children of <<span class="odocwiki_inlinecode"|e~1>>~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="replaceChildren"| value Eliom_content.Html5.Manip.Named.replaceChildren >> ~[<<a_api subproject="client" | module Eliom_content.Html5.Manip.Named >>~]|<<div class="odocwiki_info"|see <<span class="odocwiki_inlinecode"|replace~Children>>
->>
-|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="replaceChildren"| value Eliom_content.Html5.Manip.Named.replaceChildren >> ~[<<a_api subproject="client" | module Eliom_content.Html5.Manip.Named >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="replaceChildren"| value Eliom_content.Html5.Manip.replaceChildren >> ~[<<a_api subproject="client" | module Eliom_content.Html5.Manip >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|replace~Children e~1 elts>> replaces all the children of
         <<span class="odocwiki_inlinecode"|e~1>> by <<span class="odocwiki_inlinecode"|elt>>~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="replaceChildren"| value Eliom_content.Svg.Manip.Named.replaceChildren >> ~[<<a_api subproject="client" | module Eliom_content.Svg.Manip.Named >>~]|<<div class="odocwiki_info"|see <<span class="odocwiki_inlinecode"|replace~Children>>
->>
-|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="replaceChildren"| value Eliom_content.Svg.Manip.Named.replaceChildren >> ~[<<a_api subproject="client" | module Eliom_content.Svg.Manip.Named >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="replaceChildren"| value Eliom_content.Svg.Manip.replaceChildren >> ~[<<a_api subproject="client" | module Eliom_content.Svg.Manip >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|replace~Children e~1 elts>> replaces all the children of
         <<span class="odocwiki_inlinecode"|e~1>> by <<span class="odocwiki_inlinecode"|elt>>~.
 >>
@@ -1195,7 +1178,6 @@
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="unmarshal_js"| value Eliom_lib.unmarshal_js >> ~[<<a_api subproject="client" | module Eliom_lib >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="untype"| value Eliom_service_sigs.S.Id.untype >> ~[<<a_api subproject="client" | module Eliom_service_sigs.S.Id >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="unwrap_client_value"| value Eliom_client_core.unwrap_client_value >> ~[<<a_api subproject="client" | module Eliom_client_core >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="unwrap_global_data"| value Eliom_client_core.unwrap_global_data >> ~[<<a_api subproject="client" | module Eliom_client_core >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="unwrap_js"| value Eliom_unwrap.unwrap_js >> ~[<<a_api subproject="client" | module Eliom_unwrap >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|unwrap~_js v>> unwraps the content of the ~Java~Script variable <<span class="odocwiki_inlinecode"|v>>
@@ -1230,7 +1212,6 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="wait_load_end"| value Eliom_client.wait_load_end >> ~[<<a_api subproject="client" | module Eliom_client >>~]|<<div class="odocwiki_info"|~Wait for the initialization phase to terminate
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="which"| value Eliom_service_types.Meth.which >> ~[<<a_api subproject="client" | module Eliom_service_types.Meth >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="whiteSpace"| value Eliom_content.Html5.Manip.SetCss.whiteSpace >> ~[<<a_api subproject="client" | module Eliom_content.Html5.Manip.SetCss >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="whiteSpace"| value Eliom_content.Html5.Manip.Css.whiteSpace >> ~[<<a_api subproject="client" | module Eliom_content.Html5.Manip.Css >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="width"| value Eliom_content.Html5.Manip.SetCss.width >> ~[<<a_api subproject="client" | module Eliom_content.Html5.Manip.SetCss >>~]||

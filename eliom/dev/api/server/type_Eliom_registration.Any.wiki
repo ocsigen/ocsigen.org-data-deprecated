@@ -1,25 +1,24 @@
 <<code language="ocaml" | sig
-  type ('a, 'b) page = 'a Eliom_registration.kind
+  type 'a page = 'a kind
   type options = unit
-  type 'b return = 'b
-  type 'a result = 'a Eliom_registration.kind
+  type 'a return = Eliom_service.non_ocaml
   val register :
     ?scope:[< Eliom_common.scope ] ->
-    ?options:unit ->
+    ?options:options ->
     ?charset:string ->
     ?code:int ->
     ?content_type:string ->
     ?headers:Http_headers.t ->
     ?secure_session:bool ->
-    service:('get, 'post, 'c, 'd, 'e, Eliom_service.non_ext,
-             Eliom_service.reg, [< `WithSuffix | `WithoutSuffix ], 'f, 'g,
-             'b)
+    service:('get, 'post, 'b, 'c, 'd, Eliom_service.non_ext,
+             Eliom_service.reg, [< `WithSuffix | `WithoutSuffix ], 'e, 'f,
+             'a return)
             Eliom_service.t ->
-    ?error_handler:((string * exn) list -> 'a Eliom_registration.kind Lwt.t) ->
-    ('get -> 'post -> 'a Eliom_registration.kind Lwt.t) -> unit
+    ?error_handler:((string * exn) list -> 'a page Lwt.t) ->
+    ('get -> 'post -> 'a page Lwt.t) -> unit
   val create :
     ?scope:[< Eliom_common.scope ] ->
-    ?options:unit ->
+    ?options:options ->
     ?charset:string ->
     ?code:int ->
     ?content_type:string ->
@@ -32,20 +31,22 @@
     ?csrf_secure:bool ->
     ?max_use:int ->
     ?timeout:float ->
-    meth:('m, 'gp, 'gn, 'pp, 'pn, [< `WithSuffix | `WithoutSuffix ] as 'c,
+    meth:('m, 'gp, 'gn, 'pp, 'pn, [< `WithSuffix | `WithoutSuffix ] as 'b,
           'mf, 'gp_)
-         Eliom_service.Meth.t ->
-    id:('att, 'co, 'mf, 'b, 'gp_) Eliom_service.Id.t ->
-    ?error_handler:((string * exn) list -> 'a Eliom_registration.kind Lwt.t) ->
-    ('gp -> 'pp -> 'a Eliom_registration.kind Lwt.t) ->
-    ('gp, 'pp, 'm, 'att, 'co, Eliom_service.non_ext, Eliom_service.reg, 'c,
-     'gn, 'pn, 'b)
+         Eliom_service.meth ->
+    id:('att, 'co, Eliom_service.non_ext, Eliom_service.reg, 'mf, 'a return,
+        'gp_)
+       Eliom_service.id ->
+    ?error_handler:((string * exn) list -> 'a page Lwt.t) ->
+    ('gp -> 'pp -> 'a page Lwt.t) ->
+    ('gp, 'pp, 'm, 'att, 'co, Eliom_service.non_ext, Eliom_service.reg, 'b,
+     'gn, 'pn, 'a return)
     Eliom_service.t
+  type 'a result = 'a kind
   val send :
-    ?options:unit ->
+    ?options:options ->
     ?charset:string ->
     ?code:int ->
     ?content_type:string ->
-    ?headers:Http_headers.t ->
-    'a Eliom_registration.kind -> 'a Eliom_registration.kind Lwt.t
+    ?headers:Http_headers.t -> 'a page -> 'a result Lwt.t
 end >>
