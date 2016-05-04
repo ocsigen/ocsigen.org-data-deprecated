@@ -22,6 +22,7 @@
     change:([ `Goto of int | `Next | `Prev ] -> unit) Eliom_client_value.t ->
     pos:int Eliom_shared.React.S.t ->
     ?size:int Eliom_shared.React.S.t ->
+    ?initial_gap:int ->
     [< Html5_types.li_content_fun ] Eliom_content.Html5.elt list list ->
     [> `Div ] Eliom_content.Html5.elt
   val previous :
