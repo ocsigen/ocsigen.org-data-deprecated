@@ -1,5 +1,10 @@
 =Index of types=
 
+|@@ @style="tet-align: left;"@@\\B|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="button_labels"| type Ot_calendar.button_labels >> ~[<<a_api subproject="server" | module Ot_calendar >>~]|<<div class="odocwiki_info"|~An instance of <<span class="odocwiki_inlinecode"|button~_labels>> is used to customize the button
+    labels~.
+>>
+|
 |@@ @style="tet-align: left;"@@\\I|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="intl"| type Ot_calendar.intl >> ~[<<a_api subproject="server" | module Ot_calendar >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|intl>> is the type of internationalization specifiers~.
 >>
