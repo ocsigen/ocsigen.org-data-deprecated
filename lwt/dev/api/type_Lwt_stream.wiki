@@ -42,6 +42,8 @@
   val get_available : 'a Lwt_stream.t -> 'a list
   val get_available_up_to : int -> 'a Lwt_stream.t -> 'a list
   val is_empty : 'a Lwt_stream.t -> bool Lwt.t
+  val is_closed : 'a Lwt_stream.t -> bool
+  val closed : 'a Lwt_stream.t -> unit Lwt.t
   val on_termination : 'a Lwt_stream.t -> (unit -> unit) -> unit
   val on_terminate : 'a Lwt_stream.t -> (unit -> unit) -> unit
   val choose : 'a Lwt_stream.t list -> 'a Lwt_stream.t

@@ -248,6 +248,10 @@
 |@@class="odocwiki_index"@ @@<<a_api text="close"| value Lwt_ssl.close >> ~[<<a_api | module Lwt_ssl >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="close_in"| value Lwt_chan.close_in >> ~[<<a_api | module Lwt_chan >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="close_out"| value Lwt_chan.close_out >> ~[<<a_api | module Lwt_chan >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="closed"| value Lwt_stream.closed >> ~[<<a_api | module Lwt_stream >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|closed st>> returns a thread that will sleep until the stream has been
+      closed~.
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api text="closedir"| value Lwt_unix.closedir >> ~[<<a_api | module Lwt_unix >>~]|<<div class="odocwiki_info"|~Wrapper for <<span class="odocwiki_inlinecode"|~Unix~.closedir>>
 >>
 |
@@ -581,11 +585,11 @@
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="get_available"| value Lwt_stream.get_available >> ~[<<a_api | module Lwt_stream >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|get~_available st>> returns all available elements of <<span class="odocwiki_inlinecode"|l>> without
-      blocking
+      blocking~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="get_available_up_to"| value Lwt_stream.get_available_up_to >> ~[<<a_api | module Lwt_stream >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|get~_available~_up~_to n st>> returns up to <<span class="odocwiki_inlinecode"|n>> elements of <<span class="odocwiki_inlinecode"|l>>
-      without blocking
+      without blocking~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="get_bounds"| value Lwt_preemptive.get_bounds >> ~[<<a_api | module Lwt_preemptive >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|get~_bounds ~(~)>> returns the minimum and the maximum number of
@@ -744,8 +748,11 @@
       busy~.
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api text="is_closed"| value Lwt_stream.is_closed >> ~[<<a_api | module Lwt_stream >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|is~_closed st>> returns whether the given stream has been closed~.
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api text="is_empty"| value Lwt_pqueue.S.is_empty >> ~[<<a_api | module Lwt_pqueue.S >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="is_empty"| value Lwt_stream.is_empty >> ~[<<a_api | module Lwt_stream >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|is~_empty st>> returns wether the given stream is empty
+|@@class="odocwiki_index"@ @@<<a_api text="is_empty"| value Lwt_stream.is_empty >> ~[<<a_api | module Lwt_stream >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|is~_empty st>> returns whether the given stream is empty~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="is_empty"| value Lwt_sequence.is_empty >> ~[<<a_api | module Lwt_sequence >>~]|<<div class="odocwiki_info"|~Returns <<span class="odocwiki_inlinecode"|true>> iff the given sequence is empty
@@ -1117,11 +1124,12 @@
       failing~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api text="on_terminate"| value Lwt_stream.on_terminate >> ~[<<a_api | module Lwt_stream >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_deprecated"|>>>>
+|@@class="odocwiki_index"@ @@<<a_api text="on_terminate"| value Lwt_stream.on_terminate >> ~[<<a_api | module Lwt_stream >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_deprecated"|~Same as <<span class="odocwiki_inlinecode"|on~_termination>>~.
+>>>>
 |
-|@@class="odocwiki_index"@ @@<<a_api text="on_termination"| value Lwt_stream.on_termination >> ~[<<a_api | module Lwt_stream >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|on~_termination st f>> executes <<span class="odocwiki_inlinecode"|f>> when the end of the stream <<span class="odocwiki_inlinecode"|st>>
+|@@class="odocwiki_index"@ @@<<a_api text="on_termination"| value Lwt_stream.on_termination >> ~[<<a_api | module Lwt_stream >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_deprecated"|<<span class="odocwiki_inlinecode"|on~_termination st f>> executes <<span class="odocwiki_inlinecode"|f>> when the end of the stream <<span class="odocwiki_inlinecode"|st>>
       is reached~.
->>
+>>>>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="on_termination"| value Lwt.on_termination >> ~[<<a_api | module Lwt >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|on~_termination t f>> executes <<span class="odocwiki_inlinecode"|f>> when <<span class="odocwiki_inlinecode"|t>> terminates~.
 >>
