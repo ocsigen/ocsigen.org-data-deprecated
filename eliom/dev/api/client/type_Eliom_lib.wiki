@@ -353,6 +353,7 @@
       val exn_slot_name : exn -> string
       val register_exn_printer : ((exn -> string) -> exn -> string) -> unit
     end
+  exception Eliom_Internal_Error of string
   module Lwt_ops :
     sig
       val ( >>= ) : 'a Lwt.t -> ('a -> 'b Lwt.t) -> 'b Lwt.t
@@ -490,7 +491,6 @@
     end
   type pos = Lexing.position * Lexing.position
   val pos_to_string : pos -> string
-  exception Eliom_Internal_Error of string
   type file_info = File.file Js.t
   val to_json : ?typ:'a -> 'b -> string
   val of_json : ?typ:'a -> string -> 'b

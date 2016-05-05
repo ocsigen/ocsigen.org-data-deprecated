@@ -547,6 +547,7 @@
         bool option * string option * int option * string * string list *
         string option * (string * string) list Lazy.t
     end
+  exception Eliom_Internal_Error of string
   module Lwt_ops :
     sig
       val ( >>= ) : 'a Lwt.t -> ('a -> 'b Lwt.t) -> 'b Lwt.t
@@ -684,7 +685,6 @@
     end
   type pos = Lexing.position * Lexing.position
   val pos_to_string : pos -> string
-  exception Eliom_Internal_Error of string
   type file_info = Ocsigen_extensions.file_info
   val string_escape : string -> string
   val to_json : ?typ:'a Deriving_Json.t -> 'a -> string

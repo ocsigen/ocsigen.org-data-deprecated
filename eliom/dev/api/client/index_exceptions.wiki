@@ -11,7 +11,6 @@
 >>
 |
 |@@ @style="tet-align: left;"@@\\E|
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Eliom_Internal_Error"| exception Eliom_lib.Eliom_Internal_Error >> ~[<<a_api subproject="client" | module Eliom_lib >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Exception_on_server"| exception Eliom_client_value.Exception_on_server >> ~[<<a_api subproject="client" | module Eliom_client_value >>~]|<<div class="odocwiki_info"|~This exception is raised ~(in ~Lwt~) on the client if a call to a
     server function <<a_api subproject="server"|val
     Eliom_client.server_function>>  fails ~(in ~Lwt~) on the server
