@@ -901,12 +901,12 @@
   val a_max :
     Html_types.float_number Html_sigs.T.wrap -> [> `Max ] Html_sigs.T.attrib
   val a_input_max :
-    Html_types.float_number Html_sigs.T.wrap ->
+    Html_types.number_or_datetime Html_sigs.T.wrap ->
     [> `Input_Max ] Html_sigs.T.attrib
   val a_min :
     Html_types.float_number Html_sigs.T.wrap -> [> `Min ] Html_sigs.T.attrib
   val a_input_min :
-    Html_types.float_number Html_sigs.T.wrap ->
+    Html_types.number_or_datetime Html_sigs.T.wrap ->
     [> `Input_Min ] Html_sigs.T.attrib
   val a_inputmode :
     [< `Email

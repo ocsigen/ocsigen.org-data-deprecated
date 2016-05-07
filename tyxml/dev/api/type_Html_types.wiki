@@ -11,8 +11,12 @@
   type charsets = Html_types.charset list
   type contenttype = string
   type contenttypes = Html_types.contenttype list
+  type number = int
+  type numbers = Html_types.number list
   type coords = string list
   type datetime = string
+  type number_or_datetime =
+      [ `Datetime of Html_types.datetime | `Number of Html_types.number ]
   type fpi = string
   type frametarget = string
   type languagecode = string
@@ -56,8 +60,6 @@
       | `Tty
       | `Tv ]
   type mediadesc = Html_types.mediadesc_token list
-  type number = int
-  type numbers = Html_types.number list
   type float_number = float
   type pixels = int
   type script_ = string

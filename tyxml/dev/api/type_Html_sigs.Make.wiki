@@ -1252,10 +1252,10 @@
         val a_low : Html_types.float_number wrap -> [> `High ] attrib
         val a_max : Html_types.float_number wrap -> [> `Max ] attrib
         val a_input_max :
-          Html_types.float_number wrap -> [> `Input_Max ] attrib
+          Html_types.number_or_datetime wrap -> [> `Input_Max ] attrib
         val a_min : Html_types.float_number wrap -> [> `Min ] attrib
         val a_input_min :
-          Html_types.float_number wrap -> [> `Input_Min ] attrib
+          Html_types.number_or_datetime wrap -> [> `Input_Min ] attrib
         val a_inputmode :
           [< `Email
            | `Full_width_latin

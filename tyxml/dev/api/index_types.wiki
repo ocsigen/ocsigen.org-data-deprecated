@@ -658,6 +658,9 @@
 |@@class="odocwiki_index"@ @@<<a_api text="number"| type Html_types.number >> ~[<<a_api | module Html_types >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="number"| type Svg_types.number >> ~[<<a_api | module Svg_types >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="number_optional_number"| type Svg_types.number_optional_number >> ~[<<a_api | module Svg_types >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="number_or_datetime"| type Html_types.number_or_datetime >> ~[<<a_api | module Html_types >>~]|<<div class="odocwiki_info"|~Either a number or date and time information~.
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api text="numbers"| type Html_types.numbers >> ~[<<a_api | module Html_types >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="numbers"| type Svg_types.numbers >> ~[<<a_api | module Svg_types >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="numbers_semicolon"| type Svg_types.numbers_semicolon >> ~[<<a_api | module Svg_types >>~]||

@@ -5,6 +5,8 @@
   val onoff_of_bool : (bool, string) Xml.W.ft
   val string_of_character : (Html_types.character, string) Xml.W.ft
   val string_of_input_type : ([< Html_types.input_type ], string) Xml.W.ft
+  val string_of_number_or_datetime :
+    ([< Html_types.number_or_datetime ], string) Xml.W.ft
   val string_of_linktypes : ([< Html_types.linktype ] list, string) Xml.W.ft
   val string_of_mediadesc :
     ([< Html_types.mediadesc_token ] list, string) Xml.W.ft
