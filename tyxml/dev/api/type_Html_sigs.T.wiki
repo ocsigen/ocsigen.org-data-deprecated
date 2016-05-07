@@ -1025,11 +1025,9 @@
   val a_maxlength :
     Html_types.number Html_sigs.T.wrap -> [> `Maxlength ] Html_sigs.T.attrib
   val a_method :
-    [< `Delete | `Get | `Post | `Put ] Html_sigs.T.wrap ->
-    [> `Method ] Html_sigs.T.attrib
+    [< `Get | `Post ] Html_sigs.T.wrap -> [> `Method ] Html_sigs.T.attrib
   val a_formmethod :
-    [< `Delete | `Get | `Post | `Put ] Html_sigs.T.wrap ->
-    [> `Method ] Html_sigs.T.attrib
+    [< `Get | `Post ] Html_sigs.T.wrap -> [> `Method ] Html_sigs.T.attrib
   val a_multiple : unit -> [> `Multiple ] Html_sigs.T.attrib
   val a_name :
     Html_types.text Html_sigs.T.wrap -> [> `Name ] Html_sigs.T.attrib
@@ -1104,9 +1102,6 @@
     Html_types.text Html_sigs.T.wrap -> [> `Summary ] Html_sigs.T.attrib
   val a_border :
     Html_types.pixels Html_sigs.T.wrap -> [> `Border ] Html_sigs.T.attrib
-  val a_datapagesize :
-    Html_types.cdata Html_sigs.T.wrap ->
-    [> `Datapagesize ] Html_sigs.T.attrib
   val a_rules :
     [< `All | `Cols | `Groups | `None | `Rows ] Html_sigs.T.wrap ->
     [> `Rules ] Html_sigs.T.attrib

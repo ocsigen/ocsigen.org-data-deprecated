@@ -1340,10 +1340,8 @@
         val a_output_for : Html_types.idrefs wrap -> [> `Output_for ] attrib
         val a_for_list : Html_types.idrefs wrap -> [> `Output_for ] attrib
         val a_maxlength : Html_types.number wrap -> [> `Maxlength ] attrib
-        val a_method :
-          [< `Delete | `Get | `Post | `Put ] wrap -> [> `Method ] attrib
-        val a_formmethod :
-          [< `Delete | `Get | `Post | `Put ] wrap -> [> `Method ] attrib
+        val a_method : [< `Get | `Post ] wrap -> [> `Method ] attrib
+        val a_formmethod : [< `Get | `Post ] wrap -> [> `Method ] attrib
         val a_multiple : unit -> [> `Multiple ] attrib
         val a_name : Html_types.text wrap -> [> `Name ] attrib
         val a_rows : Html_types.number wrap -> [> `Rows ] attrib
@@ -1400,8 +1398,6 @@
           [< `Col | `Colgroup | `Row | `Rowgroup ] wrap -> [> `Scope ] attrib
         val a_summary : Html_types.text wrap -> [> `Summary ] attrib
         val a_border : Html_types.pixels wrap -> [> `Border ] attrib
-        val a_datapagesize :
-          Html_types.cdata wrap -> [> `Datapagesize ] attrib
         val a_rules :
           [< `All | `Cols | `Groups | `None | `Rows ] wrap ->
           [> `Rules ] attrib
@@ -4384,10 +4380,8 @@
         val a_output_for : Html_types.idrefs wrap -> [> `Output_for ] attrib
         val a_for_list : Html_types.idrefs wrap -> [> `Output_for ] attrib
         val a_maxlength : Html_types.number wrap -> [> `Maxlength ] attrib
-        val a_method :
-          [< `Delete | `Get | `Post | `Put ] wrap -> [> `Method ] attrib
-        val a_formmethod :
-          [< `Delete | `Get | `Post | `Put ] wrap -> [> `Method ] attrib
+        val a_method : [< `Get | `Post ] wrap -> [> `Method ] attrib
+        val a_formmethod : [< `Get | `Post ] wrap -> [> `Method ] attrib
         val a_multiple : unit -> [> `Multiple ] attrib
         val a_name : Html_types.text wrap -> [> `Name ] attrib
         val a_rows : Html_types.number wrap -> [> `Rows ] attrib
@@ -4444,8 +4438,6 @@
           [< `Col | `Colgroup | `Row | `Rowgroup ] wrap -> [> `Scope ] attrib
         val a_summary : Html_types.text wrap -> [> `Summary ] attrib
         val a_border : Html_types.pixels wrap -> [> `Border ] attrib
-        val a_datapagesize :
-          Html_types.cdata wrap -> [> `Datapagesize ] attrib
         val a_rules :
           [< `All | `Cols | `Groups | `None | `Rows ] wrap ->
           [> `Rules ] attrib

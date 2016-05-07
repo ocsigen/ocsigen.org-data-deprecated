@@ -14,7 +14,8 @@
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="a_additive"| value Svg_sigs.T.a_additive >> ~[<<a_api | module Svg_sigs.T >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="a_align"| value Html_sigs.T.a_align >> ~[<<a_api | module Html_sigs.T >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="a_align"| value Html_sigs.T.a_align >> ~[<<a_api | module Html_sigs.T >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_deprecated"|>>>>
+|
 |@@class="odocwiki_index"@ @@<<a_api text="a_alignment_baseline"| value Svg_sigs.T.a_alignment_baseline >> ~[<<a_api | module Svg_sigs.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="a_alphabetic"| value Svg_sigs.T.a_alphabetic >> ~[<<a_api | module Svg_sigs.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="a_alt"| value Html_sigs.T.a_alt >> ~[<<a_api | module Html_sigs.T >>~]||
@@ -30,7 +31,8 @@
 |@@class="odocwiki_index"@ @@<<a_api text="a_autocomplete"| value Html_sigs.T.a_autocomplete >> ~[<<a_api | module Html_sigs.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="a_autofocus"| value Html_sigs.T.a_autofocus >> ~[<<a_api | module Html_sigs.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="a_autoplay"| value Html_sigs.T.a_autoplay >> ~[<<a_api | module Html_sigs.T >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="a_axis"| value Html_sigs.T.a_axis >> ~[<<a_api | module Html_sigs.T >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="a_axis"| value Html_sigs.T.a_axis >> ~[<<a_api | module Html_sigs.T >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_deprecated"|>>>>
+|
 |@@class="odocwiki_index"@ @@<<a_api text="a_azimuth"| value Svg_sigs.T.a_azimuth >> ~[<<a_api | module Svg_sigs.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="a_baseFrenquency"| value Svg_sigs.T.a_baseFrenquency >> ~[<<a_api | module Svg_sigs.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="a_baseProfile"| value Svg_sigs.T.a_baseProfile >> ~[<<a_api | module Svg_sigs.T >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_deprecated"|>>>>
@@ -38,7 +40,8 @@
 |@@class="odocwiki_index"@ @@<<a_api text="a_bbox"| value Svg_sigs.T.a_bbox >> ~[<<a_api | module Svg_sigs.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="a_begin"| value Svg_sigs.T.a_begin >> ~[<<a_api | module Svg_sigs.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="a_bias"| value Svg_sigs.T.a_bias >> ~[<<a_api | module Svg_sigs.T >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="a_border"| value Html_sigs.T.a_border >> ~[<<a_api | module Html_sigs.T >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="a_border"| value Html_sigs.T.a_border >> ~[<<a_api | module Html_sigs.T >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_deprecated"|>>>>
+|
 |@@class="odocwiki_index"@ @@<<a_api text="a_button_type"| value Html_sigs.T.a_button_type >> ~[<<a_api | module Html_sigs.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="a_by"| value Svg_sigs.T.a_by >> ~[<<a_api | module Svg_sigs.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="a_calcMode"| value Svg_sigs.T.a_calcMode >> ~[<<a_api | module Svg_sigs.T >>~]||
@@ -62,7 +65,8 @@
 |
 |@@class="odocwiki_index"@ @@<<a_api text="a_class"| value Svg_sigs.T.a_class >> ~[<<a_api | module Svg_sigs.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="a_clipPathUnits"| value Svg_sigs.T.a_clipPathUnits >> ~[<<a_api | module Svg_sigs.T >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="a_codetype"| value Html_sigs.T.a_codetype >> ~[<<a_api | module Html_sigs.T >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="a_codetype"| value Html_sigs.T.a_codetype >> ~[<<a_api | module Html_sigs.T >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_deprecated"|>>>>
+|
 |@@class="odocwiki_index"@ @@<<a_api text="a_cols"| value Html_sigs.T.a_cols >> ~[<<a_api | module Html_sigs.T >>~]|<<div class="odocwiki_info"|~This attribute specifies the visible width in average
       character widths~.
 >>
@@ -83,7 +87,6 @@
 |@@class="odocwiki_index"@ @@<<a_api text="a_cy"| value Svg_sigs.T.a_cy >> ~[<<a_api | module Svg_sigs.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="a_d"| value Svg_sigs.T.a_d >> ~[<<a_api | module Svg_sigs.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="a_data"| value Html_sigs.T.a_data >> ~[<<a_api | module Html_sigs.T >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="a_datapagesize"| value Html_sigs.T.a_datapagesize >> ~[<<a_api | module Html_sigs.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="a_datetime"| value Html_sigs.T.a_datetime >> ~[<<a_api | module Html_sigs.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="a_defer"| value Html_sigs.T.a_defer >> ~[<<a_api | module Html_sigs.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="a_diffuseConstant"| value Svg_sigs.T.a_diffuseConstant >> ~[<<a_api | module Svg_sigs.T >>~]||
@@ -128,7 +131,8 @@
 |
 |@@class="odocwiki_index"@ @@<<a_api text="a_formnovalidate"| value Html_sigs.T.a_formnovalidate >> ~[<<a_api | module Html_sigs.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="a_formtarget"| value Html_sigs.T.a_formtarget >> ~[<<a_api | module Html_sigs.T >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="a_frameborder"| value Html_sigs.T.a_frameborder >> ~[<<a_api | module Html_sigs.T >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="a_frameborder"| value Html_sigs.T.a_frameborder >> ~[<<a_api | module Html_sigs.T >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_deprecated"|>>>>
+|
 |@@class="odocwiki_index"@ @@<<a_api text="a_from"| value Svg_sigs.T.a_from >> ~[<<a_api | module Svg_sigs.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="a_fx"| value Svg_sigs.T.a_fx >> ~[<<a_api | module Svg_sigs.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="a_fy"| value Svg_sigs.T.a_fy >> ~[<<a_api | module Svg_sigs.T >>~]||
@@ -197,8 +201,10 @@
 |@@class="odocwiki_index"@ @@<<a_api text="a_loop"| value Html_sigs.T.a_loop >> ~[<<a_api | module Html_sigs.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="a_low"| value Html_sigs.T.a_low >> ~[<<a_api | module Html_sigs.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="a_manifest"| value Html_sigs.T.a_manifest >> ~[<<a_api | module Html_sigs.T >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="a_marginheight"| value Html_sigs.T.a_marginheight >> ~[<<a_api | module Html_sigs.T >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="a_marginwidth"| value Html_sigs.T.a_marginwidth >> ~[<<a_api | module Html_sigs.T >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="a_marginheight"| value Html_sigs.T.a_marginheight >> ~[<<a_api | module Html_sigs.T >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_deprecated"|>>>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="a_marginwidth"| value Html_sigs.T.a_marginwidth >> ~[<<a_api | module Html_sigs.T >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_deprecated"|>>>>
+|
 |@@class="odocwiki_index"@ @@<<a_api text="a_markerHeight"| value Svg_sigs.T.a_markerHeight >> ~[<<a_api | module Svg_sigs.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="a_markerUnits"| value Svg_sigs.T.a_markerUnits >> ~[<<a_api | module Svg_sigs.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="a_markerWidth"| value Svg_sigs.T.a_markerWidth >> ~[<<a_api | module Svg_sigs.T >>~]||
@@ -371,12 +377,14 @@
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="a_rowspan"| value Html_sigs.T.a_rowspan >> ~[<<a_api | module Html_sigs.T >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="a_rules"| value Html_sigs.T.a_rules >> ~[<<a_api | module Html_sigs.T >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="a_rules"| value Html_sigs.T.a_rules >> ~[<<a_api | module Html_sigs.T >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_deprecated"|>>>>
+|
 |@@class="odocwiki_index"@ @@<<a_api text="a_rx"| value Svg_sigs.T.a_rx >> ~[<<a_api | module Svg_sigs.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="a_ry"| value Svg_sigs.T.a_ry >> ~[<<a_api | module Svg_sigs.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="a_sandbox"| value Html_sigs.T.a_sandbox >> ~[<<a_api | module Html_sigs.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="a_scale"| value Svg_sigs.T.a_scale >> ~[<<a_api | module Svg_sigs.T >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="a_scope"| value Html_sigs.T.a_scope >> ~[<<a_api | module Html_sigs.T >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="a_scope"| value Html_sigs.T.a_scope >> ~[<<a_api | module Html_sigs.T >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_deprecated"|>>>>
+|
 |@@class="odocwiki_index"@ @@<<a_api text="a_scoped"| value Html_sigs.T.a_scoped >> ~[<<a_api | module Html_sigs.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="a_scrolling"| value Html_sigs.T.a_scrolling >> ~[<<a_api | module Html_sigs.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="a_seamless"| value Html_sigs.T.a_seamless >> ~[<<a_api | module Html_sigs.T >>~]||
@@ -421,7 +429,8 @@
 |@@class="odocwiki_index"@ @@<<a_api text="a_stroke_width"| value Svg_sigs.T.a_stroke_width >> ~[<<a_api | module Svg_sigs.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="a_style"| value Html_sigs.T.a_style >> ~[<<a_api | module Html_sigs.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="a_style"| value Svg_sigs.T.a_style >> ~[<<a_api | module Svg_sigs.T >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="a_summary"| value Html_sigs.T.a_summary >> ~[<<a_api | module Html_sigs.T >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="a_summary"| value Html_sigs.T.a_summary >> ~[<<a_api | module Html_sigs.T >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_deprecated"|>>>>
+|
 |@@class="odocwiki_index"@ @@<<a_api text="a_surfaceScale"| value Svg_sigs.T.a_surfaceScale >> ~[<<a_api | module Svg_sigs.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="a_systemLanguage"| value Svg_sigs.T.a_systemLanguage >> ~[<<a_api | module Svg_sigs.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="a_tabindex"| value Html_sigs.T.a_tabindex >> ~[<<a_api | module Html_sigs.T >>~]|<<div class="odocwiki_info"|~This attribute specifies the position of the current

@@ -6475,7 +6475,6 @@
       | `Controls
       | `Default
       | `Defer
-      | `Delete
       | `Disabled
       | `Email
       | `Formnovalidate
@@ -6507,7 +6506,6 @@
       | `Post
       | `Preserve
       | `Pubdate
-      | `Put
       | `Radio
       | `ReadOnly
       | `Rect

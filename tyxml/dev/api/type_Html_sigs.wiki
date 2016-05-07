@@ -1123,11 +1123,9 @@
         Html_types.number Html_sigs.T.wrap ->
         [> `Maxlength ] Html_sigs.T.attrib
       val a_method :
-        [< `Delete | `Get | `Post | `Put ] Html_sigs.T.wrap ->
-        [> `Method ] Html_sigs.T.attrib
+        [< `Get | `Post ] Html_sigs.T.wrap -> [> `Method ] Html_sigs.T.attrib
       val a_formmethod :
-        [< `Delete | `Get | `Post | `Put ] Html_sigs.T.wrap ->
-        [> `Method ] Html_sigs.T.attrib
+        [< `Get | `Post ] Html_sigs.T.wrap -> [> `Method ] Html_sigs.T.attrib
       val a_multiple : unit -> [> `Multiple ] Html_sigs.T.attrib
       val a_name :
         Html_types.text Html_sigs.T.wrap -> [> `Name ] Html_sigs.T.attrib
@@ -1207,9 +1205,6 @@
         Html_types.text Html_sigs.T.wrap -> [> `Summary ] Html_sigs.T.attrib
       val a_border :
         Html_types.pixels Html_sigs.T.wrap -> [> `Border ] Html_sigs.T.attrib
-      val a_datapagesize :
-        Html_types.cdata Html_sigs.T.wrap ->
-        [> `Datapagesize ] Html_sigs.T.attrib
       val a_rules :
         [< `All | `Cols | `Groups | `None | `Rows ] Html_sigs.T.wrap ->
         [> `Rules ] Html_sigs.T.attrib
@@ -3512,10 +3507,8 @@
       val a_output_for : Html_types.idrefs wrap -> [> `Output_for ] attrib
       val a_for_list : Html_types.idrefs wrap -> [> `Output_for ] attrib
       val a_maxlength : Html_types.number wrap -> [> `Maxlength ] attrib
-      val a_method :
-        [< `Delete | `Get | `Post | `Put ] wrap -> [> `Method ] attrib
-      val a_formmethod :
-        [< `Delete | `Get | `Post | `Put ] wrap -> [> `Method ] attrib
+      val a_method : [< `Get | `Post ] wrap -> [> `Method ] attrib
+      val a_formmethod : [< `Get | `Post ] wrap -> [> `Method ] attrib
       val a_multiple : unit -> [> `Multiple ] attrib
       val a_name : Html_types.text wrap -> [> `Name ] attrib
       val a_rows : Html_types.number wrap -> [> `Rows ] attrib
@@ -3571,7 +3564,6 @@
         [< `Col | `Colgroup | `Row | `Rowgroup ] wrap -> [> `Scope ] attrib
       val a_summary : Html_types.text wrap -> [> `Summary ] attrib
       val a_border : Html_types.pixels wrap -> [> `Border ] attrib
-      val a_datapagesize : Html_types.cdata wrap -> [> `Datapagesize ] attrib
       val a_rules :
         [< `All | `Cols | `Groups | `None | `Rows ] wrap ->
         [> `Rules ] attrib
@@ -6190,10 +6182,8 @@
               Html_types.idrefs wrap -> [> `Output_for ] attrib
             val a_maxlength :
               Html_types.number wrap -> [> `Maxlength ] attrib
-            val a_method :
-              [< `Delete | `Get | `Post | `Put ] wrap -> [> `Method ] attrib
-            val a_formmethod :
-              [< `Delete | `Get | `Post | `Put ] wrap -> [> `Method ] attrib
+            val a_method : [< `Get | `Post ] wrap -> [> `Method ] attrib
+            val a_formmethod : [< `Get | `Post ] wrap -> [> `Method ] attrib
             val a_multiple : unit -> [> `Multiple ] attrib
             val a_name : Html_types.text wrap -> [> `Name ] attrib
             val a_rows : Html_types.number wrap -> [> `Rows ] attrib
@@ -6255,8 +6245,6 @@
               [> `Scope ] attrib
             val a_summary : Html_types.text wrap -> [> `Summary ] attrib
             val a_border : Html_types.pixels wrap -> [> `Border ] attrib
-            val a_datapagesize :
-              Html_types.cdata wrap -> [> `Datapagesize ] attrib
             val a_rules :
               [< `All | `Cols | `Groups | `None | `Rows ] wrap ->
               [> `Rules ] attrib
