@@ -364,7 +364,7 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="display"| value Eliom_content.Html5.Manip.SetCss.display >> ~[<<a_api subproject="client" | module Eliom_content.Html5.Manip.SetCss >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="display"| value Eliom_content.Html5.Manip.Css.display >> ~[<<a_api subproject="client" | module Eliom_content.Html5.Manip.Css >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="do_cache"| value Eliom_cscache.do_cache >> ~[<<a_api subproject="client" | module Eliom_cscache >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|do~_cache cache key value>> adds the association from <<span class="odocwiki_inlinecode"|key>>
-       to <<span class="odocwiki_inlinecode"|value>> in <<span class="odocwiki_inlinecode"|cache>>~, if not already present~.
+       to <<span class="odocwiki_inlinecode"|value>> in <<span class="odocwiki_inlinecode"|cache>>~, or replaces it if not already present~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="do_next_client_section_data"| value Eliom_client_core.do_next_client_section_data >> ~[<<a_api subproject="client" | module Eliom_client_core >>~]||
