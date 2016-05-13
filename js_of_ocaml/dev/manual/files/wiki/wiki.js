@@ -2345,7 +2345,7 @@
      {var b=a[1];
       return i
               (function(a,b)
-                {var g=64,d=1<=64?g:1,e=ar<d?ar:d,f=q(e),c=[0,f,0,e,f];
+                {var f=64,d=ar<64?ar:f,e=q(d),c=[0,e,0,d,e];
                  Z(c,b);
                  return a6(c[1],0,c[2])},
                0,
@@ -2887,8 +2887,8 @@
             case 7:
              var
               h=b[12],
-              I=typeof h==="number"?0:1===h[0]?(co(b,h[1],h[2]),1):0;
-             if(!I)H(b,c);
+              G=typeof h==="number"?0:1===h[0]?(co(b,h[1],h[2]),1):0;
+             if(!G)H(b,c);
              continue a;
             case 8:
              if(b[5])return H(b,c);
@@ -2897,22 +2897,22 @@
              continue a;
             case 9:ax(b,g(b[1][4],0));continue a;
             case 10:
-             var e=B(c),d=0,A=124,r=f(e);
+             var e=B(c),d=0,r=f(e);
              for(;;)
               {if(r<=d)throw bP;
-               if(aG(e,d)===A)
-                {var C=U(e,2,d-2|0),D=U(e,d+1|0,(f(e)-d|0)-3|0);
-                 ax(b,v(b[1][5],C,D));
+               if(aG(e,d)===124)
+                {var A=U(e,2,d-2|0),C=U(e,d+1|0,(f(e)-d|0)-3|0);
+                 ax(b,v(b[1][5],A,C));
                  continue a}
                var d=d+1|0;
                continue}
             case 11:
              var
               q=B(c),
-              E=U(q,3,f(q)-6|0),
-              F=g(b[1][1],E),
-              G=[0,g(b[1][21],F),0];
-             ax(b,g(b[1][6],G));
+              D=U(q,3,f(q)-6|0),
+              E=g(b[1][1],D),
+              F=[0,g(b[1][21],E),0];
+             ax(b,g(b[1][6],F));
              continue a;
             case 12:aj(b,U(B(c),1,1));continue a;
             case 13:if(!bp(b))H(b,c);return a<50?Y(a+1|0,b,c):T(Y,[0,b,c]);

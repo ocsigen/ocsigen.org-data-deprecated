@@ -3,121 +3,113 @@
 (function(L)
    {"use strict";
     var
-     d5=254,
-     aN=255,
-     dQ=224,
-     b5="i",
-     d4="Invalid_argument",
-     ba='"',
-     Z=16777215,
-     av="xmlHttpRequest.ml",
-     d3="@[",
-     bW="=",
-     dz="function",
-     dO=", characters ",
-     dP=250,
-     d2="sprites/guy.png",
-     aP=1024,
-     dx="o",
-     dy="jsError",
-     bd="POST",
-     dM=382334108,
-     dN="(Program not linked with -g, cannot print stack backtrace)\n",
-     b4="&",
-     d1=512,
-     dw="End_of_file",
-     dv=120,
-     b3=2147483e3,
-     du="Failure",
-     dL=-10,
-     dK="% ",
-     dj="Stack_overflow",
+     dR=254,
+     aF=255,
+     dD=224,
+     bV="i",
+     dQ="Invalid_argument",
+     a6='"',
+     V=16777215,
+     dP="@[",
+     dl="function",
+     dB=", characters ",
+     dC=250,
+     dO="sprites/guy.png",
+     aH=1024,
+     dj="o",
+     dk="jsError",
+     dz=382334108,
+     dA="(Program not linked with -g, cannot print stack backtrace)\n",
+     dN=512,
+     di="End_of_file",
+     dh=120,
+     bU=2147483e3,
+     dg="Failure",
+     dy=-10,
+     dx="% ",
+     c8="Stack_overflow",
      e="",
-     J=128,
-     di=781515420,
-     dt="sprites/boulder.png",
-     ds=479410653,
-     dJ=100,
-     Y="0",
+     I=128,
+     df="sprites/boulder.png",
+     de=479410653,
+     dw=100,
+     U="0",
      a=248,
-     dh="Not_found",
-     b2="%#",
-     dZ="Sys_blocked_io",
-     d0="fd ",
-     dI="Match_failure",
+     c7="Not_found",
+     bT="%#",
+     dL="Sys_blocked_io",
+     dM="fd ",
+     dv="Match_failure",
      b="camlinternalFormat.ml",
-     dr="Division_by_zero",
-     bX=1e3,
-     ay="src/core/lwt.ml",
-     bV="x",
-     dq="Sys_error",
-     bc=".",
-     bb="+",
-     aO=65535,
-     dY="GET",
-     bU="g",
-     dX="%u",
-     bT="%d",
-     dW=110,
-     dp=57343,
-     dH=785140586,
-     de="sprites/end.png",
-     df="?",
-     dg=252,
-     dn="'",
-     dG=127,
-     a$="int_of_string",
-     dm=982028505,
-     dV="@{",
-     X=" ",
-     b1="e",
-     dc="Undefined_recursive_module",
-     dd=0.001,
-     aQ=891486873,
-     b0="d",
-     dU="X",
-     ax="-",
-     dF="nan",
-     dT='", line ',
-     dk=240,
-     dl=2048,
-     dD="%.12g",
-     dE=56320,
-     bY=0.05,
-     bZ=" : file already exists",
-     dC="%+",
-     aw="%",
-     dA="Assert_failure",
-     dB="/",
-     db="%i",
-     dS="Out_of_memory",
-     dR="index out of bounds";
-    function cb(a,b,c)
+     dd="Division_by_zero",
+     bO=1e3,
+     at="src/core/lwt.ml",
+     bN="x",
+     dc="Sys_error",
+     a8=".",
+     a7="+",
+     aG=65535,
+     bM="g",
+     dK="%u",
+     bL="%d",
+     dJ=110,
+     db=57343,
+     du=785140586,
+     c5="sprites/end.png",
+     c6=252,
+     da="'",
+     dt=127,
+     a5="int_of_string",
+     c$=982028505,
+     dI="@{",
+     T=" ",
+     bS="e",
+     c3="Undefined_recursive_module",
+     c4=0.001,
+     bR="d",
+     dH="X",
+     as="-",
+     ds="nan",
+     dG='", line ',
+     c9=240,
+     c_=2048,
+     dq="%.12g",
+     dr=56320,
+     bP=0.05,
+     bQ=" : file already exists",
+     dp="%+",
+     ar="%",
+     dm="Assert_failure",
+     dn="/",
+     c2="%i",
+     dF="Out_of_memory",
+     dE="index out of bounds";
+    function b4(a,b,c)
      {var e=new Array(c);for(var d=0;d<c;d++)e[d]=a[b+d];return e}
-    function ca(a,b,c)
+    function b3(a,b,c)
      {var d=String.fromCharCode;
       if(b==0&&c<=4096&&c==a.length)return d.apply(null,a);
       var f=e;
-      for(;0<c;b+=aP,c-=aP)f+=d.apply(null,cb(a,b,Math.min(c,aP)));
+      for(;0<c;b+=aH,c-=aH)f+=d.apply(null,b4(a,b,Math.min(c,aH)));
       return f}
-    function be(a)
+    function a9(a)
      {var c=new Array(a.l),e=a.c,d=e.length,b=0;
       for(;b<d;b++)c[b]=e.charCodeAt(b);
       for(d=a.l;b<d;b++)c[b]=0;
       a.c=c;
       a.t=4;
       return c}
-    function Q(a,b,c,d,e)
+    function O(a,b,c,d,e)
      {if(e==0)return 0;
       if(d==0&&(e>=c.l||c.t==2&&e>=c.c.length))
-       {c.c=a.t==4?ca(a.c,b,e):b==0&&a.c.length==e?a.c:a.c.substr(b,e);
+       {c.c=a.t==4?b3(a.c,b,e):b==0&&a.c.length==e?a.c:a.c.substr(b,e);
         c.t=c.c.length==c.l?0:2}
       else
        if(c.t==2&&d==c.c.length)
-        {c.c+=a.t==4?ca(a.c,b,e):b==0&&a.c.length==e?a.c:a.c.substr(b,e);
+        {c.c+=a.t==4?b3(a.c,b,e):b==0&&a.c.length==e?a.c:a.c.substr(b,e);
          c.t=c.c.length==c.l?0:2}
        else
-        {if(c.t!=4)be(c);
+        {if(c.t!=4)a9(c);
          var g=a.c,h=c.c;
          if(a.t==4)
           for(var f=0;f<e;f++)h[d+f]=g[b+f];
@@ -126,98 +118,98 @@
            for(var f=0;f<i;f++)h[d+f]=g.charCodeAt(b+f);
            for(;f<e;f++)h[d+f]=0}}
       return 0}
-    function bn(a,b)
+    function bg(a,b)
      {if(b.repeat)return b.repeat(a);
       var c=e,d=0;
       if(a==0)return c;
       for(;;)
        {if(a&1)c+=b;a>>=1;if(a==0)return c;b+=b;d++;if(d==9)b.slice(0,1)}}
-    function az(a)
-     {if(a.t==2)a.c+=bn(a.l-a.c.length,"\0");else a.c=ca(a.c,0,a.c.length);
+    function au(a)
+     {if(a.t==2)a.c+=bg(a.l-a.c.length,"\0");else a.c=b3(a.c,0,a.c.length);
       a.t=0}
-    function R(a){if((a.t&6)!=0)az(a);return a.c}
-    function iU(a,b)
+    function ai(a){if((a.t&6)!=0)au(a);return a.c}
+    function h$(a,b)
      {var e=a.length,d=new Array(e+1),c=0;
       for(;c<e;c++)d[c]=a[c];
       d[c]=b;
       return d}
-    function _(c,b)
-     {if(c.fun)return _(c.fun,b);
+    function W(c,b)
+     {if(c.fun)return W(c.fun,b);
       var a=c.length,d=b.length,e=a-d;
       if(e==0)
        return c.apply(null,b);
       else
        if(e<0)
-        return _(c.apply(null,cb(b,0,a)),cb(b,a,d-a));
+        return W(c.apply(null,b4(b,0,a)),b4(b,a,d-a));
        else
-        return function(a){return _(c,iU(b,a))}}
-    function iF(a,b){throw [0,a,b]}
-    function d9(a)
+        return function(a){return W(c,h$(b,a))}}
+    function hW(a,b){throw [0,a,b]}
+    function dV(a)
      {if(a.length<24)
-       {for(var b=0;b<a.length;b++)if(a.charCodeAt(b)>dG)return false;
+       {for(var b=0;b<a.length;b++)if(a.charCodeAt(b)>dt)return false;
         return true}
       else
        return !/[^\x00-\x7f]/.test(a)}
-    function iQ(a)
+    function h7(a)
      {for(var k=e,d=e,h,g,i,b,c=0,j=a.length;c<j;c++)
        {g=a.charCodeAt(c);
-        if(g<J)
-         {for(var f=c+1;f<j&&(g=a.charCodeAt(f))<J;f++);
-          if(f-c>d1)
+        if(g<I)
+         {for(var f=c+1;f<j&&(g=a.charCodeAt(f))<I;f++);
+          if(f-c>dN)
            {d.substr(0,1);k+=d;d=e;k+=a.slice(c,f)}
           else
            d+=a.slice(c,f);
           if(f==j)break;
           c=f}
         b=1;
-        if(++c<j&&((i=a.charCodeAt(c))&-64)==J)
+        if(++c<j&&((i=a.charCodeAt(c))&-64)==I)
          {h=i+(g<<6);
-          if(g<dQ)
-           {b=h-12416;if(b<J)b=1}
+          if(g<dD)
+           {b=h-12416;if(b<I)b=1}
           else
            {b=2;
-            if(++c<j&&((i=a.charCodeAt(c))&-64)==J)
+            if(++c<j&&((i=a.charCodeAt(c))&-64)==I)
              {h=i+(h<<6);
-              if(g<dk)
-               {b=h-925824;if(b<dl||b>=55295&&b<57344)b=2}
+              if(g<c9)
+               {b=h-925824;if(b<c_||b>=55295&&b<57344)b=2}
               else
                {b=3;
-                if(++c<j&&((i=a.charCodeAt(c))&-64)==J&&g<245)
+                if(++c<j&&((i=a.charCodeAt(c))&-64)==I&&g<245)
                  {b=i-63447168+(h<<6);if(b<65536||b>1114111)b=3}}}}}
         if(b<4)
          {c-=b;d+="\ufffd"}
         else
-         if(b>aO)
-          d+=String.fromCharCode(55232+(b>>10),dE+(b&1023));
+         if(b>aG)
+          d+=String.fromCharCode(55232+(b>>10),dr+(b&1023));
          else
           d+=String.fromCharCode(b);
-        if(d.length>aP){d.substr(0,1);k+=d;d=e}}
+        if(d.length>aH){d.substr(0,1);k+=d;d=e}}
       return k+d}
-    function iP(a)
+    function h6(a)
      {switch(a.t)
        {case 9:return a.c;
-        default:az(a);case 0:
-         if(d9(a.c)){a.t=9;return a.c}a.t=8;
-        case 8:return iQ(a.c)
+        default:au(a);case 0:
+         if(dV(a.c)){a.t=9;return a.c}a.t=8;
+        case 8:return h7(a.c)
         }}
-    function P(a,b,c){this.t=a;this.c=b;this.l=c}
-    P.prototype.toString=function(){return iP(this)};
-    function d(a){return new P(0,a,a.length)}
-    function b$(a,b){iF(a,d(b))}
+    function N(a,b,c){this.t=a;this.c=b;this.l=c}
+    N.prototype.toString=function(){return h6(this)};
+    function d(a){return new N(0,a,a.length)}
+    function b2(a,b){hW(a,d(b))}
     var r=[0];
-    function ak(a){b$(r.Invalid_argument,a)}
-    function h9(){ak(dR)}
-    function h(a,b){if(b>>>0>=a.length-1)h9();return a}
-    function h_(a)
+    function aj(a){b2(r.Invalid_argument,a)}
+    function hq(){aj(dE)}
+    function h(a,b){if(b>>>0>=a.length-1)hq();return a}
+    function hr(a)
      {if(isFinite(a))
        {if(Math.abs(a)>=2.22507385850720138e-308)return 0;
         if(a!=0)return 1;
         return 2}
       return isNaN(a)?4:3}
-    function aR(a){b$(r.Failure,a)}
-    function h$(){aR("caml_convert_raw_backtrace_slot")}
-    function q(a){if(a<0)ak("String.create");return new P(a?2:9,e,a)}
-    function ii(a,b)
+    function aI(a){b2(r.Failure,a)}
+    function hs(){aI("caml_convert_raw_backtrace_slot")}
+    function q(a){if(a<0)aj("String.create");return new N(a?2:9,e,a)}
+    function hA(a,b)
      {var c=a[3]<<16,d=b[3]<<16;
       if(c>d)return 1;
       if(c<d)return -1;
@@ -226,51 +218,51 @@
       if(a[1]>b[1])return 1;
       if(a[1]<b[1])return -1;
       return 0}
-    function it(a,b){if(a<b)return -1;if(a==b)return 0;return 1}
-    function iI(a,b){a.t&6&&az(a);b.t&6&&az(b);return a.c<b.c?-1:a.c>b.c?1:0}
-    function b6(a,b,c)
+    function hK(a,b){if(a<b)return -1;if(a==b)return 0;return 1}
+    function hZ(a,b){a.t&6&&au(a);b.t&6&&au(b);return a.c<b.c?-1:a.c>b.c?1:0}
+    function bW(a,b,c)
      {var e=[];
       for(;;)
        {if(!(c&&a===b))
-         if(a instanceof P)
-          if(b instanceof P)
-           {if(a!==b){var d=iI(a,b);if(d!=0)return d}}
+         if(a instanceof N)
+          if(b instanceof N)
+           {if(a!==b){var d=hZ(a,b);if(d!=0)return d}}
           else
            return 1;
          else
           if(a instanceof Array&&a[0]===(a[0]|0))
            {var f=a[0];
-            if(f===d5)f=0;
-            if(f===dP)
+            if(f===dR)f=0;
+            if(f===dC)
              {a=a[1];continue}
             else
              if(b instanceof Array&&b[0]===(b[0]|0))
               {var g=b[0];
-               if(g===d5)g=0;
-               if(g===dP)
+               if(g===dR)g=0;
+               if(g===dC)
                 {b=b[1];continue}
                else
                 if(f!=g)
                  return f<g?-1:1;
                 else
                  switch(f)
-                  {case 248:var d=it(a[2],b[2]);if(d!=0)return d;break;
-                   case 251:ak("equal: abstract value");
-                   case 255:var d=ii(a,b);if(d!=0)return d;break;
+                  {case 248:var d=hK(a[2],b[2]);if(d!=0)return d;break;
+                   case 251:aj("equal: abstract value");
+                   case 255:var d=hA(a,b);if(d!=0)return d;break;
                    default:
                     if(a.length!=b.length)return a.length<b.length?-1:1;
                     if(a.length>1)e.push(a,b,1)}}
              else
               return 1}
           else
-           if(b instanceof P||b instanceof Array&&b[0]===(b[0]|0))
+           if(b instanceof N||b instanceof Array&&b[0]===(b[0]|0))
             return -1;
            else
             if(typeof a!="number"&&a&&a.compare)
              return a.compare(b,c);
             else
-             if(typeof a==dz)
-              ak("equal: functional value");
+             if(typeof a==dl)
+              aj("equal: functional value");
              else
               {if(a<b)return -1;
                if(a>b)return 1;
@@ -282,26 +274,26 @@
         if(h+1<a.length)e.push(a,b,h+1);
         a=a[h];
         b=b[h]}}
-    function ib(a,b){return +(b6(a,b,false)==0)}
-    function ic(a,b,c,d)
+    function hu(a,b){return +(bW(a,b,false)==0)}
+    function hv(a,b,c,d)
      {if(c>0)
        if(b==0&&(c>=a.l||a.t==2&&c>=a.c.length))
         if(d==0)
          {a.c=e;a.t=2}
         else
-         {a.c=bn(c,String.fromCharCode(d));a.t=c==a.l?0:2}
+         {a.c=bg(c,String.fromCharCode(d));a.t=c==a.l?0:2}
        else
-        {if(a.t!=4)be(a);for(c+=b;b<c;b++)a.c[b]=d}
+        {if(a.t!=4)a9(a);for(c+=b;b<c;b++)a.c[b]=d}
       return 0}
-    function b_(a)
-     {a=R(a);
+    function b1(a)
+     {a=ai(a);
       var e=a.length;
-      if(e>31)ak("format_int: format too long");
+      if(e>31)aj("format_int: format too long");
       var
        b=
-        {justify:bb,
-         signstyle:ax,
-         filler:X,
+        {justify:a7,
+         signstyle:as,
+         filler:T,
          alternate:false,
          base:0,
          signedconv:false,
@@ -313,10 +305,10 @@
       for(var d=0;d<e;d++)
        {var c=a.charAt(d);
         switch(c)
-         {case "-":b.justify=ax;break;
+         {case "-":b.justify=as;break;
           case "+":
           case " ":b.signstyle=c;break;
-          case "0":b.filler=Y;break;
+          case "0":b.filler=U;break;
           case "#":b.alternate=true;break;
           case "1":
           case "2":
@@ -351,47 +343,47 @@
            b.signedconv=true;b.uppercase=true;b.conv=c.toLowerCase();break
           }}
       return b}
-    function b7(a,b)
+    function bX(a,b)
      {if(a.uppercase)b=b.toUpperCase();
       var g=b.length;
-      if(a.signedconv&&(a.sign<0||a.signstyle!=ax))g++;
+      if(a.signedconv&&(a.sign<0||a.signstyle!=as))g++;
       if(a.alternate){if(a.base==8)g+=1;if(a.base==16)g+=2}
       var c=e;
-      if(a.justify==bb&&a.filler==X)for(var f=g;f<a.width;f++)c+=X;
+      if(a.justify==a7&&a.filler==T)for(var f=g;f<a.width;f++)c+=T;
       if(a.signedconv)
-       if(a.sign<0)c+=ax;else if(a.signstyle!=ax)c+=a.signstyle;
-      if(a.alternate&&a.base==8)c+=Y;
+       if(a.sign<0)c+=as;else if(a.signstyle!=as)c+=a.signstyle;
+      if(a.alternate&&a.base==8)c+=U;
       if(a.alternate&&a.base==16)c+="0x";
-      if(a.justify==bb&&a.filler==Y)for(var f=g;f<a.width;f++)c+=Y;
+      if(a.justify==a7&&a.filler==U)for(var f=g;f<a.width;f++)c+=U;
       c+=b;
-      if(a.justify==ax)for(var f=g;f<a.width;f++)c+=X;
+      if(a.justify==as)for(var f=g;f<a.width;f++)c+=T;
       return d(c)}
-    function d6(a,b)
-     {var c,f=b_(a),e=f.prec<0?6:f.prec;
+    function dS(a,b)
+     {var c,f=b1(a),e=f.prec<0?6:f.prec;
       if(b<0||b==0&&1/b==-Infinity){f.sign=-1;b=-b}
       if(isNaN(b))
-       {c=dF;f.filler=X}
+       {c=ds;f.filler=T}
       else
        if(!isFinite(b))
-        {c="inf";f.filler=X}
+        {c="inf";f.filler=T}
        else
         switch(f.conv)
          {case "e":
            var c=b.toExponential(e),d=c.length;
-           if(c.charAt(d-3)==b1)c=c.slice(0,d-1)+Y+c.slice(d-1);
+           if(c.charAt(d-3)==bS)c=c.slice(0,d-1)+U+c.slice(d-1);
            break;
           case "f":c=b.toFixed(e);break;
           case "g":
            e=e?e:1;
            c=b.toExponential(e-1);
-           var i=c.indexOf(b1),h=+c.slice(i+1);
+           var i=c.indexOf(bS),h=+c.slice(i+1);
            if(h<-4||b>=1e+21||b.toFixed(0).length>e)
             {var d=i-1;
-             while(c.charAt(d)==Y)d--;
-             if(c.charAt(d)==bc)d--;
+             while(c.charAt(d)==U)d--;
+             if(c.charAt(d)==a8)d--;
              c=c.slice(0,d+1)+c.slice(i);
              d=c.length;
-             if(c.charAt(d-3)==b1)c=c.slice(0,d-1)+Y+c.slice(d-1);
+             if(c.charAt(d-3)==bS)c=c.slice(0,d-1)+U+c.slice(d-1);
              break}
            else
             {var g=e;
@@ -401,53 +393,53 @@
               while(c=b.toFixed(g),c.length>e+1)g--;
              if(g)
               {var d=c.length-1;
-               while(c.charAt(d)==Y)d--;
-               if(c.charAt(d)==bc)d--;
+               while(c.charAt(d)==U)d--;
+               if(c.charAt(d)==a8)d--;
                c=c.slice(0,d+1)}}
            break
           }
-      return b7(f,c)}
-    function bf(a,b)
-     {if(R(a)==bT)return d(e+b);
-      var c=b_(a);
+      return bX(f,c)}
+    function a_(a,b)
+     {if(ai(a)==bL)return d(e+b);
+      var c=b1(a);
       if(b<0)if(c.signedconv){c.sign=-1;b=-b}else b>>>=0;
       var f=b.toString(c.base);
-      if(c.prec>=0){c.filler=X;var g=c.prec-f.length;if(g>0)f=bn(g,Y)+f}
-      return b7(c,f)}
-    function iD(a){throw a}
-    function iE(){iD(r.Not_found)}
-    function iX(){return new Date().getTime()/bX}
-    function bo(){return Math.floor(iX())}
-    function iK(a){return new P(4,a,a.length)}
-    var em=0;
-    function al()
+      if(c.prec>=0){c.filler=T;var g=c.prec-f.length;if(g>0)f=bg(g,U)+f}
+      return bX(c,f)}
+    function hU(a){throw a}
+    function hV(){hU(r.Not_found)}
+    function ic(){return new Date().getTime()/bO}
+    function bh(){return Math.floor(ic())}
+    function h1(a){return new N(4,a,a.length)}
+    var d_=0;
+    function ak()
      {this.content={};
-      this.inode=em++;
-      var a=bo();
+      this.inode=d_++;
+      var a=bh();
       this.atime=a;
       this.mtime=a;
       this.ctime=a}
-    al.prototype=
+    ak.prototype=
     {exists:function(a){return this.content[a]?1:0},
      mk:function(a,b){this.content[a]=b},
      get:function(a){return this.content[a]},
      list:function(){var a=[];for(var b in this.content)a.push(b);return a},
      remove:function(a){delete this.content[a]}};
-    var bm=new al();
-    bm.mk(e,new al());
-    function U(a){b$(r.Sys_error,a)}
-    function eh(a)
-     {a=a instanceof P?a.toString():a;U(a+": No such file or directory")}
-    function bg(a)
-     {var b=bm;
+    var bf=new ak();
+    bf.mk(e,new ak());
+    function Q(a){b2(r.Sys_error,a)}
+    function d5(a)
+     {a=a instanceof N?a.toString():a;Q(a+": No such file or directory")}
+    function a$(a)
+     {var b=bf;
       for(var c=0;c<a.length;c++)
-       {if(!(b.exists&&b.exists(a[c])))eh(a.orig);b=b.get(a[c])}
+       {if(!(b.exists&&b.exists(a[c])))d5(a.orig);b=b.get(a[c])}
       return b}
-    var ia=dB;
-    function aS(a)
-     {a=a instanceof P?a.toString():a;
-      if(a.charCodeAt(0)!=47)a=ia+a;
-      var d=a.split(dB),b=[];
+    var ht=dn;
+    function aK(a)
+     {a=a instanceof N?a.toString():a;
+      if(a.charCodeAt(0)!=47)a=ht+a;
+      var d=a.split(dn),b=[];
       for(var c=0;c<d.length;c++)
        switch(d[c])
         {case "..":if(b.length>1)b.pop();break;
@@ -456,57 +448,57 @@
          default:b.push(d[c]);break}
       b.orig=a;
       return b}
-    function ah(a)
+    function ae(a)
      {this.data=a;
-      this.inode=em++;
-      var b=bo();
+      this.inode=d_++;
+      var b=bh();
       this.atime=b;
       this.mtime=b;
       this.ctime=b}
-    ah.prototype=
+    ae.prototype=
     {truncate:function(){this.data=q(0);this.modified()},
-     modified:function(){var a=bo();this.atime=a;this.mtime=a}};
-    function id(a)
-     {var d=aS(a),b=bg(d);
-      if(b instanceof ah){var c=bo();b.atime=c;return b.data}
-      iE()}
-    function iY(a){if(a.t!=4)be(a);return a.c}
-    function am(a,b)
-     {var f=aS(a),c=bm;
+     modified:function(){var a=bh();this.atime=a;this.mtime=a}};
+    function hw(a)
+     {var d=aK(a),b=a$(d);
+      if(b instanceof ae){var c=bh();b.atime=c;return b.data}
+      hV()}
+    function id(a){if(a.t!=4)a9(a);return a.c}
+    function al(a,b)
+     {var f=aK(a),c=bf;
       for(var g=0;g<f.length-1;g++)
        {var e=f[g];
-        if(!c.exists(e))c.mk(e,new al());
+        if(!c.exists(e))c.mk(e,new ak());
         c=c.get(e);
-        if(!(c instanceof al))U(f.orig+bZ)}
+        if(!(c instanceof ak))Q(f.orig+bQ)}
       var e=f[f.length-1];
-      if(c.exists(e))U(f.orig+bZ);
-      if(b instanceof al)
+      if(c.exists(e))Q(f.orig+bQ);
+      if(b instanceof ak)
        c.mk(e,b);
       else
-       if(b instanceof ah)
+       if(b instanceof ae)
         c.mk(e,b);
        else
-        if(b instanceof P)
-         c.mk(e,new ah(b));
+        if(b instanceof N)
+         c.mk(e,new ae(b));
         else
          if(b instanceof Array)
-          c.mk(e,new ah(iK(b)));
+          c.mk(e,new ae(h1(b)));
          else
           if(b.toString)
-           c.mk(e,new ah(d(b.toString())));
+           c.mk(e,new ae(d(b.toString())));
           else
-           ak("caml_fs_register");
+           aj("caml_fs_register");
       return 0}
-    function ie(){return [0]}
-    function ig(a,b){return +(b6(a,b,false)>=0)}
-    function il(a){return (a[3]|a[2]|a[1])==0}
-    function ip(a){return [aN,a&Z,a>>24&Z,a>>31&aO]}
-    function ef(a)
+    function hx(){return [0]}
+    function hy(a,b){return +(bW(a,b,false)>=0)}
+    function hD(a){return (a[3]|a[2]|a[1])==0}
+    function hG(a){return [aF,a&V,a>>24&V,a>>31&aG]}
+    function d3(a)
      {var d=a.length,c=new Array(d);for(var b=0;b<d;b++)c[b]=a[b];return c}
-    function iq(a,b)
+    function hH(a,b)
      {var c=a[1]-b[1],d=a[2]-b[2]+(c>>24),e=a[3]-b[3]+(d>>24);
-      return [aN,c&Z,d&Z,e&aO]}
-    function d8(a,b)
+      return [aF,c&V,d&V,e&aG]}
+    function dU(a,b)
      {if(a[3]>b[3])return 1;
       if(a[3]<b[3])return -1;
       if(a[2]>b[2])return 1;
@@ -514,36 +506,36 @@
       if(a[1]>b[1])return 1;
       if(a[1]<b[1])return -1;
       return 0}
-    function d7(a)
-     {a[3]=a[3]<<1|a[2]>>23;a[2]=(a[2]<<1|a[1]>>23)&Z;a[1]=a[1]<<1&Z}
-    function im(a)
-     {a[1]=(a[1]>>>1|a[2]<<23)&Z;a[2]=(a[2]>>>1|a[3]<<23)&Z;a[3]=a[3]>>>1}
-    function is(a,b)
-     {var e=0,d=ef(a),c=ef(b),f=[aN,0,0,0];
-      while(d8(d,c)>0){e++;d7(c)}
-      while(e>=0){e--;d7(f);if(d8(d,c)>=0){f[1]++;d=iq(d,c)}im(c)}
+    function dT(a)
+     {a[3]=a[3]<<1|a[2]>>23;a[2]=(a[2]<<1|a[1]>>23)&V;a[1]=a[1]<<1&V}
+    function hE(a)
+     {a[1]=(a[1]>>>1|a[2]<<23)&V;a[2]=(a[2]>>>1|a[3]<<23)&V;a[3]=a[3]>>>1}
+    function hJ(a,b)
+     {var e=0,d=d3(a),c=d3(b),f=[aF,0,0,0];
+      while(dU(d,c)>0){e++;dT(c)}
+      while(e>=0){e--;dT(f);if(dU(d,c)>=0){f[1]++;d=hH(d,c)}hE(c)}
       return [0,f,d]}
-    function ir(a){return a[1]|a[2]<<24}
-    function ik(a){return a[3]<<16<0}
-    function io(a)
-     {var b=-a[1],c=-a[2]+(b>>24),d=-a[3]+(c>>24);return [aN,b&Z,c&Z,d&aO]}
-    function ij(a,b)
-     {var c=b_(a);
-      if(c.signedconv&&ik(b)){c.sign=-1;b=io(b)}
-      var d=e,i=ip(c.base),h="0123456789abcdef";
-      do{var g=is(b,i);b=g[1];d=h.charAt(ir(g[2]))+d}while(!il(b));
-      if(c.prec>=0){c.filler=X;var f=c.prec-d.length;if(f>0)d=bn(f,Y)+d}
-      return b7(c,d)}
-    function $(a,b)
+    function hI(a){return a[1]|a[2]<<24}
+    function hC(a){return a[3]<<16<0}
+    function hF(a)
+     {var b=-a[1],c=-a[2]+(b>>24),d=-a[3]+(c>>24);return [aF,b&V,c&V,d&aG]}
+    function hB(a,b)
+     {var c=b1(a);
+      if(c.signedconv&&hC(b)){c.sign=-1;b=hF(b)}
+      var d=e,i=hG(c.base),h="0123456789abcdef";
+      do{var g=hJ(b,i);b=g[1];d=h.charAt(hI(g[2]))+d}while(!hD(b));
+      if(c.prec>=0){c.filler=T;var f=c.prec-d.length;if(f>0)d=bg(f,U)+d}
+      return bX(c,d)}
+    function X(a,b)
      {switch(a.t&6)
        {default:if(b>=a.c.length)return 0;case 0:return a.c.charCodeAt(b);
         case 4:return a.c[b]
         }}
     function f(a){return a.l}
-    function iC(a)
-     {var b=0,d=f(a),c=10,e=d>0&&$(a,0)==45?(b++,-1):1;
-      if(b+1<d&&$(a,b)==48)
-       switch($(a,b+1))
+    function hT(a)
+     {var b=0,d=f(a),c=10,e=d>0&&X(a,0)==45?(b++,-1):1;
+      if(b+1<d&&X(a,b)==48)
+       switch(X(a,b+1))
         {case 120:
          case 88:c=16;b+=2;break;
          case 111:
@@ -552,28 +544,28 @@
          case 66:c=2;b+=2;break
          }
       return [b,e,c]}
-    function eg(a)
+    function d4(a)
      {if(a>=48&&a<=57)return a-48;
       if(a>=65&&a<=90)return a-55;
       if(a>=97&&a<=122)return a-87;
       return -1}
-    function iu(a)
-     {var i=iC(a),d=i[0],j=i[1],e=i[2],h=f(a),k=-1>>>0,g=d<h?$(a,d):0,c=eg(g);
-      if(c<0||c>=e)aR(a$);
+    function hL(a)
+     {var i=hT(a),d=i[0],j=i[1],e=i[2],h=f(a),k=-1>>>0,g=d<h?X(a,d):0,c=d4(g);
+      if(c<0||c>=e)aI(a5);
       var b=c;
       for(d++;d<h;d++)
-       {g=$(a,d);
+       {g=X(a,d);
         if(g==95)continue;
-        c=eg(g);
+        c=d4(g);
         if(c<0||c>=e)break;
         b=e*b+c;
-        if(b>k)aR(a$)}
-      if(d!=h)aR(a$);
+        if(b>k)aI(a5)}
+      if(d!=h)aI(a5);
       b=j*b;
-      if(e==10&&(b|0)!=b)aR(a$);
+      if(e==10&&(b|0)!=b)aI(a5);
       return b|0}
-    function bh(a){return +(a>31&&a<dG)}
-    function iv()
+    function ba(a){return +(a>31&&a<dt)}
+    function hM()
      {var
        b=L.console?L.console:{},
        c=
@@ -594,71 +586,71 @@
       function d(){}
       for(var a=0;a<c.length;a++)if(!b[c[a]])b[c[a]]=d;
       return b}
-    var bi={amp:/&/g,lt:/</g,quot:/\"/g,all:/[&<\"]/};
-    function d_(a)
-     {if(!bi.all.test(a))return a;
-      return a.replace(bi.amp,"&amp;").replace(bi.lt,"&lt;").replace
-              (bi.quot,"&quot;")}
-    function iw()
+    var bb={amp:/&/g,lt:/</g,quot:/\"/g,all:/[&<\"]/};
+    function dW(a)
+     {if(!bb.all.test(a))return a;
+      return a.replace(bb.amp,"&amp;").replace(bb.lt,"&lt;").replace
+              (bb.quot,"&quot;")}
+    function hN()
      {var a=L.navigator?L.navigator.userAgent:e;
       return a.indexOf("MSIE")!=-1&&a.indexOf("Opera")!=0}
-    function aA(a){return d(a)}
-    function iR(a)
+    function bY(a){return d(a)}
+    function h8(a)
      {for(var g=e,c=g,b,i,d=0,h=a.length;d<h;d++)
        {b=a.charCodeAt(d);
-        if(b<J)
-         {for(var f=d+1;f<h&&(b=a.charCodeAt(f))<J;f++);
-          if(f-d>d1)
+        if(b<I)
+         {for(var f=d+1;f<h&&(b=a.charCodeAt(f))<I;f++);
+          if(f-d>dN)
            {c.substr(0,1);g+=c;c=e;g+=a.slice(d,f)}
           else
            c+=a.slice(d,f);
           if(f==h)break;
           d=f}
-        if(b<dl)
-         {c+=String.fromCharCode(192|b>>6);c+=String.fromCharCode(J|b&63)}
+        if(b<c_)
+         {c+=String.fromCharCode(192|b>>6);c+=String.fromCharCode(I|b&63)}
         else
-         if(b<55296||b>=dp)
-          c+=String.fromCharCode(dQ|b>>12,J|b>>6&63,J|b&63);
+         if(b<55296||b>=db)
+          c+=String.fromCharCode(dD|b>>12,I|b>>6&63,I|b&63);
          else
-          if(b>=56319||d+1==h||(i=a.charCodeAt(d+1))<dE||i>dp)
+          if(b>=56319||d+1==h||(i=a.charCodeAt(d+1))<dr||i>db)
            c+="\xef\xbf\xbd";
           else
            {d++;
             b=(b<<10)+i-56613888;
-            c+=String.fromCharCode(dk|b>>18,J|b>>12&63,J|b>>6&63,J|b&63)}
-        if(c.length>aP){c.substr(0,1);g+=c;c=e}}
+            c+=String.fromCharCode(c9|b>>18,I|b>>12&63,I|b>>6&63,I|b&63)}
+        if(c.length>aH){c.substr(0,1);g+=c;c=e}}
       return g+c}
-    function an(a){var b=9;if(!d9(a))b=8,a=iR(a);return new P(b,a,a.length)}
-    function iW(a)
+    function aJ(a){var b=9;if(!dV(a))b=8,a=h8(a);return new N(b,a,a.length)}
+    function ib(a)
      {var d=a.length,c=new Array(d);for(var b=0;b<d;b++)c[b]=a[b];return c}
-    function b8(a)
+    function bZ(a)
      {return function()
-       {return arguments.length>0?_(a,iW(arguments)):_(a,[undefined])}}
-    function iV(a,b)
+       {return arguments.length>0?W(a,ib(arguments)):W(a,[undefined])}}
+    function ia(a,b)
      {var e=a.length,d=new Array(e+1);
       d[0]=b;
       for(var c=1;c<=e;c++)d[c]=a[c-1];
       return d}
-    function b9(a){return function(){return _(a,iV(arguments,this))}}
-    function d$(a,b)
+    function b0(a){return function(){return W(a,ia(arguments,this))}}
+    function dX(a,b)
      {var a=a+1|0,c=new Array(a);c[0]=0;for(var d=1;d<a;d++)c[d]=b;return c}
-    function bj(a)
-     {if(!a.opened)U("Cannot flush a closed channel");
+    function bc(a)
+     {if(!a.opened)Q("Cannot flush a closed channel");
       if(a.buffer==e)return 0;
       if(a.output)
        switch(a.output.length)
         {case 2:a.output(a,a.buffer);break;default:a.output(a.buffer)}
       a.buffer=e;
       return 0}
-    function iO(a){var c=aS(a),b=bg(c);return b instanceof al?1:0}
-    function iN(a)
-     {var b=bm,d=aS(a),e,f;
+    function h5(a){var c=aK(a),b=a$(c);return b instanceof ak?1:0}
+    function h4(a)
+     {var b=bf,d=aK(a),e,f;
       for(var c=0;c<d.length;c++)
        {if(b.auto){e=b.auto;f=c}
         if(!(b.exists&&b.exists(d[c])))return e?e(d,f):0;
         b=b.get(d[c])}
       return 1}
-    function aV(a,b,c)
+    function aN(a,b,c)
      {if(r.fds===undefined)r.fds=new Array();
       c=c?c:{};
       var d={};
@@ -668,7 +660,7 @@
       r.fds[a]=d;
       r.fd_last_idx=a;
       return a}
-    function iZ(a,b,c)
+    function ie(a,b,c)
      {var d={};
       while(b)
        {switch(b[1])
@@ -683,33 +675,33 @@
           case 8:d.nonblock=1;break
           }
         b=b[2]}
-      var f=a.toString(),h=aS(a);
+      var f=a.toString(),h=aK(a);
       if(d.rdonly&&d.wronly)
-       U(f+" : flags Open_rdonly and Open_wronly are not compatible");
+       Q(f+" : flags Open_rdonly and Open_wronly are not compatible");
       if(d.text&&d.binary)
-       U(f+" : flags Open_text and Open_binary are not compatible");
-      if(iN(a))
-       {if(iO(a))U(f+" : is a directory");
-        if(d.create&&d.excl)U(f+bZ);
-        var g=r.fd_last_idx?r.fd_last_idx:0,e=bg(h);
+       Q(f+" : flags Open_text and Open_binary are not compatible");
+      if(h4(a))
+       {if(h5(a))Q(f+" : is a directory");
+        if(d.create&&d.excl)Q(f+bQ);
+        var g=r.fd_last_idx?r.fd_last_idx:0,e=a$(h);
         if(d.truncate)e.truncate();
-        return aV(g+1,e,d)}
+        return aN(g+1,e,d)}
       else
        if(d.create)
         {var g=r.fd_last_idx?r.fd_last_idx:0;
-         am(a,q(0));
-         var e=bg(h);
-         return aV(g+1,e,d)}
+         al(a,q(0));
+         var e=a$(h);
+         return aN(g+1,e,d)}
        else
-        eh(a)}
-    aV(0,new ah(q(0)));
-    aV(1,new ah(q(0)));
-    aV(2,new ah(q(0)));
-    function ix(a)
+        d5(a)}
+    aN(0,new ae(q(0)));
+    aN(1,new ae(q(0)));
+    aN(2,new ae(q(0)));
+    function hO(a)
      {var b=r.fds[a];
-      if(b.flags.wronly)U(d0+a+" is writeonly");
+      if(b.flags.wronly)Q(dM+a+" is writeonly");
       return {file:b.file,offset:b.offset,fd:a,opened:true,refill:null}}
-    function iS(a)
+    function h9(a)
      {var b=L;
       if(b.process&&b.process.stdout&&b.process.stdout.write)
        b.process.stderr.write(a);
@@ -717,7 +709,7 @@
        {if(a.charCodeAt(a.length-1)==10)a=a.substr(0,a.length-1);
         var c=b.console;
         c&&c.error&&c.error(a)}}
-    function iT(a)
+    function h_(a)
      {var b=L;
       if(b.process&&b.process.stdout&&b.process.stdout.write)
        b.process.stdout.write(a);
@@ -725,364 +717,339 @@
        {if(a.charCodeAt(a.length-1)==10)a=a.substr(0,a.length-1);
         var c=b.console;
         c&&c.log&&c.log(a)}}
-    var bk=new Array();
-    function iH(a,b)
+    var bd=new Array();
+    function hY(a,b)
      {var i=d(b),c=f(i),h=f(a.file.data),g=a.offset;
       if(g+c>=h)
-       {var e=q(g+c);Q(a.file.data,0,e,0,h);Q(i,0,e,g,c);a.file.data=e}
+       {var e=q(g+c);O(a.file.data,0,e,0,h);O(i,0,e,g,c);a.file.data=e}
       a.offset+=c;
       a.file.modified();
       return 0}
-    function ea(a)
+    function dY(a)
      {var b;
-      switch(a){case 1:b=iT;break;case 2:b=iS;break;default:b=iH}
+      switch(a){case 1:b=h_;break;case 2:b=h9;break;default:b=hY}
       var d=r.fds[a];
-      if(d.flags.rdonly)U(d0+a+" is readonly");
+      if(d.flags.rdonly)Q(dM+a+" is readonly");
       var c={file:d.file,offset:d.offset,fd:a,opened:true,buffer:e,output:b};
-      bk[c.fd]=c;
+      bd[c.fd]=c;
       return c}
-    function iy()
-     {var a=0;for(var b in bk)if(bk[b].opened)a=[0,bk[b],a];return a}
-    function eb(a,b,c,d)
-     {if(!a.opened)U("Cannot output to a closed channel");
+    function hP()
+     {var a=0;for(var b in bd)if(bd[b].opened)a=[0,bd[b],a];return a}
+    function dZ(a,b,c,d)
+     {if(!a.opened)Q("Cannot output to a closed channel");
       var g;
-      if(c==0&&f(b)==d)g=b;else{g=q(d);Q(b,c,g,0,d)}
+      if(c==0&&f(b)==d)g=b;else{g=q(d);O(b,c,g,0,d)}
       var e=g.toString(),h=e.lastIndexOf("\n");
       if(h<0)
        a.buffer+=e;
       else
-       {a.buffer+=e.substr(0,h+1);bj(a);a.buffer+=e.substr(h+1)}
+       {a.buffer+=e.substr(0,h+1);bc(a);a.buffer+=e.substr(h+1)}
       return 0}
-    function ec(a,b){var c=d(String.fromCharCode(b));eb(a,c,0,1);return 0}
+    function d0(a,b){var c=d(String.fromCharCode(b));dZ(a,c,0,1);return 0}
     if(!Math.imul)
-     Math.imul=function(a,b){b|=0;return ((a>>16)*b<<16)+(a&aO)*b|0};
-    var ed=Math.imul;
-    function aT(a,b){return +(b6(a,b,false)!=0)}
-    function iA(a){return +(a instanceof Array)}
-    function bl(a){return a instanceof Array?a[0]:a instanceof P?dg:bX}
-    function S(a,b,c){r[a+1]=b;if(c)r[c]=b}
-    var ee={};
-    function iG(a,b){ee[R(a)]=b;return 0}
-    var iB=0;
-    function E(a){a[2]=iB++;return a}
-    function ej(){ak(dR)}
-    function y(a,b){if(b>>>0>=a.l)ej();return $(a,b)}
-    function iJ(a,b){a.t&6&&az(a);b.t&6&&az(b);return a.c==b.c?1:0}
-    function ek(a,b){return 1-iJ(a,b)}
+     Math.imul=function(a,b){b|=0;return ((a>>16)*b<<16)+(a&aG)*b|0};
+    var d1=Math.imul;
+    function aL(a,b){return +(bW(a,b,false)!=0)}
+    function hR(a){return +(a instanceof Array)}
+    function be(a){return a instanceof Array?a[0]:a instanceof N?c6:bO}
+    function P(a,b,c){r[a+1]=b;if(c)r[c]=b}
+    var d2={};
+    function hX(a,b){d2[ai(a)]=b;return 0}
+    var hS=0;
+    function D(a){a[2]=hS++;return a}
+    function d7(){aj(dE)}
+    function x(a,b){if(b>>>0>=a.l)d7();return X(a,b)}
+    function h0(a,b){a.t&6&&au(a);b.t&6&&au(b);return a.c==b.c?1:0}
+    function d8(a,b){return 1-h0(a,b)}
     function n(a,b,c)
-     {c&=aN;
+     {c&=aF;
       if(a.t!=4)
        {if(b==a.c.length)
          {a.c+=String.fromCharCode(c);if(b+1==a.l)a.t=0;return 0}
-        be(a)}
+        a9(a)}
       a.c[b]=c;
       return 0}
-    function aU(a,b,c){if(b>>>0>=a.l)ej();return n(a,b,c)}
-    function iL(){return 32}
-    function iM(a)
+    function aM(a,b,c){if(b>>>0>=a.l)d7();return n(a,b,c)}
+    function h2(){return 32}
+    function h3(a)
      {var b=L;
       if(b.quit)b.quit(a);
       if(b.process&&b.process.exit)b.process.exit(a);
-      ak("Function 'exit' not implemented")}
-    var ih=new Date()*dd;
-    function aW(){return new Date()*dd-ih}
-    function el(a,b)
-     {if(typeof b===dz){a.fun=b;return 0}
+      aj("Function 'exit' not implemented")}
+    var hz=new Date()*c4;
+    function aO(){return new Date()*c4-hz}
+    function d9(a,b)
+     {if(typeof b===dl){a.fun=b;return 0}
       if(b.fun){a.fun=b.fun;return 0}
       var c=b.length;
       while(c--)a[c]=b[c];
       return 0}
-    function ei(a){return a}
-    function iz(a){return ee[a]}
-    function T(a)
+    function d6(a){return a}
+    function hQ(a){return d2[a]}
+    function R(a)
      {if(a instanceof Array)return a;
       if
        (L.RangeError&&
         a instanceof L.RangeError&&
         a.message&&
         a.message.match(/maximum call stack/i))
-       return ei(r.Stack_overflow);
+       return d6(r.Stack_overflow);
       if
        (L.InternalError&&
         a instanceof L.InternalError&&
         a.message&&
         a.message.match(/too much recursion/i))
-       return ei(r.Stack_overflow);
-      if(a instanceof L.Error)return [0,iz(dy),a];
-      return [0,r.Failure,an(String(a))]}
-    function g(a,b){return a.length==1?a(b):_(a,[b])}
-    function B(a,b,c){return a.length==2?a(b,c):_(a,[b,c])}
-    function h8(a,b,c,d){return a.length==3?a(b,c,d):_(a,[b,c,d])}
-    function a_(a,b,c,d,e,f){return a.length==5?a(b,c,d,e,f):_(a,[b,c,d,e,f])}
-    am
+       return d6(r.Stack_overflow);
+      if(a instanceof L.Error)return [0,hQ(dk),a];
+      return [0,r.Failure,aJ(String(a))]}
+    function g(a,b){return a.length==1?a(b):W(a,[b])}
+    function K(a,b,c){return a.length==2?a(b,c):W(a,[b,c])}
+    function hp(a,b,c,d){return a.length==3?a(b,c,d):W(a,[b,c,d])}
+    function a4(a,b,c,d,e,f){return a.length==5?a(b,c,d,e,f):W(a,[b,c,d,e,f])}
+    al
      ("/maps/level0.map",
       "###################\n#S........+.......#\n#+....+.........+##\n#...+........+.#.E#\n###################\n");
-    am
+    al
      ("/maps/level1.map",
       "##################\n#S  X #          #\n#   + #.X..XX....#\n#   X #.+..++....#\n#   + #    +     #\n#     #   XX     #\n#     .   +.    E#\n##################\n");
-    am
+    al
      ("/maps/level2.map",
       "####################\n#S#          XXXXX #\n# #    XX    .XXX. #\n# #   .XX.    .X.  #\n# #    +.      +   #\n# ##   XX          #\n#      +X.        E#\n####################\n");
-    am
+    al
      ("/maps/level3.map",
       "##############\n#XXXX#       #\n#XXX+#  +    #\n#X..S#  X##  #\n#+     +X+#  #\n#    #X#X#   #\n#   +E....   #\n#   #++      #\n##############\n");
-    am
+    al
      ("/maps/level4.map",
       "########################################\n#...... ..+.X .....X.X....... ....X....#\n#.XSX...... .........X+..X.... ..... ..#\n#.......... ..X.....X.X..X........X....#\n#X.XX.........X......X..X....X...X.....#\n#X. X......... X..X........X......X.XX.#\n#... ..X........X.....X. X........X.XX.#\n###############################...X..X.#\n#. ...X..+. ..X.X..........+.X+...... .#\n#..+.....X..... ........XX X..X....X...#\n#...X..X.X..............X .X..X........#\n#.X.....X........XXX.......X.. .+....X.#\n#.+.. ..X.  .....X.X+..+....X...X..+. .#\n#. X..............X X..X........+.....X#\n#........###############################\n# X.........X...+....X.....X...X.......#\n# X......... X..X........X......X.XX..E#\n#. ..X........X.....X.  ....+...X.XX...#\n#....X+..X........X......X.X+......X...#\n#... ..X. ..X.XX.........X.X+...... ..X#\n#.+.... ..... ......... .X..X....X...X.#\n########################################\n");
-    am
+    al
      ("/maps.txt",
       '"maps/level0.map"\t"Level without boulders"\n"maps/level1.map"\t"Simple falls"\n"maps/level2.map"\t"More falls"\n"maps/level3.map"\t"Real (yet little) puzzle"\n"maps/level4.map"\t"Bigger puzzle (copie de BeeDeeDash)"\n');
     var
-     cu=[a,d(dS),-1],
-     aX=[a,d(du),-3],
-     bp=[a,d(d4),-4],
-     aD=[a,d(dh),-7],
-     cw=[a,d(dI),-8],
-     cv=[a,d(dj),-9],
-     j=[a,d(dA),-11],
-     cx=[a,d(dc),-12],
-     bz=
+     cl=[a,d(dF),-1],
+     aP=[a,d(dg),-3],
+     bi=[a,d(dQ),-4],
+     aT=[a,d(c7),-7],
+     cn=[a,d(dv),-8],
+     cm=[a,d(c8),-9],
+     j=[a,d(dm),-11],
+     co=[a,d(c3),-12],
+     bt=
       [0,
        [11,
         d('File "'),
         [2,
          0,
          [11,
-          d(dT),
+          d(dG),
           [4,
            0,
            0,
            0,
-           [11,d(dO),[4,0,0,0,[12,45,[4,0,0,0,[11,d(": "),[2,0,0]]]]]]]]]],
+           [11,d(dB),[4,0,0,0,[12,45,[4,0,0,0,[11,d(": "),[2,0,0]]]]]]]]]],
        d('File "%s", line %d, characters %d-%d: %s')];
-    S(11,cx,dc);
-    S(10,j,dA);
-    S(9,[a,d(dZ),dL],dZ);
-    S(8,cv,dj);
-    S(7,cw,dI);
-    S(6,aD,dh);
-    S(5,[a,d(dr),-6],dr);
-    S(4,[a,d(dw),-5],dw);
-    S(3,bp,d4);
-    S(2,aX,du);
-    S(1,[a,d(dq),-2],dq);
-    S(0,cu,dS);
+    P(11,co,c3);
+    P(10,j,dm);
+    P(9,[a,d(dL),dy],dL);
+    P(8,cm,c8);
+    P(7,cn,dv);
+    P(6,aT,c7);
+    P(5,[a,d(dd),-6],dd);
+    P(4,[a,d(di),-5],di);
+    P(3,bi,dQ);
+    P(2,aP,dg);
+    P(1,[a,d(dc),-2],dc);
+    P(0,cl,dF);
     var
-     er=d(dD),
-     eq=d(bc),
-     eo=d("true"),
-     ep=d("false"),
-     en=d("Pervasives.Exit"),
-     es=d("Array.Bottom"),
-     et=d("nth"),
-     eu=d("List.nth"),
-     ex=d("\\b"),
-     ey=d("\\t"),
-     ez=d("\\n"),
-     eA=d("\\r"),
-     ew=d("\\\\"),
-     ev=d("\\'"),
-     eE=d("String.index_from / Bytes.index_from"),
-     eD=d("String.blit / Bytes.blit_string"),
-     eC=d("Bytes.blit"),
-     eB=d("String.sub / Bytes.sub"),
-     eF=d(e),
-     eI=d("Sys.Break"),
-     eJ=d("Queue.Empty"),
-     eL=d("CamlinternalLazy.Undefined"),
-     eM=d("Buffer.add: cannot grow buffer"),
-     eV=d("%c"),
-     eW=d("%s"),
-     eX=d(db),
-     eY=d("%li"),
-     eZ=d("%ni"),
-     e0=d("%Li"),
-     e1=d("%f"),
-     e2=d("%B"),
-     e3=d("%{"),
-     e4=d("%}"),
-     e5=d("%("),
-     e6=d("%)"),
-     e7=d("%a"),
-     e8=d("%t"),
-     e9=d("%?"),
-     e_=d("%r"),
-     e$=d("%_r"),
-     fa=[0,d(b),816,23],
-     fl=[0,d(b),780,21],
-     fd=[0,d(b),781,21],
-     fm=[0,d(b),784,21],
-     fe=[0,d(b),785,21],
-     fn=[0,d(b),788,19],
-     ff=[0,d(b),789,19],
-     fo=[0,d(b),792,22],
-     fg=[0,d(b),793,22],
-     fp=[0,d(b),797,30],
-     fh=[0,d(b),798,30],
-     fj=[0,d(b),802,26],
-     fb=[0,d(b),803,26],
-     fk=[0,d(b),812,28],
-     fc=[0,d(b),813,28],
-     fi=[0,d(b),817,23],
-     f5=d(dX),
-     f3=[0,d(b),1449,4],
-     f4=d("Printf: bad conversion %["),
-     f6=[0,d(b),1517,39],
-     f7=[0,d(b),1540,31],
-     f8=[0,d(b),1541,31],
-     f9=d("Printf: bad conversion %_"),
-     f_=d(dV),
-     f$=d(d3),
-     ga=d(dV),
-     gb=d(d3),
-     f2=[0,d(dn),[0,d(dn),0]],
-     f0=d(dF),
-     f1=d(bc),
-     fY=d("neg_infinity"),
-     fZ=d("infinity"),
-     fT=d(dD),
-     fG=[0,d(aw),[0,d(b0),0]],
-     fH=[0,d(dC),[0,d(b0),0]],
-     fI=[0,d(dK),[0,d(b0),0]],
-     fJ=[0,d(aw),[0,d(b5),0]],
-     fK=[0,d(dC),[0,d(b5),0]],
-     fL=[0,d(dK),[0,d(b5),0]],
-     fM=[0,d(aw),[0,d(bV),0]],
-     fN=[0,d(b2),[0,d(bV),0]],
-     fO=[0,d(aw),[0,d(dU),0]],
-     fP=[0,d(b2),[0,d(dU),0]],
-     fQ=[0,d(aw),[0,d(dx),0]],
-     fR=[0,d(b2),[0,d(dx),0]],
-     fS=[0,d(aw),[0,d("u"),0]],
-     ft=d(bT),
-     fu=d("%+d"),
-     fv=d("% d"),
-     fw=d(db),
-     fx=d("%+i"),
-     fy=d("% i"),
-     fz=d("%x"),
-     fA=d("%#x"),
-     fB=d("%X"),
-     fC=d("%#X"),
-     fD=d("%o"),
-     fE=d("%#o"),
-     fF=d(dX),
-     fs=[0,d(ba),[0,d(ba),0]],
-     eN=d("@]"),
-     eO=d("@}"),
-     eP=d("@?"),
-     eQ=d("@\n"),
-     eR=d("@."),
-     eS=d("@@"),
-     eT=d("@%"),
-     eU=d("@"),
-     fq=d("CamlinternalFormat.Type_mismatch"),
-     gf=d(e),
-     gg=[0,[11,d(", "),[2,0,[2,0,0]]],d(", %s%s")],
-     gy=[0,[2,0,[12,10,0]],d("%s\n")],
-     gz=[0,[11,d(dN),0],d(dN)],
-     gs=d("Raised at"),
-     gt=d("Re-raised at"),
-     gu=d("Raised by primitive operation at"),
-     gv=d("Called from"),
-     gw=
+     ed=d(dq),
+     ec=d(a8),
+     ea=d("true"),
+     eb=d("false"),
+     d$=d("Pervasives.Exit"),
+     ee=d("Array.Bottom"),
+     ef=d("nth"),
+     eg=d("List.nth"),
+     ej=d("\\b"),
+     ek=d("\\t"),
+     el=d("\\n"),
+     em=d("\\r"),
+     ei=d("\\\\"),
+     eh=d("\\'"),
+     eq=d("String.index_from / Bytes.index_from"),
+     ep=d("String.blit / Bytes.blit_string"),
+     eo=d("Bytes.blit"),
+     en=d("String.sub / Bytes.sub"),
+     er=d(e),
+     et=d("Sys.Break"),
+     eu=d("Queue.Empty"),
+     ew=d("CamlinternalLazy.Undefined"),
+     ex=d("Buffer.add: cannot grow buffer"),
+     eG=d("%c"),
+     eH=d("%s"),
+     eI=d(c2),
+     eJ=d("%li"),
+     eK=d("%ni"),
+     eL=d("%Li"),
+     eM=d("%f"),
+     eN=d("%B"),
+     eO=d("%{"),
+     eP=d("%}"),
+     eQ=d("%("),
+     eR=d("%)"),
+     eS=d("%a"),
+     eT=d("%t"),
+     eU=d("%?"),
+     eV=d("%r"),
+     eW=d("%_r"),
+     eX=[0,d(b),816,23],
+     e8=[0,d(b),780,21],
+     e0=[0,d(b),781,21],
+     e9=[0,d(b),784,21],
+     e1=[0,d(b),785,21],
+     e_=[0,d(b),788,19],
+     e2=[0,d(b),789,19],
+     e$=[0,d(b),792,22],
+     e3=[0,d(b),793,22],
+     fa=[0,d(b),797,30],
+     e4=[0,d(b),798,30],
+     e6=[0,d(b),802,26],
+     eY=[0,d(b),803,26],
+     e7=[0,d(b),812,28],
+     eZ=[0,d(b),813,28],
+     e5=[0,d(b),817,23],
+     fQ=d(dK),
+     fO=[0,d(b),1449,4],
+     fP=d("Printf: bad conversion %["),
+     fR=[0,d(b),1517,39],
+     fS=[0,d(b),1540,31],
+     fT=[0,d(b),1541,31],
+     fU=d("Printf: bad conversion %_"),
+     fV=d(dI),
+     fW=d(dP),
+     fX=d(dI),
+     fY=d(dP),
+     fN=[0,d(da),[0,d(da),0]],
+     fL=d(ds),
+     fM=d(a8),
+     fJ=d("neg_infinity"),
+     fK=d("infinity"),
+     fE=d(dq),
+     fr=[0,d(ar),[0,d(bR),0]],
+     fs=[0,d(dp),[0,d(bR),0]],
+     ft=[0,d(dx),[0,d(bR),0]],
+     fu=[0,d(ar),[0,d(bV),0]],
+     fv=[0,d(dp),[0,d(bV),0]],
+     fw=[0,d(dx),[0,d(bV),0]],
+     fx=[0,d(ar),[0,d(bN),0]],
+     fy=[0,d(bT),[0,d(bN),0]],
+     fz=[0,d(ar),[0,d(dH),0]],
+     fA=[0,d(bT),[0,d(dH),0]],
+     fB=[0,d(ar),[0,d(dj),0]],
+     fC=[0,d(bT),[0,d(dj),0]],
+     fD=[0,d(ar),[0,d("u"),0]],
+     fe=d(bL),
+     ff=d("%+d"),
+     fg=d("% d"),
+     fh=d(c2),
+     fi=d("%+i"),
+     fj=d("% i"),
+     fk=d("%x"),
+     fl=d("%#x"),
+     fm=d("%X"),
+     fn=d("%#X"),
+     fo=d("%o"),
+     fp=d("%#o"),
+     fq=d(dK),
+     fd=[0,d(a6),[0,d(a6),0]],
+     ey=d("@]"),
+     ez=d("@}"),
+     eA=d("@?"),
+     eB=d("@\n"),
+     eC=d("@."),
+     eD=d("@@"),
+     eE=d("@%"),
+     eF=d("@"),
+     fb=d("CamlinternalFormat.Type_mismatch"),
+     f2=d(e),
+     f3=[0,[11,d(", "),[2,0,[2,0,0]]],d(", %s%s")],
+     gj=[0,[2,0,[12,10,0]],d("%s\n")],
+     gk=[0,[11,d(dA),0],d(dA)],
+     gd=d("Raised at"),
+     ge=d("Re-raised at"),
+     gf=d("Raised by primitive operation at"),
+     gg=d("Called from"),
+     gh=
       [0,
        [2,
         0,
         [11,
          d(' file "'),
-         [2,0,[11,d(dT),[4,0,0,0,[11,d(dO),[4,0,0,0,[12,45,[4,0,0,0,0]]]]]]]]],
+         [2,0,[11,d(dG),[4,0,0,0,[11,d(dB),[4,0,0,0,[12,45,[4,0,0,0,0]]]]]]]]],
        d('%s file "%s", line %d, characters %d-%d')],
-     gx=[0,[2,0,[11,d(" unknown location"),0]],d("%s unknown location")],
-     gm=d("Out of memory"),
-     gn=d("Stack overflow"),
-     go=d("Pattern matching failed"),
-     gp=d("Assertion failed"),
-     gq=d("Undefined recursive module"),
-     gi=[0,[12,40,[2,0,[2,0,[12,41,0]]]],d("(%s%s)")],
-     gj=d(e),
-     gk=d(e),
-     gl=[0,[12,40,[2,0,[12,41,0]]],d("(%s)")],
-     ge=[0,[4,0,0,0,0],d(bT)],
-     gc=[0,[3,0,0],d("%S")],
-     gd=d("_"),
-     gB=d("Lwt_sequence.Empty"),
-     gN=[0,d(ay),699,20],
-     gO=[0,d(ay),702,8],
-     gL=[0,d(ay),655,20],
-     gM=[0,d(ay),658,8],
-     gI=[0,d(ay),498,8],
-     gH=[0,d(ay),487,9],
-     gG=d("Lwt.wakeup_later_result"),
-     gF=d("Lwt.wakeup_result"),
-     gE=d("Fatal error: exception "),
-     gD=d("Lwt.Canceled"),
-     gJ=[0,0],
-     gR=d("Js.Error"),
-     g1=d("table"),
-     g0=d("img"),
-     gZ=d("br"),
-     gY=d("h1"),
-     gX=d("div"),
-     gW=d("select"),
-     gV=d("option"),
-     g2=d("Dom_html.Canvas_not_available"),
-     g7=d("Exception during Lwt.async: "),
-     g9=d("[\\][()\\\\|+*.?{}^$]"),
-     hf=d(bW),
-     hg=d(b4),
-     hd=d(e),
-     he=d(e),
-     hb=d("%2B"),
-     g$=d("Url.Local_exn"),
-     ha=d(bb),
-     hc=d("Url.Not_an_http_protocol"),
-     hi=
+     gi=[0,[2,0,[11,d(" unknown location"),0]],d("%s unknown location")],
+     f9=d("Out of memory"),
+     f_=d("Stack overflow"),
+     f$=d("Pattern matching failed"),
+     ga=d("Assertion failed"),
+     gb=d("Undefined recursive module"),
+     f5=[0,[12,40,[2,0,[2,0,[12,41,0]]]],d("(%s%s)")],
+     f6=d(e),
+     f7=d(e),
+     f8=[0,[12,40,[2,0,[12,41,0]]],d("(%s)")],
+     f1=[0,[4,0,0,0,0],d(bL)],
+     fZ=[0,[3,0,0],d("%S")],
+     f0=d("_"),
+     gm=d("Lwt_sequence.Empty"),
+     gy=[0,d(at),699,20],
+     gz=[0,d(at),702,8],
+     gw=[0,d(at),655,20],
+     gx=[0,d(at),658,8],
+     gt=[0,d(at),498,8],
+     gs=[0,d(at),487,9],
+     gr=d("Lwt.wakeup_later_result"),
+     gq=d("Lwt.wakeup_result"),
+     gp=d("Fatal error: exception "),
+     go=d("Lwt.Canceled"),
+     gu=[0,0],
+     gD=d("Js.Error"),
+     gM=d("table"),
+     gL=d("img"),
+     gK=d("br"),
+     gJ=d("h1"),
+     gI=d("div"),
+     gH=d("select"),
+     gG=d("option"),
+     gN=d("Dom_html.Canvas_not_available"),
+     gQ=d("Exception during Lwt.async: "),
+     gR=d("[\\][()\\\\|+*.?{}^$]"),
+     gW=d(e),
+     gX=d(e),
+     gT=d("Url.Local_exn"),
+     gU=d(a7),
+     gV=d("Url.Not_an_http_protocol"),
+     gZ=
       d
        ("^([Hh][Tt][Tt][Pp][Ss]?)://([0-9a-zA-Z.-]+|\\[[0-9a-zA-Z.-]+\\]|\\[[0-9A-Fa-f:.]+\\])?(:([0-9]+))?(/([^\\?#]*)(\\?([^#]*))?(#(.*))?)?$"),
-     hj=d("^([Ff][Ii][Ll][Ee])://([^\\?#]*)(\\?([^#]*))?(#(.*))?$"),
-     hA=d("PATCH"),
-     hB=d(bd),
-     hC=d("HEAD"),
-     hD=d("DELETE"),
-     hF=d("PUT"),
-     hG=d("OPTIONS"),
-     hE=d(dY),
-     hH=d(bd),
-     hK=[0,d("application/x-www-form-urlencoded")],
-     hL=d(bd),
-     hM=d(bd),
-     hN=d(dY),
-     hI=d(b4),
-     hJ=d(df),
-     hy=[0,d(av),164,29],
-     hx=[0,d(av),156,29],
-     hw=[0,d(av),148,29],
-     hv=[0,d(av),140,29],
-     hu=[0,d(av),132,29],
-     hp=d(bW),
-     hq=d(bW),
-     hr=d(b4),
-     ho=[0,d(av),87,2],
-     hs=d("XmlHttpRequest.Wrong_headers"),
-     hY=[0,[8,9,0,0,0],d("%g")],
-     hZ=d("malformed level"),
-     h0=d("Boulder Dash in Ocaml"),
-     h1=d("Elapsed time: "),
-     h2=d(" Remaining diamonds: "),
-     h3=d(X),
-     h4=d("Choose a level"),
-     hW=[0,d("boulderdash.ml"),302,17],
-     hX=d("--"),
-     h5=d("maps.txt"),
-     hR=
+     g0=d("^([Ff][Ii][Ll][Ee])://([^\\?#]*)(\\?([^#]*))?(#(.*))?$"),
+     g4=[0,d("xmlHttpRequest.ml"),87,2],
+     g5=d("XmlHttpRequest.Wrong_headers"),
+     hf=[0,[8,9,0,0,0],d("%g")],
+     hg=d("malformed level"),
+     hh=d("Boulder Dash in Ocaml"),
+     hi=d("Elapsed time: "),
+     hj=d(" Remaining diamonds: "),
+     hk=d(T),
+     hl=d("Choose a level"),
+     hd=[0,d("boulderdash.ml"),302,17],
+     he=d("--"),
+     hm=d("maps.txt"),
+     g_=
       [0,
        [4,0,[0,2,2],0,[12,58,[4,0,[0,2,2],0,[12,58,[4,0,[0,2,2],0,0]]]]],
        d("%02d:%02d:%02d")],
-     hQ=d("--:--:--"),
-     hP=d("LOADING..."),
-     hS=d("Boulderdash.Death"),
-     hV=d("Boulderdash.Eos");
+     g9=d("--:--:--"),
+     g8=d("LOADING..."),
+     g$=d("Boulderdash.Death"),
+     hc=d("Boulderdash.Eos");
     function m(a)
      {if(typeof a==="number")
        return 0;
@@ -1103,26 +1070,26 @@
          case 12:return [12,m(a[1])];
          case 13:return [13,m(a[1])];
          default:return [14,m(a[1])]}}
-    function z(a,b)
+    function y(a,b)
      {if(typeof a==="number")
        return b;
       else
        switch(a[0])
-        {case 0:return [0,z(a[1],b)];
-         case 1:return [1,z(a[1],b)];
-         case 2:return [2,z(a[1],b)];
-         case 3:return [3,z(a[1],b)];
-         case 4:return [4,z(a[1],b)];
-         case 5:return [5,z(a[1],b)];
-         case 6:return [6,z(a[1],b)];
-         case 7:return [7,z(a[1],b)];
-         case 8:var c=a[1];return [8,c,z(a[2],b)];
-         case 9:var d=a[2],e=a[1];return [9,e,d,z(a[3],b)];
-         case 10:return [10,z(a[1],b)];
-         case 11:return [11,z(a[1],b)];
-         case 12:return [12,z(a[1],b)];
-         case 13:return [13,z(a[1],b)];
-         default:return [14,z(a[1],b)]}}
+        {case 0:return [0,y(a[1],b)];
+         case 1:return [1,y(a[1],b)];
+         case 2:return [2,y(a[1],b)];
+         case 3:return [3,y(a[1],b)];
+         case 4:return [4,y(a[1],b)];
+         case 5:return [5,y(a[1],b)];
+         case 6:return [6,y(a[1],b)];
+         case 7:return [7,y(a[1],b)];
+         case 8:var c=a[1];return [8,c,y(a[2],b)];
+         case 9:var d=a[2],e=a[1];return [9,e,d,y(a[3],b)];
+         case 10:return [10,y(a[1],b)];
+         case 11:return [11,y(a[1],b)];
+         case 12:return [12,y(a[1],b)];
+         case 13:return [13,y(a[1],b)];
+         default:return [14,y(a[1],b)]}}
     function l(a,b)
      {if(typeof a==="number")
        return b;
@@ -1153,160 +1120,161 @@
          case 22:return [22,l(a[1],b)];
          case 23:var F=a[1];return [23,F,l(a[2],b)];
          default:var G=a[2],H=a[1];return [24,H,G,l(a[3],b)]}}
-    function bq(a){throw [0,aX,a]}
-    function aa(a){throw [0,bp,a]}
-    E([a,en,0]);
-    function aY(a){return 0<=a?a:-a|0}
-    function M(a,b)
-     {var c=f(a),e=f(b),d=q(c+e|0);Q(a,0,d,0,c);Q(b,0,d,c,e);return d}
-    ix(0);
-    ea(1);
-    var aB=ea(2);
-    function aC(a,b){return eb(a,b,0,f(b))}
-    function cc(a){return aC(aB,a)}
-    function cd(a)
+    function bj(a){throw [0,aP,a]}
+    function Y(a){throw [0,bi,a]}
+    D([a,d$,0]);
+    function aQ(a){return 0<=a?a:-a|0}
+    function aR(a,b)
+     {var c=f(a),e=f(b),d=q(c+e|0);O(a,0,d,0,c);O(b,0,d,c,e);return d}
+    hO(0);
+    dY(1);
+    var av=dY(2);
+    function aw(a,b){return dZ(a,b,0,f(b))}
+    function b5(a){return aw(av,a)}
+    function b6(a)
      {function b(a)
        {var b=a;
         for(;;)
-         {if(b){var c=b[2],d=b[1];try {bj(d)}catch(f){}var b=c;continue}
+         {if(b){var c=b[2],d=b[1];try {bc(d)}catch(f){}var b=c;continue}
           return 0}}
-      return b(iy(0))}
-    function br(a,b)
+      return b(hP(0))}
+    function bk(a,b)
      {var d=b.length-1;
       if(0===d)return [0];
-      var e=d$(d,g(a,b[1])),f=d-1|0,h=1;
+      var e=dX(d,g(a,b[1])),f=d-1|0,h=1;
       if(!(f<1))
        {var c=h;
         for(;;)
          {e[c+1]=g(a,b[c+1]);var i=c+1|0;if(f!==c){var c=i;continue}break}}
       return e}
-    function ce(a)
+    function b7(a)
      {if(a)
        {var d=0,c=a,g=a[2],h=a[1];
         for(;;)
          {if(c){var d=d+1|0,c=c[2];continue}
-          var f=d$(d,h),e=1,b=g;
+          var f=dX(d,h),e=1,b=g;
           for(;;)
            {if(b){var i=b[2];f[e+1]=b[1];var e=e+1|0,b=i;continue}return f}}}
       return [0]}
-    E([a,es,0]);
-    function bs(a)
+    D([a,ee,0]);
+    function bl(a)
      {var b=a,c=0;
       for(;;){if(b){var d=[0,b[1],c],b=b[2],c=d;continue}return c}}
-    function aZ(a,b)
-     {if(b){var c=b[2],d=g(a,b[1]);return [0,d,aZ(a,c)]}return 0}
-    function ao(a,b)
+    function b8(a,b)
+     {if(b){var c=b[2],d=g(a,b[1]);return [0,d,b8(a,c)]}return 0}
+    function aS(a,b)
      {var c=b;for(;;){if(c){var d=c[2];g(a,c[1]);var c=d;continue}return 0}}
-    function aE(a,b){var c=q(a);ic(c,0,a,b);return c}
-    function cf(a,b,c)
-     {if(0<=b)if(0<=c)if(!((f(a)-c|0)<b)){var d=q(c);Q(a,b,d,0,c);return d}
-      return aa(eB)}
-    function cg(a,b,c){return cf(a,b,c)}
-    function ch(a,b,c,d,e)
+    function ax(a,b){var c=q(a);hv(c,0,a,b);return c}
+    function b9(a,b,c)
+     {if(0<=b)if(0<=c)if(!((f(a)-c|0)<b)){var d=q(c);O(a,b,d,0,c);return d}
+      return Y(en)}
+    function b_(a,b,c){return b9(a,b,c)}
+    function b$(a,b,c,d,e)
      {if(0<=e)
        if(0<=b)
-        if(!((f(a)-e|0)<b))if(0<=d)if(!((f(c)-e|0)<d))return Q(a,b,c,d,e);
-      return aa(eC)}
-    function V(a,b,c,d,e)
+        if(!((f(a)-e|0)<b))if(0<=d)if(!((f(c)-e|0)<d))return O(a,b,c,d,e);
+      return Y(eo)}
+    function S(a,b,c,d,e)
      {if(0<=e)
        if(0<=b)
-        if(!((f(a)-e|0)<b))if(0<=d)if(!((f(c)-e|0)<d))return Q(a,b,c,d,e);
-      return aa(eD)}
-    function ci(a,b,c,d)
-     {var e=c;
-      for(;;){if(b<=e)throw aD;if($(a,e)===d)return e;var e=e+1|0;continue}}
-    function a0(a,b){return aE(a,b)}
-    function cj(a,b,c){return cf(a,b,c)}
-    function aF(d,b)
+        if(!((f(a)-e|0)<b))if(0<=d)if(!((f(c)-e|0)<d))return O(a,b,c,d,e);
+      return Y(ep)}
+    function aU(a,b){return ax(a,b)}
+    function ca(a,b,c){return b9(a,b,c)}
+    function bm(d,b)
      {if(b)
        {var a=b[1],h=[0,0],g=[0,0],i=b[2];
-        ao(function(a){h[1]++;g[1]=g[1]+f(a)|0;return 0},b);
-        var e=q(g[1]+ed(f(d),h[1]-1|0)|0);
-        Q(a,0,e,0,f(a));
+        aS(function(a){h[1]++;g[1]=g[1]+f(a)|0;return 0},b);
+        var e=q(g[1]+d1(f(d),h[1]-1|0)|0);
+        O(a,0,e,0,f(a));
         var c=[0,f(a)];
-        ao
+        aS
          (function(a)
-           {Q(d,0,e,c[1],f(d));
+           {O(d,0,e,c[1],f(d));
             c[1]=c[1]+f(d)|0;
-            Q(a,0,e,c[1],f(a));
+            O(a,0,e,c[1],f(a));
             c[1]=c[1]+f(a)|0;
             return 0},
           i);
         return e}
-      return eF}
-    function eG(a,b){return ci(a,f(a),0,b)}
-    var bt=iL(0),aG=ed(bt/8|0,(1<<(bt+dL|0))-1|0)-1|0;
-    function eH(a,b,c)
-     {var d=f(a);if(0<=b)if(!(d<b))return ci(a,d,b,c);return aa(eE)}
-    E([a,eI,0]);
-    var eK=E([a,eJ,0]);
-    E([a,eL,0]);
-    function ck(a,b)
+      return er}
+    var bn=h2(0),ay=d1(bn/8|0,(1<<(bn+dy|0))-1|0)-1|0;
+    function es(a,b,c)
+     {var e=f(a);
+      if(0<=b)
+       if(!(e<b))
+        {var d=b;
+         for(;;){if(e<=d)throw aT;if(X(a,d)===c)return d;var d=d+1|0;continue}}
+      return Y(eq)}
+    D([a,et,0]);
+    var ev=D([a,eu,0]);
+    D([a,ew,0]);
+    function cb(a,b)
      {var c=[0,a[3]];
       for(;;)
        {if(c[1]<(a[2]+b|0)){c[1]=2*c[1]|0;continue}
-        if(aG<c[1])if((a[2]+b|0)<=aG)c[1]=aG;else bq(eM);
+        if(ay<c[1])if((a[2]+b|0)<=ay)c[1]=ay;else bj(ex);
         var d=q(c[1]);
-        ch(a[1],0,d,0,a[2]);
+        b$(a[1],0,d,0,a[2]);
         a[1]=d;
         a[3]=c[1];
         return 0}}
-    function aH(a,b)
+    function az(a,b)
      {var c=f(b),d=a[2]+c|0;
-      if(a[3]<d)ck(a,c);
-      V(b,0,a[1],a[2],c);
+      if(a[3]<d)cb(a,c);
+      S(b,0,a[1],a[2],c);
       a[2]=d;
       return 0}
-    var bu=6;
-    function cl(a){return [0,0,q(a)]}
-    function cm(a,b)
+    var bo=6;
+    function cc(a){return [0,0,q(a)]}
+    function cd(a,b)
      {var c=f(a[2]),d=a[1]+b|0,e=c<d?1:0;
       if(e)
-       {var g=c*2|0,j=ig(g,d)?g:d,h=q(j);ch(a[2],0,h,0,c);a[2]=h;var i=0}
+       {var g=c*2|0,j=hy(g,d)?g:d,h=q(j);b$(a[2],0,h,0,c);a[2]=h;var i=0}
       else
        var i=e;
       return i}
-    function aI(a,b){cm(a,1);aU(a[2],a[1],b);a[1]=a[1]+1|0;return 0}
+    function aA(a,b){cd(a,1);aM(a[2],a[1],b);a[1]=a[1]+1|0;return 0}
     function s(a,b)
-     {var c=f(b);cm(a,c);V(b,0,a[2],a[1],c);a[1]=a[1]+c|0;return 0}
-    function cn(a){return cg(a[2],0,a[1])}
-    function co(a)
+     {var c=f(b);cd(a,c);S(b,0,a[2],a[1],c);a[1]=a[1]+c|0;return 0}
+    function ce(a){return b_(a[2],0,a[1])}
+    function cf(a)
      {if(typeof a==="number")
        switch(a)
-        {case 0:return eN;
-         case 1:return eO;
-         case 2:return eP;
-         case 3:return eQ;
-         case 4:return eR;
-         case 5:return eS;
-         default:return eT}
+        {case 0:return ey;
+         case 1:return ez;
+         case 2:return eA;
+         case 3:return eB;
+         case 4:return eC;
+         case 5:return eD;
+         default:return eE}
       else
        switch(a[0])
         {case 0:return a[1];
          case 1:return a[1];
-         default:return M(eU,a0(1,a[1]))}}
-    function bv(a,b)
+         default:return aR(eF,aU(1,a[1]))}}
+    function bp(a,b)
      {var c=b;
       for(;;)
        if(typeof c==="number")
         return 0;
        else
         switch(c[0])
-         {case 0:var d=c[1];s(a,eV);var c=d;continue;
-          case 1:var e=c[1];s(a,eW);var c=e;continue;
-          case 2:var f=c[1];s(a,eX);var c=f;continue;
-          case 3:var g=c[1];s(a,eY);var c=g;continue;
-          case 4:var h=c[1];s(a,eZ);var c=h;continue;
-          case 5:var i=c[1];s(a,e0);var c=i;continue;
-          case 6:var j=c[1];s(a,e1);var c=j;continue;
-          case 7:var k=c[1];s(a,e2);var c=k;continue;
-          case 8:var l=c[2],m=c[1];s(a,e3);bv(a,m);s(a,e4);var c=l;continue;
-          case 9:var n=c[3],o=c[1];s(a,e5);bv(a,o);s(a,e6);var c=n;continue;
-          case 10:var p=c[1];s(a,e7);var c=p;continue;
-          case 11:var q=c[1];s(a,e8);var c=q;continue;
-          case 12:var r=c[1];s(a,e9);var c=r;continue;
-          case 13:var t=c[1];s(a,e_);var c=t;continue;
-          default:var u=c[1];s(a,e$);var c=u;continue}}
+         {case 0:var d=c[1];s(a,eG);var c=d;continue;
+          case 1:var e=c[1];s(a,eH);var c=e;continue;
+          case 2:var f=c[1];s(a,eI);var c=f;continue;
+          case 3:var g=c[1];s(a,eJ);var c=g;continue;
+          case 4:var h=c[1];s(a,eK);var c=h;continue;
+          case 5:var i=c[1];s(a,eL);var c=i;continue;
+          case 6:var j=c[1];s(a,eM);var c=j;continue;
+          case 7:var k=c[1];s(a,eN);var c=k;continue;
+          case 8:var l=c[2],m=c[1];s(a,eO);bp(a,m);s(a,eP);var c=l;continue;
+          case 9:var n=c[3],o=c[1];s(a,eQ);bp(a,o);s(a,eR);var c=n;continue;
+          case 10:var p=c[1];s(a,eS);var c=p;continue;
+          case 11:var q=c[1];s(a,eT);var c=q;continue;
+          case 12:var r=c[1];s(a,eU);var c=r;continue;
+          case 13:var t=c[1];s(a,eV);var c=t;continue;
+          default:var u=c[1];s(a,eW);var c=u;continue}}
     function o(a)
      {if(typeof a==="number")
        return 0;
@@ -1497,7 +1465,7 @@
           case 14:var c=4;break;
           case 8:var c=5;break;
           case 9:var c=6;break;
-          default:throw [0,j,fa]}
+          default:throw [0,j,eX]}
       else
        switch(a[0])
         {case 0:
@@ -1649,7 +1617,7 @@
              case 13:var c=3,q=0;break;
              case 14:var c=4,q=0;break;
              default:var q=1}
-          if(q)throw [0,j,fj];
+          if(q)throw [0,j,e6];
           break;
          case 9:
           var J=a[3],K=a[2],L=a[1];
@@ -1669,12 +1637,12 @@
              case 13:var c=3,n=0;break;
              case 14:var c=4,n=0;break;
              default:var n=1}
-          if(n)throw [0,j,fk];
+          if(n)throw [0,j,e7];
           break;
          case 10:
           var Q=a[1];
           if(typeof b!=="number"&&10===b[0])return [10,p(Q,b[1])];
-          throw [0,j,fl];
+          throw [0,j,e8];
          case 11:
           var R=a[1];
           if(typeof b==="number")
@@ -1684,7 +1652,7 @@
             {case 10:var c=0,v=0;break;
              case 11:return [11,p(R,b[1])];
              default:var v=1}
-          if(v)throw [0,j,fm];
+          if(v)throw [0,j,e9];
           break;
          case 12:
           var S=a[1];
@@ -1696,7 +1664,7 @@
              case 11:var c=1,u=0;break;
              case 12:return [12,p(S,b[1])];
              default:var u=1}
-          if(u)throw [0,j,fn];
+          if(u)throw [0,j,e_];
           break;
          case 13:
           var T=a[1];
@@ -1709,7 +1677,7 @@
              case 12:var c=2,s=0;break;
              case 13:return [13,p(T,b[1])];
              default:var s=1}
-          if(s)throw [0,j,fo];
+          if(s)throw [0,j,e$];
           break;
          default:
           var U=a[1];
@@ -1723,26 +1691,26 @@
              case 13:var c=3,r=0;break;
              case 14:return [14,p(U,b[1])];
              default:var r=1}
-          if(r)throw [0,j,fp]}
+          if(r)throw [0,j,fa]}
       switch(c)
-       {case 0:throw [0,j,fd];
-        case 1:throw [0,j,fe];
-        case 2:throw [0,j,ff];
-        case 3:throw [0,j,fg];
-        case 4:throw [0,j,fh];
-        case 5:throw [0,j,fb];
-        case 6:throw [0,j,fc];
-        default:throw [0,j,fi]}}
-    var u=E([a,fq,0]);
-    function bw(a,b)
+       {case 0:throw [0,j,e0];
+        case 1:throw [0,j,e1];
+        case 2:throw [0,j,e2];
+        case 3:throw [0,j,e3];
+        case 4:throw [0,j,e4];
+        case 5:throw [0,j,eY];
+        case 6:throw [0,j,eZ];
+        default:throw [0,j,e5]}}
+    var u=D([a,fb,0]);
+    function bq(a,b)
      {if(typeof a==="number")
        return [0,0,b];
       else
        {if(0===a[0])return [0,[0,a[1],a[2]],b];
         if(typeof b!=="number"&&2===b[0])return [0,[1,a[1]],b[1]];
         throw u}}
-    function aJ(a,b,c)
-     {var d=bw(a,c);
+    function aB(a,b,c)
+     {var d=bq(a,c);
       if(typeof b==="number")
        {if(0===b)return [0,d[1],0,d[2]];
         var e=d[2];
@@ -1763,37 +1731,37 @@
            {var v=k(a[1],b[1]);return [0,[1,v[1]],v[2]]}
           break;
          case 2:
-          var ad=a[2],w=bw(a[1],b),e=w[2],ae=w[1];
+          var ad=a[2],w=bq(a[1],b),e=w[2],ae=w[1];
           if(typeof e!=="number"&&1===e[0])
            {var x=k(ad,e[1]);return [0,[2,ae,x[1]],x[2]]}
           throw u;
          case 3:
-          var af=a[2],y=bw(a[1],b),f=y[2],ag=y[1];
+          var af=a[2],y=bq(a[1],b),f=y[2],ag=y[1];
           if(typeof f!=="number"&&1===f[0])
            {var z=k(af,f[1]);return [0,[3,ag,z[1]],z[2]]}
           throw u;
          case 4:
-          var ah=a[4],ai=a[1],g=aJ(a[2],a[3],b),h=g[3],aj=g[2],ak=g[1];
+          var ah=a[4],ai=a[1],g=aB(a[2],a[3],b),h=g[3],aj=g[2],ak=g[1];
           if(typeof h!=="number"&&2===h[0])
            {var A=k(ah,h[1]);return [0,[4,ai,ak,aj,A[1]],A[2]]}
           throw u;
          case 5:
-          var al=a[4],am=a[1],i=aJ(a[2],a[3],b),j=i[3],an=i[2],ao=i[1];
+          var al=a[4],am=a[1],i=aB(a[2],a[3],b),j=i[3],an=i[2],ao=i[1];
           if(typeof j!=="number"&&3===j[0])
-           {var B=k(al,j[1]);return [0,[5,am,ao,an,B[1]],B[2]]}
+           {var C=k(al,j[1]);return [0,[5,am,ao,an,C[1]],C[2]]}
           throw u;
          case 6:
-          var ap=a[4],aq=a[1],l=aJ(a[2],a[3],b),n=l[3],ar=l[2],as=l[1];
+          var ap=a[4],aq=a[1],l=aB(a[2],a[3],b),n=l[3],ar=l[2],as=l[1];
           if(typeof n!=="number"&&4===n[0])
            {var D=k(ap,n[1]);return [0,[6,aq,as,ar,D[1]],D[2]]}
           throw u;
          case 7:
-          var at=a[4],au=a[1],o=aJ(a[2],a[3],b),p=o[3],av=o[2],aw=o[1];
+          var at=a[4],au=a[1],o=aB(a[2],a[3],b),p=o[3],av=o[2],aw=o[1];
           if(typeof p!=="number"&&5===p[0])
-           {var E=k(at,p[1]);return [0,[7,au,aw,av,E[1]],E[2]]}
+           {var F=k(at,p[1]);return [0,[7,au,aw,av,F[1]],F[2]]}
           throw u;
          case 8:
-          var ax=a[4],ay=a[1],q=aJ(a[2],a[3],b),r=q[3],az=q[2],aA=q[1];
+          var ax=a[4],ay=a[1],q=aB(a[2],a[3],b),r=q[3],az=q[2],aA=q[1];
           if(typeof r!=="number"&&6===r[0])
            {var G=k(ax,r[1]);return [0,[8,ay,aA,az,G[1]],G[2]]}
           throw u;
@@ -1802,20 +1770,20 @@
            {var H=k(a[1],b[1]);return [0,[9,H[1]],H[2]]}
           break;
          case 10:var I=k(a[1],b);return [0,[10,I[1]],I[2]];
-         case 11:var aB=a[1],J=k(a[2],b);return [0,[11,aB,J[1]],J[2]];
-         case 12:var aC=a[1],K=k(a[2],b);return [0,[12,aC,K[1]],K[2]];
+         case 11:var aC=a[1],J=k(a[2],b);return [0,[11,aC,J[1]],J[2]];
+         case 12:var aD=a[1],K=k(a[2],b);return [0,[12,aD,K[1]],K[2]];
          case 13:
           if(typeof b!=="number"&&8===b[0])
-           {var L=b[1],aD=b[2],aE=a[3],aF=a[1];
-            if(aT([0,a[2]],[0,L]))throw u;
-            var M=k(aE,aD);
-            return [0,[13,aF,L,M[1]],M[2]]}
+           {var L=b[1],aE=b[2],aF=a[3],aG=a[1];
+            if(aL([0,a[2]],[0,L]))throw u;
+            var M=k(aF,aE);
+            return [0,[13,aG,L,M[1]],M[2]]}
           break;
          case 14:
           if(typeof b!=="number"&&9===b[0])
-           {var N=b[1],aG=b[3],aH=a[3],aI=a[2],aK=a[1],aL=[0,m(N)];
-            if(aT([0,m(aI)],aL))throw u;
-            var O=k(aH,m(aG));
+           {var N=b[1],aH=b[3],aI=a[3],aJ=a[2],aK=a[1],aM=[0,m(N)];
+            if(aL([0,m(aJ)],aM))throw u;
+            var O=k(aI,m(aH));
             return [0,[14,aK,N,O[1]],O[2]]}
           break;
          case 15:
@@ -1826,166 +1794,166 @@
           if(typeof b!=="number"&&11===b[0])
            {var Q=k(a[1],b[1]);return [0,[16,Q[1]],Q[2]]}
           break;
-         case 17:var aM=a[1],R=k(a[2],b);return [0,[17,aM,R[1]],R[2]];
+         case 17:var aN=a[1],R=k(a[2],b);return [0,[17,aN,R[1]],R[2]];
          case 18:
           var S=a[2],s=a[1];
           if(0===s[0])
-           {var W=s[1],aQ=W[2],X=k(W[1],b),aR=X[1],Y=k(S,X[2]);
-            return [0,[18,[0,[0,aR,aQ]],Y[1]],Y[2]]}
-          var Z=s[1],aS=Z[2],_=k(Z[1],b),aU=_[1],$=k(S,_[2]);
-          return [0,[18,[1,[0,aU,aS]],$[1]],$[2]];
+           {var W=s[1],aR=W[2],X=k(W[1],b),aS=X[1],Y=k(S,X[2]);
+            return [0,[18,[0,[0,aS,aR]],Y[1]],Y[2]]}
+          var Z=s[1],aT=Z[2],_=k(Z[1],b),aU=_[1],$=k(S,_[2]);
+          return [0,[18,[1,[0,aU,aT]],$[1]],$[2]];
          case 19:
           if(typeof b!=="number"&&13===b[0])
            {var T=k(a[1],b[1]);return [0,[19,T[1]],T[2]]}
           break;
          case 20:
           if(typeof b!=="number"&&1===b[0])
-           {var aN=a[2],aO=a[1],U=k(a[3],b[1]);
-            return [0,[20,aO,aN,U[1]],U[2]]}
+           {var aO=a[2],aP=a[1],U=k(a[3],b[1]);
+            return [0,[20,aP,aO,U[1]],U[2]]}
           break;
          case 21:
           if(typeof b!=="number"&&2===b[0])
-           {var aP=a[1],V=k(a[2],b[1]);return [0,[21,aP,V[1]],V[2]]}
+           {var aQ=a[1],V=k(a[2],b[1]);return [0,[21,aQ,V[1]],V[2]]}
           break;
          case 23:
           var d=a[2],c=a[1];
           if(typeof c==="number")
            switch(c)
-            {case 0:return F(c,d,b);
-             case 1:return F(c,d,b);
-             case 2:return F(c,d,b);
+            {case 0:return E(c,d,b);
+             case 1:return E(c,d,b);
+             case 2:return E(c,d,b);
              case 3:
               if(typeof b!=="number"&&14===b[0])
                {var aa=k(d,b[1]);return [0,[23,3,aa[1]],aa[2]]}
               throw u;
-             default:return F(c,d,b)}
+             default:return E(c,d,b)}
           else
            switch(c[0])
-            {case 0:return F(c,d,b);
-             case 1:return F(c,d,b);
-             case 2:return F(c,d,b);
-             case 3:return F(c,d,b);
-             case 4:return F(c,d,b);
-             case 5:return F(c,d,b);
-             case 6:return F(c,d,b);
-             case 7:return F([7,c[1],c[2]],d,b);
+            {case 0:return E(c,d,b);
+             case 1:return E(c,d,b);
+             case 2:return E(c,d,b);
+             case 3:return E(c,d,b);
+             case 4:return E(c,d,b);
+             case 5:return E(c,d,b);
+             case 6:return E(c,d,b);
+             case 7:return E([7,c[1],c[2]],d,b);
              case 8:
-              var aV=c[1],ab=C(c[2],d,b),ac=ab[2];
+              var aV=c[1],ab=B(c[2],d,b),ac=ab[2];
               return [0,[23,[8,aV,ab[1]],ac[1]],ac[2]];
-             case 9:return F(c,d,b);
-             default:return F(c,d,b)}
+             case 9:return E(c,d,b);
+             default:return E(c,d,b)}
          }
       throw u}
-    function F(a,b,c){var d=k(b,c);return [0,[23,a,d[1]],d[2]]}
-    function C(a,b,c)
+    function E(a,b,c){var d=k(b,c);return [0,[23,a,d[1]],d[2]]}
+    function B(a,b,c)
      {if(typeof a==="number")
        return [0,0,k(b,c)];
       else
        switch(a[0])
         {case 0:
           if(typeof c!=="number"&&0===c[0])
-           {var f=C(a[1],b,c[1]);return [0,[0,f[1]],f[2]]}
+           {var f=B(a[1],b,c[1]);return [0,[0,f[1]],f[2]]}
           break;
          case 1:
           if(typeof c!=="number"&&1===c[0])
-           {var h=C(a[1],b,c[1]);return [0,[1,h[1]],h[2]]}
+           {var h=B(a[1],b,c[1]);return [0,[1,h[1]],h[2]]}
           break;
          case 2:
           if(typeof c!=="number"&&2===c[0])
-           {var i=C(a[1],b,c[1]);return [0,[2,i[1]],i[2]]}
+           {var i=B(a[1],b,c[1]);return [0,[2,i[1]],i[2]]}
           break;
          case 3:
           if(typeof c!=="number"&&3===c[0])
-           {var j=C(a[1],b,c[1]);return [0,[3,j[1]],j[2]]}
+           {var j=B(a[1],b,c[1]);return [0,[3,j[1]],j[2]]}
           break;
          case 4:
           if(typeof c!=="number"&&4===c[0])
-           {var l=C(a[1],b,c[1]);return [0,[4,l[1]],l[2]]}
+           {var l=B(a[1],b,c[1]);return [0,[4,l[1]],l[2]]}
           break;
          case 5:
           if(typeof c!=="number"&&5===c[0])
-           {var n=C(a[1],b,c[1]);return [0,[5,n[1]],n[2]]}
+           {var n=B(a[1],b,c[1]);return [0,[5,n[1]],n[2]]}
           break;
          case 6:
           if(typeof c!=="number"&&6===c[0])
-           {var q=C(a[1],b,c[1]);return [0,[6,q[1]],q[2]]}
+           {var q=B(a[1],b,c[1]);return [0,[6,q[1]],q[2]]}
           break;
          case 7:
           if(typeof c!=="number"&&7===c[0])
-           {var r=C(a[1],b,c[1]);return [0,[7,r[1]],r[2]]}
+           {var r=B(a[1],b,c[1]);return [0,[7,r[1]],r[2]]}
           break;
          case 8:
           if(typeof c!=="number"&&8===c[0])
            {var s=c[1],D=c[2],E=a[2];
-            if(aT([0,a[1]],[0,s]))throw u;
-            var v=C(E,b,D);
+            if(aL([0,a[1]],[0,s]))throw u;
+            var v=B(E,b,D);
             return [0,[8,s,v[1]],v[2]]}
           break;
          case 9:
           if(typeof c!=="number"&&9===c[0])
            {var d=c[2],e=c[1],F=c[3],G=a[3],H=a[2],I=a[1],J=[0,m(e)];
-            if(aT([0,m(I)],J))throw u;
+            if(aL([0,m(I)],J))throw u;
             var K=[0,m(d)];
-            if(aT([0,m(H)],K))throw u;
+            if(aL([0,m(H)],K))throw u;
             var w=t(p(o(e),d)),L=w[4];
             g(w[2],0);
             g(L,0);
-            var x=C(m(G),b,F),M=x[2];
+            var x=B(m(G),b,F),M=x[2];
             return [0,[9,e,d,o(x[1])],M]}
           break;
          case 10:
           if(typeof c!=="number"&&10===c[0])
-           {var y=C(a[1],b,c[1]);return [0,[10,y[1]],y[2]]}
+           {var y=B(a[1],b,c[1]);return [0,[10,y[1]],y[2]]}
           break;
          case 11:
           if(typeof c!=="number"&&11===c[0])
-           {var z=C(a[1],b,c[1]);return [0,[11,z[1]],z[2]]}
+           {var z=B(a[1],b,c[1]);return [0,[11,z[1]],z[2]]}
           break;
          case 13:
           if(typeof c!=="number"&&13===c[0])
-           {var A=C(a[1],b,c[1]);return [0,[13,A[1]],A[2]]}
+           {var A=B(a[1],b,c[1]);return [0,[13,A[1]],A[2]]}
           break;
          case 14:
           if(typeof c!=="number"&&14===c[0])
-           {var B=C(a[1],b,c[1]);return [0,[14,B[1]],B[2]]}
+           {var C=B(a[1],b,c[1]);return [0,[14,C[1]],C[2]]}
           break
          }
       throw u}
-    function G(a,b,c)
-     {var d=f(c),l=0<=b?a:0,g=aY(b);
+    function F(a,b,c)
+     {var d=f(c),l=0<=b?a:0,g=aQ(b);
       if(g<=d)return c;
-      var m=2===l?48:32,e=aE(g,m);
+      var m=2===l?48:32,e=ax(g,m);
       switch(l)
-       {case 0:V(c,0,e,0,d);break;
-        case 1:V(c,0,e,g-d|0,d);break;
+       {case 0:S(c,0,e,0,d);break;
+        case 1:S(c,0,e,g-d|0,d);break;
         default:
          if(0<d)
-          {if(43===y(c,0))
+          {if(43===x(c,0))
             var h=1;
            else
-            if(45===y(c,0))
+            if(45===x(c,0))
              var h=1;
             else
-             if(32===y(c,0))var h=1;else var j=0,h=0;
-           if(h){aU(e,0,y(c,0));V(c,1,e,(g-d|0)+1|0,d-1|0);var j=1}}
+             if(32===x(c,0))var h=1;else var j=0,h=0;
+           if(h){aM(e,0,x(c,0));S(c,1,e,(g-d|0)+1|0,d-1|0);var j=1}}
          else
           var j=0;
          if(!j)
           {if(1<d)
-            if(48===y(c,0))
-             {if(dv===y(c,1))
+            if(48===x(c,0))
+             {if(dh===x(c,1))
                var k=1;
               else
-               if(88===y(c,1))var k=1;else var i=0,k=0;
-              if(k){aU(e,1,y(c,1));V(c,2,e,(g-d|0)+2|0,d-2|0);var i=1}}
+               if(88===x(c,1))var k=1;else var i=0,k=0;
+              if(k){aM(e,1,x(c,1));S(c,2,e,(g-d|0)+2|0,d-2|0);var i=1}}
             else
              var i=0;
            else
             var i=0;
-           if(!i)V(c,0,e,g-d|0,d)}}
+           if(!i)S(c,0,e,g-d|0,d)}}
       return e}
-    function ap(a,b)
-     {var d=aY(a),c=f(b),e=y(b,0);
+    function am(a,b)
+     {var d=aQ(a),c=f(b),e=x(b,0);
       if(58<=e)
        var g=71<=e?5<(e-97|0)>>>0?1:0:65<=e?0:1;
       else
@@ -1997,11 +1965,11 @@
            {case 5:
              if(c<(d+2|0))
               if(1<c)
-               {var l=dv===y(b,1)?0:88===y(b,1)?0:1;
+               {var l=dh===x(b,1)?0:88===x(b,1)?0:1;
                 if(!l)
-                 {var j=aE(d+2|0,48);
-                  aU(j,1,y(b,1));
-                  V(b,2,j,(d-c|0)+4|0,c-2|0);
+                 {var j=ax(d+2|0,48);
+                  aM(j,1,x(b,1));
+                  S(b,2,j,(d-c|0)+4|0,c-2|0);
                   return j}}
              var g=0,h=0;
              break;
@@ -2015,33 +1983,33 @@
           var g=1,h=0;
         if(h)
          {if(c<(d+1|0))
-           {var i=aE(d+1|0,48);aU(i,0,e);V(b,1,i,(d-c|0)+2|0,c-1|0);return i}
+           {var i=ax(d+1|0,48);aM(i,0,e);S(b,1,i,(d-c|0)+2|0,c-1|0);return i}
           var g=1}}
-      if(!g)if(c<d){var k=aE(d,48);V(b,0,k,d-c|0,c);return k}
+      if(!g)if(c<d){var k=ax(d,48);S(b,0,k,d-c|0,c);return k}
       return b}
-    function fr(a)
+    function fc(a)
      {var l=0;
       for(;;)
        {if(f(a)<=l)
          var o=0;
         else
-         {var g=$(a,l),B=14<=g?34===g?1:92===g?1:0:11<=g?13<=g?1:0:8<=g?1:0;
-          if(B)var o=1;else{if(bh(g)){var l=l+1|0;continue}var o=1}}
+         {var g=X(a,l),B=14<=g?34===g?1:92===g?1:0:11<=g?13<=g?1:0:8<=g?1:0;
+          if(B)var o=1;else{if(ba(g)){var l=l+1|0;continue}var o=1}}
         if(o)
          {var b=[0,0],s=f(a)-1|0,w=0;
           if(!(s<0))
            {var k=w;
             for(;;)
              {var
-               e=$(a,k),
+               e=X(a,k),
                C=14<=e?34===e?1:92===e?1:0:11<=e?13<=e?1:0:8<=e?1:0,
-               z=C?2:bh(e)?1:4;
+               z=C?2:ba(e)?1:4;
               b[1]=b[1]+z|0;
               var A=k+1|0;
               if(s!==k){var k=A;continue}
               break}}
           if(b[1]===f(a))
-           {var p=f(a),r=q(p);Q(a,0,r,0,p);var u=r}
+           {var p=f(a),r=q(p);O(a,0,r,0,p);var u=r}
           else
            {var c=q(b[1]);
             b[1]=0;
@@ -2049,7 +2017,7 @@
             if(!(t<0))
              {var i=x;
               for(;;)
-               {var d=$(a,i),j=d-34|0;
+               {var d=X(a,i),j=d-34|0;
                 if(58<j>>>0)
                  if(-20<=j)
                   var m=1;
@@ -2057,19 +2025,19 @@
                   {switch(j+34|0)
                     {case 8:n(c,b[1],92);b[1]++;n(c,b[1],98);var h=1;break;
                      case 9:n(c,b[1],92);b[1]++;n(c,b[1],116);var h=1;break;
-                     case 10:n(c,b[1],92);b[1]++;n(c,b[1],dW);var h=1;break;
+                     case 10:n(c,b[1],92);b[1]++;n(c,b[1],dJ);var h=1;break;
                      case 13:n(c,b[1],92);b[1]++;n(c,b[1],114);var h=1;break;
                      default:var m=1,h=0}
                    if(h)var m=0}
                 else
                  var m=56<(j-1|0)>>>0?(n(c,b[1],92),b[1]++,n(c,b[1],d),0):1;
                 if(m)
-                 if(bh(d))
+                 if(ba(d))
                   n(c,b[1],d);
                  else
                   {n(c,b[1],92);
                    b[1]++;
-                   n(c,b[1],48+(d/dJ|0)|0);
+                   n(c,b[1],48+(d/dw|0)|0);
                    b[1]++;
                    n(c,b[1],48+((d/10|0)%10|0)|0);
                    b[1]++;
@@ -2082,48 +2050,48 @@
           var v=u}
         else
          var v=a;
-        return aF(v,fs)}}
-    function bx(a,b)
+        return bm(v,fd)}}
+    function br(a,b)
      {switch(a)
-       {case 0:var c=fG;break;
-        case 1:var c=fH;break;
-        case 2:var c=fI;break;
-        case 3:var c=fJ;break;
-        case 4:var c=fK;break;
-        case 5:var c=fL;break;
-        case 6:var c=fM;break;
-        case 7:var c=fN;break;
-        case 8:var c=fO;break;
-        case 9:var c=fP;break;
-        case 10:var c=fQ;break;
-        case 11:var c=fR;break;
-        default:var c=fS}
-      return aF(a0(1,b),c)}
-    function fU(a,b)
+       {case 0:var c=fr;break;
+        case 1:var c=fs;break;
+        case 2:var c=ft;break;
+        case 3:var c=fu;break;
+        case 4:var c=fv;break;
+        case 5:var c=fw;break;
+        case 6:var c=fx;break;
+        case 7:var c=fy;break;
+        case 8:var c=fz;break;
+        case 9:var c=fA;break;
+        case 10:var c=fB;break;
+        case 11:var c=fC;break;
+        default:var c=fD}
+      return bm(aU(1,b),c)}
+    function fF(a,b)
      {switch(a)
-       {case 0:var c=ft;break;
-        case 1:var c=fu;break;
-        case 2:var c=fv;break;
-        case 3:var c=fw;break;
-        case 4:var c=fx;break;
-        case 5:var c=fy;break;
-        case 6:var c=fz;break;
-        case 7:var c=fA;break;
-        case 8:var c=fB;break;
-        case 9:var c=fC;break;
-        case 10:var c=fD;break;
-        case 11:var c=fE;break;
-        default:var c=fF}
-      return bf(c,b)}
-    function fV(a,b){return bf(bx(a,108),b)}
-    function fW(a,b){return bf(bx(a,dW),b)}
-    function fX(a,b){return ij(bx(a,76),b)}
-    function ab(a,b,c)
-     {var p=aY(b);
+       {case 0:var c=fe;break;
+        case 1:var c=ff;break;
+        case 2:var c=fg;break;
+        case 3:var c=fh;break;
+        case 4:var c=fi;break;
+        case 5:var c=fj;break;
+        case 6:var c=fk;break;
+        case 7:var c=fl;break;
+        case 8:var c=fm;break;
+        case 9:var c=fn;break;
+        case 10:var c=fo;break;
+        case 11:var c=fp;break;
+        default:var c=fq}
+      return a_(c,b)}
+    function fG(a,b){return a_(br(a,108),b)}
+    function fH(a,b){return a_(br(a,dJ),b)}
+    function fI(a,b){return hB(br(a,76),b)}
+    function Z(a,b,c)
+     {var p=aQ(b);
       if(15===a)
-       var l=fT;
+       var l=fE;
       else
-       {var o=aY(p);
+       {var o=aQ(p);
         switch(a)
          {case 15:var h=70;break;
           case 0:
@@ -2139,118 +2107,118 @@
           case 10:
           case 11:var h=103;break;
           default:var h=71}
-        var g=cl(16);
-        aI(g,37);
+        var g=cc(16);
+        aA(g,37);
         switch(a)
          {case 1:
           case 4:
           case 7:
           case 10:
-          case 13:aI(g,43);break;
+          case 13:aA(g,43);break;
           case 2:
           case 5:
           case 8:
           case 11:
-          case 14:aI(g,32);break
+          case 14:aA(g,32);break
           }
-        aI(g,46);
+        aA(g,46);
         s(g,d(e+o));
-        aI(g,h);
-        var l=cn(g)}
-      var i=d6(l,c);
+        aA(g,h);
+        var l=ce(g)}
+      var i=dS(l,c);
       if(15===a)
-       {var m=h_(c),q=f(i);
-        if(3===m)return c<0?fY:fZ;
-        if(4<=m)return f0;
+       {var m=hr(c),q=f(i);
+        if(3===m)return c<0?fJ:fK;
+        if(4<=m)return fL;
         var j=0;
         for(;;)
          {if(j===q)
            var n=0;
           else
-           {var k=y(i,j)-46|0,r=23<k>>>0?55===k?1:0:21<(k-1|0)>>>0?1:0;
+           {var k=x(i,j)-46|0,r=23<k>>>0?55===k?1:0:21<(k-1|0)>>>0?1:0;
             if(!r){var j=j+1|0;continue}
             var n=1}
-          return n?i:M(i,f1)}}
+          return n?i:aR(i,fM)}}
       return i}
     function i(a,h,c,d)
      {var f=a,e=c,b=d;
       for(;;)
        if(typeof b==="number")
-        return B(f,h,e);
+        return K(f,h,e);
        else
         switch(b[0])
-         {case 0:var F=b[1];return function(a){return i(f,h,[5,e,a],F)};
+         {case 0:var E=b[1];return function(a){return i(f,h,[5,e,a],E)};
           case 1:
-           var I=b[1];
+           var H=b[1];
            return function(a)
             {if(39===a)
-              var b=ev;
+              var b=eh;
              else
               if(92===a)
-               var b=ew;
+               var b=ei;
               else
                {if(14<=a)
                  var c=0;
                 else
                  switch(a)
-                  {case 8:var b=ex,c=1;break;
-                   case 9:var b=ey,c=1;break;
-                   case 10:var b=ez,c=1;break;
-                   case 13:var b=eA,c=1;break;
+                  {case 8:var b=ej,c=1;break;
+                   case 9:var b=ek,c=1;break;
+                   case 10:var b=el,c=1;break;
+                   case 13:var b=em,c=1;break;
                    default:var c=0}
                 if(!c)
-                 if(bh(a))
+                 if(ba(a))
                   {var g=q(1);n(g,0,a);var b=g}
                  else
                   {var d=q(4);
                    n(d,0,92);
-                   n(d,1,48+(a/dJ|0)|0);
+                   n(d,1,48+(a/dw|0)|0);
                    n(d,2,48+((a/10|0)%10|0)|0);
                    n(d,3,48+(a%10|0)|0);
                    var b=d}}
-             return i(f,h,[4,e,aF(b,f2)],I)};
-          case 2:var J=b[2],K=b[1];return cp(f,h,e,J,K,function(a){return a});
-          case 3:return cp(f,h,e,b[2],b[1],fr);
-          case 4:return a1(f,h,e,b[4],b[2],b[3],fU,b[1]);
-          case 5:return a1(f,h,e,b[4],b[2],b[3],fV,b[1]);
-          case 6:return a1(f,h,e,b[4],b[2],b[3],fW,b[1]);
-          case 7:return a1(f,h,e,b[4],b[2],b[3],fX,b[1]);
+             return i(f,h,[4,e,bm(b,fN)],H)};
+          case 2:var I=b[2],J=b[1];return cg(f,h,e,I,J,function(a){return a});
+          case 3:return cg(f,h,e,b[2],b[1],fc);
+          case 4:return aV(f,h,e,b[4],b[2],b[3],fF,b[1]);
+          case 5:return aV(f,h,e,b[4],b[2],b[3],fG,b[1]);
+          case 6:return aV(f,h,e,b[4],b[2],b[3],fH,b[1]);
+          case 7:return aV(f,h,e,b[4],b[2],b[3],fI,b[1]);
           case 8:
            var r=b[4],s=b[3],v=b[2],t=b[1];
            if(typeof v==="number")
             {if(typeof s==="number")
               return 0===s
-                      ?function(a){return i(f,h,[4,e,ab(t,bu,a)],r)}
-                      :function(a,b){return i(f,h,[4,e,ab(t,a,b)],r)};
+                      ?function(a){return i(f,h,[4,e,Z(t,bo,a)],r)}
+                      :function(a,b){return i(f,h,[4,e,Z(t,a,b)],r)};
              var ad=s[1];
-             return function(a){return i(f,h,[4,e,ab(t,ad,a)],r)}}
+             return function(a){return i(f,h,[4,e,Z(t,ad,a)],r)}}
            else
             {if(0===v[0])
               {var y=v[2],z=v[1];
                if(typeof s==="number")
                 return 0===s
-                        ?function(a){return i(f,h,[4,e,G(z,y,ab(t,bu,a))],r)}
-                        :function(a,b){return i(f,h,[4,e,G(z,y,ab(t,a,b))],r)};
+                        ?function(a){return i(f,h,[4,e,F(z,y,Z(t,bo,a))],r)}
+                        :function(a,b){return i(f,h,[4,e,F(z,y,Z(t,a,b))],r)};
                var ae=s[1];
-               return function(a){return i(f,h,[4,e,G(z,y,ab(t,ae,a))],r)}}
+               return function(a){return i(f,h,[4,e,F(z,y,Z(t,ae,a))],r)}}
              var A=v[1];
              if(typeof s==="number")
               return 0===s
-                      ?function(a,b){return i(f,h,[4,e,G(A,a,ab(t,bu,b))],r)}
-                      :function(a,b,c){return i(f,h,[4,e,G(A,a,ab(t,b,c))],r)};
+                      ?function(a,b){return i(f,h,[4,e,F(A,a,Z(t,bo,b))],r)}
+                      :function(a,b,c){return i(f,h,[4,e,F(A,a,Z(t,b,c))],r)};
              var af=s[1];
-             return function(a,b){return i(f,h,[4,e,G(A,a,ab(t,af,b))],r)}}
+             return function(a,b){return i(f,h,[4,e,F(A,a,Z(t,af,b))],r)}}
           case 9:
            var L=b[1];
-           return function(a){var b=a?eo:ep;return i(f,h,[4,e,b],L)};
+           return function(a){var b=a?ea:eb;return i(f,h,[4,e,b],L)};
           case 10:var e=[7,e],b=b[1];continue;
           case 11:var e=[2,e,b[1]],b=b[2];continue;
           case 12:var e=[3,e,b[1]],b=b[2];continue;
           case 13:
-           var M=b[3],N=b[2],C=cl(16);
-           bv(C,N);
-           var E=cn(C);
-           return function(a){return i(f,h,[4,e,E],M)};
+           var M=b[3],N=b[2],B=cc(16);
+           bp(B,N);
+           var D=ce(B);
+           return function(a){return i(f,h,[4,e,D],M)};
           case 14:
            var O=b[3],P=b[2];
            return function(a)
@@ -2260,7 +2228,7 @@
           case 15:
            var Q=b[1];
            return function(c,b)
-            {return i(f,h,[6,e,function(a){return B(c,a,b)}],Q)};
+            {return i(f,h,[6,e,function(a){return K(c,a,b)}],Q)};
           case 16:var R=b[1];return function(a){return i(f,h,[6,e,a],R)};
           case 17:var e=[0,e,b[1]],b=b[2];continue;
           case 18:
@@ -2288,182 +2256,182 @@
             e=X,
             b=W;
            continue;
-          case 19:throw [0,j,f3];
-          case 20:var Y=b[3],Z=[8,e,f4];return function(a){return i(f,h,Z,Y)};
+          case 19:throw [0,j,fO];
+          case 20:var Y=b[3],_=[8,e,fP];return function(a){return i(f,h,_,Y)};
           case 21:
-           var _=b[2];return function(a){return i(f,h,[4,e,bf(f5,a)],_)};
-          case 22:var $=b[1];return function(a){return i(f,h,[5,e,a],$)};
+           var $=b[2];return function(a){return i(f,h,[4,e,a_(fQ,a)],$)};
+          case 22:var aa=b[1];return function(a){return i(f,h,[5,e,a],aa)};
           case 23:
            var p=b[2],w=b[1];
            if(typeof w==="number")
             switch(w)
-             {case 0:return D(f,h,e,p);
-              case 1:return D(f,h,e,p);
-              case 2:return D(f,h,e,p);
-              case 3:throw [0,j,f6];
-              default:return D(f,h,e,p)}
+             {case 0:return C(f,h,e,p);
+              case 1:return C(f,h,e,p);
+              case 2:return C(f,h,e,p);
+              case 3:throw [0,j,fR];
+              default:return C(f,h,e,p)}
            else
             switch(w[0])
-             {case 0:return D(f,h,e,p);
-              case 1:return D(f,h,e,p);
-              case 2:return D(f,h,e,p);
-              case 3:return D(f,h,e,p);
-              case 4:return D(f,h,e,p);
-              case 5:return D(f,h,e,p);
-              case 6:return D(f,h,e,p);
-              case 7:return D(f,h,e,p);
-              case 8:return H(f,h,e,w[2],p);
-              case 9:return D(f,h,e,p);
-              default:return D(f,h,e,p)}
-          default:var aa=b[3],ac=b[1];return cq(f,h,e,aa,ac,g(b[2],0))}}
-    function H(g,f,c,d,e)
+             {case 0:return C(f,h,e,p);
+              case 1:return C(f,h,e,p);
+              case 2:return C(f,h,e,p);
+              case 3:return C(f,h,e,p);
+              case 4:return C(f,h,e,p);
+              case 5:return C(f,h,e,p);
+              case 6:return C(f,h,e,p);
+              case 7:return C(f,h,e,p);
+              case 8:return G(f,h,e,w[2],p);
+              case 9:return C(f,h,e,p);
+              default:return C(f,h,e,p)}
+          default:var ab=b[3],ac=b[1];return ch(f,h,e,ab,ac,g(b[2],0))}}
+    function G(g,f,c,d,e)
      {if(typeof d==="number")
-       return D(g,f,c,e);
+       return C(g,f,c,e);
       else
        switch(d[0])
-        {case 0:var b=d[1];return function(a){return H(g,f,c,b,e)};
-         case 1:var h=d[1];return function(a){return H(g,f,c,h,e)};
-         case 2:var i=d[1];return function(a){return H(g,f,c,i,e)};
-         case 3:var k=d[1];return function(a){return H(g,f,c,k,e)};
-         case 4:var l=d[1];return function(a){return H(g,f,c,l,e)};
-         case 5:var m=d[1];return function(a){return H(g,f,c,m,e)};
-         case 6:var n=d[1];return function(a){return H(g,f,c,n,e)};
-         case 7:var q=d[1];return function(a){return H(g,f,c,q,e)};
-         case 8:var r=d[2];return function(a){return H(g,f,c,r,e)};
+        {case 0:var b=d[1];return function(a){return G(g,f,c,b,e)};
+         case 1:var h=d[1];return function(a){return G(g,f,c,h,e)};
+         case 2:var i=d[1];return function(a){return G(g,f,c,i,e)};
+         case 3:var k=d[1];return function(a){return G(g,f,c,k,e)};
+         case 4:var l=d[1];return function(a){return G(g,f,c,l,e)};
+         case 5:var m=d[1];return function(a){return G(g,f,c,m,e)};
+         case 6:var n=d[1];return function(a){return G(g,f,c,n,e)};
+         case 7:var q=d[1];return function(a){return G(g,f,c,q,e)};
+         case 8:var r=d[2];return function(a){return G(g,f,c,r,e)};
          case 9:
           var s=d[3],a=d[2],t=p(o(d[1]),a);
-          return function(a){return H(g,f,c,z(t,s),e)};
-         case 10:var u=d[1];return function(a,b){return H(g,f,c,u,e)};
-         case 11:var v=d[1];return function(a){return H(g,f,c,v,e)};
-         case 12:var w=d[1];return function(a){return H(g,f,c,w,e)};
-         case 13:throw [0,j,f7];
-         default:throw [0,j,f8]}}
-    function D(a,b,c,d){return i(a,b,[8,c,f9],d)}
-    function cp(j,h,c,d,e,f)
+          return function(a){return G(g,f,c,y(t,s),e)};
+         case 10:var u=d[1];return function(a,b){return G(g,f,c,u,e)};
+         case 11:var v=d[1];return function(a){return G(g,f,c,v,e)};
+         case 12:var w=d[1];return function(a){return G(g,f,c,w,e)};
+         case 13:throw [0,j,fS];
+         default:throw [0,j,fT]}}
+    function C(a,b,c,d){return i(a,b,[8,c,fU],d)}
+    function cg(j,h,c,d,e,f)
      {if(typeof e==="number")
        return function(a){return i(j,h,[4,c,g(f,a)],d)};
       else
        {if(0===e[0])
          {var b=e[2],k=e[1];
-          return function(a){return i(j,h,[4,c,G(k,b,g(f,a))],d)}}
+          return function(a){return i(j,h,[4,c,F(k,b,g(f,a))],d)}}
         var l=e[1];
-        return function(a,b){return i(j,h,[4,c,G(l,a,g(f,b))],d)}}}
-    function a1(l,k,j,d,e,f,g,h)
+        return function(a,b){return i(j,h,[4,c,F(l,a,g(f,b))],d)}}}
+    function aV(l,k,j,d,e,f,g,h)
      {if(typeof e==="number")
        {if(typeof f==="number")
          return 0===f
-                 ?function(a){return i(l,k,[4,j,B(g,h,a)],d)}
-                 :function(a,b){return i(l,k,[4,j,ap(a,B(g,h,b))],d)};
+                 ?function(a){return i(l,k,[4,j,K(g,h,a)],d)}
+                 :function(a,b){return i(l,k,[4,j,am(a,K(g,h,b))],d)};
         var b=f[1];
-        return function(a){return i(l,k,[4,j,ap(b,B(g,h,a))],d)}}
+        return function(a){return i(l,k,[4,j,am(b,K(g,h,a))],d)}}
       else
        {if(0===e[0])
          {var c=e[2],m=e[1];
           if(typeof f==="number")
            return 0===f
-                   ?function(a){return i(l,k,[4,j,G(m,c,B(g,h,a))],d)}
-                   :function(a,b){return i(l,k,[4,j,G(m,c,ap(a,B(g,h,b)))],d)};
+                   ?function(a){return i(l,k,[4,j,F(m,c,K(g,h,a))],d)}
+                   :function(a,b){return i(l,k,[4,j,F(m,c,am(a,K(g,h,b)))],d)};
           var o=f[1];
-          return function(a){return i(l,k,[4,j,G(m,c,ap(o,B(g,h,a)))],d)}}
+          return function(a){return i(l,k,[4,j,F(m,c,am(o,K(g,h,a)))],d)}}
         var n=e[1];
         if(typeof f==="number")
          return 0===f
-                 ?function(a,b){return i(l,k,[4,j,G(n,a,B(g,h,b))],d)}
-                 :function(a,b,c){return i(l,k,[4,j,G(n,a,ap(b,B(g,h,c)))],d)};
+                 ?function(a,b){return i(l,k,[4,j,F(n,a,K(g,h,b))],d)}
+                 :function(a,b,c){return i(l,k,[4,j,F(n,a,am(b,K(g,h,c)))],d)};
         var p=f[1];
-        return function(a,b){return i(l,k,[4,j,G(n,a,ap(p,B(g,h,b)))],d)}}}
-    function cq(h,b,c,d,e,f)
-     {if(e){var j=e[1];return function(a){return cq(h,b,c,d,j,g(f,a))}}
+        return function(a,b){return i(l,k,[4,j,F(n,a,am(p,K(g,h,b)))],d)}}}
+    function ch(h,b,c,d,e,f)
+     {if(e){var j=e[1];return function(a){return ch(h,b,c,d,j,g(f,a))}}
       return i(h,b,[4,c,f],d)}
-    function ac(a,b)
+    function _(a,b)
      {var c=b;
       for(;;)
        if(typeof c==="number")
         return 0;
        else
         switch(c[0])
-         {case 0:var f=c[1],h=co(c[2]);ac(a,f);return aC(a,h);
+         {case 0:var f=c[1],h=cf(c[2]);_(a,f);return aw(a,h);
           case 1:
            var d=c[2],e=c[1];
-           if(0===d[0]){var i=d[1];ac(a,e);aC(a,f_);var c=i;continue}
+           if(0===d[0]){var i=d[1];_(a,e);aw(a,fV);var c=i;continue}
            var j=d[1];
-           ac(a,e);
-           aC(a,f$);
+           _(a,e);
+           aw(a,fW);
            var c=j;
            continue;
-          case 6:var m=c[2];ac(a,c[1]);return g(m,a);
-          case 7:ac(a,c[1]);return bj(a);
-          case 8:var n=c[2];ac(a,c[1]);return aa(n);
+          case 6:var m=c[2];_(a,c[1]);return g(m,a);
+          case 7:_(a,c[1]);return bc(a);
+          case 8:var n=c[2];_(a,c[1]);return Y(n);
           case 2:
-          case 4:var k=c[2];ac(a,c[1]);return aC(a,k);
-          default:var l=c[2];ac(a,c[1]);return ec(a,l)}}
-    function ai(a,b)
+          case 4:var k=c[2];_(a,c[1]);return aw(a,k);
+          default:var l=c[2];_(a,c[1]);return d0(a,l)}}
+    function af(a,b)
      {var c=b;
       for(;;)
        if(typeof c==="number")
         return 0;
        else
         switch(c[0])
-         {case 0:var h=c[1],i=co(c[2]);ai(a,h);return aH(a,i);
+         {case 0:var h=c[1],i=cf(c[2]);af(a,h);return az(a,i);
           case 1:
            var e=c[2],f=c[1];
-           if(0===e[0]){var j=e[1];ai(a,f);aH(a,ga);var c=j;continue}
+           if(0===e[0]){var j=e[1];af(a,f);az(a,fX);var c=j;continue}
            var k=e[1];
-           ai(a,f);
-           aH(a,gb);
+           af(a,f);
+           az(a,fY);
            var c=k;
            continue;
-          case 6:var o=c[2];ai(a,c[1]);return aH(a,g(o,0));
+          case 6:var o=c[2];af(a,c[1]);return az(a,g(o,0));
           case 7:var c=c[1];continue;
-          case 8:var p=c[2];ai(a,c[1]);return aa(p);
+          case 8:var p=c[2];af(a,c[1]);return Y(p);
           case 2:
-          case 4:var l=c[2];ai(a,c[1]);return aH(a,l);
+          case 4:var l=c[2];af(a,c[1]);return az(a,l);
           default:
            var m=c[2];
-           ai(a,c[1]);
+           af(a,c[1]);
            var d=a[2];
-           if(a[3]<=d)ck(a,1);
+           if(a[3]<=d)cb(a,1);
            n(a[1],d,m);
            a[2]=d+1|0;
            return 0}}
-    function cr(a,b)
-     {var c=b[1],d=0;return i(function(a,b){ac(a,b);return 0},a,d,c)}
-    function N(a)
+    function ci(a,b)
+     {var c=b[1],d=0;return i(function(a,b){_(a,b);return 0},a,d,c)}
+    function M(a)
      {var b=a[1];
       return i
               (function(a,b)
-                {var g=64,d=1<=64?g:1,e=aG<d?aG:d,f=q(e),c=[0,f,0,e,f];
-                 ai(c,b);
-                 return cg(c[1],0,c[2])},
+                {var f=64,d=ay<64?ay:f,e=q(d),c=[0,e,0,d,e];
+                 af(c,b);
+                 return b_(c[1],0,c[2])},
                0,
                0,
                b)}
-    var by=[0,0];
-    function bA(a,b)
+    var bs=[0,0];
+    function bu(a,b)
      {var c=a[b+1];
-      if(iA(c))
-       {if(bl(c)===dg)return g(N(gc),c);
-        if(bl(c)===253)
-         {var e=d6(er,c),d=0,i=f(e);
+      if(hR(c))
+       {if(be(c)===c6)return g(M(fZ),c);
+        if(be(c)===253)
+         {var e=dS(ed,c),d=0,i=f(e);
           for(;;)
-           {if(i<=d)return M(e,eq);
-            var h=y(e,d),j=48<=h?58<=h?0:1:45===h?1:0;
+           {if(i<=d)return aR(e,ec);
+            var h=x(e,d),j=48<=h?58<=h?0:1:45===h?1:0;
             if(j){var d=d+1|0;continue}
             return e}}
-        return gd}
-      return g(N(ge),c)}
-    function cs(a,b)
-     {if(a.length-1<=b)return gf;
-      var c=cs(a,b+1|0),d=bA(a,b);
-      return B(N(gg),d,c)}
-    function gh(a)
+        return f0}
+      return g(M(f1),c)}
+    function cj(a,b)
+     {if(a.length-1<=b)return f2;
+      var c=cj(a,b+1|0),d=bu(a,b);
+      return K(M(f3),d,c)}
+    function f4(a)
      {var b=a.length-1;
-      if(2<b>>>0){var c=cs(a,2),d=bA(a,1);return B(N(gi),d,c)}
+      if(2<b>>>0){var c=cj(a,2),d=bu(a,1);return K(M(f5),d,c)}
       switch(b)
-       {case 0:return gj;
-        case 1:return gk;
-        default:var e=bA(a,1);return g(N(gl),e)}}
-    function ct(b)
+       {case 0:return f6;
+        case 1:return f7;
+        default:var e=bu(a,1);return g(M(f8),e)}}
+    function ck(b)
      {function a(a)
        {var c=a;
         for(;;)
@@ -2473,23 +2441,23 @@
             if(d)return d[1];
             var c=m;
             continue}
-          if(b===cu)return gm;
-          if(b===cv)return gn;
-          if(b[1]===cw)
-           {var e=b[2],i=e[3],p=e[2],q=e[1];return a_(N(bz),q,p,i,i+5|0,go)}
+          if(b===cl)return f9;
+          if(b===cm)return f_;
+          if(b[1]===cn)
+           {var e=b[2],i=e[3],p=e[2],q=e[1];return a4(M(bt),q,p,i,i+5|0,f$)}
           if(b[1]===j)
-           {var f=b[2],k=f[3],r=f[2],s=f[1];return a_(N(bz),s,r,k,k+6|0,gp)}
-          if(b[1]===cx)
-           {var h=b[2],l=h[3],t=h[2],u=h[1];return a_(N(bz),u,t,l,l+6|0,gq)}
-          if(0===bl(b)){var v=b[1][1];return M(v,gh(b))}
+           {var f=b[2],k=f[3],r=f[2],s=f[1];return a4(M(bt),s,r,k,k+6|0,ga)}
+          if(b[1]===co)
+           {var h=b[2],l=h[3],t=h[2],u=h[1];return a4(M(bt),u,t,l,l+6|0,gb)}
+          if(0===be(b)){var v=b[1][1];return aR(v,f4(b))}
           return b[1]}}
-      return a(by[1])}
-    function gr(a)
+      return a(bs[1])}
+    function gc(a)
      {try
-       {var b=[0,br(function(a){return h$(a)},a)];return b}
-      catch(f){f=T(f);if(f[1]===aX)return 0;throw f}}
-    function cy(a)
-     {var j=gr(ie(0));
+       {var b=[0,bk(function(a){return hs(a)},a)];return b}
+      catch(f){f=R(f);if(f[1]===aP)return 0;throw f}}
+    function cp(a)
+     {var j=gc(hx(0));
       if(j)
        {var f=j[1],i=f.length-1-1|0,q=0;
         if(!(i<0))
@@ -2499,7 +2467,7 @@
              b=h(f,c)[c+1],
              e=
               function(b)
-                {return function(a){return a?0===b?gs:gt:0===b?gu:gv}}
+                {return function(a){return a?0===b?gd:ge:0===b?gf:gg}}
                (c);
             if(0===b[0])
              var
@@ -2508,92 +2476,92 @@
               m=b[3],
               n=b[2],
               o=e(b[1]),
-              d=[0,a_(N(gw),o,n,m,l,k)];
+              d=[0,a4(M(gh),o,n,m,l,k)];
             else
-             if(0===b[1])var p=e(0),d=[0,g(N(gx),p)];else var d=0;
-            if(d){var r=d[1];g(cr(a,gy),r)}
+             if(0===b[1])var p=e(0),d=[0,g(M(gi),p)];else var d=0;
+            if(d){var r=d[1];g(ci(a,gj),r)}
             var s=c+1|0;
             if(i!==c){var c=s;continue}
             break}}
         return 0}
-      return cr(a,gz)}
-    function cz(a){by[1]=[0,a,by[1]];return 0}
-    32===bt;
-    var gC=E([a,gB,0]);
-    function cA(a)
+      return ci(a,gk)}
+    function cq(a){bs[1]=[0,a,bs[1]];return 0}
+    32===bn;
+    var gn=D([a,gm,0]);
+    function cr(a)
      {var b=a[4],c=b?(a[4]=0,a[1][2]=a[2],a[2][1]=a[1],0):b;return c}
-    function bB(a){var b=[];el(b,[0,b,b]);return b}
-    function bC(a){return a[2]===a?1:0}
-    var a2=E([a,gD,0]),ad=[0,0];
-    function a3(a)
+    function bv(a){var b=[];d9(b,[0,b,b]);return b}
+    function bw(a){return a[2]===a?1:0}
+    var aW=D([a,go,0]),$=[0,0];
+    function aX(a)
      {var c=a[1];
-      if(3===c[0]){var d=c[1],b=a3(d);if(b!==d)a[1]=[3,b];return b}
+      if(3===c[0]){var d=c[1],b=aX(d);if(b!==d)a[1]=[3,b];return b}
       return a}
-    function aq(a){return a3(a)}
+    function an(a){return aX(a)}
     var
-     cB=
+     cs=
       [0,
        function(a)
-        {cc(gE);cc(ct(a));ec(aB,10);cy(aB);bj(aB);cd(0);return iM(2)}];
-    function cC(a,b)
-     {try {var c=g(a,b);return c}catch(f){f=T(f);return g(cB[1],f)}}
-    function cD(a,b,c)
+        {b5(gp);b5(ck(a));d0(av,10);cp(av);bc(av);b6(0);return h3(2)}];
+    function ct(a,b)
+     {try {var c=g(a,b);return c}catch(f){f=R(f);return g(cs[1],f)}}
+    function cu(a,b,c)
      {var d=b,e=c;
       for(;;)
        if(typeof d==="number")
-        return a4(a,e);
+        return aY(a,e);
        else
         switch(d[0])
-         {case 0:var f=d[1][1];return f?(g(f[1],a),a4(a,e)):a4(a,e);
-          case 1:g(d[1],a);return a4(a,e);
+         {case 0:var f=d[1][1];return f?(g(f[1],a),aY(a,e)):aY(a,e);
+          case 1:g(d[1],a);return aY(a,e);
           default:var h=[0,d[2],e],d=d[1],e=h;continue}}
-    function a4(a,b){return b?cD(a,b[1],b[2]):0}
-    function cE(a,b)
+    function aY(a,b){return b?cu(a,b[1],b[2]):0}
+    function cv(a,b)
      {var c=a,d=b;
       for(;;)
        if(typeof c==="number")
-        return bD(d);
+        return bx(d);
        else
         switch(c[0])
-         {case 0:var e=c[2];ad[1]=c[1];cC(e,0);return bD(d);
-          case 1:cA(c[1]);return bD(d);
+         {case 0:var e=c[2];$[1]=c[1];ct(e,0);return bx(d);
+          case 1:cr(c[1]);return bx(d);
           default:var f=[0,c[2],d],c=c[1],d=f;continue}}
-    function bD(a){return a?cE(a[1],a[2]):0}
-    function a5(a,b)
-     {var c=1===b[0]?b[1]===a2?(cE(a[4],0),1):0:0;return cD(b,a[2],0)}
-    var a6=[0,0],K=[0,0,0];
-    function cF(a,b)
-     {var f=ad[1],g=a6[1]?1:(a6[1]=1,0);
-      a5(a,b);
-      if(g){ad[1]=f;return 0}
+    function bx(a){return a?cv(a[1],a[2]):0}
+    function aZ(a,b)
+     {var c=1===b[0]?b[1]===aW?(cv(a[4],0),1):0:0;return cu(b,a[2],0)}
+    var a0=[0,0],J=[0,0,0];
+    function cw(a,b)
+     {var f=$[1],g=a0[1]?1:(a0[1]=1,0);
+      aZ(a,b);
+      if(g){$[1]=f;return 0}
       for(;;)
-       {if(0===K[1]){a6[1]=0;ad[1]=f;return 0}
-        if(0===K[1])throw eK;
-        K[1]=K[1]-1|0;
-        var c=K[2],d=c[2];
-        if(d===c)K[2]=0;else c[2]=d[2];
+       {if(0===J[1]){a0[1]=0;$[1]=f;return 0}
+        if(0===J[1])throw ev;
+        J[1]=J[1]-1|0;
+        var c=J[2],d=c[2];
+        if(d===c)J[2]=0;else c[2]=d[2];
         var e=d[1];
-        a5(e[1],e[2]);
+        aZ(e[1],e[2]);
         continue}}
-    function cG(a,b)
-     {var d=a3(a),c=d[1];
+    function cx(a,b)
+     {var d=aX(a),c=d[1];
       switch(c[0])
-       {case 1:if(c[1]===a2)return 0;break;
-        case 2:var e=c[1];d[1]=b;return cF(e,b)
+       {case 1:if(c[1]===aW)return 0;break;
+        case 2:var e=c[1];d[1]=b;return cw(e,b)
         }
-      return aa(gF)}
-    function bE(a,b){return cG(a,[0,b])}
-    function cH(a,b)
+      return Y(gq)}
+    function by(a,b){return cx(a,[0,b])}
+    function cy(a,b)
      {return typeof a==="number"?b:typeof b==="number"?a:[2,a,b]}
-    function bF(a)
+    function bz(a)
      {if(typeof a!=="number")
        switch(a[0])
         {case 0:if(!a[1][1])return 0;break;
-         case 2:var b=a[1],c=bF(a[2]);return cH(bF(b),c)
+         case 2:var b=a[1],c=bz(a[2]);return cy(bz(b),c)
          }
       return a}
-    function cI(a,b)
-     {var d=aq(a),g=aq(b),k=d[1];
+    function cz(a,b)
+     {var d=an(a),g=an(b),k=d[1];
       if(2===k[0])
        {var c=k[1];
         if(d===g)return 0;
@@ -2602,8 +2570,8 @@
          {var f=e[1];
           g[1]=[3,d];
           c[1]=f[1];
-          var l=cH(c[2],f[2]),m=c[3]+f[3]|0;
-          if(42<m){c[3]=0;c[2]=bF(l)}else{c[3]=m;c[2]=l}
+          var l=cy(c[2],f[2]),m=c[3]+f[3]|0;
+          if(42<m){c[3]=0;c[2]=bz(l)}else{c[3]=m;c[2]=l}
           var
            h=f[4],
            i=c[4],
@@ -2611,235 +2579,228 @@
           c[4]=n;
           return 0}
         d[1]=e;
-        return a5(c,e)}
-      throw [0,j,gH]}
-    function cJ(a,b)
-     {var c=aq(a),d=c[1];
-      if(2===d[0]){var e=d[1];c[1]=b;return a5(e,b)}
-      throw [0,j,gI]}
+        return aZ(c,e)}
+      throw [0,j,gs]}
+    function cA(a,b)
+     {var c=an(a),d=c[1];
+      if(2===d[0]){var e=d[1];c[1]=b;return aZ(e,b)}
+      throw [0,j,gt]}
     function v(a){return [0,[0,a]]}
-    var gK=[0,gJ];
-    function aK(a){return [0,[1,a]]}
-    function cK(a){return [0,[2,[0,[0,[0,a]],0,0,0]]]}
-    function cL(a){var b=[0,[2,[0,1,0,0,0]]];return [0,b,b]}
-    function cM(a,b)
+    var gv=[0,gu];
+    function aC(a){return [0,[1,a]]}
+    function cB(a){return [0,[2,[0,[0,[0,a]],0,0,0]]]}
+    function cC(a){var b=[0,[2,[0,1,0,0,0]]];return [0,b,b]}
+    function cD(a,b)
      {var d=[1,b],c=a[2],e=typeof c==="number"?d:[2,d,c];a[2]=e;return 0}
-    function cN(a,b)
-     {var c=aq(a)[1];
+    function cE(a,b)
+     {var c=an(a)[1];
       switch(c[0])
-       {case 1:if(c[1]===a2)return cC(b,0);break;
+       {case 1:if(c[1]===aW)return ct(b,0);break;
         case 2:
-         var d=c[1],e=[0,ad[1],b],f=d[4],g=typeof f==="number"?e:[2,e,f];
+         var d=c[1],e=[0,$[1],b],f=d[4],g=typeof f==="number"?e:[2,e,f];
          d[4]=g;
          return 0
         }
       return 0}
     function w(a,b)
-     {var e=aq(a),c=e[1];
+     {var e=an(a),c=e[1];
       switch(c[0])
        {case 0:return g(b,c[1]);
         case 1:return [0,c];
         case 2:
-         var f=c[1],d=cK(e),h=ad[1];
-         cM
+         var f=c[1],d=cB(e),h=$[1];
+         cD
           (f,
            function(a)
             {switch(a[0])
               {case 0:
                 var e=a[1];
-                ad[1]=h;
-                try {var f=g(b,e),c=f}catch(f){f=T(f);var c=aK(f)}
-                return cI(d,c);
-               case 1:return cJ(d,a);
-               default:throw [0,j,gL]}});
+                $[1]=h;
+                try {var f=g(b,e),c=f}catch(f){f=R(f);var c=aC(f)}
+                return cz(d,c);
+               case 1:return cA(d,a);
+               default:throw [0,j,gw]}});
          return d;
-        default:throw [0,j,gM]}}
-    function cO(a,b)
-     {try {var k=g(a,0),h=k}catch(f){f=T(f);var h=aK(f)}
-      var c=aq(h),d=c[1];
+        default:throw [0,j,gx]}}
+    function cF(a,b)
+     {try {var k=g(a,0),h=k}catch(f){f=R(f);var h=aC(f)}
+      var c=an(h),d=c[1];
       switch(d[0])
        {case 0:return c;
         case 1:return g(b,d[1]);
         case 2:
-         var f=d[1],e=cK(c),i=ad[1];
-         cM
+         var f=d[1],e=cB(c),i=$[1];
+         cD
           (f,
            function(a)
             {switch(a[0])
-              {case 0:return cJ(e,a);
+              {case 0:return cA(e,a);
                case 1:
                 var d=a[1];
-                ad[1]=i;
-                try {var f=g(b,d),c=f}catch(f){f=T(f);var c=aK(f)}
-                return cI(e,c);
-               default:throw [0,j,gN]}});
+                $[1]=i;
+                try {var f=g(b,d),c=f}catch(f){f=R(f);var c=aC(f)}
+                return cz(e,c);
+               default:throw [0,j,gy]}});
          return e;
-        default:throw [0,j,gO]}}
+        default:throw [0,j,gz]}}
     var
-     gP=[0,function(a){return 0}],
-     ae=bB(0),
-     cP=[0,0],
-     c=L,
-     O=null,
-     ar=undefined;
-    function gQ(a)
-     {if(bC(ae)){cP[1]=0;return 0}
-      var b=bB(0);
-      b[1][2]=ae[2];
-      ae[2][1]=b[1];
-      b[1]=ae[1];
-      ae[1][2]=b;
-      ae[1]=ae;
-      ae[2]=ae;
-      cP[1]=0;
+     gA=[0,function(a){return 0}],
+     aa=bv(0),
+     cG=[0,0],
+     z=L,
+     ab=null,
+     ao=undefined;
+    function gB(a)
+     {if(bw(aa)){cG[1]=0;return 0}
+      var b=bv(0);
+      b[1][2]=aa[2];
+      aa[2][1]=b[1];
+      b[1]=aa[1];
+      aa[1][2]=b;
+      aa[1]=aa;
+      aa[2]=aa;
+      cG[1]=0;
       var c=b[2];
       for(;;)
-       {var d=c!==b?1:0;if(d){if(c[4])bE(c[3],0);var c=c[2];continue}return d}}
-    function cQ(a,b,c){return a==O?g(b,0):g(c,a)}
-    function bG(a,b,c){return a===ar?g(b,0):g(c,a)}
+       {var d=c!==b?1:0;if(d){if(c[4])by(c[3],0);var c=c[2];continue}return d}}
+    function cH(a,b,c){return a==ab?g(b,0):g(c,a)}
+    function cI(a,b,c){return a===ao?g(b,0):g(c,a)}
     var
-     bH=true,
-     bI=false,
-     aL=c.RegExp,
-     cR=c.Array,
-     cS=E([a,gR,0]),
-     bJ=[0,cS,{}],
-     gA=bl(bJ)===a?bJ:bJ[1];
-    iG(d(dy),gA);
+     bA=false,
+     aD=z.RegExp,
+     cJ=z.Array,
+     cK=D([a,gD,0]),
+     bB=[0,cK,{}],
+     gC=true,
+     gl=be(bB)===a?bB:bB[1];
+    hX(d(dk),gl);
     (function(a){throw a});
-    function cT(a){return c.escape(a)}
-    cz(function(a){return a[1]===cS?[0,an(a[2].toString())]:0});
-    cz(function(a){return a instanceof cR?0:[0,an(a.toString())]});
+    cq(function(a){return a[1]===cK?[0,aJ(a[2].toString())]:0});
+    cq(function(a){return a instanceof cJ?0:[0,aJ(a.toString())]});
     function A(a,b){a.appendChild(b);return 0}
-    function cU(a,b){a.removeChild(b);return 0}
-    function W(c)
+    function cL(a,b){a.removeChild(b);return 0}
+    function ag(c)
      {return function(a)
-       {if(1-(a==O?1:0)){var d=g(c,a);if(!(d|0))a.preventDefault();return d}
+       {if(1-(a==ab?1:0)){var d=g(c,a);if(!(d|0))a.preventDefault();return d}
         var e=event,b=g(c,e);
         if(!(b|0))e.returnValue=b;
         return b}}
-    var cV=iw(0)|0,gS=c.ArrayBuffer,gT=c.document;
-    function a7(a,b){return a?g(b,a[1]):0}
-    function bK(a,b){return a.createElement(b.toString())}
-    function as(a,b){return bK(a,b)}
-    var cW=[0,dH];
-    function gU(a,b,c,d)
+    var cM=hN(0)|0,gE=z.document;
+    function a1(a,b){return a?g(b,a[1]):0}
+    function bC(a,b){return a.createElement(b.toString())}
+    function ap(a,b){return bC(a,b)}
+    var cN=[0,du];
+    function gF(a,b,c,d)
      {for(;;)
-       {if(0===a)if(0===b)return bK(c,d);
-        var h=cW[1];
-        if(dH===h)
+       {if(0===a)if(0===b)return bC(c,d);
+        var h=cN[1];
+        if(du===h)
          {try
            {var
-             j=gT.createElement('<input name="x">'),
+             j=gE.createElement('<input name="x">'),
              k=j.tagName.toLowerCase()==="input"?1:0,
-             m=k?j.name===bV?1:0:k,
+             m=k?j.name===bN?1:0:k,
              i=m}
           catch(f){var i=0}
-          var l=i?dm:-1003883683;
-          cW[1]=l;
+          var l=i?c$:-1003883683;
+          cN[1]=l;
           continue}
-        if(dm<=h)
-         {var f=new cR();
+        if(c$<=h)
+         {var f=new cJ();
           f.push("<",d.toString());
-          a7(a,function(a){f.push(' type="',d_(a),ba);return 0});
-          a7(b,function(a){f.push(' name="',d_(a),ba);return 0});
+          a1(a,function(a){f.push(' type="',dW(a),a6);return 0});
+          a1(b,function(a){f.push(' name="',dW(a),a6);return 0});
           f.push(">");
           return c.createElement(f.join(e))}
-        var g=bK(c,d);
-        a7(a,function(a){return g.type=a});
-        a7(b,function(a){return g.name=a});
+        var g=bC(c,d);
+        a1(a,function(a){return g.type=a});
+        a1(b,function(a){return g.name=a});
         return g}}
-    function cX(a){return as(a,gV)}
-    function aM(a){return as(a,gX)}
-    function cY(a){return as(a,gZ)}
-    E([a,g2,0]);
-    c.HTMLElement===ar;
-    var g3=b3,g4=c.Blob,g5=c.Document,g6=iv(0);
-    function a8(a)
-     {var b=cL(0),f=b[1],g=b[2],h=a*bX,d=[0,0];
-      function j(a){return bE(g,a)}
-      function e(a,b)
+    function cO(a){return ap(a,gG)}
+    function aE(a){return ap(a,gI)}
+    function cP(a){return ap(a,gK)}
+    D([a,gN,0]);
+    z.HTMLElement===ao;
+    var gO=bU,gP=hM(0);
+    function a2(a)
+     {var b=cC(0),e=b[1],f=b[2],g=a*bO,c=[0,0];
+      function i(a){return by(f,a)}
+      function d(a,b)
        {var
-         f=b3<a?[0,g3,a-b3]:[0,a,0],
-         g=f[2],
-         h=f[1],
-         i=g==0?j:function(a){return e(g,a)};
-        d[1]=[0,c.setTimeout(b8(i),h)];
+         e=bU<a?[0,gO,a-bU]:[0,a,0],
+         f=e[2],
+         g=e[1],
+         h=f==0?i:function(a){return d(f,a)};
+        c[1]=[0,z.setTimeout(bZ(h),g)];
         return 0}
-      e(h,0);
-      cN
-       (f,
+      d(g,0);
+      cE
+       (e,
         function(a)
-         {var b=d[1];
-          if(b){var e=b[1];d[1]=0;return c.clearTimeout(e)}
+         {var b=c[1];
+          if(b){var d=b[1];c[1]=0;return z.clearTimeout(d)}
           return 0});
-      return f}
-    gP[1]=function(a){return 1===a?(c.setTimeout(b8(gQ),0),0):0};
-    function cZ(a){return g6.log(a.toString())}
-    cB[1]=function(a){cZ(g7);cZ(ct(a));return cy(aB)};
-    function c0(a){return new aL(R(a),bU)}
-    var g8=new aL("[$]",bU),g_=c0(g9),c3=E([a,g$,0]);
-    function c4(a){throw c3}
-    var c1=c0(aA(R(ha).replace(g_,"\\$&"))),c5=new aL("\\+",bU);
-    function at(a)
-     {c5.lastIndex=0;var b=a.replace(c5,X);return aA(c.unescape(b))}
-    function au(a,b)
-     {var d=a?a[1]:1;
-      if(d)
-       {var e=aA(cT(R(b)));
-        c1.lastIndex=0;
-        var c=R(hb).replace(g8,"$$$$");
-        return aA(R(e).replace(c1,c))}
-      return aA(cT(R(b)))}
-    E([a,hc,0]);
-    new aL(R(hi));
-    new aL(R(hj));
-    if(c.location!==ar)
-     var af=c.location;
+      return e}
+    gA[1]=function(a){return 1===a?(z.setTimeout(bZ(gB),0),0):0};
+    function cQ(a){return gP.log(a.toString())}
+    cs[1]=function(a){cQ(gQ);cQ(ck(a));return cp(av)};
+    function cR(a){return new aD(ai(a),bM)}
+    new aD("[$]",bM);
+    var gS=cR(gR),cT=D([a,gT,0]);
+    function cU(a){throw cT}
+    cR(bY(ai(gU).replace(gS,"\\$&")));
+    var cV=new aD("\\+",bM);
+    function aq(a)
+     {cV.lastIndex=0;var b=a.replace(cV,T);return bY(z.unescape(b))}
+    D([a,gV,0]);
+    new aD(ai(gZ));
+    new aD(ai(g0));
+    if(z.location!==ao)
+     var ac=z.location;
     else
      var
-      aj=e,
-      h6=b9(function(a){return 0}),
-      h7=b9(function(a,b){return 0}),
-      af=
-       {"href":aj,
-        "protocol":aj,
-        "host":aj,
-        "hostname":aj,
-        "port":aj,
-        "pathname":aj,
-        "search":aj,
-        "hash":aj,
-        "origin":ar,
-        "reload":h6,
-        "replace":h7,
-        "assign":b9(function(a,b){return 0})};
-    at(af.hostname);
-    at(af.protocol);
-    var hk=0;
+      ah=e,
+      hn=b0(function(a){return 0}),
+      ho=b0(function(a,b){return 0}),
+      ac=
+       {"href":ah,
+        "protocol":ah,
+        "host":ah,
+        "hostname":ah,
+        "port":ah,
+        "pathname":ah,
+        "search":ah,
+        "hash":ah,
+        "origin":ao,
+        "reload":hn,
+        "replace":ho,
+        "assign":b0(function(a,b){return 0})};
+    aq(ac.hostname);
+    aq(ac.protocol);
+    var g1=0;
     (function(a)
        {try
-         {var b=[0,iu(aA(af.port))];return b}
-        catch(f){f=T(f);if(f[1]===aX)return 0;throw f}}
-      (hk));
-    var bN=at(af.pathname),c6=f(bN);
-    function c7(a)
-     {try {var d=eH(bN,a,47),b=d}catch(f){f=T(f);if(f!==aD)throw f;var b=c6}
-      var c=cj(bN,a,b-a|0);
-      return c6<=b?[0,c,0]:[0,c,c7(b+1|0)]}
-    var bL=c7(0);
-    if(bL)
-     if(ek(bL[1],hd))
-      var da=0;
+         {var b=[0,hL(bY(ac.port))];return b}
+        catch(f){f=R(f);if(f[1]===aP)return 0;throw f}}
+      (g1));
+    var bF=aq(ac.pathname),cW=f(bF);
+    function cX(a)
+     {try {var d=es(bF,a,47),b=d}catch(f){f=R(f);if(f!==aT)throw f;var b=cW}
+      var c=ca(bF,a,b-a|0);
+      return cW<=b?[0,c,0]:[0,c,cX(b+1|0)]}
+    var bD=cX(0);
+    if(bD)
+     if(d8(bD[1],gW))
+      var c1=0;
      else
-      var bM=bL[2],da=bM?ek(bM[1],he)?0:bM[2]?0:1:1;
+      var bE=bD[2],c1=bE?d8(bE[1],gX)?0:bE[2]?0:1:1;
     else
-     var da=0;
+     var c1=0;
     var
-     hl=af.search.charAt(0)===df?af.search.slice(1):af.search,
-     c2=hl.split(a0(1,38).toString()),
-     hh=c2.length;
-    function c8(a,b)
+     g2=ac.search.charAt(0)==="?"?ac.search.slice(1):ac.search,
+     cS=g2.split(aU(1,38).toString()),
+     gY=cS.length;
+    function cY(a,b)
      {var c=b;
       for(;;)
        {if(0<=c)
@@ -2848,68 +2809,58 @@
             d=c-1|0,
             e=
              function(a)
-              {function e(a){var b=a[1],c=at(a[2]);return [0,at(b),c]}
-               var b=a.indexOf(a0(1,61).toString());
+              {function e(a){var b=a[1],c=aq(a[2]);return [0,aq(b),c]}
+               var b=a.indexOf(aU(1,61).toString());
                if(0<=b)
                 var d=a.slice(b+1|0),c=[0,a.slice(0,b),d];
                else
-                var c=ar;
-               return bG(c,c4,e)},
-            f=c8([0,bG(c2[c],c4,e),a],d);
+                var c=ao;
+               return cI(c,cU,e)},
+            f=cY([0,cI(cS[c],cU,e),a],d);
            return f}
-         catch(f){f=T(f);if(f===c3){var c=c-1|0;continue}throw f}
+         catch(f){f=R(f);if(f===cT){var c=c-1|0;continue}throw f}
         return a}}
-    c8(0,hh-1|0);
-    at(af.href);
-    var hm=c.FormData;
-    function c9(a,b)
-     {if(aQ<=a[1]){var d=a[2];d[1]=[0,b,d[1]];return 0}
-      var e=a[2],c=b[2],f=b[1];
-      return di<=c[1]?e.append(f.toString(),c[2]):e.append(f.toString(),c[2])}
-    function hn(a)
-     {var b=c.activeXObject,d=c.XMLHttpRequest;
+    cY(0,gY-1|0);
+    aq(ac.href);
+    function g3(a)
+     {var b=z.activeXObject,c=z.XMLHttpRequest;
       try
-       {var f=new d();return f}
+       {var f=new c();return f}
       catch(f)
        {try
-         {var h=new b("Msxml2.XMLHTTP");return h}
+         {var g=new b("Msxml2.XMLHTTP");return g}
         catch(f)
          {try
-           {var g=new b("Msxml3.XMLHTTP");return g}
+           {var e=new b("Msxml3.XMLHTTP");return e}
           catch(f)
            {try
-             {var e=new b("Microsoft.XMLHTTP");return e}
-            catch(f){throw [0,j,ho]}}}}}
-    var ht=E([a,hs,0]);
-    function hz(a)
-     {try
-       {eG(a,63);var b=1;return b}
-      catch(f){f=T(f);if(f===aD)return 0;throw f}}
-    var x=c.document;
-    function ag(a,b){return A(a,x.createTextNode(b.toString()))}
-    function bO(a,b){var c=a.firstChild;if(c!=O)cU(a,c);return A(a,b)}
+             {var d=new b("Microsoft.XMLHTTP");return d}
+            catch(f){throw [0,j,g4]}}}}}
+    var g6=D([a,g5,0]),c=z.document;
+    function ad(a,b){return A(a,c.createTextNode(b.toString()))}
+    function bG(a,b){var c=a.firstChild;if(c!=ab)cL(a,c);return A(a,b)}
     var
-     c_=
+     cZ=
       "border: 1px black solid; background-color: white ; display: inline ; padding-right: .5em; padding-left: .5em;",
-     bP=E([a,hS,0]),
-     hO=
+     bH=D([a,g$,0]),
+     g7=
       "background-color: red; color: white; display:inline; position: absolute; top:0; right:0;";
-    function c$(a)
+    function c0(a)
      {switch(a)
        {case 0:return "sprites/empty.png";
         case 1:return "sprites/grass.png";
         case 2:return "sprites/diamond.png";
-        case 3:return dt;
+        case 3:return df;
         case 4:return "sprites/door.png";
-        case 5:return de;
-        case 6:return d2;
+        case 5:return c5;
+        case 6:return dO;
         case 7:return "sprites/wall.png";
         default:return "sprites/bam.png"}}
-    function I(a,b,c,d)
+    function H(a,b,c,d)
      {h(h(a[1],c)[c+1],b)[b+1]=d;
       var e=h(h(a[2],c)[c+1],b)[b+1];
-      return e.src=c$(d)}
-    function a9(c)
+      return e.src=c0(d)}
+    function a3(c)
      {var d=[0,0],g=c[1].length-1-2|0;
       if(!(g<1))
        {var b=g;
@@ -2927,7 +2878,7 @@
                 l=b-1|0,
                 C=
                  3===h(h(c[1],l)[l+1],a)[a+1]
-                  ?(I(c,a,b-1|0,0),I(c,a,b,3),d[1]=1,1)
+                  ?(H(c,a,b-1|0,0),H(c,a,b,3),d[1]=1,1)
                   :0;
               else
                var C=0;
@@ -2941,7 +2892,7 @@
                     p=b-1|0,
                     e=
                      3===h(h(c[1],p)[p+1],o)[o+1]
-                      ?(I(c,a-1|0,b-1|0,0),I(c,a,b,3),d[1]=1,1)
+                      ?(H(c,a-1|0,b-1|0,0),H(c,a,b,3),d[1]=1,1)
                       :0;
                   else
                    var e=0}
@@ -2959,7 +2910,7 @@
                     t=b-1|0,
                     f=
                      3===h(h(c[1],t)[t+1],s)[s+1]
-                      ?(I(c,a+1|0,b-1|0,0),I(c,a,b,3),d[1]=1,1)
+                      ?(H(c,a+1|0,b-1|0,0),H(c,a,b,3),d[1]=1,1)
                       :0;
                   else
                    var f=0}
@@ -2970,49 +2921,49 @@
               if(!A)
                {var u=b+1|0;
                 if(6===h(h(c[1],u)[u+1],a)[a+1])
-                 if(3===h(h(c[1],b)[b+1],a)[a+1]){I(c,a,b+1|0,8);throw bP}}
+                 if(3===h(h(c[1],b)[b+1],a)[a+1]){H(c,a,b+1|0,8);throw bH}}
               var B=a+1|0;
               if(i!==a){var a=B;continue}
               break}}
           var z=b-1|0;
           if(1!==b){var b=z;continue}
           break}}
-      if(d[1]){var x=function(a){return a9(c)};return w(a8(bY),x)}
+      if(d[1]){var x=function(a){return a3(c)};return w(a2(bP),x)}
       return v(0)}
-    function bQ(i,u,t)
-     {var G=t[3];
-      function k(a)
-       {var H=i[1].length-1-1|0,S=0;
-        if(!(H<0))
+    function bI(i,t,s)
+     {var G=s[3];
+      function j(a)
+       {var I=i[1].length-1-1|0,S=0;
+        if(!(I<0))
          {var b=S;
           for(;;)
-           {var Q=h(i[1],b)[b+1].length-1-1|0,U=0;
-            if(!(Q<0))
-             {var d=U;
+           {var P=h(i[1],b)[b+1].length-1-1|0,T=0;
+            if(!(P<0))
+             {var c=T;
               for(;;)
-               {h(h(i[2],b)[b+1],d)[d+1].onmouseover=O;
-                h(h(i[2],b)[b+1],d)[d+1].onmouseout=O;
-                h(h(i[2],b)[b+1],d)[d+1].onclick=O;
-                var X=d+1|0;
-                if(Q!==d){var d=X;continue}
+               {h(h(i[2],b)[b+1],c)[c+1].onmouseover=ab;
+                h(h(i[2],b)[b+1],c)[c+1].onmouseout=ab;
+                h(h(i[2],b)[b+1],c)[c+1].onclick=ab;
+                var V=c+1|0;
+                if(P!==c){var c=V;continue}
                 break}}
-            var V=b+1|0;
-            if(H!==b){var b=V;continue}
+            var U=b+1|0;
+            if(I!==b){var b=U;continue}
             break}}
         function k(a,b)
          {if(!i[8]){i[8]=1;var c=function(a){i[8]=0;return v(0)};w(g(a,0),c)}
-          return bI}
-        function J(a,b,c)
+          return bA}
+        function K(a,b,c)
          {function d(a){i[9][1]=[0,b];return v(0)}return w(g(a,0),d)}
         function l(a,b)
          {var c=i[9][1];return c?(g(c[1],0),i[9][1]=0,g(a,0)):g(a,0)}
-        function j(a,b,z,d,e,f)
+        function f(a,b,z,d,e,f)
          {var n=a,q=d,p=e,m=f;
           for(;;)
            {var c=n[2],j=n[1],r=h(h(i[1],c)[c+1],j)[j+1];
-            if(5===r)var o=0;else if(3<=r)var s=0,o=1;else var o=0;
-            if(!o)var s=1;
-            if(s)
+            if(5===r)var o=0;else if(3<=r)var u=0,o=1;else var o=0;
+            if(!o)var u=1;
+            if(u)
              {var
                A=h(h(i[2],c)[c+1],j)[j+1].src,
                x=
@@ -3030,46 +2981,46 @@
                   {return function(a)
                     {function d(a)
                       {if(2===h(h(i[1],b)[b+1],c)[c+1])i[5]=i[5]-1|0;
-                       I(i,c,b,6);
+                       H(i,c,b,6);
                        function d(a)
-                        {function d(a){I(i,c,b,0);return v(0)}return w(a9(i),d)}
-                       return w(a8(bY),d)}
+                        {function d(a){H(i,c,b,0);return v(0)}return w(a3(i),d)}
+                       return w(a2(bP),d)}
                      return w(g(e,0),d)}}
                  (m,c,j),
                C=
                 function(j,b,c)
                   {return function(a)
                     {var d=i[3];
-                     I(i,d[1],d[2],0);
-                     function e(a){return bQ(i,u,t)}
-                     function f(a){return a===bP?(i[6]=1,v(0)):aK(a)}
+                     H(i,d[1],d[2],0);
+                     function e(a){return bI(i,t,s)}
+                     function f(a){return a===bH?(i[6]=1,v(0)):aC(a)}
                      return w
-                             (cO
+                             (cF
                                (function(a)
                                  {function d(a)
                                    {if(2===h(h(i[1],b)[b+1],c)[c+1])i[5]=i[5]-1|0;
-                                    I(i,c,b,6);
+                                    H(i,c,b,6);
                                     i[3]=[0,c,b];
-                                    return a9(i)}
+                                    return a3(i)}
                                   return w(g(j,0),d)},
                                 f),
                               e)}}
                  (m,c,j),
                D=h(h(i[2],c)[c+1],j)[j+1],
                E=function(b){return function(a){return l(b,a)}}(x),
-               F=function(c,b){return function(a){return J(b,c,a)}}(y,E);
+               F=function(c,b){return function(a){return K(b,c,a)}}(y,E);
               D.onmouseover=
-              W(function(b){return function(a){return k(b,a)}}(F));
+              ag(function(b){return function(a){return k(b,a)}}(F));
               var
                G=h(h(i[2],c)[c+1],j)[j+1],
-               H=function(a){return v(0)},
-               K=function(b){return function(a){return l(b,a)}}(H);
+               I=function(a){return v(0)},
+               J=function(b){return function(a){return l(b,a)}}(I);
               G.onmouseout=
-              W(function(b){return function(a){return k(b,a)}}(K));
+              ag(function(b){return function(a){return k(b,a)}}(J));
               var
                L=h(h(i[2],c)[c+1],j)[j+1],
                M=function(b){return function(a){return l(b,a)}}(C);
-              L.onclick=W(function(b){return function(a){return k(b,a)}}(M));
+              L.onclick=ag(function(b){return function(a){return k(b,a)}}(M));
               if(5===h(h(i[1],c)[c+1],j)[j+1])return 0;
               var n=g(b,[0,j,c]),q=x,p=y,m=B;
               continue}
@@ -3078,10 +3029,10 @@
          {var j=a[2],m=a[1],n=g(b,a),e=n[2],f=n[1],q=g(b,n),o=q[2],p=q[1];
           try
            {var
-             s=3===h(h(i[1],e)[e+1],f)[f+1]?1:0,
-             K=s?0===h(h(i[1],o)[o+1],p)[p+1]?1:0:s,
-             r=K}
-          catch(f){f=T(f);if(f[1]!==bp)throw f;var r=0}
+             u=3===h(h(i[1],e)[e+1],f)[f+1]?1:0,
+             J=u?0===h(h(i[1],o)[o+1],p)[p+1]?1:0:u,
+             r=J}
+          catch(f){f=R(f);if(f[1]!==bi)throw f;var r=0}
           if(r)
            {var
              x=
@@ -3091,515 +3042,363 @@
                 return v(0)},
              y=
               function(a)
-               {h(h(i[2],j)[j+1],m)[m+1].src=d2;
-                return h(h(i[2],e)[e+1],f)[f+1].src=dt},
+               {h(h(i[2],j)[j+1],m)[m+1].src=dO;
+                return h(h(i[2],e)[e+1],f)[f+1].src=df},
              z=
               function(a)
-               {I(i,m,j,0);
-                I(i,f,e,6);
+               {H(i,m,j,0);
+                H(i,f,e,6);
                 i[3]=n;
-                I(i,p,o,3);
-                function b(a){return bQ(i,u,t)}
-                function c(a){return a===bP?(i[6]=1,v(0)):aK(a)}
-                return w(cO(function(a){return a9(i)},c),b)},
+                H(i,p,o,3);
+                function b(a){return bI(i,t,s)}
+                function c(a){return a===bH?(i[6]=1,v(0)):aC(a)}
+                return w(cF(function(a){return a3(i)},c),b)},
              A=h(h(i[2],e)[e+1],f)[f+1],
              B=function(a){return l(x,a)},
-             C=function(a){return J(B,y,a)};
-            A.onmouseover=W(function(a){return k(C,a)});
+             C=function(a){return K(B,y,a)};
+            A.onmouseover=ag(function(a){return k(C,a)});
             var
              D=h(h(i[2],e)[e+1],f)[f+1],
              E=function(a){return v(0)},
              F=function(a){return l(E,a)};
-            D.onmouseout=W(function(a){return k(F,a)});
-            var G=h(h(i[2],e)[e+1],f)[f+1],H=function(a){return l(z,a)};
-            return G.onclick=W(function(a){return k(H,a)})}
+            D.onmouseout=ag(function(a){return k(F,a)});
+            var G=h(h(i[2],e)[e+1],f)[f+1],I=function(a){return l(z,a)};
+            return G.onclick=ag(function(a){return k(I,a)})}
           return 0}
-        if(ib(i[3],i[4]))
-         {g(G,0);c.alert("YOU WIN !")}
+        if(hu(i[3],i[4]))
+         {g(G,0);z.alert("YOU WIN !")}
         else
          if(i[6])
-          {g(G,0);c.alert("YOU LOSE !")}
+          {g(G,0);z.alert("YOU LOSE !")}
          else
           {if(0===i[5])
-            {var M=i[4],n=M[2],o=M[1];
-             h(h(i[2],n)[n+1],o)[o+1].src=de;
-             h(h(i[1],n)[n+1],o)[o+1]=5}
+            {var M=i[4],m=M[2],n=M[1];
+             h(h(i[2],m)[m+1],n)[n+1].src=c5;
+             h(h(i[1],m)[m+1],n)[n+1]=5}
            var
-            x=function(a){return [0,a[1]+1|0,a[2]]},
-            y=function(a){return [0,a[1]-1|0,a[2]]},
+            u=function(a){return [0,a[1]+1|0,a[2]]},
+            x=function(a){return [0,a[1]-1|0,a[2]]},
             N=function(a){return [0,a[1],a[2]-1|0]},
-            P=function(a){return [0,a[1],a[2]+1|0]},
-            p=function(a){return 0},
-            e=function(a){return v(0)};
-           j(x(i[3]),x,"sprites/R.png",e,p,e);
-           j(y(i[3]),y,"sprites/L.png",e,p,e);
-           j(N(i[3]),N,"sprites/U.png",e,p,e);
-           j(P(i[3]),P,"sprites/D.png",e,p,e);
-           L(i[3],x,"sprites/bR.png","sprites/push_r.png");
-           L(i[3],y,"sprites/bL.png","sprites/push_l.png");
-           g(u,i[5])}
-        var m=i[7];
-        if(m[1])
-         if(bC(m[2]))
-          m[1]=0;
+            O=function(a){return [0,a[1],a[2]+1|0]},
+            o=function(a){return 0},
+            d=function(a){return v(0)};
+           f(u(i[3]),u,"sprites/R.png",d,o,d);
+           f(x(i[3]),x,"sprites/L.png",d,o,d);
+           f(N(i[3]),N,"sprites/U.png",d,o,d);
+           f(O(i[3]),O,"sprites/D.png",d,o,d);
+           L(i[3],u,"sprites/bR.png","sprites/push_r.png");
+           L(i[3],x,"sprites/bL.png","sprites/push_l.png");
+           g(t,i[5])}
+        var j=i[7];
+        if(j[1])
+         if(bw(j[2]))
+          j[1]=0;
          else
-          {var F=m[2],R=0;
-           if(bC(F))throw gC;
+          {var F=j[2],Q=0;
+           if(bw(F))throw gn;
            var B=F[2];
-           cA(B);
-           var s=[0,R],C=a3(B[3]),r=C[1];
-           switch(r[0])
-            {case 1:var f=r[1]===a2?1:0;break;
+           cr(B);
+           var r=[0,Q],C=aX(B[3]),q=C[1];
+           switch(q[0])
+            {case 1:var e=q[1]===aW?1:0;break;
              case 2:
-              var D=r[1];
-              C[1]=s;
-              if(a6[1])
-               {var E=[0,D,s];
-                if(0===K[1])
-                 {var q=[];el(q,[0,E,q]);K[1]=1;K[2]=q;var f=1}
+              var D=q[1];
+              C[1]=r;
+              if(a0[1])
+               {var E=[0,D,r];
+                if(0===J[1])
+                 {var p=[];d9(p,[0,E,p]);J[1]=1;J[2]=p;var e=1}
                 else
-                 {var z=K[2],A=[0,E,z[2]];K[1]=K[1]+1|0;z[2]=A;K[2]=A;var f=1}}
+                 {var y=J[2],A=[0,E,y[2]];J[1]=J[1]+1|0;y[2]=A;J[2]=A;var e=1}}
               else
-               {cF(D,s);var f=1}
+               {cw(D,r);var e=1}
               break;
-             default:var f=0}
-           if(!f)aa(gG)}
+             default:var e=0}
+           if(!e)Y(gr)}
         return v(0)}
-      var d=i[7];
-      if(d[1])
-       {var a=d[2],e=[0,1,0,0,0],f=[0,[2,e]],b=[0,a[1],a,f,1];
+      var c=i[7];
+      if(c[1])
+       {var a=c[2],d=[0,1,0,0,0],e=[0,[2,d]],b=[0,a[1],a,e,1];
         a[1][2]=b;
         a[1]=b;
-        e[4]=[1,b];
-        var j=f}
+        d[4]=[1,b];
+        var f=e}
       else
-       {d[1]=1;var j=gK}
-      return w(j,k)}
-    function bR(a,b){return b?a.style.cssText=b[1]:0}
-    function hT(a)
-     {function ak(a)
+       {c[1]=1;var f=gv}
+      return w(f,j)}
+    function bJ(a,b){return b?a.style.cssText=b[1]:0}
+    function ha(j)
+     {function m(a)
        {var b=a[2],c=a[4];
         if(0!==b)if(200!==b)return [0,[2,[0,0,0,0,0]]];
         return v(c)}
-      var
-       K=0,
-       L=0,
-       N=0,
-       P=0,
-       Q=0,
-       S=0,
-       T=0,
-       U=0,
-       k=0,
-       q=0,
-       aj=0,
-       H=0?aj[1]:0,
-       I=U?U[1]:0,
-       J=5,
-       ai=[0,I],
-       Z=[0,H]?H:0,
-       t=ai?I:0,
-       _=S?S[1]:function(a,b){return 1};
-      if(T)
-       {var u=T[1];
-        if(k){var $=k[1];ao(function(a){return c9(u,[0,a[1],a[2]])},$)}
-        var f=[0,u]}
-      else
-       if(k)
-        {var E=k[1],g=E;
-         for(;;)
-          {if(g)
-            {var F=g[1][2],V=g[2];
-             if(typeof F==="number")
-              var r=0;
-             else
-              if(-976970511===F[1])var l=1,r=1;else var r=0;
-             if(!r)var l=0;
-             if(l){var g=V;continue}
-             var G=l}
-           else
-            var G=1;
-           if(G)
-            var p=[0,aQ,[0,0]];
-           else
-            var
-             X=function(a){return [0,a]},
-             s=bG(hm,function(a){return 0},X),
-             ah=s?[0,808620462,new (s[1])()]:[0,aQ,[0,0]],
-             p=ah;
-           ao(function(a){return c9(p,[0,a[1],a[2]])},E);
-           var f=[0,p];
-           break}}
-       else
-        var f=0;
-      function h(a)
-       {if(L)
-         {var b=L[1];
-          return 492530731<=b
-                  ?891112544<=b?994393768<=b?hA:hB:801894688<=b?hC:hD
-                  :3546230===b?hE:3997359<=b?hF:hG}
-        return a}
-      if(f)
-       {var aa=f[1];
-        if(q)
-         var x=[0,h(hH),q];
-        else
-         var ag=aQ<=aa[1]?[0,h(hL),hK]:[0,h(hM),0],x=ag;
-        var m=x}
-      else
-       var m=[0,h(hN),q];
-      var y=m[2],ab=m[1];
-      if(0===t)
-       var c=a;
-      else
-       var
-        Y=
-         aF
-          (hg,
-           aZ
-            (function(a){var b=a[1],c=M(hf,au(0,a[2]));return M(au(0,b),c)},t)),
-        af=hz(a)?hI:hJ,
-        c=M(a,M(af,Y));
-      var z=cL(0),A=z[2],C=z[1],b=hn(0);
-      b.open(ab.toString(),c.toString(),bH);
-      if(N)b.overrideMimeType(N[1].toString());
-      switch(J)
-       {case 0:b.responseType="arraybuffer";break;
-        case 1:b.responseType="blob";break;
-        case 2:b.responseType="document";break;
-        case 3:b.responseType="json";break;
-        case 4:b.responseType="text";break;
-        default:b.responseType=e}
-      if(K)b.withCredentials=!!K[1];
-      if(y)b.setRequestHeader("Content-type",y[1].toString());
-      ao
+      var i=0,l=0,n=[0,0],k=[0,0]?l:0,a=cC(0),f=a[2],g=a[1],b=g3(0);
+      b.open("GET",j.toString(),gC);
+      b.responseType=e;
+      if(i)b.setRequestHeader("Content-type",i[1].toString());
+      aS
        (function(a)
          {return b.setRequestHeader(a[1].toString(),a[2].toString())},
-        Z);
-      function d(a)
-       {function c(a){return [0,an(a)]}
+        k);
+      function h(a)
+       {function c(a){return [0,aJ(a)]}
         function d(a){return 0}
-        return cQ(b.getResponseHeader(R(a)),d,c)}
-      var i=[0,dM];
-      function n(a)
-       {if(dM===i[1])
-         if(B(_,b.status,d))
-          i[1]=583419792;
+        return cH(b.getResponseHeader(ai(a)),d,c)}
+      var c=[0,dz];
+      function d(a)
+       {if(dz===c[1])
+         if(1)
+          c[1]=583419792;
          else
-          {cG(A,[1,[0,ht,[0,b.status,d]]]);i[1]=ds;b.abort()}
-        return ds!==i[1]?1:0}
+          {cx(f,[1,[0,g6,[0,b.status,h]]]);c[1]=de;b.abort()}
+        return de!==c[1]?1:0}
       b.onreadystatechange=
-      b8
+      bZ
        (function(a)
          {switch(b.readyState)
-           {case 2:if(!cV){n(0);return 0}break;
-            case 3:if(cV){n(0);return 0}break;
+           {case 2:if(!cM){d(0);return 0}break;
+            case 3:if(cM){d(0);return 0}break;
             case 4:
-             if(n(0))
-              {switch(J)
-                {case 0:
-                  var
-                   t=b.status,
-                   r=function(a){throw [0,j,hy]},
-                   h=b.response,
-                   s=h instanceof gS?h:O,
-                   e=[0,c,t,d,s,r];
-                  break;
-                 case 1:
-                  var
-                   u=b.status,
-                   p=function(a){throw [0,j,hx]},
-                   g=b.response,
-                   q=g instanceof g4?g:O,
-                   e=[0,c,u,d,q,p];
-                  break;
-                 case 2:
-                  var
-                   v=b.status,
-                   l=function(a){throw [0,j,hv]},
-                   f=b.response,
-                   m=f instanceof g5?f:O,
-                   e=[0,c,v,d,m,l];
-                  break;
-                 case 3:
-                  var
-                   w=b.status,
-                   o=function(a){throw [0,j,hw]},
-                   e=[0,c,w,d,b.response,o];
-                  break;
-                 case 4:
-                  var
-                   x=b.status,
-                   k=function(a){throw [0,j,hu]},
-                   e=[0,c,x,d,b.responseText,k];
-                  break;
-                 default:
-                  var
-                   y=b.status,
-                   i=
-                    function(a)
-                     {var f=b.responseXML;
-                      function e(a){return [0,a]}
-                      var c=cQ(f,function(a){return 0},e);
-                      if(c){var d=c[1];return d.documentElement===O?0:[0,d]}
-                      return 0},
-                   e=[0,c,y,d,an(b.responseText),i]}
-               return bE(A,e)}
+             if(d(0))
+              {var
+                e=b.status,
+                c=
+                 function(a)
+                  {var f=b.responseXML;
+                   function e(a){return [0,a]}
+                   var c=cH(f,function(a){return 0},e);
+                   if(c){var d=c[1];return d.documentElement===ab?0:[0,d]}
+                   return 0};
+               return by(f,[0,j,e,h,aJ(b.responseText),c])}
              return 0
             }
           return 0});
-      if(Q)
-       {var ac=Q[1];
-        b.onprogress=W(function(a){B(ac,a.loaded,a.total);return bH})}
-      var D=b.upload;
-      if(D!==ar)
-       if(P)
-        {var ad=P[1];
-         D.onprogress=W(function(a){B(ad,a.loaded,a.total);return bH})}
-      if(f)
-       {var o=f[1];
-        if(aQ<=o[1])
-         {var ae=o[2][1];
-          b.send
-           (aF
-              (hr,
-               aZ
-                (function(a)
-                  {var b=a[2],c=a[1];
-                   if(di<=b[1])
-                    {var d=M(hp,au(0,an(b[2].name)));return M(au(0,c),d)}
-                   var e=M(hq,au(0,an(b[2])));
-                   return M(au(0,c),e)},
-                 ae)).toString
-             ())}
-        else
-         b.send(o[2])}
-      else
-       b.send(O);
-      cN(C,function(a){return b.abort()});
-      return w(C,ak)}
-    function hU(a)
+      b.upload!==ao;
+      b.send(ab);
+      cE(g,function(a){return b.abort()});
+      return w(g,m)}
+    function hb(a)
      {try
-       {var b=v(id(a));return b}
-      catch(f){f=T(f);if(f===aD)return hT(a);throw f}}
-    var bS=E([a,hV,0]);
-    c.onload=
-    W
+       {var b=v(hw(a));return b}
+      catch(f){f=R(f);if(f===aT)return ha(a);throw f}}
+    var bK=D([a,hc,0]);
+    z.onload=
+    ag
      (function(a)
-       {var c=x.getElementById("boulderdash");
-        if(c==O)throw [0,j,hW];
-        var z=aM(x),l=[0,aW(0)],b=aM(x);
-        b.style.cssText=c_;
-        ag(b,hQ);
-        var k=[0,1];
-        function m(a)
-         {var d=aW(0)-l[1];
-          if(!k[1])
-           {var c=d|0;
-            bO
+       {var i=c.getElementById("boulderdash");
+        if(i==ab)throw [0,j,hd];
+        var z=aE(c),m=[0,aO(0)],b=aE(c);
+        b.style.cssText=cZ;
+        ad(b,g9);
+        var l=[0,1];
+        function n(a)
+         {var e=aO(0)-m[1];
+          if(!l[1])
+           {var d=e|0;
+            bG
              (b,
-              x.createTextNode
-               (h8(N(hR),c/3600|0,(c/60|0)%60|0,c%60|0).toString()))}
-          function e(a){return m(0)}
-          return w(a8(1),e)}
-        m(0);
-        function o(a){k[1]=1;return 0}
-        var p=[0,b,function(a){l[1]=aW(0);k[1]=0;return 0},o],P=p[2],q=p[1];
-        function n(a,b)
-         {var d=aM(x);
-          d.style.cssText=hO;
-          ag(d,hP);
-          A(c,d);
-          function e(a){function e(a){cU(c,d);return v(a)}return w(g(b,a),e)}
-          return w(hU(a),e)}
-        var i=aM(x);
-        i.style.cssText=c_;
-        ag(i,hX);
-        function Q(a){return bO(i,x.createTextNode(d(e+a).toString()))}
-        function r(k)
-         {c.style.cssText=
+              c.createTextNode
+               (hp(M(g_),d/3600|0,(d/60|0)%60|0,d%60|0).toString()))}
+          function f(a){return n(0)}
+          return w(a2(1),f)}
+        n(0);
+        function p(a){l[1]=1;return 0}
+        var q=[0,b,function(a){m[1]=aO(0);l[1]=0;return 0},p],O=q[2],r=q[1];
+        function o(a,b)
+         {var d=aE(c);
+          d.style.cssText=g7;
+          ad(d,g8);
+          A(i,d);
+          function e(a){function c(a){cL(i,d);return v(a)}return w(g(b,a),c)}
+          return w(hb(a),e)}
+        var k=aE(c);
+        k.style.cssText=cZ;
+        ad(k,he);
+        function P(a){return bG(k,c.createTextNode(d(e+a).toString()))}
+        function s(l)
+         {i.style.cssText=
           "font-family: sans-serif; text-align: center; background-color: #e8e8e8;";
-          var d=as(x,gY);
-          ag(d,h0);
-          A(c,d);
-          var a=aM(x);
-          ag(a,h1);
-          A(a,q);
-          ag(a,h2);
-          A(a,i);
-          ag(a,h3);
-          var b=gU(0,0,x,gW),e=cX(x);
-          ag(e,h4);
+          var d=ap(c,gJ);
+          ad(d,hh);
+          A(i,d);
+          var a=aE(c);
+          ad(a,hi);
+          A(a,r);
+          ad(a,hj);
+          A(a,k);
+          ad(a,hk);
+          var b=gF(0,0,c,gH),e=cO(c);
+          ad(e,hl);
           A(b,e);
-          ao(function(a){var d=a[2],c=cX(x);ag(c,d);return A(b,c)},k);
+          aS(function(a){var e=a[2],d=cO(c);ad(d,e);return A(b,d)},l);
           b.onchange=
-          W
+          ag
            (function(a)
-             {var d=b.selectedIndex-1|0;
-              if(0<=d)
-               {var i=0,e=k;
+             {var e=b.selectedIndex-1|0;
+              if(0<=e)
+               {var j=0,i=l;
                 for(;;)
-                 {if(e){var i=i+1|0,e=e[2];continue}
-                  if(d<i)
-                   {if(0<=d)
-                     {var c=k,j=d;
+                 {if(i){var j=j+1|0,i=i[2];continue}
+                  if(e<j)
+                   {if(0<=e)
+                     {var d=l,k=e;
                       for(;;)
-                       {if(c)
-                         {var o=c[2],q=c[1];
-                          if(0!==j){var c=o,j=j-1|0;continue}
-                          var l=q}
+                       {if(d)
+                         {var p=d[2],r=d[1];
+                          if(0!==k){var d=p,k=k-1|0;continue}
+                          var m=r}
                         else
-                         var l=bq(et);
+                         var m=bj(ef);
                         break}}
                     else
-                     var l=aa(eu);
-                    var r=l[1];
-                    n
-                     (r,
+                     var m=Y(eg);
+                    var s=m[1];
+                    o
+                     (s,
                       function(a)
-                       {var r=[0,0],b=[0,0],B=f(a)-1|0,O=0;
+                       {var s=[0,0],b=[0,0],B=f(a)-1|0,Q=0;
                         if(!(B<0))
-                         {var n=O;
+                         {var o=Q;
                           for(;;)
-                           {var e=y(a,n);
-                            if(47<=e)
-                             if(83<=e)
-                              if(89<=e)
-                               var i=0;
+                           {var i=x(a,o);
+                            if(47<=i)
+                             if(83<=i)
+                              if(89<=i)
+                               var j=0;
                               else
-                               {switch(e-83|0)
-                                 {case 0:b[1]=[0,6,b[1]];var o=1;break;
-                                  case 4:b[1]=[0,6,b[1]];var o=1;break;
-                                  case 5:b[1]=[0,3,b[1]];var o=1;break;
-                                  default:var i=0,o=0}
-                                if(o)var i=1}
+                               {switch(i-83|0)
+                                 {case 0:b[1]=[0,6,b[1]];var p=1;break;
+                                  case 4:b[1]=[0,6,b[1]];var p=1;break;
+                                  case 5:b[1]=[0,3,b[1]];var p=1;break;
+                                  default:var j=0,p=0}
+                                if(p)var j=1}
                              else
-                              var i=69===e?(b[1]=[0,4,b[1]],1):0;
+                              var j=69===i?(b[1]=[0,4,b[1]],1):0;
                             else
-                             if(10===e)
-                              {var W=r[1];r[1]=[0,bs(b[1]),W];b[1]=0;var i=1}
+                             if(10===i)
+                              {var W=s[1];s[1]=[0,bl(b[1]),W];b[1]=0;var j=1}
                              else
-                              if(32<=e)
-                               {switch(e-32|0)
-                                 {case 0:b[1]=[0,0,b[1]];var k=1;break;
-                                  case 3:b[1]=[0,7,b[1]];var k=1;break;
-                                  case 11:b[1]=[0,2,b[1]];var k=1;break;
-                                  case 14:b[1]=[0,1,b[1]];var k=1;break;
-                                  default:var i=0,k=0}
-                                if(k)var i=1}
+                              if(32<=i)
+                               {switch(i-32|0)
+                                 {case 0:b[1]=[0,0,b[1]];var l=1;break;
+                                  case 3:b[1]=[0,7,b[1]];var l=1;break;
+                                  case 11:b[1]=[0,2,b[1]];var l=1;break;
+                                  case 14:b[1]=[0,1,b[1]];var l=1;break;
+                                  default:var j=0,l=0}
+                                if(l)var j=1}
                               else
-                               var i=0;
-                            if(!i)bq(hZ);
-                            var V=n+1|0;
-                            if(B!==n){var n=V;continue}
+                               var j=0;
+                            if(!j)bj(hg);
+                            var V=o+1|0;
+                            if(B!==o){var o=V;continue}
                             break}}
-                        var s=ce(aZ(ce,bs(r[1])));
-                        function R(a){var b=as(x,g0);b.src=c$(a);return b}
+                        var t=b7(b8(b7,bl(s[1])));
+                        function R(a){var b=ap(c,gL);b.src=c0(a);return b}
                         var
-                         m=br(function(a){return br(R,a)},s),
+                         n=bk(function(a){return bk(R,a)},t),
                          C=[0,0],
                          D=[0,0],
                          E=[0,0],
                          F=[0,0],
                          G=[0,0],
-                         j=as(x,g1);
-                        bR
-                         (j,
+                         k=ap(c,gM);
+                        bJ
+                         (k,
                           [0,
                            "border-collapse:collapse;line-height: 0; opacity: 0; margin-left:auto; margin-right:auto"]);
                         var
-                         t=m.length-1-1|0,
+                         u=n.length-1-1|0,
                          S=[0,"padding: 0; width: 20px; height: 20px;"],
                          T=0,
                          I=0;
-                        if(!(t<0))
-                         {var c=I;
+                        if(!(u<0))
+                         {var d=I;
                           for(;;)
-                           {var l=j.insertRow(-1);
-                            bR(l,T);
-                            var u=h(m,c)[c+1].length-1-1|0,J=0;
-                            if(!(u<0))
-                             {var d=J;
+                           {var m=k.insertRow(-1);
+                            bJ(m,T);
+                            var y=h(n,d)[d+1].length-1-1|0,J=0;
+                            if(!(y<0))
+                             {var e=J;
                               for(;;)
-                               {var q=l.insertCell(-1);
-                                bR(q,S);
-                                var L=h(h(m,c)[c+1],d)[d+1];
-                                switch(h(h(s,c)[c+1],d)[d+1])
+                               {var r=m.insertCell(-1);
+                                bJ(r,S);
+                                var L=h(h(n,d)[d+1],e)[e+1];
+                                switch(h(h(t,d)[d+1],e)[e+1])
                                  {case 2:G[1]++;break;
-                                  case 4:E[1]=d;F[1]=c;break;
-                                  case 6:C[1]=d;D[1]=c;break
+                                  case 4:E[1]=e;F[1]=d;break;
+                                  case 6:C[1]=e;D[1]=d;break
                                   }
-                                A(q,L);
-                                A(l,q);
-                                var M=d+1|0;
-                                if(u!==d){var d=M;continue}
+                                A(r,L);
+                                A(m,r);
+                                var N=e+1|0;
+                                if(y!==e){var e=N;continue}
                                 break}}
-                            A(j,l);
-                            var K=c+1|0;
-                            if(t!==c){var c=K;continue}
+                            A(k,m);
+                            var K=d+1|0;
+                            if(u!==d){var d=K;continue}
                             break}}
-                        bO(z,j);
+                        bG(z,k);
                         function U(a)
-                         {var b=aW(0);
+                         {var b=aO(0);
                           function c(a)
-                           {var d=aW(0);
-                            if(1<=d-b){j.style.opacity="1";return v(0)}
+                           {var d=aO(0);
+                            if(1<=d-b){k.style.opacity="1";return v(0)}
                             function e(a)
-                             {var e=j.style;
-                              e.opacity=g(N(hY),d-b).toString();
+                             {var e=k.style;
+                              e.opacity=g(M(hf),d-b).toString();
                               return c(0)}
-                            return w(a8(bY),e)}
-                          function d(a){g(P,0);return v(0)}
+                            return w(a2(bP),e)}
+                          function d(a){g(O,0);return v(0)}
                           return w(c(0),d)}
-                        var H=[0,0,bB(0)];
+                        var H=[0,0,bv(0)];
                         return w
-                                (bQ
-                                  ([0,s,m,[0,C[1],D[1]],[0,E[1],F[1]],G[1],0,H,0,[0,0]],Q,p),
+                                (bI
+                                  ([0,t,n,[0,C[1],D[1]],[0,E[1],F[1]],G[1],0,H,0,[0,0]],P,q),
                                  U)});
-                    var m=1}
+                    var n=1}
                   else
-                   var m=0;
+                   var n=0;
                   break}}
               else
-               var m=0;
-              return bI});
+               var n=0;
+              return bA});
           A(a,b);
-          A(a,cY(x));
-          A(a,cY(x));
+          A(a,cP(c));
+          A(a,cP(c));
           A(a,z);
-          A(c,a);
+          A(i,a);
           return v(0)}
         w
-         (n
-           (h5,
+         (o
+           (hm,
             function(d)
              {function e(a)
                {var g=f(d),b=a;
                 for(;;)
-                 {if(g<=b)throw bS;
-                  if(34===y(d,b))
+                 {if(g<=b)throw bK;
+                  if(34===x(d,b))
                    {var e=b+1|0,c=b+2|0;
                     for(;;)
-                     {if(g<=e)throw bS;
-                      if(34===y(d,c))return [0,cj(d,e,c-e|0),c+1|0];
+                     {if(g<=e)throw bK;
+                      if(34===x(d,c))return [0,ca(d,e,c-e|0),c+1|0];
                       var c=c+1|0;
                       continue}}
                   var b=b+1|0;
                   continue}}
               return v
-                      (bs
+                      (bl
                         (function(a,b)
                            {var f=a,c=b;
                             for(;;)
                              {try
                                {var h=e(f),j=h[1],i=e(h[2]),k=[0,[0,[0,j,i[1]],i[2]]],d=k}
-                              catch(f){f=T(f);if(f!==bS)throw f;var d=0}
+                              catch(f){f=R(f);if(f!==bK)throw f;var d=0}
                               if(d){var g=d[1],f=g[2],c=[0,g[1],c];continue}
                               return c}}
                           (0,0)))}),
-          r);
-        return bI});
-    cd(0);
+          s);
+        return bA});
+    b6(0);
     return}
   (function(){return this}()));
 
