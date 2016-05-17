@@ -59,7 +59,7 @@
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="previous"| value Ot_carousel.previous >> ~[<<a_api subproject="server" | module Ot_carousel >>~]||
 |@@ @style="tet-align: left;"@@\\R|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="ribbon"| value Ot_carousel.ribbon >> ~[<<a_api subproject="server" | module Ot_carousel >>~]|<<div class="odocwiki_info"|~Menu for carousel~.
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="ribbon"| value Ot_carousel.ribbon >> ~[<<a_api subproject="server" | module Ot_carousel >>~]|<<div class="odocwiki_info"|~Menu ~(or tabs~) for carousel~.
 >>
 |
 |@@ @style="tet-align: left;"@@\\S|
