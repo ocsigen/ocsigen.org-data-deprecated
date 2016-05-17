@@ -3574,23 +3574,19 @@
     register_printer
      (function(param)
        {if(param[1]===Error)
-         {var e=param[2],jsoo_res=e.toString();
-          return [0,caml_js_to_string(jsoo_res)]}
+         {var e=param[2];return [0,caml_js_to_string(e.toString())]}
         return 0});
     register_printer
      (function(jsoo_self)
-       {if(jsoo_self instanceof jsoo_7bc72a9e)return 0;
-        var jsoo_res=jsoo_self.toString();
-        return [0,caml_js_to_string(jsoo_res)]});
+       {return jsoo_self instanceof jsoo_7bc72a9e
+                ?0
+                :[0,caml_js_to_string(jsoo_self.toString())]});
     function _cr_(jsoo_self,jsoo_ad7fbbdd)
      {jsoo_self.appendChild(jsoo_ad7fbbdd);return 0}
     var doc=window.document;
     function opt_iter(x,f){if(x){var v=x[1];return caml_call1(f,v)}return 0}
     function createElement(jsoo_self,name)
-     {var
-       jsoo_3834112d=name.toString(),
-       jsoo_res=jsoo_self.createElement(jsoo_3834112d);
-      return jsoo_res}
+     {return jsoo_self.createElement(name.toString())}
     function unsafeCreateElement(doc,name){return createElement(doc,name)}
     var createElementSyntax=[0,785140586];
     function unsafeCreateElementEx(type,name,doc$0,elt)
@@ -3600,51 +3596,25 @@
         if(785140586===_ew_)
          {try
            {var
-             jsoo_c9a9e1c3='<input name="x">',
-             el=doc.createElement(jsoo_c9a9e1c3),
-             jsoo_self=el.tagName,
-             jsoo_res=jsoo_self.toLowerCase(),
-             _ez_=jsoo_res==="input"?1:0;
-            if(_ez_)
-             var jsoo_res$0=el.name,_eA_=jsoo_res$0==="x"?1:0;
-            else
-             var _eA_=_ez_;
-            var _ex_=_eA_}
+             el=doc.createElement('<input name="x">'),
+             _ez_=el.tagName.toLowerCase()==="input"?1:0,
+             _eA_=_ez_?el.name==="x"?1:0:_ez_,
+             _ex_=_eA_}
           catch(_eB_){var _ex_=0}
           var _ey_=_ex_?982028505:-1003883683;
           createElementSyntax[1]=_ey_;
           continue}
         if(982028505<=_ew_)
-         {var
-           a=new jsoo_7bc72a9e(),
-           jsoo_874ebaa6="<",
-           jsoo_2c7d0868=elt.toString();
-          a.push(jsoo_874ebaa6,jsoo_2c7d0868);
+         {var a=new jsoo_7bc72a9e();
+          a.push("<",elt.toString());
           opt_iter
            (type,
-            function(t)
-             {var
-               jsoo_c3540b3c=' type="',
-               jsoo_35d26cf8=caml_js_html_escape(t),
-               jsoo_f1ad292a='"';
-              a.push(jsoo_c3540b3c,jsoo_35d26cf8,jsoo_f1ad292a);
-              return 0});
+            function(t){a.push(' type="',caml_js_html_escape(t),'"');return 0});
           opt_iter
            (name,
-            function(n)
-             {var
-               jsoo_92b58168=' name="',
-               jsoo_ad8872a8=caml_js_html_escape(n),
-               jsoo_6bc4b4e3='"';
-              a.push(jsoo_92b58168,jsoo_ad8872a8,jsoo_6bc4b4e3);
-              return 0});
-          var jsoo_0f6fa25c=">";
-          a.push(jsoo_0f6fa25c);
-          var
-           jsoo_b72254d0="",
-           jsoo_4a652cf8=a.join(jsoo_b72254d0),
-           jsoo_res$1=doc$0.createElement(jsoo_4a652cf8);
-          return jsoo_res$1}
+            function(n){a.push(' name="',caml_js_html_escape(n),'"');return 0});
+          a.push(">");
+          return doc$0.createElement(a.join(""))}
         var res=createElement(doc$0,elt);
         opt_iter(type,function(jsoo_arg){return res.type=jsoo_arg});
         opt_iter(name,function(jsoo_arg){return res.name=jsoo_arg});
@@ -3653,7 +3623,7 @@
     caml_set_oo_id([248,_cy_,0]);
     var html_element=window.HTMLElement;
     html_element===undefined$0;
-    var jsoo_self=caml_js_get_console(0),_cz_=2147483e3;
+    var _cz_=2147483e3,jsoo_self=caml_js_get_console(0);
     function sleep(d)
      {var t=[0,[2,[0,1,0,0,0]]],d$0=d*1e3;
       function callback(_ev_){return wakeup(t,_ev_)}
@@ -3663,19 +3633,13 @@
          match=2147483e3<d?[0,_cz_,d-2147483e3]:[0,d,0],
          remain=match[2],
          step=match[1],
-         cb=remain==0?callback:function(_eu_){return loop(remain,_eu_)},
-         jsoo_b34a1de6=caml_js_wrap_callback(cb),
-         jsoo_res=window.setTimeout(jsoo_b34a1de6,step);
-        id[1]=[0,jsoo_res];
+         cb=remain==0?callback:function(_eu_){return loop(remain,_eu_)};
+        id[1]=[0,window.setTimeout(caml_js_wrap_callback(cb),step)];
         return 0}
       loop(d$0,0);
       function f(param)
        {var _et_=id[1];
-        if(_et_)
-         {var x=_et_[1];
-          id[1]=0;
-          var jsoo_res=window.clearTimeout(x);
-          return jsoo_res}
+        if(_et_){var x=_et_[1];id[1]=0;return window.clearTimeout(x)}
         return 0}
       var _er_=repr(t)[1];
       switch(_er_[0])
@@ -3692,15 +3656,9 @@
         default:var switch$0=0}
       return t}
     function f(param)
-     {if(1===param)
-       {var jsoo_32b5ee21=caml_js_wrap_callback(_cp_);
-        window.setTimeout(jsoo_32b5ee21,0);
-        return 0}
-      return 0}
+     {return 1===param?(window.setTimeout(caml_js_wrap_callback(_cp_),0),0):0}
     pause_hook[1]=f;
-    function _cA_(s)
-     {var jsoo_baf7d8c4=s.toString(),jsoo_res=jsoo_self.log(jsoo_baf7d8c4);
-      return jsoo_res}
+    function _cA_(s){return jsoo_self.log(s.toString())}
     async_exception_hook[1]=
     function(exn)
      {_cA_(_cB_);_cA_(to_string(exn));return print_backtrace(stderr)};
@@ -4093,15 +4051,10 @@
          (function(param)
            {var l=param[2],c=param[1];
             if(l)var v=l[1],_dK_=[0,v,0];else var _dK_=0;
-            var
-             jsoo_22f22ba7="li",
-             _dL_=_j_(c,_dK_),
-             jsoo_res=jsoo_self.createElement(jsoo_22f22ba7);
-            return _c0_(jsoo_res,_dL_)},
-          c),
-       jsoo_32b5ee21=tag.toString(),
-       jsoo_res=jsoo_self.createElement(jsoo_32b5ee21);
-      return _c0_(jsoo_res,_dJ_)}
+            var _dL_=_j_(c,_dK_);
+            return _c0_(jsoo_self.createElement("li"),_dL_)},
+          c);
+      return _c0_(jsoo_self.createElement(tag.toString()),_dJ_)}
     function _c1_(x){return x}
     function _c2_(rows)
      {var
@@ -4109,61 +4062,30 @@
         _n_
          (function(entries)
            {var
-             jsoo_264a17d7="tr",
              _dI_=
               _n_
                (function(param)
-                 {var
-                   c=param[2],
-                   h=param[1],
-                   kind=h?_c3_:_c4_,
-                   jsoo_3cfc1969=kind.toString(),
-                   jsoo_res=doc.createElement(jsoo_3cfc1969);
-                  return _c0_(jsoo_res,c)},
-                entries),
-             jsoo_res=doc.createElement(jsoo_264a17d7);
-            return _c0_(jsoo_res,_dI_)},
+                 {var c=param[2],h=param[1],kind=h?_c3_:_c4_;
+                  return _c0_(doc.createElement(kind.toString()),c)},
+                entries);
+            return _c0_(doc.createElement("tr"),_dI_)},
           rows),
-       jsoo_bd3a9ce2="tbody",
-       jsoo_res=doc.createElement(jsoo_bd3a9ce2),
-       jsoo_7bcc2d25="table",
-       _dH_=[0,_c0_(jsoo_res,rows$0),0],
-       jsoo_res$0=doc.createElement(jsoo_7bcc2d25);
-      return _c0_(jsoo_res$0,_dH_)}
-    function _c5_(param)
-     {var jsoo_4d928729="hr",jsoo_res=doc.createElement(jsoo_4d928729);
-      return jsoo_res}
+       _dH_=[0,_c0_(doc.createElement("tbody"),rows$0),0];
+      return _c0_(doc.createElement("table"),_dH_)}
+    function _c5_(param){return doc.createElement("hr")}
     function _c6_(s){return list_builder(doc,_c7_,s)}
     function _c8_(s){return list_builder(doc,_c9_,s)}
-    function _c__(s)
-     {var jsoo_c9a9e1c3="h6",jsoo_res=doc.createElement(jsoo_c9a9e1c3);
-      return _c0_(jsoo_res,s)}
-    function _c$_(s)
-     {var jsoo_4a652cf8="h5",jsoo_res=doc.createElement(jsoo_4a652cf8);
-      return _c0_(jsoo_res,s)}
-    function _da_(s)
-     {var jsoo_b72254d0="h4",jsoo_res=doc.createElement(jsoo_b72254d0);
-      return _c0_(jsoo_res,s)}
-    function _db_(s)
-     {var jsoo_0f6fa25c="h3",jsoo_res=doc.createElement(jsoo_0f6fa25c);
-      return _c0_(jsoo_res,s)}
-    function _dc_(s)
-     {var jsoo_6bc4b4e3="h2",jsoo_res=doc.createElement(jsoo_6bc4b4e3);
-      return _c0_(jsoo_res,s)}
-    function _dd_(s)
-     {var jsoo_92b58168="h1",jsoo_res=doc.createElement(jsoo_92b58168);
-      return _c0_(jsoo_res,s)}
+    function _c__(s){return _c0_(doc.createElement("h6"),s)}
+    function _c$_(s){return _c0_(doc.createElement("h5"),s)}
+    function _da_(s){return _c0_(doc.createElement("h4"),s)}
+    function _db_(s){return _c0_(doc.createElement("h3"),s)}
+    function _dc_(s){return _c0_(doc.createElement("h2"),s)}
+    function _dd_(s){return _c0_(doc.createElement("h1"),s)}
     function _de_(s)
-     {var
-       jsoo_c3540b3c="pre",
-       p=doc.createElement(jsoo_c3540b3c),
-       jsoo_f1ad292a=_F_(_df_,s).toString(),
-       jsoo_res=doc.createTextNode(jsoo_f1ad292a);
-      _cr_(p,jsoo_res);
+     {var p=doc.createElement("pre");
+      _cr_(p,doc.createTextNode(_F_(_df_,s).toString()));
       return p}
-    function _dg_(s)
-     {var jsoo_2c7d0868="p",jsoo_res=doc.createElement(jsoo_2c7d0868);
-      return _c0_(jsoo_res,s)}
+    function _dg_(s){return _c0_(doc.createElement("p"),s)}
     function _dh_(addr,s)
      {var i=unsafeCreateElement(doc,_cx_),match="480";
       i.width=match;
@@ -4171,8 +4093,7 @@
       i.height=match$0;
       var
        s$0=addr.toString(),
-       jsoo_res=window.encodeURI,
-       video_link=_e_(_di_,caml_js_to_string(jsoo_res(s$0))),
+       video_link=_e_(_di_,caml_js_to_string(window.encodeURI(s$0))),
        match$1=video_link.toString();
       i.src=match$1;
       var match$2="0";
@@ -4182,32 +4103,20 @@
      {var a=unsafeCreateElement(doc,_cv_),match=addr.toString();
       a.href=match;
       return _c0_(a,s)}
-    function _dk_(s)
-     {var jsoo_48bc6136="tt",jsoo_res=doc.createElement(jsoo_48bc6136);
-      return _c0_(jsoo_res,s)}
+    function _dk_(s){return _c0_(doc.createElement("tt"),s)}
     function _dl_(addr,alt)
      {var i=unsafeCreateElement(doc,_cw_),match=addr.toString();
       i.src=match;
       var match$0=alt.toString();
       i.alt=match$0;
       return i}
-    function _dm_(param)
-     {var jsoo_3834112d="br",jsoo_res=doc.createElement(jsoo_3834112d);
-      return jsoo_res}
-    function _dn_(s)
-     {var jsoo_bd4b70c7="em",jsoo_res=doc.createElement(jsoo_bd4b70c7);
-      return _c0_(jsoo_res,s)}
-    function _do_(s)
-     {var jsoo_593685be="strong",jsoo_res=doc.createElement(jsoo_593685be);
-      return _c0_(jsoo_res,s)}
+    function _dm_(param){return doc.createElement("br")}
+    function _dn_(s){return _c0_(doc.createElement("em"),s)}
+    function _do_(s){return _c0_(doc.createElement("strong"),s)}
     var
      b=
       [0,
-       function(s)
-        {var
-          jsoo_32f94eb9=s.toString(),
-          jsoo_res=doc.createTextNode(jsoo_32f94eb9);
-         return jsoo_res},
+       function(s){return doc.createTextNode(s.toString())},
        _do_,
        _dn_,
        _dm_,
@@ -4260,7 +4169,7 @@
     function replace_child(p,n)
      {var c=p.firstChild;if(c!=no_handler)p.removeChild(c);return _cr_(p,n)}
     function f$0(param)
-     {var jsoo_173316d7="wiki_demo",body=doc.getElementById(jsoo_173316d7);
+     {var body=doc.getElementById("wiki_demo");
       if(body==no_handler)throw [0,Assert_failure,_dq_];
       var textbox=unsafeCreateElementEx(0,0,doc,_cs_);
       textbox.rows=20;
@@ -4269,18 +4178,15 @@
        match=
         "\n\n====this is h4\n\n# number list  el 1\n# number list e2 2 //with italic text\n\n\n//with italic\n\n* bullet list el1 ** with bold text\n* bullet list el2 ** with bold // and italic text\n\n<<youtube 1XNTjVScm_8>>\n\n[[http://ya.ru|Link to Yandex]]\n\n[[http://google.com]]\n\n{{http://icons-search.com/img/yellowicon/firefox_win.zip/Firefox_Thunderbird_Win-icons-Firefox.ico-128x128.png|mail icon}}\n\n{{{\n== [[Nowiki]]:\n//**don't** format//\n}}}\n\n\n";
       textbox.value=match;
-      var
-       preview=createDiv(doc),
-       jsoo_obj=preview.style,
-       match$0="1px black dashed";
-      jsoo_obj.border=match$0;
-      var jsoo_obj$0=preview.style,match$1="5px";
-      jsoo_obj$0.padding=match$1;
+      var preview=createDiv(doc),match$0="1px black dashed";
+      preview.style.border=match$0;
+      var match$1="5px";
+      preview.style.padding=match$1;
       _cr_(body,textbox);
       _cr_(body,unsafeCreateElement(doc,_cu_));
       _cr_(body,preview);
       function dyn_preview(old_text,n)
-       {var jsoo_res=textbox.value,text=caml_js_to_string(jsoo_res);
+       {var text=caml_js_to_string(textbox.value);
         if(caml_string_notequal(text,old_text))
          {try
            {var rendered=_dp_(text);replace_child(preview,rendered)}

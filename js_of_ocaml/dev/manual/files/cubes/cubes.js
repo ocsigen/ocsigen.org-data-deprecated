@@ -3622,30 +3622,23 @@
     register_printer
      (function(param)
        {if(param[1]===Error)
-         {var e=param[2],jsoo_res=e.toString();
-          return [0,caml_js_to_string(jsoo_res)]}
+         {var e=param[2];return [0,caml_js_to_string(e.toString())]}
         return 0});
     register_printer
      (function(jsoo_self)
-       {if(jsoo_self instanceof jsoo_7bc72a9e)return 0;
-        var jsoo_res=jsoo_self.toString();
-        return [0,caml_js_to_string(jsoo_res)]});
+       {return jsoo_self instanceof jsoo_7bc72a9e
+                ?0
+                :[0,caml_js_to_string(jsoo_self.toString())]});
     var
      jsoo_ebd11ba6="2d",
      Canvas_not_available=caml_set_oo_id([248,_cw_,0]),
      html_element=window.HTMLElement;
     html_element===undefined$0;
-    var jsoo_self=caml_js_get_console(0),_cx_=2147483e3;
+    var _cx_=2147483e3,jsoo_self=caml_js_get_console(0);
     function f(param)
-     {if(1===param)
-       {var jsoo_32b5ee21=caml_js_wrap_callback(_ct_);
-        window.setTimeout(jsoo_32b5ee21,0);
-        return 0}
-      return 0}
+     {return 1===param?(window.setTimeout(caml_js_wrap_callback(_ct_),0),0):0}
     pause_hook[1]=f;
-    function _cy_(s)
-     {var jsoo_baf7d8c4=s.toString(),jsoo_res=jsoo_self.log(jsoo_baf7d8c4);
-      return jsoo_res}
+    function _cy_(s){return jsoo_self.log(s.toString())}
     async_exception_hook[1]=
     function(exn)
      {_cy_(_cz_);_cy_(to_string(exn));return print_backtrace(stderr)};
@@ -3720,14 +3713,11 @@
        right="#767676",
        on_cube=
         function(jsoo_self,i,j,k,f)
-         {var
-           jsoo_29529091=(((i-k|0)+12|0)-1|0)*17,
-           jsoo_22f22ba7=(11-j|0)*20+(i+k|0)*20/2;
-          jsoo_self.save();
-          jsoo_self.translate(jsoo_29529091,jsoo_22f22ba7);
+         {jsoo_self.save();
+          jsoo_self.translate
+           ((((i-k|0)+12|0)-1|0)*17,(11-j|0)*20+(i+k|0)*20/2);
           caml_call1(f,jsoo_self);
-          var jsoo_res=jsoo_self.restore();
-          return jsoo_res},
+          return jsoo_self.restore()},
        draw_top=
         function(jsoo_self)
          {jsoo_self.fillStyle=top;
@@ -3736,16 +3726,14 @@
           jsoo_self.lineTo(34,10);
           jsoo_self.lineTo(17,20);
           jsoo_self.lineTo(0,10);
-          var jsoo_res=jsoo_self.fill();
-          return jsoo_res},
+          return jsoo_self.fill()},
        top_edges=
         function(jsoo_self)
          {jsoo_self.beginPath();
           jsoo_self.moveTo(0,10);
           jsoo_self.lineTo(17,0);
           jsoo_self.lineTo(34,10);
-          var jsoo_res=jsoo_self.stroke();
-          return jsoo_res},
+          return jsoo_self.stroke()},
        draw_right=
         function(jsoo_self)
          {jsoo_self.fillStyle=right;
@@ -3754,16 +3742,14 @@
           jsoo_self.lineTo(17,40);
           jsoo_self.lineTo(34,30);
           jsoo_self.lineTo(34,10);
-          var jsoo_res=jsoo_self.fill();
-          return jsoo_res},
+          return jsoo_self.fill()},
        right_edges=
         function(jsoo_self)
          {jsoo_self.beginPath();
           jsoo_self.moveTo(17,40);
           jsoo_self.lineTo(17,20);
           jsoo_self.lineTo(34,10);
-          var jsoo_res=jsoo_self.stroke();
-          return jsoo_res},
+          return jsoo_self.stroke()},
        draw_left=
         function(jsoo_self)
          {jsoo_self.fillStyle=left;
@@ -3772,16 +3758,14 @@
           jsoo_self.lineTo(17,40);
           jsoo_self.lineTo(0,30);
           jsoo_self.lineTo(0,10);
-          var jsoo_res=jsoo_self.fill();
-          return jsoo_res},
+          return jsoo_self.fill()},
        left_edges=
         function(jsoo_self)
          {jsoo_self.beginPath();
           jsoo_self.moveTo(17,20);
           jsoo_self.lineTo(0,10);
           jsoo_self.lineTo(0,30);
-          var jsoo_res=jsoo_self.stroke();
-          return jsoo_res},
+          return jsoo_self.stroke()},
        tile=
         function(c,a,param)
          {var left=param[3],right=param[2],top=param[1],i$1=0;
@@ -3848,21 +3832,14 @@
                          return 0}}}}}}},
        create_canvas=
         function(param)
-         {var
-           doc=window.document,
-           jsoo_3834112d="canvas",
-           c=doc.createElement(jsoo_3834112d),
-           jsoo_res=c.getContext;
-          if(_cu_(jsoo_res)){c.width=409;c.height=481;return c}
+         {var doc=window.document,c=doc.createElement("canvas");
+          if(_cu_(c.getContext)){c.width=409;c.height=481;return c}
           throw Canvas_not_available},
        redraw=
         function(jsoo_self,jsoo_b9bde2df,a)
          {var jsoo_self$0=jsoo_b9bde2df.getContext(jsoo_ebd11ba6);
           jsoo_self$0.setTransform(1,0,0,1,0,0);
-          var
-           jsoo_9c9fa101=jsoo_b9bde2df.width,
-           jsoo_71d03030=jsoo_b9bde2df.height;
-          jsoo_self$0.clearRect(0,0,jsoo_9c9fa101,jsoo_71d03030);
+          jsoo_self$0.clearRect(0,0,jsoo_b9bde2df.width,jsoo_b9bde2df.height);
           jsoo_self$0.setTransform(1,0,0,1,0.5,0.5);
           var match="lighter";
           jsoo_self$0.globalCompositeOperation=match;
@@ -3876,8 +3853,7 @@
           jsoo_self$0.lineTo(408,360);
           jsoo_self$0.lineTo(408,120);
           jsoo_self$0.stroke();
-          var jsoo_res=jsoo_self.drawImage(jsoo_b9bde2df,0,0);
-          return jsoo_res},
+          return jsoo_self.drawImage(jsoo_b9bde2df,0,0)},
        loop=
         function(c$0,c,a)
          {function f$0(param)
@@ -3933,19 +3909,13 @@
              match=2147483e3<d?[0,_cx_,d-2147483e3]:[0,d,0],
              remain=match[2],
              step=match[1],
-             cb=remain==0?callback:function(_cH_){return loop$0(remain,_cH_)},
-             jsoo_b34a1de6=caml_js_wrap_callback(cb),
-             jsoo_res=window.setTimeout(jsoo_b34a1de6,step);
-            id[1]=[0,jsoo_res];
+             cb=remain==0?callback:function(_cH_){return loop$0(remain,_cH_)};
+            id[1]=[0,window.setTimeout(caml_js_wrap_callback(cb),step)];
             return 0}
           loop$0(d,0);
           function f(param)
            {var _cG_=id[1];
-            if(_cG_)
-             {var x=_cG_[1];
-              id[1]=0;
-              var jsoo_res=window.clearTimeout(x);
-              return jsoo_res}
+            if(_cG_){var x=_cG_[1];id[1]=0;return window.clearTimeout(x)}
             return 0}
           var _cB_=repr(t)[1];
           switch(_cB_[0])
@@ -3990,12 +3960,8 @@
             default:throw [0,Assert_failure,_cr_]}},
        f$0=
         function(param)
-         {var
-           jsoo_ad7fbbdd=create_canvas(0),
-           c=create_canvas(0),
-           jsoo_obj=window.document,
-           jsoo_self=jsoo_obj.body;
-          jsoo_self.appendChild(jsoo_ad7fbbdd);
+         {var jsoo_ad7fbbdd=create_canvas(0),c=create_canvas(0);
+          window.document.body.appendChild(jsoo_ad7fbbdd);
           var c$0=jsoo_ad7fbbdd.getContext(jsoo_ebd11ba6),match="copy";
           c$0.globalCompositeOperation=match;
           var

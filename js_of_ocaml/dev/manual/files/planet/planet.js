@@ -3968,14 +3968,13 @@
     register_printer
      (function(param)
        {if(param[1]===Error)
-         {var e=param[2],jsoo_res=e.toString();
-          return [0,caml_js_to_string(jsoo_res)]}
+         {var e=param[2];return [0,caml_js_to_string(e.toString())]}
         return 0});
     register_printer
      (function(jsoo_self)
-       {if(jsoo_self instanceof jsoo_7bc72a9e)return 0;
-        var jsoo_res=jsoo_self.toString();
-        return [0,caml_js_to_string(jsoo_res)]});
+       {return jsoo_self instanceof jsoo_7bc72a9e
+                ?0
+                :[0,caml_js_to_string(jsoo_self.toString())]});
     function add(jsoo_self,jsoo_ad7fbbdd)
      {jsoo_self.appendChild(jsoo_ad7fbbdd);return 0}
     function handler(f)
@@ -3989,26 +3988,20 @@
         return match}}
     function addEventListener
      (jsoo_self,jsoo_4ec1b650,jsoo_c9a9e1c3,jsoo_a44ae7e3)
-     {var jsoo_res=jsoo_self.addEventListener;
-      if(jsoo_res===undefined$0)
+     {if(jsoo_self.addEventListener===undefined$0)
        {var
-         jsoo_self$0="on",
-         jsoo_6bc4b4e3=jsoo_self$0.concat(jsoo_4ec1b650),
+         jsoo_6bc4b4e3="on".concat(jsoo_4ec1b650),
          jsoo_33fd16a3=
           function(e)
            {var _dX_=[0,jsoo_c9a9e1c3,e,[0]];
             return function(_dY_,_dZ_){return caml_js_call(_dX_,_dY_,_dZ_)}};
         jsoo_self.attachEvent(jsoo_6bc4b4e3,jsoo_33fd16a3);
         return function(param)
-         {var jsoo_res=jsoo_self.detachEvent(jsoo_6bc4b4e3,jsoo_33fd16a3);
-          return jsoo_res}}
+         {return jsoo_self.detachEvent(jsoo_6bc4b4e3,jsoo_33fd16a3)}}
       jsoo_self.addEventListener(jsoo_4ec1b650,jsoo_c9a9e1c3,jsoo_a44ae7e3);
       return function(param)
-       {var
-         jsoo_res=
-          jsoo_self.removeEventListener
-           (jsoo_4ec1b650,jsoo_c9a9e1c3,jsoo_a44ae7e3);
-        return jsoo_res}}
+       {return jsoo_self.removeEventListener
+                (jsoo_4ec1b650,jsoo_c9a9e1c3,jsoo_a44ae7e3)}}
     function f(id){return caml_call1(id,0)}
     var
      mouseup="mouseup",
@@ -4017,10 +4010,7 @@
      doc=window.document;
     function opt_iter(x,f){if(x){var v=x[1];return caml_call1(f,v)}return 0}
     function createElement(jsoo_self,name)
-     {var
-       jsoo_3834112d=name.toString(),
-       jsoo_res=jsoo_self.createElement(jsoo_3834112d);
-      return jsoo_res}
+     {return jsoo_self.createElement(name.toString())}
     function unsafeCreateElement(doc,name){return createElement(doc,name)}
     var createElementSyntax=[0,785140586];
     function unsafeCreateElementEx(type,name,doc$0,elt)
@@ -4030,51 +4020,25 @@
         if(785140586===_dR_)
          {try
            {var
-             jsoo_c9a9e1c3='<input name="x">',
-             el=doc.createElement(jsoo_c9a9e1c3),
-             jsoo_self=el.tagName,
-             jsoo_res=jsoo_self.toLowerCase(),
-             _dU_=jsoo_res==="input"?1:0;
-            if(_dU_)
-             var jsoo_res$0=el.name,_dV_=jsoo_res$0==="x"?1:0;
-            else
-             var _dV_=_dU_;
-            var _dS_=_dV_}
+             el=doc.createElement('<input name="x">'),
+             _dU_=el.tagName.toLowerCase()==="input"?1:0,
+             _dV_=_dU_?el.name==="x"?1:0:_dU_,
+             _dS_=_dV_}
           catch(_dW_){var _dS_=0}
           var _dT_=_dS_?982028505:-1003883683;
           createElementSyntax[1]=_dT_;
           continue}
         if(982028505<=_dR_)
-         {var
-           a=new jsoo_7bc72a9e(),
-           jsoo_874ebaa6="<",
-           jsoo_2c7d0868=elt.toString();
-          a.push(jsoo_874ebaa6,jsoo_2c7d0868);
+         {var a=new jsoo_7bc72a9e();
+          a.push("<",elt.toString());
           opt_iter
            (type,
-            function(t)
-             {var
-               jsoo_c3540b3c=' type="',
-               jsoo_35d26cf8=caml_js_html_escape(t),
-               jsoo_f1ad292a='"';
-              a.push(jsoo_c3540b3c,jsoo_35d26cf8,jsoo_f1ad292a);
-              return 0});
+            function(t){a.push(' type="',caml_js_html_escape(t),'"');return 0});
           opt_iter
            (name,
-            function(n)
-             {var
-               jsoo_92b58168=' name="',
-               jsoo_ad8872a8=caml_js_html_escape(n),
-               jsoo_6bc4b4e3='"';
-              a.push(jsoo_92b58168,jsoo_ad8872a8,jsoo_6bc4b4e3);
-              return 0});
-          var jsoo_0f6fa25c=">";
-          a.push(jsoo_0f6fa25c);
-          var
-           jsoo_b72254d0="",
-           jsoo_4a652cf8=a.join(jsoo_b72254d0),
-           jsoo_res$1=doc$0.createElement(jsoo_4a652cf8);
-          return jsoo_res$1}
+            function(n){a.push(' name="',caml_js_html_escape(n),'"');return 0});
+          a.push(">");
+          return doc$0.createElement(a.join(""))}
         var res=createElement(doc$0,elt);
         opt_iter(type,function(jsoo_arg){return res.type=jsoo_arg});
         opt_iter(name,function(jsoo_arg){return res.name=jsoo_arg});
@@ -4087,7 +4051,7 @@
      Canvas_not_available=caml_set_oo_id([248,_cM_,0]),
      html_element=window.HTMLElement;
     html_element===undefined$0;
-    var jsoo_self=caml_js_get_console(0),_cO_=2147483e3;
+    var _cO_=2147483e3,jsoo_self=caml_js_get_console(0);
     function sleep(d)
      {var match=task(0),w=match[2],t=match[1],d$0=d*1e3;
       function callback(_dQ_){return wakeup(w,_dQ_)}
@@ -4097,19 +4061,13 @@
          match=2147483e3<d?[0,_cO_,d-2147483e3]:[0,d,0],
          remain=match[2],
          step=match[1],
-         cb=remain==0?callback:function(_dP_){return loop(remain,_dP_)},
-         jsoo_b34a1de6=caml_js_wrap_callback(cb),
-         jsoo_res=window.setTimeout(jsoo_b34a1de6,step);
-        id[1]=[0,jsoo_res];
+         cb=remain==0?callback:function(_dP_){return loop(remain,_dP_)};
+        id[1]=[0,window.setTimeout(caml_js_wrap_callback(cb),step)];
         return 0}
       loop(d$0,0);
       function f(param)
        {var _dO_=id[1];
-        if(_dO_)
-         {var x=_dO_[1];
-          id[1]=0;
-          var jsoo_res=window.clearTimeout(x);
-          return jsoo_res}
+        if(_dO_){var x=_dO_[1];id[1]=0;return window.clearTimeout(x)}
         return 0}
       var _dM_=repr(t)[1];
       switch(_dM_[0])
@@ -4126,15 +4084,9 @@
         default:var switch$0=0}
       return t}
     function wakeup$0(param)
-     {if(1===param)
-       {var jsoo_32b5ee21=caml_js_wrap_callback(_cz_);
-        window.setTimeout(jsoo_32b5ee21,0);
-        return 0}
-      return 0}
+     {return 1===param?(window.setTimeout(caml_js_wrap_callback(_cz_),0),0):0}
     _cA_(wakeup$0);
-    function _cP_(s)
-     {var jsoo_baf7d8c4=s.toString(),jsoo_res=jsoo_self.log(jsoo_baf7d8c4);
-      return jsoo_res}
+    function _cP_(s){return jsoo_self.log(s.toString())}
     async_exception_hook[1]=
     function(exn)
      {_cP_(_cQ_);_cP_(to_string(exn));return print_backtrace(stderr)};
@@ -4167,17 +4119,11 @@
       var
        match$0=
         handler
-         (function(param)
-           {var jsoo_res=b.checked;
-            caml_call1(action,jsoo_res|0);
-            return jsoo_824000b9});
+         (function(param){caml_call1(action,b.checked|0);return jsoo_824000b9});
       b.onclick=match$0;
       var lab=createLabel(doc);
       add(lab,b);
-      var
-       jsoo_32f94eb9=txt.toString(),
-       jsoo_res=doc.createTextNode(jsoo_32f94eb9);
-      add(lab,jsoo_res);
+      add(lab,doc.createTextNode(txt.toString()));
       return lab}
     function vect(param,_dL_)
      {var
@@ -4277,8 +4223,8 @@
           break}}
       return [0,vertices,faces]}
     function create_canvas(jsoo_arg$0,jsoo_arg)
-     {var c=unsafeCreateElement(doc,_cN_),jsoo_res=c.getContext;
-      if(_cB_(jsoo_res)){c.width=jsoo_arg$0;c.height=jsoo_arg;return c}
+     {var c=unsafeCreateElement(doc,_cN_);
+      if(_cB_(c.getContext)){c.width=jsoo_arg$0;c.height=jsoo_arg;return c}
       throw Canvas_not_available}
     function min(u,v){return u<v?u:v}
     function max(u,v){return u<v?v:u}
@@ -4334,17 +4280,15 @@
              dy3=y3-y1$0,
              jsoo_95712a67=dx2*dv3-dx3*dv2,
              jsoo_3e877a3d=dx2*du3-dx3*du2,
-             jsoo_7c6cc09e=x1$0-jsoo_95712a67*u1-jsoo_3e877a3d*v1$0,
              jsoo_7ffd078d=dy2*dv3-dy3*dv2,
-             jsoo_15aee807=dy2*du3-dy3*du2,
-             jsoo_5e6f535c=y1$0-jsoo_7ffd078d*u1-jsoo_15aee807*v1$0;
+             jsoo_15aee807=dy2*du3-dy3*du2;
             jsoo_self.transform
              (jsoo_95712a67,
               jsoo_7ffd078d,
               jsoo_3e877a3d,
               jsoo_15aee807,
-              jsoo_7c6cc09e,
-              jsoo_5e6f535c);
+              x1$0-jsoo_95712a67*u1-jsoo_3e877a3d*v1$0,
+              y1$0-jsoo_7ffd078d*u1-jsoo_15aee807*v1$0);
             jsoo_self.drawImage(jsoo_b62335d6,u,v,du,dv,u,v,du,dv);
             jsoo_self.restore()}
           var _dq_=i+1|0;
@@ -4399,14 +4343,12 @@
           var match="copy";
           ctx.globalCompositeOperation=match;
           ctx.save();
-          var
-           jsoo_67c1d93d=8*(jsoo_7bc72a9e+2|0)/jsoo_7bc72a9e,
-           jsoo_9fef5878=8*(jsoo_7bc5387d+2|0)/jsoo_7bc5387d;
-          ctx.scale(jsoo_67c1d93d,jsoo_9fef5878);
+          ctx.scale
+           (8*(jsoo_7bc72a9e+2|0)/jsoo_7bc72a9e,
+            8*(jsoo_7bc5387d+2|0)/jsoo_7bc5387d);
           ctx.translate(-1,-1);
           ctx.drawImage(jsoo_7428a376,0,0);
-          var jsoo_res=ctx.restore();
-          return jsoo_res}
+          return ctx.restore()}
         update_shadow(obliquity);
         var
          w$0=texture.width,
@@ -4423,18 +4365,14 @@
              jsoo_dbb2702f=
               (6.28318530717958623-phi$0)*w$0/2/3.14159265358979312%w$0|0;
             ctx$0.drawImage(jsoo_7428a376,jsoo_dbb2702f,0);
-            var
-             jsoo_0c26bf87=jsoo_dbb2702f-w$0,
-             jsoo_res=ctx$0.drawImage(jsoo_7428a376,jsoo_0c26bf87,0);
-            return jsoo_res}
+            return ctx$0.drawImage(jsoo_7428a376,jsoo_dbb2702f-w$0,0)}
           return no_lighting[1]
                   ?0
                   :(ctx$0.drawImage(texture,0,0),no_lighting[1]=1,0)}
         var
          canvas=create_canvas(height,height),
-         jsoo_7542ff86=create_canvas(height,height),
-         jsoo_res=doc.body;
-        add(jsoo_res,canvas);
+         jsoo_7542ff86=create_canvas(height,height);
+        add(doc.body,canvas);
         var
          ctx$1=canvas.getContext(jsoo_d80b4786),
          ctx$2=jsoo_7542ff86.getContext(jsoo_d80b4786),
@@ -4576,16 +4514,12 @@
          m_obliq=[0,xy_rotation(-0.410152374218667459)],
          m=[0,matrix_identity],
          phi_rot=[0,0],
-         jsoo_9c11b056="",
-         rateText=doc.createTextNode(jsoo_9c11b056),
+         rateText=doc.createTextNode(""),
          ctrl=createDiv(doc),
          match$1="controls";
         ctrl.className=match$1;
-        var
-         d=createDiv(doc),
-         jsoo_f2ba1604="Click and drag mouse to rotate.",
-         jsoo_res$0=doc.createTextNode(jsoo_f2ba1604);
-        add(d,jsoo_res$0);
+        var d=createDiv(doc);
+        add(d,doc.createTextNode("Click and drag mouse to rotate."));
         add(ctrl,d);
         var form=createDiv(doc);
         function br(param){return unsafeCreateElement(doc,_cK_)}
@@ -4606,21 +4540,14 @@
         b.onclick=match$0;
         add(form,b);
         add(form,br(0));
-        var
-         lab=createLabel(doc),
-         jsoo_f22d213f="Date:",
-         jsoo_res$1=doc.createTextNode(jsoo_f22d213f);
-        add(lab,jsoo_res$1);
+        var lab=createLabel(doc);
+        add(lab,doc.createTextNode("Date:"));
         var s=unsafeCreateElementEx(0,0,doc,_cF_);
         _l_
          (function(txt)
-           {var
-             jsoo_4977bef4=unsafeCreateElement(doc,_cE_),
-             jsoo_90e12450=txt.toString(),
-             jsoo_res=doc.createTextNode(jsoo_90e12450);
-            add(jsoo_4977bef4,jsoo_res);
-            var jsoo_res$0=s.add(jsoo_4977bef4,jsoo_c64afb46);
-            return jsoo_res$0},
+           {var jsoo_4977bef4=unsafeCreateElement(doc,_cE_);
+            add(jsoo_4977bef4,doc.createTextNode(txt.toString()));
+            return s.add(jsoo_4977bef4,jsoo_c64afb46)},
           _cZ_);
         var
          match$2=
@@ -4641,31 +4568,24 @@
         add(form$0,br(0));
         add(form$0,checkbox(_c1_,1,function(l){clipped[1]=l;return 0}));
         add(form$0,br(0));
-        var
-         jsoo_53657362="Frames per second: ",
-         jsoo_res$2=doc.createTextNode(jsoo_53657362);
-        add(form$0,jsoo_res$2);
+        add(form$0,doc.createTextNode("Frames per second: "));
         add(form$0,rateText);
         add(ctrl,form$0);
-        var jsoo_res$3=doc.body;
-        add(jsoo_res$3,ctrl);
+        add(doc.body,ctrl);
         var
          p=unsafeCreateElement(doc,_cJ_),
          match$3=
           "Credit: <a href='http://visibleearth.nasa.gov/'>Visual Earth</a>, Nasa";
         p.innerHTML=match$3;
-        var jsoo_res$4=doc.body;
-        add(jsoo_res$4,p);
+        add(doc.body,p);
         var
          mx=[0,0],
          my=[0,0],
          match$4=
           handler
            (function(jsoo_obj)
-             {var jsoo_res=jsoo_obj.clientX;
-              mx[1]=jsoo_res;
-              var jsoo_res$0=jsoo_obj.clientY;
-              my[1]=jsoo_res$0;
+             {mx[1]=jsoo_obj.clientX;
+              my[1]=jsoo_obj.clientY;
               var
                c1=
                 addEventListener
@@ -4710,11 +4630,7 @@
                 jsoo_824000b9);
               return false$0});
         canvas.onmousedown=match$4;
-        var
-         jsoo_self=new jsoo_0d6e75e4(),
-         jsoo_res$5=jsoo_self.getTime(),
-         ti=[0,jsoo_res$5],
-         fps=[0,0];
+        var ti=[0,new jsoo_0d6e75e4().getTime()],fps=[0,0];
         function loop(t,phi)
          {var rotation=xz_rotation(phi-phi_rot[1]);
           update_texture(lighting[1],phi);
@@ -4739,8 +4655,7 @@
           ctx$1.drawImage(jsoo_7542ff86,0,0);
           try {ctx$1.getImageData(0,0,1,1)}catch(_de_){}
           var
-           jsoo_self=new jsoo_0d6e75e4(),
-           t$0=jsoo_self.getTime(),
+           t$0=new jsoo_0d6e75e4().getTime(),
            hz=1e3/(t$0-ti[1]),
            hz$0=fps[1]==0?hz:0.9*fps[1]+0.1*hz;
           fps[1]=hz$0;
@@ -4749,8 +4664,7 @@
           ti[1]=t$0;
           function _dd_(param)
            {var
-             jsoo_self=new jsoo_0d6e75e4(),
-             t$0=jsoo_self.getTime(),
+             t$0=new jsoo_0d6e75e4().getTime(),
              dt=t$0-t,
              dt$0=dt<0?0:1e3<dt?0:dt,
              angle=6.28318530717958623*dt$0/1e3/10,
@@ -4758,8 +4672,7 @@
              phi$0=paused[1]?phi:phi+angle;
             return loop(t$0,phi$0)}
           return bind(sleep(0.01),_dd_)}
-        var jsoo_self$0=new jsoo_0d6e75e4(),jsoo_res$6=jsoo_self$0.getTime();
-        return loop(jsoo_res$6,0)}
+        return loop(new jsoo_0d6e75e4().getTime(),0)}
       var img=unsafeCreateElement(doc,_cL_);
       function _c8_(param){return [0,[0,img]]}
       var

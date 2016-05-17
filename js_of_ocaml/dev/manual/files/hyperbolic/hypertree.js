@@ -4742,14 +4742,13 @@
     register_printer
      (function(param)
        {if(param[1]===Error$0)
-         {var e=param[2],jsoo_res=e.toString();
-          return [0,caml_js_to_string(jsoo_res)]}
+         {var e=param[2];return [0,caml_js_to_string(e.toString())]}
         return 0});
     register_printer
      (function(jsoo_self)
-       {if(jsoo_self instanceof jsoo_173316d7)return 0;
-        var jsoo_res=jsoo_self.toString();
-        return [0,caml_js_to_string(jsoo_res)]});
+       {return jsoo_self instanceof jsoo_173316d7
+                ?0
+                :[0,caml_js_to_string(jsoo_self.toString())]});
     function _c2_(jsoo_self,jsoo_ad7fbbdd)
      {jsoo_self.appendChild(jsoo_ad7fbbdd);return 0}
     function _c3_(jsoo_self,jsoo_1df5757a)
@@ -4765,26 +4764,20 @@
         return match}}
     function addEventListener
      (jsoo_self,jsoo_4ec1b650,jsoo_c9a9e1c3,jsoo_a44ae7e3)
-     {var jsoo_res=jsoo_self.addEventListener;
-      if(jsoo_res===origin)
+     {if(jsoo_self.addEventListener===origin)
        {var
-         jsoo_self$0="on",
-         jsoo_6bc4b4e3=jsoo_self$0.concat(jsoo_4ec1b650),
+         jsoo_6bc4b4e3="on".concat(jsoo_4ec1b650),
          jsoo_33fd16a3=
           function(e)
            {var _g9_=[0,jsoo_c9a9e1c3,e,[0]];
             return function(_g__,_g$_){return caml_js_call(_g9_,_g__,_g$_)}};
         jsoo_self.attachEvent(jsoo_6bc4b4e3,jsoo_33fd16a3);
         return function(param)
-         {var jsoo_res=jsoo_self.detachEvent(jsoo_6bc4b4e3,jsoo_33fd16a3);
-          return jsoo_res}}
+         {return jsoo_self.detachEvent(jsoo_6bc4b4e3,jsoo_33fd16a3)}}
       jsoo_self.addEventListener(jsoo_4ec1b650,jsoo_c9a9e1c3,jsoo_a44ae7e3);
       return function(param)
-       {var
-         jsoo_res=
-          jsoo_self.removeEventListener
-           (jsoo_4ec1b650,jsoo_c9a9e1c3,jsoo_a44ae7e3);
-        return jsoo_res}}
+       {return jsoo_self.removeEventListener
+                (jsoo_4ec1b650,jsoo_c9a9e1c3,jsoo_a44ae7e3)}}
     function removeEventListener(id){return caml_call1(id,0)}
     var
      onIE=caml_js_on_ie(0)|0,
@@ -4799,10 +4792,7 @@
      document=window.document;
     function opt_iter(x,f){if(x){var v=x[1];return caml_call1(f,v)}return 0}
     function createElement(jsoo_self,name)
-     {var
-       jsoo_3834112d=name.toString(),
-       jsoo_res=jsoo_self.createElement(jsoo_3834112d);
-      return jsoo_res}
+     {return jsoo_self.createElement(name.toString())}
     function unsafeCreateElement(doc,name){return createElement(doc,name)}
     var createElementSyntax=[0,785140586];
     function unsafeCreateElementEx(type,name,doc,elt)
@@ -4812,51 +4802,25 @@
         if(785140586===_g3_)
          {try
            {var
-             jsoo_c9a9e1c3='<input name="x">',
-             el=document.createElement(jsoo_c9a9e1c3),
-             jsoo_self=el.tagName,
-             jsoo_res=jsoo_self.toLowerCase(),
-             _g6_=jsoo_res==="input"?1:0;
-            if(_g6_)
-             var jsoo_res$0=el.name,_g7_=jsoo_res$0==="x"?1:0;
-            else
-             var _g7_=_g6_;
-            var _g4_=_g7_}
+             el=document.createElement('<input name="x">'),
+             _g6_=el.tagName.toLowerCase()==="input"?1:0,
+             _g7_=_g6_?el.name==="x"?1:0:_g6_,
+             _g4_=_g7_}
           catch(_g8_){var _g4_=0}
           var _g5_=_g4_?982028505:-1003883683;
           createElementSyntax[1]=_g5_;
           continue}
         if(982028505<=_g3_)
-         {var
-           a=new jsoo_173316d7(),
-           jsoo_874ebaa6="<",
-           jsoo_2c7d0868=elt.toString();
-          a.push(jsoo_874ebaa6,jsoo_2c7d0868);
+         {var a=new jsoo_173316d7();
+          a.push("<",elt.toString());
           opt_iter
            (type,
-            function(t)
-             {var
-               jsoo_c3540b3c=' type="',
-               jsoo_35d26cf8=caml_js_html_escape(t),
-               jsoo_f1ad292a='"';
-              a.push(jsoo_c3540b3c,jsoo_35d26cf8,jsoo_f1ad292a);
-              return 0});
+            function(t){a.push(' type="',caml_js_html_escape(t),'"');return 0});
           opt_iter
            (name,
-            function(n)
-             {var
-               jsoo_92b58168=' name="',
-               jsoo_ad8872a8=caml_js_html_escape(n),
-               jsoo_6bc4b4e3='"';
-              a.push(jsoo_92b58168,jsoo_ad8872a8,jsoo_6bc4b4e3);
-              return 0});
-          var jsoo_0f6fa25c=">";
-          a.push(jsoo_0f6fa25c);
-          var
-           jsoo_b72254d0="",
-           jsoo_4a652cf8=a.join(jsoo_b72254d0),
-           jsoo_res$1=doc.createElement(jsoo_4a652cf8);
-          return jsoo_res$1}
+            function(n){a.push(' name="',caml_js_html_escape(n),'"');return 0});
+          a.push(">");
+          return doc.createElement(a.join(""))}
         var res=createElement(doc,elt);
         opt_iter(type,function(jsoo_arg){return res.type=jsoo_arg});
         opt_iter(name,function(jsoo_arg){return res.name=jsoo_arg});
@@ -4873,32 +4837,31 @@
     function createDt(doc){return createElement(doc,_da_)}
     var Canvas_not_available=caml_set_oo_id([248,_db_,0]);
     function createCanvas(doc)
-     {var c=unsafeCreateElement(doc,_dc_),jsoo_res=c.getContext;
-      if(_cT_(jsoo_res))return c;
+     {var c=unsafeCreateElement(doc,_dc_);
+      if(_cT_(c.getContext))return c;
       throw Canvas_not_available}
     var html_element=window.HTMLElement;
     html_element===origin;
     function stopPropagation(jsoo_obj)
-     {function _g1_(param)
-       {var jsoo_res=jsoo_obj.stopPropagation();return jsoo_res}
+     {function _g1_(param){return jsoo_obj.stopPropagation()}
       function _g2_(param){return jsoo_obj.cancelBubble=jsoo_c11647d6}
-      var jsoo_res=jsoo_obj.stopPropagation;
-      return _cY_(jsoo_res,_g2_,_g1_)}
+      return _cY_(jsoo_obj.stopPropagation,_g2_,_g1_)}
     var
      jsoo_self$0=caml_js_get_console(0),
      _dd_=
       caml_js_pure_expr
        (function(param)
          {var
-           jsoo_res=window.msRequestAnimationFrame,
-           jsoo_res$0=window.oRequestAnimationFrame,
-           jsoo_res$1=window.webkitRequestAnimationFrame,
-           jsoo_res$2=window.mozRequestAnimationFrame,
-           jsoo_res$3=window.requestAnimationFrame,
            l=
             [0,
-             jsoo_res$3,
-             [0,jsoo_res$2,[0,jsoo_res$1,[0,jsoo_res$0,[0,jsoo_res,0]]]]];
+             window.requestAnimationFrame,
+             [0,
+              window.mozRequestAnimationFrame,
+              [0,
+               window.webkitRequestAnimationFrame,
+               [0,
+                window.oRequestAnimationFrame,
+                [0,window.msRequestAnimationFrame,0]]]]];
           try
            {var
              req=_q_(function(c){return _cW_(c)},l),
@@ -4908,12 +4871,7 @@
            {_g0_=caml_wrap_exception(_g0_);
             if(_g0_===Not_found)
              {var
-               now=
-                function(param)
-                 {var
-                   jsoo_self=new jsoo_d761558f(),
-                   jsoo_res=jsoo_self.getTime();
-                  return jsoo_res},
+               now=function(param){return new jsoo_d761558f().getTime()},
                last=[0,now(0)];
               return function(callback)
                {var t=now(0),dt=last[1]+16.6666666666666679-t,dt$0=dt<0?0:dt;
@@ -4931,33 +4889,21 @@
          match=2147483e3<d?[0,_de_,d-2147483e3]:[0,d,0],
          remain=match[2],
          step=match[1],
-         cb=remain==0?callback:function(_gX_){return loop(remain,_gX_)},
-         jsoo_b34a1de6=caml_js_wrap_callback(cb),
-         jsoo_res=window.setTimeout(jsoo_b34a1de6,step);
-        id[1]=[0,jsoo_res];
+         cb=remain==0?callback:function(_gX_){return loop(remain,_gX_)};
+        id[1]=[0,window.setTimeout(caml_js_wrap_callback(cb),step)];
         return 0}
       loop(d,0);
       on_cancel
        (t,
         function(param)
          {var _gW_=id[1];
-          if(_gW_)
-           {var x=_gW_[1];
-            id[1]=0;
-            var jsoo_res=window.clearTimeout(x);
-            return jsoo_res}
+          if(_gW_){var x=_gW_[1];id[1]=0;return window.clearTimeout(x)}
           return 0});
       return t}
     function wakeup$0(param)
-     {if(1===param)
-       {var jsoo_32b5ee21=caml_js_wrap_callback(_cR_);
-        window.setTimeout(jsoo_32b5ee21,0);
-        return 0}
-      return 0}
+     {return 1===param?(window.setTimeout(caml_js_wrap_callback(_cR_),0),0):0}
     _cS_(wakeup$0);
-    function _df_(s)
-     {var jsoo_baf7d8c4=s.toString(),jsoo_res=jsoo_self$0.log(jsoo_baf7d8c4);
-      return jsoo_res}
+    function _df_(s){return jsoo_self$0.log(s.toString())}
     async_exception_hook[1]=
     function(exn)
      {_df_(_dg_);_df_(to_string(exn));return print_backtrace(stderr)};
@@ -4965,22 +4911,17 @@
     new jsoo_bd4e937f("[$]","g");
     var jsoo_97b9daf3=regexp(_dh_);
     function _di_(s)
-     {var
-       jsoo_7598a162="\\$&",
-       jsoo_self=caml_bytes_of_string(s),
-       jsoo_res=jsoo_self.replace(jsoo_97b9daf3,jsoo_7598a162);
-      return regexp(caml_js_to_byte_string(jsoo_res))}
+     {return regexp
+              (caml_js_to_byte_string
+                (caml_bytes_of_string(s).replace(jsoo_97b9daf3,"\\$&")))}
     var Local_exn=caml_set_oo_id([248,_dj_,0]);
     function interrupt(param){throw Local_exn}
     _di_(_dk_);
     var jsoo_d19f6f5e=new jsoo_bd4e937f("\\+","g");
     function urldecode_js_string_string(s$0)
      {jsoo_d19f6f5e.lastIndex=0;
-      var
-       jsoo_3834112d=" ",
-       s=s$0.replace(jsoo_d19f6f5e,jsoo_3834112d),
-       jsoo_res=window.unescape;
-      return caml_js_to_byte_string(jsoo_res(s))}
+      var s=s$0.replace(jsoo_d19f6f5e," ");
+      return caml_js_to_byte_string(window.unescape(s))}
     caml_set_oo_id([248,_dl_,0]);
     function path_of_path_string(s)
      {var l=caml_ml_string_length(s);
@@ -5001,10 +4942,7 @@
          if(!caml_string_notequal(_gT_[1],_dn_))if(!_gT_[2])return _do_}
       return a}
     function decode_arguments_js_string(s)
-     {var
-       jsoo_32b5ee21=_I_(1,38).toString(),
-       arr=s.split(jsoo_32b5ee21),
-       len=arr.length;
+     {var arr=s.split(_I_(1,38).toString()),len=arr.length;
       function aux(acc,idx)
        {var idx$0=idx;
         for(;;)
@@ -5020,15 +4958,11 @@
                     x=param[1],
                     _gS_=urldecode_js_string_string(y);
                    return [0,urldecode_js_string_string(x),_gS_]}
-                 var
-                  jsoo_22f22ba7=_I_(1,61).toString(),
-                  jsoo_18184c07=s.indexOf(jsoo_22f22ba7);
+                 var jsoo_18184c07=s.indexOf(_I_(1,61).toString());
                  if(0<=jsoo_18184c07)
                   var
-                   jsoo_5b998314=jsoo_18184c07+1|0,
-                   jsoo_res=s.slice(jsoo_5b998314),
-                   jsoo_res$0=s.slice(0,jsoo_18184c07),
-                   _gQ_=[0,jsoo_res$0,jsoo_res];
+                   jsoo_res=s.slice(jsoo_18184c07+1|0),
+                   _gQ_=[0,s.slice(0,jsoo_18184c07),jsoo_res];
                  else
                   var _gQ_=origin;
                  return _cY_(_gQ_,interrupt,_gR_)},
@@ -5042,9 +4976,8 @@
       return aux(0,len-1|0)}
     new jsoo_bd4e937f(caml_bytes_of_string(_dp_));
     new jsoo_bd4e937f(caml_bytes_of_string(_dq_));
-    var jsoo_res=window.location;
-    if(_cW_(jsoo_res))
-     var jsoo_res$0=window.location,l=jsoo_res$0;
+    if(_cW_(window.location))
+     var l=window.location;
     else
      var
       hash="",
@@ -5064,27 +4997,17 @@
         "reload":reload,
         "replace":replace,
         "assign":assign};
-    var jsoo_res$1=l.hostname;
-    urldecode_js_string_string(jsoo_res$1);
-    var jsoo_res$2=l.protocol;
-    urldecode_js_string_string(jsoo_res$2);
+    urldecode_js_string_string(l.hostname);
+    urldecode_js_string_string(l.protocol);
     try
-     {var jsoo_res$3=l.port;
-      caml_int_of_string(caml_js_to_byte_string(jsoo_res$3))}
+     {caml_int_of_string(caml_js_to_byte_string(l.port))}
     catch(_gJ_)
      {_gJ_=caml_wrap_exception(_gJ_);if(_gJ_[1]!==Failure)throw _gJ_}
-    var
-     jsoo_res$4=l.pathname,
-     path_string=urldecode_js_string_string(jsoo_res$4);
+    var path_string=urldecode_js_string_string(l.pathname);
     path_of_path_string(path_string);
-    var jsoo_self$1=l.search,jsoo_res$5=jsoo_self$1.charAt(0);
-    if(jsoo_res$5==="?")
-     var jsoo_self$2=l.search,jsoo_res$6=jsoo_self$2.slice(1),_dr_=jsoo_res$6;
-    else
-     var jsoo_res$10=l.search,_dr_=jsoo_res$10;
+    var _dr_=l.search.charAt(0)==="?"?l.search.slice(1):l.search;
     decode_arguments_js_string(_dr_);
-    var jsoo_res$7=l.href;
-    urldecode_js_string_string(jsoo_res$7);
+    urldecode_js_string_string(l.href);
     function _ds_(param)
      {var
        xmlHttpRequest=window.XMLHttpRequest,
@@ -5106,7 +5029,7 @@
     var tree_color="#794c0d";
     function option(var$0)
      {return _cZ_(var$0,function(param){return new jsoo_173316d7()})}
-    var jsoo_res$8=window.hyp,style=option(jsoo_res$8);
+    var style=option(window.hyp);
     function opt_style(v,default$0)
      {return _cZ_(v,function(param){return default$0})}
     function sdiv(z,s){return [254,z[1]/s,z[2]/s]}
@@ -5156,42 +5079,32 @@
        match=task(0),
        w=match[2],
        res=match[1],
-       jsoo_obj=_ds_(0),
-       jsoo_26523dec="GET",
-       jsoo_4beb75c4=url.toString();
-      jsoo_obj.open(jsoo_26523dec,jsoo_4beb75c4,jsoo_c11647d6);
+       jsoo_obj=_ds_(0);
+      jsoo_obj.open("GET",url.toString(),jsoo_c11647d6);
       var match$1="";
       jsoo_obj.responseType=match$1;
       if(content_type$0)
-       {var
-         content_type=content_type$0[1],
-         jsoo_35d26cf8="Content-type",
-         jsoo_f1ad292a=content_type.toString();
-        jsoo_obj.setRequestHeader(jsoo_35d26cf8,jsoo_f1ad292a)}
+       {var content_type=content_type$0[1];
+        jsoo_obj.setRequestHeader("Content-type",content_type.toString())}
       _o_
        (function(param)
-         {var
-           v=param[2],
-           n=param[1],
-           jsoo_92b58168=n.toString(),
-           jsoo_ad8872a8=v.toString(),
-           jsoo_res=jsoo_obj.setRequestHeader(jsoo_92b58168,jsoo_ad8872a8);
-          return jsoo_res},
+         {var v=param[2],n=param[1];
+          return jsoo_obj.setRequestHeader(n.toString(),v.toString())},
         headers);
       function headers$0(s)
        {function _gu_(v){return [0,caml_js_to_string(v)]}
         function _gv_(param){return 0}
-        var
-         jsoo_33fd16a3=caml_bytes_of_string(s),
-         jsoo_res=jsoo_obj.getResponseHeader(jsoo_33fd16a3);
-        return _cV_(jsoo_res,_gv_,_gu_)}
+        return _cV_
+                (jsoo_obj.getResponseHeader(caml_bytes_of_string(s)),
+                 _gv_,
+                 _gu_)}
       var st=[0,382334108];
       function do_check_headers(param)
        {if(382334108===st[1])
          if(1)
           st[1]=583419792;
          else
-          {var jsoo_res=jsoo_obj.status,e=[0,_dv_,[0,jsoo_res,headers$0]];
+          {var e=[0,_dv_,[0,jsoo_obj.status,headers$0]];
            wakeup_result(w,[1,e]);
            st[1]=479410653;
            jsoo_obj.abort()}
@@ -5214,23 +5127,25 @@
                      function _gt_(x){return [0,x]}
                      var match=_cV_(x,function(param){return 0},_gt_);
                      if(match)
-                      {var doc=match[1],jsoo_res=doc.documentElement;
-                       return jsoo_res===jsoo_560e4fa1?0:[0,doc]}
+                      {var doc=match[1];
+                       return doc.documentElement===jsoo_560e4fa1?0:[0,doc]}
                      return 0},
-                  jsoo_res=jsoo_obj.responseText,
                   response=
-                   [0,url,code,headers$0,caml_js_to_string(jsoo_res),_gs_];
+                   [0,
+                    url,
+                    code,
+                    headers$0,
+                    caml_js_to_string(jsoo_obj.responseText),
+                    _gs_];
                  return wakeup(w,response)}
                return 0
               }
             return 0});
       jsoo_obj.onreadystatechange=match$0;
       function _gp_(jsoo_obj){return 0}
-      var jsoo_res=jsoo_obj.upload;
-      _cX_(jsoo_res,_gp_);
+      _cX_(jsoo_obj.upload,_gp_);
       jsoo_obj.send(jsoo_560e4fa1);
-      on_cancel
-       (res,function(param){var jsoo_res=jsoo_obj.abort();return jsoo_res});
+      on_cancel(res,function(param){return jsoo_obj.abort()});
       return bind(res,_gr_)}
     function getfile(f)
      {try
@@ -5255,61 +5170,43 @@
       c.width=jsoo_arg$0;
       c.height=jsoo_arg;
       return c}
-    var
-     debug_widget=createDiv(document),
-     jsoo_obj=debug_widget.style,
-     match="absolute";
-    jsoo_obj.position=match;
-    var jsoo_obj$0=debug_widget.style,match$0="0";
-    jsoo_obj$0.bottom=match$0;
-    var jsoo_obj$1=debug_widget.style,match$1="0";
-    jsoo_obj$1.left=match$1;
-    var jsoo_obj$2=debug_widget.style,match$2="0.9em";
-    jsoo_obj$2.lineHeight=match$2;
+    var debug_widget=createDiv(document),match="absolute";
+    debug_widget.style.position=match;
+    var match$0="0";
+    debug_widget.style.bottom=match$0;
+    var match$1="0";
+    debug_widget.style.left=match$1;
+    var match$2="0.9em";
+    debug_widget.style.lineHeight=match$2;
     var
      text_size_div=
       [246,
        function(_gl_)
-        {var d=createDiv(document),jsoo_obj=d.style,match="hidden";
-         jsoo_obj.visibility=match;
-         var jsoo_obj$0=d.style,match$0="absolute";
-         jsoo_obj$0.position=match$0;
-         var jsoo_obj$1=d.style,match$1="nowrap";
-         jsoo_obj$1.whiteSpace=match$1;
-         var jsoo_res=document.body;
-         _c2_(jsoo_res,d);
+        {var d=createDiv(document),match="hidden";
+         d.style.visibility=match;
+         var match$0="absolute";
+         d.style.position=match$0;
+         var match$1="nowrap";
+         d.style.whiteSpace=match$1;
+         _c2_(document.body,d);
          return d}];
     function f(param)
      {function _gj_(param)
        {function _gk_(param){return "en"}
-        var jsoo_obj=window.navigator,jsoo_res=jsoo_obj.userLanguage;
-        return _cZ_(jsoo_res,_gk_)}
-      var
-       jsoo_obj=window.navigator,
-       jsoo_res=jsoo_obj.language,
-       jsoo_self=_cZ_(jsoo_res,_gj_),
-       jsoo_res$0=jsoo_self.substring(0,2);
-      return jsoo_res$0}
+        return _cZ_(window.navigator.userLanguage,_gk_)}
+      return _cZ_(window.navigator.language,_gj_).substring(0,2)}
     function _dx_(jsoo_self)
-     {var jsoo_025f2716="hyp_lang",x=jsoo_self.getItem(jsoo_025f2716);
-      return x==jsoo_560e4fa1?f(0):x}
-    var
-     jsoo_res$9=window.localStorage,
-     language=[0,_cY_(jsoo_res$9,f,_dx_)],
-     jsoo_840a123d=language[1];
-    jsoo_self$0.log(jsoo_840a123d);
+     {var x=jsoo_self.getItem("hyp_lang");return x==jsoo_560e4fa1?f(0):x}
+    var language=[0,_cY_(window.localStorage,f,_dx_)];
+    jsoo_self$0.log(language[1]);
     function load_messages(param)
-     {function _gi_(s)
-       {var jsoo_b76d516a=s.toString(),jsoo_res=json.parse(jsoo_b76d516a);
-        return return$0(jsoo_res)}
+     {function _gi_(s){return return$0(json.parse(s.toString()))}
       return bind(getfile(_dy_),_gi_)}
     function local_messages(msgs){return option(msgs[language[1]])}
     function screen_transform(jsoo_obj)
      {var
-       jsoo_res=style.padding,
-       _gh_=opt_style(jsoo_res,0),
-       jsoo_res$0=style.border,
-       offset=opt_style(jsoo_res$0,0.5)+_gh_,
+       _gh_=opt_style(style.padding,0),
+       offset=opt_style(style.border,0.5)+_gh_,
        w=jsoo_obj.width,
        h=jsoo_obj.height,
        rx=w/2,
@@ -5342,8 +5239,7 @@
       jsoo_self.translate(jsoo_4950329f,jsoo_49218997);
       jsoo_self.scale(jsoo_0b1b989a,jsoo_f2ba1604);
       jsoo_self.arc(0,0,1,jsoo_d0a8f124,jsoo_4977bef4,jsoo_c64afb46);
-      var jsoo_res=jsoo_self.restore();
-      return jsoo_res}
+      return jsoo_self.restore()}
     function _dz_(x,f){return caml_call1(f,x)}
     function tree_vertice_count(n)
      {var l=n[2],_gg_=1;
@@ -5358,8 +5254,7 @@
         for(;;)
          {var
            v=caml_check_bound(ch,i)[i+1],
-           jsoo_res=jsoo_self.random(),
-           j=jsoo_res*(i+1|0)|0,
+           j=jsoo_self.random()*(i+1|0)|0,
            _gd_=caml_check_bound(ch,j)[j+1];
           caml_check_bound(ch,i)[i+1]=_gd_;
           caml_check_bound(ch,j)[j+1]=v;
@@ -5384,18 +5279,14 @@
     regexp(_dE_);
     function compute_text_node(info)
      {var
-       jsoo_res=style.nodeFont,
-       font=opt_style(jsoo_res,"20px sans-serif"),
+       font=opt_style(style.nodeFont,"20px sans-serif"),
        _gb_=caml_obj_tag(text_size_div),
        d=
         250===_gb_
          ?text_size_div[1]
-         :246===_gb_?_ad_(text_size_div):text_size_div,
-       jsoo_obj=d.style;
-      jsoo_obj.font=font;
-      var
-       jsoo_7ffd078d=info.toString(),
-       txt=document.createTextNode(jsoo_7ffd078d);
+         :246===_gb_?_ad_(text_size_div):text_size_div;
+      d.style.font=font;
+      var txt=document.createTextNode(info.toString());
       _c2_(d,txt);
       var h=d.clientHeight,w=d.clientWidth;
       _c3_(d,txt);
@@ -5404,43 +5295,24 @@
        h$0=h+8|0,
        canvas=create_canvas(w$0,h$0),
        jsoo_self=canvas.getContext(jsoo_40467ac4),
-       jsoo_res$0=style.nodeBackgroundColor,
-       match=opt_style(jsoo_res$0,tree_color);
+       match=opt_style(style.nodeBackgroundColor,tree_color);
       jsoo_self.fillStyle=match;
       var jsoo_8573ceee=min(4,min(w$0,h$0)/2);
       jsoo_self.beginPath();
-      var jsoo_264a17d7=0+jsoo_8573ceee;
-      jsoo_self.moveTo(jsoo_264a17d7,0);
-      var
-       jsoo_bd4e937f=0+w$0,
-       jsoo_85bd9cf6=0+w$0,
-       jsoo_bd3a9ce2=0+jsoo_8573ceee;
-      jsoo_self.arcTo
-       (jsoo_bd4e937f,0,jsoo_85bd9cf6,jsoo_bd3a9ce2,jsoo_8573ceee);
-      var
-       jsoo_4ce58094=0+w$0,
-       jsoo_91c5b4ed=0+h$0,
-       jsoo_7584260d=0+w$0-jsoo_8573ceee,
-       jsoo_46988cce=0+h$0;
-      jsoo_self.arcTo
-       (jsoo_4ce58094,jsoo_91c5b4ed,jsoo_7584260d,jsoo_46988cce,jsoo_8573ceee);
-      var jsoo_30f001a8=0+h$0,jsoo_5b85d274=0+h$0-jsoo_8573ceee;
-      jsoo_self.arcTo(0,jsoo_30f001a8,0,jsoo_5b85d274,jsoo_8573ceee);
-      var jsoo_18f27425=0+jsoo_8573ceee;
-      jsoo_self.arcTo(0,0,jsoo_18f27425,0,jsoo_8573ceee);
+      jsoo_self.moveTo(0+jsoo_8573ceee,0);
+      jsoo_self.arcTo(0+w$0,0,0+w$0,0+jsoo_8573ceee,jsoo_8573ceee);
+      jsoo_self.arcTo(0+w$0,0+h$0,0+w$0-jsoo_8573ceee,0+h$0,jsoo_8573ceee);
+      jsoo_self.arcTo(0,0+h$0,0,0+h$0-jsoo_8573ceee,jsoo_8573ceee);
+      jsoo_self.arcTo(0,0,0+jsoo_8573ceee,0,jsoo_8573ceee);
       jsoo_self.fill();
       jsoo_self.font=font;
-      var jsoo_res$1=style.nodeColor,match$0=opt_style(jsoo_res$1,"black");
+      var match$0=opt_style(style.nodeColor,"black");
       jsoo_self.fillStyle=match$0;
       var match$1="center";
       jsoo_self.textAlign=match$1;
       var match$2="middle";
       jsoo_self.textBaseline=match$2;
-      var
-       jsoo_4987fd59=info.toString(),
-       jsoo_0073cac3=w$0/2,
-       jsoo_f1c12b03=h$0/2;
-      jsoo_self.fillText(jsoo_4987fd59,jsoo_0073cac3,jsoo_f1c12b03);
+      jsoo_self.fillText(info.toString(),w$0/2,h$0/2);
       return canvas}
     function compute_text_nodes(node_names,nodes)
      {try
@@ -5498,8 +5370,7 @@
     function load_tree(param)
      {function _fe_(s)
        {var
-         jsoo_1438c8f8=s.toString(),
-         info$0=json.parse(jsoo_1438c8f8),
+         info$0=json.parse(s.toString()),
          node_names=info$0[2],
          tree$0=info$0[1];
         randomize_tree(tree$0);
@@ -5757,14 +5628,11 @@
         return return$0([0,[0,vertices,edges,nodes,boxes],node_names$0])}
       return bind(getfile(tree_url),_fe_)}
     function load_image_info(param)
-     {function _fd_(s)
-       {var jsoo_291d7cde=s.toString(),jsoo_res=json.parse(jsoo_291d7cde);
-        return return$0(jsoo_res)}
+     {function _fd_(s){return return$0(json.parse(s.toString()))}
       return bind(getfile(_dK_),_fd_)}
     function close_button(over)
      {var
-       jsoo_res=style.buttonColor,
-       color=opt_style(jsoo_res,"#888888"),
+       color=opt_style(style.buttonColor,"#888888"),
        canvas=create_canvas(32,32),
        c=canvas.getContext(jsoo_40467ac4);
       c.save();
@@ -5780,53 +5648,50 @@
       c.restore();
       var _fc_=over?_dL_:_dM_,match=_fc_.toString();
       canvas.className=match;
-      var jsoo_obj=canvas.style,match$0="absolute";
-      jsoo_obj.position=match$0;
-      var jsoo_obj$0=canvas.style,match$1="0";
-      jsoo_obj$0.top=match$1;
-      var jsoo_obj$1=canvas.style,match$2="0";
-      jsoo_obj$1.right=match$2;
+      var match$0="absolute";
+      canvas.style.position=match$0;
+      var match$1="0";
+      canvas.style.top=match$1;
+      var match$2="0";
+      canvas.style.right=match$2;
       return canvas}
     function img_button(href,h,src)
      {function decoration(over)
        {var img=createImg(document),match=icon(src);
         img.src=match;
+        var jsoo_obj=createDiv(document),match$0="absolute";
+        jsoo_obj.style.position=match$0;
+        var match$1="38px";
+        jsoo_obj.style.width=match$1;
         var
-         jsoo_obj=createDiv(document),
          jsoo_obj$0=jsoo_obj.style,
-         match$0="absolute";
-        jsoo_obj$0.position=match$0;
-        var jsoo_obj$1=jsoo_obj.style,match$1="38px";
-        jsoo_obj$1.width=match$1;
-        var
-         jsoo_obj$2=jsoo_obj.style,
          match$2=_e_(caml_new_string(""+max(38,h)),_dN_).toString();
-        jsoo_obj$2.height=match$2;
-        var jsoo_obj$3=jsoo_obj.style,match$3="2px";
-        jsoo_obj$3.margin=match$3;
-        var jsoo_obj$4=jsoo_obj.style,match$4="2px";
-        jsoo_obj$4.borderRadius=match$4;
+        jsoo_obj$0.height=match$2;
+        var match$3="2px";
+        jsoo_obj.style.margin=match$3;
+        var match$4="2px";
+        jsoo_obj.style.borderRadius=match$4;
         var
          extra=max(6,44-h|0),
-         jsoo_obj$5=jsoo_obj.style,
+         jsoo_obj$1=jsoo_obj.style,
          match$5=
           _e_
             (caml_new_string(""+(extra/2|0)),
              _e_(_dP_,_e_(caml_new_string(""+(extra-(extra/2|0)|0)),_dO_))).toString
            ();
-        jsoo_obj$5.padding=match$5;
+        jsoo_obj$1.padding=match$5;
         var _fb_=over?_dQ_:_dS_,match$6=_e_(_dR_,_fb_).toString();
         jsoo_obj.className=match$6;
         _c2_(jsoo_obj,img);
         return jsoo_obj}
       var button=createDiv(document),match="button";
       button.className=match;
-      var jsoo_obj=button.style,match$0="48px";
-      jsoo_obj.width=match$0;
+      var match$0="48px";
+      button.style.width=match$0;
       var
-       jsoo_obj$0=button.style,
+       jsoo_obj=button.style,
        match$1=_e_(caml_new_string(""+(8+max(38,h)|0)),_dT_).toString();
-      jsoo_obj$0.height=match$1;
+      jsoo_obj.height=match$1;
       if(href)
        {var url=href[1],a=createA(document),match$2="_blank";
         a.target=match$2;
@@ -5839,41 +5704,39 @@
       _c2_(container,decoration(0));
       return button}
     function tooltip(jsoo_arg)
-     {var tooltip=createDiv(document),jsoo_obj=tooltip.style,match="absolute";
-      jsoo_obj.position=match;
+     {var tooltip=createDiv(document),match="absolute";
+      tooltip.style.position=match;
       var match$0="tooltip on";
       tooltip.className=match$0;
       tooltip.innerHTML=jsoo_arg;
       return tooltip}
     function show_on_click(jsoo_obj$0,jsoo_obj)
-     {var
-       activated=[0,0],
-       jsoo_arg=
-        handler
-         (function(ev)
-           {if(!activated[1])
-             {activated[1]=1;
-              var c=[0,jsoo_560e4fa1];
-              c[1]=
-              addEventListener
-               (document,
-                click,
-                handler
-                 (function(ev)
-                   {function _fa_(param)
-                     {_cU_(c[1],removeEventListener);
-                      var match="text on";
-                      jsoo_obj.className=match;
-                      activated[1]=0;
-                      return return$0(0)}
-                    bind(yield$0(0),_fa_);
-                    return jsoo_c11647d6}),
-                jsoo_c11647d6);
-              var match="text";
-              jsoo_obj.className=match}
-            stopPropagation(ev);
-            return jsoo_359432e5});
-      return jsoo_obj$0.onclick=jsoo_arg}
+     {var activated=[0,0];
+      return jsoo_obj$0.onclick=
+             handler
+              (function(ev)
+                {if(!activated[1])
+                  {activated[1]=1;
+                   var c=[0,jsoo_560e4fa1];
+                   c[1]=
+                   addEventListener
+                    (document,
+                     click,
+                     handler
+                      (function(ev)
+                        {function _fa_(param)
+                          {_cU_(c[1],removeEventListener);
+                           var match="text on";
+                           jsoo_obj.className=match;
+                           activated[1]=0;
+                           return return$0(0)}
+                         bind(yield$0(0),_fa_);
+                         return jsoo_c11647d6}),
+                     jsoo_c11647d6);
+                   var match="text";
+                   jsoo_obj.className=match}
+                 stopPropagation(ev);
+                 return jsoo_359432e5})}
     function show_image(all_messages,image_info,name,small_image)
      {return bind
               (image_info,
@@ -5894,59 +5757,49 @@
                  if(0<=i[1])
                   {var
                     _e4_=i[1],
-                    info=caml_check_bound(image_info,_e4_)[_e4_+1],
-                    jsoo_4ef51e52=i[1];
-                   jsoo_self$0.log(name,jsoo_4ef51e52);
-                   var
-                    container=createDiv(document),
-                    jsoo_obj=container.style,
-                    match="10px";
-                   jsoo_obj.margin=match;
-                   var jsoo_obj$0=container.style,match$0="absolute";
-                   jsoo_obj$0.position=match$0;
-                   var jsoo_obj$1=container.style,match$1="0";
-                   jsoo_obj$1.top=match$1;
-                   var jsoo_obj$2=container.style,match$2="0";
-                   jsoo_obj$2.bottom=match$2;
-                   var jsoo_obj$3=container.style,match$3="0";
-                   jsoo_obj$3.left=match$3;
-                   var jsoo_obj$4=container.style,match$4="0";
-                   jsoo_obj$4.right=match$4;
-                   var
-                    img_container=createDiv(document),
-                    jsoo_obj$5=img_container.style,
-                    match$5="absolute";
-                   jsoo_obj$5.position=match$5;
-                   var jsoo_obj$6=img_container.style,match$6="0";
-                   jsoo_obj$6.top=match$6;
-                   var jsoo_obj$7=img_container.style,match$7="4em";
-                   jsoo_obj$7.bottom=match$7;
-                   var jsoo_obj$8=img_container.style,match$8="38px";
-                   jsoo_obj$8.left=match$8;
-                   var jsoo_obj$9=img_container.style,match$9="38px";
-                   jsoo_obj$9.right=match$9;
+                    info=caml_check_bound(image_info,_e4_)[_e4_+1];
+                   jsoo_self$0.log(name,i[1]);
+                   var container=createDiv(document),match="10px";
+                   container.style.margin=match;
+                   var match$0="absolute";
+                   container.style.position=match$0;
+                   var match$1="0";
+                   container.style.top=match$1;
+                   var match$2="0";
+                   container.style.bottom=match$2;
+                   var match$3="0";
+                   container.style.left=match$3;
+                   var match$4="0";
+                   container.style.right=match$4;
+                   var img_container=createDiv(document),match$5="absolute";
+                   img_container.style.position=match$5;
+                   var match$6="0";
+                   img_container.style.top=match$6;
+                   var match$7="4em";
+                   img_container.style.bottom=match$7;
+                   var match$8="38px";
+                   img_container.style.left=match$8;
+                   var match$9="38px";
+                   img_container.style.right=match$9;
                    var
                     wrap=
                      function(elt)
-                      {var
-                        w=createDiv(document),
-                        jsoo_obj=w.style,
-                        match="absolute";
-                       jsoo_obj.position=match;
-                       var jsoo_obj$0=w.style,match$0="0";
-                       jsoo_obj$0.top=match$0;
-                       var jsoo_obj$1=w.style,match$1="0";
-                       jsoo_obj$1.bottom=match$1;
-                       var jsoo_obj$2=w.style,match$2="0";
-                       jsoo_obj$2.left=match$2;
-                       var jsoo_obj$3=w.style,match$3="0";
-                       jsoo_obj$3.right=match$3;
-                       var jsoo_obj$4=w.style,match$4="auto";
-                       jsoo_obj$4.margin=match$4;
+                      {var w=createDiv(document),match="absolute";
+                       w.style.position=match;
+                       var match$0="0";
+                       w.style.top=match$0;
+                       var match$1="0";
+                       w.style.bottom=match$1;
+                       var match$2="0";
+                       w.style.left=match$2;
+                       var match$3="0";
+                       w.style.right=match$3;
+                       var match$4="auto";
+                       w.style.margin=match$4;
                        var
-                        jsoo_obj$5=w.style,
+                        jsoo_obj=w.style,
                         match$5=_e_(caml_new_string(""+info[5]),_dU_).toString();
-                       jsoo_obj$5.maxHeight=match$5;
+                       jsoo_obj.maxHeight=match$5;
                        _c2_(w,elt);
                        return w},
                     img=createImg(document),
@@ -5960,24 +5813,22 @@
                     {var
                       small_image$0=match$10[1],
                       canvas=create_canvas(info[4],info[5]),
-                      c=canvas.getContext(jsoo_40467ac4),
-                      jsoo_60dae01d=info[4],
-                      jsoo_591b6901=info[5];
-                     c.drawImage(small_image$0,0,0,jsoo_60dae01d,jsoo_591b6901);
-                     var jsoo_obj$10=canvas.style,match$11="block";
-                     jsoo_obj$10.display=match$11;
-                     var jsoo_obj$11=canvas.style,match$12="auto";
-                     jsoo_obj$11.height=match$12;
-                     var jsoo_obj$12=canvas.style,match$13="auto";
-                     jsoo_obj$12.width=match$13;
-                     var jsoo_obj$13=canvas.style,match$14="100%";
-                     jsoo_obj$13.maxWidth=match$14;
-                     var jsoo_obj$14=canvas.style,match$15="100%";
-                     jsoo_obj$14.maxHeight=match$15;
-                     var jsoo_obj$15=canvas.style,match$16="auto";
-                     jsoo_obj$15.marginLeft=match$16;
-                     var jsoo_obj$16=canvas.style,match$17="auto";
-                     jsoo_obj$16.marginRight=match$17;
+                      c=canvas.getContext(jsoo_40467ac4);
+                     c.drawImage(small_image$0,0,0,info[4],info[5]);
+                     var match$11="block";
+                     canvas.style.display=match$11;
+                     var match$12="auto";
+                     canvas.style.height=match$12;
+                     var match$13="auto";
+                     canvas.style.width=match$13;
+                     var match$14="100%";
+                     canvas.style.maxWidth=match$14;
+                     var match$15="100%";
+                     canvas.style.maxHeight=match$15;
+                     var match$16="auto";
+                     canvas.style.marginLeft=match$16;
+                     var match$17="auto";
+                     canvas.style.marginRight=match$17;
                      var w=wrap(canvas);
                      _c2_(img_container,w);
                      var
@@ -5991,24 +5842,22 @@
                    else
                     var jsoo_arg=_e_(_d3_,_e_(name,_d2_)).toString();
                    img.src=jsoo_arg;
-                   var jsoo_arg$0=info[4];
-                   img.width=jsoo_arg$0;
-                   var jsoo_arg$1=info[5];
-                   img.height=jsoo_arg$1;
-                   var jsoo_obj$17=img.style,match$19="block";
-                   jsoo_obj$17.display=match$19;
-                   var jsoo_obj$18=img.style,match$20="auto";
-                   jsoo_obj$18.height=match$20;
-                   var jsoo_obj$19=img.style,match$21="auto";
-                   jsoo_obj$19.width=match$21;
-                   var jsoo_obj$20=img.style,match$22="100%";
-                   jsoo_obj$20.maxWidth=match$22;
-                   var jsoo_obj$21=img.style,match$23="100%";
-                   jsoo_obj$21.maxHeight=match$23;
-                   var jsoo_obj$22=img.style,match$24="auto";
-                   jsoo_obj$22.marginLeft=match$24;
-                   var jsoo_obj$23=img.style,match$25="auto";
-                   jsoo_obj$23.marginRight=match$25;
+                   img.width=info[4];
+                   img.height=info[5];
+                   var match$19="block";
+                   img.style.display=match$19;
+                   var match$20="auto";
+                   img.style.height=match$20;
+                   var match$21="auto";
+                   img.style.width=match$21;
+                   var match$22="100%";
+                   img.style.maxWidth=match$22;
+                   var match$23="100%";
+                   img.style.maxHeight=match$23;
+                   var match$24="auto";
+                   img.style.marginLeft=match$24;
+                   var match$25="auto";
+                   img.style.marginRight=match$25;
                    var
                     w$0=wrap(img),
                     handle_error=
@@ -6020,8 +5869,8 @@
                    img.onabort=match$27;
                    _c2_(img_container,w$0);
                    _c2_(container,img_container);
-                   var legend=createDiv(document),jsoo_arg$2=info[3];
-                   legend.innerHTML=jsoo_arg$2;
+                   var legend=createDiv(document);
+                   legend.innerHTML=info[3];
                    var
                     match$28=
                      handler
@@ -6029,64 +5878,60 @@
                    legend.onclick=match$28;
                    var match$29="text";
                    legend.className=match$29;
-                   var jsoo_obj$24=legend.style,match$30="absolute";
-                   jsoo_obj$24.position=match$30;
-                   var jsoo_obj$25=legend.style,match$31="0";
-                   jsoo_obj$25.bottom=match$31;
-                   var jsoo_obj$26=legend.style,match$32="auto";
-                   jsoo_obj$26.marginRight=match$32;
-                   var jsoo_obj$27=legend.style,match$33="auto";
-                   jsoo_obj$27.marginLeft=match$33;
+                   var match$30="absolute";
+                   legend.style.position=match$30;
+                   var match$31="0";
+                   legend.style.bottom=match$31;
+                   var match$32="auto";
+                   legend.style.marginRight=match$32;
+                   var match$33="auto";
+                   legend.style.marginLeft=match$33;
                    _c2_(container,legend);
                    var background=createDiv(document);
                    _c2_(background,container);
                    var match$34="overlay";
                    background.className=match$34;
-                   var jsoo_obj$28=background.style,match$35="100%";
-                   jsoo_obj$28.width=match$35;
-                   var jsoo_obj$29=background.style,match$36="100%";
-                   jsoo_obj$29.height=match$36;
-                   var jsoo_obj$30=background.style,match$37="absolute";
-                   jsoo_obj$30.position=match$37;
-                   var jsoo_obj$31=background.style,match$38="0";
-                   jsoo_obj$31.top=match$38;
-                   var jsoo_obj$32=background.style,match$39="0";
-                   jsoo_obj$32.left=match$39;
-                   var jsoo_obj$33=background.style,match$40="1";
-                   jsoo_obj$33.zIndex=match$40;
+                   var match$35="100%";
+                   background.style.width=match$35;
+                   var match$36="100%";
+                   background.style.height=match$36;
+                   var match$37="absolute";
+                   background.style.position=match$37;
+                   var match$38="0";
+                   background.style.top=match$38;
+                   var match$39="0";
+                   background.style.left=match$39;
+                   var match$40="1";
+                   background.style.zIndex=match$40;
                    var button=createDiv(document),match$41="button";
                    button.className=match$41;
-                   var jsoo_obj$34=button.style,match$42="absolute";
-                   jsoo_obj$34.position=match$42;
-                   var jsoo_obj$35=button.style,match$43="0";
-                   jsoo_obj$35.top=match$43;
-                   var jsoo_obj$36=button.style,match$44="0";
-                   jsoo_obj$36.right=match$44;
-                   var jsoo_obj$37=button.style,match$45="pointer";
-                   jsoo_obj$37.cursor=match$45;
+                   var match$42="absolute";
+                   button.style.position=match$42;
+                   var match$43="0";
+                   button.style.top=match$43;
+                   var match$44="0";
+                   button.style.right=match$44;
+                   var match$45="pointer";
+                   button.style.cursor=match$45;
                    _c2_(button,close_button(1));
                    _c2_(button,close_button(0));
                    var
-                    jsoo_res=messages.close,
                     tt=
                      tooltip
-                      (opt_style(jsoo_res,"Click anywhere to return to the tree")),
-                    jsoo_obj$38=tt.style,
+                      (opt_style
+                        (messages.close,"Click anywhere to return to the tree")),
                     match$46="32px";
-                   jsoo_obj$38.right=match$46;
-                   var jsoo_obj$39=tt.style,match$47="20px";
-                   jsoo_obj$39.top=match$47;
+                   tt.style.right=match$46;
+                   var match$47="20px";
+                   tt.style.top=match$47;
                    _c2_(button,tt);
                    _c2_(background,button);
-                   var
-                    buttons=createDiv(document),
-                    jsoo_obj$40=buttons.style,
-                    match$48="absolute";
-                   jsoo_obj$40.position=match$48;
-                   var jsoo_obj$41=buttons.style,match$49="0";
-                   jsoo_obj$41.top=match$49;
-                   var jsoo_obj$42=buttons.style,match$50="0";
-                   jsoo_obj$42.left=match$50;
+                   var buttons=createDiv(document),match$48="absolute";
+                   buttons.style.position=match$48;
+                   var match$49="0";
+                   buttons.style.top=match$49;
+                   var match$50="0";
+                   buttons.style.left=match$50;
                    var
                     suffix=
                      language[1]==="en"
@@ -6094,16 +5939,15 @@
                       :_e_(_d1_,caml_js_to_string(language[1])),
                     url$0=_e_(_dW_,_e_(caml_js_to_string(info[2]),suffix)),
                     commons=img_button([0,url$0.toString()],52,_dX_),
-                    jsoo_res$0=messages.wikimediaCommons,
                     tt$0=
                      tooltip
                       (opt_style
-                        (jsoo_res$0,"See image description on Wikimedia Commons")),
-                    jsoo_obj$43=tt$0.style,
+                        (messages.wikimediaCommons,
+                         "See image description on Wikimedia Commons")),
                     match$51="48px";
-                   jsoo_obj$43.left=match$51;
-                   var jsoo_obj$44=tt$0.style,match$52="12px";
-                   jsoo_obj$44.top=match$52;
+                   tt$0.style.left=match$51;
+                   var match$52="12px";
+                   tt$0.style.top=match$52;
                    _c2_(commons,tt$0);
                    _c2_(buttons,commons);
                    var
@@ -6119,10 +5963,8 @@
                           {var refer=param[3],lang$0=param[2],name=param[1];
                            if(lang$0===lang)
                             {empty[1]=0;
-                             var
-                              a=createA(document),
-                              jsoo_res=document.createTextNode(name);
-                             _c2_(a,jsoo_res);
+                             var a=createA(document);
+                             _c2_(a,document.createTextNode(name));
                              var match="_blank";
                              a.target=match;
                              var
@@ -6141,36 +5983,32 @@
                          _e__);
                        if(empty[1])return 0;
                        count[1]++;
-                       var
-                        dd=createDd(document),
-                        jsoo_res=document.createTextNode(jsoo_d9a0c31d);
-                       _c2_(dd,jsoo_res);
+                       var dd=createDd(document);
+                       _c2_(dd,document.createTextNode(jsoo_d9a0c31d));
                        _c2_(dl,dd);
                        var dt=createDt(document);
                        _c2_(dt,ul);
                        return _c2_(dl,dt)},
-                    jsoo_res$1=messages.language,
                     _e8_=language[1];
-                   list(opt_style(jsoo_res$1,"In English"),_e8_);
+                   list(opt_style(messages.language,"In English"),_e8_);
                    if(language[1]!=="en")list("In English","en");
                    if(0<count[1])
                     _c2_(txt,dl);
                    else
-                    {var
-                      jsoo_res$3=messages.noRef,
-                      jsoo_236d2dc2=opt_style(jsoo_res$3,"No reference found."),
-                      jsoo_res$4=document.createTextNode(jsoo_236d2dc2);
-                     _c2_(txt,jsoo_res$4)}
+                    _c2_
+                     (txt,
+                      document.createTextNode
+                       (opt_style(messages.noRef,"No reference found.")));
                    var match$53="text on";
                    txt.className=match$53;
-                   var jsoo_obj$45=txt.style,match$54="absolute";
-                   jsoo_obj$45.position=match$54;
-                   var jsoo_obj$46=txt.style,match$55="48px";
-                   jsoo_obj$46.left=match$55;
-                   var jsoo_obj$47=txt.style,match$56="62px";
-                   jsoo_obj$47.top=match$56;
-                   var jsoo_obj$48=txt.style,match$57="nowrap";
-                   jsoo_obj$48.whiteSpace=match$57;
+                   var match$54="absolute";
+                   txt.style.position=match$54;
+                   var match$55="48px";
+                   txt.style.left=match$55;
+                   var match$56="62px";
+                   txt.style.top=match$56;
+                   var match$57="nowrap";
+                   txt.style.whiteSpace=match$57;
                    _c2_(wikipedia,txt);
                    _c2_(buttons,wikipedia);
                    var
@@ -6185,15 +6023,12 @@
                       (function(ev){stopPropagation(ev);return jsoo_c11647d6});
                    buttons.onclick=match$59;
                    _c2_(background,buttons);
-                   var jsoo_res$2=document.body;
-                   _c2_(jsoo_res$2,background);
+                   _c2_(document.body,background);
                    var
                     match$60=
                      handler
                       (function(param)
-                        {var jsoo_res=document.body;
-                         _c3_(jsoo_res,background);
-                         return jsoo_c11647d6});
+                        {_c3_(document.body,background);return jsoo_c11647d6});
                    background.onclick=match$60}
                  return return$0(0)})}
     var information_en=_d4_.toString();
@@ -6212,31 +6047,29 @@
         var info=_eX_}
       var txt=createDiv(document),match="text";
       txt.className=match;
-      var jsoo_obj=txt.style,match$0="80%";
-      jsoo_obj.width=match$0;
-      var jsoo_obj$0=txt.style,match$1="auto";
-      jsoo_obj$0.margin=match$1;
+      var match$0="80%";
+      txt.style.width=match$0;
+      var match$1="auto";
+      txt.style.margin=match$1;
       txt.innerHTML=info;
-      var cell=createDiv(document),jsoo_obj$1=cell.style,match$2="table-cell";
-      jsoo_obj$1.display=match$2;
-      var jsoo_obj$2=cell.style,match$3="middle";
-      jsoo_obj$2.verticalAlign=match$3;
+      var cell=createDiv(document),match$2="table-cell";
+      cell.style.display=match$2;
+      var match$3="middle";
+      cell.style.verticalAlign=match$3;
       _c2_(cell,txt);
-      var table=createDiv(document),jsoo_obj$3=table.style,match$4="100%";
-      jsoo_obj$3.width=match$4;
-      var jsoo_obj$4=table.style,match$5="100%";
-      jsoo_obj$4.height=match$5;
-      var jsoo_obj$5=table.style,match$6="table";
-      jsoo_obj$5.display=match$6;
+      var table=createDiv(document),match$4="100%";
+      table.style.width=match$4;
+      var match$5="100%";
+      table.style.height=match$5;
+      var match$6="table";
+      table.style.display=match$6;
       _c2_(table,cell);
       var overlay=createDiv(document),match$7="overlay translucent";
       overlay.className=match$7;
       _c2_(overlay,table);
       var c=[0,jsoo_560e4fa1];
       function close_info(param)
-       {var jsoo_res=document.body;
-        _c3_(jsoo_res,overlay);
-        return _cU_(c[1],removeEventListener)}
+       {_c3_(document.body,overlay);return _cU_(c[1],removeEventListener)}
       c[1]=
       addEventListener
        (document,
@@ -6248,55 +6081,46 @@
             close_info(0);
             return jsoo_359432e5}),
         jsoo_c11647d6);
-      var
-       button=createButton(0,0,document),
-       jsoo_res=messages.ok,
-       jsoo_f7e04557=opt_style(jsoo_res,"OK"),
-       jsoo_res$0=document.createTextNode(jsoo_f7e04557);
-      _c2_(button,jsoo_res$0);
+      var button=createButton(0,0,document);
+      _c2_(button,document.createTextNode(opt_style(messages.ok,"OK")));
       var
        match$8=
         handler(function(param){close_info(0);return jsoo_359432e5});
       button.onclick=match$8;
-      var
-       button_div=createDiv(document),
-       jsoo_obj$6=button_div.style,
-       match$9="center";
-      jsoo_obj$6.textAlign=match$9;
-      var jsoo_obj$7=button_div.style,match$10="2em auto";
-      jsoo_obj$7.margin=match$10;
+      var button_div=createDiv(document),match$9="center";
+      button_div.style.textAlign=match$9;
+      var match$10="2em auto";
+      button_div.style.margin=match$10;
       _c2_(button_div,button);
       _c2_(txt,button_div);
-      var jsoo_res$1=document.body;
-      return _c2_(jsoo_res$1,overlay)}
+      return _c2_(document.body,overlay)}
     function unsupported_messages(param)
      {var txt=createDiv(document),match="text";
       txt.className=match;
-      var jsoo_obj=txt.style,match$0="80%";
-      jsoo_obj.width=match$0;
-      var jsoo_obj$0=txt.style,match$1="auto";
-      jsoo_obj$0.margin=match$1;
+      var match$0="80%";
+      txt.style.width=match$0;
+      var match$1="auto";
+      txt.style.margin=match$1;
       var
        match$2=
         'Unfortunately, this browser is not supported. Please try again with another browser, such as <a href="http://www.mozilla.org/firefox/">Firefox</a>, <a href="http://www.google.com/chrome/">Chrome</a> or <a href="http://www.opera.com/">Opera</a>.';
       txt.innerHTML=match$2;
-      var cell=createDiv(document),jsoo_obj$1=cell.style,match$3="table-cell";
-      jsoo_obj$1.display=match$3;
-      var jsoo_obj$2=cell.style,match$4="middle";
-      jsoo_obj$2.verticalAlign=match$4;
+      var cell=createDiv(document),match$3="table-cell";
+      cell.style.display=match$3;
+      var match$4="middle";
+      cell.style.verticalAlign=match$4;
       _c2_(cell,txt);
-      var table=createDiv(document),jsoo_obj$3=table.style,match$5="100%";
-      jsoo_obj$3.width=match$5;
-      var jsoo_obj$4=table.style,match$6="100%";
-      jsoo_obj$4.height=match$6;
-      var jsoo_obj$5=table.style,match$7="table";
-      jsoo_obj$5.display=match$7;
+      var table=createDiv(document),match$5="100%";
+      table.style.width=match$5;
+      var match$6="100%";
+      table.style.height=match$6;
+      var match$7="table";
+      table.style.display=match$7;
       _c2_(table,cell);
       var overlay=createDiv(document),match$8="overlay";
       overlay.className=match$8;
       _c2_(overlay,table);
-      var jsoo_res=document.body;
-      return _c2_(jsoo_res,overlay)}
+      return _c2_(document.body,overlay)}
     _o_(function(src){load_image(icon(src));return 0},icons);
     var
      all_messages=load_messages(0),
@@ -6318,34 +6142,21 @@
             return bind
                     (all_messages,
                      function(all_messages)
-                      {var
-                        page=document.documentElement,
-                        jsoo_obj=page.style,
-                        match="hidden";
-                       jsoo_obj.overflow=match;
-                       var jsoo_obj$0=page.style,match$0="100%";
-                       jsoo_obj$0.height=match$0;
-                       var
-                        jsoo_obj$1=document.body,
-                        jsoo_obj$2=jsoo_obj$1.style,
-                        match$1="hidden";
-                       jsoo_obj$2.overflow=match$1;
-                       var
-                        jsoo_obj$3=document.body,
-                        jsoo_obj$4=jsoo_obj$3.style,
-                        match$2="0px";
-                       jsoo_obj$4.margin=match$2;
-                       var
-                        jsoo_obj$5=document.body,
-                        jsoo_obj$6=jsoo_obj$5.style,
-                        match$3="100%";
-                       jsoo_obj$6.height=match$3;
+                      {var page=document.documentElement,match="hidden";
+                       page.style.overflow=match;
+                       var match$0="100%";
+                       page.style.height=match$0;
+                       var match$1="hidden";
+                       document.body.style.overflow=match$1;
+                       var match$2="0px";
+                       document.body.style.margin=match$2;
+                       var match$3="100%";
+                       document.body.style.height=match$3;
                        var
                         w=page.clientWidth,
                         h=page.clientHeight,
-                        jsoo_obj$7=create_canvas(w,h),
-                        jsoo_res=document.body;
-                       _c2_(jsoo_res,jsoo_obj$7);
+                        jsoo_obj=create_canvas(w,h);
+                       _c2_(document.body,jsoo_obj);
                        var
                         tr=[0,[0,zero,a]],
                         tr$0=[0,tr[1]],
@@ -6354,19 +6165,12 @@
                        redraw_funct[1]=
                        function(param)
                         {need_redraw[1]=0;
-                         var jsoo_9ae31205="transform";
-                         jsoo_self$0.time(jsoo_9ae31205);
+                         jsoo_self$0.time("transform");
                          var
                           w$4=page.clientWidth,
                           h$3=page.clientHeight,
-                          jsoo_res$5=jsoo_obj$7.width;
-                         if(w$4!==jsoo_res$5)
-                          var switch$0=0;
-                         else
-                          var
-                           jsoo_res$6=jsoo_obj$7.height,
-                           switch$0=h$3!==jsoo_res$6?0:1;
-                         if(!switch$0){jsoo_obj$7.width=w$4;jsoo_obj$7.height=h$3}
+                          switch$0=w$4!==jsoo_obj.width?0:h$3!==jsoo_obj.height?0:1;
+                         if(!switch$0){jsoo_obj.width=w$4;jsoo_obj.height=h$3}
                          var
                           _eR_=tr$0[1],
                           t=_eR_[2],
@@ -6382,43 +6186,32 @@
                              var _eC_=i+1|0;
                              if(_eA_!==i){var i=_eC_;continue}
                              break}}
-                         var jsoo_43cd1213="transform";
-                         jsoo_self$0.timeEnd(jsoo_43cd1213);
-                         var jsoo_7a915df5="draw";
-                         jsoo_self$0.time(jsoo_7a915df5);
+                         jsoo_self$0.timeEnd("transform");
+                         jsoo_self$0.time("draw");
                          var
-                          c$0=jsoo_obj$7.getContext(jsoo_40467ac4),
-                          transf$0=screen_transform(jsoo_obj$7),
+                          c$0=jsoo_obj.getContext(jsoo_40467ac4),
+                          transf$0=screen_transform(jsoo_obj),
                           dy$1=transf$0[4],
                           dx$1=transf$0[3],
                           ry$1=transf$0[2],
-                          rx$1=transf$0[1],
-                          jsoo_0b22c4fa=jsoo_obj$7.width,
-                          jsoo_14d8bcb3=jsoo_obj$7.height;
-                         c$0.clearRect(0,0,jsoo_0b22c4fa,jsoo_14d8bcb3);
-                         var jsoo_res=style.padding,padding=opt_style(jsoo_res,0);
+                          rx$1=transf$0[1];
+                         c$0.clearRect(0,0,jsoo_obj.width,jsoo_obj.height);
+                         var padding=opt_style(style.padding,0);
                          c$0.beginPath();
                          ellipse_arc
                           (c$0,dx$1,dy$1,rx$1+padding,ry$1+padding,0,7,jsoo_359432e5);
                          function _eD_(jsoo_arg)
-                          {c$0.fillStyle=jsoo_arg;
-                           var jsoo_res=c$0.fill();
-                           return jsoo_res}
-                         var jsoo_res$0=style.backgroundColor;
-                         _cX_(jsoo_res$0,_eD_);
+                          {c$0.fillStyle=jsoo_arg;return c$0.fill()}
+                         _cX_(style.backgroundColor,_eD_);
                          function _eE_(jsoo_arg)
                           {c$0.lineWidth=1;
                            c$0.strokeStyle=jsoo_arg;
-                           var jsoo_res=c$0.stroke();
-                           return jsoo_res}
-                         var jsoo_res$1=style.boundaryColor;
-                         _cX_(jsoo_res$1,_eE_);
+                           return c$0.stroke()}
+                         _cX_(style.boundaryColor,_eE_);
                          c$0.lineWidth=2;
                          var match="round";
                          c$0.lineCap=match;
-                         var
-                          jsoo_res$2=style.treeColor,
-                          match$0=opt_style(jsoo_res$2,tree_color);
+                         var match$0=opt_style(style.treeColor,tree_color);
                          c$0.strokeStyle=match$0;
                          var
                           ry$2=transf$0[2],
@@ -6447,14 +6240,8 @@
                                   ry$0=transf$0[2],
                                   rx$0=transf$0[1];
                                  c$0.beginPath();
-                                 var
-                                  jsoo_8b7209fa=z1[1]*rx$0+dx$0,
-                                  jsoo_4795e353=z1[2]*ry$0+dy$0;
-                                 c$0.moveTo(jsoo_8b7209fa,jsoo_4795e353);
-                                 var
-                                  jsoo_c7d896e1=z2[1]*rx$0+dx$0,
-                                  jsoo_0074c8e1=z2[2]*ry$0+dy$0;
-                                 c$0.lineTo(jsoo_c7d896e1,jsoo_0074c8e1);
+                                 c$0.moveTo(z1[1]*rx$0+dx$0,z1[2]*ry$0+dy$0);
+                                 c$0.lineTo(z2[1]*rx$0+dx$0,z2[2]*ry$0+dy$0);
                                  c$0.stroke()}
                                else
                                 {var
@@ -6474,18 +6261,13 @@
                                    (jsoo_9c9fa101-jsoo_59c7894e+6.28318530717958623)%
                                    6.28318530717958623;
                                  if(rx==ry)
-                                  {var
-                                    jsoo_9a69fb00=z0[1]*rx+dx,
-                                    jsoo_61015141=z0[2]*rx+dy,
-                                    jsoo_3143e928=rd*rx,
-                                    jsoo_71d03030=!!(3.14159265358979312<alpha?1:0);
-                                   c$0.arc
-                                    (jsoo_9a69fb00,
-                                     jsoo_61015141,
-                                     jsoo_3143e928,
-                                     jsoo_59c7894e,
-                                     jsoo_9c9fa101,
-                                     jsoo_71d03030)}
+                                  c$0.arc
+                                   (z0[1]*rx+dx,
+                                    z0[2]*rx+dy,
+                                    rd*rx,
+                                    jsoo_59c7894e,
+                                    jsoo_9c9fa101,
+                                    !!(3.14159265358979312<alpha?1:0));
                                  else
                                   ellipse_arc
                                    (c$0,
@@ -6542,33 +6324,18 @@
                                     h$0=h/img_d*rd$1;
                                    if(circle)
                                     {c$0.beginPath();
-                                     var
-                                      jsoo_res$4=style.nodeBackgroundColor,
-                                      match$2=opt_style(jsoo_res$4,tree_color);
+                                     var match$2=opt_style(style.nodeBackgroundColor,tree_color);
                                      c$0.fillStyle=match$2;
-                                     var
-                                      jsoo_906dd4a4=z[1]*rx$2+dx$1,
-                                      jsoo_457c32fa=z[2]*ry$2+dy$1,
-                                      jsoo_225e3236=Math.sqrt(w$0*w$0+h$0*h$0);
                                      c$0.arc
-                                      (jsoo_906dd4a4,
-                                       jsoo_457c32fa,
-                                       jsoo_225e3236,
+                                      (z[1]*rx$2+dx$1,
+                                       z[2]*ry$2+dy$1,
+                                       Math.sqrt(w$0*w$0+h$0*h$0),
                                        0,
                                        7,
                                        jsoo_359432e5);
                                      c$0.fill()}
-                                   var
-                                    jsoo_6dd68bbc=z[1]*rx$2+dx$1-w$0,
-                                    jsoo_574ec8a3=z[2]*ry$2+dy$1-h$0,
-                                    jsoo_01d42062=2*w$0,
-                                    jsoo_63d5e631=2*h$0;
                                    c$0.drawImage
-                                    (txt,
-                                     jsoo_6dd68bbc,
-                                     jsoo_574ec8a3,
-                                     jsoo_01d42062,
-                                     jsoo_63d5e631);
+                                    (txt,z[1]*rx$2+dx$1-w$0,z[2]*ry$2+dy$1-h$0,2*w$0,2*h$0);
                                    var switch$2=1}
                                  else
                                   var switch$1=0,switch$2=0}
@@ -6617,19 +6384,8 @@
                                       h$2=h$1*scale/2;
                                      if(1<w$2)
                                       if(1<h$2)
-                                       {var
-                                         x$0=z$0[1]*rx$2+dx$1,
-                                         y$0=z$0[2]*ry$2+dy$1,
-                                         jsoo_cfd8c073=x$0-w$2,
-                                         jsoo_9bc70efb=y$0-h$2,
-                                         jsoo_3e369823=2*w$2,
-                                         jsoo_9fde1909=2*h$2;
-                                        c$0.drawImage
-                                         (img$1,
-                                          jsoo_cfd8c073,
-                                          jsoo_9bc70efb,
-                                          jsoo_3e369823,
-                                          jsoo_9fde1909);
+                                       {var x$0=z$0[1]*rx$2+dx$1,y$0=z$0[2]*ry$2+dy$1;
+                                        c$0.drawImage(img$1,x$0-w$2,y$0-h$2,2*w$2,2*h$2);
                                         caml_check_bound(boxes[1],i$0)[i$0+1]=x$0;
                                         caml_check_bound(boxes[2],i$0)[i$0+1]=y$0;
                                         caml_check_bound(boxes[3],i$0)[i$0+1]=w$2;
@@ -6652,13 +6408,8 @@
                              var _eJ_=i$0+1|0;
                              if(_eI_!==i$0){var i$0=_eJ_;continue}
                              break}}
-                         var jsoo_f63e0613="draw";
-                         jsoo_self$0.timeEnd(jsoo_f63e0613);
-                         var
-                          jsoo_55bbccad=image_count[1],
-                          jsoo_0372b772=large_image_count[1],
-                          jsoo_res$3=jsoo_self$0.log(jsoo_55bbccad,jsoo_0372b772);
-                         return jsoo_res$3};
+                         jsoo_self$0.timeEnd("draw");
+                         return jsoo_self$0.log(image_count[1],large_image_count[1])};
                        perform_redraw(0);
                        var
                         match$4=
@@ -6668,13 +6419,7 @@
                               page=document.documentElement,
                               w=page.clientWidth,
                               h=page.clientHeight,
-                              jsoo_res=jsoo_obj$7.width;
-                             if(w!==jsoo_res)
-                              var switch$0=0;
-                             else
-                              var
-                               jsoo_res$0=jsoo_obj$7.height,
-                               switch$0=h!==jsoo_res$0?0:1;
+                              switch$0=w!==jsoo_obj.width?0:h!==jsoo_obj.height?0:1;
                              if(!switch$0)schedule_redraw(1);
                              return jsoo_c11647d6});
                        window.onresize=match$4;
@@ -6699,113 +6444,110 @@
                         {var i=find_box(boxes,x,y);
                          if(-1===i)
                           {if(on_image[1])
-                            {var jsoo_obj=jsoo_obj$7.style,match="";
-                             jsoo_obj.cursor=match;
+                            {var match="";
+                             jsoo_obj.style.cursor=match;
                              on_image[1]=0;
                              return 0}
                            return 0}
                          if(on_image[1])return 0;
-                         var jsoo_obj$0=jsoo_obj$7.style,match$0="pointer";
-                         jsoo_obj$0.cursor=match$0;
+                         var match$0="pointer";
+                         jsoo_obj.style.cursor=match$0;
                          on_image[1]=1;
                          return 0}
                        var
                         match$5=
                          handler
                           (function(jsoo_obj)
-                            {var jsoo_res=jsoo_obj.clientY,jsoo_res$0=jsoo_obj.clientX;
-                             update_cursor(jsoo_res$0,jsoo_res);
+                            {update_cursor(jsoo_obj.clientX,jsoo_obj.clientY);
                              return jsoo_359432e5});
-                       jsoo_obj$7.onmousemove=match$5;
-                       var
-                        jsoo_arg=
-                         handler
-                          (function(jsoo_obj)
-                            {var
-                              x0=jsoo_obj.clientX,
-                              y0=jsoo_obj.clientY,
-                              started=[0,0],
-                              c1=
-                               addEventListener
-                                (document,
-                                 mousemove,
-                                 handler
-                                  (function(ev)
-                                    {var x1=ev.clientX,y1=ev.clientY;
-                                     if(started[1])
-                                      var switch$0=0;
-                                     else
-                                      {if(4<abs(x1-x0|0))
-                                        var switch$1=1;
-                                       else
-                                        if(4<abs(y1-y0|0))
-                                         var switch$1=1;
-                                        else
-                                         var switch$0=0,switch$1=0;
-                                       if(switch$1)
-                                        {started[1]=1;
-                                         var jsoo_obj=jsoo_obj$7.style,match="move";
-                                         jsoo_obj.cursor=match;
-                                         var switch$0=1}}
-                                     if(started[1])
-                                      {var
-                                        z0=from_screen(jsoo_obj$7,x0,y0),
-                                        z1=from_screen(jsoo_obj$7,x1,y1),
-                                        match$0=tr[1],
-                                        p=match$0[1],
-                                        z0$0=caml_call1(transl(neg(p)),z0),
-                                        p$0=compute_translation(z0$0,z1);
-                                       tr$0[1]=[0,p$0,a];
-                                       schedule_redraw(1)}
-                                     stopPropagation(ev);
-                                     return jsoo_c11647d6}),
-                                 jsoo_c11647d6),
-                              c2=[0,jsoo_560e4fa1];
-                             c2[1]=
+                       jsoo_obj.onmousemove=match$5;
+                       jsoo_obj.onmousedown=
+                       handler
+                        (function(jsoo_obj$0)
+                          {var
+                            x0=jsoo_obj$0.clientX,
+                            y0=jsoo_obj$0.clientY,
+                            started=[0,0],
+                            c1=
                              addEventListener
                               (document,
-                               mouseup,
+                               mousemove,
                                handler
-                                (function(jsoo_obj)
-                                  {removeEventListener(c1);
-                                   _cU_(c2[1],removeEventListener);
+                                (function(ev)
+                                  {var x1=ev.clientX,y1=ev.clientY;
                                    if(started[1])
-                                    {var jsoo_obj$0=jsoo_obj$7.style,match="";
-                                     jsoo_obj$0.cursor=match;
-                                     var y=jsoo_obj.clientY,x=jsoo_obj.clientX;
-                                     tr[1]=tr$0[1];
-                                     on_image[1]=0;
-                                     update_cursor(x,y)}
+                                    var switch$0=0;
                                    else
+                                    {if(4<abs(x1-x0|0))
+                                      var switch$1=1;
+                                     else
+                                      if(4<abs(y1-y0|0))
+                                       var switch$1=1;
+                                      else
+                                       var switch$0=0,switch$1=0;
+                                     if(switch$1)
+                                      {started[1]=1;
+                                       var match="move";
+                                       jsoo_obj.style.cursor=match;
+                                       var switch$0=1}}
+                                   if(started[1])
                                     {var
-                                      y$0=jsoo_obj.clientY,
-                                      x$0=jsoo_obj.clientX,
-                                      i=find_box(boxes,x$0,y$0);
-                                     if(0<i)
-                                      {var _ev_=caml_check_bound(nodes,i)[i+1][2];
-                                       if(typeof _ev_==="number")
-                                        var switch$0=0;
-                                       else
-                                        if(3654627===_ev_[1])
-                                         {var match$0=_ev_[2],name=match$0[2],img=match$0[1];
-                                          show_image(all_messages,image_info,name,img);
-                                          var switch$0=1}
-                                        else
-                                         var switch$0=0}}
+                                      z0=from_screen(jsoo_obj,x0,y0),
+                                      z1=from_screen(jsoo_obj,x1,y1),
+                                      match$0=tr[1],
+                                      p=match$0[1],
+                                      z0$0=caml_call1(transl(neg(p)),z0),
+                                      p$0=compute_translation(z0$0,z1);
+                                     tr$0[1]=[0,p$0,a];
+                                     schedule_redraw(1)}
+                                   stopPropagation(ev);
                                    return jsoo_c11647d6}),
-                               jsoo_c11647d6);
-                             return jsoo_c11647d6});
-                       jsoo_obj$7.onmousedown=jsoo_arg;
+                               jsoo_c11647d6),
+                            c2=[0,jsoo_560e4fa1];
+                           c2[1]=
+                           addEventListener
+                            (document,
+                             mouseup,
+                             handler
+                              (function(jsoo_obj$0)
+                                {removeEventListener(c1);
+                                 _cU_(c2[1],removeEventListener);
+                                 if(started[1])
+                                  {var match="";
+                                   jsoo_obj.style.cursor=match;
+                                   var y=jsoo_obj$0.clientY,x=jsoo_obj$0.clientX;
+                                   tr[1]=tr$0[1];
+                                   on_image[1]=0;
+                                   update_cursor(x,y)}
+                                 else
+                                  {var
+                                    y$0=jsoo_obj$0.clientY,
+                                    x$0=jsoo_obj$0.clientX,
+                                    i=find_box(boxes,x$0,y$0);
+                                   if(0<i)
+                                    {var _ev_=caml_check_bound(nodes,i)[i+1][2];
+                                     if(typeof _ev_==="number")
+                                      var switch$0=0;
+                                     else
+                                      if(3654627===_ev_[1])
+                                       {var match$0=_ev_[2],name=match$0[2],img=match$0[1];
+                                        show_image(all_messages,image_info,name,img);
+                                        var switch$0=1}
+                                      else
+                                       var switch$0=0}}
+                                 return jsoo_c11647d6}),
+                             jsoo_c11647d6);
+                           return jsoo_c11647d6});
                        addEventListener
-                        (jsoo_obj$7,
+                        (jsoo_obj,
                          touchstart,
                          handler
-                          (function(jsoo_obj)
-                            {function _eh_(jsoo_obj)
+                          (function(jsoo_obj$0)
+                            {function _eh_(jsoo_obj$0)
                               {var
-                                id=jsoo_obj.identifier,
-                                x0=jsoo_obj.clientX,
-                                y0=jsoo_obj.clientY,
+                                id=jsoo_obj$0.identifier,
+                                x0=jsoo_obj$0.clientX,
+                                y0=jsoo_obj$0.clientY,
                                 started=[0,0],
                                 c1=
                                  addEventListener
@@ -6813,20 +6555,15 @@
                                    touchmove,
                                    handler
                                     (function(ev)
-                                      {var
-                                        jsoo_obj=ev.changedTouches,
-                                        jsoo_res=jsoo_obj.length,
-                                        _es_=jsoo_res-1|0,
-                                        _er_=0;
+                                      {var _es_=ev.changedTouches.length-1|0,_er_=0;
                                        if(!(_es_<0))
                                         {var i=_er_;
                                          for(;;)
                                           {var
                                             _et_=
-                                             function(jsoo_obj)
-                                              {var jsoo_res=jsoo_obj.identifier;
-                                               if(jsoo_res===id)
-                                                {var x1=jsoo_obj.clientX,y1=jsoo_obj.clientY;
+                                             function(jsoo_obj$0)
+                                              {if(jsoo_obj$0.identifier===id)
+                                                {var x1=jsoo_obj$0.clientX,y1=jsoo_obj$0.clientY;
                                                  if(started[1])
                                                   var switch$0=0;
                                                  else
@@ -6839,15 +6576,14 @@
                                                      var switch$0=0,switch$1=0;
                                                    if(switch$1)
                                                     {started[1]=1;
-                                                     var jsoo_obj$0=jsoo_obj$7.style,match="move";
-                                                     jsoo_obj$0.cursor=match;
+                                                     var match="move";
+                                                     jsoo_obj.style.cursor=match;
                                                      var switch$0=1}}
                                                  if(started[1])
-                                                  {var jsoo_e631ec39="transform";
-                                                   jsoo_self$0.time(jsoo_e631ec39);
+                                                  {jsoo_self$0.time("transform");
                                                    var
-                                                    z0=from_screen(jsoo_obj$7,x0,y0),
-                                                    z1=from_screen(jsoo_obj$7,x1,y1),
+                                                    z0=from_screen(jsoo_obj,x0,y0),
+                                                    z1=from_screen(jsoo_obj,x1,y1),
                                                     match$0=tr[1],
                                                     p=match$0[1],
                                                     z0$0=caml_call1(transl(neg(p)),z0),
@@ -6855,10 +6591,8 @@
                                                    tr$0[1]=[0,p$0,a];
                                                    return schedule_redraw(1)}
                                                  return 0}
-                                               return 0},
-                                            jsoo_self=ev.changedTouches,
-                                            jsoo_res$0=jsoo_self.item(i);
-                                           _cX_(jsoo_res$0,_et_);
+                                               return 0};
+                                           _cX_(ev.changedTouches.item(i),_et_);
                                            var _eu_=i+1|0;
                                            if(_es_!==i){var i=_eu_;continue}
                                            break}}
@@ -6873,26 +6607,21 @@
                                  touchend,
                                  handler
                                   (function(ev)
-                                    {var
-                                      jsoo_obj=ev.changedTouches,
-                                      jsoo_res=jsoo_obj.length,
-                                      _en_=jsoo_res-1|0,
-                                      _em_=0;
+                                    {var _en_=ev.changedTouches.length-1|0,_em_=0;
                                      if(!(_en_<0))
                                       {var i=_em_;
                                        for(;;)
                                         {var
                                           _eo_=
-                                           function(jsoo_obj)
-                                            {var jsoo_res=jsoo_obj.identifier;
-                                             if(jsoo_res===id)
-                                              {var x=jsoo_obj.clientX,y=jsoo_obj.clientY;
+                                           function(jsoo_obj$0)
+                                            {if(jsoo_obj$0.identifier===id)
+                                              {var x=jsoo_obj$0.clientX,y=jsoo_obj$0.clientY;
                                                removeEventListener(c1);
                                                _cU_(c2[1],removeEventListener);
                                                _cU_(c3[1],removeEventListener);
                                                if(started[1])
-                                                {var jsoo_obj$0=jsoo_obj$7.style,match="";
-                                                 jsoo_obj$0.cursor=match;
+                                                {var match="";
+                                                 jsoo_obj.style.cursor=match;
                                                  tr[1]=tr$0[1];
                                                  return 0}
                                                var i=find_box(boxes,x,y);
@@ -6905,10 +6634,8 @@
                                                     return 0}
                                                  return 0}
                                                return 0}
-                                             return 0},
-                                          jsoo_self=ev.changedTouches,
-                                          jsoo_res$0=jsoo_self.item(i);
-                                         _cX_(jsoo_res$0,_eo_);
+                                             return 0};
+                                         _cX_(ev.changedTouches.item(i),_eo_);
                                          var _ep_=i+1|0;
                                          if(_en_!==i){var i=_ep_;continue}
                                          break}}
@@ -6920,41 +6647,29 @@
                                  touchend,
                                  handler
                                   (function(ev)
-                                    {var
-                                      jsoo_obj=ev.changedTouches,
-                                      jsoo_res=jsoo_obj.length,
-                                      _ej_=jsoo_res-1|0,
-                                      _ei_=0;
+                                    {var _ej_=ev.changedTouches.length-1|0,_ei_=0;
                                      if(!(_ej_<0))
                                       {var i=_ei_;
                                        for(;;)
                                         {var
                                           _ek_=
-                                           function(jsoo_obj)
-                                            {var jsoo_res=jsoo_obj.identifier;
-                                             if(jsoo_res===id)
+                                           function(jsoo_obj$0)
+                                            {if(jsoo_obj$0.identifier===id)
                                               {removeEventListener(c1);
                                                _cU_(c2[1],removeEventListener);
                                                _cU_(c3[1],removeEventListener);
-                                               if(started[1])
-                                                {var jsoo_obj$0=jsoo_obj$7.style,match="";
-                                                 jsoo_obj$0.cursor=match}
+                                               if(started[1]){var match="";jsoo_obj.style.cursor=match}
                                                tr[1]=tr$0[1];
                                                return 0}
-                                             return 0},
-                                          jsoo_self=ev.changedTouches,
-                                          jsoo_res$0=jsoo_self.item(i);
-                                         _cX_(jsoo_res$0,_ek_);
+                                             return 0};
+                                         _cX_(ev.changedTouches.item(i),_ek_);
                                          var _el_=i+1|0;
                                          if(_ej_!==i){var i=_el_;continue}
                                          break}}
                                      return jsoo_359432e5}),
                                  jsoo_c11647d6);
                                return 0}
-                             var
-                              jsoo_self=jsoo_obj.changedTouches,
-                              jsoo_res=jsoo_self.item(0);
-                             _cX_(jsoo_res,_eh_);
+                             _cX_(jsoo_obj$0.changedTouches.item(0),_eh_);
                              return jsoo_359432e5}),
                          jsoo_c11647d6);
                        function handle_key_event(jsoo_obj)
@@ -7006,30 +6721,24 @@
                        var prev_buttons=[0,0];
                        function make_buttons(param)
                         {var _ef_=prev_buttons[1];
-                         if(_ef_)
-                          {var buttons=_ef_[1],jsoo_res=document.body;
-                           _c3_(jsoo_res,buttons)}
-                         var
-                          buttons$0=createDiv(document),
-                          jsoo_obj=buttons$0.style,
-                          match="absolute";
-                         jsoo_obj.position=match;
-                         var jsoo_obj$0=buttons$0.style,match$0="0";
-                         jsoo_obj$0.right=match$0;
-                         var jsoo_obj$1=buttons$0.style,match$1="0";
-                         jsoo_obj$1.bottom=match$1;
+                         if(_ef_){var buttons=_ef_[1];_c3_(document.body,buttons)}
+                         var buttons$0=createDiv(document),match="absolute";
+                         buttons$0.style.position=match;
+                         var match$0="0";
+                         buttons$0.style.right=match$0;
+                         var match$1="0";
+                         buttons$0.style.bottom=match$1;
                          var
                           messages=local_messages(all_messages),
                           info=img_button(0,38,_d6_),
-                          jsoo_obj$2=info.style,
                           match$2="absolute";
-                         jsoo_obj$2.position=match$2;
-                         var jsoo_obj$3=info.style,match$3="2px";
-                         jsoo_obj$3.bottom=match$3;
-                         var jsoo_obj$4=info.style,match$4="0";
-                         jsoo_obj$4.right=match$4;
-                         var jsoo_obj$5=info.style,match$5="pointer";
-                         jsoo_obj$5.cursor=match$5;
+                         info.style.position=match$2;
+                         var match$3="2px";
+                         info.style.bottom=match$3;
+                         var match$4="0";
+                         info.style.right=match$4;
+                         var match$5="pointer";
+                         info.style.cursor=match$5;
                          var
                           match$6=
                            handler
@@ -7038,39 +6747,29 @@
                                return jsoo_359432e5});
                          info.onclick=match$6;
                          var
-                          jsoo_res$0=messages.info,
-                          tt=tooltip(opt_style(jsoo_res$0,"Information")),
-                          jsoo_obj$6=tt.style,
+                          tt=tooltip(opt_style(messages.info,"Information")),
                           match$7="36px";
-                         jsoo_obj$6.right=match$7;
-                         var jsoo_obj$7=tt.style,match$8="36px";
-                         jsoo_obj$7.bottom=match$8;
+                         tt.style.right=match$7;
+                         var match$8="36px";
+                         tt.style.bottom=match$8;
                          _c2_(info,tt);
                          _c2_(buttons$0,info);
-                         var
-                          lang=img_button(0,38,_d7_),
-                          jsoo_obj$8=lang.style,
-                          match$9="absolute";
-                         jsoo_obj$8.position=match$9;
-                         var jsoo_obj$9=lang.style,match$10="2px";
-                         jsoo_obj$9.bottom=match$10;
-                         var jsoo_obj$10=lang.style,match$11="48px";
-                         jsoo_obj$10.right=match$11;
-                         var jsoo_obj$11=lang.style,match$12="pointer";
-                         jsoo_obj$11.cursor=match$12;
+                         var lang=img_button(0,38,_d7_),match$9="absolute";
+                         lang.style.position=match$9;
+                         var match$10="2px";
+                         lang.style.bottom=match$10;
+                         var match$11="48px";
+                         lang.style.right=match$11;
+                         var match$12="pointer";
+                         lang.style.cursor=match$12;
                          var
                           txt=createDiv(document),
                           dl=createDl(document),
                           ul=createUl(document);
                          _o_
                           (function(param)
-                            {var
-                              id=param[2],
-                              name=param[1],
-                              a=createA(document),
-                              jsoo_247daea5=name.toString(),
-                              jsoo_res=document.createTextNode(jsoo_247daea5);
-                             _c2_(a,jsoo_res);
+                            {var id=param[2],name=param[1],a=createA(document);
+                             _c2_(a,document.createTextNode(name.toString()));
                              var match="#";
                              a.href=match;
                              var
@@ -7079,12 +6778,8 @@
                                 (function(param)
                                   {var lang=id.toString();
                                    function _eg_(jsoo_self)
-                                    {var
-                                      jsoo_984c6f62="hyp_lang",
-                                      jsoo_res=jsoo_self.setItem(jsoo_984c6f62,lang);
-                                     return jsoo_res}
-                                   var jsoo_res=window.localStorage;
-                                   _cX_(jsoo_res,_eg_);
+                                    {return jsoo_self.setItem("hyp_lang",lang)}
+                                   _cX_(window.localStorage,_eg_);
                                    language[1]=lang;
                                    make_buttons(0);
                                    compute_text_nodes(tree_i18n,nodes);
@@ -7095,12 +6790,11 @@
                              _c2_(li,a);
                              return _c2_(ul,li)},
                            languages);
-                         var
-                          dd=createDd(document),
-                          jsoo_res$1=messages.languages,
-                          jsoo_36e89f7b=opt_style(jsoo_res$1,"Languages"),
-                          jsoo_res$2=document.createTextNode(jsoo_36e89f7b);
-                         _c2_(dd,jsoo_res$2);
+                         var dd=createDd(document);
+                         _c2_
+                          (dd,
+                           document.createTextNode
+                            (opt_style(messages.languages,"Languages")));
                          _c2_(dl,dd);
                          var dt=createDt(document);
                          _c2_(dt,ul);
@@ -7108,28 +6802,25 @@
                          _c2_(txt,dl);
                          var match$13="text on";
                          txt.className=match$13;
-                         var jsoo_obj$12=txt.style,match$14="absolute";
-                         jsoo_obj$12.position=match$14;
-                         var jsoo_obj$13=txt.style,match$15="0px";
-                         jsoo_obj$13.right=match$15;
-                         var jsoo_obj$14=txt.style,match$16="46px";
-                         jsoo_obj$14.bottom=match$16;
-                         var jsoo_obj$15=txt.style,match$17="nowrap";
-                         jsoo_obj$15.whiteSpace=match$17;
+                         var match$14="absolute";
+                         txt.style.position=match$14;
+                         var match$15="0px";
+                         txt.style.right=match$15;
+                         var match$16="46px";
+                         txt.style.bottom=match$16;
+                         var match$17="nowrap";
+                         txt.style.whiteSpace=match$17;
                          _c2_(lang,txt);
                          show_on_click(lang,txt);
                          _c2_(buttons$0,lang);
-                         var
-                          recenter=img_button(0,38,_d8_),
-                          jsoo_obj$16=recenter.style,
-                          match$18="absolute";
-                         jsoo_obj$16.position=match$18;
-                         var jsoo_obj$17=recenter.style,match$19="2px";
-                         jsoo_obj$17.bottom=match$19;
-                         var jsoo_obj$18=recenter.style,match$20="96px";
-                         jsoo_obj$18.right=match$20;
-                         var jsoo_obj$19=recenter.style,match$21="pointer";
-                         jsoo_obj$19.cursor=match$21;
+                         var recenter=img_button(0,38,_d8_),match$18="absolute";
+                         recenter.style.position=match$18;
+                         var match$19="2px";
+                         recenter.style.bottom=match$19;
+                         var match$20="96px";
+                         recenter.style.right=match$20;
+                         var match$21="pointer";
+                         recenter.style.cursor=match$21;
                          var
                           match$22=
                            handler
@@ -7140,17 +6831,14 @@
                                return jsoo_359432e5});
                          recenter.onclick=match$22;
                          var
-                          jsoo_res$3=messages.recenter,
-                          tt$0=tooltip(opt_style(jsoo_res$3,"Recenter")),
-                          jsoo_obj$20=tt$0.style,
+                          tt$0=tooltip(opt_style(messages.recenter,"Recenter")),
                           match$23="36px";
-                         jsoo_obj$20.right=match$23;
-                         var jsoo_obj$21=tt$0.style,match$24="36px";
-                         jsoo_obj$21.bottom=match$24;
+                         tt$0.style.right=match$23;
+                         var match$24="36px";
+                         tt$0.style.bottom=match$24;
                          _c2_(recenter,tt$0);
                          _c2_(buttons$0,recenter);
-                         var jsoo_res$4=document.body;
-                         _c2_(jsoo_res$4,buttons$0);
+                         _c2_(document.body,buttons$0);
                          prev_buttons[1]=[0,buttons$0];
                          return 0}
                        make_buttons(0);
@@ -7161,18 +6849,14 @@
                        var match$8="http://ocsigen.org/";
                        a$0.href=match$8;
                        _c2_(a$0,img);
-                       var
-                        logo=createDiv(document),
-                        jsoo_obj$8=logo.style,
-                        match$9="absolute";
-                       jsoo_obj$8.position=match$9;
-                       var jsoo_obj$9=logo.style,match$10="0";
-                       jsoo_obj$9.left=match$10;
-                       var jsoo_obj$10=logo.style,match$11="0";
-                       jsoo_obj$10.bottom=match$11;
+                       var logo=createDiv(document),match$9="absolute";
+                       logo.style.position=match$9;
+                       var match$10="0";
+                       logo.style.left=match$10;
+                       var match$11="0";
+                       logo.style.bottom=match$11;
                        _c2_(logo,a$0);
-                       var jsoo_res$0=document.body;
-                       _c2_(jsoo_res$0,logo);
+                       _c2_(document.body,logo);
                        return return$0(0)})}),
        _ee_=repr(t)[1];
       switch(_ee_[0])
@@ -7194,10 +6878,7 @@
       return jsoo_359432e5}
     function start(param)
      {try
-       {var jsoo_res=window.document;
-        createCanvas(jsoo_res);
-        var _ec_=_d5_(0);
-        return _ec_}
+       {createCanvas(window.document);var _ec_=_d5_(0);return _ec_}
       catch(_ed_)
        {_ed_=caml_wrap_exception(_ed_);
         if(_ed_===Canvas_not_available)

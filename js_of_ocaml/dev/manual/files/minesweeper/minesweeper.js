@@ -847,14 +847,13 @@
     register_printer
      (function(param)
        {if(param[1]===Error)
-         {var e=param[2],jsoo_res=e.toString();
-          return [0,caml_js_to_string(jsoo_res)]}
+         {var e=param[2];return [0,caml_js_to_string(e.toString())]}
         return 0});
     register_printer
      (function(jsoo_self)
-       {if(jsoo_self instanceof jsoo_7bc72a9e)return 0;
-        var jsoo_res=jsoo_self.toString();
-        return [0,caml_js_to_string(jsoo_res)]});
+       {return jsoo_self instanceof jsoo_7bc72a9e
+                ?0
+                :[0,caml_js_to_string(jsoo_self.toString())]});
     function _l_(jsoo_self,jsoo_ad7fbbdd)
      {jsoo_self.appendChild(jsoo_ad7fbbdd);return 0}
     function handler(f)
@@ -869,10 +868,7 @@
     var document=window.document;
     function opt_iter(x,f){if(x){var v=x[1];return caml_call1(f,v)}return 0}
     function createElement(jsoo_self,name)
-     {var
-       jsoo_3834112d=name.toString(),
-       jsoo_res=jsoo_self.createElement(jsoo_3834112d);
-      return jsoo_res}
+     {return jsoo_self.createElement(name.toString())}
     function unsafeCreateElement(doc,name){return createElement(doc,name)}
     var createElementSyntax=[0,785140586];
     function unsafeCreateElementEx(type,name,doc,elt)
@@ -882,51 +878,25 @@
         if(785140586===_aR_)
          {try
            {var
-             jsoo_c9a9e1c3='<input name="x">',
-             el=document.createElement(jsoo_c9a9e1c3),
-             jsoo_self=el.tagName,
-             jsoo_res=jsoo_self.toLowerCase(),
-             _aU_=jsoo_res==="input"?1:0;
-            if(_aU_)
-             var jsoo_res$0=el.name,_aV_=jsoo_res$0==="x"?1:0;
-            else
-             var _aV_=_aU_;
-            var _aS_=_aV_}
+             el=document.createElement('<input name="x">'),
+             _aU_=el.tagName.toLowerCase()==="input"?1:0,
+             _aV_=_aU_?el.name==="x"?1:0:_aU_,
+             _aS_=_aV_}
           catch(_aW_){var _aS_=0}
           var _aT_=_aS_?982028505:-1003883683;
           createElementSyntax[1]=_aT_;
           continue}
         if(982028505<=_aR_)
-         {var
-           a=new jsoo_7bc72a9e(),
-           jsoo_874ebaa6="<",
-           jsoo_2c7d0868=elt.toString();
-          a.push(jsoo_874ebaa6,jsoo_2c7d0868);
+         {var a=new jsoo_7bc72a9e();
+          a.push("<",elt.toString());
           opt_iter
            (type,
-            function(t)
-             {var
-               jsoo_c3540b3c=' type="',
-               jsoo_35d26cf8=caml_js_html_escape(t),
-               jsoo_f1ad292a='"';
-              a.push(jsoo_c3540b3c,jsoo_35d26cf8,jsoo_f1ad292a);
-              return 0});
+            function(t){a.push(' type="',caml_js_html_escape(t),'"');return 0});
           opt_iter
            (name,
-            function(n)
-             {var
-               jsoo_92b58168=' name="',
-               jsoo_ad8872a8=caml_js_html_escape(n),
-               jsoo_6bc4b4e3='"';
-              a.push(jsoo_92b58168,jsoo_ad8872a8,jsoo_6bc4b4e3);
-              return 0});
-          var jsoo_0f6fa25c=">";
-          a.push(jsoo_0f6fa25c);
-          var
-           jsoo_b72254d0="",
-           jsoo_4a652cf8=a.join(jsoo_b72254d0),
-           jsoo_res$1=doc.createElement(jsoo_4a652cf8);
-          return jsoo_res$1}
+            function(n){a.push(' name="',caml_js_html_escape(n),'"');return 0});
+          a.push(">");
+          return doc.createElement(a.join(""))}
         var res=createElement(doc,elt);
         opt_iter(type,function(jsoo_arg){return res.type=jsoo_arg});
         opt_iter(name,function(jsoo_arg){return res.name=jsoo_arg});
@@ -998,9 +968,8 @@
            ?_x_
            :bd[2]
              ?0===bd[4]?_y_:_a_(_A_,_a_(caml_new_string(""+bd[4]),_z_))
-             :_B_,
-       jsoo_arg=_aG_.toString();
-      return jsoo_obj.src=jsoo_arg}
+             :_B_;
+      return jsoo_obj.src=_aG_.toString()}
     function _C_(d)
      {var _aA_=d[3][2]-1|0,_az_=0;
       if(!(_aA_<0))
@@ -1032,10 +1001,7 @@
                jsoo_obj=caml_check_bound(caml_check_bound(d[2],y)[y+1],x)[x+1],
                match=
                 handler
-                 (function(param)
-                   {var jsoo_29529091="GAME OVER";
-                    window.alert(jsoo_29529091);
-                    return false$0});
+                 (function(param){window.alert("GAME OVER");return false$0});
               jsoo_obj.onclick=match;
               var _ay_=x+1|0;
               if(_aw_!==x){var x=_ay_;continue}
@@ -1046,11 +1012,8 @@
       return 0}
     var doc=window.document;
     function int_input(name,value)
-     {var
-       res=doc.createDocumentFragment(),
-       jsoo_6d9ac43e=name.toString(),
-       jsoo_res=doc.createTextNode(jsoo_6d9ac43e);
-      _l_(res,jsoo_res);
+     {var res=doc.createDocumentFragment();
+      _l_(res,doc.createTextNode(name.toString()));
       var
        input=createInput([0,"text"],0,doc),
        match=caml_new_string(""+value[1]).toString();
@@ -1060,8 +1023,7 @@
         handler
          (function(param)
            {try
-             {var jsoo_res=input.value;
-              value[1]=caml_int_of_string(caml_js_to_string(jsoo_res))}
+             {value[1]=caml_int_of_string(caml_js_to_string(input.value))}
             catch(_as_)
              {_as_=caml_wrap_exception(_as_);
               if(_as_[1]!==Invalid_argument)throw _as_}
@@ -1072,7 +1034,7 @@
       _l_(res,input);
       return res}
     function onload(param)
-     {var jsoo_96770fe7="main",main=doc.getElementById(jsoo_96770fe7);
+     {var main=doc.getElementById("main");
       if(main==no_handler)throw [0,Assert_failure,_E_];
       var nbm=[0,15],nbc=[0,12],nbr=[0,10];
       _l_(main,int_input(_F_,nbr));
@@ -1211,10 +1173,8 @@
               var
                d=[0,b,_$_,cf,___,_Z_,_Y_],
                mode=[0,0],
-               buf=jsoo_self.createDocumentFragment(),
-               jsoo_521a4c10="Mode : ",
-               jsoo_res=jsoo_self.createTextNode(jsoo_521a4c10);
-              _l_(buf,jsoo_res);
+               buf=jsoo_self.createDocumentFragment();
+              _l_(buf,jsoo_self.createTextNode("Mode : "));
               var img=createImg(jsoo_self);
               _l_(buf,img);
               var match="sprites/bomb.png";
@@ -1269,10 +1229,7 @@
                                     (!caml_check_bound(caml_check_bound(d[1],i)[i+1],j)[j+1][3])
                                     if
                                      (caml_check_bound(caml_check_bound(d[1],i)[i+1],j)[j+1][1])
-                                     {_C_(d);
-                                      _D_(d);
-                                      var jsoo_26523dec="YOU LOSE";
-                                      window.alert(jsoo_26523dec)}
+                                     {_C_(d);_D_(d);window.alert("YOU LOSE")}
                                     else
                                      {var
                                        reveal_cell=
@@ -1325,11 +1282,7 @@
                                           return 0};
                                       caml_check_bound(caml_check_bound(visited,i)[i+1],j)[j+1]=1;
                                       _f_(reveal_cell,cells_to_see_rec([0,[0,i,j],0]));
-                                      if(0===d[5])
-                                       {_C_(d);
-                                        _D_(d);
-                                        var jsoo_3257b5a8="YOU WIN";
-                                        window.alert(jsoo_3257b5a8)}}}
+                                      if(0===d[5]){_C_(d);_D_(d);window.alert("YOU WIN")}}}
                                else
                                 {var
                                   _am_=
@@ -1369,8 +1322,8 @@
                   var _af_=j$0+1|0;
                   if(_ab_!==j$0){var j$0=_af_;continue}
                   break}}
-              var jsoo_obj=div.style,match$1="0";
-              jsoo_obj.lineHeight=match$1;
+              var match$1="0";
+              div.style.lineHeight=match$1;
               _l_(div,buf);
               return false$0}}}}
       var

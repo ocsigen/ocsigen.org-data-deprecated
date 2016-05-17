@@ -4348,14 +4348,13 @@
     register_printer
      (function(param)
        {if(param[1]===Error$0)
-         {var e=param[2],jsoo_res=e.toString();
-          return [0,caml_js_to_string(jsoo_res)]}
+         {var e=param[2];return [0,caml_js_to_string(e.toString())]}
         return 0});
     register_printer
      (function(jsoo_self)
-       {if(jsoo_self instanceof jsoo_7bc72a9e)return 0;
-        var jsoo_res=jsoo_self.toString();
-        return [0,caml_js_to_string(jsoo_res)]});
+       {return jsoo_self instanceof jsoo_7bc72a9e
+                ?0
+                :[0,caml_js_to_string(jsoo_self.toString())]});
     function _c0_(jsoo_self,jsoo_ad7fbbdd)
      {jsoo_self.appendChild(jsoo_ad7fbbdd);return 0}
     function handler(f)
@@ -4369,26 +4368,20 @@
         return match}}
     function addEventListener
      (jsoo_self,jsoo_4ec1b650,jsoo_c9a9e1c3,jsoo_a44ae7e3)
-     {var jsoo_res=jsoo_self.addEventListener;
-      if(jsoo_res===origin)
+     {if(jsoo_self.addEventListener===origin)
        {var
-         jsoo_self$0="on",
-         jsoo_6bc4b4e3=jsoo_self$0.concat(jsoo_4ec1b650),
+         jsoo_6bc4b4e3="on".concat(jsoo_4ec1b650),
          jsoo_33fd16a3=
           function(e)
            {var _fd_=[0,jsoo_c9a9e1c3,e,[0]];
             return function(_fe_,_ff_){return caml_js_call(_fd_,_fe_,_ff_)}};
         jsoo_self.attachEvent(jsoo_6bc4b4e3,jsoo_33fd16a3);
         return function(param)
-         {var jsoo_res=jsoo_self.detachEvent(jsoo_6bc4b4e3,jsoo_33fd16a3);
-          return jsoo_res}}
+         {return jsoo_self.detachEvent(jsoo_6bc4b4e3,jsoo_33fd16a3)}}
       jsoo_self.addEventListener(jsoo_4ec1b650,jsoo_c9a9e1c3,jsoo_a44ae7e3);
       return function(param)
-       {var
-         jsoo_res=
-          jsoo_self.removeEventListener
-           (jsoo_4ec1b650,jsoo_c9a9e1c3,jsoo_a44ae7e3);
-        return jsoo_res}}
+       {return jsoo_self.removeEventListener
+                (jsoo_4ec1b650,jsoo_c9a9e1c3,jsoo_a44ae7e3)}}
     function f$10(id){return caml_call1(id,0)}
     var
      onIE=caml_js_on_ie(0)|0,
@@ -4396,18 +4389,15 @@
      mousemove="mousemove",
      mousewheel="mousewheel",
      DOMMouseScroll="DOMMouseScroll",
-     jsoo_adc67667="2d",
-     doc=window.document;
+     doc=window.document,
+     jsoo_adc67667="2d";
     function unsafeCreateElement(doc,name)
-     {var
-       jsoo_3834112d=name.toString(),
-       jsoo_res=doc.createElement(jsoo_3834112d);
-      return jsoo_res}
+     {return doc.createElement(name.toString())}
     function createDiv(doc){return unsafeCreateElement(doc,_c1_)}
     var Canvas_not_available=caml_set_oo_id([248,_c3_,0]);
     function createCanvas(doc)
-     {var c=unsafeCreateElement(doc,_c4_),jsoo_res=c.getContext;
-      if(_cU_(jsoo_res))return c;
+     {var c=unsafeCreateElement(doc,_c4_);
+      if(_cU_(c.getContext))return c;
       throw Canvas_not_available}
     var html_element=window.HTMLElement;
     html_element===origin;
@@ -4415,31 +4405,25 @@
      {var
        jsoo_obj=jsoo_self.getBoundingClientRect(),
        body=doc.body,
-       html=doc.documentElement,
-       jsoo_res=html.clientTop,
-       jsoo_res$0=body.clientTop,
-       jsoo_res$1=jsoo_obj.top,
-       jsoo_res$2=html.clientLeft,
-       jsoo_res$3=body.clientLeft,
-       jsoo_res$4=jsoo_obj.left;
+       html=doc.documentElement;
       return [0,
-              ((jsoo_res$4|0)-jsoo_res$3|0)-jsoo_res$2|0,
-              ((jsoo_res$1|0)-jsoo_res$0|0)-jsoo_res|0]}
+              ((jsoo_obj.left|0)-body.clientLeft|0)-html.clientLeft|0,
+              ((jsoo_obj.top|0)-body.clientTop|0)-html.clientTop|0]}
     var
-     jsoo_self=caml_js_get_console(0),
      _c5_=
       caml_js_pure_expr
        (function(param)
          {var
-           jsoo_res=window.msRequestAnimationFrame,
-           jsoo_res$0=window.oRequestAnimationFrame,
-           jsoo_res$1=window.webkitRequestAnimationFrame,
-           jsoo_res$2=window.mozRequestAnimationFrame,
-           jsoo_res$3=window.requestAnimationFrame,
            l=
             [0,
-             jsoo_res$3,
-             [0,jsoo_res$2,[0,jsoo_res$1,[0,jsoo_res$0,[0,jsoo_res,0]]]]];
+             window.requestAnimationFrame,
+             [0,
+              window.mozRequestAnimationFrame,
+              [0,
+               window.webkitRequestAnimationFrame,
+               [0,
+                window.oRequestAnimationFrame,
+                [0,window.msRequestAnimationFrame,0]]]]];
           try
            {var
              req=_o_(function(c){return _cW_(c)},l),
@@ -4449,12 +4433,7 @@
            {_fc_=caml_wrap_exception(_fc_);
             if(_fc_===Not_found)
              {var
-               now=
-                function(param)
-                 {var
-                   jsoo_self=new jsoo_d761558f(),
-                   jsoo_res=jsoo_self.getTime();
-                  return jsoo_res},
+               now=function(param){return new jsoo_d761558f().getTime()},
                last=[0,now(0)];
               return function(callback)
                {var t=now(0),dt=last[1]+16.6666666666666679-t,dt$0=dt<0?0:dt;
@@ -4462,17 +4441,12 @@
                 window.setTimeout(callback,dt$0);
                 return 0}}
             throw _fc_}}),
-     _c6_=2147483e3;
+     _c6_=2147483e3,
+     jsoo_self=caml_js_get_console(0);
     function f$11(param)
-     {if(1===param)
-       {var jsoo_32b5ee21=caml_js_wrap_callback(_cT_);
-        window.setTimeout(jsoo_32b5ee21,0);
-        return 0}
-      return 0}
+     {return 1===param?(window.setTimeout(caml_js_wrap_callback(_cT_),0),0):0}
     pause_hook[1]=f$11;
-    function _c7_(s)
-     {var jsoo_baf7d8c4=s.toString(),jsoo_res=jsoo_self.log(jsoo_baf7d8c4);
-      return jsoo_res}
+    function _c7_(s){return jsoo_self.log(s.toString())}
     async_exception_hook[1]=
     function(exn)
      {_c7_(_c8_);_c7_(to_string(exn));return print_backtrace(stderr)};
@@ -4480,25 +4454,19 @@
     new jsoo_bd4e937f("[$]","g");
     var jsoo_97b9daf3=regexp(_c9_),Local_exn=caml_set_oo_id([248,_c__,0]);
     function interrupt(param){throw Local_exn}
-    var
-     jsoo_7598a162="\\$&",
-     jsoo_self$0=caml_bytes_of_string(s$0),
-     jsoo_res=jsoo_self$0.replace(jsoo_97b9daf3,jsoo_7598a162);
-    regexp(caml_js_to_byte_string(jsoo_res));
+    regexp
+     (caml_js_to_byte_string
+       (caml_bytes_of_string(s$0).replace(jsoo_97b9daf3,"\\$&")));
     var jsoo_d19f6f5e=new jsoo_bd4e937f("\\+","g");
     function urldecode_js_string_string(s$0)
      {jsoo_d19f6f5e.lastIndex=0;
-      var
-       jsoo_3834112d=" ",
-       s=s$0.replace(jsoo_d19f6f5e,jsoo_3834112d),
-       jsoo_res=window.unescape;
-      return caml_js_to_byte_string(jsoo_res(s))}
+      var s=s$0.replace(jsoo_d19f6f5e," ");
+      return caml_js_to_byte_string(window.unescape(s))}
     caml_set_oo_id([248,_c$_,0]);
     new jsoo_bd4e937f(caml_bytes_of_string(_dd_));
     new jsoo_bd4e937f(caml_bytes_of_string(_de_));
-    var jsoo_res$0=window.location;
-    if(_cW_(jsoo_res$0))
-     var jsoo_res$1=window.location,l$1=jsoo_res$1;
+    if(_cW_(window.location))
+     var l$1=window.location;
     else
      var
       hash="",
@@ -4518,16 +4486,12 @@
         "reload":reload,
         "replace":replace,
         "assign":assign};
-    var jsoo_res$2=l$1.hostname;
-    urldecode_js_string_string(jsoo_res$2);
-    var jsoo_res$3=l$1.protocol;
-    urldecode_js_string_string(jsoo_res$3);
+    urldecode_js_string_string(l$1.hostname);
+    urldecode_js_string_string(l$1.protocol);
     var _df_=0;
     (function(param)
        {try
-         {var
-           jsoo_res=l$1.port,
-           _e9_=[0,caml_int_of_string(caml_js_to_byte_string(jsoo_res))];
+         {var _e9_=[0,caml_int_of_string(caml_js_to_byte_string(l$1.port))];
           return _e9_}
         catch(_e__)
          {_e__=caml_wrap_exception(_e__);
@@ -4535,8 +4499,7 @@
           throw _e__}}
       (_df_));
     var
-     jsoo_res$4=l$1.pathname,
-     s$1=urldecode_js_string_string(jsoo_res$4),
+     s$1=urldecode_js_string_string(l$1.pathname),
      l$0=caml_ml_string_length(s$1);
     function aux(i)
      {try
@@ -4557,17 +4520,9 @@
        switch$0=_db_?caml_string_notequal(_db_[1],_dc_)?0:_db_[2]?0:1:1;
     else
      var switch$0=0;
-    var jsoo_self$1=l$1.search,jsoo_res$5=jsoo_self$1.charAt(0);
-    if(jsoo_res$5==="?")
-     var
-      jsoo_self$2=l$1.search,
-      jsoo_res$6=jsoo_self$2.slice(1),
-      _dg_=jsoo_res$6;
-    else
-     var jsoo_res$8=l$1.search,_dg_=jsoo_res$8;
     var
-     jsoo_32b5ee21=_D_(1,38).toString(),
-     arr=_dg_.split(jsoo_32b5ee21),
+     _dg_=l$1.search.charAt(0)==="?"?l$1.search.slice(1):l$1.search,
+     arr=_dg_.split(_D_(1,38).toString()),
      len$0=arr.length;
     function aux$0(acc,idx)
      {var idx$0=idx;
@@ -4581,15 +4536,11 @@
               {function _e5_(param)
                 {var y=param[2],x=param[1],_e6_=urldecode_js_string_string(y);
                  return [0,urldecode_js_string_string(x),_e6_]}
-               var
-                jsoo_22f22ba7=_D_(1,61).toString(),
-                jsoo_18184c07=s.indexOf(jsoo_22f22ba7);
+               var jsoo_18184c07=s.indexOf(_D_(1,61).toString());
                if(0<=jsoo_18184c07)
                 var
-                 jsoo_5b998314=jsoo_18184c07+1|0,
-                 jsoo_res=s.slice(jsoo_5b998314),
-                 jsoo_res$0=s.slice(0,jsoo_18184c07),
-                 _e4_=[0,jsoo_res$0,jsoo_res];
+                 jsoo_res=s.slice(jsoo_18184c07+1|0),
+                 _e4_=[0,s.slice(0,jsoo_18184c07),jsoo_res];
                else
                 var _e4_=origin;
                return _cX_(_e4_,interrupt,_e5_)},
@@ -4601,8 +4552,7 @@
            throw _e3_}
         return acc}}
     aux$0(0,len$0-1|0);
-    var jsoo_res$7=l$1.href;
-    urldecode_js_string_string(jsoo_res$7);
+    urldecode_js_string_string(l$1.href);
     function _dh_(param)
      {var
        xmlHttpRequest=window.XMLHttpRequest,
@@ -4621,9 +4571,7 @@
             catch(_eZ_){throw [0,Assert_failure,_di_]}}}}}
     var _dk_=caml_set_oo_id([248,_dj_,0]),_dv_="white";
     function _dw_(jsoo_self,jsoo_arg)
-     {jsoo_self.fillStyle=jsoo_arg;
-      var jsoo_res=jsoo_self.fill();
-      return jsoo_res}
+     {jsoo_self.fillStyle=jsoo_arg;return jsoo_self.fill()}
     function _dx_(w)
      {var ctx=w.getContext(jsoo_adc67667);ctx.lineWidth=2;return [0,w,ctx]}
     function _dy_
@@ -4635,21 +4583,17 @@
       jsoo_f5a2075c,
       jsoo_8573ceee,
       _eR_)
-     {var
-       p=_eR_[1],
-       c=param[2],
-       jsoo_res=
-        c.drawImage
-         (p,
-          jsoo_5b85d274,
-          jsoo_ee22b285,
-          jsoo_f5a2075c,
-          jsoo_8573ceee,
-          jsoo_4a2eafd2,
-          jsoo_18f27425,
-          jsoo_f5a2075c,
-          jsoo_8573ceee);
-      return jsoo_res}
+     {var p=_eR_[1],c=param[2];
+      return c.drawImage
+              (p,
+               jsoo_5b85d274,
+               jsoo_ee22b285,
+               jsoo_f5a2075c,
+               jsoo_8573ceee,
+               jsoo_4a2eafd2,
+               jsoo_18f27425,
+               jsoo_f5a2075c,
+               jsoo_8573ceee)}
     function _dm_(pm)
      {var _eQ_=pm[1];
       if(_eQ_){var p=_eQ_[1];return p}
@@ -4657,10 +4601,7 @@
     function _do_(jsoo_self,fill,stroke)
      {if(fill){var c=fill[1];_dw_(jsoo_self,c)}
       if(stroke)
-       {var c$0=stroke[1];
-        jsoo_self.strokeStyle=c$0;
-        var jsoo_res=jsoo_self.stroke();
-        return jsoo_res}
+       {var c$0=stroke[1];jsoo_self.strokeStyle=c$0;return jsoo_self.stroke()}
       return 0}
     function _dp_(st,scale,x$2,y$2,x$1,y$1,w,h)
      {var ctx=_dm_(st[8])[2];
@@ -4782,42 +4723,32 @@
        match=task(0),
        w=match[2],
        res=match[1],
-       jsoo_obj=_dh_(0),
-       jsoo_26523dec="GET",
-       jsoo_4beb75c4=url.toString();
-      jsoo_obj.open(jsoo_26523dec,jsoo_4beb75c4,jsoo_b72254d0);
+       jsoo_obj=_dh_(0);
+      jsoo_obj.open("GET",url.toString(),jsoo_b72254d0);
       var match$1="";
       jsoo_obj.responseType=match$1;
       if(content_type$0)
-       {var
-         content_type=content_type$0[1],
-         jsoo_35d26cf8="Content-type",
-         jsoo_f1ad292a=content_type.toString();
-        jsoo_obj.setRequestHeader(jsoo_35d26cf8,jsoo_f1ad292a)}
+       {var content_type=content_type$0[1];
+        jsoo_obj.setRequestHeader("Content-type",content_type.toString())}
       _n_
        (function(param)
-         {var
-           v=param[2],
-           n=param[1],
-           jsoo_92b58168=n.toString(),
-           jsoo_ad8872a8=v.toString(),
-           jsoo_res=jsoo_obj.setRequestHeader(jsoo_92b58168,jsoo_ad8872a8);
-          return jsoo_res},
+         {var v=param[2],n=param[1];
+          return jsoo_obj.setRequestHeader(n.toString(),v.toString())},
         headers);
       function headers$0(s)
        {function _eE_(v){return [0,caml_js_to_string(v)]}
         function _eF_(param){return 0}
-        var
-         jsoo_33fd16a3=caml_bytes_of_string(s),
-         jsoo_res=jsoo_obj.getResponseHeader(jsoo_33fd16a3);
-        return _cV_(jsoo_res,_eF_,_eE_)}
+        return _cV_
+                (jsoo_obj.getResponseHeader(caml_bytes_of_string(s)),
+                 _eF_,
+                 _eE_)}
       var st=[0,382334108];
       function do_check_headers(param)
        {if(382334108===st[1])
          if(1)
           st[1]=583419792;
          else
-          {var jsoo_res=jsoo_obj.status,e=[0,_dk_,[0,jsoo_res,headers$0]];
+          {var e=[0,_dk_,[0,jsoo_obj.status,headers$0]];
            wakeup_result(w,[1,e]);
            st[1]=479410653;
            jsoo_obj.abort()}
@@ -4840,12 +4771,16 @@
                      function _eD_(x){return [0,x]}
                      var match=_cV_(x,function(param){return 0},_eD_);
                      if(match)
-                      {var doc=match[1],jsoo_res=doc.documentElement;
-                       return jsoo_res===jsoo_560e4fa1?0:[0,doc]}
+                      {var doc=match[1];
+                       return doc.documentElement===jsoo_560e4fa1?0:[0,doc]}
                      return 0},
-                  jsoo_res=jsoo_obj.responseText,
                   response=
-                   [0,url,code,headers$0,caml_js_to_string(jsoo_res),_eC_];
+                   [0,
+                    url,
+                    code,
+                    headers$0,
+                    caml_js_to_string(jsoo_obj.responseText),
+                    _eC_];
                  return wakeup(w,response)}
                return 0
               }
@@ -4854,8 +4789,7 @@
       var x=jsoo_obj.upload;
       x!==origin;
       jsoo_obj.send(jsoo_560e4fa1);
-      on_cancel
-       (res,function(param){var jsoo_res=jsoo_obj.abort();return jsoo_res});
+      on_cancel(res,function(param){return jsoo_obj.abort()});
       return bind(res,_eB_)}
     function getfile(f)
      {try
@@ -5231,81 +5165,65 @@
                         return _es_}}}}}}},
          handle_drag=
           function(jsoo_obj,f)
-           {var
-             mx=[0,0],
-             my=[0,0],
-             jsoo_arg=
-              handler
-               (function(jsoo_obj$0)
-                 {var jsoo_res=jsoo_obj$0.clientX;
-                  mx[1]=jsoo_res;
-                  var jsoo_res$0=jsoo_obj$0.clientY;
-                  my[1]=jsoo_res$0;
-                  var jsoo_obj$1=jsoo_obj.style,match="move";
-                  jsoo_obj$1.cursor=match;
-                  var
-                   c1=
-                    addEventListener
-                     (doc,
-                      mousemove,
-                      handler
-                       (function(jsoo_obj)
-                         {var
-                           x=jsoo_obj.clientX,
-                           y=jsoo_obj.clientY,
-                           x$0=mx[1],
-                           y$0=my[1];
-                          mx[1]=x;
-                          my[1]=y;
-                          caml_call2(f,x-x$0|0,y-y$0|0);
-                          return jsoo_b72254d0}),
-                      jsoo_b72254d0),
-                   c2=[0,jsoo_560e4fa1];
-                  c2[1]=
-                  addEventListener
-                   (doc,
-                    mouseup,
-                    handler
-                     (function(param)
-                       {f$10(c1);
-                        var _eq_=c2[1];
-                        if(_eq_!=jsoo_560e4fa1)f$10(_eq_);
-                        var jsoo_obj$0=jsoo_obj.style,match="";
-                        jsoo_obj$0.cursor=match;
-                        return jsoo_b72254d0}),
-                    jsoo_b72254d0);
-                  return jsoo_b72254d0});
-            return jsoo_obj.onmousedown=jsoo_arg},
+           {var mx=[0,0],my=[0,0];
+            return jsoo_obj.onmousedown=
+                   handler
+                    (function(jsoo_obj$0)
+                      {mx[1]=jsoo_obj$0.clientX;
+                       my[1]=jsoo_obj$0.clientY;
+                       var match="move";
+                       jsoo_obj.style.cursor=match;
+                       var
+                        c1=
+                         addEventListener
+                          (doc,
+                           mousemove,
+                           handler
+                            (function(jsoo_obj)
+                              {var
+                                x=jsoo_obj.clientX,
+                                y=jsoo_obj.clientY,
+                                x$0=mx[1],
+                                y$0=my[1];
+                               mx[1]=x;
+                               my[1]=y;
+                               caml_call2(f,x-x$0|0,y-y$0|0);
+                               return jsoo_b72254d0}),
+                           jsoo_b72254d0),
+                        c2=[0,jsoo_560e4fa1];
+                       c2[1]=
+                       addEventListener
+                        (doc,
+                         mouseup,
+                         handler
+                          (function(param)
+                            {f$10(c1);
+                             var _eq_=c2[1];
+                             if(_eq_!=jsoo_560e4fa1)f$10(_eq_);
+                             var match="";
+                             jsoo_obj.style.cursor=match;
+                             return jsoo_b72254d0}),
+                         jsoo_b72254d0);
+                       return jsoo_b72254d0})},
          match=
           handler
            (function(param)
-             {var
-               page=doc.documentElement,
-               jsoo_obj=page.style,
-               match$0="hidden";
-              jsoo_obj.overflow=match$0;
-              var
-               jsoo_obj$0=doc.body,
-               jsoo_obj$1=jsoo_obj$0.style,
-               match$1="hidden";
-              jsoo_obj$1.overflow=match$1;
-              var
-               jsoo_obj$2=doc.body,
-               jsoo_obj$3=jsoo_obj$2.style,
-               match$2="0px";
-              jsoo_obj$3.margin=match$2;
+             {var page=doc.documentElement,match$0="hidden";
+              page.style.overflow=match$0;
+              var match$1="hidden";
+              doc.body.style.overflow=match$1;
+              var match$2="0px";
+              doc.body.style.margin=match$2;
               var
                started=[0,0],
                p=unsafeCreateElement(doc,_c2_),
                match$3="Loading graph...";
               p.innerHTML=match$3;
-              var jsoo_obj$4=p.style,match$4="none";
-              jsoo_obj$4.display=match$4;
-              var jsoo_res=doc.body;
-              _c0_(jsoo_res,p);
+              var match$4="none";
+              p.style.display=match$4;
+              _c0_(doc.body,p);
               function _d1_(param)
-               {if(!started[1])
-                 {var jsoo_obj=p.style,match="inline";jsoo_obj.display=match}
+               {if(!started[1]){var match="inline";p.style.display=match}
                 return return$0(0)}
               var match=task(0),w=match[2],t=match[1],d=500;
               function callback(_ep_){return wakeup(w,_ep_)}
@@ -5316,10 +5234,8 @@
                  remain=match[2],
                  step=match[1],
                  cb=
-                  remain==0?callback:function(_eo_){return loop(remain,_eo_)},
-                 jsoo_b34a1de6=caml_js_wrap_callback(cb),
-                 jsoo_res=window.setTimeout(jsoo_b34a1de6,step);
-                id[1]=[0,jsoo_res];
+                  remain==0?callback:function(_eo_){return loop(remain,_eo_)};
+                id[1]=[0,window.setTimeout(caml_js_wrap_callback(cb),step)];
                 return 0}
               loop(d,0);
               on_cancel
@@ -5327,16 +5243,12 @@
                 function(param)
                  {var _en_=id[1];
                   if(_en_)
-                   {var x=_en_[1];
-                    id[1]=0;
-                    var jsoo_res=window.clearTimeout(x);
-                    return jsoo_res}
+                   {var x=_en_[1];id[1]=0;return window.clearTimeout(x)}
                   return 0});
               bind(t,_d1_);
               function _d2_(s)
                {var
-                 jsoo_025f2716=s.toString(),
-                 jsoo_res=json.parse(jsoo_025f2716),
+                 jsoo_res=json.parse(s.toString()),
                  scene=jsoo_res[3],
                  bboxes=jsoo_res[2],
                  match=jsoo_res[1],
@@ -5345,8 +5257,7 @@
                  y1=match[2],
                  x1=match[1];
                 started[1]=1;
-                var jsoo_self=doc.body;
-                jsoo_self.removeChild(p);
+                doc.body.removeChild(p);
                 var
                  st=[0,bboxes,scene,0.05,x1,y1,x2-x1,y2-y1,[0,0,0,0,_dl_]],
                  jsoo_arg=page.clientHeight,
@@ -5354,11 +5265,9 @@
                  window$0=createCanvas(doc);
                 window$0.width=jsoo_arg$0;
                 window$0.height=jsoo_arg;
-                var jsoo_res$0=doc.body;
-                _c0_(jsoo_res$0,window$0);
+                _c0_(doc.body,window$0);
                 function allocation(param)
-                 {var jsoo_res=window$0.height,jsoo_res$0=window$0.width;
-                  return [0,0,0,jsoo_res$0,jsoo_res]}
+                 {return [0,0,0,window$0.width,window$0.height]}
                 var
                  hadj=caml_call6(_cG_(0,0),0,0,0,0,0,0),
                  vadj=caml_call6(_cG_(0,0),0,0,0,0,0,0),
@@ -5610,8 +5519,7 @@
                 var match$10="10px";
                 style$0.left=match$10;
                 _c0_(slider,thumb);
-                var jsoo_res$1=doc.body;
-                _c0_(jsoo_res$1,slider);
+                _c0_(doc.body,slider);
                 function set_slider_position(pos$0)
                  {if(pos$0!==pos[1])
                    {var jsoo_obj=thumb.style,match=points(pos$0);
@@ -5720,18 +5628,13 @@
                    match=elementClientPosition(window$0),
                    ey=match[2],
                    ex=match[1],
-                   jsoo_res=jsoo_obj.clientX,
-                   x=jsoo_res-ex|0,
-                   jsoo_res$0=jsoo_obj.clientY,
-                   y=jsoo_res$0-ey|0;
+                   x=jsoo_obj.clientX-ex|0,
+                   y=jsoo_obj.clientY-ey|0;
                   return 0<=dy
                           ?0<dy?bump_scale(x,y,-1):false$0
                           :bump_scale(x,y,1)}
-                var
-                 d=createDiv(doc),
-                 jsoo_e74babca="onmousewheel",
-                 jsoo_d24db195="return;";
-                d.setAttribute(jsoo_e74babca,jsoo_d24db195);
+                var d=createDiv(doc);
+                d.setAttribute("onmousewheel","return;");
                 if(typeof d.onmousewheel==="function")
                  addEventListener
                   (window$0,
@@ -5739,12 +5642,9 @@
                    handler
                     (function(e)
                       {function _d7_(param){return 0}
-                       var jsoo_res=e.wheelDeltaX,dx=(-_cY_(jsoo_res,_d7_)|0)/40|0;
-                       function _d8_(param)
-                        {var jsoo_res=e.wheelDelta;return jsoo_res}
-                       var
-                        jsoo_res$0=e.wheelDeltaY,
-                        dy=(-_cY_(jsoo_res$0,_d8_)|0)/40|0;
+                       var dx=(-_cY_(e.wheelDeltaX,_d7_)|0)/40|0;
+                       function _d8_(param){return e.wheelDelta}
+                       var dy=(-_cY_(e.wheelDeltaY,_d8_)|0)/40|0;
                        return h(e,dx,dy)}),
                    jsoo_b72254d0);
                 else
@@ -5753,8 +5653,8 @@
                    DOMMouseScroll,
                    handler
                     (function(e)
-                      {var d=e.detail,jsoo_res=e.HORIZONTAL,jsoo_res$0=e.axis;
-                       return jsoo_res$0===jsoo_res?h(e,d,0):h(e,0,d)}),
+                      {var d=e.detail;
+                       return e.axis===e.HORIZONTAL?h(e,d,0):h(e,0,d)}),
                    jsoo_b72254d0);
                 function handle_key_event(jsoo_obj)
                  {var match=jsoo_obj.keyCode,switcher=match-37|0;
@@ -5809,9 +5709,7 @@
                  match$13=
                   handler
                    (function(e)
-                     {var jsoo_res=e.keyCode;
-                      ignored_keycode[1]=jsoo_res;
-                      return handle_key_event(e)});
+                     {ignored_keycode[1]=e.keyCode;return handle_key_event(e)});
                 doc.onkeydown=match$13;
                 var
                  match$14=
@@ -5819,8 +5717,7 @@
                    (function(e)
                      {var k=ignored_keycode[1];
                       ignored_keycode[1]=-1;
-                      var jsoo_res=e.keyCode;
-                      return jsoo_res===k?jsoo_b72254d0:handle_key_event(e)});
+                      return e.keyCode===k?jsoo_b72254d0:handle_key_event(e)});
                 doc.onkeypress=match$14;
                 update_view(1);
                 return return$0(0)}
