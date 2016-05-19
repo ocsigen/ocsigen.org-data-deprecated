@@ -10,7 +10,7 @@
                  | `No_header ] ->
     [< Html5_types.div_content ] Eliom_content.Html5.elt list ->
     [> `Div ] Eliom_content.Html5.elt * int Eliom_shared.React.S.t *
-    int Eliom_shared.React.S.t
+    int Eliom_shared.React.S.t * float React.S.t Eliom_client_value.t
   val bullets :
     ?a:[< Html5_types.ul_attrib ] Eliom_content.Html5.attrib list ->
     ?attributes:[< Html5_types.li_attrib ] Eliom_content.Html5.attrib list
@@ -26,6 +26,7 @@
     pos:int Eliom_shared.React.S.t ->
     ?size:int Eliom_shared.React.S.t ->
     ?initial_gap:int ->
+    ?cursor:float React.S.t Eliom_client_value.t ->
     [< Html5_types.li_content_fun ] Eliom_content.Html5.elt list list ->
     [> `Div ] Eliom_content.Html5.elt
   val previous :
