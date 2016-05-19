@@ -1,5 +1,7 @@
 =Index of modules=
 
+|@@ @style="tet-align: left;"@@\\L|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="List"| module Ot_lib.List >> ~[<<a_api subproject="server" | module Ot_lib >>~]||
 |@@ @style="tet-align: left;"@@\\O|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Ot_calendar"| module Ot_calendar >> |<<div class="odocwiki_info"|~Calendar widget
 >>
