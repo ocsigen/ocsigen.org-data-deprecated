@@ -344,7 +344,6 @@
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="current_classes"| value Eliom_client_core.current_classes >> ~[<<a_api subproject="client" | module Eliom_client_core >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="current_state_id"| value Eliom_client_core.current_state_id >> ~[<<a_api subproject="client" | module Eliom_client_core >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="current_uri"| value Eliom_client_core.current_uri >> ~[<<a_api subproject="client" | module Eliom_client_core >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="cursor"| value Eliom_content.Html5.Manip.SetCss.cursor >> ~[<<a_api subproject="client" | module Eliom_content.Html5.Manip.SetCss >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="cursor"| value Eliom_content.Html5.Manip.Css.cursor >> ~[<<a_api subproject="client" | module Eliom_content.Html5.Manip.Css >>~]||
 |@@ @style="tet-align: left;"@@\\D|
