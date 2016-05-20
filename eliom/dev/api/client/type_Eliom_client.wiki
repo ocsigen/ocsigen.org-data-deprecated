@@ -97,6 +97,7 @@
   val onunload : (unit -> string option) -> unit
   val wait_load_end : unit -> unit Lwt.t
   val get_application_name : unit -> string
+  val persist_document_head : unit -> unit
   type ('a, 'b) server_function = 'a -> 'b Lwt.t
   val server_function :
     ?scope:[< Eliom_common.scope ] ->

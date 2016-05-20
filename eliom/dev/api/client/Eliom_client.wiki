@@ -115,6 +115,9 @@
 <<pre id="VALget_application_name" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|get~_application~_name>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|unit <<span class="ocsforge_color_delimiter"| -> >> string>>>><<div class="odocwiki_info"|~Returns the name of currently running ~Eliom application~,
     defined while applying <<span class="odocwiki_inlinecode"|~Eliom~_registration~.~App>> functor~.
 >>
+<<pre id="VALpersist_document_head" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|persist~_document~_head>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|unit <<span class="ocsforge_color_delimiter"| -> >> unit>>>><<div class="odocwiki_info"|~After this function is called~, the document head is no
+    longer changed on page change~.
+>>
 
 
 ==@@id="2_RPCServerfunctions"@@~R~P~C ~/ ~Server functions==

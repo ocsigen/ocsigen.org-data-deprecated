@@ -869,6 +869,10 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="parentNode"| value Eliom_content.Svg.Manip.parentNode >> ~[<<a_api subproject="client" | module Eliom_content.Svg.Manip >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|parent~Node elt>> returns the parent of <<span class="odocwiki_inlinecode"|elt>>~, if any~.
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="persist_document_head"| value Eliom_client.persist_document_head >> ~[<<a_api subproject="client" | module Eliom_client >>~]|<<div class="odocwiki_info"|~After this function is called~, the document head is no
+    longer changed on page change~.
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="position"| value Eliom_content.Html5.Manip.SetCss.position >> ~[<<a_api subproject="client" | module Eliom_content.Html5.Manip.SetCss >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="position"| value Eliom_content.Html5.Manip.Css.position >> ~[<<a_api subproject="client" | module Eliom_content.Html5.Manip.Css >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="post_form"| value Eliom_form_sigs.S.post_form >> ~[<<a_api subproject="client" | module Eliom_form_sigs.S >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|post~_form service formgen get~_params>> creates a
