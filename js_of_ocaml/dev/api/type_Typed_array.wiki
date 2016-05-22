@@ -172,4 +172,6 @@
       val of_arrayBuffer :
         Typed_array.arrayBuffer Js.t -> Typed_array.Bigstring.t
     end
+  module String :
+    sig val of_arrayBuffer : Typed_array.arrayBuffer Js.t -> string end
 end >>

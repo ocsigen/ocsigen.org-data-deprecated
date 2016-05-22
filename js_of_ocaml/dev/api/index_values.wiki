@@ -950,6 +950,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="of_anchor"| value Tyxml_cast_sigs.OF.of_anchor >> ~[<<a_api | module Tyxml_cast_sigs.OF >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="of_area"| value Tyxml_cast_sigs.OF.of_area >> ~[<<a_api | module Tyxml_cast_sigs.OF >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="of_area"| value Tyxml_cast_sigs.TO.of_area >> ~[<<a_api | module Tyxml_cast_sigs.TO >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="of_arrayBuffer"| value Typed_array.String.of_arrayBuffer >> ~[<<a_api | module Typed_array.String >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="of_arrayBuffer"| value Typed_array.Bigstring.of_arrayBuffer >> ~[<<a_api | module Typed_array.Bigstring >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="of_article"| value Tyxml_cast_sigs.TO.of_article >> ~[<<a_api | module Tyxml_cast_sigs.TO >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="of_aside"| value Tyxml_cast_sigs.TO.of_aside >> ~[<<a_api | module Tyxml_cast_sigs.TO >>~]||
@@ -1520,6 +1521,9 @@
 |
 |@@class="odocwiki_index"@ @@<<a_api text="up"| value Keycode.up >> ~[<<a_api | module Keycode >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="update_children"| value Tyxml_js.Util.update_children >> ~[<<a_api | module Tyxml_js.Util >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="update_file"| value Sys_js.update_file >> ~[<<a_api | module Sys_js >>~]|<<div class="odocwiki_info"|~Update a file in the ~Pseudo ~Filesystem~.
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api text="updateready"| value Dom_html.Event.updateready >> ~[<<a_api | module Dom_html.Event >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="url_of_string"| value Url.url_of_string >> ~[<<a_api | module Url >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|url~_of~_string s>> parses <<span class="odocwiki_inlinecode"|s>> and builds a value of type <<span class="odocwiki_inlinecode"|url>> if <<span class="odocwiki_inlinecode"|s>> is not
     a valid url string~, it returns <<span class="odocwiki_inlinecode"|~None>>~.

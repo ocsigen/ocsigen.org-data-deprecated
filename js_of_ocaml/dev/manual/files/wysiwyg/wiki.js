@@ -581,7 +581,8 @@
           dir.mk(d,new MlFile(caml_string_of_array(content)));
          else
           if(content.toString)
-           dir.mk(d,new MlFile(caml_new_string(content.toString())));
+           {var mlstring=caml_new_string(content.toString());
+            dir.mk(d,new MlFile(mlstring))}
           else
            caml_invalid_argument("caml_fs_register");
       return 0}

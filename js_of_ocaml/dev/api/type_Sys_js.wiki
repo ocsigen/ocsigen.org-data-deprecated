@@ -3,6 +3,7 @@
     Pervasives.out_channel -> (string -> unit) -> unit
   val set_channel_filler : Pervasives.in_channel -> (unit -> string) -> unit
   val register_file : name:string -> content:string -> unit
+  val update_file : name:string -> content:string -> unit
   val register_autoload' :
     path:string ->
     (Js.js_string Js.t * Js.js_string Js.t -> Js.js_string Js.t option) ->
