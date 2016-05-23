@@ -74,8 +74,12 @@
 >>
 |
 |@@ @style="tet-align: left;"@@\\H|
-|@@class="odocwiki_index"@ @@<<a_api text="Html5"| module Tyxml_js.R.Html5 >> ~[<<a_api | module Tyxml_js.R >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="Html5"| module Tyxml_js.Html5 >> ~[<<a_api | module Tyxml_js >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="Html"| module Tyxml_js.R.Html >> ~[<<a_api | module Tyxml_js.R >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="Html"| module Tyxml_js.Html >> ~[<<a_api | module Tyxml_js >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="Html5"| module Tyxml_js.R.Html5 >> ~[<<a_api | module Tyxml_js.R >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_deprecated"|>>>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="Html5"| module Tyxml_js.Html5 >> ~[<<a_api | module Tyxml_js >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_deprecated"|>>>>
+|
 |@@ @style="tet-align: left;"@@\\J|
 |@@class="odocwiki_index"@ @@<<a_api text="Js"| module Js >> |<<div class="odocwiki_info"|~Javascript binding
 >>
@@ -190,11 +194,11 @@
 |@@class="odocwiki_index"@ @@<<a_api text="Worker"| module Worker >> |<<div class="odocwiki_info"|~Low~-level bindgins to javascript ~Web ~Workers~.
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api text="Wrap"| module Tyxml_js.Wrap >> ~[<<a_api | module Tyxml_js >>~]||
 |@@ @style="tet-align: left;"@@\\X|
 |@@class="odocwiki_index"@ @@<<a_api text="Xml"| module Tyxml_js.R.Xml >> ~[<<a_api | module Tyxml_js.R >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="Xml"| module Tyxml_js.Xml >> ~[<<a_api | module Tyxml_js >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="XmlHttpRequest"| module XmlHttpRequest >> |<<div class="odocwiki_info"|~Xml~Http~Request object~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api text="Xml_wrap"| module Tyxml_js.Xml_wrap >> ~[<<a_api | module Tyxml_js >>~]||
 \\

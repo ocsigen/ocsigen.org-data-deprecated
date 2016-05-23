@@ -11,7 +11,11 @@
        s+=f.apply(null,raw_array_sub(a,i,Math.min(len,1024)));
       return s}
     function caml_convert_string_to_array(s)
-     {var a=new Array(s.l),b=s.c,l=b.length,i=0;
+     {if(joo_global_object.Uint8Array)
+       var a=new (joo_global_object.Uint8Array)(s.l);
+      else
+       var a=new Array(s.l);
+      var b=s.c,l=b.length,i=0;
       for(;i<l;i++)a[i]=b.charCodeAt(i);
       for(l=s.l;i<l;i++)a[i]=0;
       s.c=a;
