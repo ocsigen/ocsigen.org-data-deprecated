@@ -1028,6 +1028,10 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="replaceSelf"| value Eliom_content.Svg.Manip.replaceSelf >> ~[<<a_api subproject="client" | module Eliom_content.Svg.Manip >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|replace~Self elt~1 elt~2>> replaces <<span class="odocwiki_inlinecode"|elt~1>> by <<span class="odocwiki_inlinecode"|elt~2>>~.
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="replace_url"| value Eliom_client.replace_url >> ~[<<a_api subproject="client" | module Eliom_client >>~]|<<div class="odocwiki_info"|~Replaces the ~U~R~L~, without doing a request and without
+    pushing the previous ~U~R~L in the history~.
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="resolve"| value Eliom_lib.Url.resolve >> ~[<<a_api subproject="client" | module Eliom_lib.Url >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="right"| value Eliom_content.Html5.Manip.SetCss.right >> ~[<<a_api subproject="client" | module Eliom_content.Html5.Manip.SetCss >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="right"| value Eliom_content.Html5.Manip.Css.right >> ~[<<a_api subproject="client" | module Eliom_content.Html5.Manip.Css >>~]||

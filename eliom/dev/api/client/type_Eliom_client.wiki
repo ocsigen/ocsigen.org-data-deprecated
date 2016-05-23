@@ -77,6 +77,18 @@
     ?fragment:string ->
     ?keep_nl_params:[ `All | `None | `Persistent ] ->
     ?nl_params:Eliom_parameter.nl_params_set -> 'get -> unit
+  val replace_url :
+    ?absolute:bool ->
+    ?absolute_path:bool ->
+    ?https:bool ->
+    service:('get, unit, Eliom_service.get, 'a, 'b, 'c, 'd,
+             [< `WithSuffix | `WithoutSuffix ], 'e, unit, 'f)
+            Eliom_service.t ->
+    ?hostname:string ->
+    ?port:int ->
+    ?fragment:string ->
+    ?keep_nl_params:[ `All | `None | `Persistent ] ->
+    ?nl_params:Eliom_parameter.nl_params_set -> 'get -> unit
   val call_service :
     ?absolute:bool ->
     ?absolute_path:bool ->
