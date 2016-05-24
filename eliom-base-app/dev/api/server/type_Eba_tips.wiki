@@ -8,25 +8,25 @@
     ?bottom:int ->
     ?height:int ->
     ?width:int ->
-    ?parent_node:[< `A of Html5_types.flow5_without_interactive
+    ?parent_node:[< `A of Html_types.flow5_without_interactive
                   | `Abbr
                   | `Address
                   | `Article
                   | `Aside
-                  | `Audio of Html5_types.flow5_without_media
-                  | `Audio_interactive of Html5_types.flow5_without_media
+                  | `Audio of Html_types.flow5_without_media
+                  | `Audio_interactive of Html_types.flow5_without_media
                   | `B
                   | `Bdo
                   | `Blockquote
                   | `Body
                   | `Br
                   | `Button
-                  | `Canvas of Html5_types.flow5
+                  | `Canvas of Html_types.flow5
                   | `Cite
                   | `Code
                   | `Command
                   | `Datalist
-                  | `Del of Html5_types.flow5
+                  | `Del of Html_types.flow5
                   | `Details
                   | `Dfn
                   | `Div
@@ -51,19 +51,19 @@
                   | `Img
                   | `Img_interactive
                   | `Input
-                  | `Ins of Html5_types.flow5
+                  | `Ins of Html_types.flow5
                   | `Kbd
                   | `Keygen
                   | `Label
                   | `Main
-                  | `Map of Html5_types.flow5
+                  | `Map of Html_types.flow5
                   | `Mark
                   | `Menu
                   | `Meter
                   | `Nav
-                  | `Noscript of Html5_types.flow5_without_noscript
-                  | `Object of Html5_types.flow5
-                  | `Object_interactive of Html5_types.flow5
+                  | `Noscript of Html_types.flow5_without_noscript
+                  | `Object of Html_types.flow5
+                  | `Object_interactive of Html_types.flow5
                   | `Ol
                   | `Output
                   | `P
@@ -89,12 +89,12 @@
                   | `U
                   | `Ul
                   | `Var
-                  | `Video of Html5_types.flow5_without_media
-                  | `Video_interactive of Html5_types.flow5_without_media
+                  | `Video of Html_types.flow5_without_media
+                  | `Video_interactive of Html_types.flow5_without_media
                   | `Wbr ]
-                 Eliom_content.Html5.elt ->
+                 Eliom_content.Html.elt ->
     name:string ->
-    content:Html5_types.div_content Eliom_content.Html5.elt list ->
+    content:Html_types.div_content Eliom_content.Html.elt list ->
     unit -> unit Lwt.t
   val reset_tips : int64 -> unit -> unit -> unit Lwt.t
   val reset_tips_service :
