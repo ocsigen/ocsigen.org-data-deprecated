@@ -6,6 +6,7 @@
     ?port:int -> full_path:Eliom_lib.Url.path -> unit -> unit
   val is_client_app : unit -> bool
   val change_page :
+    ?replace:bool ->
     ?absolute:bool ->
     ?absolute_path:bool ->
     ?https:bool ->
@@ -66,18 +67,7 @@
     ?nl_params:Eliom_parameter.nl_params_set ->
     ?keep_get_na_params:bool -> 'a -> Dom_html.window Js.t
   val change_url :
-    ?absolute:bool ->
-    ?absolute_path:bool ->
-    ?https:bool ->
-    service:('get, unit, Eliom_service.get, 'a, 'b, 'c, 'd,
-             [< `WithSuffix | `WithoutSuffix ], 'e, unit, 'f)
-            Eliom_service.t ->
-    ?hostname:string ->
-    ?port:int ->
-    ?fragment:string ->
-    ?keep_nl_params:[ `All | `None | `Persistent ] ->
-    ?nl_params:Eliom_parameter.nl_params_set -> 'get -> unit
-  val replace_url :
+    ?replace:bool ->
     ?absolute:bool ->
     ?absolute_path:bool ->
     ?https:bool ->

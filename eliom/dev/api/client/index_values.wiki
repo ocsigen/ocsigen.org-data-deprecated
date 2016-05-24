@@ -199,7 +199,7 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="captionSide"| value Eliom_content.Html.Manip.SetCss.captionSide >> ~[<<a_api subproject="client" | module Eliom_content.Html.Manip.SetCss >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="captionSide"| value Eliom_content.Html.Manip.Css.captionSide >> ~[<<a_api subproject="client" | module Eliom_content.Html.Manip.Css >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="change_dom"| value Eliom_client_core.ReactState.change_dom >> ~[<<a_api subproject="client" | module Eliom_client_core.ReactState >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="change_page"| value Eliom_client.change_page >> ~[<<a_api subproject="client" | module Eliom_client >>~]|<<div class="odocwiki_info"|~Call a server side service and change the current page~.
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="change_page"| value Eliom_client.change_page >> ~[<<a_api subproject="client" | module Eliom_client >>~]|<<div class="odocwiki_info"|~Call a service and change the current page~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="change_page_get_form_"| value Eliom_client_core.change_page_get_form_ >> ~[<<a_api subproject="client" | module Eliom_client_core >>~]||
@@ -1026,10 +1026,6 @@
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="replaceSelf"| value Eliom_content.Svg.Manip.replaceSelf >> ~[<<a_api subproject="client" | module Eliom_content.Svg.Manip >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|replace~Self elt~1 elt~2>> replaces <<span class="odocwiki_inlinecode"|elt~1>> by <<span class="odocwiki_inlinecode"|elt~2>>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="replace_url"| value Eliom_client.replace_url >> ~[<<a_api subproject="client" | module Eliom_client >>~]|<<div class="odocwiki_info"|~Replaces the ~U~R~L~, without doing a request and without
-    pushing the previous ~U~R~L in the history~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="resolve"| value Eliom_lib.Url.resolve >> ~[<<a_api subproject="client" | module Eliom_lib.Url >>~]||
