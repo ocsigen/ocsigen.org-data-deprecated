@@ -36,7 +36,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="Filename"| module Ocsigen_lib.Filename >> ~[<<a_api | module Ocsigen_lib >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="Framepp"| module Framepp >> ||
 |@@ @style="tet-align: left;"@@\\H|
-|@@class="odocwiki_index"@ @@<<a_api text="Html5_content"| module Ocsigen_senders.Html5_content >> ~[<<a_api | module Ocsigen_senders >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="Html_content"| module Ocsigen_senders.Html_content >> ~[<<a_api | module Ocsigen_senders >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="Http_error"| module Ocsigen_http_frame.Http_error >> ~[<<a_api | module Ocsigen_http_frame >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="Http_header"| module Ocsigen_http_frame.Http_header >> ~[<<a_api | module Ocsigen_http_frame >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="Http_headers"| module Http_headers >> |<<div class="odocwiki_info"|returns an empty set of ~H~T~T~P headers
