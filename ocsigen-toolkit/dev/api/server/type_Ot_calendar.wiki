@@ -17,13 +17,13 @@
     ?update:(int * int * int) React.E.t Eliom_client_value.t ->
     ?action:(int -> int -> int -> unit Lwt.t) Eliom_client_value.t ->
     ?button_labels:Ot_calendar.button_labels ->
-    ?intl:Ot_calendar.intl -> unit -> [> `Table ] Eliom_content.Html5.elt
+    ?intl:Ot_calendar.intl -> unit -> [> `Table ] Eliom_content.Html.elt
   val make_date_picker :
     ?init:int * int * int ->
     ?update:(int * int * int) React.E.t Eliom_client_value.t ->
     ?button_labels:Ot_calendar.button_labels ->
     ?intl:Ot_calendar.intl ->
     unit ->
-    [> `Table ] Eliom_content.Html5.elt *
+    [> `Table ] Eliom_content.Html.elt *
     (int * int * int) Eliom_shared.React.S.t
 end >>

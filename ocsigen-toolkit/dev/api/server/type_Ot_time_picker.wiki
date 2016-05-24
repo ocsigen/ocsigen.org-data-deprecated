@@ -6,7 +6,7 @@
     ?round_5:bool ->
     ?h24:bool ->
     unit ->
-    [> `Div ] Eliom_content.Html5.elt * (int * int) Eliom_shared.React.S.t *
+    [> `Div ] Eliom_content.Html.elt * (int * int) Eliom_shared.React.S.t *
     (unit -> unit) Eliom_client_value.t
   val make_hours_minutes_seq :
     ?action:(int * int -> unit Lwt.t) Eliom_client_value.t ->
@@ -15,6 +15,6 @@
     ?round_5:bool ->
     ?h24:bool ->
     unit ->
-    [> `Div ] Eliom_content.Html5.elt * (int * int) Eliom_shared.React.S.t *
+    [> `Div ] Eliom_content.Html.elt * (int * int) Eliom_shared.React.S.t *
     (unit -> unit) Eliom_client_value.t
 end >>

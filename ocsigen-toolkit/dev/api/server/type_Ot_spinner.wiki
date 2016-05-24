@@ -1,8 +1,8 @@
 <<code language="ocaml" | sig
   val with_spinner :
-    ?a:[< Html5_types.div_attrib ] Eliom_content.Html5.attrib list ->
+    ?a:[< Html_types.div_attrib ] Eliom_content.Html.attrib list ->
     ?fail:(exn ->
-           [< Html5_types.div_content ] Eliom_content.Html5.elt list Lwt.t) ->
-    [< Html5_types.div_content ] Eliom_content.Html5.elt list Lwt.t ->
-    [> `Div ] Eliom_content.Html5.elt Lwt.t
+           [< Html_types.div_content ] Eliom_content.Html.elt list Lwt.t) ->
+    [< Html_types.div_content ] Eliom_content.Html.elt list Lwt.t ->
+    [> `Div ] Eliom_content.Html.elt Lwt.t
 end >>
