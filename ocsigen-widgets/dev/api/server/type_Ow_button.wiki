@@ -1,14 +1,14 @@
 <<code language="ocaml" | sig
   type ('a, 'b, 'c) button_dyn_alert_fun' =
-      'a Eliom_content.Html5.elt ->
-      'b Eliom_content.Html5.elt -> 'c Eliom_content.Html5.elt list Lwt.t
+      'a Eliom_content.Html.elt ->
+      'b Eliom_content.Html.elt -> 'c Eliom_content.Html.elt list Lwt.t
   val closeable_by_click :
-    'a Eliom_content.Html5.elt -> 'a Eliom_content.Html5.elt
+    'a Eliom_content.Html.elt -> 'a Eliom_content.Html.elt
   val button :
     ?set:Ow_active_set.t' Eliom_client_value.t ->
     ?pressed:bool ->
     ?predicate:(unit -> bool Lwt.t) ->
-    'a Eliom_content.Html5.elt -> 'a Eliom_content.Html5.elt
+    'a Eliom_content.Html.elt -> 'a Eliom_content.Html.elt
   val button_alert :
     ?v:Ow_position.v_orientation' ->
     ?h:Ow_position.h_orientation' ->
@@ -17,11 +17,11 @@
     ?predicate:(unit -> bool Lwt.t) ->
     ?allow_outer_clicks:bool ->
     ?closeable_by_button:bool ->
-    ?before:('a Eliom_content.Html5.elt -> 'b Eliom_content.Html5.elt -> unit) ->
-    ?after:('a Eliom_content.Html5.elt -> 'b Eliom_content.Html5.elt -> unit) ->
-    'a Eliom_content.Html5.elt ->
-    'b Eliom_content.Html5.elt ->
-    'a Eliom_content.Html5.elt * 'b Eliom_content.Html5.elt
+    ?before:('a Eliom_content.Html.elt -> 'b Eliom_content.Html.elt -> unit) ->
+    ?after:('a Eliom_content.Html.elt -> 'b Eliom_content.Html.elt -> unit) ->
+    'a Eliom_content.Html.elt ->
+    'b Eliom_content.Html.elt ->
+    'a Eliom_content.Html.elt * 'b Eliom_content.Html.elt
   val button_dyn_alert :
     ?v:Ow_position.v_orientation' ->
     ?h:Ow_position.h_orientation' ->
@@ -30,12 +30,12 @@
     ?predicate:(unit -> bool Lwt.t) ->
     ?allow_outer_clicks:bool ->
     ?closeable_by_button:bool ->
-    ?before:('a Eliom_content.Html5.elt ->
-             'b Eliom_content.Html5.elt -> unit Lwt.t) ->
-    ?after:('a Eliom_content.Html5.elt ->
-            'b Eliom_content.Html5.elt -> unit Lwt.t) ->
-    'a Eliom_content.Html5.elt ->
-    'b Eliom_content.Html5.elt ->
+    ?before:('a Eliom_content.Html.elt ->
+             'b Eliom_content.Html.elt -> unit Lwt.t) ->
+    ?after:('a Eliom_content.Html.elt ->
+            'b Eliom_content.Html.elt -> unit Lwt.t) ->
+    'a Eliom_content.Html.elt ->
+    'b Eliom_content.Html.elt ->
     ('a, 'b, 'c) Ow_button.button_dyn_alert_fun' Eliom_client_value.t ->
-    'a Eliom_content.Html5.elt * 'b Eliom_content.Html5.elt
+    'a Eliom_content.Html.elt * 'b Eliom_content.Html.elt
 end >>

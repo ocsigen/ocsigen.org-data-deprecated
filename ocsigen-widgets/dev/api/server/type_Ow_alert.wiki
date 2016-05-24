@@ -1,18 +1,18 @@
 <<code language="ocaml" | sig
   type ('a, 'b) dyn_alert_fun' =
-      'a Eliom_content.Html5.elt -> 'b Eliom_content.Html5.elt list Lwt.t
+      'a Eliom_content.Html.elt -> 'b Eliom_content.Html.elt list Lwt.t
   val closeable_by_click :
-    'a Eliom_content.Html5.elt -> 'a Eliom_content.Html5.elt
+    'a Eliom_content.Html.elt -> 'a Eliom_content.Html.elt
   val alert :
     ?allow_outer_clicks:bool ->
-    ?before:('a Eliom_content.Html5.elt -> unit) ->
-    ?after:('a Eliom_content.Html5.elt -> unit) ->
-    'a Eliom_content.Html5.elt -> 'a Eliom_content.Html5.elt
+    ?before:('a Eliom_content.Html.elt -> unit) ->
+    ?after:('a Eliom_content.Html.elt -> unit) ->
+    'a Eliom_content.Html.elt -> 'a Eliom_content.Html.elt
   val dyn_alert :
     ?allow_outer_clicks:bool ->
-    ?before:('a Eliom_content.Html5.elt -> unit Lwt.t) ->
-    ?after:('a Eliom_content.Html5.elt -> unit Lwt.t) ->
-    'a Eliom_content.Html5.elt ->
+    ?before:('a Eliom_content.Html.elt -> unit Lwt.t) ->
+    ?after:('a Eliom_content.Html.elt -> unit Lwt.t) ->
+    'a Eliom_content.Html.elt ->
     ('a, 'b) Ow_alert.dyn_alert_fun' Eliom_client_value.t ->
-    'a Eliom_content.Html5.elt
+    'a Eliom_content.Html.elt
 end >>

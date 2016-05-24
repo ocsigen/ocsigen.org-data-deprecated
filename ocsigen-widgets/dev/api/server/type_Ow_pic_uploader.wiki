@@ -17,13 +17,12 @@
     ?send:string ->
     ?crop:string ->
     ?select_an_area_of_the_picture:string ->
-    ?fit_in_box:([ `Div ] Eliom_content.Html5.D.elt ->
-                 int option * int option)
+    ?fit_in_box:([ `Div ] Eliom_content.Html.D.elt -> int option * int option)
                 Eliom_client_value.t ->
     'data Ow_pic_uploader.t ->
     url_path:string list ->
     text:string ->
     on_error:(exn -> unit Lwt.t) ->
     continuation:(string -> unit Lwt.t) ->
-    'data -> [ `Div ] Eliom_content.Html5.D.elt
+    'data -> [ `Div ] Eliom_content.Html.D.elt
 end >>

@@ -1,13 +1,13 @@
 <<code language="ocaml" | sig
   val li :
-    ?a:[< Html5_types.li_attrib > `Class `User_data ]
-       Eliom_content.Html5.D.attrib list ->
+    ?a:[< Html_types.li_attrib > `Class `User_data ]
+       Eliom_content.Html.D.attrib list ->
     ?anchor:bool ->
     ?href:string ->
-    ?value:Html5_types.text ->
-    ?value_to_match:Html5_types.text ->
-    Html5_types.flow5_without_interactive Eliom_content.Html5.D.Raw.elt list ->
-    [> Html5_types.li ] Eliom_content.Html5.D.elt
+    ?value:Html_types.text ->
+    ?value_to_match:Html_types.text ->
+    Html_types.flow5_without_interactive Eliom_content.Html.D.Raw.elt list ->
+    [> Html_types.li ] Eliom_content.Html.D.elt
   module Style :
     sig
       val traversable_cls : string
@@ -18,6 +18,6 @@
   val traversable :
     ?enable_link:bool ->
     ?focus:bool ->
-    Html5_types.ul Eliom_content.Html5.elt ->
-    Html5_types.ul Eliom_content.Html5.elt
+    Html_types.ul Eliom_content.Html.elt ->
+    Html_types.ul Eliom_content.Html.elt
 end >>
