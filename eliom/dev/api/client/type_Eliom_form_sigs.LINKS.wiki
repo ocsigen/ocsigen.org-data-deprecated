@@ -17,18 +17,18 @@
     'get -> Eliom_form_sigs.LINKS.uri
   val uri_of_string : (unit -> string) -> Eliom_form_sigs.LINKS.uri
   val css_link :
-    ?a:[< Html5_types.link_attrib ] Eliom_form_sigs.LINKS.attrib list ->
+    ?a:[< Html_types.link_attrib ] Eliom_form_sigs.LINKS.attrib list ->
     uri:Eliom_form_sigs.LINKS.uri ->
-    unit -> [> Html5_types.link ] Eliom_form_sigs.LINKS.elt
+    unit -> [> Html_types.link ] Eliom_form_sigs.LINKS.elt
   val js_script :
-    ?a:[< Html5_types.script_attrib ] Eliom_form_sigs.LINKS.attrib list ->
+    ?a:[< Html_types.script_attrib ] Eliom_form_sigs.LINKS.attrib list ->
     uri:Eliom_form_sigs.LINKS.uri ->
-    unit -> [> Html5_types.script ] Eliom_form_sigs.LINKS.elt
+    unit -> [> Html_types.script ] Eliom_form_sigs.LINKS.elt
   val a :
     ?absolute:bool ->
     ?absolute_path:bool ->
     ?https:bool ->
-    ?a:[< Html5_types.a_attrib ] Eliom_form_sigs.LINKS.attrib list ->
+    ?a:[< Html_types.a_attrib ] Eliom_form_sigs.LINKS.attrib list ->
     service:('get, unit, Eliom_service.get, 'b, 'c, 'd, 'e,
              [< `WithSuffix | `WithoutSuffix ], 'f, unit,
              Eliom_service.non_ocaml)
@@ -40,5 +40,5 @@
     ?nl_params:Eliom_parameter.nl_params_set ->
     ?xhr:bool ->
     'a Eliom_form_sigs.LINKS.elt list ->
-    'get -> [> 'a Html5_types.a ] Eliom_form_sigs.LINKS.elt
+    'get -> [> 'a Html_types.a ] Eliom_form_sigs.LINKS.elt
 end >>

@@ -39,9 +39,7 @@ file~.
 |<<a_api subproject="server" | module Eliom_content >>|<<div class="odocwiki_info"|~This module allows creating valid ~H~T~M~L content~, or other ~X~M~L formats~.
 >>
 |
-|<<a_api subproject="server" | module Eliom_content.Html5 >>|<<div class="odocwiki_info"|~Building and printing valid ~H~T~M~L~5 tree~.
->>
-|
+|Eliom_content.Html5||
 |<<a_api subproject="server" | module Eliom_content.Svg >>|<<div class="odocwiki_info"|~Building and pretty~-printing valid ~S~V~G tree~.
 >>
 |
@@ -71,14 +69,11 @@ file~.
 >>
 |
 |<<a_api subproject="server" | module Eliom_registration >>|<<div class="odocwiki_info"|~Eliom services registration for various kinds of page content~:
-    ~Eliom application~, valid <<a_api subproject="server" | module Eliom_registration.Html5 >>~, actions~, redirections~, static
+    ~Eliom application~, valid <<a_api subproject="server" | module Eliom_registration.Html >>~, actions~, redirections~, static
     files~, …
 >>
 |
-|<<a_api subproject="server" | module Eliom_registration.Html5 >>|<<div class="odocwiki_info"|~Eliom service registration for services that return ~H~T~M~L~5
-    pages~.
->>
-|
+|Eliom_registration.Html5||
 |<<a_api subproject="server" | module Eliom_registration.Action >>|<<div class="odocwiki_info"|~Eliom service registration for services that only execute
     actions~.
 >>

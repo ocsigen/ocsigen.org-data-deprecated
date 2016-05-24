@@ -74,11 +74,11 @@
       global service <<span class="odocwiki_inlinecode"|service>> on the ~U~R~L of <<span class="odocwiki_inlinecode"|fallback>>~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="attr"| value Eliom_content.Html5.C.attr >> ~[<<a_api subproject="server" | module Eliom_content.Html5.C >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="attr"| value Eliom_content.Html.C.attr >> ~[<<a_api subproject="server" | module Eliom_content.Html.C >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="attr"| value Eliom_content.Svg.C.attr >> ~[<<a_api subproject="server" | module Eliom_content.Svg.C >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="attrib"| value Eliom_content.Html5.Custom_data.attrib >> ~[<<a_api subproject="server" | module Eliom_content.Html5.Custom_data >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|attrib my~_data value >> creates a ~H~T~M~L~5 attribute for the custom~-data
-        type <<span class="odocwiki_inlinecode"|my~_data>> with value <<span class="odocwiki_inlinecode"|value>> for injecting it into an a ~H~T~M~L~5 tree
-        ~(<<a_api | type Eliom_content.Html5.elt >> ~)~.
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="attrib"| value Eliom_content.Html.Custom_data.attrib >> ~[<<a_api subproject="server" | module Eliom_content.Html.Custom_data >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|attrib my~_data value >> creates a ~H~T~M~L attribute for the custom~-data
+        type <<span class="odocwiki_inlinecode"|my~_data>> with value <<span class="odocwiki_inlinecode"|value>> for injecting it into an a ~H~T~M~L tree
+        ~(<<a_api | type Eliom_content.Html.elt >> ~)~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="authenticate"| value Eliom_openid.Make.authenticate >> ~[<<a_api subproject="server" | module Eliom_openid.Make >>~]|<<div class="odocwiki_info"|~Authenticate an user~.
@@ -180,7 +180,7 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="create"| value Eliom_react.Up.create >> ~[<<a_api subproject="server" | module Eliom_react.Up >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|create param>> creates an ~Up event~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="create"| value Eliom_content.Html5.Custom_data.create >> ~[<<a_api subproject="server" | module Eliom_content.Html5.Custom_data >>~]|<<div class="odocwiki_info"|~Create a custom data field by providing string conversion functions~.
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="create"| value Eliom_content.Html.Custom_data.create >> ~[<<a_api subproject="server" | module Eliom_content.Html.Custom_data >>~]|<<div class="odocwiki_info"|~Create a custom data field by providing string conversion functions~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="create"| value Eliom_comet.Channel.create >> ~[<<a_api subproject="server" | module Eliom_comet.Channel >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|create s>> returns a channel sending the values returned by stream <<span class="odocwiki_inlinecode"|s>>~.
@@ -209,7 +209,7 @@
     before entering the bus~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="create_global_elt"| value Eliom_content.Html5.Id.create_global_elt >> ~[<<a_api subproject="server" | module Eliom_content.Html5.Id >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|create~_named~_elt elt>> is equivalent to
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="create_global_elt"| value Eliom_content.Html.Id.create_global_elt >> ~[<<a_api subproject="server" | module Eliom_content.Html.Id >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|create~_named~_elt elt>> is equivalent to
         <<span class="odocwiki_inlinecode"|create~_named~_elt ~~id~:~(new~_elt~_id ~(~)~) elt>>~.
 >>
 |
@@ -217,10 +217,10 @@
         <<span class="odocwiki_inlinecode"|create~_named~_elt ~~id~:~(new~_elt~_id ~(~)~) elt>>~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="create_json"| value Eliom_content.Html5.Custom_data.create_json >> ~[<<a_api subproject="server" | module Eliom_content.Html5.Custom_data >>~]|<<div class="odocwiki_info"|~Create a custom data from a ~Json~-deriving type~.
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="create_json"| value Eliom_content.Html.Custom_data.create_json >> ~[<<a_api subproject="server" | module Eliom_content.Html.Custom_data >>~]|<<div class="odocwiki_info"|~Create a custom data from a ~Json~-deriving type~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="create_named_elt"| value Eliom_content.Html5.Id.create_named_elt >> ~[<<a_api subproject="server" | module Eliom_content.Html5.Id >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|create~_named~_elt ~~id elt>> create a copy of the
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="create_named_elt"| value Eliom_content.Html.Id.create_named_elt >> ~[<<a_api subproject="server" | module Eliom_content.Html.Id >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|create~_named~_elt ~~id elt>> create a copy of the
         element <<span class="odocwiki_inlinecode"|elt>> that will be sent to client with the reference
         <<span class="odocwiki_inlinecode"|id>>~.
 >>
@@ -234,7 +234,7 @@
       returned to the client~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="create_request_elt"| value Eliom_content.Html5.Id.create_request_elt >> ~[<<a_api subproject="server" | module Eliom_content.Html5.Id >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|create~_request~_elt ~?reset elt>> creates a referable copy of
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="create_request_elt"| value Eliom_content.Html.Id.create_request_elt >> ~[<<a_api subproject="server" | module Eliom_content.Html.Id >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|create~_request~_elt ~?reset elt>> creates a referable copy of
         <<span class="odocwiki_inlinecode"|elt>>~.
 >>
 |
@@ -380,7 +380,7 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="file_input"| value Eliom_form_sigs.S.file_input >> ~[<<a_api subproject="server" | module Eliom_form_sigs.S >>~]|<<div class="odocwiki_info"|~Creates an <<span class="odocwiki_inlinecode"|~<input~>>> tag for sending a file
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="filter_attrib"| value Eliom_content.Html5.R.filter_attrib >> ~[<<a_api subproject="server" | module Eliom_content.Html5.R >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|filter~_attrib a b>> amounts to the attribute <<span class="odocwiki_inlinecode"|a>> while <<span class="odocwiki_inlinecode"|b>> is
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="filter_attrib"| value Eliom_content.Html.R.filter_attrib >> ~[<<a_api subproject="server" | module Eliom_content.Html.R >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|filter~_attrib a b>> amounts to the attribute <<span class="odocwiki_inlinecode"|a>> while <<span class="odocwiki_inlinecode"|b>> is
         <<span class="odocwiki_inlinecode"|true>>~, and to no attribute while <<span class="odocwiki_inlinecode"|b>> is <<span class="odocwiki_inlinecode"|false>>~.
 >>
 |
@@ -708,7 +708,7 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="global_data_path"| value Eliom_registration.APPL_PARAMS.global_data_path >> ~[<<a_api subproject="server" | module Eliom_registration.APPL_PARAMS >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="global_scope"| value Eliom_common.global_scope >> ~[<<a_api subproject="server" | module Eliom_common >>~]||
 |@@ @style="tet-align: left;"@@\\H|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="have_id"| value Eliom_content.Html5.Id.have_id >> ~[<<a_api subproject="server" | module Eliom_content.Html5.Id >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="have_id"| value Eliom_content.Html.Id.have_id >> ~[<<a_api subproject="server" | module Eliom_content.Html.Id >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="head"| value Eliom_tools.HTML5_TOOLS.head >> ~[<<a_api subproject="server" | module Eliom_tools.HTML5_TOOLS >>~]|<<div class="odocwiki_info"|~An auxiliary function for creating an ~H~T~M~L head
       elements~.
 >>
@@ -918,7 +918,7 @@
       assumed to be ~None if empty~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="new_elt_id"| value Eliom_content.Html5.Id.new_elt_id >> ~[<<a_api subproject="server" | module Eliom_content.Html5.Id >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|new~_elt~_id ~(~)>> creates a new global ~H~T~M~L~5 element
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="new_elt_id"| value Eliom_content.Html.Id.new_elt_id >> ~[<<a_api subproject="server" | module Eliom_content.Html.Id >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|new~_elt~_id ~(~)>> creates a new global ~H~T~M~L element
         identifier ~(see the ~Eliom manual for more information on         <<a_manual project="eliom" chapter="clientserver-html"
         fragment="global"|global element>>~)~.
 >>
@@ -927,11 +927,11 @@
         identifier~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="node"| value Eliom_content.Html5.R.node >> ~[<<a_api subproject="server" | module Eliom_content.Html5.R >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|node s>> produces an <<span class="odocwiki_inlinecode"|~'a elt>> out of the shared reactive
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="node"| value Eliom_content.Html.R.node >> ~[<<a_api subproject="server" | module Eliom_content.Html.R >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|node s>> produces an <<span class="odocwiki_inlinecode"|~'a elt>> out of the shared reactive
         signal <<span class="odocwiki_inlinecode"|s>>~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="node"| value Eliom_content.Html5.C.node >> ~[<<a_api subproject="server" | module Eliom_content.Html5.C >>~]|<<div class="odocwiki_info"|~See ~Eliom manual for more detail on <<a_manual
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="node"| value Eliom_content.Html.C.node >> ~[<<a_api subproject="server" | module Eliom_content.Html.C >>~]|<<div class="odocwiki_info"|~See ~Eliom manual for more detail on <<a_manual
         chapter="clientserver-html" fragment="inject" | Dom &
         Client-values >>~.
 >>
@@ -972,8 +972,8 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="path"| value Eliom_openid.HiddenServiceInfo.path >> ~[<<a_api subproject="server" | module Eliom_openid.HiddenServiceInfo >>~]|<<div class="odocwiki_info"|~The path of the hidden service
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="pcdata"| value Eliom_content.Html5.R.pcdata >> ~[<<a_api subproject="server" | module Eliom_content.Html5.R >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|pcdata s>> produces a node of type
-        <<span class="odocwiki_inlinecode"|~[~> ~Html~5~_types~.span~] elt>>
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="pcdata"| value Eliom_content.Html.R.pcdata >> ~[<<a_api subproject="server" | module Eliom_content.Html.R >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|pcdata s>> produces a node of type
+        <<span class="odocwiki_inlinecode"|~[~> ~Html~_types~.span~] elt>>
         out of the string signal <<span class="odocwiki_inlinecode"|s>>~.
 >>
 |
@@ -1339,7 +1339,7 @@
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="unregister"| value Eliom_service.unregister >> ~[<<a_api subproject="server" | module Eliom_service >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|unregister service>> unregister the service handler
     previously associated to <<span class="odocwiki_inlinecode"|service>> with
-    <<span class="odocwiki_inlinecode"|~Eliom~_registration~.~Html~5~.register>>~,
+    <<span class="odocwiki_inlinecode"|~Eliom~_registration~.~Html~.register>>~,
     <<span class="odocwiki_inlinecode"|~Eliom~_registration~.~App~.register>> or any other
     <<a_api subproject="server" | module Eliom_registration >><<span class="odocwiki_inlinecode"|~.~*~.register>> functions~.
 >>

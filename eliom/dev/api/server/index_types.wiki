@@ -17,7 +17,7 @@
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="att"| type Eliom_service_sigs.S.att >> ~[<<a_api subproject="server" | module Eliom_service_sigs.S >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="attached_info"| type Eliom_service_sigs.S.attached_info >> ~[<<a_api subproject="server" | module Eliom_service_sigs.S >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="attrib"| type Eliom_content.Html5.attrib >> ~[<<a_api subproject="server" | module Eliom_content.Html5 >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="attrib"| type Eliom_content.Html.attrib >> ~[<<a_api subproject="server" | module Eliom_content.Html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="attrib"| type Eliom_content.Svg.attrib >> ~[<<a_api subproject="server" | module Eliom_content.Svg >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="attrib"| type Eliom_form_sigs.LINKS.attrib >> ~[<<a_api subproject="server" | module Eliom_form_sigs.LINKS >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="attrib"| type Eliom_form_sigs.S.attrib >> ~[<<a_api subproject="server" | module Eliom_form_sigs.S >>~]||
@@ -81,7 +81,7 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="eliom_extension_sig"| type Eliom_extension.eliom_extension_sig >> ~[<<a_api subproject="server" | module Eliom_extension >>~]|<<div class="odocwiki_info"|~Type of the function that must be registered to declare an eliom extension~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="elt"| type Eliom_content.Html5.elt >> ~[<<a_api subproject="server" | module Eliom_content.Html5 >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="elt"| type Eliom_content.Html.elt >> ~[<<a_api subproject="server" | module Eliom_content.Html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="elt"| type Eliom_content.Svg.elt >> ~[<<a_api subproject="server" | module Eliom_content.Svg >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="elt"| type Eliom_form_sigs.LINKS.elt >> ~[<<a_api subproject="server" | module Eliom_form_sigs.LINKS >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="elt"| type Eliom_form_sigs.S.elt >> ~[<<a_api subproject="server" | module Eliom_form_sigs.S >>~]||
@@ -117,7 +117,7 @@
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="file_info"| type Eliom_lib.file_info >> ~[<<a_api subproject="server" | module Eliom_lib >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="form_param"| type Eliom_content.Html5.form_param >> ~[<<a_api subproject="server" | module Eliom_content.Html5 >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="form_param"| type Eliom_content.Html.form_param >> ~[<<a_api subproject="server" | module Eliom_content.Html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="form_param"| type Eliom_content_sigs.LINKS_AND_FORMS.form_param >> ~[<<a_api subproject="server" | module Eliom_content_sigs.LINKS_AND_FORMS >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="full_state_name"| type Eliom_common.full_state_name >> ~[<<a_api subproject="server" | module Eliom_common >>~]||
 |@@ @style="tet-align: left;"@@\\G|
@@ -137,7 +137,7 @@
 |@@ @style="tet-align: left;"@@\\I|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="icon"| type Atom_feed.icon >> ~[<<a_api subproject="server" | module Atom_feed >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="id"| type Atom_feed.id >> ~[<<a_api subproject="server" | module Atom_feed >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="id"| type Eliom_content.Html5.Id.id >> ~[<<a_api subproject="server" | module Eliom_content.Html5.Id >>~]|<<div class="odocwiki_info"|~The type of global ~H~T~M~L~5 element identifier~.
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="id"| type Eliom_content.Html.Id.id >> ~[<<a_api subproject="server" | module Eliom_content.Html.Id >>~]|<<div class="odocwiki_info"|~The type of global ~H~T~M~L element identifier~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="id"| type Eliom_content.Svg.Id.id >> ~[<<a_api subproject="server" | module Eliom_content.Svg.Id >>~]|<<div class="odocwiki_info"|~The type of global ~S~V~G element identifier~.
@@ -316,7 +316,7 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="t"| type Eliom_react.Down.t >> ~[<<a_api subproject="server" | module Eliom_react.Down >>~]|<<div class="odocwiki_info"|~The abstract type of down events~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="t"| type Eliom_content.Html5.Custom_data.t >> ~[<<a_api subproject="server" | module Eliom_content.Html5.Custom_data >>~]|<<div class="odocwiki_info"|~Custom data with values of type <<span class="odocwiki_inlinecode"|~'a>>~.
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="t"| type Eliom_content.Html.Custom_data.t >> ~[<<a_api subproject="server" | module Eliom_content.Html.Custom_data >>~]|<<div class="odocwiki_info"|~Custom data with values of type <<span class="odocwiki_inlinecode"|~'a>>~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="t"| type Eliom_comet.Channel.t >> ~[<<a_api subproject="server" | module Eliom_comet.Channel >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|v t>> is the type of server~-to~-client communication channels
@@ -354,7 +354,7 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="unwrapper"| type Eliom_wrap.unwrapper >> ~[<<a_api subproject="server" | module Eliom_wrap >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="updated"| type Atom_feed.updated >> ~[<<a_api subproject="server" | module Atom_feed >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="uri"| type Atom_feed.uri >> ~[<<a_api subproject="server" | module Atom_feed >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="uri"| type Eliom_content.Html5.uri >> ~[<<a_api subproject="server" | module Eliom_content.Html5 >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="uri"| type Eliom_content.Html.uri >> ~[<<a_api subproject="server" | module Eliom_content.Html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="uri"| type Eliom_content.Svg.uri >> ~[<<a_api subproject="server" | module Eliom_content.Svg >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="uri"| type Eliom_form_sigs.LINKS.uri >> ~[<<a_api subproject="server" | module Eliom_form_sigs.LINKS >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="uri"| type Eliom_form_sigs.S.uri >> ~[<<a_api subproject="server" | module Eliom_form_sigs.S >>~]||

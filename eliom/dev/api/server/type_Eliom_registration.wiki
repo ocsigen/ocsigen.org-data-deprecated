@@ -6,9 +6,9 @@
   type 'a application_content = [ `Appl of 'a ]
   type 'a application_name
   type 'a ocaml_content
-  module Html5 :
+  module Html :
     sig
-      type page = Html5_types.html Eliom_content.Html5.elt
+      type page = Html_types.html Eliom_content.Html.elt
       type options = unit
       type return = Eliom_service.non_ocaml
       type result = browser_content kind
@@ -76,11 +76,11 @@
         ('a -> 'b -> unit Lwt.t) Eliom_client_value.t -> unit
       val application_script :
         ?defer:bool ->
-        ?async:bool -> unit -> [> `Script ] Eliom_content.Html5.elt
+        ?async:bool -> unit -> [> `Script ] Eliom_content.Html.elt
       val application_name : string
       val is_initial_request : unit -> bool
       type app_id
-      type page = Html5_types.html Eliom_content.Html5.elt
+      type page = Html_types.html Eliom_content.Html.elt
       type options = appl_service_options
       type return = Eliom_service.non_ocaml
       type result = app_id application_content kind
@@ -141,7 +141,7 @@
       val name : string
       val make_page :
         Eliom_registration.TMPL_PARAMS.t ->
-        Html5_types.html Eliom_content.Html5.elt Lwt.t
+        Html_types.html Eliom_content.Html.elt Lwt.t
       val update :
         Eliom_registration.TMPL_PARAMS.t -> unit Eliom_client_value.t
     end
@@ -201,7 +201,7 @@
       end
   module Flow5 :
     sig
-      type page = Html5_types.flow5 Eliom_content.Html5.elt list
+      type page = Html_types.flow5 Eliom_content.Html.elt list
       type options = unit
       type return = Eliom_service.non_ocaml
       type result = block_content kind

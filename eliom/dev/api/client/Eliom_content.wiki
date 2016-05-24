@@ -26,6 +26,6 @@
 >>
 <<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module>> <<a_api subproject="client" text="Svg" | module Eliom_content.Svg >> <<span class="ocsforge_color_delimiter"|~:>> <<span class="ocsforge_color_keyword"|sig>><<a_api subproject="client" text=".." | module Eliom_content.Svg >><<span class="ocsforge_color_keyword"|end>>>><<div class="odocwiki_info"|~Building valid ~S~V~G ~.
 >>
-<<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module>> <<a_api subproject="client" text="Html5" | module Eliom_content.Html5 >> <<span class="ocsforge_color_delimiter"|~:>> <<span class="ocsforge_color_keyword"|sig>><<a_api subproject="client" text=".." | module Eliom_content.Html5 >><<span class="ocsforge_color_keyword"|end>>>><<div class="odocwiki_info"|~Building valid ~(~X~)~H~T~M~L~5~.
+<<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module>> <<a_api subproject="client" text="Html" | module Eliom_content.Html >> <<span class="ocsforge_color_delimiter"|~:>> <<span class="ocsforge_color_keyword"|sig>><<a_api subproject="client" text=".." | module Eliom_content.Html >><<span class="ocsforge_color_keyword"|end>>>><<div class="odocwiki_info"|~Building valid ~(~X~)~H~T~M~L~5~.
 >>
 <<pre id="VALforce_link" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|force~_link>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|unit>>>>

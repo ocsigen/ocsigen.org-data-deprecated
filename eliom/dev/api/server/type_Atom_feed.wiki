@@ -1,5 +1,5 @@
 <<code language="ocaml" | sig
-  type uri = Xml.uri
+  type uri = Tyxml_xml.uri
   type lang = string
   type base = Atom_feed.uri
   type ncname = string
@@ -7,7 +7,7 @@
   type emailAddress = string
   type mediaType = string
   type length = int
-  type href = Xml.uri
+  type href = Tyxml_xml.uri
   type hrefLang = string
   type rel = string
   type ltitle = string
@@ -77,30 +77,30 @@
       | `Logo of Atom_feed.logo
       | `Rights of Atom_feed.textConstruct
       | `Sub of Atom_feed.textConstruct ]
-  val xml_of_feed : Atom_feed.feed -> Xml.elt
+  val xml_of_feed : Atom_feed.feed -> Tyxml_xml.elt
   val inlineC :
     ?meta:[> Atom_feed.metaAttr ] list ->
     ?html:bool -> string list -> [> `Content of Atom_feed.content ]
   val html5C :
     ?meta:[> Atom_feed.metaAttr ] list ->
-    [ `A of Html5_types.flow5_without_interactive
+    [ `A of Html_types.flow5_without_interactive
     | `Abbr
     | `Address
     | `Article
     | `Aside
-    | `Audio of Html5_types.flow5_without_media
-    | `Audio_interactive of Html5_types.flow5_without_media
+    | `Audio of Html_types.flow5_without_media
+    | `Audio_interactive of Html_types.flow5_without_media
     | `B
     | `Bdo
     | `Blockquote
     | `Br
     | `Button
-    | `Canvas of Html5_types.flow5
+    | `Canvas of Html_types.flow5
     | `Cite
     | `Code
     | `Command
     | `Datalist
-    | `Del of Html5_types.flow5
+    | `Del of Html_types.flow5
     | `Details
     | `Dfn
     | `Div
@@ -125,19 +125,19 @@
     | `Img
     | `Img_interactive
     | `Input
-    | `Ins of Html5_types.flow5
+    | `Ins of Html_types.flow5
     | `Kbd
     | `Keygen
     | `Label
     | `Main
-    | `Map of Html5_types.flow5
+    | `Map of Html_types.flow5
     | `Mark
     | `Menu
     | `Meter
     | `Nav
-    | `Noscript of Html5_types.flow5_without_noscript
-    | `Object of Html5_types.flow5
-    | `Object_interactive of Html5_types.flow5
+    | `Noscript of Html_types.flow5_without_noscript
+    | `Object of Html_types.flow5
+    | `Object_interactive of Html_types.flow5
     | `Ol
     | `Output
     | `P
@@ -163,13 +163,13 @@
     | `U
     | `Ul
     | `Var
-    | `Video of Html5_types.flow5_without_media
-    | `Video_interactive of Html5_types.flow5_without_media
-    | `Wbr ] Eliom_content.Html5.elt list ->
+    | `Video of Html_types.flow5_without_media
+    | `Video_interactive of Html_types.flow5_without_media
+    | `Wbr ] Eliom_content.Html.elt list ->
     [> `Content of Atom_feed.content ]
   val inlineOtherC :
     ?meta:[> Atom_feed.metaAttr ] list ->
-    string * Xml.elt list -> [> `Content of Atom_feed.content ]
+    string * Tyxml_xml.elt list -> [> `Content of Atom_feed.content ]
   val outOfLineC :
     ?meta:[> Atom_feed.metaAttr ] list ->
     string * Atom_feed.uri -> [> `Content of Atom_feed.content ]
@@ -178,24 +178,24 @@
     ?html:bool -> string -> Atom_feed.textConstruct
   val html5 :
     ?meta:[> Atom_feed.metaAttr ] list ->
-    [ `A of Html5_types.flow5_without_interactive
+    [ `A of Html_types.flow5_without_interactive
     | `Abbr
     | `Address
     | `Article
     | `Aside
-    | `Audio of Html5_types.flow5_without_media
-    | `Audio_interactive of Html5_types.flow5_without_media
+    | `Audio of Html_types.flow5_without_media
+    | `Audio_interactive of Html_types.flow5_without_media
     | `B
     | `Bdo
     | `Blockquote
     | `Br
     | `Button
-    | `Canvas of Html5_types.flow5
+    | `Canvas of Html_types.flow5
     | `Cite
     | `Code
     | `Command
     | `Datalist
-    | `Del of Html5_types.flow5
+    | `Del of Html_types.flow5
     | `Details
     | `Dfn
     | `Div
@@ -220,19 +220,19 @@
     | `Img
     | `Img_interactive
     | `Input
-    | `Ins of Html5_types.flow5
+    | `Ins of Html_types.flow5
     | `Kbd
     | `Keygen
     | `Label
     | `Main
-    | `Map of Html5_types.flow5
+    | `Map of Html_types.flow5
     | `Mark
     | `Menu
     | `Meter
     | `Nav
-    | `Noscript of Html5_types.flow5_without_noscript
-    | `Object of Html5_types.flow5
-    | `Object_interactive of Html5_types.flow5
+    | `Noscript of Html_types.flow5_without_noscript
+    | `Object of Html_types.flow5
+    | `Object_interactive of Html_types.flow5
     | `Ol
     | `Output
     | `P
@@ -258,9 +258,9 @@
     | `U
     | `Ul
     | `Var
-    | `Video of Html5_types.flow5_without_media
-    | `Video_interactive of Html5_types.flow5_without_media
-    | `Wbr ] Eliom_content.Html5.elt list -> Atom_feed.textConstruct
+    | `Video of Html_types.flow5_without_media
+    | `Video_interactive of Html_types.flow5_without_media
+    | `Wbr ] Eliom_content.Html.elt list -> Atom_feed.textConstruct
   val rights :
     Atom_feed.textConstruct -> [> `Rights of Atom_feed.textConstruct ]
   val subtitle :
@@ -304,7 +304,7 @@
     ?meta:[> Atom_feed.metaAttr ] list ->
     ?scheme:Atom_feed.scheme ->
     ?label:Atom_feed.label ->
-    Atom_feed.term -> Xml.elt list -> Atom_feed.category
+    Atom_feed.term -> Tyxml_xml.elt list -> Atom_feed.category
   val categories :
     Atom_feed.category list -> [> `Cats of Atom_feed.category list ]
   val published : CalendarLib.Calendar.t -> [> `Pub of Atom_feed.published ]

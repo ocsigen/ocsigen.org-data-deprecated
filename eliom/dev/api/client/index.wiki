@@ -22,9 +22,7 @@
 
 
 
-|<<a_api subproject="client" | module Eliom_content.Html5 >>|<<div class="odocwiki_info"|~Building valid ~(~X~)~H~T~M~L~5~.
->>
-|
+|Eliom_content.Html5||
 |<<a_api subproject="client" | module Eliom_content.Svg >>|<<div class="odocwiki_info"|~Building valid ~S~V~G ~.
 >>
 |

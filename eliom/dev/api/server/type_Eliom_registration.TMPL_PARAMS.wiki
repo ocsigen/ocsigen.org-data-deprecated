@@ -3,6 +3,6 @@
   val name : string
   val make_page :
     Eliom_registration.TMPL_PARAMS.t ->
-    Html5_types.html Eliom_content.Html5.elt Lwt.t
+    Html_types.html Eliom_content.Html.elt Lwt.t
   val update : Eliom_registration.TMPL_PARAMS.t -> unit Eliom_client_value.t
 end >>

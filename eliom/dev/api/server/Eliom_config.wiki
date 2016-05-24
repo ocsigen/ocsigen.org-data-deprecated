@@ -40,7 +40,7 @@ file~.
 >>
 <<pre id="VALset_default_links_xhr" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|set~_default~_links~_xhr>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<span class="ocsforge_color_label"| ?override_configfile: >>bool <<span class="ocsforge_color_delimiter"| -> >> bool <<span class="ocsforge_color_delimiter"| -> >> unit>>>><<div class="odocwiki_info"|~The provided value serves as a default value for the optional parameter
     <<span class="odocwiki_inlinecode"|~~xhr>> in the functions <<span class="odocwiki_inlinecode"|~Eliom~_registration~.~*~.~{a~, get~_form~, post~_form~,
-    lwt~_get~_form~, lwt~_post~_form~}>> ~(cf~. <<span class="odocwiki_inlinecode"|~Eliom~_registration~.~Html~5~.a>> et al~.~)~.
+    lwt~_get~_form~, lwt~_post~_form~}>> ~(cf~. <<span class="odocwiki_inlinecode"|~Eliom~_registration~.~Html~.a>> et al~.~)~.
     ~This value can also be set in the
     [[http://ocsigen.org/eliom/dev/manual/config#h5o-25|config file]]~.
 >>

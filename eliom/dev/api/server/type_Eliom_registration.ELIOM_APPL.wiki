@@ -6,12 +6,11 @@
             Eliom_service.t ->
     ('a -> 'b -> unit Lwt.t) Eliom_client_value.t -> unit
   val application_script :
-    ?defer:bool ->
-    ?async:bool -> unit -> [> `Script ] Eliom_content.Html5.elt
+    ?defer:bool -> ?async:bool -> unit -> [> `Script ] Eliom_content.Html.elt
   val application_name : string
   val is_initial_request : unit -> bool
   type app_id
-  type page = Html5_types.html Eliom_content.Html5.elt
+  type page = Html_types.html Eliom_content.Html.elt
   type options = appl_service_options
   type return = Eliom_service.non_ocaml
   type result = app_id application_content kind

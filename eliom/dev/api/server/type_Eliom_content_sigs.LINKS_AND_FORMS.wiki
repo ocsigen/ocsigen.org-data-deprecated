@@ -9,8 +9,8 @@
       'b Eliom_content_sigs.LINKS_AND_FORMS.elt list Eliom_lazy.request ->
       'c Eliom_content_sigs.LINKS_AND_FORMS.elt
   val lazy_form :
-    ([< Html5_types.form_attrib ], [< Html5_types.form_content_fun ],
-     [> Html5_types.form ])
+    ([< Html_types.form_attrib ], [< Html_types.form_content_fun ],
+     [> Html_types.form ])
     Eliom_content_sigs.LINKS_AND_FORMS.lazy_star
   val make_uri :
     ?absolute:bool ->
@@ -26,16 +26,16 @@
     ?nl_params:Eliom_parameter.nl_params_set -> 'get -> uri
   val uri_of_string : (unit -> string) -> uri
   val css_link :
-    ?a:[< Html5_types.link_attrib ] attrib list ->
-    uri:uri -> unit -> [> Html5_types.link ] elt
+    ?a:[< Html_types.link_attrib ] attrib list ->
+    uri:uri -> unit -> [> Html_types.link ] elt
   val js_script :
-    ?a:[< Html5_types.script_attrib ] attrib list ->
-    uri:uri -> unit -> [> Html5_types.script ] elt
+    ?a:[< Html_types.script_attrib ] attrib list ->
+    uri:uri -> unit -> [> Html_types.script ] elt
   val a :
     ?absolute:bool ->
     ?absolute_path:bool ->
     ?https:bool ->
-    ?a:[< Html5_types.a_attrib ] attrib list ->
+    ?a:[< Html_types.a_attrib ] attrib list ->
     service:('get, unit, Eliom_service.get, 'b, 'c, 'd, 'e,
              [< `WithSuffix | `WithoutSuffix ], 'f, unit,
              Eliom_service.non_ocaml)
@@ -45,7 +45,7 @@
     ?fragment:string ->
     ?keep_nl_params:[ `All | `None | `Persistent ] ->
     ?nl_params:Eliom_parameter.nl_params_set ->
-    ?xhr:bool -> 'a elt list -> 'get -> [> 'a Html5_types.a ] elt
+    ?xhr:bool -> 'a elt list -> 'get -> [> 'a Html_types.a ] elt
   module Form :
     sig
       type 'a param = 'a form_param
@@ -78,7 +78,7 @@
         ?absolute:bool ->
         ?absolute_path:bool ->
         ?https:bool ->
-        ?a:[< Html5_types.form_attrib ] attrib list ->
+        ?a:[< Html_types.form_attrib ] attrib list ->
         service:('a, unit, Eliom_service.get, 'b, 'c, 'd, 'e,
                  [< `WithSuffix | `WithoutSuffix ], 'gn, 'f,
                  Eliom_service.non_ocaml)
@@ -89,13 +89,13 @@
         ?keep_nl_params:[ `All | `None | `Persistent ] ->
         ?nl_params:Eliom_parameter.nl_params_set ->
         ?xhr:bool ->
-        ('gn -> [< Html5_types.form_content ] elt list) ->
-        [> Html5_types.form ] elt
+        ('gn -> [< Html_types.form_content ] elt list) ->
+        [> Html_types.form ] elt
       val lwt_get_form :
         ?absolute:bool ->
         ?absolute_path:bool ->
         ?https:bool ->
-        ?a:[< Html5_types.form_attrib ] attrib list ->
+        ?a:[< Html_types.form_attrib ] attrib list ->
         service:('a, unit, Eliom_service.get, 'b, 'c, 'd, 'e,
                  [< `WithSuffix | `WithoutSuffix ], 'gn, 'f,
                  Eliom_service.non_ocaml)
@@ -106,13 +106,13 @@
         ?keep_nl_params:[ `All | `None | `Persistent ] ->
         ?nl_params:Eliom_parameter.nl_params_set ->
         ?xhr:bool ->
-        ('gn -> [< Html5_types.form_content ] elt list Lwt.t) ->
-        [> Html5_types.form ] elt Lwt.t
+        ('gn -> [< Html_types.form_content ] elt list Lwt.t) ->
+        [> Html_types.form ] elt Lwt.t
       val post_form :
         ?absolute:bool ->
         ?absolute_path:bool ->
         ?https:bool ->
-        ?a:[< Html5_types.form_attrib ] attrib list ->
+        ?a:[< Html_types.form_attrib ] attrib list ->
         service:('get, 'a, Eliom_service.post, 'b, 'c, 'd, 'e,
                  [< `WithSuffix | `WithoutSuffix ], 'f, 'pn,
                  Eliom_service.non_ocaml)
@@ -124,13 +124,13 @@
         ?keep_get_na_params:bool ->
         ?nl_params:Eliom_parameter.nl_params_set ->
         ?xhr:bool ->
-        ('pn -> [< Html5_types.form_content ] elt list) ->
-        'get -> [> Html5_types.form ] elt
+        ('pn -> [< Html_types.form_content ] elt list) ->
+        'get -> [> Html_types.form ] elt
       val lwt_post_form :
         ?absolute:bool ->
         ?absolute_path:bool ->
         ?https:bool ->
-        ?a:[< Html5_types.form_attrib ] attrib list ->
+        ?a:[< Html_types.form_attrib ] attrib list ->
         service:('get, 'a, Eliom_service.post, 'b, 'c, 'd, 'e,
                  [< `WithSuffix | `WithoutSuffix ], 'f, 'pn,
                  Eliom_service.non_ocaml)
@@ -142,62 +142,62 @@
         ?keep_get_na_params:bool ->
         ?nl_params:Eliom_parameter.nl_params_set ->
         ?xhr:bool ->
-        ('pn -> [< Html5_types.form_content ] elt list Lwt.t) ->
-        'get -> [> Html5_types.form ] elt Lwt.t
+        ('pn -> [< Html_types.form_content ] elt list Lwt.t) ->
+        'get -> [> Html_types.form ] elt Lwt.t
       val input :
-        ?a:[< Html5_types.input_attrib ] attrib list ->
-        input_type:[< Html5_types.input_type ] ->
+        ?a:[< Html_types.input_attrib ] attrib list ->
+        input_type:[< Html_types.input_type ] ->
         ?name:[< 'a Eliom_parameter.setoneradio ] Eliom_parameter.param_name ->
-        ?value:'a -> 'a param -> [> Html5_types.input ] elt
+        ?value:'a -> 'a param -> [> Html_types.input ] elt
       val file_input :
-        ?a:[< Html5_types.input_attrib ] attrib list ->
+        ?a:[< Html_types.input_attrib ] attrib list ->
         name:[< Eliom_lib.file_info Eliom_parameter.setoneradio ]
              Eliom_parameter.param_name ->
-        unit -> [> Html5_types.input ] elt
+        unit -> [> Html_types.input ] elt
       val image_input :
-        ?a:[< Html5_types.input_attrib ] attrib list ->
+        ?a:[< Html_types.input_attrib ] attrib list ->
         name:[< Eliom_parameter.coordinates Eliom_parameter.oneradio ]
              Eliom_parameter.param_name ->
-        ?src:uri -> unit -> [> Html5_types.input ] elt
+        ?src:uri -> unit -> [> Html_types.input ] elt
       val checkbox :
-        ?a:[< Html5_types.input_attrib ] attrib list ->
+        ?a:[< Html_types.input_attrib ] attrib list ->
         ?checked:bool ->
         name:[ `Set of 'a ] Eliom_parameter.param_name ->
-        value:'a -> 'a param -> [> Html5_types.input ] elt
+        value:'a -> 'a param -> [> Html_types.input ] elt
       val bool_checkbox_one :
-        ?a:[< Html5_types.input_attrib ] attrib list ->
+        ?a:[< Html_types.input_attrib ] attrib list ->
         ?checked:bool ->
         name:[ `One of bool ] Eliom_parameter.param_name ->
-        unit -> [> Html5_types.input ] elt
+        unit -> [> Html_types.input ] elt
       val radio :
-        ?a:[< Html5_types.input_attrib ] attrib list ->
+        ?a:[< Html_types.input_attrib ] attrib list ->
         ?checked:bool ->
         name:[ `Radio of 'a ] Eliom_parameter.param_name ->
-        value:'a -> 'a param -> [> Html5_types.input ] elt
+        value:'a -> 'a param -> [> Html_types.input ] elt
       val string_radio_required :
-        ?a:[< Html5_types.input_attrib ] attrib list ->
+        ?a:[< Html_types.input_attrib ] attrib list ->
         ?checked:bool ->
         name:[ `One of string ] Eliom_parameter.param_name ->
-        value:string -> unit -> [> Html5_types.input ] elt
+        value:string -> unit -> [> Html_types.input ] elt
       val button :
-        ?a:[< Html5_types.button_attrib ] attrib list ->
+        ?a:[< Html_types.button_attrib ] attrib list ->
         button_type:[< Eliom_form_sigs.button_type ] ->
         name:[< 'a Eliom_parameter.setone ] Eliom_parameter.param_name ->
         value:'a ->
         'a param ->
-        Html5_types.button_content elt list -> [> Html5_types.button ] elt
+        Html_types.button_content elt list -> [> Html_types.button ] elt
       val button_no_value :
-        ?a:[< Html5_types.button_attrib ] attrib list ->
+        ?a:[< Html_types.button_attrib ] attrib list ->
         button_type:[< Eliom_form_sigs.button_type ] ->
-        Html5_types.button_content elt list -> [> Html5_types.button ] elt
+        Html_types.button_content elt list -> [> Html_types.button ] elt
       val textarea :
-        ?a:[< Html5_types.textarea_attrib ] attrib list ->
+        ?a:[< Html_types.textarea_attrib ] attrib list ->
         name:[< string Eliom_parameter.setoneradio ]
              Eliom_parameter.param_name ->
-        ?value:string -> unit -> [> Html5_types.textarea ] elt
+        ?value:string -> unit -> [> Html_types.textarea ] elt
       type 'a soption =
-          Html5_types.option_attrib attrib list * 'a *
-          Html5_types.pcdata elt option * bool
+          Html_types.option_attrib attrib list * 'a *
+          Html_types.pcdata elt option * bool
       type 'a select_opt =
           Optgroup of
             [ `Accesskey
@@ -273,16 +273,16 @@
             | `XMLns ] attrib list * string * 'a soption * 'a soption list
         | Option of 'a soption
       val select :
-        ?a:[< Html5_types.select_attrib ] attrib list ->
-        ?required:Html5_types.pcdata elt ->
+        ?a:[< Html_types.select_attrib ] attrib list ->
+        ?required:Html_types.pcdata elt ->
         name:[ `One of 'a ] Eliom_parameter.param_name ->
         'a param ->
-        'a select_opt -> 'a select_opt list -> [> Html5_types.select ] elt
+        'a select_opt -> 'a select_opt list -> [> Html_types.select ] elt
       val multiple_select :
-        ?a:[< Html5_types.select_attrib ] attrib list ->
-        ?required:Html5_types.pcdata elt ->
+        ?a:[< Html_types.select_attrib ] attrib list ->
+        ?required:Html_types.pcdata elt ->
         name:[ `Set of 'a ] Eliom_parameter.param_name ->
         'a param ->
-        'a select_opt -> 'a select_opt list -> [> Html5_types.select ] elt
+        'a select_opt -> 'a select_opt list -> [> Html_types.select ] elt
     end
 end >>

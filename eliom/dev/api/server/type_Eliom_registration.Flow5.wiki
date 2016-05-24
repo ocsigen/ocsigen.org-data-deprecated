@@ -1,5 +1,5 @@
 <<code language="ocaml" | sig
-  type page = Html5_types.flow5 Eliom_content.Html5.elt list
+  type page = Html_types.flow5 Eliom_content.Html.elt list
   type options = unit
   type return = Eliom_service.non_ocaml
   type result = block_content kind

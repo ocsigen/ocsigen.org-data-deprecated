@@ -18,7 +18,7 @@
 * <<span class="odocwiki_inlinecode"| ~'c>> is the type of the parameter name~, usually an instance
         of <<span class="odocwiki_inlinecode"|~Eliom~_parameter~.param~_name>>~, as used by forms
         construction functions ~(e~.g~.~, the last parameter of
-        <<span class="odocwiki_inlinecode"|~Eliom~_content~.~Html~5~.~D~.get~_form>>~)~, and specialized form
+        <<span class="odocwiki_inlinecode"|~Eliom~_content~.~Html~.~D~.get~_form>>~)~, and specialized form
         widget ~(see for example the section
         ~Form widget of
         <<span class="odocwiki_inlinecode"|~Eliom~_content~.~H~T~M~L~5~.~D>>~)~. ~)
