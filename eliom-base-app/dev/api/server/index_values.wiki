@@ -283,7 +283,7 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="set_send"| value Eba_email.set_send >> ~[<<a_api subproject="server" | module Eba_email >>~]|<<div class="odocwiki_info"|~Customize email sending function~:
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="sign_up_handler'"| value Eba_handlers.sign_up_handler' >> ~[<<a_api subproject="server" | module Eba_handlers >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="sign_up_handler"| value Eba_handlers.sign_up_handler >> ~[<<a_api subproject="server" | module Eba_handlers >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="smart_date"| value Eba_date.smart_date >> ~[<<a_api subproject="server" | module Eba_date >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="smart_date_interval"| value Eba_date.smart_date_interval >> ~[<<a_api subproject="server" | module Eba_date >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="smart_hours_minutes"| value Eba_date.smart_hours_minutes >> ~[<<a_api subproject="server" | module Eba_date >>~]||
