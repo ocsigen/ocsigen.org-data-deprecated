@@ -15,8 +15,8 @@
     ?absolute:bool ->
     ?absolute_path:bool ->
     ?https:bool ->
-    service:('get, unit, Eliom_service.get, 'a, 'b, 'c, 'd,
-             [< `WithSuffix | `WithoutSuffix ], 'e, unit, 'f)
+    service:('get, 'a, Eliom_service.get, 'b, 'c, 'd, 'e,
+             [< `WithSuffix | `WithoutSuffix ], 'f, 'g, 'h)
             Eliom_service.t ->
     ?hostname:string ->
     ?port:int ->
