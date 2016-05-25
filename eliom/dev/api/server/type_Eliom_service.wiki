@@ -217,7 +217,7 @@
   val client_fun :
     ('a, 'b, 'c, 'd, 'e, 'f, 'g, [< `WithSuffix | `WithoutSuffix ], 'h, 'i,
      'j)
-    t -> (unit -> ('a -> 'b -> unit Lwt.t) option) Eliom_client_value.t
+    t -> ('a -> 'b -> unit Lwt.t) Eliom_client_value.t option
   val has_client_fun :
     ('a, 'b, 'c, 'd, 'e, 'f, 'g, [< `WithSuffix | `WithoutSuffix ], 'h, 'i,
      'j)
@@ -266,7 +266,7 @@
     service:('a, 'b, 'c, 'd, 'e, 'f, 'g, [< `WithSuffix | `WithoutSuffix ],
              'h, 'i, 'j)
             t ->
-    (unit -> ('a -> 'b -> unit Lwt.t) option) Eliom_client_value.t -> unit
+    ('a -> 'b -> unit Lwt.t) Eliom_client_value.t -> unit
   val register_eliom_module : string -> (unit -> unit) -> unit
   val unregister :
     ?scope:[< Eliom_common.scope ] ->

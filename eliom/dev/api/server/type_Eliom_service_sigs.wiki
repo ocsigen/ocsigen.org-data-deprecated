@@ -328,7 +328,7 @@
         ('a, 'b, 'c, 'd, 'e, 'f, 'g, [< `WithSuffix | `WithoutSuffix ], 'h,
          'i, 'j)
         Eliom_service_sigs.S.t ->
-        (unit -> ('a -> 'b -> unit Lwt.t) option) Eliom_client_value.t
+        ('a -> 'b -> unit Lwt.t) Eliom_client_value.t option
       val has_client_fun :
         ('a, 'b, 'c, 'd, 'e, 'f, 'g, [< `WithSuffix | `WithoutSuffix ], 'h,
          'i, 'j)
@@ -379,7 +379,6 @@
         service:('a, 'b, 'c, 'd, 'e, 'f, 'g,
                  [< `WithSuffix | `WithoutSuffix ], 'h, 'i, 'j)
                 Eliom_service_sigs.S.t ->
-        (unit -> ('a -> 'b -> unit Lwt.t) option) Eliom_client_value.t ->
-        unit
+        ('a -> 'b -> unit Lwt.t) Eliom_client_value.t -> unit
     end
 end >>

@@ -239,4 +239,10 @@
     ('a, [< Eliom_parameter_sigs.S.suff ] as 'b, 'c)
     Eliom_parameter_sigs.S.params_type ->
     ('a, 'b, 'c) Eliom_parameter_sigs.S.params_type
+  type _ is_unit =
+      U_not : 'a Eliom_parameter_sigs.S.is_unit
+    | U_yes : unit Eliom_parameter_sigs.S.is_unit
+  val is_unit :
+    ('a, [< Eliom_parameter_sigs.S.suff ], 'b)
+    Eliom_parameter_sigs.S.params_type -> 'a Eliom_parameter_sigs.S.is_unit
 end >>
