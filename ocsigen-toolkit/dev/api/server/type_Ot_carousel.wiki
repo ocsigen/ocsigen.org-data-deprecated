@@ -3,6 +3,7 @@
     ?a:[< Html_types.div_attrib ] Eliom_content.Html.attrib list ->
     ?vertical:bool ->
     ?position:int ->
+    ?transition_duration:float ->
     ?update:[ `Goto of int | `Next | `Prev ] React.event Eliom_client_value.t ->
     ?disabled:bool Eliom_shared.React.S.t ->
     ?full_height:[ `Header of (unit -> int) Eliom_client_value.t
