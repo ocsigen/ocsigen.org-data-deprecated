@@ -936,7 +936,10 @@
         Client-values >>~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="node"| value Eliom_content.Svg.C.node >> ~[<<a_api subproject="server" | module Eliom_content.Svg.C >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="node"| value Eliom_content.Svg.C.node >> ~[<<a_api subproject="server" | module Eliom_content.Svg.C >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|node e>> is a server~-side node corresponding to the
+        client~-side node <<span class="odocwiki_inlinecode"|e>> ~.
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="node"| value Eliom_content.Svg.R.node >> ~[<<a_api subproject="server" | module Eliom_content.Svg.R >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|node s>> produces an <<span class="odocwiki_inlinecode"|~'a elt>> out of the shared reactive
         signal <<span class="odocwiki_inlinecode"|s>>~.
 >>
