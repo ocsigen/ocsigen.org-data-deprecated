@@ -931,9 +931,8 @@
         signal <<span class="odocwiki_inlinecode"|s>>~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="node"| value Eliom_content.Html.C.node >> ~[<<a_api subproject="server" | module Eliom_content.Html.C >>~]|<<div class="odocwiki_info"|~See ~Eliom manual for more detail on <<a_manual
-        chapter="clientserver-html" fragment="inject" | Dom &
-        Client-values >>~.
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="node"| value Eliom_content.Html.C.node >> ~[<<a_api subproject="server" | module Eliom_content.Html.C >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|node e>> is a server~-side node corresponding to the
+        client~-side node <<span class="odocwiki_inlinecode"|e>> ~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="node"| value Eliom_content.Svg.C.node >> ~[<<a_api subproject="server" | module Eliom_content.Svg.C >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|node e>> is a server~-side node corresponding to the
