@@ -15,3 +15,8 @@
 ~Same as <<span class="odocwiki_inlinecode"|with~_spinner>> but returns immediately~.
     ~Client only ~(as we must wait for the thread to terminate on server
     before sending the page~)~.
+
+the number of spinners currently spinning
+
+<<span class="odocwiki_inlinecode"|onloaded>> is an event that fires when all spinners have finished loading~.
+    ~This can occur multiple times~.
