@@ -171,7 +171,7 @@ where <<a_api project="tyxml" | type Html5_types.head_content_fun >>
 is the type of content allowed inside {{{<head>}}} ({{{<base>}}},
 {{{<command>}}}, {{{<link>}}}, {{{<meta>}}}, etc.). Notice that
 {{{`PCDATA}}} (i.e. raw text) is not included in this polymorphic
-variant type.
+variant type, which means that {{{<head>}}} cannot contain raw text.
 
 Most functions take as parameter the list representing its contents.
 See other examples below. Each of them take un optional {{{?a}}}
@@ -181,9 +181,9 @@ See below for examples.
 
 <<|
 **Another example:** In HTML5, some tags cannot be empty. For example
-{{{<table>}}}must contain at least one row. To enforce this, the
-<<a_api project="tyxml" text="Html5.table"| val Html5.F.table >>
-function takes two parameters: the first one is the first row, while
+{{{<table>}}}must contain at least one row. To enforce this, function
+<<a_api project="tyxml" text="Html5.table"| val Html5.F.table ~>>
+takes two parameters: the first one is the first row, while
 the second one is a list containing all the other rows (same thing for
 {{{<tr>}}}, {{{<form>}}}, {{{<select>}}}, ...). This prevents tables
 of zero rows, and thus ensures that the W3C recommendation is met.
@@ -195,7 +195,7 @@ pages afterwards.//
 
 A more detailed introduction to the construction of HTML5 tree is
 available in the <<a_api project="tyxml" text="TyXML reference API" |
-module Html5.F >>.
+module Html5.F ~>>.
 
 >>
 
@@ -241,7 +241,7 @@ module Graffiti_app =
     end)
 >>
 
-It is now possible to use {{{My_app}}} for registering our main
+It is now possible to use {{{Graffiti_app}}} for registering our main
 service (now at URL {{{/}}}):
 
 <<code language="ocaml" class="server"|
@@ -426,7 +426,7 @@ a copy of the {{{<body>}}} element. Hence, the actual page's
 
 <<code language="ocaml" class="server"|
 let main_service =
-  My_app.register_service ~path:[""] ~get_params:Eliom_parameter.unit
+  Graffiti_app.register_service ~path:[""] ~get_params:Eliom_parameter.unit
     (fun () () ->
       let container = body [h1 [pcdata "Graffiti"]] in
       Eliom_service.onload {{
@@ -454,7 +454,7 @@ drawing primitive is defined in the client-side function called
 {{{draw}}} that just draws a line between two given points in a canvas.
 
 To start our collaborative drawing application, we define another
-client-side function {{{ init_client }}}, which just draws a single,
+client-side function {{{ init_client }}}, which just draws a single
 line for now.
 
 Here is the (full) new version of the program:
@@ -468,7 +468,7 @@ Here is the (full) new version of the program:
 ]
 >>
 <<code language="ocaml" class="server"|
-module My_app =
+module Graffiti_app =
   Eliom_registration.App (
     struct
       let application_name = "graffiti"
@@ -508,9 +508,9 @@ let%client init_client () =
 >>
 <<code language="ocaml" class="server"|
 let main_service =
-  My_app.register_service ~path:[""] ~get_params:Eliom_parameter.unit
+  Graffiti_app.register_service ~path:[""] ~get_params:Eliom_parameter.unit
     (fun () () ->
-       (* Cf. the box "Client side side-effects on the server" *)
+       (* Cf. section "Client side side-effects on the server" *)
        let _ = [%client (init_client () : unit) ] in
        Lwt.return (page ()))
 >>
@@ -732,9 +732,9 @@ describing the color (as RGB values) and coordinates of drawn lines.
 We annotate the type declaration with {{{[@@deriving json]}}} to allow
 type-safe deserialization of this type. Eliom forces you to use this
 in order to avoid server crashes if a client sends corrupted data.
-This is defined using the
-[[https://github.com/whitequark/ppx_deriving|ppx_deriving]] syntax
-extension.  You need to do that for each type of data sent by the
+This is defined using a JSON plugin for
+[[https://github.com/whitequark/ppx_deriving|ppx_deriving]], which you
+need to install. You need to do that for each type of data sent by the
 client to the server.  This annotation can only be added on types
 containing exclusively basic types, or other types annotated with
 {{{[@@deriving json]}}}.
@@ -786,7 +786,7 @@ lines are drawn on both windows.
   [[http://erratique.ch/software/react/doc/React|React events]] from
   the server to the client, and conversely.
 * <<a_api project="eliom" subproject="server" | type
-  Eliom_comet.Channels.t >> are one-way communication channels
+  Eliom_comet.Channel.t >> are one-way communication channels
   allowing finer-grained control. It allows sending <<a_api
   project="lwt" | module Lwt_stream >> to the client.
   {{{Eliom_react}}} and {{{Eliom_bus}}} are implemented over
@@ -888,9 +888,8 @@ let page =
 
 You need to install the corresponding stylesheets and images into your
 project. The stylesheet files should go to the directory
-{{{static/css}}}:
-
-* the <<a_file
+{{{static/css}}}.
+File <<a_file
   src="tutorial/static/css/graffiti.css"|{{{graffiti.css}}}>> is a
   custom-made CSS file.
 
