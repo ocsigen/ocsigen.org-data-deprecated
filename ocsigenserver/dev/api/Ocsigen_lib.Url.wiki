@@ -13,3 +13,5 @@
 * lazy value to decode ~G~E~T query 
 
 >>
+<<pre id="VALsplit_path" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|split~_path>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|string <<span class="ocsforge_color_delimiter"| -> >> string list>>>><<div class="odocwiki_info"|alias of ~(~Ocamlnet~) <<span class="odocwiki_inlinecode"|~Neturl~.split~_path>>
+>>

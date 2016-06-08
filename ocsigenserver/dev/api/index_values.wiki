@@ -956,6 +956,9 @@
 |@@class="odocwiki_index"@ @@<<a_api text="split_fragment"| value Ocsigen_lib_base.Url_base.split_fragment >> ~[<<a_api | module Ocsigen_lib_base.Url_base >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|split~_fragment str>> splits <<span class="odocwiki_inlinecode"|str>> at first ~'~#~'
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api text="split_path"| value Ocsigen_lib.Url.split_path >> ~[<<a_api | module Ocsigen_lib.Url >>~]|<<div class="odocwiki_info"|alias of ~(~Ocamlnet~) <<span class="odocwiki_inlinecode"|~Neturl~.split~_path>>
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api text="ssl"| value Ocsigen_request_info.ssl >> ~[<<a_api | module Ocsigen_request_info >>~]|<<div class="odocwiki_info"|~Accessor for ssl of request~_info
 >>
 |
