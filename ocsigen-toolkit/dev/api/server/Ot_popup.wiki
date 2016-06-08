@@ -19,6 +19,7 @@
     <<span class="odocwiki_inlinecode"|onclose>> is a hook called just after the popup has been actually closed~.
     <<span class="odocwiki_inlinecode"|gen~_content>> is a function taking the function closing the popup as
     parameter~, and returning the popup content~.
+    ~For <<span class="odocwiki_inlinecode"|ios~_scroll~_pos~_fix>> see <<span class="odocwiki_inlinecode"|~Ot~_drawer~.drawer>>
 
 <<span class="odocwiki_inlinecode"|ask~_question ~?a ~?a~_hcf question buttons>>
     ~Prompt a user~, wait for its response and return the selected value~.
