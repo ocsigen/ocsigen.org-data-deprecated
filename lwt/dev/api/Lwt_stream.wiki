@@ -105,9 +105,9 @@
 >>
 
 
-==@@id="2_Dataretreival"@@~Data retreival==
+==@@id="2_Dataretrieval"@@~Data retrieval==
 
-<<pre id="EXCEPTIONEmpty" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|exception>> <<span class="odocwiki_name"|Empty>>>><<div class="odocwiki_info"|~Exception raised when trying to retreive data from an empty
+<<pre id="EXCEPTIONEmpty" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|exception>> <<span class="odocwiki_name"|Empty>>>><<div class="odocwiki_info"|~Exception raised when trying to retrieve data from an empty
       stream~.
 >>
 <<pre id="VALpeek" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|peek>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|'a <<a_api text="t" | type Lwt_stream.t >> <<span class="ocsforge_color_delimiter"| -> >> 'a option <<a_api text="Lwt.t" | type Lwt.t >>>>>><<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|peek st>> returns the first element of the stream~, if any~,

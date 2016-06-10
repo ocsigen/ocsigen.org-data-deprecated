@@ -13,7 +13,7 @@
 >>
 |
 |@@ @style="tet-align: left;"@@\\E|
-|@@class="odocwiki_index"@ @@<<a_api text="Empty"| exception Lwt_stream.Empty >> ~[<<a_api | module Lwt_stream >>~]|<<div class="odocwiki_info"|~Exception raised when trying to retreive data from an empty
+|@@class="odocwiki_index"@ @@<<a_api text="Empty"| exception Lwt_stream.Empty >> ~[<<a_api | module Lwt_stream >>~]|<<div class="odocwiki_info"|~Exception raised when trying to retrieve data from an empty
       stream~.
 >>
 |
