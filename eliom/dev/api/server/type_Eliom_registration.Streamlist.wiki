@@ -4,6 +4,7 @@
   type return = Eliom_service.non_ocaml
   type result = unknown_content kind
   val register :
+    ?app:string ->
     ?scope:[< Eliom_common.scope ] ->
     ?options:options ->
     ?charset:string ->
@@ -18,6 +19,7 @@
     ?error_handler:((string * exn) list -> page Lwt.t) ->
     ('get -> 'post -> page Lwt.t) -> unit
   val create :
+    ?app:string ->
     ?scope:[< Eliom_common.scope ] ->
     ?options:options ->
     ?charset:string ->

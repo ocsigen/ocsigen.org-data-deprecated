@@ -1,9 +1,23 @@
-<<code language="ocaml" | functor (Pages : Eliom_reg_sigs.PARAM_POLY) ->
+<<code language="ocaml" | functor
+  (Pages : sig
+             type _ page
+             type options
+             type _ return
+             val send :
+               ?options:options ->
+               ?charset:string ->
+               ?code:int ->
+               ?content_type:string ->
+               ?headers:Http_headers.t ->
+               'a page -> Ocsigen_http_frame.result Lwt.t
+             val send_appl_content : Eliom_service.send_appl_content
+           end) ->
   sig
     type 'a page = 'a Pages.page
     type options = Pages.options
     type 'a return = 'a Pages.return
     val register :
+      ?app:string ->
       ?scope:[< Eliom_common.scope ] ->
       ?options:options ->
       ?charset:string ->
@@ -18,6 +32,7 @@
       ?error_handler:((string * exn) list -> 'a page Lwt.t) ->
       ('get -> 'post -> 'a page Lwt.t) -> unit
     val create :
+      ?app:string ->
       ?scope:[< Eliom_common.scope ] ->
       ?options:options ->
       ?charset:string ->

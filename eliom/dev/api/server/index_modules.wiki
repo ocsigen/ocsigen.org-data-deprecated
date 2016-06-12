@@ -125,13 +125,13 @@ file~.
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Eliom_reference"| module Eliom_reference >> |<<div class="odocwiki_info"|~Server side state data~, a~.k~.a ~Eliom references
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Eliom_reg_sigs"| module Eliom_reg_sigs >> |<<div class="odocwiki_info"|~Whether the service is capable to send application content when
-      required~.
->>
-|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Eliom_registration"| module Eliom_registration >> |<<div class="odocwiki_info"|~Eliom services registration for various kinds of page content~:
     ~Eliom application~, valid <<a_api subproject="server" | module Eliom_registration.Html >>~, actions~, redirections~, static
     files~, …
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Eliom_registration_sigs"| module Eliom_registration_sigs >> |<<div class="odocwiki_info"|~Whether the service is capable to send application content when
+      required~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Eliom_request_info"| module Eliom_request_info >> |<<div class="odocwiki_info"|~This module contains the functions you need to get ~(or set~)

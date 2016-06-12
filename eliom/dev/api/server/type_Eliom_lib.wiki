@@ -546,6 +546,7 @@
         t ->
         bool option * string option * int option * string * string list *
         string option * (string * string) list Lazy.t
+      val split_path : string -> string list
     end
   exception Eliom_Internal_Error of string
   module Lwt_ops :

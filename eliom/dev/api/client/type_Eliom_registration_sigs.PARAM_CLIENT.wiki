@@ -1,0 +1,7 @@
+<<code language="ocaml" | sig
+  type page
+  type options
+  val send :
+    ?options:Eliom_registration_sigs.PARAM_CLIENT.options ->
+    Eliom_registration_sigs.PARAM_CLIENT.page -> unit Lwt.t
+end >>

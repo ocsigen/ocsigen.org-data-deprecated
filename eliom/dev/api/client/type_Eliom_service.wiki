@@ -281,4 +281,8 @@
     ('a, 'b, 'c, 'd, 'e, 'f, 'g, [< `WithSuffix | `WithoutSuffix ], 'h, 'i,
      'j)
     t -> ('a -> unit -> unit Lwt.t) Eliom_client_value.t option
+  val reset_reload_fun :
+    ('a, 'b, 'c, 'd, 'e, 'f, 'g, [< `WithSuffix | `WithoutSuffix ], 'h, 'i,
+     'j)
+    t -> unit
 end >>

@@ -3,6 +3,7 @@
   type options = unit
   type 'a return = 'a Eliom_service.ocaml
   val register :
+    ?app:string ->
     ?scope:[< Eliom_common.scope ] ->
     ?options:options ->
     ?charset:string ->
@@ -17,6 +18,7 @@
     ?error_handler:((string * exn) list -> 'a page Lwt.t) ->
     ('get -> 'post -> 'a page Lwt.t) -> unit
   val create :
+    ?app:string ->
     ?scope:[< Eliom_common.scope ] ->
     ?options:options ->
     ?charset:string ->

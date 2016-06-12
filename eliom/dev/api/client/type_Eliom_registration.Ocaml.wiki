@@ -1,1 +1,0 @@
-<<code language="ocaml" | sig type 'a return = 'a Eliom_service.ocaml end >>

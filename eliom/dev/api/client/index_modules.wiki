@@ -3,9 +3,8 @@
 |@@ @style="tet-align: left;"@@\\A|
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Action"| module Eliom_registration.Action >> ~[<<a_api subproject="client" | module Eliom_registration >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Any"| module Eliom_registration.Any >> ~[<<a_api subproject="client" | module Eliom_registration >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="App"| module Eliom_registration.App >> ~[<<a_api subproject="client" | module Eliom_registration >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Attr"| module Eliom_content.Html.Manip.Attr >> ~[<<a_api subproject="client" | module Eliom_content.Html.Manip >>~]||
-|@@ @style="tet-align: left;"@@\\B|
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Block5"| module Eliom_registration.Block5 >> ~[<<a_api subproject="client" | module Eliom_registration >>~]||
 |@@ @style="tet-align: left;"@@\\C|
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="C"| module Eliom_content.Html.C >> ~[<<a_api subproject="client" | module Eliom_content.Html >>~]|<<div class="odocwiki_info"|~Creation of ~H~T~M~L~5 content from client~-side values~.
 >>
@@ -24,7 +23,6 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Css"| module Eliom_content.Html.Manip.Css >> ~[<<a_api subproject="client" | module Eliom_content.Html.Manip >>~]|<<div class="odocwiki_info"|~Read the ~C~S~S properties of ~D~O~M elements~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="CssText"| module Eliom_registration.CssText >> ~[<<a_api subproject="client" | module Eliom_registration >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Custom_data"| module Eliom_content_core.Html.Custom_data >> ~[<<a_api subproject="client" | module Eliom_content_core.Html >>~]|<<div class="odocwiki_info"|~Type~-safe custom data for ~H~T~M~L~5~.
 >>
 |
@@ -99,6 +97,10 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Eliom_registration"| module Eliom_registration >> |<<div class="odocwiki_info"|~/~*
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Eliom_registration_sigs"| module Eliom_registration_sigs >> |<<div class="odocwiki_info"|~Whether the service is capable to send application content when
+      required~.
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Eliom_service"| module Eliom_service >> |<<div class="odocwiki_info"|~/~*
 >>
 |
@@ -155,7 +157,6 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Html"| module Eliom_content.Html >> ~[<<a_api subproject="client" | module Eliom_content >>~]|<<div class="odocwiki_info"|~Building valid ~(~X~)~H~T~M~L~5~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Html_text"| module Eliom_registration.Html_text >> ~[<<a_api subproject="client" | module Eliom_registration >>~]||
 |@@ @style="tet-align: left;"@@\\I|
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Id"| module Eliom_content_core.Html.Id >> ~[<<a_api subproject="client" | module Eliom_content_core.Html >>~]|<<div class="odocwiki_info"|~Node identifiers
 >>
@@ -194,7 +195,6 @@
 >>
 |
 |@@ @style="tet-align: left;"@@\\O|
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Ocaml"| module Eliom_registration.Ocaml >> ~[<<a_api subproject="client" | module Eliom_registration >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Of_dom"| module Eliom_content_core.Html.Of_dom >> ~[<<a_api subproject="client" | module Eliom_content_core.Html >>~]|<<div class="odocwiki_info"|~Conversion of ~Javascript ~D~O~M elements to ~H~T~M~L~5 elts ~(with ~D~O~M semantics of course~)~.
 >>
 |
@@ -259,10 +259,7 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="SetCss"| module Eliom_content.Html.Manip.SetCss >> ~[<<a_api subproject="client" | module Eliom_content.Html.Manip >>~]|<<div class="odocwiki_info"|~Modify the ~C~S~S properties of ~D~O~M elements~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Streamlist"| module Eliom_registration.Streamlist >> ~[<<a_api subproject="client" | module Eliom_registration >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="String"| module Eliom_registration.String >> ~[<<a_api subproject="client" | module Eliom_registration >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="String"| module Eliom_lib.String >> ~[<<a_api subproject="client" | module Eliom_lib >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="String_redirection"| module Eliom_registration.String_redirection >> ~[<<a_api subproject="client" | module Eliom_registration >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Svg"| module Eliom_content_core.Svg >> ~[<<a_api subproject="client" | module Eliom_content_core >>~]|<<div class="odocwiki_info"|~Building ~S~V~G tree~.
 >>
 |
@@ -271,7 +268,6 @@
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Syntax_helpers"| module Eliom_client_core.Syntax_helpers >> ~[<<a_api subproject="client" | module Eliom_client_core >>~]||
 |@@ @style="tet-align: left;"@@\\T|
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Text"| module Eliom_registration.Text >> ~[<<a_api subproject="client" | module Eliom_registration >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="To_dom"| module Eliom_content.Html.To_dom >> ~[<<a_api subproject="client" | module Eliom_content.Html >>~]|<<div class="odocwiki_info"|~Conversion from ~H~T~M~L~5 <<span class="odocwiki_inlinecode"|elt>>s to ~Javascript ~D~O~M elements ~(<<span class="odocwiki_inlinecode"|~<~:>> <<a_api
       project="js_of_ocaml"| class Dom_html.element >> ~)~.
 >>
@@ -281,7 +277,6 @@
 >>
 |
 |@@ @style="tet-align: left;"@@\\U|
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Unit"| module Eliom_registration.Unit >> ~[<<a_api subproject="client" | module Eliom_registration >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Up"| module Eliom_react.Up >> ~[<<a_api subproject="client" | module Eliom_react >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Url"| module Eliom_lib.Url >> ~[<<a_api subproject="client" | module Eliom_lib >>~]||
 |@@ @style="tet-align: left;"@@\\V|
