@@ -35,3 +35,12 @@
     <<span class="odocwiki_inlinecode"|question>> is the content of the popup header
     <<span class="odocwiki_inlinecode"|yes>> is the content of the ~'yes~' button ~(returning true~)
     <<span class="odocwiki_inlinecode"|no>> is the content of the ~'no~' button ~(returning false~)
+
+~An element which is focussable and can be selected by pressing the tab key~.
+    ~Required for <<span class="odocwiki_inlinecode"|setup~_form>>~.
+
+<<span class="odocwiki_inlinecode"|setup~_form>> make a form form in a popup more user~-friendly~, by focussing on
+    the first element of the form and forcing tab keys to cycle through the
+    elements of the form only ~(and not the elements of the page behind the
+    popup~)~. ~As arguments in requires the first~, the second~, the next to last~,
+    and the last element of the form~.
