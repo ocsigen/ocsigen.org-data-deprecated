@@ -10,7 +10,7 @@
 
 
     ~Lwt threads are cooperative in the sense that switching to another
-    thread is awlays explicit ~(with <<a_api | val Lwt.wakeup >> or <<a_api | val Lwt.wakeup_exn >>~)~. ~When a
+    thread is always explicit ~(with <<a_api | val Lwt.wakeup >> or <<a_api | val Lwt.wakeup_exn >>~)~. ~When a
     thread is running~, it executes as much as possible~, and then
     returns ~(a value or an error~) or sleeps~.
 
