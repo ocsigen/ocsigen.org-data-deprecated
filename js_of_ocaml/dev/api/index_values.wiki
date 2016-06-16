@@ -520,7 +520,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="execute"| value JsooTop.execute >> ~[<<a_api | module JsooTop >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|execute print fmt content>> ~Execute <<span class="odocwiki_inlinecode"|content>>~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api text="export"| value Js.export >> ~[<<a_api | module Js >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|export n v>> export the value <<span class="odocwiki_inlinecode"|v>> with the name <<span class="odocwiki_inlinecode"|n>>
+|@@class="odocwiki_index"@ @@<<a_api text="export"| value Js.export >> ~[<<a_api | module Js >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|export name value>> export <<span class="odocwiki_inlinecode"|name>>
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="export_all"| value Js.export_all >> ~[<<a_api | module Js >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|export~_all obj>> export every key of <<span class="odocwiki_inlinecode"|obj>> object~.

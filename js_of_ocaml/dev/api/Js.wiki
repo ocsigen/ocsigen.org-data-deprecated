@@ -312,21 +312,19 @@
 
 ==@@id="2_Exportfunctionality"@@~Export functionality~.==
 
-    ~Export values to 
-<<code language='ocaml'|module.exports>>
- if it exists or to the global
+    ~Export values to <<span class="odocwiki_inlinecode"|module~.exports>> if it exists or to the global
     object otherwise~.
-<<pre id="VALexport" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|export>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|string <<span class="ocsforge_color_delimiter"| -> >> 'a <<span class="ocsforge_color_delimiter"| -> >> unit>>>><<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|export n v>> export the value <<span class="odocwiki_inlinecode"|v>> with the name <<span class="odocwiki_inlinecode"|n>>
+<<pre id="VALexport" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|export>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|string <<span class="ocsforge_color_delimiter"| -> >> 'a <<span class="ocsforge_color_delimiter"| -> >> unit>>>><<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|export name value>> export <<span class="odocwiki_inlinecode"|name>>
 >>
 <<pre id="VALexport_all" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|export~_all>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|'a <<a_api text="t" | type Js.t >> <<span class="ocsforge_color_delimiter"| -> >> unit>>>><<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|export~_all obj>> export every key of <<span class="odocwiki_inlinecode"|obj>> object~.
-    
-<<code language='ocaml'| export_all
-         (object%js
-           method add x y = x +. y
-           method abs x = abs_float x
-           val zero = 0.
-         end)
-    >>
+
+<<code language='ocaml'|export_all
+  object%js
+    method add x y = x +. y
+    method abs x = abs_float x
+    val zero = 0.
+  end
+>>
 
 >>
 
