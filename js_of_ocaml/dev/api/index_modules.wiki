@@ -111,7 +111,10 @@
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="JsooTopError"| module JsooTopError >> ||
-|@@class="odocwiki_index"@ @@<<a_api text="JsooTopPpx"| module JsooTopPpx >> |<<div class="odocwiki_info"|~Helpers to embed ~P~P~X into the toplevel~.
+|@@class="odocwiki_index"@ @@<<a_api text="JsooTopPpx"| module JsooTopPpx >> |<<div class="odocwiki_info"|~One can add a ppx rewriter to a toplevel by registering it
+    
+<<code language='ocaml'| Ast_mapper.register "js_of_ocaml" Ppx_js.js_mapper >>
+
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="Jstable"| module Jstable >> |<<div class="odocwiki_info"|~A minimal table implementation specialized for <<a_api | class type Js.js_string >> keys~.

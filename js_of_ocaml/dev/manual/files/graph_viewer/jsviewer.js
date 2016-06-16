@@ -5281,7 +5281,7 @@
                  {var _em_=st[3];
                   return Math.pow
                           (2,
-                           caml_call1(caml_get_public_method(sadj,834174833,356),sadj)/
+                           caml_call1(caml_get_public_method(sadj,834174833,359),sadj)/
                            8)/
                          _em_}
                 var redraw_queued=[0,0];
@@ -5293,7 +5293,7 @@
                    ah=Math.ceil(a[4]/scale),
                    _ee_=[0,min(aw,st[6])];
                   caml_call7
-                   (caml_get_public_method(hadj,-635267918,357),
+                   (caml_get_public_method(hadj,-635267918,360),
                     hadj,
                     0,
                     [0,st[6]],
@@ -5303,21 +5303,21 @@
                     0);
                   var
                    _ef_=
-                    caml_call1(caml_get_public_method(hadj,307110897,358),hadj),
+                    caml_call1(caml_get_public_method(hadj,307110897,361),hadj),
                    mv=st[6]-_ef_;
                   if
-                   (caml_call1(caml_get_public_method(hadj,834174833,359),hadj)<
+                   (caml_call1(caml_get_public_method(hadj,834174833,362),hadj)<
                     0)
                    caml_call2
-                    (caml_get_public_method(hadj,-659372076,360),hadj,0);
+                    (caml_get_public_method(hadj,-659372076,363),hadj,0);
                   if
                    (mv<
-                    caml_call1(caml_get_public_method(hadj,834174833,361),hadj))
+                    caml_call1(caml_get_public_method(hadj,834174833,364),hadj))
                    caml_call2
-                    (caml_get_public_method(hadj,-659372076,362),hadj,mv);
+                    (caml_get_public_method(hadj,-659372076,365),hadj,mv);
                   var _eg_=[0,min(ah,st[7])];
                   caml_call7
-                   (caml_get_public_method(vadj,-635267918,363),
+                   (caml_get_public_method(vadj,-635267918,366),
                     vadj,
                     0,
                     [0,st[7]],
@@ -5327,18 +5327,18 @@
                     0);
                   var
                    _eh_=
-                    caml_call1(caml_get_public_method(vadj,307110897,364),vadj),
+                    caml_call1(caml_get_public_method(vadj,307110897,367),vadj),
                    mv$0=st[7]-_eh_;
                   if
-                   (caml_call1(caml_get_public_method(vadj,834174833,365),vadj)<
+                   (caml_call1(caml_get_public_method(vadj,834174833,368),vadj)<
                     0)
                    caml_call2
-                    (caml_get_public_method(vadj,-659372076,366),vadj,0);
+                    (caml_get_public_method(vadj,-659372076,369),vadj,0);
                   if
                    (mv$0<
-                    caml_call1(caml_get_public_method(vadj,834174833,367),vadj))
+                    caml_call1(caml_get_public_method(vadj,834174833,370),vadj))
                    caml_call2
-                    (caml_get_public_method(vadj,-659372076,368),vadj,mv$0);
+                    (caml_get_public_method(vadj,-659372076,371),vadj,mv$0);
                   return redraw_queued[1]
                           ?0
                           :(redraw_queued[1]=
@@ -5350,9 +5350,9 @@
                                  {redraw_queued[1]=0;
                                   var
                                    y0$2=
-                                    caml_call1(caml_get_public_method(vadj,834174833,369),vadj),
+                                    caml_call1(caml_get_public_method(vadj,834174833,372),vadj),
                                    x0$2=
-                                    caml_call1(caml_get_public_method(hadj,834174833,370),hadj),
+                                    caml_call1(caml_get_public_method(hadj,834174833,373),hadj),
                                    scale=get_scale(0),
                                    width$0=window$0.width,
                                    height$0=window$0.height,
@@ -5452,7 +5452,7 @@
                  count=Math.ceil(Math.log(f$0)/0.693147180559945286*8),
                  f=Math.pow(2,count/8);
                 caml_call7
-                 (caml_get_public_method(sadj,-635267918,355),
+                 (caml_get_public_method(sadj,-635267918,358),
                   sadj,
                   0,
                   [0,count],
@@ -5467,23 +5467,23 @@
                    scale=get_scale(0),
                    r=1-prev_scale[1]/scale,
                    _ec_=
-                    caml_call1(caml_get_public_method(hadj,307110897,371),hadj)*
+                    caml_call1(caml_get_public_method(hadj,307110897,374),hadj)*
                     r*
                     x;
                   caml_call2
-                   (caml_get_public_method(hadj,-659372076,373),
+                   (caml_get_public_method(hadj,-659372076,376),
                     hadj,
-                    caml_call1(caml_get_public_method(hadj,834174833,372),hadj)+
+                    caml_call1(caml_get_public_method(hadj,834174833,375),hadj)+
                     _ec_);
                   var
                    _ed_=
-                    caml_call1(caml_get_public_method(vadj,307110897,374),vadj)*
+                    caml_call1(caml_get_public_method(vadj,307110897,377),vadj)*
                     r*
                     y;
                   caml_call2
-                   (caml_get_public_method(vadj,-659372076,376),
+                   (caml_get_public_method(vadj,-659372076,379),
                     vadj,
-                    caml_call1(caml_get_public_method(vadj,834174833,375),vadj)+
+                    caml_call1(caml_get_public_method(vadj,834174833,378),vadj)+
                     _ed_);
                   prev_scale[1]=scale;
                   st[8][4]=_dl_;
@@ -5531,10 +5531,10 @@
                     jsoo_obj.top=match;
                     pos[1]=pos$0;
                     caml_call2
-                     (caml_get_public_method(sadj,-659372076,397),
+                     (caml_get_public_method(sadj,-659372076,400),
                       sadj,
                       (284-pos$0|0)*
-                      caml_call1(caml_get_public_method(sadj,675223906,396),sadj)/
+                      caml_call1(caml_get_public_method(sadj,675223906,399),sadj)/
                       284);
                     return rescale(0.5,0.5)}
                   return 0}
@@ -5570,15 +5570,15 @@
                    {var scale=get_scale(0);
                     function offset(a,d)
                      {var
-                       _ea_=caml_call1(caml_get_public_method(a,307110897,410),a),
+                       _ea_=caml_call1(caml_get_public_method(a,307110897,413),a),
                        _eb_=
-                        caml_call1(caml_get_public_method(a,675223906,411),a)-
+                        caml_call1(caml_get_public_method(a,675223906,414),a)-
                         _ea_;
                       return caml_call2
-                              (caml_get_public_method(a,-659372076,413),
+                              (caml_get_public_method(a,-659372076,416),
                                a,
                                min
-                                (caml_call1(caml_get_public_method(a,834174833,412),a)-
+                                (caml_call1(caml_get_public_method(a,834174833,415),a)-
                                  d/
                                  scale,
                                  _eb_))}
@@ -5591,29 +5591,29 @@
                    x$0=x/a[3],
                    y$0=y/a[4],
                    prev=
-                    caml_call1(caml_get_public_method(sadj,834174833,414),sadj),
+                    caml_call1(caml_get_public_method(sadj,834174833,417),sadj),
                    _d__=
                     prev+
                     v*
-                    caml_call1(caml_get_public_method(sadj,-292814788,415),sadj),
+                    caml_call1(caml_get_public_method(sadj,-292814788,418),sadj),
                    _d$_=
                     max
                      (caml_call1
-                       (caml_get_public_method(sadj,-117442047,416),sadj),
+                       (caml_get_public_method(sadj,-117442047,419),sadj),
                       _d__),
                    vl=
                     min
-                     (caml_call1(caml_get_public_method(sadj,675223906,417),sadj),
+                     (caml_call1(caml_get_public_method(sadj,675223906,420),sadj),
                       _d$_);
                   if(vl!=prev)
                    {caml_call2
-                     (caml_get_public_method(sadj,-659372076,418),sadj,vl);
+                     (caml_get_public_method(sadj,-659372076,421),sadj,vl);
                     var
                      _d9_=
-                      caml_call1(caml_get_public_method(sadj,675223906,400),sadj),
+                      caml_call1(caml_get_public_method(sadj,675223906,403),sadj),
                      pos$0=
                       284-
-                      (caml_call1(caml_get_public_method(sadj,834174833,401),sadj)*
+                      (caml_call1(caml_get_public_method(sadj,834174833,404),sadj)*
                        284/
                        _d9_+
                        0.5|
@@ -5668,44 +5668,44 @@
                    {case 0:
                      var
                       _d3_=
-                       caml_call1(caml_get_public_method(hadj,-292814788,422),hadj);
+                       caml_call1(caml_get_public_method(hadj,-292814788,425),hadj);
                      caml_call2
-                      (caml_get_public_method(hadj,-659372076,424),
+                      (caml_get_public_method(hadj,-659372076,427),
                        hadj,
-                       caml_call1(caml_get_public_method(hadj,834174833,423),hadj)-
+                       caml_call1(caml_get_public_method(hadj,834174833,426),hadj)-
                        _d3_);
                      update_view(0);
                      return false$0;
                     case 1:
                      var
                       _d4_=
-                       caml_call1(caml_get_public_method(vadj,-292814788,425),vadj);
+                       caml_call1(caml_get_public_method(vadj,-292814788,428),vadj);
                      caml_call2
-                      (caml_get_public_method(vadj,-659372076,427),
+                      (caml_get_public_method(vadj,-659372076,430),
                        vadj,
-                       caml_call1(caml_get_public_method(vadj,834174833,426),vadj)-
+                       caml_call1(caml_get_public_method(vadj,834174833,429),vadj)-
                        _d4_);
                      update_view(0);
                      return false$0;
                     case 2:
                      var
                       _d5_=
-                       caml_call1(caml_get_public_method(hadj,-292814788,428),hadj);
+                       caml_call1(caml_get_public_method(hadj,-292814788,431),hadj);
                      caml_call2
-                      (caml_get_public_method(hadj,-659372076,430),
+                      (caml_get_public_method(hadj,-659372076,433),
                        hadj,
-                       caml_call1(caml_get_public_method(hadj,834174833,429),hadj)+
+                       caml_call1(caml_get_public_method(hadj,834174833,432),hadj)+
                        _d5_);
                      update_view(0);
                      return false$0;
                     default:
                      var
                       _d6_=
-                       caml_call1(caml_get_public_method(vadj,-292814788,431),vadj);
+                       caml_call1(caml_get_public_method(vadj,-292814788,434),vadj);
                      caml_call2
-                      (caml_get_public_method(vadj,-659372076,433),
+                      (caml_get_public_method(vadj,-659372076,436),
                        vadj,
-                       caml_call1(caml_get_public_method(vadj,834174833,432),vadj)+
+                       caml_call1(caml_get_public_method(vadj,834174833,435),vadj)+
                        _d6_);
                      update_view(0);
                      return false$0}}

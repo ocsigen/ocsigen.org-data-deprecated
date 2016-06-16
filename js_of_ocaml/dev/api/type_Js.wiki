@@ -431,6 +431,8 @@
   external instanceof : 'a Js.t -> 'b Js.constr -> bool
     = "caml_js_instanceof"
   external debugger : unit -> unit = "debugger"
+  val export : string -> 'a -> unit
+  val export_all : 'a Js.t -> unit
   module Unsafe :
     sig
       type any
