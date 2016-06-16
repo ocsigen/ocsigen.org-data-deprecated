@@ -611,6 +611,20 @@
       return 0}
     function caml_get_exception_raw_backtrace(){return [0]}
     function caml_greaterequal(x,y){return +(caml_compare_val(x,y,false)>=0)}
+    if(!Math.imul)
+     Math.imul=function(x,y){y|=0;return ((x>>16)*y<<16)+(x&65535)*y|0};
+    var caml_mul=Math.imul;
+    function caml_hash_mix_int(h,d)
+     {d=caml_mul(d,3432918353|0);
+      d=d<<15|d>>>32-15;
+      d=caml_mul(d,461845907);
+      h^=d;
+      h=h<<13|h>>>32-13;
+      return (h+(h<<2)|0)+(3864292196|0)|0}
+    function caml_hash_mix_int64(h,v)
+     {var lo=v[1]|v[2]<<24,hi=v[2]>>>8|v[3]<<16;
+      h=caml_hash_mix_int(h,hi^lo);
+      return h}
     var log2_ok=Math.log2&&Math.log2(1.12355820928894744e+307)==1020;
     function jsoo_floor_log2(x)
      {if(log2_ok)return Math.floor(Math.log2(x));
@@ -636,106 +650,92 @@
       var r1=x|0;
       r3=r3&15|sign|exp<<4;
       return [255,r1,r2,r3]}
-    if(!Math.imul)
-     Math.imul=function(x,y){y|=0;return ((x>>16)*y<<16)+(x&65535)*y|0};
-    var
-     caml_mul=Math.imul,
-     caml_hash=
-      function()
-        {var HASH_QUEUE_SIZE=256;
-         function ROTL32(x,n){return x<<n|x>>>32-n}
-         function MIX(h,d)
-          {d=caml_mul(d,3432918353|0);
-           d=ROTL32(d,15);
-           d=caml_mul(d,461845907);
-           h^=d;
-           h=ROTL32(h,13);
-           return (h+(h<<2)|0)+(3864292196|0)|0}
-         function FINAL_MIX(h)
-          {h^=h>>>16;
-           h=caml_mul(h,2246822507|0);
-           h^=h>>>13;
-           h=caml_mul(h,3266489909|0);
-           h^=h>>>16;
-           return h}
-         function caml_hash_mix_int64(h,v)
-          {var lo=v[1]|v[2]<<24,hi=v[2]>>>8|v[3]<<16;
-           h=MIX(h,lo);
-           h=MIX(h,hi);
-           return h}
-         function caml_hash_mix_int64_2(h,v)
-          {var lo=v[1]|v[2]<<24,hi=v[2]>>>8|v[3]<<16;h=MIX(h,hi^lo);return h}
-         function caml_hash_mix_string_str(h,s)
-          {var len=s.length,i,w;
-           for(i=0;i+4<=len;i+=4)
-            {w=
-             s.charCodeAt(i)|
-             s.charCodeAt(i+1)<<
-             8|
-             s.charCodeAt(i+2)<<
-             16|
-             s.charCodeAt(i+3)<<
-             24;
-             h=MIX(h,w)}
-           w=0;
-           switch(len&3)
-            {case 3:w=s.charCodeAt(i+2)<<16;
-             case 2:w|=s.charCodeAt(i+1)<<8;
-             case 1:w|=s.charCodeAt(i);h=MIX(h,w)
-             }
-           h^=len;
-           return h}
-         function caml_hash_mix_string_arr(h,s)
-          {var len=s.length,i,w;
-           for(i=0;i+4<=len;i+=4)
-            {w=s[i]|s[i+1]<<8|s[i+2]<<16|s[i+3]<<24;h=MIX(h,w)}
-           w=0;
-           switch(len&3)
-            {case 3:w=s[i+2]<<16;
-             case 2:w|=s[i+1]<<8;
-             case 1:w|=s[i];h=MIX(h,w)
-             }
-           h^=len;
-           return h}
-         return function(count,limit,seed,obj)
-          {var queue,rd,wr,sz,num,h,v,i,len;
-           sz=limit;
-           if(sz<0||sz>HASH_QUEUE_SIZE)sz=HASH_QUEUE_SIZE;
-           num=count;
-           h=seed;
-           queue=[obj];
-           rd=0;
-           wr=1;
-           while(rd<wr&&num>0)
-            {v=queue[rd++];
-             if(v instanceof Array&&v[0]===(v[0]|0))
-              switch(v[0])
-               {case 248:h=MIX(h,v[2]);num--;break;
-                case 250:queue[--rd]=v[1];break;
-                case 255:h=caml_hash_mix_int64_2(h,v);num--;break;
-                default:
-                 var tag=v.length-1<<10|v[0];
-                 h=MIX(h,tag);
-                 for(i=1,len=v.length;i<len;i++)
-                  {if(wr>=sz)break;queue[wr++]=v[i]}
-                 break}
-             else
-              if(v instanceof MlString)
-               {switch(v.t&6)
-                 {default:caml_convert_string_to_bytes(v);case 0:
-                   h=caml_hash_mix_string_str(h,v.c);break;
-                  case 2:h=caml_hash_mix_string_arr(h,v.c)
-                  }
-                num--}
-              else
-               if(v===(v|0))
-                {h=MIX(h,v+v+1);num--}
-               else
-                if(v===+v)
-                 {h=caml_hash_mix_int64(h,caml_int64_bits_of_float(v));num--}}
-           h=FINAL_MIX(h);
-           return h&1073741823}}
-       ();
+    function caml_hash_mix_float(h,v0)
+     {var
+       v=caml_int64_bits_of_float(v0),
+       lo=v[1]|v[2]<<24,
+       hi=v[2]>>>8|v[3]<<16;
+      h=caml_hash_mix_int(h,lo);
+      h=caml_hash_mix_int(h,hi);
+      return h}
+    function caml_hash_mix_string_arr(h,s)
+     {var len=s.length,i,w;
+      for(i=0;i+4<=len;i+=4)
+       {w=s[i]|s[i+1]<<8|s[i+2]<<16|s[i+3]<<24;h=caml_hash_mix_int(h,w)}
+      w=0;
+      switch(len&3)
+       {case 3:w=s[i+2]<<16;
+        case 2:w|=s[i+1]<<8;
+        case 1:w|=s[i];h=caml_hash_mix_int(h,w)
+        }
+      h^=len;
+      return h}
+    function caml_hash_mix_string_str(h,s)
+     {var len=s.length,i,w;
+      for(i=0;i+4<=len;i+=4)
+       {w=
+        s.charCodeAt(i)|
+        s.charCodeAt(i+1)<<
+        8|
+        s.charCodeAt(i+2)<<
+        16|
+        s.charCodeAt(i+3)<<
+        24;
+        h=caml_hash_mix_int(h,w)}
+      w=0;
+      switch(len&3)
+       {case 3:w=s.charCodeAt(i+2)<<16;
+        case 2:w|=s.charCodeAt(i+1)<<8;
+        case 1:w|=s.charCodeAt(i);h=caml_hash_mix_int(h,w)
+        }
+      h^=len;
+      return h}
+    function caml_hash_mix_string(h,v)
+     {switch(v.t&6)
+       {default:caml_convert_string_to_bytes(v);case 0:
+         h=caml_hash_mix_string_str(h,v.c);break;
+        case 2:h=caml_hash_mix_string_arr(h,v.c)
+        }
+      return h}
+    function caml_hash_mix_final(h)
+     {h^=h>>>16;
+      h=caml_mul(h,2246822507|0);
+      h^=h>>>13;
+      h=caml_mul(h,3266489909|0);
+      h^=h>>>16;
+      return h}
+    var HASH_QUEUE_SIZE=256;
+    function caml_hash(count,limit,seed,obj)
+     {var queue,rd,wr,sz,num,h,v,i,len;
+      sz=limit;
+      if(sz<0||sz>HASH_QUEUE_SIZE)sz=HASH_QUEUE_SIZE;
+      num=count;
+      h=seed;
+      queue=[obj];
+      rd=0;
+      wr=1;
+      while(rd<wr&&num>0)
+       {v=queue[rd++];
+        if(v instanceof Array&&v[0]===(v[0]|0))
+         switch(v[0])
+          {case 248:h=caml_hash_mix_int(h,v[2]);num--;break;
+           case 250:queue[--rd]=v[1];break;
+           case 255:h=caml_hash_mix_int64(h,v);num--;break;
+           default:
+            var tag=v.length-1<<10|v[0];
+            h=caml_hash_mix_int(h,tag);
+            for(i=1,len=v.length;i<len;i++){if(wr>=sz)break;queue[wr++]=v[i]}
+            break}
+        else
+         if(v instanceof MlString)
+          {h=caml_hash_mix_string(h,v);num--}
+         else
+          if(v===(v|0))
+           {h=caml_hash_mix_int(h,v+v+1);num--}
+          else
+           if(v===+v){h=caml_hash_mix_float(h,v);num--}}
+      h=caml_hash_mix_final(h);
+      return h&1073741823}
     function caml_int64_to_bytes(x)
      {return [x[3]>>8,
               x[3]&255,
