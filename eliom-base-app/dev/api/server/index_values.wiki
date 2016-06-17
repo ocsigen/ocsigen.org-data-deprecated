@@ -70,7 +70,7 @@
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="content"| value Eba_page.content >> ~[<<a_api subproject="server" | module Eba_page >>~]|<<div class="odocwiki_info"|~Specifies a page with an optional title~, some optional extra
-    metadata and a given body
+    metadata and a given body~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="create"| value Eba_user.create >> ~[<<a_api subproject="server" | module Eba_user >>~]|<<div class="odocwiki_info"|~Create a new user
