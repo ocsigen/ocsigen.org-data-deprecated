@@ -179,7 +179,7 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Lwt"| module Eliom_shared_sigs.S.Lwt >> ~[<<a_api subproject="client" | module Eliom_shared_sigs.S >>~]|<<div class="odocwiki_info"|~Cooperative versions of the ~React operators
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Lwt_log"| module Eliom_lib.Lwt_log >> ~[<<a_api subproject="client" | module Eliom_lib >>~]|<<div class="odocwiki_info"|~Extension of <<a_api project="lwt"| module Lwt_log_js >> ~.
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Lwt_log"| module Eliom_lib.Lwt_log >> ~[<<a_api subproject="client" | module Eliom_lib >>~]|<<div class="odocwiki_info"|~Extension of <<a_api project="js_of_ocaml"| module Lwt_log_js >> ~.
 >>
 |
 |@@ @style="tet-align: left;"@@\\M|
@@ -262,7 +262,7 @@
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="String"| module Eliom_lib.String >> ~[<<a_api subproject="client" | module Eliom_lib >>~]|<<div class="odocwiki_info"|~Extension of <<a_api project="ocsigenserver"| module
-    Ocsigen_lib.String_base >> ~.
+    Ocsigen_lib_base.String_base >> ~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Svg"| module Eliom_content_core.Svg >> ~[<<a_api subproject="client" | module Eliom_content_core >>~]|<<div class="odocwiki_info"|~Building ~S~V~G tree~.
