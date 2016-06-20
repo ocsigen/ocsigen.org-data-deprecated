@@ -36,6 +36,9 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Ot_spinner"| module Ot_spinner >> |<<div class="odocwiki_info"|~Spinner widget
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Ot_swipe"| module Ot_swipe >> |<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|bind ~~compute~_final~_pos elt>> makes <<span class="odocwiki_inlinecode"|elt>> swipable on touch screens~.
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Ot_time_picker"| module Ot_time_picker >> |<<div class="odocwiki_info"|~This module implements a clock~-style time picker~.
 >>
 |

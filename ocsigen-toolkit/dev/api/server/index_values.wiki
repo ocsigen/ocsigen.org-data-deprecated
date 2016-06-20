@@ -1,6 +1,7 @@
 =Index of values=
 
 |@@ @style="tet-align: left;"@@\\B|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="bind"| value Ot_swipe.bind >> ~[<<a_api subproject="server" | module Ot_swipe >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="bullets"| value Ot_carousel.bullets >> ~[<<a_api subproject="server" | module Ot_carousel >>~]|<<div class="odocwiki_info"|~List of bullets for carousel~.
 >>
 |

@@ -1,0 +1,8 @@
+<<code language="ocaml" | sig
+  val bind :
+    ?transition_duration:float ->
+    ?min:int ->
+    ?max:int ->
+    compute_final_pos:(int -> int) Eliom_client_value.t ->
+    'a Eliom_content.Html.elt -> unit
+end >>
