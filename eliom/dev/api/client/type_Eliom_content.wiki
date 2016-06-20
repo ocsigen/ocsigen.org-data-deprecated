@@ -15941,8 +15941,7 @@
               val minHeightPx : 'a Eliom_content.Html.elt -> int -> unit
               val minWidth : 'a Eliom_content.Html.elt -> string -> unit
               val minWidthPx : 'a Eliom_content.Html.elt -> int -> unit
-              val opacity :
-                'a Eliom_content.Html.elt -> string option -> unit
+              val opacity : 'a Eliom_content.Html.elt -> string -> unit
               val outline : 'a Eliom_content.Html.elt -> string -> unit
               val outlineColor : 'a Eliom_content.Html.elt -> string -> unit
               val outlineOffset : 'a Eliom_content.Html.elt -> string -> unit
