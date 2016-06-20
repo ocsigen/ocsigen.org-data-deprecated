@@ -243,7 +243,9 @@ file~.
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Lwt"| module Eliom_shared_sigs.S.Lwt >> ~[<<a_api subproject="server" | module Eliom_shared_sigs.S >>~]|<<div class="odocwiki_info"|~Cooperative versions of the ~React operators
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Lwt_log"| module Eliom_lib.Lwt_log >> ~[<<a_api subproject="server" | module Eliom_lib >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Lwt_log"| module Eliom_lib.Lwt_log >> ~[<<a_api subproject="server" | module Eliom_lib >>~]|<<div class="odocwiki_info"|~Extension of ~<a~_api project~="lwt"~| module ~Lwt~_log~>~.
+>>
+|
 |@@ @style="tet-align: left;"@@\\M|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Make"| module Eliom_openid.Make >> ~[<<a_api subproject="server" | module Eliom_openid >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Make"| module Eliom_mkreg.Make >> ~[<<a_api subproject="server" | module Eliom_mkreg >>~]|<<div class="odocwiki_info"|~Creates modules to register services for one type of pages
