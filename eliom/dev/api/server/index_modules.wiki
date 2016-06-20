@@ -243,7 +243,7 @@ file~.
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Lwt"| module Eliom_shared_sigs.S.Lwt >> ~[<<a_api subproject="server" | module Eliom_shared_sigs.S >>~]|<<div class="odocwiki_info"|~Cooperative versions of the ~React operators
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Lwt_log"| module Eliom_lib.Lwt_log >> ~[<<a_api subproject="server" | module Eliom_lib >>~]|<<div class="odocwiki_info"|~Extension of ~<a~_api project~="lwt"~| module ~Lwt~_log~>~.
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Lwt_log"| module Eliom_lib.Lwt_log >> ~[<<a_api subproject="server" | module Eliom_lib >>~]|<<div class="odocwiki_info"|~Extension of <<a_api project="lwt"| module Lwt_log>> ~.
 >>
 |
 |@@ @style="tet-align: left;"@@\\M|
