@@ -57,20 +57,21 @@
 
 
     
-<<code language='ocaml'|      let switch = Lwt_switch.create () in
-      try_lwt
+<<code language='ocaml'|      Lwt_switch.with_switch (fun switch ->
         lwt idf = f ~switch ()
         and idg = g ~switch ()
         and idh = h ~switch () in
         ...
-      with exn ->
-        lwt () = Lwt_switch.turn_off switch in
-        raise_lwt exn
+      )
     >>
 
 <<pre class="ocsforge_color odocwiki_code" id="TYPEt"|<<span class="ocsforge_color_keyword"|type>> <<span class="odocwiki_name"|t>>>><<div class="odocwiki_info"|~Type of switches~.
 >>
 <<pre id="VALcreate" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|create>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|unit <<span class="ocsforge_color_delimiter"| -> >> <<a_api text="t" | type Lwt_switch.t >>>>>><<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|create ~(~)>> creates a new switch~.
+>>
+<<pre id="VALwith_switch" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|with~_switch>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<span class="ocsforge_color_delimiter"| ( >><<a_api text="t" | type Lwt_switch.t >> <<span class="ocsforge_color_delimiter"| -> >> 'a <<a_api text="Lwt.t" | type Lwt.t >><<span class="ocsforge_color_delimiter"| ) >> <<span class="ocsforge_color_delimiter"| -> >> 'a <<a_api text="Lwt.t" | type Lwt.t >>>>>><<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|with~_switch fn>> is <<span class="odocwiki_inlinecode"|fn switch>>~, where <<span class="odocwiki_inlinecode"|switch>> is a fresh switch
+      that is turned off when the callback thread finishes ~(whether it
+      succeeds or fails~)~.
 >>
 <<pre id="VALis_on" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|is~_on>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<a_api text="t" | type Lwt_switch.t >> <<span class="ocsforge_color_delimiter"| -> >> bool>>>><<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|is~_on switch>> returns <<span class="odocwiki_inlinecode"|true>> if the switch is currently on~, and
       <<span class="odocwiki_inlinecode"|false>> otherwise~.

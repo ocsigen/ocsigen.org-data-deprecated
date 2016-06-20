@@ -1,6 +1,7 @@
 <<code language="ocaml" | sig
   type t
   val create : unit -> Lwt_switch.t
+  val with_switch : (Lwt_switch.t -> 'a Lwt.t) -> 'a Lwt.t
   val is_on : Lwt_switch.t -> bool
   val turn_off : Lwt_switch.t -> unit Lwt.t
   exception Off

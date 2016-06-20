@@ -1870,6 +1870,11 @@
 |@@class="odocwiki_index"@ @@<<a_api text="with_process_in"| value Lwt_process.with_process_in >> ~[<<a_api | module Lwt_process >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="with_process_none"| value Lwt_process.with_process_none >> ~[<<a_api | module Lwt_process >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="with_process_out"| value Lwt_process.with_process_out >> ~[<<a_api | module Lwt_process >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="with_switch"| value Lwt_switch.with_switch >> ~[<<a_api | module Lwt_switch >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|with~_switch fn>> is <<span class="odocwiki_inlinecode"|fn switch>>~, where <<span class="odocwiki_inlinecode"|switch>> is a fresh switch
+      that is turned off when the callback thread finishes ~(whether it
+      succeeds or fails~)~.
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api text="with_timeout"| value Lwt_unix.with_timeout >> ~[<<a_api | module Lwt_unix >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|with~_timeout d f>> is a short~-hand for~:
 >>
 |
