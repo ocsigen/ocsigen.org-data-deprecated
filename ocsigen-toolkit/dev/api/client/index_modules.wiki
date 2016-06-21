@@ -1,6 +1,7 @@
 =Index of modules=
 
 |@@ @style="tet-align: left;"@@\\O|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Ot_buttons"| module Ot_buttons >> ||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Ot_calendar"| module Ot_calendar >> ||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Ot_carousel"| module Ot_carousel >> ||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Ot_drawer"| module Ot_drawer >> ||

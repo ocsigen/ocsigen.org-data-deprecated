@@ -9,6 +9,7 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="drawer"| value Ot_drawer.drawer >> ~[<<a_api subproject="server" | module Ot_drawer >>~]|<<div class="odocwiki_info"|~Build a drawer menu on the left or right of the screen~.
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="dropdown"| value Ot_buttons.dropdown >> ~[<<a_api subproject="server" | module Ot_buttons >>~]||
 |@@ @style="tet-align: left;"@@\\H|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="hcf"| value Ot_popup.hcf >> ~[<<a_api subproject="server" | module Ot_popup >>~]|<<div class="odocwiki_info"|~Section with header~, content and footer~.
 >>
