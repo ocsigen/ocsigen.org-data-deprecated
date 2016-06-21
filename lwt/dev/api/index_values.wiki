@@ -172,6 +172,10 @@
 |@@class="odocwiki_index"@ @@<<a_api text="broadcast"| value Lwt_condition.broadcast >> ~[<<a_api | module Lwt_condition >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|broadcast condvar value>> notifies all waiting threads~.
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api text="broadcast_exn"| value Lwt_condition.broadcast_exn >> ~[<<a_api | module Lwt_condition >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|broadcast~_exn condvar exn>> fails all waiting threads with exception
+        <<span class="odocwiki_inlinecode"|exn>>~.
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api text="buffer_size"| value Lwt_io.buffer_size >> ~[<<a_api | module Lwt_io >>~]|<<div class="odocwiki_info"|~Returns the size of the internal buffer~.
 >>
 |
