@@ -16,6 +16,8 @@
   val return_nil : 'a list Lwt.t
   val return_true : bool Lwt.t
   val return_false : bool Lwt.t
+  val return_ok : 'a -> ('a, 'b) Result.result Lwt.t
+  val return_error : 'e -> ('a, 'e) Result.result Lwt.t
   type 'a key
   val new_key : unit -> 'a Lwt.key
   val get : 'a Lwt.key -> 'a option
@@ -55,7 +57,7 @@
   val wakeup_later : 'a Lwt.u -> 'a -> unit
   val wakeup_later_exn : 'a Lwt.u -> exn -> unit
   val waiter_of_wakener : 'a Lwt.u -> 'a Lwt.t
-  type +'a result
+  type 'a result = ('a, exn) Result.result
   val make_value : 'a -> 'a Lwt.result
   val make_error : exn -> 'a Lwt.result
   val of_result : 'a Lwt.result -> 'a Lwt.t

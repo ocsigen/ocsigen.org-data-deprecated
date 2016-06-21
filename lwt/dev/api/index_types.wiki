@@ -186,6 +186,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="t"| type Lwt_sequence.t >> ~[<<a_api | module Lwt_sequence >>~]|<<div class="odocwiki_info"|~Type of a sequence holding values of type <<span class="odocwiki_inlinecode"|~'a>>
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api text="t"| type Lwt_result.t >> ~[<<a_api | module Lwt_result >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="t"| type Lwt_pool.t >> ~[<<a_api | module Lwt_pool >>~]|<<div class="odocwiki_info"|~Type of a pool containing values of ~'a
 >>
 |
