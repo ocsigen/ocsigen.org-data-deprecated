@@ -3,6 +3,12 @@
     cooperative threads~. ~It maintains an extensible pool of preemptive
     threads to which you can detach computations~.
 
+
+    ~When compiling or linking programs that use <<span class="odocwiki_inlinecode"|~Lwt~_preemptive>>~, you should
+    pass the <<span class="odocwiki_inlinecode"|~-thread>> or <<span class="odocwiki_inlinecode"|~-vmthread>> option~. ~This depends on your build system~.
+    ~For ~O~Camlbuild~, add <<span class="odocwiki_inlinecode"|true~: thread>> to <<span class="odocwiki_inlinecode"|~_tags>>~. ~For ~O~A~S~I~S~, add <<span class="odocwiki_inlinecode"|threads>> to
+    <<span class="odocwiki_inlinecode"|~Build~Depends>> in <<span class="odocwiki_inlinecode"|~_oasis>>~.
+
 ----
 <<pre id="VALdetach" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|detach>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<span class="ocsforge_color_delimiter"| ( >>'a <<span class="ocsforge_color_delimiter"| -> >> 'b<<span class="ocsforge_color_delimiter"| ) >> <<span class="ocsforge_color_delimiter"| -> >> 'a <<span class="ocsforge_color_delimiter"| -> >> 'b <<a_api text="Lwt.t" | type Lwt.t >>>>>><<div class="odocwiki_info"|detaches a computation to a preemptive thread~.
 >>
