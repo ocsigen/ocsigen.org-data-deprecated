@@ -19,4 +19,8 @@
 
 ~Compute the height of an element to the bottom of the page
 
+position of an element relative to the inner window
+
+position of an element relative to the document
+
 ~Current vertical scroll position of the page~.
