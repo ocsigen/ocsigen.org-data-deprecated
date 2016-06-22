@@ -64,7 +64,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="Lwt_mvar"| module Lwt_mvar >> |<<div class="odocwiki_info"|~Mailbox variables
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api text="Lwt_pool"| module Lwt_pool >> |<<div class="odocwiki_info"|~Creating pools ~(for example pools of connections to a database~)~.
+|@@class="odocwiki_index"@ @@<<a_api text="Lwt_pool"| module Lwt_pool >> |<<div class="odocwiki_info"|~External resource pools~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="Lwt_pqueue"| module Lwt_pqueue >> ||

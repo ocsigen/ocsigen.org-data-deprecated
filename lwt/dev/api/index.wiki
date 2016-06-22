@@ -31,7 +31,7 @@ any external package~.
 |<<a_api | module Lwt_mvar >>|<<div class="odocwiki_info"|~Mailbox variables
 >>
 |
-|<<a_api | module Lwt_pool >>|<<div class="odocwiki_info"|~Creating pools ~(for example pools of connections to a database~)~.
+|<<a_api | module Lwt_pool >>|<<div class="odocwiki_info"|~External resource pools~.
 >>
 |
 |<<a_api | module Lwt_sequence >>|<<div class="odocwiki_info"|~Mutable sequence of elements

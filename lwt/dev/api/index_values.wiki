@@ -300,7 +300,7 @@
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="create"| value Lwt_pool.create >> ~[<<a_api | module Lwt_pool >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|create n ~?check ~?validate f>> creates a new pool with at most
-      <<span class="odocwiki_inlinecode"|n>> members~.
+      <<span class="odocwiki_inlinecode"|n>> elements~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="create"| value Lwt_mvar.create >> ~[<<a_api | module Lwt_mvar >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|create v>> creates a new mailbox variable containing value <<span class="odocwiki_inlinecode"|v>>~.
@@ -1780,7 +1780,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="unsafe_set"| value Lwt_bytes.unsafe_set >> ~[<<a_api | module Lwt_bytes >>~]|<<div class="odocwiki_info"|~Same as <<a_api | val Lwt_bytes.set >> but without bounds checking~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api text="use"| value Lwt_pool.use >> ~[<<a_api | module Lwt_pool >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|use p f>> takes one free member of the pool <<span class="odocwiki_inlinecode"|p>> and gives it to
+|@@class="odocwiki_index"@ @@<<a_api text="use"| value Lwt_pool.use >> ~[<<a_api | module Lwt_pool >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|use p f>> takes one free element of the pool <<span class="odocwiki_inlinecode"|p>> and gives it to
       the function <<span class="odocwiki_inlinecode"|f>>~.
 >>
 |
