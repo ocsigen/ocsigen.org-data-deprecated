@@ -1,6 +1,6 @@
 <<code language="ocaml" | sig
-  val display :
-    ?class_:string list ->
+  val bubble :
+    ?a:[< Html_types.div_attrib > `Class ] Eliom_content.Html.D.attrib list ->
     ?arrow:[< `bottom of int | `left of int | `right of int | `top of int ] ->
     ?top:int ->
     ?left:int ->
@@ -96,7 +96,12 @@
     name:string ->
     content:Html_types.div_content Eliom_content.Html.elt list ->
     unit -> unit Lwt.t
-  val reset_tips : int64 -> unit -> unit -> unit Lwt.t
+  val block :
+    ?a:[< Html_types.div_attrib > `Class ] Eliom_content.Html.D.attrib list ->
+    name:string ->
+    content:Html_types.div_content Eliom_content.Html.elt list ->
+    unit -> [> `Div ] Eliom_content.Html.elt option Lwt.t
+  val reset_tips : unit -> unit Lwt.t
   val reset_tips_service :
     (unit, unit, Eliom_service.post, Eliom_service.non_att, Eliom_service.co,
      Eliom_service.non_ext, Eliom_service.reg, [ `WithoutSuffix ], unit,

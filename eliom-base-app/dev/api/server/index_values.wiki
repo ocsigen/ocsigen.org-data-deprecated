@@ -20,6 +20,13 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="avatar_of_user"| value Eba_user.avatar_of_user >> ~[<<a_api subproject="server" | module Eba_user >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="avatar_uri_of_avatar"| value Eba_user.avatar_uri_of_avatar >> ~[<<a_api subproject="server" | module Eba_user >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="avatar_uri_of_user"| value Eba_user.avatar_uri_of_user >> ~[<<a_api subproject="server" | module Eba_user >>~]||
+|@@ @style="tet-align: left;"@@\\B|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="block"| value Eba_tips.block >> ~[<<a_api subproject="server" | module Eba_tips >>~]|<<div class="odocwiki_info"|~Return a box containing a tip~, to be inserted where you want in a page~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="bubble"| value Eba_tips.bubble >> ~[<<a_api subproject="server" | module Eba_tips >>~]|<<div class="odocwiki_info"|~Display tips in pages~, as a speech bubble~.
+>>
+|
 |@@ @style="tet-align: left;"@@\\C|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="client_ev"| value Eba_notif.Make.client_ev >> ~[<<a_api subproject="server" | module Eba_notif.Make >>~]|<<div class="odocwiki_info"|~Returns the client react event~.
 >>
@@ -110,7 +117,6 @@
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="disconnect_handler"| value Eba_handlers.disconnect_handler >> ~[<<a_api subproject="server" | module Eba_handlers >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="display"| value Eba_tips.display >> ~[<<a_api subproject="server" | module Eba_tips >>~]||
 |@@ @style="tet-align: left;"@@\\E|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="email_of_user"| value Eba_user.email_of_user >> ~[<<a_api subproject="server" | module Eba_user >>~]|<<div class="odocwiki_info"|~Retrieve one of the e~-mails of a user~.
 >>
@@ -252,7 +258,7 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="reset"| value Eba_request_cache.Cache_sig.reset >> ~[<<a_api subproject="server" | module Eba_request_cache.Cache_sig >>~]|<<div class="odocwiki_info"|~Remove a <<span class="odocwiki_inlinecode"|value>> for the given key~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="reset_tips"| value Eba_tips.reset_tips >> ~[<<a_api subproject="server" | module Eba_tips >>~]|<<div class="odocwiki_info"|~Call this function to reset tips for one user~.
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="reset_tips"| value Eba_tips.reset_tips >> ~[<<a_api subproject="server" | module Eba_tips >>~]|<<div class="odocwiki_info"|~Call this function to reset tips for current user~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="reset_tips_link"| value Eba_userbox.reset_tips_link >> ~[<<a_api subproject="server" | module Eba_userbox >>~]|<<div class="odocwiki_info"|~Link to start to see the help from the begining~.
