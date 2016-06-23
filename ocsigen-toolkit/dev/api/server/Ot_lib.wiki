@@ -10,5 +10,24 @@
     line as follows before~:
     let~%lwt ~(~) ~= ~Ot~_nodeready~.nodeready ~@~@ ~To~_dom~.of~_element some~_elt in
 
+~If <<span class="odocwiki_inlinecode"|ios~_html~_scroll~_hack>> then listen on window ~+ html ~+ body instead of only window~.
+~On i~O~S ~(~8 and ~9~)~, in ~Wk~Web~View and in ~Safari~, some ~C~S~S properties
+ ~(e~.g~. html~)
+may move the scroll event from window to html or to body~.
+~For instance~, with ~(~O~N~) or without ~(~O~F~F~) the following ~C~S~S~:
+html
+we may observe this~:
+     ~| capture ~| elements receiving the scroll events
+~-~-~-~-~-~+~-~-~-~-~-~-~-~-~-~+~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-
+ ~O~F~F ~|    true ~| window
+~-~-~-~-~-~+~-~-~-~-~-~-~-~-~-~+~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-
+ ~O~F~F ~|   false ~| window
+~-~-~-~-~-~+~-~-~-~-~-~-~-~-~-~+~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-
+  ~O~N ~|    true ~| window ~+ html ~+ body
+~-~-~-~-~-~+~-~-~-~-~-~-~-~-~-~+~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-
+  ~O~N ~|   false ~| body
+~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-
+~(~Also~, note that pure ~Java~Script "onscroll" attribute might be broken when ~O~N~.~)
+
 <<span class="odocwiki_inlinecode"|click~_outside e>> returns when user clicks outside element <<span class="odocwiki_inlinecode"|e>>~.
 <<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module>> <<a_api subproject="server" text="List" | module Ot_lib.List >> <<span class="ocsforge_color_delimiter"|~:>> <<span class="ocsforge_color_keyword"|sig>><<a_api subproject="server" text=".." | module Ot_lib.List >><<span class="ocsforge_color_keyword"|end>>>>
