@@ -28,6 +28,8 @@ we may observe this~:
   ~O~N ~|   false ~| body
 ~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-
 ~(~Also~, note that pure ~Java~Script "onscroll" attribute might be broken when ~O~N~.~)
+~It~'s useful to listen on html even if it~'s only relevant when ~O~N ~+ capture~=true~,
+because we probably want~, when capture~=true~, to capture the event as early as possible~.
 
 <<span class="odocwiki_inlinecode"|click~_outside e>> returns when user clicks outside element <<span class="odocwiki_inlinecode"|e>>~.
 <<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module>> <<a_api subproject="server" text="List" | module Ot_lib.List >> <<span class="ocsforge_color_delimiter"|~:>> <<span class="ocsforge_color_keyword"|sig>><<a_api subproject="server" text=".." | module Ot_lib.List >><<span class="ocsforge_color_keyword"|end>>>>
