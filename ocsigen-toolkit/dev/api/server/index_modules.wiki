@@ -13,7 +13,8 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Ot_drawer"| module Ot_drawer >> |<<div class="odocwiki_info"|~Drawer menu for mobile and ~Web applications
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Ot_lib"| module Ot_lib >> |<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|parse~_px "~1~1~8~.~6~4px" ~= ~Some ~1~1~8~.~6~4>>
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Ot_lib"| module Ot_lib >> |<<div class="odocwiki_info"|~N~O~T~E~: be careful when using the functions <<span class="odocwiki_inlinecode"|onresizes>>~, <<span class="odocwiki_inlinecode"|window~_scroll>>~, and
+    <<span class="odocwiki_inlinecode"|window~_scrolls>>~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Ot_nodeready"| module Ot_nodeready >> |<<div class="odocwiki_info"|~Wait for a node to be inserted in the ~D~O~M~.
@@ -40,6 +41,7 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Ot_sticky"| module Ot_sticky >> |<<div class="odocwiki_info"|whether computed ~C~S~S attribute "position" equals "sticky"
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Ot_style"| module Ot_style >> ||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Ot_swipe"| module Ot_swipe >> |<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|bind ~~compute~_final~_pos elt>> makes <<span class="odocwiki_inlinecode"|elt>> swipable on touch screens~.
 >>
 |

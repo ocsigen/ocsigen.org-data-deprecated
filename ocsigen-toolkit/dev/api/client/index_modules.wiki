@@ -14,6 +14,7 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Ot_size"| module Ot_size >> ||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Ot_spinner"| module Ot_spinner >> ||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Ot_sticky"| module Ot_sticky >> ||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Ot_style"| module Ot_style >> ||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Ot_swipe"| module Ot_swipe >> ||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Ot_time_picker"| module Ot_time_picker >> ||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Ot_toggle"| module Ot_toggle >> ||
