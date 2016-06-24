@@ -377,8 +377,12 @@
 |@@class="odocwiki_index"@ @@<<a_api text="eprintlf"| value Lwt_io.eprintlf >> ~[<<a_api | module Lwt_io >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="error"| value Lwt_log_core.error >> ~[<<a_api | module Lwt_log_core >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="error_f"| value Lwt_log_core.error_f >> ~[<<a_api | module Lwt_log_core >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="establish_server"| value Lwt_io.establish_server >> ~[<<a_api | module Lwt_io >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|establish~_server ~?fd ~?buffer~_size ~?backlog sockaddr f>> creates
-      a server which will listen for incoming connections~.
+|@@class="odocwiki_index"@ @@<<a_api text="establish_server"| value Lwt_io.establish_server >> ~[<<a_api | module Lwt_io >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|establish~_server ~?fd ~?buffer~_size ~?backlog sockaddr f>> creates a server
+      which listens for incoming connections~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="establish_server_safe"| value Lwt_io.establish_server_safe >> ~[<<a_api | module Lwt_io >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|establish~_server~_safe ~?fd ~?buffer~_size ~?backlog sockaddr f>> creates a
+      server which listens for incoming connections~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="exec"| value Lwt_process.exec >> ~[<<a_api | module Lwt_process >>~]|<<div class="odocwiki_info"|~Executes the given command and returns its exit status~.
