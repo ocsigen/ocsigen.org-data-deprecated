@@ -104,4 +104,5 @@
     (unit -> 'a Lwt.t) -> ('a -> 'b Lwt.t) -> (exn -> 'b Lwt.t) -> 'b Lwt.t
   val backtrace_finalize :
     (exn -> exn) -> (unit -> 'a Lwt.t) -> (unit -> unit Lwt.t) -> 'a Lwt.t
+  val abandon_wakeups : unit -> unit
 end >>
