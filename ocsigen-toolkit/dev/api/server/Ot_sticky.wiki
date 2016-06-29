@@ -9,23 +9,19 @@ whether element is sticky~, either due to ~C~S~S attribute position~:sticky or
     due to position~:sticky polyfill <<span class="odocwiki_inlinecode"|make~_sticky>>
 
 determines how certain values of <<span class="odocwiki_inlinecode"|make~_sticky>> are computed
-    <<span class="odocwiki_inlinecode"|`~Fix>> sets the value to a fixed length when the element get stuck~.
+    <<span class="odocwiki_inlinecode"|`~Fix>> sets the value to a inline length when the element get stuck~.
     ~With <<span class="odocwiki_inlinecode"|`~Leave>> the value is not touched at all~.
     <<span class="odocwiki_inlinecode"|`~Sync>> causes the value to continuously ~(on window scroll~/resize~) be
-    derived from the placeholder other element~, meaning from the placeholder for
-    the element elt~, and from elt fro the placeholder~.
+    derived from the inline other element~, meaning from the inline for
+    the element fixed~, and from fixed for the inline~.
 
-polyfill for the value "sticky" of the ~C~S~S position attribute which is not
-    supported by ~Chrome~. ~It functions by creating a clone ~("placeholder"~) of the
-    designated element and continuously ~(window scroll~/resize~) monitoring the
-    position of the element and the placeholder~.
-    <<span class="odocwiki_inlinecode"|placeholder~_width>>~, <<span class="odocwiki_inlinecode"|placeholder~_height>>~, <<span class="odocwiki_inlinecode"|elt~_width>>~, <<span class="odocwiki_inlinecode"|elt~_height>>
-    determine the size of the placeholder and the element while the element is
-    stuck~; be careful not to create cycles ~(e~.g~. <<span class="odocwiki_inlinecode"|`~Fix>> for both
-    <<span class="odocwiki_inlinecode"|placeholder~_width>> and <<span class="odocwiki_inlinecode"|elt~_width>>~)~.
-    ~Make sure to also apply the ~C~S~S code "position~: sticky" to the element as
-    this function has no effect if "position~: sticky" is supported by the
-    browser ~(~T~O~D~O~)
+position~:sticky polyfill which is not supported by ~Chrome~. ~It functions by
+    making a clone with position~:fixed of the designated element and
+    continuously ~(window scroll~/resize~) monitoring the position of the element
+    and the clone~. ~The contents of the element is shifted back and forth between
+    the two elements~. ~Make sure to also apply the ~C~S~S code "position~: sticky" to
+    the element as this function has no effect if "position~: sticky" is
+    supported by the browser~. ~The supplied element should be a ~D~-element~.
 
 stop element from being sticky
 
@@ -34,4 +30,4 @@ make sure an element gets never out of sight while scrolling by continuously
     the top~/left value~. ~Calls <<span class="odocwiki_inlinecode"|make~_sticky>>~. ~Make sure to also apply the ~C~S~S
     code "position~: sticky" to the element~.
 
-stop element from being in sight ~(and also sticky~)
+stop element from being in sight ~(also stops the sticky polyfill~)
