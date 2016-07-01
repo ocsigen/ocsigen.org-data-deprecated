@@ -149,6 +149,7 @@
   method scrollTop : int Js.prop
   method scrollWidth : int Js.prop
   method select : unit Js.meth
+  method selectionDirection : Js.js_string Js.t Js.prop
   method selectionEnd : int Js.prop
   method selectionStart : int Js.prop
   method setAttribute :
