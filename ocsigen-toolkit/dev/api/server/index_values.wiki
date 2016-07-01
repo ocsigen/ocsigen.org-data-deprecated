@@ -10,6 +10,15 @@
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="dropdown"| value Ot_buttons.dropdown >> ~[<<a_api subproject="server" | module Ot_buttons >>~]||
+|@@ @style="tet-align: left;"@@\\E|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="extract"| value Ot_social_meta.extract >> ~[<<a_api subproject="server" | module Ot_social_meta >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|extract ~?fallback ~?tbl docs>>~:
+    ~Extract social meta tags from docs~, add them in <<span class="odocwiki_inlinecode"|tbl>> and return <<span class="odocwiki_inlinecode"|tbl>>~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="extract_from_string"| value Ot_social_meta.extract_from_string >> ~[<<a_api subproject="server" | module Ot_social_meta >>~]|<<div class="odocwiki_info"|~Same as <<span class="odocwiki_inlinecode"|extract>>~,
+    but with a <<span class="odocwiki_inlinecode"|string>> instead of a <<span class="odocwiki_inlinecode"|~Nethtml~.document list>>
+>>
+|
 |@@ @style="tet-align: left;"@@\\H|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="hcf"| value Ot_popup.hcf >> ~[<<a_api subproject="server" | module Ot_popup >>~]|<<div class="odocwiki_info"|~Section with header~, content and footer~.
 >>
@@ -56,6 +65,8 @@
 |
 |@@ @style="tet-align: left;"@@\\N|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="next"| value Ot_carousel.next >> ~[<<a_api subproject="server" | module Ot_carousel >>~]||
+|@@ @style="tet-align: left;"@@\\O|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="of_string"| value Ot_social_meta.of_string >> ~[<<a_api subproject="server" | module Ot_social_meta >>~]||
 |@@ @style="tet-align: left;"@@\\P|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="preview"| value Ot_picture_uploader.preview >> ~[<<a_api subproject="server" | module Ot_picture_uploader >>~]|<<div class="odocwiki_info"|~Create a img element with no src~, no alt and <<span class="odocwiki_inlinecode"|ot~-pup~-preview>> class~.
 >>
@@ -69,6 +80,8 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="submit"| value Ot_picture_uploader.submit >> ~[<<a_api subproject="server" | module Ot_picture_uploader >>~]|<<div class="odocwiki_info"|~Create a button with <<span class="odocwiki_inlinecode"|ot~-pup~-sumit>> clas
 >>
 |
+|@@ @style="tet-align: left;"@@\\T|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="to_string"| value Ot_social_meta.to_string >> ~[<<a_api subproject="server" | module Ot_social_meta >>~]||
 |@@ @style="tet-align: left;"@@\\W|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="with_spinner"| value Ot_spinner.with_spinner >> ~[<<a_api subproject="server" | module Ot_spinner >>~]|<<div class="odocwiki_info"|~On client side~, <<span class="odocwiki_inlinecode"|with~_spinner th>> returns immediately a spinner
     while ~Lwt thread <<span class="odocwiki_inlinecode"|th>> is not finished~, that will automatically

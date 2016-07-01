@@ -35,6 +35,10 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Ot_size"| module Ot_size >> |<<div class="odocwiki_info"|~Size functions for ~Dom elements~.
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Ot_social_meta"| module Ot_social_meta >> |<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|extract ~?fallback ~?tbl docs>>~:
+    ~Extract social meta tags from docs~, add them in <<span class="odocwiki_inlinecode"|tbl>> and return <<span class="odocwiki_inlinecode"|tbl>>~.
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Ot_spinner"| module Ot_spinner >> |<<div class="odocwiki_info"|~Spinner widget
 >>
 |
