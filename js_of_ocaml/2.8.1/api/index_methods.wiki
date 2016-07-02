@@ -1618,8 +1618,11 @@
 |@@class="odocwiki_index"@ @@<<a_api text="selected"| method Dom_html.optionElement#selected >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="selectedIndex"| method Dom_html.selectElement#selectedIndex >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="selectionDirection"| method Dom_html.textAreaElement#selectionDirection >> ~[<<a_api | module Dom_html >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="selectionDirection"| method Dom_html.inputElement#selectionDirection >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="selectionEnd"| method Dom_html.textAreaElement#selectionEnd >> ~[<<a_api | module Dom_html >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="selectionEnd"| method Dom_html.inputElement#selectionEnd >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="selectionStart"| method Dom_html.textAreaElement#selectionStart >> ~[<<a_api | module Dom_html >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="selectionStart"| method Dom_html.inputElement#selectionStart >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="send"| method XmlHttpRequest.xmlHttpRequest#send >> ~[<<a_api | module XmlHttpRequest >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="send"| method WebSockets.webSocket#send >> ~[<<a_api | module WebSockets >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="send_blob"| method XmlHttpRequest.xmlHttpRequest#send_blob >> ~[<<a_api | module XmlHttpRequest >>~]||

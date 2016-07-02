@@ -187,7 +187,7 @@
       method unshift_3 : 'a -> 'a -> 'a -> int Js.meth
       method unshift_4 : 'a -> 'a -> 'a -> 'a -> int Js.meth
     end
-  val object_keys : 'a Js.t -> Js.js_string Js.js_array Js.t
+  val object_keys : 'a Js.t -> Js.js_string Js.t Js.js_array Js.t
   val array_empty : 'a Js.js_array Js.t Js.constr
   val array_length : (int -> 'a Js.js_array Js.t) Js.constr
   val array_get : 'a #Js.js_array Js.t -> int -> 'a Js.optdef
