@@ -63,7 +63,10 @@
 |
 |@@class="odocwiki_index"@ @@<<a_api text="accum_s"| value Lwt_react.S.accum_s >> ~[<<a_api | module Lwt_react.S >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="accum_s"| value Lwt_react.E.accum_s >> ~[<<a_api | module Lwt_react.E >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="add"| value Lwt_pqueue.S.add >> ~[<<a_api | module Lwt_pqueue.S >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="add"| value Lwt_pqueue.S.add >> ~[<<a_api | module Lwt_pqueue.S >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|add e q>> evaluates to a new priority queue~, which contains all the
+        elements of <<span class="odocwiki_inlinecode"|q>>~, and the additional element <<span class="odocwiki_inlinecode"|e>>~.
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api text="add_hook"| value Lwt_switch.add_hook >> ~[<<a_api | module Lwt_switch >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|add~_hook switch f>> registers <<span class="odocwiki_inlinecode"|f>> so it will be called when
       <<a_api | val Lwt_switch.turn_off >> is invoked~.
 >>
@@ -367,7 +370,9 @@
 |@@ @style="tet-align: left;"@@\\E|
 |@@class="odocwiki_index"@ @@<<a_api text="embed_socket"| value Lwt_ssl.embed_socket >> ~[<<a_api | module Lwt_ssl >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="embed_uninitialized_socket"| value Lwt_ssl.embed_uninitialized_socket >> ~[<<a_api | module Lwt_ssl >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="empty"| value Lwt_pqueue.S.empty >> ~[<<a_api | module Lwt_pqueue.S >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="empty"| value Lwt_pqueue.S.empty >> ~[<<a_api | module Lwt_pqueue.S >>~]|<<div class="odocwiki_info"|~The empty priority queue~.
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api text="enter_iter_hooks"| value Lwt_main.enter_iter_hooks >> ~[<<a_api | module Lwt_main >>~]|<<div class="odocwiki_info"|~Functions that are called before the main iteration~.
 >>
 |
@@ -484,7 +489,10 @@
 |@@class="odocwiki_index"@ @@<<a_api text="find_map_s"| value Lwt_stream.find_map_s >> ~[<<a_api | module Lwt_stream >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|find f s>> find and map at the same time~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api text="find_min"| value Lwt_pqueue.S.find_min >> ~[<<a_api | module Lwt_pqueue.S >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="find_min"| value Lwt_pqueue.S.find_min >> ~[<<a_api | module Lwt_pqueue.S >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|find~_min q>> evaluates to the minimum element of <<span class="odocwiki_inlinecode"|q>> if it is not empty~,
+        and raises <<span class="odocwiki_inlinecode"|~Not~_found>> otherwise~.
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api text="find_node_l"| value Lwt_sequence.find_node_l >> ~[<<a_api | module Lwt_sequence >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|find~_node~_l f s>> returns the first node of <<span class="odocwiki_inlinecode"|s>> starting from the left
       that satisfies <<span class="odocwiki_inlinecode"|f>> or raises <<span class="odocwiki_inlinecode"|~Not~_found>> if none exists~.
 >>
@@ -775,7 +783,9 @@
 |@@class="odocwiki_index"@ @@<<a_api text="is_closed"| value Lwt_stream.is_closed >> ~[<<a_api | module Lwt_stream >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|is~_closed st>> returns whether the given stream has been closed~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api text="is_empty"| value Lwt_pqueue.S.is_empty >> ~[<<a_api | module Lwt_pqueue.S >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="is_empty"| value Lwt_pqueue.S.is_empty >> ~[<<a_api | module Lwt_pqueue.S >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|is~_empty q>> evaluates to <<span class="odocwiki_inlinecode"|true>> iff <<span class="odocwiki_inlinecode"|q>> is empty~.
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api text="is_empty"| value Lwt_stream.is_empty >> ~[<<a_api | module Lwt_stream >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|is~_empty st>> returns whether the given stream is empty~.
 >>
 |
@@ -926,7 +936,10 @@
       string
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api text="lookup_min"| value Lwt_pqueue.S.lookup_min >> ~[<<a_api | module Lwt_pqueue.S >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="lookup_min"| value Lwt_pqueue.S.lookup_min >> ~[<<a_api | module Lwt_pqueue.S >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|lookup~_min q>> evaluates to <<span class="odocwiki_inlinecode"|~Some e>>~, where <<span class="odocwiki_inlinecode"|e>> is the minimum element
+        of <<span class="odocwiki_inlinecode"|q>>~, if <<span class="odocwiki_inlinecode"|q>> is not empty~, and evaluates to <<span class="odocwiki_inlinecode"|~None>> otherwise~.
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api text="lseek"| value Lwt_unix.LargeFile.lseek >> ~[<<a_api | module Lwt_unix.LargeFile >>~]|<<div class="odocwiki_info"|~Wrapper for <<span class="odocwiki_inlinecode"|~Unix~.~Large~File~.lseek>>
 >>
 |
@@ -1388,7 +1401,10 @@
 |@@class="odocwiki_index"@ @@<<a_api text="remove"| value Lwt_sequence.remove >> ~[<<a_api | module Lwt_sequence >>~]|<<div class="odocwiki_info"|~Removes a node from the sequence it is part of~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api text="remove_min"| value Lwt_pqueue.S.remove_min >> ~[<<a_api | module Lwt_pqueue.S >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="remove_min"| value Lwt_pqueue.S.remove_min >> ~[<<a_api | module Lwt_pqueue.S >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|remove~_min q>> evaluates to a new priority queue~, which contains all the
+        elements of <<span class="odocwiki_inlinecode"|q>> except for its minimum element~.
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api text="rename"| value Lwt_unix.rename >> ~[<<a_api | module Lwt_unix >>~]|<<div class="odocwiki_info"|~Wrapper for <<span class="odocwiki_inlinecode"|~Unix~.rename>>
 >>
 |
@@ -1575,7 +1591,9 @@
 |@@class="odocwiki_index"@ @@<<a_api text="simple_init"| value Lwt_preemptive.simple_init >> ~[<<a_api | module Lwt_preemptive >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|simple~_init ~(~)>> does a //simple initialization//~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api text="size"| value Lwt_pqueue.S.size >> ~[<<a_api | module Lwt_pqueue.S >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="size"| value Lwt_pqueue.S.size >> ~[<<a_api | module Lwt_pqueue.S >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|size q>> evaluates to the number of elements in <<span class="odocwiki_inlinecode"|q>>~.
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api text="sleep"| value Lwt_unix.sleep >> ~[<<a_api | module Lwt_unix >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|sleep d>> is a thread that remains suspended for <<span class="odocwiki_inlinecode"|d>> seconds
       and then terminates~.
 >>
@@ -1755,7 +1773,10 @@
 >>
 |
 |@@ @style="tet-align: left;"@@\\U|
-|@@class="odocwiki_index"@ @@<<a_api text="union"| value Lwt_pqueue.S.union >> ~[<<a_api | module Lwt_pqueue.S >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="union"| value Lwt_pqueue.S.union >> ~[<<a_api | module Lwt_pqueue.S >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|union q q~'>> evaluates to a new priority queue~, which contains all the
+        elements of both <<span class="odocwiki_inlinecode"|q>> and <<span class="odocwiki_inlinecode"|q~'>>~.
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api text="unix_file_descr"| value Lwt_unix.unix_file_descr >> ~[<<a_api | module Lwt_unix >>~]|<<div class="odocwiki_info"|~Returns the underlying unix **file descriptor**~.
 >>
 |

@@ -67,7 +67,9 @@
 |@@class="odocwiki_index"@ @@<<a_api text="Lwt_pool"| module Lwt_pool >> |<<div class="odocwiki_info"|~External resource pools~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api text="Lwt_pqueue"| module Lwt_pqueue >> ||
+|@@class="odocwiki_index"@ @@<<a_api text="Lwt_pqueue"| module Lwt_pqueue >> |<<div class="odocwiki_info"|<<span class="odocwiki_deprecated"|~Functional priority queues~.
+>>>>
+|
 |@@class="odocwiki_index"@ @@<<a_api text="Lwt_preemptive"| module Lwt_preemptive >> |<<div class="odocwiki_info"|~This module allows to mix preemptive threads with <<span class="odocwiki_inlinecode"|~Lwt>>
     cooperative threads~.
 >>
@@ -107,7 +109,9 @@
 |
 |@@ @style="tet-align: left;"@@\\M|
 |@@class="odocwiki_index"@ @@<<a_api text="Make"| module Lwt_throttle.Make >> ~[<<a_api | module Lwt_throttle >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="Make"| module Lwt_pqueue.Make >> ~[<<a_api | module Lwt_pqueue >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="Make"| module Lwt_pqueue.Make >> ~[<<a_api | module Lwt_pqueue >>~]|<<div class="odocwiki_info"|~Generates priority queue types from ordered types~.
+>>
+|
 |@@ @style="tet-align: left;"@@\\P|
 |@@class="odocwiki_index"@ @@<<a_api text="Pa_lwt"| module Pa_lwt >> |<<div class="odocwiki_info"|~Syntactic sugars for lwt
 >>
