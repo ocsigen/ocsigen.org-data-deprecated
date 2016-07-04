@@ -56,11 +56,20 @@
 
 ===@@id="3_Redirections"@@~Redirections===
 
-<<pre class="ocsforge_color odocwiki_code" id="TYPEredirection"|<<span class="ocsforge_color_keyword"|type>> <<span class="odocwiki_name"|redirection>> <<span class="ocsforge_color_delimiter"|~=>> <<span class="odocwiki_type"|\\  [ `Close\\  | `Dev_null\\  | `FD_copy of <<span class="ocsforge_color_uid"|Unix>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|file_descr>>\\  | `FD_move of <<span class="ocsforge_color_uid"|Unix>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|file_descr>>\\  | `Keep ]>> >><<div class="odocwiki_info"|~A file descriptor redirection~. ~It describes how standard file
-    descriptors are redirected in the child process~.
->>
+<<pre class="ocsforge_color odocwiki_code" id="TYPEredirection"|<<span class="ocsforge_color_keyword"|type>> <<span class="odocwiki_name"|redirection>> <<span class="ocsforge_color_delimiter"|~=>> <<span class="odocwiki_type"|\\  [ `Close\\  | `Dev_null\\  | `FD_copy of <<span class="ocsforge_color_uid"|Unix>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|file_descr>>\\  | `FD_move of <<span class="ocsforge_color_uid"|Unix>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|file_descr>>\\  | `Keep ]>> >><<div class="odocwiki_info"|~File descriptor redirections~. ~These are used with the <<span class="odocwiki_inlinecode"|~~stdin>>~, <<span class="odocwiki_inlinecode"|~~stdout>>~,
+    and <<span class="odocwiki_inlinecode"|~~stderr>> arguments below to specify how the standard file descriptors
+    should be redirected in the child process~.
 
-~Note~: all optional redirection arguments default to <<span class="odocwiki_inlinecode"|`~Keep>>
+
+* <<span class="odocwiki_inlinecode"|`~Keep>>~: point to the same file as in the parent~.
+* <<span class="odocwiki_inlinecode"|`~Dev~_null>>~: redirect to <<span class="odocwiki_inlinecode"|~/dev~/null>> ~(~P~O~S~I~X~) or <<span class="odocwiki_inlinecode"|nul>> ~(~Win~3~2~)~.
+* <<span class="odocwiki_inlinecode"|`~Close>>~: close the file descriptor~.
+* <<span class="odocwiki_inlinecode"|`~F~D~_copy fd>> redirect to the file pointed to by <<span class="odocwiki_inlinecode"|fd>>~. <<span class="odocwiki_inlinecode"|fd>> remains open~.
+* <<span class="odocwiki_inlinecode"|`~F~D~_move fd>> redirect to the file pointed to by <<span class="odocwiki_inlinecode"|fd>>~. <<span class="odocwiki_inlinecode"|fd>> is then
+      closed~.
+
+    ~All optional redirection arguments default to <<span class="odocwiki_inlinecode"|`~Keep>>~.
+>>
 
 
 ===@@id="3_Executing"@@~Executing===

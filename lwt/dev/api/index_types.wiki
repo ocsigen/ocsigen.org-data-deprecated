@@ -115,7 +115,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="process_status"| type Lwt_unix.process_status >> ~[<<a_api | module Lwt_unix >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="protocol_entry"| type Lwt_unix.protocol_entry >> ~[<<a_api | module Lwt_unix >>~]||
 |@@ @style="tet-align: left;"@@\\R|
-|@@class="odocwiki_index"@ @@<<a_api text="redirection"| type Lwt_process.redirection >> ~[<<a_api | module Lwt_process >>~]|<<div class="odocwiki_info"|~A file descriptor redirection~.
+|@@class="odocwiki_index"@ @@<<a_api text="redirection"| type Lwt_process.redirection >> ~[<<a_api | module Lwt_process >>~]|<<div class="odocwiki_info"|~File descriptor redirections~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="resource_usage"| type Lwt_unix.resource_usage >> ~[<<a_api | module Lwt_unix >>~]|<<div class="odocwiki_info"|~Resource usages
