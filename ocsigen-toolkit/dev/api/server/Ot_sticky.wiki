@@ -33,5 +33,5 @@ make sure an element gets never out of sight while scrolling by continuously
     probably want to wrap your element in a dedicated div~. ~(~It has to be the
     parent and not the element itself because when the element floats ~(is in its
     fixed state~) we can~'t use its position for computing the right values~.
-
-stop element from being in sight ~(also stops the sticky polyfill~)
+    ~Returns a function by which the <<span class="odocwiki_inlinecode"|keep~_in~_sight>> functionality can be
+    stopped~.
