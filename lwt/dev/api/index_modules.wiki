@@ -113,10 +113,10 @@
 >>
 |
 |@@ @style="tet-align: left;"@@\\P|
-|@@class="odocwiki_index"@ @@<<a_api text="Pa_lwt"| module Pa_lwt >> |<<div class="odocwiki_info"|~Syntactic sugars for lwt
+|@@class="odocwiki_index"@ @@<<a_api text="Pa_lwt"| module Pa_lwt >> |<<div class="odocwiki_info"|~Syntactic sugars for ~Lwt ~(deprecated~)
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api text="Pa_lwt_log"| module Pa_lwt_log >> |<<div class="odocwiki_info"|~Logging facility
+|@@class="odocwiki_index"@ @@<<a_api text="Pa_lwt_log"| module Pa_lwt_log >> |<<div class="odocwiki_info"|~Special syntax for the logging facility ~(deprecated~)
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="Ppx_lwt"| module Ppx_lwt >> |<<div class="odocwiki_info"|~Ppx syntax extension for ~Lwt

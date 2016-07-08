@@ -1,5 +1,5 @@
 =Module <<a_api_type | module Pa_lwt >> =
-<<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module>> <<span class="ocsforge_color_uid"|<<span class="ocsforge_color_uid"|Pa_lwt>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="ocsforge_color_keyword"|sig>><<a_api text=".." | module Pa_lwt >><<span class="ocsforge_color_keyword"|end>>>>~Syntactic sugars for lwt
+<<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module>> <<span class="ocsforge_color_uid"|<<span class="ocsforge_color_uid"|Pa_lwt>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="ocsforge_color_keyword"|sig>><<a_api text=".." | module Pa_lwt >><<span class="ocsforge_color_keyword"|end>>>>~Syntactic sugars for ~Lwt ~(deprecated~)
 
 ----
 

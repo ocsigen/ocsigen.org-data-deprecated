@@ -27,15 +27,15 @@
 ===[[Lwt_sys|Lwt_sys]]
 ==~Reactive programming helpers
 ===[[Lwt_react|Lwt_react]]
-==caml~4 syntax extensions
-===[[Pa_lwt|Pa_lwt]]
-===[[Pa_lwt_log|Pa_lwt_log]]
-==ppx syntax extension
+==~P~P~X syntax extension
 ===[[Ppx_lwt|Ppx_lwt]]
 ==~Miscellaneous
 ===[[Lwt_glib|Lwt_glib]]
 ===[[Lwt_preemptive|Lwt_preemptive]]
 ===[[Lwt_ssl|Lwt_ssl]]
+==~Camlp~4 syntax extensions
+===[[Pa_lwt|Pa_lwt]]
+===[[Pa_lwt_log|Pa_lwt_log]]
 ==~Index
 === <<a_api text="Index of types" | index types >>
 === <<a_api text="Index of exceptions" | index exceptions >>
