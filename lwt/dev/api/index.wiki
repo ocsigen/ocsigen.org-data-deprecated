@@ -37,7 +37,7 @@ any external package~.
 |<<a_api | module Lwt_sequence >>|<<div class="odocwiki_info"|~Mutable sequence of elements
 >>
 |
-|<<a_api | module Lwt_pqueue >>|<<div class="odocwiki_info"|<<span class="odocwiki_deprecated"|~Functional priority queues~.
+|<<a_api | module Lwt_pqueue >>|<<div class="odocwiki_info"|<<span class="odocwiki_deprecated"|~Functional priority queues ~(deprecated~)~.
 >>>>
 |
 |<<a_api | module Lwt_stream >>|<<div class="odocwiki_info"|~Data streams

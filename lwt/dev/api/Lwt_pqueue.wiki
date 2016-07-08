@@ -7,7 +7,7 @@
     or
     [[ http://ocaml-batteries-team.github.io/batteries-included/hdoc2/BatHeap.html|
     ~Batteries]]~.
-~Functional priority queues~.
+~Functional priority queues ~(deprecated~)~.
 
 
     ~A priority queue maintains~, in the abstract sense~, a set of elements in

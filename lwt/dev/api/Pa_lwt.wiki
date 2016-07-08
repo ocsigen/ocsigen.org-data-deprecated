@@ -133,6 +133,11 @@
     when needed~.
 
 
+    ~Note also that <<span class="odocwiki_inlinecode"|finally>> is evaluated //before// <<span class="odocwiki_inlinecode"|with>> if an exception is
+    raised~. ~This is not the case with the newer ~P~P~X extension~: there~, <<span class="odocwiki_inlinecode"|finally>>
+    is always evaluated last~.
+
+
     ~The construction <<span class="odocwiki_inlinecode"|try~_lwt ~<expr~>>> just catch regular exception
     into lwt exception~. i~.e~. it is the same as <<span class="odocwiki_inlinecode"|catch ~(fun ~_ ~-~> ~<expr~>~) fail>>~.
 

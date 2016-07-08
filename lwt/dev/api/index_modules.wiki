@@ -67,7 +67,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="Lwt_pool"| module Lwt_pool >> |<<div class="odocwiki_info"|~External resource pools~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api text="Lwt_pqueue"| module Lwt_pqueue >> |<<div class="odocwiki_info"|<<span class="odocwiki_deprecated"|~Functional priority queues~.
+|@@class="odocwiki_index"@ @@<<a_api text="Lwt_pqueue"| module Lwt_pqueue >> |<<div class="odocwiki_info"|<<span class="odocwiki_deprecated"|~Functional priority queues ~(deprecated~)~.
 >>>>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="Lwt_preemptive"| module Lwt_preemptive >> |<<div class="odocwiki_info"|~This module allows to mix preemptive threads with <<span class="odocwiki_inlinecode"|~Lwt>>
