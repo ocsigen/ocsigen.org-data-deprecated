@@ -6,10 +6,10 @@
 ===[[Lwt_mutex|Lwt_mutex]]
 ===[[Lwt_mvar|Lwt_mvar]]
 ===[[Lwt_pool|Lwt_pool]]
-===[[Lwt_sequence|Lwt_sequence]]
-===[[Lwt_pqueue|Lwt_pqueue]]
 ===[[Lwt_stream|Lwt_stream]]
 ===[[Lwt_switch|Lwt_switch]]
+===[[Lwt_sequence|Lwt_sequence]]
+===[[Lwt_pqueue|Lwt_pqueue]]
 ==~Logger
 ===[[Lwt_log_core|Lwt_log_core]]
 ==~Unix bindings

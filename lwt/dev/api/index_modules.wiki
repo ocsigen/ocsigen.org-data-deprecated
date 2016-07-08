@@ -83,7 +83,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="Lwt_result"| module Lwt_result >> |<<div class="odocwiki_info"|~Module <<span class="odocwiki_inlinecode"|~Lwt~_result>>~: explicit error handling
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api text="Lwt_sequence"| module Lwt_sequence >> |<<div class="odocwiki_info"|~Mutable sequence of elements
+|@@class="odocwiki_index"@ @@<<a_api text="Lwt_sequence"| module Lwt_sequence >> |<<div class="odocwiki_info"|~Mutable sequence of elements ~(deprecated~)
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="Lwt_ssl"| module Lwt_ssl >> |<<div class="odocwiki_info"|~O~Caml~-~S~S~L integration

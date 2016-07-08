@@ -34,17 +34,17 @@ any external package~.
 |<<a_api | module Lwt_pool >>|<<div class="odocwiki_info"|~External resource pools~.
 >>
 |
-|<<a_api | module Lwt_sequence >>|<<div class="odocwiki_info"|~Mutable sequence of elements
->>
-|
-|<<a_api | module Lwt_pqueue >>|<<div class="odocwiki_info"|<<span class="odocwiki_deprecated"|~Functional priority queues ~(deprecated~)~.
->>>>
-|
 |<<a_api | module Lwt_stream >>|<<div class="odocwiki_info"|~Data streams
 >>
 |
 |<<a_api | module Lwt_switch >>|<<div class="odocwiki_info"|~Lwt switches
 >>
+|
+|<<a_api | module Lwt_sequence >>|<<div class="odocwiki_info"|~Mutable sequence of elements ~(deprecated~)
+>>
+|
+|<<a_api | module Lwt_pqueue >>|<<div class="odocwiki_info"|<<span class="odocwiki_deprecated"|~Functional priority queues ~(deprecated~)~.
+>>>>
 |
 
 
