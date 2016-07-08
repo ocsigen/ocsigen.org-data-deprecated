@@ -17,9 +17,9 @@
       following variables~:
 
 
-* <<span class="odocwiki_inlinecode"|date>> which will be replaced with the current date
-* <<span class="odocwiki_inlinecode"|milliseconds>> which will be replaced by the fractionnal part of the current unix
-        time
+* <<span class="odocwiki_inlinecode"|date>>~, which will be replaced with the current local date and time~,
+* <<span class="odocwiki_inlinecode"|milliseconds>>~, which will be replaced by the fractional part of the current ~Unix
+        time~, to millisecond accuracy~.
 
       ~For example~:
 * <<span class="odocwiki_inlinecode"|"~$~(date~) ~$~(name~)~[~$~(pid~)~]~: ~$~(message~)">>
