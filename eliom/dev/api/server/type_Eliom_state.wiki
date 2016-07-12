@@ -333,7 +333,7 @@
     table:'a Eliom_state.volatile_table -> unit -> unit
   val create_persistent_table :
     scope:Eliom_common.user_scope ->
-    ?secure:bool -> string -> 'a Eliom_state.persistent_table
+    ?secure:bool -> string -> 'a Eliom_state.persistent_table Lwt.t
   val get_persistent_data :
     table:'a Eliom_state.persistent_table ->
     unit -> 'a Eliom_state.state_data Lwt.t
