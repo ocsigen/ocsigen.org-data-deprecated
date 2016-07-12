@@ -3,9 +3,9 @@
 
 ----
 
-~There are currently two implementations of this module~,
-   one using a ~D~B~M database~, and the other using ~S~Q~L~I~T~E~.
-   ~Link the one your want with your program~.
+~There are currently three implementations of this module~,
+   one using a ~D~B~M database~, on the ~Postgre~S~Q~L database~,
+   and one using ~S~Q~L~I~T~E~. ~Link the one your want with your program~.
 
 
 ==@@id="2_Persistentreferences"@@~Persistent references==
@@ -18,7 +18,7 @@
 <<pre class="ocsforge_color odocwiki_code" id="TYPEstore"|<<span class="ocsforge_color_keyword"|type>> <<span class="odocwiki_name"|store>>>><<div class="odocwiki_info"|~Data are divided into stores~.
     ~Create one store for your project~, where you will save all your data~.
 >>
-<<pre id="VALopen_store" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|open~_store>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|string <<span class="ocsforge_color_delimiter"| -> >> <<a_api text="store" | type Ocsipersist.store >>>>>><<div class="odocwiki_info"|~Open a store ~(and create it if it does not exist~)
+<<pre id="VALopen_store" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|open~_store>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|string <<span class="ocsforge_color_delimiter"| -> >> <<a_api text="store" | type Ocsipersist.store >> <<span class="ocsforge_color_uid"|Lwt>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>>>>>><<div class="odocwiki_info"|~Open a store ~(and create it if it does not exist~)
 >>
 <<pre id="VALmake_persistent" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|make~_persistent>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|\\  <<span class="ocsforge_color_label"| store: >><<a_api text="store" | type Ocsipersist.store >> <<span class="ocsforge_color_delimiter"| -> >>\\  <<span class="ocsforge_color_label"| name: >>string <<span class="ocsforge_color_delimiter"| -> >> <<span class="ocsforge_color_label"| default: >>'a <<span class="ocsforge_color_delimiter"| -> >> 'a <<a_api text="t" | type Ocsipersist.t >> <<span class="ocsforge_color_uid"|Lwt>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>>>>>><<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|make~_persistent store name default>> find a persistent value
     named <<span class="odocwiki_inlinecode"|name>> in store <<span class="odocwiki_inlinecode"|store>>
@@ -42,7 +42,7 @@
 >>
 <<pre id="VALtable_name" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|table~_name>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|'value <<a_api text="table" | type Ocsipersist.table >> <<span class="ocsforge_color_delimiter"| -> >> string <<span class="ocsforge_color_uid"|Lwt>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>>>>>><<div class="odocwiki_info"|returns the name of the table
 >>
-<<pre id="VALopen_table" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|open~_table>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|string <<span class="ocsforge_color_delimiter"| -> >> 'value <<a_api text="table" | type Ocsipersist.table >>>>>><<div class="odocwiki_info"|~Open a table ~(and create it if it does not exist~)
+<<pre id="VALopen_table" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|open~_table>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|string <<span class="ocsforge_color_delimiter"| -> >> 'value <<a_api text="table" | type Ocsipersist.table >> <<span class="ocsforge_color_uid"|Lwt>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>>>>>><<div class="odocwiki_info"|~Open a table ~(and create it if it does not exist~)
 >>
 <<pre id="VALfind" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|find>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|'value <<a_api text="table" | type Ocsipersist.table >> <<span class="ocsforge_color_delimiter"| -> >> string <<span class="ocsforge_color_delimiter"| -> >> 'value <<span class="ocsforge_color_uid"|Lwt>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>>>>>><<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|find table key>> gives the value associated to <<span class="odocwiki_inlinecode"|key>>~.
     ~Fails with <<span class="odocwiki_inlinecode"|~Not~_found>> if not found~.

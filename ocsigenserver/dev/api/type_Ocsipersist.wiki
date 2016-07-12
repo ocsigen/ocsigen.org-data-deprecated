@@ -1,7 +1,7 @@
 <<code language="ocaml" | sig
   type 'a t
   type store
-  val open_store : string -> Ocsipersist.store
+  val open_store : string -> Ocsipersist.store Lwt.t
   val make_persistent :
     store:Ocsipersist.store ->
     name:string -> default:'a -> 'a Ocsipersist.t Lwt.t
@@ -15,7 +15,7 @@
   val set : 'a Ocsipersist.t -> 'a -> unit Lwt.t
   type 'value table
   val table_name : 'value Ocsipersist.table -> string Lwt.t
-  val open_table : string -> 'value Ocsipersist.table
+  val open_table : string -> 'value Ocsipersist.table Lwt.t
   val find : 'value Ocsipersist.table -> string -> 'value Lwt.t
   val add : 'value Ocsipersist.table -> string -> 'value -> unit Lwt.t
   val replace_if_exists :
