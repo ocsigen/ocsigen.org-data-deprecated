@@ -15,7 +15,7 @@ type of a graphic context
     information on the desired graphics mode~, the graphics window
     size~, and so on~. ~Specification can be found at
     http~:~/~/www~.w~3schools~.com~/jsref~/met~_win~_open~.asp~.
-    ~Note~: an extra specification is availble~, "target"~,
+    ~Note~: an extra specification is available~, "target"~,
     to specifies the target attribute or the name of the window~.
 >>
 <<pre id="VALopen_canvas" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|open~_canvas>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<a_api text="Dom_html.canvasElement" | class type Dom_html.canvasElement >> <<a_api text="Js.t" | type Js.t >> <<span class="ocsforge_color_delimiter"| -> >> unit>>>><<div class="odocwiki_info"|use a canvas to setup the current context
