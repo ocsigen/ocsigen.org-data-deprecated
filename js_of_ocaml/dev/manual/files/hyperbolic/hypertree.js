@@ -1226,8 +1226,9 @@
       return channel}
     function caml_ml_out_channels_list()
      {var l=0;
-      for(var c in caml_ml_out_channels)
-       if(caml_ml_out_channels[c].opened)l=[0,caml_ml_out_channels[c],l];
+      for(var c=0;c<caml_ml_out_channels.length;c++)
+       if(caml_ml_out_channels[c]&&caml_ml_out_channels[c].opened)
+        l=[0,caml_ml_out_channels[c],l];
       return l}
     function caml_ml_output(oc,buffer,offset,len)
      {if(!oc.opened)caml_raise_sys_error("Cannot output to a closed channel");
