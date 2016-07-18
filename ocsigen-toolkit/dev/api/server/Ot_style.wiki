@@ -1,3 +1,7 @@
 =Module <<a_api_type subproject="server" | module Ot_style >> =
-<<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module>> <<span class="ocsforge_color_uid"|<<span class="ocsforge_color_uid"|Ot_style>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="ocsforge_color_keyword"|sig>><<a_api subproject="server" text=".." | module Ot_style >><<span class="ocsforge_color_keyword"|end>>>>
+<<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module>> <<span class="ocsforge_color_uid"|<<span class="ocsforge_color_uid"|Ot_style>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="ocsforge_color_keyword"|sig>><<a_api subproject="server" text=".." | module Ot_style >><<span class="ocsforge_color_keyword"|end>>>>~This module is an interface to get~Computed~Style
+
 ----
+
+whether an element is currently invisible in the ~D~O~M ~(not the screen~)~;
+    you might want to do a <<span class="odocwiki_inlinecode"|~Ot~_nodeready~.nodeready>> before~.

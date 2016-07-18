@@ -20,3 +20,5 @@ the number of spinners currently spinning
 
 <<span class="odocwiki_inlinecode"|onloaded>> is an event that fires when all spinners have finished loading~.
     ~This can occur multiple times~.
+
+do an action once no spinners are spinning ~(could be right away~)

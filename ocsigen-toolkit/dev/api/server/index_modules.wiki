@@ -45,7 +45,9 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Ot_sticky"| module Ot_sticky >> |<<div class="odocwiki_info"|whether computed ~C~S~S attribute "position" equals "sticky"
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Ot_style"| module Ot_style >> ||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Ot_style"| module Ot_style >> |<<div class="odocwiki_info"|~This module is an interface to get~Computed~Style
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Ot_swipe"| module Ot_swipe >> |<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|bind ~~compute~_final~_pos elt>> makes <<span class="odocwiki_inlinecode"|elt>> swipable on touch screens~.
 >>
 |

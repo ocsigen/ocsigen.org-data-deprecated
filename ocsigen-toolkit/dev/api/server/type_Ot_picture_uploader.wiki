@@ -13,10 +13,14 @@
        unit Eliom_service.ocaml)
       Eliom_service.t
   val input :
+    ?a:[< Html_types.label_attrib > `Class ] Eliom_content.Html.attrib list ->
     [< Html_types.label_content_fun ] Eliom_content.Html.elt list ->
     [> `Input ] Eliom_content.Html.elt * [> `Label ] Eliom_content.Html.elt
-  val preview : unit -> [> `Img ] Eliom_content.Html.elt
+  val preview :
+    ?a:[< Html_types.img_attrib > `Class ] Eliom_content.Html.attrib list ->
+    unit -> [> `Img ] Eliom_content.Html.elt
   val submit :
+    ?a:[< Html_types.button_attrib > `Class ] Eliom_content.Html.attrib list ->
     [< Html_types.button_content ] Eliom_content.Html.elt list ->
     [> `Button ] Eliom_content.Html.elt
   val mk_service :
@@ -24,8 +28,12 @@
   val mk_form :
     ?after_submit:(unit -> unit Lwt.t) ->
     ?crop:float option ->
-    ?input:[< Html_types.label_content_fun ] Eliom_content.Html.elt list ->
-    ?submit:[< Html_types.button_content_fun ] Eliom_content.Html.elt list ->
+    ?input:[< Html_types.label_attrib > `Class ] Eliom_content.Html.attrib
+           list *
+           [< Html_types.label_content_fun ] Eliom_content.Html.elt list ->
+    ?submit:[< Html_types.button_attrib > `Class ] Eliom_content.Html.attrib
+            list *
+            [< Html_types.button_content_fun ] Eliom_content.Html.elt list ->
     'a Ot_picture_uploader.service ->
     'a -> [> `Form ] Eliom_content.Html.elt Lwt.t
 end >>

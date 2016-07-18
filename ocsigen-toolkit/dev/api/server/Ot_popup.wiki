@@ -20,8 +20,14 @@
     <<span class="odocwiki_inlinecode"|gen~_content>> is a function taking the function closing the popup as
     parameter~, and returning the popup content~.
     ~For <<span class="odocwiki_inlinecode"|ios~_scroll~_pos~_fix>> see <<span class="odocwiki_inlinecode"|~Ot~_drawer~.drawer>>~.
+    ~If <<span class="odocwiki_inlinecode"|disable~_background>> ~(default~: true~) is true then the tab~Index of all
+    the elements not in the popup are set to ~-~1 with the effect that they can
+    not be selected using the ~T~A~B key~. ~When the popup is closed their old
+    tab~Index value is restored~. ~Note~, that some elements that are tabbable in
+    some browsers but not by specification ~(scrollable div~'s~) are not affected~.
     ~If <<span class="odocwiki_inlinecode"|setup~_form>> ~(default~: false~) is true then the popup is scanned for a
-    form~-element and <<span class="odocwiki_inlinecode"|setup~_form~_auto>> is applied~.
+    form element and <<span class="odocwiki_inlinecode"|setup~_tabcycle~_auto>> is applied~. ~If no form element is
+    found~, the whole popup is scanned for form elements~.
 
 <<span class="odocwiki_inlinecode"|ask~_question ~?a ~?a~_hcf question buttons>>
     ~Prompt a user~, wait for its response and return the selected value~.
@@ -40,11 +46,12 @@
 
 ~An ~H~T~M~L element which can be selected by pressing the tab key
 
-<<span class="odocwiki_inlinecode"|setup~_form>> makes a form in a popup more user~-friendly~, by focussing on
+<<span class="odocwiki_inlinecode"|setup~_tabcycle>> makes a form in a popup more user~-friendly~, by focussing on
     the first element of the form and forcing tab keys to cycle through the
     elements of the form only ~(and not the elements of the page behind the
-    popup~)~. ~As arguments in requires the first~, the second~, the next to last~,
-    and the last element of the form~.
+    popup~)~. ~Note~: you get proper tab cycles only for three or more elements! ~The
+    list does not need to be complete~, as only the first~, the second~, the next
+    to last~, and the last element matter~.
 
-<<span class="odocwiki_inlinecode"|setup~_form~_auto>> scans an element for buttons and input elements and feeds
-    them to <<span class="odocwiki_inlinecode"|setup~_form>>
+<<span class="odocwiki_inlinecode"|setup~_tabcycle~_auto>> scans an element for tabbable elements ~(buttons~, inputs~)
+    and feeds them to <<span class="odocwiki_inlinecode"|setup~_tabcycle>>
