@@ -477,7 +477,7 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="get_element_cookies_info"| value Eliom_client_core.get_element_cookies_info >> ~[<<a_api subproject="client" | module Eliom_client_core >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="get_element_template"| value Eliom_client_core.get_element_template >> ~[<<a_api subproject="client" | module Eliom_client_core >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="get_escaped_value"| value Eliom_client_core.Syntax_helpers.get_escaped_value >> ~[<<a_api subproject="client" | module Eliom_client_core.Syntax_helpers >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="get_form"| value Eliom_form_sigs.S.get_form >> ~[<<a_api subproject="client" | module Eliom_form_sigs.S >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|post~_form service formgen>> creates a ~G~E~T <<span class="odocwiki_inlinecode"|~<form~>>>
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="get_form"| value Eliom_form_sigs.S.get_form >> ~[<<a_api subproject="client" | module Eliom_form_sigs.S >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|get~_form service formgen>> creates a ~G~E~T <<span class="odocwiki_inlinecode"|~<form~>>>
       to <<span class="odocwiki_inlinecode"|service>>~.
 >>
 |
@@ -884,9 +884,9 @@
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="position"| value Eliom_content.Html.Manip.SetCss.position >> ~[<<a_api subproject="client" | module Eliom_content.Html.Manip.SetCss >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="position"| value Eliom_content.Html.Manip.Css.position >> ~[<<a_api subproject="client" | module Eliom_content.Html.Manip.Css >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="post_form"| value Eliom_form_sigs.S.post_form >> ~[<<a_api subproject="client" | module Eliom_form_sigs.S >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|post~_form service formgen get~_params>> creates a
-      ~P~O~S~T <<span class="odocwiki_inlinecode"|~<form~>>> to <<span class="odocwiki_inlinecode"|service>> preapplied to the ~G~E~T parameters
-      <<span class="odocwiki_inlinecode"|get~_params>>~.
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="post_form"| value Eliom_form_sigs.S.post_form >> ~[<<a_api subproject="client" | module Eliom_form_sigs.S >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|post~_form service formgen post~_params>> creates a
+      ~P~O~S~T <<span class="odocwiki_inlinecode"|~<form~>>> to <<span class="odocwiki_inlinecode"|service>> preapplied to the ~P~O~S~T parameters
+      <<span class="odocwiki_inlinecode"|post~_params>>~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="preapply"| value Eliom_service_sigs.S.preapply >> ~[<<a_api subproject="client" | module Eliom_service_sigs.S >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|preapply ~~service paramaters>> creates a new

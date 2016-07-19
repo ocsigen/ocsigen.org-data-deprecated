@@ -525,7 +525,7 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="get_filesize"| value Eliom_request_info.get_filesize >> ~[<<a_api subproject="server" | module Eliom_request_info >>~]|<<div class="odocwiki_info"|returns the size of the file~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="get_form"| value Eliom_form_sigs.S.get_form >> ~[<<a_api subproject="server" | module Eliom_form_sigs.S >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|post~_form service formgen>> creates a ~G~E~T <<span class="odocwiki_inlinecode"|~<form~>>>
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="get_form"| value Eliom_form_sigs.S.get_form >> ~[<<a_api subproject="server" | module Eliom_form_sigs.S >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|get~_form service formgen>> creates a ~G~E~T <<span class="odocwiki_inlinecode"|~<form~>>>
       to <<span class="odocwiki_inlinecode"|service>>~.
 >>
 |
@@ -992,9 +992,9 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="plain"| value Atom_feed.plain >> ~[<<a_api subproject="server" | module Atom_feed >>~]|<<div class="odocwiki_info"|~Plain text construct
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="post_form"| value Eliom_form_sigs.S.post_form >> ~[<<a_api subproject="server" | module Eliom_form_sigs.S >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|post~_form service formgen get~_params>> creates a
-      ~P~O~S~T <<span class="odocwiki_inlinecode"|~<form~>>> to <<span class="odocwiki_inlinecode"|service>> preapplied to the ~G~E~T parameters
-      <<span class="odocwiki_inlinecode"|get~_params>>~.
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="post_form"| value Eliom_form_sigs.S.post_form >> ~[<<a_api subproject="server" | module Eliom_form_sigs.S >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|post~_form service formgen post~_params>> creates a
+      ~P~O~S~T <<span class="odocwiki_inlinecode"|~<form~>>> to <<span class="odocwiki_inlinecode"|service>> preapplied to the ~P~O~S~T parameters
+      <<span class="odocwiki_inlinecode"|post~_params>>~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="preapply"| value Eliom_service_sigs.S.preapply >> ~[<<a_api subproject="server" | module Eliom_service_sigs.S >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|preapply ~~service paramaters>> creates a new
