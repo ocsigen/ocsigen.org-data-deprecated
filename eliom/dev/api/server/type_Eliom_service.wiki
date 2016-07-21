@@ -181,6 +181,10 @@
     ('a, 'b, 'm, 'c, 'd, 'e, 'f, [< `WithSuffix | `WithoutSuffix ], 'g, 'h,
      'i)
     t -> 'm which_meth
+  val which_meth_untyped :
+    ('a, 'b, 'c, 'd, 'e, 'f, 'g, [< `WithSuffix | `WithoutSuffix ], 'h, 'i,
+     'j)
+    t -> [ `Delete | `Get | `Post | `Put ]
   val info :
     ('a, 'b, 'c, 'att, 'd, 'e, 'f, [< `WithSuffix | `WithoutSuffix ], 'g, 'h,
      'i)
@@ -278,10 +282,6 @@
     ('a, 'b, 'c, 'd, 'e, 'f, 'g, [< `WithSuffix | `WithoutSuffix ], 'h, 'i,
      'j)
     t -> bool
-  val get_or_post :
-    ('a, 'b, 'c, 'd, 'e, 'f, 'g, [< `WithSuffix | `WithoutSuffix ], 'h, 'i,
-     'j)
-    t -> Ocsigen_http_frame.Http_header.http_method
   val pre_applied_parameters :
     ('a, 'b, 'c, 'd, 'e, 'f, 'g, [< `WithSuffix | `WithoutSuffix ], 'h, 'i,
      'j)

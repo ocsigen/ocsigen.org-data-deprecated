@@ -181,7 +181,7 @@
       side~) program to send some value of type ~'a~, marshaled~.  ~As usual
       <<span class="odocwiki_inlinecode"|s>> is the name of the parameter~.
 >>
-<<pre class="ocsforge_color odocwiki_code" id="TYPEraw_post_data"|<<span class="ocsforge_color_keyword"|type>> <<span class="odocwiki_name"|raw~_post~_data>> <<span class="ocsforge_color_delimiter"|~=>> <<span class="odocwiki_type"|\\  <<span class="ocsforge_color_delimiter"| ( >><<span class="ocsforge_color_delimiter"| ( >>string * string<<span class="ocsforge_color_delimiter"| ) >> * <<span class="ocsforge_color_delimiter"| ( >>string * string<<span class="ocsforge_color_delimiter"| ) >> list<<span class="ocsforge_color_delimiter"| ) >> option *\\  string <<span class="ocsforge_color_uid"|Ocsigen_stream>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>> option>> >><<div class="odocwiki_info"|~When the content type is neither ~U~R~Lencoded form data nor
+<<pre class="ocsforge_color odocwiki_code" id="TYPEraw_post_data"|<<span class="ocsforge_color_keyword"|type>> <<span class="odocwiki_name"|raw~_post~_data>>>><<div class="odocwiki_info"|~When the content type is neither ~U~R~Lencoded form data nor
       multipart data~, it is possible to get it as a stream of strings~.
       ~The first element of the pair is the content~-type~.  ~This kind of
       parameter cannot be combined with others~. ~It is not possible to

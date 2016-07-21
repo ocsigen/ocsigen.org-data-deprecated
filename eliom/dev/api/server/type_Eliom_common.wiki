@@ -286,9 +286,10 @@
       string Ocsigen_cache.Dlist.node
   type datacookiestable =
       Eliom_common.datacookiestablecontent Eliom_common.SessionCookies.t
+  type meth = [ `Delete | `Get | `Other | `Post | `Put ]
   type page_table_key = {
     key_state : Eliom_common.att_key_serv * Eliom_common.att_key_serv;
-    key_kind : Ocsigen_http_frame.Http_header.http_method;
+    key_meth : Eliom_common.meth;
   }
   module NAserv_Table :
     sig
@@ -355,6 +356,18 @@
   type node_ref = string
   type node_info = { ni_id : Eliom_common.node_ref; mutable ni_sent : bool; }
   module Hier_set : Set.S
+  type 'a dircontent =
+      Vide
+    | Table of 'a Eliom_common.direlt Pervasives.ref Eliom_lib.String.Table.t
+  and 'a direlt =
+      Dir of 'a Eliom_common.dircontent Pervasives.ref
+    | File of 'a Pervasives.ref
+  type ('params, 'result) service = {
+    s_id : Eliom_common.anon_params_type * Eliom_common.anon_params_type;
+    mutable s_max_use : int option;
+    s_expire : (float * float Pervasives.ref) option;
+    s_f : bool -> 'params -> 'result Lwt.t;
+  }
   type server_params = {
     sp_request : Ocsigen_extensions.request;
     sp_si : Eliom_common.sess_info;
@@ -370,15 +383,12 @@
   }
   and page_table = Eliom_common.page_table_content Eliom_common.Serv_Table.t
   and page_table_content =
-      Ptc of
-        (Eliom_common.page_table Pervasives.ref * Eliom_common.page_table_key,
-         Eliom_common.na_key_serv)
-        Eliom_lib.leftright Ocsigen_cache.Dlist.node option *
-        ((Eliom_common.anon_params_type * Eliom_common.anon_params_type) *
-         (int Pervasives.ref option * (float * float Pervasives.ref) option *
-          (bool ->
-           Eliom_common.server_params -> Ocsigen_http_frame.result Lwt.t)))
-        list
+      [ `Ptc of
+          (Eliom_common.page_table Pervasives.ref *
+           Eliom_common.page_table_key, Eliom_common.na_key_serv)
+          Eliom_lib.leftright Ocsigen_cache.Dlist.node option *
+          (Eliom_common.server_params, Ocsigen_http_frame.result)
+          Eliom_common.service list ]
   and naservice_table_content =
       int * int Pervasives.ref option *
       (float * float Pervasives.ref) option *
@@ -390,15 +400,11 @@
       AVide
     | ATable of
         Eliom_common.naservice_table_content Eliom_common.NAserv_Table.t
-  and dircontent =
-      Vide
-    | Table of Eliom_common.direlt Pervasives.ref Eliom_lib.String.Table.t
-  and direlt =
-      Dir of Eliom_common.dircontent Pervasives.ref
-    | File of Eliom_common.page_table Pervasives.ref
   and tables = {
     mutable table_services :
-      (int * int * Eliom_common.dircontent Pervasives.ref) list;
+      (int * int *
+       Eliom_common.page_table Eliom_common.dircontent Pervasives.ref)
+      list;
     table_naservices : Eliom_common.naservice_table Pervasives.ref;
     mutable table_contains_services_with_timeout : bool;
     mutable table_contains_naservices_with_timeout : bool;
@@ -473,7 +479,7 @@
     Eliom_lib.Url.path option ->
     Eliom_common.full_state_name option -> Eliom_common.server_params
   val empty_page_table : unit -> Eliom_common.page_table
-  val empty_dircontent : unit -> Eliom_common.dircontent
+  val empty_dircontent : unit -> 'a Eliom_common.dircontent
   val empty_naservice_table : unit -> Eliom_common.naservice_table
   val service_tables_are_empty : Eliom_common.tables -> bool
   val empty_tables : int -> bool -> Eliom_common.tables

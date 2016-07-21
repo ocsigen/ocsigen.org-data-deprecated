@@ -99,6 +99,8 @@
     }}
     >> 
 >>
+<<pre id="VALlwt_onload" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|lwt~_onload>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|unit <<span class="ocsforge_color_delimiter"| -> >> unit <<span class="ocsforge_color_uid"|Lwt>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>>>>>><<div class="odocwiki_info"|~Returns a ~Lwt thread that waits until the next page is loaded~.
+>>
 <<pre id="VALonunload" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|onunload>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<span class="ocsforge_color_delimiter"| ( >>unit <<span class="ocsforge_color_delimiter"| -> >> string option<<span class="ocsforge_color_delimiter"| ) >> <<span class="ocsforge_color_delimiter"| -> >> unit>>>><<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|onunload f>> registers <<span class="odocwiki_inlinecode"|f>> as a handler to be called before
     changing the page the next time~. ~If <<span class="odocwiki_inlinecode"|f>> returns <<span class="odocwiki_inlinecode"|~Some s>>~, then we
     ask the user to confirm quitting~. ~We try to use <<span class="odocwiki_inlinecode"|s>> in the
@@ -160,4 +162,15 @@
 
     ~Defining server functions in shared or client sections is possible only
     if you give them a name~.
+>>
+<<pre id="VALchange_page_uri" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|change~_page~_uri>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<span class="ocsforge_color_label"| ?replace: >>bool <<span class="ocsforge_color_delimiter"| -> >> string <<span class="ocsforge_color_delimiter"| -> >> unit <<span class="ocsforge_color_uid"|Lwt>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>>>>>><<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|change~_page~_uri ~?replace uri>> identifies and calls the
+    client~-side service that implements <<span class="odocwiki_inlinecode"|uri>>~.
+
+
+    ~We fallback to a server service call if the service is not
+    registered on the client~.
+
+
+    ~If the <<span class="odocwiki_inlinecode"|replace>> flag is set to <<span class="odocwiki_inlinecode"|true>>~, the current page is not
+    saved in the history~.
 >>

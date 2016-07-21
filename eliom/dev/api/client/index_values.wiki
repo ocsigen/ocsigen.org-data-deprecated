@@ -208,6 +208,10 @@
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="change_page_get_form_"| value Eliom_client_core.change_page_get_form_ >> ~[<<a_api subproject="client" | module Eliom_client_core >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="change_page_post_form_"| value Eliom_client_core.change_page_post_form_ >> ~[<<a_api subproject="client" | module Eliom_client_core >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="change_page_uri"| value Eliom_client.change_page_uri >> ~[<<a_api subproject="client" | module Eliom_client >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|change~_page~_uri ~?replace uri>> identifies and calls the
+    client~-side service that implements <<span class="odocwiki_inlinecode"|uri>>~.
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="change_page_uri_"| value Eliom_client_core.change_page_uri_ >> ~[<<a_api subproject="client" | module Eliom_client_core >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="change_url"| value Eliom_client.change_url >> ~[<<a_api subproject="client" | module Eliom_client >>~]|<<div class="odocwiki_info"|~Changes the ~U~R~L~, without doing a request~.
 >>
@@ -637,6 +641,10 @@
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="lwt_ignore"| value Eliom_lib.lwt_ignore >> ~[<<a_api subproject="client" | module Eliom_lib >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="lwt_onload"| value Eliom_client.lwt_onload >> ~[<<a_api subproject="client" | module Eliom_client >>~]|<<div class="odocwiki_info"|~Returns a ~Lwt thread that waits until the next page is loaded~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="lwt_onload"| value Eliom_client_core.lwt_onload >> ~[<<a_api subproject="client" | module Eliom_client_core >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="lwt_post_form"| value Eliom_form_sigs.S.lwt_post_form >> ~[<<a_api subproject="client" | module Eliom_form_sigs.S >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="client" | val Eliom_form_sigs.S.post_form >> but taking a cooperative function for
       <<span class="odocwiki_inlinecode"|~<form~>>> content generation~.
 >>
@@ -935,7 +943,7 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="rebuild_node_with_state"| value Eliom_client_core.rebuild_node_with_state >> ~[<<a_api subproject="client" | module Eliom_client_core >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="rebuild_rattrib"| value Eliom_client_core.rebuild_rattrib >> ~[<<a_api subproject="client" | module Eliom_client_core >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="rebuild_reactive_class_rattrib"| value Eliom_client_core.rebuild_reactive_class_rattrib >> ~[<<a_api subproject="client" | module Eliom_client_core >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="reconstruct_params"| value Eliom_parameter.reconstruct_params >> ~[<<a_api subproject="client" | module Eliom_parameter >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="reconstruct_params_form"| value Eliom_parameter.reconstruct_params_form >> ~[<<a_api subproject="client" | module Eliom_parameter >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="reconstruct_relative_url_path"| value Eliom_uri.reconstruct_relative_url_path >> ~[<<a_api subproject="client" | module Eliom_uri >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|reconstruct~_relative~_url~_path src dest>> returns a
     path to <<span class="odocwiki_inlinecode"|dest>> that is relative to <<span class="odocwiki_inlinecode"|src>>~.
 >>
@@ -1153,6 +1161,7 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="string"| value Eliom_form_sigs.S.string >> ~[<<a_api subproject="client" | module Eliom_form_sigs.S >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="string_attrib"| value Eliom_content_core.Xml_wed.string_attrib >> ~[<<a_api subproject="client" | module Eliom_content_core.Xml_wed >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="string_of_uri"| value Eliom_content_core.Xml.string_of_uri >> ~[<<a_api subproject="client" | module Eliom_content_core.Xml >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="string_of_url_path"| value Eliom_lib.Url.string_of_url_path >> ~[<<a_api subproject="client" | module Eliom_lib.Url >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="string_radio_required"| value Eliom_form_sigs.S.string_radio_required >> ~[<<a_api subproject="client" | module Eliom_form_sigs.S >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="structure_links"| value Eliom_tools.HTML5_TOOLS.structure_links >> ~[<<a_api subproject="client" | module Eliom_tools.HTML5_TOOLS >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|structure~_links site ~(~)>> returns the tags <<span class="odocwiki_inlinecode"|~<link
       rel~="subsection" ~.~.~.~>>> and <<span class="odocwiki_inlinecode"|~<link rev~="subsection" ~.~.~.~>>> for the

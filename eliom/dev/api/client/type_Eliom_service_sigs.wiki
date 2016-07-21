@@ -286,6 +286,10 @@
         ('a, 'b, 'm, 'c, 'd, 'e, 'f, [< `WithSuffix | `WithoutSuffix ], 'g,
          'h, 'i)
         Eliom_service_sigs.S.t -> 'm which_meth
+      val which_meth_untyped :
+        ('a, 'b, 'c, 'd, 'e, 'f, 'g, [< `WithSuffix | `WithoutSuffix ], 'h,
+         'i, 'j)
+        Eliom_service_sigs.S.t -> [ `Delete | `Get | `Post | `Put ]
       val info :
         ('a, 'b, 'c, 'att, 'd, 'e, 'f, [< `WithSuffix | `WithoutSuffix ], 'g,
          'h, 'i)

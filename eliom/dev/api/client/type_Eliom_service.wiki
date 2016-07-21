@@ -181,6 +181,10 @@
     ('a, 'b, 'm, 'c, 'd, 'e, 'f, [< `WithSuffix | `WithoutSuffix ], 'g, 'h,
      'i)
     t -> 'm which_meth
+  val which_meth_untyped :
+    ('a, 'b, 'c, 'd, 'e, 'f, 'g, [< `WithSuffix | `WithoutSuffix ], 'h, 'i,
+     'j)
+    t -> [ `Delete | `Get | `Post | `Put ]
   val info :
     ('a, 'b, 'c, 'att, 'd, 'e, 'f, [< `WithSuffix | `WithoutSuffix ], 'g, 'h,
      'i)
@@ -281,8 +285,4 @@
     ('a, 'b, 'c, 'd, 'e, 'f, 'g, [< `WithSuffix | `WithoutSuffix ], 'h, 'i,
      'j)
     t -> ('a -> unit -> unit Lwt.t) Eliom_client_value.t option
-  val reset_reload_fun :
-    ('a, 'b, 'c, 'd, 'e, 'f, 'g, [< `WithSuffix | `WithoutSuffix ], 'h, 'i,
-     'j)
-    t -> unit
 end >>

@@ -159,9 +159,7 @@
          [ `One of 'a Eliom_parameter_sigs.S.ocaml ]
          Eliom_parameter_sigs.S.param_name)
         Eliom_parameter_sigs.S.params_type
-      type raw_post_data =
-          ((string * string) * (string * string) list) option *
-          string Ocsigen_stream.t option
+      type raw_post_data
       val raw_post_data :
         (Eliom_parameter_sigs.S.raw_post_data, [ `WithoutSuffix ],
          Eliom_parameter_sigs.S.no_param_name)
@@ -222,6 +220,13 @@
         ('a, [< `WithSuffix | `WithoutSuffix ], 'b)
         Eliom_parameter_sigs.S.params_type ->
         'a -> string list option * Eliom_parameter_sigs.S.params
+      val reconstruct_params :
+        sp:Eliom_common.server_params ->
+        ('a, [< `WithSuffix | `WithoutSuffix ], 'c)
+        Eliom_parameter_sigs.S.params_type ->
+        (string * string) list Lwt.t option ->
+        (string * Eliom_lib.file_info) list Lwt.t option ->
+        bool -> Eliom_lib.Url.path option -> 'a Lwt.t
       val make_params_names :
         ('a, [< Eliom_parameter_sigs.S.suff ], 'c)
         Eliom_parameter_sigs.S.params_type -> bool * 'c
@@ -256,5 +261,8 @@
         ('a, [< Eliom_parameter_sigs.S.suff ], 'b)
         Eliom_parameter_sigs.S.params_type ->
         'a Eliom_parameter_sigs.S.is_unit
+      val anonymise_params_type :
+        ('a, [< Eliom_parameter_sigs.S.suff ], 'c)
+        Eliom_parameter_sigs.S.params_type -> int
     end
 end >>

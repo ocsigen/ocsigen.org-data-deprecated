@@ -96,6 +96,7 @@
     ?upload_progress:(int -> int -> unit) ->
     ?override_mime_type:string -> 'a -> 'b -> string Lwt.t
   val onload : (unit -> unit) -> unit
+  val lwt_onload : unit -> unit Lwt.t
   val onunload : (unit -> string option) -> unit
   val wait_load_end : unit -> unit Lwt.t
   val get_application_name : unit -> string
@@ -118,6 +119,13 @@
     ?https:bool ->
     ?error_handler:((string * exn) list -> 'b Lwt.t) ->
     'a Deriving_Json.t -> unit -> ('a, 'b) Eliom_client.server_function
+  val change_page_uri : ?replace:bool -> string -> unit Lwt.t
+  val change_page_unknown :
+    ?meth:[ `Delete | `Get | `Post | `Put ] ->
+    ?hostname:string ->
+    ?replace:bool ->
+    string list ->
+    (string * string) list -> (string * string) list -> unit Lwt.t
   val init : unit -> unit
   val reload_function : (unit -> unit -> unit Lwt.t) option Pervasives.ref
   val log_section : Eliom_lib.Lwt_log.section
@@ -126,4 +134,5 @@
     ?offset:Eliommod_dom.position ->
     ?fragment:string -> Dom_html.element Js.t -> unit Lwt.t
   val do_not_set_uri : bool Pervasives.ref
+  val change_page_after_action : unit -> unit Lwt.t
 end >>
