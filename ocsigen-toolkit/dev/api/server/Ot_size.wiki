@@ -19,7 +19,7 @@
 ~Compute the height of an element to the bottom of the page
 
 position of an element relative to the inner window~;
-    get~Client~Bounding~Rect does not include borders by default~, use <<span class="odocwiki_inlinecode"|with~_border>>
+    get~Client~Bounding~Rect does not include borders by default~, use <<span class="odocwiki_inlinecode"|with~_margin>>
     to take them into account~.
 
 size of an element
