@@ -18,6 +18,7 @@
   val value :
     'a Eliom_shared_sigs.RLIST.t -> 'a list Eliom_shared_sigs.RLIST.sv
   val signal :
+    ?eq:('a -> 'a -> bool) Eliom_shared_sigs.RLIST.sv ->
     'a Eliom_shared_sigs.RLIST.t -> 'a list Eliom_shared_sigs.RLIST.signal
   val singleton_s :
     'a Eliom_shared_sigs.RLIST.signal -> 'a Eliom_shared_sigs.RLIST.t
