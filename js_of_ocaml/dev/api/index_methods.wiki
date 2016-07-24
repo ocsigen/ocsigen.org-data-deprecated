@@ -380,6 +380,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="accuracy"| method Geolocation.coordinates#accuracy >> ~[<<a_api | module Geolocation >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="acos"| method Js.math#acos >> ~[<<a_api | module Js >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="action"| method Dom_html.formElement#action >> ~[<<a_api | module Dom_html >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="activeElement"| method Dom_html.document#activeElement >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="activeTexture"| method WebGL.renderingContext#activeTexture >> ~[<<a_api | module WebGL >>~]|<<div class="odocwiki_info"|~5~.~1~3~.~3 ~Setting and getting state
 >>
 |
@@ -729,6 +730,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="createTHead"| method Dom_html.tableElement#createTHead >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="createTextNode"| method Dom.document#createTextNode >> ~[<<a_api | module Dom >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="createTexture"| method WebGL.renderingContext#createTexture >> ~[<<a_api | module WebGL >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="crossorigin"| method Dom_html.linkElement#crossorigin >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="cssFloat"| method Dom_html.cssStyleDeclaration#cssFloat >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="cssText"| method Dom_html.cssStyleDeclaration#cssText >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="ctrlKey"| method Dom_html.touchEvent#ctrlKey >> ~[<<a_api | module Dom_html >>~]||

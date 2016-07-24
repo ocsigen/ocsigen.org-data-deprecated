@@ -1,5 +1,6 @@
 <<code language="ocaml" | object ('a)
   method _URL : Js.js_string Js.t Js.readonly_prop
+  method activeElement : Dom_html.element Js.t Js.opt Js.readonly_prop
   method adoptNode : Dom.element Js.t -> Dom_html.element Js.t Js.meth
   method anchors : Dom_html.element Dom_html.collection Js.t Js.readonly_prop
   method appendChild : Dom.node Js.t -> Dom.node Js.t Js.meth
