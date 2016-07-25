@@ -275,6 +275,10 @@
              'h, 'i, 'j)
             t ->
     ('a -> 'b -> unit Lwt.t) Eliom_client_value.t -> unit
+  val reset_reload_fun :
+    ('a, 'b, 'c, 'd, 'e, 'f, 'g, [< `WithSuffix | `WithoutSuffix ], 'h, 'i,
+     'j)
+    t -> unit
   val pre_applied_parameters :
     ('a, 'b, 'c, 'd, 'e, 'f, 'g, [< `WithSuffix | `WithoutSuffix ], 'h, 'i,
      'j)

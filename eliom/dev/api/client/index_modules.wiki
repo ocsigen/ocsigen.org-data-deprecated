@@ -282,6 +282,7 @@
 >>
 |
 |@@ @style="tet-align: left;"@@\\U|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Unit"| module Eliom_registration.Unit >> ~[<<a_api subproject="client" | module Eliom_registration >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Up"| module Eliom_react.Up >> ~[<<a_api subproject="client" | module Eliom_react >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Url"| module Eliom_lib.Url >> ~[<<a_api subproject="client" | module Eliom_lib >>~]||
 |@@ @style="tet-align: left;"@@\\V|
