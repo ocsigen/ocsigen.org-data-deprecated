@@ -230,10 +230,6 @@
     ('a, 'b, 'c, 'd, 'e, 'f, 'g, [< `WithSuffix | `WithoutSuffix ], 'h, 'i,
      'j)
     t -> bool
-  val has_client_fun_lazy :
-    ('a, 'b, 'c, 'd, 'e, 'f, 'g, [< `WithSuffix | `WithoutSuffix ], 'h, 'i,
-     'j)
-    t -> (unit -> bool) Eliom_client_value.t
   val keep_nl_params :
     ('a, 'b, 'c, 'd, 'e, 'f, 'g, [< `WithSuffix | `WithoutSuffix ], 'h, 'i,
      'j)

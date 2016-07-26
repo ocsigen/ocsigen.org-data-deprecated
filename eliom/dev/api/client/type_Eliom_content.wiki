@@ -16079,5 +16079,5 @@
   val wrap_client_fun :
     ('g -> 'p -> Html_types.html Eliom_content.Html.elt Lwt.t) ->
     'g -> 'p -> unit Lwt.t
-  val set_form_error_handler : (unit -> unit Lwt.t) -> unit
+  val set_form_error_handler : (unit -> bool Lwt.t) -> unit
 end >>

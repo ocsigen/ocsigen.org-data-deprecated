@@ -23,6 +23,7 @@
 |@@ @style="tet-align: left;"@@\\C|
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="caml_event_handler"| type Eliom_content_core.Xml.caml_event_handler >> ~[<<a_api subproject="client" | module Eliom_content_core.Xml >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="chandle"| type Eliom_shared_sigs.RLIST.chandle >> ~[<<a_api subproject="client" | module Eliom_shared_sigs.RLIST >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="client_form_handler"| type Eliom_client_core.client_form_handler >> ~[<<a_api subproject="client" | module Eliom_client_core >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="co"| type Eliom_service_sigs.TYPES.co >> ~[<<a_api subproject="client" | module Eliom_service_sigs.TYPES >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="compilation_unit_global_data"| type Eliom_client_core.compilation_unit_global_data >> ~[<<a_api subproject="client" | module Eliom_client_core >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="content_ns"| type Eliom_client_core.content_ns >> ~[<<a_api subproject="client" | module Eliom_client_core >>~]||
