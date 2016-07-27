@@ -80,7 +80,7 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="id"| type Eliom_content.Svg.Id.id >> ~[<<a_api subproject="client" | module Eliom_content.Svg.Id >>~]|<<div class="odocwiki_info"|~The type of global ~S~V~G element identifier~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="id"| type Eliom_service_sigs.S.id >> ~[<<a_api subproject="client" | module Eliom_service_sigs.S >>~]|<<div class="odocwiki_info"|~Service identifier~.
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="id"| type Eliom_service_sigs.S.id >> ~[<<a_api subproject="client" | module Eliom_service_sigs.S >>~]|<<div class="odocwiki_info"|**~Service identifier**
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="internal_event_handler"| type Eliom_content_core.Xml.internal_event_handler >> ~[<<a_api subproject="client" | module Eliom_content_core.Xml >>~]||
@@ -97,8 +97,7 @@
 |
 |@@ @style="tet-align: left;"@@\\M|
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="main_page"| type Eliom_tools.main_page >> ~[<<a_api subproject="client" | module Eliom_tools >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="meth"| type Eliom_service_sigs.TYPES.meth >> ~[<<a_api subproject="client" | module Eliom_service_sigs.TYPES >>~]|<<div class="odocwiki_info"|~- ~0~-th param ~: method params ~1~-~4 ~: ~G~E~T and ~P~O~S~T param types~, param ~5    ~: with~/without suffix~, param ~6    ~: method for fallback service~, param ~7    ~: non~-unit only for the ~Post ~(g~, p~) case when g !~= unit ~;
-                    used to force unit ~G~E~T parameters when needed
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="meth"| type Eliom_service_sigs.TYPES.meth >> ~[<<a_api subproject="client" | module Eliom_service_sigs.TYPES >>~]|<<div class="odocwiki_info"|**~Method specification datatype**
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="mouse_event_handler"| type Eliom_content_core.Xml.mouse_event_handler >> ~[<<a_api subproject="client" | module Eliom_content_core.Xml >>~]||
@@ -215,7 +214,7 @@
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="t"| type Eliom_shared_sigs.S.t >> ~[<<a_api subproject="client" | module Eliom_shared_sigs.S >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="t"| type Eliom_shared_sigs.VALUE.t >> ~[<<a_api subproject="client" | module Eliom_shared_sigs.VALUE >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="t"| type Eliom_service_sigs.S.t >> ~[<<a_api subproject="client" | module Eliom_service_sigs.S >>~]|<<div class="odocwiki_info"|~Type of services~.
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="t"| type Eliom_service_sigs.S.t >> ~[<<a_api subproject="client" | module Eliom_service_sigs.S >>~]|<<div class="odocwiki_info"|**~Type of services**
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="tmp_elt"| type Eliom_client_core.tmp_elt >> ~[<<a_api subproject="client" | module Eliom_client_core >>~]||
@@ -232,8 +231,8 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="uri"| type Eliom_form_sigs.S.uri >> ~[<<a_api subproject="client" | module Eliom_form_sigs.S >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="uri"| type Eliom_content_sigs.LINKS_AND_FORMS.uri >> ~[<<a_api subproject="client" | module Eliom_content_sigs.LINKS_AND_FORMS >>~]||
 |@@ @style="tet-align: left;"@@\\W|
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="which_meth"| type Eliom_service_sigs.TYPES.which_meth >> ~[<<a_api subproject="client" | module Eliom_service_sigs.TYPES >>~]|<<div class="odocwiki_info"|~Like <<span class="odocwiki_inlinecode"|meth>> but without the auxilliary parameters~; used to query
-      about the service method from outside~.
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="which_meth"| type Eliom_service_sigs.TYPES.which_meth >> ~[<<a_api subproject="client" | module Eliom_service_sigs.TYPES >>~]|<<div class="odocwiki_info"|~Like <<a_api subproject="client" | type Eliom_service_sigs.TYPES.meth >> but without the auxilliary parameters~; used to
+      query about the service method from outside~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="wrap"| type Eliom_content_core.Html.wrap >> ~[<<a_api subproject="client" | module Eliom_content_core.Html >>~]||

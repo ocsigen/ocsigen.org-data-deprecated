@@ -144,8 +144,7 @@ file~.
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Eliom_service"| module Eliom_service >> |<<div class="odocwiki_info"|~Creation and manipulation of ~Eliom services~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Eliom_service_sigs"| module Eliom_service_sigs >> |<<div class="odocwiki_info"|~- ~0~-th param ~: method params ~1~-~4 ~: ~G~E~T and ~P~O~S~T param types~, param ~5    ~: with~/without suffix~, param ~6    ~: method for fallback service~, param ~7    ~: non~-unit only for the ~Post ~(g~, p~) case when g !~= unit ~;
-                    used to force unit ~G~E~T parameters when needed
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Eliom_service_sigs"| module Eliom_service_sigs >> |<<div class="odocwiki_info"|~Auxilliary types
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Eliom_shared"| module Eliom_shared >> |<<div class="odocwiki_info"|~This module implements shared ~(i~.e~.~, client~-server~) versions of

@@ -288,7 +288,7 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="create"| value Eliom_shared_sigs.VALUE.create >> ~[<<a_api subproject="client" | module Eliom_shared_sigs.VALUE >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|client x>> is the client~-side portion of <<span class="odocwiki_inlinecode"|x>>~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="create"| value Eliom_service_sigs.S.create >> ~[<<a_api subproject="client" | module Eliom_service_sigs.S >>~]|<<div class="odocwiki_info"|~Service definition~.
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="create"| value Eliom_service_sigs.S.create >> ~[<<a_api subproject="client" | module Eliom_service_sigs.S >>~]|<<div class="odocwiki_info"|**~Service definition**
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="create"| value Eliom_registration_sigs.S_poly_without_send.create >> ~[<<a_api subproject="client" | module Eliom_registration_sigs.S_poly_without_send >>~]||

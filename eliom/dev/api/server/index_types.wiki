@@ -145,7 +145,7 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="id"| type Eliom_content.Svg.Id.id >> ~[<<a_api subproject="server" | module Eliom_content.Svg.Id >>~]|<<div class="odocwiki_info"|~The type of global ~S~V~G element identifier~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="id"| type Eliom_service_sigs.S.id >> ~[<<a_api subproject="server" | module Eliom_service_sigs.S >>~]|<<div class="odocwiki_info"|~Service identifier~.
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="id"| type Eliom_service_sigs.S.id >> ~[<<a_api subproject="server" | module Eliom_service_sigs.S >>~]|<<div class="odocwiki_info"|**~Service identifier**
 >>
 |
 |@@ @style="tet-align: left;"@@\\K|
@@ -174,8 +174,7 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="metaAttr"| type Atom_feed.metaAttr >> ~[<<a_api subproject="server" | module Atom_feed >>~]|<<div class="odocwiki_info"|~Common optional attributes
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="meth"| type Eliom_service_sigs.TYPES.meth >> ~[<<a_api subproject="server" | module Eliom_service_sigs.TYPES >>~]|<<div class="odocwiki_info"|~- ~0~-th param ~: method params ~1~-~4 ~: ~G~E~T and ~P~O~S~T param types~, param ~5    ~: with~/without suffix~, param ~6    ~: method for fallback service~, param ~7    ~: non~-unit only for the ~Post ~(g~, p~) case when g !~= unit ~;
-                    used to force unit ~G~E~T parameters when needed
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="meth"| type Eliom_service_sigs.TYPES.meth >> ~[<<a_api subproject="server" | module Eliom_service_sigs.TYPES >>~]|<<div class="odocwiki_info"|**~Method specification datatype**
 >>
 |
 |@@ @style="tet-align: left;"@@\\N|
@@ -341,7 +340,7 @@
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="t"| type Eliom_shared_sigs.S.t >> ~[<<a_api subproject="server" | module Eliom_shared_sigs.S >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="t"| type Eliom_shared_sigs.VALUE.t >> ~[<<a_api subproject="server" | module Eliom_shared_sigs.VALUE >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="t"| type Eliom_service_sigs.S.t >> ~[<<a_api subproject="server" | module Eliom_service_sigs.S >>~]|<<div class="odocwiki_info"|~Type of services~.
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="t"| type Eliom_service_sigs.S.t >> ~[<<a_api subproject="server" | module Eliom_service_sigs.S >>~]|<<div class="odocwiki_info"|**~Type of services**
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="term"| type Atom_feed.term >> ~[<<a_api subproject="server" | module Atom_feed >>~]||
@@ -372,8 +371,8 @@
 >>
 |
 |@@ @style="tet-align: left;"@@\\W|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="which_meth"| type Eliom_service_sigs.TYPES.which_meth >> ~[<<a_api subproject="server" | module Eliom_service_sigs.TYPES >>~]|<<div class="odocwiki_info"|~Like <<span class="odocwiki_inlinecode"|meth>> but without the auxilliary parameters~; used to query
-      about the service method from outside~.
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="which_meth"| type Eliom_service_sigs.TYPES.which_meth >> ~[<<a_api subproject="server" | module Eliom_service_sigs.TYPES >>~]|<<div class="odocwiki_info"|~Like <<a_api subproject="server" | type Eliom_service_sigs.TYPES.meth >> but without the auxilliary parameters~; used to
+      query about the service method from outside~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="wrap"| type Eliom_content.Svg.wrap >> ~[<<a_api subproject="server" | module Eliom_content.Svg >>~]||

@@ -39,7 +39,7 @@
 
 
 
-|<<a_api subproject="client" | module Eliom_service >>|<<div class="odocwiki_info"|~/~*
+|<<a_api subproject="client" | module Eliom_service >>|<<div class="odocwiki_info"|~Creation and manipulation of ~Eliom services~.
 >>
 |
 |<<a_api subproject="client" | module Eliom_bus >>|<<div class="odocwiki_info"|~Broadcasting facilities between clients and server~.

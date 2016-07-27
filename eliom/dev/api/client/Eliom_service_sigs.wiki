@@ -1,10 +1,6 @@
 =Module <<a_api_type subproject="client" | module Eliom_service_sigs >> =
-<<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module>> <<span class="ocsforge_color_uid"|<<span class="ocsforge_color_uid"|Eliom_service_sigs>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="ocsforge_color_keyword"|sig>><<a_api subproject="client" text=".." | module Eliom_service_sigs >><<span class="ocsforge_color_keyword"|end>>>>~- ~0~-th param ~: method
-* params ~1~-~4 ~: ~G~E~T and ~P~O~S~T param types
-* param ~5    ~: with~/without suffix
-* param ~6    ~: method for fallback service
-* param ~7    ~: non~-unit only for the ~Post ~(g~, p~) case when g !~= unit ~;
-                    used to force unit ~G~E~T parameters when needed
+<<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module>> <<span class="ocsforge_color_uid"|<<span class="ocsforge_color_uid"|Eliom_service_sigs>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="ocsforge_color_keyword"|sig>><<a_api subproject="client" text=".." | module Eliom_service_sigs >><<span class="ocsforge_color_keyword"|end>>>>
+==@@id="2_Auxilliarytypes"@@~Auxilliary types==
 
 
 ----
