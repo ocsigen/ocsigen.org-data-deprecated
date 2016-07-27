@@ -80,7 +80,9 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="id"| type Eliom_content.Svg.Id.id >> ~[<<a_api subproject="client" | module Eliom_content.Svg.Id >>~]|<<div class="odocwiki_info"|~The type of global ~S~V~G element identifier~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="id"| type Eliom_service_sigs.S.id >> ~[<<a_api subproject="client" | module Eliom_service_sigs.S >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="id"| type Eliom_service_sigs.S.id >> ~[<<a_api subproject="client" | module Eliom_service_sigs.S >>~]|<<div class="odocwiki_info"|~Service identifier~.
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="internal_event_handler"| type Eliom_content_core.Xml.internal_event_handler >> ~[<<a_api subproject="client" | module Eliom_content_core.Xml >>~]||
 |@@ @style="tet-align: left;"@@\\K|
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="keyboard_event_handler"| type Eliom_content_core.Xml.keyboard_event_handler >> ~[<<a_api subproject="client" | module Eliom_content_core.Xml >>~]||

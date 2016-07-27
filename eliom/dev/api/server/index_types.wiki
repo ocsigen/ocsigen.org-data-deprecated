@@ -145,7 +145,9 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="id"| type Eliom_content.Svg.Id.id >> ~[<<a_api subproject="server" | module Eliom_content.Svg.Id >>~]|<<div class="odocwiki_info"|~The type of global ~S~V~G element identifier~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="id"| type Eliom_service_sigs.S.id >> ~[<<a_api subproject="server" | module Eliom_service_sigs.S >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="id"| type Eliom_service_sigs.S.id >> ~[<<a_api subproject="server" | module Eliom_service_sigs.S >>~]|<<div class="odocwiki_info"|~Service identifier~.
+>>
+|
 |@@ @style="tet-align: left;"@@\\K|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="kind"| type Eliom_registration.kind >> ~[<<a_api subproject="server" | module Eliom_registration >>~]|<<div class="odocwiki_info"|~The type <<span class="odocwiki_inlinecode"|kind>> is an abstract type for the ~H~T~T~P frame returned by
     a service~.

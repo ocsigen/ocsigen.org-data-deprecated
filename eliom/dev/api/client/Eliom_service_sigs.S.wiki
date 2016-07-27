@@ -2,6 +2,10 @@
 <<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module type>> <<span class="ocsforge_color_uid"|S>> <<span class="ocsforge_color_delimiter"|~=>> <<span class="ocsforge_color_keyword"|sig>><<a_api subproject="client" text=".." | module type Eliom_service_sigs.S >><<span class="ocsforge_color_keyword"|end>>>>
 ----
 <<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|include>> <<a_api subproject="client" | module type Eliom_service_sigs.TYPES >>>>
+
+
+==@@id="2_Definitionsofservices"@@~Definitions of services==
+
 <<pre class="ocsforge_color odocwiki_code" id="TYPEatt"|<<span class="ocsforge_color_keyword"|type>> <<span class="odocwiki_name"|att>>>><<pre class="ocsforge_color odocwiki_code" id="TYPEnon_att"|<<span class="ocsforge_color_keyword"|type>> <<span class="odocwiki_name"|non~_att>>>><<pre class="ocsforge_color odocwiki_code" id="TYPEattached_info"|<<span class="ocsforge_color_keyword"|type>> <<span class="odocwiki_type"|'a>> <<span class="odocwiki_name"|attached~_info>> <<span class="ocsforge_color_delimiter"|~=>> <<span class="odocwiki_variants"|<<span class="odocwiki_variant"|<<span class="odocwiki_variant_constr"|<<span class="ocsforge_color_keyword"| ~|>> <<span class="ocsforge_color_uid"|Attached>> <<span class="ocsforge_color_keyword"|of>> <<span class="odocwiki_type"|<<a_api subproject="client" text="att" | type Eliom_service_sigs.S.att >>>>>>>><<span class="odocwiki_variant"|<<span class="odocwiki_variant_constr"|<<span class="ocsforge_color_keyword"| ~|>> <<span class="ocsforge_color_uid"|Nonattached>> <<span class="ocsforge_color_keyword"|of>> <<span class="odocwiki_type"|<<a_api subproject="client" text="non_att" | type Eliom_service_sigs.S.non_att >>>>>>>>>>>><<pre class="ocsforge_color odocwiki_code" id="TYPEt"|<<span class="ocsforge_color_keyword"|type>> <<span class="odocwiki_type"|\\  <<span class="ocsforge_color_delimiter"| ( >>'get, 'post, 'meth, 'attached, 'co, 'ext, 'reg\\    , +[< `WithSuffix | `WithoutSuffix ], 'gn, 'pn, +'ret<<span class="ocsforge_color_delimiter"| ) >>>> <<span class="odocwiki_name"|t>>>><<div class="odocwiki_info"|~Type of services~.
 * <<span class="odocwiki_inlinecode"|~'get>> is the type of ~G~E~T parameters expected by the service~.
 * <<span class="odocwiki_inlinecode"|~'post>> is the type of ~P~O~S~T parameters expected by the service~.
@@ -14,54 +18,110 @@
         of parameters it uses~: suffix or not~.
 * <<span class="odocwiki_inlinecode"|~'gn>> is the type of ~G~E~T parameters names~. ~See
         <<span class="odocwiki_inlinecode"|~Eliom~_parameter~.param~_name>> and form generation functions
-        ~(e~. g~. <<span class="odocwiki_inlinecode"|~Eliom~_content~.~Html~5~.~D~.get~_form>>~)~.
+        ~(e~. g~. <<span class="odocwiki_inlinecode"|~Eliom~_content~.~Html~.~D~.get~_form>> ~)~.
 * <<span class="odocwiki_inlinecode"|~'pn>> is the type of ~P~O~S~T parameters names~. ~See
         <<span class="odocwiki_inlinecode"|~Eliom~_parameter~.param~_name>> and form generation functions
-        ~(e~. g~. <<span class="odocwiki_inlinecode"|~Eliom~_content~.~Html~5~.~D~.post~_form>>~)~.
+        ~(e~. g~. <<span class="odocwiki_inlinecode"|~Eliom~_content~.~Html~.~D~.post~_form>> ~)~.
 * <<span class="odocwiki_inlinecode"| ~'ret>> is an information on what the service returns~.  ~See
         <<a_api subproject="client" | type Eliom_registration.kind >>~.
 
 >>
-<<pre class="ocsforge_color odocwiki_code" id="TYPEid"|<<span class="ocsforge_color_keyword"|type>> <<span class="odocwiki_type"|<<span class="ocsforge_color_delimiter"| ( >>'_, '_, '_, '_, '_, '_, '_<<span class="ocsforge_color_delimiter"| ) >>>> <<span class="odocwiki_name"|id>> <<span class="ocsforge_color_delimiter"|~=>> <<span class="odocwiki_variants"|<<span class="odocwiki_variant"|<<span class="odocwiki_variant_constr"|<<span class="ocsforge_color_keyword"| ~|>> <<span class="ocsforge_color_uid"|Path>> <<span class="ocsforge_color_keyword"|of>> <<span class="odocwiki_type"|<<span class="ocsforge_color_uid"|Eliom_lib>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_uid"|Url>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|path>>>>>>>><<span class="odocwiki_variant"|<<span class="odocwiki_variant_constr"|<<span class="ocsforge_color_keyword"| ~|>> <<span class="ocsforge_color_uid"|Fallback>> <<span class="ocsforge_color_keyword"|of>> <<span class="odocwiki_type"|\\    <<span class="ocsforge_color_delimiter"| ( >>unit, unit, 'mf, <<a_api subproject="client" text="att" | type Eliom_service_sigs.S.att >>, non_co, non_ext, 'a,\\     [ `WithoutSuffix ], unit, unit, 'ret<<span class="ocsforge_color_delimiter"| ) >>\\    <<a_api subproject="client" text="t" | type Eliom_service_sigs.S.t >>>>>>>><<span class="odocwiki_variant"|<<span class="odocwiki_variant_constr"|<<span class="ocsforge_color_keyword"| ~|>> <<span class="ocsforge_color_uid"|Global>>>>>><<span class="odocwiki_variant"|<<span class="odocwiki_variant_constr"|<<span class="ocsforge_color_keyword"| ~|>> <<span class="ocsforge_color_uid"|External>> <<span class="ocsforge_color_keyword"|of>> <<span class="odocwiki_type"|string * <<span class="ocsforge_color_uid"|Eliom_lib>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_uid"|Url>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|path>>>>>>>>>>>>
-
-==@@id="2_Definitionsofservices"@@~Definitions of services==
+<<pre class="ocsforge_color odocwiki_code" id="TYPEid"|<<span class="ocsforge_color_keyword"|type>> <<span class="odocwiki_type"|<<span class="ocsforge_color_delimiter"| ( >>'_, '_, '_, '_, '_, '_, '_<<span class="ocsforge_color_delimiter"| ) >>>> <<span class="odocwiki_name"|id>> <<span class="ocsforge_color_delimiter"|~=>> <<span class="odocwiki_variants"|<<span class="odocwiki_variant"|<<span class="odocwiki_variant_constr"|<<span class="ocsforge_color_keyword"| ~|>> <<span class="ocsforge_color_uid"|Path>> <<span class="ocsforge_color_keyword"|of>> <<span class="odocwiki_type"|<<span class="ocsforge_color_uid"|Eliom_lib>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_uid"|Url>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|path>>>>>>>><<span class="odocwiki_variant"|<<span class="odocwiki_variant_constr"|<<span class="ocsforge_color_keyword"| ~|>> <<span class="ocsforge_color_uid"|Fallback>> <<span class="ocsforge_color_keyword"|of>> <<span class="odocwiki_type"|\\    <<span class="ocsforge_color_delimiter"| ( >>unit, unit, 'mf, <<a_api subproject="client" text="att" | type Eliom_service_sigs.S.att >>, non_co, non_ext, 'a,\\     [ `WithoutSuffix ], unit, unit, 'ret<<span class="ocsforge_color_delimiter"| ) >>\\    <<a_api subproject="client" text="t" | type Eliom_service_sigs.S.t >>>>>>>><<span class="odocwiki_variant"|<<span class="odocwiki_variant_constr"|<<span class="ocsforge_color_keyword"| ~|>> <<span class="ocsforge_color_uid"|Global>>>>>><<span class="odocwiki_variant"|<<span class="odocwiki_variant_constr"|<<span class="ocsforge_color_keyword"| ~|>> <<span class="ocsforge_color_uid"|External>> <<span class="ocsforge_color_keyword"|of>> <<span class="odocwiki_type"|string * <<span class="ocsforge_color_uid"|Eliom_lib>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_uid"|Url>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|path>>>>>>>>>>>><<div class="odocwiki_info"|~Service identifier~.
 
 
-
-      //~Warning~: ~These functions must be called when the site
-      information is available~, that is~, either during a request or
-      during the initialisation phase of the site~.  ~Otherwise~, it will
-      raise the exception
-      <<span class="odocwiki_inlinecode"|~Eliom~_common~.~Eliom~_site~_information~_not~_available>>~.  ~If you
-      are using static linking~, you must delay the call to this
-      function until the configuration file is read~, using
-      <<span class="odocwiki_inlinecode"|~Eliom~_service~.register~_eliom~_module>>~. ~Otherwise you will also
-      get this exception~.//
-<<pre id="VALcreate" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|create>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|\\  <<span class="ocsforge_color_label"| ?name: >>string <<span class="ocsforge_color_delimiter"| -> >>\\  <<span class="ocsforge_color_label"| ?csrf_safe: >>bool <<span class="ocsforge_color_delimiter"| -> >>\\  <<span class="ocsforge_color_label"| ?csrf_scope: >>[< <<span class="ocsforge_color_uid"|Eliom_common>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|user_scope>> ] <<span class="ocsforge_color_delimiter"| -> >>\\  <<span class="ocsforge_color_label"| ?csrf_secure: >>bool <<span class="ocsforge_color_delimiter"| -> >>\\  <<span class="ocsforge_color_label"| ?max_use: >>int <<span class="ocsforge_color_delimiter"| -> >>\\  <<span class="ocsforge_color_label"| ?timeout: >>float <<span class="ocsforge_color_delimiter"| -> >>\\  <<span class="ocsforge_color_label"| ?https: >>bool <<span class="ocsforge_color_delimiter"| -> >>\\  <<span class="ocsforge_color_label"| ?keep_nl_params: >>[ `All | `None | `Persistent ] <<span class="ocsforge_color_delimiter"| -> >>\\  <<span class="ocsforge_color_label"| ?priority: >>int <<span class="ocsforge_color_delimiter"| -> >>\\  <<span class="ocsforge_color_label"| meth: >><<span class="ocsforge_color_delimiter"| ( >>'m, 'gp, 'gn, 'pp, 'pn, [< `WithSuffix | `WithoutSuffix ] as 'a,\\        'mf, 'gp_<<span class="ocsforge_color_delimiter"| ) >>\\       meth <<span class="ocsforge_color_delimiter"| -> >>\\  <<span class="ocsforge_color_label"| id: >><<span class="ocsforge_color_delimiter"| ( >>'att, 'co, 'ext, 'reg, 'mf, non_ocaml, 'gp_<<span class="ocsforge_color_delimiter"| ) >>\\     <<a_api subproject="client" text="id" | type Eliom_service_sigs.S.id >> <<span class="ocsforge_color_delimiter"| -> >>\\  unit <<span class="ocsforge_color_delimiter"| -> >>\\  <<span class="ocsforge_color_delimiter"| ( >>'gp, 'pp, 'm, 'att, 'co, 'ext, 'reg, 'a, 'gn, 'pn, non_ocaml<<span class="ocsforge_color_delimiter"| ) >>\\  <<a_api subproject="client" text="t" | type Eliom_service_sigs.S.t >>>>>><<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|create ~~id ~~meth ~~ret ~(~)>> creates a <<span class="odocwiki_inlinecode"|service>>
-      identified as per <<span class="odocwiki_inlinecode"|id>> and accepting parameters as per <<span class="odocwiki_inlinecode"|m>>~. ~The
-      parameter <<span class="odocwiki_inlinecode"|~~ret>> is used to constrain the type parameter <<span class="odocwiki_inlinecode"|~'ret>> of
-      the service~.
+      ~In the simplest case~, a service can be identified via its path
+      ~(<<span class="odocwiki_inlinecode"|~Path path>>~)~.
 
 
-      ~If the optional parameter <<span class="odocwiki_inlinecode"|~~https~:true>> is given~, all links
-      towards that service will use https~. ~By default~, links will keep
-      the current protocol~.
+      ~For the constructors <<span class="odocwiki_inlinecode"|~Fallback>> and <<span class="odocwiki_inlinecode"|~Global>>~, the service
+      doesn~'t have its own ~U~R~L~. ~It either shares the ~U~R~L of another
+      <<span class="odocwiki_inlinecode"|service>> ~(<<span class="odocwiki_inlinecode"|~Fallback service>>~)~, or it can be called on any ~U~R~L
+      ~(<<span class="odocwiki_inlinecode"|~Global>>~)~. ~Both for <<span class="odocwiki_inlinecode"|~Fallback service>> and for <<span class="odocwiki_inlinecode"|~Global>>~, we
+      internally use an automatically~-generated parameter for
+      distinguishing the service from the other services sharing the
+      ~U~R~L~.
 
 
-      ~The optional parameter <<span class="odocwiki_inlinecode"|~~priority>> allows one to change the
-      priority order between service that shares the same path~. ~The
-      default priority is ~0 ~; if you want the service to be tried
+      <<span class="odocwiki_inlinecode"|~External server path>> allows defining services handled by
+      external servers~. ~These servers do not have to run
+      ~Ocsigen~/~Eliom~.
+>>
+<<pre id="VALcreate" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|create>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|\\  <<span class="ocsforge_color_label"| ?name: >>string <<span class="ocsforge_color_delimiter"| -> >>\\  <<span class="ocsforge_color_label"| ?csrf_safe: >>bool <<span class="ocsforge_color_delimiter"| -> >>\\  <<span class="ocsforge_color_label"| ?csrf_scope: >>[< <<span class="ocsforge_color_uid"|Eliom_common>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|user_scope>> ] <<span class="ocsforge_color_delimiter"| -> >>\\  <<span class="ocsforge_color_label"| ?csrf_secure: >>bool <<span class="ocsforge_color_delimiter"| -> >>\\  <<span class="ocsforge_color_label"| ?max_use: >>int <<span class="ocsforge_color_delimiter"| -> >>\\  <<span class="ocsforge_color_label"| ?timeout: >>float <<span class="ocsforge_color_delimiter"| -> >>\\  <<span class="ocsforge_color_label"| ?https: >>bool <<span class="ocsforge_color_delimiter"| -> >>\\  <<span class="ocsforge_color_label"| ?keep_nl_params: >>[ `All | `None | `Persistent ] <<span class="ocsforge_color_delimiter"| -> >>\\  <<span class="ocsforge_color_label"| ?priority: >>int <<span class="ocsforge_color_delimiter"| -> >>\\  <<span class="ocsforge_color_label"| meth: >><<span class="ocsforge_color_delimiter"| ( >>'m, 'gp, 'gn, 'pp, 'pn, [< `WithSuffix | `WithoutSuffix ] as 'a,\\        'mf, 'gp_<<span class="ocsforge_color_delimiter"| ) >>\\       meth <<span class="ocsforge_color_delimiter"| -> >>\\  <<span class="ocsforge_color_label"| id: >><<span class="ocsforge_color_delimiter"| ( >>'att, 'co, 'ext, 'reg, 'mf, non_ocaml, 'gp_<<span class="ocsforge_color_delimiter"| ) >>\\     <<a_api subproject="client" text="id" | type Eliom_service_sigs.S.id >> <<span class="ocsforge_color_delimiter"| -> >>\\  unit <<span class="ocsforge_color_delimiter"| -> >>\\  <<span class="ocsforge_color_delimiter"| ( >>'gp, 'pp, 'm, 'att, 'co, 'ext, 'reg, 'a, 'gn, 'pn, non_ocaml<<span class="ocsforge_color_delimiter"| ) >>\\  <<a_api subproject="client" text="t" | type Eliom_service_sigs.S.t >>>>>><<div class="odocwiki_info"|~Service definition~.
+
+
+      ~The function <<span class="odocwiki_inlinecode"|create ~~id ~~meth ~(~)>> creates a <<span class="odocwiki_inlinecode"|service>>
+      identified as per <<span class="odocwiki_inlinecode"|id>> ~(see <<a_api subproject="client" | type Eliom_service_sigs.S.id >> ~) and accepting parameters as
+      per <<span class="odocwiki_inlinecode"|meth>> ~(see <<a_api subproject="client" | type Eliom_service_sigs.TYPES.meth >> ~)~.
+
+
+      ~In addition to <<span class="odocwiki_inlinecode"|~~id>> and <<span class="odocwiki_inlinecode"|~~meth>>~, <<span class="odocwiki_inlinecode"|create>> accepts a series of
+      optional arguments described below~.
+
+
+      ~If <<span class="odocwiki_inlinecode"|~~https~:true>> is provided~, all links towards that service
+      will use ~H~T~T~P~S~. ~By default~, links will keep the current
+      protocol~.
+
+
+      ~The optional argument <<span class="odocwiki_inlinecode"|~~priority>> allows one to change the
+      priority order between services that share the same path~. ~The
+      default priority is ~0~. ~If you want the service to be tried
       before ~(resp~. after~) other services~, put a higher ~(resp~. lower~)
       priority~.
 
 
-      ~If the optional parameter <<span class="odocwiki_inlinecode"|~~keep~_nl~_params~:`~Persistent>>
+      ~The remaining arguments are ignored for services identified by a
+      path ~(constructor <<span class="odocwiki_inlinecode"|~Path>>~)~. ~We describe their meaning in
+      conjunction with <<span class="odocwiki_inlinecode"|~Fallback>> and <<span class="odocwiki_inlinecode"|~Global>>~.
+
+
+      ~The optional <<span class="odocwiki_inlinecode"|~~timeout>> argument specifies a timeout ~(in
+      seconds~) after which the coservice will disappear~. ~This amount
+      of time is computed from the creation or from the last call to
+      the service~. ~The default is "no timeout"~. ~The optional
+      <<span class="odocwiki_inlinecode"|~~max~_use>> argument specifies that the service can be used only
+      a fixed number of times~. ~The default is "no limitation"~.
+
+
+      ~If the optional argument <<span class="odocwiki_inlinecode"|~~keep~_nl~_params~:`~Persistent>>
       ~(resp~. <<span class="odocwiki_inlinecode"|~~keep~_nl~_params~:`~All>>~) is given~, all links towards that
       service will keep persistent ~(resp~. all~) non localized ~G~E~T
-      parameters of the current service~. ~The default is <<span class="odocwiki_inlinecode"|`~None>>~. ~See
+      arguments of the current service~. ~The default is <<span class="odocwiki_inlinecode"|`~None>>~. ~See
       the eliom manual for more information about <<a_manual
       chapter="params" fragment="nonlocalizedparameters"|non localized
-      parameters>>~.
+      ptimarameters>>~.
+
+
+      ~The optional <<span class="odocwiki_inlinecode"|~~name>> argument provides a name for the service~;
+      otherwise~, it will be anonymous ~(with an auto~-generated internal
+      name~)~.
+
+
+      ~If the optional <<span class="odocwiki_inlinecode"|~~csrf~_safe>> argument is <<span class="odocwiki_inlinecode"|true>>~, it will create
+      a <<a_manual chapter="security" fragment="csrf"|"CSRF-safe"
+      service>>~. ~In that case the <<span class="odocwiki_inlinecode"|~~name>> argument is ignored~. ~The
+      default is <<span class="odocwiki_inlinecode"|false>>~.
+
+
+      ~The <<span class="odocwiki_inlinecode"|~~csrf~_scope>> and <<span class="odocwiki_inlinecode"|~~csrf~_secure>>~, if present~, should
+      respectively correspond to the <<span class="odocwiki_inlinecode"|~~scope>> and <<span class="odocwiki_inlinecode"|~~secure>> arguments
+      that will be given to the associated <<span class="odocwiki_inlinecode"|register>>
+      function~. ~Otherwise the registration will fail with
+      ~. ~See
+      <<span class="odocwiki_inlinecode"|~Eliom~_registration~.~Html~.register>>~,
+      <<span class="odocwiki_inlinecode"|~Eliom~_registration~.~App~.register>> or any other
+      <<a_api subproject="client" | module Eliom_registration >><<span class="odocwiki_inlinecode"|~.~*~.register>> functions for a description
+      of these arguments~.
+
+
+      //~Warning~: <<span class="odocwiki_inlinecode"|create>> must be called when the site information is
+      available~, that is~, either during a request or during the
+      initialisation phase of the site~.  ~Otherwise~, it will raise the
+      exception <<span class="odocwiki_inlinecode"|~Eliom~_common~.~Eliom~_site~_information~_not~_available>>~.
+      ~If you are using static linking~, you must delay the call to this
+      function until the configuration file is read~, using
+      <<span class="odocwiki_inlinecode"|~Eliom~_service~.register~_eliom~_module>>~. ~Otherwise you will also
+      get this exception~.//
 >>
 
 
