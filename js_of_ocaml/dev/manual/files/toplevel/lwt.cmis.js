@@ -5,7 +5,7 @@
      {if(b.caml_fs_register)
        b.caml_fs_register(c,a);
       else
-       {if(!b.caml_fs_tmp)b.caml_fs_tmp=[];
+       {if(!b.caml_fs_tmp)b.caml_fs_tmp = [];
         b.caml_fs_tmp.push({name:c,content:a})}
       return 0}
     a
