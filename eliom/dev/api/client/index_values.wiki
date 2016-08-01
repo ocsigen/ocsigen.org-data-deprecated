@@ -805,6 +805,10 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="offsetHeight"| value Eliom_content.Html.Manip.Attr.offsetHeight >> ~[<<a_api subproject="client" | module Eliom_content.Html.Manip.Attr >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="offsetWidth"| value Eliom_content.Html.Manip.Attr.offsetWidth >> ~[<<a_api subproject="client" | module Eliom_content.Html.Manip.Attr >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="onabort"| value Eliom_content.Html.Manip.Ev.onabort >> ~[<<a_api subproject="client" | module Eliom_content.Html.Manip.Ev >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="onbeforeunload"| value Eliom_client.onbeforeunload >> ~[<<a_api subproject="client" | module Eliom_client >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|onbeforeunload f>> registers <<span class="odocwiki_inlinecode"|f>> as a handler to be called before
+    changing the page the next time~.
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="onblur"| value Eliom_content.Html.Manip.Ev.onblur >> ~[<<a_api subproject="client" | module Eliom_content.Html.Manip.Ev >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="onblur_textarea"| value Eliom_content.Html.Manip.Ev.onblur_textarea >> ~[<<a_api subproject="client" | module Eliom_content.Html.Manip.Ev >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="onchange"| value Eliom_content.Html.Manip.Ev.onchange >> ~[<<a_api subproject="client" | module Eliom_content.Html.Manip.Ev >>~]||
@@ -827,8 +831,8 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="onmouseup"| value Eliom_content.Html.Manip.Ev.onmouseup >> ~[<<a_api subproject="client" | module Eliom_content.Html.Manip.Ev >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="onreturn"| value Eliom_content.Html.Manip.Ev.onreturn >> ~[<<a_api subproject="client" | module Eliom_content.Html.Manip.Ev >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="onscroll"| value Eliom_content.Html.Manip.Ev.onscroll >> ~[<<a_api subproject="client" | module Eliom_content.Html.Manip.Ev >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="onunload"| value Eliom_client.onunload >> ~[<<a_api subproject="client" | module Eliom_client >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|onunload f>> registers <<span class="odocwiki_inlinecode"|f>> as a handler to be called before
-    changing the page the next time~.
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="onunload"| value Eliom_client.onunload >> ~[<<a_api subproject="client" | module Eliom_client >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|onunload f>> registers <<span class="odocwiki_inlinecode"|f>> as a handler to be called before page
+    change~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="opacity"| value Eliom_content.Html.Manip.SetCss.opacity >> ~[<<a_api subproject="client" | module Eliom_content.Html.Manip.SetCss >>~]||

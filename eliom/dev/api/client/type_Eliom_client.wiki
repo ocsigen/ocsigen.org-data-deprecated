@@ -97,7 +97,8 @@
     ?override_mime_type:string -> 'a -> 'b -> string Lwt.t
   val onload : (unit -> unit) -> unit
   val lwt_onload : unit -> unit Lwt.t
-  val onunload : (unit -> string option) -> unit
+  val onbeforeunload : (unit -> string option) -> unit
+  val onunload : (unit -> unit) -> unit
   val wait_load_end : unit -> unit Lwt.t
   val get_application_name : unit -> string
   val persist_document_head : unit -> unit
