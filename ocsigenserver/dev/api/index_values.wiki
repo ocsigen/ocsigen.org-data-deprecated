@@ -78,6 +78,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="attribute"| value Ocsigen_extensions.Configuration.attribute >> ~[<<a_api | module Ocsigen_extensions.Configuration >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|attribute ~~name f>> create a specification of a ~X~M~L attribute~.
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api text="authorization"| value Http_headers.authorization >> ~[<<a_api | module Http_headers >>~]||
 |@@ @style="tet-align: left;"@@\\B|
 |@@class="odocwiki_index"@ @@<<a_api text="badconfig"| value Ocsigen_extensions.badconfig >> ~[<<a_api | module Ocsigen_extensions >>~]|<<div class="odocwiki_info"|~Convenient function for raising ~Error~_in~_config~_file exceptions with
     a sprintf~-formatted argument~.

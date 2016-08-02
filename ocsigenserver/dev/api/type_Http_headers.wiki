@@ -26,6 +26,7 @@
   val accept_encoding : Http_headers.name
   val accept_language : Http_headers.name
   val accept_ranges : Http_headers.name
+  val authorization : Http_headers.name
   val cache_control : Http_headers.name
   val connection : Http_headers.name
   val content_disposition : Http_headers.name
