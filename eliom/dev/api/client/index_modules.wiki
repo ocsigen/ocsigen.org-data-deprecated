@@ -94,7 +94,7 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Eliom_react"| module Eliom_react >> |<<div class="odocwiki_info"|~Client side type declarations for ~React event propagation~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Eliom_registration"| module Eliom_registration >> |<<div class="odocwiki_info"|~/~*
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Eliom_registration"| module Eliom_registration >> |<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|page>> et al~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Eliom_registration_sigs"| module Eliom_registration_sigs >> |<<div class="odocwiki_info"|~Whether the service is capable to send application content when
@@ -253,7 +253,9 @@
     like standard ~Reactive~Data
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Redirection"| module Eliom_registration.Redirection >> ~[<<a_api subproject="client" | module Eliom_registration >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Redirection"| module Eliom_registration.Redirection >> ~[<<a_api subproject="client" | module Eliom_registration >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|page>> et al~.
+>>
+|
 |@@ @style="tet-align: left;"@@\\S|
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="S"| module Eliom_shared.React.S >> ~[<<a_api subproject="client" | module Eliom_shared.React >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="S"| module Eliom_react.S >> ~[<<a_api subproject="client" | module Eliom_react >>~]||
