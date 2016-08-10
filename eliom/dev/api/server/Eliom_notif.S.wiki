@@ -1,0 +1,29 @@
+=Module type <<a_api_type subproject="server" | module type Eliom_notif.S >> =
+<<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module type>> <<span class="ocsforge_color_uid"|S>> <<span class="ocsforge_color_delimiter"|~=>> <<span class="ocsforge_color_keyword"|sig>><<a_api subproject="server" text=".." | module type Eliom_notif.S >><<span class="ocsforge_color_keyword"|end>>>>
+----
+<<pre class="ocsforge_color odocwiki_code" id="TYPEidentity"|<<span class="ocsforge_color_keyword"|type>> <<span class="odocwiki_name"|identity>>>><<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|identity>> is the type of values used to differentiate one client
+      from another~.
+>>
+<<pre class="ocsforge_color odocwiki_code" id="TYPEkey"|<<span class="ocsforge_color_keyword"|type>> <<span class="odocwiki_name"|key>>>><<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|key>> is the type of values designating a given resource~.
+>>
+<<pre class="ocsforge_color odocwiki_code" id="TYPEnotification"|<<span class="ocsforge_color_keyword"|type>> <<span class="odocwiki_name"|notification>>>><<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|notification>> is the type of values to notifiy clients with~.
+>>
+<<pre id="VALequal_key" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|equal~_key>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<a_api subproject="server" text="key" | type Eliom_notif.S.key >> <<span class="ocsforge_color_delimiter"| -> >> <<a_api subproject="server" text="key" | type Eliom_notif.S.key >> <<span class="ocsforge_color_delimiter"| -> >> bool>>>><<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|equal~_key>> is a function testing the equality between two values
+      of type <<span class="odocwiki_inlinecode"|key>>~.
+>>
+<<pre id="VALequal_identity" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|equal~_identity>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<a_api subproject="server" text="identity" | type Eliom_notif.S.identity >> <<span class="ocsforge_color_delimiter"| -> >> <<a_api subproject="server" text="identity" | type Eliom_notif.S.identity >> <<span class="ocsforge_color_delimiter"| -> >> bool>>>><<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|equal~_identity>> is the same as <<span class="odocwiki_inlinecode"|equal~_key>> but for values of type
+      <<span class="odocwiki_inlinecode"|identity>>~.
+>>
+<<pre id="VALget_identity" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|get~_identity>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|unit <<span class="ocsforge_color_delimiter"| -> >> <<a_api subproject="server" text="identity" | type Eliom_notif.S.identity >> <<span class="ocsforge_color_uid"|Lwt>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>>>>>><<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|get~_identity>> is a function returning a value of type <<span class="odocwiki_inlinecode"|identity>>
+      corresponding to a client~.
+>>
+<<pre id="VALmax_resource" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|max~_resource>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|int>>>><<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|max~_resource>> is the initial size for the hash table storing the data of
+      clients listenning on resources~, for best results it should be on the
+      order of the expected number of different resources one may want to be
+      able to listen to~.
+>>
+<<pre id="VALmax_identity_per_resource" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|max~_identity~_per~_resource>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|int>>>><<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|max~_identity~_per~_resource>> is the initial size for the tables storing the
+      data of clients listenning on one given resource~, fo best results it
+      should be on the order of the expected number of clients that may listen
+      on a given resource~.
+>>

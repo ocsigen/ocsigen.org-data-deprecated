@@ -1,0 +1,26 @@
+<<code language="ocaml" | sig
+  module type S =
+    sig
+      type identity
+      type key
+      type notification
+      val equal_key : Eliom_notif.S.key -> Eliom_notif.S.key -> bool
+      val equal_identity :
+        Eliom_notif.S.identity -> Eliom_notif.S.identity -> bool
+      val get_identity : unit -> Eliom_notif.S.identity Lwt.t
+      val max_resource : int
+      val max_identity_per_resource : int
+    end
+  module Make :
+    functor (A : S) ->
+      sig
+        val listen : A.key -> unit
+        val unlisten : A.key -> unit
+        val notify :
+          ?notforme:bool ->
+          A.key -> (A.identity -> A.notification option Lwt.t) -> unit
+        val client_ev :
+          unit -> (A.key * A.notification) Eliom_react.Down.t Lwt.t
+        val clean : unit -> unit Lwt.t
+      end
+end >>

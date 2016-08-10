@@ -148,7 +148,14 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="id"| type Eliom_service_sigs.S.id >> ~[<<a_api subproject="server" | module Eliom_service_sigs.S >>~]|<<div class="odocwiki_info"|**~Service identifier**
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="identity"| type Eliom_notif.S.identity >> ~[<<a_api subproject="server" | module Eliom_notif.S >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|identity>> is the type of values used to differentiate one client
+      from another~.
+>>
+|
 |@@ @style="tet-align: left;"@@\\K|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="key"| type Eliom_notif.S.key >> ~[<<a_api subproject="server" | module Eliom_notif.S >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|key>> is the type of values designating a given resource~.
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="kind"| type Eliom_registration.kind >> ~[<<a_api subproject="server" | module Eliom_registration >>~]|<<div class="odocwiki_info"|~The type <<span class="odocwiki_inlinecode"|kind>> is an abstract type for the ~H~T~T~P frame returned by
     a service~.
 >>
@@ -193,6 +200,9 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="non_localized_params"| type Eliom_parameter_sigs.S.non_localized_params >> ~[<<a_api subproject="server" | module Eliom_parameter_sigs.S >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="non_ocaml"| type Eliom_service_sigs.TYPES.non_ocaml >> ~[<<a_api subproject="server" | module Eliom_service_sigs.TYPES >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="non_reg"| type Eliom_service_sigs.TYPES.non_reg >> ~[<<a_api subproject="server" | module Eliom_service_sigs.TYPES >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="notification"| type Eliom_notif.S.notification >> ~[<<a_api subproject="server" | module Eliom_notif.S >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|notification>> is the type of values to notifiy clients with~.
+>>
+|
 |@@ @style="tet-align: left;"@@\\O|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="ocaml"| type Eliom_service_sigs.TYPES.ocaml >> ~[<<a_api subproject="server" | module Eliom_service_sigs.TYPES >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="ocaml"| type Eliom_parameter_sigs.S.ocaml >> ~[<<a_api subproject="server" | module Eliom_parameter_sigs.S >>~]|<<div class="odocwiki_info"|marshaled ~O~Caml values of type ~'a

@@ -105,6 +105,9 @@ file~.
     pages~.
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Eliom_notif"| module Eliom_notif >> |<<div class="odocwiki_info"|~Input signature of the functor <<span class="odocwiki_inlinecode"|~Eliom~_notif~.~Make>>~.
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Eliom_openid"| module Eliom_openid >> |<<div class="odocwiki_info"|~Open~I~D identification
 >>
 |
@@ -247,6 +250,7 @@ file~.
 |
 |@@ @style="tet-align: left;"@@\\M|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Make"| module Eliom_openid.Make >> ~[<<a_api subproject="server" | module Eliom_openid >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Make"| module Eliom_notif.Make >> ~[<<a_api subproject="server" | module Eliom_notif >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Make"| module Eliom_mkreg.Make >> ~[<<a_api subproject="server" | module Eliom_mkreg >>~]|<<div class="odocwiki_info"|~Creates modules to register services for one type of pages
 >>
 |

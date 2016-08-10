@@ -1,0 +1,10 @@
+<<code language="ocaml" | functor (A : S) ->
+  sig
+    val listen : A.key -> unit
+    val unlisten : A.key -> unit
+    val notify :
+      ?notforme:bool ->
+      A.key -> (A.identity -> A.notification option Lwt.t) -> unit
+    val client_ev : unit -> (A.key * A.notification) Eliom_react.Down.t Lwt.t
+    val clean : unit -> unit Lwt.t
+  end >>

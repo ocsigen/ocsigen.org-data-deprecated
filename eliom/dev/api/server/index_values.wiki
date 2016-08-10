@@ -137,10 +137,17 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="checkbox"| value Eliom_form_sigs.S.checkbox >> ~[<<a_api subproject="server" | module Eliom_form_sigs.S >>~]|<<div class="odocwiki_info"|~Creates a checkbox <<span class="odocwiki_inlinecode"|~<input~>>> tag~.
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="clean"| value Eliom_notif.Make.clean >> ~[<<a_api subproject="server" | module Eliom_notif.Make >>~]|<<div class="odocwiki_info"|~Call <<span class="odocwiki_inlinecode"|clean freq>> to launch an asynchronous thread clearing the tables
+      from empty data~.
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="clean_request_cache"| value Eliom_request_info.clean_request_cache >> ~[<<a_api subproject="server" | module Eliom_request_info >>~]|<<div class="odocwiki_info"|~Remove all data from the request cache
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="client"| value Eliom_shared_sigs.VALUE.client >> ~[<<a_api subproject="server" | module Eliom_shared_sigs.VALUE >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|local x>> is the local portion of <<span class="odocwiki_inlinecode"|x>>~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="client_ev"| value Eliom_notif.Make.client_ev >> ~[<<a_api subproject="server" | module Eliom_notif.Make >>~]|<<div class="odocwiki_info"|~Returns the client react event~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="client_value"| value Eliom_syntax.client_value >> ~[<<a_api subproject="server" | module Eliom_syntax >>~]|<<div class="odocwiki_info"|~Registers a client value datum for the next server section when
@@ -338,6 +345,14 @@
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="entry"| value Atom_feed.entry >> ~[<<a_api subproject="server" | module Atom_feed >>~]|<<div class="odocwiki_info"|~Entry tag
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="equal_identity"| value Eliom_notif.S.equal_identity >> ~[<<a_api subproject="server" | module Eliom_notif.S >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|equal~_identity>> is the same as <<span class="odocwiki_inlinecode"|equal~_key>> but for values of type
+      <<span class="odocwiki_inlinecode"|identity>>~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="equal_key"| value Eliom_notif.S.equal_key >> ~[<<a_api subproject="server" | module Eliom_notif.S >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|equal~_key>> is a function testing the equality between two values
+      of type <<span class="odocwiki_inlinecode"|key>>~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="eref"| value Eliom_reference.Volatile.eref >> ~[<<a_api subproject="server" | module Eliom_reference.Volatile >>~]||
@@ -555,6 +570,10 @@
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="get_http_method"| value Eliom_request_info.get_http_method >> ~[<<a_api subproject="server" | module Eliom_request_info >>~]|<<div class="odocwiki_info"|returns the ~H~T~T~P method used for the request ~(usually ~G~E~T or ~P~O~S~T~)~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="get_identity"| value Eliom_notif.S.get_identity >> ~[<<a_api subproject="server" | module Eliom_notif.S >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|get~_identity>> is a function returning a value of type <<span class="odocwiki_inlinecode"|identity>>
+      corresponding to a client~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="get_initial_get_params"| value Eliom_request_info.get_initial_get_params >> ~[<<a_api subproject="server" | module Eliom_request_info >>~]|<<div class="odocwiki_info"|returns all parameters of the ~U~R~L ~(~G~E~T parameters~)
@@ -836,6 +855,9 @@
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="list_scope_hierarchies"| value Eliom_common.list_scope_hierarchies >> ~[<<a_api subproject="server" | module Eliom_common >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="listen"| value Eliom_notif.Make.listen >> ~[<<a_api subproject="server" | module Eliom_notif.Make >>~]|<<div class="odocwiki_info"|~Make client process listen on data whose index is <<span class="odocwiki_inlinecode"|key>>
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="local"| value Eliom_shared_sigs.VALUE.local >> ~[<<a_api subproject="server" | module Eliom_shared_sigs.VALUE >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="local_find"| value Eliom_cscache.local_find >> ~[<<a_api subproject="server" | module Eliom_cscache >>~]|<<div class="odocwiki_info"|~Find a piece of data in local cache~,
       without trying to fetch it from server~.
@@ -892,6 +914,18 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="map"| value Eliom_shared_sigs.S.map >> ~[<<a_api subproject="server" | module Eliom_shared_sigs.S >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="map_p"| value Eliom_shared_sigs.RLIST.Lwt.map_p >> ~[<<a_api subproject="server" | module Eliom_shared_sigs.RLIST.Lwt >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="map_s"| value Eliom_shared_sigs.S.Lwt.map_s >> ~[<<a_api subproject="server" | module Eliom_shared_sigs.S.Lwt >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="max_identity_per_resource"| value Eliom_notif.S.max_identity_per_resource >> ~[<<a_api subproject="server" | module Eliom_notif.S >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|max~_identity~_per~_resource>> is the initial size for the tables storing the
+      data of clients listenning on one given resource~, fo best results it
+      should be on the order of the expected number of clients that may listen
+      on a given resource~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="max_resource"| value Eliom_notif.S.max_resource >> ~[<<a_api subproject="server" | module Eliom_notif.S >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|max~_resource>> is the initial size for the hash table storing the data of
+      clients listenning on resources~, for best results it should be on the
+      order of the expected number of different resources one may want to be
+      able to listen to~.
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="menu"| value Eliom_tools.HTML5_TOOLS.menu >> ~[<<a_api subproject="server" | module Eliom_tools.HTML5_TOOLS >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|menu elts ~(~)>>~, where <<span class="odocwiki_inlinecode"|elts>> is a list of pair
       <<span class="odocwiki_inlinecode"|~(service~, content~)>>~, creates a list of link towards the
       <<span class="odocwiki_inlinecode"|service>>s~.
@@ -943,6 +977,10 @@
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="node"| value Eliom_content.Svg.R.node >> ~[<<a_api subproject="server" | module Eliom_content.Svg.R >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|node s>> produces an <<span class="odocwiki_inlinecode"|~'a elt>> out of the shared reactive
         signal <<span class="odocwiki_inlinecode"|s>>~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="notify"| value Eliom_notif.Make.notify >> ~[<<a_api subproject="server" | module Eliom_notif.Make >>~]|<<div class="odocwiki_info"|~Call <<span class="odocwiki_inlinecode"|notify key f>> to send a notification to all clients currently
+      listening on data referenced by <<span class="odocwiki_inlinecode"|key>>~.
 >>
 |
 |@@ @style="tet-align: left;"@@\\O|
@@ -1336,6 +1374,9 @@
 |@@ @style="tet-align: left;"@@\\U|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="unit"| value Eliom_parameter_sigs.S.unit >> ~[<<a_api subproject="server" | module Eliom_parameter_sigs.S >>~]|<<div class="odocwiki_info"|~Specifying parameter as <<span class="odocwiki_inlinecode"|unit>> is used for services that don~'t
       have any parameters
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="unlisten"| value Eliom_notif.Make.unlisten >> ~[<<a_api subproject="server" | module Eliom_notif.Make >>~]|<<div class="odocwiki_info"|~Stop listening on data <<span class="odocwiki_inlinecode"|key>>
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="unregister"| value Eliom_service.unregister >> ~[<<a_api subproject="server" | module Eliom_service >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|unregister service>> unregister the service handler
