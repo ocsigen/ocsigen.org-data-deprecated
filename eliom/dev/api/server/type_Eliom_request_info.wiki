@@ -1,5 +1,6 @@
 <<code language="ocaml" | sig
   val get_http_method : unit -> Ocsigen_http_frame.Http_header.http_method
+  val get_http_header : unit -> Ocsigen_http_frame.Http_header.http_header
   val get_user_agent : unit -> string
   val get_full_url : unit -> string
   val get_remote_ip : unit -> string

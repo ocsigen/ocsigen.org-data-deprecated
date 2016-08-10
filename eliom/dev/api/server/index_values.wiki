@@ -551,6 +551,9 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="get_hostname"| value Eliom_request_info.get_hostname >> ~[<<a_api subproject="server" | module Eliom_request_info >>~]|<<div class="odocwiki_info"|returns the hostname used for absolute links~.
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="get_http_header"| value Eliom_request_info.get_http_header >> ~[<<a_api subproject="server" | module Eliom_request_info >>~]|<<div class="odocwiki_info"|returns the ~H~T~T~P header of the request
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="get_http_method"| value Eliom_request_info.get_http_method >> ~[<<a_api subproject="server" | module Eliom_request_info >>~]|<<div class="odocwiki_info"|returns the ~H~T~T~P method used for the request ~(usually ~G~E~T or ~P~O~S~T~)~.
 >>
 |
