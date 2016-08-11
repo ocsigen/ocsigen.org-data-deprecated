@@ -153,7 +153,7 @@
     ~When the service is called from an ~Eliom application~, this is
     implemented with half~-redirection ~(a redirection that leaves the
     application~)~. ~Hence~, the service may be called two times in a row
-    and you should not use this function for service that use ~P~O~S~T
+    and you should not use this function for services that use ~P~O~S~T
     parameters~.
 >>
 <<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module>> <<a_api subproject="server" text="String" | module Eliom_registration.String >> <<span class="ocsforge_color_delimiter"|~:>> \\  <<span class="odocwiki_type"|<<a_api subproject="server" text="Eliom_registration_sigs.S" | module Eliom_registration_sigs.S >>>><<span class="odocwiki_type"| \\  with type page = string * string\\   and type options = int\\   and type return = Eliom_service.non_ocaml\\   and type result = unknown_content kind>>>><<div class="odocwiki_info"|~Eliom service registration for services that returns "byte"~-string
