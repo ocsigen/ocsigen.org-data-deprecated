@@ -6,6 +6,180 @@
 ~This module implements the ~Relying ~Party of the ~Open~I~D specification~,
     in stateful mode~.
 
+~This module implements the ~Relying ~Party of the ~Open~I~D specification~,
+    in stateful mode~.
+
+
+==@@id="2_Librarydescription"@@~Library description==
+
+
+~This module implements the ~Relying ~Party of the ~Open~I~D specification~,
+    in stateful mode~.
+
+
+==@@id="2_Librarydescription"@@~Library description==
+
+
+~The library provides means to authenticate an user
+    to a remote provider using the ~Open~I~D protocol~.
+    ~Basically~, you need to ask the user its ~Open~I~D url~, and
+    the fields you want to require ~(or none~, if you just want to
+    authenticate an user~)~, along with other information~.
+
+
+    ~The library uses an "hidden service" that is needed when the provider
+    redirects back to your site~. ~This service is registered in the library~, all you have
+    to do is to give a path for that service and a default handler
+    ~(if the user connects to that service without being in an authentication process~.~)
+    ~Here is a short example of how to use the library
+    
+<<code language='ocaml'|open Eliom_openid
+let messages = Eliom_state.create_volatile_table ()
+(* The login form *)
+let login_form = Eliom_service.new_service
+  ~path:["login-form"]
+  ~get_params: Eliom_parameter.unit
+  ()
+
+(* Initialize the library, and getting the authenticate function *)
+let authenticate = Eliom_openid.init ~path:["__openid_return_service"]
+    ~f: (fun _ _ -> Eliom_registration.Redirection.send login_form)
+
+(* Create the handler for the form *)
+(* We have to use Eliom_registration.String_redirection as we
+   redirect the user to her provider *)
+let form_handler = Eliom_registration.String_redirection.register_new_post_coservice
+    ~fallback: login_form
+    ~post_params: (Eliom_parameter.string "url")
+    (fun _ url ->
+       authenticate
+    ~max_auth_age: 4 (* Requires that if the user logged in more that 4 seconds ago
+                        he needs to relog in *)
+    ~required: [Eliom_openid.Email] (* Requires his e-mail *)
+    ~immediate: false
+   url
+   (fun result ->
+     let string =
+       match result with
+         | Setup_needed -> "setup needed" | Canceled -> "canceled"
+         | Result result ->
+           try List.assoc Email result.fields with Not_found -> "No e-mail :("
+     in
+     Eliom_state.set_volatile_session_data ~table:messages string;
+     Eliom_registration.Redirection.send login_form))
+
+open XHTML
+let _ = Eliom_registration.Xhtml.register
+    ~service: login_form
+    (fun _ _ ->
+    (match Eliom_state.get_volatile_session_data ~table: messages () with
+     | Eliom_state.Data s ->
+       Eliom_state.discard () ~>>= fun () ->
+       Lwt.return [p [pcdata ("Authentication result: "^ s)]]
+     | _ -> Lwt.return []) ~>>= fun message ->
+    let form =
+    Eliom_registration.Xhtml.post_form ~service:form_handler
+      (fun url ->
+        [p [pcdata "Your OpenID identifier: ";
+            Eliom_registration.Xhtml.string_input ~input_type:`Text ~name:url ();
+            Eliom_registration.Xhtml.string_input ~input_type:`Submit ~value:"Login" ();
+           ]]) ()
+    in
+    Lwt.return
+      (html
+           (head (title (pcdata "A sample test")) [])
+           (body
+              (message @ [form]))))
+>>
+
+
+~This module implements the ~Relying ~Party of the ~Open~I~D specification~,
+    in stateful mode~.
+
+
+==@@id="2_Librarydescription"@@~Library description==
+
+
+~The library provides means to authenticate an user
+    to a remote provider using the ~Open~I~D protocol~.
+    ~Basically~, you need to ask the user its ~Open~I~D url~, and
+    the fields you want to require ~(or none~, if you just want to
+    authenticate an user~)~, along with other information~.
+
+
+    ~The library uses an "hidden service" that is needed when the provider
+    redirects back to your site~. ~This service is registered in the library~, all you have
+    to do is to give a path for that service and a default handler
+    ~(if the user connects to that service without being in an authentication process~.~)
+    ~Here is a short example of how to use the library
+    
+<<code language='ocaml'|open Eliom_openid
+let messages = Eliom_state.create_volatile_table ()
+(* The login form *)
+let login_form = Eliom_service.new_service
+  ~path:["login-form"]
+  ~get_params: Eliom_parameter.unit
+  ()
+
+(* Initialize the library, and getting the authenticate function *)
+let authenticate = Eliom_openid.init ~path:["__openid_return_service"]
+    ~f: (fun _ _ -> Eliom_registration.Redirection.send login_form)
+
+(* Create the handler for the form *)
+(* We have to use Eliom_registration.String_redirection as we
+   redirect the user to her provider *)
+let form_handler = Eliom_registration.String_redirection.register_new_post_coservice
+    ~fallback: login_form
+    ~post_params: (Eliom_parameter.string "url")
+    (fun _ url ->
+       authenticate
+    ~max_auth_age: 4 (* Requires that if the user logged in more that 4 seconds ago
+                        he needs to relog in *)
+    ~required: [Eliom_openid.Email] (* Requires his e-mail *)
+    ~immediate: false
+   url
+   (fun result ->
+     let string =
+       match result with
+         | Setup_needed -> "setup needed" | Canceled -> "canceled"
+         | Result result ->
+           try List.assoc Email result.fields with Not_found -> "No e-mail :("
+     in
+     Eliom_state.set_volatile_session_data ~table:messages string;
+     Eliom_registration.Redirection.send login_form))
+
+open XHTML
+let _ = Eliom_registration.Xhtml.register
+    ~service: login_form
+    (fun _ _ ->
+    (match Eliom_state.get_volatile_session_data ~table: messages () with
+     | Eliom_state.Data s ->
+       Eliom_state.discard () ~>>= fun () ->
+       Lwt.return [p [pcdata ("Authentication result: "^ s)]]
+     | _ -> Lwt.return []) ~>>= fun message ->
+    let form =
+    Eliom_registration.Xhtml.post_form ~service:form_handler
+      (fun url ->
+        [p [pcdata "Your OpenID identifier: ";
+            Eliom_registration.Xhtml.string_input ~input_type:`Text ~name:url ();
+            Eliom_registration.Xhtml.string_input ~input_type:`Submit ~value:"Login" ();
+           ]]) ()
+    in
+    Lwt.return
+      (html
+           (head (title (pcdata "A sample test")) [])
+           (body
+              (message @ [form]))))
+>>
+
+
+
+==@@id="2_Documentation"@@~Documentation==
+
+
+~This module implements the ~Relying ~Party of the ~Open~I~D specification~,
+    in stateful mode~.
+
 
 ==@@id="2_Librarydescription"@@~Library description==
 
@@ -109,10 +283,10 @@ let _ = Eliom_registration.Xhtml.register
 >><<span class="odocwiki_comments_close"| ~*)>>>>>><<span class="odocwiki_variant"|<<span class="odocwiki_variant_constr"|<<span class="ocsforge_color_keyword"| ~|>> <<span class="ocsforge_color_uid"|Invalid_html_doc>> <<span class="ocsforge_color_keyword"|of>> <<span class="odocwiki_type"|string>>>><<span class="odocwiki_comments"|<<span class="odocwiki_comments_open"|(*>> <<span|<<div class="odocwiki_info"|~An error occured during the parsing of an user url in html format
 >>
 >><<span class="odocwiki_comments_close"| ~*)>>>>>>>>>><<div class="odocwiki_info"|~Error that may happen when identifiying an user
-
-~Prettyprint an ~Open~I~D ~Error
 >>
-<<pre id="VALstring_of_openid_error" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|string~_of~_openid~_error>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<a_api subproject="server" text="openid_error" | type Eliom_openid.openid_error >> <<span class="ocsforge_color_delimiter"| -> >> string>>>><<pre id="EXCEPTIONError" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|exception>> <<span class="odocwiki_name"|Error>> <<span class="ocsforge_color_keyword"|of>> <<span class="odocwiki_type"|<<a_api subproject="server" text="openid_error" | type Eliom_openid.openid_error >>>>>><<div class="odocwiki_info"|~Exception thrown by this module~'s function~.
+<<pre id="VALstring_of_openid_error" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|string~_of~_openid~_error>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<a_api subproject="server" text="openid_error" | type Eliom_openid.openid_error >> <<span class="ocsforge_color_delimiter"| -> >> string>>>><<div class="odocwiki_info"|~Prettyprint an ~Open~I~D ~Error
+>>
+<<pre id="EXCEPTIONError" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|exception>> <<span class="odocwiki_name"|Error>> <<span class="ocsforge_color_keyword"|of>> <<span class="odocwiki_type"|<<a_api subproject="server" text="openid_error" | type Eliom_openid.openid_error >>>>>><<div class="odocwiki_info"|~Exception thrown by this module~'s function~.
 >>
 <<pre class="ocsforge_color odocwiki_code" id="TYPEfield"|<<span class="ocsforge_color_keyword"|type>> <<span class="odocwiki_name"|field>> <<span class="ocsforge_color_delimiter"|~=>> <<span class="odocwiki_variants"|<<span class="odocwiki_variant"|<<span class="odocwiki_variant_constr"|<<span class="ocsforge_color_keyword"| ~|>> <<span class="ocsforge_color_uid"|Email>>>>>><<span class="odocwiki_variant"|<<span class="odocwiki_variant_constr"|<<span class="ocsforge_color_keyword"| ~|>> <<span class="ocsforge_color_uid"|Fullname>>>>>><<span class="odocwiki_variant"|<<span class="odocwiki_variant_constr"|<<span class="ocsforge_color_keyword"| ~|>> <<span class="ocsforge_color_uid"|DateOfBirth>>>>>><<span class="odocwiki_variant"|<<span class="odocwiki_variant_constr"|<<span class="ocsforge_color_keyword"| ~|>> <<span class="ocsforge_color_uid"|PostCode>>>>>><<span class="odocwiki_variant"|<<span class="odocwiki_variant_constr"|<<span class="ocsforge_color_keyword"| ~|>> <<span class="ocsforge_color_uid"|Timezone>>>>>><<span class="odocwiki_variant"|<<span class="odocwiki_variant_constr"|<<span class="ocsforge_color_keyword"| ~|>> <<span class="ocsforge_color_uid"|Language>>>>>><<span class="odocwiki_variant"|<<span class="odocwiki_variant_constr"|<<span class="ocsforge_color_keyword"| ~|>> <<span class="ocsforge_color_uid"|Country>>>>>><<span class="odocwiki_variant"|<<span class="odocwiki_variant_constr"|<<span class="ocsforge_color_keyword"| ~|>> <<span class="ocsforge_color_uid"|Gender>>>>>><<span class="odocwiki_variant"|<<span class="odocwiki_variant_constr"|<<span class="ocsforge_color_keyword"| ~|>> <<span class="ocsforge_color_uid"|Nickname>>>>>>>>>><<div class="odocwiki_info"|~A field you can request to the provider
 >>
@@ -156,7 +330,10 @@ let _ = Eliom_registration.Xhtml.register
 >>
 <<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module type>> <<a_api subproject="server" text="HiddenServiceInfo" | module type Eliom_openid.HiddenServiceInfo >> <<span class="ocsforge_color_delimiter"|~=>> <<span class="ocsforge_color_keyword"|sig>><<a_api subproject="server" text=".." | module type Eliom_openid.HiddenServiceInfo >><<span class="ocsforge_color_keyword"|end>>>><<div class="odocwiki_info"|~Information about the hidden service
 >>
-<<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module>> <<a_api subproject="server" text="Make" | module Eliom_openid.Make >> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_sig_block"|<<span class="ocsforge_color_keyword"|functor>> <<span class="ocsforge_color_delimiter"|(>>S <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<a_api subproject="server" text="HiddenServiceInfo" | module Eliom_openid.HiddenServiceInfo >>>><<span class="ocsforge_color_delimiter"|)>> <<span class="ocsforge_color_delimiter"|-~>>> \\  <<span class="ocsforge_color_keyword"|sig>><<a_api subproject="server" text=".." | module Eliom_openid.Make >><<span class="ocsforge_color_keyword"|end>>>>>>
+<<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module>> <<a_api subproject="server" text="Make" | module Eliom_openid.Make >> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_sig_block"|<<span class="ocsforge_color_keyword"|functor>> <<span class="ocsforge_color_delimiter"|(>>S <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<a_api subproject="server" text="HiddenServiceInfo" | module Eliom_openid.HiddenServiceInfo >>>><<span class="ocsforge_color_delimiter"|)>> <<span class="ocsforge_color_delimiter"|-~>>> \\  <<span class="ocsforge_color_keyword"|sig>><<a_api subproject="server" text=".." | module Eliom_openid.Make >><<span class="ocsforge_color_keyword"|end>>>>>><<div class="odocwiki_info"|~This functor build a hidden service that will be used to receive
+    the remote server~'s data~.
+>>
+
 
 ===@@id="3_Highlevelinterface"@@~High~-level interface===
 

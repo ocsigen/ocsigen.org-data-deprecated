@@ -22,7 +22,9 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="button_type"| type Eliom_form_sigs.button_type >> ~[<<a_api subproject="client" | module Eliom_form_sigs >>~]||
 |@@ @style="tet-align: left;"@@\\C|
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="caml_event_handler"| type Eliom_content_core.Xml.caml_event_handler >> ~[<<a_api subproject="client" | module Eliom_content_core.Xml >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="chandle"| type Eliom_shared_sigs.RLIST.chandle >> ~[<<a_api subproject="client" | module Eliom_shared_sigs.RLIST >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="chandle"| type Eliom_shared_sigs.RLIST.chandle >> ~[<<a_api subproject="client" | module Eliom_shared_sigs.RLIST >>~]|<<div class="odocwiki_info"|~Client~-side version of ~'a handle
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="client_form_handler"| type Eliom_client_core.client_form_handler >> ~[<<a_api subproject="client" | module Eliom_client_core >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="co"| type Eliom_service_sigs.TYPES.co >> ~[<<a_api subproject="client" | module Eliom_service_sigs.TYPES >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="compilation_unit_global_data"| type Eliom_client_core.compilation_unit_global_data >> ~[<<a_api subproject="client" | module Eliom_client_core >>~]||
@@ -61,11 +63,15 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="get"| type Eliom_service_sigs.TYPES.get >> ~[<<a_api subproject="client" | module Eliom_service_sigs.TYPES >>~]||
 |@@ @style="tet-align: left;"@@\\H|
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="handle"| type Eliom_shared.FakeReactiveData.RList.handle >> ~[<<a_api subproject="client" | module Eliom_shared.FakeReactiveData.RList >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="handle"| type Eliom_shared_sigs.RLIST.handle >> ~[<<a_api subproject="client" | module Eliom_shared_sigs.RLIST >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="handle"| type Eliom_shared_sigs.RLIST.handle >> ~[<<a_api subproject="client" | module Eliom_shared_sigs.RLIST >>~]|<<div class="odocwiki_info"|~Handles are used to manipulate reactive lists
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="hierarchical_site"| type Eliom_tools.hierarchical_site >> ~[<<a_api subproject="client" | module Eliom_tools >>~]|<<div class="odocwiki_info"|~Hierarchical sites description~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="hierarchical_site_item"| type Eliom_tools.hierarchical_site_item >> ~[<<a_api subproject="client" | module Eliom_tools >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="hierarchical_site_item"| type Eliom_tools.hierarchical_site_item >> ~[<<a_api subproject="client" | module Eliom_tools >>~]|<<div class="odocwiki_info"|~Menu entry description in a hierarchical site~.
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="http"| type Eliom_service_sigs.TYPES.http >> ~[<<a_api subproject="client" | module Eliom_service_sigs.TYPES >>~]||
 |@@ @style="tet-align: left;"@@\\I|
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="id"| type Eliom_content_core.Html.Id.id >> ~[<<a_api subproject="client" | module Eliom_content_core.Html.Id >>~]|<<div class="odocwiki_info"|~The type of global ~H~T~M~L~5 element identifier~.
@@ -96,7 +102,9 @@
 >>
 |
 |@@ @style="tet-align: left;"@@\\M|
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="main_page"| type Eliom_tools.main_page >> ~[<<a_api subproject="client" | module Eliom_tools >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="main_page"| type Eliom_tools.main_page >> ~[<<a_api subproject="client" | module Eliom_tools >>~]|<<div class="odocwiki_info"|~Main page description for a section of a hierarchical site~.
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="meth"| type Eliom_service_sigs.TYPES.meth >> ~[<<a_api subproject="client" | module Eliom_service_sigs.TYPES >>~]|<<div class="odocwiki_info"|**~Method specification datatype**
 >>
 |

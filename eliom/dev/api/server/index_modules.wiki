@@ -1,17 +1,6 @@
 =Index of modules=
 
 |@@ @style="tet-align: left;"@@\\A|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Action"| module Eliom_registration.Action >> ~[<<a_api subproject="server" | module Eliom_registration >>~]|<<div class="odocwiki_info"|~Eliom service registration for services that only execute
-    actions~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Any"| module Eliom_registration.Any >> ~[<<a_api subproject="server" | module Eliom_registration >>~]|<<div class="odocwiki_info"|~Eliom service registration for services that choose dynamically
-    what they want to send~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="App"| module Eliom_registration.App >> ~[<<a_api subproject="server" | module Eliom_registration >>~]|<<div class="odocwiki_info"|~Functor for application creation~.
->>
-|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Atom_feed"| module Atom_feed >> |<<div class="odocwiki_info"|~Everything we need to make an atom feed~.
 >>
 |
@@ -28,14 +17,7 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Cookies"| module Eliom_cookie.Cookies >> ~[<<a_api subproject="server" | module Eliom_cookie >>~]|<<div class="odocwiki_info"|~Map adressed by ~U~R~L path~, used for <<a_api subproject="server" | type Eliom_cookie.cookieset >>~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="CssText"| module Eliom_registration.CssText >> ~[<<a_api subproject="server" | module Eliom_registration >>~]|<<div class="odocwiki_info"|~Eliom service registration for services that returns ~C~S~S~.
->>
-|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Custom_data"| module Eliom_content.Html.Custom_data >> ~[<<a_api subproject="server" | module Eliom_content.Html >>~]|<<div class="odocwiki_info"|~Type~-safe custom data for ~H~T~M~L~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Customize"| module Eliom_registration.Customize >> ~[<<a_api subproject="server" | module Eliom_registration >>~]|<<div class="odocwiki_info"|~The <<span class="odocwiki_inlinecode"|~Customize>> functor allows specialization of service
-    registration functions by customizing the page type~.
 >>
 |
 |@@ @style="tet-align: left;"@@\\D|
@@ -84,9 +66,9 @@ file~.
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Eliom_cookie"| module Eliom_cookie >> |<<div class="odocwiki_info"|~Cookies table manipulation ~(~Duplicate of ~Ocsigen~_cookies~)~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Eliom_cscache"| module Eliom_cscache >> |<<div class="odocwiki_info"|~Client~-server cache for ~Eliom applications~,
-    that is used both for keeping data on client side
-    or keeping values in memory during a request~.
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Eliom_cscache"| module Eliom_cscache >> |<<div class="odocwiki_info"|~Client~-server cache for ~Eliom applications~, that is used both for
+    keeping data on client side or keeping values in memory during a
+    request~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Eliom_extension"| module Eliom_extension >> |<<div class="odocwiki_info"|~Allows ~Ocsigen~'s extension to access ~Eliom data~.
@@ -129,7 +111,7 @@ file~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Eliom_registration"| module Eliom_registration >> |<<div class="odocwiki_info"|~Eliom services registration for various kinds of page content~:
-    ~Eliom application~, valid <<a_api subproject="server" | module Eliom_registration.Html >>~, actions~, redirections~, static
+    ~Eliom application~, valid <<span class="odocwiki_inlinecode"|~Html>>~, actions~, redirections~, static
     files~, …
 >>
 |
@@ -164,7 +146,6 @@ file~.
     executed in a global~_data ~(cf~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Eliom_tmpl"| module Eliom_registration.Eliom_tmpl >> ~[<<a_api subproject="server" | module Eliom_registration >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Eliom_tools"| module Eliom_tools >> |<<div class="odocwiki_info"|~Helpers for ~(hierarchical~) menu generation in ~H~T~M~L~5~.
 >>
 |
@@ -201,30 +182,10 @@ file~.
     actually linking against ~Reactive~Data~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="File"| module Eliom_registration.File >> ~[<<a_api subproject="server" | module Eliom_registration >>~]|<<div class="odocwiki_info"|~Eliom service registration for services that returns file
-    contents~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="File_ct"| module Eliom_registration.File_ct >> ~[<<a_api subproject="server" | module Eliom_registration >>~]|<<div class="odocwiki_info"|~Same as file but makes possible to specify the content type for
-    each file~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Flow5"| module Eliom_registration.Flow5 >> ~[<<a_api subproject="server" | module Eliom_registration >>~]|<<div class="odocwiki_info"|~Eliom service registration and forms creation for fragment of
-    ~H~T~M~L~5 page~.
->>
-|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Form"| module Eliom_content_sigs.LINKS_AND_FORMS.Form >> ~[<<a_api subproject="server" | module Eliom_content_sigs.LINKS_AND_FORMS >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Full_state_name_table"| module Eliom_common.Full_state_name_table >> ~[<<a_api subproject="server" | module Eliom_common >>~]||
 |@@ @style="tet-align: left;"@@\\H|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Html"| module Eliom_registration.Html >> ~[<<a_api subproject="server" | module Eliom_registration >>~]|<<div class="odocwiki_info"|~Eliom service registration for services that return ~H~T~M~L~5
-    pages~.
->>
-|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Html"| module Eliom_content.Html >> ~[<<a_api subproject="server" | module Eliom_content >>~]|<<div class="odocwiki_info"|~Building and printing valid ~H~T~M~L~5 tree~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Html_text"| module Eliom_registration.Html_text >> ~[<<a_api subproject="server" | module Eliom_registration >>~]|<<div class="odocwiki_info"|~Eliom service registration and forms creation for untyped ~H~T~M~L
-    page~.
 >>
 |
 |@@ @style="tet-align: left;"@@\\I|
@@ -249,22 +210,16 @@ file~.
 >>
 |
 |@@ @style="tet-align: left;"@@\\M|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Make"| module Eliom_openid.Make >> ~[<<a_api subproject="server" | module Eliom_openid >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Make"| module Eliom_openid.Make >> ~[<<a_api subproject="server" | module Eliom_openid >>~]|<<div class="odocwiki_info"|~This functor build a hidden service that will be used to receive
+    the remote server~'s data~.
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Make"| module Eliom_notif.Make >> ~[<<a_api subproject="server" | module Eliom_notif >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Make"| module Eliom_mkreg.Make >> ~[<<a_api subproject="server" | module Eliom_mkreg >>~]|<<div class="odocwiki_info"|~Creates modules to register services for one type of pages
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Make_poly"| module Eliom_mkreg.Make_poly >> ~[<<a_api subproject="server" | module Eliom_mkreg >>~]|<<div class="odocwiki_info"|~Creating modules to register services for one type of
     parametrised pages
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Make_typed_xml_registration"| module Eliom_registration.Make_typed_xml_registration >> ~[<<a_api subproject="server" | module Eliom_registration >>~]|<<div class="odocwiki_info"|~Eliom service registration for services that returns fragment of
-    ~Ty~X~M~L~'s tree~.
->>
-|
-|@@ @style="tet-align: left;"@@\\O|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Ocaml"| module Eliom_registration.Ocaml >> ~[<<a_api subproject="server" | module Eliom_registration >>~]|<<div class="odocwiki_info"|~Eliom service registration for services that send marshalled ~O~Caml
-    values~.
 >>
 |
 |@@ @style="tet-align: left;"@@\\P|
@@ -304,34 +259,14 @@ file~.
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="ReactiveData"| module Eliom_shared.ReactiveData >> ~[<<a_api subproject="server" | module Eliom_shared >>~]|<<div class="odocwiki_info"|~Shared implementation of ~Reactive~Data
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Redirection"| module Eliom_registration.Redirection >> ~[<<a_api subproject="server" | module Eliom_registration >>~]|<<div class="odocwiki_info"|~Eliom service registration for services that returns a
-    redirections towards another service~.
->>
-|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Reg"| module Eliom_atom.Reg >> ~[<<a_api subproject="server" | module Eliom_atom >>~]||
 |@@ @style="tet-align: left;"@@\\S|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="S"| module Eliom_shared.React.S >> ~[<<a_api subproject="server" | module Eliom_shared.React >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="S"| module Eliom_react.S >> ~[<<a_api subproject="server" | module Eliom_react >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Streamlist"| module Eliom_registration.Streamlist >> ~[<<a_api subproject="server" | module Eliom_registration >>~]|<<div class="odocwiki_info"|~Eliom service registration for services that returns "byte"
-    contents with <<a_api project="ocsigenserver" text="Ocsigen's
-    streams"| module Ocsigen_stream>>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="String"| module Eliom_registration.String >> ~[<<a_api subproject="server" | module Eliom_registration >>~]|<<div class="odocwiki_info"|~Eliom service registration for services that returns "byte"~-string
-    contents~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="String_redirection"| module Eliom_registration.String_redirection >> ~[<<a_api subproject="server" | module Eliom_registration >>~]|<<div class="odocwiki_info"|~Eliom service registration for services that returns a
-    redirections towards a string~-~U~R~L~.
->>
-|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Svg"| module Eliom_content.Svg >> ~[<<a_api subproject="server" | module Eliom_content >>~]|<<div class="odocwiki_info"|~Building and pretty~-printing valid ~S~V~G tree~.
 >>
 |
 |@@ @style="tet-align: left;"@@\\U|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Unit"| module Eliom_registration.Unit >> ~[<<a_api subproject="server" | module Eliom_registration >>~]|<<div class="odocwiki_info"|~Similar to <<span class="odocwiki_inlinecode"|~Actions>> with <<span class="odocwiki_inlinecode"|`~No~Reload>> option~.
->>
-|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Up"| module Eliom_react.Up >> ~[<<a_api subproject="server" | module Eliom_react >>~]|<<div class="odocwiki_info"|~Event from client to server~.
 >>
 |

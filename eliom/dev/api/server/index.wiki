@@ -69,34 +69,17 @@ file~.
 >>
 |
 |<<a_api subproject="server" | module Eliom_registration >>|<<div class="odocwiki_info"|~Eliom services registration for various kinds of page content~:
-    ~Eliom application~, valid <<a_api subproject="server" | module Eliom_registration.Html >>~, actions~, redirections~, static
+    ~Eliom application~, valid <<span class="odocwiki_inlinecode"|~Html>>~, actions~, redirections~, static
     files~, …
 >>
 |
 |Eliom_registration.Html5||
-|<<a_api subproject="server" | module Eliom_registration.Action >>|<<div class="odocwiki_info"|~Eliom service registration for services that only execute
-    actions~.
->>
-|
-|<<a_api subproject="server" | module Eliom_registration.Ocaml >>|<<div class="odocwiki_info"|~Eliom service registration for services that send marshalled ~O~Caml
-    values~.
->>
-|
-|<<a_api subproject="server" | module Eliom_registration.App >>|<<div class="odocwiki_info"|~Functor for application creation~.
->>
-|
-|<<a_api subproject="server" | module Eliom_registration.File >>|<<div class="odocwiki_info"|~Eliom service registration for services that returns file
-    contents~.
->>
-|
-|<<a_api subproject="server" | module Eliom_registration.Any >>|<<div class="odocwiki_info"|~Eliom service registration for services that choose dynamically
-    what they want to send~.
->>
-|
-|<<a_api subproject="server" | module Eliom_registration.Redirection >>|<<div class="odocwiki_info"|~Eliom service registration for services that returns a
-    redirections towards another service~.
->>
-|
+|Eliom_registration.Action||
+|Eliom_registration.Ocaml||
+|Eliom_registration.App||
+|Eliom_registration.File||
+|Eliom_registration.Any||
+|Eliom_registration.Redirection||
 
 
 

@@ -73,9 +73,9 @@
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Eliom_content_sigs"| module Eliom_content_sigs >> ||
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Eliom_cscache"| module Eliom_cscache >> |<<div class="odocwiki_info"|~Client~-server cache for ~Eliom applications~,
-    that is used both for keeping data on client side
-    or keeping values in memory during a request~.
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Eliom_cscache"| module Eliom_cscache >> |<<div class="odocwiki_info"|~Client~-server cache for ~Eliom applications~, that is used both for
+    keeping data on client side or keeping values in memory during a
+    request~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Eliom_form_sigs"| module Eliom_form_sigs >> |<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|make~_uri service get~_params>> returns the ~U~R~L of

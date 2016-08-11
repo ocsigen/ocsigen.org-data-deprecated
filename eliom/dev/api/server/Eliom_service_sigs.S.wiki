@@ -6,6 +6,10 @@
 ==@@id="2_Servicecreation"@@~Service creation==
 
 
+
+==@@id="2_Servicecreation"@@~Service creation==
+
+
 ~See <<a_api subproject="server" | val Eliom_service_sigs.S.create >> for the main service creation function~.
 <<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|include>> <<a_api subproject="server" | module type Eliom_service_sigs.TYPES >>>>
 
@@ -131,6 +135,10 @@
       <<a_api subproject="server" | val Eliom_service.register_eliom_module >>~. ~Otherwise you will also
       get this exception~.//
 >>
+
+
+===@@id="3_Predefinedservices"@@~Predefined services===
+
 
 
 ===@@id="3_Predefinedservices"@@~Predefined services===

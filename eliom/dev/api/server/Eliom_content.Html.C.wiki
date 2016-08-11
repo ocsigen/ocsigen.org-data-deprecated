@@ -10,6 +10,10 @@
 ==@@id="2_Contentinjection"@@~Content injection==
 
 
+
+==@@id="2_Contentinjection"@@~Content injection==
+
+
 ~See ~Eliom manual for more detail on <<a_manual
         chapter="clientserver-html" fragment="inject" | DOM &
         Client-values >>~.
