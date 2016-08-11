@@ -47,6 +47,7 @@
   val if_range : Http_headers.name
   val last_modified : Http_headers.name
   val location : Http_headers.name
+  val pragma : Http_headers.name
   val server : Http_headers.name
   val set_cookie : Http_headers.name
   val status : Http_headers.name

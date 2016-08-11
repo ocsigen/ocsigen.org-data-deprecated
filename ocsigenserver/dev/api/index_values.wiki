@@ -711,6 +711,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="post_urlencoded_url"| value Ocsigen_http_client.post_urlencoded_url >> ~[<<a_api | module Ocsigen_http_client >>~]|<<div class="odocwiki_info"|~Do a ~G~E~T ~H~T~T~P request with ~U~R~L encoded parameters as content~.
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api text="pragma"| value Http_headers.pragma >> ~[<<a_api | module Http_headers >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="process_element"| value Ocsigen_extensions.Configuration.process_element >> ~[<<a_api | module Ocsigen_extensions.Configuration >>~]|<<div class="odocwiki_info"|~Process an ~X~M~L element by the specifications~.
 >>
 |
