@@ -94,6 +94,7 @@
   method textIndent : Js.js_string Js.t Js.prop
   method textTransform : Js.js_string Js.t Js.prop
   method top : Js.js_string Js.t Js.prop
+  method transform : Js.js_string Js.t Js.prop
   method verticalAlign : Js.js_string Js.t Js.prop
   method visibility : Js.js_string Js.t Js.prop
   method whiteSpace : Js.js_string Js.t Js.prop

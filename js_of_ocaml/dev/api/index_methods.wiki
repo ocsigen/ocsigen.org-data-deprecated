@@ -1894,6 +1894,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="transform"| method Dom_svg.viewSpec#transform >> ~[<<a_api | module Dom_svg >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="transform"| method Dom_svg.transformable#transform >> ~[<<a_api | module Dom_svg >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="transform"| method Dom_html.canvasRenderingContext2D#transform >> ~[<<a_api | module Dom_html >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="transform"| method Dom_html.cssStyleDeclaration#transform >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="transformString"| method Dom_svg.viewSpec#transformString >> ~[<<a_api | module Dom_svg >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="translate"| method Dom_svg.matrix#translate >> ~[<<a_api | module Dom_svg >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="translate"| method Dom_html.canvasRenderingContext2D#translate >> ~[<<a_api | module Dom_html >>~]||
