@@ -35,7 +35,7 @@
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="button_type"| type Eliom_form_sigs.button_type >> ~[<<a_api subproject="server" | module Eliom_form_sigs >>~]||
 |@@ @style="tet-align: left;"@@\\C|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="caml_event_handler"| type Eliom_content.Xml.caml_event_handler >> ~[<<a_api subproject="server" | module Eliom_content.Xml >>~]|<<div class="odocwiki_info"|~Values of type <<span class="odocwiki_inlinecode"|~'a caml~_event~_handler>> represents event handler
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="caml_event_handler"| type Eliom_content.Xml.caml_event_handler >> ~[<<a_api subproject="server" | module Eliom_content.Xml >>~]|<<div class="odocwiki_info"|~Values of type <<span class="odocwiki_inlinecode"|caml~_event~_handler>> represents event handler
       build with the <<span class="odocwiki_inlinecode"|~{~{ ~.~.~. ~}~}>> syntax ~(see the ~Eliom manual for more
       information on <<a_manual chapter="clientserver-html"
       fragment="syntax"|syntax extension>>~)~.

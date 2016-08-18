@@ -38,15 +38,11 @@
 
 ==@@id="2_Eventhandlers"@@~Event handlers ==
 
-<<pre class="ocsforge_color odocwiki_code" id="TYPEcaml_event_handler"|<<span class="ocsforge_color_keyword"|type>> <<span class="odocwiki_type"|-#<<span class="ocsforge_color_uid"|Dom_html>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|event>>>> <<span class="odocwiki_name"|caml~_event~_handler>>>><<div class="odocwiki_info"|~Values of type <<span class="odocwiki_inlinecode"|~'a caml~_event~_handler>> represents event handler
+<<pre class="ocsforge_color odocwiki_code" id="TYPEcaml_event_handler"|<<span class="ocsforge_color_keyword"|type>> <<span class="odocwiki_name"|caml~_event~_handler>>>><<div class="odocwiki_info"|~Values of type <<span class="odocwiki_inlinecode"|caml~_event~_handler>> represents event handler
       build with the <<span class="odocwiki_inlinecode"|~{~{ ~.~.~. ~}~}>> syntax ~(see the ~Eliom manual for more
       information on <<a_manual chapter="clientserver-html"
       fragment="syntax"|syntax extension>>~)~. ~Such values are
-      expected by functions like <<span class="odocwiki_inlinecode"|~Eliom~_content~.~Html~.a~_onclick>>~. ~The
-      type parameter is the type of the javascript event expected by
-      the handler~, for example <<a_api project="js_of_ocaml" | type
-      Dom_html.mouseEvent>> or <<a_api project="js_of_ocaml" |
-      type Dom_html.keyboardEvent >>~.
+      expected by functions like <<span class="odocwiki_inlinecode"|~Eliom~_content~.~Html~.a~_onclick>>~.
 >>
 <<pre id="VALwrap" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|wrap>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|elt <<span class="ocsforge_color_delimiter"| -> >> 'a <<span class="ocsforge_color_delimiter"| -> >> 'a <<a_api subproject="server" text="Eliom_wrap.wrapped_value" | type Eliom_wrap.wrapped_value >>>>>><<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|~Eliom~_content~.~Xml~.wrap page v>> is like <<span class="odocwiki_inlinecode"|~Eliom~_wrap~.wrap v>> but
       it makes sure that all <<span class="odocwiki_inlinecode"|elt>>s in <<span class="odocwiki_inlinecode"|v>> which are included in
