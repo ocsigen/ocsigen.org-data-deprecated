@@ -121,6 +121,12 @@
 >>
 |
 |@@ @style="tet-align: left;"@@\\K|
+|@@class="odocwiki_index"@ @@<<a_api text="Keyboard_code"| module Dom_html.Keyboard_code >> ~[<<a_api | module Dom_html >>~]|<<div class="odocwiki_info"|~Use <<span class="odocwiki_inlinecode"|~Keyboard~_code>> when you want to identify a key that the user pressed~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="Keyboard_key"| module Dom_html.Keyboard_key >> ~[<<a_api | module Dom_html >>~]|<<div class="odocwiki_info"|~Use <<span class="odocwiki_inlinecode"|~Keyboard~_key>> when you want to identify the character that the user typed~.
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api text="Keycode"| module Keycode >> ||
 |@@ @style="tet-align: left;"@@\\L|
 |@@class="odocwiki_index"@ @@<<a_api text="Length"| module CSS.Length >> ~[<<a_api | module CSS >>~]||

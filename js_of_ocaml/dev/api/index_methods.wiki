@@ -626,6 +626,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="code"| method File.fileError#code >> ~[<<a_api | module File >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="code"| method Dom_svg.svg_error#code >> ~[<<a_api | module Dom_svg >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="code"| method Dom_html.objectElement#code >> ~[<<a_api | module Dom_html >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="code"| method Dom_html.keyboardEvent#code >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="codeBase"| method Dom_html.objectElement#codeBase >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="codeType"| method Dom_html.objectElement#codeType >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="colSpan"| method Dom_html.tableCellElement#colSpan >> ~[<<a_api | module Dom_html >>~]||
@@ -1153,6 +1154,7 @@
 |@@ @style="tet-align: left;"@@\\K|
 |@@class="odocwiki_index"@ @@<<a_api text="key"| method Dom_html.storage#key >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="key"| method Dom_html.storageEvent#key >> ~[<<a_api | module Dom_html >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="key"| method Dom_html.keyboardEvent#key >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="keyCode"| method Dom_html.keyboardEvent#keyCode >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="keyIdentifier"| method Dom_html.keyboardEvent#keyIdentifier >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="keynewValue"| method Dom_html.storageEvent#keynewValue >> ~[<<a_api | module Dom_html >>~]||
@@ -1210,6 +1212,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="localStorage"| method Dom_html.window#localStorage >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="localeCompare"| method Js.js_string#localeCompare >> ~[<<a_api | module Js >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="location"| method Dom_html.window#location >> ~[<<a_api | module Dom_html >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="location"| method Dom_html.keyboardEvent#location >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="log"| method Js.math#log >> ~[<<a_api | module Js >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="log"| method Firebug.console#log >> ~[<<a_api | module Firebug >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="log_2"| method Firebug.console#log_2 >> ~[<<a_api | module Firebug >>~]||
@@ -2012,6 +2015,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="wheelDelta"| method Dom_html.mousewheelEvent#wheelDelta >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="wheelDeltaX"| method Dom_html.mousewheelEvent#wheelDeltaX >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="wheelDeltaY"| method Dom_html.mousewheelEvent#wheelDeltaY >> ~[<<a_api | module Dom_html >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="which"| method Dom_html.keyboardEvent#which >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="which"| method Dom_html.mouseEvent#which >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="whiteSpace"| method Dom_html.cssStyleDeclaration#whiteSpace >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="width"| method Dom_svg.foreignObjectElement#width >> ~[<<a_api | module Dom_svg >>~]||

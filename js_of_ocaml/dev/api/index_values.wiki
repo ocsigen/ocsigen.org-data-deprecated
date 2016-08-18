@@ -999,6 +999,8 @@
 |@@class="odocwiki_index"@ @@<<a_api text="of_em"| value Tyxml_cast_sigs.TO.of_em >> ~[<<a_api | module Tyxml_cast_sigs.TO >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="of_embed"| value Tyxml_cast_sigs.OF.of_embed >> ~[<<a_api | module Tyxml_cast_sigs.OF >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="of_embed"| value Tyxml_cast_sigs.TO.of_embed >> ~[<<a_api | module Tyxml_cast_sigs.TO >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="of_event"| value Dom_html.Keyboard_key.of_event >> ~[<<a_api | module Dom_html.Keyboard_key >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="of_event"| value Dom_html.Keyboard_code.of_event >> ~[<<a_api | module Dom_html.Keyboard_code >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="of_fieldSet"| value Tyxml_cast_sigs.OF.of_fieldSet >> ~[<<a_api | module Tyxml_cast_sigs.OF >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="of_fieldset"| value Tyxml_cast_sigs.TO.of_fieldset >> ~[<<a_api | module Tyxml_cast_sigs.TO >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="of_figcaption"| value Tyxml_cast_sigs.TO.of_figcaption >> ~[<<a_api | module Tyxml_cast_sigs.TO >>~]||

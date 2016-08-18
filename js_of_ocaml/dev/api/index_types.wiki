@@ -212,6 +212,8 @@
 |@@class="odocwiki_index"@ @@<<a_api text="t"| type Js.t >> ~[<<a_api | module Js >>~]|<<div class="odocwiki_info"|~Type of ~Javascript objects~.
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api text="t"| type Dom_html.Keyboard_key.t >> ~[<<a_api | module Dom_html.Keyboard_key >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="t"| type Dom_html.Keyboard_code.t >> ~[<<a_api | module Dom_html.Keyboard_code >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="t"| type Dom.DocumentPosition.t >> ~[<<a_api | module Dom.DocumentPosition >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="t"| type CSS.Angle.t >> ~[<<a_api | module CSS.Angle >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="t"| type CSS.Length.t >> ~[<<a_api | module CSS.Length >>~]|<<div class="odocwiki_info"|~The type of length attributes~.
