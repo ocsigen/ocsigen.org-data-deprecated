@@ -5,7 +5,18 @@
 
 
 
-|Os_shared||
+|<<a_api subproject="client" | module Os_current_user >>||
+|<<a_api subproject="client" | module Os_date >>||
+|<<a_api subproject="client" | module Os_email >>||
+|<<a_api subproject="client" | module Os_handlers >>||
+|<<a_api subproject="client" | module Os_msg >>||
+|<<a_api subproject="client" | module Os_notif >>||
+|<<a_api subproject="client" | module Os_page >>||
+|<<a_api subproject="client" | module Os_request_cache >>||
+|<<a_api subproject="client" | module Os_session >>||
+|<<a_api subproject="client" | module Os_tips >>||
+|<<a_api subproject="client" | module Os_user >>||
+|<<a_api subproject="client" | module Os_userbox >>||
 
 
 

@@ -1,5 +1,16 @@
 =~Server ~A~P~I
-==[[server/Os_sigs|Os_sigs]]
+==[[server/Os_current_user|Os_current_user]]
+==[[server/Os_date|Os_date]]
+==[[server/Os_email|Os_email]]
+==[[server/Os_handlers|Os_handlers]]
+==[[server/Os_msg|Os_msg]]
+==[[server/Os_notif|Os_notif]]
+==[[server/Os_page|Os_page]]
+==[[server/Os_request_cache|Os_request_cache]]
+==[[server/Os_session|Os_session]]
+==[[server/Os_tips|Os_tips]]
+==[[server/Os_user|Os_user]]
+==[[server/Os_userbox|Os_userbox]]
 ==~Index
 === <<a_api subproject="server" text="Index of types" | index types >>
 === <<a_api subproject="server" text="Index of exceptions" | index exceptions >>

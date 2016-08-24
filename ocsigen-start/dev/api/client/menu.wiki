@@ -1,4 +1,15 @@
 =~Ocsigen~-start client ~A~P~I
-==[[client/Os_shared|Os_shared]]
+==[[client/Os_current_user|Os_current_user]]
+==[[client/Os_date|Os_date]]
+==[[client/Os_email|Os_email]]
+==[[client/Os_handlers|Os_handlers]]
+==[[client/Os_msg|Os_msg]]
+==[[client/Os_notif|Os_notif]]
+==[[client/Os_page|Os_page]]
+==[[client/Os_request_cache|Os_request_cache]]
+==[[client/Os_session|Os_session]]
+==[[client/Os_tips|Os_tips]]
+==[[client/Os_user|Os_user]]
+==[[client/Os_userbox|Os_userbox]]
 ==~Index
 === <<a_api subproject="client" text="Index of modules" | index modules >>
