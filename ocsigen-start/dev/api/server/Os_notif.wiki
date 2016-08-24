@@ -1,0 +1,28 @@
+=Module <<a_api_type subproject="server" | module Os_notif >> =
+<<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module>> <<span class="ocsforge_color_uid"|<<span class="ocsforge_color_uid"|Os_notif>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="ocsforge_color_keyword"|sig>><<a_api subproject="server" text=".." | module Os_notif >><<span class="ocsforge_color_keyword"|end>>>>~Server to client notifications~.
+
+
+    ~This module makes possible for client side applications to be
+    notified of changes on some indexed data on the server~.
+
+
+    ~Apply functor <<span class="odocwiki_inlinecode"|~Make>> for each type of data you want to be able to listen on~.
+    ~Each client starts listening on one piece of data by calling function
+    <<span class="odocwiki_inlinecode"|listen>> with the index of that piece of data as parameter~.
+    ~Client stops listening by calling function <<span class="odocwiki_inlinecode"|unlisten>>~,
+    or when the client side state is closed ~(by timeout or when the user
+    logs out for example~)~.
+
+
+    ~When the data is modified on server side~, call function <<span class="odocwiki_inlinecode"|notify>>
+    with the index of the data~, and all clients listening to that piece
+    of data will receive a notification~. ~Function <<span class="odocwiki_inlinecode"|notify>> takes as parameter
+    the function that will build a customize notification for each user~.
+    ~(~Be careful to check that user has right to see this data at this moment~)~.
+
+
+    ~The functor will also create a client side react signal that will
+    be updated every time the client is notified~.
+
+----
+<<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module>> <<a_api subproject="server" text="Make" | module Os_notif.Make >> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_sig_block"|<<span class="ocsforge_color_keyword"|functor>> <<span class="ocsforge_color_delimiter"|(>>A <<span class="ocsforge_color_delimiter"|~:>> <<span class="ocsforge_color_keyword"|sig>><<span class="odocwiki_sig_block"|<<span class="ocsforge_color odocwiki_code" id="TYPEkey"|      <<span class="ocsforge_color_keyword"|type>> <<span class="odocwiki_name"|key>>>><<span class="ocsforge_color odocwiki_code" id="TYPEnotification"|      <<span class="ocsforge_color_keyword"|type>> <<span class="odocwiki_name"|notification>>>>>><<span class="ocsforge_color_keyword"|end>><<span class="ocsforge_color_delimiter"|)>> <<span class="ocsforge_color_delimiter"|-~>>> \\  <<span class="ocsforge_color_keyword"|sig>><<a_api subproject="server" text=".." | module Os_notif.Make >><<span class="ocsforge_color_keyword"|end>>>>>>

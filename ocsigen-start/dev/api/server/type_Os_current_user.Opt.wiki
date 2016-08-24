@@ -1,0 +1,4 @@
+<<code language="ocaml" | sig
+  val get_current_user : unit -> Os_user.t option
+  val get_current_userid : unit -> int64 option
+end >>
