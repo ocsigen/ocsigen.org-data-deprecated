@@ -110,7 +110,7 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="checkbox"| value Eliom_form_sigs.S.checkbox >> ~[<<a_api subproject="server" | module Eliom_form_sigs.S >>~]|<<div class="odocwiki_info"|~Creates a checkbox <<span class="odocwiki_inlinecode"|~<input~>>> tag~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="clean"| value Eliom_notif.Make.clean >> ~[<<a_api subproject="server" | module Eliom_notif.Make >>~]|<<div class="odocwiki_info"|~Call <<span class="odocwiki_inlinecode"|clean freq>> to launch an asynchronous thread clearing the tables
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="clean"| value Eliom_notif.Make.clean >> ~[<<a_api subproject="server" | module Eliom_notif.Make >>~]|<<div class="odocwiki_info"|~Call <<span class="odocwiki_inlinecode"|clean ~(~)>> to launch an asynchronous thread clearing the tables
       from empty data~.
 >>
 |
