@@ -2,6 +2,7 @@
   sig
     val listen : A.key -> unit
     val unlisten : A.key -> unit
+    val unlisten_user : userid:int64 -> A.key -> unit
     val notify :
       ?notforme:bool ->
       A.key -> (int64 option -> A.notification option Lwt.t) -> unit

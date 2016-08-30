@@ -309,6 +309,9 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="unlisten"| value Os_notif.Make.unlisten >> ~[<<a_api subproject="server" | module Os_notif.Make >>~]|<<div class="odocwiki_info"|~Stop listening on data <<span class="odocwiki_inlinecode"|key>>
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="unlisten_user"| value Os_notif.Make.unlisten_user >> ~[<<a_api subproject="server" | module Os_notif.Make >>~]|<<div class="odocwiki_info"|~Make a user stop listening on data <<span class="odocwiki_inlinecode"|key>>
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="update"| value Os_user.update >> ~[<<a_api subproject="server" | module Os_user >>~]|<<div class="odocwiki_info"|~Update the informations of a user~.
 >>
 |
