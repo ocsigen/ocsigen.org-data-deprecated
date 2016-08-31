@@ -1,5 +1,7 @@
 =Index of types=
 
+|@@ @style="tet-align: left;"@@\\A|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="activationkey_info"| type Os_user.activationkey_info >> ~[<<a_api subproject="server" | module Os_user >>~]||
 |@@ @style="tet-align: left;"@@\\C|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="content"| type Os_page.content >> ~[<<a_api subproject="server" | module Os_page >>~]|<<div class="odocwiki_info"|~An abstract type describing the content of a page
 >>

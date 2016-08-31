@@ -4,6 +4,7 @@
   val sign_up_handler : unit -> string -> unit Lwt.t
   val activation_handler :
     string -> unit -> Eliom_registration.Action.result Lwt.t
+  val add_email_handler : unit -> string -> unit Lwt.t
   val forgot_password_handler :
     (unit, unit, Eliom_service.get, Eliom_service.att, 'a,
      Eliom_service.non_ext, 'b, [< `WithSuffix | `WithoutSuffix ], unit,

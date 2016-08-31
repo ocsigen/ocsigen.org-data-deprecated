@@ -5,6 +5,7 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="activation_key_created"| value Os_msg.activation_key_created >> ~[<<a_api subproject="server" | module Os_msg >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="activation_key_outdated"| value Os_userbox.activation_key_outdated >> ~[<<a_api subproject="server" | module Os_userbox >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="add_activationkey"| value Os_user.add_activationkey >> ~[<<a_api subproject="server" | module Os_user >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="add_email_handler"| value Os_handlers.add_email_handler >> ~[<<a_api subproject="server" | module Os_handlers >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="add_preregister"| value Os_user.add_preregister >> ~[<<a_api subproject="server" | module Os_user >>~]|<<div class="odocwiki_info"|~Add an email into the preregister collections~.
 >>
 |
@@ -118,10 +119,14 @@
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="disconnect_handler"| value Os_handlers.disconnect_handler >> ~[<<a_api subproject="server" | module Os_handlers >>~]||
 |@@ @style="tet-align: left;"@@\\E|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="email_of_user"| value Os_user.email_of_user >> ~[<<a_api subproject="server" | module Os_user >>~]|<<div class="odocwiki_info"|~Retrieve one of the e~-mails of a user~.
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="email_is_validated"| value Os_user.email_is_validated >> ~[<<a_api subproject="server" | module Os_user >>~]|<<div class="odocwiki_info"|~Returns whether for a user designated by its id the given email has been
+    validated~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="email_of_userid"| value Os_user.email_of_userid >> ~[<<a_api subproject="server" | module Os_user >>~]|<<div class="odocwiki_info"|~Retrieve one of the e~-mails from user id~.
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="email_of_user"| value Os_user.email_of_user >> ~[<<a_api subproject="server" | module Os_user >>~]|<<div class="odocwiki_info"|~Retrieve the main e~-mail of a user~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="email_of_userid"| value Os_user.email_of_userid >> ~[<<a_api subproject="server" | module Os_user >>~]|<<div class="odocwiki_info"|~Retrieve the main e~-mail from user id~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="email_pattern"| value Os_email.email_pattern >> ~[<<a_api subproject="server" | module Os_email >>~]|<<div class="odocwiki_info"|~The pattern used to check the validity of an e~-mail address
@@ -139,6 +144,11 @@
 |
 |@@ @style="tet-align: left;"@@\\G|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="get"| value Os_request_cache.Cache_sig.get >> ~[<<a_api subproject="server" | module Os_request_cache.Cache_sig >>~]|<<div class="odocwiki_info"|~Get the value corresponding to the given key~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="get_activationkey_info"| value Os_user.get_activationkey_info >> ~[<<a_api subproject="server" | module Os_user >>~]|<<div class="odocwiki_info"|~Retrieve the data corresponding to an activation key~, each
+    call decrements the validity of the key by ~1 if it exists and
+    validity ~> ~0 ~(it remains at ~0 if it~'s already ~0~)~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="get_current_user"| value Os_current_user.Opt.get_current_user >> ~[<<a_api subproject="server" | module Os_current_user.Opt >>~]||
@@ -166,6 +176,10 @@
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="is_complete"| value Os_user.is_complete >> ~[<<a_api subproject="server" | module Os_user >>~]|<<div class="odocwiki_info"|~Returns true if the firstname and the lastname of <<span class="odocwiki_inlinecode"|t>> has not
  been completed yet~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="is_main_email"| value Os_user.is_main_email >> ~[<<a_api subproject="server" | module Os_user >>~]|<<div class="odocwiki_info"|~Returns whether an email is the  main email registered for a
+    given user designated by its id~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="is_preregistered"| value Os_user.is_preregistered >> ~[<<a_api subproject="server" | module Os_user >>~]|<<div class="odocwiki_info"|~Check wether or not a user exists~.
@@ -249,6 +263,11 @@
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="preregister_handler'"| value Os_handlers.preregister_handler' >> ~[<<a_api subproject="server" | module Os_handlers >>~]||
 |@@ @style="tet-align: left;"@@\\R|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="remove_email_from_user"| value Os_user.remove_email_from_user >> ~[<<a_api subproject="server" | module Os_user >>~]|<<div class="odocwiki_info"|~Removes the email <<span class="odocwiki_inlinecode"|email>> from the user with the id <<span class="odocwiki_inlinecode"|userid>>~,
+    if the email is registered as the main email for the user it fails
+    with the exception <<span class="odocwiki_inlinecode"|~Main~_email~_removal~_attempt>>~.
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="remove_preregister"| value Os_user.remove_preregister >> ~[<<a_api subproject="server" | module Os_user >>~]|<<div class="odocwiki_info"|~Rempve an email from the preregister collections~.
 >>
 |
@@ -321,6 +340,9 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="update_avatar"| value Os_user.update_avatar >> ~[<<a_api subproject="server" | module Os_user >>~]|<<div class="odocwiki_info"|~Update the avatar only
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="update_main_email"| value Os_user.update_main_email >> ~[<<a_api subproject="server" | module Os_user >>~]|<<div class="odocwiki_info"|~Sets the main email for a user with the id <<span class="odocwiki_inlinecode"|userid>> as the email <<span class="odocwiki_inlinecode"|email>>~.
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="update_password"| value Os_user.update_password >> ~[<<a_api subproject="server" | module Os_user >>~]|<<div class="odocwiki_info"|~Update the password only
 >>
 |
@@ -343,9 +365,6 @@
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="userbox"| value Os_userbox.userbox >> ~[<<a_api subproject="server" | module Os_userbox >>~]|<<div class="odocwiki_info"|~Connected user box or connexion box~, depending whether user
     is connected or not
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="userid_of_activationkey"| value Os_user.userid_of_activationkey >> ~[<<a_api subproject="server" | module Os_user >>~]|<<div class="odocwiki_info"|~Retrieve an userid from an activation key~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="userid_of_email"| value Os_user.userid_of_email >> ~[<<a_api subproject="server" | module Os_user >>~]||
