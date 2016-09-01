@@ -1,4 +1,7 @@
 <<code language="ocaml" | sig
+  type cropping = (float * float * float * float) React.S.t
+  type upload =
+      ?cropping:Ot_picture_uploader.cropping -> File.file Js.t -> unit Lwt.t
   type 'a service =
       (unit,
        'a * ((float * float * float * float) option * Eliom_lib.file_info),
@@ -34,6 +37,5 @@
     ?submit:[< Html_types.button_attrib > `Class ] Eliom_content.Html.attrib
             list *
             [< Html_types.button_content_fun ] Eliom_content.Html.elt list ->
-    'a Ot_picture_uploader.service ->
-    'a -> [> `Form ] Eliom_content.Html.elt Lwt.t
+    Ot_picture_uploader.upload -> [> `Form ] Eliom_content.Html.elt Lwt.t
 end >>

@@ -25,7 +25,7 @@
     not be selected using the ~T~A~B key~. ~When the popup is closed their old
     tab~Index value is restored~. ~Note~, that some elements that are tabbable in
     some browsers but not by specification ~(scrollable div~'s~) are not affected~.
-    ~If <<span class="odocwiki_inlinecode"|setup~_form>> ~(default~: false~) is true then the popup is scanned for a
+    ~If <<span class="odocwiki_inlinecode"|setup~_form>> ~(default~: ~None~) is true then the popup is scanned for a
     form element and <<span class="odocwiki_inlinecode"|setup~_tabcycle~_auto>> is applied~. ~If no form element is
     found~, the whole popup is scanned for form elements~.
 

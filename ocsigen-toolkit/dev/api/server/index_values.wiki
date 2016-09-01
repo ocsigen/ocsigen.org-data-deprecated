@@ -56,7 +56,7 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="make_hours_minutes_seq"| value Ot_time_picker.make_hours_minutes_seq >> ~[<<a_api subproject="server" | module Ot_time_picker >>~]|<<div class="odocwiki_info"|~Alias of <<span class="odocwiki_inlinecode"|make>>~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="mk_form"| value Ot_picture_uploader.mk_form >> ~[<<a_api subproject="server" | module Ot_picture_uploader >>~]|<<div class="odocwiki_info"|~Ready~-to~-use form~, using <<span class="odocwiki_inlinecode"|service>> and <<span class="odocwiki_inlinecode"|arg>>~.
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="mk_form"| value Ot_picture_uploader.mk_form >> ~[<<a_api subproject="server" | module Ot_picture_uploader >>~]|<<div class="odocwiki_info"|~Ready~-to~-use form~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="mk_service"| value Ot_picture_uploader.mk_service >> ~[<<a_api subproject="server" | module Ot_picture_uploader >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|mk~_service name arg~_deriver>>
@@ -64,14 +64,18 @@
 >>
 |
 |@@ @style="tet-align: left;"@@\\N|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="next"| value Ot_carousel.next >> ~[<<a_api subproject="server" | module Ot_carousel >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="next"| value Ot_carousel.next >> ~[<<a_api subproject="server" | module Ot_carousel >>~]|<<div class="odocwiki_info"|~Go to the next page ~(or more pages if <<span class="odocwiki_inlinecode"|offset>> is present~)~.
+>>
+|
 |@@ @style="tet-align: left;"@@\\O|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="of_string"| value Ot_social_meta.of_string >> ~[<<a_api subproject="server" | module Ot_social_meta >>~]||
 |@@ @style="tet-align: left;"@@\\P|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="preview"| value Ot_picture_uploader.preview >> ~[<<a_api subproject="server" | module Ot_picture_uploader >>~]|<<div class="odocwiki_info"|~Create a img element with no src~, no alt and <<span class="odocwiki_inlinecode"|ot~-pup~-preview>> class~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="previous"| value Ot_carousel.previous >> ~[<<a_api subproject="server" | module Ot_carousel >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="previous"| value Ot_carousel.previous >> ~[<<a_api subproject="server" | module Ot_carousel >>~]|<<div class="odocwiki_info"|~Go to the previous page ~(or mores page if <<span class="odocwiki_inlinecode"|offset>> is present~)~.
+>>
+|
 |@@ @style="tet-align: left;"@@\\R|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="ribbon"| value Ot_carousel.ribbon >> ~[<<a_api subproject="server" | module Ot_carousel >>~]|<<div class="odocwiki_info"|~Menu ~(or tabs~) for carousel~.
 >>

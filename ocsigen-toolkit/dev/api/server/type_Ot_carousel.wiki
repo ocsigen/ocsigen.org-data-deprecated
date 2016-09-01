@@ -33,13 +33,15 @@
     [> `Div ] Eliom_content.Html.elt
   val previous :
     ?a:[< Html_types.button_attrib ] Eliom_content.Html.attrib list ->
-    change:([> `Prev ] -> unit) Eliom_client_value.t ->
+    change:([> `Goto of int | `Prev ] -> unit) Eliom_client_value.t ->
+    ?offset:int Eliom_shared.React.S.t ->
     pos:int Eliom_shared.React.S.t ->
     Html_types.button_content Eliom_content.Html.elt list ->
     [> `Button ] Eliom_content.Html.elt
   val next :
     ?a:[< Html_types.button_attrib ] Eliom_content.Html.attrib list ->
-    change:([> `Next ] -> unit) Eliom_client_value.t ->
+    change:([> `Goto of int | `Next ] -> unit) Eliom_client_value.t ->
+    ?offset:int Eliom_shared.React.S.t ->
     pos:int Eliom_shared.React.S.t ->
     size:int Eliom_shared.React.S.t ->
     length:int ->
