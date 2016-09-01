@@ -7,7 +7,7 @@
     email : string;
     validity : int64;
     autoconnect : bool;
-    action : string;
+    action : [ `AccountActivation | `Custom of string | `PasswordReset ];
     data : string;
   }
   type t = {
@@ -28,7 +28,7 @@
   val is_complete : Os_user.t -> bool
   val add_activationkey :
     ?autoconnect:bool ->
-    ?action:string ->
+    ?action:[ `AccountActivation | `Custom of string | `PasswordReset ] ->
     ?data:string ->
     ?validity:int64 ->
     act_key:string -> userid:int64 -> email:string -> unit -> unit Lwt.t
