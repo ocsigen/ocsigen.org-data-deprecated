@@ -110,6 +110,7 @@
     Dom_html.animation_frame_request_id Js.meth
   method screen : Dom_html.screen Js.t Js.readonly_prop
   method scroll : int -> int -> unit Js.meth
+  method scrollBy : int -> int -> unit Js.meth
   method sessionStorage : Dom_html.storage Js.t Js.optdef Js.readonly_prop
   method setInterval :
     (unit -> unit) Js.callback -> float -> Dom_html.interval_id Js.meth

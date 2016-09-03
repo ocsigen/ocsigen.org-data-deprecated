@@ -1602,6 +1602,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="screenY"| method Dom_html.touch#screenY >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="screenY"| method Dom_html.mouseEvent#screenY >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="scroll"| method Dom_html.window#scroll >> ~[<<a_api | module Dom_html >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="scrollBy"| method Dom_html.window#scrollBy >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="scrollHeight"| method Dom_html.element#scrollHeight >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="scrollIntoView"| method Dom_html.element#scrollIntoView >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="scrollLeft"| method Dom_html.element#scrollLeft >> ~[<<a_api | module Dom_html >>~]||
