@@ -49,7 +49,7 @@ e_i : t_i               (1 <= i <= n)
 <<code language='ocaml'|constr : (t_1 -> ... -> t_n -> u Js.t) Js.constr
    e_i : t_i               (1 <= i <= n)
 ------------------------------------------------
-          new%js constr e1 ... en : u
+          new%js constr e1 ... en : u Js.t
    >>
 
    <<span class="odocwiki_inlinecode"| constr >> here must be an identifier~. ~For constructors
