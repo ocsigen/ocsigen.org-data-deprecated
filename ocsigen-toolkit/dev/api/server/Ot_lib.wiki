@@ -30,4 +30,6 @@ we may observe this~:
 because we probably want~, when capture~=true~, to capture the event as early as possible~.
 
 <<span class="odocwiki_inlinecode"|click~_outside e>> returns when user clicks outside element <<span class="odocwiki_inlinecode"|e>>~.
+    ~Will only catch clicks inside the element given as optional
+    parameter <<span class="odocwiki_inlinecode"|~?inside>> ~(default is <<span class="odocwiki_inlinecode"|~Dom~_html~.document~#~#~.body>>~)~.
 <<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module>> <<a_api subproject="server" text="List" | module Ot_lib.List >> <<span class="ocsforge_color_delimiter"|~:>> <<span class="ocsforge_color_keyword"|sig>><<a_api subproject="server" text=".." | module Ot_lib.List >><<span class="ocsforge_color_keyword"|end>>>>
