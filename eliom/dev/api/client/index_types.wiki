@@ -2,7 +2,6 @@
 
 |@@ @style="tet-align: left;"@@\\A|
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="aname"| type Eliom_content_core.Xml.aname >> ~[<<a_api subproject="client" | module Eliom_content_core.Xml >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="appl"| type Eliom_service_sigs.TYPES.appl >> ~[<<a_api subproject="client" | module Eliom_service_sigs.TYPES >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="att"| type Eliom_service_sigs.S.att >> ~[<<a_api subproject="client" | module Eliom_service_sigs.S >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="attached_info"| type Eliom_service_sigs.S.attached_info >> ~[<<a_api subproject="client" | module Eliom_service_sigs.S >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="attrib"| type Eliom_content_core.Html.attrib >> ~[<<a_api subproject="client" | module Eliom_content_core.Html >>~]||
@@ -86,9 +85,6 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="id"| type Eliom_content.Svg.Id.id >> ~[<<a_api subproject="client" | module Eliom_content.Svg.Id >>~]|<<div class="odocwiki_info"|~The type of global ~S~V~G element identifier~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="id"| type Eliom_service_sigs.S.id >> ~[<<a_api subproject="client" | module Eliom_service_sigs.S >>~]|<<div class="odocwiki_info"|**~Service identifier**
->>
-|
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="internal_event_handler"| type Eliom_content_core.Xml.internal_event_handler >> ~[<<a_api subproject="client" | module Eliom_content_core.Xml >>~]||
 |@@ @style="tet-align: left;"@@\\K|
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="keyboard_event_handler"| type Eliom_content_core.Xml.keyboard_event_handler >> ~[<<a_api subproject="client" | module Eliom_content_core.Xml >>~]||
@@ -149,6 +145,9 @@
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="params"| type Eliom_service_sigs.TYPES.params >> ~[<<a_api subproject="client" | module Eliom_service_sigs.TYPES >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="params_type"| type Eliom_parameter_sigs.S.params_type >> ~[<<a_api subproject="client" | module Eliom_parameter_sigs.S >>~]|<<div class="odocwiki_info"|~Abstract type for service parameters~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="path_option"| type Eliom_service_sigs.S.path_option >> ~[<<a_api subproject="client" | module Eliom_service_sigs.S >>~]|<<div class="odocwiki_info"|**~Optional service path**
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="post"| type Eliom_service_sigs.TYPES.post >> ~[<<a_api subproject="client" | module Eliom_service_sigs.TYPES >>~]||
@@ -239,8 +238,7 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="uri"| type Eliom_form_sigs.S.uri >> ~[<<a_api subproject="client" | module Eliom_form_sigs.S >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="uri"| type Eliom_content_sigs.LINKS_AND_FORMS.uri >> ~[<<a_api subproject="client" | module Eliom_content_sigs.LINKS_AND_FORMS >>~]||
 |@@ @style="tet-align: left;"@@\\W|
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="which_meth"| type Eliom_service_sigs.TYPES.which_meth >> ~[<<a_api subproject="client" | module Eliom_service_sigs.TYPES >>~]|<<div class="odocwiki_info"|~Like <<a_api subproject="client" | type Eliom_service_sigs.TYPES.meth >> but without the auxilliary parameters~; used to
-      query about the service method from outside~.
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="which_meth"| type Eliom_service_sigs.TYPES.which_meth >> ~[<<a_api subproject="client" | module Eliom_service_sigs.TYPES >>~]|<<div class="odocwiki_info"|~Like <<a_api subproject="client" | type Eliom_service_sigs.TYPES.meth >> but without the parameters
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="wrap"| type Eliom_content_core.Html.wrap >> ~[<<a_api subproject="client" | module Eliom_content_core.Html >>~]||

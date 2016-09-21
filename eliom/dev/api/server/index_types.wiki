@@ -2,7 +2,6 @@
 
 |@@ @style="tet-align: left;"@@\\A|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="all_scope"| type Eliom_common.all_scope >> ~[<<a_api subproject="server" | module Eliom_common >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="appl"| type Eliom_service_sigs.TYPES.appl >> ~[<<a_api subproject="server" | module Eliom_service_sigs.TYPES >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="application_content"| type Eliom_registration.application_content >> ~[<<a_api subproject="server" | module Eliom_registration >>~]|<<div class="odocwiki_info"|~The type <<span class="odocwiki_inlinecode"|application~_content>> is a refinement of <<span class="odocwiki_inlinecode"|appl~_service>>
     to be used as a phantom type parameters for
     <<a_api subproject="server" | type Eliom_registration.kind >>~.
@@ -144,9 +143,6 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="id"| type Eliom_content.Svg.Id.id >> ~[<<a_api subproject="server" | module Eliom_content.Svg.Id >>~]|<<div class="odocwiki_info"|~The type of global ~S~V~G element identifier~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="id"| type Eliom_service_sigs.S.id >> ~[<<a_api subproject="server" | module Eliom_service_sigs.S >>~]|<<div class="odocwiki_info"|**~Service identifier**
->>
-|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="identity"| type Eliom_notif.S.identity >> ~[<<a_api subproject="server" | module Eliom_notif.S >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|identity>> is the type of values used to differentiate one client
       from another~.
 >>
@@ -235,6 +231,9 @@
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="params"| type Eliom_service_sigs.TYPES.params >> ~[<<a_api subproject="server" | module Eliom_service_sigs.TYPES >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="params_type"| type Eliom_parameter_sigs.S.params_type >> ~[<<a_api subproject="server" | module Eliom_parameter_sigs.S >>~]|<<div class="odocwiki_info"|~Abstract type for service parameters~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="path_option"| type Eliom_service_sigs.S.path_option >> ~[<<a_api subproject="server" | module Eliom_service_sigs.S >>~]|<<div class="odocwiki_info"|**~Optional service path**
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="persistent_cookie_info"| type Eliom_state.Ext.persistent_cookie_info >> ~[<<a_api subproject="server" | module Eliom_state.Ext >>~]||
@@ -375,8 +374,7 @@
 >>
 |
 |@@ @style="tet-align: left;"@@\\W|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="which_meth"| type Eliom_service_sigs.TYPES.which_meth >> ~[<<a_api subproject="server" | module Eliom_service_sigs.TYPES >>~]|<<div class="odocwiki_info"|~Like <<a_api subproject="server" | type Eliom_service_sigs.TYPES.meth >> but without the auxilliary parameters~; used to
-      query about the service method from outside~.
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="which_meth"| type Eliom_service_sigs.TYPES.which_meth >> ~[<<a_api subproject="server" | module Eliom_service_sigs.TYPES >>~]|<<div class="odocwiki_info"|~Like <<a_api subproject="server" | type Eliom_service_sigs.TYPES.meth >> but without the parameters
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="wrap"| type Eliom_content.Svg.wrap >> ~[<<a_api subproject="server" | module Eliom_content.Svg >>~]||

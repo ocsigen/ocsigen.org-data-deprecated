@@ -60,8 +60,28 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="application_name"| value Eliom_registration_sigs.APP_PARAM.application_name >> ~[<<a_api subproject="server" | module Eliom_registration_sigs.APP_PARAM >>~]|<<div class="odocwiki_info"|~Name of the application~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="attach_global_to_fallback"| value Eliom_service_sigs.S.attach_global_to_fallback >> ~[<<a_api subproject="server" | module Eliom_service_sigs.S >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|attach~_global~_to~_fallback ~~fallback ~~service>> attaches the
-      global service <<span class="odocwiki_inlinecode"|service>> on the ~U~R~L of <<span class="odocwiki_inlinecode"|fallback>>~.
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="attach_existing"| value Eliom_service_sigs.S.attach_existing >> ~[<<a_api subproject="server" | module Eliom_service_sigs.S >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|attach~_existing ~~fallback ~~service ~(~)>> attaches the preexisting
+      path~-less service <<span class="odocwiki_inlinecode"|service>> on the ~U~R~L of <<span class="odocwiki_inlinecode"|fallback>>~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="attach_get"| value Eliom_service_sigs.S.attach_get >> ~[<<a_api subproject="server" | module Eliom_service_sigs.S >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|attach~_get ~~fallback ~~get~_params ~(~)>> attaches a new service on
+      the path of <<span class="odocwiki_inlinecode"|fallback>>~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="attach_get"| value Eliom_registration_sigs.S_poly_without_send.attach_get >> ~[<<a_api subproject="server" | module Eliom_registration_sigs.S_poly_without_send >>~]|<<div class="odocwiki_info"|~See <<a_api subproject="server" | val Eliom_registration_sigs.S.attach_get >>~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="attach_get"| value Eliom_registration_sigs.S.attach_get >> ~[<<a_api subproject="server" | module Eliom_registration_sigs.S >>~]|<<div class="odocwiki_info"|~Same as <<span class="odocwiki_inlinecode"|~Eliom~_service~.attach~_get>> followed by <<a_api subproject="server" | val Eliom_registration_sigs.S.register >>~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="attach_post"| value Eliom_service_sigs.S.attach_post >> ~[<<a_api subproject="server" | module Eliom_service_sigs.S >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|attach~_post ~~fallback ~~post~_params ~(~)>> attaches a new service
+      on the path of <<span class="odocwiki_inlinecode"|fallback>>~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="attach_post"| value Eliom_registration_sigs.S_poly_without_send.attach_post >> ~[<<a_api subproject="server" | module Eliom_registration_sigs.S_poly_without_send >>~]|<<div class="odocwiki_info"|~See <<a_api subproject="server" | val Eliom_registration_sigs.S.attach_post >>~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="attach_post"| value Eliom_registration_sigs.S.attach_post >> ~[<<a_api subproject="server" | module Eliom_registration_sigs.S >>~]|<<div class="odocwiki_info"|~Same as <<span class="odocwiki_inlinecode"|~Eliom~_service~.attach~_post>> followed by <<a_api subproject="server" | val Eliom_registration_sigs.S.register >>~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="attr"| value Eliom_content.Html.C.attr >> ~[<<a_api subproject="server" | module Eliom_content.Html.C >>~]||
@@ -178,7 +198,9 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="create"| value Eliom_service_sigs.S.create >> ~[<<a_api subproject="server" | module Eliom_service_sigs.S >>~]|<<div class="odocwiki_info"|**~Service definition**
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="create"| value Eliom_registration_sigs.S_poly_without_send.create >> ~[<<a_api subproject="server" | module Eliom_registration_sigs.S_poly_without_send >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="create"| value Eliom_registration_sigs.S_poly_without_send.create >> ~[<<a_api subproject="server" | module Eliom_registration_sigs.S_poly_without_send >>~]|<<div class="odocwiki_info"|~See <<a_api subproject="server" | val Eliom_registration_sigs.S.create >>~.
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="create"| value Eliom_registration_sigs.S.create >> ~[<<a_api subproject="server" | module Eliom_registration_sigs.S >>~]|<<div class="odocwiki_info"|~Same as <<span class="odocwiki_inlinecode"|~Eliom~_service~.create>> followed by <<a_api subproject="server" | val Eliom_registration_sigs.S.register >>~.
 >>
 |
@@ -347,6 +369,11 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="expecting_process_page"| value Eliom_request_info.expecting_process_page >> ~[<<a_api subproject="server" | module Eliom_request_info >>~]|<<div class="odocwiki_info"|~Returns <<span class="odocwiki_inlinecode"|true>> if the request was done by a client side ~Eliom program~,
     which was expecting to receive a new ~H~T~M~L page to display inside
     the process~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="extern"| value Eliom_service_sigs.S.extern >> ~[<<a_api subproject="server" | module Eliom_service_sigs.S >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|extern ~~prefix ~~path ~~meth ~(~)>> creates an external service~,
+      i~.e~.~, a service implemented by a remote server ~(not necessarily
+      running ~Ocsigen~/~Eliom~)~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="external_channel"| value Eliom_comet.Channel.external_channel >> ~[<<a_api subproject="server" | module Eliom_comet.Channel >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|external~_channel ~~prefix ~~name ~(~)>> declares an external
@@ -1046,8 +1073,10 @@
     be rewritten in d~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register"| value Eliom_registration_sigs.S_poly_without_send.register >> ~[<<a_api subproject="server" | module Eliom_registration_sigs.S_poly_without_send >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register"| value Eliom_registration_sigs.S.register >> ~[<<a_api subproject="server" | module Eliom_registration_sigs.S >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|register service handler>> will associate the
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register"| value Eliom_registration_sigs.S_poly_without_send.register >> ~[<<a_api subproject="server" | module Eliom_registration_sigs.S_poly_without_send >>~]|<<div class="odocwiki_info"|~See <<a_api subproject="server" | val Eliom_registration_sigs.S.register >>~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register"| value Eliom_registration_sigs.S.register >> ~[<<a_api subproject="server" | module Eliom_registration_sigs.S >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|register ~~service handler>> associates the
       <<span class="odocwiki_inlinecode"|service>> to the function <<span class="odocwiki_inlinecode"|handler>>~.
 >>
 |

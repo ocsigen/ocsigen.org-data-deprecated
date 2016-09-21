@@ -8,51 +8,45 @@
   type ext = Ext
   type non_ext = Non_ext
   type http = Http_ret
-  type appl = Appl_ret
   type 'a ocaml = Ocaml of 'a
   type non_ocaml = Non_ocaml
   type reg = Reg
   type non_reg = Non_reg
   type ('get, 'a, 'gn) params = ('get, 'a, 'gn) Eliom_parameter.params_type
     constraint 'a = [< `WithSuffix | `WithoutSuffix ]
-  type (_, _, _, _, _, _, _, _) meth =
+  type ('m, _, _, _, _, _, _) meth =
       Get :
         ('gp, 'a, 'gn) Eliom_service_sigs.TYPES.params -> (Eliom_service_sigs.TYPES.get,
                                                            'gp, 'gn, 
                                                            unit, unit,
                                                            [< `WithSuffix
                                                             | `WithoutSuffix ]
-                                                           as 'a,
-                                                           Eliom_service_sigs.TYPES.get,
-                                                           unit)
+                                                           as 'a, unit)
                                                           Eliom_service_sigs.TYPES.meth
     | Post : ('gp, 'b, 'gn) Eliom_service_sigs.TYPES.params *
         ('pp, [ `WithoutSuffix ], 'pn) Eliom_service_sigs.TYPES.params -> 
         (Eliom_service_sigs.TYPES.post, 'gp, 'gn, 'pp, 'pn,
-         [< `WithSuffix | `WithoutSuffix ] as 'b,
-         Eliom_service_sigs.TYPES.get, 'gp)
+         [< `WithSuffix | `WithoutSuffix ] as 'b, 'gp)
         Eliom_service_sigs.TYPES.meth
     | Put :
         ('gp, 'c, 'gn) Eliom_service_sigs.TYPES.params -> (Eliom_service_sigs.TYPES.put,
-                                                           'gp, 'gn, 
-                                                           unit, unit,
+                                                           'gp, 'gn,
+                                                           Eliom_parameter.raw_post_data,
+                                                           Eliom_parameter.no_param_name,
                                                            [< `WithSuffix
                                                             | `WithoutSuffix ]
-                                                           as 'c,
-                                                           Eliom_service_sigs.TYPES.put,
-                                                           unit)
+                                                           as 'c, unit)
                                                           Eliom_service_sigs.TYPES.meth
     | Delete :
         ('gp, 'd, 'gn) Eliom_service_sigs.TYPES.params -> (Eliom_service_sigs.TYPES.delete,
-                                                           'gp, 'gn, 
-                                                           unit, unit,
+                                                           'gp, 'gn,
+                                                           Eliom_parameter.raw_post_data,
+                                                           Eliom_parameter.no_param_name,
                                                            [< `WithSuffix
                                                             | `WithoutSuffix ]
-                                                           as 'd,
-                                                           Eliom_service_sigs.TYPES.delete,
-                                                           unit)
+                                                           as 'd, unit)
                                                           Eliom_service_sigs.TYPES.meth
-  type _ which_meth =
+  type 'm which_meth =
       Get' : Eliom_service_sigs.TYPES.get Eliom_service_sigs.TYPES.which_meth
     | Post' :
         Eliom_service_sigs.TYPES.post Eliom_service_sigs.TYPES.which_meth
