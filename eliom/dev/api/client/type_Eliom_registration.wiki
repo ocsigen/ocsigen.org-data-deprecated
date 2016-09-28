@@ -1,6 +1,7 @@
 <<code language="ocaml" | sig
   type 'a kind
   type browser_content
+  type _ application_content
   module Html :
     sig
       type page = Html_types.html Eliom_content.Html.elt
@@ -325,14 +326,16 @@
         ?content_type:string ->
         ?headers:Http_headers.t -> page -> result Lwt.t
     end
+  type appl_service_options = { do_not_launch : bool; }
   module App :
     functor (P : Eliom_registration_sigs.APP_PARAM) ->
       sig
         val application_name : string
+        type app_id
         type page = Html_types.html Eliom_content.Html.elt
-        type options = unit
+        type options = appl_service_options
         type return = Eliom_service.non_ocaml
-        type result = browser_content kind
+        type result = app_id application_content kind
         val register :
           ?app:string ->
           ?scope:[< Eliom_common.scope ] ->
@@ -663,6 +666,10 @@
         ?content_type:string ->
         ?headers:Http_headers.t -> 'a page -> 'a result Lwt.t
     end
+  val appl_self_redirect :
+    ('page ->
+     Eliom_registration.browser_content Eliom_registration.kind Lwt.t) ->
+    'page -> Eliom_registration.browser_content Eliom_registration.kind Lwt.t
   module type Base = sig type return = Eliom_service.non_ocaml end
   module Block5 : Base
   module Html_text : Base

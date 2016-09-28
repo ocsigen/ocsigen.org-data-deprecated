@@ -4,4 +4,8 @@
 >>>>
 
 ----
-<<pre id="VALapplication_name" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|application~_name>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|string>>>><<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|include>> <<a_api subproject="client" | module Eliom_registration.Html >>>>
+<<pre id="VALapplication_name" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|application~_name>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|string>>>><<pre class="ocsforge_color odocwiki_code" id="TYPEapp_id"|<<span class="ocsforge_color_keyword"|type>> <<span class="odocwiki_name"|app~_id>>>><<div class="odocwiki_info"|~The type <<span class="odocwiki_inlinecode"|appl>> is an abstract type for identifying an
+      application~. ~It usually used a phantom parameter for
+      <<span class="odocwiki_inlinecode"|application~_content>>~.
+>>
+<<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|include>> <<a_api subproject="client" | module type Eliom_registration_sigs.S >>>>

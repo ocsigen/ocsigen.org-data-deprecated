@@ -91,6 +91,9 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="appendToBody"| value Eliom_content.Html.Manip.appendToBody >> ~[<<a_api subproject="client" | module Eliom_content.Html.Manip >>~]|<<div class="odocwiki_info"|~Append to the body of the document~.
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="appl_self_redirect"| value Eliom_registration.appl_self_redirect >> ~[<<a_api subproject="client" | module Eliom_registration >>~]|<<div class="odocwiki_info"|~For compatibility with server~-side <<span class="odocwiki_inlinecode"|appl~_self~_redirect>>
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="application_name"| value Eliom_registration.App.application_name >> ~[<<a_api subproject="client" | module Eliom_registration.App >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="application_name"| value Eliom_registration_sigs.APP_PARAM.application_name >> ~[<<a_api subproject="client" | module Eliom_registration_sigs.APP_PARAM >>~]|<<div class="odocwiki_info"|~Name of the application~.
 >>

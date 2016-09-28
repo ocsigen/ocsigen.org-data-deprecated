@@ -2,6 +2,14 @@
 
 |@@ @style="tet-align: left;"@@\\A|
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="aname"| type Eliom_content_core.Xml.aname >> ~[<<a_api subproject="client" | module Eliom_content_core.Xml >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="app_id"| type Eliom_registration.App.app_id >> ~[<<a_api subproject="client" | module Eliom_registration.App >>~]|<<div class="odocwiki_info"|~The type <<span class="odocwiki_inlinecode"|appl>> is an abstract type for identifying an
+      application~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="appl_service_options"| type Eliom_registration.appl_service_options >> ~[<<a_api subproject="client" | module Eliom_registration >>~]|<<div class="odocwiki_info"|~Has no effect on client ~; for compatibility with server
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="application_content"| type Eliom_registration.application_content >> ~[<<a_api subproject="client" | module Eliom_registration >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="att"| type Eliom_service_sigs.S.att >> ~[<<a_api subproject="client" | module Eliom_service_sigs.S >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="attached_info"| type Eliom_service_sigs.S.attached_info >> ~[<<a_api subproject="client" | module Eliom_service_sigs.S >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="attrib"| type Eliom_content_core.Html.attrib >> ~[<<a_api subproject="client" | module Eliom_content_core.Html >>~]||
