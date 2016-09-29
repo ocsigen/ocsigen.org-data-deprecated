@@ -1,7 +1,7 @@
 <<code language="ocaml" | sig
   type 'a kind
-  type browser_content
-  type _ application_content
+  type browser_content = [ `Browser ]
+  type 'a application_content = [ `Appl of 'a ]
   module Html :
     sig
       type page = Html_types.html Eliom_content.Html.elt
@@ -667,9 +667,10 @@
         ?headers:Http_headers.t -> 'a page -> 'a result Lwt.t
     end
   val appl_self_redirect :
-    ('page ->
-     Eliom_registration.browser_content Eliom_registration.kind Lwt.t) ->
-    'page -> Eliom_registration.browser_content Eliom_registration.kind Lwt.t
+    ('page -> [< `Appl of 'a | `Browser ] Eliom_registration.kind Lwt.t) ->
+    'page ->
+    'appl Eliom_registration.application_content Eliom_registration.kind
+    Lwt.t
   module type Base = sig type return = Eliom_service.non_ocaml end
   module Block5 : Base
   module Html_text : Base
