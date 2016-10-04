@@ -59,8 +59,8 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="mk_form"| value Ot_picture_uploader.mk_form >> ~[<<a_api subproject="server" | module Ot_picture_uploader >>~]|<<div class="odocwiki_info"|~Ready~-to~-use form~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="mk_service"| value Ot_picture_uploader.mk_service >> ~[<<a_api subproject="server" | module Ot_picture_uploader >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|mk~_service name arg~_deriver>>
-    ~Create a named service taking <<span class="odocwiki_inlinecode"|~(arg~_deriver~, ~(cropping~, file~)~)>> parameter
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="mk_service"| value Ot_picture_uploader.mk_service >> ~[<<a_api subproject="server" | module Ot_picture_uploader >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|mk~_service name arg~_deriver>> ~Create a named service taking
+    <<span class="odocwiki_inlinecode"|~(arg~_deriver~, ~(cropping~, file~)~)>> parameter
 >>
 |
 |@@ @style="tet-align: left;"@@\\N|

@@ -27,8 +27,6 @@
     ?a:[< Html_types.button_attrib > `Class ] Eliom_content.Html.attrib list ->
     [< Html_types.button_content ] Eliom_content.Html.elt list ->
     [> `Button ] Eliom_content.Html.elt
-  val mk_service :
-    string -> 'a Deriving_Json.t -> ('a, 'b) Ot_picture_uploader.service
   val mk_form :
     ?after_submit:(unit -> unit Lwt.t) ->
     ?crop:float option ->
@@ -39,4 +37,6 @@
             list *
             [< Html_types.button_content_fun ] Eliom_content.Html.elt list ->
     'a Ot_picture_uploader.upload -> [> `Form ] Eliom_content.Html.elt Lwt.t
+  val mk_service :
+    string -> 'a Deriving_Json.t -> ('a, 'b) Ot_picture_uploader.service
 end >>
