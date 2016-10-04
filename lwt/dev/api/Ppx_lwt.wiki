@@ -221,11 +221,9 @@ else
    ~The debug mode can be disabled with the option <<span class="odocwiki_inlinecode"|~-no~-debug>>~:
 
 
-   
-<<code language='ocaml'|ocamlfind ocamlc -package lwt.ppx \
+   {{{$ ocamlfind ocamlc -package lwt.ppx \
     -ppxopt lwt.ppx,-no-debug -linkpkg -o foo foo.ml
-   >>
-
+  }}}
 
 
    
