@@ -224,7 +224,7 @@ else
    {{{
 $ ocamlfind ocamlc -package lwt.ppx \
     -ppxopt lwt.ppx,-no-debug -linkpkg -o foo foo.ml
-  }}}
+}}}
 
 
    
