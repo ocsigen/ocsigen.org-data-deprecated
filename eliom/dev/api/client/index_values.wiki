@@ -1189,6 +1189,7 @@
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="signal"| value Eliom_shared_sigs.RLIST.signal >> ~[<<a_api subproject="client" | module Eliom_shared_sigs.RLIST >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="singleton_s"| value Eliom_shared_sigs.RLIST.singleton_s >> ~[<<a_api subproject="client" | module Eliom_shared_sigs.RLIST >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="space_re"| value Eliom_client_core.space_re >> ~[<<a_api subproject="client" | module Eliom_client_core >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="space_sep_attrib"| value Eliom_content_core.Xml_wed.space_sep_attrib >> ~[<<a_api subproject="client" | module Eliom_content_core.Xml_wed >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="split_path"| value Eliom_lib.Url.split_path >> ~[<<a_api subproject="client" | module Eliom_lib.Url >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="state_key"| value Eliom_client_core.state_key >> ~[<<a_api subproject="client" | module Eliom_client_core >>~]||
