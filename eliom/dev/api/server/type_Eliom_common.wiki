@@ -607,4 +607,16 @@
   val get_secure : bool option -> Eliom_common.sitedata -> bool
   val is_client_app : bool Pervasives.ref
   val make_actual_path : string list -> string list
+  type 'a to_and_of = { of_string : string -> 'a; to_string : 'a -> string; }
+  module To_and_of_shared :
+    sig
+      type 'a t
+      val create :
+        ?client_to_and_of:'a Eliom_common.to_and_of Eliom_client_value.t ->
+        'a Eliom_common.to_and_of -> 'a Eliom_common.To_and_of_shared.t
+      val to_string : 'a Eliom_common.To_and_of_shared.t -> 'a -> string
+      val of_string : 'a Eliom_common.To_and_of_shared.t -> string -> 'a
+      val to_and_of :
+        'a Eliom_common.To_and_of_shared.t -> 'a Eliom_common.to_and_of
+    end
 end >>

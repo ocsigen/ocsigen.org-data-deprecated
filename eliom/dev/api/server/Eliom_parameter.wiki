@@ -1,13 +1,28 @@
 =Module <<a_api_type subproject="server" | module Eliom_parameter >> =
-<<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module>> <<span class="ocsforge_color_uid"|<<span class="ocsforge_color_uid"|Eliom_parameter>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="ocsforge_color_keyword"|sig>><<a_api subproject="server" text=".." | module Eliom_parameter >><<span class="ocsforge_color_keyword"|end>>>>~Specifying parameter as <<span class="odocwiki_inlinecode"|type~_checker check t>> is equivalent as
-    <<span class="odocwiki_inlinecode"|t>> but the check function is called after decoding the
-    parameters~, allowing you to make more checks on the parameters
-    before the service handler is called~. ~Raise an exception if the
-    parameter is not correct~, and the error handler will be called
-    instead of the service handler~.
+<<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module>> <<span class="ocsforge_color_uid"|<<span class="ocsforge_color_uid"|Eliom_parameter>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="ocsforge_color_keyword"|sig>><<a_api subproject="server" text=".." | module Eliom_parameter >><<span class="ocsforge_color_keyword"|end>>>><<span class="odocwiki_inlinecode"|user~_type ~~of~_string ~~to~_string s>> construct a parameter~, labeled
+    <<span class="odocwiki_inlinecode"|s>>~, such that the server will have to use <<span class="odocwiki_inlinecode"|of~_string>> and
+    <<span class="odocwiki_inlinecode"|to~_string>> to make the conversion between the ~O~Caml
+    representation of the parameter and it~'s representation as a
+    string~. ~It allows one to use any type for a parameter~. ~Providing
+    converters via the optional <<span class="odocwiki_inlinecode"|~?client~_to~_and~_from>> parameter allows
+    injecting the parameter ~(or a service that uses it~) for use in
+    client code~.
 
 ----
 <<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|include>> <<a_api subproject="server" | module type Eliom_parameter_sigs.S >>>>
+<<pre id="VALuser_type" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|user~_type>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|\\  <<span class="ocsforge_color_label"| ?client_to_and_of: >>'a to_and_of <<a_api subproject="server" text="Eliom_client_value.t" | type Eliom_client_value.t >> <<span class="ocsforge_color_delimiter"| -> >>\\  <<span class="ocsforge_color_label"| of_string: >><<span class="ocsforge_color_delimiter"| ( >>string <<span class="ocsforge_color_delimiter"| -> >> 'a<<span class="ocsforge_color_delimiter"| ) >> <<span class="ocsforge_color_delimiter"| -> >>\\  <<span class="ocsforge_color_label"| to_string: >><<span class="ocsforge_color_delimiter"| ( >>'a <<span class="ocsforge_color_delimiter"| -> >> string<<span class="ocsforge_color_delimiter"| ) >> <<span class="ocsforge_color_delimiter"| -> >>\\  string <<span class="ocsforge_color_delimiter"| -> >>\\  <<span class="ocsforge_color_delimiter"| ( >>'a, [ `WithoutSuffix ], [ `One of 'a ] param_name<<span class="ocsforge_color_delimiter"| ) >> params_type>>>><<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|user~_type ~~of~_string ~~to~_string s>> construct a parameter~, labeled
+    <<span class="odocwiki_inlinecode"|s>>~, such that the server will have to use <<span class="odocwiki_inlinecode"|of~_string>> and
+    <<span class="odocwiki_inlinecode"|to~_string>> to make the conversion between the ~O~Caml
+    representation of the parameter and it~'s representation as a
+    string~. ~It allows one to use any type for a parameter~. ~Providing
+    converters via the optional <<span class="odocwiki_inlinecode"|~?client~_to~_and~_from>> parameter allows
+    injecting the parameter ~(or a service that uses it~) for use in
+    client code~.
+>>
+<<pre id="VALall_suffix_user" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|all~_suffix~_user>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|\\  <<span class="ocsforge_color_label"| ?client_to_and_of: >>'a to_and_of <<a_api subproject="server" text="Eliom_client_value.t" | type Eliom_client_value.t >> <<span class="ocsforge_color_delimiter"| -> >>\\  <<span class="ocsforge_color_label"| of_string: >><<span class="ocsforge_color_delimiter"| ( >>string <<span class="ocsforge_color_delimiter"| -> >> 'a<<span class="ocsforge_color_delimiter"| ) >> <<span class="ocsforge_color_delimiter"| -> >>\\  <<span class="ocsforge_color_label"| to_string: >><<span class="ocsforge_color_delimiter"| ( >>'a <<span class="ocsforge_color_delimiter"| -> >> string<<span class="ocsforge_color_delimiter"| ) >> <<span class="ocsforge_color_delimiter"| -> >>\\  string <<span class="ocsforge_color_delimiter"| -> >> <<span class="ocsforge_color_delimiter"| ( >>'a, [ `Endsuffix ], [ `One of 'a ] param_name<<span class="ocsforge_color_delimiter"| ) >> params_type>>>><<div class="odocwiki_info"|~Takes the whole suffix~, as long as possible~, with a type specified
+    by the user~. ~See <<span class="odocwiki_inlinecode"|user~_type>> for the description of the
+    arguments~.
+>>
 <<pre id="VALtype_checker" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|type~_checker>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|\\  <<span class="ocsforge_color_delimiter"| ( >>'a <<span class="ocsforge_color_delimiter"| -> >> unit<<span class="ocsforge_color_delimiter"| ) >> <<span class="ocsforge_color_delimiter"| -> >>\\  <<span class="ocsforge_color_delimiter"| ( >>'a, [< suff ] as 'b, 'c<<span class="ocsforge_color_delimiter"| ) >> params_type <<span class="ocsforge_color_delimiter"| -> >> <<span class="ocsforge_color_delimiter"| ( >>'a, 'b, 'c<<span class="ocsforge_color_delimiter"| ) >> params_type>>>><<div class="odocwiki_info"|~Specifying parameter as <<span class="odocwiki_inlinecode"|type~_checker check t>> is equivalent as
     <<span class="odocwiki_inlinecode"|t>> but the check function is called after decoding the
     parameters~, allowing you to make more checks on the parameters

@@ -93,10 +93,11 @@ file~.
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Eliom_openid"| module Eliom_openid >> |<<div class="odocwiki_info"|~Open~I~D identification
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Eliom_parameter"| module Eliom_parameter >> |<<div class="odocwiki_info"|~Specifying parameter as <<span class="odocwiki_inlinecode"|type~_checker check t>> is equivalent as
-    <<span class="odocwiki_inlinecode"|t>> but the check function is called after decoding the
-    parameters~, allowing you to make more checks on the parameters
-    before the service handler is called~.
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Eliom_parameter"| module Eliom_parameter >> |<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|user~_type ~~of~_string ~~to~_string s>> construct a parameter~, labeled
+    <<span class="odocwiki_inlinecode"|s>>~, such that the server will have to use <<span class="odocwiki_inlinecode"|of~_string>> and
+    <<span class="odocwiki_inlinecode"|to~_string>> to make the conversion between the ~O~Caml
+    representation of the parameter and it~'s representation as a
+    string~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Eliom_parameter_sigs"| module Eliom_parameter_sigs >> |<<div class="odocwiki_info"|~Ad~-hoc runtime type representation for service parameters~.

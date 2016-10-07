@@ -234,7 +234,7 @@
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="tmp_elt"| type Eliom_client_core.tmp_elt >> ~[<<a_api subproject="client" | module Eliom_client_core >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="tmp_recontent"| type Eliom_client_core.tmp_recontent >> ~[<<a_api subproject="client" | module Eliom_client_core >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="to_and_from"| type Eliom_parameter_sigs.S.to_and_from >> ~[<<a_api subproject="client" | module Eliom_parameter_sigs.S >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="to_and_of"| type Eliom_parameter_sigs.S.to_and_of >> ~[<<a_api subproject="client" | module Eliom_parameter_sigs.S >>~]||
 |@@ @style="tet-align: left;"@@\\U|
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="unwrap_id"| type Eliom_unwrap.unwrap_id >> ~[<<a_api subproject="client" | module Eliom_unwrap >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="uri"| type Eliom_content_core.Html.uri >> ~[<<a_api subproject="client" | module Eliom_content_core.Html >>~]||

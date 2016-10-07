@@ -351,7 +351,7 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="timeout"| type Eliom_state.Ext.timeout >> ~[<<a_api subproject="server" | module Eliom_state.Ext >>~]|<<div class="odocwiki_info"|~Type used to describe session timeouts
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="to_and_from"| type Eliom_parameter_sigs.S.to_and_from >> ~[<<a_api subproject="server" | module Eliom_parameter_sigs.S >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="to_and_of"| type Eliom_parameter_sigs.S.to_and_of >> ~[<<a_api subproject="server" | module Eliom_parameter_sigs.S >>~]||
 |@@ @style="tet-align: left;"@@\\U|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="unknown_content"| type Eliom_registration.unknown_content >> ~[<<a_api subproject="server" | module Eliom_registration >>~]|<<div class="odocwiki_info"|~The type <<span class="odocwiki_inlinecode"|unknown~_content>> is to be used as a phantom type
     parameter for <<a_api subproject="server" | type Eliom_registration.kind >> when the content~-type

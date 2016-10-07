@@ -10,10 +10,7 @@
   type 'an listnames = {
     it : 'el 'a. ('an -> 'el -> 'a -> 'a) -> 'el list -> 'a -> 'a;
   }
-  type 'a to_and_from = {
-    of_string : string -> 'a;
-    to_string : 'a -> string;
-  }
+  type 'a to_and_of = { of_string : string -> 'a; to_string : 'a -> string; }
   val int :
     string ->
     (int, [ `WithoutSuffix ], [ `One of int ] param_name) params_type
@@ -38,10 +35,6 @@
      [ `One of Eliom_lib.file_info ] param_name)
     params_type
   val unit : (unit, [ `WithoutSuffix ], unit) params_type
-  val user_type :
-    of_string:(string -> 'a) ->
-    to_string:('a -> string) ->
-    string -> ('a, [ `WithoutSuffix ], [ `One of 'a ] param_name) params_type
   type coordinates = { abscissa : int; ordinate : int; }
   val coordinates :
     string ->
@@ -91,10 +84,6 @@
   val all_suffix_string :
     string ->
     (string, [ `Endsuffix ], [ `One of string ] param_name) params_type
-  val all_suffix_user :
-    of_string:(string -> 'a) ->
-    to_string:('a -> string) ->
-    string -> ('a, [ `Endsuffix ], [ `One of 'a ] param_name) params_type
   val suffix_prod :
     ?redirect_if_not_suffix:bool ->
     ('s, [< `Endsuffix | `WithoutSuffix ], 'sn) params_type ->
@@ -126,10 +115,10 @@
     'a -> nl_params_set
   val get_nl_params_names :
     ('b, [< `WithSuffix | `WithoutSuffix ], 'a) non_localized_params -> 'a
-  val get_to_and_from : ('a, [< suff ], 'c) params_type -> 'a to_and_from
+  val get_to_and_of : ('a, [< suff ], 'c) params_type -> 'a to_and_of
   val walk_parameter_tree :
     [ `One of string ] param_name ->
-    ('a, [< suff ], 'c) params_type -> 'a to_and_from option
+    ('a, [< suff ], 'c) params_type -> 'a to_and_of option
   val contains_suffix : ('a, [< suff ], 'c) params_type -> bool option
   val add_pref_params :
     string ->
@@ -173,6 +162,14 @@
   type _ is_unit = U_not : 'a is_unit | U_yes : unit is_unit
   val is_unit : ('a, [< suff ], 'b) params_type -> 'a is_unit
   val anonymise_params_type : ('a, [< suff ], 'c) params_type -> int
+  val user_type :
+    of_string:(string -> 'a) ->
+    to_string:('a -> string) ->
+    string -> ('a, [ `WithoutSuffix ], [ `One of 'a ] param_name) params_type
+  val all_suffix_user :
+    of_string:(string -> 'a) ->
+    to_string:('a -> string) ->
+    string -> ('a, [ `Endsuffix ], [ `One of 'a ] param_name) params_type
   val reconstruct_params_form :
     (string * Form.form_elt) list ->
     ('a, [< suff ], 'b) params_type -> 'a option

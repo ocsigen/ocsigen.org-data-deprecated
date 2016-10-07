@@ -53,8 +53,8 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="all_suffix_string"| value Eliom_parameter_sigs.S.all_suffix_string >> ~[<<a_api subproject="client" | module Eliom_parameter_sigs.S >>~]|<<div class="odocwiki_info"|~Takes the whole suffix~, as long as possible~, as a string
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="all_suffix_user"| value Eliom_parameter_sigs.S.all_suffix_user >> ~[<<a_api subproject="client" | module Eliom_parameter_sigs.S >>~]|<<div class="odocwiki_info"|~Takes the whole suffix~, as long as possible~, with a type
-      specified by the user~.
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="all_suffix_user"| value Eliom_parameter.all_suffix_user >> ~[<<a_api subproject="client" | module Eliom_parameter >>~]|<<div class="odocwiki_info"|~Takes the whole suffix~, as long as possible~, with a type specified
+    by the user~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="any"| value Eliom_parameter_sigs.S.any >> ~[<<a_api subproject="client" | module Eliom_parameter_sigs.S >>~]|<<div class="odocwiki_info"|~Use this if you want to take any parameters~.
@@ -522,7 +522,7 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="get_prop"| value Eliom_client_core.get_prop >> ~[<<a_api subproject="client" | module Eliom_client_core >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="get_ssl"| value Eliom_lib.Url.get_ssl >> ~[<<a_api subproject="client" | module Eliom_lib.Url >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="get_state"| value Eliom_client_core.get_state >> ~[<<a_api subproject="client" | module Eliom_client_core >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="get_to_and_from"| value Eliom_parameter_sigs.S.get_to_and_from >> ~[<<a_api subproject="client" | module Eliom_parameter_sigs.S >>~]|<<div class="odocwiki_info"|~Given a parameter type~, get the two functions that converts from
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="get_to_and_of"| value Eliom_parameter_sigs.S.get_to_and_of >> ~[<<a_api subproject="client" | module Eliom_parameter_sigs.S >>~]|<<div class="odocwiki_info"|~Given a parameter type~, get the two functions that converts from
       and to strings~.
 >>
 |
@@ -1285,11 +1285,11 @@
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="uris_attrib"| value Eliom_content_core.Xml_wed.uris_attrib >> ~[<<a_api subproject="client" | module Eliom_content_core.Xml_wed >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="user"| value Eliom_form_sigs.S.user >> ~[<<a_api subproject="client" | module Eliom_form_sigs.S >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="user_type"| value Eliom_parameter_sigs.S.user_type >> ~[<<a_api subproject="client" | module Eliom_parameter_sigs.S >>~]|<<div class="odocwiki_info"|~Specifying parameter as <<span class="odocwiki_inlinecode"|user~_type ~~of~_string ~~to~_string s>>
-      tells that the service take a parameter~, labeled <<span class="odocwiki_inlinecode"|s>>~, and that the
-      server will have to use <<span class="odocwiki_inlinecode"|of~_string>> and <<span class="odocwiki_inlinecode"|to~_string>> to make the
-      conversion between the ~O~Caml representation of the parameter and
-      it~'s external representation as a string~.
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="user_type"| value Eliom_parameter.user_type >> ~[<<a_api subproject="client" | module Eliom_parameter >>~]|<<div class="odocwiki_info"|~Specifying parameter as <<span class="odocwiki_inlinecode"|user~_type ~~of~_string ~~to~_string s>> tells
+    that the service take a parameter~, labeled <<span class="odocwiki_inlinecode"|s>>~, and that the
+    server will have to use <<span class="odocwiki_inlinecode"|of~_string>> and <<span class="odocwiki_inlinecode"|to~_string>> to make the
+    conversion between the ~O~Caml representation of the parameter and
+    it~'s external representation as a string~.
 >>
 |
 |@@ @style="tet-align: left;"@@\\V|

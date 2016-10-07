@@ -11,10 +11,7 @@
   type 'an listnames = {
     it : 'el 'a. ('an -> 'el -> 'a -> 'a) -> 'el list -> 'a -> 'a;
   }
-  type 'a to_and_from = {
-    of_string : string -> 'a;
-    to_string : 'a -> string;
-  }
+  type 'a to_and_of = { of_string : string -> 'a; to_string : 'a -> string; }
   val int :
     string ->
     (int, [ `WithoutSuffix ],
@@ -52,13 +49,6 @@
     Eliom_parameter_sigs.S.params_type
   val unit :
     (unit, [ `WithoutSuffix ], unit) Eliom_parameter_sigs.S.params_type
-  val user_type :
-    of_string:(string -> 'a) ->
-    to_string:('a -> string) ->
-    string ->
-    ('a, [ `WithoutSuffix ],
-     [ `One of 'a ] Eliom_parameter_sigs.S.param_name)
-    Eliom_parameter_sigs.S.params_type
   type coordinates = { abscissa : int; ordinate : int; }
   val coordinates :
     string ->
@@ -128,12 +118,6 @@
     (string, [ `Endsuffix ],
      [ `One of string ] Eliom_parameter_sigs.S.param_name)
     Eliom_parameter_sigs.S.params_type
-  val all_suffix_user :
-    of_string:(string -> 'a) ->
-    to_string:('a -> string) ->
-    string ->
-    ('a, [ `Endsuffix ], [ `One of 'a ] Eliom_parameter_sigs.S.param_name)
-    Eliom_parameter_sigs.S.params_type
   val suffix_prod :
     ?redirect_if_not_suffix:bool ->
     ('s, [< `Endsuffix | `WithoutSuffix ], 'sn)
@@ -176,15 +160,14 @@
   val get_nl_params_names :
     ('b, [< `WithSuffix | `WithoutSuffix ], 'a)
     Eliom_parameter_sigs.S.non_localized_params -> 'a
-  val get_to_and_from :
+  val get_to_and_of :
     ('a, [< Eliom_parameter_sigs.S.suff ], 'c)
-    Eliom_parameter_sigs.S.params_type ->
-    'a Eliom_parameter_sigs.S.to_and_from
+    Eliom_parameter_sigs.S.params_type -> 'a Eliom_parameter_sigs.S.to_and_of
   val walk_parameter_tree :
     [ `One of string ] Eliom_parameter_sigs.S.param_name ->
     ('a, [< Eliom_parameter_sigs.S.suff ], 'c)
     Eliom_parameter_sigs.S.params_type ->
-    'a Eliom_parameter_sigs.S.to_and_from option
+    'a Eliom_parameter_sigs.S.to_and_of option
   val contains_suffix :
     ('a, [< Eliom_parameter_sigs.S.suff ], 'c)
     Eliom_parameter_sigs.S.params_type -> bool option
