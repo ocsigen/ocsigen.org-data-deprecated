@@ -1,0 +1,8 @@
+<<code language="ocaml" | sig
+  type t
+  val to_json :
+    Os_push_notifications.Notification.Action.t -> Yojson.Safe.json
+  val create :
+    string ->
+    string -> string -> bool -> Os_push_notifications.Notification.Action.t
+end >>

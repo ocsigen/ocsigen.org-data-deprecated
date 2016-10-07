@@ -1,0 +1,92 @@
+<<code language="ocaml" | sig
+  type t
+  val to_json : Os_push_notifications.Notification.t -> Yojson.Safe.json
+  val empty : unit -> Os_push_notifications.Notification.t
+  val add_message :
+    string ->
+    Os_push_notifications.Notification.t ->
+    Os_push_notifications.Notification.t
+  val add_title :
+    string ->
+    Os_push_notifications.Notification.t ->
+    Os_push_notifications.Notification.t
+  val add_image :
+    string ->
+    Os_push_notifications.Notification.t ->
+    Os_push_notifications.Notification.t
+  val add_soundname :
+    string ->
+    Os_push_notifications.Notification.t ->
+    Os_push_notifications.Notification.t
+  val add_notification_id :
+    int ->
+    Os_push_notifications.Notification.t ->
+    Os_push_notifications.Notification.t
+  module Style : sig type t = Inbox | Picture end
+  val add_style :
+    Os_push_notifications.Notification.Style.t ->
+    Os_push_notifications.Notification.t ->
+    Os_push_notifications.Notification.t
+  val add_summary_text :
+    string ->
+    Os_push_notifications.Notification.t ->
+    Os_push_notifications.Notification.t
+  module Action :
+    sig
+      type t
+      val to_json :
+        Os_push_notifications.Notification.Action.t -> Yojson.Safe.json
+      val create :
+        string ->
+        string ->
+        string -> bool -> Os_push_notifications.Notification.Action.t
+    end
+  val add_actions :
+    Os_push_notifications.Notification.Action.t ->
+    Os_push_notifications.Notification.Action.t ->
+    Os_push_notifications.Notification.t ->
+    Os_push_notifications.Notification.t
+  val add_led_color :
+    int ->
+    int ->
+    int ->
+    int ->
+    Os_push_notifications.Notification.t ->
+    Os_push_notifications.Notification.t
+  val add_vibration_pattern :
+    int list ->
+    Os_push_notifications.Notification.t ->
+    Os_push_notifications.Notification.t
+  val add_badge :
+    int ->
+    Os_push_notifications.Notification.t ->
+    Os_push_notifications.Notification.t
+  module Priority : sig type t = Minimum | Low | Default | High | Maximum end
+  val add_priority :
+    Os_push_notifications.Notification.Priority.t ->
+    Os_push_notifications.Notification.t ->
+    Os_push_notifications.Notification.t
+  val add_picture :
+    string ->
+    Os_push_notifications.Notification.t ->
+    Os_push_notifications.Notification.t
+  val add_info :
+    string ->
+    Os_push_notifications.Notification.t ->
+    Os_push_notifications.Notification.t
+  module Visibility : sig type t = Secret | Private | Public end
+  val add_visibility :
+    Os_push_notifications.Notification.Visibility.t ->
+    Os_push_notifications.Notification.t ->
+    Os_push_notifications.Notification.t
+  val add_raw_string :
+    string ->
+    string ->
+    Os_push_notifications.Notification.t ->
+    Os_push_notifications.Notification.t
+  val add_raw_json :
+    string ->
+    Yojson.Safe.json ->
+    Os_push_notifications.Notification.t ->
+    Os_push_notifications.Notification.t
+end >>

@@ -1,0 +1,23 @@
+<<code language="ocaml" | sig
+  type userid = int64
+  type user = {
+    userid : Os_types.userid;
+    fn : string;
+    ln : string;
+    avatar : string option;
+  }
+  type actionlinkkey_info = {
+    userid : Os_types.userid;
+    email : string;
+    validity : int64;
+    autoconnect : bool;
+    action : [ `AccountActivation | `Custom of string | `PasswordReset ];
+    data : string;
+  }
+  type groupid = int64
+  type group = {
+    id : Os_types.groupid;
+    name : string;
+    desc : string option;
+  }
+end >>

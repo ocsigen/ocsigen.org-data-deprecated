@@ -5,13 +5,21 @@
 
 
 
-|<<a_api subproject="server" | module Os_current_user >>||
-|<<a_api subproject="server" | module Os_date >>||
+|<<a_api subproject="server" | module Os_current_user >>|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|get~_current~_user ~(~)>> returns the current user as a <<a_api subproject="server" | type Os_types.user >> type~.
+>>
+|
+|<<a_api subproject="server" | module Os_date >>|<<div class="odocwiki_info"|~Time zone and date management for ~Web applications~.
+>>
+|
 |<<a_api subproject="server" | module Os_email >>|<<div class="odocwiki_info"|~Basic module for sending e~-mail messages to users~,
     using some local sendmail program~.
 >>
 |
-|<<a_api subproject="server" | module Os_handlers >>||
+|<<a_api subproject="server" | module Os_handlers >>|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|connect~_handler ~(~) ~(~(login~, password~)~, keep~Me~Logged~In~)>> connects the user
+    with <<span class="odocwiki_inlinecode"|login>> and <<span class="odocwiki_inlinecode"|password>> and keeps the user logged in between different
+    session if <<span class="odocwiki_inlinecode"|keep~Me~Logged~In>> is set to <<span class="odocwiki_inlinecode"|true>>
+>>
+|
 |<<a_api subproject="server" | module Os_msg >>|<<div class="odocwiki_info"|~Call this function either from client or server side
     to display an error message in the page~.
 >>
@@ -34,7 +42,7 @@
 |<<a_api subproject="server" | module Os_tips >>|<<div class="odocwiki_info"|~Tips for new users and new features~.
 >>
 |
-|<<a_api subproject="server" | module Os_user >>|<<div class="odocwiki_info"|~Has user set its password~?
+|<<a_api subproject="server" | module Os_user >>|<<div class="odocwiki_info"|~Type alias to <<a_api subproject="server" | type Os_types.userid >> to allow to use <<span class="odocwiki_inlinecode"|~Os~_user~.id>>~.
 >>
 |
 |<<a_api subproject="server" | module Os_userbox >>|<<div class="odocwiki_info"|~Connexion box~, box with connected user information and menu

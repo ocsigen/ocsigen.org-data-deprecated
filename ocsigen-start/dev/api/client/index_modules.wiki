@@ -1,16 +1,25 @@
 =Index of modules=
 
 |@@ @style="tet-align: left;"@@\\O|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Os_comet"| module Os_comet >> ||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Os_current_user"| module Os_current_user >> ||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Os_date"| module Os_date >> ||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Os_email"| module Os_email >> ||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Os_handlers"| module Os_handlers >> ||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Os_lib"| module Os_lib >> ||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Os_msg"| module Os_msg >> ||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Os_notif"| module Os_notif >> ||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Os_page"| module Os_page >> ||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Os_push_notifications"| module Os_push_notifications >> ||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Os_request_cache"| module Os_request_cache >> ||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Os_services"| module Os_services >> ||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Os_session"| module Os_session >> ||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Os_tips"| module Os_tips >> ||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Os_tools"| module Os_tools >> ||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Os_types"| module Os_types >> ||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Os_uploader"| module Os_uploader >> ||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Os_user"| module Os_user >> ||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Os_user_proxy"| module Os_user_proxy >> ||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Os_userbox"| module Os_userbox >> ||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Os_view"| module Os_view >> ||
 \\

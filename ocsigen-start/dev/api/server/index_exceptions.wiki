@@ -1,11 +1,19 @@
 =Index of exceptions=
 
 |@@ @style="tet-align: left;"@@\\A|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Account_already_activated"| exception Os_db.Account_already_activated >> ~[<<a_api subproject="server" | module Os_db >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Account_not_activated"| exception Os_db.Account_not_activated >> ~[<<a_api subproject="server" | module Os_db >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Already_exists"| exception Os_user.Already_exists >> ~[<<a_api subproject="server" | module Os_user >>~]||
+|@@ @style="tet-align: left;"@@\\C|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Custom_action_link"| exception Os_handlers.Custom_action_link >> ~[<<a_api subproject="server" | module Os_handlers >>~]||
 |@@ @style="tet-align: left;"@@\\I|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Invalid_action_link_key"| exception Os_db.User.Invalid_action_link_key >> ~[<<a_api subproject="server" | module Os_db.User >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Invalid_mailer"| exception Os_email.Invalid_mailer >> ~[<<a_api subproject="server" | module Os_email >>~]||
+|@@ @style="tet-align: left;"@@\\M|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Main_email_removal_attempt"| exception Os_db.Main_email_removal_attempt >> ~[<<a_api subproject="server" | module Os_db >>~]||
 |@@ @style="tet-align: left;"@@\\N|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="No_such_group"| exception Os_group.No_such_group >> ~[<<a_api subproject="server" | module Os_group >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="No_such_resource"| exception Os_db.No_such_resource >> ~[<<a_api subproject="server" | module Os_db >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="No_such_user"| exception Os_user.No_such_user >> ~[<<a_api subproject="server" | module Os_user >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Not_connected"| exception Os_session.Not_connected >> ~[<<a_api subproject="server" | module Os_session >>~]||
 |@@ @style="tet-align: left;"@@\\P|

@@ -1,13 +1,21 @@
 <<code language="ocaml" | sig
   exception No_such_group
-  type t
-  val id_of_group : Os_group.t -> int64
-  val name_of_group : Os_group.t -> string
-  val desc_of_group : Os_group.t -> string option
-  val create : ?description:string -> string -> Os_group.t Lwt.t
-  val group_of_name : string -> Os_group.t Lwt.t
-  val add_user_in_group : group:Os_group.t -> userid:int64 -> unit Lwt.t
-  val remove_user_in_group : group:Os_group.t -> userid:int64 -> unit Lwt.t
-  val in_group : group:Os_group.t -> userid:int64 -> bool Lwt.t
-  val all : unit -> Os_group.t list Lwt.t
+  type id = Os_types.groupid
+  type t =
+    Os_types.group = {
+    id : Os_group.id;
+    name : string;
+    desc : string option;
+  }
+  val id_of_group : Os_types.group -> Os_types.groupid
+  val name_of_group : Os_types.group -> string
+  val desc_of_group : Os_types.group -> string option
+  val create : ?description:string -> string -> Os_types.group Lwt.t
+  val group_of_name : string -> Os_types.group Lwt.t
+  val add_user_in_group :
+    group:Os_types.group -> userid:Os_types.userid -> unit Lwt.t
+  val remove_user_in_group :
+    group:Os_types.group -> userid:Os_types.userid -> unit Lwt.t
+  val in_group : group:Os_types.group -> userid:Os_types.userid -> bool Lwt.t
+  val all : unit -> Os_types.group list Lwt.t
 end >>

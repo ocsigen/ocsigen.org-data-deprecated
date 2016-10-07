@@ -1,0 +1,1 @@
+<<code language="ocaml" | sig val memoizator : (unit -> 'a Lwt.t) -> unit -> 'a Lwt.t end >>

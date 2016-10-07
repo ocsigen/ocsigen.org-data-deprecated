@@ -1,0 +1,32 @@
+=Functor <<a_api_type subproject="server" | module Os_notif.Simple >> =
+<<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module>> <<span class="ocsforge_color_uid"|<<span class="ocsforge_color_uid"|Simple>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_sig_block"|<<span class="ocsforge_color_keyword"|functor>> <<span class="ocsforge_color_delimiter"|(>>A <<span class="ocsforge_color_delimiter"|~:>> <<span class="ocsforge_color_keyword"|sig>><<span class="odocwiki_sig_block"|<<span class="ocsforge_color odocwiki_code" id="TYPEkey"|      <<span class="ocsforge_color_keyword"|type>> <<span class="odocwiki_name"|key>>>><<span class="ocsforge_color odocwiki_code" id="TYPEnotification"|      <<span class="ocsforge_color_keyword"|type>> <<span class="odocwiki_name"|notification>>>>>><<span class="ocsforge_color_keyword"|end>><<span class="ocsforge_color_delimiter"|)>> <<span class="ocsforge_color_delimiter"|-~>>> \\  \\  <<span class="odocwiki_type"|<<a_api subproject="server" text="S" | module Os_notif.S >>>><<span class="odocwiki_type"|  with type key = A.key\\     and type server_notif = A.notification\\     and type client_notif = A.notification>>>>>><<div class="odocwiki_module_param_list" | <<span class="odocwiki_param_title" |Parameters :>><<div|
+|@@class="odocwiki_paramstable"@ @class="centertop fifteen code"@@{{{A}}}|@@class="centertop"@@:|<<span class="odocwiki_type"|\\sig\\      type key\\      type notification\\    end>>|
+>>>>
+
+----
+<<pre class="ocsforge_color odocwiki_code" id="TYPEkey"|<<span class="ocsforge_color_keyword"|type>> <<span class="odocwiki_name"|key>>>><<pre class="ocsforge_color odocwiki_code" id="TYPEserver_notif"|<<span class="ocsforge_color_keyword"|type>> <<span class="odocwiki_name"|server~_notif>>>><<pre class="ocsforge_color odocwiki_code" id="TYPEclient_notif"|<<span class="ocsforge_color_keyword"|type>> <<span class="odocwiki_name"|client~_notif>>>><<pre id="VALlisten" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|listen>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<a_api subproject="server" text="key" | type Os_notif.S.key >> <<span class="ocsforge_color_delimiter"| -> >> unit>>>><<div class="odocwiki_info"|~Make client process listen on data whose index is <<span class="odocwiki_inlinecode"|key>>
+>>
+<<pre id="VALunlisten" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|unlisten>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<a_api subproject="server" text="key" | type Os_notif.S.key >> <<span class="ocsforge_color_delimiter"| -> >> unit>>>><<div class="odocwiki_info"|~Stop listening on data <<span class="odocwiki_inlinecode"|key>>
+>>
+<<pre id="VALunlisten_user" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|unlisten~_user>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|\\  <<span class="ocsforge_color_label"| ?sitedata: >><<span class="ocsforge_color_uid"|Eliom_common>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|sitedata>> <<span class="ocsforge_color_delimiter"| -> >>\\  <<span class="ocsforge_color_label"| userid: >><<a_api subproject="server" text="Os_types.userid" | type Os_types.userid >> <<span class="ocsforge_color_delimiter"| -> >> <<a_api subproject="server" text="key" | type Os_notif.S.key >> <<span class="ocsforge_color_delimiter"| -> >> unit>>>><<div class="odocwiki_info"|~Make a user stop listening on data <<span class="odocwiki_inlinecode"|key>>
+>>
+<<pre id="VALnotify" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|notify>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|\\  <<span class="ocsforge_color_label"| ?notfor: >>[ `Me | `User of <<a_api subproject="server" text="Os_types.userid" | type Os_types.userid >> ] <<span class="ocsforge_color_delimiter"| -> >>\\  <<a_api subproject="server" text="key" | type Os_notif.S.key >> <<span class="ocsforge_color_delimiter"| -> >> <<a_api subproject="server" text="server_notif" | type Os_notif.S.server_notif >> <<span class="ocsforge_color_delimiter"| -> >> unit>>>><<div class="odocwiki_info"|~Call <<span class="odocwiki_inlinecode"|notify id>> to send a notification to all clients currently
+      listening on data <<span class="odocwiki_inlinecode"|key>>~.
+
+
+      ~If <<span class="odocwiki_inlinecode"|~~notfor>> is <<span class="odocwiki_inlinecode"|`~Me>>~, notification will not be sent to the tab
+      currently doing the request ~(the one which caused the notification to
+      happen~)~. ~If it is <<span class="odocwiki_inlinecode"|`~User id>> it won~'t be sent to the user with id <<span class="odocwiki_inlinecode"|id>>~.
+>>
+<<pre id="VALclient_ev" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|client~_ev>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|unit <<span class="ocsforge_color_delimiter"| -> >> <<span class="ocsforge_color_delimiter"| ( >><<a_api subproject="server" text="key" | type Os_notif.S.key >> * <<a_api subproject="server" text="client_notif" | type Os_notif.S.client_notif >><<span class="ocsforge_color_delimiter"| ) >> <<span class="ocsforge_color_uid"|Eliom_react>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_uid"|Down>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>>>>>><<div class="odocwiki_info"|~Returns the client react event~. ~Map a function on this event to react
+      to notifications from the server~.
+      ~For example~:
+<<span class="odocwiki_inlinecode"|~{server~{
+  let ~_ ~= ~Os~_session~.on~_start~_process
+    ~(fun ~(~) ~-~>
+       ignore ~{unit~{ ignore ~(~React~.~E~.map handle~_notif ~%~(~N~.client~_ev ~(~)~)~) ~}~}~;
+       ~Lwt~.return ~(~)
+     ~)
+~}~}
+>>
+>>

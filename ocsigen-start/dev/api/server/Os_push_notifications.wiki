@@ -1,0 +1,62 @@
+=Module <<a_api_type subproject="server" | module Os_push_notifications >> =
+<<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module>> <<span class="ocsforge_color_uid"|<<span class="ocsforge_color_uid"|Os_push_notifications>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="ocsforge_color_keyword"|sig>><<a_api subproject="server" text=".." | module Os_push_notifications >><<span class="ocsforge_color_keyword"|end>>>>~Send push notifications to mobile clients~.
+
+
+    ~This module provides a simple ~O~Caml interface to ~Google ~Cloud ~Messaging
+    ~(~G~C~M~) to send push notifications to mobile devices~. ~It is recommended to use
+    https~:~/~/github~.com~/dannywillems~/ocaml~-cordova~-plugin~-push client~-side to
+    receive push notifications on the mobile~.
+
+
+    ~This implementation is based on the payloads listed on this page~:
+    https~:~/~/github~.com~/phonegap~/phonegap~-plugin~-push~/blob~/master~/docs~/~P~A~Y~L~O~A~D~.md
+
+
+    ~Before using this module~, you need to register your mobile application in
+    ~G~C~M and save the server key ~G~C~M will give you~. ~You need to pass this key to
+    <<a_api subproject="server" | val Os_push_notifications.send >> when you want to send a notification~.
+
+
+    ~On the client~, you will need first to register the device on ~G~C~M and save
+    server~-side the registered ~I~D returned by ~G~C~M~. ~You will use this ~I~D when you
+    will want to send a notification to the device~. ~This step is described in
+    the binding to the ~Cordova plugin phonegap~-plugin~-push available at this
+    address~: https~:~/~/github~.com~/dannywillems~/ocaml~-cordova~-plugin~-push~.
+    ~Don~'t forget to add the plugin phonegap~-plugin~-push in the config~.xml with
+    your sender ~I~D~.
+
+
+    ~To send a notification~, you need to use <<span class="odocwiki_inlinecode"|send server~_key notification
+    options>> where <<span class="odocwiki_inlinecode"|notification>> is of type <<a_api subproject="server" | type Os_push_notifications.Notification.t >> and <<span class="odocwiki_inlinecode"|options>> is
+    of type <<a_api subproject="server" | type Os_push_notifications.Options.t >>~.
+
+
+    ~The type <<a_api subproject="server" | type Os_push_notifications.Options.t >> contains the list of registered
+    ~I~D you want to send the notification <<span class="odocwiki_inlinecode"|notification>> to~.
+    ~You can create a value of type <<a_api subproject="server" | type Os_push_notifications.Options.t >> with
+    <<a_api subproject="server" | val Os_push_notifications.Options.create >> which needs a list of client ~I~D~. ~These ~I~D~'s are the
+    devices you want to send the notification to~.
+
+
+    ~The type <<a_api subproject="server" | type Os_push_notifications.Notification.t >> contains the notification payloads~. ~These
+    payloads and their description are listed here~:
+    https~:~/~/github~.com~/phonegap~/phonegap~-plugin~-push~/blob~/master~/docs~/~P~A~Y~L~O~A~D~.md
+
+
+    ~You can create an empty value of type <<a_api subproject="server" | type Os_push_notifications.Notification.t >> with
+    <<a_api subproject="server" | val Os_push_notifications.Notification.empty >>~. ~As described in the link given above~, you can add a
+    title~, a message~, etc to the notification~. ~In general~, to add the payload
+    <<span class="odocwiki_inlinecode"|payload>>~, you can use the function <<span class="odocwiki_inlinecode"|add~_~(payload~)>>~. ~The notification value
+    is at the end to be able to use the pipe~. ~For example~, to add a title and a
+    message~, you can use~:
+    <<code language="ocaml" |
+      Notification.empty () |>
+      add_title "Hello, World!" |>
+      add_message "Message to the world!"
+    >> 
+
+----
+<<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module>> <<a_api subproject="server" text="Notification" | module Os_push_notifications.Notification >> <<span class="ocsforge_color_delimiter"|~:>> <<span class="ocsforge_color_keyword"|sig>><<a_api subproject="server" text=".." | module Os_push_notifications.Notification >><<span class="ocsforge_color_keyword"|end>>>><<div class="odocwiki_info"|~This module provides a interface to create notifications and add payloads
+>>
+<<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module>> <<a_api subproject="server" text="Options" | module Os_push_notifications.Options >> <<span class="ocsforge_color_delimiter"|~:>> <<span class="ocsforge_color_keyword"|sig>><<a_api subproject="server" text=".." | module Os_push_notifications.Options >><<span class="ocsforge_color_keyword"|end>>>><<pre id="VALsend" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|send>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|\\  string <<span class="ocsforge_color_delimiter"| -> >>\\  <<a_api subproject="server" text="Notification.t" | type Os_push_notifications.Notification.t >> <<span class="ocsforge_color_delimiter"| -> >>\\  <<a_api subproject="server" text="Options.t" | type Os_push_notifications.Options.t >> <<span class="ocsforge_color_delimiter"| -> >> unit <<span class="ocsforge_color_uid"|Lwt>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>>>>>><<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|send server~_key notification options>>
+>>

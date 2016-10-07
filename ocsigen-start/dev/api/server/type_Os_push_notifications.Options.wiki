@@ -1,0 +1,9 @@
+<<code language="ocaml" | sig
+  type t
+  val to_list :
+    Os_push_notifications.Options.t -> (string * Yojson.Safe.json) list
+  val create : string list -> Os_push_notifications.Options.t
+  val add_collapse_key :
+    string ->
+    Os_push_notifications.Options.t -> Os_push_notifications.Options.t
+end >>

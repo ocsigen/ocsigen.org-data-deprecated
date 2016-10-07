@@ -1,66 +1,66 @@
 <<code language="ocaml" | sig
-  exception Already_exists of int64
-  exception No_such_user
-  val password_set : int64 -> bool Lwt.t
-  type activationkey_info = {
-    userid : int64;
-    email : string;
-    validity : int64;
-    autoconnect : bool;
-    action : [ `AccountActivation | `Custom of string | `PasswordReset ];
-    data : string;
-  }
-  type t = {
-    userid : int64;
+  type id = Os_types.userid
+  type t =
+    Os_types.user = {
+    userid : Os_user.id;
     fn : string;
     ln : string;
     avatar : string option;
   }
-  val userid_of_user : Os_user.t -> int64
-  val firstname_of_user : Os_user.t -> string
-  val lastname_of_user : Os_user.t -> string
-  val avatar_of_user : Os_user.t -> string option
+  exception Already_exists of Os_types.userid
+  exception No_such_user
+  val password_set : Os_types.userid -> bool Lwt.t
+  val userid_of_user : Os_types.user -> Os_types.userid
+  val firstname_of_user : Os_types.user -> string
+  val lastname_of_user : Os_types.user -> string
+  val avatar_of_user : Os_types.user -> string option
   val avatar_uri_of_avatar :
     ?absolute_path:bool -> string -> Eliom_content.Xml.uri
   val avatar_uri_of_user :
-    ?absolute_path:bool -> Os_user.t -> Eliom_content.Xml.uri option
-  val fullname_of_user : Os_user.t -> string
-  val is_complete : Os_user.t -> bool
-  val add_activationkey :
+    ?absolute_path:bool -> Os_types.user -> Eliom_content.Xml.uri option
+  val fullname_of_user : Os_types.user -> string
+  val is_complete : Os_types.user -> bool
+  val add_actionlinkkey :
     ?autoconnect:bool ->
     ?action:[ `AccountActivation | `Custom of string | `PasswordReset ] ->
     ?data:string ->
     ?validity:int64 ->
-    act_key:string -> userid:int64 -> email:string -> unit -> unit Lwt.t
-  val verify_password : email:string -> password:string -> int64 Lwt.t
-  val user_of_userid : int64 -> Os_user.t Lwt.t
-  val get_activationkey_info : string -> Os_user.activationkey_info Lwt.t
-  val userid_of_email : string -> int64 Lwt.t
-  val emails_of_userid : int64 -> string list Lwt.t
-  val email_of_user : Os_user.t -> string Lwt.t
-  val email_of_userid : int64 -> string Lwt.t
-  val emails_of_user : Os_user.t -> string list Lwt.t
-  val get_users : ?pattern:string -> unit -> Os_user.t list Lwt.t
+    act_key:string ->
+    userid:Os_types.userid -> email:string -> unit -> unit Lwt.t
+  val verify_password :
+    email:string -> password:string -> Os_types.userid Lwt.t
+  val user_of_userid : Os_types.userid -> Os_types.user Lwt.t
+  val get_actionlinkkey_info : string -> Os_types.actionlinkkey_info Lwt.t
+  val userid_of_email : string -> Os_types.userid Lwt.t
+  val emails_of_userid : Os_types.userid -> string list Lwt.t
+  val email_of_user : Os_types.user -> string Lwt.t
+  val email_of_userid : Os_types.userid -> string Lwt.t
+  val emails_of_user : Os_types.user -> string list Lwt.t
+  val get_users : ?pattern:string -> unit -> Os_types.user list Lwt.t
   val create :
     ?password:string ->
     ?avatar:string ->
-    firstname:string -> lastname:string -> string -> Os_user.t Lwt.t
+    firstname:string -> lastname:string -> string -> Os_types.user Lwt.t
   val update :
     ?password:string ->
     ?avatar:string ->
-    firstname:string -> lastname:string -> int64 -> unit Lwt.t
-  val update' : ?password:string -> Os_user.t -> unit Lwt.t
-  val update_password : string -> int64 -> unit Lwt.t
-  val update_avatar : string -> int64 -> unit Lwt.t
+    firstname:string -> lastname:string -> Os_types.userid -> unit Lwt.t
+  val update' : ?password:string -> Os_types.user -> unit Lwt.t
+  val update_password : string -> Os_types.userid -> unit Lwt.t
+  val update_avatar : string -> Os_types.userid -> unit Lwt.t
   val is_registered : string -> bool Lwt.t
   val is_preregistered : string -> bool Lwt.t
   val add_preregister : string -> unit Lwt.t
   val remove_preregister : string -> unit Lwt.t
   val all : ?limit:int64 -> unit -> string list Lwt.t
   val set_pwd_crypt_fun :
-    (string -> string) * (int64 -> string -> string -> bool) -> unit
-  val remove_email_from_user : userid:int64 -> email:string -> unit Lwt.t
-  val email_is_validated : userid:int64 -> email:string -> bool Lwt.t
-  val is_main_email : userid:int64 -> email:string -> bool Lwt.t
-  val update_main_email : userid:int64 -> email:string -> unit Lwt.t
+    (string -> string) * (Os_types.userid -> string -> string -> bool) ->
+    unit
+  val remove_email_from_user :
+    userid:Os_types.userid -> email:string -> unit Lwt.t
+  val is_email_validated :
+    userid:Os_types.userid -> email:string -> bool Lwt.t
+  val is_main_email : userid:Os_types.userid -> email:string -> bool Lwt.t
+  val update_main_email :
+    userid:Os_types.userid -> email:string -> unit Lwt.t
 end >>

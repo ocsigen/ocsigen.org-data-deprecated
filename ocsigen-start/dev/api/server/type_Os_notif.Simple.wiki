@@ -1,0 +1,15 @@
+<<code language="ocaml" | functor (A : sig type key type notification end) ->
+  sig
+    type key = A.key
+    type server_notif = A.notification
+    type client_notif = A.notification
+    val listen : key -> unit
+    val unlisten : key -> unit
+    val unlisten_user :
+      ?sitedata:Eliom_common.sitedata ->
+      userid:Os_types.userid -> key -> unit
+    val notify :
+      ?notfor:[ `Me | `User of Os_types.userid ] ->
+      key -> server_notif -> unit
+    val client_ev : unit -> (key * client_notif) Eliom_react.Down.t
+  end >>

@@ -1,12 +1,12 @@
 <<code language="ocaml" | sig
-  type uploader = unit Ot_picture_uploader.service
+  type uploader = (unit, unit) Ot_picture_uploader.service
   val connected_user_box :
-    Os_user.t ->
+    Os_types.user ->
     Os_userbox.uploader -> [> Html_types.div ] Eliom_content.Html.D.elt
   val connection_box :
     unit -> [> Html_types.div ] Eliom_content.Html.D.elt Lwt.t
   val userbox :
-    Os_user.t option ->
+    Os_types.user option ->
     Os_userbox.uploader -> [> Html_types.div ] Eliom_content.Html.D.elt Lwt.t
   val upload_pic_link :
     ?a:[< Html_types.a_attrib > `OnClick ] Eliom_content.Html.D.Raw.attrib
@@ -19,16 +19,18 @@
             Html_types.button_content_fun Eliom_content.Html.D.Raw.elt list ->
     (unit -> unit) Eliom_client_value.t ->
     Os_userbox.uploader ->
-    int64 -> [> `A of Html_types.a_content ] Eliom_content.Html.D.Raw.elt
+    Os_types.userid ->
+    [> `A of Html_types.a_content ] Eliom_content.Html.D.Raw.elt
   val reset_tips_link :
     (unit -> unit) Eliom_client_value.t ->
     [> `A of [> `PCDATA ] ] Eliom_content.Html.D.Raw.elt
   val user_menu :
-    Os_user.t ->
+    Os_types.user ->
     Os_userbox.uploader -> [> Html_types.div ] Eliom_content.Html.F.elt
   val wrong_password : bool Eliom_reference.Volatile.eref
+  val account_not_activated : bool Eliom_reference.Volatile.eref
   val user_already_exists : bool Eliom_reference.Volatile.eref
   val user_does_not_exist : bool Eliom_reference.Volatile.eref
   val user_already_preregistered : bool Eliom_reference.Volatile.eref
-  val activation_key_outdated : bool Eliom_reference.Volatile.eref
+  val action_link_key_outdated : bool Eliom_reference.Volatile.eref
 end >>

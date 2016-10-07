@@ -1,6 +1,7 @@
 <<code language="ocaml" | sig
   val bubble :
     ?a:[< Html_types.div_attrib > `Class ] Eliom_content.Html.D.attrib list ->
+    ?recipient:[> `All | `Connected | `Not_connected ] ->
     ?arrow:[< `bottom of int | `left of int | `right of int | `top of int ] ->
     ?top:int ->
     ?left:int ->
@@ -99,6 +100,7 @@
     unit -> unit Lwt.t
   val block :
     ?a:[< Html_types.div_attrib > `Class ] Eliom_content.Html.D.attrib list ->
+    ?recipient:[> `All | `Connected | `Not_connected ] ->
     name:string ->
     content:((unit -> unit Lwt.t) Eliom_client_value.t ->
              Html_types.div_content Eliom_content.Html.elt list Lwt.t) ->

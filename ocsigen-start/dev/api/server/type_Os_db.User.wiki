@@ -1,0 +1,48 @@
+<<code language="ocaml" | sig
+  exception Invalid_action_link_key of Os_types.userid
+  val userid_of_email : string -> Os_types.userid Lwt.t
+  val is_registered : string -> bool Lwt.t
+  val is_email_validated : Os_types.userid -> string -> bool Lwt.t
+  val set_email_validated : Os_types.userid -> string -> unit Lwt.t
+  val add_actionlinkkey :
+    ?autoconnect:bool ->
+    ?action:[< `AccountActivation | `Custom of string | `PasswordReset
+             > `AccountActivation ] ->
+    ?data:string ->
+    ?validity:int64 ->
+    act_key:string ->
+    userid:Os_types.userid -> email:string -> unit -> unit Lwt.t
+  val add_preregister : string -> unit Lwt.t
+  val remove_preregister : string -> unit Lwt.t
+  val is_preregistered : string -> bool Lwt.t
+  val all : ?limit:int64 -> unit -> string list Lwt.t
+  val create :
+    ?password:string ->
+    ?avatar:string ->
+    firstname:string -> lastname:string -> string -> Os_types.userid Lwt.t
+  val update :
+    ?password:string ->
+    ?avatar:string ->
+    firstname:string -> lastname:string -> Os_types.userid -> unit Lwt.t
+  val update_password : string -> Os_types.userid -> unit Lwt.t
+  val update_avatar : string -> Os_types.userid -> unit Lwt.t
+  val update_main_email :
+    userid:Os_types.userid -> email:string -> unit Lwt.t
+  val verify_password :
+    email:string -> password:string -> Os_types.userid Lwt.t
+  val user_of_userid :
+    Os_types.userid ->
+    (Os_types.userid * string * string * string option * bool) Lwt.t
+  val get_actionlinkkey_info : string -> Os_types.actionlinkkey_info Lwt.t
+  val emails_of_userid : Os_types.userid -> string list Lwt.t
+  val email_of_userid : Os_types.userid -> string Lwt.t
+  val is_main_email : email:string -> userid:Os_types.userid -> bool Lwt.t
+  val add_email_to_user :
+    userid:Os_types.userid -> email:string -> unit Lwt.t
+  val remove_email_from_user :
+    userid:Os_types.userid -> email:string -> unit Lwt.t
+  val get_users :
+    ?pattern:string ->
+    unit ->
+    (Os_types.userid * string * string * string option * bool) list Lwt.t
+end >>
