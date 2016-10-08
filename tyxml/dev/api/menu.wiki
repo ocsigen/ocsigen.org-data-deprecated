@@ -1,12 +1,12 @@
-=~Ty~X~M~L 
+=~Main modules 
 ==[[Tyxml|Tyxml]]
 ==[[Tyxml.Html|Tyxml.Html]]
 ==[[Tyxml.Svg|Tyxml.Svg]]
-==~Types and signatures
-===[[Html_sigs|Html_sigs]]
-===[[Html_types|Html_types]]
-===[[Svg_sigs|Svg_sigs]]
-===[[Svg_types|Svg_types]]
+=~Types and signatures
+==[[Html_sigs|Html_sigs]]
+==[[Html_types|Html_types]]
+==[[Svg_sigs|Svg_sigs]]
+==[[Svg_types|Svg_types]]
 =~Ty~X~M~L ~Functors 
 ==[[Html_f|Html_f]]
 ==[[Svg_f|Svg_f]]

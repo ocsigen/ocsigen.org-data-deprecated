@@ -1,6 +1,6 @@
 ==
 
-=@@id="1_TyXML"@@~Ty~X~M~L =
+=@@id="1_Mainmodules"@@~Main modules =
 
 
 
@@ -19,7 +19,7 @@
 
 
 
-==@@id="2_Typesandsignatures"@@~Types and signatures==
+=@@id="1_Typesandsignatures"@@~Types and signatures=
 
 
 
