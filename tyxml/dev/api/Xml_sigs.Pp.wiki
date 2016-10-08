@@ -8,4 +8,8 @@
     
 <<code language='ocaml'|let s = Format.asprintf "%a" (pp ()) my_xml>>
 
+
+
+    ~A custom encoding function can be provided with the <<span class="odocwiki_inlinecode"|~~encode>> argument~.
+    ~Various implementations of <<span class="odocwiki_inlinecode"|encode>> are available in <<a_api | module Xml_print >>~.
 >>

@@ -1,5 +1,7 @@
 =~Ty~X~M~L 
 ==[[Tyxml|Tyxml]]
+==[[Tyxml.Html|Tyxml.Html]]
+==[[Tyxml.Svg|Tyxml.Svg]]
 ==~Types and signatures
 ===[[Html_sigs|Html_sigs]]
 ===[[Html_types|Html_types]]

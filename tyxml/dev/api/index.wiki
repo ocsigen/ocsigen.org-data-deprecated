@@ -8,6 +8,12 @@
 |<<a_api | module Tyxml >>|<<div class="odocwiki_info"|~Typed implementation for ~H~T~M~L~, ~S~V~G and ~X~M~L
 >>
 |
+|<<a_api | module Tyxml.Html >>|<<div class="odocwiki_info"|~Typesafe constructors and printers for ~H~T~M~L documents~.
+>>
+|
+|<<a_api | module Tyxml.Svg >>|<<div class="odocwiki_info"|~Typesafe constructors and printers for ~Svg documents~.
+>>
+|
 
 
 
