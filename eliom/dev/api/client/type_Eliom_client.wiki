@@ -134,8 +134,14 @@
   val set_content_local :
     ?offset:Eliommod_dom.position ->
     ?fragment:string -> Dom_html.element Js.t -> unit Lwt.t
-  val do_not_set_uri : bool Pervasives.ref
-  val change_page_after_action : unit -> unit Lwt.t
   type client_form_handler = Dom_html.event Js.t -> bool Lwt.t
   val current_uri : string Pervasives.ref
+  type _ redirection =
+      Redirection :
+        (unit, unit, Eliom_service.get, 'b, 'c, 'd, 'e, [ `WithoutSuffix ],
+         unit, unit, 'a)
+        Eliom_service.t -> 'a Eliom_client.redirection
+  val register_redirect :
+    Eliom_service.non_ocaml Eliom_client.redirection -> unit
+  val register_reload : unit -> unit
 end >>
