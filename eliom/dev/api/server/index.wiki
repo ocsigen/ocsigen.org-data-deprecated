@@ -39,7 +39,9 @@ file~.
 |<<a_api subproject="server" | module Eliom_content >>|<<div class="odocwiki_info"|~This module allows creating valid ~H~T~M~L content~, or other ~X~M~L formats~.
 >>
 |
-|Eliom_content.Html5||
+|<<a_api subproject="server" | module Eliom_content.Html >>|<<div class="odocwiki_info"|~Building and printing valid ~H~T~M~L~5 tree~.
+>>
+|
 |<<a_api subproject="server" | module Eliom_content.Svg >>|<<div class="odocwiki_info"|~Building and pretty~-printing valid ~S~V~G tree~.
 >>
 |
@@ -74,7 +76,7 @@ file~.
     files~, …
 >>
 |
-|Eliom_registration.Html5||
+|Eliom_registration.Html||
 |Eliom_registration.Action||
 |Eliom_registration.Ocaml||
 |Eliom_registration.App||
