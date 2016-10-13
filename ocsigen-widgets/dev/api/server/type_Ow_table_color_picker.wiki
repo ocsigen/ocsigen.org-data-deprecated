@@ -2,11 +2,11 @@
   type t
   type div = Html_types.div Eliom_content.Html.D.elt
   val genere_lll_color : int -> string list list list
-  val lll_color_p2 : string list list list
-  val lll_color_p3 : string list list list
-  val lll_color_p4 : string list list list
-  val lll_color_p5 : string list list list
-  val lll_color_p6 : string list list list
+  val lll_color_p2 : string list list list Lazy.t
+  val lll_color_p3 : string list list list Lazy.t
+  val lll_color_p4 : string list list list Lazy.t
+  val lll_color_p5 : string list list list Lazy.t
+  val lll_color_p6 : string list list list Lazy.t
   val lll_color_6 : string list list list
   val lll_color_10 : string list list list
   val create :
