@@ -217,13 +217,18 @@
       might fail and don~'t care what its return value is~, nor when it
       terminates ~(for instance~, because it is looping~)~.
 >>
-<<pre id="VALignore_result" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|ignore~_result>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|'a <<a_api text="t" | type Lwt.t >> <<span class="ocsforge_color_delimiter"| -> >> unit>>>><<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|ignore~_result t>> is like <<span class="odocwiki_inlinecode"|~Pervasives~.ignore t>> except that~:
+<<pre id="VALignore_result" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|ignore~_result>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|'a <<a_api text="t" | type Lwt.t >> <<span class="ocsforge_color_delimiter"| -> >> unit>>>><<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|ignore~_result t>> behaves as follows~:
 
 
-* if <<span class="odocwiki_inlinecode"|t>> already failed~, it raises the exception now~,
-* if <<span class="odocwiki_inlinecode"|t>> is sleeping and fails later~, the exception will be
-        given to <<a_api | val Lwt.async_exception_hook >>~.
+* if <<span class="odocwiki_inlinecode"|t>> has completed with a result~, <<span class="odocwiki_inlinecode"|ignore~_result t>> does nothing~,
+* if <<span class="odocwiki_inlinecode"|t>> has completed with an exception~, <<span class="odocwiki_inlinecode"|ignore~_result t>> raises the
+      exception~,
+* if <<span class="odocwiki_inlinecode"|t>> has not completed~, <<span class="odocwiki_inlinecode"|ignore~_result t>> evaluates to <<span class="odocwiki_inlinecode"|~(~)>> immediately~,
+      but if <<span class="odocwiki_inlinecode"|t>> completes later with an exception~, it will be given to
+      <<a_api | val Lwt.async_exception_hook >>~.
 
+    ~Note that this means <<span class="odocwiki_inlinecode"|ignore~_result t>> does not wait for <<span class="odocwiki_inlinecode"|t>> to complete~. ~If
+    you need to wait~, use <<span class="odocwiki_inlinecode"|t ~>~>~= fun ~_ ~-~> ~(~* ~.~.~.after t~.~.~. ~*~)>>~.
 >>
 <<pre id="VALasync_exception_hook" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|async~_exception~_hook>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<span class="ocsforge_color_delimiter"| ( >>exn <<span class="ocsforge_color_delimiter"| -> >> unit<<span class="ocsforge_color_delimiter"| ) >> <<span class="ocsforge_color_uid"|Pervasives>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|ref>>>>>><<div class="odocwiki_info"|~Function called when a asynchronous exception is thrown~.
 

@@ -751,7 +751,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="ign_notice_f"| value Lwt_log_core.ign_notice_f >> ~[<<a_api | module Lwt_log_core >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="ign_warning"| value Lwt_log_core.ign_warning >> ~[<<a_api | module Lwt_log_core >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="ign_warning_f"| value Lwt_log_core.ign_warning_f >> ~[<<a_api | module Lwt_log_core >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="ignore_result"| value Lwt.ignore_result >> ~[<<a_api | module Lwt >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|ignore~_result t>> is like <<span class="odocwiki_inlinecode"|~Pervasives~.ignore t>> except that~:
+|@@class="odocwiki_index"@ @@<<a_api text="ignore_result"| value Lwt.ignore_result >> ~[<<a_api | module Lwt >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|ignore~_result t>> behaves as follows~:
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="in_channel_of_descr"| value Lwt_chan.in_channel_of_descr >> ~[<<a_api | module Lwt_chan >>~]||
