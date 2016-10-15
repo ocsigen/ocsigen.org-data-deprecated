@@ -3134,10 +3134,10 @@
               match=_g5_[1],
               fmt$1=match[1],
               k$3=
-               function(acc,k,rest)
-                {function k$0(koc,kacc)
-                  {return _bE_(k,koc,[1,acc,[0,kacc]],rest)}
-                 return k$0},
+               function(acc,k$0,rest)
+                {function k(koc,kacc)
+                  {return _bE_(k$0,koc,[1,acc,[0,kacc]],rest)}
+                 return k},
               k$1=k$3(acc$0,k$0,rest$17),
               k$0=k$1,
               acc$0=0,
@@ -3148,10 +3148,10 @@
             match$0=_g5_[1],
             fmt$2=match$0[1],
             k$4=
-             function(acc,k,rest)
-              {function k$0(koc,kacc)
-                {return _bE_(k,koc,[1,acc,[1,kacc]],rest)}
-               return k$0},
+             function(acc,k$0,rest)
+              {function k(koc,kacc)
+                {return _bE_(k$0,koc,[1,acc,[1,kacc]],rest)}
+               return k},
             k$2=k$4(acc$0,k$0,rest$18),
             k$0=k$2,
             acc$0=0,
@@ -4635,28 +4635,28 @@
                cur_img=
                 caml_check_bound(caml_check_bound(state[2],y)[y + 1],x)[x + 1].src,
                over_cont$2=
-                function(over_cont,y,x)
-                 {function over_cont$0(param)
+                function(over_cont$0,y,x)
+                 {function over_cont(param)
                    {caml_check_bound(caml_check_bound(state[2],y)[y + 1],x)
                      [x + 1].src
                     =
                     img;
-                    return caml_call1(over_cont,0)}
-                  return over_cont$0},
+                    return caml_call1(over_cont$0,0)}
+                  return over_cont},
                over_cont$1=over_cont$2(over_cont$0,y,x),
                out_cont$2=
-                function(out_cont,y,x,cur_img)
-                 {function out_cont$0(param)
+                function(out_cont$0,y,x,cur_img)
+                 {function out_cont(param)
                    {caml_check_bound(caml_check_bound(state[2],y)[y + 1],x)
                      [x + 1].src
                     =
                     cur_img;
-                    return caml_call1(out_cont,0)}
-                  return out_cont$0},
+                    return caml_call1(out_cont$0,0)}
+                  return out_cont},
                out_cont$1=out_cont$2(out_cont$0,y,x,cur_img),
                click_cont$2=
-                function(click_cont,y,x)
-                 {function click_cont$0(param)
+                function(click_cont$0,y,x)
+                 {function click_cont(param)
                    {function _eN_(param)
                      {if
                        (2
@@ -4670,8 +4670,8 @@
                          {set_cell(state,x,y,0);return return$0(0)}
                         return bind(fall(state),_eP_)}
                       return bind(sleep(0.05),_eO_)}
-                    return bind(caml_call1(click_cont,0),_eN_)}
-                  return click_cont$0},
+                    return bind(caml_call1(click_cont$0,0),_eN_)}
+                  return click_cont},
                click_cont$1=click_cont$2(click_cont$0,y,x),
                click$0=
                 function(click_cont,y,x)
