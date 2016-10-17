@@ -1967,8 +1967,8 @@
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="write"| value Lwt_bytes.write >> ~[<<a_api | module Lwt_bytes >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="write"| value Lwt_unix.write >> ~[<<a_api | module Lwt_unix >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|write fd buf ofs len>> has the same semantic as <<span class="odocwiki_inlinecode"|~Unix~.write>>~, but
-      is cooperative
+|@@class="odocwiki_index"@ @@<<a_api text="write"| value Lwt_unix.write >> ~[<<a_api | module Lwt_unix >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|write fd buf ofs len>> writes up to <<span class="odocwiki_inlinecode"|len>> bytes to <<span class="odocwiki_inlinecode"|fd>> from <<span class="odocwiki_inlinecode"|buf>>~, starting
+    at buffer offset <<span class="odocwiki_inlinecode"|ofs>>~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="write"| value Lwt_io.write >> ~[<<a_api | module Lwt_io >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|write oc str>> writes all characters of <<span class="odocwiki_inlinecode"|str>> on <<span class="odocwiki_inlinecode"|oc>>
