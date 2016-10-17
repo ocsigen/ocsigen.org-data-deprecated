@@ -167,36 +167,65 @@
       succeeds~, even if the **file descriptor**~'s state is not
       <<span class="odocwiki_inlinecode"|~Open>>~.
 >>
-<<pre id="VALof_unix_file_descr" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|of~_unix~_file~_descr>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|\\  <<span class="ocsforge_color_label"| ?blocking: >>bool <<span class="ocsforge_color_delimiter"| -> >>\\  <<span class="ocsforge_color_label"| ?set_flags: >>bool <<span class="ocsforge_color_delimiter"| -> >> <<span class="ocsforge_color_uid"|Unix>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|file_descr>> <<span class="ocsforge_color_delimiter"| -> >> <<a_api text="file_descr" | type Lwt_unix.file_descr >>>>>><<div class="odocwiki_info"|~Creates a lwt **file descriptor** from a unix one~.
+<<pre id="VALof_unix_file_descr" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|of~_unix~_file~_descr>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|\\  <<span class="ocsforge_color_label"| ?blocking: >>bool <<span class="ocsforge_color_delimiter"| -> >>\\  <<span class="ocsforge_color_label"| ?set_flags: >>bool <<span class="ocsforge_color_delimiter"| -> >> <<span class="ocsforge_color_uid"|Unix>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|file_descr>> <<span class="ocsforge_color_delimiter"| -> >> <<a_api text="file_descr" | type Lwt_unix.file_descr >>>>>><<div class="odocwiki_info"|~Wraps a <<span class="odocwiki_inlinecode"|~Unix>> file descriptor <<span class="odocwiki_inlinecode"|fd>> in an <<span class="odocwiki_inlinecode"|~Lwt~_unix~.file~_descr>> <<span class="odocwiki_inlinecode"|fd~'>>~.
 
 
-      <<span class="odocwiki_inlinecode"|blocking>> is the blocking mode of the file~-descriptor~, and
-      describes how ~Lwt will use it~. ~In non~-blocking mode~, read~/write
-      on this file descriptor are made using non~-blocking ~I~O~; in
-      blocking mode they are made using the current async method~.  ~If
-      <<span class="odocwiki_inlinecode"|blocking>> is not specified it is guessed according to the file
-      kind~: socket and pipes are in non~-blocking mode and others are
-      in blocking mode~.
+    <<span class="odocwiki_inlinecode"|~~blocking>> controls the //internal// strategy ~Lwt uses to perform ~I~/~O on
+    the underlying <<span class="odocwiki_inlinecode"|fd>>~. ~Regardless of <<span class="odocwiki_inlinecode"|~~blocking>>~, at the ~A~P~I level~,
+    <<span class="odocwiki_inlinecode"|~Lwt~_unix~.read>>~, <<span class="odocwiki_inlinecode"|~Lwt~_unix~.write>>~, etc~. on <<span class="odocwiki_inlinecode"|fd~'>> //always// block the ~Lwt
+    thread~, but //never// block the whole process~. ~However~, for performance
+    reasons~, it is important that <<span class="odocwiki_inlinecode"|~~blocking>> match the actual blocking mode of
+    <<span class="odocwiki_inlinecode"|fd>>~.
 
 
-      ~If <<span class="odocwiki_inlinecode"|set~_flags>> is <<span class="odocwiki_inlinecode"|true>> ~(the default~) then the file flags are
-      modified according to the <<span class="odocwiki_inlinecode"|blocking>> argument~, otherwise they
-      are left unchanged~.
+    ~If <<span class="odocwiki_inlinecode"|~~blocking>> is not specified~, <<span class="odocwiki_inlinecode"|of~_unix~_file~_descr>> chooses non~-blocking
+    mode for ~Unix sockets~, ~Unix pipes~, and ~Windows sockets~, and blocking mode
+    for everything else~.
 
 
-      ~Note that the blocking mode is less efficient than the
-      non~-blocking one~, so it should be used only for file descriptors
-      that does not support asynchronous operations~, such as regular
-      files~, or for shared descriptors such as <<a_api | val Lwt_unix.stdout >>~, <<a_api | val Lwt_unix.stderr >> or
-      <<a_api | val Lwt_unix.stdin >>~.
+    <<span class="odocwiki_inlinecode"|of~_unix~_file~_descr>> runs a system call to set the specified or chosen
+    blocking mode on the underlying <<span class="odocwiki_inlinecode"|fd>>~.
+
+
+    ~To prevent <<span class="odocwiki_inlinecode"|of~_unix~_file~_descr>> from running this system call~, you can pass
+    <<span class="odocwiki_inlinecode"|~~set~_flags~:false>>~. ~Note that~, in this case~, if <<span class="odocwiki_inlinecode"|~~blocking>>~, whether passed
+    explicitly or chosen by ~Lwt~, does not match the true blocking mode of the
+    underlying <<span class="odocwiki_inlinecode"|fd>>~, ~I~/~O on <<span class="odocwiki_inlinecode"|fd~'>> will suffer performance degradation~.
+
+
+    ~Note that <<span class="odocwiki_inlinecode"|~~set~_flags>> is effectively always <<span class="odocwiki_inlinecode"|false>> if running on ~Windows
+    and <<span class="odocwiki_inlinecode"|fd>> is not a socket~.
+
+
+    ~Generally~, non~-blocking ~I~/~O is faster~: for blocking ~I~/~O~, ~Lwt typically has
+    to run system calls in worker threads to avoid blocking the process~. ~See
+    your system documentation for whether particular kinds of file descriptors
+    support non~-blocking ~I~/~O~.
 >>
-<<pre id="VALblocking" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|blocking>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<a_api text="file_descr" | type Lwt_unix.file_descr >> <<span class="ocsforge_color_delimiter"| -> >> bool <<a_api text="Lwt.t" | type Lwt.t >>>>>><<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|blocking fd>> returns whether <<span class="odocwiki_inlinecode"|fd>> is used in blocking or
-      non~-blocking mode~.
+<<pre id="VALblocking" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|blocking>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<a_api text="file_descr" | type Lwt_unix.file_descr >> <<span class="ocsforge_color_delimiter"| -> >> bool <<a_api text="Lwt.t" | type Lwt.t >>>>>><<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|blocking fd>> indicates whether ~Lwt is internally using blocking or
+    non~-blocking ~I~/~O with <<span class="odocwiki_inlinecode"|fd>>~.
+
+
+    ~Note that this may differ from the blocking mode of the underlying <<span class="odocwiki_inlinecode"|~Unix>>
+    file descriptor ~(i~.e~. <<span class="odocwiki_inlinecode"|unix~_file~_descr fd>>~)~.
+
+
+    ~See <<a_api | val Lwt_unix.of_unix_file_descr >> for details~.
 >>
-<<pre id="VALset_blocking" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|set~_blocking>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<span class="ocsforge_color_label"| ?set_flags: >>bool <<span class="ocsforge_color_delimiter"| -> >> <<a_api text="file_descr" | type Lwt_unix.file_descr >> <<span class="ocsforge_color_delimiter"| -> >> bool <<span class="ocsforge_color_delimiter"| -> >> unit>>>><<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|set~_blocking fd b>> puts <<span class="odocwiki_inlinecode"|fd>> in blocking or non~-blocking
-      mode~. ~If <<span class="odocwiki_inlinecode"|set~_flags>> is <<span class="odocwiki_inlinecode"|true>> ~(the default~) then the file flags
-      are modified~, otherwise the modification is only done at the
-      application level~.
+<<pre id="VALset_blocking" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|set~_blocking>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<span class="ocsforge_color_label"| ?set_flags: >>bool <<span class="ocsforge_color_delimiter"| -> >> <<a_api text="file_descr" | type Lwt_unix.file_descr >> <<span class="ocsforge_color_delimiter"| -> >> bool <<span class="ocsforge_color_delimiter"| -> >> unit>>>><<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|set~_blocking fd b>> causes ~Lwt to internally use blocking or non~-blocking
+    ~I~/~O with <<span class="odocwiki_inlinecode"|fd>>~, according to the value of <<span class="odocwiki_inlinecode"|b>>~.
+
+
+    ~If <<span class="odocwiki_inlinecode"|~~set~_flags>> is <<span class="odocwiki_inlinecode"|true>> ~(the default~)~, ~Lwt also makes a system call to set
+    the underlying file descriptor~'s blocking mode to match~. ~Otherwise~,
+    <<span class="odocwiki_inlinecode"|set~_blocking>> is only informational for ~Lwt~.
+
+
+    ~It is important that the underlying file descriptor actually have the same
+    blocking mode as that indicated by <<span class="odocwiki_inlinecode"|b>>~.
+
+
+    ~See <<a_api | val Lwt_unix.of_unix_file_descr >> for details~.
 >>
 <<pre id="VALabort" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|abort>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<a_api text="file_descr" | type Lwt_unix.file_descr >> <<span class="ocsforge_color_delimiter"| -> >> exn <<span class="ocsforge_color_delimiter"| -> >> unit>>>><<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|abort fd exn>> makes all current and further uses of the file
       descriptor fail with the given exception~. ~This put the **file
@@ -267,8 +296,21 @@
 >>
 <<pre id="VALclose" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|close>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<a_api text="file_descr" | type Lwt_unix.file_descr >> <<span class="ocsforge_color_delimiter"| -> >> unit <<a_api text="Lwt.t" | type Lwt.t >>>>>><<div class="odocwiki_info"|~Close a **file descriptor**~. ~This close the underlying unix **      file descriptor** and set its state to <<span class="odocwiki_inlinecode"|~Closed>>
 >>
-<<pre id="VALread" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|read>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<a_api text="file_descr" | type Lwt_unix.file_descr >> <<span class="ocsforge_color_delimiter"| -> >> <<span class="ocsforge_color_uid"|Bytes>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>> <<span class="ocsforge_color_delimiter"| -> >> int <<span class="ocsforge_color_delimiter"| -> >> int <<span class="ocsforge_color_delimiter"| -> >> int <<a_api text="Lwt.t" | type Lwt.t >>>>>><<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|read fd buf ofs len>> has the same semantic as <<span class="odocwiki_inlinecode"|~Unix~.read>>~, but
-      is cooperative
+<<pre id="VALread" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|read>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<a_api text="file_descr" | type Lwt_unix.file_descr >> <<span class="ocsforge_color_delimiter"| -> >> <<span class="ocsforge_color_uid"|Bytes>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>> <<span class="ocsforge_color_delimiter"| -> >> int <<span class="ocsforge_color_delimiter"| -> >> int <<span class="ocsforge_color_delimiter"| -> >> int <<a_api text="Lwt.t" | type Lwt.t >>>>>><<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|read fd buf ofs len>> reads up to <<span class="odocwiki_inlinecode"|len>> bytes from <<span class="odocwiki_inlinecode"|fd>>~, and writes them to
+    <<span class="odocwiki_inlinecode"|buf>>~, starting at offset <<span class="odocwiki_inlinecode"|ofs>>~. ~The function immediately evaluates to an
+    ~Lwt thread~, which waits for the operation to complete~. ~If it completes
+    successfully~, the thread indicates the number of bytes actually read~, or
+    zero if the end of file has been reached~.
+
+
+    ~Note that the ~Lwt thread waits for data ~(or end of file~) even if the
+    underlying file descriptor is in non~-blocking mode~. ~See
+    <<a_api | val Lwt_unix.of_unix_file_descr >> for a discussion of non~-blocking ~I~/~O and ~Lwt~.
+
+
+    ~The thread can fail with any exception that can be raised by <<span class="odocwiki_inlinecode"|~Unix~.read>>~,
+    except <<span class="odocwiki_inlinecode"|~Unix~.~Unix~_error ~Unix~.~E~A~G~A~I~N>>~, <<span class="odocwiki_inlinecode"|~Unix~.~Unix~_error ~Unix~.~E~W~O~U~L~D~B~L~O~C~K>> or
+    <<span class="odocwiki_inlinecode"|~Unix~.~Unix~_error ~Unix~.~E~I~N~T~R>>~.
 >>
 <<pre id="VALwrite" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|write>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<a_api text="file_descr" | type Lwt_unix.file_descr >> <<span class="ocsforge_color_delimiter"| -> >> <<span class="ocsforge_color_uid"|Bytes>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>> <<span class="ocsforge_color_delimiter"| -> >> int <<span class="ocsforge_color_delimiter"| -> >> int <<span class="ocsforge_color_delimiter"| -> >> int <<a_api text="Lwt.t" | type Lwt.t >>>>>><<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|write fd buf ofs len>> has the same semantic as <<span class="odocwiki_inlinecode"|~Unix~.write>>~, but
       is cooperative

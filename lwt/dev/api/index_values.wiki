@@ -164,8 +164,8 @@
       offset~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api text="blocking"| value Lwt_unix.blocking >> ~[<<a_api | module Lwt_unix >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|blocking fd>> returns whether <<span class="odocwiki_inlinecode"|fd>> is used in blocking or
-      non~-blocking mode~.
+|@@class="odocwiki_index"@ @@<<a_api text="blocking"| value Lwt_unix.blocking >> ~[<<a_api | module Lwt_unix >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|blocking fd>> indicates whether ~Lwt is internally using blocking or
+    non~-blocking ~I~/~O with <<span class="odocwiki_inlinecode"|fd>>~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="broadcast"| value Lwt_log_core.broadcast >> ~[<<a_api | module Lwt_log_core >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|broadcast loggers>> is a logger which send messages to all the
@@ -1136,7 +1136,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="of_unix_fd"| value Lwt_io.of_unix_fd >> ~[<<a_api | module Lwt_io >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|of~_unix~_fd ~?buffer ~?close ~~mode fd>> is a short~-hand for~:
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api text="of_unix_file_descr"| value Lwt_unix.of_unix_file_descr >> ~[<<a_api | module Lwt_unix >>~]|<<div class="odocwiki_info"|~Creates a lwt **file descriptor** from a unix one~.
+|@@class="odocwiki_index"@ @@<<a_api text="of_unix_file_descr"| value Lwt_unix.of_unix_file_descr >> ~[<<a_api | module Lwt_unix >>~]|<<div class="odocwiki_info"|~Wraps a <<span class="odocwiki_inlinecode"|~Unix>> file descriptor <<span class="odocwiki_inlinecode"|fd>> in an <<span class="odocwiki_inlinecode"|~Lwt~_unix~.file~_descr>> <<span class="odocwiki_inlinecode"|fd~'>>~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="ok"| value Lwt_result.ok >> ~[<<a_api | module Lwt_result >>~]||
@@ -1293,8 +1293,8 @@
 |@@class="odocwiki_index"@ @@<<a_api text="pwrite_lines"| value Lwt_process.pwrite_lines >> ~[<<a_api | module Lwt_process >>~]||
 |@@ @style="tet-align: left;"@@\\R|
 |@@class="odocwiki_index"@ @@<<a_api text="read"| value Lwt_bytes.read >> ~[<<a_api | module Lwt_bytes >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="read"| value Lwt_unix.read >> ~[<<a_api | module Lwt_unix >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|read fd buf ofs len>> has the same semantic as <<span class="odocwiki_inlinecode"|~Unix~.read>>~, but
-      is cooperative
+|@@class="odocwiki_index"@ @@<<a_api text="read"| value Lwt_unix.read >> ~[<<a_api | module Lwt_unix >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|read fd buf ofs len>> reads up to <<span class="odocwiki_inlinecode"|len>> bytes from <<span class="odocwiki_inlinecode"|fd>>~, and writes them to
+    <<span class="odocwiki_inlinecode"|buf>>~, starting at offset <<span class="odocwiki_inlinecode"|ofs>>~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="read"| value Lwt_io.read >> ~[<<a_api | module Lwt_io >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|read ~?count ic>> reads at most <<span class="odocwiki_inlinecode"|count>> characters from <<span class="odocwiki_inlinecode"|ic>>~.
@@ -1523,8 +1523,8 @@
       is allowed to run on~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api text="set_blocking"| value Lwt_unix.set_blocking >> ~[<<a_api | module Lwt_unix >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|set~_blocking fd b>> puts <<span class="odocwiki_inlinecode"|fd>> in blocking or non~-blocking
-      mode~.
+|@@class="odocwiki_index"@ @@<<a_api text="set_blocking"| value Lwt_unix.set_blocking >> ~[<<a_api | module Lwt_unix >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|set~_blocking fd b>> causes ~Lwt to internally use blocking or non~-blocking
+    ~I~/~O with <<span class="odocwiki_inlinecode"|fd>>~, according to the value of <<span class="odocwiki_inlinecode"|b>>~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="set_bounds"| value Lwt_preemptive.set_bounds >> ~[<<a_api | module Lwt_preemptive >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|set~_bounds ~(min~, max~)>> set the minimum and the maximum number
