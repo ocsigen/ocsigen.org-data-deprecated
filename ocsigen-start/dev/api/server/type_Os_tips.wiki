@@ -106,6 +106,7 @@
              Html_types.div_content Eliom_content.Html.elt list Lwt.t) ->
     unit -> [> `Div ] Eliom_content.Html.elt option Lwt.t
   val reset_tips : unit -> unit Lwt.t
+  val set_tip_seen : string -> unit Lwt.t
   val reset_tips_service :
     (unit, unit, Eliom_service.post, Eliom_service.non_att, Eliom_service.co,
      Eliom_service.non_ext, Eliom_service.reg, [ `WithoutSuffix ], unit,

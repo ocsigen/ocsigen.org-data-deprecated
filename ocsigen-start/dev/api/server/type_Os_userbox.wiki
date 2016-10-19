@@ -1,13 +1,5 @@
 <<code language="ocaml" | sig
   type uploader = (unit, unit) Ot_picture_uploader.service
-  val connected_user_box :
-    Os_types.user ->
-    Os_userbox.uploader -> [> Html_types.div ] Eliom_content.Html.D.elt
-  val connection_box :
-    unit -> [> Html_types.div ] Eliom_content.Html.D.elt Lwt.t
-  val userbox :
-    Os_types.user option ->
-    Os_userbox.uploader -> [> Html_types.div ] Eliom_content.Html.D.elt Lwt.t
   val upload_pic_link :
     ?a:[< Html_types.a_attrib > `OnClick ] Eliom_content.Html.D.Raw.attrib
        list ->
@@ -24,9 +16,6 @@
   val reset_tips_link :
     (unit -> unit) Eliom_client_value.t ->
     [> `A of [> `PCDATA ] ] Eliom_content.Html.D.Raw.elt
-  val user_menu :
-    Os_types.user ->
-    Os_userbox.uploader -> [> Html_types.div ] Eliom_content.Html.F.elt
   val wrong_password : bool Eliom_reference.Volatile.eref
   val account_not_activated : bool Eliom_reference.Volatile.eref
   val user_already_exists : bool Eliom_reference.Volatile.eref

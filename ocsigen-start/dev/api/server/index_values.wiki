@@ -168,13 +168,7 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="connected_rpc"| value Os_session.connected_rpc >> ~[<<a_api subproject="server" | module Os_session >>~]|<<div class="odocwiki_info"|~Wrapper for server functions ~(see <<a_api subproject="server" | val Os_session.connected_fun >>~)~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="connected_user_box"| value Os_userbox.connected_user_box >> ~[<<a_api subproject="server" | module Os_userbox >>~]|<<div class="odocwiki_info"|~Box for connected users~, with picture~, name~, and menu
->>
-|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="connected_wrapper"| value Os_session.connected_wrapper >> ~[<<a_api subproject="server" | module Os_session >>~]|<<div class="odocwiki_info"|~Wrapper for server functions when you do not need userid~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="connection_box"| value Os_userbox.connection_box >> ~[<<a_api subproject="server" | module Os_userbox >>~]|<<div class="odocwiki_info"|~Connection box
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="content"| value Os_page.content >> ~[<<a_api subproject="server" | module Os_page >>~]|<<div class="odocwiki_info"|~Specifies a page with an optional title~, some optional extra
@@ -334,7 +328,7 @@
       as a tuple <<span class="odocwiki_inlinecode"|~(userid~, firstname~, lastname~, avatar~, encrypted~_password~)>>
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="group_of_name"| value Os_group.group_of_name >> ~[<<a_api subproject="server" | module Os_group >>~]|<<div class="odocwiki_info"|~Overwrites the function <<span class="odocwiki_inlinecode"|get~_group>> of <<span class="odocwiki_inlinecode"|~Os~_db~.~User>> and use
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="group_of_name"| value Os_group.group_of_name >> ~[<<a_api subproject="server" | module Os_group >>~]|<<div class="odocwiki_info"|~Overwrites the function <<span class="odocwiki_inlinecode"|group~_of~_name>> of <<span class="odocwiki_inlinecode"|~Os~_db~.~Group>> and use
     the <<span class="odocwiki_inlinecode"|get>> function of the cache module~.
 >>
 |
@@ -592,6 +586,9 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="set_send"| value Os_email.set_send >> ~[<<a_api subproject="server" | module Os_email >>~]|<<div class="odocwiki_info"|~Customize email sending function~.
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="set_tip_seen"| value Os_tips.set_tip_seen >> ~[<<a_api subproject="server" | module Os_tips >>~]|<<div class="odocwiki_info"|~Call this function to mark a tip as "already seen" by current user~.
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="sign_up_form"| value Os_view.sign_up_form >> ~[<<a_api subproject="server" | module Os_view >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|sign~_up~_form ~~a ~(~)>> creates a <<a_api subproject="server" | val Os_view.generic_email_form >> with the service
     <<a_api subproject="server" | val Os_services.sign_up_service >>~.
 >>
@@ -695,19 +692,12 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="user_indep_state_hierarchy"| value Os_session.user_indep_state_hierarchy >> ~[<<a_api subproject="server" | module Os_session >>~]|<<div class="odocwiki_info"|~Scopes that are independant from user connection~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="user_menu"| value Os_userbox.user_menu >> ~[<<a_api subproject="server" | module Os_userbox >>~]|<<div class="odocwiki_info"|~Display user menu
->>
-|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="user_of_userid"| value Os_user.user_of_userid >> ~[<<a_api subproject="server" | module Os_user >>~]|<<div class="odocwiki_info"|returns user information~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="user_of_userid"| value Os_db.User.user_of_userid >> ~[<<a_api subproject="server" | module Os_db.User >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|user~_of~_userid userid>> returns a tuple <<span class="odocwiki_inlinecode"|~(userid~, firstname~, lastname~,
       main~_email~, password~, avatar~)>> describing the information about the user
       with ~I~D <<span class="odocwiki_inlinecode"|userid>>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="userbox"| value Os_userbox.userbox >> ~[<<a_api subproject="server" | module Os_userbox >>~]|<<div class="odocwiki_info"|~Connected user box or connexion box~, depending whether user
-    is connected or not
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="userid_of_email"| value Os_user.userid_of_email >> ~[<<a_api subproject="server" | module Os_user >>~]||
