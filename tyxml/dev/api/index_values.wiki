@@ -650,7 +650,9 @@
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="encodedpcdata"| value Xml_sigs.T.encodedpcdata >> ~[<<a_api | module Xml_sigs.T >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="entity"| value Html_sigs.T.entity >> ~[<<a_api | module Html_sigs.T >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="entity"| value Html_sigs.T.entity >> ~[<<a_api | module Html_sigs.T >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|entity "foo">> is the ~H~T~M~L entity <<span class="odocwiki_inlinecode"|~&foo~;>>~.
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api text="entity"| value Xml_sigs.T.entity >> ~[<<a_api | module Xml_sigs.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="event_handler_attrib"| value Xml_sigs.T.event_handler_attrib >> ~[<<a_api | module Xml_sigs.T >>~]||
 |@@ @style="tet-align: left;"@@\\F|
