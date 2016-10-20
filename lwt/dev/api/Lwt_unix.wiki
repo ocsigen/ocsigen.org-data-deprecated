@@ -378,6 +378,17 @@
 >>
 <<pre id="VALfile_exists" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|file~_exists>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|string <<span class="ocsforge_color_delimiter"| -> >> bool <<a_api text="Lwt.t" | type Lwt.t >>>>>><<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|file~_exists name>> tests if a file named <<span class="odocwiki_inlinecode"|name>> exists~.
 >>
+<<pre id="VALutimes" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|utimes>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|string <<span class="ocsforge_color_delimiter"| -> >> float <<span class="ocsforge_color_delimiter"| -> >> float <<span class="ocsforge_color_delimiter"| -> >> unit <<a_api text="Lwt.t" | type Lwt.t >>>>>><<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|utimes path atime mtime>> updates the access and modification times of the
+    file at <<span class="odocwiki_inlinecode"|path>>~. ~The access time is set to <<span class="odocwiki_inlinecode"|atime>> and the modification time
+    to <<span class="odocwiki_inlinecode"|mtime>>~. ~To set both to the current time~, call <<span class="odocwiki_inlinecode"|utimes path ~0~. ~0~.>>~.
+
+
+    ~This function corresponds to
+    [[http://caml.inria.fr/pub/docs/manual-ocaml/libref/Unix.html#VALutimes|
+    <<span class="odocwiki_inlinecode"|~Unix~.utimes>>]]~. ~See also
+    [[http://man7.org/linux/man-pages/man3/utimes.3p.html| <<span class="odocwiki_inlinecode"|utimes~(~3p~)>>]]~.
+**Since** NEXT_RELEASE\\
+>>
 <<pre id="VALisatty" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|isatty>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<a_api text="file_descr" | type Lwt_unix.file_descr >> <<span class="ocsforge_color_delimiter"| -> >> bool <<a_api text="Lwt.t" | type Lwt.t >>>>>><<div class="odocwiki_info"|~Wrapper for <<span class="odocwiki_inlinecode"|~Unix~.isatty>>
 >>
 

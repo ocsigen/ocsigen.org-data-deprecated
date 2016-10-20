@@ -1810,6 +1810,10 @@
       the function <<span class="odocwiki_inlinecode"|f>>~.
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api text="utimes"| value Lwt_unix.utimes >> ~[<<a_api | module Lwt_unix >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|utimes path atime mtime>> updates the access and modification times of the
+    file at <<span class="odocwiki_inlinecode"|path>>~.
+>>
+|
 |@@ @style="tet-align: left;"@@\\W|
 |@@class="odocwiki_index"@ @@<<a_api text="wait"| value Lwt_unix.wait >> ~[<<a_api | module Lwt_unix >>~]|<<div class="odocwiki_info"|~Wrapper for <<span class="odocwiki_inlinecode"|~Unix~.wait>>
 >>
