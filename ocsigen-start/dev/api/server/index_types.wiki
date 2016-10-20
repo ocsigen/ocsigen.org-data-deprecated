@@ -10,6 +10,10 @@
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="current_user"| type Os_current_user.current_user >> ~[<<a_api subproject="server" | module Os_current_user >>~]||
+|@@ @style="tet-align: left;"@@\\E|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="error"| type Os_push_notifications.Response.Results.error >> ~[<<a_api subproject="server" | module Os_push_notifications.Response.Results >>~]|<<div class="odocwiki_info"|~Sum type to represent errors~.
+>>
+|
 |@@ @style="tet-align: left;"@@\\G|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="group"| type Os_types.group >> ~[<<a_api subproject="server" | module Os_types >>~]|<<div class="odocwiki_info"|~Type representing a group~.
 >>
@@ -35,20 +39,33 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="msg"| type Os_comet.msg >> ~[<<a_api subproject="server" | module Os_comet >>~]||
 |@@ @style="tet-align: left;"@@\\S|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="server_notif"| type Os_notif.S.server_notif >> ~[<<a_api subproject="server" | module Os_notif.S >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="success"| type Os_push_notifications.Response.Results.success >> ~[<<a_api subproject="server" | module Os_push_notifications.Response.Results >>~]|<<div class="odocwiki_info"|~The type representing a success result~.
+>>
+|
 |@@ @style="tet-align: left;"@@\\T|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="t"| type Os_user.t >> ~[<<a_api subproject="server" | module Os_user >>~]|<<div class="odocwiki_info"|~Type alias to <<a_api subproject="server" | type Os_types.user >> to allow to use <<span class="odocwiki_inlinecode"|~Os~_user~.t>>~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="t"| type Os_push_notifications.Response.Results.t >> ~[<<a_api subproject="server" | module Os_push_notifications.Response.Results >>~]|<<div class="odocwiki_info"|~The type representing a result~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="t"| type Os_push_notifications.Response.t >> ~[<<a_api subproject="server" | module Os_push_notifications.Response >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="t"| type Os_push_notifications.Options.Priority.t >> ~[<<a_api subproject="server" | module Os_push_notifications.Options.Priority >>~]|<<div class="odocwiki_info"|~Priority of the message~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="t"| type Os_push_notifications.Options.t >> ~[<<a_api subproject="server" | module Os_push_notifications.Options >>~]|<<div class="odocwiki_info"|~The type representing an option~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="t"| type Os_push_notifications.Notification.Visibility.t >> ~[<<a_api subproject="server" | module Os_push_notifications.Notification.Visibility >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="t"| type Os_push_notifications.Notification.Priority.t >> ~[<<a_api subproject="server" | module Os_push_notifications.Notification.Priority >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|~Maximum>> means the notification will be displayed on the screen
-            above all views during ~2 or ~3 seconds~.
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="t"| type Os_push_notifications.Data.PhoneGap.Visibility.t >> ~[<<a_api subproject="server" | module Os_push_notifications.Data.PhoneGap.Visibility >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="t"| type Os_push_notifications.Data.PhoneGap.Priority.t >> ~[<<a_api subproject="server" | module Os_push_notifications.Data.PhoneGap.Priority >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|~Maximum>> means the notification will be displayed on the screen
+                above all views during ~2 or ~3 seconds~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="t"| type Os_push_notifications.Notification.Action.t >> ~[<<a_api subproject="server" | module Os_push_notifications.Notification.Action >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="t"| type Os_push_notifications.Notification.Style.t >> ~[<<a_api subproject="server" | module Os_push_notifications.Notification.Style >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="t"| type Os_push_notifications.Data.PhoneGap.Action.t >> ~[<<a_api subproject="server" | module Os_push_notifications.Data.PhoneGap.Action >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="t"| type Os_push_notifications.Data.PhoneGap.Style.t >> ~[<<a_api subproject="server" | module Os_push_notifications.Data.PhoneGap.Style >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="t"| type Os_push_notifications.Data.t >> ~[<<a_api subproject="server" | module Os_push_notifications.Data >>~]|<<div class="odocwiki_info"|~The type representing a data payload~.
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="t"| type Os_push_notifications.Notification.t >> ~[<<a_api subproject="server" | module Os_push_notifications.Notification >>~]|<<div class="odocwiki_info"|~The type representing a notification
 >>
 |

@@ -1,10 +1,12 @@
 =Index of modules=
 
 |@@ @style="tet-align: left;"@@\\A|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Action"| module Os_push_notifications.Notification.Action >> ~[<<a_api subproject="server" | module Os_push_notifications.Notification >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Action"| module Os_push_notifications.Data.PhoneGap.Action >> ~[<<a_api subproject="server" | module Os_push_notifications.Data.PhoneGap >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Android"| module Os_push_notifications.Notification.Android >> ~[<<a_api subproject="server" | module Os_push_notifications.Notification >>~]||
 |@@ @style="tet-align: left;"@@\\C|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Carousel"| module Os_tools.Carousel >> ~[<<a_api subproject="server" | module Os_tools >>~]||
 |@@ @style="tet-align: left;"@@\\D|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Data"| module Os_push_notifications.Data >> ~[<<a_api subproject="server" | module Os_push_notifications >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Default_config"| module Os_page.Default_config >> ~[<<a_api subproject="server" | module Os_page >>~]||
 |@@ @style="tet-align: left;"@@\\E|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Email"| module Os_db.Email >> ~[<<a_api subproject="server" | module Os_db >>~]|<<div class="odocwiki_info"|~This module is used for email management~.
@@ -14,13 +16,20 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Groups"| module Os_db.Groups >> ~[<<a_api subproject="server" | module Os_db >>~]|<<div class="odocwiki_info"|~This module is used to manage groups of user~.
 >>
 |
+|@@ @style="tet-align: left;"@@\\H|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Http"| module Os_lib.Http >> ~[<<a_api subproject="server" | module Os_lib >>~]|<<div class="odocwiki_info"|~This module contains functions about ~H~T~T~P request~.
+>>
+|
+|@@ @style="tet-align: left;"@@\\I|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Ios"| module Os_push_notifications.Notification.Ios >> ~[<<a_api subproject="server" | module Os_push_notifications.Notification >>~]||
 |@@ @style="tet-align: left;"@@\\M|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Make"| module Os_request_cache.Make >> ~[<<a_api subproject="server" | module Os_request_cache >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Make"| module Os_page.Make >> ~[<<a_api subproject="server" | module Os_page >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Make"| module Os_notif.Make >> ~[<<a_api subproject="server" | module Os_notif >>~]||
 |@@ @style="tet-align: left;"@@\\N|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Navigation_bar"| module Os_tools.Navigation_bar >> ~[<<a_api subproject="server" | module Os_tools >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Notification"| module Os_push_notifications.Notification >> ~[<<a_api subproject="server" | module Os_push_notifications >>~]|<<div class="odocwiki_info"|~This module provides a interface to create notifications and add payloads
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Notification"| module Os_push_notifications.Notification >> ~[<<a_api subproject="server" | module Os_push_notifications >>~]|<<div class="odocwiki_info"|~This module provides an interface to create the ~J~S~O~N for the notification
+    key~.
 >>
 |
 |@@ @style="tet-align: left;"@@\\O|
@@ -66,7 +75,7 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Os_page"| module Os_page >> |<<div class="odocwiki_info"|~Functor defining wrappers for services handlers returning pages~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Os_push_notifications"| module Os_push_notifications >> |<<div class="odocwiki_info"|~Send push notifications to mobile clients~.
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Os_push_notifications"| module Os_push_notifications >> |<<div class="odocwiki_info"|~Send push notifications to ~Android and i~O~S mobile devices~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Os_request_cache"| module Os_request_cache >> |<<div class="odocwiki_info"|~Caching request data to avoid doing the same computation several times
@@ -106,14 +115,26 @@
 |
 |@@ @style="tet-align: left;"@@\\P|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="PGOCaml"| module Os_db.PGOCaml >> ~[<<a_api subproject="server" | module Os_db >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Priority"| module Os_push_notifications.Notification.Priority >> ~[<<a_api subproject="server" | module Os_push_notifications.Notification >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="PhoneGap"| module Os_push_notifications.Data.PhoneGap >> ~[<<a_api subproject="server" | module Os_push_notifications.Data >>~]|<<div class="odocwiki_info"|~The ~Cordova plugin phonegap~-plugin~-push interprets some payloads defined
+        in the data key~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Priority"| module Os_push_notifications.Options.Priority >> ~[<<a_api subproject="server" | module Os_push_notifications.Options >>~]|<<div class="odocwiki_info"|~This modules defines a type for priorities for the notifications~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Priority"| module Os_push_notifications.Data.PhoneGap.Priority >> ~[<<a_api subproject="server" | module Os_push_notifications.Data.PhoneGap >>~]||
+|@@ @style="tet-align: left;"@@\\R|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Response"| module Os_push_notifications.Response >> ~[<<a_api subproject="server" | module Os_push_notifications >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Results"| module Os_push_notifications.Response.Results >> ~[<<a_api subproject="server" | module Os_push_notifications.Response >>~]|<<div class="odocwiki_info"|~The type representing a ~F~C~M response
+>>
+|
 |@@ @style="tet-align: left;"@@\\S|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Simple"| module Os_notif.Simple >> ~[<<a_api subproject="server" | module Os_notif >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Style"| module Os_push_notifications.Notification.Style >> ~[<<a_api subproject="server" | module Os_push_notifications.Notification >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Style"| module Os_push_notifications.Data.PhoneGap.Style >> ~[<<a_api subproject="server" | module Os_push_notifications.Data.PhoneGap >>~]||
 |@@ @style="tet-align: left;"@@\\U|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="User"| module Os_db.User >> ~[<<a_api subproject="server" | module Os_db >>~]|<<div class="odocwiki_info"|~This module is used for user management
 >>
 |
 |@@ @style="tet-align: left;"@@\\V|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Visibility"| module Os_push_notifications.Notification.Visibility >> ~[<<a_api subproject="server" | module Os_push_notifications.Notification >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Visibility"| module Os_push_notifications.Data.PhoneGap.Visibility >> ~[<<a_api subproject="server" | module Os_push_notifications.Data.PhoneGap >>~]||
 \\
