@@ -24,8 +24,9 @@
     ?password:string ->
     ?avatar:string ->
     firstname:string -> lastname:string -> Os_types.userid -> unit Lwt.t
-  val update_password : string -> Os_types.userid -> unit Lwt.t
-  val update_avatar : string -> Os_types.userid -> unit Lwt.t
+  val update_password :
+    userid:Os_types.userid -> password:string -> unit Lwt.t
+  val update_avatar : userid:Os_types.userid -> avatar:string -> unit Lwt.t
   val update_main_email :
     userid:Os_types.userid -> email:string -> unit Lwt.t
   val verify_password :
@@ -36,7 +37,7 @@
   val get_actionlinkkey_info : string -> Os_types.actionlinkkey_info Lwt.t
   val emails_of_userid : Os_types.userid -> string list Lwt.t
   val email_of_userid : Os_types.userid -> string Lwt.t
-  val is_main_email : email:string -> userid:Os_types.userid -> bool Lwt.t
+  val is_main_email : userid:Os_types.userid -> email:string -> bool Lwt.t
   val add_email_to_user :
     userid:Os_types.userid -> email:string -> unit Lwt.t
   val remove_email_from_user :

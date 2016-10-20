@@ -46,8 +46,9 @@
     ?avatar:string ->
     firstname:string -> lastname:string -> Os_types.userid -> unit Lwt.t
   val update' : ?password:string -> Os_types.user -> unit Lwt.t
-  val update_password : string -> Os_types.userid -> unit Lwt.t
-  val update_avatar : string -> Os_types.userid -> unit Lwt.t
+  val update_password :
+    userid:Os_types.userid -> password:string -> unit Lwt.t
+  val update_avatar : userid:Os_types.userid -> avatar:string -> unit Lwt.t
   val is_registered : string -> bool Lwt.t
   val is_preregistered : string -> bool Lwt.t
   val add_preregister : string -> unit Lwt.t

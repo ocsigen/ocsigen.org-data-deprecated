@@ -767,7 +767,7 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="update_avatar"| value Os_user.update_avatar >> ~[<<a_api subproject="server" | module Os_user >>~]|<<div class="odocwiki_info"|~Update the avatar only
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="update_avatar"| value Os_db.User.update_avatar >> ~[<<a_api subproject="server" | module Os_db.User >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|update~_avatar new~_avatar userid>> updates the avatar of the user
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="update_avatar"| value Os_db.User.update_avatar >> ~[<<a_api subproject="server" | module Os_db.User >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|update~_avatar ~~userid ~~avatar>> updates the avatar of the user
       with ~I~D <<span class="odocwiki_inlinecode"|userid>>~.
 >>
 |
@@ -785,7 +785,7 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="update_password"| value Os_user.update_password >> ~[<<a_api subproject="server" | module Os_user >>~]|<<div class="odocwiki_info"|~Update the password only
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="update_password"| value Os_db.User.update_password >> ~[<<a_api subproject="server" | module Os_db.User >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|update~_password new~_password userid>> updates the password of the user
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="update_password"| value Os_db.User.update_password >> ~[<<a_api subproject="server" | module Os_db.User >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|update~_password ~~userid ~~new~_password>> updates the password of the user
       with ~I~D <<span class="odocwiki_inlinecode"|userid>>~.
 >>
 |
