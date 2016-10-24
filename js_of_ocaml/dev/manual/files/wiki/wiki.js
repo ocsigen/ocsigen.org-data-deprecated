@@ -900,7 +900,8 @@
      {if(i >>> 0 >= s.l)caml_string_bound_error();
       return caml_string_unsafe_get(s,i)}
     function caml_string_equal(s1,s2)
-     {s1.t & 6 && caml_convert_string_to_bytes(s1);
+     {if(s1 === s2)return 1;
+      s1.t & 6 && caml_convert_string_to_bytes(s1);
       s2.t & 6 && caml_convert_string_to_bytes(s2);
       return s1.c == s2.c?1:0}
     function caml_string_notequal(s1,s2){return 1 - caml_string_equal(s1,s2)}
