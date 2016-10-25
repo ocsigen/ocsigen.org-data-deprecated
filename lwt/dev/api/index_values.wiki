@@ -1363,11 +1363,13 @@
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="really_input"| value Lwt_chan.really_input >> ~[<<a_api | module Lwt_chan >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="recv"| value Lwt_bytes.recv >> ~[<<a_api | module Lwt_bytes >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="recv"| value Lwt_unix.recv >> ~[<<a_api | module Lwt_unix >>~]|<<div class="odocwiki_info"|~Wrapper for <<span class="odocwiki_inlinecode"|~Unix~.recv>>
+|@@class="odocwiki_index"@ @@<<a_api text="recv"| value Lwt_bytes.recv >> ~[<<a_api | module Lwt_bytes >>~]|<<div class="odocwiki_info"|~Not implemented on ~Windows~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api text="recv_msg"| value Lwt_bytes.recv_msg >> ~[<<a_api | module Lwt_bytes >>~]|<<div class="odocwiki_info"|~This call is not available on windows~.
+|@@class="odocwiki_index"@ @@<<a_api text="recv"| value Lwt_unix.recv >> ~[<<a_api | module Lwt_unix >>~]|<<div class="odocwiki_info"|~Wrapper for <<span class="odocwiki_inlinecode"|~Unix~.recv>>~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="recv_msg"| value Lwt_bytes.recv_msg >> ~[<<a_api | module Lwt_bytes >>~]|<<div class="odocwiki_info"|~Not implemented on ~Windows~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="recv_msg"| value Lwt_unix.recv_msg >> ~[<<a_api | module Lwt_unix >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|recv~_msg ~~socket ~~io~_vectors>> receives data into a list of
@@ -1375,8 +1377,10 @@
     messages~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api text="recvfrom"| value Lwt_bytes.recvfrom >> ~[<<a_api | module Lwt_bytes >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="recvfrom"| value Lwt_unix.recvfrom >> ~[<<a_api | module Lwt_unix >>~]|<<div class="odocwiki_info"|~Wrapper for <<span class="odocwiki_inlinecode"|~Unix~.recvfrom>>
+|@@class="odocwiki_index"@ @@<<a_api text="recvfrom"| value Lwt_bytes.recvfrom >> ~[<<a_api | module Lwt_bytes >>~]|<<div class="odocwiki_info"|~Not implemented on ~Windows~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="recvfrom"| value Lwt_unix.recvfrom >> ~[<<a_api | module Lwt_unix >>~]|<<div class="odocwiki_info"|~Wrapper for <<span class="odocwiki_inlinecode"|~Unix~.recvfrom>>~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="register_action"| value Lwt_unix.register_action >> ~[<<a_api | module Lwt_unix >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|register~_action set fd action>> registers <<span class="odocwiki_inlinecode"|action>> on <<span class="odocwiki_inlinecode"|fd>>~.
@@ -1486,11 +1490,13 @@
 |@@class="odocwiki_index"@ @@<<a_api text="run_s"| value Lwt_react.E.run_s >> ~[<<a_api | module Lwt_react.E >>~]||
 |@@ @style="tet-align: left;"@@\\S|
 |@@class="odocwiki_index"@ @@<<a_api text="sample_s"| value Lwt_react.S.sample_s >> ~[<<a_api | module Lwt_react.S >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="send"| value Lwt_bytes.send >> ~[<<a_api | module Lwt_bytes >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="send"| value Lwt_unix.send >> ~[<<a_api | module Lwt_unix >>~]|<<div class="odocwiki_info"|~Wrapper for <<span class="odocwiki_inlinecode"|~Unix~.send>>
+|@@class="odocwiki_index"@ @@<<a_api text="send"| value Lwt_bytes.send >> ~[<<a_api | module Lwt_bytes >>~]|<<div class="odocwiki_info"|~Not implemented on ~Windows~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api text="send_msg"| value Lwt_bytes.send_msg >> ~[<<a_api | module Lwt_bytes >>~]|<<div class="odocwiki_info"|~This call is not available on windows~.
+|@@class="odocwiki_index"@ @@<<a_api text="send"| value Lwt_unix.send >> ~[<<a_api | module Lwt_unix >>~]|<<div class="odocwiki_info"|~Wrapper for <<span class="odocwiki_inlinecode"|~Unix~.send>>~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="send_msg"| value Lwt_bytes.send_msg >> ~[<<a_api | module Lwt_bytes >>~]|<<div class="odocwiki_info"|~Not implemented on ~Windows~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="send_msg"| value Lwt_unix.send_msg >> ~[<<a_api | module Lwt_unix >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|send~_msg ~~socket ~~io~_vectors ~~fds>> sends data from a list of
@@ -1500,8 +1506,10 @@
 |@@class="odocwiki_index"@ @@<<a_api text="send_notification"| value Lwt_unix.send_notification >> ~[<<a_api | module Lwt_unix >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|send~_notification id>> sends a notification~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api text="sendto"| value Lwt_bytes.sendto >> ~[<<a_api | module Lwt_bytes >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="sendto"| value Lwt_unix.sendto >> ~[<<a_api | module Lwt_unix >>~]|<<div class="odocwiki_info"|~Wrapper for <<span class="odocwiki_inlinecode"|~Unix~.sendto>>
+|@@class="odocwiki_index"@ @@<<a_api text="sendto"| value Lwt_bytes.sendto >> ~[<<a_api | module Lwt_bytes >>~]|<<div class="odocwiki_info"|~Not implemented on ~Windows~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="sendto"| value Lwt_unix.sendto >> ~[<<a_api | module Lwt_unix >>~]|<<div class="odocwiki_info"|~Wrapper for <<span class="odocwiki_inlinecode"|~Unix~.sendto>>~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="set"| value Lwt_bytes.set >> ~[<<a_api | module Lwt_bytes >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|get buffer offset value>> changes the value of the byte at
