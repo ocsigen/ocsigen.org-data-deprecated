@@ -1712,7 +1712,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="tcflow"| value Lwt_unix.tcflow >> ~[<<a_api | module Lwt_unix >>~]|<<div class="odocwiki_info"|~Wrapper for <<span class="odocwiki_inlinecode"|~Unix~.tcflow>>
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api text="tcflush"| value Lwt_unix.tcflush >> ~[<<a_api | module Lwt_unix >>~]|<<div class="odocwiki_info"|~Wrapper for <<span class="odocwiki_inlinecode"|~Unix~.tcflush>>
+|@@class="odocwiki_index"@ @@<<a_api text="tcflush"| value Lwt_unix.tcflush >> ~[<<a_api | module Lwt_unix >>~]|<<div class="odocwiki_info"|~Wrapper for <<span class="odocwiki_inlinecode"|~Unix~.tcflush>>~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="tcgetattr"| value Lwt_unix.tcgetattr >> ~[<<a_api | module Lwt_unix >>~]|<<div class="odocwiki_info"|~Wrapper for <<span class="odocwiki_inlinecode"|~Unix~.tcgetattr>>
