@@ -61,7 +61,7 @@
 
 
       ~Note that <<span class="odocwiki_inlinecode"|bind>> will not propagate backtraces correctly~.
-      ~See ~<~<a~_api project~="lwt" ~| ~The manual~>~>
+      ~See [[http://ocsigen.org/lwt/manual/| the manual]]
       for how to enable backtraces~.
 >>
 <<pre id="VAL(>>=)" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|~(~>~>~=~)>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|'a <<a_api text="t" | type Lwt.t >> <<span class="ocsforge_color_delimiter"| -> >> <<span class="ocsforge_color_delimiter"| ( >>'a <<span class="ocsforge_color_delimiter"| -> >> 'b <<a_api text="t" | type Lwt.t >><<span class="ocsforge_color_delimiter"| ) >> <<span class="ocsforge_color_delimiter"| -> >> 'b <<a_api text="t" | type Lwt.t >>>>>><<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|t ~>~>~= f>> is an alternative notation for <<span class="odocwiki_inlinecode"|bind t f>>~.
@@ -241,7 +241,7 @@
       exception~.
 
 
-      ~See ~<~<a~_api project~="lwt" ~| ~The manual~>~>
+      ~See [[http://ocsigen.org/lwt/manual/| the manual]]
       for how to enable backtraces~.
 >>
 
