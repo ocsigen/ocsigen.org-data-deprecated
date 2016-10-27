@@ -91,13 +91,11 @@
 >>
 <<pre id="VALreturn_false" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|return~_false>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|bool <<a_api text="t" | type Lwt.t >>>>>><<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|return~_false ~= return false>>
 >>
-<<pre id="VALreturn_ok" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|return~_ok>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|'a <<span class="ocsforge_color_delimiter"| -> >> <<span class="ocsforge_color_delimiter"| ( >>'a, 'b<<span class="ocsforge_color_delimiter"| ) >> <<span class="ocsforge_color_uid"|Result>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|result>> <<a_api text="t" | type Lwt.t >>>>>><<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|return~_ok x>> is similar to <<span class="odocwiki_inlinecode"|return ~(~Ok x~)>>~, to indicate success
-      explicitely~.~.
-**Since** NEXT_RELEASE\\
+<<pre id="VALreturn_ok" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|return~_ok>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|'a <<span class="ocsforge_color_delimiter"| -> >> <<span class="ocsforge_color_delimiter"| ( >>'a, 'b<<span class="ocsforge_color_delimiter"| ) >> <<span class="ocsforge_color_uid"|Result>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|result>> <<a_api text="t" | type Lwt.t >>>>>><<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|return~_ok x>> is equivalent to <<span class="odocwiki_inlinecode"|return ~(~Ok x~)>>~.
+**Since** 2.6.0\\
 >>
-<<pre id="VALreturn_error" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|return~_error>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|'e <<span class="ocsforge_color_delimiter"| -> >> <<span class="ocsforge_color_delimiter"| ( >>'a, 'e<<span class="ocsforge_color_delimiter"| ) >> <<span class="ocsforge_color_uid"|Result>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|result>> <<a_api text="t" | type Lwt.t >>>>>><<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|return~_error x>> is similar to <<span class="odocwiki_inlinecode"|return ~(~Error x~)>>~, to indicate
-      an error explicitely
-**Since** NEXT_RELEASE\\
+<<pre id="VALreturn_error" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|return~_error>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|'e <<span class="ocsforge_color_delimiter"| -> >> <<span class="ocsforge_color_delimiter"| ( >>'a, 'e<<span class="ocsforge_color_delimiter"| ) >> <<span class="ocsforge_color_uid"|Result>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|result>> <<a_api text="t" | type Lwt.t >>>>>><<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|return~_error x>> is equivalent to <<span class="odocwiki_inlinecode"|return ~(~Error x~)>>~.
+**Since** 2.6.0\\
 >>
 
 
@@ -273,13 +271,12 @@
 <<pre class="ocsforge_color odocwiki_code" id="TYPEresult"|<<span class="ocsforge_color_keyword"|type>> <<span class="odocwiki_type"|'a>> <<span class="odocwiki_name"|result>> <<span class="ocsforge_color_delimiter"|~=>> <<span class="odocwiki_type"|<<span class="ocsforge_color_delimiter"| ( >>'a, exn<<span class="ocsforge_color_delimiter"| ) >> <<span class="ocsforge_color_uid"|Result>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|result>>>> >><<div class="odocwiki_info"|~Either a value of type <<span class="odocwiki_inlinecode"|~'a>>~, either an exception~.
 
 
-      ~This type is defined as <<span class="odocwiki_inlinecode"|~(~'a~, exn~) ~Result~.result>>
-**Since** NEXT_RELEASE\\
+      ~This type is defined as <<span class="odocwiki_inlinecode"|~(~'a~, exn~) ~Result~.result>> since ~2~.~6~.~0~.
 >>
-<<pre id="VALmake_value" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|make~_value>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|'a <<span class="ocsforge_color_delimiter"| -> >> 'a <<a_api text="result" | type Lwt.result >>>>>><<div class="odocwiki_info"|<<span class="odocwiki_warning"|Deprecated.>>since ~N~E~X~T~_~R~E~L~E~A~S~E as it corresponds to <<span class="odocwiki_inlinecode"|~Result~.~Ok>>
+<<pre id="VALmake_value" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|make~_value>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|'a <<span class="ocsforge_color_delimiter"| -> >> 'a <<a_api text="result" | type Lwt.result >>>>>><<div class="odocwiki_info"|<<span class="odocwiki_warning"|Deprecated.>>~Since ~2~.~6~.~0~. ~Use <<span class="odocwiki_inlinecode"|~Result~.~Ok>>
 <<span class="odocwiki_inlinecode"|value x>> creates a result containing the value <<span class="odocwiki_inlinecode"|x>>~.
 >>
-<<pre id="VALmake_error" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|make~_error>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|exn <<span class="ocsforge_color_delimiter"| -> >> 'a <<a_api text="result" | type Lwt.result >>>>>><<div class="odocwiki_info"|<<span class="odocwiki_warning"|Deprecated.>>since ~N~E~X~T~_~R~E~L~E~A~S~E as it corresponds to <<span class="odocwiki_inlinecode"|~Result~.~Error>>
+<<pre id="VALmake_error" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|make~_error>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|exn <<span class="ocsforge_color_delimiter"| -> >> 'a <<a_api text="result" | type Lwt.result >>>>>><<div class="odocwiki_info"|<<span class="odocwiki_warning"|Deprecated.>>~Since ~2~.~6~.~0~. ~Use <<span class="odocwiki_inlinecode"|~Result~.~Error>>
 <<span class="odocwiki_inlinecode"|error e>> creates a result containing the exception <<span class="odocwiki_inlinecode"|e>>~.
 >>
 <<pre id="VALof_result" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|of~_result>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|'a <<a_api text="result" | type Lwt.result >> <<span class="ocsforge_color_delimiter"| -> >> 'a <<a_api text="t" | type Lwt.t >>>>>><<div class="odocwiki_info"|~Returns a thread from a result~.

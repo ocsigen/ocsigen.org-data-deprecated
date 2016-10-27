@@ -397,7 +397,7 @@
     [[http://caml.inria.fr/pub/docs/manual-ocaml/libref/Unix.html#VALutimes|
     <<span class="odocwiki_inlinecode"|~Unix~.utimes>>]]~. ~See also
     [[http://man7.org/linux/man-pages/man3/utimes.3p.html| <<span class="odocwiki_inlinecode"|utimes~(~3p~)>>]]~.
-**Since** NEXT_RELEASE\\
+**Since** 2.6.0\\
 >>
 <<pre id="VALisatty" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|isatty>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<a_api text="file_descr" | type Lwt_unix.file_descr >> <<span class="ocsforge_color_delimiter"| -> >> bool <<a_api text="Lwt.t" | type Lwt.t >>>>>><<div class="odocwiki_info"|~Wrapper for <<span class="odocwiki_inlinecode"|~Unix~.isatty>>
 >>

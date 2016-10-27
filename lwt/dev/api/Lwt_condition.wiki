@@ -32,4 +32,5 @@
 >>
 <<pre id="VALbroadcast_exn" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|broadcast~_exn>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|'a <<a_api text="t" | type Lwt_condition.t >> <<span class="ocsforge_color_delimiter"| -> >> exn <<span class="ocsforge_color_delimiter"| -> >> unit>>>><<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|broadcast~_exn condvar exn>> fails all waiting threads with exception
         <<span class="odocwiki_inlinecode"|exn>>~.
+**Since** 2.6.0\\
 >>

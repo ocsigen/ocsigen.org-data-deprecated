@@ -162,9 +162,11 @@
       stream is not necessarily empty~. ~It may still contain unread elements~. ~If
       <<span class="odocwiki_inlinecode"|is~_closed s ~= true>>~, then all subsequent reads until the end of the
       stream are guaranteed not to block~.
+**Since** 2.6.0\\
 >>
 <<pre id="VALclosed" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|closed>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|'a <<a_api text="t" | type Lwt_stream.t >> <<span class="ocsforge_color_delimiter"| -> >> unit <<a_api text="Lwt.t" | type Lwt.t >>>>>><<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|closed st>> returns a thread that will sleep until the stream has been
       closed~.
+**Since** 2.6.0\\
 >>
 <<pre id="VALon_termination" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|on~_termination>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|'a <<a_api text="t" | type Lwt_stream.t >> <<span class="ocsforge_color_delimiter"| -> >> <<span class="ocsforge_color_delimiter"| ( >>unit <<span class="ocsforge_color_delimiter"| -> >> unit<<span class="ocsforge_color_delimiter"| ) >> <<span class="ocsforge_color_delimiter"| -> >> unit>>>><<div class="odocwiki_info"|<<span class="odocwiki_warning"|Deprecated.>>~Use <<span class="odocwiki_inlinecode"|closed>>~.
 <<span class="odocwiki_inlinecode"|on~_termination st f>> executes <<span class="odocwiki_inlinecode"|f>> when the end of the stream <<span class="odocwiki_inlinecode"|st>>

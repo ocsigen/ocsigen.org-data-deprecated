@@ -1435,8 +1435,7 @@
       expression <<span class="odocwiki_inlinecode"|e>>~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api text="return_error"| value Lwt.return_error >> ~[<<a_api | module Lwt >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|return~_error x>> is similar to <<span class="odocwiki_inlinecode"|return ~(~Error x~)>>~, to indicate
-      an error explicitely
+|@@class="odocwiki_index"@ @@<<a_api text="return_error"| value Lwt.return_error >> ~[<<a_api | module Lwt >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|return~_error x>> is equivalent to <<span class="odocwiki_inlinecode"|return ~(~Error x~)>>~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="return_false"| value Lwt.return_false >> ~[<<a_api | module Lwt >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|return~_false ~= return false>>
@@ -1448,8 +1447,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="return_none"| value Lwt.return_none >> ~[<<a_api | module Lwt >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|return~_none ~= return ~None>>
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api text="return_ok"| value Lwt.return_ok >> ~[<<a_api | module Lwt >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|return~_ok x>> is similar to <<span class="odocwiki_inlinecode"|return ~(~Ok x~)>>~, to indicate success
-      explicitely~.~.
+|@@class="odocwiki_index"@ @@<<a_api text="return_ok"| value Lwt.return_ok >> ~[<<a_api | module Lwt >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|return~_ok x>> is equivalent to <<span class="odocwiki_inlinecode"|return ~(~Ok x~)>>~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="return_some"| value Lwt.return_some >> ~[<<a_api | module Lwt >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|return~_some x ~= return ~(~Some x~)>>
