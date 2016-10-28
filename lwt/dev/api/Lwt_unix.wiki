@@ -373,7 +373,7 @@
       with the disk~.
 
 
-      ~Note that <<span class="odocwiki_inlinecode"|fdatasync>> is not available on ~Windows~.
+      ~Note that <<span class="odocwiki_inlinecode"|fdatasync>> is not available on ~Windows and ~O~S ~X~.
 >>
 
 
