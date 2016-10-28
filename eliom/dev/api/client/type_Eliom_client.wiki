@@ -128,7 +128,7 @@
     string list ->
     (string * string) list -> (string * string) list -> unit Lwt.t
   val init : unit -> unit
-  val reload_function : (unit -> unit -> unit Lwt.t) option Pervasives.ref
+  val set_reload_function : (unit -> unit -> unit Lwt.t) -> unit
   val log_section : Eliom_lib.Lwt_log.section
   val middleClick : Dom_html.mouseEvent Js.t -> bool
   val set_content_local :
