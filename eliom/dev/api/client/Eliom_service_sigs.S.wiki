@@ -3,14 +3,13 @@
 ----
 
 
-==@@id="2_Servicecreation"@@~Service creation==
+==@@id="2_Services"@@~Services==
 
 
 
-==@@id="2_Servicecreation"@@~Service creation==
-
-
-~See <<span class="odocwiki_inlinecode"|create>> for the main service creation function~.
+      ~See <<a_api| module Eliom_service_sigs.S_WITH_CREATE >>
+      ~(and particularly its <<span class="odocwiki_inlinecode"|create>> function~) for how to create
+      services ~(only available on the server~)~.
 <<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|include>> <<a_api subproject="client" | module type Eliom_service_sigs.TYPES >>>>
 
 

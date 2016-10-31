@@ -1,16 +1,15 @@
 =Module <<a_api_type subproject="server" | module Eliom_service >> =
 <<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module>> <<span class="ocsforge_color_uid"|<<span class="ocsforge_color_uid"|Eliom_service>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="ocsforge_color_keyword"|sig>><<a_api subproject="server" text=".." | module Eliom_service >><<span class="ocsforge_color_keyword"|end>>>>~Creation and manipulation of ~Eliom services~.
 
+
+    ~See the ~Eliom manual for a detailed introduction to the concept of
+    <<a_manual chapter="server-services"|Eliom services>>~.
+
+
+    ~The main functions to create services are documented in
+    <<a_api | module Eliom_service_sigs.S_WITH_CREATE >>~.
+
 ----
-
-~See the ~Eliom manual for a detailed introduction to the concept of
-    <<a_manual chapter="server-services"|Eliom services>>~.
-
-~See the ~Eliom manual for a detailed introduction to the concept of
-    <<a_manual chapter="server-services"|Eliom services>>~.
-
-~The main functions to create services are documented in
-    <<a_api | module Eliom_service_sigs.S >>~.
 <<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|include>> <<a_api subproject="server" | module type Eliom_service_sigs.S_WITH_CREATE >>>>
 
 
@@ -18,10 +17,7 @@
 
 
 
-==@@id="2_StaticloadingofEliommodules"@@~Static loading of ~Eliom modules==
-
-
-~This functionality allows one to register initialization functions
+    ~This functionality allows one to register initialization functions
     for ~Eliom modules which will be executed when the corresponding
     module is loaded in <<span class="odocwiki_inlinecode"|ocsigenserver~.conf>>~.  ~If the module is loaded
     dynamically~, you probably don~'t need this~.  ~But if the module is
