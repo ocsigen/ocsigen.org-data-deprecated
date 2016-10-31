@@ -38,7 +38,7 @@
       ~Adds non localized ~G~E~T parameters <<span class="odocwiki_inlinecode"|params>> to <<span class="odocwiki_inlinecode"|service>>~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="add_non_localized_post_parameters"| value Eliom_service_sigs.S.add_non_localized_post_parameters >> ~[<<a_api subproject="client" | module Eliom_service_sigs.S >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="client" | val Eliom_service_sigs.S.add_non_localized_get_parameters >> but with ~P~O~S~T
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="add_non_localized_post_parameters"| value Eliom_service_sigs.S.add_non_localized_post_parameters >> ~[<<a_api subproject="client" | module Eliom_service_sigs.S >>~]|<<div class="odocwiki_info"|~Like <<a_api subproject="client" | val Eliom_service_sigs.S.add_non_localized_get_parameters >> but with ~P~O~S~T
       parameters~.
 >>
 |
@@ -556,10 +556,10 @@
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="html"| value Eliom_tools.HTML5_TOOLS.html >> ~[<<a_api subproject="client" | module Eliom_tools.HTML5_TOOLS >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="https_static_dir"| value Eliom_service_sigs.S.https_static_dir >> ~[<<a_api subproject="client" | module Eliom_service_sigs.S >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="client" | val Eliom_service_sigs.S.static_dir >> but forcing https link~.
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="https_static_dir"| value Eliom_service_sigs.S.https_static_dir >> ~[<<a_api subproject="client" | module Eliom_service_sigs.S >>~]|<<div class="odocwiki_info"|~Like <<a_api subproject="client" | val Eliom_service_sigs.S.static_dir >>~, but forces ~H~T~T~P~S link
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="https_static_dir_with_params"| value Eliom_service_sigs.S.https_static_dir_with_params >> ~[<<a_api subproject="client" | module Eliom_service_sigs.S >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="client" | val Eliom_service_sigs.S.static_dir_with_params >> but forcing https link~.
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="https_static_dir_with_params"| value Eliom_service_sigs.S.https_static_dir_with_params >> ~[<<a_api subproject="client" | module Eliom_service_sigs.S >>~]|<<div class="odocwiki_info"|~Like <<a_api subproject="client" | val Eliom_service_sigs.S.static_dir_with_params >>~, but forces ~H~T~T~P~S link
 >>
 |
 |@@ @style="tet-align: left;"@@\\I|
@@ -1015,14 +1015,14 @@
       non~-attached parameters~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="reload_action_hidden"| value Eliom_service_sigs.S.reload_action_hidden >> ~[<<a_api subproject="client" | module Eliom_service_sigs.S >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="client" | val Eliom_service_sigs.S.reload_action >> but keeps non~-attached ~G~E~T
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="reload_action_hidden"| value Eliom_service_sigs.S.reload_action_hidden >> ~[<<a_api subproject="client" | module Eliom_service_sigs.S >>~]|<<div class="odocwiki_info"|~Like <<a_api subproject="client" | val Eliom_service_sigs.S.reload_action >>~, but keeps non~-attached ~G~E~T
       parameters~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="reload_action_https"| value Eliom_service_sigs.S.reload_action_https >> ~[<<a_api subproject="client" | module Eliom_service_sigs.S >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="client" | val Eliom_service_sigs.S.reload_action >> but forcing ~H~T~T~P~S~.
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="reload_action_https"| value Eliom_service_sigs.S.reload_action_https >> ~[<<a_api subproject="client" | module Eliom_service_sigs.S >>~]|<<div class="odocwiki_info"|~Like <<a_api subproject="client" | val Eliom_service_sigs.S.reload_action >>~, but forces ~H~T~T~P~S
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="reload_action_https_hidden"| value Eliom_service_sigs.S.reload_action_https_hidden >> ~[<<a_api subproject="client" | module Eliom_service_sigs.S >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="client" | val Eliom_service_sigs.S.reload_action_hidden >> but forcing ~H~T~T~P~S~.
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="reload_action_https_hidden"| value Eliom_service_sigs.S.reload_action_https_hidden >> ~[<<a_api subproject="client" | module Eliom_service_sigs.S >>~]|<<div class="odocwiki_info"|~Like <<a_api subproject="client" | val Eliom_service_sigs.S.reload_action_hidden >>~, but forces ~H~T~T~P~S
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="remove"| value Eliom_content.Html.Manip.Class.remove >> ~[<<a_api subproject="client" | module Eliom_content.Html.Manip.Class >>~]||
@@ -1195,7 +1195,7 @@
       to static files~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="static_dir_with_params"| value Eliom_service_sigs.S.static_dir_with_params >> ~[<<a_api subproject="client" | module Eliom_service_sigs.S >>~]|<<div class="odocwiki_info"|~Like <<span class="odocwiki_inlinecode"|static~_dir>>~, but allows one to put ~G~E~T parameters
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="static_dir_with_params"| value Eliom_service_sigs.S.static_dir_with_params >> ~[<<a_api subproject="client" | module Eliom_service_sigs.S >>~]|<<div class="odocwiki_info"|~Like <<a_api subproject="client" | val Eliom_service_sigs.S.static_dir >>~, but allows one to put ~G~E~T parameters
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="stream"| value Eliom_bus.stream >> ~[<<a_api subproject="client" | module Eliom_bus >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|stream b>> returns the stream of data sent to bus <<span class="odocwiki_inlinecode"|b>>~.

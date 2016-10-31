@@ -17,8 +17,9 @@
 
 
       ~The function <<span class="odocwiki_inlinecode"|create ~~id ~~path ~(~)>> creates a service ~(<<span class="odocwiki_inlinecode"|t>>~)
-      identified as per <<span class="odocwiki_inlinecode"|path>> and accepting parameters as per <<span class="odocwiki_inlinecode"|meth>>
-      ~(see <<a_api subproject="client" | type Eliom_service_sigs.TYPES.meth >> ~)~.
+      identified as per <<span class="odocwiki_inlinecode"|path>> and accepting parameters as per <<span class="odocwiki_inlinecode"|meth>>~.
+      ~See <<a_api subproject="client" | type Eliom_service_sigs.S.path_option >>
+      and <<a_api subproject="client" | type Eliom_service_sigs.TYPES.meth >> for the respective arguments~.
 
 
       ~If <<span class="odocwiki_inlinecode"|path ~= ~Path p>>~, the service appears on path <<span class="odocwiki_inlinecode"|p>>~. ~Otherwise

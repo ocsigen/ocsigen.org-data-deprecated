@@ -1,6 +1,6 @@
 =Module <<a_api_type subproject="server" | module Eliom_service_sigs >> =
 <<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module>> <<span class="ocsforge_color_uid"|<<span class="ocsforge_color_uid"|Eliom_service_sigs>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="ocsforge_color_keyword"|sig>><<a_api subproject="server" text=".." | module Eliom_service_sigs >><<span class="ocsforge_color_keyword"|end>>>>
-==@@id="2_Auxilliarytypes"@@~Auxilliary types==
+==@@id="2_Auxilliaryservicerelatedtypes"@@~Auxilliary service~-related types==
 
 
 ----

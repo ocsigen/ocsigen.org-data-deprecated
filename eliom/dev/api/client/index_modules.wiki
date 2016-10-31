@@ -110,7 +110,7 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Eliom_service"| module Eliom_service >> |<<div class="odocwiki_info"|~Creation and manipulation of ~Eliom services~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Eliom_service_sigs"| module Eliom_service_sigs >> |<<div class="odocwiki_info"|~Auxilliary types
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Eliom_service_sigs"| module Eliom_service_sigs >> |<<div class="odocwiki_info"|~Auxilliary service~-related types
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Eliom_shared"| module Eliom_shared >> |<<div class="odocwiki_info"|~This module implements shared ~(i~.e~.~, client~-server~) versions of
