@@ -2,6 +2,7 @@
 
 |@@ @style="tet-align: left;"@@\\A|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Action"| module Os_push_notifications.Data.PhoneGap.Action >> ~[<<a_api subproject="server" | module Os_push_notifications.Data.PhoneGap >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Action_link_key"| module Os_types.Action_link_key >> ~[<<a_api subproject="server" | module Os_types >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Android"| module Os_push_notifications.Notification.Android >> ~[<<a_api subproject="server" | module Os_push_notifications.Notification >>~]||
 |@@ @style="tet-align: left;"@@\\C|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Carousel"| module Os_tools.Carousel >> ~[<<a_api subproject="server" | module Os_tools >>~]||
@@ -13,6 +14,7 @@
 >>
 |
 |@@ @style="tet-align: left;"@@\\G|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Group"| module Os_types.Group >> ~[<<a_api subproject="server" | module Os_types >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Groups"| module Os_db.Groups >> ~[<<a_api subproject="server" | module Os_db >>~]|<<div class="odocwiki_info"|~This module is used to manage groups of user~.
 >>
 |
@@ -40,7 +42,7 @@
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Options"| module Os_push_notifications.Options >> ~[<<a_api subproject="server" | module Os_push_notifications >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Os_comet"| module Os_comet >> ||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Os_current_user"| module Os_current_user >> |<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|get~_current~_user ~(~)>> returns the current user as a <<a_api subproject="server" | type Os_types.user >> type~.
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Os_current_user"| module Os_current_user >> |<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|get~_current~_user ~(~)>> returns the current user as a <<a_api subproject="server" | type Os_types.User.t >> type~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Os_date"| module Os_date >> |<<div class="odocwiki_info"|~Time zone and date management for ~Web applications~.
@@ -101,7 +103,7 @@
     <<span class="odocwiki_inlinecode"|src>> and saves the result in <<span class="odocwiki_inlinecode"|dst>> ~(default is the source file~)~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Os_user"| module Os_user >> |<<div class="odocwiki_info"|~Type alias to <<a_api subproject="server" | type Os_types.userid >> to allow to use <<span class="odocwiki_inlinecode"|~Os~_user~.id>>~.
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Os_user"| module Os_user >> |<<div class="odocwiki_info"|~Type alias to <<a_api subproject="server" | type Os_types.User.id >> to allow to use <<span class="odocwiki_inlinecode"|~Os~_user~.id>>~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Os_user_proxy"| module Os_user_proxy >> ||
@@ -132,6 +134,7 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Simple"| module Os_notif.Simple >> ~[<<a_api subproject="server" | module Os_notif >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Style"| module Os_push_notifications.Data.PhoneGap.Style >> ~[<<a_api subproject="server" | module Os_push_notifications.Data.PhoneGap >>~]||
 |@@ @style="tet-align: left;"@@\\U|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="User"| module Os_types.User >> ~[<<a_api subproject="server" | module Os_types >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="User"| module Os_db.User >> ~[<<a_api subproject="server" | module Os_db >>~]|<<div class="odocwiki_info"|~This module is used for user management
 >>
 |

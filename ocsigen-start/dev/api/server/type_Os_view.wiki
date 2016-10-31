@@ -36,9 +36,9 @@
   val home_button :
     ?a:[< Html_types.form_attrib ] Eliom_content.Html.F.attrib list ->
     unit -> [> Html_types.form ] Eliom_content.Html.F.elt
-  val avatar : Os_types.user -> [> `I | `Img ] Eliom_content.Html.F.elt
+  val avatar : Os_types.User.t -> [> `I | `Img ] Eliom_content.Html.F.elt
   val username :
-    Os_types.user -> [> Html_types.div ] Eliom_content.Html.F.elt
+    Os_types.User.t -> [> Html_types.div ] Eliom_content.Html.F.elt
   val password_form :
     ?a:[< Html_types.form_attrib ] Eliom_content.Html.D.attrib list ->
     service:(unit, 'a, Eliom_service.post, 'b, 'c, 'd, 'e,

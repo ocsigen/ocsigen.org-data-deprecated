@@ -207,7 +207,7 @@
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="connected_fun"| value Os_session.Opt.connected_fun >> ~[<<a_api subproject="server" | module Os_session.Opt >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Os_session.Opt.connected_fun >> but instead of failing in case the user is
-      not connected~, the function given as parameter takes an <<span class="odocwiki_inlinecode"|~Os~_types~.userid
+      not connected~, the function given as parameter takes an <<span class="odocwiki_inlinecode"|~Os~_types~.~User~.id
       option>> for user id~.
 >>
 |
@@ -230,7 +230,7 @@
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="connected_rpc"| value Os_session.Opt.connected_rpc >> ~[<<a_api subproject="server" | module Os_session.Opt >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Os_session.Opt.connected_rpc >> but instead of failing in case the user is
-      not connected~, the function given as parameter takes an <<span class="odocwiki_inlinecode"|~Os~_types~.userid
+      not connected~, the function given as parameter takes an <<span class="odocwiki_inlinecode"|~Os~_types~.~User~.id
       option>> for user id~.
 >>
 |
@@ -255,7 +255,7 @@
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="create"| value Os_group.create >> ~[<<a_api subproject="server" | module Os_group >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|create ~~description name>> creates a new group in the database and returns
-    it as a record of type <<span class="odocwiki_inlinecode"|~Os~_types~.group>>~.
+    it as a record of type <<span class="odocwiki_inlinecode"|~Os~_types~.~Group~.t>>~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="create"| value Os_db.Groups.create >> ~[<<a_api subproject="server" | module Os_db.Groups >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|create ~~description name>> creates a new group with name <<span class="odocwiki_inlinecode"|name>> and with
@@ -372,14 +372,14 @@
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="get_actionlinkkey_info"| value Os_db.User.get_actionlinkkey_info >> ~[<<a_api subproject="server" | module Os_db.User >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|get~_actionlinkkey~_info key>> returns the information about the
-      action link <<span class="odocwiki_inlinecode"|key>> as a type <<a_api subproject="server" | type Os_types.actionlinkkey_info >>~.
+      action link <<span class="odocwiki_inlinecode"|key>> as a type <<a_api subproject="server" | type Os_types.Action_link_key.info >>~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="get_current_user"| value Os_current_user.Opt.get_current_user >> ~[<<a_api subproject="server" | module Os_current_user.Opt >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|get~_current~_user ~(~)>> returns the current user as a <<span class="odocwiki_inlinecode"|~Os~_types~.user option>>
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="get_current_user"| value Os_current_user.Opt.get_current_user >> ~[<<a_api subproject="server" | module Os_current_user.Opt >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|get~_current~_user ~(~)>> returns the current user as a <<span class="odocwiki_inlinecode"|~Os~_types~.~User~.t option>>
       type~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="get_current_user"| value Os_current_user.get_current_user >> ~[<<a_api subproject="server" | module Os_current_user >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|get~_current~_user ~(~)>> returns the current user as a <<a_api subproject="server" | type Os_types.user >> type~.
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="get_current_user"| value Os_current_user.get_current_user >> ~[<<a_api subproject="server" | module Os_current_user >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|get~_current~_user ~(~)>> returns the current user as a <<a_api subproject="server" | type Os_types.User.t >> type~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="get_current_userid"| value Os_current_user.Opt.get_current_userid >> ~[<<a_api subproject="server" | module Os_current_user.Opt >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|get~_current~_userid ~(~)>> returns the ~I~D of the current user as an option~.
@@ -441,7 +441,7 @@
     initializes the variables for the database access~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="is_complete"| value Os_user.is_complete >> ~[<<a_api subproject="server" | module Os_user >>~]|<<div class="odocwiki_info"|~Returns true if the firstname and the lastname of <<span class="odocwiki_inlinecode"|~Os~_types~.user>> has not
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="is_complete"| value Os_user.is_complete >> ~[<<a_api subproject="server" | module Os_user >>~]|<<div class="odocwiki_info"|~Returns true if the firstname and the lastname of <<span class="odocwiki_inlinecode"|~Os~_types~.~User~.t>> has not
  been completed yet~.
 >>
 |
@@ -760,7 +760,7 @@
       profile with <<span class="odocwiki_inlinecode"|userid>>~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="update'"| value Os_user.update' >> ~[<<a_api subproject="server" | module Os_user >>~]|<<div class="odocwiki_info"|~Another version of <<span class="odocwiki_inlinecode"|update>> using a type <<span class="odocwiki_inlinecode"|~Os~_types~.user>> instead of
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="update'"| value Os_user.update' >> ~[<<a_api subproject="server" | module Os_user >>~]|<<div class="odocwiki_info"|~Another version of <<span class="odocwiki_inlinecode"|update>> using a type <<span class="odocwiki_inlinecode"|~Os~_types~.~User~.t>> instead of
     label~.
 >>
 |

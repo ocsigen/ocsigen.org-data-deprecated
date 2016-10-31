@@ -1,9 +1,5 @@
 =Index of types=
 
-|@@ @style="tet-align: left;"@@\\A|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="actionlinkkey_info"| type Os_types.actionlinkkey_info >> ~[<<a_api subproject="server" | module Os_types >>~]|<<div class="odocwiki_info"|~Action links
->>
-|
 |@@ @style="tet-align: left;"@@\\C|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="client_notif"| type Os_notif.S.client_notif >> ~[<<a_api subproject="server" | module Os_notif.S >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="content"| type Os_page.content >> ~[<<a_api subproject="server" | module Os_page >>~]|<<div class="odocwiki_info"|~An abstract type describing the content of a page
@@ -14,16 +10,18 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="error"| type Os_push_notifications.Response.Results.error >> ~[<<a_api subproject="server" | module Os_push_notifications.Response.Results >>~]|<<div class="odocwiki_info"|~Sum type to represent errors~.
 >>
 |
-|@@ @style="tet-align: left;"@@\\G|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="group"| type Os_types.group >> ~[<<a_api subproject="server" | module Os_types >>~]|<<div class="odocwiki_info"|~Type representing a group~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="groupid"| type Os_types.groupid >> ~[<<a_api subproject="server" | module Os_types >>~]|<<div class="odocwiki_info"|~Type representing a group ~I~D
->>
-|
 |@@ @style="tet-align: left;"@@\\I|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="id"| type Os_user.id >> ~[<<a_api subproject="server" | module Os_user >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="id"| type Os_group.id >> ~[<<a_api subproject="server" | module Os_group >>~]|<<div class="odocwiki_info"|~Type alias to <<a_api subproject="server" | type Os_types.groupid >> to allow to use <<span class="odocwiki_inlinecode"|~Os~_group~.id>>~.
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="id"| type Os_types.Group.id >> ~[<<a_api subproject="server" | module Os_types.Group >>~]|<<div class="odocwiki_info"|~Type representing a group ~I~D
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="id"| type Os_types.User.id >> ~[<<a_api subproject="server" | module Os_types.User >>~]|<<div class="odocwiki_info"|~Type representing a user ~I~D
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="id"| type Os_group.id >> ~[<<a_api subproject="server" | module Os_group >>~]|<<div class="odocwiki_info"|~Type alias to <<a_api subproject="server" | type Os_types.Group.id >> to allow to use <<span class="odocwiki_inlinecode"|~Os~_group~.id>>~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="info"| type Os_types.Action_link_key.info >> ~[<<a_api subproject="server" | module Os_types.Action_link_key >>~]|<<div class="odocwiki_info"|~Type representing information about the action link key
 >>
 |
 |@@ @style="tet-align: left;"@@\\K|
@@ -43,7 +41,13 @@
 >>
 |
 |@@ @style="tet-align: left;"@@\\T|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="t"| type Os_user.t >> ~[<<a_api subproject="server" | module Os_user >>~]|<<div class="odocwiki_info"|~Type alias to <<a_api subproject="server" | type Os_types.user >> to allow to use <<span class="odocwiki_inlinecode"|~Os~_user~.t>>~.
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="t"| type Os_user.t >> ~[<<a_api subproject="server" | module Os_user >>~]|<<div class="odocwiki_info"|~Type alias to <<a_api subproject="server" | type Os_types.User.t >> to allow to use <<span class="odocwiki_inlinecode"|~Os~_user~.t>>~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="t"| type Os_types.Group.t >> ~[<<a_api subproject="server" | module Os_types.Group >>~]|<<div class="odocwiki_info"|~Type representing a group~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="t"| type Os_types.User.t >> ~[<<a_api subproject="server" | module Os_types.User >>~]|<<div class="odocwiki_info"|~Type representing a user~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="t"| type Os_push_notifications.Response.Results.t >> ~[<<a_api subproject="server" | module Os_push_notifications.Response.Results >>~]|<<div class="odocwiki_info"|~The type representing a result~.
@@ -69,17 +73,11 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="t"| type Os_push_notifications.Notification.t >> ~[<<a_api subproject="server" | module Os_push_notifications.Notification >>~]|<<div class="odocwiki_info"|~The type representing a notification
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="t"| type Os_group.t >> ~[<<a_api subproject="server" | module Os_group >>~]|<<div class="odocwiki_info"|~Type alias to <<a_api subproject="server" | type Os_types.group >> to allow to use <<span class="odocwiki_inlinecode"|~Os~_group~.t>>~.
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="t"| type Os_group.t >> ~[<<a_api subproject="server" | module Os_group >>~]|<<div class="odocwiki_info"|~Type alias to <<a_api subproject="server" | type Os_types.Group.t >> to allow to use <<span class="odocwiki_inlinecode"|~Os~_group~.t>>~.
 >>
 |
 |@@ @style="tet-align: left;"@@\\U|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="uploader"| type Os_userbox.uploader >> ~[<<a_api subproject="server" | module Os_userbox >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="user"| type Os_types.user >> ~[<<a_api subproject="server" | module Os_types >>~]|<<div class="odocwiki_info"|~Type representing a user~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="userid"| type Os_types.userid >> ~[<<a_api subproject="server" | module Os_types >>~]|<<div class="odocwiki_info"|~Type representing a user ~I~D
->>
-|
 |@@ @style="tet-align: left;"@@\\V|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="value"| type Os_request_cache.Cache_sig.value >> ~[<<a_api subproject="server" | module Os_request_cache.Cache_sig >>~]|<<div class="odocwiki_info"|~The type of the value
 >>

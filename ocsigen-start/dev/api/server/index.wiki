@@ -5,7 +5,7 @@
 
 
 
-|<<a_api subproject="server" | module Os_current_user >>|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|get~_current~_user ~(~)>> returns the current user as a <<a_api subproject="server" | type Os_types.user >> type~.
+|<<a_api subproject="server" | module Os_current_user >>|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|get~_current~_user ~(~)>> returns the current user as a <<a_api subproject="server" | type Os_types.User.t >> type~.
 >>
 |
 |<<a_api subproject="server" | module Os_date >>|<<div class="odocwiki_info"|~Time zone and date management for ~Web applications~.
@@ -42,7 +42,7 @@
 |<<a_api subproject="server" | module Os_tips >>|<<div class="odocwiki_info"|~Tips for new users and new features~.
 >>
 |
-|<<a_api subproject="server" | module Os_user >>|<<div class="odocwiki_info"|~Type alias to <<a_api subproject="server" | type Os_types.userid >> to allow to use <<span class="odocwiki_inlinecode"|~Os~_user~.id>>~.
+|<<a_api subproject="server" | module Os_user >>|<<div class="odocwiki_info"|~Type alias to <<a_api subproject="server" | type Os_types.User.id >> to allow to use <<span class="odocwiki_inlinecode"|~Os~_user~.id>>~.
 >>
 |
 |<<a_api subproject="server" | module Os_userbox >>|<<div class="odocwiki_info"|~Connexion box~, box with connected user information and menu

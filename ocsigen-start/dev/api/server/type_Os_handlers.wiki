@@ -3,7 +3,7 @@
   val disconnect_handler : ?main_page:bool -> unit -> unit -> unit Lwt.t
   val sign_up_handler : unit -> string -> unit Lwt.t
   val add_email_handler : unit -> string -> unit Lwt.t
-  exception Custom_action_link of Os_types.actionlinkkey_info * bool
+  exception Custom_action_link of Os_types.Action_link_key.info * bool
   val action_link_handler :
     int64 option ->
     string ->
@@ -16,8 +16,8 @@
     Eliom_service.t -> unit -> string -> unit Lwt.t
   val preregister_handler : unit -> string -> unit Lwt.t
   val set_password_handler :
-    Os_types.userid -> unit -> string * string -> unit Lwt.t
+    Os_types.User.id -> unit -> string * string -> unit Lwt.t
   val set_personal_data_handler :
-    Os_types.userid ->
+    Os_types.User.id ->
     unit -> (string * string) * (string * string) -> unit Lwt.t
 end >>
