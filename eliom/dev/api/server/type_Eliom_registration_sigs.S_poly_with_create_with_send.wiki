@@ -5,7 +5,7 @@
   val register :
     ?app:string ->
     ?scope:[< Eliom_common.scope ] ->
-    ?options:Eliom_registration_sigs.S_poly_without_send.options ->
+    ?options:options ->
     ?charset:string ->
     ?code:int ->
     ?content_type:string ->
@@ -13,17 +13,14 @@
     ?secure_session:bool ->
     service:('get, 'post, 'b, 'c, 'd, Eliom_service.non_ext,
              Eliom_service.reg, [< `WithSuffix | `WithoutSuffix ], 'e, 'f,
-             'a Eliom_registration_sigs.S_poly_without_send.return)
+             'a return)
             Eliom_service.t ->
-    ?error_handler:((string * exn) list ->
-                    'a Eliom_registration_sigs.S_poly_without_send.page Lwt.t) ->
-    ('get ->
-     'post -> 'a Eliom_registration_sigs.S_poly_without_send.page Lwt.t) ->
-    unit
+    ?error_handler:((string * exn) list -> 'a page Lwt.t) ->
+    ('get -> 'post -> 'a page Lwt.t) -> unit
   val create :
     ?app:string ->
     ?scope:[< Eliom_common.scope ] ->
-    ?options:Eliom_registration_sigs.S_poly_without_send.options ->
+    ?options:options ->
     ?charset:string ->
     ?code:int ->
     ?content_type:string ->
@@ -40,16 +37,15 @@
           'gp_)
          Eliom_service.meth ->
     path:('att, 'co, 'gp_) Eliom_service.path_option ->
-    ?error_handler:((string * exn) list ->
-                    'a Eliom_registration_sigs.S_poly_without_send.page Lwt.t) ->
-    ('gp -> 'pp -> 'a Eliom_registration_sigs.S_poly_without_send.page Lwt.t) ->
+    ?error_handler:((string * exn) list -> 'a page Lwt.t) ->
+    ('gp -> 'pp -> 'a page Lwt.t) ->
     ('gp, 'pp, 'm, 'att, 'co, Eliom_service.non_ext, Eliom_service.reg, 'b,
-     'gn, 'pn, 'a Eliom_registration_sigs.S_poly_without_send.return)
+     'gn, 'pn, 'a return)
     Eliom_service.t
   val attach_get :
     ?app:string ->
     ?scope:[< Eliom_common.scope ] ->
-    ?options:Eliom_registration_sigs.S_poly_without_send.options ->
+    ?options:options ->
     ?charset:string ->
     ?code:int ->
     ?content_type:string ->
@@ -64,21 +60,19 @@
     ?timeout:float ->
     fallback:(unit, unit, Eliom_service.get, Eliom_service.att,
               Eliom_service.non_co, Eliom_service.non_ext, 'b,
-              [ `WithoutSuffix ], unit, unit,
-              'a Eliom_registration_sigs.S_poly_without_send.return)
+              [ `WithoutSuffix ], unit, unit, 'a return)
              Eliom_service.t ->
     get_params:('gp, [ `WithoutSuffix ], 'gn) Eliom_parameter.params_type ->
-    ?error_handler:((string * exn) list ->
-                    'a Eliom_registration_sigs.S_poly_without_send.page Lwt.t) ->
-    ('gp -> unit -> 'a Eliom_registration_sigs.S_poly_without_send.page Lwt.t) ->
+    ?error_handler:((string * exn) list -> 'a page Lwt.t) ->
+    ('gp -> unit -> 'a page Lwt.t) ->
     ('gp, unit, Eliom_service.get, Eliom_service.att, Eliom_service.co,
      Eliom_service.non_ext, Eliom_service.reg, [ `WithoutSuffix ], 'gn, 
-     unit, 'a Eliom_registration_sigs.S_poly_without_send.return)
+     unit, 'a return)
     Eliom_service.t
   val attach_post :
     ?app:string ->
     ?scope:[< Eliom_common.scope ] ->
-    ?options:Eliom_registration_sigs.S_poly_without_send.options ->
+    ?options:options ->
     ?charset:string ->
     ?code:int ->
     ?content_type:string ->
@@ -93,15 +87,22 @@
     ?timeout:float ->
     fallback:('gp, unit, Eliom_service.get, Eliom_service.att,
               Eliom_service.non_co, Eliom_service.non_ext, 'b,
-              [ `WithoutSuffix ], 'gn, unit,
-              'a Eliom_registration_sigs.S_poly_without_send.return)
+              [ `WithoutSuffix ], 'gn, unit, 'a return)
              Eliom_service.t ->
     post_params:('pp, [ `WithoutSuffix ], 'pn) Eliom_parameter.params_type ->
-    ?error_handler:((string * exn) list ->
-                    'a Eliom_registration_sigs.S_poly_without_send.page Lwt.t) ->
-    ('gp -> 'pp -> 'a Eliom_registration_sigs.S_poly_without_send.page Lwt.t) ->
+    ?error_handler:((string * exn) list -> 'a page Lwt.t) ->
+    ('gp -> 'pp -> 'a page Lwt.t) ->
     ('gp, 'pp, Eliom_service.post, Eliom_service.att, Eliom_service.co,
      Eliom_service.non_ext, Eliom_service.reg, [ `WithoutSuffix ], 'gn, 'pn,
-     'a Eliom_registration_sigs.S_poly_without_send.return)
+     'a return)
     Eliom_service.t
+  type 'a result
+  val send :
+    ?options:options ->
+    ?charset:string ->
+    ?code:int ->
+    ?content_type:string ->
+    ?headers:Http_headers.t ->
+    'a page ->
+    'a Eliom_registration_sigs.S_poly_with_create_with_send.result Lwt.t
 end >>

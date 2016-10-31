@@ -21,8 +21,12 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="S"| module type Eliom_registration_sigs.S >> ~[<<a_api subproject="client" | module Eliom_registration_sigs >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="S"| module type Eliom_parameter_sigs.S >> ~[<<a_api subproject="client" | module Eliom_parameter_sigs >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="S"| module type Eliom_form_sigs.S >> ~[<<a_api subproject="client" | module Eliom_form_sigs >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="S_WITH_CREATE"| module type Eliom_service_sigs.S_WITH_CREATE >> ~[<<a_api subproject="client" | module Eliom_service_sigs >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="S_poly"| module type Eliom_registration_sigs.S_poly >> ~[<<a_api subproject="client" | module Eliom_registration_sigs >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="S_poly_without_send"| module type Eliom_registration_sigs.S_poly_without_send >> ~[<<a_api subproject="client" | module Eliom_registration_sigs >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="S_poly_with_create"| module type Eliom_registration_sigs.S_poly_with_create >> ~[<<a_api subproject="client" | module Eliom_registration_sigs >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="S_poly_with_create_with_send"| module type Eliom_registration_sigs.S_poly_with_create_with_send >> ~[<<a_api subproject="client" | module Eliom_registration_sigs >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="S_poly_with_send"| module type Eliom_registration_sigs.S_poly_with_send >> ~[<<a_api subproject="client" | module Eliom_registration_sigs >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="S_with_create"| module type Eliom_registration_sigs.S_with_create >> ~[<<a_api subproject="client" | module Eliom_registration_sigs >>~]||
 |@@ @style="tet-align: left;"@@\\T|
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="TYPES"| module type Eliom_service_sigs.TYPES >> ~[<<a_api subproject="client" | module Eliom_service_sigs >>~]||
 |@@ @style="tet-align: left;"@@\\V|

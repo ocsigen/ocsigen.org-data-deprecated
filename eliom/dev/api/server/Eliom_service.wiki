@@ -11,7 +11,7 @@
 
 ~The main functions to create services are documented in
     <<a_api | module Eliom_service_sigs.S >>~.
-<<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|include>> <<a_api subproject="server" | module type Eliom_service_sigs.S >>>>
+<<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|include>> <<a_api subproject="server" | module type Eliom_service_sigs.S_WITH_CREATE >>>>
 
 
 ==@@id="2_StaticloadingofEliommodules"@@~Static loading of ~Eliom modules==

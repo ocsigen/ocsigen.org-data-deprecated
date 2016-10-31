@@ -103,23 +103,6 @@
   val get_application_name : unit -> string
   val persist_document_head : unit -> unit
   type ('a, 'b) server_function = 'a -> 'b Lwt.t
-  val server_function :
-    ?scope:[< Eliom_common.scope ] ->
-    ?options:unit ->
-    ?charset:string ->
-    ?code:int ->
-    ?content_type:string ->
-    ?headers:Http_headers.t ->
-    ?secure_session:bool ->
-    name:string ->
-    ?csrf_safe:bool ->
-    ?csrf_scope:[< Eliom_common.user_scope ] ->
-    ?csrf_secure:bool ->
-    ?max_use:int ->
-    ?timeout:float ->
-    ?https:bool ->
-    ?error_handler:((string * exn) list -> 'b Lwt.t) ->
-    'a Deriving_Json.t -> unit -> ('a, 'b) Eliom_client.server_function
   val change_page_uri : ?replace:bool -> string -> unit Lwt.t
   val change_page_unknown :
     ?meth:[ `Delete | `Get | `Post | `Put ] ->

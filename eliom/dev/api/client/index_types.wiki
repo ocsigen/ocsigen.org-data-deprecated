@@ -136,13 +136,13 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="oneradio"| type Eliom_parameter_sigs.S.oneradio >> ~[<<a_api subproject="client" | module Eliom_parameter_sigs.S >>~]|<<div class="odocwiki_info"|~Restriction of <<a_api subproject="client" | type Eliom_parameter_sigs.S.setoneradio >> unary and optional parameters~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="options"| type Eliom_registration_sigs.S_poly_without_send.options >> ~[<<a_api subproject="client" | module Eliom_registration_sigs.S_poly_without_send >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="options"| type Eliom_registration_sigs.S_poly.options >> ~[<<a_api subproject="client" | module Eliom_registration_sigs.S_poly >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="options"| type Eliom_registration_sigs.S.options >> ~[<<a_api subproject="client" | module Eliom_registration_sigs.S >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="options"| type Eliom_registration_sigs.PARAM_POLY.options >> ~[<<a_api subproject="client" | module Eliom_registration_sigs.PARAM_POLY >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="options"| type Eliom_registration_sigs.PARAM_CLIENT.options >> ~[<<a_api subproject="client" | module Eliom_registration_sigs.PARAM_CLIENT >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="options"| type Eliom_registration_sigs.PARAM.options >> ~[<<a_api subproject="client" | module Eliom_registration_sigs.PARAM >>~]||
 |@@ @style="tet-align: left;"@@\\P|
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="page"| type Eliom_registration_sigs.S_poly_without_send.page >> ~[<<a_api subproject="client" | module Eliom_registration_sigs.S_poly_without_send >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="page"| type Eliom_registration_sigs.S_poly.page >> ~[<<a_api subproject="client" | module Eliom_registration_sigs.S_poly >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="page"| type Eliom_registration_sigs.S.page >> ~[<<a_api subproject="client" | module Eliom_registration_sigs.S >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="page"| type Eliom_registration_sigs.PARAM_POLY.page >> ~[<<a_api subproject="client" | module Eliom_registration_sigs.PARAM_POLY >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="page"| type Eliom_registration_sigs.PARAM_CLIENT.page >> ~[<<a_api subproject="client" | module Eliom_registration_sigs.PARAM_CLIENT >>~]||
@@ -168,10 +168,11 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="redirection"| type Eliom_registration.redirection >> ~[<<a_api subproject="client" | module Eliom_registration >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="reg"| type Eliom_service_sigs.TYPES.reg >> ~[<<a_api subproject="client" | module Eliom_service_sigs.TYPES >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="request"| type Eliom_lazy.request >> ~[<<a_api subproject="client" | module Eliom_lazy >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="result"| type Eliom_registration_sigs.S_poly.result >> ~[<<a_api subproject="client" | module Eliom_registration_sigs.S_poly >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="result"| type Eliom_registration_sigs.S_poly_with_create_with_send.result >> ~[<<a_api subproject="client" | module Eliom_registration_sigs.S_poly_with_create_with_send >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="result"| type Eliom_registration_sigs.S_poly_with_send.result >> ~[<<a_api subproject="client" | module Eliom_registration_sigs.S_poly_with_send >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="result"| type Eliom_registration_sigs.S.result >> ~[<<a_api subproject="client" | module Eliom_registration_sigs.S >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="result"| type Eliom_registration_sigs.PARAM.result >> ~[<<a_api subproject="client" | module Eliom_registration_sigs.PARAM >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="return"| type Eliom_registration_sigs.S_poly_without_send.return >> ~[<<a_api subproject="client" | module Eliom_registration_sigs.S_poly_without_send >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="return"| type Eliom_registration_sigs.S_poly.return >> ~[<<a_api subproject="client" | module Eliom_registration_sigs.S_poly >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="return"| type Eliom_registration_sigs.S.return >> ~[<<a_api subproject="client" | module Eliom_registration_sigs.S >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="return"| type Eliom_registration_sigs.PARAM_POLY.return >> ~[<<a_api subproject="client" | module Eliom_registration_sigs.PARAM_POLY >>~]||
 |@@ @style="tet-align: left;"@@\\S|

@@ -1,13 +1,7 @@
 <<code language="ocaml" | sig
-  type 'a page = Eliom_service.non_ocaml redirection
-  type options =
-      [ `Found
-      | `MovedPermanently
-      | `NotNodifed
-      | `SeeOther
-      | `TemporaryRedirect
-      | `UseProxy ]
-  type 'a return = Eliom_service.non_ocaml
+  type _ page
+  type options
+  type _ return
   val register :
     ?app:string ->
     ?scope:[< Eliom_common.scope ] ->
@@ -23,11 +17,12 @@
             Eliom_service.t ->
     ?error_handler:((string * exn) list -> 'a page Lwt.t) ->
     ('get -> 'post -> 'a page Lwt.t) -> unit
-  type 'a result = browser_content kind
+  type 'a result
   val send :
     ?options:options ->
     ?charset:string ->
     ?code:int ->
     ?content_type:string ->
-    ?headers:Http_headers.t -> 'a page -> 'a result Lwt.t
+    ?headers:Http_headers.t ->
+    'a page -> 'a Eliom_registration_sigs.S_poly_with_send.result Lwt.t
 end >>

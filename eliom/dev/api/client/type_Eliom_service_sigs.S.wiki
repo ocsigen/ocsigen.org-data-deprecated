@@ -64,68 +64,6 @@
     | No_path :
         (Eliom_service_sigs.S.non_att, co, unit)
         Eliom_service_sigs.S.path_option
-  val create :
-    ?name:string ->
-    ?csrf_safe:bool ->
-    ?csrf_scope:[< Eliom_common.user_scope ] ->
-    ?csrf_secure:bool ->
-    ?max_use:int ->
-    ?timeout:float ->
-    ?https:bool ->
-    ?keep_nl_params:[ `All | `None | `Persistent ] ->
-    ?priority:int ->
-    meth:('m, 'gp, 'gn, 'pp, 'pn, [< `WithSuffix | `WithoutSuffix ] as 'a,
-          'gp_)
-         meth ->
-    path:('att, 'co, 'gp_) Eliom_service_sigs.S.path_option ->
-    unit ->
-    ('gp, 'pp, 'm, 'att, 'co, non_ext, reg, 'a, 'gn, 'pn, non_ocaml)
-    Eliom_service_sigs.S.t
-  val extern :
-    ?keep_nl_params:[ `All | `None | `Persistent ] ->
-    prefix:string ->
-    path:Eliom_lib.Url.path ->
-    meth:('m, 'gp, 'gn, 'pp, 'pn, [< `WithSuffix | `WithoutSuffix ] as 'a,
-          'b)
-         meth ->
-    unit ->
-    ('gp, 'pp, 'm, Eliom_service_sigs.S.att, non_co, ext, non_reg, 'a, 'gn,
-     'pn, non_ocaml)
-    Eliom_service_sigs.S.t
-  val attach_get :
-    ?name:string ->
-    ?csrf_safe:bool ->
-    ?csrf_scope:[< Eliom_common.user_scope ] ->
-    ?csrf_secure:bool ->
-    ?max_use:int ->
-    ?timeout:float ->
-    ?https:bool ->
-    ?keep_nl_params:[ `All | `None | `Persistent ] ->
-    fallback:(unit, unit, get, Eliom_service_sigs.S.att, non_co, non_ext, 'a,
-              [ `WithoutSuffix ], unit, unit, non_ocaml)
-             Eliom_service_sigs.S.t ->
-    get_params:('gp, [ `WithoutSuffix ], 'gn) Eliom_parameter.params_type ->
-    unit ->
-    ('gp, unit, get, Eliom_service_sigs.S.att, co, non_ext, reg,
-     [ `WithoutSuffix ], 'gn, unit, non_ocaml)
-    Eliom_service_sigs.S.t
-  val attach_post :
-    ?name:string ->
-    ?csrf_safe:bool ->
-    ?csrf_scope:[< Eliom_common.user_scope ] ->
-    ?csrf_secure:bool ->
-    ?max_use:int ->
-    ?timeout:float ->
-    ?https:bool ->
-    ?keep_nl_params:[ `All | `None | `Persistent ] ->
-    fallback:('gp, unit, get, Eliom_service_sigs.S.att, non_co, non_ext, 'a,
-              [ `WithoutSuffix ], 'gn, unit, non_ocaml)
-             Eliom_service_sigs.S.t ->
-    post_params:('pp, [ `WithoutSuffix ], 'pn) Eliom_parameter.params_type ->
-    unit ->
-    ('gp, 'pp, post, Eliom_service_sigs.S.att, co, non_ext, reg,
-     [ `WithoutSuffix ], 'gn, 'pn, non_ocaml)
-    Eliom_service_sigs.S.t
   val reload_action :
     (unit, unit, get, Eliom_service_sigs.S.non_att, co, non_ext, non_reg,
      [ `WithoutSuffix ], unit, unit, non_ocaml)
@@ -205,74 +143,16 @@
             Eliom_service_sigs.S.t ->
     ('a, 'b * 'p, 'meth, 'attach, 'co, 'ext, 'g, 'c, 'e, 'f * 'pn, 'return)
     Eliom_service_sigs.S.t
-  val create_ocaml :
-    ?name:string ->
-    ?csrf_safe:bool ->
-    ?csrf_scope:[< Eliom_common.user_scope ] ->
-    ?csrf_secure:bool ->
-    ?max_use:int ->
-    ?timeout:float ->
-    ?https:bool ->
+  val extern :
     ?keep_nl_params:[ `All | `None | `Persistent ] ->
-    ?priority:int ->
+    prefix:string ->
+    path:Eliom_lib.Url.path ->
     meth:('m, 'gp, 'gn, 'pp, 'pn, [< `WithSuffix | `WithoutSuffix ] as 'a,
-          'gp_)
+          'b)
          meth ->
-    path:('att, 'co, 'gp_) Eliom_service_sigs.S.path_option ->
     unit ->
-    ('gp, 'pp, 'm, 'att, 'co, non_ext, reg, 'a, 'gn, 'pn, 'ret ocaml)
-    Eliom_service_sigs.S.t
-  val create_unsafe :
-    ?name:string ->
-    ?csrf_safe:bool ->
-    ?csrf_scope:[< Eliom_common.user_scope ] ->
-    ?csrf_secure:bool ->
-    ?max_use:int ->
-    ?timeout:float ->
-    ?https:bool ->
-    ?keep_nl_params:[ `All | `None | `Persistent ] ->
-    ?priority:int ->
-    meth:('m, 'gp, 'gn, 'pp, 'pn, [< `WithSuffix | `WithoutSuffix ] as 'a,
-          'gp_)
-         meth ->
-    path:('att, 'co, 'gp_) Eliom_service_sigs.S.path_option ->
-    unit ->
-    ('gp, 'pp, 'm, 'att, 'co, non_ext, reg, 'a, 'gn, 'pn, 'ret)
-    Eliom_service_sigs.S.t
-  val attach_get_unsafe :
-    ?name:string ->
-    ?csrf_safe:bool ->
-    ?csrf_scope:[< Eliom_common.user_scope ] ->
-    ?csrf_secure:bool ->
-    ?max_use:int ->
-    ?timeout:float ->
-    ?https:bool ->
-    ?keep_nl_params:[ `All | `None | `Persistent ] ->
-    fallback:(unit, unit, get, Eliom_service_sigs.S.att, non_co, non_ext, 'a,
-              [< `WithSuffix | `WithoutSuffix ], unit, unit, 'b)
-             Eliom_service_sigs.S.t ->
-    get_params:('gp, [< `WithSuffix | `WithoutSuffix ] as 'c, 'gn)
-               Eliom_parameter.params_type ->
-    unit ->
-    ('gp, unit, get, Eliom_service_sigs.S.att, co, non_ext, reg, 'c, 'gn,
-     unit, 'd)
-    Eliom_service_sigs.S.t
-  val attach_post_unsafe :
-    ?name:string ->
-    ?csrf_safe:bool ->
-    ?csrf_scope:[< Eliom_common.user_scope ] ->
-    ?csrf_secure:bool ->
-    ?max_use:int ->
-    ?timeout:float ->
-    ?https:bool ->
-    ?keep_nl_params:[ `All | `None | `Persistent ] ->
-    fallback:('gp, unit, get, Eliom_service_sigs.S.att, non_co, non_ext, 'a,
-              [< `WithSuffix | `WithoutSuffix ] as 'b, 'gn, unit, 'c)
-             Eliom_service_sigs.S.t ->
-    post_params:('pp, [ `WithoutSuffix ], 'pn) Eliom_parameter.params_type ->
-    unit ->
-    ('gp, 'pp, post, Eliom_service_sigs.S.att, co, non_ext, reg, 'b, 'gn,
-     'pn, 'd)
+    ('gp, 'pp, 'm, Eliom_service_sigs.S.att, non_co, ext, non_reg, 'a, 'gn,
+     'pn, non_ocaml)
     Eliom_service_sigs.S.t
   val which_meth :
     ('a, 'b, 'm, 'c, 'd, 'e, 'f, [< `WithSuffix | `WithoutSuffix ], 'g, 'h,

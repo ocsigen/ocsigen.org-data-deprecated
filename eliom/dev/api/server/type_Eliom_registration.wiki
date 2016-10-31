@@ -27,6 +27,12 @@
                 Eliom_service.t ->
         ?error_handler:((string * exn) list -> page Lwt.t) ->
         ('get -> 'post -> page Lwt.t) -> unit
+      val send :
+        ?options:options ->
+        ?charset:string ->
+        ?code:int ->
+        ?content_type:string ->
+        ?headers:Http_headers.t -> page -> result Lwt.t
       val create :
         ?app:string ->
         ?scope:[< Eliom_common.scope ] ->
@@ -107,12 +113,6 @@
          Eliom_service.non_ext, Eliom_service.reg, [ `WithoutSuffix ], 'gn,
          'pn, return)
         Eliom_service.t
-      val send :
-        ?options:options ->
-        ?charset:string ->
-        ?code:int ->
-        ?content_type:string ->
-        ?headers:Http_headers.t -> page -> result Lwt.t
     end
   type appl_service_options = { do_not_launch : bool; }
   val default_appl_service_options : Eliom_registration.appl_service_options
@@ -143,6 +143,12 @@
                 Eliom_service.t ->
         ?error_handler:((string * exn) list -> page Lwt.t) ->
         ('get -> 'post -> page Lwt.t) -> unit
+      val send :
+        ?options:options ->
+        ?charset:string ->
+        ?code:int ->
+        ?content_type:string ->
+        ?headers:Http_headers.t -> page -> result Lwt.t
       val create :
         ?app:string ->
         ?scope:[< Eliom_common.scope ] ->
@@ -223,12 +229,6 @@
          Eliom_service.non_ext, Eliom_service.reg, [ `WithoutSuffix ], 'gn,
          'pn, return)
         Eliom_service.t
-      val send :
-        ?options:options ->
-        ?charset:string ->
-        ?code:int ->
-        ?content_type:string ->
-        ?headers:Http_headers.t -> page -> result Lwt.t
       val typed_name :
         Eliom_registration.APP.app_id Eliom_registration.application_name
     end
@@ -266,6 +266,12 @@
                   Eliom_service.t ->
           ?error_handler:((string * exn) list -> page Lwt.t) ->
           ('get -> 'post -> page Lwt.t) -> unit
+        val send :
+          ?options:options ->
+          ?charset:string ->
+          ?code:int ->
+          ?content_type:string ->
+          ?headers:Http_headers.t -> page -> result Lwt.t
         val create :
           ?app:string ->
           ?scope:[< Eliom_common.scope ] ->
@@ -347,12 +353,6 @@
            Eliom_service.non_ext, Eliom_service.reg, [ `WithoutSuffix ], 'gn,
            'pn, return)
           Eliom_service.t
-        val send :
-          ?options:options ->
-          ?charset:string ->
-          ?code:int ->
-          ?content_type:string ->
-          ?headers:Http_headers.t -> page -> result Lwt.t
       end
   module Flow5 :
     sig
@@ -375,6 +375,12 @@
                 Eliom_service.t ->
         ?error_handler:((string * exn) list -> page Lwt.t) ->
         ('get -> 'post -> page Lwt.t) -> unit
+      val send :
+        ?options:options ->
+        ?charset:string ->
+        ?code:int ->
+        ?content_type:string ->
+        ?headers:Http_headers.t -> page -> result Lwt.t
       val create :
         ?app:string ->
         ?scope:[< Eliom_common.scope ] ->
@@ -455,12 +461,6 @@
          Eliom_service.non_ext, Eliom_service.reg, [ `WithoutSuffix ], 'gn,
          'pn, return)
         Eliom_service.t
-      val send :
-        ?options:options ->
-        ?charset:string ->
-        ?code:int ->
-        ?content_type:string ->
-        ?headers:Http_headers.t -> page -> result Lwt.t
     end
   module Make_typed_xml_registration :
     functor
@@ -491,6 +491,12 @@
                   Eliom_service.t ->
           ?error_handler:((string * exn) list -> page Lwt.t) ->
           ('get -> 'post -> page Lwt.t) -> unit
+        val send :
+          ?options:options ->
+          ?charset:string ->
+          ?code:int ->
+          ?content_type:string ->
+          ?headers:Http_headers.t -> page -> result Lwt.t
         val create :
           ?app:string ->
           ?scope:[< Eliom_common.scope ] ->
@@ -572,12 +578,6 @@
            Eliom_service.non_ext, Eliom_service.reg, [ `WithoutSuffix ], 'gn,
            'pn, return)
           Eliom_service.t
-        val send :
-          ?options:options ->
-          ?charset:string ->
-          ?code:int ->
-          ?content_type:string ->
-          ?headers:Http_headers.t -> page -> result Lwt.t
       end
   module Html_text :
     sig
@@ -600,6 +600,12 @@
                 Eliom_service.t ->
         ?error_handler:((string * exn) list -> page Lwt.t) ->
         ('get -> 'post -> page Lwt.t) -> unit
+      val send :
+        ?options:options ->
+        ?charset:string ->
+        ?code:int ->
+        ?content_type:string ->
+        ?headers:Http_headers.t -> page -> result Lwt.t
       val create :
         ?app:string ->
         ?scope:[< Eliom_common.scope ] ->
@@ -680,12 +686,6 @@
          Eliom_service.non_ext, Eliom_service.reg, [ `WithoutSuffix ], 'gn,
          'pn, return)
         Eliom_service.t
-      val send :
-        ?options:options ->
-        ?charset:string ->
-        ?code:int ->
-        ?content_type:string ->
-        ?headers:Http_headers.t -> page -> result Lwt.t
     end
   module CssText :
     sig
@@ -708,6 +708,12 @@
                 Eliom_service.t ->
         ?error_handler:((string * exn) list -> page Lwt.t) ->
         ('get -> 'post -> page Lwt.t) -> unit
+      val send :
+        ?options:options ->
+        ?charset:string ->
+        ?code:int ->
+        ?content_type:string ->
+        ?headers:Http_headers.t -> page -> result Lwt.t
       val create :
         ?app:string ->
         ?scope:[< Eliom_common.scope ] ->
@@ -788,12 +794,6 @@
          Eliom_service.non_ext, Eliom_service.reg, [ `WithoutSuffix ], 'gn,
          'pn, return)
         Eliom_service.t
-      val send :
-        ?options:options ->
-        ?charset:string ->
-        ?code:int ->
-        ?content_type:string ->
-        ?headers:Http_headers.t -> page -> result Lwt.t
     end
   module Action :
     sig
@@ -816,6 +816,12 @@
                 Eliom_service.t ->
         ?error_handler:((string * exn) list -> page Lwt.t) ->
         ('get -> 'post -> page Lwt.t) -> unit
+      val send :
+        ?options:options ->
+        ?charset:string ->
+        ?code:int ->
+        ?content_type:string ->
+        ?headers:Http_headers.t -> page -> result Lwt.t
       val create :
         ?app:string ->
         ?scope:[< Eliom_common.scope ] ->
@@ -896,12 +902,6 @@
          Eliom_service.non_ext, Eliom_service.reg, [ `WithoutSuffix ], 'gn,
          'pn, return)
         Eliom_service.t
-      val send :
-        ?options:options ->
-        ?charset:string ->
-        ?code:int ->
-        ?content_type:string ->
-        ?headers:Http_headers.t -> page -> result Lwt.t
     end
   module Unit :
     sig
@@ -924,6 +924,12 @@
                 Eliom_service.t ->
         ?error_handler:((string * exn) list -> page Lwt.t) ->
         ('get -> 'post -> page Lwt.t) -> unit
+      val send :
+        ?options:options ->
+        ?charset:string ->
+        ?code:int ->
+        ?content_type:string ->
+        ?headers:Http_headers.t -> page -> result Lwt.t
       val create :
         ?app:string ->
         ?scope:[< Eliom_common.scope ] ->
@@ -1004,12 +1010,6 @@
          Eliom_service.non_ext, Eliom_service.reg, [ `WithoutSuffix ], 'gn,
          'pn, return)
         Eliom_service.t
-      val send :
-        ?options:options ->
-        ?charset:string ->
-        ?code:int ->
-        ?content_type:string ->
-        ?headers:Http_headers.t -> page -> result Lwt.t
     end
   type _ redirection =
       Redirection :
@@ -1042,86 +1042,6 @@
                 Eliom_service.t ->
         ?error_handler:((string * exn) list -> 'a page Lwt.t) ->
         ('get -> 'post -> 'a page Lwt.t) -> unit
-      val create :
-        ?app:string ->
-        ?scope:[< Eliom_common.scope ] ->
-        ?options:options ->
-        ?charset:string ->
-        ?code:int ->
-        ?content_type:string ->
-        ?headers:Http_headers.t ->
-        ?secure_session:bool ->
-        ?https:bool ->
-        ?name:string ->
-        ?csrf_safe:bool ->
-        ?csrf_scope:[< Eliom_common.user_scope ] ->
-        ?csrf_secure:bool ->
-        ?max_use:int ->
-        ?timeout:float ->
-        meth:('m, 'gp, 'gn, 'pp, 'pn,
-              [< `WithSuffix | `WithoutSuffix ] as 'b, 'gp_)
-             Eliom_service.meth ->
-        path:('att, 'co, 'gp_) Eliom_service.path_option ->
-        ?error_handler:((string * exn) list -> 'a page Lwt.t) ->
-        ('gp -> 'pp -> 'a page Lwt.t) ->
-        ('gp, 'pp, 'm, 'att, 'co, Eliom_service.non_ext, Eliom_service.reg,
-         'b, 'gn, 'pn, 'a return)
-        Eliom_service.t
-      val attach_get :
-        ?app:string ->
-        ?scope:[< Eliom_common.scope ] ->
-        ?options:options ->
-        ?charset:string ->
-        ?code:int ->
-        ?content_type:string ->
-        ?headers:Http_headers.t ->
-        ?secure_session:bool ->
-        ?https:bool ->
-        ?name:string ->
-        ?csrf_safe:bool ->
-        ?csrf_scope:[< Eliom_common.user_scope ] ->
-        ?csrf_secure:bool ->
-        ?max_use:int ->
-        ?timeout:float ->
-        fallback:(unit, unit, Eliom_service.get, Eliom_service.att,
-                  Eliom_service.non_co, Eliom_service.non_ext, 'b,
-                  [ `WithoutSuffix ], unit, unit, 'a return)
-                 Eliom_service.t ->
-        get_params:('gp, [ `WithoutSuffix ], 'gn) Eliom_parameter.params_type ->
-        ?error_handler:((string * exn) list -> 'a page Lwt.t) ->
-        ('gp -> unit -> 'a page Lwt.t) ->
-        ('gp, unit, Eliom_service.get, Eliom_service.att, Eliom_service.co,
-         Eliom_service.non_ext, Eliom_service.reg, [ `WithoutSuffix ], 'gn,
-         unit, 'a return)
-        Eliom_service.t
-      val attach_post :
-        ?app:string ->
-        ?scope:[< Eliom_common.scope ] ->
-        ?options:options ->
-        ?charset:string ->
-        ?code:int ->
-        ?content_type:string ->
-        ?headers:Http_headers.t ->
-        ?secure_session:bool ->
-        ?https:bool ->
-        ?name:string ->
-        ?csrf_safe:bool ->
-        ?csrf_scope:[< Eliom_common.user_scope ] ->
-        ?csrf_secure:bool ->
-        ?max_use:int ->
-        ?timeout:float ->
-        fallback:('gp, unit, Eliom_service.get, Eliom_service.att,
-                  Eliom_service.non_co, Eliom_service.non_ext, 'b,
-                  [ `WithoutSuffix ], 'gn, unit, 'a return)
-                 Eliom_service.t ->
-        post_params:('pp, [ `WithoutSuffix ], 'pn)
-                    Eliom_parameter.params_type ->
-        ?error_handler:((string * exn) list -> 'a page Lwt.t) ->
-        ('gp -> 'pp -> 'a page Lwt.t) ->
-        ('gp, 'pp, Eliom_service.post, Eliom_service.att, Eliom_service.co,
-         Eliom_service.non_ext, Eliom_service.reg, [ `WithoutSuffix ], 'gn,
-         'pn, 'a return)
-        Eliom_service.t
       val send :
         ?options:options ->
         ?charset:string ->
@@ -1157,6 +1077,12 @@
                 Eliom_service.t ->
         ?error_handler:((string * exn) list -> page Lwt.t) ->
         ('get -> 'post -> page Lwt.t) -> unit
+      val send :
+        ?options:options ->
+        ?charset:string ->
+        ?code:int ->
+        ?content_type:string ->
+        ?headers:Http_headers.t -> page -> result Lwt.t
       val create :
         ?app:string ->
         ?scope:[< Eliom_common.scope ] ->
@@ -1237,12 +1163,6 @@
          Eliom_service.non_ext, Eliom_service.reg, [ `WithoutSuffix ], 'gn,
          'pn, return)
         Eliom_service.t
-      val send :
-        ?options:options ->
-        ?charset:string ->
-        ?code:int ->
-        ?content_type:string ->
-        ?headers:Http_headers.t -> page -> result Lwt.t
     end
   module File :
     sig
@@ -1266,6 +1186,12 @@
                 Eliom_service.t ->
         ?error_handler:((string * exn) list -> page Lwt.t) ->
         ('get -> 'post -> page Lwt.t) -> unit
+      val send :
+        ?options:options ->
+        ?charset:string ->
+        ?code:int ->
+        ?content_type:string ->
+        ?headers:Http_headers.t -> page -> result Lwt.t
       val create :
         ?app:string ->
         ?scope:[< Eliom_common.scope ] ->
@@ -1346,12 +1272,6 @@
          Eliom_service.non_ext, Eliom_service.reg, [ `WithoutSuffix ], 'gn,
          'pn, return)
         Eliom_service.t
-      val send :
-        ?options:options ->
-        ?charset:string ->
-        ?code:int ->
-        ?content_type:string ->
-        ?headers:Http_headers.t -> page -> result Lwt.t
     end
   module File_ct :
     sig
@@ -1375,6 +1295,12 @@
                 Eliom_service.t ->
         ?error_handler:((string * exn) list -> page Lwt.t) ->
         ('get -> 'post -> page Lwt.t) -> unit
+      val send :
+        ?options:options ->
+        ?charset:string ->
+        ?code:int ->
+        ?content_type:string ->
+        ?headers:Http_headers.t -> page -> result Lwt.t
       val create :
         ?app:string ->
         ?scope:[< Eliom_common.scope ] ->
@@ -1455,12 +1381,6 @@
          Eliom_service.non_ext, Eliom_service.reg, [ `WithoutSuffix ], 'gn,
          'pn, return)
         Eliom_service.t
-      val send :
-        ?options:options ->
-        ?charset:string ->
-        ?code:int ->
-        ?content_type:string ->
-        ?headers:Http_headers.t -> page -> result Lwt.t
     end
   module Ocaml :
     sig
@@ -1704,6 +1624,12 @@
                 Eliom_service.t ->
         ?error_handler:((string * exn) list -> page Lwt.t) ->
         ('get -> 'post -> page Lwt.t) -> unit
+      val send :
+        ?options:options ->
+        ?charset:string ->
+        ?code:int ->
+        ?content_type:string ->
+        ?headers:Http_headers.t -> page -> result Lwt.t
       val create :
         ?app:string ->
         ?scope:[< Eliom_common.scope ] ->
@@ -1784,12 +1710,6 @@
          Eliom_service.non_ext, Eliom_service.reg, [ `WithoutSuffix ], 'gn,
          'pn, return)
         Eliom_service.t
-      val send :
-        ?options:options ->
-        ?charset:string ->
-        ?code:int ->
-        ?content_type:string ->
-        ?headers:Http_headers.t -> page -> result Lwt.t
     end
   module Streamlist :
     sig
@@ -1812,6 +1732,12 @@
                 Eliom_service.t ->
         ?error_handler:((string * exn) list -> page Lwt.t) ->
         ('get -> 'post -> page Lwt.t) -> unit
+      val send :
+        ?options:options ->
+        ?charset:string ->
+        ?code:int ->
+        ?content_type:string ->
+        ?headers:Http_headers.t -> page -> result Lwt.t
       val create :
         ?app:string ->
         ?scope:[< Eliom_common.scope ] ->
@@ -1892,21 +1818,15 @@
          Eliom_service.non_ext, Eliom_service.reg, [ `WithoutSuffix ], 'gn,
          'pn, return)
         Eliom_service.t
-      val send :
-        ?options:options ->
-        ?charset:string ->
-        ?code:int ->
-        ?content_type:string ->
-        ?headers:Http_headers.t -> page -> result Lwt.t
     end
   module Customize :
     functor
-      (R : Eliom_registration_sigs.S) (T : sig
-                                             type page
-                                             val translate :
-                                               Eliom_registration.Customize.page ->
-                                               R.page Lwt.t
-                                           end) ->
+      (R : Eliom_registration_sigs.S_with_create) (T : sig
+                                                         type page
+                                                         val translate :
+                                                           Eliom_registration.Customize.page ->
+                                                           R.page Lwt.t
+                                                       end) ->
       sig
         type page = T.page
         type options = R.options
@@ -1927,6 +1847,12 @@
                   Eliom_service.t ->
           ?error_handler:((string * exn) list -> page Lwt.t) ->
           ('get -> 'post -> page Lwt.t) -> unit
+        val send :
+          ?options:options ->
+          ?charset:string ->
+          ?code:int ->
+          ?content_type:string ->
+          ?headers:Http_headers.t -> page -> result Lwt.t
         val create :
           ?app:string ->
           ?scope:[< Eliom_common.scope ] ->
@@ -2008,12 +1934,6 @@
            Eliom_service.non_ext, Eliom_service.reg, [ `WithoutSuffix ], 'gn,
            'pn, return)
           Eliom_service.t
-        val send :
-          ?options:options ->
-          ?charset:string ->
-          ?code:int ->
-          ?content_type:string ->
-          ?headers:Http_headers.t -> page -> result Lwt.t
       end
   val set_exn_handler :
     (exn -> Eliom_registration.browser_content Eliom_registration.kind Lwt.t) ->
