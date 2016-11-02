@@ -73,7 +73,7 @@ file~.
 |
 |<<a_api subproject="server" | module Eliom_registration >>|<<div class="odocwiki_info"|~Eliom services registration for various kinds of page content~:
     ~Eliom application~, valid <<span class="odocwiki_inlinecode"|~Html>>~, actions~, redirections~, static
-    files~, …
+    files~, ~.~.~.
 >>
 |
 |Eliom_registration.Html||

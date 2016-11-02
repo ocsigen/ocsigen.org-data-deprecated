@@ -1,29 +1,22 @@
 =Module <<a_api_type subproject="server" | module Eliom_registration >> =
 <<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module>> <<span class="ocsforge_color_uid"|<<span class="ocsforge_color_uid"|Eliom_registration>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="ocsforge_color_keyword"|sig>><<a_api subproject="server" text=".." | module Eliom_registration >><<span class="ocsforge_color_keyword"|end>>>>~Eliom services registration for various kinds of page content~:
     ~Eliom application~, valid <<span class="odocwiki_inlinecode"|~Html>>~, actions~, redirections~, static
-    files~, …
+    files~, ~.~.~.
 
-----
 
-**~Please read the ~Eliom manual before this page to learn how to
+    **~Please read the ~Eliom manual before this page to learn how to
     use <<a_manual chapter="server-services" | services >> and     <<a_manual chapter="server-outputs" | predefined outputs >>~.
     **
 
-**~Please read the ~Eliom manual before this page to learn how to
-    use <<a_manual chapter="server-services" | services >> and     <<a_manual chapter="server-outputs" | predefined outputs >>~.
-    **
 
-<<outline| <<header| **Table of contents** >> >> 
-
-**~Please read the ~Eliom manual before this page to learn how to
-    use <<a_manual chapter="server-services" | services >> and     <<a_manual chapter="server-outputs" | predefined outputs >>~.
-    **
-
-<<outline| <<header| **Table of contents** >> >> 
+    <<outline| <<header| **Table of contents** >> >> 
 
 
+    
 ==@@id="2_Typedefinitions"@@~Type definitions==
 
+
+----
 <<pre class="ocsforge_color odocwiki_code" id="TYPEkind"|<<span class="ocsforge_color_keyword"|type>> <<span class="odocwiki_type"|'a>> <<span class="odocwiki_name"|kind>>>><<div class="odocwiki_info"|~The type <<span class="odocwiki_inlinecode"|kind>> is an abstract type for the ~H~T~T~P frame returned by
     a service~. ~The type parameter indicates the content type~, and is
     one of the following types~:
@@ -41,10 +34,7 @@
 
 
 
-===@@id="3_ReturntypesforEliomserviceservice"@@~Return types for <<span class="odocwiki_inlinecode"|~Eliom~_service~.service>> ===
-
-
-
+    
 ====@@id="4_Classicalcontent"@@~Classical content====
 
 <<pre class="ocsforge_color odocwiki_code" id="TYPEbrowser_content"|<<span class="ocsforge_color_keyword"|type>> <<span class="odocwiki_name"|browser~_content>> <<span class="ocsforge_color_delimiter"|~=>> <<span class="odocwiki_type"|[ `Browser ]>> >><<div class="odocwiki_info"|~The type <<span class="odocwiki_inlinecode"|browser~_content>> is to be used as a phantom type
