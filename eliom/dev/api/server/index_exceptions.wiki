@@ -25,9 +25,6 @@
     that has not been initaliazed~, when we don~'t want to initialize it~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Error"| exception Eliom_openid.Error >> ~[<<a_api subproject="server" | module Eliom_openid >>~]|<<div class="odocwiki_info"|~Exception thrown by this module~'s function~.
->>
-|
 |@@ @style="tet-align: left;"@@\\N|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Not_ready"| exception Eliom_cscache.Not_ready >> ~[<<a_api subproject="server" | module Eliom_cscache >>~]||
 |@@ @style="tet-align: left;"@@\\W|

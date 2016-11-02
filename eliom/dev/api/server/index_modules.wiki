@@ -1,9 +1,5 @@
 =Index of modules=
 
-|@@ @style="tet-align: left;"@@\\A|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Atom_feed"| module Atom_feed >> |<<div class="odocwiki_info"|~Everything we need to make an atom feed~.
->>
-|
 |@@ @style="tet-align: left;"@@\\C|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="C"| module Eliom_content.Html.C >> ~[<<a_api subproject="server" | module Eliom_content.Html >>~]|<<div class="odocwiki_info"|~Creation of ~H~T~M~L content from client~-side values~.
 >>
@@ -36,9 +32,6 @@
 >>
 |
 |@@ @style="tet-align: left;"@@\\E|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Eliom_atom"| module Eliom_atom >> |<<div class="odocwiki_info"|~Register an atom feed
->>
-|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Eliom_bus"| module Eliom_bus >> |<<div class="odocwiki_info"|~Broadcasting facilities between clients and server
 >>
 |
@@ -90,9 +83,6 @@ file~.
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Eliom_notif"| module Eliom_notif >> |<<div class="odocwiki_info"|~Input signature of the functor <<span class="odocwiki_inlinecode"|~Eliom~_notif~.~Make>>~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Eliom_openid"| module Eliom_openid >> |<<div class="odocwiki_info"|~Open~I~D identification
->>
-|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Eliom_parameter"| module Eliom_parameter >> |<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|user~_type ~~of~_string ~~to~_string s>> construct a parameter~, labeled
     <<span class="odocwiki_inlinecode"|s>>~, such that the server will have to use <<span class="odocwiki_inlinecode"|of~_string>> and
     <<span class="odocwiki_inlinecode"|to~_string>> to make the conversion between the ~O~Caml
@@ -122,9 +112,6 @@ file~.
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Eliom_request_info"| module Eliom_request_info >> |<<div class="odocwiki_info"|~This module contains the functions you need to get ~(or set~)
     information about current request~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Eliom_s2s"| module Eliom_s2s >> |<<div class="odocwiki_info"|~Server~-to~-~Server communication module~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Eliom_service"| module Eliom_service >> |<<div class="odocwiki_info"|~Creation and manipulation of ~Eliom services~.
@@ -211,10 +198,6 @@ file~.
 >>
 |
 |@@ @style="tet-align: left;"@@\\M|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Make"| module Eliom_openid.Make >> ~[<<a_api subproject="server" | module Eliom_openid >>~]|<<div class="odocwiki_info"|~This functor build a hidden service that will be used to receive
-    the remote server~'s data~.
->>
-|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Make"| module Eliom_notif.Make >> ~[<<a_api subproject="server" | module Eliom_notif >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Make"| module Eliom_mkreg.Make >> ~[<<a_api subproject="server" | module Eliom_mkreg >>~]|<<div class="odocwiki_info"|~Creates modules to register services for one type of pages
 >>
@@ -260,7 +243,6 @@ file~.
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="ReactiveData"| module Eliom_shared.ReactiveData >> ~[<<a_api subproject="server" | module Eliom_shared >>~]|<<div class="odocwiki_info"|~Shared implementation of ~Reactive~Data
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Reg"| module Eliom_atom.Reg >> ~[<<a_api subproject="server" | module Eliom_atom >>~]||
 |@@ @style="tet-align: left;"@@\\S|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="S"| module Eliom_shared.React.S >> ~[<<a_api subproject="server" | module Eliom_shared.React >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="S"| module Eliom_react.S >> ~[<<a_api subproject="server" | module Eliom_react >>~]||

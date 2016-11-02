@@ -6,9 +6,6 @@
 |
 |@@ @style="tet-align: left;"@@\\H|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="HTML5_TOOLS"| module type Eliom_tools.HTML5_TOOLS >> ~[<<a_api subproject="server" | module Eliom_tools >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="HiddenServiceInfo"| module type Eliom_openid.HiddenServiceInfo >> ~[<<a_api subproject="server" | module Eliom_openid >>~]|<<div class="odocwiki_info"|~Information about the hidden service
->>
-|
 |@@ @style="tet-align: left;"@@\\L|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="LINKS"| module type Eliom_form_sigs.LINKS >> ~[<<a_api subproject="server" | module Eliom_form_sigs >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="LINKS_AND_FORMS"| module type Eliom_content_sigs.LINKS_AND_FORMS >> ~[<<a_api subproject="server" | module Eliom_content_sigs >>~]||
