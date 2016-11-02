@@ -8,7 +8,7 @@
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="Closed"| exception Lwt_stream.Closed >> ~[<<a_api | module Lwt_stream >>~]|<<div class="odocwiki_info"|~Exception raised by the push function of a push~-stream when
-      pushing an element after the end of stream ~(<<span class="odocwiki_inlinecode"|~= ~None>>~) have been
+      pushing an element after the end of stream ~(<<span class="odocwiki_inlinecode"|~= ~None>>~) has been
       pushed~.
 >>
 |

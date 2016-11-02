@@ -15,7 +15,7 @@
         is already blocked on <<a_api | method Lwt_stream.bounded_push.push >>~, it raises <<a_api | exception Lwt_stream.Full >>~.
 >>
 <<pre class="ocsforge_color odocwiki_code"|<<span id="METHODclose"|<<span class="ocsforge_color_keyword"|method>> <<span class="odocwiki_name"|close>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|unit>>>><<div class="odocwiki_info"|~Closes the stream~. ~Any thread currently blocked on <<a_api | method Lwt_stream.bounded_push.push >>
-        will fail with <<a_api | exception Lwt_stream.Closed >>~.
+        fails with <<a_api | exception Lwt_stream.Closed >>~.
 >>
 <<pre class="ocsforge_color odocwiki_code"|<<span id="METHODcount"|<<span class="ocsforge_color_keyword"|method>> <<span class="odocwiki_name"|count>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|int>>>><<div class="odocwiki_info"|~Number of elements in the stream queue~.
 >>
