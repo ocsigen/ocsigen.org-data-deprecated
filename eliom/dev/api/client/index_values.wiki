@@ -102,18 +102,10 @@
       path~-less service <<span class="odocwiki_inlinecode"|service>> on the ~U~R~L of <<span class="odocwiki_inlinecode"|fallback>>~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="attach_get"| value Eliom_service_sigs.S_WITH_CREATE.attach_get >> ~[<<a_api subproject="client" | module Eliom_service_sigs.S_WITH_CREATE >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|attach~_get ~~fallback ~~get~_params ~(~)>> attaches a new service on
-      the path of <<span class="odocwiki_inlinecode"|fallback>>~.
->>
-|
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="attach_get"| value Eliom_registration_sigs.S_poly_with_create.attach_get >> ~[<<a_api subproject="client" | module Eliom_registration_sigs.S_poly_with_create >>~]|<<div class="odocwiki_info"|~See <<span class="odocwiki_inlinecode"|~S~.attach~_get>>~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="attach_get"| value Eliom_registration_sigs.S_with_create.attach_get >> ~[<<a_api subproject="client" | module Eliom_registration_sigs.S_with_create >>~]|<<div class="odocwiki_info"|~Same as <<span class="odocwiki_inlinecode"|~Eliom~_service~.attach~_get>> followed by <<span class="odocwiki_inlinecode"|register>>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="attach_post"| value Eliom_service_sigs.S_WITH_CREATE.attach_post >> ~[<<a_api subproject="client" | module Eliom_service_sigs.S_WITH_CREATE >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|attach~_post ~~fallback ~~post~_params ~(~)>> attaches a new service
-      on the path of <<span class="odocwiki_inlinecode"|fallback>>~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="attach_post"| value Eliom_registration_sigs.S_poly_with_create.attach_post >> ~[<<a_api subproject="client" | module Eliom_registration_sigs.S_poly_with_create >>~]|<<div class="odocwiki_info"|~See <<span class="odocwiki_inlinecode"|~S~.attach~_post>>~.
@@ -311,9 +303,6 @@
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="create"| value Eliom_shared_sigs.VALUE.create >> ~[<<a_api subproject="client" | module Eliom_shared_sigs.VALUE >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="create"| value Eliom_service_sigs.S_WITH_CREATE.create >> ~[<<a_api subproject="client" | module Eliom_service_sigs.S_WITH_CREATE >>~]|<<div class="odocwiki_info"|**~Service definition**
->>
-|
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="create"| value Eliom_registration_sigs.S_poly_with_create.create >> ~[<<a_api subproject="client" | module Eliom_registration_sigs.S_poly_with_create >>~]|<<div class="odocwiki_info"|~See <<span class="odocwiki_inlinecode"|~S~.create>>~.
 >>
 |

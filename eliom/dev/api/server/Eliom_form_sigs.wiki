@@ -72,7 +72,7 @@
 
       ~The optional parameter <<span class="odocwiki_inlinecode"|keep~_nl~_params>> allows one to override
       the <<span class="odocwiki_inlinecode"|keep~_nl~_params>> parameter used when creating the <<span class="odocwiki_inlinecode"|service>>~,
-      see <<span class="odocwiki_inlinecode"|~Eliom~_service~.create>> for a detailled description~.
+      see <<a_api subproject="server" | val Eliom_service.create >> for a detailled description~.
 
 
       ~The optional parameter <<span class="odocwiki_inlinecode"|nl~_params>> allows one to add non

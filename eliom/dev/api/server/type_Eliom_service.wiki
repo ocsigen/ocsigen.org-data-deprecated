@@ -279,6 +279,41 @@
     ('gp, 'pp, post, att, co, non_ext, reg, [ `WithoutSuffix ], 'gn, 'pn,
      non_ocaml)
     t
+  val register_eliom_module : string -> (unit -> unit) -> unit
+  val unregister :
+    ?scope:[< Eliom_common.scope ] ->
+    ?secure:bool ->
+    ('a, 'b, 'c, 'd, 'e, non_ext, 'f, [< `WithSuffix | `WithoutSuffix ], 'g,
+     'h, 'i)
+    t -> unit
+  val is_external :
+    ('a, 'b, 'c, 'd, 'e, 'f, 'g, [< `WithSuffix | `WithoutSuffix ], 'h, 'i,
+     'j)
+    t -> bool
+  val pre_applied_parameters :
+    ('a, 'b, 'c, 'd, 'e, 'f, 'g, [< `WithSuffix | `WithoutSuffix ], 'h, 'i,
+     'j)
+    t ->
+    (string * string) list Eliom_lib.String.Table.t * (string * string) list
+  val new_state : unit -> string
+  val untype :
+    ('a, 'b, 'meth, 'attached, 'co, 'ext, 'd,
+     [< `WithSuffix | `WithoutSuffix ] as 'c, 'f, 'g, 'rr)
+    t -> ('a, 'b, 'meth, 'attached, 'co, 'ext, 'd, 'c, 'f, 'g, 'return) t
+  val set_delayed_get_or_na_registration_function :
+    Eliom_common.tables ->
+    int -> (sp:Eliom_common.server_params -> string) -> unit
+  val set_delayed_post_registration_function :
+    Eliom_common.tables ->
+    int ->
+    (sp:Eliom_common.server_params -> Eliom_common.att_key_serv -> string) ->
+    unit
+  val set_send_appl_content :
+    ('a, 'b, 'c, 'd, 'e, 'f, 'g, [< `WithSuffix | `WithoutSuffix ], 'h, 'i,
+     'j)
+    t -> send_appl_content -> unit
+  exception Wrong_session_table_for_CSRF_safe_coservice
+  val eliom_appl_answer_content_type : string
   val create_ocaml :
     ?name:string ->
     ?csrf_safe:bool ->
@@ -339,39 +374,4 @@
              t ->
     post_params:('pp, [ `WithoutSuffix ], 'pn) Eliom_parameter.params_type ->
     unit -> ('gp, 'pp, post, att, co, non_ext, reg, 'b, 'gn, 'pn, 'd) t
-  val register_eliom_module : string -> (unit -> unit) -> unit
-  val unregister :
-    ?scope:[< Eliom_common.scope ] ->
-    ?secure:bool ->
-    ('a, 'b, 'c, 'd, 'e, non_ext, 'f, [< `WithSuffix | `WithoutSuffix ], 'g,
-     'h, 'i)
-    t -> unit
-  val is_external :
-    ('a, 'b, 'c, 'd, 'e, 'f, 'g, [< `WithSuffix | `WithoutSuffix ], 'h, 'i,
-     'j)
-    t -> bool
-  val pre_applied_parameters :
-    ('a, 'b, 'c, 'd, 'e, 'f, 'g, [< `WithSuffix | `WithoutSuffix ], 'h, 'i,
-     'j)
-    t ->
-    (string * string) list Eliom_lib.String.Table.t * (string * string) list
-  val new_state : unit -> string
-  val untype :
-    ('a, 'b, 'meth, 'attached, 'co, 'ext, 'd,
-     [< `WithSuffix | `WithoutSuffix ] as 'c, 'f, 'g, 'rr)
-    t -> ('a, 'b, 'meth, 'attached, 'co, 'ext, 'd, 'c, 'f, 'g, 'return) t
-  val set_delayed_get_or_na_registration_function :
-    Eliom_common.tables ->
-    int -> (sp:Eliom_common.server_params -> string) -> unit
-  val set_delayed_post_registration_function :
-    Eliom_common.tables ->
-    int ->
-    (sp:Eliom_common.server_params -> Eliom_common.att_key_serv -> string) ->
-    unit
-  val set_send_appl_content :
-    ('a, 'b, 'c, 'd, 'e, 'f, 'g, [< `WithSuffix | `WithoutSuffix ], 'h, 'i,
-     'j)
-    t -> send_appl_content -> unit
-  exception Wrong_session_table_for_CSRF_safe_coservice
-  val eliom_appl_answer_content_type : string
 end >>
