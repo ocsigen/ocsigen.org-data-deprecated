@@ -1,0 +1,32 @@
+<<code language="ocaml" | sig
+  type 'a page = 'a redirection
+  type options =
+      [ `Found
+      | `MovedPermanently
+      | `NotNodifed
+      | `SeeOther
+      | `TemporaryRedirect
+      | `UseProxy ]
+  type 'a return = 'a
+  val register :
+    ?app:string ->
+    ?scope:[< Eliom_common.scope ] ->
+    ?options:options ->
+    ?charset:string ->
+    ?code:int ->
+    ?content_type:string ->
+    ?headers:Http_headers.t ->
+    ?secure_session:bool ->
+    service:('get, 'post, 'b, 'c, 'd, Eliom_service.non_ext,
+             Eliom_service.reg, [< `WithSuffix | `WithoutSuffix ], 'e, 'f,
+             'a return)
+            Eliom_service.t ->
+    ?error_handler:((string * exn) list -> 'a page Lwt.t) ->
+    ('get -> 'post -> 'a page Lwt.t) -> unit
+  val send :
+    ?options:options ->
+    ?charset:string ->
+    ?code:int ->
+    ?content_type:string ->
+    ?headers:Http_headers.t -> 'a page -> 'b Eliom_registration.kind Lwt.t
+end >>
