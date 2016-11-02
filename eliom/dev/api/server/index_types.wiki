@@ -177,13 +177,11 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="options"| type Eliom_registration_sigs.S_poly.options >> ~[<<a_api subproject="server" | module Eliom_registration_sigs.S_poly >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="options"| type Eliom_registration_sigs.S.options >> ~[<<a_api subproject="server" | module Eliom_registration_sigs.S >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="options"| type Eliom_registration_sigs.PARAM_POLY.options >> ~[<<a_api subproject="server" | module Eliom_registration_sigs.PARAM_POLY >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="options"| type Eliom_registration_sigs.PARAM_CLIENT.options >> ~[<<a_api subproject="server" | module Eliom_registration_sigs.PARAM_CLIENT >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="options"| type Eliom_registration_sigs.PARAM.options >> ~[<<a_api subproject="server" | module Eliom_registration_sigs.PARAM >>~]||
 |@@ @style="tet-align: left;"@@\\P|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="page"| type Eliom_registration_sigs.S_poly.page >> ~[<<a_api subproject="server" | module Eliom_registration_sigs.S_poly >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="page"| type Eliom_registration_sigs.S.page >> ~[<<a_api subproject="server" | module Eliom_registration_sigs.S >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="page"| type Eliom_registration_sigs.PARAM_POLY.page >> ~[<<a_api subproject="server" | module Eliom_registration_sigs.PARAM_POLY >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="page"| type Eliom_registration_sigs.PARAM_CLIENT.page >> ~[<<a_api subproject="server" | module Eliom_registration_sigs.PARAM_CLIENT >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="page"| type Eliom_registration_sigs.PARAM.page >> ~[<<a_api subproject="server" | module Eliom_registration_sigs.PARAM >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="param"| type Eliom_form_sigs.S.param >> ~[<<a_api subproject="server" | module Eliom_form_sigs.S >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="param_name"| type Eliom_parameter_sigs.S.param_name >> ~[<<a_api subproject="server" | module Eliom_parameter_sigs.S >>~]|<<div class="odocwiki_info"|~Abstract type for parameters~' name~.

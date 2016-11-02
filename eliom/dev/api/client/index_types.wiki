@@ -2,11 +2,8 @@
 
 |@@ @style="tet-align: left;"@@\\A|
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="aname"| type Eliom_content_core.Xml.aname >> ~[<<a_api subproject="client" | module Eliom_content_core.Xml >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="app_id"| type Eliom_registration.App.app_id >> ~[<<a_api subproject="client" | module Eliom_registration.App >>~]|<<div class="odocwiki_info"|~The type <<span class="odocwiki_inlinecode"|appl>> is an abstract type for identifying an
-      application~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="appl_service_options"| type Eliom_registration.appl_service_options >> ~[<<a_api subproject="client" | module Eliom_registration >>~]|<<div class="odocwiki_info"|~Has no effect on client ~; for compatibility with server
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="app_id"| type Eliom_registration.App.app_id >> ~[<<a_api subproject="client" | module Eliom_registration.App >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="appl_service_options"| type Eliom_registration.appl_service_options >> ~[<<a_api subproject="client" | module Eliom_registration >>~]|<<div class="odocwiki_info"|~Has no effect on client~; for compatibility with server
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="application_content"| type Eliom_registration.application_content >> ~[<<a_api subproject="client" | module Eliom_registration >>~]||
@@ -139,13 +136,11 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="options"| type Eliom_registration_sigs.S_poly.options >> ~[<<a_api subproject="client" | module Eliom_registration_sigs.S_poly >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="options"| type Eliom_registration_sigs.S.options >> ~[<<a_api subproject="client" | module Eliom_registration_sigs.S >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="options"| type Eliom_registration_sigs.PARAM_POLY.options >> ~[<<a_api subproject="client" | module Eliom_registration_sigs.PARAM_POLY >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="options"| type Eliom_registration_sigs.PARAM_CLIENT.options >> ~[<<a_api subproject="client" | module Eliom_registration_sigs.PARAM_CLIENT >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="options"| type Eliom_registration_sigs.PARAM.options >> ~[<<a_api subproject="client" | module Eliom_registration_sigs.PARAM >>~]||
 |@@ @style="tet-align: left;"@@\\P|
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="page"| type Eliom_registration_sigs.S_poly.page >> ~[<<a_api subproject="client" | module Eliom_registration_sigs.S_poly >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="page"| type Eliom_registration_sigs.S.page >> ~[<<a_api subproject="client" | module Eliom_registration_sigs.S >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="page"| type Eliom_registration_sigs.PARAM_POLY.page >> ~[<<a_api subproject="client" | module Eliom_registration_sigs.PARAM_POLY >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="page"| type Eliom_registration_sigs.PARAM_CLIENT.page >> ~[<<a_api subproject="client" | module Eliom_registration_sigs.PARAM_CLIENT >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="page"| type Eliom_registration_sigs.PARAM.page >> ~[<<a_api subproject="client" | module Eliom_registration_sigs.PARAM >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="param"| type Eliom_form_sigs.S.param >> ~[<<a_api subproject="client" | module Eliom_form_sigs.S >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="param_name"| type Eliom_parameter_sigs.S.param_name >> ~[<<a_api subproject="client" | module Eliom_parameter_sigs.S >>~]|<<div class="odocwiki_info"|~Abstract type for parameters~' name~.

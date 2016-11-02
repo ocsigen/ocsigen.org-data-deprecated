@@ -198,14 +198,14 @@ file~.
     each file~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Flow5"| module Eliom_registration.Flow5 >> ~[<<a_api subproject="server" | module Eliom_registration >>~]|<<div class="odocwiki_info"|~Eliom service registration and forms creation for fragment of
-    ~H~T~M~L~5 page~.
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Flow5"| module Eliom_registration.Flow5 >> ~[<<a_api subproject="server" | module Eliom_registration >>~]|<<div class="odocwiki_info"|~Eliom service registration and forms creation for fragment of ~H~T~M~L
+    page~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Form"| module Eliom_content_sigs.LINKS_AND_FORMS.Form >> ~[<<a_api subproject="server" | module Eliom_content_sigs.LINKS_AND_FORMS >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Full_state_name_table"| module Eliom_common.Full_state_name_table >> ~[<<a_api subproject="server" | module Eliom_common >>~]||
 |@@ @style="tet-align: left;"@@\\H|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Html"| module Eliom_registration.Html >> ~[<<a_api subproject="server" | module Eliom_registration >>~]|<<div class="odocwiki_info"|~Eliom service registration for services that return ~H~T~M~L~5
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Html"| module Eliom_registration.Html >> ~[<<a_api subproject="server" | module Eliom_registration >>~]|<<div class="odocwiki_info"|~Eliom service registration for services that return ~H~T~M~L
     pages~.
 >>
 |
@@ -246,7 +246,7 @@ file~.
     parametrised pages
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Make_typed_xml_registration"| module Eliom_registration.Make_typed_xml_registration >> ~[<<a_api subproject="server" | module Eliom_registration >>~]|<<div class="odocwiki_info"|~Eliom service registration for services that returns fragment of
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Make_typed_xml_registration"| module Eliom_registration.Make_typed_xml_registration >> ~[<<a_api subproject="server" | module Eliom_registration >>~]|<<div class="odocwiki_info"|~Eliom service registration for services that return fragments of
     ~Ty~X~M~L~'s tree~.
 >>
 |

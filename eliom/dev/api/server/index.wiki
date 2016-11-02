@@ -76,7 +76,7 @@ file~.
     files~, ~.~.~.
 >>
 |
-|<<a_api subproject="server" | module Eliom_registration.Html >>|<<div class="odocwiki_info"|~Eliom service registration for services that return ~H~T~M~L~5
+|<<a_api subproject="server" | module Eliom_registration.Html >>|<<div class="odocwiki_info"|~Eliom service registration for services that return ~H~T~M~L
     pages~.
 >>
 |

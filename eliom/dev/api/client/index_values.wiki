@@ -1112,7 +1112,6 @@
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="send"| value Eliom_registration_sigs.PARAM_POLY.send >> ~[<<a_api subproject="client" | module Eliom_registration_sigs.PARAM_POLY >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="send"| value Eliom_registration_sigs.PARAM_CLIENT.send >> ~[<<a_api subproject="client" | module Eliom_registration_sigs.PARAM_CLIENT >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="send"| value Eliom_registration_sigs.PARAM.send >> ~[<<a_api subproject="client" | module Eliom_registration_sigs.PARAM >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="send_appl_content"| value Eliom_registration_sigs.PARAM_POLY.send_appl_content >> ~[<<a_api subproject="client" | module Eliom_registration_sigs.PARAM_POLY >>~]|<<div class="odocwiki_info"|~See <<span class="odocwiki_inlinecode"|~Eliom~_reg~_sigs~.~P~A~R~A~M~.send~_appl~_content>>~.
 >>

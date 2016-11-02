@@ -18,14 +18,6 @@
         Eliom_registration_sigs.PARAM.frame ->
         Eliom_registration_sigs.PARAM.result
     end
-  module type PARAM_CLIENT =
-    sig
-      type page
-      type options
-      val send :
-        ?options:Eliom_registration_sigs.PARAM_CLIENT.options ->
-        Eliom_registration_sigs.PARAM_CLIENT.page -> unit Lwt.t
-    end
   module type PARAM_POLY =
     sig
       type _ page
