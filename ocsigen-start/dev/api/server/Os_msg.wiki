@@ -1,14 +1,14 @@
 =Module <<a_api_type subproject="server" | module Os_msg >> =
 <<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module>> <<span class="ocsforge_color_uid"|<<span class="ocsforge_color_uid"|Os_msg>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="ocsforge_color_keyword"|sig>><<a_api subproject="server" text=".." | module Os_msg >><<span class="ocsforge_color_keyword"|end>>>>~Call this function either from client or server side
     to display an error message in the page~.
-    ~The message is displayed in a special box ~(a div with id <<span class="odocwiki_inlinecode"|os~_msg>>
-    created automatically in the body of the page~)~.
+    ~The message is displayed in a special box ~(a div with id <<span class="odocwiki_inlinecode"|os~-msg>>
+    created automatically in the body of the page if not already present~)~.
     ~It is displayed during a short amount of time then disappears~. ~You may
     change the duration in seconds with the parameter <<span class="odocwiki_inlinecode"|duration>> ~(default ~2
     seconds~)~.
     ~The two levels correspond to different classes that you can
-    personalize by modifying the ~C~S~S class <<span class="odocwiki_inlinecode"|os~_err>> ~(added for error messages to
-    the box with ~I~D os~_msg~)~.
+    personalize by modifying the ~C~S~S class <<span class="odocwiki_inlinecode"|os~-err>> ~(added for error messages to
+    the box with ~I~D os~-msg~)~.
 
 
     ~If <<span class="odocwiki_inlinecode"|~~onload>> is <<span class="odocwiki_inlinecode"|true>>~, the message is displayed after the next page

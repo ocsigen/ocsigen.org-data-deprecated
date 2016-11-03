@@ -6,6 +6,7 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Os_date"| module Os_date >> ||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Os_email"| module Os_email >> ||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Os_handlers"| module Os_handlers >> ||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Os_icons"| module Os_icons >> ||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Os_lib"| module Os_lib >> ||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Os_msg"| module Os_msg >> ||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Os_notif"| module Os_notif >> ||

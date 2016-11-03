@@ -5,18 +5,9 @@
   val css : string list list
   val local_css : string list list
   val other_head : Html_types.head_content_fun Eliom_content.Html.elt list
-  val default_error_page :
-    'a ->
-    'b -> exn -> Html_types.body_content Eliom_content.Html.elt list Lwt.t
-  val default_error_page_full :
-    ('a -> 'b -> exn -> Os_page.content Lwt.t) option
+  val default_error_page : 'a -> 'b -> exn -> Os_page.content Lwt.t
   val default_connected_error_page :
-    Os_types.User.id option ->
-    'a ->
-    'b -> exn -> Html_types.body_content Eliom_content.Html.elt list Lwt.t
-  val default_connected_error_page_full :
-    (Os_types.User.id option -> 'a -> 'b -> exn -> Os_page.content Lwt.t)
-    option
+    Os_types.User.id option -> 'a -> 'b -> exn -> Os_page.content Lwt.t
   val default_predicate : 'a -> 'b -> bool Lwt.t
   val default_connected_predicate :
     Os_types.User.id option -> 'a -> 'b -> bool Lwt.t

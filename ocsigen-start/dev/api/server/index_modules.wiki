@@ -7,12 +7,15 @@
 |@@ @style="tet-align: left;"@@\\C|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Carousel"| module Os_tools.Carousel >> ~[<<a_api subproject="server" | module Os_tools >>~]||
 |@@ @style="tet-align: left;"@@\\D|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="D"| module Os_icons.D >> ~[<<a_api subproject="server" | module Os_icons >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Data"| module Os_push_notifications.Data >> ~[<<a_api subproject="server" | module Os_push_notifications >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Default_config"| module Os_page.Default_config >> ~[<<a_api subproject="server" | module Os_page >>~]||
 |@@ @style="tet-align: left;"@@\\E|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Email"| module Os_db.Email >> ~[<<a_api subproject="server" | module Os_db >>~]|<<div class="odocwiki_info"|~This module is used for email management~.
 >>
 |
+|@@ @style="tet-align: left;"@@\\F|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="F"| module Os_icons.F >> ~[<<a_api subproject="server" | module Os_icons >>~]||
 |@@ @style="tet-align: left;"@@\\G|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Group"| module Os_types.Group >> ~[<<a_api subproject="server" | module Os_types >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Groups"| module Os_db.Groups >> ~[<<a_api subproject="server" | module Os_db >>~]|<<div class="odocwiki_info"|~This module is used to manage groups of user~.
@@ -29,7 +32,6 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Make"| module Os_page.Make >> ~[<<a_api subproject="server" | module Os_page >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Make"| module Os_notif.Make >> ~[<<a_api subproject="server" | module Os_notif >>~]||
 |@@ @style="tet-align: left;"@@\\N|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Navigation_bar"| module Os_tools.Navigation_bar >> ~[<<a_api subproject="server" | module Os_tools >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Notification"| module Os_push_notifications.Notification >> ~[<<a_api subproject="server" | module Os_push_notifications >>~]|<<div class="odocwiki_info"|~This module provides an interface to create the ~J~S~O~N for the notification
     key~.
 >>
@@ -62,6 +64,9 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Os_handlers"| module Os_handlers >> |<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|connect~_handler ~(~) ~(~(login~, password~)~, keep~Me~Logged~In~)>> connects the user
     with <<span class="odocwiki_inlinecode"|login>> and <<span class="odocwiki_inlinecode"|password>> and keeps the user logged in between different
     session if <<span class="odocwiki_inlinecode"|keep~Me~Logged~In>> is set to <<span class="odocwiki_inlinecode"|true>>
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Os_icons"| module Os_icons >> |<<div class="odocwiki_info"|~The icons used internally by ~Ocsigen ~Start~'s library~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Os_lib"| module Os_lib >> |<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|reload ~(~)>> reloads the current page~.
@@ -126,6 +131,7 @@
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Priority"| module Os_push_notifications.Data.PhoneGap.Priority >> ~[<<a_api subproject="server" | module Os_push_notifications.Data.PhoneGap >>~]||
 |@@ @style="tet-align: left;"@@\\R|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Register"| module Os_icons.Register >> ~[<<a_api subproject="server" | module Os_icons >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Response"| module Os_push_notifications.Response >> ~[<<a_api subproject="server" | module Os_push_notifications >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Results"| module Os_push_notifications.Response.Results >> ~[<<a_api subproject="server" | module Os_push_notifications.Response >>~]|<<div class="odocwiki_info"|~The type representing a ~F~C~M response
 >>
