@@ -489,7 +489,6 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="local_to_calendar"| value Os_date.local_to_calendar >> ~[<<a_api subproject="server" | module Os_date >>~]||
 |@@ @style="tet-align: left;"@@\\M|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="main_service"| value Os_services.main_service >> ~[<<a_api subproject="server" | module Os_services >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="make"| value Os_tools.Carousel.make >> ~[<<a_api subproject="server" | module Os_tools.Carousel >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="make_page"| value Os_page.Make.make_page >> ~[<<a_api subproject="server" | module Os_page.Make >>~]|<<div class="odocwiki_info"|~Builds a valid html page from body content by adding headers
       for this app
 >>

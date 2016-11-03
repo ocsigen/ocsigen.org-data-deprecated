@@ -4,8 +4,6 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Action"| module Os_push_notifications.Data.PhoneGap.Action >> ~[<<a_api subproject="server" | module Os_push_notifications.Data.PhoneGap >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Action_link_key"| module Os_types.Action_link_key >> ~[<<a_api subproject="server" | module Os_types >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Android"| module Os_push_notifications.Notification.Android >> ~[<<a_api subproject="server" | module Os_push_notifications.Notification >>~]||
-|@@ @style="tet-align: left;"@@\\C|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Carousel"| module Os_tools.Carousel >> ~[<<a_api subproject="server" | module Os_tools >>~]||
 |@@ @style="tet-align: left;"@@\\D|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="D"| module Os_icons.D >> ~[<<a_api subproject="server" | module Os_icons >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Data"| module Os_push_notifications.Data >> ~[<<a_api subproject="server" | module Os_push_notifications >>~]||
