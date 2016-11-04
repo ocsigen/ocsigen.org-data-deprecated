@@ -164,20 +164,18 @@
     si_persistent_session_cookies :
       string Eliom_common.Full_state_name_table.t;
     si_secure_cookie_info :
-      (string Eliom_common.Full_state_name_table.t *
-       string Eliom_common.Full_state_name_table.t *
-       string Eliom_common.Full_state_name_table.t)
-      option;
+      string Eliom_common.Full_state_name_table.t *
+      string Eliom_common.Full_state_name_table.t *
+      string Eliom_common.Full_state_name_table.t;
     si_service_session_cookies_tab :
       string Eliom_common.Full_state_name_table.t;
     si_data_session_cookies_tab : string Eliom_common.Full_state_name_table.t;
     si_persistent_session_cookies_tab :
       string Eliom_common.Full_state_name_table.t;
     si_secure_cookie_info_tab :
-      (string Eliom_common.Full_state_name_table.t *
-       string Eliom_common.Full_state_name_table.t *
-       string Eliom_common.Full_state_name_table.t)
-      option;
+      string Eliom_common.Full_state_name_table.t *
+      string Eliom_common.Full_state_name_table.t *
+      string Eliom_common.Full_state_name_table.t;
     si_tab_cookies : string Ocsigen_cookies.CookiesTable.t;
     si_nonatt_info : Eliom_common.na_key_req;
     si_state_info : Eliom_common.att_key_req * Eliom_common.att_key_req;
@@ -270,7 +268,7 @@
        Pervasives.ref)
       Lwt.t Lazy.t Eliom_common.Full_state_name_table.t Pervasives.ref
   type 'a cookie_info =
-      'a Eliom_common.cookie_info1 * 'a Eliom_common.cookie_info1 option
+      'a Eliom_common.cookie_info1 * 'a Eliom_common.cookie_info1
   type 'a servicecookiestablecontent =
       Eliom_common.full_state_name * 'a * float option Pervasives.ref *
       Eliom_common.timeout Pervasives.ref *
