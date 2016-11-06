@@ -7,7 +7,7 @@
     which provides built~-in support for ~Js~_of~_ocaml syntax~.
 
 ----
-<<pre id="VALjs_mapper" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|js~_mapper>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|string list <<span class="ocsforge_color_delimiter"| -> >> <<span class="ocsforge_color_lid"|Ast_mapper>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|mapper>>>>>><<div class="odocwiki_info"|~A syntax extension is available for manipulating object properties~,
+<<pre id="VALwrapper" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|wrapper>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|string option <<span class="ocsforge_color_uid"|Pervasives>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|ref>>>>>><<pre id="VALjs_mapper" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|js~_mapper>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|string list <<span class="ocsforge_color_delimiter"| -> >> <<span class="ocsforge_color_lid"|Ast_mapper>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|mapper>>>>>><<div class="odocwiki_info"|~A syntax extension is available for manipulating object properties~,
    invoking methods and creating objects~.  ~The syntax and typing rules
    are as follows~:
 

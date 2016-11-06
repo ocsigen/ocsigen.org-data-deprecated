@@ -1588,6 +1588,7 @@
       ~Javascript~.
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api text="wrapper"| value Ppx_js.wrapper >> ~[<<a_api | module Ppx_js >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="write"| value Deriving_Json.Json_min'.write >> ~[<<a_api | module Deriving_Json.Json_min' >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="write"| value Deriving_Json.Json_min.write >> ~[<<a_api | module Deriving_Json.Json_min >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="write"| value Deriving_Json.Json.write >> ~[<<a_api | module Deriving_Json.Json >>~]||

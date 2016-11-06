@@ -1,1 +1,4 @@
-<<code language="ocaml" | sig val js_mapper : string list -> Ast_mapper.mapper end >>
+<<code language="ocaml" | sig
+  val wrapper : string option Pervasives.ref
+  val js_mapper : string list -> Ast_mapper.mapper
+end >>
