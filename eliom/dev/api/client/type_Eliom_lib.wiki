@@ -556,6 +556,8 @@
       val resolve : string -> string
       val add_get_args : string -> (string * string) list -> string
       val string_of_url_path : encode:bool -> string list -> string
+      val path_of_url : url -> string list
+      val path_of_url_string : string -> string list
     end
   module String :
     sig

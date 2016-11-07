@@ -917,6 +917,10 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="parentNode"| value Eliom_content.Svg.Manip.parentNode >> ~[<<a_api subproject="client" | module Eliom_content.Svg.Manip >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|parent~Node elt>> returns the parent of <<span class="odocwiki_inlinecode"|elt>>~, if any~.
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="path_of_url"| value Eliom_lib.Url.path_of_url >> ~[<<a_api subproject="client" | module Eliom_lib.Url >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="path_of_url_string"| value Eliom_lib.Url.path_of_url_string >> ~[<<a_api subproject="client" | module Eliom_lib.Url >>~]|<<div class="odocwiki_info"|~Extracts path from a ~U~R~L string~.
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="persist_document_head"| value Eliom_client.persist_document_head >> ~[<<a_api subproject="client" | module Eliom_client >>~]|<<div class="odocwiki_info"|~After this function is called~, the document head is no
     longer changed on page change~.
 >>
