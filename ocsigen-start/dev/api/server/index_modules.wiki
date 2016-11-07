@@ -80,6 +80,9 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Os_page"| module Os_page >> |<<div class="odocwiki_info"|~Functor defining wrappers for services handlers returning pages~.
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Os_platform"| module Os_platform >> |<<div class="odocwiki_info"|~About device platform~.
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Os_push_notifications"| module Os_push_notifications >> |<<div class="odocwiki_info"|~Send push notifications to ~Android and i~O~S mobile devices~.
 >>
 |

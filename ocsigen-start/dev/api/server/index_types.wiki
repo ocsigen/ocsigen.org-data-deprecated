@@ -73,6 +73,9 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="t"| type Os_push_notifications.Notification.t >> ~[<<a_api subproject="server" | module Os_push_notifications.Notification >>~]|<<div class="odocwiki_info"|~The type representing a notification
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="t"| type Os_platform.t >> ~[<<a_api subproject="server" | module Os_platform >>~]|<<div class="odocwiki_info"|~Platform type~.
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="t"| type Os_group.t >> ~[<<a_api subproject="server" | module Os_group >>~]|<<div class="odocwiki_info"|~Type alias to <<a_api subproject="server" | type Os_types.Group.t >> to allow to use <<span class="odocwiki_inlinecode"|~Os~_group~.t>>~.
 >>
 |

@@ -11,6 +11,7 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Os_msg"| module Os_msg >> ||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Os_notif"| module Os_notif >> ||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Os_page"| module Os_page >> ||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Os_platform"| module Os_platform >> ||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Os_push_notifications"| module Os_push_notifications >> ||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Os_request_cache"| module Os_request_cache >> ||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Os_services"| module Os_services >> ||

@@ -265,6 +265,9 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="css"| value Os_page.PAGE.css >> ~[<<a_api subproject="server" | module Os_page.PAGE >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|css>> ~(same as <<span class="odocwiki_inlinecode"|js>> but for style sheet files~)~.
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="css_class"| value Os_platform.css_class >> ~[<<a_api subproject="server" | module Os_platform >>~]|<<div class="odocwiki_info"|~Return <<span class="odocwiki_inlinecode"|"os~-platform">> where <<span class="odocwiki_inlinecode"|platform>> is the device platform~.
+>>
+|
 |@@ @style="tet-align: left;"@@\\D|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="default_connected_error_page"| value Os_page.PAGE.default_connected_error_page >> ~[<<a_api subproject="server" | module Os_page.PAGE >>~]|<<div class="odocwiki_info"|~Default error page for connected pages~.
 >>
@@ -698,11 +701,13 @@
         ~(default is <<span class="odocwiki_inlinecode"|~1~6~3~8~4>>~) from the stream <<span class="odocwiki_inlinecode"|stream>>~.
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="string_of_t"| value Os_platform.string_of_t >> ~[<<a_api subproject="server" | module Os_platform >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="success_of_t"| value Os_push_notifications.Response.success_of_t >> ~[<<a_api subproject="server" | module Os_push_notifications.Response >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|success~_of~_t response>> returns the number of messages that were
         processed without an error~.
 >>
 |
 |@@ @style="tet-align: left;"@@\\T|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="t_of_string"| value Os_platform.t_of_string >> ~[<<a_api subproject="server" | module Os_platform >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="title"| value Os_page.PAGE.title >> ~[<<a_api subproject="server" | module Os_page.PAGE >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|title>> corresponds to the html tag ~<title~>~, it will be inserted on all
       pages~.
 >>
