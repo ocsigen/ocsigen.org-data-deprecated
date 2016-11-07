@@ -256,7 +256,8 @@ file~.
 >>
 |
 |@@ @style="tet-align: left;"@@\\P|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Printer"| module Eliom_content.Html.Printer >> ~[<<a_api subproject="server" | module Eliom_content.Html >>~]|<<div class="odocwiki_info"|[[http://dev.w3.org/html5/html-xhtml-author-guide/|"~Polyglot"]] ~H~T~M~L printer~.
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Printer"| module Eliom_content.Html.Printer >> ~[<<a_api subproject="server" | module Eliom_content.Html >>~]|<<div class="odocwiki_info"|[[http://dev.w3.org/html5/html-xhtml-author-guide/|"~Polyglot"]]
+      ~H~T~M~L printer~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Printer"| module Eliom_content.Svg.Printer >> ~[<<a_api subproject="server" | module Eliom_content.Svg >>~]|<<div class="odocwiki_info"|~S~V~G printer~.
