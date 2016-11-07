@@ -153,6 +153,11 @@
         ~Javascript~.
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api text="callback_with_arguments"| value Js.Unsafe.callback_with_arguments >> ~[<<a_api | module Js.Unsafe >>~]|<<div class="odocwiki_info"|~Wrap an ~O~Caml function so that it can be invoked from
+        ~Javascript~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="callback_with_arity"| value Js.Unsafe.callback_with_arity >> ~[<<a_api | module Js.Unsafe >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="canvas"| value Dom_html.CoerceTo.canvas >> ~[<<a_api | module Dom_html.CoerceTo >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="caption"| value Dom_html.CoerceTo.caption >> ~[<<a_api | module Dom_html.CoerceTo >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="case"| value Js.OPT.case >> ~[<<a_api | module Js.OPT >>~]|<<div class="odocwiki_info"|~Pattern matching on optional values~.
@@ -884,6 +889,10 @@
         ~Javascript~.
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api text="meth_callback_with_arguments"| value Js.Unsafe.meth_callback_with_arguments >> ~[<<a_api | module Js.Unsafe >>~]|<<div class="odocwiki_info"|~Wrap an ~O~Caml function so that it can be invoked from ~Javascript~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="meth_callback_with_arity"| value Js.Unsafe.meth_callback_with_arity >> ~[<<a_api | module Js.Unsafe >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="minus"| value Keycode.minus >> ~[<<a_api | module Keycode >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="missingGlyph"| value Dom_svg.CoerceTo.missingGlyph >> ~[<<a_api | module Dom_svg.CoerceTo >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="ml"| value CSS.Angle.ml >> ~[<<a_api | module CSS.Angle >>~]||
@@ -920,6 +929,9 @@
 |@@class="odocwiki_index"@ @@<<a_api text="mutationObserver"| value MutationObserver.mutationObserver >> ~[<<a_api | module MutationObserver >>~]||
 |@@ @style="tet-align: left;"@@\\N|
 |@@class="odocwiki_index"@ @@<<a_api text="new_obj"| value Js.Unsafe.new_obj >> ~[<<a_api | module Js.Unsafe >>~]|<<div class="odocwiki_info"|~Create a ~Javascript object~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="new_obj_arr"| value Js.Unsafe.new_obj_arr >> ~[<<a_api | module Js.Unsafe >>~]|<<div class="odocwiki_info"|~Same ~Create a ~Javascript object~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="no_handler"| value Dom_html.no_handler >> ~[<<a_api | module Dom_html >>~]|<<div class="odocwiki_info"|see <<span class="odocwiki_inlinecode"|~Dom~.no~_handler>>

@@ -12,6 +12,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="any"| type Js.Unsafe.any >> ~[<<a_api | module Js.Unsafe >>~]|<<div class="odocwiki_info"|~Top type~.
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api text="any_js_array"| type Js.Unsafe.any_js_array >> ~[<<a_api | module Js.Unsafe >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="attachParam"| type WebGL.attachParam >> ~[<<a_api | module WebGL >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="attachmentPoint"| type WebGL.attachmentPoint >> ~[<<a_api | module WebGL >>~]||
 |@@ @style="tet-align: left;"@@\\B|

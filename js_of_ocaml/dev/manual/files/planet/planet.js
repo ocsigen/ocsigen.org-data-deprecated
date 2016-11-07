@@ -557,14 +557,10 @@
      {var tag=9;
       if(!caml_is_ascii(s))tag = 8,s = caml_utf8_of_utf16(s);
       return new MlString(tag,s,s.length)}
-    function raw_array_copy(a)
-     {var l=a.length,b=new Array(l);
-      for(var i=0;i < l;i++)b[i] = a[i];
-      return b}
     function caml_js_wrap_callback(f)
      {return function()
        {return arguments.length > 0
-                ?caml_call_gen(f,raw_array_copy(arguments))
+                ?caml_call_gen(f,arguments)
                 :caml_call_gen(f,[undefined])}}
     function caml_lessequal(x,y){return +(caml_compare_val(x,y,false) <= 0)}
     function caml_lessthan(x,y){return +(caml_compare_val(x,y,false) < 0)}

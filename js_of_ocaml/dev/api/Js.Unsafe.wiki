@@ -5,7 +5,7 @@
 <<pre class="ocsforge_color odocwiki_code" id="TYPEany"|<<span class="ocsforge_color_keyword"|type>> <<span class="odocwiki_name"|any>>>><<div class="odocwiki_info"|~Top type~.  ~Used for putting values of different types
         in a same array~.
 >>
-<<pre id="VALinject" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|inject>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|'a <<span class="ocsforge_color_delimiter"| -> >> <<a_api text="any" | type Js.Unsafe.any >>>>>><<div class="odocwiki_info"|~Coercion to top type~.
+<<pre class="ocsforge_color odocwiki_code" id="TYPEany_js_array"|<<span class="ocsforge_color_keyword"|type>> <<span class="odocwiki_name"|any~_js~_array>> <<span class="ocsforge_color_delimiter"|~=>> <<span class="odocwiki_type"|<<a_api text="any" | type Js.Unsafe.any >>>> >><<pre id="VALinject" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|inject>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|'a <<span class="ocsforge_color_delimiter"| -> >> <<a_api text="any" | type Js.Unsafe.any >>>>>><<div class="odocwiki_info"|~Coercion to top type~.
 >>
 <<pre id="VALcoerce" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|coerce>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|'a <<a_api text="Js.t" | type Js.t >> <<span class="ocsforge_color_delimiter"| -> >> 'b <<a_api text="Js.t" | type Js.t >>>>>><<div class="odocwiki_info"|~Unsafe coercion between to ~Javascript objects~.
 >>
@@ -34,6 +34,10 @@
         creates a ~Javascript object with constructor <<span class="odocwiki_inlinecode"|c>> using the
         arguments given by the array <<span class="odocwiki_inlinecode"|a>>~.
 >>
+<<pre id="VALnew_obj_arr" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|new~_obj~_arr>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|'a <<span class="ocsforge_color_delimiter"| -> >> <<a_api text="any_js_array" | type Js.Unsafe.any_js_array >> <<span class="ocsforge_color_delimiter"| -> >> 'b>>>><<div class="odocwiki_info"|~Same ~Create a ~Javascript object~.  ~The expression <<span class="odocwiki_inlinecode"|new~_obj~_arr c a>>
+        creates a ~Javascript object with constructor <<span class="odocwiki_inlinecode"|c>> using the
+        arguments given by the ~Javascript array <<span class="odocwiki_inlinecode"|a>>~.
+>>
 <<pre id="VALobj" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|obj>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<span class="ocsforge_color_delimiter"| ( >>string * <<a_api text="any" | type Js.Unsafe.any >><<span class="ocsforge_color_delimiter"| ) >> array <<span class="ocsforge_color_delimiter"| -> >> 'a>>>><<div class="odocwiki_info"|~Creates a ~Javascript literal object~.  ~The expression
         <<span class="odocwiki_inlinecode"|obj a>> creates a ~Javascript object whose fields are given by
         the array <<span class="odocwiki_inlinecode"|a>>
@@ -57,14 +61,22 @@
         arguments will be set to <<span class="odocwiki_inlinecode"|undefined>> and extra arguments are
         lost~.
 >>
-<<pre id="VALmeth_callback" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|meth~_callback>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<span class="ocsforge_color_delimiter"| ( >>'b <<span class="ocsforge_color_delimiter"| -> >> 'a<<span class="ocsforge_color_delimiter"| ) >> <<span class="ocsforge_color_delimiter"| -> >> <<span class="ocsforge_color_delimiter"| ( >>'b, 'a<<span class="ocsforge_color_delimiter"| ) >> <<a_api text="Js.meth_callback" | type Js.meth_callback >>>>>><<div class="odocwiki_info"|~Wrap an ~O~Caml function so that it can be invoked from
-        ~Javascript~.  ~The first parameter of the function will be bound
+<<pre id="VALcallback_with_arguments" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|callback~_with~_arguments>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|\\  <<span class="ocsforge_color_delimiter"| ( >><<a_api text="any_js_array" | type Js.Unsafe.any_js_array >> <<span class="ocsforge_color_delimiter"| -> >> 'b<<span class="ocsforge_color_delimiter"| ) >> <<span class="ocsforge_color_delimiter"| -> >>\\  <<span class="ocsforge_color_delimiter"| ( >>'c, <<a_api text="any_js_array" | type Js.Unsafe.any_js_array >> <<span class="ocsforge_color_delimiter"| -> >> 'b<<span class="ocsforge_color_delimiter"| ) >> <<a_api text="Js.meth_callback" | type Js.meth_callback >>>>>><<div class="odocwiki_info"|~Wrap an ~O~Caml function so that it can be invoked from
+        ~Javascript~. ~The first parameter of the function will be bound
+        to the <<span class="odocwiki_inlinecode"|arguments>> ~Java~Script
+>>
+<<pre id="VALcallback_with_arity" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|callback~_with~_arity>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|\\  int <<span class="ocsforge_color_delimiter"| -> >> <<span class="ocsforge_color_delimiter"| ( >>'a <<span class="ocsforge_color_delimiter"| -> >> 'b<<span class="ocsforge_color_delimiter"| ) >> <<span class="ocsforge_color_delimiter"| -> >> <<span class="ocsforge_color_delimiter"| ( >>'c, 'a <<span class="ocsforge_color_delimiter"| -> >> 'b<<span class="ocsforge_color_delimiter"| ) >> <<a_api text="Js.meth_callback" | type Js.meth_callback >>>>>><<pre id="VALmeth_callback" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|meth~_callback>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<span class="ocsforge_color_delimiter"| ( >>'b <<span class="ocsforge_color_delimiter"| -> >> 'a<<span class="ocsforge_color_delimiter"| ) >> <<span class="ocsforge_color_delimiter"| -> >> <<span class="ocsforge_color_delimiter"| ( >>'b, 'a<<span class="ocsforge_color_delimiter"| ) >> <<a_api text="Js.meth_callback" | type Js.meth_callback >>>>>><<div class="odocwiki_info"|~Wrap an ~O~Caml function so that it can be invoked from
+        ~Javascript~. ~The first parameter of the function will be bound
         to the value of the <<span class="odocwiki_inlinecode"|this>> implicit parameter~. ~Contrary to
         <<span class="odocwiki_inlinecode"|~Js~.wrap~_meth~_callback>>~, partial application and
         over~-application is not supported~: missing arguments will be
         set to <<span class="odocwiki_inlinecode"|undefined>> and extra arguments are lost~.
 >>
-
+<<pre id="VALmeth_callback_with_arguments" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|meth~_callback~_with~_arguments>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|\\  <<span class="ocsforge_color_delimiter"| ( >>'b <<span class="ocsforge_color_delimiter"| -> >> <<a_api text="any_js_array" | type Js.Unsafe.any_js_array >> <<span class="ocsforge_color_delimiter"| -> >> 'a<<span class="ocsforge_color_delimiter"| ) >> <<span class="ocsforge_color_delimiter"| -> >>\\  <<span class="ocsforge_color_delimiter"| ( >>'b, <<a_api text="any_js_array" | type Js.Unsafe.any_js_array >> <<span class="ocsforge_color_delimiter"| -> >> 'a<<span class="ocsforge_color_delimiter"| ) >> <<a_api text="Js.meth_callback" | type Js.meth_callback >>>>>><<div class="odocwiki_info"|~Wrap an ~O~Caml function so that it can be invoked from ~Javascript~.
+      ~The first parameter of the function will be bound to the value of the <<span class="odocwiki_inlinecode"|this>> implicit parameter~.
+      ~The second parameter of the function with be bound to the value of the <<span class="odocwiki_inlinecode"|arguments>>~.
+>>
+<<pre id="VALmeth_callback_with_arity" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|meth~_callback~_with~_arity>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|\\  int <<span class="ocsforge_color_delimiter"| -> >> <<span class="ocsforge_color_delimiter"| ( >>'b <<span class="ocsforge_color_delimiter"| -> >> 'a<<span class="ocsforge_color_delimiter"| ) >> <<span class="ocsforge_color_delimiter"| -> >> <<span class="ocsforge_color_delimiter"| ( >>'b, 'a<<span class="ocsforge_color_delimiter"| ) >> <<a_api text="Js.meth_callback" | type Js.meth_callback >>>>>>
 
 ===@@id="3_Deprecatedfunctions"@@~Deprecated functions~.===
 
