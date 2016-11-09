@@ -5,7 +5,7 @@
 
 
 
-|<<a_api subproject="server" | module Os_current_user >>|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|get~_current~_user ~(~)>> returns the current user as a <<a_api subproject="server" | type Os_types.User.t >> type~.
+|<<a_api subproject="server" | module Os_current_user >>|<<div class="odocwiki_info"|~This module provides functions and types to manage the current user~.
 >>
 |
 |<<a_api subproject="server" | module Os_date >>|<<div class="odocwiki_info"|~Time zone and date management for ~Web applications~.
@@ -15,13 +15,12 @@
     using some local sendmail program~.
 >>
 |
-|<<a_api subproject="server" | module Os_handlers >>|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|connect~_handler ~(~) ~(~(login~, password~)~, keep~Me~Logged~In~)>> connects the user
-    with <<span class="odocwiki_inlinecode"|login>> and <<span class="odocwiki_inlinecode"|password>> and keeps the user logged in between different
-    session if <<span class="odocwiki_inlinecode"|keep~Me~Logged~In>> is set to <<span class="odocwiki_inlinecode"|true>>
+|<<a_api subproject="server" | module Os_handlers >>|<<div class="odocwiki_info"|~This module contains pre~-defined handlers for connect~, disconnect~, sign up~,
+    add a new email~, etc~.
 >>
 |
-|<<a_api subproject="server" | module Os_msg >>|<<div class="odocwiki_info"|~Call this function either from client or server side
-    to display an error message in the page~.
+|<<a_api subproject="server" | module Os_msg >>|<<div class="odocwiki_info"|~This module provides functions to display messages ~(client~-side or
+    server~-side~)~.
 >>
 |
 |<<a_api subproject="server" | module Os_notif >>|<<div class="odocwiki_info"|~Server to client notifications~.
@@ -42,7 +41,7 @@
 |<<a_api subproject="server" | module Os_tips >>|<<div class="odocwiki_info"|~Tips for new users and new features~.
 >>
 |
-|<<a_api subproject="server" | module Os_user >>|<<div class="odocwiki_info"|~Type alias to <<a_api subproject="server" | type Os_types.User.id >> to allow to use <<span class="odocwiki_inlinecode"|~Os~_user~.id>>~.
+|<<a_api subproject="server" | module Os_user >>|<<div class="odocwiki_info"|~This module provides functions and types about users~.
 >>
 |
 |<<a_api subproject="server" | module Os_userbox >>|<<div class="odocwiki_info"|~Connexion box~, box with connected user information and menu

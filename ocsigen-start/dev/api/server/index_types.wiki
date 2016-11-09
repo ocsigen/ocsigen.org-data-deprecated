@@ -1,7 +1,9 @@
 =Index of types=
 
 |@@ @style="tet-align: left;"@@\\C|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="client_notif"| type Os_notif.S.client_notif >> ~[<<a_api subproject="server" | module Os_notif.S >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="client_notif"| type Os_notif.S.client_notif >> ~[<<a_api subproject="server" | module Os_notif.S >>~]|<<div class="odocwiki_info"|~The client notification type~.
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="content"| type Os_page.content >> ~[<<a_api subproject="server" | module Os_page >>~]|<<div class="odocwiki_info"|~An abstract type describing the content of a page
 >>
 |
@@ -11,7 +13,9 @@
 >>
 |
 |@@ @style="tet-align: left;"@@\\I|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="id"| type Os_user.id >> ~[<<a_api subproject="server" | module Os_user >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="id"| type Os_user.id >> ~[<<a_api subproject="server" | module Os_user >>~]|<<div class="odocwiki_info"|~Type alias to <<a_api subproject="server" | type Os_types.User.id >> to allow to use <<span class="odocwiki_inlinecode"|~Os~_user~.id>>~.
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="id"| type Os_types.Group.id >> ~[<<a_api subproject="server" | module Os_types.Group >>~]|<<div class="odocwiki_info"|~Type representing a group ~I~D
 >>
 |
@@ -28,15 +32,17 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="key"| type Os_request_cache.Cache_sig.key >> ~[<<a_api subproject="server" | module Os_request_cache.Cache_sig >>~]|<<div class="odocwiki_info"|~The type of the key
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="key"| type Os_notif.S.key >> ~[<<a_api subproject="server" | module Os_notif.S >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="key"| type Os_notif.S.key >> ~[<<a_api subproject="server" | module Os_notif.S >>~]|<<div class="odocwiki_info"|~The key type~.
+>>
+|
 |@@ @style="tet-align: left;"@@\\L|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="local_calendar"| type Os_date.local_calendar >> ~[<<a_api subproject="server" | module Os_date >>~]|<<div class="odocwiki_info"|~Type representing a local calendar~.
 >>
 |
-|@@ @style="tet-align: left;"@@\\M|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="msg"| type Os_comet.msg >> ~[<<a_api subproject="server" | module Os_comet >>~]||
 |@@ @style="tet-align: left;"@@\\S|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="server_notif"| type Os_notif.S.server_notif >> ~[<<a_api subproject="server" | module Os_notif.S >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="server_notif"| type Os_notif.S.server_notif >> ~[<<a_api subproject="server" | module Os_notif.S >>~]|<<div class="odocwiki_info"|~The server notification type~.
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="success"| type Os_push_notifications.Response.Results.success >> ~[<<a_api subproject="server" | module Os_push_notifications.Response.Results >>~]|<<div class="odocwiki_info"|~The type representing a success result~.
 >>
 |

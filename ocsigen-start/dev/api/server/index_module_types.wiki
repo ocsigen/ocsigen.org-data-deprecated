@@ -9,8 +9,5 @@
 >>
 |
 |@@ @style="tet-align: left;"@@\\S|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="S"| module type Os_notif.S >> ~[<<a_api subproject="server" | module Os_notif >>~]|<<div class="odocwiki_info"|we have two types of notifications ~(<<span class="odocwiki_inlinecode"|server~_notif>>~, and <<span class="odocwiki_inlinecode"|client~_notif>>~)
-    because we might need to serialise and deserialise the notification twice~.
->>
-|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="S"| module type Os_notif.S >> ~[<<a_api subproject="server" | module Os_notif >>~]||
 \\
