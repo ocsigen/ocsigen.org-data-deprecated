@@ -5810,7 +5810,7 @@
       method open_ :
         Js.js_string Js.t ->
         Js.js_string Js.t ->
-        Js.js_string Js.t Js.opt -> Dom_html.window Js.t Js.meth
+        Js.js_string Js.t Js.opt -> Dom_html.window Js.t Js.opt Js.meth
       method outerHeight : int Js.optdef Js.readonly_prop
       method outerWidth : int Js.optdef Js.readonly_prop
       method parent : Dom_html.window Js.t Js.readonly_prop
