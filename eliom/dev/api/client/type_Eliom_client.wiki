@@ -65,7 +65,7 @@
     ?fragment:string ->
     ?keep_nl_params:[ `All | `None | `Persistent ] ->
     ?nl_params:Eliom_parameter.nl_params_set ->
-    ?keep_get_na_params:bool -> 'a -> Dom_html.window Js.t
+    ?keep_get_na_params:bool -> 'a -> Dom_html.window Js.t Js.opt
   val change_url :
     ?replace:bool ->
     ?absolute:bool ->
