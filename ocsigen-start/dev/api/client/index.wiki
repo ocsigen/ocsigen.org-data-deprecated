@@ -1,6 +1,6 @@
 ==
 
-=@@id="1_OcsigenstartclientAPI"@@~Ocsigen~-start client ~A~P~I=
+=@@id="1_ClientAPI"@@~Client ~A~P~I=
 
 
 
@@ -8,15 +8,24 @@
 |<<a_api subproject="client" | module Os_current_user >>||
 |<<a_api subproject="client" | module Os_date >>||
 |<<a_api subproject="client" | module Os_email >>||
+|Os_group||
 |<<a_api subproject="client" | module Os_handlers >>||
+|<<a_api subproject="client" | module Os_icons >>||
+|<<a_api subproject="client" | module Os_lib >>||
 |<<a_api subproject="client" | module Os_msg >>||
 |<<a_api subproject="client" | module Os_notif >>||
 |<<a_api subproject="client" | module Os_page >>||
+|<<a_api subproject="client" | module Os_platform >>||
 |<<a_api subproject="client" | module Os_request_cache >>||
+|<<a_api subproject="client" | module Os_services >>||
 |<<a_api subproject="client" | module Os_session >>||
 |<<a_api subproject="client" | module Os_tips >>||
+|<<a_api subproject="client" | module Os_tools >>||
+|<<a_api subproject="client" | module Os_types >>||
 |<<a_api subproject="client" | module Os_user >>||
+|<<a_api subproject="client" | module Os_user_proxy >>||
 |<<a_api subproject="client" | module Os_userbox >>||
+|<<a_api subproject="client" | module Os_view >>||
 
 
 
