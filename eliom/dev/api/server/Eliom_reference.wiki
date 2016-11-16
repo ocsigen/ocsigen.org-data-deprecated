@@ -38,6 +38,13 @@
     scopes <<a_api subproject="server" | val Eliom_common.global_scope >>~, <<a_api subproject="server" | val Eliom_common.site_scope >>~, and
     <<a_api subproject="server" | val Eliom_common.request_scope >>~. ~The default is <<span class="odocwiki_inlinecode"|false>>~, but this default
     can be changed in configuration file ~(<<span class="odocwiki_inlinecode"|~<securecookies value~="true"~/~>>>~)~.
+    ~This option can be placed as global ~Eliom option ~(inside the <<span class="odocwiki_inlinecode"|~<extension~>>>
+    tag which is loading ~Eliom~)~, or in the local configuration of one site
+    ~(inside the <<span class="odocwiki_inlinecode"|~<eliom~>>> tag~)~. ~But in the latter case~,
+    it will only have effect on the actions performed after in the same <<span class="odocwiki_inlinecode"|~<site~>>>
+    ~(and ~N~O~T on the top~-level instructions of the modules loaded before~)~.
+
+
     //~Warning~: ~Eliom references of scope <<a_api subproject="server" | val Eliom_common.global_scope >>~,
     <<a_api subproject="server" | val Eliom_common.site_scope >> or
     <<a_api subproject="server" | val Eliom_common.request_scope >> may be created at any time ~; but for other

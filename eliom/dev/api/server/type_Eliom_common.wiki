@@ -602,7 +602,8 @@
   }
   val get_site_dir : Eliom_common.sitedata -> Eliom_lib.Url.path
   val get_site_dir_string : Eliom_common.sitedata -> string
-  val get_secure : bool option -> Eliom_common.sitedata -> bool
+  val get_secure :
+    secure_o:bool option -> sitedata:Eliom_common.sitedata -> unit -> bool
   val is_client_app : bool Pervasives.ref
   val make_actual_path : string list -> string list
   type 'a to_and_of = { of_string : string -> 'a; to_string : 'a -> string; }
