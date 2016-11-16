@@ -2,28 +2,3 @@
 <<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module>> <<span class="ocsforge_color_uid"|<<span class="ocsforge_color_uid"|Ot_size>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="ocsforge_color_keyword"|sig>><<a_api subproject="server" text=".." | module Ot_size >><<span class="ocsforge_color_keyword"|end>>>>~Size functions for ~Dom elements~.
 
 ----
-
-
-===@@id="3_Sizeandorientation"@@~Size and orientation===
-
-
-~N~O~T~E~: mind to stop any signals derived from the following signals ~(using
-    <<span class="odocwiki_inlinecode"|~React~.~S~.stop>>~) on unload~.
-
-<<span class="odocwiki_inlinecode"|set~_adaptative~_width elt f>> will make the width of the element
-    recomputed using <<span class="odocwiki_inlinecode"|f>> everytime the width of the window changes~.
-
-<<span class="odocwiki_inlinecode"|set~_adaptative~_height elt f>> will make the width of the element
-    recomputed using <<span class="odocwiki_inlinecode"|f>> everytime the height of the window changes~.
-
-~Compute the height of an element to the bottom of the page
-
-position of an element relative to the inner window~;
-    get~Client~Bounding~Rect does not include borders by default~, use <<span class="odocwiki_inlinecode"|with~_margin>>
-    to take them into account~.
-
-size of an element
-
-position of an element relative to the document
-
-~Current vertical scroll position of the page~.

@@ -5,14 +5,28 @@
 
 
 
-|<<a_api subproject="client" | module Ot_popup >>||
-|<<a_api subproject="client" | module Ot_spinner >>||
-|<<a_api subproject="client" | module Ot_range >>||
-|<<a_api subproject="client" | module Ot_calendar >>||
-|<<a_api subproject="client" | module Ot_time_picker >>||
-|<<a_api subproject="client" | module Ot_toggle >>||
+|<<a_api subproject="client" | module Ot_popup >>|<<div class="odocwiki_info"|~Popup widget
+>>
+|
+|<<a_api subproject="client" | module Ot_spinner >>|<<div class="odocwiki_info"|~Spinner widget
+>>
+|
+|<<a_api subproject="client" | module Ot_range >>|<<div class="odocwiki_info"|~Range selection widget
+>>
+|
+|<<a_api subproject="client" | module Ot_calendar >>|<<div class="odocwiki_info"|~Calendar widget
+>>
+|
+|<<a_api subproject="client" | module Ot_time_picker >>|<<div class="odocwiki_info"|~This module implements a clock~-style time picker~.
+>>
+|
+|<<a_api subproject="client" | module Ot_toggle >>|<<div class="odocwiki_info"|~Binary toggle widget
+>>
+|
 |Ot_icons||
-|<<a_api subproject="client" | module Ot_picture_uploader >>||
+|<<a_api subproject="client" | module Ot_picture_uploader >>|<<div class="odocwiki_info"|a service that implements a function with type <<span class="odocwiki_inlinecode"|~'a ~-~> ~'b>>
+>>
+|
 
 
 
@@ -22,5 +36,9 @@
 
 
 
+* <<a_api subproject="client" text="Index of types" | index types >>
+* <<a_api subproject="client" text="Index of values" | index values >>
+* <<a_api subproject="client" text="Index of class methods" | index methods >>
+* <<a_api subproject="client" text="Index of class types" | index class types >>
 * <<a_api subproject="client" text="Index of modules" | index modules >>
 
