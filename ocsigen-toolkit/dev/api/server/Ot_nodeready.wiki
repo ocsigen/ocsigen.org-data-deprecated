@@ -1,25 +1,3 @@
 =Module <<a_api_type subproject="server" | module Ot_nodeready >> =
-<<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module>> <<span class="ocsforge_color_uid"|<<span class="ocsforge_color_uid"|Ot_nodeready>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="ocsforge_color_keyword"|sig>><<a_api subproject="server" text=".." | module Ot_nodeready >><<span class="ocsforge_color_keyword"|end>>>>~Wait for a node to be inserted in the ~D~O~M~.
-
+<<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module>> <<span class="ocsforge_color_uid"|<<span class="ocsforge_color_uid"|Ot_nodeready>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="ocsforge_color_keyword"|sig>><<a_api subproject="server" text=".." | module Ot_nodeready >><<span class="ocsforge_color_keyword"|end>>>>
 ----
-
-
-===@@id="3_Knownissues"@@~Known issues===
-
-   ~Using it on a node that is never actually added in the ~D~O~M
-   will make the node and the thread wakener kept in memory~.
-   ~Also~, note that nodeready is fired only once ~(except if you add a new
-   listener to it after triggering the first one~)~.
-
-
-===@@id="3_Knownissues"@@~Known issues===
-
-   ~Using it on a node that is never actually added in the ~D~O~M
-   will make the node and the thread wakener kept in memory~.
-   ~Also~, note that nodeready is fired only once ~(except if you add a new
-   listener to it after triggering the first one~)~.
-
-
-===@@id="3_Example"@@~Example===
-
-    <<span class="odocwiki_inlinecode"|let ~_ ~= nodeready node in ~Firebug~.console~#~#debug node>>

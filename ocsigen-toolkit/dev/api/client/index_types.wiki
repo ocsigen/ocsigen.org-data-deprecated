@@ -12,9 +12,7 @@
 |@@ @style="tet-align: left;"@@\\G|
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="glue"| type Ot_sticky.glue >> ~[<<a_api subproject="client" | module Ot_sticky >>~]||
 |@@ @style="tet-align: left;"@@\\I|
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="intl"| type Ot_calendar.intl >> ~[<<a_api subproject="client" | module Ot_calendar >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|intl>> is the type of internationalization specifiers~.
->>
-|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="intl"| type Ot_calendar.intl >> ~[<<a_api subproject="client" | module Ot_calendar >>~]||
 |@@ @style="tet-align: left;"@@\\O|
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="orientation"| type Ot_size.orientation >> ~[<<a_api subproject="client" | module Ot_size >>~]||
 |@@ @style="tet-align: left;"@@\\R|

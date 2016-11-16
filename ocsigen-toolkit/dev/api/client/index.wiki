@@ -14,7 +14,7 @@
 |<<a_api subproject="client" | module Ot_range >>|<<div class="odocwiki_info"|~Range selection widget
 >>
 |
-|<<a_api subproject="client" | module Ot_calendar >>|<<div class="odocwiki_info"|~Calendar widget
+|<<a_api subproject="client" | module Ot_calendar >>|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|intl>> is the type of internationalization specifiers~.
 >>
 |
 |<<a_api subproject="client" | module Ot_time_picker >>|<<div class="odocwiki_info"|~This module implements a clock~-style time picker~.
@@ -24,7 +24,7 @@
 >>
 |
 |Ot_icons||
-|<<a_api subproject="client" | module Ot_picture_uploader >>|<<div class="odocwiki_info"|a service that implements a function with type <<span class="odocwiki_inlinecode"|~'a ~-~> ~'b>>
+|<<a_api subproject="client" | module Ot_picture_uploader >>|<<div class="odocwiki_info"|~Picture uploader widget
 >>
 |
 
