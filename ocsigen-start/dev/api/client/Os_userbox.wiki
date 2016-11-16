@@ -1,3 +1,58 @@
 =Module <<a_api_type subproject="client" | module Os_userbox >> =
-<<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module>> <<span class="ocsforge_color_uid"|<<span class="ocsforge_color_uid"|Os_userbox>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="ocsforge_color_keyword"|sig>><<a_api subproject="client" text=".." | module Os_userbox >><<span class="ocsforge_color_keyword"|end>>>>
+<<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module>> <<span class="ocsforge_color_uid"|<<span class="ocsforge_color_uid"|Os_userbox>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="ocsforge_color_keyword"|sig>><<a_api subproject="client" text=".." | module Os_userbox >><<span class="ocsforge_color_keyword"|end>>>><<span class="odocwiki_inlinecode"|upload~_pic~_link ~?a ~?content ~?crop ~?input ~?submit action~_after~_submit
+    service userid>>
+
+
+    ~Creates a link with a label and a submit button to upload a picture~.
+
+
+    ~The client function <<span class="odocwiki_inlinecode"|action~_after~_submit>> will be called first~,
+    for example to close the menu containing the link~.
+
+
+    ~You can add attributes to the ~H~T~M~L tag with the optional parameter <<span class="odocwiki_inlinecode"|~?a>>~.
+    <<span class="odocwiki_inlinecode"|~?input>> and <<span class="odocwiki_inlinecode"|~?submit>> are couples <<span class="odocwiki_inlinecode"|~(attributes~, content~_children~)>> for the
+    label and the submit button where <<span class="odocwiki_inlinecode"|attributes>> is a list of attributes for
+    the tag and <<span class="odocwiki_inlinecode"|content~_children>> is a list of children~. ~By default~, they are
+    empty~.
+
+
+    <<span class="odocwiki_inlinecode"|~?content>> is the link text~. ~The default value is "~Change profile picture"~.
+
+
+    <<span class="odocwiki_inlinecode"|service>> is the service called to upload the picture~.
+
+
+    ~You can crop the picture by giving a value to <<span class="odocwiki_inlinecode"|~?crop>>~.
+
 ----
+<<pre class="ocsforge_color odocwiki_code" id="TYPEuploader"|<<span class="ocsforge_color_keyword"|type>> <<span class="odocwiki_name"|uploader>> <<span class="ocsforge_color_delimiter"|~=>> <<span class="odocwiki_type"|<<span class="ocsforge_color_delimiter"| ( >>unit, unit<<span class="ocsforge_color_delimiter"| ) >> <<span class="ocsforge_color_uid"|Ot_picture_uploader>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|service>>>> >><<pre id="VALupload_pic_link" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|upload~_pic~_link>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|\\  <<span class="ocsforge_color_label"| ?a: >>[< <<span class="ocsforge_color_uid"|Html_types>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|a_attrib>> > `OnClick ] <<span class="ocsforge_color_uid"|Eliom_content>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_uid"|Html>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_uid"|D>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_uid"|Raw>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|attrib>>\\     list <<span class="ocsforge_color_delimiter"| -> >>\\  <<span class="ocsforge_color_label"| ?content: >><<span class="ocsforge_color_uid"|Html_types>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|a_content>> <<span class="ocsforge_color_uid"|Eliom_content>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_uid"|Html>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_uid"|D>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_uid"|Raw>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|elt>> list <<span class="ocsforge_color_delimiter"| -> >>\\  <<span class="ocsforge_color_label"| ?crop: >>float option <<span class="ocsforge_color_delimiter"| -> >>\\  <<span class="ocsforge_color_label"| ?input: >><<span class="ocsforge_color_uid"|Html_types>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|label_attrib>> <<span class="ocsforge_color_uid"|Eliom_content>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_uid"|Html>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_uid"|D>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_uid"|Raw>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|attrib>> list *\\         <<span class="ocsforge_color_uid"|Html_types>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|label_content_fun>> <<span class="ocsforge_color_uid"|Eliom_content>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_uid"|Html>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_uid"|D>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_uid"|Raw>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|elt>> list <<span class="ocsforge_color_delimiter"| -> >>\\  <<span class="ocsforge_color_label"| ?submit: >><<span class="ocsforge_color_uid"|Html_types>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|button_attrib>> <<span class="ocsforge_color_uid"|Eliom_content>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_uid"|Html>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_uid"|D>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_uid"|Raw>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|attrib>> list *\\          <<span class="ocsforge_color_uid"|Html_types>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|button_content_fun>> <<span class="ocsforge_color_uid"|Eliom_content>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_uid"|Html>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_uid"|D>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_uid"|Raw>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|elt>>\\          list <<span class="ocsforge_color_delimiter"| -> >>\\  <<span class="ocsforge_color_delimiter"| ( >>unit <<span class="ocsforge_color_delimiter"| -> >> unit<<span class="ocsforge_color_delimiter"| ) >> <<span class="ocsforge_color_uid"|Eliom_client_value>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>> <<span class="ocsforge_color_delimiter"| -> >>\\  <<a_api subproject="client" text="uploader" | type Os_userbox.uploader >> <<span class="ocsforge_color_delimiter"| -> >>\\  <<a_api subproject="client" text="Os_types.User.id" | type Os_types.User.id >> <<span class="ocsforge_color_delimiter"| -> >>\\  [> `A of <<span class="ocsforge_color_uid"|Html_types>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|a_content>> ] <<span class="ocsforge_color_uid"|Eliom_content>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_uid"|Html>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_uid"|D>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_uid"|Raw>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|elt>>>>>><<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|upload~_pic~_link ~?a ~?content ~?crop ~?input ~?submit action~_after~_submit
+    service userid>>
+
+
+    ~Creates a link with a label and a submit button to upload a picture~.
+
+
+    ~The client function <<span class="odocwiki_inlinecode"|action~_after~_submit>> will be called first~,
+    for example to close the menu containing the link~.
+
+
+    ~You can add attributes to the ~H~T~M~L tag with the optional parameter <<span class="odocwiki_inlinecode"|~?a>>~.
+    <<span class="odocwiki_inlinecode"|~?input>> and <<span class="odocwiki_inlinecode"|~?submit>> are couples <<span class="odocwiki_inlinecode"|~(attributes~, content~_children~)>> for the
+    label and the submit button where <<span class="odocwiki_inlinecode"|attributes>> is a list of attributes for
+    the tag and <<span class="odocwiki_inlinecode"|content~_children>> is a list of children~. ~By default~, they are
+    empty~.
+
+
+    <<span class="odocwiki_inlinecode"|~?content>> is the link text~. ~The default value is "~Change profile picture"~.
+
+
+    <<span class="odocwiki_inlinecode"|service>> is the service called to upload the picture~.
+
+
+    ~You can crop the picture by giving a value to <<span class="odocwiki_inlinecode"|~?crop>>~.
+>>
+<<pre id="VALreset_tips_link" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|reset~_tips~_link>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|\\  <<span class="ocsforge_color_delimiter"| ( >>unit <<span class="ocsforge_color_delimiter"| -> >> unit<<span class="ocsforge_color_delimiter"| ) >> <<span class="ocsforge_color_uid"|Eliom_client_value>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>> <<span class="ocsforge_color_delimiter"| -> >>\\  [> `A of [> `PCDATA ] ] <<span class="ocsforge_color_uid"|Eliom_content>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_uid"|Html>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_uid"|D>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_uid"|Raw>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|elt>>>>>><<div class="odocwiki_info"|~Link to start to see the help from the beginning~.
+    ~The client function given as first parameter will be called first~,
+    for example to close the menu containing the link~.
+>>

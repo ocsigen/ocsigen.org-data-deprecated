@@ -21,4 +21,8 @@
 ==[[client/Os_userbox|Os_userbox]]
 ==[[client/Os_view|Os_view]]
 ==~Index
+=== <<a_api subproject="client" text="Index of types" | index types >>
+=== <<a_api subproject="client" text="Index of exceptions" | index exceptions >>
+=== <<a_api subproject="client" text="Index of values" | index values >>
 === <<a_api subproject="client" text="Index of modules" | index modules >>
+=== <<a_api subproject="client" text="Index of module types" | index module types >>

@@ -5,9 +5,3 @@
 
 ----
 <<pre id="VAL__link" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|~_~_link>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|unit>>>>
-<<span class="odocwiki_inlinecode"|restart~_process ~(~)>> restarts the client~.
-    ~For mobile application~, it restarts the application by going to
-    <<span class="odocwiki_inlinecode"|"index~.html">>~.
-    ~For other types of clients~, ~<~<a~_api subproject~="server" ~|
-    module ~Eliom~_service~.reload~_action~>~> is used as argument of ~<~<a~_api
-    subproject~="server" ~| module ~Eliom~_client~.exit~_to~>~>

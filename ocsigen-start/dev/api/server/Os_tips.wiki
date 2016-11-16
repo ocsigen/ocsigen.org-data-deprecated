@@ -39,6 +39,3 @@
     ~Call it with <<span class="odocwiki_inlinecode"|~Eliom~_client~.exit~_to>> to restart the application and
     see tips again~.
 >>
-
-~Call this function to reset tips for current users~.
-    ~Tips will be shown again from the beginning~.
