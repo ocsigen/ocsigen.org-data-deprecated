@@ -144,7 +144,7 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="make_hours_minutes_seq"| value Ot_time_picker.make_hours_minutes_seq >> ~[<<a_api subproject="client" | module Ot_time_picker >>~]|<<div class="odocwiki_info"|~Alias of <<span class="odocwiki_inlinecode"|make>>~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="make_sticky"| value Ot_sticky.make_sticky >> ~[<<a_api subproject="client" | module Ot_sticky >>~]|<<div class="odocwiki_info"|position~:sticky polyfill which is not supported by ~Chrome~.
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="make_sticky"| value Ot_sticky.make_sticky >> ~[<<a_api subproject="client" | module Ot_sticky >>~]|<<div class="odocwiki_info"|position~:sticky polyfill which is not supported by some browsers~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="marginBottom"| value Ot_style.marginBottom >> ~[<<a_api subproject="client" | module Ot_style >>~]||
@@ -175,7 +175,7 @@
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="parse_px"| value Ot_style.parse_px >> ~[<<a_api subproject="client" | module Ot_style >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="popup"| value Ot_popup.popup >> ~[<<a_api subproject="client" | module Ot_popup >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"| popup ~?a ~?closeable ~?confirmation~_onclose ~?onclose gen~_content >>
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="popup"| value Ot_popup.popup >> ~[<<a_api subproject="client" | module Ot_popup >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"| popup ~?a ~?close~_button ~?confirmation~_onclose ~?onclose gen~_content >>
     ~Display a modal popup~.
 >>
 |
