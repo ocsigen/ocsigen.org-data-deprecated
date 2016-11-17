@@ -10,7 +10,9 @@
 |@@ @style="tet-align: left;"@@\\D|
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="display"| type Ot_style.display >> ~[<<a_api subproject="client" | module Ot_style >>~]||
 |@@ @style="tet-align: left;"@@\\G|
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="glue"| type Ot_sticky.glue >> ~[<<a_api subproject="client" | module Ot_sticky >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="glue"| type Ot_sticky.glue >> ~[<<a_api subproject="client" | module Ot_sticky >>~]|<<div class="odocwiki_info"|returned by <<span class="odocwiki_inlinecode"|make sticky>> ~(if position~:sticky is not supported~)~.
+>>
+|
 |@@ @style="tet-align: left;"@@\\I|
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="intl"| type Ot_calendar.intl >> ~[<<a_api subproject="client" | module Ot_calendar >>~]||
 |@@ @style="tet-align: left;"@@\\O|
