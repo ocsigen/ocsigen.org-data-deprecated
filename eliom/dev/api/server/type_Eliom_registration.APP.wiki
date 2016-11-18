@@ -53,7 +53,7 @@
     ('gp, 'pp, 'm, 'att, 'co, Eliom_service.non_ext, Eliom_service.reg, 'a,
      'gn, 'pn, return)
     Eliom_service.t
-  val attach_get :
+  val create_attached_get :
     ?app:string ->
     ?scope:[< Eliom_common.scope ] ->
     ?options:options ->
@@ -80,7 +80,7 @@
      Eliom_service.non_ext, Eliom_service.reg, [ `WithoutSuffix ], 'gn, 
      unit, return)
     Eliom_service.t
-  val attach_post :
+  val create_attached_post :
     ?app:string ->
     ?scope:[< Eliom_common.scope ] ->
     ?options:options ->

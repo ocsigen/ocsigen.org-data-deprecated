@@ -69,28 +69,8 @@
       that represents the javascript part of the application~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="attach_existing"| value Eliom_service_sigs.S.attach_existing >> ~[<<a_api subproject="server" | module Eliom_service_sigs.S >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|attach~_existing ~~fallback ~~service ~(~)>> attaches the preexisting
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="attach"| value Eliom_service_sigs.S.attach >> ~[<<a_api subproject="server" | module Eliom_service_sigs.S >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|attach ~~fallback ~~service ~(~)>> attaches the preexisting
       path~-less service <<span class="odocwiki_inlinecode"|service>> on the ~U~R~L of <<span class="odocwiki_inlinecode"|fallback>>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="attach_get"| value Eliom_service.attach_get >> ~[<<a_api subproject="server" | module Eliom_service >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|attach~_get ~~fallback ~~get~_params ~(~)>> attaches a new service on
-    the path of <<span class="odocwiki_inlinecode"|fallback>>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="attach_get"| value Eliom_registration_sigs.S_poly_with_create.attach_get >> ~[<<a_api subproject="server" | module Eliom_registration_sigs.S_poly_with_create >>~]|<<div class="odocwiki_info"|~See <<span class="odocwiki_inlinecode"|~S~.attach~_get>>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="attach_get"| value Eliom_registration_sigs.S_with_create.attach_get >> ~[<<a_api subproject="server" | module Eliom_registration_sigs.S_with_create >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.attach_get >> followed by <<span class="odocwiki_inlinecode"|register>>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="attach_post"| value Eliom_service.attach_post >> ~[<<a_api subproject="server" | module Eliom_service >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|attach~_post ~~fallback ~~post~_params ~(~)>> attaches a new service on
-    the path of <<span class="odocwiki_inlinecode"|fallback>>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="attach_post"| value Eliom_registration_sigs.S_poly_with_create.attach_post >> ~[<<a_api subproject="server" | module Eliom_registration_sigs.S_poly_with_create >>~]|<<div class="odocwiki_info"|~See <<span class="odocwiki_inlinecode"|~S~.attach~_post>>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="attach_post"| value Eliom_registration_sigs.S_with_create.attach_post >> ~[<<a_api subproject="server" | module Eliom_registration_sigs.S_with_create >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.attach_post >> followed by <<span class="odocwiki_inlinecode"|register>>~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="attr"| value Eliom_content.Html.C.attr >> ~[<<a_api subproject="server" | module Eliom_content.Html.C >>~]||
@@ -201,6 +181,26 @@
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="create"| value Eliom_registration_sigs.S_with_create.create >> ~[<<a_api subproject="server" | module Eliom_registration_sigs.S_with_create >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.create >> followed by <<span class="odocwiki_inlinecode"|register>>~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="create_attached_get"| value Eliom_service.create_attached_get >> ~[<<a_api subproject="server" | module Eliom_service >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|create~_attached~_get ~~fallback ~~get~_params ~(~)>> attaches a new service on
+    the path of <<span class="odocwiki_inlinecode"|fallback>>~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="create_attached_get"| value Eliom_registration_sigs.S_poly_with_create.create_attached_get >> ~[<<a_api subproject="server" | module Eliom_registration_sigs.S_poly_with_create >>~]|<<div class="odocwiki_info"|~See <<span class="odocwiki_inlinecode"|~S~.create~_attached~_get>>~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="create_attached_get"| value Eliom_registration_sigs.S_with_create.create_attached_get >> ~[<<a_api subproject="server" | module Eliom_registration_sigs.S_with_create >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.create_attached_get >> followed by <<span class="odocwiki_inlinecode"|register>>~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="create_attached_post"| value Eliom_service.create_attached_post >> ~[<<a_api subproject="server" | module Eliom_service >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|create~_attached~_post ~~fallback ~~post~_params ~(~)>> attaches a new service on
+    the path of <<span class="odocwiki_inlinecode"|fallback>>~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="create_attached_post"| value Eliom_registration_sigs.S_poly_with_create.create_attached_post >> ~[<<a_api subproject="server" | module Eliom_registration_sigs.S_poly_with_create >>~]|<<div class="odocwiki_info"|~See <<span class="odocwiki_inlinecode"|~S~.create~_attached~_post>>~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="create_attached_post"| value Eliom_registration_sigs.S_with_create.create_attached_post >> ~[<<a_api subproject="server" | module Eliom_registration_sigs.S_with_create >>~]|<<div class="odocwiki_info"|~Same as <<a_api subproject="server" | val Eliom_service.create_attached_post >> followed by <<span class="odocwiki_inlinecode"|register>>~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="create_filtered"| value Eliom_bus.create_filtered >> ~[<<a_api subproject="server" | module Eliom_bus >>~]|<<div class="odocwiki_info"|~Same as <<span class="odocwiki_inlinecode"|create>>~, but data is filtered through <<span class="odocwiki_inlinecode"|filter>> function

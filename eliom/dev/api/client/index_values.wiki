@@ -98,20 +98,8 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="application_name"| value Eliom_registration_sigs.APP_PARAM.application_name >> ~[<<a_api subproject="client" | module Eliom_registration_sigs.APP_PARAM >>~]|<<div class="odocwiki_info"|~Name of the application~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="attach_existing"| value Eliom_service_sigs.S.attach_existing >> ~[<<a_api subproject="client" | module Eliom_service_sigs.S >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|attach~_existing ~~fallback ~~service ~(~)>> attaches the preexisting
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="attach"| value Eliom_service_sigs.S.attach >> ~[<<a_api subproject="client" | module Eliom_service_sigs.S >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|attach ~~fallback ~~service ~(~)>> attaches the preexisting
       path~-less service <<span class="odocwiki_inlinecode"|service>> on the ~U~R~L of <<span class="odocwiki_inlinecode"|fallback>>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="attach_get"| value Eliom_registration_sigs.S_poly_with_create.attach_get >> ~[<<a_api subproject="client" | module Eliom_registration_sigs.S_poly_with_create >>~]|<<div class="odocwiki_info"|~See <<span class="odocwiki_inlinecode"|~S~.attach~_get>>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="attach_get"| value Eliom_registration_sigs.S_with_create.attach_get >> ~[<<a_api subproject="client" | module Eliom_registration_sigs.S_with_create >>~]|<<div class="odocwiki_info"|~Same as <<span class="odocwiki_inlinecode"|~Eliom~_service~.attach~_get>> followed by <<span class="odocwiki_inlinecode"|register>>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="attach_post"| value Eliom_registration_sigs.S_poly_with_create.attach_post >> ~[<<a_api subproject="client" | module Eliom_registration_sigs.S_poly_with_create >>~]|<<div class="odocwiki_info"|~See <<span class="odocwiki_inlinecode"|~S~.attach~_post>>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="attach_post"| value Eliom_registration_sigs.S_with_create.attach_post >> ~[<<a_api subproject="client" | module Eliom_registration_sigs.S_with_create >>~]|<<div class="odocwiki_info"|~Same as <<span class="odocwiki_inlinecode"|~Eliom~_service~.attach~_post>> followed by <<span class="odocwiki_inlinecode"|register>>~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="attr"| value Eliom_content.Html.C.attr >> ~[<<a_api subproject="client" | module Eliom_content.Html.C >>~]||
@@ -307,6 +295,18 @@
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="create"| value Eliom_registration_sigs.S_with_create.create >> ~[<<a_api subproject="client" | module Eliom_registration_sigs.S_with_create >>~]|<<div class="odocwiki_info"|~Same as <<span class="odocwiki_inlinecode"|~Eliom~_service~.create>> followed by <<span class="odocwiki_inlinecode"|register>>~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="create_attached_get"| value Eliom_registration_sigs.S_poly_with_create.create_attached_get >> ~[<<a_api subproject="client" | module Eliom_registration_sigs.S_poly_with_create >>~]|<<div class="odocwiki_info"|~See <<span class="odocwiki_inlinecode"|~S~.create~_attached~_get>>~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="create_attached_get"| value Eliom_registration_sigs.S_with_create.create_attached_get >> ~[<<a_api subproject="client" | module Eliom_registration_sigs.S_with_create >>~]|<<div class="odocwiki_info"|~Same as <<span class="odocwiki_inlinecode"|~Eliom~_service~.create~_attached~_get>> followed by <<span class="odocwiki_inlinecode"|register>>~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="create_attached_post"| value Eliom_registration_sigs.S_poly_with_create.create_attached_post >> ~[<<a_api subproject="client" | module Eliom_registration_sigs.S_poly_with_create >>~]|<<div class="odocwiki_info"|~See <<span class="odocwiki_inlinecode"|~S~.create~_attached~_post>>~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="create_attached_post"| value Eliom_registration_sigs.S_with_create.create_attached_post >> ~[<<a_api subproject="client" | module Eliom_registration_sigs.S_with_create >>~]|<<div class="odocwiki_info"|~Same as <<span class="odocwiki_inlinecode"|~Eliom~_service~.create~_attached~_post>> followed by <<span class="odocwiki_inlinecode"|register>>~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="create_buffer"| value Eliom_client_core.create_buffer >> ~[<<a_api subproject="client" | module Eliom_client_core >>~]||

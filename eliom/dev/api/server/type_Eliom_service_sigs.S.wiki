@@ -118,7 +118,7 @@
     (unit, 'b, 'meth, Eliom_service_sigs.S.att, 'co, 'ext, non_reg,
      [ `WithoutSuffix ], unit, 'f, 'return)
     Eliom_service_sigs.S.t
-  val attach_existing :
+  val attach :
     fallback:(unit, unit, get, Eliom_service_sigs.S.att, 'a, non_ext, 'b,
               [< `WithSuffix | `WithoutSuffix ], unit, unit, 'return1)
              Eliom_service_sigs.S.t ->

@@ -108,7 +108,7 @@
     (unit, 'b, 'meth, att, 'co, 'ext, non_reg, [ `WithoutSuffix ], unit, 'f,
      'return)
     t
-  val attach_existing :
+  val attach :
     fallback:(unit, unit, get, att, 'a, non_ext, 'b,
               [< `WithSuffix | `WithoutSuffix ], unit, unit, 'return1)
              t ->
@@ -245,7 +245,7 @@
     path:('att, 'co, 'gp_) path_option ->
     unit ->
     ('gp, 'pp, 'm, 'att, 'co, non_ext, reg, 'a, 'gn, 'pn, non_ocaml) t
-  val attach_get :
+  val create_attached_get :
     ?name:string ->
     ?csrf_safe:bool ->
     ?csrf_scope:[< Eliom_common.user_scope ] ->
@@ -262,7 +262,7 @@
     ('gp, unit, get, att, co, non_ext, reg, [ `WithoutSuffix ], 'gn, 
      unit, non_ocaml)
     t
-  val attach_post :
+  val create_attached_post :
     ?name:string ->
     ?csrf_safe:bool ->
     ?csrf_scope:[< Eliom_common.user_scope ] ->
@@ -345,7 +345,7 @@
          meth ->
     path:('att, 'co, 'gp_) path_option ->
     unit -> ('gp, 'pp, 'm, 'att, 'co, non_ext, reg, 'a, 'gn, 'pn, 'ret) t
-  val attach_get_unsafe :
+  val create_attached_get_unsafe :
     ?name:string ->
     ?csrf_safe:bool ->
     ?csrf_scope:[< Eliom_common.user_scope ] ->
@@ -360,7 +360,7 @@
     get_params:('gp, [< `WithSuffix | `WithoutSuffix ] as 'c, 'gn)
                Eliom_parameter.params_type ->
     unit -> ('gp, unit, get, att, co, non_ext, reg, 'c, 'gn, unit, 'd) t
-  val attach_post_unsafe :
+  val create_attached_post_unsafe :
     ?name:string ->
     ?csrf_safe:bool ->
     ?csrf_scope:[< Eliom_common.user_scope ] ->

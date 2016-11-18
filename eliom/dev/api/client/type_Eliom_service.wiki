@@ -108,7 +108,7 @@
     (unit, 'b, 'meth, att, 'co, 'ext, non_reg, [ `WithoutSuffix ], unit, 'f,
      'return)
     t
-  val attach_existing :
+  val attach :
     fallback:(unit, unit, get, att, 'a, non_ext, 'b,
               [< `WithSuffix | `WithoutSuffix ], unit, unit, 'return1)
              t ->
