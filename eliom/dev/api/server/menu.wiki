@@ -12,7 +12,7 @@
 ===[[server/Eliom_content.Svg|Eliom_content.Svg]]
 ===[[server/Eliom_content.Xml|Eliom_content.Xml]]
 ===[[server/Eliom_tools|Eliom_tools]]
-==~Services creation
+==~Service creation
 ===[[server/Eliom_service|Eliom_service]]
 ===[[server/Eliom_parameter|Eliom_parameter]]
 ===[[server/Eliom_registration|Eliom_registration]]
