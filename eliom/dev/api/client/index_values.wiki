@@ -98,10 +98,6 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="application_name"| value Eliom_registration_sigs.APP_PARAM.application_name >> ~[<<a_api subproject="client" | module Eliom_registration_sigs.APP_PARAM >>~]|<<div class="odocwiki_info"|~Name of the application~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="attach"| value Eliom_service_sigs.S.attach >> ~[<<a_api subproject="client" | module Eliom_service_sigs.S >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|attach ~~fallback ~~service ~(~)>> attaches the preexisting
-      path~-less service <<span class="odocwiki_inlinecode"|service>> on the ~U~R~L of <<span class="odocwiki_inlinecode"|fallback>>~.
->>
-|
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="attr"| value Eliom_content.Html.C.attr >> ~[<<a_api subproject="client" | module Eliom_content.Html.C >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="attr"| value Eliom_content.Svg.C.attr >> ~[<<a_api subproject="client" | module Eliom_content.Svg.C >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="attrib"| value Eliom_content_core.Html.Custom_data.attrib >> ~[<<a_api subproject="client" | module Eliom_content_core.Html.Custom_data >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|attrib my~_data value >> creates a ~H~T~M~L~5 attribute for the custom~-data

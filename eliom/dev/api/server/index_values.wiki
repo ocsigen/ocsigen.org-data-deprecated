@@ -69,8 +69,8 @@
       that represents the javascript part of the application~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="attach"| value Eliom_service_sigs.S.attach >> ~[<<a_api subproject="server" | module Eliom_service_sigs.S >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|attach ~~fallback ~~service ~(~)>> attaches the preexisting
-      path~-less service <<span class="odocwiki_inlinecode"|service>> on the ~U~R~L of <<span class="odocwiki_inlinecode"|fallback>>~.
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="attach"| value Eliom_service.attach >> ~[<<a_api subproject="server" | module Eliom_service >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|attach ~~fallback ~~service ~(~)>> attaches the preexisting pathless
+    service <<span class="odocwiki_inlinecode"|service>> on the ~U~R~L of <<span class="odocwiki_inlinecode"|fallback>>~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="attr"| value Eliom_content.Html.C.attr >> ~[<<a_api subproject="server" | module Eliom_content.Html.C >>~]||

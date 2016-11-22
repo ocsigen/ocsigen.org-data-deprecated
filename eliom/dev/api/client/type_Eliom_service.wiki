@@ -108,15 +108,6 @@
     (unit, 'b, 'meth, att, 'co, 'ext, non_reg, [ `WithoutSuffix ], unit, 'f,
      'return)
     t
-  val attach :
-    fallback:(unit, unit, get, att, 'a, non_ext, 'b,
-              [< `WithSuffix | `WithoutSuffix ], unit, unit, 'return1)
-             t ->
-    service:('get, 'post, 'meth, non_att, co, non_ext, 'c,
-             [< `WithoutSuffix ] as 'd, 'gn, 'pn, 'return)
-            t ->
-    unit ->
-    ('get, 'post, 'meth, att, co, non_ext, non_reg, 'd, 'gn, 'pn, 'return) t
   val add_non_localized_get_parameters :
     params:('p, [ `WithoutSuffix ], 'pn) Eliom_parameter.non_localized_params ->
     service:('a, 'b, 'meth, 'attach, 'co, 'ext, 'reg,
