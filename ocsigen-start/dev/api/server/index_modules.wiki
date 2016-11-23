@@ -32,7 +32,9 @@
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Make"| module Os_page.Make >> ~[<<a_api subproject="server" | module Os_page >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Make"| module Os_notif.Make >> ~[<<a_api subproject="server" | module Os_notif >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Make"| module Os_notif.Make >> ~[<<a_api subproject="server" | module Os_notif >>~]|<<div class="odocwiki_info"|~Use this functor if you have a multi~-server set~-up~, use <<span class="odocwiki_inlinecode"|~Simple>> otherwise~.
+>>
+|
 |@@ @style="tet-align: left;"@@\\N|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Notification"| module Os_push_notifications.Notification >> ~[<<a_api subproject="server" | module Os_push_notifications >>~]|<<div class="odocwiki_info"|~This module provides an interface to create the ~J~S~O~N for the notification
     key~.
@@ -146,7 +148,11 @@
 >>
 |
 |@@ @style="tet-align: left;"@@\\S|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Simple"| module Os_notif.Simple >> ~[<<a_api subproject="server" | module Os_notif >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Simple"| module Os_notif.Simple >> ~[<<a_api subproject="server" | module Os_notif >>~]|<<div class="odocwiki_info"|~Use this functor in case messages are to be delivered only to clients
+    connected to the current server~, as is always the case in a single~-server
+    set~-up~.
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Style"| module Os_push_notifications.Data.PhoneGap.Style >> ~[<<a_api subproject="server" | module Os_push_notifications.Data.PhoneGap >>~]||
 |@@ @style="tet-align: left;"@@\\U|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="User"| module Os_types.User >> ~[<<a_api subproject="server" | module Os_types >>~]||
