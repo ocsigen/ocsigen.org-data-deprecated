@@ -269,7 +269,7 @@
       closed~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api text="closedir"| value Lwt_unix.closedir >> ~[<<a_api | module Lwt_unix >>~]|<<div class="odocwiki_info"|~Wrapper for <<span class="odocwiki_inlinecode"|~Unix~.closedir>>
+|@@class="odocwiki_index"@ @@<<a_api text="closedir"| value Lwt_unix.closedir >> ~[<<a_api | module Lwt_unix >>~]|<<div class="odocwiki_info"|~Closes a directory handle~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="combine"| value Lwt_stream.combine >> ~[<<a_api | module Lwt_stream >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|combine s~1 s~2>> combines two streams~.
@@ -1197,7 +1197,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="open_process_in"| value Lwt_process.open_process_in >> ~[<<a_api | module Lwt_process >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="open_process_none"| value Lwt_process.open_process_none >> ~[<<a_api | module Lwt_process >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="open_process_out"| value Lwt_process.open_process_out >> ~[<<a_api | module Lwt_process >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="opendir"| value Lwt_unix.opendir >> ~[<<a_api | module Lwt_unix >>~]|<<div class="odocwiki_info"|~Wrapper for <<span class="odocwiki_inlinecode"|~Unix~.opendir>>
+|@@class="odocwiki_index"@ @@<<a_api text="opendir"| value Lwt_unix.opendir >> ~[<<a_api | module Lwt_unix >>~]|<<div class="odocwiki_info"|~Opens a directory for listing~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="openfile"| value Lwt_unix.openfile >> ~[<<a_api | module Lwt_unix >>~]|<<div class="odocwiki_info"|~Wrapper for <<span class="odocwiki_inlinecode"|~Unix~.openfile>>~.
@@ -1351,10 +1351,10 @@
       become readable~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api text="readdir"| value Lwt_unix.readdir >> ~[<<a_api | module Lwt_unix >>~]|<<div class="odocwiki_info"|~Wrapper for <<span class="odocwiki_inlinecode"|~Unix~.readdir>>~.
+|@@class="odocwiki_index"@ @@<<a_api text="readdir"| value Lwt_unix.readdir >> ~[<<a_api | module Lwt_unix >>~]|<<div class="odocwiki_info"|~Reads the next directory entry from the given directory~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api text="readdir_n"| value Lwt_unix.readdir_n >> ~[<<a_api | module Lwt_unix >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|readdir~_n handle count>> reads at most <<span class="odocwiki_inlinecode"|count>> entry from the
+|@@class="odocwiki_index"@ @@<<a_api text="readdir_n"| value Lwt_unix.readdir_n >> ~[<<a_api | module Lwt_unix >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|readdir~_n handle count>> reads at most <<span class="odocwiki_inlinecode"|count>> entries from the
       given directory~.
 >>
 |
@@ -1460,7 +1460,8 @@
 |
 |@@class="odocwiki_index"@ @@<<a_api text="rev_map_p"| value Lwt_list.rev_map_p >> ~[<<a_api | module Lwt_list >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="rev_map_s"| value Lwt_list.rev_map_s >> ~[<<a_api | module Lwt_list >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="rewinddir"| value Lwt_unix.rewinddir >> ~[<<a_api | module Lwt_unix >>~]|<<div class="odocwiki_info"|~Wrapper for <<span class="odocwiki_inlinecode"|~Unix~.rewinddir>>
+|@@class="odocwiki_index"@ @@<<a_api text="rewinddir"| value Lwt_unix.rewinddir >> ~[<<a_api | module Lwt_unix >>~]|<<div class="odocwiki_info"|~Resets the given directory handle~, so that directory listing can be
+    restarted~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="rmdir"| value Lwt_unix.rmdir >> ~[<<a_api | module Lwt_unix >>~]|<<div class="odocwiki_info"|~Wrapper for <<span class="odocwiki_inlinecode"|~Unix~.rmdir>>
