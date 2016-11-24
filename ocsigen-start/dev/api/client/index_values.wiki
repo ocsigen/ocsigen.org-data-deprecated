@@ -34,7 +34,6 @@
 >>
 |
 |@@ @style="tet-align: left;"@@\\B|
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="bind_popup_button"| value Os_tools.bind_popup_button >> ~[<<a_api subproject="client" | module Os_tools >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="block"| value Os_tips.block >> ~[<<a_api subproject="client" | module Os_tips >>~]|<<div class="odocwiki_info"|~Return a box containing a tip~, to be inserted where you want in a page~.
 >>
 |

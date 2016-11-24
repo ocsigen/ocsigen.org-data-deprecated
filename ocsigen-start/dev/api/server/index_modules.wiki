@@ -109,7 +109,6 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Os_tips"| module Os_tips >> |<<div class="odocwiki_info"|~Tips for new users and new features~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Os_tools"| module Os_tools >> ||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Os_types"| module Os_types >> |<<div class="odocwiki_info"|~Data types
 >>
 |

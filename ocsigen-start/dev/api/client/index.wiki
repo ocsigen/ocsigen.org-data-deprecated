@@ -44,7 +44,7 @@
 |<<a_api subproject="client" | module Os_tips >>|<<div class="odocwiki_info"|~Display tips in pages~, as a speech bubble~.
 >>
 |
-|<<a_api subproject="client" | module Os_tools >>||
+|Os_tools||
 |<<a_api subproject="client" | module Os_types >>|<<div class="odocwiki_info"|~Types related to users~.
 >>
 |

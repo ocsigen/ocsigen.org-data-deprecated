@@ -63,7 +63,7 @@
 |<<a_api subproject="server" | module Os_tips >>|<<div class="odocwiki_info"|~Tips for new users and new features~.
 >>
 |
-|<<a_api subproject="server" | module Os_tools >>||
+|Os_tools||
 |<<a_api subproject="server" | module Os_types >>|<<div class="odocwiki_info"|~Data types
 >>
 |
