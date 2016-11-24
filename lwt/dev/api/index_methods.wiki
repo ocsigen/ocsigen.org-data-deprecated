@@ -40,6 +40,8 @@
 |@@class="odocwiki_index"@ @@<<a_api text="loop"| method Lwt_engine.libev#loop >> ~[<<a_api | module Lwt_engine >>~]|<<div class="odocwiki_info"|~Returns <<span class="odocwiki_inlinecode"|loop>>~.
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api text="loop"| method Lwt_engine.Versioned.libev_2#loop >> ~[<<a_api | module Lwt_engine.Versioned >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="loop"| method Lwt_engine.Versioned.libev_1#loop >> ~[<<a_api | module Lwt_engine.Versioned >>~]||
 |@@ @style="tet-align: left;"@@\\O|
 |@@class="odocwiki_index"@ @@<<a_api text="on_readable"| method Lwt_engine.abstract#on_readable >> ~[<<a_api | module Lwt_engine >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="on_timer"| method Lwt_engine.abstract#on_timer >> ~[<<a_api | module Lwt_engine >>~]||

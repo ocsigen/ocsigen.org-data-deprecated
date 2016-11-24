@@ -31,9 +31,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="elt"| type Lwt_pqueue.S.elt >> ~[<<a_api | module Lwt_pqueue.S >>~]|<<div class="odocwiki_info"|~Type of elements contained in the priority queue~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api text="ev_loop"| type Lwt_engine.ev_loop >> ~[<<a_api | module Lwt_engine >>~]|<<div class="odocwiki_info"|~Type of libev loops~.
->>
-|
+|@@class="odocwiki_index"@ @@<<a_api text="ev_loop"| type Lwt_engine.ev_loop >> ~[<<a_api | module Lwt_engine >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="event"| type Lwt_engine.event >> ~[<<a_api | module Lwt_engine >>~]|<<div class="odocwiki_info"|~Type of events~.
 >>
 |
@@ -174,6 +172,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="t"| type Lwt_bytes.t >> ~[<<a_api | module Lwt_bytes >>~]|<<div class="odocwiki_info"|~Type of array of bytes~.
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api text="t"| type Lwt_engine.Ev_backend.t >> ~[<<a_api | module Lwt_engine.Ev_backend >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="t"| type Lwt_timeout.t >> ~[<<a_api | module Lwt_timeout >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="t"| type Lwt_throttle.S.t >> ~[<<a_api | module Lwt_throttle.S >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="t"| type Lwt_log_core.Section.t >> ~[<<a_api | module Lwt_log_core.Section >>~]||

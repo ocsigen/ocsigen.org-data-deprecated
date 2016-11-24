@@ -332,6 +332,7 @@
 |
 |@@class="odocwiki_index"@ @@<<a_api text="debug"| value Lwt_log_core.debug >> ~[<<a_api | module Lwt_log_core >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="debug_f"| value Lwt_log_core.debug_f >> ~[<<a_api | module Lwt_log_core >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="default"| value Lwt_engine.Ev_backend.default >> ~[<<a_api | module Lwt_engine.Ev_backend >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="default"| value Lwt_log_core.default >> ~[<<a_api | module Lwt_log_core >>~]|<<div class="odocwiki_info"|~The default logger~.
 >>
 |
@@ -348,6 +349,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="detach"| value Lwt_preemptive.detach >> ~[<<a_api | module Lwt_preemptive >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|detach f x>> runs the computation <<span class="odocwiki_inlinecode"|f x>> in a separate preemptive thread~.
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api text="devpoll"| value Lwt_engine.Ev_backend.devpoll >> ~[<<a_api | module Lwt_engine.Ev_backend >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="diff_s"| value Lwt_react.S.diff_s >> ~[<<a_api | module Lwt_react.S >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="diff_s"| value Lwt_react.E.diff_s >> ~[<<a_api | module Lwt_react.E >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="direct_access"| value Lwt_io.direct_access >> ~[<<a_api | module Lwt_io >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|direct~_access ch f>> passes to <<span class="odocwiki_inlinecode"|f>> a <<a_api | val Lwt_io.direct_access >>
@@ -376,6 +378,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="enter_iter_hooks"| value Lwt_main.enter_iter_hooks >> ~[<<a_api | module Lwt_main >>~]|<<div class="odocwiki_info"|~Functions that are called before the main iteration~.
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api text="epoll"| value Lwt_engine.Ev_backend.epoll >> ~[<<a_api | module Lwt_engine.Ev_backend >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="eprint"| value Lwt_io.eprint >> ~[<<a_api | module Lwt_io >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="eprintf"| value Lwt_io.eprintf >> ~[<<a_api | module Lwt_io >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="eprintl"| value Lwt_io.eprintl >> ~[<<a_api | module Lwt_io >>~]||
@@ -864,6 +867,7 @@
         collected~.
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api text="kqueue"| value Lwt_engine.Ev_backend.kqueue >> ~[<<a_api | module Lwt_engine.Ev_backend >>~]||
 |@@ @style="tet-align: left;"@@\\L|
 |@@class="odocwiki_index"@ @@<<a_api text="l1_s"| value Lwt_react.S.l1_s >> ~[<<a_api | module Lwt_react.S >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="l2_s"| value Lwt_react.S.l2_s >> ~[<<a_api | module Lwt_react.S >>~]||
@@ -1257,12 +1261,15 @@
 |@@class="odocwiki_index"@ @@<<a_api text="pmap_chars"| value Lwt_process.pmap_chars >> ~[<<a_api | module Lwt_process >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="pmap_line"| value Lwt_process.pmap_line >> ~[<<a_api | module Lwt_process >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="pmap_lines"| value Lwt_process.pmap_lines >> ~[<<a_api | module Lwt_process >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="poll"| value Lwt_engine.Ev_backend.poll >> ~[<<a_api | module Lwt_engine.Ev_backend >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="pool_size"| value Lwt_unix.pool_size >> ~[<<a_api | module Lwt_unix >>~]|<<div class="odocwiki_info"|~Maximum number of system threads that can be started~.
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api text="port"| value Lwt_engine.Ev_backend.port >> ~[<<a_api | module Lwt_engine.Ev_backend >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="position"| value Lwt_io.position >> ~[<<a_api | module Lwt_io >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|position ch>> ~Returns the current position in the channel~.
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api text="pp"| value Lwt_engine.Ev_backend.pp >> ~[<<a_api | module Lwt_engine.Ev_backend >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="pread"| value Lwt_process.pread >> ~[<<a_api | module Lwt_process >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="pread_chars"| value Lwt_process.pread_chars >> ~[<<a_api | module Lwt_process >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="pread_line"| value Lwt_process.pread_line >> ~[<<a_api | module Lwt_process >>~]||
@@ -1488,6 +1495,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="run_s"| value Lwt_react.E.run_s >> ~[<<a_api | module Lwt_react.E >>~]||
 |@@ @style="tet-align: left;"@@\\S|
 |@@class="odocwiki_index"@ @@<<a_api text="sample_s"| value Lwt_react.S.sample_s >> ~[<<a_api | module Lwt_react.S >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="select"| value Lwt_engine.Ev_backend.select >> ~[<<a_api | module Lwt_engine.Ev_backend >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="send"| value Lwt_bytes.send >> ~[<<a_api | module Lwt_bytes >>~]|<<div class="odocwiki_info"|~Not implemented on ~Windows~.
 >>
 |
