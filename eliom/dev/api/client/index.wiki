@@ -44,6 +44,15 @@
 |<<a_api subproject="client" | module Eliom_service >>|<<div class="odocwiki_info"|~Creation and manipulation of ~Eliom services~.
 >>
 |
+|<<a_api subproject="client" | module Eliom_shared >>|<<div class="odocwiki_info"|~This module implements shared ~(i~.e~.~, client~-server~) versions of
+    the ~React and ~Reactive~Data libraries~.
+>>
+|
+|<<a_api subproject="client" | module Eliom_cscache >>|<<div class="odocwiki_info"|~Client~-server cache for ~Eliom applications~, that is used both for
+    keeping data on client side or keeping values in memory during a
+    request~.
+>>
+|
 |<<a_api subproject="client" | module Eliom_bus >>|<<div class="odocwiki_info"|~Broadcasting facilities between clients and server~.
 >>
 |
@@ -51,10 +60,6 @@
 >>
 |
 |<<a_api subproject="client" | module Eliom_react >>|<<div class="odocwiki_info"|~Client side type declarations for ~React event propagation~.
->>
-|
-|<<a_api subproject="client" | module Eliom_shared >>|<<div class="odocwiki_info"|~This module implements shared ~(i~.e~.~, client~-server~) versions of
-    the ~React and ~Reactive~Data libraries~.
 >>
 |
 

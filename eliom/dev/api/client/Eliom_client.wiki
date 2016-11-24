@@ -13,8 +13,9 @@
     base ~U~R~L of the server side of your application~.
 
 
-    ~Alternatively~, and to make sure it is done early enough~, define a
-    ~J~S variable called <<span class="odocwiki_inlinecode"|~_~_eliom~_server>> at the beginning of your html
+    ~Alternatively~, and to make sure it is done early enough~, define
+    ~J~S variables called <<span class="odocwiki_inlinecode"|~_~_eliom~_server>> and <<span class="odocwiki_inlinecode"|~_~_eliom~_app~_name>>
+    at the beginning of your html
     file~, containing the full ~U~R~L of your server~.
 >>
 <<pre id="VALis_client_app" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|is~_client~_app>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|unit <<span class="ocsforge_color_delimiter"| -> >> bool>>>><<div class="odocwiki_info"|~Returns whether the application is sent by a server or started on

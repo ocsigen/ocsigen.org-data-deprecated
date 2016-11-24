@@ -24,10 +24,12 @@
 ===[[server/Eliom_registration.Any|Eliom_registration.Any]]
 ===[[server/Eliom_registration.Redirection|Eliom_registration.Redirection]]
 ==~Client~/server communication
+===[[server/Eliom_shared|Eliom_shared]]
+===[[server/Eliom_notif|Eliom_notif]]
+===[[server/Eliom_cscache|Eliom_cscache]]
 ===[[server/Eliom_bus|Eliom_bus]]
 ===[[server/Eliom_comet|Eliom_comet]]
 ===[[server/Eliom_react|Eliom_react]]
-===[[server/Eliom_shared|Eliom_shared]]
 ==~Extensions
 ===[[server/Eliom_atom|Eliom_atom]]
 ===[[server/Atom_feed|Atom_feed]]
