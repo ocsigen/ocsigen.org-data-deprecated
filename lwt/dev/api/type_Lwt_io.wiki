@@ -121,13 +121,6 @@
     Unix.sockaddr ->
     (Lwt_io.input_channel * Lwt_io.output_channel -> 'a Lwt.t) -> 'a Lwt.t
   type server
-  val establish_server_safe :
-    ?fd:Lwt_unix.file_descr ->
-    ?buffer_size:int ->
-    ?backlog:int ->
-    Unix.sockaddr ->
-    (Lwt_io.input_channel * Lwt_io.output_channel -> unit Lwt.t) ->
-    Lwt_io.server
   val establish_server :
     ?fd:Lwt_unix.file_descr ->
     ?buffer_size:int ->
@@ -182,4 +175,21 @@
     'a Lwt_io.channel -> (Lwt_io.direct_access -> 'b Lwt.t) -> 'b Lwt.t
   val default_buffer_size : unit -> int
   val set_default_buffer_size : int -> unit
+  module Versioned :
+    sig
+      val establish_server_1 :
+        ?fd:Lwt_unix.file_descr ->
+        ?buffer_size:int ->
+        ?backlog:int ->
+        Unix.sockaddr ->
+        (Lwt_io.input_channel * Lwt_io.output_channel -> unit) ->
+        Lwt_io.server
+      val establish_server_2 :
+        ?fd:Lwt_unix.file_descr ->
+        ?buffer_size:int ->
+        ?backlog:int ->
+        Unix.sockaddr ->
+        (Lwt_io.input_channel * Lwt_io.output_channel -> unit Lwt.t) ->
+        Lwt_io.server
+    end
 end >>

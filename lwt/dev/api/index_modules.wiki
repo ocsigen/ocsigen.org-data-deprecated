@@ -130,4 +130,7 @@
 |
 |@@ @style="tet-align: left;"@@\\V|
 |@@class="odocwiki_index"@ @@<<a_api text="Versioned"| module Lwt_engine.Versioned >> ~[<<a_api | module Lwt_engine >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="Versioned"| module Lwt_io.Versioned >> ~[<<a_api | module Lwt_io >>~]|<<div class="odocwiki_info"|~Versioned variants of ~A~P~Is undergoing breaking changes~.
+>>
+|
 \\
