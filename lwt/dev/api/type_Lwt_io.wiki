@@ -191,5 +191,7 @@
         Unix.sockaddr ->
         (Lwt_io.input_channel * Lwt_io.output_channel -> unit Lwt.t) ->
         Lwt_io.server
+      val shutdown_server_1 : Lwt_io.server -> unit
+      val shutdown_server_2 : Lwt_io.server -> unit Lwt.t
     end
 end >>

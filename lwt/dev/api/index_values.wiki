@@ -1597,7 +1597,13 @@
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="shutdown"| value Lwt_ssl.shutdown >> ~[<<a_api | module Lwt_ssl >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="shutdown_server"| value Lwt_io.shutdown_server >> ~[<<a_api | module Lwt_io >>~]|<<div class="odocwiki_info"|~Close the given server~'s listening socket~.
+|@@class="odocwiki_index"@ @@<<a_api text="shutdown_server"| value Lwt_io.shutdown_server >> ~[<<a_api | module Lwt_io >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_deprecated"|~Closes the given server~'s listening socket~.
+>>>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="shutdown_server_1"| value Lwt_io.Versioned.shutdown_server_1 >> ~[<<a_api | module Lwt_io.Versioned >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_deprecated"|~Alias for the current <<a_api | val Lwt_io.shutdown_server >>~.
+>>>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="shutdown_server_2"| value Lwt_io.Versioned.shutdown_server_2 >> ~[<<a_api | module Lwt_io.Versioned >>~]|<<div class="odocwiki_info"|~Closes the given server~'s listening socket~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="signal"| value Lwt_condition.signal >> ~[<<a_api | module Lwt_condition >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|signal condvar value>> notifies that a condition is ready~.
