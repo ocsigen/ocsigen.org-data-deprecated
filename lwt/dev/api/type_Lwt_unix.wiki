@@ -65,8 +65,8 @@
     Lwt_unix.open_flag list ->
     Lwt_unix.file_perm -> Lwt_unix.file_descr Lwt.t
   val close : Lwt_unix.file_descr -> unit Lwt.t
-  val read : Lwt_unix.file_descr -> Bytes.t -> int -> int -> int Lwt.t
-  val write : Lwt_unix.file_descr -> Bytes.t -> int -> int -> int Lwt.t
+  val read : Lwt_unix.file_descr -> bytes -> int -> int -> int Lwt.t
+  val write : Lwt_unix.file_descr -> bytes -> int -> int -> int Lwt.t
   val write_string : Lwt_unix.file_descr -> string -> int -> int -> int Lwt.t
   val readable : Lwt_unix.file_descr -> bool
   val writable : Lwt_unix.file_descr -> bool
@@ -243,17 +243,17 @@
   type msg_flag = Unix.msg_flag = MSG_OOB | MSG_DONTROUTE | MSG_PEEK
   val recv :
     Lwt_unix.file_descr ->
-    Bytes.t -> int -> int -> Lwt_unix.msg_flag list -> int Lwt.t
+    bytes -> int -> int -> Lwt_unix.msg_flag list -> int Lwt.t
   val recvfrom :
     Lwt_unix.file_descr ->
-    Bytes.t ->
+    bytes ->
     int -> int -> Lwt_unix.msg_flag list -> (int * Lwt_unix.sockaddr) Lwt.t
   val send :
     Lwt_unix.file_descr ->
-    Bytes.t -> int -> int -> Lwt_unix.msg_flag list -> int Lwt.t
+    bytes -> int -> int -> Lwt_unix.msg_flag list -> int Lwt.t
   val sendto :
     Lwt_unix.file_descr ->
-    Bytes.t ->
+    bytes ->
     int -> int -> Lwt_unix.msg_flag list -> Lwt_unix.sockaddr -> int Lwt.t
   type io_vector = {
     iov_buffer : string;

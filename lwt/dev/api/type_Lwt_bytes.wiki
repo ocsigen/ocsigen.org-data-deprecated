@@ -7,18 +7,18 @@
   val set : Lwt_bytes.t -> int -> char -> unit
   val unsafe_get : Lwt_bytes.t -> int -> char
   val unsafe_set : Lwt_bytes.t -> int -> char -> unit
-  val of_bytes : Bytes.t -> Lwt_bytes.t
+  val of_bytes : bytes -> Lwt_bytes.t
   val of_string : string -> Lwt_bytes.t
-  val to_bytes : Lwt_bytes.t -> Bytes.t
+  val to_bytes : Lwt_bytes.t -> bytes
   val to_string : Lwt_bytes.t -> string
   val blit : Lwt_bytes.t -> int -> Lwt_bytes.t -> int -> int -> unit
-  val blit_from_bytes : Bytes.t -> int -> Lwt_bytes.t -> int -> int -> unit
-  val blit_to_bytes : Lwt_bytes.t -> int -> Bytes.t -> int -> int -> unit
+  val blit_from_bytes : bytes -> int -> Lwt_bytes.t -> int -> int -> unit
+  val blit_to_bytes : Lwt_bytes.t -> int -> bytes -> int -> int -> unit
   val unsafe_blit : Lwt_bytes.t -> int -> Lwt_bytes.t -> int -> int -> unit
   val unsafe_blit_from_bytes :
-    Bytes.t -> int -> Lwt_bytes.t -> int -> int -> unit
+    bytes -> int -> Lwt_bytes.t -> int -> int -> unit
   val unsafe_blit_to_bytes :
-    Lwt_bytes.t -> int -> Bytes.t -> int -> int -> unit
+    Lwt_bytes.t -> int -> bytes -> int -> int -> unit
   val proxy : Lwt_bytes.t -> int -> int -> Lwt_bytes.t
   val extract : Lwt_bytes.t -> int -> int -> Lwt_bytes.t
   val copy : Lwt_bytes.t -> Lwt_bytes.t
