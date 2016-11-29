@@ -1,5 +1,9 @@
 =Index of types=
 
+|@@ @style="tet-align: left;"@@\\|
+|@@class="odocwiki_index"@ @@<<a_api text="_bigarray"| type Lwt_unix.IO_vectors._bigarray >> ~[<<a_api | module Lwt_unix.IO_vectors >>~]|<<div class="odocwiki_info"|~Type abbreviation equivalent to <<a_api | type Lwt_bytes.t >>~.
+>>
+|
 |@@ @style="tet-align: left;"@@\\A|
 |@@class="odocwiki_index"@ @@<<a_api text="access_permission"| type Lwt_unix.access_permission >> ~[<<a_api | module Lwt_unix >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="addr_info"| type Lwt_unix.addr_info >> ~[<<a_api | module Lwt_unix >>~]||
@@ -173,6 +177,9 @@
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="t"| type Lwt_engine.Ev_backend.t >> ~[<<a_api | module Lwt_engine.Ev_backend >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="t"| type Lwt_unix.IO_vectors.t >> ~[<<a_api | module Lwt_unix.IO_vectors >>~]|<<div class="odocwiki_info"|~Mutable sequences of ~I~/~O vectors~.
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api text="t"| type Lwt_timeout.t >> ~[<<a_api | module Lwt_timeout >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="t"| type Lwt_throttle.S.t >> ~[<<a_api | module Lwt_throttle.S >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="t"| type Lwt_log_core.Section.t >> ~[<<a_api | module Lwt_log_core.Section >>~]||

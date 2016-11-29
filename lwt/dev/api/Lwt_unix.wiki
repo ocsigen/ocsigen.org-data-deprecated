@@ -340,6 +340,41 @@
 >>
 <<pre id="VALwrite_string" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|write~_string>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<a_api text="file_descr" | type Lwt_unix.file_descr >> <<span class="ocsforge_color_delimiter"| -> >> string <<span class="ocsforge_color_delimiter"| -> >> int <<span class="ocsforge_color_delimiter"| -> >> int <<span class="ocsforge_color_delimiter"| -> >> int <<a_api text="Lwt.t" | type Lwt.t >>>>>><<div class="odocwiki_info"|~See <<a_api | val Lwt_unix.write >>~.
 >>
+<<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module>> <<a_api text="IO_vectors" | module Lwt_unix.IO_vectors >> <<span class="ocsforge_color_delimiter"|~:>> <<span class="ocsforge_color_keyword"|sig>><<a_api text=".." | module Lwt_unix.IO_vectors >><<span class="ocsforge_color_keyword"|end>>>><<div class="odocwiki_info"|~Sequences of buffer slices for <<a_api | val Lwt_unix.writev >>~.
+>>
+<<pre id="VALwritev" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|writev>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<a_api text="file_descr" | type Lwt_unix.file_descr >> <<span class="ocsforge_color_delimiter"| -> >> <<a_api text="IO_vectors.t" | type Lwt_unix.IO_vectors.t >> <<span class="ocsforge_color_delimiter"| -> >> int <<a_api text="Lwt.t" | type Lwt.t >>>>>><<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|writev fd vs>> writes the bytes in the buffer slices <<span class="odocwiki_inlinecode"|vs>> to the file
+    descriptor <<span class="odocwiki_inlinecode"|fd>>~. ~If the operation completes successfully~, the resulting
+    thread indicates the number of bytes written~.
+
+
+    ~If the ~Unix file descriptor underlying <<span class="odocwiki_inlinecode"|fd>> is in non~-blocking mode~,
+    <<span class="odocwiki_inlinecode"|writev>> does not make a copy the bytes before writing~. ~Otherwise~, it copies
+    <<span class="odocwiki_inlinecode"|bytes>> slices~, but not <<span class="odocwiki_inlinecode"|~Bigarray>> slices~.
+
+
+    ~Note that the returned ~Lwt thread is blocked until failure or a successful
+    write~, even if the underlying descriptor is in non~-blocking mode~. ~See
+    <<a_api | val Lwt_unix.of_unix_file_descr >> for a discussion of non~-blocking ~I~/~O and ~Lwt~.
+
+
+    ~If <<a_api | val Lwt_unix.IO_vectors.system_limit >> is <<span class="odocwiki_inlinecode"|~Some n>> and <<span class="odocwiki_inlinecode"|~I~O~_vectors~.count vs>> exceeds
+    <<span class="odocwiki_inlinecode"|n>>~, then <<span class="odocwiki_inlinecode"|~Lwt~_unix~.writev>> passes only the first <<span class="odocwiki_inlinecode"|n>> slices in <<span class="odocwiki_inlinecode"|vs>> to the
+    underlying <<span class="odocwiki_inlinecode"|writev>> system call~.
+
+
+    ~Not implemented on ~Windows~. ~It should be possible to implement~, upon
+    request~, for ~Windows sockets only~.
+
+
+    ~The behavior of <<span class="odocwiki_inlinecode"|writev>> when <<span class="odocwiki_inlinecode"|vs>> has zero slices depends on the system~,
+    and may change in future versions of ~Lwt~. ~On ~Linux~, <<span class="odocwiki_inlinecode"|writev>> will succeed
+    and write zero bytes~. ~On ~B~S~D ~(including mac~O~S~)~, <<span class="odocwiki_inlinecode"|writev>> will fail with
+    <<span class="odocwiki_inlinecode"|~Unix~.~Unix~_error ~(~Unix~.~E~I~N~V~A~L~, "writev"~, ~.~.~.~)>>~.
+
+
+    ~See [[http://man7.org/linux/man-pages/man3/writev.3p.html|
+    <<span class="odocwiki_inlinecode"|writev~(~3p~)>>]]~.
+>>
 <<pre id="VALreadable" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|readable>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<a_api text="file_descr" | type Lwt_unix.file_descr >> <<span class="ocsforge_color_delimiter"| -> >> bool>>>><<div class="odocwiki_info"|~Returns whether the given file descriptor is currently
       readable~.
 >>

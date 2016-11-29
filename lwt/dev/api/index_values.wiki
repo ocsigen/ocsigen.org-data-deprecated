@@ -100,6 +100,16 @@
       <<span class="odocwiki_inlinecode"|s~1>>~, then all elements of <<span class="odocwiki_inlinecode"|s~2>>
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api text="append_bigarray"| value Lwt_unix.IO_vectors.append_bigarray >> ~[<<a_api | module Lwt_unix.IO_vectors >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|append~_bigarray vs buffer offset length>> appends a slice of the
+      <<span class="odocwiki_inlinecode"|~Bigarray>> buffer <<span class="odocwiki_inlinecode"|buffer>> beginning at <<span class="odocwiki_inlinecode"|offset>> and with length <<span class="odocwiki_inlinecode"|length>>
+      to the ~I~/~O vector sequence <<span class="odocwiki_inlinecode"|vs>>~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="append_bytes"| value Lwt_unix.IO_vectors.append_bytes >> ~[<<a_api | module Lwt_unix.IO_vectors >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|append~_bytes vs buffer offset length>> appends a slice of the <<span class="odocwiki_inlinecode"|bytes>>
+      buffer <<span class="odocwiki_inlinecode"|buffer>> beginning at <<span class="odocwiki_inlinecode"|offset>> and with length <<span class="odocwiki_inlinecode"|length>> to the
+      ~I~/~O vector sequence <<span class="odocwiki_inlinecode"|vs>>~.
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api text="append_rule"| value Lwt_log_core.append_rule >> ~[<<a_api | module Lwt_log_core >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|append~_rule pattern level>> adds the given rule after all other
       rules~.
 >>
@@ -288,6 +298,9 @@
 |@@class="odocwiki_index"@ @@<<a_api text="create"| value Lwt_bytes.create >> ~[<<a_api | module Lwt_bytes >>~]|<<div class="odocwiki_info"|~Creates a new byte array of the given size~.
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api text="create"| value Lwt_unix.IO_vectors.create >> ~[<<a_api | module Lwt_unix.IO_vectors >>~]|<<div class="odocwiki_info"|~Creates an empty ~I~/~O vector sequence~.
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api text="create"| value Lwt_timeout.create >> ~[<<a_api | module Lwt_timeout >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|create n f>> defines a new timeout with <<span class="odocwiki_inlinecode"|n>> seconds duration~.
 >>
 |
@@ -361,6 +374,10 @@
 |
 |@@class="odocwiki_index"@ @@<<a_api text="dispatch"| value Lwt_log_core.dispatch >> ~[<<a_api | module Lwt_log_core >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|dispatch f>> is a logger which dispatch logging instructions to
       different logger according to their level and~/or section~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="drop"| value Lwt_unix.IO_vectors.drop >> ~[<<a_api | module Lwt_unix.IO_vectors >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|drop vs n>> adjusts the ~I~/~O vector sequence <<span class="odocwiki_inlinecode"|vs>> so that it no longer
+      includes its first <<span class="odocwiki_inlinecode"|n>> bytes~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="dup"| value Lwt_unix.dup >> ~[<<a_api | module Lwt_unix >>~]|<<div class="odocwiki_info"|~Wrapper for <<span class="odocwiki_inlinecode"|~Unix~.dup>>
@@ -787,6 +804,10 @@
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="is_closed"| value Lwt_stream.is_closed >> ~[<<a_api | module Lwt_stream >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|is~_closed st>> returns whether the given stream has been closed~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="is_empty"| value Lwt_unix.IO_vectors.is_empty >> ~[<<a_api | module Lwt_unix.IO_vectors >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|is~_empty vs>> is <<span class="odocwiki_inlinecode"|true>> if and only if <<span class="odocwiki_inlinecode"|vs>> has no ~I~/~O vectors~, or all ~I~/~O
+      vectors in <<span class="odocwiki_inlinecode"|vs>> have zero bytes~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="is_empty"| value Lwt_pqueue.S.is_empty >> ~[<<a_api | module Lwt_pqueue.S >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|is~_empty q>> evaluates to <<span class="odocwiki_inlinecode"|true>> iff <<span class="odocwiki_inlinecode"|q>> is empty~.
@@ -1702,6 +1723,10 @@
 |@@class="odocwiki_index"@ @@<<a_api text="system_byte_order"| value Lwt_io.system_byte_order >> ~[<<a_api | module Lwt_io >>~]|<<div class="odocwiki_info"|~Same as <<a_api | val Lwt_sys.byte_order >>~.
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api text="system_limit"| value Lwt_unix.IO_vectors.system_limit >> ~[<<a_api | module Lwt_unix.IO_vectors >>~]|<<div class="odocwiki_info"|~Some systems limit the number of ~I~/~O vectors that can be passed in a
+      single call to their <<span class="odocwiki_inlinecode"|writev>> or <<span class="odocwiki_inlinecode"|readv>> system calls~.
+>>
+|
 |@@ @style="tet-align: left;"@@\\T|
 |@@class="odocwiki_index"@ @@<<a_api text="take"| value Lwt_mvar.take >> ~[<<a_api | module Lwt_mvar >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|take mvar>> will take any currently available value from the
       mailbox variable~.
@@ -2048,6 +2073,10 @@
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="write_value"| value Lwt_io.write_value >> ~[<<a_api | module Lwt_io >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|write~_value oc ~?flags x>> marshals the value <<span class="odocwiki_inlinecode"|x>> to <<span class="odocwiki_inlinecode"|oc>>
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="writev"| value Lwt_unix.writev >> ~[<<a_api | module Lwt_unix >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|writev fd vs>> writes the bytes in the buffer slices <<span class="odocwiki_inlinecode"|vs>> to the file
+    descriptor <<span class="odocwiki_inlinecode"|fd>>~.
 >>
 |
 |@@ @style="tet-align: left;"@@\\Y|
