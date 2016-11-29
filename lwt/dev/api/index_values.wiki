@@ -1192,7 +1192,7 @@
       failing~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api text="on_terminate"| value Lwt_stream.on_terminate >> ~[<<a_api | module Lwt_stream >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_deprecated"|~Same as <<span class="odocwiki_inlinecode"|on~_termination>>~.
+|@@class="odocwiki_index"@ @@<<a_api text="on_terminate"| value Lwt_stream.on_terminate >> ~[<<a_api | module Lwt_stream >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_deprecated"|~Same as <<a_api | val Lwt_stream.on_termination >>~.
 >>>>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="on_termination"| value Lwt_stream.on_termination >> ~[<<a_api | module Lwt_stream >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_deprecated"|<<span class="odocwiki_inlinecode"|on~_termination st f>> executes <<span class="odocwiki_inlinecode"|f>> when the end of the stream <<span class="odocwiki_inlinecode"|st>>
