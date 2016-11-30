@@ -746,7 +746,7 @@
       return i}
     function caml_int64_bits_of_float(x)
      {if(!isFinite(x))
-       {if(isNaN(x))return [255,1,0,65520];
+       {if(isNaN(x))return [255,1,0,32752];
         return x > 0?[255,0,0,32752]:[255,0,0,65520]}
       var sign=x == 0 && 1 / x == -Infinity?32768:x >= 0?0:32768;
       if(sign)x = -x;
