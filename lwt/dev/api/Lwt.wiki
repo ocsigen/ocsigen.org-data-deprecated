@@ -111,6 +111,10 @@
 >>
 <<pre id="VALwith_value" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|with~_value>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|'a <<a_api text="key" | type Lwt.key >> <<span class="ocsforge_color_delimiter"| -> >> 'a option <<span class="ocsforge_color_delimiter"| -> >> <<span class="ocsforge_color_delimiter"| ( >>unit <<span class="ocsforge_color_delimiter"| -> >> 'b<<span class="ocsforge_color_delimiter"| ) >> <<span class="ocsforge_color_delimiter"| -> >> 'b>>>><<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|with~_value key value f>> executes <<span class="odocwiki_inlinecode"|f>> with <<span class="odocwiki_inlinecode"|value>> associated to
       <<span class="odocwiki_inlinecode"|key>>~. <<span class="odocwiki_inlinecode"|key>> is restored to its previous value after <<span class="odocwiki_inlinecode"|f>> terminates~.
+
+
+      ~This function should not be applied within threads created with
+      <<a_api | val Lwt_preemptive.detach >>~.
 >>
 
 
