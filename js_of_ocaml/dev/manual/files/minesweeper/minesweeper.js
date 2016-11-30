@@ -972,10 +972,10 @@
           break}}
       return res}
     caml_set_oo_id([248,_f_,0]);
-    function _g_(l$0)
-     {var l1=l$0,l2=0;
+    function _g_(l)
+     {var l1=l,l2=0;
       for(;;)
-       {if(l1){var l=l1[2],a=l1[1],l2$0=[0,a,l2],l1=l,l2=l2$0;continue}
+       {if(l1){var l1$0=l1[2],a=l1[1],l2$0=[0,a,l2],l1=l1$0,l2=l2$0;continue}
         return l2}}
     function _h_(f,param)
      {var param$0=param;
@@ -1614,7 +1614,7 @@
       _C_(main,createBr(doc));
       _C_(main,int_input(_Z_,nbm));
       _C_(main,createBr(doc));
-      function callback(param$3)
+      function callback(param$5)
        {var div=unsafeCreateElement(doc,_E_);
         _C_(main,div);
         var
@@ -1624,24 +1624,24 @@
          nbr$0=max(_J_[2],_aC_),
          nbm$0=min(caml_mul(nbc$0,nbr$0),max(1,_aB_)),
          cf=[0,nbc$0,nbr$0,nbm$0],
-         t$0=caml_sys_time(0),
-         n$0=t$0 * 1e3 | 0,
+         t=caml_sys_time(0),
+         n$0=t * 1e3 | 0,
          seed$1=n$0 % 1e5 | 0,
          seed$0=[0,seed$1],
          seed=0 === seed$0.length - 1?[0,0]:seed$0,
-         l$1=seed.length - 1,
+         l$0=seed.length - 1,
          i$2=0;
         for(;;)
          {caml_check_bound(s$1[1],i$2)[i$2 + 1] = i$2;
           var _ai_=i$2 + 1 | 0;
           if(54 !== i$2){var i$2=_ai_;continue}
-          var accu$1=[0,_o_],_ae_=54 + max(55,l$1) | 0,_ad_=0;
+          var accu$1=[0,_o_],_ae_=54 + max(55,l$0) | 0,_ad_=0;
           if(!(_ae_ < 0))
            {var i$1=_ad_;
             for(;;)
              {var
                j=i$1 % 55 | 0,
-               k=caml_mod(i$1,l$1),
+               k=caml_mod(i$1,l$0),
                x=caml_check_bound(seed,k)[k + 1],
                str=_b_(accu$1[1],caml_new_string("" + x));
               accu$1[1] = caml_md5_string(str,0,caml_ml_string_length(str));
@@ -1673,10 +1673,14 @@
            _ao_=cf[3];
           a:
           for(;;)
-           {var len=0,param$1=cell_list[1];
+           {var len=0,param$2=cell_list[1];
             for(;;)
-             {if(param$1)
-               {var l=param$1[2],len$0=len + 1 | 0,len=len$0,param$1=l;
+             {if(param$2)
+               {var
+                 param$3=param$2[2],
+                 len$0=len + 1 | 0,
+                 len=len$0,
+                 param$2=param$3;
                 continue}
               if(len < _ao_)
                {if(1073741823 < lc)
@@ -1705,14 +1709,14 @@
                  else
                   var switch$0=0;
                 if(!switch$0)var n=invalid_arg(_p_);
-                var param$2=cell_list[1];
+                var param$4=cell_list[1];
                 for(;;)
-                 {if(param$2)
+                 {if(param$4)
                    {var
-                     l$0=param$2[2],
-                     a$0=param$2[1],
+                     l=param$4[2],
+                     a$0=param$4[1],
                      ___=0 === caml_compare(a$0,n)?1:0;
-                    if(!___){var param$2=l$0;continue}
+                    if(!___){var param$4=l;continue}
                     var _am_=___}
                   else
                    var _am_=0;
@@ -1922,19 +1926,23 @@
                       if(_ax_ !== i$3){var i$3=_aA_;continue}
                       break}}
                   _C_(buf,createBr(_I_));
-                  var l$2=_g_(imgs[1]);
-                  if(l$2)
-                   {var tl=l$2[2],hd=l$2[1],accu=0,param=l$2;
+                  var l$1=_g_(imgs[1]);
+                  if(l$1)
+                   {var tl=l$1[2],hd=l$1[1],accu=0,param=l$1;
                     for(;;)
                      {if(param)
-                       {var t=param[2],accu$0=accu + 1 | 0,accu=accu$0,param=t;
+                       {var
+                         param$0=param[2],
+                         accu$0=accu + 1 | 0,
+                         accu=accu$0,
+                         param=param$0;
                         continue}
-                      var a=caml_make_vect(accu,hd),i=1,param$0=tl;
+                      var a=caml_make_vect(accu,hd),i=1,param$1=tl;
                       for(;;)
-                       {if(param$0)
-                         {var tl$0=param$0[2],hd$0=param$0[1];
+                       {if(param$1)
+                         {var tl$0=param$1[2],hd$0=param$1[1];
                           a[i + 1] = hd$0;
-                          var i$0=i + 1 | 0,i=i$0,param$0=tl$0;
+                          var i$0=i + 1 | 0,i=i$0,param$1=tl$0;
                           continue}
                         var _ay_=a;
                         break}
