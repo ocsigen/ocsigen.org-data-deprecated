@@ -44,9 +44,7 @@
 |<<a_api subproject="server" | module Os_platform >>|<<div class="odocwiki_info"|~About device platform~.
 >>
 |
-|<<a_api subproject="server" | module Os_push_notifications >>|<<div class="odocwiki_info"|~Send push notifications to ~Android and i~O~S mobile devices~.
->>
-|
+|Os_push_notifications||
 |<<a_api subproject="server" | module Os_request_cache >>|<<div class="odocwiki_info"|~Caching request data to avoid doing the same computation several times
     during the same request~.
 >>

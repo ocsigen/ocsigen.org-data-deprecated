@@ -1,12 +1,12 @@
 =Index of modules=
 
 |@@ @style="tet-align: left;"@@\\A|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Action"| module Os_push_notifications.Data.PhoneGap.Action >> ~[<<a_api subproject="server" | module Os_push_notifications.Data.PhoneGap >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Action"| module Os_fcm_notif.Data.PhoneGap.Action >> ~[<<a_api subproject="server" | module Os_fcm_notif.Data.PhoneGap >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Action_link_key"| module Os_types.Action_link_key >> ~[<<a_api subproject="server" | module Os_types >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Android"| module Os_push_notifications.Notification.Android >> ~[<<a_api subproject="server" | module Os_push_notifications.Notification >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Android"| module Os_fcm_notif.Notification.Android >> ~[<<a_api subproject="server" | module Os_fcm_notif.Notification >>~]||
 |@@ @style="tet-align: left;"@@\\D|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="D"| module Os_icons.D >> ~[<<a_api subproject="server" | module Os_icons >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Data"| module Os_push_notifications.Data >> ~[<<a_api subproject="server" | module Os_push_notifications >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Data"| module Os_fcm_notif.Data >> ~[<<a_api subproject="server" | module Os_fcm_notif >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Default_config"| module Os_page.Default_config >> ~[<<a_api subproject="server" | module Os_page >>~]|<<div class="odocwiki_info"|~A default configuration for pages~.
 >>
 |
@@ -26,7 +26,7 @@
 >>
 |
 |@@ @style="tet-align: left;"@@\\I|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Ios"| module Os_push_notifications.Notification.Ios >> ~[<<a_api subproject="server" | module Os_push_notifications.Notification >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Ios"| module Os_fcm_notif.Notification.Ios >> ~[<<a_api subproject="server" | module Os_fcm_notif.Notification >>~]||
 |@@ @style="tet-align: left;"@@\\M|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Make"| module Os_request_cache.Make >> ~[<<a_api subproject="server" | module Os_request_cache >>~]|<<div class="odocwiki_info"|~Functor which creates a module <<a_api subproject="server" | module type Os_request_cache.Cache_sig >>~.
 >>
@@ -36,7 +36,7 @@
 >>
 |
 |@@ @style="tet-align: left;"@@\\N|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Notification"| module Os_push_notifications.Notification >> ~[<<a_api subproject="server" | module Os_push_notifications >>~]|<<div class="odocwiki_info"|~This module provides an interface to create the ~J~S~O~N for the notification
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Notification"| module Os_fcm_notif.Notification >> ~[<<a_api subproject="server" | module Os_fcm_notif >>~]|<<div class="odocwiki_info"|~This module provides an interface to create the ~J~S~O~N for the notification
     key~.
 >>
 |
@@ -46,7 +46,7 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Opt"| module Os_current_user.Opt >> ~[<<a_api subproject="server" | module Os_current_user >>~]|<<div class="odocwiki_info"|~Instead of exception~, the module <<span class="odocwiki_inlinecode"|~Opt>> returns an option~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Options"| module Os_push_notifications.Options >> ~[<<a_api subproject="server" | module Os_push_notifications >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Options"| module Os_fcm_notif.Options >> ~[<<a_api subproject="server" | module Os_fcm_notif >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Os_comet"| module Os_comet >> |<<div class="odocwiki_info"|~This module provides function to monitor communications between the server
     clients~.
 >>
@@ -62,6 +62,9 @@
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Os_email"| module Os_email >> |<<div class="odocwiki_info"|~Basic module for sending e~-mail messages to users~,
     using some local sendmail program~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Os_fcm_notif"| module Os_fcm_notif >> |<<div class="odocwiki_info"|~Send push notifications to ~Android and i~O~S mobile devices~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Os_group"| module Os_group >> |<<div class="odocwiki_info"|~Groups of users~.
@@ -88,9 +91,6 @@
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Os_platform"| module Os_platform >> |<<div class="odocwiki_info"|~About device platform~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Os_push_notifications"| module Os_push_notifications >> |<<div class="odocwiki_info"|~Send push notifications to ~Android and i~O~S mobile devices~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Os_request_cache"| module Os_request_cache >> |<<div class="odocwiki_info"|~Caching request data to avoid doing the same computation several times
@@ -132,18 +132,18 @@
 |
 |@@ @style="tet-align: left;"@@\\P|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="PGOCaml"| module Os_db.PGOCaml >> ~[<<a_api subproject="server" | module Os_db >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="PhoneGap"| module Os_push_notifications.Data.PhoneGap >> ~[<<a_api subproject="server" | module Os_push_notifications.Data >>~]|<<div class="odocwiki_info"|~The ~Cordova plugin phonegap~-plugin~-push interprets some payloads defined
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="PhoneGap"| module Os_fcm_notif.Data.PhoneGap >> ~[<<a_api subproject="server" | module Os_fcm_notif.Data >>~]|<<div class="odocwiki_info"|~The ~Cordova plugin phonegap~-plugin~-push interprets some payloads defined
         in the data key~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Priority"| module Os_push_notifications.Options.Priority >> ~[<<a_api subproject="server" | module Os_push_notifications.Options >>~]|<<div class="odocwiki_info"|~This modules defines a type for priorities for the notifications~.
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Priority"| module Os_fcm_notif.Options.Priority >> ~[<<a_api subproject="server" | module Os_fcm_notif.Options >>~]|<<div class="odocwiki_info"|~This modules defines a type for priorities for the notifications~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Priority"| module Os_push_notifications.Data.PhoneGap.Priority >> ~[<<a_api subproject="server" | module Os_push_notifications.Data.PhoneGap >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Priority"| module Os_fcm_notif.Data.PhoneGap.Priority >> ~[<<a_api subproject="server" | module Os_fcm_notif.Data.PhoneGap >>~]||
 |@@ @style="tet-align: left;"@@\\R|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Register"| module Os_icons.Register >> ~[<<a_api subproject="server" | module Os_icons >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Response"| module Os_push_notifications.Response >> ~[<<a_api subproject="server" | module Os_push_notifications >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Results"| module Os_push_notifications.Response.Results >> ~[<<a_api subproject="server" | module Os_push_notifications.Response >>~]|<<div class="odocwiki_info"|~The type representing a ~F~C~M response
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Response"| module Os_fcm_notif.Response >> ~[<<a_api subproject="server" | module Os_fcm_notif >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Results"| module Os_fcm_notif.Response.Results >> ~[<<a_api subproject="server" | module Os_fcm_notif.Response >>~]|<<div class="odocwiki_info"|~The type representing a ~F~C~M response
 >>
 |
 |@@ @style="tet-align: left;"@@\\S|
@@ -152,12 +152,12 @@
     set~-up~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Style"| module Os_push_notifications.Data.PhoneGap.Style >> ~[<<a_api subproject="server" | module Os_push_notifications.Data.PhoneGap >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Style"| module Os_fcm_notif.Data.PhoneGap.Style >> ~[<<a_api subproject="server" | module Os_fcm_notif.Data.PhoneGap >>~]||
 |@@ @style="tet-align: left;"@@\\U|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="User"| module Os_types.User >> ~[<<a_api subproject="server" | module Os_types >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="User"| module Os_db.User >> ~[<<a_api subproject="server" | module Os_db >>~]|<<div class="odocwiki_info"|~This module is used for low~-level user management with database~.
 >>
 |
 |@@ @style="tet-align: left;"@@\\V|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Visibility"| module Os_push_notifications.Data.PhoneGap.Visibility >> ~[<<a_api subproject="server" | module Os_push_notifications.Data.PhoneGap >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Visibility"| module Os_fcm_notif.Data.PhoneGap.Visibility >> ~[<<a_api subproject="server" | module Os_fcm_notif.Data.PhoneGap >>~]||
 \\

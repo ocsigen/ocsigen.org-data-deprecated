@@ -1,6 +1,0 @@
-<<code language="ocaml" | sig
-  val add_badge :
-    int ->
-    Os_push_notifications.Notification.t ->
-    Os_push_notifications.Notification.t
-end >>

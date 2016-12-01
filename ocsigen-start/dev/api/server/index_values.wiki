@@ -25,41 +25,41 @@
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="add_actionlinkkey"| value Os_db.User.add_actionlinkkey >> ~[<<a_api subproject="server" | module Os_db.User >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="add_actions"| value Os_push_notifications.Data.PhoneGap.add_actions >> ~[<<a_api subproject="server" | module Os_push_notifications.Data.PhoneGap >>~]|<<div class="odocwiki_info"|~Add two buttons with an action ~(created with <<a_api subproject="server" | val Os_push_notifications.Data.PhoneGap.Action.create >>~)~.
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="add_actions"| value Os_fcm_notif.Data.PhoneGap.add_actions >> ~[<<a_api subproject="server" | module Os_fcm_notif.Data.PhoneGap >>~]|<<div class="odocwiki_info"|~Add two buttons with an action ~(created with <<a_api subproject="server" | val Os_fcm_notif.Data.PhoneGap.Action.create >>~)~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="add_badge"| value Os_push_notifications.Data.PhoneGap.add_badge >> ~[<<a_api subproject="server" | module Os_push_notifications.Data.PhoneGap >>~]|<<div class="odocwiki_info"|~Add a badge to the icon of the notification in the launcher~.
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="add_badge"| value Os_fcm_notif.Data.PhoneGap.add_badge >> ~[<<a_api subproject="server" | module Os_fcm_notif.Data.PhoneGap >>~]|<<div class="odocwiki_info"|~Add a badge to the icon of the notification in the launcher~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="add_badge"| value Os_push_notifications.Notification.Ios.add_badge >> ~[<<a_api subproject="server" | module Os_push_notifications.Notification.Ios >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|add~_badge nb~_badge notification>> indicates the badge on the client
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="add_badge"| value Os_fcm_notif.Notification.Ios.add_badge >> ~[<<a_api subproject="server" | module Os_fcm_notif.Notification.Ios >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|add~_badge nb~_badge notification>> indicates the badge on the client
             app home icon~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="add_body"| value Os_push_notifications.Notification.add_body >> ~[<<a_api subproject="server" | module Os_push_notifications.Notification >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|add~_body body notification>> adds a body to the notification
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="add_body"| value Os_fcm_notif.Notification.add_body >> ~[<<a_api subproject="server" | module Os_fcm_notif.Notification >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|add~_body body notification>> adds a body to the notification
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="add_click_action"| value Os_push_notifications.Notification.add_click_action >> ~[<<a_api subproject="server" | module Os_push_notifications.Notification >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|add~_click~_action activity notification>> adds an action when the user
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="add_click_action"| value Os_fcm_notif.Notification.add_click_action >> ~[<<a_api subproject="server" | module Os_fcm_notif.Notification >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|add~_click~_action activity notification>> adds an action when the user
         taps on the notification~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="add_collapse_key"| value Os_push_notifications.Options.add_collapse_key >> ~[<<a_api subproject="server" | module Os_push_notifications.Options >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|add~_collapse~_key collapse~_key options>> identifies a group of
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="add_collapse_key"| value Os_fcm_notif.Options.add_collapse_key >> ~[<<a_api subproject="server" | module Os_fcm_notif.Options >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|add~_collapse~_key collapse~_key options>> identifies a group of
         messages ~(e~.g~.~, with collapse~_key~: "~Updates ~Available"~) that can be
         collapsed~, so that only the last message gets sent when delivery can be
         resumed~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="add_color"| value Os_push_notifications.Notification.Android.add_color >> ~[<<a_api subproject="server" | module Os_push_notifications.Notification.Android >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|add~_color ~~red ~~green ~~blue notification>> indicates color of the icon~,
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="add_color"| value Os_fcm_notif.Notification.Android.add_color >> ~[<<a_api subproject="server" | module Os_fcm_notif.Notification.Android >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|add~_color ~~red ~~green ~~blue notification>> indicates color of the icon~,
             expressed in ~#rrggbb format~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="add_condition"| value Os_push_notifications.Options.add_condition >> ~[<<a_api subproject="server" | module Os_push_notifications.Options >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|add~_condition condition options>> specifies a logical expression of
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="add_condition"| value Os_fcm_notif.Options.add_condition >> ~[<<a_api subproject="server" | module Os_fcm_notif.Options >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|add~_condition condition options>> specifies a logical expression of
         conditions that determine the message target~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="add_content_available"| value Os_push_notifications.Options.add_content_available >> ~[<<a_api subproject="server" | module Os_push_notifications.Options >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|add~_content~_available value options>>~.
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="add_content_available"| value Os_fcm_notif.Options.add_content_available >> ~[<<a_api subproject="server" | module Os_fcm_notif.Options >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|add~_content~_available value options>>~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="add_dry_run"| value Os_push_notifications.Options.add_dry_run >> ~[<<a_api subproject="server" | module Os_push_notifications.Options >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|add~_dry~_run value options>>~.
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="add_dry_run"| value Os_fcm_notif.Options.add_dry_run >> ~[<<a_api subproject="server" | module Os_fcm_notif.Options >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|add~_dry~_run value options>>~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="add_email_handler"| value Os_handlers.add_email_handler >> ~[<<a_api subproject="server" | module Os_handlers >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|add~_email~_handler ~(~) email>> adds the email~.
@@ -71,25 +71,25 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="add_email_to_user"| value Os_db.User.add_email_to_user >> ~[<<a_api subproject="server" | module Os_db.User >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|add~_email~_to~_user ~~userid ~~email>> add <<span class="odocwiki_inlinecode"|email>> to user with ~I~D <<span class="odocwiki_inlinecode"|userid>>~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="add_icon"| value Os_push_notifications.Notification.Android.add_icon >> ~[<<a_api subproject="server" | module Os_push_notifications.Notification.Android >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|add~_icon icon notification>> indicates notification icon~.
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="add_icon"| value Os_fcm_notif.Notification.Android.add_icon >> ~[<<a_api subproject="server" | module Os_fcm_notif.Notification.Android >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|add~_icon icon notification>> indicates notification icon~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="add_image"| value Os_push_notifications.Data.PhoneGap.add_image >> ~[<<a_api subproject="server" | module Os_push_notifications.Data.PhoneGap >>~]|<<div class="odocwiki_info"|~Add an image to the push notification in the notification area
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="add_image"| value Os_fcm_notif.Data.PhoneGap.add_image >> ~[<<a_api subproject="server" | module Os_fcm_notif.Data.PhoneGap >>~]|<<div class="odocwiki_info"|~Add an image to the push notification in the notification area
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="add_info"| value Os_push_notifications.Data.PhoneGap.add_info >> ~[<<a_api subproject="server" | module Os_push_notifications.Data.PhoneGap >>~]|<<div class="odocwiki_info"|~Add <<span class="odocwiki_inlinecode"|content~-available~: ~1>> also
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="add_info"| value Os_fcm_notif.Data.PhoneGap.add_info >> ~[<<a_api subproject="server" | module Os_fcm_notif.Data.PhoneGap >>~]|<<div class="odocwiki_info"|~Add <<span class="odocwiki_inlinecode"|content~-available~: ~1>> also
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="add_led_color"| value Os_push_notifications.Data.PhoneGap.add_led_color >> ~[<<a_api subproject="server" | module Os_push_notifications.Data.PhoneGap >>~]|<<div class="odocwiki_info"|~Change the ~L~E~D color when the notification is received~.
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="add_led_color"| value Os_fcm_notif.Data.PhoneGap.add_led_color >> ~[<<a_api subproject="server" | module Os_fcm_notif.Data.PhoneGap >>~]|<<div class="odocwiki_info"|~Change the ~L~E~D color when the notification is received~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="add_message"| value Os_push_notifications.Data.PhoneGap.add_message >> ~[<<a_api subproject="server" | module Os_push_notifications.Data.PhoneGap >>~]|<<div class="odocwiki_info"|~Add a message attribute to the notification
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="add_message"| value Os_fcm_notif.Data.PhoneGap.add_message >> ~[<<a_api subproject="server" | module Os_fcm_notif.Data.PhoneGap >>~]|<<div class="odocwiki_info"|~Add a message attribute to the notification
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="add_notification_id"| value Os_push_notifications.Data.PhoneGap.add_notification_id >> ~[<<a_api subproject="server" | module Os_push_notifications.Data.PhoneGap >>~]|<<div class="odocwiki_info"|~Add a notification ~I~D~.
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="add_notification_id"| value Os_fcm_notif.Data.PhoneGap.add_notification_id >> ~[<<a_api subproject="server" | module Os_fcm_notif.Data.PhoneGap >>~]|<<div class="odocwiki_info"|~Add a notification ~I~D~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="add_picture"| value Os_push_notifications.Data.PhoneGap.add_picture >> ~[<<a_api subproject="server" | module Os_push_notifications.Data.PhoneGap >>~]|<<div class="odocwiki_info"|~Add a large picture in the notification ~(under the title and body~)~.
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="add_picture"| value Os_fcm_notif.Data.PhoneGap.add_picture >> ~[<<a_api subproject="server" | module Os_fcm_notif.Data.PhoneGap >>~]|<<div class="odocwiki_info"|~Add a large picture in the notification ~(under the title and body~)~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="add_preregister"| value Os_user.add_preregister >> ~[<<a_api subproject="server" | module Os_user >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|add~_preregister email>> adds an email into the preregister collections~.
@@ -98,55 +98,55 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="add_preregister"| value Os_db.User.add_preregister >> ~[<<a_api subproject="server" | module Os_db.User >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|add~_preregister email>> preregisters <<span class="odocwiki_inlinecode"|email>> in the database~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="add_priority"| value Os_push_notifications.Options.add_priority >> ~[<<a_api subproject="server" | module Os_push_notifications.Options >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|add~_priority priority options>> sets the priority of the message~.
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="add_priority"| value Os_fcm_notif.Options.add_priority >> ~[<<a_api subproject="server" | module Os_fcm_notif.Options >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|add~_priority priority options>> sets the priority of the message~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="add_priority"| value Os_push_notifications.Data.PhoneGap.add_priority >> ~[<<a_api subproject="server" | module Os_push_notifications.Data.PhoneGap >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="add_raw_json"| value Os_push_notifications.Data.add_raw_json >> ~[<<a_api subproject="server" | module Os_push_notifications.Data >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|add~_raw~_json key content~_json data>>
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="add_priority"| value Os_fcm_notif.Data.PhoneGap.add_priority >> ~[<<a_api subproject="server" | module Os_fcm_notif.Data.PhoneGap >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="add_raw_json"| value Os_fcm_notif.Data.add_raw_json >> ~[<<a_api subproject="server" | module Os_fcm_notif.Data >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|add~_raw~_json key content~_json data>>
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="add_raw_json"| value Os_push_notifications.Notification.add_raw_json >> ~[<<a_api subproject="server" | module Os_push_notifications.Notification >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|add~_raw~_json key content~_json notification>>
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="add_raw_json"| value Os_fcm_notif.Notification.add_raw_json >> ~[<<a_api subproject="server" | module Os_fcm_notif.Notification >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|add~_raw~_json key content~_json notification>>
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="add_raw_string"| value Os_push_notifications.Data.add_raw_string >> ~[<<a_api subproject="server" | module Os_push_notifications.Data >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|add~_raw~_string key content data>>
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="add_raw_string"| value Os_fcm_notif.Data.add_raw_string >> ~[<<a_api subproject="server" | module Os_fcm_notif.Data >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|add~_raw~_string key content data>>
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="add_raw_string"| value Os_push_notifications.Notification.add_raw_string >> ~[<<a_api subproject="server" | module Os_push_notifications.Notification >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|add~_raw~_string key content notification>>
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="add_raw_string"| value Os_fcm_notif.Notification.add_raw_string >> ~[<<a_api subproject="server" | module Os_fcm_notif.Notification >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|add~_raw~_string key content notification>>
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="add_restricted_package_name"| value Os_push_notifications.Options.add_restricted_package_name >> ~[<<a_api subproject="server" | module Os_push_notifications.Options >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|add~_restricted~_package~_name package~_name options>> specifies the
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="add_restricted_package_name"| value Os_fcm_notif.Options.add_restricted_package_name >> ~[<<a_api subproject="server" | module Os_fcm_notif.Options >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|add~_restricted~_package~_name package~_name options>> specifies the
         package name of the application where the registration tokens must match
         in order to receive the message~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="add_sound"| value Os_push_notifications.Notification.add_sound >> ~[<<a_api subproject="server" | module Os_push_notifications.Notification >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|add~_sound sound notification>> indicates a sound to play when the device
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="add_sound"| value Os_fcm_notif.Notification.add_sound >> ~[<<a_api subproject="server" | module Os_fcm_notif.Notification >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|add~_sound sound notification>> indicates a sound to play when the device
         receives a notification~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="add_soundname"| value Os_push_notifications.Data.PhoneGap.add_soundname >> ~[<<a_api subproject="server" | module Os_push_notifications.Data.PhoneGap >>~]|<<div class="odocwiki_info"|~Add a soundame when the mobile receives the notification
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="add_soundname"| value Os_fcm_notif.Data.PhoneGap.add_soundname >> ~[<<a_api subproject="server" | module Os_fcm_notif.Data.PhoneGap >>~]|<<div class="odocwiki_info"|~Add a soundame when the mobile receives the notification
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="add_style"| value Os_push_notifications.Data.PhoneGap.add_style >> ~[<<a_api subproject="server" | module Os_push_notifications.Data.PhoneGap >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="add_summary_text"| value Os_push_notifications.Data.PhoneGap.add_summary_text >> ~[<<a_api subproject="server" | module Os_push_notifications.Data.PhoneGap >>~]|<<div class="odocwiki_info"|~Add a summary text~.
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="add_style"| value Os_fcm_notif.Data.PhoneGap.add_style >> ~[<<a_api subproject="server" | module Os_fcm_notif.Data.PhoneGap >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="add_summary_text"| value Os_fcm_notif.Data.PhoneGap.add_summary_text >> ~[<<a_api subproject="server" | module Os_fcm_notif.Data.PhoneGap >>~]|<<div class="odocwiki_info"|~Add a summary text~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="add_tag"| value Os_push_notifications.Notification.Android.add_tag >> ~[<<a_api subproject="server" | module Os_push_notifications.Notification.Android >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|add~_tag tag notification>> indicates whether each notification
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="add_tag"| value Os_fcm_notif.Notification.Android.add_tag >> ~[<<a_api subproject="server" | module Os_fcm_notif.Notification.Android >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|add~_tag tag notification>> indicates whether each notification
             results in a new entry in the notification drawer on ~Android~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="add_time_to_live"| value Os_push_notifications.Options.add_time_to_live >> ~[<<a_api subproject="server" | module Os_push_notifications.Options >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|add~_time~_to~_live time~_in~_seconds options>> specifies how long ~(in
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="add_time_to_live"| value Os_fcm_notif.Options.add_time_to_live >> ~[<<a_api subproject="server" | module Os_fcm_notif.Options >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|add~_time~_to~_live time~_in~_seconds options>> specifies how long ~(in
         seconds~) the message should be kept in ~F~C~M storage if the device is
         offline~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="add_title"| value Os_push_notifications.Data.PhoneGap.add_title >> ~[<<a_api subproject="server" | module Os_push_notifications.Data.PhoneGap >>~]|<<div class="odocwiki_info"|~Add a title attribute to the notification
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="add_title"| value Os_fcm_notif.Data.PhoneGap.add_title >> ~[<<a_api subproject="server" | module Os_fcm_notif.Data.PhoneGap >>~]|<<div class="odocwiki_info"|~Add a title attribute to the notification
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="add_title"| value Os_push_notifications.Notification.add_title >> ~[<<a_api subproject="server" | module Os_push_notifications.Notification >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|add~_title title notification>> adds a title to push notification in
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="add_title"| value Os_fcm_notif.Notification.add_title >> ~[<<a_api subproject="server" | module Os_fcm_notif.Notification >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|add~_title title notification>> adds a title to push notification in
         the notification area~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="add_to"| value Os_push_notifications.Options.add_to >> ~[<<a_api subproject="server" | module Os_push_notifications.Options >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|add~_to to options>> specifies the recipient of a message~.
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="add_to"| value Os_fcm_notif.Options.add_to >> ~[<<a_api subproject="server" | module Os_fcm_notif.Options >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|add~_to to options>> specifies the recipient of a message~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="add_user_in_group"| value Os_group.add_user_in_group >> ~[<<a_api subproject="server" | module Os_group >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|add~_user~_in~_group ~~group ~~userid>> adds the user with ~I~D <<span class="odocwiki_inlinecode"|userid>> to
@@ -157,10 +157,10 @@
       group with ~I~D <<span class="odocwiki_inlinecode"|groupid>>
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="add_vibration_pattern"| value Os_push_notifications.Data.PhoneGap.add_vibration_pattern >> ~[<<a_api subproject="server" | module Os_push_notifications.Data.PhoneGap >>~]|<<div class="odocwiki_info"|~Add a vibration pattern
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="add_vibration_pattern"| value Os_fcm_notif.Data.PhoneGap.add_vibration_pattern >> ~[<<a_api subproject="server" | module Os_fcm_notif.Data.PhoneGap >>~]|<<div class="odocwiki_info"|~Add a vibration pattern
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="add_visibility"| value Os_push_notifications.Data.PhoneGap.add_visibility >> ~[<<a_api subproject="server" | module Os_push_notifications.Data.PhoneGap >>~]|<<div class="odocwiki_info"|~Add the visibility payload
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="add_visibility"| value Os_fcm_notif.Data.PhoneGap.add_visibility >> ~[<<a_api subproject="server" | module Os_fcm_notif.Data.PhoneGap >>~]|<<div class="odocwiki_info"|~Add the visibility payload
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="all"| value Os_user.all >> ~[<<a_api subproject="server" | module Os_user >>~]|<<div class="odocwiki_info"|~Get <<span class="odocwiki_inlinecode"|limit>> ~(default~: ~1~0~) emails from the preregister collections~.
@@ -208,7 +208,7 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="cache"| value Os_user_proxy.cache >> ~[<<a_api subproject="server" | module Os_user_proxy >>~]|<<div class="odocwiki_info"|~Cache keeping userid and user information as a <<span class="odocwiki_inlinecode"|~Os~_types~.user>> type~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="canonical_ids_of_t"| value Os_push_notifications.Response.canonical_ids_of_t >> ~[<<a_api subproject="server" | module Os_push_notifications.Response >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|canonical~_ids~_of~_t response>> returns the number of results that contain
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="canonical_ids_of_t"| value Os_fcm_notif.Response.canonical_ids_of_t >> ~[<<a_api subproject="server" | module Os_fcm_notif.Response >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|canonical~_ids~_of~_t response>> returns the number of results that contain
         a canonical registration token~.
 >>
 |
@@ -267,15 +267,15 @@
     with the given information~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="create"| value Os_push_notifications.Options.create >> ~[<<a_api subproject="server" | module Os_push_notifications.Options >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|create registered~_ids>> creates a new option where <<span class="odocwiki_inlinecode"|registered~_ids>> is
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="create"| value Os_group.create >> ~[<<a_api subproject="server" | module Os_group >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|create ~~description name>> creates a new group in the database and returns
+    it as a record of type <<span class="odocwiki_inlinecode"|~Os~_types~.~Group~.t>>~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="create"| value Os_fcm_notif.Options.create >> ~[<<a_api subproject="server" | module Os_fcm_notif.Options >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|create registered~_ids>> creates a new option where <<span class="odocwiki_inlinecode"|registered~_ids>> is
         the ~I~D of mobile devices you want to send the notifications to~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="create"| value Os_push_notifications.Data.PhoneGap.Action.create >> ~[<<a_api subproject="server" | module Os_push_notifications.Data.PhoneGap.Action >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|create icon title callback foreground>>
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="create"| value Os_group.create >> ~[<<a_api subproject="server" | module Os_group >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|create ~~description name>> creates a new group in the database and returns
-    it as a record of type <<span class="odocwiki_inlinecode"|~Os~_types~.~Group~.t>>~.
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="create"| value Os_fcm_notif.Data.PhoneGap.Action.create >> ~[<<a_api subproject="server" | module Os_fcm_notif.Data.PhoneGap.Action >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|create icon title callback foreground>>
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="create"| value Os_db.Groups.create >> ~[<<a_api subproject="server" | module Os_db.Groups >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|create ~?description name>> creates a new group with name <<span class="odocwiki_inlinecode"|name>> and with
@@ -355,14 +355,14 @@
       ~I~D <<span class="odocwiki_inlinecode"|userid>>~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="empty"| value Os_push_notifications.Data.empty >> ~[<<a_api subproject="server" | module Os_push_notifications.Data >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|empty ~(~)>> creates an empty data value~.
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="empty"| value Os_fcm_notif.Data.empty >> ~[<<a_api subproject="server" | module Os_fcm_notif.Data >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|empty ~(~)>> creates an empty data value~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="empty"| value Os_push_notifications.Notification.empty >> ~[<<a_api subproject="server" | module Os_push_notifications.Notification >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|empty ~(~)>> creates an empty notification
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="empty"| value Os_fcm_notif.Notification.empty >> ~[<<a_api subproject="server" | module Os_fcm_notif.Notification >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|empty ~(~)>> creates an empty notification
 >>
 |
 |@@ @style="tet-align: left;"@@\\F|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="failure_of_t"| value Os_push_notifications.Response.failure_of_t >> ~[<<a_api subproject="server" | module Os_push_notifications.Response >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|failure~_of~_t response>> returns the number of messages that could not
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="failure_of_t"| value Os_fcm_notif.Response.failure_of_t >> ~[<<a_api subproject="server" | module Os_fcm_notif.Response >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|failure~_of~_t response>> returns the number of messages that could not
         be processed~.
 >>
 |
@@ -564,7 +564,7 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="memoizator"| value Os_lib.memoizator >> ~[<<a_api subproject="server" | module Os_lib >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|memoizator f ~(~)>> caches the returned value of <<span class="odocwiki_inlinecode"|f ~(~)>>
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="message_id_of_success"| value Os_push_notifications.Response.Results.message_id_of_success >> ~[<<a_api subproject="server" | module Os_push_notifications.Response.Results >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|message~_id~_of~_success success>> returns a string specifying a unique
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="message_id_of_success"| value Os_fcm_notif.Response.Results.message_id_of_success >> ~[<<a_api subproject="server" | module Os_fcm_notif.Response.Results >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|message~_id~_of~_success success>> returns a string specifying a unique
             ~I~D for each successfully processed message~.
 >>
 |
@@ -572,7 +572,7 @@
     to display an error message in the page~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="multicast_id_of_t"| value Os_push_notifications.Response.multicast_id_of_t >> ~[<<a_api subproject="server" | module Os_push_notifications.Response >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|multicast~_id~_of~_t response>> returns the unique ~I~D identifying the
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="multicast_id_of_t"| value Os_fcm_notif.Response.multicast_id_of_t >> ~[<<a_api subproject="server" | module Os_fcm_notif.Response >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|multicast~_id~_of~_t response>> returns the unique ~I~D identifying the
         multicast message~.
 >>
 |
@@ -651,7 +651,7 @@
     crops the image like <<span class="odocwiki_inlinecode"|crop~_image>> and save it in the directory <<span class="odocwiki_inlinecode"|directory>>~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="registration_id_of_success"| value Os_push_notifications.Response.Results.registration_id_of_success >> ~[<<a_api subproject="server" | module Os_push_notifications.Response.Results >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|registration~_id~_of~_t result>> returns a string specifying the
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="registration_id_of_success"| value Os_fcm_notif.Response.Results.registration_id_of_success >> ~[<<a_api subproject="server" | module Os_fcm_notif.Response.Results >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|registration~_id~_of~_t result>> returns a string specifying the
             canonical registration token for the client app that the message was
             processed and sent to~.
 >>
@@ -695,11 +695,11 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="reset_tips_service"| value Os_tips.reset_tips_service >> ~[<<a_api subproject="server" | module Os_tips >>~]|<<div class="odocwiki_info"|~A non~-attached service that will reset tips~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="results_of_t"| value Os_push_notifications.Response.results_of_t >> ~[<<a_api subproject="server" | module Os_push_notifications.Response >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|results~_of~_t response>> returns the status of the messages processed~.
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="results_of_t"| value Os_fcm_notif.Response.results_of_t >> ~[<<a_api subproject="server" | module Os_fcm_notif.Response >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|results~_of~_t response>> returns the status of the messages processed~.
 >>
 |
 |@@ @style="tet-align: left;"@@\\S|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="send"| value Os_push_notifications.send >> ~[<<a_api subproject="server" | module Os_push_notifications >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|send server~_key notification options>>
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="send"| value Os_fcm_notif.send >> ~[<<a_api subproject="server" | module Os_fcm_notif >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|send server~_key notification options>>
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="send"| value Os_email.send >> ~[<<a_api subproject="server" | module Os_email >>~]|<<div class="odocwiki_info"|~Send an e~-mail to <<span class="odocwiki_inlinecode"|to~_addrs>> from <<span class="odocwiki_inlinecode"|from~_addr>>~.
@@ -781,7 +781,7 @@
     when the function is called~)~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="string_of_error"| value Os_push_notifications.Response.Results.string_of_error >> ~[<<a_api subproject="server" | module Os_push_notifications.Response.Results >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|string~_of~_error error>> returns a string representation of the
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="string_of_error"| value Os_fcm_notif.Response.Results.string_of_error >> ~[<<a_api subproject="server" | module Os_fcm_notif.Response.Results >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|string~_of~_error error>> returns a string representation of the
             error <<span class="odocwiki_inlinecode"|error>>~.
 >>
 |
@@ -790,7 +790,7 @@
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="string_of_t"| value Os_platform.string_of_t >> ~[<<a_api subproject="server" | module Os_platform >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="success_of_t"| value Os_push_notifications.Response.success_of_t >> ~[<<a_api subproject="server" | module Os_push_notifications.Response >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|success~_of~_t response>> returns the number of messages that were
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="success_of_t"| value Os_fcm_notif.Response.success_of_t >> ~[<<a_api subproject="server" | module Os_fcm_notif.Response >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|success~_of~_t response>> returns the number of messages that were
         processed without an error~.
 >>
 |
@@ -800,13 +800,13 @@
       pages~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="to_json"| value Os_push_notifications.Data.PhoneGap.Action.to_json >> ~[<<a_api subproject="server" | module Os_push_notifications.Data.PhoneGap.Action >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="to_json"| value Os_push_notifications.Notification.to_json >> ~[<<a_api subproject="server" | module Os_push_notifications.Notification >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="to_list"| value Os_push_notifications.Options.to_list >> ~[<<a_api subproject="server" | module Os_push_notifications.Options >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|to~_list option>> returns the representation of the options as a list of
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="to_json"| value Os_fcm_notif.Data.PhoneGap.Action.to_json >> ~[<<a_api subproject="server" | module Os_fcm_notif.Data.PhoneGap.Action >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="to_json"| value Os_fcm_notif.Notification.to_json >> ~[<<a_api subproject="server" | module Os_fcm_notif.Notification >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="to_list"| value Os_fcm_notif.Options.to_list >> ~[<<a_api subproject="server" | module Os_fcm_notif.Options >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|to~_list option>> returns the representation of the options as a list of
         tuples <<span class="odocwiki_inlinecode"|~(option~_name~, json~_value~)>>~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="to_list"| value Os_push_notifications.Data.to_list >> ~[<<a_api subproject="server" | module Os_push_notifications.Data >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|to~_list data>> returns the representation of the data as a list of
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="to_list"| value Os_fcm_notif.Data.to_list >> ~[<<a_api subproject="server" | module Os_fcm_notif.Data >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|to~_list data>> returns the representation of the data as a list of
         tuples <<span class="odocwiki_inlinecode"|~(data~_key~, json~_value~)>>~.
 >>
 |

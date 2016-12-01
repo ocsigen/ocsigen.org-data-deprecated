@@ -1,5 +1,5 @@
-=Module <<a_api_type subproject="server" | module Os_push_notifications.Options.Priority >> =
-<<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module>> <<span class="ocsforge_color_uid"|<<span class="ocsforge_color_uid"|Priority>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="ocsforge_color_keyword"|sig>><<a_api subproject="server" text=".." | module Os_push_notifications.Options.Priority >><<span class="ocsforge_color_keyword"|end>>>>~This modules defines a type for priorities for the notifications~. ~See
+=Module <<a_api_type subproject="server" | module Os_fcm_notif.Options.Priority >> =
+<<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module>> <<span class="ocsforge_color_uid"|<<span class="ocsforge_color_uid"|Priority>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="ocsforge_color_keyword"|sig>><<a_api subproject="server" text=".." | module Os_fcm_notif.Options.Priority >><<span class="ocsforge_color_keyword"|end>>>>~This modules defines a type for priorities for the notifications~. ~See
         https~:~/~/firebase~.google~.com~/docs~/cloud~-messaging~/concept~-options~#setting~-the~-priority~-of~-a~-message
 
 ----
