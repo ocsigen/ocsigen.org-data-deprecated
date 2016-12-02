@@ -125,9 +125,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="resource_usage"| type Lwt_unix.resource_usage >> ~[<<a_api | module Lwt_unix >>~]|<<div class="odocwiki_info"|~Resource usages
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api text="result"| type Lwt_stream.result >> ~[<<a_api | module Lwt_stream >>~]|<<div class="odocwiki_info"|~A value or an error~.
->>
-|
+|@@class="odocwiki_index"@ @@<<a_api text="result"| type Lwt_stream.result >> ~[<<a_api | module Lwt_stream >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="result"| type Lwt.result >> ~[<<a_api | module Lwt >>~]|<<div class="odocwiki_info"|~Either a value of type <<span class="odocwiki_inlinecode"|~'a>>~, either an exception~.
 >>
 |

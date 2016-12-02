@@ -230,14 +230,12 @@
 >>
 <<pre id="VALflatten" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|flatten>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|'a list <<a_api text="t" | type Lwt_stream.t >> <<span class="ocsforge_color_delimiter"| -> >> 'a <<a_api text="t" | type Lwt_stream.t >>>>>><<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|flatten st ~= map~_list ~(fun l ~-~> l~) st>>
 >>
-<<pre class="ocsforge_color odocwiki_code" id="TYPEresult"|<<span class="ocsforge_color_keyword"|type>> <<span class="odocwiki_type"|'a>> <<span class="odocwiki_name"|result>> <<span class="ocsforge_color_delimiter"|~=>> <<span class="odocwiki_variants"|<<span class="odocwiki_variant"|<<span class="odocwiki_variant_constr"|<<span class="ocsforge_color_keyword"| ~|>> <<span class="ocsforge_color_uid"|Value>> <<span class="ocsforge_color_keyword"|of>> <<span class="odocwiki_type"|'a>>>>>><<span class="odocwiki_variant"|<<span class="odocwiki_variant_constr"|<<span class="ocsforge_color_keyword"| ~|>> <<span class="ocsforge_color_uid"|Error>> <<span class="ocsforge_color_keyword"|of>> <<span class="odocwiki_type"|exn>>>>>>>>>><<div class="odocwiki_info"|~A value or an error~.
->>
-<<pre id="VALmap_exn" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|map~_exn>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|'a <<a_api text="t" | type Lwt_stream.t >> <<span class="ocsforge_color_delimiter"| -> >> 'a <<a_api text="result" | type Lwt_stream.result >> <<a_api text="t" | type Lwt_stream.t >>>>>><<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|map~_exn s>> returns a stream that captures all exceptions raised
-      by the source of the stream ~(the function passed to <<a_api | val Lwt_stream.from >>~)~.
+<<pre id="VALwrap_exn" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|wrap~_exn>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|'a <<a_api text="t" | type Lwt_stream.t >> <<span class="ocsforge_color_delimiter"| -> >> 'a <<a_api text="Lwt.result" | type Lwt.result >> <<a_api text="t" | type Lwt_stream.t >>>>>><<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|wrap~_exn s>> is a stream <<span class="odocwiki_inlinecode"|s~'>> such that each time <<span class="odocwiki_inlinecode"|s>> yields a value <<span class="odocwiki_inlinecode"|v>>~,
+    <<span class="odocwiki_inlinecode"|s~'>> yields <<span class="odocwiki_inlinecode"|~Result~.~Ok v>>~, and when the source of <<span class="odocwiki_inlinecode"|s>> raises an exception
+    <<span class="odocwiki_inlinecode"|e>>~, <<span class="odocwiki_inlinecode"|s~'>> yields <<span class="odocwiki_inlinecode"|~Result~.~Error e>>~.
 
 
-      ~Note that for push~-streams ~(as returned by <<a_api | val Lwt_stream.create >>~) all
-      elements of the mapped streams are values~.
+    ~Note that push~-streams ~(as returned by <<a_api | val Lwt_stream.create >>~) never raise exceptions~.
 >>
 
 
@@ -265,4 +263,19 @@
 <<code language='ocaml'|        let () = Lwt_main.run (Lwt_io.write_lines Lwt_io.stdout (Lwt_stream.hexdump (Lwt_io.read_lines Lwt_io.stdin)))
       >>
 
+>>
+
+
+==@@id="2_Deprecated"@@~Deprecated==
+
+<<pre class="ocsforge_color odocwiki_code" id="TYPEresult"|<<span class="ocsforge_color_keyword"|type>> <<span class="odocwiki_type"|'a>> <<span class="odocwiki_name"|result>> <<span class="ocsforge_color_delimiter"|~=>> <<span class="odocwiki_variants"|<<span class="odocwiki_variant"|<<span class="odocwiki_variant_constr"|<<span class="ocsforge_color_keyword"| ~|>> <<span class="ocsforge_color_uid"|Value>> <<span class="ocsforge_color_keyword"|of>> <<span class="odocwiki_type"|'a>>>>>><<span class="odocwiki_variant"|<<span class="odocwiki_variant_constr"|<<span class="ocsforge_color_keyword"| ~|>> <<span class="ocsforge_color_uid"|Error>> <<span class="ocsforge_color_keyword"|of>> <<span class="odocwiki_type"|exn>>>><<span class="odocwiki_comments"|<<span class="odocwiki_comments_open"|(*>> <<span|<<div class="odocwiki_info"|<<span class="odocwiki_warning"|Deprecated.>>~Replaced by <<a_api | val Lwt_stream.wrap_exn >>~, which uses <<a_api | type Lwt.result >>~.
+~A value or an error~.
+>>
+>><<span class="odocwiki_comments_close"| ~*)>>>>>>>>>><<pre id="VALmap_exn" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|map~_exn>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|'a <<a_api text="t" | type Lwt_stream.t >> <<span class="ocsforge_color_delimiter"| -> >> 'a <<a_api text="result" | type Lwt_stream.result >> <<a_api text="t" | type Lwt_stream.t >>>>>><<div class="odocwiki_info"|<<span class="odocwiki_warning"|Deprecated.>>~Use <<a_api | val Lwt_stream.wrap_exn >>~.
+<<span class="odocwiki_inlinecode"|map~_exn s>> returns a stream that captures all exceptions raised
+    by the source of the stream ~(the function passed to <<a_api | val Lwt_stream.from >>~)~.
+
+
+    ~Note that for push~-streams ~(as returned by <<a_api | val Lwt_stream.create >>~) all
+    elements of the mapped streams are values~.
 >>

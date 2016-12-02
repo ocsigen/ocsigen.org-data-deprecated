@@ -71,8 +71,9 @@
   val append : 'a Lwt_stream.t -> 'a Lwt_stream.t -> 'a Lwt_stream.t
   val concat : 'a Lwt_stream.t Lwt_stream.t -> 'a Lwt_stream.t
   val flatten : 'a list Lwt_stream.t -> 'a Lwt_stream.t
-  type 'a result = Value of 'a | Error of exn
-  val map_exn : 'a Lwt_stream.t -> 'a Lwt_stream.result Lwt_stream.t
+  val wrap_exn : 'a Lwt_stream.t -> 'a Lwt.result Lwt_stream.t
   val parse : 'a Lwt_stream.t -> ('a Lwt_stream.t -> 'b Lwt.t) -> 'b Lwt.t
   val hexdump : char Lwt_stream.t -> string Lwt_stream.t
+  type 'a result = Value of 'a | Error of exn
+  val map_exn : 'a Lwt_stream.t -> 'a Lwt_stream.result Lwt_stream.t
 end >>
