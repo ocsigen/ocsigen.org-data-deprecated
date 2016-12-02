@@ -287,22 +287,22 @@
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="create"| value Eliom_shared_sigs.VALUE.create >> ~[<<a_api subproject="client" | module Eliom_shared_sigs.VALUE >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="create"| value Eliom_registration_sigs.S_poly_with_create.create >> ~[<<a_api subproject="client" | module Eliom_registration_sigs.S_poly_with_create >>~]|<<div class="odocwiki_info"|~See <<span class="odocwiki_inlinecode"|~S~.create>>~.
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="create"| value Eliom_registration_sigs.S_poly_with_create.create >> ~[<<a_api subproject="client" | module Eliom_registration_sigs.S_poly_with_create >>~]|<<div class="odocwiki_info"|~See <<a_api subproject="client" | val Eliom_registration_sigs.S_with_create.create >>~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="create"| value Eliom_registration_sigs.S_with_create.create >> ~[<<a_api subproject="client" | module Eliom_registration_sigs.S_with_create >>~]|<<div class="odocwiki_info"|~Same as <<span class="odocwiki_inlinecode"|~Eliom~_service~.create>> followed by <<span class="odocwiki_inlinecode"|register>>~.
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="create"| value Eliom_registration_sigs.S_with_create.create >> ~[<<a_api subproject="client" | module Eliom_registration_sigs.S_with_create >>~]|<<div class="odocwiki_info"|~Create a service and register it at the same time~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="create_attached_get"| value Eliom_registration_sigs.S_poly_with_create.create_attached_get >> ~[<<a_api subproject="client" | module Eliom_registration_sigs.S_poly_with_create >>~]|<<div class="odocwiki_info"|~See <<span class="odocwiki_inlinecode"|~S~.create~_attached~_get>>~.
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="create_attached_get"| value Eliom_registration_sigs.S_poly_with_create.create_attached_get >> ~[<<a_api subproject="client" | module Eliom_registration_sigs.S_poly_with_create >>~]|<<div class="odocwiki_info"|~See <<a_api subproject="client" | val Eliom_registration_sigs.S_with_create.create_attached_get >>~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="create_attached_get"| value Eliom_registration_sigs.S_with_create.create_attached_get >> ~[<<a_api subproject="client" | module Eliom_registration_sigs.S_with_create >>~]|<<div class="odocwiki_info"|~Same as <<span class="odocwiki_inlinecode"|~Eliom~_service~.create~_attached~_get>> followed by <<span class="odocwiki_inlinecode"|register>>~.
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="create_attached_get"| value Eliom_registration_sigs.S_with_create.create_attached_get >> ~[<<a_api subproject="client" | module Eliom_registration_sigs.S_with_create >>~]|<<div class="odocwiki_info"|~Create an attached service and register it at the same time~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="create_attached_post"| value Eliom_registration_sigs.S_poly_with_create.create_attached_post >> ~[<<a_api subproject="client" | module Eliom_registration_sigs.S_poly_with_create >>~]|<<div class="odocwiki_info"|~See <<span class="odocwiki_inlinecode"|~S~.create~_attached~_post>>~.
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="create_attached_post"| value Eliom_registration_sigs.S_poly_with_create.create_attached_post >> ~[<<a_api subproject="client" | module Eliom_registration_sigs.S_poly_with_create >>~]|<<div class="odocwiki_info"|~See <<a_api subproject="client" | val Eliom_registration_sigs.S_with_create.create_attached_post >>~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="create_attached_post"| value Eliom_registration_sigs.S_with_create.create_attached_post >> ~[<<a_api subproject="client" | module Eliom_registration_sigs.S_with_create >>~]|<<div class="odocwiki_info"|~Same as <<span class="odocwiki_inlinecode"|~Eliom~_service~.create~_attached~_post>> followed by <<span class="odocwiki_inlinecode"|register>>~.
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="create_attached_post"| value Eliom_registration_sigs.S_with_create.create_attached_post >> ~[<<a_api subproject="client" | module Eliom_registration_sigs.S_with_create >>~]|<<div class="odocwiki_info"|~Create an attached ~P~O~S~T service and register it at the same time~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="create_buffer"| value Eliom_client_core.create_buffer >> ~[<<a_api subproject="client" | module Eliom_client_core >>~]||
@@ -1107,7 +1107,7 @@
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="send"| value Eliom_registration_sigs.S_poly_with_create_with_send.send >> ~[<<a_api subproject="client" | module Eliom_registration_sigs.S_poly_with_create_with_send >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="send"| value Eliom_registration_sigs.S_poly_with_send.send >> ~[<<a_api subproject="client" | module Eliom_registration_sigs.S_poly_with_send >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="send"| value Eliom_registration_sigs.S.send >> ~[<<a_api subproject="client" | module Eliom_registration_sigs.S >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|send page>> build the ~H~T~T~P frame corresponding to
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="send"| value Eliom_registration_sigs.S.send >> ~[<<a_api subproject="client" | module Eliom_registration_sigs.S >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|send page>> builds the ~H~T~T~P frame corresponding to
       <<span class="odocwiki_inlinecode"|page>>~.
 >>
 |
@@ -1116,8 +1116,8 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="send_appl_content"| value Eliom_registration_sigs.PARAM_POLY.send_appl_content >> ~[<<a_api subproject="client" | module Eliom_registration_sigs.PARAM_POLY >>~]|<<div class="odocwiki_info"|~See <<span class="odocwiki_inlinecode"|~Eliom~_reg~_sigs~.~P~A~R~A~M~.send~_appl~_content>>~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="send_appl_content"| value Eliom_registration_sigs.PARAM.send_appl_content >> ~[<<a_api subproject="client" | module Eliom_registration_sigs.PARAM >>~]|<<div class="odocwiki_info"|~Whether the service is capable to send application content when
-      required~.
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="send_appl_content"| value Eliom_registration_sigs.PARAM.send_appl_content >> ~[<<a_api subproject="client" | module Eliom_registration_sigs.PARAM >>~]|<<div class="odocwiki_info"|~Whether the service is capable of sending application content
+      when required~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="session_id"| value Eliom_client_core.session_id >> ~[<<a_api subproject="client" | module Eliom_client_core >>~]||

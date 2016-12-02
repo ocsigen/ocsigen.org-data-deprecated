@@ -103,8 +103,8 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Eliom_registration"| module Eliom_registration >> |<<div class="odocwiki_info"|~Client~-side service registration~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Eliom_registration_sigs"| module Eliom_registration_sigs >> |<<div class="odocwiki_info"|~Whether the service is capable to send application content when
-      required~.
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Eliom_registration_sigs"| module Eliom_registration_sigs >> |<<div class="odocwiki_info"|~Whether the service is capable of sending application content
+      when required~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Eliom_service"| module Eliom_service >> |<<div class="odocwiki_info"|~Creation and manipulation of ~Eliom services~.
