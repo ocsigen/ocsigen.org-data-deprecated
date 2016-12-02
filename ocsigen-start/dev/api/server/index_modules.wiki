@@ -32,7 +32,12 @@
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Make"| module Os_page.Make >> ~[<<a_api subproject="server" | module Os_page >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Make"| module Os_notif.Make >> ~[<<a_api subproject="server" | module Os_notif >>~]|<<div class="odocwiki_info"|~Use this functor if you have a multi~-server set~-up~, use <<span class="odocwiki_inlinecode"|~Simple>> otherwise~.
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Make"| module Os_notif.Make >> ~[<<a_api subproject="server" | module Os_notif >>~]|<<div class="odocwiki_info"|see <<span class="odocwiki_inlinecode"|~Eliom~_notif~.~Make>>
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Make_Simple"| module Os_notif.Make_Simple >> ~[<<a_api subproject="server" | module Os_notif >>~]|<<div class="odocwiki_info"|~Use this functor in case messages are to be delivered only to clients
+    connected to the current server~, as is always the case in a single~-server
+    set~-up~.
 >>
 |
 |@@ @style="tet-align: left;"@@\\N|
@@ -147,11 +152,6 @@
 >>
 |
 |@@ @style="tet-align: left;"@@\\S|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Simple"| module Os_notif.Simple >> ~[<<a_api subproject="server" | module Os_notif >>~]|<<div class="odocwiki_info"|~Use this functor in case messages are to be delivered only to clients
-    connected to the current server~, as is always the case in a single~-server
-    set~-up~.
->>
-|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Style"| module Os_fcm_notif.Data.PhoneGap.Style >> ~[<<a_api subproject="server" | module Os_fcm_notif.Data.PhoneGap >>~]||
 |@@ @style="tet-align: left;"@@\\U|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="User"| module Os_types.User >> ~[<<a_api subproject="server" | module Os_types >>~]||

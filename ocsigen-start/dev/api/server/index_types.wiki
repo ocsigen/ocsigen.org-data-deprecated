@@ -1,9 +1,7 @@
 =Index of types=
 
 |@@ @style="tet-align: left;"@@\\C|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="client_notif"| type Os_notif.S.client_notif >> ~[<<a_api subproject="server" | module Os_notif.S >>~]|<<div class="odocwiki_info"|~The client notification type~.
->>
-|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="client_notif"| type Os_notif.ARG.client_notif >> ~[<<a_api subproject="server" | module Os_notif.ARG >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="content"| type Os_page.content >> ~[<<a_api subproject="server" | module Os_page >>~]|<<div class="odocwiki_info"|~An abstract type describing the content of a page
 >>
 |
@@ -32,17 +30,16 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="key"| type Os_request_cache.Cache_sig.key >> ~[<<a_api subproject="server" | module Os_request_cache.Cache_sig >>~]|<<div class="odocwiki_info"|~The type of the key
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="key"| type Os_notif.S.key >> ~[<<a_api subproject="server" | module Os_notif.S >>~]|<<div class="odocwiki_info"|~The key type~.
->>
-|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="key"| type Os_notif.ARG_SIMPLE.key >> ~[<<a_api subproject="server" | module Os_notif.ARG_SIMPLE >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="key"| type Os_notif.ARG.key >> ~[<<a_api subproject="server" | module Os_notif.ARG >>~]||
 |@@ @style="tet-align: left;"@@\\L|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="local_calendar"| type Os_date.local_calendar >> ~[<<a_api subproject="server" | module Os_date >>~]|<<div class="odocwiki_info"|~Type representing a local calendar~.
 >>
 |
+|@@ @style="tet-align: left;"@@\\N|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="notification"| type Os_notif.ARG_SIMPLE.notification >> ~[<<a_api subproject="server" | module Os_notif.ARG_SIMPLE >>~]||
 |@@ @style="tet-align: left;"@@\\S|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="server_notif"| type Os_notif.S.server_notif >> ~[<<a_api subproject="server" | module Os_notif.S >>~]|<<div class="odocwiki_info"|~The server notification type~.
->>
-|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="server_notif"| type Os_notif.ARG.server_notif >> ~[<<a_api subproject="server" | module Os_notif.ARG >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="success"| type Os_fcm_notif.Response.Results.success >> ~[<<a_api subproject="server" | module Os_fcm_notif.Response.Results >>~]|<<div class="odocwiki_info"|~The type representing a success result~.
 >>
 |

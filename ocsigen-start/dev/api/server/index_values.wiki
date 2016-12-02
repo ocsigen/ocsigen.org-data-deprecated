@@ -212,9 +212,6 @@
         a canonical registration token~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="client_ev"| value Os_notif.S.client_ev >> ~[<<a_api subproject="server" | module Os_notif.S >>~]|<<div class="odocwiki_info"|~Returns the client react event~.
->>
-|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="close"| value Os_icons.ICSIG.close >> ~[<<a_api subproject="server" | module Os_icons.ICSIG >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="connect"| value Os_session.connect >> ~[<<a_api subproject="server" | module Os_session >>~]|<<div class="odocwiki_info"|~Open a session for a user by setting a session group for the browser
     which initiated the current request~.
@@ -361,6 +358,7 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="empty"| value Os_fcm_notif.Notification.empty >> ~[<<a_api subproject="server" | module Os_fcm_notif.Notification >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|empty ~(~)>> creates an empty notification
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="equal_key"| value Os_notif.ARG.equal_key >> ~[<<a_api subproject="server" | module Os_notif.ARG >>~]||
 |@@ @style="tet-align: left;"@@\\F|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="failure_of_t"| value Os_fcm_notif.Response.failure_of_t >> ~[<<a_api subproject="server" | module Os_fcm_notif.Response >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|failure~_of~_t response>> returns the number of messages that could not
         be processed~.
@@ -536,9 +534,6 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="lastname_of_user"| value Os_user.lastname_of_user >> ~[<<a_api subproject="server" | module Os_user >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|lastname~_of~_user user>> returns the last name of the user <<span class="odocwiki_inlinecode"|user>>
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="listen"| value Os_notif.S.listen >> ~[<<a_api subproject="server" | module Os_notif.S >>~]|<<div class="odocwiki_info"|~Make client process listen on data whose index is <<span class="odocwiki_inlinecode"|key>>
->>
-|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="local_css"| value Os_page.PAGE.local_css >> ~[<<a_api subproject="server" | module Os_page.PAGE >>~]|<<div class="odocwiki_info"|~Use <<span class="odocwiki_inlinecode"|local~_css>> instead of <<span class="odocwiki_inlinecode"|css>> for local stylesheets if you are building
       a mobile application~.
 >>
@@ -561,6 +556,8 @@
       for this app
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="max_identity_per_resource"| value Os_notif.ARG.max_identity_per_resource >> ~[<<a_api subproject="server" | module Os_notif.ARG >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="max_resource"| value Os_notif.ARG.max_resource >> ~[<<a_api subproject="server" | module Os_notif.ARG >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="memoizator"| value Os_lib.memoizator >> ~[<<a_api subproject="server" | module Os_lib >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|memoizator f ~(~)>> caches the returned value of <<span class="odocwiki_inlinecode"|f ~(~)>>
 >>
 |
@@ -580,10 +577,7 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="name_of_group"| value Os_group.name_of_group >> ~[<<a_api subproject="server" | module Os_group >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|name~_of~_group group>> returns the group name~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="notify"| value Os_notif.S.notify >> ~[<<a_api subproject="server" | module Os_notif.S >>~]|<<div class="odocwiki_info"|~Call <<span class="odocwiki_inlinecode"|notify id>> to send a notification to all clients currently
-      listening on data <<span class="odocwiki_inlinecode"|key>>~.
->>
-|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="notify"| value Os_notif.S.notify >> ~[<<a_api subproject="server" | module Os_notif.S >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="now"| value Os_date.now >> ~[<<a_api subproject="server" | module Os_date >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|now ~(~)>> returns the current date as a <<span class="odocwiki_inlinecode"|local~_calendar>> value~.
 >>
 |
@@ -630,6 +624,7 @@
     a password~.
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="prepare"| value Os_notif.ARG.prepare >> ~[<<a_api subproject="server" | module Os_notif.ARG >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="preregister_form"| value Os_view.preregister_form >> ~[<<a_api subproject="server" | module Os_view >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|preregister~_form ~~a label>> creates a <<a_api subproject="server" | val Os_view.generic_email_form >> with the service
     <<a_api subproject="server" | val Os_services.preregister_service >> and add the label <<span class="odocwiki_inlinecode"|label>> to the email
     input form~.
@@ -826,10 +821,7 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="unknown_timezone"| value Os_date.unknown_timezone >> ~[<<a_api subproject="server" | module Os_date >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|unknown~_timezone ~(~)>> returns <<span class="odocwiki_inlinecode"|true>> if the timezone is unknown~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="unlisten"| value Os_notif.S.unlisten >> ~[<<a_api subproject="server" | module Os_notif.S >>~]|<<div class="odocwiki_info"|~Stop listening on data <<span class="odocwiki_inlinecode"|key>>
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="unlisten_user"| value Os_notif.S.unlisten_user >> ~[<<a_api subproject="server" | module Os_notif.S >>~]|<<div class="odocwiki_info"|~Make a user stop listening on data <<span class="odocwiki_inlinecode"|key>>
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="unlisten_user"| value Os_notif.S.unlisten_user >> ~[<<a_api subproject="server" | module Os_notif.S >>~]|<<div class="odocwiki_info"|~Make a user stop listening on data <<span class="odocwiki_inlinecode"|key>>~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="update"| value Os_user.update >> ~[<<a_api subproject="server" | module Os_user >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|update ~?password ~?avatar ~~firstname ~~lastname userid>> update the

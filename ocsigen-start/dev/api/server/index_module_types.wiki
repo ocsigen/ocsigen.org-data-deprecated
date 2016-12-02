@@ -1,5 +1,12 @@
 =Index of module types=
 
+|@@ @style="tet-align: left;"@@\\A|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="ARG"| module type Os_notif.ARG >> ~[<<a_api subproject="server" | module Os_notif >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|~A~R~G>> is for making <<span class="odocwiki_inlinecode"|~Make>>~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="ARG_SIMPLE"| module type Os_notif.ARG_SIMPLE >> ~[<<a_api subproject="server" | module Os_notif >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|~A~R~G~_~S~I~M~P~L~E>> is for making <<span class="odocwiki_inlinecode"|~Make~_~Simple>>~.
+>>
+|
 |@@ @style="tet-align: left;"@@\\C|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Cache_sig"| module type Os_request_cache.Cache_sig >> ~[<<a_api subproject="server" | module Os_request_cache >>~]||
 |@@ @style="tet-align: left;"@@\\I|
@@ -9,7 +16,5 @@
 >>
 |
 |@@ @style="tet-align: left;"@@\\S|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="S"| module type Os_notif.S >> ~[<<a_api subproject="server" | module Os_notif >>~]|<<div class="odocwiki_info"|~Signature for server~-to~-client notifications~.
->>
-|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="S"| module type Os_notif.S >> ~[<<a_api subproject="server" | module Os_notif >>~]||
 \\
