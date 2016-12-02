@@ -12,7 +12,11 @@
           ?oasis_executables:Ocamlbuild_plugin.Pathname.t list ->
           Ocamlbuild_plugin.hook -> unit
       end
-  module type INTERNALS = sig val with_package : string -> string end
+  module type INTERNALS =
+    sig
+      val with_eliom_ppx : ([< `Client | `Server ] -> string) option
+      val with_package : string -> string
+    end
   module MakeIntern :
     functor (I : INTERNALS) (Eliom : ELIOM) ->
       sig
