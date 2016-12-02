@@ -1,6 +1,7 @@
 =~Server ~A~P~I
-==[[server/Eliom_client_common|Eliom_client_common]]
 ==[[server/Eliom_lib|Eliom_lib]]
+==[[server/Eliom_client|Eliom_client]]
+==[[server/Eliom_client_value|Eliom_client_value]]
 ==[[server/Eliom_common|Eliom_common]]
 ==[[server/Eliom_config|Eliom_config]]
 ==[[server/Eliom_request_info|Eliom_request_info]]

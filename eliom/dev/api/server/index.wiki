@@ -5,8 +5,14 @@
 
 
 
-|Eliom_client_common||
 |<<a_api subproject="server" | module Eliom_lib >>|<<div class="odocwiki_info"|~A few common functions used by ~Eliom~.
+>>
+|
+|<<a_api subproject="server" | module Eliom_client >>|<<div class="odocwiki_info"|~Returns whether the application is sent by a server or started on
+    client side~.
+>>
+|
+|<<a_api subproject="server" | module Eliom_client_value >>|<<div class="odocwiki_info"|~Client and shared values
 >>
 |
 |<<a_api subproject="server" | module Eliom_common >>|<<div class="odocwiki_info"|~Low level functions for ~Eliom~, exceptions and types~.

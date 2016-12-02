@@ -5,11 +5,13 @@
 
 
 
-|Eliom_client_common||
 |<<a_api subproject="client" | module Eliom_lib >>|<<div class="odocwiki_info"|~Eliom standard library
 >>
 |
 |<<a_api subproject="client" | module Eliom_client >>|<<div class="odocwiki_info"|~Call server side services and change the current page~.
+>>
+|
+|<<a_api subproject="client" | module Eliom_client_value >>|<<div class="odocwiki_info"|~Client and shared values
 >>
 |
 

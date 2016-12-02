@@ -1,7 +1,7 @@
 =~Client ~A~P~I
-==[[client/Eliom_client_common|Eliom_client_common]]
 ==[[client/Eliom_lib|Eliom_lib]]
 ==[[client/Eliom_client|Eliom_client]]
+==[[client/Eliom_client_value|Eliom_client_value]]
 ==~Content and form creation
 ===[[client/Eliom_content.Html|Eliom_content.Html]]
 ===[[client/Eliom_content.Svg|Eliom_content.Svg]]
