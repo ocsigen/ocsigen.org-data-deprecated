@@ -342,6 +342,33 @@
 >>
 <<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module>> <<a_api text="IO_vectors" | module Lwt_unix.IO_vectors >> <<span class="ocsforge_color_delimiter"|~:>> <<span class="ocsforge_color_keyword"|sig>><<a_api text=".." | module Lwt_unix.IO_vectors >><<span class="ocsforge_color_keyword"|end>>>><<div class="odocwiki_info"|~Sequences of buffer slices for <<a_api | val Lwt_unix.writev >>~.
 >>
+<<pre id="VALreadv" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|readv>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<a_api text="file_descr" | type Lwt_unix.file_descr >> <<span class="ocsforge_color_delimiter"| -> >> <<a_api text="IO_vectors.t" | type Lwt_unix.IO_vectors.t >> <<span class="ocsforge_color_delimiter"| -> >> int <<a_api text="Lwt.t" | type Lwt.t >>>>>><<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|readv fd vs>> reads bytes from <<span class="odocwiki_inlinecode"|fd>> into the buffer slices <<span class="odocwiki_inlinecode"|vs>>~. ~If the
+    operation completes successfully~, the resulting thread indicates the number
+    of bytes read~.
+
+
+    ~Data is always read directly into <<span class="odocwiki_inlinecode"|~Bigarray>> slices~. ~If the ~Unix file
+    descriptor underlying <<span class="odocwiki_inlinecode"|fd>> is in non~-blocking mode~, data is also read
+    directly into <<span class="odocwiki_inlinecode"|bytes>> slices~. ~Otherwise~, data for <<span class="odocwiki_inlinecode"|bytes>> slices is first
+    read into temporary buffers~, then copied~.
+
+
+    ~Note that the returned ~Lwt thread is blocked until failure or a successful
+    read~, even if the underlying file descriptor is in non~-blocking mode~. ~See
+    <<a_api | val Lwt_unix.of_unix_file_descr >> for a discussion of non~-blocking ~I~/~O and ~Lwt~.
+
+
+    ~If <<a_api | val Lwt_unix.IO_vectors.system_limit >> is <<span class="odocwiki_inlinecode"|~Some n>> and the count of slices in <<span class="odocwiki_inlinecode"|vs>>
+    exceeds <<span class="odocwiki_inlinecode"|n>>~, then <<span class="odocwiki_inlinecode"|~Lwt~_unix~.readv>> reads only into the first <<span class="odocwiki_inlinecode"|n>> slices of
+    <<span class="odocwiki_inlinecode"|vs>>~.
+
+
+    ~Not implemented on ~Windows~. ~It should be possible to implement~, upon
+    request~, for ~Windows sockets only~.
+
+
+    ~See [[http://man7.org/linux/man-pages/man3/readv.3p.html| <<span class="odocwiki_inlinecode"|readv~(~3p~)>>]]~.
+>>
 <<pre id="VALwritev" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|writev>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<a_api text="file_descr" | type Lwt_unix.file_descr >> <<span class="ocsforge_color_delimiter"| -> >> <<a_api text="IO_vectors.t" | type Lwt_unix.IO_vectors.t >> <<span class="ocsforge_color_delimiter"| -> >> int <<a_api text="Lwt.t" | type Lwt.t >>>>>><<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|writev fd vs>> writes the bytes in the buffer slices <<span class="odocwiki_inlinecode"|vs>> to the file
     descriptor <<span class="odocwiki_inlinecode"|fd>>~. ~If the operation completes successfully~, the resulting
     thread indicates the number of bytes written~.
@@ -357,9 +384,9 @@
     <<a_api | val Lwt_unix.of_unix_file_descr >> for a discussion of non~-blocking ~I~/~O and ~Lwt~.
 
 
-    ~If <<a_api | val Lwt_unix.IO_vectors.system_limit >> is <<span class="odocwiki_inlinecode"|~Some n>> and <<span class="odocwiki_inlinecode"|~I~O~_vectors~.count vs>> exceeds
-    <<span class="odocwiki_inlinecode"|n>>~, then <<span class="odocwiki_inlinecode"|~Lwt~_unix~.writev>> passes only the first <<span class="odocwiki_inlinecode"|n>> slices in <<span class="odocwiki_inlinecode"|vs>> to the
-    underlying <<span class="odocwiki_inlinecode"|writev>> system call~.
+    ~If <<a_api | val Lwt_unix.IO_vectors.system_limit >> is <<span class="odocwiki_inlinecode"|~Some n>> and the count of slices in <<span class="odocwiki_inlinecode"|vs>>
+    exceeds <<span class="odocwiki_inlinecode"|n>>~, then <<span class="odocwiki_inlinecode"|~Lwt~_unix~.writev>> passes only the first <<span class="odocwiki_inlinecode"|n>> slices in <<span class="odocwiki_inlinecode"|vs>>
+    to the underlying <<span class="odocwiki_inlinecode"|writev>> system call~.
 
 
     ~Not implemented on ~Windows~. ~It should be possible to implement~, upon

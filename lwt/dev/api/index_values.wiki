@@ -1403,6 +1403,9 @@
 |@@class="odocwiki_index"@ @@<<a_api text="readlink"| value Lwt_unix.readlink >> ~[<<a_api | module Lwt_unix >>~]|<<div class="odocwiki_info"|~Wrapper for <<span class="odocwiki_inlinecode"|~Unix~.readlink>>
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api text="readv"| value Lwt_unix.readv >> ~[<<a_api | module Lwt_unix >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|readv fd vs>> reads bytes from <<span class="odocwiki_inlinecode"|fd>> into the buffer slices <<span class="odocwiki_inlinecode"|vs>>~.
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api text="really_input"| value Lwt_chan.really_input >> ~[<<a_api | module Lwt_chan >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="recv"| value Lwt_bytes.recv >> ~[<<a_api | module Lwt_bytes >>~]|<<div class="odocwiki_info"|~Not implemented on ~Windows~.
 >>

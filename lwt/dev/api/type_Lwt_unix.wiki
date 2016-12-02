@@ -83,6 +83,7 @@
       val is_empty : Lwt_unix.IO_vectors.t -> bool
       val system_limit : int option
     end
+  val readv : Lwt_unix.file_descr -> Lwt_unix.IO_vectors.t -> int Lwt.t
   val writev : Lwt_unix.file_descr -> Lwt_unix.IO_vectors.t -> int Lwt.t
   val readable : Lwt_unix.file_descr -> bool
   val writable : Lwt_unix.file_descr -> bool
