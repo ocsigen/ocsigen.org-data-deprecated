@@ -99,7 +99,7 @@ file~.
     pages~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Eliom_notif"| module Eliom_notif >> |<<div class="odocwiki_info"|~Input signature of the functor <<span class="odocwiki_inlinecode"|~Eliom~_notif~.~Make>>~.
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Eliom_notif"| module Eliom_notif >> |<<div class="odocwiki_info"|~Server to client notifications~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Eliom_parameter"| module Eliom_parameter >> |<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|user~_type ~~of~_string ~~to~_string s>> construct a parameter~, labeled
@@ -173,6 +173,7 @@ file~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Ext"| module Eliom_reference.Volatile.Ext >> ~[<<a_api subproject="server" | module Eliom_reference.Volatile >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Ext"| module Eliom_notif.S.Ext >> ~[<<a_api subproject="server" | module Eliom_notif.S >>~]||
 |@@ @style="tet-align: left;"@@\\F|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="F"| module Eliom_tools.F >> ~[<<a_api subproject="server" | module Eliom_tools >>~]|<<div class="odocwiki_info"|~Menus with functional node semantics
 >>
@@ -238,8 +239,15 @@ file~.
 >>
 |
 |@@ @style="tet-align: left;"@@\\M|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Make"| module Eliom_notif.Make >> ~[<<a_api subproject="server" | module Eliom_notif >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Make"| module Eliom_notif.Make >> ~[<<a_api subproject="server" | module Eliom_notif >>~]|<<div class="odocwiki_info"|~Use this functor if you need to customise your notifications with
+    client~-specific data ~(or block notifications for specific clients~)~.
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Make"| module Eliom_mkreg.Make >> ~[<<a_api subproject="server" | module Eliom_mkreg >>~]|<<div class="odocwiki_info"|~Creates modules to register services for one type of pages
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Make_Simple"| module Eliom_notif.Make_Simple >> ~[<<a_api subproject="server" | module Eliom_notif >>~]|<<div class="odocwiki_info"|~Use this functor if you have no need of customising your notifications with
+    client~-specific data~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Make_poly"| module Eliom_mkreg.Make_poly >> ~[<<a_api subproject="server" | module Eliom_mkreg >>~]|<<div class="odocwiki_info"|~Creating modules to register services for one type of

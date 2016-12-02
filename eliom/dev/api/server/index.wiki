@@ -117,7 +117,7 @@ file~.
     the ~React and ~Reactive~Data libraries~.
 >>
 |
-|<<a_api subproject="server" | module Eliom_notif >>|<<div class="odocwiki_info"|~Input signature of the functor <<span class="odocwiki_inlinecode"|~Eliom~_notif~.~Make>>~.
+|<<a_api subproject="server" | module Eliom_notif >>|<<div class="odocwiki_info"|~Server to client notifications~.
 >>
 |
 |<<a_api subproject="server" | module Eliom_cscache >>|<<div class="odocwiki_info"|~Client~-server cache for ~Eliom applications~, that is used both for
@@ -136,20 +136,6 @@ file~.
     around~.
 >>
 |
-
-
-
-
-
-==@@id="2_Extensions"@@~Extensions==
-
-
-
-
-|Eliom_atom||
-|Atom_feed||
-|Eliom_openid||
-|Eliom_s2s||
 
 
 

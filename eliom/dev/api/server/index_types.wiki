@@ -48,6 +48,12 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="chandle"| type Eliom_shared_sigs.RLIST.chandle >> ~[<<a_api subproject="server" | module Eliom_shared_sigs.RLIST >>~]|<<div class="odocwiki_info"|~Client~-side version of ~'a handle
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="client_notif"| type Eliom_notif.ARG.client_notif >> ~[<<a_api subproject="server" | module Eliom_notif.ARG >>~]|<<div class="odocwiki_info"|see <<span class="odocwiki_inlinecode"|~S~.client~_notif>>
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="client_notif"| type Eliom_notif.S.client_notif >> ~[<<a_api subproject="server" | module Eliom_notif.S >>~]|<<div class="odocwiki_info"|client notification type~; ~Can be different from <<span class="odocwiki_inlinecode"|server~_notif>>~.
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="client_process_scope"| type Eliom_common.client_process_scope >> ~[<<a_api subproject="server" | module Eliom_common >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="co"| type Eliom_service_sigs.TYPES.co >> ~[<<a_api subproject="server" | module Eliom_service_sigs.TYPES >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="comet_scope"| type Eliom_comet.Channel.comet_scope >> ~[<<a_api subproject="server" | module Eliom_comet.Channel >>~]||
@@ -118,11 +124,21 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="id"| type Eliom_content.Svg.Id.id >> ~[<<a_api subproject="server" | module Eliom_content.Svg.Id >>~]|<<div class="odocwiki_info"|~The type of global ~S~V~G element identifier~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="identity"| type Eliom_notif.S.identity >> ~[<<a_api subproject="server" | module Eliom_notif.S >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|identity>> is the type of values used to differentiate one client
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="identity"| type Eliom_notif.ARG_SIMPLE.identity >> ~[<<a_api subproject="server" | module Eliom_notif.ARG_SIMPLE >>~]|<<div class="odocwiki_info"|see <<span class="odocwiki_inlinecode"|~S~.identity>>
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="identity"| type Eliom_notif.ARG.identity >> ~[<<a_api subproject="server" | module Eliom_notif.ARG >>~]|<<div class="odocwiki_info"|see <<span class="odocwiki_inlinecode"|~S~.identity>>
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="identity"| type Eliom_notif.S.identity >> ~[<<a_api subproject="server" | module Eliom_notif.S >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|identity>> is the type of values used to differentiate one listener
       from another~.
 >>
 |
 |@@ @style="tet-align: left;"@@\\K|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="key"| type Eliom_notif.ARG_SIMPLE.key >> ~[<<a_api subproject="server" | module Eliom_notif.ARG_SIMPLE >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="key"| type Eliom_notif.ARG.key >> ~[<<a_api subproject="server" | module Eliom_notif.ARG >>~]|<<div class="odocwiki_info"|see <<span class="odocwiki_inlinecode"|~S~.key>>
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="key"| type Eliom_notif.S.key >> ~[<<a_api subproject="server" | module Eliom_notif.S >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|key>> is the type of values designating a given resource~.
 >>
 |
@@ -158,7 +174,7 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="non_localized_params"| type Eliom_parameter_sigs.S.non_localized_params >> ~[<<a_api subproject="server" | module Eliom_parameter_sigs.S >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="non_ocaml"| type Eliom_service_sigs.TYPES.non_ocaml >> ~[<<a_api subproject="server" | module Eliom_service_sigs.TYPES >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="non_reg"| type Eliom_service_sigs.TYPES.non_reg >> ~[<<a_api subproject="server" | module Eliom_service_sigs.TYPES >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="notification"| type Eliom_notif.S.notification >> ~[<<a_api subproject="server" | module Eliom_notif.S >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|notification>> is the type of values to notifiy clients with~.
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="notification"| type Eliom_notif.ARG_SIMPLE.notification >> ~[<<a_api subproject="server" | module Eliom_notif.ARG_SIMPLE >>~]|<<div class="odocwiki_info"|see <<span class="odocwiki_inlinecode"|~A~R~G~.equal~_key>>
 >>
 |
 |@@ @style="tet-align: left;"@@\\O|
@@ -227,6 +243,12 @@
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="server_function"| type Eliom_client.server_function >> ~[<<a_api subproject="server" | module Eliom_client >>~]|<<div class="odocwiki_info"|~A value of type <<span class="odocwiki_inlinecode"|~(~'a~, ~'b~) server~_function>> is created on the server from a
     function <<span class="odocwiki_inlinecode"|~'a ~-~> ~'b ~Lwt~.t>> and provides a given function on the client side~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="server_notif"| type Eliom_notif.ARG.server_notif >> ~[<<a_api subproject="server" | module Eliom_notif.ARG >>~]|<<div class="odocwiki_info"|see <<span class="odocwiki_inlinecode"|~S~.server~_notif>>
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="server_notif"| type Eliom_notif.S.server_notif >> ~[<<a_api subproject="server" | module Eliom_notif.S >>~]|<<div class="odocwiki_info"|server notification type~; ~Can be different from <<span class="odocwiki_inlinecode"|client~_notif>>~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="server_params"| type Eliom_types.server_params >> ~[<<a_api subproject="server" | module Eliom_types >>~]||

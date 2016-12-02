@@ -30,11 +30,6 @@
 ===[[server/Eliom_bus|Eliom_bus]]
 ===[[server/Eliom_comet|Eliom_comet]]
 ===[[server/Eliom_react|Eliom_react]]
-==~Extensions
-===[[server/Eliom_atom|Eliom_atom]]
-===[[server/Atom_feed|Atom_feed]]
-===[[server/Eliom_openid|Eliom_openid]]
-===[[server/Eliom_s2s|Eliom_s2s]]
 ==~Index
 === <<a_api subproject="server" text="Index of types" | index types >>
 === <<a_api subproject="server" text="Index of exceptions" | index exceptions >>

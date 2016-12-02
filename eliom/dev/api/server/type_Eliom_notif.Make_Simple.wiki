@@ -1,9 +1,9 @@
-<<code language="ocaml" | functor (A : ARG) ->
+<<code language="ocaml" | functor (A : ARG_SIMPLE) ->
   sig
-    type identity = A.identity
+    type identity
     type key = A.key
-    type server_notif = A.server_notif
-    type client_notif = A.client_notif
+    type server_notif = A.notification
+    type client_notif = A.notification
     val init : unit -> unit Lwt.t
     val deinit : unit -> unit Lwt.t
     val listen : key -> unit
