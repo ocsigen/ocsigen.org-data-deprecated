@@ -552,7 +552,9 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="get_http_method"| value Eliom_request_info.get_http_method >> ~[<<a_api subproject="server" | module Eliom_request_info >>~]|<<div class="odocwiki_info"|returns the ~H~T~T~P method used for the request ~(usually ~G~E~T or ~P~O~S~T~)~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="get_identity"| value Eliom_notif.ARG_SIMPLE.get_identity >> ~[<<a_api subproject="server" | module Eliom_notif.ARG_SIMPLE >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="get_identity"| value Eliom_notif.ARG_SIMPLE.get_identity >> ~[<<a_api subproject="server" | module Eliom_notif.ARG_SIMPLE >>~]|<<div class="odocwiki_info"|see <<a_api subproject="server" | val Eliom_notif.ARG.equal_key >>
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="get_identity"| value Eliom_notif.ARG.get_identity >> ~[<<a_api subproject="server" | module Eliom_notif.ARG >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|get~_identity>> is a function returning a value of type <<span class="odocwiki_inlinecode"|identity>>
       corresponding to a client~.
 >>

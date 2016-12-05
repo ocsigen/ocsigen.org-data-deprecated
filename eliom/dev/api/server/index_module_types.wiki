@@ -8,7 +8,7 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="ARG"| module type Eliom_notif.ARG >> ~[<<a_api subproject="server" | module Eliom_notif >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|~A~R~G>> is for making <<span class="odocwiki_inlinecode"|~Make>>
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="ARG_SIMPLE"| module type Eliom_notif.ARG_SIMPLE >> ~[<<a_api subproject="server" | module Eliom_notif >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|~A~R~G~_~S~I~M~P~L~E>> is for making <<span class="odocwiki_inlinecode"|~Make~_~Simple>>
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="ARG_SIMPLE"| module type Eliom_notif.ARG_SIMPLE >> ~[<<a_api subproject="server" | module Eliom_notif >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|~A~R~G~_~S~I~M~P~L~E>> is for making <<a_api subproject="server" | module Eliom_notif.Make_Simple >>
 >>
 |
 |@@ @style="tet-align: left;"@@\\H|
