@@ -12,6 +12,10 @@
 * <<span class="odocwiki_inlinecode"|~_s>> when the function returns a thread and calls are serialised
 * <<span class="odocwiki_inlinecode"|~_p>> when the function returns a thread and calls are parallelised
 
+    ~This module may undergo redesign or deprecation in the future~. ~See
+    [[https://github.com/ocsigen/lwt/issues/250| ~Flaws of <<span class="odocwiki_inlinecode"|~Lwt~_stream>>]]~. ~In
+    the meantime~, you may want to consider using alternatives such as
+    [[https://github.com/c-cube/lwt-pipe| lwt~-pipe]]~.
 >>
 
 
@@ -20,17 +24,35 @@
 <<pre id="VALfrom" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|from>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<span class="ocsforge_color_delimiter"| ( >>unit <<span class="ocsforge_color_delimiter"| -> >> 'a option <<a_api text="Lwt.t" | type Lwt.t >><<span class="ocsforge_color_delimiter"| ) >> <<span class="ocsforge_color_delimiter"| -> >> 'a <<a_api text="t" | type Lwt_stream.t >>>>>><<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|from f>> creates a stream from the given input function~. <<span class="odocwiki_inlinecode"|f>> is
       called each time more input is needed~, and the stream ends when
       <<span class="odocwiki_inlinecode"|f>> returns <<span class="odocwiki_inlinecode"|~None>>~.
+
+
+      ~If <<span class="odocwiki_inlinecode"|f>>~, or the thread produced by <<span class="odocwiki_inlinecode"|f>>~, raises an exception~, that exception
+      is forwarded to the consumer of the stream ~(for example~, a caller of
+      <<a_api | val Lwt_stream.get >>~)~. ~Note that this does not end the stream~. ~A subsequent attempt to
+      read from the stream will cause another call to <<span class="odocwiki_inlinecode"|f>>~, which may succeed
+      with a value~.
 >>
 <<pre id="VALfrom_direct" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|from~_direct>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<span class="ocsforge_color_delimiter"| ( >>unit <<span class="ocsforge_color_delimiter"| -> >> 'a option<<span class="ocsforge_color_delimiter"| ) >> <<span class="ocsforge_color_delimiter"| -> >> 'a <<a_api text="t" | type Lwt_stream.t >>>>>><<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|from~_direct f>> does the same as <<a_api | val Lwt_stream.from >> but with a function
       that does not return a thread~. ~It is preferred that this
       function be used rather than wrapping <<span class="odocwiki_inlinecode"|f>> into a function which
       returns a thread~.
+
+
+      ~The behavior when <<span class="odocwiki_inlinecode"|f>> raises an exception is the same as for <<a_api | val Lwt_stream.from >>~,
+      except that <<span class="odocwiki_inlinecode"|f>> does not produce a thread~.
 >>
 <<pre id="EXCEPTIONClosed" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|exception>> <<span class="odocwiki_name"|Closed>>>><<div class="odocwiki_info"|~Exception raised by the push function of a push~-stream when
       pushing an element after the end of stream ~(<<span class="odocwiki_inlinecode"|~= ~None>>~) has been
       pushed~.
 >>
 <<pre id="VALcreate" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|create>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|unit <<span class="ocsforge_color_delimiter"| -> >> 'a <<a_api text="t" | type Lwt_stream.t >> * <<span class="ocsforge_color_delimiter"| ( >>'a option <<span class="ocsforge_color_delimiter"| -> >> unit<<span class="ocsforge_color_delimiter"| ) >>>>>><<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|create ~(~)>> returns a new stream and a push function~.
+
+
+      ~To notify the stream~'s consumer of errors~, either use a separate
+      communication channel~, or use a
+      [[http://caml.inria.fr/pub/docs/manual-ocaml/libref/Pervasives.html#TYPEresult|
+      <<span class="odocwiki_inlinecode"|result>>]] stream~. ~There is no way to push an exception into a
+      push~-stream~.
 >>
 <<pre id="VALcreate_with_reference" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|create~_with~_reference>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|\\  unit <<span class="ocsforge_color_delimiter"| -> >> 'a <<a_api text="t" | type Lwt_stream.t >> * <<span class="ocsforge_color_delimiter"| ( >>'a option <<span class="ocsforge_color_delimiter"| -> >> unit<<span class="ocsforge_color_delimiter"| ) >> * <<span class="ocsforge_color_delimiter"| ( >>'b <<span class="ocsforge_color_delimiter"| -> >> unit<<span class="ocsforge_color_delimiter"| ) >>>>>><<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|create~_with~_reference ~(~)>> returns a new stream and a push
       function~. ~The last function allows a reference to be set to an
