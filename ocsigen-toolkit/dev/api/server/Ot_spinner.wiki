@@ -12,4 +12,8 @@
 
     ~On server side~, it will wait for <<span class="odocwiki_inlinecode"|th>> to be finished before
     returning its result ~(and never display a spinner~)~.
+
+
+    ~If you want the spinner on both sides~, you can use <<span class="odocwiki_inlinecode"|with~_spinner~_no~_lwt>>
+    and <<span class="odocwiki_inlinecode"|~Eliom~_content~.~Html~.~C~.node>>~.
 >>
