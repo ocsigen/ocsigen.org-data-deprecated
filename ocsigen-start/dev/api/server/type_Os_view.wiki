@@ -40,6 +40,9 @@
   val username :
     Os_types.User.t -> [> Html_types.div ] Eliom_content.Html.F.elt
   val password_form :
+    ?a_placeholder_pwd:string ->
+    ?a_placeholder_confirmation:string ->
+    ?text_send_button:string ->
     ?a:[< Html_types.form_attrib ] Eliom_content.Html.D.attrib list ->
     service:(unit, 'a, Eliom_service.post, 'b, 'c, 'd, 'e,
              [< `WithSuffix | `WithoutSuffix ], 'f,

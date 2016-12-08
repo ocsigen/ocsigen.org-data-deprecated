@@ -509,6 +509,9 @@
       user with ~I~D <<span class="odocwiki_inlinecode"|userid>> is <<span class="odocwiki_inlinecode"|email>>~.
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="is_main_email"| value Os_current_user.is_main_email >> ~[<<a_api subproject="server" | module Os_current_user >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|is~_main~_email email>> returns <<span class="odocwiki_inlinecode"|true>> if <<span class="odocwiki_inlinecode"|email>> is the main email of the current user~.
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="is_preregistered"| value Os_user.is_preregistered >> ~[<<a_api subproject="server" | module Os_user >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|is~_preregistered email>> returns <<span class="odocwiki_inlinecode"|true>> if a user exists with email
     <<span class="odocwiki_inlinecode"|email>>~.
 >>

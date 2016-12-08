@@ -51,8 +51,7 @@
 |<<a_api subproject="client" | module Os_user >>|<<div class="odocwiki_info"|~Type alias to <<a_api subproject="client" | type Os_types.User.id >> to allow to use <<span class="odocwiki_inlinecode"|~Os~_user~.id>>~.
 >>
 |
-|<<a_api subproject="client" | module Os_user_proxy >>|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|get~_data~_rpc>> is a ~R~P~C to ~<~<a~_api subproject~="server" ~| module
-    ~Os~_user~_proxy~.get~_data~_rpc~'~>~>
+|<<a_api subproject="client" | module Os_user_proxy >>|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|get~_data userid>> returns the user which has ~I~D <<span class="odocwiki_inlinecode"|userid>>~.
 >>
 |
 |<<a_api subproject="client" | module Os_userbox >>|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|upload~_pic~_link ~?a ~?content ~?crop ~?input ~?submit action~_after~_submit
