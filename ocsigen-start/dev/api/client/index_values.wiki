@@ -17,7 +17,7 @@
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="avatar"| value Os_user_view.avatar >> ~[<<a_api subproject="client" | module Os_user_view >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|avatar user>> creates an image ~H~T~M~L tag ~(with ~Eliom~_content~.~H~T~M~L~.~F~) with an
-    alt attribute to <<span class="odocwiki_inlinecode"|"picture">> and with class <<span class="odocwiki_inlinecode"|"os~_avatar">>~.
+    alt attribute to <<span class="odocwiki_inlinecode"|"picture">> and with class <<span class="odocwiki_inlinecode"|"os~-avatar">>~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="avatar_of_user"| value Os_user.avatar_of_user >> ~[<<a_api subproject="client" | module Os_user >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|avatar~_of~_user user>> returns the avatar of the user <<span class="odocwiki_inlinecode"|user>> as <<span class="odocwiki_inlinecode"|~Some

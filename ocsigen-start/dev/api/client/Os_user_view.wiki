@@ -62,7 +62,7 @@
 >>
 <<div class="odocwiki_param_info"|<<span class="code"|a>> : attributes of the form~.>>
 <<pre id="VALavatar" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|avatar>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<a_api subproject="client" text="Os_types.User.t" | type Os_types.User.t >> <<span class="ocsforge_color_delimiter"| -> >> [> `I | `Img ] <<span class="ocsforge_color_uid"|Eliom_content>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_uid"|Html>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_uid"|F>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|elt>>>>>><<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|avatar user>> creates an image ~H~T~M~L tag ~(with ~Eliom~_content~.~H~T~M~L~.~F~) with an
-    alt attribute to <<span class="odocwiki_inlinecode"|"picture">> and with class <<span class="odocwiki_inlinecode"|"os~_avatar">>~. ~If the user has
+    alt attribute to <<span class="odocwiki_inlinecode"|"picture">> and with class <<span class="odocwiki_inlinecode"|"os~-avatar">>~. ~If the user has
     no avatar~, the default icon representing the user ~(see ~<~<a~_api
     project~="ocsigen~-toolkit" ~| val ~Ot~_icons~.~F~.user ~>~>~) is returned~.
 >>
