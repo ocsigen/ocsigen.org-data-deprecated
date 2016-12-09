@@ -22,7 +22,7 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Os_comet"| module Os_comet >> |<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|restart~_process ~(~)>> restarts the client~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Os_current_user"| module Os_current_user >> |<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|get~_current~_user ~(~)>> returns the current user as a <<a_api subproject="client" | type Os_types.User.t >> type~.
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Os_current_user"| module Os_current_user >> |<<div class="odocwiki_info"|~This module provides functions and types to manage the current user~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Os_date"| module Os_date >> |<<div class="odocwiki_info"|~Type representing a local calendar~.

@@ -5,7 +5,7 @@
 
 
 
-|<<a_api subproject="client" | module Os_current_user >>|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|get~_current~_user ~(~)>> returns the current user as a <<a_api subproject="client" | type Os_types.User.t >> type~.
+|<<a_api subproject="client" | module Os_current_user >>|<<div class="odocwiki_info"|~This module provides functions and types to manage the current user~.
 >>
 |
 |<<a_api subproject="client" | module Os_date >>|<<div class="odocwiki_info"|~Type representing a local calendar~.
