@@ -73,7 +73,8 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="connected_rpc"| value Os_session.connected_rpc >> ~[<<a_api subproject="client" | module Os_session >>~]|<<div class="odocwiki_info"|~Wrapper for server functions ~(see <<a_api subproject="client" | val Os_session.connected_fun >>~)~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="connected_wrapper"| value Os_session.connected_wrapper >> ~[<<a_api subproject="client" | module Os_session >>~]|<<div class="odocwiki_info"|~Wrapper for server functions when you do not need userid~.
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="connected_wrapper"| value Os_session.connected_wrapper >> ~[<<a_api subproject="client" | module Os_session >>~]|<<div class="odocwiki_info"|~Wrapper for server functions when you do not need userid
+    ~(see <<a_api subproject="client" | val Os_session.connected_fun >>~)~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="content"| value Os_page.content >> ~[<<a_api subproject="client" | module Os_page >>~]|<<div class="odocwiki_info"|~Specifies a page with an optional title ~(with the argument <<span class="odocwiki_inlinecode"|~?title>>~)~, some
