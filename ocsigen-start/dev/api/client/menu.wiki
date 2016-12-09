@@ -18,8 +18,7 @@
 ==[[client/Os_types|Os_types]]
 ==[[client/Os_user|Os_user]]
 ==[[client/Os_user_proxy|Os_user_proxy]]
-==[[client/Os_userbox|Os_userbox]]
-==[[client/Os_view|Os_view]]
+==[[client/Os_user_view|Os_user_view]]
 ==~Index
 === <<a_api subproject="client" text="Index of types" | index types >>
 === <<a_api subproject="client" text="Index of exceptions" | index exceptions >>

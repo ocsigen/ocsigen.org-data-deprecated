@@ -71,11 +71,7 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Os_user_proxy"| module Os_user_proxy >> |<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|get~_data userid>> returns the user which has ~I~D <<span class="odocwiki_inlinecode"|userid>>~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Os_userbox"| module Os_userbox >> |<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|upload~_pic~_link ~?a ~?content ~?crop ~?input ~?submit action~_after~_submit
-    service>>
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Os_view"| module Os_view >> |<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|check~_password~_confirmation ~~password ~~confirmation>> adds a listener to
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Os_user_view"| module Os_user_view >> |<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|check~_password~_confirmation ~~password ~~confirmation>> adds a listener to
     the element <<span class="odocwiki_inlinecode"|confirmation>> which checks if the value of <<span class="odocwiki_inlinecode"|password>> and
     <<span class="odocwiki_inlinecode"|confirmation>> match~.
 >>

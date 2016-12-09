@@ -128,10 +128,7 @@
     the client and the server~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Os_userbox"| module Os_userbox >> |<<div class="odocwiki_info"|~Connexion box~, box with connected user information and menu
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Os_view"| module Os_view >> |<<div class="odocwiki_info"|~This module defines functions to create password forms~, connection forms~,
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Os_user_view"| module Os_user_view >> |<<div class="odocwiki_info"|~This module defines functions to create password forms~, connection forms~,
     settings buttons and other common contents arising in applications~.
 >>
 |

@@ -82,8 +82,6 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="t"| type Os_fcm_notif.Notification.t >> ~[<<a_api subproject="server" | module Os_fcm_notif.Notification >>~]|<<div class="odocwiki_info"|~The type representing a notification
 >>
 |
-|@@ @style="tet-align: left;"@@\\U|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="uploader"| type Os_userbox.uploader >> ~[<<a_api subproject="server" | module Os_userbox >>~]||
 |@@ @style="tet-align: left;"@@\\V|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="value"| type Os_request_cache.Cache_sig.value >> ~[<<a_api subproject="server" | module Os_request_cache.Cache_sig >>~]|<<div class="odocwiki_info"|~The type of the value
 >>

@@ -71,11 +71,12 @@
 |<<a_api subproject="server" | module Os_user >>|<<div class="odocwiki_info"|~This module provides functions and types about users~.
 >>
 |
-|Os_userproxy||
-|<<a_api subproject="server" | module Os_userbox >>|<<div class="odocwiki_info"|~Connexion box~, box with connected user information and menu
+|<<a_api subproject="server" | module Os_user_proxy >>|<<div class="odocwiki_info"|~This module implements a cache of user using ~<~<a~_api project~="eliom" ~|
+    module ~Eliom~_cscache~>~> which allows to keep synchronized the cache between
+    the client and the server~.
 >>
 |
-|<<a_api subproject="server" | module Os_view >>|<<div class="odocwiki_info"|~This module defines functions to create password forms~, connection forms~,
+|<<a_api subproject="server" | module Os_user_view >>|<<div class="odocwiki_info"|~This module defines functions to create password forms~, connection forms~,
     settings buttons and other common contents arising in applications~.
 >>
 |

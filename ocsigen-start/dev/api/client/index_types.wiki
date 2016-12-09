@@ -29,6 +29,4 @@
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="t"| type Os_platform.t >> ~[<<a_api subproject="client" | module Os_platform >>~]||
-|@@ @style="tet-align: left;"@@\\U|
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="uploader"| type Os_userbox.uploader >> ~[<<a_api subproject="client" | module Os_userbox >>~]||
 \\

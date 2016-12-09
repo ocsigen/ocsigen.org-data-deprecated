@@ -20,9 +20,8 @@
 ==[[server/Os_types|Os_types]]
 ==[[server/Os_uploader|Os_uploader]]
 ==[[server/Os_user|Os_user]]
-==[[server/Os_userproxy|Os_userproxy]]
-==[[server/Os_userbox|Os_userbox]]
-==[[server/Os_view|Os_view]]
+==[[server/Os_user_proxy|Os_user_proxy]]
+==[[server/Os_user_view|Os_user_view]]
 ==~Index
 === <<a_api subproject="server" text="Index of types" | index types >>
 === <<a_api subproject="server" text="Index of exceptions" | index exceptions >>
