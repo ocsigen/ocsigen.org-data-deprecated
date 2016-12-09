@@ -171,13 +171,6 @@
     <<span class="odocwiki_inlinecode"|~Os~_types~.user>> has not been completed yet~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="is_email_validated"| value Os_current_user.is_email_validated >> ~[<<a_api subproject="client" | module Os_current_user >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|is~_email~_validated email>> returns <<span class="odocwiki_inlinecode"|true>> if <<span class="odocwiki_inlinecode"|email>> is a valided email for
-    the current user~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="is_main_email"| value Os_current_user.is_main_email >> ~[<<a_api subproject="client" | module Os_current_user >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|is~_main~_email email>> returns <<span class="odocwiki_inlinecode"|true>> if <<span class="odocwiki_inlinecode"|email>> is the main email of the current user~.
->>
-|
 |@@ @style="tet-align: left;"@@\\J|
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="js"| value Os_page.PAGE.js >> ~[<<a_api subproject="client" | module Os_page.PAGE >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|js>> corresponds to the ~Java~Script files to include into each page~.
 >>
@@ -335,7 +328,7 @@
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="upload_pic_link"| value Os_userbox.upload_pic_link >> ~[<<a_api subproject="client" | module Os_userbox >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|upload~_pic~_link ~?a ~?content ~?crop ~?input ~?submit action~_after~_submit
-    service userid>>
+    service>>
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="user"| value Os_icons.ICSIG.user >> ~[<<a_api subproject="client" | module Os_icons.ICSIG >>~]||

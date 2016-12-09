@@ -55,7 +55,7 @@
 >>
 |
 |<<a_api subproject="client" | module Os_userbox >>|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|upload~_pic~_link ~?a ~?content ~?crop ~?input ~?submit action~_after~_submit
-    service userid>>
+    service>>
 >>
 |
 |<<a_api subproject="client" | module Os_view >>|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|check~_password~_confirmation ~~password ~~confirmation>> adds a listener to

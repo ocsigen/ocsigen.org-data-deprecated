@@ -867,7 +867,7 @@
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="upload_pic_link"| value Os_userbox.upload_pic_link >> ~[<<a_api subproject="server" | module Os_userbox >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|upload~_pic~_link ~?a ~?content ~?crop ~?input ~?submit action~_after~_submit
-    service userid>>
+    service>>
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="user"| value Os_icons.ICSIG.user >> ~[<<a_api subproject="server" | module Os_icons.ICSIG >>~]||
