@@ -65,12 +65,12 @@
            Html_types.label_content_fun Eliom_content.Html.D.Raw.elt list ->
     ?submit:Html_types.button_attrib Eliom_content.Html.D.Raw.attrib list *
             Html_types.button_content_fun Eliom_content.Html.D.Raw.elt list ->
-    (unit -> unit) Eliom_client_value.t ->
+    ?onclick:(unit -> unit) Eliom_client_value.t ->
     (unit, unit) Ot_picture_uploader.service ->
     [> `A of Html_types.a_content ] Eliom_content.Html.D.Raw.elt
   val reset_tips_link :
-    (unit -> unit) Eliom_client_value.t ->
-    [> `A of [> `PCDATA ] ] Eliom_content.Html.D.Raw.elt
+    ?close:(unit -> unit) Eliom_client_value.t ->
+    unit -> [> `A of [> `PCDATA ] ] Eliom_content.Html.D.Raw.elt
   val disconnect_button :
     ?text_logout:string ->
     unit -> [> Html_types.li_content_fun ] Eliom_content.Html.F.elt

@@ -449,6 +449,12 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="get_data_rpc'"| value Os_user_proxy.get_data_rpc' >> ~[<<a_api subproject="server" | module Os_user_proxy >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|get~_data~_rpc~' userid>> returns the user which has ~I~D <<span class="odocwiki_inlinecode"|userid>>~.
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="get_image_height"| value Os_uploader.get_image_height >> ~[<<a_api subproject="server" | module Os_uploader >>~]|<<div class="odocwiki_info"|~Return the height of the given image~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="get_image_width"| value Os_uploader.get_image_width >> ~[<<a_api subproject="server" | module Os_uploader >>~]|<<div class="odocwiki_info"|~Return the width of the given image~.
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="get_mailer"| value Os_email.get_mailer >> ~[<<a_api subproject="server" | module Os_email >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|get~_mailer ~(~)>> returns the name of mailer program~.
 >>
 |
@@ -703,6 +709,10 @@
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="reset_tips_service"| value Os_tips.reset_tips_service >> ~[<<a_api subproject="server" | module Os_tips >>~]|<<div class="odocwiki_info"|~A non~-attached service that will reset tips~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="resize_image"| value Os_uploader.resize_image >> ~[<<a_api subproject="server" | module Os_uploader >>~]|<<div class="odocwiki_info"|~Resize the given image ~(<<span class="odocwiki_inlinecode"|src>>~) and save it to <<span class="odocwiki_inlinecode"|dst>> ~(default is the source
+   file~)~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="results_of_t"| value Os_fcm_notif.Response.results_of_t >> ~[<<a_api subproject="server" | module Os_fcm_notif.Response >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|results~_of~_t response>> returns the status of the messages processed~.
