@@ -571,34 +571,26 @@
       return b}
     function caml_raise_sys_error(msg)
      {caml_raise_with_string(caml_global_data.Sys_error,msg)}
-    function caml_ml_flush(oc)
-     {if(!oc.opened)caml_raise_sys_error("Cannot flush a closed channel");
-      if(oc.buffer == "")return 0;
-      if(oc.output)
-       switch(oc.output.length)
-        {case 2:oc.output(oc,oc.buffer);break;default:oc.output(oc.buffer)}
-      oc.buffer = "";
+    var caml_ml_channels=new Array();
+    function caml_ml_flush(chanid)
+     {var chan=caml_ml_channels[chanid];
+      if(!chan.opened)caml_raise_sys_error("Cannot flush a closed channel");
+      if(!chan.buffer || chan.buffer == "")return 0;
+      if
+       (chan.fd
+        &&
+        caml_global_data.fds[chan.fd]
+        &&
+        caml_global_data.fds[chan.fd].output)
+       {var output=caml_global_data.fds[chan.fd].output;
+        switch(output.length)
+         {case 2:output(chanid,chan.buffer);break;default:output(chan.buffer)}}
+      chan.buffer = "";
       return 0}
-    var file_inode=0;
-    function unix_gettimeofday(){return new Date().getTime() / 1e3}
-    function unix_time(){return Math.floor(unix_gettimeofday())}
-    function MlFile(content)
-     {this.data = content;
-      this.inode = file_inode++;
-      var now=unix_time();
-      this.atime = now;
-      this.mtime = now;
-      this.ctime = now}
-    MlFile.prototype
-    =
-    {truncate:function(){this.data = caml_create_string(0);this.modified()},
-     modified:
-     function(){var now=unix_time();this.atime = now;this.mtime = now}};
-    function caml_ml_string_length(s){return s.l}
-    function caml_raise_no_such_file(name)
-     {name = name instanceof MlString?name.toString():name;
-      caml_raise_sys_error(name + ": No such file or directory")}
-    var caml_current_dir="/";
+    if(joo_global_object.process && joo_global_object.process.cwd)
+     var caml_current_dir=joo_global_object.process.cwd();
+    else
+     var caml_current_dir="/static/";
     function caml_make_path(name)
      {name = name instanceof MlString?name.toString():name;
       if(name.charCodeAt(0) != 47)name = caml_current_dir + name;
@@ -611,130 +603,258 @@
          default:ncomp.push(comp[i]);break}
       ncomp.orig = name;
       return ncomp}
-    function MlDir()
-     {this.content = {};
-      this.inode = file_inode++;
-      var now=unix_time();
-      this.atime = now;
-      this.mtime = now;
-      this.ctime = now}
-    MlDir.prototype
-    =
-    {exists:function(name){return this.content[name]?1:0},
-     mk:function(name,c){this.content[name] = c},
-     get:function(name){return this.content[name]},
-     list:function(){var a=[];for(var n in this.content)a.push(n);return a},
-     remove:function(name){delete this.content[name]}};
-    var caml_root_dir=new MlDir();
-    caml_root_dir.mk("",new MlDir());
-    function caml_fs_content(path)
-     {var dir=caml_root_dir;
-      for(var i=0;i < path.length;i++)
-       {if(!(dir.exists && dir.exists(path[i])))
-         caml_raise_no_such_file(path.orig);
-        dir = dir.get(path[i])}
-      return dir}
-    function caml_sys_is_directory(name)
-     {var path=caml_make_path(name),dir=caml_fs_content(path);
-      return dir instanceof MlDir?1:0}
+    function caml_raise_no_such_file(name)
+     {name = name instanceof MlString?name.toString():name;
+      caml_raise_sys_error(name + ": No such file or directory")}
     function caml_string_of_array(a){return new MlString(4,a,a.length)}
-    function caml_array_of_string(s)
-     {if(s.t != 4)caml_convert_string_to_array(s);return s.c}
-    function caml_fs_register(name,content)
-     {var path=caml_make_path(name),dir=caml_root_dir;
-      for(var i=0;i < path.length - 1;i++)
-       {var d=path[i];
-        if(!dir.exists(d))dir.mk(d,new MlDir());
-        dir = dir.get(d);
-        if(!(dir instanceof MlDir))
-         caml_raise_sys_error(path.orig + " : file already exists")}
-      var d=path[path.length - 1];
-      if(dir.exists(d))
-       caml_raise_sys_error(path.orig + " : file already exists");
-      if(content instanceof MlDir)
-       dir.mk(d,content);
-      else
-       if(content instanceof MlFile)
-        dir.mk(d,content);
-       else
-        if(content instanceof MlString)
-         dir.mk(d,new MlFile(content));
-        else
-         if(content instanceof Array)
-          dir.mk(d,new MlFile(caml_string_of_array(content)));
-         else
-          if(content.toString)
-           {var mlstring=caml_new_string(content.toString());
-            dir.mk(d,new MlFile(mlstring))}
-          else
-           caml_invalid_argument("caml_fs_register");
-      return 0}
-    function caml_sys_file_exists(name)
-     {var dir=caml_root_dir,path=caml_make_path(name),auto_load,pos;
-      for(var i=0;i < path.length;i++)
-       {if(dir.auto){auto_load = dir.auto;pos = i}
-        if(!(dir.exists && dir.exists(path[i])))
-         return auto_load?auto_load(path,pos):0;
-        dir = dir.get(path[i])}
-      return 1}
-    function caml_sys_open_internal(idx,file,flags)
-     {if(caml_global_data.fds === undefined)
-       caml_global_data.fds = new Array();
-      flags = flags?flags:{};
-      var info={};
-      info.file = file;
-      info.offset = flags.append?caml_ml_string_length(file.data):0;
-      info.flags = flags;
-      caml_global_data.fds[idx] = info;
-      caml_global_data.fd_last_idx = idx;
-      return idx}
-    function caml_sys_open(name,flags,_perms)
-     {var f={};
-      while(flags)
-       {switch(flags[1])
-         {case 0:f.rdonly = 1;break;
-          case 1:f.wronly = 1;break;
-          case 2:f.append = 1;break;
-          case 3:f.create = 1;break;
-          case 4:f.truncate = 1;break;
-          case 5:f.excl = 1;break;
-          case 6:f.binary = 1;break;
-          case 7:f.text = 1;break;
-          case 8:f.nonblock = 1;break
-          }
-        flags = flags[2]}
-      var name2=name.toString(),path=caml_make_path(name);
-      if(f.rdonly && f.wronly)
+    function caml_string_bound_error()
+     {caml_invalid_argument("index out of bounds")}
+    function caml_string_unsafe_get(s,i)
+     {switch(s.t & 6)
+       {default:if(i >= s.c.length)return 0;case 0:return s.c.charCodeAt(i);
+        case 4:return s.c[i]
+        }}
+    function caml_string_get(s,i)
+     {if(i >>> 0 >= s.l)caml_string_bound_error();
+      return caml_string_unsafe_get(s,i)}
+    function caml_ml_string_length(s){return s.l}
+    function MlFile(){}
+    function MlFakeFile(content){this.data = content}
+    MlFakeFile.prototype = new MlFile();
+    MlFakeFile.prototype.truncate
+    =
+    function(len)
+     {var old=this.data;
+      this.data = caml_create_string(len | 0);
+      caml_blit_string(old,0,this.data,0,len)};
+    MlFakeFile.prototype.length
+    =
+    function(){return caml_ml_string_length(this.data)};
+    MlFakeFile.prototype.write
+    =
+    function(offset,buf,pos,len)
+     {var clen=this.length();
+      if(offset + len >= clen)
+       {var new_str=caml_create_string(offset + len),old_data=this.data;
+        this.data = new_str;
+        caml_blit_string(old_data,0,this.data,0,clen)}
+      caml_blit_string(buf,pos,this.data,offset,len);
+      return 0};
+    MlFakeFile.prototype.read
+    =
+    function(offset,buf,pos,len)
+     {var clen=this.length();
+      caml_blit_string(this.data,offset,buf,pos,len);
+      return 0};
+    MlFakeFile.prototype.read_one
+    =
+    function(offset){return caml_string_get(this.data,offset)};
+    MlFakeFile.prototype.close = function(){};
+    MlFakeFile.prototype.constructor = MlFakeFile;
+    function MlFakeDevice(root,f)
+     {this.content = {};this.root = root;this.lookupFun = f}
+    MlFakeDevice.prototype.nm = function(name){return this.root + name};
+    MlFakeDevice.prototype.lookup
+    =
+    function(name)
+     {if(!this.content[name] && this.lookupFun)
+       {var
+         res=
+          this.lookupFun(caml_new_string(this.root),caml_new_string(name));
+        if(res != 0)this.content[name] = new MlFakeFile(res[1])}};
+    MlFakeDevice.prototype.exists
+    =
+    function(name){this.lookup(name);return this.content[name]?1:0};
+    MlFakeDevice.prototype.readdir
+    =
+    function(name)
+     {var
+       name_slash=name == ""?"":name + "/",
+       r=new RegExp("^" + name_slash + "([^/]*)"),
+       seen={},
+       a=[];
+      for(var n in this.content)
+       {var m=n.match(r);if(m && !seen[m[1]]){seen[m[1]] = true;a.push(m[1])}}
+      return a};
+    MlFakeDevice.prototype.is_dir
+    =
+    function(name)
+     {var
+       name_slash=name == ""?"":name + "/",
+       r=new RegExp("^" + name_slash + "([^/]*)"),
+       a=[];
+      for(var n in this.content){var m=n.match(r);if(m)return 1}
+      return 0};
+    MlFakeDevice.prototype.unlink
+    =
+    function(name)
+     {var ok=this.content[name]?true:false;
+      delete this.content[name];
+      return ok};
+    MlFakeDevice.prototype.open
+    =
+    function(name,f)
+     {if(f.rdonly && f.wronly)
        caml_raise_sys_error
-        (name2 + " : flags Open_rdonly and Open_wronly are not compatible");
+        (this.nm(name)
+         +
+         " : flags Open_rdonly and Open_wronly are not compatible");
       if(f.text && f.binary)
        caml_raise_sys_error
-        (name2 + " : flags Open_text and Open_binary are not compatible");
-      if(caml_sys_file_exists(name))
-       {if(caml_sys_is_directory(name))
-         caml_raise_sys_error(name2 + " : is a directory");
+        (this.nm(name)
+         +
+         " : flags Open_text and Open_binary are not compatible");
+      this.lookup(name);
+      if(this.content[name])
+       {if(this.is_dir(name))
+         caml_raise_sys_error(this.nm(name) + " : is a directory");
         if(f.create && f.excl)
-         caml_raise_sys_error(name2 + " : file already exists");
-        var
-         idx=caml_global_data.fd_last_idx?caml_global_data.fd_last_idx:0,
-         file=caml_fs_content(path);
+         caml_raise_sys_error(this.nm(name) + " : file already exists");
+        var file=this.content[name];
         if(f.truncate)file.truncate();
-        return caml_sys_open_internal(idx + 1,file,f)}
+        return file}
       else
        if(f.create)
-        {var idx=caml_global_data.fd_last_idx?caml_global_data.fd_last_idx:0;
-         caml_fs_register(name,caml_create_string(0));
-         var file=caml_fs_content(path);
-         return caml_sys_open_internal(idx + 1,file,f)}
+        {this.content[name] = new MlFakeFile(caml_create_string(0));
+         return this.content[name]}
        else
-        caml_raise_no_such_file(name)}
-    caml_sys_open_internal(0,new MlFile(caml_create_string(0)));
-    caml_sys_open_internal(1,new MlFile(caml_create_string(0)));
-    caml_sys_open_internal(2,new MlFile(caml_create_string(0)));
-    function caml_ml_open_descriptor_in(fd)
-     {var data=caml_global_data.fds[fd];
-      if(data.flags.wronly)caml_raise_sys_error("fd " + fd + " is writeonly");
-      return {file:data.file,offset:data.offset,fd:fd,opened:true,refill:null}}
+        caml_raise_no_such_file(this.nm(name))};
+    MlFakeDevice.prototype.register
+    =
+    function(name,content)
+     {if(this.content[name])
+       caml_raise_sys_error(this.nm(name) + " : file already exists");
+      if(content instanceof MlString)
+       this.content[name] = new MlFakeFile(content);
+      else
+       if(content instanceof Array)
+        this.content[name] = new MlFakeFile(caml_string_of_array(content));
+       else
+        if(content.toString)
+         {var mlstring=caml_new_string(content.toString());
+          this.content[name] = new MlFakeFile(mlstring)}};
+    MlFakeDevice.prototype.constructor = MlFakeDevice;
+    function caml_array_of_string(s)
+     {if(s.t != 4)caml_convert_string_to_array(s);return s.c}
+    function caml_string_unsafe_set(s,i,c)
+     {c &= 255;
+      if(s.t != 4)
+       {if(i == s.c.length)
+         {s.c += String.fromCharCode(c);if(i + 1 == s.l)s.t = 0;return 0}
+        caml_convert_string_to_array(s)}
+      s.c[i] = c;
+      return 0}
+    function caml_string_set(s,i,c)
+     {if(i >>> 0 >= s.l)caml_string_bound_error();
+      return caml_string_unsafe_set(s,i,c)}
+    var Buffer=joo_global_object.Buffer;
+    function MlNodeFile(fd){this.fs = require("fs");this.fd = fd}
+    MlNodeFile.prototype = new MlFile();
+    MlNodeFile.prototype.truncate
+    =
+    function(len){this.fs.ftruncateSync(this.fd,len | 0)};
+    MlNodeFile.prototype.length
+    =
+    function(){return this.fs.fstatSync(this.fd).size};
+    MlNodeFile.prototype.write
+    =
+    function(offset,buf,buf_offset,len)
+     {var a=caml_array_of_string(buf);
+      if(!a instanceof joo_global_object.Uint8Array)
+       a = new (joo_global_object.Uint8Array)(a);
+      var buffer=new Buffer(a);
+      this.fs.writeSync(this.fd,buffer,buf_offset,len,offset);
+      return 0};
+    MlNodeFile.prototype.read
+    =
+    function(offset,buf,buf_offset,len)
+     {var a=caml_array_of_string(buf);
+      if(!(a instanceof joo_global_object.Uint8Array))
+       a = new (joo_global_object.Uint8Array)(a);
+      var buffer=new Buffer(a);
+      this.fs.readSync(this.fd,buffer,buf_offset,len,offset);
+      for(var i=0;i < len;i++)
+       caml_string_set(buf,buf_offset + i,buffer[buf_offset + i]);
+      return 0};
+    MlNodeFile.prototype.read_one
+    =
+    function(offset)
+     {var a=new (joo_global_object.Uint8Array)(1),buffer=new Buffer(a);
+      this.fs.readSync(this.fd,buffer,0,1,offset);
+      return buffer[0]};
+    MlNodeFile.prototype.close = function(){this.fs.closeSync(this.fd)};
+    MlNodeFile.prototype.constructor = MlNodeFile;
+    function MlNodeDevice(root){this.fs = require("fs");this.root = root}
+    MlNodeDevice.prototype.nm = function(name){return this.root + name};
+    MlNodeDevice.prototype.exists
+    =
+    function(name){return this.fs.existsSync(this.nm(name))?1:0};
+    MlNodeDevice.prototype.readdir
+    =
+    function(name){return this.fs.readdirSync(this.nm(name))};
+    MlNodeDevice.prototype.is_dir
+    =
+    function(name){return this.fs.statSync(this.nm(name)).isDirectory()?1:0};
+    MlNodeDevice.prototype.unlink
+    =
+    function(name)
+     {var b=this.fs.existsSync(this.nm(name))?1:0;
+      this.fs.unlinkSync(this.nm(name));
+      return b};
+    MlNodeDevice.prototype.open
+    =
+    function(name,f)
+     {var consts=require("constants"),res=0;
+      for(var key in f)
+       switch(key)
+        {case "rdonly":res |= consts.O_RDONLY;break;
+         case "wronly":res |= consts.O_WRONLY;break;
+         case "append":res |= consts.O_WRONLY | consts.O_APPEND;break;
+         case "create":res |= consts.O_CREAT;break;
+         case "truncate":res |= consts.O_TRUNC;break;
+         case "excl":res |= consts.O_EXCL;break;
+         case "binary":res |= consts.O_BINARY;break;
+         case "text":res |= consts.O_TEXT;break;
+         case "nonblock":res |= consts.O_NONBLOCK;break
+         }
+      var fd=this.fs.openSync(this.nm(name),res);
+      return new MlNodeFile(fd)};
+    MlNodeDevice.prototype.constructor = MlNodeDevice;
+    var jsoo_mount_point=[];
+    if(typeof require == "undefined")
+     jsoo_mount_point.push({path:"/",device:new MlFakeDevice("/")});
+    else
+     jsoo_mount_point.push({path:"/",device:new MlNodeDevice("/")});
+    jsoo_mount_point.push
+     ({path:"/static/",device:new MlFakeDevice("/static/")});
+    function resolve_fs_device(name)
+     {var
+       path=caml_make_path(name),
+       name=path.join("/"),
+       name_slash=name + "/",
+       res;
+      for(var i=0;i < jsoo_mount_point.length;i++)
+       {var m=jsoo_mount_point[i];
+        if
+         (name_slash.search(m.path)
+          ==
+          0
+          &&
+          (!res || res.path.length < m.path.length))
+         res
+         =
+         {path:m.path,
+          device:m.device,
+          rest:name.substring(m.path.length,name.length)}}
+      return res}
+    function caml_std_output(chanid,s)
+     {var
+       chan=caml_ml_channels[chanid],
+       str=caml_new_string(s),
+       slen=caml_ml_string_length(str);
+      chan.file.write(chan.offset,str,0,slen);
+      chan.offset += slen;
+      return 0}
     function js_print_stderr(s)
      {var g=joo_global_object;
       if(g.process && g.process.stdout && g.process.stdout.write)
@@ -751,28 +871,70 @@
        {if(s.charCodeAt(s.length - 1) == 10)s = s.substr(0,s.length - 1);
         var v=g.console;
         v && v.log && v.log(s)}}
-    var caml_ml_out_channels=new Array();
-    function caml_std_output(chan,s)
-     {var
-       str=caml_new_string(s),
-       slen=caml_ml_string_length(str),
-       clen=caml_ml_string_length(chan.file.data),
-       offset=chan.offset;
-      if(offset + slen >= clen)
-       {var new_str=caml_create_string(offset + slen);
-        caml_blit_string(chan.file.data,0,new_str,0,clen);
-        caml_blit_string(str,0,new_str,offset,slen);
-        chan.file.data = new_str}
-      chan.offset += slen;
-      chan.file.modified();
-      return 0}
+    function caml_sys_open_internal(idx,output,file,flags)
+     {if(caml_global_data.fds === undefined)
+       caml_global_data.fds = new Array();
+      flags = flags?flags:{};
+      var info={};
+      info.file = file;
+      info.offset = flags.append?file.length():0;
+      info.flags = flags;
+      info.output = output;
+      caml_global_data.fds[idx] = info;
+      if(!caml_global_data.fd_last_idx || idx > caml_global_data.fd_last_idx)
+       caml_global_data.fd_last_idx = idx;
+      return idx}
+    function caml_sys_open(name,flags,_perms)
+     {var f={};
+      while(flags)
+       {switch(flags[1])
+         {case 0:f.rdonly = 1;break;
+          case 1:f.wronly = 1;break;
+          case 2:f.append = 1;break;
+          case 3:f.create = 1;break;
+          case 4:f.truncate = 1;break;
+          case 5:f.excl = 1;break;
+          case 6:f.binary = 1;break;
+          case 7:f.text = 1;break;
+          case 8:f.nonblock = 1;break
+          }
+        flags = flags[2]}
+      if(f.rdonly && f.wronly)
+       caml_raise_sys_error
+        (name.toString()
+         +
+         " : flags Open_rdonly and Open_wronly are not compatible");
+      if(f.text && f.binary)
+       caml_raise_sys_error
+        (name.toString()
+         +
+         " : flags Open_text and Open_binary are not compatible");
+      var
+       root=resolve_fs_device(name),
+       file=root.device.open(root.rest,f),
+       idx=caml_global_data.fd_last_idx?caml_global_data.fd_last_idx:0;
+      return caml_sys_open_internal(idx + 1,caml_std_output,file,f)}
+    caml_sys_open_internal
+     (0,caml_std_output,new MlFakeFile(caml_create_string(0)));
+    caml_sys_open_internal
+     (1,js_print_stdout,new MlFakeFile(caml_create_string(0)));
+    caml_sys_open_internal
+     (2,js_print_stderr,new MlFakeFile(caml_create_string(0)));
+    function caml_ml_open_descriptor_in(fd)
+     {var data=caml_global_data.fds[fd];
+      if(data.flags.wronly)caml_raise_sys_error("fd " + fd + " is writeonly");
+      var
+       channel=
+        {file:data.file,
+         offset:data.offset,
+         fd:fd,
+         opened:true,
+         out:false,
+         refill:null};
+      caml_ml_channels[channel.fd] = channel;
+      return channel.fd}
     function caml_ml_open_descriptor_out(fd)
-     {var output;
-      switch(fd)
-       {case 1:output = js_print_stdout;break;
-        case 2:output = js_print_stderr;break;
-        default:output = caml_std_output}
-      var data=caml_global_data.fds[fd];
+     {var data=caml_global_data.fds[fd];
       if(data.flags.rdonly)caml_raise_sys_error("fd " + fd + " is readonly");
       var
        channel=
@@ -780,18 +942,25 @@
          offset:data.offset,
          fd:fd,
          opened:true,
-         buffer:"",
-         output:output};
-      caml_ml_out_channels[channel.fd] = channel;
-      return channel}
+         out:true,
+         buffer:""};
+      caml_ml_channels[channel.fd] = channel;
+      return channel.fd}
     function caml_ml_out_channels_list()
      {var l=0;
-      for(var c=0;c < caml_ml_out_channels.length;c++)
-       if(caml_ml_out_channels[c] && caml_ml_out_channels[c].opened)
-        l = [0,caml_ml_out_channels[c],l];
+      for(var c=0;c < caml_ml_channels.length;c++)
+       if
+        (caml_ml_channels[c]
+         &&
+         caml_ml_channels[c].opened
+         &&
+         caml_ml_channels[c].out)
+        l = [0,caml_ml_channels[c],l];
       return l}
-    function caml_ml_output(oc,buffer,offset,len)
-     {if(!oc.opened)caml_raise_sys_error("Cannot output to a closed channel");
+    function caml_ml_output(chanid,buffer,offset,len)
+     {var chan=caml_ml_channels[chanid];
+      if(!chan.opened)
+       caml_raise_sys_error("Cannot output to a closed channel");
       var string;
       if(offset == 0 && caml_ml_string_length(buffer) == len)
        string = buffer;
@@ -800,15 +969,15 @@
         caml_blit_string(buffer,offset,string,0,len)}
       var jsstring=string.toString(),id=jsstring.lastIndexOf("\n");
       if(id < 0)
-       oc.buffer += jsstring;
+       chan.buffer += jsstring;
       else
-       {oc.buffer += jsstring.substr(0,id + 1);
-        caml_ml_flush(oc);
-        oc.buffer += jsstring.substr(id + 1)}
+       {chan.buffer += jsstring.substr(0,id + 1);
+        caml_ml_flush(chanid);
+        chan.buffer += jsstring.substr(id + 1)}
       return 0}
-    function caml_ml_output_char(oc,c)
+    function caml_ml_output_char(chanid,c)
      {var s=caml_new_string(String.fromCharCode(c));
-      caml_ml_output(oc,s,0,1);
+      caml_ml_output(chanid,s,0,1);
       return 0}
     function caml_raise_constant(tag){throw tag}
     function caml_raise_zero_divide()
@@ -830,27 +999,6 @@
      {caml_named_values[caml_bytes_of_string(nm)] = v;return 0}
     var caml_oo_last_id=0;
     function caml_set_oo_id(b){b[2] = caml_oo_last_id++;return b}
-    function caml_string_bound_error()
-     {caml_invalid_argument("index out of bounds")}
-    function caml_string_unsafe_get(s,i)
-     {switch(s.t & 6)
-       {default:if(i >= s.c.length)return 0;case 0:return s.c.charCodeAt(i);
-        case 4:return s.c[i]
-        }}
-    function caml_string_get(s,i)
-     {if(i >>> 0 >= s.l)caml_string_bound_error();
-      return caml_string_unsafe_get(s,i)}
-    function caml_string_unsafe_set(s,i,c)
-     {c &= 255;
-      if(s.t != 4)
-       {if(i == s.c.length)
-         {s.c += String.fromCharCode(c);if(i + 1 == s.l)s.t = 0;return 0}
-        caml_convert_string_to_array(s)}
-      s.c[i] = c;
-      return 0}
-    function caml_string_set(s,i,c)
-     {if(i >>> 0 >= s.l)caml_string_bound_error();
-      return caml_string_unsafe_set(s,i,c)}
     function caml_sys_exit(code)
      {var g=joo_global_object;
       if(g.quit)g.quit(code);

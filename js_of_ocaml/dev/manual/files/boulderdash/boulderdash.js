@@ -253,9 +253,276 @@
      {caml_raise_with_string(caml_global_data.Failure,msg)}
     function caml_convert_raw_backtrace_slot()
      {caml_failwith("caml_convert_raw_backtrace_slot")}
+    if(joo_global_object.process && joo_global_object.process.cwd)
+     var caml_current_dir=joo_global_object.process.cwd();
+    else
+     var caml_current_dir="/static/";
+    function caml_make_path(name)
+     {name = name instanceof MlString?name.toString():name;
+      if(name.charCodeAt(0) != 47)name = caml_current_dir + name;
+      var comp=name.split("/"),ncomp=[];
+      for(var i=0;i < comp.length;i++)
+       switch(comp[i])
+        {case "..":if(ncomp.length > 1)ncomp.pop();break;
+         case ".":break;
+         case "":if(ncomp.length == 0)ncomp.push("");break;
+         default:ncomp.push(comp[i]);break}
+      ncomp.orig = name;
+      return ncomp}
+    function caml_raise_sys_error(msg)
+     {caml_raise_with_string(caml_global_data.Sys_error,msg)}
+    function caml_raise_no_such_file(name)
+     {name = name instanceof MlString?name.toString():name;
+      caml_raise_sys_error(name + ": No such file or directory")}
+    function caml_string_of_array(a){return new MlString(4,a,a.length)}
+    function caml_string_bound_error()
+     {caml_invalid_argument("index out of bounds")}
+    function caml_string_unsafe_get(s,i)
+     {switch(s.t & 6)
+       {default:if(i >= s.c.length)return 0;case 0:return s.c.charCodeAt(i);
+        case 4:return s.c[i]
+        }}
+    function caml_string_get(s,i)
+     {if(i >>> 0 >= s.l)caml_string_bound_error();
+      return caml_string_unsafe_get(s,i)}
     function caml_create_string(len)
      {if(len < 0)caml_invalid_argument("String.create");
       return new MlString(len?2:9,"",len)}
+    function caml_ml_string_length(s){return s.l}
+    function MlFile(){}
+    function MlFakeFile(content){this.data = content}
+    MlFakeFile.prototype = new MlFile();
+    MlFakeFile.prototype.truncate
+    =
+    function(len)
+     {var old=this.data;
+      this.data = caml_create_string(len | 0);
+      caml_blit_string(old,0,this.data,0,len)};
+    MlFakeFile.prototype.length
+    =
+    function(){return caml_ml_string_length(this.data)};
+    MlFakeFile.prototype.write
+    =
+    function(offset,buf,pos,len)
+     {var clen=this.length();
+      if(offset + len >= clen)
+       {var new_str=caml_create_string(offset + len),old_data=this.data;
+        this.data = new_str;
+        caml_blit_string(old_data,0,this.data,0,clen)}
+      caml_blit_string(buf,pos,this.data,offset,len);
+      return 0};
+    MlFakeFile.prototype.read
+    =
+    function(offset,buf,pos,len)
+     {var clen=this.length();
+      caml_blit_string(this.data,offset,buf,pos,len);
+      return 0};
+    MlFakeFile.prototype.read_one
+    =
+    function(offset){return caml_string_get(this.data,offset)};
+    MlFakeFile.prototype.close = function(){};
+    MlFakeFile.prototype.constructor = MlFakeFile;
+    function MlFakeDevice(root,f)
+     {this.content = {};this.root = root;this.lookupFun = f}
+    MlFakeDevice.prototype.nm = function(name){return this.root + name};
+    MlFakeDevice.prototype.lookup
+    =
+    function(name)
+     {if(!this.content[name] && this.lookupFun)
+       {var
+         res=
+          this.lookupFun(caml_new_string(this.root),caml_new_string(name));
+        if(res != 0)this.content[name] = new MlFakeFile(res[1])}};
+    MlFakeDevice.prototype.exists
+    =
+    function(name){this.lookup(name);return this.content[name]?1:0};
+    MlFakeDevice.prototype.readdir
+    =
+    function(name)
+     {var
+       name_slash=name == ""?"":name + "/",
+       r=new RegExp("^" + name_slash + "([^/]*)"),
+       seen={},
+       a=[];
+      for(var n in this.content)
+       {var m=n.match(r);if(m && !seen[m[1]]){seen[m[1]] = true;a.push(m[1])}}
+      return a};
+    MlFakeDevice.prototype.is_dir
+    =
+    function(name)
+     {var
+       name_slash=name == ""?"":name + "/",
+       r=new RegExp("^" + name_slash + "([^/]*)"),
+       a=[];
+      for(var n in this.content){var m=n.match(r);if(m)return 1}
+      return 0};
+    MlFakeDevice.prototype.unlink
+    =
+    function(name)
+     {var ok=this.content[name]?true:false;
+      delete this.content[name];
+      return ok};
+    MlFakeDevice.prototype.open
+    =
+    function(name,f)
+     {if(f.rdonly && f.wronly)
+       caml_raise_sys_error
+        (this.nm(name)
+         +
+         " : flags Open_rdonly and Open_wronly are not compatible");
+      if(f.text && f.binary)
+       caml_raise_sys_error
+        (this.nm(name)
+         +
+         " : flags Open_text and Open_binary are not compatible");
+      this.lookup(name);
+      if(this.content[name])
+       {if(this.is_dir(name))
+         caml_raise_sys_error(this.nm(name) + " : is a directory");
+        if(f.create && f.excl)
+         caml_raise_sys_error(this.nm(name) + " : file already exists");
+        var file=this.content[name];
+        if(f.truncate)file.truncate();
+        return file}
+      else
+       if(f.create)
+        {this.content[name] = new MlFakeFile(caml_create_string(0));
+         return this.content[name]}
+       else
+        caml_raise_no_such_file(this.nm(name))};
+    MlFakeDevice.prototype.register
+    =
+    function(name,content)
+     {if(this.content[name])
+       caml_raise_sys_error(this.nm(name) + " : file already exists");
+      if(content instanceof MlString)
+       this.content[name] = new MlFakeFile(content);
+      else
+       if(content instanceof Array)
+        this.content[name] = new MlFakeFile(caml_string_of_array(content));
+       else
+        if(content.toString)
+         {var mlstring=caml_new_string(content.toString());
+          this.content[name] = new MlFakeFile(mlstring)}};
+    MlFakeDevice.prototype.constructor = MlFakeDevice;
+    function caml_array_of_string(s)
+     {if(s.t != 4)caml_convert_string_to_array(s);return s.c}
+    function caml_string_unsafe_set(s,i,c)
+     {c &= 255;
+      if(s.t != 4)
+       {if(i == s.c.length)
+         {s.c += String.fromCharCode(c);if(i + 1 == s.l)s.t = 0;return 0}
+        caml_convert_string_to_array(s)}
+      s.c[i] = c;
+      return 0}
+    function caml_string_set(s,i,c)
+     {if(i >>> 0 >= s.l)caml_string_bound_error();
+      return caml_string_unsafe_set(s,i,c)}
+    var Buffer=joo_global_object.Buffer;
+    function MlNodeFile(fd){this.fs = require("fs");this.fd = fd}
+    MlNodeFile.prototype = new MlFile();
+    MlNodeFile.prototype.truncate
+    =
+    function(len){this.fs.ftruncateSync(this.fd,len | 0)};
+    MlNodeFile.prototype.length
+    =
+    function(){return this.fs.fstatSync(this.fd).size};
+    MlNodeFile.prototype.write
+    =
+    function(offset,buf,buf_offset,len)
+     {var a=caml_array_of_string(buf);
+      if(!a instanceof joo_global_object.Uint8Array)
+       a = new (joo_global_object.Uint8Array)(a);
+      var buffer=new Buffer(a);
+      this.fs.writeSync(this.fd,buffer,buf_offset,len,offset);
+      return 0};
+    MlNodeFile.prototype.read
+    =
+    function(offset,buf,buf_offset,len)
+     {var a=caml_array_of_string(buf);
+      if(!(a instanceof joo_global_object.Uint8Array))
+       a = new (joo_global_object.Uint8Array)(a);
+      var buffer=new Buffer(a);
+      this.fs.readSync(this.fd,buffer,buf_offset,len,offset);
+      for(var i=0;i < len;i++)
+       caml_string_set(buf,buf_offset + i,buffer[buf_offset + i]);
+      return 0};
+    MlNodeFile.prototype.read_one
+    =
+    function(offset)
+     {var a=new (joo_global_object.Uint8Array)(1),buffer=new Buffer(a);
+      this.fs.readSync(this.fd,buffer,0,1,offset);
+      return buffer[0]};
+    MlNodeFile.prototype.close = function(){this.fs.closeSync(this.fd)};
+    MlNodeFile.prototype.constructor = MlNodeFile;
+    function MlNodeDevice(root){this.fs = require("fs");this.root = root}
+    MlNodeDevice.prototype.nm = function(name){return this.root + name};
+    MlNodeDevice.prototype.exists
+    =
+    function(name){return this.fs.existsSync(this.nm(name))?1:0};
+    MlNodeDevice.prototype.readdir
+    =
+    function(name){return this.fs.readdirSync(this.nm(name))};
+    MlNodeDevice.prototype.is_dir
+    =
+    function(name){return this.fs.statSync(this.nm(name)).isDirectory()?1:0};
+    MlNodeDevice.prototype.unlink
+    =
+    function(name)
+     {var b=this.fs.existsSync(this.nm(name))?1:0;
+      this.fs.unlinkSync(this.nm(name));
+      return b};
+    MlNodeDevice.prototype.open
+    =
+    function(name,f)
+     {var consts=require("constants"),res=0;
+      for(var key in f)
+       switch(key)
+        {case "rdonly":res |= consts.O_RDONLY;break;
+         case "wronly":res |= consts.O_WRONLY;break;
+         case "append":res |= consts.O_WRONLY | consts.O_APPEND;break;
+         case "create":res |= consts.O_CREAT;break;
+         case "truncate":res |= consts.O_TRUNC;break;
+         case "excl":res |= consts.O_EXCL;break;
+         case "binary":res |= consts.O_BINARY;break;
+         case "text":res |= consts.O_TEXT;break;
+         case "nonblock":res |= consts.O_NONBLOCK;break
+         }
+      var fd=this.fs.openSync(this.nm(name),res);
+      return new MlNodeFile(fd)};
+    MlNodeDevice.prototype.constructor = MlNodeDevice;
+    var jsoo_mount_point=[];
+    if(typeof require == "undefined")
+     jsoo_mount_point.push({path:"/",device:new MlFakeDevice("/")});
+    else
+     jsoo_mount_point.push({path:"/",device:new MlNodeDevice("/")});
+    jsoo_mount_point.push
+     ({path:"/static/",device:new MlFakeDevice("/static/")});
+    function resolve_fs_device(name)
+     {var
+       path=caml_make_path(name),
+       name=path.join("/"),
+       name_slash=name + "/",
+       res;
+      for(var i=0;i < jsoo_mount_point.length;i++)
+       {var m=jsoo_mount_point[i];
+        if
+         (name_slash.search(m.path)
+          ==
+          0
+          &&
+          (!res || res.path.length < m.path.length))
+         res
+         =
+         {path:m.path,
+          device:m.device,
+          rest:name.substring(m.path.length,name.length)}}
+      return res}
+    function caml_create_file(name,content)
+     {var root=resolve_fs_device(name);
+      if(!root.device.register)caml_failwith("cannot register file");
+      root.device.register(root.rest,content);
+      return 0}
     function caml_equal(x,y){return +(caml_compare_val(x,y,false) == 0)}
     function caml_fill_string(s,i,l,c)
      {if(l > 0)
@@ -404,101 +671,6 @@
         var n=f.prec - s.length;
         if(n > 0)s = caml_str_repeat(n,"0") + s}
       return caml_finish_formatting(f,s)}
-    function caml_raise_constant(tag){throw tag}
-    function caml_raise_not_found()
-     {caml_raise_constant(caml_global_data.Not_found)}
-    function unix_gettimeofday(){return new Date().getTime() / 1e3}
-    function unix_time(){return Math.floor(unix_gettimeofday())}
-    function caml_string_of_array(a){return new MlString(4,a,a.length)}
-    var file_inode=0;
-    function MlDir()
-     {this.content = {};
-      this.inode = file_inode++;
-      var now=unix_time();
-      this.atime = now;
-      this.mtime = now;
-      this.ctime = now}
-    MlDir.prototype
-    =
-    {exists:function(name){return this.content[name]?1:0},
-     mk:function(name,c){this.content[name] = c},
-     get:function(name){return this.content[name]},
-     list:function(){var a=[];for(var n in this.content)a.push(n);return a},
-     remove:function(name){delete this.content[name]}};
-    var caml_root_dir=new MlDir();
-    caml_root_dir.mk("",new MlDir());
-    function caml_raise_sys_error(msg)
-     {caml_raise_with_string(caml_global_data.Sys_error,msg)}
-    function caml_raise_no_such_file(name)
-     {name = name instanceof MlString?name.toString():name;
-      caml_raise_sys_error(name + ": No such file or directory")}
-    function caml_fs_content(path)
-     {var dir=caml_root_dir;
-      for(var i=0;i < path.length;i++)
-       {if(!(dir.exists && dir.exists(path[i])))
-         caml_raise_no_such_file(path.orig);
-        dir = dir.get(path[i])}
-      return dir}
-    var caml_current_dir="/";
-    function caml_make_path(name)
-     {name = name instanceof MlString?name.toString():name;
-      if(name.charCodeAt(0) != 47)name = caml_current_dir + name;
-      var comp=name.split("/"),ncomp=[];
-      for(var i=0;i < comp.length;i++)
-       switch(comp[i])
-        {case "..":if(ncomp.length > 1)ncomp.pop();break;
-         case ".":break;
-         case "":if(ncomp.length == 0)ncomp.push("");break;
-         default:ncomp.push(comp[i]);break}
-      ncomp.orig = name;
-      return ncomp}
-    function MlFile(content)
-     {this.data = content;
-      this.inode = file_inode++;
-      var now=unix_time();
-      this.atime = now;
-      this.mtime = now;
-      this.ctime = now}
-    MlFile.prototype
-    =
-    {truncate:function(){this.data = caml_create_string(0);this.modified()},
-     modified:
-     function(){var now=unix_time();this.atime = now;this.mtime = now}};
-    function caml_fs_file_content(name)
-     {var path=caml_make_path(name),f=caml_fs_content(path);
-      if(f instanceof MlFile){var now=unix_time();f.atime = now;return f.data}
-      caml_raise_not_found()}
-    function caml_array_of_string(s)
-     {if(s.t != 4)caml_convert_string_to_array(s);return s.c}
-    function caml_fs_register(name,content)
-     {var path=caml_make_path(name),dir=caml_root_dir;
-      for(var i=0;i < path.length - 1;i++)
-       {var d=path[i];
-        if(!dir.exists(d))dir.mk(d,new MlDir());
-        dir = dir.get(d);
-        if(!(dir instanceof MlDir))
-         caml_raise_sys_error(path.orig + " : file already exists")}
-      var d=path[path.length - 1];
-      if(dir.exists(d))
-       caml_raise_sys_error(path.orig + " : file already exists");
-      if(content instanceof MlDir)
-       dir.mk(d,content);
-      else
-       if(content instanceof MlFile)
-        dir.mk(d,content);
-       else
-        if(content instanceof MlString)
-         dir.mk(d,new MlFile(content));
-        else
-         if(content instanceof Array)
-          dir.mk(d,new MlFile(caml_string_of_array(content)));
-         else
-          if(content.toString)
-           {var mlstring=caml_new_string(content.toString());
-            dir.mk(d,new MlFile(mlstring))}
-          else
-           caml_invalid_argument("caml_fs_register");
-      return 0}
     function caml_get_exception_raw_backtrace(){return [0]}
     function caml_greaterequal(x,y)
      {return +(caml_compare_val(x,y,false) >= 0)}
@@ -570,12 +742,6 @@
         var n=f.prec - buffer.length;
         if(n > 0)buffer = caml_str_repeat(n,"0") + buffer}
       return caml_finish_formatting(f,buffer)}
-    function caml_string_unsafe_get(s,i)
-     {switch(s.t & 6)
-       {default:if(i >= s.c.length)return 0;case 0:return s.c.charCodeAt(i);
-        case 4:return s.c[i]
-        }}
-    function caml_ml_string_length(s){return s.l}
     function caml_parse_sign_and_base(s)
      {var
        i=0,
@@ -726,83 +892,30 @@
       b[0] = 0;
       for(var i=1;i < len;i++)b[i] = init;
       return b}
-    function caml_ml_flush(oc)
-     {if(!oc.opened)caml_raise_sys_error("Cannot flush a closed channel");
-      if(oc.buffer == "")return 0;
-      if(oc.output)
-       switch(oc.output.length)
-        {case 2:oc.output(oc,oc.buffer);break;default:oc.output(oc.buffer)}
-      oc.buffer = "";
+    var caml_ml_channels=new Array();
+    function caml_ml_flush(chanid)
+     {var chan=caml_ml_channels[chanid];
+      if(!chan.opened)caml_raise_sys_error("Cannot flush a closed channel");
+      if(!chan.buffer || chan.buffer == "")return 0;
+      if
+       (chan.fd
+        &&
+        caml_global_data.fds[chan.fd]
+        &&
+        caml_global_data.fds[chan.fd].output)
+       {var output=caml_global_data.fds[chan.fd].output;
+        switch(output.length)
+         {case 2:output(chanid,chan.buffer);break;default:output(chan.buffer)}}
+      chan.buffer = "";
       return 0}
-    function caml_sys_is_directory(name)
-     {var path=caml_make_path(name),dir=caml_fs_content(path);
-      return dir instanceof MlDir?1:0}
-    function caml_sys_file_exists(name)
-     {var dir=caml_root_dir,path=caml_make_path(name),auto_load,pos;
-      for(var i=0;i < path.length;i++)
-       {if(dir.auto){auto_load = dir.auto;pos = i}
-        if(!(dir.exists && dir.exists(path[i])))
-         return auto_load?auto_load(path,pos):0;
-        dir = dir.get(path[i])}
-      return 1}
-    function caml_sys_open_internal(idx,file,flags)
-     {if(caml_global_data.fds === undefined)
-       caml_global_data.fds = new Array();
-      flags = flags?flags:{};
-      var info={};
-      info.file = file;
-      info.offset = flags.append?caml_ml_string_length(file.data):0;
-      info.flags = flags;
-      caml_global_data.fds[idx] = info;
-      caml_global_data.fd_last_idx = idx;
-      return idx}
-    function caml_sys_open(name,flags,_perms)
-     {var f={};
-      while(flags)
-       {switch(flags[1])
-         {case 0:f.rdonly = 1;break;
-          case 1:f.wronly = 1;break;
-          case 2:f.append = 1;break;
-          case 3:f.create = 1;break;
-          case 4:f.truncate = 1;break;
-          case 5:f.excl = 1;break;
-          case 6:f.binary = 1;break;
-          case 7:f.text = 1;break;
-          case 8:f.nonblock = 1;break
-          }
-        flags = flags[2]}
-      var name2=name.toString(),path=caml_make_path(name);
-      if(f.rdonly && f.wronly)
-       caml_raise_sys_error
-        (name2 + " : flags Open_rdonly and Open_wronly are not compatible");
-      if(f.text && f.binary)
-       caml_raise_sys_error
-        (name2 + " : flags Open_text and Open_binary are not compatible");
-      if(caml_sys_file_exists(name))
-       {if(caml_sys_is_directory(name))
-         caml_raise_sys_error(name2 + " : is a directory");
-        if(f.create && f.excl)
-         caml_raise_sys_error(name2 + " : file already exists");
-        var
-         idx=caml_global_data.fd_last_idx?caml_global_data.fd_last_idx:0,
-         file=caml_fs_content(path);
-        if(f.truncate)file.truncate();
-        return caml_sys_open_internal(idx + 1,file,f)}
-      else
-       if(f.create)
-        {var idx=caml_global_data.fd_last_idx?caml_global_data.fd_last_idx:0;
-         caml_fs_register(name,caml_create_string(0));
-         var file=caml_fs_content(path);
-         return caml_sys_open_internal(idx + 1,file,f)}
-       else
-        caml_raise_no_such_file(name)}
-    caml_sys_open_internal(0,new MlFile(caml_create_string(0)));
-    caml_sys_open_internal(1,new MlFile(caml_create_string(0)));
-    caml_sys_open_internal(2,new MlFile(caml_create_string(0)));
-    function caml_ml_open_descriptor_in(fd)
-     {var data=caml_global_data.fds[fd];
-      if(data.flags.wronly)caml_raise_sys_error("fd " + fd + " is writeonly");
-      return {file:data.file,offset:data.offset,fd:fd,opened:true,refill:null}}
+    function caml_std_output(chanid,s)
+     {var
+       chan=caml_ml_channels[chanid],
+       str=caml_new_string(s),
+       slen=caml_ml_string_length(str);
+      chan.file.write(chan.offset,str,0,slen);
+      chan.offset += slen;
+      return 0}
     function js_print_stderr(s)
      {var g=joo_global_object;
       if(g.process && g.process.stdout && g.process.stdout.write)
@@ -819,28 +932,70 @@
        {if(s.charCodeAt(s.length - 1) == 10)s = s.substr(0,s.length - 1);
         var v=g.console;
         v && v.log && v.log(s)}}
-    var caml_ml_out_channels=new Array();
-    function caml_std_output(chan,s)
-     {var
-       str=caml_new_string(s),
-       slen=caml_ml_string_length(str),
-       clen=caml_ml_string_length(chan.file.data),
-       offset=chan.offset;
-      if(offset + slen >= clen)
-       {var new_str=caml_create_string(offset + slen);
-        caml_blit_string(chan.file.data,0,new_str,0,clen);
-        caml_blit_string(str,0,new_str,offset,slen);
-        chan.file.data = new_str}
-      chan.offset += slen;
-      chan.file.modified();
-      return 0}
+    function caml_sys_open_internal(idx,output,file,flags)
+     {if(caml_global_data.fds === undefined)
+       caml_global_data.fds = new Array();
+      flags = flags?flags:{};
+      var info={};
+      info.file = file;
+      info.offset = flags.append?file.length():0;
+      info.flags = flags;
+      info.output = output;
+      caml_global_data.fds[idx] = info;
+      if(!caml_global_data.fd_last_idx || idx > caml_global_data.fd_last_idx)
+       caml_global_data.fd_last_idx = idx;
+      return idx}
+    function caml_sys_open(name,flags,_perms)
+     {var f={};
+      while(flags)
+       {switch(flags[1])
+         {case 0:f.rdonly = 1;break;
+          case 1:f.wronly = 1;break;
+          case 2:f.append = 1;break;
+          case 3:f.create = 1;break;
+          case 4:f.truncate = 1;break;
+          case 5:f.excl = 1;break;
+          case 6:f.binary = 1;break;
+          case 7:f.text = 1;break;
+          case 8:f.nonblock = 1;break
+          }
+        flags = flags[2]}
+      if(f.rdonly && f.wronly)
+       caml_raise_sys_error
+        (name.toString()
+         +
+         " : flags Open_rdonly and Open_wronly are not compatible");
+      if(f.text && f.binary)
+       caml_raise_sys_error
+        (name.toString()
+         +
+         " : flags Open_text and Open_binary are not compatible");
+      var
+       root=resolve_fs_device(name),
+       file=root.device.open(root.rest,f),
+       idx=caml_global_data.fd_last_idx?caml_global_data.fd_last_idx:0;
+      return caml_sys_open_internal(idx + 1,caml_std_output,file,f)}
+    caml_sys_open_internal
+     (0,caml_std_output,new MlFakeFile(caml_create_string(0)));
+    caml_sys_open_internal
+     (1,js_print_stdout,new MlFakeFile(caml_create_string(0)));
+    caml_sys_open_internal
+     (2,js_print_stderr,new MlFakeFile(caml_create_string(0)));
+    function caml_ml_open_descriptor_in(fd)
+     {var data=caml_global_data.fds[fd];
+      if(data.flags.wronly)caml_raise_sys_error("fd " + fd + " is writeonly");
+      var
+       channel=
+        {file:data.file,
+         offset:data.offset,
+         fd:fd,
+         opened:true,
+         out:false,
+         refill:null};
+      caml_ml_channels[channel.fd] = channel;
+      return channel.fd}
     function caml_ml_open_descriptor_out(fd)
-     {var output;
-      switch(fd)
-       {case 1:output = js_print_stdout;break;
-        case 2:output = js_print_stderr;break;
-        default:output = caml_std_output}
-      var data=caml_global_data.fds[fd];
+     {var data=caml_global_data.fds[fd];
       if(data.flags.rdonly)caml_raise_sys_error("fd " + fd + " is readonly");
       var
        channel=
@@ -848,18 +1003,25 @@
          offset:data.offset,
          fd:fd,
          opened:true,
-         buffer:"",
-         output:output};
-      caml_ml_out_channels[channel.fd] = channel;
-      return channel}
+         out:true,
+         buffer:""};
+      caml_ml_channels[channel.fd] = channel;
+      return channel.fd}
     function caml_ml_out_channels_list()
      {var l=0;
-      for(var c=0;c < caml_ml_out_channels.length;c++)
-       if(caml_ml_out_channels[c] && caml_ml_out_channels[c].opened)
-        l = [0,caml_ml_out_channels[c],l];
+      for(var c=0;c < caml_ml_channels.length;c++)
+       if
+        (caml_ml_channels[c]
+         &&
+         caml_ml_channels[c].opened
+         &&
+         caml_ml_channels[c].out)
+        l = [0,caml_ml_channels[c],l];
       return l}
-    function caml_ml_output(oc,buffer,offset,len)
-     {if(!oc.opened)caml_raise_sys_error("Cannot output to a closed channel");
+    function caml_ml_output(chanid,buffer,offset,len)
+     {var chan=caml_ml_channels[chanid];
+      if(!chan.opened)
+       caml_raise_sys_error("Cannot output to a closed channel");
       var string;
       if(offset == 0 && caml_ml_string_length(buffer) == len)
        string = buffer;
@@ -868,15 +1030,15 @@
         caml_blit_string(buffer,offset,string,0,len)}
       var jsstring=string.toString(),id=jsstring.lastIndexOf("\n");
       if(id < 0)
-       oc.buffer += jsstring;
+       chan.buffer += jsstring;
       else
-       {oc.buffer += jsstring.substr(0,id + 1);
-        caml_ml_flush(oc);
-        oc.buffer += jsstring.substr(id + 1)}
+       {chan.buffer += jsstring.substr(0,id + 1);
+        caml_ml_flush(chanid);
+        chan.buffer += jsstring.substr(id + 1)}
       return 0}
-    function caml_ml_output_char(oc,c)
+    function caml_ml_output_char(chanid,c)
      {var s=caml_new_string(String.fromCharCode(c));
-      caml_ml_output(oc,s,0,1);
+      caml_ml_output(chanid,s,0,1);
       return 0}
     if(!Math.imul)
      Math.imul
@@ -887,6 +1049,16 @@
     function caml_obj_is_block(x){return +(x instanceof Array)}
     function caml_obj_tag(x)
      {return x instanceof Array?x[0]:x instanceof MlString?252:1e3}
+    function caml_read_file_content(name)
+     {var root=resolve_fs_device(name);
+      if(root.device.exists(root.rest))
+       {var
+         file=root.device.open(root.rest,{rdonly:1}),
+         len=file.length(),
+         buf=caml_create_string(len);
+        file.read(0,buf,0,len);
+        return buf}
+      caml_raise_no_such_file(name)}
     function caml_register_global(n,v,name_opt)
      {caml_global_data[n + 1] = v;if(name_opt)caml_global_data[name_opt] = v}
     var caml_named_values={};
@@ -894,28 +1066,12 @@
      {caml_named_values[caml_bytes_of_string(nm)] = v;return 0}
     var caml_oo_last_id=0;
     function caml_set_oo_id(b){b[2] = caml_oo_last_id++;return b}
-    function caml_string_bound_error()
-     {caml_invalid_argument("index out of bounds")}
-    function caml_string_get(s,i)
-     {if(i >>> 0 >= s.l)caml_string_bound_error();
-      return caml_string_unsafe_get(s,i)}
     function caml_string_equal(s1,s2)
      {if(s1 === s2)return 1;
       s1.t & 6 && caml_convert_string_to_bytes(s1);
       s2.t & 6 && caml_convert_string_to_bytes(s2);
       return s1.c == s2.c?1:0}
     function caml_string_notequal(s1,s2){return 1 - caml_string_equal(s1,s2)}
-    function caml_string_unsafe_set(s,i,c)
-     {c &= 255;
-      if(s.t != 4)
-       {if(i == s.c.length)
-         {s.c += String.fromCharCode(c);if(i + 1 == s.l)s.t = 0;return 0}
-        caml_convert_string_to_array(s)}
-      s.c[i] = c;
-      return 0}
-    function caml_string_set(s,i,c)
-     {if(i >>> 0 >= s.l)caml_string_bound_error();
-      return caml_string_unsafe_set(s,i,c)}
     function caml_sys_exit(code)
      {var g=joo_global_object;
       if(g.quit)g.quit(code);
@@ -969,22 +1125,22 @@
      {return f.length == 3?f(a0,a1,a2):caml_call_gen(f,[a0,a1,a2])}
     function caml_call5(f,a0,a1,a2,a3,a4)
      {return f.length == 5?f(a0,a1,a2,a3,a4):caml_call_gen(f,[a0,a1,a2,a3,a4])}
-    caml_fs_register
+    caml_create_file
      ("/maps/level0.map",
       "###################\n#S........+.......#\n#+....+.........+##\n#...+........+.#.E#\n###################\n");
-    caml_fs_register
+    caml_create_file
      ("/maps/level1.map",
       "##################\n#S  X #          #\n#   + #.X..XX....#\n#   X #.+..++....#\n#   + #    +     #\n#     #   XX     #\n#     .   +.    E#\n##################\n");
-    caml_fs_register
+    caml_create_file
      ("/maps/level2.map",
       "####################\n#S#          XXXXX #\n# #    XX    .XXX. #\n# #   .XX.    .X.  #\n# #    +.      +   #\n# ##   XX          #\n#      +X.        E#\n####################\n");
-    caml_fs_register
+    caml_create_file
      ("/maps/level3.map",
       "##############\n#XXXX#       #\n#XXX+#  +    #\n#X..S#  X##  #\n#+     +X+#  #\n#    #X#X#   #\n#   +E....   #\n#   #++      #\n##############\n");
-    caml_fs_register
+    caml_create_file
      ("/maps/level4.map",
       "########################################\n#...... ..+.X .....X.X....... ....X....#\n#.XSX...... .........X+..X.... ..... ..#\n#.......... ..X.....X.X..X........X....#\n#X.XX.........X......X..X....X...X.....#\n#X. X......... X..X........X......X.XX.#\n#... ..X........X.....X. X........X.XX.#\n###############################...X..X.#\n#. ...X..+. ..X.X..........+.X+...... .#\n#..+.....X..... ........XX X..X....X...#\n#...X..X.X..............X .X..X........#\n#.X.....X........XXX.......X.. .+....X.#\n#.+.. ..X.  .....X.X+..+....X...X..+. .#\n#. X..............X X..X........+.....X#\n#........###############################\n# X.........X...+....X.....X...X.......#\n# X......... X..X........X......X.XX..E#\n#. ..X........X.....X.  ....+...X.XX...#\n#....X+..X........X......X.X+......X...#\n#... ..X. ..X.XX.........X.X+...... ..X#\n#.+.... ..... ......... .X..X....X...X.#\n########################################\n");
-    caml_fs_register
+    caml_create_file
      ("/maps.txt",
       '"maps/level0.map"\t"Level without boulders"\n"maps/level1.map"\t"Simple falls"\n"maps/level2.map"\t"More falls"\n"maps/level3.map"\t"Real (yet little) puzzle"\n"maps/level4.map"\t"Bigger puzzle (copie de BeeDeeDash)"\n');
     var
@@ -1018,6 +1174,7 @@
             [4,0,0,0,[12,45,[4,0,0,0,[11,caml_new_string(": "),[2,0,0]]]]]]]]]],
        caml_new_string('File "%s", line %d, characters %d-%d: %s')],
      state_return_unit=[0,0],
+     _cK_=caml_new_string(""),
      s=caml_new_string("+");
     caml_register_global
      (11,Undefined_recursive_module,"Undefined_recursive_module");
@@ -1214,47 +1371,50 @@
      _cz_=caml_new_string("Lwt.wakeup_result"),
      _cy_=caml_new_string("Fatal error: exception "),
      _cx_=caml_new_string("Lwt.Canceled"),
-     _cL_=caml_new_string("Js.Error"),
-     _cU_=caml_new_string("table"),
-     _cT_=caml_new_string("img"),
-     _cS_=caml_new_string("br"),
-     _cR_=caml_new_string("h1"),
-     _cQ_=caml_new_string("div"),
-     _cP_=caml_new_string("select"),
-     _cO_=caml_new_string("option"),
-     _cV_=caml_new_string("Dom_html.Canvas_not_available"),
-     _cZ_=caml_new_string("Exception during Lwt.async: "),
-     _c0_=caml_new_string("[\\][()\\\\|+*.?{}^$]"),
-     _c4_=caml_new_string(""),
-     _c6_=caml_new_string(""),
-     _c2_=caml_new_string("Url.Local_exn"),
-     _c3_=caml_new_string("Url.Not_an_http_protocol"),
-     _c7_=
+     _cJ_=caml_new_string("2.8.3"),
+     _cN_=caml_new_string("Js.Error"),
+     _cW_=caml_new_string("table"),
+     _cV_=caml_new_string("img"),
+     _cU_=caml_new_string("br"),
+     _cT_=caml_new_string("h1"),
+     _cS_=caml_new_string("div"),
+     _cR_=caml_new_string("select"),
+     _cQ_=caml_new_string("option"),
+     _cX_=caml_new_string("Dom_html.Canvas_not_available"),
+     _c1_=caml_new_string("Exception during Lwt.async: "),
+     _c2_=caml_new_string(""),
+     _dw_=caml_new_string("+"),
+     _c3_=caml_new_string("[\\][()\\\\|+*.?{}^$]"),
+     _c7_=caml_new_string(""),
+     _c9_=caml_new_string(""),
+     _c5_=caml_new_string("Url.Local_exn"),
+     _c6_=caml_new_string("Url.Not_an_http_protocol"),
+     _c__=
       caml_new_string
        ("^([Hh][Tt][Tt][Pp][Ss]?)://([0-9a-zA-Z.-]+|\\[[0-9a-zA-Z.-]+\\]|\\[[0-9A-Fa-f:.]+\\])?(:([0-9]+))?(/([^\\?#]*)(\\?([^#]*))?(#(.*))?)?$"),
-     _c8_=
+     _c$_=
       caml_new_string
        ("^([Ff][Ii][Ll][Ee])://([^\\?#]*)(\\?([^#]*))?(#(.*))?$"),
-     _db_=[0,caml_new_string("xmlHttpRequest.ml"),87,2],
-     _dc_=caml_new_string("XmlHttpRequest.Wrong_headers"),
-     _dl_=[0,[8,9,0,0,0],caml_new_string("%g")],
-     _dm_=caml_new_string("malformed level"),
-     _dn_=caml_new_string("Boulder Dash in Ocaml"),
-     _do_=caml_new_string("Elapsed time: "),
-     _dp_=caml_new_string(" Remaining diamonds: "),
-     _dq_=caml_new_string(" "),
-     _dr_=caml_new_string("Choose a level"),
-     _dj_=[0,caml_new_string("boulderdash.ml"),306,17],
-     _dk_=caml_new_string("--"),
-     _ds_=caml_new_string("maps.txt"),
-     _dg_=
+     _de_=[0,caml_new_string("xmlHttpRequest.ml"),87,2],
+     _df_=caml_new_string("XmlHttpRequest.Wrong_headers"),
+     _do_=[0,[8,9,0,0,0],caml_new_string("%g")],
+     _dp_=caml_new_string("malformed level"),
+     _dq_=caml_new_string("Boulder Dash in Ocaml"),
+     _dr_=caml_new_string("Elapsed time: "),
+     _ds_=caml_new_string(" Remaining diamonds: "),
+     _dt_=caml_new_string(" "),
+     _du_=caml_new_string("Choose a level"),
+     _dm_=[0,caml_new_string("boulderdash.ml"),306,17],
+     _dn_=caml_new_string("--"),
+     _dv_=caml_new_string("maps.txt"),
+     _dj_=
       [0,
        [4,0,[0,2,2],0,[12,58,[4,0,[0,2,2],0,[12,58,[4,0,[0,2,2],0,0]]]]],
        caml_new_string("%02d:%02d:%02d")],
-     _df_=caml_new_string("--:--:--"),
-     _de_=caml_new_string("LOADING..."),
-     _dh_=caml_new_string("Boulderdash.Death"),
-     _di_=caml_new_string("Boulderdash.Eos");
+     _di_=caml_new_string("--:--:--"),
+     _dh_=caml_new_string("LOADING..."),
+     _dk_=caml_new_string("Boulderdash.Death"),
+     _dl_=caml_new_string("Boulderdash.Eos");
     function _a_(param)
      {if(typeof param === "number")
        return 0;
@@ -1381,7 +1541,7 @@
         for(;;)
          {if(param$0)
            {var l=param$0[2],a=param$0[1];
-            try {caml_ml_flush(a)}catch(_jc_){}
+            try {caml_ml_flush(a)}catch(_jg_){}
             var param$0=l;
             continue}
           return 0}}
@@ -1394,13 +1554,13 @@
     function _k_(f,a)
      {var l=a.length - 1;
       if(0 === l)return [0];
-      var r=caml_make_vect(l,caml_call1(f,a[1])),_ja_=l - 1 | 0,_i$_=1;
-      if(!(_ja_ < 1))
-       {var i=_i$_;
+      var r=caml_make_vect(l,caml_call1(f,a[1])),_je_=l - 1 | 0,_jd_=1;
+      if(!(_je_ < 1))
+       {var i=_jd_;
         for(;;)
          {r[i + 1] = caml_call1(f,a[i + 1]);
-          var _jb_=i + 1 | 0;
-          if(_ja_ !== i){var i=_jb_;continue}
+          var _jf_=i + 1 | 0;
+          if(_je_ !== i){var i=_jf_;continue}
           break}}
       return r}
     function _l_(l)
@@ -1536,18 +1696,18 @@
      {var
        len=caml_ml_string_length(buf[2]),
        y=buf[1] + overhead | 0,
-       _i9_=len < y?1:0;
-      if(_i9_)
+       _jb_=len < y?1:0;
+      if(_jb_)
        {var
          x=len * 2 | 0,
          new_len=caml_greaterequal(x,y)?x:y,
          new_str=caml_create_string(new_len);
         _B_(buf[2],0,new_str,0,len);
         buf[2] = new_str;
-        var _i__=0}
+        var _jc_=0}
       else
-       var _i__=_i9_;
-      return _i__}
+       var _jc_=_jb_;
+      return _jc_}
     function _Y_(buf,c)
      {_X_(buf,1);
       caml_string_set(buf[2],buf[1],c);
@@ -1646,10 +1806,10 @@
     function _aB_(param)
      {if(typeof param === "number")
        {var
-         _iL_=function(param){return 0},
-         _iM_=function(param){return 0},
-         _iN_=function(param){return 0};
-        return [0,function(param){return 0},_iN_,_iM_,_iL_]}
+         _iP_=function(param){return 0},
+         _iQ_=function(param){return 0},
+         _iR_=function(param){return 0};
+        return [0,function(param){return 0},_iR_,_iQ_,_iP_]}
       else
        switch(param[0])
         {case 0:
@@ -1660,8 +1820,8 @@
            ed=match[3],
            af=match[2],
            fa=match[1],
-           _iO_=function(param){caml_call1(af,0);return 0};
-          return [0,function(param){caml_call1(fa,0);return 0},_iO_,ed,de];
+           _iS_=function(param){caml_call1(af,0);return 0};
+          return [0,function(param){caml_call1(fa,0);return 0},_iS_,ed,de];
          case 1:
           var
            rest$0=param[1],
@@ -1670,10 +1830,10 @@
            ed$0=match$0[3],
            af$0=match$0[2],
            fa$0=match$0[1],
-           _iP_=function(param){caml_call1(af$0,0);return 0};
+           _iT_=function(param){caml_call1(af$0,0);return 0};
           return [0,
                   function(param){caml_call1(fa$0,0);return 0},
-                  _iP_,
+                  _iT_,
                   ed$0,
                   de$0];
          case 2:
@@ -1684,10 +1844,10 @@
            ed$1=match$1[3],
            af$1=match$1[2],
            fa$1=match$1[1],
-           _iQ_=function(param){caml_call1(af$1,0);return 0};
+           _iU_=function(param){caml_call1(af$1,0);return 0};
           return [0,
                   function(param){caml_call1(fa$1,0);return 0},
-                  _iQ_,
+                  _iU_,
                   ed$1,
                   de$1];
          case 3:
@@ -1698,10 +1858,10 @@
            ed$2=match$2[3],
            af$2=match$2[2],
            fa$2=match$2[1],
-           _iR_=function(param){caml_call1(af$2,0);return 0};
+           _iV_=function(param){caml_call1(af$2,0);return 0};
           return [0,
                   function(param){caml_call1(fa$2,0);return 0},
-                  _iR_,
+                  _iV_,
                   ed$2,
                   de$2];
          case 4:
@@ -1712,10 +1872,10 @@
            ed$3=match$3[3],
            af$3=match$3[2],
            fa$3=match$3[1],
-           _iS_=function(param){caml_call1(af$3,0);return 0};
+           _iW_=function(param){caml_call1(af$3,0);return 0};
           return [0,
                   function(param){caml_call1(fa$3,0);return 0},
-                  _iS_,
+                  _iW_,
                   ed$3,
                   de$3];
          case 5:
@@ -1726,10 +1886,10 @@
            ed$4=match$4[3],
            af$4=match$4[2],
            fa$4=match$4[1],
-           _iT_=function(param){caml_call1(af$4,0);return 0};
+           _iX_=function(param){caml_call1(af$4,0);return 0};
           return [0,
                   function(param){caml_call1(fa$4,0);return 0},
-                  _iT_,
+                  _iX_,
                   ed$4,
                   de$4];
          case 6:
@@ -1740,10 +1900,10 @@
            ed$5=match$5[3],
            af$5=match$5[2],
            fa$5=match$5[1],
-           _iU_=function(param){caml_call1(af$5,0);return 0};
+           _iY_=function(param){caml_call1(af$5,0);return 0};
           return [0,
                   function(param){caml_call1(fa$5,0);return 0},
-                  _iU_,
+                  _iY_,
                   ed$5,
                   de$5];
          case 7:
@@ -1754,10 +1914,10 @@
            ed$6=match$6[3],
            af$6=match$6[2],
            fa$6=match$6[1],
-           _iV_=function(param){caml_call1(af$6,0);return 0};
+           _iZ_=function(param){caml_call1(af$6,0);return 0};
           return [0,
                   function(param){caml_call1(fa$6,0);return 0},
-                  _iV_,
+                  _iZ_,
                   ed$6,
                   de$6];
          case 8:
@@ -1768,10 +1928,10 @@
            ed$7=match$7[3],
            af$7=match$7[2],
            fa$7=match$7[1],
-           _iW_=function(param){caml_call1(af$7,0);return 0};
+           _i0_=function(param){caml_call1(af$7,0);return 0};
           return [0,
                   function(param){caml_call1(fa$7,0);return 0},
-                  _iW_,
+                  _i0_,
                   ed$7,
                   de$7];
          case 9:
@@ -1790,15 +1950,15 @@
            dj=match$9[3],
            ga=match$9[2],
            ag=match$9[1],
-           _iX_=function(param){caml_call1(jd,0);caml_call1(de$8,0);return 0},
-           _iY_=function(param){caml_call1(ed$8,0);caml_call1(dj,0);return 0},
-           _iZ_=function(param){caml_call1(ga,0);caml_call1(af$8,0);return 0};
+           _i1_=function(param){caml_call1(jd,0);caml_call1(de$8,0);return 0},
+           _i2_=function(param){caml_call1(ed$8,0);caml_call1(dj,0);return 0},
+           _i3_=function(param){caml_call1(ga,0);caml_call1(af$8,0);return 0};
           return [0,
                   function(param)
                    {caml_call1(fa$8,0);caml_call1(ag,0);return 0},
-                  _iZ_,
-                  _iY_,
-                  _iX_];
+                  _i3_,
+                  _i2_,
+                  _i1_];
          case 10:
           var
            rest$9=param[1],
@@ -1807,10 +1967,10 @@
            ed$9=match$10[3],
            af$9=match$10[2],
            fa$9=match$10[1],
-           _i0_=function(param){caml_call1(af$9,0);return 0};
+           _i4_=function(param){caml_call1(af$9,0);return 0};
           return [0,
                   function(param){caml_call1(fa$9,0);return 0},
-                  _i0_,
+                  _i4_,
                   ed$9,
                   de$9];
          case 11:
@@ -1821,10 +1981,10 @@
            ed$10=match$11[3],
            af$10=match$11[2],
            fa$10=match$11[1],
-           _i1_=function(param){caml_call1(af$10,0);return 0};
+           _i5_=function(param){caml_call1(af$10,0);return 0};
           return [0,
                   function(param){caml_call1(fa$10,0);return 0},
-                  _i1_,
+                  _i5_,
                   ed$10,
                   de$10];
          case 12:
@@ -1835,10 +1995,10 @@
            ed$11=match$12[3],
            af$11=match$12[2],
            fa$11=match$12[1],
-           _i2_=function(param){caml_call1(af$11,0);return 0};
+           _i6_=function(param){caml_call1(af$11,0);return 0};
           return [0,
                   function(param){caml_call1(fa$11,0);return 0},
-                  _i2_,
+                  _i6_,
                   ed$11,
                   de$11];
          case 13:
@@ -1849,14 +2009,14 @@
            ed$12=match$13[3],
            af$12=match$13[2],
            fa$12=match$13[1],
-           _i3_=function(param){caml_call1(de$12,0);return 0},
-           _i4_=function(param){caml_call1(ed$12,0);return 0},
-           _i5_=function(param){caml_call1(af$12,0);return 0};
+           _i7_=function(param){caml_call1(de$12,0);return 0},
+           _i8_=function(param){caml_call1(ed$12,0);return 0},
+           _i9_=function(param){caml_call1(af$12,0);return 0};
           return [0,
                   function(param){caml_call1(fa$12,0);return 0},
-                  _i5_,
-                  _i4_,
-                  _i3_];
+                  _i9_,
+                  _i8_,
+                  _i7_];
          default:
           var
            rest$13=param[1],
@@ -1865,14 +2025,14 @@
            ed$13=match$14[3],
            af$13=match$14[2],
            fa$13=match$14[1],
-           _i6_=function(param){caml_call1(de$13,0);return 0},
-           _i7_=function(param){caml_call1(ed$13,0);return 0},
-           _i8_=function(param){caml_call1(af$13,0);return 0};
+           _i__=function(param){caml_call1(de$13,0);return 0},
+           _i$_=function(param){caml_call1(ed$13,0);return 0},
+           _ja_=function(param){caml_call1(af$13,0);return 0};
           return [0,
                   function(param){caml_call1(fa$13,0);return 0},
-                  _i8_,
-                  _i7_,
-                  _i6_]}}
+                  _ja_,
+                  _i$_,
+                  _i__]}}
     function _aC_(ty1,match)
      {if(typeof ty1 === "number")
        if(typeof match === "number")
@@ -1890,12 +2050,12 @@
       else
        switch(ty1[0])
         {case 0:
-          var _is_=ty1[1];
+          var _iw_=ty1[1];
           if(typeof match === "number")
            var switch$1=1;
           else
            switch(match[0])
-            {case 0:var rest2=match[1];return [0,_aC_(_is_,rest2)];
+            {case 0:var rest2=match[1];return [0,_aC_(_iw_,rest2)];
              case 8:var switch$0=5,switch$1=0;break;
              case 9:var switch$0=6,switch$1=0;break;
              case 10:var switch$0=0,switch$1=0;break;
@@ -1907,12 +2067,12 @@
           if(switch$1)var switch$0=7;
           break;
          case 1:
-          var _it_=ty1[1];
+          var _ix_=ty1[1];
           if(typeof match === "number")
            var switch$2=1;
           else
            switch(match[0])
-            {case 1:var rest2$0=match[1];return [1,_aC_(_it_,rest2$0)];
+            {case 1:var rest2$0=match[1];return [1,_aC_(_ix_,rest2$0)];
              case 8:var switch$0=5,switch$2=0;break;
              case 9:var switch$0=6,switch$2=0;break;
              case 10:var switch$0=0,switch$2=0;break;
@@ -1924,12 +2084,12 @@
           if(switch$2)var switch$0=7;
           break;
          case 2:
-          var _iu_=ty1[1];
+          var _iy_=ty1[1];
           if(typeof match === "number")
            var switch$3=1;
           else
            switch(match[0])
-            {case 2:var rest2$1=match[1];return [2,_aC_(_iu_,rest2$1)];
+            {case 2:var rest2$1=match[1];return [2,_aC_(_iy_,rest2$1)];
              case 8:var switch$0=5,switch$3=0;break;
              case 9:var switch$0=6,switch$3=0;break;
              case 10:var switch$0=0,switch$3=0;break;
@@ -1941,12 +2101,12 @@
           if(switch$3)var switch$0=7;
           break;
          case 3:
-          var _iv_=ty1[1];
+          var _iz_=ty1[1];
           if(typeof match === "number")
            var switch$4=1;
           else
            switch(match[0])
-            {case 3:var rest2$2=match[1];return [3,_aC_(_iv_,rest2$2)];
+            {case 3:var rest2$2=match[1];return [3,_aC_(_iz_,rest2$2)];
              case 8:var switch$0=5,switch$4=0;break;
              case 9:var switch$0=6,switch$4=0;break;
              case 10:var switch$0=0,switch$4=0;break;
@@ -1958,12 +2118,12 @@
           if(switch$4)var switch$0=7;
           break;
          case 4:
-          var _iw_=ty1[1];
+          var _iA_=ty1[1];
           if(typeof match === "number")
            var switch$5=1;
           else
            switch(match[0])
-            {case 4:var rest2$3=match[1];return [4,_aC_(_iw_,rest2$3)];
+            {case 4:var rest2$3=match[1];return [4,_aC_(_iA_,rest2$3)];
              case 8:var switch$0=5,switch$5=0;break;
              case 9:var switch$0=6,switch$5=0;break;
              case 10:var switch$0=0,switch$5=0;break;
@@ -1975,12 +2135,12 @@
           if(switch$5)var switch$0=7;
           break;
          case 5:
-          var _ix_=ty1[1];
+          var _iB_=ty1[1];
           if(typeof match === "number")
            var switch$6=1;
           else
            switch(match[0])
-            {case 5:var rest2$4=match[1];return [5,_aC_(_ix_,rest2$4)];
+            {case 5:var rest2$4=match[1];return [5,_aC_(_iB_,rest2$4)];
              case 8:var switch$0=5,switch$6=0;break;
              case 9:var switch$0=6,switch$6=0;break;
              case 10:var switch$0=0,switch$6=0;break;
@@ -1992,12 +2152,12 @@
           if(switch$6)var switch$0=7;
           break;
          case 6:
-          var _iy_=ty1[1];
+          var _iC_=ty1[1];
           if(typeof match === "number")
            var switch$7=1;
           else
            switch(match[0])
-            {case 6:var rest2$5=match[1];return [6,_aC_(_iy_,rest2$5)];
+            {case 6:var rest2$5=match[1];return [6,_aC_(_iC_,rest2$5)];
              case 8:var switch$0=5,switch$7=0;break;
              case 9:var switch$0=6,switch$7=0;break;
              case 10:var switch$0=0,switch$7=0;break;
@@ -2009,12 +2169,12 @@
           if(switch$7)var switch$0=7;
           break;
          case 7:
-          var _iz_=ty1[1];
+          var _iD_=ty1[1];
           if(typeof match === "number")
            var switch$8=1;
           else
            switch(match[0])
-            {case 7:var rest2$6=match[1];return [7,_aC_(_iz_,rest2$6)];
+            {case 7:var rest2$6=match[1];return [7,_aC_(_iD_,rest2$6)];
              case 8:var switch$0=5,switch$8=0;break;
              case 9:var switch$0=6,switch$8=0;break;
              case 10:var switch$0=0,switch$8=0;break;
@@ -2026,14 +2186,14 @@
           if(switch$8)var switch$0=7;
           break;
          case 8:
-          var _iA_=ty1[2],_iB_=ty1[1];
+          var _iE_=ty1[2],_iF_=ty1[1];
           if(typeof match === "number")
            var switch$9=1;
           else
            switch(match[0])
             {case 8:
-              var rest2$7=match[2],ty2=match[1],_iC_=_aC_(_iA_,rest2$7);
-              return [8,_aC_(_iB_,ty2),_iC_];
+              var rest2$7=match[2],ty2=match[1],_iG_=_aC_(_iE_,rest2$7);
+              return [8,_aC_(_iF_,ty2),_iG_];
              case 10:var switch$0=0,switch$9=0;break;
              case 11:var switch$0=1,switch$9=0;break;
              case 12:var switch$0=2,switch$9=0;break;
@@ -2043,7 +2203,7 @@
           if(switch$9)throw [0,Assert_failure,_aM_];
           break;
          case 9:
-          var _iD_=ty1[3],_iE_=ty1[2],_iF_=ty1[1];
+          var _iH_=ty1[3],_iI_=ty1[2],_iJ_=ty1[1];
           if(typeof match === "number")
            var switch$10=1;
           else
@@ -2054,13 +2214,13 @@
                rest2$8=match[3],
                ty22=match[2],
                ty21=match[1],
-               ty=_aC_(_aA_(_iE_),ty21),
+               ty=_aC_(_aA_(_iI_),ty21),
                match$0=_aB_(ty),
                f4=match$0[4],
                f2=match$0[2];
               caml_call1(f2,0);
               caml_call1(f4,0);
-              return [9,_iF_,ty22,_aC_(_iD_,rest2$8)];
+              return [9,_iJ_,ty22,_aC_(_iH_,rest2$8)];
              case 10:var switch$0=0,switch$10=0;break;
              case 11:var switch$0=1,switch$10=0;break;
              case 12:var switch$0=2,switch$10=0;break;
@@ -2070,35 +2230,35 @@
           if(switch$10)throw [0,Assert_failure,_aN_];
           break;
          case 10:
-          var _iG_=ty1[1];
+          var _iK_=ty1[1];
           if(typeof match !== "number" && 10 === match[0])
-           {var rest2$9=match[1];return [10,_aC_(_iG_,rest2$9)]}
+           {var rest2$9=match[1];return [10,_aC_(_iK_,rest2$9)]}
           throw [0,Assert_failure,_aO_];
          case 11:
-          var _iH_=ty1[1];
+          var _iL_=ty1[1];
           if(typeof match === "number")
            var switch$11=1;
           else
            switch(match[0])
             {case 10:var switch$0=0,switch$11=0;break;
-             case 11:var rest2$10=match[1];return [11,_aC_(_iH_,rest2$10)];
+             case 11:var rest2$10=match[1];return [11,_aC_(_iL_,rest2$10)];
              default:var switch$11=1}
           if(switch$11)throw [0,Assert_failure,_aP_];
           break;
          case 12:
-          var _iI_=ty1[1];
+          var _iM_=ty1[1];
           if(typeof match === "number")
            var switch$12=1;
           else
            switch(match[0])
             {case 10:var switch$0=0,switch$12=0;break;
              case 11:var switch$0=1,switch$12=0;break;
-             case 12:var rest2$11=match[1];return [12,_aC_(_iI_,rest2$11)];
+             case 12:var rest2$11=match[1];return [12,_aC_(_iM_,rest2$11)];
              default:var switch$12=1}
           if(switch$12)throw [0,Assert_failure,_aQ_];
           break;
          case 13:
-          var _iJ_=ty1[1];
+          var _iN_=ty1[1];
           if(typeof match === "number")
            var switch$13=1;
           else
@@ -2106,12 +2266,12 @@
             {case 10:var switch$0=0,switch$13=0;break;
              case 11:var switch$0=1,switch$13=0;break;
              case 12:var switch$0=2,switch$13=0;break;
-             case 13:var rest2$12=match[1];return [13,_aC_(_iJ_,rest2$12)];
+             case 13:var rest2$12=match[1];return [13,_aC_(_iN_,rest2$12)];
              default:var switch$13=1}
           if(switch$13)throw [0,Assert_failure,_aR_];
           break;
          default:
-          var _iK_=ty1[1];
+          var _iO_=ty1[1];
           if(typeof match === "number")
            var switch$14=1;
           else
@@ -2120,7 +2280,7 @@
              case 11:var switch$0=1,switch$14=0;break;
              case 12:var switch$0=2,switch$14=0;break;
              case 13:var switch$0=3,switch$14=0;break;
-             case 14:var rest2$13=match[1];return [14,_aC_(_iK_,rest2$13)];
+             case 14:var rest2$13=match[1];return [14,_aC_(_iO_,rest2$13)];
              default:var switch$14=1}
           if(switch$14)throw [0,Assert_failure,_aS_]}
       switch(switch$0)
@@ -2147,9 +2307,9 @@
       if(typeof prec === "number")
        {if(0 === prec)
          {var rest=match[2],pad$0=match[1];return [0,pad$0,0,rest]}
-        var _ir_=match[2];
-        if(typeof _ir_ !== "number" && 2 === _ir_[0])
-         {var rest$0=_ir_[1],pad$1=match[1];return [0,pad$1,1,rest$0]}
+        var _iv_=match[2];
+        if(typeof _iv_ !== "number" && 2 === _iv_[0])
+         {var rest$0=_iv_[1],pad$1=match[1];return [0,pad$1,1,rest$0]}
         throw _aU_}
       var rest$1=match[2],pad$2=match[1],p=prec[1];
       return [0,pad$2,[0,p],rest$1]}
@@ -2185,31 +2345,31 @@
           var
            fmt_rest$1=fmt[2],
            pad=fmt[1],
-           _h1_=_aV_(pad,fmtty),
-           _h2_=_h1_[2],
-           _h3_=_h1_[1];
-          if(typeof _h2_ !== "number" && 1 === _h2_[0])
+           _h5_=_aV_(pad,fmtty),
+           _h6_=_h5_[2],
+           _h7_=_h5_[1];
+          if(typeof _h6_ !== "number" && 1 === _h6_[0])
            {var
-             fmtty_rest$1=_h2_[1],
+             fmtty_rest$1=_h6_[1],
              match$1=_aX_(fmt_rest$1,fmtty_rest$1),
              fmtty$2=match$1[2],
              fmt$2=match$1[1];
-            return [0,[2,_h3_,fmt$2],fmtty$2]}
+            return [0,[2,_h7_,fmt$2],fmtty$2]}
           throw _aU_;
          case 3:
           var
            fmt_rest$2=fmt[2],
            pad$0=fmt[1],
-           _h4_=_aV_(pad$0,fmtty),
-           _h5_=_h4_[2],
-           _h6_=_h4_[1];
-          if(typeof _h5_ !== "number" && 1 === _h5_[0])
+           _h8_=_aV_(pad$0,fmtty),
+           _h9_=_h8_[2],
+           _h__=_h8_[1];
+          if(typeof _h9_ !== "number" && 1 === _h9_[0])
            {var
-             fmtty_rest$2=_h5_[1],
+             fmtty_rest$2=_h9_[1],
              match$2=_aX_(fmt_rest$2,fmtty_rest$2),
              fmtty$3=match$2[2],
              fmt$3=match$2[1];
-            return [0,[3,_h6_,fmt$3],fmtty$3]}
+            return [0,[3,_h__,fmt$3],fmtty$3]}
           throw _aU_;
          case 4:
           var
@@ -2217,17 +2377,17 @@
            prec=fmt[3],
            pad$1=fmt[2],
            iconv=fmt[1],
-           _h7_=_aW_(pad$1,prec,fmtty),
-           _h8_=_h7_[3],
-           _h9_=_h7_[2],
-           _h__=_h7_[1];
-          if(typeof _h8_ !== "number" && 2 === _h8_[0])
+           _h$_=_aW_(pad$1,prec,fmtty),
+           _ia_=_h$_[3],
+           _ib_=_h$_[2],
+           _ic_=_h$_[1];
+          if(typeof _ia_ !== "number" && 2 === _ia_[0])
            {var
-             fmtty_rest$3=_h8_[1],
+             fmtty_rest$3=_ia_[1],
              match$3=_aX_(fmt_rest$3,fmtty_rest$3),
              fmtty$4=match$3[2],
              fmt$4=match$3[1];
-            return [0,[4,iconv,_h__,_h9_,fmt$4],fmtty$4]}
+            return [0,[4,iconv,_ic_,_ib_,fmt$4],fmtty$4]}
           throw _aU_;
          case 5:
           var
@@ -2235,17 +2395,17 @@
            prec$0=fmt[3],
            pad$2=fmt[2],
            iconv$0=fmt[1],
-           _h$_=_aW_(pad$2,prec$0,fmtty),
-           _ia_=_h$_[3],
-           _ib_=_h$_[2],
-           _ic_=_h$_[1];
-          if(typeof _ia_ !== "number" && 3 === _ia_[0])
+           _id_=_aW_(pad$2,prec$0,fmtty),
+           _ie_=_id_[3],
+           _if_=_id_[2],
+           _ig_=_id_[1];
+          if(typeof _ie_ !== "number" && 3 === _ie_[0])
            {var
-             fmtty_rest$4=_ia_[1],
+             fmtty_rest$4=_ie_[1],
              match$4=_aX_(fmt_rest$4,fmtty_rest$4),
              fmtty$5=match$4[2],
              fmt$5=match$4[1];
-            return [0,[5,iconv$0,_ic_,_ib_,fmt$5],fmtty$5]}
+            return [0,[5,iconv$0,_ig_,_if_,fmt$5],fmtty$5]}
           throw _aU_;
          case 6:
           var
@@ -2253,17 +2413,17 @@
            prec$1=fmt[3],
            pad$3=fmt[2],
            iconv$1=fmt[1],
-           _id_=_aW_(pad$3,prec$1,fmtty),
-           _ie_=_id_[3],
-           _if_=_id_[2],
-           _ig_=_id_[1];
-          if(typeof _ie_ !== "number" && 4 === _ie_[0])
+           _ih_=_aW_(pad$3,prec$1,fmtty),
+           _ii_=_ih_[3],
+           _ij_=_ih_[2],
+           _ik_=_ih_[1];
+          if(typeof _ii_ !== "number" && 4 === _ii_[0])
            {var
-             fmtty_rest$5=_ie_[1],
+             fmtty_rest$5=_ii_[1],
              match$5=_aX_(fmt_rest$5,fmtty_rest$5),
              fmtty$6=match$5[2],
              fmt$6=match$5[1];
-            return [0,[6,iconv$1,_ig_,_if_,fmt$6],fmtty$6]}
+            return [0,[6,iconv$1,_ik_,_ij_,fmt$6],fmtty$6]}
           throw _aU_;
          case 7:
           var
@@ -2271,17 +2431,17 @@
            prec$2=fmt[3],
            pad$4=fmt[2],
            iconv$2=fmt[1],
-           _ih_=_aW_(pad$4,prec$2,fmtty),
-           _ii_=_ih_[3],
-           _ij_=_ih_[2],
-           _ik_=_ih_[1];
-          if(typeof _ii_ !== "number" && 5 === _ii_[0])
+           _il_=_aW_(pad$4,prec$2,fmtty),
+           _im_=_il_[3],
+           _in_=_il_[2],
+           _io_=_il_[1];
+          if(typeof _im_ !== "number" && 5 === _im_[0])
            {var
-             fmtty_rest$6=_ii_[1],
+             fmtty_rest$6=_im_[1],
              match$6=_aX_(fmt_rest$6,fmtty_rest$6),
              fmtty$7=match$6[2],
              fmt$7=match$6[1];
-            return [0,[7,iconv$2,_ik_,_ij_,fmt$7],fmtty$7]}
+            return [0,[7,iconv$2,_io_,_in_,fmt$7],fmtty$7]}
           throw _aU_;
          case 8:
           var
@@ -2289,17 +2449,17 @@
            prec$3=fmt[3],
            pad$5=fmt[2],
            fconv=fmt[1],
-           _il_=_aW_(pad$5,prec$3,fmtty),
-           _im_=_il_[3],
-           _in_=_il_[2],
-           _io_=_il_[1];
-          if(typeof _im_ !== "number" && 6 === _im_[0])
+           _ip_=_aW_(pad$5,prec$3,fmtty),
+           _iq_=_ip_[3],
+           _ir_=_ip_[2],
+           _is_=_ip_[1];
+          if(typeof _iq_ !== "number" && 6 === _iq_[0])
            {var
-             fmtty_rest$7=_im_[1],
+             fmtty_rest$7=_iq_[1],
              match$7=_aX_(fmt_rest$7,fmtty_rest$7),
              fmtty$8=match$7[2],
              fmt$8=match$7[1];
-            return [0,[8,fconv,_io_,_in_,fmt$8],fmtty$8]}
+            return [0,[8,fconv,_is_,_ir_,fmt$8],fmtty$8]}
           throw _aU_;
          case 9:
           if(typeof fmtty !== "number" && 7 === fmtty[0])
@@ -2357,8 +2517,8 @@
              fmt_rest$13=fmt[3],
              sub_fmtty$1=fmt[2],
              pad_opt$0=fmt[1],
-             _ip_=[0,_a_(sub_fmtty1)];
-            if(caml_notequal([0,_a_(sub_fmtty$1)],_ip_))throw _aU_;
+             _it_=[0,_a_(sub_fmtty1)];
+            if(caml_notequal([0,_a_(sub_fmtty$1)],_it_))throw _aU_;
             var
              match$13=_aX_(fmt_rest$13,_a_(fmtty_rest$10)),
              fmtty$14=match$13[2],
@@ -2484,11 +2644,11 @@
               var
                sub_fmtty$3=ign[2],
                pad_opt$2=ign[1],
-               _iq_=_aZ_(sub_fmtty$3,rest,fmtty),
-               match$27=_iq_[2],
+               _iu_=_aZ_(sub_fmtty$3,rest,fmtty),
+               match$27=_iu_[2],
                fmtty$22=match$27[2],
                fmt$22=match$27[1],
-               sub_fmtty$4=_iq_[1];
+               sub_fmtty$4=_iu_[1];
               return [0,[23,[8,pad_opt$2,sub_fmtty$4],fmt$22],fmtty$22];
              case 9:return _aY_(ign,rest,fmtty);
              default:return _aY_(ign,rest,fmtty)}
@@ -2602,10 +2762,10 @@
              sub_fmtty_rest$17=sub_fmtty[3],
              sub2_fmtty$2=sub_fmtty[2],
              sub1_fmtty$0=sub_fmtty[1],
-             _hZ_=[0,_a_(sub1_fmtty)];
-            if(caml_notequal([0,_a_(sub1_fmtty$0)],_hZ_))throw _aU_;
-            var _h0_=[0,_a_(sub2_fmtty$1)];
-            if(caml_notequal([0,_a_(sub2_fmtty$2)],_h0_))throw _aU_;
+             _h3_=[0,_a_(sub1_fmtty)];
+            if(caml_notequal([0,_a_(sub1_fmtty$0)],_h3_))throw _aU_;
+            var _h4_=[0,_a_(sub2_fmtty$1)];
+            if(caml_notequal([0,_a_(sub2_fmtty$2)],_h4_))throw _aU_;
             var
              sub_fmtty$0=_aC_(_aA_(sub1_fmtty),sub2_fmtty$1),
              match$9=_aB_(sub_fmtty$0),
@@ -2669,7 +2829,7 @@
        padty$0=0 <= width?padty:0,
        width$0=abs(width);
       if(width$0 <= len)return str;
-      var _hY_=2 === padty$0?48:32,res=make(width$0,_hY_);
+      var _h2_=2 === padty$0?48:32,res=make(width$0,_h2_);
       switch(padty$0)
        {case 0:_D_(str,0,res,0,len);break;
         case 1:_D_(str,0,res,width$0 - len | 0,len);break;
@@ -2765,7 +2925,7 @@
      {var i$1=0;
       for(;;)
        {if(caml_ml_string_length(str) <= i$1)
-         var _hW_=0;
+         var _h0_=0;
         else
          {var
            c$1=caml_string_unsafe_get(str,i$1),
@@ -2774,14 +2934,14 @@
              ?34 === c$1?1:92 === c$1?1:0
              :11 <= c$1?13 <= c$1?1:0:8 <= c$1?1:0;
           if(switch$0)
-           var _hW_=1;
+           var _h0_=1;
           else
            {if(caml_is_printable(c$1)){var i$2=i$1 + 1 | 0,i$1=i$2;continue}
-            var _hW_=1}}
-        if(_hW_)
-         {var n=[0,0],_hP_=caml_ml_string_length(str) - 1 | 0,_hO_=0;
-          if(!(_hP_ < 0))
-           {var i$0=_hO_;
+            var _h0_=1}}
+        if(_h0_)
+         {var n=[0,0],_hT_=caml_ml_string_length(str) - 1 | 0,_hS_=0;
+          if(!(_hT_ < 0))
+           {var i$0=_hS_;
             for(;;)
              {var
                c$0=caml_string_unsafe_get(str,i$0),
@@ -2789,28 +2949,28 @@
                 14 <= c$0
                  ?34 === c$0?1:92 === c$0?1:0
                  :11 <= c$0?13 <= c$0?1:0:8 <= c$0?1:0,
-               _hU_=switch$1?2:caml_is_printable(c$0)?1:4;
-              n[1] = n[1] + _hU_ | 0;
-              var _hV_=i$0 + 1 | 0;
-              if(_hP_ !== i$0){var i$0=_hV_;continue}
+               _hY_=switch$1?2:caml_is_printable(c$0)?1:4;
+              n[1] = n[1] + _hY_ | 0;
+              var _hZ_=i$0 + 1 | 0;
+              if(_hT_ !== i$0){var i$0=_hZ_;continue}
               break}}
           if(n[1] === caml_ml_string_length(str))
            {var len=caml_ml_string_length(str),r=caml_create_string(len);
             caml_blit_string(str,0,r,0,len);
-            var _hX_=r}
+            var _h1_=r}
           else
            {var s=caml_create_string(n[1]);
             n[1] = 0;
-            var _hR_=caml_ml_string_length(str) - 1 | 0,_hQ_=0;
-            if(!(_hR_ < 0))
-             {var i=_hQ_;
+            var _hV_=caml_ml_string_length(str) - 1 | 0,_hU_=0;
+            if(!(_hV_ < 0))
+             {var i=_hU_;
               for(;;)
-               {var c=caml_string_unsafe_get(str,i),_hS_=c - 34 | 0;
-                if(58 < _hS_ >>> 0)
-                 if(-20 <= _hS_)
+               {var c=caml_string_unsafe_get(str,i),_hW_=c - 34 | 0;
+                if(58 < _hW_ >>> 0)
+                 if(-20 <= _hW_)
                   var switch$2=1;
                  else
-                  {var switcher=_hS_ + 34 | 0;
+                  {var switcher=_hW_ + 34 | 0;
                    switch(switcher)
                     {case 8:
                       caml_string_unsafe_set(s,n[1],92);
@@ -2840,7 +3000,7 @@
                    if(switch$3)var switch$2=0}
                 else
                  var
-                  switcher$0=_hS_ - 1 | 0,
+                  switcher$0=_hW_ - 1 | 0,
                   switch$2=
                    56 < switcher$0 >>> 0
                     ?(caml_string_unsafe_set(s,n[1],92),
@@ -2861,13 +3021,13 @@
                    n[1]++;
                    caml_string_unsafe_set(s,n[1],48 + (c % 10 | 0) | 0)}
                 n[1]++;
-                var _hT_=i + 1 | 0;
-                if(_hR_ !== i){var i=_hT_;continue}
+                var _hX_=i + 1 | 0;
+                if(_hV_ !== i){var i=_hX_;continue}
                 break}}
-            var _hX_=s}}
+            var _h1_=s}}
         else
-         var _hX_=str;
-        return _I_(_hX_,_a3_)}}
+         var _h1_=str;
+        return _I_(_h1_,_a3_)}}
     function _bf_(iconv,c)
      {switch(iconv)
        {case 0:var seps=_bg_;break;
@@ -2886,27 +3046,27 @@
       return _I_(_G_(1,c),seps)}
     function _bu_(iconv,n)
      {switch(iconv)
-       {case 0:var _hN_=_a4_;break;
-        case 1:var _hN_=_a5_;break;
-        case 2:var _hN_=_a6_;break;
-        case 3:var _hN_=_a7_;break;
-        case 4:var _hN_=_a8_;break;
-        case 5:var _hN_=_a9_;break;
-        case 6:var _hN_=_a__;break;
-        case 7:var _hN_=_a$_;break;
-        case 8:var _hN_=_ba_;break;
-        case 9:var _hN_=_bb_;break;
-        case 10:var _hN_=_bc_;break;
-        case 11:var _hN_=_bd_;break;
-        default:var _hN_=_be_}
-      return caml_format_int(_hN_,n)}
+       {case 0:var _hR_=_a4_;break;
+        case 1:var _hR_=_a5_;break;
+        case 2:var _hR_=_a6_;break;
+        case 3:var _hR_=_a7_;break;
+        case 4:var _hR_=_a8_;break;
+        case 5:var _hR_=_a9_;break;
+        case 6:var _hR_=_a__;break;
+        case 7:var _hR_=_a$_;break;
+        case 8:var _hR_=_ba_;break;
+        case 9:var _hR_=_bb_;break;
+        case 10:var _hR_=_bc_;break;
+        case 11:var _hR_=_bd_;break;
+        default:var _hR_=_be_}
+      return caml_format_int(_hR_,n)}
     function _bv_(iconv,n){return caml_format_int(_bf_(iconv,108),n)}
     function _bw_(iconv,n){return caml_format_int(_bf_(iconv,110),n)}
     function _bx_(iconv,n){return caml_int64_format(_bf_(iconv,76),n)}
     function _by_(fconv,prec$0,x)
      {var prec$1=abs(prec$0);
       if(15 === fconv)
-       var _hK_=_bt_;
+       var _hO_=_bt_;
       else
        {var prec=abs(prec$1);
         switch(fconv)
@@ -2941,8 +3101,8 @@
         _Y_(buf,46);
         _Z_(buf,caml_new_string("" + prec));
         _Y_(buf,symb);
-        var _hK_=___(buf)}
-      var str=caml_format_float(_hK_,x);
+        var _hO_=___(buf)}
+      var str=caml_format_float(_hO_,x);
       if(15 === fconv)
        {var len=caml_ml_string_length(str),match$0=caml_classify_float(x);
         if(3 === match$0)return x < 0?_bz_:_bA_;
@@ -2950,16 +3110,16 @@
         var i=0;
         for(;;)
          {if(i === len)
-           var _hM_=0;
+           var _hQ_=0;
           else
            {var
              match=caml_string_get(str,i),
-             _hL_=match - 46 | 0,
+             _hP_=match - 46 | 0,
              switch$0=
-              23 < _hL_ >>> 0?55 === _hL_?1:0:21 < (_hL_ - 1 | 0) >>> 0?1:0;
+              23 < _hP_ >>> 0?55 === _hP_?1:0:21 < (_hP_ - 1 | 0) >>> 0?1:0;
             if(!switch$0){var i$0=i + 1 | 0,i=i$0;continue}
-            var _hM_=1}
-          return _hM_?str:_e_(str,_bC_)}}
+            var _hQ_=1}
+          return _hQ_?str:_e_(str,_bC_)}}
       return str}
     function _bH_(k,o,acc,fmt,pad,match,trans,iconv)
      {if(typeof pad === "number")
@@ -2977,31 +3137,31 @@
           return _bE_(k,o,[4,acc,str],fmt)}}
       else
        {if(0 === pad[0])
-         {var _hH_=pad[2],_hI_=pad[1];
+         {var _hL_=pad[2],_hM_=pad[1];
           if(typeof match === "number")
            return 0 === match
                    ?function(x)
-                     {var str=_a0_(_hI_,_hH_,caml_call2(trans,iconv,x));
+                     {var str=_a0_(_hM_,_hL_,caml_call2(trans,iconv,x));
                       return _bE_(k,o,[4,acc,str],fmt)}
                    :function(p,x)
-                     {var str=_a0_(_hI_,_hH_,_a1_(p,caml_call2(trans,iconv,x)));
+                     {var str=_a0_(_hM_,_hL_,_a1_(p,caml_call2(trans,iconv,x)));
                       return _bE_(k,o,[4,acc,str],fmt)};
           var p$0=match[1];
           return function(x)
-           {var str=_a0_(_hI_,_hH_,_a1_(p$0,caml_call2(trans,iconv,x)));
+           {var str=_a0_(_hM_,_hL_,_a1_(p$0,caml_call2(trans,iconv,x)));
             return _bE_(k,o,[4,acc,str],fmt)}}
-        var _hJ_=pad[1];
+        var _hN_=pad[1];
         if(typeof match === "number")
          return 0 === match
                  ?function(w,x)
-                   {var str=_a0_(_hJ_,w,caml_call2(trans,iconv,x));
+                   {var str=_a0_(_hN_,w,caml_call2(trans,iconv,x));
                     return _bE_(k,o,[4,acc,str],fmt)}
                  :function(w,p,x)
-                   {var str=_a0_(_hJ_,w,_a1_(p,caml_call2(trans,iconv,x)));
+                   {var str=_a0_(_hN_,w,_a1_(p,caml_call2(trans,iconv,x)));
                     return _bE_(k,o,[4,acc,str],fmt)};
         var p$1=match[1];
         return function(w,x)
-         {var str=_a0_(_hJ_,w,_a1_(p$1,caml_call2(trans,iconv,x)));
+         {var str=_a0_(_hN_,w,_a1_(p$1,caml_call2(trans,iconv,x)));
           return _bE_(k,o,[4,acc,str],fmt)}}}
     function _bG_(k,o,acc,fmt,pad,trans)
      {if(typeof pad === "number")
@@ -3018,7 +3178,7 @@
         return function(w,x)
          {var new_acc=[4,acc,_a0_(padty$0,w,caml_call1(trans,x))];
           return _bE_(k,o,new_acc,fmt)}}}
-    function _dw_(counter,k,o,acc,fmt)
+    function _dA_(counter,k,o,acc,fmt)
      {var k$0=k,acc$0=acc,fmt$0=fmt;
       for(;;)
        if(typeof fmt$0 === "number")
@@ -3033,25 +3193,25 @@
            var rest$0=fmt$0[1];
            return function(c)
             {if(39 === c)
-              var _hG_=_s_;
+              var _hK_=_s_;
              else
               if(92 === c)
-               var _hG_=_t_;
+               var _hK_=_t_;
               else
                {if(14 <= c)
                  var switch$0=0;
                 else
                  switch(c)
-                  {case 8:var _hG_=_u_,switch$0=1;break;
-                   case 9:var _hG_=_v_,switch$0=1;break;
-                   case 10:var _hG_=_w_,switch$0=1;break;
-                   case 13:var _hG_=_x_,switch$0=1;break;
+                  {case 8:var _hK_=_u_,switch$0=1;break;
+                   case 9:var _hK_=_v_,switch$0=1;break;
+                   case 10:var _hK_=_w_,switch$0=1;break;
+                   case 13:var _hK_=_x_,switch$0=1;break;
                    default:var switch$0=0}
                 if(!switch$0)
                  if(caml_is_printable(c))
                   {var s=caml_create_string(1);
                    caml_string_unsafe_set(s,0,c);
-                   var _hG_=s}
+                   var _hK_=s}
                  else
                   {var s$0=caml_create_string(4);
                    caml_string_unsafe_set(s$0,0,92);
@@ -3059,8 +3219,8 @@
                    caml_string_unsafe_set
                     (s$0,2,48 + ((c / 10 | 0) % 10 | 0) | 0);
                    caml_string_unsafe_set(s$0,3,48 + (c % 10 | 0) | 0);
-                   var _hG_=s$0}}
-             var new_acc=[4,acc$0,_I_(_hG_,_bD_)];
+                   var _hK_=s$0}}
+             var new_acc=[4,acc$0,_I_(_hK_,_bD_)];
              return _bE_(k$0,o,new_acc,rest$0)};
           case 2:
            var rest$1=fmt$0[2],pad=fmt$0[1];
@@ -3109,36 +3269,36 @@
                return _bE_(k$0,o,[4,acc$0,str],rest$7)}}
            else
             {if(0 === pad$5[0])
-              {var _hB_=pad$5[2],_hC_=pad$5[1];
+              {var _hF_=pad$5[2],_hG_=pad$5[1];
                if(typeof prec$3 === "number")
                 return 0 === prec$3
                         ?function(x)
-                          {var str=_by_(fconv,_V_,x),str$0=_a0_(_hC_,_hB_,str);
+                          {var str=_by_(fconv,_V_,x),str$0=_a0_(_hG_,_hF_,str);
                            return _bE_(k$0,o,[4,acc$0,str$0],rest$7)}
                         :function(p,x)
-                          {var str=_a0_(_hC_,_hB_,_by_(fconv,p,x));
+                          {var str=_a0_(_hG_,_hF_,_by_(fconv,p,x));
                            return _bE_(k$0,o,[4,acc$0,str],rest$7)};
                var p$0=prec$3[1];
                return function(x)
-                {var str=_a0_(_hC_,_hB_,_by_(fconv,p$0,x));
+                {var str=_a0_(_hG_,_hF_,_by_(fconv,p$0,x));
                  return _bE_(k$0,o,[4,acc$0,str],rest$7)}}
-             var _hD_=pad$5[1];
+             var _hH_=pad$5[1];
              if(typeof prec$3 === "number")
               return 0 === prec$3
                       ?function(w,x)
-                        {var str=_by_(fconv,_V_,x),str$0=_a0_(_hD_,w,str);
+                        {var str=_by_(fconv,_V_,x),str$0=_a0_(_hH_,w,str);
                          return _bE_(k$0,o,[4,acc$0,str$0],rest$7)}
                       :function(w,p,x)
-                        {var str=_a0_(_hD_,w,_by_(fconv,p,x));
+                        {var str=_a0_(_hH_,w,_by_(fconv,p,x));
                          return _bE_(k$0,o,[4,acc$0,str],rest$7)};
              var p$1=prec$3[1];
              return function(w,x)
-              {var str=_a0_(_hD_,w,_by_(fconv,p$1,x));
+              {var str=_a0_(_hH_,w,_by_(fconv,p$1,x));
                return _bE_(k$0,o,[4,acc$0,str],rest$7)}}
           case 9:
            var rest$8=fmt$0[1];
            return function(b)
-            {var _hF_=b?_f_:_g_;return _bE_(k$0,o,[4,acc$0,_hF_],rest$8)};
+            {var _hJ_=b?_f_:_g_;return _bE_(k$0,o,[4,acc$0,_hJ_],rest$8)};
           case 10:
            var fmt$1=fmt$0[1],acc$1=[7,acc$0],acc$0=acc$1,fmt$0=fmt$1;
            continue;
@@ -3169,9 +3329,9 @@
             {var
               fmt$0=param[1],
               fmtty$0=_a_(_aA_(fmtty)),
-              _hE_=_aX_(fmt$0,fmtty$0);
-             if(typeof _hE_[2] === "number")
-              {var fmt=_hE_[1];return _bE_(k$0,o,acc$0,_c_(fmt,rest$10))}
+              _hI_=_aX_(fmt$0,fmtty$0);
+             if(typeof _hI_[2] === "number")
+              {var fmt=_hI_[1];return _bE_(k$0,o,acc$0,_c_(fmt,rest$10))}
              throw _aU_};
           case 15:
            var rest$11=fmt$0[1];
@@ -3193,11 +3353,11 @@
             fmt$0=fmt$4;
            continue;
           case 18:
-           var _hz_=fmt$0[1];
-           if(0 === _hz_[0])
+           var _hD_=fmt$0[1];
+           if(0 === _hD_[0])
             {var
               rest$13=fmt$0[2],
-              match=_hz_[1],
+              match=_hD_[1],
               fmt$5=match[1],
               k$3=
                function(acc,k,rest)
@@ -3211,7 +3371,7 @@
              continue}
            var
             rest$14=fmt$0[2],
-            match$0=_hz_[1],
+            match$0=_hD_[1],
             fmt$6=match$0[1],
             k$4=
              function(acc,k,rest)
@@ -3243,99 +3403,99 @@
              {case 0:
                if(counter < 50)
                 {var counter$1=counter + 1 | 0;
-                 return _du_(counter$1,k$0,o,acc$0,rest$18)}
-               return caml_trampoline_return(_du_,[0,k$0,o,acc$0,rest$18]);
+                 return _dy_(counter$1,k$0,o,acc$0,rest$18)}
+               return caml_trampoline_return(_dy_,[0,k$0,o,acc$0,rest$18]);
               case 1:
                if(counter < 50)
                 {var counter$2=counter + 1 | 0;
-                 return _du_(counter$2,k$0,o,acc$0,rest$18)}
-               return caml_trampoline_return(_du_,[0,k$0,o,acc$0,rest$18]);
+                 return _dy_(counter$2,k$0,o,acc$0,rest$18)}
+               return caml_trampoline_return(_dy_,[0,k$0,o,acc$0,rest$18]);
               case 2:
                if(counter < 50)
                 {var counter$3=counter + 1 | 0;
-                 return _du_(counter$3,k$0,o,acc$0,rest$18)}
-               return caml_trampoline_return(_du_,[0,k$0,o,acc$0,rest$18]);
+                 return _dy_(counter$3,k$0,o,acc$0,rest$18)}
+               return caml_trampoline_return(_dy_,[0,k$0,o,acc$0,rest$18]);
               case 3:throw [0,Assert_failure,_bM_];
               default:
                if(counter < 50)
                 {var counter$4=counter + 1 | 0;
-                 return _du_(counter$4,k$0,o,acc$0,rest$18)}
-               return caml_trampoline_return(_du_,[0,k$0,o,acc$0,rest$18])}
+                 return _dy_(counter$4,k$0,o,acc$0,rest$18)}
+               return caml_trampoline_return(_dy_,[0,k$0,o,acc$0,rest$18])}
            else
             switch(ign[0])
              {case 0:
                if(counter < 50)
                 {var counter$5=counter + 1 | 0;
-                 return _du_(counter$5,k$0,o,acc$0,rest$18)}
-               return caml_trampoline_return(_du_,[0,k$0,o,acc$0,rest$18]);
+                 return _dy_(counter$5,k$0,o,acc$0,rest$18)}
+               return caml_trampoline_return(_dy_,[0,k$0,o,acc$0,rest$18]);
               case 1:
                if(counter < 50)
                 {var counter$6=counter + 1 | 0;
-                 return _du_(counter$6,k$0,o,acc$0,rest$18)}
-               return caml_trampoline_return(_du_,[0,k$0,o,acc$0,rest$18]);
+                 return _dy_(counter$6,k$0,o,acc$0,rest$18)}
+               return caml_trampoline_return(_dy_,[0,k$0,o,acc$0,rest$18]);
               case 2:
                if(counter < 50)
                 {var counter$7=counter + 1 | 0;
-                 return _du_(counter$7,k$0,o,acc$0,rest$18)}
-               return caml_trampoline_return(_du_,[0,k$0,o,acc$0,rest$18]);
+                 return _dy_(counter$7,k$0,o,acc$0,rest$18)}
+               return caml_trampoline_return(_dy_,[0,k$0,o,acc$0,rest$18]);
               case 3:
                if(counter < 50)
                 {var counter$8=counter + 1 | 0;
-                 return _du_(counter$8,k$0,o,acc$0,rest$18)}
-               return caml_trampoline_return(_du_,[0,k$0,o,acc$0,rest$18]);
+                 return _dy_(counter$8,k$0,o,acc$0,rest$18)}
+               return caml_trampoline_return(_dy_,[0,k$0,o,acc$0,rest$18]);
               case 4:
                if(counter < 50)
                 {var counter$9=counter + 1 | 0;
-                 return _du_(counter$9,k$0,o,acc$0,rest$18)}
-               return caml_trampoline_return(_du_,[0,k$0,o,acc$0,rest$18]);
+                 return _dy_(counter$9,k$0,o,acc$0,rest$18)}
+               return caml_trampoline_return(_dy_,[0,k$0,o,acc$0,rest$18]);
               case 5:
                if(counter < 50)
                 {var counter$10=counter + 1 | 0;
-                 return _du_(counter$10,k$0,o,acc$0,rest$18)}
-               return caml_trampoline_return(_du_,[0,k$0,o,acc$0,rest$18]);
+                 return _dy_(counter$10,k$0,o,acc$0,rest$18)}
+               return caml_trampoline_return(_dy_,[0,k$0,o,acc$0,rest$18]);
               case 6:
                if(counter < 50)
                 {var counter$11=counter + 1 | 0;
-                 return _du_(counter$11,k$0,o,acc$0,rest$18)}
-               return caml_trampoline_return(_du_,[0,k$0,o,acc$0,rest$18]);
+                 return _dy_(counter$11,k$0,o,acc$0,rest$18)}
+               return caml_trampoline_return(_dy_,[0,k$0,o,acc$0,rest$18]);
               case 7:
                if(counter < 50)
                 {var counter$12=counter + 1 | 0;
-                 return _du_(counter$12,k$0,o,acc$0,rest$18)}
-               return caml_trampoline_return(_du_,[0,k$0,o,acc$0,rest$18]);
+                 return _dy_(counter$12,k$0,o,acc$0,rest$18)}
+               return caml_trampoline_return(_dy_,[0,k$0,o,acc$0,rest$18]);
               case 8:
                var fmtty$0=ign[2];
                if(counter < 50)
                 {var counter$15=counter + 1 | 0;
-                 return _dv_(counter$15,k$0,o,acc$0,fmtty$0,rest$18)}
+                 return _dz_(counter$15,k$0,o,acc$0,fmtty$0,rest$18)}
                return caml_trampoline_return
-                       (_dv_,[0,k$0,o,acc$0,fmtty$0,rest$18]);
+                       (_dz_,[0,k$0,o,acc$0,fmtty$0,rest$18]);
               case 9:
                if(counter < 50)
                 {var counter$13=counter + 1 | 0;
-                 return _du_(counter$13,k$0,o,acc$0,rest$18)}
-               return caml_trampoline_return(_du_,[0,k$0,o,acc$0,rest$18]);
+                 return _dy_(counter$13,k$0,o,acc$0,rest$18)}
+               return caml_trampoline_return(_dy_,[0,k$0,o,acc$0,rest$18]);
               default:
                if(counter < 50)
                 {var counter$14=counter + 1 | 0;
-                 return _du_(counter$14,k$0,o,acc$0,rest$18)}
-               return caml_trampoline_return(_du_,[0,k$0,o,acc$0,rest$18])}
+                 return _dy_(counter$14,k$0,o,acc$0,rest$18)}
+               return caml_trampoline_return(_dy_,[0,k$0,o,acc$0,rest$18])}
           default:
            var
             rest$19=fmt$0[3],
             f=fmt$0[2],
             arity=fmt$0[1],
-            _hA_=caml_call1(f,0);
+            _hE_=caml_call1(f,0);
            if(counter < 50)
             {var counter$0=counter + 1 | 0;
-             return _dt_(counter$0,k$0,o,acc$0,rest$19,arity,_hA_)}
+             return _dx_(counter$0,k$0,o,acc$0,rest$19,arity,_hE_)}
            return caml_trampoline_return
-                   (_dt_,[0,k$0,o,acc$0,rest$19,arity,_hA_])}}
-    function _dv_(counter,k,o,acc,fmtty,fmt)
+                   (_dx_,[0,k$0,o,acc$0,rest$19,arity,_hE_])}}
+    function _dz_(counter,k,o,acc,fmtty,fmt)
      {if(typeof fmtty === "number")
        {if(counter < 50)
-         {var counter$0=counter + 1 | 0;return _du_(counter$0,k,o,acc,fmt)}
-        return caml_trampoline_return(_du_,[0,k,o,acc,fmt])}
+         {var counter$0=counter + 1 | 0;return _dy_(counter$0,k,o,acc,fmt)}
+        return caml_trampoline_return(_dy_,[0,k,o,acc,fmt])}
       else
        switch(fmtty[0])
         {case 0:
@@ -3374,7 +3534,7 @@
           return function(param){return _bF_(k,o,acc,_b_(ty,rest$8),fmt)};
          case 10:
           var rest$9=fmtty[1];
-          return function(param,_hy_){return _bF_(k,o,acc,rest$9,fmt)};
+          return function(param,_hC_){return _bF_(k,o,acc,rest$9,fmt)};
          case 11:
           var rest$10=fmtty[1];
           return function(param){return _bF_(k,o,acc,rest$10,fmt)};
@@ -3383,24 +3543,24 @@
           return function(param){return _bF_(k,o,acc,rest$11,fmt)};
          case 13:throw [0,Assert_failure,_bN_];
          default:throw [0,Assert_failure,_bO_]}}
-    function _du_(counter,k,o,acc,fmt)
-     {var _hx_=[8,acc,_bP_];
+    function _dy_(counter,k,o,acc,fmt)
+     {var _hB_=[8,acc,_bP_];
       if(counter < 50)
-       {var counter$0=counter + 1 | 0;return _dw_(counter$0,k,o,_hx_,fmt)}
-      return caml_trampoline_return(_dw_,[0,k,o,_hx_,fmt])}
-    function _dt_(counter,k,o,acc,rest,arity,f)
+       {var counter$0=counter + 1 | 0;return _dA_(counter$0,k,o,_hB_,fmt)}
+      return caml_trampoline_return(_dA_,[0,k,o,_hB_,fmt])}
+    function _dx_(counter,k,o,acc,rest,arity,f)
      {if(arity)
        {var arity$0=arity[1];
         return function(x){return _bI_(k,o,acc,rest,arity$0,caml_call1(f,x))}}
-      var _hw_=[4,acc,f];
+      var _hA_=[4,acc,f];
       if(counter < 50)
-       {var counter$0=counter + 1 | 0;return _dw_(counter$0,k,o,_hw_,rest)}
-      return caml_trampoline_return(_dw_,[0,k,o,_hw_,rest])}
-    function _bE_(k,o,acc,fmt){return caml_trampoline(_dw_(0,k,o,acc,fmt))}
+       {var counter$0=counter + 1 | 0;return _dA_(counter$0,k,o,_hA_,rest)}
+      return caml_trampoline_return(_dA_,[0,k,o,_hA_,rest])}
+    function _bE_(k,o,acc,fmt){return caml_trampoline(_dA_(0,k,o,acc,fmt))}
     function _bF_(k,o,acc,fmtty,fmt)
-     {return caml_trampoline(_dv_(0,k,o,acc,fmtty,fmt))}
+     {return caml_trampoline(_dz_(0,k,o,acc,fmtty,fmt))}
     function _bI_(k,o,acc,rest,arity,f)
-     {return caml_trampoline(_dt_(0,k,o,acc,rest,arity,f))}
+     {return caml_trampoline(_dx_(0,k,o,acc,rest,arity,f))}
     function _bQ_(o,acc)
      {var acc$0=acc;
       for(;;)
@@ -3413,15 +3573,15 @@
            _bQ_(o,p);
            return output_string(o,s);
           case 1:
-           var _hu_=acc$0[2],_hv_=acc$0[1];
-           if(0 === _hu_[0])
-            {var acc$1=_hu_[1];
-             _bQ_(o,_hv_);
+           var _hy_=acc$0[2],_hz_=acc$0[1];
+           if(0 === _hy_[0])
+            {var acc$1=_hy_[1];
+             _bQ_(o,_hz_);
              output_string(o,_bR_);
              var acc$0=acc$1;
              continue}
-           var acc$2=_hu_[1];
-           _bQ_(o,_hv_);
+           var acc$2=_hy_[1];
+           _bQ_(o,_hz_);
            output_string(o,_bS_);
            var acc$0=acc$2;
            continue;
@@ -3451,15 +3611,15 @@
            _bT_(b,p);
            return _U_(b,s);
           case 1:
-           var _hs_=acc$0[2],_ht_=acc$0[1];
-           if(0 === _hs_[0])
-            {var acc$1=_hs_[1];
-             _bT_(b,_ht_);
+           var _hw_=acc$0[2],_hx_=acc$0[1];
+           if(0 === _hw_[0])
+            {var acc$1=_hw_[1];
+             _bT_(b,_hx_);
              _U_(b,_bU_);
              var acc$0=acc$1;
              continue}
-           var acc$2=_hs_[1];
-           _bT_(b,_ht_);
+           var acc$2=_hw_[1];
+           _bT_(b,_hx_);
            _U_(b,_bV_);
            var acc$0=acc$2;
            continue;
@@ -3481,8 +3641,8 @@
            b[2] = pos + 1 | 0;
            return 0}}
     function _bW_(oc,fmt$0)
-     {var fmt=fmt$0[1],_hr_=0;
-      return _bE_(function(o,acc){_bQ_(o,acc);return 0},oc,_hr_,fmt)}
+     {var fmt=fmt$0[1],_hv_=0;
+      return _bE_(function(o,acc){_bQ_(o,acc);return 0},oc,_hv_,fmt)}
     function _bX_(fmt$0)
      {var fmt=fmt$0[1];
       function k(param,acc){var b=_Q_(64);_bT_(b,acc);return _A_(b[1],0,b[2])}
@@ -3505,25 +3665,25 @@
       return caml_call1(_bX_(_b0_),f)}
     function other_fields(x,i)
      {if(x.length - 1 <= i)return _b1_;
-      var _hp_=other_fields(x,i + 1 | 0),_hq_=field(x,i);
-      return caml_call2(_bX_(_b2_),_hq_,_hp_)}
+      var _ht_=other_fields(x,i + 1 | 0),_hu_=field(x,i);
+      return caml_call2(_bX_(_b2_),_hu_,_ht_)}
     function fields(x)
      {var n=x.length - 1;
       if(2 < n >>> 0)
-       {var _hm_=other_fields(x,2),_hn_=field(x,1);
-        return caml_call2(_bX_(_b3_),_hn_,_hm_)}
+       {var _hq_=other_fields(x,2),_hr_=field(x,1);
+        return caml_call2(_bX_(_b3_),_hr_,_hq_)}
       switch(n)
        {case 0:return _b4_;
         case 1:return _b5_;
-        default:var _ho_=field(x,1);return caml_call1(_bX_(_b6_),_ho_)}}
+        default:var _hs_=field(x,1);return caml_call1(_bX_(_b6_),_hs_)}}
     function to_string(x)
      {function conv(param)
        {var param$0=param;
         for(;;)
          {if(param$0)
            {var tl=param$0[2],hd=param$0[1];
-            try {var _hk_=caml_call1(hd,x),_hj_=_hk_}catch(_hl_){var _hj_=0}
-            if(_hj_){var s=_hj_[1];return s}
+            try {var _ho_=caml_call1(hd,x),_hn_=_ho_}catch(_hp_){var _hn_=0}
+            if(_hn_){var s=_hn_[1];return s}
             var param$0=tl;
             continue}
           if(x === Out_of_memory)return _b7_;
@@ -3555,24 +3715,24 @@
     function convert_raw_backtrace(rbckt)
      {try
        {var
-         _hg_=
+         _hk_=
           [0,
            _k_
-            (function(_hi_){return caml_convert_raw_backtrace_slot(_hi_)},
+            (function(_hm_){return caml_convert_raw_backtrace_slot(_hm_)},
              rbckt)];
-        return _hg_}
-      catch(_hh_)
-       {_hh_ = caml_wrap_exception(_hh_);
-        if(_hh_[1] === Failure)return 0;
-        throw _hh_}}
+        return _hk_}
+      catch(_hl_)
+       {_hl_ = caml_wrap_exception(_hl_);
+        if(_hl_[1] === Failure)return 0;
+        throw _hl_}}
     function print_backtrace(outchan)
      {var
        raw_backtrace=caml_get_exception_raw_backtrace(0),
        backtrace=convert_raw_backtrace(raw_backtrace);
       if(backtrace)
-       {var a=backtrace[1],_he_=a.length - 1 - 1 | 0,_hd_=0;
-        if(!(_he_ < 0))
-         {var i=_hd_;
+       {var a=backtrace[1],_hi_=a.length - 1 - 1 | 0,_hh_=0;
+        if(!(_hi_ < 0))
+         {var i=_hh_;
           for(;;)
            {var
              slot=caml_check_bound(a,i)[i + 1],
@@ -3589,33 +3749,33 @@
               lineno=slot[3],
               filename=slot[2],
               is_raise=slot[1],
-              _hb_=info(is_raise),
+              _hf_=info(is_raise),
               match=
                [0,
-                caml_call5(_bX_(_ce_),_hb_,filename,lineno,startchar,endchar)];
+                caml_call5(_bX_(_ce_),_hf_,filename,lineno,startchar,endchar)];
             else
              if(0 === slot[1])
-              var _hc_=info(0),match=[0,caml_call1(_bX_(_cf_),_hc_)];
+              var _hg_=info(0),match=[0,caml_call1(_bX_(_cf_),_hg_)];
              else
               var match=0;
             if(match){var str=match[1];caml_call1(_bW_(outchan,_cg_),str)}
-            var _hf_=i + 1 | 0;
-            if(_he_ !== i){var i=_hf_;continue}
+            var _hj_=i + 1 | 0;
+            if(_hi_ !== i){var i=_hj_;continue}
             break}}
         return 0}
       return _bW_(outchan,_ch_)}
     function register_printer(fn){printers[1] = [0,fn,printers[1]];return 0}
     function add_queue(x,q)
-     {var c=[0,[0,x,0]],_ha_=q[1];
-      if(_ha_){var cell=_ha_[1];q[1] = c;cell[2] = c;return 0}
+     {var c=[0,[0,x,0]],_he_=q[1];
+      if(_he_){var cell=_he_[1];q[1] = c;cell[2] = c;return 0}
       q[1] = c;
       q[2] = c;
       return 0}
     var Empty_queue=caml_set_oo_id([248,_ci_,0]);
     function take_queue(q)
-     {var _g$_=q[2];
-      if(_g$_)
-       {var match=_g$_[1],x=match[1],tl=match[2];
+     {var _hd_=q[2];
+      if(_hd_)
+       {var match=_hd_[1],x=match[1],tl=match[2];
         q[2] = tl;
         if(0 === tl)q[1] = 0;
         return x}
@@ -3634,8 +3794,8 @@
       state[11] = 1;
       var
        y=(state[6] - width | 0) + offset | 0,
-       _g__=state[8],
-       real_indent=caml_lessequal(_g__,y)?_g__:y;
+       _hc_=state[8],
+       real_indent=caml_lessequal(_hc_,y)?_hc_:y;
       state[10] = real_indent;
       state[9] = state[6] - state[10] | 0;
       return pp_output_spaces(state,state[10])}
@@ -3643,19 +3803,19 @@
     function break_same_line(state,width)
      {state[9] = state[9] - width | 0;return pp_output_spaces(state,width)}
     function pp_force_break_line(state)
-     {var _g7_=state[2];
-      if(_g7_)
+     {var _g$_=state[2];
+      if(_g$_)
        {var
-         match=_g7_[1],
+         match=_g$_[1],
          width=match[2],
          bl_ty=match[1],
-         _g8_=state[9] < width?1:0;
-        if(_g8_)
+         _ha_=state[9] < width?1:0;
+        if(_ha_)
          {if(0 !== bl_ty)return 5 <= bl_ty?0:break_line(state,width);
-          var _g9_=0}
+          var _hb_=0}
         else
-         var _g9_=_g8_;
-        return _g9_}
+         var _hb_=_ha_;
+        return _hb_}
       return pp_output_newline(state)}
     function pp_skip_token(state)
      {var match=take_queue(state[27]),size=match[1],len=match[3];
@@ -3666,10 +3826,10 @@
      {if(typeof param === "number")
        switch(param)
         {case 0:
-          var _gW_=state[3];
-          if(_gW_)
+          var _g0_=state[3];
+          if(_g0_)
            {var
-             match=_gW_[1],
+             match=_g0_[1],
              tabs=match[1],
              add_tab=
               function(n,ls)
@@ -3681,28 +3841,28 @@
             return 0}
           return 0;
          case 1:
-          var _gX_=state[2];
-          if(_gX_){var ls=_gX_[2];state[2] = ls;return 0}
+          var _g1_=state[2];
+          if(_g1_){var ls=_g1_[2];state[2] = ls;return 0}
           return 0;
          case 2:
-          var _gY_=state[3];
-          if(_gY_){var ls$0=_gY_[2];state[3] = ls$0;return 0}
+          var _g2_=state[3];
+          if(_g2_){var ls$0=_g2_[2];state[3] = ls$0;return 0}
           return 0;
          case 3:
-          var _gZ_=state[2];
-          if(_gZ_)
-           {var match$0=_gZ_[1],width=match$0[2];
+          var _g3_=state[2];
+          if(_g3_)
+           {var match$0=_g3_[1],width=match$0[2];
             return break_line(state,width)}
           return pp_output_newline(state);
          case 4:
-          var _g0_=state[10] !== (state[6] - state[9] | 0)?1:0;
-          return _g0_?pp_skip_token(state):_g0_;
+          var _g4_=state[10] !== (state[6] - state[9] | 0)?1:0;
+          return _g4_?pp_skip_token(state):_g4_;
          default:
-          var _g1_=state[5];
-          if(_g1_)
+          var _g5_=state[5];
+          if(_g5_)
            {var
-             tags=_g1_[2],
-             tag_name=_g1_[1],
+             tags=_g5_[2],
+             tag_name=_g5_[1],
              marker=caml_call1(state[24],tag_name);
             pp_output_string(state,marker);
             state[5] = tags;
@@ -3717,9 +3877,9 @@
           state[11] = 0;
           return 0;
          case 1:
-          var off=param[2],n=param[1],_g2_=state[2];
-          if(_g2_)
-           {var match$1=_g2_[1],width$0=match$1[2],ty=match$1[1];
+          var off=param[2],n=param[1],_g6_=state[2];
+          if(_g6_)
+           {var match$1=_g6_[1],width$0=match$1[2],ty=match$1[1];
             switch(ty)
              {case 0:return break_same_line(state,n);
               case 1:return break_new_line(state,off,width$0);
@@ -3743,10 +3903,10 @@
            off$0=param[2],
            n$0=param[1],
            insertion_point=state[6] - state[9] | 0,
-           _g3_=state[3];
-          if(_g3_)
+           _g7_=state[3];
+          if(_g7_)
            {var
-             match$2=_g3_[1],
+             match$2=_g7_[1],
              tabs$0=match$2[1],
              find=
               function(n,param)
@@ -3758,14 +3918,14 @@
                     var param$0=l;
                     continue}
                   throw Not_found}},
-             _g4_=tabs$0[1];
-            if(_g4_)
-             {var x=_g4_[1];
+             _g8_=tabs$0[1];
+            if(_g8_)
+             {var x=_g8_[1];
               try
-               {var _g5_=find(insertion_point,tabs$0[1]),x$0=_g5_}
-              catch(_g6_)
-               {_g6_ = caml_wrap_exception(_g6_);
-                if(_g6_ !== Not_found)throw _g6_;
+               {var _g9_=find(insertion_point,tabs$0[1]),x$0=_g9_}
+              catch(_g__)
+               {_g__ = caml_wrap_exception(_g__);
+                if(_g__ !== Not_found)throw _g__;
                 var x$0=x}
               var tab=x$0}
             else
@@ -3794,70 +3954,70 @@
           return 0}}
     function advance_loop(state)
      {for(;;)
-       {var _gS_=state[27][2];
-        if(_gS_)
+       {var _gW_=state[27][2];
+        if(_gW_)
          {var
-           match=_gS_[1],
+           match=_gW_[1],
            x=match[1],
            size=x[1],
            len=x[3],
            tok=x[2],
-           _gT_=size < 0?1:0,
-           _gU_=_gT_?(state[13] - state[12] | 0) < state[9]?1:0:_gT_,
-           _gV_=1 - _gU_;
-          if(_gV_)
+           _gX_=size < 0?1:0,
+           _gY_=_gX_?(state[13] - state[12] | 0) < state[9]?1:0:_gX_,
+           _gZ_=1 - _gY_;
+          if(_gZ_)
            {take_queue(state[27]);
             var size$0=0 <= size?size:pp_infinity;
             format_pp_token(state,size$0,tok);
             state[12] = len + state[12] | 0;
             continue}
-          return _gV_}
+          return _gZ_}
         throw Empty_queue}}
     function advance_left(state)
      {try
-       {var _gQ_=advance_loop(state);return _gQ_}
-      catch(_gR_)
-       {_gR_ = caml_wrap_exception(_gR_);
-        if(_gR_ === Empty_queue)return 0;
-        throw _gR_}}
+       {var _gU_=advance_loop(state);return _gU_}
+      catch(_gV_)
+       {_gV_ = caml_wrap_exception(_gV_);
+        if(_gV_ === Empty_queue)return 0;
+        throw _gV_}}
     var q_elem=[0,-1,_cj_,0],scan_stack_bottom=[0,[0,-1,q_elem],0];
     function clear_scan_stack(state){state[1] = scan_stack_bottom;return 0}
     function set_size(state,ty)
-     {var _gM_=state[1];
-      if(_gM_)
+     {var _gQ_=state[1];
+      if(_gQ_)
        {var
-         match=_gM_[1],
+         match=_gQ_[1],
          queue_elem=match[2],
          left_tot=match[1],
          size=queue_elem[1],
-         t=_gM_[2],
+         t=_gQ_[2],
          tok=queue_elem[2];
         if(left_tot < state[12])return clear_scan_stack(state);
         if(typeof tok !== "number")
          switch(tok[0])
           {case 3:
             var
-             _gO_=1 - ty,
-             _gP_=
-              _gO_?(queue_elem[1] = state[13] + size | 0,state[1] = t,0):_gO_;
-            return _gP_;
+             _gS_=1 - ty,
+             _gT_=
+              _gS_?(queue_elem[1] = state[13] + size | 0,state[1] = t,0):_gS_;
+            return _gT_;
            case 1:
            case 2:
             var
-             _gN_=
+             _gR_=
               ty?(queue_elem[1] = state[13] + size | 0,state[1] = t,0):ty;
-            return _gN_
+            return _gR_
            }
         return 0}
       return 0}
     var blank_line=_G_(80,32);
     function default_pp_mark_open_tag(s){return _e_(_cm_,_e_(s,_cl_))}
     function default_pp_mark_close_tag(s){return _e_(_co_,_e_(s,_cn_))}
-    function default_pp_print_open_tag(_gL_){return 0}
-    function default_pp_print_close_tag(_gK_){return 0}
+    function default_pp_print_open_tag(_gP_){return 0}
+    function default_pp_print_close_tag(_gO_){return 0}
     function make_formatter(output,flush)
-     {function i(_gJ_){return 0}
-      function h(_gI_){return 0}
+     {function i(_gN_){return 0}
+      function h(_gM_){return 0}
       var pp_q=[0,0,0],sys_tok=[0,-1,_cp_,0];
       add_queue(sys_tok,pp_q);
       var
@@ -3891,23 +4051,23 @@
          default_pp_print_open_tag,
          default_pp_print_close_tag,
          pp_q];
-      ppf[19] = function(_gH_){return caml_call3(ppf[17],_ck_,0,1)};
+      ppf[19] = function(_gL_){return caml_call3(ppf[17],_ck_,0,1)};
       ppf[20]
       =
       function(n$1)
        {var n=n$1;
         for(;;)
-         {var _gG_=0 < n?1:0;
-          if(_gG_)
+         {var _gK_=0 < n?1:0;
+          if(_gK_)
            {if(80 < n)
              {caml_call3(ppf[17],blank_line,0,80);
               var n$0=n - 80 | 0,n=n$0;
               continue}
             return caml_call3(ppf[17],blank_line,0,n)}
-          return _gG_}};
+          return _gK_}};
       return ppf}
     function formatter_of_out_channel(oc)
-     {function _gF_(param){return caml_ml_flush(oc)}
+     {function _gJ_(param){return caml_ml_flush(oc)}
       return make_formatter
               (function(s,ofs,len)
                 {if(0 <= ofs)
@@ -3915,20 +4075,20 @@
                    if(!((caml_ml_string_length(s) - len | 0) < ofs))
                     return caml_ml_output(oc,s,ofs,len);
                  return invalid_arg(_j_)},
-               _gF_)}
+               _gJ_)}
     var b=_Q_(512),state=formatter_of_out_channel(stdout);
     formatter_of_out_channel(stderr);
-    function _cr_(_gE_){return 0}
+    function _cr_(_gI_){return 0}
     make_formatter
      (function(s,offset,len)
-       {var _gB_=offset < 0?1:0;
-        if(_gB_)
-         var _gC_=_gB_;
+       {var _gF_=offset < 0?1:0;
+        if(_gF_)
+         var _gG_=_gF_;
         else
          var
-          _gD_=len < 0?1:0,
-          _gC_=_gD_ || (caml_ml_string_length(s) < (offset + len | 0)?1:0);
-        if(_gC_)invalid_arg(_T_);
+          _gH_=len < 0?1:0,
+          _gG_=_gH_ || (caml_ml_string_length(s) < (offset + len | 0)?1:0);
+        if(_gG_)invalid_arg(_T_);
         var new_position=b[2] + len | 0;
         if(b[3] < new_position)_R_(b,len);
         _D_(s,offset,b[1],b[2],len);
@@ -3950,9 +4110,9 @@
         advance_left(state);
         state[12] = 1;
         state[13] = 1;
-        var _gz_=state[27];
-        _gz_[1] = 0;
-        _gz_[2] = 0;
+        var _gD_=state[27];
+        _gD_[1] = 0;
+        _gD_[2] = 0;
         clear_scan_stack(state);
         state[2] = 0;
         state[3] = 0;
@@ -3970,9 +4130,9 @@
         else
          if(state[14] === state[15])
           {var
-            _gA_=state[16],
-            size=caml_ml_string_length(_gA_),
-            tok=[0,size,[0,_gA_],size];
+            _gE_=state[16],
+            size=caml_ml_string_length(_gE_),
+            tok=[0,size,[0,_gE_],size];
            pp_enqueue(state,tok);
            advance_left(state)}
         caml_call1(state[18],0);
@@ -3980,18 +4140,18 @@
     var _ct_=caml_set_oo_id([248,_cs_,0]);
     function _cu_(node)
      {var
-       _gx_=node[4],
-       _gy_=
-        _gx_?(node[4] = 0,node[1][2] = node[2],node[2][1] = node[1],0):_gx_;
-      return _gy_}
+       _gB_=node[4],
+       _gC_=
+        _gB_?(node[4] = 0,node[1][2] = node[2],node[2][1] = node[1],0):_gB_;
+      return _gC_}
     function _cv_(param)
      {var seq=[];caml_update_dummy(seq,[0,seq,seq]);return seq}
     function _cw_(seq){return seq[2] === seq?1:0}
     var Canceled=caml_set_oo_id([248,_cx_,0]),current_data=[0,0];
     function repr_rec(t)
-     {var _gw_=t[1];
-      if(3 === _gw_[0])
-       {var t$0=_gw_[1],t$1=repr_rec(t$0);
+     {var _gA_=t[1];
+      if(3 === _gA_[0])
+       {var t$0=_gA_[1],t$1=repr_rec(t$0);
         if(t$1 !== t$0)t[1] = [3,t$1];
         return t$1}
       return t}
@@ -4009,7 +4169,7 @@
          return caml_sys_exit(2)}];
     function call_unsafe(f,x)
      {try
-       {var _gv_=caml_call1(f,x);return _gv_}
+       {var _gz_=caml_call1(f,x);return _gz_}
       catch(exn)
        {exn = caml_wrap_exception(exn);
         return caml_call1(async_exception_hook[1],exn)}}
@@ -4024,9 +4184,9 @@
        else
         switch(ws$0[0])
          {case 0:
-           var _gu_=ws$0[1][1];
-           if(_gu_)
-            {var f=_gu_[1];
+           var _gy_=ws$0[1][1];
+           if(_gy_)
+            {var f=_gy_[1];
              caml_call1(f,state);
              if(counter < 50)
               {var counter$1=counter + 1 | 0;
@@ -4128,19 +4288,19 @@
         to_wakeup[1] = to_wakeup[1] - 1 | 0;
         var tail=to_wakeup[2],head=tail[2];
         if(head === tail)to_wakeup[2] = 0;else tail[2] = head[2];
-        var _gt_=head[1];
-        unsafe_run_waiters(_gt_[1],_gt_[2]);
+        var _gx_=head[1];
+        unsafe_run_waiters(_gx_[1],_gx_[2]);
         continue}}
     function state_of_result(param)
      {if(0 === param[0]){var x=param[1];return [0,x]}
       var e=param[1];
       return [1,e]}
     function wakeup_result(t,result)
-     {var t$0=repr_rec(t),_gs_=t$0[1];
-      switch(_gs_[0])
-       {case 1:if(_gs_[1] === Canceled)return 0;break;
+     {var t$0=repr_rec(t),_gw_=t$0[1];
+      switch(_gw_[0])
+       {case 1:if(_gw_[1] === Canceled)return 0;break;
         case 2:
-         var sleeper=_gs_[1],state=state_of_result(result);
+         var sleeper=_gw_[1],state=state_of_result(result);
          t$0[1] = state;
          return safe_run_waiters(sleeper,state)
         }
@@ -4153,18 +4313,18 @@
        switch(ws[0])
         {case 0:if(!ws[1][1])return 0;break;
          case 2:
-          var l2=ws[2],l1=ws[1],_gr_=cleanup(l2);
-          return append(cleanup(l1),_gr_)
+          var l2=ws[2],l1=ws[1],_gv_=cleanup(l2);
+          return append(cleanup(l1),_gv_)
          }
       return ws}
     function connect(t1,t2)
-     {var t1$0=repr(t1),t2$0=repr(t2),_gm_=t1$0[1];
-      if(2 === _gm_[0])
-       {var sleeper1=_gm_[1];
+     {var t1$0=repr(t1),t2$0=repr(t2),_gq_=t1$0[1];
+      if(2 === _gq_[0])
+       {var sleeper1=_gq_[1];
         if(t1$0 === t2$0)return 0;
-        var _gn_=t2$0[1];
-        if(2 === _gn_[0])
-         {var sleeper2=_gn_[1];
+        var _gr_=t2$0[1];
+        if(2 === _gr_[0])
+         {var sleeper2=_gr_[1];
           t2$0[1] = [3,t1$0];
           sleeper1[1] = sleeper2[1];
           var
@@ -4175,21 +4335,21 @@
           else
            {sleeper1[3] = removed;sleeper1[2] = waiters}
           var
-           _go_=sleeper2[4],
-           _gp_=sleeper1[4],
-           _gq_=
-            typeof _gp_ === "number"
-             ?_go_
-             :typeof _go_ === "number"?_gp_:[2,_gp_,_go_];
-          sleeper1[4] = _gq_;
+           _gs_=sleeper2[4],
+           _gt_=sleeper1[4],
+           _gu_=
+            typeof _gt_ === "number"
+             ?_gs_
+             :typeof _gs_ === "number"?_gt_:[2,_gt_,_gs_];
+          sleeper1[4] = _gu_;
           return 0}
-        t1$0[1] = _gn_;
-        return unsafe_run_waiters(sleeper1,_gn_)}
+        t1$0[1] = _gr_;
+        return unsafe_run_waiters(sleeper1,_gr_)}
       throw [0,Assert_failure,_cB_]}
     function fast_connect(t,state)
-     {var t$0=repr(t),_gl_=t$0[1];
-      if(2 === _gl_[0])
-       {var sleeper=_gl_[1];
+     {var t$0=repr(t),_gp_=t$0[1];
+      if(2 === _gp_[0])
+       {var sleeper=_gp_[1];
         t$0[1] = state;
         return unsafe_run_waiters(sleeper,state)}
       throw [0,Assert_failure,_cC_]}
@@ -4201,31 +4361,31 @@
     function add_immutable_waiter(sleeper,waiter$0)
      {var
        waiter$1=[1,waiter$0],
-       _gk_=sleeper[2],
-       waiter=typeof _gk_ === "number"?waiter$1:[2,waiter$1,_gk_];
+       _go_=sleeper[2],
+       waiter=typeof _go_ === "number"?waiter$1:[2,waiter$1,_go_];
       sleeper[2] = waiter;
       return 0}
     function on_cancel(t,f)
-     {var _gi_=repr(t)[1];
-      switch(_gi_[0])
-       {case 1:if(_gi_[1] === Canceled)return call_unsafe(f,0);break;
+     {var _gm_=repr(t)[1];
+      switch(_gm_[0])
+       {case 1:if(_gm_[1] === Canceled)return call_unsafe(f,0);break;
         case 2:
          var
-          sleeper=_gi_[1],
+          sleeper=_gm_[1],
           handler=[0,current_data[1],f],
-          _gj_=sleeper[4],
-          handler$0=typeof _gj_ === "number"?handler:[2,handler,_gj_];
+          _gn_=sleeper[4],
+          handler$0=typeof _gn_ === "number"?handler:[2,handler,_gn_];
          sleeper[4] = handler$0;
          return 0
         }
       return 0}
     function bind(t,f)
-     {var t$0=repr(t),_gf_=t$0[1];
-      switch(_gf_[0])
-       {case 0:var v=_gf_[1];return caml_call1(f,v);
-        case 1:return [0,_gf_];
+     {var t$0=repr(t),_gj_=t$0[1];
+      switch(_gj_[0])
+       {case 0:var v=_gj_[1];return caml_call1(f,v);
+        case 1:return [0,_gj_];
         case 2:
-         var sleeper=_gf_[1],res=temp(t$0),data=current_data[1];
+         var sleeper=_gj_[1],res=temp(t$0),data=current_data[1];
          add_immutable_waiter
           (sleeper,
            function(state)
@@ -4234,23 +4394,23 @@
                 var v=state[1];
                 current_data[1] = data;
                 try
-                 {var _gh_=caml_call1(f,v),_gg_=_gh_}
-                catch(exn){exn = caml_wrap_exception(exn);var _gg_=fail(exn)}
-                return connect(res,_gg_);
+                 {var _gl_=caml_call1(f,v),_gk_=_gl_}
+                catch(exn){exn = caml_wrap_exception(exn);var _gk_=fail(exn)}
+                return connect(res,_gk_);
                case 1:return fast_connect(res,state);
                default:throw [0,Assert_failure,_cD_]}});
          return res;
         default:throw [0,Assert_failure,_cE_]}}
     function catch$0(x,f)
      {try
-       {var _gc_=caml_call1(x,0),_ga_=_gc_}
-      catch(exn){exn = caml_wrap_exception(exn);var _ga_=fail(exn)}
-      var t=repr(_ga_),_gb_=t[1];
-      switch(_gb_[0])
+       {var _gg_=caml_call1(x,0),_ge_=_gg_}
+      catch(exn){exn = caml_wrap_exception(exn);var _ge_=fail(exn)}
+      var t=repr(_ge_),_gf_=t[1];
+      switch(_gf_[0])
        {case 0:return t;
-        case 1:var exn=_gb_[1];return caml_call1(f,exn);
+        case 1:var exn=_gf_[1];return caml_call1(f,exn);
         case 2:
-         var sleeper=_gb_[1],res=temp(t),data=current_data[1];
+         var sleeper=_gf_[1],res=temp(t),data=current_data[1];
          add_immutable_waiter
           (sleeper,
            function(state)
@@ -4260,14 +4420,14 @@
                 var exn=state[1];
                 current_data[1] = data;
                 try
-                 {var _ge_=caml_call1(f,exn),_gd_=_ge_}
-                catch(exn){exn = caml_wrap_exception(exn);var _gd_=fail(exn)}
-                return connect(res,_gd_);
+                 {var _gi_=caml_call1(f,exn),_gh_=_gi_}
+                catch(exn){exn = caml_wrap_exception(exn);var _gh_=fail(exn)}
+                return connect(res,_gh_);
                default:throw [0,Assert_failure,_cF_]}});
          return res;
         default:throw [0,Assert_failure,_cG_]}}
     var
-     pause_hook=[0,function(_f$_){return 0}],
+     pause_hook=[0,function(_gd_){return 0}],
      s1=_cv_(0),
      _cH_=[0,0],
      window=joo_global_object,
@@ -4285,21 +4445,21 @@
       _cH_[1] = 0;
       var curr=seq[2];
       for(;;)
-       {var _f__=curr !== seq?1:0;
-        if(_f__)
+       {var _gc_=curr !== seq?1:0;
+        if(_gc_)
          {if(curr[4])wakeup(curr[3],0);
           var curr$0=curr[2],curr=curr$0;
           continue}
-        return _f__}}
-    function _cJ_(x,f,g)
+        return _gc_}}
+    function _cL_(x,f,g)
      {return x == no_handler?caml_call1(f,0):caml_call1(g,x)}
-    function _cK_(x,f,g){return x === t37?caml_call1(f,0):caml_call1(g,x)}
+    function _cM_(x,f,g){return x === t37?caml_call1(f,0):caml_call1(g,x)}
     var
      true$0=true,
      false$0=false,
      regExp_withFlags=window.RegExp,
      array_length=window.Array,
-     Error=caml_set_oo_id([248,_cL_,0]),
+     Error=caml_set_oo_id([248,_cN_,0]),
      exn=[0,Error,{}],
      slot=caml_obj_tag(exn) === 248?exn:exn[1];
     caml_register_named_value(caml_new_string("jsError"),slot);
@@ -4312,8 +4472,8 @@
     register_printer
      (function(e)
        {return e instanceof array_length?0:[0,caml_js_to_string(e.toString())]});
-    function _cM_(p,n){p.appendChild(n);return 0}
-    function _cN_(p,n){p.removeChild(n);return 0}
+    function _cO_(p,n){p.appendChild(n);return 0}
+    function _cP_(p,n){p.removeChild(n);return 0}
     function handler(f)
      {return function(e)
        {if(1 - (e == no_handler?1:0))
@@ -4332,19 +4492,19 @@
     function unsafeCreateElementEx(type,name,doc,elt)
      {for(;;)
        {if(0 === type)if(0 === name)return createElement(doc,elt);
-        var _f4_=createElementSyntax[1];
-        if(785140586 === _f4_)
+        var _f8_=createElementSyntax[1];
+        if(785140586 === _f8_)
          {try
            {var
              el=document.createElement('<input name="x">'),
-             _f7_=el.tagName.toLowerCase() === "input"?1:0,
-             _f8_=_f7_?el.name === "x"?1:0:_f7_,
-             _f5_=_f8_}
-          catch(_f9_){var _f5_=0}
-          var _f6_=_f5_?982028505:-1003883683;
-          createElementSyntax[1] = _f6_;
+             _f$_=el.tagName.toLowerCase() === "input"?1:0,
+             _ga_=_f$_?el.name === "x"?1:0:_f$_,
+             _f9_=_ga_}
+          catch(_gb_){var _f9_=0}
+          var _f__=_f9_?982028505:-1003883683;
+          createElementSyntax[1] = _f__;
           continue}
-        if(982028505 <= _f4_)
+        if(982028505 <= _f8_)
          {var a=new array_length();
           a.push("<",elt.toString());
           opt_iter
@@ -4359,31 +4519,31 @@
         opt_iter(type,function(t){return res.type = t});
         opt_iter(name,function(n){return res.name = n});
         return res}}
-    function createOption(doc){return unsafeCreateElement(doc,_cO_)}
-    function createDiv(doc){return unsafeCreateElement(doc,_cQ_)}
-    function createBr(doc){return unsafeCreateElement(doc,_cS_)}
-    caml_set_oo_id([248,_cV_,0]);
+    function createOption(doc){return unsafeCreateElement(doc,_cQ_)}
+    function createDiv(doc){return unsafeCreateElement(doc,_cS_)}
+    function createBr(doc){return unsafeCreateElement(doc,_cU_)}
+    caml_set_oo_id([248,_cX_,0]);
     var html_element=window.HTMLElement;
     html_element === t37;
-    var _cW_=2147483e3,_cX_=caml_js_get_console(0);
+    var _cY_=2147483e3,_cZ_=caml_js_get_console(0);
     function sleep(d)
      {var match=task(0),w=match[2],t=match[1],d$0=d * 1e3;
-      function callback(_f3_){return wakeup(w,_f3_)}
+      function callback(_f7_){return wakeup(w,_f7_)}
       var id=[0,0];
       function loop(d,param)
        {var
-         match=2147483e3 < d?[0,_cW_,d - 2147483e3]:[0,d,0],
+         match=2147483e3 < d?[0,_cY_,d - 2147483e3]:[0,d,0],
          remain=match[2],
          step=match[1],
-         cb=remain == 0?callback:function(_f2_){return loop(remain,_f2_)};
+         cb=remain == 0?callback:function(_f6_){return loop(remain,_f6_)};
         id[1] = [0,window.setTimeout(caml_js_wrap_callback(cb),step)];
         return 0}
       loop(d$0,0);
       on_cancel
        (t,
         function(param)
-         {var _f1_=id[1];
-          if(_f1_){var x=_f1_[1];id[1] = 0;return window.clearTimeout(x)}
+         {var _f5_=id[1];
+          if(_f5_){var x=_f5_[1];id[1] = 0;return window.clearTimeout(x)}
           return 0});
       return t}
     function f(param)
@@ -4391,36 +4551,37 @@
               ?(window.setTimeout(caml_js_wrap_callback(_cI_),0),0)
               :0}
     pause_hook[1] = f;
-    function _cY_(s){return _cX_.log(s.toString())}
+    function _c0_(s){return _cZ_.log(s.toString())}
     async_exception_hook[1]
     =
     function(exn)
-     {_cY_(_cZ_);_cY_(to_string(exn));return print_backtrace(stderr)};
+     {_c0_(_c1_);_c0_(to_string(exn));return print_backtrace(stderr)};
+    if(!caml_string_equal(_cK_,_c2_))_e_(_cJ_,_e_(_dw_,_cK_));
     function regexp(s)
      {return new regExp_withFlags(caml_bytes_of_string(s),"g")}
     new regExp_withFlags("[$]","g");
-    var _c1_=regexp(_c0_),Local_exn=caml_set_oo_id([248,_c2_,0]);
+    var _c4_=regexp(_c3_),Local_exn=caml_set_oo_id([248,_c5_,0]);
     function interrupt(param){throw Local_exn}
     regexp
-     (caml_js_to_byte_string(caml_bytes_of_string(s).replace(_c1_,"\\$&")));
+     (caml_js_to_byte_string(caml_bytes_of_string(s).replace(_c4_,"\\$&")));
     var plus_re_js_string=new regExp_withFlags("\\+","g");
     function urldecode_js_string_string(s$0)
      {plus_re_js_string.lastIndex = 0;
       var s=s$0.replace(plus_re_js_string," ");
       return caml_js_to_byte_string(window.unescape(s))}
-    caml_set_oo_id([248,_c3_,0]);
-    new regExp_withFlags(caml_bytes_of_string(_c7_));
-    new regExp_withFlags(caml_bytes_of_string(_c8_));
+    caml_set_oo_id([248,_c6_,0]);
+    new regExp_withFlags(caml_bytes_of_string(_c__));
+    new regExp_withFlags(caml_bytes_of_string(_c$_));
     var x=window.location;
     if(x !== t37)
-     var _c9_=window.location;
+     var _da_=window.location;
     else
      var
       t29="",
-      t40=function(param,_f0_){return 0},
-      t39=function(param,_fZ_){return 0},
+      t40=function(param,_f4_){return 0},
+      t39=function(param,_f3_){return 0},
       t38=function(param){return 0},
-      _c9_=
+      _da_=
        {"href":t29,
         "protocol":t29,
         "host":t29,
@@ -4433,43 +4594,43 @@
         "reload":caml_js_wrap_meth_callback(t38),
         "replace":caml_js_wrap_meth_callback(t39),
         "assign":caml_js_wrap_meth_callback(t40)};
-    urldecode_js_string_string(_c9_.hostname);
-    urldecode_js_string_string(_c9_.protocol);
-    var _c__=0;
+    urldecode_js_string_string(_da_.hostname);
+    urldecode_js_string_string(_da_.protocol);
+    var _db_=0;
     (function(param)
        {try
-         {var _fX_=[0,caml_int_of_string(caml_js_to_byte_string(_c9_.port))];
-          return _fX_}
-        catch(_fY_)
-         {_fY_ = caml_wrap_exception(_fY_);
-          if(_fY_[1] === Failure)return 0;
-          throw _fY_}}
-      (_c__));
+         {var _f1_=[0,caml_int_of_string(caml_js_to_byte_string(_da_.port))];
+          return _f1_}
+        catch(_f2_)
+         {_f2_ = caml_wrap_exception(_f2_);
+          if(_f2_[1] === Failure)return 0;
+          throw _f2_}}
+      (_db_));
     var
-     s$0=urldecode_js_string_string(_c9_.pathname),
+     s$0=urldecode_js_string_string(_da_.pathname),
      l=caml_ml_string_length(s$0);
     function aux(i)
      {try
-       {var _fV_=_K_(s$0,i,47),j=_fV_}
-      catch(_fW_)
-       {_fW_ = caml_wrap_exception(_fW_);
-        if(_fW_ !== Not_found)throw _fW_;
+       {var _fZ_=_K_(s$0,i,47),j=_fZ_}
+      catch(_f0_)
+       {_f0_ = caml_wrap_exception(_f0_);
+        if(_f0_ !== Not_found)throw _f0_;
         var j=l}
       var word=_H_(s$0,i,j - i | 0);
       return l <= j?[0,word,0]:[0,word,aux(j + 1 | 0)]}
     var a=aux(0);
     if(a)
-     if(caml_string_notequal(a[1],_c4_))
+     if(caml_string_notequal(a[1],_c7_))
       var switch$0=0;
      else
       var
-       _c5_=a[2],
-       switch$0=_c5_?caml_string_notequal(_c5_[1],_c6_)?0:_c5_[2]?0:1:1;
+       _c8_=a[2],
+       switch$0=_c8_?caml_string_notequal(_c8_[1],_c9_)?0:_c8_[2]?0:1:1;
     else
      var switch$0=0;
     var
-     _c$_=_c9_.search.charAt(0) === "?"?_c9_.search.slice(1):_c9_.search,
-     arr=_c$_.split(_G_(1,38).toString()),
+     _dc_=_da_.search.charAt(0) === "?"?_da_.search.slice(1):_da_.search,
+     arr=_dc_.split(_G_(1,38).toString()),
      len=arr.length;
     function aux$0(acc,idx)
      {var idx$0=idx;
@@ -4477,58 +4638,58 @@
        {if(0 <= idx$0)
          try
           {var
-            _fN_=idx$0 - 1 | 0,
-            _fO_=
+            _fR_=idx$0 - 1 | 0,
+            _fS_=
              function(s)
-              {function _fT_(param)
-                {var y=param[2],x=param[1],_fU_=urldecode_js_string_string(y);
-                 return [0,urldecode_js_string_string(x),_fU_]}
+              {function _fX_(param)
+                {var y=param[2],x=param[1],_fY_=urldecode_js_string_string(y);
+                 return [0,urldecode_js_string_string(x),_fY_]}
                var index=s.indexOf(_G_(1,61).toString());
                if(0 <= index)
                 var
-                 _fR_=s.slice(index + 1 | 0),
-                 _fS_=[0,s.slice(0,index),_fR_];
+                 _fV_=s.slice(index + 1 | 0),
+                 _fW_=[0,s.slice(0,index),_fV_];
                else
-                var _fS_=t37;
-               return _cK_(_fS_,interrupt,_fT_)},
-            _fP_=aux$0([0,_cK_(arr[idx$0],interrupt,_fO_),acc],_fN_);
-           return _fP_}
-         catch(_fQ_)
-          {_fQ_ = caml_wrap_exception(_fQ_);
-           if(_fQ_ === Local_exn)
+                var _fW_=t37;
+               return _cM_(_fW_,interrupt,_fX_)},
+            _fT_=aux$0([0,_cM_(arr[idx$0],interrupt,_fS_),acc],_fR_);
+           return _fT_}
+         catch(_fU_)
+          {_fU_ = caml_wrap_exception(_fU_);
+           if(_fU_ === Local_exn)
             {var idx$1=idx$0 - 1 | 0,idx$0=idx$1;continue}
-           throw _fQ_}
+           throw _fU_}
         return acc}}
     aux$0(0,len - 1 | 0);
-    urldecode_js_string_string(_c9_.href);
-    function _da_(param)
+    urldecode_js_string_string(_da_.href);
+    function _dd_(param)
      {var
        xmlHttpRequest=window.XMLHttpRequest,
        activeXObject=window.activeXObject;
       try
-       {var _fI_=new xmlHttpRequest();return _fI_}
-      catch(_fJ_)
+       {var _fM_=new xmlHttpRequest();return _fM_}
+      catch(_fN_)
        {try
-         {var _fH_=new activeXObject("Msxml2.XMLHTTP");return _fH_}
-        catch(_fK_)
+         {var _fL_=new activeXObject("Msxml2.XMLHTTP");return _fL_}
+        catch(_fO_)
          {try
-           {var _fG_=new activeXObject("Msxml3.XMLHTTP");return _fG_}
-          catch(_fL_)
+           {var _fK_=new activeXObject("Msxml3.XMLHTTP");return _fK_}
+          catch(_fP_)
            {try
-             {var _fF_=new activeXObject("Microsoft.XMLHTTP");return _fF_}
-            catch(_fM_){throw [0,Assert_failure,_db_]}}}}}
-    var _dd_=caml_set_oo_id([248,_dc_,0]),doc=window.document;
-    function append_text(e,s){return _cM_(e,doc.createTextNode(s.toString()))}
+             {var _fJ_=new activeXObject("Microsoft.XMLHTTP");return _fJ_}
+            catch(_fQ_){throw [0,Assert_failure,_de_]}}}}}
+    var _dg_=caml_set_oo_id([248,_df_,0]),doc=window.document;
+    function append_text(e,s){return _cO_(e,doc.createTextNode(s.toString()))}
     function replace_child(p,n)
      {var c=p.firstChild;
-      if(1 - (c == no_handler?1:0))_cN_(p,c);
-      return _cM_(p,n)}
+      if(1 - (c == no_handler?1:0))_cP_(p,c);
+      return _cO_(p,n)}
     var
      box_style=
       "border: 1px black solid; background-color: white ; display: inline ; padding-right: .5em; padding-left: .5em;",
      loading_style=
       "background-color: red; color: white; display:inline; position: absolute; top:0; right:0;",
-     Death=caml_set_oo_id([248,_dh_,0]);
+     Death=caml_set_oo_id([248,_dk_,0]);
     function img_assoc(v)
      {switch(v)
        {case 0:return "sprites/empty.png";
@@ -4542,211 +4703,211 @@
         default:return "sprites/bam.png"}}
     function set_cell(state,x,y,v)
      {caml_check_bound(caml_check_bound(state[1],y)[y + 1],x)[x + 1] = v;
-      var _fE_=img_assoc(v);
+      var _fI_=img_assoc(v);
       return caml_check_bound(caml_check_bound(state[2],y)[y + 1],x)[x + 1].src
              =
-             _fE_}
+             _fI_}
     function fall(state)
-     {var changed=[0,0],_e$_=state[1].length - 1 - 2 | 0;
-      if(!(_e$_ < 1))
-       {var y=_e$_;
+     {var changed=[0,0],_fd_=state[1].length - 1 - 2 | 0;
+      if(!(_fd_ < 1))
+       {var y=_fd_;
         for(;;)
          {var
-           _fc_=caml_check_bound(state[1],y)[y + 1].length - 1 - 2 | 0,
-           _fb_=1;
-          if(!(_fc_ < 1))
-           {var x=_fb_;
+           _fg_=caml_check_bound(state[1],y)[y + 1].length - 1 - 2 | 0,
+           _ff_=1;
+          if(!(_fg_ < 1))
+           {var x=_ff_;
             for(;;)
              {var
-               _fe_=y + 1 | 0,
-               _ff_=
+               _fi_=y + 1 | 0,
+               _fj_=
                 6
                  ===
-                 caml_check_bound(caml_check_bound(state[1],_fe_)[_fe_ + 1],x)
+                 caml_check_bound(caml_check_bound(state[1],_fi_)[_fi_ + 1],x)
                   [x + 1]
                  ?1
                  :0,
                sustaining=
-                _ff_
+                _fj_
                  ?3
                    ===
                    caml_check_bound(caml_check_bound(state[1],y)[y + 1],x)
                     [x + 1]
                    ?1
                    :0
-                 :_ff_,
-               _fg_=
+                 :_fj_,
+               _fk_=
                 0
                  ===
                  caml_check_bound(caml_check_bound(state[1],y)[y + 1],x)
                   [x + 1]
                  ?1
                  :0;
-              if(_fg_)
+              if(_fk_)
                var
-                _fh_=y - 1 | 0,
-                _fi_=
+                _fl_=y - 1 | 0,
+                _fm_=
                  3
                   ===
                   caml_check_bound
-                    (caml_check_bound(state[1],_fh_)[_fh_ + 1],x)
+                    (caml_check_bound(state[1],_fl_)[_fl_ + 1],x)
                    [x + 1]
                   ?1
                   :0;
               else
-               var _fi_=_fg_;
-              if(_fi_)
+               var _fm_=_fk_;
+              if(_fm_)
                {set_cell(state,x,y - 1 | 0,0);
                 set_cell(state,x,y,3);
                 changed[1] = 1}
               var
-               _fj_=
+               _fn_=
                 0
                  ===
                  caml_check_bound(caml_check_bound(state[1],y)[y + 1],x)
                   [x + 1]
                  ?1
                  :0;
-              if(_fj_)
+              if(_fn_)
                {var
-                 _fk_=y - 1 | 0,
-                 _fl_=
+                 _fo_=y - 1 | 0,
+                 _fp_=
                   0
                    ===
                    caml_check_bound
-                     (caml_check_bound(state[1],_fk_)[_fk_ + 1],x)
+                     (caml_check_bound(state[1],_fo_)[_fo_ + 1],x)
                     [x + 1]
                    ?1
                    :0;
-                if(_fl_)
+                if(_fp_)
                  {var
-                   _fm_=x - 1 | 0,
-                   _fn_=
+                   _fq_=x - 1 | 0,
+                   _fr_=
                     3
                      ===
-                     caml_check_bound(caml_check_bound(state[1],y)[y + 1],_fm_)
-                      [_fm_ + 1]
+                     caml_check_bound(caml_check_bound(state[1],y)[y + 1],_fq_)
+                      [_fq_ + 1]
                      ?1
                      :0;
-                  if(_fn_)
+                  if(_fr_)
                    var
-                    _fo_=x - 1 | 0,
-                    _fp_=y - 1 | 0,
-                    _fq_=
+                    _fs_=x - 1 | 0,
+                    _ft_=y - 1 | 0,
+                    _fu_=
                      3
                       ===
                       caml_check_bound
-                        (caml_check_bound(state[1],_fp_)[_fp_ + 1],_fo_)
-                       [_fo_ + 1]
+                        (caml_check_bound(state[1],_ft_)[_ft_ + 1],_fs_)
+                       [_fs_ + 1]
                       ?1
                       :0;
                   else
-                   var _fq_=_fn_}
+                   var _fu_=_fr_}
                 else
-                 var _fq_=_fl_}
+                 var _fu_=_fp_}
               else
-               var _fq_=_fj_;
-              if(_fq_)
+               var _fu_=_fn_;
+              if(_fu_)
                {set_cell(state,x - 1 | 0,y - 1 | 0,0);
                 set_cell(state,x,y,3);
                 changed[1] = 1}
               var
-               _fr_=
+               _fv_=
                 0
                  ===
                  caml_check_bound(caml_check_bound(state[1],y)[y + 1],x)
                   [x + 1]
                  ?1
                  :0;
-              if(_fr_)
+              if(_fv_)
                {var
-                 _fs_=y - 1 | 0,
-                 _ft_=
+                 _fw_=y - 1 | 0,
+                 _fx_=
                   0
                    ===
                    caml_check_bound
-                     (caml_check_bound(state[1],_fs_)[_fs_ + 1],x)
+                     (caml_check_bound(state[1],_fw_)[_fw_ + 1],x)
                     [x + 1]
                    ?1
                    :0;
-                if(_ft_)
+                if(_fx_)
                  {var
-                   _fu_=x + 1 | 0,
-                   _fv_=
+                   _fy_=x + 1 | 0,
+                   _fz_=
                     3
                      ===
-                     caml_check_bound(caml_check_bound(state[1],y)[y + 1],_fu_)
-                      [_fu_ + 1]
+                     caml_check_bound(caml_check_bound(state[1],y)[y + 1],_fy_)
+                      [_fy_ + 1]
                      ?1
                      :0;
-                  if(_fv_)
+                  if(_fz_)
                    var
-                    _fw_=x + 1 | 0,
-                    _fx_=y - 1 | 0,
-                    _fy_=
+                    _fA_=x + 1 | 0,
+                    _fB_=y - 1 | 0,
+                    _fC_=
                      3
                       ===
                       caml_check_bound
-                        (caml_check_bound(state[1],_fx_)[_fx_ + 1],_fw_)
-                       [_fw_ + 1]
+                        (caml_check_bound(state[1],_fB_)[_fB_ + 1],_fA_)
+                       [_fA_ + 1]
                       ?1
                       :0;
                   else
-                   var _fy_=_fv_}
+                   var _fC_=_fz_}
                 else
-                 var _fy_=_ft_}
+                 var _fC_=_fx_}
               else
-               var _fy_=_fr_;
-              if(_fy_)
+               var _fC_=_fv_;
+              if(_fC_)
                {set_cell(state,x + 1 | 0,y - 1 | 0,0);
                 set_cell(state,x,y,3);
                 changed[1] = 1}
-              var _fz_=1 - sustaining;
-              if(_fz_)
+              var _fD_=1 - sustaining;
+              if(_fD_)
                var
-                _fA_=y + 1 | 0,
-                _fB_=
+                _fE_=y + 1 | 0,
+                _fF_=
                  6
                   ===
                   caml_check_bound
-                    (caml_check_bound(state[1],_fA_)[_fA_ + 1],x)
+                    (caml_check_bound(state[1],_fE_)[_fE_ + 1],x)
                    [x + 1]
                   ?1
                   :0,
-                _fC_=
-                 _fB_
+                _fG_=
+                 _fF_
                   ?3
                     ===
                     caml_check_bound(caml_check_bound(state[1],y)[y + 1],x)
                      [x + 1]
                     ?1
                     :0
-                  :_fB_;
+                  :_fF_;
               else
-               var _fC_=_fz_;
-              if(_fC_){set_cell(state,x,y + 1 | 0,8);throw Death}
-              var _fD_=x + 1 | 0;
-              if(_fc_ !== x){var x=_fD_;continue}
+               var _fG_=_fD_;
+              if(_fG_){set_cell(state,x,y + 1 | 0,8);throw Death}
+              var _fH_=x + 1 | 0;
+              if(_fg_ !== x){var x=_fH_;continue}
               break}}
-          var _fd_=y - 1 | 0;
-          if(1 !== y){var y=_fd_;continue}
+          var _fh_=y - 1 | 0;
+          if(1 !== y){var y=_fh_;continue}
           break}}
       if(changed[1])
-       {var _fa_=function(param){return fall(state)};
-        return bind(sleep(0.05),_fa_)}
+       {var _fe_=function(param){return fall(state)};
+        return bind(sleep(0.05),_fe_)}
       return return$0(0)}
     function build_interaction(state,show_rem,clock)
      {var clock_stop=clock[3];
-      function _d__(param)
-       {var _ee_=state[1].length - 1 - 1 | 0,_ed_=0;
-        if(!(_ee_ < 0))
-         {var y$0=_ed_;
+      function _ec_(param)
+       {var _ei_=state[1].length - 1 - 1 | 0,_eh_=0;
+        if(!(_ei_ < 0))
+         {var y$0=_eh_;
           for(;;)
            {var
-             _eh_=caml_check_bound(state[1],y$0)[y$0 + 1].length - 1 - 1 | 0,
-             _eg_=0;
-            if(!(_eh_ < 0))
-             {var x$1=_eg_;
+             _el_=caml_check_bound(state[1],y$0)[y$0 + 1].length - 1 - 1 | 0,
+             _ek_=0;
+            if(!(_el_ < 0))
+             {var x$1=_ek_;
               for(;;)
                {caml_check_bound(caml_check_bound(state[2],y$0)[y$0 + 1],x$1)
                  [x$1 + 1].onmouseover
@@ -4760,25 +4921,25 @@
                  [x$1 + 1].onclick
                 =
                 no_handler;
-                var _ej_=x$1 + 1 | 0;
-                if(_eh_ !== x$1){var x$1=_ej_;continue}
+                var _en_=x$1 + 1 | 0;
+                if(_el_ !== x$1){var x$1=_en_;continue}
                 break}}
-            var _ei_=y$0 + 1 | 0;
-            if(_ee_ !== y$0){var y$0=_ei_;continue}
+            var _em_=y$0 + 1 | 0;
+            if(_ei_ !== y$0){var y$0=_em_;continue}
             break}}
         function inhibit(f,x)
          {if(1 - state[8])
            {state[8] = 1;
-            var _e__=function(param){state[8] = 0;return return$0(0)};
-            bind(caml_call1(f,0),_e__)}
+            var _fc_=function(param){state[8] = 0;return return$0(0)};
+            bind(caml_call1(f,0),_fc_)}
           return false$0}
         function set_pending_out(f,out,param)
-         {function _e9_(param){state[9][1] = [0,out];return return$0(0)}
-          return bind(caml_call1(f,0),_e9_)}
+         {function _fb_(param){state[9][1] = [0,out];return return$0(0)}
+          return bind(caml_call1(f,0),_fb_)}
         function with_pending_out(f,param)
-         {var _e8_=state[9][1];
-          if(_e8_)
-           {var out=_e8_[1];
+         {var _fa_=state[9][1];
+          if(_fa_)
+           {var out=_fa_[1];
             caml_call1(out,0);
             state[9][1] = 0;
             return caml_call1(f,0)}
@@ -4798,9 +4959,9 @@
             if(5 === param$1)
              var switch$0=0;
             else
-             if(3 <= param$1)var _eF_=0,switch$0=1;else var switch$0=0;
-            if(!switch$0)var _eF_=1;
-            if(_eF_)
+             if(3 <= param$1)var _eJ_=0,switch$0=1;else var switch$0=0;
+            if(!switch$0)var _eJ_=1;
+            if(_eJ_)
              {var
                cur_img=
                 caml_check_bound(caml_check_bound(state[2],y)[y + 1],x)[x + 1].src,
@@ -4827,7 +4988,7 @@
                click$2=
                 function(click_cont,y,x)
                  {function click(param)
-                   {function _e5_(param)
+                   {function _e9_(param)
                      {if
                        (2
                         ===
@@ -4835,12 +4996,12 @@
                          [x + 1])
                        state[5] = state[5] - 1 | 0;
                       set_cell(state,x,y,6);
-                      function _e6_(param)
-                       {function _e7_(param)
+                      function _e__(param)
+                       {function _e$_(param)
                          {set_cell(state,x,y,0);return return$0(0)}
-                        return bind(fall(state),_e7_)}
-                      return bind(sleep(0.05),_e6_)}
-                    return bind(caml_call1(click_cont,0),_e5_)}
+                        return bind(fall(state),_e$_)}
+                      return bind(sleep(0.05),_e__)}
+                    return bind(caml_call1(click_cont,0),_e9_)}
                   return click},
                click=click$2(click_cont$0,y,x),
                click$1=
@@ -4848,14 +5009,14 @@
                  {function click(param)
                    {var match=state[3],gy=match[2],gx=match[1];
                     set_cell(state,gx,gy,0);
-                    function _e2_(param)
+                    function _e6_(param)
                      {return build_interaction(state,show_rem,clock)}
-                    function _e3_(e)
+                    function _e7_(e)
                      {return e === Death?(state[6] = 1,return$0(0)):fail(e)}
                     return bind
                             (catch$0
                               (function(param)
-                                {function _e4_(param)
+                                {function _e8_(param)
                                   {if
                                     (2
                                      ===
@@ -4865,64 +5026,64 @@
                                    set_cell(state,x,y,6);
                                    state[3] = [0,x,y];
                                    return fall(state)}
-                                 return bind(caml_call1(click_cont,0),_e4_)},
-                               _e3_),
-                             _e2_)}
+                                 return bind(caml_call1(click_cont,0),_e8_)},
+                               _e7_),
+                             _e6_)}
                   return click},
                click$0=click$1(click_cont$0,y,x),
-               _eG_=
+               _eK_=
                 function(over)
-                  {return function(_e1_){return with_pending_out(over,_e1_)}}
+                  {return function(_e5_){return with_pending_out(over,_e5_)}}
                  (over),
-               _eH_=
-                function(out,_eZ_)
-                  {return function(_e0_)
-                    {return set_pending_out(_eZ_,out,_e0_)}}
-                 (out,_eG_),
-               _eI_=
+               _eL_=
+                function(out,_e3_)
+                  {return function(_e4_)
+                    {return set_pending_out(_e3_,out,_e4_)}}
+                 (out,_eK_),
+               _eM_=
+                handler
+                 (function(_e1_)
+                    {return function(_e2_){return inhibit(_e1_,_e2_)}}
+                   (_eL_));
+              caml_check_bound(caml_check_bound(state[2],y)[y + 1],x)[x + 1].onmouseover
+              =
+              _eM_;
+              var
+               _eN_=function(param){return return$0(0)},
+               _eO_=
+                function(_eZ_)
+                  {return function(_e0_){return with_pending_out(_eZ_,_e0_)}}
+                 (_eN_),
+               _eP_=
                 handler
                  (function(_eX_)
                     {return function(_eY_){return inhibit(_eX_,_eY_)}}
-                   (_eH_));
-              caml_check_bound(caml_check_bound(state[2],y)[y + 1],x)[x + 1].onmouseover
-              =
-              _eI_;
-              var
-               _eJ_=function(param){return return$0(0)},
-               _eK_=
-                function(_eV_)
-                  {return function(_eW_){return with_pending_out(_eV_,_eW_)}}
-                 (_eJ_),
-               _eL_=
-                handler
-                 (function(_eT_)
-                    {return function(_eU_){return inhibit(_eT_,_eU_)}}
-                   (_eK_));
+                   (_eO_));
               caml_check_bound(caml_check_bound(state[2],y)[y + 1],x)[x + 1].onmouseout
               =
-              _eL_;
+              _eP_;
               var
-               _eM_=
+               _eQ_=
                 function(click)
-                  {return function(_eS_){return with_pending_out(click,_eS_)}}
+                  {return function(_eW_){return with_pending_out(click,_eW_)}}
                  (click$0),
-               _eN_=
+               _eR_=
                 handler
-                 (function(_eQ_)
-                    {return function(_eR_){return inhibit(_eQ_,_eR_)}}
-                   (_eM_));
+                 (function(_eU_)
+                    {return function(_eV_){return inhibit(_eU_,_eV_)}}
+                   (_eQ_));
               caml_check_bound(caml_check_bound(state[2],y)[y + 1],x)[x + 1].onclick
               =
-              _eN_;
+              _eR_;
               var
-               _eO_=
+               _eS_=
                 5
                  !==
                  caml_check_bound(caml_check_bound(state[1],y)[y + 1],x)
                   [x + 1]
                  ?1
                  :0;
-              if(_eO_)
+              if(_eS_)
                {var
                  param$2=caml_call1(next,[0,x,y]),
                  param$0=param$2,
@@ -4930,10 +5091,10 @@
                  out_cont$0=out,
                  click_cont$0=click;
                 continue}
-              var _eP_=_eO_}
+              var _eT_=_eS_}
             else
-             var _eP_=_eF_;
-            return _eP_}}
+             var _eT_=_eJ_;
+            return _eT_}}
         function update_push(pos,next,img,img_guy)
          {var
            y=pos[2],
@@ -4946,28 +5107,28 @@
            x$1=match[1];
           try
            {var
-             _et_=
+             _ex_=
               3
                ===
                caml_check_bound(caml_check_bound(state[1],y$0)[y$0 + 1],x$0)
                 [x$0 + 1]
                ?1
                :0,
-             _eu_=
-              _et_
+             _ey_=
+              _ex_
                ?0
                  ===
                  caml_check_bound(caml_check_bound(state[1],y$1)[y$1 + 1],x$1)
                   [x$1 + 1]
                  ?1
                  :0
-               :_et_,
-             _ek_=_eu_}
-          catch(_eE_)
-           {_eE_ = caml_wrap_exception(_eE_);
-            if(_eE_[1] !== Invalid_argument)throw _eE_;
-            var _ek_=0}
-          if(_ek_)
+               :_ex_,
+             _eo_=_ey_}
+          catch(_eI_)
+           {_eI_ = caml_wrap_exception(_eI_);
+            if(_eI_[1] !== Invalid_argument)throw _eI_;
+            var _eo_=0}
+          if(_eo_)
            {var
              over=
               function(param)
@@ -4995,36 +5156,36 @@
                 set_cell(state,x$0,y$0,6);
                 state[3] = pos$0;
                 set_cell(state,x$1,y$1,3);
-                function _eC_(param)
+                function _eG_(param)
                  {return build_interaction(state,show_rem,clock)}
-                function _eD_(e)
+                function _eH_(e)
                  {return e === Death?(state[6] = 1,return$0(0)):fail(e)}
                 return bind
-                        (catch$0(function(param){return fall(state)},_eD_),_eC_)},
-             _el_=function(_eB_){return with_pending_out(over,_eB_)},
-             _em_=function(_eA_){return set_pending_out(_el_,out,_eA_)},
-             _en_=handler(function(_ez_){return inhibit(_em_,_ez_)});
+                        (catch$0(function(param){return fall(state)},_eH_),_eG_)},
+             _ep_=function(_eF_){return with_pending_out(over,_eF_)},
+             _eq_=function(_eE_){return set_pending_out(_ep_,out,_eE_)},
+             _er_=handler(function(_eD_){return inhibit(_eq_,_eD_)});
             caml_check_bound(caml_check_bound(state[2],y$0)[y$0 + 1],x$0)
              [x$0 + 1].onmouseover
             =
-            _en_;
+            _er_;
             var
-             _eo_=function(param){return return$0(0)},
-             _ep_=function(_ey_){return with_pending_out(_eo_,_ey_)},
-             _eq_=handler(function(_ex_){return inhibit(_ep_,_ex_)});
+             _es_=function(param){return return$0(0)},
+             _et_=function(_eC_){return with_pending_out(_es_,_eC_)},
+             _eu_=handler(function(_eB_){return inhibit(_et_,_eB_)});
             caml_check_bound(caml_check_bound(state[2],y$0)[y$0 + 1],x$0)
              [x$0 + 1].onmouseout
             =
-            _eq_;
+            _eu_;
             var
-             _er_=function(_ew_){return with_pending_out(click,_ew_)},
-             _es_=handler(function(_ev_){return inhibit(_er_,_ev_)});
+             _ev_=function(_eA_){return with_pending_out(click,_eA_)},
+             _ew_=handler(function(_ez_){return inhibit(_ev_,_ez_)});
             return caml_check_bound
                      (caml_check_bound(state[2],y$0)[y$0 + 1],x$0)
                     [x$0 + 1].onclick
                    =
-                   _es_}
-          return _ek_}
+                   _ew_}
+          return _eo_}
         if(caml_equal(state[3],state[4]))
          {caml_call1(clock_stop,0);window.alert("YOU WIN !")}
         else
@@ -5083,20 +5244,20 @@
            update_push(state[3],r,"sprites/bR.png","sprites/push_r.png");
            update_push(state[3],l,"sprites/bL.png","sprites/push_l.png");
            caml_call1(show_rem,state[5])}
-        var _ef_=state[7];
-        if(_ef_[1])
-         if(_cw_(_ef_[2]))
-          _ef_[1] = 0;
+        var _ej_=state[7];
+        if(_ej_[1])
+         if(_cw_(_ej_[2]))
+          _ej_[1] = 0;
          else
-          {var _ec_=_ef_[2],v=0;
-           if(_cw_(_ec_))throw _ct_;
-           var node=_ec_[2];
+          {var _eg_=_ej_[2],v=0;
+           if(_cw_(_eg_))throw _ct_;
+           var node=_eg_[2];
            _cu_(node);
-           var result=[0,v],t=repr_rec(node[3]),_eb_=t[1];
-           switch(_eb_[0])
-            {case 1:var switch$0=_eb_[1] === Canceled?1:0;break;
+           var result=[0,v],t=repr_rec(node[3]),_ef_=t[1];
+           switch(_ef_[0])
+            {case 1:var switch$0=_ef_[1] === Canceled?1:0;break;
              case 2:
-              var sleeper=_eb_[1],state$0=state_of_result(result);
+              var sleeper=_ef_[1],state$0=state_of_result(result);
               t[1] = state$0;
               if(wakening[1])
                {var x=[0,sleeper,state$0];
@@ -5118,37 +5279,37 @@
              default:var switch$0=0}
            if(!switch$0)invalid_arg(_cA_)}
         return return$0(0)}
-      var _d$_=state[7];
-      if(_d$_[1])
+      var _ed_=state[7];
+      if(_ed_[1])
        {var
-         _d9_=_d$_[2],
+         _eb_=_ed_[2],
          sleeper=[0,1,0,0,0],
          data=[0,[2,sleeper]],
-         node=[0,_d9_[1],_d9_,data,1];
-        _d9_[1][2] = node;
-        _d9_[1] = node;
+         node=[0,_eb_[1],_eb_,data,1];
+        _eb_[1][2] = node;
+        _eb_[1] = node;
         sleeper[4] = [1,node];
-        var _ea_=data}
+        var _ee_=data}
       else
-       {_d$_[1] = 1;var _ea_=return_unit}
-      return bind(_ea_,_d__)}
+       {_ed_[1] = 1;var _ee_=return_unit}
+      return bind(_ee_,_ec_)}
     function opt_style(e,style)
      {if(style){var s=style[1];return e.style.cssText = s}return 0}
     function http_get(url)
      {var opt=[0,0];
-      function _d3_(r)
+      function _d7_(r)
        {var cod=r[2],msg=r[4];
         if(0 !== cod)if(200 !== cod){var t=[0,[2,[0,0,0,0,0]]];return t}
         return return$0(msg)}
       var
        content_type$0=0,
        sth=0,
-       _d2_=[0,0],
+       _d6_=[0,0],
        headers=opt?sth:0,
        match=task(0),
        w=match[2],
        res=match[1],
-       req=_da_(0);
+       req=_dd_(0);
       req.open("GET",url.toString(),true$0);
       req.responseType = "";
       if(content_type$0)
@@ -5160,16 +5321,16 @@
           return req.setRequestHeader(n.toString(),v.toString())},
         headers);
       function headers$0(s)
-       {function _d7_(v){return [0,caml_js_to_string(v)]}
-        function _d8_(param){return 0}
-        return _cJ_(req.getResponseHeader(caml_bytes_of_string(s)),_d8_,_d7_)}
+       {function _d$_(v){return [0,caml_js_to_string(v)]}
+        function _ea_(param){return 0}
+        return _cL_(req.getResponseHeader(caml_bytes_of_string(s)),_ea_,_d$_)}
       var st=[0,382334108];
       function do_check_headers(param)
        {if(382334108 === st[1])
          if(1)
           st[1] = 583419792;
          else
-          {var e=[0,_dd_,[0,req.status,headers$0]];
+          {var e=[0,_dg_,[0,req.status,headers$0]];
            wakeup_result(w,[1,e]);
            st[1] = 479410653;
            req.abort()}
@@ -5183,15 +5344,15 @@
            {case 2:if(!onIE){do_check_headers(0);return 0}break;
             case 3:if(onIE){do_check_headers(0);return 0}break;
             case 4:
-             var _d5_=do_check_headers(0);
-             if(_d5_)
+             var _d9_=do_check_headers(0);
+             if(_d9_)
               {var
                 code=req.status,
-                _d4_=
+                _d8_=
                  function(param)
                   {var x=req.responseXML;
-                   function _d6_(x){return [0,x]}
-                   var match=_cJ_(x,function(param){return 0},_d6_);
+                   function _d__(x){return [0,x]}
+                   var match=_cL_(x,function(param){return 0},_d__);
                    if(match)
                     {var doc=match[1];
                      return doc.documentElement === no_handler?0:[0,doc]}
@@ -5202,36 +5363,36 @@
                   code,
                   headers$0,
                   caml_js_to_string(req.responseText),
-                  _d4_];
+                  _d8_];
                return wakeup(w,response)}
-             return _d5_
+             return _d9_
             }
           return 0});
       var x=req.upload;
       x !== t37;
       req.send(no_handler);
       on_cancel(res,function(param){return req.abort()});
-      return bind(res,_d3_)}
+      return bind(res,_d7_)}
     function getfile(f)
      {try
-       {var _d0_=return$0(caml_fs_file_content(f));return _d0_}
-      catch(_d1_)
-       {_d1_ = caml_wrap_exception(_d1_);
-        if(_d1_ === Not_found)return http_get(f);
-        throw _d1_}}
-    var Eos=caml_set_oo_id([248,_di_,0]);
+       {var _d4_=return$0(caml_read_file_content(f));return _d4_}
+      catch(_d5_)
+       {_d5_ = caml_wrap_exception(_d5_);
+        if(_d5_ === Not_found)return http_get(f);
+        throw _d5_}}
+    var Eos=caml_set_oo_id([248,_dl_,0]);
     window.onload
     =
     handler
      (function(param)
        {var body=doc.getElementById("boulderdash");
-        if(body == no_handler)throw [0,Assert_failure,_dj_];
+        if(body == no_handler)throw [0,Assert_failure,_dm_];
         var
          board_div=createDiv(doc),
          t0=[0,caml_sys_time(0)],
          div=createDiv(doc);
         div.style.cssText = box_style;
-        append_text(div,_df_);
+        append_text(div,_di_);
         var stopped=[0,1];
         function update_cb(param)
          {var dt=caml_sys_time(0) - t0[1];
@@ -5240,71 +5401,71 @@
              secs=dt | 0,
              str=
               caml_call3
-                (_bX_(_dg_),
+                (_bX_(_dj_),
                  secs / 3600 | 0,
                  (secs / 60 | 0) % 60 | 0,
                  secs % 60 | 0).toString
                (),
              txt=doc.createTextNode(str);
             replace_child(div,txt)}
-          function _dZ_(param){return update_cb(0)}
-          return bind(sleep(1),_dZ_)}
+          function _d3_(param){return update_cb(0)}
+          return bind(sleep(1),_d3_)}
         update_cb(0);
-        function _dx_(param){stopped[1] = 1;return 0}
+        function _dB_(param){stopped[1] = 1;return 0}
         var
          clock=
           [0,
            div,
            function(param){t0[1] = caml_sys_time(0);stopped[1] = 0;return 0},
-           _dx_],
+           _dB_],
          clock_start=clock[2],
          clock_div=clock[1];
         function load_data(name,process)
          {var div=createDiv(doc);
           div.style.cssText = loading_style;
-          append_text(div,_de_);
-          _cM_(body,div);
-          function _dX_(data)
-           {function _dY_(res){_cN_(body,div);return return$0(res)}
-            return bind(caml_call1(process,data),_dY_)}
-          return bind(getfile(name),_dX_)}
+          append_text(div,_dh_);
+          _cO_(body,div);
+          function _d1_(data)
+           {function _d2_(res){_cP_(body,div);return return$0(res)}
+            return bind(caml_call1(process,data),_d2_)}
+          return bind(getfile(name),_d1_)}
         var rem_div=createDiv(doc);
         rem_div.style.cssText = box_style;
-        append_text(rem_div,_dk_);
+        append_text(rem_div,_dn_);
         function show_rem(v)
          {return replace_child
                   (rem_div,
                    doc.createTextNode(caml_new_string("" + v).toString()))}
-        function _dy_(levels)
+        function _dC_(levels)
          {body.style.cssText
           =
           "font-family: sans-serif; text-align: center; background-color: #e8e8e8;";
-          var h1=unsafeCreateElement(doc,_cR_);
-          append_text(h1,_dn_);
-          _cM_(body,h1);
+          var h1=unsafeCreateElement(doc,_cT_);
+          append_text(h1,_dq_);
+          _cO_(body,h1);
           var div=createDiv(doc);
-          append_text(div,_do_);
-          _cM_(div,clock_div);
-          append_text(div,_dp_);
-          _cM_(div,rem_div);
-          append_text(div,_dq_);
+          append_text(div,_dr_);
+          _cO_(div,clock_div);
+          append_text(div,_ds_);
+          _cO_(div,rem_div);
+          append_text(div,_dt_);
           var
-           select=unsafeCreateElementEx(0,0,doc,_cP_),
+           select=unsafeCreateElementEx(0,0,doc,_cR_),
            option=createOption(doc);
-          append_text(option,_dr_);
-          _cM_(select,option);
+          append_text(option,_du_);
+          _cO_(select,option);
           _r_
            (function(param)
              {var n=param[2],option=createOption(doc);
               append_text(option,n);
-              return _cM_(select,option)},
+              return _cO_(select,option)},
             levels);
           select.onchange
           =
           handler
            (function(param$1)
-             {var n$1=select.selectedIndex - 1 | 0,_dC_=0 <= n$1?1:0;
-              if(_dC_)
+             {var n$1=select.selectedIndex - 1 | 0,_dG_=0 <= n$1?1:0;
+              if(_dG_)
                {var len=0,param=levels;
                 for(;;)
                  {if(param)
@@ -5314,34 +5475,34 @@
                      len=len$0,
                      param=param$0;
                     continue}
-                  var _dD_=n$1 < len?1:0;
+                  var _dH_=n$1 < len?1:0;
                   break}}
               else
-               var _dD_=_dC_;
-              if(_dD_)
+               var _dH_=_dG_;
+              if(_dH_)
                {if(0 <= n$1)
                  {var l=levels,n=n$1;
                   for(;;)
                    {if(l)
                      {var l$0=l[2],a=l[1];
                       if(0 !== n){var n$0=n - 1 | 0,l=l$0,n=n$0;continue}
-                      var _dE_=a}
+                      var _dI_=a}
                     else
-                     var _dE_=failwith(_n_);
+                     var _dI_=failwith(_n_);
                     break}}
                 else
-                 var _dE_=invalid_arg(_o_);
-                var _dF_=_dE_[1];
+                 var _dI_=invalid_arg(_o_);
+                var _dJ_=_dI_[1];
                 load_data
-                 (_dF_,
+                 (_dJ_,
                   function(data)
                    {var
                      res=[0,0],
                      row=[0,0],
-                     _dO_=caml_ml_string_length(data) - 1 | 0,
-                     _dN_=0;
-                    if(!(_dO_ < 0))
-                     {var i=_dN_;
+                     _dS_=caml_ml_string_length(data) - 1 | 0,
+                     _dR_=0;
+                    if(!(_dS_ < 0))
+                     {var i=_dR_;
                       for(;;)
                        {var match$0=caml_string_get(data,i);
                         if(47 <= match$0)
@@ -5360,8 +5521,8 @@
                           var switch$0=69 === match$0?(row[1] = [0,4,row[1]],1):0;
                         else
                          if(10 === match$0)
-                          {var _dS_=res[1];
-                           res[1] = [0,_p_(row[1]),_dS_];
+                          {var _dW_=res[1];
+                           res[1] = [0,_p_(row[1]),_dW_];
                            row[1] = 0;
                            var switch$0=1}
                          else
@@ -5376,17 +5537,17 @@
                             if(switch$2)var switch$0=1}
                           else
                            var switch$0=0;
-                        if(!switch$0)failwith(_dm_);
-                        var _dR_=i + 1 | 0;
-                        if(_dO_ !== i){var i=_dR_;continue}
+                        if(!switch$0)failwith(_dp_);
+                        var _dV_=i + 1 | 0;
+                        if(_dS_ !== i){var i=_dV_;continue}
                         break}}
                     var map=_l_(_q_(_l_,_p_(res[1])));
-                    function _dP_(c)
-                     {var img=unsafeCreateElement(doc,_cT_);
+                    function _dT_(c)
+                     {var img=unsafeCreateElement(doc,_cV_);
                       img.src = img_assoc(c);
                       return img}
                     var
-                     t=_k_(function(_dW_){return _k_(_dP_,_dW_)},map),
+                     t=_k_(function(_d0_){return _k_(_dT_,_d0_)},map),
                      gx=[0,0],
                      gy=[0,0],
                      ex=[0,0],
@@ -5397,19 +5558,19 @@
                      td_style="padding: 0; width: 20px; height: 20px;",
                      td_style$0=[0,td_style],
                      style$0=[0,style],
-                     table=unsafeCreateElement(doc,_cU_);
+                     table=unsafeCreateElement(doc,_cW_);
                     opt_style(table,style$0);
-                    var _dI_=t.length - 1 - 1 | 0,tr_style=0,_dH_=0;
-                    if(!(_dI_ < 0))
-                     {var y=_dH_;
+                    var _dM_=t.length - 1 - 1 | 0,tr_style=0,_dL_=0;
+                    if(!(_dM_ < 0))
+                     {var y=_dL_;
                       for(;;)
                        {var tr=table.insertRow(-1);
                         opt_style(tr,tr_style);
                         var
-                         _dK_=caml_check_bound(t,y)[y + 1].length - 1 - 1 | 0,
-                         _dJ_=0;
-                        if(!(_dK_ < 0))
-                         {var x=_dJ_;
+                         _dO_=caml_check_bound(t,y)[y + 1].length - 1 - 1 | 0,
+                         _dN_=0;
+                        if(!(_dO_ < 0))
+                         {var x=_dN_;
                           for(;;)
                            {var td=tr.insertCell(-1);
                             opt_style(td,td_style$0);
@@ -5422,31 +5583,31 @@
                               case 4:ex[1] = x;ey[1] = y;break;
                               case 6:gx[1] = x;gy[1] = y;break
                               }
-                            _cM_(td,cell);
-                            _cM_(tr,td);
-                            var _dM_=x + 1 | 0;
-                            if(_dK_ !== x){var x=_dM_;continue}
+                            _cO_(td,cell);
+                            _cO_(tr,td);
+                            var _dQ_=x + 1 | 0;
+                            if(_dO_ !== x){var x=_dQ_;continue}
                             break}}
-                        _cM_(table,tr);
-                        var _dL_=y + 1 | 0;
-                        if(_dI_ !== y){var y=_dL_;continue}
+                        _cO_(table,tr);
+                        var _dP_=y + 1 | 0;
+                        if(_dM_ !== y){var y=_dP_;continue}
                         break}}
                     replace_child(board_div,table);
-                    function _dQ_(param)
+                    function _dU_(param)
                      {var t0=caml_sys_time(0);
                       function fade(param)
                        {var t=caml_sys_time(0);
                         if(1 <= t - t0)
                          {table.style.opacity = "1";return return$0(0)}
-                        function _dU_(param)
-                         {var _dV_=caml_call1(_bX_(_dl_),t - t0).toString();
-                          table.style.opacity = _dV_;
+                        function _dY_(param)
+                         {var _dZ_=caml_call1(_bX_(_do_),t - t0).toString();
+                          table.style.opacity = _dZ_;
                           return fade(0)}
-                        return bind(sleep(0.05),_dU_)}
-                      function _dT_(param)
+                        return bind(sleep(0.05),_dY_)}
+                      function _dX_(param)
                        {caml_call1(clock_start,0);return return$0(0)}
-                      return bind(fade(0),_dT_)}
-                    var _dG_=[0,0,_cv_(0)];
+                      return bind(fade(0),_dX_)}
+                    var _dK_=[0,0,_cv_(0)];
                     return bind
                             (build_interaction
                               ([0,
@@ -5456,22 +5617,22 @@
                                 [0,ex[1],ey[1]],
                                 rem[1],
                                 0,
-                                _dG_,
+                                _dK_,
                                 0,
                                 [0,0]],
                                show_rem,
                                clock),
-                             _dQ_)})}
+                             _dU_)})}
               return false$0});
-          _cM_(div,select);
-          _cM_(div,createBr(doc));
-          _cM_(div,createBr(doc));
-          _cM_(div,board_div);
-          _cM_(body,div);
+          _cO_(div,select);
+          _cO_(div,createBr(doc));
+          _cO_(div,createBr(doc));
+          _cO_(div,board_div);
+          _cO_(body,div);
           return return$0(0)}
         bind
          (load_data
-           (_ds_,
+           (_dv_,
             function(txt)
              {function find_string(s)
                {var sz=caml_ml_string_length(txt),s$0=s;
@@ -5498,15 +5659,15 @@
                      match$1=find_string(st$2),
                      st$3=match$1[2],
                      snd=match$1[1],
-                     _dA_=[0,[0,[0,fst,snd],st$3]],
-                     _dz_=_dA_}
-                  catch(_dB_)
-                   {_dB_ = caml_wrap_exception(_dB_);
-                    if(_dB_ !== Eos)throw _dB_;
-                    var _dz_=0}
-                  if(_dz_)
+                     _dE_=[0,[0,[0,fst,snd],st$3]],
+                     _dD_=_dE_}
+                  catch(_dF_)
+                   {_dF_ = caml_wrap_exception(_dF_);
+                    if(_dF_ !== Eos)throw _dF_;
+                    var _dD_=0}
+                  if(_dD_)
                    {var
-                     match=_dz_[1],
+                     match=_dD_[1],
                      st$1=match[2],
                      elt=match[1],
                      acc$1=[0,elt,acc$0],
@@ -5515,7 +5676,7 @@
                     continue}
                   return acc$0}}
               return return$0(_p_(scan_pairs(0,0)))}),
-          _dy_);
+          _dC_);
         return false$0});
     do_at_exit(0);
     return}

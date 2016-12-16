@@ -335,6 +335,9 @@
 |@@class="odocwiki_index"@ @@<<a_api text="createVar"| value Dom_html.createVar >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="createVideo"| value Dom_html.createVideo >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="createView"| value Dom_svg.createView >> ~[<<a_api | module Dom_svg >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="create_file"| value Sys_js.create_file >> ~[<<a_api | module Sys_js >>~]|<<div class="odocwiki_info"|~Register a file to a ~Pseudo ~Filesystem~.
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api text="createhkern"| value Dom_svg.createhkern >> ~[<<a_api | module Dom_svg >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="createvkern"| value Dom_svg.createvkern >> ~[<<a_api | module Dom_svg >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="ctrl"| value Keycode.ctrl >> ~[<<a_api | module Keycode >>~]||
@@ -548,9 +551,6 @@
 |@@class="odocwiki_index"@ @@<<a_api text="fatal_f"| value Lwt_log_js.fatal_f >> ~[<<a_api | module Lwt_log_js >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="fieldset"| value Dom_html.CoerceTo.fieldset >> ~[<<a_api | module Dom_html.CoerceTo >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="fileReader"| value File.fileReader >> ~[<<a_api | module File >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="file_content"| value Sys_js.file_content >> ~[<<a_api | module Sys_js >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|file~_content name>> returns the content of the file <<span class="odocwiki_inlinecode"|name>>~.
->>
-|
 |@@class="odocwiki_index"@ @@<<a_api text="filename"| value File.filename >> ~[<<a_api | module File >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|filename>> handles old firefox without name property
 >>
 |
@@ -900,6 +900,10 @@
 |@@class="odocwiki_index"@ @@<<a_api text="ml"| value CSS.Color.ml >> ~[<<a_api | module CSS.Color >>~]|<<div class="odocwiki_info"|~Projection from ~Js to ~O~Caml~.
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api text="mount"| value Sys_js.mount >> ~[<<a_api | module Sys_js >>~]|<<div class="odocwiki_info"|~Register a callback to the <<span class="odocwiki_inlinecode"|path>> to dynamicly load missing files~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="mount_point"| value Sys_js.mount_point >> ~[<<a_api | module Sys_js >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="mouseEvent"| value Dom_html.CoerceTo.mouseEvent >> ~[<<a_api | module Dom_html.CoerceTo >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="mouseScrollEvent"| value Dom_html.CoerceTo.mouseScrollEvent >> ~[<<a_api | module Dom_html.CoerceTo >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="mouse_pos"| value Graphics_js.mouse_pos >> ~[<<a_api | module Graphics_js >>~]|<<div class="odocwiki_info"|~Mouse and keyboard polling
@@ -1247,6 +1251,9 @@
 |@@class="odocwiki_index"@ @@<<a_api text="read_case"| value Deriving_Json_lexer.read_case >> ~[<<a_api | module Deriving_Json_lexer >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="read_comma"| value Deriving_Json_lexer.read_comma >> ~[<<a_api | module Deriving_Json_lexer >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="read_comma_or_rbracket"| value Deriving_Json_lexer.read_comma_or_rbracket >> ~[<<a_api | module Deriving_Json_lexer >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="read_file"| value Sys_js.read_file >> ~[<<a_api | module Sys_js >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|read~_file name>> returns the content of the file <<span class="odocwiki_inlinecode"|name>>~.
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api text="read_int"| value Deriving_Json_lexer.read_int >> ~[<<a_api | module Deriving_Json_lexer >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="read_int32"| value Deriving_Json_lexer.read_int32 >> ~[<<a_api | module Deriving_Json_lexer >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="read_int64"| value Deriving_Json_lexer.read_int64 >> ~[<<a_api | module Deriving_Json_lexer >>~]||
@@ -1292,13 +1299,6 @@
 |
 |@@class="odocwiki_index"@ @@<<a_api text="regexp_with_flag"| value Regexp.regexp_with_flag >> ~[<<a_api | module Regexp >>~]|<<div class="odocwiki_info"|~Regexp constructor with flag that allow for case~-insensitive search
     or multiline search ~(the global flag is always set~)~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api text="register_autoload"| value Sys_js.register_autoload >> ~[<<a_api | module Sys_js >>~]|<<div class="odocwiki_info"|~Register a callback to the <<span class="odocwiki_inlinecode"|path>> to dynamicly load missing files~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api text="register_autoload'"| value Sys_js.register_autoload' >> ~[<<a_api | module Sys_js >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="register_file"| value Sys_js.register_file >> ~[<<a_api | module Sys_js >>~]|<<div class="odocwiki_info"|~Register a file to a ~Pseudo ~Filesystem~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="register_predefs"| value Pa_deriving_Json.register_predefs >> ~[<<a_api | module Pa_deriving_Json >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|register~_predefs type~A type~B>> tells the syntax extension
@@ -1543,6 +1543,7 @@
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="unload"| value Dom_html.Event.unload >> ~[<<a_api | module Dom_html.Event >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="unmount"| value Sys_js.unmount >> ~[<<a_api | module Sys_js >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="unsafe_get"| value Typed_array.unsafe_get >> ~[<<a_api | module Typed_array >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="unsafe_input"| value Json.unsafe_input >> ~[<<a_api | module Json >>~]|<<div class="odocwiki_info"|~Unmarshal a string in ~J~S~O~N format as an ~O~Caml value ~(unsafe but
     fast !~)~.
