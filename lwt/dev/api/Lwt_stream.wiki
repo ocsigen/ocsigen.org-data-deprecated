@@ -88,12 +88,17 @@
 
       ~It raises <<span class="odocwiki_inlinecode"|~Invalid~_argument>> if <<span class="odocwiki_inlinecode"|size ~< ~0>>~.
 >>
-<<pre id="VALof_list" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|of~_list>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|'a list <<span class="ocsforge_color_delimiter"| -> >> 'a <<a_api text="t" | type Lwt_stream.t >>>>>><<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|of~_list l>> creates a stream returning all elements of <<span class="odocwiki_inlinecode"|l>>
+<<pre id="VALof_list" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|of~_list>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|'a list <<span class="ocsforge_color_delimiter"| -> >> 'a <<a_api text="t" | type Lwt_stream.t >>>>>><<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|of~_list l>> creates a stream returning all elements of <<span class="odocwiki_inlinecode"|l>>~. ~The elements are
+    pushed into the stream immediately~, resulting in a closed stream ~(in the
+    sense of <<a_api | val Lwt_stream.is_closed >>~)~.
 >>
-<<pre id="VALof_array" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|of~_array>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|'a array <<span class="ocsforge_color_delimiter"| -> >> 'a <<a_api text="t" | type Lwt_stream.t >>>>>><<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|of~_array a>> creates a stream returning all elements of <<span class="odocwiki_inlinecode"|a>>
+<<pre id="VALof_array" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|of~_array>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|'a array <<span class="ocsforge_color_delimiter"| -> >> 'a <<a_api text="t" | type Lwt_stream.t >>>>>><<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|of~_array a>> creates a stream returning all elements of <<span class="odocwiki_inlinecode"|a>>~. ~The elements
+    are pushed into the stream immediately~, resulting in a closed stream ~(in the
+    sense of <<a_api | val Lwt_stream.is_closed >>~)~.
 >>
-<<pre id="VALof_string" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|of~_string>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|string <<span class="ocsforge_color_delimiter"| -> >> char <<a_api text="t" | type Lwt_stream.t >>>>>><<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|of~_string str>> creates a stream returning all characters of
-      <<span class="odocwiki_inlinecode"|str>>
+<<pre id="VALof_string" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|of~_string>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|string <<span class="ocsforge_color_delimiter"| -> >> char <<a_api text="t" | type Lwt_stream.t >>>>>><<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|of~_string str>> creates a stream returning all characters of <<span class="odocwiki_inlinecode"|str>>~. ~The
+    characters are pushed into the stream immediately~, resulting in a closed
+    stream ~(in the sense of <<a_api | val Lwt_stream.is_closed >>~)~.
 >>
 <<pre id="VALclone" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|clone>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|'a <<a_api text="t" | type Lwt_stream.t >> <<span class="ocsforge_color_delimiter"| -> >> 'a <<a_api text="t" | type Lwt_stream.t >>>>>><<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|clone st>> clone the given stream~. ~Operations on each stream
       will not affect the other~.

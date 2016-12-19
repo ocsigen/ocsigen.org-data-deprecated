@@ -1135,7 +1135,7 @@
 >>
 |
 |@@ @style="tet-align: left;"@@\\O|
-|@@class="odocwiki_index"@ @@<<a_api text="of_array"| value Lwt_stream.of_array >> ~[<<a_api | module Lwt_stream >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|of~_array a>> creates a stream returning all elements of <<span class="odocwiki_inlinecode"|a>>
+|@@class="odocwiki_index"@ @@<<a_api text="of_array"| value Lwt_stream.of_array >> ~[<<a_api | module Lwt_stream >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|of~_array a>> creates a stream returning all elements of <<span class="odocwiki_inlinecode"|a>>~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="of_bytes"| value Lwt_bytes.of_bytes >> ~[<<a_api | module Lwt_bytes >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|of~_bytes buf>> returns a newly allocated byte array with the
@@ -1149,7 +1149,7 @@
       file descriptor~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api text="of_list"| value Lwt_stream.of_list >> ~[<<a_api | module Lwt_stream >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|of~_list l>> creates a stream returning all elements of <<span class="odocwiki_inlinecode"|l>>
+|@@class="odocwiki_index"@ @@<<a_api text="of_list"| value Lwt_stream.of_list >> ~[<<a_api | module Lwt_stream >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|of~_list l>> creates a stream returning all elements of <<span class="odocwiki_inlinecode"|l>>~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="of_result"| value Lwt.of_result >> ~[<<a_api | module Lwt >>~]|<<div class="odocwiki_info"|~Returns a thread from a result~.
@@ -1163,8 +1163,7 @@
       same contents as <<span class="odocwiki_inlinecode"|buf>>~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api text="of_string"| value Lwt_stream.of_string >> ~[<<a_api | module Lwt_stream >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|of~_string str>> creates a stream returning all characters of
-      <<span class="odocwiki_inlinecode"|str>>
+|@@class="odocwiki_index"@ @@<<a_api text="of_string"| value Lwt_stream.of_string >> ~[<<a_api | module Lwt_stream >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|of~_string str>> creates a stream returning all characters of <<span class="odocwiki_inlinecode"|str>>~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="of_unix_fd"| value Lwt_io.of_unix_fd >> ~[<<a_api | module Lwt_io >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|of~_unix~_fd ~?buffer ~?close ~~mode fd>> is a short~-hand for~:
