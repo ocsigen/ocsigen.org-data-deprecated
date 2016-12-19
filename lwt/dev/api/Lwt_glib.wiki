@@ -43,6 +43,10 @@
       )
     >>
 
+
+
+    ~This module is provided by ~O~P~A~M package <<span class="odocwiki_inlinecode"|lwt~_glib>>~. ~Link with ocamlfind
+    package <<span class="odocwiki_inlinecode"|lwt~_glib>>~.
 <<pre id="VALinstall" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|install>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<span class="ocsforge_color_label"| ?mode: >>[ `glib_into_lwt | `lwt_into_glib ] <<span class="ocsforge_color_delimiter"| -> >> unit <<span class="ocsforge_color_delimiter"| -> >> unit>>>><<div class="odocwiki_info"|~Install the ~Glib~<~-~>~Lwt integration~.
 
 

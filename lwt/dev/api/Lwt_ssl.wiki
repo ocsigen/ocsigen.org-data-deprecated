@@ -1,6 +1,10 @@
 =Module <<a_api_type | module Lwt_ssl >> =
 <<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module>> <<span class="ocsforge_color_uid"|<<span class="ocsforge_color_uid"|Lwt_ssl>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="ocsforge_color_keyword"|sig>><<a_api text=".." | module Lwt_ssl >><<span class="ocsforge_color_keyword"|end>>>>~O~Caml~-~S~S~L integration
 
+
+    ~This module is provided by ~O~P~A~M package <<span class="odocwiki_inlinecode"|lwt~_ssl>>~. ~Link with ocamlfind
+    package <<span class="odocwiki_inlinecode"|lwt~_ssl>>~.
+
 ----
 <<pre class="ocsforge_color odocwiki_code" id="TYPEsocket"|<<span class="ocsforge_color_keyword"|type>> <<span class="odocwiki_name"|socket>>>><<div class="odocwiki_info"|~Wrapper for ~S~S~L sockets~.
 
