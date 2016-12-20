@@ -187,6 +187,7 @@
         ?fd:Lwt_unix.file_descr ->
         ?buffer_size:int ->
         ?backlog:int ->
+        ?no_close:bool ->
         Unix.sockaddr ->
         (Lwt_io.input_channel * Lwt_io.output_channel -> unit Lwt.t) ->
         Lwt_io.server Lwt.t

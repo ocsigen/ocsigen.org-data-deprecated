@@ -268,6 +268,7 @@
     ~If the stream source keeps raising the same exception <<span class="odocwiki_inlinecode"|e>> each time the
     stream is read~, <<span class="odocwiki_inlinecode"|s~'>> is unbounded~. ~Reading it will produce <<span class="odocwiki_inlinecode"|~Result~.~Error e>>
     indefinitely~.
+**Since** 2.7.0\\
 >>
 
 

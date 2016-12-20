@@ -368,6 +368,7 @@
 
 
     ~See [[http://man7.org/linux/man-pages/man3/readv.3p.html| <<span class="odocwiki_inlinecode"|readv~(~3p~)>>]]~.
+**Since** 2.7.0\\
 >>
 <<pre id="VALwritev" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|writev>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<a_api text="file_descr" | type Lwt_unix.file_descr >> <<span class="ocsforge_color_delimiter"| -> >> <<a_api text="IO_vectors.t" | type Lwt_unix.IO_vectors.t >> <<span class="ocsforge_color_delimiter"| -> >> int <<a_api text="Lwt.t" | type Lwt.t >>>>>><<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|writev fd vs>> writes the bytes in the buffer slices <<span class="odocwiki_inlinecode"|vs>> to the file
     descriptor <<span class="odocwiki_inlinecode"|fd>>~. ~If the operation completes successfully~, the resulting
@@ -401,6 +402,7 @@
 
     ~See [[http://man7.org/linux/man-pages/man3/writev.3p.html|
     <<span class="odocwiki_inlinecode"|writev~(~3p~)>>]]~.
+**Since** 2.7.0\\
 >>
 <<pre id="VALreadable" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|readable>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<a_api text="file_descr" | type Lwt_unix.file_descr >> <<span class="ocsforge_color_delimiter"| -> >> bool>>>><<div class="odocwiki_info"|~Returns whether the given file descriptor is currently
       readable~.
