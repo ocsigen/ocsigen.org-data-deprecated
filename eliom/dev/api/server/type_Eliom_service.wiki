@@ -262,14 +262,12 @@
     ?timeout:float ->
     ?https:bool ->
     ?keep_nl_params:[ `All | `None | `Persistent ] ->
-    fallback:('gp, unit, get, att, non_co, non_ext, 'a, [ `WithoutSuffix ],
-              'gn, unit, non_ocaml)
+    fallback:('gp, unit, get, att, non_co, non_ext, 'a,
+              [< `WithSuffix | `WithoutSuffix ] as 'b, 'gn, unit, non_ocaml)
              t ->
     post_params:('pp, [ `WithoutSuffix ], 'pn) Eliom_parameter.params_type ->
     unit ->
-    ('gp, 'pp, post, att, co, non_ext, reg, [ `WithoutSuffix ], 'gn, 'pn,
-     non_ocaml)
-    t
+    ('gp, 'pp, post, att, co, non_ext, reg, 'b, 'gn, 'pn, non_ocaml) t
   val attach :
     fallback:(unit, unit, get, att, 'a, non_ext, 'b,
               [< `WithSuffix | `WithoutSuffix ], unit, unit, 'return1)
