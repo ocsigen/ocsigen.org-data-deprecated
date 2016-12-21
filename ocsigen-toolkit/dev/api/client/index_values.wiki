@@ -169,7 +169,10 @@
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="onloads"| value Ot_lib.onloads >> ~[<<a_api subproject="client" | module Ot_lib >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="onresizes"| value Ot_lib.onresizes >> ~[<<a_api subproject="client" | module Ot_lib >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="onresizes"| value Ot_lib.onresizes >> ~[<<a_api subproject="client" | module Ot_lib >>~]|<<div class="odocwiki_info"|~N~O~T~E~: be careful when using the functions <<span class="odocwiki_inlinecode"|onresizes>>~,
+    <<span class="odocwiki_inlinecode"|window~_scroll>>~, and <<span class="odocwiki_inlinecode"|window~_scrolls>>~.
+>>
+|
 |@@ @style="tet-align: left;"@@\\P|
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="pageYOffset"| value Ot_size.pageYOffset >> ~[<<a_api subproject="client" | module Ot_size >>~]|<<div class="odocwiki_info"|~Current vertical scroll position of the page~.
 >>
@@ -242,7 +245,8 @@
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="window_scroll"| value Ot_lib.window_scroll >> ~[<<a_api subproject="client" | module Ot_lib >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="window_scrolls"| value Ot_lib.window_scrolls >> ~[<<a_api subproject="client" | module Ot_lib >>~]|<<div class="odocwiki_info"|~If <<span class="odocwiki_inlinecode"|ios~_html~_scroll~_hack>> then listen on window ~+ html ~+ body instead of only window~.
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="window_scrolls"| value Ot_lib.window_scrolls >> ~[<<a_api subproject="client" | module Ot_lib >>~]|<<div class="odocwiki_info"|~If <<span class="odocwiki_inlinecode"|ios~_html~_scroll~_hack>> then listen on window ~+ html ~+ body
+    instead of only window~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="with_spinner"| value Ot_spinner.with_spinner >> ~[<<a_api subproject="client" | module Ot_spinner >>~]|<<div class="odocwiki_info"|~On client side~, <<span class="odocwiki_inlinecode"|with~_spinner th>> returns immediately a spinner
