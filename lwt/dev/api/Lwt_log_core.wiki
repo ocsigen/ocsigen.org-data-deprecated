@@ -68,9 +68,29 @@
 
       ~By default~, the following rule apply ~: <<span class="odocwiki_inlinecode"|"~* ~-~> notice">>
 >>
-<<pre id="VALstring_of_level" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|string~_of~_level>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<a_api text="level" | type Lwt_log_core.level >> <<span class="ocsforge_color_delimiter"| -> >> string>>>><<pre id="VALload_rules" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|load~_rules>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|string <<span class="ocsforge_color_delimiter"| -> >> unit>>>><<div class="odocwiki_info"|~Reset the rules set when parsing the <<span class="odocwiki_inlinecode"|~L~W~T~_~L~O~G>> environment variable using this
+<<pre id="VALstring_of_level" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|string~_of~_level>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<a_api text="level" | type Lwt_log_core.level >> <<span class="ocsforge_color_delimiter"| -> >> string>>>><<pre id="VALlevel_of_string" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|level~_of~_string>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|string <<span class="ocsforge_color_delimiter"| -> >> <<a_api text="level" | type Lwt_log_core.level >> option>>>><<pre id="VALload_rules" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|load~_rules>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<span class="ocsforge_color_label"| ?fail_on_error: >>bool <<span class="ocsforge_color_delimiter"| -> >> string <<span class="ocsforge_color_delimiter"| -> >> unit>>>><<div class="odocwiki_info"|~Reset the rules set when parsing the <<span class="odocwiki_inlinecode"|~L~W~T~_~L~O~G>> environment variable using this
       string~.
+**Raises** {{{Failure}}} if an invalid rule is found and <<span class="odocwiki_inlinecode"|fail~_on~_error>> is true
+
+
+      <<span class="odocwiki_inlinecode"|load~_rules>> parses the rules string and validates the rules before loading them~.
+      ~If <<span class="odocwiki_inlinecode"|fail~_on~_error>> is <<span class="odocwiki_inlinecode"|true>>~, invalid rules will cause this function to
+      raise <<span class="odocwiki_inlinecode"|~Failure>> and leave existing rules unchanged~.
+      ~If <<span class="odocwiki_inlinecode"|fail~_on~_error>> is <<span class="odocwiki_inlinecode"|false>> ~(this is the default~)~, it tries to load as
+      many rules as possible and ignore invalid ones~.
+      ~If the rules string itself cannot be parsed~, existing rules are always left
+      unchanged~.
+
+
+      ~Example~:
+      
+<<code language='ocaml'|Lwt_log_core.load_rules ~fail_on_error:true "* -> nosuchlevel" (* Raises Failure *)
+Lwt_log_core.load_rules "* -> info"
+      >>
+\\
 >>
+<<div class="odocwiki_param_info"|<<span class="code"|fail_on_error>> : defines if the function will raise ~Failure if
+      it encounters a malformed rule>>
 <<pre id="VALadd_rule" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|add~_rule>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|string <<span class="ocsforge_color_delimiter"| -> >> <<a_api text="level" | type Lwt_log_core.level >> <<span class="ocsforge_color_delimiter"| -> >> unit>>>><<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|add~_rule pattern level>> adds a rule for sections logging
       levels~. ~The rule is added before all other rules~. ~It takes
       effect immediately and affects all sections for which the level

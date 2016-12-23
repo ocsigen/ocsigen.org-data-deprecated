@@ -929,6 +929,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="level"| value Lwt_log_core.Section.level >> ~[<<a_api | module Lwt_log_core.Section >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|level section>> returns the logging level of <<span class="odocwiki_inlinecode"|section>>~.
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api text="level_of_string"| value Lwt_log_core.level_of_string >> ~[<<a_api | module Lwt_log_core >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="lift"| value Lwt_result.lift >> ~[<<a_api | module Lwt_result >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="limit"| value Lwt_react.S.limit >> ~[<<a_api | module Lwt_react.S >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|limit f s>> limits the rate of <<span class="odocwiki_inlinecode"|s>> update with <<span class="odocwiki_inlinecode"|f>>~.
 >>
