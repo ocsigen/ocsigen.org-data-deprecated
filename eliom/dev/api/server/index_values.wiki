@@ -116,8 +116,7 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="checkbox"| value Eliom_form_sigs.S.checkbox >> ~[<<a_api subproject="server" | module Eliom_form_sigs.S >>~]|<<div class="odocwiki_info"|~Creates a checkbox <<span class="odocwiki_inlinecode"|~<input~>>> tag~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="clean"| value Eliom_notif.S.clean >> ~[<<a_api subproject="server" | module Eliom_notif.S >>~]|<<div class="odocwiki_info"|~Call <<span class="odocwiki_inlinecode"|clean ~(~)>> to launch an asynchronous thread clearing the tables
-      from empty data~.
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="clean"| value Eliom_notif.S.clean >> ~[<<a_api subproject="server" | module Eliom_notif.S >>~]|<<div class="odocwiki_info"|~Call <<span class="odocwiki_inlinecode"|clean ~(~)>> to clear the tables from empty data~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="clean_request_cache"| value Eliom_request_info.clean_request_cache >> ~[<<a_api subproject="server" | module Eliom_request_info >>~]|<<div class="odocwiki_info"|~Remove all data from the request cache
