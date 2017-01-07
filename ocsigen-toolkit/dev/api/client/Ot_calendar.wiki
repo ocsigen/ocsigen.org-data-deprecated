@@ -30,4 +30,6 @@
     <<span class="odocwiki_inlinecode"|~(y~, m~, d~)>> corresponding to the date <<span class="odocwiki_inlinecode"|d>>~:<<span class="odocwiki_inlinecode"|m>>~:<<span class="odocwiki_inlinecode"|y>> that the user
     clicks on~. ~The optional parameter <<span class="odocwiki_inlinecode"|init>> provides an initial value
     for the signal~.
+    <<span class="odocwiki_inlinecode"|~?intl>> is used to internationalize the calendar ~(see <<a_api subproject="client" | type Ot_calendar.intl >>~)~. ~The default
+    behavior is for ~English~.
 >>
