@@ -713,7 +713,8 @@
       type logger = Lwt_log_core.logger
       type section = Lwt_log_core.section
       val string_of_level : level -> string
-      val load_rules : string -> unit
+      val level_of_string : string -> level option
+      val load_rules : ?fail_on_error:bool -> string -> unit
       val add_rule : string -> level -> unit
       val append_rule : string -> level -> unit
       val reset_rules : unit -> unit

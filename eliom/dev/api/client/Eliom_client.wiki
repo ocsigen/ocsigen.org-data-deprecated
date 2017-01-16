@@ -17,6 +17,11 @@
     ~J~S variables called <<span class="odocwiki_inlinecode"|~_~_eliom~_server>> and <<span class="odocwiki_inlinecode"|~_~_eliom~_app~_name>>
     at the beginning of your html
     file~, containing the full ~U~R~L of your server~.
+
+
+    <<span class="odocwiki_inlinecode"|app~_path>> ~(if given~) specifies the path that the application runs
+    under~. ~It should correspond to the ~<site~> tag of your server
+    configuration~. ~Calls to server functions use this path~.
 >>
 <<pre id="VALis_client_app" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|is~_client~_app>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|unit <<span class="ocsforge_color_delimiter"| -> >> bool>>>><<div class="odocwiki_info"|~Returns whether the application is sent by a server or started on
     client side~. ~If called on server side~, always returns <<span class="odocwiki_inlinecode"|false>>~.
