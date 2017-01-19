@@ -12,6 +12,7 @@
     end
   val remove_email_from_user : string -> unit Lwt.t
   val update_main_email : string -> unit Lwt.t
+  val update_language : string -> unit Lwt.t
   val is_email_validated : string -> bool Lwt.t
   val is_main_email : string -> bool Lwt.t
 end >>

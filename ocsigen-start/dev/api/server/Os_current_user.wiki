@@ -24,6 +24,9 @@
     <<span class="odocwiki_inlinecode"|email>>~.
     ~If no user is connected~, it fails with <<a_api subproject="server" | exception Os_session.Not_connected >>~.
 >>
+<<pre id="VALupdate_language" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|update~_language>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|string <<span class="ocsforge_color_delimiter"| -> >> unit <<span class="ocsforge_color_uid"|Lwt>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>>>>>><<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|update~_language language>> updates the language of the current user~.
+    ~If no user is connected~, it fails with <<a_api subproject="server" | exception Os_session.Not_connected >>~.
+>>
 <<pre id="VALis_email_validated" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|is~_email~_validated>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|string <<span class="ocsforge_color_delimiter"| -> >> bool <<span class="ocsforge_color_uid"|Lwt>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>>>>>><<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|is~_email~_validated email>> returns <<span class="odocwiki_inlinecode"|true>> if <<span class="odocwiki_inlinecode"|email>> is a valided email for
     the current user~.
     ~If no user is connected~, it fails with <<a_api subproject="server" | exception Os_session.Not_connected >>~.

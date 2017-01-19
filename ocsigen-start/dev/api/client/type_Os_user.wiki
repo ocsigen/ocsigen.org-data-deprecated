@@ -6,6 +6,7 @@
     fn : string;
     ln : string;
     avatar : string option;
+    language : string option;
   }
   val userid_of_user : Os_types.User.t -> Os_types.User.id
   val firstname_of_user : Os_types.User.t -> string
@@ -15,6 +16,7 @@
     ?absolute_path:bool -> string -> Eliom_content.Xml.uri
   val avatar_uri_of_user :
     ?absolute_path:bool -> Os_types.User.t -> Eliom_content.Xml.uri option
+  val language_of_user : Os_types.User.t -> string option
   val fullname_of_user : Os_types.User.t -> string
   val is_complete : Os_types.User.t -> bool
 end >>

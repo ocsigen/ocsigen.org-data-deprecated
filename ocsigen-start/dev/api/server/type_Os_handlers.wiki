@@ -13,6 +13,7 @@
     string ->
     unit ->
     'a Eliom_registration.application_content Eliom_registration.kind Lwt.t
+  val update_language_handler : unit -> string -> unit Lwt.t
   val forgot_password_handler :
     (unit, unit, Eliom_service.get, Eliom_service.att, 'a,
      Eliom_service.non_ext, 'b, [< `WithSuffix | `WithoutSuffix ], unit,

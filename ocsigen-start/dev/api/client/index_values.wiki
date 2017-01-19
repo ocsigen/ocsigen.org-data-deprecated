@@ -188,6 +188,9 @@
 >>
 |
 |@@ @style="tet-align: left;"@@\\L|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="language_of_user"| value Os_user.language_of_user >> ~[<<a_api subproject="client" | module Os_user >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|language~_of~_user user>> returns the language of the user <<span class="odocwiki_inlinecode"|user>>
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="lastname_of_user"| value Os_user.lastname_of_user >> ~[<<a_api subproject="client" | module Os_user >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|lastname~_of~_user user>> returns the last name of the user <<span class="odocwiki_inlinecode"|user>>
 >>
 |
@@ -333,6 +336,16 @@
 |
 |@@ @style="tet-align: left;"@@\\U|
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="unknown_timezone"| value Os_date.unknown_timezone >> ~[<<a_api subproject="client" | module Os_date >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|unknown~_timezone ~(~)>> returns <<span class="odocwiki_inlinecode"|true>> if the timezone is unknown~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="update_language"| value Os_current_user.update_language >> ~[<<a_api subproject="client" | module Os_current_user >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|update~_language language>> updates the language of the current user~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="update_language_handler"| value Os_handlers.update_language_handler >> ~[<<a_api subproject="client" | module Os_handlers >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|update~_language~_handler ~(~) language>> is the handler to update the language
+     for the current user~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="update_language_service"| value Os_services.update_language_service >> ~[<<a_api subproject="client" | module Os_services >>~]|<<div class="odocwiki_info"|~A ~P~O~S~T service to update the language of the current user~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="update_main_email"| value Os_current_user.update_main_email >> ~[<<a_api subproject="client" | module Os_current_user >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|update~_main~_email email>> sets the main email of the current user to

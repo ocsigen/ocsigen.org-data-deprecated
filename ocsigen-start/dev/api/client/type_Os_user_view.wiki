@@ -5,6 +5,7 @@
   val generic_email_form :
     ?a:[< Html_types.form_attrib ] Eliom_content.Html.D.attrib list ->
     ?label:string Eliom_content.Html.F.wrap ->
+    ?a_placeholder_email:string ->
     ?text:string ->
     ?email:string ->
     service:(unit, 'a, Eliom_service.post, 'b, 'c, 'd, 'e,
@@ -22,12 +23,19 @@
     ?email:string -> unit -> [> Html_types.form ] Eliom_content.Html.D.elt
   val sign_up_form :
     ?a:[< Html_types.form_attrib ] Eliom_content.Html.D.attrib list ->
+    ?a_placeholder_email:string ->
+    ?text:string ->
     ?email:string -> unit -> [> Html_types.form ] Eliom_content.Html.D.elt
   val forgot_password_form :
     ?a:[< Html_types.form_attrib ] Eliom_content.Html.D.attrib list ->
     unit -> [> Html_types.form ] Eliom_content.Html.D.elt
   val information_form :
     ?a:[< Html_types.form_attrib ] Eliom_content.Html.D.attrib list ->
+    ?a_placeholder_password:string ->
+    ?a_placeholder_retype_password:string ->
+    ?a_placeholder_firstname:string ->
+    ?a_placeholder_lastname:string ->
+    ?text_submit:string ->
     ?firstname:string ->
     ?lastname:string ->
     ?password1:string ->
@@ -69,6 +77,7 @@
     (unit, unit) Ot_picture_uploader.service ->
     [> `A of Html_types.a_content ] Eliom_content.Html.D.Raw.elt
   val reset_tips_link :
+    ?text_link:string ->
     ?close:(unit -> unit) Eliom_client_value.t ->
     unit -> [> `A of [> `PCDATA ] ] Eliom_content.Html.D.Raw.elt
   val disconnect_button :
@@ -82,8 +91,24 @@
   val connected_user_box :
     user:Os_types.User.t -> [> Html_types.div ] Eliom_content.Html.D.elt
   val connection_box :
+    ?a_placeholder_email:string ->
+    ?a_placeholder_pwd:string ->
+    ?text_keep_me_logged_in:string ->
+    ?content_popup_forgotpwd:string ->
+    ?text_button_forgotpwd:string ->
+    ?text_sign_in:string ->
+    ?text_sign_up:string ->
+    ?text_send_button:string ->
     unit -> [> Html_types.div ] Eliom_content.Html.D.elt Lwt.t
   val user_box :
+    ?a_placeholder_email:string ->
+    ?a_placeholder_pwd:string ->
+    ?text_keep_me_logged_in:string ->
+    ?content_popup_forgotpwd:string ->
+    ?text_button_forgotpwd:string ->
+    ?text_sign_in:string ->
+    ?text_sign_up:string ->
+    ?text_send_button:string ->
     ?user:Os_types.User.t ->
     unit -> [> Html_types.div ] Eliom_content.Html.F.elt Lwt.t
 end >>

@@ -13,6 +13,7 @@
     string ->
     unit ->
     'a Eliom_registration.application_content Eliom_registration.kind Lwt.t
+  val update_language_handler : unit -> string -> unit Lwt.t
   val set_password_rpc : string * string -> unit Lwt.t
   val restart : ?url:string -> unit -> unit
 end >>

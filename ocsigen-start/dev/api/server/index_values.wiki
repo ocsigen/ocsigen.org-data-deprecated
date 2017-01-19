@@ -269,7 +269,7 @@
     optional extra metadata ~(with the argument <<span class="odocwiki_inlinecode"|~?head>>~) and a given body~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="create"| value Os_user.create >> ~[<<a_api subproject="server" | module Os_user >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|create ~?password ~?avatar ~~firstname ~~lastname email>> creates a new user
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="create"| value Os_user.create >> ~[<<a_api subproject="server" | module Os_user >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|create ~?password ~?avatar ~?language ~~firstname ~~lastname email>> creates a new user
     with the given information~.
 >>
 |
@@ -288,7 +288,7 @@
       description <<span class="odocwiki_inlinecode"|description>>~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="create"| value Os_db.User.create >> ~[<<a_api subproject="server" | module Os_db.User >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|create ~?password ~?avatar ~~firstname ~~lastname email>> creates a new user
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="create"| value Os_db.User.create >> ~[<<a_api subproject="server" | module Os_db.User >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|create ~?password ~?avatar ~?language ~~firstname ~~lastname email>> creates a new user
       in the database and returns the userid of the new user~.
 >>
 |
@@ -455,6 +455,12 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="get_image_width"| value Os_uploader.get_image_width >> ~[<<a_api subproject="server" | module Os_uploader >>~]|<<div class="odocwiki_info"|~Return the width of the given image~.
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="get_language"| value Os_user.get_language >> ~[<<a_api subproject="server" | module Os_user >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|get~_language userid>> returns the language of the user with ~I~D <<span class="odocwiki_inlinecode"|userid>>~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="get_language"| value Os_db.User.get_language >> ~[<<a_api subproject="server" | module Os_db.User >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|get~_language userid>> returns the language of the user with ~I~D <<span class="odocwiki_inlinecode"|userid>>
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="get_mailer"| value Os_email.get_mailer >> ~[<<a_api subproject="server" | module Os_email >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|get~_mailer ~(~)>> returns the name of mailer program~.
 >>
 |
@@ -462,8 +468,9 @@
     completion~)~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="get_users"| value Os_db.User.get_users >> ~[<<a_api subproject="server" | module Os_db.User >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|get~_users ~?pattern ~(~)>> returns all users matching the pattern <<span class="odocwiki_inlinecode"|pattern>>
-      as a tuple <<span class="odocwiki_inlinecode"|~(userid~, firstname~, lastname~, avatar~, encrypted~_password~)>>
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="get_users"| value Os_db.User.get_users >> ~[<<a_api subproject="server" | module Os_db.User >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|get~_users ~~pattern ~(~)>> returns all users matching the pattern <<span class="odocwiki_inlinecode"|pattern>>
+      as a tuple <<span class="odocwiki_inlinecode"|~(userid~, firstname~, lastname~, avatar~, bool~_password~,
+      language~)>>~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="group_of_name"| value Os_group.group_of_name >> ~[<<a_api subproject="server" | module Os_group >>~]|<<div class="odocwiki_info"|~Overwrites the function <<span class="odocwiki_inlinecode"|group~_of~_name>> of <<span class="odocwiki_inlinecode"|~Os~_db~.~Group>> and use
@@ -552,6 +559,9 @@
 >>
 |
 |@@ @style="tet-align: left;"@@\\L|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="language_of_user"| value Os_user.language_of_user >> ~[<<a_api subproject="server" | module Os_user >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|language~_of~_user user>> returns the language of the user <<span class="odocwiki_inlinecode"|user>>
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="lastname_of_user"| value Os_user.lastname_of_user >> ~[<<a_api subproject="server" | module Os_user >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|lastname~_of~_user user>> returns the last name of the user <<span class="odocwiki_inlinecode"|user>>
 >>
 |
@@ -849,11 +859,11 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="unlisten_user"| value Os_notif.S.unlisten_user >> ~[<<a_api subproject="server" | module Os_notif.S >>~]|<<div class="odocwiki_info"|~Make a user stop listening on data <<span class="odocwiki_inlinecode"|key>>~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="update"| value Os_user.update >> ~[<<a_api subproject="server" | module Os_user >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|update ~?password ~?avatar ~~firstname ~~lastname userid>> update the
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="update"| value Os_user.update >> ~[<<a_api subproject="server" | module Os_user >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|update ~?password ~?avatar ~?language ~~firstname ~~lastname userid>> update the
     given information of the user with ~I~D <<span class="odocwiki_inlinecode"|userid>>~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="update"| value Os_db.User.update >> ~[<<a_api subproject="server" | module Os_db.User >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|update ~?password ~?avatar ~~firstname ~~lastname userid>> updates the user
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="update"| value Os_db.User.update >> ~[<<a_api subproject="server" | module Os_db.User >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|update ~?password ~?avatar ~?language ~~firstname ~~lastname userid>> updates the user
       profile with <<span class="odocwiki_inlinecode"|userid>>~.
 >>
 |
@@ -867,6 +877,24 @@
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="update_avatar"| value Os_db.User.update_avatar >> ~[<<a_api subproject="server" | module Os_db.User >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|update~_avatar ~~userid ~~avatar>> updates the avatar of the user
       with ~I~D <<span class="odocwiki_inlinecode"|userid>>~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="update_language"| value Os_user.update_language >> ~[<<a_api subproject="server" | module Os_user >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|update~_language ~~userid ~~language>> updates the language of the user with ~I~D
+    <<span class="odocwiki_inlinecode"|userid>>~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="update_language"| value Os_db.User.update_language >> ~[<<a_api subproject="server" | module Os_db.User >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|update~_language ~~userid ~~language>> updates the language of the user with
+      ~I~D <<span class="odocwiki_inlinecode"|userid>>~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="update_language"| value Os_current_user.update_language >> ~[<<a_api subproject="server" | module Os_current_user >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|update~_language language>> updates the language of the current user~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="update_language_handler"| value Os_handlers.update_language_handler >> ~[<<a_api subproject="server" | module Os_handlers >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|update~_language~_handler ~(~) language>> is the handler to update the language
+     for the current user~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="update_language_service"| value Os_services.update_language_service >> ~[<<a_api subproject="server" | module Os_services >>~]|<<div class="odocwiki_info"|~A ~P~O~S~T service to update the language of the current user~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="update_main_email"| value Os_user.update_main_email >> ~[<<a_api subproject="server" | module Os_user >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|update~_mail~_email ~~userid ~~email>> sets the main email for a user with the
@@ -915,8 +943,8 @@
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="user_of_userid"| value Os_db.User.user_of_userid >> ~[<<a_api subproject="server" | module Os_db.User >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|user~_of~_userid userid>> returns a tuple <<span class="odocwiki_inlinecode"|~(userid~, firstname~, lastname~,
-      main~_email~, password~, avatar~)>> describing the information about the user
-      with ~I~D <<span class="odocwiki_inlinecode"|userid>>~.
+      avatar~, bool~_password~, language~)>> describing the information about
+      the user with ~I~D <<span class="odocwiki_inlinecode"|userid>>~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="userid_of_email"| value Os_user.userid_of_email >> ~[<<a_api subproject="server" | module Os_user >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|userid~_of~_email email>> returns the userid of the user with email <<span class="odocwiki_inlinecode"|email>>~.

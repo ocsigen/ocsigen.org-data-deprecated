@@ -189,11 +189,13 @@
       val create :
         ?password:string ->
         ?avatar:string ->
+        ?language:string ->
         firstname:string ->
         lastname:string -> string -> Os_types.User.id Lwt.t
       val update :
         ?password:string ->
         ?avatar:string ->
+        ?language:string ->
         firstname:string -> lastname:string -> Os_types.User.id -> unit Lwt.t
       val update_password :
         userid:Os_types.User.id -> password:string -> unit Lwt.t
@@ -201,11 +203,15 @@
         userid:Os_types.User.id -> avatar:string -> unit Lwt.t
       val update_main_email :
         userid:Os_types.User.id -> email:string -> unit Lwt.t
+      val update_language :
+        userid:Os_types.User.id -> language:string -> unit Lwt.t
       val verify_password :
         email:string -> password:string -> Os_types.User.id Lwt.t
       val user_of_userid :
         Os_types.User.id ->
-        (Os_types.User.id * string * string * string option * bool) Lwt.t
+        (Os_types.User.id * string * string * string option * bool *
+         string option)
+        Lwt.t
       val get_actionlinkkey_info :
         string -> Os_types.Action_link_key.info Lwt.t
       val emails_of_userid : Os_types.User.id -> string list Lwt.t
@@ -216,11 +222,13 @@
         userid:Os_types.User.id -> email:string -> unit Lwt.t
       val remove_email_from_user :
         userid:Os_types.User.id -> email:string -> unit Lwt.t
+      val get_language : Os_types.User.id -> string option Lwt.t
       val get_users :
         ?pattern:string ->
         unit ->
-        (Os_types.User.id * string * string * string option * bool) list
-        Lwt.t
+        (Os_types.User.id * string * string * string option * bool *
+         string option)
+        list Lwt.t
     end
   module Groups :
     sig
