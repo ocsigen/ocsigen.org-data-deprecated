@@ -13,21 +13,6 @@
 ==@@id="2_Uniquenodes"@@~Unique nodes ==
 
 
-
-==@@id="2_Uniquenodes"@@~Unique nodes ==
-
-
-~Unique nodes are ~X~M~L nodes that are manipulated ~'by reference~'
-      when sent to the client part of an ~Eliom~-application~: the
-      created element is allocated only one time in each instance of
-      an application~. ~See <<a_manual chapter="clientserver-html"
-      fragment="unique" |the eliom manual>> for more
-      details~.
-
-
-==@@id="2_Uniquenodes"@@~Unique nodes ==
-
-
 ~Unique nodes are ~X~M~L nodes that are manipulated ~'by reference~'
       when sent to the client part of an ~Eliom~-application~: the
       created element is allocated only one time in each instance of

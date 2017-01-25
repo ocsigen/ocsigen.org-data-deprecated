@@ -469,8 +469,7 @@
                 Svg_types.numbers_semicolon wrap -> [> `KeyPoints ] attrib
               val a_path : string wrap -> [> `Path ] attrib
               val a_animateTransform_type :
-                [ `Rotate | `Scale | `SkewX | `SkewY | `Translate ] wrap ->
-                [ `Typeanimatetransform ] attrib
+                ('a Xml.W.t as 'a) wrap -> [ `Typeanimatetransform ] attrib
               val a_horiz_origin_x :
                 Svg_types.number wrap -> [> `HorizOriginX ] attrib
               val a_horiz_origin_y :
@@ -1312,8 +1311,7 @@
             Svg_types.numbers_semicolon wrap -> [> `KeyPoints ] attrib
           val a_path : string wrap -> [> `Path ] attrib
           val a_animateTransform_type :
-            [ `Rotate | `Scale | `SkewX | `SkewY | `Translate ] wrap ->
-            [ `Typeanimatetransform ] attrib
+            ('a Xml.W.t as 'a) wrap -> [ `Typeanimatetransform ] attrib
           val a_horiz_origin_x :
             Svg_types.number wrap -> [> `HorizOriginX ] attrib
           val a_horiz_origin_y :
@@ -2153,8 +2151,7 @@
                 Svg_types.numbers_semicolon wrap -> [> `KeyPoints ] attrib
               val a_path : string wrap -> [> `Path ] attrib
               val a_animateTransform_type :
-                [ `Rotate | `Scale | `SkewX | `SkewY | `Translate ] wrap ->
-                [ `Typeanimatetransform ] attrib
+                ('a Xml.W.t as 'a) wrap -> [ `Typeanimatetransform ] attrib
               val a_horiz_origin_x :
                 Svg_types.number wrap -> [> `HorizOriginX ] attrib
               val a_horiz_origin_y :
@@ -2996,8 +2993,7 @@
             Svg_types.numbers_semicolon wrap -> [> `KeyPoints ] attrib
           val a_path : string wrap -> [> `Path ] attrib
           val a_animateTransform_type :
-            [ `Rotate | `Scale | `SkewX | `SkewY | `Translate ] wrap ->
-            [ `Typeanimatetransform ] attrib
+            ('a Xml.W.t as 'a) wrap -> [ `Typeanimatetransform ] attrib
           val a_horiz_origin_x :
             Svg_types.number wrap -> [> `HorizOriginX ] attrib
           val a_horiz_origin_y :

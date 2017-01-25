@@ -231,10 +231,6 @@
       returned to the client~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="create_persistent_table"| value Eliom_state.create_persistent_table >> ~[<<a_api subproject="server" | module Eliom_state >>~]|<<div class="odocwiki_info"|creates a table on hard disk where you can store the session data
-    for all users~.
->>
-|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="create_request_elt"| value Eliom_content.Html.Id.create_request_elt >> ~[<<a_api subproject="server" | module Eliom_content.Html.Id >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|create~_request~_elt ~?reset elt>> creates a referable copy of
         <<span class="odocwiki_inlinecode"|elt>>~.
 >>
@@ -602,9 +598,6 @@
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="get_persistent_data"| value Eliom_state.Ext.Low_level.get_persistent_data >> ~[<<a_api subproject="server" | module Eliom_state.Ext.Low_level >>~]|<<div class="odocwiki_info"|~Fails with lwt exception <<span class="odocwiki_inlinecode"|~Not~_found>>
         if no data in the table for the cookie~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="get_persistent_data"| value Eliom_state.get_persistent_data >> ~[<<a_api subproject="server" | module Eliom_state >>~]|<<div class="odocwiki_info"|gets persistent session data for the current persistent session ~(if any~)~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="get_persistent_data_cookie_scope"| value Eliom_state.Ext.get_persistent_data_cookie_scope >> ~[<<a_api subproject="server" | module Eliom_state.Ext >>~]||
@@ -1045,10 +1038,6 @@
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="remove_persistent_data"| value Eliom_state.Ext.Low_level.remove_persistent_data >> ~[<<a_api subproject="server" | module Eliom_state.Ext.Low_level >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="remove_persistent_data"| value Eliom_state.remove_persistent_data >> ~[<<a_api subproject="server" | module Eliom_state >>~]|<<div class="odocwiki_info"|removes session data for the current persistent session
-    ~(but does not close the session~)~.
->>
-|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="remove_volatile_data"| value Eliom_state.Ext.Low_level.remove_volatile_data >> ~[<<a_api subproject="server" | module Eliom_state.Ext.Low_level >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="request_scope"| value Eliom_common.request_scope >> ~[<<a_api subproject="server" | module Eliom_common >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="result_of_http_result"| value Eliom_registration_sigs.PARAM.result_of_http_result >> ~[<<a_api subproject="server" | module Eliom_registration_sigs.PARAM >>~]||
@@ -1188,9 +1177,6 @@
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="set_persistent_data"| value Eliom_state.Ext.Low_level.set_persistent_data >> ~[<<a_api subproject="server" | module Eliom_state.Ext.Low_level >>~]|<<div class="odocwiki_info"|~Fails with lwt exception <<span class="odocwiki_inlinecode"|~Not~_found>>
         if no data in the table for the cookie~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="set_persistent_data"| value Eliom_state.set_persistent_data >> ~[<<a_api subproject="server" | module Eliom_state >>~]|<<div class="odocwiki_info"|sets persistent session data for the current persistent session~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="set_persistent_data_cookie_exp_date"| value Eliom_state.set_persistent_data_cookie_exp_date >> ~[<<a_api subproject="server" | module Eliom_state >>~]|<<div class="odocwiki_info"|~Sets the cookie expiration date for the persistent state ~(see

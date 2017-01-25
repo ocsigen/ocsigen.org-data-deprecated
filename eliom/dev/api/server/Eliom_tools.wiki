@@ -73,8 +73,3 @@
     <<span class="odocwiki_inlinecode"|~Eliom~_tools~.~F~.html>>~.
 
 ~Record an ~C~S~S file to be included in <<span class="odocwiki_inlinecode"|~Eliom~_tools~.~F~.html>>~.
-
-~Record an ~(external~) ~Java~Script file to be included in
-    <<span class="odocwiki_inlinecode"|~Eliom~_tools~.~F~.html>>~.
-
-~Record an ~C~S~S file to be included in <<span class="odocwiki_inlinecode"|~Eliom~_tools~.~F~.html>>~.

@@ -164,3 +164,7 @@
     ~If the <<span class="odocwiki_inlinecode"|replace>> flag is set to <<span class="odocwiki_inlinecode"|true>>~, the current page is not
     saved in the history~.
 >>
+<<pre id="VALset_client_html_file" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|set~_client~_html~_file>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|string <<span class="ocsforge_color_delimiter"| -> >> unit>>>><<div class="odocwiki_info"|~Set the name of the ~H~T~M~L file loading our client app~. ~The default
+    is "eliom~.html"~. ~A wrong value will not allow the app to
+    initialize itself correctly~.
+>>

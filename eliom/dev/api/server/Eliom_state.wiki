@@ -10,24 +10,6 @@
 
 <<outline| <<header| **Table of contents** >> >>
 
-**~Please read the
-    <<a_manual chapter="server-state" | Eliom manual >>
-    before this page to learn how server side state works~. **
-
-
-<<outline| <<header| **Table of contents** >> >>
-
-
-==@@id="2_Managingthestateofanapplication"@@~Managing the state of an application==
-
-
-**~Please read the
-    <<a_manual chapter="server-state" | Eliom manual >>
-    before this page to learn how server side state works~. **
-
-
-<<outline| <<header| **Table of contents** >> >>
-
 
 ==@@id="2_Managingthestateofanapplication"@@~Managing the state of an application==
 
@@ -63,10 +45,6 @@
 <<pre id="VALdiscard_services" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|discard~_services>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|\\  <<span class="ocsforge_color_label"| scope: >>[< <<a_api subproject="server" text="Eliom_common.user_scope" | type Eliom_common.user_scope >> ] <<span class="ocsforge_color_delimiter"| -> >> <<span class="ocsforge_color_label"| ?secure: >>bool <<span class="ocsforge_color_delimiter"| -> >> unit <<span class="ocsforge_color_delimiter"| -> >> unit>>>><<div class="odocwiki_info"|~Remove all services registered for the given scope ~(the default beeing
     <<span class="odocwiki_inlinecode"|`~Session>>~)~.
 >>
-
-
-===@@id="3_Statestatus"@@~State status===
-
 
 
 ===@@id="3_Statestatus"@@~State status===
@@ -111,25 +89,6 @@
 >>
 <<pre id="VALunset_cookie" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|unset~_cookie>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|\\  <<span class="ocsforge_color_label"| ?cookie_level: >><<a_api subproject="server" text="Eliom_common.cookie_level" | type Eliom_common.cookie_level >> <<span class="ocsforge_color_delimiter"| -> >>\\  <<span class="ocsforge_color_label"| ?path: >>string list <<span class="ocsforge_color_delimiter"| -> >> <<span class="ocsforge_color_label"| name: >>string <<span class="ocsforge_color_delimiter"| -> >> unit <<span class="ocsforge_color_delimiter"| -> >> unit>>>><<div class="odocwiki_info"|~Ask the browser to remove a cookie~.
 >>
-
-
-==@@id="2_Sessiongroups"@@~Session groups==
-
-
-
-==@@id="2_Sessiongroups"@@~Session groups==
-
-
-~If your ~Web site has users~,
-    it is a good idea to group together all the sessions for one user~.
-    ~Otherwise~, you may want to group sessions according to another
-    criterion~.
-
-
-    ~Session groups may be used for example to limit
-    the number of sessions one user can open at the same time~, or to implement
-    a "close all your sessions" feature~.
-    ~Usually~, the group is the user name~.
 
 
 ==@@id="2_Sessiongroups"@@~Session groups==
@@ -297,14 +256,6 @@
 ===@@id="3_Cookieexpiration"@@~Cookie expiration===
 
 
-
-==@@id="2_Expirationofcookiesandtimeouts"@@~Expiration of cookies and timeouts==
-
-
-
-===@@id="3_Cookieexpiration"@@~Cookie expiration===
-
-
 ~The functions in this section ask the browser to set the state cookie
     expiration date~, for the different kinds of session~, in seconds~,
     since the ~1st of ~January ~1~9~7~0~. <<span class="odocwiki_inlinecode"|~None>> means the cookie will expire
@@ -327,10 +278,6 @@
 <<pre id="VALset_persistent_data_cookie_exp_date" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|set~_persistent~_data~_cookie~_exp~_date>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|\\  <<span class="ocsforge_color_label"| cookie_scope: >><<a_api subproject="server" text="Eliom_common.cookie_scope" | type Eliom_common.cookie_scope >> <<span class="ocsforge_color_delimiter"| -> >>\\  <<span class="ocsforge_color_label"| ?secure: >>bool <<span class="ocsforge_color_delimiter"| -> >> float option <<span class="ocsforge_color_delimiter"| -> >> unit <<span class="ocsforge_color_uid"|Lwt>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>>>>>><<div class="odocwiki_info"|~Sets the cookie expiration date for the persistent state ~(see
     above~)~.
 >>
-
-
-===@@id="3_Globalconfigurationofstatetimeouts"@@~Global configuration of state timeouts===
-
 
 
 ===@@id="3_Globalconfigurationofstatetimeouts"@@~Global configuration of state timeouts===
@@ -420,10 +367,6 @@
 ==@@id="2_Administratingserversidestate"@@~Administrating server side state==
 
 
-
-==@@id="2_Administratingserversidestate"@@~Administrating server side state==
-
-
 //~Warning~: ~Most these functions must be called when the site
     information is available~, that is~, either
     during a request or during the initialisation phase of the site~.
@@ -450,24 +393,3 @@
 <<pre id="VALdiscard_all_services" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|discard~_all~_services>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|\\  <<span class="ocsforge_color_label"| scope: >><<a_api subproject="server" text="Eliom_common.user_scope" | type Eliom_common.user_scope >> <<span class="ocsforge_color_delimiter"| -> >> <<span class="ocsforge_color_label"| ?secure: >>bool <<span class="ocsforge_color_delimiter"| -> >> unit <<span class="ocsforge_color_delimiter"| -> >> unit <<span class="ocsforge_color_uid"|Lwt>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>>>>>><<div class="odocwiki_info"|~Remove all services registered for clients for the given scope~.
 >>
 <<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module>> <<a_api subproject="server" text="Ext" | module Eliom_state.Ext >> <<span class="ocsforge_color_delimiter"|~:>> <<span class="ocsforge_color_keyword"|sig>><<a_api subproject="server" text=".." | module Eliom_state.Ext >><<span class="ocsforge_color_keyword"|end>>>>
-
-===@@id="3_Sessiondatadeprecatedinterface"@@~Session data ~(deprecated interface~)===
-
-
-
-====@@id="4_Persistentstatedata"@@~Persistent state data====
-
-<<pre id="VALcreate_persistent_table" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|create~_persistent~_table>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|\\  <<span class="ocsforge_color_label"| scope: >><<a_api subproject="server" text="Eliom_common.user_scope" | type Eliom_common.user_scope >> <<span class="ocsforge_color_delimiter"| -> >>\\  <<span class="ocsforge_color_label"| ?secure: >>bool <<span class="ocsforge_color_delimiter"| -> >> string <<span class="ocsforge_color_delimiter"| -> >> 'a <<a_api subproject="server" text="persistent_table" | type Eliom_state.persistent_table >> <<span class="ocsforge_color_uid"|Lwt>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>>>>>><<div class="odocwiki_info"|creates a table on hard disk where you can store the session data
-    for all users~. ~It uses <<span class="odocwiki_inlinecode"|~Ocsipersist>>~.  ~(low level~)
->>
-<<pre id="VALget_persistent_data" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|get~_persistent~_data>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|\\  <<span class="ocsforge_color_label"| table: >>'a <<a_api subproject="server" text="persistent_table" | type Eliom_state.persistent_table >> <<span class="ocsforge_color_delimiter"| -> >>\\  unit <<span class="ocsforge_color_delimiter"| -> >> 'a <<span class="ocsforge_color_lid"|state_data>> <<span class="ocsforge_color_uid"|Lwt>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>>>>>><<div class="odocwiki_info"|gets persistent session data for the current persistent session ~(if any~)~.
-    ~(low level~)
->>
-<<pre id="VALset_persistent_data" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|set~_persistent~_data>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<span class="ocsforge_color_label"| table: >>'a <<a_api subproject="server" text="persistent_table" | type Eliom_state.persistent_table >> <<span class="ocsforge_color_delimiter"| -> >> 'a <<span class="ocsforge_color_delimiter"| -> >> unit <<span class="ocsforge_color_uid"|Lwt>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>>>>>><<div class="odocwiki_info"|sets persistent session data for the current persistent session~.
-    ~(low level~)
->>
-<<pre id="VALremove_persistent_data" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|remove~_persistent~_data>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|\\  <<span class="ocsforge_color_label"| table: >>'a <<a_api subproject="server" text="persistent_table" | type Eliom_state.persistent_table >> <<span class="ocsforge_color_delimiter"| -> >> unit <<span class="ocsforge_color_delimiter"| -> >> unit <<span class="ocsforge_color_uid"|Lwt>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>>>>>><<div class="odocwiki_info"|removes session data for the current persistent session
-    ~(but does not close the session~)~.
-    ~If the session does not exist~, does nothing~.
-    ~(low level~)
->>

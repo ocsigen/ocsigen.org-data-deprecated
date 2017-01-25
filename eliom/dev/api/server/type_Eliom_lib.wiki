@@ -49,6 +49,7 @@
   module List :
     sig
       val length : 'a list -> int
+      val cons : 'a -> 'a list -> 'a list
       val hd : 'a list -> 'a
       val tl : 'a list -> 'a list
       val nth : 'a list -> int -> 'a
@@ -137,6 +138,7 @@
           val merge :
             (key -> 'a option -> 'b option -> 'c option) ->
             'a t -> 'b t -> 'c t
+          val union : (key -> 'a -> 'a -> 'a option) -> 'a t -> 'a t -> 'a t
           val compare : ('a -> 'a -> int) -> 'a t -> 'a t -> int
           val equal : ('a -> 'a -> bool) -> 'a t -> 'a t -> bool
           val iter : (key -> 'a -> unit) -> 'a t -> unit
@@ -186,15 +188,20 @@
       val lowercase : string -> string
       val capitalize : string -> string
       val uncapitalize : string -> string
+      val uppercase_ascii : string -> string
+      val lowercase_ascii : string -> string
+      val capitalize_ascii : string -> string
+      val uncapitalize_ascii : string -> string
       type t = string
       val compare : t -> t -> int
+      val equal : t -> t -> bool
       external unsafe_get : string -> int -> char = "%string_unsafe_get"
       external unsafe_set : bytes -> int -> char -> unit
         = "%string_unsafe_set"
       external unsafe_blit : string -> int -> bytes -> int -> int -> unit
-        = "caml_blit_string" "noalloc"
+        = "caml_blit_string" [@@noalloc]
       external unsafe_fill : bytes -> int -> int -> char -> unit
-        = "caml_fill_string" "noalloc"
+        = "caml_fill_string" [@@noalloc]
       val remove_spaces : string -> int -> int -> string
       val basic_sep : char -> string -> string * string
       val sep : char -> string -> string * string
@@ -215,6 +222,7 @@
           val merge :
             (key -> 'a option -> 'b option -> 'c option) ->
             'a t -> 'b t -> 'c t
+          val union : (key -> 'a -> 'a -> 'a option) -> 'a t -> 'a t -> 'a t
           val compare : ('a -> 'a -> int) -> 'a t -> 'a t -> int
           val equal : ('a -> 'a -> bool) -> 'a t -> 'a t -> bool
           val iter : (key -> 'a -> unit) -> 'a t -> unit
@@ -277,6 +285,7 @@
           val merge :
             (key -> 'a option -> 'b option -> 'c option) ->
             'a t -> 'b t -> 'c t
+          val union : (key -> 'a -> 'a -> 'a option) -> 'a t -> 'a t -> 'a t
           val compare : ('a -> 'a -> int) -> 'a t -> 'a t -> int
           val equal : ('a -> 'a -> bool) -> 'a t -> 'a t -> bool
           val iter : (key -> 'a -> unit) -> 'a t -> unit
@@ -383,15 +392,20 @@
       val lowercase : string -> string
       val capitalize : string -> string
       val uncapitalize : string -> string
+      val uppercase_ascii : string -> string
+      val lowercase_ascii : string -> string
+      val capitalize_ascii : string -> string
+      val uncapitalize_ascii : string -> string
       type t = string
       val compare : t -> t -> int
+      val equal : t -> t -> bool
       external unsafe_get : string -> int -> char = "%string_unsafe_get"
       external unsafe_set : bytes -> int -> char -> unit
         = "%string_unsafe_set"
       external unsafe_blit : string -> int -> bytes -> int -> int -> unit
-        = "caml_blit_string" "noalloc"
+        = "caml_blit_string" [@@noalloc]
       external unsafe_fill : bytes -> int -> int -> char -> unit
-        = "caml_fill_string" "noalloc"
+        = "caml_fill_string" [@@noalloc]
       val remove_spaces : string -> int -> int -> string
       val basic_sep : char -> string -> string * string
       val sep : char -> string -> string * string
@@ -412,6 +426,7 @@
           val merge :
             (key -> 'a option -> 'b option -> 'c option) ->
             'a t -> 'b t -> 'c t
+          val union : (key -> 'a -> 'a -> 'a option) -> 'a t -> 'a t -> 'a t
           val compare : ('a -> 'a -> int) -> 'a t -> 'a t -> int
           val equal : ('a -> 'a -> bool) -> 'a t -> 'a t -> bool
           val iter : (key -> 'a -> unit) -> 'a t -> unit
@@ -474,6 +489,7 @@
           val merge :
             (key -> 'a option -> 'b option -> 'c option) ->
             'a t -> 'b t -> 'c t
+          val union : (key -> 'a -> 'a -> 'a option) -> 'a t -> 'a t -> 'a t
           val compare : ('a -> 'a -> int) -> 'a t -> 'a t -> int
           val equal : ('a -> 'a -> bool) -> 'a t -> 'a t -> bool
           val iter : (key -> 'a -> unit) -> 'a t -> unit
@@ -514,6 +530,7 @@
       val temp_file : ?temp_dir:string -> string -> string -> string
       val open_temp_file :
         ?mode:open_flag list ->
+        ?perms:int ->
         ?temp_dir:string -> string -> string -> string * out_channel
       val get_temp_dir_name : unit -> string
       val set_temp_dir_name : string -> unit
@@ -568,6 +585,7 @@
       val remove : key -> 'a t -> 'a t
       val merge :
         (key -> 'a option -> 'b option -> 'c option) -> 'a t -> 'b t -> 'c t
+      val union : (key -> 'a -> 'a -> 'a option) -> 'a t -> 'a t -> 'a t
       val compare : ('a -> 'a -> int) -> 'a t -> 'a t -> int
       val equal : ('a -> 'a -> bool) -> 'a t -> 'a t -> bool
       val iter : (key -> 'a -> unit) -> 'a t -> unit
@@ -600,6 +618,7 @@
       val remove : key -> 'a t -> 'a t
       val merge :
         (key -> 'a option -> 'b option -> 'c option) -> 'a t -> 'b t -> 'c t
+      val union : (key -> 'a -> 'a -> 'a option) -> 'a t -> 'a t -> 'a t
       val compare : ('a -> 'a -> int) -> 'a t -> 'a t -> int
       val equal : ('a -> 'a -> bool) -> 'a t -> 'a t -> bool
       val iter : (key -> 'a -> unit) -> 'a t -> unit
@@ -632,6 +651,7 @@
       val remove : key -> 'a t -> 'a t
       val merge :
         (key -> 'a option -> 'b option -> 'c option) -> 'a t -> 'b t -> 'c t
+      val union : (key -> 'a -> 'a -> 'a option) -> 'a t -> 'a t -> 'a t
       val compare : ('a -> 'a -> int) -> 'a t -> 'a t -> int
       val equal : ('a -> 'a -> bool) -> 'a t -> 'a t -> bool
       val iter : (key -> 'a -> unit) -> 'a t -> unit
@@ -664,6 +684,7 @@
       val remove : key -> 'a t -> 'a t
       val merge :
         (key -> 'a option -> 'b option -> 'c option) -> 'a t -> 'b t -> 'c t
+      val union : (key -> 'a -> 'a -> 'a option) -> 'a t -> 'a t -> 'a t
       val compare : ('a -> 'a -> int) -> 'a t -> 'a t -> int
       val equal : ('a -> 'a -> bool) -> 'a t -> 'a t -> bool
       val iter : (key -> 'a -> unit) -> 'a t -> unit

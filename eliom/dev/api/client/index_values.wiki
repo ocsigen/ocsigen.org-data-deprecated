@@ -1133,6 +1133,9 @@
       stay active~.
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="set_client_html_file"| value Eliom_client.set_client_html_file >> ~[<<a_api subproject="client" | module Eliom_client >>~]|<<div class="odocwiki_info"|~Set the name of the ~H~T~M~L file loading our client app~.
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="set_dom"| value Eliom_content_core.Html.Custom_data.set_dom >> ~[<<a_api subproject="client" | module Eliom_content_core.Html.Custom_data >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|set~_dom element custom~_data value>> sets the custom data attribute for
         <<span class="odocwiki_inlinecode"|custom~_data>> of an ~Java~Script <<span class="odocwiki_inlinecode"|element>>
         ~(<<a_api project="js_of_ocaml"|class type Dom_html.element>> ~)

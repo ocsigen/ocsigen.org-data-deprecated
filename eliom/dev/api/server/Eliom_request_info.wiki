@@ -94,10 +94,6 @@
 ==@@id="2_Gettinginformationaboutfilesuploaded"@@~Getting information about files uploaded==
 
 
-
-==@@id="2_Gettinginformationaboutfilesuploaded"@@~Getting information about files uploaded==
-
-
 ~Warning~: ~The files uploaded are automatically erased by ~Ocsigen
    just after the request has been fulfilled~.
    ~If you want to keep them~, create a new hard link yourself during
@@ -113,10 +109,6 @@
 >>
 <<pre id="VALget_site_dir" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|get~_site~_dir>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|unit <<span class="ocsforge_color_delimiter"| -> >> <<span class="ocsforge_color_uid"|Eliom_lib>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_uid"|Url>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|path>>>>>><<div class="odocwiki_info"|returns the root of the site~.
 >>
-
-
-==@@id="2_Gettingparameterslowlevel"@@~Getting parameters ~(low level~)==
-
 
 
 ==@@id="2_Gettingparameterslowlevel"@@~Getting parameters ~(low level~)==
@@ -156,10 +148,6 @@
 <<pre id="VALget_all_files" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|get~_all~_files>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|\\  unit <<span class="ocsforge_color_delimiter"| -> >> <<span class="ocsforge_color_delimiter"| ( >>string * <<span class="ocsforge_color_uid"|Ocsigen_extensions>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|file_info>><<span class="ocsforge_color_delimiter"| ) >> list option>>>><<div class="odocwiki_info"|returns all files in he ~H~T~T~P request
    ~(even those that are for another service~)
 >>
-
-
-==@@id="2_Otherlowlevelfunctions"@@~Other low level functions==
-
 
 
 ==@@id="2_Otherlowlevelfunctions"@@~Other low level functions==
