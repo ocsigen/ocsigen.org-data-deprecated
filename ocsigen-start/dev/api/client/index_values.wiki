@@ -341,10 +341,6 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="update_language"| value Os_current_user.update_language >> ~[<<a_api subproject="client" | module Os_current_user >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|update~_language language>> updates the language of the current user~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="update_language_handler"| value Os_handlers.update_language_handler >> ~[<<a_api subproject="client" | module Os_handlers >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|update~_language~_handler ~(~) language>> is the handler to update the language
-     for the current user~.
->>
-|
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="update_language_service"| value Os_services.update_language_service >> ~[<<a_api subproject="client" | module Os_services >>~]|<<div class="odocwiki_info"|~A ~P~O~S~T service to update the language of the current user~.
 >>
 |

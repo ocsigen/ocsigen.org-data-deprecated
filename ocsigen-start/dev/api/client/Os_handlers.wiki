@@ -29,9 +29,6 @@
     <<a_api subproject="client" | exception Os_handlers.Invalid_action_key >> or <<a_api subproject="client" | exception Os_handlers.Account_already_activated_unconnected >> can be
     raised~.
 >>
-<<pre id="VALupdate_language_handler" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|update~_language~_handler>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|unit <<span class="ocsforge_color_delimiter"| -> >> string <<span class="ocsforge_color_delimiter"| -> >> unit <<span class="ocsforge_color_uid"|Lwt>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>>>>>><<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|update~_language~_handler ~(~) language>> is the handler to update the language
-     for the current user~.
->>
 <<pre id="VALset_password_rpc" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|set~_password~_rpc>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|string * string <<span class="ocsforge_color_delimiter"| -> >> unit <<span class="ocsforge_color_uid"|Lwt>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>>>>>><<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|set~_password~_rpc ~(password~, confirmation~_password~)>> is a ~R~P~C to
     <<span class="odocwiki_inlinecode"|set~_password>>~.
 >>
