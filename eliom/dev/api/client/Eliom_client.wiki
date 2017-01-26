@@ -106,6 +106,13 @@
 >>
 <<pre id="VALlwt_onload" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|lwt~_onload>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|unit <<span class="ocsforge_color_delimiter"| -> >> unit <<span class="ocsforge_color_uid"|Lwt>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>>>>>><<div class="odocwiki_info"|~Returns a ~Lwt thread that waits until the next page is loaded~.
 >>
+<<pre id="VALonchangepage" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|onchangepage>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<span class="ocsforge_color_delimiter"| ( >>unit <<span class="ocsforge_color_delimiter"| -> >> unit<<span class="ocsforge_color_delimiter"| ) >> <<span class="ocsforge_color_delimiter"| -> >> unit>>>><<div class="odocwiki_info"|~Run some code ~*before~* the next page change~, that is~, before each
+    call to a page~-producing service handler~.
+
+
+    ~Just like onpreload~, handlers registered with onchangepage only
+    apply to the next page change~.
+>>
 <<pre id="VALonbeforeunload" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|onbeforeunload>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<span class="ocsforge_color_delimiter"| ( >>unit <<span class="ocsforge_color_delimiter"| -> >> string option<<span class="ocsforge_color_delimiter"| ) >> <<span class="ocsforge_color_delimiter"| -> >> unit>>>><<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|onbeforeunload f>> registers <<span class="odocwiki_inlinecode"|f>> as a handler to be called before
     changing the page the next time~. ~If <<span class="odocwiki_inlinecode"|f>> returns <<span class="odocwiki_inlinecode"|~Some s>>~, then we
     ask the user to confirm quitting~. ~We try to use <<span class="odocwiki_inlinecode"|s>> in the

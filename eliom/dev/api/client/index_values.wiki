@@ -837,6 +837,10 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="onblur_textarea"| value Eliom_content.Html.Manip.Ev.onblur_textarea >> ~[<<a_api subproject="client" | module Eliom_content.Html.Manip.Ev >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="onchange"| value Eliom_content.Html.Manip.Ev.onchange >> ~[<<a_api subproject="client" | module Eliom_content.Html.Manip.Ev >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="onchange_select"| value Eliom_content.Html.Manip.Ev.onchange_select >> ~[<<a_api subproject="client" | module Eliom_content.Html.Manip.Ev >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="onchangepage"| value Eliom_client.onchangepage >> ~[<<a_api subproject="client" | module Eliom_client >>~]|<<div class="odocwiki_info"|~Run some code ~*before~* the next page change~, that is~, before each
+    call to a page~-producing service handler~.
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="onclick"| value Eliom_content.Html.Manip.Ev.onclick >> ~[<<a_api subproject="client" | module Eliom_content.Html.Manip.Ev >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="ondblclick"| value Eliom_content.Html.Manip.Ev.ondblclick >> ~[<<a_api subproject="client" | module Eliom_content.Html.Manip.Ev >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="onerror"| value Eliom_content.Html.Manip.Ev.onerror >> ~[<<a_api subproject="client" | module Eliom_content.Html.Manip.Ev >>~]||
