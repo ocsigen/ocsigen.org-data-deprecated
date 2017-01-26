@@ -677,6 +677,10 @@
     crops the image like <<span class="odocwiki_inlinecode"|crop~_image>> and save it in the directory <<span class="odocwiki_inlinecode"|directory>>~.
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="register_settings_service"| value Os_services.register_settings_service >> ~[<<a_api subproject="server" | module Os_services >>~]|<<div class="odocwiki_info"|~Register the settings service ~(defined in the app rather than in
+    the ~O~S lib~) because we need to perform redirections to it~.
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="registration_id_of_success"| value Os_fcm_notif.Response.Results.registration_id_of_success >> ~[<<a_api subproject="server" | module Os_fcm_notif.Response.Results >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|registration~_id~_of~_t result>> returns a string specifying the
             canonical registration token for the client app that the message was
             processed and sent to~.
