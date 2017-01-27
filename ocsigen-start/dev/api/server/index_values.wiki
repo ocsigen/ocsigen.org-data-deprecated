@@ -62,7 +62,8 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="add_dry_run"| value Os_fcm_notif.Options.add_dry_run >> ~[<<a_api subproject="server" | module Os_fcm_notif.Options >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|add~_dry~_run value options>>~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="add_email_handler"| value Os_handlers.add_email_handler >> ~[<<a_api subproject="server" | module Os_handlers >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|add~_email~_handler ~(~) email>> adds the email~.
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="add_email_handler"| value Os_handlers.add_email_handler >> ~[<<a_api subproject="server" | module Os_handlers >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|add~_email~_handler ~(~) email>> adds a new e~-mail address
+    for the current user and sends an activation link~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="add_email_service"| value Os_services.add_email_service >> ~[<<a_api subproject="server" | module Os_services >>~]|<<div class="odocwiki_info"|~A ~P~O~S~T service to add an email to a user~.
