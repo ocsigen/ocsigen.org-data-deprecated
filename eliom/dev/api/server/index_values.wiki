@@ -244,7 +244,6 @@
       immediately on the stream~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="create_unwrapper"| value Eliom_wrap.create_unwrapper >> ~[<<a_api subproject="server" | module Eliom_wrap >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="create_wrapper"| value Eliom_wrap.create_wrapper >> ~[<<a_api subproject="server" | module Eliom_wrap >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|create f>> create a new tag that can be included into a value~.
 >>
 |
@@ -326,7 +325,6 @@
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="empty_nl_params_set"| value Eliom_parameter_sigs.S.empty_nl_params_set >> ~[<<a_api subproject="server" | module Eliom_parameter_sigs.S >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="empty_unwrapper"| value Eliom_wrap.empty_unwrapper >> ~[<<a_api subproject="server" | module Eliom_wrap >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="empty_wrapper"| value Eliom_wrap.empty_wrapper >> ~[<<a_api subproject="server" | module Eliom_wrap >>~]|<<div class="odocwiki_info"|a wrapper that do not change the value
 >>
 |
@@ -737,7 +735,6 @@
 >>
 |
 |@@ @style="tet-align: left;"@@\\I|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="id_of_int"| value Eliom_wrap.id_of_int >> ~[<<a_api subproject="server" | module Eliom_wrap >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="image_input"| value Eliom_form_sigs.S.image_input >> ~[<<a_api subproject="server" | module Eliom_form_sigs.S >>~]|<<div class="odocwiki_info"|~Creates an <<span class="odocwiki_inlinecode"|~<input type~="image" name~="~.~.~."~>>> tag~.
 >>
 |

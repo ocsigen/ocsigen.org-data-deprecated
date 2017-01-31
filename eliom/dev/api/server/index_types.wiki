@@ -328,8 +328,6 @@
     can~'t be determined statically~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="unwrap_id"| type Eliom_wrap.unwrap_id >> ~[<<a_api subproject="server" | module Eliom_wrap >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="unwrapper"| type Eliom_wrap.unwrapper >> ~[<<a_api subproject="server" | module Eliom_wrap >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="uri"| type Eliom_content.Html.uri >> ~[<<a_api subproject="server" | module Eliom_content.Html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="uri"| type Eliom_content.Svg.uri >> ~[<<a_api subproject="server" | module Eliom_content.Svg >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="uri"| type Eliom_form_sigs.LINKS.uri >> ~[<<a_api subproject="server" | module Eliom_form_sigs.LINKS >>~]||
