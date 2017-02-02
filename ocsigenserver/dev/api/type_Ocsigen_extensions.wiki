@@ -284,7 +284,8 @@
   and extension2 =
       (unit -> unit) ->
       Ocsigen_cookies.cookieset ->
-      request_state -> (answer * Ocsigen_cookies.cookieset) Lwt.t
+      Ocsigen_extensions.request_state ->
+      (Ocsigen_extensions.answer * Ocsigen_cookies.cookieset) Lwt.t
   type extension =
       Ocsigen_extensions.request_state -> Ocsigen_extensions.answer Lwt.t
   type parse_fun = Simplexmlparser.xml list -> Ocsigen_extensions.extension2
@@ -292,8 +293,9 @@
   type userconf_info = { localfiles_root : string; }
   type parse_config =
       Ocsigen_extensions.virtual_hosts ->
-      Ocsigen_extensions.config_info -> parse_config_aux
-  and parse_config_user = Ocsigen_extensions.userconf_info -> parse_config
+      Ocsigen_extensions.config_info -> Ocsigen_extensions.parse_config_aux
+  and parse_config_user =
+      Ocsigen_extensions.userconf_info -> Ocsigen_extensions.parse_config
   and parse_config_aux =
       Ocsigen_lib.Url.path ->
       Ocsigen_extensions.parse_host ->

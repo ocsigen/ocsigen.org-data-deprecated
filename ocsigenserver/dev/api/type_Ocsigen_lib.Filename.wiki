@@ -13,6 +13,7 @@
   val temp_file : ?temp_dir:string -> string -> string -> string
   val open_temp_file :
     ?mode:open_flag list ->
+    ?perms:int ->
     ?temp_dir:string -> string -> string -> string * out_channel
   val get_temp_dir_name : unit -> string
   val set_temp_dir_name : string -> unit
