@@ -6,7 +6,7 @@
 
 ==@@id="2_Mobileapplications"@@~Mobile applications==
 
-<<pre id="VALinit_client_app" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|init~_client~_app>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|\\  <<span class="ocsforge_color_label"| app_name: >>string <<span class="ocsforge_color_delimiter"| -> >>\\  <<span class="ocsforge_color_label"| ?ssl: >>bool <<span class="ocsforge_color_delimiter"| -> >>\\  <<span class="ocsforge_color_label"| hostname: >>string <<span class="ocsforge_color_delimiter"| -> >>\\  <<span class="ocsforge_color_label"| ?port: >>int <<span class="ocsforge_color_delimiter"| -> >> <<span class="ocsforge_color_label"| full_path: >><<span class="ocsforge_color_uid"|Eliom_lib>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_uid"|Url>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|path>> <<span class="ocsforge_color_delimiter"| -> >> unit <<span class="ocsforge_color_delimiter"| -> >> unit>>>><<div class="odocwiki_info"|~Call this function if you want to be able to run your client side
+<<pre id="VALinit_client_app" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|init~_client~_app>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|\\  <<span class="ocsforge_color_label"| app_name: >>string <<span class="ocsforge_color_delimiter"| -> >>\\  <<span class="ocsforge_color_label"| ?ssl: >>bool <<span class="ocsforge_color_delimiter"| -> >>\\  <<span class="ocsforge_color_label"| hostname: >>string <<span class="ocsforge_color_delimiter"| -> >>\\  <<span class="ocsforge_color_label"| ?port: >>int <<span class="ocsforge_color_delimiter"| -> >> <<span class="ocsforge_color_label"| site_dir: >><<span class="ocsforge_color_uid"|Eliom_lib>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_uid"|Url>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|path>> <<span class="ocsforge_color_delimiter"| -> >> unit <<span class="ocsforge_color_delimiter"| -> >> unit>>>><<div class="odocwiki_info"|~Call this function if you want to be able to run your client side
     app before doing the first request~, that is~, when the client side
     app is not sent by the server~. ~This may be the case for example if
     you are developing a mobile app~. ~The parameters correspond to the
@@ -19,7 +19,7 @@
     file~, containing the full ~U~R~L of your server~.
 
 
-    <<span class="odocwiki_inlinecode"|app~_path>> ~(if given~) specifies the path that the application runs
+    <<span class="odocwiki_inlinecode"|site~_dir>> ~(if given~) specifies the path that the application runs
     under~. ~It should correspond to the ~<site~> tag of your server
     configuration~. ~Calls to server functions use this path~.
 >>
