@@ -18,6 +18,9 @@
     using some local sendmail program~.
 >>
 |
+|<<a_api subproject="server" | module Os_fcm_notif >>|<<div class="odocwiki_info"|~Send push notifications to ~Android and i~O~S mobile devices~.
+>>
+|
 |<<a_api subproject="server" | module Os_group >>|<<div class="odocwiki_info"|~Groups of users~.
 >>
 |
@@ -44,7 +47,6 @@
 |<<a_api subproject="server" | module Os_platform >>|<<div class="odocwiki_info"|~About device platform~.
 >>
 |
-|Os_push_notifications||
 |<<a_api subproject="server" | module Os_request_cache >>|<<div class="odocwiki_info"|~Caching request data to avoid doing the same computation several times
     during the same request~.
 >>
@@ -61,7 +63,6 @@
 |<<a_api subproject="server" | module Os_tips >>|<<div class="odocwiki_info"|~Tips for new users and new features~.
 >>
 |
-|Os_tools||
 |<<a_api subproject="server" | module Os_types >>|<<div class="odocwiki_info"|~Data types
 >>
 |
