@@ -24,7 +24,7 @@
   val copy : Lwt_bytes.t -> Lwt_bytes.t
   val fill : Lwt_bytes.t -> int -> int -> char -> unit
   external unsafe_fill : Lwt_bytes.t -> int -> int -> char -> unit
-    = "lwt_unix_fill_bytes" "noalloc"
+    = "lwt_unix_fill_bytes" [@@noalloc]
   val read : Lwt_unix.file_descr -> Lwt_bytes.t -> int -> int -> int Lwt.t
   val write : Lwt_unix.file_descr -> Lwt_bytes.t -> int -> int -> int Lwt.t
   val recv :
@@ -58,7 +58,7 @@
   val map_file :
     fd:Unix.file_descr ->
     ?pos:int64 -> shared:bool -> ?size:int -> unit -> Lwt_bytes.t
-  external mapped : Lwt_bytes.t -> bool = "lwt_unix_mapped" "noalloc"
+  external mapped : Lwt_bytes.t -> bool = "lwt_unix_mapped" [@@noalloc]
   type advice =
       MADV_NORMAL
     | MADV_RANDOM
