@@ -5,7 +5,7 @@
 
 ~This module controls the ``main~-loop~'~' of ~Lwt~.
 <<pre id="VALrun" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|run>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|'a <<a_api text="Lwt.t" | type Lwt.t >> <<span class="ocsforge_color_delimiter"| -> >> 'a>>>><<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|run t>> calls the ~Lwt scheduler repeatedly until <<span class="odocwiki_inlinecode"|t>> terminates~,
-      then returns the value returned by the thread~. ~It <<span class="odocwiki_inlinecode"|t>> fails with
+      then returns the value returned by the thread~. ~If <<span class="odocwiki_inlinecode"|t>> fails with
       an exception~, this exception is raised~.
 
 
