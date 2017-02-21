@@ -30,9 +30,8 @@
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Os_email"| module Os_email >> ||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Os_fcm_notif"| module Os_fcm_notif >> ||
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Os_handlers"| module Os_handlers >> |<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|connect~_handler ~(~) ~(~(login~, password~)~, keep~Me~Logged~In~)>> connects the user
-    with <<span class="odocwiki_inlinecode"|login>> and <<span class="odocwiki_inlinecode"|password>> and keeps the user logged in between different
-    session if <<span class="odocwiki_inlinecode"|keep~Me~Logged~In>> is set to <<span class="odocwiki_inlinecode"|true>>~.
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Os_handlers"| module Os_handlers >> |<<div class="odocwiki_info"|~This module contains pre~-defined handlers for connect~, disconnect~, sign up~,
+    add a new email~, etc~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Os_icons"| module Os_icons >> ||

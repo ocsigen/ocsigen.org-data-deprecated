@@ -11,9 +11,8 @@
 |<<a_api subproject="client" | module Os_date >>|<<div class="odocwiki_info"|~Type representing a local calendar~.
 >>
 |
-|<<a_api subproject="client" | module Os_handlers >>|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|connect~_handler ~(~) ~(~(login~, password~)~, keep~Me~Logged~In~)>> connects the user
-    with <<span class="odocwiki_inlinecode"|login>> and <<span class="odocwiki_inlinecode"|password>> and keeps the user logged in between different
-    session if <<span class="odocwiki_inlinecode"|keep~Me~Logged~In>> is set to <<span class="odocwiki_inlinecode"|true>>~.
+|<<a_api subproject="client" | module Os_handlers >>|<<div class="odocwiki_info"|~This module contains pre~-defined handlers for connect~, disconnect~, sign up~,
+    add a new email~, etc~.
 >>
 |
 |<<a_api subproject="client" | module Os_icons >>||

@@ -47,7 +47,11 @@
     a span~) and a submit button~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="connect_handler"| value Os_handlers.connect_handler >> ~[<<a_api subproject="client" | module Os_handlers >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="connect_handler"| value Os_handlers.connect_handler >> ~[<<a_api subproject="client" | module Os_handlers >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|connect~_handler ~(~) ~(~(login~, password~)~, keep~Me~Logged~In~)>> connects the user
+    with <<span class="odocwiki_inlinecode"|login>> and <<span class="odocwiki_inlinecode"|password>> and keeps the user logged in between different
+    session if <<span class="odocwiki_inlinecode"|keep~Me~Logged~In>> is set to <<span class="odocwiki_inlinecode"|true>>~.
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="connect_service"| value Os_services.connect_service >> ~[<<a_api subproject="client" | module Os_services >>~]|<<div class="odocwiki_info"|~A ~P~O~S~T service to connect a user with username and password~.
 >>
 |
