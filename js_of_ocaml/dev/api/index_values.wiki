@@ -191,11 +191,6 @@
 |@@class="odocwiki_index"@ @@<<a_api text="console"| value Firebug.console >> ~[<<a_api | module Firebug >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="contained_by"| value Dom.DocumentPosition.contained_by >> ~[<<a_api | module Dom.DocumentPosition >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="contains"| value Dom.DocumentPosition.contains >> ~[<<a_api | module Dom.DocumentPosition >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="convert"| value Deriving_Json.convert >> ~[<<a_api | module Deriving_Json >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|convert ~(t ~: ~'a t~) ~(from~_ ~: ~'a ~-~> ~'b~) ~(to~_ ~: ~'b ~-~> ~'a~)>>
-    generate a ~J~S~O~N parser~/printer for value of type <<span class="odocwiki_inlinecode"|~'b>> using the parser~/printer of type <<span class="odocwiki_inlinecode"|~'a>>
-    provided by <<span class="odocwiki_inlinecode"|t>>
->>
-|
 |@@class="odocwiki_index"@ @@<<a_api text="create"| value XmlHttpRequest.create >> ~[<<a_api | module XmlHttpRequest >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="create"| value Worker.create >> ~[<<a_api | module Worker >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="create"| value Jstable.create >> ~[<<a_api | module Jstable >>~]||
@@ -590,7 +585,6 @@
 |@@class="odocwiki_index"@ @@<<a_api text="form_elements"| value Form.form_elements >> ~[<<a_api | module Form >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="frame"| value Dom_html.CoerceTo.frame >> ~[<<a_api | module Dom_html.CoerceTo >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="frameset"| value Dom_html.CoerceTo.frameset >> ~[<<a_api | module Dom_html.CoerceTo >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="from_"| value Deriving_Json.Json_converter.from_ >> ~[<<a_api | module Deriving_Json.Json_converter >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="from_string"| value Deriving_Json.Json.from_string >> ~[<<a_api | module Deriving_Json.Json >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="from_string"| value Deriving_Json.from_string >> ~[<<a_api | module Deriving_Json >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|from~_string ~Json~.t~<ty~> s>> safely unmarshal the ~J~S~O~N <<span class="odocwiki_inlinecode"|s>> into an
     ~O~Caml value of type <<span class="odocwiki_inlinecode"|ty>>~.
@@ -724,9 +718,6 @@
 |@@class="odocwiki_index"@ @@<<a_api text="import_scripts"| value Worker.import_scripts >> ~[<<a_api | module Worker >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="info"| value Lwt_log_js.info >> ~[<<a_api | module Lwt_log_js >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="info_f"| value Lwt_log_js.info_f >> ~[<<a_api | module Lwt_log_js >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="init"| value Async_js.init >> ~[<<a_api | module Async_js >>~]|<<div class="odocwiki_info"|~Initialize the async scheduler
->>
-|
 |@@class="odocwiki_index"@ @@<<a_api text="init_lexer"| value Deriving_Json_lexer.init_lexer >> ~[<<a_api | module Deriving_Json_lexer >>~]|<<div class="odocwiki_info"|~Create a fresh lexbuf record~.
 >>
 |
@@ -1391,9 +1382,6 @@
 |
 |@@class="odocwiki_index"@ @@<<a_api text="set_onmessage"| value Worker.set_onmessage >> ~[<<a_api | module Worker >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="shift"| value Keycode.shift >> ~[<<a_api | module Keycode >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="sleep"| value Async_js.sleep >> ~[<<a_api | module Async_js >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|sleep d>> is a deferred which becomes determined in <<span class="odocwiki_inlinecode"|d>> seconds~.
->>
-|
 |@@class="odocwiki_index"@ @@<<a_api text="sleep"| value Lwt_js.sleep >> ~[<<a_api | module Lwt_js >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|sleep d>> is a threads which remain suspended for <<span class="odocwiki_inlinecode"|d>> seconds
       and then terminates~.
 >>
@@ -1447,7 +1435,6 @@
 |@@class="odocwiki_index"@ @@<<a_api text="symbol"| value Dom_svg.CoerceTo.symbol >> ~[<<a_api | module Dom_svg.CoerceTo >>~]||
 |@@ @style="tet-align: left;"@@\\T|
 |@@class="odocwiki_index"@ @@<<a_api text="t"| value Deriving_Json.Json_min''.t >> ~[<<a_api | module Deriving_Json.Json_min'' >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="t"| value Deriving_Json.Json_converter.t >> ~[<<a_api | module Deriving_Json.Json_converter >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="t"| value Deriving_Json.Json.t >> ~[<<a_api | module Deriving_Json.Json >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="tab"| value Keycode.tab >> ~[<<a_api | module Keycode >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="table"| value Dom_html.CoerceTo.table >> ~[<<a_api | module Dom_html.CoerceTo >>~]||
@@ -1472,7 +1459,6 @@
 |@@class="odocwiki_index"@ @@<<a_api text="timeupdates"| value Lwt_js_events.timeupdates >> ~[<<a_api | module Lwt_js_events >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="title"| value Dom_svg.CoerceTo.title >> ~[<<a_api | module Dom_svg.CoerceTo >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="title"| value Dom_html.CoerceTo.title >> ~[<<a_api | module Dom_html.CoerceTo >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="to_"| value Deriving_Json.Json_converter.to_ >> ~[<<a_api | module Deriving_Json.Json_converter >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="to_array"| value Js.to_array >> ~[<<a_api | module Js >>~]|<<div class="odocwiki_info"|~Conversion of arrays from ~Javascript to ~O~Caml~.
 >>
 |
@@ -1615,10 +1601,6 @@
 >>
 |
 |@@ @style="tet-align: left;"@@\\Y|
-|@@class="odocwiki_index"@ @@<<a_api text="yield"| value Async_js.yield >> ~[<<a_api | module Async_js >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|yield ~(~)>> returns a deferred that becomes determined after the current cycle
-    completes~.
->>
-|
 |@@class="odocwiki_index"@ @@<<a_api text="yield"| value Lwt_js.yield >> ~[<<a_api | module Lwt_js >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|yield ~(~)>> is a threads which suspends itself and then resumes
       as soon as possible and terminates~.
 >>

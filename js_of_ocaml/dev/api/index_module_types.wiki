@@ -4,9 +4,6 @@
 |@@class="odocwiki_index"@ @@<<a_api text="Json"| module type Deriving_Json.Json >> ~[<<a_api | module Deriving_Json >>~]|<<div class="odocwiki_info"|~The signature of the ~J~S~O~N class~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api text="Json_converter"| module type Deriving_Json.Json_converter >> ~[<<a_api | module Deriving_Json >>~]|<<div class="odocwiki_info"|~The signature of the ~Converter class~.
->>
-|
 |@@class="odocwiki_index"@ @@<<a_api text="Json_min"| module type Deriving_Json.Json_min >> ~[<<a_api | module Deriving_Json >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="Json_min'"| module type Deriving_Json.Json_min' >> ~[<<a_api | module Deriving_Json >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="Json_min''"| module type Deriving_Json.Json_min'' >> ~[<<a_api | module Deriving_Json >>~]||

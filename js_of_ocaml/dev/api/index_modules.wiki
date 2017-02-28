@@ -2,10 +2,6 @@
 
 |@@ @style="tet-align: left;"@@\\A|
 |@@class="odocwiki_index"@ @@<<a_api text="Angle"| module CSS.Angle >> ~[<<a_api | module CSS >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="Async_js"| module Async_js >> |<<div class="odocwiki_info"|~This is the javascript equivalent of ~Async~_unix~.~Scheduler~, ie a reimplementation of
-    the async scheduler for javascript ~(at least the part of it that makes sense~)~.
->>
-|
 |@@ @style="tet-align: left;"@@\\B|
 |@@class="odocwiki_index"@ @@<<a_api text="Bigstring"| module Typed_array.Bigstring >> ~[<<a_api | module Typed_array >>~]||
 |@@ @style="tet-align: left;"@@\\C|
@@ -20,9 +16,6 @@
 |@@class="odocwiki_index"@ @@<<a_api text="CoerceTo"| module Dom_html.CoerceTo >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="CoerceTo"| module Dom.CoerceTo >> ~[<<a_api | module Dom >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="Color"| module CSS.Color >> ~[<<a_api | module CSS >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="Convert"| module Deriving_Json.Convert >> ~[<<a_api | module Deriving_Json >>~]|<<div class="odocwiki_info"|~Generate a ~J~S~O~N class from a ~Converter
->>
-|
 |@@class="odocwiki_index"@ @@<<a_api text="Current"| module Url.Current >> ~[<<a_api | module Url >>~]|<<div class="odocwiki_info"|~This module can be used to handle the ~Url associated to the current
     document~.
 >>
