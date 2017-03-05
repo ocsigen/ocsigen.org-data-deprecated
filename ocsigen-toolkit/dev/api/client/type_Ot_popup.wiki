@@ -11,6 +11,7 @@
     ?confirmation_onclose:(unit -> bool Lwt.t) ->
     ?onclose:(unit -> unit Lwt.t) ->
     ?disable_background:bool ->
+    ?close_on_background_click:bool ->
     ?setup_form:[ `OnPopup | `OnSignal of bool React.S.t ] ->
     ?ios_scroll_pos_fix:bool ->
     ((unit -> unit Lwt.t) ->
