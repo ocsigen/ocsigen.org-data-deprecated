@@ -533,6 +533,18 @@
       method nodeName : Js.js_string Js.t Js.readonly_prop
       method nodeType : Dom.nodeType Js.readonly_prop
       method nodeValue : Js.js_string Js.t Js.opt Js.readonly_prop
+      method onanimationcancel :
+        ('a Js.t, Dom_html.animationEvent Js.t) Dom_html.event_listener
+        Js.writeonly_prop
+      method onanimationend :
+        ('a Js.t, Dom_html.animationEvent Js.t) Dom_html.event_listener
+        Js.writeonly_prop
+      method onanimationiteration :
+        ('a Js.t, Dom_html.animationEvent Js.t) Dom_html.event_listener
+        Js.writeonly_prop
+      method onanimationstart :
+        ('a Js.t, Dom_html.animationEvent Js.t) Dom_html.event_listener
+        Js.writeonly_prop
       method onclick :
         ('a Js.t, Dom_html.mouseEvent Js.t) Dom_html.event_listener
         Js.writeonly_prop
@@ -863,6 +875,18 @@
       method nodeName : Js.js_string Js.t Js.readonly_prop
       method nodeType : Dom.nodeType Js.readonly_prop
       method nodeValue : Js.js_string Js.t Js.opt Js.readonly_prop
+      method onanimationcancel :
+        ('a Js.t, Dom_html.animationEvent Js.t) Dom_html.event_listener
+        Js.writeonly_prop
+      method onanimationend :
+        ('a Js.t, Dom_html.animationEvent Js.t) Dom_html.event_listener
+        Js.writeonly_prop
+      method onanimationiteration :
+        ('a Js.t, Dom_html.animationEvent Js.t) Dom_html.event_listener
+        Js.writeonly_prop
+      method onanimationstart :
+        ('a Js.t, Dom_html.animationEvent Js.t) Dom_html.event_listener
+        Js.writeonly_prop
       method onclick :
         ('a Js.t, Dom_html.mouseEvent Js.t) Dom_html.event_listener
         Js.writeonly_prop
@@ -1040,6 +1064,18 @@
       method firstChild : Dom_svg.elementInstance Js.t Js.readonly_prop
       method lastChild : Dom_svg.elementInstance Js.t Js.readonly_prop
       method nextSibling : Dom_svg.elementInstance Js.t Js.readonly_prop
+      method onanimationcancel :
+        ('a Js.t, Dom_html.animationEvent Js.t) Dom_html.event_listener
+        Js.writeonly_prop
+      method onanimationend :
+        ('a Js.t, Dom_html.animationEvent Js.t) Dom_html.event_listener
+        Js.writeonly_prop
+      method onanimationiteration :
+        ('a Js.t, Dom_html.animationEvent Js.t) Dom_html.event_listener
+        Js.writeonly_prop
+      method onanimationstart :
+        ('a Js.t, Dom_html.animationEvent Js.t) Dom_html.event_listener
+        Js.writeonly_prop
       method onclick :
         ('a Js.t, Dom_html.mouseEvent Js.t) Dom_html.event_listener
         Js.writeonly_prop
@@ -1914,6 +1950,18 @@
       method nodeName : Js.js_string Js.t Js.readonly_prop
       method nodeType : Dom.nodeType Js.readonly_prop
       method nodeValue : Js.js_string Js.t Js.opt Js.readonly_prop
+      method onanimationcancel :
+        ('a Js.t, Dom_html.animationEvent Js.t) Dom_html.event_listener
+        Js.writeonly_prop
+      method onanimationend :
+        ('a Js.t, Dom_html.animationEvent Js.t) Dom_html.event_listener
+        Js.writeonly_prop
+      method onanimationiteration :
+        ('a Js.t, Dom_html.animationEvent Js.t) Dom_html.event_listener
+        Js.writeonly_prop
+      method onanimationstart :
+        ('a Js.t, Dom_html.animationEvent Js.t) Dom_html.event_listener
+        Js.writeonly_prop
       method onclick :
         ('a Js.t, Dom_html.mouseEvent Js.t) Dom_html.event_listener
         Js.writeonly_prop
@@ -2216,6 +2264,18 @@
       method nodeName : Js.js_string Js.t Js.readonly_prop
       method nodeType : Dom.nodeType Js.readonly_prop
       method nodeValue : Js.js_string Js.t Js.opt Js.readonly_prop
+      method onanimationcancel :
+        ('a Js.t, Dom_html.animationEvent Js.t) Dom_html.event_listener
+        Js.writeonly_prop
+      method onanimationend :
+        ('a Js.t, Dom_html.animationEvent Js.t) Dom_html.event_listener
+        Js.writeonly_prop
+      method onanimationiteration :
+        ('a Js.t, Dom_html.animationEvent Js.t) Dom_html.event_listener
+        Js.writeonly_prop
+      method onanimationstart :
+        ('a Js.t, Dom_html.animationEvent Js.t) Dom_html.event_listener
+        Js.writeonly_prop
       method onclick :
         ('a Js.t, Dom_html.mouseEvent Js.t) Dom_html.event_listener
         Js.writeonly_prop
@@ -2354,6 +2414,18 @@
       method nodeName : Js.js_string Js.t Js.readonly_prop
       method nodeType : Dom.nodeType Js.readonly_prop
       method nodeValue : Js.js_string Js.t Js.opt Js.readonly_prop
+      method onanimationcancel :
+        ('a Js.t, Dom_html.animationEvent Js.t) Dom_html.event_listener
+        Js.writeonly_prop
+      method onanimationend :
+        ('a Js.t, Dom_html.animationEvent Js.t) Dom_html.event_listener
+        Js.writeonly_prop
+      method onanimationiteration :
+        ('a Js.t, Dom_html.animationEvent Js.t) Dom_html.event_listener
+        Js.writeonly_prop
+      method onanimationstart :
+        ('a Js.t, Dom_html.animationEvent Js.t) Dom_html.event_listener
+        Js.writeonly_prop
       method onclick :
         ('a Js.t, Dom_html.mouseEvent Js.t) Dom_html.event_listener
         Js.writeonly_prop
@@ -2501,6 +2573,18 @@
       method nodeName : Js.js_string Js.t Js.readonly_prop
       method nodeType : Dom.nodeType Js.readonly_prop
       method nodeValue : Js.js_string Js.t Js.opt Js.readonly_prop
+      method onanimationcancel :
+        ('a Js.t, Dom_html.animationEvent Js.t) Dom_html.event_listener
+        Js.writeonly_prop
+      method onanimationend :
+        ('a Js.t, Dom_html.animationEvent Js.t) Dom_html.event_listener
+        Js.writeonly_prop
+      method onanimationiteration :
+        ('a Js.t, Dom_html.animationEvent Js.t) Dom_html.event_listener
+        Js.writeonly_prop
+      method onanimationstart :
+        ('a Js.t, Dom_html.animationEvent Js.t) Dom_html.event_listener
+        Js.writeonly_prop
       method onclick :
         ('a Js.t, Dom_html.mouseEvent Js.t) Dom_html.event_listener
         Js.writeonly_prop
@@ -2645,6 +2729,18 @@
       method nodeName : Js.js_string Js.t Js.readonly_prop
       method nodeType : Dom.nodeType Js.readonly_prop
       method nodeValue : Js.js_string Js.t Js.opt Js.readonly_prop
+      method onanimationcancel :
+        ('a Js.t, Dom_html.animationEvent Js.t) Dom_html.event_listener
+        Js.writeonly_prop
+      method onanimationend :
+        ('a Js.t, Dom_html.animationEvent Js.t) Dom_html.event_listener
+        Js.writeonly_prop
+      method onanimationiteration :
+        ('a Js.t, Dom_html.animationEvent Js.t) Dom_html.event_listener
+        Js.writeonly_prop
+      method onanimationstart :
+        ('a Js.t, Dom_html.animationEvent Js.t) Dom_html.event_listener
+        Js.writeonly_prop
       method onclick :
         ('a Js.t, Dom_html.mouseEvent Js.t) Dom_html.event_listener
         Js.writeonly_prop
@@ -2788,6 +2884,18 @@
       method nodeName : Js.js_string Js.t Js.readonly_prop
       method nodeType : Dom.nodeType Js.readonly_prop
       method nodeValue : Js.js_string Js.t Js.opt Js.readonly_prop
+      method onanimationcancel :
+        ('a Js.t, Dom_html.animationEvent Js.t) Dom_html.event_listener
+        Js.writeonly_prop
+      method onanimationend :
+        ('a Js.t, Dom_html.animationEvent Js.t) Dom_html.event_listener
+        Js.writeonly_prop
+      method onanimationiteration :
+        ('a Js.t, Dom_html.animationEvent Js.t) Dom_html.event_listener
+        Js.writeonly_prop
+      method onanimationstart :
+        ('a Js.t, Dom_html.animationEvent Js.t) Dom_html.event_listener
+        Js.writeonly_prop
       method onclick :
         ('a Js.t, Dom_html.mouseEvent Js.t) Dom_html.event_listener
         Js.writeonly_prop
@@ -2931,6 +3039,18 @@
       method nodeName : Js.js_string Js.t Js.readonly_prop
       method nodeType : Dom.nodeType Js.readonly_prop
       method nodeValue : Js.js_string Js.t Js.opt Js.readonly_prop
+      method onanimationcancel :
+        ('a Js.t, Dom_html.animationEvent Js.t) Dom_html.event_listener
+        Js.writeonly_prop
+      method onanimationend :
+        ('a Js.t, Dom_html.animationEvent Js.t) Dom_html.event_listener
+        Js.writeonly_prop
+      method onanimationiteration :
+        ('a Js.t, Dom_html.animationEvent Js.t) Dom_html.event_listener
+        Js.writeonly_prop
+      method onanimationstart :
+        ('a Js.t, Dom_html.animationEvent Js.t) Dom_html.event_listener
+        Js.writeonly_prop
       method onclick :
         ('a Js.t, Dom_html.mouseEvent Js.t) Dom_html.event_listener
         Js.writeonly_prop

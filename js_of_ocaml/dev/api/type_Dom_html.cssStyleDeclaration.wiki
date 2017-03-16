@@ -1,4 +1,13 @@
 <<code language="ocaml" | object
+  method animation : Js.js_string Js.t Js.prop
+  method animationDelay : Js.js_string Js.t Js.prop
+  method animationDirection : Js.js_string Js.t Js.prop
+  method animationDuration : Js.js_string Js.t Js.prop
+  method animationFillMode : Js.js_string Js.t Js.prop
+  method animationIterationCount : Js.js_string Js.t Js.prop
+  method animationName : Js.js_string Js.t Js.prop
+  method animationPlayState : Js.js_string Js.t Js.prop
+  method animationTimingFunction : Js.js_string Js.t Js.prop
   method background : Js.js_string Js.t Js.prop
   method backgroundAttachment : Js.js_string Js.t Js.prop
   method backgroundColor : Js.js_string Js.t Js.prop

@@ -1,4 +1,16 @@
 <<code language="ocaml" | object ('b)
+  method onanimationcancel :
+    ('b Js.t, Dom_html.animationEvent Js.t) Dom_html.event_listener
+    Js.writeonly_prop
+  method onanimationend :
+    ('b Js.t, Dom_html.animationEvent Js.t) Dom_html.event_listener
+    Js.writeonly_prop
+  method onanimationiteration :
+    ('b Js.t, Dom_html.animationEvent Js.t) Dom_html.event_listener
+    Js.writeonly_prop
+  method onanimationstart :
+    ('b Js.t, Dom_html.animationEvent Js.t) Dom_html.event_listener
+    Js.writeonly_prop
   method onclick :
     ('b Js.t, Dom_html.mouseEvent Js.t) Dom_html.event_listener
     Js.writeonly_prop

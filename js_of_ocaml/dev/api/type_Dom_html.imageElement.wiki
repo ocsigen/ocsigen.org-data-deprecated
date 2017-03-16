@@ -56,6 +56,18 @@
   method offsetWidth : int Js.readonly_prop
   method onabort :
     ('a Js.t, Dom_html.event Js.t) Dom_html.event_listener Js.prop
+  method onanimationcancel :
+    ('a Js.t, Dom_html.animationEvent Js.t) Dom_html.event_listener
+    Js.writeonly_prop
+  method onanimationend :
+    ('a Js.t, Dom_html.animationEvent Js.t) Dom_html.event_listener
+    Js.writeonly_prop
+  method onanimationiteration :
+    ('a Js.t, Dom_html.animationEvent Js.t) Dom_html.event_listener
+    Js.writeonly_prop
+  method onanimationstart :
+    ('a Js.t, Dom_html.animationEvent Js.t) Dom_html.event_listener
+    Js.writeonly_prop
   method onclick :
     ('a Js.t, Dom_html.mouseEvent Js.t) Dom_html.event_listener
     Js.writeonly_prop

@@ -28,6 +28,14 @@
   method location : Dom_html.location Js.t Js.readonly_prop
   method name : Js.js_string Js.t Js.prop
   method navigator : Dom_html.navigator Js.t Js.readonly_prop
+  method onanimationcancel :
+    ('a Js.t, animationEvent Js.t) event_listener Js.writeonly_prop
+  method onanimationend :
+    ('a Js.t, animationEvent Js.t) event_listener Js.writeonly_prop
+  method onanimationiteration :
+    ('a Js.t, animationEvent Js.t) event_listener Js.writeonly_prop
+  method onanimationstart :
+    ('a Js.t, animationEvent Js.t) event_listener Js.writeonly_prop
   method onbeforeunload :
     (Dom_html.window Js.t, Dom_html.event Js.t) Dom_html.event_listener
     Js.prop

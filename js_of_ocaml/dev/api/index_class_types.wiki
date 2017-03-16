@@ -31,6 +31,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="animatedString"| class type Dom_svg.animatedString >> ~[<<a_api | module Dom_svg >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="animatedTransformList"| class type Dom_svg.animatedTransformList >> ~[<<a_api | module Dom_svg >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="animationElement"| class type Dom_svg.animationElement >> ~[<<a_api | module Dom_svg >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="animationEvent"| class type Dom_html.animationEvent >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="applicationCache"| class type Dom_html.applicationCache >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="areaElement"| class type Dom_html.areaElement >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="arrayBuffer"| class type Typed_array.arrayBuffer >> ~[<<a_api | module Typed_array >>~]||

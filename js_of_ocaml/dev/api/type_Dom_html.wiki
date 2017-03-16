@@ -1,6 +1,15 @@
 <<code language="ocaml" | sig
   class type cssStyleDeclaration =
     object
+      method animation : Js.js_string Js.t Js.prop
+      method animationDelay : Js.js_string Js.t Js.prop
+      method animationDirection : Js.js_string Js.t Js.prop
+      method animationDuration : Js.js_string Js.t Js.prop
+      method animationFillMode : Js.js_string Js.t Js.prop
+      method animationIterationCount : Js.js_string Js.t Js.prop
+      method animationName : Js.js_string Js.t Js.prop
+      method animationPlayState : Js.js_string Js.t Js.prop
+      method animationTimingFunction : Js.js_string Js.t Js.prop
       method background : Js.js_string Js.t Js.prop
       method backgroundAttachment : Js.js_string Js.t Js.prop
       method backgroundColor : Js.js_string Js.t Js.prop
@@ -287,6 +296,18 @@
     end
   and eventTarget =
     object ('a)
+      method onanimationcancel :
+        ('a Js.t, Dom_html.animationEvent Js.t) Dom_html.event_listener
+        Js.writeonly_prop
+      method onanimationend :
+        ('a Js.t, Dom_html.animationEvent Js.t) Dom_html.event_listener
+        Js.writeonly_prop
+      method onanimationiteration :
+        ('a Js.t, Dom_html.animationEvent Js.t) Dom_html.event_listener
+        Js.writeonly_prop
+      method onanimationstart :
+        ('a Js.t, Dom_html.animationEvent Js.t) Dom_html.event_listener
+        Js.writeonly_prop
       method onclick :
         ('a Js.t, Dom_html.mouseEvent Js.t) Dom_html.event_listener
         Js.writeonly_prop
@@ -380,6 +401,16 @@
       method srcElement : element Js.t Js.opt Js.readonly_prop
       method target : element Js.t Js.opt Js.readonly_prop
     end
+  and animationEvent =
+    object
+      method _type : Js.js_string Js.t Js.readonly_prop
+      method animationName : Js.js_string Js.t Js.readonly_prop
+      method currentTarget : element Js.t Js.opt Js.readonly_prop
+      method elapsedTime : float Js.readonly_prop
+      method pseudoElement : Js.js_string Js.t Js.readonly_prop
+      method srcElement : element Js.t Js.opt Js.readonly_prop
+      method target : element Js.t Js.opt Js.readonly_prop
+    end
   and nodeSelector =
     object
       method querySelector :
@@ -452,6 +483,18 @@
       method offsetParent : Dom_html.element Js.t Js.opt Js.readonly_prop
       method offsetTop : int Js.readonly_prop
       method offsetWidth : int Js.readonly_prop
+      method onanimationcancel :
+        ('a Js.t, Dom_html.animationEvent Js.t) event_listener
+        Js.writeonly_prop
+      method onanimationend :
+        ('a Js.t, Dom_html.animationEvent Js.t) event_listener
+        Js.writeonly_prop
+      method onanimationiteration :
+        ('a Js.t, Dom_html.animationEvent Js.t) event_listener
+        Js.writeonly_prop
+      method onanimationstart :
+        ('a Js.t, Dom_html.animationEvent Js.t) event_listener
+        Js.writeonly_prop
       method onclick :
         ('a Js.t, Dom_html.mouseEvent Js.t) event_listener Js.writeonly_prop
       method ondblclick :
@@ -599,6 +642,14 @@
       method offsetParent : element Js.t Js.opt Js.readonly_prop
       method offsetTop : int Js.readonly_prop
       method offsetWidth : int Js.readonly_prop
+      method onanimationcancel :
+        ('a Js.t, animationEvent Js.t) event_listener Js.writeonly_prop
+      method onanimationend :
+        ('a Js.t, animationEvent Js.t) event_listener Js.writeonly_prop
+      method onanimationiteration :
+        ('a Js.t, animationEvent Js.t) event_listener Js.writeonly_prop
+      method onanimationstart :
+        ('a Js.t, animationEvent Js.t) event_listener Js.writeonly_prop
       method onclick :
         ('a Js.t, mouseEvent Js.t) event_listener Js.writeonly_prop
       method ondblclick :
@@ -729,6 +780,14 @@
       method offsetParent : element Js.t Js.opt Js.readonly_prop
       method offsetTop : int Js.readonly_prop
       method offsetWidth : int Js.readonly_prop
+      method onanimationcancel :
+        ('a Js.t, animationEvent Js.t) event_listener Js.writeonly_prop
+      method onanimationend :
+        ('a Js.t, animationEvent Js.t) event_listener Js.writeonly_prop
+      method onanimationiteration :
+        ('a Js.t, animationEvent Js.t) event_listener Js.writeonly_prop
+      method onanimationstart :
+        ('a Js.t, animationEvent Js.t) event_listener Js.writeonly_prop
       method onclick :
         ('a Js.t, mouseEvent Js.t) event_listener Js.writeonly_prop
       method ondblclick :
@@ -854,6 +913,14 @@
       method offsetParent : element Js.t Js.opt Js.readonly_prop
       method offsetTop : int Js.readonly_prop
       method offsetWidth : int Js.readonly_prop
+      method onanimationcancel :
+        ('a Js.t, animationEvent Js.t) event_listener Js.writeonly_prop
+      method onanimationend :
+        ('a Js.t, animationEvent Js.t) event_listener Js.writeonly_prop
+      method onanimationiteration :
+        ('a Js.t, animationEvent Js.t) event_listener Js.writeonly_prop
+      method onanimationstart :
+        ('a Js.t, animationEvent Js.t) event_listener Js.writeonly_prop
       method onclick :
         ('a Js.t, mouseEvent Js.t) event_listener Js.writeonly_prop
       method ondblclick :
@@ -980,6 +1047,14 @@
       method offsetParent : element Js.t Js.opt Js.readonly_prop
       method offsetTop : int Js.readonly_prop
       method offsetWidth : int Js.readonly_prop
+      method onanimationcancel :
+        ('a Js.t, animationEvent Js.t) event_listener Js.writeonly_prop
+      method onanimationend :
+        ('a Js.t, animationEvent Js.t) event_listener Js.writeonly_prop
+      method onanimationiteration :
+        ('a Js.t, animationEvent Js.t) event_listener Js.writeonly_prop
+      method onanimationstart :
+        ('a Js.t, animationEvent Js.t) event_listener Js.writeonly_prop
       method onclick :
         ('a Js.t, mouseEvent Js.t) event_listener Js.writeonly_prop
       method ondblclick :
@@ -1104,6 +1179,14 @@
       method offsetParent : element Js.t Js.opt Js.readonly_prop
       method offsetTop : int Js.readonly_prop
       method offsetWidth : int Js.readonly_prop
+      method onanimationcancel :
+        ('a Js.t, animationEvent Js.t) event_listener Js.writeonly_prop
+      method onanimationend :
+        ('a Js.t, animationEvent Js.t) event_listener Js.writeonly_prop
+      method onanimationiteration :
+        ('a Js.t, animationEvent Js.t) event_listener Js.writeonly_prop
+      method onanimationstart :
+        ('a Js.t, animationEvent Js.t) event_listener Js.writeonly_prop
       method onclick :
         ('a Js.t, mouseEvent Js.t) event_listener Js.writeonly_prop
       method ondblclick :
@@ -1230,6 +1313,14 @@
       method offsetParent : element Js.t Js.opt Js.readonly_prop
       method offsetTop : int Js.readonly_prop
       method offsetWidth : int Js.readonly_prop
+      method onanimationcancel :
+        ('a Js.t, animationEvent Js.t) event_listener Js.writeonly_prop
+      method onanimationend :
+        ('a Js.t, animationEvent Js.t) event_listener Js.writeonly_prop
+      method onanimationiteration :
+        ('a Js.t, animationEvent Js.t) event_listener Js.writeonly_prop
+      method onanimationstart :
+        ('a Js.t, animationEvent Js.t) event_listener Js.writeonly_prop
       method onclick :
         ('a Js.t, mouseEvent Js.t) event_listener Js.writeonly_prop
       method ondblclick :
@@ -1360,6 +1451,14 @@
       method offsetParent : element Js.t Js.opt Js.readonly_prop
       method offsetTop : int Js.readonly_prop
       method offsetWidth : int Js.readonly_prop
+      method onanimationcancel :
+        ('a Js.t, animationEvent Js.t) event_listener Js.writeonly_prop
+      method onanimationend :
+        ('a Js.t, animationEvent Js.t) event_listener Js.writeonly_prop
+      method onanimationiteration :
+        ('a Js.t, animationEvent Js.t) event_listener Js.writeonly_prop
+      method onanimationstart :
+        ('a Js.t, animationEvent Js.t) event_listener Js.writeonly_prop
       method onclick :
         ('a Js.t, mouseEvent Js.t) event_listener Js.writeonly_prop
       method ondblclick :
@@ -1490,6 +1589,14 @@
       method offsetParent : element Js.t Js.opt Js.readonly_prop
       method offsetTop : int Js.readonly_prop
       method offsetWidth : int Js.readonly_prop
+      method onanimationcancel :
+        ('a Js.t, animationEvent Js.t) event_listener Js.writeonly_prop
+      method onanimationend :
+        ('a Js.t, animationEvent Js.t) event_listener Js.writeonly_prop
+      method onanimationiteration :
+        ('a Js.t, animationEvent Js.t) event_listener Js.writeonly_prop
+      method onanimationstart :
+        ('a Js.t, animationEvent Js.t) event_listener Js.writeonly_prop
       method onclick :
         ('a Js.t, mouseEvent Js.t) event_listener Js.writeonly_prop
       method ondblclick :
@@ -1617,6 +1724,14 @@
       method offsetParent : element Js.t Js.opt Js.readonly_prop
       method offsetTop : int Js.readonly_prop
       method offsetWidth : int Js.readonly_prop
+      method onanimationcancel :
+        ('a Js.t, animationEvent Js.t) event_listener Js.writeonly_prop
+      method onanimationend :
+        ('a Js.t, animationEvent Js.t) event_listener Js.writeonly_prop
+      method onanimationiteration :
+        ('a Js.t, animationEvent Js.t) event_listener Js.writeonly_prop
+      method onanimationstart :
+        ('a Js.t, animationEvent Js.t) event_listener Js.writeonly_prop
       method onclick :
         ('a Js.t, mouseEvent Js.t) event_listener Js.writeonly_prop
       method ondblclick :
@@ -1753,6 +1868,18 @@
       method offsetParent : Dom_html.element Js.t Js.opt Js.readonly_prop
       method offsetTop : int Js.readonly_prop
       method offsetWidth : int Js.readonly_prop
+      method onanimationcancel :
+        ('a Js.t, Dom_html.animationEvent Js.t) Dom_html.event_listener
+        Js.writeonly_prop
+      method onanimationend :
+        ('a Js.t, Dom_html.animationEvent Js.t) Dom_html.event_listener
+        Js.writeonly_prop
+      method onanimationiteration :
+        ('a Js.t, Dom_html.animationEvent Js.t) Dom_html.event_listener
+        Js.writeonly_prop
+      method onanimationstart :
+        ('a Js.t, Dom_html.animationEvent Js.t) Dom_html.event_listener
+        Js.writeonly_prop
       method onchange :
         ('a Js.t, Dom_html.event Js.t) Dom_html.event_listener Js.prop
       method onclick :
@@ -1921,6 +2048,18 @@
       method offsetParent : Dom_html.element Js.t Js.opt Js.readonly_prop
       method offsetTop : int Js.readonly_prop
       method offsetWidth : int Js.readonly_prop
+      method onanimationcancel :
+        ('a Js.t, Dom_html.animationEvent Js.t) Dom_html.event_listener
+        Js.writeonly_prop
+      method onanimationend :
+        ('a Js.t, Dom_html.animationEvent Js.t) Dom_html.event_listener
+        Js.writeonly_prop
+      method onanimationiteration :
+        ('a Js.t, Dom_html.animationEvent Js.t) Dom_html.event_listener
+        Js.writeonly_prop
+      method onanimationstart :
+        ('a Js.t, Dom_html.animationEvent Js.t) Dom_html.event_listener
+        Js.writeonly_prop
       method onblur :
         ('a Js.t, Dom_html.event Js.t) Dom_html.event_listener Js.prop
       method onchange :
@@ -2093,6 +2232,18 @@
       method offsetParent : Dom_html.element Js.t Js.opt Js.readonly_prop
       method offsetTop : int Js.readonly_prop
       method offsetWidth : int Js.readonly_prop
+      method onanimationcancel :
+        ('a Js.t, Dom_html.animationEvent Js.t) Dom_html.event_listener
+        Js.writeonly_prop
+      method onanimationend :
+        ('a Js.t, Dom_html.animationEvent Js.t) Dom_html.event_listener
+        Js.writeonly_prop
+      method onanimationiteration :
+        ('a Js.t, Dom_html.animationEvent Js.t) Dom_html.event_listener
+        Js.writeonly_prop
+      method onanimationstart :
+        ('a Js.t, Dom_html.animationEvent Js.t) Dom_html.event_listener
+        Js.writeonly_prop
       method onblur :
         ('a Js.t, Dom_html.event Js.t) Dom_html.event_listener Js.prop
       method onchange :
@@ -2259,6 +2410,14 @@
       method offsetParent : element Js.t Js.opt Js.readonly_prop
       method offsetTop : int Js.readonly_prop
       method offsetWidth : int Js.readonly_prop
+      method onanimationcancel :
+        ('a Js.t, animationEvent Js.t) event_listener Js.writeonly_prop
+      method onanimationend :
+        ('a Js.t, animationEvent Js.t) event_listener Js.writeonly_prop
+      method onanimationiteration :
+        ('a Js.t, animationEvent Js.t) event_listener Js.writeonly_prop
+      method onanimationstart :
+        ('a Js.t, animationEvent Js.t) event_listener Js.writeonly_prop
       method onclick :
         ('a Js.t, mouseEvent Js.t) event_listener Js.writeonly_prop
       method ondblclick :
@@ -2386,6 +2545,14 @@
       method offsetParent : element Js.t Js.opt Js.readonly_prop
       method offsetTop : int Js.readonly_prop
       method offsetWidth : int Js.readonly_prop
+      method onanimationcancel :
+        ('a Js.t, animationEvent Js.t) event_listener Js.writeonly_prop
+      method onanimationend :
+        ('a Js.t, animationEvent Js.t) event_listener Js.writeonly_prop
+      method onanimationiteration :
+        ('a Js.t, animationEvent Js.t) event_listener Js.writeonly_prop
+      method onanimationstart :
+        ('a Js.t, animationEvent Js.t) event_listener Js.writeonly_prop
       method onclick :
         ('a Js.t, mouseEvent Js.t) event_listener Js.writeonly_prop
       method ondblclick :
@@ -2509,6 +2676,14 @@
       method offsetParent : element Js.t Js.opt Js.readonly_prop
       method offsetTop : int Js.readonly_prop
       method offsetWidth : int Js.readonly_prop
+      method onanimationcancel :
+        ('a Js.t, animationEvent Js.t) event_listener Js.writeonly_prop
+      method onanimationend :
+        ('a Js.t, animationEvent Js.t) event_listener Js.writeonly_prop
+      method onanimationiteration :
+        ('a Js.t, animationEvent Js.t) event_listener Js.writeonly_prop
+      method onanimationstart :
+        ('a Js.t, animationEvent Js.t) event_listener Js.writeonly_prop
       method onclick :
         ('a Js.t, mouseEvent Js.t) event_listener Js.writeonly_prop
       method ondblclick :
@@ -2633,6 +2808,14 @@
       method offsetParent : element Js.t Js.opt Js.readonly_prop
       method offsetTop : int Js.readonly_prop
       method offsetWidth : int Js.readonly_prop
+      method onanimationcancel :
+        ('a Js.t, animationEvent Js.t) event_listener Js.writeonly_prop
+      method onanimationend :
+        ('a Js.t, animationEvent Js.t) event_listener Js.writeonly_prop
+      method onanimationiteration :
+        ('a Js.t, animationEvent Js.t) event_listener Js.writeonly_prop
+      method onanimationstart :
+        ('a Js.t, animationEvent Js.t) event_listener Js.writeonly_prop
       method onclick :
         ('a Js.t, mouseEvent Js.t) event_listener Js.writeonly_prop
       method ondblclick :
@@ -2763,6 +2946,14 @@
       method offsetParent : element Js.t Js.opt Js.readonly_prop
       method offsetTop : int Js.readonly_prop
       method offsetWidth : int Js.readonly_prop
+      method onanimationcancel :
+        ('a Js.t, animationEvent Js.t) event_listener Js.writeonly_prop
+      method onanimationend :
+        ('a Js.t, animationEvent Js.t) event_listener Js.writeonly_prop
+      method onanimationiteration :
+        ('a Js.t, animationEvent Js.t) event_listener Js.writeonly_prop
+      method onanimationstart :
+        ('a Js.t, animationEvent Js.t) event_listener Js.writeonly_prop
       method onclick :
         ('a Js.t, mouseEvent Js.t) event_listener Js.writeonly_prop
       method ondblclick :
@@ -2890,6 +3081,14 @@
       method offsetParent : element Js.t Js.opt Js.readonly_prop
       method offsetTop : int Js.readonly_prop
       method offsetWidth : int Js.readonly_prop
+      method onanimationcancel :
+        ('a Js.t, animationEvent Js.t) event_listener Js.writeonly_prop
+      method onanimationend :
+        ('a Js.t, animationEvent Js.t) event_listener Js.writeonly_prop
+      method onanimationiteration :
+        ('a Js.t, animationEvent Js.t) event_listener Js.writeonly_prop
+      method onanimationstart :
+        ('a Js.t, animationEvent Js.t) event_listener Js.writeonly_prop
       method onclick :
         ('a Js.t, mouseEvent Js.t) event_listener Js.writeonly_prop
       method ondblclick :
@@ -3021,6 +3220,14 @@
       method offsetParent : element Js.t Js.opt Js.readonly_prop
       method offsetTop : int Js.readonly_prop
       method offsetWidth : int Js.readonly_prop
+      method onanimationcancel :
+        ('a Js.t, animationEvent Js.t) event_listener Js.writeonly_prop
+      method onanimationend :
+        ('a Js.t, animationEvent Js.t) event_listener Js.writeonly_prop
+      method onanimationiteration :
+        ('a Js.t, animationEvent Js.t) event_listener Js.writeonly_prop
+      method onanimationstart :
+        ('a Js.t, animationEvent Js.t) event_listener Js.writeonly_prop
       method onclick :
         ('a Js.t, mouseEvent Js.t) event_listener Js.writeonly_prop
       method ondblclick :
@@ -3156,6 +3363,18 @@
       method offsetWidth : int Js.readonly_prop
       method onabort :
         ('a Js.t, Dom_html.event Js.t) Dom_html.event_listener Js.prop
+      method onanimationcancel :
+        ('a Js.t, Dom_html.animationEvent Js.t) Dom_html.event_listener
+        Js.writeonly_prop
+      method onanimationend :
+        ('a Js.t, Dom_html.animationEvent Js.t) Dom_html.event_listener
+        Js.writeonly_prop
+      method onanimationiteration :
+        ('a Js.t, Dom_html.animationEvent Js.t) Dom_html.event_listener
+        Js.writeonly_prop
+      method onanimationstart :
+        ('a Js.t, Dom_html.animationEvent Js.t) Dom_html.event_listener
+        Js.writeonly_prop
       method onclick :
         ('a Js.t, Dom_html.mouseEvent Js.t) Dom_html.event_listener
         Js.writeonly_prop
@@ -3315,6 +3534,14 @@
       method offsetParent : element Js.t Js.opt Js.readonly_prop
       method offsetTop : int Js.readonly_prop
       method offsetWidth : int Js.readonly_prop
+      method onanimationcancel :
+        ('a Js.t, animationEvent Js.t) event_listener Js.writeonly_prop
+      method onanimationend :
+        ('a Js.t, animationEvent Js.t) event_listener Js.writeonly_prop
+      method onanimationiteration :
+        ('a Js.t, animationEvent Js.t) event_listener Js.writeonly_prop
+      method onanimationstart :
+        ('a Js.t, animationEvent Js.t) event_listener Js.writeonly_prop
       method onclick :
         ('a Js.t, mouseEvent Js.t) event_listener Js.writeonly_prop
       method ondblclick :
@@ -3443,6 +3670,14 @@
       method offsetParent : element Js.t Js.opt Js.readonly_prop
       method offsetTop : int Js.readonly_prop
       method offsetWidth : int Js.readonly_prop
+      method onanimationcancel :
+        ('a Js.t, animationEvent Js.t) event_listener Js.writeonly_prop
+      method onanimationend :
+        ('a Js.t, animationEvent Js.t) event_listener Js.writeonly_prop
+      method onanimationiteration :
+        ('a Js.t, animationEvent Js.t) event_listener Js.writeonly_prop
+      method onanimationstart :
+        ('a Js.t, animationEvent Js.t) event_listener Js.writeonly_prop
       method onclick :
         ('a Js.t, mouseEvent Js.t) event_listener Js.writeonly_prop
       method ondblclick :
@@ -3572,6 +3807,14 @@
       method offsetParent : element Js.t Js.opt Js.readonly_prop
       method offsetTop : int Js.readonly_prop
       method offsetWidth : int Js.readonly_prop
+      method onanimationcancel :
+        ('a Js.t, animationEvent Js.t) event_listener Js.writeonly_prop
+      method onanimationend :
+        ('a Js.t, animationEvent Js.t) event_listener Js.writeonly_prop
+      method onanimationiteration :
+        ('a Js.t, animationEvent Js.t) event_listener Js.writeonly_prop
+      method onanimationstart :
+        ('a Js.t, animationEvent Js.t) event_listener Js.writeonly_prop
       method onclick :
         ('a Js.t, mouseEvent Js.t) event_listener Js.writeonly_prop
       method ondblclick :
@@ -3700,6 +3943,14 @@
       method offsetParent : element Js.t Js.opt Js.readonly_prop
       method offsetTop : int Js.readonly_prop
       method offsetWidth : int Js.readonly_prop
+      method onanimationcancel :
+        ('a Js.t, animationEvent Js.t) event_listener Js.writeonly_prop
+      method onanimationend :
+        ('a Js.t, animationEvent Js.t) event_listener Js.writeonly_prop
+      method onanimationiteration :
+        ('a Js.t, animationEvent Js.t) event_listener Js.writeonly_prop
+      method onanimationstart :
+        ('a Js.t, animationEvent Js.t) event_listener Js.writeonly_prop
       method onclick :
         ('a Js.t, mouseEvent Js.t) event_listener Js.writeonly_prop
       method ondblclick :
@@ -3826,6 +4077,14 @@
       method offsetParent : element Js.t Js.opt Js.readonly_prop
       method offsetTop : int Js.readonly_prop
       method offsetWidth : int Js.readonly_prop
+      method onanimationcancel :
+        ('a Js.t, animationEvent Js.t) event_listener Js.writeonly_prop
+      method onanimationend :
+        ('a Js.t, animationEvent Js.t) event_listener Js.writeonly_prop
+      method onanimationiteration :
+        ('a Js.t, animationEvent Js.t) event_listener Js.writeonly_prop
+      method onanimationstart :
+        ('a Js.t, animationEvent Js.t) event_listener Js.writeonly_prop
       method onclick :
         ('a Js.t, mouseEvent Js.t) event_listener Js.writeonly_prop
       method ondblclick :
@@ -3952,6 +4211,14 @@
       method offsetParent : element Js.t Js.opt Js.readonly_prop
       method offsetTop : int Js.readonly_prop
       method offsetWidth : int Js.readonly_prop
+      method onanimationcancel :
+        ('a Js.t, animationEvent Js.t) event_listener Js.writeonly_prop
+      method onanimationend :
+        ('a Js.t, animationEvent Js.t) event_listener Js.writeonly_prop
+      method onanimationiteration :
+        ('a Js.t, animationEvent Js.t) event_listener Js.writeonly_prop
+      method onanimationstart :
+        ('a Js.t, animationEvent Js.t) event_listener Js.writeonly_prop
       method onclick :
         ('a Js.t, mouseEvent Js.t) event_listener Js.writeonly_prop
       method ondblclick :
@@ -4084,6 +4351,14 @@
       method offsetParent : element Js.t Js.opt Js.readonly_prop
       method offsetTop : int Js.readonly_prop
       method offsetWidth : int Js.readonly_prop
+      method onanimationcancel :
+        ('a Js.t, animationEvent Js.t) event_listener Js.writeonly_prop
+      method onanimationend :
+        ('a Js.t, animationEvent Js.t) event_listener Js.writeonly_prop
+      method onanimationiteration :
+        ('a Js.t, animationEvent Js.t) event_listener Js.writeonly_prop
+      method onanimationstart :
+        ('a Js.t, animationEvent Js.t) event_listener Js.writeonly_prop
       method onclick :
         ('a Js.t, mouseEvent Js.t) event_listener Js.writeonly_prop
       method ondblclick :
@@ -4216,6 +4491,14 @@
       method offsetParent : element Js.t Js.opt Js.readonly_prop
       method offsetTop : int Js.readonly_prop
       method offsetWidth : int Js.readonly_prop
+      method onanimationcancel :
+        ('a Js.t, animationEvent Js.t) event_listener Js.writeonly_prop
+      method onanimationend :
+        ('a Js.t, animationEvent Js.t) event_listener Js.writeonly_prop
+      method onanimationiteration :
+        ('a Js.t, animationEvent Js.t) event_listener Js.writeonly_prop
+      method onanimationstart :
+        ('a Js.t, animationEvent Js.t) event_listener Js.writeonly_prop
       method onclick :
         ('a Js.t, mouseEvent Js.t) event_listener Js.writeonly_prop
       method ondblclick :
@@ -4344,6 +4627,14 @@
       method offsetParent : element Js.t Js.opt Js.readonly_prop
       method offsetTop : int Js.readonly_prop
       method offsetWidth : int Js.readonly_prop
+      method onanimationcancel :
+        ('a Js.t, animationEvent Js.t) event_listener Js.writeonly_prop
+      method onanimationend :
+        ('a Js.t, animationEvent Js.t) event_listener Js.writeonly_prop
+      method onanimationiteration :
+        ('a Js.t, animationEvent Js.t) event_listener Js.writeonly_prop
+      method onanimationstart :
+        ('a Js.t, animationEvent Js.t) event_listener Js.writeonly_prop
       method onclick :
         ('a Js.t, mouseEvent Js.t) event_listener Js.writeonly_prop
       method ondblclick :
@@ -4474,6 +4765,14 @@
       method offsetParent : element Js.t Js.opt Js.readonly_prop
       method offsetTop : int Js.readonly_prop
       method offsetWidth : int Js.readonly_prop
+      method onanimationcancel :
+        ('a Js.t, animationEvent Js.t) event_listener Js.writeonly_prop
+      method onanimationend :
+        ('a Js.t, animationEvent Js.t) event_listener Js.writeonly_prop
+      method onanimationiteration :
+        ('a Js.t, animationEvent Js.t) event_listener Js.writeonly_prop
+      method onanimationstart :
+        ('a Js.t, animationEvent Js.t) event_listener Js.writeonly_prop
       method onclick :
         ('a Js.t, mouseEvent Js.t) event_listener Js.writeonly_prop
       method ondblclick :
@@ -4614,6 +4913,14 @@
       method offsetParent : element Js.t Js.opt Js.readonly_prop
       method offsetTop : int Js.readonly_prop
       method offsetWidth : int Js.readonly_prop
+      method onanimationcancel :
+        ('a Js.t, animationEvent Js.t) event_listener Js.writeonly_prop
+      method onanimationend :
+        ('a Js.t, animationEvent Js.t) event_listener Js.writeonly_prop
+      method onanimationiteration :
+        ('a Js.t, animationEvent Js.t) event_listener Js.writeonly_prop
+      method onanimationstart :
+        ('a Js.t, animationEvent Js.t) event_listener Js.writeonly_prop
       method onclick :
         ('a Js.t, mouseEvent Js.t) event_listener Js.writeonly_prop
       method ondblclick :
@@ -4777,6 +5084,14 @@
       method offsetParent : element Js.t Js.opt Js.readonly_prop
       method offsetTop : int Js.readonly_prop
       method offsetWidth : int Js.readonly_prop
+      method onanimationcancel :
+        ('a Js.t, animationEvent Js.t) event_listener Js.writeonly_prop
+      method onanimationend :
+        ('a Js.t, animationEvent Js.t) event_listener Js.writeonly_prop
+      method onanimationiteration :
+        ('a Js.t, animationEvent Js.t) event_listener Js.writeonly_prop
+      method onanimationstart :
+        ('a Js.t, animationEvent Js.t) event_listener Js.writeonly_prop
       method onclick :
         ('a Js.t, mouseEvent Js.t) event_listener Js.writeonly_prop
       method ondblclick :
@@ -4925,6 +5240,14 @@
       method offsetParent : element Js.t Js.opt Js.readonly_prop
       method offsetTop : int Js.readonly_prop
       method offsetWidth : int Js.readonly_prop
+      method onanimationcancel :
+        ('a Js.t, animationEvent Js.t) event_listener Js.writeonly_prop
+      method onanimationend :
+        ('a Js.t, animationEvent Js.t) event_listener Js.writeonly_prop
+      method onanimationiteration :
+        ('a Js.t, animationEvent Js.t) event_listener Js.writeonly_prop
+      method onanimationstart :
+        ('a Js.t, animationEvent Js.t) event_listener Js.writeonly_prop
       method onclick :
         ('a Js.t, mouseEvent Js.t) event_listener Js.writeonly_prop
       method ondblclick :
@@ -5073,6 +5396,14 @@
       method offsetParent : element Js.t Js.opt Js.readonly_prop
       method offsetTop : int Js.readonly_prop
       method offsetWidth : int Js.readonly_prop
+      method onanimationcancel :
+        ('a Js.t, animationEvent Js.t) event_listener Js.writeonly_prop
+      method onanimationend :
+        ('a Js.t, animationEvent Js.t) event_listener Js.writeonly_prop
+      method onanimationiteration :
+        ('a Js.t, animationEvent Js.t) event_listener Js.writeonly_prop
+      method onanimationstart :
+        ('a Js.t, animationEvent Js.t) event_listener Js.writeonly_prop
       method onclick :
         ('a Js.t, mouseEvent Js.t) event_listener Js.writeonly_prop
       method ondblclick :
@@ -5213,6 +5544,14 @@
       method offsetParent : element Js.t Js.opt Js.readonly_prop
       method offsetTop : int Js.readonly_prop
       method offsetWidth : int Js.readonly_prop
+      method onanimationcancel :
+        ('a Js.t, animationEvent Js.t) event_listener Js.writeonly_prop
+      method onanimationend :
+        ('a Js.t, animationEvent Js.t) event_listener Js.writeonly_prop
+      method onanimationiteration :
+        ('a Js.t, animationEvent Js.t) event_listener Js.writeonly_prop
+      method onanimationstart :
+        ('a Js.t, animationEvent Js.t) event_listener Js.writeonly_prop
       method onclick :
         ('a Js.t, mouseEvent Js.t) event_listener Js.writeonly_prop
       method ondblclick :
@@ -5531,6 +5870,14 @@
       method nodeName : Js.js_string Js.t Js.readonly_prop
       method nodeType : Dom.nodeType Js.readonly_prop
       method nodeValue : Js.js_string Js.t Js.opt Js.readonly_prop
+      method onanimationcancel :
+        ('a Js.t, animationEvent Js.t) event_listener Js.writeonly_prop
+      method onanimationend :
+        ('a Js.t, animationEvent Js.t) event_listener Js.writeonly_prop
+      method onanimationiteration :
+        ('a Js.t, animationEvent Js.t) event_listener Js.writeonly_prop
+      method onanimationstart :
+        ('a Js.t, animationEvent Js.t) event_listener Js.writeonly_prop
       method onclick :
         ('a Js.t, mouseEvent Js.t) event_listener Js.writeonly_prop
       method ondblclick :
@@ -5634,6 +5981,14 @@
   class type applicationCache =
     object ('a)
       method abort : unit Js.meth
+      method onanimationcancel :
+        ('a Js.t, animationEvent Js.t) event_listener Js.writeonly_prop
+      method onanimationend :
+        ('a Js.t, animationEvent Js.t) event_listener Js.writeonly_prop
+      method onanimationiteration :
+        ('a Js.t, animationEvent Js.t) event_listener Js.writeonly_prop
+      method onanimationstart :
+        ('a Js.t, animationEvent Js.t) event_listener Js.writeonly_prop
       method oncached :
         (Dom_html.applicationCache Js.t, Dom_html.event Js.t)
         Dom_html.event_listener Js.prop
@@ -5738,6 +6093,14 @@
       method location : Dom_html.location Js.t Js.readonly_prop
       method name : Js.js_string Js.t Js.prop
       method navigator : Dom_html.navigator Js.t Js.readonly_prop
+      method onanimationcancel :
+        ('a Js.t, animationEvent Js.t) event_listener Js.writeonly_prop
+      method onanimationend :
+        ('a Js.t, animationEvent Js.t) event_listener Js.writeonly_prop
+      method onanimationiteration :
+        ('a Js.t, animationEvent Js.t) event_listener Js.writeonly_prop
+      method onanimationstart :
+        ('a Js.t, animationEvent Js.t) event_listener Js.writeonly_prop
       method onbeforeunload :
         (Dom_html.window Js.t, Dom_html.event Js.t) Dom_html.event_listener
         Js.prop
@@ -5891,6 +6254,14 @@
       method offsetParent : element Js.t Js.opt Js.readonly_prop
       method offsetTop : int Js.readonly_prop
       method offsetWidth : int Js.readonly_prop
+      method onanimationcancel :
+        ('a Js.t, animationEvent Js.t) event_listener Js.writeonly_prop
+      method onanimationend :
+        ('a Js.t, animationEvent Js.t) event_listener Js.writeonly_prop
+      method onanimationiteration :
+        ('a Js.t, animationEvent Js.t) event_listener Js.writeonly_prop
+      method onanimationstart :
+        ('a Js.t, animationEvent Js.t) event_listener Js.writeonly_prop
       method onclick :
         ('a Js.t, mouseEvent Js.t) event_listener Js.writeonly_prop
       method ondblclick :
@@ -6021,6 +6392,14 @@
       method offsetParent : element Js.t Js.opt Js.readonly_prop
       method offsetTop : int Js.readonly_prop
       method offsetWidth : int Js.readonly_prop
+      method onanimationcancel :
+        ('a Js.t, animationEvent Js.t) event_listener Js.writeonly_prop
+      method onanimationend :
+        ('a Js.t, animationEvent Js.t) event_listener Js.writeonly_prop
+      method onanimationiteration :
+        ('a Js.t, animationEvent Js.t) event_listener Js.writeonly_prop
+      method onanimationstart :
+        ('a Js.t, animationEvent Js.t) event_listener Js.writeonly_prop
       method onclick :
         ('a Js.t, mouseEvent Js.t) event_listener Js.writeonly_prop
       method ondblclick :
@@ -6153,6 +6532,14 @@
       method offsetParent : element Js.t Js.opt Js.readonly_prop
       method offsetTop : int Js.readonly_prop
       method offsetWidth : int Js.readonly_prop
+      method onanimationcancel :
+        ('a Js.t, animationEvent Js.t) event_listener Js.writeonly_prop
+      method onanimationend :
+        ('a Js.t, animationEvent Js.t) event_listener Js.writeonly_prop
+      method onanimationiteration :
+        ('a Js.t, animationEvent Js.t) event_listener Js.writeonly_prop
+      method onanimationstart :
+        ('a Js.t, animationEvent Js.t) event_listener Js.writeonly_prop
       method onclick :
         ('a Js.t, mouseEvent Js.t) event_listener Js.writeonly_prop
       method ondblclick :
@@ -6288,6 +6675,11 @@
       val cached : Dom_html.event Js.t Dom_html.Event.typ
       val obsolete : Dom_html.event Js.t Dom_html.Event.typ
       val domContentLoaded : Dom_html.event Js.t Dom_html.Event.typ
+      val animationstart : Dom_html.animationEvent Js.t Dom_html.Event.typ
+      val animationend : Dom_html.animationEvent Js.t Dom_html.Event.typ
+      val animationiteration :
+        Dom_html.animationEvent Js.t Dom_html.Event.typ
+      val animationcancel : Dom_html.animationEvent Js.t Dom_html.Event.typ
       val make : string -> 'a Dom_html.Event.typ
     end
   type event_listener_id = Dom.event_listener_id

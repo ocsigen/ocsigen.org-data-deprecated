@@ -53,6 +53,10 @@
 |@@class="odocwiki_index"@ @@<<a_api text="animateColor"| value Dom_svg.CoerceTo.animateColor >> ~[<<a_api | module Dom_svg.CoerceTo >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="animateMotion"| value Dom_svg.CoerceTo.animateMotion >> ~[<<a_api | module Dom_svg.CoerceTo >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="animateTransform"| value Dom_svg.CoerceTo.animateTransform >> ~[<<a_api | module Dom_svg.CoerceTo >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="animationcancel"| value Dom_html.Event.animationcancel >> ~[<<a_api | module Dom_html.Event >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="animationend"| value Dom_html.Event.animationend >> ~[<<a_api | module Dom_html.Event >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="animationiteration"| value Dom_html.Event.animationiteration >> ~[<<a_api | module Dom_html.Event >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="animationstart"| value Dom_html.Event.animationstart >> ~[<<a_api | module Dom_html.Event >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="append"| value Form.append >> ~[<<a_api | module Form >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="appendChild"| value Dom.appendChild >> ~[<<a_api | module Dom >>~]|<<div class="odocwiki_info"|~The expression <<span class="odocwiki_inlinecode"|append~Child n c>> behave the same as
       <<span class="odocwiki_inlinecode"|n~#~#append~Child c>> ~(appends <<span class="odocwiki_inlinecode"|c>> to <<span class="odocwiki_inlinecode"|n>>~)

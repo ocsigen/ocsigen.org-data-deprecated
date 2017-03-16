@@ -48,6 +48,14 @@
   method offsetParent : Dom_html.element Js.t Js.opt Js.readonly_prop
   method offsetTop : int Js.readonly_prop
   method offsetWidth : int Js.readonly_prop
+  method onanimationcancel :
+    ('a Js.t, Dom_html.animationEvent Js.t) event_listener Js.writeonly_prop
+  method onanimationend :
+    ('a Js.t, Dom_html.animationEvent Js.t) event_listener Js.writeonly_prop
+  method onanimationiteration :
+    ('a Js.t, Dom_html.animationEvent Js.t) event_listener Js.writeonly_prop
+  method onanimationstart :
+    ('a Js.t, Dom_html.animationEvent Js.t) event_listener Js.writeonly_prop
   method onclick :
     ('a Js.t, Dom_html.mouseEvent Js.t) event_listener Js.writeonly_prop
   method ondblclick :

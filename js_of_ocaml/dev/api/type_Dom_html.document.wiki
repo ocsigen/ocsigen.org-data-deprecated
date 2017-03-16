@@ -53,6 +53,14 @@
   method nodeName : Js.js_string Js.t Js.readonly_prop
   method nodeType : Dom.nodeType Js.readonly_prop
   method nodeValue : Js.js_string Js.t Js.opt Js.readonly_prop
+  method onanimationcancel :
+    ('a Js.t, animationEvent Js.t) event_listener Js.writeonly_prop
+  method onanimationend :
+    ('a Js.t, animationEvent Js.t) event_listener Js.writeonly_prop
+  method onanimationiteration :
+    ('a Js.t, animationEvent Js.t) event_listener Js.writeonly_prop
+  method onanimationstart :
+    ('a Js.t, animationEvent Js.t) event_listener Js.writeonly_prop
   method onclick :
     ('a Js.t, mouseEvent Js.t) event_listener Js.writeonly_prop
   method ondblclick :

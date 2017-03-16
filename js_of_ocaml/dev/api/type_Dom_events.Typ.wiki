@@ -50,5 +50,9 @@
   val cached : Dom_html.event Js.t typ
   val obsolete : Dom_html.event Js.t typ
   val domContentLoaded : Dom_html.event Js.t typ
+  val animationstart : Dom_html.animationEvent Js.t typ
+  val animationend : Dom_html.animationEvent Js.t typ
+  val animationiteration : Dom_html.animationEvent Js.t typ
+  val animationcancel : Dom_html.animationEvent Js.t typ
   val make : string -> 'a typ
 end >>

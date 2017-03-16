@@ -418,6 +418,16 @@
 |@@class="odocwiki_index"@ @@<<a_api text="animatedNormalizedPathSegList"| method Dom_svg.animatedPathData#animatedNormalizedPathSegList >> ~[<<a_api | module Dom_svg >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="animatedPathSegList"| method Dom_svg.animatedPathData#animatedPathSegList >> ~[<<a_api | module Dom_svg >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="animatedpoints"| method Dom_svg.animatedPoints#animatedpoints >> ~[<<a_api | module Dom_svg >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="animation"| method Dom_html.cssStyleDeclaration#animation >> ~[<<a_api | module Dom_html >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="animationDelay"| method Dom_html.cssStyleDeclaration#animationDelay >> ~[<<a_api | module Dom_html >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="animationDirection"| method Dom_html.cssStyleDeclaration#animationDirection >> ~[<<a_api | module Dom_html >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="animationDuration"| method Dom_html.cssStyleDeclaration#animationDuration >> ~[<<a_api | module Dom_html >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="animationFillMode"| method Dom_html.cssStyleDeclaration#animationFillMode >> ~[<<a_api | module Dom_html >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="animationIterationCount"| method Dom_html.cssStyleDeclaration#animationIterationCount >> ~[<<a_api | module Dom_html >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="animationName"| method Dom_html.animationEvent#animationName >> ~[<<a_api | module Dom_html >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="animationName"| method Dom_html.cssStyleDeclaration#animationName >> ~[<<a_api | module Dom_html >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="animationPlayState"| method Dom_html.cssStyleDeclaration#animationPlayState >> ~[<<a_api | module Dom_html >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="animationTimingFunction"| method Dom_html.cssStyleDeclaration#animationTimingFunction >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="animationsPaused"| method Dom_svg.svgElement#animationsPaused >> ~[<<a_api | module Dom_svg >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="antialias"| method WebGL.contextAttributes#antialias >> ~[<<a_api | module WebGL >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="appCodeName"| method Dom_html.navigator#appCodeName >> ~[<<a_api | module Dom_html >>~]||
@@ -843,6 +853,7 @@
 |@@ @style="tet-align: left;"@@\\E|
 |@@class="odocwiki_index"@ @@<<a_api text="e"| method Dom_svg.matrix#e >> ~[<<a_api | module Dom_svg >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="effectAllowed"| method Dom_html.dataTransfer#effectAllowed >> ~[<<a_api | module Dom_html >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="elapsedTime"| method Dom_html.animationEvent#elapsedTime >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="elements"| method Dom_html.formElement#elements >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="emptyCells"| method Dom_html.cssStyleDeclaration#emptyCells >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="enable"| method WebGL.renderingContext#enable >> ~[<<a_api | module WebGL >>~]||
@@ -1326,6 +1337,10 @@
 |@@class="odocwiki_index"@ @@<<a_api text="onabort"| method File.fileReader#onabort >> ~[<<a_api | module File >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="onabort"| method File.progressEventTarget#onabort >> ~[<<a_api | module File >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="onabort"| method Dom_html.imageElement#onabort >> ~[<<a_api | module Dom_html >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="onanimationcancel"| method Dom_html.eventTarget#onanimationcancel >> ~[<<a_api | module Dom_html >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="onanimationend"| method Dom_html.eventTarget#onanimationend >> ~[<<a_api | module Dom_html >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="onanimationiteration"| method Dom_html.eventTarget#onanimationiteration >> ~[<<a_api | module Dom_html >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="onanimationstart"| method Dom_html.eventTarget#onanimationstart >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="onbeforeunload"| method Dom_html.window#onbeforeunload >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="onblur"| method Dom_html.window#onblur >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="onblur"| method Dom_html.textAreaElement#onblur >> ~[<<a_api | module Dom_html >>~]||
@@ -1477,6 +1492,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="prompt"| method Dom_html.window#prompt >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="protocol"| method WebSockets.webSocket#protocol >> ~[<<a_api | module WebSockets >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="protocol"| method Dom_html.location#protocol >> ~[<<a_api | module Dom_html >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="pseudoElement"| method Dom_html.animationEvent#pseudoElement >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="push"| method Js.js_array#push >> ~[<<a_api | module Js >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="pushState"| method Dom_html.history#pushState >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="push_2"| method Js.js_array#push_2 >> ~[<<a_api | module Js >>~]||
