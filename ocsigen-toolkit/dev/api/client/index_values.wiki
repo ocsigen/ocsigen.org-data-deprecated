@@ -159,7 +159,10 @@
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="nodeready"| value Ot_nodeready.nodeready >> ~[<<a_api subproject="client" | module Ot_nodeready >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="noderesize"| value Ot_noderesize.noderesize >> ~[<<a_api subproject="client" | module Ot_noderesize >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="noderesize"| value Ot_noderesize.noderesize >> ~[<<a_api subproject="client" | module Ot_noderesize >>~]|<<div class="odocwiki_info"|~When <<span class="odocwiki_inlinecode"|safe>> is set to <<span class="odocwiki_inlinecode"|true>>~, <<span class="odocwiki_inlinecode"|noderesize>> will work whatever sized is
+    the watched element~.
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="num_active_spinners"| value Ot_spinner.num_active_spinners >> ~[<<a_api subproject="client" | module Ot_spinner >>~]|<<div class="odocwiki_info"|the number of spinners currently spinning
 >>
 |
