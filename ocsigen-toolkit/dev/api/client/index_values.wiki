@@ -144,6 +144,9 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="make_hours_minutes_seq"| value Ot_time_picker.make_hours_minutes_seq >> ~[<<a_api subproject="client" | module Ot_time_picker >>~]|<<div class="odocwiki_info"|~Alias of <<span class="odocwiki_inlinecode"|make>>~.
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="make_lazy"| value Ot_carousel.make_lazy >> ~[<<a_api subproject="client" | module Ot_carousel >>~]|<<div class="odocwiki_info"|same as <<span class="odocwiki_inlinecode"|make>> except for the last argument~.
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="make_sticky"| value Ot_sticky.make_sticky >> ~[<<a_api subproject="client" | module Ot_sticky >>~]|<<div class="odocwiki_info"|position~:sticky polyfill which is not supported by some browsers~.
 >>
 |

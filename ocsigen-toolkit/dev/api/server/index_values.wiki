@@ -56,6 +56,9 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="make_hours_minutes_seq"| value Ot_time_picker.make_hours_minutes_seq >> ~[<<a_api subproject="server" | module Ot_time_picker >>~]|<<div class="odocwiki_info"|~Alias of <<span class="odocwiki_inlinecode"|make>>~.
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="make_lazy"| value Ot_carousel.make_lazy >> ~[<<a_api subproject="server" | module Ot_carousel >>~]|<<div class="odocwiki_info"|same as <<span class="odocwiki_inlinecode"|make>> except for the last argument~.
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="mk_form"| value Ot_picture_uploader.mk_form >> ~[<<a_api subproject="server" | module Ot_picture_uploader >>~]|<<div class="odocwiki_info"|~Ready~-to~-use form~.
 >>
 |

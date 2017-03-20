@@ -23,6 +23,10 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="service"| type Ot_picture_uploader.service >> ~[<<a_api subproject="client" | module Ot_picture_uploader >>~]|<<div class="odocwiki_info"|a service that implements a function with type <<span class="odocwiki_inlinecode"|~'a ~-~> ~'b>>
 >>
 |
+|@@ @style="tet-align: left;"@@\\T|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="t"| type Ot_carousel.t >> ~[<<a_api subproject="client" | module Ot_carousel >>~]|<<div class="odocwiki_info"|see <<span class="odocwiki_inlinecode"|make>>
+>>
+|
 |@@ @style="tet-align: left;"@@\\U|
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="upload"| type Ot_picture_uploader.upload >> ~[<<a_api subproject="client" | module Ot_picture_uploader >>~]||
 \\
