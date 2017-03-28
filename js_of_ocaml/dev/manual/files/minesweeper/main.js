@@ -2133,4 +2133,4 @@
     return}
   (function(){return this}()));
 
-//# sourceMappingURL=minesweeper.map
+//# sourceMappingURL=main.map
