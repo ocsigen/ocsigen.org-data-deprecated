@@ -51,14 +51,14 @@
 |@@class="odocwiki_index"@ @@<<a_api text="enableCap"| type WebGL.enableCap >> ~[<<a_api | module WebGL >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="errorCode"| type WebGL.errorCode >> ~[<<a_api | module WebGL >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="error_code"| type Dom_svg.error_code >> ~[<<a_api | module Dom_svg >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="event_listener"| type Dom_html.event_listener >> ~[<<a_api | module Dom_html >>~]|<<div class="odocwiki_info"|~The type of event listener functions~.
->>
-|
 |@@class="odocwiki_index"@ @@<<a_api text="event_listener"| type Dom.event_listener >> ~[<<a_api | module Dom >>~]|<<div class="odocwiki_info"|~The type of event listener functions~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api text="event_listener_id"| type Dom_html.event_listener_id >> ~[<<a_api | module Dom_html >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="event_listener"| type Dom_html.event_listener >> ~[<<a_api | module Dom_html >>~]|<<div class="odocwiki_info"|~The type of event listener functions~.
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api text="event_listener_id"| type Dom.event_listener_id >> ~[<<a_api | module Dom >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="event_listener_id"| type Dom_html.event_listener_id >> ~[<<a_api | module Dom_html >>~]||
 |@@ @style="tet-align: left;"@@\\F|
 |@@class="odocwiki_index"@ @@<<a_api text="fbTarget"| type WebGL.fbTarget >> ~[<<a_api | module WebGL >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="file_any"| type File.file_any >> ~[<<a_api | module File >>~]||
@@ -81,13 +81,13 @@
       objects~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api text="generic_http_frame"| type XmlHttpRequest.generic_http_frame >> ~[<<a_api | module XmlHttpRequest >>~]|<<div class="odocwiki_info"|~The type for ~X~H~R results~.
+|@@class="odocwiki_index"@ @@<<a_api text="generic_http_frame"| type Lwt_xmlHttpRequest.generic_http_frame >> ~[<<a_api | module Lwt_xmlHttpRequest >>~]|<<div class="odocwiki_info"|~The type for ~X~H~R results~.
 >>
 |
 |@@ @style="tet-align: left;"@@\\H|
 |@@class="odocwiki_index"@ @@<<a_api text="hintMode"| type WebGL.hintMode >> ~[<<a_api | module WebGL >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="hintTarget"| type WebGL.hintTarget >> ~[<<a_api | module WebGL >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="http_frame"| type XmlHttpRequest.http_frame >> ~[<<a_api | module XmlHttpRequest >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="http_frame"| type Lwt_xmlHttpRequest.http_frame >> ~[<<a_api | module Lwt_xmlHttpRequest >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="http_url"| type Url.http_url >> ~[<<a_api | module Url >>~]|<<div class="odocwiki_info"|~The type for ~H~T~T~P~(s~) url~.
 >>
 |
@@ -173,9 +173,9 @@
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="readyState"| type XmlHttpRequest.readyState >> ~[<<a_api | module XmlHttpRequest >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="readyState"| type WebSockets.readyState >> ~[<<a_api | module WebSockets >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="readyState"| type File.readyState >> ~[<<a_api | module File >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="readyState"| type Dom_html.readyState >> ~[<<a_api | module Dom_html >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="readyState"| type File.readyState >> ~[<<a_api | module File >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="readyState"| type WebSockets.readyState >> ~[<<a_api | module WebSockets >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="regexp"| type Regexp.regexp >> ~[<<a_api | module Regexp >>~]|<<div class="odocwiki_info"|~The type for regexps~.
 >>
 |
@@ -206,20 +206,20 @@
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="t"| type Typed_array.Bigstring.t >> ~[<<a_api | module Typed_array.Bigstring >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="t"| type Jstable.t >> ~[<<a_api | module Jstable >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="t"| type Js.OPT.t >> ~[<<a_api | module Js.OPT >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="t"| type Js.t >> ~[<<a_api | module Js >>~]|<<div class="odocwiki_info"|~Type of ~Javascript objects~.
->>
-|
+|@@class="odocwiki_index"@ @@<<a_api text="t"| type Dom.DocumentPosition.t >> ~[<<a_api | module Dom.DocumentPosition >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="t"| type Dom_html.Keyboard_key.t >> ~[<<a_api | module Dom_html.Keyboard_key >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="t"| type Dom_html.Keyboard_code.t >> ~[<<a_api | module Dom_html.Keyboard_code >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="t"| type Dom.DocumentPosition.t >> ~[<<a_api | module Dom.DocumentPosition >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="t"| type CSS.Angle.t >> ~[<<a_api | module CSS.Angle >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="t"| type CSS.Length.t >> ~[<<a_api | module CSS.Length >>~]|<<div class="odocwiki_info"|~The type of length attributes~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="t"| type CSS.Color.t >> ~[<<a_api | module CSS.Color >>~]|<<div class="odocwiki_info"|~The type of colors~, either by name~, by ~Red~-~Green~-~Blue constructor or by
    ~Hue~-~Saturation~-~Lightness constructors~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="t"| type Jstable.t >> ~[<<a_api | module Jstable >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="t"| type Js.OPT.t >> ~[<<a_api | module Js.OPT >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="t"| type Js.t >> ~[<<a_api | module Js >>~]|<<div class="odocwiki_info"|~Type of ~Javascript objects~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="taggedElement"| type Dom_html.taggedElement >> ~[<<a_api | module Dom_html >>~]||
@@ -235,10 +235,10 @@
 |@@class="odocwiki_index"@ @@<<a_api text="timeout_id"| type Dom_html.timeout_id >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="timeout_id_safe"| type Dom_html.timeout_id_safe >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="transformType"| type Dom_svg.transformType >> ~[<<a_api | module Dom_svg >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="typ"| type XmlHttpRequest.Event.typ >> ~[<<a_api | module XmlHttpRequest.Event >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="typ"| type File.ReaderEvent.typ >> ~[<<a_api | module File.ReaderEvent >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="typ"| type Dom_html.Event.typ >> ~[<<a_api | module Dom_html.Event >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="typ"| type Dom.Event.typ >> ~[<<a_api | module Dom.Event >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="typ"| type XmlHttpRequest.Event.typ >> ~[<<a_api | module XmlHttpRequest.Event >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="typ"| type Dom_html.Event.typ >> ~[<<a_api | module Dom_html.Event >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="typ"| type File.ReaderEvent.typ >> ~[<<a_api | module File.ReaderEvent >>~]||
 |@@ @style="tet-align: left;"@@\\U|
 |@@class="odocwiki_index"@ @@<<a_api text="uint"| type WebGL.uint >> ~[<<a_api | module WebGL >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="uint16Array"| type Typed_array.uint16Array >> ~[<<a_api | module Typed_array >>~]||

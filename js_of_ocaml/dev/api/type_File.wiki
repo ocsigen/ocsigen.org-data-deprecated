@@ -108,11 +108,6 @@
     end
   val filename : File.file Js.t -> Js.js_string Js.t
   val fileReader : File.fileReader Js.t Js.constr
-  val readAsBinaryString : #File.blob Js.t -> Js.js_string Js.t Lwt.t
-  val readAsText : #File.blob Js.t -> Js.js_string Js.t Lwt.t
-  val readAsText_withEncoding :
-    #File.blob Js.t -> Js.js_string Js.t -> Js.js_string Js.t Lwt.t
-  val readAsDataURL : #File.blob Js.t -> Js.js_string Js.t Lwt.t
   val addEventListener :
     (#File.progressEventTarget as 'a) Js.t ->
     'b Dom.Event.typ ->

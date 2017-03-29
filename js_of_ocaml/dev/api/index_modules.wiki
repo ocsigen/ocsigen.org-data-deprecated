@@ -9,12 +9,12 @@
    and such~.
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api text="CoerceTo"| module Dom.CoerceTo >> ~[<<a_api | module Dom >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="CoerceTo"| module Dom_html.CoerceTo >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="CoerceTo"| module File.CoerceTo >> ~[<<a_api | module File >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="CoerceTo"| module Dom_svg.CoerceTo >> ~[<<a_api | module Dom_svg >>~]|<<div class="odocwiki_info"|~Coercion functions
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api text="CoerceTo"| module Dom_html.CoerceTo >> ~[<<a_api | module Dom_html >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="CoerceTo"| module Dom.CoerceTo >> ~[<<a_api | module Dom >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="Color"| module CSS.Color >> ~[<<a_api | module CSS >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="Current"| module Url.Current >> ~[<<a_api | module Url >>~]|<<div class="odocwiki_info"|~This module can be used to handle the ~Url associated to the current
     document~.
@@ -44,12 +44,12 @@
 >>
 |
 |@@ @style="tet-align: left;"@@\\E|
+|@@class="odocwiki_index"@ @@<<a_api text="Event"| module Dom.Event >> ~[<<a_api | module Dom >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="Event"| module XmlHttpRequest.Event >> ~[<<a_api | module XmlHttpRequest >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="Event"| module WebGL.Event >> ~[<<a_api | module WebGL >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="Event"| module Dom_html.Event >> ~[<<a_api | module Dom_html >>~]|<<div class="odocwiki_info"|~Event types~: <<span class="odocwiki_inlinecode"|mousedown>>~, <<span class="odocwiki_inlinecode"|keypress>>~, ~.~.~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api text="Event"| module Dom.Event >> ~[<<a_api | module Dom >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="Event"| module WebGL.Event >> ~[<<a_api | module WebGL >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="EventSource"| module EventSource >> |<<div class="odocwiki_info"|~Event~Source binding
 >>
 |
@@ -97,9 +97,6 @@
 |@@class="odocwiki_index"@ @@<<a_api text="Json_ref"| module Deriving_Json.Json_ref >> ~[<<a_api | module Deriving_Json >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="Json_string"| module Deriving_Json.Json_string >> ~[<<a_api | module Deriving_Json >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="Json_unit"| module Deriving_Json.Json_unit >> ~[<<a_api | module Deriving_Json >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="Jsonp"| module Jsonp >> |<<div class="odocwiki_info"|~This module provides helpers to perform ~J~S~O~N~P calls
->>
-|
 |@@class="odocwiki_index"@ @@<<a_api text="JsooTop"| module JsooTop >> |<<div class="odocwiki_info"|~Helper for ~Js~_of~_ocaml ~Toplevel~.
 >>
 |
@@ -123,13 +120,20 @@
 |@@class="odocwiki_index"@ @@<<a_api text="Keycode"| module Keycode >> ||
 |@@ @style="tet-align: left;"@@\\L|
 |@@class="odocwiki_index"@ @@<<a_api text="Length"| module CSS.Length >> ~[<<a_api | module CSS >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="Lwt_file"| module Lwt_file >> ||
 |@@class="odocwiki_index"@ @@<<a_api text="Lwt_js"| module Lwt_js >> |<<div class="odocwiki_info"|~Javascript specific ~Lwt functions~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="Lwt_js_events"| module Lwt_js_events >> |<<div class="odocwiki_info"|~Programming mouse or keyboard events handlers using ~Lwt
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api text="Lwt_jsonp"| module Lwt_jsonp >> |<<div class="odocwiki_info"|~This module provides helpers to perform ~J~S~O~N~P calls
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api text="Lwt_log_js"| module Lwt_log_js >> |<<div class="odocwiki_info"|~Lwt logger for js~_of~_ocaml
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="Lwt_xmlHttpRequest"| module Lwt_xmlHttpRequest >> |<<div class="odocwiki_info"|~Xml~Http~Request object~.
 >>
 |
 |@@ @style="tet-align: left;"@@\\M|

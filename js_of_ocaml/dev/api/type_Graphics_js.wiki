@@ -74,7 +74,8 @@
   external remember_mode : bool -> unit = "caml_gr_remember_mode"
   type context
   val open_graph : string -> unit
-  val open_canvas : Dom_html.canvasElement Js.t -> unit
+  val open_canvas :
+    Js_of_ocaml.Dom_html.canvasElement Js_of_ocaml.Js.t -> unit
   val get_context : unit -> Graphics_js.context
   val set_context : Graphics_js.context -> unit
   val loop : event list -> (status -> unit) -> unit

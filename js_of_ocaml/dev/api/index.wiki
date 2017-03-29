@@ -24,12 +24,6 @@
    and such~.
 >>
 |
-|<<a_api | module Lwt_js >>|<<div class="odocwiki_info"|~Javascript specific ~Lwt functions~.
->>
-|
-|<<a_api | module Lwt_js_events >>|<<div class="odocwiki_info"|~Programming mouse or keyboard events handlers using ~Lwt
->>
-|
 |<<a_api | module EventSource >>|<<div class="odocwiki_info"|~Event~Source binding
 >>
 |
@@ -46,9 +40,6 @@
 >>
 |
 |<<a_api | module Json >>|<<div class="odocwiki_info"|~Unsafe ~I~O~.
->>
-|
-|<<a_api | module Jsonp >>|<<div class="odocwiki_info"|~This module provides helpers to perform ~J~S~O~N~P calls
 >>
 |
 |<<a_api | module File >>|<<div class="odocwiki_info"|~File ~A~P~I
@@ -79,6 +70,29 @@
 >>
 |
 |<<a_api | module Worker >>|<<div class="odocwiki_info"|~Low~-level bindgins to javascript ~Web ~Workers~.
+>>
+|
+
+
+
+
+
+=@@id="1_JsofocamllwtAPIReference"@@~Js~_of~_ocaml~_lwt – ~A~P~I ~Reference=
+
+
+
+
+|<<a_api | module Lwt_jsonp >>|<<div class="odocwiki_info"|~This module provides helpers to perform ~J~S~O~N~P calls
+>>
+|
+|<<a_api | module Lwt_xmlHttpRequest >>|<<div class="odocwiki_info"|~Xml~Http~Request object~.
+>>
+|
+|<<a_api | module Lwt_file >>||
+|<<a_api | module Lwt_js_events >>|<<div class="odocwiki_info"|~Programming mouse or keyboard events handlers using ~Lwt
+>>
+|
+|<<a_api | module Lwt_js >>|<<div class="odocwiki_info"|~Javascript specific ~Lwt functions~.
 >>
 |
 
