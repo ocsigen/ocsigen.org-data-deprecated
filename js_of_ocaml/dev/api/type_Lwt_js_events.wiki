@@ -396,7 +396,8 @@
   val onresize : unit -> Js_of_ocaml.Dom_html.event Js_of_ocaml.Js.t Lwt.t
   val onorientationchange :
     unit -> Js_of_ocaml.Dom_html.event Js_of_ocaml.Js.t Lwt.t
-  val onpopstate : unit -> Js_of_ocaml.Dom_html.event Js_of_ocaml.Js.t Lwt.t
+  val onpopstate :
+    unit -> Js_of_ocaml.Dom_html.popStateEvent Js_of_ocaml.Js.t Lwt.t
   val onhashchange :
     unit -> Js_of_ocaml.Dom_html.hashChangeEvent Js_of_ocaml.Js.t Lwt.t
   val onorientationchange_or_onresize :
@@ -408,7 +409,8 @@
     (Js_of_ocaml.Dom_html.event Js_of_ocaml.Js.t -> unit Lwt.t -> unit Lwt.t) ->
     unit Lwt.t
   val onpopstates :
-    (Js_of_ocaml.Dom_html.event Js_of_ocaml.Js.t -> unit Lwt.t -> unit Lwt.t) ->
+    (Js_of_ocaml.Dom_html.popStateEvent Js_of_ocaml.Js.t ->
+     unit Lwt.t -> unit Lwt.t) ->
     unit Lwt.t
   val onhashchanges :
     (Js_of_ocaml.Dom_html.hashChangeEvent Js_of_ocaml.Js.t ->

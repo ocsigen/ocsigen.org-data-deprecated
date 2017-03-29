@@ -38,7 +38,7 @@
       val beforeunload : Dom_html.event Js.t typ
       val resize : Dom_html.event Js.t typ
       val orientationchange : Dom_html.event Js.t typ
-      val popstate : Dom_html.event Js.t typ
+      val popstate : Dom_html.popStateEvent Js.t typ
       val error : Dom_html.event Js.t typ
       val abort : Dom_html.event Js.t typ
       val select : Dom_html.event Js.t typ
