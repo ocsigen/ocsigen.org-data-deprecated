@@ -1588,9 +1588,9 @@
      {var param$0=param;
       for(;;)
        {if(param$0)
-         {var l=param$0[2],a=param$0[1];
+         {var param$1=param$0[2],a=param$0[1];
           caml_call1(f,a);
-          var param$0=l;
+          var param$0=param$1;
           continue}
         return 0}}
     function make(n,c)
@@ -1733,83 +1733,83 @@
        else
         switch(fmtty$0[0])
          {case 0:
-           var rest=fmtty$0[1];
+           var fmtty$1=fmtty$0[1];
            buffer_add_string(buf,_A_);
-           var fmtty$0=rest;
+           var fmtty$0=fmtty$1;
            continue;
           case 1:
-           var rest$0=fmtty$0[1];
+           var fmtty$2=fmtty$0[1];
            buffer_add_string(buf,_B_);
-           var fmtty$0=rest$0;
+           var fmtty$0=fmtty$2;
            continue;
           case 2:
-           var rest$1=fmtty$0[1];
+           var fmtty$3=fmtty$0[1];
            buffer_add_string(buf,_C_);
-           var fmtty$0=rest$1;
+           var fmtty$0=fmtty$3;
            continue;
           case 3:
-           var rest$2=fmtty$0[1];
+           var fmtty$4=fmtty$0[1];
            buffer_add_string(buf,_D_);
-           var fmtty$0=rest$2;
+           var fmtty$0=fmtty$4;
            continue;
           case 4:
-           var rest$3=fmtty$0[1];
+           var fmtty$5=fmtty$0[1];
            buffer_add_string(buf,_E_);
-           var fmtty$0=rest$3;
+           var fmtty$0=fmtty$5;
            continue;
           case 5:
-           var rest$4=fmtty$0[1];
+           var fmtty$6=fmtty$0[1];
            buffer_add_string(buf,_F_);
-           var fmtty$0=rest$4;
+           var fmtty$0=fmtty$6;
            continue;
           case 6:
-           var rest$5=fmtty$0[1];
+           var fmtty$7=fmtty$0[1];
            buffer_add_string(buf,_G_);
-           var fmtty$0=rest$5;
+           var fmtty$0=fmtty$7;
            continue;
           case 7:
-           var rest$6=fmtty$0[1];
+           var fmtty$8=fmtty$0[1];
            buffer_add_string(buf,_H_);
-           var fmtty$0=rest$6;
+           var fmtty$0=fmtty$8;
            continue;
           case 8:
-           var rest$7=fmtty$0[2],sub_fmtty=fmtty$0[1];
+           var fmtty$9=fmtty$0[2],sub_fmtty=fmtty$0[1];
            buffer_add_string(buf,_I_);
            bprint_fmtty(buf,sub_fmtty);
            buffer_add_string(buf,_J_);
-           var fmtty$0=rest$7;
+           var fmtty$0=fmtty$9;
            continue;
           case 9:
-           var rest$8=fmtty$0[3],sub_fmtty$0=fmtty$0[1];
+           var fmtty$10=fmtty$0[3],sub_fmtty$0=fmtty$0[1];
            buffer_add_string(buf,_K_);
            bprint_fmtty(buf,sub_fmtty$0);
            buffer_add_string(buf,_L_);
-           var fmtty$0=rest$8;
+           var fmtty$0=fmtty$10;
            continue;
           case 10:
-           var rest$9=fmtty$0[1];
+           var fmtty$11=fmtty$0[1];
            buffer_add_string(buf,_M_);
-           var fmtty$0=rest$9;
+           var fmtty$0=fmtty$11;
            continue;
           case 11:
-           var rest$10=fmtty$0[1];
+           var fmtty$12=fmtty$0[1];
            buffer_add_string(buf,_N_);
-           var fmtty$0=rest$10;
+           var fmtty$0=fmtty$12;
            continue;
           case 12:
-           var rest$11=fmtty$0[1];
+           var fmtty$13=fmtty$0[1];
            buffer_add_string(buf,_O_);
-           var fmtty$0=rest$11;
+           var fmtty$0=fmtty$13;
            continue;
           case 13:
-           var rest$12=fmtty$0[1];
+           var fmtty$14=fmtty$0[1];
            buffer_add_string(buf,_P_);
-           var fmtty$0=rest$12;
+           var fmtty$0=fmtty$14;
            continue;
           default:
-           var rest$13=fmtty$0[1];
+           var fmtty$15=fmtty$0[1];
            buffer_add_string(buf,_Q_);
-           var fmtty$0=rest$13;
+           var fmtty$0=fmtty$15;
            continue}}
     function symm(param)
      {if(typeof param === "number")
@@ -4609,7 +4609,7 @@
      no_handler=null,
      undefined$0=undefined,
      false$0=false,
-     array_length=window.Array,
+     array_constructor=window.Array,
      Error=[248,_bY_,caml_fresh_oo_id(0)],
      exn=[0,Error,{}],
      slot=caml_obj_tag(exn) === 248?exn:exn[1];
@@ -4622,7 +4622,9 @@
         return 0});
     register_printer
      (function(e)
-       {return e instanceof array_length?0:[0,caml_js_to_string(e.toString())]});
+       {return e instanceof array_constructor
+                ?0
+                :[0,caml_js_to_string(e.toString())]});
     function appendChild(p,n){p.appendChild(n);return 0}
     var doc=window.document;
     function opt_iter(x,f){if(x){var v=x[1];return caml_call1(f,v)}return 0}
@@ -4646,7 +4648,7 @@
           createElementSyntax[1] = _dL_;
           continue}
         if(982028505 <= _dJ_)
-         {var a=new array_length();
+         {var a=new array_constructor();
           a.push("<",elt.toString());
           opt_iter
            (type,
@@ -5303,5 +5305,3 @@
     do_at_exit(0);
     return}
   (function(){return this}()));
-
-//# sourceMappingURL=main.map

@@ -1712,10 +1712,10 @@
        {var param$0=param;
         for(;;)
          {if(param$0)
-           {var r=param$0[4],d=param$0[3],v=param$0[2],l=param$0[1];
+           {var param$1=param$0[4],d=param$0[3],v=param$0[2],l=param$0[1];
             iter(f,l);
             caml_call2(f,v,d);
-            var param$0=r;
+            var param$0=param$1;
             continue}
           return 0}}
       function map(f,param)
@@ -1749,12 +1749,12 @@
         for(;;)
          {if(m$0)
            {var
-             r=m$0[4],
+             m$1=m$0[4],
              d=m$0[3],
              v=m$0[2],
              l=m$0[1],
              accu$1=caml_call3(f,v,d,fold(f,l,accu$0)),
-             m$0=r,
+             m$0=m$1,
              accu$0=accu$1;
             continue}
           return accu$0}}
@@ -2038,10 +2038,10 @@
              r=param$0[4],
              d=param$0[3],
              v=param$0[2],
-             l=param$0[1],
+             param$1=param$0[1],
              accu$1=[0,[0,v,d],bindings_aux(accu$0,r)],
              accu$0=accu$1,
-             param$0=l;
+             param$0=param$1;
             continue}
           return accu$0}}
       function bindings(s){return bindings_aux(0,s)}
@@ -2153,83 +2153,83 @@
        else
         switch(fmtty$0[0])
          {case 0:
-           var rest=fmtty$0[1];
+           var fmtty$1=fmtty$0[1];
            buffer_add_string(buf,_J_);
-           var fmtty$0=rest;
+           var fmtty$0=fmtty$1;
            continue;
           case 1:
-           var rest$0=fmtty$0[1];
+           var fmtty$2=fmtty$0[1];
            buffer_add_string(buf,_K_);
-           var fmtty$0=rest$0;
+           var fmtty$0=fmtty$2;
            continue;
           case 2:
-           var rest$1=fmtty$0[1];
+           var fmtty$3=fmtty$0[1];
            buffer_add_string(buf,_L_);
-           var fmtty$0=rest$1;
+           var fmtty$0=fmtty$3;
            continue;
           case 3:
-           var rest$2=fmtty$0[1];
+           var fmtty$4=fmtty$0[1];
            buffer_add_string(buf,_M_);
-           var fmtty$0=rest$2;
+           var fmtty$0=fmtty$4;
            continue;
           case 4:
-           var rest$3=fmtty$0[1];
+           var fmtty$5=fmtty$0[1];
            buffer_add_string(buf,_N_);
-           var fmtty$0=rest$3;
+           var fmtty$0=fmtty$5;
            continue;
           case 5:
-           var rest$4=fmtty$0[1];
+           var fmtty$6=fmtty$0[1];
            buffer_add_string(buf,_O_);
-           var fmtty$0=rest$4;
+           var fmtty$0=fmtty$6;
            continue;
           case 6:
-           var rest$5=fmtty$0[1];
+           var fmtty$7=fmtty$0[1];
            buffer_add_string(buf,_P_);
-           var fmtty$0=rest$5;
+           var fmtty$0=fmtty$7;
            continue;
           case 7:
-           var rest$6=fmtty$0[1];
+           var fmtty$8=fmtty$0[1];
            buffer_add_string(buf,_Q_);
-           var fmtty$0=rest$6;
+           var fmtty$0=fmtty$8;
            continue;
           case 8:
-           var rest$7=fmtty$0[2],sub_fmtty=fmtty$0[1];
+           var fmtty$9=fmtty$0[2],sub_fmtty=fmtty$0[1];
            buffer_add_string(buf,_R_);
            bprint_fmtty(buf,sub_fmtty);
            buffer_add_string(buf,_S_);
-           var fmtty$0=rest$7;
+           var fmtty$0=fmtty$9;
            continue;
           case 9:
-           var rest$8=fmtty$0[3],sub_fmtty$0=fmtty$0[1];
+           var fmtty$10=fmtty$0[3],sub_fmtty$0=fmtty$0[1];
            buffer_add_string(buf,_T_);
            bprint_fmtty(buf,sub_fmtty$0);
            buffer_add_string(buf,_U_);
-           var fmtty$0=rest$8;
+           var fmtty$0=fmtty$10;
            continue;
           case 10:
-           var rest$9=fmtty$0[1];
+           var fmtty$11=fmtty$0[1];
            buffer_add_string(buf,_V_);
-           var fmtty$0=rest$9;
+           var fmtty$0=fmtty$11;
            continue;
           case 11:
-           var rest$10=fmtty$0[1];
+           var fmtty$12=fmtty$0[1];
            buffer_add_string(buf,_W_);
-           var fmtty$0=rest$10;
+           var fmtty$0=fmtty$12;
            continue;
           case 12:
-           var rest$11=fmtty$0[1];
+           var fmtty$13=fmtty$0[1];
            buffer_add_string(buf,_X_);
-           var fmtty$0=rest$11;
+           var fmtty$0=fmtty$13;
            continue;
           case 13:
-           var rest$12=fmtty$0[1];
+           var fmtty$14=fmtty$0[1];
            buffer_add_string(buf,_Y_);
-           var fmtty$0=rest$12;
+           var fmtty$0=fmtty$14;
            continue;
           default:
-           var rest$13=fmtty$0[1];
+           var fmtty$15=fmtty$0[1];
            buffer_add_string(buf,_Z_);
-           var fmtty$0=rest$13;
+           var fmtty$0=fmtty$15;
            continue}}
     function symm(param)
      {if(typeof param === "number")
@@ -5060,8 +5060,8 @@
     var
      true$0=true,
      false$0=false,
-     array_length=window.Array,
-     date_ms=window.Date,
+     array_constructor=window.Array,
+     date_constr=window.Date,
      Error=[248,_b__,caml_fresh_oo_id(0)];
     register_exception(_b$_,[0,Error,{}]);
     (function(exn){throw exn});
@@ -5072,7 +5072,9 @@
         return 0});
     register_printer
      (function(e)
-       {return e instanceof array_length?0:[0,caml_js_to_string(e.toString())]});
+       {return e instanceof array_constructor
+                ?0
+                :[0,caml_js_to_string(e.toString())]});
     function add(p,n){p.appendChild(n);return 0}
     function handler(f)
      {return function(e)
@@ -5118,7 +5120,7 @@
           createElementSyntax[1] = _dq_;
           continue}
         if(982028505 <= _do_)
-         {var a=new array_length();
+         {var a=new array_constructor();
           a.push("<",elt.toString());
           opt_iter
            (type,
@@ -5186,7 +5188,7 @@
       return print_backtrace(stderr)};
     var
      button_type="button",
-     height=600,
+     width=600,
      obliquity=0.410152374218667459,
      dark=0.0400000000000000078;
     function toggle_button(txt1,txt2,action)
@@ -5471,8 +5473,8 @@
            _cQ_=_cP_?(ctx$0.drawImage(texture,0,0),no_lighting[1] = 1,0):_cP_;
           return _cQ_}
         var
-         canvas$0=create_canvas(height,height),
-         canvas$1=create_canvas(height,height);
+         canvas$0=create_canvas(width,width),
+         canvas$1=create_canvas(width,width);
         add(doc.body,canvas$0);
         var
          ctx$1=canvas$0.getContext(d),
@@ -5647,10 +5649,13 @@
         var s=unsafeCreateElementEx(0,0,doc,_cb_),param$0=param;
         for(;;)
          {if(param$0)
-           {var l=param$0[2],a=param$0[1],o$0=unsafeCreateElement(doc,_ca_);
+           {var
+             param$1=param$0[2],
+             a=param$0[1],
+             o$0=unsafeCreateElement(doc,_ca_);
             add(o$0,doc.createTextNode(a.toString()));
             s.add(o$0,no_handler);
-            var param$0=l;
+            var param$0=param$1;
             continue}
           s.onchange
           =
@@ -5733,7 +5738,7 @@
                 true$0);
               return false$0});
           var
-           ti=[0,new date_ms().getTime()],
+           ti=[0,new date_constr().getTime()],
            fps=[0,0],
            loop=
             function(t,phi)
@@ -5758,7 +5763,7 @@
               ctx$1.drawImage(canvas$1,0,0);
               try {ctx$1.getImageData(0,0,1,1)}catch(_cL_){}
               var
-               t$0=new date_ms().getTime(),
+               t$0=new date_constr().getTime(),
                hz=1e3 / (t$0 - ti[1]),
                hz$0=fps[1] == 0?hz:0.9 * fps[1] + 0.1 * hz;
               fps[1] = hz$0;
@@ -5767,7 +5772,7 @@
               ti[1] = t$0;
               function _cI_(param)
                {var
-                 t$0=new date_ms().getTime(),
+                 t$0=new date_constr().getTime(),
                  dt=t$0 - t,
                  dt$0=dt < 0?0:1e3 < dt?0:dt,
                  angle=6.28318530717958623 * dt$0 / 1e3 / 10,
@@ -5777,7 +5782,7 @@
                 var phi$0=paused[1]?phi:phi + angle;
                 return loop(t$0,phi$0)}
               return bind(sleep(0.01),_cI_)};
-          return loop(new date_ms().getTime(),0)}}
+          return loop(new date_constr().getTime(),0)}}
       var img=unsafeCreateElement(doc,_ch_);
       function _cB_(param){return [0,[0,img]]}
       var match=task(0),w=match[2],t=match[1];
@@ -5805,5 +5810,3 @@
     do_at_exit(0);
     return}
   (function(){return this}()));
-
-//# sourceMappingURL=planet.map

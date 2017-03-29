@@ -1126,9 +1126,9 @@
      {var param$0=param;
       for(;;)
        {if(param$0)
-         {var l=param$0[2],a=param$0[1];
+         {var param$1=param$0[2],a=param$0[1];
           caml_call1(f,a);
-          var param$0=l;
+          var param$0=param$1;
           continue}
         return 0}}
     var
@@ -1571,7 +1571,7 @@
      no_handler=null,
      undefined$0=undefined,
      false$0=false,
-     array_length=window.Array,
+     array_constructor=window.Array,
      Error=[248,_s_,caml_fresh_oo_id(0)],
      exn=[0,Error,{}],
      slot=caml_obj_tag(exn) === 248?exn:exn[1];
@@ -1584,7 +1584,9 @@
         return 0});
     register_printer
      (function(e)
-       {return e instanceof array_length?0:[0,caml_js_to_string(e.toString())]});
+       {return e instanceof array_constructor
+                ?0
+                :[0,caml_js_to_string(e.toString())]});
     function appendChild(p,n){p.appendChild(n);return 0}
     function handler(f)
      {return function(e)
@@ -1617,7 +1619,7 @@
           createElementSyntax[1] = _a0_;
           continue}
         if(982028505 <= _aY_)
-         {var a=new array_length();
+         {var a=new array_constructor();
           a.push("<",elt.toString());
           opt_iter
            (type,
@@ -1776,7 +1778,7 @@
       appendChild(main,createBr(doc));
       appendChild(main,int_input(_H_,nbm));
       appendChild(main,createBr(doc));
-      function callback(param$5)
+      function callback(param$6)
        {var div=unsafeCreateElement(doc,_u_);
         appendChild(main,div);
         var
@@ -2104,9 +2106,9 @@
                       var a$0=caml_make_vect(accu,hd),i=1,param$4=tl;
                       for(;;)
                        {if(param$4)
-                         {var tl$0=param$4[2],hd$0=param$4[1];
+                         {var param$5=param$4[2],hd$0=param$4[1];
                           a$0[i + 1] = hd$0;
-                          var i$0=i + 1 | 0,i=i$0,param$4=tl$0;
+                          var i$0=i + 1 | 0,i=i$0,param$4=param$5;
                           continue}
                         var _ag_=a$0;
                         break}
@@ -2132,5 +2134,3 @@
     caml_call1(exit_function[1],0);
     return}
   (function(){return this}()));
-
-//# sourceMappingURL=main.map
