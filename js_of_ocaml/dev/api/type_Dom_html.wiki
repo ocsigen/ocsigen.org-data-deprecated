@@ -4991,7 +4991,7 @@
       method tBodies :
         Dom_html.tableSectionElement Dom_html.collection Js.t
         Js.readonly_prop
-      method tFood : Dom_html.tableSectionElement Js.t Js.prop
+      method tFoot : Dom_html.tableSectionElement Js.t Js.prop
       method tHead : Dom_html.tableSectionElement Js.t Js.prop
       method tagName : Js.js_string Js.t Js.readonly_prop
       method textContent : Js.js_string Js.t Js.opt Js.prop

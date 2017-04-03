@@ -1815,7 +1815,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="systemLanguage"| method Dom_svg.tests#systemLanguage >> ~[<<a_api | module Dom_svg >>~]||
 |@@ @style="tet-align: left;"@@\\T|
 |@@class="odocwiki_index"@ @@<<a_api text="tBodies"| method Dom_html.tableElement#tBodies >> ~[<<a_api | module Dom_html >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="tFood"| method Dom_html.tableElement#tFood >> ~[<<a_api | module Dom_html >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="tFoot"| method Dom_html.tableElement#tFoot >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="tHead"| method Dom_html.tableElement#tHead >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="tabIndex"| method Dom_html.areaElement#tabIndex >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="tabIndex"| method Dom_html.objectElement#tabIndex >> ~[<<a_api | module Dom_html >>~]||
