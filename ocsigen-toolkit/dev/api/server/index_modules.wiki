@@ -13,6 +13,7 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Ot_drawer"| module Ot_drawer >> |<<div class="odocwiki_info"|~Drawer menu for mobile and ~Web applications
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Ot_form"| module Ot_form >> ||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Ot_lib"| module Ot_lib >> ||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Ot_nodeready"| module Ot_nodeready >> ||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Ot_noderesize"| module Ot_noderesize >> ||

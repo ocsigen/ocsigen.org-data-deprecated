@@ -13,6 +13,9 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Ot_drawer"| module Ot_drawer >> |<<div class="odocwiki_info"|~Drawer menu for mobile and ~Web applications
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Ot_form"| module Ot_form >> |<<div class="odocwiki_info"|~An ~H~T~M~L element which can be selected by pressing the tab key
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Ot_lib"| module Ot_lib >> |<<div class="odocwiki_info"|~N~O~T~E~: be careful when using the functions <<span class="odocwiki_inlinecode"|onresizes>>~,
     <<span class="odocwiki_inlinecode"|window~_scroll>>~, and <<span class="odocwiki_inlinecode"|window~_scrolls>>~.
 >>
