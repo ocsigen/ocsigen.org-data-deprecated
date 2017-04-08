@@ -19,7 +19,7 @@ any external package~.
 |<<a_api | module Lwt >>|<<div class="odocwiki_info"|~Module <<span class="odocwiki_inlinecode"|~Lwt>>~: cooperative light~-weight threads~.
 >>
 |
-|<<a_api | module Lwt_result >>|<<div class="odocwiki_info"|~Module <<span class="odocwiki_inlinecode"|~Lwt~_result>>~: explicit error handling
+|<<a_api | module Lwt_result >>|<<div class="odocwiki_info"|~Explicit error handling
 >>
 |
 |<<a_api | module Lwt_condition >>|<<div class="odocwiki_info"|~Conditions
