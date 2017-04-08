@@ -1,6 +1,7 @@
 =~Lwt ~- ~A~P~I ~Reference
 ==~Core library
 ===[[Lwt|Lwt]]
+===[[Lwt_result|Lwt_result]]
 ===[[Lwt_condition|Lwt_condition]]
 ===[[Lwt_list|Lwt_list]]
 ===[[Lwt_mutex|Lwt_mutex]]
