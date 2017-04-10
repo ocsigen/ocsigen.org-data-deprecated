@@ -8,9 +8,11 @@
 |@@class="odocwiki_index"@ @@<<a_api text="libev"| class Lwt_engine.libev >> ~[<<a_api | module Lwt_engine >>~]|<<div class="odocwiki_info"|~Engine based on libev~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api text="libev_1"| class Lwt_engine.Versioned.libev_1 >> ~[<<a_api | module Lwt_engine.Versioned >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_deprecated"|>>>>
+|@@class="odocwiki_index"@ @@<<a_api text="libev_1"| class Lwt_engine.Versioned.libev_1 >> ~[<<a_api | module Lwt_engine.Versioned >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_deprecated"|~Old version of <<a_api | class Lwt_engine.libev >>~.
+>>>>
 |
-|@@class="odocwiki_index"@ @@<<a_api text="libev_2"| class Lwt_engine.Versioned.libev_2 >> ~[<<a_api | module Lwt_engine.Versioned >>~]|<<div class="odocwiki_info"|>>
+|@@class="odocwiki_index"@ @@<<a_api text="libev_2"| class Lwt_engine.Versioned.libev_2 >> ~[<<a_api | module Lwt_engine.Versioned >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_deprecated"|~Since ~Lwt ~3~.~0~.~0~, this is just an alias for <<a_api | class Lwt_engine.libev >>~.
+>>>>
 |
 |@@ @style="tet-align: left;"@@\\P|
 |@@class="odocwiki_index"@ @@<<a_api text="poll_based"| class Lwt_engine.poll_based >> ~[<<a_api | module Lwt_engine >>~]|<<div class="odocwiki_info"|~Abstract class for engines based on a poll~-like function~.
