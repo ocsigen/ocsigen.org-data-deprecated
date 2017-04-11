@@ -313,42 +313,42 @@
 >>
 <<pre class="ocsforge_color odocwiki_code" id="TYPEserver"|<<span class="ocsforge_color_keyword"|type>> <<span class="odocwiki_name"|server>>>><<div class="odocwiki_info"|~Type of a server
 >>
-<<pre id="VALestablish_server" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|establish~_server>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|\\  <<span class="ocsforge_color_label"| ?fd: >><<a_api text="Lwt_unix.file_descr" | type Lwt_unix.file_descr >> <<span class="ocsforge_color_delimiter"| -> >>\\  <<span class="ocsforge_color_label"| ?buffer_size: >>int <<span class="ocsforge_color_delimiter"| -> >>\\  <<span class="ocsforge_color_label"| ?backlog: >>int <<span class="ocsforge_color_delimiter"| -> >>\\  <<span class="ocsforge_color_label"| ?no_close: >>bool <<span class="ocsforge_color_delimiter"| -> >>\\  <<span class="ocsforge_color_uid"|Unix>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|sockaddr>> <<span class="ocsforge_color_delimiter"| -> >>\\  <<span class="ocsforge_color_delimiter"| ( >><<a_api text="input_channel" | type Lwt_io.input_channel >> * <<a_api text="output_channel" | type Lwt_io.output_channel >> <<span class="ocsforge_color_delimiter"| -> >> unit <<a_api text="Lwt.t" | type Lwt.t >><<span class="ocsforge_color_delimiter"| ) >> <<span class="ocsforge_color_delimiter"| -> >>\\  <<a_api text="server" | type Lwt_io.server >> <<a_api text="Lwt.t" | type Lwt.t >>>>>><<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|establish~_server sockaddr f>> creates a server which listens for incoming
-    connections on <<span class="odocwiki_inlinecode"|sockaddr>>~. ~New connections are passed to <<span class="odocwiki_inlinecode"|f>>~. ~The
-    connections are closed automatically as promises returned by <<span class="odocwiki_inlinecode"|f>> complete~.
+<<pre id="VALestablish_server" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|establish~_server>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|\\  <<span class="ocsforge_color_label"| ?fd: >><<a_api text="Lwt_unix.file_descr" | type Lwt_unix.file_descr >> <<span class="ocsforge_color_delimiter"| -> >>\\  <<span class="ocsforge_color_label"| ?buffer_size: >>int <<span class="ocsforge_color_delimiter"| -> >>\\  <<span class="ocsforge_color_label"| ?backlog: >>int <<span class="ocsforge_color_delimiter"| -> >>\\  <<span class="ocsforge_color_uid"|Unix>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|sockaddr>> <<span class="ocsforge_color_delimiter"| -> >>\\  <<span class="ocsforge_color_delimiter"| ( >><<a_api text="input_channel" | type Lwt_io.input_channel >> * <<a_api text="output_channel" | type Lwt_io.output_channel >> <<span class="ocsforge_color_delimiter"| -> >> unit<<span class="ocsforge_color_delimiter"| ) >> <<span class="ocsforge_color_delimiter"| -> >>\\  <<a_api text="server" | type Lwt_io.server >>>>>><<div class="odocwiki_info"|<<span class="odocwiki_warning"|Deprecated.>>~Will be replaced by <<a_api | val Lwt_io.Versioned.establish_server_2 >>~, which
+        closes the channels passed to <<span class="odocwiki_inlinecode"|f>> automatically when a thread returned
+        by <<span class="odocwiki_inlinecode"|f>> completes~.
+<<span class="odocwiki_inlinecode"|establish~_server ~?fd ~?buffer~_size ~?backlog sockaddr f>> creates a server
+      which listens for incoming connections~. ~New connections are passed to <<span class="odocwiki_inlinecode"|f>>~.
 
 
-    ~To prevent automatic closing~, apply <<span class="odocwiki_inlinecode"|establish~_server>> with
-    <<span class="odocwiki_inlinecode"|~~no~_close~:true>>~.
+      <<span class="odocwiki_inlinecode"|establish~_server>> does not start separate threads for running <<span class="odocwiki_inlinecode"|f>>~, nor
+      close the connections passed to <<span class="odocwiki_inlinecode"|f>>~. ~Thus~, the skeleton of a practical
+      server based on <<span class="odocwiki_inlinecode"|establish~_server>> might look like this~:
 
 
-    <<span class="odocwiki_inlinecode"|~~fd>> can be specified to use an existing file descriptor for listening~.
-    ~Otherwise~, the default is for <<span class="odocwiki_inlinecode"|establish~_server>> to create a fresh one~.
+      
+<<code language='ocaml'|        Lwt_io.establish_server address (fun (ic, oc) ->
+          Lwt.async (fun () ->
+
+            (* ... *)
+
+            Lwt.catch (fun () -> Lwt_io.close oc) (fun _ -> Lwt.return_unit) ~>>=
+            Lwt.catch (fun () -> Lwt_io.close ic) (fun _ -> Lwt.return_unit)))
+      >>
 
 
-    <<span class="odocwiki_inlinecode"|~~backlog>> is the argument passed to <<a_api | val Lwt_unix.listen >>~.
+
+      ~If <<span class="odocwiki_inlinecode"|fd>> is not specified~, a fresh file descriptor will be created for
+      listening~.
 
 
-    ~The server does not wait on each promise returned by <<span class="odocwiki_inlinecode"|f>> before accepting
-    more connections~. ~It accepts connections concurrently~.
-
-
-    ~If <<span class="odocwiki_inlinecode"|f>> raises an exception~, or the promise fails~, the exception is passed to
-    <<a_api | val Lwt.async_exception_hook >>~. ~Likewise~, if the automatic <<span class="odocwiki_inlinecode"|close>> of a
-    connection raises an exception~, it is passed to <<a_api | val Lwt.async_exception_hook >>~.
-    ~To robustly handle these exceptions~, you should call <<a_api | val Lwt_io.close >> manually
-    inside <<span class="odocwiki_inlinecode"|f>>~, and wrap it in your own handler~.
-
-
-    ~The returned promise ~(a <<span class="odocwiki_inlinecode"|server ~Lwt~.t>>~) resolves when the server~'s listening
-    socket is bound to <<span class="odocwiki_inlinecode"|sockaddr>>~, right before the server first calls <<span class="odocwiki_inlinecode"|accept>>~.
-**Since** 3.0.0\\
+      <<span class="odocwiki_inlinecode"|backlog>> is the argument passed to <<span class="odocwiki_inlinecode"|~Lwt~_unix~.listen>>~.
 >>
-<<pre id="VALshutdown_server" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|shutdown~_server>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<a_api text="server" | type Lwt_io.server >> <<span class="ocsforge_color_delimiter"| -> >> unit <<a_api text="Lwt.t" | type Lwt.t >>>>>><<div class="odocwiki_info"|~Closes the given server~'s listening socket~. ~The returned promise resolves
-    when the <<span class="odocwiki_inlinecode"|close~(~2~)>> system call completes~. ~This function does not affect the
-    sockets of connections that have already been accepted~, i~.e~. passed to <<span class="odocwiki_inlinecode"|f>>
-    by <<a_api | val Lwt_io.establish_server >>~.
-**Since** 3.0.0\\
+<<pre id="VALshutdown_server" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|shutdown~_server>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<a_api text="server" | type Lwt_io.server >> <<span class="ocsforge_color_delimiter"| -> >> unit>>>><<div class="odocwiki_info"|<<span class="odocwiki_warning"|Deprecated.>>~Will be replaced by <<a_api | val Lwt_io.Versioned.shutdown_server_2 >>~, which
+        evaluates to a thread that waits for <<span class="odocwiki_inlinecode"|close>> to complete~.
+~Closes the given server~'s listening socket~. ~This function does not wait
+      for the <<span class="odocwiki_inlinecode"|close>> operation to actually complete~. ~It does not affect the
+      sockets of connections that have already been accepted~, i~.e~. passed to <<span class="odocwiki_inlinecode"|f>>
+      by <<span class="odocwiki_inlinecode"|establish~_server>>~.
 >>
 <<pre id="VALlines_of_file" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|lines~_of~_file>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<a_api text="file_name" | type Lwt_io.file_name >> <<span class="ocsforge_color_delimiter"| -> >> string <<a_api text="Lwt_stream.t" | type Lwt_stream.t >>>>>><<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|lines~_of~_file name>> returns a stream of all lines of the file
       with name <<span class="odocwiki_inlinecode"|name>>~. ~The file is automatically closed when all

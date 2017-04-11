@@ -240,7 +240,7 @@
   val socketpair :
     Lwt_unix.socket_domain ->
     Lwt_unix.socket_type -> int -> Lwt_unix.file_descr * Lwt_unix.file_descr
-  val bind : Lwt_unix.file_descr -> Lwt_unix.sockaddr -> unit Lwt.t
+  val bind : Lwt_unix.file_descr -> Lwt_unix.sockaddr -> unit
   val listen : Lwt_unix.file_descr -> int -> unit
   val accept :
     Lwt_unix.file_descr -> (Lwt_unix.file_descr * Lwt_unix.sockaddr) Lwt.t

@@ -1,7 +1,5 @@
 =Class <<a_api_type | class Lwt_engine.Versioned.libev_1 >> =
-<<pre class="ocsforge_color odocwiki_code"|<<span name="TYPElibev_1"|<<span class="ocsforge_color_keyword"|class>> <<span class="ocsforge_color_name"|libev_1>>>> <<span class="ocsforge_color_delimiter"|~:>>  <<span class="ocsforge_color_keyword"|object>><<a_api text=".." | class Lwt_engine.Versioned.libev_1 >><<span class="ocsforge_color_keyword"|end>>>><<span class="odocwiki_warning"|Deprecated.>>~Use <<a_api | class Lwt_engine.libev >>~.
-~Old version of <<a_api | class Lwt_engine.libev >>~. ~The current <<a_api | class Lwt_engine.libev >> allows
-      selecting the libev back end~.
+<<pre class="ocsforge_color odocwiki_code"|<<span name="TYPElibev_1"|<<span class="ocsforge_color_keyword"|class>> <<span class="ocsforge_color_name"|libev_1>>>> <<span class="ocsforge_color_delimiter"|~:>>  <<span class="ocsforge_color_keyword"|object>><<a_api text=".." | class Lwt_engine.Versioned.libev_1 >><<span class="ocsforge_color_keyword"|end>>>><<span class="odocwiki_warning"|Deprecated.>>~In favor of <<a_api | class Lwt_engine.Versioned.libev_2 >>~.
 **Since** 2.7.0\\
 **~Inherits**
 * <<a_api | class Lwt_engine.t >>

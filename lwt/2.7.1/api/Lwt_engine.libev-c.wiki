@@ -1,5 +1,5 @@
 =Class <<a_api_type | class Lwt_engine.libev >> =
-<<pre class="ocsforge_color odocwiki_code"|<<span name="TYPElibev"|<<span class="ocsforge_color_keyword"|class>> <<span class="ocsforge_color_name"|libev>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<span class="ocsforge_color_label"| ?backend: >><<a_api text="Ev_backend.t" | type Lwt_engine.Ev_backend.t >> <<span class="ocsforge_color_delimiter"| -> >> unit <<span class="ocsforge_color_delimiter"| -> >>>> <<span class="ocsforge_color_keyword"|object>><<a_api text=".." | class Lwt_engine.libev >><<span class="ocsforge_color_keyword"|end>>>>~Engine based on libev~. ~If not compiled with libev support~, the
+<<pre class="ocsforge_color odocwiki_code"|<<span name="TYPElibev"|<<span class="ocsforge_color_keyword"|class>> <<span class="ocsforge_color_name"|libev>>>> <<span class="ocsforge_color_delimiter"|~:>>  <<span class="ocsforge_color_keyword"|object>><<a_api text=".." | class Lwt_engine.libev >><<span class="ocsforge_color_keyword"|end>>>>~Engine based on libev~. ~If not compiled with libev support~, the
     creation of the class will raise <<a_api | exception Lwt_sys.Not_available >>~.
 **~Inherits**
 * <<a_api | class Lwt_engine.t >>

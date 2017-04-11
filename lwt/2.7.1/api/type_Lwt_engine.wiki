@@ -70,8 +70,6 @@
       val pp : Format.formatter -> Lwt_engine.Ev_backend.t -> unit
     end
   class libev :
-    ?backend:Lwt_engine.Ev_backend.t ->
-    unit ->
     object
       val loop : Lwt_engine.ev_loop
       method private cleanup : unit
