@@ -637,11 +637,12 @@
 >>
 <<pre id="VALsocketpair" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|socketpair>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|\\  <<a_api text="socket_domain" | type Lwt_unix.socket_domain >> <<span class="ocsforge_color_delimiter"| -> >>\\  <<a_api text="socket_type" | type Lwt_unix.socket_type >> <<span class="ocsforge_color_delimiter"| -> >>\\  int <<span class="ocsforge_color_delimiter"| -> >> <<a_api text="file_descr" | type Lwt_unix.file_descr >> * <<a_api text="file_descr" | type Lwt_unix.file_descr >>>>>><<div class="odocwiki_info"|~Wrapper for <<span class="odocwiki_inlinecode"|~Unix~.socketpair>>
 >>
-<<pre id="VALbind" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|bind>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<a_api text="file_descr" | type Lwt_unix.file_descr >> <<span class="ocsforge_color_delimiter"| -> >> <<a_api text="sockaddr" | type Lwt_unix.sockaddr >> <<span class="ocsforge_color_delimiter"| -> >> unit <<a_api text="Lwt.t" | type Lwt.t >>>>>><<div class="odocwiki_info"|~Binds an address to the given socket~. ~This is the cooperative analog of
+<<pre id="VALbind" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|bind>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<a_api text="file_descr" | type Lwt_unix.file_descr >> <<span class="ocsforge_color_delimiter"| -> >> <<a_api text="sockaddr" | type Lwt_unix.sockaddr >> <<span class="ocsforge_color_delimiter"| -> >> unit>>>><<div class="odocwiki_info"|<<span class="odocwiki_warning"|Deprecated.>>~Will be replaced by <<a_api | val Lwt_unix.Versioned.bind_2 >>~, whose result type is
+      <<span class="odocwiki_inlinecode"|unit ~Lwt~.t>> instead of <<span class="odocwiki_inlinecode"|unit>>~.
+~Binds an address to the given socket~. ~This is the cooperative analog of
     [[http://caml.inria.fr/pub/docs/manual-ocaml/libref/Unix.html#VALbind|
     <<span class="odocwiki_inlinecode"|~Unix~.bind>>]]~. ~See also
     [[http://man7.org/linux/man-pages/man3/bind.3p.html| <<span class="odocwiki_inlinecode"|bind~(~3p~)>>]]~.
-**Since** 3.0.0\\
 >>
 <<pre id="VALlisten" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|listen>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<a_api text="file_descr" | type Lwt_unix.file_descr >> <<span class="ocsforge_color_delimiter"| -> >> int <<span class="ocsforge_color_delimiter"| -> >> unit>>>><<div class="odocwiki_info"|~Wrapper for <<span class="odocwiki_inlinecode"|~Unix~.listen>>
 >>

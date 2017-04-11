@@ -1,6 +1,4 @@
-<<code language="ocaml" | ?backend:Lwt_engine.Ev_backend.t ->
-unit ->
-object
+<<code language="ocaml" | object
   val loop : Lwt_engine.ev_loop
   method private cleanup : unit
   method destroy : unit
