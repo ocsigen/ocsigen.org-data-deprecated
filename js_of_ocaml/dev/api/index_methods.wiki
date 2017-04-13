@@ -506,10 +506,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="blendFunc"| method WebGL.renderingContext#blendFunc >> ~[<<a_api | module WebGL >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="blendFuncSeparate"| method WebGL.renderingContext#blendFuncSeparate >> ~[<<a_api | module WebGL >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="blur"| method Dom_html.window#blur >> ~[<<a_api | module Dom_html >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="blur"| method Dom_html.anchorElement#blur >> ~[<<a_api | module Dom_html >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="blur"| method Dom_html.textAreaElement#blur >> ~[<<a_api | module Dom_html >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="blur"| method Dom_html.inputElement#blur >> ~[<<a_api | module Dom_html >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="blur"| method Dom_html.selectElement#blur >> ~[<<a_api | module Dom_html >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="blur"| method Dom_html.element#blur >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="body"| method Dom_html.document#body >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="border"| method Dom_html.tableElement#border >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="border"| method Dom_html.cssStyleDeclaration#border >> ~[<<a_api | module Dom_html >>~]||
@@ -905,10 +902,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="floor"| method Js.math#floor >> ~[<<a_api | module Js >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="flush"| method WebGL.renderingContext#flush >> ~[<<a_api | module WebGL >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="focus"| method Dom_html.window#focus >> ~[<<a_api | module Dom_html >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="focus"| method Dom_html.anchorElement#focus >> ~[<<a_api | module Dom_html >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="focus"| method Dom_html.textAreaElement#focus >> ~[<<a_api | module Dom_html >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="focus"| method Dom_html.inputElement#focus >> ~[<<a_api | module Dom_html >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="focus"| method Dom_html.selectElement#focus >> ~[<<a_api | module Dom_html >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="focus"| method Dom_html.element#focus >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="focusNode"| method Dom_html.selection#focusNode >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="focusOffset"| method Dom_html.selection#focusOffset >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="font"| method Dom_html.canvasRenderingContext2D#font >> ~[<<a_api | module Dom_html >>~]||

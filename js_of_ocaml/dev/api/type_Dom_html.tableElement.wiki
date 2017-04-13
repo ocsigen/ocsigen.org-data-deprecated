@@ -2,6 +2,7 @@
   method align : Js.js_string Js.t Js.prop
   method appendChild : Dom.node Js.t -> Dom.node Js.t Js.meth
   method attributes : Dom.attr Dom.namedNodeMap Js.t Js.readonly_prop
+  method blur : unit Js.meth
   method border : Js.js_string Js.t Js.prop
   method caption : Dom_html.tableCaptionElement Js.t Js.prop
   method cellPadding : Js.js_string Js.t Js.prop
@@ -26,6 +27,7 @@
   method deleteTHead : unit Js.meth
   method dir : Js.js_string Js.t Js.prop
   method firstChild : Dom.node Js.t Js.opt Js.prop
+  method focus : unit Js.meth
   method frame : Js.js_string Js.t Js.prop
   method getAttribute : Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
   method getAttributeNS :

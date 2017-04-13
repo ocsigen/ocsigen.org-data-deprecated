@@ -4,6 +4,7 @@
   method appendChild : Dom.node Js.t -> Dom.node Js.t Js.meth
   method attributes : Dom.attr Dom.namedNodeMap Js.t Js.readonly_prop
   method axis : Js.js_string Js.t Js.prop
+  method blur : unit Js.meth
   method cellIndex : int Js.readonly_prop
   method ch : Js.js_string Js.t Js.prop
   method chOff : Js.js_string Js.t Js.prop
@@ -21,6 +22,7 @@
     Dom.node Js.t -> Dom.DocumentPosition.t Js.meth
   method dir : Js.js_string Js.t Js.prop
   method firstChild : Dom.node Js.t Js.opt Js.prop
+  method focus : unit Js.meth
   method getAttribute : Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
   method getAttributeNS :
     Js.js_string Js.t ->

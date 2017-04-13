@@ -1,6 +1,7 @@
 <<code language="ocaml" | object ('a)
   method appendChild : Dom.node Js.t -> Dom.node Js.t Js.meth
   method attributes : Dom.attr Dom.namedNodeMap Js.t Js.readonly_prop
+  method blur : unit Js.meth
   method childNodes : Dom.node Dom.nodeList Js.t Js.prop
   method classList : tokenList Js.t Js.readonly_prop
   method className : Js.js_string Js.t Js.prop
@@ -14,6 +15,7 @@
     Dom.node Js.t -> Dom.DocumentPosition.t Js.meth
   method dir : Js.js_string Js.t Js.prop
   method firstChild : Dom.node Js.t Js.opt Js.prop
+  method focus : unit Js.meth
   method getAttribute : Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
   method getAttributeNS :
     Js.js_string Js.t ->

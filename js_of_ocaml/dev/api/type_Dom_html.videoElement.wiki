@@ -2,6 +2,7 @@
   method appendChild : Dom.node Js.t -> Dom.node Js.t Js.meth
   method attributes : Dom.attr Dom.namedNodeMap Js.t Js.readonly_prop
   method autoplay : bool Js.t Js.prop
+  method blur : unit Js.meth
   method buffered : timeRanges Js.t Js.readonly_prop
   method canPlayType : Js.js_string Js.t -> Js.js_string Js.t Js.meth
   method childNodes : Dom.node Dom.nodeList Js.t Js.prop
@@ -22,6 +23,7 @@
   method duration : float Js.readonly_prop
   method ended : bool Js.t Js.readonly_prop
   method firstChild : Dom.node Js.t Js.opt Js.prop
+  method focus : unit Js.meth
   method getAttribute : Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
   method getAttributeNS :
     Js.js_string Js.t ->

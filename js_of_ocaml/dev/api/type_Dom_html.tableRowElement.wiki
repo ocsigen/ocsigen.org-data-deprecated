@@ -2,6 +2,7 @@
   method align : Js.js_string Js.t Js.prop
   method appendChild : Dom.node Js.t -> Dom.node Js.t Js.meth
   method attributes : Dom.attr Dom.namedNodeMap Js.t Js.readonly_prop
+  method blur : unit Js.meth
   method cells :
     Dom_html.tableCellElement Dom_html.collection Js.t Js.readonly_prop
   method ch : Js.js_string Js.t Js.prop
@@ -20,6 +21,7 @@
   method deleteCell : int -> unit Js.meth
   method dir : Js.js_string Js.t Js.prop
   method firstChild : Dom.node Js.t Js.opt Js.prop
+  method focus : unit Js.meth
   method getAttribute : Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
   method getAttributeNS :
     Js.js_string Js.t ->

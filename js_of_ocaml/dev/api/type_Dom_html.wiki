@@ -432,6 +432,7 @@
     object ('a)
       method appendChild : Dom.node Js.t -> Dom.node Js.t Js.meth
       method attributes : Dom.attr Dom.namedNodeMap Js.t Js.readonly_prop
+      method blur : unit Js.meth
       method childNodes : Dom.node Dom.nodeList Js.t Js.prop
       method classList : Dom_html.tokenList Js.t Js.readonly_prop
       method className : Js.js_string Js.t Js.prop
@@ -445,6 +446,7 @@
         Dom.node Js.t -> Dom.DocumentPosition.t Js.meth
       method dir : Js.js_string Js.t Js.prop
       method firstChild : Dom.node Js.t Js.opt Js.prop
+      method focus : unit Js.meth
       method getAttribute :
         Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
       method getAttributeNS :
@@ -591,6 +593,7 @@
     object ('a)
       method appendChild : Dom.node Js.t -> Dom.node Js.t Js.meth
       method attributes : Dom.attr Dom.namedNodeMap Js.t Js.readonly_prop
+      method blur : unit Js.meth
       method childNodes : Dom.node Dom.nodeList Js.t Js.prop
       method classList : tokenList Js.t Js.readonly_prop
       method className : Js.js_string Js.t Js.prop
@@ -604,6 +607,7 @@
         Dom.node Js.t -> Dom.DocumentPosition.t Js.meth
       method dir : Js.js_string Js.t Js.prop
       method firstChild : Dom.node Js.t Js.opt Js.prop
+      method focus : unit Js.meth
       method getAttribute :
         Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
       method getAttributeNS :
@@ -723,6 +727,7 @@
       method _type : Js.js_string Js.t Js.prop
       method appendChild : Dom.node Js.t -> Dom.node Js.t Js.meth
       method attributes : Dom.attr Dom.namedNodeMap Js.t Js.readonly_prop
+      method blur : unit Js.meth
       method charset : Js.js_string Js.t Js.prop
       method childNodes : Dom.node Dom.nodeList Js.t Js.prop
       method classList : tokenList Js.t Js.readonly_prop
@@ -739,6 +744,7 @@
       method dir : Js.js_string Js.t Js.prop
       method disabled : bool Js.t Js.prop
       method firstChild : Dom.node Js.t Js.opt Js.prop
+      method focus : unit Js.meth
       method getAttribute :
         Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
       method getAttributeNS :
@@ -862,6 +868,7 @@
     object ('a)
       method appendChild : Dom.node Js.t -> Dom.node Js.t Js.meth
       method attributes : Dom.attr Dom.namedNodeMap Js.t Js.readonly_prop
+      method blur : unit Js.meth
       method childNodes : Dom.node Dom.nodeList Js.t Js.prop
       method classList : tokenList Js.t Js.readonly_prop
       method className : Js.js_string Js.t Js.prop
@@ -875,6 +882,7 @@
         Dom.node Js.t -> Dom.DocumentPosition.t Js.meth
       method dir : Js.js_string Js.t Js.prop
       method firstChild : Dom.node Js.t Js.opt Js.prop
+      method focus : unit Js.meth
       method getAttribute :
         Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
       method getAttributeNS :
@@ -993,6 +1001,7 @@
     object ('a)
       method appendChild : Dom.node Js.t -> Dom.node Js.t Js.meth
       method attributes : Dom.attr Dom.namedNodeMap Js.t Js.readonly_prop
+      method blur : unit Js.meth
       method childNodes : Dom.node Dom.nodeList Js.t Js.prop
       method classList : tokenList Js.t Js.readonly_prop
       method className : Js.js_string Js.t Js.prop
@@ -1007,6 +1016,7 @@
       method content : Js.js_string Js.t Js.prop
       method dir : Js.js_string Js.t Js.prop
       method firstChild : Dom.node Js.t Js.opt Js.prop
+      method focus : unit Js.meth
       method getAttribute :
         Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
       method getAttributeNS :
@@ -1127,6 +1137,7 @@
     object ('a)
       method appendChild : Dom.node Js.t -> Dom.node Js.t Js.meth
       method attributes : Dom.attr Dom.namedNodeMap Js.t Js.readonly_prop
+      method blur : unit Js.meth
       method childNodes : Dom.node Dom.nodeList Js.t Js.prop
       method classList : tokenList Js.t Js.readonly_prop
       method className : Js.js_string Js.t Js.prop
@@ -1140,6 +1151,7 @@
         Dom.node Js.t -> Dom.DocumentPosition.t Js.meth
       method dir : Js.js_string Js.t Js.prop
       method firstChild : Dom.node Js.t Js.opt Js.prop
+      method focus : unit Js.meth
       method getAttribute :
         Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
       method getAttributeNS :
@@ -1260,6 +1272,7 @@
       method _type : Js.js_string Js.t Js.prop
       method appendChild : Dom.node Js.t -> Dom.node Js.t Js.meth
       method attributes : Dom.attr Dom.namedNodeMap Js.t Js.readonly_prop
+      method blur : unit Js.meth
       method childNodes : Dom.node Dom.nodeList Js.t Js.prop
       method classList : tokenList Js.t Js.readonly_prop
       method className : Js.js_string Js.t Js.prop
@@ -1274,6 +1287,7 @@
       method dir : Js.js_string Js.t Js.prop
       method disabled : bool Js.t Js.prop
       method firstChild : Dom.node Js.t Js.opt Js.prop
+      method focus : unit Js.meth
       method getAttribute :
         Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
       method getAttributeNS :
@@ -1396,6 +1410,7 @@
       method action : Js.js_string Js.t Js.prop
       method appendChild : Dom.node Js.t -> Dom.node Js.t Js.meth
       method attributes : Dom.attr Dom.namedNodeMap Js.t Js.readonly_prop
+      method blur : unit Js.meth
       method childNodes : Dom.node Dom.nodeList Js.t Js.prop
       method classList : tokenList Js.t Js.readonly_prop
       method className : Js.js_string Js.t Js.prop
@@ -1412,6 +1427,7 @@
         Dom_html.element Dom_html.collection Js.t Js.readonly_prop
       method enctype : Js.js_string Js.t Js.prop
       method firstChild : Dom.node Js.t Js.opt Js.prop
+      method focus : unit Js.meth
       method getAttribute :
         Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
       method getAttributeNS :
@@ -1536,6 +1552,7 @@
     object ('a)
       method appendChild : Dom.node Js.t -> Dom.node Js.t Js.meth
       method attributes : Dom.attr Dom.namedNodeMap Js.t Js.readonly_prop
+      method blur : unit Js.meth
       method childNodes : Dom.node Dom.nodeList Js.t Js.prop
       method classList : tokenList Js.t Js.readonly_prop
       method className : Js.js_string Js.t Js.prop
@@ -1550,6 +1567,7 @@
       method dir : Js.js_string Js.t Js.prop
       method disabled : bool Js.t Js.prop
       method firstChild : Dom.node Js.t Js.opt Js.prop
+      method focus : unit Js.meth
       method getAttribute :
         Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
       method getAttributeNS :
@@ -1668,6 +1686,7 @@
     object ('a)
       method appendChild : Dom.node Js.t -> Dom.node Js.t Js.meth
       method attributes : Dom.attr Dom.namedNodeMap Js.t Js.readonly_prop
+      method blur : unit Js.meth
       method childNodes : Dom.node Dom.nodeList Js.t Js.prop
       method classList : tokenList Js.t Js.readonly_prop
       method className : Js.js_string Js.t Js.prop
@@ -1683,6 +1702,7 @@
       method dir : Js.js_string Js.t Js.prop
       method disabled : bool Js.t Js.prop
       method firstChild : Dom.node Js.t Js.opt Js.prop
+      method focus : unit Js.meth
       method form : Dom_html.formElement Js.t Js.opt Js.readonly_prop
       method getAttribute :
         Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
@@ -2356,6 +2376,7 @@
       method accessKey : Js.js_string Js.t Js.prop
       method appendChild : Dom.node Js.t -> Dom.node Js.t Js.meth
       method attributes : Dom.attr Dom.namedNodeMap Js.t Js.readonly_prop
+      method blur : unit Js.meth
       method childNodes : Dom.node Dom.nodeList Js.t Js.prop
       method classList : tokenList Js.t Js.readonly_prop
       method className : Js.js_string Js.t Js.prop
@@ -2370,6 +2391,7 @@
       method dir : Js.js_string Js.t Js.prop
       method disabled : bool Js.t Js.prop
       method firstChild : Dom.node Js.t Js.opt Js.prop
+      method focus : unit Js.meth
       method form : Dom_html.formElement Js.t Js.opt Js.readonly_prop
       method getAttribute :
         Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
@@ -2492,6 +2514,7 @@
       method accessKey : Js.js_string Js.t Js.prop
       method appendChild : Dom.node Js.t -> Dom.node Js.t Js.meth
       method attributes : Dom.attr Dom.namedNodeMap Js.t Js.readonly_prop
+      method blur : unit Js.meth
       method childNodes : Dom.node Dom.nodeList Js.t Js.prop
       method classList : tokenList Js.t Js.readonly_prop
       method className : Js.js_string Js.t Js.prop
@@ -2505,6 +2528,7 @@
         Dom.node Js.t -> Dom.DocumentPosition.t Js.meth
       method dir : Js.js_string Js.t Js.prop
       method firstChild : Dom.node Js.t Js.opt Js.prop
+      method focus : unit Js.meth
       method form : Dom_html.formElement Js.t Js.opt Js.readonly_prop
       method getAttribute :
         Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
@@ -2624,6 +2648,7 @@
     object ('a)
       method appendChild : Dom.node Js.t -> Dom.node Js.t Js.meth
       method attributes : Dom.attr Dom.namedNodeMap Js.t Js.readonly_prop
+      method blur : unit Js.meth
       method childNodes : Dom.node Dom.nodeList Js.t Js.prop
       method classList : tokenList Js.t Js.readonly_prop
       method className : Js.js_string Js.t Js.prop
@@ -2637,6 +2662,7 @@
         Dom.node Js.t -> Dom.DocumentPosition.t Js.meth
       method dir : Js.js_string Js.t Js.prop
       method firstChild : Dom.node Js.t Js.opt Js.prop
+      method focus : unit Js.meth
       method form : Dom_html.formElement Js.t Js.opt Js.readonly_prop
       method getAttribute :
         Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
@@ -2756,6 +2782,7 @@
       method accessKey : Js.js_string Js.t Js.prop
       method appendChild : Dom.node Js.t -> Dom.node Js.t Js.meth
       method attributes : Dom.attr Dom.namedNodeMap Js.t Js.readonly_prop
+      method blur : unit Js.meth
       method childNodes : Dom.node Dom.nodeList Js.t Js.prop
       method classList : tokenList Js.t Js.readonly_prop
       method className : Js.js_string Js.t Js.prop
@@ -2769,6 +2796,7 @@
         Dom.node Js.t -> Dom.DocumentPosition.t Js.meth
       method dir : Js.js_string Js.t Js.prop
       method firstChild : Dom.node Js.t Js.opt Js.prop
+      method focus : unit Js.meth
       method form : Dom_html.formElement Js.t Js.opt Js.readonly_prop
       method getAttribute :
         Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
@@ -2894,6 +2922,7 @@
     object ('a)
       method appendChild : Dom.node Js.t -> Dom.node Js.t Js.meth
       method attributes : Dom.attr Dom.namedNodeMap Js.t Js.readonly_prop
+      method blur : unit Js.meth
       method childNodes : Dom.node Dom.nodeList Js.t Js.prop
       method cite : Js.js_string Js.t Js.prop
       method classList : tokenList Js.t Js.readonly_prop
@@ -2908,6 +2937,7 @@
         Dom.node Js.t -> Dom.DocumentPosition.t Js.meth
       method dir : Js.js_string Js.t Js.prop
       method firstChild : Dom.node Js.t Js.opt Js.prop
+      method focus : unit Js.meth
       method getAttribute :
         Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
       method getAttributeNS :
@@ -3028,6 +3058,7 @@
     object ('a)
       method appendChild : Dom.node Js.t -> Dom.node Js.t Js.meth
       method attributes : Dom.attr Dom.namedNodeMap Js.t Js.readonly_prop
+      method blur : unit Js.meth
       method childNodes : Dom.node Dom.nodeList Js.t Js.prop
       method cite : Js.js_string Js.t Js.prop
       method classList : tokenList Js.t Js.readonly_prop
@@ -3043,6 +3074,7 @@
       method dateTime : Js.js_string Js.t Js.prop
       method dir : Js.js_string Js.t Js.prop
       method firstChild : Dom.node Js.t Js.opt Js.prop
+      method focus : unit Js.meth
       method getAttribute :
         Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
       method getAttributeNS :
@@ -3305,6 +3337,7 @@
       method alt : Js.js_string Js.t Js.prop
       method appendChild : Dom.node Js.t -> Dom.node Js.t Js.meth
       method attributes : Dom.attr Dom.namedNodeMap Js.t Js.readonly_prop
+      method blur : unit Js.meth
       method childNodes : Dom.node Dom.nodeList Js.t Js.prop
       method classList : Dom_html.tokenList Js.t Js.readonly_prop
       method className : Js.js_string Js.t Js.prop
@@ -3319,6 +3352,7 @@
       method complete : bool Js.t Js.prop
       method dir : Js.js_string Js.t Js.prop
       method firstChild : Dom.node Js.t Js.opt Js.prop
+      method focus : unit Js.meth
       method getAttribute :
         Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
       method getAttributeNS :
@@ -3474,6 +3508,7 @@
       method appendChild : Dom.node Js.t -> Dom.node Js.t Js.meth
       method archive : Js.js_string Js.t Js.prop
       method attributes : Dom.attr Dom.namedNodeMap Js.t Js.readonly_prop
+      method blur : unit Js.meth
       method childNodes : Dom.node Dom.nodeList Js.t Js.prop
       method classList : tokenList Js.t Js.readonly_prop
       method className : Js.js_string Js.t Js.prop
@@ -3493,6 +3528,7 @@
       method dir : Js.js_string Js.t Js.prop
       method document : Dom.element Dom.document Js.t Js.opt Js.readonly_prop
       method firstChild : Dom.node Js.t Js.opt Js.prop
+      method focus : unit Js.meth
       method form : Dom_html.formElement Js.t Js.opt Js.readonly_prop
       method getAttribute :
         Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
@@ -3618,6 +3654,7 @@
       method _type : Js.js_string Js.t Js.prop
       method appendChild : Dom.node Js.t -> Dom.node Js.t Js.meth
       method attributes : Dom.attr Dom.namedNodeMap Js.t Js.readonly_prop
+      method blur : unit Js.meth
       method childNodes : Dom.node Dom.nodeList Js.t Js.prop
       method classList : tokenList Js.t Js.readonly_prop
       method className : Js.js_string Js.t Js.prop
@@ -3631,6 +3668,7 @@
         Dom.node Js.t -> Dom.DocumentPosition.t Js.meth
       method dir : Js.js_string Js.t Js.prop
       method firstChild : Dom.node Js.t Js.opt Js.prop
+      method focus : unit Js.meth
       method getAttribute :
         Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
       method getAttributeNS :
@@ -3753,6 +3791,7 @@
       method alt : Js.js_string Js.t Js.prop
       method appendChild : Dom.node Js.t -> Dom.node Js.t Js.meth
       method attributes : Dom.attr Dom.namedNodeMap Js.t Js.readonly_prop
+      method blur : unit Js.meth
       method childNodes : Dom.node Dom.nodeList Js.t Js.prop
       method classList : tokenList Js.t Js.readonly_prop
       method className : Js.js_string Js.t Js.prop
@@ -3767,6 +3806,7 @@
       method coords : Js.js_string Js.t Js.prop
       method dir : Js.js_string Js.t Js.prop
       method firstChild : Dom.node Js.t Js.opt Js.prop
+      method focus : unit Js.meth
       method getAttribute :
         Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
       method getAttributeNS :
@@ -3891,6 +3931,7 @@
       method areas :
         Dom_html.areaElement Dom_html.collection Js.t Js.readonly_prop
       method attributes : Dom.attr Dom.namedNodeMap Js.t Js.readonly_prop
+      method blur : unit Js.meth
       method childNodes : Dom.node Dom.nodeList Js.t Js.prop
       method classList : tokenList Js.t Js.readonly_prop
       method className : Js.js_string Js.t Js.prop
@@ -3904,6 +3945,7 @@
         Dom.node Js.t -> Dom.DocumentPosition.t Js.meth
       method dir : Js.js_string Js.t Js.prop
       method firstChild : Dom.node Js.t Js.opt Js.prop
+      method focus : unit Js.meth
       method getAttribute :
         Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
       method getAttributeNS :
@@ -4024,6 +4066,7 @@
       method appendChild : Dom.node Js.t -> Dom.node Js.t Js.meth
       method async : bool Js.t Js.prop
       method attributes : Dom.attr Dom.namedNodeMap Js.t Js.readonly_prop
+      method blur : unit Js.meth
       method charset : Js.js_string Js.t Js.prop
       method childNodes : Dom.node Dom.nodeList Js.t Js.prop
       method classList : tokenList Js.t Js.readonly_prop
@@ -4039,6 +4082,7 @@
       method defer : bool Js.t Js.prop
       method dir : Js.js_string Js.t Js.prop
       method firstChild : Dom.node Js.t Js.opt Js.prop
+      method focus : unit Js.meth
       method getAttribute :
         Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
       method getAttributeNS :
@@ -4159,6 +4203,7 @@
       method _type : Js.js_string Js.t Js.prop
       method appendChild : Dom.node Js.t -> Dom.node Js.t Js.meth
       method attributes : Dom.attr Dom.namedNodeMap Js.t Js.readonly_prop
+      method blur : unit Js.meth
       method childNodes : Dom.node Dom.nodeList Js.t Js.prop
       method classList : tokenList Js.t Js.readonly_prop
       method className : Js.js_string Js.t Js.prop
@@ -4172,6 +4217,7 @@
         Dom.node Js.t -> Dom.DocumentPosition.t Js.meth
       method dir : Js.js_string Js.t Js.prop
       method firstChild : Dom.node Js.t Js.opt Js.prop
+      method focus : unit Js.meth
       method getAttribute :
         Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
       method getAttributeNS :
@@ -4295,6 +4341,7 @@
       method appendChild : Dom.node Js.t -> Dom.node Js.t Js.meth
       method attributes : Dom.attr Dom.namedNodeMap Js.t Js.readonly_prop
       method axis : Js.js_string Js.t Js.prop
+      method blur : unit Js.meth
       method cellIndex : int Js.readonly_prop
       method ch : Js.js_string Js.t Js.prop
       method chOff : Js.js_string Js.t Js.prop
@@ -4312,6 +4359,7 @@
         Dom.node Js.t -> Dom.DocumentPosition.t Js.meth
       method dir : Js.js_string Js.t Js.prop
       method firstChild : Dom.node Js.t Js.opt Js.prop
+      method focus : unit Js.meth
       method getAttribute :
         Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
       method getAttributeNS :
@@ -4434,6 +4482,7 @@
       method align : Js.js_string Js.t Js.prop
       method appendChild : Dom.node Js.t -> Dom.node Js.t Js.meth
       method attributes : Dom.attr Dom.namedNodeMap Js.t Js.readonly_prop
+      method blur : unit Js.meth
       method cells :
         Dom_html.tableCellElement Dom_html.collection Js.t Js.readonly_prop
       method ch : Js.js_string Js.t Js.prop
@@ -4452,6 +4501,7 @@
       method deleteCell : int -> unit Js.meth
       method dir : Js.js_string Js.t Js.prop
       method firstChild : Dom.node Js.t Js.opt Js.prop
+      method focus : unit Js.meth
       method getAttribute :
         Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
       method getAttributeNS :
@@ -4574,6 +4624,7 @@
       method align : Js.js_string Js.t Js.prop
       method appendChild : Dom.node Js.t -> Dom.node Js.t Js.meth
       method attributes : Dom.attr Dom.namedNodeMap Js.t Js.readonly_prop
+      method blur : unit Js.meth
       method ch : Js.js_string Js.t Js.prop
       method chOff : Js.js_string Js.t Js.prop
       method childNodes : Dom.node Dom.nodeList Js.t Js.prop
@@ -4589,6 +4640,7 @@
         Dom.node Js.t -> Dom.DocumentPosition.t Js.meth
       method dir : Js.js_string Js.t Js.prop
       method firstChild : Dom.node Js.t Js.opt Js.prop
+      method focus : unit Js.meth
       method getAttribute :
         Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
       method getAttributeNS :
@@ -4710,6 +4762,7 @@
       method align : Js.js_string Js.t Js.prop
       method appendChild : Dom.node Js.t -> Dom.node Js.t Js.meth
       method attributes : Dom.attr Dom.namedNodeMap Js.t Js.readonly_prop
+      method blur : unit Js.meth
       method ch : Js.js_string Js.t Js.prop
       method chOff : Js.js_string Js.t Js.prop
       method childNodes : Dom.node Dom.nodeList Js.t Js.prop
@@ -4726,6 +4779,7 @@
       method deleteRow : int -> unit Js.meth
       method dir : Js.js_string Js.t Js.prop
       method firstChild : Dom.node Js.t Js.opt Js.prop
+      method focus : unit Js.meth
       method getAttribute :
         Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
       method getAttributeNS :
@@ -4849,6 +4903,7 @@
       method align : Js.js_string Js.t Js.prop
       method appendChild : Dom.node Js.t -> Dom.node Js.t Js.meth
       method attributes : Dom.attr Dom.namedNodeMap Js.t Js.readonly_prop
+      method blur : unit Js.meth
       method border : Js.js_string Js.t Js.prop
       method caption : Dom_html.tableCaptionElement Js.t Js.prop
       method cellPadding : Js.js_string Js.t Js.prop
@@ -4873,6 +4928,7 @@
       method deleteTHead : unit Js.meth
       method dir : Js.js_string Js.t Js.prop
       method firstChild : Dom.node Js.t Js.opt Js.prop
+      method focus : unit Js.meth
       method frame : Js.js_string Js.t Js.prop
       method getAttribute :
         Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
@@ -5020,6 +5076,7 @@
       method appendChild : Dom.node Js.t -> Dom.node Js.t Js.meth
       method attributes : Dom.attr Dom.namedNodeMap Js.t Js.readonly_prop
       method autoplay : bool Js.t Js.prop
+      method blur : unit Js.meth
       method buffered : Dom_html.timeRanges Js.t Js.readonly_prop
       method canPlayType : Js.js_string Js.t -> Js.js_string Js.t Js.meth
       method childNodes : Dom.node Dom.nodeList Js.t Js.prop
@@ -5040,6 +5097,7 @@
       method duration : float Js.readonly_prop
       method ended : bool Js.t Js.readonly_prop
       method firstChild : Dom.node Js.t Js.opt Js.prop
+      method focus : unit Js.meth
       method getAttribute :
         Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
       method getAttributeNS :
@@ -5176,6 +5234,7 @@
       method appendChild : Dom.node Js.t -> Dom.node Js.t Js.meth
       method attributes : Dom.attr Dom.namedNodeMap Js.t Js.readonly_prop
       method autoplay : bool Js.t Js.prop
+      method blur : unit Js.meth
       method buffered : timeRanges Js.t Js.readonly_prop
       method canPlayType : Js.js_string Js.t -> Js.js_string Js.t Js.meth
       method childNodes : Dom.node Dom.nodeList Js.t Js.prop
@@ -5196,6 +5255,7 @@
       method duration : float Js.readonly_prop
       method ended : bool Js.t Js.readonly_prop
       method firstChild : Dom.node Js.t Js.opt Js.prop
+      method focus : unit Js.meth
       method getAttribute :
         Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
       method getAttributeNS :
@@ -5332,6 +5392,7 @@
       method appendChild : Dom.node Js.t -> Dom.node Js.t Js.meth
       method attributes : Dom.attr Dom.namedNodeMap Js.t Js.readonly_prop
       method autoplay : bool Js.t Js.prop
+      method blur : unit Js.meth
       method buffered : timeRanges Js.t Js.readonly_prop
       method canPlayType : Js.js_string Js.t -> Js.js_string Js.t Js.meth
       method childNodes : Dom.node Dom.nodeList Js.t Js.prop
@@ -5352,6 +5413,7 @@
       method duration : float Js.readonly_prop
       method ended : bool Js.t Js.readonly_prop
       method firstChild : Dom.node Js.t Js.opt Js.prop
+      method focus : unit Js.meth
       method getAttribute :
         Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
       method getAttributeNS :
@@ -5490,6 +5552,7 @@
     object ('a)
       method appendChild : Dom.node Js.t -> Dom.node Js.t Js.meth
       method attributes : Dom.attr Dom.namedNodeMap Js.t Js.readonly_prop
+      method blur : unit Js.meth
       method childNodes : Dom.node Dom.nodeList Js.t Js.prop
       method classList : tokenList Js.t Js.readonly_prop
       method className : Js.js_string Js.t Js.prop
@@ -5503,6 +5566,7 @@
         Dom.node Js.t -> Dom.DocumentPosition.t Js.meth
       method dir : Js.js_string Js.t Js.prop
       method firstChild : Dom.node Js.t Js.opt Js.prop
+      method focus : unit Js.meth
       method getAttribute :
         Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
       method getAttributeNS :
@@ -6202,6 +6266,7 @@
     object ('a)
       method appendChild : Dom.node Js.t -> Dom.node Js.t Js.meth
       method attributes : Dom.attr Dom.namedNodeMap Js.t Js.readonly_prop
+      method blur : unit Js.meth
       method childNodes : Dom.node Dom.nodeList Js.t Js.prop
       method classList : tokenList Js.t Js.readonly_prop
       method className : Js.js_string Js.t Js.prop
@@ -6216,6 +6281,7 @@
         Dom.node Js.t -> Dom.DocumentPosition.t Js.meth
       method dir : Js.js_string Js.t Js.prop
       method firstChild : Dom.node Js.t Js.opt Js.prop
+      method focus : unit Js.meth
       method getAttribute :
         Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
       method getAttributeNS :
@@ -6334,6 +6400,7 @@
     object ('a)
       method appendChild : Dom.node Js.t -> Dom.node Js.t Js.meth
       method attributes : Dom.attr Dom.namedNodeMap Js.t Js.readonly_prop
+      method blur : unit Js.meth
       method childNodes : Dom.node Dom.nodeList Js.t Js.prop
       method classList : tokenList Js.t Js.readonly_prop
       method className : Js.js_string Js.t Js.prop
@@ -6348,6 +6415,7 @@
       method contentDocument : Dom_html.document Js.t Js.opt Js.readonly_prop
       method dir : Js.js_string Js.t Js.prop
       method firstChild : Dom.node Js.t Js.opt Js.prop
+      method focus : unit Js.meth
       method frameBorder : Js.js_string Js.t Js.prop
       method getAttribute :
         Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
@@ -6473,6 +6541,7 @@
     object ('a)
       method appendChild : Dom.node Js.t -> Dom.node Js.t Js.meth
       method attributes : Dom.attr Dom.namedNodeMap Js.t Js.readonly_prop
+      method blur : unit Js.meth
       method childNodes : Dom.node Dom.nodeList Js.t Js.prop
       method classList : tokenList Js.t Js.readonly_prop
       method className : Js.js_string Js.t Js.prop
@@ -6488,6 +6557,7 @@
       method contentWindow : Dom_html.window Js.t Js.readonly_prop
       method dir : Js.js_string Js.t Js.prop
       method firstChild : Dom.node Js.t Js.opt Js.prop
+      method focus : unit Js.meth
       method frameBorder : Js.js_string Js.t Js.prop
       method getAttribute :
         Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
