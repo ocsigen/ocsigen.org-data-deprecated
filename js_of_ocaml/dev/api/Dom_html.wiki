@@ -46,6 +46,24 @@
 
 <<pre class="ocsforge_color odocwiki_code"|<<span id="TYPEdocument"|<<span class="ocsforge_color_keyword"|class type>> <<a_api text="document" | class type Dom_html.document >>>> <<span class="ocsforge_color_delimiter"|~=>> <<span class="ocsforge_color_keyword"|object>><<a_api text=".." | class type Dom_html.document >><<span class="ocsforge_color_keyword"|end>>>><<pre id="VALdocument" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|document>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<a_api text="document" | class type Dom_html.document >> <<a_api text="Js.t" | type Js.t >>>>>><<div class="odocwiki_info"|~The current document
 >>
+<<pre id="VALgetElementById_opt" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|get~Element~By~Id~_opt>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|string <<span class="ocsforge_color_delimiter"| -> >> <<a_api text="element" | class type Dom_html.element >> <<a_api text="Js.t" | type Js.t >> option>>>><<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|get~Element~By~Id~_opt id>> returns the element with the id <<span class="odocwiki_inlinecode"|id>> in the
+    current document~. ~It returns <<span class="odocwiki_inlinecode"|~None>> if there are no such element
+>>
+<<pre id="VALgetElementById_exn" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|get~Element~By~Id~_exn>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|string <<span class="ocsforge_color_delimiter"| -> >> <<a_api text="element" | class type Dom_html.element >> <<a_api text="Js.t" | type Js.t >>>>>><<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|get~Element~By~Id~_exn id>> returns the element with the id <<span class="odocwiki_inlinecode"|id>> in the
+    current document~. ~It raises if there are no such element
+>>
+<<pre id="VALgetElementById_coerce" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|get~Element~By~Id~_coerce>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|\\  string <<span class="ocsforge_color_delimiter"| -> >> <<span class="ocsforge_color_delimiter"| ( >><<a_api text="element" | class type Dom_html.element >> <<a_api text="Js.t" | type Js.t >> <<span class="ocsforge_color_delimiter"| -> >> 'a <<a_api text="Js.opt" | type Js.opt >><<span class="ocsforge_color_delimiter"| ) >> <<span class="ocsforge_color_delimiter"| -> >> 'a option>>>><<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|get~Element~By~Id~_coerce id coerce>> returns the element with the id <<span class="odocwiki_inlinecode"|id>> in the
+    current document and attempt to coerce it using the provided <<span class="odocwiki_inlinecode"|coerce>> function~.
+    ~It returns <<span class="odocwiki_inlinecode"|~None>> if there are no such element or if the <<span class="odocwiki_inlinecode"|coerce>> function
+    returns <<span class="odocwiki_inlinecode"|~Js~.none>>~.
+    ~Typical usage is the following~:
+    
+<<code language='ocaml'|      match Dom_html.getElementById_coerce "myinput" Dom_html.CoerceTo.input with
+      | None -> ..
+      | Some input -> ..
+    >>
+
+>>
 <<pre id="VALgetElementById" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|get~Element~By~Id>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|string <<span class="ocsforge_color_delimiter"| -> >> <<a_api text="element" | class type Dom_html.element >> <<a_api text="Js.t" | type Js.t >>>>>><<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|get~Element~By~Id id>> returns the element with the id <<span class="odocwiki_inlinecode"|id>> in the
     current document~. ~It raises <<span class="odocwiki_inlinecode"|~Not~_found>> if there are no such element
 >>

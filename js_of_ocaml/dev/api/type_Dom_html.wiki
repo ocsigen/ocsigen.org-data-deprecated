@@ -5993,6 +5993,10 @@
       method write : Js.js_string Js.t -> unit Js.meth
     end
   val document : Dom_html.document Js.t
+  val getElementById_opt : string -> Dom_html.element Js.t option
+  val getElementById_exn : string -> Dom_html.element Js.t
+  val getElementById_coerce :
+    string -> (Dom_html.element Js.t -> 'a Js.opt) -> 'a option
   val getElementById : string -> Dom_html.element Js.t
   class type location =
     object

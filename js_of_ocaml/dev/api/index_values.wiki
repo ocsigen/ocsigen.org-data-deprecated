@@ -639,6 +639,18 @@
     current document~.
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api text="getElementById_coerce"| value Dom_html.getElementById_coerce >> ~[<<a_api | module Dom_html >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|get~Element~By~Id~_coerce id coerce>> returns the element with the id <<span class="odocwiki_inlinecode"|id>> in the
+    current document and attempt to coerce it using the provided <<span class="odocwiki_inlinecode"|coerce>> function~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="getElementById_exn"| value Dom_html.getElementById_exn >> ~[<<a_api | module Dom_html >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|get~Element~By~Id~_exn id>> returns the element with the id <<span class="odocwiki_inlinecode"|id>> in the
+    current document~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="getElementById_opt"| value Dom_html.getElementById_opt >> ~[<<a_api | module Dom_html >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|get~Element~By~Id~_opt id>> returns the element with the id <<span class="odocwiki_inlinecode"|id>> in the
+    current document~.
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api text="get_context"| value Graphics_js.get_context >> ~[<<a_api | module Graphics_js >>~]|<<div class="odocwiki_info"|~Get the current context
 >>
 |
