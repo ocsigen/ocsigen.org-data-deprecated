@@ -10,11 +10,11 @@
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="CoerceTo"| module Dom.CoerceTo >> ~[<<a_api | module Dom >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="CoerceTo"| module Dom_html.CoerceTo >> ~[<<a_api | module Dom_html >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="CoerceTo"| module File.CoerceTo >> ~[<<a_api | module File >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="CoerceTo"| module Dom_svg.CoerceTo >> ~[<<a_api | module Dom_svg >>~]|<<div class="odocwiki_info"|~Coercion functions
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api text="CoerceTo"| module File.CoerceTo >> ~[<<a_api | module File >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="CoerceTo"| module Dom_html.CoerceTo >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="Color"| module CSS.Color >> ~[<<a_api | module CSS >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="Current"| module Url.Current >> ~[<<a_api | module Url >>~]|<<div class="odocwiki_info"|~This module can be used to handle the ~Url associated to the current
     document~.
@@ -117,7 +117,6 @@
 |@@class="odocwiki_index"@ @@<<a_api text="Keyboard_key"| module Dom_html.Keyboard_key >> ~[<<a_api | module Dom_html >>~]|<<div class="odocwiki_info"|~Use <<span class="odocwiki_inlinecode"|~Keyboard~_key>> when you want to identify the character that the user typed~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api text="Keycode"| module Keycode >> ||
 |@@ @style="tet-align: left;"@@\\L|
 |@@class="odocwiki_index"@ @@<<a_api text="Length"| module CSS.Length >> ~[<<a_api | module CSS >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="Lwt_file"| module Lwt_file >> ||
