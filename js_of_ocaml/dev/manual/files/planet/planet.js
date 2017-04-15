@@ -1364,17 +1364,17 @@
      _ca_=caml_new_string("option"),
      _ci_=caml_new_string("Dom_html.Canvas_not_available"),
      _ck_=caml_new_string("Exception during Lwt.async: "),
-     _cv_=[0,[8,2,[0,1,2],[0,0],0],caml_new_string("% 2.f")],
+     _cv_=[0,[8,0,0,[0,2],0],caml_new_string("%.2f")],
      _cp_=caml_new_string("Resume"),
      _cq_=caml_new_string("Pause"),
      _cr_=caml_new_string("Fixed position"),
      _cs_=caml_new_string("Follow rotation"),
      _ct_=caml_new_string("Lighting"),
      _cu_=caml_new_string("Clip"),
-     _co_=[0,caml_new_string("examples/planet/planet.ml"),417,0],
-     _cn_=[0,caml_new_string("examples/planet/planet.ml"),418,0],
-     _cm_=[0,caml_new_string("examples/planet/planet.ml"),419,0],
-     _cl_=[0,caml_new_string("examples/planet/planet.ml"),420,0];
+     _co_=[0,caml_new_string("examples/planet/planet.ml"),416,0],
+     _cn_=[0,caml_new_string("examples/planet/planet.ml"),417,0],
+     _cm_=[0,caml_new_string("examples/planet/planet.ml"),418,0],
+     _cl_=[0,caml_new_string("examples/planet/planet.ml"),419,0];
     function erase_rel(param)
      {if(typeof param === "number")
        return 0;

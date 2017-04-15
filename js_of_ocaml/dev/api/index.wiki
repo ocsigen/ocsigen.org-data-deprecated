@@ -21,7 +21,7 @@
 >>
 |
 |<<a_api | module CSS >>|<<div class="odocwiki_info"|~This module contains a few types and values to ease the use of ~C~S~S properties
-   and such~.
+    and such~.
 >>
 |
 |<<a_api | module EventSource >>|<<div class="odocwiki_info"|~Event~Source binding
@@ -100,12 +100,25 @@
 
 
 
-=@@id="1_PpxAPIReference"@@~Ppx ~- ~A~P~I ~Reference=
+==@@id="2_LwtloggerAPIReference"@@~Lwt logger ~- ~A~P~I ~Reference==
 
 
 
 
-|<<a_api | module Ppx_js >>|<<div class="odocwiki_info"|~Ppx syntax extension for ~Js~_of~_ocaml~.
+|<<a_api | module Lwt_log_js >>|<<div class="odocwiki_info"|~Lwt logger for js~_of~_ocaml
+>>
+|
+
+
+
+
+
+==@@id="2_GraphicsAPIReference"@@~Graphics ~- ~A~P~I ~Reference==
+
+
+
+
+|<<a_api | module Graphics_js >>|<<div class="odocwiki_info"|~Javascript binding for ~Graphics lib
 >>
 |
 
@@ -129,19 +142,6 @@
 
 
 
-=@@id="1_LoggerAPIReference"@@~Logger ~- ~A~P~I ~Reference=
-
-
-
-
-|<<a_api | module Lwt_log_js >>|<<div class="odocwiki_info"|~Lwt logger for js~_of~_ocaml
->>
-|
-
-
-
-
-
 =@@id="1_TyxmlAPIReference"@@~Tyxml ~- ~A~P~I ~Reference=
 
 
@@ -154,19 +154,6 @@
 >>
 |
 |<<a_api | module Tyxml_cast_sigs >>|<<div class="odocwiki_info"|~Signatures to cast to and from ~Tyxml types
->>
-|
-
-
-
-
-
-=@@id="1_GraphicsAPIReference"@@~Graphics ~- ~A~P~I ~Reference=
-
-
-
-
-|<<a_api | module Graphics_js >>|<<div class="odocwiki_info"|~Javascript binding for ~Graphics lib
 >>
 |
 

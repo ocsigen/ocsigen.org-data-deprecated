@@ -2105,7 +2105,7 @@
      _cS_=caml_new_string("image_info.json"),
      _cQ_=[0,0,0,0],
      _cR_=[254,-1,0],
-     _cP_=[0,caml_new_string("examples/hyperbolic/hypertree.ml"),928,2],
+     _cP_=[0,caml_new_string("examples/hyperbolic/hypertree.ml"),918,2],
      _cO_=caml_new_string("<TITLE>"),
      _cN_=caml_new_string(""),
      _cI_=caml_new_string(".jpg"),
@@ -7042,7 +7042,7 @@
     var need_redraw=[0,0],redraw_funct=[0,function(param){return 0}];
     function perform_redraw(param)
      {need_redraw[1] = 0;return caml_call1(redraw_funct[1],0)}
-    function schedule_redraw(now)
+    function schedule_redraw(param)
      {var _fV_=1 - need_redraw[1];
       return _fV_
               ?(need_redraw[1]
@@ -8125,7 +8125,7 @@
                             h=page.clientHeight,
                             _d8_=w !== canvas.width?1:0,
                             _d9_=_d8_ || (h !== canvas.height?1:0);
-                           if(_d9_)schedule_redraw(1);
+                           if(_d9_)schedule_redraw(0);
                            return true$0});
                        function find_box(boxes,x,y)
                         {var p=[0,-1],_d3_=boxes[3].length - 1 - 1 | 0,_d2_=0;
@@ -8198,7 +8198,7 @@
                                       z0$0=caml_call1(transl(neg(p)),z0),
                                       p$0=compute_translation(z0$0,z1);
                                      tr$0[1] = [0,p$0,t];
-                                     schedule_redraw(1)}
+                                     schedule_redraw(0)}
                                    stopPropagation(ev);
                                    return true$0}),
                                true$0),
@@ -8285,7 +8285,7 @@
                                                     z0$0=caml_call1(transl(neg(p)),z0),
                                                     p$0=compute_translation(z0$0,z1);
                                                    tr$0[1] = [0,p$0,t];
-                                                   return schedule_redraw(1)}
+                                                   return schedule_redraw(0)}
                                                  var _dT_=_dS_}
                                                else
                                                 var _dT_=_dO_;
@@ -8385,7 +8385,7 @@
                              p$0=compute_translation(z0$3,z1);
                             tr$0[1] = [0,p$0,t];
                             tr[1] = tr$0[1];
-                            schedule_redraw(1);
+                            schedule_redraw(0);
                             return false$0;
                            case 1:
                             var
@@ -8395,7 +8395,7 @@
                              p$2=compute_translation(z0$4,z1$0);
                             tr$0[1] = [0,p$2,t];
                             tr[1] = tr$0[1];
-                            schedule_redraw(1);
+                            schedule_redraw(0);
                             return false$0;
                            case 2:
                             var
@@ -8405,7 +8405,7 @@
                              p$4=compute_translation(z0$5,z1$1);
                             tr$0[1] = [0,p$4,t];
                             tr[1] = tr$0[1];
-                            schedule_redraw(1);
+                            schedule_redraw(0);
                             return false$0;
                            default:
                             var
@@ -8415,7 +8415,7 @@
                              p$6=compute_translation(z0$6,z1$2);
                             tr$0[1] = [0,p$6,t];
                             tr[1] = tr$0[1];
-                            schedule_redraw(1);
+                            schedule_redraw(0);
                             return false$0}}
                        addEventListener
                         (document,keydown,handler(handle_key_event),true$0);
@@ -8469,7 +8469,7 @@
                                  language[1] = lang;
                                  make_buttons(0);
                                  compute_text_nodes(tree_i18n,nodes);
-                                 schedule_redraw(1);
+                                 schedule_redraw(0);
                                  return false$0});
                              var li=createLi(document);
                              appendChild(li,a);
@@ -8504,7 +8504,7 @@
                           (function(param)
                             {tr$0[1] = [0,zero,t];
                              tr[1] = tr$0[1];
-                             schedule_redraw(1);
+                             schedule_redraw(0);
                              return false$0});
                          var tt$0=tooltip(opt_style(messages.recenter,"Recenter"));
                          tt$0.style.right = "36px";

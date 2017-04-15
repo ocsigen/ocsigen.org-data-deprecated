@@ -1681,10 +1681,10 @@
      _cy_=caml_new_string("Exception during Lwt.async: "),
      _cz_=caml_new_string("Lwt_xmlHttpRequest.Wrong_headers"),
      _cC_=[0,0,0],
-     _cF_=[0,caml_new_string("examples/graph_viewer/viewer_common.ml"),260,8],
-     _cG_=[0,caml_new_string("examples/graph_viewer/viewer_common.ml"),263,8],
-     _cD_=[0,caml_new_string("examples/graph_viewer/viewer_common.ml"),269,6],
-     _cE_=[0,caml_new_string("examples/graph_viewer/viewer_common.ml"),272,6],
+     _cF_=[0,caml_new_string("examples/graph_viewer/viewer_common.ml"),257,8],
+     _cG_=[0,caml_new_string("examples/graph_viewer/viewer_common.ml"),260,8],
+     _cD_=[0,caml_new_string("examples/graph_viewer/viewer_common.ml"),266,6],
+     _cE_=[0,caml_new_string("examples/graph_viewer/viewer_common.ml"),269,6],
      _cA_=[0,caml_new_string("examples/graph_viewer/viewer_common.ml"),122,63],
      _c7_=[0,[4,0,0,0,[11,caml_new_string("px"),0]],caml_new_string("%dpx")],
      _c3_=[0,0],
@@ -1692,7 +1692,7 @@
      _c5_=[0,1],
      _c6_=[0,20],
      _c8_=caml_new_string("scene.json"),
-     _cH_=[0,caml_new_string("examples/graph_viewer/viewer_js.ml"),92,26];
+     _cH_=[0,caml_new_string("examples/graph_viewer/viewer_js.ml"),90,26];
     function erase_rel(param)
      {if(typeof param === "number")
        return 0;
@@ -6427,7 +6427,7 @@
                {var _dG_=st[3];
                 return Math.pow
                         (2,
-                         caml_call1(caml_get_public_method(sadj,834174833,367),sadj)
+                         caml_call1(caml_get_public_method(sadj,834174833,364),sadj)
                          /
                          8)
                        /
@@ -6441,7 +6441,7 @@
                  ah=Math.ceil(a[4] / scale),
                  _dr_=[0,min(aw,st[6])];
                 caml_call7
-                 (caml_get_public_method(hadj,-635267918,368),
+                 (caml_get_public_method(hadj,-635267918,365),
                   hadj,
                   0,
                   [0,st[6]],
@@ -6451,23 +6451,23 @@
                   0);
                 var
                  _ds_=
-                  caml_call1(caml_get_public_method(hadj,307110897,369),hadj),
+                  caml_call1(caml_get_public_method(hadj,307110897,366),hadj),
                  mv=st[6] - _ds_;
                 if
-                 (caml_call1(caml_get_public_method(hadj,834174833,370),hadj)
+                 (caml_call1(caml_get_public_method(hadj,834174833,367),hadj)
                   <
                   0)
                  caml_call2
-                  (caml_get_public_method(hadj,-659372076,371),hadj,0);
+                  (caml_get_public_method(hadj,-659372076,368),hadj,0);
                 if
                  (mv
                   <
-                  caml_call1(caml_get_public_method(hadj,834174833,372),hadj))
+                  caml_call1(caml_get_public_method(hadj,834174833,369),hadj))
                  caml_call2
-                  (caml_get_public_method(hadj,-659372076,373),hadj,mv);
+                  (caml_get_public_method(hadj,-659372076,370),hadj,mv);
                 var _dt_=[0,min(ah,st[7])];
                 caml_call7
-                 (caml_get_public_method(vadj,-635267918,374),
+                 (caml_get_public_method(vadj,-635267918,371),
                   vadj,
                   0,
                   [0,st[7]],
@@ -6477,20 +6477,20 @@
                   0);
                 var
                  _du_=
-                  caml_call1(caml_get_public_method(vadj,307110897,375),vadj),
+                  caml_call1(caml_get_public_method(vadj,307110897,372),vadj),
                  mv$0=st[7] - _du_;
                 if
-                 (caml_call1(caml_get_public_method(vadj,834174833,376),vadj)
+                 (caml_call1(caml_get_public_method(vadj,834174833,373),vadj)
                   <
                   0)
                  caml_call2
-                  (caml_get_public_method(vadj,-659372076,377),vadj,0);
+                  (caml_get_public_method(vadj,-659372076,374),vadj,0);
                 if
                  (mv$0
                   <
-                  caml_call1(caml_get_public_method(vadj,834174833,378),vadj))
+                  caml_call1(caml_get_public_method(vadj,834174833,375),vadj))
                  caml_call2
-                  (caml_get_public_method(vadj,-659372076,379),vadj,mv$0);
+                  (caml_get_public_method(vadj,-659372076,376),vadj,mv$0);
                 var _dv_=1 - redraw_queued[1];
                 return _dv_
                         ?(redraw_queued[1]
@@ -6503,9 +6503,9 @@
                                {redraw_queued[1] = 0;
                                 var
                                  y0$2=
-                                  caml_call1(caml_get_public_method(vadj,834174833,380),vadj),
+                                  caml_call1(caml_get_public_method(vadj,834174833,377),vadj),
                                  x0$2=
-                                  caml_call1(caml_get_public_method(hadj,834174833,381),hadj),
+                                  caml_call1(caml_get_public_method(hadj,834174833,378),hadj),
                                  scale=get_scale(0),
                                  width$1=window$0.width,
                                  height$1=window$0.height,
@@ -6640,7 +6640,7 @@
                count=Math.ceil(Math.log(f$0) / 0.693147180559945286 * 8),
                f=Math.pow(2,count / 8);
               caml_call7
-               (caml_get_public_method(sadj,-635267918,366),
+               (caml_get_public_method(sadj,-635267918,363),
                 sadj,
                 0,
                 [0,count],
@@ -6655,28 +6655,28 @@
                  scale=get_scale(0),
                  r=1 - prev_scale[1] / scale,
                  _dp_=
-                  caml_call1(caml_get_public_method(hadj,307110897,382),hadj)
+                  caml_call1(caml_get_public_method(hadj,307110897,379),hadj)
                   *
                   r
                   *
                   x;
                 caml_call2
-                 (caml_get_public_method(hadj,-659372076,384),
+                 (caml_get_public_method(hadj,-659372076,381),
                   hadj,
-                  caml_call1(caml_get_public_method(hadj,834174833,383),hadj)
+                  caml_call1(caml_get_public_method(hadj,834174833,380),hadj)
                   +
                   _dp_);
                 var
                  _dq_=
-                  caml_call1(caml_get_public_method(vadj,307110897,385),vadj)
+                  caml_call1(caml_get_public_method(vadj,307110897,382),vadj)
                   *
                   r
                   *
                   y;
                 caml_call2
-                 (caml_get_public_method(vadj,-659372076,387),
+                 (caml_get_public_method(vadj,-659372076,384),
                   vadj,
-                  caml_call1(caml_get_public_method(vadj,834174833,386),vadj)
+                  caml_call1(caml_get_public_method(vadj,834174833,383),vadj)
                   +
                   _dq_);
                 prev_scale[1] = scale;
@@ -6714,11 +6714,11 @@
                   thumb.style.top = _do_;
                   pos[1] = pos$0;
                   caml_call2
-                   (caml_get_public_method(sadj,-659372076,408),
+                   (caml_get_public_method(sadj,-659372076,405),
                     sadj,
                     (284 - pos$0 | 0)
                     *
-                    caml_call1(caml_get_public_method(sadj,675223906,407),sadj)
+                    caml_call1(caml_get_public_method(sadj,675223906,404),sadj)
                     /
                     284);
                   return rescale(0.5,0.5)}
@@ -6754,16 +6754,16 @@
                  {var scale=get_scale(0);
                   function offset(a,d)
                    {var
-                     _dl_=caml_call1(caml_get_public_method(a,307110897,421),a),
+                     _dl_=caml_call1(caml_get_public_method(a,307110897,418),a),
                      _dm_=
-                      caml_call1(caml_get_public_method(a,675223906,422),a)
+                      caml_call1(caml_get_public_method(a,675223906,419),a)
                       -
                       _dl_;
                     return caml_call2
-                            (caml_get_public_method(a,-659372076,424),
+                            (caml_get_public_method(a,-659372076,421),
                              a,
                              min
-                              (caml_call1(caml_get_public_method(a,834174833,423),a)
+                              (caml_call1(caml_get_public_method(a,834174833,420),a)
                                -
                                d
                                /
@@ -6778,32 +6778,32 @@
                  x$0=x / a[3],
                  y$0=y / a[4],
                  prev=
-                  caml_call1(caml_get_public_method(sadj,834174833,425),sadj),
+                  caml_call1(caml_get_public_method(sadj,834174833,422),sadj),
                  _dj_=
                   prev
                   +
                   v
                   *
-                  caml_call1(caml_get_public_method(sadj,-292814788,426),sadj),
+                  caml_call1(caml_get_public_method(sadj,-292814788,423),sadj),
                  _dk_=
                   max
                    (caml_call1
-                     (caml_get_public_method(sadj,-117442047,427),sadj),
+                     (caml_get_public_method(sadj,-117442047,424),sadj),
                     _dj_),
                  vl=
                   min
-                   (caml_call1(caml_get_public_method(sadj,675223906,428),sadj),
+                   (caml_call1(caml_get_public_method(sadj,675223906,425),sadj),
                     _dk_);
                 if(vl != prev)
                  {caml_call2
-                   (caml_get_public_method(sadj,-659372076,429),sadj,vl);
+                   (caml_get_public_method(sadj,-659372076,426),sadj,vl);
                   var
                    _dh_=
-                    caml_call1(caml_get_public_method(sadj,675223906,411),sadj),
+                    caml_call1(caml_get_public_method(sadj,675223906,408),sadj),
                    pos$0=
                     284
                     -
-                    (caml_call1(caml_get_public_method(sadj,834174833,412),sadj)
+                    (caml_call1(caml_get_public_method(sadj,834174833,409),sadj)
                      *
                      284
                      /
@@ -6824,7 +6824,7 @@
                      :0;
                   if(!switch$0)rescale(0.5,0.5)}
                 return false$0}
-              function h$0(ev,dx,dy)
+              function h$0(ev,param,dy)
                {var
                  match=elementClientPosition(window$0),
                  ey=match[2],
@@ -6864,11 +6864,11 @@
                  {case 0:
                    var
                     _db_=
-                     caml_call1(caml_get_public_method(hadj,-292814788,433),hadj);
+                     caml_call1(caml_get_public_method(hadj,-292814788,430),hadj);
                    caml_call2
-                    (caml_get_public_method(hadj,-659372076,435),
+                    (caml_get_public_method(hadj,-659372076,432),
                      hadj,
-                     caml_call1(caml_get_public_method(hadj,834174833,434),hadj)
+                     caml_call1(caml_get_public_method(hadj,834174833,431),hadj)
                      -
                      _db_);
                    update_view(0);
@@ -6876,11 +6876,11 @@
                   case 1:
                    var
                     _dc_=
-                     caml_call1(caml_get_public_method(vadj,-292814788,436),vadj);
+                     caml_call1(caml_get_public_method(vadj,-292814788,433),vadj);
                    caml_call2
-                    (caml_get_public_method(vadj,-659372076,438),
+                    (caml_get_public_method(vadj,-659372076,435),
                      vadj,
-                     caml_call1(caml_get_public_method(vadj,834174833,437),vadj)
+                     caml_call1(caml_get_public_method(vadj,834174833,434),vadj)
                      -
                      _dc_);
                    update_view(0);
@@ -6888,11 +6888,11 @@
                   case 2:
                    var
                     _dd_=
-                     caml_call1(caml_get_public_method(hadj,-292814788,439),hadj);
+                     caml_call1(caml_get_public_method(hadj,-292814788,436),hadj);
                    caml_call2
-                    (caml_get_public_method(hadj,-659372076,441),
+                    (caml_get_public_method(hadj,-659372076,438),
                      hadj,
-                     caml_call1(caml_get_public_method(hadj,834174833,440),hadj)
+                     caml_call1(caml_get_public_method(hadj,834174833,437),hadj)
                      +
                      _dd_);
                    update_view(0);
@@ -6900,11 +6900,11 @@
                   default:
                    var
                     _de_=
-                     caml_call1(caml_get_public_method(vadj,-292814788,442),vadj);
+                     caml_call1(caml_get_public_method(vadj,-292814788,439),vadj);
                    caml_call2
-                    (caml_get_public_method(vadj,-659372076,444),
+                    (caml_get_public_method(vadj,-659372076,441),
                      vadj,
-                     caml_call1(caml_get_public_method(vadj,834174833,443),vadj)
+                     caml_call1(caml_get_public_method(vadj,834174833,440),vadj)
                      +
                      _de_);
                    update_view(0);

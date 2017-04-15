@@ -776,10 +776,6 @@
         runtime evaluation~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api text="js_mapper"| value Ppx_js.js_mapper >> ~[<<a_api | module Ppx_js >>~]|<<div class="odocwiki_info"|~A syntax extension is available for manipulating object properties~,
-   invoking methods and creating objects~.
->>
-|
 |@@class="odocwiki_index"@ @@<<a_api text="js_of_ocaml_version"| value Sys_js.js_of_ocaml_version >> ~[<<a_api | module Sys_js >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|js~_of~_ocaml~_version>> is the version of ~Js~_of~_ocaml~.
 >>
 |
@@ -1571,7 +1567,6 @@
       ~Javascript~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api text="wrapper"| value Ppx_js.wrapper >> ~[<<a_api | module Ppx_js >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="write"| value Deriving_Json.Json_min'.write >> ~[<<a_api | module Deriving_Json.Json_min' >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="write"| value Deriving_Json.Json_min.write >> ~[<<a_api | module Deriving_Json.Json_min >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="write"| value Deriving_Json.Json.write >> ~[<<a_api | module Deriving_Json.Json >>~]||

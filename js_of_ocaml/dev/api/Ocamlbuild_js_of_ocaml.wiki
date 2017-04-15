@@ -3,10 +3,7 @@
 
 ----
 
-~Js~_of~_ocaml comes with a support for ~O~Camlbuild~.
 
-
-   
 ==@@id="2_Initialize"@@~Initialize==
 
 

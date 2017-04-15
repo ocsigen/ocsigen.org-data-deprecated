@@ -27,19 +27,17 @@
 ==[[Lwt_file|Lwt_file]]
 ==[[Lwt_js_events|Lwt_js_events]]
 ==[[Lwt_js|Lwt_js]]
-=~Ppx ~- ~A~P~I ~Reference
-==[[Ppx_js|Ppx_js]]
+==~Lwt logger ~- ~A~P~I ~Reference
+===[[Lwt_log_js|Lwt_log_js]]
+==~Graphics ~- ~A~P~I ~Reference
+===[[Graphics_js|Graphics_js]]
 =~Deriving ~- ~A~P~I ~Reference
 ==[[Deriving_Json|Deriving_Json]]
 ==[[Pa_deriving_Json|Pa_deriving_Json]]
-=~Logger ~- ~A~P~I ~Reference
-==[[Lwt_log_js|Lwt_log_js]]
 =~Tyxml ~- ~A~P~I ~Reference
 ==[[Tyxml_js|Tyxml_js]]
 ==[[Tyxml_cast|Tyxml_cast]]
 ==[[Tyxml_cast_sigs|Tyxml_cast_sigs]]
-=~Graphics ~- ~A~P~I ~Reference
-==[[Graphics_js|Graphics_js]]
 =~Toplevel ~- ~A~P~I ~Reference
 ==[[JsooTop|JsooTop]]
 =~The ocamlbuild plugin ~- ~A~P~I ~Reference

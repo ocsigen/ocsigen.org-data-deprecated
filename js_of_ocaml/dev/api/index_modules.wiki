@@ -6,7 +6,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="Bigstring"| module Typed_array.Bigstring >> ~[<<a_api | module Typed_array >>~]||
 |@@ @style="tet-align: left;"@@\\C|
 |@@class="odocwiki_index"@ @@<<a_api text="CSS"| module CSS >> |<<div class="odocwiki_info"|~This module contains a few types and values to ease the use of ~C~S~S properties
-   and such~.
+    and such~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="CoerceTo"| module Dom.CoerceTo >> ~[<<a_api | module Dom >>~]||
@@ -103,7 +103,17 @@
 |@@class="odocwiki_index"@ @@<<a_api text="JsooTopError"| module JsooTopError >> ||
 |@@class="odocwiki_index"@ @@<<a_api text="JsooTopPpx"| module JsooTopPpx >> |<<div class="odocwiki_info"|~One can add a ppx rewriter to a toplevel by registering it
     
-<<code language='ocaml'| Ast_mapper.register "js_of_ocaml" Ppx_js.js_mapper >>
+<<code language='ocaml'|      open Migrate_parsetree
+
+      let init () =
+        let module Converter =
+          Migrate_parsetree.Versions.Convert
+            (Migrate_parsetree.OCaml_405)
+            (Migrate_parsetree.OCaml_current)
+        in
+        let mapper = Converter.copy_mapper Ppx_js.mapper in
+        Compiler_libs.Ast_mapper.register "js_of_ocaml" (fun _ -> mapper)
+    >>
 
 >>
 |
@@ -156,7 +166,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="Pa_deriving_Json"| module Pa_deriving_Json >> |<<div class="odocwiki_info"|~Deriving~_json syntax extension ~(based on the //deriving// library~)~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api text="Ppx_js"| module Ppx_js >> |<<div class="odocwiki_info"|~Ppx syntax extension for ~Js~_of~_ocaml~.
+|@@class="odocwiki_index"@ @@<<a_api text="Ppx_js"| module Ppx_js >> |<<div class="odocwiki_info"|~/~*
 >>
 |
 |@@ @style="tet-align: left;"@@\\R|

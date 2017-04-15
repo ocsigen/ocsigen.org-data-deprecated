@@ -5344,10 +5344,10 @@
       catch$0
        (function(param)
          {function _cL_(s$0)
-           {var r$0=regexp(_cx_);
-            r$0.lastIndex = 0;
+           {var r=regexp(_cx_);
+            r.lastIndex = 0;
             var
-             a=caml_bytes_of_string(s$0).split(r$0),
+             a=caml_bytes_of_string(s$0).split(r),
              idx$1=a.length - 1 | 0,
              accu=0,
              idx=idx$1;
@@ -5410,7 +5410,7 @@
                                          x$0=_cS_[1],
                                          _cX_=caml_float_of_string(z),
                                          _cY_=caml_float_of_string(y),
-                                         match$1=[0,[1,[0,caml_float_of_string(x$0),_cY_,_cX_]]],
+                                         match$2=[0,[1,[0,caml_float_of_string(x$0),_cY_,_cX_]]],
                                          switch$0=1;
                                       else
                                        var switch$0=0}
@@ -5446,7 +5446,7 @@
                                         x$1=_c0_[1],
                                         _c5_=caml_float_of_string(z$0),
                                         _c6_=caml_float_of_string(y$0),
-                                        match$1=[0,[0,[0,caml_float_of_string(x$1),_c6_,_c5_]]],
+                                        match$2=[0,[0,[0,caml_float_of_string(x$1),_c6_,_c5_]]],
                                         switch$0=1;
                                      else
                                       var switch$0=0}
@@ -5480,11 +5480,11 @@
                                         z$1=_da_[1],
                                         y$1=_c__[1],
                                         x$2=_c8_[1],
-                                        r=map(read_coord_couple,[0,x$2,[0,y$1,[0,z$1,0]]]);
-                                       if(r)
-                                        {var _db_=r[1];
+                                        match$1=map(read_coord_couple,[0,x$2,[0,y$1,[0,z$1,0]]]);
+                                       if(match$1)
+                                        {var _db_=match$1[1];
                                          if(_db_)
-                                          {var _dc_=r[2];
+                                          {var _dc_=match$1[2];
                                            if(_dc_)
                                             {var _dd_=_dc_[1];
                                              if(_dd_)
@@ -5499,7 +5499,7 @@
                                                     z$2=_df_[1],
                                                     y$2=_dd_[1],
                                                     x$3=_db_[1],
-                                                    match$1=[0,[2,[0,x$3,y$2,z$2]]],
+                                                    match$2=[0,[2,[0,x$3,y$2,z$2]]],
                                                     switch$0=1,
                                                     switch$1=0;
                                                  else
@@ -5514,7 +5514,7 @@
                                           var switch$1=1}
                                        else
                                         var switch$1=1;
-                                       if(switch$1)var match$1=0,switch$0=1}
+                                       if(switch$1)var match$2=0,switch$0=1}
                                     else
                                      var switch$0=0}
                                   else
@@ -5531,34 +5531,34 @@
                        var switch$0=0}
                     else
                      var switch$0=0;
-                    if(!switch$0)var match$1=0}
+                    if(!switch$0)var match$2=0}
                   else
-                   var match$1=0;
-                  if(match$1)
-                   {var _dg_=match$1[1];
+                   var match$2=0;
+                  if(match$2)
+                   {var _dg_=match$2[1];
                     switch(_dg_[0])
                      {case 0:
                        var
-                        match$2=_dg_[1],
-                        c=match$2[3],
-                        b=match$2[2],
-                        a$0=match$2[1];
+                        match$3=_dg_[1],
+                        c=match$3[3],
+                        b=match$3[2],
+                        a$0=match$3[1];
                        vertex$1[1] = [0,[0,a$0,b,c],vertex$1[1]];
                        break;
                       case 1:
                        var
-                        match$3=_dg_[1],
-                        c$0=match$3[3],
-                        b$0=match$3[2],
-                        a$1=match$3[1];
+                        match$4=_dg_[1],
+                        c$0=match$4[3],
+                        b$0=match$4[2],
+                        a$1=match$4[1];
                        norm$1[1] = [0,[0,a$1,b$0,c$0],norm$1[1]];
                        break;
                       default:
                        var
-                        match$4=_dg_[1],
-                        c$1=match$4[3],
-                        b$1=match$4[2],
-                        a$2=match$4[1];
+                        match$5=_dg_[1],
+                        c$1=match$5[3],
+                        b$1=match$5[2],
+                        a$2=match$5[1];
                        face[1] = [0,[0,a$2,b$1,c$1],face[1]]}}
                   var _cO_=i + 1 | 0;
                   if(_cN_ !== i){var i=_cO_;continue}

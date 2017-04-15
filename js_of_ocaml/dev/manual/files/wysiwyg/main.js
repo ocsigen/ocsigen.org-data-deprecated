@@ -1331,7 +1331,7 @@
      _bZ_=caml_new_string("input"),
      _b3_=caml_new_string("Exception during Lwt.async: "),
      _cA_=caml_new_string("^error_in_anchor^"),
-     _cp_=[0,caml_new_string("examples/wysiwyg/main.ml"),73,76],
+     _cp_=[0,caml_new_string("examples/wysiwyg/main.ml"),72,76],
      _cq_=caml_new_string("global"),
      _cr_=caml_new_string("wiki"),
      _ct_=[0,caml_new_string("]]"),0],
@@ -1342,7 +1342,7 @@
      _cy_=caml_new_string("[["),
      _cz_=caml_new_string(""),
      _cs_=caml_new_string("^error2_in_anchor^"),
-     _co_=[0,caml_new_string("examples/wysiwyg/main.ml"),68,35],
+     _co_=[0,caml_new_string("examples/wysiwyg/main.ml"),67,35],
      _b7_=caml_new_string("H1"),
      _ch_=caml_new_string("#text"),
      _ci_=caml_new_string("A"),
@@ -1402,7 +1402,7 @@
      _da_=caml_new_string("inserthtml"),
      _db_=caml_new_string("link2wiki"),
      _dc_=caml_new_string(""),
-     _cB_=[0,caml_new_string("examples/wysiwyg/main.ml"),97,17],
+     _cB_=[0,caml_new_string("examples/wysiwyg/main.ml"),96,17],
      _b5_=caml_new_string("Main.Break");
     function erase_rel(param)
      {if(typeof param === "number")
@@ -4724,7 +4724,7 @@
        {exn = caml_wrap_exception(exn);
         if(exn[1] === Break){var b=exn[2];return b}
         throw exn}}
-    function html2wiki(opt,body)
+    function html2wiki(body)
      {var ans=create(10);
       function add_str(opt,s)
        {if(opt)var sth=opt[1],surr=sth;else var surr=_b6_;
@@ -4746,9 +4746,9 @@
                    {if(!caml_string_notequal(hh,_b__))
                      return add_string(ans,_cf_);
                     if(!caml_string_notequal(hh,_b$_))
-                     {var inner$0=html2wiki(0,node);return add_str(_ce_,inner$0)}
+                     {var inner$0=html2wiki(node);return add_str(_ce_,inner$0)}
                     if(!caml_string_notequal(hh,_ca_))
-                     {var inner=html2wiki(0,node);
+                     {var inner=html2wiki(node);
                       return add_str(0,_a_(inner,_cd_))}
                     var switch$1=0}
                   else
@@ -4761,7 +4761,7 @@
                  {var
                    n=(caml_string_get(hh,1) - 48 | 0) + 1 | 0,
                    prefix=make$0(n,61),
-                   inner$1=html2wiki(0,node);
+                   inner$1=html2wiki(node);
                   return add_string(ans,_a_(prefix,_a_(inner$1,_cg_)))}}
               else
                {if(!caml_string_notequal(hh,_ch_))
@@ -4788,17 +4788,16 @@
                          return add_string(ans,_cs_);
                         var _dy_=function(_dz_){return add_string(ans,_dz_)};
                         return _b4_(concat(_cv_,[0,_cu_,[0,url,_ct_]]),_dy_)}
-                      var desc=html2wiki(0,node);
+                      var desc=html2wiki(node);
                       return add_string
                               (ans,concat(_cz_,[0,_cy_,[0,url,[0,_cx_,[0,desc,_cw_]]]]))},
                    _dv_=function(param){return add_string(ans,_cA_)};
                   return case$0(el.getAttribute("wysitype"),_dv_,_du_)}
                 if(!caml_string_notequal(hh,_cj_))
-                 {var inner$3=html2wiki(0,node);return add_str(_cn_,inner$3)}
+                 {var inner$3=html2wiki(node);return add_str(_cn_,inner$3)}
                 if(!caml_string_notequal(hh,_ck_))return add_string(ans,_cm_);
                 if(!caml_string_notequal(hh,_cl_))
-                 {var inner$2=html2wiki(0,node);
-                  return add_string(ans,inner$2)}}
+                 {var inner$2=html2wiki(node);return add_string(ans,inner$2)}}
               return add_string(ans,_a_(_cc_,_a_(hh,_cb_)))};
           iter$0(childNodes.item(i),_dr_);
           var _ds_=i + 1 | 0;
@@ -4903,7 +4902,7 @@
           if(caml_string_notequal(text,old_text))
            {try
              {preview.value = text.toString();
-              wikiFrame.value = html2wiki(0,iDoc.body).toString()}
+              wikiFrame.value = html2wiki(iDoc.body).toString()}
             catch(_dj_){}
             var n$0=20}
           else
