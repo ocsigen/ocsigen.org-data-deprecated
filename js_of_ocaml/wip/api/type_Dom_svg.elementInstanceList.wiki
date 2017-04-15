@@ -1,4 +1,0 @@
-<<code language="ocaml" | object
-  method item : int -> Dom_svg.elementInstance Js.t
-  method length : int Js.readonly_prop
-end >>
