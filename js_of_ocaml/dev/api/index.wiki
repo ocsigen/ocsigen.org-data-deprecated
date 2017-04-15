@@ -8,44 +8,7 @@
 |<<a_api | module Js >>|<<div class="odocwiki_info"|~Javascript binding
 >>
 |
-|<<a_api | module Dom >>|<<div class="odocwiki_info"|~D~O~M binding
->>
-|
-|<<a_api | module Dom_html >>|<<div class="odocwiki_info"|~D~O~M ~H~T~M~L binding
->>
-|
-|<<a_api | module Dom_svg >>|<<div class="odocwiki_info"|~D~O~M ~S~V~G binding
->>
-|
-|<<a_api | module Dom_events >>|<<div class="odocwiki_info"|~Javascript events
->>
-|
-|<<a_api | module CSS >>|<<div class="odocwiki_info"|~This module contains a few types and values to ease the use of ~C~S~S properties
-    and such~.
->>
-|
-|<<a_api | module EventSource >>|<<div class="odocwiki_info"|~Event~Source binding
->>
-|
-|<<a_api | module Firebug >>|<<div class="odocwiki_info"|~Firebug ~A~P~I ~(debugging console~)~.
->>
-|
-|<<a_api | module Regexp >>|<<div class="odocwiki_info"|~Types for regexps~.
->>
-|
-|<<a_api | module Url >>|<<div class="odocwiki_info"|~This module provides functions for tampering with ~Url~.
->>
-|
-|<<a_api | module XmlHttpRequest >>|<<div class="odocwiki_info"|~Xml~Http~Request object~.
->>
-|
-|<<a_api | module Json >>|<<div class="odocwiki_info"|~Unsafe ~I~O~.
->>
-|
-|<<a_api | module File >>|<<div class="odocwiki_info"|~File ~A~P~I
->>
-|
-|<<a_api | module Form >>|<<div class="odocwiki_info"|~This module provides functions to manipulate forms~.
+|<<a_api | module Jstable >>|<<div class="odocwiki_info"|~A minimal table implementation specialized for <<a_api | class type Js.js_string >> keys~.
 >>
 |
 |<<a_api | module Sys_js >>|<<div class="odocwiki_info"|~Javascript specific ~Sys functions~.
@@ -54,22 +17,64 @@
 |<<a_api | module Typed_array >>|<<div class="odocwiki_info"|~Typed ~Array binding
 >>
 |
+
+
+
+
+
+|<<a_api | module CSS >>|<<div class="odocwiki_info"|~This module contains a few types and values to ease the use of ~C~S~S properties
+    and such~.
+>>
+|
+|<<a_api | module Dom >>|<<div class="odocwiki_info"|~D~O~M binding
+>>
+|
+|<<a_api | module Dom_events >>|<<div class="odocwiki_info"|~Javascript events
+>>
+|
+|<<a_api | module Dom_html >>|<<div class="odocwiki_info"|~D~O~M ~H~T~M~L binding
+>>
+|
+|<<a_api | module Dom_svg >>|<<div class="odocwiki_info"|~D~O~M ~S~V~G binding
+>>
+|
+|<<a_api | module EventSource >>|<<div class="odocwiki_info"|~Event~Source binding
+>>
+|
+|<<a_api | module File >>|<<div class="odocwiki_info"|~File ~A~P~I
+>>
+|
+|<<a_api | module Firebug >>|<<div class="odocwiki_info"|~Firebug ~A~P~I ~(debugging console~)~.
+>>
+|
+|<<a_api | module Form >>|<<div class="odocwiki_info"|~This module provides functions to manipulate forms~.
+>>
+|
+|<<a_api | module Geolocation >>|<<div class="odocwiki_info"|~Geolocation ~A~P~I
+>>
+|
+|<<a_api | module Json >>|<<div class="odocwiki_info"|~Unsafe ~I~O~.
+>>
+|
+|<<a_api | module MutationObserver >>|<<div class="odocwiki_info"|~Mutation~Observer ~A~P~I
+>>
+|
+|<<a_api | module Regexp >>|<<div class="odocwiki_info"|~Types for regexps~.
+>>
+|
+|<<a_api | module Url >>|<<div class="odocwiki_info"|~This module provides functions for tampering with ~Url~.
+>>
+|
 |<<a_api | module WebGL >>|<<div class="odocwiki_info"|~Web~G~L binding
 >>
 |
 |<<a_api | module WebSockets >>|<<div class="odocwiki_info"|~Web~Socket binding
 >>
 |
-|<<a_api | module Geolocation >>|<<div class="odocwiki_info"|~Geolocation ~A~P~I
->>
-|
-|<<a_api | module Jstable >>|<<div class="odocwiki_info"|~A minimal table implementation specialized for <<a_api | class type Js.js_string >> keys~.
->>
-|
-|<<a_api | module MutationObserver >>|<<div class="odocwiki_info"|~Mutation~Observer ~A~P~I
->>
-|
 |<<a_api | module Worker >>|<<div class="odocwiki_info"|~Low~-level bindgins to javascript ~Web ~Workers~.
+>>
+|
+|<<a_api | module XmlHttpRequest >>|<<div class="odocwiki_info"|~Xml~Http~Request object~.
 >>
 |
 
