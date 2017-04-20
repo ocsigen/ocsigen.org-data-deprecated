@@ -33,6 +33,8 @@
     Js.js_string Js.t -> Dom_html.element Js.t Js.opt Js.meth
   method getElementsByClassName :
     Js.js_string Js.t -> Dom_html.element Dom.nodeList Js.t Js.meth
+  method getElementsByName :
+    Js.js_string Js.t -> Dom_html.element Dom.nodeList Js.t Js.meth
   method getElementsByTagName :
     Js.js_string Js.t -> Dom_html.element Dom.nodeList Js.t Js.meth
   method hasChildNodes : bool Js.t Js.meth

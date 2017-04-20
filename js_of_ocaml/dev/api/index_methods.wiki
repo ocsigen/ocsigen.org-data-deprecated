@@ -971,6 +971,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="getElementById"| method Dom.document#getElementById >> ~[<<a_api | module Dom >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="getElementById"| method Dom_svg.svgElement#getElementById >> ~[<<a_api | module Dom_svg >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="getElementsByClassName"| method Dom_html.document#getElementsByClassName >> ~[<<a_api | module Dom_html >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="getElementsByName"| method Dom_html.document#getElementsByName >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="getElementsByTagName"| method Dom.document#getElementsByTagName >> ~[<<a_api | module Dom >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="getElementsByTagName"| method Dom.element#getElementsByTagName >> ~[<<a_api | module Dom >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="getEnclosureList"| method Dom_svg.svgElement#getEnclosureList >> ~[<<a_api | module Dom_svg >>~]||
