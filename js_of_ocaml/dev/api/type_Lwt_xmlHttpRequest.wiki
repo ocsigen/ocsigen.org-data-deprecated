@@ -14,12 +14,14 @@
   val perform_raw :
     ?headers:(string * string) list ->
     ?content_type:string ->
-    ?post_args:(string * Js_of_ocaml.Form.form_elt) list ->
     ?get_args:(string * string) list ->
-    ?form_arg:Js_of_ocaml.Form.form_contents ->
     ?check_headers:(int -> (string -> string option) -> bool) ->
     ?progress:(int -> int -> unit) ->
     ?upload_progress:(int -> int -> unit) ->
+    ?contents:[< `Blob of #Js_of_ocaml.File.blob Js_of_ocaml.Js.t
+               | `Form_contents of Js_of_ocaml.Form.form_contents
+               | `POST_form of (string * Js_of_ocaml.Form.form_elt) list
+               | `String of string ] ->
     ?override_mime_type:string ->
     ?override_method:[< `DELETE
                       | `GET
@@ -34,12 +36,14 @@
   val perform_raw_url :
     ?headers:(string * string) list ->
     ?content_type:string ->
-    ?post_args:(string * Js_of_ocaml.Form.form_elt) list ->
     ?get_args:(string * string) list ->
-    ?form_arg:Js_of_ocaml.Form.form_contents ->
     ?check_headers:(int -> (string -> string option) -> bool) ->
     ?progress:(int -> int -> unit) ->
     ?upload_progress:(int -> int -> unit) ->
+    ?contents:[< `Blob of #Js_of_ocaml.File.blob Js_of_ocaml.Js.t
+               | `Form_contents of Js_of_ocaml.Form.form_contents
+               | `POST_form of (string * Js_of_ocaml.Form.form_elt) list
+               | `String of string ] ->
     ?override_mime_type:string ->
     ?override_method:[< `DELETE
                       | `GET
@@ -52,12 +56,14 @@
   val perform :
     ?headers:(string * string) list ->
     ?content_type:string ->
-    ?post_args:(string * Js_of_ocaml.Form.form_elt) list ->
     ?get_args:(string * string) list ->
-    ?form_arg:Js_of_ocaml.Form.form_contents ->
     ?check_headers:(int -> (string -> string option) -> bool) ->
     ?progress:(int -> int -> unit) ->
     ?upload_progress:(int -> int -> unit) ->
+    ?contents:[< `Blob of #Js_of_ocaml.File.blob Js_of_ocaml.Js.t
+               | `Form_contents of Js_of_ocaml.Form.form_contents
+               | `POST_form of (string * Js_of_ocaml.Form.form_elt) list
+               | `String of string ] ->
     ?override_mime_type:string ->
     ?override_method:[< `DELETE
                       | `GET
