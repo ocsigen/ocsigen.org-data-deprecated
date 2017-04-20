@@ -1029,6 +1029,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="of_input"| value Tyxml_cast_sigs.TO.of_input >> ~[<<a_api | module Tyxml_cast_sigs.TO >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="of_ins"| value Tyxml_cast_sigs.TO.of_ins >> ~[<<a_api | module Tyxml_cast_sigs.TO >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="of_kbd"| value Tyxml_cast_sigs.TO.of_kbd >> ~[<<a_api | module Tyxml_cast_sigs.TO >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="of_key_code"| value Dom_html.Keyboard_code.of_key_code >> ~[<<a_api | module Dom_html.Keyboard_code >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="of_keygen"| value Tyxml_cast_sigs.TO.of_keygen >> ~[<<a_api | module Tyxml_cast_sigs.TO >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="of_label"| value Tyxml_cast_sigs.OF.of_label >> ~[<<a_api | module Tyxml_cast_sigs.OF >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="of_label"| value Tyxml_cast_sigs.TO.of_label >> ~[<<a_api | module Tyxml_cast_sigs.TO >>~]||
