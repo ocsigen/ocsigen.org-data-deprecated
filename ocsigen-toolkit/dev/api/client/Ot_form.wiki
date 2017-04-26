@@ -4,28 +4,15 @@
 ----
 <<pre class="ocsforge_color odocwiki_code"|<<span id="TYPEtabbable"|<<span class="ocsforge_color_keyword"|class type>> <<a_api subproject="client" text="tabbable" | class type Ot_form.tabbable >>>> <<span class="ocsforge_color_delimiter"|~=>> <<span class="ocsforge_color_keyword"|object>><<a_api subproject="client" text=".." | class type Ot_form.tabbable >><<span class="ocsforge_color_keyword"|end>>>><<div class="odocwiki_info"|~An ~H~T~M~L element which can be selected by pressing the tab key
 >>
-<<pre id="VALsetup_tabcycle" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|setup~_tabcycle>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|~#<<a_api subproject="client" text="tabbable" | class type Ot_form.tabbable >> <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>> list <<span class="ocsforge_color_delimiter"| -> >> unit>>>><<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|setup~_tabcycle>> makes a form in a popup more user~-friendly~, by focussing on
-    the first element of the form and forcing tab keys to cycle through the
-    elements of the form only ~(and not the elements of the page behind the
-    popup~)~. ~Note~: you get proper tab cycles only for three or more elements! ~The
-    list does not need to be complete~, as only the first~, the second~, the next
-    to last~, and the last element matter~.
+<<pre id="VALsetup_tabcycle" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|setup~_tabcycle>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|~#<<a_api subproject="client" text="tabbable" | class type Ot_form.tabbable >> <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>> list <<span class="ocsforge_color_delimiter"| -> >> unit>>>><<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|setup~_tabcycle>> makes tab key loop over child elements of an element and
+    only these elements~.
 >>
 <<pre id="VALsetup_tabcycle_auto" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|setup~_tabcycle~_auto>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<span class="ocsforge_color_uid"|Dom_html>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|element>> <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>> <<span class="ocsforge_color_delimiter"| -> >> unit>>>><<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|setup~_tabcycle~_auto>> scans an element for tabbable elements ~(buttons~, inputs~)
     and feeds them to <<span class="odocwiki_inlinecode"|setup~_tabcycle>>
 >>
-
-~The popup is scanned for a form element
-    and <<span class="odocwiki_inlinecode"|setup~_tabcycle~_auto>> is applied to it ~(if no form element is
-    found the whole popup is scanned~)~. ~This happens either once the popup opens
-    ~(if <<span class="odocwiki_inlinecode"|setup~_form>> equals <<span class="odocwiki_inlinecode"|`~On~Popup>>~) or with <<span class="odocwiki_inlinecode"|`~On~Signal>> the tabcycling can
-    be switched on ~(popup is rescanned~) and off with a boolean signal~.
-
-
-    ~If <<span class="odocwiki_inlinecode"|disable~_rest>> ~(default~: true~) is true then the tab~Index of all
-    the elements not in the popup are set to ~-~1 with the effect that they can
-    not be selected using the ~T~A~B key~. ~When the popup is closed their old
-    tab~Index value is restored~. ~Note~, that some elements that are tabbable in
-    some browsers but not by specification ~(scrollable div~'s~) are not affected~.
-    ~A function to cancel this behavior is returned~.
-<<pre id="VALsetup_form" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|setup~_form>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<span class="ocsforge_color_uid"|Dom_html>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|element>> <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>> <<span class="ocsforge_color_delimiter"| -> >> unit>>>><<pre id="VALprevent_tab" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|prevent~_tab>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<span class="ocsforge_color_uid"|Dom_html>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|element>> <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>> <<span class="ocsforge_color_delimiter"| -> >> unit <<span class="ocsforge_color_delimiter"| -> >> unit>>>>
+<<pre id="VALsetup_form" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|setup~_form>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<span class="ocsforge_color_uid"|Dom_html>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|element>> <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>> <<span class="ocsforge_color_delimiter"| -> >> unit>>>><<div class="odocwiki_info"|~Scan for focusable elements apply <<span class="odocwiki_inlinecode"|setup~_tabcycle~_auto>> to them and
+    focus the first~.
+>>
+<<pre id="VALprevent_tab" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|prevent~_tab>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<span class="ocsforge_color_uid"|Dom_html>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|element>> <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>> <<span class="ocsforge_color_delimiter"| -> >> unit <<span class="ocsforge_color_delimiter"| -> >> unit>>>><<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|prevent~_tab e>> prevents <<span class="odocwiki_inlinecode"|e>> ~(and its children~) to be focused with tab key~.
+    ~A function to restore the initial status is returned~.
+>>

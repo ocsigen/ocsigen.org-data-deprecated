@@ -188,7 +188,9 @@
     ~Display a modal popup~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="prevent_tab"| value Ot_form.prevent_tab >> ~[<<a_api subproject="client" | module Ot_form >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="prevent_tab"| value Ot_form.prevent_tab >> ~[<<a_api subproject="client" | module Ot_form >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|prevent~_tab e>> prevents <<span class="odocwiki_inlinecode"|e>> ~(and its children~) to be focused with tab key~.
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="preview"| value Ot_picture_uploader.preview >> ~[<<a_api subproject="client" | module Ot_picture_uploader >>~]|<<div class="odocwiki_info"|~Create a img element with no src~, no alt and <<span class="odocwiki_inlinecode"|ot~-pup~-preview>> class~.
 >>
 |
@@ -219,11 +221,12 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="set_right"| value Ot_style.set_right >> ~[<<a_api subproject="client" | module Ot_style >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="set_top"| value Ot_style.set_top >> ~[<<a_api subproject="client" | module Ot_style >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="set_width"| value Ot_style.set_width >> ~[<<a_api subproject="client" | module Ot_style >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="setup_form"| value Ot_form.setup_form >> ~[<<a_api subproject="client" | module Ot_form >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="setup_tabcycle"| value Ot_form.setup_tabcycle >> ~[<<a_api subproject="client" | module Ot_form >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|setup~_tabcycle>> makes a form in a popup more user~-friendly~, by focussing on
-    the first element of the form and forcing tab keys to cycle through the
-    elements of the form only ~(and not the elements of the page behind the
-    popup~)~.
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="setup_form"| value Ot_form.setup_form >> ~[<<a_api subproject="client" | module Ot_form >>~]|<<div class="odocwiki_info"|~Scan for focusable elements apply <<span class="odocwiki_inlinecode"|setup~_tabcycle~_auto>> to them and
+    focus the first~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="setup_tabcycle"| value Ot_form.setup_tabcycle >> ~[<<a_api subproject="client" | module Ot_form >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|setup~_tabcycle>> makes tab key loop over child elements of an element and
+    only these elements~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="setup_tabcycle_auto"| value Ot_form.setup_tabcycle_auto >> ~[<<a_api subproject="client" | module Ot_form >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|setup~_tabcycle~_auto>> scans an element for tabbable elements ~(buttons~, inputs~)
