@@ -2,6 +2,7 @@
   type 'a t = {
     elt : 'a Eliom_content.Html.elt;
     pos : int Eliom_shared.React.S.t;
+    pos_post : int Eliom_shared.React.S.t;
     vis_elts : int Eliom_shared.React.S.t;
     swipe_pos : float React.S.t Eliom_client_value.t;
   }
