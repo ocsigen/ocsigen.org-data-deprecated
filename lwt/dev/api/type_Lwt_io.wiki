@@ -128,6 +128,15 @@
     Unix.sockaddr ->
     (Lwt_io.input_channel * Lwt_io.output_channel -> unit Lwt.t) ->
     Lwt_io.server Lwt.t
+  val establish_server' :
+    ?fd:Lwt_unix.file_descr ->
+    ?buffer_size:int ->
+    ?backlog:int ->
+    ?no_close:bool ->
+    Unix.sockaddr ->
+    (Lwt_unix.sockaddr ->
+     Lwt_io.input_channel * Lwt_io.output_channel -> unit Lwt.t) ->
+    Lwt_io.server Lwt.t
   val shutdown_server : Lwt_io.server -> unit Lwt.t
   val lines_of_file : Lwt_io.file_name -> string Lwt_stream.t
   val lines_to_file : Lwt_io.file_name -> string Lwt_stream.t -> unit Lwt.t

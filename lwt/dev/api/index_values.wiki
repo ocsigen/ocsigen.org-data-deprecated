@@ -412,6 +412,10 @@
     connections on <<span class="odocwiki_inlinecode"|sockaddr>>~.
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api text="establish_server'"| value Lwt_io.establish_server' >> ~[<<a_api | module Lwt_io >>~]|<<div class="odocwiki_info"|~Like establish~_server but allows you to access the client~'s socket
+    in the callback~.
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api text="establish_server_1"| value Lwt_io.Versioned.establish_server_1 >> ~[<<a_api | module Lwt_io.Versioned >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_deprecated"|~Old version of <<a_api | val Lwt_io.establish_server >>~.
 >>>>
 |
