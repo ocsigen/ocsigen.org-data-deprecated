@@ -1308,7 +1308,8 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="with_css_file"| value Eliom_tools.with_css_file >> ~[<<a_api subproject="client" | module Eliom_tools >>~]|<<div class="odocwiki_info"|~Record an ~C~S~S file to be included in <<span class="odocwiki_inlinecode"|~Eliom~_tools~.~F~.html>>~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="with_js_file"| value Eliom_tools.with_js_file >> ~[<<a_api subproject="client" | module Eliom_tools >>~]|<<div class="odocwiki_info"|~Record an ~(external~) ~Java~Script file to be included in <<span class="odocwiki_inlinecode"|~Eliom~_tools~.~F~.html>>~.
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="with_js_file"| value Eliom_tools.with_js_file >> ~[<<a_api subproject="client" | module Eliom_tools >>~]|<<div class="odocwiki_info"|~Record an ~(external~) ~Java~Script file to be included in
+    <<span class="odocwiki_inlinecode"|~Eliom~_tools~.~F~.html>>~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="with_progress_cursor"| value Eliom_client_core.with_progress_cursor >> ~[<<a_api subproject="client" | module Eliom_client_core >>~]||

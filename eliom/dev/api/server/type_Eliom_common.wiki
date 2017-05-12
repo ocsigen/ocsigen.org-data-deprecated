@@ -139,10 +139,6 @@
   val datacookiename : string
   val servicecookiename : string
   val persistentcookiename : string
-  val persistent_cookie_table_version : string
-  val eliom_persistent_cookie_table : string
-  val inline_class_name : string
-  val nodisplay_class_name : string
   val appl_name_cookie_name : string
   val tab_cookies_param_name : string
   val to_be_considered_as_get_param_name : string

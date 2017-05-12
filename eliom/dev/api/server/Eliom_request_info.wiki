@@ -85,10 +85,6 @@
 <<pre id="VALget_expired_service_sessions" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|get~_expired~_service~_sessions>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|\\  unit <<span class="ocsforge_color_delimiter"| -> >>\\  <<a_api subproject="server" text="Eliom_common.full_state_name" | type Eliom_common.full_state_name >> list * <<a_api subproject="server" text="Eliom_common.full_state_name" | type Eliom_common.full_state_name >> list>>>><<div class="odocwiki_info"|returns the list of names of service sessions expired for the current
     request~, for browser sessions and tab sessions~.
 >>
-<<pre id="VALget_previous_extension_error_code" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|get~_previous~_extension~_error~_code>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|unit <<span class="ocsforge_color_delimiter"| -> >> int>>>><<div class="odocwiki_info"|returns the ~H~T~T~P error code sent by the ~Ocsigen extension
-   that tried to answer to the request before ~Eliom~.
-   ~It is ~4~0~4 by default~.
->>
 
 
 ==@@id="2_Gettinginformationaboutfilesuploaded"@@~Getting information about files uploaded==

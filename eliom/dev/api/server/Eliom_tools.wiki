@@ -33,7 +33,8 @@
 >>
 <<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module>> <<a_api subproject="server" text="D" | module Eliom_tools.D >> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<a_api subproject="server" text="HTML5_TOOLS" | module Eliom_tools.HTML5_TOOLS >>>><<span class="odocwiki_type"| >>>><<div class="odocwiki_info"|~Menus with ~D~O~M semantics
 >>
-<<pre id="VALwith_js_file" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|with~_js~_file>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|string list <<span class="ocsforge_color_delimiter"| -> >> unit>>>><<div class="odocwiki_info"|~Record an ~(external~) ~Java~Script file to be included in <<span class="odocwiki_inlinecode"|~Eliom~_tools~.~F~.html>>~.
+<<pre id="VALwith_js_file" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|with~_js~_file>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|string list <<span class="ocsforge_color_delimiter"| -> >> unit>>>><<div class="odocwiki_info"|~Record an ~(external~) ~Java~Script file to be included in
+    <<span class="odocwiki_inlinecode"|~Eliom~_tools~.~F~.html>>~.
 >>
 <<pre id="VALwith_css_file" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|with~_css~_file>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|string list <<span class="ocsforge_color_delimiter"| -> >> unit>>>><<div class="odocwiki_info"|~Record an ~C~S~S file to be included in <<span class="odocwiki_inlinecode"|~Eliom~_tools~.~F~.html>>~.
 >>
@@ -68,8 +69,3 @@
               Lwt.return (html (head (title ("hello "^user))) (body []))))
     >> 
 >>
-
-~Record an ~(external~) ~Java~Script file to be included in
-    <<span class="odocwiki_inlinecode"|~Eliom~_tools~.~F~.html>>~.
-
-~Record an ~C~S~S file to be included in <<span class="odocwiki_inlinecode"|~Eliom~_tools~.~F~.html>>~.

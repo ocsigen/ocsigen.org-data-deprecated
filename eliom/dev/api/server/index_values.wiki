@@ -613,8 +613,7 @@
     that concern the running service~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="get_previous_extension_error_code"| value Eliom_request_info.get_previous_extension_error_code >> ~[<<a_api subproject="server" | module Eliom_request_info >>~]|<<div class="odocwiki_info"|returns the ~H~T~T~P error code sent by the ~Ocsigen extension
-   that tried to answer to the request before ~Eliom~.
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="get_previous_extension_error_code"| value Eliom_request_info.get_previous_extension_error_code >> ~[<<a_api subproject="server" | module Eliom_request_info >>~]|<<div class="odocwiki_info"|~Returns the http error code of the request before ~Eliom was called
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="get_remote_inet_addr"| value Eliom_request_info.get_remote_inet_addr >> ~[<<a_api subproject="server" | module Eliom_request_info >>~]|<<div class="odocwiki_info"|returns the internet address of the client~,
@@ -1365,7 +1364,8 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="with_css_file"| value Eliom_tools.with_css_file >> ~[<<a_api subproject="server" | module Eliom_tools >>~]|<<div class="odocwiki_info"|~Record an ~C~S~S file to be included in <<span class="odocwiki_inlinecode"|~Eliom~_tools~.~F~.html>>~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="with_js_file"| value Eliom_tools.with_js_file >> ~[<<a_api subproject="server" | module Eliom_tools >>~]|<<div class="odocwiki_info"|~Record an ~(external~) ~Java~Script file to be included in <<span class="odocwiki_inlinecode"|~Eliom~_tools~.~F~.html>>~.
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="with_js_file"| value Eliom_tools.with_js_file >> ~[<<a_api subproject="server" | module Eliom_tools >>~]|<<div class="odocwiki_info"|~Record an ~(external~) ~Java~Script file to be included in
+    <<span class="odocwiki_inlinecode"|~Eliom~_tools~.~F~.html>>~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="wrap"| value Eliom_wrap.wrap >> ~[<<a_api subproject="server" | module Eliom_wrap >>~]||
