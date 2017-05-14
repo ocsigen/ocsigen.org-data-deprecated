@@ -52,6 +52,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="area_attrib"| type Html_types.area_attrib >> ~[<<a_api | module Html_types >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="area_content"| type Html_types.area_content >> ~[<<a_api | module Html_types >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="area_content_fun"| type Html_types.area_content_fun >> ~[<<a_api | module Html_types >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="aria"| type Html_types.aria >> ~[<<a_api | module Html_types >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="article"| type Html_types.article >> ~[<<a_api | module Html_types >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="article_attrib"| type Html_types.article_attrib >> ~[<<a_api | module Html_types >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="article_content"| type Html_types.article_content >> ~[<<a_api | module Html_types >>~]||

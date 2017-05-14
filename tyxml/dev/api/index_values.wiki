@@ -372,6 +372,8 @@
 |@@class="odocwiki_index"@ @@<<a_api text="a_restart"| value Svg_sigs.T.a_restart >> ~[<<a_api | module Svg_sigs.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="a_result"| value Svg_sigs.T.a_result >> ~[<<a_api | module Svg_sigs.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="a_reversed"| value Html_sigs.T.a_reversed >> ~[<<a_api | module Html_sigs.T >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="a_role"| value Html_sigs.T.a_role >> ~[<<a_api | module Html_sigs.T >>~]|<<div class="odocwiki_info"|>>
+|
 |@@class="odocwiki_index"@ @@<<a_api text="a_rotate"| value Svg_sigs.T.a_rotate >> ~[<<a_api | module Svg_sigs.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="a_rows"| value Html_sigs.T.a_rows >> ~[<<a_api | module Html_sigs.T >>~]|<<div class="odocwiki_info"|~This attribute specifies the number of visible text
       lines~.

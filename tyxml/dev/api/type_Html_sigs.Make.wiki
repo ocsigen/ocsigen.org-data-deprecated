@@ -1416,6 +1416,7 @@
         val a_media : Html_types.mediadesc wrap -> [> `Media ] attrib
         val a_style : string wrap -> [> `Style_Attr ] attrib
         val a_property : string wrap -> [> `Property ] attrib
+        val a_role : string list wrap -> [> `Role ] attrib
         val pcdata : string wrap -> [> `PCDATA ] elt
         val html :
           ?a:Html_types.html_attrib attrib list ->
@@ -1706,6 +1707,7 @@
             | `OnTimeUpdate
             | `OnVolumeChange
             | `OnWaiting
+            | `Role
             | `Sandbox
             | `Seamless
             | `Spellcheck
@@ -1789,6 +1791,7 @@
             | `OnTimeUpdate
             | `OnVolumeChange
             | `OnWaiting
+            | `Role
             | `Spellcheck
             | `Style_Attr
             | `Tabindex
@@ -1868,6 +1871,7 @@
             | `OnTimeUpdate
             | `OnVolumeChange
             | `OnWaiting
+            | `Role
             | `Spellcheck
             | `Src
             | `Style_Attr
@@ -1962,6 +1966,7 @@
             | `OnVolumeChange
             | `OnWaiting
             | `Rel
+            | `Role
             | `Shape
             | `Spellcheck
             | `Style_Attr
@@ -2095,6 +2100,7 @@
             | `OnTimeUpdate
             | `OnVolumeChange
             | `OnWaiting
+            | `Role
             | `Spellcheck
             | `Style_Attr
             | `Tabindex
@@ -2193,6 +2199,7 @@
             | `OnTimeUpdate
             | `OnVolumeChange
             | `OnWaiting
+            | `Role
             | `Spellcheck
             | `Style_Attr
             | `Tabindex
@@ -2296,6 +2303,7 @@
             | `OnVolumeChange
             | `OnWaiting
             | `Open
+            | `Role
             | `Spellcheck
             | `Style_Attr
             | `Tabindex
@@ -2379,6 +2387,7 @@
             | `OnVolumeChange
             | `OnWaiting
             | `Radiogroup
+            | `Role
             | `Spellcheck
             | `Style_Attr
             | `Tabindex
@@ -2457,6 +2466,7 @@
             | `OnTimeUpdate
             | `OnVolumeChange
             | `OnWaiting
+            | `Role
             | `Spellcheck
             | `Style_Attr
             | `Tabindex
@@ -2551,6 +2561,7 @@
             | `OnVolumeChange
             | `OnWaiting
             | `Rel
+            | `Role
             | `Sizes
             | `Spellcheck
             | `Style_Attr

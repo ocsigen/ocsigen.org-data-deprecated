@@ -137,6 +137,7 @@
       | `OnTimeUpdate
       | `OnVolumeChange
       | `OnWaiting ]
+  type aria = [ `Role ]
   type common =
       [ `Accesskey
       | `Class
@@ -201,6 +202,7 @@
       | `OnTimeUpdate
       | `OnVolumeChange
       | `OnWaiting
+      | `Role
       | `Spellcheck
       | `Style_Attr
       | `Tabindex
@@ -2147,6 +2149,7 @@
       | `OnTimeUpdate
       | `OnVolumeChange
       | `OnWaiting
+      | `Role
       | `Spellcheck
       | `Style_Attr
       | `Tabindex
@@ -2238,6 +2241,7 @@
       | `OnVolumeChange
       | `OnWaiting
       | `OneBeforeUnload
+      | `Role
       | `Spellcheck
       | `Style_Attr
       | `Tabindex
@@ -2318,6 +2322,7 @@
       | `OnTimeUpdate
       | `OnVolumeChange
       | `OnWaiting
+      | `Role
       | `Spellcheck
       | `Style_Attr
       | `Tabindex
@@ -2468,6 +2473,7 @@
       | `OnTimeUpdate
       | `OnVolumeChange
       | `OnWaiting
+      | `Role
       | `Spellcheck
       | `Style_Attr
       | `Tabindex
@@ -2546,6 +2552,7 @@
           | `OnTimeUpdate
           | `OnVolumeChange
           | `OnWaiting
+          | `Role
           | `Spellcheck
           | `Style_Attr
           | `Tabindex
@@ -2619,6 +2626,7 @@
           | `OnTimeUpdate
           | `OnVolumeChange
           | `OnWaiting
+          | `Role
           | `Spellcheck
           | `Style_Attr
           | `Tabindex
@@ -2691,6 +2699,7 @@
       | `OnVolumeChange
       | `OnWaiting
       | `Reversed
+      | `Role
       | `Spellcheck
       | `Start
       | `Style_Attr
@@ -2766,6 +2775,7 @@
       | `OnTimeUpdate
       | `OnVolumeChange
       | `OnWaiting
+      | `Role
       | `Spellcheck
       | `Style_Attr
       | `Tabindex
@@ -3056,6 +3066,7 @@
       | `OnTimeUpdate
       | `OnVolumeChange
       | `OnWaiting
+      | `Role
       | `Spellcheck
       | `Style_Attr
       | `Tabindex
@@ -3144,6 +3155,7 @@
       | `OnVolumeChange
       | `OnWaiting
       | `Pubdate
+      | `Role
       | `Spellcheck
       | `Style_Attr
       | `Tabindex
@@ -3229,6 +3241,7 @@
       | `OnVolumeChange
       | `OnWaiting
       | `Rel
+      | `Role
       | `Spellcheck
       | `Style_Attr
       | `Tabindex
@@ -3307,6 +3320,7 @@
       | `OnTimeUpdate
       | `OnVolumeChange
       | `OnWaiting
+      | `Role
       | `Spellcheck
       | `Style_Attr
       | `Tabindex
@@ -3384,6 +3398,7 @@
       | `OnTimeUpdate
       | `OnVolumeChange
       | `OnWaiting
+      | `Role
       | `Spellcheck
       | `Style_Attr
       | `Tabindex
@@ -3460,6 +3475,7 @@
       | `OnTimeUpdate
       | `OnVolumeChange
       | `OnWaiting
+      | `Role
       | `Sandbox
       | `Seamless
       | `Spellcheck
@@ -3628,6 +3644,7 @@
       | `OnTimeUpdate
       | `OnVolumeChange
       | `OnWaiting
+      | `Role
       | `Spellcheck
       | `Style_Attr
       | `Tabindex
@@ -3705,6 +3722,7 @@
       | `OnTimeUpdate
       | `OnVolumeChange
       | `OnWaiting
+      | `Role
       | `Spellcheck
       | `Style_Attr
       | `Tabindex
@@ -3782,6 +3800,7 @@
       | `OnTimeUpdate
       | `OnVolumeChange
       | `OnWaiting
+      | `Role
       | `Spellcheck
       | `Src
       | `Style_Attr
@@ -3862,6 +3881,7 @@
       | `OnTimeUpdate
       | `OnVolumeChange
       | `OnWaiting
+      | `Role
       | `Spellcheck
       | `Srcset
       | `Style_Attr
@@ -3955,6 +3975,7 @@
       | `OnVolumeChange
       | `OnWaiting
       | `Preload
+      | `Role
       | `Spellcheck
       | `Style_Attr
       | `Tabindex
@@ -4040,6 +4061,7 @@
       | `OnWaiting
       | `Poster
       | `Preload
+      | `Role
       | `Spellcheck
       | `Style_Attr
       | `Tabindex
@@ -4117,6 +4139,7 @@
       | `OnTimeUpdate
       | `OnVolumeChange
       | `OnWaiting
+      | `Role
       | `Spellcheck
       | `Style_Attr
       | `Tabindex
@@ -4194,6 +4217,7 @@
       | `OnTimeUpdate
       | `OnVolumeChange
       | `OnWaiting
+      | `Role
       | `Spellcheck
       | `Src
       | `Style_Attr
@@ -4276,6 +4300,7 @@
       | `OnVolumeChange
       | `OnWaiting
       | `Rel
+      | `Role
       | `Shape
       | `Spellcheck
       | `Style_Attr
@@ -4354,6 +4379,7 @@
       | `OnTimeUpdate
       | `OnVolumeChange
       | `OnWaiting
+      | `Role
       | `Spellcheck
       | `Style_Attr
       | `Tabindex
@@ -4432,6 +4458,7 @@
       | `OnTimeUpdate
       | `OnVolumeChange
       | `OnWaiting
+      | `Role
       | `Spellcheck
       | `Style_Attr
       | `Summary
@@ -4507,6 +4534,7 @@
       | `OnTimeUpdate
       | `OnVolumeChange
       | `OnWaiting
+      | `Role
       | `Spellcheck
       | `Style_Attr
       | `Summary
@@ -4582,6 +4610,7 @@
       | `OnTimeUpdate
       | `OnVolumeChange
       | `OnWaiting
+      | `Role
       | `Span
       | `Spellcheck
       | `Style_Attr
@@ -4657,6 +4686,7 @@
       | `OnTimeUpdate
       | `OnVolumeChange
       | `OnWaiting
+      | `Role
       | `Span
       | `Spellcheck
       | `Style_Attr
@@ -4746,6 +4776,7 @@
       | `OnTimeUpdate
       | `OnVolumeChange
       | `OnWaiting
+      | `Role
       | `Rowspan
       | `Spellcheck
       | `Style_Attr
@@ -4823,6 +4854,7 @@
       | `OnTimeUpdate
       | `OnVolumeChange
       | `OnWaiting
+      | `Role
       | `Rowspan
       | `Scope
       | `Spellcheck
@@ -4910,6 +4942,7 @@
       | `OnTimeUpdate
       | `OnVolumeChange
       | `OnWaiting
+      | `Role
       | `Spellcheck
       | `Style_Attr
       | `Tabindex
@@ -4988,6 +5021,7 @@
       | `OnTimeUpdate
       | `OnVolumeChange
       | `OnWaiting
+      | `Role
       | `Spellcheck
       | `Style_Attr
       | `Tabindex
@@ -5068,6 +5102,7 @@
       | `OnTimeUpdate
       | `OnVolumeChange
       | `OnWaiting
+      | `Role
       | `Spellcheck
       | `Style_Attr
       | `Tabindex
@@ -5168,6 +5203,7 @@
       | `Placeholder
       | `ReadOnly
       | `Required
+      | `Role
       | `Size
       | `Spellcheck
       | `Src
@@ -5255,6 +5291,7 @@
       | `Placeholder
       | `ReadOnly
       | `Required
+      | `Role
       | `Rows
       | `Spellcheck
       | `Style_Attr
@@ -5343,6 +5380,7 @@
       | `OnTimeUpdate
       | `OnVolumeChange
       | `OnWaiting
+      | `Role
       | `Spellcheck
       | `Style_Attr
       | `Tabindex
@@ -5424,6 +5462,7 @@
       | `OnVolumeChange
       | `OnWaiting
       | `Required
+      | `Role
       | `Size
       | `Spellcheck
       | `Style_Attr
@@ -5505,6 +5544,7 @@
       | `OnTimeUpdate
       | `OnVolumeChange
       | `OnWaiting
+      | `Role
       | `Spellcheck
       | `Style_Attr
       | `Tabindex
@@ -5578,6 +5618,7 @@
       | `OnTimeUpdate
       | `OnVolumeChange
       | `OnWaiting
+      | `Role
       | `Selected
       | `Spellcheck
       | `Style_Attr
@@ -5664,6 +5705,7 @@
       | `OnTimeUpdate
       | `OnVolumeChange
       | `OnWaiting
+      | `Role
       | `Spellcheck
       | `Style_Attr
       | `Tabindex
@@ -5741,6 +5783,7 @@
       | `OnTimeUpdate
       | `OnVolumeChange
       | `OnWaiting
+      | `Role
       | `Spellcheck
       | `Style_Attr
       | `Tabindex
@@ -5822,6 +5865,7 @@
       | `OnVolumeChange
       | `OnWaiting
       | `Optimum
+      | `Role
       | `Spellcheck
       | `Style_Attr
       | `Tabindex
@@ -5899,6 +5943,7 @@
       | `OnVolumeChange
       | `OnWaiting
       | `Output_for
+      | `Role
       | `Spellcheck
       | `Style_Attr
       | `Tabindex
@@ -5974,6 +6019,7 @@
       | `OnVolumeChange
       | `OnWaiting
       | `Open
+      | `Role
       | `Spellcheck
       | `Style_Attr
       | `Tabindex
@@ -6057,6 +6103,7 @@
       | `OnVolumeChange
       | `OnWaiting
       | `Radiogroup
+      | `Role
       | `Spellcheck
       | `Style_Attr
       | `Tabindex
@@ -6133,6 +6180,7 @@
       | `OnTimeUpdate
       | `OnVolumeChange
       | `OnWaiting
+      | `Role
       | `Spellcheck
       | `Style_Attr
       | `Tabindex
@@ -6216,6 +6264,7 @@
       | `OnVolumeChange
       | `OnWaiting
       | `Property
+      | `Role
       | `Spellcheck
       | `Style_Attr
       | `Tabindex
@@ -6292,6 +6341,7 @@
       | `OnTimeUpdate
       | `OnVolumeChange
       | `OnWaiting
+      | `Role
       | `Scoped
       | `Spellcheck
       | `Style_Attr
@@ -6369,6 +6419,7 @@
       | `OnTimeUpdate
       | `OnVolumeChange
       | `OnWaiting
+      | `Role
       | `Spellcheck
       | `Src
       | `Style_Attr
@@ -6451,6 +6502,7 @@
       | `OnVolumeChange
       | `OnWaiting
       | `Rel
+      | `Role
       | `Sizes
       | `Spellcheck
       | `Style_Attr
