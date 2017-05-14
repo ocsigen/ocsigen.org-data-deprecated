@@ -5107,6 +5107,7 @@
       | `List
       | `Maxlength
       | `Method
+      | `Minlength
       | `Multiple
       | `Name
       | `OnAbort
@@ -5195,6 +5196,7 @@
       | `Id
       | `Lang
       | `Maxlength
+      | `Minlength
       | `Name
       | `OnAbort
       | `OnBlur

@@ -226,6 +226,7 @@
 |
 |@@class="odocwiki_index"@ @@<<a_api text="a_min"| value Html_sigs.T.a_min >> ~[<<a_api | module Html_sigs.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="a_min"| value Svg_sigs.T.a_min >> ~[<<a_api | module Svg_sigs.T >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="a_minlength"| value Html_sigs.T.a_minlength >> ~[<<a_api | module Html_sigs.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="a_mode"| value Svg_sigs.T.a_mode >> ~[<<a_api | module Svg_sigs.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="a_multiple"| value Html_sigs.T.a_multiple >> ~[<<a_api | module Html_sigs.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="a_muted"| value Html_sigs.T.a_muted >> ~[<<a_api | module Html_sigs.T >>~]||

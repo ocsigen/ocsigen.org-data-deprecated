@@ -1122,6 +1122,9 @@
       val a_maxlength :
         Html_types.number Html_sigs.T.wrap ->
         [> `Maxlength ] Html_sigs.T.attrib
+      val a_minlength :
+        Html_types.number Html_sigs.T.wrap ->
+        [> `Minlength ] Html_sigs.T.attrib
       val a_method :
         [< `Get | `Post ] Html_sigs.T.wrap -> [> `Method ] Html_sigs.T.attrib
       val a_formmethod :
@@ -3507,6 +3510,7 @@
       val a_output_for : Html_types.idrefs wrap -> [> `Output_for ] attrib
       val a_for_list : Html_types.idrefs wrap -> [> `Output_for ] attrib
       val a_maxlength : Html_types.number wrap -> [> `Maxlength ] attrib
+      val a_minlength : Html_types.number wrap -> [> `Minlength ] attrib
       val a_method : [< `Get | `Post ] wrap -> [> `Method ] attrib
       val a_formmethod : [< `Get | `Post ] wrap -> [> `Method ] attrib
       val a_multiple : unit -> [> `Multiple ] attrib
@@ -6182,6 +6186,8 @@
               Html_types.idrefs wrap -> [> `Output_for ] attrib
             val a_maxlength :
               Html_types.number wrap -> [> `Maxlength ] attrib
+            val a_minlength :
+              Html_types.number wrap -> [> `Minlength ] attrib
             val a_method : [< `Get | `Post ] wrap -> [> `Method ] attrib
             val a_formmethod : [< `Get | `Post ] wrap -> [> `Method ] attrib
             val a_multiple : unit -> [> `Multiple ] attrib

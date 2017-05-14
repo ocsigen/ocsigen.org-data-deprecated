@@ -1024,6 +1024,8 @@
     Html_types.idrefs Html_sigs.T.wrap -> [> `Output_for ] Html_sigs.T.attrib
   val a_maxlength :
     Html_types.number Html_sigs.T.wrap -> [> `Maxlength ] Html_sigs.T.attrib
+  val a_minlength :
+    Html_types.number Html_sigs.T.wrap -> [> `Minlength ] Html_sigs.T.attrib
   val a_method :
     [< `Get | `Post ] Html_sigs.T.wrap -> [> `Method ] Html_sigs.T.attrib
   val a_formmethod :
