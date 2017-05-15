@@ -137,9 +137,10 @@
       | `OnTimeUpdate
       | `OnVolumeChange
       | `OnWaiting ]
-  type aria = [ `Role ]
+  type aria = [ `Aria | `Role ]
   type common =
       [ `Accesskey
+      | `Aria
       | `Class
       | `Contenteditable
       | `Contextmenu
@@ -2086,6 +2087,7 @@
   type html_content = Html_types.html_content_fun
   type html_attrib =
       [ `Accesskey
+      | `Aria
       | `Class
       | `Contenteditable
       | `Contextmenu
@@ -2164,6 +2166,7 @@
   type body = [ `Body ]
   type body_attrib =
       [ `Accesskey
+      | `Aria
       | `Class
       | `Contenteditable
       | `Contextmenu
@@ -2259,6 +2262,7 @@
   type base_content_fun = Html_types.notag
   type base_attrib =
       [ `Accesskey
+      | `Aria
       | `Class
       | `Contenteditable
       | `Contextmenu
@@ -2410,6 +2414,7 @@
   type blockquote_content_fun = Html_types.flow5
   type blockquote_attrib =
       [ `Accesskey
+      | `Aria
       | `Cite
       | `Class
       | `Contenteditable
@@ -2489,6 +2494,7 @@
   type ol_content =
       [ `Li of
           [ `Accesskey
+          | `Aria
           | `Class
           | `Contenteditable
           | `Contextmenu
@@ -2563,6 +2569,7 @@
   type ol_content_fun =
       [ `Li of
           [ `Accesskey
+          | `Aria
           | `Class
           | `Contenteditable
           | `Contextmenu
@@ -2636,6 +2643,7 @@
           | `XMLns ] ]
   type ol_attrib =
       [ `Accesskey
+      | `Aria
       | `Class
       | `Contenteditable
       | `Contextmenu
@@ -2712,6 +2720,7 @@
   type li_content_fun = Html_types.flow5
   type li_attrib =
       [ `Accesskey
+      | `Aria
       | `Class
       | `Contenteditable
       | `Contextmenu
@@ -3003,6 +3012,7 @@
   type q_content_fun = Html_types.phrasing
   type q_attrib =
       [ `Accesskey
+      | `Aria
       | `Cite
       | `Class
       | `Contenteditable
@@ -3091,6 +3101,7 @@
   type time_content_fun = Html_types.phrasing_without_time
   type time_attrib =
       [ `Accesskey
+      | `Aria
       | `Class
       | `Contenteditable
       | `Contextmenu
@@ -3173,6 +3184,7 @@
   type a_ = [ `A of Html_types.a_content ]
   type a_attrib =
       [ `Accesskey
+      | `Aria
       | `Class
       | `Contenteditable
       | `Contextmenu
@@ -3256,6 +3268,7 @@
   type del_content_fun = Html_types.flow5
   type del_attrib =
       [ `Accesskey
+      | `Aria
       | `Cite
       | `Class
       | `Contenteditable
@@ -3334,6 +3347,7 @@
   type ins_content_fun = Html_types.flow5
   type ins_attrib =
       [ `Accesskey
+      | `Aria
       | `Cite
       | `Class
       | `Contenteditable
@@ -3411,6 +3425,7 @@
   type iframe_content_fun = [ `PCDATA ]
   type iframe_attrib =
       [ `Accesskey
+      | `Aria
       | `Class
       | `Contenteditable
       | `Contextmenu
@@ -3577,6 +3592,7 @@
   type object__ = Html_types.object__content Html_types.object_
   type object__attrib =
       [ `Accesskey
+      | `Aria
       | `Class
       | `Contenteditable
       | `Contextmenu
@@ -3659,6 +3675,7 @@
   type param_content_fun = Html_types.notag
   type param_attrib =
       [ `Accesskey
+      | `Aria
       | `Class
       | `Contenteditable
       | `Contextmenu
@@ -3736,6 +3753,7 @@
   type embed_content_fun = Html_types.notag
   type embed_attrib =
       [ `Accesskey
+      | `Aria
       | `Class
       | `Contenteditable
       | `Contextmenu
@@ -3816,6 +3834,7 @@
   type img_content_fun = Html_types.notag
   type img_attrib =
       [ `Accesskey
+      | `Aria
       | `Class
       | `Contenteditable
       | `Contextmenu
@@ -3906,6 +3925,7 @@
   type audio_content_fun = Html_types.flow5_without_media
   type audio_attrib =
       [ `Accesskey
+      | `Aria
       | `Autoplay
       | `Class
       | `Contenteditable
@@ -3990,6 +4010,7 @@
   type video_content_fun = Html_types.flow5_without_media
   type video_attrib =
       [ `Accesskey
+      | `Aria
       | `Autoplay
       | `Class
       | `Contenteditable
@@ -4076,6 +4097,7 @@
   type canvas_content_fun = Html_types.flow5
   type canvas_attrib =
       [ `Accesskey
+      | `Aria
       | `Class
       | `Contenteditable
       | `Contextmenu
@@ -4153,6 +4175,7 @@
   type source_content_fun = Html_types.notag
   type source_attrib =
       [ `Accesskey
+      | `Aria
       | `Class
       | `Contenteditable
       | `Contextmenu
@@ -4232,6 +4255,7 @@
   type area_attrib =
       [ `Accesskey
       | `Alt
+      | `Aria
       | `Class
       | `Contenteditable
       | `Contextmenu
@@ -4316,6 +4340,7 @@
   type map_content_fun = Html_types.flow5
   type map_attrib =
       [ `Accesskey
+      | `Aria
       | `Class
       | `Contenteditable
       | `Contextmenu
@@ -4396,6 +4421,7 @@
   type table_content_fun = [ `Tr ]
   type table_attrib =
       [ `Accesskey
+      | `Aria
       | `Class
       | `Contenteditable
       | `Contextmenu
@@ -4472,6 +4498,7 @@
   type tablex_content_fun = [ `Tbody ]
   type tablex_attrib =
       [ `Accesskey
+      | `Aria
       | `Class
       | `Contenteditable
       | `Contextmenu
@@ -4548,6 +4575,7 @@
   type colgroup_content_fun = [ `Col ]
   type colgroup_attrib =
       [ `Accesskey
+      | `Aria
       | `Class
       | `Contenteditable
       | `Contextmenu
@@ -4624,6 +4652,7 @@
   type col_content_fun = Html_types.notag
   type col_attrib =
       [ `Accesskey
+      | `Aria
       | `Class
       | `Contenteditable
       | `Contextmenu
@@ -4712,6 +4741,7 @@
   type td_content_fun = Html_types.flow5
   type td_attrib =
       [ `Accesskey
+      | `Aria
       | `Class
       | `Colspan
       | `Contenteditable
@@ -4790,6 +4820,7 @@
   type th_content_fun = Html_types.phrasing
   type th_attrib =
       [ `Accesskey
+      | `Aria
       | `Class
       | `Colspan
       | `Contenteditable
@@ -4875,6 +4906,7 @@
       [ `Accept_charset
       | `Accesskey
       | `Action
+      | `Aria
       | `Autocomplete
       | `Class
       | `Contenteditable
@@ -4956,6 +4988,7 @@
   type fieldset_content_fun = Html_types.flow5
   type fieldset_attrib =
       [ `Accesskey
+      | `Aria
       | `Class
       | `Contenteditable
       | `Contextmenu
@@ -5038,6 +5071,7 @@
   type label_content_fun = Html_types.phrasing_without_label
   type label_attrib =
       [ `Accesskey
+      | `Aria
       | `Class
       | `Contenteditable
       | `Contextmenu
@@ -5117,6 +5151,7 @@
       [ `Accept
       | `Accesskey
       | `Alt
+      | `Aria
       | `Autocomplete
       | `Autofocus
       | `Checked
@@ -5219,6 +5254,7 @@
   type textarea = [ `Textarea ]
   type textarea_attrib =
       [ `Accesskey
+      | `Aria
       | `Autofocus
       | `Class
       | `Cols
@@ -5308,6 +5344,7 @@
   type button_content_fun = Html_types.phrasing_without_interactive
   type button_attrib =
       [ `Accesskey
+      | `Aria
       | `Autofocus
       | `Button_Type
       | `Class
@@ -5394,6 +5431,7 @@
   type select_content_fun = [ `Optgroup | `Option ]
   type select_attrib =
       [ `Accesskey
+      | `Aria
       | `Autofocus
       | `Class
       | `Contenteditable
@@ -5480,6 +5518,7 @@
   type optgroup_content_fun = [ `Option ]
   type optgroup_attrib =
       [ `Accesskey
+      | `Aria
       | `Class
       | `Contenteditable
       | `Contextmenu
@@ -5554,6 +5593,7 @@
       | `XMLns ]
   type option_attrib =
       [ `Accesskey
+      | `Aria
       | `Class
       | `Contenteditable
       | `Contextmenu
@@ -5637,6 +5677,7 @@
   type keygen_content_fun = Html_types.notag
   type keygen_attrib =
       [ `Accesskey
+      | `Aria
       | `Autofcus
       | `Challenge
       | `Class
@@ -5718,6 +5759,7 @@
   type progress_content_fun = Html_types.phrasing_without_progress
   type progress_attrib =
       [ `Accesskey
+      | `Aria
       | `Class
       | `Contenteditable
       | `Contextmenu
@@ -5796,6 +5838,7 @@
   type meter_content_fun = Html_types.phrasing_without_meter
   type meter_attrib =
       [ `Accesskey
+      | `Aria
       | `Class
       | `Contenteditable
       | `Contextmenu
@@ -5878,6 +5921,7 @@
   type output_elt_content_fun = Html_types.phrasing
   type output_elt_attrib =
       [ `Accesskey
+      | `Aria
       | `Class
       | `Contenteditable
       | `Contextmenu
@@ -5956,6 +6000,7 @@
   type details_content_fun = Html_types.flow5
   type details_attrib =
       [ `Accesskey
+      | `Aria
       | `Class
       | `Contenteditable
       | `Contextmenu
@@ -6036,6 +6081,7 @@
   type command_content_fun = Html_types.notag
   type command_attrib =
       [ `Accesskey
+      | `Aria
       | `Checked
       | `Class
       | `Command_Type
@@ -6116,6 +6162,7 @@
   type menu_content_fun = Html_types.notag
   type menu_attrib =
       [ `Accesskey
+      | `Aria
       | `Class
       | `Contenteditable
       | `Contextmenu
@@ -6197,6 +6244,7 @@
   type meta_content_fun = Html_types.notag
   type meta_attrib =
       [ `Accesskey
+      | `Aria
       | `Charset
       | `Class
       | `Content
@@ -6277,6 +6325,7 @@
   type style_content_fun = [ `PCDATA ]
   type style_attrib =
       [ `Accesskey
+      | `Aria
       | `Class
       | `Contenteditable
       | `Contextmenu
@@ -6353,6 +6402,7 @@
   type script = [ `Script ]
   type script_attrib =
       [ `Accesskey
+      | `Aria
       | `Async
       | `Charset
       | `Class
@@ -6435,6 +6485,7 @@
   type link_content_fun = Html_types.notag
   type link_attrib =
       [ `Accesskey
+      | `Aria
       | `Class
       | `Contenteditable
       | `Contextmenu

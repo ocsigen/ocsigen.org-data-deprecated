@@ -1153,6 +1153,8 @@
   val a_property :
     string Html_sigs.T.wrap -> [> `Property ] Html_sigs.T.attrib
   val a_role : string list Html_sigs.T.wrap -> [> `Role ] Html_sigs.T.attrib
+  val a_aria :
+    string -> string list Html_sigs.T.wrap -> [> `Aria ] Html_sigs.T.attrib
   val pcdata : string Html_sigs.T.wrap -> [> `PCDATA ] Html_sigs.T.elt
   val html :
     ?a:Html_types.html_attrib Html_sigs.T.attrib list ->
@@ -1385,6 +1387,7 @@
     ([< Html_types.img_attrib ], [> Html_types.img ]) Html_sigs.T.nullary
   val iframe :
     ([< `Accesskey
+      | `Aria
       | `Class
       | `Contenteditable
       | `Contextmenu
@@ -1466,6 +1469,7 @@
   val object_ :
     ?params:[< `Param ] Html_sigs.T.elt Html_sigs.T.list_wrap ->
     ([< `Accesskey
+      | `Aria
       | `Class
       | `Contenteditable
       | `Contextmenu
@@ -1549,6 +1553,7 @@
     ([< Html_types.param_attrib ], [> Html_types.param ]) Html_sigs.T.nullary
   val embed :
     ([< `Accesskey
+      | `Aria
       | `Class
       | `Contenteditable
       | `Contextmenu
@@ -1645,6 +1650,7 @@
     alt:Html_types.text Html_sigs.T.wrap ->
     ([< `Accesskey
       | `Alt
+      | `Aria
       | `Class
       | `Contenteditable
       | `Contextmenu
@@ -1782,6 +1788,7 @@
   val fieldset :
     ?legend:[ `Legend ] Html_sigs.T.elt Html_sigs.T.wrap ->
     ([< `Accesskey
+      | `Aria
       | `Class
       | `Contenteditable
       | `Contextmenu
@@ -1885,6 +1892,7 @@
   val optgroup :
     label:Html_types.text Html_sigs.T.wrap ->
     ([< `Accesskey
+      | `Aria
       | `Class
       | `Contenteditable
       | `Contextmenu
@@ -1990,6 +1998,7 @@
   val details :
     [< `Summary ] Html_sigs.T.elt Html_sigs.T.wrap ->
     ([< `Accesskey
+      | `Aria
       | `Class
       | `Contenteditable
       | `Contextmenu
@@ -2070,6 +2079,7 @@
   val command :
     label:Html_types.text Html_sigs.T.wrap ->
     ([< `Accesskey
+      | `Aria
       | `Checked
       | `Class
       | `Command_Type
@@ -2155,6 +2165,7 @@
                    [< `Li of [< Html_types.common ] ] Html_sigs.T.elt
                    Html_sigs.T.list_wrap ] ->
     ([< `Accesskey
+      | `Aria
       | `Class
       | `Contenteditable
       | `Contextmenu
@@ -2247,6 +2258,7 @@
     rel:Html_types.linktypes Html_sigs.T.wrap ->
     href:Xml.uri Html_sigs.T.wrap ->
     ([< `Accesskey
+      | `Aria
       | `Class
       | `Contenteditable
       | `Contextmenu

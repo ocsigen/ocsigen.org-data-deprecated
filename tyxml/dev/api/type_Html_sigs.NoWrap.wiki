@@ -1045,6 +1045,7 @@
   val a_style : string wrap -> [> `Style_Attr ] attrib
   val a_property : string wrap -> [> `Property ] attrib
   val a_role : string list wrap -> [> `Role ] attrib
+  val a_aria : string -> string list wrap -> [> `Aria ] attrib
   val pcdata : string wrap -> [> `PCDATA ] elt
   val html :
     ?a:Html_types.html_attrib attrib list ->
@@ -1266,6 +1267,7 @@
     ([< Html_types.img_attrib ], [> Html_types.img ]) nullary
   val iframe :
     ([< `Accesskey
+      | `Aria
       | `Class
       | `Contenteditable
       | `Contextmenu
@@ -1347,6 +1349,7 @@
   val object_ :
     ?params:[< `Param ] elt list_wrap ->
     ([< `Accesskey
+      | `Aria
       | `Class
       | `Contenteditable
       | `Contextmenu
@@ -1429,6 +1432,7 @@
   val param : ([< Html_types.param_attrib ], [> Html_types.param ]) nullary
   val embed :
     ([< `Accesskey
+      | `Aria
       | `Class
       | `Contenteditable
       | `Contextmenu
@@ -1521,6 +1525,7 @@
     alt:Html_types.text wrap ->
     ([< `Accesskey
       | `Alt
+      | `Aria
       | `Class
       | `Contenteditable
       | `Contextmenu
@@ -1657,6 +1662,7 @@
   val fieldset :
     ?legend:[ `Legend ] elt wrap ->
     ([< `Accesskey
+      | `Aria
       | `Class
       | `Contenteditable
       | `Contextmenu
@@ -1756,6 +1762,7 @@
   val optgroup :
     label:Html_types.text wrap ->
     ([< `Accesskey
+      | `Aria
       | `Class
       | `Contenteditable
       | `Contextmenu
@@ -1860,6 +1867,7 @@
   val details :
     [< `Summary ] elt wrap ->
     ([< `Accesskey
+      | `Aria
       | `Class
       | `Contenteditable
       | `Contextmenu
@@ -1940,6 +1948,7 @@
   val command :
     label:Html_types.text wrap ->
     ([< `Accesskey
+      | `Aria
       | `Checked
       | `Class
       | `Command_Type
@@ -2021,6 +2030,7 @@
     ?children:[< `Flows of [< Html_types.flow5 ] elt list_wrap
                | `Lis of [< `Li of [< Html_types.common ] ] elt list_wrap ] ->
     ([< `Accesskey
+      | `Aria
       | `Class
       | `Contenteditable
       | `Contextmenu
@@ -2112,6 +2122,7 @@
     rel:Html_types.linktypes wrap ->
     href:Xml.uri wrap ->
     ([< `Accesskey
+      | `Aria
       | `Class
       | `Contenteditable
       | `Contextmenu

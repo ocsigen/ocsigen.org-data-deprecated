@@ -24,6 +24,10 @@
 |@@class="odocwiki_index"@ @@<<a_api text="a_animation_fill"| value Svg_sigs.T.a_animation_fill >> ~[<<a_api | module Svg_sigs.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="a_animation_values"| value Svg_sigs.T.a_animation_values >> ~[<<a_api | module Svg_sigs.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="a_arabic_form"| value Svg_sigs.T.a_arabic_form >> ~[<<a_api | module Svg_sigs.T >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="a_aria"| value Html_sigs.T.a_aria >> ~[<<a_api | module Html_sigs.T >>~]|<<div class="odocwiki_info"|~Basic support for ~W~A~I~-~A~R~I~A attributes~: <<span class="odocwiki_inlinecode"|a~_aria "foo">> corresponds to an
+      "aria~-foo" attribute~.
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api text="a_ascent"| value Svg_sigs.T.a_ascent >> ~[<<a_api | module Svg_sigs.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="a_async"| value Html_sigs.T.a_async >> ~[<<a_api | module Html_sigs.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="a_attributeName"| value Svg_sigs.T.a_attributeName >> ~[<<a_api | module Svg_sigs.T >>~]||
