@@ -1384,7 +1384,9 @@
 |@@class="odocwiki_index"@ @@<<a_api text="read_lines"| value Lwt_io.read_lines >> ~[<<a_api | module Lwt_io >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|read~_lines ic>> returns a stream holding all lines of <<span class="odocwiki_inlinecode"|ic>>
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api text="read_value"| value Lwt_io.read_value >> ~[<<a_api | module Lwt_io >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|read~_value ic>> reads a marshaled value from <<span class="odocwiki_inlinecode"|ic>>
+|@@class="odocwiki_index"@ @@<<a_api text="read_value"| value Lwt_io.read_value >> ~[<<a_api | module Lwt_io >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|read~_value channel>> reads a marshaled value from <<span class="odocwiki_inlinecode"|channel>>~; it corresponds
+    to the standard library~'s
+    [[https://caml.inria.fr/pub/docs/manual-ocaml/libref/Marshal.html#VALfrom_channel| <<span class="odocwiki_inlinecode"|~Marshal~.from~_channel>>]]~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="readable"| value Lwt_unix.readable >> ~[<<a_api | module Lwt_unix >>~]|<<div class="odocwiki_info"|~Returns whether the given file descriptor is currently
@@ -2089,7 +2091,8 @@
 |@@class="odocwiki_index"@ @@<<a_api text="write_string"| value Lwt_unix.write_string >> ~[<<a_api | module Lwt_unix >>~]|<<div class="odocwiki_info"|~See <<a_api | val Lwt_unix.write >>~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api text="write_value"| value Lwt_io.write_value >> ~[<<a_api | module Lwt_io >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|write~_value oc ~?flags x>> marshals the value <<span class="odocwiki_inlinecode"|x>> to <<span class="odocwiki_inlinecode"|oc>>
+|@@class="odocwiki_index"@ @@<<a_api text="write_value"| value Lwt_io.write_value >> ~[<<a_api | module Lwt_io >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|write~_value channel ~?flags v>> writes <<span class="odocwiki_inlinecode"|v>> to <<span class="odocwiki_inlinecode"|channel>> using the <<span class="odocwiki_inlinecode"|~Marshal>>
+    module of the standard library~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="writev"| value Lwt_unix.writev >> ~[<<a_api | module Lwt_unix >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|writev fd vs>> writes the bytes in the buffer slices <<span class="odocwiki_inlinecode"|vs>> to the file

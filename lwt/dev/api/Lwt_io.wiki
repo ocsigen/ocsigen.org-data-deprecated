@@ -213,7 +213,19 @@
       <<span class="odocwiki_inlinecode"|length>> bytes and stores them in <<span class="odocwiki_inlinecode"|buffer>> at offset <<span class="odocwiki_inlinecode"|offset>>~.
 **Raises** {{{End_of_file}}} on end of input\\
 >>
-<<pre id="VALread_value" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|read~_value>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<a_api text="input_channel" | type Lwt_io.input_channel >> <<span class="ocsforge_color_delimiter"| -> >> 'a <<a_api text="Lwt.t" | type Lwt.t >>>>>><<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|read~_value ic>> reads a marshaled value from <<span class="odocwiki_inlinecode"|ic>>
+<<pre id="VALread_value" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|read~_value>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<a_api text="input_channel" | type Lwt_io.input_channel >> <<span class="ocsforge_color_delimiter"| -> >> 'a <<a_api text="Lwt.t" | type Lwt.t >>>>>><<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|read~_value channel>> reads a marshaled value from <<span class="odocwiki_inlinecode"|channel>>~; it corresponds
+    to the standard library~'s
+    [[https://caml.inria.fr/pub/docs/manual-ocaml/libref/Marshal.html#VALfrom_channel| <<span class="odocwiki_inlinecode"|~Marshal~.from~_channel>>]]~.
+    ~The corresponding writing function is <<a_api | val Lwt_io.write_value >>~.
+
+
+    ~Note that reading marshaled values is //not//~, in general~, type~-safe~. ~See
+    the warning in the description of module
+    [[https://caml.inria.fr/pub/docs/manual-ocaml/libref/Marshal.html|
+    <<span class="odocwiki_inlinecode"|~Marshal>>]] for details~. ~The short version is~: if you read a value of one
+    type~, such as <<span class="odocwiki_inlinecode"|string>>~, when a value of another type~, such as <<span class="odocwiki_inlinecode"|int>> has
+    actually been marshaled to <<span class="odocwiki_inlinecode"|channel>>~, you may get arbitrary behavior~,
+    including segmentation faults~, access violations~, security bugs~, etc~.
 >>
 
 
@@ -249,7 +261,14 @@
 >>
 <<pre id="VALwrite_from_string_exactly" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|write~_from~_string~_exactly>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|\\  <<a_api text="output_channel" | type Lwt_io.output_channel >> <<span class="ocsforge_color_delimiter"| -> >> string <<span class="ocsforge_color_delimiter"| -> >> int <<span class="ocsforge_color_delimiter"| -> >> int <<span class="ocsforge_color_delimiter"| -> >> unit <<a_api text="Lwt.t" | type Lwt.t >>>>>><<div class="odocwiki_info"|~See <<a_api | val Lwt_io.write_from_exactly >>~.
 >>
-<<pre id="VALwrite_value" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|write~_value>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|\\  <<a_api text="output_channel" | type Lwt_io.output_channel >> <<span class="ocsforge_color_delimiter"| -> >>\\  <<span class="ocsforge_color_label"| ?flags: >><<span class="ocsforge_color_uid"|Marshal>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|extern_flags>> list <<span class="ocsforge_color_delimiter"| -> >> 'a <<span class="ocsforge_color_delimiter"| -> >> unit <<a_api text="Lwt.t" | type Lwt.t >>>>>><<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|write~_value oc ~?flags x>> marshals the value <<span class="odocwiki_inlinecode"|x>> to <<span class="odocwiki_inlinecode"|oc>>
+<<pre id="VALwrite_value" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|write~_value>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|\\  <<a_api text="output_channel" | type Lwt_io.output_channel >> <<span class="ocsforge_color_delimiter"| -> >>\\  <<span class="ocsforge_color_label"| ?flags: >><<span class="ocsforge_color_uid"|Marshal>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|extern_flags>> list <<span class="ocsforge_color_delimiter"| -> >> 'a <<span class="ocsforge_color_delimiter"| -> >> unit <<a_api text="Lwt.t" | type Lwt.t >>>>>><<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|write~_value channel ~?flags v>> writes <<span class="odocwiki_inlinecode"|v>> to <<span class="odocwiki_inlinecode"|channel>> using the <<span class="odocwiki_inlinecode"|~Marshal>>
+    module of the standard library~. ~See
+    [[https://caml.inria.fr/pub/docs/manual-ocaml/libref/Marshal.html#VALto_channel|
+    <<span class="odocwiki_inlinecode"|~Marshal~.to~_channel>>]] for an explanation of <<span class="odocwiki_inlinecode"|~?flags>>~.
+
+
+    ~The corresponding reading function is <<a_api | val Lwt_io.read_value >>~. ~See warnings about type
+    safety in the description of <<a_api | val Lwt_io.read_value >>~.
 >>
 
 
