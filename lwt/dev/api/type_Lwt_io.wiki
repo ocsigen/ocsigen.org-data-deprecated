@@ -119,6 +119,9 @@
     ?out_buffer:Lwt_bytes.t ->
     Unix.sockaddr ->
     (Lwt_io.input_channel * Lwt_io.output_channel -> 'a Lwt.t) -> 'a Lwt.t
+  val with_close_connection :
+    (Lwt_io.input_channel * Lwt_io.output_channel -> 'a Lwt.t) ->
+    Lwt_io.input_channel * Lwt_io.output_channel -> 'a Lwt.t
   type server
   val establish_server :
     ?fd:Lwt_unix.file_descr ->
