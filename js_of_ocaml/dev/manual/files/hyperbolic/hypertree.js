@@ -698,6 +698,9 @@
          }
       var fd=this.fs.openSync(this.nm(name),res);
       return new MlNodeFile(fd)};
+    MlNodeDevice.prototype.rename
+    =
+    function(o,n){this.fs.renameSync(this.nm(o),this.nm(n))};
     MlNodeDevice.prototype.constructor = MlNodeDevice;
     var jsoo_mount_point=[];
     if(typeof require == "undefined")
