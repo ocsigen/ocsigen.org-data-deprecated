@@ -1361,7 +1361,7 @@
         &&
         e.message.match(/too much recursion/i))
        return caml_return_exn_constant(caml_global_data.Stack_overflow);
-      if(e instanceof joo_global_object.Error)
+      if(e instanceof joo_global_object.Error && caml_named_value("jsError"))
        return [0,caml_named_value("jsError"),e];
       return [0,caml_global_data.Failure,caml_js_to_string(String(e))]}
     function caml_call1(f,a0)
