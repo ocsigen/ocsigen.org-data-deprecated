@@ -293,3 +293,4 @@ else
 
 * ~Debug messages are removed if the option <<span class="odocwiki_inlinecode"|~-no~-debug>> is passed~.
 
+<<pre id="VALmapper" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|mapper>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<span class="ocsforge_color_uid"|Migrate_parsetree>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_uid"|OCaml_404>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|Ast>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|Ast_mapper>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|mapper>>>>>>

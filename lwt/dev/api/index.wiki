@@ -210,9 +210,7 @@ penalty when using logging by inlining level tests~.
 |<<a_api | module Pa_lwt >>|<<div class="odocwiki_info"|~Syntactic sugars for ~Lwt ~(deprecated~)
 >>
 |
-|<<a_api | module Pa_lwt_log >>|<<div class="odocwiki_info"|~Special syntax for the logging facility ~(deprecated~)
->>
-|
+|Pa_lwt_log||
 
 
 

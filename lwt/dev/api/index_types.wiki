@@ -74,10 +74,10 @@
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="io_event"| type Lwt_unix.io_event >> ~[<<a_api | module Lwt_unix >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="io_vector"| type Lwt_bytes.io_vector >> ~[<<a_api | module Lwt_bytes >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="io_vector"| type Lwt_unix.io_vector >> ~[<<a_api | module Lwt_unix >>~]|<<div class="odocwiki_info"|~An io~-vector~.
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api text="io_vector"| type Lwt_bytes.io_vector >> ~[<<a_api | module Lwt_bytes >>~]||
 |@@ @style="tet-align: left;"@@\\J|
 |@@class="odocwiki_index"@ @@<<a_api text="job"| type Lwt_unix.job >> ~[<<a_api | module Lwt_unix >>~]|<<div class="odocwiki_info"|~Type of job descriptions~.
 >>
@@ -125,10 +125,10 @@
 |@@class="odocwiki_index"@ @@<<a_api text="resource_usage"| type Lwt_unix.resource_usage >> ~[<<a_api | module Lwt_unix >>~]|<<div class="odocwiki_info"|~Resource usages
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api text="result"| type Lwt_stream.result >> ~[<<a_api | module Lwt_stream >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="result"| type Lwt.result >> ~[<<a_api | module Lwt >>~]|<<div class="odocwiki_info"|~Either a value of type <<span class="odocwiki_inlinecode"|~'a>>~, either an exception~.
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api text="result"| type Lwt_stream.result >> ~[<<a_api | module Lwt_stream >>~]||
 |@@ @style="tet-align: left;"@@\\S|
 |@@class="odocwiki_index"@ @@<<a_api text="section"| type Lwt_log_core.section >> ~[<<a_api | module Lwt_log_core >>~]|<<div class="odocwiki_info"|~Each logging message has a section~.
 >>
@@ -156,10 +156,10 @@
 |@@class="odocwiki_index"@ @@<<a_api text="socket_int_option"| type Lwt_unix.socket_int_option >> ~[<<a_api | module Lwt_unix >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="socket_optint_option"| type Lwt_unix.socket_optint_option >> ~[<<a_api | module Lwt_unix >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="socket_type"| type Lwt_unix.socket_type >> ~[<<a_api | module Lwt_unix >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="state"| type Lwt_unix.state >> ~[<<a_api | module Lwt_unix >>~]|<<div class="odocwiki_info"|~State of a **file descriptor**
+|@@class="odocwiki_index"@ @@<<a_api text="state"| type Lwt_process.state >> ~[<<a_api | module Lwt_process >>~]|<<div class="odocwiki_info"|~State of a sub~-process
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api text="state"| type Lwt_process.state >> ~[<<a_api | module Lwt_process >>~]|<<div class="odocwiki_info"|~State of a sub~-process
+|@@class="odocwiki_index"@ @@<<a_api text="state"| type Lwt_unix.state >> ~[<<a_api | module Lwt_unix >>~]|<<div class="odocwiki_info"|~State of a **file descriptor**
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="state"| type Lwt.state >> ~[<<a_api | module Lwt >>~]|<<div class="odocwiki_info"|~State of a thread
@@ -171,43 +171,43 @@
 >>
 |
 |@@ @style="tet-align: left;"@@\\T|
-|@@class="odocwiki_index"@ @@<<a_api text="t"| type Lwt_bytes.t >> ~[<<a_api | module Lwt_bytes >>~]|<<div class="odocwiki_info"|~Type of array of bytes~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api text="t"| type Lwt_engine.Ev_backend.t >> ~[<<a_api | module Lwt_engine.Ev_backend >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="t"| type Lwt_unix.IO_vectors.t >> ~[<<a_api | module Lwt_unix.IO_vectors >>~]|<<div class="odocwiki_info"|~Mutable sequences of ~I~/~O vectors~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api text="t"| type Lwt_timeout.t >> ~[<<a_api | module Lwt_timeout >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="t"| type Lwt_bytes.t >> ~[<<a_api | module Lwt_bytes >>~]|<<div class="odocwiki_info"|~Type of array of bytes~.
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api text="t"| type Lwt_throttle.S.t >> ~[<<a_api | module Lwt_throttle.S >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="t"| type Lwt_timeout.t >> ~[<<a_api | module Lwt_timeout >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="t"| type Lwt_engine.Ev_backend.t >> ~[<<a_api | module Lwt_engine.Ev_backend >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="t"| type Lwt_log_core.Section.t >> ~[<<a_api | module Lwt_log_core.Section >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="t"| type Lwt_pqueue.OrderedType.t >> ~[<<a_api | module Lwt_pqueue.OrderedType >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="t"| type Lwt_pqueue.S.t >> ~[<<a_api | module Lwt_pqueue.S >>~]|<<div class="odocwiki_info"|~Type of priority queues~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api text="t"| type Lwt_switch.t >> ~[<<a_api | module Lwt_switch >>~]|<<div class="odocwiki_info"|~Type of switches~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api text="t"| type Lwt_stream.t >> ~[<<a_api | module Lwt_stream >>~]|<<div class="odocwiki_info"|~A stream holding values of type <<span class="odocwiki_inlinecode"|~'a>>~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api text="t"| type Lwt_sequence.t >> ~[<<a_api | module Lwt_sequence >>~]|<<div class="odocwiki_info"|~Type of a sequence holding values of type <<span class="odocwiki_inlinecode"|~'a>>
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api text="t"| type Lwt_result.t >> ~[<<a_api | module Lwt_result >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="t"| type Lwt_pool.t >> ~[<<a_api | module Lwt_pool >>~]|<<div class="odocwiki_info"|~Pools containing values of type <<span class="odocwiki_inlinecode"|~'a>>~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api text="t"| type Lwt_mvar.t >> ~[<<a_api | module Lwt_mvar >>~]|<<div class="odocwiki_info"|~The type of a mailbox variable~.
+|@@class="odocwiki_index"@ @@<<a_api text="t"| type Lwt_condition.t >> ~[<<a_api | module Lwt_condition >>~]|<<div class="odocwiki_info"|~Condition variable type~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="t"| type Lwt_mutex.t >> ~[<<a_api | module Lwt_mutex >>~]|<<div class="odocwiki_info"|~Type of ~Lwt mutexes
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api text="t"| type Lwt_result.t >> ~[<<a_api | module Lwt_result >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="t"| type Lwt_switch.t >> ~[<<a_api | module Lwt_switch >>~]|<<div class="odocwiki_info"|~Type of switches~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="t"| type Lwt_sequence.t >> ~[<<a_api | module Lwt_sequence >>~]|<<div class="odocwiki_info"|~Type of a sequence holding values of type <<span class="odocwiki_inlinecode"|~'a>>
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api text="t"| type Lwt.t >> ~[<<a_api | module Lwt >>~]|<<div class="odocwiki_info"|~The type of threads returning a result of type <<span class="odocwiki_inlinecode"|~'a>>~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api text="t"| type Lwt_condition.t >> ~[<<a_api | module Lwt_condition >>~]|<<div class="odocwiki_info"|~Condition variable type~.
+|@@class="odocwiki_index"@ @@<<a_api text="t"| type Lwt_mvar.t >> ~[<<a_api | module Lwt_mvar >>~]|<<div class="odocwiki_info"|~The type of a mailbox variable~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="t"| type Lwt_stream.t >> ~[<<a_api | module Lwt_stream >>~]|<<div class="odocwiki_info"|~A stream holding values of type <<span class="odocwiki_inlinecode"|~'a>>~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="template"| type Lwt_log_core.template >> ~[<<a_api | module Lwt_log_core >>~]|<<div class="odocwiki_info"|~A template is for generating log messages~.

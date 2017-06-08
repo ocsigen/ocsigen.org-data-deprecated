@@ -251,10 +251,10 @@
 |@@class="odocwiki_index"@ @@<<a_api text="chmod"| value Lwt_unix.chmod >> ~[<<a_api | module Lwt_unix >>~]|<<div class="odocwiki_info"|~Wrapper for <<span class="odocwiki_inlinecode"|~Unix~.chmod>>
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api text="choose"| value Lwt_stream.choose >> ~[<<a_api | module Lwt_stream >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|choose l>> creates an stream from a list of streams~.
+|@@class="odocwiki_index"@ @@<<a_api text="choose"| value Lwt.choose >> ~[<<a_api | module Lwt >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|choose l>> behaves as the first thread in <<span class="odocwiki_inlinecode"|l>> to terminate~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api text="choose"| value Lwt.choose >> ~[<<a_api | module Lwt >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|choose l>> behaves as the first thread in <<span class="odocwiki_inlinecode"|l>> to terminate~.
+|@@class="odocwiki_index"@ @@<<a_api text="choose"| value Lwt_stream.choose >> ~[<<a_api | module Lwt_stream >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|choose l>> creates an stream from a list of streams~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="chown"| value Lwt_unix.chown >> ~[<<a_api | module Lwt_unix >>~]|<<div class="odocwiki_info"|~Wrapper for <<span class="odocwiki_inlinecode"|~Unix~.chown>>
@@ -275,10 +275,10 @@
 |@@class="odocwiki_index"@ @@<<a_api text="close"| value Lwt_io.close >> ~[<<a_api | module Lwt_io >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|close ch>> closes the given channel~.
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api text="close"| value Lwt_ssl.close >> ~[<<a_api | module Lwt_ssl >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="close"| value Lwt_log_core.close >> ~[<<a_api | module Lwt_log_core >>~]|<<div class="odocwiki_info"|~Close the given logger
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api text="close"| value Lwt_ssl.close >> ~[<<a_api | module Lwt_ssl >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="close_in"| value Lwt_chan.close_in >> ~[<<a_api | module Lwt_chan >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="close_out"| value Lwt_chan.close_out >> ~[<<a_api | module Lwt_chan >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="closed"| value Lwt_stream.closed >> ~[<<a_api | module Lwt_stream >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|closed st>> returns a thread that will sleep until the stream has been
@@ -301,37 +301,37 @@
 |@@class="odocwiki_index"@ @@<<a_api text="copy"| value Lwt_bytes.copy >> ~[<<a_api | module Lwt_bytes >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|copy buffer>> creates a copy of the given byte array~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api text="create"| value Lwt_bytes.create >> ~[<<a_api | module Lwt_bytes >>~]|<<div class="odocwiki_info"|~Creates a new byte array of the given size~.
->>
-|
 |@@class="odocwiki_index"@ @@<<a_api text="create"| value Lwt_unix.IO_vectors.create >> ~[<<a_api | module Lwt_unix.IO_vectors >>~]|<<div class="odocwiki_info"|~Creates an empty ~I~/~O vector sequence~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api text="create"| value Lwt_timeout.create >> ~[<<a_api | module Lwt_timeout >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|create n f>> defines a new timeout with <<span class="odocwiki_inlinecode"|n>> seconds duration~.
+|@@class="odocwiki_index"@ @@<<a_api text="create"| value Lwt_bytes.create >> ~[<<a_api | module Lwt_bytes >>~]|<<div class="odocwiki_info"|~Creates a new byte array of the given size~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="create"| value Lwt_throttle.S.create >> ~[<<a_api | module Lwt_throttle.S >>~]|<<div class="odocwiki_info"|>>
 |
-|@@class="odocwiki_index"@ @@<<a_api text="create"| value Lwt_switch.create >> ~[<<a_api | module Lwt_switch >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|create ~(~)>> creates a new switch~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api text="create"| value Lwt_stream.create >> ~[<<a_api | module Lwt_stream >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|create ~(~)>> returns a new stream and a push function~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api text="create"| value Lwt_sequence.create >> ~[<<a_api | module Lwt_sequence >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|create ~(~)>> creates a new empty sequence
+|@@class="odocwiki_index"@ @@<<a_api text="create"| value Lwt_timeout.create >> ~[<<a_api | module Lwt_timeout >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|create n f>> defines a new timeout with <<span class="odocwiki_inlinecode"|n>> seconds duration~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="create"| value Lwt_pool.create >> ~[<<a_api | module Lwt_pool >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|create n ~?check ~?validate f>> creates a new pool with at most
       <<span class="odocwiki_inlinecode"|n>> elements~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api text="create"| value Lwt_mvar.create >> ~[<<a_api | module Lwt_mvar >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|create v>> creates a new mailbox variable containing value <<span class="odocwiki_inlinecode"|v>>~.
+|@@class="odocwiki_index"@ @@<<a_api text="create"| value Lwt_condition.create >> ~[<<a_api | module Lwt_condition >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|create ~(~)>> creates a new condition variable~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="create"| value Lwt_mutex.create >> ~[<<a_api | module Lwt_mutex >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|create ~(~)>> creates a new mutex~, which is initially unlocked
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api text="create"| value Lwt_condition.create >> ~[<<a_api | module Lwt_condition >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|create ~(~)>> creates a new condition variable~.
+|@@class="odocwiki_index"@ @@<<a_api text="create"| value Lwt_switch.create >> ~[<<a_api | module Lwt_switch >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|create ~(~)>> creates a new switch~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="create"| value Lwt_sequence.create >> ~[<<a_api | module Lwt_sequence >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|create ~(~)>> creates a new empty sequence
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="create"| value Lwt_mvar.create >> ~[<<a_api | module Lwt_mvar >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|create v>> creates a new mailbox variable containing value <<span class="odocwiki_inlinecode"|v>>~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="create"| value Lwt_stream.create >> ~[<<a_api | module Lwt_stream >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|create ~(~)>> returns a new stream and a push function~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="create_bounded"| value Lwt_stream.create_bounded >> ~[<<a_api | module Lwt_stream >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|create~_bounded size>> returns a new stream and a bounded push
@@ -492,18 +492,18 @@
 |@@class="odocwiki_index"@ @@<<a_api text="filter"| value Lwt_stream.filter >> ~[<<a_api | module Lwt_stream >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="filter_map"| value Lwt_stream.filter_map >> ~[<<a_api | module Lwt_stream >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="filter_map_p"| value Lwt_list.filter_map_p >> ~[<<a_api | module Lwt_list >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="filter_map_s"| value Lwt_list.filter_map_s >> ~[<<a_api | module Lwt_list >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="filter_map_s"| value Lwt_stream.filter_map_s >> ~[<<a_api | module Lwt_stream >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|filter~_map f st>> filter and map <<span class="odocwiki_inlinecode"|st>> at the same time
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api text="filter_map_s"| value Lwt_list.filter_map_s >> ~[<<a_api | module Lwt_list >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="filter_p"| value Lwt_react.E.filter_p >> ~[<<a_api | module Lwt_react.E >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="filter_p"| value Lwt_list.filter_p >> ~[<<a_api | module Lwt_list >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="filter_s"| value Lwt_react.S.filter_s >> ~[<<a_api | module Lwt_react.S >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="filter_s"| value Lwt_react.E.filter_s >> ~[<<a_api | module Lwt_react.E >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="filter_s"| value Lwt_list.filter_s >> ~[<<a_api | module Lwt_list >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="filter_s"| value Lwt_stream.filter_s >> ~[<<a_api | module Lwt_stream >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|filter f st>> keeps only values~, <<span class="odocwiki_inlinecode"|x>>~, such that <<span class="odocwiki_inlinecode"|f x>> is <<span class="odocwiki_inlinecode"|true>>
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api text="filter_s"| value Lwt_list.filter_s >> ~[<<a_api | module Lwt_list >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="finalise"| value Lwt_gc.finalise >> ~[<<a_api | module Lwt_gc >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|finalise f x>> ensures <<span class="odocwiki_inlinecode"|f x>> is evaluated after <<span class="odocwiki_inlinecode"|x>> has been
       garbage collected~.
 >>
@@ -543,17 +543,17 @@
       that satisfies <<span class="odocwiki_inlinecode"|f>> or raises <<span class="odocwiki_inlinecode"|~Not~_found>> if none exists~.
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api text="find_s"| value Lwt_list.find_s >> ~[<<a_api | module Lwt_list >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="find_s"| value Lwt_stream.find_s >> ~[<<a_api | module Lwt_stream >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|find f s>> find an element in a stream~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api text="find_s"| value Lwt_list.find_s >> ~[<<a_api | module Lwt_list >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="flatten"| value Lwt_stream.flatten >> ~[<<a_api | module Lwt_stream >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|flatten st ~= map~_list ~(fun l ~-~> l~) st>>
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api text="flush"| value Lwt_chan.flush >> ~[<<a_api | module Lwt_chan >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="flush"| value Lwt_io.flush >> ~[<<a_api | module Lwt_io >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|flush oc>> performs all pending writes on <<span class="odocwiki_inlinecode"|oc>>
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api text="flush"| value Lwt_chan.flush >> ~[<<a_api | module Lwt_chan >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="flush_all"| value Lwt_io.flush_all >> ~[<<a_api | module Lwt_io >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|flush~_all ~(~)>> flushes all open output channels
 >>
 |
@@ -628,15 +628,15 @@
 |@@class="odocwiki_index"@ @@<<a_api text="get"| value Lwt_engine.get >> ~[<<a_api | module Lwt_engine >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|get ~(~)>> returns the engine currently in use~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api text="get"| value Lwt_stream.get >> ~[<<a_api | module Lwt_stream >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|get st>> removes and returns the first element of the stream~, if
-      any~.
->>
-|
 |@@class="odocwiki_index"@ @@<<a_api text="get"| value Lwt_sequence.get >> ~[<<a_api | module Lwt_sequence >>~]|<<div class="odocwiki_info"|~Returns the contents of a node
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="get"| value Lwt.get >> ~[<<a_api | module Lwt >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|get key>> returns the value associated with <<span class="odocwiki_inlinecode"|key>> in the current
       thread~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="get"| value Lwt_stream.get >> ~[<<a_api | module Lwt_stream >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|get st>> removes and returns the first element of the stream~, if
+      any~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="get_affinity"| value Lwt_unix.get_affinity >> ~[<<a_api | module Lwt_unix >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|get~_affinity ~?pid ~(~)>> returns the list of ~C~P~Us the process with
@@ -793,10 +793,10 @@
 |@@class="odocwiki_index"@ @@<<a_api text="init"| value Lwt_preemptive.init >> ~[<<a_api | module Lwt_preemptive >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|init min max log>> initialises this module~.
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api text="input"| value Lwt_chan.input >> ~[<<a_api | module Lwt_chan >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="input"| value Lwt_io.input >> ~[<<a_api | module Lwt_io >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|input>> input mode representation
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api text="input"| value Lwt_chan.input >> ~[<<a_api | module Lwt_chan >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="input_binary_int"| value Lwt_chan.input_binary_int >> ~[<<a_api | module Lwt_chan >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="input_char"| value Lwt_chan.input_char >> ~[<<a_api | module Lwt_chan >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="input_line"| value Lwt_chan.input_line >> ~[<<a_api | module Lwt_chan >>~]||
@@ -804,10 +804,10 @@
 |@@class="odocwiki_index"@ @@<<a_api text="install"| value Lwt_glib.install >> ~[<<a_api | module Lwt_glib >>~]|<<div class="odocwiki_info"|~Install the ~Glib~<~-~>~Lwt integration~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api text="io_vector"| value Lwt_bytes.io_vector >> ~[<<a_api | module Lwt_bytes >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="io_vector"| value Lwt_unix.io_vector >> ~[<<a_api | module Lwt_unix >>~]|<<div class="odocwiki_info"|~Creates an io~-vector
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api text="io_vector"| value Lwt_bytes.io_vector >> ~[<<a_api | module Lwt_bytes >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="is_busy"| value Lwt_io.is_busy >> ~[<<a_api | module Lwt_io >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|is~_busy channel>> returns whether the given channel is currently
       busy~.
 >>
@@ -822,14 +822,14 @@
 |@@class="odocwiki_index"@ @@<<a_api text="is_empty"| value Lwt_pqueue.S.is_empty >> ~[<<a_api | module Lwt_pqueue.S >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|is~_empty q>> evaluates to <<span class="odocwiki_inlinecode"|true>> iff <<span class="odocwiki_inlinecode"|q>> is empty~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api text="is_empty"| value Lwt_stream.is_empty >> ~[<<a_api | module Lwt_stream >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|is~_empty st>> returns whether the given stream is empty~.
+|@@class="odocwiki_index"@ @@<<a_api text="is_empty"| value Lwt_mutex.is_empty >> ~[<<a_api | module Lwt_mutex >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|is~_empty mutex>> returns <<span class="odocwiki_inlinecode"|true>> if they are no thread waiting on
+      the mutex~, and <<span class="odocwiki_inlinecode"|false>> otherwise
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="is_empty"| value Lwt_sequence.is_empty >> ~[<<a_api | module Lwt_sequence >>~]|<<div class="odocwiki_info"|~Returns <<span class="odocwiki_inlinecode"|true>> iff the given sequence is empty
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api text="is_empty"| value Lwt_mutex.is_empty >> ~[<<a_api | module Lwt_mutex >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|is~_empty mutex>> returns <<span class="odocwiki_inlinecode"|true>> if they are no thread waiting on
-      the mutex~, and <<span class="odocwiki_inlinecode"|false>> otherwise
+|@@class="odocwiki_index"@ @@<<a_api text="is_empty"| value Lwt_stream.is_empty >> ~[<<a_api | module Lwt_stream >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|is~_empty st>> returns whether the given stream is empty~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="is_locked"| value Lwt_mutex.is_locked >> ~[<<a_api | module Lwt_mutex >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|locked mutex>> returns whether <<span class="odocwiki_inlinecode"|mutex>> is currently locked
@@ -867,16 +867,16 @@
       the right
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api text="iter_p"| value Lwt_stream.iter_p >> ~[<<a_api | module Lwt_stream >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="iter_p"| value Lwt_list.iter_p >> ~[<<a_api | module Lwt_list >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="iter_p"| value Lwt_stream.iter_p >> ~[<<a_api | module Lwt_stream >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="iter_r"| value Lwt_sequence.iter_r >> ~[<<a_api | module Lwt_sequence >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|iter~_l f s>> applies <<span class="odocwiki_inlinecode"|f>> on all elements of <<span class="odocwiki_inlinecode"|s>> starting from
       the right
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api text="iter_s"| value Lwt_list.iter_s >> ~[<<a_api | module Lwt_list >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="iter_s"| value Lwt_stream.iter_s >> ~[<<a_api | module Lwt_stream >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|iter f s>> iterates over all elements of the stream~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api text="iter_s"| value Lwt_list.iter_s >> ~[<<a_api | module Lwt_list >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="iteri_p"| value Lwt_list.iteri_p >> ~[<<a_api | module Lwt_list >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="iteri_s"| value Lwt_list.iteri_s >> ~[<<a_api | module Lwt_list >>~]||
 |@@ @style="tet-align: left;"@@\\J|
@@ -1025,11 +1025,11 @@
 |@@class="odocwiki_index"@ @@<<a_api text="make_value"| value Lwt.make_value >> ~[<<a_api | module Lwt >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_deprecated"|<<span class="odocwiki_inlinecode"|value x>> creates a result containing the value <<span class="odocwiki_inlinecode"|x>>~.
 >>>>
 |
-|@@class="odocwiki_index"@ @@<<a_api text="map"| value Lwt_stream.map >> ~[<<a_api | module Lwt_stream >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="map"| value Lwt_result.map >> ~[<<a_api | module Lwt_result >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="map"| value Lwt.map >> ~[<<a_api | module Lwt >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|map f m>> maps the result of a thread~.
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api text="map"| value Lwt_stream.map >> ~[<<a_api | module Lwt_stream >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="map_err"| value Lwt_result.map_err >> ~[<<a_api | module Lwt_result >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="map_exn"| value Lwt_stream.map_exn >> ~[<<a_api | module Lwt_stream >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_deprecated"|<<span class="odocwiki_inlinecode"|map~_exn s>> returns a stream that captures all exceptions raised
     by the source of the stream ~(the function passed to <<a_api | val Lwt_stream.from >>~)~.
@@ -1048,16 +1048,17 @@
 |@@class="odocwiki_index"@ @@<<a_api text="map_p"| value Lwt_list.map_p >> ~[<<a_api | module Lwt_list >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="map_s"| value Lwt_react.S.map_s >> ~[<<a_api | module Lwt_react.S >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="map_s"| value Lwt_react.E.map_s >> ~[<<a_api | module Lwt_react.E >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="map_s"| value Lwt_list.map_s >> ~[<<a_api | module Lwt_list >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="map_s"| value Lwt_stream.map_s >> ~[<<a_api | module Lwt_stream >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|map f st>> maps the value returned by <<span class="odocwiki_inlinecode"|st>> with <<span class="odocwiki_inlinecode"|f>>
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api text="map_s"| value Lwt_list.map_s >> ~[<<a_api | module Lwt_list >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="mapi_p"| value Lwt_list.mapi_p >> ~[<<a_api | module Lwt_list >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="mapi_s"| value Lwt_list.mapi_s >> ~[<<a_api | module Lwt_list >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="mapped"| value Lwt_bytes.mapped >> ~[<<a_api | module Lwt_bytes >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|mapped buffer>> returns <<span class="odocwiki_inlinecode"|true>> iff <<span class="odocwiki_inlinecode"|buffer>> is a memory mapped
       file~.
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api text="mapper"| value Ppx_lwt.mapper >> ~[<<a_api | module Ppx_lwt >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="mcast_add_membership"| value Lwt_unix.mcast_add_membership >> ~[<<a_api | module Lwt_unix >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|mcast~_add~_membership fd ~~ifname addr>> joins the multicast group <<span class="odocwiki_inlinecode"|addr>>
       on the network interface <<span class="odocwiki_inlinecode"|ifname>>~.
 >>
@@ -1204,12 +1205,12 @@
 |@@class="odocwiki_index"@ @@<<a_api text="on_terminate"| value Lwt_stream.on_terminate >> ~[<<a_api | module Lwt_stream >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_deprecated"|~Same as <<a_api | val Lwt_stream.on_termination >>~.
 >>>>
 |
+|@@class="odocwiki_index"@ @@<<a_api text="on_termination"| value Lwt.on_termination >> ~[<<a_api | module Lwt >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|on~_termination t f>> executes <<span class="odocwiki_inlinecode"|f>> when <<span class="odocwiki_inlinecode"|t>> terminates~.
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api text="on_termination"| value Lwt_stream.on_termination >> ~[<<a_api | module Lwt_stream >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_deprecated"|<<span class="odocwiki_inlinecode"|on~_termination st f>> executes <<span class="odocwiki_inlinecode"|f>> when the end of the stream <<span class="odocwiki_inlinecode"|st>>
       is reached~.
 >>>>
-|
-|@@class="odocwiki_index"@ @@<<a_api text="on_termination"| value Lwt.on_termination >> ~[<<a_api | module Lwt >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|on~_termination t f>> executes <<span class="odocwiki_inlinecode"|f>> when <<span class="odocwiki_inlinecode"|t>> terminates~.
->>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="on_timer"| value Lwt_engine.on_timer >> ~[<<a_api | module Lwt_engine >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|on~_timer delay repeat f>> calls <<span class="odocwiki_inlinecode"|f>> one time after <<span class="odocwiki_inlinecode"|delay>>
       seconds~.
@@ -1218,12 +1219,12 @@
 |@@class="odocwiki_index"@ @@<<a_api text="on_writable"| value Lwt_engine.on_writable >> ~[<<a_api | module Lwt_engine >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|on~_readable fd f>> calls <<span class="odocwiki_inlinecode"|f>> each time <<span class="odocwiki_inlinecode"|fd>> becomes writable~.
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api text="open_connection"| value Lwt_chan.open_connection >> ~[<<a_api | module Lwt_chan >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="open_connection"| value Lwt_io.open_connection >> ~[<<a_api | module Lwt_io >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|open~_connection ~?fd ~?in~_buffer ~?out~_buffer addr>> opens a
       connection to the given address and returns two channels for using
       it~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api text="open_connection"| value Lwt_chan.open_connection >> ~[<<a_api | module Lwt_chan >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="open_file"| value Lwt_io.open_file >> ~[<<a_api | module Lwt_io >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|open~_file ~?buffer ~?flags ~?perm ~~mode filename>> opens the
       file with name <<span class="odocwiki_inlinecode"|filename>> and returns a channel for
       reading~/writing it~.
@@ -1246,10 +1247,10 @@
 |
 |@@class="odocwiki_index"@ @@<<a_api text="out_channel_of_descr"| value Lwt_chan.out_channel_of_descr >> ~[<<a_api | module Lwt_chan >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="out_channel_of_descr"| value Lwt_ssl.out_channel_of_descr >> ~[<<a_api | module Lwt_ssl >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="output"| value Lwt_chan.output >> ~[<<a_api | module Lwt_chan >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="output"| value Lwt_io.output >> ~[<<a_api | module Lwt_io >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|output>> output mode representation
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api text="output"| value Lwt_chan.output >> ~[<<a_api | module Lwt_chan >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="output_binary_int"| value Lwt_chan.output_binary_int >> ~[<<a_api | module Lwt_chan >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="output_char"| value Lwt_chan.output_char >> ~[<<a_api | module Lwt_chan >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="output_string"| value Lwt_chan.output_string >> ~[<<a_api | module Lwt_chan >>~]||
@@ -1331,11 +1332,11 @@
 |@@class="odocwiki_index"@ @@<<a_api text="pwrite_line"| value Lwt_process.pwrite_line >> ~[<<a_api | module Lwt_process >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="pwrite_lines"| value Lwt_process.pwrite_lines >> ~[<<a_api | module Lwt_process >>~]||
 |@@ @style="tet-align: left;"@@\\R|
-|@@class="odocwiki_index"@ @@<<a_api text="read"| value Lwt_bytes.read >> ~[<<a_api | module Lwt_bytes >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="read"| value Lwt_unix.read >> ~[<<a_api | module Lwt_unix >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|read fd buf ofs len>> reads up to <<span class="odocwiki_inlinecode"|len>> bytes from <<span class="odocwiki_inlinecode"|fd>>~, and writes them to
     <<span class="odocwiki_inlinecode"|buf>>~, starting at offset <<span class="odocwiki_inlinecode"|ofs>>~.
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api text="read"| value Lwt_bytes.read >> ~[<<a_api | module Lwt_bytes >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="read"| value Lwt_io.read >> ~[<<a_api | module Lwt_io >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|read ~?count ic>> reads at most <<span class="odocwiki_inlinecode"|count>> characters from <<span class="odocwiki_inlinecode"|ic>>~.
 >>
 |
@@ -1411,13 +1412,10 @@
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="really_input"| value Lwt_chan.really_input >> ~[<<a_api | module Lwt_chan >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="recv"| value Lwt_bytes.recv >> ~[<<a_api | module Lwt_bytes >>~]|<<div class="odocwiki_info"|~Not implemented on ~Windows~.
->>
-|
 |@@class="odocwiki_index"@ @@<<a_api text="recv"| value Lwt_unix.recv >> ~[<<a_api | module Lwt_unix >>~]|<<div class="odocwiki_info"|~Wrapper for <<span class="odocwiki_inlinecode"|~Unix~.recv>>~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api text="recv_msg"| value Lwt_bytes.recv_msg >> ~[<<a_api | module Lwt_bytes >>~]|<<div class="odocwiki_info"|~Not implemented on ~Windows~.
+|@@class="odocwiki_index"@ @@<<a_api text="recv"| value Lwt_bytes.recv >> ~[<<a_api | module Lwt_bytes >>~]|<<div class="odocwiki_info"|~Not implemented on ~Windows~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="recv_msg"| value Lwt_unix.recv_msg >> ~[<<a_api | module Lwt_unix >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|recv~_msg ~~socket ~~io~_vectors>> receives data into a list of
@@ -1425,10 +1423,13 @@
     messages~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api text="recvfrom"| value Lwt_bytes.recvfrom >> ~[<<a_api | module Lwt_bytes >>~]|<<div class="odocwiki_info"|~Not implemented on ~Windows~.
+|@@class="odocwiki_index"@ @@<<a_api text="recv_msg"| value Lwt_bytes.recv_msg >> ~[<<a_api | module Lwt_bytes >>~]|<<div class="odocwiki_info"|~Not implemented on ~Windows~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="recvfrom"| value Lwt_unix.recvfrom >> ~[<<a_api | module Lwt_unix >>~]|<<div class="odocwiki_info"|~Wrapper for <<span class="odocwiki_inlinecode"|~Unix~.recvfrom>>~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="recvfrom"| value Lwt_bytes.recvfrom >> ~[<<a_api | module Lwt_bytes >>~]|<<div class="odocwiki_info"|~Not implemented on ~Windows~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="register_action"| value Lwt_unix.register_action >> ~[<<a_api | module Lwt_unix >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|register~_action set fd action>> registers <<span class="odocwiki_inlinecode"|action>> on <<span class="odocwiki_inlinecode"|fd>>~.
@@ -1538,26 +1539,26 @@
 |@@ @style="tet-align: left;"@@\\S|
 |@@class="odocwiki_index"@ @@<<a_api text="sample_s"| value Lwt_react.S.sample_s >> ~[<<a_api | module Lwt_react.S >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="select"| value Lwt_engine.Ev_backend.select >> ~[<<a_api | module Lwt_engine.Ev_backend >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="send"| value Lwt_bytes.send >> ~[<<a_api | module Lwt_bytes >>~]|<<div class="odocwiki_info"|~Not implemented on ~Windows~.
->>
-|
 |@@class="odocwiki_index"@ @@<<a_api text="send"| value Lwt_unix.send >> ~[<<a_api | module Lwt_unix >>~]|<<div class="odocwiki_info"|~Wrapper for <<span class="odocwiki_inlinecode"|~Unix~.send>>~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api text="send_msg"| value Lwt_bytes.send_msg >> ~[<<a_api | module Lwt_bytes >>~]|<<div class="odocwiki_info"|~Not implemented on ~Windows~.
+|@@class="odocwiki_index"@ @@<<a_api text="send"| value Lwt_bytes.send >> ~[<<a_api | module Lwt_bytes >>~]|<<div class="odocwiki_info"|~Not implemented on ~Windows~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="send_msg"| value Lwt_unix.send_msg >> ~[<<a_api | module Lwt_unix >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|send~_msg ~~socket ~~io~_vectors ~~fds>> sends data from a list of
     io~-vectors~, accompanied with a list of file~-descriptors~.
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api text="send_msg"| value Lwt_bytes.send_msg >> ~[<<a_api | module Lwt_bytes >>~]|<<div class="odocwiki_info"|~Not implemented on ~Windows~.
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api text="send_notification"| value Lwt_unix.send_notification >> ~[<<a_api | module Lwt_unix >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|send~_notification id>> sends a notification~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api text="sendto"| value Lwt_bytes.sendto >> ~[<<a_api | module Lwt_bytes >>~]|<<div class="odocwiki_info"|~Not implemented on ~Windows~.
+|@@class="odocwiki_index"@ @@<<a_api text="sendto"| value Lwt_unix.sendto >> ~[<<a_api | module Lwt_unix >>~]|<<div class="odocwiki_info"|~Wrapper for <<span class="odocwiki_inlinecode"|~Unix~.sendto>>~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api text="sendto"| value Lwt_unix.sendto >> ~[<<a_api | module Lwt_unix >>~]|<<div class="odocwiki_info"|~Wrapper for <<span class="odocwiki_inlinecode"|~Unix~.sendto>>~.
+|@@class="odocwiki_index"@ @@<<a_api text="sendto"| value Lwt_bytes.sendto >> ~[<<a_api | module Lwt_bytes >>~]|<<div class="odocwiki_info"|~Not implemented on ~Windows~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="set"| value Lwt_bytes.set >> ~[<<a_api | module Lwt_bytes >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|get buffer offset value>> changes the value of the byte at
@@ -1882,13 +1883,13 @@
 |
 |@@class="odocwiki_index"@ @@<<a_api text="wait"| value Lwt_throttle.S.wait >> ~[<<a_api | module Lwt_throttle.S >>~]|<<div class="odocwiki_info"|>>
 |
+|@@class="odocwiki_index"@ @@<<a_api text="wait"| value Lwt_condition.wait >> ~[<<a_api | module Lwt_condition >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|wait mutex condvar>> will cause the current thread to block~,
+        awaiting notification for a condition variable~, <<span class="odocwiki_inlinecode"|condvar>>~.
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api text="wait"| value Lwt.wait >> ~[<<a_api | module Lwt >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|wait ~(~)>> is a pair of a thread which sleeps forever ~(unless it
       is resumed by one of the functions <<span class="odocwiki_inlinecode"|wakeup>>~, <<span class="odocwiki_inlinecode"|wakeup~_exn>> below~)
       and the corresponding wakener~.
->>
-|
-|@@class="odocwiki_index"@ @@<<a_api text="wait"| value Lwt_condition.wait >> ~[<<a_api | module Lwt_condition >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|wait mutex condvar>> will cause the current thread to block~,
-        awaiting notification for a condition variable~, <<span class="odocwiki_inlinecode"|condvar>>~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="wait4"| value Lwt_unix.wait4 >> ~[<<a_api | module Lwt_unix >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|wait~4 flags pid>> returns <<span class="odocwiki_inlinecode"|~(pid~, status~, rusage~)>> where <<span class="odocwiki_inlinecode"|~(pid~,
@@ -2037,11 +2038,11 @@
       become writable~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api text="write"| value Lwt_bytes.write >> ~[<<a_api | module Lwt_bytes >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="write"| value Lwt_unix.write >> ~[<<a_api | module Lwt_unix >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|write fd buf ofs len>> writes up to <<span class="odocwiki_inlinecode"|len>> bytes to <<span class="odocwiki_inlinecode"|fd>> from <<span class="odocwiki_inlinecode"|buf>>~, starting
     at buffer offset <<span class="odocwiki_inlinecode"|ofs>>~.
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api text="write"| value Lwt_bytes.write >> ~[<<a_api | module Lwt_bytes >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="write"| value Lwt_io.write >> ~[<<a_api | module Lwt_io >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|write oc str>> writes all characters of <<span class="odocwiki_inlinecode"|str>> on <<span class="odocwiki_inlinecode"|oc>>
 >>
 |
