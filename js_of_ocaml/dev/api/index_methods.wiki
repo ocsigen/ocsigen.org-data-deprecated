@@ -1163,7 +1163,6 @@
 |@@class="odocwiki_index"@ @@<<a_api text="key"| method Dom_html.keyboardEvent#key >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="keyCode"| method Dom_html.keyboardEvent#keyCode >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="keyIdentifier"| method Dom_html.keyboardEvent#keyIdentifier >> ~[<<a_api | module Dom_html >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="keynewValue"| method Dom_html.storageEvent#keynewValue >> ~[<<a_api | module Dom_html >>~]||
 |@@ @style="tet-align: left;"@@\\L|
 |@@class="odocwiki_index"@ @@<<a_api text="label"| method Dom_html.optGroupElement#label >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="lang"| method Dom_html.element#lang >> ~[<<a_api | module Dom_html >>~]||
@@ -1305,6 +1304,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="networkState"| method Dom_html.mediaElement#networkState >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="networkState_int"| method Dom_html.mediaElement#networkState_int >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="newURL"| method Dom_html.hashChangeEvent#newURL >> ~[<<a_api | module Dom_html >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="newValue"| method Dom_html.storageEvent#newValue >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="newValueSpecifiedUnits"| method Dom_svg.angle#newValueSpecifiedUnits >> ~[<<a_api | module Dom_svg >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="newValueSpecifiedUnits"| method Dom_svg.length#newValueSpecifiedUnits >> ~[<<a_api | module Dom_svg >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="nextSibling"| method Dom.node#nextSibling >> ~[<<a_api | module Dom >>~]||

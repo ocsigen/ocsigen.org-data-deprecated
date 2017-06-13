@@ -205,7 +205,7 @@
       method valueAsString : Js.js_string Js.t Js.prop
       method valueInSpecifiedUnits : float Js.prop
     end
-  and animatedLength = [Dom_svg.length] animated
+  and animatedLength = [Dom_svg.length Js.t] animated
   and lengthList = [Dom_svg.length Js.t] list
   and animatedLengthList = [Dom_svg.lengthList Js.t] animated
   and angle =
