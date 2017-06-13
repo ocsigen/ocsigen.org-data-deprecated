@@ -8,8 +8,8 @@
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="Closed"| exception Lwt_stream.Closed >> ~[<<a_api | module Lwt_stream >>~]|<<div class="odocwiki_info"|~Exception raised by the push function of a push~-stream when
-      pushing an element after the end of stream ~(<<span class="odocwiki_inlinecode"|~= ~None>>~) has been
-      pushed~.
+    pushing an element after the end of stream ~(<<span class="odocwiki_inlinecode"|~= ~None>>~) has been
+    pushed~.
 >>
 |
 |@@ @style="tet-align: left;"@@\\E|
@@ -18,13 +18,13 @@
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="Empty"| exception Lwt_stream.Empty >> ~[<<a_api | module Lwt_stream >>~]|<<div class="odocwiki_info"|~Exception raised when trying to retrieve data from an empty
-      stream~.
+    stream~.
 >>
 |
 |@@ @style="tet-align: left;"@@\\F|
 |@@class="odocwiki_index"@ @@<<a_api text="Full"| exception Lwt_stream.Full >> ~[<<a_api | module Lwt_stream >>~]|<<div class="odocwiki_info"|~Exception raised by the push function of a bounded push~-stream
-      when the stream queue is full and a thread is already waiting to
-      push an element~.
+    when the stream queue is full and a thread is already waiting to
+    push an element~.
 >>
 |
 |@@ @style="tet-align: left;"@@\\L|

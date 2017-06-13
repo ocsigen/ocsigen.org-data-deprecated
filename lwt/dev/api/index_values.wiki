@@ -97,7 +97,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="app_s"| value Lwt_react.S.app_s >> ~[<<a_api | module Lwt_react.S >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="app_s"| value Lwt_react.E.app_s >> ~[<<a_api | module Lwt_react.E >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="append"| value Lwt_stream.append >> ~[<<a_api | module Lwt_stream >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|append s~1 s~2>> returns a stream which returns all elements of
-      <<span class="odocwiki_inlinecode"|s~1>>~, then all elements of <<span class="odocwiki_inlinecode"|s~2>>
+    <<span class="odocwiki_inlinecode"|s~1>>~, then all elements of <<span class="odocwiki_inlinecode"|s~2>>
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="append_bigarray"| value Lwt_unix.IO_vectors.append_bigarray >> ~[<<a_api | module Lwt_unix.IO_vectors >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|append~_bigarray vs buffer offset length>> appends a slice of the
@@ -282,7 +282,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="close_in"| value Lwt_chan.close_in >> ~[<<a_api | module Lwt_chan >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="close_out"| value Lwt_chan.close_out >> ~[<<a_api | module Lwt_chan >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="closed"| value Lwt_stream.closed >> ~[<<a_api | module Lwt_stream >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|closed st>> returns a thread that will sleep until the stream has been
-      closed~.
+    closed~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="closedir"| value Lwt_unix.closedir >> ~[<<a_api | module Lwt_unix >>~]|<<div class="odocwiki_info"|~Closes a directory handle~.
@@ -335,14 +335,14 @@
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="create_bounded"| value Lwt_stream.create_bounded >> ~[<<a_api | module Lwt_stream >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|create~_bounded size>> returns a new stream and a bounded push
-      source~.
+    source~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="create_empty"| value Lwt_mvar.create_empty >> ~[<<a_api | module Lwt_mvar >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|create ~(~)>> creates a new empty mailbox variable~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="create_with_reference"| value Lwt_stream.create_with_reference >> ~[<<a_api | module Lwt_stream >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|create~_with~_reference ~(~)>> returns a new stream and a push
-      function~.
+    function~.
 >>
 |
 |@@ @style="tet-align: left;"@@\\D|
@@ -601,7 +601,7 @@
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="from_direct"| value Lwt_stream.from_direct >> ~[<<a_api | module Lwt_stream >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|from~_direct f>> does the same as <<a_api | val Lwt_stream.from >> but with a function
-      that does not return a thread~.
+    that does not return a thread~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="fstat"| value Lwt_unix.LargeFile.fstat >> ~[<<a_api | module Lwt_unix.LargeFile >>~]|<<div class="odocwiki_info"|~Wrapper for <<span class="odocwiki_inlinecode"|~Unix~.~Large~File~.fstat>>
@@ -636,7 +636,7 @@
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="get"| value Lwt_stream.get >> ~[<<a_api | module Lwt_stream >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|get st>> removes and returns the first element of the stream~, if
-      any~.
+    any~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="get_affinity"| value Lwt_unix.get_affinity >> ~[<<a_api | module Lwt_unix >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|get~_affinity ~?pid ~(~)>> returns the list of ~C~P~Us the process with
@@ -644,11 +644,11 @@
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="get_available"| value Lwt_stream.get_available >> ~[<<a_api | module Lwt_stream >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|get~_available st>> returns all available elements of <<span class="odocwiki_inlinecode"|l>> without
-      blocking~.
+    blocking~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="get_available_up_to"| value Lwt_stream.get_available_up_to >> ~[<<a_api | module Lwt_stream >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|get~_available~_up~_to n st>> returns up to <<span class="odocwiki_inlinecode"|n>> elements of <<span class="odocwiki_inlinecode"|l>>
-      without blocking~.
+    without blocking~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="get_bounds"| value Lwt_preemptive.get_bounds >> ~[<<a_api | module Lwt_preemptive >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|get~_bounds ~(~)>> returns the minimum and the maximum number of
@@ -676,7 +676,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="get_unix_fd"| value Lwt_ssl.get_unix_fd >> ~[<<a_api | module Lwt_ssl >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="get_while"| value Lwt_stream.get_while >> ~[<<a_api | module Lwt_stream >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="get_while_s"| value Lwt_stream.get_while_s >> ~[<<a_api | module Lwt_stream >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|get~_while f st>> returns the longest prefix of <<span class="odocwiki_inlinecode"|st>> where all
-      elements satisfy <<span class="odocwiki_inlinecode"|f>>~.
+    elements satisfy <<span class="odocwiki_inlinecode"|f>>~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="getaddrinfo"| value Lwt_unix.getaddrinfo >> ~[<<a_api | module Lwt_unix >>~]|<<div class="odocwiki_info"|~Wrapper for <<span class="odocwiki_inlinecode"|~Unix~.getaddrinfo>>
@@ -757,7 +757,7 @@
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="hexdump"| value Lwt_stream.hexdump >> ~[<<a_api | module Lwt_stream >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|hexdump byte~_stream>> returns a stream which is the same as the
-      output of <<span class="odocwiki_inlinecode"|hexdump ~-~C>>~.
+    output of <<span class="odocwiki_inlinecode"|hexdump ~-~C>>~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="hexdump_stream"| value Lwt_io.hexdump_stream >> ~[<<a_api | module Lwt_io >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|hexdump~_stream oc byte~_stream>> produces the same output as the
@@ -887,12 +887,12 @@
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="junk_old"| value Lwt_stream.junk_old >> ~[<<a_api | module Lwt_stream >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|junk~_old st>> removes all elements that are ready to be read
-      without yielding from <<span class="odocwiki_inlinecode"|st>>~.
+    without yielding from <<span class="odocwiki_inlinecode"|st>>~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="junk_while"| value Lwt_stream.junk_while >> ~[<<a_api | module Lwt_stream >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="junk_while_s"| value Lwt_stream.junk_while_s >> ~[<<a_api | module Lwt_stream >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|junk~_while f st>> removes all elements at the beginning of the
-      streams which satisfy <<span class="odocwiki_inlinecode"|f>>~.
+    streams which satisfy <<span class="odocwiki_inlinecode"|f>>~.
 >>
 |
 |@@ @style="tet-align: left;"@@\\K|
@@ -913,7 +913,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="l5_s"| value Lwt_react.S.l5_s >> ~[<<a_api | module Lwt_react.S >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="l6_s"| value Lwt_react.S.l6_s >> ~[<<a_api | module Lwt_react.S >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="last_new"| value Lwt_stream.last_new >> ~[<<a_api | module Lwt_stream >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|last~_new st>> returns the last element that can be obtained
-      without sleeping~, or wait for one if none is available~.
+    without sleeping~, or wait for one if none is available~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="leave_iter_hooks"| value Lwt_main.leave_iter_hooks >> ~[<<a_api | module Lwt_main >>~]|<<div class="odocwiki_info"|~Functions that are called after the main iteration~.
@@ -1041,7 +1041,7 @@
 |
 |@@class="odocwiki_index"@ @@<<a_api text="map_list"| value Lwt_stream.map_list >> ~[<<a_api | module Lwt_stream >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="map_list_s"| value Lwt_stream.map_list_s >> ~[<<a_api | module Lwt_stream >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|map~_list f st>> applies <<span class="odocwiki_inlinecode"|f>> on each element of <<span class="odocwiki_inlinecode"|st>> and flattens
-      the lists returned
+    the lists returned
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="map_p"| value Lwt_react.E.map_p >> ~[<<a_api | module Lwt_react.E >>~]||
@@ -1107,15 +1107,15 @@
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="next"| value Lwt_stream.next >> ~[<<a_api | module Lwt_stream >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|next st>> removes and returns the next element of the stream or
-      fails with <<a_api | exception Lwt_stream.Empty >>~, if the stream is empty~.
+    fails with <<a_api | exception Lwt_stream.Empty >>~, if the stream is empty~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="nget"| value Lwt_stream.nget >> ~[<<a_api | module Lwt_stream >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|nget n st>> removes and returns at most the first <<span class="odocwiki_inlinecode"|n>> elements of
-      <<span class="odocwiki_inlinecode"|st>>~.
+    <<span class="odocwiki_inlinecode"|st>>~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="njunk"| value Lwt_stream.njunk >> ~[<<a_api | module Lwt_stream >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|njunk n st>> removes at most the first <<span class="odocwiki_inlinecode"|n>> elements of the
-      stream~.
+    stream~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="no_cancel"| value Lwt.no_cancel >> ~[<<a_api | module Lwt >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|no~_cancel thread>> creates a thread which behave as <<span class="odocwiki_inlinecode"|thread>>
@@ -1125,7 +1125,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="notice"| value Lwt_log_core.notice >> ~[<<a_api | module Lwt_log_core >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="notice_f"| value Lwt_log_core.notice_f >> ~[<<a_api | module Lwt_log_core >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="npeek"| value Lwt_stream.npeek >> ~[<<a_api | module Lwt_stream >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|npeek n st>> returns at most the first <<span class="odocwiki_inlinecode"|n>> elements of <<span class="odocwiki_inlinecode"|st>>~,
-      without removing them~.
+    without removing them~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="npick"| value Lwt.npick >> ~[<<a_api | module Lwt >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|npick l>> is the same as <<a_api | val Lwt.nchoose >>~, except that it cancels all
@@ -1209,7 +1209,7 @@
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="on_termination"| value Lwt_stream.on_termination >> ~[<<a_api | module Lwt_stream >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_deprecated"|<<span class="odocwiki_inlinecode"|on~_termination st f>> executes <<span class="odocwiki_inlinecode"|f>> when the end of the stream <<span class="odocwiki_inlinecode"|st>>
-      is reached~.
+    is reached~.
 >>>>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="on_timer"| value Lwt_engine.on_timer >> ~[<<a_api | module Lwt_engine >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|on~_timer delay repeat f>> calls <<span class="odocwiki_inlinecode"|f>> one time after <<span class="odocwiki_inlinecode"|delay>>
@@ -1273,7 +1273,7 @@
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="peek"| value Lwt_stream.peek >> ~[<<a_api | module Lwt_stream >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|peek st>> returns the first element of the stream~, if any~,
-      without removing it~.
+    without removing it~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="pick"| value Lwt.pick >> ~[<<a_api | module Lwt >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|pick l>> is the same as <<a_api | val Lwt.choose >>~, except that it cancels all
@@ -1812,7 +1812,7 @@
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="to_string"| value Lwt_stream.to_string >> ~[<<a_api | module Lwt_stream >>~]|<<div class="odocwiki_info"|~Returns the word composed of all characters of the given
-      stream
+    stream
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="transfer_l"| value Lwt_sequence.transfer_l >> ~[<<a_api | module Lwt_sequence >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|transfer~_l s~1 s~2>> removes all elements of <<span class="odocwiki_inlinecode"|s~1>> and add them at
