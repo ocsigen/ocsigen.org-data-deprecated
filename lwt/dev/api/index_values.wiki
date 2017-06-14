@@ -682,6 +682,9 @@
 |@@class="odocwiki_index"@ @@<<a_api text="getaddrinfo"| value Lwt_unix.getaddrinfo >> ~[<<a_api | module Lwt_unix >>~]|<<div class="odocwiki_info"|~Wrapper for <<span class="odocwiki_inlinecode"|~Unix~.getaddrinfo>>
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api text="getcwd"| value Lwt_unix.getcwd >> ~[<<a_api | module Lwt_unix >>~]|<<div class="odocwiki_info"|~Wrapper for <<span class="odocwiki_inlinecode"|~Unix~.getcwd>>
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api text="getgrgid"| value Lwt_unix.getgrgid >> ~[<<a_api | module Lwt_unix >>~]|<<div class="odocwiki_info"|~Wrapper for <<span class="odocwiki_inlinecode"|~Unix~.getgrgid>>
 >>
 |

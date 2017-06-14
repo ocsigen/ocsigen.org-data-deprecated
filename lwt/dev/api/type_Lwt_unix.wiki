@@ -168,6 +168,7 @@
   val mkdir : string -> Lwt_unix.file_perm -> unit Lwt.t
   val rmdir : string -> unit Lwt.t
   val chdir : string -> unit Lwt.t
+  val getcwd : unit -> string Lwt.t
   val chroot : string -> unit Lwt.t
   type dir_handle = Unix.dir_handle
   val opendir : string -> Lwt_unix.dir_handle Lwt.t
