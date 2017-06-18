@@ -1426,7 +1426,7 @@
      _ck_=caml_new_string("ol"),
      _cg_=caml_new_string("th"),
      _ch_=caml_new_string("td"),
-     _cD_=[0,caml_new_string("examples/wiki/main.ml"),32,17],
+     _cD_=[0,caml_new_string("examples/wiki/main.ml"),34,17],
      _cE_=caml_new_string("");
     function erase_rel(param)
      {if(typeof param === "number")

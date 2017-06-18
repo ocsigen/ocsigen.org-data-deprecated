@@ -1374,10 +1374,10 @@
      _cs_=caml_new_string("Follow rotation"),
      _ct_=caml_new_string("Lighting"),
      _cu_=caml_new_string("Clip"),
-     _co_=[0,caml_new_string("examples/planet/planet.ml"),416,0],
-     _cn_=[0,caml_new_string("examples/planet/planet.ml"),417,0],
-     _cm_=[0,caml_new_string("examples/planet/planet.ml"),418,0],
-     _cl_=[0,caml_new_string("examples/planet/planet.ml"),419,0];
+     _co_=[0,caml_new_string("examples/planet/planet.ml"),417,0],
+     _cn_=[0,caml_new_string("examples/planet/planet.ml"),418,0],
+     _cm_=[0,caml_new_string("examples/planet/planet.ml"),419,0],
+     _cl_=[0,caml_new_string("examples/planet/planet.ml"),420,0];
     function erase_rel(param)
      {if(typeof param === "number")
        return 0;

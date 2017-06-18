@@ -1334,7 +1334,7 @@
      _bZ_=caml_new_string("input"),
      _b3_=caml_new_string("Exception during Lwt.async: "),
      _cA_=caml_new_string("^error_in_anchor^"),
-     _cp_=[0,caml_new_string("examples/wysiwyg/main.ml"),72,76],
+     _cp_=[0,caml_new_string("examples/wysiwyg/main.ml"),73,76],
      _cq_=caml_new_string("global"),
      _cr_=caml_new_string("wiki"),
      _ct_=[0,caml_new_string("]]"),0],
@@ -1345,7 +1345,7 @@
      _cy_=caml_new_string("[["),
      _cz_=caml_new_string(""),
      _cs_=caml_new_string("^error2_in_anchor^"),
-     _co_=[0,caml_new_string("examples/wysiwyg/main.ml"),67,35],
+     _co_=[0,caml_new_string("examples/wysiwyg/main.ml"),68,35],
      _b7_=caml_new_string("H1"),
      _ch_=caml_new_string("#text"),
      _ci_=caml_new_string("A"),
@@ -1405,7 +1405,7 @@
      _da_=caml_new_string("inserthtml"),
      _db_=caml_new_string("link2wiki"),
      _dc_=caml_new_string(""),
-     _cB_=[0,caml_new_string("examples/wysiwyg/main.ml"),96,17],
+     _cB_=[0,caml_new_string("examples/wysiwyg/main.ml"),97,17],
      _b5_=caml_new_string("Main.Break");
     function erase_rel(param)
      {if(typeof param === "number")
