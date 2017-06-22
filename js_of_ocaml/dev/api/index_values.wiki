@@ -772,7 +772,7 @@
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="js_expr"| value Js.Unsafe.js_expr >> ~[<<a_api | module Js.Unsafe >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|js~_expr e>> will parse the ~Java~Script expression <<span class="odocwiki_inlinecode"|e>> if <<span class="odocwiki_inlinecode"|e>>
-        is available at compile time or will failback to a
+        is available at compile time or will fallback to a
         runtime evaluation~.
 >>
 |
