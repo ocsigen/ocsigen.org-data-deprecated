@@ -763,7 +763,12 @@
         if(res != 0)this.content[name] = new MlFakeFile(res[1])}};
     MlFakeDevice.prototype.exists
     =
-    function(name){this.lookup(name);return this.content[name]?1:0};
+    function(name)
+     {if(name == "")return 1;
+      var name_slash=name + "/",r=new RegExp("^" + name_slash);
+      for(var n in this.content)if(n.match(r))return 1;
+      this.lookup(name);
+      return this.content[name]?1:0};
     MlFakeDevice.prototype.readdir
     =
     function(name)
