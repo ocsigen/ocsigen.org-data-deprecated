@@ -562,6 +562,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="animateMotion"| value Svg_sigs.T.animateMotion >> ~[<<a_api | module Svg_sigs.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="animateTransform"| value Svg_sigs.T.animateTransform >> ~[<<a_api | module Svg_sigs.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="animation"| value Svg_sigs.T.animation >> ~[<<a_api | module Svg_sigs.T >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="antiquot"| value Ppx_common.antiquot >> ~[<<a_api | module Ppx_common >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="append"| value Xml_wrap.T.append >> ~[<<a_api | module Xml_wrap.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="area"| value Html_sigs.T.area >> ~[<<a_api | module Html_sigs.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="article"| value Html_sigs.T.article >> ~[<<a_api | module Html_sigs.T >>~]||
@@ -661,6 +662,7 @@
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="entity"| value Xml_sigs.T.entity >> ~[<<a_api | module Xml_sigs.T >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="error"| value Ppx_common.error >> ~[<<a_api | module Ppx_common >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="event_handler_attrib"| value Xml_sigs.T.event_handler_attrib >> ~[<<a_api | module Xml_sigs.T >>~]||
 |@@ @style="tet-align: left;"@@\\F|
 |@@class="odocwiki_index"@ @@<<a_api text="feBlend"| value Svg_sigs.T.feBlend >> ~[<<a_api | module Svg_sigs.T >>~]||
@@ -690,6 +692,11 @@
 |@@class="odocwiki_index"@ @@<<a_api text="figcaption"| value Html_sigs.T.figcaption >> ~[<<a_api | module Html_sigs.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="figure"| value Html_sigs.T.figure >> ~[<<a_api | module Html_sigs.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="filter"| value Svg_sigs.T.filter >> ~[<<a_api | module Svg_sigs.T >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="find"| value Ppx_common.find >> ~[<<a_api | module Ppx_common >>~]|<<div class="odocwiki_info"|~Similar to <<span class="odocwiki_inlinecode"|~List~.find>>~, but evaluates to an option instead of raising
+    <<span class="odocwiki_inlinecode"|~Not~_found>>~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="float"| value Ppx_common.float >> ~[<<a_api | module Ppx_common >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="float_attrib"| value Html_sigs.T.Unsafe.float_attrib >> ~[<<a_api | module Html_sigs.T.Unsafe >>~]|<<div class="odocwiki_info"|~Same~, for float attribute
 >>
 |
@@ -740,8 +747,10 @@
 |@@class="odocwiki_index"@ @@<<a_api text="iframe"| value Html_sigs.T.iframe >> ~[<<a_api | module Html_sigs.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="image"| value Svg_sigs.T.image >> ~[<<a_api | module Svg_sigs.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="img"| value Html_sigs.T.img >> ~[<<a_api | module Html_sigs.T >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="implementation"| value Ppx_common.implementation >> ~[<<a_api | module Ppx_common >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="input"| value Html_sigs.T.input >> ~[<<a_api | module Html_sigs.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="ins"| value Html_sigs.T.ins >> ~[<<a_api | module Html_sigs.T >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="int"| value Ppx_common.int >> ~[<<a_api | module Ppx_common >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="int_attrib"| value Html_sigs.T.Unsafe.int_attrib >> ~[<<a_api | module Html_sigs.T.Unsafe >>~]|<<div class="odocwiki_info"|~Same~, for int attribute
 >>
 |
@@ -759,6 +768,7 @@
       ~(although it is not necessary~)~.
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api text="lang"| value Ppx_common.lang >> ~[<<a_api | module Ppx_common >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="leaf"| value Html_sigs.T.Unsafe.leaf >> ~[<<a_api | module Html_sigs.T.Unsafe >>~]|<<div class="odocwiki_info"|~Insert an ~X~M~L node without children
         that is not implemented in this module~.
 >>
@@ -773,9 +783,14 @@
 |@@class="odocwiki_index"@ @@<<a_api text="line"| value Svg_sigs.T.line >> ~[<<a_api | module Svg_sigs.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="linearGradient"| value Svg_sigs.T.linearGradient >> ~[<<a_api | module Svg_sigs.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="link"| value Html_sigs.T.link >> ~[<<a_api | module Html_sigs.T >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="list"| value Ppx_common.list >> ~[<<a_api | module Ppx_common >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="list_wrap"| value Ppx_common.list_wrap >> ~[<<a_api | module Ppx_common >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="list_wrap_value"| value Ppx_common.list_wrap_value >> ~[<<a_api | module Ppx_common >>~]||
 |@@ @style="tet-align: left;"@@\\M|
 |@@class="odocwiki_index"@ @@<<a_api text="main"| value Html_sigs.T.main >> ~[<<a_api | module Html_sigs.T >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="make"| value Ppx_common.make >> ~[<<a_api | module Ppx_common >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="make"| value Xml_sigs.Output.make >> ~[<<a_api | module Xml_sigs.Output >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="make_lid"| value Ppx_common.make_lid >> ~[<<a_api | module Ppx_common >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="map"| value Html_sigs.T.map >> ~[<<a_api | module Html_sigs.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="map"| value Xml_wrap.T.map >> ~[<<a_api | module Xml_wrap.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="map_float_attrib"| value Xml_iter.Make.map_float_attrib >> ~[<<a_api | module Xml_iter.Make >>~]||
@@ -785,6 +800,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="map_string_attrib"| value Tyxml_xml.map_string_attrib >> ~[<<a_api | module Tyxml_xml >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="map_string_attrib_in_list"| value Xml_iter.Make.map_string_attrib_in_list >> ~[<<a_api | module Xml_iter.Make >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="map_string_attrib_in_list"| value Tyxml_xml.map_string_attrib_in_list >> ~[<<a_api | module Tyxml_xml >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="map_value"| value Ppx_common.map_value >> ~[<<a_api | module Ppx_common >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="mapper"| value Ppx_tyxml.mapper >> ~[<<a_api | module Ppx_tyxml >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="mark"| value Html_sigs.T.mark >> ~[<<a_api | module Html_sigs.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="marker"| value Svg_sigs.T.marker >> ~[<<a_api | module Svg_sigs.T >>~]||
@@ -898,6 +914,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="section"| value Html_sigs.T.section >> ~[<<a_api | module Html_sigs.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="select"| value Html_sigs.T.select >> ~[<<a_api | module Html_sigs.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="set"| value Svg_sigs.T.set >> ~[<<a_api | module Svg_sigs.T >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="set_implementation"| value Ppx_common.set_implementation >> ~[<<a_api | module Ppx_common >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="singleton"| value Xml_wrap.T.singleton >> ~[<<a_api | module Xml_wrap.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="small"| value Html_sigs.T.small >> ~[<<a_api | module Html_sigs.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="source"| value Html_sigs.T.source >> ~[<<a_api | module Html_sigs.T >>~]||
@@ -912,6 +929,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="span"| value Html_sigs.T.span >> ~[<<a_api | module Html_sigs.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="standard"| value Xml_sigs.Info.standard >> ~[<<a_api | module Xml_sigs.Info >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="stop"| value Svg_sigs.T.stop >> ~[<<a_api | module Svg_sigs.T >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="string"| value Ppx_common.string >> ~[<<a_api | module Ppx_common >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="string_attrib"| value Html_sigs.T.Unsafe.string_attrib >> ~[<<a_api | module Html_sigs.T.Unsafe >>~]|<<div class="odocwiki_info"|~Insert an attribute that is not implemented in this module~.
 >>
 |
@@ -1017,6 +1035,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="uris_attrib"| value Xml_sigs.T.uris_attrib >> ~[<<a_api | module Xml_sigs.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="use"| value Svg_sigs.T.use >> ~[<<a_api | module Svg_sigs.T >>~]||
 |@@ @style="tet-align: left;"@@\\V|
+|@@class="odocwiki_index"@ @@<<a_api text="value"| value Ppx_common.value >> ~[<<a_api | module Ppx_common >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="var"| value Html_sigs.T.var >> ~[<<a_api | module Html_sigs.T >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="version"| value Xml_sigs.Info.version >> ~[<<a_api | module Xml_sigs.Info >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="video"| value Html_sigs.T.video >> ~[<<a_api | module Html_sigs.T >>~]||
@@ -1025,6 +1044,11 @@
 |
 |@@ @style="tet-align: left;"@@\\W|
 |@@class="odocwiki_index"@ @@<<a_api text="wbr"| value Html_sigs.T.wbr >> ~[<<a_api | module Html_sigs.T >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="wrap"| value Ppx_common.wrap >> ~[<<a_api | module Ppx_common >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|wrap~_exp implementation loc e>> creates a parse tree for
+    <<span class="odocwiki_inlinecode"|implementation~.~Xml~.~W~.return e>>~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="wrap_value"| value Ppx_common.wrap_value >> ~[<<a_api | module Ppx_common >>~]||
 |@@ @style="tet-align: left;"@@\\X|
 |@@class="odocwiki_index"@ @@<<a_api text="xmlparser_file"| value Simplexmlparser.xmlparser_file >> ~[<<a_api | module Simplexmlparser >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="xmlparser_string"| value Simplexmlparser.xmlparser_string >> ~[<<a_api | module Simplexmlparser >>~]||

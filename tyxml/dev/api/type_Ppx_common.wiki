@@ -1,0 +1,36 @@
+<<code language="ocaml" | sig
+  val find : ('a -> bool) -> 'a list -> 'a option
+  module Label = Ast_convenience.Label
+  type lang = Html | Svg
+  val lang : Ppx_common.lang -> string
+  val implementation : Ppx_common.lang -> string
+  val set_implementation : Ppx_common.lang -> string -> unit
+  val make_lid :
+    loc:Location.t -> Ppx_common.lang -> string -> Longident.t Location.loc
+  val make :
+    loc:Location.t -> Ppx_common.lang -> string -> Parsetree.expression
+  val int : Location.t -> int -> Parsetree.expression
+  val float : Location.t -> float -> Parsetree.expression
+  val string : Location.t -> string -> Parsetree.expression
+  val list : Location.t -> Parsetree.expression list -> Parsetree.expression
+  val list_wrap :
+    Ppx_common.lang ->
+    Location.t -> Parsetree.expression list -> Parsetree.expression
+  val wrap :
+    Ppx_common.lang ->
+    Location.t -> Parsetree.expression -> Parsetree.expression
+  type 'a value = Val of 'a | Antiquot of Parsetree.expression
+  val map_value : ('a -> 'b) -> 'a Ppx_common.value -> 'b Ppx_common.value
+  val value : 'a -> 'a Ppx_common.value
+  val antiquot : Parsetree.expression -> 'a Ppx_common.value
+  val wrap_value :
+    Ppx_common.lang ->
+    Location.t ->
+    Parsetree.expression Ppx_common.value -> Parsetree.expression
+  val list_wrap_value :
+    Ppx_common.lang ->
+    Location.t ->
+    Parsetree.expression Ppx_common.value list -> Parsetree.expression
+  val error :
+    Location.t -> ('b, Format.formatter, unit, 'a) Pervasives.format4 -> 'b
+end >>

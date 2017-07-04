@@ -541,6 +541,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="label_content_fun"| type Html_types.label_content_fun >> ~[<<a_api | module Html_types >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="labelable"| type Html_types.labelable >> ~[<<a_api | module Html_types >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="labelable_without_interactive"| type Html_types.labelable_without_interactive >> ~[<<a_api | module Html_types >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="lang"| type Ppx_common.lang >> ~[<<a_api | module Ppx_common >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="languagecode"| type Html_types.languagecode >> ~[<<a_api | module Html_types >>~]|<<div class="odocwiki_info"|~A language code~, as per ~R~F~C~5~6~4~6~/~B~C~P~4~7~.
 >>
 |
@@ -961,6 +962,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="use_content"| type Svg_types.use_content >> ~[<<a_api | module Svg_types >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="utf8"| type Xml_print.Utf8.utf8 >> ~[<<a_api | module Xml_print.Utf8 >>~]||
 |@@ @style="tet-align: left;"@@\\V|
+|@@class="odocwiki_index"@ @@<<a_api text="value"| type Ppx_common.value >> ~[<<a_api | module Ppx_common >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="var"| type Html_types.var >> ~[<<a_api | module Html_types >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="var_attrib"| type Html_types.var_attrib >> ~[<<a_api | module Html_types >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="var_content"| type Html_types.var_content >> ~[<<a_api | module Html_types >>~]||
