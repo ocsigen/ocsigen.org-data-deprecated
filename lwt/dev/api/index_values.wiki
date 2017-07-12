@@ -512,8 +512,8 @@
       or ~(exclusively~) when the program exits~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api text="finalize"| value Lwt.finalize >> ~[<<a_api | module Lwt >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|finalize f g>> returns the same result as <<span class="odocwiki_inlinecode"|f ~(~)>> whether it
-      fails or not~.
+|@@class="odocwiki_index"@ @@<<a_api text="finalize"| value Lwt.finalize >> ~[<<a_api | module Lwt >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|finalize f g>> runs <<span class="odocwiki_inlinecode"|f ~(~)>>~, and then <<span class="odocwiki_inlinecode"|g ~(~)>>~, whether <<span class="odocwiki_inlinecode"|f ~(~)>> fails or
+      completes normally~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="find"| value Lwt_stream.find >> ~[<<a_api | module Lwt_stream >>~]||
