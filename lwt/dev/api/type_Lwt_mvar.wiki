@@ -4,4 +4,6 @@
   val create_empty : unit -> 'a Lwt_mvar.t
   val put : 'a Lwt_mvar.t -> 'a -> unit Lwt.t
   val take : 'a Lwt_mvar.t -> 'a Lwt.t
+  val take_available : 'a Lwt_mvar.t -> 'a option
+  val is_empty : 'a Lwt_mvar.t -> bool
 end >>

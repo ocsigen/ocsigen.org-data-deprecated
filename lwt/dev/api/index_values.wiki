@@ -832,6 +832,10 @@
 |@@class="odocwiki_index"@ @@<<a_api text="is_empty"| value Lwt_sequence.is_empty >> ~[<<a_api | module Lwt_sequence >>~]|<<div class="odocwiki_info"|~Returns <<span class="odocwiki_inlinecode"|true>> iff the given sequence is empty
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api text="is_empty"| value Lwt_mvar.is_empty >> ~[<<a_api | module Lwt_mvar >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|is~_empty mvar>> indicates if <<span class="odocwiki_inlinecode"|put mvar>> can be called without
+      blocking~.
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api text="is_empty"| value Lwt_stream.is_empty >> ~[<<a_api | module Lwt_stream >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|is~_empty st>> returns whether the given stream is empty~.
 >>
 |
@@ -1748,6 +1752,10 @@
 |@@ @style="tet-align: left;"@@\\T|
 |@@class="odocwiki_index"@ @@<<a_api text="take"| value Lwt_mvar.take >> ~[<<a_api | module Lwt_mvar >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|take mvar>> will take any currently available value from the
       mailbox variable~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="take_available"| value Lwt_mvar.take_available >> ~[<<a_api | module Lwt_mvar >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|take~_available mvar>> immediately takes the value from <<span class="odocwiki_inlinecode"|mvar>> without
+      blocking~, returning <<span class="odocwiki_inlinecode"|~None>> if the mailbox is empty~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="take_l"| value Lwt_sequence.take_l >> ~[<<a_api | module Lwt_sequence >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|take~_l x s>> remove and returns the leftmost element of <<span class="odocwiki_inlinecode"|s>>
