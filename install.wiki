@@ -1,0 +1,59 @@
+<<header |
+  = Ocsigen platform installation
+  <<outline depth="1">>
+>>
+
+
+
+==Preliminary notice==
+
+Ocsigen is a set of software projects with some dependencies to some well-spread OCaml modules.
+
+Many software distributions come with Ocsigen packages,
+and the following compiling instructions should work with very few changes on most Unix systems (Linux, MacOS, FreeBSD ...).
+* The standard way to install ocsigen packages is to use the Opam package manager.
+* If your distribution does not provide binary packages for Ocsigen, kindly tell the packagers of the distribution that you need these packages.
+* If you need to modify the compilation scripts or Makefiles for your needs, please contribute your changes, so that they benefit everybody.
+* If you can't solve your installation problems after a few hours, send an email on the [[https://sympa.mancoosi.univ-paris-diderot.fr/wws/info/ocsigen|Ocsigen mailing list]]. Someone will probably help you!
+
+
+==@@id="source"@@ Installation with Opam ==
+
+If you want to compile Ocsigen packages, the recommended way is to use the [[http://opam.ocamlpro.com|OPAM]] package manager:
+
+* Install the non-OCaml dependencies, for example, on debian:
+
+{{{
+sudo aptitude install libev-dev libgdbm-dev libncurses5-dev libpcre3-dev 
+                      libssl-dev libsqlite3-dev libcairo-ocaml-dev m4
+                      opam camlp4-extra
+}}}
+
+or on MacOS :
+{{{
+brew install ocaml opam libev gdbm pcre openssl pkg-config sqlite3
+}}}
+On MacOS, after installing sqlite3 and pkg-config, you need to tell pkg-config where is the sqlite3.pc file using
+{{{
+brew link --force sqlite3
+}}}
+<<| WAS:
+sudo ln -s /usr/local/Cellar/sqlite/3.7.15.2/lib/pkgconfig/sqlite3.pc \
+  /usr/local/lib/pkgconfig/sqlite3.pc
+>>
+
+* Just install opam and do {{{opam install eliom}}}. Be careful if you have several installations of OCaml on your system (not recommended)
+* If you want to use the development version of Ocsigen (only for beta testers), pin the required github repositories on Opam (Former Ocsigen Opam repository is deprecated).
+
+
+==@@id="binary"@@ Binary distribution ==
+
+Ocsigen is available in some software distributions, e.g.:
+
+* [[http://packages.qa.debian.org/e/eliom.html|Debian]]
+* [[https://launchpad.net/ubuntu/+source/ocsigen|Ubuntu]]
+
+If your distribution has all the packages you need, this is probably
+the simplest way to install Ocsigen software.
+But be careful to install the last stable version available
+on this Web site.
