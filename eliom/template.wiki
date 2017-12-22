@@ -1,2 +1,6 @@
-<<doctree>>
+<<client-server-switch>>
+<<reason-switch>>
+
+<<googlesearch>>
+
 <<content>>
