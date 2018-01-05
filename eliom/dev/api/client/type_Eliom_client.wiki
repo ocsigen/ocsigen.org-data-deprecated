@@ -98,7 +98,28 @@
     ?override_mime_type:string -> 'a -> 'b -> string Lwt.t
   val onload : (unit -> unit) -> unit
   val lwt_onload : unit -> unit Lwt.t
-  val onchangepage : (unit -> unit) -> unit
+  type changepage_event = {
+    in_cache : bool;
+    origin_uri : string;
+    target_uri : string;
+    origin_id : int;
+    target_id : int option;
+  }
+  val onchangepage : (Eliom_client.changepage_event -> unit Lwt.t) -> unit
+  module Page_status :
+    sig
+      type t = Generating | Active | Cached | Dead
+      val signal : unit -> Eliom_client.Page_status.t React.S.t
+      module Events :
+        sig
+          val active : unit -> unit React.E.t
+          val cached : unit -> unit React.E.t
+          val dead : unit -> unit React.E.t
+        end
+      val onactive : ?now:bool -> ?once:bool -> (unit -> unit) -> unit
+      val oncached : ?once:bool -> (unit -> unit) -> unit
+      val ondead : (unit -> unit) -> unit
+    end
   val onbeforeunload : (unit -> string option) -> unit
   val onunload : (unit -> unit) -> unit
   val wait_load_end : unit -> unit Lwt.t
@@ -115,6 +136,8 @@
     (string * string) list -> (string * string) list -> unit Lwt.t
   val init : unit -> unit
   val set_reload_function : (unit -> unit -> unit Lwt.t) -> unit
+  val push_history_dom : unit -> unit
+  val set_max_dist_history_doms : int option -> unit
   val log_section : Eliom_lib.Lwt_log.section
   val middleClick : Dom_html.mouseEvent Js.t -> bool
   val set_content_local :

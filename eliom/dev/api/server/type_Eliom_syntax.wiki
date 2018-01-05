@@ -4,6 +4,7 @@
   val client_value :
     ?pos:Eliom_lib.pos -> string -> 'args -> 'a Eliom_client_value.t
   val set_global : bool -> unit
+  val global_context : unit -> bool
   val close_server_section : string -> unit
   val close_client_section :
     string ->

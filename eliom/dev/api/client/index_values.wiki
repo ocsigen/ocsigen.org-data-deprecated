@@ -23,6 +23,8 @@
     connection to start receiving server messages
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="active"| value Eliom_client.Page_status.Events.active >> ~[<<a_api subproject="client" | module Eliom_client.Page_status.Events >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="active_page"| value Eliom_client_core.active_page >> ~[<<a_api subproject="client" | module Eliom_client_core >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="add"| value Eliom_content.Html.Manip.Class.add >> ~[<<a_api subproject="client" | module Eliom_content.Html.Manip.Class >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="add"| value Eliom_content.Svg.Manip.Class.add >> ~[<<a_api subproject="client" | module Eliom_content.Svg.Manip.Class >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="addEventListener"| value Eliom_content.Html.Manip.Named.addEventListener >> ~[<<a_api subproject="client" | module Eliom_content.Html.Manip.Named >>~]|<<div class="odocwiki_info"|see <<span class="odocwiki_inlinecode"|add~Event~Listener>>
@@ -45,6 +47,7 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="add_string_event_listener"| value Eliom_client_core.add_string_event_listener >> ~[<<a_api subproject="client" | module Eliom_client_core >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="adds"| value Eliom_content.Html.Manip.Class.adds >> ~[<<a_api subproject="client" | module Eliom_content.Html.Manip.Class >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="adds"| value Eliom_content.Svg.Manip.Class.adds >> ~[<<a_api subproject="client" | module Eliom_content.Svg.Manip.Class >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="advance_page"| value Eliom_client_core.advance_page >> ~[<<a_api subproject="client" | module Eliom_client_core >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="alert"| value Eliom_lib.alert >> ~[<<a_api subproject="client" | module Eliom_lib >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="all_suffix"| value Eliom_parameter_sigs.S.all_suffix >> ~[<<a_api subproject="client" | module Eliom_parameter_sigs.S >>~]|<<div class="odocwiki_info"|~Takes the whole suffix~, as long as possible~, as a ~(slash
       separated~) string list
@@ -194,6 +197,7 @@
 >>
 |
 |@@ @style="tet-align: left;"@@\\C|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="cached"| value Eliom_client.Page_status.Events.cached >> ~[<<a_api subproject="client" | module Eliom_client.Page_status.Events >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="call_ocaml_service"| value Eliom_client.call_ocaml_service >> ~[<<a_api subproject="client" | module Eliom_client >>~]|<<div class="odocwiki_info"|~Call a server side service that return an ~O~Caml value~.
 >>
 |
@@ -366,10 +370,10 @@
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="current_classes"| value Eliom_client_core.current_classes >> ~[<<a_api subproject="client" | module Eliom_client_core >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="current_state_id"| value Eliom_client_core.current_state_id >> ~[<<a_api subproject="client" | module Eliom_client_core >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="cursor"| value Eliom_content.Html.Manip.SetCss.cursor >> ~[<<a_api subproject="client" | module Eliom_content.Html.Manip.SetCss >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="cursor"| value Eliom_content.Html.Manip.Css.cursor >> ~[<<a_api subproject="client" | module Eliom_content.Html.Manip.Css >>~]||
 |@@ @style="tet-align: left;"@@\\D|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="dead"| value Eliom_client.Page_status.Events.dead >> ~[<<a_api subproject="client" | module Eliom_client.Page_status.Events >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="debug"| value Eliom_lib.debug >> ~[<<a_api subproject="client" | module Eliom_lib >>~]|<<div class="odocwiki_info"|~Deprecated~.
 >>
 |
@@ -507,6 +511,7 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="get_prop"| value Eliom_client_core.get_prop >> ~[<<a_api subproject="client" | module Eliom_client_core >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="get_ssl"| value Eliom_lib.Url.get_ssl >> ~[<<a_api subproject="client" | module Eliom_lib.Url >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="get_state"| value Eliom_client_core.get_state >> ~[<<a_api subproject="client" | module Eliom_client_core >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="get_this_page"| value Eliom_client_core.get_this_page >> ~[<<a_api subproject="client" | module Eliom_client_core >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="get_to_and_of"| value Eliom_parameter_sigs.S.get_to_and_of >> ~[<<a_api subproject="client" | module Eliom_parameter_sigs.S >>~]|<<div class="odocwiki_info"|~Given a parameter type~, get the two functions that converts from
       and to strings~.
 >>
@@ -754,6 +759,7 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="minWidth"| value Eliom_content.Html.Manip.Css.minWidth >> ~[<<a_api subproject="client" | module Eliom_content.Html.Manip.Css >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="minWidthPx"| value Eliom_content.Html.Manip.SetCss.minWidthPx >> ~[<<a_api subproject="client" | module Eliom_content.Html.Manip.SetCss >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="minWidthPx"| value Eliom_content.Html.Manip.Css.minWidthPx >> ~[<<a_api subproject="client" | module Eliom_content.Html.Manip.Css >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="mk_page"| value Eliom_client_core.mk_page >> ~[<<a_api subproject="client" | module Eliom_client_core >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="multiple_select"| value Eliom_form_sigs.S.multiple_select >> ~[<<a_api subproject="client" | module Eliom_form_sigs.S >>~]|<<div class="odocwiki_info"|~Creates a multiple~-selection <<span class="odocwiki_inlinecode"|~<select~>>> tag~.
 >>
 |
@@ -790,6 +796,7 @@
         if <<span class="odocwiki_inlinecode"|elt>> is not the last~.
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="next_page"| value Eliom_client_core.next_page >> ~[<<a_api subproject="client" | module Eliom_client_core >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="next_state_id"| value Eliom_client_core.next_state_id >> ~[<<a_api subproject="client" | module Eliom_client_core >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="node"| value Eliom_content_core.Html.R.node >> ~[<<a_api subproject="client" | module Eliom_content_core.Html.R >>~]|<<div class="odocwiki_info"|the function <<span class="odocwiki_inlinecode"|node s>> create an ~H~T~M~L~5 <<span class="odocwiki_inlinecode"|elt>> from a signal <<span class="odocwiki_inlinecode"|s>>~.
 >>
@@ -829,12 +836,16 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="offsetHeight"| value Eliom_content.Html.Manip.Attr.offsetHeight >> ~[<<a_api subproject="client" | module Eliom_content.Html.Manip.Attr >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="offsetWidth"| value Eliom_content.Html.Manip.Attr.offsetWidth >> ~[<<a_api subproject="client" | module Eliom_content.Html.Manip.Attr >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="onabort"| value Eliom_content.Html.Manip.Ev.onabort >> ~[<<a_api subproject="client" | module Eliom_content.Html.Manip.Ev >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="onactive"| value Eliom_client.Page_status.onactive >> ~[<<a_api subproject="client" | module Eliom_client.Page_status >>~]|<<div class="odocwiki_info"|convenience function that attaches a handler to <<span class="odocwiki_inlinecode"|~Events~.active>>~.
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="onbeforeunload"| value Eliom_client.onbeforeunload >> ~[<<a_api subproject="client" | module Eliom_client >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|onbeforeunload f>> registers <<span class="odocwiki_inlinecode"|f>> as a handler to be called before
     changing the page the next time~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="onblur"| value Eliom_content.Html.Manip.Ev.onblur >> ~[<<a_api subproject="client" | module Eliom_content.Html.Manip.Ev >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="onblur_textarea"| value Eliom_content.Html.Manip.Ev.onblur_textarea >> ~[<<a_api subproject="client" | module Eliom_content.Html.Manip.Ev >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="oncached"| value Eliom_client.Page_status.oncached >> ~[<<a_api subproject="client" | module Eliom_client.Page_status >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="onchange"| value Eliom_content.Html.Manip.Ev.onchange >> ~[<<a_api subproject="client" | module Eliom_content.Html.Manip.Ev >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="onchange_select"| value Eliom_content.Html.Manip.Ev.onchange_select >> ~[<<a_api subproject="client" | module Eliom_content.Html.Manip.Ev >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="onchangepage"| value Eliom_client.onchangepage >> ~[<<a_api subproject="client" | module Eliom_client >>~]|<<div class="odocwiki_info"|~Run some code ~*before~* the next page change~, that is~, before each
@@ -843,6 +854,7 @@
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="onclick"| value Eliom_content.Html.Manip.Ev.onclick >> ~[<<a_api subproject="client" | module Eliom_content.Html.Manip.Ev >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="ondblclick"| value Eliom_content.Html.Manip.Ev.ondblclick >> ~[<<a_api subproject="client" | module Eliom_content.Html.Manip.Ev >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="ondead"| value Eliom_client.Page_status.ondead >> ~[<<a_api subproject="client" | module Eliom_client.Page_status >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="onerror"| value Eliom_content.Html.Manip.Ev.onerror >> ~[<<a_api subproject="client" | module Eliom_content.Html.Manip.Ev >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="onfocus"| value Eliom_content.Html.Manip.Ev.onfocus >> ~[<<a_api subproject="client" | module Eliom_content.Html.Manip.Ev >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="onfocus_textarea"| value Eliom_content.Html.Manip.Ev.onfocus_textarea >> ~[<<a_api subproject="client" | module Eliom_content.Html.Manip.Ev >>~]||
@@ -1093,11 +1105,13 @@
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="resolve"| value Eliom_lib.Url.resolve >> ~[<<a_api subproject="client" | module Eliom_lib.Url >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="result_of_http_result"| value Eliom_registration_sigs.PARAM.result_of_http_result >> ~[<<a_api subproject="client" | module Eliom_registration_sigs.PARAM >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="retire_page"| value Eliom_client_core.retire_page >> ~[<<a_api subproject="client" | module Eliom_client_core >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="right"| value Eliom_content.Html.Manip.SetCss.right >> ~[<<a_api subproject="client" | module Eliom_content.Html.Manip.SetCss >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="right"| value Eliom_content.Html.Manip.Css.right >> ~[<<a_api subproject="client" | module Eliom_content.Html.Manip.Css >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="rightPx"| value Eliom_content.Html.Manip.SetCss.rightPx >> ~[<<a_api subproject="client" | module Eliom_content.Html.Manip.SetCss >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="rightPx"| value Eliom_content.Html.Manip.Css.rightPx >> ~[<<a_api subproject="client" | module Eliom_content.Html.Manip.Css >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="run_callbacks"| value Eliom_client_core.run_callbacks >> ~[<<a_api subproject="client" | module Eliom_client_core >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="run_lwt_callbacks"| value Eliom_client_core.run_lwt_callbacks >> ~[<<a_api subproject="client" | module Eliom_client_core >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="run_onunload_wrapper"| value Eliom_client_core.run_onunload_wrapper >> ~[<<a_api subproject="client" | module Eliom_client_core >>~]||
 |@@ @style="tet-align: left;"@@\\S|
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="scrollIntoView"| value Eliom_content.Html.Manip.scrollIntoView >> ~[<<a_api subproject="client" | module Eliom_content.Html.Manip >>~]|<<div class="odocwiki_info"|~The function <<span class="odocwiki_inlinecode"|scroll~Into~View elt>> scroll the page to a position
@@ -1129,6 +1143,7 @@
       with the same name~.
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="set_active_page"| value Eliom_client_core.set_active_page >> ~[<<a_api subproject="client" | module Eliom_client_core >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="set_active_until_timeout"| value Eliom_comet.Configuration.set_active_until_timeout >> ~[<<a_api subproject="client" | module Eliom_comet.Configuration >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|set~_active~_until~_timeout c v>> sets the activity changing
       behaviour~.
 >>
@@ -1137,6 +1152,7 @@
       stay active~.
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="set_client_fun"| value Eliom_service.set_client_fun >> ~[<<a_api subproject="client" | module Eliom_service >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="set_client_html_file"| value Eliom_client.set_client_html_file >> ~[<<a_api subproject="client" | module Eliom_client >>~]|<<div class="odocwiki_info"|~Set the name of the ~H~T~M~L file loading our client app~.
 >>
 |
@@ -1178,6 +1194,11 @@
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="set_tracing"| value Eliom_config.set_tracing >> ~[<<a_api subproject="client" | module Eliom_config >>~]|<<div class="odocwiki_info"|~Not tracing by default~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="signal"| value Eliom_client.Page_status.signal >> ~[<<a_api subproject="client" | module Eliom_client.Page_status >>~]|<<div class="odocwiki_info"|retrieves a react signal for the status of the current page~; note that the
+      `current page~' is not necessarily the page currently being displayed~, but
+      rather the page in whose context the current code is executed~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="signal"| value Eliom_shared_sigs.RLIST.signal >> ~[<<a_api subproject="client" | module Eliom_shared_sigs.RLIST >>~]||
@@ -1242,6 +1263,7 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="textarea"| value Eliom_form_sigs.S.textarea >> ~[<<a_api subproject="client" | module Eliom_form_sigs.S >>~]|<<div class="odocwiki_info"|~Creates a <<span class="odocwiki_inlinecode"|~<textarea~>>> tag
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="this_page"| value Eliom_client_core.this_page >> ~[<<a_api subproject="client" | module Eliom_client_core >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="to_json"| value Eliom_lib.to_json >> ~[<<a_api subproject="client" | module Eliom_lib >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="to_signal"| value Eliom_shared.to_signal >> ~[<<a_api subproject="client" | module Eliom_shared >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|to~_signal ~~init s>> converts the ~Lwt~-wrapped signal <<span class="odocwiki_inlinecode"|s>> into a
     regular signal with initial value <<span class="odocwiki_inlinecode"|init>>~.

@@ -132,6 +132,10 @@
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Elt"| module Eliom_content.Html.Manip.Elt >> ~[<<a_api subproject="client" | module Eliom_content.Html.Manip >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Ev"| module Eliom_content.Html.Manip.Ev >> ~[<<a_api subproject="client" | module Eliom_content.Html.Manip >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Events"| module Eliom_client.Page_status.Events >> ~[<<a_api subproject="client" | module Eliom_client.Page_status >>~]|<<div class="odocwiki_info"|convenience functions for retrieving a react event for the current page
+      that is triggered whenever it reaches the respective status
+>>
+|
 |@@ @style="tet-align: left;"@@\\F|
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="F"| module Eliom_tools.F >> ~[<<a_api subproject="client" | module Eliom_tools >>~]|<<div class="odocwiki_info"|~Menus with functional node semantics
 >>
@@ -214,6 +218,9 @@
       project="js_of_ocaml"| type Js.t>> ~) to ~Eliom nodes ~(<<a_api | type Eliom_content.Html.elt>> ~)~.
 >>
 |
+|@@ @style="tet-align: left;"@@\\P|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Page_status"| module Eliom_client.Page_status >> ~[<<a_api subproject="client" | module Eliom_client >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Page_status_t"| module Eliom_client_core.Page_status_t >> ~[<<a_api subproject="client" | module Eliom_client_core >>~]||
 |@@ @style="tet-align: left;"@@\\R|
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="R"| module Eliom_content_core.Html.R >> ~[<<a_api subproject="client" | module Eliom_content_core.Html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="R"| module Eliom_content_core.Svg.R >> ~[<<a_api subproject="client" | module Eliom_content_core.Svg >>~]|<<div class="odocwiki_info"|~Typed interface for building valid reactive ~S~V~G tree~.

@@ -29,6 +29,11 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="chandle"| type Eliom_shared_sigs.RLIST.chandle >> ~[<<a_api subproject="client" | module Eliom_shared_sigs.RLIST >>~]|<<div class="odocwiki_info"|~Client~-side version of ~'a handle
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="changepage_event"| type Eliom_client.changepage_event >> ~[<<a_api subproject="client" | module Eliom_client >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|changepage~_event>> is a record of some parameters related to
+    page changes~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="changepage_event"| type Eliom_client_core.changepage_event >> ~[<<a_api subproject="client" | module Eliom_client_core >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="client_form_handler"| type Eliom_client_core.client_form_handler >> ~[<<a_api subproject="client" | module Eliom_client_core >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="co"| type Eliom_service_sigs.TYPES.co >> ~[<<a_api subproject="client" | module Eliom_service_sigs.TYPES >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="compilation_unit_global_data"| type Eliom_client_core.compilation_unit_global_data >> ~[<<a_api subproject="client" | module Eliom_client_core >>~]||
@@ -138,6 +143,7 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="options"| type Eliom_registration_sigs.PARAM_POLY.options >> ~[<<a_api subproject="client" | module Eliom_registration_sigs.PARAM_POLY >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="options"| type Eliom_registration_sigs.PARAM.options >> ~[<<a_api subproject="client" | module Eliom_registration_sigs.PARAM >>~]||
 |@@ @style="tet-align: left;"@@\\P|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="page"| type Eliom_client_core.page >> ~[<<a_api subproject="client" | module Eliom_client_core >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="page"| type Eliom_registration_sigs.S_poly.page >> ~[<<a_api subproject="client" | module Eliom_registration_sigs.S_poly >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="page"| type Eliom_registration_sigs.S.page >> ~[<<a_api subproject="client" | module Eliom_registration_sigs.S >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="page"| type Eliom_registration_sigs.PARAM_POLY.page >> ~[<<a_api subproject="client" | module Eliom_registration_sigs.PARAM_POLY >>~]||
@@ -190,6 +196,7 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="srv"| type Eliom_tools.srv >> ~[<<a_api subproject="client" | module Eliom_tools >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="star"| type Eliom_content_sigs.LINKS_AND_FORMS.star >> ~[<<a_api subproject="client" | module Eliom_content_sigs.LINKS_AND_FORMS >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="state"| type Eliom_client_core.state >> ~[<<a_api subproject="client" | module Eliom_client_core >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="state_id"| type Eliom_client_core.state_id >> ~[<<a_api subproject="client" | module Eliom_client_core >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="suff"| type Eliom_parameter_sigs.S.suff >> ~[<<a_api subproject="client" | module Eliom_parameter_sigs.S >>~]|<<div class="odocwiki_info"|~This type is used as a phantom type in <<a_api subproject="client" | type Eliom_parameter_sigs.S.params_type >> to
       describe whether a parameter is encoded in the path of the ~U~R~I as
       a suffix parameter~.
@@ -215,7 +222,12 @@
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="t"| type Eliom_comet.Channel.t >> ~[<<a_api subproject="client" | module Eliom_comet.Channel >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="t"| type Eliom_comet.Configuration.t >> ~[<<a_api subproject="client" | module Eliom_comet.Configuration >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="t"| type Eliom_client.Page_status.t >> ~[<<a_api subproject="client" | module Eliom_client.Page_status >>~]|<<div class="odocwiki_info"|a page can be in one of the following states~: <<span class="odocwiki_inlinecode"|~Generating>>~: page is currently being generated and not yet instated as
+                      the active page~, <<span class="odocwiki_inlinecode"|~Active>>~: page is currently being displayed~, <<span class="odocwiki_inlinecode"|~Cached>>~: page is in the browser history with its ~D~O~M stashed in the cache~, <<span class="odocwiki_inlinecode"|~Dead>>~: page is in the browser history without its ~D~O~M being cached
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="t"| type Eliom_client_core.ReactState.t >> ~[<<a_api subproject="client" | module Eliom_client_core.ReactState >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="t"| type Eliom_client_core.Page_status_t.t >> ~[<<a_api subproject="client" | module Eliom_client_core.Page_status_t >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="t"| type Eliom_client_value.t >> ~[<<a_api subproject="client" | module Eliom_client_value >>~]|<<div class="odocwiki_info"|~An <<span class="odocwiki_inlinecode"|~'a>> client value on the client is just an <<span class="odocwiki_inlinecode"|~'a>>~.
 >>
 |

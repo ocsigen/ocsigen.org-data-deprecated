@@ -501,7 +501,8 @@
                 Svg_types.numbers_semicolon wrap -> [> `KeyPoints ] attrib
               val a_path : string wrap -> [> `Path ] attrib
               val a_animateTransform_type :
-                ('a Xml.W.t as 'a) wrap -> [ `Typeanimatetransform ] attrib
+                [ `Rotate | `Scale | `SkewX | `SkewY | `Translate ] wrap ->
+                [ `Typeanimatetransform ] attrib
               val a_horiz_origin_x :
                 Svg_types.number wrap -> [> `HorizOriginX ] attrib
               val a_horiz_origin_y :
@@ -1343,7 +1344,8 @@
             Svg_types.numbers_semicolon wrap -> [> `KeyPoints ] attrib
           val a_path : string wrap -> [> `Path ] attrib
           val a_animateTransform_type :
-            ('a Xml.W.t as 'a) wrap -> [ `Typeanimatetransform ] attrib
+            [ `Rotate | `Scale | `SkewX | `SkewY | `Translate ] wrap ->
+            [ `Typeanimatetransform ] attrib
           val a_horiz_origin_x :
             Svg_types.number wrap -> [> `HorizOriginX ] attrib
           val a_horiz_origin_y :
@@ -2183,7 +2185,8 @@
                 Svg_types.numbers_semicolon wrap -> [> `KeyPoints ] attrib
               val a_path : string wrap -> [> `Path ] attrib
               val a_animateTransform_type :
-                ('a Xml.W.t as 'a) wrap -> [ `Typeanimatetransform ] attrib
+                [ `Rotate | `Scale | `SkewX | `SkewY | `Translate ] wrap ->
+                [ `Typeanimatetransform ] attrib
               val a_horiz_origin_x :
                 Svg_types.number wrap -> [> `HorizOriginX ] attrib
               val a_horiz_origin_y :
@@ -3025,7 +3028,8 @@
             Svg_types.numbers_semicolon wrap -> [> `KeyPoints ] attrib
           val a_path : string wrap -> [> `Path ] attrib
           val a_animateTransform_type :
-            ('a Xml.W.t as 'a) wrap -> [ `Typeanimatetransform ] attrib
+            [ `Rotate | `Scale | `SkewX | `SkewY | `Translate ] wrap ->
+            [ `Typeanimatetransform ] attrib
           val a_horiz_origin_x :
             Svg_types.number wrap -> [> `HorizOriginX ] attrib
           val a_horiz_origin_y :
@@ -13721,10 +13725,4 @@
             ?advert:string -> unit -> Format.formatter -> F.doc -> unit
         end
     end
-  val set_client_fun :
-    ?app:string ->
-    service:('a, 'b, 'c, 'd, 'e, 'f, 'g, [< `WithSuffix | `WithoutSuffix ],
-             'h, 'i, 'j)
-            Eliom_service.t ->
-    ('a -> 'b -> unit Lwt.t) Eliom_client_value.t -> unit
 end >>
