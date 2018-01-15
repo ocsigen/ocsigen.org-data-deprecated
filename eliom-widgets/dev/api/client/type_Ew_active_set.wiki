@@ -1,7 +1,0 @@
-<<code language="ocaml" | sig
-  type t'
-  type t = Ojw_active_set.t
-  val set : ?at_least_one:bool -> unit -> Ew_active_set.t
-  val of_server_set : Ew_active_set.t' -> Ew_active_set.t
-  val to_server_set : Ew_active_set.t -> Ew_active_set.t'
-end >>

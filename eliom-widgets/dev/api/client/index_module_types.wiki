@@ -1,6 +1,0 @@
-=Index of module types=
-
-|@@ @style="tet-align: left;"@@\\T|
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="T"| module type Ew_traversable.T >> ~[<<a_api subproject="client" | module Ew_traversable >>~]||
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="T"| module type Ew_alert.T >> ~[<<a_api subproject="client" | module Ew_alert >>~]||
-\\

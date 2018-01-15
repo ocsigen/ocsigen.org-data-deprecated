@@ -1,7 +1,0 @@
-=Index of exceptions=
-
-|@@ @style="tet-align: left;"@@\\I|
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Invalid_extension"| exception Ew_dyn_upload.Invalid_extension >> ~[<<a_api subproject="client" | module Ew_dyn_upload >>~]|<<div class="odocwiki_info"|~Exception raised in case of invalid extension
->>
-|
-\\
