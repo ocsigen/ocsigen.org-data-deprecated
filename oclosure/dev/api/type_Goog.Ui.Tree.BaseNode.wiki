@@ -1,6 +1,0 @@
-<<code language="ocaml" | sig
-  val add :
-    'a #Goog.Ui.Tree.baseNode Js.t ->
-    'a #Goog.Ui.Tree.baseNode Js.t ->
-    'a #Goog.Ui.Tree.baseNode Js.t Js.opt -> unit
-end >>

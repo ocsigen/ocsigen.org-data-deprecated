@@ -1,4 +1,0 @@
-=Module <<a_api_type | module Goog.Ui.ImagelessButtonRenderer >> =
-<<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module>> <<span class="ocsforge_color_uid"|<<span class="ocsforge_color_uid"|ImagelessButtonRenderer>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="ocsforge_color_keyword"|sig>><<a_api text=".." | module Goog.Ui.ImagelessButtonRenderer >><<span class="ocsforge_color_keyword"|end>>>>
-----
-<<pre id="VALgetInstance" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|get~Instance>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|unit <<span class="ocsforge_color_delimiter"| -> >> 'a>>>>

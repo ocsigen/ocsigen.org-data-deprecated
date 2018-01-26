@@ -1,1 +1,0 @@
-<<code language="ocaml" | sig type side = NONE | START | END | BOTH end >>

@@ -1,5 +1,0 @@
-<<code language="ocaml" | sig
-  val _CSS_CLASS_PREFIX : Js.js_string Js.t
-  val _VALUE_THUMBS_CSS_CLASS : Js.js_string Js.t
-  val _EXTENT_THUMBS_CSS_CLASS : Js.js_string Js.t
-end >>

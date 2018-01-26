@@ -1,5 +1,0 @@
-<<code language="ocaml" | object
-  method format :
-    Js.date Js.t ->
-    Goog.I18n.timeZone Js.t Js.opt -> Js.js_string Js.t Js.meth
-end >>

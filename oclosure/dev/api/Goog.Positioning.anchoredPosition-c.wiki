@@ -1,5 +1,0 @@
-=Class type <<a_api_type | class type Goog.Positioning.anchoredPosition >> =
-<<pre class="ocsforge_color odocwiki_code"|<<span id="TYPEanchoredPosition"|<<span class="ocsforge_color_keyword"|class type>> <<span class="ocsforge_color_name"|anchoredPosition>>>> <<span class="ocsforge_color_delimiter"|~=>> <<span class="ocsforge_color_keyword"|object>><<a_api text=".." | class type Goog.Positioning.anchoredPosition >><<span class="ocsforge_color_keyword"|end>>>>**~Inherits**
-* <<a_api | class Goog.Positioning.abstractPosition >>
-
-----

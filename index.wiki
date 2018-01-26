@@ -1,3 +1,4 @@
 <<a_manual project="eliom"|Eliom>>
 <<a_manual project="ocsimore"|Ocsimore>>
+<<a_manual project="deriving"|Deriving>>
 <<a_api project="ojquery"|val Ojquery.jQ>>

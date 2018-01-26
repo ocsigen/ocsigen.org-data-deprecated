@@ -1,1 +1,0 @@
-<<code language="ocaml" | sig val _CSS_CLASS : Js.js_string Js.t end >>

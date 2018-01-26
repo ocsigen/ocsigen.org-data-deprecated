@@ -1,6 +1,0 @@
-=Class type <<a_api_type | class type Goog.Ui.AutoComplete.basic >> =
-<<pre class="ocsforge_color odocwiki_code"|<<span id="TYPEbasic"|<<span class="ocsforge_color_keyword"|class type>> <<span class="ocsforge_color_name"|basic>>>> <<span class="ocsforge_color_delimiter"|~=>> <<span class="ocsforge_color_keyword"|object>><<a_api text=".." | class type Goog.Ui.AutoComplete.basic >><<span class="ocsforge_color_keyword"|end>>>>~Class goog~.ui~.~Auto~Complete~.~Basic
-**~Inherits**
-* <<a_api | class Goog.Ui.autoComplete >>
-
-----

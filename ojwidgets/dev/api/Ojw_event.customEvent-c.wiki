@@ -1,6 +1,0 @@
-=Class type <<a_api_type | class type Ojw_event.customEvent >> =
-<<pre class="ocsforge_color odocwiki_code"|<<span id="TYPEcustomEvent"|<<span class="ocsforge_color_keyword"|class type>> <<span class="odocwiki_type"|['a]>><<span class="ocsforge_color_name"|customEvent>>>> <<span class="ocsforge_color_delimiter"|~=>> <<span class="ocsforge_color_keyword"|object>><<a_api text=".." | class type Ojw_event.customEvent >><<span class="ocsforge_color_keyword"|end>>>>**~Inherits**
-* <<span class="odocwiki_inlinecode"|~Dom~_html~.event>>
-* <<a_api | class Ojw_event.customEventInit >>
-
-----

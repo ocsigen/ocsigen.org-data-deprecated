@@ -1,6 +1,0 @@
-<<code language="ocaml" | object
-  method reposition :
-    #Dom_html.element Js.t ->
-    Corner.corner ->
-    Math.box Js.t Js.opt -> Math.size Js.t Js.opt -> unit Js.meth
-end >>

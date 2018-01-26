@@ -1,6 +1,0 @@
-=Module <<a_api_type | module Goog.Ui.IdGenerator >> =
-<<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module>> <<span class="ocsforge_color_uid"|<<span class="ocsforge_color_uid"|IdGenerator>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="ocsforge_color_keyword"|sig>><<a_api text=".." | module Goog.Ui.IdGenerator >><<span class="ocsforge_color_keyword"|end>>>>
-----
-<<pre id="VALgetInstance" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|get~Instance>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|unit <<span class="ocsforge_color_delimiter"| -> >> 'a>>>><<div class="odocwiki_info"|~Default instance for id generation~. ~Done as an instance instead of statics
-     so it~'s possible to inject a mock for unit testing purposes~.
->>

@@ -1,1 +1,0 @@
-<<code language="ocaml" | sig val _VERTICAL : Js.js_string Js.t val _HORIZONTAL : Js.js_string Js.t end >>

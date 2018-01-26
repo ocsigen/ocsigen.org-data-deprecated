@@ -1,6 +1,0 @@
-=Module <<a_api_type | module Ojw_dropdown_sigs >> =
-<<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module>> <<span class="ocsforge_color_uid"|<<span class="ocsforge_color_uid"|Ojw_dropdown_sigs>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="ocsforge_color_keyword"|sig>><<a_api text=".." | module Ojw_dropdown_sigs >><<span class="ocsforge_color_keyword"|end>>>>~A dropdown menu is a menu which can be displayed under an element
-      which will act like a <<span class="odocwiki_inlinecode"|button>>~.
-
-----
-<<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module type>> <<a_api text="T" | module type Ojw_dropdown_sigs.T >> <<span class="ocsforge_color_delimiter"|~=>> <<span class="ocsforge_color_keyword"|sig>><<a_api text=".." | module type Ojw_dropdown_sigs.T >><<span class="ocsforge_color_keyword"|end>>>>

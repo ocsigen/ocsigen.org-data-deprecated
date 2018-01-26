@@ -1,1 +1,0 @@
-<<code language="ocaml" | object method height : int Js.prop method width : int Js.prop end >>

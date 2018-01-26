@@ -1,9 +1,0 @@
-=Class type <<a_api_type | class type Goog.Ui.twoThumbSlider >> =
-<<pre class="ocsforge_color odocwiki_code"|<<span id="TYPEtwoThumbSlider"|<<span class="ocsforge_color_keyword"|class type>> <<span class="ocsforge_color_name"|twoThumbSlider>>>> <<span class="ocsforge_color_delimiter"|~=>> <<span class="ocsforge_color_keyword"|object>><<a_api text=".." | class type Goog.Ui.twoThumbSlider >><<span class="ocsforge_color_keyword"|end>>>>**~Inherits**
-* <<a_api | class Goog.Ui.sliderBase >>
-
-----
-<<pre class="ocsforge_color odocwiki_code"|<<span id="METHODgetCssClass"|<<span class="ocsforge_color_keyword"|method>> <<span class="odocwiki_name"|getCssClass>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|js_string>> <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>> <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|meth>>>>>><<div class="odocwiki_info"|**Returns** ~The ~C~S~S class applied to the twothumbslider element~.\\
->>
-<<pre class="ocsforge_color odocwiki_code"|<<span id="METHODcreateThumbs"|<<span class="ocsforge_color_keyword"|method>> <<span class="odocwiki_name"|createThumbs>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|unit <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|meth>>>>>><<div class="odocwiki_info"|~Creates the thumb members for a twothumbslider~. ~If the element contains a child with a class name ~'goog~-twothumbslider~-value~-thumb~' ~(or ~'goog~-twothumbslider~-extent~-thumb~'~, respectively~)~, then that will be used as the value~Thumb ~(or as the extent~Thumb~, respectively~)
->>

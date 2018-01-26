@@ -1,6 +1,0 @@
-<<code language="ocaml" | object
-  method parse :
-    Js.js_string Js.t -> Js.date Js.t -> int Js.opt -> int Js.meth
-  method strictParse :
-    Js.js_string Js.t -> Js.date Js.t -> int Js.opt -> int Js.meth
-end >>

@@ -1,9 +1,0 @@
-<<code language="ocaml" | sig
-  val create :
-    int ->
-    int ->
-    Js.js_string Js.t ->
-    Js.js_string Js.t Js.opt ->
-    int Js.opt ->
-    Goog.Gdom.domHelper Js.t Js.opt -> Goog.Ui.baseRoundedPanel Js.t
-end >>

@@ -1,4 +1,0 @@
-<<code language="ocaml" | sig
-  val _STANDARD_LIST_SEPARATORS : Js.js_string Js.t
-  val _QUOTE_LITERALS : Js.js_string Js.t
-end >>

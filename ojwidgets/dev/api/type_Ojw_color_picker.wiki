@@ -1,7 +1,0 @@
-<<code language="ocaml" | sig
-  type t
-  val create : ?width:int -> unit -> Ojw_color_picker.t
-  val append_at : Dom_html.element Js.t -> Ojw_color_picker.t -> unit
-  val init_handler : Ojw_color_picker.t -> unit
-  val get_rgb : Ojw_color_picker.t -> int * int * int
-end >>

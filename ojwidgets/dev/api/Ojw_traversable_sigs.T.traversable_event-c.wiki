@@ -1,4 +1,0 @@
-=Class type <<a_api_type | class type Ojw_traversable_sigs.T.traversable_event >> =
-<<pre class="ocsforge_color odocwiki_code"|<<span id="TYPEtraversable_event"|<<span class="ocsforge_color_keyword"|class type>> <<span class="ocsforge_color_name"|traversable_event>>>> <<span class="ocsforge_color_delimiter"|~=>> <<span class="odocwiki_type"|[<<a_api text="traversable_detail_event" | class type Ojw_traversable_sigs.T.traversable_detail_event >>]>> <<span class="odocwiki_type"|<<a_api text="Ojw_event.customEvent" | class type Ojw_event.customEvent >>>>>>~Traversable~'s event type~.
-
-----

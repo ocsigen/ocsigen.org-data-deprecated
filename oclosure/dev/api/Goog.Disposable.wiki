@@ -1,4 +1,0 @@
-=Module <<a_api_type | module Goog.Disposable >> =
-<<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module>> <<span class="ocsforge_color_uid"|<<span class="ocsforge_color_uid"|Disposable>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="ocsforge_color_keyword"|sig>><<a_api text=".." | module Goog.Disposable >><<span class="ocsforge_color_keyword"|end>>>>
-----
-<<pre class="ocsforge_color odocwiki_code"|<<span id="TYPEdisposable"|<<span class="ocsforge_color_keyword"|class type>> <<a_api text="disposable" | class type Goog.Disposable.disposable >>>> <<span class="ocsforge_color_delimiter"|~=>> <<span class="ocsforge_color_keyword"|object>><<a_api text=".." | class type Goog.Disposable.disposable >><<span class="ocsforge_color_keyword"|end>>>>

@@ -1,7 +1,0 @@
-=Module <<a_api_type | module Goog.Tools >> =
-<<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module>> <<span class="ocsforge_color_uid"|<<span class="ocsforge_color_uid"|Tools>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="ocsforge_color_keyword"|sig>><<a_api text=".." | module Goog.Tools >><<span class="ocsforge_color_keyword"|end>>>>
-----
-<<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module>> <<a_api text="Union" | module Goog.Tools.Union >> <<span class="ocsforge_color_delimiter"|~:>> <<span class="ocsforge_color_keyword"|sig>><<a_api text=".." | module Goog.Tools.Union >><<span class="ocsforge_color_keyword"|end>>>><<pre id="VALvariable" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|variable>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|string <<span class="ocsforge_color_delimiter"| -> >> 'a>>>><<div class="odocwiki_info"|~The expression <<span class="odocwiki_inlinecode"|variable s>> where <<span class="odocwiki_inlinecode"|s>> has the form 
-   <<span class="odocwiki_inlinecode"|"~[oclosure~]goog~.package~.~Class~Name~[~/oclosure~]">> is considered as a pure
-   expression by the compiler~. ~Used in constructors
->>

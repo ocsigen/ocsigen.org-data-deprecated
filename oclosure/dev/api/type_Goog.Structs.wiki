@@ -1,9 +1,0 @@
-<<code language="ocaml" | sig
-  class type pool =
-    object
-      method dispose : unit Js.meth
-      method getDisposed : bool Js.t Js.meth
-      method isDisposed : bool Js.t Js.meth
-    end
-  val pool : int Js.opt -> int Js.opt -> Goog.Structs.pool Js.t Js.constr
-end >>

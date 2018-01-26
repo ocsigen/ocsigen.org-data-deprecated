@@ -1,6 +1,0 @@
-=Class type <<a_api_type | class type Goog.Ui.formPost >> =
-<<pre class="ocsforge_color odocwiki_code"|<<span id="TYPEformPost"|<<span class="ocsforge_color_keyword"|class type>> <<span class="ocsforge_color_name"|formPost>>>> <<span class="ocsforge_color_delimiter"|~=>> <<span class="ocsforge_color_keyword"|object>><<a_api text=".." | class type Goog.Ui.formPost >><<span class="ocsforge_color_keyword"|end>>>>**~Inherits**
-* <<a_api | class Goog.Ui.component >>
-
-----
-<<pre class="ocsforge_color odocwiki_code"|<<span id="METHODcreateDom"|<<span class="ocsforge_color_keyword"|method>> <<span class="odocwiki_name"|createDom>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|unit <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|meth>>>>>>

@@ -1,1 +1,0 @@
-<<code language="ocaml" | sig type mouseButton = LEFT | MIDDLE | RIGHT end >>

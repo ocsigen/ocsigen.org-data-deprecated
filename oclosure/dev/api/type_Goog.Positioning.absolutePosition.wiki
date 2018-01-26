@@ -1,6 +1,0 @@
-<<code language="ocaml" | object
-  method reposition :
-    #Dom_html.element Js.t ->
-    Goog.Positioning.Corner.corner ->
-    Goog.Math.box Js.t Js.opt -> Goog.Math.size Js.t Js.opt -> unit Js.meth
-end >>

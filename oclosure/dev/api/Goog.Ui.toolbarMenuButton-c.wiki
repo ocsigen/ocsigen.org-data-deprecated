@@ -1,5 +1,0 @@
-=Class type <<a_api_type | class type Goog.Ui.toolbarMenuButton >> =
-<<pre class="ocsforge_color odocwiki_code"|<<span id="TYPEtoolbarMenuButton"|<<span class="ocsforge_color_keyword"|class type>> <<span class="ocsforge_color_name"|toolbarMenuButton>>>> <<span class="ocsforge_color_delimiter"|~=>> <<span class="ocsforge_color_keyword"|object>><<a_api text=".." | class type Goog.Ui.toolbarMenuButton >><<span class="ocsforge_color_keyword"|end>>>>**~Inherits**
-* <<a_api | class Goog.Ui.menuButton >>
-
-----
