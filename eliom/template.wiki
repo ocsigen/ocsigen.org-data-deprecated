@@ -1,5 +1,5 @@
-<<div class="project-eliom"|
-<<div class="project-header"|
+<<div class="project-page project-eliom"|
+<<div class="page-header"|
 
 @@class="logo-ocsigen"@@[[site:/|{{site:/img/ocsigen-white.svg|Ocsigen}}]]
 
