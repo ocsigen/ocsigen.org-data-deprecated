@@ -1,6 +1,25 @@
+<<div class="project-eliom"|
+<<div class="project-header"|
+
+@@class="logo-ocsigen"@@[[site:/|{{site:/img/ocsigen-white.svg|Ocsigen}}]]
+
+*[[site:/|Home]]
+*@@class="mainmenu"@class="mainmenu-current"@@[[wiki("eliom"):|Eliom]]
+*[[wiki("js_of_ocaml"):|Js_of_ocaml]]
+*[[wiki("ocsigenserver"):|Server]]
+*[[wiki("lwt"):|Lwt]]
+*[[wiki("tyxml"):|Tyxml]]
+*[[wiki("ocsigen-toolkit"):|Toolkit]]
+*[[wiki("ocsigen-start"):|Start]]
+*[[site:/projects|Other projects]]
+
+  >>
+
 <<client-server-switch>>
 <<reason-switch>>
 
 <<googlesearch>>
 
 <<content>>
+
+>>
