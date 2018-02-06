@@ -1,5 +1,0 @@
-<<code language="ocaml" | sig
-  type event = Ojw_button_sigs.T.button_event Js.t Dom.Event.typ
-  val press : Ojw_button_sigs.T.Event.event
-  val unpress : Ojw_button_sigs.T.Event.event
-end >>

@@ -1,8 +1,0 @@
-=Class type <<a_api_type | class type Goog.Ui.toolbarButtonRenderer >> =
-<<pre class="ocsforge_color odocwiki_code"|<<span id="TYPEtoolbarButtonRenderer"|<<span class="ocsforge_color_keyword"|class type>> <<span class="odocwiki_type"|[#button]>><<span class="ocsforge_color_name"|toolbarButtonRenderer>>>> <<span class="ocsforge_color_delimiter"|~=>> <<span class="ocsforge_color_keyword"|object>><<a_api text=".." | class type Goog.Ui.toolbarButtonRenderer >><<span class="ocsforge_color_keyword"|end>>>>**~Inherits**
-* <<a_api | class Goog.Ui.customButtonRenderer >>
-
-----
-<<pre class="ocsforge_color odocwiki_code"|<<span id="METHODgetCssClass"|<<span class="ocsforge_color_keyword"|method>> <<span class="odocwiki_name"|getCssClass>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|js_string>> <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>> <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|meth>>>>>><<div class="odocwiki_info"|~Returns the ~C~S~S class to be applied to the root element of buttons rendered using this renderer~.
-**Returns** ~Renderer~-specific ~C~S~S class~.\\
->>

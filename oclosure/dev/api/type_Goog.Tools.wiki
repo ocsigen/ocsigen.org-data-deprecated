@@ -1,9 +1,0 @@
-<<code language="ocaml" | sig
-  module Union :
-    sig
-      type (+'a, +'b) t
-      val i1 : 'a -> ('a, 'b) Goog.Tools.Union.t
-      val i2 : 'a -> ('b, 'a) Goog.Tools.Union.t
-    end
-  val variable : string -> 'a
-end >>

@@ -1,4 +1,0 @@
-<<code language="ocaml" | object
-  method getColor : Js.js_string Js.t Js.meth
-  method getWidth : (int, Js.js_string Js.t) Goog.Tools.Union.t Js.meth
-end >>

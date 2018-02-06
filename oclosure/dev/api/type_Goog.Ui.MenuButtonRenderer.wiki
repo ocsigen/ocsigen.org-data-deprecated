@@ -1,4 +1,0 @@
-<<code language="ocaml" | sig
-  val getInstance :
-    unit -> #Goog.Ui.menuButton Goog.Ui.menuButtonRenderer Js.t
-end >>

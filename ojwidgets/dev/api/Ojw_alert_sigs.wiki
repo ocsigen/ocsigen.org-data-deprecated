@@ -1,7 +1,0 @@
-=Module <<a_api_type | module Ojw_alert_sigs >> =
-<<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module>> <<span class="ocsforge_color_uid"|<<span class="ocsforge_color_uid"|Ojw_alert_sigs>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="ocsforge_color_keyword"|sig>><<a_api text=".." | module Ojw_alert_sigs >><<span class="ocsforge_color_keyword"|end>>>>
-==@@id="2_Specificeventsforalerts"@@~Specific events for alerts==
-
-
-----
-<<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module type>> <<a_api text="T" | module type Ojw_alert_sigs.T >> <<span class="ocsforge_color_delimiter"|~=>> <<span class="ocsforge_color_keyword"|sig>><<a_api text=".." | module type Ojw_alert_sigs.T >><<span class="ocsforge_color_keyword"|end>>>>

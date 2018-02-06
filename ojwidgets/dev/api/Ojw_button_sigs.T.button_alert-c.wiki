@@ -1,7 +1,0 @@
-=Class type <<a_api_type | class type Ojw_button_sigs.T.button_alert >> =
-<<pre class="ocsforge_color odocwiki_code"|<<span id="TYPEbutton_alert"|<<span class="ocsforge_color_keyword"|class type>> <<span class="ocsforge_color_name"|button_alert>>>> <<span class="ocsforge_color_delimiter"|~=>> <<span class="ocsforge_color_keyword"|object>><<a_api text=".." | class type Ojw_button_sigs.T.button_alert >><<span class="ocsforge_color_keyword"|end>>>>~This button trigger an alert~. ~When it is <<span class="odocwiki_inlinecode"|pressed>>~, the alert is shown~,
-      and when it is <<span class="odocwiki_inlinecode"|unpressed>>~, the alert is hidden~.
-**~Inherits**
-* <<a_api | class Ojw_button_sigs.T.button >>
-
-----

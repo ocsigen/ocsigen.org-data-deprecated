@@ -1,8 +1,0 @@
-<<code language="ocaml" | sig
-  type _type = TOGGLE_DISPLAY | MOVE_OFFSCREEN
-  type type_pre
-  val type_pre_of_type :
-    Goog.Ui.PopupBase._type -> Goog.Ui.PopupBase.type_pre
-  val type_of_type_pre :
-    Goog.Ui.PopupBase.type_pre -> Goog.Ui.PopupBase._type
-end >>

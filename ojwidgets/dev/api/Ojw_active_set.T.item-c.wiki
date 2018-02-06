@@ -1,6 +1,0 @@
-=Class type <<a_api_type | class type Ojw_active_set.T.item >> =
-<<pre class="ocsforge_color odocwiki_code"|<<span id="TYPEitem"|<<span class="ocsforge_color_keyword"|class type>> <<span class="ocsforge_color_name"|item>>>> <<span class="ocsforge_color_delimiter"|~=>> <<span class="ocsforge_color_keyword"|object>><<a_api text=".." | class type Ojw_active_set.T.item >><<span class="ocsforge_color_keyword"|end>>>>**~Inherits**
-* <<span class="odocwiki_inlinecode"|~Dom~_html~.element>>
-
-----
-<<pre class="ocsforge_color odocwiki_code"|<<span id="METHODenable"|<<span class="ocsforge_color_keyword"|method>> <<span class="odocwiki_name"|enable>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|unit <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|meth>>>>>><<pre class="ocsforge_color odocwiki_code"|<<span id="METHODdisable"|<<span class="ocsforge_color_keyword"|method>> <<span class="odocwiki_name"|disable>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|unit <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|meth>>>>>>

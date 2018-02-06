@@ -1,9 +1,0 @@
-=Class type <<a_api_type | class type Goog.Ui.menuItem >> =
-<<pre class="ocsforge_color odocwiki_code"|<<span id="TYPEmenuItem"|<<span class="ocsforge_color_keyword"|class type>> <<span class="ocsforge_color_name"|menuItem>>>> <<span class="ocsforge_color_delimiter"|~=>> <<span class="ocsforge_color_keyword"|object>><<a_api text=".." | class type Goog.Ui.menuItem >><<span class="ocsforge_color_keyword"|end>>>>**~Inherits**
-* <<a_api | class Goog.Ui.control >>
-
-----
-<<pre class="ocsforge_color odocwiki_code"|<<span id="METHODsetSelectable"|<<span class="ocsforge_color_keyword"|method>> <<span class="odocwiki_name"|setSelectable>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|bool <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>> <<span class="ocsforge_color_delimiter"| -> >> unit <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|meth>>>>>><<div class="odocwiki_info"|~Sets the menu item to be selectable or not~.
->>
-<<pre class="ocsforge_color odocwiki_code"|<<span id="METHODsetCheckable"|<<span class="ocsforge_color_keyword"|method>> <<span class="odocwiki_name"|setCheckable>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|bool <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>> <<span class="ocsforge_color_delimiter"| -> >> unit <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|meth>>>>>><<div class="odocwiki_info"|~Sets the menu item to be checkable or not~.
->>

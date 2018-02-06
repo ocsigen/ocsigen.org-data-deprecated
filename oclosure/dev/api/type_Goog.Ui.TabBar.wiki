@@ -1,8 +1,0 @@
-<<code language="ocaml" | sig
-  type location = TOP | BOTTOM | START | END
-  type location_pre
-  val location_pre_of_location :
-    Goog.Ui.TabBar.location -> Goog.Ui.TabBar.location_pre
-  val location_of_location_pre :
-    Goog.Ui.TabBar.location_pre -> Goog.Ui.TabBar.location
-end >>

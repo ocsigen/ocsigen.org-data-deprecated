@@ -1,4 +1,0 @@
-<<code language="ocaml" | object
-  method getEndDate : Goog.Date.date Js.t Js.meth
-  method getStartDate : Goog.Date.date Js.t Js.meth
-end >>

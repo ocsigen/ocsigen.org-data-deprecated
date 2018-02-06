@@ -1,4 +1,0 @@
-<<code language="ocaml" | object
-  method bold : Js.js_string Js.t Js.meth
-  method italic : Js.js_string Js.t Js.meth
-end >>

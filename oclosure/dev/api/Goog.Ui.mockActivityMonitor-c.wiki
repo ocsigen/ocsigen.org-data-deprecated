@@ -1,7 +1,0 @@
-=Class type <<a_api_type | class type Goog.Ui.mockActivityMonitor >> =
-<<pre class="ocsforge_color odocwiki_code"|<<span id="TYPEmockActivityMonitor"|<<span class="ocsforge_color_keyword"|class type>> <<span class="ocsforge_color_name"|mockActivityMonitor>>>> <<span class="ocsforge_color_delimiter"|~=>> <<span class="ocsforge_color_keyword"|object>><<a_api text=".." | class type Goog.Ui.mockActivityMonitor >><<span class="ocsforge_color_keyword"|end>>>>**~Inherits**
-* <<a_api | class Goog.Ui.activityMonitor >>
-
-----
-<<pre class="ocsforge_color odocwiki_code"|<<span id="METHODsimulateEvent"|<<span class="ocsforge_color_keyword"|method>> <<span class="odocwiki_name"|simulateEvent>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<a_api text="Goog.Events.eventType" | type Goog.Events.eventType >> <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>> <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|opt>> <<span class="ocsforge_color_delimiter"| -> >> unit <<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|meth>>>>>><<div class="odocwiki_info"|~Simulates an event that updates the user to being non~-idle~.
->>

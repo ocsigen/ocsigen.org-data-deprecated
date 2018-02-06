@@ -1,8 +1,0 @@
-<<code language="ocaml" | object
-  method clone : Goog.Math.box Js.t Js.meth
-  method contains : Goog.Math.box Js.t -> bool Js.t Js.meth
-  method expand :
-    int ->
-    int Js.opt -> int Js.opt -> int Js.opt -> Goog.Math.box Js.t Js.meth
-  method toString : Js.js_string Js.t Js.meth
-end >>

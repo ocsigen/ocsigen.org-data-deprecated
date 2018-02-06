@@ -1,1 +1,0 @@
-<<code language="ocaml" | object method getNexUniqueId : Js.js_string Js.t Js.meth end >>
