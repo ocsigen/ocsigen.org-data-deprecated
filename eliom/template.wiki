@@ -3,8 +3,17 @@
 
 @@class="logo-ocsigen"@@[[site:/|{{site:/img/ocsigen-white.svg|Ocsigen}}]]
 
-*[[site:/|Home]]
-*@@class="mainmenu"@class="mainmenu-current"@@[[wiki("eliom"):|Eliom]]
+*@@class="mainmenu"@ @@[[site:/|Home]]
+*@@class="mainmenu-current"@@[[wiki("eliom"):|Eliom]]
+*[[wiki("js_of_ocaml"):|Js_of_ocaml]]
+*[[wiki("lwt"):|Lwt]]
+*[[wiki("tyxml"):|Tyxml]]
+*[[wiki("ocsigen-start"):|Start]]
+
+<<drawer|
+
+*@@class="drawermainmenu"@ @@[[site:/|Home]]
+*@@class="drawermainmenu-current"@@[[wiki("eliom"):|Eliom]]
 *[[wiki("js_of_ocaml"):|Js_of_ocaml]]
 *[[wiki("ocsigenserver"):|Server]]
 *[[wiki("lwt"):|Lwt]]
@@ -13,8 +22,16 @@
 *[[wiki("ocsigen-start"):|Start]]
 *[[site:/projects|Other projects]]
 
-  >>
+>> <<|drawer>>
 
+>> <<|page-header>>
+
+<<client-server-switch>>
+<<reason-switch>>
+
+
+<<div class="twocols" |
+<<div class="leftcol" |
 <<div class="version-selector" |
 Version
 <<div class="version-selector-versions" |
@@ -35,14 +52,15 @@ Version
 <<a_manual project="eliom" version="1.2.2"|1.2.2>>
 <<a_manual project="eliom" version="1.1.0"|1.1.0>>
 <<a_manual project="eliom" version="dev"|dev>>
->>
->>
-
-<<client-server-switch>>
-<<reason-switch>>
+>> <<|version-selector-versions>>
+>> <<|version-selector>>
 
 <<googlesearch>>
+<<doctree>>
+>> <<|leftcol>>
 
+<<div class="rightcol" |
 <<content>>
-
->>
+>> <<|rightcol>>
+>> <<|twocols>>
+>> <<|project-page>>
