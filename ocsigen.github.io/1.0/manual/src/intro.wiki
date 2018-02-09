@@ -1,3 +1,131 @@
-=Ocsigen.org
+  <<div class="page-header"|
 
-This is the new Web site!
+@@class="logo-ocsigen"@@[[site:/|{{site:/img/ocsigen-white.svg|Ocsigen}}]]
+
+*@@class="mainmenu"@class="mainmenu-current"@@[[site:/|Home]]
+*[[wiki("eliom"):|Eliom]]
+*[[wiki("js_of_ocaml"):|Js_of_ocaml]]
+*[[wiki("lwt"):|Lwt]]
+*[[wiki("tyxml"):|Tyxml]]
+*[[wiki("ocsigen-start"):|Start]]
+
+<<drawer|
+
+*@@class="drawermainmenu"@class="drawermainmenu-current"@@[[site:/|Home]]
+*[[wiki("eliom"):|Eliom]]
+*[[wiki("js_of_ocaml"):|Js_of_ocaml]]
+*[[wiki("ocsigenserver"):|Server]]
+*[[wiki("lwt"):|Lwt]]
+*[[wiki("tyxml"):|Tyxml]]
+*[[wiki("ocsigen-toolkit"):|Toolkit]]
+*[[wiki("ocsigen-start"):|Start]]
+*[[site:/projects|Other projects]]
+
+>> <<|drawer>>
+
+  >> <<|page-header>>
+
+<<div class="main-page-section main-page-section-header"|
+
+==Site under construction. Please use http://ocsigen.org for now.
+
+= Multi-tier programming for Web and mobile apps
+== Android, iOS, Server & client in one piece of code
+== Powerful type-checking with OCaml/Reason
+
+[[@@class="main-button"@@wiki("tuto"):manual/start|Your first app in 5 minutes ...]]
+
+>>
+
+<<div class="main-page-section main-page-section-partners"|
+
+*@@class="sponsormain"@ @@ [[http://besport.com|{{@@class="logo-besport"@@site:img/besport.svg|Be Sport}}]]
+* [[http://www.univ-paris-diderot.fr|{{@@class="logo-diderot"@@site:img/diderot.png|Université Paris Diderot}}]]
+
+* [[http://www.cnrs.fr|{{@@class="logo-cnrs"@@site:/img/cnrs.png|CNRS}}]]
+* [[http://www.irill.org|{{@@class="logo-irill"@@site:/img/irill.png|IRILL}}]]
+
+* [[http://www.inria.fr|{{@@class="logo-inria"@@site:/img/inria.png|Inria}}]]
+* [[http://www.systematic-paris-region.org|{{@@class="logo-systematic"@@site:/img/systematic.png|Systematic}}]]
+
+>>
+
+<<div class="main-page-section main-page-section-multitier"|
+<<div class="main-page-section-content"|
+== Eliom: Multi-tier language for multi-platform apps
+{{@@class="main-page-schema-multitier"@@site:/img/schema-multitier.svg|Multi-tier & Multi-platform}}
+>>
+>>
+
+<<div class="main-page-section main-page-section-js_of_ocaml"|
+<<div class="main-page-section-content"|
+== Js_of_ocaml: Optimizing compiler for OCaml/Reason to Javascript
+{{@@class="main-page-schema-js_of_ocaml"@@site:/img/schema-js_of_ocaml.svg|Js_of_ocaml}}
+>>
+>>
+
+<<div class="main-page-section main-page-section-projects"|
+<<div class="main-page-section-content"|
+
+==Main projects
+
+<<div class="main-page-projects"|
+<<link wiki="js_of_ocaml"|
+<<div class="main-page-project"|
+  ===Js_of_ocaml
+
+  Optimizing compiler from OCaml/Reason to Javascript.
+>>
+>>
+<<link wiki="eliom"|
+<<div class="main-page-project"|
+  ===Eliom
+
+  Multi-tier language and framework for multi-platform apps.
+>>
+>>
+<<link wiki="ocsigenserver"|
+<<div class="main-page-project"|
+  ===Server
+
+  Full-featured and extensible Web Server.
+>>
+>>
+<<link wiki="lwt"|
+<<div class="main-page-project"|
+  ===Lwt
+
+  Cooperative threading library.
+>>
+>>
+<<link wiki="eliom"|
+<<div class="main-page-project"|
+  ===Tyxml
+
+  Static type-checking for HTML and SVG.
+>>
+>>
+<<link wiki="eliom"|
+<<div class="main-page-project"|
+  ===Ocsigen Toolkit
+
+  Native OCaml widgets for browsers (client side only or client-server).
+>>
+>>
+<<link wiki="eliom"|
+<<div class="main-page-project"|
+  ===Start
+
+  A full-featured app to use as code example for your own projects.
+>>
+>>
+
+>>
+>>
+>>
+
+<<div class="main-page-section main-page-section-about"|
+* Who does Ocsigen?
+* Research papers
+
+>>
