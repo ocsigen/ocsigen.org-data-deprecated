@@ -1,4 +1,4 @@
-  <<div class="page-header"|
+<<div class="page-header"|
 
 @@class="logo-ocsigen"@@[[site:/|{{site:/img/ocsigen-white.svg|Ocsigen}}]]
 
@@ -43,6 +43,7 @@
 * [[http://www.univ-paris-diderot.fr|{{@@class="logo-diderot"@@site:img/diderot.png|Université Paris Diderot}}]]
 
 * [[http://www.cnrs.fr|{{@@class="logo-cnrs"@@site:/img/cnrs.png|CNRS}}]]
+* [[http://www.irif.fr|{{@@class="logo-irif"@@site:/img/irif.svg|IRIF}}]]
 * [[http://www.irill.org|{{@@class="logo-irill"@@site:/img/irill.png|IRILL}}]]
 
 * [[http://www.inria.fr|{{@@class="logo-inria"@@site:/img/inria.png|Inria}}]]
@@ -53,21 +54,89 @@
 <<div class="main-page-section main-page-section-multitier"|
 <<div class="main-page-section-content"|
 == Eliom: Multi-tier language for multi-platform apps
-{{@@class="main-page-schema-multitier"@@site:/img/schema-multitier.svg|Multi-tier & Multi-platform}}
+
+Eliom extends OCaml/Reason into a multi-tier language
+making it possible to write your whole application (client and server parts)
+as a single program!
+
+It can run as a Web app, or as a mobile app (based on Web technologies).
+
+<<div class="main-page-section-multitier-schema"|
+
+{{@@class="main-page-schema-multitier"@@site:/img/multitier.jpg|Multi-tier}}
+
+{{@@class="main-page-schema-multiplatform"@@site:/img/multiplatform.png|Multi-platform}}
+
+@@class="main-page-section-multitier-one-code"@@1 langage\\1 code
+
+@@class="main-page-section-multitier-multitier"@@Client & Server
+
+@@class="main-page-section-multitier-multiplatform"@@Web, Android, iOS
+
+>>
 >>
 >>
 
 <<div class="main-page-section main-page-section-js_of_ocaml"|
 <<div class="main-page-section-content"|
 == Js_of_ocaml: Optimizing compiler for OCaml/Reason to Javascript
-{{@@class="main-page-schema-js_of_ocaml"@@site:/img/schema-js_of_ocaml.svg|Js_of_ocaml}}
+
+Js_of_ocaml translates your OCaml or Reason programs to Javascript.
+You can choose between readable or optimized JavaScript.
+
+Js_of_ocaml operates from compiled OCaml bytecode programs.
+You don't even need the source code, and you don't need to recompile
+all the OCaml libraries you use!
+
+
+<<div class="main-page-section-js_of_ocaml-schema"|
+<<code language="ocaml" class="main-page-section-js_of_ocaml-ocaml darkcode"|
+let fib num =
+  let rec aux num prec2 prec =
+    if num = 0
+    then prec
+    else
+      aux (num - 1) prec (prec + prec2)
+  in aux num 1 1
+>>
+
+<<div|
+<<code language="javascript" class="main-page-section-js_of_ocaml-js darkcode"|
+function fib(num)
+ {var num$0=num,prec2=1,prec=1;
+  for(;;)
+   {if(0 === num$0)return prec;
+    var
+     prec$0=prec + prec2 | 0,
+     num$1=num$0 - 1 | 0,
+     num$0=num$1,
+     prec2=prec,
+     prec=prec$0;
+     continue}}
+>>
+
+<<code language="javascript" class="main-page-section-js_of_ocaml-js darkcode"|
+
+(function(b){"use strict";var
+a=b.jsoo_runtime;a.caml_register_global(0,[0,
+function(d){var b=d,c=1,a=1;for(;;){if(0===b)
+return a;var b=b-1|0,e=a+c|0,c=a,a=e;continue
+}}],"Fib");return}(function(){return this}()));
+>>
+>>
+
+<<div class="main-page-section-js_of_ocaml-arrow1"|➔>>
+<<div class="main-page-section-js_of_ocaml-arrow2"|➔>>
+>>
+
+
 >>
 >>
 
 <<div class="main-page-section main-page-section-projects"|
 <<div class="main-page-section-content"|
-
 ==Main projects
+>>
 
 <<div class="main-page-projects"|
 <<link wiki="js_of_ocaml"|
@@ -75,6 +144,7 @@
   ===Js_of_ocaml
 
   Optimizing compiler from OCaml/Reason to Javascript.
+
 >>
 >>
 <<link wiki="eliom"|
@@ -82,6 +152,7 @@
   ===Eliom
 
   Multi-tier language and framework for multi-platform apps.
+
 >>
 >>
 <<link wiki="ocsigenserver"|
@@ -122,10 +193,11 @@
 
 >>
 >>
->>
 
 <<div class="main-page-section main-page-section-about"|
-* Who does Ocsigen?
+<<div class="main-page-section-content"|
+* [[site:/credits|Who does Ocsigen?]]
 * Research papers
 
+>>
 >>

@@ -1,0 +1,134 @@
+<<article id="download"|
+<<header |=Credits>>
+
+==Contact
+
+You can send a (private) e-mail to the [[mailto:contact@ocsigen.org|development team]]. However, please prefer the [[http://sympa.mancoosi.univ-paris-diderot.fr/wws/info/ocsigen|public mailing-list]]. You can  use these addresses for all the projects hosted here.
+
+==Authors and contributors
+
+**Vincent Balat**
+    //(project leader, Server, Eliom, Ocsigen Start, Ocsigen Toolkit, ...)// \\
+**Jérôme Vouillon**
+    //(Lwt, Web server, Js_of_ocaml, Eliom, O'Closure, ...)// \\
+**Vasilis Papavasileiou**
+    //(Eliom, Server, Eliom-base-app, Ocsigen Toolkit,...)// \\
+**Gabriel Radanne**
+    //(Tyxml, Semantics of client-server Eliom applications, Eliom, etc.)//\\
+**Hugo Heuzard**
+    //(Js_of_ocaml, Eliom)// \\
+**Danny Willems**
+    //(Ocsigen Start)// \\
+**Benedikt Becker**
+    //(Ocsimore, Eliom client-server syntax, ...)//\\
+**Boris Yakobowski**
+    //(Ocsimore, module Extendconfiguration, Ocsigen server...)// \\
+**Pierre Chambart**
+    //(Comet, Eliom client, ...)//\\
+**Grégoire Henry**
+    //(safe unmarshalling of client data, Eliom client, ...)//\\
+**Jérémie Dimino**
+    //(Lwt)// \\
+**Benjamin Canou**
+    //(O'Browser, Eliom client, Goji)// \\
+**Jacques-Pascal Deplaix**
+    //(Ocsimore, ...)// \\
+**Jérôme Maloberti**
+    //(GODI packaging, OcCDuce)//\\
+**Raphaël Proust**
+    //(Ocsforge, Eliom client, Comet)//\\
+**Charly Chevalier**
+    //(OJWidgets, Eliom widgets, Eliom base app)//\\
+**Romain Calascibetta**
+    //(Server)//\\
+**Enguerrand Decorne**
+    //(Eliom Widgets)//\\
+**Grégoire Lionnet**
+    //(Eliom mobile)//\\
+**Christophe Lecointe**
+    //(OJQuery, Goji)//\\
+**Arnaud Parant**
+    //(Eliom mobile, Graffiti 2)//\\
+**Stéphane Glondu**
+    //(Configuration file, Findlib integration, access control, HTTP authentication, Debian package, ...)// \\
+**Gabriel Kerneis**
+    //(XHTML syntax extension for OCaml 3.10, Ocsipersist with SQLite, CGI module, forms in Eliom, deflatemod, ...)// \\
+**Denis Berthod**
+    //(HTTP protocol, Web server)//\\
+**Jaap Boender**
+    //(Ocsimore, NetBSD and Godi packages)// \\
+**Gabriel Scherer**
+    //(Macaque)// \\
+**Gabriel Cardoso**
+    //(O'Closure)// \\
+**Baptiste Strazzulla**
+    //(Eliom destillery, Makefile for client server applications, documentation, ...)//\\
+**Jean-Henri Granarolo**
+    //(Ocsforge)//\\
+**Simon Castellan**
+    //(HTML5, OpenID, SVG)// \\
+**Barbara Lepage**
+    //(Code samples, documentation)// \\
+**Séverine Maingaud**
+    //(Eliom widgets, ...)// \\
+**Piero Furiesi**
+    //(Ocsimore)// \\
+**Thorsten Ohl**
+    //(most of the functions generating XHTML (xML and xHTML modules))//\\
+**Mauricio Fernandez**
+    //(Xhtmlcompact, static linking of extensions and Eliom modules)// \\
+**Michael Laporte**
+    //(Meow chat)// \\
+**Nataliya Guts**
+    //(Web server, HTTPS)// \\
+**Archibald Pontier**
+    //(Atom, Pubsubhubbub)// \\
+**Jérôme Velleine**
+    //(CGI module)// \\
+**Charles Oran**
+    //(O'Closure)// \\
+**Pierre Clairambault**
+    //(Lwt_lib, Gentoo package, configure script, ...)// \\
+**Cécile Herbelin**
+    //HTML5, Benchmarks// \\
+
+==Other team members==
+
+**Emmanuel Chailloux**
+    //(mentoring)//
+**Raphaëlle Crubillé**
+    //(dynamic javascript generation)//\\
+**Till Varoquaux**
+    //(javascript generation)// \\
+**Fabien Benureau**
+    //(javascript generation)//
+
+===Acknowledgements==
+To all authors and contributors, and to:
+* Roberto Di Cosmo,
+* Juliusz Chroboczek //(HTTP)//,
+* Alain Frisch //(OCamlDuce version, Xhtml typing, natdynlink, etc.)//,
+* Jean-Vincent Loddo,
+* Dario Teixeira //(many comments on documentation, bug reports, suggestions~ ...)//,
+* Janne Hellsten //(Miniwiki example, many comments, suggestions, bugfixes)//,
+* William Le Ferrand,
+* Samuel Mimram //(SSL, Debian package)//,
+* Grégoire Henry //(bugfixes in OcamlSSL, etc.)//,
+* Stefano Zacchiroli,
+* Richard Jones //(Fedora packages)//,
+* Veaceslav Grecea //(ALTLinux packages)//,
+* Martin Bahier //(Proofreading the documentation)//,
+* Arnaud Spiwack //(Jocsigen experiment)//,
+* Antoine Popineau //(CSS and images for directory listing)//,
+* David Mentré,
+* Emmanuel Chailloux,
+* Christophe Fouqueré,
+* Alexandre Miquel,
+* Russ Harmer,
+* Stéphane Dalmas //(patch for {{{<select>}}})//,
+* INRIA's Gallium team //(for OCaml)//,
+* Gerd Stolpmann //(for Ocamlnet)//,
+* All the BeSport team,
+* and thanks all the users who sent very useful comments, and to Vincent's (other) students who took part in the very first version: Yann Binot, Julien Chapuis, Arnaud Delattre, Alexandre Érisay, Julien Mineraud (Xhtmlpp - xhtml pretty-printing)
+
+>>
