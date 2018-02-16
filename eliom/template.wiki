@@ -22,6 +22,8 @@
 *[[wiki("ocsigen-start"):|Start]]
 *[[site:/projects|Other projects]]
 
+<<doctree>>
+
 >> <<|drawer>>
 
 >> <<|page-header>>
