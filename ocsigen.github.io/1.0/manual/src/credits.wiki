@@ -1,9 +1,13 @@
-<<article id="download"|
+<<div class="project-page" |
+<<div class="rightcol" |
+
 <<header |=Credits>>
 
 ==Contact
 
-You can send a (private) e-mail to the [[mailto:contact@ocsigen.org|development team]]. However, please prefer the [[http://sympa.mancoosi.univ-paris-diderot.fr/wws/info/ocsigen|public mailing-list]]. You can  use these addresses for all the projects hosted here.
+You can send a (private) e-mail to the [[mailto:contact@ocsigen.org|development team]]. However, please prefer [[https://discuss.ocaml.org|OCaml's discuss]], with tag Ocsigen, for all your technical questions.
+You can also have a look at the archives of the [[http://sympa.mancoosi.univ-paris-diderot.fr/wws/info/ocsigen|public mailing-list]] (deprecated).
+
 
 ==Authors and contributors
 
@@ -131,4 +135,5 @@ To all authors and contributors, and to:
 * All the BeSport team,
 * and thanks all the users who sent very useful comments, and to Vincent's (other) students who took part in the very first version: Yann Binot, Julien Chapuis, Arnaud Delattre, Alexandre Érisay, Julien Mineraud (Xhtmlpp - xhtml pretty-printing)
 
+>>
 >>

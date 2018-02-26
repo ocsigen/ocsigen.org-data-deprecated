@@ -1,1 +1,37 @@
+<<div class="page-header"|
+
+@@class="logo-ocsigen"@@[[site:/|{{site:/img/ocsigen-white.svg|Ocsigen}}]]
+
+*@@class="mainmenu"@class="mainmenu-current"@@[[site:/|Home]]
+*[[wiki("eliom"):|Eliom]]
+*[[wiki("js_of_ocaml"):|Js_of_ocaml]]
+*[[wiki("lwt"):|Lwt]]
+*[[wiki("tyxml"):|Tyxml]]
+*[[wiki("ocsigen-start"):|Start]]
+
+<<drawer|
+
+*@@class="drawermainmenu"@class="drawermainmenu-current"@@[[site:/|Home]]
+*[[wiki("eliom"):|Eliom]]
+*[[wiki("js_of_ocaml"):|Js_of_ocaml]]
+*[[wiki("ocsigenserver"):|Server]]
+*[[wiki("lwt"):|Lwt]]
+*[[wiki("tyxml"):|Tyxml]]
+*[[wiki("ocsigen-toolkit"):|Toolkit]]
+*[[wiki("ocsigen-start"):|Start]]
+*[[site:/projects|Other projects]]
+
+>> <<|drawer>>
+
+  >> <<|page-header>>
+
 <<content>>
+
+
+<<div class="main-page-section main-page-section-about"|
+<<div class="main-page-section-content"|
+* [[site:/credits|Who does Ocsigen?]]
+* Research papers
+
+>>
+>>

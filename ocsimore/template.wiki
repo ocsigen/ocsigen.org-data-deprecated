@@ -1,1 +1,48 @@
+<<div class="project-page"|
+<<div class="page-header"|
+
+@@class="logo-ocsigen"@@[[site:/|{{site:/img/ocsigen-white.svg|Ocsigen}}]]
+
+*@@class="mainmenu"@ @@[[site:/|Home]]
+*[[wiki("eliom"):|Eliom]]
+*[[wiki("js_of_ocaml"):|Js_of_ocaml]]
+*[[wiki("lwt"):|Lwt]]
+*[[wiki("tyxml"):|Tyxml]]
+*[[wiki("ocsigen-start"):|Start]]
+
+<<drawer|
+
+*@@class="drawermainmenu"@ @@[[site:/|Home]]
+*[[wiki("eliom"):|Eliom]]
+*[[wiki("js_of_ocaml"):|Js_of_ocaml]]
+*[[wiki("ocsigenserver"):|Server]]
+*[[wiki("lwt"):|Lwt]]
+*[[wiki("tyxml"):|Tyxml]]
+*[[wiki("ocsigen-toolkit"):|Toolkit]]
+*[[wiki("ocsigen-start"):|Start]]
+*[[site:/projects|Other projects]]
+
+<<doctree>>
+
+
+>> <<|drawer>>
+
+>> <<|page-header>>
+
+<<client-server-switch>>
+<<reason-switch>>
+
+
+<<div class="twocols" |
+<<div class="leftcol" |
+<<docversion>>
+
+<<googlesearch>>
+<<doctree>>
+>> <<|leftcol>>
+
+<<div class="rightcol" |
 <<content>>
+>> <<|rightcol>>
+>> <<|twocols>>
+>> <<|project-page>>
