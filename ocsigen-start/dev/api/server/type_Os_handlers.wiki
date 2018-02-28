@@ -13,6 +13,10 @@
     string ->
     unit ->
     'a Eliom_registration.application_content Eliom_registration.kind Lwt.t
+  val confirm_code_signup_handler :
+    unit -> string * (string * (string * string)) -> unit Lwt.t
+  val confirm_code_extra_handler : unit -> string -> unit Lwt.t
+  val confirm_code_recovery_handler : unit -> string -> unit Lwt.t
   val forgot_password_handler :
     (unit, unit, Eliom_service.get, Eliom_service.att, 'a,
      Eliom_service.non_ext, 'b, [< `WithSuffix | `WithoutSuffix ], unit,

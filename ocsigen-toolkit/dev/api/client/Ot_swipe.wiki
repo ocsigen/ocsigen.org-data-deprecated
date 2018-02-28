@@ -1,7 +1,9 @@
 =Module <<a_api_type subproject="client" | module Ot_swipe >> =
-<<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module>> <<span class="ocsforge_color_uid"|<<span class="ocsforge_color_uid"|Ot_swipe>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="ocsforge_color_keyword"|sig>><<a_api subproject="client" text=".." | module Ot_swipe >><<span class="ocsforge_color_keyword"|end>>>><<span class="odocwiki_inlinecode"|bind ~~compute~_final~_pos elt>> makes <<span class="odocwiki_inlinecode"|elt>> swipable on touch screens~.
+<<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module>> <<span class="ocsforge_color_uid"|<<span class="ocsforge_color_uid"|Ot_swipe>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="ocsforge_color_keyword"|sig>><<a_api subproject="client" text=".." | module Ot_swipe >><<span class="ocsforge_color_keyword"|end>>>><<span class="odocwiki_inlinecode"|bind ~~compute~_final~_pos elt>> makes <<span class="odocwiki_inlinecode"|elt>> left~-right
+   swipable on touch screens~.
    <<span class="odocwiki_inlinecode"|compute~_final~_pos>> is a function that will compute the final position
    of the element w~.r~.t~. the position where it has been released ~(in pixels~)~.
+   ~Use <<span class="odocwiki_inlinecode"|~(fun ~_ p ~-~> p~)>> if you want it to stay where it was released~.
 
 
    ~Use <<span class="odocwiki_inlinecode"|~?min>> and <<span class="odocwiki_inlinecode"|~?max>> if you want to limit the move~.

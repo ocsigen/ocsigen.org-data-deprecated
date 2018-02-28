@@ -2,6 +2,12 @@
 
 |@@ @style="tet-align: left;"@@\\L|
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="List"| module Ot_lib.List >> ~[<<a_api subproject="client" | module Ot_lib >>~]||
+|@@ @style="tet-align: left;"@@\\M|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Make"| module Ot_page_transition.Make >> ~[<<a_api subproject="client" | module Ot_page_transition >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|install~_global~_handler t take~_screenshot animation~_type>>
+    creates a global onchangepage handler which is registered
+    recursively and applies to all pages~.
+>>
+|
 |@@ @style="tet-align: left;"@@\\O|
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Ot_buttons"| module Ot_buttons >> ||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Ot_calendar"| module Ot_calendar >> |<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|intl>> is the type of internationalization specifiers~.
@@ -26,6 +32,9 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Ot_noderesize"| module Ot_noderesize >> |<<div class="odocwiki_info"|~Get an event when an element~'s size changes
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Ot_page_transition"| module Ot_page_transition >> |<<div class="odocwiki_info"|~This widget helps realize page transition with screenshots~.
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Ot_picture_uploader"| module Ot_picture_uploader >> |<<div class="odocwiki_info"|~Picture uploader widget
 >>
 |
@@ -48,7 +57,8 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Ot_style"| module Ot_style >> |<<div class="odocwiki_info"|~This module is an interface to get~Computed~Style~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Ot_swipe"| module Ot_swipe >> |<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|bind ~~compute~_final~_pos elt>> makes <<span class="odocwiki_inlinecode"|elt>> swipable on touch screens~.
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Ot_swipe"| module Ot_swipe >> |<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|bind ~~compute~_final~_pos elt>> makes <<span class="odocwiki_inlinecode"|elt>> left~-right
+   swipable on touch screens~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Ot_time_picker"| module Ot_time_picker >> |<<div class="odocwiki_info"|~This module implements a clock~-style time picker~.

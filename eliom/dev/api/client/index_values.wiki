@@ -631,6 +631,7 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="l5_s"| value Eliom_shared_sigs.S.Lwt.l5_s >> ~[<<a_api subproject="client" | module Eliom_shared_sigs.S.Lwt >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="l6"| value Eliom_shared_sigs.S.l6 >> ~[<<a_api subproject="client" | module Eliom_shared_sigs.S >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="l6_s"| value Eliom_shared_sigs.S.Lwt.l6_s >> ~[<<a_api subproject="client" | module Eliom_shared_sigs.S.Lwt >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="last_page_id"| value Eliom_client_core.last_page_id >> ~[<<a_api subproject="client" | module Eliom_client_core >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="lazy_form"| value Eliom_content_sigs.LINKS_AND_FORMS.lazy_form >> ~[<<a_api subproject="client" | module Eliom_content_sigs.LINKS_AND_FORMS >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="left"| value Eliom_content.Html.Manip.SetCss.left >> ~[<<a_api subproject="client" | module Eliom_content.Html.Manip.SetCss >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="left"| value Eliom_content.Html.Manip.Css.left >> ~[<<a_api subproject="client" | module Eliom_content.Html.Manip.Css >>~]||
@@ -796,7 +797,6 @@
         if <<span class="odocwiki_inlinecode"|elt>> is not the last~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="next_page"| value Eliom_client_core.next_page >> ~[<<a_api subproject="client" | module Eliom_client_core >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="next_state_id"| value Eliom_client_core.next_state_id >> ~[<<a_api subproject="client" | module Eliom_client_core >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="node"| value Eliom_content_core.Html.R.node >> ~[<<a_api subproject="client" | module Eliom_content_core.Html.R >>~]|<<div class="odocwiki_info"|the function <<span class="odocwiki_inlinecode"|node s>> create an ~H~T~M~L~5 <<span class="odocwiki_inlinecode"|elt>> from a signal <<span class="odocwiki_inlinecode"|s>>~.
 >>
@@ -1120,6 +1120,7 @@
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="scroll_to_fragment"| value Eliom_client_core.scroll_to_fragment >> ~[<<a_api subproject="client" | module Eliom_client_core >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="section"| value Eliom_client_core.section >> ~[<<a_api subproject="client" | module Eliom_client_core >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="section_page"| value Eliom_client_core.section_page >> ~[<<a_api subproject="client" | module Eliom_client_core >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="select"| value Eliom_form_sigs.S.select >> ~[<<a_api subproject="client" | module Eliom_form_sigs.S >>~]|<<div class="odocwiki_info"|~Creates a <<span class="odocwiki_inlinecode"|~<select~>>> tag~.
 >>
 |
@@ -1171,6 +1172,7 @@
       in ~Eliom~_react~, for example because a channel is full or closed~.
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="set_page_status"| value Eliom_client_core.set_page_status >> ~[<<a_api subproject="client" | module Eliom_client_core >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="set_queue_size"| value Eliom_bus.set_queue_size >> ~[<<a_api subproject="client" | module Eliom_bus >>~]|<<div class="odocwiki_info"|~To reduce traffic from the client busses try to send messages by
     group~.
 >>
@@ -1269,6 +1271,7 @@
     regular signal with initial value <<span class="odocwiki_inlinecode"|init>>~.
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="to_string"| value Eliom_client_core.Page_status_t.to_string >> ~[<<a_api subproject="client" | module Eliom_client_core.Page_status_t >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="toggle"| value Eliom_content.Html.Manip.Class.toggle >> ~[<<a_api subproject="client" | module Eliom_content.Html.Manip.Class >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="toggle"| value Eliom_content.Svg.Manip.Class.toggle >> ~[<<a_api subproject="client" | module Eliom_content.Svg.Manip.Class >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="toggle2"| value Eliom_content.Html.Manip.Class.toggle2 >> ~[<<a_api subproject="client" | module Eliom_content.Html.Manip.Class >>~]||
@@ -1334,6 +1337,7 @@
     <<span class="odocwiki_inlinecode"|~Eliom~_tools~.~F~.html>>~.
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="with_new_page"| value Eliom_client_core.with_new_page >> ~[<<a_api subproject="client" | module Eliom_client_core >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="with_progress_cursor"| value Eliom_client_core.with_progress_cursor >> ~[<<a_api subproject="client" | module Eliom_client_core >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="wordSpacing"| value Eliom_content.Html.Manip.SetCss.wordSpacing >> ~[<<a_api subproject="client" | module Eliom_content.Html.Manip.SetCss >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="wordSpacing"| value Eliom_content.Html.Manip.Css.wordSpacing >> ~[<<a_api subproject="client" | module Eliom_content.Html.Manip.Css >>~]||

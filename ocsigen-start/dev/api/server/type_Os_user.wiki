@@ -41,16 +41,17 @@
   val get_actionlinkkey_info : string -> Os_types.Action_link_key.info Lwt.t
   val userid_of_email : string -> Os_types.User.id Lwt.t
   val emails_of_userid : Os_types.User.id -> string list Lwt.t
-  val email_of_userid : Os_types.User.id -> string Lwt.t
+  val email_of_userid : Os_types.User.id -> string option Lwt.t
   val emails_of_user : Os_types.User.t -> string list Lwt.t
-  val email_of_user : Os_types.User.t -> string Lwt.t
+  val email_of_user : Os_types.User.t -> string option Lwt.t
   val get_language : Os_types.User.id -> string option Lwt.t
   val get_users : ?pattern:string -> unit -> Os_types.User.t list Lwt.t
   val create :
     ?password:string ->
     ?avatar:string ->
     ?language:string ->
-    firstname:string -> lastname:string -> string -> Os_types.User.t Lwt.t
+    ?email:string ->
+    firstname:string -> lastname:string -> unit -> Os_types.User.t Lwt.t
   val update :
     ?password:string ->
     ?avatar:string ->

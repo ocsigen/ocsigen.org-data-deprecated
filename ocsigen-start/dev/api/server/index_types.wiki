@@ -40,6 +40,8 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="notification"| type Os_notif.ARG_SIMPLE.notification >> ~[<<a_api subproject="server" | module Os_notif.ARG_SIMPLE >>~]||
 |@@ @style="tet-align: left;"@@\\S|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="server_notif"| type Os_notif.ARG.server_notif >> ~[<<a_api subproject="server" | module Os_notif.ARG >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="sms_error"| type Os_connect_phone.sms_error >> ~[<<a_api subproject="server" | module Os_connect_phone >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="sms_error_core"| type Os_connect_phone.sms_error_core >> ~[<<a_api subproject="server" | module Os_connect_phone >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="success"| type Os_fcm_notif.Response.Results.success >> ~[<<a_api subproject="server" | module Os_fcm_notif.Response.Results >>~]|<<div class="odocwiki_info"|~The type representing a success result~.
 >>
 |
@@ -56,6 +58,8 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="t"| type Os_platform.t >> ~[<<a_api subproject="server" | module Os_platform >>~]|<<div class="odocwiki_info"|~Platform type~.
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="t"| type Os_lib.Email_or_phone.Almost.t >> ~[<<a_api subproject="server" | module Os_lib.Email_or_phone.Almost >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="t"| type Os_lib.Email_or_phone.t >> ~[<<a_api subproject="server" | module Os_lib.Email_or_phone >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="t"| type Os_group.t >> ~[<<a_api subproject="server" | module Os_group >>~]|<<div class="odocwiki_info"|~Type alias to <<a_api subproject="server" | type Os_types.Group.t >> to allow to use <<span class="odocwiki_inlinecode"|~Os~_group~.t>>~.
 >>
 |
@@ -86,4 +90,7 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="value"| type Os_request_cache.Cache_sig.value >> ~[<<a_api subproject="server" | module Os_request_cache.Cache_sig >>~]|<<div class="odocwiki_info"|~The type of the value
 >>
 |
+|@@ @style="tet-align: left;"@@\\Y|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="y"| type Os_lib.Email_or_phone.Almost.y >> ~[<<a_api subproject="server" | module Os_lib.Email_or_phone.Almost >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="y"| type Os_lib.Email_or_phone.y >> ~[<<a_api subproject="server" | module Os_lib.Email_or_phone >>~]||
 \\

@@ -20,7 +20,8 @@
     ?password:string ->
     ?avatar:string ->
     ?language:string ->
-    firstname:string -> lastname:string -> string -> Os_types.User.id Lwt.t
+    ?email:string ->
+    firstname:string -> lastname:string -> unit -> Os_types.User.id Lwt.t
   val update :
     ?password:string ->
     ?avatar:string ->
@@ -35,6 +36,8 @@
     userid:Os_types.User.id -> language:string -> unit Lwt.t
   val verify_password :
     email:string -> password:string -> Os_types.User.id Lwt.t
+  val verify_password_phone :
+    number:string -> password:string -> Os_types.User.id Lwt.t
   val user_of_userid :
     Os_types.User.id ->
     (Os_types.User.id * string * string * string option * bool *
@@ -42,7 +45,9 @@
     Lwt.t
   val get_actionlinkkey_info : string -> Os_types.Action_link_key.info Lwt.t
   val emails_of_userid : Os_types.User.id -> string list Lwt.t
-  val email_of_userid : Os_types.User.id -> string Lwt.t
+  val emails_of_userid_with_status :
+    Os_types.User.id -> (string * bool) list Lwt.t
+  val email_of_userid : Os_types.User.id -> string option Lwt.t
   val is_main_email : userid:Os_types.User.id -> email:string -> bool Lwt.t
   val add_email_to_user :
     userid:Os_types.User.id -> email:string -> unit Lwt.t

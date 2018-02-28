@@ -2,9 +2,14 @@
 
 |@@ @style="tet-align: left;"@@\\A|
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Action_link_key"| module Os_types.Action_link_key >> ~[<<a_api subproject="client" | module Os_types >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Almost"| module Os_lib.Email_or_phone.Almost >> ~[<<a_api subproject="client" | module Os_lib.Email_or_phone >>~]||
 |@@ @style="tet-align: left;"@@\\D|
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="D"| module Os_icons.D >> ~[<<a_api subproject="client" | module Os_icons >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Default_config"| module Os_page.Default_config >> ~[<<a_api subproject="client" | module Os_page >>~]|<<div class="odocwiki_info"|~A default configuration for pages~.
+>>
+|
+|@@ @style="tet-align: left;"@@\\E|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Email_or_phone"| module Os_lib.Email_or_phone >> ~[<<a_api subproject="client" | module Os_lib >>~]|<<div class="odocwiki_info"|~Parse strings that can be e~-mails or phones~.
 >>
 |
 |@@ @style="tet-align: left;"@@\\F|
@@ -20,6 +25,9 @@
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Os_comet"| module Os_comet >> |<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|restart~_process ~(~)>> restarts the client~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Os_connect_phone"| module Os_connect_phone >> |<<div class="odocwiki_info"|~To be used for signalling errors with ~S~M~S transmission
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="Os_current_user"| module Os_current_user >> |<<div class="odocwiki_info"|~This module provides functions and types to manage the current user~.

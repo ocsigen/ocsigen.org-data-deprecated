@@ -2,13 +2,6 @@
   exception No_such_resource
   exception Main_email_removal_attempt
   exception Account_not_activated
-  val init :
-    ?host:string ->
-    ?port:int ->
-    ?user:string ->
-    ?password:string ->
-    ?database:string ->
-    ?unix_domain_socket_dir:string -> ?pool_size:int -> unit -> unit
   module PGOCaml :
     sig
       type 'a t
@@ -130,6 +123,7 @@
       val string_of_int32_array : int32_array -> string
       val string_of_int64_array : int64_array -> string
       val string_of_string_array : string_array -> string
+      val string_of_bytea_array : string_array -> string
       val string_of_float_array : float_array -> string
       val oid_of_string : string -> oid
       val bool_of_string : string -> bool
@@ -159,10 +153,22 @@
       val bind : 'a monad -> ('a -> 'b monad) -> 'b monad
       val return : 'a -> 'a monad
     end
+  val init :
+    ?host:string ->
+    ?port:int ->
+    ?user:string ->
+    ?password:string ->
+    ?database:string ->
+    ?unix_domain_socket_dir:string ->
+    ?pool_size:int ->
+    ?init:(Os_db.PGOCaml.pa_pg_data Os_db.PGOCaml.t -> unit Lwt.t) ->
+    unit -> unit
   val full_transaction_block :
     (Os_db.PGOCaml.pa_pg_data Os_db.PGOCaml.t -> 'a Lwt.t) -> 'a Lwt.t
   val without_transaction :
     (Os_db.PGOCaml.pa_pg_data Os_db.PGOCaml.t -> 'a Lwt.t) -> 'a Lwt.t
+  val connection_pool :
+    unit -> Os_db.PGOCaml.pa_pg_data Os_db.PGOCaml.t Lwt_pool.t
   val pwd_crypt_ref :
     ((string -> string) * (Os_types.User.id -> string -> string -> bool))
     Pervasives.ref
@@ -190,8 +196,8 @@
         ?password:string ->
         ?avatar:string ->
         ?language:string ->
-        firstname:string ->
-        lastname:string -> string -> Os_types.User.id Lwt.t
+        ?email:string ->
+        firstname:string -> lastname:string -> unit -> Os_types.User.id Lwt.t
       val update :
         ?password:string ->
         ?avatar:string ->
@@ -207,6 +213,8 @@
         userid:Os_types.User.id -> language:string -> unit Lwt.t
       val verify_password :
         email:string -> password:string -> Os_types.User.id Lwt.t
+      val verify_password_phone :
+        number:string -> password:string -> Os_types.User.id Lwt.t
       val user_of_userid :
         Os_types.User.id ->
         (Os_types.User.id * string * string * string option * bool *
@@ -215,7 +223,9 @@
       val get_actionlinkkey_info :
         string -> Os_types.Action_link_key.info Lwt.t
       val emails_of_userid : Os_types.User.id -> string list Lwt.t
-      val email_of_userid : Os_types.User.id -> string Lwt.t
+      val emails_of_userid_with_status :
+        Os_types.User.id -> (string * bool) list Lwt.t
+      val email_of_userid : Os_types.User.id -> string option Lwt.t
       val is_main_email :
         userid:Os_types.User.id -> email:string -> bool Lwt.t
       val add_email_to_user :
@@ -245,5 +255,13 @@
         userid:Os_types.User.id -> unit -> bool Lwt.t
       val all :
         unit -> (Os_types.Group.id * string * string option) list Lwt.t
+    end
+  module Phone :
+    sig
+      val add : int64 -> string -> bool Lwt.t
+      val exists : string -> bool Lwt.t
+      val userid : string -> Os_types.User.id option Lwt.t
+      val delete : int64 -> string -> unit Lwt.t
+      val get_list : int64 -> string list Lwt.t
     end
 end >>

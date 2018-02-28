@@ -16,7 +16,7 @@
     ~Alternatively~, and to make sure it is done early enough~, define
     ~J~S variables called <<span class="odocwiki_inlinecode"|~_~_eliom~_server>> and <<span class="odocwiki_inlinecode"|~_~_eliom~_app~_name>>
     at the beginning of your html
-    file~, containing the full ~U~R~L of your server~.
+    file~, containing the full ~U~R~L of your server and ~Eliom app name~.
 
 
     <<span class="odocwiki_inlinecode"|site~_dir>> ~(if given~) specifies the path that the application runs
@@ -157,7 +157,7 @@
     ~See the <<a_manual chapter="clientserver-communication" fragment="rpc"|manual>> ~.
 <<pre class="ocsforge_color odocwiki_code" id="TYPEserver_function"|<<span class="ocsforge_color_keyword"|type>> <<span class="odocwiki_type"|<<span class="ocsforge_color_delimiter"| ( >>'a, 'b<<span class="ocsforge_color_delimiter"| ) >>>> <<span class="odocwiki_name"|server~_function>> <<span class="ocsforge_color_delimiter"|~=>> <<span class="odocwiki_type"|'a <<span class="ocsforge_color_delimiter"| -> >> 'b <<span class="ocsforge_color_uid"|Lwt>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>>>> >><<div class="odocwiki_info"|~A <<span class="odocwiki_inlinecode"|~(~'a~, ~'b~) server~_function>> provides transparently access to a
     server side function which has been created by <<a_api
-    subproject="server"|Eliom_client.server_function>> ~.
+    subproject="server"| val Eliom_client.server_function>> ~.
 
 
     ~See also <<a_api subproject="server" text="the opaque server

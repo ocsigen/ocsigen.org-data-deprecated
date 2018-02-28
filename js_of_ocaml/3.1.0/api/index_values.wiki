@@ -1,0 +1,574 @@
+=Index of values=
+
+|@@ @style="tet-align: left;"@@\\|
+|@@class="odocwiki_index"@ @@<<a_api text="_JSON"| value Js._JSON >> ~[<<a_api | module Js >>~]|<<div class="odocwiki_info"|~J~S~O~N object
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="_false"| value Js._false >> ~[<<a_api | module Js >>~]|<<div class="odocwiki_info"|~Javascript <<span class="odocwiki_inlinecode"|false>> boolean~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="_true"| value Js._true >> ~[<<a_api | module Js >>~]|<<div class="odocwiki_info"|~Javascript <<span class="odocwiki_inlinecode"|true>> boolean~.
+>>
+|
+|@@ @style="tet-align: left;"@@\\A|
+|@@class="odocwiki_index"@ @@<<a_api text="arguments"| value Url.Current.arguments >> ~[<<a_api | module Url.Current >>~]|<<div class="odocwiki_info"|~The arguments of the current url as an association list~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="array"| value Js.array >> ~[<<a_api | module Js >>~]|<<div class="odocwiki_info"|~Conversion of arrays from ~O~Caml to ~Javascript~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="array_empty"| value Js.array_empty >> ~[<<a_api | module Js >>~]|<<div class="odocwiki_info"|~Constructor of <<span class="odocwiki_inlinecode"|~Array>> objects~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="array_get"| value Js.array_get >> ~[<<a_api | module Js >>~]|<<div class="odocwiki_info"|~Array access~: <<span class="odocwiki_inlinecode"|array~_get a i>> returns the element at index <<span class="odocwiki_inlinecode"|i>>
+      of array <<span class="odocwiki_inlinecode"|a>>~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="array_length"| value Js.array_length >> ~[<<a_api | module Js >>~]|<<div class="odocwiki_info"|~Constructor of <<span class="odocwiki_inlinecode"|~Array>> objects~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="array_map"| value Js.array_map >> ~[<<a_api | module Js >>~]|<<div class="odocwiki_info"|~Array map~: <<span class="odocwiki_inlinecode"|array~_map f a>> is <<span class="odocwiki_inlinecode"|a~#~#map~(wrap~_callback ~(fun elt idx arr ~-~> f elt~)~)>>~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="array_mapi"| value Js.array_mapi >> ~[<<a_api | module Js >>~]|<<div class="odocwiki_info"|~Array mapi~: <<span class="odocwiki_inlinecode"|array~_mapi f a>> is <<span class="odocwiki_inlinecode"|a~#~#map~(wrap~_callback ~(fun elt idx arr ~-~> f idx elt~)~)>>~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="array_set"| value Js.array_set >> ~[<<a_api | module Js >>~]|<<div class="odocwiki_info"|~Array update~: <<span class="odocwiki_inlinecode"|array~_set a i v>> puts <<span class="odocwiki_inlinecode"|v>> at index <<span class="odocwiki_inlinecode"|i>> in
+      array <<span class="odocwiki_inlinecode"|a>>~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="as_string"| value Url.Current.as_string >> ~[<<a_api | module Url.Current >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|as~_string>> is the original string representation of the current ~Url~.
+>>
+|
+|@@ @style="tet-align: left;"@@\\B|
+|@@class="odocwiki_index"@ @@<<a_api text="bind"| value Js.OPT.bind >> ~[<<a_api | module Js.OPT >>~]|<<div class="odocwiki_info"|~Apply a function returning an optional value to an optional value
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="bool"| value Js.bool >> ~[<<a_api | module Js >>~]|<<div class="odocwiki_info"|~Conversion of booleans from ~O~Caml to ~Javascript~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="bounded_split"| value Regexp.bounded_split >> ~[<<a_api | module Regexp >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|bounded~_split r s i>> is like <<span class="odocwiki_inlinecode"|split r s>> except that the result~'s length is
+    less than <<span class="odocwiki_inlinecode"|i>>~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="bytestring"| value Js.bytestring >> ~[<<a_api | module Js >>~]|<<div class="odocwiki_info"|~Conversion of strings of bytes from ~O~Caml to ~Javascript~.
+>>
+|
+|@@ @style="tet-align: left;"@@\\C|
+|@@class="odocwiki_index"@ @@<<a_api text="call"| value Lwt_jsonp.call >> ~[<<a_api | module Lwt_jsonp >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|call ~~timeout ~~param url>> do a jsonp call using <<span class="odocwiki_inlinecode"|url>>~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="call"| value Js.Unsafe.call >> ~[<<a_api | module Js.Unsafe >>~]|<<div class="odocwiki_info"|~Performs a ~Javascript function call~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="call_custom_url"| value Lwt_jsonp.call_custom_url >> ~[<<a_api | module Lwt_jsonp >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|call~_custom~_url ~~timeout make~_url>>~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="callback"| value Js.Unsafe.callback >> ~[<<a_api | module Js.Unsafe >>~]|<<div class="odocwiki_info"|~Wrap an ~O~Caml function so that it can be invoked from
+        ~Javascript~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="callback_with_arguments"| value Js.Unsafe.callback_with_arguments >> ~[<<a_api | module Js.Unsafe >>~]|<<div class="odocwiki_info"|~Wrap an ~O~Caml function so that it can be invoked from
+        ~Javascript~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="callback_with_arity"| value Js.Unsafe.callback_with_arity >> ~[<<a_api | module Js.Unsafe >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="case"| value Js.OPT.case >> ~[<<a_api | module Js.OPT >>~]|<<div class="odocwiki_info"|~Pattern matching on optional values~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="coerce"| value Js.Unsafe.coerce >> ~[<<a_api | module Js.Unsafe >>~]|<<div class="odocwiki_info"|~Unsafe coercion between to ~Javascript objects~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="coerce"| value Js.coerce >> ~[<<a_api | module Js >>~]|<<div class="odocwiki_info"|~Apply a possibly failing coercion function~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="coerce_opt"| value Js.coerce_opt >> ~[<<a_api | module Js >>~]|<<div class="odocwiki_info"|~Apply a possibly failing coercion function~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="console"| value Lwt_log_js.console >> ~[<<a_api | module Lwt_log_js >>~]|<<div class="odocwiki_info"|~Logger that use the javascript console object~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="create_file"| value Sys_js.create_file >> ~[<<a_api | module Sys_js >>~]|<<div class="odocwiki_info"|~Register a file to a ~Pseudo ~Filesystem~.
+>>
+|
+|@@ @style="tet-align: left;"@@\\D|
+|@@class="odocwiki_index"@ @@<<a_api text="date"| value Js.date >> ~[<<a_api | module Js >>~]|<<div class="odocwiki_info"|~The date constructor~, as an object~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="date_day"| value Js.date_day >> ~[<<a_api | module Js >>~]|<<div class="odocwiki_info"|~Constructor of <<span class="odocwiki_inlinecode"|~Date>> objects~: <<span class="odocwiki_inlinecode"|jsnew date~_from~Time~Value ~(y~, m~, d~)>>
+      returns a <<span class="odocwiki_inlinecode"|~Date>> object corresponding to year <<span class="odocwiki_inlinecode"|y>>~, month <<span class="odocwiki_inlinecode"|m>> and
+      day <<span class="odocwiki_inlinecode"|d>>~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="date_fromTimeValue"| value Js.date_fromTimeValue >> ~[<<a_api | module Js >>~]|<<div class="odocwiki_info"|~Constructor of <<span class="odocwiki_inlinecode"|~Date>> objects~: <<span class="odocwiki_inlinecode"|jsnew date~_from~Time~Value ~(t~)>> returns a
+      <<span class="odocwiki_inlinecode"|~Date>> object initialized with the time value <<span class="odocwiki_inlinecode"|t>>~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="date_hour"| value Js.date_hour >> ~[<<a_api | module Js >>~]|<<div class="odocwiki_info"|~Constructor of <<span class="odocwiki_inlinecode"|~Date>> objects~: <<span class="odocwiki_inlinecode"|jsnew date~_from~Time~Value ~(y~, m~, d~, h~)>>
+      returns a <<span class="odocwiki_inlinecode"|~Date>> object corresponding to year <<span class="odocwiki_inlinecode"|y>> to hour <<span class="odocwiki_inlinecode"|h>>~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="date_min"| value Js.date_min >> ~[<<a_api | module Js >>~]|<<div class="odocwiki_info"|~Constructor of <<span class="odocwiki_inlinecode"|~Date>> objects~: <<span class="odocwiki_inlinecode"|jsnew date~_from~Time~Value ~(y~, m~, d~, h~, m~'~)>>
+      returns a <<span class="odocwiki_inlinecode"|~Date>> object corresponding to year <<span class="odocwiki_inlinecode"|y>> to minute <<span class="odocwiki_inlinecode"|m~'>>~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="date_month"| value Js.date_month >> ~[<<a_api | module Js >>~]|<<div class="odocwiki_info"|~Constructor of <<span class="odocwiki_inlinecode"|~Date>> objects~: <<span class="odocwiki_inlinecode"|jsnew date~_from~Time~Value ~(y~, m~)>>
+      returns a <<span class="odocwiki_inlinecode"|~Date>> object corresponding to year <<span class="odocwiki_inlinecode"|y>> and month <<span class="odocwiki_inlinecode"|m>>~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="date_ms"| value Js.date_ms >> ~[<<a_api | module Js >>~]|<<div class="odocwiki_info"|~Constructor of <<span class="odocwiki_inlinecode"|~Date>> objects~:
+      <<span class="odocwiki_inlinecode"|jsnew date~_from~Time~Value ~(y~, m~, d~, h~, m~'~, s~, ms~)>>
+      returns a <<span class="odocwiki_inlinecode"|~Date>> object corresponding to year <<span class="odocwiki_inlinecode"|y>>
+      to millisecond <<span class="odocwiki_inlinecode"|ms>>~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="date_now"| value Js.date_now >> ~[<<a_api | module Js >>~]|<<div class="odocwiki_info"|~Constructor of <<span class="odocwiki_inlinecode"|~Date>> objects~: <<span class="odocwiki_inlinecode"|jsnew date~_now ~(~)>> returns a
+      <<span class="odocwiki_inlinecode"|~Date>> object initialized with the current date~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="date_sec"| value Js.date_sec >> ~[<<a_api | module Js >>~]|<<div class="odocwiki_info"|~Constructor of <<span class="odocwiki_inlinecode"|~Date>> objects~:
+      <<span class="odocwiki_inlinecode"|jsnew date~_from~Time~Value ~(y~, m~, d~, h~, m~'~, s~)>>
+      returns a <<span class="odocwiki_inlinecode"|~Date>> object corresponding to year <<span class="odocwiki_inlinecode"|y>> to second <<span class="odocwiki_inlinecode"|s>>~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="debug"| value Lwt_log_js.debug >> ~[<<a_api | module Lwt_log_js >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="debug_f"| value Lwt_log_js.debug_f >> ~[<<a_api | module Lwt_log_js >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="debugger"| value Js.debugger >> ~[<<a_api | module Js >>~]|<<div class="odocwiki_info"|~Invokes any available debugging functionality~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="decodeURI"| value Js.decodeURI >> ~[<<a_api | module Js >>~]|<<div class="odocwiki_info"|~Decode a ~U~R~I~: replace by the corresponding byte all escape
+      sequences but the ones corresponding to a ~U~R~I reserved character
+      and convert the string from ~U~T~F~-~8 to ~U~T~F~-~1~6~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="decodeURIComponent"| value Js.decodeURIComponent >> ~[<<a_api | module Js >>~]|<<div class="odocwiki_info"|~Decode a ~U~R~I~Component~: replace all escape sequences by the
+      corresponding byte and convert the string from ~U~T~F~-~8 to
+      ~U~T~F~-~1~6~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="decode_arguments"| value Url.decode_arguments >> ~[<<a_api | module Url >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|decode~_arguments s>> parses <<span class="odocwiki_inlinecode"|s>> returning the sliced~-diced
+    association list~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="def"| value Js.def >> ~[<<a_api | module Js >>~]|<<div class="odocwiki_info"|~Consider a value into a possibly undefined value~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="default_http_port"| value Url.default_http_port >> ~[<<a_api | module Url >>~]|<<div class="odocwiki_info"|~The default port for <<span class="odocwiki_inlinecode"|~Http>> communications ~(~8~0~)~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="default_https_port"| value Url.default_https_port >> ~[<<a_api | module Url >>~]|<<div class="odocwiki_info"|~The default port for <<span class="odocwiki_inlinecode"|~Https>> communications ~(~4~4~3~)~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="delete"| value Js.Unsafe.delete >> ~[<<a_api | module Js.Unsafe >>~]|<<div class="odocwiki_info"|~Delete an object property~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="dispatcher"| value Ocamlbuild_js_of_ocaml.dispatcher >> ~[<<a_api | module Ocamlbuild_js_of_ocaml >>~]|<<div class="odocwiki_info"|~The main dispatcher
+>>
+|
+|@@ @style="tet-align: left;"@@\\E|
+|@@class="odocwiki_index"@ @@<<a_api text="empty"| value Js.OPT.empty >> ~[<<a_api | module Js.OPT >>~]|<<div class="odocwiki_info"|~No value~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="encodeURI"| value Js.encodeURI >> ~[<<a_api | module Js >>~]|<<div class="odocwiki_info"|~Encode a ~U~R~I~: convert the string to ~U~T~F~-~8 and replace all unsafe
+      bytes by the corresponding escape sequence~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="encodeURIComponent"| value Js.encodeURIComponent >> ~[<<a_api | module Js >>~]|<<div class="odocwiki_info"|~Same as <<span class="odocwiki_inlinecode"|encode~U~R~I>>~, but also encode ~U~R~I reserved characters~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="encode_arguments"| value Url.encode_arguments >> ~[<<a_api | module Url >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|encode~_arguments a>> expects a list of pair of values of the form
+    <<span class="odocwiki_inlinecode"|~(name~,value~)>> were <<span class="odocwiki_inlinecode"|name>> is the name of an argument and <<span class="odocwiki_inlinecode"|value>> it~'s
+    associated value~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="error"| value Lwt_log_js.error >> ~[<<a_api | module Lwt_log_js >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="error_constr"| value Js.error_constr >> ~[<<a_api | module Js >>~]|<<div class="odocwiki_info"|~Constructor of <<span class="odocwiki_inlinecode"|~Error>> objects~:
+      <<span class="odocwiki_inlinecode"|jsnew error~_constr ~(msg~)>>
+      returns an <<span class="odocwiki_inlinecode"|~Error>> object with the message <<span class="odocwiki_inlinecode"|msg>>~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="error_f"| value Lwt_log_js.error_f >> ~[<<a_api | module Lwt_log_js >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="escape"| value Js.escape >> ~[<<a_api | module Js >>~]|<<div class="odocwiki_info"|~Escape a string~: unsafe ~U~T~F~-~1~6 code points are replaced by
+      ~2~-digit and ~4~-digit escape sequences~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="eval_string"| value Js.Unsafe.eval_string >> ~[<<a_api | module Js.Unsafe >>~]|<<div class="odocwiki_info"|~Evaluate ~Javascript code
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="execute"| value JsooTop.execute >> ~[<<a_api | module JsooTop >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|execute print fmt content>> ~Execute <<span class="odocwiki_inlinecode"|content>>~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="export"| value Js.export >> ~[<<a_api | module Js >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|export name value>> export <<span class="odocwiki_inlinecode"|name>>
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="export_all"| value Js.export_all >> ~[<<a_api | module Js >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|export~_all obj>> export every key of <<span class="odocwiki_inlinecode"|obj>> object~.
+>>
+|
+|@@ @style="tet-align: left;"@@\\F|
+|@@class="odocwiki_index"@ @@<<a_api text="fatal"| value Lwt_log_js.fatal >> ~[<<a_api | module Lwt_log_js >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="fatal_f"| value Lwt_log_js.fatal_f >> ~[<<a_api | module Lwt_log_js >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="float"| value Js.float >> ~[<<a_api | module Js >>~]|<<div class="odocwiki_info"|~Conversion of ~O~Caml floats to ~Javascript numbers~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="float_of_number"| value Js.float_of_number >> ~[<<a_api | module Js >>~]|<<div class="odocwiki_info"|~Conversion of ~Javascript number objects to ~O~Caml floats~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="fun_call"| value Js.Unsafe.fun_call >> ~[<<a_api | module Js.Unsafe >>~]|<<div class="odocwiki_info"|~Performs a ~Javascript function call~.
+>>
+|
+|@@ @style="tet-align: left;"@@\\G|
+|@@class="odocwiki_index"@ @@<<a_api text="get"| value Url.Current.get >> ~[<<a_api | module Url.Current >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|get ~(~)>> returns a value of type <<a_api | type Url.url >> with fields reflecting the
+        state of the current ~Url~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="get"| value Js.Unsafe.get >> ~[<<a_api | module Js.Unsafe >>~]|<<div class="odocwiki_info"|~Get the value of an object property~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="get"| value Js.OPT.get >> ~[<<a_api | module Js.OPT >>~]|<<div class="odocwiki_info"|~Get the value~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="get_fragment"| value Url.Current.get_fragment >> ~[<<a_api | module Url.Current >>~]|<<div class="odocwiki_info"|~Because the <<span class="odocwiki_inlinecode"|fragment>> of the ~Url for the current document can change
+        dynamically~, we use a functional value here~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="global"| value Js.Unsafe.global >> ~[<<a_api | module Js.Unsafe >>~]|<<div class="odocwiki_info"|~Javascript global object
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="global_replace"| value Regexp.global_replace >> ~[<<a_api | module Regexp >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|global~_replace r s by>> replaces all of the matches of <<span class="odocwiki_inlinecode"|r>> in <<span class="odocwiki_inlinecode"|s>> by <<span class="odocwiki_inlinecode"|by>>~.
+>>
+|
+|@@ @style="tet-align: left;"@@\\H|
+|@@class="odocwiki_index"@ @@<<a_api text="host"| value Url.Current.host >> ~[<<a_api | module Url.Current >>~]|<<div class="odocwiki_info"|~The host part of the current url~.
+>>
+|
+|@@ @style="tet-align: left;"@@\\I|
+|@@class="odocwiki_index"@ @@<<a_api text="ign_debug"| value Lwt_log_js.ign_debug >> ~[<<a_api | module Lwt_log_js >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="ign_debug_f"| value Lwt_log_js.ign_debug_f >> ~[<<a_api | module Lwt_log_js >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="ign_error"| value Lwt_log_js.ign_error >> ~[<<a_api | module Lwt_log_js >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="ign_error_f"| value Lwt_log_js.ign_error_f >> ~[<<a_api | module Lwt_log_js >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="ign_fatal"| value Lwt_log_js.ign_fatal >> ~[<<a_api | module Lwt_log_js >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="ign_fatal_f"| value Lwt_log_js.ign_fatal_f >> ~[<<a_api | module Lwt_log_js >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="ign_info"| value Lwt_log_js.ign_info >> ~[<<a_api | module Lwt_log_js >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="ign_info_f"| value Lwt_log_js.ign_info_f >> ~[<<a_api | module Lwt_log_js >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="ign_log"| value Lwt_log_js.ign_log >> ~[<<a_api | module Lwt_log_js >>~]|<<div class="odocwiki_info"|~Same as <<a_api | val Lwt_log_js.log >> but ignore the resulting thread~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="ign_log_f"| value Lwt_log_js.ign_log_f >> ~[<<a_api | module Lwt_log_js >>~]|<<div class="odocwiki_info"|~Same as <<a_api | val Lwt_log_js.log_f >> but ignore the resulting thread~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="ign_notice"| value Lwt_log_js.ign_notice >> ~[<<a_api | module Lwt_log_js >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="ign_notice_f"| value Lwt_log_js.ign_notice_f >> ~[<<a_api | module Lwt_log_js >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="ign_warning"| value Lwt_log_js.ign_warning >> ~[<<a_api | module Lwt_log_js >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="ign_warning_f"| value Lwt_log_js.ign_warning_f >> ~[<<a_api | module Lwt_log_js >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="info"| value Lwt_log_js.info >> ~[<<a_api | module Lwt_log_js >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="info_f"| value Lwt_log_js.info_f >> ~[<<a_api | module Lwt_log_js >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="init_lexer"| value Deriving_Json_lexer.init_lexer >> ~[<<a_api | module Deriving_Json_lexer >>~]|<<div class="odocwiki_info"|~Create a fresh lexbuf record~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="initialize"| value JsooTop.initialize >> ~[<<a_api | module JsooTop >>~]|<<div class="odocwiki_info"|~Initialize ~Js~_of~_ocaml toplevel~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="inject"| value Js.Unsafe.inject >> ~[<<a_api | module Js.Unsafe >>~]|<<div class="odocwiki_info"|~Coercion to top type~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="instanceof"| value Js.instanceof >> ~[<<a_api | module Js >>~]|<<div class="odocwiki_info"|~Tests whether a ~Javascript object is an instance of a given class~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="isNaN"| value Js.isNaN >> ~[<<a_api | module Js >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="iter"| value Js.OPT.iter >> ~[<<a_api | module Js.OPT >>~]|<<div class="odocwiki_info"|~Apply a function to an optional value if it is available~.
+>>
+|
+|@@ @style="tet-align: left;"@@\\J|
+|@@class="odocwiki_index"@ @@<<a_api text="js_expr"| value Js.Unsafe.js_expr >> ~[<<a_api | module Js.Unsafe >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|js~_expr e>> will parse the ~Java~Script expression <<span class="odocwiki_inlinecode"|e>> if <<span class="odocwiki_inlinecode"|e>>
+        is available at compile time or will fallback to a
+        runtime evaluation~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="js_of_ocaml_version"| value Sys_js.js_of_ocaml_version >> ~[<<a_api | module Sys_js >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|js~_of~_ocaml~_version>> is the version of ~Js~_of~_ocaml~.
+>>
+|
+|@@ @style="tet-align: left;"@@\\L|
+|@@class="odocwiki_index"@ @@<<a_api text="loc"| value JsooTopError.loc >> ~[<<a_api | module JsooTopError >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="log"| value Lwt_log_js.log >> ~[<<a_api | module Lwt_log_js >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|log ~?section ~?logger ~~level message>> logs a message~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="log_f"| value Lwt_log_js.log_f >> ~[<<a_api | module Lwt_log_js >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|log~_f>> is the same as <<span class="odocwiki_inlinecode"|log>> except that it takes a format
+      string
+>>
+|
+|@@ @style="tet-align: left;"@@\\M|
+|@@class="odocwiki_index"@ @@<<a_api text="map"| value Js.OPT.map >> ~[<<a_api | module Js.OPT >>~]|<<div class="odocwiki_info"|~Apply a function to an optional value if it is available~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="mapper"| value Ppx_js.mapper >> ~[<<a_api | module Ppx_js >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="match_result"| value Js.match_result >> ~[<<a_api | module Js >>~]|<<div class="odocwiki_info"|~Convert a match result handle into a <<span class="odocwiki_inlinecode"|~Match~Result>> object~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="matched_group"| value Regexp.matched_group >> ~[<<a_api | module Regexp >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|matched~_group r i>> is the <<span class="odocwiki_inlinecode"|i>>th group matched~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="matched_string"| value Regexp.matched_string >> ~[<<a_api | module Regexp >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|matched~_string r>> return the exact substring that matched when evaluating
+    <<span class="odocwiki_inlinecode"|r>>~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="math"| value Js.math >> ~[<<a_api | module Js >>~]|<<div class="odocwiki_info"|~The ~Math object
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="meth_call"| value Js.Unsafe.meth_call >> ~[<<a_api | module Js.Unsafe >>~]|<<div class="odocwiki_info"|~Performs a ~Javascript method call~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="meth_callback"| value Js.Unsafe.meth_callback >> ~[<<a_api | module Js.Unsafe >>~]|<<div class="odocwiki_info"|~Wrap an ~O~Caml function so that it can be invoked from
+        ~Javascript~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="meth_callback_with_arguments"| value Js.Unsafe.meth_callback_with_arguments >> ~[<<a_api | module Js.Unsafe >>~]|<<div class="odocwiki_info"|~Wrap an ~O~Caml function so that it can be invoked from ~Javascript~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="meth_callback_with_arity"| value Js.Unsafe.meth_callback_with_arity >> ~[<<a_api | module Js.Unsafe >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="mount"| value Sys_js.mount >> ~[<<a_api | module Sys_js >>~]|<<div class="odocwiki_info"|~Register a callback to the <<span class="odocwiki_inlinecode"|path>> to dynamicly load missing files~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="mount_point"| value Sys_js.mount_point >> ~[<<a_api | module Sys_js >>~]||
+|@@ @style="tet-align: left;"@@\\N|
+|@@class="odocwiki_index"@ @@<<a_api text="new_obj"| value Js.Unsafe.new_obj >> ~[<<a_api | module Js.Unsafe >>~]|<<div class="odocwiki_info"|~Create a ~Javascript object~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="new_obj_arr"| value Js.Unsafe.new_obj_arr >> ~[<<a_api | module Js.Unsafe >>~]|<<div class="odocwiki_info"|~Same ~Create a ~Javascript object~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="notice"| value Lwt_log_js.notice >> ~[<<a_api | module Lwt_log_js >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="notice_f"| value Lwt_log_js.notice_f >> ~[<<a_api | module Lwt_log_js >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="null"| value Js.null >> ~[<<a_api | module Js >>~]|<<div class="odocwiki_info"|~The <<span class="odocwiki_inlinecode"|null>> value~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="number_of_float"| value Js.number_of_float >> ~[<<a_api | module Js >>~]|<<div class="odocwiki_info"|~Conversion of ~O~Caml floats to ~Javascript number objects~.
+>>
+|
+|@@ @style="tet-align: left;"@@\\O|
+|@@class="odocwiki_index"@ @@<<a_api text="oasis_support"| value Ocamlbuild_js_of_ocaml.oasis_support >> ~[<<a_api | module Ocamlbuild_js_of_ocaml >>~]|<<div class="odocwiki_info"|~Map each targets given as argument to ocamlbuild and replace each element
+    that exists in <<span class="odocwiki_inlinecode"|~~executables>> by its corresponding ~.js target~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="obj"| value Js.Unsafe.obj >> ~[<<a_api | module Js.Unsafe >>~]|<<div class="odocwiki_info"|~Creates a ~Javascript literal object~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="object_keys"| value Js.object_keys >> ~[<<a_api | module Js >>~]|<<div class="odocwiki_info"|~Returns jsarray containing keys of the object as ~Object~.keys does~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="option"| value Js.OPT.option >> ~[<<a_api | module Js.OPT >>~]|<<div class="odocwiki_info"|~Convert option type~.
+>>
+|
+|@@ @style="tet-align: left;"@@\\P|
+|@@class="odocwiki_index"@ @@<<a_api text="parseFloat"| value Js.parseFloat >> ~[<<a_api | module Js >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="parseInt"| value Js.parseInt >> ~[<<a_api | module Js >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="path"| value Url.Current.path >> ~[<<a_api | module Url.Current >>~]|<<div class="odocwiki_info"|~The path of the current url as a list of small string~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="path_of_path_string"| value Url.path_of_path_string >> ~[<<a_api | module Url >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|path~_of~_path~_string s>> splits <<span class="odocwiki_inlinecode"|s>> on each <<span class="odocwiki_inlinecode"|"~/">> character~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="path_string"| value Url.Current.path_string >> ~[<<a_api | module Url.Current >>~]|<<div class="odocwiki_info"|~The path of the current url as one long string~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="port"| value Url.Current.port >> ~[<<a_api | module Url.Current >>~]|<<div class="odocwiki_info"|~The port of the current url~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="preprocess_phrase"| value JsooTopPpx.preprocess_phrase >> ~[<<a_api | module JsooTopPpx >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="preprocess_signature"| value JsooTopPpx.preprocess_signature >> ~[<<a_api | module JsooTopPpx >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="preprocess_structure"| value JsooTopPpx.preprocess_structure >> ~[<<a_api | module JsooTopPpx >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="protocol"| value Url.Current.protocol >> ~[<<a_api | module Url.Current >>~]|<<div class="odocwiki_info"|~The protocol of the current url~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="pure_expr"| value Js.Unsafe.pure_expr >> ~[<<a_api | module Js.Unsafe >>~]|<<div class="odocwiki_info"|~Asserts that an expression is pure~, and can therefore be
+        optimized away by the compiler if unused~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="pure_js_expr"| value Js.Unsafe.pure_js_expr >> ~[<<a_api | module Js.Unsafe >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|pure~_js~_expr str>> behaves like <<span class="odocwiki_inlinecode"|pure~_expr ~(fun ~(~) ~-~> js~_expr str~)>>~.
+>>
+|
+|@@ @style="tet-align: left;"@@\\Q|
+|@@class="odocwiki_index"@ @@<<a_api text="quote"| value Regexp.quote >> ~[<<a_api | module Regexp >>~]|<<div class="odocwiki_info"|~Escapes characters with special meaning in the regexp context~.
+>>
+|
+|@@ @style="tet-align: left;"@@\\R|
+|@@class="odocwiki_index"@ @@<<a_api text="raise_js_error"| value Js.raise_js_error >> ~[<<a_api | module Js >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="read_bounded_int"| value Deriving_Json_lexer.read_bounded_int >> ~[<<a_api | module Deriving_Json_lexer >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="read_case"| value Deriving_Json_lexer.read_case >> ~[<<a_api | module Deriving_Json_lexer >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="read_comma"| value Deriving_Json_lexer.read_comma >> ~[<<a_api | module Deriving_Json_lexer >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="read_comma_or_rbracket"| value Deriving_Json_lexer.read_comma_or_rbracket >> ~[<<a_api | module Deriving_Json_lexer >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="read_file"| value Sys_js.read_file >> ~[<<a_api | module Sys_js >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|read~_file name>> returns the content of the file <<span class="odocwiki_inlinecode"|name>>~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="read_int"| value Deriving_Json_lexer.read_int >> ~[<<a_api | module Deriving_Json_lexer >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="read_int32"| value Deriving_Json_lexer.read_int32 >> ~[<<a_api | module Deriving_Json_lexer >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="read_int64"| value Deriving_Json_lexer.read_int64 >> ~[<<a_api | module Deriving_Json_lexer >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="read_lbracket"| value Deriving_Json_lexer.read_lbracket >> ~[<<a_api | module Deriving_Json_lexer >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="read_number"| value Deriving_Json_lexer.read_number >> ~[<<a_api | module Deriving_Json_lexer >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="read_rbracket"| value Deriving_Json_lexer.read_rbracket >> ~[<<a_api | module Deriving_Json_lexer >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="read_string"| value Deriving_Json_lexer.read_string >> ~[<<a_api | module Deriving_Json_lexer >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="read_tag_1"| value Deriving_Json_lexer.read_tag_1 >> ~[<<a_api | module Deriving_Json_lexer >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="read_tag_2"| value Deriving_Json_lexer.read_tag_2 >> ~[<<a_api | module Deriving_Json_lexer >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="read_vcase"| value Deriving_Json_lexer.read_vcase >> ~[<<a_api | module Deriving_Json_lexer >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="regExp"| value Js.regExp >> ~[<<a_api | module Js >>~]|<<div class="odocwiki_info"|~Constructor of <<span class="odocwiki_inlinecode"|~Reg~Exp>> objects~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="regExp_copy"| value Js.regExp_copy >> ~[<<a_api | module Js >>~]|<<div class="odocwiki_info"|~Constructor of <<span class="odocwiki_inlinecode"|~Reg~Exp>> objects~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="regExp_withFlags"| value Js.regExp_withFlags >> ~[<<a_api | module Js >>~]|<<div class="odocwiki_info"|~Constructor of <<span class="odocwiki_inlinecode"|~Reg~Exp>> objects~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="regexp"| value Regexp.regexp >> ~[<<a_api | module Regexp >>~]|<<div class="odocwiki_info"|~Simple regexp constructor~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="regexp_case_fold"| value Regexp.regexp_case_fold >> ~[<<a_api | module Regexp >>~]|<<div class="odocwiki_info"|~Same as <<span class="odocwiki_inlinecode"|regexp>> but matching will be performed in a case
+    insensitive way~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="regexp_string"| value Regexp.regexp_string >> ~[<<a_api | module Regexp >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|regexp~_string s>> creates a regexp matching the exact string <<span class="odocwiki_inlinecode"|s>>~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="regexp_string_case_fold"| value Regexp.regexp_string_case_fold >> ~[<<a_api | module Regexp >>~]|<<div class="odocwiki_info"|~Same as <<span class="odocwiki_inlinecode"|regexp~_string>> but matching will be performed in a case
+    insensitive way~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="regexp_with_flag"| value Regexp.regexp_with_flag >> ~[<<a_api | module Regexp >>~]|<<div class="odocwiki_info"|~Regexp constructor with flag that allow for case~-insensitive search
+    or multiline search ~(the global flag is always set~)~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="register_predefs"| value Pa_deriving_Json.register_predefs >> ~[<<a_api | module Pa_deriving_Json >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|register~_predefs type~A type~B>> tells the syntax extension
+    that <<span class="odocwiki_inlinecode"|type~B>> is an alias for <<span class="odocwiki_inlinecode"|type~A>>~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="replace_first"| value Regexp.replace_first >> ~[<<a_api | module Regexp >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|replace~_first r s by>> replaces the first match of <<span class="odocwiki_inlinecode"|r>> in <<span class="odocwiki_inlinecode"|s>> by <<span class="odocwiki_inlinecode"|by>>~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="return"| value Js.OPT.return >> ~[<<a_api | module Js.OPT >>~]|<<div class="odocwiki_info"|~Consider a value as an optional value~.
+>>
+|
+|@@ @style="tet-align: left;"@@\\S|
+|@@class="odocwiki_index"@ @@<<a_api text="search"| value Regexp.search >> ~[<<a_api | module Regexp >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|search r s i>> evaluates to the index of the match and the match result or
+    <<span class="odocwiki_inlinecode"|~None>> if <<span class="odocwiki_inlinecode"|s>> ~(starting from <<span class="odocwiki_inlinecode"|i>>~) doesn~'t match <<span class="odocwiki_inlinecode"|r>>~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="search_forward"| value Regexp.search_forward >> ~[<<a_api | module Regexp >>~]|<<div class="odocwiki_info"|~Same as <<span class="odocwiki_inlinecode"|search>>~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="set"| value Url.Current.set >> ~[<<a_api | module Url.Current >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|set u>> replaces the current ~Url for <<span class="odocwiki_inlinecode"|u>>~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="set"| value Js.Unsafe.set >> ~[<<a_api | module Js.Unsafe >>~]|<<div class="odocwiki_info"|~Set an object property~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="set_channel_filler"| value Sys_js.set_channel_filler >> ~[<<a_api | module Sys_js >>~]|<<div class="odocwiki_info"|~Set a callback to be called when an in~_channel wants to fill its
+      buffer~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="set_channel_flusher"| value Sys_js.set_channel_flusher >> ~[<<a_api | module Sys_js >>~]|<<div class="odocwiki_info"|~Set a callback to be called when an out~_channel flush its buffer~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="set_fragment"| value Url.Current.set_fragment >> ~[<<a_api | module Url.Current >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|set~_fragment s>> replaces the current fragment by <<span class="odocwiki_inlinecode"|s>>~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="sleep"| value Lwt_js.sleep >> ~[<<a_api | module Lwt_js >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|sleep d>> is a threads which remain suspended for <<span class="odocwiki_inlinecode"|d>> seconds
+      and then terminates~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="some"| value Js.some >> ~[<<a_api | module Js >>~]|<<div class="odocwiki_info"|~Consider a value into a possibly null value~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="split"| value Regexp.split >> ~[<<a_api | module Regexp >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|split r s>> splits the string <<span class="odocwiki_inlinecode"|s>> erasing matches with <<span class="odocwiki_inlinecode"|r>>~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="str_array"| value Js.str_array >> ~[<<a_api | module Js >>~]|<<div class="odocwiki_info"|~Convert an opaque <<span class="odocwiki_inlinecode"|string~_array t>> object into an array of
+      string~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="string"| value Js.string >> ~[<<a_api | module Js >>~]|<<div class="odocwiki_info"|~Conversion of strings from ~O~Caml to ~Javascript~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="string_constr"| value Js.string_constr >> ~[<<a_api | module Js >>~]|<<div class="odocwiki_info"|~The string constructor~, as an object~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="string_match"| value Regexp.string_match >> ~[<<a_api | module Regexp >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|string~_match r s i>> matches the string <<span class="odocwiki_inlinecode"|s>> starting from the <<span class="odocwiki_inlinecode"|i>>th
+    character~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="string_of_error"| value Js.string_of_error >> ~[<<a_api | module Js >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="string_of_url"| value Url.string_of_url >> ~[<<a_api | module Url >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|string~_of~_url u>> returns a valid string representation of <<span class="odocwiki_inlinecode"|u>>~.
+>>
+|
+|@@ @style="tet-align: left;"@@\\T|
+|@@class="odocwiki_index"@ @@<<a_api text="tag_error"| value Deriving_Json_lexer.tag_error >> ~[<<a_api | module Deriving_Json_lexer >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="test"| value Js.OPT.test >> ~[<<a_api | module Js.OPT >>~]|<<div class="odocwiki_info"|~Returns <<span class="odocwiki_inlinecode"|true>> if a value is available~, <<span class="odocwiki_inlinecode"|false>> otherwise~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="to_array"| value Js.to_array >> ~[<<a_api | module Js >>~]|<<div class="odocwiki_info"|~Conversion of arrays from ~Javascript to ~O~Caml~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="to_bool"| value Js.to_bool >> ~[<<a_api | module Js >>~]|<<div class="odocwiki_info"|~Conversion of booleans from ~Javascript to ~O~Caml~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="to_bytestring"| value Js.to_bytestring >> ~[<<a_api | module Js >>~]|<<div class="odocwiki_info"|~Conversion of strings of bytes from ~Javascript to ~O~Caml~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="to_float"| value Js.to_float >> ~[<<a_api | module Js >>~]|<<div class="odocwiki_info"|~Conversion of ~Javascript numbers to ~O~Caml floats~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="to_option"| value Js.OPT.to_option >> ~[<<a_api | module Js.OPT >>~]|<<div class="odocwiki_info"|~Convert to option type~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="to_string"| value Js.to_string >> ~[<<a_api | module Js >>~]|<<div class="odocwiki_info"|~Conversion of strings from ~Javascript to ~O~Caml~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="typeof"| value Js.typeof >> ~[<<a_api | module Js >>~]|<<div class="odocwiki_info"|~Returns the type of a ~Javascript object~.
+>>
+|
+|@@ @style="tet-align: left;"@@\\U|
+|@@class="odocwiki_index"@ @@<<a_api text="undefined"| value Js.undefined >> ~[<<a_api | module Js >>~]|<<div class="odocwiki_info"|~The <<span class="odocwiki_inlinecode"|undefined>> value
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="unescape"| value Js.unescape >> ~[<<a_api | module Js >>~]|<<div class="odocwiki_info"|~Unescape a string~: ~2~-digit and ~4~-digit escape sequences are
+      replaced by the corresponding ~U~T~F~-~1~6 code point~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="unmount"| value Sys_js.unmount >> ~[<<a_api | module Sys_js >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="update_file"| value Sys_js.update_file >> ~[<<a_api | module Sys_js >>~]|<<div class="odocwiki_info"|~Update a file in the ~Pseudo ~Filesystem~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="url_of_string"| value Url.url_of_string >> ~[<<a_api | module Url >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|url~_of~_string s>> parses <<span class="odocwiki_inlinecode"|s>> and builds a value of type <<span class="odocwiki_inlinecode"|url>> if <<span class="odocwiki_inlinecode"|s>> is not
+    a valid url string~, it returns <<span class="odocwiki_inlinecode"|~None>>~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="urldecode"| value Url.urldecode >> ~[<<a_api | module Url >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|urldecode s>> swaps percent encoding characters for their usual
+    representation~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="urlencode"| value Url.urlencode >> ~[<<a_api | module Url >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|urlencode ~?with~_plus s>> replace characters for their percent encoding
+    representation~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="use"| value JsooTop.use >> ~[<<a_api | module JsooTop >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|use fmt content>> ~Execute commands <<span class="odocwiki_inlinecode"|content>>~.
+>>
+|
+|@@ @style="tet-align: left;"@@\\V|
+|@@class="odocwiki_index"@ @@<<a_api text="variable"| value Js.Unsafe.variable >> ~[<<a_api | module Js.Unsafe >>~]|<<div class="odocwiki_info"|~Access a ~Javascript variable~.
+>>
+|
+|@@ @style="tet-align: left;"@@\\W|
+|@@class="odocwiki_index"@ @@<<a_api text="warning"| value Lwt_log_js.warning >> ~[<<a_api | module Lwt_log_js >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="warning_f"| value Lwt_log_js.warning_f >> ~[<<a_api | module Lwt_log_js >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="wrap_callback"| value Js.wrap_callback >> ~[<<a_api | module Js >>~]|<<div class="odocwiki_info"|~Wrap an ~O~Caml function so that it can be invoked from
+      ~Javascript~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="wrap_meth_callback"| value Js.wrap_meth_callback >> ~[<<a_api | module Js >>~]|<<div class="odocwiki_info"|~Wrap an ~O~Caml function so that it can be invoked from
+      ~Javascript~.
+>>
+|
+|@@ @style="tet-align: left;"@@\\Y|
+|@@class="odocwiki_index"@ @@<<a_api text="yield"| value Lwt_js.yield >> ~[<<a_api | module Lwt_js >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|yield ~(~)>> is a threads which suspends itself and then resumes
+      as soon as possible and terminates~.
+>>
+|
+\\

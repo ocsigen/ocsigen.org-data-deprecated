@@ -20,3 +20,4 @@
 == <<a_api subproject="client" text="Index of class methods" | index methods >>
 == <<a_api subproject="client" text="Index of class types" | index class types >>
 == <<a_api subproject="client" text="Index of modules" | index modules >>
+== <<a_api subproject="client" text="Index of module types" | index module types >>

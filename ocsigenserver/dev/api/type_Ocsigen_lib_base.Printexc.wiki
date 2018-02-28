@@ -25,6 +25,7 @@
     sig
       type t = backtrace_slot
       val is_raise : t -> bool
+      val is_inline : t -> bool
       val location : t -> location option
       val format : int -> t -> string option
     end
@@ -32,6 +33,8 @@
   val raw_backtrace_length : raw_backtrace -> int
   val get_raw_backtrace_slot : raw_backtrace -> int -> raw_backtrace_slot
   val convert_raw_backtrace_slot : raw_backtrace_slot -> backtrace_slot
+  val get_raw_backtrace_next_slot :
+    raw_backtrace_slot -> raw_backtrace_slot option
   val exn_slot_id : exn -> int
   val exn_slot_name : exn -> string
   val register_exn_printer : ((exn -> string) -> exn -> string) -> unit

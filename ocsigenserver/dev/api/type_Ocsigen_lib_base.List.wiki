@@ -57,4 +57,5 @@
   val remove_all_assoc_q : 'a -> ('a * 'b) list -> ('a * 'b) list
   val is_prefix : 'a list -> 'a list -> bool
   val chop : int -> 'a list -> 'a list
+  val split_at : int -> 'a list -> 'a list * 'a list
 end >>

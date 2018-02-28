@@ -3,6 +3,7 @@
 |@@ @style="tet-align: left;"@@\\A|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Action"| module Os_fcm_notif.Data.PhoneGap.Action >> ~[<<a_api subproject="server" | module Os_fcm_notif.Data.PhoneGap >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Action_link_key"| module Os_types.Action_link_key >> ~[<<a_api subproject="server" | module Os_types >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Almost"| module Os_lib.Email_or_phone.Almost >> ~[<<a_api subproject="server" | module Os_lib.Email_or_phone >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Android"| module Os_fcm_notif.Notification.Android >> ~[<<a_api subproject="server" | module Os_fcm_notif.Notification >>~]||
 |@@ @style="tet-align: left;"@@\\D|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="D"| module Os_icons.D >> ~[<<a_api subproject="server" | module Os_icons >>~]||
@@ -12,6 +13,9 @@
 |
 |@@ @style="tet-align: left;"@@\\E|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Email"| module Os_db.Email >> ~[<<a_api subproject="server" | module Os_db >>~]|<<div class="odocwiki_info"|~This module is used for low~-level email management with database~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Email_or_phone"| module Os_lib.Email_or_phone >> ~[<<a_api subproject="server" | module Os_lib >>~]|<<div class="odocwiki_info"|~Parse strings that can be e~-mails or phones~.
 >>
 |
 |@@ @style="tet-align: left;"@@\\F|
@@ -54,6 +58,9 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Options"| module Os_fcm_notif.Options >> ~[<<a_api subproject="server" | module Os_fcm_notif >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Os_comet"| module Os_comet >> |<<div class="odocwiki_info"|~This module provides function to monitor communications between the server
     clients~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Os_connect_phone"| module Os_connect_phone >> |<<div class="odocwiki_info"|~To be used for signalling errors with ~S~M~S transmission
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Os_current_user"| module Os_current_user >> |<<div class="odocwiki_info"|~This module provides functions and types to manage the current user~.
@@ -133,7 +140,12 @@
 >>
 |
 |@@ @style="tet-align: left;"@@\\P|
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="PGOCaml"| module Os_db.PGOCaml >> ~[<<a_api subproject="server" | module Os_db >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="PGOCaml"| module Os_db.PGOCaml >> ~[<<a_api subproject="server" | module Os_db >>~]|<<div class="odocwiki_info"|~Lwt version of ~P~G~O~Caml
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Phone"| module Os_db.Phone >> ~[<<a_api subproject="server" | module Os_db >>~]|<<div class="odocwiki_info"|~Manage user phone numbers
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="PhoneGap"| module Os_fcm_notif.Data.PhoneGap >> ~[<<a_api subproject="server" | module Os_fcm_notif.Data >>~]|<<div class="odocwiki_info"|~The ~Cordova plugin phonegap~-plugin~-push interprets some payloads defined
         in the data key~.
 >>

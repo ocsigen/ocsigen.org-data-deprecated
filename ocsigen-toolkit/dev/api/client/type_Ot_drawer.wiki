@@ -4,7 +4,6 @@
     ?position:[ `Left | `Right ] ->
     ?opened:bool ->
     ?swipe:bool ->
-    ?ios_scroll_pos_fix:bool ->
     ?onclose:(unit -> unit) Eliom_client_value.t ->
     ?onopen:(unit -> unit) Eliom_client_value.t ->
     ?wrap_close:((unit -> unit) Eliom_client_value.t ->

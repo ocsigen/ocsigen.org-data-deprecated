@@ -461,6 +461,7 @@
     mutable ipv4mask : int option * bool;
     mutable ipv6mask : int option * bool;
     mutable application_script : bool * bool;
+    mutable cache_global_data : (string list * int) option;
   }
   type 'a lazy_site_value
   val force_lazy_site_value : 'a Eliom_common.lazy_site_value -> 'a

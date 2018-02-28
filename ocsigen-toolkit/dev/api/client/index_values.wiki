@@ -97,6 +97,12 @@
     and wrap it into a label~.
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="install_global_handler"| value Ot_page_transition.Make.install_global_handler >> ~[<<a_api subproject="client" | module Ot_page_transition.Make >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="install_global_handler_withURI"| value Ot_page_transition.install_global_handler_withURI >> ~[<<a_api subproject="client" | module Ot_page_transition >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|install~_global~_handler~_with~U~R~I>> enables you to skip the step of
+    creating a module of type <<span class="odocwiki_inlinecode"|~P~A~G~E~_~T~R~A~N~S~I~T~I~O~N~_~C~O~N~F>> when screenshots
+    are stored as a data uri~.
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="invisible"| value Ot_style.invisible >> ~[<<a_api subproject="client" | module Ot_style >>~]|<<div class="odocwiki_info"|whether an element is currently invisible in the ~D~O~M ~(not the screen~)~;
     you might want to do a <<span class="odocwiki_inlinecode"|~Ot~_nodeready~.nodeready>> before~.
 >>
@@ -204,6 +210,7 @@
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="right"| value Ot_style.right >> ~[<<a_api subproject="client" | module Ot_style >>~]||
 |@@ @style="tet-align: left;"@@\\S|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="screenshot_container"| value Ot_page_transition.PAGE_TRANSITION_CONF.screenshot_container >> ~[<<a_api subproject="client" | module Ot_page_transition.PAGE_TRANSITION_CONF >>~]||
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="set_adaptative_height"| value Ot_size.set_adaptative_height >> ~[<<a_api subproject="client" | module Ot_size >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|set~_adaptative~_height elt f>> will make the width of the element
     recomputed using <<span class="odocwiki_inlinecode"|f>> everytime the height of the window changes~.
 >>

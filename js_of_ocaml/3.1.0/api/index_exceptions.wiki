@@ -1,0 +1,9 @@
+=Index of exceptions=
+
+|@@ @style="tet-align: left;"@@\\C|
+|@@class="odocwiki_index"@ @@<<a_api text="Camlp4"| exception JsooTopError.Camlp4 >> ~[<<a_api | module JsooTopError >>~]||
+|@@ @style="tet-align: left;"@@\\E|
+|@@class="odocwiki_index"@ @@<<a_api text="Error"| exception Js.Error >> ~[<<a_api | module Js >>~]|<<div class="odocwiki_info"|~The <<span class="odocwiki_inlinecode"|~Error>> exception wrap javascript exceptions when catched by ocaml code~.
+>>
+|
+\\

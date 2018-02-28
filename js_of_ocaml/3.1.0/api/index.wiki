@@ -1,0 +1,155 @@
+==
+
+=@@id="1_JsofocamlAPIReference"@@~Js~_of~_ocaml – ~A~P~I ~Reference=
+
+
+
+
+|<<a_api | module Js >>|<<div class="odocwiki_info"|~Javascript binding
+>>
+|
+|Jstable||
+|<<a_api | module Sys_js >>|<<div class="odocwiki_info"|~Javascript specific ~Sys functions~.
+>>
+|
+|Typed_array||
+
+
+
+
+
+|CSS||
+|Dom||
+|Dom_events||
+|Dom_html||
+|Dom_svg||
+|EventSource||
+|File||
+|Firebug||
+|Form||
+|Geolocation||
+|Json||
+|MutationObserver||
+|<<a_api | module Regexp >>|<<div class="odocwiki_info"|~Types for regexps~.
+>>
+|
+|<<a_api | module Url >>|<<div class="odocwiki_info"|~This module provides functions for tampering with ~Url~.
+>>
+|
+|WebGL||
+|WebSockets||
+|Worker||
+|XmlHttpRequest||
+
+
+
+
+
+=@@id="1_JsofocamllwtAPIReference"@@~Js~_of~_ocaml~_lwt – ~A~P~I ~Reference=
+
+
+
+
+|<<a_api | module Lwt_jsonp >>|<<div class="odocwiki_info"|~This module provides helpers to perform ~J~S~O~N~P calls
+>>
+|
+|Lwt_xmlHttpRequest||
+|Lwt_file||
+|Lwt_js_events||
+|<<a_api | module Lwt_js >>|<<div class="odocwiki_info"|~Javascript specific ~Lwt functions~.
+>>
+|
+
+
+
+
+
+==@@id="2_LwtloggerAPIReference"@@~Lwt logger ~- ~A~P~I ~Reference==
+
+
+
+
+|<<a_api | module Lwt_log_js >>|<<div class="odocwiki_info"|~Lwt logger for js~_of~_ocaml
+>>
+|
+
+
+
+
+
+==@@id="2_GraphicsAPIReference"@@~Graphics ~- ~A~P~I ~Reference==
+
+
+
+
+|Graphics_js||
+
+
+
+
+
+=@@id="1_DerivingAPIReference"@@~Deriving ~- ~A~P~I ~Reference=
+
+
+
+
+|Deriving_Json||
+|<<a_api | module Pa_deriving_Json >>|<<div class="odocwiki_info"|~Deriving~_json syntax extension ~(based on the //deriving// library~)~.
+>>
+|
+
+
+
+
+
+=@@id="1_TyxmlAPIReference"@@~Tyxml ~- ~A~P~I ~Reference=
+
+
+
+
+|Tyxml_js||
+|Tyxml_cast||
+|Tyxml_cast_sigs||
+
+
+
+
+
+=@@id="1_ToplevelAPIReference"@@~Toplevel ~- ~A~P~I ~Reference=
+
+
+
+
+|<<a_api | module JsooTop >>|<<div class="odocwiki_info"|~Helper for ~Js~_of~_ocaml ~Toplevel~.
+>>
+|
+
+
+
+
+
+=@@id="1_TheocamlbuildpluginAPIReference"@@~The ocamlbuild plugin ~- ~A~P~I ~Reference=
+
+
+
+
+|<<a_api | module Ocamlbuild_js_of_ocaml >>|<<div class="odocwiki_info"|~Ocamlbuild plugin to build with js~_of~_ocaml
+>>
+|
+
+
+
+
+
+=@@id="1_Indexes"@@~Indexes=
+
+
+
+* <<a_api text="Index of types" | index types >>
+* <<a_api text="Index of exceptions" | index exceptions >>
+* <<a_api text="Index of values" | index values >>
+* <<a_api text="Index of class methods" | index methods >>
+* <<a_api text="Index of class types" | index class types >>
+* <<a_api text="Index of modules" | index modules >>
+* <<a_api text="Index of module types" | index module types >>
+

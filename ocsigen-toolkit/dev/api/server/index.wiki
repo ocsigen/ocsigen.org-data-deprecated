@@ -17,7 +17,8 @@
 |<<a_api subproject="server" | module Ot_carousel >>|<<div class="odocwiki_info"|~Carousel
 >>
 |
-|<<a_api subproject="server" | module Ot_swipe >>|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|bind ~~compute~_final~_pos elt>> makes <<span class="odocwiki_inlinecode"|elt>> swipable on touch screens~.
+|<<a_api subproject="server" | module Ot_swipe >>|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|bind ~~compute~_final~_pos elt>> makes <<span class="odocwiki_inlinecode"|elt>> left~-right
+   swipable on touch screens~.
 >>
 |
 |<<a_api subproject="server" | module Ot_range >>|<<div class="odocwiki_info"|~Range selection widget

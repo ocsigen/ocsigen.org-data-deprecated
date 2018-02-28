@@ -121,4 +121,5 @@
 <<a_manual project="tuto" version="5.0"|>>
 <<a_manual project="tuto" version="6.0"|>>
 <<a_manual project="tuto" version="6.1"|>>
+<<a_manual project="tuto" version="6.2"|>>
 <<a_manual project="tuto" version="dev"|>>

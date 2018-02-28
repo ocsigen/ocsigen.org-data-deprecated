@@ -17,7 +17,8 @@
 |<<a_api subproject="client" | module Ot_carousel >>|<<div class="odocwiki_info"|~Carousel
 >>
 |
-|<<a_api subproject="client" | module Ot_swipe >>|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|bind ~~compute~_final~_pos elt>> makes <<span class="odocwiki_inlinecode"|elt>> swipable on touch screens~.
+|<<a_api subproject="client" | module Ot_swipe >>|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|bind ~~compute~_final~_pos elt>> makes <<span class="odocwiki_inlinecode"|elt>> left~-right
+   swipable on touch screens~.
 >>
 |
 |<<a_api subproject="client" | module Ot_range >>|<<div class="odocwiki_info"|~Range selection widget
@@ -63,4 +64,5 @@
 * <<a_api subproject="client" text="Index of class methods" | index methods >>
 * <<a_api subproject="client" text="Index of class types" | index class types >>
 * <<a_api subproject="client" text="Index of modules" | index modules >>
+* <<a_api subproject="client" text="Index of module types" | index module types >>
 

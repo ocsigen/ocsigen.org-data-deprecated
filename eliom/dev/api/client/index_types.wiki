@@ -182,7 +182,7 @@
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="server_function"| type Eliom_client.server_function >> ~[<<a_api subproject="client" | module Eliom_client >>~]|<<div class="odocwiki_info"|~A <<span class="odocwiki_inlinecode"|~(~'a~, ~'b~) server~_function>> provides transparently access to a
     server side function which has been created by <<a_api
-    subproject="server"|Eliom_client.server_function>> ~.
+    subproject="server"| val Eliom_client.server_function>> ~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="setone"| type Eliom_parameter_sigs.S.setone >> ~[<<a_api subproject="client" | module Eliom_parameter_sigs.S >>~]|<<div class="odocwiki_info"|~Restriction of <<a_api subproject="client" | type Eliom_parameter_sigs.S.setoneradio >> unary and set parameters~.

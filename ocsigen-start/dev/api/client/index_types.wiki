@@ -18,6 +18,9 @@
 |
 |@@ @style="tet-align: left;"@@\\L|
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="local_calendar"| type Os_date.local_calendar >> ~[<<a_api subproject="client" | module Os_date >>~]||
+|@@ @style="tet-align: left;"@@\\S|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="sms_error"| type Os_connect_phone.sms_error >> ~[<<a_api subproject="client" | module Os_connect_phone >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="sms_error_core"| type Os_connect_phone.sms_error_core >> ~[<<a_api subproject="client" | module Os_connect_phone >>~]||
 |@@ @style="tet-align: left;"@@\\T|
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="t"| type Os_user.t >> ~[<<a_api subproject="client" | module Os_user >>~]|<<div class="odocwiki_info"|~Type alias to <<a_api subproject="client" | type Os_types.User.t >> to allow to use <<span class="odocwiki_inlinecode"|~Os~_user~.t>>~.
 >>
@@ -29,4 +32,9 @@
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="client" text="t"| type Os_platform.t >> ~[<<a_api subproject="client" | module Os_platform >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="t"| type Os_lib.Email_or_phone.Almost.t >> ~[<<a_api subproject="client" | module Os_lib.Email_or_phone.Almost >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="t"| type Os_lib.Email_or_phone.t >> ~[<<a_api subproject="client" | module Os_lib.Email_or_phone >>~]||
+|@@ @style="tet-align: left;"@@\\Y|
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="y"| type Os_lib.Email_or_phone.Almost.y >> ~[<<a_api subproject="client" | module Os_lib.Email_or_phone.Almost >>~]||
+|@@class="odocwiki_index"@ @@<<a_api subproject="client" text="y"| type Os_lib.Email_or_phone.y >> ~[<<a_api subproject="client" | module Os_lib.Email_or_phone >>~]||
 \\

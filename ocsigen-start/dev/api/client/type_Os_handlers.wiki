@@ -13,6 +13,10 @@
     string ->
     unit ->
     'a Eliom_registration.application_content Eliom_registration.kind Lwt.t
+  val confirm_code_signup_handler :
+    unit -> string * (string * (string * string)) -> unit Lwt.t
+  val confirm_code_extra_handler : unit -> string -> unit Lwt.t
+  val confirm_code_recovery_handler : unit -> string -> unit Lwt.t
   val set_password_rpc : string * string -> unit Lwt.t
   val restart : ?url:string -> unit -> unit
 end >>

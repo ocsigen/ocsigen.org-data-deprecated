@@ -58,8 +58,8 @@
     service will keep persistent ~(resp~. all~) non localized ~G~E~T
     arguments of the current service~. ~The default is <<span class="odocwiki_inlinecode"|`~None>>~. ~See
     the eliom manual for more information about <<a_manual
-    chapter="params" fragment="nonlocalizedparameters"|non localized
-    ptimarameters>>~.
+    chapter="server-params" fragment="nonlocalizedparameters"|non localized
+    parameters>>~.
 
 
     ~The optional <<span class="odocwiki_inlinecode"|~~name>> argument provides a name for the service~;
@@ -68,7 +68,7 @@
 
 
     ~If the optional <<span class="odocwiki_inlinecode"|~~csrf~_safe>> argument is <<span class="odocwiki_inlinecode"|true>>~, we create a
-    <<a_manual chapter="security" fragment="csrf"|"CSRF-safe"
+    <<a_manual chapter="server-security" fragment="csrf"|"CSRF-safe"
     service>>~. ~In that case the <<span class="odocwiki_inlinecode"|~~name>> argument is ignored~. ~The
     default is <<span class="odocwiki_inlinecode"|false>>~.
 

@@ -34,6 +34,20 @@
     <<a_api subproject="client" | exception Os_handlers.Invalid_action_key >> or <<a_api subproject="client" | exception Os_handlers.Account_already_activated_unconnected >> can be
     raised~.
 >>
+<<pre id="VALconfirm_code_signup_handler" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|confirm~_code~_signup~_handler>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|\\  unit <<span class="ocsforge_color_delimiter"| -> >> string * <<span class="ocsforge_color_delimiter"| ( >>string * <<span class="ocsforge_color_delimiter"| ( >>string * string<<span class="ocsforge_color_delimiter"| ) >><<span class="ocsforge_color_delimiter"| ) >> <<span class="ocsforge_color_delimiter"| -> >> unit <<span class="ocsforge_color_uid"|Lwt>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>>>>>><<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|confirm~_code~_signup~_handler ~(~) ~(first~_name~, ~(last~_name~, ~(pass~,
+    number~)~)~)>> sends a verification code to <<span class="odocwiki_inlinecode"|number>>~, displays a popup
+    for confirming the code~, and creates the account if all goes
+    well~.
+>>
+<<pre id="VALconfirm_code_extra_handler" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|confirm~_code~_extra~_handler>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|unit <<span class="ocsforge_color_delimiter"| -> >> string <<span class="ocsforge_color_delimiter"| -> >> unit <<span class="ocsforge_color_uid"|Lwt>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>>>>>><<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|confirm~_code~_extra~_handler ~(~) number>> is like
+    <<span class="odocwiki_inlinecode"|confirm~_code~_signup~_handler>> but for adding an additional number to
+    the account~. ~The new phone is added to the account~.
+>>
+<<pre id="VALconfirm_code_recovery_handler" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|confirm~_code~_recovery~_handler>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|unit <<span class="ocsforge_color_delimiter"| -> >> string <<span class="ocsforge_color_delimiter"| -> >> unit <<span class="ocsforge_color_uid"|Lwt>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>>>>>><<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|confirm~_code~_recovery~_handler ~(~) number>> is like
+    <<span class="odocwiki_inlinecode"|confirm~_code~_signup~_handler>> but for recovering a lost
+    password~. ~The user is redirected to the settings page for setting
+    a new password~.
+>>
 <<pre id="VALset_password_rpc" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|set~_password~_rpc>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|string * string <<span class="ocsforge_color_delimiter"| -> >> unit <<span class="ocsforge_color_uid"|Lwt>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>>>>>><<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|set~_password~_rpc ~(password~, confirmation~_password~)>> is a ~R~P~C to
     <<span class="odocwiki_inlinecode"|set~_password>>~.
 >>

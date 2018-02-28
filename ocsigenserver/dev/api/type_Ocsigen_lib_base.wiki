@@ -117,6 +117,7 @@
       val remove_all_assoc_q : 'a -> ('a * 'b) list -> ('a * 'b) list
       val is_prefix : 'a list -> 'a list -> bool
       val chop : int -> 'a list -> 'a list
+      val split_at : int -> 'a list -> 'a list * 'a list
     end
   module Clist :
     sig
@@ -206,6 +207,7 @@
       type t = string
       val compare : t -> t -> int
       val equal : t -> t -> bool
+      val split_on_char : char -> string -> string list
       external unsafe_get : string -> int -> char = "%string_unsafe_get"
       external unsafe_set : bytes -> int -> char -> unit
         = "%string_unsafe_set"
@@ -269,6 +271,7 @@
           val equal : t -> t -> bool
           val subset : t -> t -> bool
           val iter : (elt -> unit) -> t -> unit
+          val map : (elt -> elt) -> t -> t
           val fold : (elt -> 'a -> 'a) -> t -> 'a -> 'a
           val for_all : (elt -> bool) -> t -> bool
           val exists : (elt -> bool) -> t -> bool
@@ -371,6 +374,7 @@
         sig
           type t = backtrace_slot
           val is_raise : t -> bool
+          val is_inline : t -> bool
           val location : t -> location option
           val format : int -> t -> string option
         end
@@ -378,6 +382,8 @@
       val raw_backtrace_length : raw_backtrace -> int
       val get_raw_backtrace_slot : raw_backtrace -> int -> raw_backtrace_slot
       val convert_raw_backtrace_slot : raw_backtrace_slot -> backtrace_slot
+      val get_raw_backtrace_next_slot :
+        raw_backtrace_slot -> raw_backtrace_slot option
       val exn_slot_id : exn -> int
       val exn_slot_name : exn -> string
       val register_exn_printer : ((exn -> string) -> exn -> string) -> unit

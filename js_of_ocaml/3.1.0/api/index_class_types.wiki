@@ -1,0 +1,43 @@
+=Index of class types=
+
+|@@ @style="tet-align: left;"@@\\D|
+|@@class="odocwiki_index"@ @@<<a_api text="date"| class type Js.date >> ~[<<a_api | module Js >>~]|<<div class="odocwiki_info"|~Specification of ~Javascript date objects~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="date_constr"| class type Js.date_constr >> ~[<<a_api | module Js >>~]|<<div class="odocwiki_info"|~Specification of the date constructor~, considered as an object~.
+>>
+|
+|@@ @style="tet-align: left;"@@\\E|
+|@@class="odocwiki_index"@ @@<<a_api text="error"| class type Js.error >> ~[<<a_api | module Js >>~]|<<div class="odocwiki_info"|~Specification of ~Javascript error object~.
+>>
+|
+|@@ @style="tet-align: left;"@@\\J|
+|@@class="odocwiki_index"@ @@<<a_api text="js_array"| class type Js.js_array >> ~[<<a_api | module Js >>~]|<<div class="odocwiki_info"|~Specification of ~Javascript regular arrays~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="js_string"| class type Js.js_string >> ~[<<a_api | module Js >>~]|<<div class="odocwiki_info"|~Specification of ~Javascript string objects~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="json"| class type Js.json >> ~[<<a_api | module Js >>~]|<<div class="odocwiki_info"|~Specification of ~Javascript ~J~S~O~N object~.
+>>
+|
+|@@ @style="tet-align: left;"@@\\M|
+|@@class="odocwiki_index"@ @@<<a_api text="match_result"| class type Js.match_result >> ~[<<a_api | module Js >>~]|<<div class="odocwiki_info"|~Specification of match result objects
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="math"| class type Js.math >> ~[<<a_api | module Js >>~]|<<div class="odocwiki_info"|~Specification of ~Javascript math object~.
+>>
+|
+|@@ @style="tet-align: left;"@@\\N|
+|@@class="odocwiki_index"@ @@<<a_api text="number"| class type Js.number >> ~[<<a_api | module Js >>~]|<<div class="odocwiki_info"|~Specification of ~Javascript number objects~.
+>>
+|
+|@@ @style="tet-align: left;"@@\\R|
+|@@class="odocwiki_index"@ @@<<a_api text="regExp"| class type Js.regExp >> ~[<<a_api | module Js >>~]|<<div class="odocwiki_info"|~Specification of ~Javascript regular expression objects~.
+>>
+|
+|@@ @style="tet-align: left;"@@\\S|
+|@@class="odocwiki_index"@ @@<<a_api text="string_constr"| class type Js.string_constr >> ~[<<a_api | module Js >>~]|<<div class="odocwiki_info"|~Specification of the string constructor~, considered as an object~.
+>>
+|
+\\

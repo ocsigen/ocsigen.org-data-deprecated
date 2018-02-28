@@ -12,7 +12,6 @@
     ?onclose:(unit -> unit Lwt.t) ->
     ?close_on_background_click:bool ->
     ?close_on_escape:bool ->
-    ?ios_scroll_pos_fix:bool ->
     ((unit -> unit Lwt.t) ->
      [< Html_types.div_content ] Eliom_content.Html.elt Lwt.t) ->
     [> `Div ] Eliom_content.Html.elt Lwt.t

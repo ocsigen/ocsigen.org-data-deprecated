@@ -17,6 +17,7 @@
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Ot_lib"| module Ot_lib >> ||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Ot_nodeready"| module Ot_nodeready >> ||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Ot_noderesize"| module Ot_noderesize >> ||
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Ot_page_transition"| module Ot_page_transition >> ||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Ot_picture_uploader"| module Ot_picture_uploader >> |<<div class="odocwiki_info"|~Picture uploader widget
 >>
 |
@@ -36,7 +37,8 @@
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Ot_sticky"| module Ot_sticky >> ||
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Ot_style"| module Ot_style >> ||
-|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Ot_swipe"| module Ot_swipe >> |<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|bind ~~compute~_final~_pos elt>> makes <<span class="odocwiki_inlinecode"|elt>> swipable on touch screens~.
+|@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Ot_swipe"| module Ot_swipe >> |<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|bind ~~compute~_final~_pos elt>> makes <<span class="odocwiki_inlinecode"|elt>> left~-right
+   swipable on touch screens~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api subproject="server" text="Ot_time_picker"| module Ot_time_picker >> |<<div class="odocwiki_info"|~This module implements a clock~-style time picker~.
