@@ -163,3 +163,45 @@ return a;var b=b-1|0,e=a+c|0,c=a,a=e;continue
 
 >>
 >>
+
+<<div class="main-page-section main-page-section-users"|
+<<div class="main-page-section-content"|
+== Users
+
+Here is a short list of users:
+
+* [[http://www.besport.com/|BeSport]]
+* [[https://code.facebook.com/posts/264544830379293/hack-a-new-programming-language-for-hhvm/|Facebook]] <<span class="small"|(internal tools for developers) >>
+* [[https://gitlab.com/adrien-n/prose|Prose]]
+* [[http://www.rambugo.com/|Rambugo]]
+* [[http://cumulus.mirai.fr/|Cumulus]]
+* [[http://life.tl/|Life, the game]]
+* [[http://pumgrana.com/|Pumgrana]]
+* [[http://gencore.bio.nyu.edu/|NYU CGSB Genomics Core]]
+* [[http://try.ocamlpro.com/|Try OCaml]]
+* [[http://ashimaarts.com|Ashima Arts]]
+* [[http://www.licor.com/|Li-Cor]]
+* [[http://www.freebase.com/|Metaweb/Freebase]]
+* [[http://oasis.ocamlcore.org/|Oasis]]
+* [[http://forge.ocamlcore.org/projects/lambdium/|Lambdium]]
+* [[https://www.summermusicstore.com/|Summer music store]]
+* [[http://code.google.com/p/nurpawiki/|Nurpawiki]]
+* [[http://eigenclass.org/|Eigenclass]]
+* [[http://www.elehack.net/|Elehack]]
+* [[http://www.pps.univ-paris-diderot.fr/|PPS]]
+* [[http://www.haejinchun.com|Haejinchun]]
+* ...
+
+<<|
+* [[http://www.baoug.org/|Baoug]]
+* [[http://www.corefarm.com/|Corefarm.com]] and [[http://www.corefarm.org/|Corefarm.org]]
+* [[http://www.nleyten.com/|nLeyten]]
+* [[http://www.sotokolan.com/|Sotokolan]]
+* [[http://www.mytwittshirt.com/|My Twittshirt]]
+>>
+<<| À ajouter : Cowebo Punchup >>
+>>
+Tell us if you want (or do not want) to appear in this list.
+
+>>
+>>
