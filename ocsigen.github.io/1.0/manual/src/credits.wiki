@@ -3,6 +3,26 @@
 
 <<header |=Credits>>
 
+
+Ocsigen is a collaborative open source project mainly developed by
+[[https://www.besport.com|Be Sport]] and
+[[http://www.univ-paris-diderot.fr|Paris Diderot university]].
+
+It comes from a research project of the
+[[https://www.irif.fr/|Research Institute for Foundations of Computer Science (IRIF)]]
+([[http://www.univ-paris-diderot.fr|Paris Diderot university]] and [[http://www.cnrs.fr|CNRS]]).
+
+It is part of the [[http://www.irill.org|IRILL]],
+a center  for  Research and  Innovation  on  Free  Software, located at Inria Paris.
+
+
+It received founding from [[http://inria.fr|Inria]] and the
+[[http://www.agence-nationale-recherche.fr/|ANR]], through three research projects:
+*@@class="sponsorprojects"@ @@ //Programmation fonctionnelle pour le Web// (2007-2010)
+* //[[http://www-sop.inria.fr/indes/pwd/|PWD]]// (2010-2013) labellised by the [[http://www.systematic-paris-region.org|System@tic cluster]]
+* //Ubiquitous Content Framework// (FUI project, [[http://www.systematic-paris-region.org|System@tic cluster]])
+
+
 ==Contact
 
 You can send a (private) e-mail to the [[mailto:contact@ocsigen.org|development team]]. However, please prefer [[https://discuss.ocaml.org|OCaml's discuss]], with tag Ocsigen, for all your technical questions.
