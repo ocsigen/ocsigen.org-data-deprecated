@@ -183,7 +183,10 @@
 
     ~If <<span class="odocwiki_inlinecode"|~~blocking>> is not specified~, <<span class="odocwiki_inlinecode"|of~_unix~_file~_descr>> chooses non~-blocking
     mode for ~Unix sockets~, ~Unix pipes~, and ~Windows sockets~, and blocking mode
-    for everything else~.
+    for everything else~. **~Note~:** not specifying <<span class="odocwiki_inlinecode"|~~blocking>> causes <<span class="odocwiki_inlinecode"|fstat>> to
+    be lazily called on <<span class="odocwiki_inlinecode"|fd>>~, the first time your code performs ~I~/~O on <<span class="odocwiki_inlinecode"|fd~'>>~.
+    ~This <<span class="odocwiki_inlinecode"|fstat>> call can be expensive~, so if you use <<span class="odocwiki_inlinecode"|of~_unix~_file~_descr>> a
+    lot~, be sure to specify <<span class="odocwiki_inlinecode"|~~blocking>> explicitly~.
 
 
     <<span class="odocwiki_inlinecode"|of~_unix~_file~_descr>> runs a system call to set the specified or chosen
@@ -260,7 +263,10 @@
 >>
 <<pre class="ocsforge_color odocwiki_code" id="TYPEprocess_status"|<<span class="ocsforge_color_keyword"|type>> <<span class="odocwiki_name"|process~_status>> <<span class="ocsforge_color_delimiter"|~=>> <<span class="odocwiki_type"|<<span class="ocsforge_color_uid"|Unix>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|process_status>>>>  <<span class="ocsforge_color_delimiter"|~=>> <<span class="odocwiki_variants"|<<span class="odocwiki_variant"|<<span class="odocwiki_variant_constr"|<<span class="ocsforge_color_keyword"| ~|>> <<span class="ocsforge_color_uid"|WEXITED>> <<span class="ocsforge_color_keyword"|of>> <<span class="odocwiki_type"|int>>>>>><<span class="odocwiki_variant"|<<span class="odocwiki_variant_constr"|<<span class="ocsforge_color_keyword"| ~|>> <<span class="ocsforge_color_uid"|WSIGNALED>> <<span class="ocsforge_color_keyword"|of>> <<span class="odocwiki_type"|int>>>>>><<span class="odocwiki_variant"|<<span class="odocwiki_variant_constr"|<<span class="ocsforge_color_keyword"| ~|>> <<span class="ocsforge_color_uid"|WSTOPPED>> <<span class="ocsforge_color_keyword"|of>> <<span class="odocwiki_type"|int>>>>>>>>>><<pre class="ocsforge_color odocwiki_code" id="TYPEwait_flag"|<<span class="ocsforge_color_keyword"|type>> <<span class="odocwiki_name"|wait~_flag>> <<span class="ocsforge_color_delimiter"|~=>> <<span class="odocwiki_type"|<<span class="ocsforge_color_uid"|Unix>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|wait_flag>>>>  <<span class="ocsforge_color_delimiter"|~=>> <<span class="odocwiki_variants"|<<span class="odocwiki_variant"|<<span class="odocwiki_variant_constr"|<<span class="ocsforge_color_keyword"| ~|>> <<span class="ocsforge_color_uid"|WNOHANG>>>>>><<span class="odocwiki_variant"|<<span class="odocwiki_variant_constr"|<<span class="ocsforge_color_keyword"| ~|>> <<span class="ocsforge_color_uid"|WUNTRACED>>>>>>>>>><<pre id="VALwait" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|wait>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|unit <<span class="ocsforge_color_delimiter"| -> >> <<span class="ocsforge_color_delimiter"| ( >>int * <<a_api text="process_status" | type Lwt_unix.process_status >><<span class="ocsforge_color_delimiter"| ) >> <<a_api text="Lwt.t" | type Lwt.t >>>>>><<div class="odocwiki_info"|~Wrapper for <<span class="odocwiki_inlinecode"|~Unix~.wait>>
 >>
-<<pre id="VALwaitpid" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|waitpid>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|\\  <<a_api text="wait_flag" | type Lwt_unix.wait_flag >> list <<span class="ocsforge_color_delimiter"| -> >>\\  int <<span class="ocsforge_color_delimiter"| -> >> <<span class="ocsforge_color_delimiter"| ( >>int * <<a_api text="process_status" | type Lwt_unix.process_status >><<span class="ocsforge_color_delimiter"| ) >> <<a_api text="Lwt.t" | type Lwt.t >>>>>><<div class="odocwiki_info"|~Wrapper for <<span class="odocwiki_inlinecode"|~Unix~.waitpid>>
+<<pre id="VALwaitpid" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|waitpid>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|\\  <<a_api text="wait_flag" | type Lwt_unix.wait_flag >> list <<span class="ocsforge_color_delimiter"| -> >>\\  int <<span class="ocsforge_color_delimiter"| -> >> <<span class="ocsforge_color_delimiter"| ( >>int * <<a_api text="process_status" | type Lwt_unix.process_status >><<span class="ocsforge_color_delimiter"| ) >> <<a_api text="Lwt.t" | type Lwt.t >>>>>><<div class="odocwiki_info"|~A promise~-returning analog to
+    [[ https://caml.inria.fr/pub/docs/manual-ocaml/libref/Unix.html#VALwaitpid|
+    <<span class="odocwiki_inlinecode"|~Unix~.waitpid>>]]~. ~This call is non~-blocking on ~Unix~-like systems~, but is
+    always blocking on ~Windows~.
 >>
 <<pre class="ocsforge_color odocwiki_code" id="TYPEresource_usage"|<<span class="ocsforge_color_keyword"|type>> <<span class="odocwiki_name"|resource~_usage>> <<span class="ocsforge_color_delimiter"|~=>> <<span class="ocsforge_color_delimiter"|~{>>
 <<span class="odocwiki_record"|<<span class="odocwiki_field"|<<span class="odocwiki_field_descr"|  <<span class="ocsforge_color_label"|ru_utime:>> <<span class="odocwiki_type"|float>><<span class="ocsforge_color_delimiter"|~;>> >><<span class="odocwiki_comments"|<<span class="odocwiki_comments_open"|(*>> <<span|<<div class="odocwiki_info"|~User time used
@@ -269,8 +275,8 @@
 >>
 >><<span class="odocwiki_comments_close"| ~*)>>>>>>>><<span class="ocsforge_color_delimiter"|~}>>>><<div class="odocwiki_info"|~Resource usages
 >>
-<<pre id="VALwait4" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|wait~4>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|\\  <<a_api text="wait_flag" | type Lwt_unix.wait_flag >> list <<span class="ocsforge_color_delimiter"| -> >>\\  int <<span class="ocsforge_color_delimiter"| -> >> <<span class="ocsforge_color_delimiter"| ( >>int * <<a_api text="process_status" | type Lwt_unix.process_status >> * <<a_api text="resource_usage" | type Lwt_unix.resource_usage >><<span class="ocsforge_color_delimiter"| ) >> <<a_api text="Lwt.t" | type Lwt.t >>>>>><<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|wait~4 flags pid>> returns <<span class="odocwiki_inlinecode"|~(pid~, status~, rusage~)>> where <<span class="odocwiki_inlinecode"|~(pid~,
-      status~)>> is the same result as <<span class="odocwiki_inlinecode"|~Unix~.waitpid flags pid>>~, and
+<<pre id="VALwait4" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|wait~4>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|\\  <<a_api text="wait_flag" | type Lwt_unix.wait_flag >> list <<span class="ocsforge_color_delimiter"| -> >>\\  int <<span class="ocsforge_color_delimiter"| -> >> <<span class="ocsforge_color_delimiter"| ( >>int * <<a_api text="process_status" | type Lwt_unix.process_status >> * <<a_api text="resource_usage" | type Lwt_unix.resource_usage >><<span class="ocsforge_color_delimiter"| ) >> <<a_api text="Lwt.t" | type Lwt.t >>>>>><<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|wait~4 flags pid>> returns <<span class="odocwiki_inlinecode"|~(pid~, status~, rusage~)>> where <<span class="odocwiki_inlinecode"|~(pid~, status~)>>
+      is the same result as <<span class="odocwiki_inlinecode"|~Unix~.waitpid flags pid>>~, and
       <<span class="odocwiki_inlinecode"|rusage>> contains accounting information about the child~.
 
 
@@ -410,11 +416,29 @@
 <<pre id="VALwritable" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|writable>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<a_api text="file_descr" | type Lwt_unix.file_descr >> <<span class="ocsforge_color_delimiter"| -> >> bool>>>><<div class="odocwiki_info"|~Returns whether the given file descriptor is currently
       writable~.
 >>
-<<pre id="VALwait_read" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|wait~_read>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<a_api text="file_descr" | type Lwt_unix.file_descr >> <<span class="ocsforge_color_delimiter"| -> >> unit <<a_api text="Lwt.t" | type Lwt.t >>>>>><<div class="odocwiki_info"|waits ~(without blocking other threads~) until there is something
-      to read on the file descriptor
+<<pre id="VALwait_read" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|wait~_read>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<a_api text="file_descr" | type Lwt_unix.file_descr >> <<span class="ocsforge_color_delimiter"| -> >> unit <<a_api text="Lwt.t" | type Lwt.t >>>>>><<div class="odocwiki_info"|~Waits ~(without blocking other threads~) until there is something
+      to read from the file descriptor~.
+
+
+      ~Note that you don~'t need to use this function if you are
+      using ~Lwt ~I~/~O functions for reading~, since they provide
+      non~-blocking waiting automatically~.
+
+
+      ~The intended use case for this function is interfacing with
+      existing libraries that are known to be blocking~.
 >>
-<<pre id="VALwait_write" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|wait~_write>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<a_api text="file_descr" | type Lwt_unix.file_descr >> <<span class="ocsforge_color_delimiter"| -> >> unit <<a_api text="Lwt.t" | type Lwt.t >>>>>><<div class="odocwiki_info"|waits ~(without blocking other threads~) until it is possible to
-      write on the file descriptor
+<<pre id="VALwait_write" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|wait~_write>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<a_api text="file_descr" | type Lwt_unix.file_descr >> <<span class="ocsforge_color_delimiter"| -> >> unit <<a_api text="Lwt.t" | type Lwt.t >>>>>><<div class="odocwiki_info"|~Waits ~(without blocking other threads~) until it is possible to
+      write on the file descriptor~.
+
+
+      ~Note that you don~'t need to use this function if you are
+      using ~Lwt ~I~/~O functions for writing~, since they provide
+      non~-blocking waiting automatically~.
+
+
+      ~The intended use case for this function is interfacing with
+      existing libraries that are known to be blocking~.
 >>
 
 

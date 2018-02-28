@@ -20,8 +20,8 @@
 
 
 
-* the callback passed to register methods is of type <<span class="odocwiki_inlinecode"|unit ~-~>
-      unit>> and not <<span class="odocwiki_inlinecode"|event ~-~> unit>>
+* the callback passed to register methods is of type <<span class="odocwiki_inlinecode"|unit ~-~> unit>>
+      and not <<span class="odocwiki_inlinecode"|event ~-~> unit>>
 * register methods return a lazy value which unregisters the
       event when forced
 <<pre class="ocsforge_color odocwiki_code"|<<span id="METHODcleanup"|<<span class="ocsforge_color_keyword"|method>> <<span class="ocsforge_color_keyword"|private>> <<span class="ocsforge_color_keyword"|virtual>> <<span class="odocwiki_name"|cleanup>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|unit>>>><<div class="odocwiki_info"|~Cleanup resources associated with the engine~.

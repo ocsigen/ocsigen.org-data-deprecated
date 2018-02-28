@@ -11,8 +11,13 @@
 
 ----
 <<pre id="VALdetach" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|detach>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<span class="ocsforge_color_delimiter"| ( >>'a <<span class="ocsforge_color_delimiter"| -> >> 'b<<span class="ocsforge_color_delimiter"| ) >> <<span class="ocsforge_color_delimiter"| -> >> 'a <<span class="ocsforge_color_delimiter"| -> >> 'b <<a_api text="Lwt.t" | type Lwt.t >>>>>><<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|detach f x>> runs the computation <<span class="odocwiki_inlinecode"|f x>> in a separate preemptive thread~.
-      <<span class="odocwiki_inlinecode"|detach>> evaluates to an ~Lwt thread~, which waits for the preemptive thread
-      to complete~.
+      <<span class="odocwiki_inlinecode"|detach>> evaluates to an ~Lwt promise~, which is pending until the
+      preemptive thread completes~.
+
+
+      <<span class="odocwiki_inlinecode"|detach>> calls <<a_api | val Lwt_preemptive.simple_init >> internally~, which means that the number of
+      preemptive threads is capped by default at four~. ~If you would like a
+      higher limit~, call <<a_api | val Lwt_preemptive.init >> or <<a_api | val Lwt_preemptive.set_bounds >> directly~.
 
 
       ~Note that ~Lwt thread~-local storage ~(i~.e~.~, <<a_api | val Lwt.with_value >>~) cannot be
@@ -33,11 +38,13 @@
 <<pre id="VALinit" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|init>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|int <<span class="ocsforge_color_delimiter"| -> >> int <<span class="ocsforge_color_delimiter"| -> >> <<span class="ocsforge_color_delimiter"| ( >>string <<span class="ocsforge_color_delimiter"| -> >> unit<<span class="ocsforge_color_delimiter"| ) >> <<span class="ocsforge_color_delimiter"| -> >> unit>>>><<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|init min max log>> initialises this module~. i~.e~. it launches the
       minimum number of preemptive threads and starts the **      dispatcher**~.
 >>
-<<pre id="VALsimple_init" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|simple~_init>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|unit <<span class="ocsforge_color_delimiter"| -> >> unit>>>><<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|simple~_init ~(~)>> does a //simple initialization//~. i~.e~. with
-      default parameters if the library is not yet initialised~.
+<<pre id="VALsimple_init" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|simple~_init>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|unit <<span class="ocsforge_color_delimiter"| -> >> unit>>>><<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|simple~_init ~(~)>> checks if the library is not yet initialized~, and if not~,
+    does a //simple initialization//~. ~The minimum number of threads is set to
+    zero~, maximum to four~, and the log function is left unchanged~, i~.e~. the
+    default built~-in logging function is used~. ~See <<a_api | val Lwt_preemptive.init >>~.
 
 
-      ~Note~: this function is automatically called <<a_api | val Lwt_preemptive.detach >>~.
+    ~Note~: this function is automatically called by <<a_api | val Lwt_preemptive.detach >>~.
 >>
 <<pre id="VALget_bounds" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|get~_bounds>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|unit <<span class="ocsforge_color_delimiter"| -> >> int * int>>>><<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|get~_bounds ~(~)>> returns the minimum and the maximum number of
       preemptive threads~.

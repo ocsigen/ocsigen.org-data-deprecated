@@ -31,9 +31,7 @@
 ==~P~P~X syntax extension
 ===[[Ppx_lwt|Ppx_lwt]]
 ==~Miscellaneous
-===[[Lwt_glib|Lwt_glib]]
 ===[[Lwt_preemptive|Lwt_preemptive]]
-===[[Lwt_ssl|Lwt_ssl]]
 ==~Camlp~4 syntax extensions
 ===[[Pa_lwt|Pa_lwt]]
 ===[[Pa_lwt_log|Pa_lwt_log]]

@@ -108,6 +108,19 @@
     ?perm:Unix.file_perm ->
     mode:'a Lwt_io.mode ->
     Lwt_io.file_name -> ('a Lwt_io.channel -> 'b Lwt.t) -> 'b Lwt.t
+  val open_temp_file :
+    ?buffer:Lwt_bytes.t ->
+    ?flags:Unix.open_flag list ->
+    ?perm:Unix.file_perm ->
+    ?temp_dir:string ->
+    ?prefix:string -> unit -> (string * Lwt_io.output_channel) Lwt.t
+  val with_temp_file :
+    ?buffer:Lwt_bytes.t ->
+    ?flags:Unix.open_flag list ->
+    ?perm:Unix.file_perm ->
+    ?temp_dir:string ->
+    ?prefix:string ->
+    (string * Lwt_io.output_channel -> 'b Lwt.t) -> 'b Lwt.t
   val open_connection :
     ?fd:Lwt_unix.file_descr ->
     ?in_buffer:Lwt_bytes.t ->

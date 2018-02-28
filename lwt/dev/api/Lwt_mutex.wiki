@@ -30,7 +30,7 @@
 >>
 <<pre id="VALwith_lock" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|with~_lock>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<a_api text="t" | type Lwt_mutex.t >> <<span class="ocsforge_color_delimiter"| -> >> <<span class="ocsforge_color_delimiter"| ( >>unit <<span class="ocsforge_color_delimiter"| -> >> 'a <<a_api text="Lwt.t" | type Lwt.t >><<span class="ocsforge_color_delimiter"| ) >> <<span class="ocsforge_color_delimiter"| -> >> 'a <<a_api text="Lwt.t" | type Lwt.t >>>>>><<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|with~_lock lock f>> is used to lock a mutex within a block scope~.
       ~The function <<span class="odocwiki_inlinecode"|f ~(~)>> is called with the mutex locked~, and its
-      result is returned from the call to ~. ~If an exception
+      result is returned from the call to <<span class="odocwiki_inlinecode"|with~_lock>>~. ~If an exception
       is raised from f~, the mutex is also unlocked before the scope of
-       is exited~.
+      <<span class="odocwiki_inlinecode"|with~_lock>> is exited~.
 >>

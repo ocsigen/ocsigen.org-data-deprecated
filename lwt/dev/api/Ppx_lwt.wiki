@@ -232,6 +232,18 @@ $ ocamlfind ocamlc -package lwt.ppx \
 
 
 
+   ~With ~O~Caml ~4~.~0~4~.~0 and on a convenient syntax is available for sequencing ~Lwt
+   operations using <<span class="odocwiki_inlinecode"|~;~%lwt>>~.  ~This allows free mixing of standard <<span class="odocwiki_inlinecode"|~;>>
+   sequencing and <<span class="odocwiki_inlinecode"|~;~%lwt>> sequencing without extra parentheses~:
+   
+<<code language='ocaml'|     let i = ref 0 in
+     write stdout "Hello, ";%lwt
+     incr i;
+     write stdout "world!"
+   >>
+
+
+
    ~It is also possible to sequence ~Lwt operations with the <<span class="odocwiki_inlinecode"|~>~>>> operator~:
    
 <<code language='ocaml'|     write stdout "Hello, " ~>> write stdout "world!"

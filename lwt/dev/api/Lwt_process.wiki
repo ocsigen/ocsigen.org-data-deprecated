@@ -11,7 +11,7 @@
         
 <<code language='ocaml'|          ("ls", [|"ls"; "-l"|])
         >>
-~.
+
 
 
         ~Notes~:
@@ -39,7 +39,7 @@
         
 <<code language='ocaml'|          ("", [|"echo"; "foo"; "bar"|])
         >>
-~.
+
 >>
 <<pre id="VALshell" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|shell>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|string <<span class="ocsforge_color_delimiter"| -> >> <<a_api text="command" | type Lwt_process.command >>>>>><<div class="odocwiki_info"|~A command executed with the shell~. ~(with <<span class="odocwiki_inlinecode"|"~/bin~/sh ~-c ~<cmd~>">> on
       ~Unix and <<span class="odocwiki_inlinecode"|"cmd~.exe ~/c ~<cmd~>">> on ~Windows~)~.

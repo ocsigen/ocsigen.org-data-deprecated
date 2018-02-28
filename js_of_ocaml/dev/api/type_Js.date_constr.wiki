@@ -6,5 +6,6 @@
   method _UTC_ms :
     int -> int -> int -> int -> int -> int -> int -> float Js.meth
   method _UTC_sec : int -> int -> int -> int -> int -> int -> float Js.meth
+  method now : float Js.meth
   method parse : Js.js_string Js.t -> float Js.meth
 end >>

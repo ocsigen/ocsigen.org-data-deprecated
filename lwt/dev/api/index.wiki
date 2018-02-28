@@ -16,7 +16,7 @@ any external package~.
 
 
 
-|<<a_api | module Lwt >>|<<div class="odocwiki_info"|~Module <<span class="odocwiki_inlinecode"|~Lwt>>~: cooperative light~-weight threads~.
+|<<a_api | module Lwt >>|<<div class="odocwiki_info"|~Asynchronous programming with promises~.
 >>
 |
 |<<a_api | module Lwt_result >>|<<div class="odocwiki_info"|~Explicit error handling
@@ -91,7 +91,7 @@ any external package~.
 |<<a_api | module Lwt_io >>|<<div class="odocwiki_info"|~Buffered byte channels
 >>
 |
-|<<a_api | module Lwt_log >>|<<div class="odocwiki_info"|~Logging facility
+|<<a_api | module Lwt_log >>|<<div class="odocwiki_info"|~Logging functions
 >>
 |
 |<<a_api | module Lwt_main >>|<<div class="odocwiki_info"|~Main loop and event queue
@@ -178,14 +178,8 @@ functions~/packages into ~Lwt~.
 
 
 
-|<<a_api | module Lwt_glib >>|<<div class="odocwiki_info"|~Glib integration
->>
-|
 |<<a_api | module Lwt_preemptive >>|<<div class="odocwiki_info"|~This module allows to mix preemptive threads with <<span class="odocwiki_inlinecode"|~Lwt>>
     cooperative threads~.
->>
-|
-|<<a_api | module Lwt_ssl >>|<<div class="odocwiki_info"|~O~Caml~-~S~S~L integration
 >>
 |
 

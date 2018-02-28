@@ -62,6 +62,8 @@
   val iter : ('a -> unit) -> 'a Lwt_stream.t -> unit Lwt.t
   val iter_p : ('a -> unit Lwt.t) -> 'a Lwt_stream.t -> unit Lwt.t
   val iter_s : ('a -> unit Lwt.t) -> 'a Lwt_stream.t -> unit Lwt.t
+  val iter_n :
+    ?max_threads:int -> ('a -> unit Lwt.t) -> 'a Lwt_stream.t -> unit Lwt.t
   val find : ('a -> bool) -> 'a Lwt_stream.t -> 'a option Lwt.t
   val find_s : ('a -> bool Lwt.t) -> 'a Lwt_stream.t -> 'a option Lwt.t
   val find_map : ('a -> 'b option) -> 'a Lwt_stream.t -> 'b option Lwt.t

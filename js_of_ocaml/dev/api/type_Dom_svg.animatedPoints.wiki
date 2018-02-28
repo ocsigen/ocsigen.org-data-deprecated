@@ -1,4 +1,0 @@
-<<code language="ocaml" | object
-  method animatedpoints : Dom_svg.pointList Js.t Js.readonly_prop
-  method points : Dom_svg.pointList Js.t Js.readonly_prop
-end >>
