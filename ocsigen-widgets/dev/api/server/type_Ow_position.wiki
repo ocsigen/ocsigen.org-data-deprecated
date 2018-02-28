@@ -1,6 +1,0 @@
-<<code language="ocaml" | sig
-  type position' = [ `absolute | `fixed ]
-  type common_orientation' = [ `center ]
-  type h_orientation' = [ `center | `left | `right ]
-  type v_orientation' = [ `bottom | `center | `top ]
-end >>

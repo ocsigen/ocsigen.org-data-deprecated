@@ -1,8 +1,0 @@
-=Module <<a_api_type subproject="server" | module Ow_hammer_swipe >> =
-<<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module>> <<span class="ocsforge_color_uid"|<<span class="ocsforge_color_uid"|Ow_hammer_swipe>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="ocsforge_color_keyword"|sig>><<a_api subproject="server" text=".." | module Ow_hammer_swipe >><<span class="ocsforge_color_keyword"|end>>>>create swipe and fill with panes~_list
-      ~Swipe html element is derectly add into body
-      ~Because it need to be in top level of body
-
-----
-
-<<span class="odocwiki_inlinecode"|show~_pane t index>>

@@ -1,7 +1,0 @@
-=Module <<a_api_type subproject="server" | module Ow_hookjs >> =
-<<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module>> <<span class="ocsforge_color_uid"|<<span class="ocsforge_color_uid"|Ow_hookjs>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="ocsforge_color_keyword"|sig>><<a_api subproject="server" text=".." | module Ow_hookjs >><<span class="ocsforge_color_keyword"|end>>>>~Binding for hook~.js~.
-**See also** [[ http://www.usehook.com |~Hook~.js]]\\
-
-----
-
-~Add a hook to your page~. ~Return the element to be included in your page and the object to initiliaze~.

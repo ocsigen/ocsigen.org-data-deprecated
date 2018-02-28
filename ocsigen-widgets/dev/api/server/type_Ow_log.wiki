@@ -1,1 +1,0 @@
-<<code language="ocaml" | sig val section : Lwt_log.section end >>

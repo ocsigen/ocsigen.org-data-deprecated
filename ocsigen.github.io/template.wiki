@@ -2,7 +2,8 @@
 
 @@class="logo-ocsigen"@@[[site:/|{{site:/img/ocsigen-white.svg|Ocsigen}}]]
 
-*@@class="mainmenu"@class="mainmenu-current"@@[[site:/|Home]]
+*@@class="mainmenu"@class="mainmenu-home mainmenu-current"@@[[site:/|Home]]
+*@@class="mainmenu-doc"@@[[wiki("tuto"):|Doc]]
 *[[wiki("eliom"):|Eliom]]
 *[[wiki("js_of_ocaml"):|Js_of_ocaml]]
 *[[wiki("lwt"):|Lwt]]
@@ -11,7 +12,8 @@
 
 <<drawer|
 
-*@@class="drawermainmenu"@class="drawermainmenu-current"@@[[site:/|Home]]
+*@@class="drawermainmenu"@class="drawermainmenu-home drawermainmenu-current"@@[[site:/|Home]]
+*@@class="drawermainmenu-doc"@@[[wiki("tuto"):|Doc]]
 *[[wiki("eliom"):|Eliom]]
 *[[wiki("js_of_ocaml"):|Js_of_ocaml]]
 *[[wiki("ocsigenserver"):|Server]]
@@ -19,7 +21,9 @@
 *[[wiki("tyxml"):|Tyxml]]
 *[[wiki("ocsigen-toolkit"):|Toolkit]]
 *[[wiki("ocsigen-start"):|Start]]
-*[[site:/projects|Other projects]]
+*@@class="drawermainmenu-page"@@[[site:/projects|Other projects]]
+*@@class="drawermainmenu-page"@@[[site:/papers|Research papers]]
+*@@class="drawermainmenu-page"@@[[site:/credits|Who does Ocsigen?]]
 
 >> <<|drawer>>
 
@@ -31,7 +35,7 @@
 <<div class="main-page-section main-page-section-about"|
 <<div class="main-page-section-content"|
 * [[site:/credits|Who does Ocsigen?]]
-* Research papers
+* [[site:/papers|Research papers]]
 
 >>
 >>
