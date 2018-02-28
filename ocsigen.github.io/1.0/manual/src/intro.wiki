@@ -24,6 +24,14 @@
 
 >>
 
+<<div class="main-page-section main-page-section-news"|
+<<div class="main-page-section-content"|
+== News
+
+New design for ocsigen.org!
+>>
+>>
+
 <<div class="main-page-section main-page-section-multitier"|
 <<div class="main-page-section-content"|
 == Eliom
