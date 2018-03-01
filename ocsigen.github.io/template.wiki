@@ -14,16 +14,18 @@
 
 *@@class="drawermainmenu"@class="drawermainmenu-home drawermainmenu-current"@@[[site:/|Home]]
 *@@class="drawermainmenu-doc"@@[[wiki("tuto"):|Doc]]
-*[[wiki("eliom"):|Eliom]]
-*[[wiki("js_of_ocaml"):|Js_of_ocaml]]
-*[[wiki("ocsigenserver"):|Server]]
-*[[wiki("lwt"):|Lwt]]
-*[[wiki("tyxml"):|Tyxml]]
-*[[wiki("ocsigen-toolkit"):|Toolkit]]
-*[[wiki("ocsigen-start"):|Start]]
+*@@class="drawermainmenu-project"@@[[wiki("eliom"):|Eliom]]
+*@@class="drawermainmenu-project"@@[[wiki("js_of_ocaml"):|Js_of_ocaml]]
+*@@class="drawermainmenu-project"@@[[wiki("ocsigenserver"):|Server]]
+*@@class="drawermainmenu-project"@@[[wiki("lwt"):|Lwt]]
+*@@class="drawermainmenu-project"@@[[wiki("tyxml"):|Tyxml]]
+*@@class="drawermainmenu-project"@@[[wiki("ocsigen-toolkit"):|Toolkit]]
+*@@class="drawermainmenu-project"@@[[wiki("ocsigen-start"):|Start]]
 *@@class="drawermainmenu-page"@@[[site:/projects|Other projects]]
 *@@class="drawermainmenu-page"@@[[site:/papers|Research papers]]
 *@@class="drawermainmenu-page"@@[[site:/credits|Who does Ocsigen?]]
+*@@class="drawermainmenu-page"@@[[site:/blog|Blog]]
+*@@class="drawermainmenu-page"@@[[https://github.com/ocsigen|Source code]]
 
 >> <<|drawer>>
 
@@ -36,6 +38,9 @@
 <<div class="main-page-section-content"|
 * [[site:/credits|Who does Ocsigen?]]
 * [[site:/papers|Research papers]]
+* [[site:/projects|All the projects]]
+* [[site:/blog|Blog]]
+* [[https://github.com/ocsigen|Source code]]
 
 >>
 >>

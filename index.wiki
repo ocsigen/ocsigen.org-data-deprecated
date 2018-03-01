@@ -4,6 +4,7 @@
 <<a_manual project="ocsigen.github.io" chapter="projects"|Ocsigen>>
 <<a_manual project="ocsigen.github.io"|Ocsigen>>
 <<a_manual project="eliom"|Eliom>>
+<<|
 <<a_manual project="ocsimore"|Ocsimore>>
 <<a_manual project="deriving"|Deriving>>
 <<a_api project="ojquery"|val Ojquery.jQ>>
@@ -125,3 +126,4 @@
 <<a_manual project="tuto" version="6.1"|>>
 <<a_manual project="tuto" version="6.2"|>>
 <<a_manual project="tuto" version="dev"|>>
+>>
