@@ -38,13 +38,18 @@
 
 >> <<|page-header>>
 
-<<client-server-switch>>
+<<client-server-switch id="smallscreencsswitch"|>>
+
+@@class="reasonwarning"@@Warning: Reason support is experimental.
+We are looking for beta-tester and contributors.
+
 <<reason-switch>>
 
 
 <<div class="twocols" |
 <<div class="leftcol" |
 <<docversion>>
+<<client-server-switch id="largescreencsswitch"|>>
 
 <<googlesearch>>
 <<doctree>>
