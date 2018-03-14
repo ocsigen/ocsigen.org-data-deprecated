@@ -47,7 +47,7 @@ We are looking for beta-tester and contributors.
 
 
 <<div class="twocols" |
-<<div class="leftcol" |
+<<nav class="leftcol" |
 <<docversion>>
 <<client-server-switch id="largescreencsswitch"|>>
 
@@ -55,7 +55,7 @@ We are looking for beta-tester and contributors.
 <<doctree>>
 >> <<|leftcol>>
 
-<<div class="rightcol" |
+<<article class="rightcol" |
 <<content>>
 >> <<|rightcol>>
 >> <<|twocols>>
