@@ -1,7 +1,7 @@
 =Module <<a_api_type | module Url >> =
 <<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module>> <<span class="ocsforge_color_uid"|<<span class="ocsforge_color_uid"|Url>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="ocsforge_color_keyword"|sig>><<a_api text=".." | module Url >><<span class="ocsforge_color_keyword"|end>>>>~This module provides functions for tampering with ~Url~. ~It~'s main goal is to
     allow one to stay in the ~Ocaml realm without wandering into the
-    <<span class="odocwiki_inlinecode"|~Dom~_html~.window>>~#~#~.location object~.
+    <<a_api | val Dom_html.window >>~#~#~.location object~.
 
 ----
 
