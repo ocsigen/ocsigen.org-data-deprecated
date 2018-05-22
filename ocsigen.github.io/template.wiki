@@ -23,7 +23,7 @@
 *@@class="drawermainmenu-project"@@[[wiki("ocsigen-start"):|Start]]
 *@@class="drawermainmenu-page"@@[[site:/projects|Other projects]]
 *@@class="drawermainmenu-page"@@[[site:/papers|Research papers]]
-*@@class="drawermainmenu-page"@@[[site:/credits|Who does Ocsigen?]]
+*@@class="drawermainmenu-page"@@[[site:/credits|Who makes Ocsigen?]]
 *@@class="drawermainmenu-page"@@[[site:/blog|Blog]]
 *@@class="drawermainmenu-page"@@[[https://github.com/ocsigen|Source code]]
 
@@ -36,7 +36,7 @@
 
 <<div class="main-page-section main-page-section-about"|
 <<div class="main-page-section-content"|
-* [[site:/credits|Who does Ocsigen?]]
+* [[site:/credits|Who makes Ocsigen?]]
 * [[site:/papers|Research papers]]
 * [[site:/projects|All the projects]]
 * [[site:/blog|Blog]]
