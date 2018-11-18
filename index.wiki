@@ -53,6 +53,7 @@
 <<a_manual project="tyxml" version="4.0"|>>
 <<a_manual project="tyxml" version="4.0.1"|>>
 <<a_manual project="tyxml" version="4.1.0"|>>
+<<a_manual project="tyxml" version="4.3.0"|>>
 <<a_manual project="tyxml" version="dev"|>>
 
 <<a_manual project="ocsigen-start" version="0.99"|>>
